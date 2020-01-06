@@ -10,9 +10,9 @@ JSON Schema validation and specifications
 | ------------------ | :-------------: |
 | Full name          | json-schema |
 | Keywords           | json, schema |
-| # releases         | 1 |
-| # dependents       | 138 |
-| # downloads        | 342234942 |
+| # releases         | 3 |
+| # dependents       | 173 |
+| # downloads        | 518871130 |
 | # stars            | 10 |
 
 ## Links

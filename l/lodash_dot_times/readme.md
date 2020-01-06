@@ -11,8 +11,8 @@ The lodash method `_.times` exported as a module.
 | Full name          | lodash.times |
 | Keywords           | lodash-modularized, times |
 | # releases         | 0 |
-| # dependents       | 41 |
-| # downloads        | 1404298 |
+| # dependents       | 44 |
+| # downloads        | 1601005 |
 | # stars            | 0 |
 
 ## Links

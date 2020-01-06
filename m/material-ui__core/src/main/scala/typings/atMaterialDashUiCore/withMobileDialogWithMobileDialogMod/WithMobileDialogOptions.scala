@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WithMobileDialogOptions extends js.Object {
-  var breakpoint: Breakpoint
+  var breakpoint: Breakpoint = js.native
 }
 
 object WithMobileDialogOptions {

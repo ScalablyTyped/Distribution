@@ -4,21 +4,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetPolicyVersionRequest extends js.Object {
   /**
     * The name of the policy.
     */
-  var policyName: PolicyName
+  var policyName: PolicyName = js.native
   /**
     * The policy version ID.
     */
-  var policyVersionId: PolicyVersionId
+  var policyVersionId: PolicyVersionId = js.native
 }
 
 object GetPolicyVersionRequest {
   @scala.inline
   def apply(policyName: PolicyName, policyVersionId: PolicyVersionId): GetPolicyVersionRequest = {
-    val __obj = js.Dynamic.literal(policyName = policyName, policyVersionId = policyVersionId)
+    val __obj = js.Dynamic.literal(policyName = policyName.asInstanceOf[js.Any], policyVersionId = policyVersionId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetPolicyVersionRequest]
   }

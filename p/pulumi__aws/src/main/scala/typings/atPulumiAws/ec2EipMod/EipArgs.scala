@@ -6,33 +6,34 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EipArgs extends js.Object {
   /**
     * A user specified primary or secondary private IP address to
     * associate with the Elastic IP address. If no private IP address is specified,
     * the Elastic IP address is associated with the primary private IP address.
     */
-  val associateWithPrivateIp: js.UndefOr[Input[String]] = js.undefined
+  val associateWithPrivateIp: js.UndefOr[Input[String]] = js.native
   /**
     * EC2 instance ID.
     */
-  val instance: js.UndefOr[Input[String]] = js.undefined
+  val instance: js.UndefOr[Input[String]] = js.native
   /**
     * Network interface ID to associate with.
     */
-  val networkInterface: js.UndefOr[Input[String]] = js.undefined
+  val networkInterface: js.UndefOr[Input[String]] = js.native
   /**
     * EC2 IPv4 address pool identifier or `amazon`. This option is only available for VPC EIPs.
     */
-  val publicIpv4Pool: js.UndefOr[Input[String]] = js.undefined
+  val publicIpv4Pool: js.UndefOr[Input[String]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * Boolean if the EIP is in a VPC or not.
     */
-  val vpc: js.UndefOr[Input[Boolean]] = js.undefined
+  val vpc: js.UndefOr[Input[Boolean]] = js.native
 }
 
 object EipArgs {

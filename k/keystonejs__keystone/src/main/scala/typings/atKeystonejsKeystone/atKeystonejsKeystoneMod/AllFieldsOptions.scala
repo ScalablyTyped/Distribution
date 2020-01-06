@@ -33,10 +33,13 @@ object AllFieldsOptions {
   def CalendarDayOptions[FieldNames /* <: String */](
     `type`: FieldType,
     access: Access = null,
+    defaultValue: Boolean | DefaultValueFunction = null,
     format: String = null,
     hooks: Hooks = null,
     isRequired: js.UndefOr[Boolean] = js.undefined,
     isUnique: js.UndefOr[Boolean] = js.undefined,
+    label: String = null,
+    schemaDoc: String = null,
     yearPickerType: String = null,
     yearRangeFrom: Int | Double = null,
     yearRangeTo: Int | Double = null
@@ -44,10 +47,13 @@ object AllFieldsOptions {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (hooks != null) __obj.updateDynamic("hooks")(hooks.asInstanceOf[js.Any])
     if (!js.isUndefined(isRequired)) __obj.updateDynamic("isRequired")(isRequired.asInstanceOf[js.Any])
     if (!js.isUndefined(isUnique)) __obj.updateDynamic("isUnique")(isUnique.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (schemaDoc != null) __obj.updateDynamic("schemaDoc")(schemaDoc.asInstanceOf[js.Any])
     if (yearPickerType != null) __obj.updateDynamic("yearPickerType")(yearPickerType.asInstanceOf[js.Any])
     if (yearRangeFrom != null) __obj.updateDynamic("yearRangeFrom")(yearRangeFrom.asInstanceOf[js.Any])
     if (yearRangeTo != null) __obj.updateDynamic("yearRangeTo")(yearRangeTo.asInstanceOf[js.Any])
@@ -59,16 +65,22 @@ object AllFieldsOptions {
     generate: Anon_ResolvedData[FieldNames] => String,
     `type`: FieldType,
     access: Access = null,
+    defaultValue: Boolean | DefaultValueFunction = null,
     hooks: Hooks = null,
     isRequired: js.UndefOr[Boolean] = js.undefined,
-    isUnique: js.UndefOr[Boolean] = js.undefined
+    isUnique: js.UndefOr[Boolean] = js.undefined,
+    label: String = null,
+    schemaDoc: String = null
   ): AllFieldsOptions[FieldNames] = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], generate = js.Any.fromFunction1(generate))
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (hooks != null) __obj.updateDynamic("hooks")(hooks.asInstanceOf[js.Any])
     if (!js.isUndefined(isRequired)) __obj.updateDynamic("isRequired")(isRequired.asInstanceOf[js.Any])
     if (!js.isUndefined(isUnique)) __obj.updateDynamic("isUnique")(isUnique.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (schemaDoc != null) __obj.updateDynamic("schemaDoc")(schemaDoc.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllFieldsOptions[FieldNames]]
   }
   @scala.inline
@@ -76,16 +88,22 @@ object AllFieldsOptions {
     options: String | (js.Array[Anon_Label | String]),
     `type`: FieldType,
     access: Access = null,
+    defaultValue: Boolean | DefaultValueFunction = null,
     hooks: Hooks = null,
     isRequired: js.UndefOr[Boolean] = js.undefined,
-    isUnique: js.UndefOr[Boolean] = js.undefined
+    isUnique: js.UndefOr[Boolean] = js.undefined,
+    label: String = null,
+    schemaDoc: String = null
   ): AllFieldsOptions[FieldNames] = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (hooks != null) __obj.updateDynamic("hooks")(hooks.asInstanceOf[js.Any])
     if (!js.isUndefined(isRequired)) __obj.updateDynamic("isRequired")(isRequired.asInstanceOf[js.Any])
     if (!js.isUndefined(isUnique)) __obj.updateDynamic("isUnique")(isUnique.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (schemaDoc != null) __obj.updateDynamic("schemaDoc")(schemaDoc.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllFieldsOptions[FieldNames]]
   }
   @scala.inline
@@ -93,32 +111,44 @@ object AllFieldsOptions {
     googleMapsKey: String,
     `type`: FieldType,
     access: Access = null,
+    defaultValue: Boolean | DefaultValueFunction = null,
     hooks: Hooks = null,
     isRequired: js.UndefOr[Boolean] = js.undefined,
-    isUnique: js.UndefOr[Boolean] = js.undefined
+    isUnique: js.UndefOr[Boolean] = js.undefined,
+    label: String = null,
+    schemaDoc: String = null
   ): AllFieldsOptions[FieldNames] = {
     val __obj = js.Dynamic.literal(googleMapsKey = googleMapsKey.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (hooks != null) __obj.updateDynamic("hooks")(hooks.asInstanceOf[js.Any])
     if (!js.isUndefined(isRequired)) __obj.updateDynamic("isRequired")(isRequired.asInstanceOf[js.Any])
     if (!js.isUndefined(isUnique)) __obj.updateDynamic("isUnique")(isUnique.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (schemaDoc != null) __obj.updateDynamic("schemaDoc")(schemaDoc.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllFieldsOptions[FieldNames]]
   }
   @scala.inline
   def BaseFieldOptions[FieldNames /* <: String */](
     `type`: FieldType,
     access: Access = null,
+    defaultValue: Boolean | DefaultValueFunction = null,
     hooks: Hooks = null,
     isRequired: js.UndefOr[Boolean] = js.undefined,
-    isUnique: js.UndefOr[Boolean] = js.undefined
+    isUnique: js.UndefOr[Boolean] = js.undefined,
+    label: String = null,
+    schemaDoc: String = null
   ): AllFieldsOptions[FieldNames] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (hooks != null) __obj.updateDynamic("hooks")(hooks.asInstanceOf[js.Any])
     if (!js.isUndefined(isRequired)) __obj.updateDynamic("isRequired")(isRequired.asInstanceOf[js.Any])
     if (!js.isUndefined(isUnique)) __obj.updateDynamic("isUnique")(isUnique.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (schemaDoc != null) __obj.updateDynamic("schemaDoc")(schemaDoc.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllFieldsOptions[FieldNames]]
   }
   @scala.inline
@@ -128,16 +158,22 @@ object AllFieldsOptions {
     `type`: FieldType,
     workFactor: Double,
     access: Access = null,
+    defaultValue: Boolean | DefaultValueFunction = null,
     hooks: Hooks = null,
     isRequired: js.UndefOr[Boolean] = js.undefined,
-    isUnique: js.UndefOr[Boolean] = js.undefined
+    isUnique: js.UndefOr[Boolean] = js.undefined,
+    label: String = null,
+    schemaDoc: String = null
   ): AllFieldsOptions[FieldNames] = {
     val __obj = js.Dynamic.literal(minLength = minLength.asInstanceOf[js.Any], rejectCommon = rejectCommon.asInstanceOf[js.Any], workFactor = workFactor.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (hooks != null) __obj.updateDynamic("hooks")(hooks.asInstanceOf[js.Any])
     if (!js.isUndefined(isRequired)) __obj.updateDynamic("isRequired")(isRequired.asInstanceOf[js.Any])
     if (!js.isUndefined(isUnique)) __obj.updateDynamic("isUnique")(isUnique.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (schemaDoc != null) __obj.updateDynamic("schemaDoc")(schemaDoc.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllFieldsOptions[FieldNames]]
   }
   @scala.inline
@@ -145,10 +181,13 @@ object AllFieldsOptions {
     knexOptions: js.Any,
     `type`: FieldType,
     access: Access = null,
+    defaultValue: Boolean | DefaultValueFunction = null,
     format: String = null,
     hooks: Hooks = null,
     isRequired: js.UndefOr[Boolean] = js.undefined,
     isUnique: js.UndefOr[Boolean] = js.undefined,
+    label: String = null,
+    schemaDoc: String = null,
     yearPickerType: String = null,
     yearRangeFrom: Int | Double = null,
     yearRangeTo: Int | Double = null
@@ -156,10 +195,13 @@ object AllFieldsOptions {
     val __obj = js.Dynamic.literal(knexOptions = knexOptions.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (hooks != null) __obj.updateDynamic("hooks")(hooks.asInstanceOf[js.Any])
     if (!js.isUndefined(isRequired)) __obj.updateDynamic("isRequired")(isRequired.asInstanceOf[js.Any])
     if (!js.isUndefined(isUnique)) __obj.updateDynamic("isUnique")(isUnique.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (schemaDoc != null) __obj.updateDynamic("schemaDoc")(schemaDoc.asInstanceOf[js.Any])
     if (yearPickerType != null) __obj.updateDynamic("yearPickerType")(yearPickerType.asInstanceOf[js.Any])
     if (yearRangeFrom != null) __obj.updateDynamic("yearRangeFrom")(yearRangeFrom.asInstanceOf[js.Any])
     if (yearRangeTo != null) __obj.updateDynamic("yearRangeTo")(yearRangeTo.asInstanceOf[js.Any])
@@ -171,16 +213,22 @@ object AllFieldsOptions {
     ref: String,
     `type`: FieldType,
     access: Access = null,
+    defaultValue: Boolean | DefaultValueFunction = null,
     hooks: Hooks = null,
     isRequired: js.UndefOr[Boolean] = js.undefined,
-    isUnique: js.UndefOr[Boolean] = js.undefined
+    isUnique: js.UndefOr[Boolean] = js.undefined,
+    label: String = null,
+    schemaDoc: String = null
   ): AllFieldsOptions[FieldNames] = {
     val __obj = js.Dynamic.literal(many = many.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (hooks != null) __obj.updateDynamic("hooks")(hooks.asInstanceOf[js.Any])
     if (!js.isUndefined(isRequired)) __obj.updateDynamic("isRequired")(isRequired.asInstanceOf[js.Any])
     if (!js.isUndefined(isUnique)) __obj.updateDynamic("isUnique")(isUnique.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (schemaDoc != null) __obj.updateDynamic("schemaDoc")(schemaDoc.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllFieldsOptions[FieldNames]]
   }
   @scala.inline
@@ -189,16 +237,22 @@ object AllFieldsOptions {
     secretKey: String,
     `type`: FieldType,
     access: Access = null,
+    defaultValue: Boolean | DefaultValueFunction = null,
     hooks: Hooks = null,
     isRequired: js.UndefOr[Boolean] = js.undefined,
-    isUnique: js.UndefOr[Boolean] = js.undefined
+    isUnique: js.UndefOr[Boolean] = js.undefined,
+    label: String = null,
+    schemaDoc: String = null
   ): AllFieldsOptions[FieldNames] = {
     val __obj = js.Dynamic.literal(accessKey = accessKey.asInstanceOf[js.Any], secretKey = secretKey.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (hooks != null) __obj.updateDynamic("hooks")(hooks.asInstanceOf[js.Any])
     if (!js.isUndefined(isRequired)) __obj.updateDynamic("isRequired")(isRequired.asInstanceOf[js.Any])
     if (!js.isUndefined(isUnique)) __obj.updateDynamic("isUnique")(isUnique.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (schemaDoc != null) __obj.updateDynamic("schemaDoc")(schemaDoc.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllFieldsOptions[FieldNames]]
   }
   @scala.inline
@@ -206,16 +260,22 @@ object AllFieldsOptions {
     adapter: js.Any,
     `type`: FieldType,
     access: Access = null,
+    defaultValue: Boolean | DefaultValueFunction = null,
     hooks: Hooks = null,
     isRequired: js.UndefOr[Boolean] = js.undefined,
-    isUnique: js.UndefOr[Boolean] = js.undefined
+    isUnique: js.UndefOr[Boolean] = js.undefined,
+    label: String = null,
+    schemaDoc: String = null
   ): AllFieldsOptions[FieldNames] = {
     val __obj = js.Dynamic.literal(adapter = adapter.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (hooks != null) __obj.updateDynamic("hooks")(hooks.asInstanceOf[js.Any])
     if (!js.isUndefined(isRequired)) __obj.updateDynamic("isRequired")(isRequired.asInstanceOf[js.Any])
     if (!js.isUndefined(isUnique)) __obj.updateDynamic("isUnique")(isUnique.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (schemaDoc != null) __obj.updateDynamic("schemaDoc")(schemaDoc.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllFieldsOptions[FieldNames]]
   }
   @scala.inline
@@ -223,16 +283,22 @@ object AllFieldsOptions {
     blocks: js.Array[_],
     `type`: FieldType,
     access: Access = null,
+    defaultValue: Boolean | DefaultValueFunction = null,
     hooks: Hooks = null,
     isRequired: js.UndefOr[Boolean] = js.undefined,
-    isUnique: js.UndefOr[Boolean] = js.undefined
+    isUnique: js.UndefOr[Boolean] = js.undefined,
+    label: String = null,
+    schemaDoc: String = null
   ): AllFieldsOptions[FieldNames] = {
     val __obj = js.Dynamic.literal(blocks = blocks.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (hooks != null) __obj.updateDynamic("hooks")(hooks.asInstanceOf[js.Any])
     if (!js.isUndefined(isRequired)) __obj.updateDynamic("isRequired")(isRequired.asInstanceOf[js.Any])
     if (!js.isUndefined(isUnique)) __obj.updateDynamic("isUnique")(isUnique.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (schemaDoc != null) __obj.updateDynamic("schemaDoc")(schemaDoc.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllFieldsOptions[FieldNames]]
   }
   @scala.inline
@@ -240,37 +306,49 @@ object AllFieldsOptions {
     `type`: FieldType,
     access: Access = null,
     adapter: js.Any = null,
+    defaultValue: Boolean | DefaultValueFunction = null,
     hooks: Hooks = null,
     isRequired: js.UndefOr[Boolean] = js.undefined,
     isUnique: js.UndefOr[Boolean] = js.undefined,
-    route: String = null
+    label: String = null,
+    route: String = null,
+    schemaDoc: String = null
   ): AllFieldsOptions[FieldNames] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
     if (adapter != null) __obj.updateDynamic("adapter")(adapter.asInstanceOf[js.Any])
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (hooks != null) __obj.updateDynamic("hooks")(hooks.asInstanceOf[js.Any])
     if (!js.isUndefined(isRequired)) __obj.updateDynamic("isRequired")(isRequired.asInstanceOf[js.Any])
     if (!js.isUndefined(isUnique)) __obj.updateDynamic("isUnique")(isUnique.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (route != null) __obj.updateDynamic("route")(route.asInstanceOf[js.Any])
+    if (schemaDoc != null) __obj.updateDynamic("schemaDoc")(schemaDoc.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllFieldsOptions[FieldNames]]
   }
   @scala.inline
   def AutoIncrementOptions[FieldNames /* <: String */](
     `type`: FieldType,
     access: Access = null,
+    defaultValue: Boolean | DefaultValueFunction = null,
     gqlType: typings.atKeystonejsKeystone.atKeystonejsKeystoneStrings.Int | ID = null,
     hooks: Hooks = null,
     isRequired: js.UndefOr[Boolean] = js.undefined,
-    isUnique: js.UndefOr[Boolean] = js.undefined
+    isUnique: js.UndefOr[Boolean] = js.undefined,
+    label: String = null,
+    schemaDoc: String = null
   ): AllFieldsOptions[FieldNames] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (gqlType != null) __obj.updateDynamic("gqlType")(gqlType.asInstanceOf[js.Any])
     if (hooks != null) __obj.updateDynamic("hooks")(hooks.asInstanceOf[js.Any])
     if (!js.isUndefined(isRequired)) __obj.updateDynamic("isRequired")(isRequired.asInstanceOf[js.Any])
     if (!js.isUndefined(isUnique)) __obj.updateDynamic("isUnique")(isUnique.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (schemaDoc != null) __obj.updateDynamic("schemaDoc")(schemaDoc.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllFieldsOptions[FieldNames]]
   }
   @scala.inline
@@ -278,16 +356,22 @@ object AllFieldsOptions {
     caseTo: upper | lower,
     `type`: FieldType,
     access: Access = null,
+    defaultValue: Boolean | DefaultValueFunction = null,
     hooks: Hooks = null,
     isRequired: js.UndefOr[Boolean] = js.undefined,
-    isUnique: js.UndefOr[Boolean] = js.undefined
+    isUnique: js.UndefOr[Boolean] = js.undefined,
+    label: String = null,
+    schemaDoc: String = null
   ): AllFieldsOptions[FieldNames] = {
     val __obj = js.Dynamic.literal(caseTo = caseTo.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (hooks != null) __obj.updateDynamic("hooks")(hooks.asInstanceOf[js.Any])
     if (!js.isUndefined(isRequired)) __obj.updateDynamic("isRequired")(isRequired.asInstanceOf[js.Any])
     if (!js.isUndefined(isUnique)) __obj.updateDynamic("isUnique")(isUnique.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (schemaDoc != null) __obj.updateDynamic("schemaDoc")(schemaDoc.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllFieldsOptions[FieldNames]]
   }
 }

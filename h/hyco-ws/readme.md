@@ -10,9 +10,9 @@ This Node package for Azure Relay Hybrid Connections is built on and extends the
 | ------------------ | :-------------: |
 | Full name          | hyco-ws |
 | Keywords           | Hixie, HyBi, Push, RFC-6455, WebSocket, WebSockets, real-time |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 983 |
+| # downloads        | 1029 |
 | # stars            | 1 |
 
 ## Links

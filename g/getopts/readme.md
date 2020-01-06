@@ -4,16 +4,16 @@
 Typings are for version 2.2.5
 
 ## Library description:
-High performance Node.js CLI options parser.
+Parse CLI options, better.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | getopts |
-| Keywords           | getopts, cli, argv, cli-parser |
-| # releases         | 20 |
-| # dependents       | 41 |
-| # downloads        | 542181 |
-| # stars            | 4 |
+| Keywords           | getopts, cli, argv, flags, yargs, options, minimist, cli-parser |
+| # releases         | 16 |
+| # dependents       | 62 |
+| # downloads        | 6074051 |
+| # stars            | 5 |
 
 ## Links
 - [Homepage](https://github.com/jorgebucaran/getopts#readme)

@@ -12,7 +12,7 @@ Computes the maximum value of a numeric array and returns the corresponding arra
 | Keywords           | compute.io, compute, computation, mathematics, math, statistics, stats, array, max, maximum |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 16867 |
+| # downloads        | 21303 |
 | # stars            | 0 |
 
 ## Links

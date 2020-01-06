@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VirtualNodeSpecListener extends js.Object {
   /**
     * The health check information for the listener.
     */
-  var healthCheck: js.UndefOr[Input[VirtualNodeSpecListenerHealthCheck]] = js.undefined
+  var healthCheck: js.UndefOr[Input[VirtualNodeSpecListenerHealthCheck]] = js.native
   /**
     * The port mapping information for the listener.
     */
-  var portMapping: Input[VirtualNodeSpecListenerPortMapping]
+  var portMapping: Input[VirtualNodeSpecListenerPortMapping] = js.native
 }
 
 object VirtualNodeSpecListener {

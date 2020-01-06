@@ -6,12 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/TableRow.TableRowClassKey>> */
+@js.native
 trait PartialStyleRulesTableRowClassKey extends js.Object {
-  var footer: js.UndefOr[CSSProperties] = js.undefined
-  var head: js.UndefOr[CSSProperties] = js.undefined
-  var hover: js.UndefOr[CSSProperties] = js.undefined
-  var root: js.UndefOr[CSSProperties] = js.undefined
-  var selected: js.UndefOr[CSSProperties] = js.undefined
+  var footer: js.UndefOr[CSSProperties] = js.native
+  var head: js.UndefOr[CSSProperties] = js.native
+  var hover: js.UndefOr[CSSProperties] = js.native
+  var root: js.UndefOr[CSSProperties] = js.native
+  var selected: js.UndefOr[CSSProperties] = js.native
 }
 
 object PartialStyleRulesTableRowClassKey {

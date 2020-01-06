@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DomainClusterConfigZoneAwarenessConfig extends js.Object {
   /**
     * Number of Availability Zones for the domain to use with `zoneAwarenessEnabled`. Defaults to `2`. Valid values: `2` or `3`.
     */
-  var availabilityZoneCount: js.UndefOr[Double] = js.undefined
+  var availabilityZoneCount: js.UndefOr[Double] = js.native
 }
 
 object DomainClusterConfigZoneAwarenessConfig {

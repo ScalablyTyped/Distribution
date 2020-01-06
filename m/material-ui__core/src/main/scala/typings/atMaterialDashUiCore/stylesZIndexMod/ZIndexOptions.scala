@@ -5,13 +5,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/zIndex.ZIndex> */
+@js.native
 trait ZIndexOptions extends js.Object {
-  var appBar: js.UndefOr[Double] = js.undefined
-  var drawer: js.UndefOr[Double] = js.undefined
-  var mobileStepper: js.UndefOr[Double] = js.undefined
-  var modal: js.UndefOr[Double] = js.undefined
-  var snackbar: js.UndefOr[Double] = js.undefined
-  var tooltip: js.UndefOr[Double] = js.undefined
+  var appBar: js.UndefOr[Double] = js.native
+  var drawer: js.UndefOr[Double] = js.native
+  var mobileStepper: js.UndefOr[Double] = js.native
+  var modal: js.UndefOr[Double] = js.native
+  var snackbar: js.UndefOr[Double] = js.native
+  var tooltip: js.UndefOr[Double] = js.native
 }
 
 object ZIndexOptions {

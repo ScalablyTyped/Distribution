@@ -10,9 +10,9 @@ Force-directed graph layout using velocity Verlet integration.
 | ------------------ | :-------------: |
 | Full name          | d3-force |
 | Keywords           | d3, d3-module, layout, network, graph, force, verlet, infovis |
-| # releases         | 9 |
-| # dependents       | 93 |
-| # downloads        | 15060100 |
+| # releases         | 7 |
+| # dependents       | 127 |
+| # downloads        | 27215244 |
 | # stars            | 0 |
 
 ## Links

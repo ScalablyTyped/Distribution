@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AccountAliasState extends js.Object {
   /**
     * The account alias
     */
-  val accountAlias: js.UndefOr[Input[String]] = js.undefined
+  val accountAlias: js.UndefOr[Input[String]] = js.native
 }
 
 object AccountAliasState {

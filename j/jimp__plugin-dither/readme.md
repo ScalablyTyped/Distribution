@@ -10,9 +10,9 @@ Dither an image.
 | ------------------ | :-------------: |
 | Full name          | @jimp/plugin-dither |
 | Keywords           | - |
-| # releases         | 14 |
+| # releases         | 67 |
 | # dependents       | 1 |
-| # downloads        | 7446549 |
+| # downloads        | 14016142 |
 | # stars            | 0 |
 
 ## Links

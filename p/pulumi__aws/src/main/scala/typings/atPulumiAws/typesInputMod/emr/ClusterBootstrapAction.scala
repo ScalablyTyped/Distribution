@@ -5,13 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClusterBootstrapAction extends js.Object {
-  var args: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  var args: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The name of the job flow
     */
-  var name: Input[String]
-  var path: Input[String]
+  var name: Input[String] = js.native
+  var path: Input[String] = js.native
 }
 
 object ClusterBootstrapAction {

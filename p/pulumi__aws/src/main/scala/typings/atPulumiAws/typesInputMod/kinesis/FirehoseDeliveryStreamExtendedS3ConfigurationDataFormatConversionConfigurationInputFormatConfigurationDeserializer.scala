@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializer extends js.Object {
   /**
     * Nested argument that specifies the native Hive / HCatalog JsonSerDe. More details below.
@@ -13,7 +14,7 @@ trait FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigura
     Input[
       FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerHiveJsonSerDe
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * Nested argument that specifies the OpenX SerDe. More details below.
     */
@@ -21,7 +22,7 @@ trait FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigura
     Input[
       FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJsonSerDe
     ]
-  ] = js.undefined
+  ] = js.native
 }
 
 object FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializer {

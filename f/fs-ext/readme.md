@@ -10,9 +10,9 @@ Extensions to core 'fs' module.
 | ------------------ | :-------------: |
 | Full name          | fs-ext |
 | Keywords           | fs, filesystem, flock, seek |
-| # releases         | 5 |
-| # dependents       | 59 |
-| # downloads        | 507816 |
+| # releases         | 6 |
+| # dependents       | 61 |
+| # downloads        | 624200 |
 | # stars            | 3 |
 
 ## Links

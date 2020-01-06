@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClusterConfigurationInfo extends js.Object {
   /**
     * Amazon Resource Name (ARN) of the MSK Configuration to use in the cluster.
     */
-  var arn: Input[String]
+  var arn: Input[String] = js.native
   /**
     * Revision of the MSK Configuration to use in the cluster.
     */
-  var revision: Input[Double]
+  var revision: Input[Double] = js.native
 }
 
 object ClusterConfigurationInfo {

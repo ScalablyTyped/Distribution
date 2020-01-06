@@ -4,43 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CreateUserRequest extends js.Object {
   /**
-    * The unique identifier for the user account in the directory service directory used for identity management. If Amazon Connect is unable to access the existing directory, you can use the DirectoryUserId to authenticate users. If you include the parameter, it is assumed that Amazon Connect cannot access the directory. If the parameter is not included, the UserIdentityInfo is used to authenticate users from your existing directory. This parameter is required if you are using an existing directory for identity management in Amazon Connect when Amazon Connect cannot access your directory to authenticate users. If you are using SAML for identity management and include this parameter, an InvalidRequestException is returned.
+    * The identifier of the user account in the directory used for identity management. If Amazon Connect cannot access the directory, you can specify this identifier to authenticate users. If you include the identifier, we assume that Amazon Connect cannot access the directory. Otherwise, the identity information is used to authenticate users from your directory. This parameter is required if you are using an existing directory for identity management in Amazon Connect when Amazon Connect cannot access your directory to authenticate users. If you are using SAML for identity management and include this parameter, an error is returned.
     */
-  var DirectoryUserId: js.UndefOr[typings.awsDashSdk.clientsConnectMod.DirectoryUserId] = js.undefined
+  var DirectoryUserId: js.UndefOr[typings.awsDashSdk.clientsConnectMod.DirectoryUserId] = js.native
   /**
-    * The unique identifier for the hierarchy group to assign to the user created.
+    * The identifier of the hierarchy group for the user.
     */
-  var HierarchyGroupId: js.UndefOr[typings.awsDashSdk.clientsConnectMod.HierarchyGroupId] = js.undefined
+  var HierarchyGroupId: js.UndefOr[typings.awsDashSdk.clientsConnectMod.HierarchyGroupId] = js.native
   /**
-    * Information about the user, including email address, first name, and last name.
+    * The information about the identity of the user.
     */
-  var IdentityInfo: js.UndefOr[UserIdentityInfo] = js.undefined
+  var IdentityInfo: js.UndefOr[UserIdentityInfo] = js.native
   /**
-    * The identifier for your Amazon Connect instance. To find the ID of your instance, open the AWS console and select Amazon Connect. Select the alias of the instance in the Instance alias column. The instance ID is displayed in the Overview section of your instance settings. For example, the instance ID is the set of characters at the end of the instance ARN, after instance/, such as 10a4c4eb-f57e-4d4c-b602-bf39176ced07.
+    * The identifier of the Amazon Connect instance.
     */
-  var InstanceId: typings.awsDashSdk.clientsConnectMod.InstanceId
+  var InstanceId: typings.awsDashSdk.clientsConnectMod.InstanceId = js.native
   /**
-    * The password for the user account to create. This is required if you are using Amazon Connect for identity management. If you are using SAML for identity management and include this parameter, an InvalidRequestException is returned.
+    * The password for the user account. A password is required if you are using Amazon Connect for identity management. Otherwise, it is an error to include a password.
     */
-  var Password: js.UndefOr[typings.awsDashSdk.clientsConnectMod.Password] = js.undefined
+  var Password: js.UndefOr[typings.awsDashSdk.clientsConnectMod.Password] = js.native
   /**
-    * Specifies the phone settings for the user, including AfterContactWorkTimeLimit, AutoAccept, DeskPhoneNumber, and PhoneType.
+    * The phone settings for the user.
     */
-  var PhoneConfig: UserPhoneConfig
+  var PhoneConfig: UserPhoneConfig = js.native
   /**
-    * The unique identifier for the routing profile to assign to the user created.
+    * The identifier of the routing profile for the user.
     */
-  var RoutingProfileId: typings.awsDashSdk.clientsConnectMod.RoutingProfileId
+  var RoutingProfileId: typings.awsDashSdk.clientsConnectMod.RoutingProfileId = js.native
   /**
-    * The unique identifier of the security profile to assign to the user created.
+    * The identifier of the security profile for the user.
     */
-  var SecurityProfileIds: typings.awsDashSdk.clientsConnectMod.SecurityProfileIds
+  var SecurityProfileIds: typings.awsDashSdk.clientsConnectMod.SecurityProfileIds = js.native
   /**
-    * The user name in Amazon Connect for the account to create. If you are using SAML for identity management in your Amazon Connect, the value for Username can include up to 64 characters from [a-zA-Z0-9_-.\@]+.
+    * One or more tags.
     */
-  var Username: AgentUsername
+  var Tags: js.UndefOr[TagMap] = js.native
+  /**
+    * The user name for the account. For instances not using SAML for identity management, the user name can include up to 20 characters. If you are using SAML for identity management, the user name can include up to 64 characters from [a-zA-Z0-9_-.\@]+.
+    */
+  var Username: AgentUsername = js.native
 }
 
 object CreateUserRequest {
@@ -54,13 +59,15 @@ object CreateUserRequest {
     DirectoryUserId: DirectoryUserId = null,
     HierarchyGroupId: HierarchyGroupId = null,
     IdentityInfo: UserIdentityInfo = null,
-    Password: Password = null
+    Password: Password = null,
+    Tags: TagMap = null
   ): CreateUserRequest = {
-    val __obj = js.Dynamic.literal(InstanceId = InstanceId, PhoneConfig = PhoneConfig, RoutingProfileId = RoutingProfileId, SecurityProfileIds = SecurityProfileIds, Username = Username)
-    if (DirectoryUserId != null) __obj.updateDynamic("DirectoryUserId")(DirectoryUserId)
-    if (HierarchyGroupId != null) __obj.updateDynamic("HierarchyGroupId")(HierarchyGroupId)
-    if (IdentityInfo != null) __obj.updateDynamic("IdentityInfo")(IdentityInfo)
-    if (Password != null) __obj.updateDynamic("Password")(Password)
+    val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any], PhoneConfig = PhoneConfig.asInstanceOf[js.Any], RoutingProfileId = RoutingProfileId.asInstanceOf[js.Any], SecurityProfileIds = SecurityProfileIds.asInstanceOf[js.Any], Username = Username.asInstanceOf[js.Any])
+    if (DirectoryUserId != null) __obj.updateDynamic("DirectoryUserId")(DirectoryUserId.asInstanceOf[js.Any])
+    if (HierarchyGroupId != null) __obj.updateDynamic("HierarchyGroupId")(HierarchyGroupId.asInstanceOf[js.Any])
+    if (IdentityInfo != null) __obj.updateDynamic("IdentityInfo")(IdentityInfo.asInstanceOf[js.Any])
+    if (Password != null) __obj.updateDynamic("Password")(Password.asInstanceOf[js.Any])
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateUserRequest]
   }
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jss-plugin-compose" : "10.0.1"
+      "jss-plugin-compose" : "10.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "jss-plugin-compose" : "10.0.1"
+      "jss-plugin-compose" : "10.0.3"
     }
   ],
   "compile-devDependencies" : [

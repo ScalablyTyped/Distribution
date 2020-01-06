@@ -10,9 +10,9 @@ Immutable date wrapper
 | ------------------ | :-------------: |
 | Full name          | luxon |
 | Keywords           | date, immutable |
-| # releases         | 82 |
-| # dependents       | 266 |
-| # downloads        | 4289241 |
+| # releases         | 80 |
+| # dependents       | 431 |
+| # downloads        | 11736942 |
 | # stars            | 12 |
 
 ## Links

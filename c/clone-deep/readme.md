@@ -10,9 +10,9 @@ Recursively (deep) clone JavaScript native types, like Object, Array, RegExp, Da
 | ------------------ | :-------------: |
 | Full name          | clone-deep |
 | Keywords           | array, assign, buffer, clamped, clone, clone-array, clone-array-deep, clone-buffer, clone-date, clone-deep, clone-map, clone-object, clone-object-deep, clone-reg-exp, clone-regex, clone-regexp, clone-set, date, deep, extend, mixin, mixin-object, object, regex, regexp, shallow, symbol |
-| # releases         | 10 |
-| # dependents       | 139 |
-| # downloads        | 122516730 |
+| # releases         | 6 |
+| # dependents       | 203 |
+| # downloads        | 265774095 |
 | # stars            | 5 |
 
 ## Links

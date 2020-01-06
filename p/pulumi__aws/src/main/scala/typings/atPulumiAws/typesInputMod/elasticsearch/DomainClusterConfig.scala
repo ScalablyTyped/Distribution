@@ -5,35 +5,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DomainClusterConfig extends js.Object {
   /**
     * Number of dedicated master nodes in the cluster
     */
-  var dedicatedMasterCount: js.UndefOr[Input[Double]] = js.undefined
+  var dedicatedMasterCount: js.UndefOr[Input[Double]] = js.native
   /**
     * Indicates whether dedicated master nodes are enabled for the cluster.
     */
-  var dedicatedMasterEnabled: js.UndefOr[Input[Boolean]] = js.undefined
+  var dedicatedMasterEnabled: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Instance type of the dedicated master nodes in the cluster.
     */
-  var dedicatedMasterType: js.UndefOr[Input[String]] = js.undefined
+  var dedicatedMasterType: js.UndefOr[Input[String]] = js.native
   /**
     * Number of instances in the cluster.
     */
-  var instanceCount: js.UndefOr[Input[Double]] = js.undefined
+  var instanceCount: js.UndefOr[Input[Double]] = js.native
   /**
     * Instance type of data nodes in the cluster.
     */
-  var instanceType: js.UndefOr[Input[String]] = js.undefined
+  var instanceType: js.UndefOr[Input[String]] = js.native
   /**
     * Configuration block containing zone awareness settings. Documented below.
     */
-  var zoneAwarenessConfig: js.UndefOr[Input[DomainClusterConfigZoneAwarenessConfig]] = js.undefined
+  var zoneAwarenessConfig: js.UndefOr[Input[DomainClusterConfigZoneAwarenessConfig]] = js.native
   /**
     * Indicates whether zone awareness is enabled. To enable awareness with three Availability Zones, the `availabilityZoneCount` within the `zoneAwarenessConfig` must be set to `3`.
     */
-  var zoneAwarenessEnabled: js.UndefOr[Input[Boolean]] = js.undefined
+  var zoneAwarenessEnabled: js.UndefOr[Input[Boolean]] = js.native
 }
 
 object DomainClusterConfig {

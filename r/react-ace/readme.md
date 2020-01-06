@@ -9,10 +9,10 @@ A react component for Ace Editor
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-ace |
-| Keywords           | ace, ace editor, react-component, react, brace |
-| # releases         | 32 |
-| # dependents       | 137 |
-| # downloads        | 3348293 |
+| Keywords           | ace, ace editor, react-component, react |
+| # releases         | 22 |
+| # dependents       | 192 |
+| # downloads        | 5820127 |
 | # stars            | 13 |
 
 ## Links

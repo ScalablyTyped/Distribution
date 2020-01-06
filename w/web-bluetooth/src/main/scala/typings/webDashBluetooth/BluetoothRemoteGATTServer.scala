@@ -1,12 +1,11 @@
 package typings.webDashBluetooth
 
-import typings.std.EventTarget
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait BluetoothRemoteGATTServer extends EventTarget {
+trait BluetoothRemoteGATTServer extends js.Object {
   val connected: Boolean = js.native
   val device: BluetoothDevice = js.native
   def connect(): js.Promise[BluetoothRemoteGATTServer] = js.native

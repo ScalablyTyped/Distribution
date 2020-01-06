@@ -10,9 +10,9 @@ Easily unzip an HTTP stream
 | ------------------ | :-------------: |
 | Full name          | inflation |
 | Keywords           | decompress, unzip, inflate, zlib, gunzip |
-| # releases         | 1 |
-| # dependents       | 24 |
-| # downloads        | 5055829 |
+| # releases         | 0 |
+| # dependents       | 31 |
+| # downloads        | 9800862 |
 | # stars            | 0 |
 
 ## Links

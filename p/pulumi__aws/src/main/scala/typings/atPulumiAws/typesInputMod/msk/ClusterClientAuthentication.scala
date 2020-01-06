@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClusterClientAuthentication extends js.Object {
   /**
     * Configuration block for specifying TLS client authentication. See below.
     */
-  var tls: js.UndefOr[Input[ClusterClientAuthenticationTls]] = js.undefined
+  var tls: js.UndefOr[Input[ClusterClientAuthenticationTls]] = js.native
 }
 
 object ClusterClientAuthentication {

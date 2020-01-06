@@ -4,16 +4,16 @@
 Typings are for version 0.20
 
 ## Library description:
-A visual tool for wiring the Internet of Things
+Low-code programming for event-driven applications
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | node-red |
 | Keywords           | editor, messaging, iot, flow |
-| # releases         | 29 |
-| # dependents       | 50 |
-| # downloads        | 642207 |
-| # stars            | 54 |
+| # releases         | 37 |
+| # dependents       | 61 |
+| # downloads        | 785897 |
+| # stars            | 55 |
 
 ## Links
 - [Homepage](http://nodered.org)

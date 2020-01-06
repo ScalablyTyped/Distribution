@@ -10,9 +10,9 @@ official twitter text linkification
 | ------------------ | :-------------: |
 | Full name          | twitter-text |
 | Keywords           | - |
-| # releases         | 18 |
-| # dependents       | 50 |
-| # downloads        | 777348 |
+| # releases         | 11 |
+| # dependents       | 57 |
+| # downloads        | 952335 |
 | # stars            | 4 |
 
 ## Links

@@ -10,9 +10,9 @@ Pluralize a word
 | ------------------ | :-------------: |
 | Full name          | plur |
 | Keywords           | plural, plurals, pluralize, singular, count, word, string, irregular, noun, nouns |
-| # releases         | 3 |
-| # dependents       | 96 |
-| # downloads        | 38158092 |
+| # releases         | 5 |
+| # dependents       | 103 |
+| # downloads        | 43517931 |
 | # stars            | 7 |
 
 ## Links

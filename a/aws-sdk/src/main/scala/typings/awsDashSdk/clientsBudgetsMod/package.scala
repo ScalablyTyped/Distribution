@@ -16,6 +16,8 @@ package object clientsBudgetsMod {
     - typings.awsDashSdk.awsDashSdkStrings.COST
     - typings.awsDashSdk.awsDashSdkStrings.RI_UTILIZATION
     - typings.awsDashSdk.awsDashSdkStrings.RI_COVERAGE
+    - typings.awsDashSdk.awsDashSdkStrings.SAVINGS_PLANS_UTILIZATION
+    - typings.awsDashSdk.awsDashSdkStrings.SAVINGS_PLANS_COVERAGE
     - java.lang.String
   */
   type BudgetType = _BudgetType | String
@@ -77,7 +79,7 @@ package object clientsBudgetsMod {
   type UnitValue = String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2016-10-20`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

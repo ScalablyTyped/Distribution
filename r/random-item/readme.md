@@ -11,8 +11,8 @@ Get a random item from an array
 | Full name          | random-item |
 | Keywords           | random, randomize, math, array, item, element, pick, select |
 | # releases         | 3 |
-| # dependents       | 42 |
-| # downloads        | 402873 |
+| # dependents       | 46 |
+| # downloads        | 1020299 |
 | # stars            | 6 |
 
 ## Links

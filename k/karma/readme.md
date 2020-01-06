@@ -10,9 +10,9 @@ Spectacular Test Runner for JavaScript.
 | ------------------ | :-------------: |
 | Full name          | karma |
 | Keywords           | karma, spectacular, runner, karma, js, javascript, testing, test, remote, execution |
-| # releases         | 15 |
-| # dependents       | 768 |
-| # downloads        | 59646635 |
+| # releases         | 18 |
+| # dependents       | 805 |
+| # downloads        | 72493286 |
 | # stars            | 427 |
 
 ## Links

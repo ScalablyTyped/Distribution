@@ -12,7 +12,7 @@ jquery pin plugin
 | Keywords           | jquery, pin |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 310 |
+| # downloads        | 450 |
 | # stars            | 0 |
 
 ## Links

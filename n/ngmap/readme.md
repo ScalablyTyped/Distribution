@@ -11,8 +11,8 @@ The Simplest AngularJS Google Maps V3 Directive
 | Full name          | ngmap |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 6 |
-| # downloads        | 415087 |
+| # dependents       | 7 |
+| # downloads        | 426883 |
 | # stars            | 3 |
 
 ## Links

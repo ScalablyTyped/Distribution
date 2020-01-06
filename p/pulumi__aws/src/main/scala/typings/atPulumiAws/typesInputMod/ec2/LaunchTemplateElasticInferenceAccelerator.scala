@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LaunchTemplateElasticInferenceAccelerator extends js.Object {
   /**
     * Accelerator type.
     */
-  var `type`: Input[String]
+  var `type`: Input[String] = js.native
 }
 
 object LaunchTemplateElasticInferenceAccelerator {

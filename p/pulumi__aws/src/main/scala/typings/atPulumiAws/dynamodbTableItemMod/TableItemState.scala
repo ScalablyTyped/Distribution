@@ -5,24 +5,25 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TableItemState extends js.Object {
   /**
     * Hash key to use for lookups and identification of the item
     */
-  val hashKey: js.UndefOr[Input[String]] = js.undefined
+  val hashKey: js.UndefOr[Input[String]] = js.native
   /**
     * JSON representation of a map of attribute name/value pairs, one for each attribute.
     * Only the primary key attributes are required; you can optionally provide other attribute name-value pairs for the item.
     */
-  val item: js.UndefOr[Input[String]] = js.undefined
+  val item: js.UndefOr[Input[String]] = js.native
   /**
     * Range key to use for lookups and identification of the item. Required if there is range key defined in the table.
     */
-  val rangeKey: js.UndefOr[Input[String]] = js.undefined
+  val rangeKey: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the table to contain the item.
     */
-  val tableName: js.UndefOr[Input[String]] = js.undefined
+  val tableName: js.UndefOr[Input[String]] = js.native
 }
 
 object TableItemState {

@@ -39,19 +39,25 @@ package object clientsLicensemanagerMod {
   type LicenseConfigurations = js.Array[LicenseConfiguration]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.vCPU
-    - typings.awsDashSdk.awsDashSdkStrings.Instance
-    - typings.awsDashSdk.awsDashSdkStrings.Core
+    - typings.awsDashSdk.awsDashSdkStrings.Instance_
+    - typings.awsDashSdk.awsDashSdkStrings.Core_
     - typings.awsDashSdk.awsDashSdkStrings.Socket
     - java.lang.String
   */
   type LicenseCountingType = _LicenseCountingType | java.lang.String
+  type LicenseOperationFailureList = js.Array[LicenseOperationFailure]
   type LicenseSpecifications = js.Array[LicenseSpecification]
   type ManagedResourceSummaryList = js.Array[ManagedResourceSummary]
+  type MetadataList = js.Array[Metadata]
+  type ProductInformationFilterList = js.Array[ProductInformationFilter]
+  type ProductInformationList = js.Array[ProductInformation]
   type ResourceInventoryList = js.Array[ResourceInventory]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.EC2_INSTANCE
     - typings.awsDashSdk.awsDashSdkStrings.EC2_HOST
     - typings.awsDashSdk.awsDashSdkStrings.EC2_AMI
+    - typings.awsDashSdk.awsDashSdkStrings.RDS
+    - typings.awsDashSdk.awsDashSdkStrings.SYSTEMS_MANAGER_MANAGED_INSTANCE
     - java.lang.String
   */
   type ResourceType = _ResourceType | java.lang.String
@@ -61,7 +67,7 @@ package object clientsLicensemanagerMod {
   type TagList = js.Array[Tag]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2018-08-01`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | java.lang.String

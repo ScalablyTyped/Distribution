@@ -10,9 +10,9 @@ Fake XHR and server
 | ------------------ | :-------------: |
 | Full name          | nise |
 | Keywords           | test, testing, fake, mock, xhr, server |
-| # releases         | 29 |
-| # dependents       | 8 |
-| # downloads        | 42774728 |
+| # releases         | 31 |
+| # dependents       | 9 |
+| # downloads        | 67684893 |
 | # stars            | 0 |
 
 ## Links

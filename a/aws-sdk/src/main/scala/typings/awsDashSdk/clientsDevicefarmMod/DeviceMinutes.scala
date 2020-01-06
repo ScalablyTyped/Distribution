@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DeviceMinutes extends js.Object {
   /**
     * When specified, represents only the sum of metered minutes used by the resource to run tests.
     */
-  var metered: js.UndefOr[Double] = js.undefined
+  var metered: js.UndefOr[Double] = js.native
   /**
     * When specified, represents the total minutes used by the resource to run tests.
     */
-  var total: js.UndefOr[Double] = js.undefined
+  var total: js.UndefOr[Double] = js.native
   /**
     * When specified, represents only the sum of unmetered minutes used by the resource to run tests.
     */
-  var unmetered: js.UndefOr[Double] = js.undefined
+  var unmetered: js.UndefOr[Double] = js.native
 }
 
 object DeviceMinutes {

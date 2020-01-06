@@ -4,9 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LaunchTemplateCapacityReservationSpecification extends js.Object {
-  var capacityReservationPreference: js.UndefOr[String] = js.undefined
-  var capacityReservationTarget: js.UndefOr[LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget] = js.undefined
+  var capacityReservationPreference: js.UndefOr[String] = js.native
+  var capacityReservationTarget: js.UndefOr[LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget] = js.native
 }
 
 object LaunchTemplateCapacityReservationSpecification {
@@ -16,8 +17,8 @@ object LaunchTemplateCapacityReservationSpecification {
     capacityReservationTarget: LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget = null
   ): LaunchTemplateCapacityReservationSpecification = {
     val __obj = js.Dynamic.literal()
-    if (capacityReservationPreference != null) __obj.updateDynamic("capacityReservationPreference")(capacityReservationPreference)
-    if (capacityReservationTarget != null) __obj.updateDynamic("capacityReservationTarget")(capacityReservationTarget)
+    if (capacityReservationPreference != null) __obj.updateDynamic("capacityReservationPreference")(capacityReservationPreference.asInstanceOf[js.Any])
+    if (capacityReservationTarget != null) __obj.updateDynamic("capacityReservationTarget")(capacityReservationTarget.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchTemplateCapacityReservationSpecification]
   }
 }

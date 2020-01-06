@@ -11,8 +11,8 @@ UUID scalar type for GraphQL.js
 | Full name          | graphql-type-uuid |
 | Keywords           | graphql, uuid |
 | # releases         | 4 |
-| # dependents       | 1 |
-| # downloads        | 17476 |
+| # dependents       | 4 |
+| # downloads        | 82299 |
 | # stars            | 0 |
 
 ## Links

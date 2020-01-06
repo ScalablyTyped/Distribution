@@ -6,7 +6,6 @@ import scala.scalajs.js.annotation._
 
 package object clientsKmsMod {
   import org.scalablytyped.runtime.StringDictionary
-  import typings.awsDashSdk.awsDashSdkStrings.ENCRYPT_DECRYPT
   import typings.awsDashSdk.awsDashSdkStrings.RSA_2048
   import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
   import typings.node.Buffer
@@ -51,6 +50,29 @@ package object clientsKmsMod {
   type CustomKeyStoreNameType = String
   type CustomKeyStoresList = js.Array[CustomKeyStoresListEntry]
   /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.RSA_2048
+    - typings.awsDashSdk.awsDashSdkStrings.RSA_3072
+    - typings.awsDashSdk.awsDashSdkStrings.RSA_4096
+    - typings.awsDashSdk.awsDashSdkStrings.ECC_NIST_P256
+    - typings.awsDashSdk.awsDashSdkStrings.ECC_NIST_P384
+    - typings.awsDashSdk.awsDashSdkStrings.ECC_NIST_P521
+    - typings.awsDashSdk.awsDashSdkStrings.ECC_SECG_P256K1
+    - typings.awsDashSdk.awsDashSdkStrings.SYMMETRIC_DEFAULT
+    - java.lang.String
+  */
+  type CustomerMasterKeySpec = _CustomerMasterKeySpec | String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.RSA_2048
+    - typings.awsDashSdk.awsDashSdkStrings.RSA_3072
+    - typings.awsDashSdk.awsDashSdkStrings.RSA_4096
+    - typings.awsDashSdk.awsDashSdkStrings.ECC_NIST_P256
+    - typings.awsDashSdk.awsDashSdkStrings.ECC_NIST_P384
+    - typings.awsDashSdk.awsDashSdkStrings.ECC_NIST_P521
+    - typings.awsDashSdk.awsDashSdkStrings.ECC_SECG_P256K1
+    - java.lang.String
+  */
+  type DataKeyPairSpec = _DataKeyPairSpec | String
+  /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.AES_256
     - typings.awsDashSdk.awsDashSdkStrings.AES_128
     - java.lang.String
@@ -58,6 +80,14 @@ package object clientsKmsMod {
   type DataKeySpec = _DataKeySpec | String
   type DateType = Date
   type DescriptionType = String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.SYMMETRIC_DEFAULT
+    - typings.awsDashSdk.awsDashSdkStrings.RSAES_OAEP_SHA_1
+    - typings.awsDashSdk.awsDashSdkStrings.RSAES_OAEP_SHA_256
+    - java.lang.String
+  */
+  type EncryptionAlgorithmSpec = _EncryptionAlgorithmSpec | String
+  type EncryptionAlgorithmSpecList = js.Array[EncryptionAlgorithmSpec]
   type EncryptionContextKey = String
   type EncryptionContextType = StringDictionary[EncryptionContextValue]
   type EncryptionContextValue = String
@@ -77,9 +107,14 @@ package object clientsKmsMod {
     - typings.awsDashSdk.awsDashSdkStrings.GenerateDataKeyWithoutPlaintext
     - typings.awsDashSdk.awsDashSdkStrings.ReEncryptFrom
     - typings.awsDashSdk.awsDashSdkStrings.ReEncryptTo
+    - typings.awsDashSdk.awsDashSdkStrings.Sign_
+    - typings.awsDashSdk.awsDashSdkStrings.Verify
+    - typings.awsDashSdk.awsDashSdkStrings.GetPublicKey
     - typings.awsDashSdk.awsDashSdkStrings.CreateGrant
     - typings.awsDashSdk.awsDashSdkStrings.RetireGrant
     - typings.awsDashSdk.awsDashSdkStrings.DescribeKey
+    - typings.awsDashSdk.awsDashSdkStrings.GenerateDataKeyPair
+    - typings.awsDashSdk.awsDashSdkStrings.GenerateDataKeyPairWithoutPlaintext
     - java.lang.String
   */
   type GrantOperation = _GrantOperation | String
@@ -95,18 +130,29 @@ package object clientsKmsMod {
   */
   type KeyManagerType = _KeyManagerType | String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Enabled
-    - typings.awsDashSdk.awsDashSdkStrings.Disabled
+    - typings.awsDashSdk.awsDashSdkStrings.Enabled_
+    - typings.awsDashSdk.awsDashSdkStrings.Disabled_
     - typings.awsDashSdk.awsDashSdkStrings.PendingDeletion
     - typings.awsDashSdk.awsDashSdkStrings.PendingImport
-    - typings.awsDashSdk.awsDashSdkStrings.Unavailable
+    - typings.awsDashSdk.awsDashSdkStrings.Unavailable_
     - java.lang.String
   */
   type KeyState = _KeyState | String
   type KeyStorePasswordType = String
-  type KeyUsageType = ENCRYPT_DECRYPT | String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.SIGN_VERIFY
+    - typings.awsDashSdk.awsDashSdkStrings.ENCRYPT_DECRYPT
+    - java.lang.String
+  */
+  type KeyUsageType = _KeyUsageType | String
   type LimitType = Double
   type MarkerType = String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.RAW
+    - typings.awsDashSdk.awsDashSdkStrings.DIGEST
+    - java.lang.String
+  */
+  type MessageType = _MessageType | String
   type NumberOfBytesType = Double
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.AWS_KMS
@@ -121,6 +167,21 @@ package object clientsKmsMod {
   type PolicyNameType = String
   type PolicyType = String
   type PrincipalIdType = String
+  type PublicKeyType = Buffer | Uint8Array | Blob | String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.RSASSA_PSS_SHA_256
+    - typings.awsDashSdk.awsDashSdkStrings.RSASSA_PSS_SHA_384
+    - typings.awsDashSdk.awsDashSdkStrings.RSASSA_PSS_SHA_512
+    - typings.awsDashSdk.awsDashSdkStrings.RSASSA_PKCS1_V1_5_SHA_256
+    - typings.awsDashSdk.awsDashSdkStrings.RSASSA_PKCS1_V1_5_SHA_384
+    - typings.awsDashSdk.awsDashSdkStrings.RSASSA_PKCS1_V1_5_SHA_512
+    - typings.awsDashSdk.awsDashSdkStrings.ECDSA_SHA_256
+    - typings.awsDashSdk.awsDashSdkStrings.ECDSA_SHA_384
+    - typings.awsDashSdk.awsDashSdkStrings.ECDSA_SHA_512
+    - java.lang.String
+  */
+  type SigningAlgorithmSpec = _SigningAlgorithmSpec | String
+  type SigningAlgorithmSpecList = js.Array[SigningAlgorithmSpec]
   type TagKeyList = js.Array[TagKeyType]
   type TagKeyType = String
   type TagList = js.Array[Tag]
@@ -129,7 +190,7 @@ package object clientsKmsMod {
   type WrappingKeySpec = RSA_2048 | String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2014-11-01`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

@@ -11,6 +11,18 @@ import scala.scalajs.js.annotation._
 @js.native
 trait EdgeSingular
   extends CollectionIteration[EdgeSingular, EdgeSingular]
+     with CollectionGraphManipulation
+     with CollectionEvents
+     with CollectionData
+     with CollectionPosition
+     with CollectionTraversing
+     with CollectionLayout
+     with CollectionSelection
+     with CollectionStyle
+     with CollectionAnimation
+     with CollectionComparision
+     with CollectionBuildingFiltering[EdgeSingular, EdgeSingular]
+     with CollectionAlgorithms
      with SingularGraphManipulation
      with SingularData
      with SingularPosition
@@ -21,17 +33,5 @@ trait EdgeSingular
      with EdgeSingularData
      with EdgeSingularPoints
      with EdgeSingularTraversing
-     with CollectionData
-     with CollectionAlgorithms
-     with CollectionBuildingFiltering[EdgeSingular, EdgeSingular]
-     with CollectionComparision
-     with CollectionAnimation
-     with CollectionEvents
-     with CollectionStyle
-     with CollectionPosition
-     with CollectionTraversing
-     with CollectionLayout
-     with CollectionSelection
-     with CollectionGraphManipulation
      with SingularElementArgument
 

@@ -6,27 +6,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LinkAggregationGroupArgs extends js.Object {
   /**
     * The bandwidth of the individual physical connections bundled by the LAG. Available values: 1Gbps, 10Gbps. Case sensitive.
     */
-  val connectionsBandwidth: Input[String]
+  val connectionsBandwidth: Input[String] = js.native
   /**
     * A boolean that indicates all connections associated with the LAG should be deleted so that the LAG can be destroyed without error. These objects are *not* recoverable.
     */
-  val forceDestroy: js.UndefOr[Input[Boolean]] = js.undefined
+  val forceDestroy: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The AWS Direct Connect location in which the LAG should be allocated. See [DescribeLocations](https://docs.aws.amazon.com/directconnect/latest/APIReference/API_DescribeLocations.html) for the list of AWS Direct Connect locations. Use `locationCode`.
     */
-  val location: Input[String]
+  val location: Input[String] = js.native
   /**
     * The name of the LAG.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object LinkAggregationGroupArgs {

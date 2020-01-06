@@ -11,8 +11,8 @@ The lodash method `_.pullAll` exported as a module.
 | Full name          | lodash.pullall |
 | Keywords           | lodash-modularized, pullall |
 | # releases         | 0 |
-| # dependents       | 33 |
-| # downloads        | 331605 |
+| # dependents       | 36 |
+| # downloads        | 407900 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ Fluxible addons for use with React
 | ------------------ | :-------------: |
 | Full name          | fluxible-addons-react |
 | Keywords           | - |
-| # releases         | 8 |
+| # releases         | 3 |
 | # dependents       | 9 |
-| # downloads        | 134034 |
+| # downloads        | 127870 |
 | # stars            | 1 |
 
 ## Links

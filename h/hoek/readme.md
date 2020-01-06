@@ -10,9 +10,9 @@ General purpose node utilities
 | ------------------ | :-------------: |
 | Full name          | hoek |
 | Keywords           | utilities |
-| # releases         | 16 |
-| # dependents       | 1177 |
-| # downloads        | 341288597 |
+| # releases         | 13 |
+| # dependents       | 1069 |
+| # downloads        | 298377526 |
 | # stars            | 32 |
 
 ## Links

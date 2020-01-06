@@ -31,7 +31,7 @@ class Query[T] ()
   def destroy(`type`: String): js.Promise[js.Array[RecordResult]] = js.native
   def destroy(`type`: String, callback: js.Function2[/* err */ Error, /* ret */ RecordResult, Unit]): js.Promise[js.Array[RecordResult]] = js.native
   @JSName("destroy")
-  def destroy_Promise(): js.Promise[js.Array[RecordResult]] = js.native
+  def destroy_Unit(): Unit = js.native
   def end(): Query[T] = js.native
   def exec(): Query[T] = js.native
   def exec(options: ExecuteOptions): Query[T] = js.native

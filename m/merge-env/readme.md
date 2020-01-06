@@ -12,7 +12,7 @@ An object merging function that has special support for environment variables
 | Keywords           | environment, merge, object, parse |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 1609 |
+| # downloads        | 1681 |
 | # stars            | 0 |
 
 ## Links

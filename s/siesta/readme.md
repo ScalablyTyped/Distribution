@@ -11,7 +11,7 @@ prototype RESTful services quickly
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 320 |
+| # downloads        | 374 |
 | # stars            | 0 |
 
 ## Links

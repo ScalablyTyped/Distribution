@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Broadcast[S] extends js.Object {
-  def getState(): S
-  def setState(state: S): Unit
-  def subscribe(callback: js.Function1[/* state */ S, Unit]): Double
-  def unsubscribe(subscriptionId: Double): Unit
+  def getState(): S = js.native
+  def setState(state: S): Unit = js.native
+  def subscribe(callback: js.Function1[/* state */ S, Unit]): Double = js.native
+  def unsubscribe(subscriptionId: Double): Unit = js.native
 }
 
 object Broadcast {

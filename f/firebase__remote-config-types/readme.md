@@ -10,9 +10,9 @@ Typings are for version 0.1.5
 | ------------------ | :-------------: |
 | Full name          | @firebase/remote-config-types |
 | Keywords           | - |
-| # releases         | 43 |
+| # releases         | 127 |
 | # dependents       | 1 |
-| # downloads        | 219060 |
+| # downloads        | 1677663 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ HTTP status utility
 | ------------------ | :-------------: |
 | Full name          | statuses |
 | Keywords           | http, status, code |
-| # releases         | 3 |
-| # dependents       | 305 |
-| # downloads        | 583550521 |
+| # releases         | 2 |
+| # dependents       | 345 |
+| # downloads        | 733044027 |
 | # stars            | 27 |
 
 ## Links

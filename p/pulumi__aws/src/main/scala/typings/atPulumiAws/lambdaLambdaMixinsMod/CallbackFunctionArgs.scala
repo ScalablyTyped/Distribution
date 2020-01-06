@@ -10,12 +10,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in @pulumi/aws.@pulumi/aws/utils.Diff<keyof @pulumi/aws.@pulumi/aws/lambda/function.FunctionArgs, keyof @pulumi/aws.Anon_CodePathOptions> ]: @pulumi/aws.@pulumi/aws/lambda/function.FunctionArgs[P]} */ trait CallbackFunctionArgs[E, R] extends Anon_CodePathOptions {
+- Dropped {[ P in @pulumi/aws.@pulumi/aws/utils.Diff<keyof @pulumi/aws.@pulumi/aws/lambda/function.FunctionArgs, keyof @pulumi/aws.Anon_CodePathOptions> ]: @pulumi/aws.@pulumi/aws/lambda/function.FunctionArgs[P]} */ @js.native
+trait CallbackFunctionArgs[E, R] extends Anon_CodePathOptions {
   /**
     * The Javascript callback to use as the entrypoint for the AWS Lambda out of.  Either
     * [callback] or [callbackFactory] must be provided.
     */
-  var callback: js.UndefOr[Callback[E, R]] = js.undefined
+  var callback: js.UndefOr[Callback[E, R]] = js.native
   /**
     * The Javascript function instance that will be called to produce the callback function that is
     * the entrypoint for the AWS Lambda. Either [callback] or [callbackFactory] must be
@@ -26,7 +27,7 @@ import scala.scalajs.js.annotation._
     * It can run whatever code it needs, and will end by returning the actual function that Lambda
     * will call into each time the Lambda is invoked.
     */
-  var callbackFactory: js.UndefOr[CallbackFactory[E, R]] = js.undefined
+  var callbackFactory: js.UndefOr[CallbackFactory[E, R]] = js.native
 }
 
 object CallbackFunctionArgs {
@@ -42,10 +43,10 @@ object CallbackFunctionArgs {
     val __obj = js.Dynamic.literal()
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction3(callback))
     if (callbackFactory != null) __obj.updateDynamic("callbackFactory")(js.Any.fromFunction0(callbackFactory))
-    if (codePathOptions != null) __obj.updateDynamic("codePathOptions")(codePathOptions)
-    if (policies != null) __obj.updateDynamic("policies")(policies)
-    if (role != null) __obj.updateDynamic("role")(role)
-    if (runtime != null) __obj.updateDynamic("runtime")(runtime)
+    if (codePathOptions != null) __obj.updateDynamic("codePathOptions")(codePathOptions.asInstanceOf[js.Any])
+    if (policies != null) __obj.updateDynamic("policies")(policies.asInstanceOf[js.Any])
+    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
+    if (runtime != null) __obj.updateDynamic("runtime")(runtime.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallbackFunctionArgs[E, R]]
   }
 }

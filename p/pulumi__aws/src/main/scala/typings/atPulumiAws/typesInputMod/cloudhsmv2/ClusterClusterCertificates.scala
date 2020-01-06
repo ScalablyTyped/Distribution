@@ -5,12 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClusterClusterCertificates extends js.Object {
-  var awsHardwareCertificate: js.UndefOr[Input[String]] = js.undefined
-  var clusterCertificate: js.UndefOr[Input[String]] = js.undefined
-  var clusterCsr: js.UndefOr[Input[String]] = js.undefined
-  var hsmCertificate: js.UndefOr[Input[String]] = js.undefined
-  var manufacturerHardwareCertificate: js.UndefOr[Input[String]] = js.undefined
+  var awsHardwareCertificate: js.UndefOr[Input[String]] = js.native
+  var clusterCertificate: js.UndefOr[Input[String]] = js.native
+  var clusterCsr: js.UndefOr[Input[String]] = js.native
+  var hsmCertificate: js.UndefOr[Input[String]] = js.native
+  var manufacturerHardwareCertificate: js.UndefOr[Input[String]] = js.native
 }
 
 object ClusterClusterCertificates {

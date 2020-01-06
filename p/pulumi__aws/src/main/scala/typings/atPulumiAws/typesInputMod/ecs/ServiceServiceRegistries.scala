@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ServiceServiceRegistries extends js.Object {
-  var containerName: js.UndefOr[Input[String]] = js.undefined
-  var containerPort: js.UndefOr[Input[Double]] = js.undefined
-  var port: js.UndefOr[Input[Double]] = js.undefined
-  var registryArn: Input[String]
+  var containerName: js.UndefOr[Input[String]] = js.native
+  var containerPort: js.UndefOr[Input[Double]] = js.native
+  var port: js.UndefOr[Input[Double]] = js.native
+  var registryArn: Input[String] = js.native
 }
 
 object ServiceServiceRegistries {

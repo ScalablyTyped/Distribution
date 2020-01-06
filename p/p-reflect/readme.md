@@ -11,8 +11,8 @@ Make a promise always fulfill with its actual fulfillment value or rejection rea
 | Full name          | p-reflect |
 | Keywords           | promise, reflect, inspect, debug, fulfill, reject, fulfilled, rejected, error, async, await, promises, bluebird |
 | # releases         | 3 |
-| # dependents       | 12 |
-| # downloads        | 838594 |
+| # dependents       | 17 |
+| # downloads        | 1340514 |
 | # stars            | 0 |
 
 ## Links

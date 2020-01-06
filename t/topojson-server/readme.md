@@ -10,9 +10,9 @@ Convert GeoJSON to TopoJSON for smaller files and the power of topology!
 | ------------------ | :-------------: |
 | Full name          | topojson-server |
 | Keywords           | topojson, geojson |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 1820883 |
+| # releases         | 2 |
+| # dependents       | 7 |
+| # downloads        | 3141333 |
 | # stars            | 0 |
 
 ## Links

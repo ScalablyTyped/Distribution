@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DefaultSecurityGroupIngress extends js.Object {
-  var cidrBlocks: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  var cidrBlocks: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The description of the security group
     */
-  var description: js.UndefOr[Input[String]] = js.undefined
-  var fromPort: Input[Double]
-  var ipv6CidrBlocks: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
-  var prefixListIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
-  var protocol: Input[String]
-  var securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
-  var self: js.UndefOr[Input[Boolean]] = js.undefined
-  var toPort: Input[Double]
+  var description: js.UndefOr[Input[String]] = js.native
+  var fromPort: Input[Double] = js.native
+  var ipv6CidrBlocks: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  var prefixListIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  var protocol: Input[String] = js.native
+  var securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  var self: js.UndefOr[Input[Boolean]] = js.native
+  var toPort: Input[Double] = js.native
 }
 
 object DefaultSecurityGroupIngress {

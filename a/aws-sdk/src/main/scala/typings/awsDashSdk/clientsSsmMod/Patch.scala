@@ -4,59 +4,60 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Patch extends js.Object {
   /**
     * The classification of the patch (for example, SecurityUpdates, Updates, CriticalUpdates).
     */
-  var Classification: js.UndefOr[PatchClassification] = js.undefined
+  var Classification: js.UndefOr[PatchClassification] = js.native
   /**
     * The URL where more information can be obtained about the patch.
     */
-  var ContentUrl: js.UndefOr[PatchContentUrl] = js.undefined
+  var ContentUrl: js.UndefOr[PatchContentUrl] = js.native
   /**
     * The description of the patch.
     */
-  var Description: js.UndefOr[PatchDescription] = js.undefined
+  var Description: js.UndefOr[PatchDescription] = js.native
   /**
     * The ID of the patch (this is different than the Microsoft Knowledge Base ID).
     */
-  var Id: js.UndefOr[PatchId] = js.undefined
+  var Id: js.UndefOr[PatchId] = js.native
   /**
     * The Microsoft Knowledge Base ID of the patch.
     */
-  var KbNumber: js.UndefOr[PatchKbNumber] = js.undefined
+  var KbNumber: js.UndefOr[PatchKbNumber] = js.native
   /**
     * The language of the patch if it's language-specific.
     */
-  var Language: js.UndefOr[PatchLanguage] = js.undefined
+  var Language: js.UndefOr[PatchLanguage] = js.native
   /**
     * The ID of the MSRC bulletin the patch is related to.
     */
-  var MsrcNumber: js.UndefOr[PatchMsrcNumber] = js.undefined
+  var MsrcNumber: js.UndefOr[PatchMsrcNumber] = js.native
   /**
     * The severity of the patch (for example Critical, Important, Moderate).
     */
-  var MsrcSeverity: js.UndefOr[PatchMsrcSeverity] = js.undefined
+  var MsrcSeverity: js.UndefOr[PatchMsrcSeverity] = js.native
   /**
     * The specific product the patch is applicable for (for example, WindowsServer2016).
     */
-  var Product: js.UndefOr[PatchProduct] = js.undefined
+  var Product: js.UndefOr[PatchProduct] = js.native
   /**
     * The product family the patch is applicable for (for example, Windows).
     */
-  var ProductFamily: js.UndefOr[PatchProductFamily] = js.undefined
+  var ProductFamily: js.UndefOr[PatchProductFamily] = js.native
   /**
     * The date the patch was released.
     */
-  var ReleaseDate: js.UndefOr[DateTime] = js.undefined
+  var ReleaseDate: js.UndefOr[DateTime] = js.native
   /**
     * The title of the patch.
     */
-  var Title: js.UndefOr[PatchTitle] = js.undefined
+  var Title: js.UndefOr[PatchTitle] = js.native
   /**
     * The name of the vendor providing the patch.
     */
-  var Vendor: js.UndefOr[PatchVendor] = js.undefined
+  var Vendor: js.UndefOr[PatchVendor] = js.native
 }
 
 object Patch {
@@ -77,19 +78,19 @@ object Patch {
     Vendor: PatchVendor = null
   ): Patch = {
     val __obj = js.Dynamic.literal()
-    if (Classification != null) __obj.updateDynamic("Classification")(Classification)
-    if (ContentUrl != null) __obj.updateDynamic("ContentUrl")(ContentUrl)
-    if (Description != null) __obj.updateDynamic("Description")(Description)
-    if (Id != null) __obj.updateDynamic("Id")(Id)
-    if (KbNumber != null) __obj.updateDynamic("KbNumber")(KbNumber)
-    if (Language != null) __obj.updateDynamic("Language")(Language)
-    if (MsrcNumber != null) __obj.updateDynamic("MsrcNumber")(MsrcNumber)
-    if (MsrcSeverity != null) __obj.updateDynamic("MsrcSeverity")(MsrcSeverity)
-    if (Product != null) __obj.updateDynamic("Product")(Product)
-    if (ProductFamily != null) __obj.updateDynamic("ProductFamily")(ProductFamily)
-    if (ReleaseDate != null) __obj.updateDynamic("ReleaseDate")(ReleaseDate)
-    if (Title != null) __obj.updateDynamic("Title")(Title)
-    if (Vendor != null) __obj.updateDynamic("Vendor")(Vendor)
+    if (Classification != null) __obj.updateDynamic("Classification")(Classification.asInstanceOf[js.Any])
+    if (ContentUrl != null) __obj.updateDynamic("ContentUrl")(ContentUrl.asInstanceOf[js.Any])
+    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
+    if (KbNumber != null) __obj.updateDynamic("KbNumber")(KbNumber.asInstanceOf[js.Any])
+    if (Language != null) __obj.updateDynamic("Language")(Language.asInstanceOf[js.Any])
+    if (MsrcNumber != null) __obj.updateDynamic("MsrcNumber")(MsrcNumber.asInstanceOf[js.Any])
+    if (MsrcSeverity != null) __obj.updateDynamic("MsrcSeverity")(MsrcSeverity.asInstanceOf[js.Any])
+    if (Product != null) __obj.updateDynamic("Product")(Product.asInstanceOf[js.Any])
+    if (ProductFamily != null) __obj.updateDynamic("ProductFamily")(ProductFamily.asInstanceOf[js.Any])
+    if (ReleaseDate != null) __obj.updateDynamic("ReleaseDate")(ReleaseDate.asInstanceOf[js.Any])
+    if (Title != null) __obj.updateDynamic("Title")(Title.asInstanceOf[js.Any])
+    if (Vendor != null) __obj.updateDynamic("Vendor")(Vendor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Patch]
   }
 }

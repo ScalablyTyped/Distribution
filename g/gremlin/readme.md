@@ -10,9 +10,9 @@ JavaScript Gremlin Language Variant
 | ------------------ | :-------------: |
 | Full name          | gremlin |
 | Keywords           | graph, gremlin, tinkerpop, connection, glv, driver, graphdb |
-| # releases         | 17 |
-| # dependents       | 21 |
-| # downloads        | 120832 |
+| # releases         | 20 |
+| # dependents       | 24 |
+| # downloads        | 200710 |
 | # stars            | 3 |
 
 ## Links

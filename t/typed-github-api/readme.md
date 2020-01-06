@@ -10,9 +10,9 @@ Client for GitHub API written in Typescript. Includes support for WebHooks using
 | ------------------ | :-------------: |
 | Full name          | typed-github-api |
 | Keywords           | GitHub, Typescript, WebHook, API |
-| # releases         | 52 |
+| # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 2206 |
+| # downloads        | 2825 |
 | # stars            | 0 |
 
 ## Links

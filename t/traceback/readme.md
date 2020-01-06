@@ -11,8 +11,8 @@ Easy access to the call stack, written in pure JavaScript
 | Full name          | traceback |
 | Keywords           | call, stack, trace, stacktrace, traceback, debug, line |
 | # releases         | 0 |
-| # dependents       | 16 |
-| # downloads        | 23074 |
+| # dependents       | 15 |
+| # downloads        | 27422 |
 | # stars            | 5 |
 
 ## Links

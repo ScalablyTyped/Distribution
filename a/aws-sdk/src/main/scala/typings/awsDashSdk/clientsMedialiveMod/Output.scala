@@ -4,27 +4,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Output extends js.Object {
   /**
     * The names of the AudioDescriptions used as audio sources for this output.
     */
-  var AudioDescriptionNames: js.UndefOr[__listOf__string] = js.undefined
+  var AudioDescriptionNames: js.UndefOr[__listOf__string] = js.native
   /**
     * The names of the CaptionDescriptions used as caption sources for this output.
     */
-  var CaptionDescriptionNames: js.UndefOr[__listOf__string] = js.undefined
+  var CaptionDescriptionNames: js.UndefOr[__listOf__string] = js.native
   /**
     * The name used to identify an output.
     */
-  var OutputName: js.UndefOr[__stringMin1Max255] = js.undefined
+  var OutputName: js.UndefOr[__stringMin1Max255] = js.native
   /**
     * Output type-specific settings.
     */
-  var OutputSettings: typings.awsDashSdk.clientsMedialiveMod.OutputSettings
+  var OutputSettings: typings.awsDashSdk.clientsMedialiveMod.OutputSettings = js.native
   /**
     * The name of the VideoDescription used as the source for this output.
     */
-  var VideoDescriptionName: js.UndefOr[__string] = js.undefined
+  var VideoDescriptionName: js.UndefOr[__string] = js.native
 }
 
 object Output {
@@ -36,11 +37,11 @@ object Output {
     OutputName: __stringMin1Max255 = null,
     VideoDescriptionName: __string = null
   ): Output = {
-    val __obj = js.Dynamic.literal(OutputSettings = OutputSettings)
-    if (AudioDescriptionNames != null) __obj.updateDynamic("AudioDescriptionNames")(AudioDescriptionNames)
-    if (CaptionDescriptionNames != null) __obj.updateDynamic("CaptionDescriptionNames")(CaptionDescriptionNames)
-    if (OutputName != null) __obj.updateDynamic("OutputName")(OutputName)
-    if (VideoDescriptionName != null) __obj.updateDynamic("VideoDescriptionName")(VideoDescriptionName)
+    val __obj = js.Dynamic.literal(OutputSettings = OutputSettings.asInstanceOf[js.Any])
+    if (AudioDescriptionNames != null) __obj.updateDynamic("AudioDescriptionNames")(AudioDescriptionNames.asInstanceOf[js.Any])
+    if (CaptionDescriptionNames != null) __obj.updateDynamic("CaptionDescriptionNames")(CaptionDescriptionNames.asInstanceOf[js.Any])
+    if (OutputName != null) __obj.updateDynamic("OutputName")(OutputName.asInstanceOf[js.Any])
+    if (VideoDescriptionName != null) __obj.updateDynamic("VideoDescriptionName")(VideoDescriptionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Output]
   }
 }

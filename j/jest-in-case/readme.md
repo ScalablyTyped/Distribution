@@ -10,9 +10,9 @@ Jest utility for creating variations of the same test
 | ------------------ | :-------------: |
 | Full name          | jest-in-case |
 | Keywords           | jest, test, testing |
-| # releases         | 5 |
-| # dependents       | 5 |
-| # downloads        | 228212 |
+| # releases         | 1 |
+| # dependents       | 8 |
+| # downloads        | 382966 |
 | # stars            | 1 |
 
 ## Links

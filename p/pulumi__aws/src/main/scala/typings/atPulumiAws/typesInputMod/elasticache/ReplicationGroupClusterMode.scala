@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ReplicationGroupClusterMode extends js.Object {
   /**
     * Specify the number of node groups (shards) for this Redis replication group. Changing this number will trigger an online resizing operation before other settings modifications.
     */
-  var numNodeGroups: Input[Double]
+  var numNodeGroups: Input[Double] = js.native
   /**
     * Specify the number of replica nodes in each node group. Valid values are 0 to 5. Changing this number will force a new resource.
     */
-  var replicasPerNodeGroup: Input[Double]
+  var replicasPerNodeGroup: Input[Double] = js.native
 }
 
 object ReplicationGroupClusterMode {

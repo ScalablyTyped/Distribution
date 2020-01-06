@@ -10,9 +10,9 @@ Formats JS list in a i18n-safe way
 | ------------------ | :-------------: |
 | Full name          | @formatjs/intl-listformat |
 | Keywords           | intl, i18n, list, format, formatjs |
-| # releases         | 5 |
-| # dependents       | 0 |
-| # downloads        | 279 |
+| # releases         | 19 |
+| # dependents       | 1 |
+| # downloads        | 389287 |
 | # stars            | 0 |
 
 ## Links

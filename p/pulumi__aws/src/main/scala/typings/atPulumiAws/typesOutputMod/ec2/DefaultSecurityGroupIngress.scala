@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DefaultSecurityGroupIngress extends js.Object {
-  var cidrBlocks: js.UndefOr[js.Array[String]] = js.undefined
+  var cidrBlocks: js.UndefOr[js.Array[String]] = js.native
   /**
     * The description of the security group
     */
-  var description: js.UndefOr[String] = js.undefined
-  var fromPort: Double
-  var ipv6CidrBlocks: js.UndefOr[js.Array[String]] = js.undefined
-  var prefixListIds: js.UndefOr[js.Array[String]] = js.undefined
-  var protocol: String
-  var securityGroups: js.UndefOr[js.Array[String]] = js.undefined
-  var self: js.UndefOr[Boolean] = js.undefined
-  var toPort: Double
+  var description: js.UndefOr[String] = js.native
+  var fromPort: Double = js.native
+  var ipv6CidrBlocks: js.UndefOr[js.Array[String]] = js.native
+  var prefixListIds: js.UndefOr[js.Array[String]] = js.native
+  var protocol: String = js.native
+  var securityGroups: js.UndefOr[js.Array[String]] = js.native
+  var self: js.UndefOr[Boolean] = js.native
+  var toPort: Double = js.native
 }
 
 object DefaultSecurityGroupIngress {
@@ -32,13 +33,13 @@ object DefaultSecurityGroupIngress {
     securityGroups: js.Array[String] = null,
     self: js.UndefOr[Boolean] = js.undefined
   ): DefaultSecurityGroupIngress = {
-    val __obj = js.Dynamic.literal(fromPort = fromPort, protocol = protocol, toPort = toPort)
-    if (cidrBlocks != null) __obj.updateDynamic("cidrBlocks")(cidrBlocks)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (ipv6CidrBlocks != null) __obj.updateDynamic("ipv6CidrBlocks")(ipv6CidrBlocks)
-    if (prefixListIds != null) __obj.updateDynamic("prefixListIds")(prefixListIds)
-    if (securityGroups != null) __obj.updateDynamic("securityGroups")(securityGroups)
-    if (!js.isUndefined(self)) __obj.updateDynamic("self")(self)
+    val __obj = js.Dynamic.literal(fromPort = fromPort.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], toPort = toPort.asInstanceOf[js.Any])
+    if (cidrBlocks != null) __obj.updateDynamic("cidrBlocks")(cidrBlocks.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (ipv6CidrBlocks != null) __obj.updateDynamic("ipv6CidrBlocks")(ipv6CidrBlocks.asInstanceOf[js.Any])
+    if (prefixListIds != null) __obj.updateDynamic("prefixListIds")(prefixListIds.asInstanceOf[js.Any])
+    if (securityGroups != null) __obj.updateDynamic("securityGroups")(securityGroups.asInstanceOf[js.Any])
+    if (!js.isUndefined(self)) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultSecurityGroupIngress]
   }
 }

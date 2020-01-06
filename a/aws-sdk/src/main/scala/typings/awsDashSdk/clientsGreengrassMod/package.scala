@@ -10,12 +10,12 @@ package object clientsGreengrassMod {
 
   type BulkDeploymentResults = js.Array[BulkDeploymentResult]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Initializing
-    - typings.awsDashSdk.awsDashSdkStrings.Running
-    - typings.awsDashSdk.awsDashSdkStrings.Completed
-    - typings.awsDashSdk.awsDashSdkStrings.Stopping
-    - typings.awsDashSdk.awsDashSdkStrings.Stopped
-    - typings.awsDashSdk.awsDashSdkStrings.Failed
+    - typings.awsDashSdk.awsDashSdkStrings.Initializing_
+    - typings.awsDashSdk.awsDashSdkStrings.Running_
+    - typings.awsDashSdk.awsDashSdkStrings.Completed_
+    - typings.awsDashSdk.awsDashSdkStrings.Stopping_
+    - typings.awsDashSdk.awsDashSdkStrings.Stopped_
+    - typings.awsDashSdk.awsDashSdkStrings.Failed_
     - java.lang.String
   */
   type BulkDeploymentStatus = _BulkDeploymentStatus | String
@@ -31,8 +31,8 @@ package object clientsGreengrassMod {
   type DeploymentType = _DeploymentType | String
   type Deployments = js.Array[Deployment]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.binary
-    - typings.awsDashSdk.awsDashSdkStrings.json
+    - typings.awsDashSdk.awsDashSdkStrings.binary__
+    - typings.awsDashSdk.awsDashSdkStrings.json_
     - java.lang.String
   */
   type EncodingType = _EncodingType | String
@@ -45,7 +45,7 @@ package object clientsGreengrassMod {
   type FunctionIsolationMode = _FunctionIsolationMode | String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.GreengrassSystem
-    - typings.awsDashSdk.awsDashSdkStrings.Lambda
+    - typings.awsDashSdk.awsDashSdkStrings.Lambda_
     - java.lang.String
   */
   type LoggerComponent = _LoggerComponent | String
@@ -65,14 +65,14 @@ package object clientsGreengrassMod {
   */
   type LoggerType = _LoggerType | String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.ro
-    - typings.awsDashSdk.awsDashSdkStrings.rw
+    - typings.awsDashSdk.awsDashSdkStrings.ro_
+    - typings.awsDashSdk.awsDashSdkStrings.rw_
     - java.lang.String
   */
   type Permission = _Permission | String
   type S3UrlSignerRole = String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.core
+    - typings.awsDashSdk.awsDashSdkStrings.core__
     - typings.awsDashSdk.awsDashSdkStrings.ota_agent
     - java.lang.String
   */
@@ -92,17 +92,18 @@ package object clientsGreengrassMod {
   type UpdateAgentLogLevel = _UpdateAgentLogLevel | String
   type UpdateTargets = js.Array[__string]
   /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.armv6l
     - typings.awsDashSdk.awsDashSdkStrings.armv7l
-    - typings.awsDashSdk.awsDashSdkStrings.x86_64
+    - typings.awsDashSdk.awsDashSdkStrings.x86_64_
     - typings.awsDashSdk.awsDashSdkStrings.aarch64
-    - typings.awsDashSdk.awsDashSdkStrings.openwrt
     - java.lang.String
   */
   type UpdateTargetsArchitecture = _UpdateTargetsArchitecture | String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.ubuntu
+    - typings.awsDashSdk.awsDashSdkStrings.ubuntu_
     - typings.awsDashSdk.awsDashSdkStrings.raspbian
-    - typings.awsDashSdk.awsDashSdkStrings.amazon_linux
+    - typings.awsDashSdk.awsDashSdkStrings.amazon_linux_
+    - typings.awsDashSdk.awsDashSdkStrings.openwrt
     - java.lang.String
   */
   type UpdateTargetsOperatingSystem = _UpdateTargetsOperatingSystem | String
@@ -126,7 +127,7 @@ package object clientsGreengrassMod {
   type __string = String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2017-06-07`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

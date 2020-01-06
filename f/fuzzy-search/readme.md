@@ -10,9 +10,9 @@ Simple fuzzy search
 | ------------------ | :-------------: |
 | Full name          | fuzzy-search |
 | Keywords           | fuzzy, search, javascript |
-| # releases         | 10 |
-| # dependents       | 10 |
-| # downloads        | 1284806 |
+| # releases         | 8 |
+| # dependents       | 15 |
+| # downloads        | 6719459 |
 | # stars            | 3 |
 
 ## Links

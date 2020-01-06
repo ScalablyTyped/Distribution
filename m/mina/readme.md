@@ -12,7 +12,7 @@ Lightweight deployer for node development, inspired by mina and minco
 | Keywords           | deploy, deployment, coffeescript, mina, minco, git, ssh, forever, pm2 |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 2760 |
+| # downloads        | 2217 |
 | # stars            | 3 |
 
 ## Links

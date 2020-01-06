@@ -12,7 +12,7 @@ The lodash method `_.ceil` exported as a module.
 | Keywords           | lodash-modularized, ceil |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 4618 |
+| # downloads        | 10360 |
 | # stars            | 0 |
 
 ## Links

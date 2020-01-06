@@ -3,15 +3,16 @@
 
 Typings are for version 2.4.3
 
-
+## Library description:
+This package is used internally by Apollo Server and not meant to be consumed directly.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | apollo-server-env |
 | Keywords           | - |
-| # releases         | 22 |
-| # dependents       | 27 |
-| # downloads        | 7030339 |
+| # releases         | 29 |
+| # dependents       | 46 |
+| # downloads        | 24123318 |
 | # stars            | 0 |
 
 ## Links

@@ -4,8 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait JobDefinitionRetryStrategy extends js.Object {
-  var attempts: js.UndefOr[Double] = js.undefined
+  var attempts: js.UndefOr[Double] = js.native
 }
 
 object JobDefinitionRetryStrategy {

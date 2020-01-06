@@ -11,6 +11,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RawButtonProperties extends NativeViewGestureHandlerProperties {
+  var accessibilityLabel: js.UndefOr[String] = js.undefined
   var exclusive: js.UndefOr[Boolean] = js.undefined
   var testID: js.UndefOr[String] = js.undefined
 }
@@ -18,6 +19,7 @@ trait RawButtonProperties extends NativeViewGestureHandlerProperties {
 object RawButtonProperties {
   @scala.inline
   def apply(
+    accessibilityLabel: String = null,
     disallowInterruption: js.UndefOr[Boolean] = js.undefined,
     enabled: js.UndefOr[Boolean] = js.undefined,
     exclusive: js.UndefOr[Boolean] = js.undefined,
@@ -32,6 +34,7 @@ object RawButtonProperties {
     waitFor: Ref[_] | js.Array[Ref[_]] = null
   ): RawButtonProperties = {
     val __obj = js.Dynamic.literal()
+    if (accessibilityLabel != null) __obj.updateDynamic("accessibilityLabel")(accessibilityLabel.asInstanceOf[js.Any])
     if (!js.isUndefined(disallowInterruption)) __obj.updateDynamic("disallowInterruption")(disallowInterruption.asInstanceOf[js.Any])
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive.asInstanceOf[js.Any])

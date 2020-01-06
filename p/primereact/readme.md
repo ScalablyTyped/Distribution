@@ -4,15 +4,15 @@
 Typings are for version 3.3.3
 
 ## Library description:
-[![Join the chat at https://gitter.im/primefaces/primereact](https://badges.gitter.im/primefaces/primereact.svg)](https://gitter.im/primefaces/primereact?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![npm version](https://badge.fury.io/js/primereact.svg)](https://badge.fury.io/js/primereact) [![Join the chat at https://gitter.im/primefaces/pri
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | primereact |
 | Keywords           | - |
-| # releases         | 49 |
-| # dependents       | 2 |
-| # downloads        | 228639 |
+| # releases         | 44 |
+| # dependents       | 15 |
+| # downloads        | 534530 |
 | # stars            | 1 |
 
 ## Links

@@ -1,13 +1,10 @@
 package typings.atGoogleMaps.atGoogleMapsMod
 
-import typings.std.PromiseConstructor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CreateClientOptions extends js.Object {
-  /** Promise constructor (optional). */
-  var Promise: js.UndefOr[PromiseConstructor] = js.undefined
   /** Maps API for Work channel. */
   var channel: js.UndefOr[String] = js.undefined
   /** Maps API for Work client ID. */
@@ -30,7 +27,6 @@ object CreateClientOptions {
   @scala.inline
   def apply(
     key: String,
-    Promise: PromiseConstructor = null,
     channel: String = null,
     clientId: String = null,
     clientSecret: String = null,
@@ -40,7 +36,6 @@ object CreateClientOptions {
     timeout: Int | Double = null
   ): CreateClientOptions = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-    if (Promise != null) __obj.updateDynamic("Promise")(Promise.asInstanceOf[js.Any])
     if (channel != null) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
     if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
     if (clientSecret != null) __obj.updateDynamic("clientSecret")(clientSecret.asInstanceOf[js.Any])

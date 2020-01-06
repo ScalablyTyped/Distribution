@@ -10,9 +10,9 @@ Submit and query New Relic Insights data
 | ------------------ | :-------------: |
 | Full name          | node-insights |
 | Keywords           | newrelic, new-relic, new, relic, insights |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 3 |
-| # downloads        | 156396 |
+| # downloads        | 172787 |
 | # stars            | 1 |
 
 ## Links

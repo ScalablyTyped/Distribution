@@ -6,15 +6,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait HostedPublicVirtualInterfaceAccepterArgs extends js.Object {
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * The ID of the Direct Connect virtual interface to accept.
     */
-  val virtualInterfaceId: Input[String]
+  val virtualInterfaceId: Input[String] = js.native
 }
 
 object HostedPublicVirtualInterfaceAccepterArgs {

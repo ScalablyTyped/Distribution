@@ -5,23 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NfsFileShareNfsFileShareDefaults extends js.Object {
   /**
     * The Unix directory mode in the string form "nnnn". Defaults to `"0777"`.
     */
-  var directoryMode: js.UndefOr[Input[String]] = js.undefined
+  var directoryMode: js.UndefOr[Input[String]] = js.native
   /**
     * The Unix file mode in the string form "nnnn". Defaults to `"0666"`.
     */
-  var fileMode: js.UndefOr[Input[String]] = js.undefined
+  var fileMode: js.UndefOr[Input[String]] = js.native
   /**
     * The default group ID for the file share (unless the files have another group ID specified). Defaults to `65534` (`nfsnobody`). Valid values: `0` through `4294967294`.
     */
-  var groupId: js.UndefOr[Input[Double]] = js.undefined
+  var groupId: js.UndefOr[Input[Double]] = js.native
   /**
     * The default owner ID for the file share (unless the files have another owner ID specified). Defaults to `65534` (`nfsnobody`). Valid values: `0` through `4294967294`.
     */
-  var ownerId: js.UndefOr[Input[Double]] = js.undefined
+  var ownerId: js.UndefOr[Input[Double]] = js.native
 }
 
 object NfsFileShareNfsFileShareDefaults {

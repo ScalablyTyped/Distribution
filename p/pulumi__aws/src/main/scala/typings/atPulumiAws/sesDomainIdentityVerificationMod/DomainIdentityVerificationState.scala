@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DomainIdentityVerificationState extends js.Object {
   /**
     * The ARN of the domain identity.
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * The domain name of the SES domain identity to verify.
     */
-  val domain: js.UndefOr[Input[String]] = js.undefined
+  val domain: js.UndefOr[Input[String]] = js.native
 }
 
 object DomainIdentityVerificationState {

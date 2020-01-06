@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EventTypeFilter extends js.Object {
   /**
     * A list of event type category codes (issue, scheduledChange, or accountNotification).
     */
-  var eventTypeCategories: js.UndefOr[EventTypeCategoryList] = js.undefined
+  var eventTypeCategories: js.UndefOr[EventTypeCategoryList] = js.native
   /**
     * A list of event type codes.
     */
-  var eventTypeCodes: js.UndefOr[EventTypeCodeList] = js.undefined
+  var eventTypeCodes: js.UndefOr[EventTypeCodeList] = js.native
   /**
     * The AWS services associated with the event. For example, EC2, RDS.
     */
-  var services: js.UndefOr[serviceList] = js.undefined
+  var services: js.UndefOr[serviceList] = js.native
 }
 
 object EventTypeFilter {
@@ -27,9 +28,9 @@ object EventTypeFilter {
     services: serviceList = null
   ): EventTypeFilter = {
     val __obj = js.Dynamic.literal()
-    if (eventTypeCategories != null) __obj.updateDynamic("eventTypeCategories")(eventTypeCategories)
-    if (eventTypeCodes != null) __obj.updateDynamic("eventTypeCodes")(eventTypeCodes)
-    if (services != null) __obj.updateDynamic("services")(services)
+    if (eventTypeCategories != null) __obj.updateDynamic("eventTypeCategories")(eventTypeCategories.asInstanceOf[js.Any])
+    if (eventTypeCodes != null) __obj.updateDynamic("eventTypeCodes")(eventTypeCodes.asInstanceOf[js.Any])
+    if (services != null) __obj.updateDynamic("services")(services.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventTypeFilter]
   }
 }

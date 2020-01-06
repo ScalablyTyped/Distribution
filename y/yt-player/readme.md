@@ -10,9 +10,9 @@ Simple, robust YouTube Iframe Player API
 | ------------------ | :-------------: |
 | Full name          | yt-player |
 | Keywords           | youtube, youtube player, player, iframe, api, youtube api, youtube iframe api, iframe api, yt player, yt-player, youtube embed |
-| # releases         | 8 |
-| # dependents       | 3 |
-| # downloads        | 39119 |
+| # releases         | 14 |
+| # dependents       | 4 |
+| # downloads        | 55244 |
 | # stars            | 3 |
 
 ## Links

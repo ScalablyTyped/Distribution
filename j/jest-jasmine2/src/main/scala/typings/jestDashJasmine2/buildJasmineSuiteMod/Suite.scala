@@ -32,7 +32,7 @@ trait Suite extends js.Object {
   def addChild(child: typings.jestDashJasmine2.buildJasmineSpecMod.default): Unit = js.native
   def addChild(child: Suite): Unit = js.native
   def addExpectationResult(
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type Parameters<Spec['addExpectationResult']> is not an array type */ args: Parameters[
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Spec['addExpectationResult']> is not an array type */ args: Parameters[
       js.Function3[/* passed */ Boolean, /* data */ Options, /* isError */ js.UndefOr[Boolean], Unit]
     ]
   ): Unit = js.native
@@ -48,7 +48,7 @@ trait Suite extends js.Object {
   def getResult(): SuiteResult = js.native
   def isExecutable(): Boolean = js.native
   def onException(
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type Parameters<Spec['onException']> is not an array type */ args: Parameters[
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Spec['onException']> is not an array type */ args: Parameters[
       js.Function1[
         /* error */ typings.jestDashJasmine2.buildExpectationFailedMod.default | AssertionErrorWithStack, 
         Unit

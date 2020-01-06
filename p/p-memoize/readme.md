@@ -10,9 +10,9 @@ Memoize promise-returning & async functions
 | ------------------ | :-------------: |
 | Full name          | p-memoize |
 | Keywords           | promise, memoize, mem, memoization, function, cache, caching, optimize, performance, ttl, expire, async, await, promises, time, out, cancel, bluebird |
-| # releases         | 3 |
-| # dependents       | 19 |
-| # downloads        | 365736 |
+| # releases         | 7 |
+| # dependents       | 35 |
+| # downloads        | 1278894 |
 | # stars            | 0 |
 
 ## Links

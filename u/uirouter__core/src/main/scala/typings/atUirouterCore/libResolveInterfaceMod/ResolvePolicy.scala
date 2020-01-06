@@ -16,10 +16,12 @@ trait ResolvePolicy extends js.Object {
     *   - Any other value returned is wrapped in a promise.
     *   - The promise will not be unwrapped.
     *   - The promise itself will be provided when the resolve is injected or bound elsewhere.
-    * - `RXWAIT`
-    *   - When an Observable is returned from the resolveFn, wait until the Observable emits at least one item.
-    *   - The Observable item will not be unwrapped.
-    *   - The Observable stream itself will be provided when the resolve is injected or bound elsewhere.
+    * - {@link CustomAsyncPolicy}
+    *   - You can define a custom function that will be called with the resolveFn value.
+    *   - This function must return a promise.
+    *   - The transition will wait for this promise before proceeding
+    *
+    *   NOTE: The previous `RXWAIT` policy has become a CustomAsyncPolicy function exported in `@uirouter/rx` package.
     *
     * #### Example:
     * The `Transition` will not wait for the resolve promise(s) from `main` to settle before continuing.

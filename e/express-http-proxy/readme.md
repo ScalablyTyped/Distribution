@@ -10,9 +10,9 @@ http proxy middleware for express
 | ------------------ | :-------------: |
 | Full name          | express-http-proxy |
 | Keywords           | express-http-proxy |
-| # releases         | 15 |
-| # dependents       | 233 |
-| # downloads        | 3450518 |
+| # releases         | 7 |
+| # dependents       | 273 |
+| # downloads        | 4539639 |
 | # stars            | 40 |
 
 ## Links

@@ -72,6 +72,7 @@ object templatesServiceUserMod extends js.Object {
       */
     /* CompleteClass */
     /* InferMemberOverrides */
+    /* InferMemberOverrides */
     override def begin(): typings.tstl.baseIteratorIteratorMod.Iterator[
         Entry[Double, Client], 
         HashMap[Double, Client], 
@@ -126,7 +127,7 @@ object templatesServiceUserMod extends js.Object {
     /**
       * Test whether container is empty.
       */
-    /* CompleteClass */
+    /* InferMemberOverrides */
     /* InferMemberOverrides */
     override def empty(): Boolean = js.native
     /**
@@ -135,6 +136,7 @@ object templatesServiceUserMod extends js.Object {
       * @return Iterator to the end.
       */
     /* CompleteClass */
+    /* InferMemberOverrides */
     /* InferMemberOverrides */
     override def end(): typings.tstl.baseIteratorIteratorMod.Iterator[
         Entry[Double, Client], 
@@ -182,12 +184,15 @@ object templatesServiceUserMod extends js.Object {
       */
     /* CompleteClass */
     /* InferMemberOverrides */
+    /* InferMemberOverrides */
     override def push(items: (IPair[Double, Client])*): Double = js.native
     /**
       * Reverse iterator to the first element in reverse.
       *
       * @return Reverse iterator to the first.
       */
+    /* CompleteClass */
+    /* InferMemberOverrides */
     /* InferMemberOverrides */
     override def rbegin(): ReverseIterator[Double, Client] = js.native
     /* InferMemberOverrides */
@@ -205,6 +210,8 @@ object templatesServiceUserMod extends js.Object {
       *
       * @return Reverse iterator to the end.
       */
+    /* CompleteClass */
+    /* InferMemberOverrides */
     /* InferMemberOverrides */
     override def rend(): ReverseIterator[Double, Client] = js.native
     /**
@@ -247,7 +254,6 @@ object templatesServiceUserMod extends js.Object {
     /**
       * Number of elements in the container.
       */
-    /* CompleteClass */
     /* InferMemberOverrides */
     override def size(): Double = js.native
   }

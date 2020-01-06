@@ -10,9 +10,9 @@ Typings are for version 1.0
 | ------------------ | :-------------: |
 | Full name          | mjml-react |
 | Keywords           | - |
-| # releases         | 55 |
-| # dependents       | 5 |
-| # downloads        | 38913 |
+| # releases         | 60 |
+| # dependents       | 6 |
+| # downloads        | 334422 |
 | # stars            | 0 |
 
 ## Links

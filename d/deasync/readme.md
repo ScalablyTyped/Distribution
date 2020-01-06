@@ -11,8 +11,8 @@ Turns async function into sync via JavaScript wrapper of Node event loop
 | Full name          | deasync |
 | Keywords           | async, sync, sleep, async wrapper |
 | # releases         | 6 |
-| # dependents       | 554 |
-| # downloads        | 5236084 |
+| # dependents       | 602 |
+| # downloads        | 10005310 |
 | # stars            | 26 |
 
 ## Links

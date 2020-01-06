@@ -10,9 +10,9 @@ Resolve an options object based on configuration.
 | ------------------ | :-------------: |
 | Full name          | resolve-options |
 | Keywords           | options, functions, resolver, type, configuration, config, opts, opt, default |
-| # releases         | 4 |
-| # dependents       | 3 |
-| # downloads        | 13205726 |
+| # releases         | 1 |
+| # dependents       | 4 |
+| # downloads        | 32768703 |
 | # stars            | 0 |
 
 ## Links

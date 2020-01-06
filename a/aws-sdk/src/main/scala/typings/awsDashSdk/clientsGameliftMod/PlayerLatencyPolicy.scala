@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PlayerLatencyPolicy extends js.Object {
   /**
     * The maximum latency value that is allowed for any player, in milliseconds. All policies must have a value set for this property.
     */
-  var MaximumIndividualPlayerLatencyMilliseconds: js.UndefOr[WholeNumber] = js.undefined
+  var MaximumIndividualPlayerLatencyMilliseconds: js.UndefOr[WholeNumber] = js.native
   /**
     * The length of time, in seconds, that the policy is enforced while placing a new game session. A null value for this property means that the policy is enforced until the queue times out.
     */
-  var PolicyDurationSeconds: js.UndefOr[WholeNumber] = js.undefined
+  var PolicyDurationSeconds: js.UndefOr[WholeNumber] = js.native
 }
 
 object PlayerLatencyPolicy {

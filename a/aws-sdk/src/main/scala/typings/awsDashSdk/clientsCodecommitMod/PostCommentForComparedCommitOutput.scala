@@ -4,35 +4,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PostCommentForComparedCommitOutput extends js.Object {
   /**
-    * In the directionality you established, the blob ID of the 'after' blob.
+    * In the directionality you established, the blob ID of the after blob.
     */
-  var afterBlobId: js.UndefOr[ObjectId] = js.undefined
+  var afterBlobId: js.UndefOr[ObjectId] = js.native
   /**
-    * In the directionality you established, the full commit ID of the 'after' commit.
+    * In the directionality you established, the full commit ID of the after commit.
     */
-  var afterCommitId: js.UndefOr[CommitId] = js.undefined
+  var afterCommitId: js.UndefOr[CommitId] = js.native
   /**
-    * In the directionality you established, the blob ID of the 'before' blob.
+    * In the directionality you established, the blob ID of the before blob.
     */
-  var beforeBlobId: js.UndefOr[ObjectId] = js.undefined
+  var beforeBlobId: js.UndefOr[ObjectId] = js.native
   /**
-    * In the directionality you established, the full commit ID of the 'before' commit.
+    * In the directionality you established, the full commit ID of the before commit.
     */
-  var beforeCommitId: js.UndefOr[CommitId] = js.undefined
+  var beforeCommitId: js.UndefOr[CommitId] = js.native
   /**
     * The content of the comment you posted.
     */
-  var comment: js.UndefOr[Comment] = js.undefined
+  var comment: js.UndefOr[Comment] = js.native
   /**
     * The location of the comment in the comparison between the two commits.
     */
-  var location: js.UndefOr[Location] = js.undefined
+  var location: js.UndefOr[Location] = js.native
   /**
     * The name of the repository where you posted a comment on the comparison between commits.
     */
-  var repositoryName: js.UndefOr[RepositoryName] = js.undefined
+  var repositoryName: js.UndefOr[RepositoryName] = js.native
 }
 
 object PostCommentForComparedCommitOutput {
@@ -47,13 +48,13 @@ object PostCommentForComparedCommitOutput {
     repositoryName: RepositoryName = null
   ): PostCommentForComparedCommitOutput = {
     val __obj = js.Dynamic.literal()
-    if (afterBlobId != null) __obj.updateDynamic("afterBlobId")(afterBlobId)
-    if (afterCommitId != null) __obj.updateDynamic("afterCommitId")(afterCommitId)
-    if (beforeBlobId != null) __obj.updateDynamic("beforeBlobId")(beforeBlobId)
-    if (beforeCommitId != null) __obj.updateDynamic("beforeCommitId")(beforeCommitId)
-    if (comment != null) __obj.updateDynamic("comment")(comment)
-    if (location != null) __obj.updateDynamic("location")(location)
-    if (repositoryName != null) __obj.updateDynamic("repositoryName")(repositoryName)
+    if (afterBlobId != null) __obj.updateDynamic("afterBlobId")(afterBlobId.asInstanceOf[js.Any])
+    if (afterCommitId != null) __obj.updateDynamic("afterCommitId")(afterCommitId.asInstanceOf[js.Any])
+    if (beforeBlobId != null) __obj.updateDynamic("beforeBlobId")(beforeBlobId.asInstanceOf[js.Any])
+    if (beforeCommitId != null) __obj.updateDynamic("beforeCommitId")(beforeCommitId.asInstanceOf[js.Any])
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (repositoryName != null) __obj.updateDynamic("repositoryName")(repositoryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostCommentForComparedCommitOutput]
   }
 }

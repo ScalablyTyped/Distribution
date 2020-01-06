@@ -10,9 +10,9 @@ Javascript library for precise tracking of facial features via Constrained Local
 | ------------------ | :-------------: |
 | Full name          | clmtrackr |
 | Keywords           | computer-vision |
-| # releases         | 4 |
-| # dependents       | 2 |
-| # downloads        | 6849 |
+| # releases         | 1 |
+| # dependents       | 3 |
+| # downloads        | 7246 |
 | # stars            | 1 |
 
 ## Links

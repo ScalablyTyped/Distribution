@@ -10,9 +10,9 @@ The easy way to write Telegram bots.
 | ------------------ | :-------------: |
 | Full name          | telebot |
 | Keywords           | bot, api, wrapper, telebot, telegram, telegram api, telegram bot, telegram bot api |
-| # releases         | 11 |
-| # dependents       | 11 |
-| # downloads        | 21373 |
+| # releases         | 4 |
+| # dependents       | 16 |
+| # downloads        | 18710 |
 | # stars            | 14 |
 
 ## Links

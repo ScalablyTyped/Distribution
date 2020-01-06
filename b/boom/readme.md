@@ -10,9 +10,9 @@ HTTP-friendly error objects
 | ------------------ | :-------------: |
 | Full name          | boom |
 | Keywords           | error, http |
-| # releases         | 11 |
-| # dependents       | 1276 |
-| # downloads        | 383795339 |
+| # releases         | 5 |
+| # dependents       | 1190 |
+| # downloads        | 238281252 |
 | # stars            | 118 |
 
 ## Links

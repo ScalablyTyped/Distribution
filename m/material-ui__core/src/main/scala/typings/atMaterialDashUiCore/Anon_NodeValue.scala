@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Anon_NodeValue extends js.Object {
-  var node: HTMLInputElement
-  var value: String | Double | Boolean | (js.Array[String | Double | Boolean])
+  var node: HTMLInputElement = js.native
+  var value: String | Double | Boolean | (js.Array[String | Double | Boolean]) = js.native
 }
 
 object Anon_NodeValue {

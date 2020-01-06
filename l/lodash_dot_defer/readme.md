@@ -11,8 +11,8 @@ The lodash method `_.defer` exported as a module.
 | Full name          | lodash.defer |
 | Keywords           | lodash-modularized, defer |
 | # releases         | 0 |
-| # dependents       | 14 |
-| # downloads        | 203946 |
+| # dependents       | 17 |
+| # downloads        | 529344 |
 | # stars            | 0 |
 
 ## Links

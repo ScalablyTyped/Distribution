@@ -5,27 +5,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PermissionState extends js.Object {
   /**
     * Whether the user is allowed to use SSH to communicate with the instance
     */
-  val allowSsh: js.UndefOr[Input[Boolean]] = js.undefined
+  val allowSsh: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Whether the user is allowed to use sudo to elevate privileges
     */
-  val allowSudo: js.UndefOr[Input[Boolean]] = js.undefined
+  val allowSudo: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The users permission level. Mus be one of `deny`, `show`, `deploy`, `manage`, `iamOnly`
     */
-  val level: js.UndefOr[Input[String]] = js.undefined
+  val level: js.UndefOr[Input[String]] = js.native
   /**
     * The stack to set the permissions for
     */
-  val stackId: js.UndefOr[Input[String]] = js.undefined
+  val stackId: js.UndefOr[Input[String]] = js.native
   /**
     * The user's IAM ARN to set permissions for
     */
-  val userArn: js.UndefOr[Input[String]] = js.undefined
+  val userArn: js.UndefOr[Input[String]] = js.native
 }
 
 object PermissionState {

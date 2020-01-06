@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LogSubscription extends js.Object {
   /**
     * Identifier (ID) of the directory that you want to associate with the log subscription.
     */
-  var DirectoryId: js.UndefOr[typings.awsDashSdk.clientsDirectoryserviceMod.DirectoryId] = js.undefined
+  var DirectoryId: js.UndefOr[typings.awsDashSdk.clientsDirectoryserviceMod.DirectoryId] = js.native
   /**
     * The name of the log group.
     */
-  var LogGroupName: js.UndefOr[typings.awsDashSdk.clientsDirectoryserviceMod.LogGroupName] = js.undefined
+  var LogGroupName: js.UndefOr[typings.awsDashSdk.clientsDirectoryserviceMod.LogGroupName] = js.native
   /**
     * The date and time that the log subscription was created.
     */
-  var SubscriptionCreatedDateTime: js.UndefOr[typings.awsDashSdk.clientsDirectoryserviceMod.SubscriptionCreatedDateTime] = js.undefined
+  var SubscriptionCreatedDateTime: js.UndefOr[typings.awsDashSdk.clientsDirectoryserviceMod.SubscriptionCreatedDateTime] = js.native
 }
 
 object LogSubscription {
@@ -27,9 +28,9 @@ object LogSubscription {
     SubscriptionCreatedDateTime: SubscriptionCreatedDateTime = null
   ): LogSubscription = {
     val __obj = js.Dynamic.literal()
-    if (DirectoryId != null) __obj.updateDynamic("DirectoryId")(DirectoryId)
-    if (LogGroupName != null) __obj.updateDynamic("LogGroupName")(LogGroupName)
-    if (SubscriptionCreatedDateTime != null) __obj.updateDynamic("SubscriptionCreatedDateTime")(SubscriptionCreatedDateTime)
+    if (DirectoryId != null) __obj.updateDynamic("DirectoryId")(DirectoryId.asInstanceOf[js.Any])
+    if (LogGroupName != null) __obj.updateDynamic("LogGroupName")(LogGroupName.asInstanceOf[js.Any])
+    if (SubscriptionCreatedDateTime != null) __obj.updateDynamic("SubscriptionCreatedDateTime")(SubscriptionCreatedDateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogSubscription]
   }
 }

@@ -10,6 +10,7 @@ trait JssOptions extends js.Object {
   var Renderer: js.UndefOr[Anon_Renderer | Null] = js.native
   @JSName("createGenerateId")
   var createGenerateId_Original: CreateGenerateId = js.native
+  var id: CreateGenerateIdOptions = js.native
   var insertionPoint: InsertionPoint = js.native
   var plugins: js.Array[Plugin] = js.native
   def createGenerateId(): GenerateId = js.native

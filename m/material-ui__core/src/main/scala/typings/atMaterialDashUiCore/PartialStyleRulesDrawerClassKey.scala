@@ -6,18 +6,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/Drawer.DrawerClassKey>> */
+@js.native
 trait PartialStyleRulesDrawerClassKey extends js.Object {
-  var docked: js.UndefOr[CSSProperties] = js.undefined
-  var modal: js.UndefOr[CSSProperties] = js.undefined
-  var paper: js.UndefOr[CSSProperties] = js.undefined
-  var paperAnchorBottom: js.UndefOr[CSSProperties] = js.undefined
-  var paperAnchorDockedBottom: js.UndefOr[CSSProperties] = js.undefined
-  var paperAnchorDockedLeft: js.UndefOr[CSSProperties] = js.undefined
-  var paperAnchorDockedRight: js.UndefOr[CSSProperties] = js.undefined
-  var paperAnchorDockedTop: js.UndefOr[CSSProperties] = js.undefined
-  var paperAnchorLeft: js.UndefOr[CSSProperties] = js.undefined
-  var paperAnchorRight: js.UndefOr[CSSProperties] = js.undefined
-  var paperAnchorTop: js.UndefOr[CSSProperties] = js.undefined
+  var docked: js.UndefOr[CSSProperties] = js.native
+  var modal: js.UndefOr[CSSProperties] = js.native
+  var paper: js.UndefOr[CSSProperties] = js.native
+  var paperAnchorBottom: js.UndefOr[CSSProperties] = js.native
+  var paperAnchorDockedBottom: js.UndefOr[CSSProperties] = js.native
+  var paperAnchorDockedLeft: js.UndefOr[CSSProperties] = js.native
+  var paperAnchorDockedRight: js.UndefOr[CSSProperties] = js.native
+  var paperAnchorDockedTop: js.UndefOr[CSSProperties] = js.native
+  var paperAnchorLeft: js.UndefOr[CSSProperties] = js.native
+  var paperAnchorRight: js.UndefOr[CSSProperties] = js.native
+  var paperAnchorTop: js.UndefOr[CSSProperties] = js.native
 }
 
 object PartialStyleRulesDrawerClassKey {

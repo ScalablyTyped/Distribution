@@ -11,8 +11,8 @@ Simple id generation and caching
 | Full name          | ids |
 | Keywords           | id, ids, id-generator |
 | # releases         | 4 |
-| # dependents       | 23 |
-| # downloads        | 249508 |
+| # dependents       | 41 |
+| # downloads        | 463203 |
 | # stars            | 0 |
 
 ## Links

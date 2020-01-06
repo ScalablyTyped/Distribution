@@ -10,9 +10,9 @@ Disable the document's scrolling
 | ------------------ | :-------------: |
 | Full name          | no-scroll |
 | Keywords           | scroll, scrolling, disable, modal, dialog |
-| # releases         | 3 |
-| # dependents       | 20 |
-| # downloads        | 1503207 |
+| # releases         | 2 |
+| # dependents       | 24 |
+| # downloads        | 2463365 |
 | # stars            | 1 |
 
 ## Links

@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DomainEncryptAtRest extends js.Object {
   /**
     * Specifies whether Amazon Cognito authentication with Kibana is enabled or not
     */
-  var enabled: Input[Boolean]
+  var enabled: Input[Boolean] = js.native
   /**
     * The KMS key id to encrypt the Elasticsearch domain with. If not specified then it defaults to using the `aws/es` service KMS key.
     */
-  var kmsKeyId: js.UndefOr[Input[String]] = js.undefined
+  var kmsKeyId: js.UndefOr[Input[String]] = js.native
 }
 
 object DomainEncryptAtRest {

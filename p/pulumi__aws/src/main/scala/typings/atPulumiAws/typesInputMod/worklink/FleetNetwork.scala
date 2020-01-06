@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FleetNetwork extends js.Object {
   /**
     * A list of security group IDs associated with access to the provided subnets.
     */
-  var securityGroupIds: Input[js.Array[Input[String]]]
+  var securityGroupIds: Input[js.Array[Input[String]]] = js.native
   /**
     * A list of subnet IDs used for X-ENI connections from Amazon WorkLink rendering containers.
     */
-  var subnetIds: Input[js.Array[Input[String]]]
+  var subnetIds: Input[js.Array[Input[String]]] = js.native
   /**
     * The VPC ID with connectivity to associated websites.
     */
-  var vpcId: Input[String]
+  var vpcId: Input[String] = js.native
 }
 
 object FleetNetwork {

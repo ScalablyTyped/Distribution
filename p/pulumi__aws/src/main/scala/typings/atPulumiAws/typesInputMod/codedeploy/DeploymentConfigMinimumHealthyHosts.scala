@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DeploymentConfigMinimumHealthyHosts extends js.Object {
-  var `type`: js.UndefOr[Input[String]] = js.undefined
-  var value: js.UndefOr[Input[Double]] = js.undefined
+  var `type`: js.UndefOr[Input[String]] = js.native
+  var value: js.UndefOr[Input[Double]] = js.native
 }
 
 object DeploymentConfigMinimumHealthyHosts {

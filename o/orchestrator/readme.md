@@ -10,9 +10,9 @@ A module for sequencing and executing tasks and dependencies in maximum concurre
 | ------------------ | :-------------: |
 | Full name          | orchestrator |
 | Keywords           | async, task, parallel, compose |
-| # releases         | 1 |
-| # dependents       | 85 |
-| # downloads        | 38925461 |
+| # releases         | 0 |
+| # dependents       | 88 |
+| # downloads        | 32666170 |
 | # stars            | 39 |
 
 ## Links

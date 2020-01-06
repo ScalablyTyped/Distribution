@@ -10,9 +10,9 @@ Power Assert feature enhancer for assert function/object
 | ------------------ | :-------------: |
 | Full name          | empower |
 | Keywords           | power-assert, assert, assertion, test, testing |
-| # releases         | 5 |
+| # releases         | 3 |
 | # dependents       | 6 |
-| # downloads        | 11140818 |
+| # downloads        | 9603813 |
 | # stars            | 0 |
 
 ## Links

@@ -56,7 +56,7 @@ class StaveNote protected () extends StemmableNote {
   def setKeyStyle(index: Double, style: Anon_FillStyle): StaveNote = js.native
   def setNoteDisplaced(displaced: Boolean): StaveNote = js.native
   @JSName("setStave")
-  def setStave_StaveNote(stave: Stave): StaveNote = js.native
+  def setStave_Note(stave: Stave): Note = js.native
    // inconsistent type: void -> StaveNote
   def setStemStyle(style: Anon_FillStyle): Unit = js.native
   def setStyle(style: Anon_FillStyle): Unit = js.native

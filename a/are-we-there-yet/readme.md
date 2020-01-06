@@ -10,9 +10,9 @@ Keep track of the overall completion of many disparate processes
 | ------------------ | :-------------: |
 | Full name          | are-we-there-yet |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 29 |
-| # downloads        | 245008754 |
+| # releases         | 2 |
+| # dependents       | 45 |
+| # downloads        | 343137026 |
 | # stars            | 10 |
 
 ## Links

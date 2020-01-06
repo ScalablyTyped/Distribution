@@ -6,8 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/Popover.PopoverClassKey>> */
+@js.native
 trait PartialStyleRulesPopoverClassKey extends js.Object {
-  var paper: js.UndefOr[CSSProperties] = js.undefined
+  var paper: js.UndefOr[CSSProperties] = js.native
 }
 
 object PartialStyleRulesPopoverClassKey {

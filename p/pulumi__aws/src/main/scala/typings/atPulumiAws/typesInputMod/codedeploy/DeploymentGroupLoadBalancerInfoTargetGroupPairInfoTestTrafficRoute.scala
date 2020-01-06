@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRoute extends js.Object {
   /**
     * List of Amazon Resource Names (ARNs) of the load balancer listeners.
     */
-  var listenerArns: Input[js.Array[Input[String]]]
+  var listenerArns: Input[js.Array[Input[String]]] = js.native
 }
 
 object DeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRoute {

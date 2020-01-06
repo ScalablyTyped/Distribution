@@ -10,9 +10,9 @@ Typings are for version 1.1.3
 | ------------------ | :-------------: |
 | Full name          | fs-mock |
 | Keywords           | fs, file system, posix, linux, windows, testing, mock |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 2192 |
+| # downloads        | 4543 |
 | # stars            | 2 |
 
 ## Links

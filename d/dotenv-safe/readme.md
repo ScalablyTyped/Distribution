@@ -10,9 +10,9 @@ Load environment variables from .env and ensure they are defined
 | ------------------ | :-------------: |
 | Full name          | dotenv-safe |
 | Keywords           | dotenv |
-| # releases         | 6 |
-| # dependents       | 62 |
-| # downloads        | 1782035 |
+| # releases         | 7 |
+| # dependents       | 86 |
+| # downloads        | 2675362 |
 | # stars            | 16 |
 
 ## Links

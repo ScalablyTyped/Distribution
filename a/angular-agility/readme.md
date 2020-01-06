@@ -11,7 +11,7 @@
 | Keywords           | angular, forms, validation, dsl, bootstrap, dirty, changed, select2, notificaiton, growl |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 2901 |
+| # downloads        | 2572 |
 | # stars            | 0 |
 
 ## Links

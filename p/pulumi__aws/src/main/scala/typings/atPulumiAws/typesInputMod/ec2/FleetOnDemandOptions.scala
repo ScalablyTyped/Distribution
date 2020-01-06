@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FleetOnDemandOptions extends js.Object {
   /**
     * How to allocate the target capacity across the Spot pools. Valid values: `diversified`, `lowestPrice`. Default: `lowestPrice`.
     */
-  var allocationStrategy: js.UndefOr[Input[String]] = js.undefined
+  var allocationStrategy: js.UndefOr[Input[String]] = js.native
 }
 
 object FleetOnDemandOptions {

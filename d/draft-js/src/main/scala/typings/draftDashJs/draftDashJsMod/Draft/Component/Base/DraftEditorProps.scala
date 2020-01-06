@@ -8,6 +8,7 @@ import typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.EditorState
 import typings.draftDashJs.draftDashJsMod.Draft.Model.ImmutableData.SelectionState
 import typings.draftDashJs.draftDashJsMod.SyntheticEvent
 import typings.draftDashJs.draftDashJsMod.SyntheticKeyboardEvent
+import typings.react.reactMod.CSSProperties
 import typings.std.Blob
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -35,10 +36,10 @@ trait DraftEditorProps extends js.Object {
   var blockRendererFn: js.UndefOr[js.Function1[/* block */ ContentBlock, _]] = js.undefined
   // Function that allows to define class names to apply to the given block when it is rendered.
   var blockStyleFn: js.UndefOr[js.Function1[/* block */ ContentBlock, String]] = js.undefined
-  // Provide a function that will construct CSS style objects given inline
-  // style names.
+  // Define a function to transform inline styles to CSS objects
+  // that are applied to spans of text.
   var customStyleFn: js.UndefOr[
-    js.Function2[/* style */ DraftInlineStyle, /* block */ ContentBlock, DraftStyleMap]
+    js.Function2[/* style */ DraftInlineStyle, /* block */ ContentBlock, CSSProperties]
   ] = js.undefined
   // Provide a map of inline style names corresponding to CSS style objects
   // that will be rendered for matching ranges.
@@ -158,7 +159,7 @@ object DraftEditorProps {
     blockRenderMap: DraftBlockRenderMap = null,
     blockRendererFn: /* block */ ContentBlock => _ = null,
     blockStyleFn: /* block */ ContentBlock => String = null,
-    customStyleFn: (/* style */ DraftInlineStyle, /* block */ ContentBlock) => DraftStyleMap = null,
+    customStyleFn: (/* style */ DraftInlineStyle, /* block */ ContentBlock) => CSSProperties = null,
     customStyleMap: DraftStyleMap = null,
     editorKey: String = null,
     handleBeforeInput: (/* chars */ String, /* editorState */ EditorState, /* eventTimeStamp */ Double) => DraftHandleValue = null,

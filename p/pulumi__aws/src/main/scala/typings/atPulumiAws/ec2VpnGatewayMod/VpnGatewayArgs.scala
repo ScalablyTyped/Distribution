@@ -6,23 +6,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VpnGatewayArgs extends js.Object {
   /**
     * The Autonomous System Number (ASN) for the Amazon side of the gateway. If you don't specify an ASN, the virtual private gateway is created with the default ASN.
     */
-  val amazonSideAsn: js.UndefOr[Input[String]] = js.undefined
+  val amazonSideAsn: js.UndefOr[Input[String]] = js.native
   /**
     * The Availability Zone for the virtual private gateway.
     */
-  val availabilityZone: js.UndefOr[Input[String]] = js.undefined
+  val availabilityZone: js.UndefOr[Input[String]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * The VPC ID to create in.
     */
-  val vpcId: js.UndefOr[Input[String]] = js.undefined
+  val vpcId: js.UndefOr[Input[String]] = js.native
 }
 
 object VpnGatewayArgs {

@@ -10,9 +10,9 @@ A localStorage wrapper for all browsers without using cookies or flash. Uses loc
 | ------------------ | :-------------: |
 | Full name          | store |
 | Keywords           | - |
-| # releases         | 9 |
-| # dependents       | 259 |
-| # downloads        | 3295733 |
+| # releases         | 1 |
+| # dependents       | 359 |
+| # downloads        | 5417288 |
 | # stars            | 43 |
 
 ## Links

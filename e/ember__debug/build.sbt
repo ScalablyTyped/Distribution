@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "ember__debug"
-version := "3.0-dt-20191126Z-a606ea"
+version := "3.0-dt-20191126Z-19d1e2"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "ember__engine" % "3.0-dt-20191126Z-063b55",
-  "org.scalablytyped" %%% "ember__object" % "3.1-dt-20191126Z-59dbba",
-  "org.scalablytyped" %%% "rsvp" % "4.0-dt-20190717Z-07db38",
-  "org.scalablytyped" %%% "std" % "3.7-953338")
+  "org.scalablytyped" %%% "ember__engine" % "3.0-dt-20191126Z-5973fc",
+  "org.scalablytyped" %%% "ember__object" % "3.1-dt-20191126Z-709fc7",
+  "org.scalablytyped" %%% "rsvp" % "4.0-dt-20190717Z-13b6f0",
+  "org.scalablytyped" %%% "std" % "3.7-b6d959")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

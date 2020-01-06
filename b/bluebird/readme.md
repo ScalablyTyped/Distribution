@@ -10,10 +10,10 @@ Full featured Promises/A+ implementation with exceptionally good performance
 | ------------------ | :-------------: |
 | Full name          | bluebird |
 | Keywords           | promise, performance, promises, promises-a, promises-aplus, async, await, deferred, deferreds, future, flow control, dsl, fluent interface |
-| # releases         | 5 |
-| # dependents       | 17649 |
-| # downloads        | 442420593 |
-| # stars            | 597 |
+| # releases         | 9 |
+| # dependents       | 18566 |
+| # downloads        | 680192059 |
+| # stars            | 599 |
 
 ## Links
 - [Homepage](https://github.com/petkaantonov/bluebird)

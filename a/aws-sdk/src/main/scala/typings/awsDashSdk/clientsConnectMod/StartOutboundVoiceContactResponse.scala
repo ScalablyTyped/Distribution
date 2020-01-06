@@ -4,18 +4,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StartOutboundVoiceContactResponse extends js.Object {
   /**
-    * The unique identifier of this contact within your Amazon Connect instance.
+    * The identifier of this contact within the Amazon Connect instance.
     */
-  var ContactId: js.UndefOr[typings.awsDashSdk.clientsConnectMod.ContactId] = js.undefined
+  var ContactId: js.UndefOr[typings.awsDashSdk.clientsConnectMod.ContactId] = js.native
 }
 
 object StartOutboundVoiceContactResponse {
   @scala.inline
   def apply(ContactId: ContactId = null): StartOutboundVoiceContactResponse = {
     val __obj = js.Dynamic.literal()
-    if (ContactId != null) __obj.updateDynamic("ContactId")(ContactId)
+    if (ContactId != null) __obj.updateDynamic("ContactId")(ContactId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartOutboundVoiceContactResponse]
   }
 }

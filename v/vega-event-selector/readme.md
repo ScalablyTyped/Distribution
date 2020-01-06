@@ -10,9 +10,9 @@ A CSS-inspired language to select, sequence, and compose DOM events.
 | ------------------ | :-------------: |
 | Full name          | vega-event-selector |
 | Keywords           | vega, event, selector |
-| # releases         | 1 |
+| # releases         | 3 |
 | # dependents       | 5 |
-| # downloads        | 1750911 |
+| # downloads        | 1793284 |
 | # stars            | 0 |
 
 ## Links

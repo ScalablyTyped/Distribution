@@ -10,9 +10,9 @@ Typings are for version 0.6
 | ------------------ | :-------------: |
 | Full name          | kos-core |
 | Keywords           | - |
-| # releases         | 18 |
+| # releases         | 25 |
 | # dependents       | 1 |
-| # downloads        | 1183 |
+| # downloads        | 1616 |
 | # stars            | 0 |
 
 ## Links

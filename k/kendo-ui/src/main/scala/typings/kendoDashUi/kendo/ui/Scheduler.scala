@@ -46,11 +46,11 @@ class Scheduler protected () extends Widget {
   def slotByElement(element: JQuery): js.Any = js.native
   def slotByElement(element: Element): js.Any = js.native
   def slotByPosition(xPosition: Double, yPosition: Double): js.Any = js.native
-  def view(): SchedulerView = js.native
+  def view(): Unit = js.native
   def view(`type`: String): Unit = js.native
   def viewName(): String = js.native
   @JSName("view")
-  def view_Unit(): Unit = js.native
+  def view_SchedulerView(): SchedulerView = js.native
 }
 
 /* static members */

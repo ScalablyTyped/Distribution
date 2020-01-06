@@ -10,9 +10,9 @@ A React and Redux notifications system
 | ------------------ | :-------------: |
 | Full name          | reapop |
 | Keywords           | reapop, react, redux, notifications, notification, component |
-| # releases         | 9 |
-| # dependents       | 3 |
-| # downloads        | 118443 |
+| # releases         | 5 |
+| # dependents       | 1 |
+| # downloads        | 169200 |
 | # stars            | 4 |
 
 ## Links

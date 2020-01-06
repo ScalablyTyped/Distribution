@@ -5,15 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ContainerPolicyArgs extends js.Object {
   /**
     * The name of the container.
     */
-  val containerName: Input[String]
-  /**
-    * The contents of the policy.
-    */
-  val policy: Input[String]
+  val containerName: Input[String] = js.native
+  val policy: Input[String] = js.native
 }
 
 object ContainerPolicyArgs {

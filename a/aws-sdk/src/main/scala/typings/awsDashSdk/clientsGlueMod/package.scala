@@ -435,9 +435,9 @@ package object clientsGlueMod {
   type VersionString = String
   type ViewTextString = String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Standard
-    - typings.awsDashSdk.awsDashSdkStrings.GDOT1X
-    - typings.awsDashSdk.awsDashSdkStrings.GDOT2X
+    - typings.awsDashSdk.awsDashSdkStrings.Standard_
+    - typings.awsDashSdk.awsDashSdkStrings.GDot1X
+    - typings.awsDashSdk.awsDashSdkStrings.GDot2X
     - java.lang.String
   */
   type WorkerType = _WorkerType | String
@@ -453,7 +453,7 @@ package object clientsGlueMod {
   type Workflows = js.Array[Workflow]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2017-03-31`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

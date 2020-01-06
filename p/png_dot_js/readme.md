@@ -12,7 +12,7 @@ A PNG decoder fully written in JavaScript
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 83857 |
+| # downloads        | 166559 |
 | # stars            | 0 |
 
 ## Links

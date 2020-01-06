@@ -12,7 +12,7 @@ A tiny utility that merges JavaScript objects by bundling clashing property valu
 | Keywords           | javascript, object, merge, join, combine |
 | # releases         | 11 |
 | # dependents       | 0 |
-| # downloads        | 700 |
+| # downloads        | 858 |
 | # stars            | 0 |
 
 ## Links

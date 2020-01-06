@@ -9,6 +9,7 @@ package object clientsMediaconvertMod {
   import typings.awsDashSdk.awsDashSdkStrings.CODING_MODE_9_1_6
   import typings.awsDashSdk.awsDashSdkStrings.COMPLETE_MAIN
   import typings.awsDashSdk.awsDashSdkStrings.ONE_YEAR
+  import typings.awsDashSdk.awsDashSdkStrings.PROFILE_5
   import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
   import typings.std.Date
 
@@ -120,6 +121,12 @@ package object clientsMediaconvertMod {
     - java.lang.String
   */
   type AfdSignaling = _AfdSignaling | String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.DISCARD
+    - typings.awsDashSdk.awsDashSdkStrings.REMAP_TO_LUMA
+    - java.lang.String
+  */
+  type AlphaBehavior = _AlphaBehavior | String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.UPCONVERT
     - typings.awsDashSdk.awsDashSdkStrings.DISABLED
@@ -470,6 +477,14 @@ package object clientsMediaconvertMod {
   */
   type DescribeEndpointsMode = _DescribeEndpointsMode | String
   /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.PASSTHROUGH
+    - typings.awsDashSdk.awsDashSdkStrings.RECALCULATE
+    - typings.awsDashSdk.awsDashSdkStrings.SPECIFY
+    - java.lang.String
+  */
+  type DolbyVisionLevel6Mode = _DolbyVisionLevel6Mode | String
+  type DolbyVisionProfile = PROFILE_5 | String
+  /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.DISABLED
     - typings.awsDashSdk.awsDashSdkStrings.ENABLED
     - java.lang.String
@@ -521,6 +536,12 @@ package object clientsMediaconvertMod {
     - java.lang.String
   */
   type DvbSubtitleTeletextSpacing = _DvbSubtitleTeletextSpacing | String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.HEARING_IMPAIRED
+    - typings.awsDashSdk.awsDashSdkStrings.STANDARD
+    - java.lang.String
+  */
+  type DvbSubtitlingType = _DvbSubtitlingType | String
   type Eac3AtmosBitstreamMode = COMPLETE_MAIN | String
   type Eac3AtmosCodingMode = CODING_MODE_9_1_6 | String
   /* Rewritten from type alias, can be one of: 
@@ -1584,6 +1605,24 @@ package object clientsMediaconvertMod {
   */
   type Mp4MoovPlacement = _Mp4MoovPlacement | String
   /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.RAW
+    - typings.awsDashSdk.awsDashSdkStrings.FRAGMENTED_MP4
+    - java.lang.String
+  */
+  type MpdCaptionContainerType = _MpdCaptionContainerType | String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.INSERT
+    - typings.awsDashSdk.awsDashSdkStrings.NONE
+    - java.lang.String
+  */
+  type MpdScte35Esam = _MpdScte35Esam | String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.PASSTHROUGH
+    - typings.awsDashSdk.awsDashSdkStrings.NONE
+    - java.lang.String
+  */
+  type MpdScte35Source = _MpdScte35Source | String
+  /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.OFF
     - typings.awsDashSdk.awsDashSdkStrings.LOW
     - typings.awsDashSdk.awsDashSdkStrings.MEDIUM
@@ -1842,6 +1881,14 @@ package object clientsMediaconvertMod {
   */
   type RespondToAfd = _RespondToAfd | String
   /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.PUBLIC_READ
+    - typings.awsDashSdk.awsDashSdkStrings.AUTHENTICATED_READ
+    - typings.awsDashSdk.awsDashSdkStrings.BUCKET_OWNER_READ
+    - typings.awsDashSdk.awsDashSdkStrings.BUCKET_OWNER_FULL_CONTROL
+    - java.lang.String
+  */
+  type S3ObjectCannedAcl = _S3ObjectCannedAcl | String
+  /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.SERVER_SIDE_ENCRYPTION_S3
     - typings.awsDashSdk.awsDashSdkStrings.SERVER_SIDE_ENCRYPTION_KMS
     - java.lang.String
@@ -1856,6 +1903,7 @@ package object clientsMediaconvertMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.FRAMERATE_23_97
     - typings.awsDashSdk.awsDashSdkStrings.FRAMERATE_24
+    - typings.awsDashSdk.awsDashSdkStrings.FRAMERATE_25
     - typings.awsDashSdk.awsDashSdkStrings.FRAMERATE_29_97_DROPFRAME
     - typings.awsDashSdk.awsDashSdkStrings.FRAMERATE_29_97_NON_DROPFRAME
     - java.lang.String
@@ -2014,8 +2062,8 @@ package object clientsMediaconvertMod {
   type __integerMin2Max2147483647 = Double
   type __integerMin32000Max384000 = Double
   type __integerMin32000Max48000 = Double
-  type __integerMin32Max4096 = Double
   type __integerMin32Max8182 = Double
+  type __integerMin32Max8192 = Double
   type __integerMin384000Max768000 = Double
   type __integerMin48000Max48000 = Double
   type __integerMin6000Max1024000 = Double
@@ -2035,8 +2083,11 @@ package object clientsMediaconvertMod {
   type __listOfAudioDescription = js.Array[AudioDescription]
   type __listOfCaptionDescription = js.Array[CaptionDescription]
   type __listOfCaptionDescriptionPreset = js.Array[CaptionDescriptionPreset]
+  type __listOfCmafAdditionalManifest = js.Array[CmafAdditionalManifest]
+  type __listOfDashAdditionalManifest = js.Array[DashAdditionalManifest]
   type __listOfEndpoint = js.Array[Endpoint]
   type __listOfHlsAdMarkers = js.Array[HlsAdMarkers]
+  type __listOfHlsAdditionalManifest = js.Array[HlsAdditionalManifest]
   type __listOfHlsCaptionLanguageMapping = js.Array[HlsCaptionLanguageMapping]
   type __listOfId3Insertion = js.Array[Id3Insertion]
   type __listOfInput = js.Array[Input]
@@ -2045,6 +2096,7 @@ package object clientsMediaconvertMod {
   type __listOfInsertableImage = js.Array[InsertableImage]
   type __listOfJob = js.Array[Job]
   type __listOfJobTemplate = js.Array[JobTemplate]
+  type __listOfMsSmoothAdditionalManifest = js.Array[MsSmoothAdditionalManifest]
   type __listOfOutput = js.Array[Output]
   type __listOfOutputChannelMapping = js.Array[OutputChannelMapping]
   type __listOfOutputDetail = js.Array[OutputDetail]
@@ -2088,6 +2140,7 @@ package object clientsMediaconvertMod {
   type __stringPattern09aFAF809aFAF409aFAF409aFAF409aFAF12 = String
   type __stringPatternAZaZ0902 = String
   type __stringPatternAZaZ0932 = String
+  type __stringPatternAZaZ23AZaZ = String
   type __stringPatternArnAwsUsGovAcm = String
   type __stringPatternArnAwsUsGovCnKmsAZ26EastWestCentralNorthSouthEastWest1912D12KeyAFAF098AFAF094AFAF094AFAF094AFAF0912 = String
   type __stringPatternDD = String
@@ -2104,7 +2157,7 @@ package object clientsMediaconvertMod {
   type __timestampUnix = Date
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2017-08-29`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

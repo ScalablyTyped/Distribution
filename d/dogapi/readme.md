@@ -10,9 +10,9 @@ Datadog API Node.JS Client
 | ------------------ | :-------------: |
 | Full name          | dogapi |
 | Keywords           | datadog, api, datadog api, dog, dogapi, dog api |
-| # releases         | 5 |
-| # dependents       | 20 |
-| # downloads        | 7689785 |
+| # releases         | 4 |
+| # dependents       | 21 |
+| # downloads        | 7463550 |
 | # stars            | 3 |
 
 ## Links

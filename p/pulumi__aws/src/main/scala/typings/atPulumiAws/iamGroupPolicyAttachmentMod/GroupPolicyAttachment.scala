@@ -1,7 +1,6 @@
 package typings.atPulumiAws.iamGroupPolicyAttachmentMod
 
 import typings.atPulumiAws.arnMod.ARN
-import typings.atPulumiAws.iamGroupMod.Group
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -26,7 +25,7 @@ class GroupPolicyAttachment protected () extends CustomResource {
   /**
     * The group the policy should be applied to
     */
-  val group: Output[Group] = js.native
+  val group: Output[String] = js.native
   /**
     * The ARN of the policy you want to apply
     */

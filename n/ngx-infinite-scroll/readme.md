@@ -10,9 +10,9 @@ An infinite scroll directive for Angular compatible with AoT compilation and Tre
 | ------------------ | :-------------: |
 | Full name          | ngx-infinite-scroll |
 | Keywords           | angular, javascript, typescript |
-| # releases         | 48 |
-| # dependents       | 32 |
-| # downloads        | 2359741 |
+| # releases         | 18 |
+| # dependents       | 39 |
+| # downloads        | 3671099 |
 | # stars            | 6 |
 
 ## Links

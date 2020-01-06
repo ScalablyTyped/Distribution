@@ -11,9 +11,9 @@ Generates swagger doc based on JSDoc
 | Full name          | swagger-jsdoc |
 | Keywords           | jsdoc, restful, api, express, swagger |
 | # releases         | 24 |
-| # dependents       | 58 |
-| # downloads        | 1961207 |
-| # stars            | 20 |
+| # dependents       | 79 |
+| # downloads        | 3521165 |
+| # stars            | 21 |
 
 ## Links
 - [Homepage](https://github.com/Surnet/swagger-jsdoc)

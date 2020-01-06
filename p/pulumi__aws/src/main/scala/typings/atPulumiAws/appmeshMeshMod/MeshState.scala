@@ -7,31 +7,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MeshState extends js.Object {
   /**
     * The ARN of the service mesh.
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * The creation date of the service mesh.
     */
-  val createdDate: js.UndefOr[Input[String]] = js.undefined
+  val createdDate: js.UndefOr[Input[String]] = js.native
   /**
     * The last update date of the service mesh.
     */
-  val lastUpdatedDate: js.UndefOr[Input[String]] = js.undefined
+  val lastUpdatedDate: js.UndefOr[Input[String]] = js.native
   /**
     * The name to use for the service mesh.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * The service mesh specification to apply.
     */
-  val spec: js.UndefOr[Input[MeshSpec]] = js.undefined
+  val spec: js.UndefOr[Input[MeshSpec]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object MeshState {

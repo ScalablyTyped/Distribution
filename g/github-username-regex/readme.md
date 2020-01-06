@@ -11,8 +11,8 @@ A regular expression that only matches a valid Github username
 | Full name          | github-username-regex |
 | Keywords           | github, name, username, login, account, validate, validation, match, regex, regexp |
 | # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 7070 |
+| # dependents       | 6 |
+| # downloads        | 8088 |
 | # stars            | 0 |
 
 ## Links

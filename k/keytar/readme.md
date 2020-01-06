@@ -10,9 +10,9 @@ Bindings to native Mac/Linux/Windows password APIs
 | ------------------ | :-------------: |
 | Full name          | keytar |
 | Keywords           | keychain, password, passwords, credential, credentials, vault, credential vault |
-| # releases         | 14 |
-| # dependents       | 118 |
-| # downloads        | 778605 |
+| # releases         | 26 |
+| # dependents       | 148 |
+| # downloads        | 1137906 |
 | # stars            | 15 |
 
 ## Links

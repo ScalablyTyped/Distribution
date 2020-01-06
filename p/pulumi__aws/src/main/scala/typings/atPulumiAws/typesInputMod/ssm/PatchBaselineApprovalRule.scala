@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PatchBaselineApprovalRule extends js.Object {
-  var approveAfterDays: Input[Double]
-  var complianceLevel: js.UndefOr[Input[String]] = js.undefined
-  var enableNonSecurity: js.UndefOr[Input[Boolean]] = js.undefined
-  var patchFilters: Input[js.Array[Input[PatchBaselineApprovalRulePatchFilter]]]
+  var approveAfterDays: Input[Double] = js.native
+  var complianceLevel: js.UndefOr[Input[String]] = js.native
+  var enableNonSecurity: js.UndefOr[Input[Boolean]] = js.native
+  var patchFilters: Input[js.Array[Input[PatchBaselineApprovalRulePatchFilter]]] = js.native
 }
 
 object PatchBaselineApprovalRule {

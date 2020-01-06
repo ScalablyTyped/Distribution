@@ -10,9 +10,9 @@ Simple validator for forms designed with material-ui v1/v3 components.
 | ------------------ | :-------------: |
 | Full name          | react-material-ui-form-validator |
 | Keywords           | material-ui, form, validation |
-| # releases         | 40 |
-| # dependents       | 1 |
-| # downloads        | 302071 |
+| # releases         | 25 |
+| # dependents       | 4 |
+| # downloads        | 512786 |
 | # stars            | 3 |
 
 ## Links

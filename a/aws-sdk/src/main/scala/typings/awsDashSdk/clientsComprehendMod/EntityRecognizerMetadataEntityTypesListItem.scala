@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EntityRecognizerMetadataEntityTypesListItem extends js.Object {
   /**
     * Detailed information about the accuracy of the entity recognizer for a specific item on the list of entity types. 
     */
-  var EvaluationMetrics: js.UndefOr[EntityTypesEvaluationMetrics] = js.undefined
+  var EvaluationMetrics: js.UndefOr[EntityTypesEvaluationMetrics] = js.native
   /**
-    * indicates the number of times the given entity name was seen in the training data. 
+    * Indicates the number of times the given entity type was seen in the training data. 
     */
-  var NumberOfTrainMentions: js.UndefOr[Integer] = js.undefined
+  var NumberOfTrainMentions: js.UndefOr[Integer] = js.native
   /**
     * Type of entity from the list of entity types in the metadata of an entity recognizer. 
     */
-  var Type: js.UndefOr[AnyLengthString] = js.undefined
+  var Type: js.UndefOr[AnyLengthString] = js.native
 }
 
 object EntityRecognizerMetadataEntityTypesListItem {
@@ -27,9 +28,9 @@ object EntityRecognizerMetadataEntityTypesListItem {
     Type: AnyLengthString = null
   ): EntityRecognizerMetadataEntityTypesListItem = {
     val __obj = js.Dynamic.literal()
-    if (EvaluationMetrics != null) __obj.updateDynamic("EvaluationMetrics")(EvaluationMetrics)
+    if (EvaluationMetrics != null) __obj.updateDynamic("EvaluationMetrics")(EvaluationMetrics.asInstanceOf[js.Any])
     if (NumberOfTrainMentions != null) __obj.updateDynamic("NumberOfTrainMentions")(NumberOfTrainMentions.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type)
+    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntityRecognizerMetadataEntityTypesListItem]
   }
 }

@@ -10,9 +10,9 @@ A module for creating Web apps with ChocolateChip-UI
 | ------------------ | :-------------: |
 | Full name          | chui |
 | Keywords           | JavaScript, ChocolateChip-UI, Hybrid App, Mobile, Web App, iOS, Android |
-| # releases         | 42 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 5113 |
+| # downloads        | 5946 |
 | # stars            | 2 |
 
 ## Links

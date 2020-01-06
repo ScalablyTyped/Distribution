@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ReplicationInstanceTaskLog extends js.Object {
   /**
     * The size, in bytes, of the replication task log.
     */
-  var ReplicationInstanceTaskLogSize: js.UndefOr[Long] = js.undefined
+  var ReplicationInstanceTaskLogSize: js.UndefOr[Long] = js.native
   /**
     * The Amazon Resource Name (ARN) of the replication task.
     */
-  var ReplicationTaskArn: js.UndefOr[String] = js.undefined
+  var ReplicationTaskArn: js.UndefOr[String] = js.native
   /**
     * The name of the replication task.
     */
-  var ReplicationTaskName: js.UndefOr[String] = js.undefined
+  var ReplicationTaskName: js.UndefOr[String] = js.native
 }
 
 object ReplicationInstanceTaskLog {
@@ -28,8 +29,8 @@ object ReplicationInstanceTaskLog {
   ): ReplicationInstanceTaskLog = {
     val __obj = js.Dynamic.literal()
     if (ReplicationInstanceTaskLogSize != null) __obj.updateDynamic("ReplicationInstanceTaskLogSize")(ReplicationInstanceTaskLogSize.asInstanceOf[js.Any])
-    if (ReplicationTaskArn != null) __obj.updateDynamic("ReplicationTaskArn")(ReplicationTaskArn)
-    if (ReplicationTaskName != null) __obj.updateDynamic("ReplicationTaskName")(ReplicationTaskName)
+    if (ReplicationTaskArn != null) __obj.updateDynamic("ReplicationTaskArn")(ReplicationTaskArn.asInstanceOf[js.Any])
+    if (ReplicationTaskName != null) __obj.updateDynamic("ReplicationTaskName")(ReplicationTaskName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplicationInstanceTaskLog]
   }
 }

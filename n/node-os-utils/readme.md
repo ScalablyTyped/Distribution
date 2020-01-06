@@ -10,9 +10,9 @@ An operating system utility library.
 | ------------------ | :-------------: |
 | Full name          | node-os-utils |
 | Keywords           | os, operating system, server, netstat, memory, cpu, monitor, stats, processes, openfiles, harddrive |
-| # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 22086 |
+| # releases         | 3 |
+| # dependents       | 5 |
+| # downloads        | 34405 |
 | # stars            | 1 |
 
 ## Links

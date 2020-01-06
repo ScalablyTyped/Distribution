@@ -11,8 +11,8 @@ Resizing images made easy.
 | Full name          | gulp-image-resize |
 | Keywords           | gulpplugin |
 | # releases         | 2 |
-| # dependents       | 21 |
-| # downloads        | 184215 |
+| # dependents       | 23 |
+| # downloads        | 130029 |
 | # stars            | 45 |
 
 ## Links

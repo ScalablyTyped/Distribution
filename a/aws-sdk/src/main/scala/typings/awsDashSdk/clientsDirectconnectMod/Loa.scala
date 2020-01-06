@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Loa extends js.Object {
   /**
     * The binary contents of the LOA-CFA document.
     */
-  var loaContent: js.UndefOr[LoaContent] = js.undefined
+  var loaContent: js.UndefOr[LoaContent] = js.native
   /**
     * The standard media type for the LOA-CFA document. The only supported value is application/pdf.
     */
-  var loaContentType: js.UndefOr[LoaContentType] = js.undefined
+  var loaContentType: js.UndefOr[LoaContentType] = js.native
 }
 
 object Loa {

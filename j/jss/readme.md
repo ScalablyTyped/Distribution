@@ -1,7 +1,7 @@
 
 # Scala.js typings for jss
 
-Typings are for version 10.0.1
+Typings are for version 10.0.3
 
 ## Library description:
 A lib for generating Style Sheets with JavaScript.
@@ -10,14 +10,14 @@ A lib for generating Style Sheets with JavaScript.
 | ------------------ | :-------------: |
 | Full name          | jss |
 | Keywords           | jss, style, sheet, stylesheet, css, components, composable, css in js, css-in-js |
-| # releases         | 51 |
-| # dependents       | 280 |
-| # downloads        | 14231611 |
+| # releases         | 42 |
+| # dependents       | 355 |
+| # downloads        | 36548810 |
 | # stars            | 7 |
 
 ## Links
-- [Homepage](https://github.com/cssinjs/jss#readme)
-- [Bugs](https://github.com/cssinjs/jss/issues)
+- [Homepage](https://cssinjs.org/)
+- [Bugs](https://github.com/cssinjs/jss/issues/new)
 - [Repository](https://github.com/cssinjs/jss)
 - [Npm](https://www.npmjs.com/package/jss)
     

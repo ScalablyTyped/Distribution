@@ -10,9 +10,9 @@ Carousel component for React
 | ------------------ | :-------------: |
 | Full name          | @brainhubeu/react-carousel |
 | Keywords           | react, carousel, react-carousel, react-component, component, image, image-gallery, image-slider, responsive, gallery, rwd |
-| # releases         | 50 |
-| # dependents       | 0 |
-| # downloads        | 45033 |
+| # releases         | 63 |
+| # dependents       | 6 |
+| # downloads        | 109094 |
 | # stars            | 0 |
 
 ## Links

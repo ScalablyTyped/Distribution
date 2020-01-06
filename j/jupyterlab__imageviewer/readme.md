@@ -10,9 +10,9 @@ JupyterLab - Image Widget
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/imageviewer |
 | Keywords           | - |
-| # releases         | 40 |
+| # releases         | 64 |
 | # dependents       | 3 |
-| # downloads        | 580489 |
+| # downloads        | 751041 |
 | # stars            | 0 |
 
 ## Links

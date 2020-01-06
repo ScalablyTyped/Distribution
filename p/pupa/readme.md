@@ -9,10 +9,10 @@ Simple micro templating
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | pupa |
-| Keywords           | string, formatting, template, object, format, interpolate, interpolation, templating, str, obj, tpl, expand, simple, replace, placeholders, values, fmt, transform, micro |
-| # releases         | 1 |
-| # dependents       | 27 |
-| # downloads        | 1909344 |
+| Keywords           | string, formatting, template, object, format, interpolate, interpolation, templating, expand, simple, replace, placeholders, values, transform, micro |
+| # releases         | 3 |
+| # dependents       | 36 |
+| # downloads        | 1530245 |
 | # stars            | 2 |
 
 ## Links

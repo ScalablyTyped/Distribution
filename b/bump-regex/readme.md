@@ -10,9 +10,9 @@ bump RegEx with semver
 | ------------------ | :-------------: |
 | Full name          | bump-regex |
 | Keywords           | bump, regex, semver |
-| # releases         | 7 |
-| # dependents       | 9 |
-| # downloads        | 883942 |
+| # releases         | 4 |
+| # dependents       | 8 |
+| # downloads        | 958282 |
 | # stars            | 0 |
 
 ## Links

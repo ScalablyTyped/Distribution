@@ -45,12 +45,9 @@ abstract class MediaPlaybackVideoTrackList () extends Array[VideoTrack] {
     */
   def getMany(startIndex: Double): Anon_ItemsReturnValueNumberVideoTrack = js.native
   def indexOf(value: VideoTrack, extra: js.Any*): Anon_Index = js.native
-  /**
-    * Retrieves the index of a specified video track in the list.
-    * @param value The video track to find in the vector view.
-    */
+  /* hack */
   @JSName("indexOf")
-  def indexOf_Anon_Index(value: VideoTrack): Anon_Index = js.native
+  def indexOf_Double(searchElement: VideoTrack): Double = js.native
   /** Occurs when the index of the currently selected video track changes. */
   def onselectedindexchanged(ev: js.Any with WinRTEvent[ISingleSelectMediaTrackList]): Unit = js.native
   def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native

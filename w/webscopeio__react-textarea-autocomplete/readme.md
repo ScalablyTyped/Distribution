@@ -10,9 +10,9 @@ Offers autocomplete over textarea in style of GitHub.
 | ------------------ | :-------------: |
 | Full name          | @webscopeio/react-textarea-autocomplete |
 | Keywords           | react-component, textarea, autocomplete, react |
-| # releases         | 60 |
-| # dependents       | 3 |
-| # downloads        | 121885 |
+| # releases         | 49 |
+| # dependents       | 5 |
+| # downloads        | 254344 |
 | # stars            | 0 |
 
 ## Links

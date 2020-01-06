@@ -10,9 +10,9 @@ Build SQS-based Node applications without the boilerplate
 | ------------------ | :-------------: |
 | Full name          | sqs-consumer |
 | Keywords           | sqs, queue, consumer |
-| # releases         | 13 |
-| # dependents       | 63 |
-| # downloads        | 1376899 |
+| # releases         | 11 |
+| # dependents       | 81 |
+| # downloads        | 2201350 |
 | # stars            | 15 |
 
 ## Links

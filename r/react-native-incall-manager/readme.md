@@ -10,9 +10,9 @@ Handling media-routes/sensors/events during a audio/video chat on React Native
 | ------------------ | :-------------: |
 | Full name          | react-native-incall-manager |
 | Keywords           | React, ReactNative, WebRTC, Phone, Call, InCall, Talk, SIP, Voip |
-| # releases         | 8 |
-| # dependents       | 1 |
-| # downloads        | 28469 |
+| # releases         | 11 |
+| # dependents       | 3 |
+| # downloads        | 71070 |
 | # stars            | 0 |
 
 ## Links

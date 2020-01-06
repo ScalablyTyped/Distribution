@@ -10,9 +10,9 @@ Flexible date picker component for React
 | ------------------ | :-------------: |
 | Full name          | react-day-picker |
 | Keywords           | react, react-component, component, calendar, date-picker, datepicker, date, picker, moment, momentjs |
-| # releases         | 47 |
-| # dependents       | 174 |
-| # downloads        | 7759593 |
+| # releases         | 23 |
+| # dependents       | 252 |
+| # downloads        | 12389168 |
 | # stars            | 12 |
 
 ## Links

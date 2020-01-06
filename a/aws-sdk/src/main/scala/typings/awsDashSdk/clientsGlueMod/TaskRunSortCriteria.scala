@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TaskRunSortCriteria extends js.Object {
   /**
     * The column to be used to sort the list of task runs for the machine learning transform.
     */
-  var Column: TaskRunSortColumnType
+  var Column: TaskRunSortColumnType = js.native
   /**
     * The sort direction to be used to sort the list of task runs for the machine learning transform.
     */
-  var SortDirection: SortDirectionType
+  var SortDirection: SortDirectionType = js.native
 }
 
 object TaskRunSortCriteria {

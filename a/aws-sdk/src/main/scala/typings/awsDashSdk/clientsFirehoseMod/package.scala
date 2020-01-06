@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object clientsFirehoseMod {
   import org.scalablytyped.runtime.StringDictionary
-  import typings.awsDashSdk.awsDashSdkStrings.Lambda
+  import typings.awsDashSdk.awsDashSdkStrings.Lambda_
   import typings.awsDashSdk.awsDashSdkStrings.NoEncryption
   import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
   import typings.node.Buffer
@@ -24,7 +24,7 @@ package object clientsFirehoseMod {
     - typings.awsDashSdk.awsDashSdkStrings.UNCOMPRESSED
     - typings.awsDashSdk.awsDashSdkStrings.GZIP
     - typings.awsDashSdk.awsDashSdkStrings.ZIP
-    - typings.awsDashSdk.awsDashSdkStrings.Snappy
+    - typings.awsDashSdk.awsDashSdkStrings.Snappy_
     - java.lang.String
   */
   type CompressionFormat = _CompressionFormat | String
@@ -37,16 +37,32 @@ package object clientsFirehoseMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.ENABLED
     - typings.awsDashSdk.awsDashSdkStrings.ENABLING
+    - typings.awsDashSdk.awsDashSdkStrings.ENABLING_FAILED
     - typings.awsDashSdk.awsDashSdkStrings.DISABLED
     - typings.awsDashSdk.awsDashSdkStrings.DISABLING
+    - typings.awsDashSdk.awsDashSdkStrings.DISABLING_FAILED
     - java.lang.String
   */
   type DeliveryStreamEncryptionStatus = _DeliveryStreamEncryptionStatus | String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.RETIRE_KMS_GRANT_FAILED
+    - typings.awsDashSdk.awsDashSdkStrings.CREATE_KMS_GRANT_FAILED
+    - typings.awsDashSdk.awsDashSdkStrings.KMS_ACCESS_DENIED
+    - typings.awsDashSdk.awsDashSdkStrings.DISABLED_KMS_KEY
+    - typings.awsDashSdk.awsDashSdkStrings.INVALID_KMS_KEY
+    - typings.awsDashSdk.awsDashSdkStrings.KMS_KEY_NOT_FOUND
+    - typings.awsDashSdk.awsDashSdkStrings.KMS_OPT_IN_REQUIRED
+    - typings.awsDashSdk.awsDashSdkStrings.UNKNOWN_ERROR
+    - java.lang.String
+  */
+  type DeliveryStreamFailureType = _DeliveryStreamFailureType | String
   type DeliveryStreamName = String
   type DeliveryStreamNameList = js.Array[DeliveryStreamName]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.CREATING
+    - typings.awsDashSdk.awsDashSdkStrings.CREATING_FAILED
     - typings.awsDashSdk.awsDashSdkStrings.DELETING
+    - typings.awsDashSdk.awsDashSdkStrings.DELETING_FAILED
     - typings.awsDashSdk.awsDashSdkStrings.ACTIVE
     - java.lang.String
   */
@@ -89,13 +105,19 @@ package object clientsFirehoseMod {
   type HECAcknowledgmentTimeoutInSeconds = Double
   type HECEndpoint = String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Raw
-    - typings.awsDashSdk.awsDashSdkStrings.Event
+    - typings.awsDashSdk.awsDashSdkStrings.Raw_
+    - typings.awsDashSdk.awsDashSdkStrings.Event_
     - java.lang.String
   */
   type HECEndpointType = _HECEndpointType | String
   type HECToken = String
   type IntervalInSeconds = Double
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.AWS_OWNED_CMK
+    - typings.awsDashSdk.awsDashSdkStrings.CUSTOMER_MANAGED_CMK
+    - java.lang.String
+  */
+  type KeyType = _KeyType | String
   type KinesisStreamARN = String
   type ListDeliveryStreamsInputLimit = Double
   type ListOfNonEmptyStrings = js.Array[NonEmptyString]
@@ -151,22 +173,22 @@ package object clientsFirehoseMod {
   */
   type ProcessorParameterName = _ProcessorParameterName | String
   type ProcessorParameterValue = String
-  type ProcessorType = Lambda | String
+  type ProcessorType = Lambda_ | String
   type Proportion = Double
   type PutRecordBatchRequestEntryList = js.Array[Record]
   type PutRecordBatchResponseEntryList = js.Array[PutRecordBatchResponseEntry]
   type PutResponseRecordId = String
   type RedshiftRetryDurationInSeconds = Double
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Disabled
-    - typings.awsDashSdk.awsDashSdkStrings.Enabled
+    - typings.awsDashSdk.awsDashSdkStrings.Disabled_
+    - typings.awsDashSdk.awsDashSdkStrings.Enabled_
     - java.lang.String
   */
   type RedshiftS3BackupMode = _RedshiftS3BackupMode | String
   type RoleARN = String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Disabled
-    - typings.awsDashSdk.awsDashSdkStrings.Enabled
+    - typings.awsDashSdk.awsDashSdkStrings.Disabled_
+    - typings.awsDashSdk.awsDashSdkStrings.Enabled_
     - java.lang.String
   */
   type S3BackupMode = _S3BackupMode | String
@@ -186,7 +208,7 @@ package object clientsFirehoseMod {
   type Username = String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2015-08-04`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

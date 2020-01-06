@@ -4,31 +4,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BotMetadata extends js.Object {
   /**
     * The date that the bot was created.
     */
-  var createdDate: js.UndefOr[Timestamp] = js.undefined
+  var createdDate: js.UndefOr[Timestamp] = js.native
   /**
     * A description of the bot.
     */
-  var description: js.UndefOr[Description] = js.undefined
+  var description: js.UndefOr[Description] = js.native
   /**
     * The date that the bot was updated. When you create a bot, the creation date and last updated date are the same. 
     */
-  var lastUpdatedDate: js.UndefOr[Timestamp] = js.undefined
+  var lastUpdatedDate: js.UndefOr[Timestamp] = js.native
   /**
     * The name of the bot. 
     */
-  var name: js.UndefOr[BotName] = js.undefined
+  var name: js.UndefOr[BotName] = js.native
   /**
     * The status of the bot.
     */
-  var status: js.UndefOr[Status] = js.undefined
+  var status: js.UndefOr[Status] = js.native
   /**
     * The version of the bot. For a new bot, the version is always $LATEST.
     */
-  var version: js.UndefOr[Version] = js.undefined
+  var version: js.UndefOr[Version] = js.native
 }
 
 object BotMetadata {
@@ -42,12 +43,12 @@ object BotMetadata {
     version: Version = null
   ): BotMetadata = {
     val __obj = js.Dynamic.literal()
-    if (createdDate != null) __obj.updateDynamic("createdDate")(createdDate)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (lastUpdatedDate != null) __obj.updateDynamic("lastUpdatedDate")(lastUpdatedDate)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (createdDate != null) __obj.updateDynamic("createdDate")(createdDate.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (lastUpdatedDate != null) __obj.updateDynamic("lastUpdatedDate")(lastUpdatedDate.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version)
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[BotMetadata]
   }
 }

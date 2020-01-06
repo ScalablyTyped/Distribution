@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "hapi__wreck"
-version := "15.0-dt-20190619Z-c63abe"
+version := "15.0-dt-20190619Z-a43842"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "hapi__boom" % "7.4-dt-20190815Z-709df8",
-  "org.scalablytyped" %%% "node" % "13.1-dt-20191226Z-155d58",
-  "org.scalablytyped" %%% "std" % "3.7-953338")
+  "org.scalablytyped" %%% "hapi__boom" % "7.4-dt-20190815Z-181f0c",
+  "org.scalablytyped" %%% "node" % "13.1-dt-20200103Z-b9f880",
+  "org.scalablytyped" %%% "std" % "3.7-b6d959")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

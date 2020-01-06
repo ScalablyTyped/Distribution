@@ -10,9 +10,9 @@ A Pulumi package for creating and managing Kubernetes resources.
 | ------------------ | :-------------: |
 | Full name          | @pulumi/kubernetes |
 | Keywords           | pulumi, kubernetes |
-| # releases         | 248 |
-| # dependents       | 5 |
-| # downloads        | 75582 |
+| # releases         | 420 |
+| # dependents       | 13 |
+| # downloads        | 125101 |
 | # stars            | 0 |
 
 ## Links

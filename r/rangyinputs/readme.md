@@ -10,9 +10,9 @@ A small jQuery plug-in for selection and caret manipulation within textareas and
 | ------------------ | :-------------: |
 | Full name          | rangyinputs |
 | Keywords           | input, selection, caret, textarea, jquery |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 36169 |
+| # downloads        | 68121 |
 | # stars            | 0 |
 
 ## Links

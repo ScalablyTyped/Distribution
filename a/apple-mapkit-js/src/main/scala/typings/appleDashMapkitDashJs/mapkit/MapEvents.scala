@@ -2,7 +2,7 @@ package typings.appleDashMapkitDashJs.mapkit
 
 import typings.appleDashMapkitDashJs.Anon_Annotation
 import typings.appleDashMapkitDashJs.Anon_AnnotationCoordinate
-import typings.appleDashMapkitDashJs.Anon_Annotation_247029397
+import typings.appleDashMapkitDashJs.Anon_Annotation_778575030
 import typings.appleDashMapkitDashJs.Anon_Code
 import typings.appleDashMapkitDashJs.Anon_Coordinate
 import scala.scalajs.js
@@ -13,8 +13,8 @@ import scala.scalajs.js.annotation._
 trait MapEvents[T] extends js.Object {
   var deselect: EventBase[T] with Anon_Annotation
   var `double-tap`: EventBase[T]
-  var `drag-end`: EventBase[T] with Anon_Annotation_247029397
-  var `drag-start`: EventBase[T] with Anon_Annotation_247029397
+  var `drag-end`: EventBase[T] with Anon_Annotation_778575030
+  var `drag-start`: EventBase[T] with Anon_Annotation_778575030
   var dragging: EventBase[T] with Anon_AnnotationCoordinate
   var `long-press`: EventBase[T]
   var `map-type-change`: EventBase[T]
@@ -37,8 +37,8 @@ object MapEvents {
   def apply[T](
     deselect: EventBase[T] with Anon_Annotation,
     `double-tap`: EventBase[T],
-    `drag-end`: EventBase[T] with Anon_Annotation_247029397,
-    `drag-start`: EventBase[T] with Anon_Annotation_247029397,
+    `drag-end`: EventBase[T] with Anon_Annotation_778575030,
+    `drag-start`: EventBase[T] with Anon_Annotation_778575030,
     dragging: EventBase[T] with Anon_AnnotationCoordinate,
     `long-press`: EventBase[T],
     `map-type-change`: EventBase[T],

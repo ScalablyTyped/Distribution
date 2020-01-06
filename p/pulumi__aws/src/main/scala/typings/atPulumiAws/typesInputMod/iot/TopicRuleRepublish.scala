@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TopicRuleRepublish extends js.Object {
   /**
     * The ARN of the IAM role that grants access.
     */
-  var roleArn: Input[String]
+  var roleArn: Input[String] = js.native
   /**
     * The name of the MQTT topic the message should be republished to.
     */
-  var topic: Input[String]
+  var topic: Input[String] = js.native
 }
 
 object TopicRuleRepublish {

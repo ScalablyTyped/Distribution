@@ -231,8 +231,8 @@ class Terminal () extends IDisposable {
     * @param key The option key.
     */
   def getOption(
-    key: allowTransparency | cancelEvents | convertEol | cursorBlink | disableStdin | macOptionIsMeta | rightClickSelectsWord | popOnBell | screenKeys | useFlowControl | visualBell | windowsMode
-  ): Boolean = js.native
+    key: bellSound | bellStyle | cursorStyle | fontFamily | fontWeight | fontWeightBold | logLevel | rendererType | termName | wordSeparator
+  ): String = js.native
   /**
     * Retrieves an option's value from the terminal.
     * @param key The option key.
@@ -243,9 +243,9 @@ class Terminal () extends IDisposable {
     * @param key The option key.
     */
   @JSName("getOption")
-  def getOption_String(
-    key: bellSound | bellStyle | cursorStyle | fontFamily | fontWeight | fontWeightBold | logLevel | rendererType | termName | wordSeparator
-  ): String = js.native
+  def getOption_Boolean(
+    key: allowTransparency | cancelEvents | convertEol | cursorBlink | disableStdin | macOptionIsMeta | rightClickSelectsWord | popOnBell | screenKeys | useFlowControl | visualBell | windowsMode
+  ): Boolean = js.native
   /**
     * Retrieves an option's value from the terminal.
     * @param key The option key.

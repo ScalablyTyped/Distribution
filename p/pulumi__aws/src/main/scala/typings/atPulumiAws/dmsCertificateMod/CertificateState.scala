@@ -5,23 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CertificateState extends js.Object {
   /**
     * The Amazon Resource Name (ARN) for the certificate.
     */
-  val certificateArn: js.UndefOr[Input[String]] = js.undefined
+  val certificateArn: js.UndefOr[Input[String]] = js.native
   /**
     * The certificate identifier.
     */
-  val certificateId: js.UndefOr[Input[String]] = js.undefined
+  val certificateId: js.UndefOr[Input[String]] = js.native
   /**
     * The contents of the .pem X.509 certificate file for the certificate. Either `certificatePem` or `certificateWallet` must be set.
     */
-  val certificatePem: js.UndefOr[Input[String]] = js.undefined
+  val certificatePem: js.UndefOr[Input[String]] = js.native
   /**
     * The contents of the Oracle Wallet certificate for use with SSL. Either `certificatePem` or `certificateWallet` must be set.
     */
-  val certificateWallet: js.UndefOr[Input[String]] = js.undefined
+  val certificateWallet: js.UndefOr[Input[String]] = js.native
 }
 
 object CertificateState {

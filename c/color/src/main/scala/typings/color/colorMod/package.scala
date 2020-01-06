@@ -8,5 +8,7 @@ package object colorMod {
   import org.scalablytyped.runtime.StringDictionary
   import typings.std.ArrayLike
 
-  type ColorParam = Color | String | ArrayLike[Double] | Double | StringDictionary[js.Any]
+  type ColorParam = (Color[
+    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias color.color.ColorParam */ js.Object
+  ]) | String | ArrayLike[Double] | Double | StringDictionary[js.Any]
 }

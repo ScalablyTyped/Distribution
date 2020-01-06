@@ -10,10 +10,10 @@ A cron-like and not-cron-like job scheduler for Node.
 | ------------------ | :-------------: |
 | Full name          | node-schedule |
 | Keywords           | schedule, task, job, cron |
-| # releases         | 8 |
-| # dependents       | 530 |
-| # downloads        | 5836960 |
-| # stars            | 256 |
+| # releases         | 4 |
+| # dependents       | 656 |
+| # downloads        | 9395033 |
+| # stars            | 257 |
 
 ## Links
 - [Homepage](https://github.com/node-schedule/node-schedule#readme)

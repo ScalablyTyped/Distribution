@@ -10,9 +10,9 @@ A simple library containing all known terminal ansi escape codes and sequences.
 | ------------------ | :-------------: |
 | Full name          | ansi-escape-sequences |
 | Keywords           | ansi, terminal, colour, color, command line, cursor |
-| # releases         | 4 |
-| # dependents       | 51 |
-| # downloads        | 5302909 |
+| # releases         | 7 |
+| # dependents       | 54 |
+| # downloads        | 6373569 |
 | # stars            | 2 |
 
 ## Links

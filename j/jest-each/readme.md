@@ -10,9 +10,9 @@ Parameterised tests for Jest
 | ------------------ | :-------------: |
 | Full name          | jest-each |
 | Keywords           | jest, parameterised, test, each |
-| # releases         | 35 |
-| # dependents       | 3 |
-| # downloads        | 56529497 |
+| # releases         | 38 |
+| # dependents       | 12 |
+| # downloads        | 179927061 |
 | # stars            | 0 |
 
 ## Links

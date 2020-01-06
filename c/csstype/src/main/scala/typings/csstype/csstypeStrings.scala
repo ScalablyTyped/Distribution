@@ -1373,1385 +1373,6 @@ object csstypeStrings {
   sealed trait InfoText extends DeprecatedSystemColor
   
   @js.native
-  sealed trait `Leftsquarebracket-webkit-dropzoneRightsquarebracket` extends HtmlAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracket-webkit-slotRightsquarebracket` extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketabbrRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketaccent-heightRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketaccept-charsetRightsquarebracket` extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketacceptRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketaccesskeyRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketactionRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketalignRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketalignment-baselineRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketalinkRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketallowReorderRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketallowRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketallowfullscreenRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketallowpaymentrequestRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketalphabeticRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketaltRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketanimationRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketarabic-formRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketarchiveRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketascentRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketasyncRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketattributeNameRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketattributeTypeRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketautobufferRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketautocapitalizeRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketautocompleteRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketautofocusRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketautoplayRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketaxisRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketazimuthRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketbackgroundRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketbaseFrequencyRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketbaseProfileRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketbaseline-shiftRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketbboxRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketbeginRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketbehaviorRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketbgcolorRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketbiasRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketborderRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketbottommarginRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketbufferedRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketbyRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketcalcModeRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketcap-heightRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketcellpaddingRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketcellspacingRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketcharRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketcharoffRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketcharsetRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketcheckedRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketciteRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketclassRightsquarebracket
-    extends HtmlAttributes
-       with SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketclassidRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketclearRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketclip-pathRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketclip-ruleRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketclipPathUnitsRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketclipRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketcodeRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketcodebaseRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketcodetypeRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketcolor-interpolation-filtersRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketcolor-interpolationRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketcolor-profileRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketcolor-renderingRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketcolorRightsquarebracket
-    extends HtmlAttributes
-       with SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketcolsRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketcolspanRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketcommandRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketcompactRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketcontentRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketcontentScriptTypeRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketcontentStyleTypeRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketcontenteditableRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketcontextmenuRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketcontrolsRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketcoordsRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketcrossoriginRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketcursorRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketcxRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketcyRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketdRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketdataRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketdatafldRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketdatasrcRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketdatetimeRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketdeclareRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketdecodingRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketdefaultRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketdeferRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketdescentRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketdiffuseConstantRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketdirRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketdirectionRightsquarebracket
-    extends HtmlAttributes
-       with SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketdisabledRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketdisplayRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketdivisorRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketdocumentRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketdominant-baselineRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketdownloadRightsquarebracket
-    extends HtmlAttributes
-       with SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketdraggableRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketdropzoneRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketdurRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketdxRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketdyRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketedgeModeRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketelevationRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketenable-backgroundRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketenctypeRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketexportpartsRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketexternalResourcesRequiredRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketfaceRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketfill-opacityRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketfill-ruleRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketfillRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketfilterResRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketfilterRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketfilterUnitsRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketflood-colorRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketflood-opacityRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketfont-familyRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketfont-size-adjustRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketfont-sizeRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketfont-stretchRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketfont-styleRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketfont-variantRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketfont-weightRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketforRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketformRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketformactionRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketformatRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketformenctypeRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketformmethodRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketformnovalidateRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketformtargetRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketfrRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketframeRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketframeborderRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketfromRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketfxRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketfyRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait Leftsquarebracketg1Rightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait Leftsquarebracketg2Rightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketglobalRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketglyph-nameRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketglyph-orientation-horizontalRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketglyph-orientation-verticalRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketglyphRefRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketgradientTransformRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketgradientUnitsRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketgraphicalRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebrackethangingRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebrackethatchContentUnitsRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebrackethatchUnitsRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketheadersRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketheightRightsquarebracket
-    extends HtmlAttributes
-       with SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebrackethiddenRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebrackethighRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebrackethoriz-adv-xRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebrackethoriz-origin-xRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebrackethoriz-origin-yRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebrackethrefRightsquarebracket
-    extends HtmlAttributes
-       with SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebrackethreflangRightsquarebracket
-    extends HtmlAttributes
-       with SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebrackethspaceRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebrackethttp-equivRightsquarebracket` extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketiconRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketidRightsquarebracket
-    extends HtmlAttributes
-       with SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketideographicRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketimage-renderingRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait Leftsquarebracketin2Rightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketinRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketinputmodeRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketintegrityRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketintrinsicsizeRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketisRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketismapRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketitemidRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketitempropRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketitemrefRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketitemscopeRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketitemtypeRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait Leftsquarebracketk1Rightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait Leftsquarebracketk2Rightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait Leftsquarebracketk3Rightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait Leftsquarebracketk4Rightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketkRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketkernelMatrixRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketkernelUnitLengthRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketkerningRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketkeyPointsRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketkindRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketlabelRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketlangRightsquarebracket
-    extends HtmlAttributes
-       with SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketlanguageRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketleftmarginRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketlengthAdjustRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketletter-spacingRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketlighterForErrorRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketlighting-colorRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketlimitingConeAngleRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketlinkRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketlocalRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketlongdescRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketloopRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketlowRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketmanifestRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketmarginheightRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketmarginwidthRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketmarker-endRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketmarker-midRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketmarker-startRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketmarkerHeightRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketmarkerUnitsRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketmarkerWidthRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketmaskContentUnitsRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketmaskRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketmaskUnitsRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketmathematicalRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketmaxRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketmaxlengthRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketmayscriptRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketmediaRightsquarebracket
-    extends HtmlAttributes
-       with SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketmethodRightsquarebracket
-    extends HtmlAttributes
-       with SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketmethodsRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketminRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketminlengthRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketmodeRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketmoz-opaqueRightsquarebracket` extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketmozallowfullscreenRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketmozbrowserRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketmozcurrentsampleoffsetRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketmsallowfullscreenRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketmultipleRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketmutedRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketnameRightsquarebracket
-    extends HtmlAttributes
-       with SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketnohrefRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketnomoduleRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketnoresizeRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketnoshadeRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketnovalidateRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketnowrapRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketnumOctavesRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketobjectRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketoffsetRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketonafterprintRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketonbeforeprintRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketonbeforeunloadRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketonblurRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketonerrorRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketonfocusRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketonhashchangeRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketonlanguagechangeRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketonloadRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketonmessageRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketonofflineRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketononlineRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketonpopstateRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketonredoRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketonresizeRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketonstorageRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketonundoRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketonunloadRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketopacityRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketopenRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketoperatorRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketoptimumRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketorderRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketorientRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketorientationRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketoriginRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketoverflowRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketoverline-positionRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketoverline-thicknessRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketpaint-orderRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketpanose-1Rightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketpartRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketpathRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketpatternContentUnitsRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketpatternTransformRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketpatternUnitsRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketpingRightsquarebracket
-    extends HtmlAttributes
-       with SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketpitchRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketplaceholderRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketplayedRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketpointer-eventsRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketpointsAtXRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketpointsAtYRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketpointsAtZRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketpointsRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketposterRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketprefetchRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketpreloadRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketpreserveAlphaRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketpreserveAspectRatioRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketprimitiveUnitsRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketprofileRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketpromptRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketrRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketradiogroupRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketradiusRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketreadonlyRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketrefXRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketrefYRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketreferrerPolicyRightsquarebracket
-    extends HtmlAttributes
-       with SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketreferrerpolicyRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketrelRightsquarebracket
-    extends HtmlAttributes
-       with SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketrendering-intentRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketrepeatCountRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketrequiredExtensionsRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketrequiredFeaturesRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketrequiredRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketrevRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketreversedRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketrightmarginRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketrotateRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketrowsRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketrowspanRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketrulesRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketrxRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketryRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketsandbox-allow-modalsRightsquarebracket` extends HtmlAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketsandbox-allow-popups-to-escape-sandboxRightsquarebracket` extends HtmlAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketsandbox-allow-popupsRightsquarebracket` extends HtmlAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketsandbox-allow-presentationRightsquarebracket` extends HtmlAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketsandbox-allow-storage-access-by-user-activationRightsquarebracket` extends HtmlAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketsandbox-allow-top-navigation-by-user-activationRightsquarebracket` extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketsandboxRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketscaleRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketscopeRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketscopedRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketscrollamountRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketscrolldelayRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketscrollingRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketseedRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketselectedRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketshape-renderingRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketshapeRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketsideRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketsizeRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketsizesRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketslopeRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketslotRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketsolid-colorRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketsolid-opacityRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketspacingRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketspanRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketspecularConstantRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketspecularExponentRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketspellcheckRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketspreadMethodRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketsrcRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketsrcdocRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketsrclangRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketsrcsetRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketstandbyRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketstartOffsetRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketstartRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketstdDeviationRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketstemhRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketstemvRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketstitchTilesRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketstop-colorRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketstop-opacityRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketstrikethrough-positionRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketstrikethrough-thicknessRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketstringRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketstroke-dasharrayRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketstroke-dashoffsetRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketstroke-linecapRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketstroke-linejoinRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketstroke-miterlimitRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketstroke-opacityRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketstroke-widthRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketstrokeRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketstyleRightsquarebracket
-    extends HtmlAttributes
-       with SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketsummaryRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketsurfaceScaleRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketsystemLanguageRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebrackettabindexRightsquarebracket
-    extends HtmlAttributes
-       with SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebrackettargetRightsquarebracket
-    extends HtmlAttributes
-       with SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebrackettargetXRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebrackettargetYRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebrackettext-anchorRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebrackettext-decorationRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebrackettext-overflowRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebrackettext-renderingRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebrackettextLengthRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebrackettextRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebrackettitleRightsquarebracket
-    extends HtmlAttributes
-       with SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebrackettoRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebrackettopmarginRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebrackettransformRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebrackettranslateRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebrackettruespeedRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebrackettypeRightsquarebracket
-    extends HtmlAttributes
-       with SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebrackettypemustmatchRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait Leftsquarebracketu1Rightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait Leftsquarebracketu2Rightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketunderline-positionRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketunderline-thicknessRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketunicode-bidiRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketunicode-rangeRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketunicodeRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketunits-per-emRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketusemapRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketv-alphabeticRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketv-hangingRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketv-ideographicRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketv-mathematicalRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketvalignRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketvalueRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketvaluesRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketvaluetypeRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketvector-effectRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketversionRightsquarebracket
-    extends HtmlAttributes
-       with SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketvert-adv-yRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketvert-origin-xRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketvert-origin-yRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketviewBoxRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketviewTargetRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketvisibilityRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketvlinkRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketvolumeRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketvspaceRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketwebkitallowfullscreenRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketwhite-spaceRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketwidthRightsquarebracket
-    extends HtmlAttributes
-       with SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketwidthsRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketword-spacingRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketwrapRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketwriting-modeRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait `Leftsquarebracketx-heightRightsquarebracket` extends SvgAttributes
-  
-  @js.native
-  sealed trait Leftsquarebracketx1Rightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait Leftsquarebracketx2Rightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketxChannelSelectorRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketxRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketxmlnsRightsquarebracket extends HtmlAttributes
-  
-  @js.native
-  sealed trait Leftsquarebrackety1Rightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait Leftsquarebrackety2Rightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketyChannelSelectorRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketyRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketzRightsquarebracket extends SvgAttributes
-  
-  @js.native
-  sealed trait LeftsquarebracketzoomAndPanRightsquarebracket extends SvgAttributes
-  
-  @js.native
   sealed trait Menu extends DeprecatedSystemColor
   
   @js.native
@@ -2783,6 +1404,1385 @@ object csstypeStrings {
   
   @js.native
   sealed trait WindowText extends DeprecatedSystemColor
+  
+  @js.native
+  sealed trait `[-webkit-dropzone]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[-webkit-slot]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[abbr]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[accent-height]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[accept-charset]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[accept]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[accesskey]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[action]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[align]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[alignment-baseline]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[alink]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[allowReorder]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[allow]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[allowfullscreen]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[allowpaymentrequest]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[alphabetic]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[alt]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[animation]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[arabic-form]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[archive]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[ascent]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[async]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[attributeName]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[attributeType]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[autobuffer]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[autocapitalize]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[autocomplete]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[autofocus]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[autoplay]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[axis]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[azimuth]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[background]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[baseFrequency]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[baseProfile]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[baseline-shift]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[bbox]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[begin]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[behavior]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[bgcolor]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[bias]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[border]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[bottommargin]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[buffered]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[by]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[calcMode]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[cap-height]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[cellpadding]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[cellspacing]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[char]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[charoff]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[charset]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[checked]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[cite]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[class]`
+    extends HtmlAttributes
+       with SvgAttributes
+  
+  @js.native
+  sealed trait `[classid]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[clear]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[clip-path]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[clip-rule]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[clipPathUnits]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[clip]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[code]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[codebase]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[codetype]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[color-interpolation-filters]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[color-interpolation]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[color-profile]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[color-rendering]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[color]`
+    extends HtmlAttributes
+       with SvgAttributes
+  
+  @js.native
+  sealed trait `[cols]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[colspan]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[command]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[compact]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[contentScriptType]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[contentStyleType]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[content]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[contenteditable]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[contextmenu]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[controls]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[coords]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[crossorigin]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[cursor]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[cx]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[cy]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[d]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[data]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[datafld]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[datasrc]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[datetime]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[declare]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[decoding]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[default]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[defer]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[descent]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[diffuseConstant]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[dir]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[direction]`
+    extends HtmlAttributes
+       with SvgAttributes
+  
+  @js.native
+  sealed trait `[disabled]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[display]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[divisor]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[document]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[dominant-baseline]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[download]`
+    extends HtmlAttributes
+       with SvgAttributes
+  
+  @js.native
+  sealed trait `[draggable]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[dropzone]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[dur]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[dx]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[dy]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[edgeMode]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[elevation]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[enable-background]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[enctype]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[exportparts]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[externalResourcesRequired]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[face]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[fill-opacity]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[fill-rule]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[fill]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[filterRes]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[filterUnits]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[filter]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[flood-color]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[flood-opacity]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[font-family]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[font-size-adjust]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[font-size]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[font-stretch]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[font-style]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[font-variant]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[font-weight]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[for]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[form]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[formaction]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[format]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[formenctype]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[formmethod]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[formnovalidate]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[formtarget]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[fr]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[frame]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[frameborder]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[from]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[fx]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[fy]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[g1]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[g2]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[global]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[glyph-name]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[glyph-orientation-horizontal]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[glyph-orientation-vertical]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[glyphRef]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[gradientTransform]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[gradientUnits]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[graphical]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[hanging]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[hatchContentUnits]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[hatchUnits]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[headers]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[height]`
+    extends HtmlAttributes
+       with SvgAttributes
+  
+  @js.native
+  sealed trait `[hidden]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[high]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[horiz-adv-x]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[horiz-origin-x]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[horiz-origin-y]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[href]`
+    extends HtmlAttributes
+       with SvgAttributes
+  
+  @js.native
+  sealed trait `[hreflang]`
+    extends HtmlAttributes
+       with SvgAttributes
+  
+  @js.native
+  sealed trait `[hspace]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[http-equiv]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[icon]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[id]`
+    extends HtmlAttributes
+       with SvgAttributes
+  
+  @js.native
+  sealed trait `[ideographic]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[image-rendering]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[in2]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[in]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[inputmode]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[integrity]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[intrinsicsize]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[is]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[ismap]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[itemid]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[itemprop]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[itemref]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[itemscope]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[itemtype]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[k1]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[k2]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[k3]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[k4]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[k]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[kernelMatrix]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[kernelUnitLength]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[kerning]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[keyPoints]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[kind]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[label]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[lang]`
+    extends HtmlAttributes
+       with SvgAttributes
+  
+  @js.native
+  sealed trait `[language]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[leftmargin]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[lengthAdjust]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[letter-spacing]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[lighterForError]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[lighting-color]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[limitingConeAngle]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[link]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[local]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[longdesc]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[loop]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[low]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[manifest]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[marginheight]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[marginwidth]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[marker-end]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[marker-mid]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[marker-start]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[markerHeight]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[markerUnits]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[markerWidth]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[maskContentUnits]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[maskUnits]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[mask]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[mathematical]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[max]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[maxlength]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[mayscript]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[media]`
+    extends HtmlAttributes
+       with SvgAttributes
+  
+  @js.native
+  sealed trait `[method]`
+    extends HtmlAttributes
+       with SvgAttributes
+  
+  @js.native
+  sealed trait `[methods]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[min]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[minlength]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[mode]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[moz-opaque]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[mozallowfullscreen]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[mozbrowser]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[mozcurrentsampleoffset]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[msallowfullscreen]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[multiple]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[muted]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[name]`
+    extends HtmlAttributes
+       with SvgAttributes
+  
+  @js.native
+  sealed trait `[nohref]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[nomodule]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[noresize]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[noshade]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[novalidate]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[nowrap]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[numOctaves]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[object]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[offset]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[onafterprint]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[onbeforeprint]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[onbeforeunload]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[onblur]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[onerror]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[onfocus]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[onhashchange]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[onlanguagechange]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[onload]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[onmessage]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[onoffline]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[ononline]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[onpopstate]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[onredo]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[onresize]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[onstorage]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[onundo]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[onunload]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[opacity]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[open]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[operator]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[optimum]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[order]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[orient]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[orientation]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[origin]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[overflow]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[overline-position]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[overline-thickness]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[paint-order]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[panose-1]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[part]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[path]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[patternContentUnits]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[patternTransform]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[patternUnits]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[ping]`
+    extends HtmlAttributes
+       with SvgAttributes
+  
+  @js.native
+  sealed trait `[pitch]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[placeholder]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[played]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[pointer-events]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[pointsAtX]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[pointsAtY]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[pointsAtZ]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[points]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[poster]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[prefetch]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[preload]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[preserveAlpha]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[preserveAspectRatio]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[primitiveUnits]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[profile]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[prompt]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[r]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[radiogroup]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[radius]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[readonly]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[refX]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[refY]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[referrerPolicy]`
+    extends HtmlAttributes
+       with SvgAttributes
+  
+  @js.native
+  sealed trait `[referrerpolicy]_` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[rel]`
+    extends HtmlAttributes
+       with SvgAttributes
+  
+  @js.native
+  sealed trait `[rendering-intent]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[repeatCount]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[requiredExtensions]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[requiredFeatures]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[required]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[rev]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[reversed]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[rightmargin]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[rotate]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[rows]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[rowspan]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[rules]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[rx]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[ry]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[sandbox-allow-modals]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[sandbox-allow-popups-to-escape-sandbox]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[sandbox-allow-popups]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[sandbox-allow-presentation]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[sandbox-allow-storage-access-by-user-activation]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[sandbox-allow-top-navigation-by-user-activation]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[sandbox]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[scale]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[scope]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[scoped]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[scrollamount]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[scrolldelay]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[scrolling]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[seed]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[selected]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[shape-rendering]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[shape]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[side]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[size]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[sizes]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[slope]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[slot]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[solid-color]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[solid-opacity]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[spacing]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[span]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[specularConstant]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[specularExponent]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[spellcheck]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[spreadMethod]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[src]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[srcdoc]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[srclang]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[srcset]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[standby]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[startOffset]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[start]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[stdDeviation]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[stemh]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[stemv]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[stitchTiles]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[stop-color]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[stop-opacity]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[strikethrough-position]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[strikethrough-thickness]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[string]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[stroke-dasharray]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[stroke-dashoffset]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[stroke-linecap]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[stroke-linejoin]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[stroke-miterlimit]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[stroke-opacity]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[stroke-width]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[stroke]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[style]`
+    extends HtmlAttributes
+       with SvgAttributes
+  
+  @js.native
+  sealed trait `[summary]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[surfaceScale]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[systemLanguage]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[tabindex]`
+    extends HtmlAttributes
+       with SvgAttributes
+  
+  @js.native
+  sealed trait `[targetX]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[targetY]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[target]`
+    extends HtmlAttributes
+       with SvgAttributes
+  
+  @js.native
+  sealed trait `[text-anchor]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[text-decoration]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[text-overflow]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[text-rendering]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[textLength]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[text]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[title]`
+    extends HtmlAttributes
+       with SvgAttributes
+  
+  @js.native
+  sealed trait `[to]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[topmargin]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[transform]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[translate]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[truespeed]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[type]`
+    extends HtmlAttributes
+       with SvgAttributes
+  
+  @js.native
+  sealed trait `[typemustmatch]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[u1]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[u2]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[underline-position]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[underline-thickness]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[unicode-bidi]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[unicode-range]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[unicode]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[units-per-em]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[usemap]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[v-alphabetic]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[v-hanging]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[v-ideographic]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[v-mathematical]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[valign]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[value]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[values]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[valuetype]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[vector-effect]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[version]`
+    extends HtmlAttributes
+       with SvgAttributes
+  
+  @js.native
+  sealed trait `[vert-adv-y]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[vert-origin-x]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[vert-origin-y]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[viewBox]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[viewTarget]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[visibility]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[vlink]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[volume]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[vspace]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[webkitallowfullscreen]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[white-space]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[width]`
+    extends HtmlAttributes
+       with SvgAttributes
+  
+  @js.native
+  sealed trait `[widths]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[word-spacing]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[wrap]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[writing-mode]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[x-height]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[x1]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[x2]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[xChannelSelector]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[x]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[xmlns]` extends HtmlAttributes
+  
+  @js.native
+  sealed trait `[y1]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[y2]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[yChannelSelector]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[y]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[z]` extends SvgAttributes
+  
+  @js.native
+  sealed trait `[zoomAndPan]` extends SvgAttributes
   
   @js.native
   sealed trait above
@@ -7092,896 +7092,6 @@ object csstypeStrings {
   @scala.inline
   def InfoText: InfoText = "InfoText".asInstanceOf[InfoText]
   @scala.inline
-  def `Leftsquarebracket-webkit-dropzoneRightsquarebracket`: `Leftsquarebracket-webkit-dropzoneRightsquarebracket` = "[-webkit-dropzone]".asInstanceOf[`Leftsquarebracket-webkit-dropzoneRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebracket-webkit-slotRightsquarebracket`: `Leftsquarebracket-webkit-slotRightsquarebracket` = "[-webkit-slot]".asInstanceOf[`Leftsquarebracket-webkit-slotRightsquarebracket`]
-  @scala.inline
-  def LeftsquarebracketabbrRightsquarebracket: LeftsquarebracketabbrRightsquarebracket = "[abbr]".asInstanceOf[LeftsquarebracketabbrRightsquarebracket]
-  @scala.inline
-  def `Leftsquarebracketaccent-heightRightsquarebracket`: `Leftsquarebracketaccent-heightRightsquarebracket` = "[accent-height]".asInstanceOf[`Leftsquarebracketaccent-heightRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebracketaccept-charsetRightsquarebracket`: `Leftsquarebracketaccept-charsetRightsquarebracket` = "[accept-charset]".asInstanceOf[`Leftsquarebracketaccept-charsetRightsquarebracket`]
-  @scala.inline
-  def LeftsquarebracketacceptRightsquarebracket: LeftsquarebracketacceptRightsquarebracket = "[accept]".asInstanceOf[LeftsquarebracketacceptRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketaccesskeyRightsquarebracket: LeftsquarebracketaccesskeyRightsquarebracket = "[accesskey]".asInstanceOf[LeftsquarebracketaccesskeyRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketactionRightsquarebracket: LeftsquarebracketactionRightsquarebracket = "[action]".asInstanceOf[LeftsquarebracketactionRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketalignRightsquarebracket: LeftsquarebracketalignRightsquarebracket = "[align]".asInstanceOf[LeftsquarebracketalignRightsquarebracket]
-  @scala.inline
-  def `Leftsquarebracketalignment-baselineRightsquarebracket`: `Leftsquarebracketalignment-baselineRightsquarebracket` = "[alignment-baseline]".asInstanceOf[`Leftsquarebracketalignment-baselineRightsquarebracket`]
-  @scala.inline
-  def LeftsquarebracketalinkRightsquarebracket: LeftsquarebracketalinkRightsquarebracket = "[alink]".asInstanceOf[LeftsquarebracketalinkRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketallowReorderRightsquarebracket: LeftsquarebracketallowReorderRightsquarebracket = "[allowReorder]".asInstanceOf[LeftsquarebracketallowReorderRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketallowRightsquarebracket: LeftsquarebracketallowRightsquarebracket = "[allow]".asInstanceOf[LeftsquarebracketallowRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketallowfullscreenRightsquarebracket: LeftsquarebracketallowfullscreenRightsquarebracket = "[allowfullscreen]".asInstanceOf[LeftsquarebracketallowfullscreenRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketallowpaymentrequestRightsquarebracket: LeftsquarebracketallowpaymentrequestRightsquarebracket = "[allowpaymentrequest]".asInstanceOf[LeftsquarebracketallowpaymentrequestRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketalphabeticRightsquarebracket: LeftsquarebracketalphabeticRightsquarebracket = "[alphabetic]".asInstanceOf[LeftsquarebracketalphabeticRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketaltRightsquarebracket: LeftsquarebracketaltRightsquarebracket = "[alt]".asInstanceOf[LeftsquarebracketaltRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketanimationRightsquarebracket: LeftsquarebracketanimationRightsquarebracket = "[animation]".asInstanceOf[LeftsquarebracketanimationRightsquarebracket]
-  @scala.inline
-  def `Leftsquarebracketarabic-formRightsquarebracket`: `Leftsquarebracketarabic-formRightsquarebracket` = "[arabic-form]".asInstanceOf[`Leftsquarebracketarabic-formRightsquarebracket`]
-  @scala.inline
-  def LeftsquarebracketarchiveRightsquarebracket: LeftsquarebracketarchiveRightsquarebracket = "[archive]".asInstanceOf[LeftsquarebracketarchiveRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketascentRightsquarebracket: LeftsquarebracketascentRightsquarebracket = "[ascent]".asInstanceOf[LeftsquarebracketascentRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketasyncRightsquarebracket: LeftsquarebracketasyncRightsquarebracket = "[async]".asInstanceOf[LeftsquarebracketasyncRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketattributeNameRightsquarebracket: LeftsquarebracketattributeNameRightsquarebracket = "[attributeName]".asInstanceOf[LeftsquarebracketattributeNameRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketattributeTypeRightsquarebracket: LeftsquarebracketattributeTypeRightsquarebracket = "[attributeType]".asInstanceOf[LeftsquarebracketattributeTypeRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketautobufferRightsquarebracket: LeftsquarebracketautobufferRightsquarebracket = "[autobuffer]".asInstanceOf[LeftsquarebracketautobufferRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketautocapitalizeRightsquarebracket: LeftsquarebracketautocapitalizeRightsquarebracket = "[autocapitalize]".asInstanceOf[LeftsquarebracketautocapitalizeRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketautocompleteRightsquarebracket: LeftsquarebracketautocompleteRightsquarebracket = "[autocomplete]".asInstanceOf[LeftsquarebracketautocompleteRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketautofocusRightsquarebracket: LeftsquarebracketautofocusRightsquarebracket = "[autofocus]".asInstanceOf[LeftsquarebracketautofocusRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketautoplayRightsquarebracket: LeftsquarebracketautoplayRightsquarebracket = "[autoplay]".asInstanceOf[LeftsquarebracketautoplayRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketaxisRightsquarebracket: LeftsquarebracketaxisRightsquarebracket = "[axis]".asInstanceOf[LeftsquarebracketaxisRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketazimuthRightsquarebracket: LeftsquarebracketazimuthRightsquarebracket = "[azimuth]".asInstanceOf[LeftsquarebracketazimuthRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketbackgroundRightsquarebracket: LeftsquarebracketbackgroundRightsquarebracket = "[background]".asInstanceOf[LeftsquarebracketbackgroundRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketbaseFrequencyRightsquarebracket: LeftsquarebracketbaseFrequencyRightsquarebracket = "[baseFrequency]".asInstanceOf[LeftsquarebracketbaseFrequencyRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketbaseProfileRightsquarebracket: LeftsquarebracketbaseProfileRightsquarebracket = "[baseProfile]".asInstanceOf[LeftsquarebracketbaseProfileRightsquarebracket]
-  @scala.inline
-  def `Leftsquarebracketbaseline-shiftRightsquarebracket`: `Leftsquarebracketbaseline-shiftRightsquarebracket` = "[baseline-shift]".asInstanceOf[`Leftsquarebracketbaseline-shiftRightsquarebracket`]
-  @scala.inline
-  def LeftsquarebracketbboxRightsquarebracket: LeftsquarebracketbboxRightsquarebracket = "[bbox]".asInstanceOf[LeftsquarebracketbboxRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketbeginRightsquarebracket: LeftsquarebracketbeginRightsquarebracket = "[begin]".asInstanceOf[LeftsquarebracketbeginRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketbehaviorRightsquarebracket: LeftsquarebracketbehaviorRightsquarebracket = "[behavior]".asInstanceOf[LeftsquarebracketbehaviorRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketbgcolorRightsquarebracket: LeftsquarebracketbgcolorRightsquarebracket = "[bgcolor]".asInstanceOf[LeftsquarebracketbgcolorRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketbiasRightsquarebracket: LeftsquarebracketbiasRightsquarebracket = "[bias]".asInstanceOf[LeftsquarebracketbiasRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketborderRightsquarebracket: LeftsquarebracketborderRightsquarebracket = "[border]".asInstanceOf[LeftsquarebracketborderRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketbottommarginRightsquarebracket: LeftsquarebracketbottommarginRightsquarebracket = "[bottommargin]".asInstanceOf[LeftsquarebracketbottommarginRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketbufferedRightsquarebracket: LeftsquarebracketbufferedRightsquarebracket = "[buffered]".asInstanceOf[LeftsquarebracketbufferedRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketbyRightsquarebracket: LeftsquarebracketbyRightsquarebracket = "[by]".asInstanceOf[LeftsquarebracketbyRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketcalcModeRightsquarebracket: LeftsquarebracketcalcModeRightsquarebracket = "[calcMode]".asInstanceOf[LeftsquarebracketcalcModeRightsquarebracket]
-  @scala.inline
-  def `Leftsquarebracketcap-heightRightsquarebracket`: `Leftsquarebracketcap-heightRightsquarebracket` = "[cap-height]".asInstanceOf[`Leftsquarebracketcap-heightRightsquarebracket`]
-  @scala.inline
-  def LeftsquarebracketcellpaddingRightsquarebracket: LeftsquarebracketcellpaddingRightsquarebracket = "[cellpadding]".asInstanceOf[LeftsquarebracketcellpaddingRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketcellspacingRightsquarebracket: LeftsquarebracketcellspacingRightsquarebracket = "[cellspacing]".asInstanceOf[LeftsquarebracketcellspacingRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketcharRightsquarebracket: LeftsquarebracketcharRightsquarebracket = "[char]".asInstanceOf[LeftsquarebracketcharRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketcharoffRightsquarebracket: LeftsquarebracketcharoffRightsquarebracket = "[charoff]".asInstanceOf[LeftsquarebracketcharoffRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketcharsetRightsquarebracket: LeftsquarebracketcharsetRightsquarebracket = "[charset]".asInstanceOf[LeftsquarebracketcharsetRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketcheckedRightsquarebracket: LeftsquarebracketcheckedRightsquarebracket = "[checked]".asInstanceOf[LeftsquarebracketcheckedRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketciteRightsquarebracket: LeftsquarebracketciteRightsquarebracket = "[cite]".asInstanceOf[LeftsquarebracketciteRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketclassRightsquarebracket: LeftsquarebracketclassRightsquarebracket = "[class]".asInstanceOf[LeftsquarebracketclassRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketclassidRightsquarebracket: LeftsquarebracketclassidRightsquarebracket = "[classid]".asInstanceOf[LeftsquarebracketclassidRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketclearRightsquarebracket: LeftsquarebracketclearRightsquarebracket = "[clear]".asInstanceOf[LeftsquarebracketclearRightsquarebracket]
-  @scala.inline
-  def `Leftsquarebracketclip-pathRightsquarebracket`: `Leftsquarebracketclip-pathRightsquarebracket` = "[clip-path]".asInstanceOf[`Leftsquarebracketclip-pathRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebracketclip-ruleRightsquarebracket`: `Leftsquarebracketclip-ruleRightsquarebracket` = "[clip-rule]".asInstanceOf[`Leftsquarebracketclip-ruleRightsquarebracket`]
-  @scala.inline
-  def LeftsquarebracketclipPathUnitsRightsquarebracket: LeftsquarebracketclipPathUnitsRightsquarebracket = "[clipPathUnits]".asInstanceOf[LeftsquarebracketclipPathUnitsRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketclipRightsquarebracket: LeftsquarebracketclipRightsquarebracket = "[clip]".asInstanceOf[LeftsquarebracketclipRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketcodeRightsquarebracket: LeftsquarebracketcodeRightsquarebracket = "[code]".asInstanceOf[LeftsquarebracketcodeRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketcodebaseRightsquarebracket: LeftsquarebracketcodebaseRightsquarebracket = "[codebase]".asInstanceOf[LeftsquarebracketcodebaseRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketcodetypeRightsquarebracket: LeftsquarebracketcodetypeRightsquarebracket = "[codetype]".asInstanceOf[LeftsquarebracketcodetypeRightsquarebracket]
-  @scala.inline
-  def `Leftsquarebracketcolor-interpolation-filtersRightsquarebracket`: `Leftsquarebracketcolor-interpolation-filtersRightsquarebracket` = "[color-interpolation-filters]".asInstanceOf[`Leftsquarebracketcolor-interpolation-filtersRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebracketcolor-interpolationRightsquarebracket`: `Leftsquarebracketcolor-interpolationRightsquarebracket` = "[color-interpolation]".asInstanceOf[`Leftsquarebracketcolor-interpolationRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebracketcolor-profileRightsquarebracket`: `Leftsquarebracketcolor-profileRightsquarebracket` = "[color-profile]".asInstanceOf[`Leftsquarebracketcolor-profileRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebracketcolor-renderingRightsquarebracket`: `Leftsquarebracketcolor-renderingRightsquarebracket` = "[color-rendering]".asInstanceOf[`Leftsquarebracketcolor-renderingRightsquarebracket`]
-  @scala.inline
-  def LeftsquarebracketcolorRightsquarebracket: LeftsquarebracketcolorRightsquarebracket = "[color]".asInstanceOf[LeftsquarebracketcolorRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketcolsRightsquarebracket: LeftsquarebracketcolsRightsquarebracket = "[cols]".asInstanceOf[LeftsquarebracketcolsRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketcolspanRightsquarebracket: LeftsquarebracketcolspanRightsquarebracket = "[colspan]".asInstanceOf[LeftsquarebracketcolspanRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketcommandRightsquarebracket: LeftsquarebracketcommandRightsquarebracket = "[command]".asInstanceOf[LeftsquarebracketcommandRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketcompactRightsquarebracket: LeftsquarebracketcompactRightsquarebracket = "[compact]".asInstanceOf[LeftsquarebracketcompactRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketcontentRightsquarebracket: LeftsquarebracketcontentRightsquarebracket = "[content]".asInstanceOf[LeftsquarebracketcontentRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketcontentScriptTypeRightsquarebracket: LeftsquarebracketcontentScriptTypeRightsquarebracket = "[contentScriptType]".asInstanceOf[LeftsquarebracketcontentScriptTypeRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketcontentStyleTypeRightsquarebracket: LeftsquarebracketcontentStyleTypeRightsquarebracket = "[contentStyleType]".asInstanceOf[LeftsquarebracketcontentStyleTypeRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketcontenteditableRightsquarebracket: LeftsquarebracketcontenteditableRightsquarebracket = "[contenteditable]".asInstanceOf[LeftsquarebracketcontenteditableRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketcontextmenuRightsquarebracket: LeftsquarebracketcontextmenuRightsquarebracket = "[contextmenu]".asInstanceOf[LeftsquarebracketcontextmenuRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketcontrolsRightsquarebracket: LeftsquarebracketcontrolsRightsquarebracket = "[controls]".asInstanceOf[LeftsquarebracketcontrolsRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketcoordsRightsquarebracket: LeftsquarebracketcoordsRightsquarebracket = "[coords]".asInstanceOf[LeftsquarebracketcoordsRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketcrossoriginRightsquarebracket: LeftsquarebracketcrossoriginRightsquarebracket = "[crossorigin]".asInstanceOf[LeftsquarebracketcrossoriginRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketcursorRightsquarebracket: LeftsquarebracketcursorRightsquarebracket = "[cursor]".asInstanceOf[LeftsquarebracketcursorRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketcxRightsquarebracket: LeftsquarebracketcxRightsquarebracket = "[cx]".asInstanceOf[LeftsquarebracketcxRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketcyRightsquarebracket: LeftsquarebracketcyRightsquarebracket = "[cy]".asInstanceOf[LeftsquarebracketcyRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketdRightsquarebracket: LeftsquarebracketdRightsquarebracket = "[d]".asInstanceOf[LeftsquarebracketdRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketdataRightsquarebracket: LeftsquarebracketdataRightsquarebracket = "[data]".asInstanceOf[LeftsquarebracketdataRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketdatafldRightsquarebracket: LeftsquarebracketdatafldRightsquarebracket = "[datafld]".asInstanceOf[LeftsquarebracketdatafldRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketdatasrcRightsquarebracket: LeftsquarebracketdatasrcRightsquarebracket = "[datasrc]".asInstanceOf[LeftsquarebracketdatasrcRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketdatetimeRightsquarebracket: LeftsquarebracketdatetimeRightsquarebracket = "[datetime]".asInstanceOf[LeftsquarebracketdatetimeRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketdeclareRightsquarebracket: LeftsquarebracketdeclareRightsquarebracket = "[declare]".asInstanceOf[LeftsquarebracketdeclareRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketdecodingRightsquarebracket: LeftsquarebracketdecodingRightsquarebracket = "[decoding]".asInstanceOf[LeftsquarebracketdecodingRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketdefaultRightsquarebracket: LeftsquarebracketdefaultRightsquarebracket = "[default]".asInstanceOf[LeftsquarebracketdefaultRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketdeferRightsquarebracket: LeftsquarebracketdeferRightsquarebracket = "[defer]".asInstanceOf[LeftsquarebracketdeferRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketdescentRightsquarebracket: LeftsquarebracketdescentRightsquarebracket = "[descent]".asInstanceOf[LeftsquarebracketdescentRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketdiffuseConstantRightsquarebracket: LeftsquarebracketdiffuseConstantRightsquarebracket = "[diffuseConstant]".asInstanceOf[LeftsquarebracketdiffuseConstantRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketdirRightsquarebracket: LeftsquarebracketdirRightsquarebracket = "[dir]".asInstanceOf[LeftsquarebracketdirRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketdirectionRightsquarebracket: LeftsquarebracketdirectionRightsquarebracket = "[direction]".asInstanceOf[LeftsquarebracketdirectionRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketdisabledRightsquarebracket: LeftsquarebracketdisabledRightsquarebracket = "[disabled]".asInstanceOf[LeftsquarebracketdisabledRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketdisplayRightsquarebracket: LeftsquarebracketdisplayRightsquarebracket = "[display]".asInstanceOf[LeftsquarebracketdisplayRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketdivisorRightsquarebracket: LeftsquarebracketdivisorRightsquarebracket = "[divisor]".asInstanceOf[LeftsquarebracketdivisorRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketdocumentRightsquarebracket: LeftsquarebracketdocumentRightsquarebracket = "[document]".asInstanceOf[LeftsquarebracketdocumentRightsquarebracket]
-  @scala.inline
-  def `Leftsquarebracketdominant-baselineRightsquarebracket`: `Leftsquarebracketdominant-baselineRightsquarebracket` = "[dominant-baseline]".asInstanceOf[`Leftsquarebracketdominant-baselineRightsquarebracket`]
-  @scala.inline
-  def LeftsquarebracketdownloadRightsquarebracket: LeftsquarebracketdownloadRightsquarebracket = "[download]".asInstanceOf[LeftsquarebracketdownloadRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketdraggableRightsquarebracket: LeftsquarebracketdraggableRightsquarebracket = "[draggable]".asInstanceOf[LeftsquarebracketdraggableRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketdropzoneRightsquarebracket: LeftsquarebracketdropzoneRightsquarebracket = "[dropzone]".asInstanceOf[LeftsquarebracketdropzoneRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketdurRightsquarebracket: LeftsquarebracketdurRightsquarebracket = "[dur]".asInstanceOf[LeftsquarebracketdurRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketdxRightsquarebracket: LeftsquarebracketdxRightsquarebracket = "[dx]".asInstanceOf[LeftsquarebracketdxRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketdyRightsquarebracket: LeftsquarebracketdyRightsquarebracket = "[dy]".asInstanceOf[LeftsquarebracketdyRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketedgeModeRightsquarebracket: LeftsquarebracketedgeModeRightsquarebracket = "[edgeMode]".asInstanceOf[LeftsquarebracketedgeModeRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketelevationRightsquarebracket: LeftsquarebracketelevationRightsquarebracket = "[elevation]".asInstanceOf[LeftsquarebracketelevationRightsquarebracket]
-  @scala.inline
-  def `Leftsquarebracketenable-backgroundRightsquarebracket`: `Leftsquarebracketenable-backgroundRightsquarebracket` = "[enable-background]".asInstanceOf[`Leftsquarebracketenable-backgroundRightsquarebracket`]
-  @scala.inline
-  def LeftsquarebracketenctypeRightsquarebracket: LeftsquarebracketenctypeRightsquarebracket = "[enctype]".asInstanceOf[LeftsquarebracketenctypeRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketexportpartsRightsquarebracket: LeftsquarebracketexportpartsRightsquarebracket = "[exportparts]".asInstanceOf[LeftsquarebracketexportpartsRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketexternalResourcesRequiredRightsquarebracket: LeftsquarebracketexternalResourcesRequiredRightsquarebracket = "[externalResourcesRequired]".asInstanceOf[LeftsquarebracketexternalResourcesRequiredRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketfaceRightsquarebracket: LeftsquarebracketfaceRightsquarebracket = "[face]".asInstanceOf[LeftsquarebracketfaceRightsquarebracket]
-  @scala.inline
-  def `Leftsquarebracketfill-opacityRightsquarebracket`: `Leftsquarebracketfill-opacityRightsquarebracket` = "[fill-opacity]".asInstanceOf[`Leftsquarebracketfill-opacityRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebracketfill-ruleRightsquarebracket`: `Leftsquarebracketfill-ruleRightsquarebracket` = "[fill-rule]".asInstanceOf[`Leftsquarebracketfill-ruleRightsquarebracket`]
-  @scala.inline
-  def LeftsquarebracketfillRightsquarebracket: LeftsquarebracketfillRightsquarebracket = "[fill]".asInstanceOf[LeftsquarebracketfillRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketfilterResRightsquarebracket: LeftsquarebracketfilterResRightsquarebracket = "[filterRes]".asInstanceOf[LeftsquarebracketfilterResRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketfilterRightsquarebracket: LeftsquarebracketfilterRightsquarebracket = "[filter]".asInstanceOf[LeftsquarebracketfilterRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketfilterUnitsRightsquarebracket: LeftsquarebracketfilterUnitsRightsquarebracket = "[filterUnits]".asInstanceOf[LeftsquarebracketfilterUnitsRightsquarebracket]
-  @scala.inline
-  def `Leftsquarebracketflood-colorRightsquarebracket`: `Leftsquarebracketflood-colorRightsquarebracket` = "[flood-color]".asInstanceOf[`Leftsquarebracketflood-colorRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebracketflood-opacityRightsquarebracket`: `Leftsquarebracketflood-opacityRightsquarebracket` = "[flood-opacity]".asInstanceOf[`Leftsquarebracketflood-opacityRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebracketfont-familyRightsquarebracket`: `Leftsquarebracketfont-familyRightsquarebracket` = "[font-family]".asInstanceOf[`Leftsquarebracketfont-familyRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebracketfont-size-adjustRightsquarebracket`: `Leftsquarebracketfont-size-adjustRightsquarebracket` = "[font-size-adjust]".asInstanceOf[`Leftsquarebracketfont-size-adjustRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebracketfont-sizeRightsquarebracket`: `Leftsquarebracketfont-sizeRightsquarebracket` = "[font-size]".asInstanceOf[`Leftsquarebracketfont-sizeRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebracketfont-stretchRightsquarebracket`: `Leftsquarebracketfont-stretchRightsquarebracket` = "[font-stretch]".asInstanceOf[`Leftsquarebracketfont-stretchRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebracketfont-styleRightsquarebracket`: `Leftsquarebracketfont-styleRightsquarebracket` = "[font-style]".asInstanceOf[`Leftsquarebracketfont-styleRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebracketfont-variantRightsquarebracket`: `Leftsquarebracketfont-variantRightsquarebracket` = "[font-variant]".asInstanceOf[`Leftsquarebracketfont-variantRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebracketfont-weightRightsquarebracket`: `Leftsquarebracketfont-weightRightsquarebracket` = "[font-weight]".asInstanceOf[`Leftsquarebracketfont-weightRightsquarebracket`]
-  @scala.inline
-  def LeftsquarebracketforRightsquarebracket: LeftsquarebracketforRightsquarebracket = "[for]".asInstanceOf[LeftsquarebracketforRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketformRightsquarebracket: LeftsquarebracketformRightsquarebracket = "[form]".asInstanceOf[LeftsquarebracketformRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketformactionRightsquarebracket: LeftsquarebracketformactionRightsquarebracket = "[formaction]".asInstanceOf[LeftsquarebracketformactionRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketformatRightsquarebracket: LeftsquarebracketformatRightsquarebracket = "[format]".asInstanceOf[LeftsquarebracketformatRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketformenctypeRightsquarebracket: LeftsquarebracketformenctypeRightsquarebracket = "[formenctype]".asInstanceOf[LeftsquarebracketformenctypeRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketformmethodRightsquarebracket: LeftsquarebracketformmethodRightsquarebracket = "[formmethod]".asInstanceOf[LeftsquarebracketformmethodRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketformnovalidateRightsquarebracket: LeftsquarebracketformnovalidateRightsquarebracket = "[formnovalidate]".asInstanceOf[LeftsquarebracketformnovalidateRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketformtargetRightsquarebracket: LeftsquarebracketformtargetRightsquarebracket = "[formtarget]".asInstanceOf[LeftsquarebracketformtargetRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketfrRightsquarebracket: LeftsquarebracketfrRightsquarebracket = "[fr]".asInstanceOf[LeftsquarebracketfrRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketframeRightsquarebracket: LeftsquarebracketframeRightsquarebracket = "[frame]".asInstanceOf[LeftsquarebracketframeRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketframeborderRightsquarebracket: LeftsquarebracketframeborderRightsquarebracket = "[frameborder]".asInstanceOf[LeftsquarebracketframeborderRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketfromRightsquarebracket: LeftsquarebracketfromRightsquarebracket = "[from]".asInstanceOf[LeftsquarebracketfromRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketfxRightsquarebracket: LeftsquarebracketfxRightsquarebracket = "[fx]".asInstanceOf[LeftsquarebracketfxRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketfyRightsquarebracket: LeftsquarebracketfyRightsquarebracket = "[fy]".asInstanceOf[LeftsquarebracketfyRightsquarebracket]
-  @scala.inline
-  def Leftsquarebracketg1Rightsquarebracket: Leftsquarebracketg1Rightsquarebracket = "[g1]".asInstanceOf[Leftsquarebracketg1Rightsquarebracket]
-  @scala.inline
-  def Leftsquarebracketg2Rightsquarebracket: Leftsquarebracketg2Rightsquarebracket = "[g2]".asInstanceOf[Leftsquarebracketg2Rightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketglobalRightsquarebracket: LeftsquarebracketglobalRightsquarebracket = "[global]".asInstanceOf[LeftsquarebracketglobalRightsquarebracket]
-  @scala.inline
-  def `Leftsquarebracketglyph-nameRightsquarebracket`: `Leftsquarebracketglyph-nameRightsquarebracket` = "[glyph-name]".asInstanceOf[`Leftsquarebracketglyph-nameRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebracketglyph-orientation-horizontalRightsquarebracket`: `Leftsquarebracketglyph-orientation-horizontalRightsquarebracket` = "[glyph-orientation-horizontal]".asInstanceOf[`Leftsquarebracketglyph-orientation-horizontalRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebracketglyph-orientation-verticalRightsquarebracket`: `Leftsquarebracketglyph-orientation-verticalRightsquarebracket` = "[glyph-orientation-vertical]".asInstanceOf[`Leftsquarebracketglyph-orientation-verticalRightsquarebracket`]
-  @scala.inline
-  def LeftsquarebracketglyphRefRightsquarebracket: LeftsquarebracketglyphRefRightsquarebracket = "[glyphRef]".asInstanceOf[LeftsquarebracketglyphRefRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketgradientTransformRightsquarebracket: LeftsquarebracketgradientTransformRightsquarebracket = "[gradientTransform]".asInstanceOf[LeftsquarebracketgradientTransformRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketgradientUnitsRightsquarebracket: LeftsquarebracketgradientUnitsRightsquarebracket = "[gradientUnits]".asInstanceOf[LeftsquarebracketgradientUnitsRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketgraphicalRightsquarebracket: LeftsquarebracketgraphicalRightsquarebracket = "[graphical]".asInstanceOf[LeftsquarebracketgraphicalRightsquarebracket]
-  @scala.inline
-  def LeftsquarebrackethangingRightsquarebracket: LeftsquarebrackethangingRightsquarebracket = "[hanging]".asInstanceOf[LeftsquarebrackethangingRightsquarebracket]
-  @scala.inline
-  def LeftsquarebrackethatchContentUnitsRightsquarebracket: LeftsquarebrackethatchContentUnitsRightsquarebracket = "[hatchContentUnits]".asInstanceOf[LeftsquarebrackethatchContentUnitsRightsquarebracket]
-  @scala.inline
-  def LeftsquarebrackethatchUnitsRightsquarebracket: LeftsquarebrackethatchUnitsRightsquarebracket = "[hatchUnits]".asInstanceOf[LeftsquarebrackethatchUnitsRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketheadersRightsquarebracket: LeftsquarebracketheadersRightsquarebracket = "[headers]".asInstanceOf[LeftsquarebracketheadersRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketheightRightsquarebracket: LeftsquarebracketheightRightsquarebracket = "[height]".asInstanceOf[LeftsquarebracketheightRightsquarebracket]
-  @scala.inline
-  def LeftsquarebrackethiddenRightsquarebracket: LeftsquarebrackethiddenRightsquarebracket = "[hidden]".asInstanceOf[LeftsquarebrackethiddenRightsquarebracket]
-  @scala.inline
-  def LeftsquarebrackethighRightsquarebracket: LeftsquarebrackethighRightsquarebracket = "[high]".asInstanceOf[LeftsquarebrackethighRightsquarebracket]
-  @scala.inline
-  def `Leftsquarebrackethoriz-adv-xRightsquarebracket`: `Leftsquarebrackethoriz-adv-xRightsquarebracket` = "[horiz-adv-x]".asInstanceOf[`Leftsquarebrackethoriz-adv-xRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebrackethoriz-origin-xRightsquarebracket`: `Leftsquarebrackethoriz-origin-xRightsquarebracket` = "[horiz-origin-x]".asInstanceOf[`Leftsquarebrackethoriz-origin-xRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebrackethoriz-origin-yRightsquarebracket`: `Leftsquarebrackethoriz-origin-yRightsquarebracket` = "[horiz-origin-y]".asInstanceOf[`Leftsquarebrackethoriz-origin-yRightsquarebracket`]
-  @scala.inline
-  def LeftsquarebrackethrefRightsquarebracket: LeftsquarebrackethrefRightsquarebracket = "[href]".asInstanceOf[LeftsquarebrackethrefRightsquarebracket]
-  @scala.inline
-  def LeftsquarebrackethreflangRightsquarebracket: LeftsquarebrackethreflangRightsquarebracket = "[hreflang]".asInstanceOf[LeftsquarebrackethreflangRightsquarebracket]
-  @scala.inline
-  def LeftsquarebrackethspaceRightsquarebracket: LeftsquarebrackethspaceRightsquarebracket = "[hspace]".asInstanceOf[LeftsquarebrackethspaceRightsquarebracket]
-  @scala.inline
-  def `Leftsquarebrackethttp-equivRightsquarebracket`: `Leftsquarebrackethttp-equivRightsquarebracket` = "[http-equiv]".asInstanceOf[`Leftsquarebrackethttp-equivRightsquarebracket`]
-  @scala.inline
-  def LeftsquarebracketiconRightsquarebracket: LeftsquarebracketiconRightsquarebracket = "[icon]".asInstanceOf[LeftsquarebracketiconRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketidRightsquarebracket: LeftsquarebracketidRightsquarebracket = "[id]".asInstanceOf[LeftsquarebracketidRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketideographicRightsquarebracket: LeftsquarebracketideographicRightsquarebracket = "[ideographic]".asInstanceOf[LeftsquarebracketideographicRightsquarebracket]
-  @scala.inline
-  def `Leftsquarebracketimage-renderingRightsquarebracket`: `Leftsquarebracketimage-renderingRightsquarebracket` = "[image-rendering]".asInstanceOf[`Leftsquarebracketimage-renderingRightsquarebracket`]
-  @scala.inline
-  def Leftsquarebracketin2Rightsquarebracket: Leftsquarebracketin2Rightsquarebracket = "[in2]".asInstanceOf[Leftsquarebracketin2Rightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketinRightsquarebracket: LeftsquarebracketinRightsquarebracket = "[in]".asInstanceOf[LeftsquarebracketinRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketinputmodeRightsquarebracket: LeftsquarebracketinputmodeRightsquarebracket = "[inputmode]".asInstanceOf[LeftsquarebracketinputmodeRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketintegrityRightsquarebracket: LeftsquarebracketintegrityRightsquarebracket = "[integrity]".asInstanceOf[LeftsquarebracketintegrityRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketintrinsicsizeRightsquarebracket: LeftsquarebracketintrinsicsizeRightsquarebracket = "[intrinsicsize]".asInstanceOf[LeftsquarebracketintrinsicsizeRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketisRightsquarebracket: LeftsquarebracketisRightsquarebracket = "[is]".asInstanceOf[LeftsquarebracketisRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketismapRightsquarebracket: LeftsquarebracketismapRightsquarebracket = "[ismap]".asInstanceOf[LeftsquarebracketismapRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketitemidRightsquarebracket: LeftsquarebracketitemidRightsquarebracket = "[itemid]".asInstanceOf[LeftsquarebracketitemidRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketitempropRightsquarebracket: LeftsquarebracketitempropRightsquarebracket = "[itemprop]".asInstanceOf[LeftsquarebracketitempropRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketitemrefRightsquarebracket: LeftsquarebracketitemrefRightsquarebracket = "[itemref]".asInstanceOf[LeftsquarebracketitemrefRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketitemscopeRightsquarebracket: LeftsquarebracketitemscopeRightsquarebracket = "[itemscope]".asInstanceOf[LeftsquarebracketitemscopeRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketitemtypeRightsquarebracket: LeftsquarebracketitemtypeRightsquarebracket = "[itemtype]".asInstanceOf[LeftsquarebracketitemtypeRightsquarebracket]
-  @scala.inline
-  def Leftsquarebracketk1Rightsquarebracket: Leftsquarebracketk1Rightsquarebracket = "[k1]".asInstanceOf[Leftsquarebracketk1Rightsquarebracket]
-  @scala.inline
-  def Leftsquarebracketk2Rightsquarebracket: Leftsquarebracketk2Rightsquarebracket = "[k2]".asInstanceOf[Leftsquarebracketk2Rightsquarebracket]
-  @scala.inline
-  def Leftsquarebracketk3Rightsquarebracket: Leftsquarebracketk3Rightsquarebracket = "[k3]".asInstanceOf[Leftsquarebracketk3Rightsquarebracket]
-  @scala.inline
-  def Leftsquarebracketk4Rightsquarebracket: Leftsquarebracketk4Rightsquarebracket = "[k4]".asInstanceOf[Leftsquarebracketk4Rightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketkRightsquarebracket: LeftsquarebracketkRightsquarebracket = "[k]".asInstanceOf[LeftsquarebracketkRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketkernelMatrixRightsquarebracket: LeftsquarebracketkernelMatrixRightsquarebracket = "[kernelMatrix]".asInstanceOf[LeftsquarebracketkernelMatrixRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketkernelUnitLengthRightsquarebracket: LeftsquarebracketkernelUnitLengthRightsquarebracket = "[kernelUnitLength]".asInstanceOf[LeftsquarebracketkernelUnitLengthRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketkerningRightsquarebracket: LeftsquarebracketkerningRightsquarebracket = "[kerning]".asInstanceOf[LeftsquarebracketkerningRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketkeyPointsRightsquarebracket: LeftsquarebracketkeyPointsRightsquarebracket = "[keyPoints]".asInstanceOf[LeftsquarebracketkeyPointsRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketkindRightsquarebracket: LeftsquarebracketkindRightsquarebracket = "[kind]".asInstanceOf[LeftsquarebracketkindRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketlabelRightsquarebracket: LeftsquarebracketlabelRightsquarebracket = "[label]".asInstanceOf[LeftsquarebracketlabelRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketlangRightsquarebracket: LeftsquarebracketlangRightsquarebracket = "[lang]".asInstanceOf[LeftsquarebracketlangRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketlanguageRightsquarebracket: LeftsquarebracketlanguageRightsquarebracket = "[language]".asInstanceOf[LeftsquarebracketlanguageRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketleftmarginRightsquarebracket: LeftsquarebracketleftmarginRightsquarebracket = "[leftmargin]".asInstanceOf[LeftsquarebracketleftmarginRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketlengthAdjustRightsquarebracket: LeftsquarebracketlengthAdjustRightsquarebracket = "[lengthAdjust]".asInstanceOf[LeftsquarebracketlengthAdjustRightsquarebracket]
-  @scala.inline
-  def `Leftsquarebracketletter-spacingRightsquarebracket`: `Leftsquarebracketletter-spacingRightsquarebracket` = "[letter-spacing]".asInstanceOf[`Leftsquarebracketletter-spacingRightsquarebracket`]
-  @scala.inline
-  def LeftsquarebracketlighterForErrorRightsquarebracket: LeftsquarebracketlighterForErrorRightsquarebracket = "[lighterForError]".asInstanceOf[LeftsquarebracketlighterForErrorRightsquarebracket]
-  @scala.inline
-  def `Leftsquarebracketlighting-colorRightsquarebracket`: `Leftsquarebracketlighting-colorRightsquarebracket` = "[lighting-color]".asInstanceOf[`Leftsquarebracketlighting-colorRightsquarebracket`]
-  @scala.inline
-  def LeftsquarebracketlimitingConeAngleRightsquarebracket: LeftsquarebracketlimitingConeAngleRightsquarebracket = "[limitingConeAngle]".asInstanceOf[LeftsquarebracketlimitingConeAngleRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketlinkRightsquarebracket: LeftsquarebracketlinkRightsquarebracket = "[link]".asInstanceOf[LeftsquarebracketlinkRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketlocalRightsquarebracket: LeftsquarebracketlocalRightsquarebracket = "[local]".asInstanceOf[LeftsquarebracketlocalRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketlongdescRightsquarebracket: LeftsquarebracketlongdescRightsquarebracket = "[longdesc]".asInstanceOf[LeftsquarebracketlongdescRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketloopRightsquarebracket: LeftsquarebracketloopRightsquarebracket = "[loop]".asInstanceOf[LeftsquarebracketloopRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketlowRightsquarebracket: LeftsquarebracketlowRightsquarebracket = "[low]".asInstanceOf[LeftsquarebracketlowRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketmanifestRightsquarebracket: LeftsquarebracketmanifestRightsquarebracket = "[manifest]".asInstanceOf[LeftsquarebracketmanifestRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketmarginheightRightsquarebracket: LeftsquarebracketmarginheightRightsquarebracket = "[marginheight]".asInstanceOf[LeftsquarebracketmarginheightRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketmarginwidthRightsquarebracket: LeftsquarebracketmarginwidthRightsquarebracket = "[marginwidth]".asInstanceOf[LeftsquarebracketmarginwidthRightsquarebracket]
-  @scala.inline
-  def `Leftsquarebracketmarker-endRightsquarebracket`: `Leftsquarebracketmarker-endRightsquarebracket` = "[marker-end]".asInstanceOf[`Leftsquarebracketmarker-endRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebracketmarker-midRightsquarebracket`: `Leftsquarebracketmarker-midRightsquarebracket` = "[marker-mid]".asInstanceOf[`Leftsquarebracketmarker-midRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebracketmarker-startRightsquarebracket`: `Leftsquarebracketmarker-startRightsquarebracket` = "[marker-start]".asInstanceOf[`Leftsquarebracketmarker-startRightsquarebracket`]
-  @scala.inline
-  def LeftsquarebracketmarkerHeightRightsquarebracket: LeftsquarebracketmarkerHeightRightsquarebracket = "[markerHeight]".asInstanceOf[LeftsquarebracketmarkerHeightRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketmarkerUnitsRightsquarebracket: LeftsquarebracketmarkerUnitsRightsquarebracket = "[markerUnits]".asInstanceOf[LeftsquarebracketmarkerUnitsRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketmarkerWidthRightsquarebracket: LeftsquarebracketmarkerWidthRightsquarebracket = "[markerWidth]".asInstanceOf[LeftsquarebracketmarkerWidthRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketmaskContentUnitsRightsquarebracket: LeftsquarebracketmaskContentUnitsRightsquarebracket = "[maskContentUnits]".asInstanceOf[LeftsquarebracketmaskContentUnitsRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketmaskRightsquarebracket: LeftsquarebracketmaskRightsquarebracket = "[mask]".asInstanceOf[LeftsquarebracketmaskRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketmaskUnitsRightsquarebracket: LeftsquarebracketmaskUnitsRightsquarebracket = "[maskUnits]".asInstanceOf[LeftsquarebracketmaskUnitsRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketmathematicalRightsquarebracket: LeftsquarebracketmathematicalRightsquarebracket = "[mathematical]".asInstanceOf[LeftsquarebracketmathematicalRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketmaxRightsquarebracket: LeftsquarebracketmaxRightsquarebracket = "[max]".asInstanceOf[LeftsquarebracketmaxRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketmaxlengthRightsquarebracket: LeftsquarebracketmaxlengthRightsquarebracket = "[maxlength]".asInstanceOf[LeftsquarebracketmaxlengthRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketmayscriptRightsquarebracket: LeftsquarebracketmayscriptRightsquarebracket = "[mayscript]".asInstanceOf[LeftsquarebracketmayscriptRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketmediaRightsquarebracket: LeftsquarebracketmediaRightsquarebracket = "[media]".asInstanceOf[LeftsquarebracketmediaRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketmethodRightsquarebracket: LeftsquarebracketmethodRightsquarebracket = "[method]".asInstanceOf[LeftsquarebracketmethodRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketmethodsRightsquarebracket: LeftsquarebracketmethodsRightsquarebracket = "[methods]".asInstanceOf[LeftsquarebracketmethodsRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketminRightsquarebracket: LeftsquarebracketminRightsquarebracket = "[min]".asInstanceOf[LeftsquarebracketminRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketminlengthRightsquarebracket: LeftsquarebracketminlengthRightsquarebracket = "[minlength]".asInstanceOf[LeftsquarebracketminlengthRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketmodeRightsquarebracket: LeftsquarebracketmodeRightsquarebracket = "[mode]".asInstanceOf[LeftsquarebracketmodeRightsquarebracket]
-  @scala.inline
-  def `Leftsquarebracketmoz-opaqueRightsquarebracket`: `Leftsquarebracketmoz-opaqueRightsquarebracket` = "[moz-opaque]".asInstanceOf[`Leftsquarebracketmoz-opaqueRightsquarebracket`]
-  @scala.inline
-  def LeftsquarebracketmozallowfullscreenRightsquarebracket: LeftsquarebracketmozallowfullscreenRightsquarebracket = "[mozallowfullscreen]".asInstanceOf[LeftsquarebracketmozallowfullscreenRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketmozbrowserRightsquarebracket: LeftsquarebracketmozbrowserRightsquarebracket = "[mozbrowser]".asInstanceOf[LeftsquarebracketmozbrowserRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketmozcurrentsampleoffsetRightsquarebracket: LeftsquarebracketmozcurrentsampleoffsetRightsquarebracket = "[mozcurrentsampleoffset]".asInstanceOf[LeftsquarebracketmozcurrentsampleoffsetRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketmsallowfullscreenRightsquarebracket: LeftsquarebracketmsallowfullscreenRightsquarebracket = "[msallowfullscreen]".asInstanceOf[LeftsquarebracketmsallowfullscreenRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketmultipleRightsquarebracket: LeftsquarebracketmultipleRightsquarebracket = "[multiple]".asInstanceOf[LeftsquarebracketmultipleRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketmutedRightsquarebracket: LeftsquarebracketmutedRightsquarebracket = "[muted]".asInstanceOf[LeftsquarebracketmutedRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketnameRightsquarebracket: LeftsquarebracketnameRightsquarebracket = "[name]".asInstanceOf[LeftsquarebracketnameRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketnohrefRightsquarebracket: LeftsquarebracketnohrefRightsquarebracket = "[nohref]".asInstanceOf[LeftsquarebracketnohrefRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketnomoduleRightsquarebracket: LeftsquarebracketnomoduleRightsquarebracket = "[nomodule]".asInstanceOf[LeftsquarebracketnomoduleRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketnoresizeRightsquarebracket: LeftsquarebracketnoresizeRightsquarebracket = "[noresize]".asInstanceOf[LeftsquarebracketnoresizeRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketnoshadeRightsquarebracket: LeftsquarebracketnoshadeRightsquarebracket = "[noshade]".asInstanceOf[LeftsquarebracketnoshadeRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketnovalidateRightsquarebracket: LeftsquarebracketnovalidateRightsquarebracket = "[novalidate]".asInstanceOf[LeftsquarebracketnovalidateRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketnowrapRightsquarebracket: LeftsquarebracketnowrapRightsquarebracket = "[nowrap]".asInstanceOf[LeftsquarebracketnowrapRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketnumOctavesRightsquarebracket: LeftsquarebracketnumOctavesRightsquarebracket = "[numOctaves]".asInstanceOf[LeftsquarebracketnumOctavesRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketobjectRightsquarebracket: LeftsquarebracketobjectRightsquarebracket = "[object]".asInstanceOf[LeftsquarebracketobjectRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketoffsetRightsquarebracket: LeftsquarebracketoffsetRightsquarebracket = "[offset]".asInstanceOf[LeftsquarebracketoffsetRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketonafterprintRightsquarebracket: LeftsquarebracketonafterprintRightsquarebracket = "[onafterprint]".asInstanceOf[LeftsquarebracketonafterprintRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketonbeforeprintRightsquarebracket: LeftsquarebracketonbeforeprintRightsquarebracket = "[onbeforeprint]".asInstanceOf[LeftsquarebracketonbeforeprintRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketonbeforeunloadRightsquarebracket: LeftsquarebracketonbeforeunloadRightsquarebracket = "[onbeforeunload]".asInstanceOf[LeftsquarebracketonbeforeunloadRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketonblurRightsquarebracket: LeftsquarebracketonblurRightsquarebracket = "[onblur]".asInstanceOf[LeftsquarebracketonblurRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketonerrorRightsquarebracket: LeftsquarebracketonerrorRightsquarebracket = "[onerror]".asInstanceOf[LeftsquarebracketonerrorRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketonfocusRightsquarebracket: LeftsquarebracketonfocusRightsquarebracket = "[onfocus]".asInstanceOf[LeftsquarebracketonfocusRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketonhashchangeRightsquarebracket: LeftsquarebracketonhashchangeRightsquarebracket = "[onhashchange]".asInstanceOf[LeftsquarebracketonhashchangeRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketonlanguagechangeRightsquarebracket: LeftsquarebracketonlanguagechangeRightsquarebracket = "[onlanguagechange]".asInstanceOf[LeftsquarebracketonlanguagechangeRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketonloadRightsquarebracket: LeftsquarebracketonloadRightsquarebracket = "[onload]".asInstanceOf[LeftsquarebracketonloadRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketonmessageRightsquarebracket: LeftsquarebracketonmessageRightsquarebracket = "[onmessage]".asInstanceOf[LeftsquarebracketonmessageRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketonofflineRightsquarebracket: LeftsquarebracketonofflineRightsquarebracket = "[onoffline]".asInstanceOf[LeftsquarebracketonofflineRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketononlineRightsquarebracket: LeftsquarebracketononlineRightsquarebracket = "[ononline]".asInstanceOf[LeftsquarebracketononlineRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketonpopstateRightsquarebracket: LeftsquarebracketonpopstateRightsquarebracket = "[onpopstate]".asInstanceOf[LeftsquarebracketonpopstateRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketonredoRightsquarebracket: LeftsquarebracketonredoRightsquarebracket = "[onredo]".asInstanceOf[LeftsquarebracketonredoRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketonresizeRightsquarebracket: LeftsquarebracketonresizeRightsquarebracket = "[onresize]".asInstanceOf[LeftsquarebracketonresizeRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketonstorageRightsquarebracket: LeftsquarebracketonstorageRightsquarebracket = "[onstorage]".asInstanceOf[LeftsquarebracketonstorageRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketonundoRightsquarebracket: LeftsquarebracketonundoRightsquarebracket = "[onundo]".asInstanceOf[LeftsquarebracketonundoRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketonunloadRightsquarebracket: LeftsquarebracketonunloadRightsquarebracket = "[onunload]".asInstanceOf[LeftsquarebracketonunloadRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketopacityRightsquarebracket: LeftsquarebracketopacityRightsquarebracket = "[opacity]".asInstanceOf[LeftsquarebracketopacityRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketopenRightsquarebracket: LeftsquarebracketopenRightsquarebracket = "[open]".asInstanceOf[LeftsquarebracketopenRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketoperatorRightsquarebracket: LeftsquarebracketoperatorRightsquarebracket = "[operator]".asInstanceOf[LeftsquarebracketoperatorRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketoptimumRightsquarebracket: LeftsquarebracketoptimumRightsquarebracket = "[optimum]".asInstanceOf[LeftsquarebracketoptimumRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketorderRightsquarebracket: LeftsquarebracketorderRightsquarebracket = "[order]".asInstanceOf[LeftsquarebracketorderRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketorientRightsquarebracket: LeftsquarebracketorientRightsquarebracket = "[orient]".asInstanceOf[LeftsquarebracketorientRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketorientationRightsquarebracket: LeftsquarebracketorientationRightsquarebracket = "[orientation]".asInstanceOf[LeftsquarebracketorientationRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketoriginRightsquarebracket: LeftsquarebracketoriginRightsquarebracket = "[origin]".asInstanceOf[LeftsquarebracketoriginRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketoverflowRightsquarebracket: LeftsquarebracketoverflowRightsquarebracket = "[overflow]".asInstanceOf[LeftsquarebracketoverflowRightsquarebracket]
-  @scala.inline
-  def `Leftsquarebracketoverline-positionRightsquarebracket`: `Leftsquarebracketoverline-positionRightsquarebracket` = "[overline-position]".asInstanceOf[`Leftsquarebracketoverline-positionRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebracketoverline-thicknessRightsquarebracket`: `Leftsquarebracketoverline-thicknessRightsquarebracket` = "[overline-thickness]".asInstanceOf[`Leftsquarebracketoverline-thicknessRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebracketpaint-orderRightsquarebracket`: `Leftsquarebracketpaint-orderRightsquarebracket` = "[paint-order]".asInstanceOf[`Leftsquarebracketpaint-orderRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebracketpanose-1Rightsquarebracket`: `Leftsquarebracketpanose-1Rightsquarebracket` = "[panose-1]".asInstanceOf[`Leftsquarebracketpanose-1Rightsquarebracket`]
-  @scala.inline
-  def LeftsquarebracketpartRightsquarebracket: LeftsquarebracketpartRightsquarebracket = "[part]".asInstanceOf[LeftsquarebracketpartRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketpathRightsquarebracket: LeftsquarebracketpathRightsquarebracket = "[path]".asInstanceOf[LeftsquarebracketpathRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketpatternContentUnitsRightsquarebracket: LeftsquarebracketpatternContentUnitsRightsquarebracket = "[patternContentUnits]".asInstanceOf[LeftsquarebracketpatternContentUnitsRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketpatternTransformRightsquarebracket: LeftsquarebracketpatternTransformRightsquarebracket = "[patternTransform]".asInstanceOf[LeftsquarebracketpatternTransformRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketpatternUnitsRightsquarebracket: LeftsquarebracketpatternUnitsRightsquarebracket = "[patternUnits]".asInstanceOf[LeftsquarebracketpatternUnitsRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketpingRightsquarebracket: LeftsquarebracketpingRightsquarebracket = "[ping]".asInstanceOf[LeftsquarebracketpingRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketpitchRightsquarebracket: LeftsquarebracketpitchRightsquarebracket = "[pitch]".asInstanceOf[LeftsquarebracketpitchRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketplaceholderRightsquarebracket: LeftsquarebracketplaceholderRightsquarebracket = "[placeholder]".asInstanceOf[LeftsquarebracketplaceholderRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketplayedRightsquarebracket: LeftsquarebracketplayedRightsquarebracket = "[played]".asInstanceOf[LeftsquarebracketplayedRightsquarebracket]
-  @scala.inline
-  def `Leftsquarebracketpointer-eventsRightsquarebracket`: `Leftsquarebracketpointer-eventsRightsquarebracket` = "[pointer-events]".asInstanceOf[`Leftsquarebracketpointer-eventsRightsquarebracket`]
-  @scala.inline
-  def LeftsquarebracketpointsAtXRightsquarebracket: LeftsquarebracketpointsAtXRightsquarebracket = "[pointsAtX]".asInstanceOf[LeftsquarebracketpointsAtXRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketpointsAtYRightsquarebracket: LeftsquarebracketpointsAtYRightsquarebracket = "[pointsAtY]".asInstanceOf[LeftsquarebracketpointsAtYRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketpointsAtZRightsquarebracket: LeftsquarebracketpointsAtZRightsquarebracket = "[pointsAtZ]".asInstanceOf[LeftsquarebracketpointsAtZRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketpointsRightsquarebracket: LeftsquarebracketpointsRightsquarebracket = "[points]".asInstanceOf[LeftsquarebracketpointsRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketposterRightsquarebracket: LeftsquarebracketposterRightsquarebracket = "[poster]".asInstanceOf[LeftsquarebracketposterRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketprefetchRightsquarebracket: LeftsquarebracketprefetchRightsquarebracket = "[prefetch]".asInstanceOf[LeftsquarebracketprefetchRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketpreloadRightsquarebracket: LeftsquarebracketpreloadRightsquarebracket = "[preload]".asInstanceOf[LeftsquarebracketpreloadRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketpreserveAlphaRightsquarebracket: LeftsquarebracketpreserveAlphaRightsquarebracket = "[preserveAlpha]".asInstanceOf[LeftsquarebracketpreserveAlphaRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketpreserveAspectRatioRightsquarebracket: LeftsquarebracketpreserveAspectRatioRightsquarebracket = "[preserveAspectRatio]".asInstanceOf[LeftsquarebracketpreserveAspectRatioRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketprimitiveUnitsRightsquarebracket: LeftsquarebracketprimitiveUnitsRightsquarebracket = "[primitiveUnits]".asInstanceOf[LeftsquarebracketprimitiveUnitsRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketprofileRightsquarebracket: LeftsquarebracketprofileRightsquarebracket = "[profile]".asInstanceOf[LeftsquarebracketprofileRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketpromptRightsquarebracket: LeftsquarebracketpromptRightsquarebracket = "[prompt]".asInstanceOf[LeftsquarebracketpromptRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketrRightsquarebracket: LeftsquarebracketrRightsquarebracket = "[r]".asInstanceOf[LeftsquarebracketrRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketradiogroupRightsquarebracket: LeftsquarebracketradiogroupRightsquarebracket = "[radiogroup]".asInstanceOf[LeftsquarebracketradiogroupRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketradiusRightsquarebracket: LeftsquarebracketradiusRightsquarebracket = "[radius]".asInstanceOf[LeftsquarebracketradiusRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketreadonlyRightsquarebracket: LeftsquarebracketreadonlyRightsquarebracket = "[readonly]".asInstanceOf[LeftsquarebracketreadonlyRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketrefXRightsquarebracket: LeftsquarebracketrefXRightsquarebracket = "[refX]".asInstanceOf[LeftsquarebracketrefXRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketrefYRightsquarebracket: LeftsquarebracketrefYRightsquarebracket = "[refY]".asInstanceOf[LeftsquarebracketrefYRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketreferrerPolicyRightsquarebracket: LeftsquarebracketreferrerPolicyRightsquarebracket = "[referrerPolicy]".asInstanceOf[LeftsquarebracketreferrerPolicyRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketreferrerpolicyRightsquarebracket: LeftsquarebracketreferrerpolicyRightsquarebracket = "[referrerpolicy]".asInstanceOf[LeftsquarebracketreferrerpolicyRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketrelRightsquarebracket: LeftsquarebracketrelRightsquarebracket = "[rel]".asInstanceOf[LeftsquarebracketrelRightsquarebracket]
-  @scala.inline
-  def `Leftsquarebracketrendering-intentRightsquarebracket`: `Leftsquarebracketrendering-intentRightsquarebracket` = "[rendering-intent]".asInstanceOf[`Leftsquarebracketrendering-intentRightsquarebracket`]
-  @scala.inline
-  def LeftsquarebracketrepeatCountRightsquarebracket: LeftsquarebracketrepeatCountRightsquarebracket = "[repeatCount]".asInstanceOf[LeftsquarebracketrepeatCountRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketrequiredExtensionsRightsquarebracket: LeftsquarebracketrequiredExtensionsRightsquarebracket = "[requiredExtensions]".asInstanceOf[LeftsquarebracketrequiredExtensionsRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketrequiredFeaturesRightsquarebracket: LeftsquarebracketrequiredFeaturesRightsquarebracket = "[requiredFeatures]".asInstanceOf[LeftsquarebracketrequiredFeaturesRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketrequiredRightsquarebracket: LeftsquarebracketrequiredRightsquarebracket = "[required]".asInstanceOf[LeftsquarebracketrequiredRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketrevRightsquarebracket: LeftsquarebracketrevRightsquarebracket = "[rev]".asInstanceOf[LeftsquarebracketrevRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketreversedRightsquarebracket: LeftsquarebracketreversedRightsquarebracket = "[reversed]".asInstanceOf[LeftsquarebracketreversedRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketrightmarginRightsquarebracket: LeftsquarebracketrightmarginRightsquarebracket = "[rightmargin]".asInstanceOf[LeftsquarebracketrightmarginRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketrotateRightsquarebracket: LeftsquarebracketrotateRightsquarebracket = "[rotate]".asInstanceOf[LeftsquarebracketrotateRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketrowsRightsquarebracket: LeftsquarebracketrowsRightsquarebracket = "[rows]".asInstanceOf[LeftsquarebracketrowsRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketrowspanRightsquarebracket: LeftsquarebracketrowspanRightsquarebracket = "[rowspan]".asInstanceOf[LeftsquarebracketrowspanRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketrulesRightsquarebracket: LeftsquarebracketrulesRightsquarebracket = "[rules]".asInstanceOf[LeftsquarebracketrulesRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketrxRightsquarebracket: LeftsquarebracketrxRightsquarebracket = "[rx]".asInstanceOf[LeftsquarebracketrxRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketryRightsquarebracket: LeftsquarebracketryRightsquarebracket = "[ry]".asInstanceOf[LeftsquarebracketryRightsquarebracket]
-  @scala.inline
-  def `Leftsquarebracketsandbox-allow-modalsRightsquarebracket`: `Leftsquarebracketsandbox-allow-modalsRightsquarebracket` = "[sandbox-allow-modals]".asInstanceOf[`Leftsquarebracketsandbox-allow-modalsRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebracketsandbox-allow-popups-to-escape-sandboxRightsquarebracket`: `Leftsquarebracketsandbox-allow-popups-to-escape-sandboxRightsquarebracket` = "[sandbox-allow-popups-to-escape-sandbox]".asInstanceOf[`Leftsquarebracketsandbox-allow-popups-to-escape-sandboxRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebracketsandbox-allow-popupsRightsquarebracket`: `Leftsquarebracketsandbox-allow-popupsRightsquarebracket` = "[sandbox-allow-popups]".asInstanceOf[`Leftsquarebracketsandbox-allow-popupsRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebracketsandbox-allow-presentationRightsquarebracket`: `Leftsquarebracketsandbox-allow-presentationRightsquarebracket` = "[sandbox-allow-presentation]".asInstanceOf[`Leftsquarebracketsandbox-allow-presentationRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebracketsandbox-allow-storage-access-by-user-activationRightsquarebracket`: `Leftsquarebracketsandbox-allow-storage-access-by-user-activationRightsquarebracket` = "[sandbox-allow-storage-access-by-user-activation]".asInstanceOf[`Leftsquarebracketsandbox-allow-storage-access-by-user-activationRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebracketsandbox-allow-top-navigation-by-user-activationRightsquarebracket`: `Leftsquarebracketsandbox-allow-top-navigation-by-user-activationRightsquarebracket` = "[sandbox-allow-top-navigation-by-user-activation]".asInstanceOf[`Leftsquarebracketsandbox-allow-top-navigation-by-user-activationRightsquarebracket`]
-  @scala.inline
-  def LeftsquarebracketsandboxRightsquarebracket: LeftsquarebracketsandboxRightsquarebracket = "[sandbox]".asInstanceOf[LeftsquarebracketsandboxRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketscaleRightsquarebracket: LeftsquarebracketscaleRightsquarebracket = "[scale]".asInstanceOf[LeftsquarebracketscaleRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketscopeRightsquarebracket: LeftsquarebracketscopeRightsquarebracket = "[scope]".asInstanceOf[LeftsquarebracketscopeRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketscopedRightsquarebracket: LeftsquarebracketscopedRightsquarebracket = "[scoped]".asInstanceOf[LeftsquarebracketscopedRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketscrollamountRightsquarebracket: LeftsquarebracketscrollamountRightsquarebracket = "[scrollamount]".asInstanceOf[LeftsquarebracketscrollamountRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketscrolldelayRightsquarebracket: LeftsquarebracketscrolldelayRightsquarebracket = "[scrolldelay]".asInstanceOf[LeftsquarebracketscrolldelayRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketscrollingRightsquarebracket: LeftsquarebracketscrollingRightsquarebracket = "[scrolling]".asInstanceOf[LeftsquarebracketscrollingRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketseedRightsquarebracket: LeftsquarebracketseedRightsquarebracket = "[seed]".asInstanceOf[LeftsquarebracketseedRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketselectedRightsquarebracket: LeftsquarebracketselectedRightsquarebracket = "[selected]".asInstanceOf[LeftsquarebracketselectedRightsquarebracket]
-  @scala.inline
-  def `Leftsquarebracketshape-renderingRightsquarebracket`: `Leftsquarebracketshape-renderingRightsquarebracket` = "[shape-rendering]".asInstanceOf[`Leftsquarebracketshape-renderingRightsquarebracket`]
-  @scala.inline
-  def LeftsquarebracketshapeRightsquarebracket: LeftsquarebracketshapeRightsquarebracket = "[shape]".asInstanceOf[LeftsquarebracketshapeRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketsideRightsquarebracket: LeftsquarebracketsideRightsquarebracket = "[side]".asInstanceOf[LeftsquarebracketsideRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketsizeRightsquarebracket: LeftsquarebracketsizeRightsquarebracket = "[size]".asInstanceOf[LeftsquarebracketsizeRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketsizesRightsquarebracket: LeftsquarebracketsizesRightsquarebracket = "[sizes]".asInstanceOf[LeftsquarebracketsizesRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketslopeRightsquarebracket: LeftsquarebracketslopeRightsquarebracket = "[slope]".asInstanceOf[LeftsquarebracketslopeRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketslotRightsquarebracket: LeftsquarebracketslotRightsquarebracket = "[slot]".asInstanceOf[LeftsquarebracketslotRightsquarebracket]
-  @scala.inline
-  def `Leftsquarebracketsolid-colorRightsquarebracket`: `Leftsquarebracketsolid-colorRightsquarebracket` = "[solid-color]".asInstanceOf[`Leftsquarebracketsolid-colorRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebracketsolid-opacityRightsquarebracket`: `Leftsquarebracketsolid-opacityRightsquarebracket` = "[solid-opacity]".asInstanceOf[`Leftsquarebracketsolid-opacityRightsquarebracket`]
-  @scala.inline
-  def LeftsquarebracketspacingRightsquarebracket: LeftsquarebracketspacingRightsquarebracket = "[spacing]".asInstanceOf[LeftsquarebracketspacingRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketspanRightsquarebracket: LeftsquarebracketspanRightsquarebracket = "[span]".asInstanceOf[LeftsquarebracketspanRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketspecularConstantRightsquarebracket: LeftsquarebracketspecularConstantRightsquarebracket = "[specularConstant]".asInstanceOf[LeftsquarebracketspecularConstantRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketspecularExponentRightsquarebracket: LeftsquarebracketspecularExponentRightsquarebracket = "[specularExponent]".asInstanceOf[LeftsquarebracketspecularExponentRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketspellcheckRightsquarebracket: LeftsquarebracketspellcheckRightsquarebracket = "[spellcheck]".asInstanceOf[LeftsquarebracketspellcheckRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketspreadMethodRightsquarebracket: LeftsquarebracketspreadMethodRightsquarebracket = "[spreadMethod]".asInstanceOf[LeftsquarebracketspreadMethodRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketsrcRightsquarebracket: LeftsquarebracketsrcRightsquarebracket = "[src]".asInstanceOf[LeftsquarebracketsrcRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketsrcdocRightsquarebracket: LeftsquarebracketsrcdocRightsquarebracket = "[srcdoc]".asInstanceOf[LeftsquarebracketsrcdocRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketsrclangRightsquarebracket: LeftsquarebracketsrclangRightsquarebracket = "[srclang]".asInstanceOf[LeftsquarebracketsrclangRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketsrcsetRightsquarebracket: LeftsquarebracketsrcsetRightsquarebracket = "[srcset]".asInstanceOf[LeftsquarebracketsrcsetRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketstandbyRightsquarebracket: LeftsquarebracketstandbyRightsquarebracket = "[standby]".asInstanceOf[LeftsquarebracketstandbyRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketstartOffsetRightsquarebracket: LeftsquarebracketstartOffsetRightsquarebracket = "[startOffset]".asInstanceOf[LeftsquarebracketstartOffsetRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketstartRightsquarebracket: LeftsquarebracketstartRightsquarebracket = "[start]".asInstanceOf[LeftsquarebracketstartRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketstdDeviationRightsquarebracket: LeftsquarebracketstdDeviationRightsquarebracket = "[stdDeviation]".asInstanceOf[LeftsquarebracketstdDeviationRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketstemhRightsquarebracket: LeftsquarebracketstemhRightsquarebracket = "[stemh]".asInstanceOf[LeftsquarebracketstemhRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketstemvRightsquarebracket: LeftsquarebracketstemvRightsquarebracket = "[stemv]".asInstanceOf[LeftsquarebracketstemvRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketstitchTilesRightsquarebracket: LeftsquarebracketstitchTilesRightsquarebracket = "[stitchTiles]".asInstanceOf[LeftsquarebracketstitchTilesRightsquarebracket]
-  @scala.inline
-  def `Leftsquarebracketstop-colorRightsquarebracket`: `Leftsquarebracketstop-colorRightsquarebracket` = "[stop-color]".asInstanceOf[`Leftsquarebracketstop-colorRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebracketstop-opacityRightsquarebracket`: `Leftsquarebracketstop-opacityRightsquarebracket` = "[stop-opacity]".asInstanceOf[`Leftsquarebracketstop-opacityRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebracketstrikethrough-positionRightsquarebracket`: `Leftsquarebracketstrikethrough-positionRightsquarebracket` = "[strikethrough-position]".asInstanceOf[`Leftsquarebracketstrikethrough-positionRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebracketstrikethrough-thicknessRightsquarebracket`: `Leftsquarebracketstrikethrough-thicknessRightsquarebracket` = "[strikethrough-thickness]".asInstanceOf[`Leftsquarebracketstrikethrough-thicknessRightsquarebracket`]
-  @scala.inline
-  def LeftsquarebracketstringRightsquarebracket: LeftsquarebracketstringRightsquarebracket = "[string]".asInstanceOf[LeftsquarebracketstringRightsquarebracket]
-  @scala.inline
-  def `Leftsquarebracketstroke-dasharrayRightsquarebracket`: `Leftsquarebracketstroke-dasharrayRightsquarebracket` = "[stroke-dasharray]".asInstanceOf[`Leftsquarebracketstroke-dasharrayRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebracketstroke-dashoffsetRightsquarebracket`: `Leftsquarebracketstroke-dashoffsetRightsquarebracket` = "[stroke-dashoffset]".asInstanceOf[`Leftsquarebracketstroke-dashoffsetRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebracketstroke-linecapRightsquarebracket`: `Leftsquarebracketstroke-linecapRightsquarebracket` = "[stroke-linecap]".asInstanceOf[`Leftsquarebracketstroke-linecapRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebracketstroke-linejoinRightsquarebracket`: `Leftsquarebracketstroke-linejoinRightsquarebracket` = "[stroke-linejoin]".asInstanceOf[`Leftsquarebracketstroke-linejoinRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebracketstroke-miterlimitRightsquarebracket`: `Leftsquarebracketstroke-miterlimitRightsquarebracket` = "[stroke-miterlimit]".asInstanceOf[`Leftsquarebracketstroke-miterlimitRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebracketstroke-opacityRightsquarebracket`: `Leftsquarebracketstroke-opacityRightsquarebracket` = "[stroke-opacity]".asInstanceOf[`Leftsquarebracketstroke-opacityRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebracketstroke-widthRightsquarebracket`: `Leftsquarebracketstroke-widthRightsquarebracket` = "[stroke-width]".asInstanceOf[`Leftsquarebracketstroke-widthRightsquarebracket`]
-  @scala.inline
-  def LeftsquarebracketstrokeRightsquarebracket: LeftsquarebracketstrokeRightsquarebracket = "[stroke]".asInstanceOf[LeftsquarebracketstrokeRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketstyleRightsquarebracket: LeftsquarebracketstyleRightsquarebracket = "[style]".asInstanceOf[LeftsquarebracketstyleRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketsummaryRightsquarebracket: LeftsquarebracketsummaryRightsquarebracket = "[summary]".asInstanceOf[LeftsquarebracketsummaryRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketsurfaceScaleRightsquarebracket: LeftsquarebracketsurfaceScaleRightsquarebracket = "[surfaceScale]".asInstanceOf[LeftsquarebracketsurfaceScaleRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketsystemLanguageRightsquarebracket: LeftsquarebracketsystemLanguageRightsquarebracket = "[systemLanguage]".asInstanceOf[LeftsquarebracketsystemLanguageRightsquarebracket]
-  @scala.inline
-  def LeftsquarebrackettabindexRightsquarebracket: LeftsquarebrackettabindexRightsquarebracket = "[tabindex]".asInstanceOf[LeftsquarebrackettabindexRightsquarebracket]
-  @scala.inline
-  def LeftsquarebrackettargetRightsquarebracket: LeftsquarebrackettargetRightsquarebracket = "[target]".asInstanceOf[LeftsquarebrackettargetRightsquarebracket]
-  @scala.inline
-  def LeftsquarebrackettargetXRightsquarebracket: LeftsquarebrackettargetXRightsquarebracket = "[targetX]".asInstanceOf[LeftsquarebrackettargetXRightsquarebracket]
-  @scala.inline
-  def LeftsquarebrackettargetYRightsquarebracket: LeftsquarebrackettargetYRightsquarebracket = "[targetY]".asInstanceOf[LeftsquarebrackettargetYRightsquarebracket]
-  @scala.inline
-  def `Leftsquarebrackettext-anchorRightsquarebracket`: `Leftsquarebrackettext-anchorRightsquarebracket` = "[text-anchor]".asInstanceOf[`Leftsquarebrackettext-anchorRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebrackettext-decorationRightsquarebracket`: `Leftsquarebrackettext-decorationRightsquarebracket` = "[text-decoration]".asInstanceOf[`Leftsquarebrackettext-decorationRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebrackettext-overflowRightsquarebracket`: `Leftsquarebrackettext-overflowRightsquarebracket` = "[text-overflow]".asInstanceOf[`Leftsquarebrackettext-overflowRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebrackettext-renderingRightsquarebracket`: `Leftsquarebrackettext-renderingRightsquarebracket` = "[text-rendering]".asInstanceOf[`Leftsquarebrackettext-renderingRightsquarebracket`]
-  @scala.inline
-  def LeftsquarebrackettextLengthRightsquarebracket: LeftsquarebrackettextLengthRightsquarebracket = "[textLength]".asInstanceOf[LeftsquarebrackettextLengthRightsquarebracket]
-  @scala.inline
-  def LeftsquarebrackettextRightsquarebracket: LeftsquarebrackettextRightsquarebracket = "[text]".asInstanceOf[LeftsquarebrackettextRightsquarebracket]
-  @scala.inline
-  def LeftsquarebrackettitleRightsquarebracket: LeftsquarebrackettitleRightsquarebracket = "[title]".asInstanceOf[LeftsquarebrackettitleRightsquarebracket]
-  @scala.inline
-  def LeftsquarebrackettoRightsquarebracket: LeftsquarebrackettoRightsquarebracket = "[to]".asInstanceOf[LeftsquarebrackettoRightsquarebracket]
-  @scala.inline
-  def LeftsquarebrackettopmarginRightsquarebracket: LeftsquarebrackettopmarginRightsquarebracket = "[topmargin]".asInstanceOf[LeftsquarebrackettopmarginRightsquarebracket]
-  @scala.inline
-  def LeftsquarebrackettransformRightsquarebracket: LeftsquarebrackettransformRightsquarebracket = "[transform]".asInstanceOf[LeftsquarebrackettransformRightsquarebracket]
-  @scala.inline
-  def LeftsquarebrackettranslateRightsquarebracket: LeftsquarebrackettranslateRightsquarebracket = "[translate]".asInstanceOf[LeftsquarebrackettranslateRightsquarebracket]
-  @scala.inline
-  def LeftsquarebrackettruespeedRightsquarebracket: LeftsquarebrackettruespeedRightsquarebracket = "[truespeed]".asInstanceOf[LeftsquarebrackettruespeedRightsquarebracket]
-  @scala.inline
-  def LeftsquarebrackettypeRightsquarebracket: LeftsquarebrackettypeRightsquarebracket = "[type]".asInstanceOf[LeftsquarebrackettypeRightsquarebracket]
-  @scala.inline
-  def LeftsquarebrackettypemustmatchRightsquarebracket: LeftsquarebrackettypemustmatchRightsquarebracket = "[typemustmatch]".asInstanceOf[LeftsquarebrackettypemustmatchRightsquarebracket]
-  @scala.inline
-  def Leftsquarebracketu1Rightsquarebracket: Leftsquarebracketu1Rightsquarebracket = "[u1]".asInstanceOf[Leftsquarebracketu1Rightsquarebracket]
-  @scala.inline
-  def Leftsquarebracketu2Rightsquarebracket: Leftsquarebracketu2Rightsquarebracket = "[u2]".asInstanceOf[Leftsquarebracketu2Rightsquarebracket]
-  @scala.inline
-  def `Leftsquarebracketunderline-positionRightsquarebracket`: `Leftsquarebracketunderline-positionRightsquarebracket` = "[underline-position]".asInstanceOf[`Leftsquarebracketunderline-positionRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebracketunderline-thicknessRightsquarebracket`: `Leftsquarebracketunderline-thicknessRightsquarebracket` = "[underline-thickness]".asInstanceOf[`Leftsquarebracketunderline-thicknessRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebracketunicode-bidiRightsquarebracket`: `Leftsquarebracketunicode-bidiRightsquarebracket` = "[unicode-bidi]".asInstanceOf[`Leftsquarebracketunicode-bidiRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebracketunicode-rangeRightsquarebracket`: `Leftsquarebracketunicode-rangeRightsquarebracket` = "[unicode-range]".asInstanceOf[`Leftsquarebracketunicode-rangeRightsquarebracket`]
-  @scala.inline
-  def LeftsquarebracketunicodeRightsquarebracket: LeftsquarebracketunicodeRightsquarebracket = "[unicode]".asInstanceOf[LeftsquarebracketunicodeRightsquarebracket]
-  @scala.inline
-  def `Leftsquarebracketunits-per-emRightsquarebracket`: `Leftsquarebracketunits-per-emRightsquarebracket` = "[units-per-em]".asInstanceOf[`Leftsquarebracketunits-per-emRightsquarebracket`]
-  @scala.inline
-  def LeftsquarebracketusemapRightsquarebracket: LeftsquarebracketusemapRightsquarebracket = "[usemap]".asInstanceOf[LeftsquarebracketusemapRightsquarebracket]
-  @scala.inline
-  def `Leftsquarebracketv-alphabeticRightsquarebracket`: `Leftsquarebracketv-alphabeticRightsquarebracket` = "[v-alphabetic]".asInstanceOf[`Leftsquarebracketv-alphabeticRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebracketv-hangingRightsquarebracket`: `Leftsquarebracketv-hangingRightsquarebracket` = "[v-hanging]".asInstanceOf[`Leftsquarebracketv-hangingRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebracketv-ideographicRightsquarebracket`: `Leftsquarebracketv-ideographicRightsquarebracket` = "[v-ideographic]".asInstanceOf[`Leftsquarebracketv-ideographicRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebracketv-mathematicalRightsquarebracket`: `Leftsquarebracketv-mathematicalRightsquarebracket` = "[v-mathematical]".asInstanceOf[`Leftsquarebracketv-mathematicalRightsquarebracket`]
-  @scala.inline
-  def LeftsquarebracketvalignRightsquarebracket: LeftsquarebracketvalignRightsquarebracket = "[valign]".asInstanceOf[LeftsquarebracketvalignRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketvalueRightsquarebracket: LeftsquarebracketvalueRightsquarebracket = "[value]".asInstanceOf[LeftsquarebracketvalueRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketvaluesRightsquarebracket: LeftsquarebracketvaluesRightsquarebracket = "[values]".asInstanceOf[LeftsquarebracketvaluesRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketvaluetypeRightsquarebracket: LeftsquarebracketvaluetypeRightsquarebracket = "[valuetype]".asInstanceOf[LeftsquarebracketvaluetypeRightsquarebracket]
-  @scala.inline
-  def `Leftsquarebracketvector-effectRightsquarebracket`: `Leftsquarebracketvector-effectRightsquarebracket` = "[vector-effect]".asInstanceOf[`Leftsquarebracketvector-effectRightsquarebracket`]
-  @scala.inline
-  def LeftsquarebracketversionRightsquarebracket: LeftsquarebracketversionRightsquarebracket = "[version]".asInstanceOf[LeftsquarebracketversionRightsquarebracket]
-  @scala.inline
-  def `Leftsquarebracketvert-adv-yRightsquarebracket`: `Leftsquarebracketvert-adv-yRightsquarebracket` = "[vert-adv-y]".asInstanceOf[`Leftsquarebracketvert-adv-yRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebracketvert-origin-xRightsquarebracket`: `Leftsquarebracketvert-origin-xRightsquarebracket` = "[vert-origin-x]".asInstanceOf[`Leftsquarebracketvert-origin-xRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebracketvert-origin-yRightsquarebracket`: `Leftsquarebracketvert-origin-yRightsquarebracket` = "[vert-origin-y]".asInstanceOf[`Leftsquarebracketvert-origin-yRightsquarebracket`]
-  @scala.inline
-  def LeftsquarebracketviewBoxRightsquarebracket: LeftsquarebracketviewBoxRightsquarebracket = "[viewBox]".asInstanceOf[LeftsquarebracketviewBoxRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketviewTargetRightsquarebracket: LeftsquarebracketviewTargetRightsquarebracket = "[viewTarget]".asInstanceOf[LeftsquarebracketviewTargetRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketvisibilityRightsquarebracket: LeftsquarebracketvisibilityRightsquarebracket = "[visibility]".asInstanceOf[LeftsquarebracketvisibilityRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketvlinkRightsquarebracket: LeftsquarebracketvlinkRightsquarebracket = "[vlink]".asInstanceOf[LeftsquarebracketvlinkRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketvolumeRightsquarebracket: LeftsquarebracketvolumeRightsquarebracket = "[volume]".asInstanceOf[LeftsquarebracketvolumeRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketvspaceRightsquarebracket: LeftsquarebracketvspaceRightsquarebracket = "[vspace]".asInstanceOf[LeftsquarebracketvspaceRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketwebkitallowfullscreenRightsquarebracket: LeftsquarebracketwebkitallowfullscreenRightsquarebracket = "[webkitallowfullscreen]".asInstanceOf[LeftsquarebracketwebkitallowfullscreenRightsquarebracket]
-  @scala.inline
-  def `Leftsquarebracketwhite-spaceRightsquarebracket`: `Leftsquarebracketwhite-spaceRightsquarebracket` = "[white-space]".asInstanceOf[`Leftsquarebracketwhite-spaceRightsquarebracket`]
-  @scala.inline
-  def LeftsquarebracketwidthRightsquarebracket: LeftsquarebracketwidthRightsquarebracket = "[width]".asInstanceOf[LeftsquarebracketwidthRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketwidthsRightsquarebracket: LeftsquarebracketwidthsRightsquarebracket = "[widths]".asInstanceOf[LeftsquarebracketwidthsRightsquarebracket]
-  @scala.inline
-  def `Leftsquarebracketword-spacingRightsquarebracket`: `Leftsquarebracketword-spacingRightsquarebracket` = "[word-spacing]".asInstanceOf[`Leftsquarebracketword-spacingRightsquarebracket`]
-  @scala.inline
-  def LeftsquarebracketwrapRightsquarebracket: LeftsquarebracketwrapRightsquarebracket = "[wrap]".asInstanceOf[LeftsquarebracketwrapRightsquarebracket]
-  @scala.inline
-  def `Leftsquarebracketwriting-modeRightsquarebracket`: `Leftsquarebracketwriting-modeRightsquarebracket` = "[writing-mode]".asInstanceOf[`Leftsquarebracketwriting-modeRightsquarebracket`]
-  @scala.inline
-  def `Leftsquarebracketx-heightRightsquarebracket`: `Leftsquarebracketx-heightRightsquarebracket` = "[x-height]".asInstanceOf[`Leftsquarebracketx-heightRightsquarebracket`]
-  @scala.inline
-  def Leftsquarebracketx1Rightsquarebracket: Leftsquarebracketx1Rightsquarebracket = "[x1]".asInstanceOf[Leftsquarebracketx1Rightsquarebracket]
-  @scala.inline
-  def Leftsquarebracketx2Rightsquarebracket: Leftsquarebracketx2Rightsquarebracket = "[x2]".asInstanceOf[Leftsquarebracketx2Rightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketxChannelSelectorRightsquarebracket: LeftsquarebracketxChannelSelectorRightsquarebracket = "[xChannelSelector]".asInstanceOf[LeftsquarebracketxChannelSelectorRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketxRightsquarebracket: LeftsquarebracketxRightsquarebracket = "[x]".asInstanceOf[LeftsquarebracketxRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketxmlnsRightsquarebracket: LeftsquarebracketxmlnsRightsquarebracket = "[xmlns]".asInstanceOf[LeftsquarebracketxmlnsRightsquarebracket]
-  @scala.inline
-  def Leftsquarebrackety1Rightsquarebracket: Leftsquarebrackety1Rightsquarebracket = "[y1]".asInstanceOf[Leftsquarebrackety1Rightsquarebracket]
-  @scala.inline
-  def Leftsquarebrackety2Rightsquarebracket: Leftsquarebrackety2Rightsquarebracket = "[y2]".asInstanceOf[Leftsquarebrackety2Rightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketyChannelSelectorRightsquarebracket: LeftsquarebracketyChannelSelectorRightsquarebracket = "[yChannelSelector]".asInstanceOf[LeftsquarebracketyChannelSelectorRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketyRightsquarebracket: LeftsquarebracketyRightsquarebracket = "[y]".asInstanceOf[LeftsquarebracketyRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketzRightsquarebracket: LeftsquarebracketzRightsquarebracket = "[z]".asInstanceOf[LeftsquarebracketzRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketzoomAndPanRightsquarebracket: LeftsquarebracketzoomAndPanRightsquarebracket = "[zoomAndPan]".asInstanceOf[LeftsquarebracketzoomAndPanRightsquarebracket]
-  @scala.inline
   def Menu: Menu = "Menu".asInstanceOf[Menu]
   @scala.inline
   def MenuText: MenuText = "MenuText".asInstanceOf[MenuText]
@@ -8003,6 +7113,896 @@ object csstypeStrings {
   def WindowFrame: WindowFrame = "WindowFrame".asInstanceOf[WindowFrame]
   @scala.inline
   def WindowText: WindowText = "WindowText".asInstanceOf[WindowText]
+  @scala.inline
+  def `[-webkit-dropzone]`: `[-webkit-dropzone]` = "[-webkit-dropzone]".asInstanceOf[`[-webkit-dropzone]`]
+  @scala.inline
+  def `[-webkit-slot]`: `[-webkit-slot]` = "[-webkit-slot]".asInstanceOf[`[-webkit-slot]`]
+  @scala.inline
+  def `[abbr]`: `[abbr]` = "[abbr]".asInstanceOf[`[abbr]`]
+  @scala.inline
+  def `[accent-height]`: `[accent-height]` = "[accent-height]".asInstanceOf[`[accent-height]`]
+  @scala.inline
+  def `[accept-charset]`: `[accept-charset]` = "[accept-charset]".asInstanceOf[`[accept-charset]`]
+  @scala.inline
+  def `[accept]`: `[accept]` = "[accept]".asInstanceOf[`[accept]`]
+  @scala.inline
+  def `[accesskey]`: `[accesskey]` = "[accesskey]".asInstanceOf[`[accesskey]`]
+  @scala.inline
+  def `[action]`: `[action]` = "[action]".asInstanceOf[`[action]`]
+  @scala.inline
+  def `[align]`: `[align]` = "[align]".asInstanceOf[`[align]`]
+  @scala.inline
+  def `[alignment-baseline]`: `[alignment-baseline]` = "[alignment-baseline]".asInstanceOf[`[alignment-baseline]`]
+  @scala.inline
+  def `[alink]`: `[alink]` = "[alink]".asInstanceOf[`[alink]`]
+  @scala.inline
+  def `[allowReorder]`: `[allowReorder]` = "[allowReorder]".asInstanceOf[`[allowReorder]`]
+  @scala.inline
+  def `[allow]`: `[allow]` = "[allow]".asInstanceOf[`[allow]`]
+  @scala.inline
+  def `[allowfullscreen]`: `[allowfullscreen]` = "[allowfullscreen]".asInstanceOf[`[allowfullscreen]`]
+  @scala.inline
+  def `[allowpaymentrequest]`: `[allowpaymentrequest]` = "[allowpaymentrequest]".asInstanceOf[`[allowpaymentrequest]`]
+  @scala.inline
+  def `[alphabetic]`: `[alphabetic]` = "[alphabetic]".asInstanceOf[`[alphabetic]`]
+  @scala.inline
+  def `[alt]`: `[alt]` = "[alt]".asInstanceOf[`[alt]`]
+  @scala.inline
+  def `[animation]`: `[animation]` = "[animation]".asInstanceOf[`[animation]`]
+  @scala.inline
+  def `[arabic-form]`: `[arabic-form]` = "[arabic-form]".asInstanceOf[`[arabic-form]`]
+  @scala.inline
+  def `[archive]`: `[archive]` = "[archive]".asInstanceOf[`[archive]`]
+  @scala.inline
+  def `[ascent]`: `[ascent]` = "[ascent]".asInstanceOf[`[ascent]`]
+  @scala.inline
+  def `[async]`: `[async]` = "[async]".asInstanceOf[`[async]`]
+  @scala.inline
+  def `[attributeName]`: `[attributeName]` = "[attributeName]".asInstanceOf[`[attributeName]`]
+  @scala.inline
+  def `[attributeType]`: `[attributeType]` = "[attributeType]".asInstanceOf[`[attributeType]`]
+  @scala.inline
+  def `[autobuffer]`: `[autobuffer]` = "[autobuffer]".asInstanceOf[`[autobuffer]`]
+  @scala.inline
+  def `[autocapitalize]`: `[autocapitalize]` = "[autocapitalize]".asInstanceOf[`[autocapitalize]`]
+  @scala.inline
+  def `[autocomplete]`: `[autocomplete]` = "[autocomplete]".asInstanceOf[`[autocomplete]`]
+  @scala.inline
+  def `[autofocus]`: `[autofocus]` = "[autofocus]".asInstanceOf[`[autofocus]`]
+  @scala.inline
+  def `[autoplay]`: `[autoplay]` = "[autoplay]".asInstanceOf[`[autoplay]`]
+  @scala.inline
+  def `[axis]`: `[axis]` = "[axis]".asInstanceOf[`[axis]`]
+  @scala.inline
+  def `[azimuth]`: `[azimuth]` = "[azimuth]".asInstanceOf[`[azimuth]`]
+  @scala.inline
+  def `[background]`: `[background]` = "[background]".asInstanceOf[`[background]`]
+  @scala.inline
+  def `[baseFrequency]`: `[baseFrequency]` = "[baseFrequency]".asInstanceOf[`[baseFrequency]`]
+  @scala.inline
+  def `[baseProfile]`: `[baseProfile]` = "[baseProfile]".asInstanceOf[`[baseProfile]`]
+  @scala.inline
+  def `[baseline-shift]`: `[baseline-shift]` = "[baseline-shift]".asInstanceOf[`[baseline-shift]`]
+  @scala.inline
+  def `[bbox]`: `[bbox]` = "[bbox]".asInstanceOf[`[bbox]`]
+  @scala.inline
+  def `[begin]`: `[begin]` = "[begin]".asInstanceOf[`[begin]`]
+  @scala.inline
+  def `[behavior]`: `[behavior]` = "[behavior]".asInstanceOf[`[behavior]`]
+  @scala.inline
+  def `[bgcolor]`: `[bgcolor]` = "[bgcolor]".asInstanceOf[`[bgcolor]`]
+  @scala.inline
+  def `[bias]`: `[bias]` = "[bias]".asInstanceOf[`[bias]`]
+  @scala.inline
+  def `[border]`: `[border]` = "[border]".asInstanceOf[`[border]`]
+  @scala.inline
+  def `[bottommargin]`: `[bottommargin]` = "[bottommargin]".asInstanceOf[`[bottommargin]`]
+  @scala.inline
+  def `[buffered]`: `[buffered]` = "[buffered]".asInstanceOf[`[buffered]`]
+  @scala.inline
+  def `[by]`: `[by]` = "[by]".asInstanceOf[`[by]`]
+  @scala.inline
+  def `[calcMode]`: `[calcMode]` = "[calcMode]".asInstanceOf[`[calcMode]`]
+  @scala.inline
+  def `[cap-height]`: `[cap-height]` = "[cap-height]".asInstanceOf[`[cap-height]`]
+  @scala.inline
+  def `[cellpadding]`: `[cellpadding]` = "[cellpadding]".asInstanceOf[`[cellpadding]`]
+  @scala.inline
+  def `[cellspacing]`: `[cellspacing]` = "[cellspacing]".asInstanceOf[`[cellspacing]`]
+  @scala.inline
+  def `[char]`: `[char]` = "[char]".asInstanceOf[`[char]`]
+  @scala.inline
+  def `[charoff]`: `[charoff]` = "[charoff]".asInstanceOf[`[charoff]`]
+  @scala.inline
+  def `[charset]`: `[charset]` = "[charset]".asInstanceOf[`[charset]`]
+  @scala.inline
+  def `[checked]`: `[checked]` = "[checked]".asInstanceOf[`[checked]`]
+  @scala.inline
+  def `[cite]`: `[cite]` = "[cite]".asInstanceOf[`[cite]`]
+  @scala.inline
+  def `[class]`: `[class]` = "[class]".asInstanceOf[`[class]`]
+  @scala.inline
+  def `[classid]`: `[classid]` = "[classid]".asInstanceOf[`[classid]`]
+  @scala.inline
+  def `[clear]`: `[clear]` = "[clear]".asInstanceOf[`[clear]`]
+  @scala.inline
+  def `[clip-path]`: `[clip-path]` = "[clip-path]".asInstanceOf[`[clip-path]`]
+  @scala.inline
+  def `[clip-rule]`: `[clip-rule]` = "[clip-rule]".asInstanceOf[`[clip-rule]`]
+  @scala.inline
+  def `[clipPathUnits]`: `[clipPathUnits]` = "[clipPathUnits]".asInstanceOf[`[clipPathUnits]`]
+  @scala.inline
+  def `[clip]`: `[clip]` = "[clip]".asInstanceOf[`[clip]`]
+  @scala.inline
+  def `[code]`: `[code]` = "[code]".asInstanceOf[`[code]`]
+  @scala.inline
+  def `[codebase]`: `[codebase]` = "[codebase]".asInstanceOf[`[codebase]`]
+  @scala.inline
+  def `[codetype]`: `[codetype]` = "[codetype]".asInstanceOf[`[codetype]`]
+  @scala.inline
+  def `[color-interpolation-filters]`: `[color-interpolation-filters]` = "[color-interpolation-filters]".asInstanceOf[`[color-interpolation-filters]`]
+  @scala.inline
+  def `[color-interpolation]`: `[color-interpolation]` = "[color-interpolation]".asInstanceOf[`[color-interpolation]`]
+  @scala.inline
+  def `[color-profile]`: `[color-profile]` = "[color-profile]".asInstanceOf[`[color-profile]`]
+  @scala.inline
+  def `[color-rendering]`: `[color-rendering]` = "[color-rendering]".asInstanceOf[`[color-rendering]`]
+  @scala.inline
+  def `[color]`: `[color]` = "[color]".asInstanceOf[`[color]`]
+  @scala.inline
+  def `[cols]`: `[cols]` = "[cols]".asInstanceOf[`[cols]`]
+  @scala.inline
+  def `[colspan]`: `[colspan]` = "[colspan]".asInstanceOf[`[colspan]`]
+  @scala.inline
+  def `[command]`: `[command]` = "[command]".asInstanceOf[`[command]`]
+  @scala.inline
+  def `[compact]`: `[compact]` = "[compact]".asInstanceOf[`[compact]`]
+  @scala.inline
+  def `[contentScriptType]`: `[contentScriptType]` = "[contentScriptType]".asInstanceOf[`[contentScriptType]`]
+  @scala.inline
+  def `[contentStyleType]`: `[contentStyleType]` = "[contentStyleType]".asInstanceOf[`[contentStyleType]`]
+  @scala.inline
+  def `[content]`: `[content]` = "[content]".asInstanceOf[`[content]`]
+  @scala.inline
+  def `[contenteditable]`: `[contenteditable]` = "[contenteditable]".asInstanceOf[`[contenteditable]`]
+  @scala.inline
+  def `[contextmenu]`: `[contextmenu]` = "[contextmenu]".asInstanceOf[`[contextmenu]`]
+  @scala.inline
+  def `[controls]`: `[controls]` = "[controls]".asInstanceOf[`[controls]`]
+  @scala.inline
+  def `[coords]`: `[coords]` = "[coords]".asInstanceOf[`[coords]`]
+  @scala.inline
+  def `[crossorigin]`: `[crossorigin]` = "[crossorigin]".asInstanceOf[`[crossorigin]`]
+  @scala.inline
+  def `[cursor]`: `[cursor]` = "[cursor]".asInstanceOf[`[cursor]`]
+  @scala.inline
+  def `[cx]`: `[cx]` = "[cx]".asInstanceOf[`[cx]`]
+  @scala.inline
+  def `[cy]`: `[cy]` = "[cy]".asInstanceOf[`[cy]`]
+  @scala.inline
+  def `[d]`: `[d]` = "[d]".asInstanceOf[`[d]`]
+  @scala.inline
+  def `[data]`: `[data]` = "[data]".asInstanceOf[`[data]`]
+  @scala.inline
+  def `[datafld]`: `[datafld]` = "[datafld]".asInstanceOf[`[datafld]`]
+  @scala.inline
+  def `[datasrc]`: `[datasrc]` = "[datasrc]".asInstanceOf[`[datasrc]`]
+  @scala.inline
+  def `[datetime]`: `[datetime]` = "[datetime]".asInstanceOf[`[datetime]`]
+  @scala.inline
+  def `[declare]`: `[declare]` = "[declare]".asInstanceOf[`[declare]`]
+  @scala.inline
+  def `[decoding]`: `[decoding]` = "[decoding]".asInstanceOf[`[decoding]`]
+  @scala.inline
+  def `[default]`: `[default]` = "[default]".asInstanceOf[`[default]`]
+  @scala.inline
+  def `[defer]`: `[defer]` = "[defer]".asInstanceOf[`[defer]`]
+  @scala.inline
+  def `[descent]`: `[descent]` = "[descent]".asInstanceOf[`[descent]`]
+  @scala.inline
+  def `[diffuseConstant]`: `[diffuseConstant]` = "[diffuseConstant]".asInstanceOf[`[diffuseConstant]`]
+  @scala.inline
+  def `[dir]`: `[dir]` = "[dir]".asInstanceOf[`[dir]`]
+  @scala.inline
+  def `[direction]`: `[direction]` = "[direction]".asInstanceOf[`[direction]`]
+  @scala.inline
+  def `[disabled]`: `[disabled]` = "[disabled]".asInstanceOf[`[disabled]`]
+  @scala.inline
+  def `[display]`: `[display]` = "[display]".asInstanceOf[`[display]`]
+  @scala.inline
+  def `[divisor]`: `[divisor]` = "[divisor]".asInstanceOf[`[divisor]`]
+  @scala.inline
+  def `[document]`: `[document]` = "[document]".asInstanceOf[`[document]`]
+  @scala.inline
+  def `[dominant-baseline]`: `[dominant-baseline]` = "[dominant-baseline]".asInstanceOf[`[dominant-baseline]`]
+  @scala.inline
+  def `[download]`: `[download]` = "[download]".asInstanceOf[`[download]`]
+  @scala.inline
+  def `[draggable]`: `[draggable]` = "[draggable]".asInstanceOf[`[draggable]`]
+  @scala.inline
+  def `[dropzone]`: `[dropzone]` = "[dropzone]".asInstanceOf[`[dropzone]`]
+  @scala.inline
+  def `[dur]`: `[dur]` = "[dur]".asInstanceOf[`[dur]`]
+  @scala.inline
+  def `[dx]`: `[dx]` = "[dx]".asInstanceOf[`[dx]`]
+  @scala.inline
+  def `[dy]`: `[dy]` = "[dy]".asInstanceOf[`[dy]`]
+  @scala.inline
+  def `[edgeMode]`: `[edgeMode]` = "[edgeMode]".asInstanceOf[`[edgeMode]`]
+  @scala.inline
+  def `[elevation]`: `[elevation]` = "[elevation]".asInstanceOf[`[elevation]`]
+  @scala.inline
+  def `[enable-background]`: `[enable-background]` = "[enable-background]".asInstanceOf[`[enable-background]`]
+  @scala.inline
+  def `[enctype]`: `[enctype]` = "[enctype]".asInstanceOf[`[enctype]`]
+  @scala.inline
+  def `[exportparts]`: `[exportparts]` = "[exportparts]".asInstanceOf[`[exportparts]`]
+  @scala.inline
+  def `[externalResourcesRequired]`: `[externalResourcesRequired]` = "[externalResourcesRequired]".asInstanceOf[`[externalResourcesRequired]`]
+  @scala.inline
+  def `[face]`: `[face]` = "[face]".asInstanceOf[`[face]`]
+  @scala.inline
+  def `[fill-opacity]`: `[fill-opacity]` = "[fill-opacity]".asInstanceOf[`[fill-opacity]`]
+  @scala.inline
+  def `[fill-rule]`: `[fill-rule]` = "[fill-rule]".asInstanceOf[`[fill-rule]`]
+  @scala.inline
+  def `[fill]`: `[fill]` = "[fill]".asInstanceOf[`[fill]`]
+  @scala.inline
+  def `[filterRes]`: `[filterRes]` = "[filterRes]".asInstanceOf[`[filterRes]`]
+  @scala.inline
+  def `[filterUnits]`: `[filterUnits]` = "[filterUnits]".asInstanceOf[`[filterUnits]`]
+  @scala.inline
+  def `[filter]`: `[filter]` = "[filter]".asInstanceOf[`[filter]`]
+  @scala.inline
+  def `[flood-color]`: `[flood-color]` = "[flood-color]".asInstanceOf[`[flood-color]`]
+  @scala.inline
+  def `[flood-opacity]`: `[flood-opacity]` = "[flood-opacity]".asInstanceOf[`[flood-opacity]`]
+  @scala.inline
+  def `[font-family]`: `[font-family]` = "[font-family]".asInstanceOf[`[font-family]`]
+  @scala.inline
+  def `[font-size-adjust]`: `[font-size-adjust]` = "[font-size-adjust]".asInstanceOf[`[font-size-adjust]`]
+  @scala.inline
+  def `[font-size]`: `[font-size]` = "[font-size]".asInstanceOf[`[font-size]`]
+  @scala.inline
+  def `[font-stretch]`: `[font-stretch]` = "[font-stretch]".asInstanceOf[`[font-stretch]`]
+  @scala.inline
+  def `[font-style]`: `[font-style]` = "[font-style]".asInstanceOf[`[font-style]`]
+  @scala.inline
+  def `[font-variant]`: `[font-variant]` = "[font-variant]".asInstanceOf[`[font-variant]`]
+  @scala.inline
+  def `[font-weight]`: `[font-weight]` = "[font-weight]".asInstanceOf[`[font-weight]`]
+  @scala.inline
+  def `[for]`: `[for]` = "[for]".asInstanceOf[`[for]`]
+  @scala.inline
+  def `[form]`: `[form]` = "[form]".asInstanceOf[`[form]`]
+  @scala.inline
+  def `[formaction]`: `[formaction]` = "[formaction]".asInstanceOf[`[formaction]`]
+  @scala.inline
+  def `[format]`: `[format]` = "[format]".asInstanceOf[`[format]`]
+  @scala.inline
+  def `[formenctype]`: `[formenctype]` = "[formenctype]".asInstanceOf[`[formenctype]`]
+  @scala.inline
+  def `[formmethod]`: `[formmethod]` = "[formmethod]".asInstanceOf[`[formmethod]`]
+  @scala.inline
+  def `[formnovalidate]`: `[formnovalidate]` = "[formnovalidate]".asInstanceOf[`[formnovalidate]`]
+  @scala.inline
+  def `[formtarget]`: `[formtarget]` = "[formtarget]".asInstanceOf[`[formtarget]`]
+  @scala.inline
+  def `[fr]`: `[fr]` = "[fr]".asInstanceOf[`[fr]`]
+  @scala.inline
+  def `[frame]`: `[frame]` = "[frame]".asInstanceOf[`[frame]`]
+  @scala.inline
+  def `[frameborder]`: `[frameborder]` = "[frameborder]".asInstanceOf[`[frameborder]`]
+  @scala.inline
+  def `[from]`: `[from]` = "[from]".asInstanceOf[`[from]`]
+  @scala.inline
+  def `[fx]`: `[fx]` = "[fx]".asInstanceOf[`[fx]`]
+  @scala.inline
+  def `[fy]`: `[fy]` = "[fy]".asInstanceOf[`[fy]`]
+  @scala.inline
+  def `[g1]`: `[g1]` = "[g1]".asInstanceOf[`[g1]`]
+  @scala.inline
+  def `[g2]`: `[g2]` = "[g2]".asInstanceOf[`[g2]`]
+  @scala.inline
+  def `[global]`: `[global]` = "[global]".asInstanceOf[`[global]`]
+  @scala.inline
+  def `[glyph-name]`: `[glyph-name]` = "[glyph-name]".asInstanceOf[`[glyph-name]`]
+  @scala.inline
+  def `[glyph-orientation-horizontal]`: `[glyph-orientation-horizontal]` = "[glyph-orientation-horizontal]".asInstanceOf[`[glyph-orientation-horizontal]`]
+  @scala.inline
+  def `[glyph-orientation-vertical]`: `[glyph-orientation-vertical]` = "[glyph-orientation-vertical]".asInstanceOf[`[glyph-orientation-vertical]`]
+  @scala.inline
+  def `[glyphRef]`: `[glyphRef]` = "[glyphRef]".asInstanceOf[`[glyphRef]`]
+  @scala.inline
+  def `[gradientTransform]`: `[gradientTransform]` = "[gradientTransform]".asInstanceOf[`[gradientTransform]`]
+  @scala.inline
+  def `[gradientUnits]`: `[gradientUnits]` = "[gradientUnits]".asInstanceOf[`[gradientUnits]`]
+  @scala.inline
+  def `[graphical]`: `[graphical]` = "[graphical]".asInstanceOf[`[graphical]`]
+  @scala.inline
+  def `[hanging]`: `[hanging]` = "[hanging]".asInstanceOf[`[hanging]`]
+  @scala.inline
+  def `[hatchContentUnits]`: `[hatchContentUnits]` = "[hatchContentUnits]".asInstanceOf[`[hatchContentUnits]`]
+  @scala.inline
+  def `[hatchUnits]`: `[hatchUnits]` = "[hatchUnits]".asInstanceOf[`[hatchUnits]`]
+  @scala.inline
+  def `[headers]`: `[headers]` = "[headers]".asInstanceOf[`[headers]`]
+  @scala.inline
+  def `[height]`: `[height]` = "[height]".asInstanceOf[`[height]`]
+  @scala.inline
+  def `[hidden]`: `[hidden]` = "[hidden]".asInstanceOf[`[hidden]`]
+  @scala.inline
+  def `[high]`: `[high]` = "[high]".asInstanceOf[`[high]`]
+  @scala.inline
+  def `[horiz-adv-x]`: `[horiz-adv-x]` = "[horiz-adv-x]".asInstanceOf[`[horiz-adv-x]`]
+  @scala.inline
+  def `[horiz-origin-x]`: `[horiz-origin-x]` = "[horiz-origin-x]".asInstanceOf[`[horiz-origin-x]`]
+  @scala.inline
+  def `[horiz-origin-y]`: `[horiz-origin-y]` = "[horiz-origin-y]".asInstanceOf[`[horiz-origin-y]`]
+  @scala.inline
+  def `[href]`: `[href]` = "[href]".asInstanceOf[`[href]`]
+  @scala.inline
+  def `[hreflang]`: `[hreflang]` = "[hreflang]".asInstanceOf[`[hreflang]`]
+  @scala.inline
+  def `[hspace]`: `[hspace]` = "[hspace]".asInstanceOf[`[hspace]`]
+  @scala.inline
+  def `[http-equiv]`: `[http-equiv]` = "[http-equiv]".asInstanceOf[`[http-equiv]`]
+  @scala.inline
+  def `[icon]`: `[icon]` = "[icon]".asInstanceOf[`[icon]`]
+  @scala.inline
+  def `[id]`: `[id]` = "[id]".asInstanceOf[`[id]`]
+  @scala.inline
+  def `[ideographic]`: `[ideographic]` = "[ideographic]".asInstanceOf[`[ideographic]`]
+  @scala.inline
+  def `[image-rendering]`: `[image-rendering]` = "[image-rendering]".asInstanceOf[`[image-rendering]`]
+  @scala.inline
+  def `[in2]`: `[in2]` = "[in2]".asInstanceOf[`[in2]`]
+  @scala.inline
+  def `[in]`: `[in]` = "[in]".asInstanceOf[`[in]`]
+  @scala.inline
+  def `[inputmode]`: `[inputmode]` = "[inputmode]".asInstanceOf[`[inputmode]`]
+  @scala.inline
+  def `[integrity]`: `[integrity]` = "[integrity]".asInstanceOf[`[integrity]`]
+  @scala.inline
+  def `[intrinsicsize]`: `[intrinsicsize]` = "[intrinsicsize]".asInstanceOf[`[intrinsicsize]`]
+  @scala.inline
+  def `[is]`: `[is]` = "[is]".asInstanceOf[`[is]`]
+  @scala.inline
+  def `[ismap]`: `[ismap]` = "[ismap]".asInstanceOf[`[ismap]`]
+  @scala.inline
+  def `[itemid]`: `[itemid]` = "[itemid]".asInstanceOf[`[itemid]`]
+  @scala.inline
+  def `[itemprop]`: `[itemprop]` = "[itemprop]".asInstanceOf[`[itemprop]`]
+  @scala.inline
+  def `[itemref]`: `[itemref]` = "[itemref]".asInstanceOf[`[itemref]`]
+  @scala.inline
+  def `[itemscope]`: `[itemscope]` = "[itemscope]".asInstanceOf[`[itemscope]`]
+  @scala.inline
+  def `[itemtype]`: `[itemtype]` = "[itemtype]".asInstanceOf[`[itemtype]`]
+  @scala.inline
+  def `[k1]`: `[k1]` = "[k1]".asInstanceOf[`[k1]`]
+  @scala.inline
+  def `[k2]`: `[k2]` = "[k2]".asInstanceOf[`[k2]`]
+  @scala.inline
+  def `[k3]`: `[k3]` = "[k3]".asInstanceOf[`[k3]`]
+  @scala.inline
+  def `[k4]`: `[k4]` = "[k4]".asInstanceOf[`[k4]`]
+  @scala.inline
+  def `[k]`: `[k]` = "[k]".asInstanceOf[`[k]`]
+  @scala.inline
+  def `[kernelMatrix]`: `[kernelMatrix]` = "[kernelMatrix]".asInstanceOf[`[kernelMatrix]`]
+  @scala.inline
+  def `[kernelUnitLength]`: `[kernelUnitLength]` = "[kernelUnitLength]".asInstanceOf[`[kernelUnitLength]`]
+  @scala.inline
+  def `[kerning]`: `[kerning]` = "[kerning]".asInstanceOf[`[kerning]`]
+  @scala.inline
+  def `[keyPoints]`: `[keyPoints]` = "[keyPoints]".asInstanceOf[`[keyPoints]`]
+  @scala.inline
+  def `[kind]`: `[kind]` = "[kind]".asInstanceOf[`[kind]`]
+  @scala.inline
+  def `[label]`: `[label]` = "[label]".asInstanceOf[`[label]`]
+  @scala.inline
+  def `[lang]`: `[lang]` = "[lang]".asInstanceOf[`[lang]`]
+  @scala.inline
+  def `[language]`: `[language]` = "[language]".asInstanceOf[`[language]`]
+  @scala.inline
+  def `[leftmargin]`: `[leftmargin]` = "[leftmargin]".asInstanceOf[`[leftmargin]`]
+  @scala.inline
+  def `[lengthAdjust]`: `[lengthAdjust]` = "[lengthAdjust]".asInstanceOf[`[lengthAdjust]`]
+  @scala.inline
+  def `[letter-spacing]`: `[letter-spacing]` = "[letter-spacing]".asInstanceOf[`[letter-spacing]`]
+  @scala.inline
+  def `[lighterForError]`: `[lighterForError]` = "[lighterForError]".asInstanceOf[`[lighterForError]`]
+  @scala.inline
+  def `[lighting-color]`: `[lighting-color]` = "[lighting-color]".asInstanceOf[`[lighting-color]`]
+  @scala.inline
+  def `[limitingConeAngle]`: `[limitingConeAngle]` = "[limitingConeAngle]".asInstanceOf[`[limitingConeAngle]`]
+  @scala.inline
+  def `[link]`: `[link]` = "[link]".asInstanceOf[`[link]`]
+  @scala.inline
+  def `[local]`: `[local]` = "[local]".asInstanceOf[`[local]`]
+  @scala.inline
+  def `[longdesc]`: `[longdesc]` = "[longdesc]".asInstanceOf[`[longdesc]`]
+  @scala.inline
+  def `[loop]`: `[loop]` = "[loop]".asInstanceOf[`[loop]`]
+  @scala.inline
+  def `[low]`: `[low]` = "[low]".asInstanceOf[`[low]`]
+  @scala.inline
+  def `[manifest]`: `[manifest]` = "[manifest]".asInstanceOf[`[manifest]`]
+  @scala.inline
+  def `[marginheight]`: `[marginheight]` = "[marginheight]".asInstanceOf[`[marginheight]`]
+  @scala.inline
+  def `[marginwidth]`: `[marginwidth]` = "[marginwidth]".asInstanceOf[`[marginwidth]`]
+  @scala.inline
+  def `[marker-end]`: `[marker-end]` = "[marker-end]".asInstanceOf[`[marker-end]`]
+  @scala.inline
+  def `[marker-mid]`: `[marker-mid]` = "[marker-mid]".asInstanceOf[`[marker-mid]`]
+  @scala.inline
+  def `[marker-start]`: `[marker-start]` = "[marker-start]".asInstanceOf[`[marker-start]`]
+  @scala.inline
+  def `[markerHeight]`: `[markerHeight]` = "[markerHeight]".asInstanceOf[`[markerHeight]`]
+  @scala.inline
+  def `[markerUnits]`: `[markerUnits]` = "[markerUnits]".asInstanceOf[`[markerUnits]`]
+  @scala.inline
+  def `[markerWidth]`: `[markerWidth]` = "[markerWidth]".asInstanceOf[`[markerWidth]`]
+  @scala.inline
+  def `[maskContentUnits]`: `[maskContentUnits]` = "[maskContentUnits]".asInstanceOf[`[maskContentUnits]`]
+  @scala.inline
+  def `[maskUnits]`: `[maskUnits]` = "[maskUnits]".asInstanceOf[`[maskUnits]`]
+  @scala.inline
+  def `[mask]`: `[mask]` = "[mask]".asInstanceOf[`[mask]`]
+  @scala.inline
+  def `[mathematical]`: `[mathematical]` = "[mathematical]".asInstanceOf[`[mathematical]`]
+  @scala.inline
+  def `[max]`: `[max]` = "[max]".asInstanceOf[`[max]`]
+  @scala.inline
+  def `[maxlength]`: `[maxlength]` = "[maxlength]".asInstanceOf[`[maxlength]`]
+  @scala.inline
+  def `[mayscript]`: `[mayscript]` = "[mayscript]".asInstanceOf[`[mayscript]`]
+  @scala.inline
+  def `[media]`: `[media]` = "[media]".asInstanceOf[`[media]`]
+  @scala.inline
+  def `[method]`: `[method]` = "[method]".asInstanceOf[`[method]`]
+  @scala.inline
+  def `[methods]`: `[methods]` = "[methods]".asInstanceOf[`[methods]`]
+  @scala.inline
+  def `[min]`: `[min]` = "[min]".asInstanceOf[`[min]`]
+  @scala.inline
+  def `[minlength]`: `[minlength]` = "[minlength]".asInstanceOf[`[minlength]`]
+  @scala.inline
+  def `[mode]`: `[mode]` = "[mode]".asInstanceOf[`[mode]`]
+  @scala.inline
+  def `[moz-opaque]`: `[moz-opaque]` = "[moz-opaque]".asInstanceOf[`[moz-opaque]`]
+  @scala.inline
+  def `[mozallowfullscreen]`: `[mozallowfullscreen]` = "[mozallowfullscreen]".asInstanceOf[`[mozallowfullscreen]`]
+  @scala.inline
+  def `[mozbrowser]`: `[mozbrowser]` = "[mozbrowser]".asInstanceOf[`[mozbrowser]`]
+  @scala.inline
+  def `[mozcurrentsampleoffset]`: `[mozcurrentsampleoffset]` = "[mozcurrentsampleoffset]".asInstanceOf[`[mozcurrentsampleoffset]`]
+  @scala.inline
+  def `[msallowfullscreen]`: `[msallowfullscreen]` = "[msallowfullscreen]".asInstanceOf[`[msallowfullscreen]`]
+  @scala.inline
+  def `[multiple]`: `[multiple]` = "[multiple]".asInstanceOf[`[multiple]`]
+  @scala.inline
+  def `[muted]`: `[muted]` = "[muted]".asInstanceOf[`[muted]`]
+  @scala.inline
+  def `[name]`: `[name]` = "[name]".asInstanceOf[`[name]`]
+  @scala.inline
+  def `[nohref]`: `[nohref]` = "[nohref]".asInstanceOf[`[nohref]`]
+  @scala.inline
+  def `[nomodule]`: `[nomodule]` = "[nomodule]".asInstanceOf[`[nomodule]`]
+  @scala.inline
+  def `[noresize]`: `[noresize]` = "[noresize]".asInstanceOf[`[noresize]`]
+  @scala.inline
+  def `[noshade]`: `[noshade]` = "[noshade]".asInstanceOf[`[noshade]`]
+  @scala.inline
+  def `[novalidate]`: `[novalidate]` = "[novalidate]".asInstanceOf[`[novalidate]`]
+  @scala.inline
+  def `[nowrap]`: `[nowrap]` = "[nowrap]".asInstanceOf[`[nowrap]`]
+  @scala.inline
+  def `[numOctaves]`: `[numOctaves]` = "[numOctaves]".asInstanceOf[`[numOctaves]`]
+  @scala.inline
+  def `[object]`: `[object]` = "[object]".asInstanceOf[`[object]`]
+  @scala.inline
+  def `[offset]`: `[offset]` = "[offset]".asInstanceOf[`[offset]`]
+  @scala.inline
+  def `[onafterprint]`: `[onafterprint]` = "[onafterprint]".asInstanceOf[`[onafterprint]`]
+  @scala.inline
+  def `[onbeforeprint]`: `[onbeforeprint]` = "[onbeforeprint]".asInstanceOf[`[onbeforeprint]`]
+  @scala.inline
+  def `[onbeforeunload]`: `[onbeforeunload]` = "[onbeforeunload]".asInstanceOf[`[onbeforeunload]`]
+  @scala.inline
+  def `[onblur]`: `[onblur]` = "[onblur]".asInstanceOf[`[onblur]`]
+  @scala.inline
+  def `[onerror]`: `[onerror]` = "[onerror]".asInstanceOf[`[onerror]`]
+  @scala.inline
+  def `[onfocus]`: `[onfocus]` = "[onfocus]".asInstanceOf[`[onfocus]`]
+  @scala.inline
+  def `[onhashchange]`: `[onhashchange]` = "[onhashchange]".asInstanceOf[`[onhashchange]`]
+  @scala.inline
+  def `[onlanguagechange]`: `[onlanguagechange]` = "[onlanguagechange]".asInstanceOf[`[onlanguagechange]`]
+  @scala.inline
+  def `[onload]`: `[onload]` = "[onload]".asInstanceOf[`[onload]`]
+  @scala.inline
+  def `[onmessage]`: `[onmessage]` = "[onmessage]".asInstanceOf[`[onmessage]`]
+  @scala.inline
+  def `[onoffline]`: `[onoffline]` = "[onoffline]".asInstanceOf[`[onoffline]`]
+  @scala.inline
+  def `[ononline]`: `[ononline]` = "[ononline]".asInstanceOf[`[ononline]`]
+  @scala.inline
+  def `[onpopstate]`: `[onpopstate]` = "[onpopstate]".asInstanceOf[`[onpopstate]`]
+  @scala.inline
+  def `[onredo]`: `[onredo]` = "[onredo]".asInstanceOf[`[onredo]`]
+  @scala.inline
+  def `[onresize]`: `[onresize]` = "[onresize]".asInstanceOf[`[onresize]`]
+  @scala.inline
+  def `[onstorage]`: `[onstorage]` = "[onstorage]".asInstanceOf[`[onstorage]`]
+  @scala.inline
+  def `[onundo]`: `[onundo]` = "[onundo]".asInstanceOf[`[onundo]`]
+  @scala.inline
+  def `[onunload]`: `[onunload]` = "[onunload]".asInstanceOf[`[onunload]`]
+  @scala.inline
+  def `[opacity]`: `[opacity]` = "[opacity]".asInstanceOf[`[opacity]`]
+  @scala.inline
+  def `[open]`: `[open]` = "[open]".asInstanceOf[`[open]`]
+  @scala.inline
+  def `[operator]`: `[operator]` = "[operator]".asInstanceOf[`[operator]`]
+  @scala.inline
+  def `[optimum]`: `[optimum]` = "[optimum]".asInstanceOf[`[optimum]`]
+  @scala.inline
+  def `[order]`: `[order]` = "[order]".asInstanceOf[`[order]`]
+  @scala.inline
+  def `[orient]`: `[orient]` = "[orient]".asInstanceOf[`[orient]`]
+  @scala.inline
+  def `[orientation]`: `[orientation]` = "[orientation]".asInstanceOf[`[orientation]`]
+  @scala.inline
+  def `[origin]`: `[origin]` = "[origin]".asInstanceOf[`[origin]`]
+  @scala.inline
+  def `[overflow]`: `[overflow]` = "[overflow]".asInstanceOf[`[overflow]`]
+  @scala.inline
+  def `[overline-position]`: `[overline-position]` = "[overline-position]".asInstanceOf[`[overline-position]`]
+  @scala.inline
+  def `[overline-thickness]`: `[overline-thickness]` = "[overline-thickness]".asInstanceOf[`[overline-thickness]`]
+  @scala.inline
+  def `[paint-order]`: `[paint-order]` = "[paint-order]".asInstanceOf[`[paint-order]`]
+  @scala.inline
+  def `[panose-1]`: `[panose-1]` = "[panose-1]".asInstanceOf[`[panose-1]`]
+  @scala.inline
+  def `[part]`: `[part]` = "[part]".asInstanceOf[`[part]`]
+  @scala.inline
+  def `[path]`: `[path]` = "[path]".asInstanceOf[`[path]`]
+  @scala.inline
+  def `[patternContentUnits]`: `[patternContentUnits]` = "[patternContentUnits]".asInstanceOf[`[patternContentUnits]`]
+  @scala.inline
+  def `[patternTransform]`: `[patternTransform]` = "[patternTransform]".asInstanceOf[`[patternTransform]`]
+  @scala.inline
+  def `[patternUnits]`: `[patternUnits]` = "[patternUnits]".asInstanceOf[`[patternUnits]`]
+  @scala.inline
+  def `[ping]`: `[ping]` = "[ping]".asInstanceOf[`[ping]`]
+  @scala.inline
+  def `[pitch]`: `[pitch]` = "[pitch]".asInstanceOf[`[pitch]`]
+  @scala.inline
+  def `[placeholder]`: `[placeholder]` = "[placeholder]".asInstanceOf[`[placeholder]`]
+  @scala.inline
+  def `[played]`: `[played]` = "[played]".asInstanceOf[`[played]`]
+  @scala.inline
+  def `[pointer-events]`: `[pointer-events]` = "[pointer-events]".asInstanceOf[`[pointer-events]`]
+  @scala.inline
+  def `[pointsAtX]`: `[pointsAtX]` = "[pointsAtX]".asInstanceOf[`[pointsAtX]`]
+  @scala.inline
+  def `[pointsAtY]`: `[pointsAtY]` = "[pointsAtY]".asInstanceOf[`[pointsAtY]`]
+  @scala.inline
+  def `[pointsAtZ]`: `[pointsAtZ]` = "[pointsAtZ]".asInstanceOf[`[pointsAtZ]`]
+  @scala.inline
+  def `[points]`: `[points]` = "[points]".asInstanceOf[`[points]`]
+  @scala.inline
+  def `[poster]`: `[poster]` = "[poster]".asInstanceOf[`[poster]`]
+  @scala.inline
+  def `[prefetch]`: `[prefetch]` = "[prefetch]".asInstanceOf[`[prefetch]`]
+  @scala.inline
+  def `[preload]`: `[preload]` = "[preload]".asInstanceOf[`[preload]`]
+  @scala.inline
+  def `[preserveAlpha]`: `[preserveAlpha]` = "[preserveAlpha]".asInstanceOf[`[preserveAlpha]`]
+  @scala.inline
+  def `[preserveAspectRatio]`: `[preserveAspectRatio]` = "[preserveAspectRatio]".asInstanceOf[`[preserveAspectRatio]`]
+  @scala.inline
+  def `[primitiveUnits]`: `[primitiveUnits]` = "[primitiveUnits]".asInstanceOf[`[primitiveUnits]`]
+  @scala.inline
+  def `[profile]`: `[profile]` = "[profile]".asInstanceOf[`[profile]`]
+  @scala.inline
+  def `[prompt]`: `[prompt]` = "[prompt]".asInstanceOf[`[prompt]`]
+  @scala.inline
+  def `[r]`: `[r]` = "[r]".asInstanceOf[`[r]`]
+  @scala.inline
+  def `[radiogroup]`: `[radiogroup]` = "[radiogroup]".asInstanceOf[`[radiogroup]`]
+  @scala.inline
+  def `[radius]`: `[radius]` = "[radius]".asInstanceOf[`[radius]`]
+  @scala.inline
+  def `[readonly]`: `[readonly]` = "[readonly]".asInstanceOf[`[readonly]`]
+  @scala.inline
+  def `[refX]`: `[refX]` = "[refX]".asInstanceOf[`[refX]`]
+  @scala.inline
+  def `[refY]`: `[refY]` = "[refY]".asInstanceOf[`[refY]`]
+  @scala.inline
+  def `[referrerPolicy]`: `[referrerPolicy]` = "[referrerPolicy]".asInstanceOf[`[referrerPolicy]`]
+  @scala.inline
+  def `[referrerpolicy]_`: `[referrerpolicy]_` = "[referrerpolicy]".asInstanceOf[`[referrerpolicy]_`]
+  @scala.inline
+  def `[rel]`: `[rel]` = "[rel]".asInstanceOf[`[rel]`]
+  @scala.inline
+  def `[rendering-intent]`: `[rendering-intent]` = "[rendering-intent]".asInstanceOf[`[rendering-intent]`]
+  @scala.inline
+  def `[repeatCount]`: `[repeatCount]` = "[repeatCount]".asInstanceOf[`[repeatCount]`]
+  @scala.inline
+  def `[requiredExtensions]`: `[requiredExtensions]` = "[requiredExtensions]".asInstanceOf[`[requiredExtensions]`]
+  @scala.inline
+  def `[requiredFeatures]`: `[requiredFeatures]` = "[requiredFeatures]".asInstanceOf[`[requiredFeatures]`]
+  @scala.inline
+  def `[required]`: `[required]` = "[required]".asInstanceOf[`[required]`]
+  @scala.inline
+  def `[rev]`: `[rev]` = "[rev]".asInstanceOf[`[rev]`]
+  @scala.inline
+  def `[reversed]`: `[reversed]` = "[reversed]".asInstanceOf[`[reversed]`]
+  @scala.inline
+  def `[rightmargin]`: `[rightmargin]` = "[rightmargin]".asInstanceOf[`[rightmargin]`]
+  @scala.inline
+  def `[rotate]`: `[rotate]` = "[rotate]".asInstanceOf[`[rotate]`]
+  @scala.inline
+  def `[rows]`: `[rows]` = "[rows]".asInstanceOf[`[rows]`]
+  @scala.inline
+  def `[rowspan]`: `[rowspan]` = "[rowspan]".asInstanceOf[`[rowspan]`]
+  @scala.inline
+  def `[rules]`: `[rules]` = "[rules]".asInstanceOf[`[rules]`]
+  @scala.inline
+  def `[rx]`: `[rx]` = "[rx]".asInstanceOf[`[rx]`]
+  @scala.inline
+  def `[ry]`: `[ry]` = "[ry]".asInstanceOf[`[ry]`]
+  @scala.inline
+  def `[sandbox-allow-modals]`: `[sandbox-allow-modals]` = "[sandbox-allow-modals]".asInstanceOf[`[sandbox-allow-modals]`]
+  @scala.inline
+  def `[sandbox-allow-popups-to-escape-sandbox]`: `[sandbox-allow-popups-to-escape-sandbox]` = "[sandbox-allow-popups-to-escape-sandbox]".asInstanceOf[`[sandbox-allow-popups-to-escape-sandbox]`]
+  @scala.inline
+  def `[sandbox-allow-popups]`: `[sandbox-allow-popups]` = "[sandbox-allow-popups]".asInstanceOf[`[sandbox-allow-popups]`]
+  @scala.inline
+  def `[sandbox-allow-presentation]`: `[sandbox-allow-presentation]` = "[sandbox-allow-presentation]".asInstanceOf[`[sandbox-allow-presentation]`]
+  @scala.inline
+  def `[sandbox-allow-storage-access-by-user-activation]`: `[sandbox-allow-storage-access-by-user-activation]` = "[sandbox-allow-storage-access-by-user-activation]".asInstanceOf[`[sandbox-allow-storage-access-by-user-activation]`]
+  @scala.inline
+  def `[sandbox-allow-top-navigation-by-user-activation]`: `[sandbox-allow-top-navigation-by-user-activation]` = "[sandbox-allow-top-navigation-by-user-activation]".asInstanceOf[`[sandbox-allow-top-navigation-by-user-activation]`]
+  @scala.inline
+  def `[sandbox]`: `[sandbox]` = "[sandbox]".asInstanceOf[`[sandbox]`]
+  @scala.inline
+  def `[scale]`: `[scale]` = "[scale]".asInstanceOf[`[scale]`]
+  @scala.inline
+  def `[scope]`: `[scope]` = "[scope]".asInstanceOf[`[scope]`]
+  @scala.inline
+  def `[scoped]`: `[scoped]` = "[scoped]".asInstanceOf[`[scoped]`]
+  @scala.inline
+  def `[scrollamount]`: `[scrollamount]` = "[scrollamount]".asInstanceOf[`[scrollamount]`]
+  @scala.inline
+  def `[scrolldelay]`: `[scrolldelay]` = "[scrolldelay]".asInstanceOf[`[scrolldelay]`]
+  @scala.inline
+  def `[scrolling]`: `[scrolling]` = "[scrolling]".asInstanceOf[`[scrolling]`]
+  @scala.inline
+  def `[seed]`: `[seed]` = "[seed]".asInstanceOf[`[seed]`]
+  @scala.inline
+  def `[selected]`: `[selected]` = "[selected]".asInstanceOf[`[selected]`]
+  @scala.inline
+  def `[shape-rendering]`: `[shape-rendering]` = "[shape-rendering]".asInstanceOf[`[shape-rendering]`]
+  @scala.inline
+  def `[shape]`: `[shape]` = "[shape]".asInstanceOf[`[shape]`]
+  @scala.inline
+  def `[side]`: `[side]` = "[side]".asInstanceOf[`[side]`]
+  @scala.inline
+  def `[size]`: `[size]` = "[size]".asInstanceOf[`[size]`]
+  @scala.inline
+  def `[sizes]`: `[sizes]` = "[sizes]".asInstanceOf[`[sizes]`]
+  @scala.inline
+  def `[slope]`: `[slope]` = "[slope]".asInstanceOf[`[slope]`]
+  @scala.inline
+  def `[slot]`: `[slot]` = "[slot]".asInstanceOf[`[slot]`]
+  @scala.inline
+  def `[solid-color]`: `[solid-color]` = "[solid-color]".asInstanceOf[`[solid-color]`]
+  @scala.inline
+  def `[solid-opacity]`: `[solid-opacity]` = "[solid-opacity]".asInstanceOf[`[solid-opacity]`]
+  @scala.inline
+  def `[spacing]`: `[spacing]` = "[spacing]".asInstanceOf[`[spacing]`]
+  @scala.inline
+  def `[span]`: `[span]` = "[span]".asInstanceOf[`[span]`]
+  @scala.inline
+  def `[specularConstant]`: `[specularConstant]` = "[specularConstant]".asInstanceOf[`[specularConstant]`]
+  @scala.inline
+  def `[specularExponent]`: `[specularExponent]` = "[specularExponent]".asInstanceOf[`[specularExponent]`]
+  @scala.inline
+  def `[spellcheck]`: `[spellcheck]` = "[spellcheck]".asInstanceOf[`[spellcheck]`]
+  @scala.inline
+  def `[spreadMethod]`: `[spreadMethod]` = "[spreadMethod]".asInstanceOf[`[spreadMethod]`]
+  @scala.inline
+  def `[src]`: `[src]` = "[src]".asInstanceOf[`[src]`]
+  @scala.inline
+  def `[srcdoc]`: `[srcdoc]` = "[srcdoc]".asInstanceOf[`[srcdoc]`]
+  @scala.inline
+  def `[srclang]`: `[srclang]` = "[srclang]".asInstanceOf[`[srclang]`]
+  @scala.inline
+  def `[srcset]`: `[srcset]` = "[srcset]".asInstanceOf[`[srcset]`]
+  @scala.inline
+  def `[standby]`: `[standby]` = "[standby]".asInstanceOf[`[standby]`]
+  @scala.inline
+  def `[startOffset]`: `[startOffset]` = "[startOffset]".asInstanceOf[`[startOffset]`]
+  @scala.inline
+  def `[start]`: `[start]` = "[start]".asInstanceOf[`[start]`]
+  @scala.inline
+  def `[stdDeviation]`: `[stdDeviation]` = "[stdDeviation]".asInstanceOf[`[stdDeviation]`]
+  @scala.inline
+  def `[stemh]`: `[stemh]` = "[stemh]".asInstanceOf[`[stemh]`]
+  @scala.inline
+  def `[stemv]`: `[stemv]` = "[stemv]".asInstanceOf[`[stemv]`]
+  @scala.inline
+  def `[stitchTiles]`: `[stitchTiles]` = "[stitchTiles]".asInstanceOf[`[stitchTiles]`]
+  @scala.inline
+  def `[stop-color]`: `[stop-color]` = "[stop-color]".asInstanceOf[`[stop-color]`]
+  @scala.inline
+  def `[stop-opacity]`: `[stop-opacity]` = "[stop-opacity]".asInstanceOf[`[stop-opacity]`]
+  @scala.inline
+  def `[strikethrough-position]`: `[strikethrough-position]` = "[strikethrough-position]".asInstanceOf[`[strikethrough-position]`]
+  @scala.inline
+  def `[strikethrough-thickness]`: `[strikethrough-thickness]` = "[strikethrough-thickness]".asInstanceOf[`[strikethrough-thickness]`]
+  @scala.inline
+  def `[string]`: `[string]` = "[string]".asInstanceOf[`[string]`]
+  @scala.inline
+  def `[stroke-dasharray]`: `[stroke-dasharray]` = "[stroke-dasharray]".asInstanceOf[`[stroke-dasharray]`]
+  @scala.inline
+  def `[stroke-dashoffset]`: `[stroke-dashoffset]` = "[stroke-dashoffset]".asInstanceOf[`[stroke-dashoffset]`]
+  @scala.inline
+  def `[stroke-linecap]`: `[stroke-linecap]` = "[stroke-linecap]".asInstanceOf[`[stroke-linecap]`]
+  @scala.inline
+  def `[stroke-linejoin]`: `[stroke-linejoin]` = "[stroke-linejoin]".asInstanceOf[`[stroke-linejoin]`]
+  @scala.inline
+  def `[stroke-miterlimit]`: `[stroke-miterlimit]` = "[stroke-miterlimit]".asInstanceOf[`[stroke-miterlimit]`]
+  @scala.inline
+  def `[stroke-opacity]`: `[stroke-opacity]` = "[stroke-opacity]".asInstanceOf[`[stroke-opacity]`]
+  @scala.inline
+  def `[stroke-width]`: `[stroke-width]` = "[stroke-width]".asInstanceOf[`[stroke-width]`]
+  @scala.inline
+  def `[stroke]`: `[stroke]` = "[stroke]".asInstanceOf[`[stroke]`]
+  @scala.inline
+  def `[style]`: `[style]` = "[style]".asInstanceOf[`[style]`]
+  @scala.inline
+  def `[summary]`: `[summary]` = "[summary]".asInstanceOf[`[summary]`]
+  @scala.inline
+  def `[surfaceScale]`: `[surfaceScale]` = "[surfaceScale]".asInstanceOf[`[surfaceScale]`]
+  @scala.inline
+  def `[systemLanguage]`: `[systemLanguage]` = "[systemLanguage]".asInstanceOf[`[systemLanguage]`]
+  @scala.inline
+  def `[tabindex]`: `[tabindex]` = "[tabindex]".asInstanceOf[`[tabindex]`]
+  @scala.inline
+  def `[targetX]`: `[targetX]` = "[targetX]".asInstanceOf[`[targetX]`]
+  @scala.inline
+  def `[targetY]`: `[targetY]` = "[targetY]".asInstanceOf[`[targetY]`]
+  @scala.inline
+  def `[target]`: `[target]` = "[target]".asInstanceOf[`[target]`]
+  @scala.inline
+  def `[text-anchor]`: `[text-anchor]` = "[text-anchor]".asInstanceOf[`[text-anchor]`]
+  @scala.inline
+  def `[text-decoration]`: `[text-decoration]` = "[text-decoration]".asInstanceOf[`[text-decoration]`]
+  @scala.inline
+  def `[text-overflow]`: `[text-overflow]` = "[text-overflow]".asInstanceOf[`[text-overflow]`]
+  @scala.inline
+  def `[text-rendering]`: `[text-rendering]` = "[text-rendering]".asInstanceOf[`[text-rendering]`]
+  @scala.inline
+  def `[textLength]`: `[textLength]` = "[textLength]".asInstanceOf[`[textLength]`]
+  @scala.inline
+  def `[text]`: `[text]` = "[text]".asInstanceOf[`[text]`]
+  @scala.inline
+  def `[title]`: `[title]` = "[title]".asInstanceOf[`[title]`]
+  @scala.inline
+  def `[to]`: `[to]` = "[to]".asInstanceOf[`[to]`]
+  @scala.inline
+  def `[topmargin]`: `[topmargin]` = "[topmargin]".asInstanceOf[`[topmargin]`]
+  @scala.inline
+  def `[transform]`: `[transform]` = "[transform]".asInstanceOf[`[transform]`]
+  @scala.inline
+  def `[translate]`: `[translate]` = "[translate]".asInstanceOf[`[translate]`]
+  @scala.inline
+  def `[truespeed]`: `[truespeed]` = "[truespeed]".asInstanceOf[`[truespeed]`]
+  @scala.inline
+  def `[type]`: `[type]` = "[type]".asInstanceOf[`[type]`]
+  @scala.inline
+  def `[typemustmatch]`: `[typemustmatch]` = "[typemustmatch]".asInstanceOf[`[typemustmatch]`]
+  @scala.inline
+  def `[u1]`: `[u1]` = "[u1]".asInstanceOf[`[u1]`]
+  @scala.inline
+  def `[u2]`: `[u2]` = "[u2]".asInstanceOf[`[u2]`]
+  @scala.inline
+  def `[underline-position]`: `[underline-position]` = "[underline-position]".asInstanceOf[`[underline-position]`]
+  @scala.inline
+  def `[underline-thickness]`: `[underline-thickness]` = "[underline-thickness]".asInstanceOf[`[underline-thickness]`]
+  @scala.inline
+  def `[unicode-bidi]`: `[unicode-bidi]` = "[unicode-bidi]".asInstanceOf[`[unicode-bidi]`]
+  @scala.inline
+  def `[unicode-range]`: `[unicode-range]` = "[unicode-range]".asInstanceOf[`[unicode-range]`]
+  @scala.inline
+  def `[unicode]`: `[unicode]` = "[unicode]".asInstanceOf[`[unicode]`]
+  @scala.inline
+  def `[units-per-em]`: `[units-per-em]` = "[units-per-em]".asInstanceOf[`[units-per-em]`]
+  @scala.inline
+  def `[usemap]`: `[usemap]` = "[usemap]".asInstanceOf[`[usemap]`]
+  @scala.inline
+  def `[v-alphabetic]`: `[v-alphabetic]` = "[v-alphabetic]".asInstanceOf[`[v-alphabetic]`]
+  @scala.inline
+  def `[v-hanging]`: `[v-hanging]` = "[v-hanging]".asInstanceOf[`[v-hanging]`]
+  @scala.inline
+  def `[v-ideographic]`: `[v-ideographic]` = "[v-ideographic]".asInstanceOf[`[v-ideographic]`]
+  @scala.inline
+  def `[v-mathematical]`: `[v-mathematical]` = "[v-mathematical]".asInstanceOf[`[v-mathematical]`]
+  @scala.inline
+  def `[valign]`: `[valign]` = "[valign]".asInstanceOf[`[valign]`]
+  @scala.inline
+  def `[value]`: `[value]` = "[value]".asInstanceOf[`[value]`]
+  @scala.inline
+  def `[values]`: `[values]` = "[values]".asInstanceOf[`[values]`]
+  @scala.inline
+  def `[valuetype]`: `[valuetype]` = "[valuetype]".asInstanceOf[`[valuetype]`]
+  @scala.inline
+  def `[vector-effect]`: `[vector-effect]` = "[vector-effect]".asInstanceOf[`[vector-effect]`]
+  @scala.inline
+  def `[version]`: `[version]` = "[version]".asInstanceOf[`[version]`]
+  @scala.inline
+  def `[vert-adv-y]`: `[vert-adv-y]` = "[vert-adv-y]".asInstanceOf[`[vert-adv-y]`]
+  @scala.inline
+  def `[vert-origin-x]`: `[vert-origin-x]` = "[vert-origin-x]".asInstanceOf[`[vert-origin-x]`]
+  @scala.inline
+  def `[vert-origin-y]`: `[vert-origin-y]` = "[vert-origin-y]".asInstanceOf[`[vert-origin-y]`]
+  @scala.inline
+  def `[viewBox]`: `[viewBox]` = "[viewBox]".asInstanceOf[`[viewBox]`]
+  @scala.inline
+  def `[viewTarget]`: `[viewTarget]` = "[viewTarget]".asInstanceOf[`[viewTarget]`]
+  @scala.inline
+  def `[visibility]`: `[visibility]` = "[visibility]".asInstanceOf[`[visibility]`]
+  @scala.inline
+  def `[vlink]`: `[vlink]` = "[vlink]".asInstanceOf[`[vlink]`]
+  @scala.inline
+  def `[volume]`: `[volume]` = "[volume]".asInstanceOf[`[volume]`]
+  @scala.inline
+  def `[vspace]`: `[vspace]` = "[vspace]".asInstanceOf[`[vspace]`]
+  @scala.inline
+  def `[webkitallowfullscreen]`: `[webkitallowfullscreen]` = "[webkitallowfullscreen]".asInstanceOf[`[webkitallowfullscreen]`]
+  @scala.inline
+  def `[white-space]`: `[white-space]` = "[white-space]".asInstanceOf[`[white-space]`]
+  @scala.inline
+  def `[width]`: `[width]` = "[width]".asInstanceOf[`[width]`]
+  @scala.inline
+  def `[widths]`: `[widths]` = "[widths]".asInstanceOf[`[widths]`]
+  @scala.inline
+  def `[word-spacing]`: `[word-spacing]` = "[word-spacing]".asInstanceOf[`[word-spacing]`]
+  @scala.inline
+  def `[wrap]`: `[wrap]` = "[wrap]".asInstanceOf[`[wrap]`]
+  @scala.inline
+  def `[writing-mode]`: `[writing-mode]` = "[writing-mode]".asInstanceOf[`[writing-mode]`]
+  @scala.inline
+  def `[x-height]`: `[x-height]` = "[x-height]".asInstanceOf[`[x-height]`]
+  @scala.inline
+  def `[x1]`: `[x1]` = "[x1]".asInstanceOf[`[x1]`]
+  @scala.inline
+  def `[x2]`: `[x2]` = "[x2]".asInstanceOf[`[x2]`]
+  @scala.inline
+  def `[xChannelSelector]`: `[xChannelSelector]` = "[xChannelSelector]".asInstanceOf[`[xChannelSelector]`]
+  @scala.inline
+  def `[x]`: `[x]` = "[x]".asInstanceOf[`[x]`]
+  @scala.inline
+  def `[xmlns]`: `[xmlns]` = "[xmlns]".asInstanceOf[`[xmlns]`]
+  @scala.inline
+  def `[y1]`: `[y1]` = "[y1]".asInstanceOf[`[y1]`]
+  @scala.inline
+  def `[y2]`: `[y2]` = "[y2]".asInstanceOf[`[y2]`]
+  @scala.inline
+  def `[yChannelSelector]`: `[yChannelSelector]` = "[yChannelSelector]".asInstanceOf[`[yChannelSelector]`]
+  @scala.inline
+  def `[y]`: `[y]` = "[y]".asInstanceOf[`[y]`]
+  @scala.inline
+  def `[z]`: `[z]` = "[z]".asInstanceOf[`[z]`]
+  @scala.inline
+  def `[zoomAndPan]`: `[zoomAndPan]` = "[zoomAndPan]".asInstanceOf[`[zoomAndPan]`]
   @scala.inline
   def above: above = "above".asInstanceOf[above]
   @scala.inline

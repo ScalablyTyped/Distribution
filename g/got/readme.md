@@ -4,16 +4,16 @@
 Typings are for version 9.6
 
 ## Library description:
-Simplified HTTP requests
+Human-friendly and powerful HTTP request library for Node.js
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | got |
-| Keywords           | http, https, get, got, url, uri, request, util, utility, simple, curl, wget, fetch, net, network, electron |
-| # releases         | 24 |
-| # dependents       | 1996 |
-| # downloads        | 246453040 |
-| # stars            | 124 |
+| Keywords           | http, https, http2, get, got, url, uri, request, simple, curl, wget, fetch, net, network, electron, brotli, requests, human-friendly, axios, superagent |
+| # releases         | 39 |
+| # dependents       | 2468 |
+| # downloads        | 348549144 |
+| # stars            | 125 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/got#readme)

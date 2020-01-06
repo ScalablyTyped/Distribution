@@ -8,13 +8,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Pick<react-transition-group.react-transition-group/Transition.TransitionProps, @material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerKeys> */
+@js.native
 trait TransitionHandlerProps extends js.Object {
-  var onEnter: js.UndefOr[EnterHandler] = js.undefined
-  var onEntered: js.UndefOr[EnterHandler] = js.undefined
-  var onEntering: js.UndefOr[EnterHandler] = js.undefined
-  var onExit: js.UndefOr[ExitHandler] = js.undefined
-  var onExited: js.UndefOr[ExitHandler] = js.undefined
-  var onExiting: js.UndefOr[ExitHandler] = js.undefined
+  var onEnter: js.UndefOr[EnterHandler] = js.native
+  var onEntered: js.UndefOr[EnterHandler] = js.native
+  var onEntering: js.UndefOr[EnterHandler] = js.native
+  var onExit: js.UndefOr[ExitHandler] = js.native
+  var onExited: js.UndefOr[ExitHandler] = js.native
+  var onExiting: js.UndefOr[ExitHandler] = js.native
 }
 
 object TransitionHandlerProps {

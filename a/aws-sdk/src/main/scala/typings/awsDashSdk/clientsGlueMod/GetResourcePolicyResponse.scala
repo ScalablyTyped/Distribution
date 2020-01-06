@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetResourcePolicyResponse extends js.Object {
   /**
     * The date and time at which the policy was created.
     */
-  var CreateTime: js.UndefOr[Timestamp] = js.undefined
+  var CreateTime: js.UndefOr[Timestamp] = js.native
   /**
     * Contains the hash value associated with this policy.
     */
-  var PolicyHash: js.UndefOr[HashString] = js.undefined
+  var PolicyHash: js.UndefOr[HashString] = js.native
   /**
     * Contains the requested policy document, in JSON format.
     */
-  var PolicyInJson: js.UndefOr[PolicyJsonString] = js.undefined
+  var PolicyInJson: js.UndefOr[PolicyJsonString] = js.native
   /**
     * The date and time at which the policy was last updated.
     */
-  var UpdateTime: js.UndefOr[Timestamp] = js.undefined
+  var UpdateTime: js.UndefOr[Timestamp] = js.native
 }
 
 object GetResourcePolicyResponse {
@@ -32,10 +33,10 @@ object GetResourcePolicyResponse {
     UpdateTime: Timestamp = null
   ): GetResourcePolicyResponse = {
     val __obj = js.Dynamic.literal()
-    if (CreateTime != null) __obj.updateDynamic("CreateTime")(CreateTime)
-    if (PolicyHash != null) __obj.updateDynamic("PolicyHash")(PolicyHash)
-    if (PolicyInJson != null) __obj.updateDynamic("PolicyInJson")(PolicyInJson)
-    if (UpdateTime != null) __obj.updateDynamic("UpdateTime")(UpdateTime)
+    if (CreateTime != null) __obj.updateDynamic("CreateTime")(CreateTime.asInstanceOf[js.Any])
+    if (PolicyHash != null) __obj.updateDynamic("PolicyHash")(PolicyHash.asInstanceOf[js.Any])
+    if (PolicyInJson != null) __obj.updateDynamic("PolicyInJson")(PolicyInJson.asInstanceOf[js.Any])
+    if (UpdateTime != null) __obj.updateDynamic("UpdateTime")(UpdateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResourcePolicyResponse]
   }
 }

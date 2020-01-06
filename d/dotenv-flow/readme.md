@@ -10,9 +10,9 @@ Loads environment variables from `.env.[development|test|production][.local]` fi
 | ------------------ | :-------------: |
 | Full name          | dotenv-flow |
 | Keywords           | dotenv, node_env, development, test, production, local |
-| # releases         | 9 |
-| # dependents       | 4 |
-| # downloads        | 62235 |
+| # releases         | 19 |
+| # dependents       | 18 |
+| # downloads        | 485409 |
 | # stars            | 0 |
 
 ## Links

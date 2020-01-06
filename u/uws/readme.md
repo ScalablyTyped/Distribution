@@ -10,9 +10,9 @@ Typings are for version 0.13
 | ------------------ | :-------------: |
 | Full name          | uws |
 | Keywords           | - |
-| # releases         | 15 |
-| # dependents       | 196 |
-| # downloads        | 22622803 |
+| # releases         | 9 |
+| # dependents       | 194 |
+| # downloads        | 16266987 |
 | # stars            | 41 |
 
 ## Links

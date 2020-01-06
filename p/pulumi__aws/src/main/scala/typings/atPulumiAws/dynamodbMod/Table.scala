@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/dynamodb", "Table")
 @js.native
 class Table protected ()
-  extends typings.atPulumiAws.dynamodbDynamodbMixinsMod.dynamodbTableMod.Table {
+  extends typings.atPulumiAws.dynamodbTableMod.Table {
   /**
     * Create a Table resource with the given unique name, arguments, and options.
     *
@@ -36,13 +36,13 @@ object Table extends js.Object {
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
     */
-  def get(name: String, id: Input[ID]): typings.atPulumiAws.dynamodbDynamodbMixinsMod.dynamodbTableMod.Table = js.native
-  def get(name: String, id: Input[ID], state: TableState): typings.atPulumiAws.dynamodbDynamodbMixinsMod.dynamodbTableMod.Table = js.native
-  def get(name: String, id: Input[ID], state: TableState, opts: CustomResourceOptions): typings.atPulumiAws.dynamodbDynamodbMixinsMod.dynamodbTableMod.Table = js.native
+  def get(name: String, id: Input[ID]): typings.atPulumiAws.dynamodbTableMod.Table = js.native
+  def get(name: String, id: Input[ID], state: TableState): typings.atPulumiAws.dynamodbTableMod.Table = js.native
+  def get(name: String, id: Input[ID], state: TableState, opts: CustomResourceOptions): typings.atPulumiAws.dynamodbTableMod.Table = js.native
   /**
     * Returns true if the given object is an instance of Table.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
-  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dynamodb/dynamodbMixins.@pulumi/aws/dynamodb/table.Table */ Boolean = js.native
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dynamodb/table.Table */ Boolean = js.native
 }
 

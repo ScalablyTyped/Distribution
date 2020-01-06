@@ -74,12 +74,12 @@ trait DMS extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateEventSubscriptionResponse, Unit]
   ): Request[CreateEventSubscriptionResponse, AWSError] = js.native
   /**
-    * Creates the replication instance using the specified parameters.
+    * Creates the replication instance using the specified parameters. AWS DMS requires that your account have certain roles with appropriate permissions before you can create a replication instance. For information on the required roles, see Creating the IAM Roles to Use With the AWS CLI and AWS DMS API. For information on the required permissions, see IAM Permissions Needed to Use AWS DMS.
     */
   def createReplicationInstance(): Request[CreateReplicationInstanceResponse, AWSError] = js.native
   def createReplicationInstance(callback: js.Function2[/* err */ AWSError, /* data */ CreateReplicationInstanceResponse, Unit]): Request[CreateReplicationInstanceResponse, AWSError] = js.native
   /**
-    * Creates the replication instance using the specified parameters.
+    * Creates the replication instance using the specified parameters. AWS DMS requires that your account have certain roles with appropriate permissions before you can create a replication instance. For information on the required roles, see Creating the IAM Roles to Use With the AWS CLI and AWS DMS API. For information on the required permissions, see IAM Permissions Needed to Use AWS DMS.
     */
   def createReplicationInstance(params: CreateReplicationInstanceMessage): Request[CreateReplicationInstanceResponse, AWSError] = js.native
   def createReplicationInstance(

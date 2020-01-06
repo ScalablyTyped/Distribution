@@ -4,27 +4,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SpotDatafeedSubscription extends js.Object {
   /**
     * The Amazon S3 bucket where the Spot Instance data feed is located.
     */
-  var Bucket: js.UndefOr[String] = js.undefined
+  var Bucket: js.UndefOr[String] = js.native
   /**
     * The fault codes for the Spot Instance request, if any.
     */
-  var Fault: js.UndefOr[SpotInstanceStateFault] = js.undefined
+  var Fault: js.UndefOr[SpotInstanceStateFault] = js.native
   /**
     * The AWS account ID of the account.
     */
-  var OwnerId: js.UndefOr[String] = js.undefined
+  var OwnerId: js.UndefOr[String] = js.native
   /**
     * The prefix that is prepended to data feed files.
     */
-  var Prefix: js.UndefOr[String] = js.undefined
+  var Prefix: js.UndefOr[String] = js.native
   /**
     * The state of the Spot Instance data feed subscription.
     */
-  var State: js.UndefOr[DatafeedSubscriptionState] = js.undefined
+  var State: js.UndefOr[DatafeedSubscriptionState] = js.native
 }
 
 object SpotDatafeedSubscription {
@@ -37,10 +38,10 @@ object SpotDatafeedSubscription {
     State: DatafeedSubscriptionState = null
   ): SpotDatafeedSubscription = {
     val __obj = js.Dynamic.literal()
-    if (Bucket != null) __obj.updateDynamic("Bucket")(Bucket)
-    if (Fault != null) __obj.updateDynamic("Fault")(Fault)
-    if (OwnerId != null) __obj.updateDynamic("OwnerId")(OwnerId)
-    if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix)
+    if (Bucket != null) __obj.updateDynamic("Bucket")(Bucket.asInstanceOf[js.Any])
+    if (Fault != null) __obj.updateDynamic("Fault")(Fault.asInstanceOf[js.Any])
+    if (OwnerId != null) __obj.updateDynamic("OwnerId")(OwnerId.asInstanceOf[js.Any])
+    if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix.asInstanceOf[js.Any])
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpotDatafeedSubscription]
   }

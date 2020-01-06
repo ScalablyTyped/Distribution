@@ -30,7 +30,9 @@ trait LodashMapValues extends js.Object {
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       TResult
     ]
-  ): LodashMapValues2x1[T, TResult] = js.native
+  ): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in keyof T ]: TResult}
+    */ typings.lodash.lodashStrings.LodashMapValues with js.Any = js.native
   def apply[T /* <: js.Object */, TResult](
     callback: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 

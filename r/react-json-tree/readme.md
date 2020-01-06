@@ -10,9 +10,9 @@ React JSON Viewer Component, Extracted from redux-devtools
 | ------------------ | :-------------: |
 | Full name          | react-json-tree |
 | Keywords           | react, json viewer |
-| # releases         | 6 |
-| # dependents       | 89 |
-| # downloads        | 4456285 |
+| # releases         | 3 |
+| # dependents       | 105 |
+| # downloads        | 5636868 |
 | # stars            | 4 |
 
 ## Links

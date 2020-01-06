@@ -14,7 +14,7 @@ package object Animated {
   type Base = typings.reactDashNative.reactDashNativeMod.Animated.Animated
   type EndCallback = js.Function1[/* result */ EndResult, Unit]
   type Mapping = (StringDictionary[
-    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias react-native.react-native.Animated.Mapping */ js.Object
+    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias react-native.react-native.Animated.Mapping */ js.Object
   ]) | AnimatedValue
   type ValueListenerCallback = js.Function1[/* state */ Anon_Value, Unit]
   type ValueXYListenerCallback = js.Function1[/* value */ Anon_X, Unit]

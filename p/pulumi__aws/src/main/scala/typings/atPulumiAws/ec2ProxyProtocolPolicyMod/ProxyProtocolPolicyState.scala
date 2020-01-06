@@ -5,17 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ProxyProtocolPolicyState extends js.Object {
   /**
     * List of instance ports to which the policy
     * should be applied. This can be specified if the protocol is SSL or TCP.
     */
-  val instancePorts: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val instancePorts: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The load balancer to which the policy
     * should be attached.
     */
-  val loadBalancer: js.UndefOr[Input[String]] = js.undefined
+  val loadBalancer: js.UndefOr[Input[String]] = js.native
 }
 
 object ProxyProtocolPolicyState {

@@ -11,8 +11,8 @@ The lodash method `_.flowRight` exported as a module.
 | Full name          | lodash.flowright |
 | Keywords           | lodash-modularized, flowright |
 | # releases         | 0 |
-| # dependents       | 44 |
-| # downloads        | 4794644 |
+| # dependents       | 49 |
+| # downloads        | 6928499 |
 | # stars            | 0 |
 
 ## Links

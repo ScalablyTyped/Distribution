@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CreateProvisioningArtifactInput extends js.Object {
   /**
     * The language code.    en - English (default)    jp - Japanese    zh - Chinese  
     */
-  var AcceptLanguage: js.UndefOr[typings.awsDashSdk.clientsServicecatalogMod.AcceptLanguage] = js.undefined
+  var AcceptLanguage: js.UndefOr[typings.awsDashSdk.clientsServicecatalogMod.AcceptLanguage] = js.native
   /**
     * A unique identifier that you provide to ensure idempotency. If multiple requests differ only by the idempotency token, the same response is returned for each repeated request.
     */
-  var IdempotencyToken: typings.awsDashSdk.clientsServicecatalogMod.IdempotencyToken
+  var IdempotencyToken: typings.awsDashSdk.clientsServicecatalogMod.IdempotencyToken = js.native
   /**
     * The configuration for the provisioning artifact.
     */
-  var Parameters: ProvisioningArtifactProperties
+  var Parameters: ProvisioningArtifactProperties = js.native
   /**
     * The product identifier.
     */
-  var ProductId: Id
+  var ProductId: Id = js.native
 }
 
 object CreateProvisioningArtifactInput {
@@ -31,8 +32,8 @@ object CreateProvisioningArtifactInput {
     ProductId: Id,
     AcceptLanguage: AcceptLanguage = null
   ): CreateProvisioningArtifactInput = {
-    val __obj = js.Dynamic.literal(IdempotencyToken = IdempotencyToken, Parameters = Parameters, ProductId = ProductId)
-    if (AcceptLanguage != null) __obj.updateDynamic("AcceptLanguage")(AcceptLanguage)
+    val __obj = js.Dynamic.literal(IdempotencyToken = IdempotencyToken.asInstanceOf[js.Any], Parameters = Parameters.asInstanceOf[js.Any], ProductId = ProductId.asInstanceOf[js.Any])
+    if (AcceptLanguage != null) __obj.updateDynamic("AcceptLanguage")(AcceptLanguage.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateProvisioningArtifactInput]
   }
 }

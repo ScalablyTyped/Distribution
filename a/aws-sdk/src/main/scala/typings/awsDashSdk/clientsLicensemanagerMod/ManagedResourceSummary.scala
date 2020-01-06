@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ManagedResourceSummary extends js.Object {
   /**
     * Number of resources associated with licenses.
     */
-  var AssociationCount: js.UndefOr[BoxLong] = js.undefined
+  var AssociationCount: js.UndefOr[BoxLong] = js.native
   /**
-    * Type of resource associated with a license (instance, host, or AMI).
+    * Type of resource associated with a license.
     */
-  var ResourceType: js.UndefOr[typings.awsDashSdk.clientsLicensemanagerMod.ResourceType] = js.undefined
+  var ResourceType: js.UndefOr[typings.awsDashSdk.clientsLicensemanagerMod.ResourceType] = js.native
 }
 
 object ManagedResourceSummary {

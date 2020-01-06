@@ -1,5 +1,6 @@
 package typings.atPulumiAws.glueTriggerMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.atPulumiAws.typesOutputMod.glue.TriggerAction
 import typings.atPulumiAws.typesOutputMod.glue.TriggerPredicate
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
@@ -28,6 +29,10 @@ class Trigger protected () extends CustomResource {
     */
   val actions: Output[js.Array[TriggerAction]] = js.native
   /**
+    * Amazon Resource Name (ARN) of Glue Trigger
+    */
+  val arn: Output[String] = js.native
+  /**
     * A description of the new trigger.
     */
   val description: Output[js.UndefOr[String]] = js.native
@@ -48,9 +53,17 @@ class Trigger protected () extends CustomResource {
     */
   val schedule: Output[js.UndefOr[String]] = js.native
   /**
+    * Key-value mapping of resource tags
+    */
+  val tags: Output[js.UndefOr[StringDictionary[_]]] = js.native
+  /**
     * The type of trigger. Valid values are `CONDITIONAL`, `ON_DEMAND`, and `SCHEDULED`.
     */
   val `type`: Output[String] = js.native
+  /**
+    * A workflow to which the trigger should be associated to. Every workflow graph (DAG) needs a starting trigger (`ON_DEMAND` or `SCHEDULED` type) and can contain multiple additional `CONDITIONAL` triggers.
+    */
+  val workflowName: Output[js.UndefOr[String]] = js.native
 }
 
 /* static members */

@@ -10,9 +10,9 @@ Typings are for version 2.8
 | ------------------ | :-------------: |
 | Full name          | ltx |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 83 |
-| # downloads        | 1028269 |
+| # releases         | 8 |
+| # dependents       | 85 |
+| # downloads        | 1130830 |
 | # stars            | 3 |
 
 ## Links

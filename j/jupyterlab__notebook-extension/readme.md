@@ -10,9 +10,9 @@ JupyterLab - Notebook Extension
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/notebook-extension |
 | Keywords           | - |
-| # releases         | 46 |
+| # releases         | 65 |
 | # dependents       | 2 |
-| # downloads        | 589338 |
+| # downloads        | 724973 |
 | # stars            | 0 |
 
 ## Links

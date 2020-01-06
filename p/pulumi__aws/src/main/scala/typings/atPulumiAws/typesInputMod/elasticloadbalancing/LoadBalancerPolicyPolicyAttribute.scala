@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LoadBalancerPolicyPolicyAttribute extends js.Object {
-  var name: js.UndefOr[Input[String]] = js.undefined
-  var value: js.UndefOr[Input[String]] = js.undefined
+  var name: js.UndefOr[Input[String]] = js.native
+  var value: js.UndefOr[Input[String]] = js.native
 }
 
 object LoadBalancerPolicyPolicyAttribute {

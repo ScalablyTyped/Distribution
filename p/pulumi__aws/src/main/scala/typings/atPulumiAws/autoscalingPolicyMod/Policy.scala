@@ -62,6 +62,10 @@ class Policy protected () extends CustomResource {
     * up. A negative value scales down.
     */
   val scalingAdjustment: Output[js.UndefOr[Double]] = js.native
+  /**
+    * A set of adjustments that manage
+    * group scaling. These have the following structure:
+    */
   val stepAdjustments: Output[js.UndefOr[js.Array[PolicyStepAdjustment]]] = js.native
   /**
     * A target tracking policy. These have the following structure:

@@ -11,8 +11,8 @@ A simple module for parsing and composing XML.
 | Full name          | pixl-xml |
 | Keywords           | xml |
 | # releases         | 0 |
-| # dependents       | 34 |
-| # downloads        | 289961 |
+| # dependents       | 38 |
+| # downloads        | 325850 |
 | # stars            | 9 |
 
 ## Links

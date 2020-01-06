@@ -10,9 +10,9 @@ An Infinite Scroll component in react.
 | ------------------ | :-------------: |
 | Full name          | react-infinite-scroll-component |
 | Keywords           | react, infinite-scroll, infinite, scroll, component, react-component |
-| # releases         | 19 |
-| # dependents       | 11 |
-| # downloads        | 716690 |
+| # releases         | 20 |
+| # dependents       | 22 |
+| # downloads        | 1465285 |
 | # stars            | 6 |
 
 ## Links

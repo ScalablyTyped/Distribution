@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Fn_ActionCreator extends js.Object {
-  def apply[M /* <: ActionCreatorsMapObject[_] */, N /* <: ActionCreatorsMapObject[_] */](actionCreators: M, dispatch: Dispatch[AnyAction]): N = js.native
+  def apply[A, M /* <: ActionCreatorsMapObject[A] */](actionCreators: M, dispatch: Dispatch[AnyAction]): M = js.native
 }
 

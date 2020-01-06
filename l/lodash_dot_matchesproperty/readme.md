@@ -12,7 +12,7 @@ The lodash method `_.matchesProperty` exported as a module.
 | Keywords           | lodash-modularized, matchesproperty |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 66451 |
+| # downloads        | 102778 |
 | # stars            | 0 |
 
 ## Links

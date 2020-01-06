@@ -1,6 +1,6 @@
 package typings.tern.libInferMod
 
-import typings.tern.Anon_NameString_245567777
+import typings.tern.Anon_NameString_1102027680
 import typings.tern.ternStrings.bool
 import typings.tern.ternStrings.number
 import typings.tern.ternStrings.string
@@ -22,7 +22,7 @@ class PrimCls () extends Prim {
   override var origin: String = js.native
   /** The prototype of the object, or null. */
   /* CompleteClass */
-  override var proto: Obj with Anon_NameString_245567777 = js.native
+  override var proto: Obj with Anon_NameString_1102027680 = js.native
   /* CompleteClass */
   override def addType(args: js.Any*): Unit = js.native
   /* CompleteClass */

@@ -10,9 +10,9 @@ Utility for getting a function's name for node and the browser
 | ------------------ | :-------------: |
 | Full name          | get-func-name |
 | Keywords           | get-func-name, chai util |
-| # releases         | 1 |
-| # dependents       | 7 |
-| # downloads        | 50710172 |
+| # releases         | 0 |
+| # dependents       | 8 |
+| # downloads        | 88052528 |
 | # stars            | 1 |
 
 ## Links

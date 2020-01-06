@@ -10,9 +10,9 @@ Lazyload images with jQuery
 | ------------------ | :-------------: |
 | Full name          | jquery-lazyload |
 | Keywords           | jquery-plugin, ecosystem:jquery |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 371778 |
+| # downloads        | 630197 |
 | # stars            | 6 |
 
 ## Links

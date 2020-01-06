@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MaintenanceWindowTaskTaskInvocationParametersLambdaParameters extends js.Object {
   /**
     * Pass client-specific information to the Lambda function that you are invoking.
     */
-  var clientContext: js.UndefOr[Input[String]] = js.undefined
+  var clientContext: js.UndefOr[Input[String]] = js.native
   /**
     * JSON to provide to your Lambda function as input.
     */
-  var payload: js.UndefOr[Input[String]] = js.undefined
+  var payload: js.UndefOr[Input[String]] = js.native
   /**
     * Specify a Lambda function version or alias name.
     */
-  var qualifier: js.UndefOr[Input[String]] = js.undefined
+  var qualifier: js.UndefOr[Input[String]] = js.native
 }
 
 object MaintenanceWindowTaskTaskInvocationParametersLambdaParameters {

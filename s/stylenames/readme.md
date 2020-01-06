@@ -12,7 +12,7 @@ Improves usage of html inline styles in javascript.
 | Keywords           | inline-styles, styles, es6, middleware |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 3385 |
+| # downloads        | 18483 |
 | # stars            | 0 |
 
 ## Links

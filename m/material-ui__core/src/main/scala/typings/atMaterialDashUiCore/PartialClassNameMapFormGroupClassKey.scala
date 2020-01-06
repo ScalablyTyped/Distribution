@@ -5,9 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/FormGroup/FormGroup.FormGroupClassKey>> */
+@js.native
 trait PartialClassNameMapFormGroupClassKey extends js.Object {
-  var root: js.UndefOr[String] = js.undefined
-  var row: js.UndefOr[String] = js.undefined
+  var root: js.UndefOr[String] = js.native
+  var row: js.UndefOr[String] = js.native
 }
 
 object PartialClassNameMapFormGroupClassKey {

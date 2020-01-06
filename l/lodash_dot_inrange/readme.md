@@ -11,8 +11,8 @@ The lodash method `_.inRange` exported as a module.
 | Full name          | lodash.inrange |
 | Keywords           | lodash-modularized, inrange |
 | # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 65166 |
+| # dependents       | 13 |
+| # downloads        | 87488 |
 | # stars            | 0 |
 
 ## Links

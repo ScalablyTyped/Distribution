@@ -26,20 +26,69 @@ trait Chime extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ AssociatePhoneNumberWithUserResponse, Unit]
   ): Request[AssociatePhoneNumberWithUserResponse, AWSError] = js.native
   /**
-    * Associates a phone number with the specified Amazon Chime Voice Connector.
+    * Associates phone numbers with the specified Amazon Chime Voice Connector.
     */
   def associatePhoneNumbersWithVoiceConnector(): Request[AssociatePhoneNumbersWithVoiceConnectorResponse, AWSError] = js.native
   def associatePhoneNumbersWithVoiceConnector(
     callback: js.Function2[/* err */ AWSError, /* data */ AssociatePhoneNumbersWithVoiceConnectorResponse, Unit]
   ): Request[AssociatePhoneNumbersWithVoiceConnectorResponse, AWSError] = js.native
   /**
-    * Associates a phone number with the specified Amazon Chime Voice Connector.
+    * Associates phone numbers with the specified Amazon Chime Voice Connector.
     */
   def associatePhoneNumbersWithVoiceConnector(params: AssociatePhoneNumbersWithVoiceConnectorRequest): Request[AssociatePhoneNumbersWithVoiceConnectorResponse, AWSError] = js.native
   def associatePhoneNumbersWithVoiceConnector(
     params: AssociatePhoneNumbersWithVoiceConnectorRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AssociatePhoneNumbersWithVoiceConnectorResponse, Unit]
   ): Request[AssociatePhoneNumbersWithVoiceConnectorResponse, AWSError] = js.native
+  /**
+    * Associates phone numbers with the specified Amazon Chime Voice Connector group.
+    */
+  def associatePhoneNumbersWithVoiceConnectorGroup(): Request[AssociatePhoneNumbersWithVoiceConnectorGroupResponse, AWSError] = js.native
+  def associatePhoneNumbersWithVoiceConnectorGroup(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ AssociatePhoneNumbersWithVoiceConnectorGroupResponse, 
+      Unit
+    ]
+  ): Request[AssociatePhoneNumbersWithVoiceConnectorGroupResponse, AWSError] = js.native
+  /**
+    * Associates phone numbers with the specified Amazon Chime Voice Connector group.
+    */
+  def associatePhoneNumbersWithVoiceConnectorGroup(params: AssociatePhoneNumbersWithVoiceConnectorGroupRequest): Request[AssociatePhoneNumbersWithVoiceConnectorGroupResponse, AWSError] = js.native
+  def associatePhoneNumbersWithVoiceConnectorGroup(
+    params: AssociatePhoneNumbersWithVoiceConnectorGroupRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ AssociatePhoneNumbersWithVoiceConnectorGroupResponse, 
+      Unit
+    ]
+  ): Request[AssociatePhoneNumbersWithVoiceConnectorGroupResponse, AWSError] = js.native
+  /**
+    * Creates up to 100 new attendees for an active Amazon Chime SDK meeting. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide. 
+    */
+  def batchCreateAttendee(): Request[BatchCreateAttendeeResponse, AWSError] = js.native
+  def batchCreateAttendee(callback: js.Function2[/* err */ AWSError, /* data */ BatchCreateAttendeeResponse, Unit]): Request[BatchCreateAttendeeResponse, AWSError] = js.native
+  /**
+    * Creates up to 100 new attendees for an active Amazon Chime SDK meeting. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide. 
+    */
+  def batchCreateAttendee(params: BatchCreateAttendeeRequest): Request[BatchCreateAttendeeResponse, AWSError] = js.native
+  def batchCreateAttendee(
+    params: BatchCreateAttendeeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ BatchCreateAttendeeResponse, Unit]
+  ): Request[BatchCreateAttendeeResponse, AWSError] = js.native
+  /**
+    * Adds up to 50 members to a chat room. Members can be either users or bots. The member role designates whether the member is a chat room administrator or a general chat room member.
+    */
+  def batchCreateRoomMembership(): Request[BatchCreateRoomMembershipResponse, AWSError] = js.native
+  def batchCreateRoomMembership(callback: js.Function2[/* err */ AWSError, /* data */ BatchCreateRoomMembershipResponse, Unit]): Request[BatchCreateRoomMembershipResponse, AWSError] = js.native
+  /**
+    * Adds up to 50 members to a chat room. Members can be either users or bots. The member role designates whether the member is a chat room administrator or a general chat room member.
+    */
+  def batchCreateRoomMembership(params: BatchCreateRoomMembershipRequest): Request[BatchCreateRoomMembershipResponse, AWSError] = js.native
+  def batchCreateRoomMembership(
+    params: BatchCreateRoomMembershipRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ BatchCreateRoomMembershipResponse, Unit]
+  ): Request[BatchCreateRoomMembershipResponse, AWSError] = js.native
   /**
     * Moves phone numbers into the Deletion queue. Phone numbers must be disassociated from any users or Amazon Chime Voice Connectors before they can be deleted. Phone numbers remain in the Deletion queue for 7 days before they are deleted permanently.
     */
@@ -80,12 +129,12 @@ trait Chime extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ BatchUnsuspendUserResponse, Unit]
   ): Request[BatchUnsuspendUserResponse, AWSError] = js.native
   /**
-    * Updates phone number product types. Choose from Amazon Chime Business Calling and Amazon Chime Voice Connector product types. For toll-free numbers, you can use only the Amazon Chime Voice Connector product type.
+    * Updates phone number product types or calling names. You can update one attribute at a time for each UpdatePhoneNumberRequestItem. For example, you can update either the product type or the calling name. For product types, choose from Amazon Chime Business Calling and Amazon Chime Voice Connector. For toll-free numbers, you must use the Amazon Chime Voice Connector product type. Updates to outbound calling names can take up to 72 hours to complete. Pending updates to outbound calling names must be complete before you can request another update.
     */
   def batchUpdatePhoneNumber(): Request[BatchUpdatePhoneNumberResponse, AWSError] = js.native
   def batchUpdatePhoneNumber(callback: js.Function2[/* err */ AWSError, /* data */ BatchUpdatePhoneNumberResponse, Unit]): Request[BatchUpdatePhoneNumberResponse, AWSError] = js.native
   /**
-    * Updates phone number product types. Choose from Amazon Chime Business Calling and Amazon Chime Voice Connector product types. For toll-free numbers, you can use only the Amazon Chime Voice Connector product type.
+    * Updates phone number product types or calling names. You can update one attribute at a time for each UpdatePhoneNumberRequestItem. For example, you can update either the product type or the calling name. For product types, choose from Amazon Chime Business Calling and Amazon Chime Voice Connector. For toll-free numbers, you must use the Amazon Chime Voice Connector product type. Updates to outbound calling names can take up to 72 hours to complete. Pending updates to outbound calling names must be complete before you can request another update.
     */
   def batchUpdatePhoneNumber(params: BatchUpdatePhoneNumberRequest): Request[BatchUpdatePhoneNumberResponse, AWSError] = js.native
   def batchUpdatePhoneNumber(
@@ -119,6 +168,19 @@ trait Chime extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateAccountResponse, Unit]
   ): Request[CreateAccountResponse, AWSError] = js.native
   /**
+    * Creates a new attendee for an active Amazon Chime SDK meeting. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide.
+    */
+  def createAttendee(): Request[CreateAttendeeResponse, AWSError] = js.native
+  def createAttendee(callback: js.Function2[/* err */ AWSError, /* data */ CreateAttendeeResponse, Unit]): Request[CreateAttendeeResponse, AWSError] = js.native
+  /**
+    * Creates a new attendee for an active Amazon Chime SDK meeting. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide.
+    */
+  def createAttendee(params: CreateAttendeeRequest): Request[CreateAttendeeResponse, AWSError] = js.native
+  def createAttendee(
+    params: CreateAttendeeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateAttendeeResponse, Unit]
+  ): Request[CreateAttendeeResponse, AWSError] = js.native
+  /**
     * Creates a bot for an Amazon Chime Enterprise account.
     */
   def createBot(): Request[CreateBotResponse, AWSError] = js.native
@@ -132,12 +194,25 @@ trait Chime extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateBotResponse, Unit]
   ): Request[CreateBotResponse, AWSError] = js.native
   /**
-    * Creates an order for phone numbers to be provisioned. Choose from Amazon Chime Business Calling and Amazon Chime Voice Connector product types. For toll-free numbers, you can use only the Amazon Chime Voice Connector product type.
+    * Creates a new Amazon Chime SDK meeting in the specified media Region with no initial attendees. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide.
+    */
+  def createMeeting(): Request[CreateMeetingResponse, AWSError] = js.native
+  def createMeeting(callback: js.Function2[/* err */ AWSError, /* data */ CreateMeetingResponse, Unit]): Request[CreateMeetingResponse, AWSError] = js.native
+  /**
+    * Creates a new Amazon Chime SDK meeting in the specified media Region with no initial attendees. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide.
+    */
+  def createMeeting(params: CreateMeetingRequest): Request[CreateMeetingResponse, AWSError] = js.native
+  def createMeeting(
+    params: CreateMeetingRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateMeetingResponse, Unit]
+  ): Request[CreateMeetingResponse, AWSError] = js.native
+  /**
+    * Creates an order for phone numbers to be provisioned. Choose from Amazon Chime Business Calling and Amazon Chime Voice Connector product types. For toll-free numbers, you must use the Amazon Chime Voice Connector product type.
     */
   def createPhoneNumberOrder(): Request[CreatePhoneNumberOrderResponse, AWSError] = js.native
   def createPhoneNumberOrder(callback: js.Function2[/* err */ AWSError, /* data */ CreatePhoneNumberOrderResponse, Unit]): Request[CreatePhoneNumberOrderResponse, AWSError] = js.native
   /**
-    * Creates an order for phone numbers to be provisioned. Choose from Amazon Chime Business Calling and Amazon Chime Voice Connector product types. For toll-free numbers, you can use only the Amazon Chime Voice Connector product type.
+    * Creates an order for phone numbers to be provisioned. Choose from Amazon Chime Business Calling and Amazon Chime Voice Connector product types. For toll-free numbers, you must use the Amazon Chime Voice Connector product type.
     */
   def createPhoneNumberOrder(params: CreatePhoneNumberOrderRequest): Request[CreatePhoneNumberOrderResponse, AWSError] = js.native
   def createPhoneNumberOrder(
@@ -145,18 +220,57 @@ trait Chime extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreatePhoneNumberOrderResponse, Unit]
   ): Request[CreatePhoneNumberOrderResponse, AWSError] = js.native
   /**
-    * Creates an Amazon Chime Voice Connector under the administrator's AWS account. Enabling CreateVoiceConnectorRequest$RequireEncryption configures your Amazon Chime Voice Connector to use TLS transport for SIP signaling and Secure RTP (SRTP) for media. Inbound calls use TLS transport, and unencrypted outbound calls are blocked.
+    * Creates a chat room for the specified Amazon Chime account.
+    */
+  def createRoom(): Request[CreateRoomResponse, AWSError] = js.native
+  def createRoom(callback: js.Function2[/* err */ AWSError, /* data */ CreateRoomResponse, Unit]): Request[CreateRoomResponse, AWSError] = js.native
+  /**
+    * Creates a chat room for the specified Amazon Chime account.
+    */
+  def createRoom(params: CreateRoomRequest): Request[CreateRoomResponse, AWSError] = js.native
+  def createRoom(
+    params: CreateRoomRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateRoomResponse, Unit]
+  ): Request[CreateRoomResponse, AWSError] = js.native
+  /**
+    * Adds a member to a chat room. A member can be either a user or a bot. The member role designates whether the member is a chat room administrator or a general chat room member.
+    */
+  def createRoomMembership(): Request[CreateRoomMembershipResponse, AWSError] = js.native
+  def createRoomMembership(callback: js.Function2[/* err */ AWSError, /* data */ CreateRoomMembershipResponse, Unit]): Request[CreateRoomMembershipResponse, AWSError] = js.native
+  /**
+    * Adds a member to a chat room. A member can be either a user or a bot. The member role designates whether the member is a chat room administrator or a general chat room member.
+    */
+  def createRoomMembership(params: CreateRoomMembershipRequest): Request[CreateRoomMembershipResponse, AWSError] = js.native
+  def createRoomMembership(
+    params: CreateRoomMembershipRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateRoomMembershipResponse, Unit]
+  ): Request[CreateRoomMembershipResponse, AWSError] = js.native
+  /**
+    * Creates an Amazon Chime Voice Connector under the administrator's AWS account. You can choose to create an Amazon Chime Voice Connector in a specific AWS Region. Enabling CreateVoiceConnectorRequest$RequireEncryption configures your Amazon Chime Voice Connector to use TLS transport for SIP signaling and Secure RTP (SRTP) for media. Inbound calls use TLS transport, and unencrypted outbound calls are blocked.
     */
   def createVoiceConnector(): Request[CreateVoiceConnectorResponse, AWSError] = js.native
   def createVoiceConnector(callback: js.Function2[/* err */ AWSError, /* data */ CreateVoiceConnectorResponse, Unit]): Request[CreateVoiceConnectorResponse, AWSError] = js.native
   /**
-    * Creates an Amazon Chime Voice Connector under the administrator's AWS account. Enabling CreateVoiceConnectorRequest$RequireEncryption configures your Amazon Chime Voice Connector to use TLS transport for SIP signaling and Secure RTP (SRTP) for media. Inbound calls use TLS transport, and unencrypted outbound calls are blocked.
+    * Creates an Amazon Chime Voice Connector under the administrator's AWS account. You can choose to create an Amazon Chime Voice Connector in a specific AWS Region. Enabling CreateVoiceConnectorRequest$RequireEncryption configures your Amazon Chime Voice Connector to use TLS transport for SIP signaling and Secure RTP (SRTP) for media. Inbound calls use TLS transport, and unencrypted outbound calls are blocked.
     */
   def createVoiceConnector(params: CreateVoiceConnectorRequest): Request[CreateVoiceConnectorResponse, AWSError] = js.native
   def createVoiceConnector(
     params: CreateVoiceConnectorRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateVoiceConnectorResponse, Unit]
   ): Request[CreateVoiceConnectorResponse, AWSError] = js.native
+  /**
+    * Creates an Amazon Chime Voice Connector group under the administrator's AWS account. You can associate up to three existing Amazon Chime Voice Connectors with the Amazon Chime Voice Connector group by including VoiceConnectorItems in the request. You can include Amazon Chime Voice Connectors from different AWS Regions in your group. This creates a fault tolerant mechanism for fallback in case of availability events.
+    */
+  def createVoiceConnectorGroup(): Request[CreateVoiceConnectorGroupResponse, AWSError] = js.native
+  def createVoiceConnectorGroup(callback: js.Function2[/* err */ AWSError, /* data */ CreateVoiceConnectorGroupResponse, Unit]): Request[CreateVoiceConnectorGroupResponse, AWSError] = js.native
+  /**
+    * Creates an Amazon Chime Voice Connector group under the administrator's AWS account. You can associate up to three existing Amazon Chime Voice Connectors with the Amazon Chime Voice Connector group by including VoiceConnectorItems in the request. You can include Amazon Chime Voice Connectors from different AWS Regions in your group. This creates a fault tolerant mechanism for fallback in case of availability events.
+    */
+  def createVoiceConnectorGroup(params: CreateVoiceConnectorGroupRequest): Request[CreateVoiceConnectorGroupResponse, AWSError] = js.native
+  def createVoiceConnectorGroup(
+    params: CreateVoiceConnectorGroupRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateVoiceConnectorGroupResponse, Unit]
+  ): Request[CreateVoiceConnectorGroupResponse, AWSError] = js.native
   /**
     * Deletes the specified Amazon Chime account. You must suspend all users before deleting a Team account. You can use the BatchSuspendUser action to do so. For EnterpriseLWA and EnterpriseAD accounts, you must release the claimed domains for your Amazon Chime account before deletion. As soon as you release the domain, all users under that account are suspended. Deleted accounts appear in your Disabled accounts list for 90 days. To restore a deleted account from your Disabled accounts list, you must contact AWS Support. After 90 days, deleted accounts are permanently removed from your Disabled accounts list.
     */
@@ -171,6 +285,19 @@ trait Chime extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteAccountResponse, Unit]
   ): Request[DeleteAccountResponse, AWSError] = js.native
   /**
+    * Deletes an attendee from the specified Amazon Chime SDK meeting and deletes their JoinToken. Attendees are automatically deleted when a Amazon Chime SDK meeting is deleted. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide.
+    */
+  def deleteAttendee(): Request[js.Object, AWSError] = js.native
+  def deleteAttendee(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes an attendee from the specified Amazon Chime SDK meeting and deletes their JoinToken. Attendees are automatically deleted when a Amazon Chime SDK meeting is deleted. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide.
+    */
+  def deleteAttendee(params: DeleteAttendeeRequest): Request[js.Object, AWSError] = js.native
+  def deleteAttendee(
+    params: DeleteAttendeeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  /**
     * Deletes the events configuration that allows a bot to receive outgoing events.
     */
   def deleteEventsConfiguration(): Request[js.Object, AWSError] = js.native
@@ -181,6 +308,19 @@ trait Chime extends Service {
   def deleteEventsConfiguration(params: DeleteEventsConfigurationRequest): Request[js.Object, AWSError] = js.native
   def deleteEventsConfiguration(
     params: DeleteEventsConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes the specified Amazon Chime SDK meeting. When a meeting is deleted, its attendees are also deleted and clients can no longer join it. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide.
+    */
+  def deleteMeeting(): Request[js.Object, AWSError] = js.native
+  def deleteMeeting(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes the specified Amazon Chime SDK meeting. When a meeting is deleted, its attendees are also deleted and clients can no longer join it. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide.
+    */
+  def deleteMeeting(params: DeleteMeetingRequest): Request[js.Object, AWSError] = js.native
+  def deleteMeeting(
+    params: DeleteMeetingRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
@@ -197,16 +337,52 @@ trait Chime extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
-    * Deletes the specified Amazon Chime Voice Connector. Any phone numbers assigned to the Amazon Chime Voice Connector must be unassigned from it before it can be deleted.
+    * Deletes a chat room.
+    */
+  def deleteRoom(): Request[js.Object, AWSError] = js.native
+  def deleteRoom(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes a chat room.
+    */
+  def deleteRoom(params: DeleteRoomRequest): Request[js.Object, AWSError] = js.native
+  def deleteRoom(params: DeleteRoomRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Removes a member from a chat room.
+    */
+  def deleteRoomMembership(): Request[js.Object, AWSError] = js.native
+  def deleteRoomMembership(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Removes a member from a chat room.
+    */
+  def deleteRoomMembership(params: DeleteRoomMembershipRequest): Request[js.Object, AWSError] = js.native
+  def deleteRoomMembership(
+    params: DeleteRoomMembershipRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes the specified Amazon Chime Voice Connector. Any phone numbers associated with the Amazon Chime Voice Connector must be disassociated from it before it can be deleted.
     */
   def deleteVoiceConnector(): Request[js.Object, AWSError] = js.native
   def deleteVoiceConnector(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Deletes the specified Amazon Chime Voice Connector. Any phone numbers assigned to the Amazon Chime Voice Connector must be unassigned from it before it can be deleted.
+    * Deletes the specified Amazon Chime Voice Connector. Any phone numbers associated with the Amazon Chime Voice Connector must be disassociated from it before it can be deleted.
     */
   def deleteVoiceConnector(params: DeleteVoiceConnectorRequest): Request[js.Object, AWSError] = js.native
   def deleteVoiceConnector(
     params: DeleteVoiceConnectorRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes the specified Amazon Chime Voice Connector group. Any VoiceConnectorItems and phone numbers associated with the group must be removed before it can be deleted.
+    */
+  def deleteVoiceConnectorGroup(): Request[js.Object, AWSError] = js.native
+  def deleteVoiceConnectorGroup(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes the specified Amazon Chime Voice Connector group. Any VoiceConnectorItems and phone numbers associated with the group must be removed before it can be deleted.
+    */
+  def deleteVoiceConnectorGroup(params: DeleteVoiceConnectorGroupRequest): Request[js.Object, AWSError] = js.native
+  def deleteVoiceConnectorGroup(
+    params: DeleteVoiceConnectorGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
@@ -220,6 +396,19 @@ trait Chime extends Service {
   def deleteVoiceConnectorOrigination(params: DeleteVoiceConnectorOriginationRequest): Request[js.Object, AWSError] = js.native
   def deleteVoiceConnectorOrigination(
     params: DeleteVoiceConnectorOriginationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes the streaming configuration for the specified Amazon Chime Voice Connector.
+    */
+  def deleteVoiceConnectorStreamingConfiguration(): Request[js.Object, AWSError] = js.native
+  def deleteVoiceConnectorStreamingConfiguration(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes the streaming configuration for the specified Amazon Chime Voice Connector.
+    */
+  def deleteVoiceConnectorStreamingConfiguration(params: DeleteVoiceConnectorStreamingConfigurationRequest): Request[js.Object, AWSError] = js.native
+  def deleteVoiceConnectorStreamingConfiguration(
+    params: DeleteVoiceConnectorStreamingConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
@@ -264,7 +453,7 @@ trait Chime extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DisassociatePhoneNumberFromUserResponse, Unit]
   ): Request[DisassociatePhoneNumberFromUserResponse, AWSError] = js.native
   /**
-    * Disassociates the specified phone number from the specified Amazon Chime Voice Connector.
+    * Disassociates the specified phone numbers from the specified Amazon Chime Voice Connector.
     */
   def disassociatePhoneNumbersFromVoiceConnector(): Request[DisassociatePhoneNumbersFromVoiceConnectorResponse, AWSError] = js.native
   def disassociatePhoneNumbersFromVoiceConnector(
@@ -275,7 +464,7 @@ trait Chime extends Service {
     ]
   ): Request[DisassociatePhoneNumbersFromVoiceConnectorResponse, AWSError] = js.native
   /**
-    * Disassociates the specified phone number from the specified Amazon Chime Voice Connector.
+    * Disassociates the specified phone numbers from the specified Amazon Chime Voice Connector.
     */
   def disassociatePhoneNumbersFromVoiceConnector(params: DisassociatePhoneNumbersFromVoiceConnectorRequest): Request[DisassociatePhoneNumbersFromVoiceConnectorResponse, AWSError] = js.native
   def disassociatePhoneNumbersFromVoiceConnector(
@@ -286,6 +475,29 @@ trait Chime extends Service {
       Unit
     ]
   ): Request[DisassociatePhoneNumbersFromVoiceConnectorResponse, AWSError] = js.native
+  /**
+    * Disassociates the specified phone numbers from the specified Amazon Chime Voice Connector group.
+    */
+  def disassociatePhoneNumbersFromVoiceConnectorGroup(): Request[DisassociatePhoneNumbersFromVoiceConnectorGroupResponse, AWSError] = js.native
+  def disassociatePhoneNumbersFromVoiceConnectorGroup(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DisassociatePhoneNumbersFromVoiceConnectorGroupResponse, 
+      Unit
+    ]
+  ): Request[DisassociatePhoneNumbersFromVoiceConnectorGroupResponse, AWSError] = js.native
+  /**
+    * Disassociates the specified phone numbers from the specified Amazon Chime Voice Connector group.
+    */
+  def disassociatePhoneNumbersFromVoiceConnectorGroup(params: DisassociatePhoneNumbersFromVoiceConnectorGroupRequest): Request[DisassociatePhoneNumbersFromVoiceConnectorGroupResponse, AWSError] = js.native
+  def disassociatePhoneNumbersFromVoiceConnectorGroup(
+    params: DisassociatePhoneNumbersFromVoiceConnectorGroupRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DisassociatePhoneNumbersFromVoiceConnectorGroupResponse, 
+      Unit
+    ]
+  ): Request[DisassociatePhoneNumbersFromVoiceConnectorGroupResponse, AWSError] = js.native
   /**
     * Retrieves details for the specified Amazon Chime account, such as account type and supported licenses.
     */
@@ -312,6 +524,19 @@ trait Chime extends Service {
     params: GetAccountSettingsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetAccountSettingsResponse, Unit]
   ): Request[GetAccountSettingsResponse, AWSError] = js.native
+  /**
+    * Gets the Amazon Chime SDK attendee details for a specified meeting ID and attendee ID. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide.
+    */
+  def getAttendee(): Request[GetAttendeeResponse, AWSError] = js.native
+  def getAttendee(callback: js.Function2[/* err */ AWSError, /* data */ GetAttendeeResponse, Unit]): Request[GetAttendeeResponse, AWSError] = js.native
+  /**
+    * Gets the Amazon Chime SDK attendee details for a specified meeting ID and attendee ID. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide.
+    */
+  def getAttendee(params: GetAttendeeRequest): Request[GetAttendeeResponse, AWSError] = js.native
+  def getAttendee(
+    params: GetAttendeeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetAttendeeResponse, Unit]
+  ): Request[GetAttendeeResponse, AWSError] = js.native
   /**
     * Retrieves details for the specified bot, such as bot email address, bot type, status, and display name.
     */
@@ -341,6 +566,19 @@ trait Chime extends Service {
   def getGlobalSettings(): Request[GetGlobalSettingsResponse, AWSError] = js.native
   def getGlobalSettings(callback: js.Function2[/* err */ AWSError, /* data */ GetGlobalSettingsResponse, Unit]): Request[GetGlobalSettingsResponse, AWSError] = js.native
   /**
+    * Gets the Amazon Chime SDK meeting details for the specified meeting ID. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide.
+    */
+  def getMeeting(): Request[GetMeetingResponse, AWSError] = js.native
+  def getMeeting(callback: js.Function2[/* err */ AWSError, /* data */ GetMeetingResponse, Unit]): Request[GetMeetingResponse, AWSError] = js.native
+  /**
+    * Gets the Amazon Chime SDK meeting details for the specified meeting ID. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide.
+    */
+  def getMeeting(params: GetMeetingRequest): Request[GetMeetingResponse, AWSError] = js.native
+  def getMeeting(
+    params: GetMeetingRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetMeetingResponse, Unit]
+  ): Request[GetMeetingResponse, AWSError] = js.native
+  /**
     * Retrieves details for the specified phone number ID, such as associations, capabilities, and product type.
     */
   def getPhoneNumber(): Request[GetPhoneNumberResponse, AWSError] = js.native
@@ -366,6 +604,24 @@ trait Chime extends Service {
     params: GetPhoneNumberOrderRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetPhoneNumberOrderResponse, Unit]
   ): Request[GetPhoneNumberOrderResponse, AWSError] = js.native
+  /**
+    * Retrieves the phone number settings for the administrator's AWS account, such as the default outbound calling name.
+    */
+  def getPhoneNumberSettings(): Request[GetPhoneNumberSettingsResponse, AWSError] = js.native
+  def getPhoneNumberSettings(callback: js.Function2[/* err */ AWSError, /* data */ GetPhoneNumberSettingsResponse, Unit]): Request[GetPhoneNumberSettingsResponse, AWSError] = js.native
+  /**
+    * Retrieves room details, such as name.
+    */
+  def getRoom(): Request[GetRoomResponse, AWSError] = js.native
+  def getRoom(callback: js.Function2[/* err */ AWSError, /* data */ GetRoomResponse, Unit]): Request[GetRoomResponse, AWSError] = js.native
+  /**
+    * Retrieves room details, such as name.
+    */
+  def getRoom(params: GetRoomRequest): Request[GetRoomResponse, AWSError] = js.native
+  def getRoom(
+    params: GetRoomRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetRoomResponse, Unit]
+  ): Request[GetRoomResponse, AWSError] = js.native
   /**
     * Retrieves details for the specified user ID, such as primary email address, license type, and personal meeting PIN. To retrieve user details with an email address instead of a user ID, use the ListUsers action, and then filter by email address.
     */
@@ -406,6 +662,34 @@ trait Chime extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetVoiceConnectorResponse, Unit]
   ): Request[GetVoiceConnectorResponse, AWSError] = js.native
   /**
+    * Retrieves details for the specified Amazon Chime Voice Connector group, such as timestamps, name, and associated VoiceConnectorItems.
+    */
+  def getVoiceConnectorGroup(): Request[GetVoiceConnectorGroupResponse, AWSError] = js.native
+  def getVoiceConnectorGroup(callback: js.Function2[/* err */ AWSError, /* data */ GetVoiceConnectorGroupResponse, Unit]): Request[GetVoiceConnectorGroupResponse, AWSError] = js.native
+  /**
+    * Retrieves details for the specified Amazon Chime Voice Connector group, such as timestamps, name, and associated VoiceConnectorItems.
+    */
+  def getVoiceConnectorGroup(params: GetVoiceConnectorGroupRequest): Request[GetVoiceConnectorGroupResponse, AWSError] = js.native
+  def getVoiceConnectorGroup(
+    params: GetVoiceConnectorGroupRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetVoiceConnectorGroupResponse, Unit]
+  ): Request[GetVoiceConnectorGroupResponse, AWSError] = js.native
+  /**
+    * Retrieves the logging configuration details for the specified Amazon Chime Voice Connector. Shows whether SIP message logs are enabled for sending to Amazon CloudWatch Logs.
+    */
+  def getVoiceConnectorLoggingConfiguration(): Request[GetVoiceConnectorLoggingConfigurationResponse, AWSError] = js.native
+  def getVoiceConnectorLoggingConfiguration(
+    callback: js.Function2[/* err */ AWSError, /* data */ GetVoiceConnectorLoggingConfigurationResponse, Unit]
+  ): Request[GetVoiceConnectorLoggingConfigurationResponse, AWSError] = js.native
+  /**
+    * Retrieves the logging configuration details for the specified Amazon Chime Voice Connector. Shows whether SIP message logs are enabled for sending to Amazon CloudWatch Logs.
+    */
+  def getVoiceConnectorLoggingConfiguration(params: GetVoiceConnectorLoggingConfigurationRequest): Request[GetVoiceConnectorLoggingConfigurationResponse, AWSError] = js.native
+  def getVoiceConnectorLoggingConfiguration(
+    params: GetVoiceConnectorLoggingConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetVoiceConnectorLoggingConfigurationResponse, Unit]
+  ): Request[GetVoiceConnectorLoggingConfigurationResponse, AWSError] = js.native
+  /**
     * Retrieves origination setting details for the specified Amazon Chime Voice Connector.
     */
   def getVoiceConnectorOrigination(): Request[GetVoiceConnectorOriginationResponse, AWSError] = js.native
@@ -418,6 +702,21 @@ trait Chime extends Service {
     params: GetVoiceConnectorOriginationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetVoiceConnectorOriginationResponse, Unit]
   ): Request[GetVoiceConnectorOriginationResponse, AWSError] = js.native
+  /**
+    * Retrieves the streaming configuration details for the specified Amazon Chime Voice Connector. Shows whether media streaming is enabled for sending to Amazon Kinesis. It also shows the retention period, in hours, for the Amazon Kinesis data.
+    */
+  def getVoiceConnectorStreamingConfiguration(): Request[GetVoiceConnectorStreamingConfigurationResponse, AWSError] = js.native
+  def getVoiceConnectorStreamingConfiguration(
+    callback: js.Function2[/* err */ AWSError, /* data */ GetVoiceConnectorStreamingConfigurationResponse, Unit]
+  ): Request[GetVoiceConnectorStreamingConfigurationResponse, AWSError] = js.native
+  /**
+    * Retrieves the streaming configuration details for the specified Amazon Chime Voice Connector. Shows whether media streaming is enabled for sending to Amazon Kinesis. It also shows the retention period, in hours, for the Amazon Kinesis data.
+    */
+  def getVoiceConnectorStreamingConfiguration(params: GetVoiceConnectorStreamingConfigurationRequest): Request[GetVoiceConnectorStreamingConfigurationResponse, AWSError] = js.native
+  def getVoiceConnectorStreamingConfiguration(
+    params: GetVoiceConnectorStreamingConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetVoiceConnectorStreamingConfigurationResponse, Unit]
+  ): Request[GetVoiceConnectorStreamingConfigurationResponse, AWSError] = js.native
   /**
     * Retrieves termination setting details for the specified Amazon Chime Voice Connector.
     */
@@ -447,12 +746,12 @@ trait Chime extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetVoiceConnectorTerminationHealthResponse, Unit]
   ): Request[GetVoiceConnectorTerminationHealthResponse, AWSError] = js.native
   /**
-    * Sends email invites to as many as 50 users, inviting them to the specified Amazon Chime Team account. Only Team account types are currently supported for this action. 
+    * Sends email to a maximum of 50 users, inviting them to the specified Amazon Chime Team account. Only Team account types are currently supported for this action. 
     */
   def inviteUsers(): Request[InviteUsersResponse, AWSError] = js.native
   def inviteUsers(callback: js.Function2[/* err */ AWSError, /* data */ InviteUsersResponse, Unit]): Request[InviteUsersResponse, AWSError] = js.native
   /**
-    * Sends email invites to as many as 50 users, inviting them to the specified Amazon Chime Team account. Only Team account types are currently supported for this action. 
+    * Sends email to a maximum of 50 users, inviting them to the specified Amazon Chime Team account. Only Team account types are currently supported for this action. 
     */
   def inviteUsers(params: InviteUsersRequest): Request[InviteUsersResponse, AWSError] = js.native
   def inviteUsers(
@@ -473,6 +772,19 @@ trait Chime extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListAccountsResponse, Unit]
   ): Request[ListAccountsResponse, AWSError] = js.native
   /**
+    * Lists the attendees for the specified Amazon Chime SDK meeting. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide.
+    */
+  def listAttendees(): Request[ListAttendeesResponse, AWSError] = js.native
+  def listAttendees(callback: js.Function2[/* err */ AWSError, /* data */ ListAttendeesResponse, Unit]): Request[ListAttendeesResponse, AWSError] = js.native
+  /**
+    * Lists the attendees for the specified Amazon Chime SDK meeting. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide.
+    */
+  def listAttendees(params: ListAttendeesRequest): Request[ListAttendeesResponse, AWSError] = js.native
+  def listAttendees(
+    params: ListAttendeesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListAttendeesResponse, Unit]
+  ): Request[ListAttendeesResponse, AWSError] = js.native
+  /**
     * Lists the bots associated with the administrator's Amazon Chime Enterprise account ID.
     */
   def listBots(): Request[ListBotsResponse, AWSError] = js.native
@@ -485,6 +797,19 @@ trait Chime extends Service {
     params: ListBotsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListBotsResponse, Unit]
   ): Request[ListBotsResponse, AWSError] = js.native
+  /**
+    * Lists up to 100 active Amazon Chime SDK meetings. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide.
+    */
+  def listMeetings(): Request[ListMeetingsResponse, AWSError] = js.native
+  def listMeetings(callback: js.Function2[/* err */ AWSError, /* data */ ListMeetingsResponse, Unit]): Request[ListMeetingsResponse, AWSError] = js.native
+  /**
+    * Lists up to 100 active Amazon Chime SDK meetings. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide.
+    */
+  def listMeetings(params: ListMeetingsRequest): Request[ListMeetingsResponse, AWSError] = js.native
+  def listMeetings(
+    params: ListMeetingsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListMeetingsResponse, Unit]
+  ): Request[ListMeetingsResponse, AWSError] = js.native
   /**
     * Lists the phone number orders for the administrator's Amazon Chime account.
     */
@@ -499,18 +824,44 @@ trait Chime extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListPhoneNumberOrdersResponse, Unit]
   ): Request[ListPhoneNumberOrdersResponse, AWSError] = js.native
   /**
-    * Lists the phone numbers for the specified Amazon Chime account, Amazon Chime user, or Amazon Chime Voice Connector.
+    * Lists the phone numbers for the specified Amazon Chime account, Amazon Chime user, Amazon Chime Voice Connector, or Amazon Chime Voice Connector group.
     */
   def listPhoneNumbers(): Request[ListPhoneNumbersResponse, AWSError] = js.native
   def listPhoneNumbers(callback: js.Function2[/* err */ AWSError, /* data */ ListPhoneNumbersResponse, Unit]): Request[ListPhoneNumbersResponse, AWSError] = js.native
   /**
-    * Lists the phone numbers for the specified Amazon Chime account, Amazon Chime user, or Amazon Chime Voice Connector.
+    * Lists the phone numbers for the specified Amazon Chime account, Amazon Chime user, Amazon Chime Voice Connector, or Amazon Chime Voice Connector group.
     */
   def listPhoneNumbers(params: ListPhoneNumbersRequest): Request[ListPhoneNumbersResponse, AWSError] = js.native
   def listPhoneNumbers(
     params: ListPhoneNumbersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListPhoneNumbersResponse, Unit]
   ): Request[ListPhoneNumbersResponse, AWSError] = js.native
+  /**
+    * Lists the membership details for the specified room, such as member IDs, member email addresses, and member names.
+    */
+  def listRoomMemberships(): Request[ListRoomMembershipsResponse, AWSError] = js.native
+  def listRoomMemberships(callback: js.Function2[/* err */ AWSError, /* data */ ListRoomMembershipsResponse, Unit]): Request[ListRoomMembershipsResponse, AWSError] = js.native
+  /**
+    * Lists the membership details for the specified room, such as member IDs, member email addresses, and member names.
+    */
+  def listRoomMemberships(params: ListRoomMembershipsRequest): Request[ListRoomMembershipsResponse, AWSError] = js.native
+  def listRoomMemberships(
+    params: ListRoomMembershipsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListRoomMembershipsResponse, Unit]
+  ): Request[ListRoomMembershipsResponse, AWSError] = js.native
+  /**
+    * Lists the room details for the specified Amazon Chime account. Optionally, filter the results by a member ID (user ID or bot ID) to see a list of rooms that the member belongs to.
+    */
+  def listRooms(): Request[ListRoomsResponse, AWSError] = js.native
+  def listRooms(callback: js.Function2[/* err */ AWSError, /* data */ ListRoomsResponse, Unit]): Request[ListRoomsResponse, AWSError] = js.native
+  /**
+    * Lists the room details for the specified Amazon Chime account. Optionally, filter the results by a member ID (user ID or bot ID) to see a list of rooms that the member belongs to.
+    */
+  def listRooms(params: ListRoomsRequest): Request[ListRoomsResponse, AWSError] = js.native
+  def listRooms(
+    params: ListRoomsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListRoomsResponse, Unit]
+  ): Request[ListRoomsResponse, AWSError] = js.native
   /**
     * Lists the users that belong to the specified Amazon Chime account. You can specify an email address to list only the user that the email address belongs to.
     */
@@ -524,6 +875,19 @@ trait Chime extends Service {
     params: ListUsersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListUsersResponse, Unit]
   ): Request[ListUsersResponse, AWSError] = js.native
+  /**
+    * Lists the Amazon Chime Voice Connector groups for the administrator's AWS account.
+    */
+  def listVoiceConnectorGroups(): Request[ListVoiceConnectorGroupsResponse, AWSError] = js.native
+  def listVoiceConnectorGroups(callback: js.Function2[/* err */ AWSError, /* data */ ListVoiceConnectorGroupsResponse, Unit]): Request[ListVoiceConnectorGroupsResponse, AWSError] = js.native
+  /**
+    * Lists the Amazon Chime Voice Connector groups for the administrator's AWS account.
+    */
+  def listVoiceConnectorGroups(params: ListVoiceConnectorGroupsRequest): Request[ListVoiceConnectorGroupsResponse, AWSError] = js.native
+  def listVoiceConnectorGroups(
+    params: ListVoiceConnectorGroupsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListVoiceConnectorGroupsResponse, Unit]
+  ): Request[ListVoiceConnectorGroupsResponse, AWSError] = js.native
   /**
     * Lists the SIP credentials for the specified Amazon Chime Voice Connector.
     */
@@ -587,6 +951,21 @@ trait Chime extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ PutEventsConfigurationResponse, Unit]
   ): Request[PutEventsConfigurationResponse, AWSError] = js.native
   /**
+    * Adds a logging configuration for the specified Amazon Chime Voice Connector. The logging configuration specifies whether SIP message logs are enabled for sending to Amazon CloudWatch Logs.
+    */
+  def putVoiceConnectorLoggingConfiguration(): Request[PutVoiceConnectorLoggingConfigurationResponse, AWSError] = js.native
+  def putVoiceConnectorLoggingConfiguration(
+    callback: js.Function2[/* err */ AWSError, /* data */ PutVoiceConnectorLoggingConfigurationResponse, Unit]
+  ): Request[PutVoiceConnectorLoggingConfigurationResponse, AWSError] = js.native
+  /**
+    * Adds a logging configuration for the specified Amazon Chime Voice Connector. The logging configuration specifies whether SIP message logs are enabled for sending to Amazon CloudWatch Logs.
+    */
+  def putVoiceConnectorLoggingConfiguration(params: PutVoiceConnectorLoggingConfigurationRequest): Request[PutVoiceConnectorLoggingConfigurationResponse, AWSError] = js.native
+  def putVoiceConnectorLoggingConfiguration(
+    params: PutVoiceConnectorLoggingConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutVoiceConnectorLoggingConfigurationResponse, Unit]
+  ): Request[PutVoiceConnectorLoggingConfigurationResponse, AWSError] = js.native
+  /**
     * Adds origination settings for the specified Amazon Chime Voice Connector.
     */
   def putVoiceConnectorOrigination(): Request[PutVoiceConnectorOriginationResponse, AWSError] = js.native
@@ -599,6 +978,21 @@ trait Chime extends Service {
     params: PutVoiceConnectorOriginationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PutVoiceConnectorOriginationResponse, Unit]
   ): Request[PutVoiceConnectorOriginationResponse, AWSError] = js.native
+  /**
+    * Adds a streaming configuration for the specified Amazon Chime Voice Connector. The streaming configuration specifies whether media streaming is enabled for sending to Amazon Kinesis. It also sets the retention period, in hours, for the Amazon Kinesis data.
+    */
+  def putVoiceConnectorStreamingConfiguration(): Request[PutVoiceConnectorStreamingConfigurationResponse, AWSError] = js.native
+  def putVoiceConnectorStreamingConfiguration(
+    callback: js.Function2[/* err */ AWSError, /* data */ PutVoiceConnectorStreamingConfigurationResponse, Unit]
+  ): Request[PutVoiceConnectorStreamingConfigurationResponse, AWSError] = js.native
+  /**
+    * Adds a streaming configuration for the specified Amazon Chime Voice Connector. The streaming configuration specifies whether media streaming is enabled for sending to Amazon Kinesis. It also sets the retention period, in hours, for the Amazon Kinesis data.
+    */
+  def putVoiceConnectorStreamingConfiguration(params: PutVoiceConnectorStreamingConfigurationRequest): Request[PutVoiceConnectorStreamingConfigurationResponse, AWSError] = js.native
+  def putVoiceConnectorStreamingConfiguration(
+    params: PutVoiceConnectorStreamingConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutVoiceConnectorStreamingConfigurationResponse, Unit]
+  ): Request[PutVoiceConnectorStreamingConfigurationResponse, AWSError] = js.native
   /**
     * Adds termination settings for the specified Amazon Chime Voice Connector.
     */
@@ -730,18 +1124,57 @@ trait Chime extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
-    * Updates phone number details, such as product type, for the specified phone number ID. For toll-free numbers, you can use only the Amazon Chime Voice Connector product type.
+    * Updates phone number details, such as product type or calling name, for the specified phone number ID. You can update one phone number detail at a time. For example, you can update either the product type or the calling name in one action. For toll-free numbers, you must use the Amazon Chime Voice Connector product type. Updates to outbound calling names can take up to 72 hours to complete. Pending updates to outbound calling names must be complete before you can request another update.
     */
   def updatePhoneNumber(): Request[UpdatePhoneNumberResponse, AWSError] = js.native
   def updatePhoneNumber(callback: js.Function2[/* err */ AWSError, /* data */ UpdatePhoneNumberResponse, Unit]): Request[UpdatePhoneNumberResponse, AWSError] = js.native
   /**
-    * Updates phone number details, such as product type, for the specified phone number ID. For toll-free numbers, you can use only the Amazon Chime Voice Connector product type.
+    * Updates phone number details, such as product type or calling name, for the specified phone number ID. You can update one phone number detail at a time. For example, you can update either the product type or the calling name in one action. For toll-free numbers, you must use the Amazon Chime Voice Connector product type. Updates to outbound calling names can take up to 72 hours to complete. Pending updates to outbound calling names must be complete before you can request another update.
     */
   def updatePhoneNumber(params: UpdatePhoneNumberRequest): Request[UpdatePhoneNumberResponse, AWSError] = js.native
   def updatePhoneNumber(
     params: UpdatePhoneNumberRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdatePhoneNumberResponse, Unit]
   ): Request[UpdatePhoneNumberResponse, AWSError] = js.native
+  /**
+    * Updates the phone number settings for the administrator's AWS account, such as the default outbound calling name. You can update the default outbound calling name once every seven days. Outbound calling names can take up to 72 hours to update.
+    */
+  def updatePhoneNumberSettings(): Request[js.Object, AWSError] = js.native
+  def updatePhoneNumberSettings(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Updates the phone number settings for the administrator's AWS account, such as the default outbound calling name. You can update the default outbound calling name once every seven days. Outbound calling names can take up to 72 hours to update.
+    */
+  def updatePhoneNumberSettings(params: UpdatePhoneNumberSettingsRequest): Request[js.Object, AWSError] = js.native
+  def updatePhoneNumberSettings(
+    params: UpdatePhoneNumberSettingsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  /**
+    * Updates room details, such as the room name.
+    */
+  def updateRoom(): Request[UpdateRoomResponse, AWSError] = js.native
+  def updateRoom(callback: js.Function2[/* err */ AWSError, /* data */ UpdateRoomResponse, Unit]): Request[UpdateRoomResponse, AWSError] = js.native
+  /**
+    * Updates room details, such as the room name.
+    */
+  def updateRoom(params: UpdateRoomRequest): Request[UpdateRoomResponse, AWSError] = js.native
+  def updateRoom(
+    params: UpdateRoomRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateRoomResponse, Unit]
+  ): Request[UpdateRoomResponse, AWSError] = js.native
+  /**
+    * Updates room membership details, such as member role. The member role designates whether the member is a chat room administrator or a general chat room member. Member role can only be updated for user IDs.
+    */
+  def updateRoomMembership(): Request[UpdateRoomMembershipResponse, AWSError] = js.native
+  def updateRoomMembership(callback: js.Function2[/* err */ AWSError, /* data */ UpdateRoomMembershipResponse, Unit]): Request[UpdateRoomMembershipResponse, AWSError] = js.native
+  /**
+    * Updates room membership details, such as member role. The member role designates whether the member is a chat room administrator or a general chat room member. Member role can only be updated for user IDs.
+    */
+  def updateRoomMembership(params: UpdateRoomMembershipRequest): Request[UpdateRoomMembershipResponse, AWSError] = js.native
+  def updateRoomMembership(
+    params: UpdateRoomMembershipRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateRoomMembershipResponse, Unit]
+  ): Request[UpdateRoomMembershipResponse, AWSError] = js.native
   /**
     * Updates user details for a specified user ID. Currently, only LicenseType updates are supported for this action.
     */
@@ -781,5 +1214,18 @@ trait Chime extends Service {
     params: UpdateVoiceConnectorRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateVoiceConnectorResponse, Unit]
   ): Request[UpdateVoiceConnectorResponse, AWSError] = js.native
+  /**
+    * Updates details for the specified Amazon Chime Voice Connector group, such as the name and Amazon Chime Voice Connector priority ranking.
+    */
+  def updateVoiceConnectorGroup(): Request[UpdateVoiceConnectorGroupResponse, AWSError] = js.native
+  def updateVoiceConnectorGroup(callback: js.Function2[/* err */ AWSError, /* data */ UpdateVoiceConnectorGroupResponse, Unit]): Request[UpdateVoiceConnectorGroupResponse, AWSError] = js.native
+  /**
+    * Updates details for the specified Amazon Chime Voice Connector group, such as the name and Amazon Chime Voice Connector priority ranking.
+    */
+  def updateVoiceConnectorGroup(params: UpdateVoiceConnectorGroupRequest): Request[UpdateVoiceConnectorGroupResponse, AWSError] = js.native
+  def updateVoiceConnectorGroup(
+    params: UpdateVoiceConnectorGroupRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateVoiceConnectorGroupResponse, Unit]
+  ): Request[UpdateVoiceConnectorGroupResponse, AWSError] = js.native
 }
 

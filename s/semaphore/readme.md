@@ -10,9 +10,9 @@ semaphore for node
 | ------------------ | :-------------: |
 | Full name          | semaphore |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 114 |
-| # downloads        | 2922698 |
+| # releases         | 1 |
+| # dependents       | 126 |
+| # downloads        | 4827945 |
 | # stars            | 6 |
 
 ## Links

@@ -4,15 +4,15 @@
 Typings are for version 1.16
 
 ## Library description:
-A React component to crop images with easy interactions
+A React component to crop images/videos with easy interactions
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-easy-crop |
 | Keywords           | - |
-| # releases         | 35 |
-| # dependents       | 1 |
-| # downloads        | 45832 |
+| # releases         | 46 |
+| # dependents       | 6 |
+| # downloads        | 339695 |
 | # stars            | 0 |
 
 ## Links

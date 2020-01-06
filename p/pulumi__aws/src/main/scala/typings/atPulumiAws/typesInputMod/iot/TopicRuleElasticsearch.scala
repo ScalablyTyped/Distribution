@@ -5,27 +5,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TopicRuleElasticsearch extends js.Object {
   /**
     * The endpoint of your Elasticsearch domain.
     */
-  var endpoint: Input[String]
+  var endpoint: Input[String] = js.native
   /**
     * The unique identifier for the document you are storing.
     */
-  var id: Input[String]
+  var id: Input[String] = js.native
   /**
     * The Elasticsearch index where you want to store your data.
     */
-  var index: Input[String]
+  var index: Input[String] = js.native
   /**
     * The ARN of the IAM role that grants access.
     */
-  var roleArn: Input[String]
+  var roleArn: Input[String] = js.native
   /**
     * The type of document you are storing.
     */
-  var `type`: Input[String]
+  var `type`: Input[String] = js.native
 }
 
 object TopicRuleElasticsearch {

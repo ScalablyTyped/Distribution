@@ -10,12 +10,15 @@ Autogenerate IDs to facilitate WAI-ARIA and server rendering.
 | ------------------ | :-------------: |
 | Full name          | @reach/auto-id |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 4 |
-| # downloads        | 27645 |
+| # releases         | 13 |
+| # dependents       | 18 |
+| # downloads        | 1372205 |
 | # stars            | 0 |
 
 ## Links
+- [Homepage](https://github.com/reach/reach-ui#readme)
+- [Bugs](https://github.com/reach/reach-ui/issues)
+- [Repository](https://github.com/reach/reach-ui)
 - [Npm](https://www.npmjs.com/package/%40reach%2Fauto-id)
     
 

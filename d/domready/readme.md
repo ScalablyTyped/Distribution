@@ -10,9 +10,9 @@ modern domready
 | ------------------ | :-------------: |
 | Full name          | domready |
 | Keywords           | ender, domready, dom |
-| # releases         | 1 |
-| # dependents       | 182 |
-| # downloads        | 7846004 |
+| # releases         | 0 |
+| # dependents       | 191 |
+| # downloads        | 9715507 |
 | # stars            | 16 |
 
 ## Links

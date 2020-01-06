@@ -10,8 +10,8 @@ Comprehensive pathfinding library for grid based games
 | Full name          | pathfinding |
 | Keywords           | pathfinding, astar, dijkstra, game, algorithm, jumppoint, depthfirst, breadthfirst |
 | # releases         | 1 |
-| # dependents       | 22 |
-| # downloads        | 83397 |
+| # dependents       | 32 |
+| # downloads        | 196306 |
 | # stars            | 7 |
 
 ## Links

@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClassificationTypeUpdate extends js.Object {
   /**
     * A continuous classification of the objects that are added to a specified S3 bucket. Amazon Macie begins performing continuous classification after a bucket is successfully associated with Amazon Macie. 
     */
-  var continuous: js.UndefOr[S3ContinuousClassificationType] = js.undefined
+  var continuous: js.UndefOr[S3ContinuousClassificationType] = js.native
   /**
     * A one-time classification of all of the existing objects in a specified S3 bucket. 
     */
-  var oneTime: js.UndefOr[S3OneTimeClassificationType] = js.undefined
+  var oneTime: js.UndefOr[S3OneTimeClassificationType] = js.native
 }
 
 object ClassificationTypeUpdate {

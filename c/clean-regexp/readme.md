@@ -10,9 +10,9 @@ Clean up regular expressions
 | ------------------ | :-------------: |
 | Full name          | clean-regexp |
 | Keywords           | regex, regexp, regular, expression, clean, cleanup, digit, word |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 2348922 |
+| # downloads        | 6200974 |
 | # stars            | 0 |
 
 ## Links

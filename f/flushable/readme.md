@@ -12,7 +12,7 @@ A flushable timeout function
 | Keywords           | - |
 | # releases         | 3 |
 | # dependents       | 6 |
-| # downloads        | 385901 |
+| # downloads        | 1391257 |
 | # stars            | 0 |
 
 ## Links

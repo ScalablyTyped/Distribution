@@ -6,6 +6,7 @@ import typings.iobroker.Anon_File
 import typings.iobroker.Anon_Id
 import typings.iobroker.Anon_Mode
 import typings.iobroker.Anon_RequestEnum
+import typings.iobroker.Anon_Sorted
 import typings.iobroker.iobrokerStrings.message
 import typings.iobroker.iobrokerStrings.objectChange
 import typings.iobroker.iobrokerStrings.ready
@@ -712,6 +713,28 @@ trait Adapter extends js.Object {
   /** Reads an object from the object db */
   def getObjectAsync(id: String): js.Promise[CallbackReturnTypeOf[GetObjectCallback]] = js.native
   def getObjectAsync(id: String, options: js.Any): js.Promise[CallbackReturnTypeOf[GetObjectCallback]] = js.native
+  def getObjectList(params: Null, options: Anon_Sorted, callback: GetObjectListCallback): Unit = js.native
+  def getObjectList(params: Null, options: Record[String, _], callback: GetObjectListCallback): Unit = js.native
+  /**
+    * Returns a list of objects with id between params.startkey and params.endkey
+    * @param params Parameters determining the objects included in the return list. Null to include all objects
+    * @param options If the returned list should be sorted. And some internal options.
+    * @param callback Is called when the operation has finished (successfully or not)
+    */
+  // TODO: options should be optional: https://github.com/ioBroker/ioBroker.js-controller/issues/574
+  // getObjectList(params: GetObjectListParams | null, callback: GetObjectListCallback): void;
+  def getObjectList(params: GetObjectListParams, options: Anon_Sorted, callback: GetObjectListCallback): Unit = js.native
+  def getObjectList(params: GetObjectListParams, options: Record[String, _], callback: GetObjectListCallback): Unit = js.native
+  def getObjectListAsync(params: Null, options: Anon_Sorted): js.Promise[NonNullCallbackReturnTypeOf[GetObjectListCallback]] = js.native
+  def getObjectListAsync(params: Null, options: Record[String, _]): js.Promise[NonNullCallbackReturnTypeOf[GetObjectListCallback]] = js.native
+  /**
+    * Returns a list of objects with id between params.startkey and params.endkey
+    * @param params Parameters determining the objects included in the return list. Null to include all objects
+    * @param options If the returned list should be sorted. And some internal options.
+    * @param callback Is called when the operation has finished (successfully or not)
+    */
+  def getObjectListAsync(params: GetObjectListParams, options: Anon_Sorted): js.Promise[NonNullCallbackReturnTypeOf[GetObjectListCallback]] = js.native
+  def getObjectListAsync(params: GetObjectListParams, options: Record[String, _]): js.Promise[NonNullCallbackReturnTypeOf[GetObjectListCallback]] = js.native
   def getObjectView(design: String, search: String, params: js.UndefOr[scala.Nothing], callback: GetObjectViewCallback): Unit = js.native
   def getObjectView(
     design: String,

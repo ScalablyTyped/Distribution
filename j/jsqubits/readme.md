@@ -12,7 +12,7 @@ Quantum computation simulation JavaScript library
 | Keywords           | quantum |
 | # releases         | 3 |
 | # dependents       | 2 |
-| # downloads        | 1252 |
+| # downloads        | 1548 |
 | # stars            | 0 |
 
 ## Links

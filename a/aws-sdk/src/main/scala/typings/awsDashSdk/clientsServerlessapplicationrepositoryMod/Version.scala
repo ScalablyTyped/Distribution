@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Version extends js.Object {
   /**
     * The application Amazon Resource Name (ARN).
     */
-  var ApplicationId: __string
+  var ApplicationId: __string = js.native
   /**
     * The date and time this resource was created.
     */
-  var CreationTime: __string
+  var CreationTime: __string = js.native
   /**
     * An array of parameter types supported by the application.
     */
-  var ParameterDefinitions: __listOfParameterDefinition
+  var ParameterDefinitions: __listOfParameterDefinition = js.native
   /**
     * A list of values that you must specify before you can deploy certain applications.
     Some applications might include resources that can affect permissions in your AWS
@@ -42,30 +43,30 @@ trait Version extends js.Object {
     all permissions associated with the application before deploying. If you don't specify
     this parameter for an application that requires capabilities, the call will fail.
     */
-  var RequiredCapabilities: __listOfCapability
+  var RequiredCapabilities: __listOfCapability = js.native
   /**
     * Whether all of the AWS resources contained in this application are supported in the region
     in which it is being retrieved.
     */
-  var ResourcesSupported: __boolean
+  var ResourcesSupported: __boolean = js.native
   /**
     * The semantic version of the application:
     https://semver.org/
     
     */
-  var SemanticVersion: __string
+  var SemanticVersion: __string = js.native
   /**
     * A link to the S3 object that contains the ZIP archive of the source code for this version of your application.Maximum size 50 MB
     */
-  var SourceCodeArchiveUrl: js.UndefOr[__string] = js.undefined
+  var SourceCodeArchiveUrl: js.UndefOr[__string] = js.native
   /**
     * A link to a public repository for the source code of your application, for example the URL of a specific GitHub commit.
     */
-  var SourceCodeUrl: js.UndefOr[__string] = js.undefined
+  var SourceCodeUrl: js.UndefOr[__string] = js.native
   /**
     * A link to the packaged AWS SAM template of your application.
     */
-  var TemplateUrl: __string
+  var TemplateUrl: __string = js.native
 }
 
 object Version {
@@ -81,9 +82,9 @@ object Version {
     SourceCodeArchiveUrl: __string = null,
     SourceCodeUrl: __string = null
   ): Version = {
-    val __obj = js.Dynamic.literal(ApplicationId = ApplicationId, CreationTime = CreationTime, ParameterDefinitions = ParameterDefinitions, RequiredCapabilities = RequiredCapabilities, ResourcesSupported = ResourcesSupported, SemanticVersion = SemanticVersion, TemplateUrl = TemplateUrl)
-    if (SourceCodeArchiveUrl != null) __obj.updateDynamic("SourceCodeArchiveUrl")(SourceCodeArchiveUrl)
-    if (SourceCodeUrl != null) __obj.updateDynamic("SourceCodeUrl")(SourceCodeUrl)
+    val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], CreationTime = CreationTime.asInstanceOf[js.Any], ParameterDefinitions = ParameterDefinitions.asInstanceOf[js.Any], RequiredCapabilities = RequiredCapabilities.asInstanceOf[js.Any], ResourcesSupported = ResourcesSupported.asInstanceOf[js.Any], SemanticVersion = SemanticVersion.asInstanceOf[js.Any], TemplateUrl = TemplateUrl.asInstanceOf[js.Any])
+    if (SourceCodeArchiveUrl != null) __obj.updateDynamic("SourceCodeArchiveUrl")(SourceCodeArchiveUrl.asInstanceOf[js.Any])
+    if (SourceCodeUrl != null) __obj.updateDynamic("SourceCodeUrl")(SourceCodeUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Version]
   }
 }

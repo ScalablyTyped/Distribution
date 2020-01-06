@@ -10,9 +10,9 @@ ES201X/TypeScript class decorator for Vue components
 | ------------------ | :-------------: |
 | Full name          | vue-class-component |
 | Keywords           | vue, class, babel, typescript |
-| # releases         | 13 |
-| # dependents       | 345 |
-| # downloads        | 3057492 |
+| # releases         | 9 |
+| # dependents       | 770 |
+| # downloads        | 7303880 |
 | # stars            | 6 |
 
 ## Links

@@ -4,16 +4,16 @@
 Typings are for version 1.9
 
 ## Library description:
-expose localhost to the world
+Expose localhost to the world
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | localtunnel |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 123 |
-| # downloads        | 17824416 |
-| # stars            | 85 |
+| # releases         | 5 |
+| # dependents       | 136 |
+| # downloads        | 20287861 |
+| # stars            | 86 |
 
 ## Links
 - [Homepage](https://github.com/localtunnel/localtunnel#readme)

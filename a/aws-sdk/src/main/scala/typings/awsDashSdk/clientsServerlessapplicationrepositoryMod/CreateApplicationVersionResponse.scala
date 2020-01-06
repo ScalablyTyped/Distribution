@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CreateApplicationVersionResponse extends js.Object {
   /**
     * The application Amazon Resource Name (ARN).
     */
-  var ApplicationId: js.UndefOr[__string] = js.undefined
+  var ApplicationId: js.UndefOr[__string] = js.native
   /**
     * The date and time this resource was created.
     */
-  var CreationTime: js.UndefOr[__string] = js.undefined
+  var CreationTime: js.UndefOr[__string] = js.native
   /**
     * An array of parameter types supported by the application.
     */
-  var ParameterDefinitions: js.UndefOr[__listOfParameterDefinition] = js.undefined
+  var ParameterDefinitions: js.UndefOr[__listOfParameterDefinition] = js.native
   /**
     * A list of values that you must specify before you can deploy certain applications.
     Some applications might include resources that can affect permissions in your AWS
@@ -42,30 +43,30 @@ trait CreateApplicationVersionResponse extends js.Object {
     all permissions associated with the application before deploying. If you don't specify
     this parameter for an application that requires capabilities, the call will fail.
     */
-  var RequiredCapabilities: js.UndefOr[__listOfCapability] = js.undefined
+  var RequiredCapabilities: js.UndefOr[__listOfCapability] = js.native
   /**
     * Whether all of the AWS resources contained in this application are supported in the region
     in which it is being retrieved.
     */
-  var ResourcesSupported: js.UndefOr[__boolean] = js.undefined
+  var ResourcesSupported: js.UndefOr[__boolean] = js.native
   /**
     * The semantic version of the application:
     https://semver.org/
     
     */
-  var SemanticVersion: js.UndefOr[__string] = js.undefined
+  var SemanticVersion: js.UndefOr[__string] = js.native
   /**
     * A link to the S3 object that contains the ZIP archive of the source code for this version of your application.Maximum size 50 MB
     */
-  var SourceCodeArchiveUrl: js.UndefOr[__string] = js.undefined
+  var SourceCodeArchiveUrl: js.UndefOr[__string] = js.native
   /**
     * A link to a public repository for the source code of your application, for example the URL of a specific GitHub commit.
     */
-  var SourceCodeUrl: js.UndefOr[__string] = js.undefined
+  var SourceCodeUrl: js.UndefOr[__string] = js.native
   /**
     * A link to the packaged AWS SAM template of your application.
     */
-  var TemplateUrl: js.UndefOr[__string] = js.undefined
+  var TemplateUrl: js.UndefOr[__string] = js.native
 }
 
 object CreateApplicationVersionResponse {
@@ -82,15 +83,15 @@ object CreateApplicationVersionResponse {
     TemplateUrl: __string = null
   ): CreateApplicationVersionResponse = {
     val __obj = js.Dynamic.literal()
-    if (ApplicationId != null) __obj.updateDynamic("ApplicationId")(ApplicationId)
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime)
-    if (ParameterDefinitions != null) __obj.updateDynamic("ParameterDefinitions")(ParameterDefinitions)
-    if (RequiredCapabilities != null) __obj.updateDynamic("RequiredCapabilities")(RequiredCapabilities)
-    if (!js.isUndefined(ResourcesSupported)) __obj.updateDynamic("ResourcesSupported")(ResourcesSupported)
-    if (SemanticVersion != null) __obj.updateDynamic("SemanticVersion")(SemanticVersion)
-    if (SourceCodeArchiveUrl != null) __obj.updateDynamic("SourceCodeArchiveUrl")(SourceCodeArchiveUrl)
-    if (SourceCodeUrl != null) __obj.updateDynamic("SourceCodeUrl")(SourceCodeUrl)
-    if (TemplateUrl != null) __obj.updateDynamic("TemplateUrl")(TemplateUrl)
+    if (ApplicationId != null) __obj.updateDynamic("ApplicationId")(ApplicationId.asInstanceOf[js.Any])
+    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
+    if (ParameterDefinitions != null) __obj.updateDynamic("ParameterDefinitions")(ParameterDefinitions.asInstanceOf[js.Any])
+    if (RequiredCapabilities != null) __obj.updateDynamic("RequiredCapabilities")(RequiredCapabilities.asInstanceOf[js.Any])
+    if (!js.isUndefined(ResourcesSupported)) __obj.updateDynamic("ResourcesSupported")(ResourcesSupported.asInstanceOf[js.Any])
+    if (SemanticVersion != null) __obj.updateDynamic("SemanticVersion")(SemanticVersion.asInstanceOf[js.Any])
+    if (SourceCodeArchiveUrl != null) __obj.updateDynamic("SourceCodeArchiveUrl")(SourceCodeArchiveUrl.asInstanceOf[js.Any])
+    if (SourceCodeUrl != null) __obj.updateDynamic("SourceCodeUrl")(SourceCodeUrl.asInstanceOf[js.Any])
+    if (TemplateUrl != null) __obj.updateDynamic("TemplateUrl")(TemplateUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateApplicationVersionResponse]
   }
 }

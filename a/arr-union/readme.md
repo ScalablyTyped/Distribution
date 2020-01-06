@@ -10,9 +10,9 @@ Combines a list of arrays, returning a single array with unique values, using st
 | ------------------ | :-------------: |
 | Full name          | arr-union |
 | Keywords           | add, append, array, arrays, combine, concat, extend, union, uniq, unique, util, utility, utils |
-| # releases         | 1 |
-| # dependents       | 51 |
-| # downloads        | 281365298 |
+| # releases         | 0 |
+| # dependents       | 70 |
+| # downloads        | 431434153 |
 | # stars            | 2 |
 
 ## Links

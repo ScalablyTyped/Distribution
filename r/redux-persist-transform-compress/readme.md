@@ -10,9 +10,9 @@ compress your redux state
 | ------------------ | :-------------: |
 | Full name          | redux-persist-transform-compress |
 | Keywords           | redux, redux-persist, redux-persist-transform, compression |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 62532 |
+| # downloads        | 70995 |
 | # stars            | 1 |
 
 ## Links

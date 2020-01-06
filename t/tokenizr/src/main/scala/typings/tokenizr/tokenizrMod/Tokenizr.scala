@@ -16,7 +16,7 @@ trait Tokenizr extends js.Object {
     * Execute multiple alternative callbacks
     */
   def alternatives[X /* <: js.Array[js.ThisFunction0[/* this */ this.type, _]] */](
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param alternatives because its type X is not an array type */ alternatives: X
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param alternatives because its type X is not an array type */ alternatives: X
   ): ReturnType[
     /* import warning: importer.ImportType#apply Failed type conversion: X[number] */ js.Any
   ] = js.native

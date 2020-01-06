@@ -32,11 +32,8 @@ abstract class FilePickerSelectedFilesArray () extends Array[StorageFile] {
     */
   def getMany(startIndex: Double): Anon_ItemsReturnValueNumberStorageFile = js.native
   def indexOf(value: StorageFile, extra: js.Any*): Anon_Index = js.native
-  /**
-    * Retrieves the index of a specified StorageFile object in the collection.
-    * @param value The object to find in the collection.
-    */
+  /* hack */
   @JSName("indexOf")
-  def indexOf_Anon_Index(value: StorageFile): Anon_Index = js.native
+  def indexOf_Double(searchElement: StorageFile): Double = js.native
 }
 

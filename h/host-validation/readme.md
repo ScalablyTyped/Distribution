@@ -11,8 +11,8 @@ Node.js middleware to validate Host and Referer headers in HTTP requests and pro
 | Full name          | host-validation |
 | Keywords           | express, middleware, headers, host, header, dns, rebind, validation |
 | # releases         | 8 |
-| # dependents       | 0 |
-| # downloads        | 13586 |
+| # dependents       | 1 |
+| # downloads        | 50551 |
 | # stars            | 0 |
 
 ## Links

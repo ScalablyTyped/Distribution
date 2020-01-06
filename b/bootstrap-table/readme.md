@@ -4,15 +4,15 @@
 Typings are for version 1.15.5
 
 ## Library description:
-An extended Bootstrap table with radio, checkbox, sort, pagination, and other added features. (supports twitter bootstrap v2 and v3).
+An extended table to integration with some of the most widely used CSS frameworks. (Supports Bootstrap, Semantic UI, Bulma, Material Design, Foundation)
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | bootstrap-table |
-| Keywords           | bootstrap, table, radio, checkbox, sort, pagination, editable |
-| # releases         | 13 |
-| # dependents       | 11 |
-| # downloads        | 560364 |
+| Keywords           | bootstrap, table, pagination, checkbox, radio, datatables, css, css-framework, semantic, semantic-ui, bulma, material, material-design, materialize, foundation |
+| # releases         | 19 |
+| # dependents       | 17 |
+| # downloads        | 615335 |
 | # stars            | 7 |
 
 ## Links

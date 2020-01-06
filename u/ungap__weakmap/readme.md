@@ -11,8 +11,8 @@ An essential WeakMap polyfill for legacy browsers.
 | Full name          | @ungap/weakmap |
 | Keywords           | WeakMap, polyfill, legacy, ungap |
 | # releases         | 7 |
-| # dependents       | 11 |
-| # downloads        | 53394 |
+| # dependents       | 12 |
+| # downloads        | 66046 |
 | # stars            | 0 |
 
 ## Links

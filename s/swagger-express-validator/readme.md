@@ -12,7 +12,7 @@ Validation middleware that validates request/response against provided swagger s
 | Keywords           | validation, swagger, middleware, connect, express |
 | # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 26299 |
+| # downloads        | 81447 |
 | # stars            | 0 |
 
 ## Links

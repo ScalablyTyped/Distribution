@@ -10,13 +10,13 @@ Typings are for version 5.2
 | ------------------ | :-------------: |
 | Full name          | react-instantsearch-dom |
 | Keywords           | algolia, components, fast, instantsearch, react, react-dom, search |
-| # releases         | 14 |
-| # dependents       | 11 |
-| # downloads        | 886487 |
+| # releases         | 21 |
+| # dependents       | 27 |
+| # downloads        | 2710456 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://community.algolia.com/react-instantsearch)
+- [Homepage](https://www.algolia.com/doc/guides/building-search-ui/what-is-instantsearch/react/)
 - [Bugs](https://github.com/algolia/react-instantsearch/issues)
 - [Repository](https://github.com/algolia/react-instantsearch)
 - [Npm](https://www.npmjs.com/package/react-instantsearch-dom)

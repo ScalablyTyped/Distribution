@@ -10,9 +10,9 @@ PouchDB adapter using Cordova SQLite Plugin as its data store.
 | ------------------ | :-------------: |
 | Full name          | pouchdb-adapter-cordova-sqlite |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 5 |
 | # dependents       | 3 |
-| # downloads        | 28788 |
+| # downloads        | 35584 |
 | # stars            | 1 |
 
 ## Links

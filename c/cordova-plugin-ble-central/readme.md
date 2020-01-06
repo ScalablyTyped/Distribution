@@ -10,9 +10,9 @@ Bluetooth Low Energy (BLE) Central Plugin
 | ------------------ | :-------------: |
 | Full name          | cordova-plugin-ble-central |
 | Keywords           | cordova, bluetooth, ble, bluetoothle, bluetooth le, low energy, smart, ecosystem:cordova, cordova-ios, cordova-android |
-| # releases         | 8 |
+| # releases         | 10 |
 | # dependents       | 4 |
-| # downloads        | 50571 |
+| # downloads        | 49227 |
 | # stars            | 4 |
 
 ## Links

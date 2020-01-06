@@ -9,20 +9,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PaletteOptions extends js.Object {
-  var action: js.UndefOr[PartialTypeAction] = js.undefined
-  var background: js.UndefOr[PartialTypeBackground] = js.undefined
-  var common: js.UndefOr[PartialCommonColors] = js.undefined
-  var contrastThreshold: js.UndefOr[Double] = js.undefined
-  var divider: js.UndefOr[String] = js.undefined
-  var error: js.UndefOr[PaletteColorOptions] = js.undefined
-  var getContrastText: js.UndefOr[js.Function1[/* background */ String, String]] = js.undefined
-  var grey: js.UndefOr[ColorPartial] = js.undefined
-  var primary: js.UndefOr[PaletteColorOptions] = js.undefined
-  var secondary: js.UndefOr[PaletteColorOptions] = js.undefined
-  var text: js.UndefOr[PartialTypeText] = js.undefined
-  var tonalOffset: js.UndefOr[Double] = js.undefined
-  var `type`: js.UndefOr[PaletteType] = js.undefined
+  var action: js.UndefOr[PartialTypeAction] = js.native
+  var background: js.UndefOr[PartialTypeBackground] = js.native
+  var common: js.UndefOr[PartialCommonColors] = js.native
+  var contrastThreshold: js.UndefOr[Double] = js.native
+  var divider: js.UndefOr[String] = js.native
+  var error: js.UndefOr[PaletteColorOptions] = js.native
+  var getContrastText: js.UndefOr[js.Function1[/* background */ String, String]] = js.native
+  var grey: js.UndefOr[ColorPartial] = js.native
+  var primary: js.UndefOr[PaletteColorOptions] = js.native
+  var secondary: js.UndefOr[PaletteColorOptions] = js.native
+  var text: js.UndefOr[PartialTypeText] = js.native
+  var tonalOffset: js.UndefOr[Double] = js.native
+  var `type`: js.UndefOr[PaletteType] = js.native
 }
 
 object PaletteOptions {

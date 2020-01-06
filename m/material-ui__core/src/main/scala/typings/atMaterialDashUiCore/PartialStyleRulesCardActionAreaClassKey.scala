@@ -6,10 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/CardActionArea.CardActionAreaClassKey>> */
+@js.native
 trait PartialStyleRulesCardActionAreaClassKey extends js.Object {
-  var focusHighlight: js.UndefOr[CSSProperties] = js.undefined
-  var focusVisible: js.UndefOr[CSSProperties] = js.undefined
-  var root: js.UndefOr[CSSProperties] = js.undefined
+  var focusHighlight: js.UndefOr[CSSProperties] = js.native
+  var focusVisible: js.UndefOr[CSSProperties] = js.native
+  var root: js.UndefOr[CSSProperties] = js.native
 }
 
 object PartialStyleRulesCardActionAreaClassKey {

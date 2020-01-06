@@ -11,8 +11,8 @@ Smaller Polyfill for the proposed React context API
 | Full name          | mini-create-react-context |
 | Keywords           | react, context, contextTypes, polyfill, ponyfill |
 | # releases         | 6 |
-| # dependents       | 5 |
-| # downloads        | 11972575 |
+| # dependents       | 6 |
+| # downloads        | 23952327 |
 | # stars            | 0 |
 
 ## Links

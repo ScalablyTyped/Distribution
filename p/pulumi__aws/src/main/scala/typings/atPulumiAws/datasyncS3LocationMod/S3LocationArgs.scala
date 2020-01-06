@@ -8,23 +8,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait S3LocationArgs extends js.Object {
   /**
     * Amazon Resource Name (ARN) of the S3 Bucket.
     */
-  val s3BucketArn: Input[ARN]
+  val s3BucketArn: Input[ARN] = js.native
   /**
     * Configuration block containing information for connecting to S3.
     */
-  val s3Config: Input[S3LocationS3Config]
+  val s3Config: Input[S3LocationS3Config] = js.native
   /**
     * Prefix to perform actions as source or destination.
     */
-  val subdirectory: Input[String]
+  val subdirectory: Input[String] = js.native
   /**
     * Key-value pairs of resource tags to assign to the DataSync Location.
     */
-  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object S3LocationArgs {

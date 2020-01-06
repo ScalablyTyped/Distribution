@@ -10,9 +10,9 @@ Unpack a browser type and version from the useragent string
 | ------------------ | :-------------: |
 | Full name          | detect-browser |
 | Keywords           | browser, detect, useragent |
-| # releases         | 23 |
-| # dependents       | 94 |
-| # downloads        | 2370439 |
+| # releases         | 24 |
+| # dependents       | 123 |
+| # downloads        | 4780377 |
 | # stars            | 9 |
 
 ## Links

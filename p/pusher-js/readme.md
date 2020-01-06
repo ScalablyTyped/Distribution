@@ -4,15 +4,15 @@
 Typings are for version 4.2
 
 ## Library description:
-Pusher JavaScript library for browsers, React Native, NodeJS and web workers
+Pusher Channels JavaScript library for browsers, React Native, NodeJS and web workers
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | pusher-js |
 | Keywords           | pusher, client, websocket, http, fallback, isomorphic, events, pubsub |
-| # releases         | 8 |
-| # dependents       | 74 |
-| # downloads        | 3918901 |
+| # releases         | 9 |
+| # dependents       | 100 |
+| # downloads        | 5373496 |
 | # stars            | 4 |
 
 ## Links

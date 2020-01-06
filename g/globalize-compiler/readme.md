@@ -10,9 +10,9 @@ Globalize.js runtime compiler for your formatters and parsers
 | ------------------ | :-------------: |
 | Full name          | globalize-compiler |
 | Keywords           | globalize |
-| # releases         | 10 |
+| # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 78803 |
+| # downloads        | 69933 |
 | # stars            | 0 |
 
 ## Links

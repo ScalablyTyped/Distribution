@@ -5,23 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RdsDbInstanceArgs extends js.Object {
   /**
     * A db password
     */
-  val dbPassword: Input[String]
+  val dbPassword: Input[String] = js.native
   /**
     * A db username
     */
-  val dbUser: Input[String]
+  val dbUser: Input[String] = js.native
   /**
     * The db instance to register for this stack. Changing this will force a new resource.
     */
-  val rdsDbInstanceArn: Input[String]
+  val rdsDbInstanceArn: Input[String] = js.native
   /**
     * The stack to register a db instance for. Changing this will force a new resource.
     */
-  val stackId: Input[String]
+  val stackId: Input[String] = js.native
 }
 
 object RdsDbInstanceArgs {

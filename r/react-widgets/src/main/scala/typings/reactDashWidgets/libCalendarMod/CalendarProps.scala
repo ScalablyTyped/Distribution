@@ -1,8 +1,5 @@
 package typings.reactDashWidgets.libCalendarMod
 
-import typings.react.reactMod.Key
-import typings.react.reactMod.LegacyRef
-import typings.react.reactMod.ReactNode
 import typings.react.reactMod.ReactType
 import typings.reactDashWidgets.libCommonPropsMod.AutoFocus
 import typings.reactDashWidgets.libCommonPropsMod.ReactWidgetsCommonProps
@@ -17,7 +14,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CalendarProps
-  extends ReactWidgetsCommonProps[CalendarClass]
+  extends ReactWidgetsCommonProps
      with AutoFocus {
   /**
     * A formatter for century, the default formats the first and last year of the century like:
@@ -145,7 +142,6 @@ object CalendarProps {
   def apply(
     autoFocus: js.UndefOr[Boolean] = js.undefined,
     centuryFormat: String | (js.Function1[/* day */ Date, String]) = null,
-    children: ReactNode = null,
     culture: String = null,
     currentDate: Date = null,
     dateFormat: String | (js.Function1[/* day */ Date, String]) = null,
@@ -162,7 +158,6 @@ object CalendarProps {
     id: String = null,
     initialView: month | year | decade | century = null,
     isRtl: js.UndefOr[Boolean] = js.undefined,
-    key: Key = null,
     max: Date = null,
     messages: CalendarMessages = null,
     min: Date = null,
@@ -173,7 +168,6 @@ object CalendarProps {
     onNavigate: (/* date */ Date, /* direction */ String, /* view */ String) => Unit = null,
     onViewChange: () => Unit = null,
     readOnly: Boolean | js.Array[_] = null,
-    ref: LegacyRef[CalendarClass] = null,
     value: Date = null,
     view: CalendarView = null,
     views: js.Array[CalendarView] = null,
@@ -182,7 +176,6 @@ object CalendarProps {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
     if (centuryFormat != null) __obj.updateDynamic("centuryFormat")(centuryFormat.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (culture != null) __obj.updateDynamic("culture")(culture.asInstanceOf[js.Any])
     if (currentDate != null) __obj.updateDynamic("currentDate")(currentDate.asInstanceOf[js.Any])
     if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat.asInstanceOf[js.Any])
@@ -199,7 +192,6 @@ object CalendarProps {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (initialView != null) __obj.updateDynamic("initialView")(initialView.asInstanceOf[js.Any])
     if (!js.isUndefined(isRtl)) __obj.updateDynamic("isRtl")(isRtl.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
@@ -210,7 +202,6 @@ object CalendarProps {
     if (onNavigate != null) __obj.updateDynamic("onNavigate")(js.Any.fromFunction3(onNavigate))
     if (onViewChange != null) __obj.updateDynamic("onViewChange")(js.Any.fromFunction0(onViewChange))
     if (readOnly != null) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     if (views != null) __obj.updateDynamic("views")(views.asInstanceOf[js.Any])

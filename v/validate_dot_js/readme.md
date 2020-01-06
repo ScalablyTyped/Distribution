@@ -10,9 +10,9 @@ Declarative validations for JavaScript
 | ------------------ | :-------------: |
 | Full name          | validate.js |
 | Keywords           | validation, validate, server, client |
-| # releases         | 2 |
-| # dependents       | 236 |
-| # downloads        | 4339874 |
+| # releases         | 3 |
+| # dependents       | 303 |
+| # downloads        | 6892358 |
 | # stars            | 14 |
 
 ## Links

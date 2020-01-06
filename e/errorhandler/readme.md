@@ -9,13 +9,13 @@ Development-only error handler middleware
 | ------------------ | :-------------: |
 | Full name          | errorhandler |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 594 |
-| # downloads        | 22742101 |
+| # releases         | 2 |
+| # dependents       | 640 |
+| # downloads        | 28536611 |
 | # stars            | 60 |
 
 ## Links
-- [Homepage](https://github.com/expressjs/errorhandler)
+- [Homepage](https://github.com/expressjs/errorhandler#readme)
 - [Bugs](https://github.com/expressjs/errorhandler/issues)
 - [Repository](https://github.com/expressjs/errorhandler)
 - [Npm](https://www.npmjs.com/package/errorhandler)

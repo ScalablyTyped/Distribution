@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RelationalDatabaseHardware extends js.Object {
   /**
     * The number of vCPUs for the database.
     */
-  var cpuCount: js.UndefOr[integer] = js.undefined
+  var cpuCount: js.UndefOr[integer] = js.native
   /**
     * The size of the disk for the database.
     */
-  var diskSizeInGb: js.UndefOr[integer] = js.undefined
+  var diskSizeInGb: js.UndefOr[integer] = js.native
   /**
     * The amount of RAM in GB for the database.
     */
-  var ramSizeInGb: js.UndefOr[float] = js.undefined
+  var ramSizeInGb: js.UndefOr[float] = js.native
 }
 
 object RelationalDatabaseHardware {

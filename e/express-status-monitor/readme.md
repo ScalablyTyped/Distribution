@@ -10,9 +10,9 @@ Realtime Monitoring for Express-based Node applications
 | ------------------ | :-------------: |
 | Full name          | express-status-monitor |
 | Keywords           | node, status, monitoring, express, charts |
-| # releases         | 13 |
-| # dependents       | 26 |
-| # downloads        | 343026 |
+| # releases         | 12 |
+| # dependents       | 29 |
+| # downloads        | 370607 |
 | # stars            | 23 |
 
 ## Links

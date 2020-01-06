@@ -6,15 +6,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ResourceDataSyncArgs extends js.Object {
   /**
     * Name for the configuration.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * Amazon S3 configuration details for the sync.
     */
-  val s3Destination: Input[ResourceDataSyncS3Destination]
+  val s3Destination: Input[ResourceDataSyncS3Destination] = js.native
 }
 
 object ResourceDataSyncArgs {

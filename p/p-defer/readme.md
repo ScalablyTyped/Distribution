@@ -9,10 +9,10 @@ Create a deferred promise
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | p-defer |
-| Keywords           | promise, defer, deferred, resolve, reject, lazy, later, async, await, promises, bluebird |
-| # releases         | 4 |
-| # dependents       | 42 |
-| # downloads        | 82529324 |
+| Keywords           | promise, defer, deferred, resolve, reject, lazy, later, async, await, promises |
+| # releases         | 5 |
+| # dependents       | 76 |
+| # downloads        | 264277816 |
 | # stars            | 1 |
 
 ## Links

@@ -11,8 +11,8 @@ A lightweight graphical user interface for changing variables in JavaScript.
 | Full name          | dat.gui |
 | Keywords           | - |
 | # releases         | 10 |
-| # dependents       | 43 |
-| # downloads        | 181655 |
+| # dependents       | 58 |
+| # downloads        | 359608 |
 | # stars            | 8 |
 
 ## Links

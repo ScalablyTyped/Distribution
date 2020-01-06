@@ -11,7 +11,7 @@ trait Anon_Address extends js.Object {
     js.Function3[
       /* address */ String, 
       /* credentials */ ChannelCredentials, 
-      /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias @grpc/grpc-js.@grpc/grpc-js/build/src/client.ClientOptions */ /* options */ js.Object, 
+      /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @grpc/grpc-js.@grpc/grpc-js/build/src/client.ClientOptions */ /* options */ js.Object, 
       Channel
     ]
   ] = js.undefined
@@ -21,7 +21,7 @@ trait Anon_Address extends js.Object {
 object Anon_Address {
   @scala.inline
   def apply(
-    channelFactoryOverride: (/* address */ String, /* credentials */ ChannelCredentials, /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias @grpc/grpc-js.@grpc/grpc-js/build/src/client.ClientOptions */ /* options */ js.Object) => Channel = null,
+    channelFactoryOverride: (/* address */ String, /* credentials */ ChannelCredentials, /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @grpc/grpc-js.@grpc/grpc-js/build/src/client.ClientOptions */ /* options */ js.Object) => Channel = null,
     channelOverride: Channel = null
   ): Anon_Address = {
     val __obj = js.Dynamic.literal()

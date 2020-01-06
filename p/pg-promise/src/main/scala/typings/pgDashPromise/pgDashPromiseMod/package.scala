@@ -21,11 +21,11 @@ package object pgDashPromiseMod {
     - typings.pgDashPromise.pgDashPromiseMod.ParameterizedQuery
     - js.Function1[
   / * values * / js.UndefOr[js.Any], 
-  / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias pg-promise.pg-promise.QueryParam * / js.Object]
+  / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias pg-promise.pg-promise.QueryParam * / js.Object]
   */
   type QueryParam = _QueryParam | (js.Function1[
     /* values */ js.UndefOr[js.Any], 
-    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias pg-promise.pg-promise.QueryParam */ js.Object
+    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias pg-promise.pg-promise.QueryParam */ js.Object
   ]) | String
   type ValidSchema = String | js.Array[String] | Null | Unit
   type XPromise[T] = js.Promise[T]

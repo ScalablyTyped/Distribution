@@ -11,8 +11,8 @@ The lodash method `_.toNumber` exported as a module.
 | Full name          | lodash.tonumber |
 | Keywords           | lodash-modularized, tonumber |
 | # releases         | 0 |
-| # dependents       | 29 |
-| # downloads        | 13878863 |
+| # dependents       | 42 |
+| # downloads        | 21008380 |
 | # stars            | 0 |
 
 ## Links

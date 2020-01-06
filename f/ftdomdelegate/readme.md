@@ -8,16 +8,13 @@ Create and manage a DOM event delegator.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | ftdomdelegate |
-| Keywords           | delegate, dom, events |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 0 |
+| Keywords           | origami, component, ft |
+| # releases         | 9 |
+| # dependents       | 12 |
+| # downloads        | 28610 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/ftlabs/ftdomdelegate)
-- [Bugs](https://github.com/ftlabs/ftdomdelegate/issues)
-- [Repository](https://github.com/ftlabs/ftdomdelegate)
 - [Npm](https://www.npmjs.com/package/ftdomdelegate)
     
 

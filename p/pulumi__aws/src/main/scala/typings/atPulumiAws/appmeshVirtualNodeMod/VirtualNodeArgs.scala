@@ -7,23 +7,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VirtualNodeArgs extends js.Object {
   /**
     * The name of the service mesh in which to create the virtual node.
     */
-  val meshName: Input[String]
+  val meshName: Input[String] = js.native
   /**
     * The name to use for the virtual node.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * The virtual node specification to apply.
     */
-  val spec: Input[VirtualNodeSpec]
+  val spec: Input[VirtualNodeSpec] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object VirtualNodeArgs {

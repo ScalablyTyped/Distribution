@@ -13,6 +13,19 @@ trait Personalize extends Service {
   @JSName("config")
   var config_Personalize: ConfigBase with ClientConfiguration = js.native
   /**
+    * Creates a batch inference job. The operation can handle up to 50 million records and the input file must be in JSON format. For more information, see recommendations-batch.
+    */
+  def createBatchInferenceJob(): Request[CreateBatchInferenceJobResponse, AWSError] = js.native
+  def createBatchInferenceJob(callback: js.Function2[/* err */ AWSError, /* data */ CreateBatchInferenceJobResponse, Unit]): Request[CreateBatchInferenceJobResponse, AWSError] = js.native
+  /**
+    * Creates a batch inference job. The operation can handle up to 50 million records and the input file must be in JSON format. For more information, see recommendations-batch.
+    */
+  def createBatchInferenceJob(params: CreateBatchInferenceJobRequest): Request[CreateBatchInferenceJobResponse, AWSError] = js.native
+  def createBatchInferenceJob(
+    params: CreateBatchInferenceJobRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateBatchInferenceJobResponse, Unit]
+  ): Request[CreateBatchInferenceJobResponse, AWSError] = js.native
+  /**
     * Creates a campaign by deploying a solution version. When a client calls the GetRecommendations and GetPersonalizedRanking APIs, a campaign is specified in the request.  Minimum Provisioned TPS and Auto-Scaling  A transaction is a single GetRecommendations or GetPersonalizedRanking call. Transactions per second (TPS) is the throughput and unit of billing for Amazon Personalize. The minimum provisioned TPS (minProvisionedTPS) specifies the baseline throughput provisioned by Amazon Personalize, and thus, the minimum billing charge. If your TPS increases beyond minProvisionedTPS, Amazon Personalize auto-scales the provisioned capacity up and down, but never below minProvisionedTPS, to maintain a 70% utilization. There's a short time delay while the capacity is increased that might cause loss of transactions. It's recommended to start with a low minProvisionedTPS, track your usage using Amazon CloudWatch metrics, and then increase the minProvisionedTPS as necessary.  Status  A campaign can be in one of the following states:   CREATE PENDING &gt; CREATE IN_PROGRESS &gt; ACTIVE -or- CREATE FAILED   DELETE PENDING &gt; DELETE IN_PROGRESS   To get the campaign status, call DescribeCampaign.  Wait until the status of the campaign is ACTIVE before asking the campaign for recommendations.   Related APIs     ListCampaigns     DescribeCampaign     UpdateCampaign     DeleteCampaign   
     */
   def createCampaign(): Request[CreateCampaignResponse, AWSError] = js.native
@@ -208,6 +221,19 @@ trait Personalize extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeAlgorithmResponse, Unit]
   ): Request[DescribeAlgorithmResponse, AWSError] = js.native
   /**
+    * Gets the properties of a batch inference job including name, Amazon Resource Name (ARN), status, input and output configurations, and the ARN of the solution version used to generate the recommendations.
+    */
+  def describeBatchInferenceJob(): Request[DescribeBatchInferenceJobResponse, AWSError] = js.native
+  def describeBatchInferenceJob(callback: js.Function2[/* err */ AWSError, /* data */ DescribeBatchInferenceJobResponse, Unit]): Request[DescribeBatchInferenceJobResponse, AWSError] = js.native
+  /**
+    * Gets the properties of a batch inference job including name, Amazon Resource Name (ARN), status, input and output configurations, and the ARN of the solution version used to generate the recommendations.
+    */
+  def describeBatchInferenceJob(params: DescribeBatchInferenceJobRequest): Request[DescribeBatchInferenceJobResponse, AWSError] = js.native
+  def describeBatchInferenceJob(
+    params: DescribeBatchInferenceJobRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeBatchInferenceJobResponse, Unit]
+  ): Request[DescribeBatchInferenceJobResponse, AWSError] = js.native
+  /**
     * Describes the given campaign, including its status. A campaign can be in one of the following states:   CREATE PENDING &gt; CREATE IN_PROGRESS &gt; ACTIVE -or- CREATE FAILED   DELETE PENDING &gt; DELETE IN_PROGRESS   When the status is CREATE FAILED, the response includes the failureReason key, which describes why. For more information on campaigns, see CreateCampaign.
     */
   def describeCampaign(): Request[DescribeCampaignResponse, AWSError] = js.native
@@ -350,6 +376,19 @@ trait Personalize extends Service {
     params: GetSolutionMetricsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetSolutionMetricsResponse, Unit]
   ): Request[GetSolutionMetricsResponse, AWSError] = js.native
+  /**
+    * Gets a list of the batch inference jobs that have been performed off of a solution version.
+    */
+  def listBatchInferenceJobs(): Request[ListBatchInferenceJobsResponse, AWSError] = js.native
+  def listBatchInferenceJobs(callback: js.Function2[/* err */ AWSError, /* data */ ListBatchInferenceJobsResponse, Unit]): Request[ListBatchInferenceJobsResponse, AWSError] = js.native
+  /**
+    * Gets a list of the batch inference jobs that have been performed off of a solution version.
+    */
+  def listBatchInferenceJobs(params: ListBatchInferenceJobsRequest): Request[ListBatchInferenceJobsResponse, AWSError] = js.native
+  def listBatchInferenceJobs(
+    params: ListBatchInferenceJobsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListBatchInferenceJobsResponse, Unit]
+  ): Request[ListBatchInferenceJobsResponse, AWSError] = js.native
   /**
     * Returns a list of campaigns that use the given solution. When a solution is not specified, all the campaigns associated with the account are listed. The response provides the properties for each campaign, including the Amazon Resource Name (ARN). For more information on campaigns, see CreateCampaign.
     */

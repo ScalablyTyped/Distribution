@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Context
-  extends Instantiable2[/* props */ MultiPickerProps, /* context */ js.Any, Anon_CallBack]
-     with Instantiable1[(/* props */ MultiPickerProps) | (/* props */ Readonlydefault), Anon_CallBack] {
+  extends Instantiable1[(/* props */ MultiPickerProps) | (/* props */ Readonlydefault), Anon_CallBack]
+     with Instantiable2[/* props */ MultiPickerProps, /* context */ js.Any, Anon_CallBack] {
   var contextType: js.UndefOr[Context[_]] = js.native
   var defaultProps: Anon_OnValueChange = js.native
 }

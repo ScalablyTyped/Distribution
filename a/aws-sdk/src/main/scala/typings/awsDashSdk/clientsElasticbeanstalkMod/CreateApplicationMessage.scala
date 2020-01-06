@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CreateApplicationMessage extends js.Object {
   /**
     * The name of the application. Constraint: This name must be unique within your account. If the specified name already exists, the action returns an InvalidParameterValue error.
     */
-  var ApplicationName: typings.awsDashSdk.clientsElasticbeanstalkMod.ApplicationName
+  var ApplicationName: typings.awsDashSdk.clientsElasticbeanstalkMod.ApplicationName = js.native
   /**
     * Describes the application.
     */
-  var Description: js.UndefOr[typings.awsDashSdk.clientsElasticbeanstalkMod.Description] = js.undefined
+  var Description: js.UndefOr[typings.awsDashSdk.clientsElasticbeanstalkMod.Description] = js.native
   /**
     * Specify an application resource lifecycle configuration to prevent your application from accumulating too many versions.
     */
-  var ResourceLifecycleConfig: js.UndefOr[ApplicationResourceLifecycleConfig] = js.undefined
+  var ResourceLifecycleConfig: js.UndefOr[ApplicationResourceLifecycleConfig] = js.native
   /**
     * Specifies the tags applied to the application. Elastic Beanstalk applies these tags only to the application. Environments that you create in the application don't inherit the tags.
     */
-  var Tags: js.UndefOr[typings.awsDashSdk.clientsElasticbeanstalkMod.Tags] = js.undefined
+  var Tags: js.UndefOr[typings.awsDashSdk.clientsElasticbeanstalkMod.Tags] = js.native
 }
 
 object CreateApplicationMessage {
@@ -31,10 +32,10 @@ object CreateApplicationMessage {
     ResourceLifecycleConfig: ApplicationResourceLifecycleConfig = null,
     Tags: Tags = null
   ): CreateApplicationMessage = {
-    val __obj = js.Dynamic.literal(ApplicationName = ApplicationName)
-    if (Description != null) __obj.updateDynamic("Description")(Description)
-    if (ResourceLifecycleConfig != null) __obj.updateDynamic("ResourceLifecycleConfig")(ResourceLifecycleConfig)
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
+    val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any])
+    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (ResourceLifecycleConfig != null) __obj.updateDynamic("ResourceLifecycleConfig")(ResourceLifecycleConfig.asInstanceOf[js.Any])
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateApplicationMessage]
   }
 }

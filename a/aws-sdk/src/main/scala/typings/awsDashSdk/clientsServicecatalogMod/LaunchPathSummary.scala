@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LaunchPathSummary extends js.Object {
   /**
     * The constraints on the portfolio-product relationship.
     */
-  var ConstraintSummaries: js.UndefOr[typings.awsDashSdk.clientsServicecatalogMod.ConstraintSummaries] = js.undefined
+  var ConstraintSummaries: js.UndefOr[typings.awsDashSdk.clientsServicecatalogMod.ConstraintSummaries] = js.native
   /**
     * The identifier of the product path.
     */
-  var Id: js.UndefOr[typings.awsDashSdk.clientsServicecatalogMod.Id] = js.undefined
+  var Id: js.UndefOr[typings.awsDashSdk.clientsServicecatalogMod.Id] = js.native
   /**
     * The name of the portfolio to which the user was assigned.
     */
-  var Name: js.UndefOr[PortfolioName] = js.undefined
+  var Name: js.UndefOr[PortfolioName] = js.native
   /**
     * The tags associated with this product path.
     */
-  var Tags: js.UndefOr[typings.awsDashSdk.clientsServicecatalogMod.Tags] = js.undefined
+  var Tags: js.UndefOr[typings.awsDashSdk.clientsServicecatalogMod.Tags] = js.native
 }
 
 object LaunchPathSummary {
@@ -32,10 +33,10 @@ object LaunchPathSummary {
     Tags: Tags = null
   ): LaunchPathSummary = {
     val __obj = js.Dynamic.literal()
-    if (ConstraintSummaries != null) __obj.updateDynamic("ConstraintSummaries")(ConstraintSummaries)
-    if (Id != null) __obj.updateDynamic("Id")(Id)
-    if (Name != null) __obj.updateDynamic("Name")(Name)
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
+    if (ConstraintSummaries != null) __obj.updateDynamic("ConstraintSummaries")(ConstraintSummaries.asInstanceOf[js.Any])
+    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
+    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchPathSummary]
   }
 }

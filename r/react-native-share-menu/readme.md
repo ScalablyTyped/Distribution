@@ -10,9 +10,9 @@ Adds the app to share menu, so it can be launched from share menu and receive da
 | ------------------ | :-------------: |
 | Full name          | react-native-share-menu |
 | Keywords           | react-component, react-native, android, ios, share |
-| # releases         | 11 |
+| # releases         | 9 |
 | # dependents       | 0 |
-| # downloads        | 2243 |
+| # downloads        | 3986 |
 | # stars            | 1 |
 
 ## Links

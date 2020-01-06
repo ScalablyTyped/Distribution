@@ -10,9 +10,9 @@ A framework for building brilliant applications
 | ------------------ | :-------------: |
 | Full name          | mithril |
 | Keywords           | - |
-| # releases         | 17 |
-| # dependents       | 136 |
-| # downloads        | 438176 |
+| # releases         | 18 |
+| # dependents       | 161 |
+| # downloads        | 1022076 |
 | # stars            | 22 |
 
 ## Links

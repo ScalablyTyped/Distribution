@@ -6,26 +6,27 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetInstancesResult extends js.Object {
-  val filters: js.UndefOr[js.Array[GetInstancesFilter]] = js.undefined
+  val filters: js.UndefOr[js.Array[GetInstancesFilter]] = js.native
   /**
     * id is the provider-assigned unique ID for this managed resource.
     */
-  val id: String
+  val id: String = js.native
   /**
     * IDs of instances found through the filter
     */
-  val ids: js.Array[String]
-  val instanceStateNames: js.UndefOr[js.Array[String]] = js.undefined
-  val instanceTags: StringDictionary[js.Any]
+  val ids: js.Array[String] = js.native
+  val instanceStateNames: js.UndefOr[js.Array[String]] = js.native
+  val instanceTags: StringDictionary[js.Any] = js.native
   /**
     * Private IP addresses of instances found through the filter
     */
-  val privateIps: js.Array[String]
+  val privateIps: js.Array[String] = js.native
   /**
     * Public IP addresses of instances found through the filter
     */
-  val publicIps: js.Array[String]
+  val publicIps: js.Array[String] = js.native
 }
 
 object GetInstancesResult {
@@ -39,9 +40,9 @@ object GetInstancesResult {
     filters: js.Array[GetInstancesFilter] = null,
     instanceStateNames: js.Array[String] = null
   ): GetInstancesResult = {
-    val __obj = js.Dynamic.literal(id = id, ids = ids, instanceTags = instanceTags, privateIps = privateIps, publicIps = publicIps)
-    if (filters != null) __obj.updateDynamic("filters")(filters)
-    if (instanceStateNames != null) __obj.updateDynamic("instanceStateNames")(instanceStateNames)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], ids = ids.asInstanceOf[js.Any], instanceTags = instanceTags.asInstanceOf[js.Any], privateIps = privateIps.asInstanceOf[js.Any], publicIps = publicIps.asInstanceOf[js.Any])
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
+    if (instanceStateNames != null) __obj.updateDynamic("instanceStateNames")(instanceStateNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetInstancesResult]
   }
 }

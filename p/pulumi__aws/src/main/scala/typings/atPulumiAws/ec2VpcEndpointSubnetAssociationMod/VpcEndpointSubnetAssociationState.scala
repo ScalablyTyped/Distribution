@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VpcEndpointSubnetAssociationState extends js.Object {
   /**
     * The ID of the subnet to be associated with the VPC endpoint.
     */
-  val subnetId: js.UndefOr[Input[String]] = js.undefined
+  val subnetId: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of the VPC endpoint with which the subnet will be associated.
     */
-  val vpcEndpointId: js.UndefOr[Input[String]] = js.undefined
+  val vpcEndpointId: js.UndefOr[Input[String]] = js.native
 }
 
 object VpcEndpointSubnetAssociationState {

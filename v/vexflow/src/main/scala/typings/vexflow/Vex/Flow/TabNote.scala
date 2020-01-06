@@ -24,8 +24,9 @@ class TabNote protected () extends StemmableNote {
   def getTieLeftX(): Double = js.native
   def getTieRightX(): Double = js.native
   def setGhost(ghost: Boolean): TabNote = js.native
+  //TODO remove the following lines once TypeScript allows subclass overrides with type changes
   @JSName("setStave")
-  def setStave_TabNote(stave: Stave): TabNote = js.native
+  def setStave_Note(stave: Stave): Note = js.native
   def updateWidth(): Unit = js.native
 }
 

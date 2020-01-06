@@ -10,9 +10,9 @@ Converts text from one keyboard layout to other
 | ------------------ | :-------------: |
 | Full name          | convert-layout |
 | Keywords           | keyboard, keyboard layout, russian, english, change, qwerty, belarusian, german, kazakh, spanish, ukrainian, hebrew, persian, farsi |
-| # releases         | 6 |
+| # releases         | 4 |
 | # dependents       | 2 |
-| # downloads        | 24079 |
+| # downloads        | 39537 |
 | # stars            | 2 |
 
 ## Links

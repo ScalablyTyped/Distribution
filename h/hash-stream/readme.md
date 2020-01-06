@@ -12,7 +12,7 @@ Get a hash of a file or a stream
 | Keywords           | hash, stream |
 | # releases         | 0 |
 | # dependents       | 15 |
-| # downloads        | 8797 |
+| # downloads        | 6938 |
 | # stars            | 0 |
 
 ## Links

@@ -11,8 +11,8 @@ Create a virtual message
 | Full name          | vfile-message |
 | Keywords           | vfile, virtual, message |
 | # releases         | 8 |
-| # dependents       | 3 |
-| # downloads        | 39058123 |
+| # dependents       | 5 |
+| # downloads        | 111669538 |
 | # stars            | 0 |
 
 ## Links

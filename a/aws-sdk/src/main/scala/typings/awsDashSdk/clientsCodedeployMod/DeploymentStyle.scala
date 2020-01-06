@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DeploymentStyle extends js.Object {
   /**
     * Indicates whether to route deployment traffic behind a load balancer.
     */
-  var deploymentOption: js.UndefOr[DeploymentOption] = js.undefined
+  var deploymentOption: js.UndefOr[DeploymentOption] = js.native
   /**
     * Indicates whether to run an in-place deployment or a blue/green deployment.
     */
-  var deploymentType: js.UndefOr[DeploymentType] = js.undefined
+  var deploymentType: js.UndefOr[DeploymentType] = js.native
 }
 
 object DeploymentStyle {

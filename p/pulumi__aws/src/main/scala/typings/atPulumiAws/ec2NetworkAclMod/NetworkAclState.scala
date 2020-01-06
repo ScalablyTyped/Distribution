@@ -8,33 +8,34 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NetworkAclState extends js.Object {
   /**
     * Specifies an egress rule. Parameters defined below.
     * This argument is processed in [attribute-as-blocks mode](https://www.terraform.io/docs/configuration/attr-as-blocks.html).
     */
-  val egress: js.UndefOr[Input[js.Array[Input[NetworkAclEgress]]]] = js.undefined
+  val egress: js.UndefOr[Input[js.Array[Input[NetworkAclEgress]]]] = js.native
   /**
     * Specifies an ingress rule. Parameters defined below.
     * This argument is processed in [attribute-as-blocks mode](https://www.terraform.io/docs/configuration/attr-as-blocks.html).
     */
-  val ingress: js.UndefOr[Input[js.Array[Input[NetworkAclIngress]]]] = js.undefined
+  val ingress: js.UndefOr[Input[js.Array[Input[NetworkAclIngress]]]] = js.native
   /**
     * The ID of the AWS account that owns the network ACL.
     */
-  val ownerId: js.UndefOr[Input[String]] = js.undefined
+  val ownerId: js.UndefOr[Input[String]] = js.native
   /**
     * A list of Subnet IDs to apply the ACL to
     */
-  val subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * The ID of the associated VPC.
     */
-  val vpcId: js.UndefOr[Input[String]] = js.undefined
+  val vpcId: js.UndefOr[Input[String]] = js.native
 }
 
 object NetworkAclState {

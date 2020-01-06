@@ -10,9 +10,9 @@ Library for streamlining application deployment or systems administration tasks
 | ------------------ | :-------------: |
 | Full name          | flightplan |
 | Keywords           | deploy, deployment, commands, devops, exec, shell, bash, ssh, tasks, parallel, sequential, remote, local, cloud, fabric |
-| # releases         | 5 |
+| # releases         | 4 |
 | # dependents       | 8 |
-| # downloads        | 57568 |
+| # downloads        | 57446 |
 | # stars            | 48 |
 
 ## Links

@@ -12,7 +12,7 @@ The lodash method `_.ary` exported as a module.
 | Keywords           | lodash-modularized, ary |
 | # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 822955 |
+| # downloads        | 1229615 |
 | # stars            | 0 |
 
 ## Links

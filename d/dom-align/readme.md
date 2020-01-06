@@ -11,8 +11,8 @@ Align DOM Node Flexibly
 | Full name          | dom-align |
 | Keywords           | dom, align |
 | # releases         | 12 |
-| # dependents       | 72 |
-| # downloads        | 22816387 |
+| # dependents       | 80 |
+| # downloads        | 24821265 |
 | # stars            | 1 |
 
 ## Links

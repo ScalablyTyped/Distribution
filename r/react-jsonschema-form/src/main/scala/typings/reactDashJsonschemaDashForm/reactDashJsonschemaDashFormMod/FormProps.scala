@@ -14,6 +14,7 @@ trait FormProps[T] extends js.Object {
   var ObjectFieldTemplate: js.UndefOr[StatelessComponent[ObjectFieldTemplateProps[_]]] = js.undefined
   var acceptcharset: js.UndefOr[String] = js.undefined
   var action: js.UndefOr[String] = js.undefined
+  var additionalMetaSchemas: js.UndefOr[js.Array[js.Object]] = js.undefined
   var autocomplete: js.UndefOr[String] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
@@ -55,6 +56,7 @@ object FormProps {
     ObjectFieldTemplate: StatelessComponent[ObjectFieldTemplateProps[_]] = null,
     acceptcharset: String = null,
     action: String = null,
+    additionalMetaSchemas: js.Array[js.Object] = null,
     autocomplete: String = null,
     className: String = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
@@ -88,6 +90,7 @@ object FormProps {
     if (ObjectFieldTemplate != null) __obj.updateDynamic("ObjectFieldTemplate")(ObjectFieldTemplate.asInstanceOf[js.Any])
     if (acceptcharset != null) __obj.updateDynamic("acceptcharset")(acceptcharset.asInstanceOf[js.Any])
     if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (additionalMetaSchemas != null) __obj.updateDynamic("additionalMetaSchemas")(additionalMetaSchemas.asInstanceOf[js.Any])
     if (autocomplete != null) __obj.updateDynamic("autocomplete")(autocomplete.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])

@@ -17,10 +17,22 @@ package object clientsElasticacheMod {
   type AZMode = _AZMode | java.lang.String
   type AllowedNodeGroupId = java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.enabled
-    - typings.awsDashSdk.awsDashSdkStrings.disabled
-    - typings.awsDashSdk.awsDashSdkStrings.enabling
-    - typings.awsDashSdk.awsDashSdkStrings.disabling
+    - typings.awsDashSdk.awsDashSdkStrings.SETTING
+    - typings.awsDashSdk.awsDashSdkStrings.ROTATING
+    - java.lang.String
+  */
+  type AuthTokenUpdateStatus = _AuthTokenUpdateStatus | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.SET
+    - typings.awsDashSdk.awsDashSdkStrings.ROTATE
+    - java.lang.String
+  */
+  type AuthTokenUpdateStrategyType = _AuthTokenUpdateStrategyType | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.enabled__
+    - typings.awsDashSdk.awsDashSdkStrings.disabled__
+    - typings.awsDashSdk.awsDashSdkStrings.enabling__
+    - typings.awsDashSdk.awsDashSdkStrings.disabling_
     - java.lang.String
   */
   type AutomaticFailoverStatus = _AutomaticFailoverStatus | java.lang.String
@@ -41,13 +53,14 @@ package object clientsElasticacheMod {
   type CacheSecurityGroups = js.Array[CacheSecurityGroup]
   type CacheSubnetGroups = js.Array[CacheSubnetGroup]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.immediate
+    - typings.awsDashSdk.awsDashSdkStrings.immediate_
     - typings.awsDashSdk.awsDashSdkStrings.`requires-reboot`
     - java.lang.String
   */
   type ChangeType = _ChangeType | java.lang.String
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
   type ClusterIdList = js.Array[String]
+  type CustomerNodeEndpointList = js.Array[CustomerNodeEndpoint]
   type Double = scala.Double
   type EC2SecurityGroupList = js.Array[EC2SecurityGroup]
   type EventList = js.Array[Event]
@@ -64,8 +77,8 @@ package object clientsElasticacheMod {
   type NodeSnapshotList = js.Array[NodeSnapshot]
   type NodeTypeList = js.Array[String]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.system
-    - typings.awsDashSdk.awsDashSdkStrings.customer
+    - typings.awsDashSdk.awsDashSdkStrings.system__
+    - typings.awsDashSdk.awsDashSdkStrings.customer_
     - java.lang.String
   */
   type NodeUpdateInitiatedBy = _NodeUpdateInitiatedBy | java.lang.String
@@ -73,17 +86,17 @@ package object clientsElasticacheMod {
     - typings.awsDashSdk.awsDashSdkStrings.`not-applied`
     - typings.awsDashSdk.awsDashSdkStrings.`waiting-to-start`
     - typings.awsDashSdk.awsDashSdkStrings.`in-progress`
-    - typings.awsDashSdk.awsDashSdkStrings.stopping
-    - typings.awsDashSdk.awsDashSdkStrings.stopped
-    - typings.awsDashSdk.awsDashSdkStrings.complete
+    - typings.awsDashSdk.awsDashSdkStrings.stopping__
+    - typings.awsDashSdk.awsDashSdkStrings.stopped__
+    - typings.awsDashSdk.awsDashSdkStrings.complete__
     - java.lang.String
   */
   type NodeUpdateStatus = _NodeUpdateStatus | java.lang.String
   type ParameterNameValueList = js.Array[ParameterNameValue]
   type ParametersList = js.Array[Parameter]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.enabled
-    - typings.awsDashSdk.awsDashSdkStrings.disabled
+    - typings.awsDashSdk.awsDashSdkStrings.enabled__
+    - typings.awsDashSdk.awsDashSdkStrings.disabled__
     - java.lang.String
   */
   type PendingAutomaticFailoverStatus = _PendingAutomaticFailoverStatus | java.lang.String
@@ -101,26 +114,26 @@ package object clientsElasticacheMod {
   type SecurityGroupMembershipList = js.Array[SecurityGroupMembership]
   type ServiceUpdateList = js.Array[ServiceUpdate]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.critical
+    - typings.awsDashSdk.awsDashSdkStrings.critical_
     - typings.awsDashSdk.awsDashSdkStrings.important
-    - typings.awsDashSdk.awsDashSdkStrings.medium
-    - typings.awsDashSdk.awsDashSdkStrings.low
+    - typings.awsDashSdk.awsDashSdkStrings.medium__
+    - typings.awsDashSdk.awsDashSdkStrings.low__
     - java.lang.String
   */
   type ServiceUpdateSeverity = _ServiceUpdateSeverity | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.available
-    - typings.awsDashSdk.awsDashSdkStrings.cancelled
-    - typings.awsDashSdk.awsDashSdkStrings.expired
+    - typings.awsDashSdk.awsDashSdkStrings.available__
+    - typings.awsDashSdk.awsDashSdkStrings.cancelled__
+    - typings.awsDashSdk.awsDashSdkStrings.expired__
     - java.lang.String
   */
   type ServiceUpdateStatus = _ServiceUpdateStatus | java.lang.String
   type ServiceUpdateStatusList = js.Array[ServiceUpdateStatus]
   type ServiceUpdateType = `security-update` | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.yes
-    - typings.awsDashSdk.awsDashSdkStrings.no
-    - typings.awsDashSdk.awsDashSdkStrings.`n/a`
+    - typings.awsDashSdk.awsDashSdkStrings.yes_
+    - typings.awsDashSdk.awsDashSdkStrings.no_
+    - typings.awsDashSdk.awsDashSdkStrings.nSlasha
     - java.lang.String
   */
   type SlaMet = _SlaMet | java.lang.String
@@ -146,9 +159,9 @@ package object clientsElasticacheMod {
     - typings.awsDashSdk.awsDashSdkStrings.`not-applied`
     - typings.awsDashSdk.awsDashSdkStrings.`waiting-to-start`
     - typings.awsDashSdk.awsDashSdkStrings.`in-progress`
-    - typings.awsDashSdk.awsDashSdkStrings.stopping
-    - typings.awsDashSdk.awsDashSdkStrings.stopped
-    - typings.awsDashSdk.awsDashSdkStrings.complete
+    - typings.awsDashSdk.awsDashSdkStrings.stopping__
+    - typings.awsDashSdk.awsDashSdkStrings.stopped__
+    - typings.awsDashSdk.awsDashSdkStrings.complete__
     - java.lang.String
   */
   type UpdateActionStatus = _UpdateActionStatus | java.lang.String
@@ -159,7 +172,7 @@ package object clientsElasticacheMod {
     - typings.awsDashSdk.awsDashSdkStrings.`2014-07-15`
     - typings.awsDashSdk.awsDashSdkStrings.`2014-09-30`
     - typings.awsDashSdk.awsDashSdkStrings.`2015-02-02`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | java.lang.String

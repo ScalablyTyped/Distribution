@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UserPoolAddOnsType extends js.Object {
   /**
     * The advanced security mode.
     */
-  var AdvancedSecurityMode: AdvancedSecurityModeType
+  var AdvancedSecurityMode: AdvancedSecurityModeType = js.native
 }
 
 object UserPoolAddOnsType {

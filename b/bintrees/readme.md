@@ -10,9 +10,9 @@ Binary Search Trees
 | ------------------ | :-------------: |
 | Full name          | bintrees |
 | Keywords           | binary tree, red black tree, red-black tree, redblack tree |
-| # releases         | 2 |
-| # dependents       | 36 |
-| # downloads        | 4638275 |
+| # releases         | 0 |
+| # dependents       | 41 |
+| # downloads        | 10363227 |
 | # stars            | 2 |
 
 ## Links

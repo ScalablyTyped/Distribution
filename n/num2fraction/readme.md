@@ -11,8 +11,8 @@ Convert number to fraction
 | Full name          | num2fraction |
 | Keywords           | fraction, number, math, maths, arithmetic, gcd, rational |
 | # releases         | 1 |
-| # dependents       | 21 |
-| # downloads        | 185881086 |
+| # dependents       | 24 |
+| # downloads        | 240567753 |
 | # stars            | 1 |
 
 ## Links

@@ -10,9 +10,9 @@ PouchDB adapter using WebSQL as its data store.
 | ------------------ | :-------------: |
 | Full name          | pouchdb-adapter-websql |
 | Keywords           | - |
-| # releases         | 12 |
+| # releases         | 4 |
 | # dependents       | 5 |
-| # downloads        | 34691 |
+| # downloads        | 102917 |
 | # stars            | 0 |
 
 ## Links

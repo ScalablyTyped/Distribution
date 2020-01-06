@@ -10,9 +10,9 @@ JupyterLab - RenderMime
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/rendermime |
 | Keywords           | - |
-| # releases         | 44 |
-| # dependents       | 53 |
-| # downloads        | 776369 |
+| # releases         | 65 |
+| # dependents       | 74 |
+| # downloads        | 1030955 |
 | # stars            | 0 |
 
 ## Links

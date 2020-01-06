@@ -11,8 +11,8 @@ A Readable Stream interface over node-glob.
 | Full name          | glob-stream |
 | Keywords           | glob, stream, gulp, readable, fs, files |
 | # releases         | 1 |
-| # dependents       | 91 |
-| # downloads        | 91772016 |
+| # dependents       | 95 |
+| # downloads        | 101326062 |
 | # stars            | 9 |
 
 ## Links

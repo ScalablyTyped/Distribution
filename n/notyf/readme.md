@@ -10,9 +10,9 @@ A dead simple, responsive, a11y, dependency-free, vanilla JavaScript toast libra
 | ------------------ | :-------------: |
 | Full name          | notyf |
 | Keywords           | javascript, plugin, notification, plugin, notify |
-| # releases         | 10 |
+| # releases         | 11 |
 | # dependents       | 1 |
-| # downloads        | 9620 |
+| # downloads        | 20768 |
 | # stars            | 0 |
 
 ## Links

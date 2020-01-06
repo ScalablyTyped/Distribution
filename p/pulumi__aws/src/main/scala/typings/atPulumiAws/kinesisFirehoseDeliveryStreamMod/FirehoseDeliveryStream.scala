@@ -38,6 +38,9 @@ class FirehoseDeliveryStream protected () extends CustomResource {
     */
   val destination: Output[String] = js.native
   val destinationId: Output[String] = js.native
+  /**
+    * Configuration options if elasticsearch is the destination. More details are given below.
+    */
   val elasticsearchConfiguration: Output[js.UndefOr[FirehoseDeliveryStreamElasticsearchConfiguration]] = js.native
   /**
     * Enhanced configuration options for the s3 destination. More details are given below.

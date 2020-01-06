@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ComplianceViolator extends js.Object {
   /**
     * The resource ID.
     */
-  var ResourceId: js.UndefOr[typings.awsDashSdk.clientsFmsMod.ResourceId] = js.undefined
+  var ResourceId: js.UndefOr[typings.awsDashSdk.clientsFmsMod.ResourceId] = js.native
   /**
-    * The resource type. This is in the format shown in AWS Resource Types Reference. For example: AWS::ElasticLoadBalancingV2::LoadBalancer or AWS::CloudFront::Distribution.
+    * The resource type. This is in the format shown in the AWS Resource Types Reference. For example: AWS::ElasticLoadBalancingV2::LoadBalancer or AWS::CloudFront::Distribution.
     */
-  var ResourceType: js.UndefOr[typings.awsDashSdk.clientsFmsMod.ResourceType] = js.undefined
+  var ResourceType: js.UndefOr[typings.awsDashSdk.clientsFmsMod.ResourceType] = js.native
   /**
     * The reason that the resource is not protected by the policy.
     */
-  var ViolationReason: js.UndefOr[typings.awsDashSdk.clientsFmsMod.ViolationReason] = js.undefined
+  var ViolationReason: js.UndefOr[typings.awsDashSdk.clientsFmsMod.ViolationReason] = js.native
 }
 
 object ComplianceViolator {
@@ -27,8 +28,8 @@ object ComplianceViolator {
     ViolationReason: ViolationReason = null
   ): ComplianceViolator = {
     val __obj = js.Dynamic.literal()
-    if (ResourceId != null) __obj.updateDynamic("ResourceId")(ResourceId)
-    if (ResourceType != null) __obj.updateDynamic("ResourceType")(ResourceType)
+    if (ResourceId != null) __obj.updateDynamic("ResourceId")(ResourceId.asInstanceOf[js.Any])
+    if (ResourceType != null) __obj.updateDynamic("ResourceType")(ResourceType.asInstanceOf[js.Any])
     if (ViolationReason != null) __obj.updateDynamic("ViolationReason")(ViolationReason.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComplianceViolator]
   }

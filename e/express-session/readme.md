@@ -10,10 +10,10 @@ Simple session middleware for Express
 | ------------------ | :-------------: |
 | Full name          | express-session |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 2122 |
-| # downloads        | 30446638 |
-| # stars            | 380 |
+| # releases         | 5 |
+| # dependents       | 2409 |
+| # downloads        | 33425185 |
+| # stars            | 381 |
 
 ## Links
 - [Homepage](https://github.com/expressjs/session#readme)

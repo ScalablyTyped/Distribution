@@ -12,7 +12,7 @@ Image component to add images without defining both both height and width that s
 | Keywords           | - |
 | # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 3783 |
+| # downloads        | 18665 |
 | # stars            | 0 |
 
 ## Links

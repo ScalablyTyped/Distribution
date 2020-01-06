@@ -1,5 +1,6 @@
 package typings.atPulumiAws.storagegatewayGatewayMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.atPulumiAws.typesOutputMod.storagegateway.GatewaySmbActiveDirectorySettings
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
@@ -59,6 +60,10 @@ class Gateway protected () extends CustomResource {
     * Guest password for Server Message Block (SMB) file shares. Only valid for `FILE_S3` gateway type. Must be set before creating `GuestAccess` authentication SMB file shares. This provider can only detect drift of the existence of a guest password, not its actual value from the gateway. This provider can however update the password with changing the argument.
     */
   val smbGuestPassword: Output[js.UndefOr[String]] = js.native
+  /**
+    * Key-value mapping of resource tags
+    */
+  val tags: Output[js.UndefOr[StringDictionary[_]]] = js.native
   /**
     * Type of tape drive to use for tape gateway. This provider cannot detect drift of this argument. Valid values: `IBM-ULT3580-TD5`.
     */

@@ -10,9 +10,9 @@ Module to handle web3 RPC connections over HTTP.
 | ------------------ | :-------------: |
 | Full name          | web3-providers-http |
 | Keywords           | - |
-| # releases         | 16 |
-| # dependents       | 14 |
-| # downloads        | 3127055 |
+| # releases         | 17 |
+| # dependents       | 16 |
+| # downloads        | 3505860 |
 | # stars            | 0 |
 
 ## Links

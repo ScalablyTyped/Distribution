@@ -11,8 +11,8 @@ Convert a camelized/dasherized/underscored string into a humanized one: `fooBar-
 | Full name          | humanize-string |
 | Keywords           | humanize, human, pretty, capitalize, uppercase, case, camelcase, dash, hyphen, underscore, string, text, convert |
 | # releases         | 4 |
-| # dependents       | 34 |
-| # downloads        | 2812473 |
+| # dependents       | 44 |
+| # downloads        | 4606898 |
 | # stars            | 1 |
 
 ## Links

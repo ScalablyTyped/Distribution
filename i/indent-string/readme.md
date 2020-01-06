@@ -10,9 +10,9 @@ Indent each line in a string
 | ------------------ | :-------------: |
 | Full name          | indent-string |
 | Keywords           | indent, string, pad, align, line, text, each, every |
-| # releases         | 3 |
-| # dependents       | 290 |
-| # downloads        | 320259225 |
+| # releases         | 2 |
+| # dependents       | 345 |
+| # downloads        | 470936511 |
 | # stars            | 3 |
 
 ## Links

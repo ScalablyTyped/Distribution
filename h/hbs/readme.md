@@ -10,9 +10,9 @@ Express.js template engine plugin for Handlebars
 | ------------------ | :-------------: |
 | Full name          | hbs |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 257 |
-| # downloads        | 1708303 |
+| # releases         | 6 |
+| # dependents       | 274 |
+| # downloads        | 2798091 |
 | # stars            | 69 |
 
 ## Links

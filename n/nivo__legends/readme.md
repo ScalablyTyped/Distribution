@@ -10,9 +10,9 @@ legend components for nivo dataviz library
 | ------------------ | :-------------: |
 | Full name          | @nivo/legends |
 | Keywords           | - |
-| # releases         | 29 |
-| # dependents       | 29 |
-| # downloads        | 755832 |
+| # releases         | 24 |
+| # dependents       | 35 |
+| # downloads        | 1154789 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ React Native ViewPager native view
 | ------------------ | :-------------: |
 | Full name          | @react-native-community/viewpager |
 | Keywords           | react-native, viewpager, view pager, tabs |
-| # releases         | 11 |
-| # dependents       | 5 |
-| # downloads        | 72030 |
+| # releases         | 17 |
+| # dependents       | 20 |
+| # downloads        | 229782 |
 | # stars            | 0 |
 
 ## Links

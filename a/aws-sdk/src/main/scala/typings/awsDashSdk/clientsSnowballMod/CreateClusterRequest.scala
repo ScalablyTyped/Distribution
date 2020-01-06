@@ -4,47 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CreateClusterRequest extends js.Object {
   /**
     * The ID for the address that you want the cluster shipped to.
     */
-  var AddressId: typings.awsDashSdk.clientsSnowballMod.AddressId
+  var AddressId: typings.awsDashSdk.clientsSnowballMod.AddressId = js.native
   /**
     * An optional description of this specific cluster, for example Environmental Data Cluster-01.
     */
-  var Description: js.UndefOr[String] = js.undefined
+  var Description: js.UndefOr[String] = js.native
   /**
     * The forwarding address ID for a cluster. This field is not supported in most regions.
     */
-  var ForwardingAddressId: js.UndefOr[AddressId] = js.undefined
+  var ForwardingAddressId: js.UndefOr[AddressId] = js.native
   /**
     * The type of job for this cluster. Currently, the only job type supported for clusters is LOCAL_USE.
     */
-  var JobType: typings.awsDashSdk.clientsSnowballMod.JobType
+  var JobType: typings.awsDashSdk.clientsSnowballMod.JobType = js.native
   /**
     * The KmsKeyARN value that you want to associate with this cluster. KmsKeyARN values are created by using the CreateKey API action in AWS Key Management Service (AWS KMS). 
     */
-  var KmsKeyARN: js.UndefOr[typings.awsDashSdk.clientsSnowballMod.KmsKeyARN] = js.undefined
+  var KmsKeyARN: js.UndefOr[typings.awsDashSdk.clientsSnowballMod.KmsKeyARN] = js.native
   /**
     * The Amazon Simple Notification Service (Amazon SNS) notification settings for this cluster.
     */
-  var Notification: js.UndefOr[typings.awsDashSdk.clientsSnowballMod.Notification] = js.undefined
+  var Notification: js.UndefOr[typings.awsDashSdk.clientsSnowballMod.Notification] = js.native
   /**
     * The resources associated with the cluster job. These resources include Amazon S3 buckets and optional AWS Lambda functions written in the Python language. 
     */
-  var Resources: JobResource
+  var Resources: JobResource = js.native
   /**
     * The RoleARN that you want to associate with this cluster. RoleArn values are created by using the CreateRole API action in AWS Identity and Access Management (IAM).
     */
-  var RoleARN: typings.awsDashSdk.clientsSnowballMod.RoleARN
+  var RoleARN: typings.awsDashSdk.clientsSnowballMod.RoleARN = js.native
   /**
     * The shipping speed for each node in this cluster. This speed doesn't dictate how soon you'll get each Snowball Edge device, rather it represents how quickly each device moves to its destination while in transit. Regional shipping speeds are as follows:   In Australia, you have access to express shipping. Typically, devices shipped express are delivered in about a day.   In the European Union (EU), you have access to express shipping. Typically, Snowball Edges shipped express are delivered in about a day. In addition, most countries in the EU have access to standard shipping, which typically takes less than a week, one way.   In India, Snowball Edges are delivered in one to seven days.   In the US, you have access to one-day shipping and two-day shipping.  
     */
-  var ShippingOption: typings.awsDashSdk.clientsSnowballMod.ShippingOption
+  var ShippingOption: typings.awsDashSdk.clientsSnowballMod.ShippingOption = js.native
   /**
     * The type of AWS Snowball device to use for this cluster. Currently, the only supported device type for cluster jobs is EDGE.
     */
-  var SnowballType: js.UndefOr[typings.awsDashSdk.clientsSnowballMod.SnowballType] = js.undefined
+  var SnowballType: js.UndefOr[typings.awsDashSdk.clientsSnowballMod.SnowballType] = js.native
 }
 
 object CreateClusterRequest {
@@ -61,11 +62,11 @@ object CreateClusterRequest {
     Notification: Notification = null,
     SnowballType: SnowballType = null
   ): CreateClusterRequest = {
-    val __obj = js.Dynamic.literal(AddressId = AddressId, JobType = JobType.asInstanceOf[js.Any], Resources = Resources, RoleARN = RoleARN, ShippingOption = ShippingOption.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description)
-    if (ForwardingAddressId != null) __obj.updateDynamic("ForwardingAddressId")(ForwardingAddressId)
-    if (KmsKeyARN != null) __obj.updateDynamic("KmsKeyARN")(KmsKeyARN)
-    if (Notification != null) __obj.updateDynamic("Notification")(Notification)
+    val __obj = js.Dynamic.literal(AddressId = AddressId.asInstanceOf[js.Any], JobType = JobType.asInstanceOf[js.Any], Resources = Resources.asInstanceOf[js.Any], RoleARN = RoleARN.asInstanceOf[js.Any], ShippingOption = ShippingOption.asInstanceOf[js.Any])
+    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (ForwardingAddressId != null) __obj.updateDynamic("ForwardingAddressId")(ForwardingAddressId.asInstanceOf[js.Any])
+    if (KmsKeyARN != null) __obj.updateDynamic("KmsKeyARN")(KmsKeyARN.asInstanceOf[js.Any])
+    if (Notification != null) __obj.updateDynamic("Notification")(Notification.asInstanceOf[js.Any])
     if (SnowballType != null) __obj.updateDynamic("SnowballType")(SnowballType.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateClusterRequest]
   }

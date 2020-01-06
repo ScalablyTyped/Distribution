@@ -4,35 +4,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Counters extends js.Object {
   /**
     * The number of errored entities.
     */
-  var errored: js.UndefOr[Integer] = js.undefined
+  var errored: js.UndefOr[Integer] = js.native
   /**
     * The number of failed entities.
     */
-  var failed: js.UndefOr[Integer] = js.undefined
+  var failed: js.UndefOr[Integer] = js.native
   /**
     * The number of passed entities.
     */
-  var passed: js.UndefOr[Integer] = js.undefined
+  var passed: js.UndefOr[Integer] = js.native
   /**
     * The number of skipped entities.
     */
-  var skipped: js.UndefOr[Integer] = js.undefined
+  var skipped: js.UndefOr[Integer] = js.native
   /**
     * The number of stopped entities.
     */
-  var stopped: js.UndefOr[Integer] = js.undefined
+  var stopped: js.UndefOr[Integer] = js.native
   /**
     * The total number of entities.
     */
-  var total: js.UndefOr[Integer] = js.undefined
+  var total: js.UndefOr[Integer] = js.native
   /**
     * The number of warned entities.
     */
-  var warned: js.UndefOr[Integer] = js.undefined
+  var warned: js.UndefOr[Integer] = js.native
 }
 
 object Counters {

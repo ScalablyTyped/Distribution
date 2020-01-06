@@ -5,23 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LoadBalancerAccessLogs extends js.Object {
   /**
     * The S3 bucket name to store the logs in.
     */
-  var bucket: Input[String]
+  var bucket: Input[String] = js.native
   /**
     * The S3 bucket prefix. Logs are stored in the root if not configured.
     */
-  var bucketPrefix: js.UndefOr[Input[String]] = js.undefined
+  var bucketPrefix: js.UndefOr[Input[String]] = js.native
   /**
     * Boolean to enable / disable `accessLogs`. Default is `true`
     */
-  var enabled: js.UndefOr[Input[Boolean]] = js.undefined
+  var enabled: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The interval between checks.
     */
-  var interval: js.UndefOr[Input[Double]] = js.undefined
+  var interval: js.UndefOr[Input[Double]] = js.native
 }
 
 object LoadBalancerAccessLogs {

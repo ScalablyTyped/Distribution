@@ -10,9 +10,9 @@ Foundation library for building Fabric components.
 | ------------------ | :-------------: |
 | Full name          | @uifabric/foundation |
 | Keywords           | - |
-| # releases         | 41 |
+| # releases         | 79 |
 | # dependents       | 5 |
-| # downloads        | 132664 |
+| # downloads        | 1183497 |
 | # stars            | 0 |
 
 ## Links

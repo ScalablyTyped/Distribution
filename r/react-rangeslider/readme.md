@@ -10,9 +10,9 @@ A lightweight react component that acts as a HTML5 input range slider polyfill
 | ------------------ | :-------------: |
 | Full name          | react-rangeslider |
 | Keywords           | rangeslider, range-slider, react-rangeslider, input, range, react, slider |
-| # releases         | 3 |
-| # dependents       | 26 |
-| # downloads        | 1309064 |
+| # releases         | 1 |
+| # dependents       | 34 |
+| # downloads        | 1411115 |
 | # stars            | 3 |
 
 ## Links

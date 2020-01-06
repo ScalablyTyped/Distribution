@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DeveloperInfo extends js.Object {
   /**
     * The name of the developer.
     */
-  var DeveloperName: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.DeveloperName] = js.undefined
+  var DeveloperName: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.DeveloperName] = js.native
   /**
     * The email of the developer.
     */
-  var Email: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.Email] = js.undefined
+  var Email: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.Email] = js.native
   /**
     * The URL of the privacy policy.
     */
-  var PrivacyPolicy: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.PrivacyPolicy] = js.undefined
+  var PrivacyPolicy: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.PrivacyPolicy] = js.native
   /**
     * The website of the developer.
     */
-  var Url: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.Url] = js.undefined
+  var Url: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.Url] = js.native
 }
 
 object DeveloperInfo {
@@ -32,10 +33,10 @@ object DeveloperInfo {
     Url: Url = null
   ): DeveloperInfo = {
     val __obj = js.Dynamic.literal()
-    if (DeveloperName != null) __obj.updateDynamic("DeveloperName")(DeveloperName)
-    if (Email != null) __obj.updateDynamic("Email")(Email)
-    if (PrivacyPolicy != null) __obj.updateDynamic("PrivacyPolicy")(PrivacyPolicy)
-    if (Url != null) __obj.updateDynamic("Url")(Url)
+    if (DeveloperName != null) __obj.updateDynamic("DeveloperName")(DeveloperName.asInstanceOf[js.Any])
+    if (Email != null) __obj.updateDynamic("Email")(Email.asInstanceOf[js.Any])
+    if (PrivacyPolicy != null) __obj.updateDynamic("PrivacyPolicy")(PrivacyPolicy.asInstanceOf[js.Any])
+    if (Url != null) __obj.updateDynamic("Url")(Url.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeveloperInfo]
   }
 }

@@ -4,21 +4,21 @@
 Typings are for version 1.1.2
 
 ## Library description:
-Upper case the first character of a string
+Transforms the string with the first character in upper cased
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | upper-case-first |
-| Keywords           | cases, first, upper, uppercase, case |
-| # releases         | 0 |
-| # dependents       | 18 |
-| # downloads        | 24338778 |
+| Keywords           | upper, case, first, capitalize, convert, transform |
+| # releases         | 3 |
+| # dependents       | 20 |
+| # downloads        | 45491791 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/blakeembrey/upper-case-first)
-- [Bugs](https://github.com/blakeembrey/upper-case-first/issues)
-- [Repository](https://github.com/blakeembrey/upper-case-first)
+- [Homepage](https://github.com/blakeembrey/change-case/tree/master/packages/upper-case-first#readme)
+- [Bugs](https://github.com/blakeembrey/change-case/issues)
+- [Repository](https://github.com/blakeembrey/change-case)
 - [Npm](https://www.npmjs.com/package/upper-case-first)
     
 

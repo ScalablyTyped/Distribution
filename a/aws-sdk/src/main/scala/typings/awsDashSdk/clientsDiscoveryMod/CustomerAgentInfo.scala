@@ -4,35 +4,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CustomerAgentInfo extends js.Object {
   /**
     * Number of active discovery agents.
     */
-  var activeAgents: Integer
+  var activeAgents: Integer = js.native
   /**
     * Number of blacklisted discovery agents.
     */
-  var blackListedAgents: Integer
+  var blackListedAgents: Integer = js.native
   /**
     * Number of healthy discovery agents
     */
-  var healthyAgents: Integer
+  var healthyAgents: Integer = js.native
   /**
     * Number of discovery agents with status SHUTDOWN.
     */
-  var shutdownAgents: Integer
+  var shutdownAgents: Integer = js.native
   /**
     * Total number of discovery agents.
     */
-  var totalAgents: Integer
+  var totalAgents: Integer = js.native
   /**
     * Number of unhealthy discovery agents.
     */
-  var unhealthyAgents: Integer
+  var unhealthyAgents: Integer = js.native
   /**
     * Number of unknown discovery agents.
     */
-  var unknownAgents: Integer
+  var unknownAgents: Integer = js.native
 }
 
 object CustomerAgentInfo {
@@ -46,7 +47,7 @@ object CustomerAgentInfo {
     unhealthyAgents: Integer,
     unknownAgents: Integer
   ): CustomerAgentInfo = {
-    val __obj = js.Dynamic.literal(activeAgents = activeAgents, blackListedAgents = blackListedAgents, healthyAgents = healthyAgents, shutdownAgents = shutdownAgents, totalAgents = totalAgents, unhealthyAgents = unhealthyAgents, unknownAgents = unknownAgents)
+    val __obj = js.Dynamic.literal(activeAgents = activeAgents.asInstanceOf[js.Any], blackListedAgents = blackListedAgents.asInstanceOf[js.Any], healthyAgents = healthyAgents.asInstanceOf[js.Any], shutdownAgents = shutdownAgents.asInstanceOf[js.Any], totalAgents = totalAgents.asInstanceOf[js.Any], unhealthyAgents = unhealthyAgents.asInstanceOf[js.Any], unknownAgents = unknownAgents.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CustomerAgentInfo]
   }

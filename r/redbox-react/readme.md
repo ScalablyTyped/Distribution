@@ -10,9 +10,9 @@ A redbox (rsod) component to display your errors.
 | ------------------ | :-------------: |
 | Full name          | redbox-react |
 | Keywords           | redbox, rsod, react, react-native |
-| # releases         | 8 |
-| # dependents       | 154 |
-| # downloads        | 17614438 |
+| # releases         | 2 |
+| # dependents       | 157 |
+| # downloads        | 12504697 |
 | # stars            | 12 |
 
 ## Links

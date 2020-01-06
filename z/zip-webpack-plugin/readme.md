@@ -10,9 +10,9 @@ Webpack plugin to zip up emitted files.
 | ------------------ | :-------------: |
 | Full name          | zip-webpack-plugin |
 | Keywords           | webpack |
-| # releases         | 5 |
-| # dependents       | 17 |
-| # downloads        | 239546 |
+| # releases         | 2 |
+| # dependents       | 27 |
+| # downloads        | 611417 |
 | # stars            | 2 |
 
 ## Links

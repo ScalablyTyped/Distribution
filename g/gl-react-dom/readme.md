@@ -10,9 +10,9 @@ DOM implementation of gl-react, an universal React library to write and compose 
 | ------------------ | :-------------: |
 | Full name          | gl-react-dom |
 | Keywords           | gl-react, gl, opengl, react, react-dom, react-component |
-| # releases         | 28 |
+| # releases         | 14 |
 | # dependents       | 0 |
-| # downloads        | 9174 |
+| # downloads        | 14073 |
 | # stars            | 0 |
 
 ## Links

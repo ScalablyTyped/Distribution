@@ -12,7 +12,7 @@ object retry extends js.Object {
     maxTries: Double,
     delayLength: Double,
     fn: Fn,
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type Parameters<Fn> is not an array type */ args: Parameters[Fn]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Fn> is not an array type */ args: Parameters[Fn]
   ): CallEffect = js.native
 }
 

@@ -9,10 +9,10 @@ Turn an object into a string of HTML attributes
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | stringify-attributes |
-| Keywords           | html, attributes, stringify, element, tag, attr, props, object, obj, convert, transform |
-| # releases         | 3 |
-| # dependents       | 6 |
-| # downloads        | 136836 |
+| Keywords           | html, attributes, stringify, element, tag, props, object, convert, transform |
+| # releases         | 2 |
+| # dependents       | 10 |
+| # downloads        | 140348 |
 | # stars            | 1 |
 
 ## Links

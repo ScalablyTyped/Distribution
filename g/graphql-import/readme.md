@@ -10,10 +10,10 @@ Typings are for version 0.7.1
 | ------------------ | :-------------: |
 | Full name          | graphql-import |
 | Keywords           | - |
-| # releases         | 29 |
-| # dependents       | 82 |
-| # downloads        | 12613409 |
-| # stars            | 1 |
+| # releases         | 54 |
+| # dependents       | 102 |
+| # downloads        | 30016837 |
+| # stars            | 2 |
 
 ## Links
 - [Homepage](https://github.com/graphcool/graphql-import#readme)

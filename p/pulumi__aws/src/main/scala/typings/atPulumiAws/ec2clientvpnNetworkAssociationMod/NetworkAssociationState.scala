@@ -5,27 +5,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NetworkAssociationState extends js.Object {
   /**
     * The ID of the Client VPN endpoint.
     */
-  val clientVpnEndpointId: js.UndefOr[Input[String]] = js.undefined
+  val clientVpnEndpointId: js.UndefOr[Input[String]] = js.native
   /**
     * The IDs of the security groups applied to the target network association.
     */
-  val securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The current state of the target network association.
     */
-  val status: js.UndefOr[Input[String]] = js.undefined
+  val status: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of the subnet to associate with the Client VPN endpoint.
     */
-  val subnetId: js.UndefOr[Input[String]] = js.undefined
+  val subnetId: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of the VPC in which the target network (subnet) is located.
     */
-  val vpcId: js.UndefOr[Input[String]] = js.undefined
+  val vpcId: js.UndefOr[Input[String]] = js.native
 }
 
 object NetworkAssociationState {

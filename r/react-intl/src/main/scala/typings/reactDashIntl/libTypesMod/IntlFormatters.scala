@@ -39,12 +39,12 @@ trait IntlFormatters extends js.Object {
   ): String = js.native
   def formatHTMLMessage(descriptor: MessageDescriptor): ReactNode = js.native
   def formatHTMLMessage(descriptor: MessageDescriptor, values: Record[String, PrimitiveType]): ReactNode = js.native
-  def formatList(values: js.Array[String]): String = js.native
-  def formatList(values: js.Array[String], opts: FormatListOptions): String = js.native
+  def formatList(values: js.Array[String | ReactNode]): ReactNode = js.native
+  def formatList(values: js.Array[String | ReactNode], opts: FormatListOptions): ReactNode = js.native
   @JSName("formatList")
-  def formatList_ReactNode(values: js.Array[String | ReactNode]): ReactNode = js.native
+  def formatList_String(values: js.Array[String]): String = js.native
   @JSName("formatList")
-  def formatList_ReactNode(values: js.Array[String | ReactNode], opts: FormatListOptions): ReactNode = js.native
+  def formatList_String(values: js.Array[String], opts: FormatListOptions): String = js.native
   def formatMessage(descriptor: MessageDescriptor): String | ReactNodeArray = js.native
   def formatMessage(
     descriptor: MessageDescriptor,

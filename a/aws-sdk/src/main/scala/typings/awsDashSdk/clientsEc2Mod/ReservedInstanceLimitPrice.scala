@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ReservedInstanceLimitPrice extends js.Object {
   /**
     * Used for Reserved Instance Marketplace offerings. Specifies the limit price on the total order (instanceCount * price).
     */
-  var Amount: js.UndefOr[Double] = js.undefined
+  var Amount: js.UndefOr[Double] = js.native
   /**
     * The currency in which the limitPrice amount is specified. At this time, the only supported currency is USD.
     */
-  var CurrencyCode: js.UndefOr[CurrencyCodeValues] = js.undefined
+  var CurrencyCode: js.UndefOr[CurrencyCodeValues] = js.native
 }
 
 object ReservedInstanceLimitPrice {

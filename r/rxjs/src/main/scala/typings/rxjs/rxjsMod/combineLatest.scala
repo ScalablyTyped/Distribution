@@ -11,14 +11,14 @@ import scala.scalajs.js.annotation._
 @js.native
 object combineLatest extends js.Object {
   def apply[O /* <: ObservableInput[_] */](observables: (O | SchedulerLike)*): typings.rxjs.internalObservableMod.Observable[js.Array[_]] = js.native
-  def apply[O1 /* <: ObservableInput[_] */](sources: js.Array[O1]): typings.rxjs.internalObservableMod.Observable[js.Array[ObservedValueOf[O1]]] = js.native
-  def apply[O1 /* <: ObservableInput[_] */](sources: js.Array[O1], scheduler: SchedulerLike): typings.rxjs.internalObservableMod.Observable[js.Array[ObservedValueOf[O1]]] = js.native
+  def apply[O /* <: ObservableInput[_] */](sources: js.Array[O]): typings.rxjs.internalObservableMod.Observable[js.Array[ObservedValueOf[O]]] = js.native
+  def apply[O /* <: ObservableInput[_] */](sources: js.Array[O], scheduler: SchedulerLike): typings.rxjs.internalObservableMod.Observable[js.Array[ObservedValueOf[O]]] = js.native
   def apply[O1 /* <: ObservableInput[_] */](v1: O1): typings.rxjs.internalObservableMod.Observable[js.Array[ObservedValueOf[O1]]] = js.native
   def apply[O1 /* <: ObservableInput[_] */](v1: O1, scheduler: SchedulerLike): typings.rxjs.internalObservableMod.Observable[js.Array[ObservedValueOf[O1]]] = js.native
-  def apply[O /* <: ObservableInput[_] */, R](sources: js.Array[O], resultSelector: js.Function1[/* repeated */ ObservedValueOf[O], R]): typings.rxjs.internalObservableMod.Observable[R] = js.native
-  def apply[O /* <: ObservableInput[_] */, R](
-    sources: js.Array[O],
-    resultSelector: js.Function1[/* repeated */ ObservedValueOf[O], R],
+  def apply[O1 /* <: ObservableInput[_] */, R](sources: js.Array[O1], resultSelector: js.Function1[/* v1 */ ObservedValueOf[O1], R]): typings.rxjs.internalObservableMod.Observable[R] = js.native
+  def apply[O1 /* <: ObservableInput[_] */, R](
+    sources: js.Array[O1],
+    resultSelector: js.Function1[/* v1 */ ObservedValueOf[O1], R],
     scheduler: SchedulerLike
   ): typings.rxjs.internalObservableMod.Observable[R] = js.native
   def apply[O1 /* <: ObservableInput[_] */, O2 /* <: ObservableInput[_] */](sources: js.Tuple2[O1, O2]): typings.rxjs.internalObservableMod.Observable[js.Tuple2[ObservedValueOf[O1], ObservedValueOf[O2]]] = js.native

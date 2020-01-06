@@ -10,9 +10,9 @@ Accessibility (a11y) utilities for WordPress.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/a11y |
 | Keywords           | wordpress, a11y, aria-live |
-| # releases         | 25 |
-| # dependents       | 10 |
-| # downloads        | 86270 |
+| # releases         | 19 |
+| # dependents       | 11 |
+| # downloads        | 171150 |
 | # stars            | 0 |
 
 ## Links

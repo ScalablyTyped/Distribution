@@ -10,9 +10,9 @@ An openload.co API handler
 | ------------------ | :-------------: |
 | Full name          | node-openload |
 | Keywords           | openload, api, file, upload, request |
-| # releases         | 4 |
+| # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 587 |
+| # downloads        | 577 |
 | # stars            | 1 |
 
 ## Links

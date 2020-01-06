@@ -10,9 +10,9 @@ Webpack utilities used by Create React App
 | ------------------ | :-------------: |
 | Full name          | react-dev-utils |
 | Keywords           | - |
-| # releases         | 68 |
-| # dependents       | 2874 |
-| # downloads        | 74471118 |
+| # releases         | 54 |
+| # dependents       | 3602 |
+| # downloads        | 137533261 |
 | # stars            | 15 |
 
 ## Links

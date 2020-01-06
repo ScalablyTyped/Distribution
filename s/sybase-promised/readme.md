@@ -12,7 +12,7 @@ sybase-promised
 | Keywords           | database, sybase, jconnect, sql, java |
 | # releases         | 7 |
 | # dependents       | 0 |
-| # downloads        | 304 |
+| # downloads        | 448 |
 | # stars            | 0 |
 
 ## Links

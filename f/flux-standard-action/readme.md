@@ -10,15 +10,15 @@ A human-friendly standard for Flux action objects
 | ------------------ | :-------------: |
 | Full name          | flux-standard-action |
 | Keywords           | flux, redux, actions, fsa |
-| # releases         | 5 |
-| # dependents       | 94 |
-| # downloads        | 6095711 |
+| # releases         | 7 |
+| # dependents       | 98 |
+| # downloads        | 5432610 |
 | # stars            | 2 |
 
 ## Links
-- [Homepage](https://github.com/acdlite/flux-standard-action#readme)
-- [Bugs](https://github.com/acdlite/flux-standard-action/issues)
-- [Repository](https://github.com/acdlite/flux-standard-action)
+- [Homepage](https://github.com/redux-utilities/flux-standard-action#readme)
+- [Bugs](https://github.com/redux-utilities/flux-standard-action/issues)
+- [Repository](https://github.com/redux-utilities/flux-standard-action)
 - [Npm](https://www.npmjs.com/package/flux-standard-action)
     
 

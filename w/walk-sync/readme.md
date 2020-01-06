@@ -11,8 +11,8 @@ Get an array of recursive directory contents
 | Full name          | walk-sync |
 | Keywords           | - |
 | # releases         | 13 |
-| # dependents       | 281 |
-| # downloads        | 25047782 |
+| # dependents       | 284 |
+| # downloads        | 26941937 |
 | # stars            | 4 |
 
 ## Links

@@ -11,8 +11,8 @@ BinaryPack serialization for the web browser
 | Full name          | peerjs-js-binarypack |
 | Keywords           | - |
 | # releases         | 4 |
-| # dependents       | 2 |
-| # downloads        | 3644 |
+| # dependents       | 3 |
+| # downloads        | 8873 |
 | # stars            | 0 |
 
 ## Links

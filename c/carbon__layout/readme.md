@@ -9,16 +9,16 @@ Layout helpers for digital and software products using the Carbon Design System
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @carbon/layout |
-| Keywords           | eyeglass-module, ibm, elements, carbon, carbon-elements, carbon-design-system |
-| # releases         | 41 |
-| # dependents       | 6 |
-| # downloads        | 14582 |
+| Keywords           | eyeglass-module, ibm, elements, carbon, carbon-elements, carbon-design-system, components, react |
+| # releases         | 95 |
+| # dependents       | 11 |
+| # downloads        | 175094 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/IBM/carbon-elements#readme)
-- [Bugs](https://github.com/IBM/carbon-elements/issues)
-- [Repository](https://github.com/IBM/carbon-elements)
+- [Homepage](https://github.com/carbon-design-system/carbon#readme)
+- [Bugs](https://github.com/carbon-design-system/carbon/issues)
+- [Repository](https://github.com/carbon-design-system/carbon)
 - [Npm](https://www.npmjs.com/package/%40carbon%2Flayout)
     
 

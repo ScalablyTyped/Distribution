@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ProjectVpcConfig extends js.Object {
   /**
     * The security group IDs to assign to running builds.
     */
-  var securityGroupIds: Input[js.Array[Input[String]]]
+  var securityGroupIds: Input[js.Array[Input[String]]] = js.native
   /**
     * The subnet IDs within which to run builds.
     */
-  var subnets: Input[js.Array[Input[String]]]
+  var subnets: Input[js.Array[Input[String]]] = js.native
   /**
     * The ID of the VPC within which to run builds.
     */
-  var vpcId: Input[String]
+  var vpcId: Input[String] = js.native
 }
 
 object ProjectVpcConfig {

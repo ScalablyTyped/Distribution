@@ -10,9 +10,9 @@ stellar-sdk is a library for working with the Stellar Horizon server.
 | ------------------ | :-------------: |
 | Full name          | stellar-sdk |
 | Keywords           | stellar |
-| # releases         | 22 |
-| # dependents       | 52 |
-| # downloads        | 169001 |
+| # releases         | 51 |
+| # dependents       | 67 |
+| # downloads        | 278123 |
 | # stars            | 2 |
 
 ## Links

@@ -12,7 +12,7 @@ fibjs is a runtime for javascript applictions built on google v8 JS.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 1113 |
+| # downloads        | 1433 |
 | # stars            | 1 |
 
 ## Links

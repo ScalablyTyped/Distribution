@@ -10,9 +10,9 @@ Delightful JavaScript Testing.
 | ------------------ | :-------------: |
 | Full name          | jest-cli |
 | Keywords           | ava, babel, coverage, easy, expect, facebook, immersive, instant, jasmine, jest, jsdom, mocha, mocking, painless, qunit, runner, sandboxed, snapshot, tap, tape, test, testing, typescript, watch |
-| # releases         | 119 |
-| # dependents       | 263 |
-| # downloads        | 129058173 |
+| # releases         | 75 |
+| # dependents       | 320 |
+| # downloads        | 228225004 |
 | # stars            | 42 |
 
 ## Links

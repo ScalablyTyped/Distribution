@@ -10,9 +10,9 @@ react-redux-toastr is a React toastr message implemented with Redux
 | ------------------ | :-------------: |
 | Full name          | react-redux-toastr |
 | Keywords           | React.js, React, Redux, react, redux toastr, react-redux-toastr, react-component, toastr, alert, toast, message, popup, react toastr, react redux toastr, react toastr redux, react confirm, react alert, avatar, toastr profile |
-| # releases         | 36 |
-| # dependents       | 14 |
-| # downloads        | 905460 |
+| # releases         | 26 |
+| # dependents       | 27 |
+| # downloads        | 1223040 |
 | # stars            | 7 |
 
 ## Links

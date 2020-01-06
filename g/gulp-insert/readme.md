@@ -10,9 +10,9 @@ Append or Prepend a string with gulp
 | ------------------ | :-------------: |
 | Full name          | gulp-insert |
 | Keywords           | gulp, gulpplugin, append, insert, prepend |
-| # releases         | 1 |
-| # dependents       | 109 |
-| # downloads        | 1255157 |
+| # releases         | 0 |
+| # dependents       | 122 |
+| # downloads        | 1489052 |
 | # stars            | 15 |
 
 ## Links

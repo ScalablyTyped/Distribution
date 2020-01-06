@@ -10,9 +10,9 @@ is that thing a function? Use this module to find out
 | ------------------ | :-------------: |
 | Full name          | is-function |
 | Keywords           | polyfill, is-function, ie6 |
-| # releases         | 1 |
-| # dependents       | 81 |
-| # downloads        | 40573522 |
+| # releases         | 0 |
+| # dependents       | 91 |
+| # downloads        | 64901785 |
 | # stars            | 3 |
 
 ## Links

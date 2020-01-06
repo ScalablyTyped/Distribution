@@ -11,7 +11,6 @@ class Survey () extends SurveyModel {
   def this(jsonObj: js.Any, renderedElement: js.Any) = this()
   def this(jsonObj: js.Any, renderedElement: js.Any, css: js.Any) = this()
   val completedCss: String = js.native
-  var css: js.Any = js.native
   val cssNavigationComplete: String = js.native
   val cssNavigationNext: String = js.native
   val cssNavigationPrev: String = js.native
@@ -28,7 +27,6 @@ class Survey () extends SurveyModel {
   var koProgressText: js.Any = js.native
   var koState: js.Any = js.native
   var koTimerInfoText: js.Any = js.native
-  var onRendered: Event[js.Function1[/* sender */ SurveyModel, _], _] = js.native
   /* protected */ def getHtmlTemplate(): String = js.native
   def koEventAfterRender(element: js.Any, survey: js.Any): Unit = js.native
   def loadSurveyFromService(surveyId: String, clientId: String, renderedElement: js.Any): Unit = js.native

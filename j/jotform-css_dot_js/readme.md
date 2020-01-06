@@ -11,8 +11,8 @@ A lightweight, battle tested, fast, CSS parser in JavaScript.
 | Full name          | jotform-css.js |
 | Keywords           | - |
 | # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 1690 |
+| # dependents       | 1 |
+| # downloads        | 5384 |
 | # stars            | 0 |
 
 ## Links

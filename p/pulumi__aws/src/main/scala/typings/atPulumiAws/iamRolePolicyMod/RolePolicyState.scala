@@ -7,25 +7,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RolePolicyState extends js.Object {
   /**
     * The name of the role policy. If omitted, this provider will
     * assign a random, unique name.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * Creates a unique name beginning with the specified
     * prefix. Conflicts with `name`.
     */
-  val namePrefix: js.UndefOr[Input[String]] = js.undefined
-  /**
-    * The policy document. This is a JSON formatted string.
-    */
-  val policy: js.UndefOr[Input[String | PolicyDocument]] = js.undefined
+  val namePrefix: js.UndefOr[Input[String]] = js.native
+  val policy: js.UndefOr[Input[String | PolicyDocument]] = js.native
   /**
     * The IAM role to attach to the policy.
     */
-  val role: js.UndefOr[Input[String | Role]] = js.undefined
+  val role: js.UndefOr[Input[String | Role]] = js.native
 }
 
 object RolePolicyState {

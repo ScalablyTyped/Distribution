@@ -10,9 +10,9 @@ Utility for office cloud services.
 | ------------------ | :-------------: |
 | Full name          | office-js |
 | Keywords           | office, googleapps, office365, word, excel |
-| # releases         | 2 |
+| # releases         | 1 |
 | # dependents       | 0 |
-| # downloads        | 1247 |
+| # downloads        | 1985 |
 | # stars            | 0 |
 
 ## Links

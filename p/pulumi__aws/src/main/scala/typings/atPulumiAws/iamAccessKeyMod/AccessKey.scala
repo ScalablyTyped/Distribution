@@ -22,7 +22,7 @@ class AccessKey protected () extends CustomResource {
   def this(name: String, args: AccessKeyArgs) = this()
   def this(name: String, args: AccessKeyArgs, opts: CustomResourceOptions) = this()
   /**
-    * The encrypted secret, base64 encoded.
+    * The encrypted secret, base64 encoded, if `pgpKey` was specified.
     * > **NOTE:** The encrypted secret may be decrypted using the command line,
     * for example: `... | base64 --decode | keybase pgp decrypt`.
     */
@@ -34,13 +34,16 @@ class AccessKey protected () extends CustomResource {
   val keyFingerprint: Output[String] = js.native
   /**
     * Either a base-64 encoded PGP public key, or a
-    * keybase username in the form `keybase:some_person_that_exists`.
+    * keybase username in the form `keybase:some_person_that_exists`, for use
+    * in the `encryptedSecret` output attribute.
     */
   val pgpKey: Output[js.UndefOr[String]] = js.native
   /**
     * The secret access key. Note that this will be written
-    * to the state file. Please supply a `pgpKey` instead, which will prevent the
-    * secret from being stored in plain text
+    * to the state file. If you use this, please protect your backend state file
+    * judiciously. Alternatively, you may supply a `pgpKey` instead, which will
+    * prevent the secret from being stored in plaintext, at the cost of preventing
+    * the use of the secret key in automation.
     */
   val secret: Output[String] = js.native
   /**

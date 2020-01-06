@@ -9,9 +9,9 @@ A simple and intuitive object validation library
 | ------------------ | :-------------: |
 | Full name          | js-schema |
 | Keywords           | json, schema, JSON Schema, validation, validator |
-| # releases         | 1 |
-| # dependents       | 13 |
-| # downloads        | 63813 |
+| # releases         | 0 |
+| # dependents       | 16 |
+| # downloads        | 61322 |
 | # stars            | 4 |
 
 ## Links

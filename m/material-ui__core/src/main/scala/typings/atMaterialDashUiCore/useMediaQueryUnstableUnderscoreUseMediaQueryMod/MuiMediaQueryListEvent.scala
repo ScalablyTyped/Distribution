@@ -4,8 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MuiMediaQueryListEvent extends js.Object {
-  var matches: Boolean
+  var matches: Boolean = js.native
 }
 
 object MuiMediaQueryListEvent {

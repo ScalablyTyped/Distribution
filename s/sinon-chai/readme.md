@@ -10,9 +10,9 @@ Extends Chai with assertions for the Sinon.JS mocking framework.
 | ------------------ | :-------------: |
 | Full name          | sinon-chai |
 | Keywords           | chai, chai-plugin, browser, vendor, mocks-and-spies, sinon, testing, spies, stubs, mocks |
-| # releases         | 10 |
-| # dependents       | 344 |
-| # downloads        | 18753726 |
+| # releases         | 6 |
+| # dependents       | 374 |
+| # downloads        | 21223143 |
 | # stars            | 35 |
 
 ## Links

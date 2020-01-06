@@ -12,7 +12,7 @@ Unobtrusive Google Maps animated marker
 | Keywords           | Google Maps, marker, marker animation, SlidingMarker |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 17103 |
+| # downloads        | 57930 |
 | # stars            | 2 |
 
 ## Links

@@ -4,15 +4,15 @@
 Typings are for version 2.3.0
 
 ## Library description:
-Phillips Hue API Library for Node.js
+Philips Hue API Library for Node.js
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | node-hue-api |
 | Keywords           | philips, hue, api, living, color, colour, automation, light, lighting, bridge |
-| # releases         | 3 |
-| # dependents       | 65 |
-| # downloads        | 59331 |
+| # releases         | 28 |
+| # dependents       | 66 |
+| # downloads        | 86920 |
 | # stars            | 12 |
 
 ## Links

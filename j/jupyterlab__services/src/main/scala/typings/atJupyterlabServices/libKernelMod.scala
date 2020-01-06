@@ -157,22 +157,13 @@ object libKernelMod extends js.Object {
   
   @js.native
   object KernelMessage extends js.Object {
-    /**
-      * @hidden
-      * #### Notes
-      * Debug messages are experimental messages that are not in the official
-      * kernel message specification. As such, this function is *NOT* considered
-      * part of the public API, and may change without notice.
-      */
-    def createMessage[T /* <: IDebugRequestMsg */](options: typings.atJupyterlabServices.libKernelMessagesMod.KernelMessage.IOptions[T]): T = js.native
+    def createMessage[T /* <: ICommInfoReplyMsg */](options: typings.atJupyterlabServices.libKernelMessagesMod.KernelMessage.IOptions[T]): T = js.native
     @JSName("createMessage")
     def createMessage_T_IClearOutputMsg[T /* <: IClearOutputMsg */](options: typings.atJupyterlabServices.libKernelMessagesMod.KernelMessage.IOptions[T]): T = js.native
     @JSName("createMessage")
     def createMessage_T_ICommCloseMsgiopub[T /* <: ICommCloseMsg[iopub] */](options: typings.atJupyterlabServices.libKernelMessagesMod.KernelMessage.IOptions[T]): T = js.native
     @JSName("createMessage")
     def createMessage_T_ICommCloseMsgshell[T /* <: ICommCloseMsg[shell] */](options: typings.atJupyterlabServices.libKernelMessagesMod.KernelMessage.IOptions[T]): T = js.native
-    @JSName("createMessage")
-    def createMessage_T_ICommInfoReplyMsg[T /* <: ICommInfoReplyMsg */](options: typings.atJupyterlabServices.libKernelMessagesMod.KernelMessage.IOptions[T]): T = js.native
     @JSName("createMessage")
     def createMessage_T_ICommInfoRequestMsg[T /* <: ICommInfoRequestMsg */](options: typings.atJupyterlabServices.libKernelMessagesMod.KernelMessage.IOptions[T]): T = js.native
     @JSName("createMessage")
@@ -205,6 +196,15 @@ object libKernelMod extends js.Object {
       */
     @JSName("createMessage")
     def createMessage_T_IDebugReplyMsg[T /* <: IDebugReplyMsg */](options: typings.atJupyterlabServices.libKernelMessagesMod.KernelMessage.IOptions[T]): T = js.native
+    /**
+      * @hidden
+      * #### Notes
+      * Debug messages are experimental messages that are not in the official
+      * kernel message specification. As such, this function is *NOT* considered
+      * part of the public API, and may change without notice.
+      */
+    @JSName("createMessage")
+    def createMessage_T_IDebugRequestMsg[T /* <: IDebugRequestMsg */](options: typings.atJupyterlabServices.libKernelMessagesMod.KernelMessage.IOptions[T]): T = js.native
     @JSName("createMessage")
     def createMessage_T_IDisplayDataMsg[T /* <: IDisplayDataMsg */](options: typings.atJupyterlabServices.libKernelMessagesMod.KernelMessage.IOptions[T]): T = js.native
     @JSName("createMessage")

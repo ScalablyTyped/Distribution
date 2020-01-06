@@ -10,9 +10,9 @@ Swiper component for React Native.
 | ------------------ | :-------------: |
 | Full name          | react-native-swiper |
 | Keywords           | react-component, react-native, ios |
-| # releases         | 10 |
-| # dependents       | 58 |
-| # downloads        | 1304973 |
+| # releases         | 13 |
+| # dependents       | 72 |
+| # downloads        | 1842448 |
 | # stars            | 27 |
 
 ## Links

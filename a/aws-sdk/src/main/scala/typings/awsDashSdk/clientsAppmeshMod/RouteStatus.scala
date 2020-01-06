@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RouteStatus extends js.Object {
   /**
     * The current status for the route.
     */
-  var status: RouteStatusCode
+  var status: RouteStatusCode = js.native
 }
 
 object RouteStatus {

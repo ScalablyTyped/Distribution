@@ -10,9 +10,9 @@ Dark theme variables for Ant Design
 | ------------------ | :-------------: |
 | Full name          | @ant-design/dark-theme |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 0 |
-| # downloads        | 161 |
+| # releases         | 10 |
+| # dependents       | 3 |
+| # downloads        | 23053 |
 | # stars            | 0 |
 
 ## Links

@@ -57,7 +57,7 @@ class StackSet protected () extends CustomResource {
   /**
     * Key-value map of tags to associate with this Stack Set and the Stacks created from it. AWS CloudFormation also propagates these tags to supported resources that are created in the Stacks. A maximum number of 50 tags can be specified.
     */
-  val tags: Output[js.UndefOr[StringDictionary[String]]] = js.native
+  val tags: Output[js.UndefOr[StringDictionary[_]]] = js.native
   /**
     * String containing the CloudFormation template body. Maximum size: 51,200 bytes. Conflicts with `templateUrl`.
     */

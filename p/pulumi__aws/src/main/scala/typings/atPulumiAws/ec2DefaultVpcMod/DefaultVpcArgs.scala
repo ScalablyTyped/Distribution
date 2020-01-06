@@ -6,26 +6,27 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DefaultVpcArgs extends js.Object {
   /**
     * A boolean flag to enable/disable ClassicLink
     * for the VPC. Only valid in regions and accounts that support EC2 Classic.
     * See the [ClassicLink documentation][1] for more information. Defaults false.
     */
-  val enableClassiclink: js.UndefOr[Input[Boolean]] = js.undefined
-  val enableClassiclinkDnsSupport: js.UndefOr[Input[Boolean]] = js.undefined
+  val enableClassiclink: js.UndefOr[Input[Boolean]] = js.native
+  val enableClassiclinkDnsSupport: js.UndefOr[Input[Boolean]] = js.native
   /**
     * A boolean flag to enable/disable DNS hostnames in the VPC. Defaults false.
     */
-  val enableDnsHostnames: js.UndefOr[Input[Boolean]] = js.undefined
+  val enableDnsHostnames: js.UndefOr[Input[Boolean]] = js.native
   /**
     * A boolean flag to enable/disable DNS support in the VPC. Defaults true.
     */
-  val enableDnsSupport: js.UndefOr[Input[Boolean]] = js.undefined
+  val enableDnsSupport: js.UndefOr[Input[Boolean]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object DefaultVpcArgs {

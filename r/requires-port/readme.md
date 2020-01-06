@@ -11,8 +11,8 @@ Check if a protocol requires a certain port number to be added to an URL.
 | Full name          | requires-port |
 | Keywords           | port, require, http, https, ws, wss, gopher, file, ftp, requires, requried, portnumber, url, parsing, validation, cows |
 | # releases         | 1 |
-| # dependents       | 42 |
-| # downloads        | 194435878 |
+| # dependents       | 56 |
+| # downloads        | 298967078 |
 | # stars            | 3 |
 
 ## Links

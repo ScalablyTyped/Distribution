@@ -10,10 +10,10 @@ Handles drag and drop of files for you.
 | ------------------ | :-------------: |
 | Full name          | dropzone |
 | Keywords           | dragndrop, drag and drop, file upload, upload |
-| # releases         | 11 |
-| # dependents       | 102 |
-| # downloads        | 6164689 |
-| # stars            | 18 |
+| # releases         | 6 |
+| # dependents       | 144 |
+| # downloads        | 8441034 |
+| # stars            | 19 |
 
 ## Links
 - [Homepage](http://www.dropzonejs.com)

@@ -11,8 +11,8 @@ The lodash method `_.shuffle` exported as a module.
 | Full name          | lodash.shuffle |
 | Keywords           | lodash-modularized, shuffle |
 | # releases         | 0 |
-| # dependents       | 55 |
-| # downloads        | 6859758 |
+| # dependents       | 63 |
+| # downloads        | 7056005 |
 | # stars            | 1 |
 
 ## Links

@@ -7,56 +7,57 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RoleState extends js.Object {
   /**
     * The Amazon Resource Name (ARN) specifying the role.
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * The policy that grants an entity permission to assume the role.
     */
-  val assumeRolePolicy: js.UndefOr[Input[String | PolicyDocument]] = js.undefined
+  val assumeRolePolicy: js.UndefOr[Input[String | PolicyDocument]] = js.native
   /**
     * The creation date of the IAM role.
     */
-  val createDate: js.UndefOr[Input[String]] = js.undefined
+  val createDate: js.UndefOr[Input[String]] = js.native
   /**
     * The description of the role.
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * Specifies to force detaching any policies the role has before destroying it. Defaults to `false`.
     */
-  val forceDetachPolicies: js.UndefOr[Input[Boolean]] = js.undefined
+  val forceDetachPolicies: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The maximum session duration (in seconds) that you want to set for the specified role. If you do not specify a value for this setting, the default maximum of one hour is applied. This setting can have a value from 1 hour to 12 hours.
     */
-  val maxSessionDuration: js.UndefOr[Input[Double]] = js.undefined
+  val maxSessionDuration: js.UndefOr[Input[Double]] = js.native
   /**
     * The name of the role. If omitted, this provider will assign a random, unique name.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`.
     */
-  val namePrefix: js.UndefOr[Input[String]] = js.undefined
+  val namePrefix: js.UndefOr[Input[String]] = js.native
   /**
     * The path to the role.
     * See [IAM Identifiers](https://docs.aws.amazon.com/IAM/latest/UserGuide/Using_Identifiers.html) for more information.
     */
-  val path: js.UndefOr[Input[String]] = js.undefined
+  val path: js.UndefOr[Input[String]] = js.native
   /**
     * The ARN of the policy that is used to set the permissions boundary for the role.
     */
-  val permissionsBoundary: js.UndefOr[Input[String]] = js.undefined
+  val permissionsBoundary: js.UndefOr[Input[String]] = js.native
   /**
     * Key-value mapping of tags for the IAM role
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * The stable and unique string identifying the role.
     */
-  val uniqueId: js.UndefOr[Input[String]] = js.undefined
+  val uniqueId: js.UndefOr[Input[String]] = js.native
 }
 
 object RoleState {

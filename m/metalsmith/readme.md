@@ -11,8 +11,8 @@ An extremely simple, pluggable static site generator.
 | Full name          | metalsmith |
 | Keywords           | static, file, site, website, blog, generator, markdown, jekyll, wintersmith, blacksmith |
 | # releases         | 1 |
-| # dependents       | 671 |
-| # downloads        | 1875164 |
+| # dependents       | 842 |
+| # downloads        | 1874441 |
 | # stars            | 36 |
 
 ## Links

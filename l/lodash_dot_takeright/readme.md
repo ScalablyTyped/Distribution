@@ -11,8 +11,8 @@ The lodash method `_.takeRight` exported as a module.
 | Full name          | lodash.takeright |
 | Keywords           | lodash-modularized, takeright |
 | # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 29561 |
+| # dependents       | 11 |
+| # downloads        | 91261 |
 | # stars            | 0 |
 
 ## Links

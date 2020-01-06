@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SelectionSelectionTag extends js.Object {
   /**
     * The key in a key-value pair.
     */
-  var key: Input[String]
+  var key: Input[String] = js.native
   /**
     * An operation, such as `StringEquals`, that is applied to a key-value pair used to filter resources in a selection.
     */
-  var `type`: Input[String]
+  var `type`: Input[String] = js.native
   /**
     * The value in a key-value pair.
     */
-  var value: Input[String]
+  var value: Input[String] = js.native
 }
 
 object SelectionSelectionTag {

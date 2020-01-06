@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 package object clientsGuarddutyMod {
   import org.scalablytyped.runtime.StringDictionary
   import typings.awsDashSdk.awsDashSdkStrings.COUNT_BY_SEVERITY
+  import typings.awsDashSdk.awsDashSdkStrings.S3
   import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
 
   type AccountDetails = js.Array[AccountDetail]
@@ -17,6 +18,8 @@ package object clientsGuarddutyMod {
   type ClientToken = java.lang.String
   type CountBySeverity = StringDictionary[Integer]
   type Criterion = StringDictionary[Condition]
+  type DestinationType = S3 | java.lang.String
+  type Destinations = js.Array[Destination]
   type DetectorId = java.lang.String
   type DetectorIds = js.Array[DetectorId]
   /* Rewritten from type alias, can be one of: 
@@ -102,6 +105,14 @@ package object clientsGuarddutyMod {
   type PortProbeDetails = js.Array[PortProbeDetail]
   type PrivateIpAddresses = js.Array[PrivateIpAddressDetails]
   type ProductCodes = js.Array[ProductCode]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.PENDING_VERIFICATION
+    - typings.awsDashSdk.awsDashSdkStrings.PUBLISHING
+    - typings.awsDashSdk.awsDashSdkStrings.UNABLE_TO_PUBLISH_FIX_DESTINATION_PROPERTY
+    - typings.awsDashSdk.awsDashSdkStrings.STOPPED
+    - java.lang.String
+  */
+  type PublishingStatus = _PublishingStatus | java.lang.String
   type SecurityGroups = js.Array[SecurityGroup]
   type String = java.lang.String
   type TagKey = java.lang.String
@@ -136,7 +147,7 @@ package object clientsGuarddutyMod {
   type UnprocessedAccounts = js.Array[UnprocessedAccount]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2017-11-28`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | java.lang.String

@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameter extends js.Object {
   /**
     * The parameter name.
     */
-  var name: Input[String]
+  var name: Input[String] = js.native
   /**
     * The array of strings.
     */
-  var values: Input[js.Array[Input[String]]]
+  var values: Input[js.Array[Input[String]]] = js.native
 }
 
 object MaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameter {

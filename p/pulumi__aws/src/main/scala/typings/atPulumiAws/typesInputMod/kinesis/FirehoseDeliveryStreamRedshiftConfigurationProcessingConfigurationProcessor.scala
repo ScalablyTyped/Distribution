@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessor extends js.Object {
   /**
     * Array of processor parameters. More details are given below
@@ -17,11 +18,11 @@ trait FirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcesso
         ]
       ]
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * The type of processor. Valid Values: `Lambda`
     */
-  var `type`: Input[String]
+  var `type`: Input[String] = js.native
 }
 
 object FirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessor {

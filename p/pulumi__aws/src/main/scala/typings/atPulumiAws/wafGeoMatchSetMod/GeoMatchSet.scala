@@ -24,6 +24,10 @@ class GeoMatchSet protected () extends CustomResource {
   def this(name: String, args: GeoMatchSetArgs) = this()
   def this(name: String, args: GeoMatchSetArgs, opts: CustomResourceOptions) = this()
   /**
+    * Amazon Resource Name (ARN)
+    */
+  val arn: Output[String] = js.native
+  /**
     * The GeoMatchConstraint objects which contain the country that you want AWS WAF to search for.
     */
   val geoMatchConstraints: Output[js.UndefOr[js.Array[GeoMatchSetGeoMatchConstraint]]] = js.native

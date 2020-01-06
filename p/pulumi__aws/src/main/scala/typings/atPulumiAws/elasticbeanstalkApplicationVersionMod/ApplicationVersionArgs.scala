@@ -8,36 +8,37 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ApplicationVersionArgs extends js.Object {
   /**
     * Name of the Beanstalk Application the version is associated with.
     */
-  val application: Input[Application]
+  val application: Input[Application] = js.native
   /**
     * S3 bucket that contains the Application Version source bundle.
     */
-  val bucket: Input[String | Bucket]
+  val bucket: Input[String | Bucket] = js.native
   /**
     * Short description of the Application Version.
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * On delete, force an Application Version to be deleted when it may be in use
     * by multiple Elastic Beanstalk Environments.
     */
-  val forceDelete: js.UndefOr[Input[Boolean]] = js.undefined
+  val forceDelete: js.UndefOr[Input[Boolean]] = js.native
   /**
     * S3 object that is the Application Version source bundle.
     */
-  val key: Input[String]
+  val key: Input[String] = js.native
   /**
     * A unique name for the this Application Version.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * Key-value mapping of tags for the Elastic Beanstalk Application Version.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object ApplicationVersionArgs {

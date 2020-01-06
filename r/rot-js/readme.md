@@ -10,9 +10,9 @@ A roguelike toolkit in JavaScript
 | ------------------ | :-------------: |
 | Full name          | rot-js |
 | Keywords           | ascii, dungeon, fov, game, libtcod, lighting, los, rng, rogue, roguelike, tiles |
-| # releases         | 8 |
-| # dependents       | 2 |
-| # downloads        | 4293 |
+| # releases         | 7 |
+| # dependents       | 3 |
+| # downloads        | 6458 |
 | # stars            | 2 |
 
 ## Links

@@ -10,9 +10,9 @@ HTTP utilities. Used by [electron-builder](https://github.com/electron-userland/
 | ------------------ | :-------------: |
 | Full name          | builder-util-runtime |
 | Keywords           | - |
-| # releases         | 50 |
-| # dependents       | 18 |
-| # downloads        | 3531574 |
+| # releases         | 35 |
+| # dependents       | 26 |
+| # downloads        | 5672587 |
 | # stars            | 0 |
 
 ## Links

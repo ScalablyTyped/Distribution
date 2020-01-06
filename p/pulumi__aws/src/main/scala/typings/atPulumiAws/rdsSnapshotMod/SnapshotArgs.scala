@@ -6,19 +6,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SnapshotArgs extends js.Object {
   /**
     * The DB Instance Identifier from which to take the snapshot.
     */
-  val dbInstanceIdentifier: Input[String]
+  val dbInstanceIdentifier: Input[String] = js.native
   /**
     * The Identifier for the snapshot.
     */
-  val dbSnapshotIdentifier: Input[String]
+  val dbSnapshotIdentifier: Input[String] = js.native
   /**
     * Key-value mapping of resource tags
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object SnapshotArgs {

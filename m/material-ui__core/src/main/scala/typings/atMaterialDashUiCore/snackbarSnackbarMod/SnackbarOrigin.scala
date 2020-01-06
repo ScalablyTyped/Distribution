@@ -9,9 +9,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SnackbarOrigin extends js.Object {
-  var horizontal: left | center | right
-  var vertical: top | bottom
+  var horizontal: left | center | right = js.native
+  var vertical: top | bottom = js.native
 }
 
 object SnackbarOrigin {

@@ -11,8 +11,8 @@ Check if an Array is sorted
 | Full name          | is-array-sorted |
 | Keywords           | array, sorted, sort, is, check, detect, list, sequence, compare, comparator |
 | # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 27089 |
+| # dependents       | 4 |
+| # downloads        | 222491 |
 | # stars            | 1 |
 
 ## Links

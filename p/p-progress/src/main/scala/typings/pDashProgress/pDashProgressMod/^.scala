@@ -332,7 +332,32 @@ object ^ extends js.Object {
       ValueType10
     ]
   ] = js.native
-  def fn[ReturnType](input: js.Function1[/* repeated */ js.Any, js.Thenable[ReturnType]]): js.Function1[/* repeated */ js.Any, PProgress[ReturnType]] = js.native
+  /**
+  	Convenience method to make your promise-returning or async function report progress.
+  	The function you specify will have the `progress()` function appended to its parameters.
+  	@example
+  	```
+  	import PProgress = require('p-progress');
+  	const runJob = PProgress.fn(async (name, progress) => {
+  		const job = new Job(name);
+  		job.on('data', data => {
+  			progress(data.length / job.totalSize);
+  		});
+  		await job.run();
+  	});
+  	(async () => {
+  		const progressPromise = runJob('Gather rainbows');
+  		progressPromise.onProgress(console.log);
+  		//=> 0.09
+  		//=> 0.23
+  		//=> 0.59
+  		//=> 0.75
+  		//=> 1
+  		await progressPromise;
+  	})();
+  	```
+  	*/
+  def fn[ReturnType](input: js.Function1[/* progress */ ProgressNotifier, js.Thenable[ReturnType]]): js.Function0[PProgress[ReturnType]] = js.native
   def fn[ParameterType1, ReturnType](
     input: js.Function2[
       /* parameter1 */ ParameterType1, 
@@ -520,32 +545,7 @@ object ^ extends js.Object {
     /* parameter10 */ ParameterType10, 
     PProgress[ReturnType]
   ] = js.native
-  /**
-  	Convenience method to make your promise-returning or async function report progress.
-  	The function you specify will have the `progress()` function appended to its parameters.
-  	@example
-  	```
-  	import PProgress = require('p-progress');
-  	const runJob = PProgress.fn(async (name, progress) => {
-  		const job = new Job(name);
-  		job.on('data', data => {
-  			progress(data.length / job.totalSize);
-  		});
-  		await job.run();
-  	});
-  	(async () => {
-  		const progressPromise = runJob('Gather rainbows');
-  		progressPromise.onProgress(console.log);
-  		//=> 0.09
-  		//=> 0.23
-  		//=> 0.59
-  		//=> 0.75
-  		//=> 1
-  		await progressPromise;
-  	})();
-  	```
-  	*/
   @JSName("fn")
-  def fn_ReturnType_Function0[ReturnType](input: js.Function1[/* progress */ ProgressNotifier, js.Thenable[ReturnType]]): js.Function0[PProgress[ReturnType]] = js.native
+  def fn_ReturnType_Function1[ReturnType](input: js.Function1[/* repeated */ js.Any, js.Thenable[ReturnType]]): js.Function1[/* repeated */ js.Any, PProgress[ReturnType]] = js.native
 }
 

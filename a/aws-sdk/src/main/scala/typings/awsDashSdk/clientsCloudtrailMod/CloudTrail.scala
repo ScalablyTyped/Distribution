@@ -13,12 +13,12 @@ trait CloudTrail extends Service {
   @JSName("config")
   var config_CloudTrail: ConfigBase with ClientConfiguration = js.native
   /**
-    * Adds one or more tags to a trail, up to a limit of 50. Tags must be unique per trail. Overwrites an existing tag's value when a new value is specified for an existing tag key. If you specify a key without a value, the tag will be created with the specified key and a value of null. You can tag a trail that applies to all regions only from the region in which the trail was created (that is, from its home region).
+    * Adds one or more tags to a trail, up to a limit of 50. Overwrites an existing tag's value when a new value is specified for an existing tag key. Tag key names must be unique for a trail; you cannot have two keys with the same name but different values. If you specify a key without a value, the tag will be created with the specified key and a value of null. You can tag a trail that applies to all AWS Regions only from the Region in which the trail was created (also known as its home region).
     */
   def addTags(): Request[AddTagsResponse, AWSError] = js.native
   def addTags(callback: js.Function2[/* err */ AWSError, /* data */ AddTagsResponse, Unit]): Request[AddTagsResponse, AWSError] = js.native
   /**
-    * Adds one or more tags to a trail, up to a limit of 50. Tags must be unique per trail. Overwrites an existing tag's value when a new value is specified for an existing tag key. If you specify a key without a value, the tag will be created with the specified key and a value of null. You can tag a trail that applies to all regions only from the region in which the trail was created (that is, from its home region).
+    * Adds one or more tags to a trail, up to a limit of 50. Overwrites an existing tag's value when a new value is specified for an existing tag key. Tag key names must be unique for a trail; you cannot have two keys with the same name but different values. If you specify a key without a value, the tag will be created with the specified key and a value of null. You can tag a trail that applies to all AWS Regions only from the Region in which the trail was created (also known as its home region).
     */
   def addTags(params: AddTagsRequest): Request[AddTagsResponse, AWSError] = js.native
   def addTags(
@@ -26,12 +26,12 @@ trait CloudTrail extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ AddTagsResponse, Unit]
   ): Request[AddTagsResponse, AWSError] = js.native
   /**
-    * Creates a trail that specifies the settings for delivery of log data to an Amazon S3 bucket. A maximum of five trails can exist in a region, irrespective of the region in which they were created.
+    * Creates a trail that specifies the settings for delivery of log data to an Amazon S3 bucket. 
     */
   def createTrail(): Request[CreateTrailResponse, AWSError] = js.native
   def createTrail(callback: js.Function2[/* err */ AWSError, /* data */ CreateTrailResponse, Unit]): Request[CreateTrailResponse, AWSError] = js.native
   /**
-    * Creates a trail that specifies the settings for delivery of log data to an Amazon S3 bucket. A maximum of five trails can exist in a region, irrespective of the region in which they were created.
+    * Creates a trail that specifies the settings for delivery of log data to an Amazon S3 bucket. 
     */
   def createTrail(params: CreateTrailRequest): Request[CreateTrailResponse, AWSError] = js.native
   def createTrail(
@@ -52,12 +52,12 @@ trait CloudTrail extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteTrailResponse, Unit]
   ): Request[DeleteTrailResponse, AWSError] = js.native
   /**
-    * Retrieves settings for the trail associated with the current region for your account.
+    * Retrieves settings for one or more trails associated with the current region for your account.
     */
   def describeTrails(): Request[DescribeTrailsResponse, AWSError] = js.native
   def describeTrails(callback: js.Function2[/* err */ AWSError, /* data */ DescribeTrailsResponse, Unit]): Request[DescribeTrailsResponse, AWSError] = js.native
   /**
-    * Retrieves settings for the trail associated with the current region for your account.
+    * Retrieves settings for one or more trails associated with the current region for your account.
     */
   def describeTrails(params: DescribeTrailsRequest): Request[DescribeTrailsResponse, AWSError] = js.native
   def describeTrails(
@@ -77,6 +77,32 @@ trait CloudTrail extends Service {
     params: GetEventSelectorsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetEventSelectorsResponse, Unit]
   ): Request[GetEventSelectorsResponse, AWSError] = js.native
+  /**
+    * Describes the settings for the Insights event selectors that you configured for your trail. GetInsightSelectors shows if CloudTrail Insights event logging is enabled on the trail, and if it is, which insight types are enabled. If you run GetInsightSelectors on a trail that does not have Insights events enabled, the operation throws the exception InsightNotEnabledException  For more information, see Logging CloudTrail Insights Events for Trails  in the AWS CloudTrail User Guide.
+    */
+  def getInsightSelectors(): Request[GetInsightSelectorsResponse, AWSError] = js.native
+  def getInsightSelectors(callback: js.Function2[/* err */ AWSError, /* data */ GetInsightSelectorsResponse, Unit]): Request[GetInsightSelectorsResponse, AWSError] = js.native
+  /**
+    * Describes the settings for the Insights event selectors that you configured for your trail. GetInsightSelectors shows if CloudTrail Insights event logging is enabled on the trail, and if it is, which insight types are enabled. If you run GetInsightSelectors on a trail that does not have Insights events enabled, the operation throws the exception InsightNotEnabledException  For more information, see Logging CloudTrail Insights Events for Trails  in the AWS CloudTrail User Guide.
+    */
+  def getInsightSelectors(params: GetInsightSelectorsRequest): Request[GetInsightSelectorsResponse, AWSError] = js.native
+  def getInsightSelectors(
+    params: GetInsightSelectorsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetInsightSelectorsResponse, Unit]
+  ): Request[GetInsightSelectorsResponse, AWSError] = js.native
+  /**
+    * Returns settings information for a specified trail.
+    */
+  def getTrail(): Request[GetTrailResponse, AWSError] = js.native
+  def getTrail(callback: js.Function2[/* err */ AWSError, /* data */ GetTrailResponse, Unit]): Request[GetTrailResponse, AWSError] = js.native
+  /**
+    * Returns settings information for a specified trail.
+    */
+  def getTrail(params: GetTrailRequest): Request[GetTrailResponse, AWSError] = js.native
+  def getTrail(
+    params: GetTrailRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetTrailResponse, Unit]
+  ): Request[GetTrailResponse, AWSError] = js.native
   /**
     * Returns a JSON-formatted list of information about the specified trail. Fields include information on delivery errors, Amazon SNS and Amazon S3 errors, and start and stop logging times for each trail. This operation returns trail status from a single region. To return trail status from all regions, you must call the operation on each region.
     */
@@ -117,12 +143,25 @@ trait CloudTrail extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsResponse, Unit]
   ): Request[ListTagsResponse, AWSError] = js.native
   /**
-    * Looks up management events captured by CloudTrail. Events for a region can be looked up in that region during the last 90 days. Lookup supports the following attributes:   AWS access key   Event ID   Event name   Event source   Read only   Resource name   Resource type   User name   All attributes are optional. The default number of results returned is 50, with a maximum of 50 possible. The response includes a token that you can use to get the next page of results.  The rate of lookup requests is limited to one per second per account. If this limit is exceeded, a throttling error occurs.   Events that occurred during the selected time range will not be available for lookup if CloudTrail logging was not enabled when the events occurred. 
+    * Lists trails that are in the current account.
+    */
+  def listTrails(): Request[ListTrailsResponse, AWSError] = js.native
+  def listTrails(callback: js.Function2[/* err */ AWSError, /* data */ ListTrailsResponse, Unit]): Request[ListTrailsResponse, AWSError] = js.native
+  /**
+    * Lists trails that are in the current account.
+    */
+  def listTrails(params: ListTrailsRequest): Request[ListTrailsResponse, AWSError] = js.native
+  def listTrails(
+    params: ListTrailsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListTrailsResponse, Unit]
+  ): Request[ListTrailsResponse, AWSError] = js.native
+  /**
+    * Looks up management events or CloudTrail Insights events that are captured by CloudTrail. You can look up events that occurred in a region within the last 90 days. Lookup supports the following attributes for management events:   AWS access key   Event ID   Event name   Event source   Read only   Resource name   Resource type   User name   Lookup supports the following attributes for Insights events:   Event ID   Event name   Event source   All attributes are optional. The default number of results returned is 50, with a maximum of 50 possible. The response includes a token that you can use to get the next page of results.  The rate of lookup requests is limited to two per second per account. If this limit is exceeded, a throttling error occurs. 
     */
   def lookupEvents(): Request[LookupEventsResponse, AWSError] = js.native
   def lookupEvents(callback: js.Function2[/* err */ AWSError, /* data */ LookupEventsResponse, Unit]): Request[LookupEventsResponse, AWSError] = js.native
   /**
-    * Looks up management events captured by CloudTrail. Events for a region can be looked up in that region during the last 90 days. Lookup supports the following attributes:   AWS access key   Event ID   Event name   Event source   Read only   Resource name   Resource type   User name   All attributes are optional. The default number of results returned is 50, with a maximum of 50 possible. The response includes a token that you can use to get the next page of results.  The rate of lookup requests is limited to one per second per account. If this limit is exceeded, a throttling error occurs.   Events that occurred during the selected time range will not be available for lookup if CloudTrail logging was not enabled when the events occurred. 
+    * Looks up management events or CloudTrail Insights events that are captured by CloudTrail. You can look up events that occurred in a region within the last 90 days. Lookup supports the following attributes for management events:   AWS access key   Event ID   Event name   Event source   Read only   Resource name   Resource type   User name   Lookup supports the following attributes for Insights events:   Event ID   Event name   Event source   All attributes are optional. The default number of results returned is 50, with a maximum of 50 possible. The response includes a token that you can use to get the next page of results.  The rate of lookup requests is limited to two per second per account. If this limit is exceeded, a throttling error occurs. 
     */
   def lookupEvents(params: LookupEventsRequest): Request[LookupEventsResponse, AWSError] = js.native
   def lookupEvents(
@@ -142,6 +181,19 @@ trait CloudTrail extends Service {
     params: PutEventSelectorsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PutEventSelectorsResponse, Unit]
   ): Request[PutEventSelectorsResponse, AWSError] = js.native
+  /**
+    * Lets you enable Insights event logging by specifying the Insights selectors that you want to enable on an existing trail. You also use PutInsightSelectors to turn off Insights event logging, by passing an empty list of insight types. In this release, only ApiCallRateInsight is supported as an Insights selector.
+    */
+  def putInsightSelectors(): Request[PutInsightSelectorsResponse, AWSError] = js.native
+  def putInsightSelectors(callback: js.Function2[/* err */ AWSError, /* data */ PutInsightSelectorsResponse, Unit]): Request[PutInsightSelectorsResponse, AWSError] = js.native
+  /**
+    * Lets you enable Insights event logging by specifying the Insights selectors that you want to enable on an existing trail. You also use PutInsightSelectors to turn off Insights event logging, by passing an empty list of insight types. In this release, only ApiCallRateInsight is supported as an Insights selector.
+    */
+  def putInsightSelectors(params: PutInsightSelectorsRequest): Request[PutInsightSelectorsResponse, AWSError] = js.native
+  def putInsightSelectors(
+    params: PutInsightSelectorsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutInsightSelectorsResponse, Unit]
+  ): Request[PutInsightSelectorsResponse, AWSError] = js.native
   /**
     * Removes the specified tags from a trail.
     */

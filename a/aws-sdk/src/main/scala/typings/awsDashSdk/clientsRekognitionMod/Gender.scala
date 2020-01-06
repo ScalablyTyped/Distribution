@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Gender extends js.Object {
   /**
-    * Level of confidence in the determination.
+    * Level of confidence in the prediction.
     */
-  var Confidence: js.UndefOr[Percent] = js.undefined
+  var Confidence: js.UndefOr[Percent] = js.native
   /**
-    * Gender of the face.
+    * The predicted gender of the face.
     */
-  var Value: js.UndefOr[GenderType] = js.undefined
+  var Value: js.UndefOr[GenderType] = js.native
 }
 
 object Gender {

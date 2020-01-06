@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UpdatePresetRequest extends js.Object {
   /**
     * The new category for the preset, if you are changing it.
     */
-  var Category: js.UndefOr[__string] = js.undefined
+  var Category: js.UndefOr[__string] = js.native
   /**
     * The new description for the preset, if you are changing it.
     */
-  var Description: js.UndefOr[__string] = js.undefined
+  var Description: js.UndefOr[__string] = js.native
   /**
     * The name of the preset you are modifying.
     */
-  var Name: __string
+  var Name: __string = js.native
   /**
     * Settings for preset
     */
-  var Settings: js.UndefOr[PresetSettings] = js.undefined
+  var Settings: js.UndefOr[PresetSettings] = js.native
 }
 
 object UpdatePresetRequest {
@@ -31,10 +32,10 @@ object UpdatePresetRequest {
     Description: __string = null,
     Settings: PresetSettings = null
   ): UpdatePresetRequest = {
-    val __obj = js.Dynamic.literal(Name = Name)
-    if (Category != null) __obj.updateDynamic("Category")(Category)
-    if (Description != null) __obj.updateDynamic("Description")(Description)
-    if (Settings != null) __obj.updateDynamic("Settings")(Settings)
+    val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
+    if (Category != null) __obj.updateDynamic("Category")(Category.asInstanceOf[js.Any])
+    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (Settings != null) __obj.updateDynamic("Settings")(Settings.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdatePresetRequest]
   }
 }

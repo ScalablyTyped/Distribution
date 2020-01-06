@@ -4,22 +4,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DescribeProductsResponse extends js.Object {
   /**
     * The token that is required for pagination.
     */
-  var NextToken: js.UndefOr[typings.awsDashSdk.clientsSecurityhubMod.NextToken] = js.undefined
+  var NextToken: js.UndefOr[typings.awsDashSdk.clientsSecurityhubMod.NextToken] = js.native
   /**
     * A list of products, including details for each product.
     */
-  var Products: ProductsList
+  var Products: ProductsList = js.native
 }
 
 object DescribeProductsResponse {
   @scala.inline
   def apply(Products: ProductsList, NextToken: NextToken = null): DescribeProductsResponse = {
-    val __obj = js.Dynamic.literal(Products = Products)
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
+    val __obj = js.Dynamic.literal(Products = Products.asInstanceOf[js.Any])
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeProductsResponse]
   }
 }

@@ -10,9 +10,9 @@ Replace string tokens in the contents of a file.
 | ------------------ | :-------------: |
 | Full name          | string-replace-webpack-plugin |
 | Keywords           | webpack, string, replace, plugin |
-| # releases         | 3 |
-| # dependents       | 67 |
-| # downloads        | 932584 |
+| # releases         | 0 |
+| # dependents       | 72 |
+| # downloads        | 992212 |
 | # stars            | 5 |
 
 ## Links

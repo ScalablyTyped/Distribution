@@ -5,14 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InstanceNetworkInterface extends js.Object {
   /**
     * Whether the volume should be destroyed
     * on instance termination (Default: `true`).
     */
-  var deleteOnTermination: js.UndefOr[Input[Boolean]] = js.undefined
-  var deviceIndex: Input[Double]
-  var networkInterfaceId: Input[String]
+  var deleteOnTermination: js.UndefOr[Input[Boolean]] = js.native
+  var deviceIndex: Input[Double] = js.native
+  var networkInterfaceId: Input[String] = js.native
 }
 
 object InstanceNetworkInterface {

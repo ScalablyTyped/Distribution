@@ -11,8 +11,8 @@ secure sessions stored in cookies
 | Full name          | client-sessions |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 51 |
-| # downloads        | 615419 |
+| # dependents       | 52 |
+| # downloads        | 758944 |
 | # stars            | 21 |
 
 ## Links

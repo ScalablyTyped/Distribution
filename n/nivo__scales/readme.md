@@ -3,15 +3,16 @@
 
 Typings are for version 0.59.3
 
-
+## Library description:
+[![version](https://img.shields.io/npm/v/@nivo/scales.svg?style=flat-square)](https://www.npmjs.com/package/@nivo/scales)
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @nivo/scales |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 5 |
-| # downloads        | 285270 |
+| # releases         | 18 |
+| # dependents       | 7 |
+| # downloads        | 630848 |
 | # stars            | 0 |
 
 ## Links

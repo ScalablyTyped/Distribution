@@ -9,9 +9,9 @@ Typings are for version 0.1.0-preview.1
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/querystring-parser |
 | Keywords           | - |
-| # releases         | 6 |
+| # releases         | 9 |
 | # dependents       | 3 |
-| # downloads        | 6726 |
+| # downloads        | 30263 |
 | # stars            | 0 |
 
 ## Links

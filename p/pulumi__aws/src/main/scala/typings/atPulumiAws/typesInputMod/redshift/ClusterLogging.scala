@@ -5,20 +5,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClusterLogging extends js.Object {
   /**
     * The name of an existing S3 bucket where the log files are to be stored. Must be in the same region as the cluster and the cluster must have read bucket and put object permissions.
     * For more information on the permissions required for the bucket, please read the AWS [documentation](http://docs.aws.amazon.com/redshift/latest/mgmt/db-auditing.html#db-auditing-enable-logging)
     */
-  var bucketName: js.UndefOr[Input[String]] = js.undefined
+  var bucketName: js.UndefOr[Input[String]] = js.native
   /**
     * Enables logging information such as queries and connection attempts, for the specified Amazon Redshift cluster.
     */
-  var enable: Input[Boolean]
+  var enable: Input[Boolean] = js.native
   /**
     * The prefix applied to the log file names.
     */
-  var s3KeyPrefix: js.UndefOr[Input[String]] = js.undefined
+  var s3KeyPrefix: js.UndefOr[Input[String]] = js.native
 }
 
 object ClusterLogging {

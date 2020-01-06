@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DescribeAggregateComplianceByConfigRulesResponse extends js.Object {
   /**
     * Returns a list of AggregateComplianceByConfigRule object.
     */
-  var AggregateComplianceByConfigRules: js.UndefOr[AggregateComplianceByConfigRuleList] = js.undefined
+  var AggregateComplianceByConfigRules: js.UndefOr[AggregateComplianceByConfigRuleList] = js.native
   /**
     * The nextToken string returned on a previous page that you use to get the next page of results in a paginated response.
     */
-  var NextToken: js.UndefOr[typings.awsDashSdk.clientsConfigserviceMod.NextToken] = js.undefined
+  var NextToken: js.UndefOr[typings.awsDashSdk.clientsConfigserviceMod.NextToken] = js.native
 }
 
 object DescribeAggregateComplianceByConfigRulesResponse {
@@ -22,8 +23,8 @@ object DescribeAggregateComplianceByConfigRulesResponse {
     NextToken: NextToken = null
   ): DescribeAggregateComplianceByConfigRulesResponse = {
     val __obj = js.Dynamic.literal()
-    if (AggregateComplianceByConfigRules != null) __obj.updateDynamic("AggregateComplianceByConfigRules")(AggregateComplianceByConfigRules)
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
+    if (AggregateComplianceByConfigRules != null) __obj.updateDynamic("AggregateComplianceByConfigRules")(AggregateComplianceByConfigRules.asInstanceOf[js.Any])
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAggregateComplianceByConfigRulesResponse]
   }
 }

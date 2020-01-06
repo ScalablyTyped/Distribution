@@ -10,9 +10,9 @@ React Native Drawer
 | ------------------ | :-------------: |
 | Full name          | react-native-drawer |
 | Keywords           | react, react-native, react-component, drawer, side-menu, menu, ios, android, material design |
-| # releases         | 4 |
-| # dependents       | 24 |
-| # downloads        | 1541317 |
+| # releases         | 2 |
+| # dependents       | 27 |
+| # downloads        | 1917392 |
 | # stars            | 9 |
 
 ## Links

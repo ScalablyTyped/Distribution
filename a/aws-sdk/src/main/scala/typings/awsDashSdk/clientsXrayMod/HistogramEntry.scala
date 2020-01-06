@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait HistogramEntry extends js.Object {
   /**
     * The prevalence of the entry.
     */
-  var Count: js.UndefOr[Integer] = js.undefined
+  var Count: js.UndefOr[Integer] = js.native
   /**
     * The value of the entry.
     */
-  var Value: js.UndefOr[Double] = js.undefined
+  var Value: js.UndefOr[Double] = js.native
 }
 
 object HistogramEntry {

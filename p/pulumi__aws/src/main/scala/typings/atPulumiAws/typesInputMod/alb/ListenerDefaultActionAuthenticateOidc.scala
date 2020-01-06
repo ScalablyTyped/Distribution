@@ -6,51 +6,52 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ListenerDefaultActionAuthenticateOidc extends js.Object {
   /**
     * The query parameters to include in the redirect request to the authorization endpoint. Max: 10.
     */
-  var authenticationRequestExtraParams: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  var authenticationRequestExtraParams: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * The authorization endpoint of the IdP.
     */
-  var authorizationEndpoint: Input[String]
+  var authorizationEndpoint: Input[String] = js.native
   /**
     * The OAuth 2.0 client identifier.
     */
-  var clientId: Input[String]
+  var clientId: Input[String] = js.native
   /**
     * The OAuth 2.0 client secret.
     */
-  var clientSecret: Input[String]
+  var clientSecret: Input[String] = js.native
   /**
     * The OIDC issuer identifier of the IdP.
     */
-  var issuer: Input[String]
+  var issuer: Input[String] = js.native
   /**
     * The behavior if the user is not authenticated. Valid values: `deny`, `allow` and `authenticate`
     */
-  var onUnauthenticatedRequest: js.UndefOr[Input[String]] = js.undefined
+  var onUnauthenticatedRequest: js.UndefOr[Input[String]] = js.native
   /**
     * The set of user claims to be requested from the IdP.
     */
-  var scope: js.UndefOr[Input[String]] = js.undefined
+  var scope: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the cookie used to maintain session information.
     */
-  var sessionCookieName: js.UndefOr[Input[String]] = js.undefined
+  var sessionCookieName: js.UndefOr[Input[String]] = js.native
   /**
     * The maximum duration of the authentication session, in seconds.
     */
-  var sessionTimeout: js.UndefOr[Input[Double]] = js.undefined
+  var sessionTimeout: js.UndefOr[Input[Double]] = js.native
   /**
     * The token endpoint of the IdP.
     */
-  var tokenEndpoint: Input[String]
+  var tokenEndpoint: Input[String] = js.native
   /**
     * The user info endpoint of the IdP.
     */
-  var userInfoEndpoint: Input[String]
+  var userInfoEndpoint: Input[String] = js.native
 }
 
 object ListenerDefaultActionAuthenticateOidc {

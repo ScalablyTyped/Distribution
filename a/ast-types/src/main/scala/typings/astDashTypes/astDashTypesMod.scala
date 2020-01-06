@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("ast-types", JSImport.Namespace)
 @js.native
 object astDashTypesMod extends js.Object {
-  /* import warning: parser.TsParser#tsDeclVar $anonfun Dropped List(builders, builtInTypes, defineMethod, eachField, finalize, getBuilderName, getFieldNames, getFieldValue, getSupertypeNames, NodePath, Path, PathVisitor, someField, Type, use, visit) */ @js.native
+  /* import warning: parser.TsParser#tsDeclVar Dropped IArray(builders, builtInTypes, defineMethod, eachField, finalize, getBuilderName, getFieldNames, getFieldValue, getSupertypeNames, NodePath, Path, PathVisitor, someField, Type, use, visit) */ @js.native
   object astNodesAreEquivalent extends js.Object {
     def apply(a: js.Any, b: js.Any): Boolean = js.native
     def apply(a: js.Any, b: js.Any, problemPath: js.Any): Boolean = js.native

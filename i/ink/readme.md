@@ -10,9 +10,9 @@ React for CLI
 | ------------------ | :-------------: |
 | Full name          | ink |
 | Keywords           | react, cli, jsx, stdout, components, command-line, preact, redux, print, render, colors, text |
-| # releases         | 39 |
-| # dependents       | 221 |
-| # downloads        | 81932 |
+| # releases         | 37 |
+| # dependents       | 355 |
+| # downloads        | 6428445 |
 | # stars            | 9 |
 
 ## Links

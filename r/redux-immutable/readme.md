@@ -10,9 +10,9 @@ redux-immutable is used to create an equivalent function of Redux combineReducer
 | ------------------ | :-------------: |
 | Full name          | redux-immutable |
 | Keywords           | immutable, redux |
-| # releases         | 2 |
-| # dependents       | 174 |
-| # downloads        | 4239220 |
+| # releases         | 1 |
+| # dependents       | 223 |
+| # downloads        | 6211581 |
 | # stars            | 14 |
 
 ## Links

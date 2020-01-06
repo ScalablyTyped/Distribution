@@ -72,6 +72,19 @@ trait ElastiCache extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateActionResultsMessage, Unit]
   ): Request[UpdateActionResultsMessage, AWSError] = js.native
   /**
+    * Complete the migration of data.
+    */
+  def completeMigration(): Request[CompleteMigrationResponse, AWSError] = js.native
+  def completeMigration(callback: js.Function2[/* err */ AWSError, /* data */ CompleteMigrationResponse, Unit]): Request[CompleteMigrationResponse, AWSError] = js.native
+  /**
+    * Complete the migration of data.
+    */
+  def completeMigration(params: CompleteMigrationMessage): Request[CompleteMigrationResponse, AWSError] = js.native
+  def completeMigration(
+    params: CompleteMigrationMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ CompleteMigrationResponse, Unit]
+  ): Request[CompleteMigrationResponse, AWSError] = js.native
+  /**
     * Makes a copy of an existing snapshot.  This operation is valid for Redis only.   Users or groups that have permissions to use the CopySnapshot operation can create their own Amazon S3 buckets and copy snapshots to it. To control access to your snapshots, use an IAM policy to control who has the ability to use the CopySnapshot operation. For more information about using IAM to control the use of ElastiCache operations, see Exporting Snapshots and Authentication &amp; Access Control.  You could receive the following error messages.  Error Messages     Error Message: The S3 bucket %s is outside of the region.  Solution: Create an Amazon S3 bucket in the same region as your snapshot. For more information, see Step 1: Create an Amazon S3 Bucket in the ElastiCache User Guide.    Error Message: The S3 bucket %s does not exist.  Solution: Create an Amazon S3 bucket in the same region as your snapshot. For more information, see Step 1: Create an Amazon S3 Bucket in the ElastiCache User Guide.    Error Message: The S3 bucket %s is not owned by the authenticated user.  Solution: Create an Amazon S3 bucket in the same region as your snapshot. For more information, see Step 1: Create an Amazon S3 Bucket in the ElastiCache User Guide.    Error Message: The authenticated user does not have sufficient permissions to perform the desired activity.  Solution: Contact your system administrator to get the needed permissions.    Error Message: The S3 bucket %s already contains an object with key %s.  Solution: Give the TargetSnapshotName a new and unique value. If exporting a snapshot, you could alternatively create a new Amazon S3 bucket and use this same value for TargetSnapshotName.    Error Message:  ElastiCache has not been granted READ permissions %s on the S3 Bucket.  Solution: Add List and Read permissions on the bucket. For more information, see Step 2: Grant ElastiCache Access to Your Amazon S3 Bucket in the ElastiCache User Guide.    Error Message:  ElastiCache has not been granted WRITE permissions %s on the S3 Bucket.  Solution: Add Upload/Delete permissions on the bucket. For more information, see Step 2: Grant ElastiCache Access to Your Amazon S3 Bucket in the ElastiCache User Guide.    Error Message:  ElastiCache has not been granted READ_ACP permissions %s on the S3 Bucket.  Solution: Add View Permissions on the bucket. For more information, see Step 2: Grant ElastiCache Access to Your Amazon S3 Bucket in the ElastiCache User Guide.  
     */
   def copySnapshot(): Request[CopySnapshotResult, AWSError] = js.native
@@ -608,6 +621,19 @@ trait ElastiCache extends Service {
     params: RevokeCacheSecurityGroupIngressMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ RevokeCacheSecurityGroupIngressResult, Unit]
   ): Request[RevokeCacheSecurityGroupIngressResult, AWSError] = js.native
+  /**
+    * Start the migration of data.
+    */
+  def startMigration(): Request[StartMigrationResponse, AWSError] = js.native
+  def startMigration(callback: js.Function2[/* err */ AWSError, /* data */ StartMigrationResponse, Unit]): Request[StartMigrationResponse, AWSError] = js.native
+  /**
+    * Start the migration of data.
+    */
+  def startMigration(params: StartMigrationMessage): Request[StartMigrationResponse, AWSError] = js.native
+  def startMigration(
+    params: StartMigrationMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ StartMigrationResponse, Unit]
+  ): Request[StartMigrationResponse, AWSError] = js.native
   /**
     * Represents the input of a TestFailover operation which test automatic failover on a specified node group (called shard in the console) in a replication group (called cluster in the console).  Note the following    A customer can use this operation to test automatic failover on up to 5 shards (called node groups in the ElastiCache API and AWS CLI) in any rolling 24-hour period.   If calling this operation on shards in different clusters (called replication groups in the API and CLI), the calls can be made concurrently.     If calling this operation multiple times on different shards in the same Redis (cluster mode enabled) replication group, the first node replacement must complete before a subsequent call can be made.   To determine whether the node replacement is complete you can check Events using the Amazon ElastiCache console, the AWS CLI, or the ElastiCache API. Look for the following automatic failover related events, listed here in order of occurrance:   Replication group message: Test Failover API called for node group &lt;node-group-id&gt;    Cache cluster message: Failover from master node &lt;primary-node-id&gt; to replica node &lt;node-id&gt; completed    Replication group message: Failover from master node &lt;primary-node-id&gt; to replica node &lt;node-id&gt; completed    Cache cluster message: Recovering cache nodes &lt;node-id&gt;    Cache cluster message: Finished recovery for cache nodes &lt;node-id&gt;    For more information see:    Viewing ElastiCache Events in the ElastiCache User Guide     DescribeEvents in the ElastiCache API Reference     Also see, Testing Multi-AZ with Automatic Failover in the ElastiCache User Guide.
     */

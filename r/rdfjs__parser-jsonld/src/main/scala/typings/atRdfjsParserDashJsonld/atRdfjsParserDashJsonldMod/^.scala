@@ -1,7 +1,7 @@
 package typings.atRdfjsParserDashJsonld.atRdfjsParserDashJsonldMod
 
 import typings.node.eventsMod.EventEmitter
-import typings.rdfDashJs.rdfDashJsMod.Quad
+import typings.rdfDashJs.rdfDashJsMod.BaseQuad
 import typings.rdfDashJs.rdfDashJsMod.Stream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@rdfjs/parser-jsonld", JSImport.Namespace)
 @js.native
-class ^ () extends Parser {
+class ^[Q /* <: BaseQuad */] () extends Parser[Q] {
   def this(options: ParserOptions) = this()
   /**
     * Consumes the given stream.
@@ -22,6 +22,6 @@ class ^ () extends Parser {
     * @return The resulting event emitter.
     */
   /* CompleteClass */
-  override def `import`(stream: Stream[Quad]): EventEmitter = js.native
+  override def `import`(stream: Stream[Q]): EventEmitter = js.native
 }
 

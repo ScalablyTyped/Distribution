@@ -1,46 +1,75 @@
 package typings.reactDashSimpleDashMaps.reactDashSimpleDashMapsMod
 
-import typings.react.reactMod.CSSProperties
-import typings.reactDashSimpleDashMaps.Anon_X
+import typings.react.reactMod.SVGAttributes
+import typings.std.SVGGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ZoomableGroupProps extends js.Object {
-  var backdrop: js.UndefOr[Anon_X] = js.undefined
+trait ZoomableGroupProps extends SVGAttributes[SVGGElement] {
+  /**
+    * @default [0, 0]
+    */
   var center: js.UndefOr[Point] = js.undefined
+  /**
+    * @default false
+    */
   var disablePanning: js.UndefOr[Boolean] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var onMoveEnd: js.UndefOr[js.Function1[/* newCenter */ Point, Unit]] = js.undefined
-  var onMoveStart: js.UndefOr[js.Function1[/* currentCenter */ Point, Unit]] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  /**
+    * @default false
+    */
+  var disableZooming: js.UndefOr[Boolean] = js.undefined
+  /**
+    * @default 5
+    */
+  var maxZoom: js.UndefOr[Double] = js.undefined
+  /**
+    * @default 1
+    */
+  var minZoom: js.UndefOr[Double] = js.undefined
+  var onMoveEnd: js.UndefOr[js.Function2[/* event */ js.Any, /* position */ Position, Unit]] = js.undefined
+  var onMoveStart: js.UndefOr[js.Function2[/* event */ js.Any, /* position */ Position, Unit]] = js.undefined
+  var onZoomEnd: js.UndefOr[js.Function2[/* event */ js.Any, /* position */ Position, Unit]] = js.undefined
+  var onZoomStart: js.UndefOr[js.Function2[/* event */ js.Any, /* position */ Position, Unit]] = js.undefined
+  /**
+    * @default 1
+    */
   var zoom: js.UndefOr[Double] = js.undefined
+  /**
+    * @default 0.025
+    */
+  var zoomSensitivity: js.UndefOr[Double] = js.undefined
 }
 
 object ZoomableGroupProps {
   @scala.inline
   def apply(
-    backdrop: Anon_X = null,
+    SVGAttributes: SVGAttributes[SVGGElement] = null,
     center: Point = null,
     disablePanning: js.UndefOr[Boolean] = js.undefined,
-    height: Int | Double = null,
-    onMoveEnd: /* newCenter */ Point => Unit = null,
-    onMoveStart: /* currentCenter */ Point => Unit = null,
-    style: CSSProperties = null,
-    width: Int | Double = null,
-    zoom: Int | Double = null
+    disableZooming: js.UndefOr[Boolean] = js.undefined,
+    maxZoom: Int | Double = null,
+    minZoom: Int | Double = null,
+    onMoveEnd: (/* event */ js.Any, /* position */ Position) => Unit = null,
+    onMoveStart: (/* event */ js.Any, /* position */ Position) => Unit = null,
+    onZoomEnd: (/* event */ js.Any, /* position */ Position) => Unit = null,
+    onZoomStart: (/* event */ js.Any, /* position */ Position) => Unit = null,
+    zoom: Int | Double = null,
+    zoomSensitivity: Int | Double = null
   ): ZoomableGroupProps = {
     val __obj = js.Dynamic.literal()
-    if (backdrop != null) __obj.updateDynamic("backdrop")(backdrop.asInstanceOf[js.Any])
+    if (SVGAttributes != null) js.Dynamic.global.Object.assign(__obj, SVGAttributes)
     if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
     if (!js.isUndefined(disablePanning)) __obj.updateDynamic("disablePanning")(disablePanning.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (onMoveEnd != null) __obj.updateDynamic("onMoveEnd")(js.Any.fromFunction1(onMoveEnd))
-    if (onMoveStart != null) __obj.updateDynamic("onMoveStart")(js.Any.fromFunction1(onMoveStart))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableZooming)) __obj.updateDynamic("disableZooming")(disableZooming.asInstanceOf[js.Any])
+    if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
+    if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
+    if (onMoveEnd != null) __obj.updateDynamic("onMoveEnd")(js.Any.fromFunction2(onMoveEnd))
+    if (onMoveStart != null) __obj.updateDynamic("onMoveStart")(js.Any.fromFunction2(onMoveStart))
+    if (onZoomEnd != null) __obj.updateDynamic("onZoomEnd")(js.Any.fromFunction2(onZoomEnd))
+    if (onZoomStart != null) __obj.updateDynamic("onZoomStart")(js.Any.fromFunction2(onZoomStart))
     if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    if (zoomSensitivity != null) __obj.updateDynamic("zoomSensitivity")(zoomSensitivity.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZoomableGroupProps]
   }
 }

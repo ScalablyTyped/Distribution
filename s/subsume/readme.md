@@ -10,9 +10,9 @@ Embed data in other data and easily extract it when needed
 | ------------------ | :-------------: |
 | Full name          | subsume |
 | Keywords           | subsume, embed, embedded, include, insert, data, string, text, content, compose, parse, extract, encode, decode |
-| # releases         | 1 |
+| # releases         | 4 |
 | # dependents       | 2 |
-| # downloads        | 4428 |
+| # downloads        | 5506 |
 | # stars            | 0 |
 
 ## Links

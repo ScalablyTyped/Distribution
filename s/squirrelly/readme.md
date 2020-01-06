@@ -10,15 +10,15 @@ Simple and powerful template engine that supports helpers, partials, filters, na
 | ------------------ | :-------------: |
 | Full name          | squirrelly |
 | Keywords           | template, engine, squirrelly, html, expressjs, sqrl, pug, handlebars, swig, filters, helpers |
-| # releases         | 33 |
-| # dependents       | 1 |
-| # downloads        | 7007 |
+| # releases         | 38 |
+| # dependents       | 12 |
+| # downloads        | 73721 |
 | # stars            | 1 |
 
 ## Links
-- [Homepage](https://squirrelly.js.org)
-- [Bugs](https://github.com/nebrelbug/squirrelly/issues)
-- [Repository](https://github.com/nebrelbug/squirrelly)
+- [Homepage](https://squirrelly.js.org/)
+- [Bugs](https://github.com/squirrellyjs/squirrelly/issues)
+- [Repository](https://github.com/squirrellyjs/squirrelly)
 - [Npm](https://www.npmjs.com/package/squirrelly)
     
 

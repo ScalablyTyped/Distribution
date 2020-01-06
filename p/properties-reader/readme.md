@@ -10,9 +10,9 @@ Properties file reader for Node.js
 | ------------------ | :-------------: |
 | Full name          | properties-reader |
 | Keywords           | properties, ini, parser |
-| # releases         | 2 |
-| # dependents       | 84 |
-| # downloads        | 2099759 |
+| # releases         | 4 |
+| # dependents       | 110 |
+| # downloads        | 2112217 |
 | # stars            | 1 |
 
 ## Links

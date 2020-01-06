@@ -11,8 +11,8 @@ PouchDB as an HTTP-only package.
 | Full name          | pouchdb-http |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 9738 |
+| # dependents       | 3 |
+| # downloads        | 5257 |
 | # stars            | 1 |
 
 ## Links

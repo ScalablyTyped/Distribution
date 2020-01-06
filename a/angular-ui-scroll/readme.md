@@ -10,9 +10,9 @@ AngularJS infinite scrolling module
 | ------------------ | :-------------: |
 | Full name          | angular-ui-scroll |
 | Keywords           | angular, angularjs, angular.ui, angular-ui, ui.scroll, ui-scroll, angular-ui-scroll, unlimited, infinite, live, perpetual, scroll, scroller, scrolling |
-| # releases         | 11 |
+| # releases         | 7 |
 | # dependents       | 3 |
-| # downloads        | 71698 |
+| # downloads        | 87900 |
 | # stars            | 0 |
 
 ## Links

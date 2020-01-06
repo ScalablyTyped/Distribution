@@ -10,9 +10,9 @@ if your image doesn't exist, fallback onto another provided image.
 | ------------------ | :-------------: |
 | Full name          | react-image-fallback |
 | Keywords           | react, image, fallback, preload, preloader, reactjs |
-| # releases         | 9 |
-| # dependents       | 7 |
-| # downloads        | 190776 |
+| # releases         | 3 |
+| # dependents       | 12 |
+| # downloads        | 316329 |
 | # stars            | 1 |
 
 ## Links

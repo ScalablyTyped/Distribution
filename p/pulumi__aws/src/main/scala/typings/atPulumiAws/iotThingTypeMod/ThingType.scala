@@ -35,6 +35,9 @@ class ThingType protected () extends CustomResource {
     * The name of the thing type.
     */
   val name: Output[String] = js.native
+  /**
+    * , Configuration block that can contain the following properties of the thing type:
+    */
   val properties: Output[js.UndefOr[ThingTypeProperties]] = js.native
 }
 

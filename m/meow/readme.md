@@ -11,9 +11,9 @@ CLI app helper
 | Full name          | meow |
 | Keywords           | cli, bin, util, utility, helper, argv, command, line, meow, cat, kitten, parser, option, flags, input, cmd, console |
 | # releases         | 4 |
-| # dependents       | 3363 |
-| # downloads        | 272320758 |
-| # stars            | 78 |
+| # dependents       | 3906 |
+| # downloads        | 397529097 |
+| # stars            | 79 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/meow#readme)

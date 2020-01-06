@@ -10,9 +10,9 @@ Normalizes data that can be found in package.json files.
 | ------------------ | :-------------: |
 | Full name          | normalize-package-data |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 153 |
-| # downloads        | 264013983 |
+| # releases         | 3 |
+| # dependents       | 205 |
+| # downloads        | 447160715 |
 | # stars            | 7 |
 
 ## Links

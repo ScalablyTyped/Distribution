@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DescribeAccountLimitsAnswer extends js.Object {
   /**
     * The maximum number of groups allowed for your AWS account. The default limit is 200 per AWS Region.
     */
-  var MaxNumberOfAutoScalingGroups: js.UndefOr[typings.awsDashSdk.clientsAutoscalingMod.MaxNumberOfAutoScalingGroups] = js.undefined
+  var MaxNumberOfAutoScalingGroups: js.UndefOr[typings.awsDashSdk.clientsAutoscalingMod.MaxNumberOfAutoScalingGroups] = js.native
   /**
     * The maximum number of launch configurations allowed for your AWS account. The default limit is 200 per AWS Region.
     */
-  var MaxNumberOfLaunchConfigurations: js.UndefOr[typings.awsDashSdk.clientsAutoscalingMod.MaxNumberOfLaunchConfigurations] = js.undefined
+  var MaxNumberOfLaunchConfigurations: js.UndefOr[typings.awsDashSdk.clientsAutoscalingMod.MaxNumberOfLaunchConfigurations] = js.native
   /**
     * The current number of groups for your AWS account.
     */
-  var NumberOfAutoScalingGroups: js.UndefOr[typings.awsDashSdk.clientsAutoscalingMod.NumberOfAutoScalingGroups] = js.undefined
+  var NumberOfAutoScalingGroups: js.UndefOr[typings.awsDashSdk.clientsAutoscalingMod.NumberOfAutoScalingGroups] = js.native
   /**
     * The current number of launch configurations for your AWS account.
     */
-  var NumberOfLaunchConfigurations: js.UndefOr[typings.awsDashSdk.clientsAutoscalingMod.NumberOfLaunchConfigurations] = js.undefined
+  var NumberOfLaunchConfigurations: js.UndefOr[typings.awsDashSdk.clientsAutoscalingMod.NumberOfLaunchConfigurations] = js.native
 }
 
 object DescribeAccountLimitsAnswer {

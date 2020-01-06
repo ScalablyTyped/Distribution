@@ -6,21 +6,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RecorderArgs extends js.Object {
   /**
     * The name of the recorder. Defaults to `default`. Changing it recreates the resource.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * Recording group - see below.
     */
-  val recordingGroup: js.UndefOr[Input[RecorderRecordingGroup]] = js.undefined
+  val recordingGroup: js.UndefOr[Input[RecorderRecordingGroup]] = js.native
   /**
     * Amazon Resource Name (ARN) of the IAM role.
     * used to make read or write requests to the delivery channel and to describe the AWS resources associated with the account.
     * See [AWS Docs](http://docs.aws.amazon.com/config/latest/developerguide/iamrole-permissions.html) for more details.
     */
-  val roleArn: Input[String]
+  val roleArn: Input[String] = js.native
 }
 
 object RecorderArgs {

@@ -5,14 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AnalyticsApplicationReferenceDataSources extends js.Object {
   /**
     * The ARN of the Kinesis Analytics Application.
     */
-  var id: js.UndefOr[Input[String]] = js.undefined
-  var s3: Input[AnalyticsApplicationReferenceDataSourcesS3]
-  var schema: Input[AnalyticsApplicationReferenceDataSourcesSchema]
-  var tableName: Input[String]
+  var id: js.UndefOr[Input[String]] = js.native
+  var s3: Input[AnalyticsApplicationReferenceDataSourcesS3] = js.native
+  var schema: Input[AnalyticsApplicationReferenceDataSourcesSchema] = js.native
+  var tableName: Input[String] = js.native
 }
 
 object AnalyticsApplicationReferenceDataSources {

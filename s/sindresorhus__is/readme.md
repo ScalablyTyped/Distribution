@@ -4,15 +4,15 @@
 Typings are for version 1.2.0
 
 ## Library description:
-Type check values: `is.string('🦄') //=> true`
+Type check values
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @sindresorhus/is |
-| Keywords           | type, types, is, check, checking, validate, validation, utility, util, typeof, instanceof, object, assert, assertion, test, kind, primitive, verify, compare |
-| # releases         | 18 |
-| # dependents       | 53 |
-| # downloads        | 84724901 |
+| Keywords           | type, types, is, check, checking, validate, validation, utility, util, typeof, instanceof, object, assert, assertion, test, kind, primitive, verify, compare, typescript, typeguards, types |
+| # releases         | 15 |
+| # dependents       | 77 |
+| # downloads        | 102427043 |
 | # stars            | 3 |
 
 ## Links

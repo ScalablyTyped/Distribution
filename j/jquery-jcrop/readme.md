@@ -12,7 +12,7 @@ Image cropping plugin for jQuery
 | Keywords           | img, image, form, crop, cropping, cropper |
 | # releases         | 1 |
 | # dependents       | 2 |
-| # downloads        | 208292 |
+| # downloads        | 289903 |
 | # stars            | 0 |
 
 ## Links

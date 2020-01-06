@@ -12,7 +12,7 @@ REST resource generator
 | Keywords           | rest, express, mongo, mongoose, resource, framework |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 1152 |
+| # downloads        | 1125 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ React TinyMCE component
 | ------------------ | :-------------: |
 | Full name          | react-mce |
 | Keywords           | tinymce, react-component |
-| # releases         | 4 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 158056 |
+| # downloads        | 66060 |
 | # stars            | 0 |
 
 ## Links

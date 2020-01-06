@@ -50,25 +50,29 @@ package object clientsSignerMod {
   type SigningParameters = StringDictionary[SigningParameterValue]
   type SigningPlatforms = js.Array[SigningPlatform]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Active
-    - typings.awsDashSdk.awsDashSdkStrings.Canceled
+    - typings.awsDashSdk.awsDashSdkStrings.Active_
+    - typings.awsDashSdk.awsDashSdkStrings.Canceled_
     - java.lang.String
   */
   type SigningProfileStatus = _SigningProfileStatus | java.lang.String
   type SigningProfiles = js.Array[SigningProfile]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.InProgress
-    - typings.awsDashSdk.awsDashSdkStrings.Failed
-    - typings.awsDashSdk.awsDashSdkStrings.Succeeded
+    - typings.awsDashSdk.awsDashSdkStrings.InProgress_
+    - typings.awsDashSdk.awsDashSdkStrings.Failed_
+    - typings.awsDashSdk.awsDashSdkStrings.Succeeded_
     - java.lang.String
   */
   type SigningStatus = _SigningStatus | java.lang.String
   type StatusReason = java.lang.String
   type String = java.lang.String
+  type TagKey = java.lang.String
+  type TagKeyList = js.Array[TagKey]
+  type TagMap = StringDictionary[TagValue]
+  type TagValue = java.lang.String
   type Version = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2017-08-25`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | java.lang.String

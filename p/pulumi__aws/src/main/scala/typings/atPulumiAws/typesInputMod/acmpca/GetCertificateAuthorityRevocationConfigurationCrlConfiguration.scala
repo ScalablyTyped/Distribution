@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetCertificateAuthorityRevocationConfigurationCrlConfiguration extends js.Object {
-  var customCname: js.UndefOr[String] = js.undefined
-  var enabled: js.UndefOr[Boolean] = js.undefined
-  var expirationInDays: js.UndefOr[Double] = js.undefined
-  var s3BucketName: js.UndefOr[String] = js.undefined
+  var customCname: js.UndefOr[String] = js.native
+  var enabled: js.UndefOr[Boolean] = js.native
+  var expirationInDays: js.UndefOr[Double] = js.native
+  var s3BucketName: js.UndefOr[String] = js.native
 }
 
 object GetCertificateAuthorityRevocationConfigurationCrlConfiguration {
@@ -20,10 +21,10 @@ object GetCertificateAuthorityRevocationConfigurationCrlConfiguration {
     s3BucketName: String = null
   ): GetCertificateAuthorityRevocationConfigurationCrlConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (customCname != null) __obj.updateDynamic("customCname")(customCname)
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (customCname != null) __obj.updateDynamic("customCname")(customCname.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     if (expirationInDays != null) __obj.updateDynamic("expirationInDays")(expirationInDays.asInstanceOf[js.Any])
-    if (s3BucketName != null) __obj.updateDynamic("s3BucketName")(s3BucketName)
+    if (s3BucketName != null) __obj.updateDynamic("s3BucketName")(s3BucketName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCertificateAuthorityRevocationConfigurationCrlConfiguration]
   }
 }

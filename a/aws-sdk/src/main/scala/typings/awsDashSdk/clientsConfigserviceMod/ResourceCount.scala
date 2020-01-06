@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ResourceCount extends js.Object {
   /**
     * The number of resources.
     */
-  var count: js.UndefOr[Long] = js.undefined
+  var count: js.UndefOr[Long] = js.native
   /**
     * The resource type (for example, "AWS::EC2::Instance").
     */
-  var resourceType: js.UndefOr[ResourceType] = js.undefined
+  var resourceType: js.UndefOr[ResourceType] = js.native
 }
 
 object ResourceCount {

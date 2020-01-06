@@ -7,23 +7,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ListenerRuleArgs extends js.Object {
   /**
     * An Action block. Action blocks are documented below.
     */
-  val actions: Input[js.Array[Input[ListenerRuleAction]]]
+  val actions: Input[js.Array[Input[ListenerRuleAction]]] = js.native
   /**
-    * A Condition block. Condition blocks are documented below.
+    * A Condition block. Multiple condition blocks of different types can be set and all must be satisfied for the rule to match. Condition blocks are documented below.
     */
-  val conditions: Input[js.Array[Input[ListenerRuleCondition]]]
+  val conditions: Input[js.Array[Input[ListenerRuleCondition]]] = js.native
   /**
     * The ARN of the listener to which to attach the rule.
     */
-  val listenerArn: Input[String]
+  val listenerArn: Input[String] = js.native
   /**
     * The priority for the rule between `1` and `50000`. Leaving it unset will automatically set the rule with next available priority after currently existing highest rule. A listener can't have multiple rules with the same priority.
     */
-  val priority: js.UndefOr[Input[Double]] = js.undefined
+  val priority: js.UndefOr[Input[Double]] = js.native
 }
 
 object ListenerRuleArgs {

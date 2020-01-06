@@ -10,9 +10,9 @@ A Universal JavaScript wrapper for the Unsplash API
 | ------------------ | :-------------: |
 | Full name          | unsplash-js |
 | Keywords           | unsplash, photos, api, images, splash, free |
-| # releases         | 4 |
-| # dependents       | 7 |
-| # downloads        | 246421 |
+| # releases         | 3 |
+| # dependents       | 16 |
+| # downloads        | 459872 |
 | # stars            | 6 |
 
 ## Links

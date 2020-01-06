@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetPatchBaselineForPatchGroupResult extends js.Object {
   /**
     * The ID of the patch baseline that should be used for the patch group.
     */
-  var BaselineId: js.UndefOr[typings.awsDashSdk.clientsSsmMod.BaselineId] = js.undefined
+  var BaselineId: js.UndefOr[typings.awsDashSdk.clientsSsmMod.BaselineId] = js.native
   /**
     * The operating system rule specified for patch groups using the patch baseline.
     */
-  var OperatingSystem: js.UndefOr[typings.awsDashSdk.clientsSsmMod.OperatingSystem] = js.undefined
+  var OperatingSystem: js.UndefOr[typings.awsDashSdk.clientsSsmMod.OperatingSystem] = js.native
   /**
     * The name of the patch group.
     */
-  var PatchGroup: js.UndefOr[typings.awsDashSdk.clientsSsmMod.PatchGroup] = js.undefined
+  var PatchGroup: js.UndefOr[typings.awsDashSdk.clientsSsmMod.PatchGroup] = js.native
 }
 
 object GetPatchBaselineForPatchGroupResult {
@@ -27,9 +28,9 @@ object GetPatchBaselineForPatchGroupResult {
     PatchGroup: PatchGroup = null
   ): GetPatchBaselineForPatchGroupResult = {
     val __obj = js.Dynamic.literal()
-    if (BaselineId != null) __obj.updateDynamic("BaselineId")(BaselineId)
+    if (BaselineId != null) __obj.updateDynamic("BaselineId")(BaselineId.asInstanceOf[js.Any])
     if (OperatingSystem != null) __obj.updateDynamic("OperatingSystem")(OperatingSystem.asInstanceOf[js.Any])
-    if (PatchGroup != null) __obj.updateDynamic("PatchGroup")(PatchGroup)
+    if (PatchGroup != null) __obj.updateDynamic("PatchGroup")(PatchGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPatchBaselineForPatchGroupResult]
   }
 }

@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VaultNotification extends js.Object {
   /**
     * You can configure a vault to publish a notification for `ArchiveRetrievalCompleted` and `InventoryRetrievalCompleted` events.
     */
-  var events: Input[js.Array[Input[String]]]
+  var events: Input[js.Array[Input[String]]] = js.native
   /**
     * The SNS Topic ARN.
     */
-  var snsTopic: Input[String]
+  var snsTopic: Input[String] = js.native
 }
 
 object VaultNotification {

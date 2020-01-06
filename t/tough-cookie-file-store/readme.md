@@ -10,9 +10,9 @@ Another file store for tough-cookie module
 | ------------------ | :-------------: |
 | Full name          | tough-cookie-file-store |
 | Keywords           | cookie, cookies, cookiejar, file, store |
-| # releases         | 2 |
-| # dependents       | 19 |
-| # downloads        | 57779 |
+| # releases         | 0 |
+| # dependents       | 25 |
+| # downloads        | 73558 |
 | # stars            | 0 |
 
 ## Links

@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TrialMinutes extends js.Object {
   /**
     * The number of free trial minutes remaining in the account.
     */
-  var remaining: js.UndefOr[Double] = js.undefined
+  var remaining: js.UndefOr[Double] = js.native
   /**
     * The total number of free trial minutes that the account started with.
     */
-  var total: js.UndefOr[Double] = js.undefined
+  var total: js.UndefOr[Double] = js.native
 }
 
 object TrialMinutes {

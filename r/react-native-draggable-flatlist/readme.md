@@ -10,9 +10,9 @@ A drag-and-drop-enabled FlatList component for React Native
 | ------------------ | :-------------: |
 | Full name          | react-native-draggable-flatlist |
 | Keywords           | react-native, sortable, draggable, flatlist, drag, drop, sort, list |
-| # releases         | 16 |
-| # dependents       | 2 |
-| # downloads        | 33364 |
+| # releases         | 27 |
+| # dependents       | 4 |
+| # downloads        | 210319 |
 | # stars            | 0 |
 
 ## Links

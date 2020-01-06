@@ -11,8 +11,8 @@ Decorator that will attempt to apply focus to the first field with an error upon
 | Full name          | final-form-focus |
 | Keywords           | - |
 | # releases         | 6 |
-| # dependents       | 11 |
-| # downloads        | 542016 |
+| # dependents       | 15 |
+| # downloads        | 1139032 |
 | # stars            | 0 |
 
 ## Links

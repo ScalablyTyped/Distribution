@@ -10,9 +10,9 @@ Launch your command line tool with ease.
 | ------------------ | :-------------: |
 | Full name          | liftoff |
 | Keywords           | command line |
-| # releases         | 5 |
-| # dependents       | 560 |
-| # downloads        | 66268981 |
+| # releases         | 4 |
+| # dependents       | 592 |
+| # downloads        | 87603029 |
 | # stars            | 53 |
 
 ## Links

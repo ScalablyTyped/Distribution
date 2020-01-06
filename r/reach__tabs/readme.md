@@ -10,12 +10,15 @@ Accessible React Tabs Component
 | ------------------ | :-------------: |
 | Full name          | @reach/tabs |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 1 |
-| # downloads        | 17103 |
+| # releases         | 19 |
+| # dependents       | 12 |
+| # downloads        | 333009 |
 | # stars            | 0 |
 
 ## Links
+- [Homepage](https://github.com/reach/reach-ui#readme)
+- [Bugs](https://github.com/reach/reach-ui/issues)
+- [Repository](https://github.com/reach/reach-ui)
 - [Npm](https://www.npmjs.com/package/%40reach%2Ftabs)
     
 

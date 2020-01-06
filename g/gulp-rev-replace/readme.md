@@ -11,8 +11,8 @@ Rewrite occurences of filenames which have been renamed by gulp-rev
 | Full name          | gulp-rev-replace |
 | Keywords           | gulpplugin, rev, revision, version, replace, asset |
 | # releases         | 2 |
-| # dependents       | 131 |
-| # downloads        | 2388270 |
+| # dependents       | 144 |
+| # downloads        | 2098268 |
 | # stars            | 49 |
 
 ## Links

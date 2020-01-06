@@ -11,8 +11,8 @@ A module for generating random strings
 | Full name          | randomstring |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 542 |
-| # downloads        | 7250679 |
+| # dependents       | 657 |
+| # downloads        | 9006961 |
 | # stars            | 24 |
 
 ## Links

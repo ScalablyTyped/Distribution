@@ -12,7 +12,7 @@ Better error handling for GraphQL
 | Keywords           | graphql |
 | # releases         | 1 |
 | # dependents       | 5 |
-| # downloads        | 177675 |
+| # downloads        | 177273 |
 | # stars            | 1 |
 
 ## Links

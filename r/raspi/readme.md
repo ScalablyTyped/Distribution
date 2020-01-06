@@ -10,9 +10,9 @@ Provides access to Raspberry Pi peripherals from Node.js
 | ------------------ | :-------------: |
 | Full name          | raspi |
 | Keywords           | raspberry pi, robotics, nodebots |
-| # releases         | 12 |
-| # dependents       | 6 |
-| # downloads        | 13086 |
+| # releases         | 8 |
+| # dependents       | 7 |
+| # downloads        | 15260 |
 | # stars            | 4 |
 
 ## Links

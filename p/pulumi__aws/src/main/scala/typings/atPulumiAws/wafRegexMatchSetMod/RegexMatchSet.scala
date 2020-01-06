@@ -24,6 +24,10 @@ class RegexMatchSet protected () extends CustomResource {
   def this(name: String, args: RegexMatchSetArgs) = this()
   def this(name: String, args: RegexMatchSetArgs, opts: CustomResourceOptions) = this()
   /**
+    * Amazon Resource Name (ARN)
+    */
+  val arn: Output[String] = js.native
+  /**
     * The name or description of the Regex Match Set.
     */
   val name: Output[String] = js.native

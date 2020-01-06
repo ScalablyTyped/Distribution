@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PutRecordBatchResponseEntry extends js.Object {
   /**
     * The error code for an individual record result.
     */
-  var ErrorCode: js.UndefOr[typings.awsDashSdk.clientsFirehoseMod.ErrorCode] = js.undefined
+  var ErrorCode: js.UndefOr[typings.awsDashSdk.clientsFirehoseMod.ErrorCode] = js.native
   /**
     * The error message for an individual record result.
     */
-  var ErrorMessage: js.UndefOr[typings.awsDashSdk.clientsFirehoseMod.ErrorMessage] = js.undefined
+  var ErrorMessage: js.UndefOr[typings.awsDashSdk.clientsFirehoseMod.ErrorMessage] = js.native
   /**
     * The ID of the record.
     */
-  var RecordId: js.UndefOr[PutResponseRecordId] = js.undefined
+  var RecordId: js.UndefOr[PutResponseRecordId] = js.native
 }
 
 object PutRecordBatchResponseEntry {
@@ -27,9 +28,9 @@ object PutRecordBatchResponseEntry {
     RecordId: PutResponseRecordId = null
   ): PutRecordBatchResponseEntry = {
     val __obj = js.Dynamic.literal()
-    if (ErrorCode != null) __obj.updateDynamic("ErrorCode")(ErrorCode)
-    if (ErrorMessage != null) __obj.updateDynamic("ErrorMessage")(ErrorMessage)
-    if (RecordId != null) __obj.updateDynamic("RecordId")(RecordId)
+    if (ErrorCode != null) __obj.updateDynamic("ErrorCode")(ErrorCode.asInstanceOf[js.Any])
+    if (ErrorMessage != null) __obj.updateDynamic("ErrorMessage")(ErrorMessage.asInstanceOf[js.Any])
+    if (RecordId != null) __obj.updateDynamic("RecordId")(RecordId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutRecordBatchResponseEntry]
   }
 }

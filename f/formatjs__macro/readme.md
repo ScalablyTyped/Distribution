@@ -10,9 +10,9 @@ formatjs-related compiler macros
 | ------------------ | :-------------: |
 | Full name          | @formatjs/macro |
 | Keywords           | intl, i18n, internationalization, locale, localization, globalization, react, react-intl, reactjs, format, formatjs, formatting, translate, translation, macro |
-| # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 42 |
+| # releases         | 9 |
+| # dependents       | 1 |
+| # downloads        | 79760 |
 | # stars            | 0 |
 
 ## Links

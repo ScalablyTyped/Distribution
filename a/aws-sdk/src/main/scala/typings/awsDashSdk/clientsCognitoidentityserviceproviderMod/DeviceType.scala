@@ -4,27 +4,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DeviceType extends js.Object {
   /**
     * The device attributes.
     */
-  var DeviceAttributes: js.UndefOr[AttributeListType] = js.undefined
+  var DeviceAttributes: js.UndefOr[AttributeListType] = js.native
   /**
     * The creation date of the device.
     */
-  var DeviceCreateDate: js.UndefOr[DateType] = js.undefined
+  var DeviceCreateDate: js.UndefOr[DateType] = js.native
   /**
     * The device key.
     */
-  var DeviceKey: js.UndefOr[DeviceKeyType] = js.undefined
+  var DeviceKey: js.UndefOr[DeviceKeyType] = js.native
   /**
     * The date in which the device was last authenticated.
     */
-  var DeviceLastAuthenticatedDate: js.UndefOr[DateType] = js.undefined
+  var DeviceLastAuthenticatedDate: js.UndefOr[DateType] = js.native
   /**
     * The last modified date of the device.
     */
-  var DeviceLastModifiedDate: js.UndefOr[DateType] = js.undefined
+  var DeviceLastModifiedDate: js.UndefOr[DateType] = js.native
 }
 
 object DeviceType {
@@ -37,11 +38,11 @@ object DeviceType {
     DeviceLastModifiedDate: DateType = null
   ): DeviceType = {
     val __obj = js.Dynamic.literal()
-    if (DeviceAttributes != null) __obj.updateDynamic("DeviceAttributes")(DeviceAttributes)
-    if (DeviceCreateDate != null) __obj.updateDynamic("DeviceCreateDate")(DeviceCreateDate)
-    if (DeviceKey != null) __obj.updateDynamic("DeviceKey")(DeviceKey)
-    if (DeviceLastAuthenticatedDate != null) __obj.updateDynamic("DeviceLastAuthenticatedDate")(DeviceLastAuthenticatedDate)
-    if (DeviceLastModifiedDate != null) __obj.updateDynamic("DeviceLastModifiedDate")(DeviceLastModifiedDate)
+    if (DeviceAttributes != null) __obj.updateDynamic("DeviceAttributes")(DeviceAttributes.asInstanceOf[js.Any])
+    if (DeviceCreateDate != null) __obj.updateDynamic("DeviceCreateDate")(DeviceCreateDate.asInstanceOf[js.Any])
+    if (DeviceKey != null) __obj.updateDynamic("DeviceKey")(DeviceKey.asInstanceOf[js.Any])
+    if (DeviceLastAuthenticatedDate != null) __obj.updateDynamic("DeviceLastAuthenticatedDate")(DeviceLastAuthenticatedDate.asInstanceOf[js.Any])
+    if (DeviceLastModifiedDate != null) __obj.updateDynamic("DeviceLastModifiedDate")(DeviceLastModifiedDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceType]
   }
 }

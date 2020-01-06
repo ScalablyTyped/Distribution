@@ -26,15 +26,15 @@ trait Function extends Type {
 @JSImport("ffi", "Function")
 @js.native
 object Function
-  extends Instantiable3[
+  extends Instantiable2[
+      (/* retType */ String) | (/* retType */ Type), 
+      /* argTypes */ js.Array[js.Any], 
+      Function
+    ]
+     with Instantiable3[
       (/* retType */ String) | (/* retType */ Type), 
       /* argTypes */ js.Array[js.Any], 
       /* abi */ Double, 
-      Function
-    ]
-     with Instantiable2[
-      (/* retType */ String) | (/* retType */ Type), 
-      /* argTypes */ js.Array[js.Any], 
       Function
     ] {
   def apply(retType: String, argTypes: js.Array[_]): Function = js.native

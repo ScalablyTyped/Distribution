@@ -4,17 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait HlsEncryption extends js.Object {
   /**
     * A constant initialization vector for encryption (optional).
   When not specified the initialization vector will be periodically rotated.
     */
-  var ConstantInitializationVector: js.UndefOr[__string] = js.undefined
+  var ConstantInitializationVector: js.UndefOr[__string] = js.native
   /**
     * The encryption method to use.
     */
-  var EncryptionMethod: js.UndefOr[typings.awsDashSdk.clientsMediapackagevodMod.EncryptionMethod] = js.undefined
-  var SpekeKeyProvider: typings.awsDashSdk.clientsMediapackagevodMod.SpekeKeyProvider
+  var EncryptionMethod: js.UndefOr[typings.awsDashSdk.clientsMediapackagevodMod.EncryptionMethod] = js.native
+  var SpekeKeyProvider: typings.awsDashSdk.clientsMediapackagevodMod.SpekeKeyProvider = js.native
 }
 
 object HlsEncryption {
@@ -24,8 +25,8 @@ object HlsEncryption {
     ConstantInitializationVector: __string = null,
     EncryptionMethod: EncryptionMethod = null
   ): HlsEncryption = {
-    val __obj = js.Dynamic.literal(SpekeKeyProvider = SpekeKeyProvider)
-    if (ConstantInitializationVector != null) __obj.updateDynamic("ConstantInitializationVector")(ConstantInitializationVector)
+    val __obj = js.Dynamic.literal(SpekeKeyProvider = SpekeKeyProvider.asInstanceOf[js.Any])
+    if (ConstantInitializationVector != null) __obj.updateDynamic("ConstantInitializationVector")(ConstantInitializationVector.asInstanceOf[js.Any])
     if (EncryptionMethod != null) __obj.updateDynamic("EncryptionMethod")(EncryptionMethod.asInstanceOf[js.Any])
     __obj.asInstanceOf[HlsEncryption]
   }

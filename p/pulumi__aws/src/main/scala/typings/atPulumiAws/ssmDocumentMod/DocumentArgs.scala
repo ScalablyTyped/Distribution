@@ -7,31 +7,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DocumentArgs extends js.Object {
   /**
     * The JSON or YAML content of the document.
     */
-  val content: Input[String]
+  val content: Input[String] = js.native
   /**
     * The format of the document. Valid document types include: `JSON` and `YAML`
     */
-  val documentFormat: js.UndefOr[Input[String]] = js.undefined
+  val documentFormat: js.UndefOr[Input[String]] = js.native
   /**
     * The type of the document. Valid document types include: `Command`, `Policy`, `Automation` and `Session`
     */
-  val documentType: Input[String]
+  val documentType: Input[String] = js.native
   /**
     * The name of the document.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * Additional Permissions to attach to the document. See Permissions below for details.
     */
-  val permissions: js.UndefOr[Input[DocumentPermissions]] = js.undefined
+  val permissions: js.UndefOr[Input[DocumentPermissions]] = js.native
   /**
     * A mapping of tags to assign to the object.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object DocumentArgs {

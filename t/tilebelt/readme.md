@@ -10,9 +10,9 @@ simple tile utilities
 | ------------------ | :-------------: |
 | Full name          | tilebelt |
 | Keywords           | tile, map, geojson |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 27 |
-| # downloads        | 58466 |
+| # downloads        | 45809 |
 | # stars            | 2 |
 
 ## Links

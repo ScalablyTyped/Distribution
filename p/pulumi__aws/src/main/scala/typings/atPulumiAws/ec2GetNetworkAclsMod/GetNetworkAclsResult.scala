@@ -6,18 +6,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetNetworkAclsResult extends js.Object {
-  val filters: js.UndefOr[js.Array[GetNetworkAclsFilter]] = js.undefined
+  val filters: js.UndefOr[js.Array[GetNetworkAclsFilter]] = js.native
   /**
     * id is the provider-assigned unique ID for this managed resource.
     */
-  val id: String
+  val id: String = js.native
   /**
     * A list of all the network ACL ids found. This data source will fail if none are found.
     */
-  val ids: js.Array[String]
-  val tags: StringDictionary[js.Any]
-  val vpcId: js.UndefOr[String] = js.undefined
+  val ids: js.Array[String] = js.native
+  val tags: StringDictionary[js.Any] = js.native
+  val vpcId: js.UndefOr[String] = js.native
 }
 
 object GetNetworkAclsResult {
@@ -29,9 +30,9 @@ object GetNetworkAclsResult {
     filters: js.Array[GetNetworkAclsFilter] = null,
     vpcId: String = null
   ): GetNetworkAclsResult = {
-    val __obj = js.Dynamic.literal(id = id, ids = ids, tags = tags)
-    if (filters != null) __obj.updateDynamic("filters")(filters)
-    if (vpcId != null) __obj.updateDynamic("vpcId")(vpcId)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], ids = ids.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
+    if (vpcId != null) __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetNetworkAclsResult]
   }
 }

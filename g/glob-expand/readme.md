@@ -10,8 +10,8 @@ A sync glob / minimatch / RegExp function with a gruntjs -like `expand` of patte
 | Full name          | glob-expand |
 | Keywords           | minimatch, glob, node-glob, gruntjs, grunt, expand, filematch, wildcards, patterns |
 | # releases         | 0 |
-| # dependents       | 34 |
-| # downloads        | 300980 |
+| # dependents       | 35 |
+| # downloads        | 227587 |
 | # stars            | 1 |
 
 ## Links

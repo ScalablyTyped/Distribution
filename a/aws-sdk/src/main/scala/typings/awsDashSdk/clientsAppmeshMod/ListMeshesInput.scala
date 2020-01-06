@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ListMeshesInput extends js.Object {
   /**
     * The maximum number of results returned by ListMeshes in paginated output.
@@ -15,7 +16,7 @@ trait ListMeshesInput extends js.Object {
     ListMeshes returns up to 100 results and a
     nextToken value if applicable.
     */
-  var limit: js.UndefOr[ListMeshesLimit] = js.undefined
+  var limit: js.UndefOr[ListMeshesLimit] = js.native
   /**
     * The nextToken value returned from a previous paginated
     ListMeshes request where limit was used and the results
@@ -26,7 +27,7 @@ trait ListMeshesInput extends js.Object {
     retrieve the next items in a list and not for other programmatic purposes.
     
     */
-  var nextToken: js.UndefOr[String] = js.undefined
+  var nextToken: js.UndefOr[String] = js.native
 }
 
 object ListMeshesInput {
@@ -34,7 +35,7 @@ object ListMeshesInput {
   def apply(limit: Int | Double = null, nextToken: String = null): ListMeshesInput = {
     val __obj = js.Dynamic.literal()
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
+    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListMeshesInput]
   }
 }

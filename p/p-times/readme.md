@@ -11,8 +11,8 @@ Run promise-returning & async functions a specific number of times concurrently
 | Full name          | p-times |
 | Keywords           | promise, times, number, count, loop, iterate, async, await, promises, concurrently, concurrency, parallel, bluebird |
 | # releases         | 3 |
-| # dependents       | 7 |
-| # downloads        | 109268 |
+| # dependents       | 11 |
+| # downloads        | 157896 |
 | # stars            | 0 |
 
 ## Links

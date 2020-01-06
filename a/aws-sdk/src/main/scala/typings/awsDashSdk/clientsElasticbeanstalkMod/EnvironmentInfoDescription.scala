@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EnvironmentInfoDescription extends js.Object {
   /**
     * The Amazon EC2 Instance ID for this information.
     */
-  var Ec2InstanceId: js.UndefOr[typings.awsDashSdk.clientsElasticbeanstalkMod.Ec2InstanceId] = js.undefined
+  var Ec2InstanceId: js.UndefOr[typings.awsDashSdk.clientsElasticbeanstalkMod.Ec2InstanceId] = js.native
   /**
     * The type of information retrieved.
     */
-  var InfoType: js.UndefOr[EnvironmentInfoType] = js.undefined
+  var InfoType: js.UndefOr[EnvironmentInfoType] = js.native
   /**
     * The retrieved information. Currently contains a presigned Amazon S3 URL. The files are deleted after 15 minutes. Anyone in possession of this URL can access the files before they are deleted. Make the URL available only to trusted parties.
     */
-  var Message: js.UndefOr[typings.awsDashSdk.clientsElasticbeanstalkMod.Message] = js.undefined
+  var Message: js.UndefOr[typings.awsDashSdk.clientsElasticbeanstalkMod.Message] = js.native
   /**
     * The time stamp when this information was retrieved.
     */
-  var SampleTimestamp: js.UndefOr[typings.awsDashSdk.clientsElasticbeanstalkMod.SampleTimestamp] = js.undefined
+  var SampleTimestamp: js.UndefOr[typings.awsDashSdk.clientsElasticbeanstalkMod.SampleTimestamp] = js.native
 }
 
 object EnvironmentInfoDescription {
@@ -32,10 +33,10 @@ object EnvironmentInfoDescription {
     SampleTimestamp: SampleTimestamp = null
   ): EnvironmentInfoDescription = {
     val __obj = js.Dynamic.literal()
-    if (Ec2InstanceId != null) __obj.updateDynamic("Ec2InstanceId")(Ec2InstanceId)
+    if (Ec2InstanceId != null) __obj.updateDynamic("Ec2InstanceId")(Ec2InstanceId.asInstanceOf[js.Any])
     if (InfoType != null) __obj.updateDynamic("InfoType")(InfoType.asInstanceOf[js.Any])
-    if (Message != null) __obj.updateDynamic("Message")(Message)
-    if (SampleTimestamp != null) __obj.updateDynamic("SampleTimestamp")(SampleTimestamp)
+    if (Message != null) __obj.updateDynamic("Message")(Message.asInstanceOf[js.Any])
+    if (SampleTimestamp != null) __obj.updateDynamic("SampleTimestamp")(SampleTimestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnvironmentInfoDescription]
   }
 }

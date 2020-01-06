@@ -4,27 +4,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EmailChannelRequest extends js.Object {
   /**
     * The configuration set that you want to apply to email that you send through the channel by using the Amazon Pinpoint Email API.
     */
-  var ConfigurationSet: js.UndefOr[__string] = js.undefined
+  var ConfigurationSet: js.UndefOr[__string] = js.native
   /**
     * Specifies whether to enable the email channel for the application.
     */
-  var Enabled: js.UndefOr[__boolean] = js.undefined
+  var Enabled: js.UndefOr[__boolean] = js.native
   /**
     *  The verified email address that you want to send email from when you send email through the channel.
     */
-  var FromAddress: __string
+  var FromAddress: __string = js.native
   /**
     *  The Amazon Resource Name (ARN) of the identity, verified with Amazon Simple Email Service (Amazon SES), that you want to use when you send email through the channel.
     */
-  var Identity: __string
+  var Identity: __string = js.native
   /**
     *  The ARN of the AWS Identity and Access Management (IAM) role that you want Amazon Pinpoint to use when it submits email-related event data for the channel.
     */
-  var RoleArn: js.UndefOr[__string] = js.undefined
+  var RoleArn: js.UndefOr[__string] = js.native
 }
 
 object EmailChannelRequest {
@@ -36,10 +37,10 @@ object EmailChannelRequest {
     Enabled: js.UndefOr[Boolean] = js.undefined,
     RoleArn: __string = null
   ): EmailChannelRequest = {
-    val __obj = js.Dynamic.literal(FromAddress = FromAddress, Identity = Identity)
-    if (ConfigurationSet != null) __obj.updateDynamic("ConfigurationSet")(ConfigurationSet)
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled)
-    if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn)
+    val __obj = js.Dynamic.literal(FromAddress = FromAddress.asInstanceOf[js.Any], Identity = Identity.asInstanceOf[js.Any])
+    if (ConfigurationSet != null) __obj.updateDynamic("ConfigurationSet")(ConfigurationSet.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.asInstanceOf[js.Any])
+    if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmailChannelRequest]
   }
 }

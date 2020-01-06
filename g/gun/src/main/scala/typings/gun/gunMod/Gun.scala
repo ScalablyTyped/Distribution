@@ -430,7 +430,7 @@ object Gun extends js.Object {
   }
   
   type AccessObject[T] = T | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in keyof T ]: gun.gun.Gun.AlwaysDisallowedType<T[key]> extends never? never : / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias gun.gun.Gun.AccessObject<T[key]> * / object}
+  {[ key in keyof T ]: gun.gun.Gun.AlwaysDisallowedType<T[key]> extends never? never : / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias gun.gun.Gun.AccessObject<T[key]> * / object}
     */ typings.gun.gunStrings.AccessObject with T)
   type AckCallback = js.Function1[/* ack */ Anon_Err | Anon_ErrOk, Unit]
   /** Gun does not accept Array value, so we need extract to make types correct */

@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UpdateDeviceCertificateParams extends js.Object {
   /**
     * The action that you want to apply to the device cerrtificate. The only supported value is DEACTIVATE.
     */
-  var action: DeviceCertificateUpdateAction
+  var action: DeviceCertificateUpdateAction = js.native
 }
 
 object UpdateDeviceCertificateParams {

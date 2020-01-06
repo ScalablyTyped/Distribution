@@ -4,43 +4,44 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ProfileData extends js.Object {
   /**
     * The address of a room profile.
     */
-  var Address: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.Address] = js.undefined
+  var Address: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.Address] = js.native
   /**
     * The distance unit of a room profile.
     */
-  var DistanceUnit: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.DistanceUnit] = js.undefined
+  var DistanceUnit: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.DistanceUnit] = js.native
   /**
     * Retrieves if the profile data is default or not.
     */
-  var IsDefault: js.UndefOr[Boolean] = js.undefined
+  var IsDefault: js.UndefOr[Boolean] = js.native
   /**
-    * The locale of a room profile.
+    * The locale of a room profile. (This is currently available only to a limited preview audience.)
     */
-  var Locale: js.UndefOr[DeviceLocale] = js.undefined
+  var Locale: js.UndefOr[DeviceLocale] = js.native
   /**
     * The ARN of a room profile.
     */
-  var ProfileArn: js.UndefOr[Arn] = js.undefined
+  var ProfileArn: js.UndefOr[Arn] = js.native
   /**
     * The name of a room profile.
     */
-  var ProfileName: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.ProfileName] = js.undefined
+  var ProfileName: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.ProfileName] = js.native
   /**
     * The temperature unit of a room profile.
     */
-  var TemperatureUnit: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.TemperatureUnit] = js.undefined
+  var TemperatureUnit: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.TemperatureUnit] = js.native
   /**
-    * The timezone of a room profile.
+    * The time zone of a room profile.
     */
-  var Timezone: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.Timezone] = js.undefined
+  var Timezone: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.Timezone] = js.native
   /**
     * The wake word of a room profile.
     */
-  var WakeWord: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.WakeWord] = js.undefined
+  var WakeWord: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.WakeWord] = js.native
 }
 
 object ProfileData {
@@ -57,14 +58,14 @@ object ProfileData {
     WakeWord: WakeWord = null
   ): ProfileData = {
     val __obj = js.Dynamic.literal()
-    if (Address != null) __obj.updateDynamic("Address")(Address)
+    if (Address != null) __obj.updateDynamic("Address")(Address.asInstanceOf[js.Any])
     if (DistanceUnit != null) __obj.updateDynamic("DistanceUnit")(DistanceUnit.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsDefault)) __obj.updateDynamic("IsDefault")(IsDefault)
-    if (Locale != null) __obj.updateDynamic("Locale")(Locale)
-    if (ProfileArn != null) __obj.updateDynamic("ProfileArn")(ProfileArn)
-    if (ProfileName != null) __obj.updateDynamic("ProfileName")(ProfileName)
+    if (!js.isUndefined(IsDefault)) __obj.updateDynamic("IsDefault")(IsDefault.asInstanceOf[js.Any])
+    if (Locale != null) __obj.updateDynamic("Locale")(Locale.asInstanceOf[js.Any])
+    if (ProfileArn != null) __obj.updateDynamic("ProfileArn")(ProfileArn.asInstanceOf[js.Any])
+    if (ProfileName != null) __obj.updateDynamic("ProfileName")(ProfileName.asInstanceOf[js.Any])
     if (TemperatureUnit != null) __obj.updateDynamic("TemperatureUnit")(TemperatureUnit.asInstanceOf[js.Any])
-    if (Timezone != null) __obj.updateDynamic("Timezone")(Timezone)
+    if (Timezone != null) __obj.updateDynamic("Timezone")(Timezone.asInstanceOf[js.Any])
     if (WakeWord != null) __obj.updateDynamic("WakeWord")(WakeWord.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProfileData]
   }

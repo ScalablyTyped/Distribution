@@ -4,68 +4,78 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetLicenseConfigurationResponse extends js.Object {
   /**
-    * List of summaries for consumed licenses used by various resources.
+    * Automated discovery information.
     */
-  var ConsumedLicenseSummaryList: js.UndefOr[typings.awsDashSdk.clientsLicensemanagerMod.ConsumedLicenseSummaryList] = js.undefined
+  var AutomatedDiscoveryInformation: js.UndefOr[typings.awsDashSdk.clientsLicensemanagerMod.AutomatedDiscoveryInformation] = js.native
+  /**
+    * Summaries of the licenses consumed by resources.
+    */
+  var ConsumedLicenseSummaryList: js.UndefOr[typings.awsDashSdk.clientsLicensemanagerMod.ConsumedLicenseSummaryList] = js.native
   /**
     * Number of licenses assigned to resources.
     */
-  var ConsumedLicenses: js.UndefOr[BoxLong] = js.undefined
+  var ConsumedLicenses: js.UndefOr[BoxLong] = js.native
   /**
     * Description of the license configuration.
     */
-  var Description: js.UndefOr[String] = js.undefined
+  var Description: js.UndefOr[String] = js.native
   /**
-    * ARN of the license configuration requested.
+    * Amazon Resource Name (ARN) of the license configuration.
     */
-  var LicenseConfigurationArn: js.UndefOr[String] = js.undefined
+  var LicenseConfigurationArn: js.UndefOr[String] = js.native
   /**
     * Unique ID for the license configuration.
     */
-  var LicenseConfigurationId: js.UndefOr[String] = js.undefined
+  var LicenseConfigurationId: js.UndefOr[String] = js.native
   /**
     * Number of available licenses.
     */
-  var LicenseCount: js.UndefOr[BoxLong] = js.undefined
+  var LicenseCount: js.UndefOr[BoxLong] = js.native
   /**
     * Sets the number of available licenses as a hard limit.
     */
-  var LicenseCountHardLimit: js.UndefOr[BoxBoolean] = js.undefined
+  var LicenseCountHardLimit: js.UndefOr[BoxBoolean] = js.native
   /**
-    * Dimension on which the licenses are counted (for example, instances, cores, sockets, or VCPUs).
+    * Dimension on which the licenses are counted.
     */
-  var LicenseCountingType: js.UndefOr[typings.awsDashSdk.clientsLicensemanagerMod.LicenseCountingType] = js.undefined
+  var LicenseCountingType: js.UndefOr[typings.awsDashSdk.clientsLicensemanagerMod.LicenseCountingType] = js.native
   /**
-    * List of flexible text strings designating license rules.
+    * License rules.
     */
-  var LicenseRules: js.UndefOr[StringList] = js.undefined
+  var LicenseRules: js.UndefOr[StringList] = js.native
   /**
-    * List of summaries of managed resources.
+    * Summaries of the managed resources.
     */
-  var ManagedResourceSummaryList: js.UndefOr[typings.awsDashSdk.clientsLicensemanagerMod.ManagedResourceSummaryList] = js.undefined
+  var ManagedResourceSummaryList: js.UndefOr[typings.awsDashSdk.clientsLicensemanagerMod.ManagedResourceSummaryList] = js.native
   /**
     * Name of the license configuration.
     */
-  var Name: js.UndefOr[String] = js.undefined
+  var Name: js.UndefOr[String] = js.native
   /**
-    * Owner account ID for the license configuration.
+    * Account ID of the owner of the license configuration.
     */
-  var OwnerAccountId: js.UndefOr[String] = js.undefined
+  var OwnerAccountId: js.UndefOr[String] = js.native
   /**
-    * License configuration status (active, etc.).
+    * Product information.
     */
-  var Status: js.UndefOr[String] = js.undefined
+  var ProductInformationList: js.UndefOr[typings.awsDashSdk.clientsLicensemanagerMod.ProductInformationList] = js.native
   /**
-    * List of tags attached to the license configuration.
+    * License configuration status.
     */
-  var Tags: js.UndefOr[TagList] = js.undefined
+  var Status: js.UndefOr[String] = js.native
+  /**
+    * Tags for the license configuration.
+    */
+  var Tags: js.UndefOr[TagList] = js.native
 }
 
 object GetLicenseConfigurationResponse {
   @scala.inline
   def apply(
+    AutomatedDiscoveryInformation: AutomatedDiscoveryInformation = null,
     ConsumedLicenseSummaryList: ConsumedLicenseSummaryList = null,
     ConsumedLicenses: Int | Double = null,
     Description: String = null,
@@ -78,24 +88,27 @@ object GetLicenseConfigurationResponse {
     ManagedResourceSummaryList: ManagedResourceSummaryList = null,
     Name: String = null,
     OwnerAccountId: String = null,
+    ProductInformationList: ProductInformationList = null,
     Status: String = null,
     Tags: TagList = null
   ): GetLicenseConfigurationResponse = {
     val __obj = js.Dynamic.literal()
-    if (ConsumedLicenseSummaryList != null) __obj.updateDynamic("ConsumedLicenseSummaryList")(ConsumedLicenseSummaryList)
+    if (AutomatedDiscoveryInformation != null) __obj.updateDynamic("AutomatedDiscoveryInformation")(AutomatedDiscoveryInformation.asInstanceOf[js.Any])
+    if (ConsumedLicenseSummaryList != null) __obj.updateDynamic("ConsumedLicenseSummaryList")(ConsumedLicenseSummaryList.asInstanceOf[js.Any])
     if (ConsumedLicenses != null) __obj.updateDynamic("ConsumedLicenses")(ConsumedLicenses.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description)
-    if (LicenseConfigurationArn != null) __obj.updateDynamic("LicenseConfigurationArn")(LicenseConfigurationArn)
-    if (LicenseConfigurationId != null) __obj.updateDynamic("LicenseConfigurationId")(LicenseConfigurationId)
+    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (LicenseConfigurationArn != null) __obj.updateDynamic("LicenseConfigurationArn")(LicenseConfigurationArn.asInstanceOf[js.Any])
+    if (LicenseConfigurationId != null) __obj.updateDynamic("LicenseConfigurationId")(LicenseConfigurationId.asInstanceOf[js.Any])
     if (LicenseCount != null) __obj.updateDynamic("LicenseCount")(LicenseCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(LicenseCountHardLimit)) __obj.updateDynamic("LicenseCountHardLimit")(LicenseCountHardLimit)
+    if (!js.isUndefined(LicenseCountHardLimit)) __obj.updateDynamic("LicenseCountHardLimit")(LicenseCountHardLimit.asInstanceOf[js.Any])
     if (LicenseCountingType != null) __obj.updateDynamic("LicenseCountingType")(LicenseCountingType.asInstanceOf[js.Any])
-    if (LicenseRules != null) __obj.updateDynamic("LicenseRules")(LicenseRules)
-    if (ManagedResourceSummaryList != null) __obj.updateDynamic("ManagedResourceSummaryList")(ManagedResourceSummaryList)
-    if (Name != null) __obj.updateDynamic("Name")(Name)
-    if (OwnerAccountId != null) __obj.updateDynamic("OwnerAccountId")(OwnerAccountId)
-    if (Status != null) __obj.updateDynamic("Status")(Status)
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
+    if (LicenseRules != null) __obj.updateDynamic("LicenseRules")(LicenseRules.asInstanceOf[js.Any])
+    if (ManagedResourceSummaryList != null) __obj.updateDynamic("ManagedResourceSummaryList")(ManagedResourceSummaryList.asInstanceOf[js.Any])
+    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
+    if (OwnerAccountId != null) __obj.updateDynamic("OwnerAccountId")(OwnerAccountId.asInstanceOf[js.Any])
+    if (ProductInformationList != null) __obj.updateDynamic("ProductInformationList")(ProductInformationList.asInstanceOf[js.Any])
+    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetLicenseConfigurationResponse]
   }
 }

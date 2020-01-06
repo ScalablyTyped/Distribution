@@ -8,55 +8,56 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BudgetArgs extends js.Object {
   /**
     * The ID of the target account for budget. Will use current user's accountId by default if omitted.
     */
-  val accountId: js.UndefOr[Input[String]] = js.undefined
+  val accountId: js.UndefOr[Input[String]] = js.native
   /**
     * Whether this budget tracks monetary cost or usage.
     */
-  val budgetType: Input[String]
+  val budgetType: Input[String] = js.native
   /**
     * Map of CostFilters key/value pairs to apply to the budget.
     */
-  val costFilters: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val costFilters: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * Object containing CostTypes The types of cost included in a budget, such as tax and subscriptions..
     */
-  val costTypes: js.UndefOr[Input[BudgetCostTypes]] = js.undefined
+  val costTypes: js.UndefOr[Input[BudgetCostTypes]] = js.native
   /**
     * The amount of cost or usage being measured for a budget.
     */
-  val limitAmount: Input[String]
+  val limitAmount: Input[String] = js.native
   /**
     * The unit of measurement used for the budget forecast, actual spend, or budget threshold, such as dollars or GB. See [Spend](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/data-type-spend.html) documentation.
     */
-  val limitUnit: Input[String]
+  val limitUnit: Input[String] = js.native
   /**
     * The name of a budget. Unique within accounts.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * The prefix of the name of a budget. Unique within accounts.
     */
-  val namePrefix: js.UndefOr[Input[String]] = js.undefined
+  val namePrefix: js.UndefOr[Input[String]] = js.native
   /**
     * Object containing Budget Notifications. Can be used multiple times to define more than one budget notification
     */
-  val notifications: js.UndefOr[Input[js.Array[Input[BudgetNotification]]]] = js.undefined
+  val notifications: js.UndefOr[Input[js.Array[Input[BudgetNotification]]]] = js.native
   /**
     * The end of the time period covered by the budget. There are no restrictions on the end date. Format: `2017-01-01_12:00`.
     */
-  val timePeriodEnd: js.UndefOr[Input[String]] = js.undefined
+  val timePeriodEnd: js.UndefOr[Input[String]] = js.native
   /**
     * The start of the time period covered by the budget. The start date must come before the end date. Format: `2017-01-01_12:00`.
     */
-  val timePeriodStart: Input[String]
+  val timePeriodStart: Input[String] = js.native
   /**
     * The length of time until a budget resets the actual and forecasted spend. Valid values: `MONTHLY`, `QUARTERLY`, `ANNUALLY`.
     */
-  val timeUnit: Input[String]
+  val timeUnit: Input[String] = js.native
 }
 
 object BudgetArgs {

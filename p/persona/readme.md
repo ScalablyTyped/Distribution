@@ -9,9 +9,9 @@ The official web client library for the Persona API.
 | ------------------ | :-------------: |
 | Full name          | persona |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 1185 |
+| # releases         | 12 |
+| # dependents       | 1 |
+| # downloads        | 2184 |
 | # stars            | 0 |
 
 ## Links

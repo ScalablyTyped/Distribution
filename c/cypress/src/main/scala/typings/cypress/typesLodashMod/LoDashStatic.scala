@@ -721,11 +721,11 @@ trait LoDashStatic extends js.Object {
     */
   def at[T](`object`: List[T], props: PropertyPath*): js.Array[T] = js.native
   def at[T](`object`: NumericDictionary[T], props: PropertyPath*): js.Array[T] = js.native
-  def at[T /* <: js.Object */](props: Many[String]*): js.Array[
+  def at[T](props: PropertyPath*): js.Array[T] = js.native
+  @JSName("at")
+  def at_T_Object[T /* <: js.Object */](props: Many[String]*): js.Array[
     /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
   ] = js.native
-  @JSName("at")
-  def at_T[T](props: PropertyPath*): js.Array[T] = js.native
   /**
     * Attempts to invoke func, returning either the result or the caught error object. Any additional arguments
     * are provided to func when it’s invoked.
@@ -984,7 +984,7 @@ trait LoDashStatic extends js.Object {
     * @return Returns the new function.
     */
   def constant[T](value: T): js.Function0[T] = js.native
-  def countBy[T](): Dictionary[Double] = js.native
+  def countBy[T /* <: js.Object */](): Dictionary[Double] = js.native
   /**
     * @see _.countBy
     */
@@ -995,8 +995,18 @@ trait LoDashStatic extends js.Object {
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
     ]
   ): Dictionary[Double] = js.native
-  def countBy[T](collection: js.UndefOr[scala.Nothing], iteratee: ValueIteratee[T]): Dictionary[Double] = js.native
-  def countBy[T](collection: Null, iteratee: ValueIteratee[T]): Dictionary[Double] = js.native
+  def countBy[T /* <: js.Object */](
+    collection: js.UndefOr[scala.Nothing],
+    iteratee: ValueIteratee[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
+  ): Dictionary[Double] = js.native
+  def countBy[T /* <: js.Object */](
+    collection: Null,
+    iteratee: ValueIteratee[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
+  ): Dictionary[Double] = js.native
   /**
     * Creates an object composed of keys generated from the results of running each element of collection through
     * iteratee. The corresponding value of each key is the number of times the key was returned by iteratee. The
@@ -1009,21 +1019,11 @@ trait LoDashStatic extends js.Object {
   def countBy[T](collection: List[T]): Dictionary[Double] = js.native
   def countBy[T](collection: List[T], iteratee: ValueIteratee[T]): Dictionary[Double] = js.native
   @JSName("countBy")
-  def countBy_T_Object[T /* <: js.Object */](): Dictionary[Double] = js.native
+  def countBy_T[T](): Dictionary[Double] = js.native
   @JSName("countBy")
-  def countBy_T_Object[T /* <: js.Object */](
-    collection: js.UndefOr[scala.Nothing],
-    iteratee: ValueIteratee[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-    ]
-  ): Dictionary[Double] = js.native
+  def countBy_T[T](collection: js.UndefOr[scala.Nothing], iteratee: ValueIteratee[T]): Dictionary[Double] = js.native
   @JSName("countBy")
-  def countBy_T_Object[T /* <: js.Object */](
-    collection: Null,
-    iteratee: ValueIteratee[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-    ]
-  ): Dictionary[Double] = js.native
+  def countBy_T[T](collection: Null, iteratee: ValueIteratee[T]): Dictionary[Double] = js.native
   /**
     * Creates an object that inherits from the given prototype object. If a properties object is provided its own
     * enumerable properties are assigned to the created object.
@@ -1531,7 +1531,7 @@ trait LoDashStatic extends js.Object {
     */
   def dropWhile[T](array: List[T]): js.Array[T] = js.native
   def dropWhile[T](array: List[T], predicate: ListIteratee[T]): js.Array[T] = js.native
-  def each(): Null = js.native
+  def each(): js.UndefOr[scala.Nothing] = js.native
   def each(collection: js.UndefOr[scala.Nothing], iteratee: StringIterator[_]): js.UndefOr[scala.Nothing] = js.native
   def each(collection: String): String = js.native
   def each(collection: String, iteratee: StringIterator[_]): String = js.native
@@ -1542,7 +1542,7 @@ trait LoDashStatic extends js.Object {
   def each[T](collection: js.Array[T], iteratee: ArrayIterator[T, _]): js.Array[T] = js.native
   def each[T](collection: List[T]): List[T] = js.native
   def each[T](collection: List[T], iteratee: ListIterator[T, _]): List[T] = js.native
-  def eachRight(): Null = js.native
+  def eachRight(): js.UndefOr[scala.Nothing] = js.native
   def eachRight(collection: js.UndefOr[scala.Nothing], iteratee: StringIterator[_]): js.UndefOr[scala.Nothing] = js.native
   def eachRight(collection: String): String = js.native
   def eachRight(collection: String, iteratee: StringIterator[_]): String = js.native
@@ -1554,6 +1554,8 @@ trait LoDashStatic extends js.Object {
   def eachRight[T](collection: List[T]): List[T] = js.native
   def eachRight[T](collection: List[T], iteratee: ListIterator[T, _]): List[T] = js.native
   @JSName("eachRight")
+  def eachRight_Null(): Null = js.native
+  @JSName("eachRight")
   def `eachRight_TTArray_UnionArrayTNulljs.undefined_TArray`[T, TArray /* <: js.UndefOr[js.Array[T] | Null] */](collection: TArray with (js.UndefOr[js.Array[T] | Null])): TArray = js.native
   @JSName("eachRight")
   def `eachRight_TTArray_UnionArrayTNulljs.undefined_TArray`[T, TArray /* <: js.UndefOr[js.Array[T] | Null] */](collection: TArray with (js.UndefOr[js.Array[T] | Null]), iteratee: ArrayIterator[T, _]): TArray = js.native
@@ -1562,17 +1564,17 @@ trait LoDashStatic extends js.Object {
   @JSName("eachRight")
   def `eachRight_TTList_UnionListTNulljs.undefined_TList`[T, TList /* <: js.UndefOr[List[T] | Null] */](collection: TList with (js.UndefOr[List[T] | Null]), iteratee: ListIterator[T, _]): TList = js.native
   @JSName("eachRight")
+  def eachRight_T_Object[T /* <: js.Object */](): js.UndefOr[T | Null] = js.native
+  @JSName("eachRight")
   def eachRight_T_Object[T /* <: js.Object */](collection: js.UndefOr[scala.Nothing], iteratee: ObjectIterator[T, _]): js.UndefOr[T | Null] = js.native
   @JSName("eachRight")
   def eachRight_T_Object_T[T /* <: js.Object */](collection: T): T = js.native
   @JSName("eachRight")
   def eachRight_T_Object_T[T /* <: js.Object */](collection: T, iteratee: ObjectIterator[T, _]): T = js.native
   @JSName("eachRight")
-  def eachRight_T_Object_Union[T /* <: js.Object */](): js.UndefOr[T | Null] = js.native
-  @JSName("eachRight")
   def eachRight_T_Object_Union[T /* <: js.Object */](collection: Null, iteratee: ObjectIterator[T, _]): js.UndefOr[T | Null] = js.native
-  @JSName("eachRight")
-  def eachRight_Union(): js.UndefOr[scala.Nothing] = js.native
+  @JSName("each")
+  def each_Null(): Null = js.native
   @JSName("each")
   def `each_TTArray_UnionArrayTNulljs.undefined_TArray`[T, TArray /* <: js.UndefOr[js.Array[T] | Null] */](collection: TArray with (js.UndefOr[js.Array[T] | Null])): TArray = js.native
   @JSName("each")
@@ -1582,17 +1584,15 @@ trait LoDashStatic extends js.Object {
   @JSName("each")
   def `each_TTList_UnionListTNulljs.undefined_TList`[T, TList /* <: js.UndefOr[List[T] | Null] */](collection: TList with (js.UndefOr[List[T] | Null]), iteratee: ListIterator[T, _]): TList = js.native
   @JSName("each")
+  def each_T_Object[T /* <: js.Object */](): js.UndefOr[T | Null] = js.native
+  @JSName("each")
   def each_T_Object[T /* <: js.Object */](collection: js.UndefOr[scala.Nothing], iteratee: ObjectIterator[T, _]): js.UndefOr[T | Null] = js.native
   @JSName("each")
   def each_T_Object_T[T /* <: js.Object */](collection: T): T = js.native
   @JSName("each")
   def each_T_Object_T[T /* <: js.Object */](collection: T, iteratee: ObjectIterator[T, _]): T = js.native
   @JSName("each")
-  def each_T_Object_Union[T /* <: js.Object */](): js.UndefOr[T | Null] = js.native
-  @JSName("each")
   def each_T_Object_Union[T /* <: js.Object */](collection: Null, iteratee: ObjectIterator[T, _]): js.UndefOr[T | Null] = js.native
-  @JSName("each")
-  def each_Union(): js.UndefOr[scala.Nothing] = js.native
   /**
     * Checks if string ends with the given target string.
     *
@@ -1686,14 +1686,14 @@ trait LoDashStatic extends js.Object {
     */
   def escapeRegExp(): String = js.native
   def escapeRegExp(string: String): String = js.native
-  def every[T /* <: js.Object */](): Boolean = js.native
+  def every[T](): Boolean = js.native
   /**
     * @see _.every
     */
   def every[T /* <: js.Object */](collection: T): Boolean = js.native
   def every[T /* <: js.Object */](collection: T, predicate: ObjectIterateeCustom[T, Boolean]): Boolean = js.native
-  def every[T /* <: js.Object */](collection: js.UndefOr[scala.Nothing], predicate: ObjectIterateeCustom[T, Boolean]): Boolean = js.native
-  def every[T /* <: js.Object */](collection: Null, predicate: ObjectIterateeCustom[T, Boolean]): Boolean = js.native
+  def every[T](collection: js.UndefOr[scala.Nothing], predicate: ListIterateeCustom[T, Boolean]): Boolean = js.native
+  def every[T](collection: Null, predicate: ListIterateeCustom[T, Boolean]): Boolean = js.native
   /**
     * Checks if predicate returns truthy for all elements of collection. Iteration is stopped once predicate
     * returns falsey. The predicate is invoked with three arguments: (value, index|key, collection).
@@ -1705,11 +1705,11 @@ trait LoDashStatic extends js.Object {
   def every[T](collection: List[T]): Boolean = js.native
   def every[T](collection: List[T], predicate: ListIterateeCustom[T, Boolean]): Boolean = js.native
   @JSName("every")
-  def every_T[T](): Boolean = js.native
+  def every_T_Object[T /* <: js.Object */](): Boolean = js.native
   @JSName("every")
-  def every_T[T](collection: js.UndefOr[scala.Nothing], predicate: ListIterateeCustom[T, Boolean]): Boolean = js.native
+  def every_T_Object[T /* <: js.Object */](collection: js.UndefOr[scala.Nothing], predicate: ObjectIterateeCustom[T, Boolean]): Boolean = js.native
   @JSName("every")
-  def every_T[T](collection: Null, predicate: ListIterateeCustom[T, Boolean]): Boolean = js.native
+  def every_T_Object[T /* <: js.Object */](collection: Null, predicate: ObjectIterateeCustom[T, Boolean]): Boolean = js.native
   /**
     * @see _.extend
     */
@@ -1789,12 +1789,12 @@ trait LoDashStatic extends js.Object {
     * @see _.fill
     */
   def fill[T](array: List[_], value: T): List[T] = js.native
-  def fill[T, U](array: js.UndefOr[scala.Nothing], value: T, start: Double): List[T | U] = js.native
-  def fill[T, U](array: js.UndefOr[scala.Nothing], value: T, start: Double, end: Double): List[T | U] = js.native
+  def fill[T, U](array: js.UndefOr[scala.Nothing], value: T, start: Double): js.Array[T | U] = js.native
+  def fill[T, U](array: js.UndefOr[scala.Nothing], value: T, start: Double, end: Double): js.Array[T | U] = js.native
   def fill[T, U](array: js.Array[U], value: T, start: Double): js.Array[T | U] = js.native
   def fill[T, U](array: js.Array[U], value: T, start: Double, end: Double): js.Array[T | U] = js.native
-  def fill[T, U](array: Null, value: T, start: Double): List[T | U] = js.native
-  def fill[T, U](array: Null, value: T, start: Double, end: Double): List[T | U] = js.native
+  def fill[T, U](array: Null, value: T, start: Double): js.Array[T | U] = js.native
+  def fill[T, U](array: Null, value: T, start: Double, end: Double): js.Array[T | U] = js.native
   def fill[T, U](array: List[U], value: T, start: Double): List[T | U] = js.native
   def fill[T, U](array: List[U], value: T, start: Double, end: Double): List[T | U] = js.native
   @JSName("fill")
@@ -1814,15 +1814,15 @@ trait LoDashStatic extends js.Object {
   @JSName("fill")
   def fill_TU_Array[T, U](array: js.UndefOr[scala.Nothing], value: T): js.Array[T | U] = js.native
   @JSName("fill")
-  def fill_TU_Array[T, U](array: js.UndefOr[scala.Nothing], value: T, start: Double): js.Array[T | U] = js.native
-  @JSName("fill")
-  def fill_TU_Array[T, U](array: js.UndefOr[scala.Nothing], value: T, start: Double, end: Double): js.Array[T | U] = js.native
-  @JSName("fill")
   def fill_TU_Array[T, U](array: Null, value: T): js.Array[T | U] = js.native
   @JSName("fill")
-  def fill_TU_Array[T, U](array: Null, value: T, start: Double): js.Array[T | U] = js.native
+  def fill_TU_List[T, U](array: js.UndefOr[scala.Nothing], value: T, start: Double): List[T | U] = js.native
   @JSName("fill")
-  def fill_TU_Array[T, U](array: Null, value: T, start: Double, end: Double): js.Array[T | U] = js.native
+  def fill_TU_List[T, U](array: js.UndefOr[scala.Nothing], value: T, start: Double, end: Double): List[T | U] = js.native
+  @JSName("fill")
+  def fill_TU_List[T, U](array: Null, value: T, start: Double): List[T | U] = js.native
+  @JSName("fill")
+  def fill_TU_List[T, U](array: Null, value: T, start: Double, end: Double): List[T | U] = js.native
   @JSName("fill")
   def fill_T_Array[T](array: js.UndefOr[scala.Nothing], value: T): js.Array[T] = js.native
   @JSName("fill")
@@ -1849,12 +1849,8 @@ trait LoDashStatic extends js.Object {
   def filter[T /* <: js.Object */](collection: T, predicate: ObjectIterateeCustom[T, Boolean]): js.Array[
     /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
   ] = js.native
-  def filter[T /* <: js.Object */](collection: js.UndefOr[scala.Nothing], predicate: ObjectIterateeCustom[T, Boolean]): js.Array[
-    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-  ] = js.native
-  def filter[T /* <: js.Object */](collection: Null, predicate: ObjectIterateeCustom[T, Boolean]): js.Array[
-    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-  ] = js.native
+  def filter[T](collection: js.UndefOr[scala.Nothing], predicate: ListIterateeCustom[T, Boolean]): js.Array[T] = js.native
+  def filter[T](collection: Null, predicate: ListIterateeCustom[T, Boolean]): js.Array[T] = js.native
   /**
     * @see _.filter
     */
@@ -1871,15 +1867,19 @@ trait LoDashStatic extends js.Object {
   @JSName("filter")
   def filter_T[T](): js.Array[T] = js.native
   @JSName("filter")
-  def filter_T[T](collection: js.UndefOr[scala.Nothing], predicate: ListIterateeCustom[T, Boolean]): js.Array[T] = js.native
-  @JSName("filter")
-  def filter_T[T](collection: Null, predicate: ListIterateeCustom[T, Boolean]): js.Array[T] = js.native
-  @JSName("filter")
   def filter_TS_T[T, S /* <: T */](collection: js.UndefOr[scala.Nothing], predicate: ListIteratorTypeGuard[T, S]): js.Array[S] = js.native
   @JSName("filter")
   def filter_TS_T[T, S /* <: T */](collection: Null, predicate: ListIteratorTypeGuard[T, S]): js.Array[S] = js.native
   @JSName("filter")
   def filter_T_Object[T /* <: js.Object */](): js.Array[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+  ] = js.native
+  @JSName("filter")
+  def filter_T_Object[T /* <: js.Object */](collection: js.UndefOr[scala.Nothing], predicate: ObjectIterateeCustom[T, Boolean]): js.Array[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+  ] = js.native
+  @JSName("filter")
+  def filter_T_Object[T /* <: js.Object */](collection: Null, predicate: ObjectIterateeCustom[T, Boolean]): js.Array[
     /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
   ] = js.native
   @JSName("filter")
@@ -1928,10 +1928,10 @@ trait LoDashStatic extends js.Object {
     */
   def find[T /* <: js.Object */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any */](collection: T, predicate: ObjectIteratorTypeGuard[T, S]): js.UndefOr[S] = js.native
   def find[T /* <: js.Object */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any */](collection: T, predicate: ObjectIteratorTypeGuard[T, S], fromIndex: Double): js.UndefOr[S] = js.native
-  def find[T, S /* <: T */](collection: js.UndefOr[scala.Nothing], predicate: ListIteratorTypeGuard[T, S]): js.UndefOr[S] = js.native
-  def find[T, S /* <: T */](collection: js.UndefOr[scala.Nothing], predicate: ListIteratorTypeGuard[T, S], fromIndex: Double): js.UndefOr[S] = js.native
-  def find[T, S /* <: T */](collection: Null, predicate: ListIteratorTypeGuard[T, S]): js.UndefOr[S] = js.native
-  def find[T, S /* <: T */](collection: Null, predicate: ListIteratorTypeGuard[T, S], fromIndex: Double): js.UndefOr[S] = js.native
+  def find[T /* <: js.Object */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any */](collection: js.UndefOr[scala.Nothing], predicate: ObjectIteratorTypeGuard[T, S]): js.UndefOr[S] = js.native
+  def find[T /* <: js.Object */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any */](collection: js.UndefOr[scala.Nothing], predicate: ObjectIteratorTypeGuard[T, S], fromIndex: Double): js.UndefOr[S] = js.native
+  def find[T /* <: js.Object */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any */](collection: Null, predicate: ObjectIteratorTypeGuard[T, S]): js.UndefOr[S] = js.native
+  def find[T /* <: js.Object */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any */](collection: Null, predicate: ObjectIteratorTypeGuard[T, S], fromIndex: Double): js.UndefOr[S] = js.native
   /**
     * Iterates over elements of collection, returning the first element predicate returns truthy for.
     * The predicate is invoked with three arguments: (value, index|key, collection).
@@ -2015,10 +2015,10 @@ trait LoDashStatic extends js.Object {
     */
   def findLast[T /* <: js.Object */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any */](collection: T, predicate: ObjectIteratorTypeGuard[T, S]): js.UndefOr[S] = js.native
   def findLast[T /* <: js.Object */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any */](collection: T, predicate: ObjectIteratorTypeGuard[T, S], fromIndex: Double): js.UndefOr[S] = js.native
-  def findLast[T, S /* <: T */](collection: js.UndefOr[scala.Nothing], predicate: ListIteratorTypeGuard[T, S]): js.UndefOr[S] = js.native
-  def findLast[T, S /* <: T */](collection: js.UndefOr[scala.Nothing], predicate: ListIteratorTypeGuard[T, S], fromIndex: Double): js.UndefOr[S] = js.native
-  def findLast[T, S /* <: T */](collection: Null, predicate: ListIteratorTypeGuard[T, S]): js.UndefOr[S] = js.native
-  def findLast[T, S /* <: T */](collection: Null, predicate: ListIteratorTypeGuard[T, S], fromIndex: Double): js.UndefOr[S] = js.native
+  def findLast[T /* <: js.Object */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any */](collection: js.UndefOr[scala.Nothing], predicate: ObjectIteratorTypeGuard[T, S]): js.UndefOr[S] = js.native
+  def findLast[T /* <: js.Object */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any */](collection: js.UndefOr[scala.Nothing], predicate: ObjectIteratorTypeGuard[T, S], fromIndex: Double): js.UndefOr[S] = js.native
+  def findLast[T /* <: js.Object */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any */](collection: Null, predicate: ObjectIteratorTypeGuard[T, S]): js.UndefOr[S] = js.native
+  def findLast[T /* <: js.Object */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any */](collection: Null, predicate: ObjectIteratorTypeGuard[T, S], fromIndex: Double): js.UndefOr[S] = js.native
   /**
     * This method is like _.find except that it iterates over elements of a collection from
     * right to left.
@@ -2072,13 +2072,13 @@ trait LoDashStatic extends js.Object {
   @JSName("findLast")
   def findLast_T[T](collection: Null, predicate: ListIterateeCustom[T, Boolean], fromIndex: Double): js.UndefOr[T] = js.native
   @JSName("findLast")
-  def findLast_T_ObjectS_Any[T /* <: js.Object */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any */](collection: js.UndefOr[scala.Nothing], predicate: ObjectIteratorTypeGuard[T, S]): js.UndefOr[S] = js.native
+  def findLast_TS_T[T, S /* <: T */](collection: js.UndefOr[scala.Nothing], predicate: ListIteratorTypeGuard[T, S]): js.UndefOr[S] = js.native
   @JSName("findLast")
-  def findLast_T_ObjectS_Any[T /* <: js.Object */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any */](collection: js.UndefOr[scala.Nothing], predicate: ObjectIteratorTypeGuard[T, S], fromIndex: Double): js.UndefOr[S] = js.native
+  def findLast_TS_T[T, S /* <: T */](collection: js.UndefOr[scala.Nothing], predicate: ListIteratorTypeGuard[T, S], fromIndex: Double): js.UndefOr[S] = js.native
   @JSName("findLast")
-  def findLast_T_ObjectS_Any[T /* <: js.Object */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any */](collection: Null, predicate: ObjectIteratorTypeGuard[T, S]): js.UndefOr[S] = js.native
+  def findLast_TS_T[T, S /* <: T */](collection: Null, predicate: ListIteratorTypeGuard[T, S]): js.UndefOr[S] = js.native
   @JSName("findLast")
-  def findLast_T_ObjectS_Any[T /* <: js.Object */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any */](collection: Null, predicate: ObjectIteratorTypeGuard[T, S], fromIndex: Double): js.UndefOr[S] = js.native
+  def findLast_TS_T[T, S /* <: T */](collection: Null, predicate: ListIteratorTypeGuard[T, S], fromIndex: Double): js.UndefOr[S] = js.native
   @JSName("find")
   def find_T[T](): js.UndefOr[T] = js.native
   @JSName("find")
@@ -2094,13 +2094,13 @@ trait LoDashStatic extends js.Object {
   @JSName("find")
   def find_T[T](collection: Null, predicate: ListIterateeCustom[T, Boolean], fromIndex: Double): js.UndefOr[T] = js.native
   @JSName("find")
-  def find_T_ObjectS_Any[T /* <: js.Object */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any */](collection: js.UndefOr[scala.Nothing], predicate: ObjectIteratorTypeGuard[T, S]): js.UndefOr[S] = js.native
+  def find_TS_T[T, S /* <: T */](collection: js.UndefOr[scala.Nothing], predicate: ListIteratorTypeGuard[T, S]): js.UndefOr[S] = js.native
   @JSName("find")
-  def find_T_ObjectS_Any[T /* <: js.Object */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any */](collection: js.UndefOr[scala.Nothing], predicate: ObjectIteratorTypeGuard[T, S], fromIndex: Double): js.UndefOr[S] = js.native
+  def find_TS_T[T, S /* <: T */](collection: js.UndefOr[scala.Nothing], predicate: ListIteratorTypeGuard[T, S], fromIndex: Double): js.UndefOr[S] = js.native
   @JSName("find")
-  def find_T_ObjectS_Any[T /* <: js.Object */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any */](collection: Null, predicate: ObjectIteratorTypeGuard[T, S]): js.UndefOr[S] = js.native
+  def find_TS_T[T, S /* <: T */](collection: Null, predicate: ListIteratorTypeGuard[T, S]): js.UndefOr[S] = js.native
   @JSName("find")
-  def find_T_ObjectS_Any[T /* <: js.Object */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any */](collection: Null, predicate: ObjectIteratorTypeGuard[T, S], fromIndex: Double): js.UndefOr[S] = js.native
+  def find_TS_T[T, S /* <: T */](collection: Null, predicate: ListIteratorTypeGuard[T, S], fromIndex: Double): js.UndefOr[S] = js.native
   def first[T](): js.UndefOr[T] = js.native
   def first[T](array: List[T]): js.UndefOr[T] = js.native
   def flatMap(): js.Array[_] = js.native
@@ -2885,7 +2885,7 @@ trait LoDashStatic extends js.Object {
     f2: js.Function1[/* a */ R1, R2],
     f1: js.Function1[/* a1 */ A1, R1]
   ): js.Function1[/* a1 */ A1, R7] = js.native
-  def forEach(): Null = js.native
+  def forEach(): js.UndefOr[scala.Nothing] = js.native
   def forEach(collection: js.UndefOr[scala.Nothing], iteratee: StringIterator[_]): js.UndefOr[scala.Nothing] = js.native
   /**
     * @see _.forEach
@@ -2917,7 +2917,7 @@ trait LoDashStatic extends js.Object {
     */
   def forEach[T](collection: List[T]): List[T] = js.native
   def forEach[T](collection: List[T], iteratee: ListIterator[T, _]): List[T] = js.native
-  def forEachRight(): Null = js.native
+  def forEachRight(): js.UndefOr[scala.Nothing] = js.native
   def forEachRight(collection: js.UndefOr[scala.Nothing], iteratee: StringIterator[_]): js.UndefOr[scala.Nothing] = js.native
   /**
     * @see _.forEachRight
@@ -2945,6 +2945,8 @@ trait LoDashStatic extends js.Object {
     */
   def forEachRight[T](collection: List[T]): List[T] = js.native
   def forEachRight[T](collection: List[T], iteratee: ListIterator[T, _]): List[T] = js.native
+  @JSName("forEachRight")
+  def forEachRight_Null(): Null = js.native
   /**
     * @see _.forEachRight
     */
@@ -2960,6 +2962,8 @@ trait LoDashStatic extends js.Object {
   @JSName("forEachRight")
   def `forEachRight_TTList_UnionListTNulljs.undefined_TList`[T, TList /* <: js.UndefOr[List[T] | Null] */](collection: TList with (js.UndefOr[List[T] | Null]), iteratee: ListIterator[T, _]): TList = js.native
   @JSName("forEachRight")
+  def forEachRight_T_Object[T /* <: js.Object */](): js.UndefOr[T | Null] = js.native
+  @JSName("forEachRight")
   def forEachRight_T_Object[T /* <: js.Object */](collection: js.UndefOr[scala.Nothing], iteratee: ObjectIterator[T, _]): js.UndefOr[T | Null] = js.native
   /**
     * @see _.forEachRight
@@ -2969,11 +2973,9 @@ trait LoDashStatic extends js.Object {
   @JSName("forEachRight")
   def forEachRight_T_Object_T[T /* <: js.Object */](collection: T, iteratee: ObjectIterator[T, _]): T = js.native
   @JSName("forEachRight")
-  def forEachRight_T_Object_Union[T /* <: js.Object */](): js.UndefOr[T | Null] = js.native
-  @JSName("forEachRight")
   def forEachRight_T_Object_Union[T /* <: js.Object */](collection: Null, iteratee: ObjectIterator[T, _]): js.UndefOr[T | Null] = js.native
-  @JSName("forEachRight")
-  def forEachRight_Union(): js.UndefOr[scala.Nothing] = js.native
+  @JSName("forEach")
+  def forEach_Null(): Null = js.native
   /**
     * @see _.forEach
     */
@@ -2989,6 +2991,8 @@ trait LoDashStatic extends js.Object {
   @JSName("forEach")
   def `forEach_TTList_UnionListTNulljs.undefined_TList`[T, TList /* <: js.UndefOr[List[T] | Null] */](collection: TList with (js.UndefOr[List[T] | Null]), iteratee: ListIterator[T, _]): TList = js.native
   @JSName("forEach")
+  def forEach_T_Object[T /* <: js.Object */](): js.UndefOr[T | Null] = js.native
+  @JSName("forEach")
   def forEach_T_Object[T /* <: js.Object */](collection: js.UndefOr[scala.Nothing], iteratee: ObjectIterator[T, _]): js.UndefOr[T | Null] = js.native
   /**
     * @see _.forEach
@@ -2998,11 +3002,7 @@ trait LoDashStatic extends js.Object {
   @JSName("forEach")
   def forEach_T_Object_T[T /* <: js.Object */](collection: T, iteratee: ObjectIterator[T, _]): T = js.native
   @JSName("forEach")
-  def forEach_T_Object_Union[T /* <: js.Object */](): js.UndefOr[T | Null] = js.native
-  @JSName("forEach")
   def forEach_T_Object_Union[T /* <: js.Object */](collection: Null, iteratee: ObjectIterator[T, _]): js.UndefOr[T | Null] = js.native
-  @JSName("forEach")
-  def forEach_Union(): js.UndefOr[scala.Nothing] = js.native
   def forIn[T](): js.UndefOr[T | Null] = js.native
   /**
     * Iterates over own and inherited enumerable properties of an object invoking iteratee for each property. The
@@ -3322,7 +3322,11 @@ trait LoDashStatic extends js.Object {
     */
   @JSName("get")
   def get_T_Union[T](`object`: NumericDictionary[T], path: Double): js.UndefOr[T] = js.native
-  def groupBy[T](): Dictionary[js.Array[T]] = js.native
+  def groupBy[T /* <: js.Object */](): Dictionary[
+    js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
+  ] = js.native
   /**
     * @see _.groupBy
     */
@@ -3341,8 +3345,26 @@ trait LoDashStatic extends js.Object {
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
     ]
   ] = js.native
-  def groupBy[T](collection: js.UndefOr[scala.Nothing], iteratee: ValueIteratee[T]): Dictionary[js.Array[T]] = js.native
-  def groupBy[T](collection: Null, iteratee: ValueIteratee[T]): Dictionary[js.Array[T]] = js.native
+  def groupBy[T /* <: js.Object */](
+    collection: js.UndefOr[scala.Nothing],
+    iteratee: ValueIteratee[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
+  ): Dictionary[
+    js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
+  ] = js.native
+  def groupBy[T /* <: js.Object */](
+    collection: Null,
+    iteratee: ValueIteratee[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
+  ): Dictionary[
+    js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
+  ] = js.native
   /**
     * Creates an object composed of keys generated from the results of running each element of collection through
     * iteratee. The corresponding value of each key is an array of the elements responsible for generating the
@@ -3355,33 +3377,11 @@ trait LoDashStatic extends js.Object {
   def groupBy[T](collection: List[T]): Dictionary[js.Array[T]] = js.native
   def groupBy[T](collection: List[T], iteratee: ValueIteratee[T]): Dictionary[js.Array[T]] = js.native
   @JSName("groupBy")
-  def groupBy_T_Object[T /* <: js.Object */](): Dictionary[
-    js.Array[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-    ]
-  ] = js.native
+  def groupBy_T[T](): Dictionary[js.Array[T]] = js.native
   @JSName("groupBy")
-  def groupBy_T_Object[T /* <: js.Object */](
-    collection: js.UndefOr[scala.Nothing],
-    iteratee: ValueIteratee[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-    ]
-  ): Dictionary[
-    js.Array[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-    ]
-  ] = js.native
+  def groupBy_T[T](collection: js.UndefOr[scala.Nothing], iteratee: ValueIteratee[T]): Dictionary[js.Array[T]] = js.native
   @JSName("groupBy")
-  def groupBy_T_Object[T /* <: js.Object */](
-    collection: Null,
-    iteratee: ValueIteratee[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-    ]
-  ): Dictionary[
-    js.Array[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-    ]
-  ] = js.native
+  def groupBy_T[T](collection: Null, iteratee: ValueIteratee[T]): Dictionary[js.Array[T]] = js.native
   /**
     * Checks if value is greater than other.
     *
@@ -3661,7 +3661,7 @@ trait LoDashStatic extends js.Object {
     * @return Returns the new inverted object.
     */
   def invert(`object`: js.Object): Dictionary[String] = js.native
-  def invertBy[T](): Dictionary[js.Array[String]] = js.native
+  def invertBy[T /* <: js.Object */](): Dictionary[js.Array[String]] = js.native
   /**
     * @see _.invertBy
     */
@@ -3672,8 +3672,18 @@ trait LoDashStatic extends js.Object {
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
     ]
   ): Dictionary[js.Array[String]] = js.native
-  def invertBy[T](`object`: js.UndefOr[scala.Nothing], interatee: ValueIteratee[T]): Dictionary[js.Array[String]] = js.native
-  def invertBy[T](`object`: Null, interatee: ValueIteratee[T]): Dictionary[js.Array[String]] = js.native
+  def invertBy[T /* <: js.Object */](
+    `object`: js.UndefOr[scala.Nothing],
+    interatee: ValueIteratee[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
+  ): Dictionary[js.Array[String]] = js.native
+  def invertBy[T /* <: js.Object */](
+    `object`: Null,
+    interatee: ValueIteratee[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
+  ): Dictionary[js.Array[String]] = js.native
   def invertBy[T](`object`: Dictionary[T]): Dictionary[js.Array[String]] = js.native
   def invertBy[T](`object`: Dictionary[T], interatee: ValueIteratee[T]): Dictionary[js.Array[String]] = js.native
   /**
@@ -3690,21 +3700,11 @@ trait LoDashStatic extends js.Object {
   def invertBy[T](`object`: NumericDictionary[T]): Dictionary[js.Array[String]] = js.native
   def invertBy[T](`object`: NumericDictionary[T], interatee: ValueIteratee[T]): Dictionary[js.Array[String]] = js.native
   @JSName("invertBy")
-  def invertBy_T_Object[T /* <: js.Object */](): Dictionary[js.Array[String]] = js.native
+  def invertBy_T[T](): Dictionary[js.Array[String]] = js.native
   @JSName("invertBy")
-  def invertBy_T_Object[T /* <: js.Object */](
-    `object`: js.UndefOr[scala.Nothing],
-    interatee: ValueIteratee[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-    ]
-  ): Dictionary[js.Array[String]] = js.native
+  def invertBy_T[T](`object`: js.UndefOr[scala.Nothing], interatee: ValueIteratee[T]): Dictionary[js.Array[String]] = js.native
   @JSName("invertBy")
-  def invertBy_T_Object[T /* <: js.Object */](
-    `object`: Null,
-    interatee: ValueIteratee[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-    ]
-  ): Dictionary[js.Array[String]] = js.native
+  def invertBy_T[T](`object`: Null, interatee: ValueIteratee[T]): Dictionary[js.Array[String]] = js.native
   /**
     * Invokes the method at path of object.
     * @param object The object to query.
@@ -4325,7 +4325,9 @@ trait LoDashStatic extends js.Object {
     */
   def kebabCase(): String = js.native
   def kebabCase(string: String): String = js.native
-  def keyBy[T](): Dictionary[T] = js.native
+  def keyBy[T /* <: js.Object */](): Dictionary[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+  ] = js.native
   /**
     * @see _.keyBy
     */
@@ -4341,8 +4343,24 @@ trait LoDashStatic extends js.Object {
   ): Dictionary[
     /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
   ] = js.native
-  def keyBy[T](collection: js.UndefOr[scala.Nothing], iteratee: ValueIterateeCustom[T, PropertyName]): Dictionary[T] = js.native
-  def keyBy[T](collection: Null, iteratee: ValueIterateeCustom[T, PropertyName]): Dictionary[T] = js.native
+  def keyBy[T /* <: js.Object */](
+    collection: js.UndefOr[scala.Nothing],
+    iteratee: ValueIterateeCustom[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 
+      PropertyName
+    ]
+  ): Dictionary[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+  ] = js.native
+  def keyBy[T /* <: js.Object */](
+    collection: Null,
+    iteratee: ValueIterateeCustom[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 
+      PropertyName
+    ]
+  ): Dictionary[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+  ] = js.native
   /**
     * Creates an object composed of keys generated from the results of running each element of collection through
     * iteratee. The corresponding value of each key is the last element responsible for generating the key. The
@@ -4355,29 +4373,11 @@ trait LoDashStatic extends js.Object {
   def keyBy[T](collection: List[T]): Dictionary[T] = js.native
   def keyBy[T](collection: List[T], iteratee: ValueIterateeCustom[T, PropertyName]): Dictionary[T] = js.native
   @JSName("keyBy")
-  def keyBy_T_Object[T /* <: js.Object */](): Dictionary[
-    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-  ] = js.native
+  def keyBy_T[T](): Dictionary[T] = js.native
   @JSName("keyBy")
-  def keyBy_T_Object[T /* <: js.Object */](
-    collection: js.UndefOr[scala.Nothing],
-    iteratee: ValueIterateeCustom[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 
-      PropertyName
-    ]
-  ): Dictionary[
-    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-  ] = js.native
+  def keyBy_T[T](collection: js.UndefOr[scala.Nothing], iteratee: ValueIterateeCustom[T, PropertyName]): Dictionary[T] = js.native
   @JSName("keyBy")
-  def keyBy_T_Object[T /* <: js.Object */](
-    collection: Null,
-    iteratee: ValueIterateeCustom[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 
-      PropertyName
-    ]
-  ): Dictionary[
-    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-  ] = js.native
+  def keyBy_T[T](collection: Null, iteratee: ValueIterateeCustom[T, PropertyName]): Dictionary[T] = js.native
   /**
     * Creates an array of the own enumerable property names of object.
     *
@@ -4518,7 +4518,9 @@ trait LoDashStatic extends js.Object {
   def map[T, K /* <: String */](collection: NumericDictionary[T], iteratee: K): js.Array[
     /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
   ] = js.native
-  def mapKeys[T](): Dictionary[T] = js.native
+  def mapKeys[T /* <: js.Object */](): Dictionary[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+  ] = js.native
   /**
     * @see _.mapKeys
     */
@@ -4528,8 +4530,12 @@ trait LoDashStatic extends js.Object {
   def mapKeys[T /* <: js.Object */](`object`: T, iteratee: ObjectIteratee[T]): Dictionary[
     /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
   ] = js.native
-  def mapKeys[T](`object`: js.UndefOr[scala.Nothing], iteratee: ListIteratee[T]): Dictionary[T] = js.native
-  def mapKeys[T](`object`: Null, iteratee: ListIteratee[T]): Dictionary[T] = js.native
+  def mapKeys[T /* <: js.Object */](`object`: js.UndefOr[scala.Nothing], iteratee: ObjectIteratee[T]): Dictionary[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+  ] = js.native
+  def mapKeys[T /* <: js.Object */](`object`: Null, iteratee: ObjectIteratee[T]): Dictionary[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+  ] = js.native
   /**
     * The opposite of _.mapValues; this method creates an object with the same values as object and keys generated
     * by running each own enumerable property of object through iteratee.
@@ -4541,17 +4547,11 @@ trait LoDashStatic extends js.Object {
   def mapKeys[T](`object`: List[T]): Dictionary[T] = js.native
   def mapKeys[T](`object`: List[T], iteratee: ListIteratee[T]): Dictionary[T] = js.native
   @JSName("mapKeys")
-  def mapKeys_T_Object[T /* <: js.Object */](): Dictionary[
-    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-  ] = js.native
+  def mapKeys_T[T](): Dictionary[T] = js.native
   @JSName("mapKeys")
-  def mapKeys_T_Object[T /* <: js.Object */](`object`: js.UndefOr[scala.Nothing], iteratee: ObjectIteratee[T]): Dictionary[
-    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-  ] = js.native
+  def mapKeys_T[T](`object`: js.UndefOr[scala.Nothing], iteratee: ListIteratee[T]): Dictionary[T] = js.native
   @JSName("mapKeys")
-  def mapKeys_T_Object[T /* <: js.Object */](`object`: Null, iteratee: ObjectIteratee[T]): Dictionary[
-    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-  ] = js.native
+  def mapKeys_T[T](`object`: Null, iteratee: ListIteratee[T]): Dictionary[T] = js.native
   def mapValues(): NumericDictionary[String] = js.native
   /**
     * @see _.mapValues
@@ -4560,7 +4560,7 @@ trait LoDashStatic extends js.Object {
   /**
     * @see _.mapValues
     */
-  def mapValues[T /* <: js.Object */](obj: T): PartialObject[T] = js.native
+  def mapValues[T /* <: js.Object */](obj: T): T = js.native
   /**
     * @see _.mapValues
     */
@@ -4574,12 +4574,8 @@ trait LoDashStatic extends js.Object {
   {[ P in keyof T ]: boolean}
     */ typings.cypress.cypressStrings.LoDashStatic with js.Any = js.native
   def mapValues[TResult](obj: js.UndefOr[scala.Nothing], callback: StringIterator[TResult]): NumericDictionary[TResult] = js.native
-  def mapValues[T /* <: js.Object */](obj: js.UndefOr[scala.Nothing], iteratee: String): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: any}
-    */ typings.cypress.cypressStrings.LoDashStatic with js.Any = js.native
-  def mapValues[T /* <: js.Object */](obj: js.UndefOr[scala.Nothing], iteratee: js.Object): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: boolean}
-    */ typings.cypress.cypressStrings.LoDashStatic with js.Any = js.native
+  def mapValues[T](obj: js.UndefOr[scala.Nothing], iteratee: String): Dictionary[_] = js.native
+  def mapValues[T](obj: js.UndefOr[scala.Nothing], iteratee: js.Object): Dictionary[Boolean] = js.native
   /**
     * Creates an object with the same keys as object and values generated by running each own
     * enumerable property of object through iteratee. The iteratee function is
@@ -4591,12 +4587,8 @@ trait LoDashStatic extends js.Object {
     */
   def mapValues[TResult](obj: String, callback: StringIterator[TResult]): NumericDictionary[TResult] = js.native
   def mapValues[TResult](obj: Null, callback: StringIterator[TResult]): NumericDictionary[TResult] = js.native
-  def mapValues[T /* <: js.Object */](obj: Null, iteratee: String): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: any}
-    */ typings.cypress.cypressStrings.LoDashStatic with js.Any = js.native
-  def mapValues[T /* <: js.Object */](obj: Null, iteratee: js.Object): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: boolean}
-    */ typings.cypress.cypressStrings.LoDashStatic with js.Any = js.native
+  def mapValues[T](obj: Null, iteratee: String): Dictionary[_] = js.native
+  def mapValues[T](obj: Null, iteratee: js.Object): Dictionary[Boolean] = js.native
   /**
     * @see _.mapValues
     * TODO: This would be better if we had a separate overload for obj: NumericDictionary that returned a NumericDictionary,
@@ -4655,14 +4647,6 @@ trait LoDashStatic extends js.Object {
   @JSName("mapValues")
   def mapValues_T_Dictionary[T](): Dictionary[T] = js.native
   @JSName("mapValues")
-  def mapValues_T_Dictionary[T](obj: js.UndefOr[scala.Nothing], iteratee: String): Dictionary[_] = js.native
-  @JSName("mapValues")
-  def mapValues_T_Dictionary[T](obj: js.UndefOr[scala.Nothing], iteratee: js.Object): Dictionary[Boolean] = js.native
-  @JSName("mapValues")
-  def mapValues_T_Dictionary[T](obj: Null, iteratee: String): Dictionary[_] = js.native
-  @JSName("mapValues")
-  def mapValues_T_Dictionary[T](obj: Null, iteratee: js.Object): Dictionary[Boolean] = js.native
-  @JSName("mapValues")
   def mapValues_T_ObjectTResult_Intersection[T /* <: js.Object */, TResult](obj: js.UndefOr[scala.Nothing], callback: ObjectIterator[T, TResult]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: TResult}
     */ typings.cypress.cypressStrings.LoDashStatic with js.Any = js.native
@@ -4671,12 +4655,28 @@ trait LoDashStatic extends js.Object {
   {[ P in keyof T ]: TResult}
     */ typings.cypress.cypressStrings.LoDashStatic with js.Any = js.native
   @JSName("mapValues")
+  def mapValues_T_Object_Intersection[T /* <: js.Object */](obj: js.UndefOr[scala.Nothing], iteratee: String): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in keyof T ]: any}
+    */ typings.cypress.cypressStrings.LoDashStatic with js.Any = js.native
+  @JSName("mapValues")
+  def mapValues_T_Object_Intersection[T /* <: js.Object */](obj: js.UndefOr[scala.Nothing], iteratee: js.Object): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in keyof T ]: boolean}
+    */ typings.cypress.cypressStrings.LoDashStatic with js.Any = js.native
+  @JSName("mapValues")
+  def mapValues_T_Object_Intersection[T /* <: js.Object */](obj: Null, iteratee: String): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in keyof T ]: any}
+    */ typings.cypress.cypressStrings.LoDashStatic with js.Any = js.native
+  @JSName("mapValues")
+  def mapValues_T_Object_Intersection[T /* <: js.Object */](obj: Null, iteratee: js.Object): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in keyof T ]: boolean}
+    */ typings.cypress.cypressStrings.LoDashStatic with js.Any = js.native
+  @JSName("mapValues")
   def mapValues_T_Object_PartialObject[T /* <: js.Object */](): PartialObject[T] = js.native
   /**
     * @see _.mapValues
     */
   @JSName("mapValues")
-  def mapValues_T_Object_T[T /* <: js.Object */](obj: T): T = js.native
+  def mapValues_T_Object_PartialObject[T /* <: js.Object */](obj: T): PartialObject[T] = js.native
   @JSName("map")
   def map_TTResult[T, TResult](
     collection: js.UndefOr[scala.Nothing],
@@ -5046,18 +5046,8 @@ trait LoDashStatic extends js.Object {
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
     ]
   ): PartialObject[T] = js.native
-  def omitBy[T /* <: js.Object */](
-    `object`: js.UndefOr[scala.Nothing],
-    predicate: ValueKeyIteratee[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-    ]
-  ): PartialObject[T] = js.native
-  def omitBy[T /* <: js.Object */](
-    `object`: Null,
-    predicate: ValueKeyIteratee[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-    ]
-  ): PartialObject[T] = js.native
+  def omitBy[T](`object`: js.UndefOr[scala.Nothing], predicate: ValueKeyIteratee[T]): NumericDictionary[T] = js.native
+  def omitBy[T](`object`: Null, predicate: ValueKeyIteratee[T]): NumericDictionary[T] = js.native
   /**
     * The opposite of `_.pickBy`; this method creates an object composed of the
     * own and inherited enumerable properties of `object` that `predicate`
@@ -5088,9 +5078,19 @@ trait LoDashStatic extends js.Object {
   @JSName("omitBy")
   def omitBy_T_Dictionary[T](`object`: Null, predicate: ValueKeyIteratee[T]): Dictionary[T] = js.native
   @JSName("omitBy")
-  def omitBy_T_NumericDictionary[T](`object`: js.UndefOr[scala.Nothing], predicate: ValueKeyIteratee[T]): NumericDictionary[T] = js.native
+  def omitBy_T_Object_PartialObject[T /* <: js.Object */](
+    `object`: js.UndefOr[scala.Nothing],
+    predicate: ValueKeyIteratee[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
+  ): PartialObject[T] = js.native
   @JSName("omitBy")
-  def omitBy_T_NumericDictionary[T](`object`: Null, predicate: ValueKeyIteratee[T]): NumericDictionary[T] = js.native
+  def omitBy_T_Object_PartialObject[T /* <: js.Object */](
+    `object`: Null,
+    predicate: ValueKeyIteratee[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
+  ): PartialObject[T] = js.native
   /**
     * The opposite of `_.pick`; this method creates an object composed of the
     * own and inherited enumerable properties of `object` that are not omitted.
@@ -5126,9 +5126,7 @@ trait LoDashStatic extends js.Object {
     * @return Returns the new restricted function.
     */
   def once[T /* <: js.Function1[/* repeated */ js.Any, _] */](func: T): T = js.native
-  def orderBy[T /* <: js.Object */](): js.Array[
-    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-  ] = js.native
+  def orderBy[T](): js.Array[T] = js.native
   /**
     * @see _.orderBy
     */
@@ -5145,29 +5143,21 @@ trait LoDashStatic extends js.Object {
   ): js.Array[
     /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
   ] = js.native
-  def orderBy[T /* <: js.Object */](
+  def orderBy[T](
     collection: js.UndefOr[scala.Nothing],
-    iteratees: Many[ObjectIteratee[T] | (ObjectIterator[T, NotVoid])]
-  ): js.Array[
-    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-  ] = js.native
-  def orderBy[T /* <: js.Object */](
+    iteratees: Many[ListIteratee[T] | (ListIterator[T, NotVoid])]
+  ): js.Array[T] = js.native
+  def orderBy[T](
     collection: js.UndefOr[scala.Nothing],
-    iteratees: Many[ObjectIteratee[T] | (ObjectIterator[T, NotVoid])],
+    iteratees: Many[ListIteratee[T] | (ListIterator[T, NotVoid])],
     orders: Many[Boolean | asc | desc]
-  ): js.Array[
-    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-  ] = js.native
-  def orderBy[T /* <: js.Object */](collection: Null, iteratees: Many[ObjectIteratee[T] | (ObjectIterator[T, NotVoid])]): js.Array[
-    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-  ] = js.native
-  def orderBy[T /* <: js.Object */](
+  ): js.Array[T] = js.native
+  def orderBy[T](collection: Null, iteratees: Many[ListIteratee[T] | (ListIterator[T, NotVoid])]): js.Array[T] = js.native
+  def orderBy[T](
     collection: Null,
-    iteratees: Many[ObjectIteratee[T] | (ObjectIterator[T, NotVoid])],
+    iteratees: Many[ListIteratee[T] | (ListIterator[T, NotVoid])],
     orders: Many[Boolean | asc | desc]
-  ): js.Array[
-    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-  ] = js.native
+  ): js.Array[T] = js.native
   /**
     * This method is like `_.sortBy` except that it allows specifying the sort
     * orders of the iteratees to sort by. If `orders` is unspecified, all values
@@ -5201,26 +5191,36 @@ trait LoDashStatic extends js.Object {
     orders: Many[Boolean | asc | desc]
   ): js.Array[T] = js.native
   @JSName("orderBy")
-  def orderBy_T[T](): js.Array[T] = js.native
+  def orderBy_T_Object[T /* <: js.Object */](): js.Array[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+  ] = js.native
   @JSName("orderBy")
-  def orderBy_T[T](
+  def orderBy_T_Object[T /* <: js.Object */](
     collection: js.UndefOr[scala.Nothing],
-    iteratees: Many[ListIteratee[T] | (ListIterator[T, NotVoid])]
-  ): js.Array[T] = js.native
+    iteratees: Many[ObjectIteratee[T] | (ObjectIterator[T, NotVoid])]
+  ): js.Array[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+  ] = js.native
   @JSName("orderBy")
-  def orderBy_T[T](
+  def orderBy_T_Object[T /* <: js.Object */](
     collection: js.UndefOr[scala.Nothing],
-    iteratees: Many[ListIteratee[T] | (ListIterator[T, NotVoid])],
+    iteratees: Many[ObjectIteratee[T] | (ObjectIterator[T, NotVoid])],
     orders: Many[Boolean | asc | desc]
-  ): js.Array[T] = js.native
+  ): js.Array[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+  ] = js.native
   @JSName("orderBy")
-  def orderBy_T[T](collection: Null, iteratees: Many[ListIteratee[T] | (ListIterator[T, NotVoid])]): js.Array[T] = js.native
+  def orderBy_T_Object[T /* <: js.Object */](collection: Null, iteratees: Many[ObjectIteratee[T] | (ObjectIterator[T, NotVoid])]): js.Array[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+  ] = js.native
   @JSName("orderBy")
-  def orderBy_T[T](
+  def orderBy_T_Object[T /* <: js.Object */](
     collection: Null,
-    iteratees: Many[ListIteratee[T] | (ListIterator[T, NotVoid])],
+    iteratees: Many[ObjectIteratee[T] | (ObjectIterator[T, NotVoid])],
     orders: Many[Boolean | asc | desc]
-  ): js.Array[T] = js.native
+  ): js.Array[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+  ] = js.native
   /**
     * Creates a function that invokes iteratees with the arguments provided to the created function and returns
     * their results.
@@ -5936,7 +5936,7 @@ trait LoDashStatic extends js.Object {
     */
   def pick[T](`object`: T, props: PropertyPath*): PartialDeep[T] = js.native
   def pick[T](props: PropertyPath*): PartialDeep[T] = js.native
-  def pickBy[T /* <: js.Object */](): PartialObject[T] = js.native
+  def pickBy[T](): NumericDictionary[T] = js.native
   /**
     * @see _.pickBy
     */
@@ -5947,18 +5947,8 @@ trait LoDashStatic extends js.Object {
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
     ]
   ): PartialObject[T] = js.native
-  def pickBy[T /* <: js.Object */](
-    `object`: js.UndefOr[scala.Nothing],
-    predicate: ValueKeyIteratee[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-    ]
-  ): PartialObject[T] = js.native
-  def pickBy[T /* <: js.Object */](
-    `object`: Null,
-    predicate: ValueKeyIteratee[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-    ]
-  ): PartialObject[T] = js.native
+  def pickBy[T](`object`: js.UndefOr[scala.Nothing], predicate: ValueKeyIteratee[T]): NumericDictionary[T] = js.native
+  def pickBy[T](`object`: Null, predicate: ValueKeyIteratee[T]): NumericDictionary[T] = js.native
   /**
     * @see _.pickBy
     */
@@ -6002,11 +5992,21 @@ trait LoDashStatic extends js.Object {
   @JSName("pickBy")
   def pickBy_T_Dictionary[T](`object`: Null, predicate: ValueKeyIteratee[T]): Dictionary[T] = js.native
   @JSName("pickBy")
-  def pickBy_T_NumericDictionary[T](): NumericDictionary[T] = js.native
+  def pickBy_T_Object_PartialObject[T /* <: js.Object */](): PartialObject[T] = js.native
   @JSName("pickBy")
-  def pickBy_T_NumericDictionary[T](`object`: js.UndefOr[scala.Nothing], predicate: ValueKeyIteratee[T]): NumericDictionary[T] = js.native
+  def pickBy_T_Object_PartialObject[T /* <: js.Object */](
+    `object`: js.UndefOr[scala.Nothing],
+    predicate: ValueKeyIteratee[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
+  ): PartialObject[T] = js.native
   @JSName("pickBy")
-  def pickBy_T_NumericDictionary[T](`object`: Null, predicate: ValueKeyIteratee[T]): NumericDictionary[T] = js.native
+  def pickBy_T_Object_PartialObject[T /* <: js.Object */](
+    `object`: Null,
+    predicate: ValueKeyIteratee[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
+  ): PartialObject[T] = js.native
   /**
     * Creates an object composed of the picked `object` properties.
     *
@@ -6509,12 +6509,8 @@ trait LoDashStatic extends js.Object {
   def reject[T /* <: js.Object */](collection: T, predicate: ObjectIterateeCustom[T, Boolean]): js.Array[
     /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
   ] = js.native
-  def reject[T /* <: js.Object */](collection: js.UndefOr[scala.Nothing], predicate: ObjectIterateeCustom[T, Boolean]): js.Array[
-    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-  ] = js.native
-  def reject[T /* <: js.Object */](collection: Null, predicate: ObjectIterateeCustom[T, Boolean]): js.Array[
-    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-  ] = js.native
+  def reject[T](collection: js.UndefOr[scala.Nothing], predicate: ListIterateeCustom[T, Boolean]): js.Array[T] = js.native
+  def reject[T](collection: Null, predicate: ListIterateeCustom[T, Boolean]): js.Array[T] = js.native
   /**
     * @see _.reject
     */
@@ -6523,11 +6519,15 @@ trait LoDashStatic extends js.Object {
   @JSName("reject")
   def reject_T[T](): js.Array[T] = js.native
   @JSName("reject")
-  def reject_T[T](collection: js.UndefOr[scala.Nothing], predicate: ListIterateeCustom[T, Boolean]): js.Array[T] = js.native
-  @JSName("reject")
-  def reject_T[T](collection: Null, predicate: ListIterateeCustom[T, Boolean]): js.Array[T] = js.native
-  @JSName("reject")
   def reject_T_Object[T /* <: js.Object */](): js.Array[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+  ] = js.native
+  @JSName("reject")
+  def reject_T_Object[T /* <: js.Object */](collection: js.UndefOr[scala.Nothing], predicate: ObjectIterateeCustom[T, Boolean]): js.Array[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+  ] = js.native
+  @JSName("reject")
+  def reject_T_Object[T /* <: js.Object */](collection: Null, predicate: ObjectIterateeCustom[T, Boolean]): js.Array[
     /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
   ] = js.native
   /**
@@ -6649,9 +6649,7 @@ trait LoDashStatic extends js.Object {
     */
   def sample[T](collection: List[T]): js.UndefOr[T] = js.native
   def sample[T](collection: NumericDictionary[T]): js.UndefOr[T] = js.native
-  def sampleSize[T /* <: js.Object */](): js.Array[
-    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-  ] = js.native
+  def sampleSize[T](): js.Array[T] = js.native
   /**
     * @see _.sampleSize
     */
@@ -6661,12 +6659,8 @@ trait LoDashStatic extends js.Object {
   def sampleSize[T /* <: js.Object */](collection: T, n: Double): js.Array[
     /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
   ] = js.native
-  def sampleSize[T /* <: js.Object */](collection: js.UndefOr[scala.Nothing], n: Double): js.Array[
-    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-  ] = js.native
-  def sampleSize[T /* <: js.Object */](collection: Null, n: Double): js.Array[
-    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-  ] = js.native
+  def sampleSize[T](collection: js.UndefOr[scala.Nothing], n: Double): js.Array[T] = js.native
+  def sampleSize[T](collection: Null, n: Double): js.Array[T] = js.native
   def sampleSize[T](collection: Dictionary[T]): js.Array[T] = js.native
   def sampleSize[T](collection: Dictionary[T], n: Double): js.Array[T] = js.native
   /**
@@ -6681,11 +6675,17 @@ trait LoDashStatic extends js.Object {
   def sampleSize[T](collection: NumericDictionary[T]): js.Array[T] = js.native
   def sampleSize[T](collection: NumericDictionary[T], n: Double): js.Array[T] = js.native
   @JSName("sampleSize")
-  def sampleSize_T[T](): js.Array[T] = js.native
+  def sampleSize_T_Object[T /* <: js.Object */](): js.Array[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+  ] = js.native
   @JSName("sampleSize")
-  def sampleSize_T[T](collection: js.UndefOr[scala.Nothing], n: Double): js.Array[T] = js.native
+  def sampleSize_T_Object[T /* <: js.Object */](collection: js.UndefOr[scala.Nothing], n: Double): js.Array[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+  ] = js.native
   @JSName("sampleSize")
-  def sampleSize_T[T](collection: Null, n: Double): js.Array[T] = js.native
+  def sampleSize_T_Object[T /* <: js.Object */](collection: Null, n: Double): js.Array[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+  ] = js.native
   @JSName("sample")
   def sample_T[T](): js.UndefOr[T] = js.native
   /**
@@ -6720,9 +6720,7 @@ trait LoDashStatic extends js.Object {
   def setWith_T_ObjectTResult_TResult[T /* <: js.Object */, TResult](`object`: T, path: PropertyPath, value: js.Any): TResult = js.native
   @JSName("setWith")
   def setWith_T_ObjectTResult_TResult[T /* <: js.Object */, TResult](`object`: T, path: PropertyPath, value: js.Any, customizer: SetWithCustomizer[T]): TResult = js.native
-  def shuffle[T /* <: js.Object */](): js.Array[
-    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-  ] = js.native
+  def shuffle[T](): js.Array[T] = js.native
   /**
     * @see _.shuffle
     */
@@ -6737,7 +6735,9 @@ trait LoDashStatic extends js.Object {
     */
   def shuffle[T](collection: List[T]): js.Array[T] = js.native
   @JSName("shuffle")
-  def shuffle_T[T](): js.Array[T] = js.native
+  def shuffle_T_Object[T /* <: js.Object */](): js.Array[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+  ] = js.native
   def size(): Double = js.native
   def size(collection: String): Double = js.native
   /**
@@ -6772,14 +6772,14 @@ trait LoDashStatic extends js.Object {
     */
   def snakeCase(): String = js.native
   def snakeCase(string: String): String = js.native
-  def some[T /* <: js.Object */](): Boolean = js.native
+  def some[T](): Boolean = js.native
   /**
     * @see _.some
     */
   def some[T /* <: js.Object */](collection: T): Boolean = js.native
   def some[T /* <: js.Object */](collection: T, predicate: ObjectIterateeCustom[T, Boolean]): Boolean = js.native
-  def some[T /* <: js.Object */](collection: js.UndefOr[scala.Nothing], predicate: ObjectIterateeCustom[T, Boolean]): Boolean = js.native
-  def some[T /* <: js.Object */](collection: Null, predicate: ObjectIterateeCustom[T, Boolean]): Boolean = js.native
+  def some[T](collection: js.UndefOr[scala.Nothing], predicate: ListIterateeCustom[T, Boolean]): Boolean = js.native
+  def some[T](collection: Null, predicate: ListIterateeCustom[T, Boolean]): Boolean = js.native
   /**
     * Checks if predicate returns truthy for any element of collection. Iteration is stopped once predicate
     * returns truthy. The predicate is invoked with three arguments: (value, index|key, collection).
@@ -6791,11 +6791,11 @@ trait LoDashStatic extends js.Object {
   def some[T](collection: List[T]): Boolean = js.native
   def some[T](collection: List[T], predicate: ListIterateeCustom[T, Boolean]): Boolean = js.native
   @JSName("some")
-  def some_T[T](): Boolean = js.native
+  def some_T_Object[T /* <: js.Object */](): Boolean = js.native
   @JSName("some")
-  def some_T[T](collection: js.UndefOr[scala.Nothing], predicate: ListIterateeCustom[T, Boolean]): Boolean = js.native
+  def some_T_Object[T /* <: js.Object */](collection: js.UndefOr[scala.Nothing], predicate: ObjectIterateeCustom[T, Boolean]): Boolean = js.native
   @JSName("some")
-  def some_T[T](collection: Null, predicate: ListIterateeCustom[T, Boolean]): Boolean = js.native
+  def some_T_Object[T /* <: js.Object */](collection: Null, predicate: ObjectIterateeCustom[T, Boolean]): Boolean = js.native
   /**
     * @see _.sortBy
     */
@@ -6834,11 +6834,11 @@ trait LoDashStatic extends js.Object {
     * // => objects for [['barney', 36], ['barney', 34], ['fred', 48], ['fred', 42]]
     */
   def sortBy[T](collection: List[T], iteratees: Many[ListIteratee[T]]*): js.Array[T] = js.native
-  def sortBy[T /* <: js.Object */](iteratees: Many[ObjectIteratee[T]]*): js.Array[
+  def sortBy[T](iteratees: Many[ListIteratee[T]]*): js.Array[T] = js.native
+  @JSName("sortBy")
+  def sortBy_T_Object[T /* <: js.Object */](iteratees: Many[ObjectIteratee[T]]*): js.Array[
     /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
   ] = js.native
-  @JSName("sortBy")
-  def sortBy_T[T](iteratees: Many[ListIteratee[T]]*): js.Array[T] = js.native
   def sortedIndex[T](array: js.UndefOr[scala.Nothing], value: T): Double = js.native
   def sortedIndex[T](array: Null, value: T): Double = js.native
   /**
@@ -7907,9 +7907,7 @@ trait LoDashStatic extends js.Object {
     * @see _.values
     */
   def values(`object`: js.Any): js.Array[_] = js.native
-  def values[T /* <: js.Object */](): js.Array[
-    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-  ] = js.native
+  def values[T](): js.Array[T] = js.native
   /**
     * @see _.values
     */
@@ -7925,9 +7923,7 @@ trait LoDashStatic extends js.Object {
   def values[T](`object`: Dictionary[T]): js.Array[T] = js.native
   def values[T](`object`: List[T]): js.Array[T] = js.native
   def values[T](`object`: NumericDictionary[T]): js.Array[T] = js.native
-  def valuesIn[T /* <: js.Object */](): js.Array[
-    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-  ] = js.native
+  def valuesIn[T](): js.Array[T] = js.native
   /**
     * @see _.valuesIn
     */
@@ -7944,9 +7940,13 @@ trait LoDashStatic extends js.Object {
   def valuesIn[T](`object`: List[T]): js.Array[T] = js.native
   def valuesIn[T](`object`: NumericDictionary[T]): js.Array[T] = js.native
   @JSName("valuesIn")
-  def valuesIn_T[T](): js.Array[T] = js.native
+  def valuesIn_T_Object[T /* <: js.Object */](): js.Array[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+  ] = js.native
   @JSName("values")
-  def values_T[T](): js.Array[T] = js.native
+  def values_T_Object[T /* <: js.Object */](): js.Array[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+  ] = js.native
   /**
     * Creates an array excluding all provided values using SameValueZero for equality comparisons.
     *

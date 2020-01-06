@@ -15,7 +15,7 @@ trait TransactionOptions extends js.Object {
     * Sets the constraints to be deferred or immediately checked.
     */
   var deferrable: js.UndefOr[
-    DeferrableNot | DeferrableSetDeferred | DeferrableInitiallyDeferred | DeferrableSetImmediate | DeferrableInitiallyImmediate
+    DeferrableSetDeferred | DeferrableInitiallyImmediate | DeferrableNot | DeferrableInitiallyDeferred | DeferrableSetImmediate
   ] = js.undefined
   /**
     *  See `Sequelize.Transaction.ISOLATION_LEVELS` for possible options
@@ -39,7 +39,7 @@ object TransactionOptions {
   @scala.inline
   def apply(
     autocommit: js.UndefOr[Boolean] = js.undefined,
-    deferrable: DeferrableNot | DeferrableSetDeferred | DeferrableInitiallyDeferred | DeferrableSetImmediate | DeferrableInitiallyImmediate = null,
+    deferrable: DeferrableSetDeferred | DeferrableInitiallyImmediate | DeferrableNot | DeferrableInitiallyDeferred | DeferrableSetImmediate = null,
     isolationLevel: TransactionIsolationLevel = null,
     logging: js.Function = null,
     transaction: Transaction = null,

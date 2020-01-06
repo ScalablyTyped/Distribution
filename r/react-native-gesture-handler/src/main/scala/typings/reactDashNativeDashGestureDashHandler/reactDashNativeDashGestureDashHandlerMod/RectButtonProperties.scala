@@ -20,6 +20,7 @@ trait RectButtonProperties extends BaseButtonProperties {
 object RectButtonProperties {
   @scala.inline
   def apply(
+    accessibilityLabel: String = null,
     activeOpacity: Int | Double = null,
     disallowInterruption: js.UndefOr[Boolean] = js.undefined,
     enabled: js.UndefOr[Boolean] = js.undefined,
@@ -40,6 +41,7 @@ object RectButtonProperties {
     waitFor: Ref[_] | js.Array[Ref[_]] = null
   ): RectButtonProperties = {
     val __obj = js.Dynamic.literal()
+    if (accessibilityLabel != null) __obj.updateDynamic("accessibilityLabel")(accessibilityLabel.asInstanceOf[js.Any])
     if (activeOpacity != null) __obj.updateDynamic("activeOpacity")(activeOpacity.asInstanceOf[js.Any])
     if (!js.isUndefined(disallowInterruption)) __obj.updateDynamic("disallowInterruption")(disallowInterruption.asInstanceOf[js.Any])
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])

@@ -10,9 +10,9 @@ Custom React PropType validators that we use at Airbnb.
 | ------------------ | :-------------: |
 | Full name          | airbnb-prop-types |
 | Keywords           | react, propTypes, airbnb, prop, types, validator, validation |
-| # releases         | 13 |
-| # dependents       | 71 |
-| # downloads        | 7577052 |
+| # releases         | 10 |
+| # dependents       | 91 |
+| # downloads        | 48892572 |
 | # stars            | 4 |
 
 ## Links

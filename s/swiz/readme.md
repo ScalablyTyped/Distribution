@@ -11,7 +11,7 @@ Serialization and Validation Framework for objects in RESTful APIs
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 4292 |
+| # downloads        | 5689 |
 | # stars            | 0 |
 
 ## Links

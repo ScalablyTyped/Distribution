@@ -11,8 +11,8 @@ High-level messaging & socket patterns implemented in pure js
 | Full name          | axon |
 | Keywords           | zmq, zeromq, pubsub, socket, emitter, ipc, rpc |
 | # releases         | 1 |
-| # dependents       | 90 |
-| # downloads        | 138581 |
+| # dependents       | 91 |
+| # downloads        | 101618 |
 | # stars            | 21 |
 
 ## Links

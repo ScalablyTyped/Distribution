@@ -10,9 +10,9 @@ Normalize a URL
 | ------------------ | :-------------: |
 | Full name          | normalize-url |
 | Keywords           | normalize, url, uri, address, string, normalization, normalisation, query, querystring, simplify, strip, trim, canonical |
-| # releases         | 12 |
-| # dependents       | 333 |
-| # downloads        | 186309719 |
+| # releases         | 13 |
+| # dependents       | 372 |
+| # downloads        | 367899056 |
 | # stars            | 10 |
 
 ## Links

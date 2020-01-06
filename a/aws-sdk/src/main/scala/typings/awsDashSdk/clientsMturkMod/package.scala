@@ -10,9 +10,9 @@ package object clientsMturkMod {
 
   type AssignmentList = js.Array[Assignment]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Submitted
-    - typings.awsDashSdk.awsDashSdkStrings.Approved
-    - typings.awsDashSdk.awsDashSdkStrings.Rejected
+    - typings.awsDashSdk.awsDashSdkStrings.Submitted_
+    - typings.awsDashSdk.awsDashSdkStrings.Approved_
+    - typings.awsDashSdk.awsDashSdkStrings.Rejected_
     - java.lang.String
   */
   type AssignmentStatus = _AssignmentStatus | java.lang.String
@@ -29,7 +29,7 @@ package object clientsMturkMod {
     - typings.awsDashSdk.awsDashSdkStrings.NotEqualTo
     - typings.awsDashSdk.awsDashSdkStrings.Exists
     - typings.awsDashSdk.awsDashSdkStrings.DoesNotExist
-    - typings.awsDashSdk.awsDashSdkStrings.In
+    - typings.awsDashSdk.awsDashSdkStrings.In_
     - typings.awsDashSdk.awsDashSdkStrings.NotIn
     - java.lang.String
   */
@@ -57,7 +57,7 @@ package object clientsMturkMod {
   type EventType = _EventType | java.lang.String
   type EventTypeList = js.Array[EventType]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Accept
+    - typings.awsDashSdk.awsDashSdkStrings.Accept_
     - typings.awsDashSdk.awsDashSdkStrings.PreviewAndAccept
     - typings.awsDashSdk.awsDashSdkStrings.DiscoverPreviewAndAccept
     - java.lang.String
@@ -88,7 +88,7 @@ package object clientsMturkMod {
   type LocaleList = js.Array[Locale]
   type Long = Double
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Email
+    - typings.awsDashSdk.awsDashSdkStrings.Email_
     - typings.awsDashSdk.awsDashSdkStrings.SQS
     - typings.awsDashSdk.awsDashSdkStrings.SNS
     - java.lang.String
@@ -109,14 +109,14 @@ package object clientsMturkMod {
   type QualificationRequirementList = js.Array[QualificationRequirement]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.Granted
-    - typings.awsDashSdk.awsDashSdkStrings.Revoked
+    - typings.awsDashSdk.awsDashSdkStrings.Revoked_
     - java.lang.String
   */
   type QualificationStatus = _QualificationStatus | java.lang.String
   type QualificationTypeList = js.Array[QualificationType]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Active
-    - typings.awsDashSdk.awsDashSdkStrings.Inactive
+    - typings.awsDashSdk.awsDashSdkStrings.Active_
+    - typings.awsDashSdk.awsDashSdkStrings.Inactive_
     - java.lang.String
   */
   type QualificationTypeStatus = _QualificationTypeStatus | java.lang.String
@@ -124,9 +124,9 @@ package object clientsMturkMod {
   type ReviewActionDetailList = js.Array[ReviewActionDetail]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.Intended
-    - typings.awsDashSdk.awsDashSdkStrings.Succeeded
-    - typings.awsDashSdk.awsDashSdkStrings.Failed
-    - typings.awsDashSdk.awsDashSdkStrings.Cancelled
+    - typings.awsDashSdk.awsDashSdkStrings.Succeeded_
+    - typings.awsDashSdk.awsDashSdkStrings.Failed_
+    - typings.awsDashSdk.awsDashSdkStrings.Cancelled_
     - java.lang.String
   */
   type ReviewActionStatus = _ReviewActionStatus | java.lang.String
@@ -150,7 +150,7 @@ package object clientsMturkMod {
   type WorkerBlockList = js.Array[WorkerBlock]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2017-01-17`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | java.lang.String

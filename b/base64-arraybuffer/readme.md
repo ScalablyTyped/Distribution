@@ -10,9 +10,9 @@ Encode/decode base64 data into ArrayBuffers
 | ------------------ | :-------------: |
 | Full name          | base64-arraybuffer |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 70 |
-| # downloads        | 94266199 |
+| # releases         | 2 |
+| # dependents       | 94 |
+| # downloads        | 131618468 |
 | # stars            | 4 |
 
 ## Links

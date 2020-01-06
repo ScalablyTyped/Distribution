@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StageState extends js.Object {
   /**
     * The state of the stage.
     */
-  var actionStates: js.UndefOr[ActionStateList] = js.undefined
+  var actionStates: js.UndefOr[ActionStateList] = js.native
   /**
     * The state of the inbound transition, which is either enabled or disabled.
     */
-  var inboundTransitionState: js.UndefOr[TransitionState] = js.undefined
+  var inboundTransitionState: js.UndefOr[TransitionState] = js.native
   /**
     * Information about the latest execution in the stage, including its ID and status.
     */
-  var latestExecution: js.UndefOr[StageExecution] = js.undefined
+  var latestExecution: js.UndefOr[StageExecution] = js.native
   /**
     * The name of the stage.
     */
-  var stageName: js.UndefOr[StageName] = js.undefined
+  var stageName: js.UndefOr[StageName] = js.native
 }
 
 object StageState {
@@ -32,10 +33,10 @@ object StageState {
     stageName: StageName = null
   ): StageState = {
     val __obj = js.Dynamic.literal()
-    if (actionStates != null) __obj.updateDynamic("actionStates")(actionStates)
-    if (inboundTransitionState != null) __obj.updateDynamic("inboundTransitionState")(inboundTransitionState)
-    if (latestExecution != null) __obj.updateDynamic("latestExecution")(latestExecution)
-    if (stageName != null) __obj.updateDynamic("stageName")(stageName)
+    if (actionStates != null) __obj.updateDynamic("actionStates")(actionStates.asInstanceOf[js.Any])
+    if (inboundTransitionState != null) __obj.updateDynamic("inboundTransitionState")(inboundTransitionState.asInstanceOf[js.Any])
+    if (latestExecution != null) __obj.updateDynamic("latestExecution")(latestExecution.asInstanceOf[js.Any])
+    if (stageName != null) __obj.updateDynamic("stageName")(stageName.asInstanceOf[js.Any])
     __obj.asInstanceOf[StageState]
   }
 }

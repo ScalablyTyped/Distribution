@@ -10,9 +10,9 @@ A simple, expressive way to validate data in JavaScript.
 | ------------------ | :-------------: |
 | Full name          | superstruct |
 | Keywords           | api, array, assert, cast, check, checker, collection, data, error, express, hapi, interface, invalid, joi, json, list, model, object, orm, scalar, schema, struct, throw, type, types, valid, validate, validation, validator |
-| # releases         | 32 |
-| # dependents       | 47 |
-| # downloads        | 173998 |
+| # releases         | 13 |
+| # dependents       | 76 |
+| # downloads        | 813765 |
 | # stars            | 0 |
 
 ## Links

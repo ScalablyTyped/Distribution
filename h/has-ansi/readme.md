@@ -9,10 +9,10 @@ Check if a string has ANSI escape codes
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | has-ansi |
-| Keywords           | ansi, styles, color, colour, colors, terminal, console, string, tty, escape, shell, xterm, command-line, text, regex, regexp, re, match, test, find, pattern, has |
+| Keywords           | ansi, styles, color, colour, colors, terminal, console, string, tty, escape, shell, xterm, command-line, text, regex, regexp, match, test, find, pattern, has |
 | # releases         | 2 |
-| # dependents       | 97 |
-| # downloads        | 334892479 |
+| # dependents       | 114 |
+| # downloads        | 452315140 |
 | # stars            | 6 |
 
 ## Links

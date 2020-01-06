@@ -12,7 +12,7 @@ Light-weight EventEmitter (less than 1KB when gzipped)
 | Keywords           | browser, emitter, event, eventlistener, fire, trigger |
 | # releases         | 2 |
 | # dependents       | 10 |
-| # downloads        | 3642567 |
+| # downloads        | 9285020 |
 | # stars            | 0 |
 
 ## Links

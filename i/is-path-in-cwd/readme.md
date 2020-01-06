@@ -10,9 +10,9 @@ Check if a path is in the current working directory
 | ------------------ | :-------------: |
 | Full name          | is-path-in-cwd |
 | Keywords           | path, cwd, pwd, check, filepath, file, folder, in, inside |
-| # releases         | 3 |
-| # dependents       | 26 |
-| # downloads        | 221146761 |
+| # releases         | 5 |
+| # dependents       | 32 |
+| # downloads        | 310743896 |
 | # stars            | 2 |
 
 ## Links

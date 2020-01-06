@@ -4,21 +4,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DisableVgwRoutePropagationRequest extends js.Object {
   /**
     * The ID of the virtual private gateway.
     */
-  var GatewayId: String
+  var GatewayId: VpnGatewayId = js.native
   /**
     * The ID of the route table.
     */
-  var RouteTableId: String
+  var RouteTableId: typings.awsDashSdk.clientsEc2Mod.RouteTableId = js.native
 }
 
 object DisableVgwRoutePropagationRequest {
   @scala.inline
-  def apply(GatewayId: String, RouteTableId: String): DisableVgwRoutePropagationRequest = {
-    val __obj = js.Dynamic.literal(GatewayId = GatewayId, RouteTableId = RouteTableId)
+  def apply(GatewayId: VpnGatewayId, RouteTableId: RouteTableId): DisableVgwRoutePropagationRequest = {
+    val __obj = js.Dynamic.literal(GatewayId = GatewayId.asInstanceOf[js.Any], RouteTableId = RouteTableId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DisableVgwRoutePropagationRequest]
   }

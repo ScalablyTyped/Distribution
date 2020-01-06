@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ResolverRuleAssociationState extends js.Object {
   /**
     * A name for the association that you're creating between a resolver rule and a VPC.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of the resolver rule that you want to associate with the VPC.
     */
-  val resolverRuleId: js.UndefOr[Input[String]] = js.undefined
+  val resolverRuleId: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of the VPC that you want to associate the resolver rule with.
     */
-  val vpcId: js.UndefOr[Input[String]] = js.undefined
+  val vpcId: js.UndefOr[Input[String]] = js.native
 }
 
 object ResolverRuleAssociationState {

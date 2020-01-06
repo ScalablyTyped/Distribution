@@ -31,11 +31,8 @@ abstract class HttpCookieCollection () extends Array[HttpCookie] {
     */
   def getMany(startIndex: Double): Anon_ItemsReturnValueHttpCookie = js.native
   def indexOf(value: HttpCookie, extra: js.Any*): Anon_Index = js.native
-  /**
-    * Retrieves the index of an HttpCookie in the HttpCookieCollection .
-    * @param value The HttpCookie to find in the HttpCookieCollection .
-    */
+  /* hack */
   @JSName("indexOf")
-  def indexOf_Anon_Index(value: HttpCookie): Anon_Index = js.native
+  def indexOf_Double(searchElement: HttpCookie): Double = js.native
 }
 

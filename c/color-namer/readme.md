@@ -11,14 +11,14 @@ Give me a color and I'll name it.
 | Full name          | color-namer |
 | Keywords           | color, colors, names, rgb, hsl, hsv, lab, search, tagging, image, design |
 | # releases         | 2 |
-| # dependents       | 24 |
-| # downloads        | 50609 |
+| # dependents       | 35 |
+| # downloads        | 343113 |
 | # stars            | 6 |
 
 ## Links
-- [Homepage](https://github.com/zeke/color-namer#readme)
-- [Bugs](https://github.com/zeke/color-namer/issues)
-- [Repository](https://github.com/zeke/color-namer)
+- [Homepage](https://github.com/colorjs/color-namer#readme)
+- [Bugs](https://github.com/colorjs/color-namer/issues)
+- [Repository](https://github.com/colorjs/color-namer)
 - [Npm](https://www.npmjs.com/package/color-namer)
     
 

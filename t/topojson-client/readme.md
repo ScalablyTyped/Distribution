@@ -10,9 +10,9 @@ Manipulate TopoJSON and convert it to GeoJSON.
 | ------------------ | :-------------: |
 | Full name          | topojson-client |
 | Keywords           | topojson, topology, geojson |
-| # releases         | 0 |
-| # dependents       | 46 |
-| # downloads        | 5160375 |
+| # releases         | 3 |
+| # dependents       | 64 |
+| # downloads        | 8687707 |
 | # stars            | 0 |
 
 ## Links

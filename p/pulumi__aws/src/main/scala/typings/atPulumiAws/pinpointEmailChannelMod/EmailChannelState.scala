@@ -5,31 +5,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EmailChannelState extends js.Object {
   /**
     * The application ID.
     */
-  val applicationId: js.UndefOr[Input[String]] = js.undefined
+  val applicationId: js.UndefOr[Input[String]] = js.native
   /**
     * Whether the channel is enabled or disabled. Defaults to `true`.
     */
-  val enabled: js.UndefOr[Input[Boolean]] = js.undefined
+  val enabled: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The email address used to send emails from.
     */
-  val fromAddress: js.UndefOr[Input[String]] = js.undefined
+  val fromAddress: js.UndefOr[Input[String]] = js.native
   /**
     * The ARN of an identity verified with SES.
     */
-  val identity: js.UndefOr[Input[String]] = js.undefined
+  val identity: js.UndefOr[Input[String]] = js.native
   /**
     * Messages per second that can be sent.
     */
-  val messagesPerSecond: js.UndefOr[Input[Double]] = js.undefined
+  val messagesPerSecond: js.UndefOr[Input[Double]] = js.native
   /**
     * The ARN of an IAM Role used to submit events to Mobile Analytics' event ingestion service.
     */
-  val roleArn: js.UndefOr[Input[String]] = js.undefined
+  val roleArn: js.UndefOr[Input[String]] = js.native
 }
 
 object EmailChannelState {

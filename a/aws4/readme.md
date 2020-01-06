@@ -10,9 +10,9 @@ Signs and prepares requests using AWS Signature Version 4
 | ------------------ | :-------------: |
 | Full name          | aws4 |
 | Keywords           | amazon, aws, signature, s3, ec2, autoscaling, cloudformation, elasticloadbalancing, elb, elasticbeanstalk, cloudsearch, dynamodb, kinesis, lambda, glacier, sqs, sns, iam, sts, ses, swf, storagegateway, datapipeline, directconnect, redshift, opsworks, rds, monitoring, cloudtrail, cloudfront, codedeploy, elasticache, elasticmapreduce, elastictranscoder, emr, cloudwatch, mobileanalytics, cognitoidentity, cognitosync, cognito, containerservice, ecs, appstream, keymanagementservice, kms, config, cloudhsm, route53, route53domains, logs |
-| # releases         | 3 |
-| # dependents       | 159 |
-| # downloads        | 414576139 |
+| # releases         | 4 |
+| # dependents       | 208 |
+| # downloads        | 566721280 |
 | # stars            | 11 |
 
 ## Links

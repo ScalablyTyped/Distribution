@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ConfirmDeviceRequest extends js.Object {
   /**
     * The access token.
     */
-  var AccessToken: TokenModelType
+  var AccessToken: TokenModelType = js.native
   /**
     * The device key.
     */
-  var DeviceKey: DeviceKeyType
+  var DeviceKey: DeviceKeyType = js.native
   /**
     * The device name.
     */
-  var DeviceName: js.UndefOr[DeviceNameType] = js.undefined
+  var DeviceName: js.UndefOr[DeviceNameType] = js.native
   /**
     * The configuration of the device secret verifier.
     */
-  var DeviceSecretVerifierConfig: js.UndefOr[DeviceSecretVerifierConfigType] = js.undefined
+  var DeviceSecretVerifierConfig: js.UndefOr[DeviceSecretVerifierConfigType] = js.native
 }
 
 object ConfirmDeviceRequest {
@@ -31,9 +32,9 @@ object ConfirmDeviceRequest {
     DeviceName: DeviceNameType = null,
     DeviceSecretVerifierConfig: DeviceSecretVerifierConfigType = null
   ): ConfirmDeviceRequest = {
-    val __obj = js.Dynamic.literal(AccessToken = AccessToken, DeviceKey = DeviceKey)
-    if (DeviceName != null) __obj.updateDynamic("DeviceName")(DeviceName)
-    if (DeviceSecretVerifierConfig != null) __obj.updateDynamic("DeviceSecretVerifierConfig")(DeviceSecretVerifierConfig)
+    val __obj = js.Dynamic.literal(AccessToken = AccessToken.asInstanceOf[js.Any], DeviceKey = DeviceKey.asInstanceOf[js.Any])
+    if (DeviceName != null) __obj.updateDynamic("DeviceName")(DeviceName.asInstanceOf[js.Any])
+    if (DeviceSecretVerifierConfig != null) __obj.updateDynamic("DeviceSecretVerifierConfig")(DeviceSecretVerifierConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfirmDeviceRequest]
   }
 }

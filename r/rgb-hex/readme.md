@@ -10,9 +10,9 @@ Convert RGB(A) color to HEX
 | ------------------ | :-------------: |
 | Full name          | rgb-hex |
 | Keywords           | rgb, hex, color, colour, convert, conversion, converter |
-| # releases         | 1 |
-| # dependents       | 43 |
-| # downloads        | 20954455 |
+| # releases         | 2 |
+| # dependents       | 52 |
+| # downloads        | 19083686 |
 | # stars            | 4 |
 
 ## Links

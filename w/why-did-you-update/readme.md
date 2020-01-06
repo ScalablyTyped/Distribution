@@ -10,9 +10,9 @@ Patch React to discover unnecessary re-renders
 | ------------------ | :-------------: |
 | Full name          | why-did-you-update |
 | Keywords           | react-component |
-| # releases         | 10 |
-| # dependents       | 15 |
-| # downloads        | 1806814 |
+| # releases         | 9 |
+| # dependents       | 17 |
+| # downloads        | 2791524 |
 | # stars            | 9 |
 
 ## Links

@@ -11,9 +11,9 @@ A node.js driver for mysql. It is written in JavaScript, does not require compil
 | Full name          | mysql |
 | Keywords           | - |
 | # releases         | 4 |
-| # dependents       | 3114 |
-| # downloads        | 15967483 |
-| # stars            | 490 |
+| # dependents       | 3589 |
+| # downloads        | 22366153 |
+| # stars            | 491 |
 
 ## Links
 - [Homepage](https://github.com/mysqljs/mysql#readme)

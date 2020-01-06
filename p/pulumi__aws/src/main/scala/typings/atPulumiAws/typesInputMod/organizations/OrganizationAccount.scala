@@ -5,23 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OrganizationAccount extends js.Object {
   /**
     * ARN of the root
     */
-  var arn: js.UndefOr[Input[String]] = js.undefined
+  var arn: js.UndefOr[Input[String]] = js.native
   /**
     * Email of the account
     */
-  var email: js.UndefOr[Input[String]] = js.undefined
+  var email: js.UndefOr[Input[String]] = js.native
   /**
     * Identifier of the root
     */
-  var id: js.UndefOr[Input[String]] = js.undefined
+  var id: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the policy type
     */
-  var name: js.UndefOr[Input[String]] = js.undefined
+  var name: js.UndefOr[Input[String]] = js.native
 }
 
 object OrganizationAccount {

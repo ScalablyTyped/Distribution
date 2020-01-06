@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VirtualNodeSpecBackend extends js.Object {
   /**
     * Specifies a virtual service to use as a backend for a virtual node.
     */
-  var virtualService: js.UndefOr[Input[VirtualNodeSpecBackendVirtualService]] = js.undefined
+  var virtualService: js.UndefOr[Input[VirtualNodeSpecBackendVirtualService]] = js.native
 }
 
 object VirtualNodeSpecBackend {

@@ -11,8 +11,8 @@ Check if a value is an object
 | Full name          | is-obj |
 | Keywords           | object, is, check, test, type |
 | # releases         | 2 |
-| # dependents       | 65 |
-| # downloads        | 189345140 |
+| # dependents       | 74 |
+| # downloads        | 314479018 |
 | # stars            | 2 |
 
 ## Links

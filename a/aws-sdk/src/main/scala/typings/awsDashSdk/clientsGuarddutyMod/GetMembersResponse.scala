@@ -4,21 +4,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetMembersResponse extends js.Object {
   /**
     * A list of members.
     */
-  var Members: typings.awsDashSdk.clientsGuarddutyMod.Members
+  var Members: typings.awsDashSdk.clientsGuarddutyMod.Members = js.native
   /**
     * A list of objects containing the unprocessed account and a result string explaining why it was unprocessed.
     */
-  var UnprocessedAccounts: typings.awsDashSdk.clientsGuarddutyMod.UnprocessedAccounts
+  var UnprocessedAccounts: typings.awsDashSdk.clientsGuarddutyMod.UnprocessedAccounts = js.native
 }
 
 object GetMembersResponse {
   @scala.inline
   def apply(Members: Members, UnprocessedAccounts: UnprocessedAccounts): GetMembersResponse = {
-    val __obj = js.Dynamic.literal(Members = Members, UnprocessedAccounts = UnprocessedAccounts)
+    val __obj = js.Dynamic.literal(Members = Members.asInstanceOf[js.Any], UnprocessedAccounts = UnprocessedAccounts.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetMembersResponse]
   }

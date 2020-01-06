@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InstanceEphemeralBlockDevice extends js.Object {
-  var deviceName: Input[String]
-  var virtualName: Input[String]
+  var deviceName: Input[String] = js.native
+  var virtualName: Input[String] = js.native
 }
 
 object InstanceEphemeralBlockDevice {

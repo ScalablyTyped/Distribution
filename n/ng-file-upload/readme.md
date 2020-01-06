@@ -10,9 +10,9 @@ An AngularJS directive for file upload using HTML5 with FileAPI polyfill for uns
 | ------------------ | :-------------: |
 | Full name          | ng-file-upload |
 | Keywords           | angularjs, ng-file-upload, file-upload, javascript |
-| # releases         | 1 |
-| # dependents       | 69 |
-| # downloads        | 3202886 |
+| # releases         | 0 |
+| # dependents       | 75 |
+| # downloads        | 3789385 |
 | # stars            | 25 |
 
 ## Links

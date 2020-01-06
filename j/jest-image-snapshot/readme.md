@@ -10,9 +10,9 @@ Jest matcher for image comparisons. Most commonly used for visual regression tes
 | ------------------ | :-------------: |
 | Full name          | jest-image-snapshot |
 | Keywords           | test, amex, visual testing, css, jest, browser testing |
-| # releases         | 19 |
-| # dependents       | 19 |
-| # downloads        | 2714177 |
+| # releases         | 16 |
+| # dependents       | 31 |
+| # downloads        | 4256212 |
 | # stars            | 4 |
 
 ## Links

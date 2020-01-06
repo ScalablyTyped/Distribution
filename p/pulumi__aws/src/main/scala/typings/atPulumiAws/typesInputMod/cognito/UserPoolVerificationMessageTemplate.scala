@@ -5,31 +5,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UserPoolVerificationMessageTemplate extends js.Object {
   /**
     * The default email option. Must be either `CONFIRM_WITH_CODE` or `CONFIRM_WITH_LINK`. Defaults to `CONFIRM_WITH_CODE`.
     */
-  var defaultEmailOption: js.UndefOr[Input[String]] = js.undefined
+  var defaultEmailOption: js.UndefOr[Input[String]] = js.native
   /**
     * The email message template. Must contain the `{####}` placeholder. Conflicts with `emailVerificationMessage` argument.
     */
-  var emailMessage: js.UndefOr[Input[String]] = js.undefined
+  var emailMessage: js.UndefOr[Input[String]] = js.native
   /**
     * The email message template for sending a confirmation link to the user, it must contain the `{##Click Here##}` placeholder.
     */
-  var emailMessageByLink: js.UndefOr[Input[String]] = js.undefined
+  var emailMessageByLink: js.UndefOr[Input[String]] = js.native
   /**
     * The subject line for the email message template. Conflicts with `emailVerificationSubject` argument.
     */
-  var emailSubject: js.UndefOr[Input[String]] = js.undefined
+  var emailSubject: js.UndefOr[Input[String]] = js.native
   /**
     * The subject line for the email message template for sending a confirmation link to the user.
     */
-  var emailSubjectByLink: js.UndefOr[Input[String]] = js.undefined
+  var emailSubjectByLink: js.UndefOr[Input[String]] = js.native
   /**
     * The SMS message template. Must contain the `{####}` placeholder. Conflicts with `smsVerificationMessage` argument.
     */
-  var smsMessage: js.UndefOr[Input[String]] = js.undefined
+  var smsMessage: js.UndefOr[Input[String]] = js.native
 }
 
 object UserPoolVerificationMessageTemplate {

@@ -12,7 +12,7 @@ Winston logger for Koa
 | Keywords           | logging, koa, winston, async |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 20391 |
+| # downloads        | 26054 |
 | # stars            | 0 |
 
 ## Links

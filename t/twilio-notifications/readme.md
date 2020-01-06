@@ -10,9 +10,9 @@ Client library for Twilio Notifications service
 | ------------------ | :-------------: |
 | Full name          | twilio-notifications |
 | Keywords           | - |
-| # releases         | 11 |
+| # releases         | 17 |
 | # dependents       | 3 |
-| # downloads        | 308257 |
+| # downloads        | 699345 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ Koa.js middleware for useragent detection
 | ------------------ | :-------------: |
 | Full name          | koa-useragent |
 | Keywords           | koa, middleware, useragent |
-| # releases         | 3 |
-| # dependents       | 9 |
-| # downloads        | 81643 |
+| # releases         | 11 |
+| # dependents       | 10 |
+| # downloads        | 159858 |
 | # stars            | 1 |
 
 ## Links

@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EnvironmentSetting extends js.Object {
   /**
     * A unique name for this Environment. This name is used
     * in the application URL
     */
-  var name: Input[String]
-  var namespace: Input[String]
-  var resource: js.UndefOr[Input[String]] = js.undefined
-  var value: Input[String]
+  var name: Input[String] = js.native
+  var namespace: Input[String] = js.native
+  var resource: js.UndefOr[Input[String]] = js.native
+  var value: Input[String] = js.native
 }
 
 object EnvironmentSetting {

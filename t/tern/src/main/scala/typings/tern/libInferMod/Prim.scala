@@ -1,7 +1,7 @@
 package typings.tern.libInferMod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.tern.Anon_NameString_245567777
+import typings.tern.Anon_NameString_1102027680
 import typings.tern.ternStrings.bool
 import typings.tern.ternStrings.number
 import typings.tern.ternStrings.string
@@ -15,7 +15,7 @@ trait Prim
   /** The name of the type, if any. */
   var name: string | bool | number
   /** The prototype of the object, or null. */
-  var proto: Obj with Anon_NameString_245567777
+  var proto: Obj with Anon_NameString_1102027680
   def gatherProperties(f: js.Function1[/* repeated */ js.Any, Unit], depth: Double): Unit
   /** Get an `AVal` that represents the named property of this type. */
   def getProp(prop: String): AVal

@@ -10,9 +10,9 @@ Conceal a string with asterisks
 | ------------------ | :-------------: |
 | Full name          | coverup |
 | Keywords           | coverup, conceal, concealed, mask, masked, obfuscate, obfuscated, hide, hidden, password, asterisk, asterisks, pad |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 2772 |
+| # downloads        | 6013 |
 | # stars            | 1 |
 
 ## Links

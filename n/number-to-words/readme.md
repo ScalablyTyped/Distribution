@@ -11,8 +11,8 @@ Contains some util methods for converting numbers into words, ordinal words and 
 | Full name          | number-to-words |
 | Keywords           | converter, number, ordinal, string, tool, word |
 | # releases         | 2 |
-| # dependents       | 30 |
-| # downloads        | 700934 |
+| # dependents       | 45 |
+| # downloads        | 1511349 |
 | # stars            | 2 |
 
 ## Links

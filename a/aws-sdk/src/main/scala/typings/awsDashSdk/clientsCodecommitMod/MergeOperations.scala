@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MergeOperations extends js.Object {
   /**
     * The operation on a file in the destination of a merge or pull request.
     */
-  var destination: js.UndefOr[ChangeTypeEnum] = js.undefined
+  var destination: js.UndefOr[ChangeTypeEnum] = js.native
   /**
-    * The operation on a file (add, modify, or delete) of a file in the source of a merge or pull request.
+    * The operation (add, modify, or delete) on a file in the source of a merge or pull request.
     */
-  var source: js.UndefOr[ChangeTypeEnum] = js.undefined
+  var source: js.UndefOr[ChangeTypeEnum] = js.native
 }
 
 object MergeOperations {

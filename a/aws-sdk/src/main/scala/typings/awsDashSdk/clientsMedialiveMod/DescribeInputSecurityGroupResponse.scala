@@ -4,31 +4,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DescribeInputSecurityGroupResponse extends js.Object {
   /**
     * Unique ARN of Input Security Group
     */
-  var Arn: js.UndefOr[__string] = js.undefined
+  var Arn: js.UndefOr[__string] = js.native
   /**
     * The Id of the Input Security Group
     */
-  var Id: js.UndefOr[__string] = js.undefined
+  var Id: js.UndefOr[__string] = js.native
   /**
     * The list of inputs currently using this Input Security Group.
     */
-  var Inputs: js.UndefOr[__listOf__string] = js.undefined
+  var Inputs: js.UndefOr[__listOf__string] = js.native
   /**
     * The current state of the Input Security Group.
     */
-  var State: js.UndefOr[InputSecurityGroupState] = js.undefined
+  var State: js.UndefOr[InputSecurityGroupState] = js.native
   /**
     * A collection of key-value pairs.
     */
-  var Tags: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.Tags] = js.undefined
+  var Tags: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.Tags] = js.native
   /**
     * Whitelist rules and their sync status
     */
-  var WhitelistRules: js.UndefOr[__listOfInputWhitelistRule] = js.undefined
+  var WhitelistRules: js.UndefOr[__listOfInputWhitelistRule] = js.native
 }
 
 object DescribeInputSecurityGroupResponse {
@@ -42,12 +43,12 @@ object DescribeInputSecurityGroupResponse {
     WhitelistRules: __listOfInputWhitelistRule = null
   ): DescribeInputSecurityGroupResponse = {
     val __obj = js.Dynamic.literal()
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn)
-    if (Id != null) __obj.updateDynamic("Id")(Id)
-    if (Inputs != null) __obj.updateDynamic("Inputs")(Inputs)
+    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
+    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
+    if (Inputs != null) __obj.updateDynamic("Inputs")(Inputs.asInstanceOf[js.Any])
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
-    if (WhitelistRules != null) __obj.updateDynamic("WhitelistRules")(WhitelistRules)
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
+    if (WhitelistRules != null) __obj.updateDynamic("WhitelistRules")(WhitelistRules.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeInputSecurityGroupResponse]
   }
 }

@@ -10,9 +10,9 @@ a streaming interface for archive generation
 | ------------------ | :-------------: |
 | Full name          | archiver |
 | Keywords           | archive, archiver, stream, zip, tar |
-| # releases         | 8 |
-| # dependents       | 1580 |
-| # downloads        | 45098974 |
+| # releases         | 7 |
+| # dependents       | 1907 |
+| # downloads        | 68563916 |
 | # stars            | 77 |
 
 ## Links

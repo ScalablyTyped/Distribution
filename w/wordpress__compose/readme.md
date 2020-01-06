@@ -10,9 +10,9 @@ WordPress higher-order components (HOCs).
 | ------------------ | :-------------: |
 | Full name          | @wordpress/compose |
 | Keywords           | wordpress, React, hoc |
-| # releases         | 20 |
-| # dependents       | 17 |
-| # downloads        | 140062 |
+| # releases         | 29 |
+| # dependents       | 20 |
+| # downloads        | 260866 |
 | # stars            | 0 |
 
 ## Links

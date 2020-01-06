@@ -10,9 +10,9 @@ Safer Node.js Buffer API
 | ------------------ | :-------------: |
 | Full name          | safe-buffer |
 | Keywords           | buffer, buffer allocate, node security, safe, safe-buffer, security, uninitialized |
-| # releases         | 4 |
-| # dependents       | 705 |
-| # downloads        | 582104032 |
+| # releases         | 3 |
+| # dependents       | 878 |
+| # downloads        | 945475015 |
 | # stars            | 5 |
 
 ## Links

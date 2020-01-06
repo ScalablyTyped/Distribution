@@ -2,11 +2,11 @@ package typings.reactDashDevDashUtils.webpackDevServerUtilsMod
 
 import typings.reactDashDevDashUtils.Anon_BannerPlugin
 import typings.webpack.webpackMod.Compiler
-import typings.webpack.webpackMod.Compiler.Handler
 import typings.webpack.webpackMod.Compiler.Watching
 import typings.webpack.webpackMod.Configuration
 import typings.webpack.webpackMod.ConfigurationFactory
 import typings.webpack.webpackMod.MultiCompiler
+import typings.webpack.webpackMod.MultiCompiler.Handler
 import typings.webpack.webpackMod.MultiConfigurationFactory
 import typings.webpack.webpackMod.MultiWatching
 import scala.scalajs.js
@@ -45,7 +45,7 @@ trait CreateCompilerOptions extends js.Object {
     */
   def webpack(
     options: ConfigurationFactory | MultiConfigurationFactory,
-    handler: Handler | typings.webpack.webpackMod.MultiCompiler.Handler
+    handler: Handler | typings.webpack.webpackMod.Compiler.Handler
   ): MultiWatching | MultiCompiler = js.native
   /**
     * Takes the `require('webpack')` entry point.
@@ -54,7 +54,7 @@ trait CreateCompilerOptions extends js.Object {
   /**
     * Takes the `require('webpack')` entry point.
     */
-  def webpack(options: js.Array[Configuration], handler: typings.webpack.webpackMod.MultiCompiler.Handler): MultiWatching | MultiCompiler = js.native
+  def webpack(options: js.Array[Configuration], handler: Handler): MultiWatching | MultiCompiler = js.native
   /**
     * Takes the `require('webpack')` entry point.
     */
@@ -62,6 +62,6 @@ trait CreateCompilerOptions extends js.Object {
   /**
     * Takes the `require('webpack')` entry point.
     */
-  def webpack(options: Configuration, handler: Handler): Watching | Compiler = js.native
+  def webpack(options: Configuration, handler: typings.webpack.webpackMod.Compiler.Handler): Watching | Compiler = js.native
 }
 

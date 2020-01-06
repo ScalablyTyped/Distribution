@@ -10,12 +10,15 @@ Accessible tooltips
 | ------------------ | :-------------: |
 | Full name          | @reach/tooltip |
 | Keywords           | - |
-| # releases         | 12 |
-| # dependents       | 4 |
-| # downloads        | 13558 |
+| # releases         | 27 |
+| # dependents       | 10 |
+| # downloads        | 272244 |
 | # stars            | 0 |
 
 ## Links
+- [Homepage](https://github.com/reach/reach-ui#readme)
+- [Bugs](https://github.com/reach/reach-ui/issues)
+- [Repository](https://github.com/reach/reach-ui)
 - [Npm](https://www.npmjs.com/package/%40reach%2Ftooltip)
     
 

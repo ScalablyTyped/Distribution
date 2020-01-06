@@ -12,7 +12,7 @@ Content-range header formatter.
 | Keywords           | content-range, header, formatter, parser |
 | # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 60651 |
+| # downloads        | 79925 |
 | # stars            | 0 |
 
 ## Links

@@ -6,11 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/ExpansionPanel.ExpansionPanelClassKey>> */
+@js.native
 trait PartialStyleRulesExpansionPanelClassKey extends js.Object {
-  var disabled: js.UndefOr[CSSProperties] = js.undefined
-  var expanded: js.UndefOr[CSSProperties] = js.undefined
-  var root: js.UndefOr[CSSProperties] = js.undefined
-  var rounded: js.UndefOr[CSSProperties] = js.undefined
+  var disabled: js.UndefOr[CSSProperties] = js.native
+  var expanded: js.UndefOr[CSSProperties] = js.native
+  var root: js.UndefOr[CSSProperties] = js.native
+  var rounded: js.UndefOr[CSSProperties] = js.native
 }
 
 object PartialStyleRulesExpansionPanelClassKey {

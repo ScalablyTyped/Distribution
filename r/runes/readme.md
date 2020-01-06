@@ -10,9 +10,9 @@ Unicode-aware JS string splitting
 | ------------------ | :-------------: |
 | Full name          | runes |
 | Keywords           | unicode, emoji, runes, split, split string |
-| # releases         | 4 |
-| # dependents       | 12 |
-| # downloads        | 86400 |
+| # releases         | 1 |
+| # dependents       | 19 |
+| # downloads        | 331483 |
 | # stars            | 2 |
 
 ## Links

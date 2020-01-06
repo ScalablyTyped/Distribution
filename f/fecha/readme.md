@@ -10,9 +10,9 @@ Date formatting and parsing
 | ------------------ | :-------------: |
 | Full name          | fecha |
 | Keywords           | date, parse, moment, format, fecha, formatting |
-| # releases         | 5 |
-| # dependents       | 151 |
-| # downloads        | 18930667 |
+| # releases         | 6 |
+| # dependents       | 195 |
+| # downloads        | 52347387 |
 | # stars            | 7 |
 
 ## Links

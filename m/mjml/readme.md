@@ -10,9 +10,9 @@ MJML: the only framework that makes responsive-email easy
 | ------------------ | :-------------: |
 | Full name          | mjml |
 | Keywords           | - |
-| # releases         | 37 |
-| # dependents       | 85 |
-| # downloads        | 1669278 |
+| # releases         | 30 |
+| # dependents       | 111 |
+| # downloads        | 3641433 |
 | # stars            | 12 |
 
 ## Links

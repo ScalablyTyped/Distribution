@@ -10,9 +10,9 @@ Power Assert in JavaScript
 | ------------------ | :-------------: |
 | Full name          | power-assert |
 | Keywords           | power-assert, assert, assertion, test, testing, ecmascript, ast |
-| # releases         | 6 |
-| # dependents       | 79 |
-| # downloads        | 11247382 |
+| # releases         | 4 |
+| # dependents       | 94 |
+| # downloads        | 9412932 |
 | # stars            | 17 |
 
 ## Links

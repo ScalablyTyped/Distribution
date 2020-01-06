@@ -10,9 +10,9 @@ Blazing fast, zero configuration web application bundler
 | ------------------ | :-------------: |
 | Full name          | parcel-bundler |
 | Keywords           | - |
-| # releases         | 43 |
-| # dependents       | 204 |
-| # downloads        | 1629204 |
+| # releases         | 30 |
+| # dependents       | 309 |
+| # downloads        | 4263108 |
 | # stars            | 31 |
 
 ## Links

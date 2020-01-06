@@ -11,8 +11,8 @@ Generates an id useable in json rpc payloads.
 | Full name          | json-rpc-random-id |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 666147 |
+| # dependents       | 5 |
+| # downloads        | 939251 |
 | # stars            | 0 |
 
 ## Links

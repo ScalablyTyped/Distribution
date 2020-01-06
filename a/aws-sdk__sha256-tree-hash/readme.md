@@ -9,9 +9,9 @@ Typings are for version 0.1.0-preview.2
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/sha256-tree-hash |
 | Keywords           | - |
-| # releases         | 7 |
+| # releases         | 11 |
 | # dependents       | 3 |
-| # downloads        | 355 |
+| # downloads        | 592 |
 | # stars            | 0 |
 
 ## Links

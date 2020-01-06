@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Grid
-  extends Instantiable2[/* width */ Double, /* height */ Double, Grid]
-     with Instantiable1[/* matrix */ js.Array[js.Array[Double]], Grid] {
+  extends Instantiable1[/* matrix */ js.Array[js.Array[Double]], Grid]
+     with Instantiable2[/* width */ Double, /* height */ Double, Grid] {
   var height: Double = js.native
   var width: Double = js.native
   def getNeighbors(node: Node, diagonalMovement: DiagonalMovement): js.Array[Node] = js.native

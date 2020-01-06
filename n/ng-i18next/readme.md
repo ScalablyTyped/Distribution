@@ -10,9 +10,9 @@ AngularJS provider, filter and directive for i18next (i18next by Jan Mühlemann)
 | ------------------ | :-------------: |
 | Full name          | ng-i18next |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 1 |
 | # dependents       | 1 |
-| # downloads        | 46896 |
+| # downloads        | 129217 |
 | # stars            | 0 |
 
 ## Links

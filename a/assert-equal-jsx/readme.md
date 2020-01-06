@@ -12,7 +12,7 @@ assertEqualJSX
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 1296 |
+| # downloads        | 1243 |
 | # stars            | 0 |
 
 ## Links

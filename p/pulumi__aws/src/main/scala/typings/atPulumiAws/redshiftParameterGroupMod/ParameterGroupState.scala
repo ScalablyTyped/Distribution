@@ -7,31 +7,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ParameterGroupState extends js.Object {
   /**
     * Amazon Resource Name (ARN) of parameter group
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * The description of the Redshift parameter group. Defaults to "Managed by Pulumi".
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * The family of the Redshift parameter group.
     */
-  val family: js.UndefOr[Input[String]] = js.undefined
+  val family: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the Redshift parameter.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * A list of Redshift parameters to apply.
     */
-  val parameters: js.UndefOr[Input[js.Array[Input[ParameterGroupParameter]]]] = js.undefined
+  val parameters: js.UndefOr[Input[js.Array[Input[ParameterGroupParameter]]]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object ParameterGroupState {

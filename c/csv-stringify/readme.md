@@ -10,9 +10,9 @@ CSV stringifier implementing the Node.js `stream.Transform` API
 | ------------------ | :-------------: |
 | Full name          | csv-stringify |
 | Keywords           | csv, stringify, stringifier |
-| # releases         | 25 |
-| # dependents       | 165 |
-| # downloads        | 13406593 |
+| # releases         | 26 |
+| # dependents       | 204 |
+| # downloads        | 18403155 |
 | # stars            | 2 |
 
 ## Links

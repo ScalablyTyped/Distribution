@@ -10,9 +10,9 @@ A node port of python's os.walk
 | ------------------ | :-------------: |
 | Full name          | walk |
 | Keywords           | util, os, sys, fs, walk, walkSync |
-| # releases         | 5 |
-| # dependents       | 728 |
-| # downloads        | 13873126 |
+| # releases         | 6 |
+| # dependents       | 768 |
+| # downloads        | 16147230 |
 | # stars            | 23 |
 
 ## Links

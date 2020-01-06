@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Scte20SourceSettings extends js.Object {
   /**
     * If upconvert, 608 data is both passed through via the "608 compatibility bytes" fields of the 708 wrapper as well as translated into 708. 708 data present in the source content will be discarded.
     */
-  var Convert608To708: js.UndefOr[Scte20Convert608To708] = js.undefined
+  var Convert608To708: js.UndefOr[Scte20Convert608To708] = js.native
   /**
     * Specifies the 608/708 channel number within the video track from which to extract captions. Unused for passthrough.
     */
-  var Source608ChannelNumber: js.UndefOr[__integerMin1Max4] = js.undefined
+  var Source608ChannelNumber: js.UndefOr[__integerMin1Max4] = js.native
 }
 
 object Scte20SourceSettings {

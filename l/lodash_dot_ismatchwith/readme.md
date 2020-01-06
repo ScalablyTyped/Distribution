@@ -12,7 +12,7 @@ The lodash method `_.isMatchWith` exported as a module.
 | Keywords           | lodash-modularized, ismatchwith |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 18878 |
+| # downloads        | 30554 |
 | # stars            | 0 |
 
 ## Links

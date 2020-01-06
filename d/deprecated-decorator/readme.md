@@ -11,8 +11,8 @@ A simple decorator for deprecated methods and properties.
 | Full name          | deprecated-decorator |
 | Keywords           | deprecated, decorator, typescript, babel, es7 |
 | # releases         | 0 |
-| # dependents       | 24 |
-| # downloads        | 16026353 |
+| # dependents       | 30 |
+| # downloads        | 31230033 |
 | # stars            | 0 |
 
 ## Links

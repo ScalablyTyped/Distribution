@@ -10,9 +10,9 @@ JavaScript implementation of the Money value object.
 | ------------------ | :-------------: |
 | Full name          | js-money |
 | Keywords           | money, javascript, currency |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 11 |
-| # downloads        | 144588 |
+| # downloads        | 194281 |
 | # stars            | 4 |
 
 ## Links

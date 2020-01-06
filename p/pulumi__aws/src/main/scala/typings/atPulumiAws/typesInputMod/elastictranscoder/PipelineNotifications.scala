@@ -5,23 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PipelineNotifications extends js.Object {
   /**
     * The topic ARN for the Amazon SNS topic that you want to notify when Elastic Transcoder has finished processing a job in this pipeline.
     */
-  var completed: js.UndefOr[Input[String]] = js.undefined
+  var completed: js.UndefOr[Input[String]] = js.native
   /**
     * The topic ARN for the Amazon SNS topic that you want to notify when Elastic Transcoder encounters an error condition while processing a job in this pipeline.
     */
-  var error: js.UndefOr[Input[String]] = js.undefined
+  var error: js.UndefOr[Input[String]] = js.native
   /**
     * The topic ARN for the Amazon Simple Notification Service (Amazon SNS) topic that you want to notify when Elastic Transcoder has started to process a job in this pipeline.
     */
-  var progressing: js.UndefOr[Input[String]] = js.undefined
+  var progressing: js.UndefOr[Input[String]] = js.native
   /**
     * The topic ARN for the Amazon SNS topic that you want to notify when Elastic Transcoder encounters a warning condition while processing a job in this pipeline.
     */
-  var warning: js.UndefOr[Input[String]] = js.undefined
+  var warning: js.UndefOr[Input[String]] = js.native
 }
 
 object PipelineNotifications {

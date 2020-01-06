@@ -10,9 +10,9 @@ JupyterLab - Code Console Extension
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/console-extension |
 | Keywords           | - |
-| # releases         | 46 |
+| # releases         | 65 |
 | # dependents       | 1 |
-| # downloads        | 582465 |
+| # downloads        | 752905 |
 | # stars            | 0 |
 
 ## Links

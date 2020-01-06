@@ -4,17 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetTableGlobalSecondaryIndex extends js.Object {
-  var hashKey: String
+  var hashKey: String = js.native
   /**
     * The name of the DynamoDB table.
     */
-  var name: String
-  var nonKeyAttributes: js.Array[String]
-  var projectionType: String
-  var rangeKey: String
-  var readCapacity: Double
-  var writeCapacity: Double
+  var name: String = js.native
+  var nonKeyAttributes: js.Array[String] = js.native
+  var projectionType: String = js.native
+  var rangeKey: String = js.native
+  var readCapacity: Double = js.native
+  var writeCapacity: Double = js.native
 }
 
 object GetTableGlobalSecondaryIndex {
@@ -28,7 +29,7 @@ object GetTableGlobalSecondaryIndex {
     readCapacity: Double,
     writeCapacity: Double
   ): GetTableGlobalSecondaryIndex = {
-    val __obj = js.Dynamic.literal(hashKey = hashKey, name = name, nonKeyAttributes = nonKeyAttributes, projectionType = projectionType, rangeKey = rangeKey, readCapacity = readCapacity, writeCapacity = writeCapacity)
+    val __obj = js.Dynamic.literal(hashKey = hashKey.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nonKeyAttributes = nonKeyAttributes.asInstanceOf[js.Any], projectionType = projectionType.asInstanceOf[js.Any], rangeKey = rangeKey.asInstanceOf[js.Any], readCapacity = readCapacity.asInstanceOf[js.Any], writeCapacity = writeCapacity.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetTableGlobalSecondaryIndex]
   }

@@ -4,35 +4,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BucketReplicationConfigurationRule extends js.Object {
   /**
     * Specifies the destination for the rule (documented below).
     */
-  var destination: BucketReplicationConfigurationRuleDestination
+  var destination: BucketReplicationConfigurationRuleDestination = js.native
   /**
     * Filter that identifies subset of objects to which the replication rule applies (documented below).
     */
-  var filter: js.UndefOr[BucketReplicationConfigurationRuleFilter] = js.undefined
+  var filter: js.UndefOr[BucketReplicationConfigurationRuleFilter] = js.native
   /**
     * Unique identifier for the rule.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String] = js.native
   /**
     * Object keyname prefix that identifies subset of objects to which the rule applies.
     */
-  var prefix: js.UndefOr[String] = js.undefined
+  var prefix: js.UndefOr[String] = js.native
   /**
     * The priority associated with the rule.
     */
-  var priority: js.UndefOr[Double] = js.undefined
+  var priority: js.UndefOr[Double] = js.native
   /**
     * Specifies special object selection criteria (documented below).
     */
-  var sourceSelectionCriteria: js.UndefOr[BucketReplicationConfigurationRuleSourceSelectionCriteria] = js.undefined
+  var sourceSelectionCriteria: js.UndefOr[BucketReplicationConfigurationRuleSourceSelectionCriteria] = js.native
   /**
     * The status of the rule. Either `Enabled` or `Disabled`. The rule is ignored if status is not Enabled.
     */
-  var status: String
+  var status: String = js.native
 }
 
 object BucketReplicationConfigurationRule {
@@ -46,12 +47,12 @@ object BucketReplicationConfigurationRule {
     priority: Int | Double = null,
     sourceSelectionCriteria: BucketReplicationConfigurationRuleSourceSelectionCriteria = null
   ): BucketReplicationConfigurationRule = {
-    val __obj = js.Dynamic.literal(destination = destination, status = status)
-    if (filter != null) __obj.updateDynamic("filter")(filter)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (sourceSelectionCriteria != null) __obj.updateDynamic("sourceSelectionCriteria")(sourceSelectionCriteria)
+    if (sourceSelectionCriteria != null) __obj.updateDynamic("sourceSelectionCriteria")(sourceSelectionCriteria.asInstanceOf[js.Any])
     __obj.asInstanceOf[BucketReplicationConfigurationRule]
   }
 }

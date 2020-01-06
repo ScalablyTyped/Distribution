@@ -15,8 +15,8 @@ package object clientsCloudsearchdomainMod {
   type BucketList = js.Array[Bucket]
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.`application/json`
-    - typings.awsDashSdk.awsDashSdkStrings.`application/xml`
+    - typings.awsDashSdk.awsDashSdkStrings.applicationSlashjson
+    - typings.awsDashSdk.awsDashSdkStrings.applicationSlashxml
     - java.lang.String
   */
   type ContentType = _ContentType | java.lang.String
@@ -39,7 +39,7 @@ package object clientsCloudsearchdomainMod {
   type Query = java.lang.String
   type QueryOptions = java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.simple
+    - typings.awsDashSdk.awsDashSdkStrings.simple_
     - typings.awsDashSdk.awsDashSdkStrings.structured
     - typings.awsDashSdk.awsDashSdkStrings.lucene
     - typings.awsDashSdk.awsDashSdkStrings.dismax
@@ -59,7 +59,7 @@ package object clientsCloudsearchdomainMod {
   type _Blob = Buffer | Uint8Array | Blob | java.lang.String | Readable
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2013-01-01`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | java.lang.String

@@ -6,15 +6,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BucketMetricFilter extends js.Object {
   /**
     * Object prefix for filtering (singular).
     */
-  var prefix: js.UndefOr[Input[String]] = js.undefined
+  var prefix: js.UndefOr[Input[String]] = js.native
   /**
     * Object tags for filtering (up to 10).
     */
-  var tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  var tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object BucketMetricFilter {

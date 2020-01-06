@@ -63,21 +63,21 @@ object distSrcApiTestUnderscoreAccessMod extends js.Object {
   def queryIdentifier(query: Query): String = js.native
   @js.native
   object DataConnection
-    extends Instantiable6[
+    extends Instantiable5[
+          /* repoInfo_ */ RepoInfo, 
+          /* onDataUpdate_ */ js.Function4[/* a */ String, /* b */ js.Any, /* c */ Boolean, Double | Null, Unit], 
+          /* onConnectStatus_ */ js.Function1[/* a */ Boolean, Unit], 
+          /* onServerInfoUpdate_ */ js.Function1[/* a */ js.Any, Unit], 
+          /* authTokenProvider_ */ AuthTokenProvider, 
+          PersistentConnection
+        ]
+       with Instantiable6[
           /* repoInfo_ */ RepoInfo, 
           /* onDataUpdate_ */ js.Function4[/* a */ String, /* b */ js.Any, /* c */ Boolean, /* d */ Double | Null, Unit], 
           /* onConnectStatus_ */ js.Function1[/* a */ Boolean, Unit], 
           /* onServerInfoUpdate_ */ js.Function1[/* a */ js.Any, Unit], 
           /* authTokenProvider_ */ AuthTokenProvider, 
           /* authOverride_ */ js.Object, 
-          PersistentConnection
-        ]
-       with Instantiable5[
-          /* repoInfo_ */ RepoInfo, 
-          /* onDataUpdate_ */ js.Function4[/* a */ String, /* b */ js.Any, /* c */ Boolean, Double | Null, Unit], 
-          /* onConnectStatus_ */ js.Function1[/* a */ Boolean, Unit], 
-          /* onServerInfoUpdate_ */ js.Function1[/* a */ js.Any, Unit], 
-          /* authTokenProvider_ */ AuthTokenProvider, 
           PersistentConnection
         ] {
     /**

@@ -5,10 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NamedMuiElement extends js.Object {
-  var key: String | Double | Null
-  var props: StandardPropsnevernever
-  var `type`: NamedMuiComponent
+  var key: String | Double | Null = js.native
+  var props: StandardPropsnevernever = js.native
+  var `type`: NamedMuiComponent = js.native
 }
 
 object NamedMuiElement {

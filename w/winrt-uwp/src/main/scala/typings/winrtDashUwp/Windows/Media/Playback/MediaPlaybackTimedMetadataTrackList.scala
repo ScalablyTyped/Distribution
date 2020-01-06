@@ -51,12 +51,9 @@ abstract class MediaPlaybackTimedMetadataTrackList () extends Array[TimedMetadat
     */
   def getPresentationMode(index: Double): TimedMetadataTrackPresentationMode = js.native
   def indexOf(value: TimedMetadataTrack, extra: js.Any*): Anon_Index = js.native
-  /**
-    * Retrieves the index of a specified timed metadata track in the list.
-    * @param value The timed metadata track to find in the vector view.
-    */
+  /* hack */
   @JSName("indexOf")
-  def indexOf_Anon_Index(value: TimedMetadataTrack): Anon_Index = js.native
+  def indexOf_Double(searchElement: TimedMetadataTrack): Double = js.native
   /** Occurs when the presentation mode of the MediaPlaybackTimedMetadataTrackList changes. */
   def onpresentationmodechanged(
     ev: TimedMetadataPresentationModeChangedEventArgs with WinRTEvent[MediaPlaybackTimedMetadataTrackList]

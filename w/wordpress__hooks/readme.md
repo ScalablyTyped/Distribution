@@ -10,9 +10,9 @@ WordPress hooks library.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/hooks |
 | Keywords           | wordpress, hooks |
-| # releases         | 31 |
-| # dependents       | 12 |
-| # downloads        | 124596 |
+| # releases         | 26 |
+| # dependents       | 14 |
+| # downloads        | 233755 |
 | # stars            | 1 |
 
 ## Links

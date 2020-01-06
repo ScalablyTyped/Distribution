@@ -10,9 +10,9 @@ Deep rekey Objects and Arrays as either camel case or snake case.
 | ------------------ | :-------------: |
 | Full name          | recase |
 | Keywords           | rekey, key, recase, deep, copy, camel, snake, case, camelcase, snakecase, underscore, underscored |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 134650 |
+| # downloads        | 211691 |
 | # stars            | 0 |
 
 ## Links

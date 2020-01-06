@@ -10,9 +10,9 @@ PhosphorJS - Widgets
 | ------------------ | :-------------: |
 | Full name          | @phosphor/widgets |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 322 |
-| # downloads        | 1164344 |
+| # releases         | 10 |
+| # dependents       | 474 |
+| # downloads        | 1327199 |
 | # stars            | 0 |
 
 ## Links

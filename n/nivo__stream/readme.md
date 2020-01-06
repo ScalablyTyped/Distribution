@@ -10,9 +10,9 @@ Typings are for version 0.59.3
 | ------------------ | :-------------: |
 | Full name          | @nivo/stream |
 | Keywords           | nivo, dataviz, react, d3, charts, stream-chart |
-| # releases         | 48 |
+| # releases         | 32 |
 | # dependents       | 2 |
-| # downloads        | 22754 |
+| # downloads        | 41944 |
 | # stars            | 0 |
 
 ## Links

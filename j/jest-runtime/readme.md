@@ -9,9 +9,9 @@ Typings are for version 24.9.0
 | ------------------ | :-------------: |
 | Full name          | jest-runtime |
 | Keywords           | - |
-| # releases         | 87 |
-| # dependents       | 33 |
-| # downloads        | 211162450 |
+| # releases         | 75 |
+| # dependents       | 34 |
+| # downloads        | 228179553 |
 | # stars            | 1 |
 
 ## Links

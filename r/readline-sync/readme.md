@@ -10,9 +10,9 @@ Synchronous Readline for interactively running to have a conversation with the u
 | ------------------ | :-------------: |
 | Full name          | readline-sync |
 | Keywords           | readline, synchronous, interactive, prompt, question, password, cli, tty, command, repl, keyboard, wait, block |
-| # releases         | 3 |
-| # dependents       | 1599 |
-| # downloads        | 4585236 |
+| # releases         | 4 |
+| # dependents       | 1976 |
+| # downloads        | 9000710 |
 | # stars            | 27 |
 
 ## Links

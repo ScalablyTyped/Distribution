@@ -12,7 +12,7 @@ a socket optimized for cross-domain use for the web and node
 | Keywords           | cross-domain, cors, socket, sockets |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 237 |
+| # downloads        | 202 |
 | # stars            | 0 |
 
 ## Links

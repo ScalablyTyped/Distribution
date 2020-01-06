@@ -1,5 +1,6 @@
 package typings.atPulumiAws.glueCrawlerMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.atPulumiAws.typesInputMod.glue.CrawlerCatalogTarget
 import typings.atPulumiAws.typesInputMod.glue.CrawlerDynamodbTarget
 import typings.atPulumiAws.typesInputMod.glue.CrawlerJdbcTarget
@@ -10,64 +11,69 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CrawlerState extends js.Object {
   /**
     * The ARN of the crawler
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
-  val catalogTargets: js.UndefOr[Input[js.Array[Input[CrawlerCatalogTarget]]]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
+  val catalogTargets: js.UndefOr[Input[js.Array[Input[CrawlerCatalogTarget]]]] = js.native
   /**
     * List of custom classifiers. By default, all AWS classifiers are included in a crawl, but these custom classifiers always override the default classifiers for a given classification.
     */
-  val classifiers: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val classifiers: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * JSON string of configuration information.
     */
-  val configuration: js.UndefOr[Input[String]] = js.undefined
+  val configuration: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the Glue database to be synchronized.
     */
-  val databaseName: js.UndefOr[Input[String]] = js.undefined
+  val databaseName: js.UndefOr[Input[String]] = js.native
   /**
     * Description of the crawler.
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * List of nested DynamoDB target arguments. See below.
     */
-  val dynamodbTargets: js.UndefOr[Input[js.Array[Input[CrawlerDynamodbTarget]]]] = js.undefined
+  val dynamodbTargets: js.UndefOr[Input[js.Array[Input[CrawlerDynamodbTarget]]]] = js.native
   /**
     * List of nested JBDC target arguments. See below.
     */
-  val jdbcTargets: js.UndefOr[Input[js.Array[Input[CrawlerJdbcTarget]]]] = js.undefined
+  val jdbcTargets: js.UndefOr[Input[js.Array[Input[CrawlerJdbcTarget]]]] = js.native
   /**
     * Name of the crawler.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * The IAM role friendly name (including path without leading slash), or ARN of an IAM role, used by the crawler to access other resources.
     */
-  val role: js.UndefOr[Input[String]] = js.undefined
+  val role: js.UndefOr[Input[String]] = js.native
   /**
     * List nested Amazon S3 target arguments. See below.
     */
-  val s3Targets: js.UndefOr[Input[js.Array[Input[CrawlerS3Target]]]] = js.undefined
+  val s3Targets: js.UndefOr[Input[js.Array[Input[CrawlerS3Target]]]] = js.native
   /**
     * A cron expression used to specify the schedule. For more information, see [Time-Based Schedules for Jobs and Crawlers](https://docs.aws.amazon.com/glue/latest/dg/monitor-data-warehouse-schedule.html). For example, to run something every day at 12:15 UTC, you would specify: `cron(15 12 * * ? *)`.
     */
-  val schedule: js.UndefOr[Input[String]] = js.undefined
+  val schedule: js.UndefOr[Input[String]] = js.native
   /**
     * Policy for the crawler's update and deletion behavior.
     */
-  val schemaChangePolicy: js.UndefOr[Input[CrawlerSchemaChangePolicy]] = js.undefined
+  val schemaChangePolicy: js.UndefOr[Input[CrawlerSchemaChangePolicy]] = js.native
   /**
     * The name of Security Configuration to be used by the crawler
     */
-  val securityConfiguration: js.UndefOr[Input[String]] = js.undefined
+  val securityConfiguration: js.UndefOr[Input[String]] = js.native
   /**
     * The table prefix used for catalog tables that are created.
     */
-  val tablePrefix: js.UndefOr[Input[String]] = js.undefined
+  val tablePrefix: js.UndefOr[Input[String]] = js.native
+  /**
+    * Key-value mapping of resource tags
+    */
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object CrawlerState {
@@ -87,7 +93,8 @@ object CrawlerState {
     schedule: Input[String] = null,
     schemaChangePolicy: Input[CrawlerSchemaChangePolicy] = null,
     securityConfiguration: Input[String] = null,
-    tablePrefix: Input[String] = null
+    tablePrefix: Input[String] = null,
+    tags: Input[StringDictionary[_]] = null
   ): CrawlerState = {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
@@ -105,6 +112,7 @@ object CrawlerState {
     if (schemaChangePolicy != null) __obj.updateDynamic("schemaChangePolicy")(schemaChangePolicy.asInstanceOf[js.Any])
     if (securityConfiguration != null) __obj.updateDynamic("securityConfiguration")(securityConfiguration.asInstanceOf[js.Any])
     if (tablePrefix != null) __obj.updateDynamic("tablePrefix")(tablePrefix.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CrawlerState]
   }
 }

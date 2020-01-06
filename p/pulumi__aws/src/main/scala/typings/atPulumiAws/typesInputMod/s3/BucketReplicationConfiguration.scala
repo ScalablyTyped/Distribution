@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BucketReplicationConfiguration extends js.Object {
   /**
     * The ARN of the IAM role for Amazon S3 to assume when replicating the objects.
     */
-  var role: Input[String]
+  var role: Input[String] = js.native
   /**
     * Specifies the rules managing the replication (documented below).
     */
-  var rules: Input[js.Array[Input[BucketReplicationConfigurationRule]]]
+  var rules: Input[js.Array[Input[BucketReplicationConfigurationRule]]] = js.native
 }
 
 object BucketReplicationConfiguration {

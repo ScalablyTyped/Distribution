@@ -11,8 +11,8 @@ The lodash method `_.fromPairs` exported as a module.
 | Full name          | lodash.frompairs |
 | Keywords           | lodash, lodash-modularized, stdlib, util, frompairs |
 | # releases         | 0 |
-| # dependents       | 51 |
-| # downloads        | 943244 |
+| # dependents       | 57 |
+| # downloads        | 1528750 |
 | # stars            | 0 |
 
 ## Links

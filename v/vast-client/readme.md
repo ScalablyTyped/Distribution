@@ -10,9 +10,9 @@ JavaScript VAST Client
 | ------------------ | :-------------: |
 | Full name          | vast-client |
 | Keywords           | vast, ad, advertising, iab, in-stream, video |
-| # releases         | 33 |
+| # releases         | 37 |
 | # dependents       | 6 |
-| # downloads        | 55908 |
+| # downloads        | 123412 |
 | # stars            | 1 |
 
 ## Links

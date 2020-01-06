@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AnalyticsApplicationOutputSchema extends js.Object {
-  var recordFormatType: js.UndefOr[Input[String]] = js.undefined
+  var recordFormatType: js.UndefOr[Input[String]] = js.native
 }
 
 object AnalyticsApplicationOutputSchema {

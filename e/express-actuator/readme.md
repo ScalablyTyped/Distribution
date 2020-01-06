@@ -12,7 +12,7 @@ Provides endpoints to help you monitor and manage your application when it's pus
 | Keywords           | actuator, express, middleware, health-check, ping, metrics, kubernetes |
 | # releases         | 6 |
 | # dependents       | 3 |
-| # downloads        | 16325 |
+| # downloads        | 21578 |
 | # stars            | 2 |
 
 ## Links

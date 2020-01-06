@@ -117,12 +117,12 @@ trait DirectoryService extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateConditionalForwarderResult, Unit]
   ): Request[CreateConditionalForwarderResult, AWSError] = js.native
   /**
-    * Creates a Simple AD directory. Before you call CreateDirectory, ensure that all of the required permissions have been explicitly granted through a policy. For details about what permissions are required to run the CreateDirectory operation, see AWS Directory Service API Permissions: Actions, Resources, and Conditions Reference.
+    * Creates a Simple AD directory. For more information, see Simple Active Directory in the AWS Directory Service Admin Guide. Before you call CreateDirectory, ensure that all of the required permissions have been explicitly granted through a policy. For details about what permissions are required to run the CreateDirectory operation, see AWS Directory Service API Permissions: Actions, Resources, and Conditions Reference.
     */
   def createDirectory(): Request[CreateDirectoryResult, AWSError] = js.native
   def createDirectory(callback: js.Function2[/* err */ AWSError, /* data */ CreateDirectoryResult, Unit]): Request[CreateDirectoryResult, AWSError] = js.native
   /**
-    * Creates a Simple AD directory. Before you call CreateDirectory, ensure that all of the required permissions have been explicitly granted through a policy. For details about what permissions are required to run the CreateDirectory operation, see AWS Directory Service API Permissions: Actions, Resources, and Conditions Reference.
+    * Creates a Simple AD directory. For more information, see Simple Active Directory in the AWS Directory Service Admin Guide. Before you call CreateDirectory, ensure that all of the required permissions have been explicitly granted through a policy. For details about what permissions are required to run the CreateDirectory operation, see AWS Directory Service API Permissions: Actions, Resources, and Conditions Reference.
     */
   def createDirectory(params: CreateDirectoryRequest): Request[CreateDirectoryResult, AWSError] = js.native
   def createDirectory(
@@ -130,12 +130,12 @@ trait DirectoryService extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateDirectoryResult, Unit]
   ): Request[CreateDirectoryResult, AWSError] = js.native
   /**
-    * Creates a subscription to forward real time Directory Service domain controller security logs to the specified CloudWatch log group in your AWS account.
+    * Creates a subscription to forward real-time Directory Service domain controller security logs to the specified Amazon CloudWatch log group in your AWS account.
     */
   def createLogSubscription(): Request[CreateLogSubscriptionResult, AWSError] = js.native
   def createLogSubscription(callback: js.Function2[/* err */ AWSError, /* data */ CreateLogSubscriptionResult, Unit]): Request[CreateLogSubscriptionResult, AWSError] = js.native
   /**
-    * Creates a subscription to forward real time Directory Service domain controller security logs to the specified CloudWatch log group in your AWS account.
+    * Creates a subscription to forward real-time Directory Service domain controller security logs to the specified Amazon CloudWatch log group in your AWS account.
     */
   def createLogSubscription(params: CreateLogSubscriptionRequest): Request[CreateLogSubscriptionResult, AWSError] = js.native
   def createLogSubscription(
@@ -143,12 +143,12 @@ trait DirectoryService extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateLogSubscriptionResult, Unit]
   ): Request[CreateLogSubscriptionResult, AWSError] = js.native
   /**
-    * Creates an AWS Managed Microsoft AD directory. Before you call CreateMicrosoftAD, ensure that all of the required permissions have been explicitly granted through a policy. For details about what permissions are required to run the CreateMicrosoftAD operation, see AWS Directory Service API Permissions: Actions, Resources, and Conditions Reference.
+    * Creates a Microsoft AD directory in the AWS Cloud. For more information, see AWS Managed Microsoft AD in the AWS Directory Service Admin Guide. Before you call CreateMicrosoftAD, ensure that all of the required permissions have been explicitly granted through a policy. For details about what permissions are required to run the CreateMicrosoftAD operation, see AWS Directory Service API Permissions: Actions, Resources, and Conditions Reference.
     */
   def createMicrosoftAD(): Request[CreateMicrosoftADResult, AWSError] = js.native
   def createMicrosoftAD(callback: js.Function2[/* err */ AWSError, /* data */ CreateMicrosoftADResult, Unit]): Request[CreateMicrosoftADResult, AWSError] = js.native
   /**
-    * Creates an AWS Managed Microsoft AD directory. Before you call CreateMicrosoftAD, ensure that all of the required permissions have been explicitly granted through a policy. For details about what permissions are required to run the CreateMicrosoftAD operation, see AWS Directory Service API Permissions: Actions, Resources, and Conditions Reference.
+    * Creates a Microsoft AD directory in the AWS Cloud. For more information, see AWS Managed Microsoft AD in the AWS Directory Service Admin Guide. Before you call CreateMicrosoftAD, ensure that all of the required permissions have been explicitly granted through a policy. For details about what permissions are required to run the CreateMicrosoftAD operation, see AWS Directory Service API Permissions: Actions, Resources, and Conditions Reference.
     */
   def createMicrosoftAD(params: CreateMicrosoftADRequest): Request[CreateMicrosoftADResult, AWSError] = js.native
   def createMicrosoftAD(
@@ -247,6 +247,19 @@ trait DirectoryService extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteTrustResult, Unit]
   ): Request[DeleteTrustResult, AWSError] = js.native
   /**
+    * Deletes from the system the certificate that was registered for a secured LDAP connection.
+    */
+  def deregisterCertificate(): Request[DeregisterCertificateResult, AWSError] = js.native
+  def deregisterCertificate(callback: js.Function2[/* err */ AWSError, /* data */ DeregisterCertificateResult, Unit]): Request[DeregisterCertificateResult, AWSError] = js.native
+  /**
+    * Deletes from the system the certificate that was registered for a secured LDAP connection.
+    */
+  def deregisterCertificate(params: DeregisterCertificateRequest): Request[DeregisterCertificateResult, AWSError] = js.native
+  def deregisterCertificate(
+    params: DeregisterCertificateRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeregisterCertificateResult, Unit]
+  ): Request[DeregisterCertificateResult, AWSError] = js.native
+  /**
     * Removes the specified directory as a publisher to the specified SNS topic.
     */
   def deregisterEventTopic(): Request[DeregisterEventTopicResult, AWSError] = js.native
@@ -259,6 +272,19 @@ trait DirectoryService extends Service {
     params: DeregisterEventTopicRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeregisterEventTopicResult, Unit]
   ): Request[DeregisterEventTopicResult, AWSError] = js.native
+  /**
+    * Displays information about the certificate registered for a secured LDAP connection.
+    */
+  def describeCertificate(): Request[DescribeCertificateResult, AWSError] = js.native
+  def describeCertificate(callback: js.Function2[/* err */ AWSError, /* data */ DescribeCertificateResult, Unit]): Request[DescribeCertificateResult, AWSError] = js.native
+  /**
+    * Displays information about the certificate registered for a secured LDAP connection.
+    */
+  def describeCertificate(params: DescribeCertificateRequest): Request[DescribeCertificateResult, AWSError] = js.native
+  def describeCertificate(
+    params: DescribeCertificateRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeCertificateResult, Unit]
+  ): Request[DescribeCertificateResult, AWSError] = js.native
   /**
     * Obtains information about the conditional forwarders for this account. If no input parameters are provided for RemoteDomainNames, this request describes all conditional forwarders for the specified directory ID.
     */
@@ -312,6 +338,19 @@ trait DirectoryService extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeEventTopicsResult, Unit]
   ): Request[DescribeEventTopicsResult, AWSError] = js.native
   /**
+    * Describes the status of LDAP security for the specified directory.
+    */
+  def describeLDAPSSettings(): Request[DescribeLDAPSSettingsResult, AWSError] = js.native
+  def describeLDAPSSettings(callback: js.Function2[/* err */ AWSError, /* data */ DescribeLDAPSSettingsResult, Unit]): Request[DescribeLDAPSSettingsResult, AWSError] = js.native
+  /**
+    * Describes the status of LDAP security for the specified directory.
+    */
+  def describeLDAPSSettings(params: DescribeLDAPSSettingsRequest): Request[DescribeLDAPSSettingsResult, AWSError] = js.native
+  def describeLDAPSSettings(
+    params: DescribeLDAPSSettingsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeLDAPSSettingsResult, Unit]
+  ): Request[DescribeLDAPSSettingsResult, AWSError] = js.native
+  /**
     * Returns the shared directories in your account. 
     */
   def describeSharedDirectories(): Request[DescribeSharedDirectoriesResult, AWSError] = js.native
@@ -351,6 +390,19 @@ trait DirectoryService extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeTrustsResult, Unit]
   ): Request[DescribeTrustsResult, AWSError] = js.native
   /**
+    * Deactivates LDAP secure calls for the specified directory.
+    */
+  def disableLDAPS(): Request[DisableLDAPSResult, AWSError] = js.native
+  def disableLDAPS(callback: js.Function2[/* err */ AWSError, /* data */ DisableLDAPSResult, Unit]): Request[DisableLDAPSResult, AWSError] = js.native
+  /**
+    * Deactivates LDAP secure calls for the specified directory.
+    */
+  def disableLDAPS(params: DisableLDAPSRequest): Request[DisableLDAPSResult, AWSError] = js.native
+  def disableLDAPS(
+    params: DisableLDAPSRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DisableLDAPSResult, Unit]
+  ): Request[DisableLDAPSResult, AWSError] = js.native
+  /**
     * Disables multi-factor authentication (MFA) with the Remote Authentication Dial In User Service (RADIUS) server for an AD Connector or Microsoft AD directory.
     */
   def disableRadius(): Request[DisableRadiusResult, AWSError] = js.native
@@ -377,6 +429,19 @@ trait DirectoryService extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DisableSsoResult, Unit]
   ): Request[DisableSsoResult, AWSError] = js.native
   /**
+    * Activates the switch for the specific directory to always use LDAP secure calls.
+    */
+  def enableLDAPS(): Request[EnableLDAPSResult, AWSError] = js.native
+  def enableLDAPS(callback: js.Function2[/* err */ AWSError, /* data */ EnableLDAPSResult, Unit]): Request[EnableLDAPSResult, AWSError] = js.native
+  /**
+    * Activates the switch for the specific directory to always use LDAP secure calls.
+    */
+  def enableLDAPS(params: EnableLDAPSRequest): Request[EnableLDAPSResult, AWSError] = js.native
+  def enableLDAPS(
+    params: EnableLDAPSRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ EnableLDAPSResult, Unit]
+  ): Request[EnableLDAPSResult, AWSError] = js.native
+  /**
     * Enables multi-factor authentication (MFA) with the Remote Authentication Dial In User Service (RADIUS) server for an AD Connector or Microsoft AD directory.
     */
   def enableRadius(): Request[EnableRadiusResult, AWSError] = js.native
@@ -390,12 +455,12 @@ trait DirectoryService extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ EnableRadiusResult, Unit]
   ): Request[EnableRadiusResult, AWSError] = js.native
   /**
-    * Enables single sign-on for a directory.
+    * Enables single sign-on for a directory. Single sign-on allows users in your directory to access certain AWS services from a computer joined to the directory without having to enter their credentials separately.
     */
   def enableSso(): Request[EnableSsoResult, AWSError] = js.native
   def enableSso(callback: js.Function2[/* err */ AWSError, /* data */ EnableSsoResult, Unit]): Request[EnableSsoResult, AWSError] = js.native
   /**
-    * Enables single sign-on for a directory.
+    * Enables single sign-on for a directory. Single sign-on allows users in your directory to access certain AWS services from a computer joined to the directory without having to enter their credentials separately.
     */
   def enableSso(params: EnableSsoRequest): Request[EnableSsoResult, AWSError] = js.native
   def enableSso(
@@ -403,12 +468,12 @@ trait DirectoryService extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ EnableSsoResult, Unit]
   ): Request[EnableSsoResult, AWSError] = js.native
   /**
-    * Obtains directory limit information for the current region.
+    * Obtains directory limit information for the current Region.
     */
   def getDirectoryLimits(): Request[GetDirectoryLimitsResult, AWSError] = js.native
   def getDirectoryLimits(callback: js.Function2[/* err */ AWSError, /* data */ GetDirectoryLimitsResult, Unit]): Request[GetDirectoryLimitsResult, AWSError] = js.native
   /**
-    * Obtains directory limit information for the current region.
+    * Obtains directory limit information for the current Region.
     */
   def getDirectoryLimits(params: GetDirectoryLimitsRequest): Request[GetDirectoryLimitsResult, AWSError] = js.native
   def getDirectoryLimits(
@@ -428,6 +493,19 @@ trait DirectoryService extends Service {
     params: GetSnapshotLimitsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetSnapshotLimitsResult, Unit]
   ): Request[GetSnapshotLimitsResult, AWSError] = js.native
+  /**
+    * For the specified directory, lists all the certificates registered for a secured LDAP connection.
+    */
+  def listCertificates(): Request[ListCertificatesResult, AWSError] = js.native
+  def listCertificates(callback: js.Function2[/* err */ AWSError, /* data */ ListCertificatesResult, Unit]): Request[ListCertificatesResult, AWSError] = js.native
+  /**
+    * For the specified directory, lists all the certificates registered for a secured LDAP connection.
+    */
+  def listCertificates(params: ListCertificatesRequest): Request[ListCertificatesResult, AWSError] = js.native
+  def listCertificates(
+    params: ListCertificatesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListCertificatesResult, Unit]
+  ): Request[ListCertificatesResult, AWSError] = js.native
   /**
     * Lists the address blocks that you have added to a directory.
     */
@@ -481,6 +559,19 @@ trait DirectoryService extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResult, Unit]
   ): Request[ListTagsForResourceResult, AWSError] = js.native
   /**
+    * Registers a certificate for secured LDAP connection.
+    */
+  def registerCertificate(): Request[RegisterCertificateResult, AWSError] = js.native
+  def registerCertificate(callback: js.Function2[/* err */ AWSError, /* data */ RegisterCertificateResult, Unit]): Request[RegisterCertificateResult, AWSError] = js.native
+  /**
+    * Registers a certificate for secured LDAP connection.
+    */
+  def registerCertificate(params: RegisterCertificateRequest): Request[RegisterCertificateResult, AWSError] = js.native
+  def registerCertificate(
+    params: RegisterCertificateRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RegisterCertificateResult, Unit]
+  ): Request[RegisterCertificateResult, AWSError] = js.native
+  /**
     * Associates a directory with an SNS topic. This establishes the directory as a publisher to the specified SNS topic. You can then receive email or text (SMS) messages when the status of your directory changes. You get notified if your directory goes from an Active status to an Impaired or Inoperable status. You also receive a notification when the directory returns to an Active status.
     */
   def registerEventTopic(): Request[RegisterEventTopicResult, AWSError] = js.native
@@ -533,12 +624,12 @@ trait DirectoryService extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ RemoveTagsFromResourceResult, Unit]
   ): Request[RemoveTagsFromResourceResult, AWSError] = js.native
   /**
-    * Resets the password for any user in your AWS Managed Microsoft AD or Simple AD directory.
+    * Resets the password for any user in your AWS Managed Microsoft AD or Simple AD directory. You can reset the password for any user in your directory with the following exceptions:   For Simple AD, you cannot reset the password for any user that is a member of either the Domain Admins or Enterprise Admins group except for the administrator user.   For AWS Managed Microsoft AD, you can only reset the password for a user that is in an OU based off of the NetBIOS name that you typed when you created your directory. For example, you cannot reset the password for a user in the AWS Reserved OU. For more information about the OU structure for an AWS Managed Microsoft AD directory, see What Gets Created in the AWS Directory Service Administration Guide.  
     */
   def resetUserPassword(): Request[ResetUserPasswordResult, AWSError] = js.native
   def resetUserPassword(callback: js.Function2[/* err */ AWSError, /* data */ ResetUserPasswordResult, Unit]): Request[ResetUserPasswordResult, AWSError] = js.native
   /**
-    * Resets the password for any user in your AWS Managed Microsoft AD or Simple AD directory.
+    * Resets the password for any user in your AWS Managed Microsoft AD or Simple AD directory. You can reset the password for any user in your directory with the following exceptions:   For Simple AD, you cannot reset the password for any user that is a member of either the Domain Admins or Enterprise Admins group except for the administrator user.   For AWS Managed Microsoft AD, you can only reset the password for a user that is in an OU based off of the NetBIOS name that you typed when you created your directory. For example, you cannot reset the password for a user in the AWS Reserved OU. For more information about the OU structure for an AWS Managed Microsoft AD directory, see What Gets Created in the AWS Directory Service Administration Guide.  
     */
   def resetUserPassword(params: ResetUserPasswordRequest): Request[ResetUserPasswordResult, AWSError] = js.native
   def resetUserPassword(

@@ -25,7 +25,14 @@ trait LodashMapValues extends js.Object {
     */ typings.cypress.cypressStrings.LodashMapValues with js.Any = js.native
   def apply[T](iteratee: js.Object, obj: Dictionary[T]): Dictionary[Boolean] = js.native
   def apply[T](iteratee: js.Object, obj: NumericDictionary[T]): Dictionary[Boolean] = js.native
-  def apply[T, TResult](callback: js.Function1[/* value */ T, TResult]): LodashMapValues1x1[T, TResult] = js.native
+  def apply[T /* <: js.Object */, TResult](
+    callback: js.Function1[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
+      TResult
+    ]
+  ): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in keyof T ]: TResult}
+    */ typings.cypress.cypressStrings.LodashMapValues with js.Any = js.native
   def apply[T /* <: js.Object */, TResult](
     callback: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
@@ -37,7 +44,9 @@ trait LodashMapValues extends js.Object {
     */ typings.cypress.cypressStrings.LodashMapValues with js.Any = js.native
   def apply[T, TResult](callback: js.Function1[/* value */ T, TResult], obj: Dictionary[T]): Dictionary[TResult] = js.native
   def apply[T, TResult](callback: js.Function1[/* value */ T, TResult], obj: NumericDictionary[T]): Dictionary[TResult] = js.native
-  def apply[T, TKey /* <: String */](iteratee: TKey): LodashMapValues5x1[T, TKey] = js.native
+  def apply[T, TKey /* <: String */](iteratee: TKey): Dictionary[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[TKey] */ js.Any
+  ] = js.native
   def apply[T, TKey /* <: String */](iteratee: TKey, obj: Dictionary[T]): Dictionary[
     /* import warning: importer.ImportType#apply Failed type conversion: T[TKey] */ js.Any
   ] = js.native

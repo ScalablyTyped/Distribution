@@ -302,12 +302,12 @@ trait ELBv2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeTargetHealthOutput, Unit]
   ): Request[DescribeTargetHealthOutput, AWSError] = js.native
   /**
-    * Modifies the specified properties of the specified listener. Any properties that you do not specify retain their current values. However, changing the protocol from HTTPS to HTTP, or from TLS to TCP, removes the security policy and default certificate properties. If you change the protocol from HTTP to HTTPS, or from TCP to TLS, you must add the security policy and default certificate properties.
+    * Replaces the specified properties of the specified listener. Any properties that you do not specify remain unchanged. Changing the protocol from HTTPS to HTTP, or from TLS to TCP, removes the security policy and default certificate properties. If you change the protocol from HTTP to HTTPS, or from TCP to TLS, you must add the security policy and default certificate properties. To add an item to a list, remove an item from a list, or update an item in a list, you must provide the entire list. For example, to add an action, specify a list with the current actions plus the new action.
     */
   def modifyListener(): Request[ModifyListenerOutput, AWSError] = js.native
   def modifyListener(callback: js.Function2[/* err */ AWSError, /* data */ ModifyListenerOutput, Unit]): Request[ModifyListenerOutput, AWSError] = js.native
   /**
-    * Modifies the specified properties of the specified listener. Any properties that you do not specify retain their current values. However, changing the protocol from HTTPS to HTTP, or from TLS to TCP, removes the security policy and default certificate properties. If you change the protocol from HTTP to HTTPS, or from TCP to TLS, you must add the security policy and default certificate properties.
+    * Replaces the specified properties of the specified listener. Any properties that you do not specify remain unchanged. Changing the protocol from HTTPS to HTTP, or from TLS to TCP, removes the security policy and default certificate properties. If you change the protocol from HTTP to HTTPS, or from TCP to TLS, you must add the security policy and default certificate properties. To add an item to a list, remove an item from a list, or update an item in a list, you must provide the entire list. For example, to add an action, specify a list with the current actions plus the new action.
     */
   def modifyListener(params: ModifyListenerInput): Request[ModifyListenerOutput, AWSError] = js.native
   def modifyListener(
@@ -328,12 +328,12 @@ trait ELBv2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ModifyLoadBalancerAttributesOutput, Unit]
   ): Request[ModifyLoadBalancerAttributesOutput, AWSError] = js.native
   /**
-    * Modifies the specified rule. Any existing properties that you do not modify retain their current values. To modify the actions for the default rule, use ModifyListener.
+    * Replaces the specified properties of the specified rule. Any properties that you do not specify are unchanged. To add an item to a list, remove an item from a list, or update an item in a list, you must provide the entire list. For example, to add an action, specify a list with the current actions plus the new action. To modify the actions for the default rule, use ModifyListener.
     */
   def modifyRule(): Request[ModifyRuleOutput, AWSError] = js.native
   def modifyRule(callback: js.Function2[/* err */ AWSError, /* data */ ModifyRuleOutput, Unit]): Request[ModifyRuleOutput, AWSError] = js.native
   /**
-    * Modifies the specified rule. Any existing properties that you do not modify retain their current values. To modify the actions for the default rule, use ModifyListener.
+    * Replaces the specified properties of the specified rule. Any properties that you do not specify are unchanged. To add an item to a list, remove an item from a list, or update an item in a list, you must provide the entire list. For example, to add an action, specify a list with the current actions plus the new action. To modify the actions for the default rule, use ModifyListener.
     */
   def modifyRule(params: ModifyRuleInput): Request[ModifyRuleOutput, AWSError] = js.native
   def modifyRule(
@@ -445,12 +445,12 @@ trait ELBv2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ SetSecurityGroupsOutput, Unit]
   ): Request[SetSecurityGroupsOutput, AWSError] = js.native
   /**
-    * Enables the Availability Zone for the specified public subnets for the specified Application Load Balancer. The specified subnets replace the previously enabled subnets. You can't change the subnets for a Network Load Balancer.
+    * Enables the Availability Zones for the specified public subnets for the specified load balancer. The specified subnets replace the previously enabled subnets. When you specify subnets for a Network Load Balancer, you must include all subnets that were enabled previously, with their existing configurations, plus any additional subnets.
     */
   def setSubnets(): Request[SetSubnetsOutput, AWSError] = js.native
   def setSubnets(callback: js.Function2[/* err */ AWSError, /* data */ SetSubnetsOutput, Unit]): Request[SetSubnetsOutput, AWSError] = js.native
   /**
-    * Enables the Availability Zone for the specified public subnets for the specified Application Load Balancer. The specified subnets replace the previously enabled subnets. You can't change the subnets for a Network Load Balancer.
+    * Enables the Availability Zones for the specified public subnets for the specified load balancer. The specified subnets replace the previously enabled subnets. When you specify subnets for a Network Load Balancer, you must include all subnets that were enabled previously, with their existing configurations, plus any additional subnets.
     */
   def setSubnets(params: SetSubnetsInput): Request[SetSubnetsOutput, AWSError] = js.native
   def setSubnets(

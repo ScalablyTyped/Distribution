@@ -11,8 +11,8 @@ Simplify cancellation of http requests when using the awesome axios library
 | Full name          | axios-cancel |
 | Keywords           | axios, http, cancel, promise |
 | # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 113452 |
+| # dependents       | 4 |
+| # downloads        | 187893 |
 | # stars            | 0 |
 
 ## Links

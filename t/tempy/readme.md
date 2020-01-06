@@ -11,8 +11,8 @@ Get a random temporary file or directory path
 | Full name          | tempy |
 | Keywords           | temp, temporary, path, file, directory, folder, tempfile, tempdir, tmpdir, tmpfile, random, unique, uniq |
 | # releases         | 2 |
-| # dependents       | 153 |
-| # downloads        | 2704091 |
+| # dependents       | 215 |
+| # downloads        | 6731127 |
 | # stars            | 7 |
 
 ## Links

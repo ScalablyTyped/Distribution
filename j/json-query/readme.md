@@ -11,8 +11,8 @@ Retrieves values from JSON objects for data binding. Offers params, nested queri
 | Full name          | json-query |
 | Keywords           | data binding, filter, json, query |
 | # releases         | 1 |
-| # dependents       | 65 |
-| # downloads        | 598474 |
+| # dependents       | 70 |
+| # downloads        | 539782 |
 | # stars            | 28 |
 
 ## Links

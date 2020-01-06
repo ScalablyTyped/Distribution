@@ -5,23 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TemplateState extends js.Object {
   /**
     * The HTML body of the email. Must be less than 500KB in size, including both the text and HTML parts.
     */
-  val html: js.UndefOr[Input[String]] = js.undefined
+  val html: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the template. Cannot exceed 64 characters. You will refer to this name when you send email.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * The subject line of the email.
     */
-  val subject: js.UndefOr[Input[String]] = js.undefined
+  val subject: js.UndefOr[Input[String]] = js.native
   /**
     * The email body that will be visible to recipients whose email clients do not display HTML. Must be less than 500KB in size, including both the text and HTML parts.
     */
-  val text: js.UndefOr[Input[String]] = js.undefined
+  val text: js.UndefOr[Input[String]] = js.native
 }
 
 object TemplateState {

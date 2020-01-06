@@ -5,23 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GraphQLApiOpenidConnectConfig extends js.Object {
   /**
     * Number of milliseconds a token is valid after being authenticated.
     */
-  var authTtl: js.UndefOr[Input[Double]] = js.undefined
+  var authTtl: js.UndefOr[Input[Double]] = js.native
   /**
     * Client identifier of the Relying party at the OpenID identity provider. This identifier is typically obtained when the Relying party is registered with the OpenID identity provider. You can specify a regular expression so the AWS AppSync can validate against multiple client identifiers at a time.
     */
-  var clientId: js.UndefOr[Input[String]] = js.undefined
+  var clientId: js.UndefOr[Input[String]] = js.native
   /**
     * Number of milliseconds a token is valid after being issued to a user.
     */
-  var iatTtl: js.UndefOr[Input[Double]] = js.undefined
+  var iatTtl: js.UndefOr[Input[Double]] = js.native
   /**
     * Issuer for the OpenID Connect configuration. The issuer returned by discovery MUST exactly match the value of iss in the ID Token.
     */
-  var issuer: Input[String]
+  var issuer: Input[String] = js.native
 }
 
 object GraphQLApiOpenidConnectConfig {

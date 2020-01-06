@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecification extends js.Object {
   /**
     * The ID of the launch template. Conflicts with `launchTemplateName`.
     */
-  var launchTemplateId: js.UndefOr[Input[String]] = js.undefined
+  var launchTemplateId: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the launch template. Conflicts with `launchTemplateId`.
     */
-  var launchTemplateName: js.UndefOr[Input[String]] = js.undefined
+  var launchTemplateName: js.UndefOr[Input[String]] = js.native
   /**
     * Template version. Can be version number, `$Latest`, or `$Default`. (Default: `$Default`).
     */
-  var version: js.UndefOr[Input[String]] = js.undefined
+  var version: js.UndefOr[Input[String]] = js.native
 }
 
 object GroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecification {

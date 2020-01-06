@@ -30,7 +30,7 @@ object onPlatformMessage
             String, 
             Exclude[
               String, 
-              linkChanged | linkUp | suspend | error | connected_ | resume | disconnected_ | linkDown
+              linkUp | linkChanged | suspend | resume | linkDown | connected_ | error | disconnected_
             ]
           ], 
           /* error */ String, 

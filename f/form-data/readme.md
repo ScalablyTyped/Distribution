@@ -10,9 +10,9 @@ A library to create readable "multipart/form-data" streams. Can be used to submi
 | ------------------ | :-------------: |
 | Full name          | form-data |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 1253 |
-| # downloads        | 613007816 |
+| # releases         | 8 |
+| # dependents       | 1697 |
+| # downloads        | 786017179 |
 | # stars            | 61 |
 
 ## Links

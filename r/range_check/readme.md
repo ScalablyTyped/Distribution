@@ -12,7 +12,7 @@ This is a simple module to validate IP address, check ip address version, check 
 | Keywords           | IP Address, CIDR, V4, V6, valid, range, addr, ip, ipv4, ipv6 |
 | # releases         | 0 |
 | # dependents       | 79 |
-| # downloads        | 1064233 |
+| # downloads        | 1086123 |
 | # stars            | 2 |
 
 ## Links

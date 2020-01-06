@@ -9,73 +9,79 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StageState extends js.Object {
   /**
     * Enables access logs for the API stage. Detailed below.
     */
-  val accessLogSettings: js.UndefOr[Input[StageAccessLogSettings]] = js.undefined
+  val accessLogSettings: js.UndefOr[Input[StageAccessLogSettings]] = js.native
+  /**
+    * Amazon Resource Name (ARN)
+    */
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * Specifies whether a cache cluster is enabled for the stage
     */
-  val cacheClusterEnabled: js.UndefOr[Input[Boolean]] = js.undefined
+  val cacheClusterEnabled: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The size of the cache cluster for the stage, if enabled.
     * Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `237`.
     */
-  val cacheClusterSize: js.UndefOr[Input[String]] = js.undefined
+  val cacheClusterSize: js.UndefOr[Input[String]] = js.native
   /**
     * The identifier of a client certificate for the stage.
     */
-  val clientCertificateId: js.UndefOr[Input[String]] = js.undefined
+  val clientCertificateId: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of the deployment that the stage points to
     */
-  val deployment: js.UndefOr[Input[Deployment]] = js.undefined
+  val deployment: js.UndefOr[Input[Deployment]] = js.native
   /**
     * The description of the stage
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * The version of the associated API documentation
     */
-  val documentationVersion: js.UndefOr[Input[String]] = js.undefined
+  val documentationVersion: js.UndefOr[Input[String]] = js.native
   /**
     * The execution ARN to be used in [`lambdaPermission`](https://www.terraform.io/docs/providers/aws/r/lambda_permission.html)'s `sourceArn`
     * when allowing API Gateway to invoke a Lambda function,
     * e.g. `arn:aws:execute-api:eu-west-2:123456789012:z4675bid1j/prod`
     */
-  val executionArn: js.UndefOr[Input[String]] = js.undefined
+  val executionArn: js.UndefOr[Input[String]] = js.native
   /**
     * The URL to invoke the API pointing to the stage,
     * e.g. `https://z4675bid1j.execute-api.eu-west-2.amazonaws.com/prod`
     */
-  val invokeUrl: js.UndefOr[Input[String]] = js.undefined
+  val invokeUrl: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of the associated REST API
     */
-  val restApi: js.UndefOr[Input[RestApi]] = js.undefined
+  val restApi: js.UndefOr[Input[RestApi]] = js.native
   /**
     * The name of the stage
     */
-  val stageName: js.UndefOr[Input[String]] = js.undefined
+  val stageName: js.UndefOr[Input[String]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * A map that defines the stage variables
     */
-  val variables: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val variables: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * Whether active tracing with X-ray is enabled. Defaults to `false`.
     */
-  val xrayTracingEnabled: js.UndefOr[Input[Boolean]] = js.undefined
+  val xrayTracingEnabled: js.UndefOr[Input[Boolean]] = js.native
 }
 
 object StageState {
   @scala.inline
   def apply(
     accessLogSettings: Input[StageAccessLogSettings] = null,
+    arn: Input[String] = null,
     cacheClusterEnabled: Input[Boolean] = null,
     cacheClusterSize: Input[String] = null,
     clientCertificateId: Input[String] = null,
@@ -92,6 +98,7 @@ object StageState {
   ): StageState = {
     val __obj = js.Dynamic.literal()
     if (accessLogSettings != null) __obj.updateDynamic("accessLogSettings")(accessLogSettings.asInstanceOf[js.Any])
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
     if (cacheClusterEnabled != null) __obj.updateDynamic("cacheClusterEnabled")(cacheClusterEnabled.asInstanceOf[js.Any])
     if (cacheClusterSize != null) __obj.updateDynamic("cacheClusterSize")(cacheClusterSize.asInstanceOf[js.Any])
     if (clientCertificateId != null) __obj.updateDynamic("clientCertificateId")(clientCertificateId.asInstanceOf[js.Any])

@@ -12,7 +12,7 @@ An ES6 decorator + class based router, support inherit, override, priority, auto
 | Keywords           | koa, router, decorator, es6, es7, koa-router |
 | # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 696 |
+| # downloads        | 1315 |
 | # stars            | 0 |
 
 ## Links

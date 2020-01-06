@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AWSPrincipal extends Principal {
-  var AWS: Input[js.Array[Input[String]] | String]
+  var AWS: Input[js.Array[Input[String]] | String] = js.native
 }
 
 object AWSPrincipal {

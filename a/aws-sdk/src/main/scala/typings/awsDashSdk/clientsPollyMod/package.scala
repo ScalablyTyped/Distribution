@@ -17,7 +17,7 @@ package object clientsPollyMod {
   type ContentType = String
   type DateTime = Date
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.standard
+    - typings.awsDashSdk.awsDashSdkStrings.standard__
     - typings.awsDashSdk.awsDashSdkStrings.neural
     - java.lang.String
   */
@@ -75,7 +75,7 @@ package object clientsPollyMod {
   type MaxResults = Double
   type NextToken = String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.json
+    - typings.awsDashSdk.awsDashSdkStrings.json_
     - typings.awsDashSdk.awsDashSdkStrings.mp3
     - typings.awsDashSdk.awsDashSdkStrings.ogg_vorbis
     - typings.awsDashSdk.awsDashSdkStrings.pcm
@@ -91,9 +91,9 @@ package object clientsPollyMod {
   type SnsTopicArn = String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.sentence
-    - typings.awsDashSdk.awsDashSdkStrings.ssml
+    - typings.awsDashSdk.awsDashSdkStrings.ssml_
     - typings.awsDashSdk.awsDashSdkStrings.viseme
-    - typings.awsDashSdk.awsDashSdkStrings.word
+    - typings.awsDashSdk.awsDashSdkStrings.word_
     - java.lang.String
   */
   type SpeechMarkType = _SpeechMarkType | String
@@ -101,18 +101,18 @@ package object clientsPollyMod {
   type SynthesisTasks = js.Array[SynthesisTask]
   type TaskId = String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.scheduled
-    - typings.awsDashSdk.awsDashSdkStrings.inProgress
-    - typings.awsDashSdk.awsDashSdkStrings.completed
-    - typings.awsDashSdk.awsDashSdkStrings.failed
+    - typings.awsDashSdk.awsDashSdkStrings.scheduled__
+    - typings.awsDashSdk.awsDashSdkStrings.inProgress__
+    - typings.awsDashSdk.awsDashSdkStrings.completed__
+    - typings.awsDashSdk.awsDashSdkStrings.failed__
     - java.lang.String
   */
   type TaskStatus = _TaskStatus | String
   type TaskStatusReason = String
   type Text = String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.ssml
-    - typings.awsDashSdk.awsDashSdkStrings.text
+    - typings.awsDashSdk.awsDashSdkStrings.ssml_
+    - typings.awsDashSdk.awsDashSdkStrings.text_
     - java.lang.String
   */
   type TextType = _TextType | String
@@ -122,6 +122,7 @@ package object clientsPollyMod {
     - typings.awsDashSdk.awsDashSdkStrings.Astrid
     - typings.awsDashSdk.awsDashSdkStrings.Bianca
     - typings.awsDashSdk.awsDashSdkStrings.Brian
+    - typings.awsDashSdk.awsDashSdkStrings.Camila
     - typings.awsDashSdk.awsDashSdkStrings.Carla
     - typings.awsDashSdk.awsDashSdkStrings.Carmen
     - typings.awsDashSdk.awsDashSdkStrings.Celine
@@ -136,7 +137,7 @@ package object clientsPollyMod {
     - typings.awsDashSdk.awsDashSdkStrings.Geraint
     - typings.awsDashSdk.awsDashSdkStrings.Giorgio
     - typings.awsDashSdk.awsDashSdkStrings.Gwyneth
-    - typings.awsDashSdk.awsDashSdkStrings.Hans
+    - typings.awsDashSdk.awsDashSdkStrings.Hans_
     - typings.awsDashSdk.awsDashSdkStrings.Ines
     - typings.awsDashSdk.awsDashSdkStrings.Ivy
     - typings.awsDashSdk.awsDashSdkStrings.Jacek
@@ -151,6 +152,7 @@ package object clientsPollyMod {
     - typings.awsDashSdk.awsDashSdkStrings.Liv
     - typings.awsDashSdk.awsDashSdkStrings.Lotte
     - typings.awsDashSdk.awsDashSdkStrings.Lucia
+    - typings.awsDashSdk.awsDashSdkStrings.Lupe
     - typings.awsDashSdk.awsDashSdkStrings.Mads
     - typings.awsDashSdk.awsDashSdkStrings.Maja
     - typings.awsDashSdk.awsDashSdkStrings.Marlene
@@ -182,7 +184,7 @@ package object clientsPollyMod {
   type VoiceName = String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2016-06-10`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

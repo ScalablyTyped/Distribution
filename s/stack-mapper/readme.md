@@ -12,7 +12,7 @@ Initialize it with a source map, then feed it error stacks to have the trace loc
 | Keywords           | sourcemap, source-map, error, stack, trace, map |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 106172 |
+| # downloads        | 110826 |
 | # stars            | 0 |
 
 ## Links

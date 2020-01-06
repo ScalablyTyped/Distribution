@@ -11,8 +11,8 @@ An immutable library to create, calculate and format monetary values.
 | Full name          | dinero.js |
 | Keywords           | money, monetary, amount, immutable |
 | # releases         | 28 |
-| # dependents       | 7 |
-| # downloads        | 138681 |
+| # dependents       | 13 |
+| # downloads        | 552463 |
 | # stars            | 1 |
 
 ## Links

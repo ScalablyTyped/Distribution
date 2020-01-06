@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ConnectionPhysicalConnectionRequirements extends js.Object {
   /**
     * The availability zone of the connection. This field is redundant and implied by `subnetId`, but is currently an api requirement.
     */
-  var availabilityZone: js.UndefOr[Input[String]] = js.undefined
+  var availabilityZone: js.UndefOr[Input[String]] = js.native
   /**
     * The security group ID list used by the connection.
     */
-  var securityGroupIdLists: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  var securityGroupIdLists: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The subnet ID used by the connection.
     */
-  var subnetId: js.UndefOr[Input[String]] = js.undefined
+  var subnetId: js.UndefOr[Input[String]] = js.native
 }
 
 object ConnectionPhysicalConnectionRequirements {

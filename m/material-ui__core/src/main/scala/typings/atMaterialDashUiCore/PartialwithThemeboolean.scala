@@ -5,8 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<{  withTheme  :boolean}> */
+@js.native
 trait PartialwithThemeboolean extends js.Object {
-  var withTheme: js.UndefOr[Boolean] = js.undefined
+  var withTheme: js.UndefOr[Boolean] = js.native
 }
 
 object PartialwithThemeboolean {

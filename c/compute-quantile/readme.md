@@ -12,7 +12,7 @@ Computes a quantile for a numeric array.
 | Keywords           | compute.io, compute, computation, mathematics, math, statistics, stats, quantile, percentile, rank |
 | # releases         | 0 |
 | # dependents       | 8 |
-| # downloads        | 8671 |
+| # downloads        | 41996 |
 | # stars            | 0 |
 
 ## Links

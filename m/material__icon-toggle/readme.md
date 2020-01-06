@@ -10,9 +10,9 @@ The Material Components for the web icon toggle component
 | ------------------ | :-------------: |
 | Full name          | @material/icon-toggle |
 | Keywords           | material components, material design, icon toggle |
-| # releases         | 48 |
-| # dependents       | 19 |
-| # downloads        | 1115358 |
+| # releases         | 27 |
+| # dependents       | 18 |
+| # downloads        | 646744 |
 | # stars            | 0 |
 
 ## Links

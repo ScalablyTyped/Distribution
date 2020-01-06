@@ -10,9 +10,9 @@ jCanvas brings jQuery's powerful syntax and capability to the HTML5 canvas. Quic
 | ------------------ | :-------------: |
 | Full name          | jcanvas |
 | Keywords           | canvas, html5, jquery, events, animation, jquery-plugin |
-| # releases         | 10 |
-| # dependents       | 2 |
-| # downloads        | 10422 |
+| # releases         | 4 |
+| # dependents       | 3 |
+| # downloads        | 16468 |
 | # stars            | 1 |
 
 ## Links

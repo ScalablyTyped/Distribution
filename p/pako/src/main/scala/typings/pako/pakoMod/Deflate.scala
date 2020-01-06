@@ -1,5 +1,6 @@
 package typings.pako.pakoMod
 
+import typings.pako.Anon_String
 import typings.std.ArrayBuffer
 import typings.std.Uint8Array
 import scala.scalajs.js
@@ -28,6 +29,9 @@ class Deflate () extends js.Object {
 @js.native
 object deflate extends js.Object {
   def apply(data: Data): Uint8Array = js.native
-  def apply(data: Data, options: DeflateFunctionOptions): Uint8Array = js.native
+  /**
+    * Compress data with deflate algorithm and options.
+    */
+  def apply(data: Data, options: DeflateFunctionOptions with Anon_String): String = js.native
 }
 

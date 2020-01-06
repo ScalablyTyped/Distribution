@@ -10,9 +10,9 @@ An HTML5 and Flash video player with a common API and skin for both.
 | ------------------ | :-------------: |
 | Full name          | video.js |
 | Keywords           | flash, html5, player, video, videojs |
-| # releases         | 67 |
-| # dependents       | 281 |
-| # downloads        | 4113080 |
+| # releases         | 57 |
+| # dependents       | 360 |
+| # downloads        | 4769577 |
 | # stars            | 46 |
 
 ## Links

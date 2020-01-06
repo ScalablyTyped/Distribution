@@ -10,9 +10,9 @@ Intelligent link recognition, made easy
 | ------------------ | :-------------: |
 | Full name          | linkifyjs |
 | Keywords           | jquery, link, autolink, text, url, email, hashtag, hashtags, mention, mentions |
-| # releases         | 5 |
-| # dependents       | 30 |
-| # downloads        | 1880424 |
+| # releases         | 4 |
+| # dependents       | 45 |
+| # downloads        | 3023425 |
 | # stars            | 5 |
 
 ## Links

@@ -10,9 +10,9 @@ Get packages by a npm user
 | ------------------ | :-------------: |
 | Full name          | npm-user-packages |
 | Keywords           | api, homepage, npm, packages, user, version |
-| # releases         | 4 |
-| # dependents       | 9 |
-| # downloads        | 11236 |
+| # releases         | 0 |
+| # dependents       | 10 |
+| # downloads        | 1289 |
 | # stars            | 1 |
 
 ## Links

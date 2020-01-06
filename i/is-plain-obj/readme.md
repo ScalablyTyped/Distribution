@@ -9,14 +9,14 @@ Check if a value is a plain object
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | is-plain-obj |
-| Keywords           | obj, object, is, check, test, type, plain, vanilla, pure, simple |
-| # releases         | 1 |
-| # dependents       | 180 |
-| # downloads        | 171943129 |
+| Keywords           | object, is, check, test, type, plain, vanilla, pure, simple |
+| # releases         | 2 |
+| # dependents       | 215 |
+| # downloads        | 252680888 |
 | # stars            | 3 |
 
 ## Links
-- [Homepage](https://github.com/sindresorhus/is-plain-obj)
+- [Homepage](https://github.com/sindresorhus/is-plain-obj#readme)
 - [Bugs](https://github.com/sindresorhus/is-plain-obj/issues)
 - [Repository](https://github.com/sindresorhus/is-plain-obj)
 - [Npm](https://www.npmjs.com/package/is-plain-obj)

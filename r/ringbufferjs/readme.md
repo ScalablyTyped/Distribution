@@ -10,9 +10,9 @@ a simple ring buffer data structure
 | ------------------ | :-------------: |
 | Full name          | ringbufferjs |
 | Keywords           | ring, buffer, circular, queue, ring buffer, circular buffer, data structure |
-| # releases         | 3 |
-| # dependents       | 7 |
-| # downloads        | 461235 |
+| # releases         | 0 |
+| # dependents       | 8 |
+| # downloads        | 5317045 |
 | # stars            | 0 |
 
 ## Links

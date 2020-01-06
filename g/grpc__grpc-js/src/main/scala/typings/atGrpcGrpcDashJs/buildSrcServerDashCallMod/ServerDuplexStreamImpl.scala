@@ -75,9 +75,9 @@ class ServerDuplexStreamImpl[RequestType, ResponseType] protected ()
   /* CompleteClass */
   override def prependOnceListener(event: data, listener: js.Function1[RequestType, Unit]): this.type = js.native
   /* InferMemberOverrides */
-  override def read(): RequestType with (String | Buffer) = js.native
+  override def read(): (String | Buffer) with RequestType = js.native
   /* InferMemberOverrides */
-  override def read(size: Double): RequestType with (String | Buffer) = js.native
+  override def read(size: Double): (String | Buffer) with RequestType = js.native
   /* CompleteClass */
   override def removeListener(event: data, listener: js.Function1[RequestType, Unit]): this.type = js.native
   /* CompleteClass */

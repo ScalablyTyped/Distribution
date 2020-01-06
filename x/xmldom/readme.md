@@ -10,15 +10,15 @@ A W3C Standard XML DOM(Level2 CORE) implementation and parser(DOMParser/XMLSeria
 | ------------------ | :-------------: |
 | Full name          | xmldom |
 | Keywords           | w3c, dom, xml, parser, javascript, DOMParser, XMLSerializer |
-| # releases         | 1 |
-| # dependents       | 1171 |
-| # downloads        | 60095077 |
+| # releases         | 3 |
+| # dependents       | 1360 |
+| # downloads        | 81985170 |
 | # stars            | 46 |
 
 ## Links
-- [Homepage](https://github.com/jindw/xmldom)
-- [Bugs](http://github.com/jindw/xmldom/issues)
-- [Repository](https://github.com/jindw/xmldom)
+- [Homepage](https://github.com/xmldom/xmldom)
+- [Bugs](http://github.com/xmldom/xmldom/issues)
+- [Repository](https://github.com/xmldom/xmldom)
 - [Npm](https://www.npmjs.com/package/xmldom)
     
 

@@ -9,9 +9,9 @@ data driven testing for mocha
 | ------------------ | :-------------: |
 | Full name          | data-driven |
 | Keywords           | mocha, test, bdd, tdd, data, data driven |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 127531 |
+| # downloads        | 138601 |
 | # stars            | 6 |
 
 ## Links

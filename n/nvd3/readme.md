@@ -10,9 +10,9 @@ A reusable charting library written in d3.js
 | ------------------ | :-------------: |
 | Full name          | nvd3 |
 | Keywords           | nvd3, d3, chart, graph |
-| # releases         | 3 |
-| # dependents       | 45 |
-| # downloads        | 1389549 |
+| # releases         | 1 |
+| # dependents       | 51 |
+| # downloads        | 1731048 |
 | # stars            | 3 |
 
 ## Links

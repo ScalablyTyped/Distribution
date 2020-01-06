@@ -10,9 +10,9 @@ Azure Data Explorer Query SDK
 | ------------------ | :-------------: |
 | Full name          | azure-kusto-data |
 | Keywords           | node, azure, kusto |
-| # releases         | 13 |
+| # releases         | 19 |
 | # dependents       | 1 |
-| # downloads        | 12019 |
+| # downloads        | 29633 |
 | # stars            | 0 |
 
 ## Links

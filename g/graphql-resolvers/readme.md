@@ -10,9 +10,9 @@ Resolver composition library for GraphQL.
 | ------------------ | :-------------: |
 | Full name          | graphql-resolvers |
 | Keywords           | graphql, apollo, composition, functional, resolver |
-| # releases         | 7 |
-| # dependents       | 6 |
-| # downloads        | 178861 |
+| # releases         | 5 |
+| # dependents       | 8 |
+| # downloads        | 365607 |
 | # stars            | 2 |
 
 ## Links

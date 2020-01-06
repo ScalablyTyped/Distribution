@@ -5,33 +5,34 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BgpPeerArgs extends js.Object {
   /**
     * The address family for the BGP peer. `ipv4 ` or `ipv6`.
     */
-  val addressFamily: Input[String]
+  val addressFamily: Input[String] = js.native
   /**
     * The IPv4 CIDR address to use to send traffic to Amazon.
     * Required for IPv4 BGP peers on public virtual interfaces.
     */
-  val amazonAddress: js.UndefOr[Input[String]] = js.undefined
+  val amazonAddress: js.UndefOr[Input[String]] = js.native
   /**
     * The autonomous system (AS) number for Border Gateway Protocol (BGP) configuration.
     */
-  val bgpAsn: Input[Double]
+  val bgpAsn: Input[Double] = js.native
   /**
     * The authentication key for BGP configuration.
     */
-  val bgpAuthKey: js.UndefOr[Input[String]] = js.undefined
+  val bgpAuthKey: js.UndefOr[Input[String]] = js.native
   /**
     * The IPv4 CIDR destination address to which Amazon should send traffic.
     * Required for IPv4 BGP peers on public virtual interfaces.
     */
-  val customerAddress: js.UndefOr[Input[String]] = js.undefined
+  val customerAddress: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of the Direct Connect virtual interface on which to create the BGP peer.
     */
-  val virtualInterfaceId: Input[String]
+  val virtualInterfaceId: Input[String] = js.native
 }
 
 object BgpPeerArgs {

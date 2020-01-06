@@ -6,15 +6,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ResourceGroupState extends js.Object {
   /**
     * The resource group ARN.
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * The tags on your EC2 Instance.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object ResourceGroupState {

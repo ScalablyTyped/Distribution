@@ -6,19 +6,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AggregateAuthorizationArgs extends js.Object {
   /**
     * Account ID
     */
-  val accountId: Input[String]
+  val accountId: Input[String] = js.native
   /**
     * Region
     */
-  val region: Input[String]
+  val region: Input[String] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object AggregateAuthorizationArgs {

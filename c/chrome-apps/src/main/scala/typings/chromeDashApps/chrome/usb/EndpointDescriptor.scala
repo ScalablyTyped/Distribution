@@ -65,7 +65,7 @@ trait EndpointDescriptor extends js.Object {
     ToStringLiteral[
       Anon_DATA, 
       String, 
-      Exclude[String, periodic | notification | explicitFeedback | data | feedback]
+      Exclude[String, notification | data | periodic | feedback | explicitFeedback]
     ]
   ] = js.undefined
 }
@@ -83,7 +83,7 @@ object EndpointDescriptor {
     usage: ToStringLiteral[
       Anon_DATA, 
       String, 
-      Exclude[String, periodic | notification | explicitFeedback | data | feedback]
+      Exclude[String, notification | data | periodic | feedback | explicitFeedback]
     ] = null
   ): EndpointDescriptor = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], extra_data = extra_data.asInstanceOf[js.Any], maximumPacketSize = maximumPacketSize.asInstanceOf[js.Any])

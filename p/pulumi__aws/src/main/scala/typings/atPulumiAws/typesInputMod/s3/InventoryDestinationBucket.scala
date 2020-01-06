@@ -5,27 +5,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InventoryDestinationBucket extends js.Object {
   /**
     * The ID of the account that owns the destination bucket. Recommended to be set to prevent problems if the destination bucket ownership changes.
     */
-  var accountId: js.UndefOr[Input[String]] = js.undefined
+  var accountId: js.UndefOr[Input[String]] = js.native
   /**
     * The Amazon S3 bucket ARN of the destination.
     */
-  var bucketArn: Input[String]
+  var bucketArn: Input[String] = js.native
   /**
     * Contains the type of server-side encryption to use to encrypt the inventory (documented below).
     */
-  var encryption: js.UndefOr[Input[InventoryDestinationBucketEncryption]] = js.undefined
+  var encryption: js.UndefOr[Input[InventoryDestinationBucketEncryption]] = js.native
   /**
     * Specifies the output format of the inventory results. Can be `CSV`, [`ORC`](https://orc.apache.org/) or [`Parquet`](https://parquet.apache.org/).
     */
-  var format: Input[String]
+  var format: Input[String] = js.native
   /**
     * The prefix that is prepended to all inventory results.
     */
-  var prefix: js.UndefOr[Input[String]] = js.undefined
+  var prefix: js.UndefOr[Input[String]] = js.native
 }
 
 object InventoryDestinationBucket {

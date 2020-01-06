@@ -9,16 +9,16 @@ Touch backend for react-dnd
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-dnd-touch-backend |
-| Keywords           | react, drag, drop, touch, react-dnd |
-| # releases         | 24 |
-| # dependents       | 32 |
-| # downloads        | 1195544 |
+| Keywords           | - |
+| # releases         | 27 |
+| # dependents       | 44 |
+| # downloads        | 1925749 |
 | # stars            | 1 |
 
 ## Links
-- [Homepage](https://github.com/yahoo/react-dnd-touch-backend#readme)
-- [Bugs](https://github.com/yahoo/react-dnd-touch-backend/issues)
-- [Repository](https://github.com/yahoo/react-dnd-touch-backend)
+- [Homepage](https://github.com/react-dnd/react-dnd#readme)
+- [Bugs](https://github.com/react-dnd/react-dnd/issues)
+- [Repository](https://github.com/react-dnd/react-dnd)
 - [Npm](https://www.npmjs.com/package/react-dnd-touch-backend)
     
 

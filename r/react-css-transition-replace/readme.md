@@ -10,9 +10,9 @@ A React component to animate replacing one element with another.
 | ------------------ | :-------------: |
 | Full name          | react-css-transition-replace |
 | Keywords           | react, transition, replace |
-| # releases         | 8 |
+| # releases         | 6 |
 | # dependents       | 8 |
-| # downloads        | 491164 |
+| # downloads        | 581404 |
 | # stars            | 3 |
 
 ## Links

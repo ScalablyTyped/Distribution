@@ -5,23 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ReceiptRuleLambdaAction extends js.Object {
   /**
     * The ARN of the Lambda function to invoke
     */
-  var functionArn: Input[String]
+  var functionArn: Input[String] = js.native
   /**
     * Event or RequestResponse
     */
-  var invocationType: js.UndefOr[Input[String]] = js.undefined
+  var invocationType: js.UndefOr[Input[String]] = js.native
   /**
     * The position of the action in the receipt rule
     */
-  var position: Input[Double]
+  var position: Input[Double] = js.native
   /**
     * The ARN of an SNS topic to notify
     */
-  var topicArn: js.UndefOr[Input[String]] = js.undefined
+  var topicArn: js.UndefOr[Input[String]] = js.native
 }
 
 object ReceiptRuleLambdaAction {

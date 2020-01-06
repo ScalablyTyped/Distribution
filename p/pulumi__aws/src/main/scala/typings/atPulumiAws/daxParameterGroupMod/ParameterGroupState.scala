@@ -6,19 +6,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ParameterGroupState extends js.Object {
   /**
     * A description of the parameter group.
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the parameter group.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * The parameters of the parameter group.
     */
-  val parameters: js.UndefOr[Input[js.Array[Input[ParameterGroupParameter]]]] = js.undefined
+  val parameters: js.UndefOr[Input[js.Array[Input[ParameterGroupParameter]]]] = js.native
 }
 
 object ParameterGroupState {

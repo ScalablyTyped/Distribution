@@ -10,9 +10,9 @@ Typings are for version 1.0.4
 | ------------------ | :-------------: |
 | Full name          | react-native-swipe-gestures |
 | Keywords           | react-native, swipe, gesture |
-| # releases         | 2 |
-| # dependents       | 11 |
-| # downloads        | 968371 |
+| # releases         | 3 |
+| # dependents       | 16 |
+| # downloads        | 2424284 |
 | # stars            | 5 |
 
 ## Links

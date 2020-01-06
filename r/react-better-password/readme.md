@@ -10,9 +10,9 @@ Password input for ReactJS that mimics mobile password masking behavior. Delays 
 | ------------------ | :-------------: |
 | Full name          | react-better-password |
 | Keywords           | react, react-component, password, mask, mobile, timeout, last, character |
-| # releases         | 6 |
+| # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 256 |
+| # downloads        | 296 |
 | # stars            | 0 |
 
 ## Links

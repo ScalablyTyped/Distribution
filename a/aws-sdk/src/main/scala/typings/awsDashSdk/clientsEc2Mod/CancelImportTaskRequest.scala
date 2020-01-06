@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CancelImportTaskRequest extends js.Object {
   /**
     * The reason for canceling the task.
     */
-  var CancelReason: js.UndefOr[String] = js.undefined
+  var CancelReason: js.UndefOr[String] = js.native
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.undefined
+  var DryRun: js.UndefOr[Boolean] = js.native
   /**
     * The ID of the import image or import snapshot task to be canceled.
     */
-  var ImportTaskId: js.UndefOr[String] = js.undefined
+  var ImportTaskId: js.UndefOr[typings.awsDashSdk.clientsEc2Mod.ImportTaskId] = js.native
 }
 
 object CancelImportTaskRequest {
@@ -24,12 +25,12 @@ object CancelImportTaskRequest {
   def apply(
     CancelReason: String = null,
     DryRun: js.UndefOr[scala.Boolean] = js.undefined,
-    ImportTaskId: String = null
+    ImportTaskId: ImportTaskId = null
   ): CancelImportTaskRequest = {
     val __obj = js.Dynamic.literal()
-    if (CancelReason != null) __obj.updateDynamic("CancelReason")(CancelReason)
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
-    if (ImportTaskId != null) __obj.updateDynamic("ImportTaskId")(ImportTaskId)
+    if (CancelReason != null) __obj.updateDynamic("CancelReason")(CancelReason.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (ImportTaskId != null) __obj.updateDynamic("ImportTaskId")(ImportTaskId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelImportTaskRequest]
   }
 }

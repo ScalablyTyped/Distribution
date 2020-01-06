@@ -11,8 +11,8 @@ A javascript implementation of MurmurHash3's x86 hashing algorithms.(Browser&Ser
 | Full name          | murmurhash3js |
 | Keywords           | murmurhash3, hash |
 | # releases         | 0 |
-| # dependents       | 21 |
-| # downloads        | 841991 |
+| # dependents       | 27 |
+| # downloads        | 1422349 |
 | # stars            | 1 |
 
 ## Links

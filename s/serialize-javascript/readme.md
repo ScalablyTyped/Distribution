@@ -10,9 +10,9 @@ Serialize JavaScript to a superset of JSON that includes regular expressions and
 | ------------------ | :-------------: |
 | Full name          | serialize-javascript |
 | Keywords           | serialize, serialization, javascript, js, json |
-| # releases         | 4 |
-| # dependents       | 396 |
-| # downloads        | 139997648 |
+| # releases         | 12 |
+| # dependents       | 487 |
+| # downloads        | 290417824 |
 | # stars            | 27 |
 
 ## Links

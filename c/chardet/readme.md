@@ -10,9 +10,9 @@ Character detector
 | ------------------ | :-------------: |
 | Full name          | chardet |
 | Keywords           | encoding, character, utf8, detector, chardet, icu |
-| # releases         | 8 |
-| # dependents       | 51 |
-| # downloads        | 224744773 |
+| # releases         | 5 |
+| # dependents       | 79 |
+| # downloads        | 399250883 |
 | # stars            | 5 |
 
 ## Links

@@ -10,9 +10,9 @@ With a given country and phone number, validate and format the phone number to E
 | ------------------ | :-------------: |
 | Full name          | phone |
 | Keywords           | phone, e.164 |
-| # releases         | 19 |
-| # dependents       | 40 |
-| # downloads        | 479144 |
+| # releases         | 28 |
+| # dependents       | 45 |
+| # downloads        | 1158743 |
 | # stars            | 18 |
 
 ## Links

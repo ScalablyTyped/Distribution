@@ -10,9 +10,9 @@ A performant and comprehensive React sticky
 | ------------------ | :-------------: |
 | Full name          | react-stickynode |
 | Keywords           | Sticky, React |
-| # releases         | 9 |
-| # dependents       | 11 |
-| # downloads        | 1382582 |
+| # releases         | 6 |
+| # dependents       | 15 |
+| # downloads        | 2158945 |
 | # stars            | 0 |
 
 ## Links

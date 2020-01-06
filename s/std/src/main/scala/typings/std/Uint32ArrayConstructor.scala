@@ -11,15 +11,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Uint32ArrayConstructor
   extends Instantiable0[Uint32Array]
+     with Instantiable1[
+      (/* arrayOrArrayBuffer */ ArrayBufferLike) | (/* arrayOrArrayBuffer */ ArrayLike[Double]) | (/* length */ Double) | (/* elements */ Iterable[Double]), 
+      Uint32Array
+    ]
      with Instantiable2[/* buffer */ ArrayBufferLike, /* byteOffset */ Double, Uint32Array]
      with Instantiable3[
       /* buffer */ ArrayBufferLike, 
       /* byteOffset */ Double, 
       /* length */ Double, 
-      Uint32Array
-    ]
-     with Instantiable1[
-      (/* arrayOrArrayBuffer */ ArrayBufferLike) | (/* arrayOrArrayBuffer */ ArrayLike[Double]) | (/* length */ Double) | (/* elements */ Iterable[Double]), 
       Uint32Array
     ] {
   /**

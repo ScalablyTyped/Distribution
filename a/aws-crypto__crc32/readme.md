@@ -10,12 +10,15 @@ Pure JS implementation of CRC32 https://en.wikipedia.org/wiki/Cyclic_redundancy_
 | ------------------ | :-------------: |
 | Full name          | @aws-crypto/crc32 |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 6 |
 | # dependents       | 1 |
-| # downloads        | 20150 |
+| # downloads        | 898853 |
 | # stars            | 0 |
 
 ## Links
+- [Homepage](https://github.com/aws/aws-sdk-js-crypto-helpers#readme)
+- [Bugs](https://github.com/aws/aws-sdk-js-crypto-helpers/issues)
+- [Repository](https://github.com/aws/aws-sdk-js-crypto-helpers)
 - [Npm](https://www.npmjs.com/package/%40aws-crypto%2Fcrc32)
     
 

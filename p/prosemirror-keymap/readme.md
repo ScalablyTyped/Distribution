@@ -10,9 +10,9 @@ Keymap plugin for ProseMirror
 | ------------------ | :-------------: |
 | Full name          | prosemirror-keymap |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 37 |
-| # downloads        | 737236 |
+| # releases         | 7 |
+| # dependents       | 64 |
+| # downloads        | 2268568 |
 | # stars            | 0 |
 
 ## Links

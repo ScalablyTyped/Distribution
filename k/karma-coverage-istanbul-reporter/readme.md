@@ -10,9 +10,9 @@ A karma reporter that uses the latest istanbul 1.x APIs (with full sourcemap sup
 | ------------------ | :-------------: |
 | Full name          | karma-coverage-istanbul-reporter |
 | Keywords           | karma-plugin, karma-reporter, coverage, istanbul, istanbuljs |
-| # releases         | 16 |
-| # dependents       | 77 |
-| # downloads        | 34809151 |
+| # releases         | 17 |
+| # dependents       | 83 |
+| # downloads        | 40729460 |
 | # stars            | 2 |
 
 ## Links

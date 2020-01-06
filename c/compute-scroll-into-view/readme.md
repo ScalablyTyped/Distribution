@@ -10,9 +10,9 @@ The engine that powers scroll-into-view-if-needed
 | ------------------ | :-------------: |
 | Full name          | compute-scroll-into-view |
 | Keywords           | if-needed, scroll, scroll-into-view, scroll-into-view-if-needed, scrollIntoView, scrollIntoViewIfNeeded, scrollMode, typescript |
-| # releases         | 15 |
-| # dependents       | 8 |
-| # downloads        | 2821577 |
+| # releases         | 14 |
+| # dependents       | 19 |
+| # downloads        | 10090687 |
 | # stars            | 0 |
 
 ## Links

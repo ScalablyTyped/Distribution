@@ -5,39 +5,40 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EnvironmentEC2State extends js.Object {
   /**
     * The ARN of the environment.
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * The number of minutes until the running instance is shut down after the environment has last been used.
     */
-  val automaticStopTimeMinutes: js.UndefOr[Input[Double]] = js.undefined
+  val automaticStopTimeMinutes: js.UndefOr[Input[Double]] = js.native
   /**
     * The description of the environment.
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * The type of instance to connect to the environment, e.g. `t2.micro`.
     */
-  val instanceType: js.UndefOr[Input[String]] = js.undefined
+  val instanceType: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the environment.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * The ARN of the environment owner. This can be ARN of any AWS IAM principal. Defaults to the environment's creator.
     */
-  val ownerArn: js.UndefOr[Input[String]] = js.undefined
+  val ownerArn: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of the subnet in Amazon VPC that AWS Cloud9 will use to communicate with the Amazon EC2 instance.
     */
-  val subnetId: js.UndefOr[Input[String]] = js.undefined
+  val subnetId: js.UndefOr[Input[String]] = js.native
   /**
     * The type of the environment (e.g. `ssh` or `ec2`)
     */
-  val `type`: js.UndefOr[Input[String]] = js.undefined
+  val `type`: js.UndefOr[Input[String]] = js.native
 }
 
 object EnvironmentEC2State {

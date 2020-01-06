@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetTagsResponse extends js.Object {
-  var Tags: js.UndefOr[__mapOf__string] = js.undefined
+  var Tags: typings.awsDashSdk.clientsApigatewayv2Mod.Tags = js.native
 }
 
 object GetTagsResponse {
   @scala.inline
-  def apply(Tags: __mapOf__string = null): GetTagsResponse = {
-    val __obj = js.Dynamic.literal()
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
+  def apply(Tags: Tags): GetTagsResponse = {
+    val __obj = js.Dynamic.literal(Tags = Tags.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[GetTagsResponse]
   }
 }

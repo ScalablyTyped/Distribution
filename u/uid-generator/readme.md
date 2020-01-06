@@ -10,9 +10,9 @@ Generates cryptographically strong pseudo-random UIDs with custom size and base-
 | ------------------ | :-------------: |
 | Full name          | uid-generator |
 | Keywords           | uid, generator, random, token, unique, crypto, strong, base, encoding |
-| # releases         | 3 |
-| # dependents       | 11 |
-| # downloads        | 138940 |
+| # releases         | 2 |
+| # dependents       | 18 |
+| # downloads        | 107184 |
 | # stars            | 3 |
 
 ## Links

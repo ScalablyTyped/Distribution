@@ -10,9 +10,9 @@ Some utilities for the development of restify applications with Inversify
 | ------------------ | :-------------: |
 | Full name          | inversify-restify-utils |
 | Keywords           | InversifyJS, restify, dependency, injection |
-| # releases         | 4 |
+| # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 30301 |
+| # downloads        | 26621 |
 | # stars            | 0 |
 
 ## Links

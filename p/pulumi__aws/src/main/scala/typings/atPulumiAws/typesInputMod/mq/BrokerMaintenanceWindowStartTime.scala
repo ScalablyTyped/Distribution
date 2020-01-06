@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BrokerMaintenanceWindowStartTime extends js.Object {
   /**
     * The day of the week. e.g. `MONDAY`, `TUESDAY`, or `WEDNESDAY`
     */
-  var dayOfWeek: Input[String]
+  var dayOfWeek: Input[String] = js.native
   /**
     * The time, in 24-hour format. e.g. `02:00`
     */
-  var timeOfDay: Input[String]
+  var timeOfDay: Input[String] = js.native
   /**
     * The time zone, UTC by default, in either the Country/City format, or the UTC offset format. e.g. `CET`
     */
-  var timeZone: Input[String]
+  var timeZone: Input[String] = js.native
 }
 
 object BrokerMaintenanceWindowStartTime {

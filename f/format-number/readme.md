@@ -10,9 +10,9 @@ Formats numbers with separators every 3 digits and currency etc. Highly configur
 | ------------------ | :-------------: |
 | Full name          | format-number |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 33 |
-| # downloads        | 2109707 |
+| # releases         | 0 |
+| # dependents       | 36 |
+| # downloads        | 1537559 |
 | # stars            | 3 |
 
 ## Links

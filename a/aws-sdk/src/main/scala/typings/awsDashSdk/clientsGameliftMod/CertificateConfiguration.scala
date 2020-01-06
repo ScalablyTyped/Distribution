@@ -4,8 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CertificateConfiguration extends js.Object {
-  var CertificateType: typings.awsDashSdk.clientsGameliftMod.CertificateType
+  /**
+    * Indicates whether a TLS/SSL certificate was generated for a fleet.     
+    */
+  var CertificateType: typings.awsDashSdk.clientsGameliftMod.CertificateType = js.native
 }
 
 object CertificateConfiguration {

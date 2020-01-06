@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EgressFilter extends js.Object {
   /**
     * The egress filter type. By default, the type is DROP_ALL, which allows
@@ -12,7 +13,7 @@ trait EgressFilter extends js.Object {
     type to ALLOW_ALL to allow egress to any endpoint inside or outside of the
     service mesh.
     */
-  var `type`: EgressFilterType
+  var `type`: EgressFilterType = js.native
 }
 
 object EgressFilter {

@@ -5,11 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/Collapse/Collapse.CollapseClassKey>> */
+@js.native
 trait PartialClassNameMapCollapseClassKey extends js.Object {
-  var container: js.UndefOr[String] = js.undefined
-  var entered: js.UndefOr[String] = js.undefined
-  var wrapper: js.UndefOr[String] = js.undefined
-  var wrapperInner: js.UndefOr[String] = js.undefined
+  var container: js.UndefOr[String] = js.native
+  var entered: js.UndefOr[String] = js.native
+  var wrapper: js.UndefOr[String] = js.native
+  var wrapperInner: js.UndefOr[String] = js.native
 }
 
 object PartialClassNameMapCollapseClassKey {

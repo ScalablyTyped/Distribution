@@ -10,9 +10,9 @@ A Node.js event emitter implementation with namespaces, wildcards, TTL and brows
 | ------------------ | :-------------: |
 | Full name          | eventemitter2 |
 | Keywords           | event, events, emitter, eventemitter |
-| # releases         | 4 |
-| # dependents       | 951 |
-| # downloads        | 67917639 |
+| # releases         | 3 |
+| # dependents       | 1041 |
+| # downloads        | 83986910 |
 | # stars            | 48 |
 
 ## Links

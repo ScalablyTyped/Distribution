@@ -10,9 +10,9 @@ A moddle wrapper for BPMN 2.0
 | ------------------ | :-------------: |
 | Full name          | bpmn-moddle |
 | Keywords           | bpmn, moddle, bpmn20, meta-model |
-| # releases         | 28 |
-| # dependents       | 16 |
-| # downloads        | 303905 |
+| # releases         | 19 |
+| # dependents       | 30 |
+| # downloads        | 491829 |
 | # stars            | 2 |
 
 ## Links

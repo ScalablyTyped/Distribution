@@ -11,8 +11,8 @@ The lodash method `_.differenceWith` exported as a module.
 | Full name          | lodash.differencewith |
 | Keywords           | lodash-modularized, differencewith |
 | # releases         | 0 |
-| # dependents       | 17 |
-| # downloads        | 904365 |
+| # dependents       | 22 |
+| # downloads        | 2011839 |
 | # stars            | 0 |
 
 ## Links

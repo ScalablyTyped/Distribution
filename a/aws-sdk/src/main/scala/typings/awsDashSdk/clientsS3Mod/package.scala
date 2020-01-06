@@ -8,13 +8,13 @@ package object clientsS3Mod {
   import org.scalablytyped.runtime.StringDictionary
   import typings.awsDashSdk.Anon_Cont
   import typings.awsDashSdk.awsDashSdkStrings.CSV
-  import typings.awsDashSdk.awsDashSdkStrings.Enabled
+  import typings.awsDashSdk.awsDashSdkStrings.Enabled_
   import typings.awsDashSdk.awsDashSdkStrings.SELECT
   import typings.awsDashSdk.awsDashSdkStrings.SQL
   import typings.awsDashSdk.awsDashSdkStrings.STANDARD
   import typings.awsDashSdk.awsDashSdkStrings.V_1
-  import typings.awsDashSdk.awsDashSdkStrings.requester
-  import typings.awsDashSdk.awsDashSdkStrings.url
+  import typings.awsDashSdk.awsDashSdkStrings.requester_
+  import typings.awsDashSdk.awsDashSdkStrings.url_
   import typings.awsDashSdk.libConfigUnderscoreUseUnderscoreDualstackMod.UseDualstackConfigOptions
   import typings.awsDashSdk.libEventDashStreamEventDashStreamMod.EventStream
   import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
@@ -39,13 +39,13 @@ package object clientsS3Mod {
   type AnalyticsS3ExportFileFormat = CSV | String
   type Body = Buffer | Uint8Array | Blob | String | Readable
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Enabled
-    - typings.awsDashSdk.awsDashSdkStrings.Suspended
+    - typings.awsDashSdk.awsDashSdkStrings.Enabled_
+    - typings.awsDashSdk.awsDashSdkStrings.Suspended_
     - java.lang.String
   */
   type BucketAccelerateStatus = _BucketAccelerateStatus | String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.`private`
+    - typings.awsDashSdk.awsDashSdkStrings.private__
     - typings.awsDashSdk.awsDashSdkStrings.`public-read`
     - typings.awsDashSdk.awsDashSdkStrings.`public-read-write`
     - typings.awsDashSdk.awsDashSdkStrings.`authenticated-read`
@@ -76,8 +76,8 @@ package object clientsS3Mod {
   type BucketLogsPermission = _BucketLogsPermission | String
   type BucketName = String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Enabled
-    - typings.awsDashSdk.awsDashSdkStrings.Suspended
+    - typings.awsDashSdk.awsDashSdkStrings.Enabled_
+    - typings.awsDashSdk.awsDashSdkStrings.Suspended_
     - java.lang.String
   */
   type BucketVersioningStatus = _BucketVersioningStatus | String
@@ -125,8 +125,8 @@ package object clientsS3Mod {
   type DaysAfterInitiation = Double
   type DeleteMarker = Boolean
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Enabled
-    - typings.awsDashSdk.awsDashSdkStrings.Disabled
+    - typings.awsDashSdk.awsDashSdkStrings.Enabled_
+    - typings.awsDashSdk.awsDashSdkStrings.Disabled_
     - java.lang.String
   */
   type DeleteMarkerReplicationStatus = _DeleteMarkerReplicationStatus | String
@@ -139,28 +139,41 @@ package object clientsS3Mod {
   type ETag = String
   type EmailAddress = String
   type EnableRequestProgress = Boolean
-  type EncodingType = url | String
+  type EncodingType = url_ | String
+  type End = Double
   type Errors = js.Array[Error]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.`s3:ReducedRedundancyLostObject`
-    - typings.awsDashSdk.awsDashSdkStrings.`s3:ObjectCreated:*`
-    - typings.awsDashSdk.awsDashSdkStrings.`s3:ObjectCreated:Put`
-    - typings.awsDashSdk.awsDashSdkStrings.`s3:ObjectCreated:Post`
-    - typings.awsDashSdk.awsDashSdkStrings.`s3:ObjectCreated:Copy`
-    - typings.awsDashSdk.awsDashSdkStrings.`s3:ObjectCreated:CompleteMultipartUpload`
-    - typings.awsDashSdk.awsDashSdkStrings.`s3:ObjectRemoved:*`
-    - typings.awsDashSdk.awsDashSdkStrings.`s3:ObjectRemoved:Delete`
-    - typings.awsDashSdk.awsDashSdkStrings.`s3:ObjectRemoved:DeleteMarkerCreated`
-    - typings.awsDashSdk.awsDashSdkStrings.`s3:ObjectRestore:Post`
-    - typings.awsDashSdk.awsDashSdkStrings.`s3:ObjectRestore:Completed`
+    - typings.awsDashSdk.awsDashSdkStrings.s3ColonReducedRedundancyLostObject
+    - typings.awsDashSdk.awsDashSdkStrings.s3ColonObjectCreatedColonAsterisk
+    - typings.awsDashSdk.awsDashSdkStrings.s3ColonObjectCreatedColonPut
+    - typings.awsDashSdk.awsDashSdkStrings.s3ColonObjectCreatedColonPost
+    - typings.awsDashSdk.awsDashSdkStrings.s3ColonObjectCreatedColonCopy
+    - typings.awsDashSdk.awsDashSdkStrings.s3ColonObjectCreatedColonCompleteMultipartUpload
+    - typings.awsDashSdk.awsDashSdkStrings.s3ColonObjectRemovedColonAsterisk
+    - typings.awsDashSdk.awsDashSdkStrings.s3ColonObjectRemovedColonDelete
+    - typings.awsDashSdk.awsDashSdkStrings.s3ColonObjectRemovedColonDeleteMarkerCreated
+    - typings.awsDashSdk.awsDashSdkStrings.s3ColonObjectRestoreColonAsterisk
+    - typings.awsDashSdk.awsDashSdkStrings.s3ColonObjectRestoreColonPost
+    - typings.awsDashSdk.awsDashSdkStrings.s3ColonObjectRestoreColonCompleted
+    - typings.awsDashSdk.awsDashSdkStrings.s3ColonReplicationColonAsterisk
+    - typings.awsDashSdk.awsDashSdkStrings.s3ColonReplicationColonOperationFailedReplication
+    - typings.awsDashSdk.awsDashSdkStrings.s3ColonReplicationColonOperationNotTracked
+    - typings.awsDashSdk.awsDashSdkStrings.s3ColonReplicationColonOperationMissedThreshold
+    - typings.awsDashSdk.awsDashSdkStrings.s3ColonReplicationColonOperationReplicatedAfterThreshold
     - java.lang.String
   */
   type Event = _Event | String
   type EventList = js.Array[Event]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.Enabled_
+    - typings.awsDashSdk.awsDashSdkStrings.Disabled_
+    - java.lang.String
+  */
+  type ExistingObjectReplicationStatus = _ExistingObjectReplicationStatus | String
   type Expiration = String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Enabled
-    - typings.awsDashSdk.awsDashSdkStrings.Disabled
+    - typings.awsDashSdk.awsDashSdkStrings.Enabled_
+    - typings.awsDashSdk.awsDashSdkStrings.Disabled_
     - java.lang.String
   */
   type ExpirationStatus = _ExpirationStatus | String
@@ -181,7 +194,7 @@ package object clientsS3Mod {
   type FileHeaderInfo = _FileHeaderInfo | String
   type FilterRuleList = js.Array[FilterRule]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.prefix
+    - typings.awsDashSdk.awsDashSdkStrings.prefix_
     - typings.awsDashSdk.awsDashSdkStrings.suffix
     - java.lang.String
   */
@@ -211,20 +224,20 @@ package object clientsS3Mod {
   */
   type InventoryFormat = _InventoryFormat | String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Daily
-    - typings.awsDashSdk.awsDashSdkStrings.Weekly
+    - typings.awsDashSdk.awsDashSdkStrings.Daily_
+    - typings.awsDashSdk.awsDashSdkStrings.Weekly_
     - java.lang.String
   */
   type InventoryFrequency = _InventoryFrequency | String
   type InventoryId = String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.All
-    - typings.awsDashSdk.awsDashSdkStrings.Current
+    - typings.awsDashSdk.awsDashSdkStrings.All_
+    - typings.awsDashSdk.awsDashSdkStrings.Current_
     - java.lang.String
   */
   type InventoryIncludedObjectVersions = _InventoryIncludedObjectVersions | String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Size
+    - typings.awsDashSdk.awsDashSdkStrings.Size_
     - typings.awsDashSdk.awsDashSdkStrings.LastModifiedDate
     - typings.awsDashSdk.awsDashSdkStrings.StorageClass
     - typings.awsDashSdk.awsDashSdkStrings.ETag
@@ -234,6 +247,7 @@ package object clientsS3Mod {
     - typings.awsDashSdk.awsDashSdkStrings.ObjectLockRetainUntilDate
     - typings.awsDashSdk.awsDashSdkStrings.ObjectLockMode
     - typings.awsDashSdk.awsDashSdkStrings.ObjectLockLegalHoldStatus
+    - typings.awsDashSdk.awsDashSdkStrings.IntelligentTieringAccessTier
     - java.lang.String
   */
   type InventoryOptionalField = _InventoryOptionalField | String
@@ -260,14 +274,14 @@ package object clientsS3Mod {
   type LocationPrefix = String
   type MFA = String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Enabled
-    - typings.awsDashSdk.awsDashSdkStrings.Disabled
+    - typings.awsDashSdk.awsDashSdkStrings.Enabled_
+    - typings.awsDashSdk.awsDashSdkStrings.Disabled_
     - java.lang.String
   */
   type MFADelete = _MFADelete | String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Enabled
-    - typings.awsDashSdk.awsDashSdkStrings.Disabled
+    - typings.awsDashSdk.awsDashSdkStrings.Enabled_
+    - typings.awsDashSdk.awsDashSdkStrings.Disabled_
     - java.lang.String
   */
   type MFADeleteStatus = _MFADeleteStatus | String
@@ -288,6 +302,13 @@ package object clientsS3Mod {
   type MetadataValue = String
   type MetricsConfigurationList = js.Array[MetricsConfiguration]
   type MetricsId = String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.Enabled_
+    - typings.awsDashSdk.awsDashSdkStrings.Disabled_
+    - java.lang.String
+  */
+  type MetricsStatus = _MetricsStatus | String
+  type Minutes = Double
   type MissingMeta = Double
   type MultipartUploadId = String
   type MultipartUploadList = js.Array[MultipartUpload]
@@ -300,7 +321,7 @@ package object clientsS3Mod {
   type NoncurrentVersionTransitionList = js.Array[NoncurrentVersionTransition]
   type NotificationId = String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.`private`
+    - typings.awsDashSdk.awsDashSdkStrings.private__
     - typings.awsDashSdk.awsDashSdkStrings.`public-read`
     - typings.awsDashSdk.awsDashSdkStrings.`public-read-write`
     - typings.awsDashSdk.awsDashSdkStrings.`authenticated-read`
@@ -313,7 +334,7 @@ package object clientsS3Mod {
   type ObjectIdentifierList = js.Array[ObjectIdentifier]
   type ObjectKey = String
   type ObjectList = js.Array[Object]
-  type ObjectLockEnabled = Enabled | String
+  type ObjectLockEnabled = Enabled_ | String
   type ObjectLockEnabledForBucket = Boolean
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.ON
@@ -373,8 +394,8 @@ package object clientsS3Mod {
   type Prefix = String
   type Priority = Double
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.http
-    - typings.awsDashSdk.awsDashSdkStrings.https
+    - typings.awsDashSdk.awsDashSdkStrings.http_
+    - typings.awsDashSdk.awsDashSdkStrings.https_
     - java.lang.String
   */
   type Protocol = _Protocol | String
@@ -395,8 +416,8 @@ package object clientsS3Mod {
   type ReplaceKeyWith = String
   type ReplicaKmsKeyID = String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Enabled
-    - typings.awsDashSdk.awsDashSdkStrings.Disabled
+    - typings.awsDashSdk.awsDashSdkStrings.Enabled_
+    - typings.awsDashSdk.awsDashSdkStrings.Disabled_
     - java.lang.String
   */
   type ReplicationRuleStatus = _ReplicationRuleStatus | String
@@ -409,8 +430,14 @@ package object clientsS3Mod {
     - java.lang.String
   */
   type ReplicationStatus = _ReplicationStatus | String
-  type RequestCharged = requester | String
-  type RequestPayer = requester | String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.Enabled_
+    - typings.awsDashSdk.awsDashSdkStrings.Disabled_
+    - java.lang.String
+  */
+  type ReplicationTimeStatus = _ReplicationTimeStatus | String
+  type RequestCharged = requester_ | String
+  type RequestPayer = requester_ | String
   type ResponseCacheControl = String
   type ResponseContentDisposition = String
   type ResponseContentEncoding = String
@@ -431,7 +458,7 @@ package object clientsS3Mod {
   type SelectObjectContentEventStream = EventStream[Anon_Cont]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.AES256
-    - typings.awsDashSdk.awsDashSdkStrings.`aws:kms`
+    - typings.awsDashSdk.awsDashSdkStrings.awsColonkms
     - java.lang.String
   */
   type ServerSideEncryption = _ServerSideEncryption | String
@@ -439,11 +466,12 @@ package object clientsS3Mod {
   type Setting = Boolean
   type Size = Double
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Enabled
-    - typings.awsDashSdk.awsDashSdkStrings.Disabled
+    - typings.awsDashSdk.awsDashSdkStrings.Enabled_
+    - typings.awsDashSdk.awsDashSdkStrings.Disabled_
     - java.lang.String
   */
   type SseKmsEncryptedObjectsStatus = _SseKmsEncryptedObjectsStatus | String
+  type Start = Double
   type StartAfter = String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.STANDARD
@@ -471,8 +499,8 @@ package object clientsS3Mod {
   type TargetGrants = js.Array[TargetGrant]
   type TargetPrefix = String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Standard
-    - typings.awsDashSdk.awsDashSdkStrings.Bulk
+    - typings.awsDashSdk.awsDashSdkStrings.Standard_
+    - typings.awsDashSdk.awsDashSdkStrings.Bulk_
     - typings.awsDashSdk.awsDashSdkStrings.Expedited
     - java.lang.String
   */
@@ -493,7 +521,7 @@ package object clientsS3Mod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.CanonicalUser
     - typings.awsDashSdk.awsDashSdkStrings.AmazonCustomerByEmail
-    - typings.awsDashSdk.awsDashSdkStrings.Group
+    - typings.awsDashSdk.awsDashSdkStrings.Group_
     - java.lang.String
   */
   type Type = _Type | String
@@ -507,7 +535,7 @@ package object clientsS3Mod {
   type _Date = Date
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2006-03-01`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

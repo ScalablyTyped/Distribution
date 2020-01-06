@@ -12,7 +12,7 @@ Split a string at one or more indices
 | Keywords           | split, cut, at, string, text, index, indexes, indices |
 | # releases         | 2 |
 | # dependents       | 4 |
-| # downloads        | 12591 |
+| # downloads        | 11812 |
 | # stars            | 1 |
 
 ## Links

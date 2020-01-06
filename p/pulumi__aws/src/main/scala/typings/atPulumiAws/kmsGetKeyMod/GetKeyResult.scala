@@ -4,25 +4,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetKeyResult extends js.Object {
-  val arn: String
-  val awsAccountId: String
-  val creationDate: String
-  val deletionDate: String
-  val description: String
-  val enabled: Boolean
-  val expirationModel: String
-  val grantTokens: js.UndefOr[js.Array[String]] = js.undefined
+  val arn: String = js.native
+  val awsAccountId: String = js.native
+  val creationDate: String = js.native
+  val deletionDate: String = js.native
+  val description: String = js.native
+  val enabled: Boolean = js.native
+  val expirationModel: String = js.native
+  val grantTokens: js.UndefOr[js.Array[String]] = js.native
   /**
     * id is the provider-assigned unique ID for this managed resource.
     */
-  val id: String
-  val keyId: String
-  val keyManager: String
-  val keyState: String
-  val keyUsage: String
-  val origin: String
-  val validTo: String
+  val id: String = js.native
+  val keyId: String = js.native
+  val keyManager: String = js.native
+  val keyState: String = js.native
+  val keyUsage: String = js.native
+  val origin: String = js.native
+  val validTo: String = js.native
 }
 
 object GetKeyResult {
@@ -44,8 +45,8 @@ object GetKeyResult {
     validTo: String,
     grantTokens: js.Array[String] = null
   ): GetKeyResult = {
-    val __obj = js.Dynamic.literal(arn = arn, awsAccountId = awsAccountId, creationDate = creationDate, deletionDate = deletionDate, description = description, enabled = enabled, expirationModel = expirationModel, id = id, keyId = keyId, keyManager = keyManager, keyState = keyState, keyUsage = keyUsage, origin = origin, validTo = validTo)
-    if (grantTokens != null) __obj.updateDynamic("grantTokens")(grantTokens)
+    val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], awsAccountId = awsAccountId.asInstanceOf[js.Any], creationDate = creationDate.asInstanceOf[js.Any], deletionDate = deletionDate.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], expirationModel = expirationModel.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], keyId = keyId.asInstanceOf[js.Any], keyManager = keyManager.asInstanceOf[js.Any], keyState = keyState.asInstanceOf[js.Any], keyUsage = keyUsage.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], validTo = validTo.asInstanceOf[js.Any])
+    if (grantTokens != null) __obj.updateDynamic("grantTokens")(grantTokens.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetKeyResult]
   }
 }

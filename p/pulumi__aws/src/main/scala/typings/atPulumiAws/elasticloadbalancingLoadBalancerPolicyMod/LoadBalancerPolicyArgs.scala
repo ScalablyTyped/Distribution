@@ -6,23 +6,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LoadBalancerPolicyArgs extends js.Object {
   /**
     * The load balancer on which the policy is defined.
     */
-  val loadBalancerName: Input[String]
+  val loadBalancerName: Input[String] = js.native
   /**
     * Policy attribute to apply to the policy.
     */
-  val policyAttributes: js.UndefOr[Input[js.Array[Input[LoadBalancerPolicyPolicyAttribute]]]] = js.undefined
+  val policyAttributes: js.UndefOr[Input[js.Array[Input[LoadBalancerPolicyPolicyAttribute]]]] = js.native
   /**
     * The name of the load balancer policy.
     */
-  val policyName: Input[String]
+  val policyName: Input[String] = js.native
   /**
     * The policy type.
     */
-  val policyTypeName: Input[String]
+  val policyTypeName: Input[String] = js.native
 }
 
 object LoadBalancerPolicyArgs {

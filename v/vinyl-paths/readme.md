@@ -3,19 +3,19 @@
 
 
 ## Library description:
-Get the file paths in a vinyl stream
+Get the file paths in a `vinyl` stream
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | vinyl-paths |
 | Keywords           | gulpplugin, vinyl, gulp, paths, path, file, tap, through, stream |
-| # releases         | 1 |
-| # dependents       | 113 |
-| # downloads        | 1570076 |
+| # releases         | 3 |
+| # dependents       | 125 |
+| # downloads        | 1952866 |
 | # stars            | 12 |
 
 ## Links
-- [Homepage](https://github.com/sindresorhus/vinyl-paths)
+- [Homepage](https://github.com/sindresorhus/vinyl-paths#readme)
 - [Bugs](https://github.com/sindresorhus/vinyl-paths/issues)
 - [Repository](https://github.com/sindresorhus/vinyl-paths)
 - [Npm](https://www.npmjs.com/package/vinyl-paths)

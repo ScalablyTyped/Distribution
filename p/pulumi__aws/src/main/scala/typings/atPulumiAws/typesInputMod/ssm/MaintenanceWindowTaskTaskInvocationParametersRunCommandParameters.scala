@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MaintenanceWindowTaskTaskInvocationParametersRunCommandParameters extends js.Object {
   /**
     * Information about the command(s) to execute.
     */
-  var comment: js.UndefOr[Input[String]] = js.undefined
+  var comment: js.UndefOr[Input[String]] = js.native
   /**
     * The SHA-256 or SHA-1 hash created by the system when the document was created. SHA-1 hashes have been deprecated.
     */
-  var documentHash: js.UndefOr[Input[String]] = js.undefined
+  var documentHash: js.UndefOr[Input[String]] = js.native
   /**
     * SHA-256 or SHA-1. SHA-1 hashes have been deprecated. Valid values: `Sha256` and `Sha1`
     */
-  var documentHashType: js.UndefOr[Input[String]] = js.undefined
+  var documentHashType: js.UndefOr[Input[String]] = js.native
   /**
     * Configurations for sending notifications about command status changes on a per-instance basis. Documented below.
     */
@@ -25,15 +26,15 @@ trait MaintenanceWindowTaskTaskInvocationParametersRunCommandParameters extends 
     Input[
       MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfig
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * The name of the Amazon S3 bucket.
     */
-  var outputS3Bucket: js.UndefOr[Input[String]] = js.undefined
+  var outputS3Bucket: js.UndefOr[Input[String]] = js.native
   /**
     * The Amazon S3 bucket subfolder.
     */
-  var outputS3KeyPrefix: js.UndefOr[Input[String]] = js.undefined
+  var outputS3KeyPrefix: js.UndefOr[Input[String]] = js.native
   /**
     * The parameters for the RUN_COMMAND task execution. Documented below.
     */
@@ -43,15 +44,15 @@ trait MaintenanceWindowTaskTaskInvocationParametersRunCommandParameters extends 
         Input[MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameter]
       ]
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * The IAM service role to assume during task execution.
     */
-  var serviceRoleArn: js.UndefOr[Input[String]] = js.undefined
+  var serviceRoleArn: js.UndefOr[Input[String]] = js.native
   /**
     * If this time is reached and the command has not already started executing, it doesn't run.
     */
-  var timeoutSeconds: js.UndefOr[Input[Double]] = js.undefined
+  var timeoutSeconds: js.UndefOr[Input[Double]] = js.native
 }
 
 object MaintenanceWindowTaskTaskInvocationParametersRunCommandParameters {

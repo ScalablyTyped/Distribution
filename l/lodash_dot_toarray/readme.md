@@ -11,8 +11,8 @@ The lodash method `_.toArray` exported as a module.
 | Full name          | lodash.toarray |
 | Keywords           | lodash-modularized, toarray |
 | # releases         | 0 |
-| # dependents       | 63 |
-| # downloads        | 21122709 |
+| # dependents       | 70 |
+| # downloads        | 41409635 |
 | # stars            | 0 |
 
 ## Links

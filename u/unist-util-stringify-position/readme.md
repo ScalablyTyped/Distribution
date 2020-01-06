@@ -10,9 +10,9 @@ Stringify a Unist node, position, or point
 | ------------------ | :-------------: |
 | Full name          | unist-util-stringify-position |
 | Keywords           | unist, position, location, point, node, stringify, tostring, util, utility |
-| # releases         | 4 |
+| # releases         | 5 |
 | # dependents       | 10 |
-| # downloads        | 96823025 |
+| # downloads        | 113166661 |
 | # stars            | 0 |
 
 ## Links

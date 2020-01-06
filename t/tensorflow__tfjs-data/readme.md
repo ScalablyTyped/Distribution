@@ -10,9 +10,9 @@ TensorFlow Data API in JavaScript
 | ------------------ | :-------------: |
 | Full name          | @tensorflow/tfjs-data |
 | Keywords           | - |
-| # releases         | 27 |
-| # dependents       | 1 |
-| # downloads        | 154192 |
+| # releases         | 41 |
+| # dependents       | 2 |
+| # downloads        | 374876 |
 | # stars            | 0 |
 
 ## Links

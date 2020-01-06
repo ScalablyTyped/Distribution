@@ -11,8 +11,8 @@ Jest's reporters
 | Full name          | @jest/reporters |
 | Keywords           | - |
 | # releases         | 13 |
-| # dependents       | 5 |
-| # downloads        | 77298837 |
+| # dependents       | 6 |
+| # downloads        | 101762775 |
 | # stars            | 0 |
 
 ## Links

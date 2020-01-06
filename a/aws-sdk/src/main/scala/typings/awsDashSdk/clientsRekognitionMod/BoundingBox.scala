@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BoundingBox extends js.Object {
   /**
     * Height of the bounding box as a ratio of the overall image height.
     */
-  var Height: js.UndefOr[Float] = js.undefined
+  var Height: js.UndefOr[Float] = js.native
   /**
     * Left coordinate of the bounding box as a ratio of overall image width.
     */
-  var Left: js.UndefOr[Float] = js.undefined
+  var Left: js.UndefOr[Float] = js.native
   /**
     * Top coordinate of the bounding box as a ratio of overall image height.
     */
-  var Top: js.UndefOr[Float] = js.undefined
+  var Top: js.UndefOr[Float] = js.native
   /**
     * Width of the bounding box as a ratio of the overall image width.
     */
-  var Width: js.UndefOr[Float] = js.undefined
+  var Width: js.UndefOr[Float] = js.native
 }
 
 object BoundingBox {

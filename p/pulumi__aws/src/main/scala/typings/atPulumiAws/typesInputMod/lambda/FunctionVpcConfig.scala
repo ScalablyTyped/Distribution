@@ -5,16 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FunctionVpcConfig extends js.Object {
   /**
     * A list of security group IDs associated with the Lambda function.
     */
-  var securityGroupIds: Input[js.Array[Input[String]]]
+  var securityGroupIds: Input[js.Array[Input[String]]] = js.native
   /**
     * A list of subnet IDs associated with the Lambda function.
     */
-  var subnetIds: Input[js.Array[Input[String]]]
-  var vpcId: js.UndefOr[Input[String]] = js.undefined
+  var subnetIds: Input[js.Array[Input[String]]] = js.native
+  var vpcId: js.UndefOr[Input[String]] = js.native
 }
 
 object FunctionVpcConfig {

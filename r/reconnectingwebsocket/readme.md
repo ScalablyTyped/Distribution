@@ -10,9 +10,9 @@ A small JavaScript library that decorates the WebSocket API to provide a WebSock
 | ------------------ | :-------------: |
 | Full name          | reconnectingwebsocket |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 13 |
-| # downloads        | 96222 |
+| # releases         | 0 |
+| # dependents       | 14 |
+| # downloads        | 133984 |
 | # stars            | 3 |
 
 ## Links

@@ -9,16 +9,16 @@ A simple zero-configuration command-line http server
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | http-server |
-| Keywords           | cli, command |
+| Keywords           | cli, command, http, server |
 | # releases         | 4 |
-| # dependents       | 399 |
-| # downloads        | 8816050 |
-| # stars            | 519 |
+| # dependents       | 483 |
+| # downloads        | 11750775 |
+| # stars            | 520 |
 
 ## Links
-- [Homepage](https://github.com/indexzero/http-server#readme)
-- [Bugs](https://github.com/nodeapps/http-server/issues)
-- [Repository](https://github.com/indexzero/http-server)
+- [Homepage](https://github.com/http-party/http-server#readme)
+- [Bugs](https://github.com/http-party/http-server/issues)
+- [Repository](https://github.com/http-party/http-server)
 - [Npm](https://www.npmjs.com/package/http-server)
     
 

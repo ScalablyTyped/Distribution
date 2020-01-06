@@ -10,9 +10,9 @@ PhosphorJS - Keyboard
 | ------------------ | :-------------: |
 | Full name          | @phosphor/keyboard |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 4 |
-| # downloads        | 1109728 |
+| # releases         | 2 |
+| # dependents       | 3 |
+| # downloads        | 1188987 |
 | # stars            | 0 |
 
 ## Links

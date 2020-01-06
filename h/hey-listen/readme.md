@@ -11,8 +11,8 @@ Warning and invariant dev-ex messaging.
 | Full name          | hey-listen |
 | Keywords           | warning, invariant |
 | # releases         | 11 |
-| # dependents       | 14 |
-| # downloads        | 1287428 |
+| # dependents       | 23 |
+| # downloads        | 4134105 |
 | # stars            | 0 |
 
 ## Links

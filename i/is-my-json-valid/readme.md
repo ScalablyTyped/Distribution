@@ -3,19 +3,19 @@
 
 
 ## Library description:
-A JSONSchema validator that uses code generation to be extremely fast
+A [JSONSchema](https://json-schema.org/) validator that uses code generation to be extremely fast.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | is-my-json-valid |
 | Keywords           | json, schema, orderly, jsonschema |
-| # releases         | 8 |
-| # dependents       | 187 |
-| # downloads        | 132236531 |
+| # releases         | 6 |
+| # dependents       | 197 |
+| # downloads        | 95543326 |
 | # stars            | 24 |
 
 ## Links
-- [Homepage](https://github.com/mafintosh/is-my-json-valid)
+- [Homepage](https://github.com/mafintosh/is-my-json-valid#readme)
 - [Bugs](https://github.com/mafintosh/is-my-json-valid/issues)
 - [Repository](https://github.com/mafintosh/is-my-json-valid)
 - [Npm](https://www.npmjs.com/package/is-my-json-valid)

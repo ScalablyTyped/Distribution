@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Resolution extends js.Object {
   /**
     * The screen resolution's height, expressed in pixels.
     */
-  var height: js.UndefOr[Integer] = js.undefined
+  var height: js.UndefOr[Integer] = js.native
   /**
     * The screen resolution's width, expressed in pixels.
     */
-  var width: js.UndefOr[Integer] = js.undefined
+  var width: js.UndefOr[Integer] = js.native
 }
 
 object Resolution {

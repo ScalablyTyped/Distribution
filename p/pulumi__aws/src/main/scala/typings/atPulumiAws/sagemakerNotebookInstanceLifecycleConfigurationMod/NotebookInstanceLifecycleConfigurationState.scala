@@ -5,23 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NotebookInstanceLifecycleConfigurationState extends js.Object {
   /**
     * The Amazon Resource Name (ARN) assigned by AWS to this lifecycle configuration.
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the lifecycle configuration (must be unique). If omitted, this provider will assign a random, unique name.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * A shell script (base64-encoded) that runs only once when the SageMaker Notebook Instance is created.
     */
-  val onCreate: js.UndefOr[Input[String]] = js.undefined
+  val onCreate: js.UndefOr[Input[String]] = js.native
   /**
     * A shell script (base64-encoded) that runs every time the SageMaker Notebook Instance is started including the time it's created.
     */
-  val onStart: js.UndefOr[Input[String]] = js.undefined
+  val onStart: js.UndefOr[Input[String]] = js.native
 }
 
 object NotebookInstanceLifecycleConfigurationState {

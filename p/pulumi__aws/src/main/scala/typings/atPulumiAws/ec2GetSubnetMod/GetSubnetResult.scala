@@ -6,28 +6,29 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetSubnetResult extends js.Object {
   /**
     * The ARN of the subnet.
     */
-  val arn: String
-  val assignIpv6AddressOnCreation: Boolean
-  val availabilityZone: String
-  val availabilityZoneId: String
-  val cidrBlock: String
-  val defaultForAz: Boolean
-  val filters: js.UndefOr[js.Array[GetSubnetFilter]] = js.undefined
-  val id: String
-  val ipv6CidrBlock: String
-  val ipv6CidrBlockAssociationId: String
-  val mapPublicIpOnLaunch: Boolean
+  val arn: String = js.native
+  val assignIpv6AddressOnCreation: Boolean = js.native
+  val availabilityZone: String = js.native
+  val availabilityZoneId: String = js.native
+  val cidrBlock: String = js.native
+  val defaultForAz: Boolean = js.native
+  val filters: js.UndefOr[js.Array[GetSubnetFilter]] = js.native
+  val id: String = js.native
+  val ipv6CidrBlock: String = js.native
+  val ipv6CidrBlockAssociationId: String = js.native
+  val mapPublicIpOnLaunch: Boolean = js.native
   /**
     * The ID of the AWS account that owns the subnet.
     */
-  val ownerId: String
-  val state: String
-  val tags: StringDictionary[js.Any]
-  val vpcId: String
+  val ownerId: String = js.native
+  val state: String = js.native
+  val tags: StringDictionary[js.Any] = js.native
+  val vpcId: String = js.native
 }
 
 object GetSubnetResult {
@@ -49,8 +50,8 @@ object GetSubnetResult {
     vpcId: String,
     filters: js.Array[GetSubnetFilter] = null
   ): GetSubnetResult = {
-    val __obj = js.Dynamic.literal(arn = arn, assignIpv6AddressOnCreation = assignIpv6AddressOnCreation, availabilityZone = availabilityZone, availabilityZoneId = availabilityZoneId, cidrBlock = cidrBlock, defaultForAz = defaultForAz, id = id, ipv6CidrBlock = ipv6CidrBlock, ipv6CidrBlockAssociationId = ipv6CidrBlockAssociationId, mapPublicIpOnLaunch = mapPublicIpOnLaunch, ownerId = ownerId, state = state, tags = tags, vpcId = vpcId)
-    if (filters != null) __obj.updateDynamic("filters")(filters)
+    val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], assignIpv6AddressOnCreation = assignIpv6AddressOnCreation.asInstanceOf[js.Any], availabilityZone = availabilityZone.asInstanceOf[js.Any], availabilityZoneId = availabilityZoneId.asInstanceOf[js.Any], cidrBlock = cidrBlock.asInstanceOf[js.Any], defaultForAz = defaultForAz.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], ipv6CidrBlock = ipv6CidrBlock.asInstanceOf[js.Any], ipv6CidrBlockAssociationId = ipv6CidrBlockAssociationId.asInstanceOf[js.Any], mapPublicIpOnLaunch = mapPublicIpOnLaunch.asInstanceOf[js.Any], ownerId = ownerId.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], vpcId = vpcId.asInstanceOf[js.Any])
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSubnetResult]
   }
 }

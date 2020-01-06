@@ -11,12 +11,12 @@ trait Static
   extends Shared
      with /**
 		 * Create a Globalize instance.
-		 * @param {string} Locale string of the instance.
+		 * @param cldr Cldr instance of the instance.
 		 * @returns {Globalize} A Globalize instance
 		 */
 /**
 		 * Create a Globalize instance.
-		 * @param cldr Cldr instance of the instance.
+		 * @param {string} Locale string of the instance.
 		 * @returns {Globalize} A Globalize instance
 		 */
 Instantiable1[(/* cldr */ CldrStatic) | (/* locale */ String), Globalize] {

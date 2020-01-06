@@ -10,9 +10,9 @@ An SQL-friendly ORM for Node.js
 | ------------------ | :-------------: |
 | Full name          | objection |
 | Keywords           | orm, knex, sql, query, query builder, postgresql, mysql, sqlite3 |
-| # releases         | 68 |
-| # dependents       | 79 |
-| # downloads        | 1041394 |
+| # releases         | 77 |
+| # dependents       | 120 |
+| # downloads        | 1963050 |
 | # stars            | 22 |
 
 ## Links

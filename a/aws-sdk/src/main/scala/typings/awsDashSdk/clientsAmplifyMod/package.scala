@@ -6,7 +6,6 @@ import scala.scalajs.js.annotation._
 
 package object clientsAmplifyMod {
   import org.scalablytyped.runtime.StringDictionary
-  import typings.awsDashSdk.awsDashSdkStrings.TEST
   import typings.awsDashSdk.awsDashSdkStrings.WEB
   import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
   import typings.std.Date
@@ -18,7 +17,6 @@ package object clientsAmplifyMod {
   type Apps = js.Array[App]
   type ArtifactFileName = String
   type ArtifactId = String
-  type ArtifactType = TEST | String
   type ArtifactUrl = String
   type Artifacts = js.Array[Artifact]
   type ArtifactsUrl = String
@@ -26,6 +24,8 @@ package object clientsAmplifyMod {
   type AssociatedResources = js.Array[AssociatedResource]
   type AutoBranchCreationPattern = String
   type AutoBranchCreationPatterns = js.Array[AutoBranchCreationPattern]
+  type BackendEnvironmentArn = String
+  type BackendEnvironments = js.Array[BackendEnvironment]
   type BasicAuthCredentials = String
   type BranchArn = String
   type BranchName = String
@@ -44,6 +44,7 @@ package object clientsAmplifyMod {
   type CustomRules = js.Array[CustomRule]
   type DNSRecord = String
   type DefaultDomain = String
+  type DeploymentArtifacts = String
   type Description = String
   type DisplayName = String
   type DomainAssociationArn = String
@@ -72,6 +73,7 @@ package object clientsAmplifyMod {
   type EndTime = Date
   type EnvKey = String
   type EnvValue = String
+  type EnvironmentName = String
   type EnvironmentVariables = StringDictionary[EnvValue]
   type FileMap = StringDictionary[MD5Hash]
   type FileName = String
@@ -108,12 +110,14 @@ package object clientsAmplifyMod {
   type NextToken = String
   type OauthToken = String
   type Platform = WEB | String
+  type PullRequestEnvironmentName = String
   type Repository = String
   type ResourceArn = String
   type Screenshots = StringDictionary[ThumbnailUrl]
   type ServiceRoleArn = String
   type Source = String
   type SourceUrl = String
+  type StackName = String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.PRODUCTION
     - typings.awsDashSdk.awsDashSdkStrings.BETA
@@ -150,7 +154,7 @@ package object clientsAmplifyMod {
   type Webhooks = js.Array[Webhook]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2017-07-25`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

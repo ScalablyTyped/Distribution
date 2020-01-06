@@ -10,9 +10,9 @@ kill trees of processes
 | ------------------ | :-------------: |
 | Full name          | tree-kill |
 | Keywords           | tree, trees, process, processes, kill, signal |
-| # releases         | 3 |
-| # dependents       | 217 |
-| # downloads        | 49600172 |
+| # releases         | 1 |
+| # dependents       | 296 |
+| # downloads        | 87726922 |
 | # stars            | 7 |
 
 ## Links

@@ -11,8 +11,8 @@ The lodash method `_.trim` exported as a module.
 | Full name          | lodash.trim |
 | Keywords           | lodash-modularized, trim |
 | # releases         | 0 |
-| # dependents       | 91 |
-| # downloads        | 1484339 |
+| # dependents       | 99 |
+| # downloads        | 2060401 |
 | # stars            | 0 |
 
 ## Links

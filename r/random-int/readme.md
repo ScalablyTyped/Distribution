@@ -10,9 +10,9 @@ Generate a random integer
 | ------------------ | :-------------: |
 | Full name          | random-int |
 | Keywords           | rand, random, randomize, int, integer, number, max, min, math, generate, generator |
-| # releases         | 0 |
-| # dependents       | 49 |
-| # downloads        | 287101 |
+| # releases         | 3 |
+| # dependents       | 57 |
+| # downloads        | 718845 |
 | # stars            | 4 |
 
 ## Links

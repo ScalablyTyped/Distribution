@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AnalyticsApplicationOutput extends js.Object {
   /**
     * The ARN of the Kinesis Analytics Application.
     */
-  var id: js.UndefOr[Input[String]] = js.undefined
-  var kinesisFirehose: js.UndefOr[Input[AnalyticsApplicationOutputKinesisFirehose]] = js.undefined
-  var kinesisStream: js.UndefOr[Input[AnalyticsApplicationOutputKinesisStream]] = js.undefined
-  var lambda: js.UndefOr[Input[AnalyticsApplicationOutputLambda]] = js.undefined
+  var id: js.UndefOr[Input[String]] = js.native
+  var kinesisFirehose: js.UndefOr[Input[AnalyticsApplicationOutputKinesisFirehose]] = js.native
+  var kinesisStream: js.UndefOr[Input[AnalyticsApplicationOutputKinesisStream]] = js.native
+  var lambda: js.UndefOr[Input[AnalyticsApplicationOutputLambda]] = js.native
   /**
     * Name of the Kinesis Analytics Application.
     */
-  var name: Input[String]
-  var schema: Input[AnalyticsApplicationOutputSchema]
+  var name: Input[String] = js.native
+  var schema: Input[AnalyticsApplicationOutputSchema] = js.native
 }
 
 object AnalyticsApplicationOutput {

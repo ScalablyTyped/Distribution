@@ -12,7 +12,7 @@ Run mocha browser tests in phantomjs via the command line
 | Keywords           | phantomjs, mocha, test, runner, command line, browser |
 | # releases         | 1 |
 | # dependents       | 36 |
-| # downloads        | 207215 |
+| # downloads        | 192225 |
 | # stars            | 16 |
 
 ## Links

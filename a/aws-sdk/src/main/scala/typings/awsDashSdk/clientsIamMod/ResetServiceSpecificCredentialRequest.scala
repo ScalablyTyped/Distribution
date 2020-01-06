@@ -4,22 +4,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ResetServiceSpecificCredentialRequest extends js.Object {
   /**
     * The unique identifier of the service-specific credential. This parameter allows (through its regex pattern) a string of characters that can consist of any upper or lowercased letter or digit.
     */
-  var ServiceSpecificCredentialId: serviceSpecificCredentialId
+  var ServiceSpecificCredentialId: serviceSpecificCredentialId = js.native
   /**
     * The name of the IAM user associated with the service-specific credential. If this value is not specified, then the operation assumes the user whose credentials are used to call the operation. This parameter allows (through its regex pattern) a string of characters consisting of upper and lowercase alphanumeric characters with no spaces. You can also include any of the following characters: _+=,.@-
     */
-  var UserName: js.UndefOr[userNameType] = js.undefined
+  var UserName: js.UndefOr[userNameType] = js.native
 }
 
 object ResetServiceSpecificCredentialRequest {
   @scala.inline
   def apply(ServiceSpecificCredentialId: serviceSpecificCredentialId, UserName: userNameType = null): ResetServiceSpecificCredentialRequest = {
-    val __obj = js.Dynamic.literal(ServiceSpecificCredentialId = ServiceSpecificCredentialId)
-    if (UserName != null) __obj.updateDynamic("UserName")(UserName)
+    val __obj = js.Dynamic.literal(ServiceSpecificCredentialId = ServiceSpecificCredentialId.asInstanceOf[js.Any])
+    if (UserName != null) __obj.updateDynamic("UserName")(UserName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResetServiceSpecificCredentialRequest]
   }
 }

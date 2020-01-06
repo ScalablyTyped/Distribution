@@ -37,7 +37,7 @@ trait Typeofzdog extends js.Object {
     * @see {@link https://github.com/jaames/zfont#zdogtext Zfont API}
     */
   var Text: Instantiable1[
-    /* options */ TextOptions[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any], 
+    /* options */ TextOptions[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
     typings.zfont.zfontMod.zdogMod.Text[MultilineText]
   ] = js.native
   /**
@@ -47,7 +47,7 @@ trait Typeofzdog extends js.Object {
     * @see {@link  Zfont API}
     */
   var TextGroup: Instantiable1[
-    /* options */ TextGroupOptions[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any], 
+    /* options */ TextGroupOptions[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
     typings.zfont.zfontMod.zdogMod.TextGroup[MultilineText]
   ] = js.native
   var Vector: Instantiable0[typings.zdog.zdogMod.Vector] = js.native

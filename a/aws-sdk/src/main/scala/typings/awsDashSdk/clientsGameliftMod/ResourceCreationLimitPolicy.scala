@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ResourceCreationLimitPolicy extends js.Object {
   /**
-    * Maximum number of game sessions that an individual can create during the policy period. 
+    * The maximum number of game sessions that an individual can create during the policy period. 
     */
-  var NewGameSessionsPerCreator: js.UndefOr[WholeNumber] = js.undefined
+  var NewGameSessionsPerCreator: js.UndefOr[WholeNumber] = js.native
   /**
-    * Time span used in evaluating the resource creation limit policy. 
+    * The time span used in evaluating the resource creation limit policy. 
     */
-  var PolicyPeriodInMinutes: js.UndefOr[WholeNumber] = js.undefined
+  var PolicyPeriodInMinutes: js.UndefOr[WholeNumber] = js.native
 }
 
 object ResourceCreationLimitPolicy {

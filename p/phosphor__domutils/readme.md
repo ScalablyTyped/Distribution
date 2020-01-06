@@ -10,9 +10,9 @@ PhosphorJS - DOM Utilities
 | ------------------ | :-------------: |
 | Full name          | @phosphor/domutils |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 36 |
-| # downloads        | 851887 |
+| # releases         | 3 |
+| # dependents       | 46 |
+| # downloads        | 1289765 |
 | # stars            | 0 |
 
 ## Links

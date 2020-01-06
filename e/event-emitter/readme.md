@@ -11,8 +11,8 @@ Environment agnostic event emitter
 | Full name          | event-emitter |
 | Keywords           | event, events, trigger, observer, listener, emitter, pubsub |
 | # releases         | 1 |
-| # dependents       | 290 |
-| # downloads        | 151486686 |
+| # dependents       | 327 |
+| # downloads        | 154073375 |
 | # stars            | 27 |
 
 ## Links

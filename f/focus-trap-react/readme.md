@@ -10,9 +10,9 @@ A React component that traps focus.
 | ------------------ | :-------------: |
 | Full name          | focus-trap-react |
 | Keywords           | react, reactjs, react-component, aria, accessibility, modal, dialog, focus, keyboard |
-| # releases         | 14 |
-| # dependents       | 50 |
-| # downloads        | 1993155 |
+| # releases         | 11 |
+| # dependents       | 79 |
+| # downloads        | 4908056 |
 | # stars            | 2 |
 
 ## Links

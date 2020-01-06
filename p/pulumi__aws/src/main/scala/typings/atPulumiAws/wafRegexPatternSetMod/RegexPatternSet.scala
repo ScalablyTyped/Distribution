@@ -23,6 +23,10 @@ class RegexPatternSet protected () extends CustomResource {
   def this(name: String, args: RegexPatternSetArgs) = this()
   def this(name: String, args: RegexPatternSetArgs, opts: CustomResourceOptions) = this()
   /**
+    * Amazon Resource Name (ARN)
+    */
+  val arn: Output[String] = js.native
+  /**
     * The name or description of the Regex Pattern Set.
     */
   val name: Output[String] = js.native

@@ -5,13 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LaunchTemplatePlacement extends js.Object {
-  var affinity: js.UndefOr[Input[String]] = js.undefined
-  var availabilityZone: js.UndefOr[Input[String]] = js.undefined
-  var groupName: js.UndefOr[Input[String]] = js.undefined
-  var hostId: js.UndefOr[Input[String]] = js.undefined
-  var spreadDomain: js.UndefOr[Input[String]] = js.undefined
-  var tenancy: js.UndefOr[Input[String]] = js.undefined
+  var affinity: js.UndefOr[Input[String]] = js.native
+  var availabilityZone: js.UndefOr[Input[String]] = js.native
+  var groupName: js.UndefOr[Input[String]] = js.native
+  var hostId: js.UndefOr[Input[String]] = js.native
+  var spreadDomain: js.UndefOr[Input[String]] = js.native
+  var tenancy: js.UndefOr[Input[String]] = js.native
 }
 
 object LaunchTemplatePlacement {

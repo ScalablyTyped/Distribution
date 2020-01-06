@@ -5,7 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libNumberPickerMod {
-  import typings.react.reactMod.ReactElement
+  import typings.react.reactMod.ComponentClass
+  import typings.react.reactMod.ComponentState
 
-  type NumberPicker = ReactElement
+  type NumberPickerClass = ComponentClass[NumberPickerProps, ComponentState]
 }

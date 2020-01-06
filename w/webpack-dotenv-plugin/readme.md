@@ -10,9 +10,9 @@ Use dotenv with webpack.
 | ------------------ | :-------------: |
 | Full name          | webpack-dotenv-plugin |
 | Keywords           | webpack, dotenv, dot, env, environment, variables, plugin |
-| # releases         | 3 |
-| # dependents       | 4 |
-| # downloads        | 105839 |
+| # releases         | 2 |
+| # dependents       | 3 |
+| # downloads        | 177807 |
 | # stars            | 1 |
 
 ## Links

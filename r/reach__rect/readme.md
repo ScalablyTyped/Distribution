@@ -10,12 +10,15 @@ Measure React elements position in the DOM
 | ------------------ | :-------------: |
 | Full name          | @reach/rect |
 | Keywords           | - |
-| # releases         | 9 |
-| # dependents       | 11 |
-| # downloads        | 152927 |
+| # releases         | 18 |
+| # dependents       | 17 |
+| # downloads        | 773381 |
 | # stars            | 0 |
 
 ## Links
+- [Homepage](https://github.com/reach/reach-ui#readme)
+- [Bugs](https://github.com/reach/reach-ui/issues)
+- [Repository](https://github.com/reach/reach-ui)
 - [Npm](https://www.npmjs.com/package/%40reach%2Frect)
     
 

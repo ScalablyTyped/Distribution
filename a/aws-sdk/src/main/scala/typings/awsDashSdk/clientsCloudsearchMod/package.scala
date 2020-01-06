@@ -12,47 +12,47 @@ package object clientsCloudsearchMod {
   type APIVersion = java.lang.String
   type ARN = java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.none
+    - typings.awsDashSdk.awsDashSdkStrings.none__
     - typings.awsDashSdk.awsDashSdkStrings.minimal
     - typings.awsDashSdk.awsDashSdkStrings.light
-    - typings.awsDashSdk.awsDashSdkStrings.full
+    - typings.awsDashSdk.awsDashSdkStrings.full_
     - java.lang.String
   */
   type AlgorithmicStemming = _AlgorithmicStemming | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.ar
-    - typings.awsDashSdk.awsDashSdkStrings.bg
-    - typings.awsDashSdk.awsDashSdkStrings.ca
+    - typings.awsDashSdk.awsDashSdkStrings.ar_
+    - typings.awsDashSdk.awsDashSdkStrings.bg_
+    - typings.awsDashSdk.awsDashSdkStrings.ca_
     - typings.awsDashSdk.awsDashSdkStrings.cs
     - typings.awsDashSdk.awsDashSdkStrings.da
-    - typings.awsDashSdk.awsDashSdkStrings.de
+    - typings.awsDashSdk.awsDashSdkStrings.de_
     - typings.awsDashSdk.awsDashSdkStrings.el
     - typings.awsDashSdk.awsDashSdkStrings.en
-    - typings.awsDashSdk.awsDashSdkStrings.es
-    - typings.awsDashSdk.awsDashSdkStrings.eu
+    - typings.awsDashSdk.awsDashSdkStrings.es_
+    - typings.awsDashSdk.awsDashSdkStrings.eu_
     - typings.awsDashSdk.awsDashSdkStrings.fa
-    - typings.awsDashSdk.awsDashSdkStrings.fi
-    - typings.awsDashSdk.awsDashSdkStrings.fr
-    - typings.awsDashSdk.awsDashSdkStrings.ga
-    - typings.awsDashSdk.awsDashSdkStrings.gl
+    - typings.awsDashSdk.awsDashSdkStrings.fi_
+    - typings.awsDashSdk.awsDashSdkStrings.fr_
+    - typings.awsDashSdk.awsDashSdkStrings.ga_
+    - typings.awsDashSdk.awsDashSdkStrings.gl_
     - typings.awsDashSdk.awsDashSdkStrings.he
     - typings.awsDashSdk.awsDashSdkStrings.hi
-    - typings.awsDashSdk.awsDashSdkStrings.hu
+    - typings.awsDashSdk.awsDashSdkStrings.hu_
     - typings.awsDashSdk.awsDashSdkStrings.hy
-    - typings.awsDashSdk.awsDashSdkStrings.id
-    - typings.awsDashSdk.awsDashSdkStrings.it
+    - typings.awsDashSdk.awsDashSdkStrings.id__
+    - typings.awsDashSdk.awsDashSdkStrings.it_
     - typings.awsDashSdk.awsDashSdkStrings.ja
     - typings.awsDashSdk.awsDashSdkStrings.ko
-    - typings.awsDashSdk.awsDashSdkStrings.lv
+    - typings.awsDashSdk.awsDashSdkStrings.lv_
     - typings.awsDashSdk.awsDashSdkStrings.mul
-    - typings.awsDashSdk.awsDashSdkStrings.nl
-    - typings.awsDashSdk.awsDashSdkStrings.no
-    - typings.awsDashSdk.awsDashSdkStrings.pt
-    - typings.awsDashSdk.awsDashSdkStrings.ro
-    - typings.awsDashSdk.awsDashSdkStrings.ru
-    - typings.awsDashSdk.awsDashSdkStrings.sv
-    - typings.awsDashSdk.awsDashSdkStrings.th
-    - typings.awsDashSdk.awsDashSdkStrings.tr
+    - typings.awsDashSdk.awsDashSdkStrings.nl_
+    - typings.awsDashSdk.awsDashSdkStrings.no_
+    - typings.awsDashSdk.awsDashSdkStrings.pt_
+    - typings.awsDashSdk.awsDashSdkStrings.ro_
+    - typings.awsDashSdk.awsDashSdkStrings.ru_
+    - typings.awsDashSdk.awsDashSdkStrings.sv_
+    - typings.awsDashSdk.awsDashSdkStrings.th_
+    - typings.awsDashSdk.awsDashSdkStrings.tr_
     - typings.awsDashSdk.awsDashSdkStrings.`zh-Hans`
     - typings.awsDashSdk.awsDashSdkStrings.`zh-Hant`
     - java.lang.String
@@ -80,8 +80,8 @@ package object clientsCloudsearchMod {
     - typings.awsDashSdk.awsDashSdkStrings.int
     - typings.awsDashSdk.awsDashSdkStrings.double
     - typings.awsDashSdk.awsDashSdkStrings.literal
-    - typings.awsDashSdk.awsDashSdkStrings.text
-    - typings.awsDashSdk.awsDashSdkStrings.date
+    - typings.awsDashSdk.awsDashSdkStrings.text_
+    - typings.awsDashSdk.awsDashSdkStrings.date_
     - typings.awsDashSdk.awsDashSdkStrings.latlon
     - typings.awsDashSdk.awsDashSdkStrings.`int-array`
     - typings.awsDashSdk.awsDashSdkStrings.`double-array`
@@ -98,22 +98,22 @@ package object clientsCloudsearchMod {
   type MultiAZ = scala.Boolean
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.RequiresIndexDocuments
-    - typings.awsDashSdk.awsDashSdkStrings.Processing
-    - typings.awsDashSdk.awsDashSdkStrings.Active
+    - typings.awsDashSdk.awsDashSdkStrings.Processing_
+    - typings.awsDashSdk.awsDashSdkStrings.Active_
     - typings.awsDashSdk.awsDashSdkStrings.FailedToValidate
     - java.lang.String
   */
   type OptionState = _OptionState | java.lang.String
   type PartitionCount = scala.Double
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.searchDOTm1DOTsmall
-    - typings.awsDashSdk.awsDashSdkStrings.searchDOTm1DOTlarge
-    - typings.awsDashSdk.awsDashSdkStrings.searchDOTm2DOTxlarge
-    - typings.awsDashSdk.awsDashSdkStrings.searchDOTm2DOT2xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.searchDOTm3DOTmedium
-    - typings.awsDashSdk.awsDashSdkStrings.searchDOTm3DOTlarge
-    - typings.awsDashSdk.awsDashSdkStrings.searchDOTm3DOTxlarge
-    - typings.awsDashSdk.awsDashSdkStrings.searchDOTm3DOT2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.searchDotm1Dotsmall
+    - typings.awsDashSdk.awsDashSdkStrings.searchDotm1Dotlarge
+    - typings.awsDashSdk.awsDashSdkStrings.searchDotm2Dotxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.searchDotm2Dot2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.searchDotm3Dotmedium
+    - typings.awsDashSdk.awsDashSdkStrings.searchDotm3Dotlarge
+    - typings.awsDashSdk.awsDashSdkStrings.searchDotm3Dotxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.searchDotm3Dot2xlarge
     - java.lang.String
   */
   type PartitionInstanceType = _PartitionInstanceType | java.lang.String
@@ -124,20 +124,26 @@ package object clientsCloudsearchMod {
   type StandardNameList = js.Array[StandardName]
   type String = java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.none
-    - typings.awsDashSdk.awsDashSdkStrings.low
-    - typings.awsDashSdk.awsDashSdkStrings.high
+    - typings.awsDashSdk.awsDashSdkStrings.none__
+    - typings.awsDashSdk.awsDashSdkStrings.low__
+    - typings.awsDashSdk.awsDashSdkStrings.high__
     - java.lang.String
   */
   type SuggesterFuzzyMatching = _SuggesterFuzzyMatching | java.lang.String
   type SuggesterStatusList = js.Array[SuggesterStatus]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.`Policy-Min-TLS-1-0-2019-07`
+    - typings.awsDashSdk.awsDashSdkStrings.`Policy-Min-TLS-1-2-2019-07`
+    - java.lang.String
+  */
+  type TLSSecurityPolicy = _TLSSecurityPolicy | java.lang.String
   type UIntValue = scala.Double
   type UpdateTimestamp = Date
   type Word = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2011-02-01`
     - typings.awsDashSdk.awsDashSdkStrings.`2013-01-01`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | java.lang.String

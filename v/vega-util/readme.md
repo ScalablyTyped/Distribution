@@ -10,9 +10,9 @@ JavaScript utilities for Vega.
 | ------------------ | :-------------: |
 | Full name          | vega-util |
 | Keywords           | vega, utilities |
-| # releases         | 16 |
-| # dependents       | 27 |
-| # downloads        | 1361213 |
+| # releases         | 11 |
+| # dependents       | 31 |
+| # downloads        | 2150763 |
 | # stars            | 0 |
 
 ## Links

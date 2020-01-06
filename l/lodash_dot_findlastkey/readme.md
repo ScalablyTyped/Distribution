@@ -12,7 +12,7 @@ The lodash method `_.findLastKey` exported as a module.
 | Keywords           | lodash-modularized, findlastkey |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 17000 |
+| # downloads        | 2044 |
 | # stars            | 0 |
 
 ## Links

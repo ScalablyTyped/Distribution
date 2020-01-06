@@ -10,15 +10,15 @@ Bootstrap Colorpicker is a modular color picker plugin for Bootstrap 4.
 | ------------------ | :-------------: |
 | Full name          | bootstrap-colorpicker |
 | Keywords           | bootstrap, colorpicker |
-| # releases         | 16 |
-| # dependents       | 13 |
-| # downloads        | 1115551 |
+| # releases         | 17 |
+| # dependents       | 21 |
+| # downloads        | 1481876 |
 | # stars            | 2 |
 
 ## Links
-- [Homepage](https://farbelous.github.io/bootstrap-colorpicker/)
-- [Bugs](https://github.com/farbelous/bootstrap-colorpicker/issues)
-- [Repository](https://github.com/farbelous/bootstrap-colorpicker)
+- [Homepage](https://itsjavi.com/bootstrap-colorpicker/)
+- [Bugs](https://github.com/itsjavi/bootstrap-colorpicker/issues)
+- [Repository](https://github.com/itsjavi/bootstrap-colorpicker)
 - [Npm](https://www.npmjs.com/package/bootstrap-colorpicker)
     
 

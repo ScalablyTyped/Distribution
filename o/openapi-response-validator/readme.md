@@ -10,9 +10,9 @@ Validate a response according to an openapi schema.
 | ------------------ | :-------------: |
 | Full name          | openapi-response-validator |
 | Keywords           | openapi, validation, jsonschema, response |
-| # releases         | 18 |
+| # releases         | 20 |
 | # dependents       | 3 |
-| # downloads        | 361479 |
+| # downloads        | 432292 |
 | # stars            | 0 |
 
 ## Links

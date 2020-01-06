@@ -12,7 +12,7 @@ A fast implementation of a fisher-yates shuffle that does not mutate the source 
 | Keywords           | knuth, fisher-yates, shuffle, deterministic, pure |
 | # releases         | 8 |
 | # dependents       | 0 |
-| # downloads        | 334 |
+| # downloads        | 639 |
 | # stars            | 0 |
 
 ## Links

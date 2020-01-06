@@ -9,9 +9,9 @@ Redis session store for Connect
 | ------------------ | :-------------: |
 | Full name          | connect-redis |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 433 |
-| # downloads        | 5275940 |
+| # releases         | 8 |
+| # dependents       | 465 |
+| # downloads        | 7156181 |
 | # stars            | 113 |
 
 ## Links

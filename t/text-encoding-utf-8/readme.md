@@ -10,9 +10,9 @@ UTF-8 only polyfill for the Encoding Living Standard's API.
 | ------------------ | :-------------: |
 | Full name          | text-encoding-utf-8 |
 | Keywords           | encoding, decoding, living standard |
-| # releases         | 2 |
-| # dependents       | 32 |
-| # downloads        | 160315 |
+| # releases         | 0 |
+| # dependents       | 36 |
+| # downloads        | 590553 |
 | # stars            | 0 |
 
 ## Links

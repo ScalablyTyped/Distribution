@@ -33,8 +33,8 @@ object utilityMod extends js.Object {
   }
   
   val pair: Instantiable2[
-    /* import warning: RewrittenClass.unapply cls $anonfun was tparam First */ /* first */ js.Any, 
-    /* import warning: RewrittenClass.unapply cls $anonfun was tparam Second */ /* second */ js.Any, 
+    /* import warning: RewrittenClass.unapply cls was tparam First */ /* first */ js.Any, 
+    /* import warning: RewrittenClass.unapply cls was tparam Second */ /* second */ js.Any, 
     typings.tstl.utilityPairMod.Pair[js.Object, js.Object]
   ] = js.native
   def is_node(): Boolean = js.native

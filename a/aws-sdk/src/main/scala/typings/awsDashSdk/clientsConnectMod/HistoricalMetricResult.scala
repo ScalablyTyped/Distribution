@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait HistoricalMetricResult extends js.Object {
   /**
-    * A list of HistoricalMetricData objects.
+    * The set of metrics.
     */
-  var Collections: js.UndefOr[HistoricalMetricDataCollections] = js.undefined
+  var Collections: js.UndefOr[HistoricalMetricDataCollections] = js.native
   /**
-    * The Dimensions for the metrics.
+    * The dimension for the metrics.
     */
-  var Dimensions: js.UndefOr[typings.awsDashSdk.clientsConnectMod.Dimensions] = js.undefined
+  var Dimensions: js.UndefOr[typings.awsDashSdk.clientsConnectMod.Dimensions] = js.native
 }
 
 object HistoricalMetricResult {
   @scala.inline
   def apply(Collections: HistoricalMetricDataCollections = null, Dimensions: Dimensions = null): HistoricalMetricResult = {
     val __obj = js.Dynamic.literal()
-    if (Collections != null) __obj.updateDynamic("Collections")(Collections)
-    if (Dimensions != null) __obj.updateDynamic("Dimensions")(Dimensions)
+    if (Collections != null) __obj.updateDynamic("Collections")(Collections.asInstanceOf[js.Any])
+    if (Dimensions != null) __obj.updateDynamic("Dimensions")(Dimensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistoricalMetricResult]
   }
 }

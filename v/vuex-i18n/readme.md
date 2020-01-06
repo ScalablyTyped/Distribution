@@ -10,9 +10,9 @@ Easy localization for vue-components using vuex as data store
 | ------------------ | :-------------: |
 | Full name          | vuex-i18n |
 | Keywords           | localization, translation, vuex, vue, i18n |
-| # releases         | 22 |
-| # dependents       | 37 |
-| # downloads        | 351981 |
+| # releases         | 15 |
+| # dependents       | 40 |
+| # downloads        | 533636 |
 | # stars            | 2 |
 
 ## Links

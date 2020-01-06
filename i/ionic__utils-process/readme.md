@@ -10,9 +10,9 @@ Process utils for NodeJS
 | ------------------ | :-------------: |
 | Full name          | @ionic/utils-process |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 17 |
 | # dependents       | 3 |
-| # downloads        | 540829 |
+| # downloads        | 1843862 |
 | # stars            | 0 |
 
 ## Links

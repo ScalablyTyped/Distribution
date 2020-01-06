@@ -10,9 +10,9 @@ Redux wrapper for Next.js
 | ------------------ | :-------------: |
 | Full name          | next-redux-wrapper |
 | Keywords           | - |
-| # releases         | 21 |
-| # dependents       | 36 |
-| # downloads        | 1237196 |
+| # releases         | 16 |
+| # dependents       | 41 |
+| # downloads        | 2190487 |
 | # stars            | 2 |
 
 ## Links

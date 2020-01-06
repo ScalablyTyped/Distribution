@@ -10,9 +10,9 @@ ImageMagick's Magick++ bindings for NodeJS
 | ------------------ | :-------------: |
 | Full name          | imagemagick-native |
 | Keywords           | imagemagick, magick++, resize, convert |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 11 |
-| # downloads        | 23959 |
+| # downloads        | 16133 |
 | # stars            | 13 |
 
 ## Links

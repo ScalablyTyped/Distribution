@@ -10,9 +10,9 @@ Uri and query string manipulation
 | ------------------ | :-------------: |
 | Full name          | jsuri |
 | Keywords           | uri, url, query, path |
-| # releases         | 1 |
-| # dependents       | 37 |
-| # downloads        | 1180244 |
+| # releases         | 0 |
+| # dependents       | 39 |
+| # downloads        | 1465157 |
 | # stars            | 2 |
 
 ## Links

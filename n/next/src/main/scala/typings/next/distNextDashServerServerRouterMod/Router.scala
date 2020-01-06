@@ -7,22 +7,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Router extends js.Object {
-  var routes: js.Array[Route]
-  def add(route: Route): Unit
-  def execute(req: IncomingMessage, res: ServerResponse, parsedUrl: UrlWithParsedQuery): js.Promise[Boolean]
-}
-
-object Router {
-  @scala.inline
-  def apply(
-    add: Route => Unit,
-    execute: (IncomingMessage, ServerResponse, UrlWithParsedQuery) => js.Promise[Boolean],
-    routes: js.Array[Route]
-  ): Router = {
-    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), execute = js.Any.fromFunction3(execute), routes = routes.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[Router]
-  }
+  var catchAllRoute: Route = js.native
+  var dynamicRoutes: DynamicRoutes = js.native
+  var fsRoutes: js.Array[Route] = js.native
+  var pageChecker: PageChecker = js.native
+  var routes: js.Array[Route] = js.native
+  def add(route: Route): Unit = js.native
+  def execute(req: IncomingMessage, res: ServerResponse, parsedUrl: UrlWithParsedQuery): js.Promise[Boolean] = js.native
+  def setDynamicRoutes(): Unit = js.native
+  def setDynamicRoutes(routes: DynamicRoutes): Unit = js.native
 }
 

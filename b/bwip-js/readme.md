@@ -4,15 +4,15 @@
 Typings are for version 1.7.3
 
 ## Library description:
-JavaScript barcode generator supporting over 90 types and standards.
+JavaScript barcode generator supporting over 100 types and standards.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | bwip-js |
-| Keywords           | bar code, generator, barcode, javascript, node, react, browser, itf, gs1, upc, ean, pdf417, matrix, data, datamatrix, qrcode, databar, code128, code93, code39 |
-| # releases         | 21 |
-| # dependents       | 13 |
-| # downloads        | 267767 |
+| Keywords           | bar code, generator, barcode, javascript, node, react, browser, itf, gs1, upc, ean, pdf417, matrix, datamatrix, qrcode, databar, code128, code39, svg, pdfkit |
+| # releases         | 11 |
+| # dependents       | 20 |
+| # downloads        | 471159 |
 | # stars            | 7 |
 
 ## Links

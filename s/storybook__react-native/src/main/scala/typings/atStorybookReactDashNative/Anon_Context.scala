@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Context
-  extends Instantiable2[/* props */ js.Object, /* context */ js.Any, Anon_CallBack]
-     with Instantiable1[/* props */ js.Object, Anon_CallBack] {
+  extends Instantiable1[/* props */ js.Object, Anon_CallBack]
+     with Instantiable2[/* props */ js.Object, /* context */ js.Any, Anon_CallBack] {
   var contextType: js.UndefOr[Context[_]] = js.native
 }
 

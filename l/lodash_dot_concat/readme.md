@@ -11,8 +11,8 @@ The lodash method `_.concat` exported as a module.
 | Full name          | lodash.concat |
 | Keywords           | lodash-modularized, concat |
 | # releases         | 0 |
-| # dependents       | 19 |
-| # downloads        | 705094 |
+| # dependents       | 33 |
+| # downloads        | 1007231 |
 | # stars            | 0 |
 
 ## Links

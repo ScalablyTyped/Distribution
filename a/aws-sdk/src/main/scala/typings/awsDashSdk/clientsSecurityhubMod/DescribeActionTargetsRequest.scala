@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DescribeActionTargetsRequest extends js.Object {
   /**
     * A list of custom action target ARNs for the custom action targets to retrieve.
     */
-  var ActionTargetArns: js.UndefOr[ArnList] = js.undefined
+  var ActionTargetArns: js.UndefOr[ArnList] = js.native
   /**
     * The maximum number of results to return.
     */
-  var MaxResults: js.UndefOr[typings.awsDashSdk.clientsSecurityhubMod.MaxResults] = js.undefined
+  var MaxResults: js.UndefOr[typings.awsDashSdk.clientsSecurityhubMod.MaxResults] = js.native
   /**
     * The token that is required for pagination.
     */
-  var NextToken: js.UndefOr[typings.awsDashSdk.clientsSecurityhubMod.NextToken] = js.undefined
+  var NextToken: js.UndefOr[typings.awsDashSdk.clientsSecurityhubMod.NextToken] = js.native
 }
 
 object DescribeActionTargetsRequest {
@@ -27,9 +28,9 @@ object DescribeActionTargetsRequest {
     NextToken: NextToken = null
   ): DescribeActionTargetsRequest = {
     val __obj = js.Dynamic.literal()
-    if (ActionTargetArns != null) __obj.updateDynamic("ActionTargetArns")(ActionTargetArns)
+    if (ActionTargetArns != null) __obj.updateDynamic("ActionTargetArns")(ActionTargetArns.asInstanceOf[js.Any])
     if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeActionTargetsRequest]
   }
 }

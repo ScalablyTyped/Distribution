@@ -6,16 +6,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BucketReplicationConfigurationRuleFilter extends js.Object {
   /**
     * Object keyname prefix that identifies subset of objects to which the rule applies.
     */
-  var prefix: js.UndefOr[Input[String]] = js.undefined
+  var prefix: js.UndefOr[Input[String]] = js.native
   /**
     * A mapping of tags that identifies subset of objects to which the rule applies.
     * The rule applies only to objects having all the tags in its tagset.
     */
-  var tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  var tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object BucketReplicationConfigurationRuleFilter {

@@ -93,6 +93,19 @@ trait ConfigService extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
+    * Deletes the specified conformance pack and all the AWS Config rules, remediation actions, and all evaluation results within that conformance pack. AWS Config sets the conformance pack to DELETE_IN_PROGRESS until the deletion is complete. You cannot update a conformance pack while it is in this state.
+    */
+  def deleteConformancePack(): Request[js.Object, AWSError] = js.native
+  def deleteConformancePack(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes the specified conformance pack and all the AWS Config rules, remediation actions, and all evaluation results within that conformance pack. AWS Config sets the conformance pack to DELETE_IN_PROGRESS until the deletion is complete. You cannot update a conformance pack while it is in this state.
+    */
+  def deleteConformancePack(params: DeleteConformancePackRequest): Request[js.Object, AWSError] = js.native
+  def deleteConformancePack(
+    params: DeleteConformancePackRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  /**
     * Deletes the delivery channel. Before you can delete the delivery channel, you must stop the configuration recorder by using the StopConfigurationRecorder action.
     */
   def deleteDeliveryChannel(): Request[js.Object, AWSError] = js.native
@@ -129,6 +142,19 @@ trait ConfigService extends Service {
   def deleteOrganizationConfigRule(params: DeleteOrganizationConfigRuleRequest): Request[js.Object, AWSError] = js.native
   def deleteOrganizationConfigRule(
     params: DeleteOrganizationConfigRuleRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes the specified organization conformance pack and all of the config rules and remediation actions from all member accounts in that organization. Only a master account can delete an organization conformance pack. AWS Config sets the state of a conformance pack to DELETE_IN_PROGRESS until the deletion is complete. You cannot update a conformance pack while it is in this state. 
+    */
+  def deleteOrganizationConformancePack(): Request[js.Object, AWSError] = js.native
+  def deleteOrganizationConformancePack(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes the specified organization conformance pack and all of the config rules and remediation actions from all member accounts in that organization. Only a master account can delete an organization conformance pack. AWS Config sets the state of a conformance pack to DELETE_IN_PROGRESS until the deletion is complete. You cannot update a conformance pack while it is in this state. 
+    */
+  def deleteOrganizationConformancePack(params: DeleteOrganizationConformancePackRequest): Request[js.Object, AWSError] = js.native
+  def deleteOrganizationConformancePack(
+    params: DeleteOrganizationConformancePackRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
@@ -172,6 +198,19 @@ trait ConfigService extends Service {
     params: DeleteRemediationExceptionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteRemediationExceptionsResponse, Unit]
   ): Request[DeleteRemediationExceptionsResponse, AWSError] = js.native
+  /**
+    * Records the configuration state for a custom resource that has been deleted. This API records a new ConfigurationItem with a ResourceDeleted status. You can retrieve the ConfigurationItems recorded for this resource in your AWS Config History. 
+    */
+  def deleteResourceConfig(): Request[js.Object, AWSError] = js.native
+  def deleteResourceConfig(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Records the configuration state for a custom resource that has been deleted. This API records a new ConfigurationItem with a ResourceDeleted status. You can retrieve the ConfigurationItems recorded for this resource in your AWS Config History. 
+    */
+  def deleteResourceConfig(params: DeleteResourceConfigRequest): Request[js.Object, AWSError] = js.native
+  def deleteResourceConfig(
+    params: DeleteResourceConfigRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
   /**
     * Deletes the retention configuration.
     */
@@ -361,6 +400,47 @@ trait ConfigService extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeConfigurationRecordersResponse, Unit]
   ): Request[DescribeConfigurationRecordersResponse, AWSError] = js.native
   /**
+    * Returns compliance details for each rule in that conformance pack.  You must provide exact rule names. 
+    */
+  def describeConformancePackCompliance(): Request[DescribeConformancePackComplianceResponse, AWSError] = js.native
+  def describeConformancePackCompliance(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeConformancePackComplianceResponse, Unit]
+  ): Request[DescribeConformancePackComplianceResponse, AWSError] = js.native
+  /**
+    * Returns compliance details for each rule in that conformance pack.  You must provide exact rule names. 
+    */
+  def describeConformancePackCompliance(params: DescribeConformancePackComplianceRequest): Request[DescribeConformancePackComplianceResponse, AWSError] = js.native
+  def describeConformancePackCompliance(
+    params: DescribeConformancePackComplianceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeConformancePackComplianceResponse, Unit]
+  ): Request[DescribeConformancePackComplianceResponse, AWSError] = js.native
+  /**
+    * Provides one or more conformance packs deployment status.  If there are no conformance packs then you will see an empty result. 
+    */
+  def describeConformancePackStatus(): Request[DescribeConformancePackStatusResponse, AWSError] = js.native
+  def describeConformancePackStatus(callback: js.Function2[/* err */ AWSError, /* data */ DescribeConformancePackStatusResponse, Unit]): Request[DescribeConformancePackStatusResponse, AWSError] = js.native
+  /**
+    * Provides one or more conformance packs deployment status.  If there are no conformance packs then you will see an empty result. 
+    */
+  def describeConformancePackStatus(params: DescribeConformancePackStatusRequest): Request[DescribeConformancePackStatusResponse, AWSError] = js.native
+  def describeConformancePackStatus(
+    params: DescribeConformancePackStatusRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeConformancePackStatusResponse, Unit]
+  ): Request[DescribeConformancePackStatusResponse, AWSError] = js.native
+  /**
+    * Returns a list of one or more conformance packs.
+    */
+  def describeConformancePacks(): Request[DescribeConformancePacksResponse, AWSError] = js.native
+  def describeConformancePacks(callback: js.Function2[/* err */ AWSError, /* data */ DescribeConformancePacksResponse, Unit]): Request[DescribeConformancePacksResponse, AWSError] = js.native
+  /**
+    * Returns a list of one or more conformance packs.
+    */
+  def describeConformancePacks(params: DescribeConformancePacksRequest): Request[DescribeConformancePacksResponse, AWSError] = js.native
+  def describeConformancePacks(
+    params: DescribeConformancePacksRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeConformancePacksResponse, Unit]
+  ): Request[DescribeConformancePacksResponse, AWSError] = js.native
+  /**
     * Returns the current status of the specified delivery channel. If a delivery channel is not specified, this action returns the current status of all delivery channels associated with the account.  Currently, you can specify only one delivery channel per region in your account. 
     */
   def describeDeliveryChannelStatus(): Request[DescribeDeliveryChannelStatusResponse, AWSError] = js.native
@@ -416,6 +496,44 @@ trait ConfigService extends Service {
     params: DescribeOrganizationConfigRulesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeOrganizationConfigRulesResponse, Unit]
   ): Request[DescribeOrganizationConfigRulesResponse, AWSError] = js.native
+  /**
+    * Provides organization conformance pack deployment status for an organization.  The status is not considered successful until organization conformance pack is successfully deployed in all the member accounts with an exception of excluded accounts. When you specify the limit and the next token, you receive a paginated response. Limit and next token are not applicable if you specify organization conformance pack names. They are only applicable, when you request all the organization conformance packs. Only a master account can call this API. 
+    */
+  def describeOrganizationConformancePackStatuses(): Request[DescribeOrganizationConformancePackStatusesResponse, AWSError] = js.native
+  def describeOrganizationConformancePackStatuses(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DescribeOrganizationConformancePackStatusesResponse, 
+      Unit
+    ]
+  ): Request[DescribeOrganizationConformancePackStatusesResponse, AWSError] = js.native
+  /**
+    * Provides organization conformance pack deployment status for an organization.  The status is not considered successful until organization conformance pack is successfully deployed in all the member accounts with an exception of excluded accounts. When you specify the limit and the next token, you receive a paginated response. Limit and next token are not applicable if you specify organization conformance pack names. They are only applicable, when you request all the organization conformance packs. Only a master account can call this API. 
+    */
+  def describeOrganizationConformancePackStatuses(params: DescribeOrganizationConformancePackStatusesRequest): Request[DescribeOrganizationConformancePackStatusesResponse, AWSError] = js.native
+  def describeOrganizationConformancePackStatuses(
+    params: DescribeOrganizationConformancePackStatusesRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DescribeOrganizationConformancePackStatusesResponse, 
+      Unit
+    ]
+  ): Request[DescribeOrganizationConformancePackStatusesResponse, AWSError] = js.native
+  /**
+    * Returns a list of organization conformance packs.  When you specify the limit and the next token, you receive a paginated response.  Limit and next token are not applicable if you specify organization conformance packs names. They are only applicable, when you request all the organization conformance packs.  Only a master account can call this API. 
+    */
+  def describeOrganizationConformancePacks(): Request[DescribeOrganizationConformancePacksResponse, AWSError] = js.native
+  def describeOrganizationConformancePacks(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeOrganizationConformancePacksResponse, Unit]
+  ): Request[DescribeOrganizationConformancePacksResponse, AWSError] = js.native
+  /**
+    * Returns a list of organization conformance packs.  When you specify the limit and the next token, you receive a paginated response.  Limit and next token are not applicable if you specify organization conformance packs names. They are only applicable, when you request all the organization conformance packs.  Only a master account can call this API. 
+    */
+  def describeOrganizationConformancePacks(params: DescribeOrganizationConformancePacksRequest): Request[DescribeOrganizationConformancePacksResponse, AWSError] = js.native
+  def describeOrganizationConformancePacks(
+    params: DescribeOrganizationConformancePacksRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeOrganizationConformancePacksResponse, Unit]
+  ): Request[DescribeOrganizationConformancePacksResponse, AWSError] = js.native
   /**
     * Returns a list of all pending aggregation requests.
     */
@@ -608,6 +726,36 @@ trait ConfigService extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetComplianceSummaryByResourceTypeResponse, Unit]
   ): Request[GetComplianceSummaryByResourceTypeResponse, AWSError] = js.native
   /**
+    * Returns compliance details of a conformance pack for all AWS resources that are monitered by conformance pack.
+    */
+  def getConformancePackComplianceDetails(): Request[GetConformancePackComplianceDetailsResponse, AWSError] = js.native
+  def getConformancePackComplianceDetails(
+    callback: js.Function2[/* err */ AWSError, /* data */ GetConformancePackComplianceDetailsResponse, Unit]
+  ): Request[GetConformancePackComplianceDetailsResponse, AWSError] = js.native
+  /**
+    * Returns compliance details of a conformance pack for all AWS resources that are monitered by conformance pack.
+    */
+  def getConformancePackComplianceDetails(params: GetConformancePackComplianceDetailsRequest): Request[GetConformancePackComplianceDetailsResponse, AWSError] = js.native
+  def getConformancePackComplianceDetails(
+    params: GetConformancePackComplianceDetailsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetConformancePackComplianceDetailsResponse, Unit]
+  ): Request[GetConformancePackComplianceDetailsResponse, AWSError] = js.native
+  /**
+    * Returns compliance details for the conformance pack based on the cumulative compliance results of all the rules in that conformance pack.
+    */
+  def getConformancePackComplianceSummary(): Request[GetConformancePackComplianceSummaryResponse, AWSError] = js.native
+  def getConformancePackComplianceSummary(
+    callback: js.Function2[/* err */ AWSError, /* data */ GetConformancePackComplianceSummaryResponse, Unit]
+  ): Request[GetConformancePackComplianceSummaryResponse, AWSError] = js.native
+  /**
+    * Returns compliance details for the conformance pack based on the cumulative compliance results of all the rules in that conformance pack.
+    */
+  def getConformancePackComplianceSummary(params: GetConformancePackComplianceSummaryRequest): Request[GetConformancePackComplianceSummaryResponse, AWSError] = js.native
+  def getConformancePackComplianceSummary(
+    params: GetConformancePackComplianceSummaryRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetConformancePackComplianceSummaryResponse, Unit]
+  ): Request[GetConformancePackComplianceSummaryResponse, AWSError] = js.native
+  /**
     * Returns the resource types, the number of each resource type, and the total number of resources that AWS Config is recording in this region for your AWS account.   Example    AWS Config is recording three resource types in the US East (Ohio) Region for your account: 25 EC2 instances, 20 IAM users, and 15 S3 buckets.   You make a call to the GetDiscoveredResourceCounts action and specify that you want all resource types.    AWS Config returns the following:   The resource types (EC2 instances, IAM users, and S3 buckets).   The number of each resource type (25, 20, and 15).   The total number of all resources (60).     The response is paginated. By default, AWS Config lists 100 ResourceCount objects on each page. You can customize this number with the limit parameter. The response includes a nextToken string. To get the next page of results, run the request again and specify the string for the nextToken parameter.  If you make a call to the GetDiscoveredResourceCounts action, you might not immediately receive resource counts in the following situations:   You are a new AWS Config customer.   You just enabled resource recording.   It might take a few minutes for AWS Config to record and count your resources. Wait a few minutes and then retry the GetDiscoveredResourceCounts action.  
     */
   def getDiscoveredResourceCounts(): Request[GetDiscoveredResourceCountsResponse, AWSError] = js.native
@@ -635,6 +783,29 @@ trait ConfigService extends Service {
     params: GetOrganizationConfigRuleDetailedStatusRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetOrganizationConfigRuleDetailedStatusResponse, Unit]
   ): Request[GetOrganizationConfigRuleDetailedStatusResponse, AWSError] = js.native
+  /**
+    * Returns detailed status for each member account within an organization for a given organization conformance pack. Only a master account can call this API.
+    */
+  def getOrganizationConformancePackDetailedStatus(): Request[GetOrganizationConformancePackDetailedStatusResponse, AWSError] = js.native
+  def getOrganizationConformancePackDetailedStatus(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ GetOrganizationConformancePackDetailedStatusResponse, 
+      Unit
+    ]
+  ): Request[GetOrganizationConformancePackDetailedStatusResponse, AWSError] = js.native
+  /**
+    * Returns detailed status for each member account within an organization for a given organization conformance pack. Only a master account can call this API.
+    */
+  def getOrganizationConformancePackDetailedStatus(params: GetOrganizationConformancePackDetailedStatusRequest): Request[GetOrganizationConformancePackDetailedStatusResponse, AWSError] = js.native
+  def getOrganizationConformancePackDetailedStatus(
+    params: GetOrganizationConformancePackDetailedStatusRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ GetOrganizationConformancePackDetailedStatusResponse, 
+      Unit
+    ]
+  ): Request[GetOrganizationConformancePackDetailedStatusResponse, AWSError] = js.native
   /**
     * Returns a list of configuration items for the specified resource. The list contains details about each state of the resource during the specified time interval. If you specified a retention period to retain your ConfigurationItems between a minimum of 30 days and a maximum of 7 years (2557 days), AWS Config returns the ConfigurationItems for the specified retention period.  The response is paginated. By default, AWS Config returns a limit of 10 configuration items per page. You can customize this number with the limit parameter. The response includes a nextToken string. To get the next page of results, run the request again and specify the string for the nextToken parameter.  Each call to the API is limited to span a duration of seven days. It is likely that the number of records returned is smaller than the specified limit. In such cases, you can make another call, using the nextToken. 
     */
@@ -742,6 +913,19 @@ trait ConfigService extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
+    * Creates or updates a conformance pack. A conformance pack is a collection of AWS Config rules that can be easily deployed in an account and a region and across AWS Organization. This API creates a service linked role AWSServiceRoleForConfigConforms in your account. The service linked role is created only when the role does not exist in your account. AWS Config verifies the existence of role with GetRole action.  You must specify either the TemplateS3Uri or the TemplateBody parameter, but not both. If you provide both AWS Config uses the TemplateS3Uri parameter and ignores the TemplateBody parameter. 
+    */
+  def putConformancePack(): Request[PutConformancePackResponse, AWSError] = js.native
+  def putConformancePack(callback: js.Function2[/* err */ AWSError, /* data */ PutConformancePackResponse, Unit]): Request[PutConformancePackResponse, AWSError] = js.native
+  /**
+    * Creates or updates a conformance pack. A conformance pack is a collection of AWS Config rules that can be easily deployed in an account and a region and across AWS Organization. This API creates a service linked role AWSServiceRoleForConfigConforms in your account. The service linked role is created only when the role does not exist in your account. AWS Config verifies the existence of role with GetRole action.  You must specify either the TemplateS3Uri or the TemplateBody parameter, but not both. If you provide both AWS Config uses the TemplateS3Uri parameter and ignores the TemplateBody parameter. 
+    */
+  def putConformancePack(params: PutConformancePackRequest): Request[PutConformancePackResponse, AWSError] = js.native
+  def putConformancePack(
+    params: PutConformancePackRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutConformancePackResponse, Unit]
+  ): Request[PutConformancePackResponse, AWSError] = js.native
+  /**
     * Creates a delivery channel object to deliver configuration information to an Amazon S3 bucket and Amazon SNS topic. Before you can create a delivery channel, you must create a configuration recorder. You can use this action to change the Amazon S3 bucket or an Amazon SNS topic of the existing delivery channel. To change the Amazon S3 bucket or an Amazon SNS topic, call this action and specify the changed values for the S3 bucket and the SNS topic. If you specify a different value for either the S3 bucket or the SNS topic, this action will keep the existing value for the parameter that is not changed.  You can have only one delivery channel per region in your account. 
     */
   def putDeliveryChannel(): Request[js.Object, AWSError] = js.native
@@ -781,6 +965,21 @@ trait ConfigService extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ PutOrganizationConfigRuleResponse, Unit]
   ): Request[PutOrganizationConfigRuleResponse, AWSError] = js.native
   /**
+    * Deploys conformance packs across member accounts in an AWS Organization. This API enables organization service access for config-multiaccountsetup.amazonaws.com through the EnableAWSServiceAccess action and creates a service linked role AWSServiceRoleForConfigMultiAccountSetup in the master account of your organization. The service linked role is created only when the role does not exist in the master account. AWS Config verifies the existence of role with GetRole action.  You must specify either the TemplateS3Uri or the TemplateBody parameter, but not both. If you provide both AWS Config uses the TemplateS3Uri parameter and ignores the TemplateBody parameter. AWS Config sets the state of a conformance pack to CREATE_IN_PROGRESS and UPDATE_IN_PROGRESS until the confomance pack is created or updated. You cannot update a conformance pack while it is in this state. You can create 6 conformance packs with 25 AWS Config rules in each pack. 
+    */
+  def putOrganizationConformancePack(): Request[PutOrganizationConformancePackResponse, AWSError] = js.native
+  def putOrganizationConformancePack(
+    callback: js.Function2[/* err */ AWSError, /* data */ PutOrganizationConformancePackResponse, Unit]
+  ): Request[PutOrganizationConformancePackResponse, AWSError] = js.native
+  /**
+    * Deploys conformance packs across member accounts in an AWS Organization. This API enables organization service access for config-multiaccountsetup.amazonaws.com through the EnableAWSServiceAccess action and creates a service linked role AWSServiceRoleForConfigMultiAccountSetup in the master account of your organization. The service linked role is created only when the role does not exist in the master account. AWS Config verifies the existence of role with GetRole action.  You must specify either the TemplateS3Uri or the TemplateBody parameter, but not both. If you provide both AWS Config uses the TemplateS3Uri parameter and ignores the TemplateBody parameter. AWS Config sets the state of a conformance pack to CREATE_IN_PROGRESS and UPDATE_IN_PROGRESS until the confomance pack is created or updated. You cannot update a conformance pack while it is in this state. You can create 6 conformance packs with 25 AWS Config rules in each pack. 
+    */
+  def putOrganizationConformancePack(params: PutOrganizationConformancePackRequest): Request[PutOrganizationConformancePackResponse, AWSError] = js.native
+  def putOrganizationConformancePack(
+    params: PutOrganizationConformancePackRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutOrganizationConformancePackResponse, Unit]
+  ): Request[PutOrganizationConformancePackResponse, AWSError] = js.native
+  /**
     * Adds or updates the remediation configuration with a specific AWS Config rule with the selected target or action. The API creates the RemediationConfiguration object for the AWS Config rule. The AWS Config rule must already exist for you to add a remediation configuration. The target (SSM document) must exist and have permissions to use the target. 
     */
   def putRemediationConfigurations(): Request[PutRemediationConfigurationsResponse, AWSError] = js.native
@@ -806,6 +1005,19 @@ trait ConfigService extends Service {
     params: PutRemediationExceptionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PutRemediationExceptionsResponse, Unit]
   ): Request[PutRemediationExceptionsResponse, AWSError] = js.native
+  /**
+    * Records the configuration state for the resource provided in the request. The configuration state of a resource is represented in AWS Config as Configuration Items. Once this API records the configuration item, you can retrieve the list of configuration items for the custom resource type using existing AWS Config APIs.   The custom resource type must be registered with AWS CloudFormation. This API accepts the configuration item registered with AWS CloudFormation. When you call this API, AWS Config only stores configuration state of the resource provided in the request. This API does not change or remediate the configuration of the resource.  
+    */
+  def putResourceConfig(): Request[js.Object, AWSError] = js.native
+  def putResourceConfig(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Records the configuration state for the resource provided in the request. The configuration state of a resource is represented in AWS Config as Configuration Items. Once this API records the configuration item, you can retrieve the list of configuration items for the custom resource type using existing AWS Config APIs.   The custom resource type must be registered with AWS CloudFormation. This API accepts the configuration item registered with AWS CloudFormation. When you call this API, AWS Config only stores configuration state of the resource provided in the request. This API does not change or remediate the configuration of the resource.  
+    */
+  def putResourceConfig(params: PutResourceConfigRequest): Request[js.Object, AWSError] = js.native
+  def putResourceConfig(
+    params: PutResourceConfigRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
   /**
     * Creates and updates the retention configuration with details about retention period (number of days) that AWS Config stores your historical information. The API creates the RetentionConfiguration object and names the object as default. When you have a RetentionConfiguration object named default, calling the API modifies the default object.   Currently, AWS Config supports only one retention configuration per region in your account. 
     */

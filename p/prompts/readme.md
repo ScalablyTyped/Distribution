@@ -10,9 +10,9 @@ Lightweight, beautiful and user-friendly prompts
 | ------------------ | :-------------: |
 | Full name          | prompts |
 | Keywords           | ui, prompts, cli, prompt, interface, command-line, input, command, stdin, menu, ask, interact |
-| # releases         | 29 |
-| # dependents       | 281 |
-| # downloads        | 53862309 |
+| # releases         | 33 |
+| # dependents       | 659 |
+| # downloads        | 180456244 |
 | # stars            | 6 |
 
 ## Links

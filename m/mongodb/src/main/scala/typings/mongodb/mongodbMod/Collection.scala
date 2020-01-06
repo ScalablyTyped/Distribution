@@ -132,13 +132,13 @@ trait Collection[TSchema /* <: StringDictionary[js.Any] */] extends js.Object {
   def dropIndex(indexName: String, callback: MongoCallback[_]): Unit = js.native
   def dropIndex(indexName: String, options: CommonOptions with Anon_MaxTimeMSNumber): js.Promise[_] = js.native
   def dropIndex(indexName: String, options: CommonOptions with Anon_MaxTimeMSNumber, callback: MongoCallback[_]): Unit = js.native
-  def dropIndexes(): Unit = js.native
+  /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#dropIndexes */
+  def dropIndexes(): js.Promise[_] = js.native
   def dropIndexes(callback: MongoCallback[_]): Unit = js.native
   def dropIndexes(options: Anon_MaxTimeMSSession): js.Promise[_] = js.native
   def dropIndexes(options: Anon_MaxTimeMSSession, callback: MongoCallback[_]): Unit = js.native
-  /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#dropIndexes */
   @JSName("dropIndexes")
-  def dropIndexes_Promise(): js.Promise[_] = js.native
+  def dropIndexes_Unit(): Unit = js.native
   def estimatedDocumentCount(): js.Promise[scala.Double] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#estimatedDocumentCount */
   def estimatedDocumentCount(callback: MongoCallback[scala.Double]): Unit = js.native
@@ -909,11 +909,11 @@ trait Collection[TSchema /* <: StringDictionary[js.Any] */] extends js.Object {
   def reIndex(options: Anon_SessionClientSession): js.Promise[_] = js.native
   def reIndex(options: Anon_SessionClientSession, callback: MongoCallback[_]): Unit = js.native
   /** @deprecated Use use deleteOne, deleteMany or bulkWrite */
-  def remove(selector: js.Object): Unit = js.native
+  def remove(selector: js.Object): js.Promise[WriteOpResult] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#remove */
   /** @deprecated Use use deleteOne, deleteMany or bulkWrite */
   def remove(selector: js.Object, callback: MongoCallback[WriteOpResult]): Unit = js.native
-  def remove(selector: js.Object, options: CommonOptions with Anon_Single): Unit = js.native
+  def remove(selector: js.Object, options: CommonOptions with Anon_Single): js.Promise[WriteOpResult] = js.native
   def remove(
     selector: js.Object,
     options: CommonOptions with Anon_Single,
@@ -921,9 +921,9 @@ trait Collection[TSchema /* <: StringDictionary[js.Any] */] extends js.Object {
   ): Unit = js.native
   /** @deprecated Use use deleteOne, deleteMany or bulkWrite */
   @JSName("remove")
-  def remove_Promise(selector: js.Object): js.Promise[WriteOpResult] = js.native
+  def remove_Unit(selector: js.Object): Unit = js.native
   @JSName("remove")
-  def remove_Promise(selector: js.Object, options: CommonOptions with Anon_Single): js.Promise[WriteOpResult] = js.native
+  def remove_Unit(selector: js.Object, options: CommonOptions with Anon_Single): Unit = js.native
   def rename(newName: String): js.Promise[Collection[TSchema]] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#rename */
   def rename(newName: String, callback: MongoCallback[Collection[TSchema]]): Unit = js.native

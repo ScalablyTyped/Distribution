@@ -10,9 +10,9 @@ A webpack plugin to remove/clean your build folder(s).
 | ------------------ | :-------------: |
 | Full name          | clean-webpack-plugin |
 | Keywords           | webpack, plugin, clean, node |
-| # releases         | 8 |
-| # dependents       | 779 |
-| # downloads        | 19981612 |
+| # releases         | 9 |
+| # dependents       | 1155 |
+| # downloads        | 33846427 |
 | # stars            | 40 |
 
 ## Links

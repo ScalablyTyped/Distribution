@@ -70,8 +70,7 @@ class Instance protected () extends CustomResource {
     */
   val backupWindow: Output[String] = js.native
   /**
-    * Specifies the identifier of the CA certificate for the
-    * DB instance.
+    * The identifier of the CA certificate for the DB instance.
     */
   val caCertIdentifier: Output[String] = js.native
   /**

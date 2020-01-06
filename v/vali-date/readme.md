@@ -11,8 +11,8 @@ Validate a date
 | Full name          | vali-date |
 | Keywords           | date, validator, iso8601, moment, format, parse |
 | # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 30480639 |
+| # dependents       | 9 |
+| # downloads        | 25919871 |
 | # stars            | 0 |
 
 ## Links

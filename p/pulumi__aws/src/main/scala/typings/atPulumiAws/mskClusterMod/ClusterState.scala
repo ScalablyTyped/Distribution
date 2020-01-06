@@ -10,64 +10,65 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClusterState extends js.Object {
   /**
     * Amazon Resource Name (ARN) of the MSK Configuration to use in the cluster.
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * A comma separated list of one or more hostname:port pairs of kafka brokers suitable to boostrap connectivity to the kafka cluster. Only contains value if `clientBroker` encryption in transit is set to `PLAINTEXT` or `TLS_PLAINTEXT`.
     */
-  val bootstrapBrokers: js.UndefOr[Input[String]] = js.undefined
+  val bootstrapBrokers: js.UndefOr[Input[String]] = js.native
   /**
     * A comma separated list of one or more DNS names (or IPs) and TLS port pairs kafka brokers suitable to boostrap connectivity to the kafka cluster. Only contains value if `clientBroker` encryption in transit is set to `TLS_PLAINTEXT` or `TLS`.
     */
-  val bootstrapBrokersTls: js.UndefOr[Input[String]] = js.undefined
+  val bootstrapBrokersTls: js.UndefOr[Input[String]] = js.native
   /**
     * Configuration block for the broker nodes of the Kafka cluster.
     */
-  val brokerNodeGroupInfo: js.UndefOr[Input[ClusterBrokerNodeGroupInfo]] = js.undefined
+  val brokerNodeGroupInfo: js.UndefOr[Input[ClusterBrokerNodeGroupInfo]] = js.native
   /**
     * Configuration block for specifying a client authentication. See below.
     */
-  val clientAuthentication: js.UndefOr[Input[ClusterClientAuthentication]] = js.undefined
+  val clientAuthentication: js.UndefOr[Input[ClusterClientAuthentication]] = js.native
   /**
     * Name of the MSK cluster.
     */
-  val clusterName: js.UndefOr[Input[String]] = js.undefined
+  val clusterName: js.UndefOr[Input[String]] = js.native
   /**
     * Configuration block for specifying a MSK Configuration to attach to Kafka brokers. See below.
     */
-  val configurationInfo: js.UndefOr[Input[ClusterConfigurationInfo]] = js.undefined
+  val configurationInfo: js.UndefOr[Input[ClusterConfigurationInfo]] = js.native
   /**
     * Current version of the MSK Cluster used for updates, e.g. `K13V1IB3VIYZZH`
     * * `encryption_info.0.encryption_at_rest_kms_key_arn` - The ARN of the KMS key used for encryption at rest of the broker data volumes.
     */
-  val currentVersion: js.UndefOr[Input[String]] = js.undefined
+  val currentVersion: js.UndefOr[Input[String]] = js.native
   /**
     * Configuration block for specifying encryption. See below.
     */
-  val encryptionInfo: js.UndefOr[Input[ClusterEncryptionInfo]] = js.undefined
+  val encryptionInfo: js.UndefOr[Input[ClusterEncryptionInfo]] = js.native
   /**
     * Specify the desired enhanced MSK CloudWatch monitoring level.  See [Monitoring Amazon MSK with Amazon CloudWatch](https://docs.aws.amazon.com/msk/latest/developerguide/monitoring.html)
     */
-  val enhancedMonitoring: js.UndefOr[Input[String]] = js.undefined
+  val enhancedMonitoring: js.UndefOr[Input[String]] = js.native
   /**
     * Specify the desired Kafka software version.
     */
-  val kafkaVersion: js.UndefOr[Input[String]] = js.undefined
+  val kafkaVersion: js.UndefOr[Input[String]] = js.native
   /**
     * The desired total number of broker nodes in the kafka cluster.  It must be a multiple of the number of specified client subnets.
     */
-  val numberOfBrokerNodes: js.UndefOr[Input[Double]] = js.undefined
+  val numberOfBrokerNodes: js.UndefOr[Input[Double]] = js.native
   /**
     * A mapping of tags to assign to the resource
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * A comma separated list of one or more IP:port pairs to use to connect to the Apache Zookeeper cluster.
     */
-  val zookeeperConnectString: js.UndefOr[Input[String]] = js.undefined
+  val zookeeperConnectString: js.UndefOr[Input[String]] = js.native
 }
 
 object ClusterState {

@@ -4,7 +4,7 @@ import typings.atOracleOraclejet.Anon_AutoBillionCenter
 import typings.atOracleOraclejet.Anon_AutoBorderColor
 import typings.atOracleOraclejet.Anon_AutoCenter
 import typings.atOracleOraclejet.Anon_ContextRendererAnonInsertAnonPreventDefaultCenterContext
-import typings.atOracleOraclejet.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1361795792
+import typings.atOracleOraclejet.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_117442419
 import typings.atOracleOraclejet.atOracleOraclejetMod.JetElementCustomEvent
 import typings.atOracleOraclejet.atOracleOraclejetStrings.all
 import typings.atOracleOraclejet.atOracleOraclejetStrings.auto
@@ -66,7 +66,7 @@ trait ojStatusMeterGaugeEventMap extends dvtBaseComponentEventMap[ojStatusMeterG
   ]
   var thresholdDisplayChanged: JetElementCustomEvent[currentOnly | all | onIndicator]
   var thresholdsChanged: JetElementCustomEvent[js.Array[Threshold]]
-  var tooltipChanged: JetElementCustomEvent[Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1361795792]
+  var tooltipChanged: JetElementCustomEvent[Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_117442419]
   var transientValueChanged: JetElementCustomEvent[Double | Null]
   var valueChanged: JetElementCustomEvent[Double | Null]
   var visualEffectsChanged: JetElementCustomEvent[none | auto]
@@ -183,7 +183,7 @@ object ojStatusMeterGaugeEventMap {
     thresholdsChanged: JetElementCustomEvent[js.Array[Threshold]],
     timeupdate: Event,
     toggle: Event,
-    tooltipChanged: JetElementCustomEvent[Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1361795792],
+    tooltipChanged: JetElementCustomEvent[Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_117442419],
     touchcancel: TouchEvent,
     touchend: TouchEvent,
     touchmove: TouchEvent,

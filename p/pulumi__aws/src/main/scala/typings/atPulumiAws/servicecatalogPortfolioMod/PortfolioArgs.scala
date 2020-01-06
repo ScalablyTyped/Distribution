@@ -6,23 +6,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PortfolioArgs extends js.Object {
   /**
     * Description of the portfolio
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the portfolio.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * Name of the person or organization who owns the portfolio.
     */
-  val providerName: js.UndefOr[Input[String]] = js.undefined
+  val providerName: js.UndefOr[Input[String]] = js.native
   /**
     * Tags to apply to the connection.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object PortfolioArgs {

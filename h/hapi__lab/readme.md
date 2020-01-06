@@ -10,9 +10,9 @@ Test utility
 | ------------------ | :-------------: |
 | Full name          | @hapi/lab |
 | Keywords           | test, runner |
-| # releases         | 3 |
-| # dependents       | 0 |
-| # downloads        | 6962 |
+| # releases         | 20 |
+| # dependents       | 5 |
+| # downloads        | 274016 |
 | # stars            | 0 |
 
 ## Links

@@ -31,11 +31,8 @@ abstract class ResourceQualifierVectorView () extends Array[ResourceQualifier] {
     */
   def getMany(startIndex: Double): Anon_ItemsReturnValueNumberResourceQualifier = js.native
   def indexOf(value: ResourceQualifier, extra: js.Any*): Anon_Index = js.native
-  /**
-    * Returns the index of a specified ResourceQualifier in the view.
-    * @param value The ResourceQualifier to find in the set.
-    */
+  /* hack */
   @JSName("indexOf")
-  def indexOf_Anon_Index(value: ResourceQualifier): Anon_Index = js.native
+  def indexOf_Double(searchElement: ResourceQualifier): Double = js.native
 }
 

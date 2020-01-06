@@ -9,9 +9,9 @@ Typings are for version 24.9.0
 | ------------------ | :-------------: |
 | Full name          | jest-diff |
 | Keywords           | - |
-| # releases         | 96 |
-| # dependents       | 94 |
-| # downloads        | 150641715 |
+| # releases         | 53 |
+| # dependents       | 113 |
+| # downloads        | 253381364 |
 | # stars            | 0 |
 
 ## Links

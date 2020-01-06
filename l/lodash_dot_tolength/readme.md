@@ -12,7 +12,7 @@ The lodash method `_.toLength` exported as a module.
 | Keywords           | lodash-modularized, tolength |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 786 |
+| # downloads        | 1242 |
 | # stars            | 0 |
 
 ## Links

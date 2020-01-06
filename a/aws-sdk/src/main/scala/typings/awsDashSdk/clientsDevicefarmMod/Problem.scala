@@ -4,35 +4,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Problem extends js.Object {
   /**
     * Information about the associated device.
     */
-  var device: js.UndefOr[Device] = js.undefined
+  var device: js.UndefOr[Device] = js.native
   /**
     * Information about the associated job.
     */
-  var job: js.UndefOr[ProblemDetail] = js.undefined
+  var job: js.UndefOr[ProblemDetail] = js.native
   /**
     * A message about the problem's result.
     */
-  var message: js.UndefOr[Message] = js.undefined
+  var message: js.UndefOr[Message] = js.native
   /**
-    * The problem's result. Allowed values include:   PENDING: A pending condition.   PASSED: A passing condition.   WARNED: A warning condition.   FAILED: A failed condition.   SKIPPED: A skipped condition.   ERRORED: An error condition.   STOPPED: A stopped condition.  
+    * The problem's result. Allowed values include:   PENDING   PASSED   WARNED   FAILED   SKIPPED   ERRORED   STOPPED  
     */
-  var result: js.UndefOr[ExecutionResult] = js.undefined
+  var result: js.UndefOr[ExecutionResult] = js.native
   /**
     * Information about the associated run.
     */
-  var run: js.UndefOr[ProblemDetail] = js.undefined
+  var run: js.UndefOr[ProblemDetail] = js.native
   /**
     * Information about the associated suite.
     */
-  var suite: js.UndefOr[ProblemDetail] = js.undefined
+  var suite: js.UndefOr[ProblemDetail] = js.native
   /**
     * Information about the associated test.
     */
-  var test: js.UndefOr[ProblemDetail] = js.undefined
+  var test: js.UndefOr[ProblemDetail] = js.native
 }
 
 object Problem {
@@ -47,13 +48,13 @@ object Problem {
     test: ProblemDetail = null
   ): Problem = {
     val __obj = js.Dynamic.literal()
-    if (device != null) __obj.updateDynamic("device")(device)
-    if (job != null) __obj.updateDynamic("job")(job)
-    if (message != null) __obj.updateDynamic("message")(message)
+    if (device != null) __obj.updateDynamic("device")(device.asInstanceOf[js.Any])
+    if (job != null) __obj.updateDynamic("job")(job.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
-    if (run != null) __obj.updateDynamic("run")(run)
-    if (suite != null) __obj.updateDynamic("suite")(suite)
-    if (test != null) __obj.updateDynamic("test")(test)
+    if (run != null) __obj.updateDynamic("run")(run.asInstanceOf[js.Any])
+    if (suite != null) __obj.updateDynamic("suite")(suite.asInstanceOf[js.Any])
+    if (test != null) __obj.updateDynamic("test")(test.asInstanceOf[js.Any])
     __obj.asInstanceOf[Problem]
   }
 }

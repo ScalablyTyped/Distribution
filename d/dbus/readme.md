@@ -10,9 +10,9 @@ A D-Bus binding for Node
 | ------------------ | :-------------: |
 | Full name          | dbus |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 22 |
-| # downloads        | 43128 |
+| # releases         | 4 |
+| # dependents       | 23 |
+| # downloads        | 44487 |
 | # stars            | 2 |
 
 ## Links

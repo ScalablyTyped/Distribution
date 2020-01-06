@@ -10,9 +10,9 @@ Shared functionality for websocket providers
 | ------------------ | :-------------: |
 | Full name          | @feathersjs/socket-commons |
 | Keywords           | feathers, feathers-plugin |
-| # releases         | 12 |
+| # releases         | 7 |
 | # dependents       | 1 |
-| # downloads        | 607282 |
+| # downloads        | 460994 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ A Bunyan stream that sends log events to Seq
 | ------------------ | :-------------: |
 | Full name          | bunyan-seq |
 | Keywords           | bunyan, seq |
-| # releases         | 6 |
-| # dependents       | 1 |
-| # downloads        | 35666 |
+| # releases         | 5 |
+| # dependents       | 3 |
+| # downloads        | 67545 |
 | # stars            | 0 |
 
 ## Links

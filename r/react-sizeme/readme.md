@@ -4,15 +4,15 @@
 Typings are for version 2.6.10
 
 ## Library description:
-Make your React Components aware of their dimensions and position.
+Make your React Components aware of their width and/or height!
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-sizeme |
 | Keywords           | library |
-| # releases         | 20 |
-| # dependents       | 85 |
-| # downloads        | 2145891 |
+| # releases         | 21 |
+| # dependents       | 118 |
+| # downloads        | 11498794 |
 | # stars            | 9 |
 
 ## Links

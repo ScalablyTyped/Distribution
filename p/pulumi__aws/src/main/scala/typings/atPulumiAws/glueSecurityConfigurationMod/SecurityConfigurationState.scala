@@ -6,15 +6,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SecurityConfigurationState extends js.Object {
   /**
     * Configuration block containing encryption configuration. Detailed below.
     */
-  val encryptionConfiguration: js.UndefOr[Input[SecurityConfigurationEncryptionConfiguration]] = js.undefined
+  val encryptionConfiguration: js.UndefOr[Input[SecurityConfigurationEncryptionConfiguration]] = js.native
   /**
     * Name of the security configuration.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
 }
 
 object SecurityConfigurationState {

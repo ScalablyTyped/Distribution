@@ -3,15 +3,16 @@
 
 Typings are for version 1.38.33
 
-
+## Library description:
+Node API for Emscripten SDK
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | emscripten |
-| Keywords           | - |
-| # releases         | 0 |
+| Keywords           | node, emscripten, emcc, sdk, wasm, webassembly |
+| # releases         | 5 |
 | # dependents       | 0 |
-| # downloads        | 0 |
+| # downloads        | 328 |
 | # stars            | 0 |
 
 ## Links

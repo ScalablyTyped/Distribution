@@ -10,9 +10,9 @@ An NPM installable package of Apple's Mapkit JS
 | ------------------ | :-------------: |
 | Full name          | apple-mapkit-js |
 | Keywords           | apple, mapkit |
-| # releases         | 6 |
-| # dependents       | 1 |
-| # downloads        | 1985 |
+| # releases         | 7 |
+| # dependents       | 3 |
+| # downloads        | 9090 |
 | # stars            | 0 |
 
 ## Links

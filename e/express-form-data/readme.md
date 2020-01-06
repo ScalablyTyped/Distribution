@@ -11,8 +11,8 @@ Module to parse multipart/form data
 | Full name          | express-form-data |
 | Keywords           | express, form, data, multipart, multipart/form, json |
 | # releases         | 9 |
-| # dependents       | 9 |
-| # downloads        | 144499 |
+| # dependents       | 8 |
+| # downloads        | 266092 |
 | # stars            | 0 |
 
 ## Links

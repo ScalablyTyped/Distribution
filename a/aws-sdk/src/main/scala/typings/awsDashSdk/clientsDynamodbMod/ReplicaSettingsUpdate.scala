@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ReplicaSettingsUpdate extends js.Object {
   /**
-    * The region of the replica to be added.
+    * The Region of the replica to be added.
     */
-  var RegionName: typings.awsDashSdk.clientsDynamodbMod.RegionName
+  var RegionName: typings.awsDashSdk.clientsDynamodbMod.RegionName = js.native
   /**
     * Represents the settings of a global secondary index for a global table that will be modified.
     */
-  var ReplicaGlobalSecondaryIndexSettingsUpdate: js.UndefOr[ReplicaGlobalSecondaryIndexSettingsUpdateList] = js.undefined
+  var ReplicaGlobalSecondaryIndexSettingsUpdate: js.UndefOr[ReplicaGlobalSecondaryIndexSettingsUpdateList] = js.native
   /**
-    * Autoscaling settings for managing a global table replica's read capacity units.
+    * Auto scaling settings for managing a global table replica's read capacity units.
     */
-  var ReplicaProvisionedReadCapacityAutoScalingSettingsUpdate: js.UndefOr[AutoScalingSettingsUpdate] = js.undefined
+  var ReplicaProvisionedReadCapacityAutoScalingSettingsUpdate: js.UndefOr[AutoScalingSettingsUpdate] = js.native
   /**
     * The maximum number of strongly consistent reads consumed per second before DynamoDB returns a ThrottlingException. For more information, see Specifying Read and Write Requirements in the Amazon DynamoDB Developer Guide. 
     */
-  var ReplicaProvisionedReadCapacityUnits: js.UndefOr[PositiveLongObject] = js.undefined
+  var ReplicaProvisionedReadCapacityUnits: js.UndefOr[PositiveLongObject] = js.native
 }
 
 object ReplicaSettingsUpdate {
@@ -31,9 +32,9 @@ object ReplicaSettingsUpdate {
     ReplicaProvisionedReadCapacityAutoScalingSettingsUpdate: AutoScalingSettingsUpdate = null,
     ReplicaProvisionedReadCapacityUnits: Int | scala.Double = null
   ): ReplicaSettingsUpdate = {
-    val __obj = js.Dynamic.literal(RegionName = RegionName)
-    if (ReplicaGlobalSecondaryIndexSettingsUpdate != null) __obj.updateDynamic("ReplicaGlobalSecondaryIndexSettingsUpdate")(ReplicaGlobalSecondaryIndexSettingsUpdate)
-    if (ReplicaProvisionedReadCapacityAutoScalingSettingsUpdate != null) __obj.updateDynamic("ReplicaProvisionedReadCapacityAutoScalingSettingsUpdate")(ReplicaProvisionedReadCapacityAutoScalingSettingsUpdate)
+    val __obj = js.Dynamic.literal(RegionName = RegionName.asInstanceOf[js.Any])
+    if (ReplicaGlobalSecondaryIndexSettingsUpdate != null) __obj.updateDynamic("ReplicaGlobalSecondaryIndexSettingsUpdate")(ReplicaGlobalSecondaryIndexSettingsUpdate.asInstanceOf[js.Any])
+    if (ReplicaProvisionedReadCapacityAutoScalingSettingsUpdate != null) __obj.updateDynamic("ReplicaProvisionedReadCapacityAutoScalingSettingsUpdate")(ReplicaProvisionedReadCapacityAutoScalingSettingsUpdate.asInstanceOf[js.Any])
     if (ReplicaProvisionedReadCapacityUnits != null) __obj.updateDynamic("ReplicaProvisionedReadCapacityUnits")(ReplicaProvisionedReadCapacityUnits.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplicaSettingsUpdate]
   }

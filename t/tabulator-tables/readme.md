@@ -10,9 +10,9 @@ Interactive table generation JavaScript library
 | ------------------ | :-------------: |
 | Full name          | tabulator-tables |
 | Keywords           | table, grid, datagrid, tabulator, editable, cookie, sort, format, resizable, list, scrollable, ajax, json, widget, jquery, react, angular, vue |
-| # releases         | 17 |
-| # dependents       | 2 |
-| # downloads        | 59062 |
+| # releases         | 31 |
+| # dependents       | 4 |
+| # downloads        | 300839 |
 | # stars            | 0 |
 
 ## Links

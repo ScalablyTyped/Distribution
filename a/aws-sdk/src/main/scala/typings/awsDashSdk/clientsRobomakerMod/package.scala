@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 package object clientsRobomakerMod {
   import org.scalablytyped.runtime.StringDictionary
   import typings.awsDashSdk.awsDashSdkStrings.OGRE
-  import typings.awsDashSdk.awsDashSdkStrings.ROS
   import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
   import typings.std.Date
 
@@ -47,18 +46,19 @@ package object clientsRobomakerMod {
     - typings.awsDashSdk.awsDashSdkStrings.PreLaunchFileFailure
     - typings.awsDashSdk.awsDashSdkStrings.PostLaunchFileFailure
     - typings.awsDashSdk.awsDashSdkStrings.BadPermissionError
+    - typings.awsDashSdk.awsDashSdkStrings.DownloadConditionFailed
     - typings.awsDashSdk.awsDashSdkStrings.InternalServerError
     - java.lang.String
   */
   type DeploymentJobErrorCode = _DeploymentJobErrorCode | String
   type DeploymentJobs = js.Array[DeploymentJob]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Pending
-    - typings.awsDashSdk.awsDashSdkStrings.Preparing
-    - typings.awsDashSdk.awsDashSdkStrings.InProgress
-    - typings.awsDashSdk.awsDashSdkStrings.Failed
-    - typings.awsDashSdk.awsDashSdkStrings.Succeeded
-    - typings.awsDashSdk.awsDashSdkStrings.Canceled
+    - typings.awsDashSdk.awsDashSdkStrings.Pending_
+    - typings.awsDashSdk.awsDashSdkStrings.Preparing_
+    - typings.awsDashSdk.awsDashSdkStrings.InProgress_
+    - typings.awsDashSdk.awsDashSdkStrings.Failed_
+    - typings.awsDashSdk.awsDashSdkStrings.Succeeded_
+    - typings.awsDashSdk.awsDashSdkStrings.Canceled_
     - java.lang.String
   */
   type DeploymentStatus = _DeploymentStatus | String
@@ -68,8 +68,8 @@ package object clientsRobomakerMod {
   type EnvironmentVariableMap = StringDictionary[EnvironmentVariableValue]
   type EnvironmentVariableValue = String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Fail
-    - typings.awsDashSdk.awsDashSdkStrings.Continue
+    - typings.awsDashSdk.awsDashSdkStrings.Fail_
+    - typings.awsDashSdk.awsDashSdkStrings.Continue_
     - java.lang.String
   */
   type FailureBehavior = _FailureBehavior | String
@@ -100,30 +100,37 @@ package object clientsRobomakerMod {
   type RobotApplicationNames = js.Array[Name]
   type RobotApplicationSummaries = js.Array[RobotApplicationSummary]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Validating
+    - typings.awsDashSdk.awsDashSdkStrings.Validating_
     - typings.awsDashSdk.awsDashSdkStrings.DownloadingExtracting
+    - typings.awsDashSdk.awsDashSdkStrings.ExecutingDownloadCondition
     - typings.awsDashSdk.awsDashSdkStrings.ExecutingPreLaunch
-    - typings.awsDashSdk.awsDashSdkStrings.Launching
+    - typings.awsDashSdk.awsDashSdkStrings.Launching_
     - typings.awsDashSdk.awsDashSdkStrings.ExecutingPostLaunch
-    - typings.awsDashSdk.awsDashSdkStrings.Finished
+    - typings.awsDashSdk.awsDashSdkStrings.Finished_
     - java.lang.String
   */
   type RobotDeploymentStep = _RobotDeploymentStep | String
   type RobotDeploymentSummary = js.Array[RobotDeployment]
-  type RobotSoftwareSuiteType = ROS | String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.ROS
+    - typings.awsDashSdk.awsDashSdkStrings.ROS2
+    - java.lang.String
+  */
+  type RobotSoftwareSuiteType = _RobotSoftwareSuiteType | String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.Kinetic
     - typings.awsDashSdk.awsDashSdkStrings.Melodic
+    - typings.awsDashSdk.awsDashSdkStrings.Dashing
     - java.lang.String
   */
   type RobotSoftwareSuiteVersionType = _RobotSoftwareSuiteVersionType | String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Available
-    - typings.awsDashSdk.awsDashSdkStrings.Registered
+    - typings.awsDashSdk.awsDashSdkStrings.Available_
+    - typings.awsDashSdk.awsDashSdkStrings.Registered_
     - typings.awsDashSdk.awsDashSdkStrings.PendingNewDeployment
-    - typings.awsDashSdk.awsDashSdkStrings.Deploying
-    - typings.awsDashSdk.awsDashSdkStrings.Failed
-    - typings.awsDashSdk.awsDashSdkStrings.InSync
+    - typings.awsDashSdk.awsDashSdkStrings.Deploying_
+    - typings.awsDashSdk.awsDashSdkStrings.Failed_
+    - typings.awsDashSdk.awsDashSdkStrings.InSync_
     - typings.awsDashSdk.awsDashSdkStrings.NoResponse
     - java.lang.String
   */
@@ -166,16 +173,16 @@ package object clientsRobomakerMod {
   */
   type SimulationJobErrorCode = _SimulationJobErrorCode | String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Pending
-    - typings.awsDashSdk.awsDashSdkStrings.Preparing
-    - typings.awsDashSdk.awsDashSdkStrings.Running
+    - typings.awsDashSdk.awsDashSdkStrings.Pending_
+    - typings.awsDashSdk.awsDashSdkStrings.Preparing_
+    - typings.awsDashSdk.awsDashSdkStrings.Running_
     - typings.awsDashSdk.awsDashSdkStrings.Restarting
-    - typings.awsDashSdk.awsDashSdkStrings.Completed
-    - typings.awsDashSdk.awsDashSdkStrings.Failed
+    - typings.awsDashSdk.awsDashSdkStrings.Completed_
+    - typings.awsDashSdk.awsDashSdkStrings.Failed_
     - typings.awsDashSdk.awsDashSdkStrings.RunningFailed
-    - typings.awsDashSdk.awsDashSdkStrings.Terminating
-    - typings.awsDashSdk.awsDashSdkStrings.Terminated
-    - typings.awsDashSdk.awsDashSdkStrings.Canceled
+    - typings.awsDashSdk.awsDashSdkStrings.Terminating_
+    - typings.awsDashSdk.awsDashSdkStrings.Terminated_
+    - typings.awsDashSdk.awsDashSdkStrings.Canceled_
     - java.lang.String
   */
   type SimulationJobStatus = _SimulationJobStatus | String
@@ -200,7 +207,7 @@ package object clientsRobomakerMod {
   type VersionQualifier = String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2018-06-29`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

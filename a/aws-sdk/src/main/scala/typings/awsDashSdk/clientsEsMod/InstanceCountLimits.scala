@@ -4,9 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InstanceCountLimits extends js.Object {
-  var MaximumInstanceCount: js.UndefOr[typings.awsDashSdk.clientsEsMod.MaximumInstanceCount] = js.undefined
-  var MinimumInstanceCount: js.UndefOr[typings.awsDashSdk.clientsEsMod.MinimumInstanceCount] = js.undefined
+  var MaximumInstanceCount: js.UndefOr[typings.awsDashSdk.clientsEsMod.MaximumInstanceCount] = js.native
+  var MinimumInstanceCount: js.UndefOr[typings.awsDashSdk.clientsEsMod.MinimumInstanceCount] = js.native
 }
 
 object InstanceCountLimits {

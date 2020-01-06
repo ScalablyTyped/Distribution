@@ -6,18 +6,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/ListItem.ListItemClassKey>> */
+@js.native
 trait PartialStyleRulesListItemClassKey extends js.Object {
-  var button: js.UndefOr[CSSProperties] = js.undefined
-  var container: js.UndefOr[CSSProperties] = js.undefined
-  var default: js.UndefOr[CSSProperties] = js.undefined
-  var dense: js.UndefOr[CSSProperties] = js.undefined
-  var disabled: js.UndefOr[CSSProperties] = js.undefined
-  var divider: js.UndefOr[CSSProperties] = js.undefined
-  var focusVisible: js.UndefOr[CSSProperties] = js.undefined
-  var gutters: js.UndefOr[CSSProperties] = js.undefined
-  var root: js.UndefOr[CSSProperties] = js.undefined
-  var secondaryAction: js.UndefOr[CSSProperties] = js.undefined
-  var selected: js.UndefOr[CSSProperties] = js.undefined
+  var button: js.UndefOr[CSSProperties] = js.native
+  var container: js.UndefOr[CSSProperties] = js.native
+  var default: js.UndefOr[CSSProperties] = js.native
+  var dense: js.UndefOr[CSSProperties] = js.native
+  var disabled: js.UndefOr[CSSProperties] = js.native
+  var divider: js.UndefOr[CSSProperties] = js.native
+  var focusVisible: js.UndefOr[CSSProperties] = js.native
+  var gutters: js.UndefOr[CSSProperties] = js.native
+  var root: js.UndefOr[CSSProperties] = js.native
+  var secondaryAction: js.UndefOr[CSSProperties] = js.native
+  var selected: js.UndefOr[CSSProperties] = js.native
 }
 
 object PartialStyleRulesListItemClassKey {

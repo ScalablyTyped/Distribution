@@ -10,9 +10,9 @@ a rpc client for node
 | ------------------ | :-------------: |
 | Full name          | node-ral |
 | Keywords           | rpc, ral, fis |
-| # releases         | 4 |
-| # dependents       | 10 |
-| # downloads        | 6513 |
+| # releases         | 0 |
+| # dependents       | 11 |
+| # downloads        | 9211 |
 | # stars            | 1 |
 
 ## Links

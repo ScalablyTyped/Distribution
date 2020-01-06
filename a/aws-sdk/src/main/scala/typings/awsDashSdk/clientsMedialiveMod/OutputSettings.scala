@@ -4,14 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OutputSettings extends js.Object {
-  var ArchiveOutputSettings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.ArchiveOutputSettings] = js.undefined
-  var FrameCaptureOutputSettings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.FrameCaptureOutputSettings] = js.undefined
-  var HlsOutputSettings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.HlsOutputSettings] = js.undefined
-  var MediaPackageOutputSettings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.MediaPackageOutputSettings] = js.undefined
-  var MsSmoothOutputSettings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.MsSmoothOutputSettings] = js.undefined
-  var RtmpOutputSettings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.RtmpOutputSettings] = js.undefined
-  var UdpOutputSettings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.UdpOutputSettings] = js.undefined
+  var ArchiveOutputSettings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.ArchiveOutputSettings] = js.native
+  var FrameCaptureOutputSettings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.FrameCaptureOutputSettings] = js.native
+  var HlsOutputSettings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.HlsOutputSettings] = js.native
+  var MediaPackageOutputSettings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.MediaPackageOutputSettings] = js.native
+  var MsSmoothOutputSettings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.MsSmoothOutputSettings] = js.native
+  var MultiplexOutputSettings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.MultiplexOutputSettings] = js.native
+  var RtmpOutputSettings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.RtmpOutputSettings] = js.native
+  var UdpOutputSettings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.UdpOutputSettings] = js.native
 }
 
 object OutputSettings {
@@ -22,17 +24,19 @@ object OutputSettings {
     HlsOutputSettings: HlsOutputSettings = null,
     MediaPackageOutputSettings: MediaPackageOutputSettings = null,
     MsSmoothOutputSettings: MsSmoothOutputSettings = null,
+    MultiplexOutputSettings: MultiplexOutputSettings = null,
     RtmpOutputSettings: RtmpOutputSettings = null,
     UdpOutputSettings: UdpOutputSettings = null
   ): OutputSettings = {
     val __obj = js.Dynamic.literal()
-    if (ArchiveOutputSettings != null) __obj.updateDynamic("ArchiveOutputSettings")(ArchiveOutputSettings)
-    if (FrameCaptureOutputSettings != null) __obj.updateDynamic("FrameCaptureOutputSettings")(FrameCaptureOutputSettings)
-    if (HlsOutputSettings != null) __obj.updateDynamic("HlsOutputSettings")(HlsOutputSettings)
-    if (MediaPackageOutputSettings != null) __obj.updateDynamic("MediaPackageOutputSettings")(MediaPackageOutputSettings)
-    if (MsSmoothOutputSettings != null) __obj.updateDynamic("MsSmoothOutputSettings")(MsSmoothOutputSettings)
-    if (RtmpOutputSettings != null) __obj.updateDynamic("RtmpOutputSettings")(RtmpOutputSettings)
-    if (UdpOutputSettings != null) __obj.updateDynamic("UdpOutputSettings")(UdpOutputSettings)
+    if (ArchiveOutputSettings != null) __obj.updateDynamic("ArchiveOutputSettings")(ArchiveOutputSettings.asInstanceOf[js.Any])
+    if (FrameCaptureOutputSettings != null) __obj.updateDynamic("FrameCaptureOutputSettings")(FrameCaptureOutputSettings.asInstanceOf[js.Any])
+    if (HlsOutputSettings != null) __obj.updateDynamic("HlsOutputSettings")(HlsOutputSettings.asInstanceOf[js.Any])
+    if (MediaPackageOutputSettings != null) __obj.updateDynamic("MediaPackageOutputSettings")(MediaPackageOutputSettings.asInstanceOf[js.Any])
+    if (MsSmoothOutputSettings != null) __obj.updateDynamic("MsSmoothOutputSettings")(MsSmoothOutputSettings.asInstanceOf[js.Any])
+    if (MultiplexOutputSettings != null) __obj.updateDynamic("MultiplexOutputSettings")(MultiplexOutputSettings.asInstanceOf[js.Any])
+    if (RtmpOutputSettings != null) __obj.updateDynamic("RtmpOutputSettings")(RtmpOutputSettings.asInstanceOf[js.Any])
+    if (UdpOutputSettings != null) __obj.updateDynamic("UdpOutputSettings")(UdpOutputSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutputSettings]
   }
 }

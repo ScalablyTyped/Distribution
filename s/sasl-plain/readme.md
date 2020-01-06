@@ -11,8 +11,8 @@ JavaScript implementation of PLAIN SASL mechanism.
 | Full name          | sasl-plain |
 | Keywords           | sasl, auth, authn, authentication, security |
 | # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 83241 |
+| # dependents       | 5 |
+| # downloads        | 88008 |
 | # stars            | 0 |
 
 ## Links

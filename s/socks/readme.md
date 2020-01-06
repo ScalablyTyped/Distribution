@@ -10,9 +10,9 @@ Fully featured SOCKS proxy client supporting SOCKSv4, SOCKSv4a, and SOCKSv5. Inc
 | ------------------ | :-------------: |
 | Full name          | socks |
 | Keywords           | socks, proxy, tor, socks 4, socks 5, socks4, socks5 |
-| # releases         | 21 |
-| # dependents       | 64 |
-| # downloads        | 93325571 |
+| # releases         | 13 |
+| # dependents       | 71 |
+| # downloads        | 142626017 |
 | # stars            | 6 |
 
 ## Links

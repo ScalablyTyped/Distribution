@@ -10,9 +10,9 @@ React Mentions
 | ------------------ | :-------------: |
 | Full name          | rc-mentions |
 | Keywords           | react, react-component, react-mentions, mentions |
-| # releases         | 8 |
-| # dependents       | 0 |
-| # downloads        | 173 |
+| # releases         | 20 |
+| # dependents       | 40 |
+| # downloads        | 4324449 |
 | # stars            | 0 |
 
 ## Links

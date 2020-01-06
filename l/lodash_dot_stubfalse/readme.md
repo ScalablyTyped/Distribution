@@ -12,7 +12,7 @@ The lodash method `_.stubFalse` exported as a module.
 | Keywords           | lodash-modularized, stubfalse |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 97 |
+| # downloads        | 99 |
 | # stars            | 0 |
 
 ## Links

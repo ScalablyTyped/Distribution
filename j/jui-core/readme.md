@@ -12,7 +12,7 @@ The core framework provided by the JUI for implementing such a grid and chart.
 | Keywords           | HTML5, NodeJS, CSS, JS, JavaScript, SVG, Chart, Framework, Web Development, free, MIT |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 347 |
+| # downloads        | 394 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ A convenient alternative to XMLHttpRequest.
 | ------------------ | :-------------: |
 | Full name          | d3-request |
 | Keywords           | d3, d3-module, request, ajax, XMLHttpRequest |
-| # releases         | 2 |
-| # dependents       | 50 |
-| # downloads        | 8161477 |
+| # releases         | 0 |
+| # dependents       | 59 |
+| # downloads        | 10114361 |
 | # stars            | 2 |
 
 ## Links

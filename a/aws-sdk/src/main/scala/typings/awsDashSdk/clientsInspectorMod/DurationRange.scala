@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DurationRange extends js.Object {
   /**
     * The maximum value of the duration range. Must be less than or equal to 604800 seconds (1 week).
     */
-  var maxSeconds: js.UndefOr[AssessmentRunDuration] = js.undefined
+  var maxSeconds: js.UndefOr[AssessmentRunDuration] = js.native
   /**
     * The minimum value of the duration range. Must be greater than zero.
     */
-  var minSeconds: js.UndefOr[AssessmentRunDuration] = js.undefined
+  var minSeconds: js.UndefOr[AssessmentRunDuration] = js.native
 }
 
 object DurationRange {

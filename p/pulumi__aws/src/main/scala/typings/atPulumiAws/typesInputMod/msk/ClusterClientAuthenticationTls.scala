@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClusterClientAuthenticationTls extends js.Object {
   /**
     * List of ACM Certificate Authority Amazon Resource Names (ARNs).
     */
-  var certificateAuthorityArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  var certificateAuthorityArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
 }
 
 object ClusterClientAuthenticationTls {

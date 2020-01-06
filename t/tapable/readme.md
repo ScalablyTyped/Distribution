@@ -10,9 +10,9 @@ Just a little module for plugins.
 | ------------------ | :-------------: |
 | Full name          | tapable |
 | Keywords           | - |
-| # releases         | 16 |
-| # dependents       | 170 |
-| # downloads        | 244905286 |
+| # releases         | 15 |
+| # dependents       | 266 |
+| # downloads        | 367358455 |
 | # stars            | 10 |
 
 ## Links

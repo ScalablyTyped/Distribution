@@ -12,7 +12,7 @@ Create, read and edit .zip files synchronously with Javascript
 | Keywords           | zip, deflate, inflate |
 | # releases         | 9 |
 | # dependents       | 0 |
-| # downloads        | 3118 |
+| # downloads        | 22824 |
 | # stars            | 0 |
 
 ## Links

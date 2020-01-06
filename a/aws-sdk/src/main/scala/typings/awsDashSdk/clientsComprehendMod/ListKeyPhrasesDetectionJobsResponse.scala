@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ListKeyPhrasesDetectionJobsResponse extends js.Object {
   /**
     * A list containing the properties of each job that is returned.
     */
-  var KeyPhrasesDetectionJobPropertiesList: js.UndefOr[typings.awsDashSdk.clientsComprehendMod.KeyPhrasesDetectionJobPropertiesList] = js.undefined
+  var KeyPhrasesDetectionJobPropertiesList: js.UndefOr[typings.awsDashSdk.clientsComprehendMod.KeyPhrasesDetectionJobPropertiesList] = js.native
   /**
     * Identifies the next page of results to return.
     */
-  var NextToken: js.UndefOr[String] = js.undefined
+  var NextToken: js.UndefOr[String] = js.native
 }
 
 object ListKeyPhrasesDetectionJobsResponse {
@@ -22,8 +23,8 @@ object ListKeyPhrasesDetectionJobsResponse {
     NextToken: String = null
   ): ListKeyPhrasesDetectionJobsResponse = {
     val __obj = js.Dynamic.literal()
-    if (KeyPhrasesDetectionJobPropertiesList != null) __obj.updateDynamic("KeyPhrasesDetectionJobPropertiesList")(KeyPhrasesDetectionJobPropertiesList)
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
+    if (KeyPhrasesDetectionJobPropertiesList != null) __obj.updateDynamic("KeyPhrasesDetectionJobPropertiesList")(KeyPhrasesDetectionJobPropertiesList.asInstanceOf[js.Any])
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListKeyPhrasesDetectionJobsResponse]
   }
 }

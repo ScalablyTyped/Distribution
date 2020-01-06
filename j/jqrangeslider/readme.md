@@ -10,9 +10,9 @@ jQRangeSlider, jQDateRangeSlider & jQEditRangeSlider [![Build Status](https://tr
 | ------------------ | :-------------: |
 | Full name          | jqrangeslider |
 | Keywords           | jqrangeslider, jqueryui-range, selection-slider, dates-slider |
-| # releases         | 5 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 9661 |
+| # downloads        | 7233 |
 | # stars            | 0 |
 
 ## Links

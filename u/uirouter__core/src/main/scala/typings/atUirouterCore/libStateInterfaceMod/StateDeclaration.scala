@@ -507,7 +507,7 @@ trait StateDeclaration
     * It can contain the following optional keys/values:
     *
     * - `when`: (optional) defines when the resolve is fetched. Accepted values: "LAZY" or "EAGER"
-    * - `async`: (optional) if the transition waits for the resolve. Accepted values: "WAIT", "NOWAIT", "RXWAIT"
+    * - `async`: (optional) if the transition waits for the resolve. Accepted values: "WAIT", "NOWAIT", {@link CustomAsyncPolicy}
     *
     * See [[ResolvePolicy]] for more details.
     */

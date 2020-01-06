@@ -4,25 +4,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EvaluateExpressionInput extends js.Object {
   /**
     * The expression to evaluate.
     */
-  var expression: longString
+  var expression: longString = js.native
   /**
     * The ID of the object.
     */
-  var objectId: id
+  var objectId: id = js.native
   /**
     * The ID of the pipeline.
     */
-  var pipelineId: id
+  var pipelineId: id = js.native
 }
 
 object EvaluateExpressionInput {
   @scala.inline
   def apply(expression: longString, objectId: id, pipelineId: id): EvaluateExpressionInput = {
-    val __obj = js.Dynamic.literal(expression = expression, objectId = objectId, pipelineId = pipelineId)
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], objectId = objectId.asInstanceOf[js.Any], pipelineId = pipelineId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EvaluateExpressionInput]
   }

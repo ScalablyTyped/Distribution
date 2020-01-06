@@ -12,7 +12,7 @@ Shuffle Array based on a Seed
 | Keywords           | array, seed, shuffle, shuffle, seed, random |
 | # releases         | 1 |
 | # dependents       | 20 |
-| # downloads        | 2666840 |
+| # downloads        | 2720849 |
 | # stars            | 1 |
 
 ## Links

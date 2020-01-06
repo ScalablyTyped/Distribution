@@ -9,9 +9,9 @@ A javascript, stylesheet and webcomponent injection plugin for Gulp, i.e. inject
 | ------------------ | :-------------: |
 | Full name          | gulp-inject |
 | Keywords           | gulpplugin, inject, stylesheets, webcomponents, scripts, index |
-| # releases         | 9 |
-| # dependents       | 169 |
-| # downloads        | 3122116 |
+| # releases         | 10 |
+| # dependents       | 182 |
+| # downloads        | 2889747 |
 | # stars            | 185 |
 
 ## Links

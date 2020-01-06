@@ -10,9 +10,9 @@ The Material Components Web data table component
 | ------------------ | :-------------: |
 | Full name          | @material/data-table |
 | Keywords           | material components, material design, data table |
-| # releases         | 24 |
-| # dependents       | 5 |
-| # downloads        | 69903 |
+| # releases         | 84 |
+| # dependents       | 6 |
+| # downloads        | 145633 |
 | # stars            | 0 |
 
 ## Links

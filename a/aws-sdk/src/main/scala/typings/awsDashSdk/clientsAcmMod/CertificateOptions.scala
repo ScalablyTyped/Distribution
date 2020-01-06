@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CertificateOptions extends js.Object {
   /**
     * You can opt out of certificate transparency logging by specifying the DISABLED option. Opt in by specifying ENABLED. 
     */
-  var CertificateTransparencyLoggingPreference: js.UndefOr[typings.awsDashSdk.clientsAcmMod.CertificateTransparencyLoggingPreference] = js.undefined
+  var CertificateTransparencyLoggingPreference: js.UndefOr[typings.awsDashSdk.clientsAcmMod.CertificateTransparencyLoggingPreference] = js.native
 }
 
 object CertificateOptions {

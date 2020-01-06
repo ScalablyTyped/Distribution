@@ -12,7 +12,7 @@ A simple redis store of koa-session
 | Keywords           | koa, koa2, session, redis |
 | # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 2936 |
+| # downloads        | 3250 |
 | # stars            | 0 |
 
 ## Links

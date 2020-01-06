@@ -4,31 +4,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ConferenceProvider extends js.Object {
   /**
     * The ARN of the newly created conference provider.
     */
-  var Arn: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.Arn] = js.undefined
+  var Arn: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.Arn] = js.native
   /**
     * The IP endpoint and protocol for calling.
     */
-  var IPDialIn: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.IPDialIn] = js.undefined
+  var IPDialIn: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.IPDialIn] = js.native
   /**
     * The meeting settings for the conference provider.
     */
-  var MeetingSetting: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.MeetingSetting] = js.undefined
+  var MeetingSetting: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.MeetingSetting] = js.native
   /**
     * The name of the conference provider.
     */
-  var Name: js.UndefOr[ConferenceProviderName] = js.undefined
+  var Name: js.UndefOr[ConferenceProviderName] = js.native
   /**
     * The information for PSTN conferencing.
     */
-  var PSTNDialIn: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.PSTNDialIn] = js.undefined
+  var PSTNDialIn: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.PSTNDialIn] = js.native
   /**
     * The type of conference providers.
     */
-  var Type: js.UndefOr[ConferenceProviderType] = js.undefined
+  var Type: js.UndefOr[ConferenceProviderType] = js.native
 }
 
 object ConferenceProvider {
@@ -42,11 +43,11 @@ object ConferenceProvider {
     Type: ConferenceProviderType = null
   ): ConferenceProvider = {
     val __obj = js.Dynamic.literal()
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn)
-    if (IPDialIn != null) __obj.updateDynamic("IPDialIn")(IPDialIn)
-    if (MeetingSetting != null) __obj.updateDynamic("MeetingSetting")(MeetingSetting)
-    if (Name != null) __obj.updateDynamic("Name")(Name)
-    if (PSTNDialIn != null) __obj.updateDynamic("PSTNDialIn")(PSTNDialIn)
+    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
+    if (IPDialIn != null) __obj.updateDynamic("IPDialIn")(IPDialIn.asInstanceOf[js.Any])
+    if (MeetingSetting != null) __obj.updateDynamic("MeetingSetting")(MeetingSetting.asInstanceOf[js.Any])
+    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
+    if (PSTNDialIn != null) __obj.updateDynamic("PSTNDialIn")(PSTNDialIn.asInstanceOf[js.Any])
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConferenceProvider]
   }

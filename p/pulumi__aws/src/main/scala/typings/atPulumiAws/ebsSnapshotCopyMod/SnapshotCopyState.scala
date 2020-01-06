@@ -6,46 +6,47 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SnapshotCopyState extends js.Object {
   /**
     * The data encryption key identifier for the snapshot.
     * * `sourceSnapshotId` The ARN of the copied snapshot.
     * * `sourceRegion` The region of the source snapshot.
     */
-  val dataEncryptionKeyId: js.UndefOr[Input[String]] = js.undefined
+  val dataEncryptionKeyId: js.UndefOr[Input[String]] = js.native
   /**
     * A description of what the snapshot is.
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * Whether the snapshot is encrypted.
     */
-  val encrypted: js.UndefOr[Input[Boolean]] = js.undefined
+  val encrypted: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The ARN for the KMS encryption key.
     * * `sourceSnapshotId` The ARN for the snapshot to be copied.
     * * `sourceRegion` The region of the source snapshot.
     */
-  val kmsKeyId: js.UndefOr[Input[String]] = js.undefined
+  val kmsKeyId: js.UndefOr[Input[String]] = js.native
   /**
     * Value from an Amazon-maintained list (`amazon`, `aws-marketplace`, `microsoft`) of snapshot owners.
     */
-  val ownerAlias: js.UndefOr[Input[String]] = js.undefined
+  val ownerAlias: js.UndefOr[Input[String]] = js.native
   /**
     * The AWS account ID of the snapshot owner.
     */
-  val ownerId: js.UndefOr[Input[String]] = js.undefined
-  val sourceRegion: js.UndefOr[Input[String]] = js.undefined
-  val sourceSnapshotId: js.UndefOr[Input[String]] = js.undefined
+  val ownerId: js.UndefOr[Input[String]] = js.native
+  val sourceRegion: js.UndefOr[Input[String]] = js.native
+  val sourceSnapshotId: js.UndefOr[Input[String]] = js.native
   /**
     * A mapping of tags for the snapshot.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
-  val volumeId: js.UndefOr[Input[String]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val volumeId: js.UndefOr[Input[String]] = js.native
   /**
     * The size of the drive in GiBs.
     */
-  val volumeSize: js.UndefOr[Input[Double]] = js.undefined
+  val volumeSize: js.UndefOr[Input[Double]] = js.native
 }
 
 object SnapshotCopyState {

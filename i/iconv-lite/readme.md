@@ -10,9 +10,9 @@ Convert character encodings in pure javascript.
 | ------------------ | :-------------: |
 | Full name          | iconv-lite |
 | Keywords           | iconv, convert, charset, icu |
-| # releases         | 10 |
-| # dependents       | 1773 |
-| # downloads        | 708556767 |
+| # releases         | 7 |
+| # dependents       | 2047 |
+| # downloads        | 904229438 |
 | # stars            | 107 |
 
 ## Links

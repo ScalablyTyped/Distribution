@@ -6,10 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/StepButton.StepButtonClasskey>> */
+@js.native
 trait PartialStyleRulesStepButtonClasskey extends js.Object {
-  var root: js.UndefOr[CSSProperties] = js.undefined
-  var touchRipple: js.UndefOr[CSSProperties] = js.undefined
-  var vertical: js.UndefOr[CSSProperties] = js.undefined
+  var root: js.UndefOr[CSSProperties] = js.native
+  var touchRipple: js.UndefOr[CSSProperties] = js.native
+  var vertical: js.UndefOr[CSSProperties] = js.native
 }
 
 object PartialStyleRulesStepButtonClasskey {

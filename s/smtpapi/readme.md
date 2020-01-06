@@ -10,9 +10,9 @@ Build SendGrid X-SMTPAPI headers in nodejs.
 | ------------------ | :-------------: |
 | Full name          | smtpapi |
 | Keywords           | smtpapi, x-smtpapi, smtp, sendgrid, headers, email |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 1033039 |
+| # downloads        | 1248954 |
 | # stars            | 2 |
 
 ## Links

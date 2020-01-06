@@ -12,7 +12,7 @@ NodeJS binding for fast XML parsing.
 | Keywords           | xml, sax, expat, libexpat, parse, parsing |
 | # releases         | 3 |
 | # dependents       | 112 |
-| # downloads        | 2845528 |
+| # downloads        | 2906498 |
 | # stars            | 11 |
 
 ## Links

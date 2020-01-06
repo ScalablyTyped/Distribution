@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EC2Specification extends js.Object {
   /**
     * Whether you want a recommendation for standard or convertible reservations.
     */
-  var OfferingClass: js.UndefOr[typings.awsDashSdk.clientsCostexplorerMod.OfferingClass] = js.undefined
+  var OfferingClass: js.UndefOr[typings.awsDashSdk.clientsCostexplorerMod.OfferingClass] = js.native
 }
 
 object EC2Specification {

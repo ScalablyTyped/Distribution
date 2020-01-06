@@ -1,6 +1,7 @@
 package typings.atPulumiAws.ecsServiceMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.atPulumiAws.typesOutputMod.ecs.ServiceCapacityProviderStrategy
 import typings.atPulumiAws.typesOutputMod.ecs.ServiceDeploymentController
 import typings.atPulumiAws.typesOutputMod.ecs.ServiceLoadBalancer
 import typings.atPulumiAws.typesOutputMod.ecs.ServiceNetworkConfiguration
@@ -28,6 +29,10 @@ class Service protected () extends CustomResource {
     */
   def this(name: String, args: ServiceArgs) = this()
   def this(name: String, args: ServiceArgs, opts: CustomResourceOptions) = this()
+  /**
+    * The capacity provider strategy to use for the service. Can be one or more.  Defined below.
+    */
+  val capacityProviderStrategies: Output[js.UndefOr[js.Array[ServiceCapacityProviderStrategy]]] = js.native
   /**
     * ARN of an ECS cluster
     */
@@ -63,7 +68,7 @@ class Service protected () extends CustomResource {
   /**
     * The launch type on which to run your service. The valid values are `EC2` and `FARGATE`. Defaults to `EC2`.
     */
-  val launchType: Output[js.UndefOr[String]] = js.native
+  val launchType: Output[String] = js.native
   /**
     * A load balancer block. Load balancers documented below.
     */

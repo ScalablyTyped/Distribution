@@ -11,8 +11,8 @@ Get the email address of the current user from git config.
 | Full name          | git-user-email |
 | Keywords           | config, email, git, github, user |
 | # releases         | 0 |
-| # dependents       | 30 |
-| # downloads        | 20810 |
+| # dependents       | 36 |
+| # downloads        | 37408 |
 | # stars            | 0 |
 
 ## Links

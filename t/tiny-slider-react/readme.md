@@ -10,9 +10,9 @@ wrapper tiny-slider plugin for react
 | ------------------ | :-------------: |
 | Full name          | tiny-slider-react |
 | Keywords           | tiny-slider, carousel, react |
-| # releases         | 22 |
+| # releases         | 11 |
 | # dependents       | 0 |
-| # downloads        | 8190 |
+| # downloads        | 21802 |
 | # stars            | 0 |
 
 ## Links

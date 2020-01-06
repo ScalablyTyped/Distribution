@@ -10,9 +10,9 @@ provides access to the windows registry through the REG tool
 | ------------------ | :-------------: |
 | Full name          | winreg |
 | Keywords           | windows, registry |
-| # releases         | 2 |
-| # dependents       | 80 |
-| # downloads        | 2491082 |
+| # releases         | 1 |
+| # dependents       | 89 |
+| # downloads        | 3003624 |
 | # stars            | 10 |
 
 ## Links

@@ -11,8 +11,8 @@ Offers a async require.resolve function. It's highly configurable.
 | Full name          | enhanced-resolve |
 | Keywords           | - |
 | # releases         | 11 |
-| # dependents       | 205 |
-| # downloads        | 233840604 |
+| # dependents       | 256 |
+| # downloads        | 355855966 |
 | # stars            | 2 |
 
 ## Links

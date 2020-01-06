@@ -11,8 +11,8 @@ Fibonacci and exponential backoffs.
 | Full name          | backoff |
 | Keywords           | backoff, retry, fibonacci, exponential |
 | # releases         | 1 |
-| # dependents       | 201 |
-| # downloads        | 8253932 |
+| # dependents       | 218 |
+| # downloads        | 11213076 |
 | # stars            | 23 |
 
 ## Links

@@ -10,9 +10,9 @@ Redux-first routing
 | ------------------ | :-------------: |
 | Full name          | redux-first-routing |
 | Keywords           | redux, first, routing, router, middleware, history |
-| # releases         | 12 |
+| # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 33291 |
+| # downloads        | 57078 |
 | # stars            | 0 |
 
 ## Links

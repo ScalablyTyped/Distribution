@@ -10,9 +10,9 @@ Get the email of an npm user
 | ------------------ | :-------------: |
 | Full name          | npm-email |
 | Keywords           | npm, email, address, user, username, registry, json, get |
-| # releases         | 4 |
-| # dependents       | 8 |
-| # downloads        | 6972 |
+| # releases         | 3 |
+| # dependents       | 10 |
+| # downloads        | 4581 |
 | # stars            | 1 |
 
 ## Links

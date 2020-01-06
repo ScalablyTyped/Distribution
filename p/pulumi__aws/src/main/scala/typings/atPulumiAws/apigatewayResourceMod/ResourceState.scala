@@ -6,23 +6,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ResourceState extends js.Object {
   /**
     * The ID of the parent API resource
     */
-  val parentId: js.UndefOr[Input[String]] = js.undefined
+  val parentId: js.UndefOr[Input[String]] = js.native
   /**
     * The complete path for this API resource, including all parent paths.
     */
-  val path: js.UndefOr[Input[String]] = js.undefined
+  val path: js.UndefOr[Input[String]] = js.native
   /**
     * The last path segment of this API resource.
     */
-  val pathPart: js.UndefOr[Input[String]] = js.undefined
+  val pathPart: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of the associated REST API
     */
-  val restApi: js.UndefOr[Input[RestApi]] = js.undefined
+  val restApi: js.UndefOr[Input[RestApi]] = js.native
 }
 
 object ResourceState {

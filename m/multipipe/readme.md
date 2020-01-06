@@ -10,9 +10,9 @@ pipe streams with centralized error handling
 | ------------------ | :-------------: |
 | Full name          | multipipe |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 134 |
-| # downloads        | 68003090 |
+| # releases         | 4 |
+| # dependents       | 138 |
+| # downloads        | 64480486 |
 | # stars            | 10 |
 
 ## Links

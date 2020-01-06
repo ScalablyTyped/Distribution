@@ -8,5 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object createClient extends js.Object {
   def apply(options: CreateClientOptions): GoogleMapsClient = js.native
+  def apply(options: CreateClientOptionsWithPromise): GoogleMapsClientWithPromise = js.native
 }
 

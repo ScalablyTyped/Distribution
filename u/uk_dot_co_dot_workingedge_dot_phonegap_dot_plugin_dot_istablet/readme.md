@@ -10,9 +10,9 @@ Cordova/Phonegap plugin to determine if current device is a tablet.
 | ------------------ | :-------------: |
 | Full name          | uk.co.workingedge.phonegap.plugin.istablet |
 | Keywords           | ecosystem:cordova, cordova, phonegap, ios, android, tablet, phone, mobile, cellphone, detect, screen size, display |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 9589 |
+| # downloads        | 14351 |
 | # stars            | 0 |
 
 ## Links

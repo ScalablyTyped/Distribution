@@ -3,7 +3,7 @@ package typings.baseui.selectMod
 import typings.baseui.Anon_Clearable
 import typings.baseui.Anon_Item
 import typings.baseui.Anon_OptionOptionState
-import typings.baseui.Anon_Option_666053661
+import typings.baseui.Anon_Option_1721897024
 import typings.dateDashFns.Locale
 import typings.react.reactMod.Component
 import typings.react.reactMod.FocusEvent
@@ -34,7 +34,7 @@ class Select ()
   def getOptionLabel(locale: Locale, hasOption: Anon_OptionOptionState): ReactNode = js.native
   def getSharedProps(): Anon_Clearable = js.native
   def getValueArray(value: Value): js.Array[Option] = js.native
-  def getValueLabel(hasOption: Anon_Option_666053661): ReactNode = js.native
+  def getValueLabel(hasOption: Anon_Option_1721897024): ReactNode = js.native
   def handleBlur(event: Event): Unit = js.native
   def handleClick(event: MouseEvent): Unit = js.native
   def handleClick(event: TouchEvent): Unit = js.native

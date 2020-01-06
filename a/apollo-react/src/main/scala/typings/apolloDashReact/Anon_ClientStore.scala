@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_ClientStore extends js.Object {
   var client: default[
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for TCacheShape */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for TCacheShape */ _
   ]
   var store: Store[_, AnyAction]
 }
@@ -18,7 +18,7 @@ object Anon_ClientStore {
   @scala.inline
   def apply(
     client: default[
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for TCacheShape */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for TCacheShape */ _
     ],
     store: Store[_, AnyAction]
   ): Anon_ClientStore = {

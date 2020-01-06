@@ -20,18 +20,18 @@ import scala.scalajs.js.annotation._
 @js.native
 object libEsmCommonPositionMod extends js.Object {
   /* Rewritten from type alias, can be one of: 
-    - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.`top-right`
-    - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.bottom
-    - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.`right-bottom`
-    - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.left
-    - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.`top-left`
-    - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.`bottom-left`
-    - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.right
-    - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.top
-    - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.`left-top`
-    - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.`left-bottom`
-    - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.`bottom-right`
     - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.`right-top`
+    - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.`bottom-left`
+    - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.`left-top`
+    - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.right
+    - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.`left-bottom`
+    - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.`top-right`
+    - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.`top-left`
+    - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.left
+    - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.bottom
+    - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.`bottom-right`
+    - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.top
+    - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.`right-bottom`
   */
   trait Position extends js.Object
   

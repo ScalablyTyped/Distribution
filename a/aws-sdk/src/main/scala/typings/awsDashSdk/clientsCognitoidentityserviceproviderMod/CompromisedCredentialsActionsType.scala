@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CompromisedCredentialsActionsType extends js.Object {
   /**
     * The event action.
     */
-  var EventAction: CompromisedCredentialsEventActionType
+  var EventAction: CompromisedCredentialsEventActionType = js.native
 }
 
 object CompromisedCredentialsActionsType {

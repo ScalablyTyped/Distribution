@@ -7,35 +7,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ConnectionState extends js.Object {
   /**
     * The ID of the Data Catalog in which to create the connection. If none is supplied, the AWS account ID is used by default.
     */
-  val catalogId: js.UndefOr[Input[String]] = js.undefined
+  val catalogId: js.UndefOr[Input[String]] = js.native
   /**
     * A map of key-value pairs used as parameters for this connection.
     */
-  val connectionProperties: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val connectionProperties: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * The type of the connection. Defaults to `JBDC`.
     */
-  val connectionType: js.UndefOr[Input[String]] = js.undefined
+  val connectionType: js.UndefOr[Input[String]] = js.native
   /**
     * Description of the connection.
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * A list of criteria that can be used in selecting this connection.
     */
-  val matchCriterias: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val matchCriterias: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The name of the connection.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * A map of physical connection requirements, such as VPC and SecurityGroup. Defined below.
     */
-  val physicalConnectionRequirements: js.UndefOr[Input[ConnectionPhysicalConnectionRequirements]] = js.undefined
+  val physicalConnectionRequirements: js.UndefOr[Input[ConnectionPhysicalConnectionRequirements]] = js.native
 }
 
 object ConnectionState {

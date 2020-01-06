@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VirtualNodeSpecLogging extends js.Object {
   /**
     * The access log configuration for a virtual node.
     */
-  var accessLog: js.UndefOr[Input[VirtualNodeSpecLoggingAccessLog]] = js.undefined
+  var accessLog: js.UndefOr[Input[VirtualNodeSpecLoggingAccessLog]] = js.native
 }
 
 object VirtualNodeSpecLogging {

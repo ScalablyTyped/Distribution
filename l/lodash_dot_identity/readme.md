@@ -11,8 +11,8 @@ The modern build of lodash’s `_.identity` as a module.
 | Full name          | lodash.identity |
 | Keywords           | lodash, lodash-modularized, stdlib, util |
 | # releases         | 0 |
-| # dependents       | 55 |
-| # downloads        | 9810798 |
+| # dependents       | 60 |
+| # downloads        | 13404380 |
 | # stars            | 0 |
 
 ## Links

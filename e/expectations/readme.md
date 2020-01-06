@@ -12,7 +12,7 @@ jasmine-style 'expect' calls for mocha and other test frameworks
 | Keywords           | expect, mocha, jasmine, assertion |
 | # releases         | 2 |
 | # dependents       | 5 |
-| # downloads        | 10480 |
+| # downloads        | 7471 |
 | # stars            | 1 |
 
 ## Links

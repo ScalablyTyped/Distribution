@@ -10,9 +10,9 @@ Change log parser for node.
 | ------------------ | :-------------: |
 | Full name          | changelog-parser |
 | Keywords           | CHANGELOG.md, changelog, parser, semantic, semver, versioning |
-| # releases         | 10 |
-| # dependents       | 6 |
-| # downloads        | 110935 |
+| # releases         | 9 |
+| # dependents       | 7 |
+| # downloads        | 220534 |
 | # stars            | 2 |
 
 ## Links

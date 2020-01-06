@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InputSpecification extends js.Object {
   /**
     * Input codec
     */
-  var Codec: js.UndefOr[InputCodec] = js.undefined
+  var Codec: js.UndefOr[InputCodec] = js.native
   /**
     * Maximum input bitrate, categorized coarsely
     */
-  var MaximumBitrate: js.UndefOr[InputMaximumBitrate] = js.undefined
+  var MaximumBitrate: js.UndefOr[InputMaximumBitrate] = js.native
   /**
     * Input resolution, categorized coarsely
     */
-  var Resolution: js.UndefOr[InputResolution] = js.undefined
+  var Resolution: js.UndefOr[InputResolution] = js.native
 }
 
 object InputSpecification {

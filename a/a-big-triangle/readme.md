@@ -10,9 +10,9 @@ Draws a big triangle
 | ------------------ | :-------------: |
 | Full name          | a-big-triangle |
 | Keywords           | triangle, webgl, draw |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 27 |
-| # downloads        | 998522 |
+| # downloads        | 1765558 |
 | # stars            | 1 |
 
 ## Links

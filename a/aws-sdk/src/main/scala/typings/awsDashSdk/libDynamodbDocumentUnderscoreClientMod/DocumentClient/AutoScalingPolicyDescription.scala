@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AutoScalingPolicyDescription extends js.Object {
   /**
     * The name of the scaling policy.
     */
-  var PolicyName: js.UndefOr[AutoScalingPolicyName] = js.undefined
+  var PolicyName: js.UndefOr[AutoScalingPolicyName] = js.native
   /**
     * Represents a target tracking scaling policy configuration.
     */
-  var TargetTrackingScalingPolicyConfiguration: js.UndefOr[AutoScalingTargetTrackingScalingPolicyConfigurationDescription] = js.undefined
+  var TargetTrackingScalingPolicyConfiguration: js.UndefOr[AutoScalingTargetTrackingScalingPolicyConfigurationDescription] = js.native
 }
 
 object AutoScalingPolicyDescription {
@@ -22,8 +23,8 @@ object AutoScalingPolicyDescription {
     TargetTrackingScalingPolicyConfiguration: AutoScalingTargetTrackingScalingPolicyConfigurationDescription = null
   ): AutoScalingPolicyDescription = {
     val __obj = js.Dynamic.literal()
-    if (PolicyName != null) __obj.updateDynamic("PolicyName")(PolicyName)
-    if (TargetTrackingScalingPolicyConfiguration != null) __obj.updateDynamic("TargetTrackingScalingPolicyConfiguration")(TargetTrackingScalingPolicyConfiguration)
+    if (PolicyName != null) __obj.updateDynamic("PolicyName")(PolicyName.asInstanceOf[js.Any])
+    if (TargetTrackingScalingPolicyConfiguration != null) __obj.updateDynamic("TargetTrackingScalingPolicyConfiguration")(TargetTrackingScalingPolicyConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoScalingPolicyDescription]
   }
 }

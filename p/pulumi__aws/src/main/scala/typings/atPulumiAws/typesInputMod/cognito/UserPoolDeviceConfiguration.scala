@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UserPoolDeviceConfiguration extends js.Object {
   /**
     * Indicates whether a challenge is required on a new device. Only applicable to a new device.
     */
-  var challengeRequiredOnNewDevice: js.UndefOr[Input[Boolean]] = js.undefined
+  var challengeRequiredOnNewDevice: js.UndefOr[Input[Boolean]] = js.native
   /**
     * If true, a device is only remembered on user prompt.
     */
-  var deviceOnlyRememberedOnUserPrompt: js.UndefOr[Input[Boolean]] = js.undefined
+  var deviceOnlyRememberedOnUserPrompt: js.UndefOr[Input[Boolean]] = js.native
 }
 
 object UserPoolDeviceConfiguration {

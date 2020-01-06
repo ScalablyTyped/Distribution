@@ -9,9 +9,9 @@ Typings are for version 2.3.4
 | ------------------ | :-------------: |
 | Full name          | apollo-server-errors |
 | Keywords           | - |
-| # releases         | 19 |
-| # dependents       | 19 |
-| # downloads        | 6251940 |
+| # releases         | 27 |
+| # dependents       | 31 |
+| # downloads        | 22305509 |
 | # stars            | 0 |
 
 ## Links

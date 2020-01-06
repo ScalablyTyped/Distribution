@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ListRoutingProfilesResponse extends js.Object {
   /**
-    * A string returned in the response. Use the value returned in the response as the value of the NextToken in a subsequent request to retrieve the next set of results.
+    * If there are additional results, this is the token for the next set of results.
     */
-  var NextToken: js.UndefOr[typings.awsDashSdk.clientsConnectMod.NextToken] = js.undefined
+  var NextToken: js.UndefOr[typings.awsDashSdk.clientsConnectMod.NextToken] = js.native
   /**
-    * An array of RoutingProfileSummary objects that include the ARN, Id, and Name of the routing profile.
+    * Information about the routing profiles.
     */
-  var RoutingProfileSummaryList: js.UndefOr[typings.awsDashSdk.clientsConnectMod.RoutingProfileSummaryList] = js.undefined
+  var RoutingProfileSummaryList: js.UndefOr[typings.awsDashSdk.clientsConnectMod.RoutingProfileSummaryList] = js.native
 }
 
 object ListRoutingProfilesResponse {
   @scala.inline
   def apply(NextToken: NextToken = null, RoutingProfileSummaryList: RoutingProfileSummaryList = null): ListRoutingProfilesResponse = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
-    if (RoutingProfileSummaryList != null) __obj.updateDynamic("RoutingProfileSummaryList")(RoutingProfileSummaryList)
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
+    if (RoutingProfileSummaryList != null) __obj.updateDynamic("RoutingProfileSummaryList")(RoutingProfileSummaryList.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListRoutingProfilesResponse]
   }
 }

@@ -10,9 +10,9 @@ Minimal toolkit for building CLIs
 | ------------------ | :-------------: |
 | Full name          | args |
 | Keywords           | cli, command, arguments, util, bin, commander, nanomist |
-| # releases         | 17 |
-| # dependents       | 263 |
-| # downloads        | 4490887 |
+| # releases         | 4 |
+| # dependents       | 332 |
+| # downloads        | 7116198 |
 | # stars            | 14 |
 
 ## Links

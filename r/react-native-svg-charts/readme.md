@@ -10,9 +10,9 @@ Customizable charts (Line, Bar, Area, Pie, Circle, Progress) for React Native
 | ------------------ | :-------------: |
 | Full name          | react-native-svg-charts |
 | Keywords           | react-native, react-component, react-native-component, react, mobile, ios, android, vector, charts, chart, d3 |
-| # releases         | 49 |
-| # dependents       | 1 |
-| # downloads        | 218660 |
+| # releases         | 26 |
+| # dependents       | 6 |
+| # downloads        | 486700 |
 | # stars            | 0 |
 
 ## Links

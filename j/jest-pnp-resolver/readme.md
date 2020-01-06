@@ -11,8 +11,8 @@ plug'n'play resolver for Webpack
 | Full name          | jest-pnp-resolver |
 | Keywords           | jest, yarn, plugnplay, pnp |
 | # releases         | 9 |
-| # dependents       | 588 |
-| # downloads        | 69983897 |
+| # dependents       | 586 |
+| # downloads        | 108161068 |
 | # stars            | 0 |
 
 ## Links

@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DeploymentGroupEc2TagFilter extends js.Object {
   /**
     * The key of the tag filter.
     */
-  var key: js.UndefOr[Input[String]] = js.undefined
+  var key: js.UndefOr[Input[String]] = js.native
   /**
     * The type of the tag filter, either `KEY_ONLY`, `VALUE_ONLY`, or `KEY_AND_VALUE`.
     */
-  var `type`: js.UndefOr[Input[String]] = js.undefined
+  var `type`: js.UndefOr[Input[String]] = js.native
   /**
     * The value of the tag filter.
     */
-  var value: js.UndefOr[Input[String]] = js.undefined
+  var value: js.UndefOr[Input[String]] = js.native
 }
 
 object DeploymentGroupEc2TagFilter {

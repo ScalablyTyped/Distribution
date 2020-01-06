@@ -10,9 +10,9 @@ Run promise-returning & async functions concurrently with optional limited concu
 | ------------------ | :-------------: |
 | Full name          | p-all |
 | Keywords           | promise, all, function, func, fn, limited, limit, control, rate, collection, iterable, iterator, fulfilled, async, await, promises, concurrent, concurrently, concurrency, parallel, bluebird |
-| # releases         | 1 |
-| # dependents       | 46 |
-| # downloads        | 5121550 |
+| # releases         | 3 |
+| # dependents       | 71 |
+| # downloads        | 6118238 |
 | # stars            | 2 |
 
 ## Links

@@ -7,27 +7,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AcceleratorState extends js.Object {
   /**
     * The attributes of the accelerator. Fields documented below.
     */
-  val attributes: js.UndefOr[Input[AcceleratorAttributes]] = js.undefined
+  val attributes: js.UndefOr[Input[AcceleratorAttributes]] = js.native
   /**
     * Indicates whether the accelerator is enabled. The value is true or false. The default value is true.
     */
-  val enabled: js.UndefOr[Input[Boolean]] = js.undefined
+  val enabled: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The value for the address type must be `IPV4`.
     */
-  val ipAddressType: js.UndefOr[Input[String]] = js.undefined
+  val ipAddressType: js.UndefOr[Input[String]] = js.native
   /**
     * IP address set associated with the accelerator.
     */
-  val ipSets: js.UndefOr[Input[js.Array[Input[AcceleratorIpSet]]]] = js.undefined
+  val ipSets: js.UndefOr[Input[js.Array[Input[AcceleratorIpSet]]]] = js.native
   /**
     * The name of the accelerator.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
 }
 
 object AcceleratorState {

@@ -10,9 +10,9 @@ AWS IoT Node.js SDK for Embedded Devices
 | ------------------ | :-------------: |
 | Full name          | aws-iot-device-sdk |
 | Keywords           | api, amazon, aws, iot, mqtt |
-| # releases         | 6 |
-| # dependents       | 49 |
-| # downloads        | 595905 |
+| # releases         | 2 |
+| # dependents       | 59 |
+| # downloads        | 1036042 |
 | # stars            | 4 |
 
 ## Links

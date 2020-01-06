@@ -12,7 +12,7 @@ A very fast HTML parser, generating a simplified DOM, with basic element query s
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 26 |
-| # downloads        | 56310 |
+| # downloads        | 119784 |
 | # stars            | 9 |
 
 ## Links

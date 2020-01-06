@@ -10,9 +10,9 @@ Easily read/write JSON files.
 | ------------------ | :-------------: |
 | Full name          | jsonfile |
 | Keywords           | read, write, file, json, fs, fs-extra |
-| # releases         | 5 |
-| # dependents       | 1573 |
-| # downloads        | 361955898 |
+| # releases         | 2 |
+| # dependents       | 1718 |
+| # downloads        | 538165174 |
 | # stars            | 154 |
 
 ## Links

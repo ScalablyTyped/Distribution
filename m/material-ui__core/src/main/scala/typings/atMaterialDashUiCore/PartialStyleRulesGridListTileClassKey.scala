@@ -6,11 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/GridListTile.GridListTileClassKey>> */
+@js.native
 trait PartialStyleRulesGridListTileClassKey extends js.Object {
-  var imgFullHeight: js.UndefOr[CSSProperties] = js.undefined
-  var imgFullWidth: js.UndefOr[CSSProperties] = js.undefined
-  var root: js.UndefOr[CSSProperties] = js.undefined
-  var tile: js.UndefOr[CSSProperties] = js.undefined
+  var imgFullHeight: js.UndefOr[CSSProperties] = js.native
+  var imgFullWidth: js.UndefOr[CSSProperties] = js.native
+  var root: js.UndefOr[CSSProperties] = js.native
+  var tile: js.UndefOr[CSSProperties] = js.native
 }
 
 object PartialStyleRulesGridListTileClassKey {

@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AnalyticsApplicationInputsSchemaRecordFormatMappingParametersJson extends js.Object {
-  var recordRowPath: Input[String]
+  var recordRowPath: Input[String] = js.native
 }
 
 object AnalyticsApplicationInputsSchemaRecordFormatMappingParametersJson {

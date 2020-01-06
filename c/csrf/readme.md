@@ -10,9 +10,9 @@ primary logic behind csrf tokens
 | ------------------ | :-------------: |
 | Full name          | csrf |
 | Keywords           | csrf, tokens |
-| # releases         | 0 |
-| # dependents       | 53 |
-| # downloads        | 12373063 |
+| # releases         | 2 |
+| # dependents       | 60 |
+| # downloads        | 12583288 |
 | # stars            | 25 |
 
 ## Links

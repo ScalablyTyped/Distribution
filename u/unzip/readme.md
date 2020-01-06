@@ -11,8 +11,8 @@ Unzip cross-platform streaming API compatible with fstream and fs.ReadStream
 | Full name          | unzip |
 | Keywords           | zip, unzip, zlib, uncompress, archive, stream, extract |
 | # releases         | 1 |
-| # dependents       | 731 |
-| # downloads        | 7130844 |
+| # dependents       | 738 |
+| # downloads        | 5759068 |
 | # stars            | 36 |
 
 ## Links

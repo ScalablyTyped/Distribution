@@ -4,39 +4,40 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CPUUtilization extends js.Object {
   /**
     * Available on Linux environments only. Percentage of time that the CPU has spent in the I/O Wait state over the last 10 seconds.
     */
-  var IOWait: js.UndefOr[NullableDouble] = js.undefined
+  var IOWait: js.UndefOr[NullableDouble] = js.native
   /**
     * Available on Linux environments only. Percentage of time that the CPU has spent in the IRQ state over the last 10 seconds.
     */
-  var IRQ: js.UndefOr[NullableDouble] = js.undefined
+  var IRQ: js.UndefOr[NullableDouble] = js.native
   /**
     * Percentage of time that the CPU has spent in the Idle state over the last 10 seconds.
     */
-  var Idle: js.UndefOr[NullableDouble] = js.undefined
+  var Idle: js.UndefOr[NullableDouble] = js.native
   /**
     * Available on Linux environments only. Percentage of time that the CPU has spent in the Nice state over the last 10 seconds.
     */
-  var Nice: js.UndefOr[NullableDouble] = js.undefined
+  var Nice: js.UndefOr[NullableDouble] = js.native
   /**
     * Available on Windows environments only. Percentage of time that the CPU has spent in the Privileged state over the last 10 seconds.
     */
-  var Privileged: js.UndefOr[NullableDouble] = js.undefined
+  var Privileged: js.UndefOr[NullableDouble] = js.native
   /**
     * Available on Linux environments only. Percentage of time that the CPU has spent in the SoftIRQ state over the last 10 seconds.
     */
-  var SoftIRQ: js.UndefOr[NullableDouble] = js.undefined
+  var SoftIRQ: js.UndefOr[NullableDouble] = js.native
   /**
     * Available on Linux environments only. Percentage of time that the CPU has spent in the System state over the last 10 seconds.
     */
-  var System: js.UndefOr[NullableDouble] = js.undefined
+  var System: js.UndefOr[NullableDouble] = js.native
   /**
     * Percentage of time that the CPU has spent in the User state over the last 10 seconds.
     */
-  var User: js.UndefOr[NullableDouble] = js.undefined
+  var User: js.UndefOr[NullableDouble] = js.native
 }
 
 object CPUUtilization {

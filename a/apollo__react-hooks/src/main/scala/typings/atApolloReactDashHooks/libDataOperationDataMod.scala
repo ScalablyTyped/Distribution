@@ -22,11 +22,11 @@ object libDataOperationDataMod extends js.Object {
     var options: js.Any = js.native
     var previousOptions: CommonOptions[TOptions] = js.native
     def afterExecute(
-      /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
     ): Unit | js.Function0[Unit] = js.native
     def cleanup(): Unit = js.native
     def execute(
-      /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
     ): js.Any = js.native
     def getOptions(): CommonOptions[TOptions] = js.native
     /* protected */ def refreshClient(): Anon_Client = js.native

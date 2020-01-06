@@ -10,9 +10,9 @@ Event handler written in Typescript.
 | ------------------ | :-------------: |
 | Full name          | typescript-event-handler |
 | Keywords           | Typescript, Events |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 545 |
+| # downloads        | 523 |
 | # stars            | 0 |
 
 ## Links

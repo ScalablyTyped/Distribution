@@ -6,13 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/Badge.BadgeClassKey>> */
+@js.native
 trait PartialStyleRulesBadgeClassKey extends js.Object {
-  var badge: js.UndefOr[CSSProperties] = js.undefined
-  var colorPrimary: js.UndefOr[CSSProperties] = js.undefined
-  var colorSecondary: js.UndefOr[CSSProperties] = js.undefined
-  var dot: js.UndefOr[CSSProperties] = js.undefined
-  var invisible: js.UndefOr[CSSProperties] = js.undefined
-  var root: js.UndefOr[CSSProperties] = js.undefined
+  var badge: js.UndefOr[CSSProperties] = js.native
+  var colorPrimary: js.UndefOr[CSSProperties] = js.native
+  var colorSecondary: js.UndefOr[CSSProperties] = js.native
+  var dot: js.UndefOr[CSSProperties] = js.native
+  var invisible: js.UndefOr[CSSProperties] = js.native
+  var root: js.UndefOr[CSSProperties] = js.native
 }
 
 object PartialStyleRulesBadgeClassKey {

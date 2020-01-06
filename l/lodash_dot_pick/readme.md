@@ -11,8 +11,8 @@ The lodash method `_.pick` exported as a module.
 | Full name          | lodash.pick |
 | Keywords           | lodash-modularized, pick |
 | # releases         | 0 |
-| # dependents       | 564 |
-| # downloads        | 70406191 |
+| # dependents       | 683 |
+| # downloads        | 76043818 |
 | # stars            | 3 |
 
 ## Links

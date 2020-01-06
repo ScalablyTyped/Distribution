@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait FetchQueue
   extends Array[
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for T */ js.Any
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for T */ js.Any
     ] {
   def add(queueItem: QueueItem): Unit = js.native
   def add(queueItem: QueueItem, force: Boolean): Unit = js.native

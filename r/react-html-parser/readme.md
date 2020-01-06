@@ -10,9 +10,9 @@ Parse HTML into React components
 | ------------------ | :-------------: |
 | Full name          | react-html-parser |
 | Keywords           | react, html, htmlparser, htmlparser2, inner html, dangerouslySetInnerHTML |
-| # releases         | 4 |
-| # dependents       | 64 |
-| # downloads        | 1723594 |
+| # releases         | 2 |
+| # dependents       | 101 |
+| # downloads        | 3002838 |
 | # stars            | 6 |
 
 ## Links

@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OrganizationalUnitArgs extends js.Object {
   /**
     * The name for the organizational unit
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * ID of the parent organizational unit, which may be the root
     */
-  val parentId: Input[String]
+  val parentId: Input[String] = js.native
 }
 
 object OrganizationalUnitArgs {

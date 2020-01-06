@@ -8,35 +8,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EventDestinationArgs extends js.Object {
   /**
     * CloudWatch destination for the events
     */
-  val cloudwatchDestinations: js.UndefOr[Input[js.Array[Input[EventDestinationCloudwatchDestination]]]] = js.undefined
+  val cloudwatchDestinations: js.UndefOr[Input[js.Array[Input[EventDestinationCloudwatchDestination]]]] = js.native
   /**
     * The name of the configuration set
     */
-  val configurationSetName: Input[String]
+  val configurationSetName: Input[String] = js.native
   /**
     * If true, the event destination will be enabled
     */
-  val enabled: js.UndefOr[Input[Boolean]] = js.undefined
+  val enabled: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Send the events to a kinesis firehose destination
     */
-  val kinesisDestination: js.UndefOr[Input[EventDestinationKinesisDestination]] = js.undefined
+  val kinesisDestination: js.UndefOr[Input[EventDestinationKinesisDestination]] = js.native
   /**
     * A list of matching types. May be any of `"send"`, `"reject"`, `"bounce"`, `"complaint"`, `"delivery"`, `"open"`, `"click"`, or `"renderingFailure"`.
     */
-  val matchingTypes: Input[js.Array[Input[String]]]
+  val matchingTypes: Input[js.Array[Input[String]]] = js.native
   /**
     * The name of the event destination
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * Send the events to an SNS Topic destination
     */
-  val snsDestination: js.UndefOr[Input[EventDestinationSnsDestination]] = js.undefined
+  val snsDestination: js.UndefOr[Input[EventDestinationSnsDestination]] = js.native
 }
 
 object EventDestinationArgs {

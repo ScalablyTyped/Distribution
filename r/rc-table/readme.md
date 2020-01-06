@@ -10,9 +10,9 @@ table ui component for react
 | ------------------ | :-------------: |
 | Full name          | rc-table |
 | Keywords           | react, react-table, table, component, ui |
-| # releases         | 61 |
-| # dependents       | 200 |
-| # downloads        | 9546254 |
+| # releases         | 93 |
+| # dependents       | 234 |
+| # downloads        | 11135466 |
 | # stars            | 2 |
 
 ## Links

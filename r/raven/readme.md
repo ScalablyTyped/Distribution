@@ -10,9 +10,9 @@ A standalone (Node.js) client for Sentry
 | ------------------ | :-------------: |
 | Full name          | raven |
 | Keywords           | debugging, errors, exceptions, logging, raven, sentry |
-| # releases         | 19 |
-| # dependents       | 331 |
-| # downloads        | 22914164 |
+| # releases         | 10 |
+| # dependents       | 351 |
+| # downloads        | 29733250 |
 | # stars            | 17 |
 
 ## Links

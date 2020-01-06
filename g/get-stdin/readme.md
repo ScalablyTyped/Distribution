@@ -10,9 +10,9 @@ Get stdin as a string or buffer
 | ------------------ | :-------------: |
 | Full name          | get-stdin |
 | Keywords           | std, stdin, stdio, concat, buffer, stream, process, read |
-| # releases         | 1 |
-| # dependents       | 647 |
-| # downloads        | 314512060 |
+| # releases         | 3 |
+| # dependents       | 746 |
+| # downloads        | 473880910 |
 | # stars            | 8 |
 
 ## Links

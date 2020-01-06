@@ -10,9 +10,9 @@ Drag and drop SVG, HTML or Canvas using mouse or touch input.
 | ------------------ | :-------------: |
 | Full name          | d3-drag |
 | Keywords           | d3, d3-module, drag, behavior, interaction |
-| # releases         | 7 |
-| # dependents       | 78 |
-| # downloads        | 14487615 |
+| # releases         | 5 |
+| # dependents       | 91 |
+| # downloads        | 23677096 |
 | # stars            | 0 |
 
 ## Links

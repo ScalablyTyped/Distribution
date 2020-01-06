@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RouteSpecHttpRoute extends js.Object {
   /**
     * The action to take if a match is determined.
     */
-  var action: Input[RouteSpecHttpRouteAction]
+  var action: Input[RouteSpecHttpRouteAction] = js.native
   /**
     * The criteria for determining an HTTP request match.
     */
-  var `match`: Input[RouteSpecHttpRouteMatch]
+  var `match`: Input[RouteSpecHttpRouteMatch] = js.native
 }
 
 object RouteSpecHttpRoute {

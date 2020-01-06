@@ -1,5 +1,6 @@
 package typings.next
 
+import typings.next.distLibCheckDashCustomDashRoutesMod.RouteType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,6 +19,9 @@ object nextStrings {
   sealed trait events extends js.Object
   
   @js.native
+  sealed trait header extends RouteType
+  
+  @js.native
   sealed trait hybrid extends js.Object
   
   @js.native
@@ -30,7 +34,7 @@ object nextStrings {
   sealed trait push extends js.Object
   
   @js.native
-  sealed trait redirect extends js.Object
+  sealed trait redirect extends RouteType
   
   @js.native
   sealed trait reload extends js.Object
@@ -39,7 +43,7 @@ object nextStrings {
   sealed trait replace extends js.Object
   
   @js.native
-  sealed trait rewrite extends js.Object
+  sealed trait rewrite extends RouteType
   
   @js.native
   sealed trait staticMarkup extends js.Object
@@ -55,6 +59,8 @@ object nextStrings {
   def development: development = "development".asInstanceOf[development]
   @scala.inline
   def events: events = "events".asInstanceOf[events]
+  @scala.inline
+  def header: header = "header".asInstanceOf[header]
   @scala.inline
   def hybrid: hybrid = "hybrid".asInstanceOf[hybrid]
   @scala.inline

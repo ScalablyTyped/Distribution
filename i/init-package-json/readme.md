@@ -10,9 +10,9 @@ A node module to get your node module started
 | ------------------ | :-------------: |
 | Full name          | init-package-json |
 | Keywords           | init, package.json, package, helper, wizard, wizerd, prompt, start |
-| # releases         | 3 |
-| # dependents       | 90 |
-| # downloads        | 18182007 |
+| # releases         | 2 |
+| # dependents       | 100 |
+| # downloads        | 32562345 |
 | # stars            | 2 |
 
 ## Links

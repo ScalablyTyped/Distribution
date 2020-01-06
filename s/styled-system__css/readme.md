@@ -10,9 +10,9 @@ Styled System for the `css` prop
 | ------------------ | :-------------: |
 | Full name          | @styled-system/css |
 | Keywords           | css, css-in-js, emotion, styled-components, style, react |
-| # releases         | 31 |
-| # dependents       | 8 |
-| # downloads        | 24384 |
+| # releases         | 43 |
+| # dependents       | 53 |
+| # downloads        | 1715548 |
 | # stars            | 0 |
 
 ## Links

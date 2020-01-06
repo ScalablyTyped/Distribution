@@ -10,9 +10,9 @@ Run JXAcode and get the result
 | ------------------ | :-------------: |
 | Full name          | run-jxa |
 | Keywords           | macos, jxa, javascript, osascript, run, mac, execute, code, script, automation |
-| # releases         | 1 |
-| # dependents       | 11 |
-| # downloads        | 4423 |
+| # releases         | 2 |
+| # dependents       | 12 |
+| # downloads        | 5448 |
 | # stars            | 0 |
 
 ## Links

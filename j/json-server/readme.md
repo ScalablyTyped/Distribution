@@ -10,9 +10,9 @@ Serves JSON files through REST routes.
 | ------------------ | :-------------: |
 | Full name          | json-server |
 | Keywords           | JSON, server, fake, REST, API, prototyping, mock, mocking, test, testing, rest, data, dummy, sandbox |
-| # releases         | 15 |
-| # dependents       | 94 |
-| # downloads        | 3225198 |
+| # releases         | 8 |
+| # dependents       | 130 |
+| # downloads        | 5048365 |
 | # stars            | 181 |
 
 ## Links

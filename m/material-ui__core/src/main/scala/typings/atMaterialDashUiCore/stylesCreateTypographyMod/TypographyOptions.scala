@@ -8,35 +8,36 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined parent std.Partial<std.Record<@material-ui/core.@material-ui/core/styles/createTypography.ThemeStyle, @material-ui/core.@material-ui/core/styles/createTypography.TypographyStyleOptions> & @material-ui/core.@material-ui/core/styles/createTypography.FontStyleOptions> */
+@js.native
 trait TypographyOptions extends js.Object {
-  var allVariants: js.UndefOr[CSSProperties] = js.undefined
-  var body1: js.UndefOr[TypographyStyleOptions] = js.undefined
-  var body2: js.UndefOr[TypographyStyleOptions] = js.undefined
-  var button: js.UndefOr[TypographyStyleOptions] = js.undefined
-  var caption: js.UndefOr[TypographyStyleOptions] = js.undefined
-  var display1: js.UndefOr[TypographyStyleOptions] = js.undefined
-  var display2: js.UndefOr[TypographyStyleOptions] = js.undefined
-  var display3: js.UndefOr[TypographyStyleOptions] = js.undefined
-  var display4: js.UndefOr[TypographyStyleOptions] = js.undefined
-  var fontFamily: js.UndefOr[FontFamilyProperty] = js.undefined
-  var fontSize: js.UndefOr[Double] = js.undefined
-  var fontWeightLight: js.UndefOr[FontWeightProperty] = js.undefined
-  var fontWeightMedium: js.UndefOr[FontWeightProperty] = js.undefined
-  var fontWeightRegular: js.UndefOr[FontWeightProperty] = js.undefined
-  var h1: js.UndefOr[TypographyStyleOptions] = js.undefined
-  var h2: js.UndefOr[TypographyStyleOptions] = js.undefined
-  var h3: js.UndefOr[TypographyStyleOptions] = js.undefined
-  var h4: js.UndefOr[TypographyStyleOptions] = js.undefined
-  var h5: js.UndefOr[TypographyStyleOptions] = js.undefined
-  var h6: js.UndefOr[TypographyStyleOptions] = js.undefined
-  var headline: js.UndefOr[TypographyStyleOptions] = js.undefined
-  var htmlFontSize: js.UndefOr[Double] = js.undefined
-  var overline: js.UndefOr[TypographyStyleOptions] = js.undefined
-  var subheading: js.UndefOr[TypographyStyleOptions] = js.undefined
-  var subtitle1: js.UndefOr[TypographyStyleOptions] = js.undefined
-  var subtitle2: js.UndefOr[TypographyStyleOptions] = js.undefined
-  var title: js.UndefOr[TypographyStyleOptions] = js.undefined
-  var useNextVariants: js.UndefOr[Boolean] = js.undefined
+  var allVariants: js.UndefOr[CSSProperties] = js.native
+  var body1: js.UndefOr[TypographyStyleOptions] = js.native
+  var body2: js.UndefOr[TypographyStyleOptions] = js.native
+  var button: js.UndefOr[TypographyStyleOptions] = js.native
+  var caption: js.UndefOr[TypographyStyleOptions] = js.native
+  var display1: js.UndefOr[TypographyStyleOptions] = js.native
+  var display2: js.UndefOr[TypographyStyleOptions] = js.native
+  var display3: js.UndefOr[TypographyStyleOptions] = js.native
+  var display4: js.UndefOr[TypographyStyleOptions] = js.native
+  var fontFamily: js.UndefOr[FontFamilyProperty] = js.native
+  var fontSize: js.UndefOr[Double] = js.native
+  var fontWeightLight: js.UndefOr[FontWeightProperty] = js.native
+  var fontWeightMedium: js.UndefOr[FontWeightProperty] = js.native
+  var fontWeightRegular: js.UndefOr[FontWeightProperty] = js.native
+  var h1: js.UndefOr[TypographyStyleOptions] = js.native
+  var h2: js.UndefOr[TypographyStyleOptions] = js.native
+  var h3: js.UndefOr[TypographyStyleOptions] = js.native
+  var h4: js.UndefOr[TypographyStyleOptions] = js.native
+  var h5: js.UndefOr[TypographyStyleOptions] = js.native
+  var h6: js.UndefOr[TypographyStyleOptions] = js.native
+  var headline: js.UndefOr[TypographyStyleOptions] = js.native
+  var htmlFontSize: js.UndefOr[Double] = js.native
+  var overline: js.UndefOr[TypographyStyleOptions] = js.native
+  var subheading: js.UndefOr[TypographyStyleOptions] = js.native
+  var subtitle1: js.UndefOr[TypographyStyleOptions] = js.native
+  var subtitle2: js.UndefOr[TypographyStyleOptions] = js.native
+  var title: js.UndefOr[TypographyStyleOptions] = js.native
+  var useNextVariants: js.UndefOr[Boolean] = js.native
 }
 
 object TypographyOptions {

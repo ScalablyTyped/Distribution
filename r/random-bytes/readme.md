@@ -11,8 +11,8 @@ URL and cookie safe UIDs
 | Full name          | random-bytes |
 | Keywords           | bytes, generator, random, safe |
 | # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 31857873 |
+| # dependents       | 6 |
+| # downloads        | 34879723 |
 | # stars            | 2 |
 
 ## Links

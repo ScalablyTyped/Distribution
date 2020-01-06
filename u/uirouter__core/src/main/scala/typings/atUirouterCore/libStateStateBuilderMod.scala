@@ -44,7 +44,7 @@ object libStateStateBuilderMod extends js.Object {
   type BuilderFunction = js.Function2[
     /* state */ StateObject, 
     /* parent */ js.UndefOr[
-      /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias @uirouter/core.@uirouter/core/lib/state/stateBuilder.BuilderFunction */ js.Object
+      /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @uirouter/core.@uirouter/core/lib/state/stateBuilder.BuilderFunction */ js.Object
     ], 
     js.Any
   ]

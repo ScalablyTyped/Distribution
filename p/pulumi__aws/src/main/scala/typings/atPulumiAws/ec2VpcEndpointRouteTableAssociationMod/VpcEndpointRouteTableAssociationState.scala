@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VpcEndpointRouteTableAssociationState extends js.Object {
   /**
     * Identifier of the EC2 Route Table to be associated with the VPC Endpoint.
     */
-  val routeTableId: js.UndefOr[Input[String]] = js.undefined
+  val routeTableId: js.UndefOr[Input[String]] = js.native
   /**
     * Identifier of the VPC Endpoint with which the EC2 Route Table will be associated.
     */
-  val vpcEndpointId: js.UndefOr[Input[String]] = js.undefined
+  val vpcEndpointId: js.UndefOr[Input[String]] = js.native
 }
 
 object VpcEndpointRouteTableAssociationState {

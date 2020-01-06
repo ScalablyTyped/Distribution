@@ -11,8 +11,8 @@ Prevent defined property getters from throwing errors
 | Full name          | safe-json-stringify |
 | Keywords           | - |
 | # releases         | 3 |
-| # dependents       | 71 |
-| # downloads        | 28049078 |
+| # dependents       | 77 |
+| # downloads        | 37008190 |
 | # stars            | 1 |
 
 ## Links

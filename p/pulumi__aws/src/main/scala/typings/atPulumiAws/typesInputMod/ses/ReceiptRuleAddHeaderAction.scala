@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ReceiptRuleAddHeaderAction extends js.Object {
   /**
     * The name of the header to add
     */
-  var headerName: Input[String]
+  var headerName: Input[String] = js.native
   /**
     * The value of the header to add
     */
-  var headerValue: Input[String]
+  var headerValue: Input[String] = js.native
   /**
     * The position of the action in the receipt rule
     */
-  var position: Input[Double]
+  var position: Input[Double] = js.native
 }
 
 object ReceiptRuleAddHeaderAction {

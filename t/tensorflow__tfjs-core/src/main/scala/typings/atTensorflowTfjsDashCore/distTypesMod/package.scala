@@ -10,7 +10,7 @@ package object distTypesMod {
   import typings.std.Uint8Array
 
   type BackendValues = Float32Array | Int32Array | Uint8Array | js.Array[Uint8Array]
-  type DataValues = js.Array[String] | Int32Array | Float32Array | Uint8Array
+  type DataValues = js.Array[String] | Float32Array | Int32Array | Uint8Array
   type FlatVector = (js.Array[Boolean | Double]) | TypedArray
   type RegularArray[T] = js.Array[(js.Array[(js.Array[(js.Array[(js.Array[js.Array[T] | T]) | T]) | T]) | T]) | T]
   type ScalarLike = Double | Boolean | String | Uint8Array

@@ -11,8 +11,8 @@ HTTP Bearer authentication strategy for Passport.
 | Full name          | passport-http-bearer |
 | Keywords           | passport, auth, authn, authentication, authz, authorization, http, bearer, token, oauth |
 | # releases         | 1 |
-| # dependents       | 241 |
-| # downloads        | 2916904 |
+| # dependents       | 263 |
+| # downloads        | 4009398 |
 | # stars            | 20 |
 
 ## Links

@@ -11,8 +11,8 @@ Escape LaTeX special characters with Javascript
 | Full name          | escape-latex |
 | Keywords           | latex, escape |
 | # releases         | 11 |
-| # dependents       | 11 |
-| # downloads        | 2949473 |
+| # dependents       | 12 |
+| # downloads        | 5506129 |
 | # stars            | 0 |
 
 ## Links

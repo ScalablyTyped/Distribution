@@ -10,9 +10,9 @@ Microsoft Application Insights module for Node.js
 | ------------------ | :-------------: |
 | Full name          | applicationinsights |
 | Keywords           | exception monitoring, request monitoring, performance monitoring, application insights, microsoft, azure, cloud, tracing, telemetry, analytics, apm |
-| # releases         | 17 |
-| # dependents       | 63 |
-| # downloads        | 2042217 |
+| # releases         | 18 |
+| # dependents       | 98 |
+| # downloads        | 3945872 |
 | # stars            | 11 |
 
 ## Links

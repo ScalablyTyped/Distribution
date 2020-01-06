@@ -4,25 +4,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Resource extends js.Object {
   /**
     * The resource ID, used to refer to a resource in the Lambda function configuration. Max length is 128 characters with pattern ''[a-zA-Z0-9:_-]+''. This must be unique within a Greengrass group.
     */
-  var Id: __string
+  var Id: __string = js.native
   /**
     * The descriptive resource name, which is displayed on the AWS IoT Greengrass console. Max length 128 characters with pattern ''[a-zA-Z0-9:_-]+''. This must be unique within a Greengrass group.
     */
-  var Name: __string
+  var Name: __string = js.native
   /**
     * A container of data for all resource types.
     */
-  var ResourceDataContainer: typings.awsDashSdk.clientsGreengrassMod.ResourceDataContainer
+  var ResourceDataContainer: typings.awsDashSdk.clientsGreengrassMod.ResourceDataContainer = js.native
 }
 
 object Resource {
   @scala.inline
   def apply(Id: __string, Name: __string, ResourceDataContainer: ResourceDataContainer): Resource = {
-    val __obj = js.Dynamic.literal(Id = Id, Name = Name, ResourceDataContainer = ResourceDataContainer)
+    val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], ResourceDataContainer = ResourceDataContainer.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Resource]
   }

@@ -4,16 +4,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetTargetGroupHealthCheck extends js.Object {
-  var enabled: Boolean
-  var healthyThreshold: Double
-  var interval: Double
-  var matcher: String
-  var path: String
-  var port: String
-  var protocol: String
-  var timeout: Double
-  var unhealthyThreshold: Double
+  var enabled: Boolean = js.native
+  var healthyThreshold: Double = js.native
+  var interval: Double = js.native
+  var matcher: String = js.native
+  var path: String = js.native
+  var port: String = js.native
+  var protocol: String = js.native
+  var timeout: Double = js.native
+  var unhealthyThreshold: Double = js.native
 }
 
 object GetTargetGroupHealthCheck {
@@ -29,7 +30,7 @@ object GetTargetGroupHealthCheck {
     timeout: Double,
     unhealthyThreshold: Double
   ): GetTargetGroupHealthCheck = {
-    val __obj = js.Dynamic.literal(enabled = enabled, healthyThreshold = healthyThreshold, interval = interval, matcher = matcher, path = path, port = port, protocol = protocol, timeout = timeout, unhealthyThreshold = unhealthyThreshold)
+    val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], healthyThreshold = healthyThreshold.asInstanceOf[js.Any], interval = interval.asInstanceOf[js.Any], matcher = matcher.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any], unhealthyThreshold = unhealthyThreshold.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetTargetGroupHealthCheck]
   }

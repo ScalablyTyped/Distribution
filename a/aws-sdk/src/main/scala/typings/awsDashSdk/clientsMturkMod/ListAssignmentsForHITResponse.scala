@@ -4,16 +4,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ListAssignmentsForHITResponse extends js.Object {
   /**
     *  The collection of Assignment data structures returned by this call.
     */
-  var Assignments: js.UndefOr[AssignmentList] = js.undefined
-  var NextToken: js.UndefOr[PaginationToken] = js.undefined
+  var Assignments: js.UndefOr[AssignmentList] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.native
   /**
     *  The number of assignments on the page in the filtered results list, equivalent to the number of assignments returned by this call.
     */
-  var NumResults: js.UndefOr[Integer] = js.undefined
+  var NumResults: js.UndefOr[Integer] = js.native
 }
 
 object ListAssignmentsForHITResponse {
@@ -24,8 +25,8 @@ object ListAssignmentsForHITResponse {
     NumResults: Int | Double = null
   ): ListAssignmentsForHITResponse = {
     val __obj = js.Dynamic.literal()
-    if (Assignments != null) __obj.updateDynamic("Assignments")(Assignments)
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
+    if (Assignments != null) __obj.updateDynamic("Assignments")(Assignments.asInstanceOf[js.Any])
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (NumResults != null) __obj.updateDynamic("NumResults")(NumResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAssignmentsForHITResponse]
   }

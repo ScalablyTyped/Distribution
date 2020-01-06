@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VirtualNodeStatus extends js.Object {
   /**
     * The current status of the virtual node.
     */
-  var status: VirtualNodeStatusCode
+  var status: VirtualNodeStatusCode = js.native
 }
 
 object VirtualNodeStatus {

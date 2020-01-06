@@ -9,9 +9,9 @@ Functions that surround a string with ansicolor codes so it prints in color.
 | ------------------ | :-------------: |
 | Full name          | ansicolors |
 | Keywords           | ansi, colors, highlight, string |
-| # releases         | 1 |
-| # dependents       | 106 |
-| # downloads        | 42143759 |
+| # releases         | 0 |
+| # dependents       | 118 |
+| # downloads        | 64293121 |
 | # stars            | 4 |
 
 ## Links

@@ -11,7 +11,7 @@ Lightweight helper library for modern browsers.
 | Keywords           | DOM, Events, Ajax, Promises, OOP, ES5 |
 | # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 3139 |
+| # downloads        | 5995 |
 | # stars            | 2 |
 
 ## Links

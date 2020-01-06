@@ -10,9 +10,9 @@ Display images in iTerm
 | ------------------ | :-------------: |
 | Full name          | term-img |
 | Keywords           | term, image, iterm, iterm2, terminal, shell, console, command-line, img, pic, picture, photo, app, version, ansi, escape, gif, gifs, jpg, jpeg |
-| # releases         | 6 |
-| # dependents       | 145 |
-| # downloads        | 555557 |
+| # releases         | 4 |
+| # dependents       | 158 |
+| # downloads        | 1134188 |
 | # stars            | 2 |
 
 ## Links

@@ -15,7 +15,7 @@ class ErrorFactory[ErrorCode /* <: String */, ErrorParams /* <: /* import warnin
   val serviceName: js.Any = js.native
   def create[K /* <: ErrorCode */](
     code: K,
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param data because its type K extends keyof ErrorParams ? [ErrorParams[K]] : [] is not an array type */ data: js.Array[js.Any]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param data because its type K extends keyof ErrorParams ? [ErrorParams[K]] : [] is not an array type */ data: js.Array[js.Any]
   ): FirebaseError = js.native
 }
 

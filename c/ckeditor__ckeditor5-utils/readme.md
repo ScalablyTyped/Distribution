@@ -10,14 +10,14 @@ Miscellaneous utils used by CKEditor 5.
 | ------------------ | :-------------: |
 | Full name          | @ckeditor/ckeditor5-utils |
 | Keywords           | ckeditor, ckeditor5, ckeditor 5, ckeditor5-lib |
-| # releases         | 14 |
-| # dependents       | 42 |
-| # downloads        | 945888 |
+| # releases         | 18 |
+| # dependents       | 63 |
+| # downloads        | 1046323 |
 | # stars            | 0 |
 
 ## Links
 - [Homepage](https://ckeditor.com/ckeditor-5)
-- [Bugs](https://github.com/ckeditor/ckeditor5-utils/issues)
+- [Bugs](https://github.com/ckeditor/ckeditor5/issues)
 - [Repository](https://github.com/ckeditor/ckeditor5-utils)
 - [Npm](https://www.npmjs.com/package/%40ckeditor%2Fckeditor5-utils)
     

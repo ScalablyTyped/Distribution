@@ -11,8 +11,8 @@ Stub transport for Nodemailer
 | Full name          | nodemailer-stub-transport |
 | Keywords           | Stub, Nodemailer |
 | # releases         | 0 |
-| # dependents       | 48 |
-| # downloads        | 1753006 |
+| # dependents       | 50 |
+| # downloads        | 1797125 |
 | # stars            | 1 |
 
 ## Links

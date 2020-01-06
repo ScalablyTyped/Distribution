@@ -10,9 +10,9 @@ Bootstrap 3 Typeahead: The typeahead autocomplete plugin for Twitter's Bootstrap
 | ------------------ | :-------------: |
 | Full name          | bootstrap-3-typeahead |
 | Keywords           | typeahead, autocomplete, plugin, jquery, bootstrap |
-| # releases         | 1 |
-| # dependents       | 5 |
-| # downloads        | 220318 |
+| # releases         | 0 |
+| # dependents       | 6 |
+| # downloads        | 375771 |
 | # stars            | 3 |
 
 ## Links

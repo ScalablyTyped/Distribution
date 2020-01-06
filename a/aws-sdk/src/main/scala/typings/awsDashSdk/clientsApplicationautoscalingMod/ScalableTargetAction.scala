@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ScalableTargetAction extends js.Object {
   /**
     * The maximum capacity.
     */
-  var MaxCapacity: js.UndefOr[ResourceCapacity] = js.undefined
+  var MaxCapacity: js.UndefOr[ResourceCapacity] = js.native
   /**
     * The minimum capacity.
     */
-  var MinCapacity: js.UndefOr[ResourceCapacity] = js.undefined
+  var MinCapacity: js.UndefOr[ResourceCapacity] = js.native
 }
 
 object ScalableTargetAction {

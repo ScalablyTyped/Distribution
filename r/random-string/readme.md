@@ -9,9 +9,9 @@ Simple Module for generating Random Strings
 | ------------------ | :-------------: |
 | Full name          | random-string |
 | Keywords           | random, string |
-| # releases         | 2 |
-| # dependents       | 64 |
-| # downloads        | 469581 |
+| # releases         | 0 |
+| # dependents       | 69 |
+| # downloads        | 758376 |
 | # stars            | 9 |
 
 ## Links

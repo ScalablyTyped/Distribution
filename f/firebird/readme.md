@@ -10,9 +10,9 @@ Firebird binding to node, uses libfbclient.
 | ------------------ | :-------------: |
 | Full name          | firebird |
 | Keywords           | - |
-| # releases         | 1 |
+| # releases         | 4 |
 | # dependents       | 2 |
-| # downloads        | 1817 |
+| # downloads        | 5278 |
 | # stars            | 1 |
 
 ## Links

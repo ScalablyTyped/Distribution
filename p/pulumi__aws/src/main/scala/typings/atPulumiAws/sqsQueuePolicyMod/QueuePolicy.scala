@@ -21,9 +21,6 @@ class QueuePolicy protected () extends CustomResource {
     */
   def this(name: String, args: QueuePolicyArgs) = this()
   def this(name: String, args: QueuePolicyArgs, opts: CustomResourceOptions) = this()
-  /**
-    * The JSON policy for the SQS queue.
-    */
   val policy: Output[String] = js.native
   /**
     * The URL of the SQS Queue to which to attach the policy

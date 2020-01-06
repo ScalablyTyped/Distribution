@@ -11,8 +11,8 @@ Typings are for version 1.8.17
 | Full name          | dayjs |
 | Keywords           | dayjs, date, time, immutable, moment |
 | # releases         | 72 |
-| # dependents       | 701 |
-| # downloads        | 9080051 |
+| # dependents       | 839 |
+| # downloads        | 13040141 |
 | # stars            | 2 |
 
 ## Links

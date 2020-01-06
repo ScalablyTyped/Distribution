@@ -4,9 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CommonColors extends js.Object {
-  var black: String
-  var white: String
+  var black: String = js.native
+  var white: String = js.native
 }
 
 object CommonColors {

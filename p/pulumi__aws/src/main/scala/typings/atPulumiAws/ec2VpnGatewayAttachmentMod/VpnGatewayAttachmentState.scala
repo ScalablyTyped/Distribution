@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VpnGatewayAttachmentState extends js.Object {
   /**
     * The ID of the VPC.
     */
-  val vpcId: js.UndefOr[Input[String]] = js.undefined
+  val vpcId: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of the Virtual Private Gateway.
     */
-  val vpnGatewayId: js.UndefOr[Input[String]] = js.undefined
+  val vpnGatewayId: js.UndefOr[Input[String]] = js.native
 }
 
 object VpnGatewayAttachmentState {

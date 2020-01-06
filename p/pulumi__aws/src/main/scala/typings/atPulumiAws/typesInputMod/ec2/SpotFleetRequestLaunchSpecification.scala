@@ -6,33 +6,34 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SpotFleetRequestLaunchSpecification extends js.Object {
-  var ami: Input[String]
-  var associatePublicIpAddress: js.UndefOr[Input[Boolean]] = js.undefined
-  var availabilityZone: js.UndefOr[Input[String]] = js.undefined
-  var ebsBlockDevices: js.UndefOr[Input[js.Array[Input[SpotFleetRequestLaunchSpecificationEbsBlockDevice]]]] = js.undefined
-  var ebsOptimized: js.UndefOr[Input[Boolean]] = js.undefined
-  var ephemeralBlockDevices: js.UndefOr[Input[js.Array[Input[SpotFleetRequestLaunchSpecificationEphemeralBlockDevice]]]] = js.undefined
-  var iamInstanceProfile: js.UndefOr[Input[String]] = js.undefined
-  var iamInstanceProfileArn: js.UndefOr[Input[String]] = js.undefined
-  var instanceType: Input[String]
-  var keyName: js.UndefOr[Input[String]] = js.undefined
-  var monitoring: js.UndefOr[Input[Boolean]] = js.undefined
-  var placementGroup: js.UndefOr[Input[String]] = js.undefined
-  var placementTenancy: js.UndefOr[Input[String]] = js.undefined
-  var rootBlockDevices: js.UndefOr[Input[js.Array[Input[SpotFleetRequestLaunchSpecificationRootBlockDevice]]]] = js.undefined
+  var ami: Input[String] = js.native
+  var associatePublicIpAddress: js.UndefOr[Input[Boolean]] = js.native
+  var availabilityZone: js.UndefOr[Input[String]] = js.native
+  var ebsBlockDevices: js.UndefOr[Input[js.Array[Input[SpotFleetRequestLaunchSpecificationEbsBlockDevice]]]] = js.native
+  var ebsOptimized: js.UndefOr[Input[Boolean]] = js.native
+  var ephemeralBlockDevices: js.UndefOr[Input[js.Array[Input[SpotFleetRequestLaunchSpecificationEphemeralBlockDevice]]]] = js.native
+  var iamInstanceProfile: js.UndefOr[Input[String]] = js.native
+  var iamInstanceProfileArn: js.UndefOr[Input[String]] = js.native
+  var instanceType: Input[String] = js.native
+  var keyName: js.UndefOr[Input[String]] = js.native
+  var monitoring: js.UndefOr[Input[Boolean]] = js.native
+  var placementGroup: js.UndefOr[Input[String]] = js.native
+  var placementTenancy: js.UndefOr[Input[String]] = js.native
+  var rootBlockDevices: js.UndefOr[Input[js.Array[Input[SpotFleetRequestLaunchSpecificationRootBlockDevice]]]] = js.native
   /**
     * The maximum bid price per unit hour.
     */
-  var spotPrice: js.UndefOr[Input[String]] = js.undefined
-  var subnetId: js.UndefOr[Input[String]] = js.undefined
+  var spotPrice: js.UndefOr[Input[String]] = js.native
+  var subnetId: js.UndefOr[Input[String]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  var tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
-  var userData: js.UndefOr[Input[String]] = js.undefined
-  var vpcSecurityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
-  var weightedCapacity: js.UndefOr[Input[String]] = js.undefined
+  var tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  var userData: js.UndefOr[Input[String]] = js.native
+  var vpcSecurityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  var weightedCapacity: js.UndefOr[Input[String]] = js.native
 }
 
 object SpotFleetRequestLaunchSpecification {

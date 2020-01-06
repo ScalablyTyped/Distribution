@@ -5,9 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/createPalette.TypeBackground> */
+@js.native
 trait PartialTypeBackground extends js.Object {
-  var default: js.UndefOr[String] = js.undefined
-  var paper: js.UndefOr[String] = js.undefined
+  var default: js.UndefOr[String] = js.native
+  var paper: js.UndefOr[String] = js.native
 }
 
 object PartialTypeBackground {

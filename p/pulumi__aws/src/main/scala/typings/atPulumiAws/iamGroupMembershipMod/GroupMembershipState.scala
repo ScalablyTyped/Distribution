@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GroupMembershipState extends js.Object {
   /**
     * The IAM Group name to attach the list of `users` to
     */
-  val group: js.UndefOr[Input[String]] = js.undefined
+  val group: js.UndefOr[Input[String]] = js.native
   /**
     * The name to identify the Group Membership
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * A list of IAM User names to associate with the Group
     */
-  val users: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val users: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
 }
 
 object GroupMembershipState {

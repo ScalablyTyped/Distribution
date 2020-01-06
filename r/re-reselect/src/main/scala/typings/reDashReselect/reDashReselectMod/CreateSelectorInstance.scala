@@ -7,10 +7,14 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CreateSelectorInstance extends js.Object {
   def apply[S1, R1, T](selector1: typings.reselect.reselectMod.Selector[S1, R1], combiner: js.Function1[/* res1 */ R1, T]): typings.reselect.reselectMod.OutputSelector[S1, T, js.Function1[/* res1 */ R1, T]] = js.native
-  def apply[S, R, T](
-    selectors: js.Array[typings.reselect.reselectMod.Selector[S, R]],
-    combiner: js.Function1[/* repeated */ R, T]
-  ): typings.reselect.reselectMod.OutputSelector[S, T, js.Function1[/* repeated */ R, T]] = js.native
+  def apply[S1, R1, T](
+    selectors: js.Array[typings.reselect.reselectMod.Selector[S1, R1]],
+    combiner: js.Function1[/* res1 */ R1, T]
+  ): typings.reselect.reselectMod.OutputSelector[S1, T, js.Function1[/* res1 */ R1, T]] = js.native
+  def apply[S1, P1, R1, T](
+    selector1: typings.reselect.reselectMod.ParametricSelector[S1, P1, R1],
+    combiner: js.Function1[/* res1 */ R1, T]
+  ): typings.reselect.reselectMod.OutputParametricSelector[S1, P1, T, js.Function1[/* res1 */ R1, T]] = js.native
   def apply[S, R1, R2, T](
     selector1: typings.reselect.reselectMod.Selector[S, R1],
     selector2: typings.reselect.reselectMod.Selector[S, R2],
@@ -23,10 +27,6 @@ trait CreateSelectorInstance extends js.Object {
     ],
     combiner: js.Function2[/* res1 */ R1, /* res2 */ R2, T]
   ): typings.reselect.reselectMod.OutputSelector[S, T, js.Function2[/* res1 */ R1, /* res2 */ R2, T]] = js.native
-  def apply[S, P, R1, T](
-    selector: typings.reselect.reselectMod.ParametricSelector[S, P, R1],
-    combiner: js.Function1[/* res */ R1, T]
-  ): typings.reselect.reselectMod.OutputParametricSelector[S, P, T, js.Function1[/* res */ R1, T]] = js.native
   def apply[S, P, R1, R2, T](
     selector1: typings.reselect.reselectMod.ParametricSelector[S, P, R1],
     selector2: typings.reselect.reselectMod.ParametricSelector[S, P, R2],

@@ -10,9 +10,9 @@ Prepare compressed versions of assets to serve them with Content-Encoding
 | ------------------ | :-------------: |
 | Full name          | compression-webpack-plugin |
 | Keywords           | webpack |
-| # releases         | 19 |
-| # dependents       | 266 |
-| # downloads        | 22452848 |
+| # releases         | 13 |
+| # dependents       | 371 |
+| # downloads        | 35326142 |
 | # stars            | 13 |
 
 ## Links

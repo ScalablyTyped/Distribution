@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TableAttribute extends js.Object {
   /**
     * The name of the index
     */
-  var name: Input[String]
+  var name: Input[String] = js.native
   /**
     * Attribute type, which must be a scalar type: `S`, `N`, or `B` for (S)tring, (N)umber or (B)inary data
     */
-  var `type`: Input[String]
+  var `type`: Input[String] = js.native
 }
 
 object TableAttribute {

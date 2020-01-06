@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object list extends js.Object {
   def apply(): Writable = js.native
-  def apply(options: ListOptions): Writable = js.native
-  def apply(options: ListOptions, fileList: js.Array[String]): Writable = js.native
+  def apply(options: ListOptions with FileOptions): js.Promise[Unit] = js.native
+  def apply(options: ListOptions with FileOptions, fileList: js.Array[String]): js.Promise[Unit] = js.native
   def apply(
     options: ListOptions,
     fileList: js.Array[String],

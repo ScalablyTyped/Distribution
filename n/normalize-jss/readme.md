@@ -12,7 +12,7 @@ JSS port of normalize.css
 | Keywords           | normalize, jss, jsstyles, cssinjs |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 46779 |
+| # downloads        | 45836 |
 | # stars            | 0 |
 
 ## Links

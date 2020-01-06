@@ -10,9 +10,9 @@ Streamable SHA hashes in pure javascript
 | ------------------ | :-------------: |
 | Full name          | sha.js |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 263 |
-| # downloads        | 209646837 |
+| # releases         | 3 |
+| # dependents       | 365 |
+| # downloads        | 300524055 |
 | # stars            | 11 |
 
 ## Links

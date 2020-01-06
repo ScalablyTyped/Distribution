@@ -7,23 +7,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SecurityGroupArgs extends js.Object {
   /**
     * The description of the DB security group. Defaults to "Managed by Pulumi".
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * A list of ingress rules.
     */
-  val ingress: Input[js.Array[Input[SecurityGroupIngress]]]
+  val ingress: Input[js.Array[Input[SecurityGroupIngress]]] = js.native
   /**
     * The name of the DB security group.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object SecurityGroupArgs {

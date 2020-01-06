@@ -12,7 +12,7 @@ Node.js wrapper for the ssdeep fuzzy hashing library
 | Keywords           | fuzzy, hash, ssdeep |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 350 |
+| # downloads        | 691 |
 | # stars            | 0 |
 
 ## Links

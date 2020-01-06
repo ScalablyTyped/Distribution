@@ -13,13 +13,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait RangeConstructor
-  extends Instantiable3[
-      (/* begin */ Endpoint) | (/* begin */ Null), 
-      (/* end */ Endpoint) | (/* end */ Null), 
-      /* bounds */ Bounds, 
-      typings.std.Range
-    ]
-     with /**
+  extends /**
   *
   * @param begin Range's beginning, or left endpoint.
   * @param end Range's end, or right endpoint.
@@ -27,7 +21,13 @@ trait RangeConstructor
   */
 Instantiable0[typings.std.Range]
      with Instantiable1[/* begin */ Endpoint, typings.std.Range]
-     with Instantiable2[(/* begin */ Endpoint) | (/* begin */ Null), /* end */ Endpoint, typings.std.Range] {
+     with Instantiable2[(/* begin */ Endpoint) | (/* begin */ Null), /* end */ Endpoint, typings.std.Range]
+     with Instantiable3[
+      (/* begin */ Endpoint) | (/* begin */ Null), 
+      (/* end */ Endpoint) | (/* end */ Null), 
+      /* bounds */ Bounds, 
+      typings.std.Range
+    ] {
   /**
     *
     * @param begin Range's beginning, or left endpoint.

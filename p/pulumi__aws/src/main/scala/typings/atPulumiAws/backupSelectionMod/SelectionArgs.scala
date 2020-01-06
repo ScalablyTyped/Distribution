@@ -6,27 +6,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SelectionArgs extends js.Object {
   /**
     * The ARN of the IAM role that AWS Backup uses to authenticate when restoring and backing up the target resource. See the [AWS Backup Developer Guide](https://docs.aws.amazon.com/aws-backup/latest/devguide/access-control.html#managed-policies) for additional information about using AWS managed policies or creating custom policies attached to the IAM role.
     */
-  val iamRoleArn: Input[String]
+  val iamRoleArn: Input[String] = js.native
   /**
     * The display name of a resource selection document.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * The backup plan ID to be associated with the selection of resources.
     */
-  val planId: Input[String]
+  val planId: Input[String] = js.native
   /**
     * An array of strings that either contain Amazon Resource Names (ARNs) or match patterns of resources to assign to a backup plan..
     */
-  val resources: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val resources: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * Tag-based conditions used to specify a set of resources to assign to a backup plan.
     */
-  val selectionTags: js.UndefOr[Input[js.Array[Input[SelectionSelectionTag]]]] = js.undefined
+  val selectionTags: js.UndefOr[Input[js.Array[Input[SelectionSelectionTag]]]] = js.native
 }
 
 object SelectionArgs {

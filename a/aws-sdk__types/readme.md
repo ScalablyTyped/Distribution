@@ -10,9 +10,9 @@ Types for the AWS SDK
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/types |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 108 |
-| # downloads        | 26352 |
+| # releases         | 9 |
+| # dependents       | 460 |
+| # downloads        | 886751 |
 | # stars            | 0 |
 
 ## Links

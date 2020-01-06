@@ -10,9 +10,9 @@ ServiceStack's JavaScript library providing a number of convenience utilities in
 | ------------------ | :-------------: |
 | Full name          | ss-utils |
 | Keywords           | servicestack, utils, validation, form-binding, bootstrap-forms, ajax, serverevents, declarative, events, error-handling, data-binding |
-| # releases         | 8 |
+| # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 3272 |
+| # downloads        | 4061 |
 | # stars            | 0 |
 
 ## Links

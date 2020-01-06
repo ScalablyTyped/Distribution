@@ -11,8 +11,8 @@ Get the username (or 'owner' name) from a git/GitHub remote origin URL.
 | Full name          | git-username |
 | Keywords           | git, name, origin, parse, remote, remote origin, remote origin url, url, user, username |
 | # releases         | 3 |
-| # dependents       | 37 |
-| # downloads        | 208592 |
+| # dependents       | 40 |
+| # downloads        | 372632 |
 | # stars            | 0 |
 
 ## Links

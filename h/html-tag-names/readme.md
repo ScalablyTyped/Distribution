@@ -11,8 +11,8 @@ List of known HTML tag-names
 | Full name          | html-tag-names |
 | Keywords           | html, tag, name, element, tagname, w3c, whatwg |
 | # releases         | 3 |
-| # dependents       | 19 |
-| # downloads        | 12318703 |
+| # dependents       | 22 |
+| # downloads        | 8553009 |
 | # stars            | 1 |
 
 ## Links

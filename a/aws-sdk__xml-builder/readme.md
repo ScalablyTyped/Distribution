@@ -10,9 +10,9 @@ XML builder for the AWS SDK
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/xml-builder |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 5 |
 | # dependents       | 1 |
-| # downloads        | 390 |
+| # downloads        | 4263 |
 | # stars            | 0 |
 
 ## Links

@@ -12,7 +12,7 @@ A port-in-progress of the Compass vertical rhythm library
 | Keywords           | sass, compass, vertical-rhythm, css, typography |
 | # releases         | 5 |
 | # dependents       | 18 |
-| # downloads        | 1637559 |
+| # downloads        | 1972545 |
 | # stars            | 0 |
 
 ## Links

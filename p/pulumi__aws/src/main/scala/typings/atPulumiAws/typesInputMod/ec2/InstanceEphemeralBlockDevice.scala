@@ -5,21 +5,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InstanceEphemeralBlockDevice extends js.Object {
   /**
     * The name of the block device to mount on the instance.
     */
-  var deviceName: Input[String]
+  var deviceName: Input[String] = js.native
   /**
     * Suppresses the specified device included in the AMI's block device mapping.
     */
-  var noDevice: js.UndefOr[Input[Boolean]] = js.undefined
+  var noDevice: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The [Instance Store Device
     * Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#InstanceStoreDeviceNames)
     * (e.g. `"ephemeral0"`).
     */
-  var virtualName: js.UndefOr[Input[String]] = js.undefined
+  var virtualName: js.UndefOr[Input[String]] = js.native
 }
 
 object InstanceEphemeralBlockDevice {

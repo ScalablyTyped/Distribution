@@ -4,14 +4,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AmiEbsBlockDevice extends js.Object {
-  var deleteOnTermination: js.UndefOr[Boolean] = js.undefined
-  var deviceName: String
-  var encrypted: js.UndefOr[Boolean] = js.undefined
-  var iops: js.UndefOr[Double] = js.undefined
-  var snapshotId: js.UndefOr[String] = js.undefined
-  var volumeSize: Double
-  var volumeType: js.UndefOr[String] = js.undefined
+  var deleteOnTermination: js.UndefOr[Boolean] = js.native
+  var deviceName: String = js.native
+  var encrypted: js.UndefOr[Boolean] = js.native
+  var iops: js.UndefOr[Double] = js.native
+  var snapshotId: js.UndefOr[String] = js.native
+  var volumeSize: Double = js.native
+  var volumeType: js.UndefOr[String] = js.native
 }
 
 object AmiEbsBlockDevice {
@@ -25,12 +26,12 @@ object AmiEbsBlockDevice {
     snapshotId: String = null,
     volumeType: String = null
   ): AmiEbsBlockDevice = {
-    val __obj = js.Dynamic.literal(deviceName = deviceName, volumeSize = volumeSize)
-    if (!js.isUndefined(deleteOnTermination)) __obj.updateDynamic("deleteOnTermination")(deleteOnTermination)
-    if (!js.isUndefined(encrypted)) __obj.updateDynamic("encrypted")(encrypted)
+    val __obj = js.Dynamic.literal(deviceName = deviceName.asInstanceOf[js.Any], volumeSize = volumeSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(deleteOnTermination)) __obj.updateDynamic("deleteOnTermination")(deleteOnTermination.asInstanceOf[js.Any])
+    if (!js.isUndefined(encrypted)) __obj.updateDynamic("encrypted")(encrypted.asInstanceOf[js.Any])
     if (iops != null) __obj.updateDynamic("iops")(iops.asInstanceOf[js.Any])
-    if (snapshotId != null) __obj.updateDynamic("snapshotId")(snapshotId)
-    if (volumeType != null) __obj.updateDynamic("volumeType")(volumeType)
+    if (snapshotId != null) __obj.updateDynamic("snapshotId")(snapshotId.asInstanceOf[js.Any])
+    if (volumeType != null) __obj.updateDynamic("volumeType")(volumeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[AmiEbsBlockDevice]
   }
 }

@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ReservationUtilizationGroup extends js.Object {
   /**
     * The attributes for this group of reservations.
     */
-  var Attributes: js.UndefOr[typings.awsDashSdk.clientsCostexplorerMod.Attributes] = js.undefined
+  var Attributes: js.UndefOr[typings.awsDashSdk.clientsCostexplorerMod.Attributes] = js.native
   /**
     * The key for a specific reservation attribute.
     */
-  var Key: js.UndefOr[ReservationGroupKey] = js.undefined
+  var Key: js.UndefOr[ReservationGroupKey] = js.native
   /**
     * How much you used this group of reservations.
     */
-  var Utilization: js.UndefOr[ReservationAggregates] = js.undefined
+  var Utilization: js.UndefOr[ReservationAggregates] = js.native
   /**
     * The value of a specific reservation attribute.
     */
-  var Value: js.UndefOr[ReservationGroupValue] = js.undefined
+  var Value: js.UndefOr[ReservationGroupValue] = js.native
 }
 
 object ReservationUtilizationGroup {
@@ -32,10 +33,10 @@ object ReservationUtilizationGroup {
     Value: ReservationGroupValue = null
   ): ReservationUtilizationGroup = {
     val __obj = js.Dynamic.literal()
-    if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes)
-    if (Key != null) __obj.updateDynamic("Key")(Key)
-    if (Utilization != null) __obj.updateDynamic("Utilization")(Utilization)
-    if (Value != null) __obj.updateDynamic("Value")(Value)
+    if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes.asInstanceOf[js.Any])
+    if (Key != null) __obj.updateDynamic("Key")(Key.asInstanceOf[js.Any])
+    if (Utilization != null) __obj.updateDynamic("Utilization")(Utilization.asInstanceOf[js.Any])
+    if (Value != null) __obj.updateDynamic("Value")(Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReservationUtilizationGroup]
   }
 }

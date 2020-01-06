@@ -10,9 +10,9 @@ Full-sized drag & drop event calendar
 | ------------------ | :-------------: |
 | Full name          | fullcalendar |
 | Keywords           | calendar, event, full-sized, jquery-plugin |
-| # releases         | 18 |
-| # dependents       | 90 |
-| # downloads        | 3258518 |
+| # releases         | 10 |
+| # dependents       | 136 |
+| # downloads        | 4275353 |
 | # stars            | 17 |
 
 ## Links

@@ -10,9 +10,9 @@ An arbitrary-precision Decimal type for JavaScript.
 | ------------------ | :-------------: |
 | Full name          | decimal.js |
 | Keywords           | arbitrary, precision, arithmetic, big, number, decimal, float, biginteger, bigdecimal, bignumber, bigint, bignum |
-| # releases         | 17 |
-| # dependents       | 194 |
-| # downloads        | 9202552 |
+| # releases         | 8 |
+| # dependents       | 259 |
+| # downloads        | 12436701 |
 | # stars            | 17 |
 
 ## Links

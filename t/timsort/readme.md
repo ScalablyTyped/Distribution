@@ -11,8 +11,8 @@ TimSort: Fast Sorting for Node.js
 | Full name          | timsort |
 | Keywords           | sort, compare, TimSort, algorithm, python, performance |
 | # releases         | 0 |
-| # dependents       | 20 |
-| # downloads        | 29845105 |
+| # dependents       | 32 |
+| # downloads        | 97531174 |
 | # stars            | 1 |
 
 ## Links

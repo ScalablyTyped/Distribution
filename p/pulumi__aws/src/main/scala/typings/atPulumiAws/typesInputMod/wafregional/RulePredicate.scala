@@ -5,10 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RulePredicate extends js.Object {
-  var dataId: Input[String]
-  var negated: Input[Boolean]
-  var `type`: Input[String]
+  var dataId: Input[String] = js.native
+  var negated: Input[Boolean] = js.native
+  var `type`: Input[String] = js.native
 }
 
 object RulePredicate {

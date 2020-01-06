@@ -9,59 +9,60 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MaintenanceWindowTaskState extends js.Object {
   /**
     * The description of the maintenance window task.
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * A structure containing information about an Amazon S3 bucket to write instance-level logs to. Use `taskInvocationParameters` configuration block `runCommandParameters` configuration block `output_s3_*` arguments instead. Conflicts with `taskInvocationParameters`. Documented below.
     */
-  val loggingInfo: js.UndefOr[Input[MaintenanceWindowTaskLoggingInfo]] = js.undefined
+  val loggingInfo: js.UndefOr[Input[MaintenanceWindowTaskLoggingInfo]] = js.native
   /**
     * The maximum number of targets this task can be run for in parallel.
     */
-  val maxConcurrency: js.UndefOr[Input[String]] = js.undefined
+  val maxConcurrency: js.UndefOr[Input[String]] = js.native
   /**
     * The maximum number of errors allowed before this task stops being scheduled.
     */
-  val maxErrors: js.UndefOr[Input[String]] = js.undefined
+  val maxErrors: js.UndefOr[Input[String]] = js.native
   /**
     * The parameter name.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * The priority of the task in the Maintenance Window, the lower the number the higher the priority. Tasks in a Maintenance Window are scheduled in priority order with tasks that have the same priority scheduled in parallel.
     */
-  val priority: js.UndefOr[Input[Double]] = js.undefined
+  val priority: js.UndefOr[Input[Double]] = js.native
   /**
     * The IAM service role to assume during task execution.
     */
-  val serviceRoleArn: js.UndefOr[Input[String]] = js.undefined
+  val serviceRoleArn: js.UndefOr[Input[String]] = js.native
   /**
     * The targets (either instances or window target ids). Instances are specified using Key=InstanceIds,Values=instanceid1,instanceid2. Window target ids are specified using Key=WindowTargetIds,Values=window target id1, window target id2.
     */
-  val targets: js.UndefOr[Input[js.Array[Input[MaintenanceWindowTaskTarget]]]] = js.undefined
+  val targets: js.UndefOr[Input[js.Array[Input[MaintenanceWindowTaskTarget]]]] = js.native
   /**
     * The ARN of the task to execute.
     */
-  val taskArn: js.UndefOr[Input[String]] = js.undefined
+  val taskArn: js.UndefOr[Input[String]] = js.native
   /**
     * The parameters for task execution. This argument is conflict with `taskParameters` and `loggingInfo`.
     */
-  val taskInvocationParameters: js.UndefOr[Input[MaintenanceWindowTaskTaskInvocationParameters]] = js.undefined
+  val taskInvocationParameters: js.UndefOr[Input[MaintenanceWindowTaskTaskInvocationParameters]] = js.native
   /**
     * A structure containing information about parameters required by the particular `taskArn`. Use `parameter` configuration blocks under the `taskInvocationParameters` configuration block instead. Conflicts with `taskInvocationParameters`. Documented below.
     */
-  val taskParameters: js.UndefOr[Input[js.Array[Input[MaintenanceWindowTaskTaskParameter]]]] = js.undefined
+  val taskParameters: js.UndefOr[Input[js.Array[Input[MaintenanceWindowTaskTaskParameter]]]] = js.native
   /**
     * The type of task being registered. The only allowed value is `RUN_COMMAND`.
     */
-  val taskType: js.UndefOr[Input[String]] = js.undefined
+  val taskType: js.UndefOr[Input[String]] = js.native
   /**
     * The Id of the maintenance window to register the task with.
     */
-  val windowId: js.UndefOr[Input[String]] = js.undefined
+  val windowId: js.UndefOr[Input[String]] = js.native
 }
 
 object MaintenanceWindowTaskState {

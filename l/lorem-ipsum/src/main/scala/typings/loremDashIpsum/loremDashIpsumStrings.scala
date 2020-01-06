@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 object loremDashIpsumStrings {
   @js.native
-  sealed trait `3 words LeftsquarebracketoptionsRightsquarebracket` extends js.Object
+  sealed trait `3 words [options]` extends js.Object
   
   @js.native
   sealed trait `Could not determine host operating systemDot` extends js.Object
@@ -39,7 +39,7 @@ object loremDashIpsumStrings {
   sealed trait words extends js.Object
   
   @scala.inline
-  def `3 words LeftsquarebracketoptionsRightsquarebracket`: `3 words LeftsquarebracketoptionsRightsquarebracket` = "3 words [options]".asInstanceOf[`3 words LeftsquarebracketoptionsRightsquarebracket`]
+  def `3 words [options]`: `3 words [options]` = "3 words [options]".asInstanceOf[`3 words [options]`]
   @scala.inline
   def `Could not determine host operating systemDot`: `Could not determine host operating systemDot` = "Could not determine host operating system.".asInstanceOf[`Could not determine host operating systemDot`]
   @scala.inline

@@ -10,9 +10,9 @@ calendar generator
 | ------------------ | :-------------: |
 | Full name          | calendar |
 | Keywords           | - |
-| # releases         | 0 |
+| # releases         | 2 |
 | # dependents       | 29 |
-| # downloads        | 390188 |
+| # downloads        | 440762 |
 | # stars            | 5 |
 
 ## Links

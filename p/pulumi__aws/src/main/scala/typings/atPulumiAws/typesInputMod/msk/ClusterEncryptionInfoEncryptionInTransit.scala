@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClusterEncryptionInfoEncryptionInTransit extends js.Object {
   /**
     * Encryption setting for data in transit between clients and brokers. Valid values: `TLS`, `TLS_PLAINTEXT`, and `PLAINTEXT`. Default value: `TLS_PLAINTEXT`.
     */
-  var clientBroker: js.UndefOr[Input[String]] = js.undefined
+  var clientBroker: js.UndefOr[Input[String]] = js.native
   /**
     * Whether data communication among broker nodes is encrypted. Default value: `true`.
     */
-  var inCluster: js.UndefOr[Input[Boolean]] = js.undefined
+  var inCluster: js.UndefOr[Input[Boolean]] = js.native
 }
 
 object ClusterEncryptionInfoEncryptionInTransit {

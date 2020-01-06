@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CampaignLimits extends js.Object {
   /**
     * The maximum number of messages that a campaign can send to a single endpoint during a 24-hour period. The maximum value is 100.
     */
-  var Daily: js.UndefOr[__integer] = js.undefined
+  var Daily: js.UndefOr[__integer] = js.native
   /**
     * The maximum amount of time, in seconds, that a campaign can attempt to deliver a message after the scheduled start time for the campaign. The minimum value is 60 seconds.
     */
-  var MaximumDuration: js.UndefOr[__integer] = js.undefined
+  var MaximumDuration: js.UndefOr[__integer] = js.native
   /**
     * The maximum number of messages that a campaign can send each second. The minimum value is 50. The maximum value is 20,000.
     */
-  var MessagesPerSecond: js.UndefOr[__integer] = js.undefined
+  var MessagesPerSecond: js.UndefOr[__integer] = js.native
   /**
     * The maximum number of messages that a campaign can send to a single endpoint during the course of the campaign. The maximum value is 100.
     */
-  var Total: js.UndefOr[__integer] = js.undefined
+  var Total: js.UndefOr[__integer] = js.native
 }
 
 object CampaignLimits {

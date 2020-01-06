@@ -10,9 +10,9 @@ Access to and manipulation of core WordPress entities.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/core-data |
 | Keywords           | wordpress, data, entities |
-| # releases         | 32 |
+| # releases         | 44 |
 | # dependents       | 6 |
-| # downloads        | 62384 |
+| # downloads        | 118526 |
 | # stars            | 0 |
 
 ## Links

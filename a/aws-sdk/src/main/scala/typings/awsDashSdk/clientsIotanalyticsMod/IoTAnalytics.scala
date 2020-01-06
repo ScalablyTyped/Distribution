@@ -91,12 +91,12 @@ trait IoTAnalytics extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateDatastoreResponse, Unit]
   ): Request[CreateDatastoreResponse, AWSError] = js.native
   /**
-    * Creates a pipeline. A pipeline consumes messages from one or more channels and allows you to process the messages before storing them in a data store. You must specify both a channel and a datastore activity and, optionally, as many as 23 additional activities in the pipelineActivities array.
+    * Creates a pipeline. A pipeline consumes messages from a channel and allows you to process the messages before storing them in a data store. You must specify both a channel and a datastore activity and, optionally, as many as 23 additional activities in the pipelineActivities array.
     */
   def createPipeline(): Request[CreatePipelineResponse, AWSError] = js.native
   def createPipeline(callback: js.Function2[/* err */ AWSError, /* data */ CreatePipelineResponse, Unit]): Request[CreatePipelineResponse, AWSError] = js.native
   /**
-    * Creates a pipeline. A pipeline consumes messages from one or more channels and allows you to process the messages before storing them in a data store. You must specify both a channel and a datastore activity and, optionally, as many as 23 additional activities in the pipelineActivities array.
+    * Creates a pipeline. A pipeline consumes messages from a channel and allows you to process the messages before storing them in a data store. You must specify both a channel and a datastore activity and, optionally, as many as 23 additional activities in the pipelineActivities array.
     */
   def createPipeline(params: CreatePipelineRequest): Request[CreatePipelineResponse, AWSError] = js.native
   def createPipeline(

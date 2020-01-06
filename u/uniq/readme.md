@@ -9,9 +9,9 @@ Removes duplicates from a sorted array in place
 | ------------------ | :-------------: |
 | Full name          | uniq |
 | Keywords           | array, duplicate, unique, uniq, remove, sort, in, place, no, copy |
-| # releases         | 1 |
-| # dependents       | 150 |
-| # downloads        | 146791642 |
+| # releases         | 0 |
+| # dependents       | 161 |
+| # downloads        | 218739592 |
 | # stars            | 18 |
 
 ## Links

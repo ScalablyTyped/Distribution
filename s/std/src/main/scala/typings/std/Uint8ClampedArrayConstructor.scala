@@ -11,15 +11,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Uint8ClampedArrayConstructor
   extends Instantiable0[Uint8ClampedArray]
+     with Instantiable1[
+      (/* arrayOrArrayBuffer */ ArrayBufferLike) | (/* arrayOrArrayBuffer */ ArrayLike[Double]) | (/* length */ Double) | (/* elements */ Iterable[Double]), 
+      Uint8ClampedArray
+    ]
      with Instantiable2[/* buffer */ ArrayBufferLike, /* byteOffset */ Double, Uint8ClampedArray]
      with Instantiable3[
       /* buffer */ ArrayBufferLike, 
       /* byteOffset */ Double, 
       /* length */ Double, 
-      Uint8ClampedArray
-    ]
-     with Instantiable1[
-      (/* arrayOrArrayBuffer */ ArrayBufferLike) | (/* arrayOrArrayBuffer */ ArrayLike[Double]) | (/* length */ Double) | (/* elements */ Iterable[Double]), 
       Uint8ClampedArray
     ] {
   /**

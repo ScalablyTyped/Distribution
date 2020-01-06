@@ -10,9 +10,9 @@ A minimalistic code generation utility.
 | ------------------ | :-------------: |
 | Full name          | @protobufjs/codegen |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 19 |
-| # downloads        | 48813886 |
+| # releases         | 0 |
+| # dependents       | 32 |
+| # downloads        | 54293494 |
 | # stars            | 0 |
 
 ## Links

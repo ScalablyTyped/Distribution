@@ -10,14 +10,14 @@ The editing engine of CKEditor 5 – the best browser-based rich text editor.
 | ------------------ | :-------------: |
 | Full name          | @ckeditor/ckeditor5-engine |
 | Keywords           | wysiwyg, rich text, editor, html, contentEditable, editing, operational transformation, ot, collaboration, collaborative, real-time, framework, ckeditor5-lib, ckeditor, ckeditor5, ckeditor 5 |
-| # releases         | 13 |
-| # dependents       | 61 |
-| # downloads        | 822517 |
+| # releases         | 17 |
+| # dependents       | 67 |
+| # downloads        | 925343 |
 | # stars            | 0 |
 
 ## Links
 - [Homepage](https://ckeditor.com/ckeditor-5)
-- [Bugs](https://github.com/ckeditor/ckeditor5-engine/issues)
+- [Bugs](https://github.com/ckeditor/ckeditor5/issues)
 - [Repository](https://github.com/ckeditor/ckeditor5-engine)
 - [Npm](https://www.npmjs.com/package/%40ckeditor%2Fckeditor5-engine)
     

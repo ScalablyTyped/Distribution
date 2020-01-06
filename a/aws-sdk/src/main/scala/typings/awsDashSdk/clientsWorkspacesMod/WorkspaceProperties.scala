@@ -4,27 +4,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WorkspaceProperties extends js.Object {
   /**
     * The compute type. For more information, see Amazon WorkSpaces Bundles.
     */
-  var ComputeTypeName: js.UndefOr[Compute] = js.undefined
+  var ComputeTypeName: js.UndefOr[Compute] = js.native
   /**
     * The size of the root volume.
     */
-  var RootVolumeSizeGib: js.UndefOr[typings.awsDashSdk.clientsWorkspacesMod.RootVolumeSizeGib] = js.undefined
+  var RootVolumeSizeGib: js.UndefOr[typings.awsDashSdk.clientsWorkspacesMod.RootVolumeSizeGib] = js.native
   /**
     * The running mode. For more information, see Manage the WorkSpace Running Mode.
     */
-  var RunningMode: js.UndefOr[typings.awsDashSdk.clientsWorkspacesMod.RunningMode] = js.undefined
+  var RunningMode: js.UndefOr[typings.awsDashSdk.clientsWorkspacesMod.RunningMode] = js.native
   /**
-    * The time after a user logs off when WorkSpaces are automatically stopped. Configured in 60 minute intervals.
+    * The time after a user logs off when WorkSpaces are automatically stopped. Configured in 60-minute intervals.
     */
-  var RunningModeAutoStopTimeoutInMinutes: js.UndefOr[typings.awsDashSdk.clientsWorkspacesMod.RunningModeAutoStopTimeoutInMinutes] = js.undefined
+  var RunningModeAutoStopTimeoutInMinutes: js.UndefOr[typings.awsDashSdk.clientsWorkspacesMod.RunningModeAutoStopTimeoutInMinutes] = js.native
   /**
     * The size of the user storage.
     */
-  var UserVolumeSizeGib: js.UndefOr[typings.awsDashSdk.clientsWorkspacesMod.UserVolumeSizeGib] = js.undefined
+  var UserVolumeSizeGib: js.UndefOr[typings.awsDashSdk.clientsWorkspacesMod.UserVolumeSizeGib] = js.native
 }
 
 object WorkspaceProperties {

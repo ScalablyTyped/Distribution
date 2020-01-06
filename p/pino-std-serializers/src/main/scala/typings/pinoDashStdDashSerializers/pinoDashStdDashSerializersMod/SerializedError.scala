@@ -8,11 +8,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SerializedError
-  extends /**
+  extends /* key */ NumberDictionary[js.Any]
+     with /**
   * Any other extra properties that have been attached to the object will also be present on the serialized object.
   */
-/* key */ StringDictionary[js.Any]
-     with /* key */ NumberDictionary[js.Any] {
+/* key */ StringDictionary[js.Any] {
   /**
     * The supplied error message.
     */

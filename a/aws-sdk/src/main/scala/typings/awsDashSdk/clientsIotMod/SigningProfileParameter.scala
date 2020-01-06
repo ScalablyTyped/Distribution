@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SigningProfileParameter extends js.Object {
   /**
     * Certificate ARN.
     */
-  var certificateArn: js.UndefOr[CertificateArn] = js.undefined
+  var certificateArn: js.UndefOr[CertificateArn] = js.native
   /**
     * The location of the code-signing certificate on your device.
     */
-  var certificatePathOnDevice: js.UndefOr[CertificatePathOnDevice] = js.undefined
+  var certificatePathOnDevice: js.UndefOr[CertificatePathOnDevice] = js.native
   /**
     * The hardware platform of your device.
     */
-  var platform: js.UndefOr[Platform] = js.undefined
+  var platform: js.UndefOr[Platform] = js.native
 }
 
 object SigningProfileParameter {
@@ -27,9 +28,9 @@ object SigningProfileParameter {
     platform: Platform = null
   ): SigningProfileParameter = {
     val __obj = js.Dynamic.literal()
-    if (certificateArn != null) __obj.updateDynamic("certificateArn")(certificateArn)
-    if (certificatePathOnDevice != null) __obj.updateDynamic("certificatePathOnDevice")(certificatePathOnDevice)
-    if (platform != null) __obj.updateDynamic("platform")(platform)
+    if (certificateArn != null) __obj.updateDynamic("certificateArn")(certificateArn.asInstanceOf[js.Any])
+    if (certificatePathOnDevice != null) __obj.updateDynamic("certificatePathOnDevice")(certificatePathOnDevice.asInstanceOf[js.Any])
+    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
     __obj.asInstanceOf[SigningProfileParameter]
   }
 }

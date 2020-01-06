@@ -12,16 +12,16 @@ import typings.graphql.graphqlStrings.Float
 import typings.graphql.graphqlStrings.Int
 import typings.graphql.graphqlStrings.Leftcurlybracket
 import typings.graphql.graphqlStrings.Leftparenthesis
-import typings.graphql.graphqlStrings.Leftsquarebracket
 import typings.graphql.graphqlStrings.LessthansignEOFGreaterthansign
 import typings.graphql.graphqlStrings.LessthansignSOFGreaterthansign
 import typings.graphql.graphqlStrings.Name
 import typings.graphql.graphqlStrings.Rightcurlybracket
 import typings.graphql.graphqlStrings.Rightparenthesis
-import typings.graphql.graphqlStrings.Rightsquarebracket
 import typings.graphql.graphqlStrings.String
 import typings.graphql.graphqlStrings.Verticalline
 import typings.graphql.graphqlStrings.`@`
+import typings.graphql.graphqlStrings.`[`
+import typings.graphql.graphqlStrings.`]`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,8 +33,8 @@ trait _TokenKind extends js.Object {
   var BLOCK_STRING: BlockString
   var BRACE_L: Leftcurlybracket
   var BRACE_R: Rightcurlybracket
-  var BRACKET_L: Leftsquarebracket
-  var BRACKET_R: Rightsquarebracket
+  var BRACKET_L: `[`
+  var BRACKET_R: `]`
   var COLON: Colon
   var COMMENT: Comment
   var DOLLAR: $
@@ -60,8 +60,8 @@ object _TokenKind {
     BLOCK_STRING: BlockString,
     BRACE_L: Leftcurlybracket,
     BRACE_R: Rightcurlybracket,
-    BRACKET_L: Leftsquarebracket,
-    BRACKET_R: Rightsquarebracket,
+    BRACKET_L: `[`,
+    BRACKET_R: `]`,
     COLON: Colon,
     COMMENT: Comment,
     DOLLAR: $,

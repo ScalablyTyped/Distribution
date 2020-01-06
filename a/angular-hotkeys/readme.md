@@ -10,9 +10,9 @@ Automatic keyboard shortcuts for your Angular Apps
 | ------------------ | :-------------: |
 | Full name          | angular-hotkeys |
 | Keywords           | angular, angularjs, keyboard, shortcut, hotkeys |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 564078 |
+| # downloads        | 565687 |
 | # stars            | 2 |
 
 ## Links

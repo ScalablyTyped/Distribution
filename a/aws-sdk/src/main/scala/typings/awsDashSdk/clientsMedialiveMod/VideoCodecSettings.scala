@@ -4,10 +4,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VideoCodecSettings extends js.Object {
-  var FrameCaptureSettings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.FrameCaptureSettings] = js.undefined
-  var H264Settings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.H264Settings] = js.undefined
-  var H265Settings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.H265Settings] = js.undefined
+  var FrameCaptureSettings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.FrameCaptureSettings] = js.native
+  var H264Settings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.H264Settings] = js.native
+  var H265Settings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.H265Settings] = js.native
 }
 
 object VideoCodecSettings {
@@ -18,9 +19,9 @@ object VideoCodecSettings {
     H265Settings: H265Settings = null
   ): VideoCodecSettings = {
     val __obj = js.Dynamic.literal()
-    if (FrameCaptureSettings != null) __obj.updateDynamic("FrameCaptureSettings")(FrameCaptureSettings)
-    if (H264Settings != null) __obj.updateDynamic("H264Settings")(H264Settings)
-    if (H265Settings != null) __obj.updateDynamic("H265Settings")(H265Settings)
+    if (FrameCaptureSettings != null) __obj.updateDynamic("FrameCaptureSettings")(FrameCaptureSettings.asInstanceOf[js.Any])
+    if (H264Settings != null) __obj.updateDynamic("H264Settings")(H264Settings.asInstanceOf[js.Any])
+    if (H265Settings != null) __obj.updateDynamic("H265Settings")(H265Settings.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoCodecSettings]
   }
 }

@@ -10,9 +10,9 @@ Escape and stringify an array of arguments to be executed on the shell
 | ------------------ | :-------------: |
 | Full name          | shell-escape |
 | Keywords           | shell, escape, bash, escapeshellarg |
-| # releases         | 1 |
-| # dependents       | 133 |
-| # downloads        | 2572305 |
+| # releases         | 0 |
+| # dependents       | 149 |
+| # downloads        | 3333136 |
 | # stars            | 4 |
 
 ## Links

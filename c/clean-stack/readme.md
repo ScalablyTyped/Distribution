@@ -10,9 +10,9 @@ Clean up error stack traces
 | ------------------ | :-------------: |
 | Full name          | clean-stack |
 | Keywords           | clean, stack, trace, traces, error, err, electron |
-| # releases         | 3 |
-| # dependents       | 41 |
-| # downloads        | 19098094 |
+| # releases         | 4 |
+| # dependents       | 60 |
+| # downloads        | 65807596 |
 | # stars            | 3 |
 
 ## Links

@@ -10,10 +10,10 @@ Parse yes/no like values
 | ------------------ | :-------------: |
 | Full name          | yn |
 | Keywords           | yn, yes, no, cli, prompt, validate, input, answer, true, false, parse, lenient |
-| # releases         | 3 |
-| # dependents       | 65 |
-| # downloads        | 48601190 |
-| # stars            | 6 |
+| # releases         | 5 |
+| # dependents       | 97 |
+| # downloads        | 105776483 |
+| # stars            | 7 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/yn#readme)

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("isotope-layout", JSImport.Namespace)
 @js.native
 object ^ extends TopLevel[
-      (Instantiable2[/* elementOrSelector */ HTMLElement, /* options */ IsotopeOptions, Isotope]) with (Instantiable2[/* elementOrSelector */ String, /* options */ IsotopeOptions, Isotope])
+      (Instantiable2[/* elementOrSelector */ String, /* options */ IsotopeOptions, Isotope]) with (Instantiable2[/* elementOrSelector */ HTMLElement, /* options */ IsotopeOptions, Isotope])
     ] {
   def data(element: String): Isotope = js.native
   /**

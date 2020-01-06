@@ -14,7 +14,7 @@ trait LodashReduce1x2[TResult] extends js.Object {
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 
       TResult
     ]
-  ): TResult = js.native
+  ): LodashReduce3x3[T, TResult] = js.native
   def apply[T /* <: js.Object */](
     callback: MemoIteratorCapped[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 

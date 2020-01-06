@@ -4,15 +4,15 @@
 Typings are for version 2.0.0
 
 ## Library description:
-Check when the DOM is loaded like `DOMContentLoaded`
+Check when the DOM has loaded like `DOMContentLoaded`
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | dom-loaded |
 | Keywords           | browser, dom, document, ready, doc, complete, check, wait, domcontentloaded, readystate |
-| # releases         | 6 |
+| # releases         | 4 |
 | # dependents       | 1 |
-| # downloads        | 23662 |
+| # downloads        | 29205 |
 | # stars            | 0 |
 
 ## Links

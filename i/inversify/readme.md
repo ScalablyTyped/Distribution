@@ -10,9 +10,9 @@ A powerful and lightweight inversion of control container for JavaScript and Nod
 | ------------------ | :-------------: |
 | Full name          | inversify |
 | Keywords           | ioc, di, javascript, typescript, node, dependency injection, dependency inversion, inversion of control container |
-| # releases         | 21 |
-| # dependents       | 437 |
-| # downloads        | 8991390 |
+| # releases         | 7 |
+| # dependents       | 603 |
+| # downloads        | 16468203 |
 | # stars            | 22 |
 
 ## Links

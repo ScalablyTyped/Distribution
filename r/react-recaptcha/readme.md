@@ -10,9 +10,9 @@ A react.js reCAPTCHA for Google
 | ------------------ | :-------------: |
 | Full name          | react-recaptcha |
 | Keywords           | react, react-component, reCAPTCHA, component |
-| # releases         | 12 |
-| # dependents       | 7 |
-| # downloads        | 952311 |
+| # releases         | 6 |
+| # dependents       | 14 |
+| # downloads        | 1502936 |
 | # stars            | 5 |
 
 ## Links

@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InstanceCount extends js.Object {
   /**
     * The number of listed Reserved Instances in the state specified by the state.
     */
-  var InstanceCount: js.UndefOr[Integer] = js.undefined
+  var InstanceCount: js.UndefOr[Integer] = js.native
   /**
     * The states of the listed Reserved Instances.
     */
-  var State: js.UndefOr[ListingState] = js.undefined
+  var State: js.UndefOr[ListingState] = js.native
 }
 
 object InstanceCount {

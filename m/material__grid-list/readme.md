@@ -10,9 +10,9 @@ The Material Components for the web grid list component
 | ------------------ | :-------------: |
 | Full name          | @material/grid-list |
 | Keywords           | material components, material design, grid list |
-| # releases         | 41 |
+| # releases         | 108 |
 | # dependents       | 13 |
-| # downloads        | 1069600 |
+| # downloads        | 985173 |
 | # stars            | 0 |
 
 ## Links

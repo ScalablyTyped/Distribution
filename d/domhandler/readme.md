@@ -4,15 +4,15 @@
 Typings are for version 2.4
 
 ## Library description:
-handler for htmlparser2 that turns pages into a dom
+Handler for htmlparser2 that turns pages into a dom
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | domhandler |
 | Keywords           | dom, htmlparser2 |
-| # releases         | 4 |
-| # dependents       | 53 |
-| # downloads        | 270198414 |
+| # releases         | 3 |
+| # dependents       | 69 |
+| # downloads        | 337863214 |
 | # stars            | 5 |
 
 ## Links

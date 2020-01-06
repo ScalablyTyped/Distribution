@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UserConstructor
   extends ObjectStatic
-     with Instantiable1[/* attributes */ Attributes, User[Attributes]]
-     with Instantiable0[User[Attributes]] {
+     with Instantiable0[User[Attributes]]
+     with Instantiable1[/* attributes */ Attributes, User[Attributes]] {
   def allowCustomUserClass(isAllowed: Boolean): Unit = js.native
   def become(sessionToken: String): js.Promise[User[Attributes]] = js.native
   def become(sessionToken: String, options: UseMasterKeyOption): js.Promise[User[Attributes]] = js.native

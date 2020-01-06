@@ -7,104 +7,105 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StackState extends js.Object {
   /**
     * If set to `"LATEST"`, OpsWorks will automatically install the latest version.
     */
-  val agentVersion: js.UndefOr[Input[String]] = js.undefined
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val agentVersion: js.UndefOr[Input[String]] = js.native
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * If `manageBerkshelf` is enabled, the version of Berkshelf to use.
     */
-  val berkshelfVersion: js.UndefOr[Input[String]] = js.undefined
+  val berkshelfVersion: js.UndefOr[Input[String]] = js.native
   /**
     * Color to paint next to the stack's resources in the OpsWorks console.
     */
-  val color: js.UndefOr[Input[String]] = js.undefined
+  val color: js.UndefOr[Input[String]] = js.native
   /**
     * Name of the configuration manager to use. Defaults to "Chef".
     */
-  val configurationManagerName: js.UndefOr[Input[String]] = js.undefined
+  val configurationManagerName: js.UndefOr[Input[String]] = js.native
   /**
     * Version of the configuration manager to use. Defaults to "11.4".
     */
-  val configurationManagerVersion: js.UndefOr[Input[String]] = js.undefined
+  val configurationManagerVersion: js.UndefOr[Input[String]] = js.native
   /**
     * When `useCustomCookbooks` is set, provide this sub-object as
     * described below.
     */
-  val customCookbooksSources: js.UndefOr[Input[js.Array[Input[StackCustomCookbooksSource]]]] = js.undefined
+  val customCookbooksSources: js.UndefOr[Input[js.Array[Input[StackCustomCookbooksSource]]]] = js.native
   /**
     * Custom JSON attributes to apply to the entire stack.
     */
-  val customJson: js.UndefOr[Input[String]] = js.undefined
+  val customJson: js.UndefOr[Input[String]] = js.native
   /**
     * Name of the availability zone where instances will be created
     * by default. This is required unless you set `vpcId`.
     */
-  val defaultAvailabilityZone: js.UndefOr[Input[String]] = js.undefined
+  val defaultAvailabilityZone: js.UndefOr[Input[String]] = js.native
   /**
     * The ARN of an IAM Instance Profile that created instances
     * will have by default.
     */
-  val defaultInstanceProfileArn: js.UndefOr[Input[String]] = js.undefined
+  val defaultInstanceProfileArn: js.UndefOr[Input[String]] = js.native
   /**
     * Name of OS that will be installed on instances by default.
     */
-  val defaultOs: js.UndefOr[Input[String]] = js.undefined
+  val defaultOs: js.UndefOr[Input[String]] = js.native
   /**
     * Name of the type of root device instances will have by default.
     */
-  val defaultRootDeviceType: js.UndefOr[Input[String]] = js.undefined
+  val defaultRootDeviceType: js.UndefOr[Input[String]] = js.native
   /**
     * Name of the SSH keypair that instances will have by default.
     */
-  val defaultSshKeyName: js.UndefOr[Input[String]] = js.undefined
+  val defaultSshKeyName: js.UndefOr[Input[String]] = js.native
   /**
     * Id of the subnet in which instances will be created by default. Mandatory
     * if `vpcId` is set, and forbidden if it isn't.
     */
-  val defaultSubnetId: js.UndefOr[Input[String]] = js.undefined
+  val defaultSubnetId: js.UndefOr[Input[String]] = js.native
   /**
     * Keyword representing the naming scheme that will be used for instance hostnames
     * within this stack.
     */
-  val hostnameTheme: js.UndefOr[Input[String]] = js.undefined
+  val hostnameTheme: js.UndefOr[Input[String]] = js.native
   /**
     * Boolean value controlling whether Opsworks will run Berkshelf for this stack.
     */
-  val manageBerkshelf: js.UndefOr[Input[Boolean]] = js.undefined
+  val manageBerkshelf: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The name of the stack.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the region where the stack will exist.
     */
-  val region: js.UndefOr[Input[String]] = js.undefined
+  val region: js.UndefOr[Input[String]] = js.native
   /**
     * The ARN of an IAM role that the OpsWorks service will act as.
     */
-  val serviceRoleArn: js.UndefOr[Input[String]] = js.undefined
-  val stackEndpoint: js.UndefOr[Input[String]] = js.undefined
+  val serviceRoleArn: js.UndefOr[Input[String]] = js.native
+  val stackEndpoint: js.UndefOr[Input[String]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * Boolean value controlling whether the custom cookbook settings are
     * enabled.
     */
-  val useCustomCookbooks: js.UndefOr[Input[Boolean]] = js.undefined
+  val useCustomCookbooks: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Boolean value controlling whether the standard OpsWorks
     * security groups apply to created instances.
     */
-  val useOpsworksSecurityGroups: js.UndefOr[Input[Boolean]] = js.undefined
+  val useOpsworksSecurityGroups: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The id of the VPC that this stack belongs to.
     */
-  val vpcId: js.UndefOr[Input[String]] = js.undefined
+  val vpcId: js.UndefOr[Input[String]] = js.native
 }
 
 object StackState {

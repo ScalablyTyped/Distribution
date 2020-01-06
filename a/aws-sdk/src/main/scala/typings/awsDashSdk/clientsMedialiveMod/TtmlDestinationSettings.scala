@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TtmlDestinationSettings extends js.Object {
   /**
     * When set to passthrough, passes through style and position information from a TTML-like input source (TTML, SMPTE-TT, CFF-TT) to the CFF-TT output or TTML output.
     */
-  var StyleControl: js.UndefOr[TtmlDestinationStyleControl] = js.undefined
+  var StyleControl: js.UndefOr[TtmlDestinationStyleControl] = js.native
 }
 
 object TtmlDestinationSettings {

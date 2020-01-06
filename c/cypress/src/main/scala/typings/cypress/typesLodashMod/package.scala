@@ -143,7 +143,7 @@ package object typesLodashMod {
     /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: P} & {[ P in K ]: never} & {[x: string] : never}[keyof T] */ js.Any
   ]
   type PartialDeep[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]:? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias cypress.cypress/types/lodash.PartialDeep<T[P]> * / object}
+  {[ P in keyof T ]:? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias cypress.cypress/types/lodash.PartialDeep<T[P]> * / object}
     */ typings.cypress.cypressStrings.PartialDeep with js.Any
   type PartialObject[T] = GlobalPartial[T]
   type PropertyName = String | Double | js.Symbol

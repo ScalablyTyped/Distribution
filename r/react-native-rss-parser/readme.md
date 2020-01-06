@@ -11,8 +11,8 @@ React Native compatible package to parse RSS feeds
 | Full name          | react-native-rss-parser |
 | Keywords           | react, native, rss, parser |
 | # releases         | 10 |
-| # dependents       | 2 |
-| # downloads        | 16951 |
+| # dependents       | 1 |
+| # downloads        | 21231 |
 | # stars            | 0 |
 
 ## Links

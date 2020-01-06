@@ -10,9 +10,9 @@ Simple RFC 6838 media type parser and formatter
 | ------------------ | :-------------: |
 | Full name          | media-typer |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 158 |
-| # downloads        | 286600079 |
+| # releases         | 5 |
+| # dependents       | 172 |
+| # downloads        | 419687967 |
 | # stars            | 2 |
 
 ## Links

@@ -10,9 +10,9 @@ Allows you prompt for various permissions to access device sensors, personal dat
 | ------------------ | :-------------: |
 | Full name          | expo-permissions |
 | Keywords           | react-native, expo, permissions |
-| # releases         | 23 |
-| # dependents       | 10 |
-| # downloads        | 963943 |
+| # releases         | 31 |
+| # dependents       | 17 |
+| # downloads        | 2245878 |
 | # stars            | 0 |
 
 ## Links

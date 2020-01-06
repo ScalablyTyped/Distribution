@@ -12,7 +12,7 @@ jQuery plugin to make page scroll looks smooth by animating it.
 | Keywords           | jquery-plugin, scroll, animation |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 3060 |
+| # downloads        | 5408 |
 | # stars            | 0 |
 
 ## Links

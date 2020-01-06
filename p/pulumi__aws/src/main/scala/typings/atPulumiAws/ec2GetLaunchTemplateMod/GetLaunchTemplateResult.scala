@@ -14,120 +14,121 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetLaunchTemplateResult extends js.Object {
   /**
     * Amazon Resource Name (ARN) of the launch template.
     */
-  val arn: String
+  val arn: String = js.native
   /**
     * Specify volumes to attach to the instance besides the volumes specified by the AMI.
     */
-  val blockDeviceMappings: js.Array[GetLaunchTemplateBlockDeviceMapping]
+  val blockDeviceMappings: js.Array[GetLaunchTemplateBlockDeviceMapping] = js.native
   /**
     * Customize the credit specification of the instance. See Credit
     * Specification below for more details.
     */
-  val creditSpecifications: js.Array[GetLaunchTemplateCreditSpecification]
+  val creditSpecifications: js.Array[GetLaunchTemplateCreditSpecification] = js.native
   /**
     * The default version of the launch template.
     */
-  val defaultVersion: Double
+  val defaultVersion: Double = js.native
   /**
     * Description of the launch template.
     */
-  val description: String
+  val description: String = js.native
   /**
     * If `true`, enables [EC2 Instance
     * Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/terminating-instances.html#Using_ChangingDisableAPITermination)
     */
-  val disableApiTermination: Boolean
+  val disableApiTermination: Boolean = js.native
   /**
     * If `true`, the launched EC2 instance will be EBS-optimized.
     */
-  val ebsOptimized: String
+  val ebsOptimized: String = js.native
   /**
     * The elastic GPU to attach to the instance. See Elastic GPU
     * below for more details.
     */
-  val elasticGpuSpecifications: js.Array[GetLaunchTemplateElasticGpuSpecification]
+  val elasticGpuSpecifications: js.Array[GetLaunchTemplateElasticGpuSpecification] = js.native
   /**
     * The IAM Instance Profile to launch the instance with. See Instance Profile
     * below for more details.
     */
-  val iamInstanceProfiles: js.Array[GetLaunchTemplateIamInstanceProfile]
+  val iamInstanceProfiles: js.Array[GetLaunchTemplateIamInstanceProfile] = js.native
   /**
     * id is the provider-assigned unique ID for this managed resource.
     */
-  val id: String
+  val id: String = js.native
   /**
     * The AMI from which to launch the instance.
     */
-  val imageId: String
+  val imageId: String = js.native
   /**
     * Shutdown behavior for the instance. Can be `stop` or `terminate`.
     * (Default: `stop`).
     */
-  val instanceInitiatedShutdownBehavior: String
+  val instanceInitiatedShutdownBehavior: String = js.native
   /**
     * The market (purchasing) option for the instance.
     * below for details.
     */
-  val instanceMarketOptions: js.Array[GetLaunchTemplateInstanceMarketOption]
+  val instanceMarketOptions: js.Array[GetLaunchTemplateInstanceMarketOption] = js.native
   /**
     * The type of the instance.
     */
-  val instanceType: String
+  val instanceType: String = js.native
   /**
     * The kernel ID.
     */
-  val kernelId: String
+  val kernelId: String = js.native
   /**
     * The key name to use for the instance.
     */
-  val keyName: String
+  val keyName: String = js.native
   /**
     * The latest version of the launch template.
     */
-  val latestVersion: Double
+  val latestVersion: Double = js.native
   /**
     * The monitoring option for the instance.
     */
-  val monitorings: js.Array[GetLaunchTemplateMonitoring]
-  val name: String
+  val monitorings: js.Array[GetLaunchTemplateMonitoring] = js.native
+  val name: String = js.native
   /**
     * Customize network interfaces to be attached at instance boot time. See Network
     * Interfaces below for more details.
     */
-  val networkInterfaces: js.Array[GetLaunchTemplateNetworkInterface]
+  val networkInterfaces: js.Array[GetLaunchTemplateNetworkInterface] = js.native
   /**
     * The placement of the instance.
     */
-  val placements: js.Array[GetLaunchTemplatePlacement]
+  val placements: js.Array[GetLaunchTemplatePlacement] = js.native
   /**
     * The ID of the RAM disk.
     */
-  val ramDiskId: String
+  val ramDiskId: String = js.native
   /**
     * A list of security group names to associate with. If you are creating Instances in a VPC, use
     * `vpcSecurityGroupIds` instead.
     */
-  val securityGroupNames: js.Array[String]
+  val securityGroupNames: js.Array[String] = js.native
   /**
     * The tags to apply to the resources during launch.
     */
-  val tagSpecifications: js.Array[GetLaunchTemplateTagSpecification]
+  val tagSpecifications: js.Array[GetLaunchTemplateTagSpecification] = js.native
   /**
     * (Optional) A mapping of tags to assign to the launch template.
     */
-  val tags: StringDictionary[js.Any]
+  val tags: StringDictionary[js.Any] = js.native
   /**
     * The Base64-encoded user data to provide when launching the instance.
     */
-  val userData: String
+  val userData: String = js.native
   /**
     * A list of security group IDs to associate with.
     */
-  val vpcSecurityGroupIds: js.Array[String]
+  val vpcSecurityGroupIds: js.Array[String] = js.native
 }
 
 object GetLaunchTemplateResult {
@@ -161,7 +162,7 @@ object GetLaunchTemplateResult {
     userData: String,
     vpcSecurityGroupIds: js.Array[String]
   ): GetLaunchTemplateResult = {
-    val __obj = js.Dynamic.literal(arn = arn, blockDeviceMappings = blockDeviceMappings, creditSpecifications = creditSpecifications, defaultVersion = defaultVersion, description = description, disableApiTermination = disableApiTermination, ebsOptimized = ebsOptimized, elasticGpuSpecifications = elasticGpuSpecifications, iamInstanceProfiles = iamInstanceProfiles, id = id, imageId = imageId, instanceInitiatedShutdownBehavior = instanceInitiatedShutdownBehavior, instanceMarketOptions = instanceMarketOptions, instanceType = instanceType, kernelId = kernelId, keyName = keyName, latestVersion = latestVersion, monitorings = monitorings, name = name, networkInterfaces = networkInterfaces, placements = placements, ramDiskId = ramDiskId, securityGroupNames = securityGroupNames, tagSpecifications = tagSpecifications, tags = tags, userData = userData, vpcSecurityGroupIds = vpcSecurityGroupIds)
+    val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], blockDeviceMappings = blockDeviceMappings.asInstanceOf[js.Any], creditSpecifications = creditSpecifications.asInstanceOf[js.Any], defaultVersion = defaultVersion.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], disableApiTermination = disableApiTermination.asInstanceOf[js.Any], ebsOptimized = ebsOptimized.asInstanceOf[js.Any], elasticGpuSpecifications = elasticGpuSpecifications.asInstanceOf[js.Any], iamInstanceProfiles = iamInstanceProfiles.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], imageId = imageId.asInstanceOf[js.Any], instanceInitiatedShutdownBehavior = instanceInitiatedShutdownBehavior.asInstanceOf[js.Any], instanceMarketOptions = instanceMarketOptions.asInstanceOf[js.Any], instanceType = instanceType.asInstanceOf[js.Any], kernelId = kernelId.asInstanceOf[js.Any], keyName = keyName.asInstanceOf[js.Any], latestVersion = latestVersion.asInstanceOf[js.Any], monitorings = monitorings.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], networkInterfaces = networkInterfaces.asInstanceOf[js.Any], placements = placements.asInstanceOf[js.Any], ramDiskId = ramDiskId.asInstanceOf[js.Any], securityGroupNames = securityGroupNames.asInstanceOf[js.Any], tagSpecifications = tagSpecifications.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], userData = userData.asInstanceOf[js.Any], vpcSecurityGroupIds = vpcSecurityGroupIds.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetLaunchTemplateResult]
   }

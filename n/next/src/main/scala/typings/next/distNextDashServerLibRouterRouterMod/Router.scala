@@ -20,7 +20,11 @@ trait Router extends BaseRouter {
   var events: MittEmitter = js.native
   var isSsr: Boolean = js.native
   var pageLoader: js.Any = js.native
+  var sdc: StringDictionary[js.Object] = js.native
   var sub: Subscription = js.native
+  def _getData[T](fn: js.Function0[js.Promise[T]]): js.Promise[T] = js.native
+  def _getStaticData(asPath: String): js.Promise[js.Object] = js.native
+  def _getStaticData(asPath: String, _cachedData: js.Object): js.Promise[js.Object] = js.native
   def _wrapApp(App: ComponentType[js.Object]): js.Any = js.native
   def abortComponentLoad(as: String): Unit = js.native
   /**

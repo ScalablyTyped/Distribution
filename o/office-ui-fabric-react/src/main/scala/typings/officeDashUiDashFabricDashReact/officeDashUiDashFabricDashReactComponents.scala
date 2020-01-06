@@ -151,6 +151,8 @@ object officeDashUiDashFabricDashReactComponents extends officeDashUiDashFabricD
   @scala.inline
   def ChoiceGroupBasicExample: ComponentType[js.Object] = typings.officeDashUiDashFabricDashReact.libComponentsChoiceGroupExamplesChoiceGroupDotBasicDotExampleMod.ChoiceGroupBasicExample.asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]
   @scala.inline
+  def ChoiceGroupControlledExample: ComponentType[js.Object] = typings.officeDashUiDashFabricDashReact.libComponentsChoiceGroupExamplesChoiceGroupDotControlledDotExampleMod.ChoiceGroupControlledExample.asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]
+  @scala.inline
   def ChoiceGroupCustomExample: ComponentType[js.Object] = typings.officeDashUiDashFabricDashReact.libComponentsChoiceGroupExamplesChoiceGroupDotCustomDotExampleMod.ChoiceGroupCustomExample.asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]
   @scala.inline
   def ChoiceGroupIconExample: ComponentType[js.Object] = typings.officeDashUiDashFabricDashReact.libComponentsChoiceGroupExamplesChoiceGroupDotIconDotExampleMod.ChoiceGroupIconExample.asInstanceOf[typings.react.reactMod.ComponentType[js.Object]]

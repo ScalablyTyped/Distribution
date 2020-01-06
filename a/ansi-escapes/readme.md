@@ -10,9 +10,9 @@ ANSI escape codes for manipulating the terminal
 | ------------------ | :-------------: |
 | Full name          | ansi-escapes |
 | Keywords           | ansi, terminal, console, cli, string, tty, escape, escapes, formatting, shell, xterm, log, logging, command-line, text, vt100, sequence, control, code, codes, cursor, iterm, iterm2 |
-| # releases         | 7 |
-| # dependents       | 310 |
-| # downloads        | 359904026 |
+| # releases         | 9 |
+| # dependents       | 390 |
+| # downloads        | 561325195 |
 | # stars            | 7 |
 
 ## Links

@@ -4,15 +4,15 @@
 Typings are for version 1.2
 
 ## Library description:
-An ESnext spec-compliant `Array.prototype.flat` shim/polyfill/replacement that works as far down as ES3.
+An ES2019 spec-compliant `Array.prototype.flat` shim/polyfill/replacement that works as far down as ES3.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | array.prototype.flat |
 | Keywords           | Array.prototype.flatten, Array.prototype.flat, flatten, flat, array, ESnext, shim, polyfill, flatMap, Array.prototype.flatMap, es-shim API |
 | # releases         | 3 |
-| # dependents       | 27 |
-| # downloads        | 69721458 |
+| # dependents       | 37 |
+| # downloads        | 83798894 |
 | # stars            | 0 |
 
 ## Links

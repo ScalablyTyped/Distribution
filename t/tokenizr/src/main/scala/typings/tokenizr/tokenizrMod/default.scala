@@ -26,7 +26,7 @@ object default extends js.Object {
   ] = js.native
   val Token: Instantiable6[
     /* type */ String, 
-    /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ /* value */ js.Any, 
+    /* import warning: RewrittenClass.unapply cls was tparam T */ /* value */ js.Any, 
     /* text */ String, 
     js.UndefOr[/* pos */ Double], 
     js.UndefOr[/* line */ Double], 

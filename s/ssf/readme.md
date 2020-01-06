@@ -10,9 +10,9 @@ Format data using ECMA-376 spreadsheet Format Codes
 | ------------------ | :-------------: |
 | Full name          | ssf |
 | Keywords           | format, sprintf, spreadsheet |
-| # releases         | 8 |
-| # dependents       | 78 |
-| # downloads        | 10478807 |
+| # releases         | 2 |
+| # dependents       | 117 |
+| # downloads        | 17184643 |
 | # stars            | 1 |
 
 ## Links

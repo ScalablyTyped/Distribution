@@ -11,8 +11,8 @@ The lodash method `_.take` exported as a module.
 | Full name          | lodash.take |
 | Keywords           | lodash-modularized, take |
 | # releases         | 0 |
-| # dependents       | 23 |
-| # downloads        | 164043 |
+| # dependents       | 26 |
+| # downloads        | 354257 |
 | # stars            | 0 |
 
 ## Links

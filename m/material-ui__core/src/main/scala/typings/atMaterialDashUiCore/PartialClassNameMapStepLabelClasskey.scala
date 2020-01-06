@@ -5,18 +5,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/StepLabel/StepLabel.StepLabelClasskey>> */
+@js.native
 trait PartialClassNameMapStepLabelClasskey extends js.Object {
-  var active: js.UndefOr[String] = js.undefined
-  var alternativeLabel: js.UndefOr[String] = js.undefined
-  var completed: js.UndefOr[String] = js.undefined
-  var disabled: js.UndefOr[String] = js.undefined
-  var error: js.UndefOr[String] = js.undefined
-  var horizontal: js.UndefOr[String] = js.undefined
-  var iconContainer: js.UndefOr[String] = js.undefined
-  var label: js.UndefOr[String] = js.undefined
-  var labelContainer: js.UndefOr[String] = js.undefined
-  var root: js.UndefOr[String] = js.undefined
-  var vertical: js.UndefOr[String] = js.undefined
+  var active: js.UndefOr[String] = js.native
+  var alternativeLabel: js.UndefOr[String] = js.native
+  var completed: js.UndefOr[String] = js.native
+  var disabled: js.UndefOr[String] = js.native
+  var error: js.UndefOr[String] = js.native
+  var horizontal: js.UndefOr[String] = js.native
+  var iconContainer: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.native
+  var labelContainer: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.native
+  var vertical: js.UndefOr[String] = js.native
 }
 
 object PartialClassNameMapStepLabelClasskey {

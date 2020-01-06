@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ListenerPolicyArgs extends js.Object {
   /**
     * The load balancer to attach the policy to.
     */
-  val loadBalancerName: Input[String]
+  val loadBalancerName: Input[String] = js.native
   /**
     * The load balancer listener port to apply the policy to.
     */
-  val loadBalancerPort: Input[Double]
+  val loadBalancerPort: Input[Double] = js.native
   /**
     * List of Policy Names to apply to the backend server.
     */
-  val policyNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val policyNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
 }
 
 object ListenerPolicyArgs {

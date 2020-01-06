@@ -10,9 +10,9 @@ WebRTC abstraction for making it simple to manage multiple peer connections of v
 | ------------------ | :-------------: |
 | Full name          | webrtc |
 | Keywords           | webrtc, browser |
-| # releases         | 1 |
-| # dependents       | 2 |
-| # downloads        | 8274 |
+| # releases         | 0 |
+| # dependents       | 3 |
+| # downloads        | 20198 |
 | # stars            | 8 |
 
 ## Links

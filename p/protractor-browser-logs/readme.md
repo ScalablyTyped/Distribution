@@ -10,9 +10,9 @@ Provides tools for asserting browser logs inside protractor tests
 | ------------------ | :-------------: |
 | Full name          | protractor-browser-logs |
 | Keywords           | angular, test, testing, webdriver, webdriverjs, selenium, protractor, protractor-plugin, browser, logs, console |
-| # releases         | 54 |
+| # releases         | 106 |
 | # dependents       | 4 |
-| # downloads        | 201395 |
+| # downloads        | 400549 |
 | # stars            | 0 |
 
 ## Links

@@ -12,7 +12,7 @@ Validation for Swedish Social Security number and Corporation identity number
 | Keywords           | validate, swedish, personnummer, organisationnummer, ssn, social, security, number, social security number, corporate identity |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 4275 |
+| # downloads        | 12740 |
 | # stars            | 0 |
 
 ## Links

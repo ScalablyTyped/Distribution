@@ -10,9 +10,9 @@ JupyterLab - Main Menu Extension
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/mainmenu-extension |
 | Keywords           | - |
-| # releases         | 29 |
+| # releases         | 66 |
 | # dependents       | 1 |
-| # downloads        | 580455 |
+| # downloads        | 748377 |
 | # stars            | 0 |
 
 ## Links

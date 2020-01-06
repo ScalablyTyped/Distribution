@@ -10,9 +10,9 @@ A complete solution to package and build a ready for distribution Electron app f
 | ------------------ | :-------------: |
 | Full name          | electron-builder |
 | Keywords           | electron, builder, build, installer, install, packager, pack, nsis, app, dmg, pkg, msi, exe, setup, Windows, OS X, MacOS, Mac, appx, snap, portable |
-| # releases         | 346 |
-| # dependents       | 45 |
-| # downloads        | 4645415 |
+| # releases         | 190 |
+| # dependents       | 58 |
+| # downloads        | 4158067 |
 | # stars            | 60 |
 
 ## Links

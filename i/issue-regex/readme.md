@@ -10,9 +10,9 @@ Regular expression for matching issue references
 | ------------------ | :-------------: |
 | Full name          | issue-regex |
 | Keywords           | issue, issues, pr, pull, request, reference, references, ref, regex, regexp, regular, expression, github, gh, link |
-| # releases         | 5 |
-| # dependents       | 8 |
-| # downloads        | 330787 |
+| # releases         | 4 |
+| # dependents       | 11 |
+| # downloads        | 743389 |
 | # stars            | 0 |
 
 ## Links

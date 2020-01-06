@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ProtectionState extends js.Object {
   /**
     * A friendly name for the Protection you are creating.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * The ARN (Amazon Resource Name) of the resource to be protected.
     */
-  val resourceArn: js.UndefOr[Input[String]] = js.undefined
+  val resourceArn: js.UndefOr[Input[String]] = js.native
 }
 
 object ProtectionState {

@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CertificateState extends js.Object {
   /**
     * Boolean flag to indicate if the certificate should be active
     */
-  val active: js.UndefOr[Input[Boolean]] = js.undefined
+  val active: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The ARN of the created certificate.
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * The certificate data, in PEM format.
     */
-  val certificatePem: js.UndefOr[Input[String]] = js.undefined
+  val certificatePem: js.UndefOr[Input[String]] = js.native
   /**
     * The certificate signing request. Review
     * [CreateCertificateFromCsr](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateCertificateFromCsr.html)
@@ -25,15 +26,15 @@ trait CertificateState extends js.Object {
     * If none is specified both the certificate and keys will be generated, review [CreateKeysAndCertificate](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateKeysAndCertificate.html)
     * for more information on generating keys and a certificate.
     */
-  val csr: js.UndefOr[Input[String]] = js.undefined
+  val csr: js.UndefOr[Input[String]] = js.native
   /**
     * When no CSR is provided, the private key.
     */
-  val privateKey: js.UndefOr[Input[String]] = js.undefined
+  val privateKey: js.UndefOr[Input[String]] = js.native
   /**
     * When no CSR is provided, the public key.
     */
-  val publicKey: js.UndefOr[Input[String]] = js.undefined
+  val publicKey: js.UndefOr[Input[String]] = js.native
 }
 
 object CertificateState {

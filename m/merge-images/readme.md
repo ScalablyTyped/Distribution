@@ -10,9 +10,9 @@ Easily compose images together without messing around with canvas
 | ------------------ | :-------------: |
 | Full name          | merge-images |
 | Keywords           | compose, merge, images, without, no, canvas |
-| # releases         | 5 |
-| # dependents       | 7 |
-| # downloads        | 71804 |
+| # releases         | 4 |
+| # dependents       | 8 |
+| # downloads        | 153995 |
 | # stars            | 2 |
 
 ## Links

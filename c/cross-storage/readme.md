@@ -10,9 +10,9 @@ Cross domain local storage
 | ------------------ | :-------------: |
 | Full name          | cross-storage |
 | Keywords           | local, storage, cross, domain |
-| # releases         | 1 |
-| # dependents       | 6 |
-| # downloads        | 148820 |
+| # releases         | 0 |
+| # dependents       | 12 |
+| # downloads        | 191296 |
 | # stars            | 5 |
 
 ## Links

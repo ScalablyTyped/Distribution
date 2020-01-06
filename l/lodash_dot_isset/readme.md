@@ -11,8 +11,8 @@ The lodash method `_.isSet` exported as a module.
 | Full name          | lodash.isset |
 | Keywords           | lodash-modularized, isset |
 | # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 22389 |
+| # dependents       | 6 |
+| # downloads        | 25108 |
 | # stars            | 0 |
 
 ## Links

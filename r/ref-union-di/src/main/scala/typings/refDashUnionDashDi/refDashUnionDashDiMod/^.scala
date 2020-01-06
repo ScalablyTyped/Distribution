@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^
   extends TopLevel[
-      Instantiable0[UnionType] with (Instantiable1[/* fields */ js.Object, UnionType]) with (Instantiable1[/* fields */ js.Array[js.Any], UnionType])
+      Instantiable0[UnionType] with (Instantiable1[/* fields */ js.Array[js.Any], UnionType]) with (Instantiable1[/* fields */ js.Object, UnionType])
     ] {
   def apply(): UnionType = js.native
   def apply(fields: js.Array[_]): UnionType = js.native

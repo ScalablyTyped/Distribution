@@ -10,9 +10,9 @@ all the types of nodes in htmlparser2's dom
 | ------------------ | :-------------: |
 | Full name          | domelementtype |
 | Keywords           | dom, htmlparser2 |
-| # releases         | 3 |
-| # dependents       | 56 |
-| # downloads        | 397862872 |
+| # releases         | 5 |
+| # dependents       | 65 |
+| # downloads        | 487518691 |
 | # stars            | 3 |
 
 ## Links

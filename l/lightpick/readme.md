@@ -10,9 +10,9 @@ Javascript date range picker - lightweight, no jQuery
 | ------------------ | :-------------: |
 | Full name          | lightpick |
 | Keywords           | datepicker, date, daterange, date, picker, range |
-| # releases         | 37 |
-| # dependents       | 0 |
-| # downloads        | 37245 |
+| # releases         | 45 |
+| # dependents       | 2 |
+| # downloads        | 53937 |
 | # stars            | 0 |
 
 ## Links

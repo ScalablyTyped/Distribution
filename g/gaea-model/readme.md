@@ -12,7 +12,7 @@ Typings are for version 1.0.29
 | Keywords           | gaea-model |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 2566 |
+| # downloads        | 2751 |
 | # stars            | 0 |
 
 ## Links

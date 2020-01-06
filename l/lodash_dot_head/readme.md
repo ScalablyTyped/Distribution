@@ -11,8 +11,8 @@ The lodash method `_.head` exported as a module.
 | Full name          | lodash.head |
 | Keywords           | lodash-modularized, head |
 | # releases         | 0 |
-| # dependents       | 17 |
-| # downloads        | 427671 |
+| # dependents       | 21 |
+| # downloads        | 845592 |
 | # stars            | 0 |
 
 ## Links

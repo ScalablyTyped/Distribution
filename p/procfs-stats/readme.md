@@ -11,8 +11,8 @@ get detailed information (more than ps, top etc) about running process on linux 
 | Full name          | procfs-stats |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 119571 |
+| # dependents       | 14 |
+| # downloads        | 119603 |
 | # stars            | 1 |
 
 ## Links

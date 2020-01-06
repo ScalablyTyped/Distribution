@@ -10,9 +10,9 @@ isomorphic google map react component, allows render react components on the goo
 | ------------------ | :-------------: |
 | Full name          | google-map-react |
 | Keywords           | react, reactjs, google, map, maps, isomorphic, render, component, javascript, react-component |
-| # releases         | 26 |
-| # dependents       | 67 |
-| # downloads        | 2162480 |
+| # releases         | 25 |
+| # dependents       | 84 |
+| # downloads        | 3856105 |
 | # stars            | 15 |
 
 ## Links

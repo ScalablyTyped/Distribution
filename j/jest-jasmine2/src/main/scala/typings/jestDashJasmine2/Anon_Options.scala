@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Options
-  extends Instantiable1[/* _options */ js.Object, Anon_AccessType]
-     with Instantiable0[Anon_AccessType]
+  extends Instantiable0[Anon_AccessType]
+     with Instantiable1[/* _options */ js.Object, Anon_AccessType]
 

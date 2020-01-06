@@ -4,17 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DeleteIdentityPoolInput extends js.Object {
   /**
     * An identity pool ID in the format REGION:GUID.
     */
-  var IdentityPoolId: typings.awsDashSdk.clientsCognitoidentityMod.IdentityPoolId
+  var IdentityPoolId: typings.awsDashSdk.clientsCognitoidentityMod.IdentityPoolId = js.native
 }
 
 object DeleteIdentityPoolInput {
   @scala.inline
   def apply(IdentityPoolId: IdentityPoolId): DeleteIdentityPoolInput = {
-    val __obj = js.Dynamic.literal(IdentityPoolId = IdentityPoolId)
+    val __obj = js.Dynamic.literal(IdentityPoolId = IdentityPoolId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeleteIdentityPoolInput]
   }

@@ -4,18 +4,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MergePullRequestByFastForwardOutput extends js.Object {
   /**
-    * Information about the specified pull request, including information about the merge.
+    * Information about the specified pull request, including the merge.
     */
-  var pullRequest: js.UndefOr[PullRequest] = js.undefined
+  var pullRequest: js.UndefOr[PullRequest] = js.native
 }
 
 object MergePullRequestByFastForwardOutput {
   @scala.inline
   def apply(pullRequest: PullRequest = null): MergePullRequestByFastForwardOutput = {
     val __obj = js.Dynamic.literal()
-    if (pullRequest != null) __obj.updateDynamic("pullRequest")(pullRequest)
+    if (pullRequest != null) __obj.updateDynamic("pullRequest")(pullRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[MergePullRequestByFastForwardOutput]
   }
 }

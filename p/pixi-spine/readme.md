@@ -4,15 +4,15 @@
 Typings are for version 2.1.7
 
 ## Library description:
-Spine implementation for pixi v^3 and v^4
+Spine implementation for pixi v^5
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | pixi-spine |
 | Keywords           | - |
-| # releases         | 18 |
-| # dependents       | 15 |
-| # downloads        | 67014 |
+| # releases         | 24 |
+| # dependents       | 17 |
+| # downloads        | 107138 |
 | # stars            | 1 |
 
 ## Links

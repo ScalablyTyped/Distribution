@@ -11,8 +11,8 @@ A fully Unicode-aware string reverser written in JavaScript.
 | Full name          | esrever |
 | Keywords           | string, reverse, unicode |
 | # releases         | 0 |
-| # dependents       | 39 |
-| # downloads        | 3323196 |
+| # dependents       | 43 |
+| # downloads        | 3948437 |
 | # stars            | 2 |
 
 ## Links

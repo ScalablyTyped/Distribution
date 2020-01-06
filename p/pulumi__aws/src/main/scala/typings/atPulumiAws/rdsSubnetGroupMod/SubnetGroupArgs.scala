@@ -6,27 +6,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SubnetGroupArgs extends js.Object {
   /**
     * The description of the DB subnet group. Defaults to "Managed by Pulumi".
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the DB subnet group. If omitted, this provider will assign a random, unique name.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`.
     */
-  val namePrefix: js.UndefOr[Input[String]] = js.undefined
+  val namePrefix: js.UndefOr[Input[String]] = js.native
   /**
     * A list of VPC subnet IDs.
     */
-  val subnetIds: Input[js.Array[Input[String]]]
+  val subnetIds: Input[js.Array[Input[String]]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object SubnetGroupArgs {

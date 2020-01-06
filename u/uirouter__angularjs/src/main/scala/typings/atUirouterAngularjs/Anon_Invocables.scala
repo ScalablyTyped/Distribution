@@ -1,6 +1,7 @@
 package typings.atUirouterAngularjs
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.atUirouterCore.libCommonCommonMod.Obj
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,8 +44,8 @@ trait Anon_Invocables extends js.Object {
     * @param locals key/value pre-resolved data (locals)
     * @param parent a promise for a "parent resolve"
     */
-  def resolve(invocables: StringDictionary[js.Function]): js.Promise[js.Object] = js.native
-  def resolve(invocables: StringDictionary[js.Function], locals: js.Object): js.Promise[js.Object] = js.native
-  def resolve(invocables: StringDictionary[js.Function], locals: js.Object, parent: js.Promise[_]): js.Promise[js.Object] = js.native
+  def resolve(invocables: StringDictionary[js.Function]): js.Promise[Obj] = js.native
+  def resolve(invocables: StringDictionary[js.Function], locals: js.Object): js.Promise[Obj] = js.native
+  def resolve(invocables: StringDictionary[js.Function], locals: js.Object, parent: js.Promise[_]): js.Promise[Obj] = js.native
 }
 

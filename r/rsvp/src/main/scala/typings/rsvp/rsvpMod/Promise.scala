@@ -13,9 +13,7 @@ object Promise
   extends Instantiable1[
       /* executor */ js.Function2[
         /* resolve */ js.Function1[
-          /* value */ js.UndefOr[
-            Arg[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any]
-          ], 
+          /* value */ js.UndefOr[Arg[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any]], 
           Unit
         ], 
         /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], Unit], 
@@ -26,9 +24,7 @@ object Promise
      with Instantiable2[
       /* executor */ js.Function2[
         /* resolve */ js.Function1[
-          /* value */ js.UndefOr[
-            Arg[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any]
-          ], 
+          /* value */ js.UndefOr[Arg[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any]], 
           Unit
         ], 
         /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], Unit], 

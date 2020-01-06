@@ -11,8 +11,8 @@ Hystrix-like circuit breaker for JavaScript.
 | Full name          | circuit-breaker-js |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 86751 |
+| # dependents       | 7 |
+| # downloads        | 106228 |
 | # stars            | 7 |
 
 ## Links

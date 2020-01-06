@@ -10,15 +10,15 @@ A Storybook addon to show additional information for your stories.
 | ------------------ | :-------------: |
 | Full name          | @storybook/addon-info |
 | Keywords           | addon, storybook |
-| # releases         | 252 |
-| # dependents       | 56 |
-| # downloads        | 14679675 |
+| # releases         | 420 |
+| # dependents       | 79 |
+| # downloads        | 13330714 |
 | # stars            | 1 |
 
 ## Links
-- [Homepage](https://github.com/storybooks/storybook/tree/master/addons/info)
-- [Bugs](https://github.com/storybooks/storybook/issues)
-- [Repository](https://github.com/storybooks/storybook)
+- [Homepage](https://github.com/storybookjs/storybook/tree/master/addons/info)
+- [Bugs](https://github.com/storybookjs/storybook/issues)
+- [Repository](https://github.com/storybookjs/storybook)
 - [Npm](https://www.npmjs.com/package/%40storybook%2Faddon-info)
     
 

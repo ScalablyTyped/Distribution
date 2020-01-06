@@ -10,9 +10,9 @@ A base class utility that manages events and options in modules.
 | ------------------ | :-------------: |
 | Full name          | @egjs/component |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 14 |
-| # downloads        | 26446 |
+| # releases         | 3 |
+| # dependents       | 22 |
+| # downloads        | 33821 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ Encode and parse data in the Concise Binary Object Representation (CBOR) data fo
 | ------------------ | :-------------: |
 | Full name          | cbor |
 | Keywords           | coap, cbor, json |
-| # releases         | 10 |
-| # dependents       | 53 |
-| # downloads        | 309139 |
+| # releases         | 12 |
+| # dependents       | 89 |
+| # downloads        | 1979554 |
 | # stars            | 4 |
 
 ## Links

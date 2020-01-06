@@ -10,9 +10,9 @@ Monkey patches React to notify you about avoidable re-renders.
 | ------------------ | :-------------: |
 | Full name          | @welldone-software/why-did-you-render |
 | Keywords           | react, component, pure, performance, render, update, tool |
-| # releases         | 48 |
-| # dependents       | 6 |
-| # downloads        | 369444 |
+| # releases         | 57 |
+| # dependents       | 15 |
+| # downloads        | 1015261 |
 | # stars            | 0 |
 
 ## Links

@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SlotMigration extends js.Object {
   /**
     * The percentage of the slot migration that is complete.
     */
-  var ProgressPercentage: js.UndefOr[Double] = js.undefined
+  var ProgressPercentage: js.UndefOr[Double] = js.native
 }
 
 object SlotMigration {

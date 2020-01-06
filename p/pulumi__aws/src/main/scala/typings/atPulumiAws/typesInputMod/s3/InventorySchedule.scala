@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InventorySchedule extends js.Object {
   /**
-    * Specifies how frequently inventory results are produced. Can be `Daily` or `Weekly`.
+    * Specifies how frequently inventory results are produced. Valid values: `Daily`, `Weekly`.
     */
-  var frequency: Input[String]
+  var frequency: Input[String] = js.native
 }
 
 object InventorySchedule {

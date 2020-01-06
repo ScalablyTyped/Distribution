@@ -10,9 +10,9 @@ Higher-order functions for easier error handling
 | ------------------ | :-------------: |
 | Full name          | iferr |
 | Keywords           | error, errors |
-| # releases         | 4 |
-| # dependents       | 47 |
-| # downloads        | 142684559 |
+| # releases         | 3 |
+| # dependents       | 61 |
+| # downloads        | 254509865 |
 | # stars            | 1 |
 
 ## Links

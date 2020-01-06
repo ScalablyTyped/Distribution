@@ -4,18 +4,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UpdateDeviceInstanceResult extends js.Object {
   /**
-    * An object containing information about your device instance.
+    * An object that contains information about your device instance.
     */
-  var deviceInstance: js.UndefOr[DeviceInstance] = js.undefined
+  var deviceInstance: js.UndefOr[DeviceInstance] = js.native
 }
 
 object UpdateDeviceInstanceResult {
   @scala.inline
   def apply(deviceInstance: DeviceInstance = null): UpdateDeviceInstanceResult = {
     val __obj = js.Dynamic.literal()
-    if (deviceInstance != null) __obj.updateDynamic("deviceInstance")(deviceInstance)
+    if (deviceInstance != null) __obj.updateDynamic("deviceInstance")(deviceInstance.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDeviceInstanceResult]
   }
 }

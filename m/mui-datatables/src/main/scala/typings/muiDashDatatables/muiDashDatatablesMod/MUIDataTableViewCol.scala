@@ -9,7 +9,7 @@ trait MUIDataTableViewCol extends js.Object {
   var columns: js.Array[_]
   var `object`: js.Object
   def onColumnUpdate(
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
   ): js.Any
 }
 

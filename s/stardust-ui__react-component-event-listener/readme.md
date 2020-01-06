@@ -10,9 +10,9 @@ React components for binding events on the global scope.
 | ------------------ | :-------------: |
 | Full name          | @stardust-ui/react-component-event-listener |
 | Keywords           | - |
-| # releases         | 33 |
-| # dependents       | 1 |
-| # downloads        | 57779 |
+| # releases         | 37 |
+| # dependents       | 3 |
+| # downloads        | 603888 |
 | # stars            | 0 |
 
 ## Links

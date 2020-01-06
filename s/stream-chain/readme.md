@@ -10,9 +10,9 @@ Chain functions as transform streams.
 | ------------------ | :-------------: |
 | Full name          | stream-chain |
 | Keywords           | stream, chain |
-| # releases         | 11 |
-| # dependents       | 2 |
-| # downloads        | 162421 |
+| # releases         | 12 |
+| # dependents       | 7 |
+| # downloads        | 501337 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ Helper to require() directories.
 | ------------------ | :-------------: |
 | Full name          | require-dir |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 813 |
-| # downloads        | 8999305 |
+| # releases         | 4 |
+| # dependents       | 848 |
+| # downloads        | 9538391 |
 | # stars            | 91 |
 
 ## Links

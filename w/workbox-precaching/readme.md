@@ -10,9 +10,9 @@ This module efficiently precaches assets.
 | ------------------ | :-------------: |
 | Full name          | workbox-precaching |
 | Keywords           | workbox, workboxjs, service worker, sw |
-| # releases         | 43 |
+| # releases         | 41 |
 | # dependents       | 2 |
-| # downloads        | 48667783 |
+| # downloads        | 50233207 |
 | # stars            | 0 |
 
 ## Links

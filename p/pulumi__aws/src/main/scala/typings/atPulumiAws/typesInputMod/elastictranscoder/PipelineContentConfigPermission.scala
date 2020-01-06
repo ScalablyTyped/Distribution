@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PipelineContentConfigPermission extends js.Object {
   /**
     * The permission that you want to give to the AWS user that you specified in `thumbnail_config_permissions.grantee`.
     */
-  var accesses: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  var accesses: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The AWS user or group that you want to have access to thumbnail files.
     */
-  var grantee: js.UndefOr[Input[String]] = js.undefined
+  var grantee: js.UndefOr[Input[String]] = js.native
   /**
     * Specify the type of value that appears in the `thumbnail_config_permissions.grantee` object.
     */
-  var granteeType: js.UndefOr[Input[String]] = js.undefined
+  var granteeType: js.UndefOr[Input[String]] = js.native
 }
 
 object PipelineContentConfigPermission {

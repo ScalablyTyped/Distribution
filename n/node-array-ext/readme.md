@@ -12,13 +12,10 @@ A library that contains simple extensions for nodejs arrays.
 | Keywords           | node, array, extension, async |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 143 |
+| # downloads        | 144 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/Beng89/node-array-ext#readme)
-- [Bugs](https://github.com/Beng89/node-array-ext/issues)
-- [Repository](https://github.com/Beng89/node-array-ext)
 - [Npm](https://www.npmjs.com/package/node-array-ext)
     
 

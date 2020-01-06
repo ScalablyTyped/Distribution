@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "commander-remaining-args"
-version := "1.2-dt-20191223Z-fd463f"
+version := "1.2-dt-20191223Z-fb9e80"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "commander" % "3.0.2-c49c67",
-  "org.scalablytyped" %%% "node" % "13.1-dt-20191226Z-155d58",
-  "org.scalablytyped" %%% "std" % "3.7-953338")
+  "org.scalablytyped" %%% "commander" % "3.0.2-73a4c4",
+  "org.scalablytyped" %%% "node" % "13.1-dt-20200103Z-b9f880",
+  "org.scalablytyped" %%% "std" % "3.7-b6d959")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

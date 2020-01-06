@@ -10,9 +10,9 @@ Return true if a file path contains the given path.
 | ------------------ | :-------------: |
 | Full name          | contains-path |
 | Keywords           | contains, directory, dirname, exec, ext, extname, file, filepath, fp, has, match, matches, path, regex, test |
-| # releases         | 2 |
-| # dependents       | 24 |
-| # downloads        | 117695494 |
+| # releases         | 0 |
+| # dependents       | 36 |
+| # downloads        | 185452883 |
 | # stars            | 1 |
 
 ## Links

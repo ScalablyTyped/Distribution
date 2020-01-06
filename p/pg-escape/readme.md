@@ -11,8 +11,8 @@ escape postgres queries which do not support stored procedures
 | Full name          | pg-escape |
 | Keywords           | pg, postgres, escape, query |
 | # releases         | 0 |
-| # dependents       | 37 |
-| # downloads        | 221933 |
+| # dependents       | 43 |
+| # downloads        | 337296 |
 | # stars            | 2 |
 
 ## Links

@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ListDevicesRequest extends js.Object {
   /**
     * The access tokens for the request to list devices.
     */
-  var AccessToken: TokenModelType
+  var AccessToken: TokenModelType = js.native
   /**
     * The limit of the device request.
     */
-  var Limit: js.UndefOr[QueryLimitType] = js.undefined
+  var Limit: js.UndefOr[QueryLimitType] = js.native
   /**
     * The pagination token for the list request.
     */
-  var PaginationToken: js.UndefOr[SearchPaginationTokenType] = js.undefined
+  var PaginationToken: js.UndefOr[SearchPaginationTokenType] = js.native
 }
 
 object ListDevicesRequest {
@@ -26,9 +27,9 @@ object ListDevicesRequest {
     Limit: Int | Double = null,
     PaginationToken: SearchPaginationTokenType = null
   ): ListDevicesRequest = {
-    val __obj = js.Dynamic.literal(AccessToken = AccessToken)
+    val __obj = js.Dynamic.literal(AccessToken = AccessToken.asInstanceOf[js.Any])
     if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
-    if (PaginationToken != null) __obj.updateDynamic("PaginationToken")(PaginationToken)
+    if (PaginationToken != null) __obj.updateDynamic("PaginationToken")(PaginationToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDevicesRequest]
   }
 }

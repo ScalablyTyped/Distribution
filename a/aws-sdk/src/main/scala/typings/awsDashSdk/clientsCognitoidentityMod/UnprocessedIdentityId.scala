@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UnprocessedIdentityId extends js.Object {
   /**
     * The error code indicating the type of error that occurred.
     */
-  var ErrorCode: js.UndefOr[typings.awsDashSdk.clientsCognitoidentityMod.ErrorCode] = js.undefined
+  var ErrorCode: js.UndefOr[typings.awsDashSdk.clientsCognitoidentityMod.ErrorCode] = js.native
   /**
     * A unique identifier in the format REGION:GUID.
     */
-  var IdentityId: js.UndefOr[typings.awsDashSdk.clientsCognitoidentityMod.IdentityId] = js.undefined
+  var IdentityId: js.UndefOr[typings.awsDashSdk.clientsCognitoidentityMod.IdentityId] = js.native
 }
 
 object UnprocessedIdentityId {
@@ -20,7 +21,7 @@ object UnprocessedIdentityId {
   def apply(ErrorCode: ErrorCode = null, IdentityId: IdentityId = null): UnprocessedIdentityId = {
     val __obj = js.Dynamic.literal()
     if (ErrorCode != null) __obj.updateDynamic("ErrorCode")(ErrorCode.asInstanceOf[js.Any])
-    if (IdentityId != null) __obj.updateDynamic("IdentityId")(IdentityId)
+    if (IdentityId != null) __obj.updateDynamic("IdentityId")(IdentityId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnprocessedIdentityId]
   }
 }

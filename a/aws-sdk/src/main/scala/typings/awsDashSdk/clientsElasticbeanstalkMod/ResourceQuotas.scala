@@ -4,27 +4,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ResourceQuotas extends js.Object {
   /**
     * The quota for applications in the AWS account.
     */
-  var ApplicationQuota: js.UndefOr[ResourceQuota] = js.undefined
+  var ApplicationQuota: js.UndefOr[ResourceQuota] = js.native
   /**
     * The quota for application versions in the AWS account.
     */
-  var ApplicationVersionQuota: js.UndefOr[ResourceQuota] = js.undefined
+  var ApplicationVersionQuota: js.UndefOr[ResourceQuota] = js.native
   /**
     * The quota for configuration templates in the AWS account.
     */
-  var ConfigurationTemplateQuota: js.UndefOr[ResourceQuota] = js.undefined
+  var ConfigurationTemplateQuota: js.UndefOr[ResourceQuota] = js.native
   /**
     * The quota for custom platforms in the AWS account.
     */
-  var CustomPlatformQuota: js.UndefOr[ResourceQuota] = js.undefined
+  var CustomPlatformQuota: js.UndefOr[ResourceQuota] = js.native
   /**
     * The quota for environments in the AWS account.
     */
-  var EnvironmentQuota: js.UndefOr[ResourceQuota] = js.undefined
+  var EnvironmentQuota: js.UndefOr[ResourceQuota] = js.native
 }
 
 object ResourceQuotas {
@@ -37,11 +38,11 @@ object ResourceQuotas {
     EnvironmentQuota: ResourceQuota = null
   ): ResourceQuotas = {
     val __obj = js.Dynamic.literal()
-    if (ApplicationQuota != null) __obj.updateDynamic("ApplicationQuota")(ApplicationQuota)
-    if (ApplicationVersionQuota != null) __obj.updateDynamic("ApplicationVersionQuota")(ApplicationVersionQuota)
-    if (ConfigurationTemplateQuota != null) __obj.updateDynamic("ConfigurationTemplateQuota")(ConfigurationTemplateQuota)
-    if (CustomPlatformQuota != null) __obj.updateDynamic("CustomPlatformQuota")(CustomPlatformQuota)
-    if (EnvironmentQuota != null) __obj.updateDynamic("EnvironmentQuota")(EnvironmentQuota)
+    if (ApplicationQuota != null) __obj.updateDynamic("ApplicationQuota")(ApplicationQuota.asInstanceOf[js.Any])
+    if (ApplicationVersionQuota != null) __obj.updateDynamic("ApplicationVersionQuota")(ApplicationVersionQuota.asInstanceOf[js.Any])
+    if (ConfigurationTemplateQuota != null) __obj.updateDynamic("ConfigurationTemplateQuota")(ConfigurationTemplateQuota.asInstanceOf[js.Any])
+    if (CustomPlatformQuota != null) __obj.updateDynamic("CustomPlatformQuota")(CustomPlatformQuota.asInstanceOf[js.Any])
+    if (EnvironmentQuota != null) __obj.updateDynamic("EnvironmentQuota")(EnvironmentQuota.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceQuotas]
   }
 }

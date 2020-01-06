@@ -10,9 +10,9 @@ Web3 module to interact with the Ethereum blockchain accounts stored in the node
 | ------------------ | :-------------: |
 | Full name          | web3-eth-personal |
 | Keywords           | - |
-| # releases         | 36 |
+| # releases         | 37 |
 | # dependents       | 19 |
-| # downloads        | 3686368 |
+| # downloads        | 4116273 |
 | # stars            | 0 |
 
 ## Links

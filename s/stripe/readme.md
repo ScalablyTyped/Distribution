@@ -10,9 +10,9 @@ Stripe API wrapper
 | ------------------ | :-------------: |
 | Full name          | stripe |
 | Keywords           | stripe, payment processing, credit cards, api |
-| # releases         | 64 |
-| # dependents       | 198 |
-| # downloads        | 9299293 |
+| # releases         | 83 |
+| # dependents       | 237 |
+| # downloads        | 12162373 |
 | # stars            | 61 |
 
 ## Links

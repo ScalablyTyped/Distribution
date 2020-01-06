@@ -9,9 +9,9 @@ Typings are for version 0.1.0-preview.2
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/middleware-rds-presignedurl |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 0 |
-| # downloads        | 244 |
+| # releases         | 12 |
+| # dependents       | 2 |
+| # downloads        | 521 |
 | # stars            | 0 |
 
 ## Links

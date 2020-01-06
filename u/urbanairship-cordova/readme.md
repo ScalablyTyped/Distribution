@@ -12,7 +12,7 @@ Urban Airship Cordova plugin
 | Keywords           | cordova, urbanairship, ecosystem:cordova, cordova-android, cordova-ios |
 | # releases         | 24 |
 | # dependents       | 0 |
-| # downloads        | 27079 |
+| # downloads        | 38373 |
 | # stars            | 0 |
 
 ## Links

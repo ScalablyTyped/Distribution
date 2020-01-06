@@ -11,8 +11,8 @@ autoprefixer-core was depreacted, use autoprefixer
 | Full name          | autoprefixer-core |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 106 |
-| # downloads        | 4801990 |
+| # dependents       | 110 |
+| # downloads        | 4573388 |
 | # stars            | 9 |
 
 ## Links

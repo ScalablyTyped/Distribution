@@ -12,7 +12,7 @@ Fast, flexible, simple data tables in React
 | Keywords           | react-component, react, table, data-tables |
 | # releases         | 5 |
 | # dependents       | 6 |
-| # downloads        | 350761 |
+| # downloads        | 383388 |
 | # stars            | 5 |
 
 ## Links

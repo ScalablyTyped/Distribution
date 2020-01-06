@@ -11,8 +11,8 @@ Timing safe string compare using double HMAC
 | Full name          | tsscmp |
 | Keywords           | timing safe string compare, double hmac string compare, safe string compare, hmac |
 | # releases         | 2 |
-| # dependents       | 27 |
-| # downloads        | 29615227 |
+| # dependents       | 34 |
+| # downloads        | 28843213 |
 | # stars            | 3 |
 
 ## Links

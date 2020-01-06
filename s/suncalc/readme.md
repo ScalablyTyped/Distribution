@@ -11,8 +11,8 @@ A tiny JavaScript library for calculating sun/moon positions and phases.
 | Full name          | suncalc |
 | Keywords           | sun, astronomy, math, calculation, sunrise, sunset, twilight, moon, illumination |
 | # releases         | 1 |
-| # dependents       | 123 |
-| # downloads        | 272296 |
+| # dependents       | 128 |
+| # downloads        | 413349 |
 | # stars            | 10 |
 
 ## Links

@@ -10,15 +10,15 @@ HTTP proxying for the masses
 | ------------------ | :-------------: |
 | Full name          | http-proxy |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 1355 |
-| # downloads        | 197820175 |
-| # stars            | 180 |
+| # releases         | 3 |
+| # dependents       | 1491 |
+| # downloads        | 288568211 |
+| # stars            | 181 |
 
 ## Links
-- [Homepage](https://github.com/nodejitsu/node-http-proxy#readme)
-- [Bugs](https://github.com/nodejitsu/node-http-proxy/issues)
-- [Repository](https://github.com/nodejitsu/node-http-proxy)
+- [Homepage](https://github.com/http-party/node-http-proxy#readme)
+- [Bugs](https://github.com/http-party/node-http-proxy/issues)
+- [Repository](https://github.com/http-party/node-http-proxy)
 - [Npm](https://www.npmjs.com/package/http-proxy)
     
 

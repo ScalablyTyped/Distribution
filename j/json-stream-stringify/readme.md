@@ -11,8 +11,8 @@ JSON.Stringify as a readable stream
 | Full name          | json-stream-stringify |
 | Keywords           | - |
 | # releases         | 6 |
-| # dependents       | 3 |
-| # downloads        | 317419 |
+| # dependents       | 4 |
+| # downloads        | 377313 |
 | # stars            | 0 |
 
 ## Links

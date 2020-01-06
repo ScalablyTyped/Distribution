@@ -10,9 +10,9 @@ A comprehensive library for mime-type mapping
 | ------------------ | :-------------: |
 | Full name          | mime |
 | Keywords           | util, mime |
-| # releases         | 19 |
-| # dependents       | 3496 |
-| # downloads        | 714834573 |
+| # releases         | 13 |
+| # dependents       | 3952 |
+| # downloads        | 1043739230 |
 | # stars            | 133 |
 
 ## Links

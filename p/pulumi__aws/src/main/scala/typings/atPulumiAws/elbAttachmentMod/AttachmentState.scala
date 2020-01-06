@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AttachmentState extends js.Object {
   /**
     * The name of the ELB.
     */
-  val elb: js.UndefOr[Input[String]] = js.undefined
+  val elb: js.UndefOr[Input[String]] = js.native
   /**
     * Instance ID to place in the ELB pool.
     */
-  val instance: js.UndefOr[Input[String]] = js.undefined
+  val instance: js.UndefOr[Input[String]] = js.native
 }
 
 object AttachmentState {

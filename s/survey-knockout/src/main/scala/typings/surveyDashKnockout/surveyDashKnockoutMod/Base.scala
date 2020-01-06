@@ -16,6 +16,7 @@ class Base () extends js.Object {
   /* protected */ def AddLocStringToUsedLocales(locStr: LocalizableString, locales: js.Array[String]): Unit = js.native
   /* protected */ def IsPropertyEmpty(value: js.Any): Boolean = js.native
   def addUsedLocales(locales: js.Array[String]): Unit = js.native
+  /* protected */ def copyCssClasses(dest: js.Any, source: js.Any): Unit = js.native
   def createCustomLocalizableObj(name: String): Unit = js.native
   /* protected */ def createItemValues(name: String): js.Array[_] = js.native
   /* protected */ def createLocalizableString(name: String, owner: ILocalizableOwner): LocalizableString = js.native
@@ -55,8 +56,9 @@ class Base () extends js.Object {
   def isValueEmpty(value: js.Any): Boolean = js.native
   def iteratePropertiesHash(func: js.Function2[/* hash */ js.Any, /* key */ js.Any, Unit]): Unit = js.native
   def locStrsChanged(): Unit = js.native
-  def onPropertyValueChangedCallback(name: String, oldValue: js.Any, newValue: js.Any): Unit = js.native
+  def onPropertyValueChangedCallback(name: String, oldValue: js.Any, newValue: js.Any, sender: Base, arrayChanges: ArrayChanges): Unit = js.native
   /* protected */ def propertyValueChanged(name: String, oldValue: js.Any, newValue: js.Any): Unit = js.native
+  /* protected */ def propertyValueChanged(name: String, oldValue: js.Any, newValue: js.Any, arrayChanges: ArrayChanges): Unit = js.native
   /**
     * Register a function that will be called on a property value changed from the names list.
     * @param names the list of properties names

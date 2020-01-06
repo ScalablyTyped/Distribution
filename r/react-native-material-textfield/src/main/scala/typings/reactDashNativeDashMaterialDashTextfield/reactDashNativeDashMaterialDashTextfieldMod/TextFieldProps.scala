@@ -116,6 +116,7 @@ trait TextFieldProps extends TextInputProps {
   var error: js.UndefOr[String] = js.undefined
   var errorColor: js.UndefOr[String] = js.undefined
   var fontSize: js.UndefOr[Double] = js.undefined
+  var formatText: js.UndefOr[js.Function1[/* text */ String, String]] = js.undefined
   var inputContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   var label: js.UndefOr[String] = js.undefined
   var labelFontSize: js.UndefOr[Double] = js.undefined
@@ -180,6 +181,7 @@ object TextFieldProps {
     error: String = null,
     errorColor: String = null,
     fontSize: Int | Double = null,
+    formatText: /* text */ String => String = null,
     hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined,
     hitSlop: Insets = null,
     importantForAccessibility: auto | yes | no | `no-hide-descendants` = null,
@@ -312,6 +314,7 @@ object TextFieldProps {
     if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     if (errorColor != null) __obj.updateDynamic("errorColor")(errorColor.asInstanceOf[js.Any])
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (formatText != null) __obj.updateDynamic("formatText")(js.Any.fromFunction1(formatText))
     if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus.asInstanceOf[js.Any])
     if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop.asInstanceOf[js.Any])
     if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])

@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^
   extends TopLevel[
-      (Instantiable1[/* address */ String, URLParse]) with (Instantiable2[/* address */ String, /* parser */ Boolean, URLParse]) with (Instantiable2[/* address */ String, /* parser */ QueryParser, URLParse]) with (Instantiable2[/* address */ String, /* location */ String, URLParse]) with (Instantiable3[/* address */ String, /* location */ String, /* parser */ Boolean, URLParse]) with (Instantiable2[/* address */ String, /* location */ js.Object, URLParse]) with (Instantiable3[/* address */ String, /* location */ js.Object, /* parser */ Boolean, URLParse]) with (Instantiable3[/* address */ String, /* location */ String, /* parser */ QueryParser, URLParse]) with (Instantiable3[/* address */ String, /* location */ js.Object, /* parser */ QueryParser, URLParse])
+      (Instantiable1[/* address */ String, URLParse]) with (Instantiable2[/* address */ String, /* location */ String, URLParse]) with (Instantiable2[/* address */ String, /* location */ js.Object, URLParse]) with (Instantiable2[/* address */ String, /* parser */ Boolean, URLParse]) with (Instantiable2[/* address */ String, /* parser */ QueryParser, URLParse]) with (Instantiable3[/* address */ String, /* location */ String, /* parser */ Boolean, URLParse]) with (Instantiable3[/* address */ String, /* location */ String, /* parser */ QueryParser, URLParse]) with (Instantiable3[/* address */ String, /* location */ js.Object, /* parser */ Boolean, URLParse]) with (Instantiable3[/* address */ String, /* location */ js.Object, /* parser */ QueryParser, URLParse])
     ] {
   var qs: Anon_Parse = js.native
   def apply(address: String): URLParse = js.native

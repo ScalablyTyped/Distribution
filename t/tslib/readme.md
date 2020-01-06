@@ -10,10 +10,10 @@ Runtime library for TypeScript helper functions
 | ------------------ | :-------------: |
 | Full name          | tslib |
 | Keywords           | TypeScript, Microsoft, compiler, language, javascript, tslib, runtime |
-| # releases         | 9 |
-| # dependents       | 14725 |
-| # downloads        | 217609229 |
-| # stars            | 8 |
+| # releases         | 6 |
+| # dependents       | 24935 |
+| # downloads        | 457011324 |
+| # stars            | 9 |
 
 ## Links
 - [Homepage](http://typescriptlang.org/)

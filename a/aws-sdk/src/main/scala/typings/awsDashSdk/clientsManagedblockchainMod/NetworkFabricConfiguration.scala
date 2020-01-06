@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NetworkFabricConfiguration extends js.Object {
   /**
     * The edition of Amazon Managed Blockchain that the network uses. For more information, see Amazon Managed Blockchain Pricing.
     */
-  var Edition: typings.awsDashSdk.clientsManagedblockchainMod.Edition
+  var Edition: typings.awsDashSdk.clientsManagedblockchainMod.Edition = js.native
 }
 
 object NetworkFabricConfiguration {

@@ -10,14 +10,14 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IHashSetStatic
-  extends Instantiable2[
-      /* hashCode */ js.Function1[/* value */ js.Object, js.Any], 
-      /* equals */ js.Function2[/* value1 */ js.Object, /* value2 */ js.Object, Boolean], 
-      IHashSet[js.Object]
-    ]
-     with Instantiable0[IHashSet[js.Object]]
+  extends Instantiable0[IHashSet[js.Object]]
      with Instantiable1[
       (/* hashCode */ js.Function1[/* value */ js.Object, js.Any]) | (/* options */ IHashtableOptions[js.Object]), 
+      IHashSet[js.Object]
+    ]
+     with Instantiable2[
+      /* hashCode */ js.Function1[/* value */ js.Object, js.Any], 
+      /* equals */ js.Function2[/* value1 */ js.Object, /* value2 */ js.Object, Boolean], 
       IHashSet[js.Object]
     ]
 

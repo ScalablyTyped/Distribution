@@ -5,27 +5,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BucketNotificationLambdaFunction extends js.Object {
   /**
     * Specifies [event](http://docs.aws.amazon.com/AmazonS3/latest/dev/NotificationHowTo.html#notification-how-to-event-types-and-destinations) for which to send notifications.
     */
-  var events: Input[js.Array[Input[String]]]
+  var events: Input[js.Array[Input[String]]] = js.native
   /**
     * Specifies object key name prefix.
     */
-  var filterPrefix: js.UndefOr[Input[String]] = js.undefined
+  var filterPrefix: js.UndefOr[Input[String]] = js.native
   /**
     * Specifies object key name suffix.
     */
-  var filterSuffix: js.UndefOr[Input[String]] = js.undefined
+  var filterSuffix: js.UndefOr[Input[String]] = js.native
   /**
     * Specifies unique identifier for each of the notification configurations.
     */
-  var id: js.UndefOr[Input[String]] = js.undefined
+  var id: js.UndefOr[Input[String]] = js.native
   /**
     * Specifies Amazon Lambda function ARN.
     */
-  var lambdaFunctionArn: js.UndefOr[Input[String]] = js.undefined
+  var lambdaFunctionArn: js.UndefOr[Input[String]] = js.native
 }
 
 object BucketNotificationLambdaFunction {

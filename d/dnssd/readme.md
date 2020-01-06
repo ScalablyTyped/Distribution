@@ -11,8 +11,8 @@ Bonjour/Avahi-like service discovery in pure JavaScript
 | Full name          | dnssd |
 | Keywords           | bonjour, avahi, mdns, zeroconf |
 | # releases         | 8 |
-| # dependents       | 4 |
-| # downloads        | 25594 |
+| # dependents       | 6 |
+| # downloads        | 49685 |
 | # stars            | 0 |
 
 ## Links

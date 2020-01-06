@@ -10,9 +10,9 @@ Helpers function to get tree changes between two datasets
 | ------------------ | :-------------: |
 | Full name          | tree-changes |
 | Keywords           | comparison, tree |
-| # releases         | 14 |
+| # releases         | 13 |
 | # dependents       | 15 |
-| # downloads        | 1205913 |
+| # downloads        | 1303184 |
 | # stars            | 1 |
 
 ## Links

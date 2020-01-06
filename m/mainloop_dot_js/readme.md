@@ -10,9 +10,9 @@ A well-constructed JavaScript main loop useful for games and other animated appl
 | ------------------ | :-------------: |
 | Full name          | mainloop.js |
 | Keywords           | main, loop, game, animation, time |
-| # releases         | 2 |
-| # dependents       | 3 |
-| # downloads        | 6227 |
+| # releases         | 0 |
+| # dependents       | 4 |
+| # downloads        | 4882 |
 | # stars            | 1 |
 
 ## Links

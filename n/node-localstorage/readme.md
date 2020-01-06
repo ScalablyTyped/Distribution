@@ -10,9 +10,9 @@ A drop-in substitute for the browser native localStorage API that runs on node.j
 | ------------------ | :-------------: |
 | Full name          | node-localstorage |
 | Keywords           | localStorage, Web Storage, node.js |
-| # releases         | 2 |
-| # dependents       | 255 |
-| # downloads        | 3455111 |
+| # releases         | 9 |
+| # dependents       | 307 |
+| # downloads        | 4431697 |
 | # stars            | 18 |
 
 ## Links

@@ -10,9 +10,9 @@ Make weak references to JavaScript Objects.
 | ------------------ | :-------------: |
 | Full name          | weak-napi |
 | Keywords           | weak, reference, js, javascript, object, function, callback, napi |
-| # releases         | 6 |
-| # dependents       | 4 |
-| # downloads        | 2613 |
+| # releases         | 3 |
+| # dependents       | 6 |
+| # downloads        | 255533 |
 | # stars            | 0 |
 
 ## Links

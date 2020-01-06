@@ -10,9 +10,9 @@ React Google Analytics Module.
 | ------------------ | :-------------: |
 | Full name          | react-ga |
 | Keywords           | React, GA, Google Analytics, Universal Analytics |
-| # releases         | 18 |
-| # dependents       | 154 |
-| # downloads        | 6738330 |
+| # releases         | 12 |
+| # dependents       | 201 |
+| # downloads        | 11138197 |
 | # stars            | 18 |
 
 ## Links

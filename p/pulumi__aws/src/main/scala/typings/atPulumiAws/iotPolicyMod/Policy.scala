@@ -33,9 +33,6 @@ class Policy protected () extends CustomResource {
     * The name of the policy.
     */
   val name: Output[String] = js.native
-  /**
-    * The policy document. This is a JSON formatted string. Use the [IoT Developer Guide](http://docs.aws.amazon.com/iot/latest/developerguide/iot-policies.html) for more information on IoT Policies.
-    */
   val policy: Output[String] = js.native
 }
 

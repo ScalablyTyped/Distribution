@@ -11,8 +11,8 @@ Convert streams (readable or writable) to promises
 | Full name          | stream-to-promise |
 | Keywords           | stream, promise |
 | # releases         | 1 |
-| # dependents       | 131 |
-| # downloads        | 1414311 |
+| # dependents       | 146 |
+| # downloads        | 1937728 |
 | # stars            | 8 |
 
 ## Links

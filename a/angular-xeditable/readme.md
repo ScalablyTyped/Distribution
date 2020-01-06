@@ -11,9 +11,9 @@ Edit-in-place for angular.js
 | Full name          | angular-xeditable |
 | Keywords           | - |
 | # releases         | 5 |
-| # dependents       | 2 |
-| # downloads        | 441162 |
-| # stars            | 3 |
+| # dependents       | 3 |
+| # downloads        | 582273 |
+| # stars            | 2 |
 
 ## Links
 - [Homepage](https://vitalets.github.io/angular-xeditable)

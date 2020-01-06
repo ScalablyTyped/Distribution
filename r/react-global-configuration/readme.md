@@ -10,9 +10,9 @@ For setting a global config object managed as a requirement
 | ------------------ | :-------------: |
 | Full name          | react-global-configuration |
 | Keywords           | react, global, configurator |
-| # releases         | 6 |
-| # dependents       | 1 |
-| # downloads        | 59532 |
+| # releases         | 4 |
+| # dependents       | 6 |
+| # downloads        | 98576 |
 | # stars            | 0 |
 
 ## Links

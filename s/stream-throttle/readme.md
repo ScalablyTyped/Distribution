@@ -10,9 +10,9 @@ A rate limiter for Node.js streams.
 | ------------------ | :-------------: |
 | Full name          | stream-throttle |
 | Keywords           | streams, throttling, ratelimit |
-| # releases         | 1 |
-| # dependents       | 44 |
-| # downloads        | 15630614 |
+| # releases         | 0 |
+| # dependents       | 51 |
+| # downloads        | 18261060 |
 | # stars            | 6 |
 
 ## Links

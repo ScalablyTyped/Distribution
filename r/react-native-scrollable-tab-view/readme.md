@@ -10,9 +10,9 @@ Typings are for version 0.10
 | ------------------ | :-------------: |
 | Full name          | react-native-scrollable-tab-view |
 | Keywords           | react-native-component, react-component, react-native, ios, tab, scrollable |
-| # releases         | 8 |
-| # dependents       | 61 |
-| # downloads        | 553443 |
+| # releases         | 4 |
+| # dependents       | 71 |
+| # downloads        | 626851 |
 | # stars            | 22 |
 
 ## Links

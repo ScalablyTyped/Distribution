@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation._
 object diffDashDeltaMod extends js.Object {
   @js.native
   class DiffDelta () extends js.Object {
-    var flags: Double = js.native
-    var newFile: DiffFile = js.native
-    var nfiles: Double = js.native
-    var oldFile: DiffFile = js.native
-    var similarity: Double = js.native
-    var status: Double = js.native
+    def flags(): Double = js.native
+    def newFile(): DiffFile = js.native
+    def nfiles(): Double = js.native
+    def oldFile(): DiffFile = js.native
+    def similarity(): Double = js.native
+    def status(): Double = js.native
   }
   
 }

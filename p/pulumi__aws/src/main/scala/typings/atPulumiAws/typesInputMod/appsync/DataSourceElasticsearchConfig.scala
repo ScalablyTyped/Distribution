@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DataSourceElasticsearchConfig extends js.Object {
   /**
     * HTTP URL.
     */
-  var endpoint: Input[String]
+  var endpoint: Input[String] = js.native
   /**
     * AWS region of Elasticsearch domain. Defaults to current region.
     */
-  var region: js.UndefOr[Input[String]] = js.undefined
+  var region: js.UndefOr[Input[String]] = js.native
 }
 
 object DataSourceElasticsearchConfig {

@@ -4,27 +4,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EventContextDataType extends js.Object {
   /**
     * The user's city.
     */
-  var City: js.UndefOr[StringType] = js.undefined
+  var City: js.UndefOr[StringType] = js.native
   /**
     * The user's country.
     */
-  var Country: js.UndefOr[StringType] = js.undefined
+  var Country: js.UndefOr[StringType] = js.native
   /**
     * The user's device name.
     */
-  var DeviceName: js.UndefOr[StringType] = js.undefined
+  var DeviceName: js.UndefOr[StringType] = js.native
   /**
     * The user's IP address.
     */
-  var IpAddress: js.UndefOr[StringType] = js.undefined
+  var IpAddress: js.UndefOr[StringType] = js.native
   /**
     * The user's time zone.
     */
-  var Timezone: js.UndefOr[StringType] = js.undefined
+  var Timezone: js.UndefOr[StringType] = js.native
 }
 
 object EventContextDataType {
@@ -37,11 +38,11 @@ object EventContextDataType {
     Timezone: StringType = null
   ): EventContextDataType = {
     val __obj = js.Dynamic.literal()
-    if (City != null) __obj.updateDynamic("City")(City)
-    if (Country != null) __obj.updateDynamic("Country")(Country)
-    if (DeviceName != null) __obj.updateDynamic("DeviceName")(DeviceName)
-    if (IpAddress != null) __obj.updateDynamic("IpAddress")(IpAddress)
-    if (Timezone != null) __obj.updateDynamic("Timezone")(Timezone)
+    if (City != null) __obj.updateDynamic("City")(City.asInstanceOf[js.Any])
+    if (Country != null) __obj.updateDynamic("Country")(Country.asInstanceOf[js.Any])
+    if (DeviceName != null) __obj.updateDynamic("DeviceName")(DeviceName.asInstanceOf[js.Any])
+    if (IpAddress != null) __obj.updateDynamic("IpAddress")(IpAddress.asInstanceOf[js.Any])
+    if (Timezone != null) __obj.updateDynamic("Timezone")(Timezone.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventContextDataType]
   }
 }

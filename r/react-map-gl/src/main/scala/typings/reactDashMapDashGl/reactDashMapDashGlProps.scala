@@ -21,6 +21,9 @@ trait reactDashMapDashGlProps {
   def InteractiveMapProps: typings.reactDashMapDashGl.reactDashMapDashGlMod.InteractiveMapProps.type = typings.reactDashMapDashGl.reactDashMapDashGlMod.InteractiveMapProps
   type InteractiveMapProps = typings.reactDashMapDashGl.reactDashMapDashGlMod.InteractiveMapProps
   @scala.inline
+  def LayerProps: typings.reactDashMapDashGl.reactDashMapDashGlMod.LayerProps.type = typings.reactDashMapDashGl.reactDashMapDashGlMod.LayerProps
+  type LayerProps = typings.reactDashMapDashGl.reactDashMapDashGlMod.LayerProps
+  @scala.inline
   def MarkerProps: typings.reactDashMapDashGl.reactDashMapDashGlMod.MarkerProps.type = typings.reactDashMapDashGl.reactDashMapDashGlMod.MarkerProps
   type MarkerProps = typings.reactDashMapDashGl.reactDashMapDashGlMod.MarkerProps
   @scala.inline
@@ -35,6 +38,9 @@ trait reactDashMapDashGlProps {
   @scala.inline
   def SVGOverlayProps: typings.reactDashMapDashGl.reactDashMapDashGlMod.SVGOverlayProps.type = typings.reactDashMapDashGl.reactDashMapDashGlMod.SVGOverlayProps
   type SVGOverlayProps = typings.reactDashMapDashGl.reactDashMapDashGlMod.SVGOverlayProps
+  @scala.inline
+  def SourceProps: typings.reactDashMapDashGl.reactDashMapDashGlMod.SourceProps.type = typings.reactDashMapDashGl.reactDashMapDashGlMod.SourceProps
+  type SourceProps = typings.reactDashMapDashGl.reactDashMapDashGlMod.SourceProps
   @scala.inline
   def StaticMapProps: typings.reactDashMapDashGl.reactDashMapDashGlMod.StaticMapProps.type = typings.reactDashMapDashGl.reactDashMapDashGlMod.StaticMapProps
   type StaticMapProps = typings.reactDashMapDashGl.reactDashMapDashGlMod.StaticMapProps

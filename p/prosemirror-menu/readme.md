@@ -10,9 +10,9 @@ Simple menu elements for ProseMirror
 | ------------------ | :-------------: |
 | Full name          | prosemirror-menu |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 15 |
-| # downloads        | 90392 |
+| # releases         | 8 |
+| # dependents       | 18 |
+| # downloads        | 342425 |
 | # stars            | 0 |
 
 ## Links

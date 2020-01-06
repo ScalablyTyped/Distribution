@@ -10,9 +10,9 @@ Zero cost events
 | ------------------ | :-------------: |
 | Full name          | microevent.ts |
 | Keywords           | events, performance |
-| # releases         | 0 |
+| # releases         | 4 |
 | # dependents       | 2 |
-| # downloads        | 3226 |
+| # downloads        | 38637071 |
 | # stars            | 0 |
 
 ## Links

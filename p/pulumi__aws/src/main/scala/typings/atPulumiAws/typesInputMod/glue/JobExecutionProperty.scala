@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait JobExecutionProperty extends js.Object {
   /**
     * The maximum number of concurrent runs allowed for a job. The default is 1.
     */
-  var maxConcurrentRuns: js.UndefOr[Input[Double]] = js.undefined
+  var maxConcurrentRuns: js.UndefOr[Input[Double]] = js.native
 }
 
 object JobExecutionProperty {

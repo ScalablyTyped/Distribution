@@ -11,7 +11,7 @@ Library for composing asynchronous and event-based operations in JavaScript exte
 | Keywords           | Reactive, LINQ, Collections, jQuery, RxJS, Rx |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 1649 |
+| # downloads        | 2892 |
 | # stars            | 1 |
 
 ## Links

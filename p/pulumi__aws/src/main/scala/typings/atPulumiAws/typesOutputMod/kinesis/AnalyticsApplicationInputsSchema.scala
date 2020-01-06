@@ -4,10 +4,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AnalyticsApplicationInputsSchema extends js.Object {
-  var recordColumns: js.Array[AnalyticsApplicationInputsSchemaRecordColumn]
-  var recordEncoding: js.UndefOr[String] = js.undefined
-  var recordFormat: AnalyticsApplicationInputsSchemaRecordFormat
+  var recordColumns: js.Array[AnalyticsApplicationInputsSchemaRecordColumn] = js.native
+  var recordEncoding: js.UndefOr[String] = js.native
+  var recordFormat: AnalyticsApplicationInputsSchemaRecordFormat = js.native
 }
 
 object AnalyticsApplicationInputsSchema {
@@ -17,8 +18,8 @@ object AnalyticsApplicationInputsSchema {
     recordFormat: AnalyticsApplicationInputsSchemaRecordFormat,
     recordEncoding: String = null
   ): AnalyticsApplicationInputsSchema = {
-    val __obj = js.Dynamic.literal(recordColumns = recordColumns, recordFormat = recordFormat)
-    if (recordEncoding != null) __obj.updateDynamic("recordEncoding")(recordEncoding)
+    val __obj = js.Dynamic.literal(recordColumns = recordColumns.asInstanceOf[js.Any], recordFormat = recordFormat.asInstanceOf[js.Any])
+    if (recordEncoding != null) __obj.updateDynamic("recordEncoding")(recordEncoding.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyticsApplicationInputsSchema]
   }
 }

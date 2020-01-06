@@ -10,9 +10,9 @@ Adds a directive that listens for click events and scrolls to elements.
 | ------------------ | :-------------: |
 | Full name          | vue-scrollto |
 | Keywords           | vue, vuejs, directive, scroll, scrollto, scroll to |
-| # releases         | 24 |
-| # dependents       | 27 |
-| # downloads        | 1298513 |
+| # releases         | 15 |
+| # dependents       | 48 |
+| # downloads        | 2655276 |
 | # stars            | 9 |
 
 ## Links

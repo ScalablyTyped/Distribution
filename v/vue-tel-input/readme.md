@@ -9,10 +9,10 @@ International Telephone Input with Vue
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | vue-tel-input |
-| Keywords           | vue, telephone, phone, vue-tel-input, phone input, telephone input |
-| # releases         | 40 |
-| # dependents       | 3 |
-| # downloads        | 166707 |
+| Keywords           | vue, telephone, phone, vue-tel-input, phone input, telephone input, input, international phone |
+| # releases         | 74 |
+| # dependents       | 11 |
+| # downloads        | 424875 |
 | # stars            | 0 |
 
 ## Links

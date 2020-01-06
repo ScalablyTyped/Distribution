@@ -4,21 +4,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DeleteScalingPolicyInput extends js.Object {
   /**
-    * Unique identifier for a fleet to be deleted.
+    * A unique identifier for a fleet to be deleted. You can use either the fleet ID or ARN value.
     */
-  var FleetId: typings.awsDashSdk.clientsGameliftMod.FleetId
+  var FleetId: typings.awsDashSdk.clientsGameliftMod.FleetId = js.native
   /**
-    * Descriptive label that is associated with a scaling policy. Policy names do not need to be unique.
+    * A descriptive label that is associated with a scaling policy. Policy names do not need to be unique.
     */
-  var Name: NonZeroAndMaxString
+  var Name: NonZeroAndMaxString = js.native
 }
 
 object DeleteScalingPolicyInput {
   @scala.inline
   def apply(FleetId: FleetId, Name: NonZeroAndMaxString): DeleteScalingPolicyInput = {
-    val __obj = js.Dynamic.literal(FleetId = FleetId, Name = Name)
+    val __obj = js.Dynamic.literal(FleetId = FleetId.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeleteScalingPolicyInput]
   }

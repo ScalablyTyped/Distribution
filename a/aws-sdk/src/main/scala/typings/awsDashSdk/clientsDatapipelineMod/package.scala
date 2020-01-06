@@ -37,7 +37,7 @@ package object clientsDatapipelineMod {
   type ValidationWarnings = js.Array[ValidationWarning]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2012-10-29`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

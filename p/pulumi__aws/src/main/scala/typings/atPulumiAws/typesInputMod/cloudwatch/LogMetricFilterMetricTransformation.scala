@@ -5,14 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LogMetricFilterMetricTransformation extends js.Object {
-  var defaultValue: js.UndefOr[Input[String]] = js.undefined
+  var defaultValue: js.UndefOr[Input[String]] = js.native
   /**
     * A name for the metric filter.
     */
-  var name: Input[String]
-  var namespace: Input[String]
-  var value: Input[String]
+  var name: Input[String] = js.native
+  var namespace: Input[String] = js.native
+  var value: Input[String] = js.native
 }
 
 object LogMetricFilterMetricTransformation {

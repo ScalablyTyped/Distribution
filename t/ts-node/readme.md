@@ -10,10 +10,10 @@ TypeScript execution environment and REPL for node.js, with source map support
 | ------------------ | :-------------: |
 | Full name          | ts-node |
 | Keywords           | typescript, node, runtime, environment, ts, compiler |
-| # releases         | 31 |
-| # dependents       | 964 |
-| # downloads        | 56325016 |
-| # stars            | 49 |
+| # releases         | 30 |
+| # dependents       | 1556 |
+| # downloads        | 112596057 |
+| # stars            | 50 |
 
 ## Links
 - [Homepage](https://github.com/TypeStrong/ts-node)

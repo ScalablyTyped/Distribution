@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EndpointGroupEndpointConfiguration extends js.Object {
   /**
     * An ID for the endpoint. If the endpoint is a Network Load Balancer or Application Load Balancer, this is the Amazon Resource Name (ARN) of the resource. If the endpoint is an Elastic IP address, this is the Elastic IP address allocation ID.
     */
-  var endpointId: js.UndefOr[Input[String]] = js.undefined
+  var endpointId: js.UndefOr[Input[String]] = js.native
   /**
     * The weight associated with the endpoint. When you add weights to endpoints, you configure AWS Global Accelerator to route traffic based on proportions that you specify.
     */
-  var weight: js.UndefOr[Input[Double]] = js.undefined
+  var weight: js.UndefOr[Input[Double]] = js.native
 }
 
 object EndpointGroupEndpointConfiguration {

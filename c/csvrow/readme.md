@@ -11,8 +11,8 @@ parse a CSV row string
 | Full name          | csvrow |
 | Keywords           | csv, parse |
 | # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 4693 |
+| # dependents       | 2 |
+| # downloads        | 4057 |
 | # stars            | 1 |
 
 ## Links

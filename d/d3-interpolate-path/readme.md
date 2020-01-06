@@ -11,8 +11,8 @@ Interpolates path `d` attribute smoothly when A and B have different number of p
 | Full name          | d3-interpolate-path |
 | Keywords           | d3, d3-module, d3-interpolate, d3-interpolate-path |
 | # releases         | 3 |
-| # dependents       | 10 |
-| # downloads        | 461929 |
+| # dependents       | 15 |
+| # downloads        | 849048 |
 | # stars            | 0 |
 
 ## Links

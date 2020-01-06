@@ -10,9 +10,9 @@ Read a chunk from a file
 | ------------------ | :-------------: |
 | Full name          | read-chunk |
 | Keywords           | read, file, readfile, fs, chunk, slice, part, head, tail, buffer, fd, open |
-| # releases         | 5 |
-| # dependents       | 183 |
-| # downloads        | 34629279 |
+| # releases         | 4 |
+| # dependents       | 213 |
+| # downloads        | 42590290 |
 | # stars            | 9 |
 
 ## Links

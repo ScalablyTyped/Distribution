@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait _Number
   extends Instantiable0[_Number]
-     with Instantiable2[/* value */ Double, /* unit */ js.Any, _Number]
-     with Instantiable1[(/* value */ Double) | (/* value */ String) | (/* value */ _Number), _Number] {
+     with Instantiable1[(/* value */ Double) | (/* value */ String) | (/* value */ _Number), _Number]
+     with Instantiable2[/* value */ Double, /* unit */ js.Any, _Number] {
   def at(pos: Double): _Number = js.native
   def divide(number: Double): _Number = js.native
   def minus(number: Double): _Number = js.native

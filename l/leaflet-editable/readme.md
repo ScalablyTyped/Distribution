@@ -10,9 +10,9 @@ Make geometries editable in Leaflet
 | ------------------ | :-------------: |
 | Full name          | leaflet-editable |
 | Keywords           | leaflet, map |
-| # releases         | 3 |
-| # dependents       | 8 |
-| # downloads        | 82726 |
+| # releases         | 2 |
+| # dependents       | 11 |
+| # downloads        | 127922 |
 | # stars            | 0 |
 
 ## Links

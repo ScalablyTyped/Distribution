@@ -10,15 +10,15 @@ A cursor based custom pagination library for Mongoose with customizable labels.
 | ------------------ | :-------------: |
 | Full name          | mongoose-paginate-v2 |
 | Keywords           | mongoose, pagination, plugin, mongodb, paginate, paging, next, prev, nextpage, prevpage, total, paginator, plugin |
-| # releases         | 19 |
-| # dependents       | 2 |
-| # downloads        | 26160 |
+| # releases         | 29 |
+| # dependents       | 12 |
+| # downloads        | 193851 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/WebGangster/mongoose-paginate-v2#readme)
-- [Bugs](https://github.com/WebGangster/mongoose-paginate-v2/issues)
-- [Repository](https://github.com/WebGangster/mongoose-paginate-v2)
+- [Homepage](https://github.com/aravindnc/mongoose-paginate-v2#readme)
+- [Bugs](https://github.com/aravindnc/mongoose-paginate-v2/issues)
+- [Repository](https://github.com/aravindnc/mongoose-paginate-v2)
 - [Npm](https://www.npmjs.com/package/mongoose-paginate-v2)
     
 

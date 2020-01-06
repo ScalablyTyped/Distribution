@@ -10,10 +10,10 @@ A collection of common interactive command line user interfaces.
 | ------------------ | :-------------: |
 | Full name          | inquirer |
 | Keywords           | command, prompt, stdin, cli, tty, menu |
-| # releases         | 20 |
-| # dependents       | 10603 |
-| # downloads        | 381672536 |
-| # stars            | 438 |
+| # releases         | 17 |
+| # dependents       | 14945 |
+| # downloads        | 662221439 |
+| # stars            | 439 |
 
 ## Links
 - [Homepage](https://github.com/SBoudrias/Inquirer.js#readme)

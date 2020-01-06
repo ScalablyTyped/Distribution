@@ -6,27 +6,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ResponseArgs extends js.Object {
   /**
     * A map specifying the parameters (paths, query strings and headers) of the Gateway Response.
     */
-  val responseParameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
+  val responseParameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * A map specifying the templates used to transform the response body.
     */
-  val responseTemplates: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
+  val responseTemplates: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * The response type of the associated GatewayResponse.
     */
-  val responseType: Input[String]
+  val responseType: Input[String] = js.native
   /**
     * The string identifier of the associated REST API.
     */
-  val restApiId: Input[String]
+  val restApiId: Input[String] = js.native
   /**
     * The HTTP status code of the Gateway Response.
     */
-  val statusCode: js.UndefOr[Input[String]] = js.undefined
+  val statusCode: js.UndefOr[Input[String]] = js.native
 }
 
 object ResponseArgs {

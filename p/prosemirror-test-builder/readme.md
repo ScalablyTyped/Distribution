@@ -10,9 +10,9 @@ Helpers for programatically building ProseMirror test documents
 | ------------------ | :-------------: |
 | Full name          | prosemirror-test-builder |
 | Keywords           | - |
-| # releases         | 9 |
+| # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 38057 |
+| # downloads        | 194334 |
 | # stars            | 0 |
 
 ## Links

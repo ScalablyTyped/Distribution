@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LabelCountersForWorkteam extends js.Object {
   /**
     * The total number of data objects labeled by a human worker.
     */
-  var HumanLabeled: js.UndefOr[LabelCounter] = js.undefined
+  var HumanLabeled: js.UndefOr[LabelCounter] = js.native
   /**
     * The total number of data objects that need to be labeled by a human worker.
     */
-  var PendingHuman: js.UndefOr[LabelCounter] = js.undefined
+  var PendingHuman: js.UndefOr[LabelCounter] = js.native
   /**
     * The total number of tasks in the labeling job.
     */
-  var Total: js.UndefOr[LabelCounter] = js.undefined
+  var Total: js.UndefOr[LabelCounter] = js.native
 }
 
 object LabelCountersForWorkteam {

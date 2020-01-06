@@ -10,9 +10,9 @@ Artyom is a Robust Wrapper of the Google Chrome SpeechSynthesis and SpeechRecogn
 | ------------------ | :-------------: |
 | Full name          | artyom.js |
 | Keywords           | speech, recognition, voice, commands, voice, siri, cortana, googleNow |
-| # releases         | 2 |
-| # dependents       | 2 |
-| # downloads        | 10511 |
+| # releases         | 0 |
+| # dependents       | 5 |
+| # downloads        | 14405 |
 | # stars            | 8 |
 
 ## Links

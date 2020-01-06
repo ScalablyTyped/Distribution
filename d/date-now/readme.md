@@ -10,9 +10,9 @@ A requirable version of Date.now()
 | ------------------ | :-------------: |
 | Full name          | date-now |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 36 |
-| # downloads        | 190137495 |
+| # releases         | 0 |
+| # dependents       | 40 |
+| # downloads        | 265136536 |
 | # stars            | 3 |
 
 ## Links

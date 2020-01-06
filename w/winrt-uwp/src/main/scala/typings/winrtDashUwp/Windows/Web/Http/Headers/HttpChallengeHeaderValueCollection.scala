@@ -45,11 +45,13 @@ abstract class HttpChallengeHeaderValueCollection () extends Array[HttpChallenge
   def getView(): IVectorView[HttpChallengeHeaderValue] = js.native
   def indexOf(value: HttpChallengeHeaderValue, extra: js.Any*): Anon_Index = js.native
   /**
-    * Retrieves the index of an HttpChallengeHeaderValue in the collection.
-    * @param value The HttpChallengeHeaderValue to find in the HttpChallengeHeaderValueCollection .
+    * Determines the index of a specific item in the collection.
+    * @param item The object to locate in the collection.
+    * @return The index of item if found in the collection; otherwise, –1.
     */
+  /* hack */
   @JSName("indexOf")
-  def indexOf_Anon_Index(value: HttpChallengeHeaderValue): Anon_Index = js.native
+  def indexOf_Double(item: HttpChallengeHeaderValue): Double = js.native
   /**
     * Inserts an HttpChallengeHeaderValue into the collection at the specified index.
     * @param index The zero-based index at which value should be inserted.

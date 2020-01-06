@@ -10,9 +10,9 @@ Webdriver E2E test wrapper for Angular.
 | ------------------ | :-------------: |
 | Full name          | protractor |
 | Keywords           | angular, test, testing, webdriver, webdriverjs, selenium |
-| # releases         | 13 |
-| # dependents       | 200 |
-| # downloads        | 36013313 |
+| # releases         | 9 |
+| # dependents       | 216 |
+| # downloads        | 47051139 |
 | # stars            | 77 |
 
 ## Links

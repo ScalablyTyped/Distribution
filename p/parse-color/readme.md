@@ -11,8 +11,8 @@ parse a css color string (plus hsv and cmyk) into an object
 | Full name          | parse-color |
 | Keywords           | rgb, rgba, hsl, hsla, hsv, hsva, cmyk, cmyka, color, css, alpha |
 | # releases         | 0 |
-| # dependents       | 79 |
-| # downloads        | 3989283 |
+| # dependents       | 89 |
+| # downloads        | 7865692 |
 | # stars            | 2 |
 
 ## Links

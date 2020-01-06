@@ -10,9 +10,9 @@ Strip UTF-8 byte order mark (BOM) from a string
 | ------------------ | :-------------: |
 | Full name          | strip-bom |
 | Keywords           | strip, bom, byte, order, mark, unicode, utf8, utf-8, remove, delete, trim, text, string |
-| # releases         | 1 |
-| # dependents       | 280 |
-| # downloads        | 511303041 |
+| # releases         | 2 |
+| # dependents       | 324 |
+| # downloads        | 686806600 |
 | # stars            | 4 |
 
 ## Links

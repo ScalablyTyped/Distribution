@@ -10,9 +10,9 @@ AutoFill for DataTables
 | ------------------ | :-------------: |
 | Full name          | datatables.net-autofill |
 | Keywords           | autofill, excel, DataTables, jQuery, table, DataTables |
-| # releases         | 8 |
+| # releases         | 6 |
 | # dependents       | 7 |
-| # downloads        | 63538 |
+| # downloads        | 165585 |
 | # stars            | 0 |
 
 ## Links

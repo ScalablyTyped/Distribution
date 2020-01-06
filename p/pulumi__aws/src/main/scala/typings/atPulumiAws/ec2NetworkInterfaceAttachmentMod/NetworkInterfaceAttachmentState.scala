@@ -5,27 +5,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NetworkInterfaceAttachmentState extends js.Object {
   /**
     * The ENI Attachment ID.
     */
-  val attachmentId: js.UndefOr[Input[String]] = js.undefined
+  val attachmentId: js.UndefOr[Input[String]] = js.native
   /**
     * Network interface index (int).
     */
-  val deviceIndex: js.UndefOr[Input[Double]] = js.undefined
+  val deviceIndex: js.UndefOr[Input[Double]] = js.native
   /**
     * Instance ID to attach.
     */
-  val instanceId: js.UndefOr[Input[String]] = js.undefined
+  val instanceId: js.UndefOr[Input[String]] = js.native
   /**
     * ENI ID to attach.
     */
-  val networkInterfaceId: js.UndefOr[Input[String]] = js.undefined
+  val networkInterfaceId: js.UndefOr[Input[String]] = js.native
   /**
     * The status of the Network Interface Attachment.
     */
-  val status: js.UndefOr[Input[String]] = js.undefined
+  val status: js.UndefOr[Input[String]] = js.native
 }
 
 object NetworkInterfaceAttachmentState {

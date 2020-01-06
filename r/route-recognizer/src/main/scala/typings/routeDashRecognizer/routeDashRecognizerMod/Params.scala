@@ -8,8 +8,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Params
-  extends /* key */ StringDictionary[Opaque]
-     with /* key */ NumberDictionary[Opaque] {
+  extends /* key */ NumberDictionary[Opaque]
+     with /* key */ StringDictionary[Opaque] {
   var queryParams: js.UndefOr[QueryParams | Null] = js.undefined
 }
 

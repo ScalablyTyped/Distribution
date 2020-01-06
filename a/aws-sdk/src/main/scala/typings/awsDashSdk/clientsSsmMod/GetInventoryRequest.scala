@@ -4,27 +4,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetInventoryRequest extends js.Object {
   /**
     * Returns counts of inventory types based on one or more expressions. For example, if you aggregate by using an expression that uses the AWS:InstanceInformation.PlatformType type, you can see a count of how many Windows and Linux instances exist in your inventoried fleet.
     */
-  var Aggregators: js.UndefOr[InventoryAggregatorList] = js.undefined
+  var Aggregators: js.UndefOr[InventoryAggregatorList] = js.native
   /**
     * One or more filters. Use a filter to return a more specific list of results.
     */
-  var Filters: js.UndefOr[InventoryFilterList] = js.undefined
+  var Filters: js.UndefOr[InventoryFilterList] = js.native
   /**
     * The maximum number of items to return for this call. The call also returns a token that you can specify in a subsequent call to get the next set of results.
     */
-  var MaxResults: js.UndefOr[typings.awsDashSdk.clientsSsmMod.MaxResults] = js.undefined
+  var MaxResults: js.UndefOr[typings.awsDashSdk.clientsSsmMod.MaxResults] = js.native
   /**
     * The token for the next set of items to return. (You received this token from a previous call.)
     */
-  var NextToken: js.UndefOr[typings.awsDashSdk.clientsSsmMod.NextToken] = js.undefined
+  var NextToken: js.UndefOr[typings.awsDashSdk.clientsSsmMod.NextToken] = js.native
   /**
     * The list of inventory item types to return.
     */
-  var ResultAttributes: js.UndefOr[ResultAttributeList] = js.undefined
+  var ResultAttributes: js.UndefOr[ResultAttributeList] = js.native
 }
 
 object GetInventoryRequest {
@@ -37,11 +38,11 @@ object GetInventoryRequest {
     ResultAttributes: ResultAttributeList = null
   ): GetInventoryRequest = {
     val __obj = js.Dynamic.literal()
-    if (Aggregators != null) __obj.updateDynamic("Aggregators")(Aggregators)
-    if (Filters != null) __obj.updateDynamic("Filters")(Filters)
+    if (Aggregators != null) __obj.updateDynamic("Aggregators")(Aggregators.asInstanceOf[js.Any])
+    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
     if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
-    if (ResultAttributes != null) __obj.updateDynamic("ResultAttributes")(ResultAttributes)
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
+    if (ResultAttributes != null) __obj.updateDynamic("ResultAttributes")(ResultAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetInventoryRequest]
   }
 }

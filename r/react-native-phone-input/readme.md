@@ -10,9 +10,9 @@ Phone input box for React Native
 | ------------------ | :-------------: |
 | Full name          | react-native-phone-input |
 | Keywords           | react-native, phone, telephone, phone input, input, tel, input text, international, react-native-component, ios, android |
-| # releases         | 7 |
+| # releases         | 6 |
 | # dependents       | 2 |
-| # downloads        | 199384 |
+| # downloads        | 262761 |
 | # stars            | 1 |
 
 ## Links

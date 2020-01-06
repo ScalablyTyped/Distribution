@@ -10,9 +10,9 @@ A simple Time-Ago component for ReactJs
 | ------------------ | :-------------: |
 | Full name          | react-timeago |
 | Keywords           | React, ReactJS, Time, Ago, TimeAgo, ender |
-| # releases         | 15 |
-| # dependents       | 18 |
-| # downloads        | 1261312 |
+| # releases         | 9 |
+| # dependents       | 30 |
+| # downloads        | 1975315 |
 | # stars            | 13 |
 
 ## Links

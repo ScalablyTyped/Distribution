@@ -10,9 +10,9 @@ A JavaScript model of a Gaussian distribution
 | ------------------ | :-------------: |
 | Full name          | gaussian |
 | Keywords           | gaussian, normal, distribution |
-| # releases         | 1 |
-| # dependents       | 33 |
-| # downloads        | 86873 |
+| # releases         | 0 |
+| # dependents       | 35 |
+| # downloads        | 229330 |
 | # stars            | 5 |
 
 ## Links

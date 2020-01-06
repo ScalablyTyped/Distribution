@@ -1,5 +1,6 @@
 package typings.atPulumiAws.glueCrawlerMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.atPulumiAws.typesOutputMod.glue.CrawlerCatalogTarget
 import typings.atPulumiAws.typesOutputMod.glue.CrawlerDynamodbTarget
 import typings.atPulumiAws.typesOutputMod.glue.CrawlerJdbcTarget
@@ -83,6 +84,10 @@ class Crawler protected () extends CustomResource {
     * The table prefix used for catalog tables that are created.
     */
   val tablePrefix: Output[js.UndefOr[String]] = js.native
+  /**
+    * Key-value mapping of resource tags
+    */
+  val tags: Output[js.UndefOr[StringDictionary[_]]] = js.native
 }
 
 /* static members */

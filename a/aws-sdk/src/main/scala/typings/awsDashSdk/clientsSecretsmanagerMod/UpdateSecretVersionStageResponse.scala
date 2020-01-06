@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UpdateSecretVersionStageResponse extends js.Object {
   /**
     * The ARN of the secret with the staging label that was modified.
     */
-  var ARN: js.UndefOr[SecretARNType] = js.undefined
+  var ARN: js.UndefOr[SecretARNType] = js.native
   /**
     * The friendly name of the secret with the staging label that was modified.
     */
-  var Name: js.UndefOr[SecretNameType] = js.undefined
+  var Name: js.UndefOr[SecretNameType] = js.native
 }
 
 object UpdateSecretVersionStageResponse {
   @scala.inline
   def apply(ARN: SecretARNType = null, Name: SecretNameType = null): UpdateSecretVersionStageResponse = {
     val __obj = js.Dynamic.literal()
-    if (ARN != null) __obj.updateDynamic("ARN")(ARN)
-    if (Name != null) __obj.updateDynamic("Name")(Name)
+    if (ARN != null) __obj.updateDynamic("ARN")(ARN.asInstanceOf[js.Any])
+    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateSecretVersionStageResponse]
   }
 }

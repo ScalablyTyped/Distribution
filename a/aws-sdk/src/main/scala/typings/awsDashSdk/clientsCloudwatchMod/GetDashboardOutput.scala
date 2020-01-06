@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetDashboardOutput extends js.Object {
   /**
     * The Amazon Resource Name (ARN) of the dashboard.
     */
-  var DashboardArn: js.UndefOr[typings.awsDashSdk.clientsCloudwatchMod.DashboardArn] = js.undefined
+  var DashboardArn: js.UndefOr[typings.awsDashSdk.clientsCloudwatchMod.DashboardArn] = js.native
   /**
     * The detailed information about the dashboard, including what widgets are included and their location on the dashboard. For more information about the DashboardBody syntax, see CloudWatch-Dashboard-Body-Structure. 
     */
-  var DashboardBody: js.UndefOr[typings.awsDashSdk.clientsCloudwatchMod.DashboardBody] = js.undefined
+  var DashboardBody: js.UndefOr[typings.awsDashSdk.clientsCloudwatchMod.DashboardBody] = js.native
   /**
     * The name of the dashboard.
     */
-  var DashboardName: js.UndefOr[typings.awsDashSdk.clientsCloudwatchMod.DashboardName] = js.undefined
+  var DashboardName: js.UndefOr[typings.awsDashSdk.clientsCloudwatchMod.DashboardName] = js.native
 }
 
 object GetDashboardOutput {
@@ -27,9 +28,9 @@ object GetDashboardOutput {
     DashboardName: DashboardName = null
   ): GetDashboardOutput = {
     val __obj = js.Dynamic.literal()
-    if (DashboardArn != null) __obj.updateDynamic("DashboardArn")(DashboardArn)
-    if (DashboardBody != null) __obj.updateDynamic("DashboardBody")(DashboardBody)
-    if (DashboardName != null) __obj.updateDynamic("DashboardName")(DashboardName)
+    if (DashboardArn != null) __obj.updateDynamic("DashboardArn")(DashboardArn.asInstanceOf[js.Any])
+    if (DashboardBody != null) __obj.updateDynamic("DashboardBody")(DashboardBody.asInstanceOf[js.Any])
+    if (DashboardName != null) __obj.updateDynamic("DashboardName")(DashboardName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDashboardOutput]
   }
 }

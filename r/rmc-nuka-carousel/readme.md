@@ -10,9 +10,9 @@ Pure React Carousel
 | ------------------ | :-------------: |
 | Full name          | rmc-nuka-carousel |
 | Keywords           | react, carousel, nuka |
-| # releases         | 9 |
-| # dependents       | 28 |
-| # downloads        | 274264 |
+| # releases         | 1 |
+| # dependents       | 33 |
+| # downloads        | 556952 |
 | # stars            | 2 |
 
 ## Links

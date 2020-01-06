@@ -10,9 +10,9 @@ Find, read and parse the package.json of the parent module
 | ------------------ | :-------------: |
 | Full name          | parent-package-json |
 | Keywords           | parent, package.json, find, search, parse, read |
-| # releases         | 2 |
-| # dependents       | 9 |
-| # downloads        | 14190 |
+| # releases         | 0 |
+| # dependents       | 11 |
+| # downloads        | 36407 |
 | # stars            | 0 |
 
 ## Links

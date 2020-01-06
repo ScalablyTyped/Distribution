@@ -11,8 +11,8 @@ WordPress URL utilities.
 | Full name          | @wordpress/url |
 | Keywords           | wordpress, url |
 | # releases         | 29 |
-| # dependents       | 11 |
-| # downloads        | 114520 |
+| # dependents       | 14 |
+| # downloads        | 284243 |
 | # stars            | 1 |
 
 ## Links

@@ -5,22 +5,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SecurityGroupEgress extends js.Object {
-  var cidrBlocks: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  var cidrBlocks: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The security group description. Defaults to
     * "Managed by Pulumi". Cannot be "". __NOTE__: This field maps to the AWS
     * `GroupDescription` attribute, for which there is no Update API. If you'd like
     * to classify your security groups in a way that can be updated, use `tags`.
     */
-  var description: js.UndefOr[Input[String]] = js.undefined
-  var fromPort: Input[Double]
-  var ipv6CidrBlocks: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
-  var prefixListIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
-  var protocol: Input[String]
-  var securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
-  var self: js.UndefOr[Input[Boolean]] = js.undefined
-  var toPort: Input[Double]
+  var description: js.UndefOr[Input[String]] = js.native
+  var fromPort: Input[Double] = js.native
+  var ipv6CidrBlocks: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  var prefixListIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  var protocol: Input[String] = js.native
+  var securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  var self: js.UndefOr[Input[Boolean]] = js.native
+  var toPort: Input[Double] = js.native
 }
 
 object SecurityGroupEgress {

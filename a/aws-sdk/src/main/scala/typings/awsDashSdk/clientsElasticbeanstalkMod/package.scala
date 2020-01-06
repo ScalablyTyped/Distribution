@@ -11,24 +11,24 @@ package object clientsElasticbeanstalkMod {
   type ARN = java.lang.String
   type AbortableOperationInProgress = Boolean
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Completed
-    - typings.awsDashSdk.awsDashSdkStrings.Failed
-    - typings.awsDashSdk.awsDashSdkStrings.Unknown
+    - typings.awsDashSdk.awsDashSdkStrings.Completed_
+    - typings.awsDashSdk.awsDashSdkStrings.Failed_
+    - typings.awsDashSdk.awsDashSdkStrings.Unknown_
     - java.lang.String
   */
   type ActionHistoryStatus = _ActionHistoryStatus | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Scheduled
-    - typings.awsDashSdk.awsDashSdkStrings.Pending
-    - typings.awsDashSdk.awsDashSdkStrings.Running
-    - typings.awsDashSdk.awsDashSdkStrings.Unknown
+    - typings.awsDashSdk.awsDashSdkStrings.Scheduled_
+    - typings.awsDashSdk.awsDashSdkStrings.Pending_
+    - typings.awsDashSdk.awsDashSdkStrings.Running_
+    - typings.awsDashSdk.awsDashSdkStrings.Unknown_
     - java.lang.String
   */
   type ActionStatus = _ActionStatus | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.InstanceRefresh
     - typings.awsDashSdk.awsDashSdkStrings.PlatformUpdate
-    - typings.awsDashSdk.awsDashSdkStrings.Unknown
+    - typings.awsDashSdk.awsDashSdkStrings.Unknown_
     - java.lang.String
   */
   type ActionType = _ActionType | java.lang.String
@@ -42,9 +42,9 @@ package object clientsElasticbeanstalkMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.Processed
     - typings.awsDashSdk.awsDashSdkStrings.Unprocessed
-    - typings.awsDashSdk.awsDashSdkStrings.Failed
-    - typings.awsDashSdk.awsDashSdkStrings.Processing
-    - typings.awsDashSdk.awsDashSdkStrings.Building
+    - typings.awsDashSdk.awsDashSdkStrings.Failed_
+    - typings.awsDashSdk.awsDashSdkStrings.Processing_
+    - typings.awsDashSdk.awsDashSdkStrings.Building_
     - java.lang.String
   */
   type ApplicationVersionStatus = _ApplicationVersionStatus | java.lang.String
@@ -66,9 +66,9 @@ package object clientsElasticbeanstalkMod {
   */
   type ComputeType = _ComputeType | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.deployed
-    - typings.awsDashSdk.awsDashSdkStrings.pending
-    - typings.awsDashSdk.awsDashSdkStrings.failed
+    - typings.awsDashSdk.awsDashSdkStrings.deployed_
+    - typings.awsDashSdk.awsDashSdkStrings.pending__
+    - typings.awsDashSdk.awsDashSdkStrings.failed__
     - java.lang.String
   */
   type ConfigurationDeploymentStatus = _ConfigurationDeploymentStatus | java.lang.String
@@ -101,20 +101,20 @@ package object clientsElasticbeanstalkMod {
   type EnvironmentArn = java.lang.String
   type EnvironmentDescriptionsList = js.Array[EnvironmentDescription]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Green
-    - typings.awsDashSdk.awsDashSdkStrings.Yellow
-    - typings.awsDashSdk.awsDashSdkStrings.Red
+    - typings.awsDashSdk.awsDashSdkStrings.Green_
+    - typings.awsDashSdk.awsDashSdkStrings.Yellow_
+    - typings.awsDashSdk.awsDashSdkStrings.Red_
     - typings.awsDashSdk.awsDashSdkStrings.Grey
     - java.lang.String
   */
   type EnvironmentHealth = _EnvironmentHealth | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Status
-    - typings.awsDashSdk.awsDashSdkStrings.Color
+    - typings.awsDashSdk.awsDashSdkStrings.Status_
+    - typings.awsDashSdk.awsDashSdkStrings.Color_
     - typings.awsDashSdk.awsDashSdkStrings.Causes
     - typings.awsDashSdk.awsDashSdkStrings.ApplicationMetrics
     - typings.awsDashSdk.awsDashSdkStrings.InstancesHealth
-    - typings.awsDashSdk.awsDashSdkStrings.All
+    - typings.awsDashSdk.awsDashSdkStrings.All_
     - typings.awsDashSdk.awsDashSdkStrings.HealthStatus
     - typings.awsDashSdk.awsDashSdkStrings.RefreshedAt
     - java.lang.String
@@ -123,14 +123,14 @@ package object clientsElasticbeanstalkMod {
   type EnvironmentHealthAttributes = js.Array[EnvironmentHealthAttribute]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.NoData
-    - typings.awsDashSdk.awsDashSdkStrings.Unknown
-    - typings.awsDashSdk.awsDashSdkStrings.Pending
-    - typings.awsDashSdk.awsDashSdkStrings.Ok
-    - typings.awsDashSdk.awsDashSdkStrings.Info
-    - typings.awsDashSdk.awsDashSdkStrings.Warning
-    - typings.awsDashSdk.awsDashSdkStrings.Degraded
+    - typings.awsDashSdk.awsDashSdkStrings.Unknown_
+    - typings.awsDashSdk.awsDashSdkStrings.Pending_
+    - typings.awsDashSdk.awsDashSdkStrings.Ok_
+    - typings.awsDashSdk.awsDashSdkStrings.Info_
+    - typings.awsDashSdk.awsDashSdkStrings.Warning_
+    - typings.awsDashSdk.awsDashSdkStrings.Degraded_
     - typings.awsDashSdk.awsDashSdkStrings.Severe
-    - typings.awsDashSdk.awsDashSdkStrings.Suspended
+    - typings.awsDashSdk.awsDashSdkStrings.Suspended_
     - java.lang.String
   */
   type EnvironmentHealthStatus = _EnvironmentHealthStatus | java.lang.String
@@ -138,7 +138,7 @@ package object clientsElasticbeanstalkMod {
   type EnvironmentIdList = js.Array[EnvironmentId]
   type EnvironmentInfoDescriptionList = js.Array[EnvironmentInfoDescription]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.tail
+    - typings.awsDashSdk.awsDashSdkStrings.tail_
     - typings.awsDashSdk.awsDashSdkStrings.bundle
     - java.lang.String
   */
@@ -147,11 +147,11 @@ package object clientsElasticbeanstalkMod {
   type EnvironmentName = java.lang.String
   type EnvironmentNamesList = js.Array[EnvironmentName]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Launching
-    - typings.awsDashSdk.awsDashSdkStrings.Updating
-    - typings.awsDashSdk.awsDashSdkStrings.Ready
-    - typings.awsDashSdk.awsDashSdkStrings.Terminating
-    - typings.awsDashSdk.awsDashSdkStrings.Terminated
+    - typings.awsDashSdk.awsDashSdkStrings.Launching_
+    - typings.awsDashSdk.awsDashSdkStrings.Updating_
+    - typings.awsDashSdk.awsDashSdkStrings.Ready_
+    - typings.awsDashSdk.awsDashSdkStrings.Terminating_
+    - typings.awsDashSdk.awsDashSdkStrings.Terminated_
     - java.lang.String
   */
   type EnvironmentStatus = _EnvironmentStatus | java.lang.String
@@ -190,16 +190,16 @@ package object clientsElasticbeanstalkMod {
   type InstanceList = js.Array[Instance]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.HealthStatus
-    - typings.awsDashSdk.awsDashSdkStrings.Color
+    - typings.awsDashSdk.awsDashSdkStrings.Color_
     - typings.awsDashSdk.awsDashSdkStrings.Causes
     - typings.awsDashSdk.awsDashSdkStrings.ApplicationMetrics
     - typings.awsDashSdk.awsDashSdkStrings.RefreshedAt
     - typings.awsDashSdk.awsDashSdkStrings.LaunchedAt
-    - typings.awsDashSdk.awsDashSdkStrings.System
+    - typings.awsDashSdk.awsDashSdkStrings.System_
     - typings.awsDashSdk.awsDashSdkStrings.Deployment
     - typings.awsDashSdk.awsDashSdkStrings.AvailabilityZone
     - typings.awsDashSdk.awsDashSdkStrings.InstanceType
-    - typings.awsDashSdk.awsDashSdkStrings.All
+    - typings.awsDashSdk.awsDashSdkStrings.All_
     - java.lang.String
   */
   type InstancesHealthAttribute = _InstancesHealthAttribute | java.lang.String
@@ -242,11 +242,11 @@ package object clientsElasticbeanstalkMod {
   type PlatformOwner = java.lang.String
   type PlatformProgrammingLanguages = js.Array[PlatformProgrammingLanguage]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Creating
-    - typings.awsDashSdk.awsDashSdkStrings.Failed
-    - typings.awsDashSdk.awsDashSdkStrings.Ready
-    - typings.awsDashSdk.awsDashSdkStrings.Deleting
-    - typings.awsDashSdk.awsDashSdkStrings.Deleted
+    - typings.awsDashSdk.awsDashSdkStrings.Creating_
+    - typings.awsDashSdk.awsDashSdkStrings.Failed_
+    - typings.awsDashSdk.awsDashSdkStrings.Ready_
+    - typings.awsDashSdk.awsDashSdkStrings.Deleting_
+    - typings.awsDashSdk.awsDashSdkStrings.Deleted_
     - java.lang.String
   */
   type PlatformStatus = _PlatformStatus | java.lang.String
@@ -268,14 +268,14 @@ package object clientsElasticbeanstalkMod {
   type SolutionStackName = java.lang.String
   type SourceLocation = java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.CodeCommit
+    - typings.awsDashSdk.awsDashSdkStrings.CodeCommit_
     - typings.awsDashSdk.awsDashSdkStrings.S3
     - java.lang.String
   */
   type SourceRepository = _SourceRepository | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.Git
-    - typings.awsDashSdk.awsDashSdkStrings.Zip
+    - typings.awsDashSdk.awsDashSdkStrings.Zip_
     - java.lang.String
   */
   type SourceType = _SourceType | java.lang.String
@@ -301,8 +301,8 @@ package object clientsElasticbeanstalkMod {
   type ValidationMessageString = java.lang.String
   type ValidationMessagesList = js.Array[ValidationMessage]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.error
-    - typings.awsDashSdk.awsDashSdkStrings.warning
+    - typings.awsDashSdk.awsDashSdkStrings.error__
+    - typings.awsDashSdk.awsDashSdkStrings.warning__
     - java.lang.String
   */
   type ValidationSeverity = _ValidationSeverity | java.lang.String
@@ -312,7 +312,7 @@ package object clientsElasticbeanstalkMod {
   type VirtualizationType = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2010-12-01`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | java.lang.String

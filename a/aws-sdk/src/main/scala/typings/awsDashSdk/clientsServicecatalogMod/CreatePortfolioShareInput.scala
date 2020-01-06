@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CreatePortfolioShareInput extends js.Object {
   /**
     * The language code.    en - English (default)    jp - Japanese    zh - Chinese  
     */
-  var AcceptLanguage: js.UndefOr[typings.awsDashSdk.clientsServicecatalogMod.AcceptLanguage] = js.undefined
+  var AcceptLanguage: js.UndefOr[typings.awsDashSdk.clientsServicecatalogMod.AcceptLanguage] = js.native
   /**
     * The AWS account ID. For example, 123456789012.
     */
-  var AccountId: js.UndefOr[typings.awsDashSdk.clientsServicecatalogMod.AccountId] = js.undefined
+  var AccountId: js.UndefOr[typings.awsDashSdk.clientsServicecatalogMod.AccountId] = js.native
   /**
     * The organization node to whom you are going to share. If OrganizationNode is passed in, PortfolioShare will be created for the node and its children (when applies), and a PortfolioShareToken will be returned in the output in order for the administrator to monitor the status of the PortfolioShare creation process.
     */
-  var OrganizationNode: js.UndefOr[typings.awsDashSdk.clientsServicecatalogMod.OrganizationNode] = js.undefined
+  var OrganizationNode: js.UndefOr[typings.awsDashSdk.clientsServicecatalogMod.OrganizationNode] = js.native
   /**
     * The portfolio identifier.
     */
-  var PortfolioId: Id
+  var PortfolioId: Id = js.native
 }
 
 object CreatePortfolioShareInput {
@@ -31,10 +32,10 @@ object CreatePortfolioShareInput {
     AccountId: AccountId = null,
     OrganizationNode: OrganizationNode = null
   ): CreatePortfolioShareInput = {
-    val __obj = js.Dynamic.literal(PortfolioId = PortfolioId)
-    if (AcceptLanguage != null) __obj.updateDynamic("AcceptLanguage")(AcceptLanguage)
-    if (AccountId != null) __obj.updateDynamic("AccountId")(AccountId)
-    if (OrganizationNode != null) __obj.updateDynamic("OrganizationNode")(OrganizationNode)
+    val __obj = js.Dynamic.literal(PortfolioId = PortfolioId.asInstanceOf[js.Any])
+    if (AcceptLanguage != null) __obj.updateDynamic("AcceptLanguage")(AcceptLanguage.asInstanceOf[js.Any])
+    if (AccountId != null) __obj.updateDynamic("AccountId")(AccountId.asInstanceOf[js.Any])
+    if (OrganizationNode != null) __obj.updateDynamic("OrganizationNode")(OrganizationNode.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePortfolioShareInput]
   }
 }

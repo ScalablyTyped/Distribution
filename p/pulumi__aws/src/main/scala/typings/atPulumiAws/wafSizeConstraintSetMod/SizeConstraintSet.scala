@@ -24,6 +24,10 @@ class SizeConstraintSet protected () extends CustomResource {
   def this(name: String, args: SizeConstraintSetArgs) = this()
   def this(name: String, args: SizeConstraintSetArgs, opts: CustomResourceOptions) = this()
   /**
+    * Amazon Resource Name (ARN)
+    */
+  val arn: Output[String] = js.native
+  /**
     * The name or description of the Size Constraint Set.
     */
   val name: Output[String] = js.native

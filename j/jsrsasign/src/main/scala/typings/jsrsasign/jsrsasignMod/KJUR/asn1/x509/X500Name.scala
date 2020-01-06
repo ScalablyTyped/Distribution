@@ -45,8 +45,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class X500Name protected ()
   extends typings.jsrsasign.jsrsasign.KJUR.asn1.x509.X500Name {
-  def this(params: StringParam with Anon_Certissuer) = this()
   def this(params: X500NameParam with Anon_Certissuer) = this()
+  def this(params: StringParam with Anon_Certissuer) = this()
   def this(params: Anon_CertissuerCertsubject) = this()
 }
 

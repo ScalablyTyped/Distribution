@@ -12,11 +12,13 @@ The lodash method `_.mean` exported as a module.
 | Keywords           | lodash-modularized, mean |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 92679 |
+| # downloads        | 100337 |
 | # stars            | 0 |
 
 ## Links
 - [Homepage](https://lodash.com/)
+- [Bugs](https://github.com/lodash/lodash/issues)
+- [Repository](https://github.com/lodash/lodash)
 - [Npm](https://www.npmjs.com/package/lodash.mean)
     
 

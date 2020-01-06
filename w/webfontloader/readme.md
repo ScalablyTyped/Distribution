@@ -10,9 +10,9 @@ Web Font Loader gives you added control when using linked fonts via @font-face.
 | ------------------ | :-------------: |
 | Full name          | webfontloader |
 | Keywords           | web, fonts, webfonts, font, loader, @font-face |
-| # releases         | 2 |
-| # dependents       | 176 |
-| # downloads        | 3493618 |
+| # releases         | 1 |
+| # dependents       | 247 |
+| # downloads        | 5908202 |
 | # stars            | 21 |
 
 ## Links

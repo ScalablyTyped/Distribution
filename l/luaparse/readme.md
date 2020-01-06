@@ -10,9 +10,9 @@ A Lua parser in JavaScript
 | ------------------ | :-------------: |
 | Full name          | luaparse |
 | Keywords           | ast, lua, parser, parsing |
-| # releases         | 1 |
-| # dependents       | 19 |
-| # downloads        | 36924 |
+| # releases         | 0 |
+| # dependents       | 23 |
+| # downloads        | 53930 |
 | # stars            | 4 |
 
 ## Links

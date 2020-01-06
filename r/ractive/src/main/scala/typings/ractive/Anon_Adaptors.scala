@@ -34,15 +34,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_Adaptors
   extends Instantiable0[
-      Ractive[
-        Ractive[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any]
-      ]
+      Ractive[Ractive[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any]]
     ]
      with Instantiable1[
-      /* opts */ InitOpts[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any], 
-      Ractive[
-        Ractive[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any]
-      ]
+      /* opts */ InitOpts[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
+      Ractive[Ractive[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any]]
     ] {
   /** When true, causes Ractive to emit warnings. Defaults to true. */
   var DEBUG: Boolean = js.native

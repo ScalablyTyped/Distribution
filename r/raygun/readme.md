@@ -10,9 +10,9 @@ Raygun.io plugin for Node
 | ------------------ | :-------------: |
 | Full name          | raygun |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 17 |
-| # downloads        | 465568 |
+| # releases         | 2 |
+| # dependents       | 18 |
+| # downloads        | 864063 |
 | # stars            | 0 |
 
 ## Links

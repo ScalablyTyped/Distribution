@@ -6,13 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/ListSubheader.ListSubheaderClassKey>> */
+@js.native
 trait PartialStyleRulesListSubheaderClassKey extends js.Object {
-  var colorInherit: js.UndefOr[CSSProperties] = js.undefined
-  var colorPrimary: js.UndefOr[CSSProperties] = js.undefined
-  var gutters: js.UndefOr[CSSProperties] = js.undefined
-  var inset: js.UndefOr[CSSProperties] = js.undefined
-  var root: js.UndefOr[CSSProperties] = js.undefined
-  var sticky: js.UndefOr[CSSProperties] = js.undefined
+  var colorInherit: js.UndefOr[CSSProperties] = js.native
+  var colorPrimary: js.UndefOr[CSSProperties] = js.native
+  var gutters: js.UndefOr[CSSProperties] = js.native
+  var inset: js.UndefOr[CSSProperties] = js.native
+  var root: js.UndefOr[CSSProperties] = js.native
+  var sticky: js.UndefOr[CSSProperties] = js.native
 }
 
 object PartialStyleRulesListSubheaderClassKey {

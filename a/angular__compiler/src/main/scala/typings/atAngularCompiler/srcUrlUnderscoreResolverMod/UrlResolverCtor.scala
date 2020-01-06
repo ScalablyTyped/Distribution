@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait UrlResolverCtor
-  extends Instantiable1[/* packagePrefix */ String, UrlResolver]
-     with Instantiable0[UrlResolver]
+  extends Instantiable0[UrlResolver]
+     with Instantiable1[/* packagePrefix */ String, UrlResolver]
 

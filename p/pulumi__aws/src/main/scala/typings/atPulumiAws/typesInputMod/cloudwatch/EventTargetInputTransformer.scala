@@ -6,15 +6,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EventTargetInputTransformer extends js.Object {
   /**
     * Key value pairs specified in the form of JSONPath (for example, time = $.time)
     */
-  var inputPaths: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  var inputPaths: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * Structure containing the template body.
     */
-  var inputTemplate: Input[String]
+  var inputTemplate: Input[String] = js.native
 }
 
 object EventTargetInputTransformer {

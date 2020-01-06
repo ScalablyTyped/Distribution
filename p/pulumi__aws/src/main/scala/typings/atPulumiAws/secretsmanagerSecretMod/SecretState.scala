@@ -7,51 +7,49 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SecretState extends js.Object {
   /**
     * Amazon Resource Name (ARN) of the secret.
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * A description of the secret.
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * Specifies the ARN or alias of the AWS KMS customer master key (CMK) to be used to encrypt the secret values in the versions stored in this secret. If you don't specify this value, then Secrets Manager defaults to using the AWS account's default CMK (the one named `aws/secretsmanager`). If the default KMS CMK with that name doesn't yet exist, then AWS Secrets Manager creates it for you automatically the first time.
     */
-  val kmsKeyId: js.UndefOr[Input[String]] = js.undefined
+  val kmsKeyId: js.UndefOr[Input[String]] = js.native
   /**
     * Specifies the friendly name of the new secret. The secret name can consist of uppercase letters, lowercase letters, digits, and any of the following characters: `/_+=.@-` Conflicts with `namePrefix`.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`.
     */
-  val namePrefix: js.UndefOr[Input[String]] = js.undefined
-  /**
-    * A valid JSON document representing a [resource policy](https://docs.aws.amazon.com/secretsmanager/latest/userguide/auth-and-access_resource-based-policies.html).
-    */
-  val policy: js.UndefOr[Input[String]] = js.undefined
+  val namePrefix: js.UndefOr[Input[String]] = js.native
+  val policy: js.UndefOr[Input[String]] = js.native
   /**
     * Specifies the number of days that AWS Secrets Manager waits before it can delete the secret. This value can be `0` to force deletion without recovery or range from `7` to `30` days. The default value is `30`.
     */
-  val recoveryWindowInDays: js.UndefOr[Input[Double]] = js.undefined
+  val recoveryWindowInDays: js.UndefOr[Input[Double]] = js.native
   /**
     * Specifies whether automatic rotation is enabled for this secret.
     */
-  val rotationEnabled: js.UndefOr[Input[Boolean]] = js.undefined
+  val rotationEnabled: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Specifies the ARN of the Lambda function that can rotate the secret.
     */
-  val rotationLambdaArn: js.UndefOr[Input[String]] = js.undefined
+  val rotationLambdaArn: js.UndefOr[Input[String]] = js.native
   /**
     * A structure that defines the rotation configuration for this secret. Defined below.
     */
-  val rotationRules: js.UndefOr[Input[SecretRotationRules]] = js.undefined
+  val rotationRules: js.UndefOr[Input[SecretRotationRules]] = js.native
   /**
     * Specifies a key-value map of user-defined tags that are attached to the secret.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object SecretState {

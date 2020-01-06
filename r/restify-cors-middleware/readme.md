@@ -10,9 +10,9 @@ CORS middleware with full W3C spec support
 | ------------------ | :-------------: |
 | Full name          | restify-cors-middleware |
 | Keywords           | restify, cors, cross origin, headers |
-| # releases         | 5 |
-| # dependents       | 43 |
-| # downloads        | 436783 |
+| # releases         | 2 |
+| # dependents       | 53 |
+| # downloads        | 604568 |
 | # stars            | 2 |
 
 ## Links

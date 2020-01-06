@@ -10,9 +10,9 @@ JupyterLab - Document Registry
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/docregistry |
 | Keywords           | - |
-| # releases         | 43 |
-| # dependents       | 86 |
-| # downloads        | 747363 |
+| # releases         | 65 |
+| # dependents       | 124 |
+| # downloads        | 951322 |
 | # stars            | 0 |
 
 ## Links

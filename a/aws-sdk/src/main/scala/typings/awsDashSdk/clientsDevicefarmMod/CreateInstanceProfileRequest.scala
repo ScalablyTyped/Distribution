@@ -4,27 +4,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CreateInstanceProfileRequest extends js.Object {
   /**
     * The description of your instance profile.
     */
-  var description: js.UndefOr[Message] = js.undefined
+  var description: js.UndefOr[Message] = js.native
   /**
-    * An array of strings specifying the list of app packages that should not be cleaned up from the device after a test run is over. The list of packages is only considered if you set packageCleanup to true.
+    * An array of strings that specifies the list of app packages that should not be cleaned up from the device after a test run. The list of packages is considered only if you set packageCleanup to true.
     */
-  var excludeAppPackagesFromCleanup: js.UndefOr[PackageIds] = js.undefined
+  var excludeAppPackagesFromCleanup: js.UndefOr[PackageIds] = js.native
   /**
     * The name of your instance profile.
     */
-  var name: Name
+  var name: Name = js.native
   /**
-    * When set to true, Device Farm will remove app packages after a test run. The default value is false for private devices.
+    * When set to true, Device Farm removes app packages after a test run. The default value is false for private devices.
     */
-  var packageCleanup: js.UndefOr[Boolean] = js.undefined
+  var packageCleanup: js.UndefOr[Boolean] = js.native
   /**
-    * When set to true, Device Farm will reboot the instance after a test run. The default value is true.
+    * When set to true, Device Farm reboots the instance after a test run. The default value is true.
     */
-  var rebootAfterUse: js.UndefOr[Boolean] = js.undefined
+  var rebootAfterUse: js.UndefOr[Boolean] = js.native
 }
 
 object CreateInstanceProfileRequest {
@@ -36,11 +37,11 @@ object CreateInstanceProfileRequest {
     packageCleanup: js.UndefOr[scala.Boolean] = js.undefined,
     rebootAfterUse: js.UndefOr[scala.Boolean] = js.undefined
   ): CreateInstanceProfileRequest = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (excludeAppPackagesFromCleanup != null) __obj.updateDynamic("excludeAppPackagesFromCleanup")(excludeAppPackagesFromCleanup)
-    if (!js.isUndefined(packageCleanup)) __obj.updateDynamic("packageCleanup")(packageCleanup)
-    if (!js.isUndefined(rebootAfterUse)) __obj.updateDynamic("rebootAfterUse")(rebootAfterUse)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (excludeAppPackagesFromCleanup != null) __obj.updateDynamic("excludeAppPackagesFromCleanup")(excludeAppPackagesFromCleanup.asInstanceOf[js.Any])
+    if (!js.isUndefined(packageCleanup)) __obj.updateDynamic("packageCleanup")(packageCleanup.asInstanceOf[js.Any])
+    if (!js.isUndefined(rebootAfterUse)) __obj.updateDynamic("rebootAfterUse")(rebootAfterUse.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateInstanceProfileRequest]
   }
 }

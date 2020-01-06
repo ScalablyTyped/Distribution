@@ -11,8 +11,8 @@ jScrollPane - cross browser custom scroll bars
 | Full name          | jscrollpane |
 | Keywords           | jquery, jscrollpane, css |
 | # releases         | 13 |
-| # dependents       | 1 |
-| # downloads        | 83883 |
+| # dependents       | 2 |
+| # downloads        | 141948 |
 | # stars            | 1 |
 
 ## Links

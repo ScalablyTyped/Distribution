@@ -12,7 +12,7 @@ A javascript library for adding voice commands to your site, using speech recogn
 | Keywords           | annyang, annyang.js, recognition, speech, speechrecognition, voice, webkitspeechrecognition |
 | # releases         | 2 |
 | # dependents       | 6 |
-| # downloads        | 28917 |
+| # downloads        | 29742 |
 | # stars            | 4 |
 
 ## Links

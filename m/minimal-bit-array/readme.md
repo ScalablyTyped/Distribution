@@ -12,7 +12,7 @@ Minimal bit array implementation that is compatible with ndarrays
 | Keywords           | bitarray, bit, set, ndarray |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 426 |
+| # downloads        | 463 |
 | # stars            | 0 |
 
 ## Links

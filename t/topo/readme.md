@@ -11,8 +11,8 @@ Topological sorting with grouping support
 | Full name          | topo |
 | Keywords           | topological, sort, toposort, topsort |
 | # releases         | 4 |
-| # dependents       | 21 |
-| # downloads        | 75440765 |
+| # dependents       | 15 |
+| # downloads        | 103130503 |
 | # stars            | 2 |
 
 ## Links

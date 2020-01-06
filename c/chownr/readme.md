@@ -10,9 +10,9 @@ like `chown -R`
 | ------------------ | :-------------: |
 | Full name          | chownr |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 58 |
-| # downloads        | 209498383 |
+| # releases         | 5 |
+| # dependents       | 83 |
+| # downloads        | 391278059 |
 | # stars            | 2 |
 
 ## Links

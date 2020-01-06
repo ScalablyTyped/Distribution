@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SqlInjectionMatchSetSqlInjectionMatchTuple extends js.Object {
   /**
     * Specifies where in a web request to look for snippets of malicious SQL code.
     */
-  var fieldToMatch: Input[SqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatch]
+  var fieldToMatch: Input[SqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatch] = js.native
   /**
     * Text transformations used to eliminate unusual formatting that attackers use in web requests in an effort to bypass AWS WAF.
     * If you specify a transformation, AWS WAF performs the transformation on `fieldToMatch` before inspecting a request for a match.
@@ -17,7 +18,7 @@ trait SqlInjectionMatchSetSqlInjectionMatchTuple extends js.Object {
     * See [docs](http://docs.aws.amazon.com/waf/latest/APIReference/API_SqlInjectionMatchTuple.html#WAF-Type-SqlInjectionMatchTuple-TextTransformation)
     * for all supported values.
     */
-  var textTransformation: Input[String]
+  var textTransformation: Input[String] = js.native
 }
 
 object SqlInjectionMatchSetSqlInjectionMatchTuple {

@@ -5,6 +5,10 @@ import typings.awsDashSdk.awsDashSdkStrings.channelCreated
 import typings.awsDashSdk.awsDashSdkStrings.channelDeleted
 import typings.awsDashSdk.awsDashSdkStrings.channelRunning
 import typings.awsDashSdk.awsDashSdkStrings.channelStopped
+import typings.awsDashSdk.awsDashSdkStrings.multiplexCreated
+import typings.awsDashSdk.awsDashSdkStrings.multiplexDeleted
+import typings.awsDashSdk.awsDashSdkStrings.multiplexRunning
+import typings.awsDashSdk.awsDashSdkStrings.multiplexStopped
 import typings.awsDashSdk.libConfigMod.ConfigBase
 import typings.awsDashSdk.libErrorMod.AWSError
 import typings.awsDashSdk.libRequestMod.Request
@@ -70,6 +74,32 @@ trait MediaLive extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateInputSecurityGroupResponse, Unit]
   ): Request[CreateInputSecurityGroupResponse, AWSError] = js.native
   /**
+    * Create a new multiplex.
+    */
+  def createMultiplex(): Request[CreateMultiplexResponse, AWSError] = js.native
+  def createMultiplex(callback: js.Function2[/* err */ AWSError, /* data */ CreateMultiplexResponse, Unit]): Request[CreateMultiplexResponse, AWSError] = js.native
+  /**
+    * Create a new multiplex.
+    */
+  def createMultiplex(params: CreateMultiplexRequest): Request[CreateMultiplexResponse, AWSError] = js.native
+  def createMultiplex(
+    params: CreateMultiplexRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateMultiplexResponse, Unit]
+  ): Request[CreateMultiplexResponse, AWSError] = js.native
+  /**
+    * Create a new program in the multiplex.
+    */
+  def createMultiplexProgram(): Request[CreateMultiplexProgramResponse, AWSError] = js.native
+  def createMultiplexProgram(callback: js.Function2[/* err */ AWSError, /* data */ CreateMultiplexProgramResponse, Unit]): Request[CreateMultiplexProgramResponse, AWSError] = js.native
+  /**
+    * Create a new program in the multiplex.
+    */
+  def createMultiplexProgram(params: CreateMultiplexProgramRequest): Request[CreateMultiplexProgramResponse, AWSError] = js.native
+  def createMultiplexProgram(
+    params: CreateMultiplexProgramRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateMultiplexProgramResponse, Unit]
+  ): Request[CreateMultiplexProgramResponse, AWSError] = js.native
+  /**
     * Create tags for a resource
     */
   def createTags(): Request[js.Object, AWSError] = js.native
@@ -118,6 +148,32 @@ trait MediaLive extends Service {
     params: DeleteInputSecurityGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteInputSecurityGroupResponse, Unit]
   ): Request[DeleteInputSecurityGroupResponse, AWSError] = js.native
+  /**
+    * Delete a multiplex. The multiplex must be idle.
+    */
+  def deleteMultiplex(): Request[DeleteMultiplexResponse, AWSError] = js.native
+  def deleteMultiplex(callback: js.Function2[/* err */ AWSError, /* data */ DeleteMultiplexResponse, Unit]): Request[DeleteMultiplexResponse, AWSError] = js.native
+  /**
+    * Delete a multiplex. The multiplex must be idle.
+    */
+  def deleteMultiplex(params: DeleteMultiplexRequest): Request[DeleteMultiplexResponse, AWSError] = js.native
+  def deleteMultiplex(
+    params: DeleteMultiplexRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteMultiplexResponse, Unit]
+  ): Request[DeleteMultiplexResponse, AWSError] = js.native
+  /**
+    * Delete a program from a multiplex.
+    */
+  def deleteMultiplexProgram(): Request[DeleteMultiplexProgramResponse, AWSError] = js.native
+  def deleteMultiplexProgram(callback: js.Function2[/* err */ AWSError, /* data */ DeleteMultiplexProgramResponse, Unit]): Request[DeleteMultiplexProgramResponse, AWSError] = js.native
+  /**
+    * Delete a program from a multiplex.
+    */
+  def deleteMultiplexProgram(params: DeleteMultiplexProgramRequest): Request[DeleteMultiplexProgramResponse, AWSError] = js.native
+  def deleteMultiplexProgram(
+    params: DeleteMultiplexProgramRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteMultiplexProgramResponse, Unit]
+  ): Request[DeleteMultiplexProgramResponse, AWSError] = js.native
   /**
     * Delete an expired reservation.
     */
@@ -193,6 +249,32 @@ trait MediaLive extends Service {
     params: DescribeInputSecurityGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeInputSecurityGroupResponse, Unit]
   ): Request[DescribeInputSecurityGroupResponse, AWSError] = js.native
+  /**
+    * Gets details about a multiplex.
+    */
+  def describeMultiplex(): Request[DescribeMultiplexResponse, AWSError] = js.native
+  def describeMultiplex(callback: js.Function2[/* err */ AWSError, /* data */ DescribeMultiplexResponse, Unit]): Request[DescribeMultiplexResponse, AWSError] = js.native
+  /**
+    * Gets details about a multiplex.
+    */
+  def describeMultiplex(params: DescribeMultiplexRequest): Request[DescribeMultiplexResponse, AWSError] = js.native
+  def describeMultiplex(
+    params: DescribeMultiplexRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeMultiplexResponse, Unit]
+  ): Request[DescribeMultiplexResponse, AWSError] = js.native
+  /**
+    * Get the details for a program in a multiplex.
+    */
+  def describeMultiplexProgram(): Request[DescribeMultiplexProgramResponse, AWSError] = js.native
+  def describeMultiplexProgram(callback: js.Function2[/* err */ AWSError, /* data */ DescribeMultiplexProgramResponse, Unit]): Request[DescribeMultiplexProgramResponse, AWSError] = js.native
+  /**
+    * Get the details for a program in a multiplex.
+    */
+  def describeMultiplexProgram(params: DescribeMultiplexProgramRequest): Request[DescribeMultiplexProgramResponse, AWSError] = js.native
+  def describeMultiplexProgram(
+    params: DescribeMultiplexProgramRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeMultiplexProgramResponse, Unit]
+  ): Request[DescribeMultiplexProgramResponse, AWSError] = js.native
   /**
     * Get details for an offering.
     */
@@ -272,6 +354,32 @@ trait MediaLive extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListInputsResponse, Unit]
   ): Request[ListInputsResponse, AWSError] = js.native
   /**
+    * List the programs that currently exist for a specific multiplex.
+    */
+  def listMultiplexPrograms(): Request[ListMultiplexProgramsResponse, AWSError] = js.native
+  def listMultiplexPrograms(callback: js.Function2[/* err */ AWSError, /* data */ ListMultiplexProgramsResponse, Unit]): Request[ListMultiplexProgramsResponse, AWSError] = js.native
+  /**
+    * List the programs that currently exist for a specific multiplex.
+    */
+  def listMultiplexPrograms(params: ListMultiplexProgramsRequest): Request[ListMultiplexProgramsResponse, AWSError] = js.native
+  def listMultiplexPrograms(
+    params: ListMultiplexProgramsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListMultiplexProgramsResponse, Unit]
+  ): Request[ListMultiplexProgramsResponse, AWSError] = js.native
+  /**
+    * Retrieve a list of the existing multiplexes.
+    */
+  def listMultiplexes(): Request[ListMultiplexesResponse, AWSError] = js.native
+  def listMultiplexes(callback: js.Function2[/* err */ AWSError, /* data */ ListMultiplexesResponse, Unit]): Request[ListMultiplexesResponse, AWSError] = js.native
+  /**
+    * Retrieve a list of the existing multiplexes.
+    */
+  def listMultiplexes(params: ListMultiplexesRequest): Request[ListMultiplexesResponse, AWSError] = js.native
+  def listMultiplexes(
+    params: ListMultiplexesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListMultiplexesResponse, Unit]
+  ): Request[ListMultiplexesResponse, AWSError] = js.native
+  /**
     * List offerings available for purchase.
     */
   def listOfferings(): Request[ListOfferingsResponse, AWSError] = js.native
@@ -337,6 +445,19 @@ trait MediaLive extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ StartChannelResponse, Unit]
   ): Request[StartChannelResponse, AWSError] = js.native
   /**
+    * Start (run) the multiplex. Starting the multiplex does not start the channels. You must explicitly start each channel.
+    */
+  def startMultiplex(): Request[StartMultiplexResponse, AWSError] = js.native
+  def startMultiplex(callback: js.Function2[/* err */ AWSError, /* data */ StartMultiplexResponse, Unit]): Request[StartMultiplexResponse, AWSError] = js.native
+  /**
+    * Start (run) the multiplex. Starting the multiplex does not start the channels. You must explicitly start each channel.
+    */
+  def startMultiplex(params: StartMultiplexRequest): Request[StartMultiplexResponse, AWSError] = js.native
+  def startMultiplex(
+    params: StartMultiplexRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StartMultiplexResponse, Unit]
+  ): Request[StartMultiplexResponse, AWSError] = js.native
+  /**
     * Stops a running channel
     */
   def stopChannel(): Request[StopChannelResponse, AWSError] = js.native
@@ -349,6 +470,19 @@ trait MediaLive extends Service {
     params: StopChannelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StopChannelResponse, Unit]
   ): Request[StopChannelResponse, AWSError] = js.native
+  /**
+    * Stops a running multiplex. If the multiplex isn't running, this action has no effect.
+    */
+  def stopMultiplex(): Request[StopMultiplexResponse, AWSError] = js.native
+  def stopMultiplex(callback: js.Function2[/* err */ AWSError, /* data */ StopMultiplexResponse, Unit]): Request[StopMultiplexResponse, AWSError] = js.native
+  /**
+    * Stops a running multiplex. If the multiplex isn't running, this action has no effect.
+    */
+  def stopMultiplex(params: StopMultiplexRequest): Request[StopMultiplexResponse, AWSError] = js.native
+  def stopMultiplex(
+    params: StopMultiplexRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StopMultiplexResponse, Unit]
+  ): Request[StopMultiplexResponse, AWSError] = js.native
   /**
     * Updates a channel.
     */
@@ -401,6 +535,32 @@ trait MediaLive extends Service {
     params: UpdateInputSecurityGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateInputSecurityGroupResponse, Unit]
   ): Request[UpdateInputSecurityGroupResponse, AWSError] = js.native
+  /**
+    * Updates a multiplex.
+    */
+  def updateMultiplex(): Request[UpdateMultiplexResponse, AWSError] = js.native
+  def updateMultiplex(callback: js.Function2[/* err */ AWSError, /* data */ UpdateMultiplexResponse, Unit]): Request[UpdateMultiplexResponse, AWSError] = js.native
+  /**
+    * Updates a multiplex.
+    */
+  def updateMultiplex(params: UpdateMultiplexRequest): Request[UpdateMultiplexResponse, AWSError] = js.native
+  def updateMultiplex(
+    params: UpdateMultiplexRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateMultiplexResponse, Unit]
+  ): Request[UpdateMultiplexResponse, AWSError] = js.native
+  /**
+    * Update a program in a multiplex.
+    */
+  def updateMultiplexProgram(): Request[UpdateMultiplexProgramResponse, AWSError] = js.native
+  def updateMultiplexProgram(callback: js.Function2[/* err */ AWSError, /* data */ UpdateMultiplexProgramResponse, Unit]): Request[UpdateMultiplexProgramResponse, AWSError] = js.native
+  /**
+    * Update a program in a multiplex.
+    */
+  def updateMultiplexProgram(params: UpdateMultiplexProgramRequest): Request[UpdateMultiplexProgramResponse, AWSError] = js.native
+  def updateMultiplexProgram(
+    params: UpdateMultiplexProgramRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateMultiplexProgramResponse, Unit]
+  ): Request[UpdateMultiplexProgramResponse, AWSError] = js.native
   /**
     * Update reservation.
     */
@@ -498,5 +658,89 @@ trait MediaLive extends Service {
     params: DescribeChannelRequest with Anon_Waiter,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeChannelResponse, Unit]
   ): Request[DescribeChannelResponse, AWSError] = js.native
+  /**
+    * Waits for the multiplexCreated state by periodically calling the underlying MediaLive.describeMultiplexoperation every 3 seconds (at most 5 times). Wait until a multiplex has been created
+    */
+  @JSName("waitFor")
+  def waitFor_multiplexCreated(state: multiplexCreated): Request[DescribeMultiplexResponse, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_multiplexCreated(
+    state: multiplexCreated,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeMultiplexResponse, Unit]
+  ): Request[DescribeMultiplexResponse, AWSError] = js.native
+  /**
+    * Waits for the multiplexCreated state by periodically calling the underlying MediaLive.describeMultiplexoperation every 3 seconds (at most 5 times). Wait until a multiplex has been created
+    */
+  @JSName("waitFor")
+  def waitFor_multiplexCreated(state: multiplexCreated, params: DescribeMultiplexRequest with Anon_Waiter): Request[DescribeMultiplexResponse, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_multiplexCreated(
+    state: multiplexCreated,
+    params: DescribeMultiplexRequest with Anon_Waiter,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeMultiplexResponse, Unit]
+  ): Request[DescribeMultiplexResponse, AWSError] = js.native
+  /**
+    * Waits for the multiplexDeleted state by periodically calling the underlying MediaLive.describeMultiplexoperation every 5 seconds (at most 20 times). Wait until a multiplex has been deleted
+    */
+  @JSName("waitFor")
+  def waitFor_multiplexDeleted(state: multiplexDeleted): Request[DescribeMultiplexResponse, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_multiplexDeleted(
+    state: multiplexDeleted,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeMultiplexResponse, Unit]
+  ): Request[DescribeMultiplexResponse, AWSError] = js.native
+  /**
+    * Waits for the multiplexDeleted state by periodically calling the underlying MediaLive.describeMultiplexoperation every 5 seconds (at most 20 times). Wait until a multiplex has been deleted
+    */
+  @JSName("waitFor")
+  def waitFor_multiplexDeleted(state: multiplexDeleted, params: DescribeMultiplexRequest with Anon_Waiter): Request[DescribeMultiplexResponse, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_multiplexDeleted(
+    state: multiplexDeleted,
+    params: DescribeMultiplexRequest with Anon_Waiter,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeMultiplexResponse, Unit]
+  ): Request[DescribeMultiplexResponse, AWSError] = js.native
+  /**
+    * Waits for the multiplexRunning state by periodically calling the underlying MediaLive.describeMultiplexoperation every 5 seconds (at most 120 times). Wait until a multiplex is running
+    */
+  @JSName("waitFor")
+  def waitFor_multiplexRunning(state: multiplexRunning): Request[DescribeMultiplexResponse, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_multiplexRunning(
+    state: multiplexRunning,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeMultiplexResponse, Unit]
+  ): Request[DescribeMultiplexResponse, AWSError] = js.native
+  /**
+    * Waits for the multiplexRunning state by periodically calling the underlying MediaLive.describeMultiplexoperation every 5 seconds (at most 120 times). Wait until a multiplex is running
+    */
+  @JSName("waitFor")
+  def waitFor_multiplexRunning(state: multiplexRunning, params: DescribeMultiplexRequest with Anon_Waiter): Request[DescribeMultiplexResponse, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_multiplexRunning(
+    state: multiplexRunning,
+    params: DescribeMultiplexRequest with Anon_Waiter,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeMultiplexResponse, Unit]
+  ): Request[DescribeMultiplexResponse, AWSError] = js.native
+  /**
+    * Waits for the multiplexStopped state by periodically calling the underlying MediaLive.describeMultiplexoperation every 5 seconds (at most 28 times). Wait until a multiplex has is stopped
+    */
+  @JSName("waitFor")
+  def waitFor_multiplexStopped(state: multiplexStopped): Request[DescribeMultiplexResponse, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_multiplexStopped(
+    state: multiplexStopped,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeMultiplexResponse, Unit]
+  ): Request[DescribeMultiplexResponse, AWSError] = js.native
+  /**
+    * Waits for the multiplexStopped state by periodically calling the underlying MediaLive.describeMultiplexoperation every 5 seconds (at most 28 times). Wait until a multiplex has is stopped
+    */
+  @JSName("waitFor")
+  def waitFor_multiplexStopped(state: multiplexStopped, params: DescribeMultiplexRequest with Anon_Waiter): Request[DescribeMultiplexResponse, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_multiplexStopped(
+    state: multiplexStopped,
+    params: DescribeMultiplexRequest with Anon_Waiter,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeMultiplexResponse, Unit]
+  ): Request[DescribeMultiplexResponse, AWSError] = js.native
 }
 

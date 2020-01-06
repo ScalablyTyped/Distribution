@@ -10,9 +10,9 @@ Context menu plugin using Bootstrap's style
 | ------------------ | :-------------: |
 | Full name          | bootstrap-menu |
 | Keywords           | bootstrap, context, menu |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 23637 |
+| # downloads        | 18111 |
 | # stars            | 1 |
 
 ## Links

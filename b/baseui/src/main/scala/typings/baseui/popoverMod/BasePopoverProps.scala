@@ -34,7 +34,7 @@ trait BasePopoverProps extends js.Object {
   var onMouseLeaveDelay: js.UndefOr[Double] = js.undefined
   var overrides: js.UndefOr[Overrides] = js.undefined
   var placement: js.UndefOr[
-    rightTop | auto | leftBottom | bottomRight | leftTop | bottom | left | topRight | bottomLeft | rightBottom | topLeft | top | right
+    topLeft | leftBottom | topRight | rightBottom | bottomLeft | right | auto | bottomRight | leftTop | left | bottom | rightTop | top
   ] = js.undefined
   var popperOptions: js.UndefOr[js.Any] = js.undefined
   var showArrow: js.UndefOr[Boolean] = js.undefined
@@ -53,7 +53,7 @@ object BasePopoverProps {
     onMouseEnterDelay: Int | Double = null,
     onMouseLeaveDelay: Int | Double = null,
     overrides: Overrides = null,
-    placement: rightTop | auto | leftBottom | bottomRight | leftTop | bottom | left | topRight | bottomLeft | rightBottom | topLeft | top | right = null,
+    placement: topLeft | leftBottom | topRight | rightBottom | bottomLeft | right | auto | bottomRight | leftTop | left | bottom | rightTop | top = null,
     popperOptions: js.Any = null,
     showArrow: js.UndefOr[Boolean] = js.undefined,
     triggerType: click | hover = null

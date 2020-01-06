@@ -10,9 +10,9 @@ Jest matcher for multiple snapshot files per test
 | ------------------ | :-------------: |
 | Full name          | jest-specific-snapshot |
 | Keywords           | - |
-| # releases         | 10 |
+| # releases         | 7 |
 | # dependents       | 3 |
-| # downloads        | 3008041 |
+| # downloads        | 6182323 |
 | # stars            | 0 |
 
 ## Links

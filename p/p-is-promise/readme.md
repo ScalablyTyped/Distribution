@@ -10,9 +10,9 @@ Check if something is a promise
 | ------------------ | :-------------: |
 | Full name          | p-is-promise |
 | Keywords           | promise, is, detect, check, kind, type, thenable, es2015, async, await, promises, bluebird |
-| # releases         | 1 |
-| # dependents       | 24 |
-| # downloads        | 100989882 |
+| # releases         | 4 |
+| # dependents       | 43 |
+| # downloads        | 321798521 |
 | # stars            | 1 |
 
 ## Links

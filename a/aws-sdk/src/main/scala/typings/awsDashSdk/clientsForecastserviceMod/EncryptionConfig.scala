@@ -4,21 +4,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EncryptionConfig extends js.Object {
   /**
-    * The Amazon Resource Name (ARN) of an AWS Key Management Service (KMS) key.
+    * The Amazon Resource Name (ARN) of the KMS key.
     */
-  var KMSKeyArn: typings.awsDashSdk.clientsForecastserviceMod.KMSKeyArn
+  var KMSKeyArn: typings.awsDashSdk.clientsForecastserviceMod.KMSKeyArn = js.native
   /**
-    * The ARN of the AWS Identity and Access Management (IAM) role that Amazon Forecast can assume to access the AWS KMS key. Cross-account pass role is not allowed. If you pass a role that doesn't belong to your account, an InvalidInputException is thrown.
+    * The ARN of the IAM role that Amazon Forecast can assume to access the AWS KMS key. Passing a role across AWS accounts is not allowed. If you pass a role that isn't in your account, you get an InvalidInputException error.
     */
-  var RoleArn: Arn
+  var RoleArn: Arn = js.native
 }
 
 object EncryptionConfig {
   @scala.inline
   def apply(KMSKeyArn: KMSKeyArn, RoleArn: Arn): EncryptionConfig = {
-    val __obj = js.Dynamic.literal(KMSKeyArn = KMSKeyArn, RoleArn = RoleArn)
+    val __obj = js.Dynamic.literal(KMSKeyArn = KMSKeyArn.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[EncryptionConfig]
   }

@@ -33,8 +33,6 @@ trait Configuration extends js.Object {
     * If `output.pathinfo` is set, the included pathinfo is shortened to this directory.
     */
   var context: js.UndefOr[String] = js.undefined
-  /** Switch loaders to debug mode. */
-  var debug: js.UndefOr[Boolean] = js.undefined
   /** Choose a style of source mapping to enhance the debugging process. These values can affect build and rebuild speed dramatically. */
   var devtool: js.UndefOr[Devtool] = js.undefined
   var entry: js.UndefOr[String | js.Array[String] | Entry | EntryFunc] = js.undefined
@@ -103,7 +101,6 @@ object Configuration {
     bail: js.UndefOr[Boolean] = js.undefined,
     cache: Boolean | js.Object = null,
     context: String = null,
-    debug: js.UndefOr[Boolean] = js.undefined,
     devtool: Devtool = null,
     entry: String | js.Array[String] | Entry | EntryFunc = null,
     externals: ExternalsElement | js.Array[ExternalsElement] = null,
@@ -132,7 +129,6 @@ object Configuration {
     if (!js.isUndefined(bail)) __obj.updateDynamic("bail")(bail.asInstanceOf[js.Any])
     if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
     if (devtool != null) __obj.updateDynamic("devtool")(devtool.asInstanceOf[js.Any])
     if (entry != null) __obj.updateDynamic("entry")(entry.asInstanceOf[js.Any])
     if (externals != null) __obj.updateDynamic("externals")(externals.asInstanceOf[js.Any])

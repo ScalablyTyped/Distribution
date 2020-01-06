@@ -45,11 +45,13 @@ abstract class HttpContentCodingWithQualityHeaderValueCollection () extends Arra
   def getView(): IVectorView[HttpContentCodingWithQualityHeaderValue] = js.native
   def indexOf(value: HttpContentCodingWithQualityHeaderValue, extra: js.Any*): Anon_Index = js.native
   /**
-    * Retrieves the index of an HttpContentCodingWithQualityHeaderValue in the collection.
-    * @param value The HttpContentCodingWithQualityHeaderValue to find in the HttpContentCodingWithQualityHeaderValueCollection .
+    * Determines the index of a specific item in the collection.
+    * @param item The object to locate in the collection.
+    * @return The index of item if found in the collection; otherwise, –1.
     */
+  /* hack */
   @JSName("indexOf")
-  def indexOf_Anon_Index(value: HttpContentCodingWithQualityHeaderValue): Anon_Index = js.native
+  def indexOf_Double(item: HttpContentCodingWithQualityHeaderValue): Double = js.native
   /**
     * Inserts an HttpContentCodingWithQualityHeaderValue into the collection at the specified index.
     * @param index The zero-based index at which value should be inserted.

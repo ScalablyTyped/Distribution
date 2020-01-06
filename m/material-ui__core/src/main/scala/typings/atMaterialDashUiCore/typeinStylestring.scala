@@ -5,28 +5,29 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined {[ type in @material-ui/core.@material-ui/core/Typography/Typography.Style ]: string} */
+@js.native
 trait typeinStylestring extends js.Object {
-  var body1: String
-  var body2: String
-  var button: String
-  var caption: String
-  var display1: String
-  var display2: String
-  var display3: String
-  var display4: String
-  var h1: String
-  var h2: String
-  var h3: String
-  var h4: String
-  var h5: String
-  var h6: String
-  var headline: String
-  var overline: String
-  var srOnly: String
-  var subheading: String
-  var subtitle1: String
-  var subtitle2: String
-  var title: String
+  var body1: String = js.native
+  var body2: String = js.native
+  var button: String = js.native
+  var caption: String = js.native
+  var display1: String = js.native
+  var display2: String = js.native
+  var display3: String = js.native
+  var display4: String = js.native
+  var h1: String = js.native
+  var h2: String = js.native
+  var h3: String = js.native
+  var h4: String = js.native
+  var h5: String = js.native
+  var h6: String = js.native
+  var headline: String = js.native
+  var overline: String = js.native
+  var srOnly: String = js.native
+  var subheading: String = js.native
+  var subtitle1: String = js.native
+  var subtitle2: String = js.native
+  var title: String = js.native
 }
 
 object typeinStylestring {

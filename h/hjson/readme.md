@@ -10,9 +10,9 @@ A user interface for JSON.
 | ------------------ | :-------------: |
 | Full name          | hjson |
 | Keywords           | json, comments, config, hjson, parser, serializer, human |
-| # releases         | 9 |
-| # dependents       | 122 |
-| # downloads        | 839497 |
+| # releases         | 5 |
+| # dependents       | 137 |
+| # downloads        | 1249253 |
 | # stars            | 8 |
 
 ## Links

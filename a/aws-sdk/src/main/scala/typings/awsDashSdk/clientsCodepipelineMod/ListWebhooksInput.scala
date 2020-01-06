@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ListWebhooksInput extends js.Object {
   /**
     * The maximum number of results to return in a single call. To retrieve the remaining results, make another call with the returned nextToken value.
     */
-  var MaxResults: js.UndefOr[typings.awsDashSdk.clientsCodepipelineMod.MaxResults] = js.undefined
+  var MaxResults: js.UndefOr[typings.awsDashSdk.clientsCodepipelineMod.MaxResults] = js.native
   /**
     * The token that was returned from the previous ListWebhooks call, which can be used to return the next set of webhooks in the list.
     */
-  var NextToken: js.UndefOr[typings.awsDashSdk.clientsCodepipelineMod.NextToken] = js.undefined
+  var NextToken: js.UndefOr[typings.awsDashSdk.clientsCodepipelineMod.NextToken] = js.native
 }
 
 object ListWebhooksInput {
@@ -20,7 +21,7 @@ object ListWebhooksInput {
   def apply(MaxResults: Int | Double = null, NextToken: NextToken = null): ListWebhooksInput = {
     val __obj = js.Dynamic.literal()
     if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListWebhooksInput]
   }
 }

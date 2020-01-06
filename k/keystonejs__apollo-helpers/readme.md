@@ -10,9 +10,9 @@ Utilities to make using react-apollo + KeystoneJS easier.
 | ------------------ | :-------------: |
 | Full name          | @keystonejs/apollo-helpers |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 6 |
 | # dependents       | 0 |
-| # downloads        | 83 |
+| # downloads        | 278 |
 | # stars            | 0 |
 
 ## Links

@@ -16,12 +16,25 @@ import scala.scalajs.js.annotation._
 trait ECS extends Service {
   var config: ConfigBase with ClientConfiguration = js.native
   /**
-    * Creates a new Amazon ECS cluster. By default, your account receives a default cluster when you launch your first container instance. However, you can create your own cluster with a unique name with the CreateCluster action.  When you call the CreateCluster API operation, Amazon ECS attempts to create the service-linked role for your account so that required resources in other AWS services can be managed on your behalf. However, if the IAM user that makes the call does not have permissions to create the service-linked role, it is not created. For more information, see Using Service-Linked Roles for Amazon ECS in the Amazon Elastic Container Service Developer Guide. 
+    * Creates a new capacity provider. Capacity providers are associated with an Amazon ECS cluster and are used in capacity provider strategies to facilitate cluster auto scaling. Only capacity providers using an Auto Scaling group can be created. Amazon ECS tasks on AWS Fargate use the FARGATE and FARGATE_SPOT capacity providers which are already created and available to all accounts in Regions supported by AWS Fargate.
+    */
+  def createCapacityProvider(): Request[CreateCapacityProviderResponse, AWSError] = js.native
+  def createCapacityProvider(callback: js.Function2[/* err */ AWSError, /* data */ CreateCapacityProviderResponse, Unit]): Request[CreateCapacityProviderResponse, AWSError] = js.native
+  /**
+    * Creates a new capacity provider. Capacity providers are associated with an Amazon ECS cluster and are used in capacity provider strategies to facilitate cluster auto scaling. Only capacity providers using an Auto Scaling group can be created. Amazon ECS tasks on AWS Fargate use the FARGATE and FARGATE_SPOT capacity providers which are already created and available to all accounts in Regions supported by AWS Fargate.
+    */
+  def createCapacityProvider(params: CreateCapacityProviderRequest): Request[CreateCapacityProviderResponse, AWSError] = js.native
+  def createCapacityProvider(
+    params: CreateCapacityProviderRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateCapacityProviderResponse, Unit]
+  ): Request[CreateCapacityProviderResponse, AWSError] = js.native
+  /**
+    * Creates a new Amazon ECS cluster. By default, your account receives a default cluster when you launch your first container instance. However, you can create your own cluster with a unique name with the CreateCluster action.  When you call the CreateCluster API operation, Amazon ECS attempts to create the Amazon ECS service-linked role for your account so that required resources in other AWS services can be managed on your behalf. However, if the IAM user that makes the call does not have permissions to create the service-linked role, it is not created. For more information, see Using Service-Linked Roles for Amazon ECS in the Amazon Elastic Container Service Developer Guide. 
     */
   def createCluster(): Request[CreateClusterResponse, AWSError] = js.native
   def createCluster(callback: js.Function2[/* err */ AWSError, /* data */ CreateClusterResponse, Unit]): Request[CreateClusterResponse, AWSError] = js.native
   /**
-    * Creates a new Amazon ECS cluster. By default, your account receives a default cluster when you launch your first container instance. However, you can create your own cluster with a unique name with the CreateCluster action.  When you call the CreateCluster API operation, Amazon ECS attempts to create the service-linked role for your account so that required resources in other AWS services can be managed on your behalf. However, if the IAM user that makes the call does not have permissions to create the service-linked role, it is not created. For more information, see Using Service-Linked Roles for Amazon ECS in the Amazon Elastic Container Service Developer Guide. 
+    * Creates a new Amazon ECS cluster. By default, your account receives a default cluster when you launch your first container instance. However, you can create your own cluster with a unique name with the CreateCluster action.  When you call the CreateCluster API operation, Amazon ECS attempts to create the Amazon ECS service-linked role for your account so that required resources in other AWS services can be managed on your behalf. However, if the IAM user that makes the call does not have permissions to create the service-linked role, it is not created. For more information, see Using Service-Linked Roles for Amazon ECS in the Amazon Elastic Container Service Developer Guide. 
     */
   def createCluster(params: CreateClusterRequest): Request[CreateClusterResponse, AWSError] = js.native
   def createCluster(
@@ -145,6 +158,19 @@ trait ECS extends Service {
     params: DeregisterTaskDefinitionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeregisterTaskDefinitionResponse, Unit]
   ): Request[DeregisterTaskDefinitionResponse, AWSError] = js.native
+  /**
+    * Describes one or more of your capacity providers.
+    */
+  def describeCapacityProviders(): Request[DescribeCapacityProvidersResponse, AWSError] = js.native
+  def describeCapacityProviders(callback: js.Function2[/* err */ AWSError, /* data */ DescribeCapacityProvidersResponse, Unit]): Request[DescribeCapacityProvidersResponse, AWSError] = js.native
+  /**
+    * Describes one or more of your capacity providers.
+    */
+  def describeCapacityProviders(params: DescribeCapacityProvidersRequest): Request[DescribeCapacityProvidersResponse, AWSError] = js.native
+  def describeCapacityProviders(
+    params: DescribeCapacityProvidersRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeCapacityProvidersResponse, Unit]
+  ): Request[DescribeCapacityProvidersResponse, AWSError] = js.native
   /**
     * Describes one or more of your clusters.
     */
@@ -392,6 +418,19 @@ trait ECS extends Service {
     params: PutAttributesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PutAttributesResponse, Unit]
   ): Request[PutAttributesResponse, AWSError] = js.native
+  /**
+    * Modifies the available capacity providers and the default capacity provider strategy for a cluster. You must specify both the available capacity providers and a default capacity provider strategy for the cluster. If the specified cluster has existing capacity providers associated with it, you must specify all existing capacity providers in addition to any new ones you want to add. Any existing capacity providers associated with a cluster that are omitted from a PutClusterCapacityProviders API call will be disassociated with the cluster. You can only disassociate an existing capacity provider from a cluster if it's not being used by any existing tasks. When creating a service or running a task on a cluster, if no capacity provider or launch type is specified, then the cluster's default capacity provider strategy is used. It is recommended to define a default capacity provider strategy for your cluster, however you may specify an empty array ([]) to bypass defining a default strategy.
+    */
+  def putClusterCapacityProviders(): Request[PutClusterCapacityProvidersResponse, AWSError] = js.native
+  def putClusterCapacityProviders(callback: js.Function2[/* err */ AWSError, /* data */ PutClusterCapacityProvidersResponse, Unit]): Request[PutClusterCapacityProvidersResponse, AWSError] = js.native
+  /**
+    * Modifies the available capacity providers and the default capacity provider strategy for a cluster. You must specify both the available capacity providers and a default capacity provider strategy for the cluster. If the specified cluster has existing capacity providers associated with it, you must specify all existing capacity providers in addition to any new ones you want to add. Any existing capacity providers associated with a cluster that are omitted from a PutClusterCapacityProviders API call will be disassociated with the cluster. You can only disassociate an existing capacity provider from a cluster if it's not being used by any existing tasks. When creating a service or running a task on a cluster, if no capacity provider or launch type is specified, then the cluster's default capacity provider strategy is used. It is recommended to define a default capacity provider strategy for your cluster, however you may specify an empty array ([]) to bypass defining a default strategy.
+    */
+  def putClusterCapacityProviders(params: PutClusterCapacityProvidersRequest): Request[PutClusterCapacityProvidersResponse, AWSError] = js.native
+  def putClusterCapacityProviders(
+    params: PutClusterCapacityProvidersRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutClusterCapacityProvidersResponse, Unit]
+  ): Request[PutClusterCapacityProvidersResponse, AWSError] = js.native
   /**
     *  This action is only used by the Amazon ECS agent, and it is not intended for use outside of the agent.  Registers an EC2 instance into the specified cluster. This instance becomes available to place containers on.
     */

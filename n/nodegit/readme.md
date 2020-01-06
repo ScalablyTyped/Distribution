@@ -1,7 +1,7 @@
 
 # Scala.js typings for nodegit
 
-Typings are for version 0.24
+Typings are for version 0.26
 
 ## Library description:
 Node.js libgit2 asynchronous native bindings
@@ -10,9 +10,9 @@ Node.js libgit2 asynchronous native bindings
 | ------------------ | :-------------: |
 | Full name          | nodegit |
 | Keywords           | libgit2, git2, git, native |
-| # releases         | 31 |
-| # dependents       | 425 |
-| # downloads        | 613621 |
+| # releases         | 38 |
+| # dependents       | 503 |
+| # downloads        | 1041000 |
 | # stars            | 30 |
 
 ## Links

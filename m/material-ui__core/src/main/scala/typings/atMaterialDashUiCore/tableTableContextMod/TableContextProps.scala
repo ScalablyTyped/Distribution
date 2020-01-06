@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TableContextProps extends js.Object {
-  var padding: Padding
+  var padding: Padding = js.native
 }
 
 object TableContextProps {

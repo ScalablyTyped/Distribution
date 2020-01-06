@@ -10,15 +10,15 @@ A data loading utility to reduce requests to a backend via batching and caching.
 | ------------------ | :-------------: |
 | Full name          | dataloader |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 202 |
-| # downloads        | 4249598 |
+| # releases         | 3 |
+| # dependents       | 290 |
+| # downloads        | 8925029 |
 | # stars            | 12 |
 
 ## Links
-- [Homepage](https://github.com/facebook/dataloader)
-- [Bugs](https://github.com/facebook/dataloader/issues)
-- [Repository](https://github.com/facebook/dataloader)
+- [Homepage](https://github.com/graphql/dataloader)
+- [Bugs](https://github.com/graphql/dataloader/issues)
+- [Repository](https://github.com/graphql/dataloader)
 - [Npm](https://www.npmjs.com/package/dataloader)
     
 

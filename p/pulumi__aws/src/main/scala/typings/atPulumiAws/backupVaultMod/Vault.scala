@@ -42,7 +42,7 @@ class Vault protected () extends CustomResource {
   /**
     * Metadata that you can assign to help organize the resources that you create.
     */
-  val tags: Output[js.UndefOr[StringDictionary[String]]] = js.native
+  val tags: Output[js.UndefOr[StringDictionary[_]]] = js.native
 }
 
 /* static members */

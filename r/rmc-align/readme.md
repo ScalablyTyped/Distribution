@@ -10,9 +10,9 @@ react align ui component for mobile
 | ------------------ | :-------------: |
 | Full name          | rmc-align |
 | Keywords           | react, react-component, react-align, align, mobile align |
-| # releases         | 3 |
-| # dependents       | 1 |
-| # downloads        | 237208 |
+| # releases         | 0 |
+| # dependents       | 2 |
+| # downloads        | 562974 |
 | # stars            | 0 |
 
 ## Links

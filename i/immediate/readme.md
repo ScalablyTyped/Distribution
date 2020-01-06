@@ -11,8 +11,8 @@ A cross browser microtask library
 | Full name          | immediate |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 24 |
-| # downloads        | 49729869 |
+| # dependents       | 30 |
+| # downloads        | 86908408 |
 | # stars            | 2 |
 
 ## Links

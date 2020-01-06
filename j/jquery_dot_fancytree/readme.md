@@ -10,9 +10,9 @@ JavaScript tree view / tree grid plugin with support for keyboard, inline editin
 | ------------------ | :-------------: |
 | Full name          | jquery.fancytree |
 | Keywords           | ajax, ecosystem:jquery, jquery-plugin, lazy, table, tabletree, tree, treegrid |
-| # releases         | 17 |
-| # dependents       | 10 |
-| # downloads        | 128895 |
+| # releases         | 12 |
+| # dependents       | 12 |
+| # downloads        | 197900 |
 | # stars            | 2 |
 
 ## Links

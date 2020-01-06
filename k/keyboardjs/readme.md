@@ -10,9 +10,9 @@ A library for binding to keys and key combos without the pain of key codes and k
 | ------------------ | :-------------: |
 | Full name          | keyboardjs |
 | Keywords           | Key Binding, Keyboard, Key combos, Keyboard Shortcuts |
-| # releases         | 6 |
-| # dependents       | 15 |
-| # downloads        | 164316 |
+| # releases         | 3 |
+| # dependents       | 27 |
+| # downloads        | 573795 |
 | # stars            | 4 |
 
 ## Links

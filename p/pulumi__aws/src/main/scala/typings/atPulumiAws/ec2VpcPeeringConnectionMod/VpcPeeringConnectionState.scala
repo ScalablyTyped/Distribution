@@ -8,49 +8,50 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VpcPeeringConnectionState extends js.Object {
   /**
     * The status of the VPC Peering Connection request.
     */
-  val acceptStatus: js.UndefOr[Input[String]] = js.undefined
+  val acceptStatus: js.UndefOr[Input[String]] = js.native
   /**
     * An optional configuration block that allows for [VPC Peering Connection]
     * (http://docs.aws.amazon.com/AmazonVPC/latest/PeeringGuide) options to be set for the VPC that accepts
     * the peering connection (a maximum of one).
     */
-  val accepter: js.UndefOr[Input[VpcPeeringConnectionAccepter]] = js.undefined
+  val accepter: js.UndefOr[Input[VpcPeeringConnectionAccepter]] = js.native
   /**
     * Accept the peering (both VPCs need to be in the same AWS account).
     */
-  val autoAccept: js.UndefOr[Input[Boolean]] = js.undefined
+  val autoAccept: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The AWS account ID of the owner of the peer VPC.
     * Defaults to the account ID the [AWS provider][1] is currently connected to.
     */
-  val peerOwnerId: js.UndefOr[Input[String]] = js.undefined
+  val peerOwnerId: js.UndefOr[Input[String]] = js.native
   /**
     * The region of the accepter VPC of the [VPC Peering Connection]. `autoAccept` must be `false`,
     * and use the `aws.ec2.VpcPeeringConnectionAccepter` to manage the accepter side.
     */
-  val peerRegion: js.UndefOr[Input[String]] = js.undefined
+  val peerRegion: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of the VPC with which you are creating the VPC Peering Connection.
     */
-  val peerVpcId: js.UndefOr[Input[String]] = js.undefined
+  val peerVpcId: js.UndefOr[Input[String]] = js.native
   /**
     * A optional configuration block that allows for [VPC Peering Connection]
     * (http://docs.aws.amazon.com/AmazonVPC/latest/PeeringGuide) options to be set for the VPC that requests
     * the peering connection (a maximum of one).
     */
-  val requester: js.UndefOr[Input[VpcPeeringConnectionRequester]] = js.undefined
+  val requester: js.UndefOr[Input[VpcPeeringConnectionRequester]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * The ID of the requester VPC.
     */
-  val vpcId: js.UndefOr[Input[String]] = js.undefined
+  val vpcId: js.UndefOr[Input[String]] = js.native
 }
 
 object VpcPeeringConnectionState {

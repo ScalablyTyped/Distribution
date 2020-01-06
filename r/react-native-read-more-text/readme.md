@@ -10,9 +10,9 @@ Add a 'Read More' and optionally a 'Read Less' button to text that exceeds a giv
 | ------------------ | :-------------: |
 | Full name          | react-native-read-more-text |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 67131 |
+| # downloads        | 165407 |
 | # stars            | 0 |
 
 ## Links

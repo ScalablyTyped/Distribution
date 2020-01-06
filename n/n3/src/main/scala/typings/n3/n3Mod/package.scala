@@ -17,7 +17,7 @@ package object n3Mod {
     /* prefixes */ Prefixes[typings.rdfDashJs.rdfDashJsMod.NamedNode], 
     Unit
   ]
-  type PrefixedToIri = js.Function1[/* suffix */ String, typings.rdfDashJs.rdfDashJsMod.NamedNode]
+  type PrefixedToIri = js.Function1[/* suffix */ String, NamedNode]
   type Prefixes[I] = StringDictionary[I]
   type QuadCallback[Q /* <: BaseQuad */] = js.Function1[/* result */ Q, Unit]
   type QuadPredicate[Q /* <: BaseQuad */] = js.Function1[/* result */ Q, Boolean]

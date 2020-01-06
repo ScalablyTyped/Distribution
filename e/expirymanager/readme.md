@@ -12,7 +12,7 @@ An object for efficiently managing key expiries
 | Keywords           | expiry, expire, expirymanager, timeout, volatile, key |
 | # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 683687 |
+| # downloads        | 747477 |
 | # stars            | 0 |
 
 ## Links

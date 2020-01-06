@@ -11,8 +11,8 @@ ES2015 Number.isFinite() ponyfill
 | Full name          | is-finite |
 | Keywords           | es2015, ponyfill, polyfill, shim, number, finite, is |
 | # releases         | 0 |
-| # dependents       | 53 |
-| # downloads        | 263627555 |
+| # dependents       | 60 |
+| # downloads        | 331553358 |
 | # stars            | 0 |
 
 ## Links

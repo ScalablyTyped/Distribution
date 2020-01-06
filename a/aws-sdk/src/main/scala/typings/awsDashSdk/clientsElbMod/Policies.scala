@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Policies extends js.Object {
   /**
     * The stickiness policies created using CreateAppCookieStickinessPolicy.
     */
-  var AppCookieStickinessPolicies: js.UndefOr[typings.awsDashSdk.clientsElbMod.AppCookieStickinessPolicies] = js.undefined
+  var AppCookieStickinessPolicies: js.UndefOr[typings.awsDashSdk.clientsElbMod.AppCookieStickinessPolicies] = js.native
   /**
     * The stickiness policies created using CreateLBCookieStickinessPolicy.
     */
-  var LBCookieStickinessPolicies: js.UndefOr[typings.awsDashSdk.clientsElbMod.LBCookieStickinessPolicies] = js.undefined
+  var LBCookieStickinessPolicies: js.UndefOr[typings.awsDashSdk.clientsElbMod.LBCookieStickinessPolicies] = js.native
   /**
     * The policies other than the stickiness policies.
     */
-  var OtherPolicies: js.UndefOr[PolicyNames] = js.undefined
+  var OtherPolicies: js.UndefOr[PolicyNames] = js.native
 }
 
 object Policies {
@@ -27,9 +28,9 @@ object Policies {
     OtherPolicies: PolicyNames = null
   ): Policies = {
     val __obj = js.Dynamic.literal()
-    if (AppCookieStickinessPolicies != null) __obj.updateDynamic("AppCookieStickinessPolicies")(AppCookieStickinessPolicies)
-    if (LBCookieStickinessPolicies != null) __obj.updateDynamic("LBCookieStickinessPolicies")(LBCookieStickinessPolicies)
-    if (OtherPolicies != null) __obj.updateDynamic("OtherPolicies")(OtherPolicies)
+    if (AppCookieStickinessPolicies != null) __obj.updateDynamic("AppCookieStickinessPolicies")(AppCookieStickinessPolicies.asInstanceOf[js.Any])
+    if (LBCookieStickinessPolicies != null) __obj.updateDynamic("LBCookieStickinessPolicies")(LBCookieStickinessPolicies.asInstanceOf[js.Any])
+    if (OtherPolicies != null) __obj.updateDynamic("OtherPolicies")(OtherPolicies.asInstanceOf[js.Any])
     __obj.asInstanceOf[Policies]
   }
 }

@@ -10,9 +10,9 @@ Measure the difference between two strings using the fastest JS implementation o
 | ------------------ | :-------------: |
 | Full name          | leven |
 | Keywords           | leven, levenshtein, distance, algorithm, algo, string, difference, diff, fast, fuzzy, similar, similarity, compare, comparison, edit, text, match, matching |
-| # releases         | 1 |
-| # dependents       | 116 |
-| # downloads        | 135753468 |
+| # releases         | 3 |
+| # dependents       | 143 |
+| # downloads        | 250166378 |
 | # stars            | 24 |
 
 ## Links

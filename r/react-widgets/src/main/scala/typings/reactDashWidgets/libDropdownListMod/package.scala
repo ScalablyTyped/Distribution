@@ -5,7 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libDropdownListMod {
-  import typings.react.reactMod.ReactElement
+  import typings.react.reactMod.ComponentClass
+  import typings.react.reactMod.ComponentState
 
-  type DropdownList = ReactElement
+  type DropdownListClass = ComponentClass[DropdownListProps, ComponentState]
 }

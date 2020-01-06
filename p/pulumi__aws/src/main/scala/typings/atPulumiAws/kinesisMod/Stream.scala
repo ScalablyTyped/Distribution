@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/kinesis", "Stream")
 @js.native
 class Stream protected ()
-  extends typings.atPulumiAws.kinesisKinesisMixinsMod.kinesisStreamMod.Stream {
+  extends typings.atPulumiAws.kinesisStreamMod.Stream {
   /**
     * Create a Stream resource with the given unique name, arguments, and options.
     *
@@ -36,13 +36,13 @@ object Stream extends js.Object {
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
     */
-  def get(name: String, id: Input[ID]): typings.atPulumiAws.kinesisKinesisMixinsMod.kinesisStreamMod.Stream = js.native
-  def get(name: String, id: Input[ID], state: StreamState): typings.atPulumiAws.kinesisKinesisMixinsMod.kinesisStreamMod.Stream = js.native
-  def get(name: String, id: Input[ID], state: StreamState, opts: CustomResourceOptions): typings.atPulumiAws.kinesisKinesisMixinsMod.kinesisStreamMod.Stream = js.native
+  def get(name: String, id: Input[ID]): typings.atPulumiAws.kinesisStreamMod.Stream = js.native
+  def get(name: String, id: Input[ID], state: StreamState): typings.atPulumiAws.kinesisStreamMod.Stream = js.native
+  def get(name: String, id: Input[ID], state: StreamState, opts: CustomResourceOptions): typings.atPulumiAws.kinesisStreamMod.Stream = js.native
   /**
     * Returns true if the given object is an instance of Stream.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
-  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kinesis/kinesisMixins.@pulumi/aws/kinesis/stream.Stream */ Boolean = js.native
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kinesis/stream.Stream */ Boolean = js.native
 }
 

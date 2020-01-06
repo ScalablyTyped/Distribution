@@ -10,9 +10,9 @@ Create themes for your app using styled-components
 | ------------------ | :-------------: |
 | Full name          | styled-theming |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 22 |
-| # downloads        | 352243 |
+| # releases         | 0 |
+| # dependents       | 37 |
+| # downloads        | 585774 |
 | # stars            | 0 |
 
 ## Links

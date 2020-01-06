@@ -10,9 +10,9 @@ The HTTP client for Vue.js
 | ------------------ | :-------------: |
 | Full name          | vue-resource |
 | Keywords           | vue, xhr, http, ajax |
-| # releases         | 9 |
-| # dependents       | 308 |
-| # downloads        | 3488191 |
+| # releases         | 6 |
+| # dependents       | 342 |
+| # downloads        | 4063672 |
 | # stars            | 41 |
 
 ## Links

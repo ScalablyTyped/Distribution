@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait JobDefinitionTimeout extends js.Object {
-  var attemptDurationSeconds: js.UndefOr[Input[Double]] = js.undefined
+  var attemptDurationSeconds: js.UndefOr[Input[Double]] = js.native
 }
 
 object JobDefinitionTimeout {

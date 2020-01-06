@@ -29,9 +29,6 @@ class IdentityPolicy protected () extends CustomResource {
     * Name of the policy.
     */
   val name: Output[String] = js.native
-  /**
-    * JSON string of the policy.
-    */
   val policy: Output[String] = js.native
 }
 

@@ -10,9 +10,9 @@ the complete solution for node.js command-line programs
 | ------------------ | :-------------: |
 | Full name          | commander |
 | Keywords           | commander, command, option, parser |
-| # releases         | 16 |
-| # dependents       | 28892 |
-| # downloads        | 897425729 |
+| # releases         | 23 |
+| # dependents       | 35124 |
+| # downloads        | 1369347821 |
 | # stars            | 1011 |
 
 ## Links

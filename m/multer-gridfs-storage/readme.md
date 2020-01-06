@@ -10,9 +10,9 @@ Multer storage engine for GridFS
 | ------------------ | :-------------: |
 | Full name          | multer-gridfs-storage |
 | Keywords           | multer, mongodb, storage, gridfs |
-| # releases         | 16 |
-| # dependents       | 2 |
-| # downloads        | 62437 |
+| # releases         | 11 |
+| # dependents       | 3 |
+| # downloads        | 86793 |
 | # stars            | 1 |
 
 ## Links

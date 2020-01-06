@@ -10,10 +10,10 @@ Terminal string styling done right
 | ------------------ | :-------------: |
 | Full name          | chalk |
 | Keywords           | color, colour, colors, terminal, console, cli, string, str, ansi, style, styles, tty, formatting, rgb, 256, shell, xterm, log, logging, command-line, text |
-| # releases         | 12 |
-| # dependents       | 35456 |
-| # downloads        | 947326646 |
-| # stars            | 929 |
+| # releases         | 9 |
+| # dependents       | 44064 |
+| # downloads        | 1313730526 |
+| # stars            | 932 |
 
 ## Links
 - [Homepage](https://github.com/chalk/chalk#readme)

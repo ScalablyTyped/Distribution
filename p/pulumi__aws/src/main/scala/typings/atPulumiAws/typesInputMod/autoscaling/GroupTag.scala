@@ -5,20 +5,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GroupTag extends js.Object {
   /**
     * Key
     */
-  var key: Input[String]
+  var key: Input[String] = js.native
   /**
     * Enables propagation of the tag to
     * Amazon EC2 instances launched via this ASG
     */
-  var propagateAtLaunch: Input[Boolean]
+  var propagateAtLaunch: Input[Boolean] = js.native
   /**
     * Value
     */
-  var value: Input[String]
+  var value: Input[String] = js.native
 }
 
 object GroupTag {

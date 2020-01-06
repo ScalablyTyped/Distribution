@@ -4,8 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MuiContext[S] extends js.Object {
-  var __THEMING__ : js.UndefOr[Broadcast[S]] = js.undefined
+  var __THEMING__ : js.UndefOr[Broadcast[S]] = js.native
 }
 
 object MuiContext {

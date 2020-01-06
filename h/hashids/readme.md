@@ -10,15 +10,15 @@ Generate YouTube-like ids from numbers. Use Hashids when you do not want to expo
 | ------------------ | :-------------: |
 | Full name          | hashids |
 | Keywords           | hashids, hashid, hash, ids, youtube, bitly, obfuscate, encode, decode, encrypt, decrypt |
-| # releases         | 7 |
-| # dependents       | 133 |
-| # downloads        | 3231694 |
+| # releases         | 11 |
+| # dependents       | 166 |
+| # downloads        | 4854964 |
 | # stars            | 44 |
 
 ## Links
 - [Homepage](http://hashids.org/javascript)
-- [Bugs](https://github.com/ivanakimov/hashids.js/issues)
-- [Repository](https://github.com/ivanakimov/hashids.js)
+- [Bugs](https://github.com/niieani/hashids.js/issues)
+- [Repository](https://github.com/niieani/hashids.js)
 - [Npm](https://www.npmjs.com/package/hashids)
     
 

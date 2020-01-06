@@ -10,9 +10,9 @@ Throttle promise-returning & async functions
 | ------------------ | :-------------: |
 | Full name          | p-throttle |
 | Keywords           | promise, throttle, throat, limit, limited, interval, rate, batch, ratelimit, queue, discard, async, await, promises, time, out, cancel, bluebird |
-| # releases         | 4 |
-| # dependents       | 23 |
-| # downloads        | 144780 |
+| # releases         | 6 |
+| # dependents       | 33 |
+| # downloads        | 245611 |
 | # stars            | 2 |
 
 ## Links

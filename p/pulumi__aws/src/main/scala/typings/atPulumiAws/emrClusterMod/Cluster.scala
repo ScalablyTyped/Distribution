@@ -37,6 +37,7 @@ class Cluster protected () extends CustomResource {
     * A list of applications for the cluster. Valid values are: `Flink`, `Hadoop`, `Hive`, `Mahout`, `Pig`, `Spark`, and `JupyterHub` (as of EMR 5.14.0). Case insensitive
     */
   val applications: Output[js.UndefOr[js.Array[String]]] = js.native
+  val arn: Output[String] = js.native
   /**
     * An IAM role for automatic scaling policies. The IAM role provides permissions that the automatic scaling feature requires to launch and terminate EC2 instances in an instance group.
     */
@@ -127,6 +128,10 @@ class Cluster protected () extends CustomResource {
     * IAM role that will be assumed by the Amazon EMR service to access AWS resources
     */
   val serviceRole: Output[String] = js.native
+  /**
+    * The number of steps that can be executed concurrently. You can specify a maximum of 256 steps. Only valid for EMR clusters with `releaseLabel` 5.28.0 or greater. (default is 1)
+    */
+  val stepConcurrencyLevel: Output[js.UndefOr[Double]] = js.native
   /**
     * List of steps to run when creating the cluster. Defined below. It is highly recommended to utilize the [lifecycle configuration block](https://www.terraform.io/docs/configuration/resources.html) with `ignoreChanges` if other steps are being managed outside of this provider. This argument is processed in [attribute-as-blocks mode](https://www.terraform.io/docs/configuration/attr-as-blocks.html).
     */

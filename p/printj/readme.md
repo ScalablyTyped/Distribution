@@ -10,9 +10,9 @@ Pure-JS printf
 | ------------------ | :-------------: |
 | Full name          | printj |
 | Keywords           | printf, sprintf, format, string |
-| # releases         | 8 |
-| # dependents       | 13 |
-| # downloads        | 11170621 |
+| # releases         | 6 |
+| # dependents       | 16 |
+| # downloads        | 18366109 |
 | # stars            | 1 |
 
 ## Links

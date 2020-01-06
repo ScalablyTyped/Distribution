@@ -10,9 +10,9 @@ A pure javascript JPEG encoder and decoder
 | ------------------ | :-------------: |
 | Full name          | jpeg-js |
 | Keywords           | jpeg, jpg, encoder, decoder, codec, image, javascript, js |
-| # releases         | 6 |
-| # dependents       | 117 |
-| # downloads        | 22949663 |
+| # releases         | 4 |
+| # dependents       | 141 |
+| # downloads        | 43379135 |
 | # stars            | 6 |
 
 ## Links

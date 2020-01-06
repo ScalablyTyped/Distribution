@@ -4,19 +4,19 @@
 Typings are for version 3.3
 
 ## Library description:
-A modern JSON implementation compatible with nearly all JavaScript platforms.
+A JSON polyfill for older JavaScript platforms.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | json3 |
 | Keywords           | json, spec, ecma, es5, lexer, parser, stringify |
-| # releases         | 1 |
-| # dependents       | 123 |
-| # downloads        | 171803944 |
+| # releases         | 2 |
+| # dependents       | 134 |
+| # downloads        | 265618011 |
 | # stars            | 5 |
 
 ## Links
-- [Homepage](http://bestiejs.github.io/json3)
+- [Homepage](https://bestiejs.github.io/json3)
 - [Bugs](https://github.com/bestiejs/json3/issues)
 - [Repository](https://github.com/bestiejs/json3)
 - [Npm](https://www.npmjs.com/package/json3)

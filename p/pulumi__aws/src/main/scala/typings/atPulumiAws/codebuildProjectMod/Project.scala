@@ -75,6 +75,10 @@ class Project protected () extends CustomResource {
     */
   val name: Output[String] = js.native
   /**
+    * How long in minutes, from 5 to 480 (8 hours), a build is allowed to be queued before it times out. The default is 8 hours.
+    */
+  val queuedTimeout: Output[js.UndefOr[Double]] = js.native
+  /**
     * A set of secondary artifacts to be used inside the build. Secondary artifacts blocks are documented below.
     */
   val secondaryArtifacts: Output[js.UndefOr[js.Array[ProjectSecondaryArtifact]]] = js.native

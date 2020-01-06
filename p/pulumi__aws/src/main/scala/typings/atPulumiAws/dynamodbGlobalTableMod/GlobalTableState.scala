@@ -6,19 +6,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GlobalTableState extends js.Object {
   /**
     * The ARN of the DynamoDB Global Table
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the global table. Must match underlying DynamoDB Table names in all regions.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * Underlying DynamoDB Table. At least 1 replica must be defined. See below.
     */
-  val replicas: js.UndefOr[Input[js.Array[Input[GlobalTableReplica]]]] = js.undefined
+  val replicas: js.UndefOr[Input[js.Array[Input[GlobalTableReplica]]]] = js.native
 }
 
 object GlobalTableState {

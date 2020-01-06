@@ -10,9 +10,9 @@ Add a git-like command interface to your app.
 | ------------------ | :-------------: |
 | Full name          | command-line-commands |
 | Keywords           | argv, parse, argument, args, option, parser, parsing, cli, command, commands, line |
-| # releases         | 2 |
-| # dependents       | 76 |
-| # downloads        | 1652055 |
+| # releases         | 3 |
+| # dependents       | 81 |
+| # downloads        | 2033864 |
 | # stars            | 4 |
 
 ## Links

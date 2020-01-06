@@ -10,14 +10,14 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait RedisStatic
-  extends Instantiable3[/* port */ Double, /* host */ String, /* options */ RedisOptions, Redis]
-     with Instantiable0[Redis]
+  extends Instantiable0[Redis]
      with Instantiable1[(/* port */ Double) | (/* options */ RedisOptions) | (/* host */ String), Redis]
      with Instantiable2[
       (/* port */ Double) | (/* host */ String), 
       (/* options */ RedisOptions) | (/* host */ String), 
       Redis
-    ] {
+    ]
+     with Instantiable3[/* port */ Double, /* host */ String, /* options */ RedisOptions, Redis] {
   var Cluster: ClusterStatic = js.native
   var Command: typings.ioredis.ioredisMod.Command = js.native
   def apply(): Redis = js.native

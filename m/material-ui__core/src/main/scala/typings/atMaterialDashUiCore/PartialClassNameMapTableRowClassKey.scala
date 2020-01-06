@@ -5,12 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/TableRow/TableRow.TableRowClassKey>> */
+@js.native
 trait PartialClassNameMapTableRowClassKey extends js.Object {
-  var footer: js.UndefOr[String] = js.undefined
-  var head: js.UndefOr[String] = js.undefined
-  var hover: js.UndefOr[String] = js.undefined
-  var root: js.UndefOr[String] = js.undefined
-  var selected: js.UndefOr[String] = js.undefined
+  var footer: js.UndefOr[String] = js.native
+  var head: js.UndefOr[String] = js.native
+  var hover: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.native
+  var selected: js.UndefOr[String] = js.native
 }
 
 object PartialClassNameMapTableRowClassKey {

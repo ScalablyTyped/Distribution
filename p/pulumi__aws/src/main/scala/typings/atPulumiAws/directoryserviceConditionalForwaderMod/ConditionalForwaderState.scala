@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ConditionalForwaderState extends js.Object {
   /**
     * The id of directory.
     */
-  val directoryId: js.UndefOr[Input[String]] = js.undefined
+  val directoryId: js.UndefOr[Input[String]] = js.native
   /**
     * A list of forwarder IP addresses.
     */
-  val dnsIps: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val dnsIps: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The fully qualified domain name of the remote domain for which forwarders will be used.
     */
-  val remoteDomainName: js.UndefOr[Input[String]] = js.undefined
+  val remoteDomainName: js.UndefOr[Input[String]] = js.native
 }
 
 object ConditionalForwaderState {

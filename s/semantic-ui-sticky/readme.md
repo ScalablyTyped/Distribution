@@ -10,9 +10,9 @@ Single component release of sticky
 | ------------------ | :-------------: |
 | Full name          | semantic-ui-sticky |
 | Keywords           | - |
-| # releases         | 6 |
+| # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 17244 |
+| # downloads        | 23477 |
 | # stars            | 0 |
 
 ## Links

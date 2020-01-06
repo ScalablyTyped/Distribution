@@ -10,9 +10,9 @@ Provides a function for detecting if an argument is an ArrayBuffer
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/is-array-buffer |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 5 |
 | # dependents       | 11 |
-| # downloads        | 15414 |
+| # downloads        | 908008 |
 | # stars            | 0 |
 
 ## Links

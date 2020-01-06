@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ListOTAUpdatesRequest extends js.Object {
   /**
     * The maximum number of results to return at one time.
     */
-  var maxResults: js.UndefOr[MaxResults] = js.undefined
+  var maxResults: js.UndefOr[MaxResults] = js.native
   /**
     * A token used to retrieve the next set of results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.undefined
+  var nextToken: js.UndefOr[NextToken] = js.native
   /**
     * The OTA update job status.
     */
-  var otaUpdateStatus: js.UndefOr[OTAUpdateStatus] = js.undefined
+  var otaUpdateStatus: js.UndefOr[OTAUpdateStatus] = js.native
 }
 
 object ListOTAUpdatesRequest {
@@ -28,7 +29,7 @@ object ListOTAUpdatesRequest {
   ): ListOTAUpdatesRequest = {
     val __obj = js.Dynamic.literal()
     if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
+    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     if (otaUpdateStatus != null) __obj.updateDynamic("otaUpdateStatus")(otaUpdateStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListOTAUpdatesRequest]
   }

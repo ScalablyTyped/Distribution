@@ -10,10 +10,10 @@ JavaScript library for DOM operations
 | ------------------ | :-------------: |
 | Full name          | jquery |
 | Keywords           | jquery, javascript, browser, library |
-| # releases         | 2 |
-| # dependents       | 9934 |
-| # downloads        | 105288407 |
-| # stars            | 363 |
+| # releases         | 5 |
+| # dependents       | 11520 |
+| # downloads        | 142893198 |
+| # stars            | 365 |
 
 ## Links
 - [Homepage](https://jquery.com)

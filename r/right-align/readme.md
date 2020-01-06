@@ -10,9 +10,9 @@ Right-align the text in a string.
 | ------------------ | :-------------: |
 | Full name          | right-align |
 | Keywords           | align, align-center, center, center-align, right, right-align, text, typography |
-| # releases         | 1 |
-| # dependents       | 37 |
-| # downloads        | 196272101 |
+| # releases         | 0 |
+| # dependents       | 41 |
+| # downloads        | 163526788 |
 | # stars            | 2 |
 
 ## Links

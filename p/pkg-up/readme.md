@@ -10,9 +10,9 @@ Find the closest package.json file
 | ------------------ | :-------------: |
 | Full name          | pkg-up |
 | Keywords           | pkg, package, file, find, up, find-up, findup, look-up, look, search, match, resolve, parent, parents, folder, directory, dir, walk, walking, path |
-| # releases         | 3 |
-| # dependents       | 293 |
-| # downloads        | 52666965 |
+| # releases         | 4 |
+| # dependents       | 370 |
+| # downloads        | 123307254 |
 | # stars            | 7 |
 
 ## Links

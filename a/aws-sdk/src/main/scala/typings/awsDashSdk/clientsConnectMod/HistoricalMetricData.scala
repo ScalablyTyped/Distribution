@@ -4,22 +4,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait HistoricalMetricData extends js.Object {
   /**
-    * A HistoricalMetric object.
+    * Information about the metric.
     */
-  var Metric: js.UndefOr[HistoricalMetric] = js.undefined
+  var Metric: js.UndefOr[HistoricalMetric] = js.native
   /**
-    * The Value of the metric.
+    * The value of the metric.
     */
-  var Value: js.UndefOr[typings.awsDashSdk.clientsConnectMod.Value] = js.undefined
+  var Value: js.UndefOr[typings.awsDashSdk.clientsConnectMod.Value] = js.native
 }
 
 object HistoricalMetricData {
   @scala.inline
   def apply(Metric: HistoricalMetric = null, Value: Int | Double = null): HistoricalMetricData = {
     val __obj = js.Dynamic.literal()
-    if (Metric != null) __obj.updateDynamic("Metric")(Metric)
+    if (Metric != null) __obj.updateDynamic("Metric")(Metric.asInstanceOf[js.Any])
     if (Value != null) __obj.updateDynamic("Value")(Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistoricalMetricData]
   }

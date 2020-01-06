@@ -10,9 +10,9 @@ Node client for Visual Studio Online/TFS REST APIs
 | ------------------ | :-------------: |
 | Full name          | vso-node-api |
 | Keywords           | - |
-| # releases         | 12 |
-| # dependents       | 6 |
-| # downloads        | 912331 |
+| # releases         | 5 |
+| # dependents       | 4 |
+| # downloads        | 804183 |
 | # stars            | 3 |
 
 ## Links

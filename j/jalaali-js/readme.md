@@ -10,9 +10,9 @@ Converts Gregorian and Jalaali calendars to each other
 | ------------------ | :-------------: |
 | Full name          | jalaali-js |
 | Keywords           | jalaali, jalali, persian, khorshidi, shamsi, calendar, date |
-| # releases         | 2 |
-| # dependents       | 22 |
-| # downloads        | 254120 |
+| # releases         | 0 |
+| # dependents       | 28 |
+| # downloads        | 228722 |
 | # stars            | 0 |
 
 ## Links

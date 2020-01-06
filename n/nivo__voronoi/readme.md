@@ -10,9 +10,9 @@ Typings are for version 0.59.3
 | ------------------ | :-------------: |
 | Full name          | @nivo/voronoi |
 | Keywords           | nivo, dataviz, react, d3, charts, voronoi |
-| # releases         | 37 |
-| # dependents       | 5 |
-| # downloads        | 20314 |
+| # releases         | 28 |
+| # dependents       | 6 |
+| # downloads        | 266302 |
 | # stars            | 0 |
 
 ## Links

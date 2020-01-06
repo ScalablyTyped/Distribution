@@ -3,9 +3,10 @@ package typings.next.distNextDashServerServerNextDashServerMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.next.Anon_AmpBindInitData
 import typings.next.Anon_Amphtml
+import typings.next.Anon_CatchAllRoute
 import typings.next.Anon_False
-import typings.next.Anon_Match
-import typings.next.Anon_Redirects
+import typings.next.Anon_Headers
+import typings.next.distNextDashServerServerRouterMod.DynamicRoutes
 import typings.next.distNextDashServerServerRouterMod.Params
 import typings.next.distNextDashServerServerRouterMod.Route
 import typings.node.httpMod.IncomingMessage
@@ -22,10 +23,10 @@ trait Server extends js.Object {
   var __sendPayload: js.Any = js.native
   var buildId: String = js.native
   var compression: js.UndefOr[js.Any] = js.native
-  var customRoutes: js.UndefOr[Anon_Redirects] = js.native
+  var customRoutes: js.UndefOr[Anon_Headers] = js.native
   var dir: String = js.native
   var distDir: String = js.native
-  var dynamicRoutes: js.UndefOr[js.Array[Anon_Match]] = js.native
+  var dynamicRoutes: js.UndefOr[DynamicRoutes] = js.native
   var findPageComponents: js.Any = js.native
   var getPagePath: js.Any = js.native
   /**
@@ -56,7 +57,7 @@ trait Server extends js.Object {
   /* protected */ def currentPhase(): String = js.native
   /* protected */ def ensureApiPage(pathname: String): js.Promise[Unit] = js.native
   /* protected */ def generatePublicRoutes(): js.Array[Route] = js.native
-  /* protected */ def generateRoutes(): js.Array[Route] = js.native
+  /* protected */ def generateRoutes(): Anon_CatchAllRoute = js.native
   /* protected */ def getCustomRoutes(): js.Any = js.native
   /* protected */ def getDynamicRoutes(): js.Array[Anon_False] = js.native
   def getRequestHandler(): js.Function3[

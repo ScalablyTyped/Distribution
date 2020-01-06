@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait XssMatchSetXssMatchTuple extends js.Object {
   /**
     * Specifies where in a web request to look for cross-site scripting attacks.
     */
-  var fieldToMatch: Input[XssMatchSetXssMatchTupleFieldToMatch]
+  var fieldToMatch: Input[XssMatchSetXssMatchTupleFieldToMatch] = js.native
   /**
     * Which text transformation, if any, to perform on the web request before inspecting the request for cross-site scripting attacks.
     */
-  var textTransformation: Input[String]
+  var textTransformation: Input[String] = js.native
 }
 
 object XssMatchSetXssMatchTuple {

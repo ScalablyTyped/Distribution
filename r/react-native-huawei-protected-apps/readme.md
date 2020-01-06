@@ -10,9 +10,9 @@ Customized dialog alerting the user of the battery save mode 'Protected Apps' of
 | ------------------ | :-------------: |
 | Full name          | react-native-huawei-protected-apps |
 | Keywords           | react-native, react-component, android, Huawei, Protected, apps |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 8596 |
+| # downloads        | 12833 |
 | # stars            | 0 |
 
 ## Links

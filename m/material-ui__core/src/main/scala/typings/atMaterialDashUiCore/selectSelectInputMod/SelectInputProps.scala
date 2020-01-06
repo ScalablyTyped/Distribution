@@ -17,35 +17,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SelectInputProps extends js.Object {
-  var IconComponent: js.UndefOr[ReactType[_]] = js.undefined
-  var MenuProps: js.UndefOr[PartialMenuProps] = js.undefined
-  var SelectDisplayProps: js.UndefOr[HTMLAttributes[HTMLDivElement]] = js.undefined
-  var autoFocus: js.UndefOr[Boolean] = js.undefined
-  var autoWidth: Boolean
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var inputRef: js.UndefOr[js.Function1[/* ref */ HTMLSelectElement | Anon_NodeValue, Unit]] = js.undefined
-  var multiple: Boolean
-  var name: js.UndefOr[String] = js.undefined
-  var native: Boolean
-  var onBlur: js.UndefOr[FocusEventHandler[_]] = js.undefined
+  var IconComponent: js.UndefOr[ReactType[_]] = js.native
+  var MenuProps: js.UndefOr[PartialMenuProps] = js.native
+  var SelectDisplayProps: js.UndefOr[HTMLAttributes[HTMLDivElement]] = js.native
+  var autoFocus: js.UndefOr[Boolean] = js.native
+  var autoWidth: Boolean = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
+  var inputRef: js.UndefOr[js.Function1[/* ref */ HTMLSelectElement | Anon_NodeValue, Unit]] = js.native
+  var multiple: Boolean = js.native
+  var name: js.UndefOr[String] = js.native
+  var native: Boolean = js.native
+  var onBlur: js.UndefOr[FocusEventHandler[_]] = js.native
   var onChange: js.UndefOr[
     js.Function2[/* event */ ChangeEvent[HTMLSelectElement], /* child */ ReactNode, Unit]
-  ] = js.undefined
-  var onClose: js.UndefOr[js.Function1[/* event */ ChangeEvent[js.Object], Unit]] = js.undefined
-  var onFocus: js.UndefOr[FocusEventHandler[_]] = js.undefined
-  var onOpen: js.UndefOr[js.Function1[/* event */ ChangeEvent[js.Object], Unit]] = js.undefined
-  var open: js.UndefOr[Boolean] = js.undefined
-  var readOnly: js.UndefOr[Boolean] = js.undefined
+  ] = js.native
+  var onClose: js.UndefOr[js.Function1[/* event */ ChangeEvent[js.Object], Unit]] = js.native
+  var onFocus: js.UndefOr[FocusEventHandler[_]] = js.native
+  var onOpen: js.UndefOr[js.Function1[/* event */ ChangeEvent[js.Object], Unit]] = js.native
+  var open: js.UndefOr[Boolean] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.native
   var renderValue: js.UndefOr[
     js.Function1[
       /* value */ String | Double | Boolean | (js.Array[String | Double | Boolean]), 
       ReactNode
     ]
-  ] = js.undefined
-  var tabIndex: js.UndefOr[Double] = js.undefined
-  var value: String | Double | Boolean | (js.Array[String | Double | Boolean])
-  var variant: js.UndefOr[standard | outlined | filled] = js.undefined
+  ] = js.native
+  var tabIndex: js.UndefOr[Double] = js.native
+  var value: String | Double | Boolean | (js.Array[String | Double | Boolean]) = js.native
+  var variant: js.UndefOr[standard | outlined | filled] = js.native
 }
 
 object SelectInputProps {

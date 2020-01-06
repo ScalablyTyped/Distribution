@@ -10,9 +10,9 @@ A Base64 serializer for Slate editors.
 | ------------------ | :-------------: |
 | Full name          | slate-base64-serializer |
 | Keywords           | deserialize, base64, editor, serialize, serializer, slate |
-| # releases         | 124 |
-| # dependents       | 32 |
-| # downloads        | 2116111 |
+| # releases         | 96 |
+| # dependents       | 51 |
+| # downloads        | 4181190 |
 | # stars            | 0 |
 
 ## Links

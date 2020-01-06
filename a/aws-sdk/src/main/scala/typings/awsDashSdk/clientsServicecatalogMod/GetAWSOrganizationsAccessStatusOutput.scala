@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetAWSOrganizationsAccessStatusOutput extends js.Object {
   /**
     * The status of the portfolio share feature.
     */
-  var AccessStatus: js.UndefOr[typings.awsDashSdk.clientsServicecatalogMod.AccessStatus] = js.undefined
+  var AccessStatus: js.UndefOr[typings.awsDashSdk.clientsServicecatalogMod.AccessStatus] = js.native
 }
 
 object GetAWSOrganizationsAccessStatusOutput {

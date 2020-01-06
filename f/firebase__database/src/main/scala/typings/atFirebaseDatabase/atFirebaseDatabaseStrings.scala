@@ -9,12 +9,6 @@ object atFirebaseDatabaseStrings {
   sealed trait `5` extends js.Object
   
   @js.native
-  sealed trait LeftsquarebracketMAX_NAMERightsquarebracket extends js.Object
-  
-  @js.native
-  sealed trait LeftsquarebracketMIN_NAMERightsquarebracket extends js.Object
-  
-  @js.native
   sealed trait Spacechild_added extends js.Object
   
   @js.native
@@ -25,6 +19,12 @@ object atFirebaseDatabaseStrings {
   
   @js.native
   sealed trait Spacechild_removed extends js.Object
+  
+  @js.native
+  sealed trait `[MAX_NAME]` extends js.Object
+  
+  @js.native
+  sealed trait `[MIN_NAME]` extends js.Object
   
   @js.native
   sealed trait cb extends js.Object
@@ -95,10 +95,6 @@ object atFirebaseDatabaseStrings {
   @scala.inline
   def `5`: `5` = "5".asInstanceOf[`5`]
   @scala.inline
-  def LeftsquarebracketMAX_NAMERightsquarebracket: LeftsquarebracketMAX_NAMERightsquarebracket = "[MAX_NAME]".asInstanceOf[LeftsquarebracketMAX_NAMERightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketMIN_NAMERightsquarebracket: LeftsquarebracketMIN_NAMERightsquarebracket = "[MIN_NAME]".asInstanceOf[LeftsquarebracketMIN_NAMERightsquarebracket]
-  @scala.inline
   def Spacechild_added: Spacechild_added = " child_added".asInstanceOf[Spacechild_added]
   @scala.inline
   def Spacechild_changed: Spacechild_changed = " child_changed".asInstanceOf[Spacechild_changed]
@@ -106,6 +102,10 @@ object atFirebaseDatabaseStrings {
   def Spacechild_moved: Spacechild_moved = " child_moved".asInstanceOf[Spacechild_moved]
   @scala.inline
   def Spacechild_removed: Spacechild_removed = " child_removed".asInstanceOf[Spacechild_removed]
+  @scala.inline
+  def `[MAX_NAME]`: `[MAX_NAME]` = "[MAX_NAME]".asInstanceOf[`[MAX_NAME]`]
+  @scala.inline
+  def `[MIN_NAME]`: `[MIN_NAME]` = "[MIN_NAME]".asInstanceOf[`[MIN_NAME]`]
   @scala.inline
   def cb: cb = "cb".asInstanceOf[cb]
   @scala.inline

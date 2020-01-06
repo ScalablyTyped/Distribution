@@ -10,9 +10,9 @@ Multiline text ellipsis for react
 | ------------------ | :-------------: |
 | Full name          | react-dotdotdot |
 | Keywords           | - |
-| # releases         | 7 |
+| # releases         | 8 |
 | # dependents       | 14 |
-| # downloads        | 1042853 |
+| # downloads        | 1458073 |
 | # stars            | 2 |
 
 ## Links

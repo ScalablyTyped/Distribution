@@ -11,8 +11,8 @@ gl-matrix's vec4, split into smaller pieces
 | Full name          | gl-vec4 |
 | Keywords           | ecosystem:stackgl, gl-matrix, matrix, math, gl, mat4, mat4x4, 4x4, vectors, vec4, color, mat, vector, maths |
 | # releases         | 1 |
-| # dependents       | 13 |
-| # downloads        | 1697363 |
+| # dependents       | 15 |
+| # downloads        | 2375739 |
 | # stars            | 0 |
 
 ## Links

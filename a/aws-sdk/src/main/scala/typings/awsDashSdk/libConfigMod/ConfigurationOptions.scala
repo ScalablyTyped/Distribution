@@ -1,8 +1,8 @@
 package typings.awsDashSdk.libConfigMod
 
-import typings.awsDashSdk.awsDashSdkStrings.legacy
-import typings.awsDashSdk.awsDashSdkStrings.regional
-import typings.awsDashSdk.awsDashSdkStrings.v2
+import typings.awsDashSdk.awsDashSdkStrings.legacy_
+import typings.awsDashSdk.awsDashSdkStrings.regional_
+import typings.awsDashSdk.awsDashSdkStrings.v2_
 import typings.awsDashSdk.awsDashSdkStrings.v3
 import typings.awsDashSdk.awsDashSdkStrings.v4
 import typings.awsDashSdk.libCredentialsCredentialUnderscoreProviderUnderscoreChainMod.CredentialProviderChain
@@ -112,6 +112,18 @@ abstract class ConfigurationOptions () extends js.Object {
     */
   var s3ForcePathStyle: js.UndefOr[Boolean] = js.native
   /**
+    * when region is set to 'us-east-1', whether to send s3 request to global endpoints
+    * or 'us-east-1' regional endpoints. This config is only applicable to S3 client;
+    * Defaults to 'legacy'
+    */
+  var s3UsEast1RegionalEndpoint: js.UndefOr[regional_ | legacy_] = js.native
+  /**
+    * whether to override the request region with the region inferred
+    * from requested resource's ARN. Only available for S3 buckets
+    * Defaults to `true`
+    */
+  var s3UseArnRegion: js.UndefOr[Boolean] = js.native
+  /**
     * AWS secret access key.
     *
     * @deprecated
@@ -131,7 +143,7 @@ abstract class ConfigurationOptions () extends js.Object {
     * The signature version to sign requests with (overriding the API configuration).
     * Possible values: 'v2'|'v3'|'v4'
     */
-  var signatureVersion: js.UndefOr[v2 | v3 | v4 | String] = js.native
+  var signatureVersion: js.UndefOr[v2_ | v3 | v4 | String] = js.native
   /**
     * Whether SSL is enabled for requests.
     */
@@ -140,7 +152,7 @@ abstract class ConfigurationOptions () extends js.Object {
     * whether to send sts request to global endpoints or
     * regional endpoints. 
     */
-  var stsRegionalEndpoints: js.UndefOr[legacy | regional] = js.native
+  var stsRegionalEndpoints: js.UndefOr[legacy_ | regional_] = js.native
   /**
     * An offset value in milliseconds to apply to all signing times.
     */

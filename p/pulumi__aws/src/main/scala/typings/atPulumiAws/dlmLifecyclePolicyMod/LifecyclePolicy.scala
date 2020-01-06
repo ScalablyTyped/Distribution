@@ -1,5 +1,6 @@
 package typings.atPulumiAws.dlmLifecyclePolicyMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.atPulumiAws.typesOutputMod.dlm.LifecyclePolicyPolicyDetails
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
@@ -23,6 +24,10 @@ class LifecyclePolicy protected () extends CustomResource {
   def this(name: String, args: LifecyclePolicyArgs) = this()
   def this(name: String, args: LifecyclePolicyArgs, opts: CustomResourceOptions) = this()
   /**
+    * Amazon Resource Name (ARN) of the DLM Lifecycle Policy.
+    */
+  val arn: Output[String] = js.native
+  /**
     * A description for the DLM lifecycle policy.
     */
   val description: Output[String] = js.native
@@ -38,6 +43,10 @@ class LifecyclePolicy protected () extends CustomResource {
     * Whether the lifecycle policy should be enabled or disabled. `ENABLED` or `DISABLED` are valid values. Defaults to `ENABLED`.
     */
   val state: Output[js.UndefOr[String]] = js.native
+  /**
+    * Key-value mapping of resource tags.
+    */
+  val tags: Output[js.UndefOr[StringDictionary[_]]] = js.native
 }
 
 /* static members */

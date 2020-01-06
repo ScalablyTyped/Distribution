@@ -10,9 +10,9 @@ Catch unhandled errors and promise rejections in your Electron app
 | ------------------ | :-------------: |
 | Full name          | electron-unhandled |
 | Keywords           | electron, unhandled, error, exception, promise, rejection, uncaught, handler, stack, report, log, logger, debug, debugging |
-| # releases         | 8 |
-| # dependents       | 5 |
-| # downloads        | 59736 |
+| # releases         | 7 |
+| # dependents       | 7 |
+| # downloads        | 104804 |
 | # stars            | 2 |
 
 ## Links

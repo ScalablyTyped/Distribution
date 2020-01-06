@@ -12,7 +12,7 @@ A small library that truncates a string. It can insert or append an ellipsis at 
 | Keywords           | string, truncate, ellipsis, smart |
 | # releases         | 4 |
 | # dependents       | 3 |
-| # downloads        | 44514 |
+| # downloads        | 75011 |
 | # stars            | 1 |
 
 ## Links

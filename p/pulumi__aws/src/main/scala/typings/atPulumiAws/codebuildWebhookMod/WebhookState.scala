@@ -6,31 +6,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WebhookState extends js.Object {
   /**
     * A regular expression used to determine which branches get built. Default is all branches are built. It is recommended to use `filterGroup` over `branchFilter`.
     */
-  val branchFilter: js.UndefOr[Input[String]] = js.undefined
+  val branchFilter: js.UndefOr[Input[String]] = js.native
   /**
     * Information about the webhook's trigger. Filter group blocks are documented below.
     */
-  val filterGroups: js.UndefOr[Input[js.Array[Input[WebhookFilterGroup]]]] = js.undefined
+  val filterGroups: js.UndefOr[Input[js.Array[Input[WebhookFilterGroup]]]] = js.native
   /**
     * The CodeBuild endpoint where webhook events are sent.
     */
-  val payloadUrl: js.UndefOr[Input[String]] = js.undefined
+  val payloadUrl: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the build project.
     */
-  val projectName: js.UndefOr[Input[String]] = js.undefined
+  val projectName: js.UndefOr[Input[String]] = js.native
   /**
     * The secret token of the associated repository. Not returned by the CodeBuild API for all source types.
     */
-  val secret: js.UndefOr[Input[String]] = js.undefined
+  val secret: js.UndefOr[Input[String]] = js.native
   /**
     * The URL to the webhook.
     */
-  val url: js.UndefOr[Input[String]] = js.undefined
+  val url: js.UndefOr[Input[String]] = js.native
 }
 
 object WebhookState {

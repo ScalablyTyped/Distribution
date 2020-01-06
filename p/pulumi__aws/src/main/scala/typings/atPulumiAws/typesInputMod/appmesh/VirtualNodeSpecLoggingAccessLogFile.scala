@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VirtualNodeSpecLoggingAccessLogFile extends js.Object {
   /**
     * The destination path for the health check request. This is only required if the specified protocol is `http`.
     */
-  var path: Input[String]
+  var path: Input[String] = js.native
 }
 
 object VirtualNodeSpecLoggingAccessLogFile {

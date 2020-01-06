@@ -10,9 +10,9 @@ An HTML serializer for Slate editors.
 | ------------------ | :-------------: |
 | Full name          | slate-html-serializer |
 | Keywords           | deserialize, editor, html, serialize, serializer, slate, xml |
-| # releases         | 128 |
-| # dependents       | 44 |
-| # downloads        | 1124269 |
+| # releases         | 97 |
+| # dependents       | 71 |
+| # downloads        | 1863645 |
 | # stars            | 0 |
 
 ## Links

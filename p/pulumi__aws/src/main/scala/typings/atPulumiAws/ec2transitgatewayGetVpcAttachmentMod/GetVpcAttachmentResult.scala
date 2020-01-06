@@ -6,40 +6,41 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetVpcAttachmentResult extends js.Object {
   /**
     * Whether DNS support is enabled.
     */
-  val dnsSupport: String
-  val filters: js.UndefOr[js.Array[GetVpcAttachmentFilter]] = js.undefined
+  val dnsSupport: String = js.native
+  val filters: js.UndefOr[js.Array[GetVpcAttachmentFilter]] = js.native
   /**
     * EC2 Transit Gateway VPC Attachment identifier
     */
-  val id: js.UndefOr[String] = js.undefined
+  val id: js.UndefOr[String] = js.native
   /**
     * Whether IPv6 support is enabled.
     */
-  val ipv6Support: String
+  val ipv6Support: String = js.native
   /**
     * Identifiers of EC2 Subnets.
     */
-  val subnetIds: js.Array[String]
+  val subnetIds: js.Array[String] = js.native
   /**
     * Key-value tags for the EC2 Transit Gateway VPC Attachment
     */
-  val tags: StringDictionary[js.Any]
+  val tags: StringDictionary[js.Any] = js.native
   /**
     * EC2 Transit Gateway identifier
     */
-  val transitGatewayId: String
+  val transitGatewayId: String = js.native
   /**
     * Identifier of EC2 VPC.
     */
-  val vpcId: String
+  val vpcId: String = js.native
   /**
     * Identifier of the AWS account that owns the EC2 VPC.
     */
-  val vpcOwnerId: String
+  val vpcOwnerId: String = js.native
 }
 
 object GetVpcAttachmentResult {
@@ -55,9 +56,9 @@ object GetVpcAttachmentResult {
     filters: js.Array[GetVpcAttachmentFilter] = null,
     id: String = null
   ): GetVpcAttachmentResult = {
-    val __obj = js.Dynamic.literal(dnsSupport = dnsSupport, ipv6Support = ipv6Support, subnetIds = subnetIds, tags = tags, transitGatewayId = transitGatewayId, vpcId = vpcId, vpcOwnerId = vpcOwnerId)
-    if (filters != null) __obj.updateDynamic("filters")(filters)
-    if (id != null) __obj.updateDynamic("id")(id)
+    val __obj = js.Dynamic.literal(dnsSupport = dnsSupport.asInstanceOf[js.Any], ipv6Support = ipv6Support.asInstanceOf[js.Any], subnetIds = subnetIds.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], transitGatewayId = transitGatewayId.asInstanceOf[js.Any], vpcId = vpcId.asInstanceOf[js.Any], vpcOwnerId = vpcOwnerId.asInstanceOf[js.Any])
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetVpcAttachmentResult]
   }
 }

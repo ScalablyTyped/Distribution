@@ -11,14 +11,13 @@ The lodash method `_.transform` exported as a module.
 | Full name          | lodash.transform |
 | Keywords           | lodash-modularized, transform |
 | # releases         | 0 |
-| # dependents       | 40 |
-| # downloads        | 4410777 |
+| # dependents       | 62 |
+| # downloads        | 13244855 |
 | # stars            | 0 |
 
 ## Links
 - [Homepage](https://lodash.com/)
 - [Bugs](https://github.com/lodash/lodash/issues)
-- [Repository](https://github.com/lodash/lodash)
 - [Npm](https://www.npmjs.com/package/lodash.transform)
     
 

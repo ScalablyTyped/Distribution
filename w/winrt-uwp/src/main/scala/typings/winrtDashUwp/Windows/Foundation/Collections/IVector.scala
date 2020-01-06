@@ -38,12 +38,9 @@ trait IVector[T]
     */
   def getView(): IVectorView[T] = js.native
   def indexOf(value: T, extra: js.Any*): Anon_Index = js.native
-  /**
-    * Retrieves the index of a specified item in the vector.
-    * @param value The item to find in the vector.
-    */
+  /* hack */
   @JSName("indexOf")
-  def indexOf_Anon_Index(value: T): Anon_Index = js.native
+  def indexOf_Double(searchElement: T): Double = js.native
   /**
     * Inserts an item at a specified index in the vector.
     * @param index The zero-based index.

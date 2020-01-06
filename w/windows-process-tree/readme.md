@@ -12,7 +12,7 @@ Fetch a Windows process tree fast
 | Keywords           | - |
 | # releases         | 12 |
 | # dependents       | 2 |
-| # downloads        | 118321 |
+| # downloads        | 155209 |
 | # stars            | 1 |
 
 ## Links

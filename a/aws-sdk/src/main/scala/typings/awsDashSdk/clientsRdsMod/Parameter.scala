@@ -4,51 +4,52 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Parameter extends js.Object {
   /**
     * Specifies the valid range of values for the parameter.
     */
-  var AllowedValues: js.UndefOr[String] = js.undefined
+  var AllowedValues: js.UndefOr[String] = js.native
   /**
     * Indicates when to apply parameter updates.
     */
-  var ApplyMethod: js.UndefOr[typings.awsDashSdk.clientsRdsMod.ApplyMethod] = js.undefined
+  var ApplyMethod: js.UndefOr[typings.awsDashSdk.clientsRdsMod.ApplyMethod] = js.native
   /**
     * Specifies the engine specific parameters type.
     */
-  var ApplyType: js.UndefOr[String] = js.undefined
+  var ApplyType: js.UndefOr[String] = js.native
   /**
     * Specifies the valid data type for the parameter.
     */
-  var DataType: js.UndefOr[String] = js.undefined
+  var DataType: js.UndefOr[String] = js.native
   /**
     * Provides a description of the parameter.
     */
-  var Description: js.UndefOr[String] = js.undefined
+  var Description: js.UndefOr[String] = js.native
   /**
     *  Indicates whether (true) or not (false) the parameter can be modified. Some parameters have security or operational implications that prevent them from being changed. 
     */
-  var IsModifiable: js.UndefOr[Boolean] = js.undefined
+  var IsModifiable: js.UndefOr[Boolean] = js.native
   /**
     * The earliest engine version to which the parameter can apply.
     */
-  var MinimumEngineVersion: js.UndefOr[String] = js.undefined
+  var MinimumEngineVersion: js.UndefOr[String] = js.native
   /**
     * Specifies the name of the parameter.
     */
-  var ParameterName: js.UndefOr[String] = js.undefined
+  var ParameterName: js.UndefOr[String] = js.native
   /**
     * Specifies the value of the parameter.
     */
-  var ParameterValue: js.UndefOr[String] = js.undefined
+  var ParameterValue: js.UndefOr[String] = js.native
   /**
     * Indicates the source of the parameter value.
     */
-  var Source: js.UndefOr[String] = js.undefined
+  var Source: js.UndefOr[String] = js.native
   /**
     * The valid DB engine modes.
     */
-  var SupportedEngineModes: js.UndefOr[EngineModeList] = js.undefined
+  var SupportedEngineModes: js.UndefOr[EngineModeList] = js.native
 }
 
 object Parameter {
@@ -67,17 +68,17 @@ object Parameter {
     SupportedEngineModes: EngineModeList = null
   ): Parameter = {
     val __obj = js.Dynamic.literal()
-    if (AllowedValues != null) __obj.updateDynamic("AllowedValues")(AllowedValues)
+    if (AllowedValues != null) __obj.updateDynamic("AllowedValues")(AllowedValues.asInstanceOf[js.Any])
     if (ApplyMethod != null) __obj.updateDynamic("ApplyMethod")(ApplyMethod.asInstanceOf[js.Any])
-    if (ApplyType != null) __obj.updateDynamic("ApplyType")(ApplyType)
-    if (DataType != null) __obj.updateDynamic("DataType")(DataType)
-    if (Description != null) __obj.updateDynamic("Description")(Description)
-    if (!js.isUndefined(IsModifiable)) __obj.updateDynamic("IsModifiable")(IsModifiable)
-    if (MinimumEngineVersion != null) __obj.updateDynamic("MinimumEngineVersion")(MinimumEngineVersion)
-    if (ParameterName != null) __obj.updateDynamic("ParameterName")(ParameterName)
-    if (ParameterValue != null) __obj.updateDynamic("ParameterValue")(ParameterValue)
-    if (Source != null) __obj.updateDynamic("Source")(Source)
-    if (SupportedEngineModes != null) __obj.updateDynamic("SupportedEngineModes")(SupportedEngineModes)
+    if (ApplyType != null) __obj.updateDynamic("ApplyType")(ApplyType.asInstanceOf[js.Any])
+    if (DataType != null) __obj.updateDynamic("DataType")(DataType.asInstanceOf[js.Any])
+    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsModifiable)) __obj.updateDynamic("IsModifiable")(IsModifiable.asInstanceOf[js.Any])
+    if (MinimumEngineVersion != null) __obj.updateDynamic("MinimumEngineVersion")(MinimumEngineVersion.asInstanceOf[js.Any])
+    if (ParameterName != null) __obj.updateDynamic("ParameterName")(ParameterName.asInstanceOf[js.Any])
+    if (ParameterValue != null) __obj.updateDynamic("ParameterValue")(ParameterValue.asInstanceOf[js.Any])
+    if (Source != null) __obj.updateDynamic("Source")(Source.asInstanceOf[js.Any])
+    if (SupportedEngineModes != null) __obj.updateDynamic("SupportedEngineModes")(SupportedEngineModes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Parameter]
   }
 }

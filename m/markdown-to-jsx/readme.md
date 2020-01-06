@@ -10,9 +10,9 @@ Convert markdown to JSX with ease for React and React-like projects. Super light
 | ------------------ | :-------------: |
 | Full name          | markdown-to-jsx |
 | Keywords           | markdown, markdown converter, react, preact, jsx, html |
-| # releases         | 55 |
-| # dependents       | 50 |
-| # downloads        | 4553916 |
+| # releases         | 41 |
+| # dependents       | 70 |
+| # downloads        | 28390161 |
 | # stars            | 4 |
 
 ## Links

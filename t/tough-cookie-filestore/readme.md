@@ -11,8 +11,8 @@ file store for tough-cookie
 | Full name          | tough-cookie-filestore |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 51 |
-| # downloads        | 206234 |
+| # dependents       | 52 |
+| # downloads        | 217032 |
 | # stars            | 2 |
 
 ## Links

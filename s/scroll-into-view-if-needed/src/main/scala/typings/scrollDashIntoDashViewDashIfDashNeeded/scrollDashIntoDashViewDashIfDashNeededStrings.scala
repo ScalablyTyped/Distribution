@@ -24,9 +24,6 @@ object scrollDashIntoDashViewDashIfDashNeededStrings {
   sealed trait `if-needed` extends ScrollMode
   
   @js.native
-  sealed trait instant extends ScrollBehavior
-  
-  @js.native
   sealed trait nearest extends ScrollLogicalPosition
   
   @js.native
@@ -45,8 +42,6 @@ object scrollDashIntoDashViewDashIfDashNeededStrings {
   def end: end = "end".asInstanceOf[end]
   @scala.inline
   def `if-needed`: `if-needed` = "if-needed".asInstanceOf[`if-needed`]
-  @scala.inline
-  def instant: instant = "instant".asInstanceOf[instant]
   @scala.inline
   def nearest: nearest = "nearest".asInstanceOf[nearest]
   @scala.inline

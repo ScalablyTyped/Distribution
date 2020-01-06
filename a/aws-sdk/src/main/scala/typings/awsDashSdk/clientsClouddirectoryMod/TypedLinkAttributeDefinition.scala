@@ -4,31 +4,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TypedLinkAttributeDefinition extends js.Object {
   /**
     * The default value of the attribute (if configured).
     */
-  var DefaultValue: js.UndefOr[TypedAttributeValue] = js.undefined
+  var DefaultValue: js.UndefOr[TypedAttributeValue] = js.native
   /**
     * Whether the attribute is mutable or not.
     */
-  var IsImmutable: js.UndefOr[Bool] = js.undefined
+  var IsImmutable: js.UndefOr[Bool] = js.native
   /**
     * The unique name of the typed link attribute.
     */
-  var Name: AttributeName
+  var Name: AttributeName = js.native
   /**
     * The required behavior of the TypedLinkAttributeDefinition.
     */
-  var RequiredBehavior: RequiredAttributeBehavior
+  var RequiredBehavior: RequiredAttributeBehavior = js.native
   /**
     * Validation rules that are attached to the attribute definition.
     */
-  var Rules: js.UndefOr[RuleMap] = js.undefined
+  var Rules: js.UndefOr[RuleMap] = js.native
   /**
     * The type of the attribute.
     */
-  var Type: FacetAttributeType
+  var Type: FacetAttributeType = js.native
 }
 
 object TypedLinkAttributeDefinition {
@@ -41,10 +42,10 @@ object TypedLinkAttributeDefinition {
     IsImmutable: js.UndefOr[Boolean] = js.undefined,
     Rules: RuleMap = null
   ): TypedLinkAttributeDefinition = {
-    val __obj = js.Dynamic.literal(Name = Name, RequiredBehavior = RequiredBehavior.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
-    if (DefaultValue != null) __obj.updateDynamic("DefaultValue")(DefaultValue)
-    if (!js.isUndefined(IsImmutable)) __obj.updateDynamic("IsImmutable")(IsImmutable)
-    if (Rules != null) __obj.updateDynamic("Rules")(Rules)
+    val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], RequiredBehavior = RequiredBehavior.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
+    if (DefaultValue != null) __obj.updateDynamic("DefaultValue")(DefaultValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsImmutable)) __obj.updateDynamic("IsImmutable")(IsImmutable.asInstanceOf[js.Any])
+    if (Rules != null) __obj.updateDynamic("Rules")(Rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypedLinkAttributeDefinition]
   }
 }

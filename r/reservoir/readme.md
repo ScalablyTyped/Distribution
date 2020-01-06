@@ -12,7 +12,7 @@ Fast random sampling using reservoir sampling
 | Keywords           | reservoir, sampling, iterator |
 | # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 15621 |
+| # downloads        | 16840 |
 | # stars            | 0 |
 
 ## Links

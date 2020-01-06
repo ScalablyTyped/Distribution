@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UpdateEnvironmentRequest extends js.Object {
   /**
     * Any new or replacement description for the environment.
     */
-  var description: js.UndefOr[EnvironmentDescription] = js.undefined
+  var description: js.UndefOr[EnvironmentDescription] = js.native
   /**
     * The ID of the environment to change settings.
     */
-  var environmentId: EnvironmentId
+  var environmentId: EnvironmentId = js.native
   /**
     * A replacement name for the environment.
     */
-  var name: js.UndefOr[EnvironmentName] = js.undefined
+  var name: js.UndefOr[EnvironmentName] = js.native
 }
 
 object UpdateEnvironmentRequest {
@@ -26,9 +27,9 @@ object UpdateEnvironmentRequest {
     description: EnvironmentDescription = null,
     name: EnvironmentName = null
   ): UpdateEnvironmentRequest = {
-    val __obj = js.Dynamic.literal(environmentId = environmentId)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (name != null) __obj.updateDynamic("name")(name)
+    val __obj = js.Dynamic.literal(environmentId = environmentId.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateEnvironmentRequest]
   }
 }

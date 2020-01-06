@@ -10,9 +10,9 @@ Strip redundant indentation and indent the string
 | ------------------ | :-------------: |
 | Full name          | redent |
 | Keywords           | string, strip, trim, indent, indentation, add, reindent, normalize, remove, whitespace, space |
-| # releases         | 0 |
-| # dependents       | 44 |
-| # downloads        | 259603333 |
+| # releases         | 2 |
+| # dependents       | 57 |
+| # downloads        | 367280299 |
 | # stars            | 0 |
 
 ## Links

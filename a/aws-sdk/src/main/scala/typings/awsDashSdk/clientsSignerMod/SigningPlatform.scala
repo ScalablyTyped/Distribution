@@ -4,39 +4,37 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SigningPlatform extends js.Object {
   /**
-    * The category of an AWS Signer platform.
+    * The category of a code signing platform.
     */
-  var category: js.UndefOr[Category] = js.undefined
+  var category: js.UndefOr[Category] = js.native
   /**
-    * The display name of an AWS Signer platform.
+    * The display name of a code signing platform.
     */
-  var displayName: js.UndefOr[String] = js.undefined
+  var displayName: js.UndefOr[String] = js.native
   /**
-    * The maximum size (in MB) of code that can be signed by a AWS Signer platform.
+    * The maximum size (in MB) of code that can be signed by a code signing platform.
     */
-  var maxSizeInMB: js.UndefOr[MaxSizeInMB] = js.undefined
+  var maxSizeInMB: js.UndefOr[MaxSizeInMB] = js.native
   /**
-    * Any partner entities linked to an AWS Signer platform.
+    * Any partner entities linked to a code signing platform.
     */
-  var partner: js.UndefOr[String] = js.undefined
+  var partner: js.UndefOr[String] = js.native
   /**
-    * The ID of an AWS Signer platform.
+    * The ID of a code signing; platform.
     */
-  var platformId: js.UndefOr[String] = js.undefined
+  var platformId: js.UndefOr[String] = js.native
   /**
-    * The configuration of an AWS Signer platform. This includes the designated hash algorithm and encryption algorithm of a signing platform.
+    * The configuration of a code signing platform. This includes the designated hash algorithm and encryption algorithm of a signing platform.
     */
-  var signingConfiguration: js.UndefOr[SigningConfiguration] = js.undefined
+  var signingConfiguration: js.UndefOr[SigningConfiguration] = js.native
+  var signingImageFormat: js.UndefOr[SigningImageFormat] = js.native
   /**
-    * The signing image format that is used by an AWS Signer platform.
+    * The types of targets that can be signed by a code signing platform.
     */
-  var signingImageFormat: js.UndefOr[SigningImageFormat] = js.undefined
-  /**
-    * The types of targets that can be signed by an AWS Signer platform.
-    */
-  var target: js.UndefOr[String] = js.undefined
+  var target: js.UndefOr[String] = js.native
 }
 
 object SigningPlatform {
@@ -53,13 +51,13 @@ object SigningPlatform {
   ): SigningPlatform = {
     val __obj = js.Dynamic.literal()
     if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
     if (maxSizeInMB != null) __obj.updateDynamic("maxSizeInMB")(maxSizeInMB.asInstanceOf[js.Any])
-    if (partner != null) __obj.updateDynamic("partner")(partner)
-    if (platformId != null) __obj.updateDynamic("platformId")(platformId)
-    if (signingConfiguration != null) __obj.updateDynamic("signingConfiguration")(signingConfiguration)
-    if (signingImageFormat != null) __obj.updateDynamic("signingImageFormat")(signingImageFormat)
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (partner != null) __obj.updateDynamic("partner")(partner.asInstanceOf[js.Any])
+    if (platformId != null) __obj.updateDynamic("platformId")(platformId.asInstanceOf[js.Any])
+    if (signingConfiguration != null) __obj.updateDynamic("signingConfiguration")(signingConfiguration.asInstanceOf[js.Any])
+    if (signingImageFormat != null) __obj.updateDynamic("signingImageFormat")(signingImageFormat.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[SigningPlatform]
   }
 }

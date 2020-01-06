@@ -11,8 +11,8 @@ The default modules based resolver for Ember CLI.
 | Full name          | ember-resolver |
 | Keywords           | ember-addon |
 | # releases         | 16 |
-| # dependents       | 4 |
-| # downloads        | 4858217 |
+| # dependents       | 5 |
+| # downloads        | 5511788 |
 | # stars            | 0 |
 
 ## Links

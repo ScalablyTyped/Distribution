@@ -9,37 +9,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PolicyAttachmentState extends js.Object {
   /**
     * The group(s) the policy should be applied to
     */
-  val groups: js.UndefOr[Input[js.Array[Input[Group]]]] = js.undefined
+  val groups: js.UndefOr[Input[js.Array[Input[String | Group]]]] = js.native
   /**
     * The name of the attachment. This cannot be an empty string.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * The ARN of the policy you want to apply
     */
-  val policyArn: js.UndefOr[Input[ARN]] = js.undefined
+  val policyArn: js.UndefOr[Input[ARN]] = js.native
   /**
     * The role(s) the policy should be applied to
     */
-  val roles: js.UndefOr[Input[js.Array[Input[Role]]]] = js.undefined
+  val roles: js.UndefOr[Input[js.Array[Input[String | Role]]]] = js.native
   /**
     * The user(s) the policy should be applied to
     */
-  val users: js.UndefOr[Input[js.Array[Input[User]]]] = js.undefined
+  val users: js.UndefOr[Input[js.Array[Input[String | User]]]] = js.native
 }
 
 object PolicyAttachmentState {
   @scala.inline
   def apply(
-    groups: Input[js.Array[Input[Group]]] = null,
+    groups: Input[js.Array[Input[String | Group]]] = null,
     name: Input[String] = null,
     policyArn: Input[ARN] = null,
-    roles: Input[js.Array[Input[Role]]] = null,
-    users: Input[js.Array[Input[User]]] = null
+    roles: Input[js.Array[Input[String | Role]]] = null,
+    users: Input[js.Array[Input[String | User]]] = null
   ): PolicyAttachmentState = {
     val __obj = js.Dynamic.literal()
     if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])

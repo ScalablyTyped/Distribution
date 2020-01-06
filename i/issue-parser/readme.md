@@ -4,15 +4,15 @@
 Typings are for version 3.0
 
 ## Library description:
-Parser for Github, GitLab, Bitbucket and Waffle issues actions, references and mentions
+Parser for Github, GitLab and Bitbucket issues actions, references and mentions
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | issue-parser |
-| Keywords           | bitbucket, close, duplicate, fix, github, gitlab, issues, mentions, parser, pr, pull-request, references, resolve, waffle |
-| # releases         | 13 |
-| # dependents       | 3 |
-| # downloads        | 2435499 |
+| Keywords           | bitbucket, close, duplicate, fix, github, gitlab, issues, mentions, parser, pr, pull-request, references, resolve |
+| # releases         | 15 |
+| # dependents       | 6 |
+| # downloads        | 5250336 |
 | # stars            | 0 |
 
 ## Links

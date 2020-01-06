@@ -11,8 +11,8 @@ Polyfill for Node core `events.once
 | Full name          | events.once |
 | Keywords           | events, once, promise, polyfill, EventEmitter, async, async/await, await, node core, browserify, webpack |
 | # releases         | 8 |
-| # dependents       | 5 |
-| # downloads        | 7774 |
+| # dependents       | 4 |
+| # downloads        | 9310 |
 | # stars            | 0 |
 
 ## Links

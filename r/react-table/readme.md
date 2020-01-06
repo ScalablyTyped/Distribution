@@ -4,21 +4,21 @@
 Typings are for version 7.0
 
 ## Library description:
-A fast, lightweight, opinionated table and datagrid built on React
+Hooks for building lightweight, fast and extendable datagrids for React
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-table |
 | Keywords           | react, table, react-table, datagrid |
-| # releases         | 40 |
-| # dependents       | 156 |
-| # downloads        | 6246081 |
+| # releases         | 97 |
+| # dependents       | 251 |
+| # downloads        | 12455853 |
 | # stars            | 18 |
 
 ## Links
-- [Homepage](https://github.com/react-tools/react-table#readme)
-- [Bugs](https://github.com/react-tools/react-table/issues)
-- [Repository](https://github.com/react-tools/react-table)
+- [Homepage](https://github.com/tannerlinsley/react-table#readme)
+- [Bugs](https://github.com/tannerlinsley/react-table/issues)
+- [Repository](https://github.com/tannerlinsley/react-table)
 - [Npm](https://www.npmjs.com/package/react-table)
     
 

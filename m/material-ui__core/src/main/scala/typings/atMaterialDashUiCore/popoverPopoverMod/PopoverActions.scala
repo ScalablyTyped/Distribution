@@ -4,8 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PopoverActions extends js.Object {
-  def updatePosition(): Unit
+  def updatePosition(): Unit = js.native
 }
 
 object PopoverActions {

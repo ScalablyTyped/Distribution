@@ -12,7 +12,7 @@ rtree library for javascript
 | Keywords           | rtree |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 22641 |
+| # downloads        | 39672 |
 | # stars            | 2 |
 
 ## Links

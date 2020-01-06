@@ -10,9 +10,9 @@ Minified, unbuilt version of the ArcGIS API for JavaScript
 | ------------------ | :-------------: |
 | Full name          | arcgis-js-api |
 | Keywords           | esrijs, esri, arcgis, gis |
-| # releases         | 20 |
+| # releases         | 37 |
 | # dependents       | 9 |
-| # downloads        | 16360 |
+| # downloads        | 31021 |
 | # stars            | 2 |
 
 ## Links

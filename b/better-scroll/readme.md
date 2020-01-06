@@ -10,9 +10,9 @@ inspired by iscroll, and it has a better scroll perfermance
 | ------------------ | :-------------: |
 | Full name          | better-scroll |
 | Keywords           | scroll, iscroll, javascript, ios |
-| # releases         | 67 |
-| # dependents       | 204 |
-| # downloads        | 302701 |
+| # releases         | 49 |
+| # dependents       | 308 |
+| # downloads        | 499203 |
 | # stars            | 22 |
 
 ## Links

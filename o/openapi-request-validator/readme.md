@@ -10,9 +10,9 @@ Validate request properties against an OpenAPI spec.
 | ------------------ | :-------------: |
 | Full name          | openapi-request-validator |
 | Keywords           | openapi, validator, jsonschema |
-| # releases         | 19 |
+| # releases         | 23 |
 | # dependents       | 4 |
-| # downloads        | 355498 |
+| # downloads        | 449737 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ AthenaJS is a framework for building 2D games using HTML5
 | ------------------ | :-------------: |
 | Full name          | athenajs |
 | Keywords           | html5, canvas, spritesheet, game, map, tile |
-| # releases         | 7 |
+| # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 867 |
+| # downloads        | 900 |
 | # stars            | 0 |
 
 ## Links

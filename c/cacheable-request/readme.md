@@ -10,9 +10,9 @@ Wrap native HTTP requests with RFC compliant cache support
 | ------------------ | :-------------: |
 | Full name          | cacheable-request |
 | Keywords           | HTTP, HTTPS, cache, caching, layer, cacheable, RFC 7234, RFC, 7234, compliant |
-| # releases         | 30 |
-| # dependents       | 5 |
-| # downloads        | 39120589 |
+| # releases         | 11 |
+| # dependents       | 9 |
+| # downloads        | 91011991 |
 | # stars            | 1 |
 
 ## Links

@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClassicLinkInstance extends js.Object {
   /**
     * A list of security groups.
     */
-  var Groups: js.UndefOr[GroupIdentifierList] = js.undefined
+  var Groups: js.UndefOr[GroupIdentifierList] = js.native
   /**
     * The ID of the instance.
     */
-  var InstanceId: js.UndefOr[String] = js.undefined
+  var InstanceId: js.UndefOr[String] = js.native
   /**
     * Any tags assigned to the instance.
     */
-  var Tags: js.UndefOr[TagList] = js.undefined
+  var Tags: js.UndefOr[TagList] = js.native
   /**
     * The ID of the VPC.
     */
-  var VpcId: js.UndefOr[String] = js.undefined
+  var VpcId: js.UndefOr[String] = js.native
 }
 
 object ClassicLinkInstance {
@@ -32,10 +33,10 @@ object ClassicLinkInstance {
     VpcId: String = null
   ): ClassicLinkInstance = {
     val __obj = js.Dynamic.literal()
-    if (Groups != null) __obj.updateDynamic("Groups")(Groups)
-    if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId)
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
-    if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId)
+    if (Groups != null) __obj.updateDynamic("Groups")(Groups.asInstanceOf[js.Any])
+    if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId.asInstanceOf[js.Any])
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
+    if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassicLinkInstance]
   }
 }

@@ -6,34 +6,35 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ConfigurationTemplateState extends js.Object {
   /**
     * name of the application to associate with this configuration template
     */
-  val application: js.UndefOr[Input[String]] = js.undefined
+  val application: js.UndefOr[Input[String]] = js.native
   /**
     * Short description of the Template
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of the environment used with this configuration template
     */
-  val environmentId: js.UndefOr[Input[String]] = js.undefined
+  val environmentId: js.UndefOr[Input[String]] = js.native
   /**
     * A unique name for this Template.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * Option settings to configure the new Environment. These
     * override specific values that are set as defaults. The format is detailed
     * below in Option Settings
     */
-  val settings: js.UndefOr[Input[js.Array[Input[ConfigurationTemplateSetting]]]] = js.undefined
+  val settings: js.UndefOr[Input[js.Array[Input[ConfigurationTemplateSetting]]]] = js.native
   /**
     * A solution stack to base your Template
     * off of. Example stacks can be found in the [Amazon API documentation][1]
     */
-  val solutionStackName: js.UndefOr[Input[String]] = js.undefined
+  val solutionStackName: js.UndefOr[Input[String]] = js.native
 }
 
 object ConfigurationTemplateState {

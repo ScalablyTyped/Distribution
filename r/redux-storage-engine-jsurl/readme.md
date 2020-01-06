@@ -12,7 +12,7 @@ jsurl engine for redux-store. Store your state in the url hash.
 | Keywords           | redux, redux-storage, redux-storage-engine, jsurl |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 354 |
+| # downloads        | 543 |
 | # stars            | 0 |
 
 ## Links

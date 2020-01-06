@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UpdateShardCountOutput extends js.Object {
   /**
     * The current number of shards.
     */
-  var CurrentShardCount: js.UndefOr[PositiveIntegerObject] = js.undefined
+  var CurrentShardCount: js.UndefOr[PositiveIntegerObject] = js.native
   /**
     * The name of the stream.
     */
-  var StreamName: js.UndefOr[typings.awsDashSdk.clientsKinesisMod.StreamName] = js.undefined
+  var StreamName: js.UndefOr[typings.awsDashSdk.clientsKinesisMod.StreamName] = js.native
   /**
     * The updated number of shards.
     */
-  var TargetShardCount: js.UndefOr[PositiveIntegerObject] = js.undefined
+  var TargetShardCount: js.UndefOr[PositiveIntegerObject] = js.native
 }
 
 object UpdateShardCountOutput {
@@ -28,7 +29,7 @@ object UpdateShardCountOutput {
   ): UpdateShardCountOutput = {
     val __obj = js.Dynamic.literal()
     if (CurrentShardCount != null) __obj.updateDynamic("CurrentShardCount")(CurrentShardCount.asInstanceOf[js.Any])
-    if (StreamName != null) __obj.updateDynamic("StreamName")(StreamName)
+    if (StreamName != null) __obj.updateDynamic("StreamName")(StreamName.asInstanceOf[js.Any])
     if (TargetShardCount != null) __obj.updateDynamic("TargetShardCount")(TargetShardCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateShardCountOutput]
   }

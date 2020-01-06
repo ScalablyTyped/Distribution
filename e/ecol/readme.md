@@ -10,9 +10,9 @@ Event Collections
 | ------------------ | :-------------: |
 | Full name          | ecol |
 | Keywords           | STL, TSTL, standard template library, event, collection, iterator, VectorCollection, ListCollection, DequeCollection, TreeSetCollection, TreeMultiSetCollection, HashSetCollection, HashMultiSetCollection, TreeMapCollection, TreeMultiMapCollection, HashMapCollection, HashMultiMapCollection |
-| # releases         | 11 |
+| # releases         | 13 |
 | # dependents       | 1 |
-| # downloads        | 4073 |
+| # downloads        | 3999 |
 | # stars            | 0 |
 
 ## Links

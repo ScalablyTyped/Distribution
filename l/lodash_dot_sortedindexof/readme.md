@@ -12,7 +12,7 @@ The lodash method `_.sortedIndexOf` exported as a module.
 | Keywords           | lodash-modularized, sortedindexof |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 28313 |
+| # downloads        | 25945 |
 | # stars            | 0 |
 
 ## Links

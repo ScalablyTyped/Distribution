@@ -10,9 +10,9 @@ JavaScript HLS client using MediaSourceExtension
 | ------------------ | :-------------: |
 | Full name          | hls.js |
 | Keywords           | - |
-| # releases         | 166 |
-| # dependents       | 68 |
-| # downloads        | 1322491 |
+| # releases         | 214 |
+| # dependents       | 92 |
+| # downloads        | 2459937 |
 | # stars            | 12 |
 
 ## Links

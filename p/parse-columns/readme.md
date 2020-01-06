@@ -4,19 +4,19 @@
 Typings are for version 2.0.0
 
 ## Library description:
-Parse text columns, like the output of unix commands
+Parse text columns, like the output of Unix commands
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | parse-columns |
-| Keywords           | parse, parser, columns, column, col, row, text, string, str, unix, command, cmd, output, csv, shell, sh, term, table |
-| # releases         | 1 |
-| # dependents       | 5 |
-| # downloads        | 2592 |
+| Keywords           | parse, parser, columns, column, row, text, string, unix, command, output, csv, shell, sh, term, table |
+| # releases         | 2 |
+| # dependents       | 8 |
+| # downloads        | 3439 |
 | # stars            | 3 |
 
 ## Links
-- [Homepage](https://github.com/sindresorhus/parse-columns)
+- [Homepage](https://github.com/sindresorhus/parse-columns#readme)
 - [Bugs](https://github.com/sindresorhus/parse-columns/issues)
 - [Repository](https://github.com/sindresorhus/parse-columns)
 - [Npm](https://www.npmjs.com/package/parse-columns)

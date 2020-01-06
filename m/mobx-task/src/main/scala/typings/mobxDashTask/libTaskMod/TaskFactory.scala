@@ -32,14 +32,14 @@ trait TaskFactory extends TaskCreator[String] {
     * Creates a task in the `rejected` state.
     */
   @JSName("rejected")
-  def rejected_state(options: Pick[TaskOptions[_, _], Exclude[String, state]]): PropertyDecorator = js.native
+  def rejected_state(options: Pick[TaskOptions[_, _], Exclude[String, state]]): MethodDecorator = js.native
   @JSName("rejected")
   def rejected_state[A /* <: js.Array[_] */, R](func: js.Function1[/* args */ A, R], options: Pick[TaskOptions[A, R], Exclude[String, state]]): Task[A, R] = js.native
   /**
     * Creates a task in the `rejected` state.
     */
   @JSName("rejected")
-  def rejected_state_MethodDecorator(options: Pick[TaskOptions[_, _], Exclude[String, state]]): MethodDecorator = js.native
+  def rejected_state_PropertyDecorator(options: Pick[TaskOptions[_, _], Exclude[String, state]]): PropertyDecorator = js.native
   /**
     * Calls the actual task function.
     */
@@ -51,13 +51,13 @@ trait TaskFactory extends TaskCreator[String] {
     * Creates a task in the `resolved` state.
     */
   @JSName("resolved")
-  def resolved_state(options: Pick[TaskOptions[_, _], Exclude[String, state]]): PropertyDecorator = js.native
+  def resolved_state(options: Pick[TaskOptions[_, _], Exclude[String, state]]): MethodDecorator = js.native
   @JSName("resolved")
   def resolved_state[A /* <: js.Array[_] */, R](func: js.Function1[/* args */ A, R], options: Pick[TaskOptions[A, R], Exclude[String, state]]): Task[A, R] = js.native
   /**
     * Creates a task in the `resolved` state.
     */
   @JSName("resolved")
-  def resolved_state_MethodDecorator(options: Pick[TaskOptions[_, _], Exclude[String, state]]): MethodDecorator = js.native
+  def resolved_state_PropertyDecorator(options: Pick[TaskOptions[_, _], Exclude[String, state]]): PropertyDecorator = js.native
 }
 

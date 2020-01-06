@@ -1,9 +1,9 @@
 package typings.expressDashWechatDashAccess.expressDashWechatDashAccessMod
 
 import typings.express.expressMod.NextFunction
-import typings.express.expressMod.Response
 import typings.node.NodeJS.EventEmitter
 import typings.node.httpMod.ServerResponse
+import typings.std.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

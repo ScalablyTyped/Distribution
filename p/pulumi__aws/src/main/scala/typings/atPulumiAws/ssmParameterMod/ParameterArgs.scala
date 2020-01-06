@@ -7,47 +7,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ParameterArgs extends js.Object {
   /**
     * A regular expression used to validate the parameter value.
     */
-  val allowedPattern: js.UndefOr[Input[String]] = js.undefined
+  val allowedPattern: js.UndefOr[Input[String]] = js.native
   /**
     * The ARN of the parameter.
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * The description of the parameter.
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * The KMS key id or arn for encrypting a SecureString.
     */
-  val keyId: js.UndefOr[Input[String]] = js.undefined
+  val keyId: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the parameter. If the name contains a path (e.g. any forward slashes (`/`)), it must be fully qualified with a leading forward slash (`/`). For additional requirements and constraints, see the [AWS SSM User Guide](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-parameter-name-constraints.html).
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * Overwrite an existing parameter. If not specified, will default to `false` if the resource has not been created by this provider to avoid overwrite of existing resource and will default to `true` otherwise (lifecycle rules should then be used to manage the update behavior).
     */
-  val overwrite: js.UndefOr[Input[Boolean]] = js.undefined
+  val overwrite: js.UndefOr[Input[Boolean]] = js.native
   /**
     * A mapping of tags to assign to the object.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * The tier of the parameter. If not specified, will default to `Standard`. Valid tiers are `Standard` and `Advanced`. For more information on parameter tiers, see the [AWS SSM Parameter tier comparison and guide](https://docs.aws.amazon.com/systems-manager/latest/userguide/parameter-store-advanced-parameters.html).
     */
-  val tier: js.UndefOr[Input[String]] = js.undefined
+  val tier: js.UndefOr[Input[String]] = js.native
   /**
     * The type of the parameter. Valid types are `String`, `StringList` and `SecureString`.
     */
-  val `type`: Input[ParameterType]
+  val `type`: Input[ParameterType] = js.native
   /**
     * The value of the parameter.
     */
-  val value: Input[String]
+  val value: Input[String] = js.native
 }
 
 object ParameterArgs {

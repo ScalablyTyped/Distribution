@@ -10,9 +10,9 @@ Don't fall over when your Node.JS server is too busy. Now without native depende
 | ------------------ | :-------------: |
 | Full name          | toobusy-js |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 55 |
-| # downloads        | 686009 |
+| # releases         | 0 |
+| # dependents       | 53 |
+| # downloads        | 858970 |
 | # stars            | 17 |
 
 ## Links

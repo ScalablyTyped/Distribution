@@ -10,9 +10,9 @@ Typings are for version 10.0.20
 | ------------------ | :-------------: |
 | Full name          | @emotion/core |
 | Keywords           | - |
-| # releases         | 57 |
-| # dependents       | 288 |
-| # downloads        | 14081669 |
+| # releases         | 76 |
+| # dependents       | 1329 |
+| # downloads        | 51469819 |
 | # stars            | 0 |
 
 ## Links

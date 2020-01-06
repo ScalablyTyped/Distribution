@@ -125,16 +125,16 @@ package object clientsWorkdocsMod {
   type LimitType = Double
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.en
-    - typings.awsDashSdk.awsDashSdkStrings.fr
+    - typings.awsDashSdk.awsDashSdkStrings.fr_
     - typings.awsDashSdk.awsDashSdkStrings.ko
-    - typings.awsDashSdk.awsDashSdkStrings.de
-    - typings.awsDashSdk.awsDashSdkStrings.es
+    - typings.awsDashSdk.awsDashSdkStrings.de_
+    - typings.awsDashSdk.awsDashSdkStrings.es_
     - typings.awsDashSdk.awsDashSdkStrings.ja
-    - typings.awsDashSdk.awsDashSdkStrings.ru
+    - typings.awsDashSdk.awsDashSdkStrings.ru_
     - typings.awsDashSdk.awsDashSdkStrings.zh_CN
     - typings.awsDashSdk.awsDashSdkStrings.zh_TW
     - typings.awsDashSdk.awsDashSdkStrings.pt_BR
-    - typings.awsDashSdk.awsDashSdkStrings.default
+    - typings.awsDashSdk.awsDashSdkStrings.default_
     - java.lang.String
   */
   type LocaleType = _LocaleType | String
@@ -264,7 +264,7 @@ package object clientsWorkdocsMod {
   type UsernameType = String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2016-05-01`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

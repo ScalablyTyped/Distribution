@@ -4,31 +4,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ProvisioningArtifactParameter extends js.Object {
   /**
     * The default value.
     */
-  var DefaultValue: js.UndefOr[typings.awsDashSdk.clientsServicecatalogMod.DefaultValue] = js.undefined
+  var DefaultValue: js.UndefOr[typings.awsDashSdk.clientsServicecatalogMod.DefaultValue] = js.native
   /**
     * The description of the parameter.
     */
-  var Description: js.UndefOr[typings.awsDashSdk.clientsServicecatalogMod.Description] = js.undefined
+  var Description: js.UndefOr[typings.awsDashSdk.clientsServicecatalogMod.Description] = js.native
   /**
     * If this value is true, the value for this parameter is obfuscated from view when the parameter is retrieved. This parameter is used to hide sensitive information.
     */
-  var IsNoEcho: js.UndefOr[NoEcho] = js.undefined
+  var IsNoEcho: js.UndefOr[NoEcho] = js.native
   /**
     * Constraints that the administrator has put on a parameter.
     */
-  var ParameterConstraints: js.UndefOr[typings.awsDashSdk.clientsServicecatalogMod.ParameterConstraints] = js.undefined
+  var ParameterConstraints: js.UndefOr[typings.awsDashSdk.clientsServicecatalogMod.ParameterConstraints] = js.native
   /**
     * The parameter key.
     */
-  var ParameterKey: js.UndefOr[typings.awsDashSdk.clientsServicecatalogMod.ParameterKey] = js.undefined
+  var ParameterKey: js.UndefOr[typings.awsDashSdk.clientsServicecatalogMod.ParameterKey] = js.native
   /**
     * The parameter type.
     */
-  var ParameterType: js.UndefOr[typings.awsDashSdk.clientsServicecatalogMod.ParameterType] = js.undefined
+  var ParameterType: js.UndefOr[typings.awsDashSdk.clientsServicecatalogMod.ParameterType] = js.native
 }
 
 object ProvisioningArtifactParameter {
@@ -42,12 +43,12 @@ object ProvisioningArtifactParameter {
     ParameterType: ParameterType = null
   ): ProvisioningArtifactParameter = {
     val __obj = js.Dynamic.literal()
-    if (DefaultValue != null) __obj.updateDynamic("DefaultValue")(DefaultValue)
-    if (Description != null) __obj.updateDynamic("Description")(Description)
-    if (!js.isUndefined(IsNoEcho)) __obj.updateDynamic("IsNoEcho")(IsNoEcho)
-    if (ParameterConstraints != null) __obj.updateDynamic("ParameterConstraints")(ParameterConstraints)
-    if (ParameterKey != null) __obj.updateDynamic("ParameterKey")(ParameterKey)
-    if (ParameterType != null) __obj.updateDynamic("ParameterType")(ParameterType)
+    if (DefaultValue != null) __obj.updateDynamic("DefaultValue")(DefaultValue.asInstanceOf[js.Any])
+    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsNoEcho)) __obj.updateDynamic("IsNoEcho")(IsNoEcho.asInstanceOf[js.Any])
+    if (ParameterConstraints != null) __obj.updateDynamic("ParameterConstraints")(ParameterConstraints.asInstanceOf[js.Any])
+    if (ParameterKey != null) __obj.updateDynamic("ParameterKey")(ParameterKey.asInstanceOf[js.Any])
+    if (ParameterType != null) __obj.updateDynamic("ParameterType")(ParameterType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProvisioningArtifactParameter]
   }
 }

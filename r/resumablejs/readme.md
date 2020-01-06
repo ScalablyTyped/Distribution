@@ -10,9 +10,9 @@ A JavaScript library for providing multiple simultaneous, stable, fault-tolerant
 | ------------------ | :-------------: |
 | Full name          | resumablejs |
 | Keywords           | html5, file, upload |
-| # releases         | 2 |
-| # dependents       | 13 |
-| # downloads        | 344437 |
+| # releases         | 1 |
+| # dependents       | 16 |
+| # downloads        | 395012 |
 | # stars            | 2 |
 
 ## Links

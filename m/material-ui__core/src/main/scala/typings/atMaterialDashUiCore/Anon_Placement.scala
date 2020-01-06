@@ -6,9 +6,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Anon_Placement extends js.Object {
-  var TransitionProps: js.UndefOr[typings.atMaterialDashUiCore.transitionsTransitionMod.TransitionProps] = js.undefined
-  var placement: PopperPlacementType
+  var TransitionProps: js.UndefOr[typings.atMaterialDashUiCore.transitionsTransitionMod.TransitionProps] = js.native
+  var placement: PopperPlacementType = js.native
 }
 
 object Anon_Placement {

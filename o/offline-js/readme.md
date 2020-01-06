@@ -10,9 +10,9 @@ Automatically detect when a browser is offline
 | ------------------ | :-------------: |
 | Full name          | offline-js |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 9 |
-| # downloads        | 261681 |
+| # releases         | 1 |
+| # dependents       | 10 |
+| # downloads        | 372056 |
 | # stars            | 4 |
 
 ## Links

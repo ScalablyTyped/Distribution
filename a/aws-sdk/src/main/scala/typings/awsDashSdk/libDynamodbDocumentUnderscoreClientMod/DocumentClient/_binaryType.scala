@@ -6,3 +6,5 @@ import scala.scalajs.js.annotation._
 
 trait _binaryType extends js.Object
 
+object _binaryType
+

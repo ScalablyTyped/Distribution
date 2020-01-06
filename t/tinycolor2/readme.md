@@ -11,8 +11,8 @@ Fast Color Parsing and Manipulation
 | Full name          | tinycolor2 |
 | Keywords           | color, parser, tinycolor |
 | # releases         | 1 |
-| # dependents       | 686 |
-| # downloads        | 35004400 |
+| # dependents       | 891 |
+| # downloads        | 66076066 |
 | # stars            | 13 |
 
 ## Links

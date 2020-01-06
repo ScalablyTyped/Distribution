@@ -14,12 +14,13 @@ package object clientsCognitoidentityMod {
   type AccountId = String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.AuthenticatedRole
-    - typings.awsDashSdk.awsDashSdkStrings.Deny
+    - typings.awsDashSdk.awsDashSdkStrings.Deny_
     - java.lang.String
   */
   type AmbiguousRoleResolutionType = _AmbiguousRoleResolutionType | String
   type ClaimName = String
   type ClaimValue = String
+  type ClassicFlow = Boolean
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
   type CognitoIdentityProviderClientId = String
   type CognitoIdentityProviderList = js.Array[CognitoIdentityProvider]
@@ -52,8 +53,8 @@ package object clientsCognitoidentityMod {
   type LoginsList = js.Array[IdentityProviderName]
   type LoginsMap = StringDictionary[IdentityProviderToken]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Equals
-    - typings.awsDashSdk.awsDashSdkStrings.Contains
+    - typings.awsDashSdk.awsDashSdkStrings.Equals_
+    - typings.awsDashSdk.awsDashSdkStrings.Contains_
     - typings.awsDashSdk.awsDashSdkStrings.StartsWith
     - typings.awsDashSdk.awsDashSdkStrings.NotEqual
     - java.lang.String
@@ -66,7 +67,7 @@ package object clientsCognitoidentityMod {
   type QueryLimit = Double
   type RoleMappingMap = StringDictionary[RoleMapping]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Token
+    - typings.awsDashSdk.awsDashSdkStrings.Token_
     - typings.awsDashSdk.awsDashSdkStrings.Rules
     - java.lang.String
   */
@@ -82,7 +83,7 @@ package object clientsCognitoidentityMod {
   type UnprocessedIdentityIdList = js.Array[UnprocessedIdentityId]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2014-06-30`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

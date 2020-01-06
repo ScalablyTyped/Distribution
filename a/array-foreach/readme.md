@@ -11,8 +11,8 @@ Array#forEach ponyfill for older browsers
 | Full name          | array-foreach |
 | Keywords           | array, browser, each, es5, forEach, ie6, ie7, ie8, polyfill, ponyfill, shim |
 | # releases         | 0 |
-| # dependents       | 10 |
-| # downloads        | 200280 |
+| # dependents       | 9 |
+| # downloads        | 167323 |
 | # stars            | 0 |
 
 ## Links

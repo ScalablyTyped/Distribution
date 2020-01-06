@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DateConstructor
   extends Instantiable0[Date]
+     with Instantiable1[(/* value */ Double) | (/* value */ String), Date]
      with Instantiable2[/* year */ Double, /* month */ Double, Date]
      with Instantiable3[/* year */ Double, /* month */ Double, /* date */ Double, Date]
      with Instantiable4[/* year */ Double, /* month */ Double, /* date */ Double, /* hours */ Double, Date]
@@ -44,8 +45,7 @@ trait DateConstructor
       /* seconds */ Double, 
       /* ms */ Double, 
       Date
-    ]
-     with Instantiable1[(/* value */ Double) | (/* value */ String), Date] {
+    ] {
   def apply(): String = js.native
   /**
     * Returns the number of milliseconds between midnight, January 1, 1970 Universal Coordinated Time (UTC) (or GMT) and the specified date.

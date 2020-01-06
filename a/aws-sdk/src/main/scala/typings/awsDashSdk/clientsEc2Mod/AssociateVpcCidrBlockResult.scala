@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AssociateVpcCidrBlockResult extends js.Object {
   /**
     * Information about the IPv4 CIDR block association.
     */
-  var CidrBlockAssociation: js.UndefOr[VpcCidrBlockAssociation] = js.undefined
+  var CidrBlockAssociation: js.UndefOr[VpcCidrBlockAssociation] = js.native
   /**
     * Information about the IPv6 CIDR block association.
     */
-  var Ipv6CidrBlockAssociation: js.UndefOr[VpcIpv6CidrBlockAssociation] = js.undefined
+  var Ipv6CidrBlockAssociation: js.UndefOr[VpcIpv6CidrBlockAssociation] = js.native
   /**
     * The ID of the VPC.
     */
-  var VpcId: js.UndefOr[String] = js.undefined
+  var VpcId: js.UndefOr[String] = js.native
 }
 
 object AssociateVpcCidrBlockResult {
@@ -27,9 +28,9 @@ object AssociateVpcCidrBlockResult {
     VpcId: String = null
   ): AssociateVpcCidrBlockResult = {
     val __obj = js.Dynamic.literal()
-    if (CidrBlockAssociation != null) __obj.updateDynamic("CidrBlockAssociation")(CidrBlockAssociation)
-    if (Ipv6CidrBlockAssociation != null) __obj.updateDynamic("Ipv6CidrBlockAssociation")(Ipv6CidrBlockAssociation)
-    if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId)
+    if (CidrBlockAssociation != null) __obj.updateDynamic("CidrBlockAssociation")(CidrBlockAssociation.asInstanceOf[js.Any])
+    if (Ipv6CidrBlockAssociation != null) __obj.updateDynamic("Ipv6CidrBlockAssociation")(Ipv6CidrBlockAssociation.asInstanceOf[js.Any])
+    if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateVpcCidrBlockResult]
   }
 }

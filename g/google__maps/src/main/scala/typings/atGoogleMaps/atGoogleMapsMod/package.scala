@@ -12,6 +12,11 @@ package object atGoogleMapsMod {
     /* callback */ js.UndefOr[ResponseCallback[Response]], 
     RequestHandle[Response]
   ]
+  type GoogleMapsClientEndpointWithPromise[Request, Response] = js.Function2[
+    /* query */ Request, 
+    /* callback */ js.UndefOr[ResponseCallback[Response]], 
+    RequestHandleWithPromise[Response]
+  ]
   /* Rewritten from type alias, can be one of: 
     - typings.atGoogleMaps.atGoogleMapsMod.LatLngArray
     - typings.atGoogleMaps.atGoogleMapsMod.LatLngString

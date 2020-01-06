@@ -4,25 +4,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BrokerSoftwareInfo extends js.Object {
   /**
     * 
     The Amazon Resource Name (ARN) of the configuration used for the cluster. This field isn't visible in this preview release.
     
     */
-  var ConfigurationArn: js.UndefOr[__string] = js.undefined
+  var ConfigurationArn: js.UndefOr[__string] = js.native
   /**
     * 
     The revision of the configuration to use. This field isn't visible in this preview release.
     
     */
-  var ConfigurationRevision: js.UndefOr[__long] = js.undefined
+  var ConfigurationRevision: js.UndefOr[__long] = js.native
   /**
     * 
     The version of Apache Kafka.
     
     */
-  var KafkaVersion: js.UndefOr[__string] = js.undefined
+  var KafkaVersion: js.UndefOr[__string] = js.native
 }
 
 object BrokerSoftwareInfo {
@@ -33,9 +34,9 @@ object BrokerSoftwareInfo {
     KafkaVersion: __string = null
   ): BrokerSoftwareInfo = {
     val __obj = js.Dynamic.literal()
-    if (ConfigurationArn != null) __obj.updateDynamic("ConfigurationArn")(ConfigurationArn)
+    if (ConfigurationArn != null) __obj.updateDynamic("ConfigurationArn")(ConfigurationArn.asInstanceOf[js.Any])
     if (ConfigurationRevision != null) __obj.updateDynamic("ConfigurationRevision")(ConfigurationRevision.asInstanceOf[js.Any])
-    if (KafkaVersion != null) __obj.updateDynamic("KafkaVersion")(KafkaVersion)
+    if (KafkaVersion != null) __obj.updateDynamic("KafkaVersion")(KafkaVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[BrokerSoftwareInfo]
   }
 }

@@ -46,11 +46,19 @@ package object clientsRdsdataserviceMod {
   type String = java.lang.String
   type StringArray = js.Array[String]
   type TransactionStatus = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.DATE
+    - typings.awsDashSdk.awsDashSdkStrings.DECIMAL
+    - typings.awsDashSdk.awsDashSdkStrings.TIME
+    - typings.awsDashSdk.awsDashSdkStrings.TIMESTAMP
+    - java.lang.String
+  */
+  type TypeHint = _TypeHint | java.lang.String
   type UpdateResults = js.Array[UpdateResult]
   type _Blob = Buffer | Uint8Array | Blob | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2018-08-01`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | java.lang.String

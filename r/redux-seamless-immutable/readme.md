@@ -10,9 +10,9 @@ Helpers for using seamless-immutable with Redux
 | ------------------ | :-------------: |
 | Full name          | redux-seamless-immutable |
 | Keywords           | javascript, redux, immutable, seamless, router |
-| # releases         | 4 |
+| # releases         | 2 |
 | # dependents       | 6 |
-| # downloads        | 1434765 |
+| # downloads        | 2424626 |
 | # stars            | 1 |
 
 ## Links

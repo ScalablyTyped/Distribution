@@ -6,19 +6,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TaskDefinitionProxyConfiguration extends js.Object {
   /**
     * The name of the container that will serve as the App Mesh proxy.
     */
-  var containerName: Input[String]
+  var containerName: Input[String] = js.native
   /**
     * The set of network configuration parameters to provide the Container Network Interface (CNI) plugin, specified a key-value mapping.
     */
-  var properties: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
+  var properties: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * The proxy type. The default value is `APPMESH`. The only supported value is `APPMESH`.
     */
-  var `type`: js.UndefOr[Input[String]] = js.undefined
+  var `type`: js.UndefOr[Input[String]] = js.native
 }
 
 object TaskDefinitionProxyConfiguration {

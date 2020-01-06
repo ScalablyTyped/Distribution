@@ -10,9 +10,9 @@ Injects a fake HTTP request/response into a node HTTP server
 | ------------------ | :-------------: |
 | Full name          | shot |
 | Keywords           | utilities, http, debug, test |
-| # releases         | 11 |
-| # dependents       | 7 |
-| # downloads        | 10414312 |
+| # releases         | 5 |
+| # dependents       | 4 |
+| # downloads        | 10246529 |
 | # stars            | 4 |
 
 ## Links

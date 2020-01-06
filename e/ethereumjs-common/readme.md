@@ -10,9 +10,9 @@ Resources common to all Ethereum implementations
 | ------------------ | :-------------: |
 | Full name          | ethereumjs-common |
 | Keywords           | ethereum, ethereumjs, constants, parameters, genesis, networks, bootstrap |
-| # releases         | 14 |
-| # dependents       | 11 |
-| # downloads        | 776522 |
+| # releases         | 21 |
+| # dependents       | 31 |
+| # downloads        | 1882892 |
 | # stars            | 0 |
 
 ## Links

@@ -4,25 +4,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UpdateUserIdentityInfoRequest extends js.Object {
   /**
-    * A UserIdentityInfo object.
+    * The identity information for the user.
     */
-  var IdentityInfo: UserIdentityInfo
+  var IdentityInfo: UserIdentityInfo = js.native
   /**
-    * The identifier for your Amazon Connect instance. To find the ID of your instance, open the AWS console and select Amazon Connect. Select the alias of the instance in the Instance alias column. The instance ID is displayed in the Overview section of your instance settings. For example, the instance ID is the set of characters at the end of the instance ARN, after instance/, such as 10a4c4eb-f57e-4d4c-b602-bf39176ced07.
+    * The identifier of the Amazon Connect instance.
     */
-  var InstanceId: typings.awsDashSdk.clientsConnectMod.InstanceId
+  var InstanceId: typings.awsDashSdk.clientsConnectMod.InstanceId = js.native
   /**
-    * The identifier for the user account to update identity information for.
+    * The identifier of the user account.
     */
-  var UserId: typings.awsDashSdk.clientsConnectMod.UserId
+  var UserId: typings.awsDashSdk.clientsConnectMod.UserId = js.native
 }
 
 object UpdateUserIdentityInfoRequest {
   @scala.inline
   def apply(IdentityInfo: UserIdentityInfo, InstanceId: InstanceId, UserId: UserId): UpdateUserIdentityInfoRequest = {
-    val __obj = js.Dynamic.literal(IdentityInfo = IdentityInfo, InstanceId = InstanceId, UserId = UserId)
+    val __obj = js.Dynamic.literal(IdentityInfo = IdentityInfo.asInstanceOf[js.Any], InstanceId = InstanceId.asInstanceOf[js.Any], UserId = UserId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UpdateUserIdentityInfoRequest]
   }

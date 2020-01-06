@@ -11,8 +11,8 @@ A express package to list all registered endoints and its verbs
 | Full name          | express-list-endpoints |
 | Keywords           | express, routes, endpoints, route, endpoint, list, ls, verb, verbs |
 | # releases         | 3 |
-| # dependents       | 24 |
-| # downloads        | 545073 |
+| # dependents       | 25 |
+| # downloads        | 629550 |
 | # stars            | 4 |
 
 ## Links

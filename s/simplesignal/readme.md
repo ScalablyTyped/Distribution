@@ -1,7 +1,7 @@
 
 # Scala.js typings for simplesignal
 
-Typings are for version 4.0.2
+Typings are for version 4.0.4
 
 ## Library description:
 Super-simple signals class
@@ -10,9 +10,9 @@ Super-simple signals class
 | ------------------ | :-------------: |
 | Full name          | simplesignal |
 | Keywords           | signals, events, callbacks, minimal, small, simple, tiny, typescript |
-| # releases         | 5 |
+| # releases         | 6 |
 | # dependents       | 2 |
-| # downloads        | 2106 |
+| # downloads        | 3194 |
 | # stars            | 0 |
 
 ## Links

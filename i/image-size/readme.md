@@ -10,9 +10,9 @@ get dimensions of any image file
 | ------------------ | :-------------: |
 | Full name          | image-size |
 | Keywords           | image, size, dimensions, resolution, width, height, png, jpeg, bmp, gif, psd, tiff, webp, svg, icns, ico, cur |
-| # releases         | 13 |
-| # dependents       | 621 |
-| # downloads        | 89226962 |
+| # releases         | 12 |
+| # dependents       | 742 |
+| # downloads        | 120380953 |
 | # stars            | 61 |
 
 ## Links

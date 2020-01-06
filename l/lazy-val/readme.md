@@ -10,9 +10,9 @@ Lazy value.
 | ------------------ | :-------------: |
 | Full name          | lazy-val |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 36 |
-| # downloads        | 2566479 |
+| # releases         | 2 |
+| # dependents       | 43 |
+| # downloads        | 3798371 |
 | # stars            | 0 |
 
 ## Links

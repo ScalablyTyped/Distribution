@@ -10,9 +10,9 @@ Generates passages of lorem ipsum text suitable for use as placeholder copy in w
 | ------------------ | :-------------: |
 | Full name          | lorem-ipsum |
 | Keywords           | lorem, ipsum, placeholder, text, dummy, filler |
-| # releases         | 18 |
-| # dependents       | 73 |
-| # downloads        | 1971293 |
+| # releases         | 19 |
+| # dependents       | 84 |
+| # downloads        | 2300507 |
 | # stars            | 14 |
 
 ## Links

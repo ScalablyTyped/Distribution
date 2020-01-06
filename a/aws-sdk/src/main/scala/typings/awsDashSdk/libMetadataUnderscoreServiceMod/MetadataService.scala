@@ -1,5 +1,6 @@
 package typings.awsDashSdk.libMetadataUnderscoreServiceMod
 
+import typings.awsDashSdk.Anon_Headers
 import typings.awsDashSdk.Anon_TimeoutNumber
 import typings.awsDashSdk.libErrorMod.AWSError
 import scala.scalajs.js
@@ -21,6 +22,11 @@ class MetadataService () extends js.Object {
     * Sends a request to the instance metadata service for a given resource.
     */
   def request(path: String, callback: js.Function2[/* err */ AWSError, /* data */ String, Unit]): Unit = js.native
+  def request(
+    path: String,
+    options: Anon_Headers,
+    callback: js.Function2[/* err */ AWSError, /* data */ String, Unit]
+  ): Unit = js.native
 }
 
 /* static members */

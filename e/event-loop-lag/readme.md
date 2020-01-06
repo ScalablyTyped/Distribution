@@ -10,9 +10,9 @@ Measure event loop lag
 | ------------------ | :-------------: |
 | Full name          | event-loop-lag |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 11 |
-| # downloads        | 818238 |
+| # downloads        | 745114 |
 | # stars            | 1 |
 
 ## Links

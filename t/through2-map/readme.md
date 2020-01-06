@@ -10,9 +10,9 @@ A through2 to create an Array.prototype.map analog for streams.
 | ------------------ | :-------------: |
 | Full name          | through2-map |
 | Keywords           | streams, through, through2, map |
-| # releases         | 1 |
-| # dependents       | 105 |
-| # downloads        | 583859 |
+| # releases         | 0 |
+| # dependents       | 109 |
+| # downloads        | 1513590 |
 | # stars            | 21 |
 
 ## Links

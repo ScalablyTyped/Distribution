@@ -6,27 +6,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VaultState extends js.Object {
   /**
     * The ARN of the vault.
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * The server-side encryption key that is used to protect your backups.
     */
-  val kmsKeyArn: js.UndefOr[Input[String]] = js.undefined
+  val kmsKeyArn: js.UndefOr[Input[String]] = js.native
   /**
     * Name of the backup vault to create.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * The number of recovery points that are stored in a backup vault.
     */
-  val recoveryPoints: js.UndefOr[Input[Double]] = js.undefined
+  val recoveryPoints: js.UndefOr[Input[Double]] = js.native
   /**
     * Metadata that you can assign to help organize the resources that you create.
     */
-  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object VaultState {
@@ -36,7 +37,7 @@ object VaultState {
     kmsKeyArn: Input[String] = null,
     name: Input[String] = null,
     recoveryPoints: Input[Double] = null,
-    tags: Input[StringDictionary[Input[String]]] = null
+    tags: Input[StringDictionary[_]] = null
   ): VaultState = {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])

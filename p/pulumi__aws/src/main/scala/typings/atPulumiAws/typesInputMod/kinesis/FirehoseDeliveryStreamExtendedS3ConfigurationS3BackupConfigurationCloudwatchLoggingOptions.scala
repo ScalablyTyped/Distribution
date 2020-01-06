@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationCloudwatchLoggingOptions extends js.Object {
   /**
     * Defaults to `true`. Set it to `false` if you want to disable format conversion while preserving the configuration details.
     */
-  var enabled: js.UndefOr[Input[Boolean]] = js.undefined
+  var enabled: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The CloudWatch group name for logging. This value is required if `enabled` is true.
     */
-  var logGroupName: js.UndefOr[Input[String]] = js.undefined
+  var logGroupName: js.UndefOr[Input[String]] = js.native
   /**
     * The CloudWatch log stream name for logging. This value is required if `enabled` is true.
     */
-  var logStreamName: js.UndefOr[Input[String]] = js.undefined
+  var logStreamName: js.UndefOr[Input[String]] = js.native
 }
 
 object FirehoseDeliveryStreamExtendedS3ConfigurationS3BackupConfigurationCloudwatchLoggingOptions {

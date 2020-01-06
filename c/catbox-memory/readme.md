@@ -10,9 +10,9 @@ Memory adapter for catbox
 | ------------------ | :-------------: |
 | Full name          | catbox-memory |
 | Keywords           | cache, catbox, memory |
-| # releases         | 8 |
-| # dependents       | 30 |
-| # downloads        | 10287117 |
+| # releases         | 6 |
+| # dependents       | 28 |
+| # downloads        | 10263754 |
 | # stars            | 1 |
 
 ## Links

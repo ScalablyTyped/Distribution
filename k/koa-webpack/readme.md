@@ -10,9 +10,9 @@ Development and Hot Reload Middleware for Koa2
 | ------------------ | :-------------: |
 | Full name          | koa-webpack |
 | Keywords           | koa, middleware, webpack |
-| # releases         | 24 |
-| # dependents       | 63 |
-| # downloads        | 2382766 |
+| # releases         | 21 |
+| # dependents       | 80 |
+| # downloads        | 2685706 |
 | # stars            | 2 |
 
 ## Links

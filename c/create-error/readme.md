@@ -10,9 +10,9 @@ Simple helper for sub-classing the Error object
 | ------------------ | :-------------: |
 | Full name          | create-error |
 | Keywords           | errors |
-| # releases         | 1 |
-| # dependents       | 61 |
-| # downloads        | 2251196 |
+| # releases         | 0 |
+| # dependents       | 70 |
+| # downloads        | 4029326 |
 | # stars            | 2 |
 
 ## Links

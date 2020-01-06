@@ -132,6 +132,12 @@ package object clientsMedialiveMod {
   type AudioNormalizationAlgorithm = _AudioNormalizationAlgorithm | String
   type AudioNormalizationAlgorithmControl = CORRECT_AUDIO | String
   /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.AAC
+    - typings.awsDashSdk.awsDashSdkStrings.FMP4
+    - java.lang.String
+  */
+  type AudioOnlyHlsSegmentType = _AudioOnlyHlsSegmentType | String
+  /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.ALTERNATE_AUDIO_AUTO_SELECT
     - typings.awsDashSdk.awsDashSdkStrings.ALTERNATE_AUDIO_AUTO_SELECT_DEFAULT
     - typings.awsDashSdk.awsDashSdkStrings.ALTERNATE_AUDIO_NOT_AUTO_SELECT
@@ -435,6 +441,12 @@ package object clientsMedialiveMod {
   */
   type FollowPoint = _FollowPoint | String
   /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.MILLISECONDS
+    - typings.awsDashSdk.awsDashSdkStrings.SECONDS
+    - java.lang.String
+  */
+  type FrameCaptureIntervalUnit = _FrameCaptureIntervalUnit | String
+  /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.NONE
     - typings.awsDashSdk.awsDashSdkStrings.SWITCH_AND_LOOP_INPUTS
     - java.lang.String
@@ -665,6 +677,7 @@ package object clientsMedialiveMod {
   type H265Profile = _H265Profile | String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.CBR
+    - typings.awsDashSdk.awsDashSdkStrings.MULTIPLEX
     - typings.awsDashSdk.awsDashSdkStrings.QVBR
     - java.lang.String
   */
@@ -732,6 +745,18 @@ package object clientsMedialiveMod {
     - java.lang.String
   */
   type HlsEncryptionType = _HlsEncryptionType | String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.HEV1
+    - typings.awsDashSdk.awsDashSdkStrings.HVC1
+    - java.lang.String
+  */
+  type HlsH265PackagingType = _HlsH265PackagingType | String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.DISABLED
+    - typings.awsDashSdk.awsDashSdkStrings.ENABLED
+    - java.lang.String
+  */
+  type HlsId3SegmentTaggingState = _HlsId3SegmentTaggingState | String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.EXCLUDE
     - typings.awsDashSdk.awsDashSdkStrings.INCLUDE
@@ -1029,6 +1054,12 @@ package object clientsMedialiveMod {
   */
   type M2tsKlv = _M2tsKlv | String
   /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.NO_PASSTHROUGH
+    - typings.awsDashSdk.awsDashSdkStrings.PASSTHROUGH
+    - java.lang.String
+  */
+  type M2tsNielsenId3Behavior = _M2tsNielsenId3Behavior | String
+  /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.CONFIGURED_PCR_PERIOD
     - typings.awsDashSdk.awsDashSdkStrings.PCR_EVERY_PES_PACKET
     - java.lang.String
@@ -1069,6 +1100,12 @@ package object clientsMedialiveMod {
   */
   type M2tsTimedMetadataBehavior = _M2tsTimedMetadataBehavior | String
   /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.NO_PASSTHROUGH
+    - typings.awsDashSdk.awsDashSdkStrings.PASSTHROUGH
+    - java.lang.String
+  */
+  type M3u8NielsenId3Behavior = _M3u8NielsenId3Behavior | String
+  /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.CONFIGURED_PCR_PERIOD
     - typings.awsDashSdk.awsDashSdkStrings.PCR_EVERY_PES_PACKET
     - java.lang.String
@@ -1100,11 +1137,30 @@ package object clientsMedialiveMod {
   */
   type MsSmoothH265PackagingType = _MsSmoothH265PackagingType | String
   /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.CREATING
+    - typings.awsDashSdk.awsDashSdkStrings.CREATE_FAILED
+    - typings.awsDashSdk.awsDashSdkStrings.IDLE
+    - typings.awsDashSdk.awsDashSdkStrings.STARTING
+    - typings.awsDashSdk.awsDashSdkStrings.RUNNING
+    - typings.awsDashSdk.awsDashSdkStrings.RECOVERING
+    - typings.awsDashSdk.awsDashSdkStrings.STOPPING
+    - typings.awsDashSdk.awsDashSdkStrings.DELETING
+    - typings.awsDashSdk.awsDashSdkStrings.DELETED
+    - java.lang.String
+  */
+  type MultiplexState = _MultiplexState | String
+  /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.CHECK_CRYPTOGRAPHY_AND_VALIDATE_NAME
     - typings.awsDashSdk.awsDashSdkStrings.CHECK_CRYPTOGRAPHY_ONLY
     - java.lang.String
   */
   type NetworkInputServerValidation = _NetworkInputServerValidation | String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.DISABLED
+    - typings.awsDashSdk.awsDashSdkStrings.ENABLED
+    - java.lang.String
+  */
+  type NielsenPcmToId3TaggingState = _NielsenPcmToId3TaggingState | String
   type OfferingDurationUnits = MONTHS | String
   type OfferingType = NO_UPFRONT | String
   /* Rewritten from type alias, can be one of: 
@@ -1137,6 +1193,7 @@ package object clientsMedialiveMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.SD
     - typings.awsDashSdk.awsDashSdkStrings.HD
+    - typings.awsDashSdk.awsDashSdkStrings.FHD
     - typings.awsDashSdk.awsDashSdkStrings.UHD
     - java.lang.String
   */
@@ -1144,6 +1201,7 @@ package object clientsMedialiveMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.INPUT
     - typings.awsDashSdk.awsDashSdkStrings.OUTPUT
+    - typings.awsDashSdk.awsDashSdkStrings.MULTIPLEX
     - typings.awsDashSdk.awsDashSdkStrings.CHANNEL
     - java.lang.String
   */
@@ -1357,6 +1415,7 @@ package object clientsMedialiveMod {
   type __integerMin0Max1000 = Double
   type __integerMin0Max10000 = Double
   type __integerMin0Max1000000 = Double
+  type __integerMin0Max100000000 = Double
   type __integerMin0Max128 = Double
   type __integerMin0Max15 = Double
   type __integerMin0Max255 = Double
@@ -1371,8 +1430,11 @@ package object clientsMedialiveMod {
   type __integerMin0Max8191 = Double
   type __integerMin1 = Double
   type __integerMin1000 = Double
+  type __integerMin1000000Max100000000 = Double
+  type __integerMin100000Max100000000 = Double
   type __integerMin100000Max40000000 = Double
   type __integerMin100000Max80000000 = Double
+  type __integerMin1000Max3000 = Double
   type __integerMin1000Max30000 = Double
   type __integerMin1Max10 = Double
   type __integerMin1Max1000000 = Double
@@ -1381,7 +1443,7 @@ package object clientsMedialiveMod {
   type __integerMin1Max3003 = Double
   type __integerMin1Max31 = Double
   type __integerMin1Max32 = Double
-  type __integerMin1Max3600 = Double
+  type __integerMin1Max3600000 = Double
   type __integerMin1Max4 = Double
   type __integerMin1Max5 = Double
   type __integerMin1Max6 = Double
@@ -1417,6 +1479,9 @@ package object clientsMedialiveMod {
   type __listOfMediaConnectFlow = js.Array[MediaConnectFlow]
   type __listOfMediaConnectFlowRequest = js.Array[MediaConnectFlowRequest]
   type __listOfMediaPackageOutputDestinationSettings = js.Array[MediaPackageOutputDestinationSettings]
+  type __listOfMultiplexOutputDestination = js.Array[MultiplexOutputDestination]
+  type __listOfMultiplexProgramSummary = js.Array[MultiplexProgramSummary]
+  type __listOfMultiplexSummary = js.Array[MultiplexSummary]
   type __listOfOffering = js.Array[Offering]
   type __listOfOutput = js.Array[Output]
   type __listOfOutputDestination = js.Array[OutputDestination]
@@ -1428,11 +1493,13 @@ package object clientsMedialiveMod {
   type __listOfScheduleAction = js.Array[ScheduleAction]
   type __listOfScte35Descriptor = js.Array[Scte35Descriptor]
   type __listOfVideoDescription = js.Array[VideoDescription]
+  type __listOf__integer = js.Array[__integer]
   type __listOf__string = js.Array[__string]
   type __longMin0Max1099511627775 = Double
   type __longMin0Max4294967295 = Double
   type __longMin0Max8589934591 = Double
   type __string = String
+  type __stringMax256 = String
   type __stringMax32 = String
   type __stringMin1 = String
   type __stringMin1Max255 = String
@@ -1443,7 +1510,7 @@ package object clientsMedialiveMod {
   type __stringMin6Max6 = String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2017-10-14`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

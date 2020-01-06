@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 trait AssertionPrototype extends js.Object {
   var _obj: js.Any
   def assert(
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type AssertionArgs is not an array type */ args: AssertionArgs
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type AssertionArgs is not an array type */ args: AssertionArgs
   ): Unit
 }
 

@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetResolverRulesResult extends js.Object {
   /**
     * id is the provider-assigned unique ID for this managed resource.
     */
-  val id: String
-  val ownerId: js.UndefOr[String] = js.undefined
-  val resolverEndpointId: js.UndefOr[String] = js.undefined
+  val id: String = js.native
+  val ownerId: js.UndefOr[String] = js.native
+  val resolverEndpointId: js.UndefOr[String] = js.native
   /**
     * The IDs of the matched resolver rules.
     */
-  val resolverRuleIds: js.Array[String]
-  val ruleType: js.UndefOr[String] = js.undefined
-  val shareStatus: js.UndefOr[String] = js.undefined
+  val resolverRuleIds: js.Array[String] = js.native
+  val ruleType: js.UndefOr[String] = js.native
+  val shareStatus: js.UndefOr[String] = js.native
 }
 
 object GetResolverRulesResult {
@@ -29,11 +30,11 @@ object GetResolverRulesResult {
     ruleType: String = null,
     shareStatus: String = null
   ): GetResolverRulesResult = {
-    val __obj = js.Dynamic.literal(id = id, resolverRuleIds = resolverRuleIds)
-    if (ownerId != null) __obj.updateDynamic("ownerId")(ownerId)
-    if (resolverEndpointId != null) __obj.updateDynamic("resolverEndpointId")(resolverEndpointId)
-    if (ruleType != null) __obj.updateDynamic("ruleType")(ruleType)
-    if (shareStatus != null) __obj.updateDynamic("shareStatus")(shareStatus)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], resolverRuleIds = resolverRuleIds.asInstanceOf[js.Any])
+    if (ownerId != null) __obj.updateDynamic("ownerId")(ownerId.asInstanceOf[js.Any])
+    if (resolverEndpointId != null) __obj.updateDynamic("resolverEndpointId")(resolverEndpointId.asInstanceOf[js.Any])
+    if (ruleType != null) __obj.updateDynamic("ruleType")(ruleType.asInstanceOf[js.Any])
+    if (shareStatus != null) __obj.updateDynamic("shareStatus")(shareStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResolverRulesResult]
   }
 }

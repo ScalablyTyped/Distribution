@@ -4,31 +4,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VolumeAttachment extends js.Object {
   /**
     * The time stamp when the attachment initiated.
     */
-  var AttachTime: js.UndefOr[DateTime] = js.undefined
+  var AttachTime: js.UndefOr[DateTime] = js.native
   /**
     * Indicates whether the EBS volume is deleted on instance termination.
     */
-  var DeleteOnTermination: js.UndefOr[Boolean] = js.undefined
+  var DeleteOnTermination: js.UndefOr[Boolean] = js.native
   /**
     * The device name.
     */
-  var Device: js.UndefOr[String] = js.undefined
+  var Device: js.UndefOr[String] = js.native
   /**
     * The ID of the instance.
     */
-  var InstanceId: js.UndefOr[String] = js.undefined
+  var InstanceId: js.UndefOr[String] = js.native
   /**
     * The attachment state of the volume.
     */
-  var State: js.UndefOr[VolumeAttachmentState] = js.undefined
+  var State: js.UndefOr[VolumeAttachmentState] = js.native
   /**
     * The ID of the volume.
     */
-  var VolumeId: js.UndefOr[String] = js.undefined
+  var VolumeId: js.UndefOr[String] = js.native
 }
 
 object VolumeAttachment {
@@ -42,12 +43,12 @@ object VolumeAttachment {
     VolumeId: String = null
   ): VolumeAttachment = {
     val __obj = js.Dynamic.literal()
-    if (AttachTime != null) __obj.updateDynamic("AttachTime")(AttachTime)
-    if (!js.isUndefined(DeleteOnTermination)) __obj.updateDynamic("DeleteOnTermination")(DeleteOnTermination)
-    if (Device != null) __obj.updateDynamic("Device")(Device)
-    if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId)
+    if (AttachTime != null) __obj.updateDynamic("AttachTime")(AttachTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(DeleteOnTermination)) __obj.updateDynamic("DeleteOnTermination")(DeleteOnTermination.asInstanceOf[js.Any])
+    if (Device != null) __obj.updateDynamic("Device")(Device.asInstanceOf[js.Any])
+    if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId.asInstanceOf[js.Any])
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (VolumeId != null) __obj.updateDynamic("VolumeId")(VolumeId)
+    if (VolumeId != null) __obj.updateDynamic("VolumeId")(VolumeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[VolumeAttachment]
   }
 }

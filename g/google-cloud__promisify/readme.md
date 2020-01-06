@@ -10,9 +10,9 @@ A simple utility for promisifying functions and classes.
 | ------------------ | :-------------: |
 | Full name          | @google-cloud/promisify |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 20 |
-| # downloads        | 9716103 |
+| # releases         | 12 |
+| # dependents       | 22 |
+| # downloads        | 54873393 |
 | # stars            | 0 |
 
 ## Links

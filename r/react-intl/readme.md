@@ -10,15 +10,15 @@ Internationalize React apps. This library provides React components and an API t
 | ------------------ | :-------------: |
 | Full name          | react-intl |
 | Keywords           | intl, i18n, internationalization, locale, localization, globalization, react, reactjs, format, formatting, translate, translation |
-| # releases         | 9 |
-| # dependents       | 549 |
-| # downloads        | 12897424 |
-| # stars            | 45 |
+| # releases         | 69 |
+| # dependents       | 770 |
+| # downloads        | 20941523 |
+| # stars            | 46 |
 
 ## Links
-- [Homepage](https://github.com/yahoo/react-intl)
-- [Bugs](https://github.com/yahoo/react-intl/issues)
-- [Repository](https://github.com/yahoo/react-intl)
+- [Homepage](https://github.com/formatjs/react-intl)
+- [Bugs](https://github.com/formatjs/react-intl/issues)
+- [Repository](https://github.com/formatjs/react-intl)
 - [Npm](https://www.npmjs.com/package/react-intl)
     
 

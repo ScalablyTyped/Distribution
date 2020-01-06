@@ -11,8 +11,8 @@ Settle promises concurrently and get their fulfillment value or rejection reason
 | Full name          | p-settle |
 | Keywords           | promise, settle, settled, resolved, iterator, fulfill, reject, fulfilled, rejected, reflect, inspect, error, async, await, promises, concurrently, concurrency, parallel, bluebird |
 | # releases         | 4 |
-| # dependents       | 22 |
-| # downloads        | 674078 |
+| # dependents       | 29 |
+| # downloads        | 1114217 |
 | # stars            | 1 |
 
 ## Links

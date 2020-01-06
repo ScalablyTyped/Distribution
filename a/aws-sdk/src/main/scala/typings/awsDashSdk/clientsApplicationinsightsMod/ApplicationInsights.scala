@@ -39,6 +39,19 @@ trait ApplicationInsights extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateComponentResponse, scala.Unit]
   ): Request[CreateComponentResponse, AWSError] = js.native
   /**
+    * Adds an log pattern to a LogPatternSet.
+    */
+  def createLogPattern(): Request[CreateLogPatternResponse, AWSError] = js.native
+  def createLogPattern(callback: js.Function2[/* err */ AWSError, /* data */ CreateLogPatternResponse, scala.Unit]): Request[CreateLogPatternResponse, AWSError] = js.native
+  /**
+    * Adds an log pattern to a LogPatternSet.
+    */
+  def createLogPattern(params: CreateLogPatternRequest): Request[CreateLogPatternResponse, AWSError] = js.native
+  def createLogPattern(
+    params: CreateLogPatternRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateLogPatternResponse, scala.Unit]
+  ): Request[CreateLogPatternResponse, AWSError] = js.native
+  /**
     * Removes the specified application from monitoring. Does not delete the application.
     */
   def deleteApplication(): Request[DeleteApplicationResponse, AWSError] = js.native
@@ -64,6 +77,19 @@ trait ApplicationInsights extends Service {
     params: DeleteComponentRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteComponentResponse, scala.Unit]
   ): Request[DeleteComponentResponse, AWSError] = js.native
+  /**
+    * Removes the specified log pattern from a LogPatternSet.
+    */
+  def deleteLogPattern(): Request[DeleteLogPatternResponse, AWSError] = js.native
+  def deleteLogPattern(callback: js.Function2[/* err */ AWSError, /* data */ DeleteLogPatternResponse, scala.Unit]): Request[DeleteLogPatternResponse, AWSError] = js.native
+  /**
+    * Removes the specified log pattern from a LogPatternSet.
+    */
+  def deleteLogPattern(params: DeleteLogPatternRequest): Request[DeleteLogPatternResponse, AWSError] = js.native
+  def deleteLogPattern(
+    params: DeleteLogPatternRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteLogPatternResponse, scala.Unit]
+  ): Request[DeleteLogPatternResponse, AWSError] = js.native
   /**
     * Describes the application.
     */
@@ -128,6 +154,19 @@ trait ApplicationInsights extends Service {
       scala.Unit
     ]
   ): Request[DescribeComponentConfigurationRecommendationResponse, AWSError] = js.native
+  /**
+    * Describe a specific log pattern from a LogPatternSet.
+    */
+  def describeLogPattern(): Request[DescribeLogPatternResponse, AWSError] = js.native
+  def describeLogPattern(callback: js.Function2[/* err */ AWSError, /* data */ DescribeLogPatternResponse, scala.Unit]): Request[DescribeLogPatternResponse, AWSError] = js.native
+  /**
+    * Describe a specific log pattern from a LogPatternSet.
+    */
+  def describeLogPattern(params: DescribeLogPatternRequest): Request[DescribeLogPatternResponse, AWSError] = js.native
+  def describeLogPattern(
+    params: DescribeLogPatternRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeLogPatternResponse, scala.Unit]
+  ): Request[DescribeLogPatternResponse, AWSError] = js.native
   /**
     * Describes an anomaly or error with the application.
     */
@@ -196,6 +235,32 @@ trait ApplicationInsights extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListComponentsResponse, scala.Unit]
   ): Request[ListComponentsResponse, AWSError] = js.native
   /**
+    * Lists the log pattern sets in the specific application.
+    */
+  def listLogPatternSets(): Request[ListLogPatternSetsResponse, AWSError] = js.native
+  def listLogPatternSets(callback: js.Function2[/* err */ AWSError, /* data */ ListLogPatternSetsResponse, scala.Unit]): Request[ListLogPatternSetsResponse, AWSError] = js.native
+  /**
+    * Lists the log pattern sets in the specific application.
+    */
+  def listLogPatternSets(params: ListLogPatternSetsRequest): Request[ListLogPatternSetsResponse, AWSError] = js.native
+  def listLogPatternSets(
+    params: ListLogPatternSetsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListLogPatternSetsResponse, scala.Unit]
+  ): Request[ListLogPatternSetsResponse, AWSError] = js.native
+  /**
+    * Lists the log patterns in the specific log LogPatternSet.
+    */
+  def listLogPatterns(): Request[ListLogPatternsResponse, AWSError] = js.native
+  def listLogPatterns(callback: js.Function2[/* err */ AWSError, /* data */ ListLogPatternsResponse, scala.Unit]): Request[ListLogPatternsResponse, AWSError] = js.native
+  /**
+    * Lists the log patterns in the specific log LogPatternSet.
+    */
+  def listLogPatterns(params: ListLogPatternsRequest): Request[ListLogPatternsResponse, AWSError] = js.native
+  def listLogPatterns(
+    params: ListLogPatternsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListLogPatternsResponse, scala.Unit]
+  ): Request[ListLogPatternsResponse, AWSError] = js.native
+  /**
     * Lists the problems with your application.
     */
   def listProblems(): Request[ListProblemsResponse, AWSError] = js.native
@@ -208,6 +273,45 @@ trait ApplicationInsights extends Service {
     params: ListProblemsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListProblemsResponse, scala.Unit]
   ): Request[ListProblemsResponse, AWSError] = js.native
+  /**
+    * Retrieve a list of the tags (keys and values) that are associated with a specified application. A tag is a label that you optionally define and associate with an application. Each tag consists of a required tag key and an optional associated tag value. A tag key is a general label that acts as a category for more specific tag values. A tag value acts as a descriptor within a tag key.
+    */
+  def listTagsForResource(): Request[ListTagsForResourceResponse, AWSError] = js.native
+  def listTagsForResource(callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, scala.Unit]): Request[ListTagsForResourceResponse, AWSError] = js.native
+  /**
+    * Retrieve a list of the tags (keys and values) that are associated with a specified application. A tag is a label that you optionally define and associate with an application. Each tag consists of a required tag key and an optional associated tag value. A tag key is a general label that acts as a category for more specific tag values. A tag value acts as a descriptor within a tag key.
+    */
+  def listTagsForResource(params: ListTagsForResourceRequest): Request[ListTagsForResourceResponse, AWSError] = js.native
+  def listTagsForResource(
+    params: ListTagsForResourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, scala.Unit]
+  ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  /**
+    * Add one or more tags (keys and values) to a specified application. A tag is a label that you optionally define and associate with an application. Tags can help you categorize and manage application in different ways, such as by purpose, owner, environment, or other criteria.  Each tag consists of a required tag key and an associated tag value, both of which you define. A tag key is a general label that acts as a category for more specific tag values. A tag value acts as a descriptor within a tag key.
+    */
+  def tagResource(): Request[TagResourceResponse, AWSError] = js.native
+  def tagResource(callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, scala.Unit]): Request[TagResourceResponse, AWSError] = js.native
+  /**
+    * Add one or more tags (keys and values) to a specified application. A tag is a label that you optionally define and associate with an application. Tags can help you categorize and manage application in different ways, such as by purpose, owner, environment, or other criteria.  Each tag consists of a required tag key and an associated tag value, both of which you define. A tag key is a general label that acts as a category for more specific tag values. A tag value acts as a descriptor within a tag key.
+    */
+  def tagResource(params: TagResourceRequest): Request[TagResourceResponse, AWSError] = js.native
+  def tagResource(
+    params: TagResourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, scala.Unit]
+  ): Request[TagResourceResponse, AWSError] = js.native
+  /**
+    * Remove one or more tags (keys and values) from a specified application.
+    */
+  def untagResource(): Request[UntagResourceResponse, AWSError] = js.native
+  def untagResource(callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, scala.Unit]): Request[UntagResourceResponse, AWSError] = js.native
+  /**
+    * Remove one or more tags (keys and values) from a specified application.
+    */
+  def untagResource(params: UntagResourceRequest): Request[UntagResourceResponse, AWSError] = js.native
+  def untagResource(
+    params: UntagResourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, scala.Unit]
+  ): Request[UntagResourceResponse, AWSError] = js.native
   /**
     * Updates the application.
     */
@@ -235,19 +339,32 @@ trait ApplicationInsights extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateComponentResponse, scala.Unit]
   ): Request[UpdateComponentResponse, AWSError] = js.native
   /**
-    * Updates the monitoring configurations for the component. The configuration input parameter is an escaped JSON of the configuration and should match the schema of what is returned by DescribeComponentConfigurationRecommendation.
+    * Updates the monitoring configurations for the component. The configuration input parameter is an escaped JSON of the configuration and should match the schema of what is returned by DescribeComponentConfigurationRecommendation. 
     */
   def updateComponentConfiguration(): Request[UpdateComponentConfigurationResponse, AWSError] = js.native
   def updateComponentConfiguration(
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateComponentConfigurationResponse, scala.Unit]
   ): Request[UpdateComponentConfigurationResponse, AWSError] = js.native
   /**
-    * Updates the monitoring configurations for the component. The configuration input parameter is an escaped JSON of the configuration and should match the schema of what is returned by DescribeComponentConfigurationRecommendation.
+    * Updates the monitoring configurations for the component. The configuration input parameter is an escaped JSON of the configuration and should match the schema of what is returned by DescribeComponentConfigurationRecommendation. 
     */
   def updateComponentConfiguration(params: UpdateComponentConfigurationRequest): Request[UpdateComponentConfigurationResponse, AWSError] = js.native
   def updateComponentConfiguration(
     params: UpdateComponentConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateComponentConfigurationResponse, scala.Unit]
   ): Request[UpdateComponentConfigurationResponse, AWSError] = js.native
+  /**
+    * Adds a log pattern to a LogPatternSet.
+    */
+  def updateLogPattern(): Request[UpdateLogPatternResponse, AWSError] = js.native
+  def updateLogPattern(callback: js.Function2[/* err */ AWSError, /* data */ UpdateLogPatternResponse, scala.Unit]): Request[UpdateLogPatternResponse, AWSError] = js.native
+  /**
+    * Adds a log pattern to a LogPatternSet.
+    */
+  def updateLogPattern(params: UpdateLogPatternRequest): Request[UpdateLogPatternResponse, AWSError] = js.native
+  def updateLogPattern(
+    params: UpdateLogPatternRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateLogPatternResponse, scala.Unit]
+  ): Request[UpdateLogPatternResponse, AWSError] = js.native
 }
 

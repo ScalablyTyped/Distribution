@@ -10,9 +10,9 @@ XMPP XML for JavaScript
 | ------------------ | :-------------: |
 | Full name          | @xmpp/xml |
 | Keywords           | XMPP, stanza, iq, message, presence |
-| # releases         | 7 |
+| # releases         | 8 |
 | # dependents       | 28 |
-| # downloads        | 843047 |
+| # downloads        | 550846 |
 | # stars            | 0 |
 
 ## Links

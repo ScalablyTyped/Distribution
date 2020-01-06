@@ -11,8 +11,8 @@ A custom build of Stylis
 | Full name          | @emotion/stylis |
 | Keywords           | - |
 | # releases         | 22 |
-| # dependents       | 5 |
-| # downloads        | 50377925 |
+| # dependents       | 11 |
+| # downloads        | 83914985 |
 | # stars            | 0 |
 
 ## Links

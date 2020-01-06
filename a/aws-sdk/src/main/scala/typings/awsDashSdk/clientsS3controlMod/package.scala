@@ -11,11 +11,16 @@ package object clientsS3controlMod {
   import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
   import typings.std.Date
 
+  type AccessPointList = js.Array[AccessPoint]
+  type AccessPointName = String
   type AccountId = String
   type Boolean = scala.Boolean
+  type BucketName = String
   type ClientConfiguration = ServiceConfigurationOptions with UseDualstackConfigOptions with ClientApiVersions
   type ConfirmationRequired = scala.Boolean
+  type CreationDate = Date
   type IAMRoleArn = String
+  type IsPublic = scala.Boolean
   type JobArn = String
   type JobCreationTime = Date
   type JobFailureCode = String
@@ -25,9 +30,9 @@ package object clientsS3controlMod {
   type JobListDescriptorList = js.Array[JobListDescriptor]
   type JobManifestFieldList = js.Array[JobManifestFieldName]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Ignore
+    - typings.awsDashSdk.awsDashSdkStrings.Ignore_
     - typings.awsDashSdk.awsDashSdkStrings.Bucket
-    - typings.awsDashSdk.awsDashSdkStrings.Key
+    - typings.awsDashSdk.awsDashSdkStrings.Key_
     - typings.awsDashSdk.awsDashSdkStrings.VersionId
     - java.lang.String
   */
@@ -49,19 +54,19 @@ package object clientsS3controlMod {
   */
   type JobReportScope = _JobReportScope | String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Active
-    - typings.awsDashSdk.awsDashSdkStrings.Cancelled
-    - typings.awsDashSdk.awsDashSdkStrings.Cancelling
-    - typings.awsDashSdk.awsDashSdkStrings.Complete
-    - typings.awsDashSdk.awsDashSdkStrings.Completing
-    - typings.awsDashSdk.awsDashSdkStrings.Failed
-    - typings.awsDashSdk.awsDashSdkStrings.Failing
-    - typings.awsDashSdk.awsDashSdkStrings.New
-    - typings.awsDashSdk.awsDashSdkStrings.Paused
+    - typings.awsDashSdk.awsDashSdkStrings.Active_
+    - typings.awsDashSdk.awsDashSdkStrings.Cancelled_
+    - typings.awsDashSdk.awsDashSdkStrings.Cancelling_
+    - typings.awsDashSdk.awsDashSdkStrings.Complete_
+    - typings.awsDashSdk.awsDashSdkStrings.Completing_
+    - typings.awsDashSdk.awsDashSdkStrings.Failed_
+    - typings.awsDashSdk.awsDashSdkStrings.Failing_
+    - typings.awsDashSdk.awsDashSdkStrings.New_
+    - typings.awsDashSdk.awsDashSdkStrings.Paused_
     - typings.awsDashSdk.awsDashSdkStrings.Pausing
-    - typings.awsDashSdk.awsDashSdkStrings.Preparing
-    - typings.awsDashSdk.awsDashSdkStrings.Ready
-    - typings.awsDashSdk.awsDashSdkStrings.Suspended
+    - typings.awsDashSdk.awsDashSdkStrings.Preparing_
+    - typings.awsDashSdk.awsDashSdkStrings.Ready_
+    - typings.awsDashSdk.awsDashSdkStrings.Suspended_
     - java.lang.String
   */
   type JobStatus = _JobStatus | String
@@ -72,6 +77,12 @@ package object clientsS3controlMod {
   type KmsKeyArnString = String
   type MaxLength1024String = String
   type MaxResults = Double
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.Internet_
+    - typings.awsDashSdk.awsDashSdkStrings.VPC
+    - java.lang.String
+  */
+  type NetworkOrigin = _NetworkOrigin | String
   type NonEmptyMaxLength1024String = String
   type NonEmptyMaxLength2048String = String
   type NonEmptyMaxLength256String = String
@@ -85,16 +96,17 @@ package object clientsS3controlMod {
     - java.lang.String
   */
   type OperationName = _OperationName | String
+  type Policy = String
   type ReportPrefixString = String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Cancelled
-    - typings.awsDashSdk.awsDashSdkStrings.Ready
+    - typings.awsDashSdk.awsDashSdkStrings.Cancelled_
+    - typings.awsDashSdk.awsDashSdkStrings.Ready_
     - java.lang.String
   */
   type RequestedJobStatus = _RequestedJobStatus | String
   type S3BucketArnString = String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.`private`
+    - typings.awsDashSdk.awsDashSdkStrings.private__
     - typings.awsDashSdk.awsDashSdkStrings.`public-read`
     - typings.awsDashSdk.awsDashSdkStrings.`public-read-write`
     - typings.awsDashSdk.awsDashSdkStrings.`aws-exec-read`
@@ -114,9 +126,9 @@ package object clientsS3controlMod {
   type S3GlacierJobTier = _S3GlacierJobTier | String
   type S3GrantList = js.Array[S3Grant]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.id
-    - typings.awsDashSdk.awsDashSdkStrings.emailAddress
-    - typings.awsDashSdk.awsDashSdkStrings.uri
+    - typings.awsDashSdk.awsDashSdkStrings.id__
+    - typings.awsDashSdk.awsDashSdkStrings.emailAddress_
+    - typings.awsDashSdk.awsDashSdkStrings.uri_
     - java.lang.String
   */
   type S3GranteeTypeIdentifier = _S3GranteeTypeIdentifier | String
@@ -171,9 +183,10 @@ package object clientsS3controlMod {
   type SuspendedCause = String
   type SuspendedDate = Date
   type TimeStamp = Date
+  type VpcId = String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2018-08-20`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

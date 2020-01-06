@@ -12,7 +12,7 @@ Parse and format telephone numbers.
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 2 |
-| # downloads        | 231230 |
+| # downloads        | 261070 |
 | # stars            | 2 |
 
 ## Links

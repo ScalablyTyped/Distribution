@@ -673,12 +673,12 @@ trait AlexaForBusiness extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetSkillGroupResponse, Unit]
   ): Request[GetSkillGroupResponse, AWSError] = js.native
   /**
-    * Lists the details of the schedules that a user configured.
+    * Lists the details of the schedules that a user configured. A download URL of the report associated with each schedule is returned every time this action is called. A new download URL is returned each time, and is valid for 24 hours.
     */
   def listBusinessReportSchedules(): Request[ListBusinessReportSchedulesResponse, AWSError] = js.native
   def listBusinessReportSchedules(callback: js.Function2[/* err */ AWSError, /* data */ ListBusinessReportSchedulesResponse, Unit]): Request[ListBusinessReportSchedulesResponse, AWSError] = js.native
   /**
-    * Lists the details of the schedules that a user configured.
+    * Lists the details of the schedules that a user configured. A download URL of the report associated with each schedule is returned every time this action is called. A new download URL is returned each time, and is valid for 24 hours.
     */
   def listBusinessReportSchedules(params: ListBusinessReportSchedulesRequest): Request[ListBusinessReportSchedulesResponse, AWSError] = js.native
   def listBusinessReportSchedules(

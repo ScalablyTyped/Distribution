@@ -635,10 +635,12 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
     data: ValueFn[PElement, PDatum, js.Array[NewDatum]],
     key: ValueFn[GElement | PElement, Datum | NewDatum, String]
   ): Selection[GElement, NewDatum, PElement, PDatum] = js.native
+  // Data Join ---------------------------------
   /**
-    * Delete the bound data for each element in the selection.
+    * Returns the bound datum for the first (non-null) element in the selection.
+    * This is generally useful only if you know the selection contains exactly one element.
     */
-  def datum(): Selection[GElement, js.UndefOr[scala.Nothing], PElement, PDatum] = js.native
+  def datum(): Datum = js.native
   /**
     * Sets the element’s bound data to the specified value on all selected elements.
     * Unlike selection.data, this method does not compute a join and does not affect
@@ -662,13 +664,11 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
     * A null value will delete the bound data.
     */
   def datum[NewDatum](value: ValueFn[GElement, Datum, NewDatum]): Selection[GElement, NewDatum, PElement, PDatum] = js.native
-  // Data Join ---------------------------------
   /**
-    * Returns the bound datum for the first (non-null) element in the selection.
-    * This is generally useful only if you know the selection contains exactly one element.
+    * Delete the bound data for each element in the selection.
     */
   @JSName("datum")
-  def datum_Datum(): Datum = js.native
+  def datum_Selection(): Selection[GElement, js.UndefOr[scala.Nothing], PElement, PDatum] = js.native
   /**
     * Dispatches a custom event of the specified type to each selected element, in order.
     * An optional parameters map may be specified to set additional properties of the event.

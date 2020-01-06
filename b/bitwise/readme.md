@@ -10,9 +10,9 @@ Manipulates bits, nibbles, bytes, and buffers.
 | ------------------ | :-------------: |
 | Full name          | bitwise |
 | Keywords           | and, binary, bit, bits, bitwise, buffer, buffers, change, flip, manipulate, nand, nibble, nibbles, nor, not, or, read, toggle, write, xnor, xor |
-| # releases         | 16 |
-| # dependents       | 13 |
-| # downloads        | 76427 |
+| # releases         | 17 |
+| # dependents       | 20 |
+| # downloads        | 154377 |
 | # stars            | 2 |
 
 ## Links

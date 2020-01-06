@@ -5,18 +5,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/ListItem/ListItem.ListItemClassKey>> */
+@js.native
 trait PartialClassNameMapListItemClassKey extends js.Object {
-  var button: js.UndefOr[String] = js.undefined
-  var container: js.UndefOr[String] = js.undefined
-  var default: js.UndefOr[String] = js.undefined
-  var dense: js.UndefOr[String] = js.undefined
-  var disabled: js.UndefOr[String] = js.undefined
-  var divider: js.UndefOr[String] = js.undefined
-  var focusVisible: js.UndefOr[String] = js.undefined
-  var gutters: js.UndefOr[String] = js.undefined
-  var root: js.UndefOr[String] = js.undefined
-  var secondaryAction: js.UndefOr[String] = js.undefined
-  var selected: js.UndefOr[String] = js.undefined
+  var button: js.UndefOr[String] = js.native
+  var container: js.UndefOr[String] = js.native
+  var default: js.UndefOr[String] = js.native
+  var dense: js.UndefOr[String] = js.native
+  var disabled: js.UndefOr[String] = js.native
+  var divider: js.UndefOr[String] = js.native
+  var focusVisible: js.UndefOr[String] = js.native
+  var gutters: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.native
+  var secondaryAction: js.UndefOr[String] = js.native
+  var selected: js.UndefOr[String] = js.native
 }
 
 object PartialClassNameMapListItemClassKey {

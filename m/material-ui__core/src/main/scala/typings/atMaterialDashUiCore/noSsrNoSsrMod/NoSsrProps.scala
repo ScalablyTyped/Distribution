@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NoSsrProps extends js.Object {
-  var children: ReactNode
-  var fallback: js.UndefOr[ReactNode] = js.undefined
+  var children: ReactNode = js.native
+  var fallback: js.UndefOr[ReactNode] = js.native
 }
 
 object NoSsrProps {

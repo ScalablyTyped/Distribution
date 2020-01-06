@@ -10,9 +10,9 @@ Install ---------
 | ------------------ | :-------------: |
 | Full name          | angular-fullscreen |
 | Keywords           | - |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 1397 |
+| # downloads        | 2457 |
 | # stars            | 0 |
 
 ## Links

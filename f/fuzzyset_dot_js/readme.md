@@ -10,9 +10,9 @@ A fuzzy string set for JavaScript
 | ------------------ | :-------------: |
 | Full name          | fuzzyset.js |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 20 |
-| # downloads        | 297975 |
+| # releases         | 5 |
+| # dependents       | 24 |
+| # downloads        | 412736 |
 | # stars            | 1 |
 
 ## Links

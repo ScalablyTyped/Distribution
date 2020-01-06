@@ -10,9 +10,9 @@ An Object.keys replacement, in case Object.keys is not available. From https://g
 | ------------------ | :-------------: |
 | Full name          | object-keys |
 | Keywords           | Object.keys, keys, ES5, shim |
-| # releases         | 2 |
-| # dependents       | 133 |
-| # downloads        | 288529708 |
+| # releases         | 4 |
+| # dependents       | 147 |
+| # downloads        | 504068785 |
 | # stars            | 3 |
 
 ## Links

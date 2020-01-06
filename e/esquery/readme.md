@@ -11,8 +11,8 @@ A query library for ECMAScript AST using a CSS selector like query language.
 | Full name          | esquery |
 | Keywords           | ast, ecmascript, javascript, query |
 | # releases         | 2 |
-| # dependents       | 73 |
-| # downloads        | 233734924 |
+| # dependents       | 84 |
+| # downloads        | 252952998 |
 | # stars            | 3 |
 
 ## Links

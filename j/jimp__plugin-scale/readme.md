@@ -10,9 +10,9 @@ scale an image.
 | ------------------ | :-------------: |
 | Full name          | @jimp/plugin-scale |
 | Keywords           | - |
-| # releases         | 12 |
+| # releases         | 65 |
 | # dependents       | 1 |
-| # downloads        | 7437816 |
+| # downloads        | 14004239 |
 | # stars            | 0 |
 
 ## Links

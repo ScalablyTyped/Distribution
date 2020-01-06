@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EmailIdentityArgs extends js.Object {
   /**
     * The email address to assign to SES
     */
-  val email: Input[String]
+  val email: Input[String] = js.native
 }
 
 object EmailIdentityArgs {

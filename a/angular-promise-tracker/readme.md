@@ -12,7 +12,7 @@ angular-promise-tracker =======================
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 23056 |
+| # downloads        | 23731 |
 | # stars            | 2 |
 
 ## Links

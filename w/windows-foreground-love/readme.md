@@ -10,9 +10,9 @@ API wrapper for AllowSetForegroundWindow
 | ------------------ | :-------------: |
 | Full name          | windows-foreground-love |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 4 |
 | # dependents       | 1 |
-| # downloads        | 112149 |
+| # downloads        | 145013 |
 | # stars            | 1 |
 
 ## Links

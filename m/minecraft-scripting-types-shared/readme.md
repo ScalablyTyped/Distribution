@@ -10,9 +10,9 @@ Shared TypeScript definitions for Minecraft Bedrock Edition's scripting engine
 | ------------------ | :-------------: |
 | Full name          | minecraft-scripting-types-shared |
 | Keywords           | - |
-| # releases         | 8 |
+| # releases         | 10 |
 | # dependents       | 2 |
-| # downloads        | 661 |
+| # downloads        | 1244 |
 | # stars            | 0 |
 
 ## Links

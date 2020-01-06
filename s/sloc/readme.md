@@ -11,8 +11,8 @@ sloc is a simple tool to count SLOC (source lines of code)
 | Full name          | sloc |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 34 |
-| # downloads        | 290567 |
+| # dependents       | 35 |
+| # downloads        | 361245 |
 | # stars            | 40 |
 
 ## Links

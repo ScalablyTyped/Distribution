@@ -6,45 +6,46 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/Grid.GridClassKey>> */
+@js.native
 trait PartialStyleRulesGridClassKey extends js.Object {
-  var `align-content-xs-center`: js.UndefOr[CSSProperties] = js.undefined
-  var `align-content-xs-flex-end`: js.UndefOr[CSSProperties] = js.undefined
-  var `align-content-xs-flex-start`: js.UndefOr[CSSProperties] = js.undefined
-  var `align-content-xs-space-around`: js.UndefOr[CSSProperties] = js.undefined
-  var `align-content-xs-space-between`: js.UndefOr[CSSProperties] = js.undefined
-  var `align-items-xs-baseline`: js.UndefOr[CSSProperties] = js.undefined
-  var `align-items-xs-center`: js.UndefOr[CSSProperties] = js.undefined
-  var `align-items-xs-flex-end`: js.UndefOr[CSSProperties] = js.undefined
-  var `align-items-xs-flex-start`: js.UndefOr[CSSProperties] = js.undefined
-  var container: js.UndefOr[CSSProperties] = js.undefined
-  var `direction-xs-column`: js.UndefOr[CSSProperties] = js.undefined
-  var `direction-xs-column-reverse`: js.UndefOr[CSSProperties] = js.undefined
-  var `direction-xs-row-reverse`: js.UndefOr[CSSProperties] = js.undefined
-  var `grid-xs-1`: js.UndefOr[CSSProperties] = js.undefined
-  var `grid-xs-10`: js.UndefOr[CSSProperties] = js.undefined
-  var `grid-xs-11`: js.UndefOr[CSSProperties] = js.undefined
-  var `grid-xs-12`: js.UndefOr[CSSProperties] = js.undefined
-  var `grid-xs-2`: js.UndefOr[CSSProperties] = js.undefined
-  var `grid-xs-3`: js.UndefOr[CSSProperties] = js.undefined
-  var `grid-xs-4`: js.UndefOr[CSSProperties] = js.undefined
-  var `grid-xs-5`: js.UndefOr[CSSProperties] = js.undefined
-  var `grid-xs-6`: js.UndefOr[CSSProperties] = js.undefined
-  var `grid-xs-7`: js.UndefOr[CSSProperties] = js.undefined
-  var `grid-xs-8`: js.UndefOr[CSSProperties] = js.undefined
-  var `grid-xs-9`: js.UndefOr[CSSProperties] = js.undefined
-  var `grid-xs-auto`: js.UndefOr[CSSProperties] = js.undefined
-  var `grid-xs-true`: js.UndefOr[CSSProperties] = js.undefined
-  var item: js.UndefOr[CSSProperties] = js.undefined
-  var `justify-xs-center`: js.UndefOr[CSSProperties] = js.undefined
-  var `justify-xs-flex-end`: js.UndefOr[CSSProperties] = js.undefined
-  var `justify-xs-space-around`: js.UndefOr[CSSProperties] = js.undefined
-  var `justify-xs-space-between`: js.UndefOr[CSSProperties] = js.undefined
-  var `spacing-xs-16`: js.UndefOr[CSSProperties] = js.undefined
-  var `spacing-xs-24`: js.UndefOr[CSSProperties] = js.undefined
-  var `spacing-xs-40`: js.UndefOr[CSSProperties] = js.undefined
-  var `spacing-xs-8`: js.UndefOr[CSSProperties] = js.undefined
-  var `wrap-xs-nowrap`: js.UndefOr[CSSProperties] = js.undefined
-  var `wrap-xs-wrap-reverse`: js.UndefOr[CSSProperties] = js.undefined
+  var `align-content-xs-center`: js.UndefOr[CSSProperties] = js.native
+  var `align-content-xs-flex-end`: js.UndefOr[CSSProperties] = js.native
+  var `align-content-xs-flex-start`: js.UndefOr[CSSProperties] = js.native
+  var `align-content-xs-space-around`: js.UndefOr[CSSProperties] = js.native
+  var `align-content-xs-space-between`: js.UndefOr[CSSProperties] = js.native
+  var `align-items-xs-baseline`: js.UndefOr[CSSProperties] = js.native
+  var `align-items-xs-center`: js.UndefOr[CSSProperties] = js.native
+  var `align-items-xs-flex-end`: js.UndefOr[CSSProperties] = js.native
+  var `align-items-xs-flex-start`: js.UndefOr[CSSProperties] = js.native
+  var container: js.UndefOr[CSSProperties] = js.native
+  var `direction-xs-column`: js.UndefOr[CSSProperties] = js.native
+  var `direction-xs-column-reverse`: js.UndefOr[CSSProperties] = js.native
+  var `direction-xs-row-reverse`: js.UndefOr[CSSProperties] = js.native
+  var `grid-xs-1`: js.UndefOr[CSSProperties] = js.native
+  var `grid-xs-10`: js.UndefOr[CSSProperties] = js.native
+  var `grid-xs-11`: js.UndefOr[CSSProperties] = js.native
+  var `grid-xs-12`: js.UndefOr[CSSProperties] = js.native
+  var `grid-xs-2`: js.UndefOr[CSSProperties] = js.native
+  var `grid-xs-3`: js.UndefOr[CSSProperties] = js.native
+  var `grid-xs-4`: js.UndefOr[CSSProperties] = js.native
+  var `grid-xs-5`: js.UndefOr[CSSProperties] = js.native
+  var `grid-xs-6`: js.UndefOr[CSSProperties] = js.native
+  var `grid-xs-7`: js.UndefOr[CSSProperties] = js.native
+  var `grid-xs-8`: js.UndefOr[CSSProperties] = js.native
+  var `grid-xs-9`: js.UndefOr[CSSProperties] = js.native
+  var `grid-xs-auto`: js.UndefOr[CSSProperties] = js.native
+  var `grid-xs-true`: js.UndefOr[CSSProperties] = js.native
+  var item: js.UndefOr[CSSProperties] = js.native
+  var `justify-xs-center`: js.UndefOr[CSSProperties] = js.native
+  var `justify-xs-flex-end`: js.UndefOr[CSSProperties] = js.native
+  var `justify-xs-space-around`: js.UndefOr[CSSProperties] = js.native
+  var `justify-xs-space-between`: js.UndefOr[CSSProperties] = js.native
+  var `spacing-xs-16`: js.UndefOr[CSSProperties] = js.native
+  var `spacing-xs-24`: js.UndefOr[CSSProperties] = js.native
+  var `spacing-xs-40`: js.UndefOr[CSSProperties] = js.native
+  var `spacing-xs-8`: js.UndefOr[CSSProperties] = js.native
+  var `wrap-xs-nowrap`: js.UndefOr[CSSProperties] = js.native
+  var `wrap-xs-wrap-reverse`: js.UndefOr[CSSProperties] = js.native
 }
 
 object PartialStyleRulesGridClassKey {

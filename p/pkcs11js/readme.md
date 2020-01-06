@@ -10,9 +10,9 @@ A Node.js implementation of the PKCS#11 2.3 interface
 | ------------------ | :-------------: |
 | Full name          | pkcs11js |
 | Keywords           | pkcs11, rsa, ecdsa, aes, crypto, smartcard, token, nss, softhsm2 |
-| # releases         | 10 |
-| # dependents       | 14 |
-| # downloads        | 499531 |
+| # releases         | 8 |
+| # dependents       | 16 |
+| # downloads        | 540312 |
 | # stars            | 2 |
 
 ## Links

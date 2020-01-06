@@ -10,9 +10,9 @@ Fast and advanced TIFF decoder
 | ------------------ | :-------------: |
 | Full name          | utif |
 | Keywords           | tiff, image, conversion |
-| # releases         | 12 |
-| # dependents       | 8 |
-| # downloads        | 2133883 |
+| # releases         | 8 |
+| # dependents       | 11 |
+| # downloads        | 11407449 |
 | # stars            | 0 |
 
 ## Links

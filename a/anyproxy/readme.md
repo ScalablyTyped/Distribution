@@ -10,9 +10,9 @@ A fully configurable HTTP/HTTPS proxy in Node.js
 | ------------------ | :-------------: |
 | Full name          | anyproxy |
 | Keywords           | - |
-| # releases         | 25 |
-| # dependents       | 51 |
-| # downloads        | 78418 |
+| # releases         | 20 |
+| # dependents       | 53 |
+| # downloads        | 111838 |
 | # stars            | 12 |
 
 ## Links

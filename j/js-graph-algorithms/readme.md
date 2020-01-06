@@ -10,9 +10,9 @@ Package implements data structures and algorithms for processing various types o
 | ------------------ | :-------------: |
 | Full name          | js-graph-algorithms |
 | Keywords           | graph, weighted graph, digraph, directed graph, connected components, strongly connected components, min cut, max flow, dijkstra, bellman-ford, minimum spanning tree, depth first search, breadth first search, directed cycles, topological sort, ford-fulkerson, prim, kruskal |
-| # releases         | 3 |
+| # releases         | 1 |
 | # dependents       | 3 |
-| # downloads        | 83601 |
+| # downloads        | 119835 |
 | # stars            | 2 |
 
 ## Links

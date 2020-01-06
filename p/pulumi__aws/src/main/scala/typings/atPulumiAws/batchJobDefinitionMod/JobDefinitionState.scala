@@ -8,41 +8,42 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait JobDefinitionState extends js.Object {
   /**
     * The Amazon Resource Name of the job definition.
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * A valid [container properties](http://docs.aws.amazon.com/batch/latest/APIReference/API_RegisterJobDefinition.html)
     * provided as a single valid JSON document. This parameter is required if the `type` parameter is `container`.
     */
-  val containerProperties: js.UndefOr[Input[String]] = js.undefined
+  val containerProperties: js.UndefOr[Input[String]] = js.native
   /**
     * Specifies the name of the job definition.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * Specifies the parameter substitution placeholders to set in the job definition.
     */
-  val parameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
+  val parameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * Specifies the retry strategy to use for failed jobs that are submitted with this job definition.
     * Maximum number of `retryStrategy` is `1`.  Defined below.
     */
-  val retryStrategy: js.UndefOr[Input[JobDefinitionRetryStrategy]] = js.undefined
+  val retryStrategy: js.UndefOr[Input[JobDefinitionRetryStrategy]] = js.native
   /**
     * The revision of the job definition.
     */
-  val revision: js.UndefOr[Input[Double]] = js.undefined
+  val revision: js.UndefOr[Input[Double]] = js.native
   /**
     * Specifies the timeout for jobs so that if a job runs longer, AWS Batch terminates the job. Maximum number of `timeout` is `1`. Defined below.
     */
-  val timeout: js.UndefOr[Input[JobDefinitionTimeout]] = js.undefined
+  val timeout: js.UndefOr[Input[JobDefinitionTimeout]] = js.native
   /**
     * The type of job definition.  Must be `container`
     */
-  val `type`: js.UndefOr[Input[String]] = js.undefined
+  val `type`: js.UndefOr[Input[String]] = js.native
 }
 
 object JobDefinitionState {

@@ -10,9 +10,9 @@ mozjpeg wrapper that makes it seamlessly available as a local dependency
 | ------------------ | :-------------: |
 | Full name          | mozjpeg |
 | Keywords           | imagemin, jpeg, jpg, img, image, compress, minify, mozjpeg, optimize |
-| # releases         | 4 |
-| # dependents       | 27 |
-| # downloads        | 12487705 |
+| # releases         | 3 |
+| # dependents       | 29 |
+| # downloads        | 18971418 |
 | # stars            | 5 |
 
 ## Links

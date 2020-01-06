@@ -10,9 +10,9 @@ Get the latest version of an npm package
 | ------------------ | :-------------: |
 | Full name          | latest-version |
 | Keywords           | latest, version, npm, pkg, package, package.json, current, module |
-| # releases         | 2 |
-| # dependents       | 249 |
-| # downloads        | 122732808 |
+| # releases         | 4 |
+| # dependents       | 354 |
+| # downloads        | 185840921 |
 | # stars            | 9 |
 
 ## Links

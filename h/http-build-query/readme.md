@@ -12,7 +12,7 @@ Generate URL-encoded query string from the object (php's http_build_query() in j
 | Keywords           | http, build, query, url |
 | # releases         | 5 |
 | # dependents       | 11 |
-| # downloads        | 33479 |
+| # downloads        | 40103 |
 | # stars            | 0 |
 
 ## Links

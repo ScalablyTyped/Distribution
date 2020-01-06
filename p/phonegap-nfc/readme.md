@@ -9,9 +9,9 @@ Near Field Communication (NFC) Plugin. Read and write NDEF messages to NFC tags 
 | ------------------ | :-------------: |
 | Full name          | phonegap-nfc |
 | Keywords           | nfc, ndef, ecosystem:cordova, cordova, cordova-android, cordova-wp8, cordova-windows, cordova-blackberry10, cordova-ios |
-| # releases         | 9 |
+| # releases         | 8 |
 | # dependents       | 0 |
-| # downloads        | 43821 |
+| # downloads        | 50546 |
 | # stars            | 4 |
 
 ## Links

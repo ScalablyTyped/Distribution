@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/sns", "Topic")
 @js.native
 class Topic protected ()
-  extends typings.atPulumiAws.snsSnsMixinsMod.snsTopicMod.Topic {
+  extends typings.atPulumiAws.snsTopicMod.Topic {
   /**
     * Create a Topic resource with the given unique name, arguments, and options.
     *
@@ -37,13 +37,13 @@ object Topic extends js.Object {
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
     */
-  def get(name: String, id: Input[ID]): typings.atPulumiAws.snsSnsMixinsMod.snsTopicMod.Topic = js.native
-  def get(name: String, id: Input[ID], state: TopicState): typings.atPulumiAws.snsSnsMixinsMod.snsTopicMod.Topic = js.native
-  def get(name: String, id: Input[ID], state: TopicState, opts: CustomResourceOptions): typings.atPulumiAws.snsSnsMixinsMod.snsTopicMod.Topic = js.native
+  def get(name: String, id: Input[ID]): typings.atPulumiAws.snsTopicMod.Topic = js.native
+  def get(name: String, id: Input[ID], state: TopicState): typings.atPulumiAws.snsTopicMod.Topic = js.native
+  def get(name: String, id: Input[ID], state: TopicState, opts: CustomResourceOptions): typings.atPulumiAws.snsTopicMod.Topic = js.native
   /**
     * Returns true if the given object is an instance of Topic.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
-  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sns/snsMixins.@pulumi/aws/sns/topic.Topic */ Boolean = js.native
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sns/topic.Topic */ Boolean = js.native
 }
 

@@ -5,27 +5,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SourceCredentialState extends js.Object {
   /**
     * The ARN of Source Credential.
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * The type of authentication used to connect to a GitHub, GitHub Enterprise, or Bitbucket repository. An OAUTH connection is not supported by the API.
     */
-  val authType: js.UndefOr[Input[String]] = js.undefined
+  val authType: js.UndefOr[Input[String]] = js.native
   /**
     * The source provider used for this project.
     */
-  val serverType: js.UndefOr[Input[String]] = js.undefined
+  val serverType: js.UndefOr[Input[String]] = js.native
   /**
     * For `GitHub` or `GitHub Enterprise`, this is the personal access token. For `Bitbucket`, this is the app password.
     */
-  val token: js.UndefOr[Input[String]] = js.undefined
+  val token: js.UndefOr[Input[String]] = js.native
   /**
     * The Bitbucket username when the authType is `BASIC_AUTH`. This parameter is not valid for other types of source providers or connections.
     */
-  val userName: js.UndefOr[Input[String]] = js.undefined
+  val userName: js.UndefOr[Input[String]] = js.native
 }
 
 object SourceCredentialState {

@@ -7,16 +7,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PolicyStatement extends js.Object {
-  var Action: js.UndefOr[Input[js.Array[Input[String]] | String]] = js.undefined
-  var Condition: js.UndefOr[Input[Conditions]] = js.undefined
-  var Effect: Input[Allow | Deny]
-  var NotAction: js.UndefOr[Input[js.Array[Input[String]] | String]] = js.undefined
-  var NotPrincipal: js.UndefOr[Input[Principal]] = js.undefined
-  var NotResource: js.UndefOr[Input[js.Array[Input[String]] | String]] = js.undefined
-  var Principal: js.UndefOr[Input[typings.atPulumiAws.iamDocumentsMod.Principal]] = js.undefined
-  var Resource: js.UndefOr[Input[js.Array[Input[String]] | String]] = js.undefined
-  var Sid: js.UndefOr[Input[String]] = js.undefined
+  var Action: js.UndefOr[Input[js.Array[Input[String]] | String]] = js.native
+  var Condition: js.UndefOr[Input[Conditions]] = js.native
+  var Effect: Input[Allow | Deny] = js.native
+  var NotAction: js.UndefOr[Input[js.Array[Input[String]] | String]] = js.native
+  var NotPrincipal: js.UndefOr[Input[Principal]] = js.native
+  var NotResource: js.UndefOr[Input[js.Array[Input[String]] | String]] = js.native
+  var Principal: js.UndefOr[Input[typings.atPulumiAws.iamDocumentsMod.Principal]] = js.native
+  var Resource: js.UndefOr[Input[js.Array[Input[String]] | String]] = js.native
+  var Sid: js.UndefOr[Input[String]] = js.native
 }
 
 object PolicyStatement {

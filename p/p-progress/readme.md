@@ -10,9 +10,9 @@ Create a promise that reports progress
 | ------------------ | :-------------: |
 | Full name          | p-progress |
 | Keywords           | promise, progress, events, event, async, function, await, promises, bluebird |
-| # releases         | 7 |
-| # dependents       | 8 |
-| # downloads        | 5508 |
+| # releases         | 5 |
+| # dependents       | 9 |
+| # downloads        | 7497 |
 | # stars            | 1 |
 
 ## Links

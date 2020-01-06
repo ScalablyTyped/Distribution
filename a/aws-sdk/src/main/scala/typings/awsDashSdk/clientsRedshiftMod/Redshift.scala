@@ -219,6 +219,19 @@ trait Redshift extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateHsmConfigurationResult, Unit]
   ): Request[CreateHsmConfigurationResult, AWSError] = js.native
   /**
+    * Creates a scheduled action. A scheduled action contains a schedule and an Amazon Redshift API action. For example, you can create a schedule of when to run the ResizeCluster API operation. 
+    */
+  def createScheduledAction(): Request[ScheduledAction, AWSError] = js.native
+  def createScheduledAction(callback: js.Function2[/* err */ AWSError, /* data */ ScheduledAction, Unit]): Request[ScheduledAction, AWSError] = js.native
+  /**
+    * Creates a scheduled action. A scheduled action contains a schedule and an Amazon Redshift API action. For example, you can create a schedule of when to run the ResizeCluster API operation. 
+    */
+  def createScheduledAction(params: CreateScheduledActionMessage): Request[ScheduledAction, AWSError] = js.native
+  def createScheduledAction(
+    params: CreateScheduledActionMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ ScheduledAction, Unit]
+  ): Request[ScheduledAction, AWSError] = js.native
+  /**
     * Creates a snapshot copy grant that permits Amazon Redshift to use a customer master key (CMK) from AWS Key Management Service (AWS KMS) to encrypt copied snapshots in a destination region.  For more information about managing snapshot copy grants, go to Amazon Redshift Database Encryption in the Amazon Redshift Cluster Management Guide. 
     */
   def createSnapshotCopyGrant(): Request[CreateSnapshotCopyGrantResult, AWSError] = js.native
@@ -356,6 +369,19 @@ trait Redshift extends Service {
   def deleteHsmConfiguration(params: DeleteHsmConfigurationMessage): Request[js.Object, AWSError] = js.native
   def deleteHsmConfiguration(
     params: DeleteHsmConfigurationMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes a scheduled action. 
+    */
+  def deleteScheduledAction(): Request[js.Object, AWSError] = js.native
+  def deleteScheduledAction(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes a scheduled action. 
+    */
+  def deleteScheduledAction(params: DeleteScheduledActionMessage): Request[js.Object, AWSError] = js.native
+  def deleteScheduledAction(
+    params: DeleteScheduledActionMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
@@ -683,6 +709,19 @@ trait Redshift extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ResizeProgressMessage, Unit]
   ): Request[ResizeProgressMessage, AWSError] = js.native
   /**
+    * Describes properties of scheduled actions. 
+    */
+  def describeScheduledActions(): Request[ScheduledActionsMessage, AWSError] = js.native
+  def describeScheduledActions(callback: js.Function2[/* err */ AWSError, /* data */ ScheduledActionsMessage, Unit]): Request[ScheduledActionsMessage, AWSError] = js.native
+  /**
+    * Describes properties of scheduled actions. 
+    */
+  def describeScheduledActions(params: DescribeScheduledActionsMessage): Request[ScheduledActionsMessage, AWSError] = js.native
+  def describeScheduledActions(
+    params: DescribeScheduledActionsMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ ScheduledActionsMessage, Unit]
+  ): Request[ScheduledActionsMessage, AWSError] = js.native
+  /**
     * Returns a list of snapshot copy grants owned by the AWS account in the destination region.  For more information about managing snapshot copy grants, go to Amazon Redshift Database Encryption in the Amazon Redshift Cluster Management Guide. 
     */
   def describeSnapshotCopyGrants(): Request[SnapshotCopyGrantMessage, AWSError] = js.native
@@ -939,6 +978,19 @@ trait Redshift extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ModifyEventSubscriptionResult, Unit]
   ): Request[ModifyEventSubscriptionResult, AWSError] = js.native
   /**
+    * Modify a scheduled action. 
+    */
+  def modifyScheduledAction(): Request[ScheduledAction, AWSError] = js.native
+  def modifyScheduledAction(callback: js.Function2[/* err */ AWSError, /* data */ ScheduledAction, Unit]): Request[ScheduledAction, AWSError] = js.native
+  /**
+    * Modify a scheduled action. 
+    */
+  def modifyScheduledAction(params: ModifyScheduledActionMessage): Request[ScheduledAction, AWSError] = js.native
+  def modifyScheduledAction(
+    params: ModifyScheduledActionMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ ScheduledAction, Unit]
+  ): Request[ScheduledAction, AWSError] = js.native
+  /**
     * Modifies the number of days to retain snapshots in the destination AWS Region after they are copied from the source AWS Region. By default, this operation only changes the retention period of copied automated snapshots. The retention periods for both new and existing copied automated snapshots are updated with the new retention period. You can set the manual option to change only the retention periods of copied manual snapshots. If you set this option, only newly copied manual snapshots have the new retention period. 
     */
   def modifySnapshotCopyRetentionPeriod(): Request[ModifySnapshotCopyRetentionPeriodResult, AWSError] = js.native
@@ -1006,12 +1058,12 @@ trait Redshift extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ClusterParameterGroupNameMessage, Unit]
   ): Request[ClusterParameterGroupNameMessage, AWSError] = js.native
   /**
-    * Changes the size of the cluster. You can change the cluster's type, or change the number or type of nodes. The default behavior is to use the elastic resize method. With an elastic resize, your cluster is available for read and write operations more quickly than with the classic resize method.  Elastic resize operations have the following restrictions:   You can only resize clusters of the following types:   dc2.large   dc2.8xlarge   ds2.xlarge   ds2.8xlarge     The type of nodes that you add must match the node type for the cluster.  
+    * Changes the size of the cluster. You can change the cluster's type, or change the number or type of nodes. The default behavior is to use the elastic resize method. With an elastic resize, your cluster is available for read and write operations more quickly than with the classic resize method.  Elastic resize operations have the following restrictions:   You can only resize clusters of the following types:   dc2.large   dc2.8xlarge   ds2.xlarge   ds2.8xlarge   ra3.16xlarge     The type of nodes that you add must match the node type for the cluster.  
     */
   def resizeCluster(): Request[ResizeClusterResult, AWSError] = js.native
   def resizeCluster(callback: js.Function2[/* err */ AWSError, /* data */ ResizeClusterResult, Unit]): Request[ResizeClusterResult, AWSError] = js.native
   /**
-    * Changes the size of the cluster. You can change the cluster's type, or change the number or type of nodes. The default behavior is to use the elastic resize method. With an elastic resize, your cluster is available for read and write operations more quickly than with the classic resize method.  Elastic resize operations have the following restrictions:   You can only resize clusters of the following types:   dc2.large   dc2.8xlarge   ds2.xlarge   ds2.8xlarge     The type of nodes that you add must match the node type for the cluster.  
+    * Changes the size of the cluster. You can change the cluster's type, or change the number or type of nodes. The default behavior is to use the elastic resize method. With an elastic resize, your cluster is available for read and write operations more quickly than with the classic resize method.  Elastic resize operations have the following restrictions:   You can only resize clusters of the following types:   dc2.large   dc2.8xlarge   ds2.xlarge   ds2.8xlarge   ra3.16xlarge     The type of nodes that you add must match the node type for the cluster.  
     */
   def resizeCluster(params: ResizeClusterMessage): Request[ResizeClusterResult, AWSError] = js.native
   def resizeCluster(

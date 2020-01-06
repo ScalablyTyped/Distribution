@@ -5,30 +5,31 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LoadBalancerListener extends js.Object {
   /**
     * The port on the instance to route to
     */
-  var instancePort: Input[Double]
+  var instancePort: Input[Double] = js.native
   /**
     * The protocol to use to the instance. Valid
     * values are `HTTP`, `HTTPS`, `TCP`, or `SSL`
     */
-  var instanceProtocol: Input[String]
+  var instanceProtocol: Input[String] = js.native
   /**
     * The port to listen on for the load balancer
     */
-  var lbPort: Input[Double]
+  var lbPort: Input[Double] = js.native
   /**
     * The protocol to listen on. Valid values are `HTTP`,
     * `HTTPS`, `TCP`, or `SSL`
     */
-  var lbProtocol: Input[String]
+  var lbProtocol: Input[String] = js.native
   /**
     * The ARN of an SSL certificate you have
     * uploaded to AWS IAM. **Note ECDSA-specific restrictions below.  Only valid when `lbProtocol` is either HTTPS or SSL**
     */
-  var sslCertificateId: js.UndefOr[Input[String]] = js.undefined
+  var sslCertificateId: js.UndefOr[Input[String]] = js.native
 }
 
 object LoadBalancerListener {

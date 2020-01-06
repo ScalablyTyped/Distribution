@@ -10,9 +10,9 @@ A jQuery plugin that will count up (or down) to a target number at a specified s
 | ------------------ | :-------------: |
 | Full name          | jquery-countto |
 | Keywords           | jQuery, counter, count, increment, decrement |
-| # releases         | 0 |
+| # releases         | 1 |
 | # dependents       | 0 |
-| # downloads        | 42784 |
+| # downloads        | 63796 |
 | # stars            | 0 |
 
 ## Links

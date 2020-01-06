@@ -31,11 +31,8 @@ abstract class DeviceInformationCollection () extends Array[DeviceInformation] {
     */
   def getMany(startIndex: Double): Anon_ItemsReturnValueDeviceInformation = js.native
   def indexOf(value: DeviceInformation, extra: js.Any*): Anon_Index = js.native
-  /**
-    * Returns the index of the specified DeviceInformation object in the collection.
-    * @param value The DeviceInformation object in the collection.
-    */
+  /* hack */
   @JSName("indexOf")
-  def indexOf_Anon_Index(value: DeviceInformation): Anon_Index = js.native
+  def indexOf_Double(searchElement: DeviceInformation): Double = js.native
 }
 

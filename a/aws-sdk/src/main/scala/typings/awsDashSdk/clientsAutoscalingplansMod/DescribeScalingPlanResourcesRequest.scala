@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DescribeScalingPlanResourcesRequest extends js.Object {
   /**
     * The maximum number of scalable resources to return. The value must be between 1 and 50. The default value is 50.
     */
-  var MaxResults: js.UndefOr[typings.awsDashSdk.clientsAutoscalingplansMod.MaxResults] = js.undefined
+  var MaxResults: js.UndefOr[typings.awsDashSdk.clientsAutoscalingplansMod.MaxResults] = js.native
   /**
     * The token for the next set of results.
     */
-  var NextToken: js.UndefOr[typings.awsDashSdk.clientsAutoscalingplansMod.NextToken] = js.undefined
+  var NextToken: js.UndefOr[typings.awsDashSdk.clientsAutoscalingplansMod.NextToken] = js.native
   /**
     * The name of the scaling plan.
     */
-  var ScalingPlanName: typings.awsDashSdk.clientsAutoscalingplansMod.ScalingPlanName
+  var ScalingPlanName: typings.awsDashSdk.clientsAutoscalingplansMod.ScalingPlanName = js.native
   /**
     * The version number of the scaling plan.
     */
-  var ScalingPlanVersion: typings.awsDashSdk.clientsAutoscalingplansMod.ScalingPlanVersion
+  var ScalingPlanVersion: typings.awsDashSdk.clientsAutoscalingplansMod.ScalingPlanVersion = js.native
 }
 
 object DescribeScalingPlanResourcesRequest {
@@ -31,9 +32,9 @@ object DescribeScalingPlanResourcesRequest {
     MaxResults: Int | Double = null,
     NextToken: NextToken = null
   ): DescribeScalingPlanResourcesRequest = {
-    val __obj = js.Dynamic.literal(ScalingPlanName = ScalingPlanName, ScalingPlanVersion = ScalingPlanVersion)
+    val __obj = js.Dynamic.literal(ScalingPlanName = ScalingPlanName.asInstanceOf[js.Any], ScalingPlanVersion = ScalingPlanVersion.asInstanceOf[js.Any])
     if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeScalingPlanResourcesRequest]
   }
 }

@@ -10,9 +10,9 @@ An abstract prototype matching the LevelDOWN API
 | ------------------ | :-------------: |
 | Full name          | abstract-leveldown |
 | Keywords           | level, leveldb, leveldown, levelup |
-| # releases         | 14 |
-| # dependents       | 114 |
-| # downloads        | 10434614 |
+| # releases         | 15 |
+| # dependents       | 130 |
+| # downloads        | 14872584 |
 | # stars            | 4 |
 
 ## Links

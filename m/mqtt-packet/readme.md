@@ -10,9 +10,9 @@ Parse and generate MQTT packets like a breeze
 | ------------------ | :-------------: |
 | Full name          | mqtt-packet |
 | Keywords           | MQTT, packet, parse, publish, subscribe, pubsub |
-| # releases         | 12 |
-| # dependents       | 19 |
-| # downloads        | 3884990 |
+| # releases         | 14 |
+| # dependents       | 26 |
+| # downloads        | 6075055 |
 | # stars            | 1 |
 
 ## Links

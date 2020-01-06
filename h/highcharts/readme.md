@@ -10,9 +10,9 @@ JavaScript charting framework
 | ------------------ | :-------------: |
 | Full name          | highcharts |
 | Keywords           | charts, dataviz, graphs, visualization, data, browserify, webpack |
-| # releases         | 24 |
-| # dependents       | 241 |
-| # downloads        | 10804072 |
+| # releases         | 22 |
+| # dependents       | 305 |
+| # downloads        | 15725156 |
 | # stars            | 19 |
 
 ## Links

@@ -10,9 +10,9 @@ Axios adapter that allows to easily mock requests
 | ------------------ | :-------------: |
 | Full name          | axios-mock-adapter |
 | Keywords           | axios, test, mock, request, stub, adapter |
-| # releases         | 11 |
-| # dependents       | 38 |
-| # downloads        | 6661800 |
+| # releases         | 10 |
+| # dependents       | 68 |
+| # downloads        | 10912504 |
 | # stars            | 15 |
 
 ## Links

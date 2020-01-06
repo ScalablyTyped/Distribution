@@ -6,23 +6,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait S3BucketAssociationState extends js.Object {
   /**
     * The name of the S3 bucket that you want to associate with Amazon Macie.
     */
-  val bucketName: js.UndefOr[Input[String]] = js.undefined
+  val bucketName: js.UndefOr[Input[String]] = js.native
   /**
     * The configuration of how Amazon Macie classifies the S3 objects.
     */
-  val classificationType: js.UndefOr[Input[S3BucketAssociationClassificationType]] = js.undefined
+  val classificationType: js.UndefOr[Input[S3BucketAssociationClassificationType]] = js.native
   /**
     * The ID of the Amazon Macie member account whose S3 resources you want to associate with Macie. If `memberAccountId` isn't specified, the action associates specified S3 resources with Macie for the current master account.
     */
-  val memberAccountId: js.UndefOr[Input[String]] = js.undefined
+  val memberAccountId: js.UndefOr[Input[String]] = js.native
   /**
     * Object key prefix identifying one or more S3 objects to which the association applies.
     */
-  val prefix: js.UndefOr[Input[String]] = js.undefined
+  val prefix: js.UndefOr[Input[String]] = js.native
 }
 
 object S3BucketAssociationState {

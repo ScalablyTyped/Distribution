@@ -10,9 +10,9 @@ Pretty options for minimist
 | ------------------ | :-------------: |
 | Full name          | minimist-options |
 | Keywords           | minimist, argv, args |
-| # releases         | 8 |
-| # dependents       | 17 |
-| # downloads        | 46552079 |
+| # releases         | 5 |
+| # dependents       | 21 |
+| # downloads        | 90364637 |
 | # stars            | 1 |
 
 ## Links

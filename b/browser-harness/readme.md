@@ -11,7 +11,7 @@ Browser Harness ===============
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 1483 |
+| # downloads        | 1774 |
 | # stars            | 0 |
 
 ## Links

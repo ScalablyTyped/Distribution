@@ -10,9 +10,9 @@ Error types for use throughout SocketCluster
 | ------------------ | :-------------: |
 | Full name          | sc-errors |
 | Keywords           | errors, socketcluster |
-| # releases         | 10 |
-| # dependents       | 19 |
-| # downloads        | 3455244 |
+| # releases         | 5 |
+| # dependents       | 20 |
+| # downloads        | 3358438 |
 | # stars            | 0 |
 
 ## Links

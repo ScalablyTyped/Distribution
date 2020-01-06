@@ -10,9 +10,9 @@ Strip all newlines from the given string.
 | ------------------ | :-------------: |
 | Full name          | newline-remove |
 | Keywords           | line ending, newline, remove, strip |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 33400 |
+| # downloads        | 159628 |
 | # stars            | 2 |
 
 ## Links

@@ -11,8 +11,8 @@ ECMAScript6 WeakMap polyfill
 | Full name          | es6-weak-map |
 | Keywords           | map, weakmap, collection, es6, harmony, list, hash, gc, ponyfill |
 | # releases         | 2 |
-| # dependents       | 67 |
-| # downloads        | 153105784 |
+| # dependents       | 70 |
+| # downloads        | 170371299 |
 | # stars            | 2 |
 
 ## Links

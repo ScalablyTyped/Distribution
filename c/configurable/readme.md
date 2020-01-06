@@ -11,8 +11,8 @@ Configuration mixin
 | Full name          | configurable |
 | Keywords           | configuration |
 | # releases         | 0 |
-| # dependents       | 20 |
-| # downloads        | 337820 |
+| # dependents       | 18 |
+| # downloads        | 335326 |
 | # stars            | 0 |
 
 ## Links

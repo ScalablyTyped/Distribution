@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ConfigurationAggregatorOrganizationAggregationSource extends js.Object {
   /**
     * If true, aggregate existing AWS Config regions and future regions.
     */
-  var allRegions: js.UndefOr[Input[Boolean]] = js.undefined
+  var allRegions: js.UndefOr[Input[Boolean]] = js.native
   /**
     * List of source regions being aggregated.
     */
-  var regions: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  var regions: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * ARN of the IAM role used to retrieve AWS Organization details associated with the aggregator account.
     */
-  var roleArn: Input[String]
+  var roleArn: Input[String] = js.native
 }
 
 object ConfigurationAggregatorOrganizationAggregationSource {

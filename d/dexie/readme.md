@@ -10,9 +10,9 @@ A Minimalistic Wrapper for IndexedDB
 | ------------------ | :-------------: |
 | Full name          | dexie |
 | Keywords           | indexeddb, browser, database |
-| # releases         | 15 |
-| # dependents       | 88 |
-| # downloads        | 865685 |
+| # releases         | 14 |
+| # dependents       | 125 |
+| # downloads        | 1355528 |
 | # stars            | 21 |
 
 ## Links

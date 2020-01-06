@@ -10,9 +10,9 @@ Simple and configurable app introduction slider for react native
 | ------------------ | :-------------: |
 | Full name          | react-native-app-intro-slider |
 | Keywords           | swiper, App, Intro, ios, android, react-component, react-native, slider |
-| # releases         | 10 |
+| # releases         | 8 |
 | # dependents       | 1 |
-| # downloads        | 119903 |
+| # downloads        | 213809 |
 | # stars            | 0 |
 
 ## Links

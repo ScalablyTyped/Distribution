@@ -10,9 +10,9 @@ A React component for displaying a calendar.
 | ------------------ | :-------------: |
 | Full name          | @atlaskit/calendar |
 | Keywords           | - |
-| # releases         | 67 |
-| # dependents       | 3 |
-| # downloads        | 611247 |
+| # releases         | 63 |
+| # dependents       | 5 |
+| # downloads        | 947275 |
 | # stars            | 0 |
 
 ## Links

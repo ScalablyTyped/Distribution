@@ -11,8 +11,8 @@ An Error subclass that will chain nested Errors and dump nested stacktraces
 | Full name          | nested-error-stacks |
 | Keywords           | error, nested, stack |
 | # releases         | 3 |
-| # dependents       | 42 |
-| # downloads        | 16689052 |
+| # dependents       | 54 |
+| # downloads        | 32354857 |
 | # stars            | 3 |
 
 ## Links

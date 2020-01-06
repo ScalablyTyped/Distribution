@@ -9,33 +9,34 @@ import scala.scalajs.js.annotation._
 /* Inlined parent std.Record<@material-ui/core.@material-ui/core/styles/createTypography.ThemeStyle, @material-ui/core.@material-ui/core/styles/createTypography.TypographyStyle> */
 /* Inlined parent @material-ui/core.@material-ui/core/styles/createTypography.FontStyle */
 /* Inlined parent @material-ui/core.@material-ui/core/styles/createTypography.TypographyUtils */
+@js.native
 trait Typography extends js.Object {
-  var body1: TypographyStyle
-  var body2: TypographyStyle
-  var button: TypographyStyle
-  var caption: TypographyStyle
-  var display1: TypographyStyle
-  var display2: TypographyStyle
-  var display3: TypographyStyle
-  var display4: TypographyStyle
-  var fontFamily: FontFamilyProperty
-  var fontSize: Double
-  var fontWeightLight: FontWeightProperty
-  var fontWeightMedium: FontWeightProperty
-  var fontWeightRegular: FontWeightProperty
-  var h1: TypographyStyle
-  var h2: TypographyStyle
-  var h3: TypographyStyle
-  var h4: TypographyStyle
-  var h5: TypographyStyle
-  var h6: TypographyStyle
-  var headline: TypographyStyle
-  var overline: TypographyStyle
-  var subheading: TypographyStyle
-  var subtitle1: TypographyStyle
-  var subtitle2: TypographyStyle
-  var title: TypographyStyle
-  def pxToRem(px: Double): String
+  var body1: TypographyStyle = js.native
+  var body2: TypographyStyle = js.native
+  var button: TypographyStyle = js.native
+  var caption: TypographyStyle = js.native
+  var display1: TypographyStyle = js.native
+  var display2: TypographyStyle = js.native
+  var display3: TypographyStyle = js.native
+  var display4: TypographyStyle = js.native
+  var fontFamily: FontFamilyProperty = js.native
+  var fontSize: Double = js.native
+  var fontWeightLight: FontWeightProperty = js.native
+  var fontWeightMedium: FontWeightProperty = js.native
+  var fontWeightRegular: FontWeightProperty = js.native
+  var h1: TypographyStyle = js.native
+  var h2: TypographyStyle = js.native
+  var h3: TypographyStyle = js.native
+  var h4: TypographyStyle = js.native
+  var h5: TypographyStyle = js.native
+  var h6: TypographyStyle = js.native
+  var headline: TypographyStyle = js.native
+  var overline: TypographyStyle = js.native
+  var subheading: TypographyStyle = js.native
+  var subtitle1: TypographyStyle = js.native
+  var subtitle2: TypographyStyle = js.native
+  var title: TypographyStyle = js.native
+  def pxToRem(px: Double): String = js.native
 }
 
 object Typography {

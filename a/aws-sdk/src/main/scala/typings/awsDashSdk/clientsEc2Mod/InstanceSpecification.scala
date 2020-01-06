@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InstanceSpecification extends js.Object {
   /**
     * Excludes the root volume from being snapshotted.
     */
-  var ExcludeBootVolume: js.UndefOr[Boolean] = js.undefined
+  var ExcludeBootVolume: js.UndefOr[Boolean] = js.native
   /**
     * The instance to specify which volumes should be snapshotted.
     */
-  var InstanceId: js.UndefOr[String] = js.undefined
+  var InstanceId: js.UndefOr[String] = js.native
 }
 
 object InstanceSpecification {
   @scala.inline
   def apply(ExcludeBootVolume: js.UndefOr[scala.Boolean] = js.undefined, InstanceId: String = null): InstanceSpecification = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ExcludeBootVolume)) __obj.updateDynamic("ExcludeBootVolume")(ExcludeBootVolume)
-    if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId)
+    if (!js.isUndefined(ExcludeBootVolume)) __obj.updateDynamic("ExcludeBootVolume")(ExcludeBootVolume.asInstanceOf[js.Any])
+    if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceSpecification]
   }
 }

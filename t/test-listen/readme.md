@@ -10,9 +10,9 @@ Produce URLs to test HTTP servers with ephemeral ports
 | ------------------ | :-------------: |
 | Full name          | test-listen |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 5 |
-| # downloads        | 95421 |
+| # releases         | 0 |
+| # dependents       | 7 |
+| # downloads        | 180166 |
 | # stars            | 0 |
 
 ## Links

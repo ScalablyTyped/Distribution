@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BookingOptions extends js.Object {
   /**
     * The resource's ability to automatically reply to requests. If disabled, delegates must be associated to the resource.
     */
-  var AutoAcceptRequests: js.UndefOr[Boolean] = js.undefined
+  var AutoAcceptRequests: js.UndefOr[Boolean] = js.native
   /**
     * The resource's ability to automatically decline any conflicting requests.
     */
-  var AutoDeclineConflictingRequests: js.UndefOr[Boolean] = js.undefined
+  var AutoDeclineConflictingRequests: js.UndefOr[Boolean] = js.native
   /**
     * The resource's ability to automatically decline any recurring requests.
     */
-  var AutoDeclineRecurringRequests: js.UndefOr[Boolean] = js.undefined
+  var AutoDeclineRecurringRequests: js.UndefOr[Boolean] = js.native
 }
 
 object BookingOptions {
@@ -27,9 +28,9 @@ object BookingOptions {
     AutoDeclineRecurringRequests: js.UndefOr[scala.Boolean] = js.undefined
   ): BookingOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AutoAcceptRequests)) __obj.updateDynamic("AutoAcceptRequests")(AutoAcceptRequests)
-    if (!js.isUndefined(AutoDeclineConflictingRequests)) __obj.updateDynamic("AutoDeclineConflictingRequests")(AutoDeclineConflictingRequests)
-    if (!js.isUndefined(AutoDeclineRecurringRequests)) __obj.updateDynamic("AutoDeclineRecurringRequests")(AutoDeclineRecurringRequests)
+    if (!js.isUndefined(AutoAcceptRequests)) __obj.updateDynamic("AutoAcceptRequests")(AutoAcceptRequests.asInstanceOf[js.Any])
+    if (!js.isUndefined(AutoDeclineConflictingRequests)) __obj.updateDynamic("AutoDeclineConflictingRequests")(AutoDeclineConflictingRequests.asInstanceOf[js.Any])
+    if (!js.isUndefined(AutoDeclineRecurringRequests)) __obj.updateDynamic("AutoDeclineRecurringRequests")(AutoDeclineRecurringRequests.asInstanceOf[js.Any])
     __obj.asInstanceOf[BookingOptions]
   }
 }

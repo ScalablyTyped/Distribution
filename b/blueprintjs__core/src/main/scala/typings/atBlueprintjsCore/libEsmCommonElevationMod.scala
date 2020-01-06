@@ -13,11 +13,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object libEsmCommonElevationMod extends js.Object {
   /* Rewritten from type alias, can be one of: 
-    - typings.atBlueprintjsCore.atBlueprintjsCoreNumbers.`2`
-    - typings.atBlueprintjsCore.atBlueprintjsCoreNumbers.`1`
     - typings.atBlueprintjsCore.atBlueprintjsCoreNumbers.`3`
+    - typings.atBlueprintjsCore.atBlueprintjsCoreNumbers.`2`
     - typings.atBlueprintjsCore.atBlueprintjsCoreNumbers.`4`
     - typings.atBlueprintjsCore.atBlueprintjsCoreNumbers.`0`
+    - typings.atBlueprintjsCore.atBlueprintjsCoreNumbers.`1`
   */
   trait Elevation extends js.Object
   

@@ -1,6 +1,7 @@
 package typings.atPulumiAws.ecsClusterMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.atPulumiAws.typesOutputMod.ecs.ClusterDefaultCapacityProviderStrategy
 import typings.atPulumiAws.typesOutputMod.ecs.ClusterSetting
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
@@ -28,6 +29,14 @@ class Cluster protected () extends CustomResource {
     * The Amazon Resource Name (ARN) that identifies the cluster
     */
   val arn: Output[String] = js.native
+  /**
+    * List of short names or full Amazon Resource Names (ARNs) of one or more capacity providers to associate with the cluster. Valid values also include `FARGATE` and `FARGATE_SPOT`.
+    */
+  val capacityProviders: Output[js.UndefOr[js.Array[String]]] = js.native
+  /**
+    * The capacity provider strategy to use by default for the cluster. Can be one or more.  Defined below.
+    */
+  val defaultCapacityProviderStrategies: Output[js.UndefOr[js.Array[ClusterDefaultCapacityProviderStrategy]]] = js.native
   /**
     * The name of the cluster (up to 255 letters, numbers, hyphens, and underscores)
     */

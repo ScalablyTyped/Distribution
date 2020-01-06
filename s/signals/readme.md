@@ -10,9 +10,9 @@ Custom Event/Messaging System
 | ------------------ | :-------------: |
 | Full name          | signals |
 | Keywords           | js-signals, signals, pub/sub, event, publish, subscribe, observer |
-| # releases         | 1 |
-| # dependents       | 108 |
-| # downloads        | 434143 |
+| # releases         | 0 |
+| # dependents       | 122 |
+| # downloads        | 675114 |
 | # stars            | 8 |
 
 ## Links

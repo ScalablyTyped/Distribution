@@ -10,9 +10,9 @@ Typings are for version 1.0
 | ------------------ | :-------------: |
 | Full name          | caller |
 | Keywords           | caller, file, require |
-| # releases         | 1 |
-| # dependents       | 125 |
-| # downloads        | 7037133 |
+| # releases         | 0 |
+| # dependents       | 144 |
+| # downloads        | 8940644 |
 | # stars            | 3 |
 
 ## Links

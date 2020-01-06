@@ -11,8 +11,8 @@ Extract meaning from JS Errors
 | Full name          | error-stack-parser |
 | Keywords           | stacktrace, error, stack, parser |
 | # releases         | 3 |
-| # dependents       | 137 |
-| # downloads        | 64123675 |
+| # dependents       | 170 |
+| # downloads        | 96420067 |
 | # stars            | 4 |
 
 ## Links

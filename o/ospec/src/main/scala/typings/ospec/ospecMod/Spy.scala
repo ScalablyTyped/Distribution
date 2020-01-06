@@ -13,7 +13,7 @@ trait Spy[Args /* <: js.Array[_] */, Returns] extends js.Object {
   /** List of arguments that were passed to the function each tine it was called */
   val calls: js.Array[Args] = js.native
   def apply(
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type Args is not an array type */ args: Args
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Args is not an array type */ args: Args
   ): Returns = js.native
 }
 

@@ -10,9 +10,9 @@ Like ruby's abbrev module, but in js
 | ------------------ | :-------------: |
 | Full name          | abbrev |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 172 |
-| # downloads        | 304637888 |
+| # releases         | 0 |
+| # dependents       | 205 |
+| # downloads        | 412674334 |
 | # stars            | 15 |
 
 ## Links

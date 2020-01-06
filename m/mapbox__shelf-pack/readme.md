@@ -10,9 +10,9 @@ A 2D rectangular bin packing data structure that uses the Shelf Best Height Fit 
 | ------------------ | :-------------: |
 | Full name          | @mapbox/shelf-pack |
 | Keywords           | bin packing, sprite |
-| # releases         | 3 |
-| # dependents       | 19 |
-| # downloads        | 5170649 |
+| # releases         | 2 |
+| # dependents       | 20 |
+| # downloads        | 2598496 |
 | # stars            | 0 |
 
 ## Links

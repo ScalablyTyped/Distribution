@@ -10,9 +10,9 @@ Fill out pdf forms
 | ------------------ | :-------------: |
 | Full name          | fill-pdf |
 | Keywords           | pdf, fdf, utf8, pdftk |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 183394 |
+| # downloads        | 147201 |
 | # stars            | 2 |
 
 ## Links

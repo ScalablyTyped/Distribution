@@ -4,15 +4,15 @@
 Typings are for version 3.0.3
 
 ## Library description:
-Check if an URL is absolute
+Check if a URL is absolute
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | is-absolute-url |
 | Keywords           | url, absolute, relative, uri, is, check |
-| # releases         | 0 |
-| # dependents       | 65 |
-| # downloads        | 128321766 |
+| # releases         | 5 |
+| # dependents       | 84 |
+| # downloads        | 214235701 |
 | # stars            | 3 |
 
 ## Links

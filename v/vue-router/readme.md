@@ -10,10 +10,10 @@ Official router for Vue.js 2
 | ------------------ | :-------------: |
 | Full name          | vue-router |
 | Keywords           | vue, router, routing |
-| # releases         | 16 |
-| # dependents       | 3308 |
-| # downloads        | 18307549 |
-| # stars            | 39 |
+| # releases         | 10 |
+| # dependents       | 5364 |
+| # downloads        | 32461308 |
+| # stars            | 40 |
 
 ## Links
 - [Homepage](https://github.com/vuejs/vue-router#readme)

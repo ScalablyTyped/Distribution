@@ -10,9 +10,9 @@ A basic poller built on top of promises
 | ------------------ | :-------------: |
 | Full name          | promise-poller |
 | Keywords           | promise, promises, poller, polling, poll, timeout, ajax |
-| # releases         | 3 |
-| # dependents       | 7 |
-| # downloads        | 101696 |
+| # releases         | 5 |
+| # dependents       | 9 |
+| # downloads        | 173208 |
 | # stars            | 7 |
 
 ## Links

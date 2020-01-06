@@ -10,9 +10,9 @@ Generate an AST from a string template.
 | ------------------ | :-------------: |
 | Full name          | babel-template |
 | Keywords           | - |
-| # releases         | 19 |
-| # dependents       | 410 |
-| # downloads        | 234695539 |
+| # releases         | 1 |
+| # dependents       | 438 |
+| # downloads        | 258763990 |
 | # stars            | 7 |
 
 ## Links

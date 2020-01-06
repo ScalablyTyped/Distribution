@@ -10,9 +10,9 @@ Header anchors for markdown-it.
 | ------------------ | :-------------: |
 | Full name          | markdown-it-anchor |
 | Keywords           | markdown, markdown-it, markdown-it-plugin, header, anchor |
-| # releases         | 4 |
-| # dependents       | 180 |
-| # downloads        | 1132287 |
+| # releases         | 11 |
+| # dependents       | 253 |
+| # downloads        | 7170963 |
 | # stars            | 5 |
 
 ## Links

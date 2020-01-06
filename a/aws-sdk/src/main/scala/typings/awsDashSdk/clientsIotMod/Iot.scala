@@ -197,6 +197,19 @@ trait Iot extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ClearDefaultAuthorizerResponse, Unit]
   ): Request[ClearDefaultAuthorizerResponse, AWSError] = js.native
   /**
+    * Confirms a topic rule destination. When you create a rule requiring a destination, AWS IoT sends a confirmation message to the endpoint or base address you specify. The message includes a token which you pass back when calling ConfirmTopicRuleDestination to confirm that you own or have access to the endpoint.
+    */
+  def confirmTopicRuleDestination(): Request[ConfirmTopicRuleDestinationResponse, AWSError] = js.native
+  def confirmTopicRuleDestination(callback: js.Function2[/* err */ AWSError, /* data */ ConfirmTopicRuleDestinationResponse, Unit]): Request[ConfirmTopicRuleDestinationResponse, AWSError] = js.native
+  /**
+    * Confirms a topic rule destination. When you create a rule requiring a destination, AWS IoT sends a confirmation message to the endpoint or base address you specify. The message includes a token which you pass back when calling ConfirmTopicRuleDestination to confirm that you own or have access to the endpoint.
+    */
+  def confirmTopicRuleDestination(params: ConfirmTopicRuleDestinationRequest): Request[ConfirmTopicRuleDestinationResponse, AWSError] = js.native
+  def confirmTopicRuleDestination(
+    params: ConfirmTopicRuleDestinationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ConfirmTopicRuleDestinationResponse, Unit]
+  ): Request[ConfirmTopicRuleDestinationResponse, AWSError] = js.native
+  /**
     * Creates an authorizer.
     */
   def createAuthorizer(): Request[CreateAuthorizerResponse, AWSError] = js.native
@@ -236,6 +249,19 @@ trait Iot extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateCertificateFromCsrResponse, Unit]
   ): Request[CreateCertificateFromCsrResponse, AWSError] = js.native
   /**
+    * Creates a domain configuration.  The domain configuration feature is in public preview and is subject to change. 
+    */
+  def createDomainConfiguration(): Request[CreateDomainConfigurationResponse, AWSError] = js.native
+  def createDomainConfiguration(callback: js.Function2[/* err */ AWSError, /* data */ CreateDomainConfigurationResponse, Unit]): Request[CreateDomainConfigurationResponse, AWSError] = js.native
+  /**
+    * Creates a domain configuration.  The domain configuration feature is in public preview and is subject to change. 
+    */
+  def createDomainConfiguration(params: CreateDomainConfigurationRequest): Request[CreateDomainConfigurationResponse, AWSError] = js.native
+  def createDomainConfiguration(
+    params: CreateDomainConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateDomainConfigurationResponse, Unit]
+  ): Request[CreateDomainConfigurationResponse, AWSError] = js.native
+  /**
     * Creates a dynamic thing group.
     */
   def createDynamicThingGroup(): Request[CreateDynamicThingGroupResponse, AWSError] = js.native
@@ -262,12 +288,12 @@ trait Iot extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateJobResponse, Unit]
   ): Request[CreateJobResponse, AWSError] = js.native
   /**
-    * Creates a 2048-bit RSA key pair and issues an X.509 certificate using the issued public key.  Note This is the only time AWS IoT issues the private key for this certificate, so it is important to keep it in a secure location.
+    * Creates a 2048-bit RSA key pair and issues an X.509 certificate using the issued public key. You can also call CreateKeysAndCertificate over MQTT from a device, for more information, see Provisioning MQTT API.  Note This is the only time AWS IoT issues the private key for this certificate, so it is important to keep it in a secure location.
     */
   def createKeysAndCertificate(): Request[CreateKeysAndCertificateResponse, AWSError] = js.native
   def createKeysAndCertificate(callback: js.Function2[/* err */ AWSError, /* data */ CreateKeysAndCertificateResponse, Unit]): Request[CreateKeysAndCertificateResponse, AWSError] = js.native
   /**
-    * Creates a 2048-bit RSA key pair and issues an X.509 certificate using the issued public key.  Note This is the only time AWS IoT issues the private key for this certificate, so it is important to keep it in a secure location.
+    * Creates a 2048-bit RSA key pair and issues an X.509 certificate using the issued public key. You can also call CreateKeysAndCertificate over MQTT from a device, for more information, see Provisioning MQTT API.  Note This is the only time AWS IoT issues the private key for this certificate, so it is important to keep it in a secure location.
     */
   def createKeysAndCertificate(params: CreateKeysAndCertificateRequest): Request[CreateKeysAndCertificateResponse, AWSError] = js.native
   def createKeysAndCertificate(
@@ -327,6 +353,47 @@ trait Iot extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreatePolicyVersionResponse, Unit]
   ): Request[CreatePolicyVersionResponse, AWSError] = js.native
   /**
+    * Creates a provisioning claim.
+    */
+  def createProvisioningClaim(): Request[CreateProvisioningClaimResponse, AWSError] = js.native
+  def createProvisioningClaim(callback: js.Function2[/* err */ AWSError, /* data */ CreateProvisioningClaimResponse, Unit]): Request[CreateProvisioningClaimResponse, AWSError] = js.native
+  /**
+    * Creates a provisioning claim.
+    */
+  def createProvisioningClaim(params: CreateProvisioningClaimRequest): Request[CreateProvisioningClaimResponse, AWSError] = js.native
+  def createProvisioningClaim(
+    params: CreateProvisioningClaimRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateProvisioningClaimResponse, Unit]
+  ): Request[CreateProvisioningClaimResponse, AWSError] = js.native
+  /**
+    * Creates a fleet provisioning template.
+    */
+  def createProvisioningTemplate(): Request[CreateProvisioningTemplateResponse, AWSError] = js.native
+  def createProvisioningTemplate(callback: js.Function2[/* err */ AWSError, /* data */ CreateProvisioningTemplateResponse, Unit]): Request[CreateProvisioningTemplateResponse, AWSError] = js.native
+  /**
+    * Creates a fleet provisioning template.
+    */
+  def createProvisioningTemplate(params: CreateProvisioningTemplateRequest): Request[CreateProvisioningTemplateResponse, AWSError] = js.native
+  def createProvisioningTemplate(
+    params: CreateProvisioningTemplateRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateProvisioningTemplateResponse, Unit]
+  ): Request[CreateProvisioningTemplateResponse, AWSError] = js.native
+  /**
+    * Creates a new version of a fleet provisioning template.
+    */
+  def createProvisioningTemplateVersion(): Request[CreateProvisioningTemplateVersionResponse, AWSError] = js.native
+  def createProvisioningTemplateVersion(
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateProvisioningTemplateVersionResponse, Unit]
+  ): Request[CreateProvisioningTemplateVersionResponse, AWSError] = js.native
+  /**
+    * Creates a new version of a fleet provisioning template.
+    */
+  def createProvisioningTemplateVersion(params: CreateProvisioningTemplateVersionRequest): Request[CreateProvisioningTemplateVersionResponse, AWSError] = js.native
+  def createProvisioningTemplateVersion(
+    params: CreateProvisioningTemplateVersionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateProvisioningTemplateVersionResponse, Unit]
+  ): Request[CreateProvisioningTemplateVersionResponse, AWSError] = js.native
+  /**
     * Creates a role alias.
     */
   def createRoleAlias(): Request[CreateRoleAliasResponse, AWSError] = js.native
@@ -366,12 +433,12 @@ trait Iot extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateSecurityProfileResponse, Unit]
   ): Request[CreateSecurityProfileResponse, AWSError] = js.native
   /**
-    * Creates a stream for delivering one or more large files in chunks over MQTT. A stream transports data bytes in chunks or blocks packaged as MQTT messages from a source like S3. You can have one or more files associated with a stream. The total size of a file associated with the stream cannot exceed more than 2 MB. The stream will be created with version 0. If a stream is created with the same streamID as a stream that existed and was deleted within last 90 days, we will resurrect that old stream by incrementing the version by 1.
+    * Creates a stream for delivering one or more large files in chunks over MQTT. A stream transports data bytes in chunks or blocks packaged as MQTT messages from a source like S3. You can have one or more files associated with a stream.
     */
   def createStream(): Request[CreateStreamResponse, AWSError] = js.native
   def createStream(callback: js.Function2[/* err */ AWSError, /* data */ CreateStreamResponse, Unit]): Request[CreateStreamResponse, AWSError] = js.native
   /**
-    * Creates a stream for delivering one or more large files in chunks over MQTT. A stream transports data bytes in chunks or blocks packaged as MQTT messages from a source like S3. You can have one or more files associated with a stream. The total size of a file associated with the stream cannot exceed more than 2 MB. The stream will be created with version 0. If a stream is created with the same streamID as a stream that existed and was deleted within last 90 days, we will resurrect that old stream by incrementing the version by 1.
+    * Creates a stream for delivering one or more large files in chunks over MQTT. A stream transports data bytes in chunks or blocks packaged as MQTT messages from a source like S3. You can have one or more files associated with a stream.
     */
   def createStream(params: CreateStreamRequest): Request[CreateStreamResponse, AWSError] = js.native
   def createStream(
@@ -430,6 +497,19 @@ trait Iot extends Service {
     params: CreateTopicRuleRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  /**
+    * Creates a topic rule destination. The destination must be confirmed prior to use.
+    */
+  def createTopicRuleDestination(): Request[CreateTopicRuleDestinationResponse, AWSError] = js.native
+  def createTopicRuleDestination(callback: js.Function2[/* err */ AWSError, /* data */ CreateTopicRuleDestinationResponse, Unit]): Request[CreateTopicRuleDestinationResponse, AWSError] = js.native
+  /**
+    * Creates a topic rule destination. The destination must be confirmed prior to use.
+    */
+  def createTopicRuleDestination(params: CreateTopicRuleDestinationRequest): Request[CreateTopicRuleDestinationResponse, AWSError] = js.native
+  def createTopicRuleDestination(
+    params: CreateTopicRuleDestinationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateTopicRuleDestinationResponse, Unit]
+  ): Request[CreateTopicRuleDestinationResponse, AWSError] = js.native
   /**
     * Restores the default settings for Device Defender audits for this account. Any configuration data you entered is deleted and all audit checks are reset to disabled. 
     */
@@ -497,6 +577,19 @@ trait Iot extends Service {
     params: DeleteCertificateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes the specified domain configuration.  The domain configuration feature is in public preview and is subject to change. 
+    */
+  def deleteDomainConfiguration(): Request[DeleteDomainConfigurationResponse, AWSError] = js.native
+  def deleteDomainConfiguration(callback: js.Function2[/* err */ AWSError, /* data */ DeleteDomainConfigurationResponse, Unit]): Request[DeleteDomainConfigurationResponse, AWSError] = js.native
+  /**
+    * Deletes the specified domain configuration.  The domain configuration feature is in public preview and is subject to change. 
+    */
+  def deleteDomainConfiguration(params: DeleteDomainConfigurationRequest): Request[DeleteDomainConfigurationResponse, AWSError] = js.native
+  def deleteDomainConfiguration(
+    params: DeleteDomainConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteDomainConfigurationResponse, Unit]
+  ): Request[DeleteDomainConfigurationResponse, AWSError] = js.native
   /**
     * Deletes a dynamic thing group.
     */
@@ -585,6 +678,34 @@ trait Iot extends Service {
     params: DeletePolicyVersionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes a fleet provisioning template.
+    */
+  def deleteProvisioningTemplate(): Request[DeleteProvisioningTemplateResponse, AWSError] = js.native
+  def deleteProvisioningTemplate(callback: js.Function2[/* err */ AWSError, /* data */ DeleteProvisioningTemplateResponse, Unit]): Request[DeleteProvisioningTemplateResponse, AWSError] = js.native
+  /**
+    * Deletes a fleet provisioning template.
+    */
+  def deleteProvisioningTemplate(params: DeleteProvisioningTemplateRequest): Request[DeleteProvisioningTemplateResponse, AWSError] = js.native
+  def deleteProvisioningTemplate(
+    params: DeleteProvisioningTemplateRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteProvisioningTemplateResponse, Unit]
+  ): Request[DeleteProvisioningTemplateResponse, AWSError] = js.native
+  /**
+    * Deletes a fleet provisioning template version.
+    */
+  def deleteProvisioningTemplateVersion(): Request[DeleteProvisioningTemplateVersionResponse, AWSError] = js.native
+  def deleteProvisioningTemplateVersion(
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteProvisioningTemplateVersionResponse, Unit]
+  ): Request[DeleteProvisioningTemplateVersionResponse, AWSError] = js.native
+  /**
+    * Deletes a fleet provisioning template version.
+    */
+  def deleteProvisioningTemplateVersion(params: DeleteProvisioningTemplateVersionRequest): Request[DeleteProvisioningTemplateVersionResponse, AWSError] = js.native
+  def deleteProvisioningTemplateVersion(
+    params: DeleteProvisioningTemplateVersionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteProvisioningTemplateVersionResponse, Unit]
+  ): Request[DeleteProvisioningTemplateVersionResponse, AWSError] = js.native
   /**
     * Deletes a CA certificate registration code.
     */
@@ -702,6 +823,19 @@ trait Iot extends Service {
     params: DeleteTopicRuleRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes a topic rule destination.
+    */
+  def deleteTopicRuleDestination(): Request[DeleteTopicRuleDestinationResponse, AWSError] = js.native
+  def deleteTopicRuleDestination(callback: js.Function2[/* err */ AWSError, /* data */ DeleteTopicRuleDestinationResponse, Unit]): Request[DeleteTopicRuleDestinationResponse, AWSError] = js.native
+  /**
+    * Deletes a topic rule destination.
+    */
+  def deleteTopicRuleDestination(params: DeleteTopicRuleDestinationRequest): Request[DeleteTopicRuleDestinationResponse, AWSError] = js.native
+  def deleteTopicRuleDestination(
+    params: DeleteTopicRuleDestinationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteTopicRuleDestinationResponse, Unit]
+  ): Request[DeleteTopicRuleDestinationResponse, AWSError] = js.native
   /**
     * Deletes a logging level.
     */
@@ -850,6 +984,19 @@ trait Iot extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeDefaultAuthorizerResponse, Unit]
   ): Request[DescribeDefaultAuthorizerResponse, AWSError] = js.native
   /**
+    * Gets summary information about a domain configuration.  The domain configuration feature is in public preview and is subject to change. 
+    */
+  def describeDomainConfiguration(): Request[DescribeDomainConfigurationResponse, AWSError] = js.native
+  def describeDomainConfiguration(callback: js.Function2[/* err */ AWSError, /* data */ DescribeDomainConfigurationResponse, Unit]): Request[DescribeDomainConfigurationResponse, AWSError] = js.native
+  /**
+    * Gets summary information about a domain configuration.  The domain configuration feature is in public preview and is subject to change. 
+    */
+  def describeDomainConfiguration(params: DescribeDomainConfigurationRequest): Request[DescribeDomainConfigurationResponse, AWSError] = js.native
+  def describeDomainConfiguration(
+    params: DescribeDomainConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeDomainConfigurationResponse, Unit]
+  ): Request[DescribeDomainConfigurationResponse, AWSError] = js.native
+  /**
     * Returns a unique endpoint specific to the AWS account making the call.
     */
   def describeEndpoint(): Request[DescribeEndpointResponse, AWSError] = js.native
@@ -927,6 +1074,34 @@ trait Iot extends Service {
     params: DescribeMitigationActionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeMitigationActionResponse, Unit]
   ): Request[DescribeMitigationActionResponse, AWSError] = js.native
+  /**
+    * Returns information about a fleet provisioning template.
+    */
+  def describeProvisioningTemplate(): Request[DescribeProvisioningTemplateResponse, AWSError] = js.native
+  def describeProvisioningTemplate(callback: js.Function2[/* err */ AWSError, /* data */ DescribeProvisioningTemplateResponse, Unit]): Request[DescribeProvisioningTemplateResponse, AWSError] = js.native
+  /**
+    * Returns information about a fleet provisioning template.
+    */
+  def describeProvisioningTemplate(params: DescribeProvisioningTemplateRequest): Request[DescribeProvisioningTemplateResponse, AWSError] = js.native
+  def describeProvisioningTemplate(
+    params: DescribeProvisioningTemplateRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeProvisioningTemplateResponse, Unit]
+  ): Request[DescribeProvisioningTemplateResponse, AWSError] = js.native
+  /**
+    * Returns information about a fleet provisioning template version.
+    */
+  def describeProvisioningTemplateVersion(): Request[DescribeProvisioningTemplateVersionResponse, AWSError] = js.native
+  def describeProvisioningTemplateVersion(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeProvisioningTemplateVersionResponse, Unit]
+  ): Request[DescribeProvisioningTemplateVersionResponse, AWSError] = js.native
+  /**
+    * Returns information about a fleet provisioning template version.
+    */
+  def describeProvisioningTemplateVersion(params: DescribeProvisioningTemplateVersionRequest): Request[DescribeProvisioningTemplateVersionResponse, AWSError] = js.native
+  def describeProvisioningTemplateVersion(
+    params: DescribeProvisioningTemplateVersionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeProvisioningTemplateVersionResponse, Unit]
+  ): Request[DescribeProvisioningTemplateVersionResponse, AWSError] = js.native
   /**
     * Describes a role alias.
     */
@@ -1110,6 +1285,19 @@ trait Iot extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
+    * Returns the approximate count of unique values that match the query.
+    */
+  def getCardinality(): Request[GetCardinalityResponse, AWSError] = js.native
+  def getCardinality(callback: js.Function2[/* err */ AWSError, /* data */ GetCardinalityResponse, Unit]): Request[GetCardinalityResponse, AWSError] = js.native
+  /**
+    * Returns the approximate count of unique values that match the query.
+    */
+  def getCardinality(params: GetCardinalityRequest): Request[GetCardinalityResponse, AWSError] = js.native
+  def getCardinality(
+    params: GetCardinalityRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetCardinalityResponse, Unit]
+  ): Request[GetCardinalityResponse, AWSError] = js.native
+  /**
     * Gets a list of the policies that have an effect on the authorization behavior of the specified device when it connects to the AWS IoT device gateway.
     */
   def getEffectivePolicies(): Request[GetEffectivePoliciesResponse, AWSError] = js.native
@@ -1123,12 +1311,12 @@ trait Iot extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetEffectivePoliciesResponse, Unit]
   ): Request[GetEffectivePoliciesResponse, AWSError] = js.native
   /**
-    * Gets the search configuration.
+    * Gets the indexing configuration.
     */
   def getIndexingConfiguration(): Request[GetIndexingConfigurationResponse, AWSError] = js.native
   def getIndexingConfiguration(callback: js.Function2[/* err */ AWSError, /* data */ GetIndexingConfigurationResponse, Unit]): Request[GetIndexingConfigurationResponse, AWSError] = js.native
   /**
-    * Gets the search configuration.
+    * Gets the indexing configuration.
     */
   def getIndexingConfiguration(params: GetIndexingConfigurationRequest): Request[GetIndexingConfigurationResponse, AWSError] = js.native
   def getIndexingConfiguration(
@@ -1175,6 +1363,19 @@ trait Iot extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetOTAUpdateResponse, Unit]
   ): Request[GetOTAUpdateResponse, AWSError] = js.native
   /**
+    * Groups the aggregated values that match the query into percentile groupings. The default percentile groupings are: 1,5,25,50,75,95,99, although you can specify your own when you call GetPercentiles. This function returns a value for each percentile group specified (or the default percentile groupings). The percentile group "1" contains the aggregated field value that occurs in approximately one percent of the values that match the query. The percentile group "5" contains the aggregated field value that occurs in approximately five percent of the values that match the query, and so on. The result is an approximation, the more values that match the query, the more accurate the percentile values.
+    */
+  def getPercentiles(): Request[GetPercentilesResponse, AWSError] = js.native
+  def getPercentiles(callback: js.Function2[/* err */ AWSError, /* data */ GetPercentilesResponse, Unit]): Request[GetPercentilesResponse, AWSError] = js.native
+  /**
+    * Groups the aggregated values that match the query into percentile groupings. The default percentile groupings are: 1,5,25,50,75,95,99, although you can specify your own when you call GetPercentiles. This function returns a value for each percentile group specified (or the default percentile groupings). The percentile group "1" contains the aggregated field value that occurs in approximately one percent of the values that match the query. The percentile group "5" contains the aggregated field value that occurs in approximately five percent of the values that match the query, and so on. The result is an approximation, the more values that match the query, the more accurate the percentile values.
+    */
+  def getPercentiles(params: GetPercentilesRequest): Request[GetPercentilesResponse, AWSError] = js.native
+  def getPercentiles(
+    params: GetPercentilesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetPercentilesResponse, Unit]
+  ): Request[GetPercentilesResponse, AWSError] = js.native
+  /**
     * Gets information about the specified policy with the policy document of the default version.
     */
   def getPolicy(): Request[GetPolicyResponse, AWSError] = js.native
@@ -1214,12 +1415,12 @@ trait Iot extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetRegistrationCodeResponse, Unit]
   ): Request[GetRegistrationCodeResponse, AWSError] = js.native
   /**
-    * Gets statistics about things that match the specified query.
+    * Returns the count, average, sum, minimum, maximum, sum of squares, variance, and standard deviation for the specified aggregated field. If the aggregation field is of type String, only the count statistic is returned.
     */
   def getStatistics(): Request[GetStatisticsResponse, AWSError] = js.native
   def getStatistics(callback: js.Function2[/* err */ AWSError, /* data */ GetStatisticsResponse, Unit]): Request[GetStatisticsResponse, AWSError] = js.native
   /**
-    * Gets statistics about things that match the specified query.
+    * Returns the count, average, sum, minimum, maximum, sum of squares, variance, and standard deviation for the specified aggregated field. If the aggregation field is of type String, only the count statistic is returned.
     */
   def getStatistics(params: GetStatisticsRequest): Request[GetStatisticsResponse, AWSError] = js.native
   def getStatistics(
@@ -1239,6 +1440,19 @@ trait Iot extends Service {
     params: GetTopicRuleRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetTopicRuleResponse, Unit]
   ): Request[GetTopicRuleResponse, AWSError] = js.native
+  /**
+    * Gets information about a topic rule destination.
+    */
+  def getTopicRuleDestination(): Request[GetTopicRuleDestinationResponse, AWSError] = js.native
+  def getTopicRuleDestination(callback: js.Function2[/* err */ AWSError, /* data */ GetTopicRuleDestinationResponse, Unit]): Request[GetTopicRuleDestinationResponse, AWSError] = js.native
+  /**
+    * Gets information about a topic rule destination.
+    */
+  def getTopicRuleDestination(params: GetTopicRuleDestinationRequest): Request[GetTopicRuleDestinationResponse, AWSError] = js.native
+  def getTopicRuleDestination(
+    params: GetTopicRuleDestinationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetTopicRuleDestinationResponse, Unit]
+  ): Request[GetTopicRuleDestinationResponse, AWSError] = js.native
   /**
     * Gets the fine grained logging options.
     */
@@ -1400,6 +1614,19 @@ trait Iot extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListCertificatesByCAResponse, Unit]
   ): Request[ListCertificatesByCAResponse, AWSError] = js.native
   /**
+    * Gets a list of domain configurations for the user. This list is sorted alphabetically by domain configuration name.  The domain configuration feature is in public preview and is subject to change. 
+    */
+  def listDomainConfigurations(): Request[ListDomainConfigurationsResponse, AWSError] = js.native
+  def listDomainConfigurations(callback: js.Function2[/* err */ AWSError, /* data */ ListDomainConfigurationsResponse, Unit]): Request[ListDomainConfigurationsResponse, AWSError] = js.native
+  /**
+    * Gets a list of domain configurations for the user. This list is sorted alphabetically by domain configuration name.  The domain configuration feature is in public preview and is subject to change. 
+    */
+  def listDomainConfigurations(params: ListDomainConfigurationsRequest): Request[ListDomainConfigurationsResponse, AWSError] = js.native
+  def listDomainConfigurations(
+    params: ListDomainConfigurationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListDomainConfigurationsResponse, Unit]
+  ): Request[ListDomainConfigurationsResponse, AWSError] = js.native
+  /**
     * Lists the search indices.
     */
   def listIndices(): Request[ListIndicesResponse, AWSError] = js.native
@@ -1555,6 +1782,34 @@ trait Iot extends Service {
     params: ListPrincipalThingsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListPrincipalThingsResponse, Unit]
   ): Request[ListPrincipalThingsResponse, AWSError] = js.native
+  /**
+    * A list of fleet provisioning template versions.
+    */
+  def listProvisioningTemplateVersions(): Request[ListProvisioningTemplateVersionsResponse, AWSError] = js.native
+  def listProvisioningTemplateVersions(
+    callback: js.Function2[/* err */ AWSError, /* data */ ListProvisioningTemplateVersionsResponse, Unit]
+  ): Request[ListProvisioningTemplateVersionsResponse, AWSError] = js.native
+  /**
+    * A list of fleet provisioning template versions.
+    */
+  def listProvisioningTemplateVersions(params: ListProvisioningTemplateVersionsRequest): Request[ListProvisioningTemplateVersionsResponse, AWSError] = js.native
+  def listProvisioningTemplateVersions(
+    params: ListProvisioningTemplateVersionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListProvisioningTemplateVersionsResponse, Unit]
+  ): Request[ListProvisioningTemplateVersionsResponse, AWSError] = js.native
+  /**
+    * Lists the fleet provisioning templates in your AWS account.
+    */
+  def listProvisioningTemplates(): Request[ListProvisioningTemplatesResponse, AWSError] = js.native
+  def listProvisioningTemplates(callback: js.Function2[/* err */ AWSError, /* data */ ListProvisioningTemplatesResponse, Unit]): Request[ListProvisioningTemplatesResponse, AWSError] = js.native
+  /**
+    * Lists the fleet provisioning templates in your AWS account.
+    */
+  def listProvisioningTemplates(params: ListProvisioningTemplatesRequest): Request[ListProvisioningTemplatesResponse, AWSError] = js.native
+  def listProvisioningTemplates(
+    params: ListProvisioningTemplatesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListProvisioningTemplatesResponse, Unit]
+  ): Request[ListProvisioningTemplatesResponse, AWSError] = js.native
   /**
     * Lists the role aliases registered in your account.
     */
@@ -1779,6 +2034,19 @@ trait Iot extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListThingsInThingGroupResponse, Unit]
   ): Request[ListThingsInThingGroupResponse, AWSError] = js.native
   /**
+    * Lists all the topic rule destinations in your AWS account.
+    */
+  def listTopicRuleDestinations(): Request[ListTopicRuleDestinationsResponse, AWSError] = js.native
+  def listTopicRuleDestinations(callback: js.Function2[/* err */ AWSError, /* data */ ListTopicRuleDestinationsResponse, Unit]): Request[ListTopicRuleDestinationsResponse, AWSError] = js.native
+  /**
+    * Lists all the topic rule destinations in your AWS account.
+    */
+  def listTopicRuleDestinations(params: ListTopicRuleDestinationsRequest): Request[ListTopicRuleDestinationsResponse, AWSError] = js.native
+  def listTopicRuleDestinations(
+    params: ListTopicRuleDestinationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListTopicRuleDestinationsResponse, Unit]
+  ): Request[ListTopicRuleDestinationsResponse, AWSError] = js.native
+  /**
     * Lists the rules for the specific topic.
     */
   def listTopicRules(): Request[ListTopicRulesResponse, AWSError] = js.native
@@ -1844,12 +2112,12 @@ trait Iot extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ RegisterCertificateResponse, Unit]
   ): Request[RegisterCertificateResponse, AWSError] = js.native
   /**
-    * Provisions a thing.
+    * Provisions a thing in the device registry. RegisterThing calls other AWS IoT control plane APIs. These calls might exceed your account level  AWS IoT Throttling Limits and cause throttle errors. Please contact AWS Customer Support to raise your throttling limits if necessary.
     */
   def registerThing(): Request[RegisterThingResponse, AWSError] = js.native
   def registerThing(callback: js.Function2[/* err */ AWSError, /* data */ RegisterThingResponse, Unit]): Request[RegisterThingResponse, AWSError] = js.native
   /**
-    * Provisions a thing.
+    * Provisions a thing in the device registry. RegisterThing calls other AWS IoT control plane APIs. These calls might exceed your account level  AWS IoT Throttling Limits and cause throttle errors. Please contact AWS Customer Support to raise your throttling limits if necessary.
     */
   def registerThing(params: RegisterThingRequest): Request[RegisterThingResponse, AWSError] = js.native
   def registerThing(
@@ -2173,6 +2441,19 @@ trait Iot extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
+    * Updates values stored in the domain configuration. Domain configurations for default endpoints can't be updated.  The domain configuration feature is in public preview and is subject to change. 
+    */
+  def updateDomainConfiguration(): Request[UpdateDomainConfigurationResponse, AWSError] = js.native
+  def updateDomainConfiguration(callback: js.Function2[/* err */ AWSError, /* data */ UpdateDomainConfigurationResponse, Unit]): Request[UpdateDomainConfigurationResponse, AWSError] = js.native
+  /**
+    * Updates values stored in the domain configuration. Domain configurations for default endpoints can't be updated.  The domain configuration feature is in public preview and is subject to change. 
+    */
+  def updateDomainConfiguration(params: UpdateDomainConfigurationRequest): Request[UpdateDomainConfigurationResponse, AWSError] = js.native
+  def updateDomainConfiguration(
+    params: UpdateDomainConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateDomainConfigurationResponse, Unit]
+  ): Request[UpdateDomainConfigurationResponse, AWSError] = js.native
+  /**
     * Updates a dynamic thing group.
     */
   def updateDynamicThingGroup(): Request[UpdateDynamicThingGroupResponse, AWSError] = js.native
@@ -2234,6 +2515,19 @@ trait Iot extends Service {
     params: UpdateMitigationActionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateMitigationActionResponse, Unit]
   ): Request[UpdateMitigationActionResponse, AWSError] = js.native
+  /**
+    * Updates a fleet provisioning template.
+    */
+  def updateProvisioningTemplate(): Request[UpdateProvisioningTemplateResponse, AWSError] = js.native
+  def updateProvisioningTemplate(callback: js.Function2[/* err */ AWSError, /* data */ UpdateProvisioningTemplateResponse, Unit]): Request[UpdateProvisioningTemplateResponse, AWSError] = js.native
+  /**
+    * Updates a fleet provisioning template.
+    */
+  def updateProvisioningTemplate(params: UpdateProvisioningTemplateRequest): Request[UpdateProvisioningTemplateResponse, AWSError] = js.native
+  def updateProvisioningTemplate(
+    params: UpdateProvisioningTemplateRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateProvisioningTemplateResponse, Unit]
+  ): Request[UpdateProvisioningTemplateResponse, AWSError] = js.native
   /**
     * Updates a role alias.
     */
@@ -2325,6 +2619,19 @@ trait Iot extends Service {
     params: UpdateThingGroupsForThingRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateThingGroupsForThingResponse, Unit]
   ): Request[UpdateThingGroupsForThingResponse, AWSError] = js.native
+  /**
+    * Updates a topic rule destination. You use this to change the status, endpoint URL, or confirmation URL of the destination.
+    */
+  def updateTopicRuleDestination(): Request[UpdateTopicRuleDestinationResponse, AWSError] = js.native
+  def updateTopicRuleDestination(callback: js.Function2[/* err */ AWSError, /* data */ UpdateTopicRuleDestinationResponse, Unit]): Request[UpdateTopicRuleDestinationResponse, AWSError] = js.native
+  /**
+    * Updates a topic rule destination. You use this to change the status, endpoint URL, or confirmation URL of the destination.
+    */
+  def updateTopicRuleDestination(params: UpdateTopicRuleDestinationRequest): Request[UpdateTopicRuleDestinationResponse, AWSError] = js.native
+  def updateTopicRuleDestination(
+    params: UpdateTopicRuleDestinationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateTopicRuleDestinationResponse, Unit]
+  ): Request[UpdateTopicRuleDestinationResponse, AWSError] = js.native
   /**
     * Validates a Device Defender security profile behaviors specification.
     */

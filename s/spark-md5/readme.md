@@ -11,8 +11,8 @@ Lightning fast normal and incremental md5 for javascript
 | Full name          | spark-md5 |
 | Keywords           | md5, fast, spark, incremental |
 | # releases         | 1 |
-| # dependents       | 140 |
-| # downloads        | 5995859 |
+| # dependents       | 191 |
+| # downloads        | 8667167 |
 | # stars            | 8 |
 
 ## Links

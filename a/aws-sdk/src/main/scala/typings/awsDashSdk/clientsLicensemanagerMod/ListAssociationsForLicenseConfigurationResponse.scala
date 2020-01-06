@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ListAssociationsForLicenseConfigurationResponse extends js.Object {
   /**
-    * Lists association objects for the license configuration, each containing the association time, number of consumed licenses, resource ARN, resource ID, account ID that owns the resource, resource size, and resource type.
+    * Information about the associations for the license configuration.
     */
-  var LicenseConfigurationAssociations: js.UndefOr[typings.awsDashSdk.clientsLicensemanagerMod.LicenseConfigurationAssociations] = js.undefined
+  var LicenseConfigurationAssociations: js.UndefOr[typings.awsDashSdk.clientsLicensemanagerMod.LicenseConfigurationAssociations] = js.native
   /**
     * Token for the next set of results.
     */
-  var NextToken: js.UndefOr[String] = js.undefined
+  var NextToken: js.UndefOr[String] = js.native
 }
 
 object ListAssociationsForLicenseConfigurationResponse {
@@ -22,8 +23,8 @@ object ListAssociationsForLicenseConfigurationResponse {
     NextToken: String = null
   ): ListAssociationsForLicenseConfigurationResponse = {
     val __obj = js.Dynamic.literal()
-    if (LicenseConfigurationAssociations != null) __obj.updateDynamic("LicenseConfigurationAssociations")(LicenseConfigurationAssociations)
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
+    if (LicenseConfigurationAssociations != null) __obj.updateDynamic("LicenseConfigurationAssociations")(LicenseConfigurationAssociations.asInstanceOf[js.Any])
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAssociationsForLicenseConfigurationResponse]
   }
 }

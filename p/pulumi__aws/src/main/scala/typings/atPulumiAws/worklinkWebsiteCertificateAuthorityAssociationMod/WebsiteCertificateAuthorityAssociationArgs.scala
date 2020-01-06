@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WebsiteCertificateAuthorityAssociationArgs extends js.Object {
   /**
     * The root certificate of the Certificate Authority.
     */
-  val certificate: Input[String]
+  val certificate: Input[String] = js.native
   /**
     * The certificate name to display.
     */
-  val displayName: js.UndefOr[Input[String]] = js.undefined
+  val displayName: js.UndefOr[Input[String]] = js.native
   /**
     * The ARN of the fleet.
     */
-  val fleetArn: Input[String]
+  val fleetArn: Input[String] = js.native
 }
 
 object WebsiteCertificateAuthorityAssociationArgs {

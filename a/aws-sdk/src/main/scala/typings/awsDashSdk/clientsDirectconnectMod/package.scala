@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsDirectconnectMod {
-  import typings.awsDashSdk.awsDashSdkStrings.`application/pdf`
+  import typings.awsDashSdk.awsDashSdkStrings.applicationSlashpdf
   import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
   import typings.node.Buffer
   import typings.std.Date
@@ -13,8 +13,8 @@ package object clientsDirectconnectMod {
 
   type ASN = Double
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.ipv4
-    - typings.awsDashSdk.awsDashSdkStrings.ipv6
+    - typings.awsDashSdk.awsDashSdkStrings.ipv4_
+    - typings.awsDashSdk.awsDashSdkStrings.ipv6_
     - java.lang.String
   */
   type AddressFamily = _AddressFamily | String
@@ -27,18 +27,18 @@ package object clientsDirectconnectMod {
   type BGPPeerId = String
   type BGPPeerList = js.Array[BGPPeer]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.verifying
-    - typings.awsDashSdk.awsDashSdkStrings.pending
-    - typings.awsDashSdk.awsDashSdkStrings.available
-    - typings.awsDashSdk.awsDashSdkStrings.deleting
-    - typings.awsDashSdk.awsDashSdkStrings.deleted
+    - typings.awsDashSdk.awsDashSdkStrings.verifying__
+    - typings.awsDashSdk.awsDashSdkStrings.pending__
+    - typings.awsDashSdk.awsDashSdkStrings.available__
+    - typings.awsDashSdk.awsDashSdkStrings.deleting__
+    - typings.awsDashSdk.awsDashSdkStrings.deleted__
     - java.lang.String
   */
   type BGPPeerState = _BGPPeerState | String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.up
-    - typings.awsDashSdk.awsDashSdkStrings.down
-    - typings.awsDashSdk.awsDashSdkStrings.unknown
+    - typings.awsDashSdk.awsDashSdkStrings.up_
+    - typings.awsDashSdk.awsDashSdkStrings.down_
+    - typings.awsDashSdk.awsDashSdkStrings.unknown__
     - java.lang.String
   */
   type BGPStatus = _BGPStatus | String
@@ -51,14 +51,14 @@ package object clientsDirectconnectMod {
   type ConnectionName = String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.ordering
-    - typings.awsDashSdk.awsDashSdkStrings.requested
-    - typings.awsDashSdk.awsDashSdkStrings.pending
-    - typings.awsDashSdk.awsDashSdkStrings.available
-    - typings.awsDashSdk.awsDashSdkStrings.down
-    - typings.awsDashSdk.awsDashSdkStrings.deleting
-    - typings.awsDashSdk.awsDashSdkStrings.deleted
-    - typings.awsDashSdk.awsDashSdkStrings.rejected
-    - typings.awsDashSdk.awsDashSdkStrings.unknown
+    - typings.awsDashSdk.awsDashSdkStrings.requested__
+    - typings.awsDashSdk.awsDashSdkStrings.pending__
+    - typings.awsDashSdk.awsDashSdkStrings.available__
+    - typings.awsDashSdk.awsDashSdkStrings.down_
+    - typings.awsDashSdk.awsDashSdkStrings.deleting__
+    - typings.awsDashSdk.awsDashSdkStrings.deleted__
+    - typings.awsDashSdk.awsDashSdkStrings.rejected__
+    - typings.awsDashSdk.awsDashSdkStrings.unknown__
     - java.lang.String
   */
   type ConnectionState = _ConnectionState | String
@@ -69,27 +69,27 @@ package object clientsDirectconnectMod {
   type DirectConnectGatewayAssociationProposalId = String
   type DirectConnectGatewayAssociationProposalList = js.Array[DirectConnectGatewayAssociationProposal]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.requested
-    - typings.awsDashSdk.awsDashSdkStrings.accepted
-    - typings.awsDashSdk.awsDashSdkStrings.deleted
+    - typings.awsDashSdk.awsDashSdkStrings.requested__
+    - typings.awsDashSdk.awsDashSdkStrings.accepted__
+    - typings.awsDashSdk.awsDashSdkStrings.deleted__
     - java.lang.String
   */
   type DirectConnectGatewayAssociationProposalState = _DirectConnectGatewayAssociationProposalState | String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.associating
-    - typings.awsDashSdk.awsDashSdkStrings.associated
-    - typings.awsDashSdk.awsDashSdkStrings.disassociating
-    - typings.awsDashSdk.awsDashSdkStrings.disassociated
-    - typings.awsDashSdk.awsDashSdkStrings.updating
+    - typings.awsDashSdk.awsDashSdkStrings.associating__
+    - typings.awsDashSdk.awsDashSdkStrings.associated__
+    - typings.awsDashSdk.awsDashSdkStrings.disassociating__
+    - typings.awsDashSdk.awsDashSdkStrings.disassociated_
+    - typings.awsDashSdk.awsDashSdkStrings.updating__
     - java.lang.String
   */
   type DirectConnectGatewayAssociationState = _DirectConnectGatewayAssociationState | String
   type DirectConnectGatewayAttachmentList = js.Array[DirectConnectGatewayAttachment]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.attaching
-    - typings.awsDashSdk.awsDashSdkStrings.attached
-    - typings.awsDashSdk.awsDashSdkStrings.detaching
-    - typings.awsDashSdk.awsDashSdkStrings.detached
+    - typings.awsDashSdk.awsDashSdkStrings.attaching_
+    - typings.awsDashSdk.awsDashSdkStrings.attached_
+    - typings.awsDashSdk.awsDashSdkStrings.detaching__
+    - typings.awsDashSdk.awsDashSdkStrings.detached__
     - java.lang.String
   */
   type DirectConnectGatewayAttachmentState = _DirectConnectGatewayAttachmentState | String
@@ -103,10 +103,10 @@ package object clientsDirectconnectMod {
   type DirectConnectGatewayList = js.Array[DirectConnectGateway]
   type DirectConnectGatewayName = String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.pending
-    - typings.awsDashSdk.awsDashSdkStrings.available
-    - typings.awsDashSdk.awsDashSdkStrings.deleting
-    - typings.awsDashSdk.awsDashSdkStrings.deleted
+    - typings.awsDashSdk.awsDashSdkStrings.pending__
+    - typings.awsDashSdk.awsDashSdkStrings.available__
+    - typings.awsDashSdk.awsDashSdkStrings.deleting__
+    - typings.awsDashSdk.awsDashSdkStrings.deleted__
     - java.lang.String
   */
   type DirectConnectGatewayState = _DirectConnectGatewayState | String
@@ -119,9 +119,9 @@ package object clientsDirectconnectMod {
   */
   type GatewayType = _GatewayType | String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.unknown
-    - typings.awsDashSdk.awsDashSdkStrings.yes
-    - typings.awsDashSdk.awsDashSdkStrings.no
+    - typings.awsDashSdk.awsDashSdkStrings.unknown__
+    - typings.awsDashSdk.awsDashSdkStrings.yes_
+    - typings.awsDashSdk.awsDashSdkStrings.no_
     - java.lang.String
   */
   type HasLogicalRedundancy = _HasLogicalRedundancy | String
@@ -129,13 +129,13 @@ package object clientsDirectconnectMod {
   type InterconnectList = js.Array[Interconnect]
   type InterconnectName = String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.requested
-    - typings.awsDashSdk.awsDashSdkStrings.pending
-    - typings.awsDashSdk.awsDashSdkStrings.available
-    - typings.awsDashSdk.awsDashSdkStrings.down
-    - typings.awsDashSdk.awsDashSdkStrings.deleting
-    - typings.awsDashSdk.awsDashSdkStrings.deleted
-    - typings.awsDashSdk.awsDashSdkStrings.unknown
+    - typings.awsDashSdk.awsDashSdkStrings.requested__
+    - typings.awsDashSdk.awsDashSdkStrings.pending__
+    - typings.awsDashSdk.awsDashSdkStrings.available__
+    - typings.awsDashSdk.awsDashSdkStrings.down_
+    - typings.awsDashSdk.awsDashSdkStrings.deleting__
+    - typings.awsDashSdk.awsDashSdkStrings.deleted__
+    - typings.awsDashSdk.awsDashSdkStrings.unknown__
     - java.lang.String
   */
   type InterconnectState = _InterconnectState | String
@@ -144,18 +144,18 @@ package object clientsDirectconnectMod {
   type LagList = js.Array[Lag]
   type LagName = String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.requested
-    - typings.awsDashSdk.awsDashSdkStrings.pending
-    - typings.awsDashSdk.awsDashSdkStrings.available
-    - typings.awsDashSdk.awsDashSdkStrings.down
-    - typings.awsDashSdk.awsDashSdkStrings.deleting
-    - typings.awsDashSdk.awsDashSdkStrings.deleted
-    - typings.awsDashSdk.awsDashSdkStrings.unknown
+    - typings.awsDashSdk.awsDashSdkStrings.requested__
+    - typings.awsDashSdk.awsDashSdkStrings.pending__
+    - typings.awsDashSdk.awsDashSdkStrings.available__
+    - typings.awsDashSdk.awsDashSdkStrings.down_
+    - typings.awsDashSdk.awsDashSdkStrings.deleting__
+    - typings.awsDashSdk.awsDashSdkStrings.deleted__
+    - typings.awsDashSdk.awsDashSdkStrings.unknown__
     - java.lang.String
   */
   type LagState = _LagState | String
   type LoaContent = Buffer | Uint8Array | Blob | String
-  type LoaContentType = `application/pdf` | String
+  type LoaContentType = applicationSlashpdf | String
   type LoaIssueTime = Date
   type LocationCode = String
   type LocationList = js.Array[Location]
@@ -191,21 +191,21 @@ package object clientsDirectconnectMod {
   type VirtualInterfaceRegion = String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.confirming
-    - typings.awsDashSdk.awsDashSdkStrings.verifying
-    - typings.awsDashSdk.awsDashSdkStrings.pending
-    - typings.awsDashSdk.awsDashSdkStrings.available
-    - typings.awsDashSdk.awsDashSdkStrings.down
-    - typings.awsDashSdk.awsDashSdkStrings.deleting
-    - typings.awsDashSdk.awsDashSdkStrings.deleted
-    - typings.awsDashSdk.awsDashSdkStrings.rejected
-    - typings.awsDashSdk.awsDashSdkStrings.unknown
+    - typings.awsDashSdk.awsDashSdkStrings.verifying__
+    - typings.awsDashSdk.awsDashSdkStrings.pending__
+    - typings.awsDashSdk.awsDashSdkStrings.available__
+    - typings.awsDashSdk.awsDashSdkStrings.down_
+    - typings.awsDashSdk.awsDashSdkStrings.deleting__
+    - typings.awsDashSdk.awsDashSdkStrings.deleted__
+    - typings.awsDashSdk.awsDashSdkStrings.rejected__
+    - typings.awsDashSdk.awsDashSdkStrings.unknown__
     - java.lang.String
   */
   type VirtualInterfaceState = _VirtualInterfaceState | String
   type VirtualInterfaceType = String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2012-10-25`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

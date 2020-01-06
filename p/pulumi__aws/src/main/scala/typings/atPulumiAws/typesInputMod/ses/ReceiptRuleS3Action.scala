@@ -5,27 +5,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ReceiptRuleS3Action extends js.Object {
   /**
     * The name of the S3 bucket
     */
-  var bucketName: Input[String]
+  var bucketName: Input[String] = js.native
   /**
     * The ARN of the KMS key
     */
-  var kmsKeyArn: js.UndefOr[Input[String]] = js.undefined
+  var kmsKeyArn: js.UndefOr[Input[String]] = js.native
   /**
     * The key prefix of the S3 bucket
     */
-  var objectKeyPrefix: js.UndefOr[Input[String]] = js.undefined
+  var objectKeyPrefix: js.UndefOr[Input[String]] = js.native
   /**
     * The position of the action in the receipt rule
     */
-  var position: Input[Double]
+  var position: Input[Double] = js.native
   /**
     * The ARN of an SNS topic to notify
     */
-  var topicArn: js.UndefOr[Input[String]] = js.undefined
+  var topicArn: js.UndefOr[Input[String]] = js.native
 }
 
 object ReceiptRuleS3Action {

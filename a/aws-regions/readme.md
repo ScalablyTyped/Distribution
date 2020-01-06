@@ -10,9 +10,9 @@ List of AWS Regions and Availability Zones
 | ------------------ | :-------------: |
 | Full name          | aws-regions |
 | Keywords           | aws, amazon, regions, availability, zones, azs, global, infrastructure |
-| # releases         | 11 |
-| # dependents       | 5 |
-| # downloads        | 4116 |
+| # releases         | 7 |
+| # dependents       | 6 |
+| # downloads        | 7595 |
 | # stars            | 0 |
 
 ## Links

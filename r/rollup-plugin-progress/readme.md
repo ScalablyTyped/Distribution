@@ -11,8 +11,8 @@ Rollup Progress Plugin
 | Full name          | rollup-plugin-progress |
 | Keywords           | rollup, plugin, progress, progressbar |
 | # releases         | 3 |
-| # dependents       | 20 |
-| # downloads        | 262165 |
+| # dependents       | 27 |
+| # downloads        | 326932 |
 | # stars            | 0 |
 
 ## Links

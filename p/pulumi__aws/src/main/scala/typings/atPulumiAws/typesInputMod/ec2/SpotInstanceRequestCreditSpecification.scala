@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SpotInstanceRequestCreditSpecification extends js.Object {
-  var cpuCredits: js.UndefOr[Input[String]] = js.undefined
+  var cpuCredits: js.UndefOr[Input[String]] = js.native
 }
 
 object SpotInstanceRequestCreditSpecification {

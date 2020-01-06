@@ -7,23 +7,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RouteTableArgs extends js.Object {
   /**
     * A list of virtual gateways for propagation.
     */
-  val propagatingVgws: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val propagatingVgws: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * A list of route objects. Their keys are documented below. This argument is processed in [attribute-as-blocks mode](https://www.terraform.io/docs/configuration/attr-as-blocks.html).
     */
-  val routes: js.UndefOr[Input[js.Array[Input[RouteTableRoute]]]] = js.undefined
+  val routes: js.UndefOr[Input[js.Array[Input[RouteTableRoute]]]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * The VPC ID.
     */
-  val vpcId: Input[String]
+  val vpcId: Input[String] = js.native
 }
 
 object RouteTableArgs {

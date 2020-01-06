@@ -10,9 +10,9 @@ A plugin to show invisibles in prosemirror
 | ------------------ | :-------------: |
 | Full name          | @guardian/prosemirror-invisibles |
 | Keywords           | - |
-| # releases         | 8 |
+| # releases         | 7 |
 | # dependents       | 0 |
-| # downloads        | 510 |
+| # downloads        | 583 |
 | # stars            | 0 |
 
 ## Links

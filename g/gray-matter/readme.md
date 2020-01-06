@@ -10,9 +10,9 @@ Parse front-matter from a string or file. Fast, reliable and easy to use. Parses
 | ------------------ | :-------------: |
 | Full name          | gray-matter |
 | Keywords           | assemble, coffee, coffee-script, data, docs, documentation, extract, extracting, front, front-matter, frontmatter, generate, generator, gh-pages, gray, javascript, jekyll, js, JSON, markdown, matter, parse, parser, parsing, site, static, template, toml, yaml, yfm |
-| # releases         | 15 |
-| # dependents       | 356 |
-| # downloads        | 11203095 |
+| # releases         | 4 |
+| # dependents       | 424 |
+| # downloads        | 15897851 |
 | # stars            | 19 |
 
 ## Links

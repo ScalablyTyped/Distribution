@@ -11,8 +11,8 @@ Get your public IP address - very fast!
 | Full name          | public-ip |
 | Keywords           | get, ip, ipv4, ipv6, address, external, public, machine, fast, opendns, dns |
 | # releases         | 6 |
-| # dependents       | 123 |
-| # downloads        | 1653580 |
+| # dependents       | 156 |
+| # downloads        | 3443331 |
 | # stars            | 14 |
 
 ## Links

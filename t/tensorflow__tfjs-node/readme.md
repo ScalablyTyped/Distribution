@@ -10,15 +10,15 @@ This repository provides native TensorFlow execution in backend JavaScript appli
 | ------------------ | :-------------: |
 | Full name          | @tensorflow/tfjs-node |
 | Keywords           | - |
-| # releases         | 37 |
-| # dependents       | 32 |
-| # downloads        | 312865 |
+| # releases         | 51 |
+| # dependents       | 54 |
+| # downloads        | 485337 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/tensorflow/tfjs-node#readme)
-- [Bugs](https://github.com/tensorflow/tfjs-node/issues)
-- [Repository](https://github.com/tensorflow/tfjs-node)
+- [Homepage](https://github.com/tensorflow/tfjs#readme)
+- [Bugs](https://github.com/tensorflow/tfjs/issues)
+- [Repository](https://github.com/tensorflow/tfjs)
 - [Npm](https://www.npmjs.com/package/%40tensorflow%2Ftfjs-node)
     
 

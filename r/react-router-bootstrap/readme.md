@@ -10,9 +10,9 @@ Integration between React Router and React-Bootstrap
 | ------------------ | :-------------: |
 | Full name          | react-router-bootstrap |
 | Keywords           | react, react-router, react-bootstrap |
-| # releases         | 5 |
-| # dependents       | 75 |
-| # downloads        | 16161134 |
+| # releases         | 2 |
+| # dependents       | 83 |
+| # downloads        | 18838691 |
 | # stars            | 9 |
 
 ## Links

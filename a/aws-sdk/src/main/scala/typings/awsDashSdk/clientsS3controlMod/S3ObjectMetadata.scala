@@ -4,51 +4,52 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait S3ObjectMetadata extends js.Object {
   /**
     * 
     */
-  var CacheControl: js.UndefOr[NonEmptyMaxLength1024String] = js.undefined
+  var CacheControl: js.UndefOr[NonEmptyMaxLength1024String] = js.native
   /**
     * 
     */
-  var ContentDisposition: js.UndefOr[NonEmptyMaxLength1024String] = js.undefined
+  var ContentDisposition: js.UndefOr[NonEmptyMaxLength1024String] = js.native
   /**
     * 
     */
-  var ContentEncoding: js.UndefOr[NonEmptyMaxLength1024String] = js.undefined
+  var ContentEncoding: js.UndefOr[NonEmptyMaxLength1024String] = js.native
   /**
     * 
     */
-  var ContentLanguage: js.UndefOr[NonEmptyMaxLength1024String] = js.undefined
+  var ContentLanguage: js.UndefOr[NonEmptyMaxLength1024String] = js.native
   /**
     * 
     */
-  var ContentLength: js.UndefOr[S3ContentLength] = js.undefined
+  var ContentLength: js.UndefOr[S3ContentLength] = js.native
   /**
     * 
     */
-  var ContentMD5: js.UndefOr[NonEmptyMaxLength1024String] = js.undefined
+  var ContentMD5: js.UndefOr[NonEmptyMaxLength1024String] = js.native
   /**
     * 
     */
-  var ContentType: js.UndefOr[NonEmptyMaxLength1024String] = js.undefined
+  var ContentType: js.UndefOr[NonEmptyMaxLength1024String] = js.native
   /**
     * 
     */
-  var HttpExpiresDate: js.UndefOr[TimeStamp] = js.undefined
+  var HttpExpiresDate: js.UndefOr[TimeStamp] = js.native
   /**
     * 
     */
-  var RequesterCharged: js.UndefOr[Boolean] = js.undefined
+  var RequesterCharged: js.UndefOr[Boolean] = js.native
   /**
     * 
     */
-  var SSEAlgorithm: js.UndefOr[S3SSEAlgorithm] = js.undefined
+  var SSEAlgorithm: js.UndefOr[S3SSEAlgorithm] = js.native
   /**
     * 
     */
-  var UserMetadata: js.UndefOr[S3UserMetadata] = js.undefined
+  var UserMetadata: js.UndefOr[S3UserMetadata] = js.native
 }
 
 object S3ObjectMetadata {
@@ -67,17 +68,17 @@ object S3ObjectMetadata {
     UserMetadata: S3UserMetadata = null
   ): S3ObjectMetadata = {
     val __obj = js.Dynamic.literal()
-    if (CacheControl != null) __obj.updateDynamic("CacheControl")(CacheControl)
-    if (ContentDisposition != null) __obj.updateDynamic("ContentDisposition")(ContentDisposition)
-    if (ContentEncoding != null) __obj.updateDynamic("ContentEncoding")(ContentEncoding)
-    if (ContentLanguage != null) __obj.updateDynamic("ContentLanguage")(ContentLanguage)
+    if (CacheControl != null) __obj.updateDynamic("CacheControl")(CacheControl.asInstanceOf[js.Any])
+    if (ContentDisposition != null) __obj.updateDynamic("ContentDisposition")(ContentDisposition.asInstanceOf[js.Any])
+    if (ContentEncoding != null) __obj.updateDynamic("ContentEncoding")(ContentEncoding.asInstanceOf[js.Any])
+    if (ContentLanguage != null) __obj.updateDynamic("ContentLanguage")(ContentLanguage.asInstanceOf[js.Any])
     if (ContentLength != null) __obj.updateDynamic("ContentLength")(ContentLength.asInstanceOf[js.Any])
-    if (ContentMD5 != null) __obj.updateDynamic("ContentMD5")(ContentMD5)
-    if (ContentType != null) __obj.updateDynamic("ContentType")(ContentType)
-    if (HttpExpiresDate != null) __obj.updateDynamic("HttpExpiresDate")(HttpExpiresDate)
-    if (!js.isUndefined(RequesterCharged)) __obj.updateDynamic("RequesterCharged")(RequesterCharged)
+    if (ContentMD5 != null) __obj.updateDynamic("ContentMD5")(ContentMD5.asInstanceOf[js.Any])
+    if (ContentType != null) __obj.updateDynamic("ContentType")(ContentType.asInstanceOf[js.Any])
+    if (HttpExpiresDate != null) __obj.updateDynamic("HttpExpiresDate")(HttpExpiresDate.asInstanceOf[js.Any])
+    if (!js.isUndefined(RequesterCharged)) __obj.updateDynamic("RequesterCharged")(RequesterCharged.asInstanceOf[js.Any])
     if (SSEAlgorithm != null) __obj.updateDynamic("SSEAlgorithm")(SSEAlgorithm.asInstanceOf[js.Any])
-    if (UserMetadata != null) __obj.updateDynamic("UserMetadata")(UserMetadata)
+    if (UserMetadata != null) __obj.updateDynamic("UserMetadata")(UserMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3ObjectMetadata]
   }
 }

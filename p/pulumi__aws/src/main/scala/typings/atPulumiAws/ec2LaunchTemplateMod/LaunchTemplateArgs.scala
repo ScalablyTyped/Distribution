@@ -18,124 +18,125 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LaunchTemplateArgs extends js.Object {
   /**
     * Specify volumes to attach to the instance besides the volumes specified by the AMI.
     * See Block Devices below for details.
     */
-  val blockDeviceMappings: js.UndefOr[Input[js.Array[Input[LaunchTemplateBlockDeviceMapping]]]] = js.undefined
+  val blockDeviceMappings: js.UndefOr[Input[js.Array[Input[LaunchTemplateBlockDeviceMapping]]]] = js.native
   /**
     * Targeting for EC2 capacity reservations. See Capacity Reservation Specification below for more details.
     */
-  val capacityReservationSpecification: js.UndefOr[Input[LaunchTemplateCapacityReservationSpecification]] = js.undefined
+  val capacityReservationSpecification: js.UndefOr[Input[LaunchTemplateCapacityReservationSpecification]] = js.native
   /**
     * Customize the credit specification of the instance. See Credit
     * Specification below for more details.
     */
-  val creditSpecification: js.UndefOr[Input[LaunchTemplateCreditSpecification]] = js.undefined
+  val creditSpecification: js.UndefOr[Input[LaunchTemplateCreditSpecification]] = js.native
   /**
     * Description of the launch template.
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * If `true`, enables [EC2 Instance
     * Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/terminating-instances.html#Using_ChangingDisableAPITermination)
     */
-  val disableApiTermination: js.UndefOr[Input[Boolean]] = js.undefined
+  val disableApiTermination: js.UndefOr[Input[Boolean]] = js.native
   /**
     * If `true`, the launched EC2 instance will be EBS-optimized.
     */
-  val ebsOptimized: js.UndefOr[Input[String]] = js.undefined
+  val ebsOptimized: js.UndefOr[Input[String]] = js.native
   /**
     * The elastic GPU to attach to the instance. See Elastic GPU
     * below for more details.
     */
-  val elasticGpuSpecifications: js.UndefOr[Input[js.Array[Input[LaunchTemplateElasticGpuSpecification]]]] = js.undefined
+  val elasticGpuSpecifications: js.UndefOr[Input[js.Array[Input[LaunchTemplateElasticGpuSpecification]]]] = js.native
   /**
     * Configuration block containing an Elastic Inference Accelerator to attach to the instance. See Elastic Inference Accelerator below for more details.
     */
-  val elasticInferenceAccelerator: js.UndefOr[Input[LaunchTemplateElasticInferenceAccelerator]] = js.undefined
+  val elasticInferenceAccelerator: js.UndefOr[Input[LaunchTemplateElasticInferenceAccelerator]] = js.native
   /**
     * The IAM Instance Profile to launch the instance with. See Instance Profile
     * below for more details.
     */
-  val iamInstanceProfile: js.UndefOr[Input[LaunchTemplateIamInstanceProfile]] = js.undefined
+  val iamInstanceProfile: js.UndefOr[Input[LaunchTemplateIamInstanceProfile]] = js.native
   /**
     * The AMI from which to launch the instance.
     */
-  val imageId: js.UndefOr[Input[String]] = js.undefined
+  val imageId: js.UndefOr[Input[String]] = js.native
   /**
     * Shutdown behavior for the instance. Can be `stop` or `terminate`.
     * (Default: `stop`).
     */
-  val instanceInitiatedShutdownBehavior: js.UndefOr[Input[String]] = js.undefined
+  val instanceInitiatedShutdownBehavior: js.UndefOr[Input[String]] = js.native
   /**
     * The market (purchasing) option for the instance. See Market Options
     * below for details.
     */
-  val instanceMarketOptions: js.UndefOr[Input[LaunchTemplateInstanceMarketOptions]] = js.undefined
+  val instanceMarketOptions: js.UndefOr[Input[LaunchTemplateInstanceMarketOptions]] = js.native
   /**
     * The type of the instance.
     */
-  val instanceType: js.UndefOr[Input[String]] = js.undefined
+  val instanceType: js.UndefOr[Input[String]] = js.native
   /**
     * The kernel ID.
     */
-  val kernelId: js.UndefOr[Input[String]] = js.undefined
+  val kernelId: js.UndefOr[Input[String]] = js.native
   /**
     * The key name to use for the instance.
     */
-  val keyName: js.UndefOr[Input[String]] = js.undefined
+  val keyName: js.UndefOr[Input[String]] = js.native
   /**
     * A list of license specifications to associate with. See License Specification below for more details.
     */
-  val licenseSpecifications: js.UndefOr[Input[js.Array[Input[LaunchTemplateLicenseSpecification]]]] = js.undefined
+  val licenseSpecifications: js.UndefOr[Input[js.Array[Input[LaunchTemplateLicenseSpecification]]]] = js.native
   /**
     * The monitoring option for the instance. See Monitoring below for more details.
     */
-  val monitoring: js.UndefOr[Input[LaunchTemplateMonitoring]] = js.undefined
+  val monitoring: js.UndefOr[Input[LaunchTemplateMonitoring]] = js.native
   /**
     * The name of the launch template. If you leave this blank, this provider will auto-generate a unique name.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`.
     */
-  val namePrefix: js.UndefOr[Input[String]] = js.undefined
+  val namePrefix: js.UndefOr[Input[String]] = js.native
   /**
     * Customize network interfaces to be attached at instance boot time. See Network
     * Interfaces below for more details.
     */
-  val networkInterfaces: js.UndefOr[Input[js.Array[Input[LaunchTemplateNetworkInterface]]]] = js.undefined
+  val networkInterfaces: js.UndefOr[Input[js.Array[Input[LaunchTemplateNetworkInterface]]]] = js.native
   /**
     * The placement of the instance. See Placement below for more details.
     */
-  val placement: js.UndefOr[Input[LaunchTemplatePlacement]] = js.undefined
+  val placement: js.UndefOr[Input[LaunchTemplatePlacement]] = js.native
   /**
     * The ID of the RAM disk.
     */
-  val ramDiskId: js.UndefOr[Input[String]] = js.undefined
+  val ramDiskId: js.UndefOr[Input[String]] = js.native
   /**
     * A list of security group names to associate with. If you are creating Instances in a VPC, use
     * `vpcSecurityGroupIds` instead.
     */
-  val securityGroupNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val securityGroupNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The tags to apply to the resources during launch. See Tag Specifications below for more details.
     */
-  val tagSpecifications: js.UndefOr[Input[js.Array[Input[LaunchTemplateTagSpecification]]]] = js.undefined
+  val tagSpecifications: js.UndefOr[Input[js.Array[Input[LaunchTemplateTagSpecification]]]] = js.native
   /**
     * A mapping of tags to assign to the launch template.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * The Base64-encoded user data to provide when launching the instance.
     */
-  val userData: js.UndefOr[Input[String]] = js.undefined
+  val userData: js.UndefOr[Input[String]] = js.native
   /**
     * A list of security group IDs to associate with.
     */
-  val vpcSecurityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val vpcSecurityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
 }
 
 object LaunchTemplateArgs {

@@ -10,10 +10,10 @@ Twitter API client library for node.js
 | ------------------ | :-------------: |
 | Full name          | twitter |
 | Keywords           | twitter, streaming, oauth |
-| # releases         | 2 |
-| # dependents       | 241 |
-| # downloads        | 1002559 |
-| # stars            | 140 |
+| # releases         | 1 |
+| # dependents       | 269 |
+| # downloads        | 1170232 |
+| # stars            | 141 |
 
 ## Links
 - [Homepage](https://github.com/desmondmorris/node-twitter)

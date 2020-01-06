@@ -10,9 +10,9 @@ Tiny (2KB) and dependency free mask input for Vue.js
 | ------------------ | :-------------: |
 | Full name          | vue-the-mask |
 | Keywords           | vue, mask |
-| # releases         | 3 |
-| # dependents       | 44 |
-| # downloads        | 1086905 |
+| # releases         | 1 |
+| # dependents       | 62 |
+| # downloads        | 1428066 |
 | # stars            | 3 |
 
 ## Links

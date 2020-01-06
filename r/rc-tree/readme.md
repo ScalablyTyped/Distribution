@@ -10,9 +10,9 @@ tree ui component for react
 | ------------------ | :-------------: |
 | Full name          | rc-tree |
 | Keywords           | react, react-component, react-tree, tree |
-| # releases         | 59 |
-| # dependents       | 152 |
-| # downloads        | 7519589 |
+| # releases         | 88 |
+| # dependents       | 215 |
+| # downloads        | 16555358 |
 | # stars            | 4 |
 
 ## Links

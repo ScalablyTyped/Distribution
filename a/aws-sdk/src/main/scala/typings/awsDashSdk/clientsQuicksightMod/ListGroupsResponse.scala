@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ListGroupsResponse extends js.Object {
   /**
     * The list of the groups.
     */
-  var GroupList: js.UndefOr[typings.awsDashSdk.clientsQuicksightMod.GroupList] = js.undefined
+  var GroupList: js.UndefOr[typings.awsDashSdk.clientsQuicksightMod.GroupList] = js.native
   /**
     * A pagination token that can be used in a subsequent request.
     */
-  var NextToken: js.UndefOr[String] = js.undefined
+  var NextToken: js.UndefOr[String] = js.native
   /**
     * The AWS request ID for this operation.
     */
-  var RequestId: js.UndefOr[String] = js.undefined
+  var RequestId: js.UndefOr[String] = js.native
   /**
-    * The http status of the request.
+    * The HTTP status of the request.
     */
-  var Status: js.UndefOr[StatusCode] = js.undefined
+  var Status: js.UndefOr[StatusCode] = js.native
 }
 
 object ListGroupsResponse {
@@ -29,12 +30,12 @@ object ListGroupsResponse {
     GroupList: GroupList = null,
     NextToken: String = null,
     RequestId: String = null,
-    Status: Int | Double = null
+    Status: Int | scala.Double = null
   ): ListGroupsResponse = {
     val __obj = js.Dynamic.literal()
-    if (GroupList != null) __obj.updateDynamic("GroupList")(GroupList)
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
-    if (RequestId != null) __obj.updateDynamic("RequestId")(RequestId)
+    if (GroupList != null) __obj.updateDynamic("GroupList")(GroupList.asInstanceOf[js.Any])
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
+    if (RequestId != null) __obj.updateDynamic("RequestId")(RequestId.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListGroupsResponse]
   }

@@ -10,9 +10,9 @@ A JavaScript code analyzer for deep, cross-editor language support
 | ------------------ | :-------------: |
 | Full name          | tern |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 64 |
-| # downloads        | 410990 |
+| # releases         | 10 |
+| # dependents       | 70 |
+| # downloads        | 562498 |
 | # stars            | 6 |
 
 ## Links

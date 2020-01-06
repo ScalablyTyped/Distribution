@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DBParameterGroup extends js.Object {
   /**
     * The Amazon Resource Name (ARN) for the DB parameter group.
     */
-  var DBParameterGroupArn: js.UndefOr[String] = js.undefined
+  var DBParameterGroupArn: js.UndefOr[String] = js.native
   /**
     * Provides the name of the DB parameter group family that this DB parameter group is compatible with.
     */
-  var DBParameterGroupFamily: js.UndefOr[String] = js.undefined
+  var DBParameterGroupFamily: js.UndefOr[String] = js.native
   /**
     * Provides the name of the DB parameter group.
     */
-  var DBParameterGroupName: js.UndefOr[String] = js.undefined
+  var DBParameterGroupName: js.UndefOr[String] = js.native
   /**
     * Provides the customer-specified description for this DB parameter group.
     */
-  var Description: js.UndefOr[String] = js.undefined
+  var Description: js.UndefOr[String] = js.native
 }
 
 object DBParameterGroup {
@@ -32,10 +33,10 @@ object DBParameterGroup {
     Description: String = null
   ): DBParameterGroup = {
     val __obj = js.Dynamic.literal()
-    if (DBParameterGroupArn != null) __obj.updateDynamic("DBParameterGroupArn")(DBParameterGroupArn)
-    if (DBParameterGroupFamily != null) __obj.updateDynamic("DBParameterGroupFamily")(DBParameterGroupFamily)
-    if (DBParameterGroupName != null) __obj.updateDynamic("DBParameterGroupName")(DBParameterGroupName)
-    if (Description != null) __obj.updateDynamic("Description")(Description)
+    if (DBParameterGroupArn != null) __obj.updateDynamic("DBParameterGroupArn")(DBParameterGroupArn.asInstanceOf[js.Any])
+    if (DBParameterGroupFamily != null) __obj.updateDynamic("DBParameterGroupFamily")(DBParameterGroupFamily.asInstanceOf[js.Any])
+    if (DBParameterGroupName != null) __obj.updateDynamic("DBParameterGroupName")(DBParameterGroupName.asInstanceOf[js.Any])
+    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     __obj.asInstanceOf[DBParameterGroup]
   }
 }

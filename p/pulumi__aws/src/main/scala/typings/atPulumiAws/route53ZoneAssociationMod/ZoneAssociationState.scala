@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ZoneAssociationState extends js.Object {
   /**
     * The VPC to associate with the private hosted zone.
     */
-  val vpcId: js.UndefOr[Input[String]] = js.undefined
+  val vpcId: js.UndefOr[Input[String]] = js.native
   /**
     * The VPC's region. Defaults to the region of the AWS provider.
     */
-  val vpcRegion: js.UndefOr[Input[String]] = js.undefined
+  val vpcRegion: js.UndefOr[Input[String]] = js.native
   /**
     * The private hosted zone to associate.
     */
-  val zoneId: js.UndefOr[Input[String]] = js.undefined
+  val zoneId: js.UndefOr[Input[String]] = js.native
 }
 
 object ZoneAssociationState {

@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DestinationSchema extends js.Object {
   /**
     * Specifies the format of the records on the output stream.
     */
-  var RecordFormatType: typings.awsDashSdk.clientsKinesisanalyticsv2Mod.RecordFormatType
+  var RecordFormatType: typings.awsDashSdk.clientsKinesisanalyticsv2Mod.RecordFormatType = js.native
 }
 
 object DestinationSchema {

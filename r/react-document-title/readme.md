@@ -11,8 +11,8 @@ A declarative, nested, stateful document.title for React
 | Full name          | react-document-title |
 | Keywords           | react, component, react-component, document.title, title, jsx |
 | # releases         | 0 |
-| # dependents       | 169 |
-| # downloads        | 2739035 |
+| # dependents       | 219 |
+| # downloads        | 3447450 |
 | # stars            | 4 |
 
 ## Links

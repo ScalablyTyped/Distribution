@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ListenerCertificateState extends js.Object {
   /**
     * The ARN of the certificate to attach to the listener.
     */
-  val certificateArn: js.UndefOr[Input[String]] = js.undefined
+  val certificateArn: js.UndefOr[Input[String]] = js.native
   /**
     * The ARN of the listener to which to attach the certificate.
     */
-  val listenerArn: js.UndefOr[Input[String]] = js.undefined
+  val listenerArn: js.UndefOr[Input[String]] = js.native
 }
 
 object ListenerCertificateState {

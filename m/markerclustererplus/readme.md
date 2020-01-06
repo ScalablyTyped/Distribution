@@ -11,8 +11,8 @@ Typings are for version 2.1
 | Full name          | markerclustererplus |
 | Keywords           | markerclustererplus, google, maps |
 | # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 322594 |
+| # dependents       | 6 |
+| # downloads        | 387313 |
 | # stars            | 0 |
 
 ## Links

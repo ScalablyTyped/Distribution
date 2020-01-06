@@ -12,7 +12,7 @@ Allows you to put glyphs from icon fonts into your LeafletJS markers.
 | Keywords           | leaflet, icon font |
 | # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 28323 |
+| # downloads        | 35126 |
 | # stars            | 2 |
 
 ## Links

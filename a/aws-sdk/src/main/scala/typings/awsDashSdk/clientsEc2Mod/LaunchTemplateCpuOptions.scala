@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LaunchTemplateCpuOptions extends js.Object {
   /**
     * The number of CPU cores for the instance.
     */
-  var CoreCount: js.UndefOr[Integer] = js.undefined
+  var CoreCount: js.UndefOr[Integer] = js.native
   /**
     * The number of threads per CPU core.
     */
-  var ThreadsPerCore: js.UndefOr[Integer] = js.undefined
+  var ThreadsPerCore: js.UndefOr[Integer] = js.native
 }
 
 object LaunchTemplateCpuOptions {

@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait JSONInput extends js.Object {
   /**
     * The type of JSON. Valid values: Document, Lines.
     */
-  var Type: js.UndefOr[JSONType] = js.undefined
+  var Type: js.UndefOr[JSONType] = js.native
 }
 
 object JSONInput {

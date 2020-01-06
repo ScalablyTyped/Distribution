@@ -10,9 +10,9 @@ Use the system's native `realpath`
 | ------------------ | :-------------: |
 | Full name          | realpath-native |
 | Keywords           | realpath |
-| # releases         | 7 |
-| # dependents       | 26 |
-| # downloads        | 164050702 |
+| # releases         | 5 |
+| # dependents       | 27 |
+| # downloads        | 181501605 |
 | # stars            | 0 |
 
 ## Links

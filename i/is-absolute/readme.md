@@ -10,9 +10,9 @@ Returns true if a file path is absolute. Does not rely on the path module and ca
 | ------------------ | :-------------: |
 | Full name          | is-absolute |
 | Keywords           | absolute, built, built-in, check, core, detect, dir, file, filepath, is, is-absolute, isabsolute, normalize, path, path-absolute, path-is-absolute, paths, polyfill, relative, resolve, shim, slash, slashes, uri, url, util, utils |
-| # releases         | 2 |
-| # dependents       | 57 |
-| # downloads        | 110847894 |
+| # releases         | 0 |
+| # dependents       | 62 |
+| # downloads        | 124281250 |
 | # stars            | 3 |
 
 ## Links

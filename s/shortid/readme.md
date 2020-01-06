@@ -9,13 +9,13 @@ Amazingly short non-sequential url-friendly unique id generator.
 | ------------------ | :-------------: |
 | Full name          | shortid |
 | Keywords           | short, tiny, id, uuid, bitly, shorten, mongoid, shortid, tinyid |
-| # releases         | 7 |
-| # dependents       | 1519 |
-| # downloads        | 16321948 |
+| # releases         | 8 |
+| # dependents       | 1891 |
+| # downloads        | 25662004 |
 | # stars            | 195 |
 
 ## Links
-- [Homepage](https://github.com/dylang/shortid)
+- [Homepage](https://github.com/dylang/shortid#readme)
 - [Bugs](https://github.com/dylang/shortid/issues)
 - [Repository](https://github.com/dylang/shortid)
 - [Npm](https://www.npmjs.com/package/shortid)

@@ -10,9 +10,9 @@ a promise-based sftp client for node.js
 | ------------------ | :-------------: |
 | Full name          | promise-sftp |
 | Keywords           | sftp, client, promise, node |
-| # releases         | 5 |
-| # dependents       | 4 |
-| # downloads        | 191018 |
+| # releases         | 3 |
+| # dependents       | 5 |
+| # downloads        | 243307 |
 | # stars            | 1 |
 
 ## Links

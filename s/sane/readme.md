@@ -10,9 +10,9 @@ Sane aims to be fast, small, and reliable file system watcher.
 | ------------------ | :-------------: |
 | Full name          | sane |
 | Keywords           | watch, file, fswatcher, watchfile, fs, watching |
-| # releases         | 18 |
-| # dependents       | 117 |
-| # downloads        | 138591323 |
+| # releases         | 14 |
+| # dependents       | 136 |
+| # downloads        | 230845501 |
 | # stars            | 13 |
 
 ## Links

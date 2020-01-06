@@ -10,9 +10,9 @@ PeerJS client
 | ------------------ | :-------------: |
 | Full name          | peerjs |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 34 |
-| # downloads        | 27364 |
+| # releases         | 18 |
+| # dependents       | 44 |
+| # downloads        | 63436 |
 | # stars            | 9 |
 
 ## Links

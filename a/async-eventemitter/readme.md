@@ -10,9 +10,9 @@ Just like EventEmitter, but with support for callbacks and interuption of the li
 | ------------------ | :-------------: |
 | Full name          | async-eventemitter |
 | Keywords           | event, async, eventemitter, callback |
-| # releases         | 2 |
-| # dependents       | 32 |
-| # downloads        | 1059997 |
+| # releases         | 0 |
+| # dependents       | 34 |
+| # downloads        | 1145696 |
 | # stars            | 1 |
 
 ## Links

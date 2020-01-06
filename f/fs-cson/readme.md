@@ -12,7 +12,7 @@ Read and write CSON to the filesystem
 | Keywords           | fs, cson |
 | # releases         | 0 |
 | # dependents       | 46 |
-| # downloads        | 8732 |
+| # downloads        | 33964 |
 | # stars            | 1 |
 
 ## Links

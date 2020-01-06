@@ -11,8 +11,8 @@ Generate a Buffer instance from a Data URI string
 | Full name          | data-uri-to-buffer |
 | Keywords           | data, uri, datauri, data-uri, buffer, convert, rfc2397, 2397 |
 | # releases         | 4 |
-| # dependents       | 49 |
-| # downloads        | 48479991 |
+| # dependents       | 54 |
+| # downloads        | 68339436 |
 | # stars            | 5 |
 
 ## Links

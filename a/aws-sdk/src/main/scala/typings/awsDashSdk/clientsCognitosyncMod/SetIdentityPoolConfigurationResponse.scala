@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SetIdentityPoolConfigurationResponse extends js.Object {
   /**
     * Options to apply to this identity pool for Amazon Cognito streams.
     */
-  var CognitoStreams: js.UndefOr[typings.awsDashSdk.clientsCognitosyncMod.CognitoStreams] = js.undefined
+  var CognitoStreams: js.UndefOr[typings.awsDashSdk.clientsCognitosyncMod.CognitoStreams] = js.native
   /**
     * A name-spaced GUID (for example, us-east-1:23EC4050-6AEA-7089-A2DD-08002EXAMPLE) created by Amazon Cognito.
     */
-  var IdentityPoolId: js.UndefOr[typings.awsDashSdk.clientsCognitosyncMod.IdentityPoolId] = js.undefined
+  var IdentityPoolId: js.UndefOr[typings.awsDashSdk.clientsCognitosyncMod.IdentityPoolId] = js.native
   /**
     * Options to apply to this identity pool for push synchronization.
     */
-  var PushSync: js.UndefOr[typings.awsDashSdk.clientsCognitosyncMod.PushSync] = js.undefined
+  var PushSync: js.UndefOr[typings.awsDashSdk.clientsCognitosyncMod.PushSync] = js.native
 }
 
 object SetIdentityPoolConfigurationResponse {
@@ -27,9 +28,9 @@ object SetIdentityPoolConfigurationResponse {
     PushSync: PushSync = null
   ): SetIdentityPoolConfigurationResponse = {
     val __obj = js.Dynamic.literal()
-    if (CognitoStreams != null) __obj.updateDynamic("CognitoStreams")(CognitoStreams)
-    if (IdentityPoolId != null) __obj.updateDynamic("IdentityPoolId")(IdentityPoolId)
-    if (PushSync != null) __obj.updateDynamic("PushSync")(PushSync)
+    if (CognitoStreams != null) __obj.updateDynamic("CognitoStreams")(CognitoStreams.asInstanceOf[js.Any])
+    if (IdentityPoolId != null) __obj.updateDynamic("IdentityPoolId")(IdentityPoolId.asInstanceOf[js.Any])
+    if (PushSync != null) __obj.updateDynamic("PushSync")(PushSync.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetIdentityPoolConfigurationResponse]
   }
 }

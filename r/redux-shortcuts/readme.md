@@ -11,8 +11,8 @@ Keyboard shortcuts in Redux
 | Full name          | redux-shortcuts |
 | Keywords           | redux, shortcut |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 799 |
+| # dependents       | 1 |
+| # downloads        | 1635 |
 | # stars            | 0 |
 
 ## Links

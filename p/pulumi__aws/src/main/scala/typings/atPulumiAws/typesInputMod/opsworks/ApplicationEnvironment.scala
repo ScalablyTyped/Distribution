@@ -5,10 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ApplicationEnvironment extends js.Object {
-  var key: Input[String]
-  var secure: js.UndefOr[Input[Boolean]] = js.undefined
-  var value: Input[String]
+  var key: Input[String] = js.native
+  var secure: js.UndefOr[Input[Boolean]] = js.native
+  var value: Input[String] = js.native
 }
 
 object ApplicationEnvironment {

@@ -10,9 +10,9 @@ Simulate user events for react-testing-library
 | ------------------ | :-------------: |
 | Full name          | @testing-library/user-event |
 | Keywords           | react-testing-library, dom-testing-library, react, testing |
-| # releases         | 3 |
-| # dependents       | 0 |
-| # downloads        | 82 |
+| # releases         | 21 |
+| # dependents       | 140 |
+| # downloads        | 1212614 |
 | # stars            | 0 |
 
 ## Links

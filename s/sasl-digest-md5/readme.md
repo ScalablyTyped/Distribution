@@ -12,7 +12,7 @@ JavaScript implementation of DIGEST-MD5 SASL mechanism.
 | Keywords           | sasl, auth, authn, authentication, security |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 3161 |
+| # downloads        | 2481 |
 | # stars            | 0 |
 
 ## Links

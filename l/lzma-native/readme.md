@@ -10,9 +10,9 @@ Provides bindings to the native liblzma library (.xz file format, among others)
 | ------------------ | :-------------: |
 | Full name          | lzma-native |
 | Keywords           | lzma, compression, crc32, xz, liblzma |
-| # releases         | 17 |
-| # dependents       | 24 |
-| # downloads        | 476710 |
+| # releases         | 15 |
+| # dependents       | 25 |
+| # downloads        | 679112 |
 | # stars            | 2 |
 
 ## Links

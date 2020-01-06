@@ -7,19 +7,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IdentityPoolRoleAttachmentArgs extends js.Object {
   /**
     * An identity pool ID in the format REGION:GUID.
     */
-  val identityPoolId: Input[String]
+  val identityPoolId: Input[String] = js.native
   /**
     * A List of Role Mapping.
     */
-  val roleMappings: js.UndefOr[Input[js.Array[Input[IdentityPoolRoleAttachmentRoleMapping]]]] = js.undefined
+  val roleMappings: js.UndefOr[Input[js.Array[Input[IdentityPoolRoleAttachmentRoleMapping]]]] = js.native
   /**
     * The map of roles associated with this pool. For a given role, the key will be either "authenticated" or "unauthenticated" and the value will be the Role ARN.
     */
-  val roles: Input[IdentityPoolRoleAttachmentRoles]
+  val roles: Input[IdentityPoolRoleAttachmentRoles] = js.native
 }
 
 object IdentityPoolRoleAttachmentArgs {

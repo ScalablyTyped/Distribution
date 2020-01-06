@@ -70,8 +70,8 @@ object Errors extends js.Object {
   
   @js.native
   object ErrorStrings
-    extends /* code */ StringDictionary[String]
-       with /* code */ NumberDictionary[String]
+    extends /* code */ NumberDictionary[String]
+       with /* code */ StringDictionary[String]
   
 }
 

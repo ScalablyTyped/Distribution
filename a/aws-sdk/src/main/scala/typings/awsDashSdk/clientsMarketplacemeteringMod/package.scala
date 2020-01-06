@@ -21,7 +21,7 @@ package object clientsMarketplacemeteringMod {
   type UsageRecordList = js.Array[UsageRecord]
   type UsageRecordResultList = js.Array[UsageRecordResult]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Success
+    - typings.awsDashSdk.awsDashSdkStrings.Success_
     - typings.awsDashSdk.awsDashSdkStrings.CustomerNotSubscribed
     - typings.awsDashSdk.awsDashSdkStrings.DuplicateRecord
     - java.lang.String
@@ -30,7 +30,7 @@ package object clientsMarketplacemeteringMod {
   type VersionInteger = Double
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2016-01-14`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | java.lang.String

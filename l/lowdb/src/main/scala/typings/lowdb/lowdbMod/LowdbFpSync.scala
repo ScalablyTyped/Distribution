@@ -26,9 +26,7 @@ trait LowdbFpSync[SchemaT] extends LowdbBase[SchemaT] {
   ] = js.native
   def apply[T](path: String): FpReturnSync[T] = js.native
   def apply[T](path: String, defaultValue: T): FpReturnSync[T] = js.native
-  def apply[TKey /* <: String */](path: js.Array[TKey]): FpReturnSync[
-    /* import warning: importer.ImportType#apply Failed type conversion: SchemaT[TKey] */ js.Any
-  ] = js.native
+  def apply[T](path: js.Array[String]): FpReturnSync[T] = js.native
   def apply[T](path: js.Array[String], defaultValue: T): FpReturnSync[T] = js.native
   def apply[TKey /* <: String */](
     path: js.Array[TKey],

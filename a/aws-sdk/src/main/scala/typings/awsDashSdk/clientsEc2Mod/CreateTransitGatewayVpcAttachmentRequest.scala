@@ -4,31 +4,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CreateTransitGatewayVpcAttachmentRequest extends js.Object {
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.undefined
+  var DryRun: js.UndefOr[Boolean] = js.native
   /**
     * The VPC attachment options.
     */
-  var Options: js.UndefOr[CreateTransitGatewayVpcAttachmentRequestOptions] = js.undefined
+  var Options: js.UndefOr[CreateTransitGatewayVpcAttachmentRequestOptions] = js.native
   /**
     * The IDs of one or more subnets. You can specify only one subnet per Availability Zone. You must specify at least one subnet, but we recommend that you specify two subnets for better availability. The transit gateway uses one IP address from each specified subnet.
     */
-  var SubnetIds: ValueStringList
+  var SubnetIds: ValueStringList = js.native
   /**
     * The tags to apply to the VPC attachment.
     */
-  var TagSpecifications: js.UndefOr[TagSpecificationList] = js.undefined
+  var TagSpecifications: js.UndefOr[TagSpecificationList] = js.native
   /**
     * The ID of the transit gateway.
     */
-  var TransitGatewayId: String
+  var TransitGatewayId: String = js.native
   /**
     * The ID of the VPC.
     */
-  var VpcId: String
+  var VpcId: String = js.native
 }
 
 object CreateTransitGatewayVpcAttachmentRequest {
@@ -41,10 +42,10 @@ object CreateTransitGatewayVpcAttachmentRequest {
     Options: CreateTransitGatewayVpcAttachmentRequestOptions = null,
     TagSpecifications: TagSpecificationList = null
   ): CreateTransitGatewayVpcAttachmentRequest = {
-    val __obj = js.Dynamic.literal(SubnetIds = SubnetIds, TransitGatewayId = TransitGatewayId, VpcId = VpcId)
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
-    if (Options != null) __obj.updateDynamic("Options")(Options)
-    if (TagSpecifications != null) __obj.updateDynamic("TagSpecifications")(TagSpecifications)
+    val __obj = js.Dynamic.literal(SubnetIds = SubnetIds.asInstanceOf[js.Any], TransitGatewayId = TransitGatewayId.asInstanceOf[js.Any], VpcId = VpcId.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
+    if (Options != null) __obj.updateDynamic("Options")(Options.asInstanceOf[js.Any])
+    if (TagSpecifications != null) __obj.updateDynamic("TagSpecifications")(TagSpecifications.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTransitGatewayVpcAttachmentRequest]
   }
 }

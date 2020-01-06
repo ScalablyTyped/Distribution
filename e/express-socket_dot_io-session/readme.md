@@ -11,8 +11,8 @@ Share a cookie-based express-session middleware with socket.io
 | Full name          | express-socket.io-session |
 | Keywords           | socket.io, express, express-session |
 | # releases         | 4 |
-| # dependents       | 25 |
-| # downloads        | 281054 |
+| # dependents       | 26 |
+| # downloads        | 257444 |
 | # stars            | 17 |
 
 ## Links

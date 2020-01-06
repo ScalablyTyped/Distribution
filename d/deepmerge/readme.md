@@ -10,9 +10,9 @@ A library for deep (recursive) merging of Javascript objects
 | ------------------ | :-------------: |
 | Full name          | deepmerge |
 | Keywords           | merge, deep, extend, copy, clone, recursive |
-| # releases         | 18 |
-| # dependents       | 2435 |
-| # downloads        | 91593258 |
+| # releases         | 17 |
+| # dependents       | 3483 |
+| # downloads        | 216387109 |
 | # stars            | 27 |
 
 ## Links

@@ -1,5 +1,19 @@
 package typings.figma
 
+import typings.figma.figmaMod._Global_.BlendMode
+import typings.figma.figmaMod._Global_.ConstraintType
+import typings.figma.figmaMod._Global_.HandleMirroring
+import typings.figma.figmaMod._Global_.Navigation
+import typings.figma.figmaMod._Global_.NodeType
+import typings.figma.figmaMod._Global_.OverflowDirection
+import typings.figma.figmaMod._Global_.OverlayBackgroundInteraction
+import typings.figma.figmaMod._Global_.OverlayPositionType
+import typings.figma.figmaMod._Global_.StrokeCap
+import typings.figma.figmaMod._Global_.StrokeJoin
+import typings.figma.figmaMod._Global_.StyleType
+import typings.figma.figmaMod._Global_.TextCase
+import typings.figma.figmaMod._Global_.TextDecoration
+import typings.figma.figmaMod._Global_.WindingRule
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,6 +21,9 @@ import scala.scalajs.js.annotation._
 object figmaStrings {
   @js.native
   sealed trait `1Dot0Dot0` extends js.Object
+  
+  @js.native
+  sealed trait AFTER_TIMEOUT extends js.Object
   
   @js.native
   sealed trait ANGLE extends HandleMirroring
@@ -24,6 +41,9 @@ object figmaStrings {
   sealed trait AUTO extends js.Object
   
   @js.native
+  sealed trait BACK extends js.Object
+  
+  @js.native
   sealed trait BACKGROUND_BLUR extends js.Object
   
   @js.native
@@ -33,10 +53,30 @@ object figmaStrings {
   sealed trait BOOLEAN_OPERATION extends NodeType
   
   @js.native
+  sealed trait BOTH extends OverflowDirection
+  
+  @js.native
   sealed trait BOTTOM extends js.Object
   
   @js.native
-  sealed trait CENTER extends ConstraintType
+  sealed trait BOTTOM_CENTER extends OverlayPositionType
+  
+  @js.native
+  sealed trait BOTTOM_LEFT extends OverlayPositionType
+  
+  @js.native
+  sealed trait BOTTOM_RIGHT extends OverlayPositionType
+  
+  @js.native
+  sealed trait CENTER
+    extends ConstraintType
+       with OverlayPositionType
+  
+  @js.native
+  sealed trait CLOSE extends js.Object
+  
+  @js.native
+  sealed trait CLOSE_ON_CLICK_OUTSIDE extends OverlayBackgroundInteraction
   
   @js.native
   sealed trait COLOR extends BlendMode
@@ -63,10 +103,22 @@ object figmaStrings {
   sealed trait DIFFERENCE extends BlendMode
   
   @js.native
+  sealed trait DISSOLVE extends js.Object
+  
+  @js.native
   sealed trait DOCUMENT extends NodeType
   
   @js.native
   sealed trait DROP_SHADOW extends js.Object
+  
+  @js.native
+  sealed trait EASE_IN extends js.Object
+  
+  @js.native
+  sealed trait EASE_IN_AND_OUT extends js.Object
+  
+  @js.native
+  sealed trait EASE_OUT extends js.Object
   
   @js.native
   sealed trait EFFECT extends StyleType
@@ -88,6 +140,9 @@ object figmaStrings {
   
   @js.native
   sealed trait FIT extends js.Object
+  
+  @js.native
+  sealed trait FIXED extends js.Object
   
   @js.native
   sealed trait FRAME extends NodeType
@@ -115,6 +170,9 @@ object figmaStrings {
   
   @js.native
   sealed trait HEIGHT extends js.Object
+  
+  @js.native
+  sealed trait HORIZONTAL extends OverflowDirection
   
   @js.native
   sealed trait HUE extends BlendMode
@@ -153,6 +211,9 @@ object figmaStrings {
   sealed trait LINE extends NodeType
   
   @js.native
+  sealed trait LINEAR extends js.Object
+  
+  @js.native
   sealed trait LINEAR_BURN extends BlendMode
   
   @js.native
@@ -165,6 +226,9 @@ object figmaStrings {
   sealed trait LUMINOSITY extends BlendMode
   
   @js.native
+  sealed trait MANUAL extends OverlayPositionType
+  
+  @js.native
   sealed trait MAX extends ConstraintType
   
   @js.native
@@ -174,11 +238,37 @@ object figmaStrings {
   sealed trait MITER extends StrokeJoin
   
   @js.native
+  sealed trait MOUSE_DOWN extends js.Object
+  
+  @js.native
+  sealed trait MOUSE_ENTER extends js.Object
+  
+  @js.native
+  sealed trait MOUSE_LEAVE extends js.Object
+  
+  @js.native
+  sealed trait MOUSE_UP extends js.Object
+  
+  @js.native
+  sealed trait MOVE_IN extends js.Object
+  
+  @js.native
+  sealed trait MOVE_OUT extends js.Object
+  
+  @js.native
   sealed trait MULTIPLY extends BlendMode
+  
+  @js.native
+  sealed trait NAVIGATE extends Navigation
+  
+  @js.native
+  sealed trait NODE extends js.Object
   
   @js.native
   sealed trait NONE
     extends HandleMirroring
+       with OverflowDirection
+       with OverlayBackgroundInteraction
        with StrokeCap
        with TextDecoration
   
@@ -189,13 +279,27 @@ object figmaStrings {
   sealed trait NORMAL extends BlendMode
   
   @js.native
+  sealed trait ON_CLICK extends js.Object
+  
+  @js.native
+  sealed trait ON_DRAG extends js.Object
+  
+  @js.native
+  sealed trait ON_HOVER extends js.Object
+  
+  @js.native
+  sealed trait ON_PRESS extends js.Object
+  
+  @js.native
   sealed trait ORIGINAL extends TextCase
   
   @js.native
   sealed trait OUTSIDE extends js.Object
   
   @js.native
-  sealed trait OVERLAY extends BlendMode
+  sealed trait OVERLAY
+    extends BlendMode
+       with Navigation
   
   @js.native
   sealed trait PAGE extends NodeType
@@ -220,6 +324,9 @@ object figmaStrings {
   
   @js.native
   sealed trait POLYGON extends NodeType
+  
+  @js.native
+  sealed trait PUSH extends js.Object
   
   @js.native
   sealed trait RECTANGLE extends NodeType
@@ -248,10 +355,22 @@ object figmaStrings {
   sealed trait SLICE extends NodeType
   
   @js.native
+  sealed trait SLIDE_IN extends js.Object
+  
+  @js.native
+  sealed trait SLIDE_OUT extends js.Object
+  
+  @js.native
+  sealed trait SMART_ANIMATE extends js.Object
+  
+  @js.native
   sealed trait SOFT_LIGHT extends BlendMode
   
   @js.native
   sealed trait SOLID extends js.Object
+  
+  @js.native
+  sealed trait SOLID_COLOR extends js.Object
   
   @js.native
   sealed trait SQUARE extends StrokeCap
@@ -272,6 +391,9 @@ object figmaStrings {
   sealed trait SVG extends js.Object
   
   @js.native
+  sealed trait SWAP extends Navigation
+  
+  @js.native
   sealed trait TEXT
     extends NodeType
        with StyleType
@@ -286,6 +408,15 @@ object figmaStrings {
   sealed trait TOP extends js.Object
   
   @js.native
+  sealed trait TOP_CENTER extends OverlayPositionType
+  
+  @js.native
+  sealed trait TOP_LEFT extends OverlayPositionType
+  
+  @js.native
+  sealed trait TOP_RIGHT extends OverlayPositionType
+  
+  @js.native
   sealed trait UNDERLINE extends TextDecoration
   
   @js.native
@@ -295,7 +426,13 @@ object figmaStrings {
   sealed trait UPPER extends TextCase
   
   @js.native
+  sealed trait URL extends js.Object
+  
+  @js.native
   sealed trait VECTOR extends NodeType
+  
+  @js.native
+  sealed trait VERTICAL extends OverflowDirection
   
   @js.native
   sealed trait WIDTH extends js.Object
@@ -310,19 +447,10 @@ object figmaStrings {
   sealed trait Y extends js.Object
   
   @js.native
-  sealed trait auto_ extends js.Object
-  
-  @js.native
-  sealed trait close extends js.Object
+  sealed trait close_ extends js.Object
   
   @js.native
   sealed trait currentpagechange extends js.Object
-  
-  @js.native
-  sealed trait default extends js.Object
-  
-  @js.native
-  sealed trait last extends js.Object
   
   @js.native
   sealed trait message extends js.Object
@@ -332,6 +460,8 @@ object figmaStrings {
   
   @scala.inline
   def `1Dot0Dot0`: `1Dot0Dot0` = "1.0.0".asInstanceOf[`1Dot0Dot0`]
+  @scala.inline
+  def AFTER_TIMEOUT: AFTER_TIMEOUT = "AFTER_TIMEOUT".asInstanceOf[AFTER_TIMEOUT]
   @scala.inline
   def ANGLE: ANGLE = "ANGLE".asInstanceOf[ANGLE]
   @scala.inline
@@ -343,15 +473,29 @@ object figmaStrings {
   @scala.inline
   def AUTO: AUTO = "AUTO".asInstanceOf[AUTO]
   @scala.inline
+  def BACK: BACK = "BACK".asInstanceOf[BACK]
+  @scala.inline
   def BACKGROUND_BLUR: BACKGROUND_BLUR = "BACKGROUND_BLUR".asInstanceOf[BACKGROUND_BLUR]
   @scala.inline
   def BEVEL: BEVEL = "BEVEL".asInstanceOf[BEVEL]
   @scala.inline
   def BOOLEAN_OPERATION: BOOLEAN_OPERATION = "BOOLEAN_OPERATION".asInstanceOf[BOOLEAN_OPERATION]
   @scala.inline
+  def BOTH: BOTH = "BOTH".asInstanceOf[BOTH]
+  @scala.inline
   def BOTTOM: BOTTOM = "BOTTOM".asInstanceOf[BOTTOM]
   @scala.inline
+  def BOTTOM_CENTER: BOTTOM_CENTER = "BOTTOM_CENTER".asInstanceOf[BOTTOM_CENTER]
+  @scala.inline
+  def BOTTOM_LEFT: BOTTOM_LEFT = "BOTTOM_LEFT".asInstanceOf[BOTTOM_LEFT]
+  @scala.inline
+  def BOTTOM_RIGHT: BOTTOM_RIGHT = "BOTTOM_RIGHT".asInstanceOf[BOTTOM_RIGHT]
+  @scala.inline
   def CENTER: CENTER = "CENTER".asInstanceOf[CENTER]
+  @scala.inline
+  def CLOSE: CLOSE = "CLOSE".asInstanceOf[CLOSE]
+  @scala.inline
+  def CLOSE_ON_CLICK_OUTSIDE: CLOSE_ON_CLICK_OUTSIDE = "CLOSE_ON_CLICK_OUTSIDE".asInstanceOf[CLOSE_ON_CLICK_OUTSIDE]
   @scala.inline
   def COLOR: COLOR = "COLOR".asInstanceOf[COLOR]
   @scala.inline
@@ -369,9 +513,17 @@ object figmaStrings {
   @scala.inline
   def DIFFERENCE: DIFFERENCE = "DIFFERENCE".asInstanceOf[DIFFERENCE]
   @scala.inline
+  def DISSOLVE: DISSOLVE = "DISSOLVE".asInstanceOf[DISSOLVE]
+  @scala.inline
   def DOCUMENT: DOCUMENT = "DOCUMENT".asInstanceOf[DOCUMENT]
   @scala.inline
   def DROP_SHADOW: DROP_SHADOW = "DROP_SHADOW".asInstanceOf[DROP_SHADOW]
+  @scala.inline
+  def EASE_IN: EASE_IN = "EASE_IN".asInstanceOf[EASE_IN]
+  @scala.inline
+  def EASE_IN_AND_OUT: EASE_IN_AND_OUT = "EASE_IN_AND_OUT".asInstanceOf[EASE_IN_AND_OUT]
+  @scala.inline
+  def EASE_OUT: EASE_OUT = "EASE_OUT".asInstanceOf[EASE_OUT]
   @scala.inline
   def EFFECT: EFFECT = "EFFECT".asInstanceOf[EFFECT]
   @scala.inline
@@ -386,6 +538,8 @@ object figmaStrings {
   def FILL: FILL = "FILL".asInstanceOf[FILL]
   @scala.inline
   def FIT: FIT = "FIT".asInstanceOf[FIT]
+  @scala.inline
+  def FIXED: FIXED = "FIXED".asInstanceOf[FIXED]
   @scala.inline
   def FRAME: FRAME = "FRAME".asInstanceOf[FRAME]
   @scala.inline
@@ -404,6 +558,8 @@ object figmaStrings {
   def HARD_LIGHT: HARD_LIGHT = "HARD_LIGHT".asInstanceOf[HARD_LIGHT]
   @scala.inline
   def HEIGHT: HEIGHT = "HEIGHT".asInstanceOf[HEIGHT]
+  @scala.inline
+  def HORIZONTAL: HORIZONTAL = "HORIZONTAL".asInstanceOf[HORIZONTAL]
   @scala.inline
   def HUE: HUE = "HUE".asInstanceOf[HUE]
   @scala.inline
@@ -429,6 +585,8 @@ object figmaStrings {
   @scala.inline
   def LINE: LINE = "LINE".asInstanceOf[LINE]
   @scala.inline
+  def LINEAR: LINEAR = "LINEAR".asInstanceOf[LINEAR]
+  @scala.inline
   def LINEAR_BURN: LINEAR_BURN = "LINEAR_BURN".asInstanceOf[LINEAR_BURN]
   @scala.inline
   def LINEAR_DODGE: LINEAR_DODGE = "LINEAR_DODGE".asInstanceOf[LINEAR_DODGE]
@@ -437,19 +595,45 @@ object figmaStrings {
   @scala.inline
   def LUMINOSITY: LUMINOSITY = "LUMINOSITY".asInstanceOf[LUMINOSITY]
   @scala.inline
+  def MANUAL: MANUAL = "MANUAL".asInstanceOf[MANUAL]
+  @scala.inline
   def MAX: MAX = "MAX".asInstanceOf[MAX]
   @scala.inline
   def MIN: MIN = "MIN".asInstanceOf[MIN]
   @scala.inline
   def MITER: MITER = "MITER".asInstanceOf[MITER]
   @scala.inline
+  def MOUSE_DOWN: MOUSE_DOWN = "MOUSE_DOWN".asInstanceOf[MOUSE_DOWN]
+  @scala.inline
+  def MOUSE_ENTER: MOUSE_ENTER = "MOUSE_ENTER".asInstanceOf[MOUSE_ENTER]
+  @scala.inline
+  def MOUSE_LEAVE: MOUSE_LEAVE = "MOUSE_LEAVE".asInstanceOf[MOUSE_LEAVE]
+  @scala.inline
+  def MOUSE_UP: MOUSE_UP = "MOUSE_UP".asInstanceOf[MOUSE_UP]
+  @scala.inline
+  def MOVE_IN: MOVE_IN = "MOVE_IN".asInstanceOf[MOVE_IN]
+  @scala.inline
+  def MOVE_OUT: MOVE_OUT = "MOVE_OUT".asInstanceOf[MOVE_OUT]
+  @scala.inline
   def MULTIPLY: MULTIPLY = "MULTIPLY".asInstanceOf[MULTIPLY]
+  @scala.inline
+  def NAVIGATE: NAVIGATE = "NAVIGATE".asInstanceOf[NAVIGATE]
+  @scala.inline
+  def NODE: NODE = "NODE".asInstanceOf[NODE]
   @scala.inline
   def NONE: NONE = "NONE".asInstanceOf[NONE]
   @scala.inline
   def NONZERO: NONZERO = "NONZERO".asInstanceOf[NONZERO]
   @scala.inline
   def NORMAL: NORMAL = "NORMAL".asInstanceOf[NORMAL]
+  @scala.inline
+  def ON_CLICK: ON_CLICK = "ON_CLICK".asInstanceOf[ON_CLICK]
+  @scala.inline
+  def ON_DRAG: ON_DRAG = "ON_DRAG".asInstanceOf[ON_DRAG]
+  @scala.inline
+  def ON_HOVER: ON_HOVER = "ON_HOVER".asInstanceOf[ON_HOVER]
+  @scala.inline
+  def ON_PRESS: ON_PRESS = "ON_PRESS".asInstanceOf[ON_PRESS]
   @scala.inline
   def ORIGINAL: ORIGINAL = "ORIGINAL".asInstanceOf[ORIGINAL]
   @scala.inline
@@ -473,6 +657,8 @@ object figmaStrings {
   @scala.inline
   def POLYGON: POLYGON = "POLYGON".asInstanceOf[POLYGON]
   @scala.inline
+  def PUSH: PUSH = "PUSH".asInstanceOf[PUSH]
+  @scala.inline
   def RECTANGLE: RECTANGLE = "RECTANGLE".asInstanceOf[RECTANGLE]
   @scala.inline
   def RIGHT: RIGHT = "RIGHT".asInstanceOf[RIGHT]
@@ -489,9 +675,17 @@ object figmaStrings {
   @scala.inline
   def SLICE: SLICE = "SLICE".asInstanceOf[SLICE]
   @scala.inline
+  def SLIDE_IN: SLIDE_IN = "SLIDE_IN".asInstanceOf[SLIDE_IN]
+  @scala.inline
+  def SLIDE_OUT: SLIDE_OUT = "SLIDE_OUT".asInstanceOf[SLIDE_OUT]
+  @scala.inline
+  def SMART_ANIMATE: SMART_ANIMATE = "SMART_ANIMATE".asInstanceOf[SMART_ANIMATE]
+  @scala.inline
   def SOFT_LIGHT: SOFT_LIGHT = "SOFT_LIGHT".asInstanceOf[SOFT_LIGHT]
   @scala.inline
   def SOLID: SOLID = "SOLID".asInstanceOf[SOLID]
+  @scala.inline
+  def SOLID_COLOR: SOLID_COLOR = "SOLID_COLOR".asInstanceOf[SOLID_COLOR]
   @scala.inline
   def SQUARE: SQUARE = "SQUARE".asInstanceOf[SQUARE]
   @scala.inline
@@ -505,6 +699,8 @@ object figmaStrings {
   @scala.inline
   def SVG: SVG = "SVG".asInstanceOf[SVG]
   @scala.inline
+  def SWAP: SWAP = "SWAP".asInstanceOf[SWAP]
+  @scala.inline
   def TEXT: TEXT = "TEXT".asInstanceOf[TEXT]
   @scala.inline
   def TILE: TILE = "TILE".asInstanceOf[TILE]
@@ -513,13 +709,23 @@ object figmaStrings {
   @scala.inline
   def TOP: TOP = "TOP".asInstanceOf[TOP]
   @scala.inline
+  def TOP_CENTER: TOP_CENTER = "TOP_CENTER".asInstanceOf[TOP_CENTER]
+  @scala.inline
+  def TOP_LEFT: TOP_LEFT = "TOP_LEFT".asInstanceOf[TOP_LEFT]
+  @scala.inline
+  def TOP_RIGHT: TOP_RIGHT = "TOP_RIGHT".asInstanceOf[TOP_RIGHT]
+  @scala.inline
   def UNDERLINE: UNDERLINE = "UNDERLINE".asInstanceOf[UNDERLINE]
   @scala.inline
   def UNION: UNION = "UNION".asInstanceOf[UNION]
   @scala.inline
   def UPPER: UPPER = "UPPER".asInstanceOf[UPPER]
   @scala.inline
+  def URL: URL = "URL".asInstanceOf[URL]
+  @scala.inline
   def VECTOR: VECTOR = "VECTOR".asInstanceOf[VECTOR]
+  @scala.inline
+  def VERTICAL: VERTICAL = "VERTICAL".asInstanceOf[VERTICAL]
   @scala.inline
   def WIDTH: WIDTH = "WIDTH".asInstanceOf[WIDTH]
   @scala.inline
@@ -529,15 +735,9 @@ object figmaStrings {
   @scala.inline
   def Y: Y = "Y".asInstanceOf[Y]
   @scala.inline
-  def auto_ : auto_ = "auto".asInstanceOf[auto_]
-  @scala.inline
-  def close: close = "close".asInstanceOf[close]
+  def close_ : close_ = "close".asInstanceOf[close_]
   @scala.inline
   def currentpagechange: currentpagechange = "currentpagechange".asInstanceOf[currentpagechange]
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
-  @scala.inline
-  def last: last = "last".asInstanceOf[last]
   @scala.inline
   def message: message = "message".asInstanceOf[message]
   @scala.inline

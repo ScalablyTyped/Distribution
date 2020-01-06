@@ -10,9 +10,9 @@ Orchestrating complex page layout animations with a flick of the wrist.
 | ------------------ | :-------------: |
 | Full name          | conductor-animate |
 | Keywords           | conductor, conductor-animate, react-transition-group, spring, animate, animations, react |
-| # releases         | 10 |
+| # releases         | 13 |
 | # dependents       | 0 |
-| # downloads        | 375 |
+| # downloads        | 700 |
 | # stars            | 0 |
 
 ## Links

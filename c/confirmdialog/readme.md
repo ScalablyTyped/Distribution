@@ -9,9 +9,9 @@ Typings are for version 1.0.2
 | ------------------ | :-------------: |
 | Full name          | confirmdialog |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 1252 |
+| # downloads        | 2248 |
 | # stars            | 0 |
 
 ## Links

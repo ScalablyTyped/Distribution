@@ -12,14 +12,14 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListStreamConstructor
   extends ListStreamMethod
-     with Instantiable2[
-      /* options */ DuplexOptions, 
-      /* callback */ js.Function2[/* err */ Error, /* data */ js.Array[js.Any], Unit], 
-      ListStream
-    ]
      with Instantiable0[ListStream]
      with Instantiable1[
       (/* options */ DuplexOptions) | (/* callback */ js.Function2[/* err */ Error, /* data */ js.Array[js.Any], Unit]), 
+      ListStream
+    ]
+     with Instantiable2[
+      /* options */ DuplexOptions, 
+      /* callback */ js.Function2[/* err */ Error, /* data */ js.Array[js.Any], Unit], 
       ListStream
     ] {
   @JSName("obj")

@@ -6,19 +6,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ResourceShareArgs extends js.Object {
   /**
     * Indicates whether principals outside your organization can be associated with a resource share.
     */
-  val allowExternalPrincipals: js.UndefOr[Input[Boolean]] = js.undefined
+  val allowExternalPrincipals: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The name of the resource share.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * A mapping of tags to assign to the resource share.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object ResourceShareArgs {

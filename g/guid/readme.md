@@ -10,9 +10,9 @@ A Guid generator and validator.
 | ------------------ | :-------------: |
 | Full name          | guid |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 118 |
-| # downloads        | 736503 |
+| # releases         | 0 |
+| # dependents       | 121 |
+| # downloads        | 691845 |
 | # stars            | 12 |
 
 ## Links

@@ -10,10 +10,10 @@ Create beautiful fullscreen scrolling websites
 | ------------------ | :-------------: |
 | Full name          | fullpage.js |
 | Keywords           | jquery, javacript, scrolling, single_page, onepage, fullpage, fullpagejs, one_page, sliding, snap, scroll, swipe, mousewheel, sections, slides, slidehow |
-| # releases         | 8 |
-| # dependents       | 12 |
-| # downloads        | 353853 |
-| # stars            | 12 |
+| # releases         | 10 |
+| # dependents       | 17 |
+| # downloads        | 562619 |
+| # stars            | 13 |
 
 ## Links
 - [Homepage](https://github.com/alvarotrigo/fullPage.js)

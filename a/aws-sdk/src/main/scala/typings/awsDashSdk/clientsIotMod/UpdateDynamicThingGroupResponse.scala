@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UpdateDynamicThingGroupResponse extends js.Object {
   /**
     * The dynamic thing group version.
     */
-  var version: js.UndefOr[Version] = js.undefined
+  var version: js.UndefOr[Version] = js.native
 }
 
 object UpdateDynamicThingGroupResponse {

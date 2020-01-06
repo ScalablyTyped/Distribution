@@ -10,9 +10,9 @@ Prevents default scroll event when pressing down arrow, page down, spacebar, etc
 | ------------------ | :-------------: |
 | Full name          | makeup-prevent-scroll-keys |
 | Keywords           | makeup, ebay, accessibility, a11y |
-| # releases         | 4 |
+| # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 7575 |
+| # downloads        | 2486 |
 | # stars            | 0 |
 
 ## Links

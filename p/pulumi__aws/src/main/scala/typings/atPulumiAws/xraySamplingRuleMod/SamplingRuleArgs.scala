@@ -6,55 +6,56 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SamplingRuleArgs extends js.Object {
   /**
     * Matches attributes derived from the request.
     */
-  val attributes: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
+  val attributes: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * The percentage of matching requests to instrument, after the reservoir is exhausted.
     */
-  val fixedRate: Input[Double]
+  val fixedRate: Input[Double] = js.native
   /**
     * Matches the hostname from a request URL.
     */
-  val host: Input[String]
+  val host: Input[String] = js.native
   /**
     * Matches the HTTP method of a request.
     */
-  val httpMethod: Input[String]
+  val httpMethod: Input[String] = js.native
   /**
     * The priority of the sampling rule.
     */
-  val priority: Input[Double]
+  val priority: Input[Double] = js.native
   /**
     * A fixed number of matching requests to instrument per second, prior to applying the fixed rate. The reservoir is not used directly by services, but applies to all services using the rule collectively.
     */
-  val reservoirSize: Input[Double]
+  val reservoirSize: Input[Double] = js.native
   /**
     * Matches the ARN of the AWS resource on which the service runs.
     */
-  val resourceArn: Input[String]
+  val resourceArn: Input[String] = js.native
   /**
     * The name of the sampling rule.
     */
-  val ruleName: js.UndefOr[Input[String]] = js.undefined
+  val ruleName: js.UndefOr[Input[String]] = js.native
   /**
     * Matches the `name` that the service uses to identify itself in segments.
     */
-  val serviceName: Input[String]
+  val serviceName: Input[String] = js.native
   /**
     * Matches the `origin` that the service uses to identify its type in segments.
     */
-  val serviceType: Input[String]
+  val serviceType: Input[String] = js.native
   /**
     * Matches the path from a request URL.
     */
-  val urlPath: Input[String]
+  val urlPath: Input[String] = js.native
   /**
     * The version of the sampling rule format (`1` )
     */
-  val version: Input[Double]
+  val version: Input[Double] = js.native
 }
 
 object SamplingRuleArgs {

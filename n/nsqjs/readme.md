@@ -10,9 +10,9 @@ NodeJS client for NSQ
 | ------------------ | :-------------: |
 | Full name          | nsqjs |
 | Keywords           | nsq, nsq client, nsq client official, nsqjs, distributed messaging, messaging, task, task management |
-| # releases         | 8 |
-| # dependents       | 37 |
-| # downloads        | 133618 |
+| # releases         | 5 |
+| # dependents       | 41 |
+| # downloads        | 180592 |
 | # stars            | 9 |
 
 ## Links

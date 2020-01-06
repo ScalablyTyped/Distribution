@@ -11,8 +11,8 @@ js function for hashing messages with MD5
 | Full name          | md5 |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 1782 |
-| # downloads        | 51411697 |
+| # dependents       | 2189 |
+| # downloads        | 75908015 |
 | # stars            | 69 |
 
 ## Links

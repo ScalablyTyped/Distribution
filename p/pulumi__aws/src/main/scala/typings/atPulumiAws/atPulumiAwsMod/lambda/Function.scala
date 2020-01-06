@@ -36,13 +36,13 @@ object Function extends js.Object {
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
     */
-  def get(name: String, id: Input[ID]): typings.atPulumiAws.lambdaLambdaMixinsMod.lambdaFunctionMod.Function = js.native
-  def get(name: String, id: Input[ID], state: FunctionState): typings.atPulumiAws.lambdaLambdaMixinsMod.lambdaFunctionMod.Function = js.native
-  def get(name: String, id: Input[ID], state: FunctionState, opts: CustomResourceOptions): typings.atPulumiAws.lambdaLambdaMixinsMod.lambdaFunctionMod.Function = js.native
+  def get(name: String, id: Input[ID]): typings.atPulumiAws.lambdaFunctionMod.Function = js.native
+  def get(name: String, id: Input[ID], state: FunctionState): typings.atPulumiAws.lambdaFunctionMod.Function = js.native
+  def get(name: String, id: Input[ID], state: FunctionState, opts: CustomResourceOptions): typings.atPulumiAws.lambdaFunctionMod.Function = js.native
   /**
     * Returns true if the given object is an instance of Function.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
-  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lambda/lambdaMixins.@pulumi/aws/lambda/function.Function */ Boolean = js.native
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lambda/function.Function */ Boolean = js.native
 }
 

@@ -6,12 +6,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SignerOptions extends js.Object {
-  var credentials: js.UndefOr[Credentials | CredentialsOptions] = js.undefined
-  var hostname: js.UndefOr[String] = js.undefined
-  var port: js.UndefOr[Double] = js.undefined
-  var region: js.UndefOr[String] = js.undefined
-  var username: js.UndefOr[String] = js.undefined
+  var credentials: js.UndefOr[Credentials | CredentialsOptions] = js.native
+  var hostname: js.UndefOr[String] = js.native
+  var port: js.UndefOr[Double] = js.native
+  var region: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.native
 }
 
 object SignerOptions {
@@ -25,10 +26,10 @@ object SignerOptions {
   ): SignerOptions = {
     val __obj = js.Dynamic.literal()
     if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
-    if (hostname != null) __obj.updateDynamic("hostname")(hostname)
+    if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region)
-    if (username != null) __obj.updateDynamic("username")(username)
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignerOptions]
   }
 }

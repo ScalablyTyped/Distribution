@@ -12,7 +12,7 @@ trait Options extends js.Object {
   var exposeHeaders: js.UndefOr[js.Array[String] | String] = js.undefined
   var keepHeadersOnError: js.UndefOr[Boolean] = js.undefined
   var maxAge: js.UndefOr[Double | String] = js.undefined
-  var origin: js.UndefOr[(js.Function1[/* ctx */ Context, String]) | String] = js.undefined
+  var origin: js.UndefOr[(js.Function1[/* ctx */ Context, String | js.Thenable[String]]) | String] = js.undefined
 }
 
 object Options {
@@ -24,7 +24,7 @@ object Options {
     exposeHeaders: js.Array[String] | String = null,
     keepHeadersOnError: js.UndefOr[Boolean] = js.undefined,
     maxAge: Double | String = null,
-    origin: (js.Function1[/* ctx */ Context, String]) | String = null
+    origin: (js.Function1[/* ctx */ Context, String | js.Thenable[String]]) | String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (allowHeaders != null) __obj.updateDynamic("allowHeaders")(allowHeaders.asInstanceOf[js.Any])

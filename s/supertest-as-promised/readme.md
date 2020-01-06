@@ -10,9 +10,9 @@ Supercharge supertest with a promise interface
 | ------------------ | :-------------: |
 | Full name          | supertest-as-promised |
 | Keywords           | supertest, superagent, request, tdd, bdd, http, test, testing, promise, promised |
-| # releases         | 1 |
-| # dependents       | 22 |
-| # downloads        | 923181 |
+| # releases         | 0 |
+| # dependents       | 21 |
+| # downloads        | 982935 |
 | # stars            | 32 |
 
 ## Links

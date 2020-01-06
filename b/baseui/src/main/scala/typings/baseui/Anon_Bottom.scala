@@ -13,6 +13,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_Bottom extends js.Object {
   @JSName("$placement")
-  var $placement: bottomRight | bottom | topRight | bottomLeft | topLeft | top = js.native
+  var $placement: topLeft | topRight | bottomLeft | bottomRight | bottom | top = js.native
 }
 

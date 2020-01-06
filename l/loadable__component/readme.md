@@ -10,9 +10,9 @@ React code splitting made easy.
 | ------------------ | :-------------: |
 | Full name          | @loadable/component |
 | Keywords           | react, ssr, webpack, code-splitting, react-router, server-side-rendering, dynamic-import, react-loadable, react-async-components |
-| # releases         | 17 |
-| # dependents       | 15 |
-| # downloads        | 409078 |
+| # releases         | 23 |
+| # dependents       | 102 |
+| # downloads        | 3040065 |
 | # stars            | 0 |
 
 ## Links

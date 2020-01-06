@@ -22,7 +22,7 @@ trait PopoverPrivateState extends js.Object {
   var isAnimating: Boolean
   var isLayerMounted: Boolean
   var isMounted: Boolean
-  var placement: rightTop | auto | leftBottom | bottomRight | leftTop | bottom | left | topRight | bottomLeft | rightBottom | topLeft | top | right
+  var placement: topLeft | leftBottom | topRight | rightBottom | bottomLeft | right | auto | bottomRight | leftTop | left | bottom | rightTop | top
   var popoverOffset: Offset
 }
 
@@ -33,7 +33,7 @@ object PopoverPrivateState {
     isAnimating: Boolean,
     isLayerMounted: Boolean,
     isMounted: Boolean,
-    placement: rightTop | auto | leftBottom | bottomRight | leftTop | bottom | left | topRight | bottomLeft | rightBottom | topLeft | top | right,
+    placement: topLeft | leftBottom | topRight | rightBottom | bottomLeft | right | auto | bottomRight | leftTop | left | bottom | rightTop | top,
     popoverOffset: Offset
   ): PopoverPrivateState = {
     val __obj = js.Dynamic.literal(arrowOffset = arrowOffset.asInstanceOf[js.Any], isAnimating = isAnimating.asInstanceOf[js.Any], isLayerMounted = isLayerMounted.asInstanceOf[js.Any], isMounted = isMounted.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any], popoverOffset = popoverOffset.asInstanceOf[js.Any])

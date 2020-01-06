@@ -10,9 +10,9 @@ The smallest and fastest pixel-level image comparison library.
 | ------------------ | :-------------: |
 | Full name          | pixelmatch |
 | Keywords           | image, comparison, diff |
-| # releases         | 1 |
-| # dependents       | 89 |
-| # downloads        | 15706637 |
+| # releases         | 5 |
+| # dependents       | 115 |
+| # downloads        | 30861256 |
 | # stars            | 8 |
 
 ## Links

@@ -12,7 +12,7 @@ Remember Me cookie authentication strategy for Passport.
 | Keywords           | passport, cookie, persistent, rememberme, auth, authn, authentication |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 12558 |
+| # downloads        | 52262 |
 | # stars            | 0 |
 
 ## Links

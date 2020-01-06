@@ -4,12 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClusterClusterCertificates extends js.Object {
-  var awsHardwareCertificate: String
-  var clusterCertificate: String
-  var clusterCsr: String
-  var hsmCertificate: String
-  var manufacturerHardwareCertificate: String
+  var awsHardwareCertificate: String = js.native
+  var clusterCertificate: String = js.native
+  var clusterCsr: String = js.native
+  var hsmCertificate: String = js.native
+  var manufacturerHardwareCertificate: String = js.native
 }
 
 object ClusterClusterCertificates {
@@ -21,7 +22,7 @@ object ClusterClusterCertificates {
     hsmCertificate: String,
     manufacturerHardwareCertificate: String
   ): ClusterClusterCertificates = {
-    val __obj = js.Dynamic.literal(awsHardwareCertificate = awsHardwareCertificate, clusterCertificate = clusterCertificate, clusterCsr = clusterCsr, hsmCertificate = hsmCertificate, manufacturerHardwareCertificate = manufacturerHardwareCertificate)
+    val __obj = js.Dynamic.literal(awsHardwareCertificate = awsHardwareCertificate.asInstanceOf[js.Any], clusterCertificate = clusterCertificate.asInstanceOf[js.Any], clusterCsr = clusterCsr.asInstanceOf[js.Any], hsmCertificate = hsmCertificate.asInstanceOf[js.Any], manufacturerHardwareCertificate = manufacturerHardwareCertificate.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ClusterClusterCertificates]
   }

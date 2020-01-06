@@ -10,9 +10,9 @@ A simple and powerful abstraction of node-fibers
 | ------------------ | :-------------: |
 | Full name          | asyncblock |
 | Keywords           | fiber, fibers, coroutine, stop, go, green, red |
-| # releases         | 4 |
+| # releases         | 0 |
 | # dependents       | 13 |
-| # downloads        | 16180 |
+| # downloads        | 13126 |
 | # stars            | 4 |
 
 ## Links

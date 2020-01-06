@@ -5,10 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/Avatar/Avatar.AvatarClassKey>> */
+@js.native
 trait PartialClassNameMapAvatarClassKey extends js.Object {
-  var colorDefault: js.UndefOr[String] = js.undefined
-  var img: js.UndefOr[String] = js.undefined
-  var root: js.UndefOr[String] = js.undefined
+  var colorDefault: js.UndefOr[String] = js.native
+  var img: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.native
 }
 
 object PartialClassNameMapAvatarClassKey {

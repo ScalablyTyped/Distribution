@@ -20,6 +20,6 @@ package object tcombMod {
   type TypeGuardPredicate[T] = js.Function1[/* x */ js.Any, /* is T */ scala.Boolean]
   type Update[T] = js.Function2[/* instance */ T, /* spec */ UpdatePatch, T]
   type UpdatePatch = Command | (StringDictionary[
-    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias tcomb.tcomb.UpdatePatch */ js.Object
+    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias tcomb.tcomb.UpdatePatch */ js.Object
   ])
 }

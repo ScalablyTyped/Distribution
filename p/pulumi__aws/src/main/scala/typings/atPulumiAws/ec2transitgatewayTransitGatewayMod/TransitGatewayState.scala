@@ -7,55 +7,56 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TransitGatewayState extends js.Object {
   /**
     * Private Autonomous System Number (ASN) for the Amazon side of a BGP session. The range is `64512` to `65534` for 16-bit ASNs and `4200000000` to `4294967294` for 32-bit ASNs. Default value: `64512`.
     */
-  val amazonSideAsn: js.UndefOr[Input[Double]] = js.undefined
+  val amazonSideAsn: js.UndefOr[Input[Double]] = js.native
   /**
     * EC2 Transit Gateway Amazon Resource Name (ARN)
     */
-  val arn: js.UndefOr[Input[ARN]] = js.undefined
+  val arn: js.UndefOr[Input[ARN]] = js.native
   /**
     * Identifier of the default association route table
     */
-  val associationDefaultRouteTableId: js.UndefOr[Input[String]] = js.undefined
+  val associationDefaultRouteTableId: js.UndefOr[Input[String]] = js.native
   /**
     * Whether resource attachment requests are automatically accepted. Valid values: `disable`, `enable`. Default value: `disable`.
     */
-  val autoAcceptSharedAttachments: js.UndefOr[Input[String]] = js.undefined
+  val autoAcceptSharedAttachments: js.UndefOr[Input[String]] = js.native
   /**
     * Whether resource attachments are automatically associated with the default association route table. Valid values: `disable`, `enable`. Default value: `enable`.
     */
-  val defaultRouteTableAssociation: js.UndefOr[Input[String]] = js.undefined
+  val defaultRouteTableAssociation: js.UndefOr[Input[String]] = js.native
   /**
     * Whether resource attachments automatically propagate routes to the default propagation route table. Valid values: `disable`, `enable`. Default value: `enable`.
     */
-  val defaultRouteTablePropagation: js.UndefOr[Input[String]] = js.undefined
+  val defaultRouteTablePropagation: js.UndefOr[Input[String]] = js.native
   /**
     * Description of the EC2 Transit Gateway.
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * Whether DNS support is enabled. Valid values: `disable`, `enable`. Default value: `enable`.
     */
-  val dnsSupport: js.UndefOr[Input[String]] = js.undefined
+  val dnsSupport: js.UndefOr[Input[String]] = js.native
   /**
     * Identifier of the AWS account that owns the EC2 Transit Gateway
     */
-  val ownerId: js.UndefOr[Input[String]] = js.undefined
+  val ownerId: js.UndefOr[Input[String]] = js.native
   /**
     * Identifier of the default propagation route table
     */
-  val propagationDefaultRouteTableId: js.UndefOr[Input[String]] = js.undefined
+  val propagationDefaultRouteTableId: js.UndefOr[Input[String]] = js.native
   /**
     * Key-value tags for the EC2 Transit Gateway.
     */
-  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * Whether VPN Equal Cost Multipath Protocol support is enabled. Valid values: `disable`, `enable`. Default value: `enable`.
     */
-  val vpnEcmpSupport: js.UndefOr[Input[String]] = js.undefined
+  val vpnEcmpSupport: js.UndefOr[Input[String]] = js.native
 }
 
 object TransitGatewayState {
@@ -71,7 +72,7 @@ object TransitGatewayState {
     dnsSupport: Input[String] = null,
     ownerId: Input[String] = null,
     propagationDefaultRouteTableId: Input[String] = null,
-    tags: Input[StringDictionary[Input[String]]] = null,
+    tags: Input[StringDictionary[_]] = null,
     vpnEcmpSupport: Input[String] = null
   ): TransitGatewayState = {
     val __obj = js.Dynamic.literal()

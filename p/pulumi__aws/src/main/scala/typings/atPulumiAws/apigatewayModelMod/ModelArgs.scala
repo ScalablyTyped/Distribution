@@ -6,27 +6,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ModelArgs extends js.Object {
   /**
     * The content type of the model
     */
-  val contentType: Input[String]
+  val contentType: Input[String] = js.native
   /**
     * The description of the model
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the model
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of the associated REST API
     */
-  val restApi: Input[RestApi]
+  val restApi: Input[RestApi] = js.native
   /**
     * The schema of the model in a JSON form
     */
-  val schema: js.UndefOr[Input[String]] = js.undefined
+  val schema: js.UndefOr[Input[String]] = js.native
 }
 
 object ModelArgs {

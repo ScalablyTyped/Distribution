@@ -12,7 +12,7 @@ United js test tools
 | Keywords           | mocha, test, bdd, tdd |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 31003 |
+| # downloads        | 58759 |
 | # stars            | 1 |
 
 ## Links

@@ -10,15 +10,12 @@ Protobuf format for Apollo Engine
 | ------------------ | :-------------: |
 | Full name          | apollo-engine-reporting-protobuf |
 | Keywords           | GraphQL, Apollo, Engine, Server, Javascript |
-| # releases         | 24 |
-| # dependents       | 2 |
-| # downloads        | 6551664 |
+| # releases         | 34 |
+| # dependents       | 6 |
+| # downloads        | 18706581 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/apollographql/apollo-engine-reporting#readme)
-- [Bugs](https://github.com/apollographql/apollo-engine-reporting/issues)
-- [Repository](https://github.com/apollographql/apollo-engine-reporting)
 - [Npm](https://www.npmjs.com/package/apollo-engine-reporting-protobuf)
     
 

@@ -11,8 +11,8 @@ A library for faking Ajax responses in your Jasmine suite
 | Full name          | jasmine-ajax |
 | Keywords           | - |
 | # releases         | 3 |
-| # dependents       | 11 |
-| # downloads        | 1645072 |
+| # dependents       | 16 |
+| # downloads        | 1898568 |
 | # stars            | 3 |
 
 ## Links

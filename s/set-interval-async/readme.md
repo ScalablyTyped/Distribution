@@ -10,9 +10,9 @@ Modern version of setInterval for promises and async functions available in Node
 | ------------------ | :-------------: |
 | Full name          | set-interval-async |
 | Keywords           | setInterval, setTimeout, clearInterval, clearTimeout, interval, timeout, milliseconds, seconds, promise, promises, async, asynchronous, await, recurrent, concurrency, reentrancy |
-| # releases         | 29 |
+| # releases         | 33 |
 | # dependents       | 0 |
-| # downloads        | 6618 |
+| # downloads        | 24389 |
 | # stars            | 0 |
 
 ## Links

@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 package object clientsLightsailMod {
   import org.scalablytyped.runtime.StringDictionary
   import typings.awsDashSdk.awsDashSdkStrings.AutoSnapshot
-  import typings.awsDashSdk.awsDashSdkStrings.mysql
+  import typings.awsDashSdk.awsDashSdkStrings.mysql_
   import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
   import typings.std.Date
 
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.inbound
-    - typings.awsDashSdk.awsDashSdkStrings.outbound
+    - typings.awsDashSdk.awsDashSdkStrings.inbound__
+    - typings.awsDashSdk.awsDashSdkStrings.outbound__
     - java.lang.String
   */
   type AccessDirection = _AccessDirection | String
@@ -25,9 +25,9 @@ package object clientsLightsailMod {
   type AutoSnapshotDate = String
   type AutoSnapshotDetailsList = js.Array[AutoSnapshotDetails]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Success
-    - typings.awsDashSdk.awsDashSdkStrings.Failed
-    - typings.awsDashSdk.awsDashSdkStrings.InProgress
+    - typings.awsDashSdk.awsDashSdkStrings.Success_
+    - typings.awsDashSdk.awsDashSdkStrings.Failed_
+    - typings.awsDashSdk.awsDashSdkStrings.InProgress_
     - typings.awsDashSdk.awsDashSdkStrings.NotFound
     - java.lang.String
   */
@@ -36,7 +36,7 @@ package object clientsLightsailMod {
   type Base64 = String
   type BlueprintList = js.Array[Blueprint]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.os
+    - typings.awsDashSdk.awsDashSdkStrings.os_
     - typings.awsDashSdk.awsDashSdkStrings.app
     - java.lang.String
   */
@@ -51,19 +51,19 @@ package object clientsLightsailMod {
   type DiskMapList = js.Array[DiskMap]
   type DiskSnapshotList = js.Array[DiskSnapshot]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.pending
-    - typings.awsDashSdk.awsDashSdkStrings.completed
-    - typings.awsDashSdk.awsDashSdkStrings.error
-    - typings.awsDashSdk.awsDashSdkStrings.unknown
+    - typings.awsDashSdk.awsDashSdkStrings.pending__
+    - typings.awsDashSdk.awsDashSdkStrings.completed__
+    - typings.awsDashSdk.awsDashSdkStrings.error__
+    - typings.awsDashSdk.awsDashSdkStrings.unknown__
     - java.lang.String
   */
   type DiskSnapshotState = _DiskSnapshotState | String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.pending
-    - typings.awsDashSdk.awsDashSdkStrings.error
-    - typings.awsDashSdk.awsDashSdkStrings.available
+    - typings.awsDashSdk.awsDashSdkStrings.pending__
+    - typings.awsDashSdk.awsDashSdkStrings.error__
+    - typings.awsDashSdk.awsDashSdkStrings.available__
     - typings.awsDashSdk.awsDashSdkStrings.`in-use`
-    - typings.awsDashSdk.awsDashSdkStrings.unknown
+    - typings.awsDashSdk.awsDashSdkStrings.unknown__
     - java.lang.String
   */
   type DiskState = _DiskState | String
@@ -83,34 +83,34 @@ package object clientsLightsailMod {
   type ExportSnapshotRecordSourceType = _ExportSnapshotRecordSourceType | String
   type HostKeysList = js.Array[HostKeyAttributes]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.ssh
+    - typings.awsDashSdk.awsDashSdkStrings.ssh_
     - typings.awsDashSdk.awsDashSdkStrings.rdp
     - java.lang.String
   */
   type InstanceAccessProtocol = _InstanceAccessProtocol | String
   type InstanceEntryList = js.Array[InstanceEntry]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.LbDOTRegistrationInProgress
-    - typings.awsDashSdk.awsDashSdkStrings.LbDOTInitialHealthChecking
-    - typings.awsDashSdk.awsDashSdkStrings.LbDOTInternalError
-    - typings.awsDashSdk.awsDashSdkStrings.InstanceDOTResponseCodeMismatch
-    - typings.awsDashSdk.awsDashSdkStrings.InstanceDOTTimeout
-    - typings.awsDashSdk.awsDashSdkStrings.InstanceDOTFailedHealthChecks
-    - typings.awsDashSdk.awsDashSdkStrings.InstanceDOTNotRegistered
-    - typings.awsDashSdk.awsDashSdkStrings.InstanceDOTNotInUse
-    - typings.awsDashSdk.awsDashSdkStrings.InstanceDOTDeregistrationInProgress
-    - typings.awsDashSdk.awsDashSdkStrings.InstanceDOTInvalidState
-    - typings.awsDashSdk.awsDashSdkStrings.InstanceDOTIpUnusable
+    - typings.awsDashSdk.awsDashSdkStrings.LbDotRegistrationInProgress
+    - typings.awsDashSdk.awsDashSdkStrings.LbDotInitialHealthChecking
+    - typings.awsDashSdk.awsDashSdkStrings.LbDotInternalError
+    - typings.awsDashSdk.awsDashSdkStrings.InstanceDotResponseCodeMismatch
+    - typings.awsDashSdk.awsDashSdkStrings.InstanceDotTimeout
+    - typings.awsDashSdk.awsDashSdkStrings.InstanceDotFailedHealthChecks
+    - typings.awsDashSdk.awsDashSdkStrings.InstanceDotNotRegistered
+    - typings.awsDashSdk.awsDashSdkStrings.InstanceDotNotInUse
+    - typings.awsDashSdk.awsDashSdkStrings.InstanceDotDeregistrationInProgress
+    - typings.awsDashSdk.awsDashSdkStrings.InstanceDotInvalidState
+    - typings.awsDashSdk.awsDashSdkStrings.InstanceDotIpUnusable
     - java.lang.String
   */
   type InstanceHealthReason = _InstanceHealthReason | String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.initial
-    - typings.awsDashSdk.awsDashSdkStrings.healthy
-    - typings.awsDashSdk.awsDashSdkStrings.unhealthy
+    - typings.awsDashSdk.awsDashSdkStrings.initial_
+    - typings.awsDashSdk.awsDashSdkStrings.healthy__
+    - typings.awsDashSdk.awsDashSdkStrings.unhealthy__
     - typings.awsDashSdk.awsDashSdkStrings.unused
-    - typings.awsDashSdk.awsDashSdkStrings.draining
-    - typings.awsDashSdk.awsDashSdkStrings.unavailable
+    - typings.awsDashSdk.awsDashSdkStrings.draining_
+    - typings.awsDashSdk.awsDashSdkStrings.unavailable__
     - java.lang.String
   */
   type InstanceHealthState = _InstanceHealthState | String
@@ -137,9 +137,9 @@ package object clientsLightsailMod {
   type InstancePortStateList = js.Array[InstancePortState]
   type InstanceSnapshotList = js.Array[InstanceSnapshot]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.pending
-    - typings.awsDashSdk.awsDashSdkStrings.error
-    - typings.awsDashSdk.awsDashSdkStrings.available
+    - typings.awsDashSdk.awsDashSdkStrings.pending__
+    - typings.awsDashSdk.awsDashSdkStrings.error__
+    - typings.awsDashSdk.awsDashSdkStrings.available__
     - java.lang.String
   */
   type InstanceSnapshotState = _InstanceSnapshotState | String
@@ -179,11 +179,11 @@ package object clientsLightsailMod {
   */
   type LoadBalancerProtocol = _LoadBalancerProtocol | String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.active
-    - typings.awsDashSdk.awsDashSdkStrings.provisioning
+    - typings.awsDashSdk.awsDashSdkStrings.active__
+    - typings.awsDashSdk.awsDashSdkStrings.provisioning_
     - typings.awsDashSdk.awsDashSdkStrings.active_impaired
-    - typings.awsDashSdk.awsDashSdkStrings.failed
-    - typings.awsDashSdk.awsDashSdkStrings.unknown
+    - typings.awsDashSdk.awsDashSdkStrings.failed__
+    - typings.awsDashSdk.awsDashSdkStrings.unknown__
     - java.lang.String
   */
   type LoadBalancerState = _LoadBalancerState | String
@@ -245,50 +245,50 @@ package object clientsLightsailMod {
   type MetricDatapointList = js.Array[MetricDatapoint]
   type MetricPeriod = Double
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Minimum
-    - typings.awsDashSdk.awsDashSdkStrings.Maximum
-    - typings.awsDashSdk.awsDashSdkStrings.Sum
-    - typings.awsDashSdk.awsDashSdkStrings.Average
+    - typings.awsDashSdk.awsDashSdkStrings.Minimum_
+    - typings.awsDashSdk.awsDashSdkStrings.Maximum_
+    - typings.awsDashSdk.awsDashSdkStrings.Sum_
+    - typings.awsDashSdk.awsDashSdkStrings.Average_
     - typings.awsDashSdk.awsDashSdkStrings.SampleCount
     - java.lang.String
   */
   type MetricStatistic = _MetricStatistic | String
   type MetricStatisticList = js.Array[MetricStatistic]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Seconds
+    - typings.awsDashSdk.awsDashSdkStrings.Seconds_
     - typings.awsDashSdk.awsDashSdkStrings.Microseconds
-    - typings.awsDashSdk.awsDashSdkStrings.Milliseconds
-    - typings.awsDashSdk.awsDashSdkStrings.Bytes
+    - typings.awsDashSdk.awsDashSdkStrings.Milliseconds_
+    - typings.awsDashSdk.awsDashSdkStrings.Bytes_
     - typings.awsDashSdk.awsDashSdkStrings.Kilobytes
     - typings.awsDashSdk.awsDashSdkStrings.Megabytes
     - typings.awsDashSdk.awsDashSdkStrings.Gigabytes
     - typings.awsDashSdk.awsDashSdkStrings.Terabytes
-    - typings.awsDashSdk.awsDashSdkStrings.Bits
+    - typings.awsDashSdk.awsDashSdkStrings.Bits_
     - typings.awsDashSdk.awsDashSdkStrings.Kilobits
     - typings.awsDashSdk.awsDashSdkStrings.Megabits
     - typings.awsDashSdk.awsDashSdkStrings.Gigabits
     - typings.awsDashSdk.awsDashSdkStrings.Terabits
-    - typings.awsDashSdk.awsDashSdkStrings.Percent
-    - typings.awsDashSdk.awsDashSdkStrings.Count
-    - typings.awsDashSdk.awsDashSdkStrings.`Bytes/Second`
-    - typings.awsDashSdk.awsDashSdkStrings.`Kilobytes/Second`
-    - typings.awsDashSdk.awsDashSdkStrings.`Megabytes/Second`
-    - typings.awsDashSdk.awsDashSdkStrings.`Gigabytes/Second`
-    - typings.awsDashSdk.awsDashSdkStrings.`Terabytes/Second`
-    - typings.awsDashSdk.awsDashSdkStrings.`Bits/Second`
-    - typings.awsDashSdk.awsDashSdkStrings.`Kilobits/Second`
-    - typings.awsDashSdk.awsDashSdkStrings.`Megabits/Second`
-    - typings.awsDashSdk.awsDashSdkStrings.`Gigabits/Second`
-    - typings.awsDashSdk.awsDashSdkStrings.`Terabits/Second`
-    - typings.awsDashSdk.awsDashSdkStrings.`Count/Second`
-    - typings.awsDashSdk.awsDashSdkStrings.None
+    - typings.awsDashSdk.awsDashSdkStrings.Percent_
+    - typings.awsDashSdk.awsDashSdkStrings.Count_
+    - typings.awsDashSdk.awsDashSdkStrings.BytesSlashSecond
+    - typings.awsDashSdk.awsDashSdkStrings.KilobytesSlashSecond
+    - typings.awsDashSdk.awsDashSdkStrings.MegabytesSlashSecond
+    - typings.awsDashSdk.awsDashSdkStrings.GigabytesSlashSecond
+    - typings.awsDashSdk.awsDashSdkStrings.TerabytesSlashSecond
+    - typings.awsDashSdk.awsDashSdkStrings.BitsSlashSecond
+    - typings.awsDashSdk.awsDashSdkStrings.KilobitsSlashSecond
+    - typings.awsDashSdk.awsDashSdkStrings.MegabitsSlashSecond
+    - typings.awsDashSdk.awsDashSdkStrings.GigabitsSlashSecond
+    - typings.awsDashSdk.awsDashSdkStrings.TerabitsSlashSecond
+    - typings.awsDashSdk.awsDashSdkStrings.CountSlashSecond
+    - typings.awsDashSdk.awsDashSdkStrings.None_
     - java.lang.String
   */
   type MetricUnit = _MetricUnit | String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.tcp
-    - typings.awsDashSdk.awsDashSdkStrings.all
-    - typings.awsDashSdk.awsDashSdkStrings.udp
+    - typings.awsDashSdk.awsDashSdkStrings.tcp_
+    - typings.awsDashSdk.awsDashSdkStrings.all__
+    - typings.awsDashSdk.awsDashSdkStrings.udp_
     - java.lang.String
   */
   type NetworkProtocol = _NetworkProtocol | String
@@ -296,10 +296,10 @@ package object clientsLightsailMod {
   type OperationList = js.Array[Operation]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.NotStarted
-    - typings.awsDashSdk.awsDashSdkStrings.Started
-    - typings.awsDashSdk.awsDashSdkStrings.Failed
-    - typings.awsDashSdk.awsDashSdkStrings.Completed
-    - typings.awsDashSdk.awsDashSdkStrings.Succeeded
+    - typings.awsDashSdk.awsDashSdkStrings.Started_
+    - typings.awsDashSdk.awsDashSdkStrings.Failed_
+    - typings.awsDashSdk.awsDashSdkStrings.Completed_
+    - typings.awsDashSdk.awsDashSdkStrings.Succeeded_
     - java.lang.String
   */
   type OperationStatus = _OperationStatus | String
@@ -357,8 +357,8 @@ package object clientsLightsailMod {
   type PendingMaintenanceActionList = js.Array[PendingMaintenanceAction]
   type Port = Double
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Public
-    - typings.awsDashSdk.awsDashSdkStrings.Private
+    - typings.awsDashSdk.awsDashSdkStrings.Public_
+    - typings.awsDashSdk.awsDashSdkStrings.Private_
     - java.lang.String
   */
   type PortAccessType = _PortAccessType | String
@@ -373,15 +373,15 @@ package object clientsLightsailMod {
   type PortInfoSourceType = _PortInfoSourceType | String
   type PortList = js.Array[Port]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.open
-    - typings.awsDashSdk.awsDashSdkStrings.closed
+    - typings.awsDashSdk.awsDashSdkStrings.open__
+    - typings.awsDashSdk.awsDashSdkStrings.closed_
     - java.lang.String
   */
   type PortState = _PortState | String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Started
-    - typings.awsDashSdk.awsDashSdkStrings.Succeeded
-    - typings.awsDashSdk.awsDashSdkStrings.Failed
+    - typings.awsDashSdk.awsDashSdkStrings.Started_
+    - typings.awsDashSdk.awsDashSdkStrings.Succeeded_
+    - typings.awsDashSdk.awsDashSdkStrings.Failed_
     - java.lang.String
   */
   type RecordState = _RecordState | String
@@ -406,7 +406,7 @@ package object clientsLightsailMod {
   type RegionName = _RegionName | String
   type RelationalDatabaseBlueprintList = js.Array[RelationalDatabaseBlueprint]
   type RelationalDatabaseBundleList = js.Array[RelationalDatabaseBundle]
-  type RelationalDatabaseEngine = mysql | String
+  type RelationalDatabaseEngine = mysql_ | String
   type RelationalDatabaseEventList = js.Array[RelationalDatabaseEvent]
   type RelationalDatabaseList = js.Array[RelationalDatabase]
   /* Rewritten from type alias, can be one of: 
@@ -432,11 +432,11 @@ package object clientsLightsailMod {
   type ResourceName = String
   type ResourceNameList = js.Array[ResourceName]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Instance
+    - typings.awsDashSdk.awsDashSdkStrings.Instance_
     - typings.awsDashSdk.awsDashSdkStrings.StaticIp
     - typings.awsDashSdk.awsDashSdkStrings.KeyPair
     - typings.awsDashSdk.awsDashSdkStrings.InstanceSnapshot
-    - typings.awsDashSdk.awsDashSdkStrings.Domain
+    - typings.awsDashSdk.awsDashSdkStrings.Domain_
     - typings.awsDashSdk.awsDashSdkStrings.PeeredVpc
     - typings.awsDashSdk.awsDashSdkStrings.LoadBalancer
     - typings.awsDashSdk.awsDashSdkStrings.LoadBalancerTlsCertificate
@@ -460,7 +460,7 @@ package object clientsLightsailMod {
   type TimeOfDay = String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2016-11-28`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

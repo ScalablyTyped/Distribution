@@ -10,9 +10,9 @@ Firebase performance for web
 | ------------------ | :-------------: |
 | Full name          | @firebase/performance |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 0 |
+| # releases         | 398 |
+| # dependents       | 4 |
+| # downloads        | 7983043 |
 | # stars            | 0 |
 
 ## Links

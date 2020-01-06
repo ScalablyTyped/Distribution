@@ -5,43 +5,44 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FunctionState extends js.Object {
   /**
     * The ID of the associated AppSync API.
     */
-  val apiId: js.UndefOr[Input[String]] = js.undefined
+  val apiId: js.UndefOr[Input[String]] = js.native
   /**
     * The ARN of the Function object.
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * The Function DataSource name.
     */
-  val dataSource: js.UndefOr[Input[String]] = js.undefined
+  val dataSource: js.UndefOr[Input[String]] = js.native
   /**
     * The Function description.
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * A unique ID representing the Function object.
     */
-  val functionId: js.UndefOr[Input[String]] = js.undefined
+  val functionId: js.UndefOr[Input[String]] = js.native
   /**
     * The version of the request mapping template. Currently the supported value is `2018-05-29`.
     */
-  val functionVersion: js.UndefOr[Input[String]] = js.undefined
+  val functionVersion: js.UndefOr[Input[String]] = js.native
   /**
     * The Function name. The function name does not have to be unique.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * The Function request mapping template. Functions support only the 2018-05-29 version of the request mapping template.
     */
-  val requestMappingTemplate: js.UndefOr[Input[String]] = js.undefined
+  val requestMappingTemplate: js.UndefOr[Input[String]] = js.native
   /**
     * The Function response mapping template.
     */
-  val responseMappingTemplate: js.UndefOr[Input[String]] = js.undefined
+  val responseMappingTemplate: js.UndefOr[Input[String]] = js.native
 }
 
 object FunctionState {

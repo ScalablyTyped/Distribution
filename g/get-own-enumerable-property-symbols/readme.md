@@ -11,8 +11,8 @@ Returns an array of all enumerable symbol properties found directly upon a given
 | Full name          | get-own-enumerable-property-symbols |
 | Keywords           | get, enumerable, symbol, property, key, object |
 | # releases         | 4 |
-| # dependents       | 4 |
-| # downloads        | 47411883 |
+| # dependents       | 7 |
+| # downloads        | 113977944 |
 | # stars            | 0 |
 
 ## Links

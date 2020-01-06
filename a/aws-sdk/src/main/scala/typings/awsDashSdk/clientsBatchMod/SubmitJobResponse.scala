@@ -4,21 +4,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SubmitJobResponse extends js.Object {
   /**
     * The unique identifier for the job.
     */
-  var jobId: String
+  var jobId: String = js.native
   /**
-    * The name of the job. 
+    * The name of the job.
     */
-  var jobName: String
+  var jobName: String = js.native
 }
 
 object SubmitJobResponse {
   @scala.inline
   def apply(jobId: String, jobName: String): SubmitJobResponse = {
-    val __obj = js.Dynamic.literal(jobId = jobId, jobName = jobName)
+    val __obj = js.Dynamic.literal(jobId = jobId.asInstanceOf[js.Any], jobName = jobName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SubmitJobResponse]
   }

@@ -5,23 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait KeyPairState extends js.Object {
   /**
     * The MD5 public key fingerprint as specified in section 4 of RFC 4716.
     */
-  val fingerprint: js.UndefOr[Input[String]] = js.undefined
+  val fingerprint: js.UndefOr[Input[String]] = js.native
   /**
     * The name for the key pair.
     */
-  val keyName: js.UndefOr[Input[String]] = js.undefined
+  val keyName: js.UndefOr[Input[String]] = js.native
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `keyName`.
     */
-  val keyNamePrefix: js.UndefOr[Input[String]] = js.undefined
+  val keyNamePrefix: js.UndefOr[Input[String]] = js.native
   /**
     * The public key material.
     */
-  val publicKey: js.UndefOr[Input[String]] = js.undefined
+  val publicKey: js.UndefOr[Input[String]] = js.native
 }
 
 object KeyPairState {

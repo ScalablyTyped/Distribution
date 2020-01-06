@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SamplingStrategy extends js.Object {
   /**
     * The name of a sampling rule.
     */
-  var Name: js.UndefOr[SamplingStrategyName] = js.undefined
+  var Name: js.UndefOr[SamplingStrategyName] = js.native
   /**
     * The value of a sampling rule.
     */
-  var Value: js.UndefOr[NullableDouble] = js.undefined
+  var Value: js.UndefOr[NullableDouble] = js.native
 }
 
 object SamplingStrategy {

@@ -10,9 +10,9 @@ Streaming JSON.stringify()
 | ------------------ | :-------------: |
 | Full name          | streaming-json-stringify |
 | Keywords           | stream, json, stringify |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 15 |
-| # downloads        | 785573 |
+| # downloads        | 1164991 |
 | # stars            | 1 |
 
 ## Links

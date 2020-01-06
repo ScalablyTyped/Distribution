@@ -12,7 +12,7 @@ A plugin which adds additional commands to selenium's javascript implementation 
 | Keywords           | testing, webdriver, webdriverjs, selenium, appium |
 | # releases         | 3 |
 | # dependents       | 9 |
-| # downloads        | 29947124 |
+| # downloads        | 41725409 |
 | # stars            | 0 |
 
 ## Links

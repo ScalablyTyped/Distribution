@@ -11,8 +11,8 @@ For encoding to/from base64urls
 | Full name          | base64url |
 | Keywords           | base64, base64url |
 | # releases         | 3 |
-| # dependents       | 263 |
-| # downloads        | 32760637 |
+| # dependents       | 354 |
+| # downloads        | 30279604 |
 | # stars            | 16 |
 
 ## Links

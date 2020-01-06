@@ -5,12 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LaunchTemplateInstanceMarketOptionsSpotOptions extends js.Object {
-  var blockDurationMinutes: js.UndefOr[Input[Double]] = js.undefined
-  var instanceInterruptionBehavior: js.UndefOr[Input[String]] = js.undefined
-  var maxPrice: js.UndefOr[Input[String]] = js.undefined
-  var spotInstanceType: js.UndefOr[Input[String]] = js.undefined
-  var validUntil: js.UndefOr[Input[String]] = js.undefined
+  var blockDurationMinutes: js.UndefOr[Input[Double]] = js.native
+  var instanceInterruptionBehavior: js.UndefOr[Input[String]] = js.native
+  var maxPrice: js.UndefOr[Input[String]] = js.native
+  var spotInstanceType: js.UndefOr[Input[String]] = js.native
+  var validUntil: js.UndefOr[Input[String]] = js.native
 }
 
 object LaunchTemplateInstanceMarketOptionsSpotOptions {

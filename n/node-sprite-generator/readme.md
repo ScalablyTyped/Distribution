@@ -10,9 +10,9 @@ Generates image sprites and their spritesheets (css, stylus, sass, scss or less)
 | ------------------ | :-------------: |
 | Full name          | node-sprite-generator |
 | Keywords           | sprite, sprites, generator, middleware, css, stylus, less, sass, scss, grunt, retina |
-| # releases         | 1 |
-| # dependents       | 6 |
-| # downloads        | 99186 |
+| # releases         | 0 |
+| # dependents       | 5 |
+| # downloads        | 56824 |
 | # stars            | 2 |
 
 ## Links

@@ -10,15 +10,15 @@ Loads themed styles.
 | ------------------ | :-------------: |
 | Full name          | @microsoft/load-themed-styles |
 | Keywords           | - |
-| # releases         | 176 |
-| # dependents       | 21 |
-| # downloads        | 2320634 |
+| # releases         | 208 |
+| # dependents       | 26 |
+| # downloads        | 2294429 |
 | # stars            | 1 |
 
 ## Links
-- [Homepage](https://github.com/Microsoft/web-build-tools#readme)
-- [Bugs](https://github.com/Microsoft/web-build-tools/issues)
-- [Repository](https://github.com/Microsoft/web-build-tools)
+- [Homepage](https://github.com/microsoft/rushstack#readme)
+- [Bugs](https://github.com/microsoft/rushstack/issues)
+- [Repository](https://github.com/microsoft/rushstack)
 - [Npm](https://www.npmjs.com/package/%40microsoft%2Fload-themed-styles)
     
 

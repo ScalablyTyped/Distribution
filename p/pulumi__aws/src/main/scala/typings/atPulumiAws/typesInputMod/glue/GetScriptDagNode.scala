@@ -4,29 +4,30 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetScriptDagNode extends js.Object {
   /**
     * Nested configuration an argument or property of a node. Defined below.
     */
-  var args: js.Array[GetScriptDagNodeArg]
+  var args: js.Array[GetScriptDagNodeArg] = js.native
   /**
     * A node identifier that is unique within the node's graph.
     */
-  var id: String
+  var id: String = js.native
   /**
     * The line number of the node.
     */
-  var lineNumber: js.UndefOr[Double] = js.undefined
+  var lineNumber: js.UndefOr[Double] = js.native
   /**
     * The type of node this is.
     */
-  var nodeType: String
+  var nodeType: String = js.native
 }
 
 object GetScriptDagNode {
   @scala.inline
   def apply(args: js.Array[GetScriptDagNodeArg], id: String, nodeType: String, lineNumber: Int | Double = null): GetScriptDagNode = {
-    val __obj = js.Dynamic.literal(args = args, id = id, nodeType = nodeType)
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any])
     if (lineNumber != null) __obj.updateDynamic("lineNumber")(lineNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetScriptDagNode]
   }

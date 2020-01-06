@@ -1,7 +1,7 @@
 
 # Scala.js typings for frida-gum
 
-Typings are for version 14.5
+Typings are for version 15.0
 
 
 

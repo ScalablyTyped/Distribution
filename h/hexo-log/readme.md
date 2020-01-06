@@ -10,9 +10,9 @@ Logger for Hexo
 | ------------------ | :-------------: |
 | Full name          | hexo-log |
 | Keywords           | website, blog, cms, framework, hexo |
-| # releases         | 3 |
-| # dependents       | 28 |
-| # downloads        | 514201 |
+| # releases         | 2 |
+| # dependents       | 35 |
+| # downloads        | 599319 |
 | # stars            | 0 |
 
 ## Links

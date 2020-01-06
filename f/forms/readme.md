@@ -10,9 +10,9 @@ An easy way to create, parse, and validate forms
 | ------------------ | :-------------: |
 | Full name          | forms |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 16 |
-| # downloads        | 76553 |
+| # releases         | 2 |
+| # dependents       | 19 |
+| # downloads        | 70168 |
 | # stars            | 19 |
 
 ## Links

@@ -9,10 +9,10 @@ Fast document oriented javascript in-memory database
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | lokijs |
-| Keywords           | javascript, document-oriented, mmdb, json, nosql, lokijs, in-memory |
+| Keywords           | javascript, document-oriented, mmdb, json, nosql, lokijs, in-memory, indexeddb |
 | # releases         | 8 |
-| # dependents       | 201 |
-| # downloads        | 1709976 |
+| # dependents       | 221 |
+| # downloads        | 5872910 |
 | # stars            | 31 |
 
 ## Links

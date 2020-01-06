@@ -12,7 +12,7 @@ Detects what package manager executes the process
 | Keywords           | npm, pnpm, yarn |
 | # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 22001220 |
+| # downloads        | 33186701 |
 | # stars            | 0 |
 
 ## Links

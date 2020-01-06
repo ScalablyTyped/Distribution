@@ -11,8 +11,8 @@ A Long class for representing a 64-bit two's-complement integer value.
 | Full name          | long |
 | Keywords           | math |
 | # releases         | 2 |
-| # dependents       | 402 |
-| # downloads        | 103060645 |
+| # dependents       | 501 |
+| # downloads        | 140788284 |
 | # stars            | 23 |
 
 ## Links

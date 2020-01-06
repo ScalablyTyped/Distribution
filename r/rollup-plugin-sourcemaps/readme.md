@@ -9,10 +9,10 @@ Rollup plugin for grabbing source maps from sourceMappingURLs
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | rollup-plugin-sourcemaps |
-| Keywords           | rollup, rollup-plugin, es2015, sourcemap, source-map, sourceMappingURL |
-| # releases         | 1 |
-| # dependents       | 45 |
-| # downloads        | 2663594 |
+| Keywords           | rollup, rollup-plugin, sourcemap, source-map, sourceMappingURL |
+| # releases         | 0 |
+| # dependents       | 76 |
+| # downloads        | 6302494 |
 | # stars            | 3 |
 
 ## Links

@@ -10,9 +10,9 @@ Tape test runner with promise support
 | ------------------ | :-------------: |
 | Full name          | blue-tape |
 | Keywords           | tape, bluebird, promises |
-| # releases         | 1 |
-| # dependents       | 20 |
-| # downloads        | 231926 |
+| # releases         | 0 |
+| # dependents       | 27 |
+| # downloads        | 193226 |
 | # stars            | 16 |
 
 ## Links

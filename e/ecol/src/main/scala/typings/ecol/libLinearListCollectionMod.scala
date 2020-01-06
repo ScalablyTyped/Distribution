@@ -49,7 +49,6 @@ object libLinearListCollectionMod extends js.Object {
       *
       * @return Iterator to the first element.
       */
-    /* CompleteClass */
     /* InferMemberOverrides */
     override def begin(): typings.tstl.baseIteratorIteratorMod.Iterator[T, List[T], Iterator[T], ReverseIterator[T], T] = js.native
     /* CompleteClass */
@@ -64,7 +63,6 @@ object libLinearListCollectionMod extends js.Object {
       *
       * @return Iterator to the end.
       */
-    /* CompleteClass */
     /* InferMemberOverrides */
     override def end(): typings.tstl.baseIteratorIteratorMod.Iterator[T, List[T], Iterator[T], ReverseIterator[T], T] = js.native
     /* CompleteClass */
@@ -73,6 +71,7 @@ object libLinearListCollectionMod extends js.Object {
       * Erase the first element.
       */
     /* InferMemberOverrides */
+    /* InferMemberOverrides */
     override def pop_front(): Unit = js.native
     /**
       * Insert items at the end.
@@ -80,6 +79,7 @@ object libLinearListCollectionMod extends js.Object {
       * @param items Items to insert.
       * @return Number of elements in the container after insertion.
       */
+    /* CompleteClass */
     /* InferMemberOverrides */
     override def push(items: T*): Double = js.native
     /**
@@ -88,12 +88,14 @@ object libLinearListCollectionMod extends js.Object {
       * @param val Value to insert.
       */
     /* InferMemberOverrides */
+    /* InferMemberOverrides */
     override def push_back(`val`: T): Unit = js.native
     /**
       * Insert an element at the first.
       *
       * @param val Value to insert.
       */
+    /* InferMemberOverrides */
     /* InferMemberOverrides */
     override def push_front(`val`: T): Unit = js.native
     /**
@@ -129,7 +131,6 @@ object libLinearListCollectionMod extends js.Object {
     /**
       * Number of elements in the container.
       */
-    /* CompleteClass */
     /* InferMemberOverrides */
     override def size(): Double = js.native
     /**
@@ -137,7 +138,6 @@ object libLinearListCollectionMod extends js.Object {
       *
       * @param obj Target container to swap.
       */
-    /* InferMemberOverrides */
     /* InferMemberOverrides */
     override def swap(obj: List[T]): Unit = js.native
   }
@@ -194,30 +194,30 @@ object libLinearListCollectionMod extends js.Object {
     
     val Event: Instantiable3[
         /* type */ String, 
-        /* import warning: RewrittenClass.unapply cls $anonfun was tparam IteratorT */ /* first */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls $anonfun was tparam IteratorT */ /* last */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls was tparam IteratorT */ /* first */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls was tparam IteratorT */ /* last */ js.Any, 
         CollectionEvent[
           js.Object, 
           Container[
-            /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls $anonfun was tparam IteratorT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
+            /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam SourceT */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam IteratorT */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam ReverseT */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any
           ], 
           typings.tstl.baseIteratorIteratorMod.Iterator[
-            /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls $anonfun was tparam IteratorT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
+            /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam SourceT */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam IteratorT */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam ReverseT */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any
           ], 
           typings.tstl.tstlMod.base.ReverseIterator[
-            /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls $anonfun was tparam IteratorT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
+            /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam SourceT */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam IteratorT */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam ReverseT */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any
           ]
         ]
       ] = js.native

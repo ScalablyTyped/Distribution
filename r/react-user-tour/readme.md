@@ -9,9 +9,9 @@ give your user a guided tour around your application
 | ------------------ | :-------------: |
 | Full name          | react-user-tour |
 | Keywords           | onboarding, user, tour, user-tour, tour-guide, guide, joyride, hopscotch, shepard, react |
-| # releases         | 2 |
+| # releases         | 1 |
 | # dependents       | 1 |
-| # downloads        | 19967 |
+| # downloads        | 20441 |
 | # stars            | 1 |
 
 ## Links

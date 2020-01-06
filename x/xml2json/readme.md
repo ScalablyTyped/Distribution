@@ -10,9 +10,9 @@ Converts xml to json and vice-versa, using node-expat.
 | ------------------ | :-------------: |
 | Full name          | xml2json |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 346 |
-| # downloads        | 1396990 |
+| # releases         | 3 |
+| # dependents       | 387 |
+| # downloads        | 2028160 |
 | # stars            | 38 |
 
 ## Links

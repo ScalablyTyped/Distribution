@@ -11,8 +11,8 @@ Given a possibly case-variant version of an existing filesystem path, returns th
 | Full name          | true-case-path |
 | Keywords           | - |
 | # releases         | 5 |
-| # dependents       | 31 |
-| # downloads        | 134099571 |
+| # dependents       | 40 |
+| # downloads        | 160685618 |
 | # stars            | 2 |
 
 ## Links

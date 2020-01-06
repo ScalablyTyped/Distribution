@@ -4,7 +4,7 @@ import typings.atOracleOraclejet.Anon_AutoBillionCenter
 import typings.atOracleOraclejet.Anon_AutoBorderColor
 import typings.atOracleOraclejet.Anon_AutoCenter
 import typings.atOracleOraclejet.Anon_ContextRendererAnonInsertAnonPreventDefaultCenterContext
-import typings.atOracleOraclejet.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1361795792
+import typings.atOracleOraclejet.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_117442419
 import typings.atOracleOraclejet.atOracleOraclejetMod.JetElementCustomEvent
 import typings.atOracleOraclejet.atOracleOraclejetStrings.all
 import typings.atOracleOraclejet.atOracleOraclejetStrings.angleExtent
@@ -126,7 +126,7 @@ trait ojStatusMeterGauge_ extends dvtBaseGauge[ojStatusMeterGaugeSettablePropert
   var onThresholdDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[currentOnly | all | onIndicator], _]) | Null = js.native
   var onThresholdsChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[Threshold]], _]) | Null = js.native
   var onTooltipChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1361795792], 
+    /* event */ JetElementCustomEvent[Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_117442419], 
     _
   ]) | Null = js.native
   var onTransientValueChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
@@ -142,7 +142,7 @@ trait ojStatusMeterGauge_ extends dvtBaseGauge[ojStatusMeterGaugeSettablePropert
   var svgStyle: js.Object = js.native
   var thresholdDisplay: currentOnly | all | onIndicator = js.native
   var thresholds: js.Array[Threshold] = js.native
-  var tooltip: Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1361795792 = js.native
+  var tooltip: Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_117442419 = js.native
   val transientValue: Double | Null = js.native
   var value: Double | Null = js.native
   var visualEffects: none | auto = js.native
@@ -450,7 +450,7 @@ trait ojStatusMeterGauge_ extends dvtBaseGauge[ojStatusMeterGaugeSettablePropert
     `type`: tooltipChanged,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1361795792], 
+      /* ev */ JetElementCustomEvent[Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_117442419], 
       _
     ]
   ): Unit = js.native
@@ -459,7 +459,7 @@ trait ojStatusMeterGauge_ extends dvtBaseGauge[ojStatusMeterGaugeSettablePropert
     `type`: tooltipChanged,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1361795792], 
+      /* ev */ JetElementCustomEvent[Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_117442419], 
       _
     ],
     useCapture: Boolean
@@ -536,7 +536,7 @@ trait ojStatusMeterGauge_ extends dvtBaseGauge[ojStatusMeterGaugeSettablePropert
   @JSName("getProperty")
   def getProperty_thresholds(property: thresholds): js.Array[Threshold] = js.native
   @JSName("getProperty")
-  def getProperty_tooltip(property: tooltip): Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1361795792 = js.native
+  def getProperty_tooltip(property: tooltip): Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_117442419 = js.native
   @JSName("getProperty")
   def getProperty_transientValue(property: typings.atOracleOraclejet.atOracleOraclejetStrings.transientValue): Double | Null = js.native
   @JSName("getProperty")
@@ -599,10 +599,7 @@ trait ojStatusMeterGauge_ extends dvtBaseGauge[ojStatusMeterGaugeSettablePropert
   @JSName("setProperty")
   def setProperty_thresholds(property: thresholds, value: js.Array[Threshold]): Unit = js.native
   @JSName("setProperty")
-  def setProperty_tooltip(
-    property: tooltip,
-    value: Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1361795792
-  ): Unit = js.native
+  def setProperty_tooltip(property: tooltip, value: Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_117442419): Unit = js.native
   @JSName("setProperty")
   def setProperty_transientValue(property: typings.atOracleOraclejet.atOracleOraclejetStrings.transientValue): Unit = js.native
   @JSName("setProperty")

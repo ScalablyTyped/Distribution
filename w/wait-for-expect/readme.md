@@ -10,9 +10,9 @@ Wait for expectation to be true, useful for integration and end to end testing
 | ------------------ | :-------------: |
 | Full name          | wait-for-expect |
 | Keywords           | jest, expect, wait, async, await, promise, integration, testing, unit |
-| # releases         | 15 |
-| # dependents       | 8 |
-| # downloads        | 4237522 |
+| # releases         | 22 |
+| # dependents       | 15 |
+| # downloads        | 20898206 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ parse XML response of to JS object for AWS SDK
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/xml-body-parser |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 3 |
-| # downloads        | 1273 |
+| # releases         | 11 |
+| # dependents       | 44 |
+| # downloads        | 10773 |
 | # stars            | 0 |
 
 ## Links

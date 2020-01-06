@@ -11,8 +11,8 @@ Get and validate the raw body of a readable stream.
 | Full name          | raw-body |
 | Keywords           | - |
 | # releases         | 4 |
-| # dependents       | 492 |
-| # downloads        | 371673190 |
+| # dependents       | 557 |
+| # downloads        | 545862740 |
 | # stars            | 23 |
 
 ## Links

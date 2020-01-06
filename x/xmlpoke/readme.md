@@ -10,9 +10,9 @@ Module for modifying XML files.
 | ------------------ | :-------------: |
 | Full name          | xmlpoke |
 | Keywords           | xmlpoke, xml |
-| # releases         | 5 |
+| # releases         | 4 |
 | # dependents       | 4 |
-| # downloads        | 83469 |
+| # downloads        | 109386 |
 | # stars            | 1 |
 
 ## Links

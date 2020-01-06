@@ -10,9 +10,9 @@ A result paging utility used by Google node.js modules
 | ------------------ | :-------------: |
 | Full name          | @google-cloud/paginator |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 13 |
-| # downloads        | 8549796 |
+| # releases         | 13 |
+| # dependents       | 15 |
+| # downloads        | 38750235 |
 | # stars            | 0 |
 
 ## Links

@@ -10,13 +10,13 @@ Device detection (phone, tablet, desktop, mobile grade, os, versions)
 | ------------------ | :-------------: |
 | Full name          | mobile-detect |
 | Keywords           | useragent, mobile, phone, tablet, detect, device, browser, version, mobilegrade, sniff |
-| # releases         | 6 |
-| # dependents       | 124 |
-| # downloads        | 3390924 |
+| # releases         | 4 |
+| # dependents       | 168 |
+| # downloads        | 5268414 |
 | # stars            | 57 |
 
 ## Links
-- [Homepage](http://hgoebl.github.io/mobile-detect.js/)
+- [Homepage](https://hgoebl.github.io/mobile-detect.js/)
 - [Bugs](https://github.com/hgoebl/mobile-detect.js/issues)
 - [Repository](https://github.com/hgoebl/mobile-detect.js)
 - [Npm](https://www.npmjs.com/package/mobile-detect)

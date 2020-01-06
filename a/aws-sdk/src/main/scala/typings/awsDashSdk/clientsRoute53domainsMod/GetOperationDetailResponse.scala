@@ -4,31 +4,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetOperationDetailResponse extends js.Object {
   /**
     * The name of a domain.
     */
-  var DomainName: js.UndefOr[typings.awsDashSdk.clientsRoute53domainsMod.DomainName] = js.undefined
+  var DomainName: js.UndefOr[typings.awsDashSdk.clientsRoute53domainsMod.DomainName] = js.native
   /**
     * Detailed information on the status including possible errors.
     */
-  var Message: js.UndefOr[ErrorMessage] = js.undefined
+  var Message: js.UndefOr[ErrorMessage] = js.native
   /**
     * The identifier for the operation.
     */
-  var OperationId: js.UndefOr[typings.awsDashSdk.clientsRoute53domainsMod.OperationId] = js.undefined
+  var OperationId: js.UndefOr[typings.awsDashSdk.clientsRoute53domainsMod.OperationId] = js.native
   /**
     * The current status of the requested operation in the system.
     */
-  var Status: js.UndefOr[OperationStatus] = js.undefined
+  var Status: js.UndefOr[OperationStatus] = js.native
   /**
     * The date when the request was submitted.
     */
-  var SubmittedDate: js.UndefOr[Timestamp] = js.undefined
+  var SubmittedDate: js.UndefOr[Timestamp] = js.native
   /**
     * The type of operation that was requested.
     */
-  var Type: js.UndefOr[OperationType] = js.undefined
+  var Type: js.UndefOr[OperationType] = js.native
 }
 
 object GetOperationDetailResponse {
@@ -42,11 +43,11 @@ object GetOperationDetailResponse {
     Type: OperationType = null
   ): GetOperationDetailResponse = {
     val __obj = js.Dynamic.literal()
-    if (DomainName != null) __obj.updateDynamic("DomainName")(DomainName)
-    if (Message != null) __obj.updateDynamic("Message")(Message)
-    if (OperationId != null) __obj.updateDynamic("OperationId")(OperationId)
+    if (DomainName != null) __obj.updateDynamic("DomainName")(DomainName.asInstanceOf[js.Any])
+    if (Message != null) __obj.updateDynamic("Message")(Message.asInstanceOf[js.Any])
+    if (OperationId != null) __obj.updateDynamic("OperationId")(OperationId.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (SubmittedDate != null) __obj.updateDynamic("SubmittedDate")(SubmittedDate)
+    if (SubmittedDate != null) __obj.updateDynamic("SubmittedDate")(SubmittedDate.asInstanceOf[js.Any])
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetOperationDetailResponse]
   }

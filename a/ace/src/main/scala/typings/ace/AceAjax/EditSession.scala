@@ -51,7 +51,7 @@ object EditSession
   **/
 Instantiable1[(/* text */ js.Array[String]) | (/* text */ String), IEditSession]
      with Instantiable2[
-      (/* text */ js.Array[String]) | (/* text */ String), 
+      (/* text */ js.Array[String]) | (/* content */ String), 
       (/* mode */ String) | (/* mode */ TextMode), 
       IEditSession
     ]

@@ -140,21 +140,21 @@ trait WebPage extends js.Object {
   def sendEvent(keyboardEventType: String, keyOrKeys: js.Any, aNull: js.Any, bNull: js.Any, modifier: Double): Unit = js.native
   def sendEvent(keyboardEventType: String, key: String): js.Promise[Unit] = js.native
   def sendEvent(keyboardEventType: String, key: String, null1: Null, null2: Null, modifier: Double): js.Promise[Unit] = js.native
-  def sendEvent(mouseEventType: String): Unit = js.native
-  def sendEvent(mouseEventType: String, mouseX: Double): Unit = js.native
-  def sendEvent(mouseEventType: String, mouseX: Double, mouseY: Double): Unit = js.native
-  def sendEvent(mouseEventType: String, mouseX: Double, mouseY: Double, button: String): Unit = js.native
+  def sendEvent(mouseEventType: String): js.Promise[Unit] = js.native
+  def sendEvent(mouseEventType: String, mouseX: Double): js.Promise[Unit] = js.native
+  def sendEvent(mouseEventType: String, mouseX: Double, mouseY: Double): js.Promise[Unit] = js.native
+  def sendEvent(mouseEventType: String, mouseX: Double, mouseY: Double, button: String): js.Promise[Unit] = js.native
   @JSName("sendEvent")
-  def sendEvent_Promise(mouseEventType: String): js.Promise[Unit] = js.native
+  def sendEvent_Unit(mouseEventType: String): Unit = js.native
   @JSName("sendEvent")
-  def sendEvent_Promise(mouseEventType: String, mouseX: Double): js.Promise[Unit] = js.native
+  def sendEvent_Unit(mouseEventType: String, mouseX: Double): Unit = js.native
   @JSName("sendEvent")
-  def sendEvent_Promise(mouseEventType: String, mouseX: Double, mouseY: Double): js.Promise[Unit] = js.native
+  def sendEvent_Unit(mouseEventType: String, mouseX: Double, mouseY: Double): Unit = js.native
   @JSName("sendEvent")
-  def sendEvent_Promise(mouseEventType: String, mouseX: Double, mouseY: Double, button: String): js.Promise[Unit] = js.native
-  def setContent(content: String, url: String): Unit = js.native
+  def sendEvent_Unit(mouseEventType: String, mouseX: Double, mouseY: Double, button: String): Unit = js.native
+  def setContent(html: String, url: String): js.Promise[String] = js.native
   @JSName("setContent")
-  def setContent_Promise(html: String, url: String): js.Promise[String] = js.native
+  def setContent_Unit(content: String, url: String): Unit = js.native
   def stop(): Unit = js.native
   def switchToChildFrame(framePosOrName: String): Unit = js.native
   // switchToFrame(framePosition: number): void;

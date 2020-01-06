@@ -12,7 +12,7 @@ TypeScript generics to compare types
 | Keywords           | compare, generic, typescript, types |
 | # releases         | 5 |
 | # dependents       | 2 |
-| # downloads        | 661805 |
+| # downloads        | 8339154 |
 | # stars            | 0 |
 
 ## Links

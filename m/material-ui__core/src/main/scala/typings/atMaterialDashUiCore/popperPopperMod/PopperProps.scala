@@ -75,20 +75,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PopperProps extends HTMLAttributes[HTMLDivElement] {
   var anchorEl: js.UndefOr[
     Null | HTMLElement | ReferenceObject | (js.Function1[/* element */ HTMLElement, HTMLElement])
-  ] = js.undefined
+  ] = js.native
   @JSName("children")
-  var children_PopperProps: ReactNode | (js.Function1[/* props */ Anon_Placement, ReactNode])
-  var container: js.UndefOr[ReactInstance | js.Function0[ReactInstance] | Null] = js.undefined
-  var disablePortal: js.UndefOr[Boolean] = js.undefined
-  var keepMounted: js.UndefOr[Boolean] = js.undefined
-  var modifiers: js.UndefOr[js.Object] = js.undefined
-  var open: Boolean
-  var placement: js.UndefOr[PopperPlacementType] = js.undefined
-  var popperOptions: js.UndefOr[js.Object] = js.undefined
-  var transition: js.UndefOr[Boolean] = js.undefined
+  var children_PopperProps: ReactNode | (js.Function1[/* props */ Anon_Placement, ReactNode]) = js.native
+  var container: js.UndefOr[ReactInstance | js.Function0[ReactInstance] | Null] = js.native
+  var disablePortal: js.UndefOr[Boolean] = js.native
+  var keepMounted: js.UndefOr[Boolean] = js.native
+  var modifiers: js.UndefOr[js.Object] = js.native
+  var open: Boolean = js.native
+  var placement: js.UndefOr[PopperPlacementType] = js.native
+  var popperOptions: js.UndefOr[js.Object] = js.native
+  var transition: js.UndefOr[Boolean] = js.native
 }
 
 object PopperProps {

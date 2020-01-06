@@ -4,15 +4,15 @@
 Typings are for version 2.4.0
 
 ## Library description:
-A minimalistic routing for React. Nothing extra, just HOOKS.
+A minimalistic routing for React and Preact. Nothing extra, just HOOKS.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | wouter |
-| Keywords           | react, router, tiny, routing, hooks |
-| # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 474 |
+| Keywords           | react, preact, router, tiny, routing, hooks, useLocation |
+| # releases         | 22 |
+| # dependents       | 1 |
+| # downloads        | 15834 |
 | # stars            | 0 |
 
 ## Links

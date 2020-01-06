@@ -10,9 +10,9 @@ JavaScript WYSIWYG web text editor.
 | ------------------ | :-------------: |
 | Full name          | ckeditor |
 | Keywords           | ckeditor, fckeditor, editor, wysiwyg, html, richtext, text, javascript |
-| # releases         | 14 |
-| # dependents       | 45 |
-| # downloads        | 1462297 |
+| # releases         | 13 |
+| # dependents       | 52 |
+| # downloads        | 2279228 |
 | # stars            | 5 |
 
 ## Links

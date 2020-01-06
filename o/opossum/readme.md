@@ -10,13 +10,13 @@ A fail-fast circuit breaker for promises and callbacks
 | ------------------ | :-------------: |
 | Full name          | opossum |
 | Keywords           | circuit breaker, circuit-breaker, fail-fast, circuit, breaker, hystrix, rate-limiting |
-| # releases         | 17 |
-| # dependents       | 6 |
-| # downloads        | 137089 |
+| # releases         | 23 |
+| # dependents       | 8 |
+| # downloads        | 678952 |
 | # stars            | 3 |
 
 ## Links
-- [Homepage](https://github.com/nodeshift/opossum)
+- [Homepage](https://nodeshift.dev/opossum)
 - [Bugs](https://github.com/nodeshift/opossum/issues)
 - [Repository](https://github.com/nodeshift/opossum)
 - [Npm](https://www.npmjs.com/package/opossum)

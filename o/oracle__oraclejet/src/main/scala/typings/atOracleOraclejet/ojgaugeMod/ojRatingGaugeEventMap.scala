@@ -1,7 +1,7 @@
 package typings.atOracleOraclejet.ojgaugeMod
 
 import typings.atOracleOraclejet.Anon_BorderColorCircle
-import typings.atOracleOraclejet.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_656598965
+import typings.atOracleOraclejet.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1916286666
 import typings.atOracleOraclejet.atOracleOraclejetMod.JetElementCustomEvent
 import typings.atOracleOraclejet.atOracleOraclejetNumbers.`0.5`
 import typings.atOracleOraclejet.atOracleOraclejetNumbers.`1`
@@ -46,7 +46,7 @@ trait ojRatingGaugeEventMap extends dvtBaseComponentEventMap[ojRatingGaugeSettab
   var selectedStateChanged: JetElementCustomEvent[Anon_BorderColorCircle]
   var stepChanged: JetElementCustomEvent[`0.5` | `1`]
   var thresholdsChanged: JetElementCustomEvent[js.Array[Threshold]]
-  var tooltipChanged: JetElementCustomEvent[Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_656598965]
+  var tooltipChanged: JetElementCustomEvent[Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1916286666]
   var transientValueChanged: JetElementCustomEvent[Double | Null]
   var unselectedStateChanged: JetElementCustomEvent[Anon_BorderColorCircle]
   var valueChanged: JetElementCustomEvent[Double | Null]
@@ -149,7 +149,7 @@ object ojRatingGaugeEventMap {
     thresholdsChanged: JetElementCustomEvent[js.Array[Threshold]],
     timeupdate: Event,
     toggle: Event,
-    tooltipChanged: JetElementCustomEvent[Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_656598965],
+    tooltipChanged: JetElementCustomEvent[Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1916286666],
     touchcancel: TouchEvent,
     touchend: TouchEvent,
     touchmove: TouchEvent,

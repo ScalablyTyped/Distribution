@@ -10,9 +10,9 @@ Fast deep equal
 | ------------------ | :-------------: |
 | Full name          | fast-deep-equal |
 | Keywords           | fast, equal, deep-equal |
-| # releases         | 8 |
-| # dependents       | 250 |
-| # downloads        | 501446178 |
+| # releases         | 11 |
+| # dependents       | 441 |
+| # downloads        | 751652866 |
 | # stars            | 6 |
 
 ## Links

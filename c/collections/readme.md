@@ -10,9 +10,9 @@ data structures with idiomatic JavaScript collection interfaces
 | ------------------ | :-------------: |
 | Full name          | collections |
 | Keywords           | collections, data structures, observable, list, set, map, splay |
-| # releases         | 11 |
-| # dependents       | 107 |
-| # downloads        | 2276923 |
+| # releases         | 8 |
+| # dependents       | 124 |
+| # downloads        | 1987671 |
 | # stars            | 16 |
 
 ## Links

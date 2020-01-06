@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DeploymentGroupLoadBalancerInfoTargetGroupPairInfo extends js.Object {
   /**
     * Configuration block for the production traffic route (documented below).
     */
-  var prodTrafficRoute: Input[DeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRoute]
+  var prodTrafficRoute: Input[DeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRoute] = js.native
   /**
     * Configuration blocks for a target group within a target group pair (documented below).
     */
-  var targetGroups: Input[js.Array[Input[DeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroup]]]
+  var targetGroups: Input[js.Array[Input[DeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroup]]] = js.native
   /**
     * Configuration block for the test traffic route (documented below).
     */
-  var testTrafficRoute: js.UndefOr[Input[DeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRoute]] = js.undefined
+  var testTrafficRoute: js.UndefOr[Input[DeploymentGroupLoadBalancerInfoTargetGroupPairInfoTestTrafficRoute]] = js.native
 }
 
 object DeploymentGroupLoadBalancerInfoTargetGroupPairInfo {

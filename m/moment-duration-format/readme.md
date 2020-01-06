@@ -10,9 +10,9 @@ A moment.js plugin for formatting durations.
 | ------------------ | :-------------: |
 | Full name          | moment-duration-format |
 | Keywords           | moment, duration, format |
-| # releases         | 8 |
-| # dependents       | 187 |
-| # downloads        | 6318338 |
+| # releases         | 11 |
+| # dependents       | 215 |
+| # downloads        | 8008350 |
 | # stars            | 6 |
 
 ## Links

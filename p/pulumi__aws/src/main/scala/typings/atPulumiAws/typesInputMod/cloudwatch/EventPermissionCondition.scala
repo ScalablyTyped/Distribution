@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EventPermissionCondition extends js.Object {
   /**
     * Key for the condition. Valid values: `aws:PrincipalOrgID`.
     */
-  var key: Input[String]
+  var key: Input[String] = js.native
   /**
     * Type of condition. Value values: `StringEquals`.
     */
-  var `type`: Input[String]
+  var `type`: Input[String] = js.native
   /**
     * Value for the key.
     */
-  var value: Input[String]
+  var value: Input[String] = js.native
 }
 
 object EventPermissionCondition {

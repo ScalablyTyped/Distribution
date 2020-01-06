@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IdentityPoolRoleAttachmentRoles extends js.Object {
-  var authenticated: js.UndefOr[Input[String]] = js.undefined
-  var unauthenticated: js.UndefOr[Input[String]] = js.undefined
+  var authenticated: js.UndefOr[Input[String]] = js.native
+  var unauthenticated: js.UndefOr[Input[String]] = js.native
 }
 
 object IdentityPoolRoleAttachmentRoles {

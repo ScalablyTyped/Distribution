@@ -9,9 +9,9 @@ Microsoft Azure Service Bus Service Library for node
 | ------------------ | :-------------: |
 | Full name          | azure-sb |
 | Keywords           | node, azure |
-| # releases         | 2 |
-| # dependents       | 28 |
-| # downloads        | 701190 |
+| # releases         | 4 |
+| # dependents       | 33 |
+| # downloads        | 1499655 |
 | # stars            | 0 |
 
 ## Links

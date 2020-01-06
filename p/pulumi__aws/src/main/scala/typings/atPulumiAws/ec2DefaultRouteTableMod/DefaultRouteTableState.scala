@@ -7,29 +7,30 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DefaultRouteTableState extends js.Object {
   /**
     * The ID of the Default Routing Table.
     */
-  val defaultRouteTableId: js.UndefOr[Input[String]] = js.undefined
+  val defaultRouteTableId: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of the AWS account that owns the route table
     */
-  val ownerId: js.UndefOr[Input[String]] = js.undefined
+  val ownerId: js.UndefOr[Input[String]] = js.native
   /**
     * A list of virtual gateways for propagation.
     */
-  val propagatingVgws: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val propagatingVgws: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * A list of route objects. Their keys are documented below.
     * This argument is processed in [attribute-as-blocks mode](https://www.terraform.io/docs/configuration/attr-as-blocks.html).
     */
-  val routes: js.UndefOr[Input[js.Array[Input[DefaultRouteTableRoute]]]] = js.undefined
+  val routes: js.UndefOr[Input[js.Array[Input[DefaultRouteTableRoute]]]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
-  val vpcId: js.UndefOr[Input[String]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val vpcId: js.UndefOr[Input[String]] = js.native
 }
 
 object DefaultRouteTableState {

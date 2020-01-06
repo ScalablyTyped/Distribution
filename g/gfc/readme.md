@@ -10,9 +10,9 @@ Simple way to initialize a new git repository in an empty directory, add a file 
 | ------------------ | :-------------: |
 | Full name          | gfc |
 | Keywords           | add, commit, first, first-commit, git, git-add, git-commit, git-init, init |
-| # releases         | 7 |
+| # releases         | 4 |
 | # dependents       | 1 |
-| # downloads        | 479 |
+| # downloads        | 667 |
 | # stars            | 0 |
 
 ## Links

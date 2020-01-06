@@ -3,22 +3,18 @@
 
 Typings are for version 4.1
 
-## Library description:
-Simulate user events for react-testing-library
+
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | user-event |
-| Keywords           | react-testing-library, dom-testing-library, react, testing |
-| # releases         | 18 |
+| Keywords           | - |
+| # releases         | 26 |
 | # dependents       | 1 |
-| # downloads        | 40054 |
+| # downloads        | 289263 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/Gpx/user-event#readme)
-- [Bugs](https://github.com/Gpx/user-event/issues)
-- [Repository](https://github.com/Gpx/user-event)
 - [Npm](https://www.npmjs.com/package/user-event)
     
 

@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ResourceShareAccepterArgs extends js.Object {
   /**
     * The ARN of the resource share.
     */
-  val shareArn: Input[String]
+  val shareArn: Input[String] = js.native
 }
 
 object ResourceShareAccepterArgs {

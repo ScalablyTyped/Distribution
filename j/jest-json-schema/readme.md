@@ -10,9 +10,9 @@ JSON schema matcher for jest
 | ------------------ | :-------------: |
 | Full name          | jest-json-schema |
 | Keywords           | jest, json, schema, matcher, test |
-| # releases         | 8 |
-| # dependents       | 1 |
-| # downloads        | 137048 |
+| # releases         | 7 |
+| # dependents       | 3 |
+| # downloads        | 456040 |
 | # stars            | 1 |
 
 ## Links

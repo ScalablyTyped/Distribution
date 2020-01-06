@@ -4,25 +4,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SubDomain extends js.Object {
   /**
     *  DNS record for the Subdomain. 
     */
-  var dnsRecord: DNSRecord
+  var dnsRecord: DNSRecord = js.native
   /**
     *  Setting structure for the Subdomain. 
     */
-  var subDomainSetting: SubDomainSetting
+  var subDomainSetting: SubDomainSetting = js.native
   /**
     *  Verified status of the Subdomain 
     */
-  var verified: Verified
+  var verified: Verified = js.native
 }
 
 object SubDomain {
   @scala.inline
   def apply(dnsRecord: DNSRecord, subDomainSetting: SubDomainSetting, verified: Verified): SubDomain = {
-    val __obj = js.Dynamic.literal(dnsRecord = dnsRecord, subDomainSetting = subDomainSetting, verified = verified)
+    val __obj = js.Dynamic.literal(dnsRecord = dnsRecord.asInstanceOf[js.Any], subDomainSetting = subDomainSetting.asInstanceOf[js.Any], verified = verified.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SubDomain]
   }

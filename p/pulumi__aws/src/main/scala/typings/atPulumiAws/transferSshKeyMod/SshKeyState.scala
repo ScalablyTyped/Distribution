@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SshKeyState extends js.Object {
   /**
     * The public key portion of an SSH key pair.
     */
-  val body: js.UndefOr[Input[String]] = js.undefined
+  val body: js.UndefOr[Input[String]] = js.native
   /**
     * The Server ID of the Transfer Server (e.g. `s-12345678`)
     */
-  val serverId: js.UndefOr[Input[String]] = js.undefined
+  val serverId: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the user account that is assigned to one or more servers.
     */
-  val userName: js.UndefOr[Input[String]] = js.undefined
+  val userName: js.UndefOr[Input[String]] = js.native
 }
 
 object SshKeyState {

@@ -10,9 +10,9 @@ a function to serialize css and object styless
 | ------------------ | :-------------: |
 | Full name          | @emotion/css |
 | Keywords           | - |
-| # releases         | 48 |
-| # dependents       | 15 |
-| # downloads        | 16121938 |
+| # releases         | 55 |
+| # dependents       | 33 |
+| # downloads        | 50087762 |
 | # stars            | 0 |
 
 ## Links

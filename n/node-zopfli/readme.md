@@ -10,9 +10,9 @@ Bindings for Zopfli compressing lib. Compress gzip files 5% better than gzip.
 | ------------------ | :-------------: |
 | Full name          | node-zopfli |
 | Keywords           | zopfli, zlib, compress, gzip, deflate |
-| # releases         | 1 |
-| # dependents       | 28 |
-| # downloads        | 2278328 |
+| # releases         | 3 |
+| # dependents       | 29 |
+| # downloads        | 1306737 |
 | # stars            | 11 |
 
 ## Links

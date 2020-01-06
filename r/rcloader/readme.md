@@ -11,7 +11,7 @@ For build system plugins that need to fetch relative config files (like .jshintr
 | Keywords           | find, rcfile, rc, search, defaults, config |
 | # releases         | 0 |
 | # dependents       | 32 |
-| # downloads        | 6064095 |
+| # downloads        | 5801979 |
 | # stars            | 2 |
 
 ## Links

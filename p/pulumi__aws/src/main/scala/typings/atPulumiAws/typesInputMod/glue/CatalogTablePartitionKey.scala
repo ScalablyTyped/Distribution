@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CatalogTablePartitionKey extends js.Object {
   /**
     * Free-form text comment.
     */
-  var comment: js.UndefOr[Input[String]] = js.undefined
+  var comment: js.UndefOr[Input[String]] = js.native
   /**
     * Name of the SerDe.
     */
-  var name: Input[String]
+  var name: Input[String] = js.native
   /**
     * The datatype of data in the Column.
     */
-  var `type`: js.UndefOr[Input[String]] = js.undefined
+  var `type`: js.UndefOr[Input[String]] = js.native
 }
 
 object CatalogTablePartitionKey {

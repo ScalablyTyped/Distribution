@@ -10,9 +10,9 @@ Stringify is to `eval` as `JSON.stringify` is to `JSON.parse`
 | ------------------ | :-------------: |
 | Full name          | javascript-stringify |
 | Keywords           | stringify, javascript, object, eval, string, code |
-| # releases         | 2 |
-| # dependents       | 95 |
-| # downloads        | 9448976 |
+| # releases         | 3 |
+| # dependents       | 131 |
+| # downloads        | 21936607 |
 | # stars            | 1 |
 
 ## Links

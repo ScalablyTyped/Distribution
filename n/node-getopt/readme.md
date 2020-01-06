@@ -11,8 +11,8 @@ featured command line args parser
 | Full name          | node-getopt |
 | Keywords           | getopt, arg, parser |
 | # releases         | 5 |
-| # dependents       | 192 |
-| # downloads        | 354773 |
+| # dependents       | 202 |
+| # downloads        | 396782 |
 | # stars            | 7 |
 
 ## Links

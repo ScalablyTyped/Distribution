@@ -12,7 +12,7 @@ Redux store with injectable reducers for use with bundle splitting, large apps, 
 | Keywords           | redex, reducer, react, mobx |
 | # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 7110 |
+| # downloads        | 5999 |
 | # stars            | 0 |
 
 ## Links

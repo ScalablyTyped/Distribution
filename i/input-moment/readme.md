@@ -10,9 +10,9 @@ React datetime picker powered by momentjs
 | ------------------ | :-------------: |
 | Full name          | input-moment |
 | Keywords           | react, react-component, input, datetime, picker, moment |
-| # releases         | 4 |
+| # releases         | 1 |
 | # dependents       | 7 |
-| # downloads        | 133545 |
+| # downloads        | 149090 |
 | # stars            | 0 |
 
 ## Links

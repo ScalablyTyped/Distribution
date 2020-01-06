@@ -131,9 +131,12 @@ package object clientsKinesisanalyticsv2Mod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`SQL-1_0`
     - typings.awsDashSdk.awsDashSdkStrings.`FLINK-1_6`
+    - typings.awsDashSdk.awsDashSdkStrings.`FLINK-1_8`
     - java.lang.String
   */
   type RuntimeEnvironment = _RuntimeEnvironment | String
+  type SecurityGroupId = String
+  type SecurityGroupIds = js.Array[SecurityGroupId]
   type SnapshotName = String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.CREATING
@@ -145,16 +148,22 @@ package object clientsKinesisanalyticsv2Mod {
   type SnapshotStatus = _SnapshotStatus | String
   type SnapshotSummaries = js.Array[SnapshotDetails]
   type SqlRunConfigurations = js.Array[SqlRunConfiguration]
+  type SubnetId = String
+  type SubnetIds = js.Array[SubnetId]
   type TagKey = String
   type TagKeys = js.Array[TagKey]
   type TagValue = String
   type Tags = js.Array[Tag]
   type TextContent = String
   type Timestamp = Date
+  type VpcConfigurationDescriptions = js.Array[VpcConfigurationDescription]
+  type VpcConfigurationUpdates = js.Array[VpcConfigurationUpdate]
+  type VpcConfigurations = js.Array[VpcConfiguration]
+  type VpcId = String
   type ZipFileContent = Buffer | Uint8Array | Blob | String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2018-05-23`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

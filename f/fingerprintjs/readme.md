@@ -11,8 +11,8 @@ Typings are for version 0.5.4
 | Full name          | fingerprintjs |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 32628 |
+| # dependents       | 11 |
+| # downloads        | 48323 |
 | # stars            | 0 |
 
 ## Links

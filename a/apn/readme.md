@@ -10,9 +10,9 @@ An interface to the Apple Push Notification service for Node.js
 | ------------------ | :-------------: |
 | Full name          | apn |
 | Keywords           | apple, push, push notifications, iOS, apns, notifications |
-| # releases         | 4 |
-| # dependents       | 106 |
-| # downloads        | 2548403 |
+| # releases         | 3 |
+| # dependents       | 109 |
+| # downloads        | 2986730 |
 | # stars            | 53 |
 
 ## Links

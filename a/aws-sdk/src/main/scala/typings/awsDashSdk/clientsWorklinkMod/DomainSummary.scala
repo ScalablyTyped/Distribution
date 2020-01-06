@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DomainSummary extends js.Object {
   /**
     * The time that the domain was created.
     */
-  var CreatedTime: DateTime
+  var CreatedTime: DateTime = js.native
   /**
     * The name to display.
     */
-  var DisplayName: js.UndefOr[typings.awsDashSdk.clientsWorklinkMod.DisplayName] = js.undefined
+  var DisplayName: js.UndefOr[typings.awsDashSdk.clientsWorklinkMod.DisplayName] = js.native
   /**
     * The name of the domain.
     */
-  var DomainName: typings.awsDashSdk.clientsWorklinkMod.DomainName
+  var DomainName: typings.awsDashSdk.clientsWorklinkMod.DomainName = js.native
   /**
     * The status of the domain.
     */
-  var DomainStatus: typings.awsDashSdk.clientsWorklinkMod.DomainStatus
+  var DomainStatus: typings.awsDashSdk.clientsWorklinkMod.DomainStatus = js.native
 }
 
 object DomainSummary {
@@ -31,8 +32,8 @@ object DomainSummary {
     DomainStatus: DomainStatus,
     DisplayName: DisplayName = null
   ): DomainSummary = {
-    val __obj = js.Dynamic.literal(CreatedTime = CreatedTime, DomainName = DomainName, DomainStatus = DomainStatus.asInstanceOf[js.Any])
-    if (DisplayName != null) __obj.updateDynamic("DisplayName")(DisplayName)
+    val __obj = js.Dynamic.literal(CreatedTime = CreatedTime.asInstanceOf[js.Any], DomainName = DomainName.asInstanceOf[js.Any], DomainStatus = DomainStatus.asInstanceOf[js.Any])
+    if (DisplayName != null) __obj.updateDynamic("DisplayName")(DisplayName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainSummary]
   }
 }

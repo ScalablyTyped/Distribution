@@ -4,13 +4,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StackCustomCookbooksSource extends js.Object {
-  var password: js.UndefOr[String] = js.undefined
-  var revision: js.UndefOr[String] = js.undefined
-  var sshKey: js.UndefOr[String] = js.undefined
-  var `type`: String
-  var url: String
-  var username: js.UndefOr[String] = js.undefined
+  var password: js.UndefOr[String] = js.native
+  var revision: js.UndefOr[String] = js.native
+  var sshKey: js.UndefOr[String] = js.native
+  var `type`: String = js.native
+  var url: String = js.native
+  var username: js.UndefOr[String] = js.native
 }
 
 object StackCustomCookbooksSource {
@@ -23,12 +24,12 @@ object StackCustomCookbooksSource {
     sshKey: String = null,
     username: String = null
   ): StackCustomCookbooksSource = {
-    val __obj = js.Dynamic.literal(url = url)
-    __obj.updateDynamic("type")(`type`)
-    if (password != null) __obj.updateDynamic("password")(password)
-    if (revision != null) __obj.updateDynamic("revision")(revision)
-    if (sshKey != null) __obj.updateDynamic("sshKey")(sshKey)
-    if (username != null) __obj.updateDynamic("username")(username)
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
+    if (revision != null) __obj.updateDynamic("revision")(revision.asInstanceOf[js.Any])
+    if (sshKey != null) __obj.updateDynamic("sshKey")(sshKey.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackCustomCookbooksSource]
   }
 }

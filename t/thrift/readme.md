@@ -4,20 +4,20 @@
 Typings are for version 0.10
 
 ## Library description:
-node.js bindings for the Apache Thrift RPC system
+Thrift is a software framework for scalable cross-language services development.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | thrift |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 140 |
-| # downloads        | 2182347 |
+| # releases         | 4 |
+| # dependents       | 150 |
+| # downloads        | 2647335 |
 | # stars            | 24 |
 
 ## Links
-- [Homepage](http://thrift.apache.org/)
-- [Bugs](https://issues.apache.org/jira/browse/THRIFT)
+- [Homepage](http://thrift.apache.org)
+- [Bugs](https://issues.apache.org/jira/projects/THRIFT/summary)
 - [Repository](https://github.com/apache/thrift)
 - [Npm](https://www.npmjs.com/package/thrift)
     

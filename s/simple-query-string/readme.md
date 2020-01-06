@@ -11,8 +11,8 @@ Fast and simple way to parse and stringify URL query strings
 | Full name          | simple-query-string |
 | Keywords           | decode, encode, stringify, parse, uri, url, parameter, param, qs, query, querystring, query-string, simple-helpers |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 20828 |
+| # dependents       | 1 |
+| # downloads        | 24459 |
 | # stars            | 1 |
 
 ## Links

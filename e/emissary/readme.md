@@ -9,9 +9,9 @@ Utility mixins for subscribing to and emitting events.
 | ------------------ | :-------------: |
 | Full name          | emissary |
 | Keywords           | event-emitter, events, subscribe, subscriber |
-| # releases         | 1 |
-| # dependents       | 30 |
-| # downloads        | 2610845 |
+| # releases         | 0 |
+| # dependents       | 34 |
+| # downloads        | 2304199 |
 | # stars            | 0 |
 
 ## Links

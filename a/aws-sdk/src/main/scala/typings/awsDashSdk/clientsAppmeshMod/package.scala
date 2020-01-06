@@ -18,8 +18,8 @@ package object clientsAppmeshMod {
   type Boolean = scala.Boolean
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.ms
-    - typings.awsDashSdk.awsDashSdkStrings.s
+    - typings.awsDashSdk.awsDashSdkStrings.ms_
+    - typings.awsDashSdk.awsDashSdkStrings.s_
     - java.lang.String
   */
   type DurationUnit = _DurationUnit | java.lang.String
@@ -31,6 +31,17 @@ package object clientsAppmeshMod {
   */
   type EgressFilterType = _EgressFilterType | java.lang.String
   type FilePath = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.cancelled__
+    - typings.awsDashSdk.awsDashSdkStrings.`deadline-exceeded`
+    - typings.awsDashSdk.awsDashSdkStrings.internal
+    - typings.awsDashSdk.awsDashSdkStrings.`resource-exhausted`
+    - typings.awsDashSdk.awsDashSdkStrings.unavailable__
+    - java.lang.String
+  */
+  type GrpcRetryPolicyEvent = _GrpcRetryPolicyEvent | java.lang.String
+  type GrpcRetryPolicyEvents = js.Array[GrpcRetryPolicyEvent]
+  type GrpcRouteMetadataList = js.Array[GrpcRouteMetadata]
   type HeaderMatch = java.lang.String
   type HeaderName = java.lang.String
   type HealthCheckIntervalMillis = Double
@@ -54,8 +65,8 @@ package object clientsAppmeshMod {
   type HttpRetryPolicyEvents = js.Array[HttpRetryPolicyEvent]
   type HttpRouteHeaders = js.Array[HttpRouteHeader]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.http
-    - typings.awsDashSdk.awsDashSdkStrings.https
+    - typings.awsDashSdk.awsDashSdkStrings.http_
+    - typings.awsDashSdk.awsDashSdkStrings.https_
     - java.lang.String
   */
   type HttpScheme = _HttpScheme | java.lang.String
@@ -75,11 +86,14 @@ package object clientsAppmeshMod {
     - java.lang.String
   */
   type MeshStatusCode = _MeshStatusCode | java.lang.String
+  type MethodName = java.lang.String
   type PercentInt = Double
   type PortNumber = Double
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.http
-    - typings.awsDashSdk.awsDashSdkStrings.tcp
+    - typings.awsDashSdk.awsDashSdkStrings.grpc
+    - typings.awsDashSdk.awsDashSdkStrings.http_
+    - typings.awsDashSdk.awsDashSdkStrings.http2
+    - typings.awsDashSdk.awsDashSdkStrings.tcp_
     - java.lang.String
   */
   type PortProtocol = _PortProtocol | java.lang.String
@@ -132,7 +146,7 @@ package object clientsAppmeshMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2018-10-01`
     - typings.awsDashSdk.awsDashSdkStrings.`2019-01-25`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | java.lang.String

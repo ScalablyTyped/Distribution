@@ -12,7 +12,7 @@ bootpag - dynamic pagination jQuery plugin. Works well with bootstrap or standal
 | Keywords           | pagination, bootstrap, jquery-plugin, ecosystem:jquery |
 | # releases         | 1 |
 | # dependents       | 1 |
-| # downloads        | 7075 |
+| # downloads        | 6277 |
 | # stars            | 0 |
 
 ## Links

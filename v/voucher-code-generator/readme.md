@@ -11,8 +11,8 @@ Voucher Code Generator
 | Full name          | voucher-code-generator |
 | Keywords           | voucher, coupon, discount, gift, card, code, generator |
 | # releases         | 1 |
-| # dependents       | 1 |
-| # downloads        | 91330 |
+| # dependents       | 2 |
+| # downloads        | 163938 |
 | # stars            | 6 |
 
 ## Links

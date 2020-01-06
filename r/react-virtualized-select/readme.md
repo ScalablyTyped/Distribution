@@ -10,9 +10,9 @@ Drop-down menu for React with windowing to support large numbers of options.
 | ------------------ | :-------------: |
 | Full name          | react-virtualized-select |
 | Keywords           | - |
-| # releases         | 9 |
-| # dependents       | 41 |
-| # downloads        | 2128378 |
+| # releases         | 4 |
+| # dependents       | 40 |
+| # downloads        | 2686719 |
 | # stars            | 4 |
 
 ## Links

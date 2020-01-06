@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Pose extends js.Object {
   /**
     * Value representing the face rotation on the pitch axis.
     */
-  var Pitch: js.UndefOr[Degree] = js.undefined
+  var Pitch: js.UndefOr[Degree] = js.native
   /**
     * Value representing the face rotation on the roll axis.
     */
-  var Roll: js.UndefOr[Degree] = js.undefined
+  var Roll: js.UndefOr[Degree] = js.native
   /**
     * Value representing the face rotation on the yaw axis.
     */
-  var Yaw: js.UndefOr[Degree] = js.undefined
+  var Yaw: js.UndefOr[Degree] = js.native
 }
 
 object Pose {

@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InputParallelism extends js.Object {
   /**
     * The number of in-application streams to create.
     */
-  var Count: js.UndefOr[InputParallelismCount] = js.undefined
+  var Count: js.UndefOr[InputParallelismCount] = js.native
 }
 
 object InputParallelism {

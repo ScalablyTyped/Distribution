@@ -8,47 +8,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AmiCopyArgs extends js.Object {
   /**
     * A longer, human-readable description for the AMI.
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * Nested block describing an EBS block device that should be
     * attached to created instances. The structure of this block is described below.
     */
-  val ebsBlockDevices: js.UndefOr[Input[js.Array[Input[AmiCopyEbsBlockDevice]]]] = js.undefined
+  val ebsBlockDevices: js.UndefOr[Input[js.Array[Input[AmiCopyEbsBlockDevice]]]] = js.native
   /**
     * Specifies whether the destination snapshots of the copied image should be encrypted. Defaults to `false`
     */
-  val encrypted: js.UndefOr[Input[Boolean]] = js.undefined
+  val encrypted: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Nested block describing an ephemeral block device that
     * should be attached to created instances. The structure of this block is described below.
     */
-  val ephemeralBlockDevices: js.UndefOr[Input[js.Array[Input[AmiCopyEphemeralBlockDevice]]]] = js.undefined
+  val ephemeralBlockDevices: js.UndefOr[Input[js.Array[Input[AmiCopyEphemeralBlockDevice]]]] = js.native
   /**
     * The full ARN of the KMS Key to use when encrypting the snapshots of an image during a copy operation. If not specified, then the default AWS KMS Key will be used
     */
-  val kmsKeyId: js.UndefOr[Input[String]] = js.undefined
+  val kmsKeyId: js.UndefOr[Input[String]] = js.native
   /**
     * A region-unique name for the AMI.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * The id of the AMI to copy. This id must be valid in the region
     * given by `sourceAmiRegion`.
     */
-  val sourceAmiId: Input[String]
+  val sourceAmiId: Input[String] = js.native
   /**
     * The region from which the AMI will be copied. This may be the
     * same as the AWS provider region in order to create a copy within the same region.
     */
-  val sourceAmiRegion: Input[String]
+  val sourceAmiRegion: Input[String] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object AmiCopyArgs {

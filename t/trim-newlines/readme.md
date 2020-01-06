@@ -9,10 +9,10 @@ Trim newlines from the start and/or end of a string
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | trim-newlines |
-| Keywords           | trim, newline, newlines, linebreak, lf, crlf, left, right, start, end, string, str, remove, delete, strip |
+| Keywords           | trim, newline, newlines, linebreak, lf, crlf, left, right, start, end, string, remove, delete, strip |
 | # releases         | 2 |
-| # dependents       | 40 |
-| # downloads        | 229127535 |
+| # dependents       | 46 |
+| # downloads        | 357667302 |
 | # stars            | 0 |
 
 ## Links

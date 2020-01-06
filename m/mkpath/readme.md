@@ -10,9 +10,9 @@ Make all directories in a path, like mkdir -p
 | ------------------ | :-------------: |
 | Full name          | mkpath |
 | Keywords           | mkdir, mkdirp, directory, path, tree |
-| # releases         | 1 |
-| # dependents       | 202 |
-| # downloads        | 17336416 |
+| # releases         | 0 |
+| # dependents       | 217 |
+| # downloads        | 19192887 |
 | # stars            | 5 |
 
 ## Links

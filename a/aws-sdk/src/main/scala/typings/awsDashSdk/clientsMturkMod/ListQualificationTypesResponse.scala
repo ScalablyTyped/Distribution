@@ -4,16 +4,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ListQualificationTypesResponse extends js.Object {
-  var NextToken: js.UndefOr[PaginationToken] = js.undefined
+  var NextToken: js.UndefOr[PaginationToken] = js.native
   /**
     *  The number of Qualification types on this page in the filtered results list, equivalent to the number of types this operation returns. 
     */
-  var NumResults: js.UndefOr[Integer] = js.undefined
+  var NumResults: js.UndefOr[Integer] = js.native
   /**
     *  The list of QualificationType elements returned by the query. 
     */
-  var QualificationTypes: js.UndefOr[QualificationTypeList] = js.undefined
+  var QualificationTypes: js.UndefOr[QualificationTypeList] = js.native
 }
 
 object ListQualificationTypesResponse {
@@ -24,9 +25,9 @@ object ListQualificationTypesResponse {
     QualificationTypes: QualificationTypeList = null
   ): ListQualificationTypesResponse = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (NumResults != null) __obj.updateDynamic("NumResults")(NumResults.asInstanceOf[js.Any])
-    if (QualificationTypes != null) __obj.updateDynamic("QualificationTypes")(QualificationTypes)
+    if (QualificationTypes != null) __obj.updateDynamic("QualificationTypes")(QualificationTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListQualificationTypesResponse]
   }
 }

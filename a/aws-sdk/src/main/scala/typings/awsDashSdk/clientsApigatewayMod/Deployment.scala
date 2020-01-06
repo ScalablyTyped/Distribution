@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Deployment extends js.Object {
   /**
     * A summary of the RestApi at the date and time that the deployment resource was created.
     */
-  var apiSummary: js.UndefOr[PathToMapOfMethodSnapshot] = js.undefined
+  var apiSummary: js.UndefOr[PathToMapOfMethodSnapshot] = js.native
   /**
     * The date and time that the deployment resource was created.
     */
-  var createdDate: js.UndefOr[Timestamp] = js.undefined
+  var createdDate: js.UndefOr[Timestamp] = js.native
   /**
     * The description for the deployment resource.
     */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String] = js.native
   /**
     * The identifier for the deployment resource.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String] = js.native
 }
 
 object Deployment {
@@ -32,10 +33,10 @@ object Deployment {
     id: String = null
   ): Deployment = {
     val __obj = js.Dynamic.literal()
-    if (apiSummary != null) __obj.updateDynamic("apiSummary")(apiSummary)
-    if (createdDate != null) __obj.updateDynamic("createdDate")(createdDate)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (id != null) __obj.updateDynamic("id")(id)
+    if (apiSummary != null) __obj.updateDynamic("apiSummary")(apiSummary.asInstanceOf[js.Any])
+    if (createdDate != null) __obj.updateDynamic("createdDate")(createdDate.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Deployment]
   }
 }

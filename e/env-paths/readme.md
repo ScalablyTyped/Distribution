@@ -11,8 +11,8 @@ Get paths for storing things like data, config, cache, etc
 | Full name          | env-paths |
 | Keywords           | common, user, paths, env, environment, directory, dir, appdir, path, data, config, cache, logs, temp, linux, unix |
 | # releases         | 4 |
-| # dependents       | 95 |
-| # downloads        | 6065164 |
+| # dependents       | 134 |
+| # downloads        | 25595284 |
 | # stars            | 2 |
 
 ## Links

@@ -261,9 +261,6 @@ class QuestionPanelDynamicModel protected ()
   override def getSharedQuestionFromArray(name: String, panelIndex: Double): Question = js.native
   /* CompleteClass */
   override def getSurvey(): ISurvey = js.native
-  /**
-    * Returns the type of the object as a string as it represents in the json. It should be in lowcase.
-    */
   /* InferMemberOverrides */
   override def getType(): String = js.native
   /**
@@ -277,7 +274,7 @@ class QuestionPanelDynamicModel protected ()
     */
   def goToPrevPanel(): Unit = js.native
   /* InferMemberOverrides */
-  override def locStrsChanged(): Unit with js.Any = js.native
+  override def locStrsChanged(): js.Any with Unit = js.native
   def panelCountChangedCallback(): Unit = js.native
   /* protected */ def rebuildPanels(): Unit = js.native
   /**

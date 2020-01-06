@@ -9,9 +9,9 @@ Logging library that allows for hierarchical loggers, multiple log levels, and f
 | ------------------ | :-------------: |
 | Full name          | logg |
 | Keywords           | log, logging, logger, hierarchical, handler, watcher |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 1676 |
+| # downloads        | 2095 |
 | # stars            | 2 |
 
 ## Links

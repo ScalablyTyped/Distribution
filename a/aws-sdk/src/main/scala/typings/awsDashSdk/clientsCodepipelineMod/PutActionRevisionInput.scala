@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PutActionRevisionInput extends js.Object {
   /**
     * The name of the action that processes the revision.
     */
-  var actionName: ActionName
+  var actionName: ActionName = js.native
   /**
     * Represents information about the version (or revision) of an action.
     */
-  var actionRevision: ActionRevision
+  var actionRevision: ActionRevision = js.native
   /**
     * The name of the pipeline that starts processing the revision to the source.
     */
-  var pipelineName: PipelineName
+  var pipelineName: PipelineName = js.native
   /**
     * The name of the stage that contains the action that acts on the revision.
     */
-  var stageName: StageName
+  var stageName: StageName = js.native
 }
 
 object PutActionRevisionInput {
@@ -31,7 +32,7 @@ object PutActionRevisionInput {
     pipelineName: PipelineName,
     stageName: StageName
   ): PutActionRevisionInput = {
-    val __obj = js.Dynamic.literal(actionName = actionName, actionRevision = actionRevision, pipelineName = pipelineName, stageName = stageName)
+    val __obj = js.Dynamic.literal(actionName = actionName.asInstanceOf[js.Any], actionRevision = actionRevision.asInstanceOf[js.Any], pipelineName = pipelineName.asInstanceOf[js.Any], stageName = stageName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PutActionRevisionInput]
   }

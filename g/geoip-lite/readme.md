@@ -11,8 +11,8 @@ A light weight native JavaScript implementation of GeoIP API from MaxMind
 | Full name          | geoip-lite |
 | Keywords           | geo, geoip, ip, ipv4, ipv6, geolookup, maxmind, geolite |
 | # releases         | 11 |
-| # dependents       | 101 |
-| # downloads        | 1160834 |
+| # dependents       | 117 |
+| # downloads        | 2079031 |
 | # stars            | 37 |
 
 ## Links

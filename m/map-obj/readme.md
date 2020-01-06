@@ -9,10 +9,10 @@ Map object keys and values into a new object
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | map-obj |
-| Keywords           | map, obj, object, key, keys, value, values, val, iterate, iterator, rename, modify, deep, recurse, recursive |
-| # releases         | 2 |
-| # dependents       | 77 |
-| # downloads        | 272185595 |
+| Keywords           | map, object, key, keys, value, values, iterate, iterator, rename, modify, deep, recurse, recursive |
+| # releases         | 5 |
+| # dependents       | 95 |
+| # downloads        | 386085870 |
 | # stars            | 4 |
 
 ## Links

@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OperatingSystem extends js.Object {
   /**
     * The operating system.
     */
-  var Type: js.UndefOr[OperatingSystemType] = js.undefined
+  var Type: js.UndefOr[OperatingSystemType] = js.native
 }
 
 object OperatingSystem {

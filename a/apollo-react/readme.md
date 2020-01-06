@@ -12,7 +12,7 @@ React data container for Apollo Client
 | Keywords           | ecmascript, es2015, jsnext, javascript, relay, npm, react |
 | # releases         | 1 |
 | # dependents       | 0 |
-| # downloads        | 7519 |
+| # downloads        | 7116 |
 | # stars            | 1 |
 
 ## Links

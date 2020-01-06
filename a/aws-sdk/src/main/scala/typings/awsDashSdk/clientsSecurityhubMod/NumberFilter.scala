@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NumberFilter extends js.Object {
   /**
     * The equal-to condition to be applied to a single field when querying for findings.
     */
-  var Eq: js.UndefOr[Double] = js.undefined
+  var Eq: js.UndefOr[Double] = js.native
   /**
     * The greater-than-equal condition to be applied to a single field when querying for findings. 
     */
-  var Gte: js.UndefOr[Double] = js.undefined
+  var Gte: js.UndefOr[Double] = js.native
   /**
     * The less-than-equal condition to be applied to a single field when querying for findings. 
     */
-  var Lte: js.UndefOr[Double] = js.undefined
+  var Lte: js.UndefOr[Double] = js.native
 }
 
 object NumberFilter {

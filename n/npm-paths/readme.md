@@ -11,8 +11,8 @@ Returns an array of NPM directory paths based on the user's platform and environ
 | Full name          | npm-paths |
 | Keywords           | directory, dirname, global, module, npm, package, path, paths, prefix, resolve |
 | # releases         | 4 |
-| # dependents       | 9 |
-| # downloads        | 2025147 |
+| # dependents       | 7 |
+| # downloads        | 2501483 |
 | # stars            | 0 |
 
 ## Links

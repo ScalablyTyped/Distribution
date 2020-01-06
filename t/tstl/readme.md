@@ -10,9 +10,9 @@ TypeScript-STL (Standard Template Library, migrated from C++)
 | ------------------ | :-------------: |
 | Full name          | tstl |
 | Keywords           | tstl, typescript stl, typescript standard template library, container, iterator, algorithm, functor, exception, functional, utility, thread, numeric, special_math, vector, deque, list, forward_list, stack, queue, priority_queue, set, multiset, unordered_set, unordered_multiset, map, multimap, unordered_map, unordered_multimap, TreeSet, TreeMultiSet, HashSet, HashMultiSet, TreeMap, TreeMultiMap, HashMap, HashMultiMap, mutex, shared_mutex, timed_mutex, shared_timed_mutex, unique_lock, shared_lock, semaphore, timed_semaphore, latch, barrier, flex_barrier |
-| # releases         | 214 |
+| # releases         | 229 |
 | # dependents       | 11 |
-| # downloads        | 59912 |
+| # downloads        | 47166 |
 | # stars            | 1 |
 
 ## Links

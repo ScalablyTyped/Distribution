@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Document extends js.Object {
   def renderDocument(
-    Document: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias next.next/dist/next-server/lib/utils.DocumentType */ js.Object,
+    Document: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias next.next/dist/next-server/lib/utils.DocumentType */ js.Object,
     props: DocumentProps
   ): ReactElement
 }
@@ -16,7 +16,7 @@ trait Anon_Document extends js.Object {
 object Anon_Document {
   @scala.inline
   def apply(
-    renderDocument: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias next.next/dist/next-server/lib/utils.DocumentType */ js.Object, DocumentProps) => ReactElement
+    renderDocument: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias next.next/dist/next-server/lib/utils.DocumentType */ js.Object, DocumentProps) => ReactElement
   ): Anon_Document = {
     val __obj = js.Dynamic.literal(renderDocument = js.Any.fromFunction2(renderDocument))
   

@@ -10,9 +10,9 @@ Angular - the http service
 | ------------------ | :-------------: |
 | Full name          | @angular/http |
 | Keywords           | - |
-| # releases         | 179 |
-| # dependents       | 4853 |
-| # downloads        | 67417556 |
+| # releases         | 114 |
+| # dependents       | 5047 |
+| # downloads        | 32217083 |
 | # stars            | 10 |
 
 ## Links

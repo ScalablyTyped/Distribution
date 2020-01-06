@@ -6,10 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/MenuItem.MenuItemClassKey>> */
+@js.native
 trait PartialStyleRulesMenuItemClassKey extends js.Object {
-  var gutters: js.UndefOr[CSSProperties] = js.undefined
-  var root: js.UndefOr[CSSProperties] = js.undefined
-  var selected: js.UndefOr[CSSProperties] = js.undefined
+  var gutters: js.UndefOr[CSSProperties] = js.native
+  var root: js.UndefOr[CSSProperties] = js.native
+  var selected: js.UndefOr[CSSProperties] = js.native
 }
 
 object PartialStyleRulesMenuItemClassKey {

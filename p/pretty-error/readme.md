@@ -10,9 +10,9 @@ See nodejs errors with less clutter
 | ------------------ | :-------------: |
 | Full name          | pretty-error |
 | Keywords           | pretty, error, exception, debug, error-handling, readable, colorful, prettify, format, human |
-| # releases         | 3 |
-| # dependents       | 375 |
-| # downloads        | 114485160 |
+| # releases         | 1 |
+| # dependents       | 421 |
+| # downloads        | 173996562 |
 | # stars            | 36 |
 
 ## Links

@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DoubleRange extends js.Object {
   /**
     * The minimum value in the range.
     */
-  var From: js.UndefOr[Double] = js.undefined
+  var From: js.UndefOr[Double] = js.native
   /**
     * The maximum value in the range.
     */
-  var To: js.UndefOr[Double] = js.undefined
+  var To: js.UndefOr[Double] = js.native
 }
 
 object DoubleRange {

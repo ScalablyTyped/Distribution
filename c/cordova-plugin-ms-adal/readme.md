@@ -9,9 +9,9 @@ Provides Microsoft Azure Active Directory (ADAL) OAuth client.
 | ------------------ | :-------------: |
 | Full name          | cordova-plugin-ms-adal |
 | Keywords           | microsoft, azure, adal, activedirectory, ecosystem:cordova, cordova-android, cordova-ios, cordova-windows |
-| # releases         | 4 |
+| # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 26608 |
+| # downloads        | 36748 |
 | # stars            | 1 |
 
 ## Links

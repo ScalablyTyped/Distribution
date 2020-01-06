@@ -6,56 +6,61 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClusterInstanceState extends js.Object {
   /**
     * Specifies whether any database modifications
     * are applied immediately, or during the next maintenance window. Default is`false`.
     */
-  val applyImmediately: js.UndefOr[Input[Boolean]] = js.undefined
+  val applyImmediately: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Amazon Resource Name (ARN) of cluster instance
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * Indicates that minor engine upgrades will be applied automatically to the DB instance during the maintenance window. Default `true`.
     */
-  val autoMinorVersionUpgrade: js.UndefOr[Input[Boolean]] = js.undefined
+  val autoMinorVersionUpgrade: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The EC2 Availability Zone that the DB instance is created in. See [docs](https://docs.aws.amazon.com/documentdb/latest/developerguide/API_CreateDBInstance.html) about the details.
     */
-  val availabilityZone: js.UndefOr[Input[String]] = js.undefined
+  val availabilityZone: js.UndefOr[Input[String]] = js.native
+  /**
+    * (Optional) The identifier of the CA certificate for the DB instance.
+    */
+  val caCertIdentifier: js.UndefOr[Input[String]] = js.native
   /**
     * The identifier of the [`aws.docdb.Cluster`](https://www.terraform.io/docs/providers/aws/r/docdb_cluster.html) in which to launch this instance.
     */
-  val clusterIdentifier: js.UndefOr[Input[String]] = js.undefined
+  val clusterIdentifier: js.UndefOr[Input[String]] = js.native
   /**
     * The DB subnet group to associate with this DB instance.
     */
-  val dbSubnetGroupName: js.UndefOr[Input[String]] = js.undefined
+  val dbSubnetGroupName: js.UndefOr[Input[String]] = js.native
   /**
     * The region-unique, immutable identifier for the DB instance.
     */
-  val dbiResourceId: js.UndefOr[Input[String]] = js.undefined
+  val dbiResourceId: js.UndefOr[Input[String]] = js.native
   /**
     * The DNS address for this instance. May not be writable
     */
-  val endpoint: js.UndefOr[Input[String]] = js.undefined
+  val endpoint: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the database engine to be used for the DocDB instance. Defaults to `docdb`. Valid Values: `docdb`.
     */
-  val engine: js.UndefOr[Input[String]] = js.undefined
+  val engine: js.UndefOr[Input[String]] = js.native
   /**
     * The database engine version
     */
-  val engineVersion: js.UndefOr[Input[String]] = js.undefined
+  val engineVersion: js.UndefOr[Input[String]] = js.native
   /**
     * The indentifier for the DocDB instance, if omitted, this provider will assign a random, unique identifier.
     */
-  val identifier: js.UndefOr[Input[String]] = js.undefined
+  val identifier: js.UndefOr[Input[String]] = js.native
   /**
     * Creates a unique identifier beginning with the specified prefix. Conflicts with `identifer`.
     */
-  val identifierPrefix: js.UndefOr[Input[String]] = js.undefined
+  val identifierPrefix: js.UndefOr[Input[String]] = js.native
   /**
     * The instance class to use. For details on CPU and memory, see [Scaling for DocDB Instances][2]. DocDB currently
     * supports the below instance classes. Please see [AWS Documentation][4] for complete details.
@@ -66,41 +71,41 @@ trait ClusterInstanceState extends js.Object {
     * - db.r4.8xlarge
     * - db.r4.16xlarge
     */
-  val instanceClass: js.UndefOr[Input[String]] = js.undefined
+  val instanceClass: js.UndefOr[Input[String]] = js.native
   /**
     * The ARN for the KMS encryption key if one is set to the cluster.
     */
-  val kmsKeyId: js.UndefOr[Input[String]] = js.undefined
+  val kmsKeyId: js.UndefOr[Input[String]] = js.native
   /**
     * The database port
     */
-  val port: js.UndefOr[Input[Double]] = js.undefined
+  val port: js.UndefOr[Input[Double]] = js.native
   /**
     * The daily time range during which automated backups are created if automated backups are enabled.
     */
-  val preferredBackupWindow: js.UndefOr[Input[String]] = js.undefined
+  val preferredBackupWindow: js.UndefOr[Input[String]] = js.native
   /**
     * The window to perform maintenance in.
     * Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
     */
-  val preferredMaintenanceWindow: js.UndefOr[Input[String]] = js.undefined
+  val preferredMaintenanceWindow: js.UndefOr[Input[String]] = js.native
   /**
     * Default 0. Failover Priority setting on instance level. The reader who has lower tier has higher priority to get promoter to writer.
     */
-  val promotionTier: js.UndefOr[Input[Double]] = js.undefined
-  val publiclyAccessible: js.UndefOr[Input[Boolean]] = js.undefined
+  val promotionTier: js.UndefOr[Input[Double]] = js.native
+  val publiclyAccessible: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Specifies whether the DB cluster is encrypted.
     */
-  val storageEncrypted: js.UndefOr[Input[Boolean]] = js.undefined
+  val storageEncrypted: js.UndefOr[Input[Boolean]] = js.native
   /**
     * A mapping of tags to assign to the instance.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * Boolean indicating if this instance is writable. `False` indicates this instance is a read replica.
     */
-  val writer: js.UndefOr[Input[Boolean]] = js.undefined
+  val writer: js.UndefOr[Input[Boolean]] = js.native
 }
 
 object ClusterInstanceState {
@@ -110,6 +115,7 @@ object ClusterInstanceState {
     arn: Input[String] = null,
     autoMinorVersionUpgrade: Input[Boolean] = null,
     availabilityZone: Input[String] = null,
+    caCertIdentifier: Input[String] = null,
     clusterIdentifier: Input[String] = null,
     dbSubnetGroupName: Input[String] = null,
     dbiResourceId: Input[String] = null,
@@ -134,6 +140,7 @@ object ClusterInstanceState {
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
     if (autoMinorVersionUpgrade != null) __obj.updateDynamic("autoMinorVersionUpgrade")(autoMinorVersionUpgrade.asInstanceOf[js.Any])
     if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])
+    if (caCertIdentifier != null) __obj.updateDynamic("caCertIdentifier")(caCertIdentifier.asInstanceOf[js.Any])
     if (clusterIdentifier != null) __obj.updateDynamic("clusterIdentifier")(clusterIdentifier.asInstanceOf[js.Any])
     if (dbSubnetGroupName != null) __obj.updateDynamic("dbSubnetGroupName")(dbSubnetGroupName.asInstanceOf[js.Any])
     if (dbiResourceId != null) __obj.updateDynamic("dbiResourceId")(dbiResourceId.asInstanceOf[js.Any])

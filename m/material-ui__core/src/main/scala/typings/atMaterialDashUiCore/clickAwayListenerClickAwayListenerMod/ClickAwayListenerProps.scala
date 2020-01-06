@@ -12,11 +12,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClickAwayListenerProps extends js.Object {
-  var children: ReactNode
-  var mouseEvent: js.UndefOr[onClick | onMouseDown | onMouseUp | `false`] = js.undefined
-  var touchEvent: js.UndefOr[onTouchStart | onTouchEnd | `false`] = js.undefined
-  def onClickAway(event: ChangeEvent[js.Object]): Unit
+  var children: ReactNode = js.native
+  var mouseEvent: js.UndefOr[onClick | onMouseDown | onMouseUp | `false`] = js.native
+  var touchEvent: js.UndefOr[onTouchStart | onTouchEnd | `false`] = js.native
+  def onClickAway(event: ChangeEvent[js.Object]): Unit = js.native
 }
 
 object ClickAwayListenerProps {

@@ -11,8 +11,8 @@ A BIP21 compatible URL encoding utility library
 | Full name          | bip21 |
 | Keywords           | bip21, bitcoin |
 | # releases         | 2 |
-| # dependents       | 5 |
-| # downloads        | 19776 |
+| # dependents       | 7 |
+| # downloads        | 24876 |
 | # stars            | 0 |
 
 ## Links

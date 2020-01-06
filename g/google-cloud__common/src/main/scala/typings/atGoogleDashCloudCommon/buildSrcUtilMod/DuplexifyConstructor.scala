@@ -13,17 +13,17 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DuplexifyConstructor
-  extends Instantiable3[
-      `false` | (/* writable */ Null) | (/* writable */ Writable), 
-      `false` | (/* readable */ Null) | (/* readable */ Readable), 
-      /* options */ DuplexifyOptions, 
-      Duplexify
-    ]
-     with Instantiable0[Duplexify]
+  extends Instantiable0[Duplexify]
      with Instantiable1[`false` | (/* writable */ Writable), Duplexify]
      with Instantiable2[
       `false` | (/* writable */ Null) | (/* writable */ Writable), 
       `false` | (/* readable */ Readable), 
+      Duplexify
+    ]
+     with Instantiable3[
+      `false` | (/* writable */ Null) | (/* writable */ Writable), 
+      `false` | (/* readable */ Null) | (/* readable */ Readable), 
+      /* options */ DuplexifyOptions, 
       Duplexify
     ] {
   def apply(): Duplexify = js.native

@@ -10,9 +10,9 @@ TextMate helpers
 | ------------------ | :-------------: |
 | Full name          | first-mate |
 | Keywords           | - |
-| # releases         | 16 |
-| # dependents       | 20 |
-| # downloads        | 148546 |
+| # releases         | 8 |
+| # dependents       | 21 |
+| # downloads        | 150079 |
 | # stars            | 2 |
 
 ## Links

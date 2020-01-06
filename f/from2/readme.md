@@ -10,9 +10,9 @@ Convenience wrapper for ReadableStream, with an API lifted from "from" and "thro
 | ------------------ | :-------------: |
 | Full name          | from2 |
 | Keywords           | from, stream, readable, pull, convenience, wrapper |
-| # releases         | 1 |
-| # dependents       | 163 |
-| # downloads        | 144886171 |
+| # releases         | 0 |
+| # dependents       | 186 |
+| # downloads        | 262638102 |
 | # stars            | 9 |
 
 ## Links

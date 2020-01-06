@@ -10,9 +10,9 @@ socket.io with a wildcard event
 | ------------------ | :-------------: |
 | Full name          | socketio-wildcard |
 | Keywords           | socket.io, websocket |
-| # releases         | 2 |
-| # dependents       | 40 |
-| # downloads        | 734091 |
+| # releases         | 0 |
+| # dependents       | 46 |
+| # downloads        | 1060728 |
 | # stars            | 2 |
 
 ## Links

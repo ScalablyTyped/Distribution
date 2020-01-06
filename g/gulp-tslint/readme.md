@@ -10,9 +10,9 @@ TypeScript linter Gulp plugin
 | ------------------ | :-------------: |
 | Full name          | gulp-tslint |
 | Keywords           | gulp, typescript, plugin, ts, gulpplugin, gulpfriendly, tslint, linter, lint |
-| # releases         | 6 |
-| # dependents       | 107 |
-| # downloads        | 2992702 |
+| # releases         | 3 |
+| # dependents       | 114 |
+| # downloads        | 3229955 |
 | # stars            | 10 |
 
 ## Links

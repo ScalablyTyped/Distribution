@@ -11,8 +11,8 @@ detect and report syntax errors in source code strings
 | Full name          | syntax-error |
 | Keywords           | syntax, error, esprima, stack, line, column |
 | # releases         | 2 |
-| # dependents       | 96 |
-| # downloads        | 24264770 |
+| # dependents       | 102 |
+| # downloads        | 26316847 |
 | # stars            | 8 |
 
 ## Links

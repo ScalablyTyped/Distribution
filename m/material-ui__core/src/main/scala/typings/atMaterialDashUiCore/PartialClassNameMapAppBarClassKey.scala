@@ -5,16 +5,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/AppBar/AppBar.AppBarClassKey>> */
+@js.native
 trait PartialClassNameMapAppBarClassKey extends js.Object {
-  var colorDefault: js.UndefOr[String] = js.undefined
-  var colorPrimary: js.UndefOr[String] = js.undefined
-  var colorSecondary: js.UndefOr[String] = js.undefined
-  var positionAbsolute: js.UndefOr[String] = js.undefined
-  var positionFixed: js.UndefOr[String] = js.undefined
-  var positionRelative: js.UndefOr[String] = js.undefined
-  var positionStatic: js.UndefOr[String] = js.undefined
-  var positionSticky: js.UndefOr[String] = js.undefined
-  var root: js.UndefOr[String] = js.undefined
+  var colorDefault: js.UndefOr[String] = js.native
+  var colorPrimary: js.UndefOr[String] = js.native
+  var colorSecondary: js.UndefOr[String] = js.native
+  var positionAbsolute: js.UndefOr[String] = js.native
+  var positionFixed: js.UndefOr[String] = js.native
+  var positionRelative: js.UndefOr[String] = js.native
+  var positionStatic: js.UndefOr[String] = js.native
+  var positionSticky: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.native
 }
 
 object PartialClassNameMapAppBarClassKey {

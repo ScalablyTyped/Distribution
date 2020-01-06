@@ -10,9 +10,9 @@ Simple XML
 | ------------------ | :-------------: |
 | Full name          | sxml |
 | Keywords           | xml |
-| # releases         | 17 |
+| # releases         | 18 |
 | # dependents       | 1 |
-| # downloads        | 4996 |
+| # downloads        | 8523 |
 | # stars            | 0 |
 
 ## Links

@@ -11,8 +11,8 @@ Wrapper for asynchronously used Google Maps API
 | Full name          | google-maps |
 | Keywords           | google, maps, asynchronous, browser, wrapper |
 | # releases         | 2 |
-| # dependents       | 62 |
-| # downloads        | 1161697 |
+| # dependents       | 67 |
+| # downloads        | 1615993 |
 | # stars            | 29 |
 
 ## Links

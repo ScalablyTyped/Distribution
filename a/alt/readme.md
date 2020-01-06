@@ -10,9 +10,9 @@ A flux implementation
 | ------------------ | :-------------: |
 | Full name          | alt |
 | Keywords           | alt, es6, flow, flux, react, unidirectional |
-| # releases         | 1 |
-| # dependents       | 46 |
-| # downloads        | 479770 |
+| # releases         | 0 |
+| # dependents       | 47 |
+| # downloads        | 478532 |
 | # stars            | 9 |
 
 ## Links

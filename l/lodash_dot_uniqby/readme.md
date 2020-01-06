@@ -11,12 +11,13 @@ The lodash method `_.uniqBy` exported as a module.
 | Full name          | lodash.uniqby |
 | Keywords           | lodash-modularized, uniqby |
 | # releases         | 0 |
-| # dependents       | 117 |
-| # downloads        | 9033200 |
+| # dependents       | 165 |
+| # downloads        | 15868067 |
 | # stars            | 0 |
 
 ## Links
 - [Homepage](https://lodash.com/)
+- [Bugs](https://github.com/lodash/lodash/issues)
 - [Npm](https://www.npmjs.com/package/lodash.uniqby)
     
 

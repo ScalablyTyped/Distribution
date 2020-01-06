@@ -10,9 +10,9 @@ Shopify Prime is a NodeJS library built to help developers easily authenticate a
 | ------------------ | :-------------: |
 | Full name          | shopify-prime |
 | Keywords           | shopify, gearworks, ecommerce, api |
-| # releases         | 9 |
+| # releases         | 10 |
 | # dependents       | 2 |
-| # downloads        | 7702 |
+| # downloads        | 6821 |
 | # stars            | 1 |
 
 ## Links

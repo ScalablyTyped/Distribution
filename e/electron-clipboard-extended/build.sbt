@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "electron-clipboard-extended"
-version := "1.x-dt-20191023Z-0bc18b"
+version := "1.x-dt-20191023Z-360785"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "electron" % "6.1.7-a736a6",
-  "org.scalablytyped" %%% "node" % "13.1-dt-20191226Z-155d58",
-  "org.scalablytyped" %%% "std" % "3.7-953338")
+  "org.scalablytyped" %%% "electron" % "6.1.7-d8dc7c",
+  "org.scalablytyped" %%% "node" % "13.1-dt-20200103Z-b9f880",
+  "org.scalablytyped" %%% "std" % "3.7-b6d959")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

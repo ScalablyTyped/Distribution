@@ -5,12 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DistributionOriginS3OriginConfig extends js.Object {
   /**
     * The [CloudFront origin access
     * identity][5] to associate with the origin.
     */
-  var originAccessIdentity: Input[String]
+  var originAccessIdentity: Input[String] = js.native
 }
 
 object DistributionOriginS3OriginConfig {

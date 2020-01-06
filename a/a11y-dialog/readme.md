@@ -10,9 +10,9 @@ A tiny script to make dialog windows accessible to assistive technology users.
 | ------------------ | :-------------: |
 | Full name          | a11y-dialog |
 | Keywords           | modal, dialog, accessibility, a11y, focus |
-| # releases         | 13 |
-| # dependents       | 9 |
-| # downloads        | 212071 |
+| # releases         | 8 |
+| # dependents       | 12 |
+| # downloads        | 357471 |
 | # stars            | 0 |
 
 ## Links

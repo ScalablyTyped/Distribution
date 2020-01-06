@@ -10,9 +10,9 @@ Share target browsers between different front-end tools, like Autoprefixer, Styl
 | ------------------ | :-------------: |
 | Full name          | browserslist |
 | Keywords           | caniuse, browsers, target |
-| # releases         | 68 |
-| # dependents       | 278 |
-| # downloads        | 437073356 |
+| # releases         | 57 |
+| # dependents       | 415 |
+| # downloads        | 669379804 |
 | # stars            | 23 |
 
 ## Links

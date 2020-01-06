@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ResourceFilters extends js.Object {
   /**
     * The 12-digit source account ID.
     */
-  var AccountId: js.UndefOr[typings.awsDashSdk.clientsConfigserviceMod.AccountId] = js.undefined
+  var AccountId: js.UndefOr[typings.awsDashSdk.clientsConfigserviceMod.AccountId] = js.native
   /**
     * The source region.
     */
-  var Region: js.UndefOr[AwsRegion] = js.undefined
+  var Region: js.UndefOr[AwsRegion] = js.native
   /**
     * The ID of the resource.
     */
-  var ResourceId: js.UndefOr[typings.awsDashSdk.clientsConfigserviceMod.ResourceId] = js.undefined
+  var ResourceId: js.UndefOr[typings.awsDashSdk.clientsConfigserviceMod.ResourceId] = js.native
   /**
     * The name of the resource.
     */
-  var ResourceName: js.UndefOr[typings.awsDashSdk.clientsConfigserviceMod.ResourceName] = js.undefined
+  var ResourceName: js.UndefOr[typings.awsDashSdk.clientsConfigserviceMod.ResourceName] = js.native
 }
 
 object ResourceFilters {
@@ -32,10 +33,10 @@ object ResourceFilters {
     ResourceName: ResourceName = null
   ): ResourceFilters = {
     val __obj = js.Dynamic.literal()
-    if (AccountId != null) __obj.updateDynamic("AccountId")(AccountId)
-    if (Region != null) __obj.updateDynamic("Region")(Region)
-    if (ResourceId != null) __obj.updateDynamic("ResourceId")(ResourceId)
-    if (ResourceName != null) __obj.updateDynamic("ResourceName")(ResourceName)
+    if (AccountId != null) __obj.updateDynamic("AccountId")(AccountId.asInstanceOf[js.Any])
+    if (Region != null) __obj.updateDynamic("Region")(Region.asInstanceOf[js.Any])
+    if (ResourceId != null) __obj.updateDynamic("ResourceId")(ResourceId.asInstanceOf[js.Any])
+    if (ResourceName != null) __obj.updateDynamic("ResourceName")(ResourceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceFilters]
   }
 }

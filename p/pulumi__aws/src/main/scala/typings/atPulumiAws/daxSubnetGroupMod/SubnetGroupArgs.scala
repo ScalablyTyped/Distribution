@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SubnetGroupArgs extends js.Object {
   /**
     * A description of the subnet group.
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the subnet group.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * A list of VPC subnet IDs for the subnet group.
     */
-  val subnetIds: Input[js.Array[Input[String]]]
+  val subnetIds: Input[js.Array[Input[String]]] = js.native
 }
 
 object SubnetGroupArgs {

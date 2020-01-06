@@ -5,20 +5,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TaskDefinitionVolume extends js.Object {
   /**
     * Used to configure a docker volume
     */
-  var dockerVolumeConfiguration: js.UndefOr[Input[TaskDefinitionVolumeDockerVolumeConfiguration]] = js.undefined
+  var dockerVolumeConfiguration: js.UndefOr[Input[TaskDefinitionVolumeDockerVolumeConfiguration]] = js.native
   /**
     * The path on the host container instance that is presented to the container. If not set, ECS will create a nonpersistent data volume that starts empty and is deleted after the task has finished.
     */
-  var hostPath: js.UndefOr[Input[String]] = js.undefined
+  var hostPath: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the volume. This name is referenced in the `sourceVolume`
     * parameter of container definition in the `mountPoints` section.
     */
-  var name: Input[String]
+  var name: Input[String] = js.native
 }
 
 object TaskDefinitionVolume {

@@ -10,9 +10,9 @@ Scale of Cartesian Coordinates
 | ------------------ | :-------------: |
 | Full name          | recharts-scale |
 | Keywords           | Scale, Cartesian Coordinates |
-| # releases         | 5 |
-| # dependents       | 24 |
-| # downloads        | 5999498 |
+| # releases         | 4 |
+| # dependents       | 33 |
+| # downloads        | 10267286 |
 | # stars            | 0 |
 
 ## Links

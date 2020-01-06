@@ -19,7 +19,7 @@ trait Anon_Custom extends js.Object {
   def preSlug(source: String): String
   def slugFunc(
     input: String,
-    options: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias jquery-slugify.jquery-slugify.Options */ js.Object
+    options: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias jquery-slugify.jquery-slugify.Options */ js.Object
   ): String
 }
 
@@ -33,7 +33,7 @@ object Anon_Custom {
     postSlug: String => String,
     preSlug: String => String,
     separator: String,
-    slugFunc: (String, /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias jquery-slugify.jquery-slugify.Options */ js.Object) => String,
+    slugFunc: (String, /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias jquery-slugify.jquery-slugify.Options */ js.Object) => String,
     symbols: Boolean,
     titleCase: js.Array[String] | Boolean,
     truncate: Double,

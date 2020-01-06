@@ -4,15 +4,15 @@
 Typings are for version 6.7
 
 ## Library description:
-Kurento Utilities
+Kurento JavaScript Utilities
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | kurento-utils |
 | Keywords           | kurento, mcu, sfu, rpc, mediaserver, pipe, audio, video, media, recording, stream, streaming, videoconference, broadcast, multicast, client, server, browser, chrome, edge, firefox, safari, webrtc, datachannel, sdp, ice, stun, turn, h264, h.264, opus, vp8, rtp, srtp, rtsp |
-| # releases         | 5 |
-| # dependents       | 3 |
-| # downloads        | 36495 |
+| # releases         | 8 |
+| # dependents       | 5 |
+| # downloads        | 47467 |
 | # stars            | 1 |
 
 ## Links

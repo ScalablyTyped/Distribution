@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AcceleratorAttributes extends js.Object {
   /**
     * Indicates whether flow logs are enabled.
     */
-  var flowLogsEnabled: js.UndefOr[Input[Boolean]] = js.undefined
+  var flowLogsEnabled: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The name of the Amazon S3 bucket for the flow logs.
     */
-  var flowLogsS3Bucket: js.UndefOr[Input[String]] = js.undefined
+  var flowLogsS3Bucket: js.UndefOr[Input[String]] = js.native
   /**
     * The prefix for the location in the Amazon S3 bucket for the flow logs.
     */
-  var flowLogsS3Prefix: js.UndefOr[Input[String]] = js.undefined
+  var flowLogsS3Prefix: js.UndefOr[Input[String]] = js.native
 }
 
 object AcceleratorAttributes {

@@ -12,7 +12,7 @@ Observer pattern implementation
 | Keywords           | observer pattern, reactive, publish, subscribe |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 7330 |
+| # downloads        | 7182 |
 | # stars            | 1 |
 
 ## Links

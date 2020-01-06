@@ -4,15 +4,15 @@
 Typings are for version 5.2
 
 ## Library description:
-OptiPNG imagemin plugin
+Imagemin plugin for OptiPNG
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | imagemin-optipng |
-| Keywords           | compress, image, imageminplugin, img, minify, optimize, optipng, png |
-| # releases         | 2 |
-| # dependents       | 122 |
-| # downloads        | 18635526 |
+| Keywords           | imageminplugin, compress, image, minify, optimize, optipng, png |
+| # releases         | 4 |
+| # dependents       | 156 |
+| # downloads        | 22123521 |
 | # stars            | 9 |
 
 ## Links

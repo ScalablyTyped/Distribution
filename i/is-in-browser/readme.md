@@ -10,10 +10,10 @@ Simple check to see if current app is running in browser
 | ------------------ | :-------------: |
 | Full name          | is-in-browser |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 50 |
-| # downloads        | 17389267 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 55 |
+| # downloads        | 34439212 |
+| # stars            | 1 |
 
 ## Links
 - [Homepage](https://github.com/tuxsudo/is-in-browser#readme)

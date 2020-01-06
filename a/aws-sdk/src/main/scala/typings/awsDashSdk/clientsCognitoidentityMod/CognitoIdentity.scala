@@ -13,12 +13,12 @@ trait CognitoIdentity extends Service {
   @JSName("config")
   var config_CognitoIdentity: ConfigBase with ClientConfiguration = js.native
   /**
-    * Creates a new identity pool. The identity pool is a store of user identity information that is specific to your AWS account. The limit on identity pools is 60 per account. The keys for SupportedLoginProviders are as follows:   Facebook: graph.facebook.com    Google: accounts.google.com    Amazon: www.amazon.com    Twitter: api.twitter.com    Digits: www.digits.com    You must use AWS Developer credentials to call this API.
+    * Creates a new identity pool. The identity pool is a store of user identity information that is specific to your AWS account. The keys for SupportedLoginProviders are as follows:   Facebook: graph.facebook.com    Google: accounts.google.com    Amazon: www.amazon.com    Twitter: api.twitter.com    Digits: www.digits.com    You must use AWS Developer credentials to call this API.
     */
   def createIdentityPool(): Request[IdentityPool, AWSError] = js.native
   def createIdentityPool(callback: js.Function2[/* err */ AWSError, /* data */ IdentityPool, Unit]): Request[IdentityPool, AWSError] = js.native
   /**
-    * Creates a new identity pool. The identity pool is a store of user identity information that is specific to your AWS account. The limit on identity pools is 60 per account. The keys for SupportedLoginProviders are as follows:   Facebook: graph.facebook.com    Google: accounts.google.com    Amazon: www.amazon.com    Twitter: api.twitter.com    Digits: www.digits.com    You must use AWS Developer credentials to call this API.
+    * Creates a new identity pool. The identity pool is a store of user identity information that is specific to your AWS account. The keys for SupportedLoginProviders are as follows:   Facebook: graph.facebook.com    Google: accounts.google.com    Amazon: www.amazon.com    Twitter: api.twitter.com    Digits: www.digits.com    You must use AWS Developer credentials to call this API.
     */
   def createIdentityPool(params: CreateIdentityPoolInput): Request[IdentityPool, AWSError] = js.native
   def createIdentityPool(

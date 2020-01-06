@@ -10,9 +10,9 @@ The data-first JavaScript router
 | ------------------ | :-------------: |
 | Full name          | navigation |
 | Keywords           | router, navigation |
-| # releases         | 6 |
+| # releases         | 7 |
 | # dependents       | 1 |
-| # downloads        | 7164 |
+| # downloads        | 8712 |
 | # stars            | 0 |
 
 ## Links

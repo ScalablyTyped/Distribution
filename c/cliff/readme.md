@@ -10,9 +10,9 @@ Your CLI formatting friend.
 | ------------------ | :-------------: |
 | Full name          | cliff |
 | Keywords           | cli, logging, tools, winston |
-| # releases         | 1 |
-| # dependents       | 125 |
-| # downloads        | 15570601 |
+| # releases         | 0 |
+| # dependents       | 134 |
+| # downloads        | 15990313 |
 | # stars            | 10 |
 
 ## Links

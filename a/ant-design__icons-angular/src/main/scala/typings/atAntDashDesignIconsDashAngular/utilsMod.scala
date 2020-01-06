@@ -1,6 +1,6 @@
 package typings.atAntDashDesignIconsDashAngular
 
-import typings.atAntDashDesignIconsDashAngular.atAntDashDesignIconsDashAngularStrings.`Leftsquarebracket@ant-designSlashicons-angularRightsquarebracketColon`
+import typings.atAntDashDesignIconsDashAngular.atAntDashDesignIconsDashAngularStrings.`[@ant-designSlashicons-angular]Colon`
 import typings.atAntDashDesignIconsDashAngular.typesMod.IconDefinition
 import typings.atAntDashDesignIconsDashAngular.typesMod.ThemeType
 import typings.std.SVGElement
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ant-design/icons-angular/utils", JSImport.Namespace)
 @js.native
 object utilsMod extends js.Object {
-  val ANT_ICON_ANGULAR_CONSOLE_PREFIX: `Leftsquarebracket@ant-designSlashicons-angularRightsquarebracketColon` = js.native
+  val ANT_ICON_ANGULAR_CONSOLE_PREFIX: `[@ant-designSlashicons-angular]Colon` = js.native
   def alreadyHasAThemeSuffix(name: String): Boolean = js.native
   def cloneSVG(svg: SVGElement): SVGElement = js.native
   def error(message: String): Unit = js.native

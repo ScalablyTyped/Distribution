@@ -10,9 +10,9 @@ uuid creates UUIDs.
 | ------------------ | :-------------: |
 | Full name          | uuidv4 |
 | Keywords           | guid, uuid |
-| # releases         | 7 |
-| # dependents       | 54 |
-| # downloads        | 343087 |
+| # releases         | 10 |
+| # dependents       | 91 |
+| # downloads        | 1120051 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ Array of "void elements" defined by the HTML specification.
 | ------------------ | :-------------: |
 | Full name          | void-elements |
 | Keywords           | html, void, elements |
-| # releases         | 1 |
-| # dependents       | 59 |
-| # downloads        | 75206242 |
+| # releases         | 0 |
+| # dependents       | 67 |
+| # downloads        | 98571518 |
 | # stars            | 3 |
 
 ## Links

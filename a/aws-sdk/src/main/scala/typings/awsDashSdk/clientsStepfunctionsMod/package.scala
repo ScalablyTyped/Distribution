@@ -85,7 +85,17 @@ package object clientsStepfunctionsMod {
   */
   type HistoryEventType = _HistoryEventType | String
   type Identity = String
+  type IncludeExecutionData = Boolean
   type ListExecutionsPageToken = String
+  type LogDestinationList = js.Array[LogDestination]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.ALL
+    - typings.awsDashSdk.awsDashSdkStrings.ERROR
+    - typings.awsDashSdk.awsDashSdkStrings.FATAL
+    - typings.awsDashSdk.awsDashSdkStrings.OFF
+    - java.lang.String
+  */
+  type LogLevel = _LogLevel | String
   type Name = String
   type PageSize = Double
   type PageToken = String
@@ -101,6 +111,12 @@ package object clientsStepfunctionsMod {
     - java.lang.String
   */
   type StateMachineStatus = _StateMachineStatus | String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.STANDARD
+    - typings.awsDashSdk.awsDashSdkStrings.EXPRESS
+    - java.lang.String
+  */
+  type StateMachineType = _StateMachineType | String
   type TagKey = String
   type TagKeyList = js.Array[TagKey]
   type TagList = js.Array[Tag]
@@ -111,7 +127,7 @@ package object clientsStepfunctionsMod {
   type UnsignedInteger = Double
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2016-11-23`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

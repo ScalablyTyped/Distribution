@@ -10,9 +10,9 @@ Provides a way to make requests
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/fetch-http-handler |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 7 |
-| # downloads        | 632 |
+| # releases         | 10 |
+| # dependents       | 184 |
+| # downloads        | 3697 |
 | # stars            | 0 |
 
 ## Links

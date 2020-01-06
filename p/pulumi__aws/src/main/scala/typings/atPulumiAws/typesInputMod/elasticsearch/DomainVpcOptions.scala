@@ -5,17 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DomainVpcOptions extends js.Object {
-  var availabilityZones: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  var availabilityZones: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * List of VPC Security Group IDs to be applied to the Elasticsearch domain endpoints. If omitted, the default Security Group for the VPC will be used.
     */
-  var securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  var securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * List of VPC Subnet IDs for the Elasticsearch domain endpoints to be created in.
     */
-  var subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
-  var vpcId: js.UndefOr[Input[String]] = js.undefined
+  var subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  var vpcId: js.UndefOr[Input[String]] = js.native
 }
 
 object DomainVpcOptions {

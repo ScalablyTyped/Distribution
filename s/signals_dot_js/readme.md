@@ -10,9 +10,9 @@ TypeScript port of AS3 Signals.
 | ------------------ | :-------------: |
 | Full name          | signals.js |
 | Keywords           | Signals, TypeScript |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 6975 |
+| # downloads        | 3681 |
 | # stars            | 0 |
 
 ## Links

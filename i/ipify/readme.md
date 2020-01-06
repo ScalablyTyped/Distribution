@@ -9,10 +9,10 @@ Get your public IP address
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | ipify |
-| Keywords           | ip, ipv4, ipv6, address, public, external, own |
-| # releases         | 2 |
+| Keywords           | ip, ipv6, ipv4, address, public, external, own |
+| # releases         | 3 |
 | # dependents       | 14 |
-| # downloads        | 136746 |
+| # downloads        | 343249 |
 | # stars            | 9 |
 
 ## Links

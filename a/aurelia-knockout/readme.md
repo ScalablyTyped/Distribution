@@ -10,9 +10,9 @@ A Knockout plugin for Aurelia.
 | ------------------ | :-------------: |
 | Full name          | aurelia-knockout |
 | Keywords           | aurelia, binding, databinding, knockout |
-| # releases         | 5 |
+| # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 2877 |
+| # downloads        | 2706 |
 | # stars            | 0 |
 
 ## Links

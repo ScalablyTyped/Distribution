@@ -88,91 +88,92 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ComponentsPropsList extends js.Object {
-  var MuiAppBar: AppBarProps
-  var MuiAvatar: AvatarProps
-  var MuiBackdrop: BackdropProps
-  var MuiBadge: BadgeProps
-  var MuiBottomNavigation: BottomNavigationProps
-  var MuiBottomNavigationAction: BottomNavigationActionProps
-  var MuiButton: ButtonProps
-  var MuiButtonBase: ButtonBaseProps
-  var MuiCard: CardProps
-  var MuiCardActions: CardActionsProps
-  var MuiCardContent: CardContentProps
-  var MuiCardHeader: CardHeaderProps
-  var MuiCardMedia: CardMediaProps
-  var MuiCheckbox: CheckboxProps
-  var MuiChip: ChipProps
-  var MuiCircularProgress: CircularProgressProps
-  var MuiCollapse: CollapseProps
-  var MuiCssBaseline: CssBaselineProps
-  var MuiDialog: DialogProps
-  var MuiDialogActions: DialogActionsProps
-  var MuiDialogContent: DialogContentProps
-  var MuiDialogContentText: DialogContentTextProps
-  var MuiDialogTitle: DialogTitleProps
-  var MuiDivider: DividerProps
-  var MuiDrawer: DrawerProps
-  var MuiExpansionPanel: ExpansionPanelProps
-  var MuiExpansionPanelActions: ExpansionPanelActionsProps
-  var MuiExpansionPanelDetails: ExpansionPanelDetailsProps
-  var MuiExpansionPanelSummary: ExpansionPanelSummaryProps
-  var MuiFormControl: FormControlProps
-  var MuiFormControlLabel: FormControlLabelProps
-  var MuiFormGroup: FormGroupProps
-  var MuiFormHelperText: FormHelperTextProps
-  var MuiFormLabel: FormLabelProps
-  var MuiGrid: GridProps
-  var MuiGridList: GridListProps
-  var MuiGridListTile: GridListTileProps
-  var MuiGridListTileBar: GridListTileBarProps
-  var MuiIcon: IconProps
-  var MuiIconButton: IconButtonProps
-  var MuiInput: InputProps
-  var MuiInputAdornment: InputAdornmentProps
-  var MuiInputLabel: InputLabelProps
-  var MuiLinearProgress: LinearProgressProps
-  var MuiList: ListProps
-  var MuiListItem: ListItemProps
-  var MuiListItemAvatar: ListItemAvatarProps
-  var MuiListItemIcon: ListItemIconProps
-  var MuiListItemSecondaryAction: ListItemSecondaryActionProps
-  var MuiListItemText: ListItemTextProps
-  var MuiListSubheader: ListSubheaderProps
-  var MuiMenu: MenuProps
-  var MuiMenuItem: MenuItemProps
-  var MuiMobileStepper: MobileStepperProps
-  var MuiModal: ModalProps
-  var MuiNativeSelect: NativeSelectProps
-  var MuiPaper: PaperProps
-  var MuiPopover: PopoverProps
-  var MuiRadio: RadioProps
-  var MuiSelect: SelectProps
-  var MuiSnackbar: SnackbarProps
-  var MuiSnackbarContent: SnackbarContentProps
-  var MuiStep: StepProps
-  var MuiStepButton: StepButtonProps
-  var MuiStepConnector: StepConnectorProps
-  var MuiStepContent: StepContentProps
-  var MuiStepIcon: StepIconProps
-  var MuiStepLabel: StepLabelProps
-  var MuiStepper: StepperProps
-  var MuiSvgIcon: SvgIconProps
-  var MuiSwitch: SwitchProps
-  var MuiSwitchBase: SwitchBaseProps
-  var MuiTab: TabProps
-  var MuiTable: TableProps
-  var MuiTableCell: TableCellProps
-  var MuiTablePagination: TablePaginationProps
-  var MuiTableRow: TableRowProps
-  var MuiTableSortLabel: TableSortLabelProps
-  var MuiTabs: TabsProps
-  var MuiToolbar: ToolbarProps
-  var MuiTooltip: TooltipProps
-  var MuiTouchRipple: TouchRippleProps
-  var MuiTypography: TypographyProps
-  var MuiWithWidth: WithWidthOptions
+  var MuiAppBar: AppBarProps = js.native
+  var MuiAvatar: AvatarProps = js.native
+  var MuiBackdrop: BackdropProps = js.native
+  var MuiBadge: BadgeProps = js.native
+  var MuiBottomNavigation: BottomNavigationProps = js.native
+  var MuiBottomNavigationAction: BottomNavigationActionProps = js.native
+  var MuiButton: ButtonProps = js.native
+  var MuiButtonBase: ButtonBaseProps = js.native
+  var MuiCard: CardProps = js.native
+  var MuiCardActions: CardActionsProps = js.native
+  var MuiCardContent: CardContentProps = js.native
+  var MuiCardHeader: CardHeaderProps = js.native
+  var MuiCardMedia: CardMediaProps = js.native
+  var MuiCheckbox: CheckboxProps = js.native
+  var MuiChip: ChipProps = js.native
+  var MuiCircularProgress: CircularProgressProps = js.native
+  var MuiCollapse: CollapseProps = js.native
+  var MuiCssBaseline: CssBaselineProps = js.native
+  var MuiDialog: DialogProps = js.native
+  var MuiDialogActions: DialogActionsProps = js.native
+  var MuiDialogContent: DialogContentProps = js.native
+  var MuiDialogContentText: DialogContentTextProps = js.native
+  var MuiDialogTitle: DialogTitleProps = js.native
+  var MuiDivider: DividerProps = js.native
+  var MuiDrawer: DrawerProps = js.native
+  var MuiExpansionPanel: ExpansionPanelProps = js.native
+  var MuiExpansionPanelActions: ExpansionPanelActionsProps = js.native
+  var MuiExpansionPanelDetails: ExpansionPanelDetailsProps = js.native
+  var MuiExpansionPanelSummary: ExpansionPanelSummaryProps = js.native
+  var MuiFormControl: FormControlProps = js.native
+  var MuiFormControlLabel: FormControlLabelProps = js.native
+  var MuiFormGroup: FormGroupProps = js.native
+  var MuiFormHelperText: FormHelperTextProps = js.native
+  var MuiFormLabel: FormLabelProps = js.native
+  var MuiGrid: GridProps = js.native
+  var MuiGridList: GridListProps = js.native
+  var MuiGridListTile: GridListTileProps = js.native
+  var MuiGridListTileBar: GridListTileBarProps = js.native
+  var MuiIcon: IconProps = js.native
+  var MuiIconButton: IconButtonProps = js.native
+  var MuiInput: InputProps = js.native
+  var MuiInputAdornment: InputAdornmentProps = js.native
+  var MuiInputLabel: InputLabelProps = js.native
+  var MuiLinearProgress: LinearProgressProps = js.native
+  var MuiList: ListProps = js.native
+  var MuiListItem: ListItemProps = js.native
+  var MuiListItemAvatar: ListItemAvatarProps = js.native
+  var MuiListItemIcon: ListItemIconProps = js.native
+  var MuiListItemSecondaryAction: ListItemSecondaryActionProps = js.native
+  var MuiListItemText: ListItemTextProps = js.native
+  var MuiListSubheader: ListSubheaderProps = js.native
+  var MuiMenu: MenuProps = js.native
+  var MuiMenuItem: MenuItemProps = js.native
+  var MuiMobileStepper: MobileStepperProps = js.native
+  var MuiModal: ModalProps = js.native
+  var MuiNativeSelect: NativeSelectProps = js.native
+  var MuiPaper: PaperProps = js.native
+  var MuiPopover: PopoverProps = js.native
+  var MuiRadio: RadioProps = js.native
+  var MuiSelect: SelectProps = js.native
+  var MuiSnackbar: SnackbarProps = js.native
+  var MuiSnackbarContent: SnackbarContentProps = js.native
+  var MuiStep: StepProps = js.native
+  var MuiStepButton: StepButtonProps = js.native
+  var MuiStepConnector: StepConnectorProps = js.native
+  var MuiStepContent: StepContentProps = js.native
+  var MuiStepIcon: StepIconProps = js.native
+  var MuiStepLabel: StepLabelProps = js.native
+  var MuiStepper: StepperProps = js.native
+  var MuiSvgIcon: SvgIconProps = js.native
+  var MuiSwitch: SwitchProps = js.native
+  var MuiSwitchBase: SwitchBaseProps = js.native
+  var MuiTab: TabProps = js.native
+  var MuiTable: TableProps = js.native
+  var MuiTableCell: TableCellProps = js.native
+  var MuiTablePagination: TablePaginationProps = js.native
+  var MuiTableRow: TableRowProps = js.native
+  var MuiTableSortLabel: TableSortLabelProps = js.native
+  var MuiTabs: TabsProps = js.native
+  var MuiToolbar: ToolbarProps = js.native
+  var MuiTooltip: TooltipProps = js.native
+  var MuiTouchRipple: TouchRippleProps = js.native
+  var MuiTypography: TypographyProps = js.native
+  var MuiWithWidth: WithWidthOptions = js.native
 }
 
 object ComponentsPropsList {

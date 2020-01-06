@@ -11,8 +11,8 @@ get date and/or time by pattern
 | Full name          | easydate |
 | Keywords           | datetime, dateformat, formatting, date, time |
 | # releases         | 1 |
-| # dependents       | 4 |
-| # downloads        | 79123 |
+| # dependents       | 3 |
+| # downloads        | 65192 |
 | # stars            | 4 |
 
 ## Links

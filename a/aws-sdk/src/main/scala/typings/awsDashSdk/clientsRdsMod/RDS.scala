@@ -126,12 +126,12 @@ trait RDS extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CopyDBClusterParameterGroupResult, Unit]
   ): Request[CopyDBClusterParameterGroupResult, AWSError] = js.native
   /**
-    * Copies a snapshot of a DB cluster. To copy a DB cluster snapshot from a shared manual DB cluster snapshot, SourceDBClusterSnapshotIdentifier must be the Amazon Resource Name (ARN) of the shared DB cluster snapshot. You can copy an encrypted DB cluster snapshot from another AWS Region. In that case, the AWS Region where you call the CopyDBClusterSnapshot action is the destination AWS Region for the encrypted DB cluster snapshot to be copied to. To copy an encrypted DB cluster snapshot from another AWS Region, you must provide the following values:    KmsKeyId - The AWS Key Management System (AWS KMS) key identifier for the key to use to encrypt the copy of the DB cluster snapshot in the destination AWS Region.    PreSignedUrl - A URL that contains a Signature Version 4 signed request for the CopyDBClusterSnapshot action to be called in the source AWS Region where the DB cluster snapshot is copied from. The pre-signed URL must be a valid request for the CopyDBClusterSnapshot API action that can be executed in the source AWS Region that contains the encrypted DB cluster snapshot to be copied. The pre-signed URL request must contain the following parameter values:    KmsKeyId - The KMS key identifier for the key to use to encrypt the copy of the DB cluster snapshot in the destination AWS Region. This is the same identifier for both the CopyDBClusterSnapshot action that is called in the destination AWS Region, and the action contained in the pre-signed URL.    DestinationRegion - The name of the AWS Region that the DB cluster snapshot will be created in.    SourceDBClusterSnapshotIdentifier - The DB cluster snapshot identifier for the encrypted DB cluster snapshot to be copied. This identifier must be in the Amazon Resource Name (ARN) format for the source AWS Region. For example, if you are copying an encrypted DB cluster snapshot from the us-west-2 AWS Region, then your SourceDBClusterSnapshotIdentifier looks like the following example: arn:aws:rds:us-west-2:123456789012:cluster-snapshot:aurora-cluster1-snapshot-20161115.   To learn how to generate a Signature Version 4 signed request, see  Authenticating Requests: Using Query Parameters (AWS Signature Version 4) and  Signature Version 4 Signing Process.    TargetDBClusterSnapshotIdentifier - The identifier for the new copy of the DB cluster snapshot in the destination AWS Region.    SourceDBClusterSnapshotIdentifier - The DB cluster snapshot identifier for the encrypted DB cluster snapshot to be copied. This identifier must be in the ARN format for the source AWS Region and is the same value as the SourceDBClusterSnapshotIdentifier in the pre-signed URL.    To cancel the copy operation once it is in progress, delete the target DB cluster snapshot identified by TargetDBClusterSnapshotIdentifier while that DB cluster snapshot is in "copying" status. For more information on copying encrypted DB cluster snapshots from one AWS Region to another, see  Copying a Snapshot in the Amazon Aurora User Guide.  For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
+    * Copies a snapshot of a DB cluster. To copy a DB cluster snapshot from a shared manual DB cluster snapshot, SourceDBClusterSnapshotIdentifier must be the Amazon Resource Name (ARN) of the shared DB cluster snapshot. You can copy an encrypted DB cluster snapshot from another AWS Region. In that case, the AWS Region where you call the CopyDBClusterSnapshot action is the destination AWS Region for the encrypted DB cluster snapshot to be copied to. To copy an encrypted DB cluster snapshot from another AWS Region, you must provide the following values:    KmsKeyId - The AWS Key Management System (AWS KMS) key identifier for the key to use to encrypt the copy of the DB cluster snapshot in the destination AWS Region.    PreSignedUrl - A URL that contains a Signature Version 4 signed request for the CopyDBClusterSnapshot action to be called in the source AWS Region where the DB cluster snapshot is copied from. The pre-signed URL must be a valid request for the CopyDBClusterSnapshot API action that can be executed in the source AWS Region that contains the encrypted DB cluster snapshot to be copied. The pre-signed URL request must contain the following parameter values:    KmsKeyId - The KMS key identifier for the key to use to encrypt the copy of the DB cluster snapshot in the destination AWS Region. This is the same identifier for both the CopyDBClusterSnapshot action that is called in the destination AWS Region, and the action contained in the pre-signed URL.    DestinationRegion - The name of the AWS Region that the DB cluster snapshot will be created in.    SourceDBClusterSnapshotIdentifier - The DB cluster snapshot identifier for the encrypted DB cluster snapshot to be copied. This identifier must be in the Amazon Resource Name (ARN) format for the source AWS Region. For example, if you are copying an encrypted DB cluster snapshot from the us-west-2 AWS Region, then your SourceDBClusterSnapshotIdentifier looks like the following example: arn:aws:rds:us-west-2:123456789012:cluster-snapshot:aurora-cluster1-snapshot-20161115.   To learn how to generate a Signature Version 4 signed request, see  Authenticating Requests: Using Query Parameters (AWS Signature Version 4) and  Signature Version 4 Signing Process.  If you are using an AWS SDK tool or the AWS CLI, you can specify SourceRegion (or --source-region for the AWS CLI) instead of specifying PreSignedUrl manually. Specifying SourceRegion autogenerates a pre-signed URL that is a valid request for the operation that can be executed in the source AWS Region.     TargetDBClusterSnapshotIdentifier - The identifier for the new copy of the DB cluster snapshot in the destination AWS Region.    SourceDBClusterSnapshotIdentifier - The DB cluster snapshot identifier for the encrypted DB cluster snapshot to be copied. This identifier must be in the ARN format for the source AWS Region and is the same value as the SourceDBClusterSnapshotIdentifier in the pre-signed URL.    To cancel the copy operation once it is in progress, delete the target DB cluster snapshot identified by TargetDBClusterSnapshotIdentifier while that DB cluster snapshot is in "copying" status. For more information on copying encrypted DB cluster snapshots from one AWS Region to another, see  Copying a Snapshot in the Amazon Aurora User Guide.  For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def copyDBClusterSnapshot(): Request[CopyDBClusterSnapshotResult, AWSError] = js.native
   def copyDBClusterSnapshot(callback: js.Function2[/* err */ AWSError, /* data */ CopyDBClusterSnapshotResult, Unit]): Request[CopyDBClusterSnapshotResult, AWSError] = js.native
   /**
-    * Copies a snapshot of a DB cluster. To copy a DB cluster snapshot from a shared manual DB cluster snapshot, SourceDBClusterSnapshotIdentifier must be the Amazon Resource Name (ARN) of the shared DB cluster snapshot. You can copy an encrypted DB cluster snapshot from another AWS Region. In that case, the AWS Region where you call the CopyDBClusterSnapshot action is the destination AWS Region for the encrypted DB cluster snapshot to be copied to. To copy an encrypted DB cluster snapshot from another AWS Region, you must provide the following values:    KmsKeyId - The AWS Key Management System (AWS KMS) key identifier for the key to use to encrypt the copy of the DB cluster snapshot in the destination AWS Region.    PreSignedUrl - A URL that contains a Signature Version 4 signed request for the CopyDBClusterSnapshot action to be called in the source AWS Region where the DB cluster snapshot is copied from. The pre-signed URL must be a valid request for the CopyDBClusterSnapshot API action that can be executed in the source AWS Region that contains the encrypted DB cluster snapshot to be copied. The pre-signed URL request must contain the following parameter values:    KmsKeyId - The KMS key identifier for the key to use to encrypt the copy of the DB cluster snapshot in the destination AWS Region. This is the same identifier for both the CopyDBClusterSnapshot action that is called in the destination AWS Region, and the action contained in the pre-signed URL.    DestinationRegion - The name of the AWS Region that the DB cluster snapshot will be created in.    SourceDBClusterSnapshotIdentifier - The DB cluster snapshot identifier for the encrypted DB cluster snapshot to be copied. This identifier must be in the Amazon Resource Name (ARN) format for the source AWS Region. For example, if you are copying an encrypted DB cluster snapshot from the us-west-2 AWS Region, then your SourceDBClusterSnapshotIdentifier looks like the following example: arn:aws:rds:us-west-2:123456789012:cluster-snapshot:aurora-cluster1-snapshot-20161115.   To learn how to generate a Signature Version 4 signed request, see  Authenticating Requests: Using Query Parameters (AWS Signature Version 4) and  Signature Version 4 Signing Process.    TargetDBClusterSnapshotIdentifier - The identifier for the new copy of the DB cluster snapshot in the destination AWS Region.    SourceDBClusterSnapshotIdentifier - The DB cluster snapshot identifier for the encrypted DB cluster snapshot to be copied. This identifier must be in the ARN format for the source AWS Region and is the same value as the SourceDBClusterSnapshotIdentifier in the pre-signed URL.    To cancel the copy operation once it is in progress, delete the target DB cluster snapshot identified by TargetDBClusterSnapshotIdentifier while that DB cluster snapshot is in "copying" status. For more information on copying encrypted DB cluster snapshots from one AWS Region to another, see  Copying a Snapshot in the Amazon Aurora User Guide.  For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
+    * Copies a snapshot of a DB cluster. To copy a DB cluster snapshot from a shared manual DB cluster snapshot, SourceDBClusterSnapshotIdentifier must be the Amazon Resource Name (ARN) of the shared DB cluster snapshot. You can copy an encrypted DB cluster snapshot from another AWS Region. In that case, the AWS Region where you call the CopyDBClusterSnapshot action is the destination AWS Region for the encrypted DB cluster snapshot to be copied to. To copy an encrypted DB cluster snapshot from another AWS Region, you must provide the following values:    KmsKeyId - The AWS Key Management System (AWS KMS) key identifier for the key to use to encrypt the copy of the DB cluster snapshot in the destination AWS Region.    PreSignedUrl - A URL that contains a Signature Version 4 signed request for the CopyDBClusterSnapshot action to be called in the source AWS Region where the DB cluster snapshot is copied from. The pre-signed URL must be a valid request for the CopyDBClusterSnapshot API action that can be executed in the source AWS Region that contains the encrypted DB cluster snapshot to be copied. The pre-signed URL request must contain the following parameter values:    KmsKeyId - The KMS key identifier for the key to use to encrypt the copy of the DB cluster snapshot in the destination AWS Region. This is the same identifier for both the CopyDBClusterSnapshot action that is called in the destination AWS Region, and the action contained in the pre-signed URL.    DestinationRegion - The name of the AWS Region that the DB cluster snapshot will be created in.    SourceDBClusterSnapshotIdentifier - The DB cluster snapshot identifier for the encrypted DB cluster snapshot to be copied. This identifier must be in the Amazon Resource Name (ARN) format for the source AWS Region. For example, if you are copying an encrypted DB cluster snapshot from the us-west-2 AWS Region, then your SourceDBClusterSnapshotIdentifier looks like the following example: arn:aws:rds:us-west-2:123456789012:cluster-snapshot:aurora-cluster1-snapshot-20161115.   To learn how to generate a Signature Version 4 signed request, see  Authenticating Requests: Using Query Parameters (AWS Signature Version 4) and  Signature Version 4 Signing Process.  If you are using an AWS SDK tool or the AWS CLI, you can specify SourceRegion (or --source-region for the AWS CLI) instead of specifying PreSignedUrl manually. Specifying SourceRegion autogenerates a pre-signed URL that is a valid request for the operation that can be executed in the source AWS Region.     TargetDBClusterSnapshotIdentifier - The identifier for the new copy of the DB cluster snapshot in the destination AWS Region.    SourceDBClusterSnapshotIdentifier - The DB cluster snapshot identifier for the encrypted DB cluster snapshot to be copied. This identifier must be in the ARN format for the source AWS Region and is the same value as the SourceDBClusterSnapshotIdentifier in the pre-signed URL.    To cancel the copy operation once it is in progress, delete the target DB cluster snapshot identified by TargetDBClusterSnapshotIdentifier while that DB cluster snapshot is in "copying" status. For more information on copying encrypted DB cluster snapshots from one AWS Region to another, see  Copying a Snapshot in the Amazon Aurora User Guide.  For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def copyDBClusterSnapshot(params: CopyDBClusterSnapshotMessage): Request[CopyDBClusterSnapshotResult, AWSError] = js.native
   def copyDBClusterSnapshot(
@@ -177,6 +177,19 @@ trait RDS extends Service {
     params: CopyOptionGroupMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ CopyOptionGroupResult, Unit]
   ): Request[CopyOptionGroupResult, AWSError] = js.native
+  /**
+    * Creates a custom Availability Zone (AZ). A custom AZ is an on-premises AZ that is integrated with a VMware vSphere cluster. For more information about RDS on VMware, see the  RDS on VMware User Guide.  
+    */
+  def createCustomAvailabilityZone(): Request[CreateCustomAvailabilityZoneResult, AWSError] = js.native
+  def createCustomAvailabilityZone(callback: js.Function2[/* err */ AWSError, /* data */ CreateCustomAvailabilityZoneResult, Unit]): Request[CreateCustomAvailabilityZoneResult, AWSError] = js.native
+  /**
+    * Creates a custom Availability Zone (AZ). A custom AZ is an on-premises AZ that is integrated with a VMware vSphere cluster. For more information about RDS on VMware, see the  RDS on VMware User Guide.  
+    */
+  def createCustomAvailabilityZone(params: CreateCustomAvailabilityZoneMessage): Request[CreateCustomAvailabilityZoneResult, AWSError] = js.native
+  def createCustomAvailabilityZone(
+    params: CreateCustomAvailabilityZoneMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateCustomAvailabilityZoneResult, Unit]
+  ): Request[CreateCustomAvailabilityZoneResult, AWSError] = js.native
   /**
     * Creates a new Amazon Aurora DB cluster. You can use the ReplicationSourceIdentifier parameter to create the DB cluster as a Read Replica of another DB cluster or Amazon RDS MySQL DB instance. For cross-region replication where the DB cluster identified by ReplicationSourceIdentifier is encrypted, you must also specify the PreSignedUrl parameter. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
@@ -269,6 +282,19 @@ trait RDS extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateDBParameterGroupResult, Unit]
   ): Request[CreateDBParameterGroupResult, AWSError] = js.native
   /**
+    *  This is prerelease documentation for the RDS Database Proxy feature in preview release. It is subject to change.  Creates a new DB proxy.
+    */
+  def createDBProxy(): Request[CreateDBProxyResponse, AWSError] = js.native
+  def createDBProxy(callback: js.Function2[/* err */ AWSError, /* data */ CreateDBProxyResponse, Unit]): Request[CreateDBProxyResponse, AWSError] = js.native
+  /**
+    *  This is prerelease documentation for the RDS Database Proxy feature in preview release. It is subject to change.  Creates a new DB proxy.
+    */
+  def createDBProxy(params: CreateDBProxyRequest): Request[CreateDBProxyResponse, AWSError] = js.native
+  def createDBProxy(
+    params: CreateDBProxyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateDBProxyResponse, Unit]
+  ): Request[CreateDBProxyResponse, AWSError] = js.native
+  /**
     * Creates a new DB security group. DB security groups control access to a DB instance.  A DB security group controls access to EC2-Classic DB instances that are not in a VPC. 
     */
   def createDBSecurityGroup(): Request[CreateDBSecurityGroupResult, AWSError] = js.native
@@ -308,12 +334,12 @@ trait RDS extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateDBSubnetGroupResult, Unit]
   ): Request[CreateDBSubnetGroupResult, AWSError] = js.native
   /**
-    * Creates an RDS event notification subscription. This action requires a topic ARN (Amazon Resource Name) created by either the RDS console, the SNS console, or the SNS API. To obtain an ARN with SNS, you must create a topic in Amazon SNS and subscribe to the topic. The ARN is displayed in the SNS console. You can specify the type of source (SourceType) you want to be notified of, provide a list of RDS sources (SourceIds) that triggers the events, and provide a list of event categories (EventCategories) for events you want to be notified of. For example, you can specify SourceType = db-instance, SourceIds = mydbinstance1, mydbinstance2 and EventCategories = Availability, Backup. If you specify both the SourceType and SourceIds, such as SourceType = db-instance and SourceIdentifier = myDBInstance1, you are notified of all the db-instance events for the specified source. If you specify a SourceType but do not specify a SourceIdentifier, you receive notice of the events for that source type for all your RDS sources. If you do not specify either the SourceType nor the SourceIdentifier, you are notified of events generated from all RDS sources belonging to your customer account.
+    * Creates an RDS event notification subscription. This action requires a topic ARN (Amazon Resource Name) created by either the RDS console, the SNS console, or the SNS API. To obtain an ARN with SNS, you must create a topic in Amazon SNS and subscribe to the topic. The ARN is displayed in the SNS console. You can specify the type of source (SourceType) you want to be notified of, provide a list of RDS sources (SourceIds) that triggers the events, and provide a list of event categories (EventCategories) for events you want to be notified of. For example, you can specify SourceType = db-instance, SourceIds = mydbinstance1, mydbinstance2 and EventCategories = Availability, Backup. If you specify both the SourceType and SourceIds, such as SourceType = db-instance and SourceIdentifier = myDBInstance1, you are notified of all the db-instance events for the specified source. If you specify a SourceType but do not specify a SourceIdentifier, you receive notice of the events for that source type for all your RDS sources. If you do not specify either the SourceType nor the SourceIdentifier, you are notified of events generated from all RDS sources belonging to your customer account.  RDS event notification is only available for unencrypted SNS topics. If you specify an encrypted SNS topic, event notifications aren't sent for the topic. 
     */
   def createEventSubscription(): Request[CreateEventSubscriptionResult, AWSError] = js.native
   def createEventSubscription(callback: js.Function2[/* err */ AWSError, /* data */ CreateEventSubscriptionResult, Unit]): Request[CreateEventSubscriptionResult, AWSError] = js.native
   /**
-    * Creates an RDS event notification subscription. This action requires a topic ARN (Amazon Resource Name) created by either the RDS console, the SNS console, or the SNS API. To obtain an ARN with SNS, you must create a topic in Amazon SNS and subscribe to the topic. The ARN is displayed in the SNS console. You can specify the type of source (SourceType) you want to be notified of, provide a list of RDS sources (SourceIds) that triggers the events, and provide a list of event categories (EventCategories) for events you want to be notified of. For example, you can specify SourceType = db-instance, SourceIds = mydbinstance1, mydbinstance2 and EventCategories = Availability, Backup. If you specify both the SourceType and SourceIds, such as SourceType = db-instance and SourceIdentifier = myDBInstance1, you are notified of all the db-instance events for the specified source. If you specify a SourceType but do not specify a SourceIdentifier, you receive notice of the events for that source type for all your RDS sources. If you do not specify either the SourceType nor the SourceIdentifier, you are notified of events generated from all RDS sources belonging to your customer account.
+    * Creates an RDS event notification subscription. This action requires a topic ARN (Amazon Resource Name) created by either the RDS console, the SNS console, or the SNS API. To obtain an ARN with SNS, you must create a topic in Amazon SNS and subscribe to the topic. The ARN is displayed in the SNS console. You can specify the type of source (SourceType) you want to be notified of, provide a list of RDS sources (SourceIds) that triggers the events, and provide a list of event categories (EventCategories) for events you want to be notified of. For example, you can specify SourceType = db-instance, SourceIds = mydbinstance1, mydbinstance2 and EventCategories = Availability, Backup. If you specify both the SourceType and SourceIds, such as SourceType = db-instance and SourceIdentifier = myDBInstance1, you are notified of all the db-instance events for the specified source. If you specify a SourceType but do not specify a SourceIdentifier, you receive notice of the events for that source type for all your RDS sources. If you do not specify either the SourceType nor the SourceIdentifier, you are notified of events generated from all RDS sources belonging to your customer account.  RDS event notification is only available for unencrypted SNS topics. If you specify an encrypted SNS topic, event notifications aren't sent for the topic. 
     */
   def createEventSubscription(params: CreateEventSubscriptionMessage): Request[CreateEventSubscriptionResult, AWSError] = js.native
   def createEventSubscription(
@@ -346,6 +372,19 @@ trait RDS extends Service {
     params: CreateOptionGroupMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateOptionGroupResult, Unit]
   ): Request[CreateOptionGroupResult, AWSError] = js.native
+  /**
+    * Deletes a custom Availability Zone (AZ). A custom AZ is an on-premises AZ that is integrated with a VMware vSphere cluster. For more information about RDS on VMware, see the  RDS on VMware User Guide.  
+    */
+  def deleteCustomAvailabilityZone(): Request[DeleteCustomAvailabilityZoneResult, AWSError] = js.native
+  def deleteCustomAvailabilityZone(callback: js.Function2[/* err */ AWSError, /* data */ DeleteCustomAvailabilityZoneResult, Unit]): Request[DeleteCustomAvailabilityZoneResult, AWSError] = js.native
+  /**
+    * Deletes a custom Availability Zone (AZ). A custom AZ is an on-premises AZ that is integrated with a VMware vSphere cluster. For more information about RDS on VMware, see the  RDS on VMware User Guide.  
+    */
+  def deleteCustomAvailabilityZone(params: DeleteCustomAvailabilityZoneMessage): Request[DeleteCustomAvailabilityZoneResult, AWSError] = js.native
+  def deleteCustomAvailabilityZone(
+    params: DeleteCustomAvailabilityZoneMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteCustomAvailabilityZoneResult, Unit]
+  ): Request[DeleteCustomAvailabilityZoneResult, AWSError] = js.native
   /**
     * The DeleteDBCluster action deletes a previously provisioned DB cluster. When you delete a DB cluster, all automated backups for that DB cluster are deleted and can't be recovered. Manual DB cluster snapshots of the specified DB cluster are not deleted.  For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
@@ -438,6 +477,19 @@ trait RDS extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
+    *  This is prerelease documentation for the RDS Database Proxy feature in preview release. It is subject to change.  Deletes an existing proxy.
+    */
+  def deleteDBProxy(): Request[DeleteDBProxyResponse, AWSError] = js.native
+  def deleteDBProxy(callback: js.Function2[/* err */ AWSError, /* data */ DeleteDBProxyResponse, Unit]): Request[DeleteDBProxyResponse, AWSError] = js.native
+  /**
+    *  This is prerelease documentation for the RDS Database Proxy feature in preview release. It is subject to change.  Deletes an existing proxy.
+    */
+  def deleteDBProxy(params: DeleteDBProxyRequest): Request[DeleteDBProxyResponse, AWSError] = js.native
+  def deleteDBProxy(
+    params: DeleteDBProxyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteDBProxyResponse, Unit]
+  ): Request[DeleteDBProxyResponse, AWSError] = js.native
+  /**
     * Deletes a DB security group.  The specified DB security group must not be associated with any DB instances. 
     */
   def deleteDBSecurityGroup(): Request[js.Object, AWSError] = js.native
@@ -503,6 +555,19 @@ trait RDS extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteGlobalClusterResult, Unit]
   ): Request[DeleteGlobalClusterResult, AWSError] = js.native
   /**
+    * Deletes the installation medium for a DB engine that requires an on-premises customer provided license, such as Microsoft SQL Server.
+    */
+  def deleteInstallationMedia(): Request[InstallationMedia, AWSError] = js.native
+  def deleteInstallationMedia(callback: js.Function2[/* err */ AWSError, /* data */ InstallationMedia, Unit]): Request[InstallationMedia, AWSError] = js.native
+  /**
+    * Deletes the installation medium for a DB engine that requires an on-premises customer provided license, such as Microsoft SQL Server.
+    */
+  def deleteInstallationMedia(params: DeleteInstallationMediaMessage): Request[InstallationMedia, AWSError] = js.native
+  def deleteInstallationMedia(
+    params: DeleteInstallationMediaMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ InstallationMedia, Unit]
+  ): Request[InstallationMedia, AWSError] = js.native
+  /**
     * Deletes an existing option group.
     */
   def deleteOptionGroup(): Request[js.Object, AWSError] = js.native
@@ -515,6 +580,19 @@ trait RDS extends Service {
     params: DeleteOptionGroupMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  /**
+    *  This is prerelease documentation for the RDS Database Proxy feature in preview release. It is subject to change.  Remove the association between one or more DBProxyTarget data structures and a DBProxyTargetGroup.
+    */
+  def deregisterDBProxyTargets(): Request[DeregisterDBProxyTargetsResponse, AWSError] = js.native
+  def deregisterDBProxyTargets(callback: js.Function2[/* err */ AWSError, /* data */ DeregisterDBProxyTargetsResponse, Unit]): Request[DeregisterDBProxyTargetsResponse, AWSError] = js.native
+  /**
+    *  This is prerelease documentation for the RDS Database Proxy feature in preview release. It is subject to change.  Remove the association between one or more DBProxyTarget data structures and a DBProxyTargetGroup.
+    */
+  def deregisterDBProxyTargets(params: DeregisterDBProxyTargetsRequest): Request[DeregisterDBProxyTargetsResponse, AWSError] = js.native
+  def deregisterDBProxyTargets(
+    params: DeregisterDBProxyTargetsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeregisterDBProxyTargetsResponse, Unit]
+  ): Request[DeregisterDBProxyTargetsResponse, AWSError] = js.native
   /**
     * Lists all of the attributes for a customer account. The attributes include Amazon RDS quotas for the account, such as the number of DB instances allowed. The description for a quota includes the quota name, current usage toward that quota, and the quota's maximum value. This command doesn't take any parameters.
     */
@@ -541,6 +619,19 @@ trait RDS extends Service {
     params: DescribeCertificatesMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ CertificateMessage, Unit]
   ): Request[CertificateMessage, AWSError] = js.native
+  /**
+    * Returns information about custom Availability Zones (AZs). A custom AZ is an on-premises AZ that is integrated with a VMware vSphere cluster. For more information about RDS on VMware, see the  RDS on VMware User Guide.  
+    */
+  def describeCustomAvailabilityZones(): Request[CustomAvailabilityZoneMessage, AWSError] = js.native
+  def describeCustomAvailabilityZones(callback: js.Function2[/* err */ AWSError, /* data */ CustomAvailabilityZoneMessage, Unit]): Request[CustomAvailabilityZoneMessage, AWSError] = js.native
+  /**
+    * Returns information about custom Availability Zones (AZs). A custom AZ is an on-premises AZ that is integrated with a VMware vSphere cluster. For more information about RDS on VMware, see the  RDS on VMware User Guide.  
+    */
+  def describeCustomAvailabilityZones(params: DescribeCustomAvailabilityZonesMessage): Request[CustomAvailabilityZoneMessage, AWSError] = js.native
+  def describeCustomAvailabilityZones(
+    params: DescribeCustomAvailabilityZonesMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ CustomAvailabilityZoneMessage, Unit]
+  ): Request[CustomAvailabilityZoneMessage, AWSError] = js.native
   /**
     * Returns information about backtracks for a DB cluster. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
@@ -713,6 +804,45 @@ trait RDS extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DBParameterGroupDetails, Unit]
   ): Request[DBParameterGroupDetails, AWSError] = js.native
   /**
+    *  This is prerelease documentation for the RDS Database Proxy feature in preview release. It is subject to change.  Returns information about DB proxies.
+    */
+  def describeDBProxies(): Request[DescribeDBProxiesResponse, AWSError] = js.native
+  def describeDBProxies(callback: js.Function2[/* err */ AWSError, /* data */ DescribeDBProxiesResponse, Unit]): Request[DescribeDBProxiesResponse, AWSError] = js.native
+  /**
+    *  This is prerelease documentation for the RDS Database Proxy feature in preview release. It is subject to change.  Returns information about DB proxies.
+    */
+  def describeDBProxies(params: DescribeDBProxiesRequest): Request[DescribeDBProxiesResponse, AWSError] = js.native
+  def describeDBProxies(
+    params: DescribeDBProxiesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeDBProxiesResponse, Unit]
+  ): Request[DescribeDBProxiesResponse, AWSError] = js.native
+  /**
+    *  This is prerelease documentation for the RDS Database Proxy feature in preview release. It is subject to change.  Returns information about DB proxy target groups, represented by DBProxyTargetGroup data structures.
+    */
+  def describeDBProxyTargetGroups(): Request[DescribeDBProxyTargetGroupsResponse, AWSError] = js.native
+  def describeDBProxyTargetGroups(callback: js.Function2[/* err */ AWSError, /* data */ DescribeDBProxyTargetGroupsResponse, Unit]): Request[DescribeDBProxyTargetGroupsResponse, AWSError] = js.native
+  /**
+    *  This is prerelease documentation for the RDS Database Proxy feature in preview release. It is subject to change.  Returns information about DB proxy target groups, represented by DBProxyTargetGroup data structures.
+    */
+  def describeDBProxyTargetGroups(params: DescribeDBProxyTargetGroupsRequest): Request[DescribeDBProxyTargetGroupsResponse, AWSError] = js.native
+  def describeDBProxyTargetGroups(
+    params: DescribeDBProxyTargetGroupsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeDBProxyTargetGroupsResponse, Unit]
+  ): Request[DescribeDBProxyTargetGroupsResponse, AWSError] = js.native
+  /**
+    *  This is prerelease documentation for the RDS Database Proxy feature in preview release. It is subject to change.  Returns information about DBProxyTarget objects. This API supports pagination.
+    */
+  def describeDBProxyTargets(): Request[DescribeDBProxyTargetsResponse, AWSError] = js.native
+  def describeDBProxyTargets(callback: js.Function2[/* err */ AWSError, /* data */ DescribeDBProxyTargetsResponse, Unit]): Request[DescribeDBProxyTargetsResponse, AWSError] = js.native
+  /**
+    *  This is prerelease documentation for the RDS Database Proxy feature in preview release. It is subject to change.  Returns information about DBProxyTarget objects. This API supports pagination.
+    */
+  def describeDBProxyTargets(params: DescribeDBProxyTargetsRequest): Request[DescribeDBProxyTargetsResponse, AWSError] = js.native
+  def describeDBProxyTargets(
+    params: DescribeDBProxyTargetsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeDBProxyTargetsResponse, Unit]
+  ): Request[DescribeDBProxyTargetsResponse, AWSError] = js.native
+  /**
     *  Returns a list of DBSecurityGroup descriptions. If a DBSecurityGroupName is specified, the list will contain only the descriptions of the specified DB security group. 
     */
   def describeDBSecurityGroups(): Request[DBSecurityGroupMessage, AWSError] = js.native
@@ -844,6 +974,19 @@ trait RDS extends Service {
     params: DescribeGlobalClustersMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ GlobalClustersMessage, Unit]
   ): Request[GlobalClustersMessage, AWSError] = js.native
+  /**
+    * Describes the available installation media for a DB engine that requires an on-premises customer provided license, such as Microsoft SQL Server.
+    */
+  def describeInstallationMedia(): Request[InstallationMediaMessage, AWSError] = js.native
+  def describeInstallationMedia(callback: js.Function2[/* err */ AWSError, /* data */ InstallationMediaMessage, Unit]): Request[InstallationMediaMessage, AWSError] = js.native
+  /**
+    * Describes the available installation media for a DB engine that requires an on-premises customer provided license, such as Microsoft SQL Server.
+    */
+  def describeInstallationMedia(params: DescribeInstallationMediaMessage): Request[InstallationMediaMessage, AWSError] = js.native
+  def describeInstallationMedia(
+    params: DescribeInstallationMediaMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ InstallationMediaMessage, Unit]
+  ): Request[InstallationMediaMessage, AWSError] = js.native
   /**
     * Describes all available options.
     */
@@ -977,6 +1120,19 @@ trait RDS extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ FailoverDBClusterResult, Unit]
   ): Request[FailoverDBClusterResult, AWSError] = js.native
   /**
+    * Imports the installation media for a DB engine that requires an on-premises customer provided license, such as SQL Server.
+    */
+  def importInstallationMedia(): Request[InstallationMedia, AWSError] = js.native
+  def importInstallationMedia(callback: js.Function2[/* err */ AWSError, /* data */ InstallationMedia, Unit]): Request[InstallationMedia, AWSError] = js.native
+  /**
+    * Imports the installation media for a DB engine that requires an on-premises customer provided license, such as SQL Server.
+    */
+  def importInstallationMedia(params: ImportInstallationMediaMessage): Request[InstallationMedia, AWSError] = js.native
+  def importInstallationMedia(
+    params: ImportInstallationMediaMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ InstallationMedia, Unit]
+  ): Request[InstallationMedia, AWSError] = js.native
+  /**
     * Lists all tags on an Amazon RDS resource. For an overview on tagging an Amazon RDS resource, see Tagging Amazon RDS Resources in the Amazon RDS User Guide.
     */
   def listTagsForResource(): Request[TagListMessage, AWSError] = js.native
@@ -1029,12 +1185,12 @@ trait RDS extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DBClusterEndpoint, Unit]
   ): Request[DBClusterEndpoint, AWSError] = js.native
   /**
-    *  Modifies the parameters of a DB cluster parameter group. To modify more than one parameter, submit a list of the following: ParameterName, ParameterValue, and ApplyMethod. A maximum of 20 parameters can be modified in a single request.  For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   Changes to dynamic parameters are applied immediately. Changes to static parameters require a reboot without failover to the DB cluster associated with the parameter group before the change can take effect.   After you create a DB cluster parameter group, you should wait at least 5 minutes before creating your first DB cluster that uses that DB cluster parameter group as the default parameter group. This allows Amazon RDS to fully complete the create action before the parameter group is used as the default for a new DB cluster. This is especially important for parameters that are critical when creating the default database for a DB cluster, such as the character set for the default database defined by the character_set_database parameter. You can use the Parameter Groups option of the Amazon RDS console or the DescribeDBClusterParameters action to verify that your DB cluster parameter group has been created or modified.   This action only applies to Aurora DB clusters. 
+    *  Modifies the parameters of a DB cluster parameter group. To modify more than one parameter, submit a list of the following: ParameterName, ParameterValue, and ApplyMethod. A maximum of 20 parameters can be modified in a single request.  For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   Changes to dynamic parameters are applied immediately. Changes to static parameters require a reboot without failover to the DB cluster associated with the parameter group before the change can take effect.   After you create a DB cluster parameter group, you should wait at least 5 minutes before creating your first DB cluster that uses that DB cluster parameter group as the default parameter group. This allows Amazon RDS to fully complete the create action before the parameter group is used as the default for a new DB cluster. This is especially important for parameters that are critical when creating the default database for a DB cluster, such as the character set for the default database defined by the character_set_database parameter. You can use the Parameter Groups option of the Amazon RDS console or the DescribeDBClusterParameters action to verify that your DB cluster parameter group has been created or modified. If the modified DB cluster parameter group is used by an Aurora Serverless cluster, Aurora applies the update immediately. The cluster restart might interrupt your workload. In that case, your application must reopen any connections and retry any transactions that were active when the parameter changes took effect.   This action only applies to Aurora DB clusters. 
     */
   def modifyDBClusterParameterGroup(): Request[DBClusterParameterGroupNameMessage, AWSError] = js.native
   def modifyDBClusterParameterGroup(callback: js.Function2[/* err */ AWSError, /* data */ DBClusterParameterGroupNameMessage, Unit]): Request[DBClusterParameterGroupNameMessage, AWSError] = js.native
   /**
-    *  Modifies the parameters of a DB cluster parameter group. To modify more than one parameter, submit a list of the following: ParameterName, ParameterValue, and ApplyMethod. A maximum of 20 parameters can be modified in a single request.  For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   Changes to dynamic parameters are applied immediately. Changes to static parameters require a reboot without failover to the DB cluster associated with the parameter group before the change can take effect.   After you create a DB cluster parameter group, you should wait at least 5 minutes before creating your first DB cluster that uses that DB cluster parameter group as the default parameter group. This allows Amazon RDS to fully complete the create action before the parameter group is used as the default for a new DB cluster. This is especially important for parameters that are critical when creating the default database for a DB cluster, such as the character set for the default database defined by the character_set_database parameter. You can use the Parameter Groups option of the Amazon RDS console or the DescribeDBClusterParameters action to verify that your DB cluster parameter group has been created or modified.   This action only applies to Aurora DB clusters. 
+    *  Modifies the parameters of a DB cluster parameter group. To modify more than one parameter, submit a list of the following: ParameterName, ParameterValue, and ApplyMethod. A maximum of 20 parameters can be modified in a single request.  For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   Changes to dynamic parameters are applied immediately. Changes to static parameters require a reboot without failover to the DB cluster associated with the parameter group before the change can take effect.   After you create a DB cluster parameter group, you should wait at least 5 minutes before creating your first DB cluster that uses that DB cluster parameter group as the default parameter group. This allows Amazon RDS to fully complete the create action before the parameter group is used as the default for a new DB cluster. This is especially important for parameters that are critical when creating the default database for a DB cluster, such as the character set for the default database defined by the character_set_database parameter. You can use the Parameter Groups option of the Amazon RDS console or the DescribeDBClusterParameters action to verify that your DB cluster parameter group has been created or modified. If the modified DB cluster parameter group is used by an Aurora Serverless cluster, Aurora applies the update immediately. The cluster restart might interrupt your workload. In that case, your application must reopen any connections and retry any transactions that were active when the parameter changes took effect.   This action only applies to Aurora DB clusters. 
     */
   def modifyDBClusterParameterGroup(params: ModifyDBClusterParameterGroupMessage): Request[DBClusterParameterGroupNameMessage, AWSError] = js.native
   def modifyDBClusterParameterGroup(
@@ -1083,12 +1239,38 @@ trait RDS extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DBParameterGroupNameMessage, Unit]
   ): Request[DBParameterGroupNameMessage, AWSError] = js.native
   /**
-    * Updates a manual DB snapshot, which can be encrypted or not encrypted, with a new engine version.  Amazon RDS supports upgrading DB snapshots for MySQL and Oracle. 
+    *  This is prerelease documentation for the RDS Database Proxy feature in preview release. It is subject to change.  Changes the settings for an existing DB proxy.
+    */
+  def modifyDBProxy(): Request[ModifyDBProxyResponse, AWSError] = js.native
+  def modifyDBProxy(callback: js.Function2[/* err */ AWSError, /* data */ ModifyDBProxyResponse, Unit]): Request[ModifyDBProxyResponse, AWSError] = js.native
+  /**
+    *  This is prerelease documentation for the RDS Database Proxy feature in preview release. It is subject to change.  Changes the settings for an existing DB proxy.
+    */
+  def modifyDBProxy(params: ModifyDBProxyRequest): Request[ModifyDBProxyResponse, AWSError] = js.native
+  def modifyDBProxy(
+    params: ModifyDBProxyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyDBProxyResponse, Unit]
+  ): Request[ModifyDBProxyResponse, AWSError] = js.native
+  /**
+    *  This is prerelease documentation for the RDS Database Proxy feature in preview release. It is subject to change.  Modifies the properties of a DBProxyTargetGroup.
+    */
+  def modifyDBProxyTargetGroup(): Request[ModifyDBProxyTargetGroupResponse, AWSError] = js.native
+  def modifyDBProxyTargetGroup(callback: js.Function2[/* err */ AWSError, /* data */ ModifyDBProxyTargetGroupResponse, Unit]): Request[ModifyDBProxyTargetGroupResponse, AWSError] = js.native
+  /**
+    *  This is prerelease documentation for the RDS Database Proxy feature in preview release. It is subject to change.  Modifies the properties of a DBProxyTargetGroup.
+    */
+  def modifyDBProxyTargetGroup(params: ModifyDBProxyTargetGroupRequest): Request[ModifyDBProxyTargetGroupResponse, AWSError] = js.native
+  def modifyDBProxyTargetGroup(
+    params: ModifyDBProxyTargetGroupRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyDBProxyTargetGroupResponse, Unit]
+  ): Request[ModifyDBProxyTargetGroupResponse, AWSError] = js.native
+  /**
+    * Updates a manual DB snapshot, which can be encrypted or not encrypted, with a new engine version.  Amazon RDS supports upgrading DB snapshots for MySQL, Oracle, and PostgreSQL. 
     */
   def modifyDBSnapshot(): Request[ModifyDBSnapshotResult, AWSError] = js.native
   def modifyDBSnapshot(callback: js.Function2[/* err */ AWSError, /* data */ ModifyDBSnapshotResult, Unit]): Request[ModifyDBSnapshotResult, AWSError] = js.native
   /**
-    * Updates a manual DB snapshot, which can be encrypted or not encrypted, with a new engine version.  Amazon RDS supports upgrading DB snapshots for MySQL and Oracle. 
+    * Updates a manual DB snapshot, which can be encrypted or not encrypted, with a new engine version.  Amazon RDS supports upgrading DB snapshots for MySQL, Oracle, and PostgreSQL. 
     */
   def modifyDBSnapshot(params: ModifyDBSnapshotMessage): Request[ModifyDBSnapshotResult, AWSError] = js.native
   def modifyDBSnapshot(
@@ -1215,6 +1397,19 @@ trait RDS extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ RebootDBInstanceResult, Unit]
   ): Request[RebootDBInstanceResult, AWSError] = js.native
   /**
+    *  This is prerelease documentation for the RDS Database Proxy feature in preview release. It is subject to change.  Associate one or more DBProxyTarget data structures with a DBProxyTargetGroup.
+    */
+  def registerDBProxyTargets(): Request[RegisterDBProxyTargetsResponse, AWSError] = js.native
+  def registerDBProxyTargets(callback: js.Function2[/* err */ AWSError, /* data */ RegisterDBProxyTargetsResponse, Unit]): Request[RegisterDBProxyTargetsResponse, AWSError] = js.native
+  /**
+    *  This is prerelease documentation for the RDS Database Proxy feature in preview release. It is subject to change.  Associate one or more DBProxyTarget data structures with a DBProxyTargetGroup.
+    */
+  def registerDBProxyTargets(params: RegisterDBProxyTargetsRequest): Request[RegisterDBProxyTargetsResponse, AWSError] = js.native
+  def registerDBProxyTargets(
+    params: RegisterDBProxyTargetsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RegisterDBProxyTargetsResponse, Unit]
+  ): Request[RegisterDBProxyTargetsResponse, AWSError] = js.native
+  /**
     *  Detaches an Aurora secondary cluster from an Aurora global database cluster. The cluster becomes a standalone cluster with read-write capability instead of being read-only and receiving data from a primary cluster in a different region.   This action only applies to Aurora DB clusters. 
     */
   def removeFromGlobalCluster(): Request[RemoveFromGlobalClusterResult, AWSError] = js.native
@@ -1321,12 +1516,12 @@ trait RDS extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ RestoreDBClusterFromS3Result, Unit]
   ): Request[RestoreDBClusterFromS3Result, AWSError] = js.native
   /**
-    * Creates a new DB cluster from a DB snapshot or DB cluster snapshot. If a DB snapshot is specified, the target DB cluster is created from the source DB snapshot with a default configuration and default security group. If a DB cluster snapshot is specified, the target DB cluster is created from the source DB cluster restore point with the same configuration as the original source DB cluster, except that the new DB cluster is created with the default security group. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
+    * Creates a new DB cluster from a DB snapshot or DB cluster snapshot. If a DB snapshot is specified, the target DB cluster is created from the source DB snapshot with a default configuration and default security group. If a DB cluster snapshot is specified, the target DB cluster is created from the source DB cluster restore point with the same configuration as the original source DB cluster. If you don't specify a security group, the new DB cluster is associated with the default security group. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def restoreDBClusterFromSnapshot(): Request[RestoreDBClusterFromSnapshotResult, AWSError] = js.native
   def restoreDBClusterFromSnapshot(callback: js.Function2[/* err */ AWSError, /* data */ RestoreDBClusterFromSnapshotResult, Unit]): Request[RestoreDBClusterFromSnapshotResult, AWSError] = js.native
   /**
-    * Creates a new DB cluster from a DB snapshot or DB cluster snapshot. If a DB snapshot is specified, the target DB cluster is created from the source DB snapshot with a default configuration and default security group. If a DB cluster snapshot is specified, the target DB cluster is created from the source DB cluster restore point with the same configuration as the original source DB cluster, except that the new DB cluster is created with the default security group. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
+    * Creates a new DB cluster from a DB snapshot or DB cluster snapshot. If a DB snapshot is specified, the target DB cluster is created from the source DB snapshot with a default configuration and default security group. If a DB cluster snapshot is specified, the target DB cluster is created from the source DB cluster restore point with the same configuration as the original source DB cluster. If you don't specify a security group, the new DB cluster is associated with the default security group. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def restoreDBClusterFromSnapshot(params: RestoreDBClusterFromSnapshotMessage): Request[RestoreDBClusterFromSnapshotResult, AWSError] = js.native
   def restoreDBClusterFromSnapshot(

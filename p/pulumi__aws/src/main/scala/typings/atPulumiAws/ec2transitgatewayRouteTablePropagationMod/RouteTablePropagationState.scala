@@ -5,23 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RouteTablePropagationState extends js.Object {
   /**
     * Identifier of the resource
     */
-  val resourceId: js.UndefOr[Input[String]] = js.undefined
+  val resourceId: js.UndefOr[Input[String]] = js.native
   /**
     * Type of the resource
     */
-  val resourceType: js.UndefOr[Input[String]] = js.undefined
+  val resourceType: js.UndefOr[Input[String]] = js.native
   /**
     * Identifier of EC2 Transit Gateway Attachment.
     */
-  val transitGatewayAttachmentId: js.UndefOr[Input[String]] = js.undefined
+  val transitGatewayAttachmentId: js.UndefOr[Input[String]] = js.native
   /**
     * Identifier of EC2 Transit Gateway Route Table.
     */
-  val transitGatewayRouteTableId: js.UndefOr[Input[String]] = js.undefined
+  val transitGatewayRouteTableId: js.UndefOr[Input[String]] = js.native
 }
 
 object RouteTablePropagationState {

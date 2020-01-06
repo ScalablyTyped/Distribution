@@ -6,11 +6,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Action extends js.Object {
   /**
     * The specified action type - the only supported value is `expire`.
     */
-  var `type`: Input[expire]
+  var `type`: Input[expire] = js.native
 }
 
 object Action {

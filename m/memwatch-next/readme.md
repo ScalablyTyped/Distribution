@@ -11,8 +11,8 @@ Keep an eye on your memory usage, and discover and isolate leaks.
 | Full name          | memwatch-next |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 54 |
-| # downloads        | 767945 |
+| # dependents       | 51 |
+| # downloads        | 550457 |
 | # stars            | 38 |
 
 ## Links

@@ -5,12 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PolicyStepScalingPolicyConfiguration extends js.Object {
-  var adjustmentType: js.UndefOr[Input[String]] = js.undefined
-  var cooldown: js.UndefOr[Input[Double]] = js.undefined
-  var metricAggregationType: js.UndefOr[Input[String]] = js.undefined
-  var minAdjustmentMagnitude: js.UndefOr[Input[Double]] = js.undefined
-  var stepAdjustments: js.UndefOr[Input[js.Array[Input[PolicyStepScalingPolicyConfigurationStepAdjustment]]]] = js.undefined
+  var adjustmentType: js.UndefOr[Input[String]] = js.native
+  var cooldown: js.UndefOr[Input[Double]] = js.native
+  var metricAggregationType: js.UndefOr[Input[String]] = js.native
+  var minAdjustmentMagnitude: js.UndefOr[Input[Double]] = js.native
+  var stepAdjustments: js.UndefOr[Input[js.Array[Input[PolicyStepScalingPolicyConfigurationStepAdjustment]]]] = js.native
 }
 
 object PolicyStepScalingPolicyConfiguration {

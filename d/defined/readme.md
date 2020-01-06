@@ -10,9 +10,9 @@ return the first argument that is `!== undefined`
 | ------------------ | :-------------: |
 | Full name          | defined |
 | Keywords           | undefined, short-circuit, ||, or, //, defined-or |
-| # releases         | 1 |
-| # dependents       | 282 |
-| # downloads        | 142774399 |
+| # releases         | 0 |
+| # dependents       | 284 |
+| # downloads        | 136335006 |
 | # stars            | 6 |
 
 ## Links

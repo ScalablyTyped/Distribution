@@ -10,9 +10,9 @@ Node SDK for AWS X-Ray
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/client-xray-node |
 | Keywords           | - |
-| # releases         | 8 |
+| # releases         | 13 |
 | # dependents       | 0 |
-| # downloads        | 290 |
+| # downloads        | 570 |
 | # stars            | 0 |
 
 ## Links

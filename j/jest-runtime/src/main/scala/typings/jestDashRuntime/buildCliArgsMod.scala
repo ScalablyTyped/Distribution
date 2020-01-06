@@ -1,6 +1,6 @@
 package typings.jestDashRuntime
 
-import typings.jestDashRuntime.jestDashRuntimeStrings.`UsageColon $0 Leftsquarebracket--configEqualssignLessthansignpathToConfigFileGreaterthansignRightsquarebracket LessthansignfileGreaterthansign`
+import typings.jestDashRuntime.jestDashRuntimeStrings.`UsageColon $0 [--configEqualssignLessthansignpathToConfigFileGreaterthansign] LessthansignfileGreaterthansign`
 import typings.jestDashRuntime.jestDashRuntimeStrings.cache
 import typings.jestDashRuntime.jestDashRuntimeStrings.config
 import typings.jestDashRuntime.jestDashRuntimeStrings.debug
@@ -16,6 +16,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object buildCliArgsMod extends js.Object {
   val options: Record[cache | config | debug | version | watchman, Options] = js.native
-  val usage: `UsageColon $0 Leftsquarebracket--configEqualssignLessthansignpathToConfigFileGreaterthansignRightsquarebracket LessthansignfileGreaterthansign` = js.native
+  val usage: `UsageColon $0 [--configEqualssignLessthansignpathToConfigFileGreaterthansign] LessthansignfileGreaterthansign` = js.native
 }
 

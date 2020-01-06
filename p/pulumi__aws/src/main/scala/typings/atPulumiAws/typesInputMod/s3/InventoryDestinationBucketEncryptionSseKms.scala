@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InventoryDestinationBucketEncryptionSseKms extends js.Object {
   /**
     * The ARN of the KMS customer master key (CMK) used to encrypt the inventory file.
     */
-  var keyId: Input[String]
+  var keyId: Input[String] = js.native
 }
 
 object InventoryDestinationBucketEncryptionSseKms {

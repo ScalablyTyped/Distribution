@@ -10,9 +10,9 @@ A replacement for process.exit that ensures stdio are fully drained before exiti
 | ------------------ | :-------------: |
 | Full name          | exit |
 | Keywords           | exit, process, stdio, stdout, stderr, drain, flush, 3584 |
-| # releases         | 1 |
-| # dependents       | 194 |
-| # downloads        | 140108955 |
+| # releases         | 0 |
+| # dependents       | 224 |
+| # downloads        | 238784683 |
 | # stars            | 9 |
 
 ## Links

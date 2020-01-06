@@ -10,9 +10,9 @@ Exports a streamReader function that accepts a readable stream, a function to ca
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/chunked-stream-reader-node |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 6 |
 | # dependents       | 1 |
-| # downloads        | 180 |
+| # downloads        | 285 |
 | # stars            | 0 |
 
 ## Links

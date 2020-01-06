@@ -9,39 +9,40 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ModelState extends js.Object {
   /**
     * The Amazon Resource Name (ARN) assigned by AWS to this model.
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * Specifies containers in the inference pipeline. If not specified, the `primaryContainer` argument is required. Fields are documented below.
     */
-  val containers: js.UndefOr[Input[js.Array[Input[ModelContainer]]]] = js.undefined
+  val containers: js.UndefOr[Input[js.Array[Input[ModelContainer]]]] = js.native
   /**
     * Isolates the model container. No inbound or outbound network calls can be made to or from the model container.
     */
-  val enableNetworkIsolation: js.UndefOr[Input[Boolean]] = js.undefined
+  val enableNetworkIsolation: js.UndefOr[Input[Boolean]] = js.native
   /**
     * A role that SageMaker can assume to access model artifacts and docker images for deployment.
     */
-  val executionRoleArn: js.UndefOr[Input[String]] = js.undefined
+  val executionRoleArn: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the model (must be unique). If omitted, this provider will assign a random, unique name.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * The primary docker image containing inference code that is used when the model is deployed for predictions.  If not specified, the `container` argument is required. Fields are documented below.
     */
-  val primaryContainer: js.UndefOr[Input[ModelPrimaryContainer]] = js.undefined
+  val primaryContainer: js.UndefOr[Input[ModelPrimaryContainer]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * Specifies the VPC that you want your model to connect to. VpcConfig is used in hosting services and in batch transform.
     */
-  val vpcConfig: js.UndefOr[Input[ModelVpcConfig]] = js.undefined
+  val vpcConfig: js.UndefOr[Input[ModelVpcConfig]] = js.native
 }
 
 object ModelState {

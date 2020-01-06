@@ -13,13 +13,13 @@ class StreamEventSubscription protected ()
   extends typings.atPulumiAws.kinesisKinesisMixinsMod.StreamEventSubscription {
   def this(
     name: String,
-    stream: typings.atPulumiAws.kinesisKinesisMixinsMod.kinesisStreamMod.Stream,
+    stream: typings.atPulumiAws.kinesisStreamMod.Stream,
     handler: StreamEventHandler,
     args: StreamEventSubscriptionArgs
   ) = this()
   def this(
     name: String,
-    stream: typings.atPulumiAws.kinesisKinesisMixinsMod.kinesisStreamMod.Stream,
+    stream: typings.atPulumiAws.kinesisStreamMod.Stream,
     handler: StreamEventHandler,
     args: StreamEventSubscriptionArgs,
     opts: ComponentResourceOptions

@@ -11,9 +11,9 @@ JavaScript's functional programming helper library.
 | Full name          | underscore |
 | Keywords           | util, functional, server, client, browser |
 | # releases         | 3 |
-| # dependents       | 16457 |
-| # downloads        | 304963835 |
-| # stars            | 572 |
+| # dependents       | 17032 |
+| # downloads        | 331289503 |
+| # stars            | 574 |
 
 ## Links
 - [Homepage](http://underscorejs.org)

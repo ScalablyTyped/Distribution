@@ -10,9 +10,9 @@ higher-order reducer to reset the redux state on certain actions
 | ------------------ | :-------------: |
 | Full name          | redux-recycle |
 | Keywords           | redux, flux, recycle, state, higher-order reducer, hor |
-| # releases         | 2 |
-| # dependents       | 5 |
-| # downloads        | 84355 |
+| # releases         | 0 |
+| # dependents       | 7 |
+| # downloads        | 125546 |
 | # stars            | 0 |
 
 ## Links

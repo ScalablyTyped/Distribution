@@ -4,28 +4,29 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PutEventsResultEntry extends js.Object {
   /**
     * The error code that indicates why the event submission failed.
     */
-  var ErrorCode: js.UndefOr[typings.awsDashSdk.clientsEventbridgeMod.ErrorCode] = js.undefined
+  var ErrorCode: js.UndefOr[typings.awsDashSdk.clientsEventbridgeMod.ErrorCode] = js.native
   /**
     * The error message that explains why the event submission failed.
     */
-  var ErrorMessage: js.UndefOr[typings.awsDashSdk.clientsEventbridgeMod.ErrorMessage] = js.undefined
+  var ErrorMessage: js.UndefOr[typings.awsDashSdk.clientsEventbridgeMod.ErrorMessage] = js.native
   /**
     * The ID of the event.
     */
-  var EventId: js.UndefOr[typings.awsDashSdk.clientsEventbridgeMod.EventId] = js.undefined
+  var EventId: js.UndefOr[typings.awsDashSdk.clientsEventbridgeMod.EventId] = js.native
 }
 
 object PutEventsResultEntry {
   @scala.inline
   def apply(ErrorCode: ErrorCode = null, ErrorMessage: ErrorMessage = null, EventId: EventId = null): PutEventsResultEntry = {
     val __obj = js.Dynamic.literal()
-    if (ErrorCode != null) __obj.updateDynamic("ErrorCode")(ErrorCode)
-    if (ErrorMessage != null) __obj.updateDynamic("ErrorMessage")(ErrorMessage)
-    if (EventId != null) __obj.updateDynamic("EventId")(EventId)
+    if (ErrorCode != null) __obj.updateDynamic("ErrorCode")(ErrorCode.asInstanceOf[js.Any])
+    if (ErrorMessage != null) __obj.updateDynamic("ErrorMessage")(ErrorMessage.asInstanceOf[js.Any])
+    if (EventId != null) __obj.updateDynamic("EventId")(EventId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutEventsResultEntry]
   }
 }

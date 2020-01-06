@@ -30,7 +30,7 @@ trait Anon_Decimals extends js.Object {
     */
   def formatter(
     value: Double,
-    options: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias jquery-countto.jquery-countto.Options */ js.Object
+    options: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias jquery-countto.jquery-countto.Options */ js.Object
   ): String
   /**
     * A callback function that is triggered when counting finishes
@@ -46,7 +46,7 @@ object Anon_Decimals {
   @scala.inline
   def apply(
     decimals: Double,
-    formatter: (Double, /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias jquery-countto.jquery-countto.Options */ js.Object) => String,
+    formatter: (Double, /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias jquery-countto.jquery-countto.Options */ js.Object) => String,
     from: Double,
     onComplete: Double => Unit,
     onUpdate: Double => Unit,

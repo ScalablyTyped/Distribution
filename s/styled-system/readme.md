@@ -10,15 +10,12 @@ Responsive, theme-based style props for building design systems with React
 | ------------------ | :-------------: |
 | Full name          | styled-system |
 | Keywords           | react, css-in-js, styled-components, emotion |
-| # releases         | 114 |
-| # dependents       | 255 |
-| # downloads        | 3511642 |
+| # releases         | 121 |
+| # dependents       | 451 |
+| # downloads        | 7318964 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/jxnblk/styled-system#readme)
-- [Bugs](https://github.com/jxnblk/styled-system/issues)
-- [Repository](https://github.com/jxnblk/styled-system)
 - [Npm](https://www.npmjs.com/package/styled-system)
     
 

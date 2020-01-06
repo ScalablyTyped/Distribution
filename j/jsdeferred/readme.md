@@ -11,7 +11,7 @@ Asynchronous library in JavaScript. Standalone and Compact.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 3335 |
+| # downloads        | 1398 |
 | # stars            | 0 |
 
 ## Links

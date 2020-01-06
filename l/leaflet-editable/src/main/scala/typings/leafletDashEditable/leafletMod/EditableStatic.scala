@@ -12,6 +12,5 @@ import scala.scalajs.js.annotation._
   * control editing of geometries. So you can easily build your own UI with your own needs and choices.
   */
 @js.native
-trait EditableStatic
-  extends Instantiable2[/* map */ typings.leaflet.leafletMod.Map, /* options */ EditOptions, Editable]
+trait EditableStatic extends Instantiable2[/* map */ Map, /* options */ EditOptions, Editable]
 

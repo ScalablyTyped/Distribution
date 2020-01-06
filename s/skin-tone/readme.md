@@ -10,9 +10,9 @@ Change the skin tone of an emoji 👌👌🏻👌🏼👌🏽👌🏾👌🏿
 | ------------------ | :-------------: |
 | Full name          | skin-tone |
 | Keywords           | emoji, emojis, skin, tone, type, unicode, emoticon, fitzpatrick, scale, modify, change, strip, remove |
-| # releases         | 0 |
+| # releases         | 2 |
 | # dependents       | 3 |
-| # downloads        | 3381 |
+| # downloads        | 7301 |
 | # stars            | 1 |
 
 ## Links

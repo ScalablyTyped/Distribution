@@ -10,9 +10,9 @@ Color of Vue Components
 | ------------------ | :-------------: |
 | Full name          | vue-color |
 | Keywords           | color, vuejs |
-| # releases         | 20 |
-| # dependents       | 40 |
-| # downloads        | 591659 |
+| # releases         | 7 |
+| # dependents       | 71 |
+| # downloads        | 1061598 |
 | # stars            | 3 |
 
 ## Links

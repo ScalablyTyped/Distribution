@@ -10,9 +10,9 @@ Fixes stack traces for files with source maps
 | ------------------ | :-------------: |
 | Full name          | source-map-support |
 | Keywords           | - |
-| # releases         | 16 |
-| # dependents       | 2016 |
-| # downloads        | 437259403 |
+| # releases         | 17 |
+| # dependents       | 2455 |
+| # downloads        | 678858376 |
 | # stars            | 30 |
 
 ## Links

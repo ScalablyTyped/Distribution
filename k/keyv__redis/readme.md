@@ -10,9 +10,9 @@ Redis storage adapter for Keyv
 | ------------------ | :-------------: |
 | Full name          | @keyv/redis |
 | Keywords           | redis, keyv, storage, adapter, key, value, store, cache, ttl |
-| # releases         | 6 |
-| # dependents       | 4 |
-| # downloads        | 13303 |
+| # releases         | 3 |
+| # dependents       | 5 |
+| # downloads        | 25457 |
 | # stars            | 0 |
 
 ## Links

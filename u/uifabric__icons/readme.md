@@ -10,9 +10,9 @@ Office UI Fabric icon set.
 | ------------------ | :-------------: |
 | Full name          | @uifabric/icons |
 | Keywords           | - |
-| # releases         | 63 |
-| # dependents       | 21 |
-| # downloads        | 1585142 |
+| # releases         | 67 |
+| # dependents       | 26 |
+| # downloads        | 1832514 |
 | # stars            | 0 |
 
 ## Links

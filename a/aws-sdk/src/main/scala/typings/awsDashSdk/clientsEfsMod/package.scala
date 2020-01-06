@@ -19,11 +19,11 @@ package object clientsEfsMod {
   type IpAddress = String
   type KmsKeyId = String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.creating
-    - typings.awsDashSdk.awsDashSdkStrings.available
-    - typings.awsDashSdk.awsDashSdkStrings.updating
-    - typings.awsDashSdk.awsDashSdkStrings.deleting
-    - typings.awsDashSdk.awsDashSdkStrings.deleted
+    - typings.awsDashSdk.awsDashSdkStrings.creating__
+    - typings.awsDashSdk.awsDashSdkStrings.available__
+    - typings.awsDashSdk.awsDashSdkStrings.updating__
+    - typings.awsDashSdk.awsDashSdkStrings.deleting__
+    - typings.awsDashSdk.awsDashSdkStrings.deleted__
     - java.lang.String
   */
   type LifeCycleState = _LifeCycleState | String
@@ -50,12 +50,13 @@ package object clientsEfsMod {
   type Tags = js.Array[Tag]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.bursting
-    - typings.awsDashSdk.awsDashSdkStrings.provisioned
+    - typings.awsDashSdk.awsDashSdkStrings.provisioned_
     - java.lang.String
   */
   type ThroughputMode = _ThroughputMode | String
   type Timestamp = Date
   /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.AFTER_7_DAYS
     - typings.awsDashSdk.awsDashSdkStrings.AFTER_14_DAYS
     - typings.awsDashSdk.awsDashSdkStrings.AFTER_30_DAYS
     - typings.awsDashSdk.awsDashSdkStrings.AFTER_60_DAYS
@@ -65,7 +66,7 @@ package object clientsEfsMod {
   type TransitionToIARules = _TransitionToIARules | String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2015-02-01`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

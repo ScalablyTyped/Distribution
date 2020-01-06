@@ -10,9 +10,9 @@ Promise-based HTML5 Filesystem API compatible with Node.js fs module
 | ------------------ | :-------------: |
 | Full name          | bro-fs |
 | Keywords           | fs, filesystem, html5-fs, html5-filesystem, html5-filesystem-api, browser-fs, browser-filesystem, web-fs, web-filesystem |
-| # releases         | 7 |
-| # dependents       | 3 |
-| # downloads        | 47248 |
+| # releases         | 5 |
+| # dependents       | 4 |
+| # downloads        | 39040 |
 | # stars            | 0 |
 
 ## Links

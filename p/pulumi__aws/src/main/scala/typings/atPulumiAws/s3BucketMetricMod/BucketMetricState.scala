@@ -6,19 +6,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BucketMetricState extends js.Object {
   /**
     * The name of the bucket to put metric configuration.
     */
-  val bucket: js.UndefOr[Input[String]] = js.undefined
+  val bucket: js.UndefOr[Input[String]] = js.native
   /**
     * [Object filtering](http://docs.aws.amazon.com/AmazonS3/latest/dev/metrics-configurations.html#metrics-configurations-filter) that accepts a prefix, tags, or a logical AND of prefix and tags (documented below).
     */
-  val filter: js.UndefOr[Input[BucketMetricFilter]] = js.undefined
+  val filter: js.UndefOr[Input[BucketMetricFilter]] = js.native
   /**
     * Unique identifier of the metrics configuration for the bucket.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
 }
 
 object BucketMetricState {

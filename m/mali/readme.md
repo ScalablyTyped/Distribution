@@ -10,9 +10,9 @@ Minimalistic gRPC microservice framework
 | ------------------ | :-------------: |
 | Full name          | mali |
 | Keywords           | mali, grpc, service, server, microservice |
-| # releases         | 25 |
+| # releases         | 24 |
 | # dependents       | 13 |
-| # downloads        | 83622 |
+| # downloads        | 86375 |
 | # stars            | 0 |
 
 ## Links

@@ -6,19 +6,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CiphertextArgs extends js.Object {
   /**
     * An optional mapping that makes up the encryption context.
     */
-  val context: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
+  val context: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * Globally unique key ID for the customer master key.
     */
-  val keyId: Input[String]
+  val keyId: Input[String] = js.native
   /**
     * Data to be encrypted. Note that this may show up in logs, and it will be stored in the state file.
     */
-  val plaintext: Input[String]
+  val plaintext: Input[String] = js.native
 }
 
 object CiphertextArgs {

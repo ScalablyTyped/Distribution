@@ -4,18 +4,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DisassociateServiceRoleFromAccountResponse extends js.Object {
   /**
     * The time when the service role was disassociated from the account.
     */
-  var DisassociatedAt: js.UndefOr[__string] = js.undefined
+  var DisassociatedAt: js.UndefOr[__string] = js.native
 }
 
 object DisassociateServiceRoleFromAccountResponse {
   @scala.inline
   def apply(DisassociatedAt: __string = null): DisassociateServiceRoleFromAccountResponse = {
     val __obj = js.Dynamic.literal()
-    if (DisassociatedAt != null) __obj.updateDynamic("DisassociatedAt")(DisassociatedAt)
+    if (DisassociatedAt != null) __obj.updateDynamic("DisassociatedAt")(DisassociatedAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateServiceRoleFromAccountResponse]
   }
 }

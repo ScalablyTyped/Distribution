@@ -1,5 +1,6 @@
 package typings.atPulumiAws.storagegatewaySmbFileShareMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -77,6 +78,10 @@ class SmbFileShare protected () extends CustomResource {
     * The ARN of the AWS Identity and Access Management (IAM) role that a file gateway assumes when it accesses the underlying storage.
     */
   val roleArn: Output[String] = js.native
+  /**
+    * Key-value mapping of resource tags
+    */
+  val tags: Output[js.UndefOr[StringDictionary[_]]] = js.native
   /**
     * A list of users in the Active Directory that are allowed to access the file share. Only valid if `authentication` is set to `ActiveDirectory`.
     */

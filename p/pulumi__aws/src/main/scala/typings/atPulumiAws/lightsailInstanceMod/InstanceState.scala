@@ -6,26 +6,27 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InstanceState extends js.Object {
   /**
     * The ARN of the Lightsail instance (matches `id`).
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * The Availability Zone in which to create your
     * instance (see list below)
     */
-  val availabilityZone: js.UndefOr[Input[String]] = js.undefined
+  val availabilityZone: js.UndefOr[Input[String]] = js.native
   /**
     * The ID for a virtual private server image
     * (see list below)
     */
-  val blueprintId: js.UndefOr[Input[String]] = js.undefined
+  val blueprintId: js.UndefOr[Input[String]] = js.native
   /**
     * The bundle of specification information (see list below)
     */
-  val bundleId: js.UndefOr[Input[String]] = js.undefined
-  val cpuCount: js.UndefOr[Input[Double]] = js.undefined
+  val bundleId: js.UndefOr[Input[String]] = js.native
+  val cpuCount: js.UndefOr[Input[Double]] = js.native
   /**
     * The timestamp when the instance was created.
     * * `availabilityZone`
@@ -34,30 +35,30 @@ trait InstanceState extends js.Object {
     * * `keyPairName`
     * * `userData`
     */
-  val createdAt: js.UndefOr[Input[String]] = js.undefined
-  val ipv6Address: js.UndefOr[Input[String]] = js.undefined
-  val isStaticIp: js.UndefOr[Input[Boolean]] = js.undefined
+  val createdAt: js.UndefOr[Input[String]] = js.native
+  val ipv6Address: js.UndefOr[Input[String]] = js.native
+  val isStaticIp: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The name of your key pair. Created in the
     * Lightsail console (cannot use `aws.ec2.KeyPair` at this time)
     */
-  val keyPairName: js.UndefOr[Input[String]] = js.undefined
+  val keyPairName: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the Lightsail Instance
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
-  val privateIpAddress: js.UndefOr[Input[String]] = js.undefined
-  val publicIpAddress: js.UndefOr[Input[String]] = js.undefined
-  val ramSize: js.UndefOr[Input[Double]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
+  val privateIpAddress: js.UndefOr[Input[String]] = js.native
+  val publicIpAddress: js.UndefOr[Input[String]] = js.native
+  val ramSize: js.UndefOr[Input[Double]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * launch script to configure server with additional user data
     */
-  val userData: js.UndefOr[Input[String]] = js.undefined
-  val username: js.UndefOr[Input[String]] = js.undefined
+  val userData: js.UndefOr[Input[String]] = js.native
+  val username: js.UndefOr[Input[String]] = js.native
 }
 
 object InstanceState {

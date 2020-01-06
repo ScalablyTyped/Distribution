@@ -6,12 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/BottomNavigationAction.BottomNavigationActionClassKey>> */
+@js.native
 trait PartialStyleRulesBottomNavigationActionClassKey extends js.Object {
-  var iconOnly: js.UndefOr[CSSProperties] = js.undefined
-  var label: js.UndefOr[CSSProperties] = js.undefined
-  var root: js.UndefOr[CSSProperties] = js.undefined
-  var selected: js.UndefOr[CSSProperties] = js.undefined
-  var wrapper: js.UndefOr[CSSProperties] = js.undefined
+  var iconOnly: js.UndefOr[CSSProperties] = js.native
+  var label: js.UndefOr[CSSProperties] = js.native
+  var root: js.UndefOr[CSSProperties] = js.native
+  var selected: js.UndefOr[CSSProperties] = js.native
+  var wrapper: js.UndefOr[CSSProperties] = js.native
 }
 
 object PartialStyleRulesBottomNavigationActionClassKey {

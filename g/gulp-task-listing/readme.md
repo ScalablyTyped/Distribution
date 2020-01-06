@@ -10,8 +10,8 @@ Adds the ability to provide a task listing for your gulpfile
 | Full name          | gulp-task-listing |
 | Keywords           | gulpfriendly |
 | # releases         | 2 |
-| # dependents       | 51 |
-| # downloads        | 874406 |
+| # dependents       | 49 |
+| # downloads        | 730619 |
 | # stars            | 19 |
 
 ## Links

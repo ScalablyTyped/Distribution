@@ -10,9 +10,9 @@ Typings are for version v1.6.0
 | ------------------ | :-------------: |
 | Full name          | angular-toastr |
 | Keywords           | angularjs, toastr, popup |
-| # releases         | 1 |
-| # dependents       | 28 |
-| # downloads        | 650531 |
+| # releases         | 0 |
+| # dependents       | 31 |
+| # downloads        | 796535 |
 | # stars            | 4 |
 
 ## Links

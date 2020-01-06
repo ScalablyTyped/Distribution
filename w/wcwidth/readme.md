@@ -11,8 +11,8 @@ Port of C's wcwidth() and wcswidth()
 | Full name          | wcwidth |
 | Keywords           | wide character, wc, wide character string, wcs, terminal, width, wcwidth, wcswidth |
 | # releases         | 0 |
-| # dependents       | 40 |
-| # downloads        | 42917288 |
+| # dependents       | 50 |
+| # downloads        | 89598573 |
 | # stars            | 2 |
 
 ## Links

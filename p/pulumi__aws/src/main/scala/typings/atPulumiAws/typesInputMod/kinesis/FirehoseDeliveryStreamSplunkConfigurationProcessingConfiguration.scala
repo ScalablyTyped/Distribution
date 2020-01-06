@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FirehoseDeliveryStreamSplunkConfigurationProcessingConfiguration extends js.Object {
   /**
     * Defaults to `true`. Set it to `false` if you want to disable format conversion while preserving the configuration details.
     */
-  var enabled: js.UndefOr[Input[Boolean]] = js.undefined
+  var enabled: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Array of data processors. More details are given below
     */
@@ -17,7 +18,7 @@ trait FirehoseDeliveryStreamSplunkConfigurationProcessingConfiguration extends j
     Input[
       js.Array[Input[FirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessor]]
     ]
-  ] = js.undefined
+  ] = js.native
 }
 
 object FirehoseDeliveryStreamSplunkConfigurationProcessingConfiguration {

@@ -12,7 +12,7 @@ Typings are for version 2.0
 | Keywords           | aws, lambda, λ, apex |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 27026 |
+| # downloads        | 20849 |
 | # stars            | 1 |
 
 ## Links

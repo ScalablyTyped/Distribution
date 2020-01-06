@@ -14,21 +14,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GroupArgs extends js.Object {
   /**
     * A list of one or more availability zones for the group. This parameter should not be specified when using `vpcZoneIdentifier`.
     */
-  val availabilityZones: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val availabilityZones: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The amount of time, in seconds, after a scaling activity completes before another scaling activity can start.
     */
-  val defaultCooldown: js.UndefOr[Input[Double]] = js.undefined
+  val defaultCooldown: js.UndefOr[Input[Double]] = js.native
   /**
     * The number of Amazon EC2 instances that
     * should be running in the group. (See also Waiting for
     * Capacity below.)
     */
-  val desiredCapacity: js.UndefOr[Input[Double]] = js.undefined
+  val desiredCapacity: js.UndefOr[Input[Double]] = js.native
   /**
     * A list of metrics to collect. The allowed values are `GroupMinSize`, `GroupMaxSize`, `GroupDesiredCapacity`, `GroupInServiceInstances`, `GroupPendingInstances`, `GroupStandbyInstances`, `GroupTerminatingInstances`, `GroupTotalInstances`.
     * * `waitForCapacityTimeout` (Default: "10m") A maximum
@@ -37,7 +38,7 @@ trait GroupArgs extends js.Object {
     * for Capacity below.) Setting this to "0" causes
     * this provider to skip all Capacity Waiting behavior.
     */
-  val enabledMetrics: js.UndefOr[Input[js.Array[Input[Metric]]]] = js.undefined
+  val enabledMetrics: js.UndefOr[Input[js.Array[Input[Metric]]]] = js.native
   /**
     * Allows deleting the autoscaling group without waiting
     * for all instances in the pool to terminate.  You can force an autoscaling group to delete
@@ -45,15 +46,15 @@ trait GroupArgs extends js.Object {
     * drains all the instances before deleting the group.  This bypasses that
     * behavior and potentially leaves resources dangling.
     */
-  val forceDelete: js.UndefOr[Input[Boolean]] = js.undefined
+  val forceDelete: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Time (in seconds) after instance comes into service before checking health.
     */
-  val healthCheckGracePeriod: js.UndefOr[Input[Double]] = js.undefined
+  val healthCheckGracePeriod: js.UndefOr[Input[Double]] = js.native
   /**
     * "EC2" or "ELB". Controls how health checking is done.
     */
-  val healthCheckType: js.UndefOr[Input[String]] = js.undefined
+  val healthCheckType: js.UndefOr[Input[String]] = js.native
   /**
     * One or more
     * [Lifecycle Hooks](http://docs.aws.amazon.com/autoscaling/latest/userguide/lifecycle-hooks.html)
@@ -63,93 +64,97 @@ trait GroupArgs extends js.Object {
     * resource, without the `autoscalingGroupName` attribute. Please note that this will only work when creating
     * a new autoscaling group. For all other use-cases, please use `aws.autoscaling.LifecycleHook` resource.
     */
-  val initialLifecycleHooks: js.UndefOr[Input[js.Array[Input[GroupInitialLifecycleHook]]]] = js.undefined
+  val initialLifecycleHooks: js.UndefOr[Input[js.Array[Input[GroupInitialLifecycleHook]]]] = js.native
   /**
     * The name of the launch configuration to use.
     */
-  val launchConfiguration: js.UndefOr[Input[String | LaunchConfiguration]] = js.undefined
+  val launchConfiguration: js.UndefOr[Input[String | LaunchConfiguration]] = js.native
   /**
-    * Nested argument containing launch template settings along with the overrides to specify multiple instance types. Defined below.
+    * Nested argument containing launch template settings along with the overrides to specify multiple instance types and weights. Defined below.
     */
-  val launchTemplate: js.UndefOr[Input[GroupLaunchTemplate]] = js.undefined
+  val launchTemplate: js.UndefOr[Input[GroupLaunchTemplate]] = js.native
   /**
     * A list of elastic load balancer names to add to the autoscaling
     * group names. Only valid for classic load balancers. For ALBs, use `targetGroupArns` instead.
     */
-  val loadBalancers: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val loadBalancers: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  /**
+    * The maximum amount of time, in seconds, that an instance can be in service, values must be either equal to 0 or between 604800 and 31536000 seconds.
+    */
+  val maxInstanceLifetime: js.UndefOr[Input[Double]] = js.native
   /**
     * The maximum size of the auto scale group.
     */
-  val maxSize: Input[Double]
+  val maxSize: Input[Double] = js.native
   /**
     * The granularity to associate with the metrics to collect. The only valid value is `1Minute`. Default is `1Minute`.
     */
-  val metricsGranularity: js.UndefOr[Input[String | MetricsGranularity]] = js.undefined
+  val metricsGranularity: js.UndefOr[Input[String | MetricsGranularity]] = js.native
   /**
     * Setting this causes this provider to wait for
     * this number of instances from this autoscaling group to show up healthy in the
     * ELB only on creation. Updates will not wait on ELB instance number changes.
     * (See also Waiting for Capacity below.)
     */
-  val minElbCapacity: js.UndefOr[Input[Double]] = js.undefined
+  val minElbCapacity: js.UndefOr[Input[Double]] = js.native
   /**
     * The minimum size of the auto scale group.
     * (See also Waiting for Capacity below.)
     */
-  val minSize: Input[Double]
+  val minSize: Input[Double] = js.native
   /**
     * Configuration block containing settings to define launch targets for Auto Scaling groups. Defined below.
     */
-  val mixedInstancesPolicy: js.UndefOr[Input[GroupMixedInstancesPolicy]] = js.undefined
+  val mixedInstancesPolicy: js.UndefOr[Input[GroupMixedInstancesPolicy]] = js.native
   /**
     * The name of the auto scaling group. By default generated by this provider.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * Creates a unique name beginning with the specified
     * prefix. Conflicts with `name`.
     */
-  val namePrefix: js.UndefOr[Input[String]] = js.undefined
+  val namePrefix: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the placement group into which you'll launch your instances, if any.
     */
-  val placementGroup: js.UndefOr[Input[String | PlacementGroup]] = js.undefined
+  val placementGroup: js.UndefOr[Input[String | PlacementGroup]] = js.native
   /**
     * Allows setting instance protection. The
     * autoscaling group will not select instances with this setting for terminination
     * during scale in events.
     */
-  val protectFromScaleIn: js.UndefOr[Input[Boolean]] = js.undefined
+  val protectFromScaleIn: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The ARN of the service-linked role that the ASG will use to call other AWS services
     */
-  val serviceLinkedRoleArn: js.UndefOr[Input[String]] = js.undefined
+  val serviceLinkedRoleArn: js.UndefOr[Input[String]] = js.native
   /**
     * A list of processes to suspend for the AutoScaling Group. The allowed values are `Launch`, `Terminate`, `HealthCheck`, `ReplaceUnhealthy`, `AZRebalance`, `AlarmNotification`, `ScheduledActions`, `AddToLoadBalancer`.
     * Note that if you suspend either the `Launch` or `Terminate` process types, it can prevent your autoscaling group from functioning properly.
     */
-  val suspendedProcesses: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val suspendedProcesses: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * A list of tag blocks. Tags documented below.
     */
-  val tags: js.UndefOr[Input[js.Array[Input[GroupTag]]]] = js.undefined
+  val tags: js.UndefOr[Input[js.Array[Input[GroupTag]]]] = js.native
   /**
     * A list of tag blocks (maps). Tags documented below.
     */
-  val tagsCollection: js.UndefOr[Input[js.Array[Input[StringDictionary[_]]]]] = js.undefined
+  val tagsCollection: js.UndefOr[Input[js.Array[Input[StringDictionary[_]]]]] = js.native
   /**
     * A list of `aws.alb.TargetGroup` ARNs, for use with Application or Network Load Balancing.
     */
-  val targetGroupArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val targetGroupArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * A list of policies to decide how the instances in the auto scale group should be terminated. The allowed values are `OldestInstance`, `NewestInstance`, `OldestLaunchConfiguration`, `ClosestToNextInstanceHour`, `OldestLaunchTemplate`, `AllocationStrategy`, `Default`.
     */
-  val terminationPolicies: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val terminationPolicies: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * A list of subnet IDs to launch resources in.
     */
-  val vpcZoneIdentifiers: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
-  val waitForCapacityTimeout: js.UndefOr[Input[String]] = js.undefined
+  val vpcZoneIdentifiers: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  val waitForCapacityTimeout: js.UndefOr[Input[String]] = js.native
   /**
     * Setting this will cause this provider to wait
     * for exactly this number of healthy instances from this autoscaling group in
@@ -157,7 +162,7 @@ trait GroupArgs extends js.Object {
     * precedence over `minElbCapacity` behavior.)
     * (See also Waiting for Capacity below.)
     */
-  val waitForElbCapacity: js.UndefOr[Input[Double]] = js.undefined
+  val waitForElbCapacity: js.UndefOr[Input[Double]] = js.native
 }
 
 object GroupArgs {
@@ -176,6 +181,7 @@ object GroupArgs {
     launchConfiguration: Input[String | LaunchConfiguration] = null,
     launchTemplate: Input[GroupLaunchTemplate] = null,
     loadBalancers: Input[js.Array[Input[String]]] = null,
+    maxInstanceLifetime: Input[Double] = null,
     metricsGranularity: Input[String | MetricsGranularity] = null,
     minElbCapacity: Input[Double] = null,
     mixedInstancesPolicy: Input[GroupMixedInstancesPolicy] = null,
@@ -205,6 +211,7 @@ object GroupArgs {
     if (launchConfiguration != null) __obj.updateDynamic("launchConfiguration")(launchConfiguration.asInstanceOf[js.Any])
     if (launchTemplate != null) __obj.updateDynamic("launchTemplate")(launchTemplate.asInstanceOf[js.Any])
     if (loadBalancers != null) __obj.updateDynamic("loadBalancers")(loadBalancers.asInstanceOf[js.Any])
+    if (maxInstanceLifetime != null) __obj.updateDynamic("maxInstanceLifetime")(maxInstanceLifetime.asInstanceOf[js.Any])
     if (metricsGranularity != null) __obj.updateDynamic("metricsGranularity")(metricsGranularity.asInstanceOf[js.Any])
     if (minElbCapacity != null) __obj.updateDynamic("minElbCapacity")(minElbCapacity.asInstanceOf[js.Any])
     if (mixedInstancesPolicy != null) __obj.updateDynamic("mixedInstancesPolicy")(mixedInstancesPolicy.asInstanceOf[js.Any])

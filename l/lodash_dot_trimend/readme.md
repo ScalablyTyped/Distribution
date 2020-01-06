@@ -11,8 +11,8 @@ The lodash method `_.trimEnd` exported as a module.
 | Full name          | lodash.trimend |
 | Keywords           | lodash-modularized, trimend |
 | # releases         | 0 |
-| # dependents       | 19 |
-| # downloads        | 4434154 |
+| # dependents       | 23 |
+| # downloads        | 4825751 |
 | # stars            | 0 |
 
 ## Links

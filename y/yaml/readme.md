@@ -10,9 +10,9 @@ JavaScript parser and stringifier for YAML
 | ------------------ | :-------------: |
 | Full name          | yaml |
 | Keywords           | YAML, parser, stringifier |
-| # releases         | 26 |
-| # dependents       | 251 |
-| # downloads        | 2459919 |
+| # releases         | 33 |
+| # dependents       | 504 |
+| # downloads        | 17385543 |
 | # stars            | 15 |
 
 ## Links

@@ -9,9 +9,9 @@ Typings are for version 0.1.0-preview.1
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/middleware-header-default |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 18 |
-| # downloads        | 5080 |
+| # releases         | 9 |
+| # dependents       | 370 |
+| # downloads        | 28773 |
 | # stars            | 0 |
 
 ## Links

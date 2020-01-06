@@ -10,9 +10,9 @@ Google API Extensions
 | ------------------ | :-------------: |
 | Full name          | google-gax |
 | Keywords           | grpc |
-| # releases         | 30 |
-| # dependents       | 40 |
-| # downloads        | 18974866 |
+| # releases         | 59 |
+| # dependents       | 52 |
+| # downloads        | 38986136 |
 | # stars            | 0 |
 
 ## Links

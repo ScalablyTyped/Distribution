@@ -12,7 +12,7 @@ Create object hierarchies with Backbone models. Respond to hierarchy changes usi
 | Keywords           | Backbone, association, associated, nested, model, cyclic graph, qualified event paths, relational, relations |
 | # releases         | 0 |
 | # dependents       | 8 |
-| # downloads        | 597178 |
+| # downloads        | 719831 |
 | # stars            | 1 |
 
 ## Links

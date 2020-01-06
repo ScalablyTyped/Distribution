@@ -10,9 +10,9 @@ The Material Components for the web tabs component
 | ------------------ | :-------------: |
 | Full name          | @material/tabs |
 | Keywords           | material components, material design, tabs |
-| # releases         | 50 |
-| # dependents       | 21 |
-| # downloads        | 830526 |
+| # releases         | 38 |
+| # dependents       | 16 |
+| # downloads        | 403689 |
 | # stars            | 0 |
 
 ## Links

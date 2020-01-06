@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TopicRuleKinesis extends js.Object {
   /**
     * The partition key.
     */
-  var partitionKey: js.UndefOr[Input[String]] = js.undefined
+  var partitionKey: js.UndefOr[Input[String]] = js.native
   /**
     * The ARN of the IAM role that grants access.
     */
-  var roleArn: Input[String]
+  var roleArn: Input[String] = js.native
   /**
     * The name of the Amazon Kinesis stream.
     */
-  var streamName: Input[String]
+  var streamName: Input[String] = js.native
 }
 
 object TopicRuleKinesis {

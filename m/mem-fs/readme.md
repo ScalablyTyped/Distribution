@@ -11,8 +11,8 @@ Simple in-memory vinyl file store
 | Full name          | mem-fs |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 144 |
-| # downloads        | 15930984 |
+| # dependents       | 205 |
+| # downloads        | 12571627 |
 | # stars            | 2 |
 
 ## Links

@@ -12,7 +12,7 @@ trait MUIDataTableHeadCell extends js.Object {
   var sort: Boolean
   var sortDirection: js.UndefOr[SortDirection] = js.undefined
   def toggleSort(
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
   ): js.Any
 }
 

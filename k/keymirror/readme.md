@@ -10,9 +10,9 @@ A simple utility for creating an object with values equal to its keys. Identical
 | ------------------ | :-------------: |
 | Full name          | keymirror |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 299 |
-| # downloads        | 5142312 |
+| # releases         | 1 |
+| # dependents       | 323 |
+| # downloads        | 6754375 |
 | # stars            | 27 |
 
 ## Links

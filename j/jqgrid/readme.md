@@ -10,9 +10,9 @@ jQuery grid plugin
 | ------------------ | :-------------: |
 | Full name          | jqgrid |
 | Keywords           | - |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 6665 |
+| # downloads        | 10057 |
 | # stars            | 1 |
 
 ## Links

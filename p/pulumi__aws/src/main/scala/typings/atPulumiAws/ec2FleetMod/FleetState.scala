@@ -10,47 +10,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FleetState extends js.Object {
   /**
     * Whether running instances should be terminated if the total target capacity of the EC2 Fleet is decreased below the current size of the EC2. Valid values: `no-termination`, `termination`. Defaults to `termination`.
     */
-  val excessCapacityTerminationPolicy: js.UndefOr[Input[String]] = js.undefined
+  val excessCapacityTerminationPolicy: js.UndefOr[Input[String]] = js.native
   /**
     * Nested argument containing EC2 Launch Template configurations. Defined below.
     */
-  val launchTemplateConfig: js.UndefOr[Input[FleetLaunchTemplateConfig]] = js.undefined
+  val launchTemplateConfig: js.UndefOr[Input[FleetLaunchTemplateConfig]] = js.native
   /**
     * Nested argument containing On-Demand configurations. Defined below.
     */
-  val onDemandOptions: js.UndefOr[Input[FleetOnDemandOptions]] = js.undefined
+  val onDemandOptions: js.UndefOr[Input[FleetOnDemandOptions]] = js.native
   /**
     * Whether EC2 Fleet should replace unhealthy instances. Defaults to `false`.
     */
-  val replaceUnhealthyInstances: js.UndefOr[Input[Boolean]] = js.undefined
+  val replaceUnhealthyInstances: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Nested argument containing Spot configurations. Defined below.
     */
-  val spotOptions: js.UndefOr[Input[FleetSpotOptions]] = js.undefined
+  val spotOptions: js.UndefOr[Input[FleetSpotOptions]] = js.native
   /**
     * Map of Fleet tags. To tag instances at launch, specify the tags in the Launch Template.
     */
-  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * Nested argument containing target capacity configurations. Defined below.
     */
-  val targetCapacitySpecification: js.UndefOr[Input[FleetTargetCapacitySpecification]] = js.undefined
+  val targetCapacitySpecification: js.UndefOr[Input[FleetTargetCapacitySpecification]] = js.native
   /**
     * Whether to terminate instances for an EC2 Fleet if it is deleted successfully. Defaults to `false`.
     */
-  val terminateInstances: js.UndefOr[Input[Boolean]] = js.undefined
+  val terminateInstances: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Whether running instances should be terminated when the EC2 Fleet expires. Defaults to `false`.
     */
-  val terminateInstancesWithExpiration: js.UndefOr[Input[Boolean]] = js.undefined
+  val terminateInstancesWithExpiration: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The type of request. Indicates whether the EC2 Fleet only requests the target capacity, or also attempts to maintain it. Valid values: `maintain`, `request`. Defaults to `maintain`.
     */
-  val `type`: js.UndefOr[Input[String]] = js.undefined
+  val `type`: js.UndefOr[Input[String]] = js.native
 }
 
 object FleetState {
@@ -61,7 +62,7 @@ object FleetState {
     onDemandOptions: Input[FleetOnDemandOptions] = null,
     replaceUnhealthyInstances: Input[Boolean] = null,
     spotOptions: Input[FleetSpotOptions] = null,
-    tags: Input[StringDictionary[Input[String]]] = null,
+    tags: Input[StringDictionary[_]] = null,
     targetCapacitySpecification: Input[FleetTargetCapacitySpecification] = null,
     terminateInstances: Input[Boolean] = null,
     terminateInstancesWithExpiration: Input[Boolean] = null,

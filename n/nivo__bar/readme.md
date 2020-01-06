@@ -10,9 +10,9 @@ Typings are for version 0.59.2
 | ------------------ | :-------------: |
 | Full name          | @nivo/bar |
 | Keywords           | nivo, dataviz, react, d3, charts, bar-chart |
-| # releases         | 49 |
-| # dependents       | 8 |
-| # downloads        | 410802 |
+| # releases         | 37 |
+| # dependents       | 15 |
+| # downloads        | 575473 |
 | # stars            | 0 |
 
 ## Links

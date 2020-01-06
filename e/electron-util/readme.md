@@ -4,15 +4,15 @@
 Typings are for version 0.12.3
 
 ## Library description:
-Useful utilities for developing Electron apps and modules
+Useful utilities for Electron apps and modules
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | electron-util |
 | Keywords           | electron, app, dev, development, utility, utilities, util, utils, useful |
-| # releases         | 21 |
-| # dependents       | 12 |
-| # downloads        | 47180 |
+| # releases         | 20 |
+| # dependents       | 22 |
+| # downloads        | 74607 |
 | # stars            | 1 |
 
 ## Links

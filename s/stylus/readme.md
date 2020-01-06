@@ -10,9 +10,9 @@ Robust, expressive, and feature-rich CSS superset
 | ------------------ | :-------------: |
 | Full name          | stylus |
 | Keywords           | css, parser, style, stylesheets, jade, language |
-| # releases         | 1 |
-| # dependents       | 1527 |
-| # downloads        | 36788909 |
+| # releases         | 3 |
+| # dependents       | 1661 |
+| # downloads        | 55193098 |
 | # stars            | 148 |
 
 ## Links

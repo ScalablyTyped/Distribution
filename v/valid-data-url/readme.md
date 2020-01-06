@@ -10,9 +10,9 @@ Detect if a string is a data URL
 | ------------------ | :-------------: |
 | Full name          | valid-data-url |
 | Keywords           | valid, data-uri, data-url, data, uri, url, datauri, dataurl |
-| # releases         | 4 |
-| # dependents       | 6 |
-| # downloads        | 4661395 |
+| # releases         | 5 |
+| # dependents       | 7 |
+| # downloads        | 7940274 |
 | # stars            | 0 |
 
 ## Links

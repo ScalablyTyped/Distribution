@@ -11,8 +11,8 @@ JavaScript library for quantity calculation and unit conversion
 | Full name          | js-quantities |
 | Keywords           | conversion, convert, imperial, measure, measurement, metric, parse, parser, physical, quantity, quantities, temperature, unit, units |
 | # releases         | 5 |
-| # dependents       | 18 |
-| # downloads        | 359851 |
+| # dependents       | 20 |
+| # downloads        | 426706 |
 | # stars            | 1 |
 
 ## Links

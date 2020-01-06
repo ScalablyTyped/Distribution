@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TranslateTextResponse extends js.Object {
   /**
     * The names of the custom terminologies applied to the input text by Amazon Translate for the translated text response.
     */
-  var AppliedTerminologies: js.UndefOr[AppliedTerminologyList] = js.undefined
+  var AppliedTerminologies: js.UndefOr[AppliedTerminologyList] = js.native
   /**
     * The language code for the language of the source text. 
     */
-  var SourceLanguageCode: LanguageCodeString
+  var SourceLanguageCode: LanguageCodeString = js.native
   /**
     * The language code for the language of the target text. 
     */
-  var TargetLanguageCode: LanguageCodeString
+  var TargetLanguageCode: LanguageCodeString = js.native
   /**
     * The the translated text. The maximum length of this text is 5kb.
     */
-  var TranslatedText: String
+  var TranslatedText: String = js.native
 }
 
 object TranslateTextResponse {
@@ -31,8 +32,8 @@ object TranslateTextResponse {
     TranslatedText: String,
     AppliedTerminologies: AppliedTerminologyList = null
   ): TranslateTextResponse = {
-    val __obj = js.Dynamic.literal(SourceLanguageCode = SourceLanguageCode, TargetLanguageCode = TargetLanguageCode, TranslatedText = TranslatedText)
-    if (AppliedTerminologies != null) __obj.updateDynamic("AppliedTerminologies")(AppliedTerminologies)
+    val __obj = js.Dynamic.literal(SourceLanguageCode = SourceLanguageCode.asInstanceOf[js.Any], TargetLanguageCode = TargetLanguageCode.asInstanceOf[js.Any], TranslatedText = TranslatedText.asInstanceOf[js.Any])
+    if (AppliedTerminologies != null) __obj.updateDynamic("AppliedTerminologies")(AppliedTerminologies.asInstanceOf[js.Any])
     __obj.asInstanceOf[TranslateTextResponse]
   }
 }

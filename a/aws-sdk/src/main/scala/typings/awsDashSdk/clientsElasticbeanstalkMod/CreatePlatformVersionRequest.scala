@@ -4,31 +4,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CreatePlatformVersionRequest extends js.Object {
   /**
     * The name of the builder environment.
     */
-  var EnvironmentName: js.UndefOr[typings.awsDashSdk.clientsElasticbeanstalkMod.EnvironmentName] = js.undefined
+  var EnvironmentName: js.UndefOr[typings.awsDashSdk.clientsElasticbeanstalkMod.EnvironmentName] = js.native
   /**
     * The configuration option settings to apply to the builder environment.
     */
-  var OptionSettings: js.UndefOr[ConfigurationOptionSettingsList] = js.undefined
+  var OptionSettings: js.UndefOr[ConfigurationOptionSettingsList] = js.native
   /**
     * The location of the platform definition archive in Amazon S3.
     */
-  var PlatformDefinitionBundle: S3Location
+  var PlatformDefinitionBundle: S3Location = js.native
   /**
     * The name of your custom platform.
     */
-  var PlatformName: typings.awsDashSdk.clientsElasticbeanstalkMod.PlatformName
+  var PlatformName: typings.awsDashSdk.clientsElasticbeanstalkMod.PlatformName = js.native
   /**
     * The number, such as 1.0.2, for the new platform version.
     */
-  var PlatformVersion: typings.awsDashSdk.clientsElasticbeanstalkMod.PlatformVersion
+  var PlatformVersion: typings.awsDashSdk.clientsElasticbeanstalkMod.PlatformVersion = js.native
   /**
     * Specifies the tags applied to the new platform version. Elastic Beanstalk applies these tags only to the platform version. Environments that you create using the platform version don't inherit the tags.
     */
-  var Tags: js.UndefOr[typings.awsDashSdk.clientsElasticbeanstalkMod.Tags] = js.undefined
+  var Tags: js.UndefOr[typings.awsDashSdk.clientsElasticbeanstalkMod.Tags] = js.native
 }
 
 object CreatePlatformVersionRequest {
@@ -41,10 +42,10 @@ object CreatePlatformVersionRequest {
     OptionSettings: ConfigurationOptionSettingsList = null,
     Tags: Tags = null
   ): CreatePlatformVersionRequest = {
-    val __obj = js.Dynamic.literal(PlatformDefinitionBundle = PlatformDefinitionBundle, PlatformName = PlatformName, PlatformVersion = PlatformVersion)
-    if (EnvironmentName != null) __obj.updateDynamic("EnvironmentName")(EnvironmentName)
-    if (OptionSettings != null) __obj.updateDynamic("OptionSettings")(OptionSettings)
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
+    val __obj = js.Dynamic.literal(PlatformDefinitionBundle = PlatformDefinitionBundle.asInstanceOf[js.Any], PlatformName = PlatformName.asInstanceOf[js.Any], PlatformVersion = PlatformVersion.asInstanceOf[js.Any])
+    if (EnvironmentName != null) __obj.updateDynamic("EnvironmentName")(EnvironmentName.asInstanceOf[js.Any])
+    if (OptionSettings != null) __obj.updateDynamic("OptionSettings")(OptionSettings.asInstanceOf[js.Any])
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePlatformVersionRequest]
   }
 }

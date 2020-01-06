@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VirtualServiceSpec extends js.Object {
-  var provider: js.UndefOr[Input[VirtualServiceSpecProvider]] = js.undefined
+  var provider: js.UndefOr[Input[VirtualServiceSpecProvider]] = js.native
 }
 
 object VirtualServiceSpec {

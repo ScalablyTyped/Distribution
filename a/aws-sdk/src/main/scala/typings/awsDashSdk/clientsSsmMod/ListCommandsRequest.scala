@@ -4,27 +4,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ListCommandsRequest extends js.Object {
   /**
     * (Optional) If provided, lists only the specified command.
     */
-  var CommandId: js.UndefOr[typings.awsDashSdk.clientsSsmMod.CommandId] = js.undefined
+  var CommandId: js.UndefOr[typings.awsDashSdk.clientsSsmMod.CommandId] = js.native
   /**
     * (Optional) One or more filters. Use a filter to return a more specific list of results. 
     */
-  var Filters: js.UndefOr[CommandFilterList] = js.undefined
+  var Filters: js.UndefOr[CommandFilterList] = js.native
   /**
     * (Optional) Lists commands issued against this instance ID.
     */
-  var InstanceId: js.UndefOr[typings.awsDashSdk.clientsSsmMod.InstanceId] = js.undefined
+  var InstanceId: js.UndefOr[typings.awsDashSdk.clientsSsmMod.InstanceId] = js.native
   /**
     * (Optional) The maximum number of items to return for this call. The call also returns a token that you can specify in a subsequent call to get the next set of results.
     */
-  var MaxResults: js.UndefOr[CommandMaxResults] = js.undefined
+  var MaxResults: js.UndefOr[CommandMaxResults] = js.native
   /**
     * (Optional) The token for the next set of items to return. (You received this token from a previous call.)
     */
-  var NextToken: js.UndefOr[typings.awsDashSdk.clientsSsmMod.NextToken] = js.undefined
+  var NextToken: js.UndefOr[typings.awsDashSdk.clientsSsmMod.NextToken] = js.native
 }
 
 object ListCommandsRequest {
@@ -37,11 +38,11 @@ object ListCommandsRequest {
     NextToken: NextToken = null
   ): ListCommandsRequest = {
     val __obj = js.Dynamic.literal()
-    if (CommandId != null) __obj.updateDynamic("CommandId")(CommandId)
-    if (Filters != null) __obj.updateDynamic("Filters")(Filters)
-    if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId)
+    if (CommandId != null) __obj.updateDynamic("CommandId")(CommandId.asInstanceOf[js.Any])
+    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
+    if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId.asInstanceOf[js.Any])
     if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListCommandsRequest]
   }
 }

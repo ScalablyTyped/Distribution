@@ -10,9 +10,9 @@ SNTP Client
 | ------------------ | :-------------: |
 | Full name          | sntp |
 | Keywords           | sntp, ntp, time |
-| # releases         | 5 |
-| # dependents       | 49 |
-| # downloads        | 253586982 |
+| # releases         | 2 |
+| # dependents       | 50 |
+| # downloads        | 158988361 |
 | # stars            | 7 |
 
 ## Links

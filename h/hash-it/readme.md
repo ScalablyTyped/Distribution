@@ -11,8 +11,8 @@ Hash any object based on its value
 | Full name          | hash-it |
 | Keywords           | hash, hashcode, object-hash, unique |
 | # releases         | 10 |
-| # dependents       | 15 |
-| # downloads        | 51479 |
+| # dependents       | 16 |
+| # downloads        | 117325 |
 | # stars            | 1 |
 
 ## Links

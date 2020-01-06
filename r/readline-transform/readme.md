@@ -10,9 +10,9 @@ Transform stream to read line-by-line and write a string
 | ------------------ | :-------------: |
 | Full name          | readline-transform |
 | Keywords           | stream, transform, readline, byline |
-| # releases         | 5 |
-| # dependents       | 1 |
-| # downloads        | 2567 |
+| # releases         | 6 |
+| # dependents       | 3 |
+| # downloads        | 267100 |
 | # stars            | 0 |
 
 ## Links

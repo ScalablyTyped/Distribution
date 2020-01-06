@@ -8,23 +8,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BucketNotificationState extends js.Object {
   /**
     * The name of the bucket to put notification configuration.
     */
-  val bucket: js.UndefOr[Input[String]] = js.undefined
+  val bucket: js.UndefOr[Input[String]] = js.native
   /**
     * Used to configure notifications to a Lambda Function (documented below).
     */
-  val lambdaFunctions: js.UndefOr[Input[js.Array[Input[BucketNotificationLambdaFunction]]]] = js.undefined
+  val lambdaFunctions: js.UndefOr[Input[js.Array[Input[BucketNotificationLambdaFunction]]]] = js.native
   /**
     * The notification configuration to SQS Queue (documented below).
     */
-  val queues: js.UndefOr[Input[js.Array[Input[BucketNotificationQueue]]]] = js.undefined
+  val queues: js.UndefOr[Input[js.Array[Input[BucketNotificationQueue]]]] = js.native
   /**
     * The notification configuration to SNS Topic (documented below).
     */
-  val topics: js.UndefOr[Input[js.Array[Input[BucketNotificationTopic]]]] = js.undefined
+  val topics: js.UndefOr[Input[js.Array[Input[BucketNotificationTopic]]]] = js.native
 }
 
 object BucketNotificationState {

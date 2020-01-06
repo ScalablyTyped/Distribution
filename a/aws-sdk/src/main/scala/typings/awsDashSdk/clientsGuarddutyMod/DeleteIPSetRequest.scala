@@ -4,21 +4,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DeleteIPSetRequest extends js.Object {
   /**
-    * The unique ID of the detector the ipSet is associated with.
+    * The unique ID of the detector associated with the IPSet.
     */
-  var DetectorId: typings.awsDashSdk.clientsGuarddutyMod.DetectorId
+  var DetectorId: typings.awsDashSdk.clientsGuarddutyMod.DetectorId = js.native
   /**
-    * The unique ID of the ipSet you want to delete.
+    * The unique ID of the IPSet to delete.
     */
-  var IpSetId: String
+  var IpSetId: String = js.native
 }
 
 object DeleteIPSetRequest {
   @scala.inline
   def apply(DetectorId: DetectorId, IpSetId: String): DeleteIPSetRequest = {
-    val __obj = js.Dynamic.literal(DetectorId = DetectorId, IpSetId = IpSetId)
+    val __obj = js.Dynamic.literal(DetectorId = DetectorId.asInstanceOf[js.Any], IpSetId = IpSetId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeleteIPSetRequest]
   }

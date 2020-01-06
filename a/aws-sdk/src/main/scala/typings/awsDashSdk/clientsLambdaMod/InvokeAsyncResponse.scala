@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InvokeAsyncResponse extends js.Object {
   /**
     * The status code.
     */
-  var Status: js.UndefOr[HttpStatus] = js.undefined
+  var Status: js.UndefOr[HttpStatus] = js.native
 }
 
 object InvokeAsyncResponse {

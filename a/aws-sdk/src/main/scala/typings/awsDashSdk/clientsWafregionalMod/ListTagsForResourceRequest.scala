@@ -4,18 +4,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ListTagsForResourceRequest extends js.Object {
-  var Limit: js.UndefOr[PaginationLimit] = js.undefined
-  var NextMarker: js.UndefOr[typings.awsDashSdk.clientsWafregionalMod.NextMarker] = js.undefined
-  var ResourceARN: ResourceArn
+  var Limit: js.UndefOr[PaginationLimit] = js.native
+  var NextMarker: js.UndefOr[typings.awsDashSdk.clientsWafregionalMod.NextMarker] = js.native
+  var ResourceARN: ResourceArn = js.native
 }
 
 object ListTagsForResourceRequest {
   @scala.inline
   def apply(ResourceARN: ResourceArn, Limit: Int | Double = null, NextMarker: NextMarker = null): ListTagsForResourceRequest = {
-    val __obj = js.Dynamic.literal(ResourceARN = ResourceARN)
+    val __obj = js.Dynamic.literal(ResourceARN = ResourceARN.asInstanceOf[js.Any])
     if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
-    if (NextMarker != null) __obj.updateDynamic("NextMarker")(NextMarker)
+    if (NextMarker != null) __obj.updateDynamic("NextMarker")(NextMarker.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTagsForResourceRequest]
   }
 }

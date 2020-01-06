@@ -14,8 +14,8 @@ import scala.scalajs.js.annotation._
 object buildSrcPublisherPublishDashErrorMod extends js.Object {
   @js.native
   class PublishError protected ()
-    extends StatusObject
-       with Error {
+    extends Error
+       with StatusObject {
     def this(key: String, err: ServiceError) = this()
     /* CompleteClass */
     override var code: Status = js.native

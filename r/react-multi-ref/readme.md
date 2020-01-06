@@ -11,8 +11,8 @@ Utility for keeping references to multiple React elements.
 | Full name          | react-multi-ref |
 | Keywords           | react, ref |
 | # releases         | 3 |
-| # dependents       | 1 |
-| # downloads        | 12824 |
+| # dependents       | 4 |
+| # downloads        | 126536 |
 | # stars            | 0 |
 
 ## Links

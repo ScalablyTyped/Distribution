@@ -10,9 +10,9 @@ Realm is a mobile database: an alternative to SQLite and key-value stores
 | ------------------ | :-------------: |
 | Full name          | realm |
 | Keywords           | database, db, react, react-native, persistence, localstorage, sqlite, asyncstorage, rocksdb, leveldb, realm |
-| # releases         | 147 |
-| # dependents       | 30 |
-| # downloads        | 472096 |
+| # releases         | 129 |
+| # dependents       | 40 |
+| # downloads        | 591573 |
 | # stars            | 13 |
 
 ## Links

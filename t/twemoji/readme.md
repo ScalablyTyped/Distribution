@@ -4,15 +4,15 @@
 Typings are for version 12.1
 
 ## Library description:
-A Unicode 11.0 standard based way to implement emoji across all platforms.
+A Unicode 12.0 standard based way to implement emoji across all platforms.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | twemoji |
 | Keywords           | emoji, DOM, parser, images, retina, Twitter, unicode |
-| # releases         | 12 |
-| # dependents       | 41 |
-| # downloads        | 471010 |
+| # releases         | 20 |
+| # dependents       | 63 |
+| # downloads        | 1284728 |
 | # stars            | 14 |
 
 ## Links

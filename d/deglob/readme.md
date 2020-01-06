@@ -10,9 +10,9 @@ Take a list of glob patterns and return an array of file locations, respecting `
 | ------------------ | :-------------: |
 | Full name          | deglob |
 | Keywords           | cli, command, deglob, files, glob, unglob, gitignore, ignore, file |
-| # releases         | 4 |
-| # dependents       | 33 |
-| # downloads        | 7982074 |
+| # releases         | 6 |
+| # dependents       | 35 |
+| # downloads        | 9552773 |
 | # stars            | 1 |
 
 ## Links

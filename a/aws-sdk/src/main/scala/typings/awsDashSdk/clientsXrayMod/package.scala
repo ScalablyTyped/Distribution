@@ -90,7 +90,7 @@ package object clientsXrayMod {
   type TelemetryRecordList = js.Array[TelemetryRecord]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.TraceId
-    - typings.awsDashSdk.awsDashSdkStrings.Event
+    - typings.awsDashSdk.awsDashSdkStrings.Event_
     - java.lang.String
   */
   type TimeRangeType = _TimeRangeType | java.lang.String
@@ -114,7 +114,7 @@ package object clientsXrayMod {
   type Version = scala.Double
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2016-04-12`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | java.lang.String

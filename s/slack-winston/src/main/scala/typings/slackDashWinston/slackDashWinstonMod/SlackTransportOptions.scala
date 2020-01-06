@@ -1,17 +1,23 @@
 package typings.slackDashWinston.slackDashWinstonMod
 
-import typings.logform.logformMod.Format
-import typings.winstonDashTransport.winstonDashTransportMod.TransportStreamOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SlackTransportOptions extends TransportStreamOptions {
+trait SlackTransportOptions extends js.Object {
   var channel: String
+  var close: js.UndefOr[js.Function0[Unit]] = js.undefined
   var domain: String
+  // from winston-transport TransportStreamOptions
+  var format: js.UndefOr[Format] = js.undefined
+  var handleExceptions: js.UndefOr[Boolean] = js.undefined
   var icon_emoji: js.UndefOr[String] = js.undefined
+  var level: js.UndefOr[String] = js.undefined
+  var log: js.UndefOr[js.Function2[/* info */ js.Any, /* next */ js.Function0[Unit], _]] = js.undefined
+  var logv: js.UndefOr[js.Function2[/* info */ js.Any, /* next */ js.Function0[Unit], _]] = js.undefined
   var message: js.UndefOr[String] = js.undefined
   var queueDelay: js.UndefOr[Double] = js.undefined
+  var silent: js.UndefOr[Boolean] = js.undefined
   var token: String
   var username: js.UndefOr[String] = js.undefined
   var webhook_url: String

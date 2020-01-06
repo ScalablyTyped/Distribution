@@ -10,9 +10,9 @@ A Webpack plugin to optimize \ minimize CSS assets.
 | ------------------ | :-------------: |
 | Full name          | optimize-css-assets-webpack-plugin |
 | Keywords           | CSS, duplicate, extract-text-webpack-plugin, minimize, optimize, remove, webpack |
-| # releases         | 14 |
-| # dependents       | 1407 |
-| # downloads        | 36728728 |
+| # releases         | 10 |
+| # dependents       | 2448 |
+| # downloads        | 104835532 |
 | # stars            | 24 |
 
 ## Links

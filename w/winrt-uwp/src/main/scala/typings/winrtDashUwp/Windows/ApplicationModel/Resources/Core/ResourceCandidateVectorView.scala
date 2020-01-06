@@ -31,11 +31,8 @@ abstract class ResourceCandidateVectorView () extends Array[ResourceCandidate] {
     */
   def getMany(startIndex: Double): Anon_ItemsReturnValueNumberResourceCandidate = js.native
   def indexOf(value: ResourceCandidate, extra: js.Any*): Anon_Index = js.native
-  /**
-    * Returns the index of a specified ResourceCandidate in the set.
-    * @param value The ResourceCandidate to find in the set.
-    */
+  /* hack */
   @JSName("indexOf")
-  def indexOf_Anon_Index(value: ResourceCandidate): Anon_Index = js.native
+  def indexOf_Double(searchElement: ResourceCandidate): Double = js.native
 }
 

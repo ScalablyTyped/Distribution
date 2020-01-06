@@ -11,8 +11,8 @@ An AngularJS module that allows you to block user interaction on AJAX requests.
 | Full name          | angular-block-ui |
 | Keywords           | angularjs, angular, gulp |
 | # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 201586 |
+| # dependents       | 7 |
+| # downloads        | 175183 |
 | # stars            | 0 |
 
 ## Links

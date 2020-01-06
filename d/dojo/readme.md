@@ -10,9 +10,9 @@ Dojo core is a powerful, lightweight library that makes common tasks quicker and
 | ------------------ | :-------------: |
 | Full name          | dojo |
 | Keywords           | JavaScript, Dojo, Toolkit |
-| # releases         | 20 |
-| # dependents       | 28 |
-| # downloads        | 410164 |
+| # releases         | 22 |
+| # dependents       | 32 |
+| # downloads        | 605324 |
 | # stars            | 3 |
 
 ## Links

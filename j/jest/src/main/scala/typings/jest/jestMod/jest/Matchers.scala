@@ -17,7 +17,7 @@ trait Matchers[R, T] extends js.Object {
     * Note that the type must be either an array or a tuple.
     */
   def lastCalledWith[E /* <: js.Array[_] */](
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type E is not an array type */ args: E
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type E is not an array type */ args: E
   ): R = js.native
   /**
     * Ensure that the last call to a mock function has returned a specified value.
@@ -34,7 +34,7 @@ trait Matchers[R, T] extends js.Object {
     */
   def nthCalledWith[E /* <: js.Array[_] */](
     nthCall: Double,
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param params because its type E is not an array type */ params: E
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param params because its type E is not an array type */ params: E
   ): R = js.native
   /**
     * Ensure that the nth call to a mock function has returned a specified value.
@@ -66,7 +66,7 @@ trait Matchers[R, T] extends js.Object {
     * Note that the type must be either an array or a tuple.
     */
   def toBeCalledWith[E /* <: js.Array[_] */](
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type E is not an array type */ args: E
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type E is not an array type */ args: E
   ): R = js.native
   /**
     * Using exact equality with floating point numbers is a bad idea.
@@ -167,7 +167,7 @@ trait Matchers[R, T] extends js.Object {
     * Note that the type must be either an array or a tuple.
     */
   def toHaveBeenCalledWith[E /* <: js.Array[_] */](
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param params because its type E is not an array type */ params: E
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param params because its type E is not an array type */ params: E
   ): R = js.native
   /**
     * If you have a mock function, you can use `.toHaveBeenLastCalledWith`
@@ -177,7 +177,7 @@ trait Matchers[R, T] extends js.Object {
     * Note that the type must be either an array or a tuple.
     */
   def toHaveBeenLastCalledWith[E /* <: js.Array[_] */](
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param params because its type E is not an array type */ params: E
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param params because its type E is not an array type */ params: E
   ): R = js.native
   /**
     * Ensure that a mock function is called with specific arguments on an Nth call.
@@ -187,7 +187,7 @@ trait Matchers[R, T] extends js.Object {
     */
   def toHaveBeenNthCalledWith[E /* <: js.Array[_] */](
     nthCall: Double,
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param params because its type E is not an array type */ params: E
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param params because its type E is not an array type */ params: E
   ): R = js.native
   /**
     * Use to test the specific value that a mock function last returned.

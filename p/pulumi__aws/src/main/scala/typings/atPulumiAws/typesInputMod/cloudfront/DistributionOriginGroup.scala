@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DistributionOriginGroup extends js.Object {
   /**
     * The failover criteria for when to failover to the secondary origin
     */
-  var failoverCriteria: Input[DistributionOriginGroupFailoverCriteria]
+  var failoverCriteria: Input[DistributionOriginGroupFailoverCriteria] = js.native
   /**
     * Ordered member configuration blocks assigned to the origin group, where the first member is the primary origin. Minimum 2.
     */
-  var members: Input[js.Array[Input[DistributionOriginGroupMember]]]
+  var members: Input[js.Array[Input[DistributionOriginGroupMember]]] = js.native
   /**
     * The unique identifier of the member origin
     */
-  var originId: Input[String]
+  var originId: Input[String] = js.native
 }
 
 object DistributionOriginGroup {

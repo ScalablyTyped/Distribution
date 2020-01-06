@@ -10,15 +10,15 @@ a JSON logging library for node.js services(remove optional dependency DTrace-Pr
 | ------------------ | :-------------: |
 | Full name          | hexo-bunyan |
 | Keywords           | log, logging, log4j, json, bunyan |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 501085 |
+| # downloads        | 603686 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/trentm/node-bunyan#readme)
-- [Bugs](https://github.com/trentm/node-bunyan/issues)
-- [Repository](https://github.com/trentm/node-bunyan)
+- [Homepage](https://github.com/hexojs/hexo-bunyan#readme)
+- [Bugs](https://github.com/hexojs/hexo-bunyan/issues)
+- [Repository](https://github.com/hexojs/hexo-bunyan)
 - [Npm](https://www.npmjs.com/package/hexo-bunyan)
     
 

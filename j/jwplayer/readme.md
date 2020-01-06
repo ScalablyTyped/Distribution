@@ -11,8 +11,8 @@ Typings are for version 8.2
 | Full name          | jwplayer |
 | Keywords           | jwplayer, platform, jwplayer, API |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 4215 |
+| # dependents       | 2 |
+| # downloads        | 5738 |
 | # stars            | 1 |
 
 ## Links

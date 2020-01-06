@@ -10,9 +10,9 @@ frontend library for advanced interactivity based on observables
 | ------------------ | :-------------: |
 | Full name          | sauronjs |
 | Keywords           | observables, reactive, functional, broadcast, events |
-| # releases         | 0 |
+| # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 61467 |
+| # downloads        | 37556 |
 | # stars            | 1 |
 
 ## Links

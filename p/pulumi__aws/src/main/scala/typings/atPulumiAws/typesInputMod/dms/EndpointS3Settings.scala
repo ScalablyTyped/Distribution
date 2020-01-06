@@ -5,14 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EndpointS3Settings extends js.Object {
-  var bucketFolder: js.UndefOr[Input[String]] = js.undefined
-  var bucketName: js.UndefOr[Input[String]] = js.undefined
-  var compressionType: js.UndefOr[Input[String]] = js.undefined
-  var csvDelimiter: js.UndefOr[Input[String]] = js.undefined
-  var csvRowDelimiter: js.UndefOr[Input[String]] = js.undefined
-  var externalTableDefinition: js.UndefOr[Input[String]] = js.undefined
-  var serviceAccessRoleArn: js.UndefOr[Input[String]] = js.undefined
+  var bucketFolder: js.UndefOr[Input[String]] = js.native
+  var bucketName: js.UndefOr[Input[String]] = js.native
+  var compressionType: js.UndefOr[Input[String]] = js.native
+  var csvDelimiter: js.UndefOr[Input[String]] = js.native
+  var csvRowDelimiter: js.UndefOr[Input[String]] = js.native
+  var externalTableDefinition: js.UndefOr[Input[String]] = js.native
+  var serviceAccessRoleArn: js.UndefOr[Input[String]] = js.native
 }
 
 object EndpointS3Settings {

@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetEndpointResult extends js.Object {
   /**
     * The endpoint based on `endpointType`:
@@ -13,19 +14,19 @@ trait GetEndpointResult extends js.Object {
     * * `iot:Data-ATS`: `IDENTIFIER-ats.iot.REGION.amazonaws.com`
     * * `iot:Job`: `IDENTIFIER.jobs.iot.REGION.amazonaws.com`
     */
-  val endpointAddress: String
-  val endpointType: js.UndefOr[String] = js.undefined
+  val endpointAddress: String = js.native
+  val endpointType: js.UndefOr[String] = js.native
   /**
     * id is the provider-assigned unique ID for this managed resource.
     */
-  val id: String
+  val id: String = js.native
 }
 
 object GetEndpointResult {
   @scala.inline
   def apply(endpointAddress: String, id: String, endpointType: String = null): GetEndpointResult = {
-    val __obj = js.Dynamic.literal(endpointAddress = endpointAddress, id = id)
-    if (endpointType != null) __obj.updateDynamic("endpointType")(endpointType)
+    val __obj = js.Dynamic.literal(endpointAddress = endpointAddress.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+    if (endpointType != null) __obj.updateDynamic("endpointType")(endpointType.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetEndpointResult]
   }
 }

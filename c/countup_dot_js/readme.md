@@ -10,9 +10,9 @@ Animates a numerical value by counting to it
 | ------------------ | :-------------: |
 | Full name          | countup.js |
 | Keywords           | - |
-| # releases         | 12 |
-| # dependents       | 109 |
-| # downloads        | 1644950 |
+| # releases         | 6 |
+| # dependents       | 156 |
+| # downloads        | 2626120 |
 | # stars            | 7 |
 
 ## Links

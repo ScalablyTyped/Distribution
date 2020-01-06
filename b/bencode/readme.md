@@ -10,9 +10,9 @@ Bencode de/encoder
 | ------------------ | :-------------: |
 | Full name          | bencode |
 | Keywords           | bdecode, bencode, bencoding, bittorrent, torrent |
-| # releases         | 5 |
-| # dependents       | 83 |
-| # downloads        | 490907 |
+| # releases         | 3 |
+| # dependents       | 86 |
+| # downloads        | 469975 |
 | # stars            | 5 |
 
 ## Links

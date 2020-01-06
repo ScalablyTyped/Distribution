@@ -6,25 +6,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PortfolioState extends js.Object {
-  val arn: js.UndefOr[Input[String]] = js.undefined
-  val createdTime: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
+  val createdTime: js.UndefOr[Input[String]] = js.native
   /**
     * Description of the portfolio
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the portfolio.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * Name of the person or organization who owns the portfolio.
     */
-  val providerName: js.UndefOr[Input[String]] = js.undefined
+  val providerName: js.UndefOr[Input[String]] = js.native
   /**
     * Tags to apply to the connection.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object PortfolioState {

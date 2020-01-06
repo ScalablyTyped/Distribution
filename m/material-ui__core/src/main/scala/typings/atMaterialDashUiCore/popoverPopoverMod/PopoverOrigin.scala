@@ -9,9 +9,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PopoverOrigin extends js.Object {
-  var horizontal: left | center | right | Double
-  var vertical: top | center | bottom | Double
+  var horizontal: left | center | right | Double = js.native
+  var vertical: top | center | bottom | Double = js.native
 }
 
 object PopoverOrigin {

@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AnalyticsApplicationInputsProcessingConfiguration extends js.Object {
-  var lambda: Input[AnalyticsApplicationInputsProcessingConfigurationLambda]
+  var lambda: Input[AnalyticsApplicationInputsProcessingConfigurationLambda] = js.native
 }
 
 object AnalyticsApplicationInputsProcessingConfiguration {

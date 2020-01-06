@@ -23,7 +23,7 @@ trait TagProps extends js.Object {
   var disabled: js.UndefOr[Boolean] = js.undefined
   var isFocused: js.UndefOr[Boolean] = js.undefined
   var isHovered: js.UndefOr[Boolean] = js.undefined
-  var kind: js.UndefOr[custom_ | negative | warning | accent | positive | neutral | primary] = js.undefined
+  var kind: js.UndefOr[custom_ | accent | primary | neutral | positive | warning | negative] = js.undefined
   var onActionClick: js.UndefOr[js.Function2[/* e */ Event, /* children */ js.UndefOr[ReactNode], _]] = js.undefined
   var onActionKeyDown: js.UndefOr[js.Function2[/* e */ Event, /* children */ js.UndefOr[ReactNode], _]] = js.undefined
   var onClick: js.UndefOr[js.Function1[/* event */ Event, _]] = js.undefined
@@ -41,7 +41,7 @@ object TagProps {
     disabled: js.UndefOr[Boolean] = js.undefined,
     isFocused: js.UndefOr[Boolean] = js.undefined,
     isHovered: js.UndefOr[Boolean] = js.undefined,
-    kind: custom_ | negative | warning | accent | positive | neutral | primary = null,
+    kind: custom_ | accent | primary | neutral | positive | warning | negative = null,
     onActionClick: (/* e */ Event, /* children */ js.UndefOr[ReactNode]) => _ = null,
     onActionKeyDown: (/* e */ Event, /* children */ js.UndefOr[ReactNode]) => _ = null,
     onClick: /* event */ Event => _ = null,

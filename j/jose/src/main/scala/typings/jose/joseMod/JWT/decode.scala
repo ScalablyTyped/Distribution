@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("jose", "JWT.decode")
 @js.native
 object decode extends js.Object {
-  def apply(jwt: String): completeResult = js.native
+  def apply(jwt: String): js.Object = js.native
 }
 

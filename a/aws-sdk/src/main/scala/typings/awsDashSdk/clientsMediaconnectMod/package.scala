@@ -9,15 +9,15 @@ package object clientsMediaconnectMod {
   import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
 
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.aes128
+    - typings.awsDashSdk.awsDashSdkStrings.aes128_
     - typings.awsDashSdk.awsDashSdkStrings.aes192
-    - typings.awsDashSdk.awsDashSdkStrings.aes256
+    - typings.awsDashSdk.awsDashSdkStrings.aes256_
     - java.lang.String
   */
   type Algorithm = _Algorithm | String
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.speke
+    - typings.awsDashSdk.awsDashSdkStrings.speke_
     - typings.awsDashSdk.awsDashSdkStrings.`static-key`
     - java.lang.String
   */
@@ -61,7 +61,7 @@ package object clientsMediaconnectMod {
   type __string = String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2018-11-14`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

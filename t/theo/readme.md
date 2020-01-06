@@ -10,9 +10,9 @@ Design Tokens formatter
 | ------------------ | :-------------: |
 | Full name          | theo |
 | Keywords           | css, design, properties, tokens, sass, scss, stylus, less, iOS, Android, aura |
-| # releases         | 25 |
-| # dependents       | 10 |
-| # downloads        | 119911 |
+| # releases         | 13 |
+| # dependents       | 12 |
+| # downloads        | 159879 |
 | # stars            | 6 |
 
 ## Links

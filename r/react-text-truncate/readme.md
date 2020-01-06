@@ -10,9 +10,9 @@ Truncate text for React.js
 | ------------------ | :-------------: |
 | Full name          | react-text-truncate |
 | Keywords           | react, react-component, text, truncate |
-| # releases         | 17 |
-| # dependents       | 12 |
-| # downloads        | 652387 |
+| # releases         | 7 |
+| # dependents       | 20 |
+| # downloads        | 955005 |
 | # stars            | 2 |
 
 ## Links

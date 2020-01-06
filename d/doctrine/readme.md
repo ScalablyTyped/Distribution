@@ -9,9 +9,9 @@ JSDoc parser
 | ------------------ | :-------------: |
 | Full name          | doctrine |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 235 |
-| # downloads        | 349216565 |
+| # releases         | 3 |
+| # dependents       | 271 |
+| # downloads        | 613902973 |
 | # stars            | 3 |
 
 ## Links

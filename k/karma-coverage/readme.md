@@ -10,9 +10,9 @@ A Karma plugin. Generate code coverage.
 | ------------------ | :-------------: |
 | Full name          | karma-coverage |
 | Keywords           | karma-plugin, karma-preprocessor, karma-reporter, coverage, istanbul |
-| # releases         | 2 |
-| # dependents       | 304 |
-| # downloads        | 17852917 |
+| # releases         | 4 |
+| # dependents       | 307 |
+| # downloads        | 16933241 |
 | # stars            | 28 |
 
 ## Links

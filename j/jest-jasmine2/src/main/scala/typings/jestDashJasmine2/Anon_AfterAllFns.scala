@@ -10,7 +10,7 @@ trait Anon_AfterAllFns extends js.Object {
   var beforeAllFns: js.Array[_]
   var children: js.UndefOr[
     js.Array[
-      /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias jest-jasmine2.jest-jasmine2/build/treeProcessor.TreeNode */ js.Object
+      /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias jest-jasmine2.jest-jasmine2/build/treeProcessor.TreeNode */ js.Object
     ]
   ] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
@@ -30,7 +30,7 @@ object Anon_AfterAllFns {
     onException: Error => Unit,
     sharedUserContext: () => js.Any,
     children: js.Array[
-      /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias jest-jasmine2.jest-jasmine2/build/treeProcessor.TreeNode */ js.Object
+      /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias jest-jasmine2.jest-jasmine2/build/treeProcessor.TreeNode */ js.Object
     ] = null,
     disabled: js.UndefOr[Boolean] = js.undefined
   ): Anon_AfterAllFns = {

@@ -12,7 +12,7 @@ Make use of Bootstrap Modal more monkey-friendly.
 | Keywords           | bootstrap, dialog |
 | # releases         | 1 |
 | # dependents       | 9 |
-| # downloads        | 151886 |
+| # downloads        | 103631 |
 | # stars            | 2 |
 
 ## Links

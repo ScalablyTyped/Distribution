@@ -10,9 +10,9 @@ Render text that is announced to screen readers but visually hidden.
 | ------------------ | :-------------: |
 | Full name          | @reach/visually-hidden |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 16 |
-| # downloads        | 120484 |
+| # releases         | 13 |
+| # dependents       | 36 |
+| # downloads        | 634251 |
 | # stars            | 0 |
 
 ## Links

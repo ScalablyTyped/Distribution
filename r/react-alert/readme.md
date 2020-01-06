@@ -10,9 +10,9 @@ A simple react alert component
 | ------------------ | :-------------: |
 | Full name          | react-alert |
 | Keywords           | react, alert, react-alert, toaster, react-toaster, react-component |
-| # releases         | 29 |
-| # dependents       | 10 |
-| # downloads        | 291584 |
+| # releases         | 22 |
+| # dependents       | 14 |
+| # downloads        | 460676 |
 | # stars            | 4 |
 
 ## Links

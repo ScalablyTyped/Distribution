@@ -10,9 +10,9 @@ JavaScript wrapper for pointer and any-pointer media queries
 | ------------------ | :-------------: |
 | Full name          | detect-pointer |
 | Keywords           | detect, pointer, any-pointer, media query |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 440181 |
+| # downloads        | 740039 |
 | # stars            | 0 |
 
 ## Links

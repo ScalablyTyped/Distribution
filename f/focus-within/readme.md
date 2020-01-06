@@ -12,7 +12,7 @@ Style elements when they are focused or contain a focused element
 | Keywords           | postcss, css, postcss-plugin, javascript, js, polyfill, focus, within, pseudos, selectors, accessibility, a11y, descendants, ancestors |
 | # releases         | 8 |
 | # dependents       | 5 |
-| # downloads        | 73555 |
+| # downloads        | 145363 |
 | # stars            | 0 |
 
 ## Links

@@ -4,43 +4,44 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Rule extends js.Object {
   /**
     * The Amazon Resource Name (ARN) of the rule.
     */
-  var Arn: js.UndefOr[RuleArn] = js.undefined
+  var Arn: js.UndefOr[RuleArn] = js.native
   /**
     * The description of the rule.
     */
-  var Description: js.UndefOr[RuleDescription] = js.undefined
+  var Description: js.UndefOr[RuleDescription] = js.native
   /**
     * The event bus associated with the rule.
     */
-  var EventBusName: js.UndefOr[typings.awsDashSdk.clientsCloudwatcheventsMod.EventBusName] = js.undefined
+  var EventBusName: js.UndefOr[typings.awsDashSdk.clientsCloudwatcheventsMod.EventBusName] = js.native
   /**
     * The event pattern of the rule. For more information, see Event Patterns in the Amazon EventBridge User Guide.
     */
-  var EventPattern: js.UndefOr[typings.awsDashSdk.clientsCloudwatcheventsMod.EventPattern] = js.undefined
+  var EventPattern: js.UndefOr[typings.awsDashSdk.clientsCloudwatcheventsMod.EventPattern] = js.native
   /**
     * If an AWS service created the rule on behalf of your account, this field displays the principal name of the service that created the rule.
     */
-  var ManagedBy: js.UndefOr[typings.awsDashSdk.clientsCloudwatcheventsMod.ManagedBy] = js.undefined
+  var ManagedBy: js.UndefOr[typings.awsDashSdk.clientsCloudwatcheventsMod.ManagedBy] = js.native
   /**
     * The name of the rule.
     */
-  var Name: js.UndefOr[RuleName] = js.undefined
+  var Name: js.UndefOr[RuleName] = js.native
   /**
     * The Amazon Resource Name (ARN) of the role that is used for target invocation.
     */
-  var RoleArn: js.UndefOr[typings.awsDashSdk.clientsCloudwatcheventsMod.RoleArn] = js.undefined
+  var RoleArn: js.UndefOr[typings.awsDashSdk.clientsCloudwatcheventsMod.RoleArn] = js.native
   /**
     * The scheduling expression: for example, "cron(0 20 * * ? *)" or "rate(5 minutes)".
     */
-  var ScheduleExpression: js.UndefOr[typings.awsDashSdk.clientsCloudwatcheventsMod.ScheduleExpression] = js.undefined
+  var ScheduleExpression: js.UndefOr[typings.awsDashSdk.clientsCloudwatcheventsMod.ScheduleExpression] = js.native
   /**
     * The state of the rule.
     */
-  var State: js.UndefOr[RuleState] = js.undefined
+  var State: js.UndefOr[RuleState] = js.native
 }
 
 object Rule {
@@ -57,14 +58,14 @@ object Rule {
     State: RuleState = null
   ): Rule = {
     val __obj = js.Dynamic.literal()
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn)
-    if (Description != null) __obj.updateDynamic("Description")(Description)
-    if (EventBusName != null) __obj.updateDynamic("EventBusName")(EventBusName)
-    if (EventPattern != null) __obj.updateDynamic("EventPattern")(EventPattern)
-    if (ManagedBy != null) __obj.updateDynamic("ManagedBy")(ManagedBy)
-    if (Name != null) __obj.updateDynamic("Name")(Name)
-    if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn)
-    if (ScheduleExpression != null) __obj.updateDynamic("ScheduleExpression")(ScheduleExpression)
+    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
+    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (EventBusName != null) __obj.updateDynamic("EventBusName")(EventBusName.asInstanceOf[js.Any])
+    if (EventPattern != null) __obj.updateDynamic("EventPattern")(EventPattern.asInstanceOf[js.Any])
+    if (ManagedBy != null) __obj.updateDynamic("ManagedBy")(ManagedBy.asInstanceOf[js.Any])
+    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
+    if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn.asInstanceOf[js.Any])
+    if (ScheduleExpression != null) __obj.updateDynamic("ScheduleExpression")(ScheduleExpression.asInstanceOf[js.Any])
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
     __obj.asInstanceOf[Rule]
   }

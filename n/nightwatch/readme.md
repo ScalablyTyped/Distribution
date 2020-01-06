@@ -10,9 +10,9 @@ Easy to use Node.js based End-to-End testing solution for browser based apps and
 | ------------------ | :-------------: |
 | Full name          | nightwatch |
 | Keywords           | - |
-| # releases         | 30 |
-| # dependents       | 91 |
-| # downloads        | 7349012 |
+| # releases         | 42 |
+| # dependents       | 108 |
+| # downloads        | 8278513 |
 | # stars            | 25 |
 
 ## Links

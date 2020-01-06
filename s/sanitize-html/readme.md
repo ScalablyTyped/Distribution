@@ -10,9 +10,9 @@ Clean up user-submitted HTML, preserving whitelisted elements and whitelisted at
 | ------------------ | :-------------: |
 | Full name          | sanitize-html |
 | Keywords           | html, parser, sanitizer, html, sanitizer, apostrophe |
-| # releases         | 20 |
-| # dependents       | 335 |
-| # downloads        | 15453149 |
+| # releases         | 14 |
+| # dependents       | 430 |
+| # downloads        | 25738708 |
 | # stars            | 72 |
 
 ## Links

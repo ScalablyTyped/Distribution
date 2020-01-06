@@ -10,10 +10,10 @@ get colors in your node.js console
 | ------------------ | :-------------: |
 | Full name          | colors |
 | Keywords           | ansi, terminal, colors |
-| # releases         | 12 |
-| # dependents       | 12106 |
-| # downloads        | 500020658 |
-| # stars            | 456 |
+| # releases         | 13 |
+| # dependents       | 13257 |
+| # downloads        | 605168954 |
+| # stars            | 457 |
 
 ## Links
 - [Homepage](https://github.com/Marak/colors.js)

@@ -11,12 +11,14 @@ The lodash method `_.isArray` exported as a module.
 | Full name          | lodash.isarray |
 | Keywords           | lodash, lodash-modularized, stdlib, util, isarray |
 | # releases         | 0 |
-| # dependents       | 270 |
-| # downloads        | 141734198 |
+| # dependents       | 280 |
+| # downloads        | 145003350 |
 | # stars            | 1 |
 
 ## Links
 - [Homepage](https://lodash.com/)
+- [Bugs](https://github.com/lodash/lodash/issues)
+- [Repository](https://github.com/lodash/lodash)
 - [Npm](https://www.npmjs.com/package/lodash.isarray)
     
 

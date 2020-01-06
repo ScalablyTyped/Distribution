@@ -10,9 +10,9 @@ Typings are for version 21.0
 | ------------------ | :-------------: |
 | Full name          | jest-docblock |
 | Keywords           | - |
-| # releases         | 72 |
-| # dependents       | 25 |
-| # downloads        | 159431799 |
+| # releases         | 29 |
+| # dependents       | 41 |
+| # downloads        | 249584623 |
 | # stars            | 0 |
 
 ## Links

@@ -11,9 +11,9 @@ Generate massive amounts of fake contextual data
 | Full name          | faker |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 630 |
-| # downloads        | 25019607 |
-| # stars            | 270 |
+| # dependents       | 841 |
+| # downloads        | 42019297 |
+| # stars            | 271 |
 
 ## Links
 - [Homepage](https://github.com/Marak/Faker.js#readme)

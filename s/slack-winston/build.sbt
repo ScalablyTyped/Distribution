@@ -1,14 +1,10 @@
 organization := "org.scalablytyped"
 name := "slack-winston"
-version := "0.0-dt-20180924Z-049264"
+version := "0.0-dt-20200103Z-0095f4"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "logform" % "2.1.2-976bd2",
-  "org.scalablytyped" %%% "node" % "13.1-dt-20191226Z-155d58",
-  "org.scalablytyped" %%% "std" % "3.7-953338",
-  "org.scalablytyped" %%% "winston-transport" % "4.3.0-fe5bee")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

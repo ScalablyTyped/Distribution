@@ -11,8 +11,8 @@ easier than regex string matching patterns for urls and other strings. turn stri
 | Full name          | url-pattern |
 | Keywords           | url, string, matching, pattern, matching, routing, route, regex, match, segment, parsing, parser, parse, combinator, combinators, custom, customizable, filepath, path, domain, separator, stringify, generate, text, processing |
 | # releases         | 1 |
-| # dependents       | 188 |
-| # downloads        | 1690138 |
+| # dependents       | 223 |
+| # downloads        | 2524007 |
 | # stars            | 20 |
 
 ## Links

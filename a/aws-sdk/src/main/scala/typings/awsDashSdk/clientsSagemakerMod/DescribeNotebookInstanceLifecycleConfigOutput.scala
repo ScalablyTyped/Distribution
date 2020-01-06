@@ -4,31 +4,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DescribeNotebookInstanceLifecycleConfigOutput extends js.Object {
   /**
     * A timestamp that tells when the lifecycle configuration was created.
     */
-  var CreationTime: js.UndefOr[typings.awsDashSdk.clientsSagemakerMod.CreationTime] = js.undefined
+  var CreationTime: js.UndefOr[typings.awsDashSdk.clientsSagemakerMod.CreationTime] = js.native
   /**
     * A timestamp that tells when the lifecycle configuration was last modified.
     */
-  var LastModifiedTime: js.UndefOr[typings.awsDashSdk.clientsSagemakerMod.LastModifiedTime] = js.undefined
+  var LastModifiedTime: js.UndefOr[typings.awsDashSdk.clientsSagemakerMod.LastModifiedTime] = js.native
   /**
     * The Amazon Resource Name (ARN) of the lifecycle configuration.
     */
-  var NotebookInstanceLifecycleConfigArn: js.UndefOr[typings.awsDashSdk.clientsSagemakerMod.NotebookInstanceLifecycleConfigArn] = js.undefined
+  var NotebookInstanceLifecycleConfigArn: js.UndefOr[typings.awsDashSdk.clientsSagemakerMod.NotebookInstanceLifecycleConfigArn] = js.native
   /**
     * The name of the lifecycle configuration.
     */
-  var NotebookInstanceLifecycleConfigName: js.UndefOr[typings.awsDashSdk.clientsSagemakerMod.NotebookInstanceLifecycleConfigName] = js.undefined
+  var NotebookInstanceLifecycleConfigName: js.UndefOr[typings.awsDashSdk.clientsSagemakerMod.NotebookInstanceLifecycleConfigName] = js.native
   /**
     * The shell script that runs only once, when you create a notebook instance.
     */
-  var OnCreate: js.UndefOr[NotebookInstanceLifecycleConfigList] = js.undefined
+  var OnCreate: js.UndefOr[NotebookInstanceLifecycleConfigList] = js.native
   /**
     * The shell script that runs every time you start a notebook instance, including when you create the notebook instance.
     */
-  var OnStart: js.UndefOr[NotebookInstanceLifecycleConfigList] = js.undefined
+  var OnStart: js.UndefOr[NotebookInstanceLifecycleConfigList] = js.native
 }
 
 object DescribeNotebookInstanceLifecycleConfigOutput {
@@ -42,12 +43,12 @@ object DescribeNotebookInstanceLifecycleConfigOutput {
     OnStart: NotebookInstanceLifecycleConfigList = null
   ): DescribeNotebookInstanceLifecycleConfigOutput = {
     val __obj = js.Dynamic.literal()
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime)
-    if (LastModifiedTime != null) __obj.updateDynamic("LastModifiedTime")(LastModifiedTime)
-    if (NotebookInstanceLifecycleConfigArn != null) __obj.updateDynamic("NotebookInstanceLifecycleConfigArn")(NotebookInstanceLifecycleConfigArn)
-    if (NotebookInstanceLifecycleConfigName != null) __obj.updateDynamic("NotebookInstanceLifecycleConfigName")(NotebookInstanceLifecycleConfigName)
-    if (OnCreate != null) __obj.updateDynamic("OnCreate")(OnCreate)
-    if (OnStart != null) __obj.updateDynamic("OnStart")(OnStart)
+    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
+    if (LastModifiedTime != null) __obj.updateDynamic("LastModifiedTime")(LastModifiedTime.asInstanceOf[js.Any])
+    if (NotebookInstanceLifecycleConfigArn != null) __obj.updateDynamic("NotebookInstanceLifecycleConfigArn")(NotebookInstanceLifecycleConfigArn.asInstanceOf[js.Any])
+    if (NotebookInstanceLifecycleConfigName != null) __obj.updateDynamic("NotebookInstanceLifecycleConfigName")(NotebookInstanceLifecycleConfigName.asInstanceOf[js.Any])
+    if (OnCreate != null) __obj.updateDynamic("OnCreate")(OnCreate.asInstanceOf[js.Any])
+    if (OnStart != null) __obj.updateDynamic("OnStart")(OnStart.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeNotebookInstanceLifecycleConfigOutput]
   }
 }

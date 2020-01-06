@@ -10,9 +10,9 @@ Realtime client library for Ably.io, the realtime messaging service
 | ------------------ | :-------------: |
 | Full name          | ably |
 | Keywords           | - |
-| # releases         | 45 |
-| # dependents       | 11 |
-| # downloads        | 194915 |
+| # releases         | 48 |
+| # dependents       | 14 |
+| # downloads        | 285700 |
 | # stars            | 0 |
 
 ## Links

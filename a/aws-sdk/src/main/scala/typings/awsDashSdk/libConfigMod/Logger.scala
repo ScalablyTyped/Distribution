@@ -4,8 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Logger extends js.Object {
-  var log: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+  var log: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
   var write: js.UndefOr[
     js.Function3[
       /* chunk */ js.Any, 
@@ -13,7 +14,7 @@ trait Logger extends js.Object {
       /* callback */ js.UndefOr[js.Function0[Unit]], 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
 }
 
 object Logger {

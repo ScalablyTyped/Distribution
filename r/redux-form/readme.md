@@ -10,9 +10,9 @@ A higher order component decorator for forms using Redux and React
 | ------------------ | :-------------: |
 | Full name          | redux-form |
 | Keywords           | react, reactjs, flux, redux, react-redux, redux-form, form, decorator |
-| # releases         | 38 |
-| # dependents       | 471 |
-| # downloads        | 16019106 |
+| # releases         | 23 |
+| # dependents       | 560 |
+| # downloads        | 19430629 |
 | # stars            | 62 |
 
 ## Links

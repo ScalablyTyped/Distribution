@@ -10,9 +10,9 @@ Resize images in memory
 | ------------------ | :-------------: |
 | Full name          | resize-img |
 | Keywords           | bmp, fast, image, jpeg, jpg, memory, png, resize |
-| # releases         | 1 |
-| # dependents       | 16 |
-| # downloads        | 2332094 |
+| # releases         | 3 |
+| # dependents       | 25 |
+| # downloads        | 3952600 |
 | # stars            | 5 |
 
 ## Links

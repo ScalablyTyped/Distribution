@@ -40,7 +40,7 @@ class MetricAlarm protected () extends CustomResource {
     */
   val arn: Output[String] = js.native
   /**
-    * The arithmetic operation to use when comparing the specified Statistic and Threshold. The specified Statistic value is used as the first operand. Either of the following is supported: `GreaterThanOrEqualToThreshold`, `GreaterThanThreshold`, `LessThanThreshold`, `LessThanOrEqualToThreshold`.
+    * The arithmetic operation to use when comparing the specified Statistic and Threshold. The specified Statistic value is used as the first operand. Either of the following is supported: `GreaterThanOrEqualToThreshold`, `GreaterThanThreshold`, `LessThanThreshold`, `LessThanOrEqualToThreshold`. Additionally, the values  `LessThanLowerOrGreaterThanUpperThreshold`, `LessThanLowerThreshold`, and `GreaterThanUpperThreshold` are used only for alarms based on anomaly detection models.
     */
   val comparisonOperator: Output[String] = js.native
   /**
@@ -108,9 +108,13 @@ class MetricAlarm protected () extends CustomResource {
     */
   val tags: Output[js.UndefOr[StringDictionary[_]]] = js.native
   /**
-    * The value against which the specified statistic is compared.
+    * The value against which the specified statistic is compared. This parameter is required for alarms based on static thresholds, but should not be used for alarms based on anomaly detection models.
     */
-  val threshold: Output[Double] = js.native
+  val threshold: Output[js.UndefOr[Double]] = js.native
+  /**
+    * If this is an alarm based on an anomaly detection model, make this value match the ID of the ANOMALY_DETECTION_BAND function.
+    */
+  val thresholdMetricId: Output[js.UndefOr[String]] = js.native
   /**
     * Sets how this alarm is to handle missing data points. The following values are supported: `missing`, `ignore`, `breaching` and `notBreaching`. Defaults to `missing`.
     */

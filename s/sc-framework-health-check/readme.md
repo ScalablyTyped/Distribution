@@ -10,9 +10,9 @@ Health check plugin for SocketCluster.
 | ------------------ | :-------------: |
 | Full name          | sc-framework-health-check |
 | Keywords           | socketcluster, health, check |
-| # releases         | 2 |
-| # dependents       | 7 |
-| # downloads        | 35031 |
+| # releases         | 0 |
+| # dependents       | 9 |
+| # downloads        | 42416 |
 | # stars            | 0 |
 
 ## Links

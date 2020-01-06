@@ -10,9 +10,9 @@ Easily link to other apps with React Native.
 | ------------------ | :-------------: |
 | Full name          | react-native-app-link |
 | Keywords           | React, Native, js |
-| # releases         | 4 |
+| # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 91512 |
+| # downloads        | 154180 |
 | # stars            | 3 |
 
 ## Links

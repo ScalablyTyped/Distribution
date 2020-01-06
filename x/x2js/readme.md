@@ -11,8 +11,8 @@ Transforms between XML string and JavaScript object trees.
 | Full name          | x2js |
 | Keywords           | xml, convert, transform, mapping, map |
 | # releases         | 8 |
-| # dependents       | 34 |
-| # downloads        | 691233 |
+| # dependents       | 48 |
+| # downloads        | 667251 |
 | # stars            | 4 |
 
 ## Links

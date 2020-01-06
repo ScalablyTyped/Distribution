@@ -12,7 +12,7 @@ The lodash method `_.takeWhile` exported as a module.
 | Keywords           | lodash-modularized, takewhile |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 13081 |
+| # downloads        | 23367 |
 | # stars            | 0 |
 
 ## Links

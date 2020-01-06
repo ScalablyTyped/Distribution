@@ -11,14 +11,14 @@ a gulp plugin for file include
 | Full name          | gulp-file-include |
 | Keywords           | gulpplugin, file, include, replace, gulp, plugin |
 | # releases         | 5 |
-| # dependents       | 49 |
-| # downloads        | 308235 |
+| # dependents       | 55 |
+| # downloads        | 343033 |
 | # stars            | 92 |
 
 ## Links
-- [Homepage](https://github.com/coderhaoxin/gulp-file-include#readme)
-- [Bugs](https://github.com/coderhaoxin/gulp-file-include/issues)
-- [Repository](https://github.com/coderhaoxin/gulp-file-include)
+- [Homepage](https://github.com/haoxins/gulp-file-include#readme)
+- [Bugs](https://github.com/haoxins/gulp-file-include/issues)
+- [Repository](https://github.com/haoxins/gulp-file-include)
 - [Npm](https://www.npmjs.com/package/gulp-file-include)
     
 

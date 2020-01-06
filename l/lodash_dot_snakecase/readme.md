@@ -11,8 +11,8 @@ The lodash method `_.snakeCase` exported as a module.
 | Full name          | lodash.snakecase |
 | Keywords           | lodash-modularized, snakecase |
 | # releases         | 0 |
-| # dependents       | 145 |
-| # downloads        | 14614906 |
+| # dependents       | 188 |
+| # downloads        | 26452348 |
 | # stars            | 0 |
 
 ## Links

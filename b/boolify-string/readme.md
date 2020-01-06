@@ -11,7 +11,7 @@ Check a string whether truthy or falsy.
 | Keywords           | bool, boolean, environment, false, falsy, string, true, truthy |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 2653 |
+| # downloads        | 2933 |
 | # stars            | 1 |
 
 ## Links

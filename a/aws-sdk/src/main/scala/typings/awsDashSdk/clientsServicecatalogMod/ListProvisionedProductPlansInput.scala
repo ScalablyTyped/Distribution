@@ -4,27 +4,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ListProvisionedProductPlansInput extends js.Object {
   /**
     * The language code.    en - English (default)    jp - Japanese    zh - Chinese  
     */
-  var AcceptLanguage: js.UndefOr[typings.awsDashSdk.clientsServicecatalogMod.AcceptLanguage] = js.undefined
+  var AcceptLanguage: js.UndefOr[typings.awsDashSdk.clientsServicecatalogMod.AcceptLanguage] = js.native
   /**
     * The access level to use to obtain results. The default is User.
     */
-  var AccessLevelFilter: js.UndefOr[typings.awsDashSdk.clientsServicecatalogMod.AccessLevelFilter] = js.undefined
+  var AccessLevelFilter: js.UndefOr[typings.awsDashSdk.clientsServicecatalogMod.AccessLevelFilter] = js.native
   /**
     * The maximum number of items to return with this call.
     */
-  var PageSize: js.UndefOr[typings.awsDashSdk.clientsServicecatalogMod.PageSize] = js.undefined
+  var PageSize: js.UndefOr[typings.awsDashSdk.clientsServicecatalogMod.PageSize] = js.native
   /**
     * The page token for the next set of results. To retrieve the first set of results, use null.
     */
-  var PageToken: js.UndefOr[typings.awsDashSdk.clientsServicecatalogMod.PageToken] = js.undefined
+  var PageToken: js.UndefOr[typings.awsDashSdk.clientsServicecatalogMod.PageToken] = js.native
   /**
     * The product identifier.
     */
-  var ProvisionProductId: js.UndefOr[Id] = js.undefined
+  var ProvisionProductId: js.UndefOr[Id] = js.native
 }
 
 object ListProvisionedProductPlansInput {
@@ -37,11 +38,11 @@ object ListProvisionedProductPlansInput {
     ProvisionProductId: Id = null
   ): ListProvisionedProductPlansInput = {
     val __obj = js.Dynamic.literal()
-    if (AcceptLanguage != null) __obj.updateDynamic("AcceptLanguage")(AcceptLanguage)
-    if (AccessLevelFilter != null) __obj.updateDynamic("AccessLevelFilter")(AccessLevelFilter)
+    if (AcceptLanguage != null) __obj.updateDynamic("AcceptLanguage")(AcceptLanguage.asInstanceOf[js.Any])
+    if (AccessLevelFilter != null) __obj.updateDynamic("AccessLevelFilter")(AccessLevelFilter.asInstanceOf[js.Any])
     if (PageSize != null) __obj.updateDynamic("PageSize")(PageSize.asInstanceOf[js.Any])
-    if (PageToken != null) __obj.updateDynamic("PageToken")(PageToken)
-    if (ProvisionProductId != null) __obj.updateDynamic("ProvisionProductId")(ProvisionProductId)
+    if (PageToken != null) __obj.updateDynamic("PageToken")(PageToken.asInstanceOf[js.Any])
+    if (ProvisionProductId != null) __obj.updateDynamic("ProvisionProductId")(ProvisionProductId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListProvisionedProductPlansInput]
   }
 }

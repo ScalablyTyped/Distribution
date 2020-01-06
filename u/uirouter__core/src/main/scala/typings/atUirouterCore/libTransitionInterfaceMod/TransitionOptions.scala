@@ -78,6 +78,18 @@ trait TransitionOptions extends js.Object {
   var reloadState: js.UndefOr[StateObject] = js.undefined
   /** @internalapi */
   var source: js.UndefOr[sref | url | redirect | otherwise | unknown] = js.undefined
+  /**
+    * This option may be used to cancel the active transition (if one is active) in favour of the this one.
+    * This is the default behaviour or ui-router.
+    *
+    *
+    * - When `true`, the active transition will be canceled and new transition will begin.
+    * - when `false`, the transition will be canceled if a transition is already running. This can be useful in cases where
+    * you only want to navigate to a different state if you are not already navigating somewhere.
+    *
+    * @default `true`
+    */
+  var supercede: js.UndefOr[Boolean] = js.undefined
 }
 
 object TransitionOptions {
@@ -92,7 +104,8 @@ object TransitionOptions {
     relative: String | StateDeclaration | StateObject = null,
     reload: Boolean | String | StateDeclaration | StateObject = null,
     reloadState: StateObject = null,
-    source: sref | url | redirect | otherwise | unknown = null
+    source: sref | url | redirect | otherwise | unknown = null,
+    supercede: js.UndefOr[Boolean] = js.undefined
   ): TransitionOptions = {
     val __obj = js.Dynamic.literal()
     if (current != null) __obj.updateDynamic("current")(js.Any.fromFunction0(current))
@@ -105,6 +118,7 @@ object TransitionOptions {
     if (reload != null) __obj.updateDynamic("reload")(reload.asInstanceOf[js.Any])
     if (reloadState != null) __obj.updateDynamic("reloadState")(reloadState.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (!js.isUndefined(supercede)) __obj.updateDynamic("supercede")(supercede.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransitionOptions]
   }
 }

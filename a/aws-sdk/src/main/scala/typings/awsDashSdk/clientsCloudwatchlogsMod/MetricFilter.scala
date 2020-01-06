@@ -4,24 +4,25 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MetricFilter extends js.Object {
   /**
     * The creation time of the metric filter, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC.
     */
-  var creationTime: js.UndefOr[Timestamp] = js.undefined
+  var creationTime: js.UndefOr[Timestamp] = js.native
   /**
     * The name of the metric filter.
     */
-  var filterName: js.UndefOr[FilterName] = js.undefined
-  var filterPattern: js.UndefOr[FilterPattern] = js.undefined
+  var filterName: js.UndefOr[FilterName] = js.native
+  var filterPattern: js.UndefOr[FilterPattern] = js.native
   /**
     * The name of the log group.
     */
-  var logGroupName: js.UndefOr[LogGroupName] = js.undefined
+  var logGroupName: js.UndefOr[LogGroupName] = js.native
   /**
     * The metric transformations.
     */
-  var metricTransformations: js.UndefOr[MetricTransformations] = js.undefined
+  var metricTransformations: js.UndefOr[MetricTransformations] = js.native
 }
 
 object MetricFilter {
@@ -35,10 +36,10 @@ object MetricFilter {
   ): MetricFilter = {
     val __obj = js.Dynamic.literal()
     if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
-    if (filterName != null) __obj.updateDynamic("filterName")(filterName)
-    if (filterPattern != null) __obj.updateDynamic("filterPattern")(filterPattern)
-    if (logGroupName != null) __obj.updateDynamic("logGroupName")(logGroupName)
-    if (metricTransformations != null) __obj.updateDynamic("metricTransformations")(metricTransformations)
+    if (filterName != null) __obj.updateDynamic("filterName")(filterName.asInstanceOf[js.Any])
+    if (filterPattern != null) __obj.updateDynamic("filterPattern")(filterPattern.asInstanceOf[js.Any])
+    if (logGroupName != null) __obj.updateDynamic("logGroupName")(logGroupName.asInstanceOf[js.Any])
+    if (metricTransformations != null) __obj.updateDynamic("metricTransformations")(metricTransformations.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricFilter]
   }
 }

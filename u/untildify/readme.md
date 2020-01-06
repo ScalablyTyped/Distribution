@@ -4,15 +4,15 @@
 Typings are for version 4.0.0
 
 ## Library description:
-Convert a tilde path to an absolute path: ~/dev => /Users/sindresorhus/dev
+Convert a tilde path to an absolute path: `~/dev` → `/Users/sindresorhus/dev`
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | untildify |
-| Keywords           | tilde, expansion, expand, untildify, path, home, dir, directory, user, shell, bash |
-| # releases         | 2 |
-| # dependents       | 261 |
-| # downloads        | 36023697 |
+| Keywords           | tilde, expansion, expand, untildify, path, home, directory, user, shell, bash |
+| # releases         | 3 |
+| # dependents       | 297 |
+| # downloads        | 42615424 |
 | # stars            | 5 |
 
 ## Links

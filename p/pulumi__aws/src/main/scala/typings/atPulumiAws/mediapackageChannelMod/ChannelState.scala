@@ -7,27 +7,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ChannelState extends js.Object {
   /**
     * The ARN of the channel
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * A unique identifier describing the channel
     */
-  val channelId: js.UndefOr[Input[String]] = js.undefined
+  val channelId: js.UndefOr[Input[String]] = js.native
   /**
     * A description of the channel
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * A single item list of HLS ingest information
     */
-  val hlsIngests: js.UndefOr[Input[js.Array[Input[ChannelHlsIngest]]]] = js.undefined
+  val hlsIngests: js.UndefOr[Input[js.Array[Input[ChannelHlsIngest]]]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object ChannelState {

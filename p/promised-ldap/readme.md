@@ -12,7 +12,7 @@ A thin wrapper over ldapjs to give a promise interface and a couple of other goo
 | Keywords           | ldap, promise, authentication |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 8368 |
+| # downloads        | 11786 |
 | # stars            | 1 |
 
 ## Links

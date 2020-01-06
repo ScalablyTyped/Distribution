@@ -10,9 +10,9 @@ Relay Redux actions to remote Redux DevTools.
 | ------------------ | :-------------: |
 | Full name          | remote-redux-devtools |
 | Keywords           | redux, devtools, flux, react, hot reloading, time travel, live edit |
-| # releases         | 10 |
-| # dependents       | 38 |
-| # downloads        | 2640995 |
+| # releases         | 6 |
+| # dependents       | 46 |
+| # downloads        | 2144930 |
 | # stars            | 1 |
 
 ## Links

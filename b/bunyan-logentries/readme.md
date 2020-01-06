@@ -12,7 +12,7 @@ Bunyan logger stream for Logentries
 | Keywords           | bunyan, logentries |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 24790 |
+| # downloads        | 28889 |
 | # stars            | 0 |
 
 ## Links

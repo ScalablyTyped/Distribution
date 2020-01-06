@@ -10,9 +10,9 @@ Get the auth token set for an npm registry (if any)
 | ------------------ | :-------------: |
 | Full name          | registry-auth-token |
 | Keywords           | npm, conf, config, npmconf, registry, auth, token, authtoken |
-| # releases         | 6 |
-| # dependents       | 46 |
-| # downloads        | 117682327 |
+| # releases         | 4 |
+| # dependents       | 55 |
+| # downloads        | 193861618 |
 | # stars            | 1 |
 
 ## Links

@@ -10,9 +10,9 @@ Tool for facilitating communication between the Zalando Solution Center and its 
 | ------------------ | :-------------: |
 | Full name          | solution-center-communicator |
 | Keywords           | angular, angularjs, solution, center, zalando, brand, solutions |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 651 |
+| # downloads        | 769 |
 | # stars            | 0 |
 
 ## Links

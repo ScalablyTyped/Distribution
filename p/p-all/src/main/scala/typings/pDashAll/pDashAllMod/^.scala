@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   // TODO: Remove this for the next major release, refactor the whole definition back to multiple overloaded functions
   var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pAll */ js.Any = js.native
-  def apply[Result1](tasks: js.Array[PromiseFactory[Result1]]): js.Promise[js.Array[Result1]] = js.native
-  def apply[Result1](tasks: js.Array[PromiseFactory[Result1]], options: Options): js.Promise[js.Array[Result1]] = js.native
+  def apply[TAll](tasks: js.Array[PromiseFactory[TAll]]): js.Promise[js.Array[TAll]] = js.native
+  def apply[TAll](tasks: js.Array[PromiseFactory[TAll]], options: Options): js.Promise[js.Array[TAll]] = js.native
   def apply[TAll](tasks: Iterable[PromiseFactory[TAll]]): js.Promise[js.Array[TAll]] = js.native
   def apply[TAll](tasks: Iterable[PromiseFactory[TAll]], options: Options): js.Promise[js.Array[TAll]] = js.native
   def apply[Result1, Result2](tasks: js.Tuple2[PromiseFactory[Result1], PromiseFactory[Result2]]): js.Promise[js.Tuple2[Result1, Result2]] = js.native

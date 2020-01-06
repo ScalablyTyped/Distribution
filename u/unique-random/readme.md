@@ -10,9 +10,9 @@ Generate random numbers that are consecutively unique
 | ------------------ | :-------------: |
 | Full name          | unique-random |
 | Keywords           | unique, random, number, single, generate, non-repeating, consecutively |
-| # releases         | 1 |
-| # dependents       | 18 |
-| # downloads        | 698345 |
+| # releases         | 3 |
+| # dependents       | 19 |
+| # downloads        | 1155979 |
 | # stars            | 2 |
 
 ## Links

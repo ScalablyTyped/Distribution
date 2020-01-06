@@ -67,6 +67,11 @@ trait SchemaOptions extends js.Object {
   var toObject: js.UndefOr[DocumentToObjectOptions] = js.undefined
   /** defaults to 'type' */
   var typeKey: js.UndefOr[String] = js.undefined
+  /**
+    * Determines whether a type set to a POJO becomes
+    * a Mixed path or a Subdocument (defaults to true).
+    */
+  var typePojoToMixed: js.UndefOr[Boolean] = js.undefined
   /** defaults to false */
   var useNestedStrict: js.UndefOr[Boolean] = js.undefined
   /** defaults to false */
@@ -103,6 +108,7 @@ object SchemaOptions {
     toJSON: DocumentToObjectOptions = null,
     toObject: DocumentToObjectOptions = null,
     typeKey: String = null,
+    typePojoToMixed: js.UndefOr[Boolean] = js.undefined,
     useNestedStrict: js.UndefOr[Boolean] = js.undefined,
     usePushEach: js.UndefOr[Boolean] = js.undefined,
     validateBeforeSave: js.UndefOr[Boolean] = js.undefined,
@@ -132,6 +138,7 @@ object SchemaOptions {
     if (toJSON != null) __obj.updateDynamic("toJSON")(toJSON.asInstanceOf[js.Any])
     if (toObject != null) __obj.updateDynamic("toObject")(toObject.asInstanceOf[js.Any])
     if (typeKey != null) __obj.updateDynamic("typeKey")(typeKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(typePojoToMixed)) __obj.updateDynamic("typePojoToMixed")(typePojoToMixed.asInstanceOf[js.Any])
     if (!js.isUndefined(useNestedStrict)) __obj.updateDynamic("useNestedStrict")(useNestedStrict.asInstanceOf[js.Any])
     if (!js.isUndefined(usePushEach)) __obj.updateDynamic("usePushEach")(usePushEach.asInstanceOf[js.Any])
     if (!js.isUndefined(validateBeforeSave)) __obj.updateDynamic("validateBeforeSave")(validateBeforeSave.asInstanceOf[js.Any])

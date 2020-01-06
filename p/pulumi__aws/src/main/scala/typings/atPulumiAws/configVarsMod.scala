@@ -11,8 +11,10 @@ object configVarsMod extends js.Object {
   var accessKey: js.UndefOr[String] = js.native
   var allowedAccountIds: js.UndefOr[js.Array[String]] = js.native
   var assumeRole: js.UndefOr[Anon_ExternalId] = js.native
-  var endpoints: js.UndefOr[js.Array[Anon_Acm]] = js.native
+  var endpoints: js.UndefOr[js.Array[Anon_Accessanalyzer]] = js.native
   var forbiddenAccountIds: js.UndefOr[js.Array[String]] = js.native
+  var ignoreTagPrefixes: js.UndefOr[js.Array[String]] = js.native
+  var ignoreTags: js.UndefOr[js.Array[String]] = js.native
   var insecure: js.UndefOr[Boolean] = js.native
   var maxRetries: js.UndefOr[Double] = js.native
   var profile: js.UndefOr[String] = js.native

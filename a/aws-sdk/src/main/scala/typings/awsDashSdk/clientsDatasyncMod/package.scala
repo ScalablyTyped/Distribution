@@ -37,6 +37,7 @@ package object clientsDatasyncMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.PUBLIC
     - typings.awsDashSdk.awsDashSdkStrings.PRIVATE_LINK
+    - typings.awsDashSdk.awsDashSdkStrings.FIPS
     - java.lang.String
   */
   type EndpointType = _EndpointType | String
@@ -91,7 +92,6 @@ package object clientsDatasyncMod {
   type PhaseStatus = _PhaseStatus | String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.NONE
-    - typings.awsDashSdk.awsDashSdkStrings.BEST_EFFORT
     - typings.awsDashSdk.awsDashSdkStrings.PRESERVE
     - java.lang.String
   */
@@ -119,6 +119,7 @@ package object clientsDatasyncMod {
     - java.lang.String
   */
   type S3StorageClass = _S3StorageClass | String
+  type ScheduleExpressionCron = String
   type ServerHostname = String
   type SmbDomain = String
   type SmbPassword = String
@@ -186,7 +187,7 @@ package object clientsDatasyncMod {
   type VpcEndpointId = String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2018-11-09`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

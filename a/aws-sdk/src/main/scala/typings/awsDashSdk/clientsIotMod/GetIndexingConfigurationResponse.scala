@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetIndexingConfigurationResponse extends js.Object {
   /**
     * The index configuration.
     */
-  var thingGroupIndexingConfiguration: js.UndefOr[ThingGroupIndexingConfiguration] = js.undefined
+  var thingGroupIndexingConfiguration: js.UndefOr[ThingGroupIndexingConfiguration] = js.native
   /**
     * Thing indexing configuration.
     */
-  var thingIndexingConfiguration: js.UndefOr[ThingIndexingConfiguration] = js.undefined
+  var thingIndexingConfiguration: js.UndefOr[ThingIndexingConfiguration] = js.native
 }
 
 object GetIndexingConfigurationResponse {
@@ -22,8 +23,8 @@ object GetIndexingConfigurationResponse {
     thingIndexingConfiguration: ThingIndexingConfiguration = null
   ): GetIndexingConfigurationResponse = {
     val __obj = js.Dynamic.literal()
-    if (thingGroupIndexingConfiguration != null) __obj.updateDynamic("thingGroupIndexingConfiguration")(thingGroupIndexingConfiguration)
-    if (thingIndexingConfiguration != null) __obj.updateDynamic("thingIndexingConfiguration")(thingIndexingConfiguration)
+    if (thingGroupIndexingConfiguration != null) __obj.updateDynamic("thingGroupIndexingConfiguration")(thingGroupIndexingConfiguration.asInstanceOf[js.Any])
+    if (thingIndexingConfiguration != null) __obj.updateDynamic("thingIndexingConfiguration")(thingIndexingConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetIndexingConfigurationResponse]
   }
 }

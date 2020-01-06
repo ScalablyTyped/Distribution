@@ -10,42 +10,41 @@ import scala.scalajs.js.annotation._
 @js.native
 class CanvasContext protected () extends IRenderContext {
   def this(context: CanvasRenderingContext2D) = this()
-   //inconsistent name: x -> x2, y -> y2
   @JSName("arc")
-  def arc_Unit(x: Double, y: Double, radius: Double, startAngle: Double, endAngle: Double, antiClockwise: Boolean): Unit = js.native
+  def arc_CanvasContext(x: Double, y: Double, radius: Double, startAngle: Double, endAngle: Double, antiClockwise: Boolean): CanvasContext = js.native
   @JSName("beginPath")
-  def beginPath_Unit(): Unit = js.native
+  def beginPath_CanvasContext(): CanvasContext = js.native
   def bezierCurveToTo(x1: Double, y1: Double, x2: Double, y2: Double, x: Double, y: Double): Unit = js.native
   @JSName("clearRect")
-  def clearRect_Unit(x: Double, y: Double, width: Double, height: Double): Unit = js.native
+  def clearRect_CanvasContext(x: Double, y: Double, width: Double, height: Double): CanvasContext = js.native
   @JSName("closePath")
-  def closePath_Unit(): Unit = js.native
+  def closePath_CanvasContext(): CanvasContext = js.native
   @JSName("fillRect")
-  def fillRect_Unit(x: Double, y: Double, width: Double, height: Double): Unit = js.native
+  def fillRect_CanvasContext(x: Double, y: Double, width: Double, height: Double): CanvasContext = js.native
   @JSName("fillText")
-  def fillText_Unit(text: String, x: Double, y: Double): Unit = js.native
+  def fillText_CanvasContext(text: String, x: Double, y: Double): CanvasContext = js.native
   @JSName("fill")
-  def fill_Unit(): Unit = js.native
+  def fill_CanvasContext(): CanvasContext = js.native
   @JSName("glow")
-  def glow_Unit(): Unit = js.native
+  def glow_CanvasContext(): CanvasContext = js.native
   @JSName("lineTo")
-  def lineTo_Unit(x: Double, y: Double): Unit = js.native
+  def lineTo_CanvasContext(x: Double, y: Double): CanvasContext = js.native
   @JSName("moveTo")
-  def moveTo_Unit(x: Double, y: Double): Unit = js.native
+  def moveTo_CanvasContext(x: Double, y: Double): CanvasContext = js.native
   def quadraticCurveToTo(x1: Double, y1: Double, x: Double, y: Double): Unit = js.native
   @JSName("resize")
-  def resize_Unit(width: Double, height: Double): Unit = js.native
+  def resize_CanvasContext(width: Double, height: Double): CanvasContext = js.native
   @JSName("restore")
-  def restore_Unit(): Unit = js.native
+  def restore_CanvasContext(): CanvasContext = js.native
   @JSName("save")
-  def save_Unit(): Unit = js.native
+  def save_CanvasContext(): CanvasContext = js.native
   @JSName("scale")
-  def scale_Unit(x: Double, y: Double): Unit = js.native
-  //inconsistent type: void -> CanvasContext
+  def scale_CanvasContext(x: Double, y: Double): CanvasContext = js.native
+  //TODO remove the following lines once TypeScript allows subclass overrides with type changes or type inconsistencies mentioned below are fixed
   @JSName("setLineDash")
-  def setLineDash_Unit(dash: String): Unit = js.native
+  def setLineDash_CanvasContext(dash: String): CanvasContext = js.native
   @JSName("stroke")
-  def stroke_Unit(): Unit = js.native
+  def stroke_CanvasContext(): CanvasContext = js.native
 }
 
 /* static members */

@@ -10,9 +10,9 @@ Routing for Fluxible applications
 | ------------------ | :-------------: |
 | Full name          | fluxible-router |
 | Keywords           | flux, fluxible, history, navigation, react, router |
-| # releases         | 11 |
+| # releases         | 8 |
 | # dependents       | 1 |
-| # downloads        | 68134 |
+| # downloads        | 118969 |
 | # stars            | 0 |
 
 ## Links

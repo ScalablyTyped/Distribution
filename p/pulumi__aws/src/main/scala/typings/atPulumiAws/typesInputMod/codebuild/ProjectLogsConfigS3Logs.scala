@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ProjectLogsConfigS3Logs extends js.Object {
   /**
     * If set to true, output artifacts will not be encrypted. If `type` is set to `NO_ARTIFACTS` then this value will be ignored. Defaults to `false`.
     */
-  var encryptionDisabled: js.UndefOr[Input[Boolean]] = js.undefined
+  var encryptionDisabled: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The location of the source code from git or s3.
     */
-  var location: js.UndefOr[Input[String]] = js.undefined
+  var location: js.UndefOr[Input[String]] = js.native
   /**
     * Current status of logs in S3 for a build project. Valid values: `ENABLED`, `DISABLED`. Defaults to `DISABLED`.
     */
-  var status: js.UndefOr[Input[String]] = js.undefined
+  var status: js.UndefOr[Input[String]] = js.native
 }
 
 object ProjectLogsConfigS3Logs {

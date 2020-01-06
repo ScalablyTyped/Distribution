@@ -10,10 +10,10 @@ An onClickOutside wrapper for React components
 | ------------------ | :-------------: |
 | Full name          | react-onclickoutside |
 | Keywords           | react, onclick, outside, onclickoutside |
-| # releases         | 18 |
-| # dependents       | 330 |
-| # downloads        | 26116414 |
-| # stars            | 11 |
+| # releases         | 4 |
+| # dependents       | 402 |
+| # downloads        | 34896601 |
+| # stars            | 12 |
 
 ## Links
 - [Homepage](https://github.com/Pomax/react-onclickoutside)

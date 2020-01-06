@@ -5,37 +5,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MountTargetState extends js.Object {
   /**
     * The DNS name for the given subnet/AZ per [documented convention](http://docs.aws.amazon.com/efs/latest/ug/mounting-fs-mount-cmd-dns-name.html).
     */
-  val dnsName: js.UndefOr[Input[String]] = js.undefined
+  val dnsName: js.UndefOr[Input[String]] = js.native
   /**
     * Amazon Resource Name of the file system.
     */
-  val fileSystemArn: js.UndefOr[Input[String]] = js.undefined
+  val fileSystemArn: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of the file system for which the mount target is intended.
     */
-  val fileSystemId: js.UndefOr[Input[String]] = js.undefined
+  val fileSystemId: js.UndefOr[Input[String]] = js.native
   /**
     * The address (within the address range of the specified subnet) at
     * which the file system may be mounted via the mount target.
     */
-  val ipAddress: js.UndefOr[Input[String]] = js.undefined
+  val ipAddress: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of the network interface that Amazon EFS created when it created the mount target.
     */
-  val networkInterfaceId: js.UndefOr[Input[String]] = js.undefined
+  val networkInterfaceId: js.UndefOr[Input[String]] = js.native
   /**
     * A list of up to 5 VPC security group IDs (that must
     * be for the same VPC as subnet specified) in effect for the mount target.
     */
-  val securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The ID of the subnet to add the mount target in.
     */
-  val subnetId: js.UndefOr[Input[String]] = js.undefined
+  val subnetId: js.UndefOr[Input[String]] = js.native
 }
 
 object MountTargetState {

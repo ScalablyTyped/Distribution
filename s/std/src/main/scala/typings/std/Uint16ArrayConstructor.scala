@@ -11,15 +11,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Uint16ArrayConstructor
   extends Instantiable0[Uint16Array]
+     with Instantiable1[
+      (/* arrayOrArrayBuffer */ ArrayBufferLike) | (/* arrayOrArrayBuffer */ ArrayLike[Double]) | (/* length */ Double) | (/* elements */ Iterable[Double]), 
+      Uint16Array
+    ]
      with Instantiable2[/* buffer */ ArrayBufferLike, /* byteOffset */ Double, Uint16Array]
      with Instantiable3[
       /* buffer */ ArrayBufferLike, 
       /* byteOffset */ Double, 
       /* length */ Double, 
-      Uint16Array
-    ]
-     with Instantiable1[
-      (/* arrayOrArrayBuffer */ ArrayBufferLike) | (/* arrayOrArrayBuffer */ ArrayLike[Double]) | (/* length */ Double) | (/* elements */ Iterable[Double]), 
       Uint16Array
     ] {
   /**

@@ -11,8 +11,8 @@ TarGz for NodeJS
 | Full name          | targz |
 | Keywords           | targz, tar.gz, tar, gz, gzip, node |
 | # releases         | 1 |
-| # dependents       | 82 |
-| # downloads        | 2243893 |
+| # dependents       | 102 |
+| # downloads        | 2598807 |
 | # stars            | 5 |
 
 ## Links

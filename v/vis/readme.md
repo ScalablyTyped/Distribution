@@ -11,8 +11,8 @@ A dynamic, browser-based visualization library.
 | Full name          | vis |
 | Keywords           | vis, visualization, web based, browser based, javascript, chart, linechart, timeline, graph, network, browser |
 | # releases         | 5 |
-| # dependents       | 59 |
-| # downloads        | 1263990 |
+| # dependents       | 67 |
+| # downloads        | 1983459 |
 | # stars            | 7 |
 
 ## Links

@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CurrentMetric extends js.Object {
   /**
     * The name of the metric.
     */
-  var Name: js.UndefOr[CurrentMetricName] = js.undefined
+  var Name: js.UndefOr[CurrentMetricName] = js.native
   /**
     * The unit for the metric.
     */
-  var Unit: js.UndefOr[typings.awsDashSdk.clientsConnectMod.Unit] = js.undefined
+  var Unit: js.UndefOr[typings.awsDashSdk.clientsConnectMod.Unit] = js.native
 }
 
 object CurrentMetric {

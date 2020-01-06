@@ -10,9 +10,9 @@ PhosphorJS - Disposable
 | ------------------ | :-------------: |
 | Full name          | @phosphor/disposable |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 115 |
-| # downloads        | 1421503 |
+| # releases         | 5 |
+| # dependents       | 186 |
+| # downloads        | 1812782 |
 | # stars            | 0 |
 
 ## Links

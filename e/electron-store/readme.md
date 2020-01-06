@@ -10,9 +10,9 @@ Simple data persistence for your Electron app or module - Save and load user pre
 | ------------------ | :-------------: |
 | Full name          | electron-store |
 | Keywords           | electron, store, app, config, storage, conf, configuration, settings, preferences, json, data, persist, persistent, save |
-| # releases         | 6 |
-| # dependents       | 51 |
-| # downloads        | 329896 |
+| # releases         | 9 |
+| # dependents       | 65 |
+| # downloads        | 657960 |
 | # stars            | 11 |
 
 ## Links

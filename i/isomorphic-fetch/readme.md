@@ -11,8 +11,8 @@ Isomorphic WHATWG Fetch API, for Node & Browserify
 | Full name          | isomorphic-fetch |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 2652 |
-| # downloads        | 138552156 |
+| # dependents       | 3038 |
+| # downloads        | 186781921 |
 | # stars            | 117 |
 
 ## Links

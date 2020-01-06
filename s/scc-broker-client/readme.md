@@ -10,9 +10,9 @@ Client for the SC cluster - For horizontal scalability.
 | ------------------ | :-------------: |
 | Full name          | scc-broker-client |
 | Keywords           | SocketCluster, client, horizontal, scalability |
-| # releases         | 23 |
-| # dependents       | 4 |
-| # downloads        | 36775 |
+| # releases         | 13 |
+| # dependents       | 6 |
+| # downloads        | 121400 |
 | # stars            | 0 |
 
 ## Links

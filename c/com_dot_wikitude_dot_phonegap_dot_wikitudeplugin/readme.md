@@ -5,15 +5,15 @@ Typings are for version 7.2
 
 ## Library description:
 Augmented Reality Wikitude SDK Plugin 
-        The Wikitude Cordova Plugin enables developers to embed an augmented reality view into their PhoneGap project. You can create a fully featured app with advanced augmented reality features, including image rec
+        The Wikitude Cordova Plugin enables developers to embed an augmented reality view into their Cordova project. You can create a fully featured app with advanced augmented reality features, including image reco
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | com.wikitude.phonegap.wikitudeplugin |
-| Keywords           | AR, augmented reality, Wikitude, image recognition, markerless tracking, cloud recognition, ecosystem:cordova, cordova-android, cordova-ios |
-| # releases         | 4 |
+| Keywords           | AR, augmented reality, Wikitude, image recognition, object recognition, markerless tracking, cloud recognition, ecosystem:cordova, cordova-android, cordova-ios |
+| # releases         | 5 |
 | # dependents       | 0 |
-| # downloads        | 852 |
+| # downloads        | 1516 |
 | # stars            | 0 |
 
 ## Links

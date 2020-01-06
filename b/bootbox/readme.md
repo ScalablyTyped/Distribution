@@ -4,15 +4,15 @@
 Typings are for version 5.2.0
 
 ## Library description:
-Wrappers for JavaScript alert(), confirm() and other flexible dialogs using the Bootstrap framework
+Wrappers for JavaScript alert(), confirm(), prompt(), and other flexible dialogs using the Bootstrap framework
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | bootbox |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 22 |
-| # downloads        | 636457 |
+| # releases         | 15 |
+| # dependents       | 24 |
+| # downloads        | 852782 |
 | # stars            | 6 |
 
 ## Links

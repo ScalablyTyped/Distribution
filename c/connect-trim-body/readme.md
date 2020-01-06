@@ -12,7 +12,7 @@ Connect/Express middleware to trim all parameters in request body. Works recursi
 | Keywords           | trim, sanitize, body, connect, express |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 3198 |
+| # downloads        | 5937 |
 | # stars            | 0 |
 
 ## Links

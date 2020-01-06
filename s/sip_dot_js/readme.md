@@ -10,9 +10,9 @@ A simple, intuitive, and powerful JavaScript signaling library
 | ------------------ | :-------------: |
 | Full name          | sip.js |
 | Keywords           | sip, webrtc, library, websocket, javascript, typescript |
-| # releases         | 25 |
-| # dependents       | 17 |
-| # downloads        | 105388 |
+| # releases         | 35 |
+| # dependents       | 24 |
+| # downloads        | 202836 |
 | # stars            | 1 |
 
 ## Links

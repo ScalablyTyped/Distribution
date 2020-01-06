@@ -6,35 +6,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LicenseConfigurationArgs extends js.Object {
   /**
     * Description of the license configuration.
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * Number of licenses managed by the license configuration.
     */
-  val licenseCount: js.UndefOr[Input[Double]] = js.undefined
+  val licenseCount: js.UndefOr[Input[Double]] = js.native
   /**
     * Sets the number of available licenses as a hard limit.
     */
-  val licenseCountHardLimit: js.UndefOr[Input[Boolean]] = js.undefined
+  val licenseCountHardLimit: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Dimension to use to track license inventory. Specify either `vCPU`, `Instance`, `Core` or `Socket`.
     */
-  val licenseCountingType: Input[String]
+  val licenseCountingType: Input[String] = js.native
   /**
     * Array of configured License Manager rules.
     */
-  val licenseRules: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val licenseRules: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * Name of the license configuration.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object LicenseConfigurationArgs {

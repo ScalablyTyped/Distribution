@@ -11,8 +11,8 @@ Check if a file path is a text file
 | Full name          | is-text-path |
 | Keywords           | text, extensions, extension, file, path, check, detect, is |
 | # releases         | 2 |
-| # dependents       | 20 |
-| # downloads        | 20211086 |
+| # dependents       | 25 |
+| # downloads        | 39301338 |
 | # stars            | 1 |
 
 ## Links

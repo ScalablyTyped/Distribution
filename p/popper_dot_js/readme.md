@@ -10,9 +10,9 @@ A kickass library to manage your poppers
 | ------------------ | :-------------: |
 | Full name          | popper.js |
 | Keywords           | popperjs, component, drop, tooltip, popover, position, attached |
-| # releases         | 60 |
-| # dependents       | 1088 |
-| # downloads        | 64993861 |
+| # releases         | 15 |
+| # dependents       | 1634 |
+| # downloads        | 137271439 |
 | # stars            | 24 |
 
 ## Links

@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WebAclAssociationState extends js.Object {
   /**
     * ARN of the resource to associate with. For example, an Application Load Balancer or API Gateway Stage.
     */
-  val resourceArn: js.UndefOr[Input[String]] = js.undefined
+  val resourceArn: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of the WAF Regional WebACL to create an association.
     */
-  val webAclId: js.UndefOr[Input[String]] = js.undefined
+  val webAclId: js.UndefOr[Input[String]] = js.native
 }
 
 object WebAclAssociationState {

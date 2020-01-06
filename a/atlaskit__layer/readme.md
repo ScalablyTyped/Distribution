@@ -10,9 +10,9 @@ A React layer component responsible for the position of an element on a page
 | ------------------ | :-------------: |
 | Full name          | @atlaskit/layer |
 | Keywords           | atlaskit, react, ui |
-| # releases         | 56 |
-| # dependents       | 5 |
-| # downloads        | 2035418 |
+| # releases         | 47 |
+| # dependents       | 4 |
+| # downloads        | 2057503 |
 | # stars            | 0 |
 
 ## Links

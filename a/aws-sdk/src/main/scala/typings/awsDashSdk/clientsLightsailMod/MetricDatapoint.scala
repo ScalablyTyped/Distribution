@@ -4,35 +4,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MetricDatapoint extends js.Object {
   /**
     * The average.
     */
-  var average: js.UndefOr[double] = js.undefined
+  var average: js.UndefOr[double] = js.native
   /**
     * The maximum.
     */
-  var maximum: js.UndefOr[double] = js.undefined
+  var maximum: js.UndefOr[double] = js.native
   /**
     * The minimum.
     */
-  var minimum: js.UndefOr[double] = js.undefined
+  var minimum: js.UndefOr[double] = js.native
   /**
     * The sample count.
     */
-  var sampleCount: js.UndefOr[double] = js.undefined
+  var sampleCount: js.UndefOr[double] = js.native
   /**
     * The sum.
     */
-  var sum: js.UndefOr[double] = js.undefined
+  var sum: js.UndefOr[double] = js.native
   /**
     * The timestamp (e.g., 1479816991.349).
     */
-  var timestamp: js.UndefOr[typings.awsDashSdk.clientsLightsailMod.timestamp] = js.undefined
+  var timestamp: js.UndefOr[typings.awsDashSdk.clientsLightsailMod.timestamp] = js.native
   /**
     * The unit. 
     */
-  var unit: js.UndefOr[MetricUnit] = js.undefined
+  var unit: js.UndefOr[MetricUnit] = js.native
 }
 
 object MetricDatapoint {
@@ -52,7 +53,7 @@ object MetricDatapoint {
     if (minimum != null) __obj.updateDynamic("minimum")(minimum.asInstanceOf[js.Any])
     if (sampleCount != null) __obj.updateDynamic("sampleCount")(sampleCount.asInstanceOf[js.Any])
     if (sum != null) __obj.updateDynamic("sum")(sum.asInstanceOf[js.Any])
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp)
+    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
     if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricDatapoint]
   }

@@ -76,10 +76,10 @@ trait TypeofImmutable extends js.Object {
     collections: ((Iterable[_ | (js.Tuple2[_, _])]) | StringDictionary[js.Any])*
   ): C = js.native
   def remove[C /* <: js.Array[_] */](collection: C, key: Double): C = js.native
-  def remove[C, K /* <: String */](collection: C, key: K): C = js.native
+  def remove[C /* <: StringDictionary[js.Any] */, K /* <: String */](collection: C, key: K): C = js.native
   def removeIn[C](collection: C, keyPath: Iterable[_]): C = js.native
   @JSName("remove")
-  def remove_C_StringDictionaryAnyK_String[C /* <: StringDictionary[js.Any] */, K /* <: String */](collection: C, key: K): C = js.native
+  def remove_CK_String[C, K /* <: String */](collection: C, key: K): C = js.native
   @JSName("remove")
   def remove_KC_CollectionKWildcard[K, C /* <: typings.immutable.Immutable.Collection[K, _] */](collection: C, key: K): C = js.native
   @JSName("remove")

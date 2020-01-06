@@ -5,27 +5,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UserPoolPasswordPolicy extends js.Object {
   /**
     * The minimum length of the password policy that you have set.
     */
-  var minimumLength: js.UndefOr[Input[Double]] = js.undefined
+  var minimumLength: js.UndefOr[Input[Double]] = js.native
   /**
     * Whether you have required users to use at least one lowercase letter in their password.
     */
-  var requireLowercase: js.UndefOr[Input[Boolean]] = js.undefined
+  var requireLowercase: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Whether you have required users to use at least one number in their password.
     */
-  var requireNumbers: js.UndefOr[Input[Boolean]] = js.undefined
+  var requireNumbers: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Whether you have required users to use at least one symbol in their password.
     */
-  var requireSymbols: js.UndefOr[Input[Boolean]] = js.undefined
+  var requireSymbols: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Whether you have required users to use at least one uppercase letter in their password.
     */
-  var requireUppercase: js.UndefOr[Input[Boolean]] = js.undefined
+  var requireUppercase: js.UndefOr[Input[Boolean]] = js.native
 }
 
 object UserPoolPasswordPolicy {

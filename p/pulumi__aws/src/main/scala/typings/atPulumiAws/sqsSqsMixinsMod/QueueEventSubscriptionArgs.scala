@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait QueueEventSubscriptionArgs extends js.Object {
   /**
     * The largest number of records that AWS Lambda will retrieve. The maximum batch size supported
@@ -12,7 +13,7 @@ trait QueueEventSubscriptionArgs extends js.Object {
     *
     * See https://docs.aws.amazon.com/lambda/latest/dg/with-sqs.html for more details.
     */
-  var batchSize: js.UndefOr[Double] = js.undefined
+  var batchSize: js.UndefOr[Double] = js.native
 }
 
 object QueueEventSubscriptionArgs {

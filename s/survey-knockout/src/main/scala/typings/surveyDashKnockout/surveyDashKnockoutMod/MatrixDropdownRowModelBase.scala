@@ -14,6 +14,7 @@ class MatrixDropdownRowModelBase protected ()
   def this(data: IMatrixDropdownData, value: js.Any) = this()
   var cells: js.Array[MatrixDropdownCell] = js.native
   var data: IMatrixDropdownData = js.native
+  val hasCondition: Boolean = js.native
   val id: String = js.native
   val isEmpty: Boolean = js.native
   val locText: LocalizableString = js.native

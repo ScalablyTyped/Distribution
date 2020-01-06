@@ -10,9 +10,9 @@ A analytics package for new firebase packages
 | ------------------ | :-------------: |
 | Full name          | @firebase/analytics |
 | Keywords           | - |
-| # releases         | 46 |
-| # dependents       | 1 |
-| # downloads        | 139626 |
+| # releases         | 139 |
+| # dependents       | 3 |
+| # downloads        | 1592234 |
 | # stars            | 0 |
 
 ## Links

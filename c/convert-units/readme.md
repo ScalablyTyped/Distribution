@@ -11,8 +11,8 @@ Convert between quantities in different units
 | Full name          | convert-units |
 | Keywords           | metric, imperial, convert, ratio, fraction |
 | # releases         | 4 |
-| # dependents       | 60 |
-| # downloads        | 501662 |
+| # dependents       | 63 |
+| # downloads        | 589341 |
 | # stars            | 10 |
 
 ## Links

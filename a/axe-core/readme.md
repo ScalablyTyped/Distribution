@@ -9,10 +9,10 @@ Accessibility engine for automated Web UI testing
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | axe-core |
-| Keywords           | Accessibility, a11y, testing, unit, tdd, bdd, aXe |
-| # releases         | 78 |
-| # dependents       | 65 |
-| # downloads        | 7988608 |
+| Keywords           | Accessibility, a11y, testing, unit, tdd, bdd, axe |
+| # releases         | 257 |
+| # dependents       | 83 |
+| # downloads        | 20542179 |
 | # stars            | 21 |
 
 ## Links

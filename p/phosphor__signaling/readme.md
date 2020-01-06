@@ -10,9 +10,9 @@ PhosphorJS - Signals and Slots
 | ------------------ | :-------------: |
 | Full name          | @phosphor/signaling |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 94 |
-| # downloads        | 1405090 |
+| # releases         | 4 |
+| # dependents       | 149 |
+| # downloads        | 1798910 |
 | # stars            | 0 |
 
 ## Links

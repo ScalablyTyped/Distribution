@@ -11,8 +11,8 @@ Normalizes and denormalizes JSON according to schema for Redux and Flux applicat
 | Full name          | normalizr |
 | Keywords           | flux, redux, normalize, denormalize, api, json |
 | # releases         | 4 |
-| # dependents       | 247 |
-| # downloads        | 6184895 |
+| # dependents       | 281 |
+| # downloads        | 9231179 |
 | # stars            | 59 |
 
 ## Links

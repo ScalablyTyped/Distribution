@@ -12,7 +12,7 @@ Speed-optimized BitSet implementation for modern browsers and JavaScript engines
 | Keywords           | bitmap, bitset, performance |
 | # releases         | 5 |
 | # dependents       | 2 |
-| # downloads        | 3325 |
+| # downloads        | 3415 |
 | # stars            | 1 |
 
 ## Links

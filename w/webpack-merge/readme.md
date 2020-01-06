@@ -11,8 +11,8 @@ Variant of merge that's useful for webpack configuration
 | Full name          | webpack-merge |
 | Keywords           | webpack, merge |
 | # releases         | 7 |
-| # dependents       | 1484 |
-| # downloads        | 77280754 |
+| # dependents       | 2093 |
+| # downloads        | 129600309 |
 | # stars            | 81 |
 
 ## Links

@@ -42,11 +42,11 @@ object createRoutine extends js.Object {
     typePrefix: String,
     payloadCreator: js.UndefOr[scala.Nothing],
     metaCreator: Anon_FAILUREFULFILL[
-      TSuccessMetaCreator, 
       TTriggerMetaCreator, 
+      TRequestMetaCreator, 
+      TSuccessMetaCreator, 
       TFailureMetaCreator, 
-      TFulfillMetaCreator, 
-      TRequestMetaCreator
+      TFulfillMetaCreator
     ]
   ): Routine[
     ResolveActionCreatorByMeta[
@@ -94,11 +94,11 @@ object createRoutine extends js.Object {
     typePrefix: String,
     payloadCreator: Null,
     metaCreator: Anon_FAILUREFULFILL[
-      TSuccessMetaCreator, 
       TTriggerMetaCreator, 
+      TRequestMetaCreator, 
+      TSuccessMetaCreator, 
       TFailureMetaCreator, 
-      TFulfillMetaCreator, 
-      TRequestMetaCreator
+      TFulfillMetaCreator
     ]
   ): Routine[
     ResolveActionCreatorByMeta[
@@ -151,11 +151,11 @@ object createRoutine extends js.Object {
   def apply[TTriggerPayloadCreator, TRequestPayloadCreator, TSuccessPayloadCreator, TFailurePayloadCreator, TFulfillPayloadCreator](
     typePrefix: String,
     payloadCreator: Anon_FAILURE[
-      TRequestPayloadCreator, 
-      TFulfillPayloadCreator, 
-      TSuccessPayloadCreator, 
       TTriggerPayloadCreator, 
-      TFailurePayloadCreator
+      TRequestPayloadCreator, 
+      TSuccessPayloadCreator, 
+      TFailurePayloadCreator, 
+      TFulfillPayloadCreator
     ]
   ): Routine[
     ResolveActionCreatorByPayload[
@@ -207,18 +207,18 @@ object createRoutine extends js.Object {
   def apply[TTriggerPayloadCreator, TRequestPayloadCreator, TSuccessPayloadCreator, TFailurePayloadCreator, TFulfillPayloadCreator, TTriggerMetaCreator, TRequestMetaCreator, TSuccessMetaCreator, TFailureMetaCreator, TFulfillMetaCreator](
     typePrefix: String,
     payloadCreator: Anon_FAILURE[
-      TRequestPayloadCreator, 
-      TFulfillPayloadCreator, 
-      TSuccessPayloadCreator, 
       TTriggerPayloadCreator, 
-      TFailurePayloadCreator
+      TRequestPayloadCreator, 
+      TSuccessPayloadCreator, 
+      TFailurePayloadCreator, 
+      TFulfillPayloadCreator
     ],
     metaCreator: Anon_FAILUREFULFILL[
-      TSuccessMetaCreator, 
       TTriggerMetaCreator, 
+      TRequestMetaCreator, 
+      TSuccessMetaCreator, 
       TFailureMetaCreator, 
-      TFulfillMetaCreator, 
-      TRequestMetaCreator
+      TFulfillMetaCreator
     ]
   ): Routine[
     ResolveActionCreatorByPayloadMeta[

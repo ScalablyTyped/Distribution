@@ -4,21 +4,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ModifyInstanceFleetInput extends js.Object {
   /**
     * The unique identifier of the cluster.
     */
-  var ClusterId: typings.awsDashSdk.clientsEmrMod.ClusterId
+  var ClusterId: typings.awsDashSdk.clientsEmrMod.ClusterId = js.native
   /**
     * The unique identifier of the instance fleet.
     */
-  var InstanceFleet: InstanceFleetModifyConfig
+  var InstanceFleet: InstanceFleetModifyConfig = js.native
 }
 
 object ModifyInstanceFleetInput {
   @scala.inline
   def apply(ClusterId: ClusterId, InstanceFleet: InstanceFleetModifyConfig): ModifyInstanceFleetInput = {
-    val __obj = js.Dynamic.literal(ClusterId = ClusterId, InstanceFleet = InstanceFleet)
+    val __obj = js.Dynamic.literal(ClusterId = ClusterId.asInstanceOf[js.Any], InstanceFleet = InstanceFleet.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ModifyInstanceFleetInput]
   }

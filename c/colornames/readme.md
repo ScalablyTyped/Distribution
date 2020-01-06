@@ -11,8 +11,8 @@ Map color names to HEX color values.
 | Full name          | colornames |
 | Keywords           | color, colour, names, css, hex, rgb, convert |
 | # releases         | 1 |
-| # dependents       | 26 |
-| # downloads        | 20956804 |
+| # dependents       | 32 |
+| # downloads        | 50240042 |
 | # stars            | 1 |
 
 ## Links

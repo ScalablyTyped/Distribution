@@ -4,21 +4,21 @@
 Typings are for version 2.3.2
 
 ## Library description:
-Remove case from a string
+Transform into a lower cased string with spaces between words
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | no-case |
-| Keywords           | no, case, space, lower, trim |
-| # releases         | 2 |
-| # dependents       | 27 |
-| # downloads        | 147522271 |
+| Keywords           | no, case, space, lower, convert, transform |
+| # releases         | 3 |
+| # dependents       | 34 |
+| # downloads        | 215061141 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/blakeembrey/no-case)
-- [Bugs](https://github.com/blakeembrey/no-case/issues)
-- [Repository](https://github.com/blakeembrey/no-case)
+- [Homepage](https://github.com/blakeembrey/change-case/tree/master/packages/no-case#readme)
+- [Bugs](https://github.com/blakeembrey/change-case/issues)
+- [Repository](https://github.com/blakeembrey/change-case)
 - [Npm](https://www.npmjs.com/package/no-case)
     
 

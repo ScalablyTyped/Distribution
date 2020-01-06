@@ -11,8 +11,8 @@ Debounce middleware for Redux
 | Full name          | redux-debounced |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 10 |
-| # downloads        | 567122 |
+| # dependents       | 15 |
+| # downloads        | 581175 |
 | # stars            | 1 |
 
 ## Links

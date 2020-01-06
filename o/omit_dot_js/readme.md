@@ -10,9 +10,9 @@ Utility function to create a shallow copy of an object which had dropped some fi
 | ------------------ | :-------------: |
 | Full name          | omit.js |
 | Keywords           | object, omit |
-| # releases         | 2 |
-| # dependents       | 228 |
-| # downloads        | 4951118 |
+| # releases         | 3 |
+| # dependents       | 349 |
+| # downloads        | 9279509 |
 | # stars            | 3 |
 
 ## Links

@@ -10,9 +10,9 @@ SockJS-node is a server counterpart of SockJS-client a JavaScript library that p
 | ------------------ | :-------------: |
 | Full name          | sockjs |
 | Keywords           | websockets, websocket |
-| # releases         | 2 |
-| # dependents       | 223 |
-| # downloads        | 142634275 |
+| # releases         | 1 |
+| # dependents       | 253 |
+| # downloads        | 211735951 |
 | # stars            | 29 |
 
 ## Links

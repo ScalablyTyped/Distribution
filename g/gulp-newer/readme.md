@@ -10,8 +10,8 @@ Only pass through newer source files
 | Full name          | gulp-newer |
 | Keywords           | gulp, gulpplugin, newer, mtime |
 | # releases         | 2 |
-| # dependents       | 106 |
-| # downloads        | 2273005 |
+| # dependents       | 117 |
+| # downloads        | 2849516 |
 | # stars            | 56 |
 
 ## Links

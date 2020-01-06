@@ -10,15 +10,15 @@ Used in npm for command line application support
 | ------------------ | :-------------: |
 | Full name          | cmd-shim |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 96 |
-| # downloads        | 20733516 |
+| # releases         | 5 |
+| # dependents       | 115 |
+| # downloads        | 30833270 |
 | # stars            | 4 |
 
 ## Links
-- [Homepage](https://github.com/ForbesLindesay/cmd-shim)
-- [Bugs](https://github.com/ForbesLindesay/cmd-shim/issues)
-- [Repository](https://github.com/ForbesLindesay/cmd-shim)
+- [Homepage](https://github.com/npm/cmd-shim#readme)
+- [Bugs](https://github.com/npm/cmd-shim/issues)
+- [Repository](https://github.com/npm/cmd-shim)
 - [Npm](https://www.npmjs.com/package/cmd-shim)
     
 

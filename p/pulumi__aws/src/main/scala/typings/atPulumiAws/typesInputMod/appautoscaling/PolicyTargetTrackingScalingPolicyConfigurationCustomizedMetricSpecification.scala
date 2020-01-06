@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecification extends js.Object {
   var dimensions: js.UndefOr[
     Input[
@@ -14,11 +15,11 @@ trait PolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificatio
         ]
       ]
     ]
-  ] = js.undefined
-  var metricName: Input[String]
-  var namespace: Input[String]
-  var statistic: Input[String]
-  var unit: js.UndefOr[Input[String]] = js.undefined
+  ] = js.native
+  var metricName: Input[String] = js.native
+  var namespace: Input[String] = js.native
+  var statistic: Input[String] = js.native
+  var unit: js.UndefOr[Input[String]] = js.native
 }
 
 object PolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecification {

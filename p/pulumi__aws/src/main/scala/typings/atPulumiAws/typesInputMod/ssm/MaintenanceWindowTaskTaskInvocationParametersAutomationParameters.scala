@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MaintenanceWindowTaskTaskInvocationParametersAutomationParameters extends js.Object {
   /**
     * The version of an Automation document to use during task execution.
     */
-  var documentVersion: js.UndefOr[Input[String]] = js.undefined
+  var documentVersion: js.UndefOr[Input[String]] = js.native
   /**
     * The parameters for the RUN_COMMAND task execution. Documented below.
     */
@@ -19,7 +20,7 @@ trait MaintenanceWindowTaskTaskInvocationParametersAutomationParameters extends 
         Input[MaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameter]
       ]
     ]
-  ] = js.undefined
+  ] = js.native
 }
 
 object MaintenanceWindowTaskTaskInvocationParametersAutomationParameters {

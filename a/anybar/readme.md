@@ -10,9 +10,9 @@ Control the AnyBar app
 | ------------------ | :-------------: |
 | Full name          | anybar |
 | Keywords           | anybar, app, macos, mac, udp, status, color, dot, indicator |
-| # releases         | 0 |
+| # releases         | 2 |
 | # dependents       | 9 |
-| # downloads        | 12176 |
+| # downloads        | 12243 |
 | # stars            | 0 |
 
 ## Links

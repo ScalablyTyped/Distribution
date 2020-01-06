@@ -10,9 +10,9 @@ The one-liner node.js proxy middleware for connect, express and browser-sync
 | ------------------ | :-------------: |
 | Full name          | http-proxy-middleware |
 | Keywords           | reverse, proxy, middleware, http, https, connect, express, browser-sync, gulp, grunt-contrib-connect, websocket, ws, cors |
-| # releases         | 4 |
-| # dependents       | 917 |
-| # downloads        | 153327738 |
+| # releases         | 8 |
+| # dependents       | 1134 |
+| # downloads        | 243914110 |
 | # stars            | 85 |
 
 ## Links

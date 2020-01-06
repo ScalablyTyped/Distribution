@@ -12,7 +12,7 @@ A fairly straightforward port of the Python calendar package with extensions whe
 | Keywords           | calendar, python, year, month, day, locale, isleap, leapdays, monthrange, setlocale, noconflict, timegm, weekday, getfirstweekday, setfirstweekday, iterweekdays, itermonthdates, itermonthdays, itermonthdays2, monthdatescalendar, monthdayscalendar, monthdays2calendar, yeardatescalendar, yeardayscalendar, yeardays2calendar |
 | # releases         | 2 |
 | # dependents       | 8 |
-| # downloads        | 13111 |
+| # downloads        | 13195 |
 | # stars            | 6 |
 
 ## Links

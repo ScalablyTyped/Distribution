@@ -11,8 +11,8 @@ Simply gzip and ungzip in Node.js with promises
 | Full name          | node-gzip |
 | Keywords           | node, gzip, compress, promise, gunzip, ungzip, decompress, uncompress, gz, zlib, async, await, promises |
 | # releases         | 5 |
-| # dependents       | 10 |
-| # downloads        | 93748 |
+| # dependents       | 21 |
+| # downloads        | 297223 |
 | # stars            | 0 |
 
 ## Links

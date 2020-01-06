@@ -10,9 +10,9 @@ Ponyfill for intl unified numberformat proposal
 | ------------------ | :-------------: |
 | Full name          | @formatjs/intl-unified-numberformat |
 | Keywords           | polyfill, i18n, numberformat, unified |
-| # releases         | 17 |
-| # dependents       | 2 |
-| # downloads        | 283345 |
+| # releases         | 32 |
+| # dependents       | 3 |
+| # downloads        | 1365579 |
 | # stars            | 0 |
 
 ## Links

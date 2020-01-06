@@ -10,9 +10,9 @@ Get the latest stable semver version from an array of versions
 | ------------------ | :-------------: |
 | Full name          | latest-semver |
 | Keywords           | semver, semantic, version, versioning, latest, stable, max, maximum, highest, newest, git, tag, tags |
-| # releases         | 3 |
-| # dependents       | 8 |
-| # downloads        | 27303 |
+| # releases         | 2 |
+| # dependents       | 13 |
+| # downloads        | 44698 |
 | # stars            | 0 |
 
 ## Links

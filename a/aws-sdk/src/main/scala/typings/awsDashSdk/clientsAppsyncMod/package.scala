@@ -13,6 +13,32 @@ package object clientsAppsyncMod {
   import typings.std.Uint8Array
 
   type AdditionalAuthenticationProviders = js.Array[AdditionalAuthenticationProvider]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.AVAILABLE
+    - typings.awsDashSdk.awsDashSdkStrings.CREATING
+    - typings.awsDashSdk.awsDashSdkStrings.DELETING
+    - typings.awsDashSdk.awsDashSdkStrings.MODIFYING
+    - typings.awsDashSdk.awsDashSdkStrings.FAILED
+    - java.lang.String
+  */
+  type ApiCacheStatus = _ApiCacheStatus | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.T2_SMALL
+    - typings.awsDashSdk.awsDashSdkStrings.T2_MEDIUM
+    - typings.awsDashSdk.awsDashSdkStrings.R4_LARGE
+    - typings.awsDashSdk.awsDashSdkStrings.R4_XLARGE
+    - typings.awsDashSdk.awsDashSdkStrings.R4_2XLARGE
+    - typings.awsDashSdk.awsDashSdkStrings.R4_4XLARGE
+    - typings.awsDashSdk.awsDashSdkStrings.R4_8XLARGE
+    - java.lang.String
+  */
+  type ApiCacheType = _ApiCacheType | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.FULL_REQUEST_CACHING
+    - typings.awsDashSdk.awsDashSdkStrings.PER_RESOLVER_CACHING
+    - java.lang.String
+  */
+  type ApiCachingBehavior = _ApiCachingBehavior | java.lang.String
   type ApiKeys = js.Array[ApiKey]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.API_KEY
@@ -25,7 +51,22 @@ package object clientsAppsyncMod {
   type AuthorizationType = AWS_IAM | java.lang.String
   type Boolean = scala.Boolean
   type BooleanValue = scala.Boolean
+  type CachingKeys = js.Array[String]
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.VERSION
+    - typings.awsDashSdk.awsDashSdkStrings.NONE
+    - java.lang.String
+  */
+  type ConflictDetectionType = _ConflictDetectionType | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.OPTIMISTIC_CONCURRENCY
+    - typings.awsDashSdk.awsDashSdkStrings.LAMBDA
+    - typings.awsDashSdk.awsDashSdkStrings.AUTOMERGE
+    - typings.awsDashSdk.awsDashSdkStrings.NONE
+    - java.lang.String
+  */
+  type ConflictHandlerType = _ConflictHandlerType | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.AWS_LAMBDA
     - typings.awsDashSdk.awsDashSdkStrings.AMAZON_DYNAMODB
@@ -99,7 +140,7 @@ package object clientsAppsyncMod {
   type _Blob = Buffer | Uint8Array | Blob | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2017-07-25`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | java.lang.String

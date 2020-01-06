@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DeploymentGroupAutoRollbackConfiguration extends js.Object {
   /**
     * Indicates whether a defined automatic rollback configuration is currently enabled for this Deployment Group. If you enable automatic rollback, you must specify at least one event type.
     */
-  var enabled: js.UndefOr[Input[Boolean]] = js.undefined
+  var enabled: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The event type or types that trigger a rollback. Supported types are `DEPLOYMENT_FAILURE` and `DEPLOYMENT_STOP_ON_ALARM`.
     */
-  var events: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  var events: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
 }
 
 object DeploymentGroupAutoRollbackConfiguration {

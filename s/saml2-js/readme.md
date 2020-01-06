@@ -10,9 +10,9 @@ SAML 2.0 node helpers
 | ------------------ | :-------------: |
 | Full name          | saml2-js |
 | Keywords           | saml, node |
-| # releases         | 10 |
-| # dependents       | 5 |
-| # downloads        | 1769088 |
+| # releases         | 5 |
+| # dependents       | 8 |
+| # downloads        | 1520090 |
 | # stars            | 6 |
 
 ## Links

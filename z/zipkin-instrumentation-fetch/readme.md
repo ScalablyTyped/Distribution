@@ -10,9 +10,9 @@ Interceptor for HTTP clients using the 'fetch' API
 | ------------------ | :-------------: |
 | Full name          | zipkin-instrumentation-fetch |
 | Keywords           | - |
-| # releases         | 21 |
-| # dependents       | 9 |
-| # downloads        | 107570 |
+| # releases         | 28 |
+| # dependents       | 10 |
+| # downloads        | 107313 |
 | # stars            | 0 |
 
 ## Links

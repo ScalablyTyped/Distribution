@@ -10,9 +10,9 @@ Typings are for version 0.59.3
 | ------------------ | :-------------: |
 | Full name          | @nivo/scatterplot |
 | Keywords           | nivo, dataviz, react, d3, charts, scatterplot |
-| # releases         | 29 |
+| # releases         | 32 |
 | # dependents       | 3 |
-| # downloads        | 40686 |
+| # downloads        | 70483 |
 | # stars            | 0 |
 
 ## Links

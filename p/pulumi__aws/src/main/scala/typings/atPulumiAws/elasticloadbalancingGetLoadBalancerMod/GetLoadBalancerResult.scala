@@ -8,35 +8,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetLoadBalancerResult extends js.Object {
-  val accessLogs: GetLoadBalancerAccessLogs
-  val availabilityZones: js.Array[String]
-  val connectionDraining: Boolean
-  val connectionDrainingTimeout: Double
-  val crossZoneLoadBalancing: Boolean
-  val dnsName: String
-  val healthCheck: GetLoadBalancerHealthCheck
+  val accessLogs: GetLoadBalancerAccessLogs = js.native
+  val arn: String = js.native
+  val availabilityZones: js.Array[String] = js.native
+  val connectionDraining: Boolean = js.native
+  val connectionDrainingTimeout: Double = js.native
+  val crossZoneLoadBalancing: Boolean = js.native
+  val dnsName: String = js.native
+  val healthCheck: GetLoadBalancerHealthCheck = js.native
   /**
     * id is the provider-assigned unique ID for this managed resource.
     */
-  val id: String
-  val idleTimeout: Double
-  val instances: js.Array[String]
-  val internal: Boolean
-  val listeners: js.Array[GetLoadBalancerListener]
-  val name: String
-  val securityGroups: js.Array[String]
-  val sourceSecurityGroup: String
-  val sourceSecurityGroupId: String
-  val subnets: js.Array[String]
-  val tags: StringDictionary[js.Any]
-  val zoneId: String
+  val id: String = js.native
+  val idleTimeout: Double = js.native
+  val instances: js.Array[String] = js.native
+  val internal: Boolean = js.native
+  val listeners: js.Array[GetLoadBalancerListener] = js.native
+  val name: String = js.native
+  val securityGroups: js.Array[String] = js.native
+  val sourceSecurityGroup: String = js.native
+  val sourceSecurityGroupId: String = js.native
+  val subnets: js.Array[String] = js.native
+  val tags: StringDictionary[js.Any] = js.native
+  val zoneId: String = js.native
 }
 
 object GetLoadBalancerResult {
   @scala.inline
   def apply(
     accessLogs: GetLoadBalancerAccessLogs,
+    arn: String,
     availabilityZones: js.Array[String],
     connectionDraining: Boolean,
     connectionDrainingTimeout: Double,
@@ -56,7 +59,7 @@ object GetLoadBalancerResult {
     tags: StringDictionary[js.Any],
     zoneId: String
   ): GetLoadBalancerResult = {
-    val __obj = js.Dynamic.literal(accessLogs = accessLogs, availabilityZones = availabilityZones, connectionDraining = connectionDraining, connectionDrainingTimeout = connectionDrainingTimeout, crossZoneLoadBalancing = crossZoneLoadBalancing, dnsName = dnsName, healthCheck = healthCheck, id = id, idleTimeout = idleTimeout, instances = instances, internal = internal, listeners = listeners, name = name, securityGroups = securityGroups, sourceSecurityGroup = sourceSecurityGroup, sourceSecurityGroupId = sourceSecurityGroupId, subnets = subnets, tags = tags, zoneId = zoneId)
+    val __obj = js.Dynamic.literal(accessLogs = accessLogs.asInstanceOf[js.Any], arn = arn.asInstanceOf[js.Any], availabilityZones = availabilityZones.asInstanceOf[js.Any], connectionDraining = connectionDraining.asInstanceOf[js.Any], connectionDrainingTimeout = connectionDrainingTimeout.asInstanceOf[js.Any], crossZoneLoadBalancing = crossZoneLoadBalancing.asInstanceOf[js.Any], dnsName = dnsName.asInstanceOf[js.Any], healthCheck = healthCheck.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], idleTimeout = idleTimeout.asInstanceOf[js.Any], instances = instances.asInstanceOf[js.Any], internal = internal.asInstanceOf[js.Any], listeners = listeners.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], securityGroups = securityGroups.asInstanceOf[js.Any], sourceSecurityGroup = sourceSecurityGroup.asInstanceOf[js.Any], sourceSecurityGroupId = sourceSecurityGroupId.asInstanceOf[js.Any], subnets = subnets.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], zoneId = zoneId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetLoadBalancerResult]
   }

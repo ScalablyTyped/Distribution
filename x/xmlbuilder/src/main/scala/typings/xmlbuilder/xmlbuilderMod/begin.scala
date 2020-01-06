@@ -8,14 +8,19 @@ import scala.scalajs.js.annotation._
 @js.native
 object begin extends js.Object {
   /**
-    * Creates a new XML document and returns the document node.
-    * This function creates an empty document without the XML prolog or
-    * a root element.
+    * Creates a new XML document in callback mode and returns the document
+    * node.
     * 
     * @param options - create options
+    * @param onData - the function to be called when a new chunk of XML is
+    * output. The string containing the XML chunk is passed to `onData` as
+    * its first argument and the current depth of the tree is passed as its
+    * second argument.
+    * @param onEnd - the function to be called when the XML document is 
+    * completed with `end`. `onEnd` does not receive any arguments.
     */
-  def apply(): XMLDocument = js.native
-  def apply(options: BeginOptions): XMLDocument = js.native
+  def apply(): XMLDocumentCB = js.native
+  def apply(options: BeginOptions): XMLDocumentCB = js.native
   def apply(options: BeginOptions, onData: OnDataCallback): XMLDocumentCB = js.native
   def apply(options: BeginOptions, onData: OnDataCallback, onEnd: OnEndCallback): XMLDocumentCB = js.native
   def apply(options: BeginOptions, onData: OnEndCallback): XMLDocumentCB = js.native

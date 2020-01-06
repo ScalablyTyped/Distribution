@@ -11,8 +11,8 @@ deep copies objects and arrays
 | Full name          | just-clone |
 | Keywords           | object, clone, copy, deep-copy, extend, no-dependencies, just |
 | # releases         | 4 |
-| # dependents       | 6 |
-| # downloads        | 364186 |
+| # dependents       | 7 |
+| # downloads        | 377238 |
 | # stars            | 0 |
 
 ## Links

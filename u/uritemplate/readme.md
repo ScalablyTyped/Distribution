@@ -11,8 +11,8 @@ An UriTemplate implementation of rfc 6570
 | Full name          | uritemplate |
 | Keywords           | util, uri, template, rfc6570 |
 | # releases         | 0 |
-| # dependents       | 23 |
-| # downloads        | 689964 |
+| # dependents       | 30 |
+| # downloads        | 845887 |
 | # stars            | 1 |
 
 ## Links

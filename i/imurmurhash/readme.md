@@ -10,9 +10,9 @@ An incremental implementation of MurmurHash3
 | ------------------ | :-------------: |
 | Full name          | imurmurhash |
 | Keywords           | murmur, murmurhash, murmurhash3, hash, incremental |
-| # releases         | 1 |
-| # dependents       | 92 |
-| # downloads        | 305626556 |
+| # releases         | 0 |
+| # dependents       | 115 |
+| # downloads        | 410714503 |
 | # stars            | 2 |
 
 ## Links

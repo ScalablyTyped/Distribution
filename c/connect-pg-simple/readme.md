@@ -10,10 +10,10 @@ A simple, minimal PostgreSQL session store for Connect/Express
 | ------------------ | :-------------: |
 | Full name          | connect-pg-simple |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 21 |
-| # downloads        | 367827 |
-| # stars            | 11 |
+| # releases         | 5 |
+| # dependents       | 25 |
+| # downloads        | 439184 |
+| # stars            | 12 |
 
 ## Links
 - [Homepage](https://github.com/voxpelli/node-connect-pg-simple#readme)

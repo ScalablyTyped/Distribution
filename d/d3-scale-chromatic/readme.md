@@ -10,9 +10,9 @@ Sequential, diverging and categorical color schemes.
 | ------------------ | :-------------: |
 | Full name          | d3-scale-chromatic |
 | Keywords           | d3, d3-module, color, scale, sequential, colorbrewer |
-| # releases         | 6 |
-| # dependents       | 84 |
-| # downloads        | 7280336 |
+| # releases         | 8 |
+| # dependents       | 135 |
+| # downloads        | 15694741 |
 | # stars            | 0 |
 
 ## Links

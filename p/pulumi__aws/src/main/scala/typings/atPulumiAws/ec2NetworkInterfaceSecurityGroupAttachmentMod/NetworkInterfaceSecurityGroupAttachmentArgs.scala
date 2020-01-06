@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NetworkInterfaceSecurityGroupAttachmentArgs extends js.Object {
   /**
     * The ID of the network interface to attach to.
     */
-  val networkInterfaceId: Input[String]
+  val networkInterfaceId: Input[String] = js.native
   /**
     * The ID of the security group.
     */
-  val securityGroupId: Input[String]
+  val securityGroupId: Input[String] = js.native
 }
 
 object NetworkInterfaceSecurityGroupAttachmentArgs {

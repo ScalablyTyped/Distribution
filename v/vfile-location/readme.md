@@ -10,9 +10,9 @@ Convert between positions (line and column-based) and offsets (range-based) loca
 | ------------------ | :-------------: |
 | Full name          | vfile-location |
 | Keywords           | remark, comment, message, marker, control |
-| # releases         | 4 |
-| # dependents       | 17 |
-| # downloads        | 34692834 |
+| # releases         | 5 |
+| # dependents       | 18 |
+| # downloads        | 65873111 |
 | # stars            | 0 |
 
 ## Links

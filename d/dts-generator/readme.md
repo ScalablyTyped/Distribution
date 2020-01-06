@@ -11,8 +11,8 @@ Typings are for version 2.1
 | Full name          | dts-generator |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 19 |
-| # downloads        | 184330 |
+| # dependents       | 22 |
+| # downloads        | 186407 |
 | # stars            | 1 |
 
 ## Links

@@ -12,7 +12,7 @@ A naive XML parser and builder based on libxmljs
 | Keywords           | xml, parser, builder, libxml |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 2824 |
+| # downloads        | 2409 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ Clamp JS main (ie. cuts off) an HTML element's content by adding ellipsis to it 
 | ------------------ | :-------------: |
 | Full name          | clamp-js-main |
 | Keywords           | clamp, ellipsis, multiline, browser |
-| # releases         | 4 |
+| # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 27105 |
+| # downloads        | 56102 |
 | # stars            | 0 |
 
 ## Links

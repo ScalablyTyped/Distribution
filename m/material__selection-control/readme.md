@@ -10,9 +10,9 @@ The set of base classes for Material selection controls
 | ------------------ | :-------------: |
 | Full name          | @material/selection-control |
 | Keywords           | - |
-| # releases         | 39 |
+| # releases         | 27 |
 | # dependents       | 7 |
-| # downloads        | 1577715 |
+| # downloads        | 1087498 |
 | # stars            | 0 |
 
 ## Links

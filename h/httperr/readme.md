@@ -12,7 +12,7 @@ HTTP status codes as JavaScript errors.
 | Keywords           | http, errors, error, request, response, errorclass |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 73504 |
+| # downloads        | 145652 |
 | # stars            | 1 |
 
 ## Links

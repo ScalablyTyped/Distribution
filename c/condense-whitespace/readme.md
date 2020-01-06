@@ -10,9 +10,9 @@ Remove leading, trailing, and repeated whitespace from a string
 | ------------------ | :-------------: |
 | Full name          | condense-whitespace |
 | Keywords           | whitespace, space, condense, collapse, compact, repeated, string, trim, remove, strip |
-| # releases         | 0 |
-| # dependents       | 26 |
-| # downloads        | 383713 |
+| # releases         | 2 |
+| # dependents       | 30 |
+| # downloads        | 677813 |
 | # stars            | 3 |
 
 ## Links

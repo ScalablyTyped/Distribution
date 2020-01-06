@@ -10,9 +10,9 @@ Creates and returns a new debounced version of the passed function that will pos
 | ------------------ | :-------------: |
 | Full name          | debounce |
 | Keywords           | function, throttle, invoke |
-| # releases         | 4 |
-| # dependents       | 559 |
-| # downloads        | 16900289 |
+| # releases         | 2 |
+| # dependents       | 707 |
+| # downloads        | 34831281 |
 | # stars            | 16 |
 
 ## Links

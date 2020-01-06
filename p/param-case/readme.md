@@ -4,21 +4,21 @@
 Typings are for version 2.1.1
 
 ## Library description:
-Param case a string
+Transform into a lower cased string with dashes between words
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | param-case |
-| Keywords           | param, case, dash, hyphen |
-| # releases         | 1 |
-| # dependents       | 121 |
-| # downloads        | 139649428 |
+| Keywords           | param, case, kebab, hyphen, dash, dash-case, param-case, convert, transform |
+| # releases         | 3 |
+| # dependents       | 143 |
+| # downloads        | 202814235 |
 | # stars            | 2 |
 
 ## Links
-- [Homepage](https://github.com/blakeembrey/param-case)
-- [Bugs](https://github.com/blakeembrey/param-case/issues)
-- [Repository](https://github.com/blakeembrey/param-case)
+- [Homepage](https://github.com/blakeembrey/change-case/tree/master/packages/param-case#readme)
+- [Bugs](https://github.com/blakeembrey/change-case/issues)
+- [Repository](https://github.com/blakeembrey/change-case)
 - [Npm](https://www.npmjs.com/package/param-case)
     
 

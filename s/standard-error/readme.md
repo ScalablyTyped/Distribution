@@ -11,8 +11,8 @@ Tiny library that simplifies subclassing and inheriting from Error while keeping
 | Full name          | standard-error |
 | Keywords           | error, exception |
 | # releases         | 0 |
-| # dependents       | 36 |
-| # downloads        | 720071 |
+| # dependents       | 44 |
+| # downloads        | 1096202 |
 | # stars            | 2 |
 
 ## Links

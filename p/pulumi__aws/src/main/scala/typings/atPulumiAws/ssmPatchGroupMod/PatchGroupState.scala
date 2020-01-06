@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PatchGroupState extends js.Object {
   /**
     * The ID of the patch baseline to register the patch group with.
     */
-  val baselineId: js.UndefOr[Input[String]] = js.undefined
+  val baselineId: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the patch group that should be registered with the patch baseline.
     */
-  val patchGroup: js.UndefOr[Input[String]] = js.undefined
+  val patchGroup: js.UndefOr[Input[String]] = js.native
 }
 
 object PatchGroupState {

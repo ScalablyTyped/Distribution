@@ -10,9 +10,9 @@ Parse a human name string into salutation, first name, middle name, last name, s
 | ------------------ | :-------------: |
 | Full name          | humanparser |
 | Keywords           | human, address, name, parser, parse, fullname, full name, first name, last name, human name, city state zip, city, state, zip |
-| # releases         | 11 |
-| # dependents       | 4 |
-| # downloads        | 336726 |
+| # releases         | 8 |
+| # dependents       | 7 |
+| # downloads        | 632044 |
 | # stars            | 1 |
 
 ## Links

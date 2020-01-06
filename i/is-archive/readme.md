@@ -12,7 +12,7 @@ Check if a file path is an archive file
 | Keywords           | extensions, extension, file, path, check, detect, is, archive, compressed, compress, archive, zip, tar, rar, 7z |
 | # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 527 |
+| # downloads        | 1112 |
 | # stars            | 0 |
 
 ## Links

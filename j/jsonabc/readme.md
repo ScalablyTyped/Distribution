@@ -11,8 +11,8 @@ Sorts JSON object alphabetically. It supports nested objects, arrays and collect
 | Full name          | jsonabc |
 | Keywords           | sorting, beautify, alphabet, sorts json, json, utility |
 | # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 2087 |
+| # dependents       | 1 |
+| # downloads        | 14784 |
 | # stars            | 0 |
 
 ## Links

@@ -5,23 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WorkgroupConfiguration extends js.Object {
   /**
     * Integer for the upper data usage limit (cutoff) for the amount of bytes a single query in a workgroup is allowed to scan. Must be at least `10485760`.
     */
-  var bytesScannedCutoffPerQuery: js.UndefOr[Input[Double]] = js.undefined
+  var bytesScannedCutoffPerQuery: js.UndefOr[Input[Double]] = js.native
   /**
     * Boolean whether the settings for the workgroup override client-side settings. For more information, see [Workgroup Settings Override Client-Side Settings](https://docs.aws.amazon.com/athena/latest/ug/workgroups-settings-override.html). Defaults to `true`.
     */
-  var enforceWorkgroupConfiguration: js.UndefOr[Input[Boolean]] = js.undefined
+  var enforceWorkgroupConfiguration: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Boolean whether Amazon CloudWatch metrics are enabled for the workgroup. Defaults to `true`.
     */
-  var publishCloudwatchMetricsEnabled: js.UndefOr[Input[Boolean]] = js.undefined
+  var publishCloudwatchMetricsEnabled: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Configuration block with result settings. Documented below.
     */
-  var resultConfiguration: js.UndefOr[Input[WorkgroupConfigurationResultConfiguration]] = js.undefined
+  var resultConfiguration: js.UndefOr[Input[WorkgroupConfigurationResultConfiguration]] = js.native
 }
 
 object WorkgroupConfiguration {

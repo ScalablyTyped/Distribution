@@ -11,8 +11,8 @@ The lodash method `_.reduce` exported as a module.
 | Full name          | lodash.reduce |
 | Keywords           | lodash-modularized, reduce |
 | # releases         | 0 |
-| # dependents       | 184 |
-| # downloads        | 44346254 |
+| # dependents       | 210 |
+| # downloads        | 41874754 |
 | # stars            | 0 |
 
 ## Links

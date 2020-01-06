@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-alice-carousel
 
-Typings are for version 1.17.1
+Typings are for version 1.17.2
 
 ## Library description:
 React image gallery, react slideshow carousel, react content rotator
@@ -10,9 +10,9 @@ React image gallery, react slideshow carousel, react content rotator
 | ------------------ | :-------------: |
 | Full name          | react-alice-carousel |
 | Keywords           | react, carousel, gallery, slider, slideshow, rotator, react-slideshow, react-gallery, react carousel, react slideshow, react gallery, image gallery, image slider, image carousel, image rotator, content gallery, content rotator |
-| # releases         | 40 |
-| # dependents       | 1 |
-| # downloads        | 71329 |
+| # releases         | 46 |
+| # dependents       | 3 |
+| # downloads        | 292365 |
 | # stars            | 0 |
 
 ## Links

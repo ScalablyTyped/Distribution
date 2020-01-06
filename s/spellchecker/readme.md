@@ -10,9 +10,9 @@ Bindings to native spellchecker
 | ------------------ | :-------------: |
 | Full name          | spellchecker |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 19 |
-| # downloads        | 145633 |
+| # releases         | 8 |
+| # dependents       | 23 |
+| # downloads        | 267000 |
 | # stars            | 2 |
 
 ## Links

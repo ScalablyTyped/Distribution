@@ -10,9 +10,9 @@ Microsoft Azure Resource Management Client Library for node
 | ------------------ | :-------------: |
 | Full name          | azure-arm-resource |
 | Keywords           | node, azure |
-| # releases         | 15 |
+| # releases         | 14 |
 | # dependents       | 38 |
-| # downloads        | 1825546 |
+| # downloads        | 1829596 |
 | # stars            | 0 |
 
 ## Links

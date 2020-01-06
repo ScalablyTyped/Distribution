@@ -10,9 +10,9 @@ Typings are for version 1.0
 | ------------------ | :-------------: |
 | Full name          | chunk-text |
 | Keywords           | - |
-| # releases         | 8 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 33062 |
+| # downloads        | 51069 |
 | # stars            | 0 |
 
 ## Links

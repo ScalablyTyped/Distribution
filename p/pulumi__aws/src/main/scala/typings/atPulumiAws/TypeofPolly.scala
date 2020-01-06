@@ -6,15 +6,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TypeofPolly extends js.Object {
-  var Presigner: js.Any | Instantiable0[typings.awsDashSdk.awsDashSdkMod.Polly.Presigner]
-  val Types: this.type
+  val Presigner: Instantiable0[typings.awsDashSdk.awsDashSdkMod.Polly.Presigner] = js.native
+  val Types: this.type = js.native
 }
 
 object TypeofPolly {
   @scala.inline
   def apply(Presigner: Instantiable0[Presigner], Types: TypeofPolly): TypeofPolly = {
-    val __obj = js.Dynamic.literal(Presigner = Presigner, Types = Types)
+    val __obj = js.Dynamic.literal(Presigner = Presigner.asInstanceOf[js.Any], Types = Types.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeofPolly]
   }

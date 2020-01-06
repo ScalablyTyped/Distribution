@@ -10,9 +10,9 @@ HTML/XML parser with less explosions
 | ------------------ | :-------------: |
 | Full name          | html-parser |
 | Keywords           | html, xml, parser, explosion |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 10 |
-| # downloads        | 54321 |
+| # downloads        | 65946 |
 | # stars            | 0 |
 
 ## Links

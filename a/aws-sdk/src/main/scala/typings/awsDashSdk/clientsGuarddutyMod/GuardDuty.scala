@@ -63,12 +63,12 @@ trait GuardDuty extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateFilterResponse, Unit]
   ): Request[CreateFilterResponse, AWSError] = js.native
   /**
-    * Creates a new IPSet - a list of trusted IP addresses that have been whitelisted for secure communication with AWS infrastructure and applications.
+    * Creates a new IPSet, called Trusted IP list in the consoler user interface. An IPSet is a list IP addresses trusted for secure communication with AWS infrastructure and applications. GuardDuty does not generate findings for IP addresses included in IPSets. Only users from the master account can use this operation.
     */
   def createIPSet(): Request[CreateIPSetResponse, AWSError] = js.native
   def createIPSet(callback: js.Function2[/* err */ AWSError, /* data */ CreateIPSetResponse, Unit]): Request[CreateIPSetResponse, AWSError] = js.native
   /**
-    * Creates a new IPSet - a list of trusted IP addresses that have been whitelisted for secure communication with AWS infrastructure and applications.
+    * Creates a new IPSet, called Trusted IP list in the consoler user interface. An IPSet is a list IP addresses trusted for secure communication with AWS infrastructure and applications. GuardDuty does not generate findings for IP addresses included in IPSets. Only users from the master account can use this operation.
     */
   def createIPSet(params: CreateIPSetRequest): Request[CreateIPSetResponse, AWSError] = js.native
   def createIPSet(
@@ -89,6 +89,19 @@ trait GuardDuty extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateMembersResponse, Unit]
   ): Request[CreateMembersResponse, AWSError] = js.native
   /**
+    * Creates a publishing destination to send findings to. The resource to send findings to must exist before you use this operation.
+    */
+  def createPublishingDestination(): Request[CreatePublishingDestinationResponse, AWSError] = js.native
+  def createPublishingDestination(callback: js.Function2[/* err */ AWSError, /* data */ CreatePublishingDestinationResponse, Unit]): Request[CreatePublishingDestinationResponse, AWSError] = js.native
+  /**
+    * Creates a publishing destination to send findings to. The resource to send findings to must exist before you use this operation.
+    */
+  def createPublishingDestination(params: CreatePublishingDestinationRequest): Request[CreatePublishingDestinationResponse, AWSError] = js.native
+  def createPublishingDestination(
+    params: CreatePublishingDestinationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreatePublishingDestinationResponse, Unit]
+  ): Request[CreatePublishingDestinationResponse, AWSError] = js.native
+  /**
     * Generates example findings of types specified by the list of finding types. If 'NULL' is specified for findingTypes, the API generates example findings of all supported finding types.
     */
   def createSampleFindings(): Request[CreateSampleFindingsResponse, AWSError] = js.native
@@ -102,12 +115,12 @@ trait GuardDuty extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateSampleFindingsResponse, Unit]
   ): Request[CreateSampleFindingsResponse, AWSError] = js.native
   /**
-    * Create a new ThreatIntelSet. ThreatIntelSets consist of known malicious IP addresses. GuardDuty generates findings based on ThreatIntelSets.
+    * Create a new ThreatIntelSet. ThreatIntelSets consist of known malicious IP addresses. GuardDuty generates findings based on ThreatIntelSets. Only users of the master account can use this operation.
     */
   def createThreatIntelSet(): Request[CreateThreatIntelSetResponse, AWSError] = js.native
   def createThreatIntelSet(callback: js.Function2[/* err */ AWSError, /* data */ CreateThreatIntelSetResponse, Unit]): Request[CreateThreatIntelSetResponse, AWSError] = js.native
   /**
-    * Create a new ThreatIntelSet. ThreatIntelSets consist of known malicious IP addresses. GuardDuty generates findings based on ThreatIntelSets.
+    * Create a new ThreatIntelSet. ThreatIntelSets consist of known malicious IP addresses. GuardDuty generates findings based on ThreatIntelSets. Only users of the master account can use this operation.
     */
   def createThreatIntelSet(params: CreateThreatIntelSetRequest): Request[CreateThreatIntelSetResponse, AWSError] = js.native
   def createThreatIntelSet(
@@ -154,12 +167,12 @@ trait GuardDuty extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteFilterResponse, Unit]
   ): Request[DeleteFilterResponse, AWSError] = js.native
   /**
-    * Deletes the IPSet specified by the IPSet ID.
+    * Deletes the IPSet specified by the ipSetId. IPSets are called Trusted IP lists in the console user interface.
     */
   def deleteIPSet(): Request[DeleteIPSetResponse, AWSError] = js.native
   def deleteIPSet(callback: js.Function2[/* err */ AWSError, /* data */ DeleteIPSetResponse, Unit]): Request[DeleteIPSetResponse, AWSError] = js.native
   /**
-    * Deletes the IPSet specified by the IPSet ID.
+    * Deletes the IPSet specified by the ipSetId. IPSets are called Trusted IP lists in the console user interface.
     */
   def deleteIPSet(params: DeleteIPSetRequest): Request[DeleteIPSetResponse, AWSError] = js.native
   def deleteIPSet(
@@ -193,6 +206,19 @@ trait GuardDuty extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteMembersResponse, Unit]
   ): Request[DeleteMembersResponse, AWSError] = js.native
   /**
+    * Deletes the publishing definition with the specified destinationId.
+    */
+  def deletePublishingDestination(): Request[DeletePublishingDestinationResponse, AWSError] = js.native
+  def deletePublishingDestination(callback: js.Function2[/* err */ AWSError, /* data */ DeletePublishingDestinationResponse, Unit]): Request[DeletePublishingDestinationResponse, AWSError] = js.native
+  /**
+    * Deletes the publishing definition with the specified destinationId.
+    */
+  def deletePublishingDestination(params: DeletePublishingDestinationRequest): Request[DeletePublishingDestinationResponse, AWSError] = js.native
+  def deletePublishingDestination(
+    params: DeletePublishingDestinationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeletePublishingDestinationResponse, Unit]
+  ): Request[DeletePublishingDestinationResponse, AWSError] = js.native
+  /**
     * Deletes ThreatIntelSet specified by the ThreatIntelSet ID.
     */
   def deleteThreatIntelSet(): Request[DeleteThreatIntelSetResponse, AWSError] = js.native
@@ -205,6 +231,19 @@ trait GuardDuty extends Service {
     params: DeleteThreatIntelSetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteThreatIntelSetResponse, Unit]
   ): Request[DeleteThreatIntelSetResponse, AWSError] = js.native
+  /**
+    * Returns information about the publishing destination specified by the provided destinationId.
+    */
+  def describePublishingDestination(): Request[DescribePublishingDestinationResponse, AWSError] = js.native
+  def describePublishingDestination(callback: js.Function2[/* err */ AWSError, /* data */ DescribePublishingDestinationResponse, Unit]): Request[DescribePublishingDestinationResponse, AWSError] = js.native
+  /**
+    * Returns information about the publishing destination specified by the provided destinationId.
+    */
+  def describePublishingDestination(params: DescribePublishingDestinationRequest): Request[DescribePublishingDestinationResponse, AWSError] = js.native
+  def describePublishingDestination(
+    params: DescribePublishingDestinationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribePublishingDestinationResponse, Unit]
+  ): Request[DescribePublishingDestinationResponse, AWSError] = js.native
   /**
     * Disassociates the current GuardDuty member account from its master account.
     */
@@ -284,12 +323,12 @@ trait GuardDuty extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetFindingsStatisticsResponse, Unit]
   ): Request[GetFindingsStatisticsResponse, AWSError] = js.native
   /**
-    * Retrieves the IPSet specified by the IPSet ID.
+    * Retrieves the IPSet specified by the ipSetId.
     */
   def getIPSet(): Request[GetIPSetResponse, AWSError] = js.native
   def getIPSet(callback: js.Function2[/* err */ AWSError, /* data */ GetIPSetResponse, Unit]): Request[GetIPSetResponse, AWSError] = js.native
   /**
-    * Retrieves the IPSet specified by the IPSet ID.
+    * Retrieves the IPSet specified by the ipSetId.
     */
   def getIPSet(params: GetIPSetRequest): Request[GetIPSetResponse, AWSError] = js.native
   def getIPSet(
@@ -401,12 +440,12 @@ trait GuardDuty extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListFindingsResponse, Unit]
   ): Request[ListFindingsResponse, AWSError] = js.native
   /**
-    * Lists the IPSets of the GuardDuty service specified by the detector ID.
+    * Lists the IPSets of the GuardDuty service specified by the detector ID. If you use this operation from a member account, the IPSets returned are the IPSets from the associated master account.
     */
   def listIPSets(): Request[ListIPSetsResponse, AWSError] = js.native
   def listIPSets(callback: js.Function2[/* err */ AWSError, /* data */ ListIPSetsResponse, Unit]): Request[ListIPSetsResponse, AWSError] = js.native
   /**
-    * Lists the IPSets of the GuardDuty service specified by the detector ID.
+    * Lists the IPSets of the GuardDuty service specified by the detector ID. If you use this operation from a member account, the IPSets returned are the IPSets from the associated master account.
     */
   def listIPSets(params: ListIPSetsRequest): Request[ListIPSetsResponse, AWSError] = js.native
   def listIPSets(
@@ -440,6 +479,19 @@ trait GuardDuty extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListMembersResponse, Unit]
   ): Request[ListMembersResponse, AWSError] = js.native
   /**
+    * Returns a list of publishing destinations associated with the specified dectectorId.
+    */
+  def listPublishingDestinations(): Request[ListPublishingDestinationsResponse, AWSError] = js.native
+  def listPublishingDestinations(callback: js.Function2[/* err */ AWSError, /* data */ ListPublishingDestinationsResponse, Unit]): Request[ListPublishingDestinationsResponse, AWSError] = js.native
+  /**
+    * Returns a list of publishing destinations associated with the specified dectectorId.
+    */
+  def listPublishingDestinations(params: ListPublishingDestinationsRequest): Request[ListPublishingDestinationsResponse, AWSError] = js.native
+  def listPublishingDestinations(
+    params: ListPublishingDestinationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListPublishingDestinationsResponse, Unit]
+  ): Request[ListPublishingDestinationsResponse, AWSError] = js.native
+  /**
     * Lists tags for a resource. Tagging is currently supported for detectors, finding filters, IP sets, and Threat Intel sets, with a limit of 50 tags per resource. When invoked, this operation returns all assigned tags for a given resource..
     */
   def listTagsForResource(): Request[ListTagsForResourceResponse, AWSError] = js.native
@@ -453,12 +505,12 @@ trait GuardDuty extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
   /**
-    * Lists the ThreatIntelSets of the GuardDuty service specified by the detector ID.
+    * Lists the ThreatIntelSets of the GuardDuty service specified by the detector ID. If you use this operation from a member account, the ThreatIntelSets associated with the master account are returned.
     */
   def listThreatIntelSets(): Request[ListThreatIntelSetsResponse, AWSError] = js.native
   def listThreatIntelSets(callback: js.Function2[/* err */ AWSError, /* data */ ListThreatIntelSetsResponse, Unit]): Request[ListThreatIntelSetsResponse, AWSError] = js.native
   /**
-    * Lists the ThreatIntelSets of the GuardDuty service specified by the detector ID.
+    * Lists the ThreatIntelSets of the GuardDuty service specified by the detector ID. If you use this operation from a member account, the ThreatIntelSets associated with the master account are returned.
     */
   def listThreatIntelSets(params: ListThreatIntelSetsRequest): Request[ListThreatIntelSetsResponse, AWSError] = js.native
   def listThreatIntelSets(
@@ -466,12 +518,12 @@ trait GuardDuty extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListThreatIntelSetsResponse, Unit]
   ): Request[ListThreatIntelSetsResponse, AWSError] = js.native
   /**
-    * Re-enables GuardDuty to monitor findings of the member accounts specified by the account IDs. A master GuardDuty account can run this command after disabling GuardDuty from monitoring these members' findings by running StopMonitoringMembers.
+    * Turns on GuardDuty monitoring of the specified member accounts. Use this operation to restart monitoring of accounts that you stopped monitoring with the StopMonitoringMembers operation.
     */
   def startMonitoringMembers(): Request[StartMonitoringMembersResponse, AWSError] = js.native
   def startMonitoringMembers(callback: js.Function2[/* err */ AWSError, /* data */ StartMonitoringMembersResponse, Unit]): Request[StartMonitoringMembersResponse, AWSError] = js.native
   /**
-    * Re-enables GuardDuty to monitor findings of the member accounts specified by the account IDs. A master GuardDuty account can run this command after disabling GuardDuty from monitoring these members' findings by running StopMonitoringMembers.
+    * Turns on GuardDuty monitoring of the specified member accounts. Use this operation to restart monitoring of accounts that you stopped monitoring with the StopMonitoringMembers operation.
     */
   def startMonitoringMembers(params: StartMonitoringMembersRequest): Request[StartMonitoringMembersResponse, AWSError] = js.native
   def startMonitoringMembers(
@@ -479,12 +531,12 @@ trait GuardDuty extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ StartMonitoringMembersResponse, Unit]
   ): Request[StartMonitoringMembersResponse, AWSError] = js.native
   /**
-    * Disables GuardDuty from monitoring findings of the member accounts specified by the account IDs. After running this command, a master GuardDuty account can run StartMonitoringMembers to re-enable GuardDuty to monitor these members’ findings.
+    * Stops GuardDuty monitoring for the specified member accounnts. Use the StartMonitoringMembers to restart monitoring for those accounts.
     */
   def stopMonitoringMembers(): Request[StopMonitoringMembersResponse, AWSError] = js.native
   def stopMonitoringMembers(callback: js.Function2[/* err */ AWSError, /* data */ StopMonitoringMembersResponse, Unit]): Request[StopMonitoringMembersResponse, AWSError] = js.native
   /**
-    * Disables GuardDuty from monitoring findings of the member accounts specified by the account IDs. After running this command, a master GuardDuty account can run StartMonitoringMembers to re-enable GuardDuty to monitor these members’ findings.
+    * Stops GuardDuty monitoring for the specified member accounnts. Use the StartMonitoringMembers to restart monitoring for those accounts.
     */
   def stopMonitoringMembers(params: StopMonitoringMembersRequest): Request[StopMonitoringMembersResponse, AWSError] = js.native
   def stopMonitoringMembers(
@@ -505,12 +557,12 @@ trait GuardDuty extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]
   ): Request[TagResourceResponse, AWSError] = js.native
   /**
-    * Unarchives Amazon GuardDuty findings specified by the list of finding IDs.
+    * Unarchives GuardDuty findings specified by the findingIds.
     */
   def unarchiveFindings(): Request[UnarchiveFindingsResponse, AWSError] = js.native
   def unarchiveFindings(callback: js.Function2[/* err */ AWSError, /* data */ UnarchiveFindingsResponse, Unit]): Request[UnarchiveFindingsResponse, AWSError] = js.native
   /**
-    * Unarchives Amazon GuardDuty findings specified by the list of finding IDs.
+    * Unarchives GuardDuty findings specified by the findingIds.
     */
   def unarchiveFindings(params: UnarchiveFindingsRequest): Request[UnarchiveFindingsResponse, AWSError] = js.native
   def unarchiveFindings(
@@ -531,12 +583,12 @@ trait GuardDuty extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]
   ): Request[UntagResourceResponse, AWSError] = js.native
   /**
-    * Updates an Amazon GuardDuty detector specified by the detectorId.
+    * Updates the Amazon GuardDuty detector specified by the detectorId.
     */
   def updateDetector(): Request[UpdateDetectorResponse, AWSError] = js.native
   def updateDetector(callback: js.Function2[/* err */ AWSError, /* data */ UpdateDetectorResponse, Unit]): Request[UpdateDetectorResponse, AWSError] = js.native
   /**
-    * Updates an Amazon GuardDuty detector specified by the detectorId.
+    * Updates the Amazon GuardDuty detector specified by the detectorId.
     */
   def updateDetector(params: UpdateDetectorRequest): Request[UpdateDetectorResponse, AWSError] = js.native
   def updateDetector(
@@ -557,12 +609,12 @@ trait GuardDuty extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateFilterResponse, Unit]
   ): Request[UpdateFilterResponse, AWSError] = js.native
   /**
-    * Marks specified Amazon GuardDuty findings as useful or not useful.
+    * Marks the specified GuardDuty findings as useful or not useful.
     */
   def updateFindingsFeedback(): Request[UpdateFindingsFeedbackResponse, AWSError] = js.native
   def updateFindingsFeedback(callback: js.Function2[/* err */ AWSError, /* data */ UpdateFindingsFeedbackResponse, Unit]): Request[UpdateFindingsFeedbackResponse, AWSError] = js.native
   /**
-    * Marks specified Amazon GuardDuty findings as useful or not useful.
+    * Marks the specified GuardDuty findings as useful or not useful.
     */
   def updateFindingsFeedback(params: UpdateFindingsFeedbackRequest): Request[UpdateFindingsFeedbackResponse, AWSError] = js.native
   def updateFindingsFeedback(
@@ -582,6 +634,19 @@ trait GuardDuty extends Service {
     params: UpdateIPSetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateIPSetResponse, Unit]
   ): Request[UpdateIPSetResponse, AWSError] = js.native
+  /**
+    * Updates information about the publishing destination specified by the destinationId.
+    */
+  def updatePublishingDestination(): Request[UpdatePublishingDestinationResponse, AWSError] = js.native
+  def updatePublishingDestination(callback: js.Function2[/* err */ AWSError, /* data */ UpdatePublishingDestinationResponse, Unit]): Request[UpdatePublishingDestinationResponse, AWSError] = js.native
+  /**
+    * Updates information about the publishing destination specified by the destinationId.
+    */
+  def updatePublishingDestination(params: UpdatePublishingDestinationRequest): Request[UpdatePublishingDestinationResponse, AWSError] = js.native
+  def updatePublishingDestination(
+    params: UpdatePublishingDestinationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdatePublishingDestinationResponse, Unit]
+  ): Request[UpdatePublishingDestinationResponse, AWSError] = js.native
   /**
     * Updates the ThreatIntelSet specified by ThreatIntelSet ID.
     */

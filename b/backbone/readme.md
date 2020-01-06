@@ -11,8 +11,8 @@ Give your JS App some Backbone with Models, Views, Collections, and Events.
 | Full name          | backbone |
 | Keywords           | model, view, controller, router, server, client, browser |
 | # releases         | 2 |
-| # dependents       | 1007 |
-| # downloads        | 13765985 |
+| # dependents       | 1035 |
+| # downloads        | 20063218 |
 | # stars            | 108 |
 
 ## Links

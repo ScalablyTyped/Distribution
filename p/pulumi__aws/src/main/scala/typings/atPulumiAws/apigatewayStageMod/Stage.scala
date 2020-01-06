@@ -30,6 +30,10 @@ class Stage protected () extends CustomResource {
     */
   val accessLogSettings: Output[js.UndefOr[StageAccessLogSettings]] = js.native
   /**
+    * Amazon Resource Name (ARN)
+    */
+  val arn: Output[String] = js.native
+  /**
     * Specifies whether a cache cluster is enabled for the stage
     */
   val cacheClusterEnabled: Output[js.UndefOr[Boolean]] = js.native

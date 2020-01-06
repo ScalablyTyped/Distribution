@@ -6,10 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/test-utils/createShallow.ShallowOptions> */
+@js.native
 trait PartialShallowOptions extends js.Object {
-  var dive: js.UndefOr[Boolean] = js.undefined
-  var shallow: js.UndefOr[Fn_NodeOptionsPropsShallow] = js.undefined
-  var untilSelector: js.UndefOr[EnzymeSelector] = js.undefined
+  var dive: js.UndefOr[Boolean] = js.native
+  var shallow: js.UndefOr[Fn_NodeOptionsPropsShallow] = js.native
+  var untilSelector: js.UndefOr[EnzymeSelector] = js.native
 }
 
 object PartialShallowOptions {

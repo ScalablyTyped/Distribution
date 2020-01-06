@@ -10,9 +10,9 @@ Converts callback-based functions to ES6 Promises
 | ------------------ | :-------------: |
 | Full name          | es6-promisify |
 | Keywords           | promises, es6, promisify |
-| # releases         | 3 |
-| # dependents       | 486 |
-| # downloads        | 120607440 |
+| # releases         | 4 |
+| # dependents       | 511 |
+| # downloads        | 257404632 |
 | # stars            | 25 |
 
 ## Links

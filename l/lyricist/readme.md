@@ -10,9 +10,9 @@ Fetches song lyrics using the Genius.com API and website.
 | ------------------ | :-------------: |
 | Full name          | lyricist |
 | Keywords           | lyric, lyrics, scrape, genius |
-| # releases         | 8 |
-| # dependents       | 2 |
-| # downloads        | 7837 |
+| # releases         | 0 |
+| # dependents       | 3 |
+| # downloads        | 9687 |
 | # stars            | 1 |
 
 ## Links

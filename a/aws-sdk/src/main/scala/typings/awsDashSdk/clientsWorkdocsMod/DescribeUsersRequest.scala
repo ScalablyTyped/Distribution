@@ -4,47 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DescribeUsersRequest extends js.Object {
   /**
     * Amazon WorkDocs authentication token. Do not set this field when using administrative API actions, as in accessing the API using AWS credentials.
     */
-  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.undefined
+  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.native
   /**
     * A comma-separated list of values. Specify "STORAGE_METADATA" to include the user storage quota and utilization information.
     */
-  var Fields: js.UndefOr[FieldNamesType] = js.undefined
+  var Fields: js.UndefOr[FieldNamesType] = js.native
   /**
     * The state of the users. Specify "ALL" to include inactive users.
     */
-  var Include: js.UndefOr[UserFilterType] = js.undefined
+  var Include: js.UndefOr[UserFilterType] = js.native
   /**
     * The maximum number of items to return.
     */
-  var Limit: js.UndefOr[LimitType] = js.undefined
+  var Limit: js.UndefOr[LimitType] = js.native
   /**
     * The marker for the next set of results. (You received this marker from a previous call.)
     */
-  var Marker: js.UndefOr[PageMarkerType] = js.undefined
+  var Marker: js.UndefOr[PageMarkerType] = js.native
   /**
     * The order for the results.
     */
-  var Order: js.UndefOr[OrderType] = js.undefined
+  var Order: js.UndefOr[OrderType] = js.native
   /**
     * The ID of the organization.
     */
-  var OrganizationId: js.UndefOr[IdType] = js.undefined
+  var OrganizationId: js.UndefOr[IdType] = js.native
   /**
     * A query to filter users by user name.
     */
-  var Query: js.UndefOr[SearchQueryType] = js.undefined
+  var Query: js.UndefOr[SearchQueryType] = js.native
   /**
     * The sorting criteria.
     */
-  var Sort: js.UndefOr[UserSortType] = js.undefined
+  var Sort: js.UndefOr[UserSortType] = js.native
   /**
     * The IDs of the users.
     */
-  var UserIds: js.UndefOr[UserIdsType] = js.undefined
+  var UserIds: js.UndefOr[UserIdsType] = js.native
 }
 
 object DescribeUsersRequest {
@@ -62,16 +63,16 @@ object DescribeUsersRequest {
     UserIds: UserIdsType = null
   ): DescribeUsersRequest = {
     val __obj = js.Dynamic.literal()
-    if (AuthenticationToken != null) __obj.updateDynamic("AuthenticationToken")(AuthenticationToken)
-    if (Fields != null) __obj.updateDynamic("Fields")(Fields)
+    if (AuthenticationToken != null) __obj.updateDynamic("AuthenticationToken")(AuthenticationToken.asInstanceOf[js.Any])
+    if (Fields != null) __obj.updateDynamic("Fields")(Fields.asInstanceOf[js.Any])
     if (Include != null) __obj.updateDynamic("Include")(Include.asInstanceOf[js.Any])
     if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker)
+    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
     if (Order != null) __obj.updateDynamic("Order")(Order.asInstanceOf[js.Any])
-    if (OrganizationId != null) __obj.updateDynamic("OrganizationId")(OrganizationId)
-    if (Query != null) __obj.updateDynamic("Query")(Query)
+    if (OrganizationId != null) __obj.updateDynamic("OrganizationId")(OrganizationId.asInstanceOf[js.Any])
+    if (Query != null) __obj.updateDynamic("Query")(Query.asInstanceOf[js.Any])
     if (Sort != null) __obj.updateDynamic("Sort")(Sort.asInstanceOf[js.Any])
-    if (UserIds != null) __obj.updateDynamic("UserIds")(UserIds)
+    if (UserIds != null) __obj.updateDynamic("UserIds")(UserIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeUsersRequest]
   }
 }

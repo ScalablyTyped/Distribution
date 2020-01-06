@@ -1,7 +1,7 @@
 
 # Scala.js typings for scroll-into-view-if-needed
 
-Typings are for version 2.2.20
+Typings are for version 2.2.22
 
 ## Library description:
 Ponyfill for upcoming Element.scrollIntoView() APIs like scrollMode: if-needed, behavior: smooth and block: center
@@ -10,9 +10,9 @@ Ponyfill for upcoming Element.scrollIntoView() APIs like scrollMode: if-needed, 
 | ------------------ | :-------------: |
 | Full name          | scroll-into-view-if-needed |
 | Keywords           | behavior-smooth, if-needed, polyfill, ponyfill, scroll, scroll-into-view, scrollIntoView, scrollIntoViewIfNeeded, scrollMode, smooth, smoothscroll, typescript |
-| # releases         | 40 |
-| # dependents       | 52 |
-| # downloads        | 4757075 |
+| # releases         | 39 |
+| # dependents       | 55 |
+| # downloads        | 4895064 |
 | # stars            | 2 |
 
 ## Links

@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.atPulumiAws.atPulumiAwsStrings.`*`
+  - typings.atPulumiAws.atPulumiAwsStrings.Asterisk
   - typings.atPulumiAws.iamDocumentsMod.AWSPrincipal
   - typings.atPulumiAws.iamDocumentsMod.ServicePrincipal
   - typings.atPulumiAws.iamDocumentsMod.FederatedPrincipal

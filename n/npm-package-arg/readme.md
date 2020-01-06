@@ -10,9 +10,9 @@ Parse the things that can be arguments to `npm install`
 | ------------------ | :-------------: |
 | Full name          | npm-package-arg |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 207 |
-| # downloads        | 49137088 |
+| # releases         | 4 |
+| # dependents       | 247 |
+| # downloads        | 85928210 |
 | # stars            | 3 |
 
 ## Links

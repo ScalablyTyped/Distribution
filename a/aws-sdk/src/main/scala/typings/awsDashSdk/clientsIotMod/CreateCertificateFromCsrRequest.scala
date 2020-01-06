@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CreateCertificateFromCsrRequest extends js.Object {
   /**
     * The certificate signing request (CSR).
     */
-  var certificateSigningRequest: CertificateSigningRequest
+  var certificateSigningRequest: CertificateSigningRequest = js.native
   /**
     * Specifies whether the certificate is active.
     */
-  var setAsActive: js.UndefOr[SetAsActive] = js.undefined
+  var setAsActive: js.UndefOr[SetAsActive] = js.native
 }
 
 object CreateCertificateFromCsrRequest {
@@ -21,8 +22,8 @@ object CreateCertificateFromCsrRequest {
     certificateSigningRequest: CertificateSigningRequest,
     setAsActive: js.UndefOr[scala.Boolean] = js.undefined
   ): CreateCertificateFromCsrRequest = {
-    val __obj = js.Dynamic.literal(certificateSigningRequest = certificateSigningRequest)
-    if (!js.isUndefined(setAsActive)) __obj.updateDynamic("setAsActive")(setAsActive)
+    val __obj = js.Dynamic.literal(certificateSigningRequest = certificateSigningRequest.asInstanceOf[js.Any])
+    if (!js.isUndefined(setAsActive)) __obj.updateDynamic("setAsActive")(setAsActive.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCertificateFromCsrRequest]
   }
 }

@@ -10,9 +10,9 @@ A NodeJS module that provides seamless interactions with Agilit-e APIs
 | ------------------ | :-------------: |
 | Full name          | agilite |
 | Keywords           | agilit-e, agilite, keywords, numbering, connectors, data mapping, templates, bpm, roles, botbuilder, tier structures |
-| # releases         | 16 |
+| # releases         | 17 |
 | # dependents       | 1 |
-| # downloads        | 1006 |
+| # downloads        | 1224 |
 | # stars            | 0 |
 
 ## Links

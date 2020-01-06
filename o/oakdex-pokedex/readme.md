@@ -12,7 +12,7 @@ Comprehensive Pokedex for Gen 1-7
 | Keywords           | json, pokedex, pokemon, json-schema, json-api |
 | # releases         | 13 |
 | # dependents       | 0 |
-| # downloads        | 3611 |
+| # downloads        | 2175 |
 | # stars            | 0 |
 
 ## Links

@@ -35,9 +35,9 @@ object xdr extends js.Object {
   @js.native
   class XDRStruct () extends js.Object {
     def toXDR(): Buffer = js.native
-    def toXDR(base: String): Buffer = js.native
+    def toXDR(encoding: String): String = js.native
     @JSName("toXDR")
-    def toXDR_String(encoding: String): String = js.native
+    def toXDR_Buffer(base: String): Buffer = js.native
   }
   
   /* static members */

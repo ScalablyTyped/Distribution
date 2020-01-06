@@ -11,7 +11,7 @@ Angular SDK to use with Auth0
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 14695 |
+| # downloads        | 13323 |
 | # stars            | 1 |
 
 ## Links

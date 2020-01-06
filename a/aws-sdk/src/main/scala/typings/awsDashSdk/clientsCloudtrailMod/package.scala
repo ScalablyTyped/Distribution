@@ -5,6 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsCloudtrailMod {
+  import typings.awsDashSdk.awsDashSdkStrings.ApiCallRateInsight
+  import typings.awsDashSdk.awsDashSdkStrings.insight
   import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
   import typings.node.Buffer
   import typings.std.Date
@@ -15,13 +17,17 @@ package object clientsCloudtrailMod {
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
   type DataResourceValues = js.Array[String]
   type DataResources = js.Array[DataResource]
+  type EventCategory = insight | java.lang.String
   type EventSelectors = js.Array[EventSelector]
   type EventsList = js.Array[Event]
+  type ExcludeManagementEventSources = js.Array[String]
+  type InsightSelectors = js.Array[InsightSelector]
+  type InsightType = ApiCallRateInsight | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.EventId
     - typings.awsDashSdk.awsDashSdkStrings.EventName
     - typings.awsDashSdk.awsDashSdkStrings.ReadOnly
-    - typings.awsDashSdk.awsDashSdkStrings.Username
+    - typings.awsDashSdk.awsDashSdkStrings.Username_
     - typings.awsDashSdk.awsDashSdkStrings.ResourceType
     - typings.awsDashSdk.awsDashSdkStrings.ResourceName
     - typings.awsDashSdk.awsDashSdkStrings.EventSource
@@ -36,7 +42,7 @@ package object clientsCloudtrailMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.ReadOnly
     - typings.awsDashSdk.awsDashSdkStrings.WriteOnly
-    - typings.awsDashSdk.awsDashSdkStrings.All
+    - typings.awsDashSdk.awsDashSdkStrings.All_
     - java.lang.String
   */
   type ReadWriteType = _ReadWriteType | java.lang.String
@@ -47,10 +53,11 @@ package object clientsCloudtrailMod {
   type TagsList = js.Array[Tag]
   type TrailList = js.Array[Trail]
   type TrailNameList = js.Array[String]
+  type Trails = js.Array[TrailInfo]
   type _Date = Date
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2013-11-01`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | java.lang.String

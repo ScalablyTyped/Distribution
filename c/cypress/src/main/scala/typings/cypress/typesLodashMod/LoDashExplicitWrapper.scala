@@ -763,7 +763,7 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   /**
     * @see _.flatMap
     */
-  def flatMap[T /* <: js.Object */, TResult](iteratee: ObjectIterator[T, Many[TResult]]): LoDashExplicitWrapper[js.Array[TResult]] = js.native
+  def flatMap[T, TResult](iteratee: ListIterator[T, Many[TResult]]): LoDashExplicitWrapper[js.Array[TResult]] = js.native
   /**
     * @see _.flatMapDeep
     */
@@ -779,12 +779,12 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   /**
     * @see _.flatMapDeep
     */
-  def flatMapDeep[T /* <: js.Object */, TResult](iteratee: ObjectIterator[T, ListOfRecursiveArraysOrValues[TResult] | TResult]): LoDashExplicitWrapper[js.Array[TResult]] = js.native
+  def flatMapDeep[T, TResult](iteratee: ListIterator[T, ListOfRecursiveArraysOrValues[TResult] | TResult]): LoDashExplicitWrapper[js.Array[TResult]] = js.native
   /**
     * @see _.flatMapDeep
     */
   @JSName("flatMapDeep")
-  def flatMapDeep_TTResult[T, TResult](iteratee: ListIterator[T, ListOfRecursiveArraysOrValues[TResult] | TResult]): LoDashExplicitWrapper[js.Array[TResult]] = js.native
+  def flatMapDeep_T_ObjectTResult[T /* <: js.Object */, TResult](iteratee: ObjectIterator[T, ListOfRecursiveArraysOrValues[TResult] | TResult]): LoDashExplicitWrapper[js.Array[TResult]] = js.native
   /**
     * @see _.flatMapDepth
     */
@@ -802,15 +802,15 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   /**
     * @see _.flatMapDepth
     */
-  def flatMapDepth[T /* <: js.Object */, TResult](iteratee: ObjectIterator[T, ListOfRecursiveArraysOrValues[TResult] | TResult]): LoDashExplicitWrapper[js.Array[TResult]] = js.native
-  def flatMapDepth[T /* <: js.Object */, TResult](iteratee: ObjectIterator[T, ListOfRecursiveArraysOrValues[TResult] | TResult], depth: Double): LoDashExplicitWrapper[js.Array[TResult]] = js.native
+  def flatMapDepth[T, TResult](iteratee: ListIterator[T, ListOfRecursiveArraysOrValues[TResult] | TResult]): LoDashExplicitWrapper[js.Array[TResult]] = js.native
+  def flatMapDepth[T, TResult](iteratee: ListIterator[T, ListOfRecursiveArraysOrValues[TResult] | TResult], depth: Double): LoDashExplicitWrapper[js.Array[TResult]] = js.native
   /**
     * @see _.flatMapDepth
     */
   @JSName("flatMapDepth")
-  def flatMapDepth_TTResult[T, TResult](iteratee: ListIterator[T, ListOfRecursiveArraysOrValues[TResult] | TResult]): LoDashExplicitWrapper[js.Array[TResult]] = js.native
+  def flatMapDepth_T_ObjectTResult[T /* <: js.Object */, TResult](iteratee: ObjectIterator[T, ListOfRecursiveArraysOrValues[TResult] | TResult]): LoDashExplicitWrapper[js.Array[TResult]] = js.native
   @JSName("flatMapDepth")
-  def flatMapDepth_TTResult[T, TResult](iteratee: ListIterator[T, ListOfRecursiveArraysOrValues[TResult] | TResult], depth: Double): LoDashExplicitWrapper[js.Array[TResult]] = js.native
+  def flatMapDepth_T_ObjectTResult[T /* <: js.Object */, TResult](iteratee: ObjectIterator[T, ListOfRecursiveArraysOrValues[TResult] | TResult], depth: Double): LoDashExplicitWrapper[js.Array[TResult]] = js.native
   /**
     * @see _.flatMap
     */
@@ -820,7 +820,7 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.flatMap
     */
   @JSName("flatMap")
-  def flatMap_TTResult[T, TResult](iteratee: ListIterator[T, Many[TResult]]): LoDashExplicitWrapper[js.Array[TResult]] = js.native
+  def flatMap_T_ObjectTResult[T /* <: js.Object */, TResult](iteratee: ObjectIterator[T, Many[TResult]]): LoDashExplicitWrapper[js.Array[TResult]] = js.native
   /**
     * @see _.flatten
     */
@@ -1775,7 +1775,7 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   /**
     * @see _.map
     */
-  def map[T /* <: js.Object */, TResult](iteratee: ObjectIterator[T, TResult]): LoDashExplicitWrapper[js.Array[TResult]] = js.native
+  def map[T, TResult](iteratee: (ArrayIterator[T, TResult]) | (ListIterator[T, TResult])): LoDashExplicitWrapper[js.Array[TResult]] = js.native
   /**
     * @see _.mapKeys
     */
@@ -1876,7 +1876,7 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.map
     */
   @JSName("map")
-  def map_TTResult[T, TResult](iteratee: (ArrayIterator[T, TResult]) | (ListIterator[T, TResult])): LoDashExplicitWrapper[js.Array[TResult]] = js.native
+  def map_T_ObjectTResult[T /* <: js.Object */, TResult](iteratee: ObjectIterator[T, TResult]): LoDashExplicitWrapper[js.Array[TResult]] = js.native
   /**
     * @see _.matches
     */
@@ -2511,14 +2511,7 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   /**
     * @see _.reduce
     **/
-  def reduce[T /* <: js.Object */, TResult](
-    callback: MemoObjectIterator[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 
-      TResult, 
-      T
-    ],
-    accumulator: TResult
-  ): LoDashExplicitWrapper[TResult] = js.native
+  def reduce[T, TResult](callback: MemoListIterator[T, TResult, js.Array[T] | List[T]], accumulator: TResult): LoDashExplicitWrapper[TResult] = js.native
   /**
     * @see _.reduceRight
     **/
@@ -2526,19 +2519,7 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   /**
     * @see _.reduceRight
     **/
-  def reduceRight[T /* <: js.Object */, TResult](
-    callback: MemoObjectIterator[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 
-      TResult, 
-      T
-    ],
-    accumulator: TResult
-  ): LoDashExplicitWrapper[TResult] = js.native
-  /**
-    * @see _.reduceRight
-    **/
-  @JSName("reduceRight")
-  def reduceRight_TTResult[T, TResult](callback: MemoListIterator[T, TResult, js.Array[T] | List[T]], accumulator: TResult): LoDashExplicitWrapper[TResult] = js.native
+  def reduceRight[T, TResult](callback: MemoListIterator[T, TResult, js.Array[T] | List[T]], accumulator: TResult): LoDashExplicitWrapper[TResult] = js.native
   /**
     * @see _.reduceRight
     **/
@@ -2555,10 +2536,17 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     ]
   ] = js.native
   /**
-    * @see _.reduce
+    * @see _.reduceRight
     **/
-  @JSName("reduce")
-  def reduce_TTResult[T, TResult](callback: MemoListIterator[T, TResult, js.Array[T] | List[T]], accumulator: TResult): LoDashExplicitWrapper[TResult] = js.native
+  @JSName("reduceRight")
+  def reduceRight_T_ObjectTResult[T /* <: js.Object */, TResult](
+    callback: MemoObjectIterator[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 
+      TResult, 
+      T
+    ],
+    accumulator: TResult
+  ): LoDashExplicitWrapper[TResult] = js.native
   /**
     * @see _.reduce
     **/
@@ -2574,6 +2562,18 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
     ]
   ] = js.native
+  /**
+    * @see _.reduce
+    **/
+  @JSName("reduce")
+  def reduce_T_ObjectTResult[T /* <: js.Object */, TResult](
+    callback: MemoObjectIterator[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 
+      TResult, 
+      T
+    ],
+    accumulator: TResult
+  ): LoDashExplicitWrapper[TResult] = js.native
   /**
     * @see _.reject
     */

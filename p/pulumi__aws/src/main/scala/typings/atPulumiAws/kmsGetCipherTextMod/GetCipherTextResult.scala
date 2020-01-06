@@ -5,18 +5,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetCipherTextResult extends js.Object {
   /**
     * Base64 encoded ciphertext
     */
-  val ciphertextBlob: String
-  val context: js.UndefOr[StringDictionary[String]] = js.undefined
+  val ciphertextBlob: String = js.native
+  val context: js.UndefOr[StringDictionary[String]] = js.native
   /**
     * id is the provider-assigned unique ID for this managed resource.
     */
-  val id: String
-  val keyId: String
-  val plaintext: String
+  val id: String = js.native
+  val keyId: String = js.native
+  val plaintext: String = js.native
 }
 
 object GetCipherTextResult {
@@ -28,8 +29,8 @@ object GetCipherTextResult {
     plaintext: String,
     context: StringDictionary[String] = null
   ): GetCipherTextResult = {
-    val __obj = js.Dynamic.literal(ciphertextBlob = ciphertextBlob, id = id, keyId = keyId, plaintext = plaintext)
-    if (context != null) __obj.updateDynamic("context")(context)
+    val __obj = js.Dynamic.literal(ciphertextBlob = ciphertextBlob.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], keyId = keyId.asInstanceOf[js.Any], plaintext = plaintext.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCipherTextResult]
   }
 }

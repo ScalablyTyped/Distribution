@@ -10,9 +10,9 @@ Express middleware to correlate requests across http calls
 | ------------------ | :-------------: |
 | Full name          | express-correlation-id |
 | Keywords           | express, logging, correlation, debug |
-| # releases         | 3 |
-| # dependents       | 1 |
-| # downloads        | 88675 |
+| # releases         | 6 |
+| # dependents       | 4 |
+| # downloads        | 183164 |
 | # stars            | 1 |
 
 ## Links

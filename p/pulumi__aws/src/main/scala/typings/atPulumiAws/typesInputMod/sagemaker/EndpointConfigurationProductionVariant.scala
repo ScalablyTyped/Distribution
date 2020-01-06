@@ -5,13 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EndpointConfigurationProductionVariant extends js.Object {
-  var acceleratorType: js.UndefOr[Input[String]] = js.undefined
-  var initialInstanceCount: Input[Double]
-  var initialVariantWeight: js.UndefOr[Input[Double]] = js.undefined
-  var instanceType: Input[String]
-  var modelName: Input[String]
-  var variantName: js.UndefOr[Input[String]] = js.undefined
+  var acceleratorType: js.UndefOr[Input[String]] = js.native
+  var initialInstanceCount: Input[Double] = js.native
+  var initialVariantWeight: js.UndefOr[Input[Double]] = js.native
+  var instanceType: Input[String] = js.native
+  var modelName: Input[String] = js.native
+  var variantName: js.UndefOr[Input[String]] = js.native
 }
 
 object EndpointConfigurationProductionVariant {

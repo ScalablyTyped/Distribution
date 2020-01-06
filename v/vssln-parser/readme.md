@@ -12,7 +12,7 @@ Parses Visual Studio Solution (sln) files and returns information about projects
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 1265 |
+| # downloads        | 1111 |
 | # stars            | 0 |
 
 ## Links

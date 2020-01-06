@@ -5,28 +5,29 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LaunchTemplateNetworkInterface extends js.Object {
-  var associatePublicIpAddress: js.UndefOr[Input[Boolean]] = js.undefined
-  var deleteOnTermination: js.UndefOr[Input[Boolean]] = js.undefined
+  var associatePublicIpAddress: js.UndefOr[Input[String]] = js.native
+  var deleteOnTermination: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Description of the launch template.
     */
-  var description: js.UndefOr[Input[String]] = js.undefined
-  var deviceIndex: js.UndefOr[Input[Double]] = js.undefined
-  var ipv4AddressCount: js.UndefOr[Input[Double]] = js.undefined
-  var ipv4Addresses: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
-  var ipv6AddressCount: js.UndefOr[Input[Double]] = js.undefined
-  var ipv6Addresses: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
-  var networkInterfaceId: js.UndefOr[Input[String]] = js.undefined
-  var privateIpAddress: js.UndefOr[Input[String]] = js.undefined
-  var securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
-  var subnetId: js.UndefOr[Input[String]] = js.undefined
+  var description: js.UndefOr[Input[String]] = js.native
+  var deviceIndex: js.UndefOr[Input[Double]] = js.native
+  var ipv4AddressCount: js.UndefOr[Input[Double]] = js.native
+  var ipv4Addresses: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  var ipv6AddressCount: js.UndefOr[Input[Double]] = js.native
+  var ipv6Addresses: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  var networkInterfaceId: js.UndefOr[Input[String]] = js.native
+  var privateIpAddress: js.UndefOr[Input[String]] = js.native
+  var securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  var subnetId: js.UndefOr[Input[String]] = js.native
 }
 
 object LaunchTemplateNetworkInterface {
   @scala.inline
   def apply(
-    associatePublicIpAddress: Input[Boolean] = null,
+    associatePublicIpAddress: Input[String] = null,
     deleteOnTermination: Input[Boolean] = null,
     description: Input[String] = null,
     deviceIndex: Input[Double] = null,

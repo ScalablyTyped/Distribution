@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ListRuleNamesByTargetRequest extends js.Object {
   /**
     * Limits the results to show only the rules associated with the specified event bus.
     */
-  var EventBusName: js.UndefOr[typings.awsDashSdk.clientsEventbridgeMod.EventBusName] = js.undefined
+  var EventBusName: js.UndefOr[typings.awsDashSdk.clientsEventbridgeMod.EventBusName] = js.native
   /**
     * The maximum number of results to return.
     */
-  var Limit: js.UndefOr[LimitMax100] = js.undefined
+  var Limit: js.UndefOr[LimitMax100] = js.native
   /**
     * The token returned by a previous call to retrieve the next set of results.
     */
-  var NextToken: js.UndefOr[typings.awsDashSdk.clientsEventbridgeMod.NextToken] = js.undefined
+  var NextToken: js.UndefOr[typings.awsDashSdk.clientsEventbridgeMod.NextToken] = js.native
   /**
     * The Amazon Resource Name (ARN) of the target resource.
     */
-  var TargetArn: typings.awsDashSdk.clientsEventbridgeMod.TargetArn
+  var TargetArn: typings.awsDashSdk.clientsEventbridgeMod.TargetArn = js.native
 }
 
 object ListRuleNamesByTargetRequest {
@@ -31,10 +32,10 @@ object ListRuleNamesByTargetRequest {
     Limit: Int | Double = null,
     NextToken: NextToken = null
   ): ListRuleNamesByTargetRequest = {
-    val __obj = js.Dynamic.literal(TargetArn = TargetArn)
-    if (EventBusName != null) __obj.updateDynamic("EventBusName")(EventBusName)
+    val __obj = js.Dynamic.literal(TargetArn = TargetArn.asInstanceOf[js.Any])
+    if (EventBusName != null) __obj.updateDynamic("EventBusName")(EventBusName.asInstanceOf[js.Any])
     if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListRuleNamesByTargetRequest]
   }
 }

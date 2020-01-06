@@ -13,6 +13,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ToasterSharedStylePropsArg extends js.Object {
   @JSName("$placement")
-  var $placement: js.UndefOr[bottomRight | bottom | topRight | bottomLeft | topLeft | top] = js.native
+  var $placement: js.UndefOr[topLeft | topRight | bottomLeft | bottomRight | bottom | top] = js.native
 }
 

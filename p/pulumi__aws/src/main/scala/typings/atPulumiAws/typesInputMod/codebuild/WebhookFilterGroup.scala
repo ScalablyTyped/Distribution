@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WebhookFilterGroup extends js.Object {
   /**
     * A webhook filter for the group. Filter blocks are documented below.
     */
-  var filters: js.UndefOr[Input[js.Array[Input[WebhookFilterGroupFilter]]]] = js.undefined
+  var filters: js.UndefOr[Input[js.Array[Input[WebhookFilterGroupFilter]]]] = js.native
 }
 
 object WebhookFilterGroup {

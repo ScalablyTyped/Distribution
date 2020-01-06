@@ -4,10 +4,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Anon_FocusVisibleCheckTime extends js.Object {
-  var focusVisibleCheckTime: Double
-  var focusVisibleMaxCheckTimes: Double
-  var focusVisibleTimeout: js.Any
+  var focusVisibleCheckTime: Double = js.native
+  var focusVisibleMaxCheckTimes: Double = js.native
+  var focusVisibleTimeout: js.Any = js.native
 }
 
 object Anon_FocusVisibleCheckTime {

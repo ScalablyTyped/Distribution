@@ -15,6 +15,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DateConstructor
   extends Instantiable0[Date]
+     with Instantiable1[
+      (/* value */ Date) | (/* value */ Double) | (/* value */ java.lang.String) | (/* vd */ VarDate), 
+      Date
+    ]
      with Instantiable2[/* year */ Double, /* month */ Double, Date]
      with Instantiable3[/* year */ Double, /* month */ Double, /* date */ Double, Date]
      with Instantiable4[/* year */ Double, /* month */ Double, /* date */ Double, /* hours */ Double, Date]
@@ -43,10 +47,6 @@ trait DateConstructor
       /* minutes */ Double, 
       /* seconds */ Double, 
       /* ms */ Double, 
-      Date
-    ]
-     with Instantiable1[
-      (/* value */ Date) | (/* value */ Double) | (/* value */ java.lang.String) | (/* vd */ VarDate), 
       Date
     ] {
   def apply(): java.lang.String = js.native

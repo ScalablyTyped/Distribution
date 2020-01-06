@@ -11,9 +11,9 @@ Node's event emitter for all engines.
 | Full name          | events |
 | Keywords           | events, eventEmitter, eventDispatcher, listeners |
 | # releases         | 4 |
-| # dependents       | 1357 |
-| # downloads        | 276437017 |
-| # stars            | 56 |
+| # dependents       | 1752 |
+| # downloads        | 421815123 |
+| # stars            | 57 |
 
 ## Links
 - [Homepage](https://github.com/Gozala/events#readme)

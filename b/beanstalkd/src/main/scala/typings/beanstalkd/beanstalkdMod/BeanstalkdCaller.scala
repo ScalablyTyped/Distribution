@@ -14,7 +14,7 @@ trait BeanstalkdCaller extends js.Object {
     on | unref | typings.beanstalkd.beanstalkdStrings.call
   ] */](
     fn: K,
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type ArgsType<Required<BeanstalkdClient>[K]> is not an array type */ args: ArgsType[
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type ArgsType<Required<BeanstalkdClient>[K]> is not an array type */ args: ArgsType[
       /* import warning: importer.ImportType#apply Failed type conversion: std.Required<beanstalkd.beanstalkd.BeanstalkdClient>[K] */ js.Any
     ]
   ): (MergePromise[

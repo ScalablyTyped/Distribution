@@ -10,9 +10,9 @@ PhosphorJS - Tabular Data Grid
 | ------------------ | :-------------: |
 | Full name          | @phosphor/datagrid |
 | Keywords           | - |
-| # releases         | 9 |
-| # dependents       | 15 |
-| # downloads        | 430965 |
+| # releases         | 10 |
+| # dependents       | 19 |
+| # downloads        | 793694 |
 | # stars            | 0 |
 
 ## Links

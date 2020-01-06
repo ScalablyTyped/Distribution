@@ -10,9 +10,9 @@ the mighty option parser used by yargs
 | ------------------ | :-------------: |
 | Full name          | yargs-parser |
 | Keywords           | argument, parser, yargs, command, cli, parsing, option, args, argument |
-| # releases         | 17 |
-| # dependents       | 422 |
-| # downloads        | 713813123 |
+| # releases         | 19 |
+| # dependents       | 598 |
+| # downloads        | 1124548618 |
 | # stars            | 11 |
 
 ## Links

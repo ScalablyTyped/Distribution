@@ -1,5 +1,6 @@
 package typings.atPulumiAws.resourcegroupsGroupMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.atPulumiAws.typesOutputMod.resourcegroups.GroupResourceQuery
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
@@ -38,6 +39,10 @@ class Group protected () extends CustomResource {
     * A `resourceQuery` block. Resource queries are documented below.
     */
   val resourceQuery: Output[GroupResourceQuery] = js.native
+  /**
+    * Key-value mapping of resource tags
+    */
+  val tags: Output[js.UndefOr[StringDictionary[_]]] = js.native
 }
 
 /* static members */

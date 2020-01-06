@@ -10,9 +10,9 @@ A library to help construct a graphql-js server supporting react-relay.
 | ------------------ | :-------------: |
 | Full name          | graphql-relay |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 118 |
-| # downloads        | 5492107 |
+| # releases         | 3 |
+| # dependents       | 134 |
+| # downloads        | 5231219 |
 | # stars            | 10 |
 
 ## Links

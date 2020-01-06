@@ -12,7 +12,7 @@ ali npm
 | Keywords           | npm, ali |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 845 |
+| # downloads        | 923 |
 | # stars            | 0 |
 
 ## Links

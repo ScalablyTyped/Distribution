@@ -11,8 +11,8 @@ Component-wise operations on ndarrays
 | Full name          | cwise |
 | Keywords           | scijs, ndarray, component, scientific, computing, volume, image, array, typed, array, scalar, math, linear, algebra, signal, operation, scan, map, reduce, cache, arithmetic |
 | # releases         | 1 |
-| # dependents       | 55 |
-| # downloads        | 3073647 |
+| # dependents       | 60 |
+| # downloads        | 3879489 |
 | # stars            | 2 |
 
 ## Links

@@ -10,9 +10,9 @@ Official NodeJS and BrowserJS client for the Asana API
 | ------------------ | :-------------: |
 | Full name          | asana |
 | Keywords           | asana, api, oauth |
-| # releases         | 5 |
-| # dependents       | 7 |
-| # downloads        | 152057 |
+| # releases         | 8 |
+| # dependents       | 9 |
+| # downloads        | 227948 |
 | # stars            | 4 |
 
 ## Links

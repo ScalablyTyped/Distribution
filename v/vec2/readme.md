@@ -10,9 +10,9 @@ manipulate vectors in 2d
 | ------------------ | :-------------: |
 | Full name          | vec2 |
 | Keywords           | 2d, vec, vector, geometry |
-| # releases         | 1 |
-| # dependents       | 35 |
-| # downloads        | 40309 |
+| # releases         | 2 |
+| # dependents       | 36 |
+| # downloads        | 53274 |
 | # stars            | 2 |
 
 ## Links

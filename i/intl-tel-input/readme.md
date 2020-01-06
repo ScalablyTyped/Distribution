@@ -10,9 +10,9 @@ A JavaScript plugin for entering and validating international telephone numbers
 | ------------------ | :-------------: |
 | Full name          | intl-tel-input |
 | Keywords           | international, i18n, country, dial, code, telephone, mobile, input, flag |
-| # releases         | 58 |
-| # dependents       | 19 |
-| # downloads        | 1323570 |
+| # releases         | 46 |
+| # dependents       | 25 |
+| # downloads        | 2519437 |
 | # stars            | 10 |
 
 ## Links

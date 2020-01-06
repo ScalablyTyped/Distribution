@@ -10,12 +10,15 @@ A pure JS implementation SHA256.
 | ------------------ | :-------------: |
 | Full name          | @aws-crypto/sha256-js |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 6 |
 | # dependents       | 1 |
-| # downloads        | 1468 |
+| # downloads        | 6325 |
 | # stars            | 0 |
 
 ## Links
+- [Homepage](https://github.com/aws/aws-sdk-js-crypto-helpers#readme)
+- [Bugs](https://github.com/aws/aws-sdk-js-crypto-helpers/issues)
+- [Repository](https://github.com/aws/aws-sdk-js-crypto-helpers)
 - [Npm](https://www.npmjs.com/package/%40aws-crypto%2Fsha256-js)
     
 

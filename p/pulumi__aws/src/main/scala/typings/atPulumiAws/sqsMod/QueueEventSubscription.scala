@@ -11,20 +11,16 @@ import scala.scalajs.js.annotation._
 @js.native
 class QueueEventSubscription protected ()
   extends typings.atPulumiAws.sqsSqsMixinsMod.QueueEventSubscription {
+  def this(name: String, queue: typings.atPulumiAws.sqsQueueMod.Queue, handler: QueueEventHandler) = this()
   def this(
     name: String,
-    queue: typings.atPulumiAws.sqsSqsMixinsMod.sqsQueueMod.Queue,
-    handler: QueueEventHandler
-  ) = this()
-  def this(
-    name: String,
-    queue: typings.atPulumiAws.sqsSqsMixinsMod.sqsQueueMod.Queue,
+    queue: typings.atPulumiAws.sqsQueueMod.Queue,
     handler: QueueEventHandler,
     args: QueueEventSubscriptionArgs
   ) = this()
   def this(
     name: String,
-    queue: typings.atPulumiAws.sqsSqsMixinsMod.sqsQueueMod.Queue,
+    queue: typings.atPulumiAws.sqsQueueMod.Queue,
     handler: QueueEventHandler,
     args: QueueEventSubscriptionArgs,
     opts: ComponentResourceOptions

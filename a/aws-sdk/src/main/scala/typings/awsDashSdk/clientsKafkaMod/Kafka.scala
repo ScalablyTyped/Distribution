@@ -283,6 +283,23 @@ trait Kafka extends Service {
   ): Request[js.Object, AWSError] = js.native
   /**
     * 
+    Updates the number of broker nodes in the cluster.
+    
+    */
+  def updateBrokerCount(): Request[UpdateBrokerCountResponse, AWSError] = js.native
+  def updateBrokerCount(callback: js.Function2[/* err */ AWSError, /* data */ UpdateBrokerCountResponse, Unit]): Request[UpdateBrokerCountResponse, AWSError] = js.native
+  /**
+    * 
+    Updates the number of broker nodes in the cluster.
+    
+    */
+  def updateBrokerCount(params: UpdateBrokerCountRequest): Request[UpdateBrokerCountResponse, AWSError] = js.native
+  def updateBrokerCount(
+    params: UpdateBrokerCountRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateBrokerCountResponse, Unit]
+  ): Request[UpdateBrokerCountResponse, AWSError] = js.native
+  /**
+    * 
     Updates the EBS storage associated with MSK brokers.
     
     */
@@ -315,5 +332,22 @@ trait Kafka extends Service {
     params: UpdateClusterConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateClusterConfigurationResponse, Unit]
   ): Request[UpdateClusterConfigurationResponse, AWSError] = js.native
+  /**
+    * 
+    Updates the monitoring settings for the cluster. You can use this operation to specify which Apache Kafka metrics you want Amazon MSK to send to Amazon CloudWatch. You can also specify settings for open monitoring with Prometheus.
+    
+    */
+  def updateMonitoring(): Request[UpdateMonitoringResponse, AWSError] = js.native
+  def updateMonitoring(callback: js.Function2[/* err */ AWSError, /* data */ UpdateMonitoringResponse, Unit]): Request[UpdateMonitoringResponse, AWSError] = js.native
+  /**
+    * 
+    Updates the monitoring settings for the cluster. You can use this operation to specify which Apache Kafka metrics you want Amazon MSK to send to Amazon CloudWatch. You can also specify settings for open monitoring with Prometheus.
+    
+    */
+  def updateMonitoring(params: UpdateMonitoringRequest): Request[UpdateMonitoringResponse, AWSError] = js.native
+  def updateMonitoring(
+    params: UpdateMonitoringRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateMonitoringResponse, Unit]
+  ): Request[UpdateMonitoringResponse, AWSError] = js.native
 }
 

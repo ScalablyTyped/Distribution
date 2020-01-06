@@ -10,15 +10,15 @@ A middleware that adds a request id to a koa application
 | ------------------ | :-------------: |
 | Full name          | koa-requestid |
 | Keywords           | koa, request, request-id, requestId |
-| # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 45809 |
+| # releases         | 3 |
+| # dependents       | 5 |
+| # downloads        | 91243 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/seegno/koa-requestid/)
-- [Bugs](https://github.com/seegno/koa-requestid/issues)
-- [Repository](https://github.com/seegno/koa-requestid)
+- [Homepage](https://github.com/uphold/koa-requestid/)
+- [Bugs](https://github.com/uphold/koa-requestid/issues)
+- [Repository](https://github.com/uphold/koa-requestid)
 - [Npm](https://www.npmjs.com/package/koa-requestid)
     
 

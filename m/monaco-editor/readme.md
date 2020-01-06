@@ -11,8 +11,8 @@ A browser based code editor
 | Full name          | monaco-editor |
 | Keywords           | - |
 | # releases         | 23 |
-| # dependents       | 108 |
-| # downloads        | 2064727 |
+| # dependents       | 186 |
+| # downloads        | 4215365 |
 | # stars            | 9 |
 
 ## Links

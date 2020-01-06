@@ -1,19 +1,21 @@
 package typings.awsDashSdk.libDynamodbDocumentUnderscoreClientMod.DocumentClient
 
+import typings.awsDashSdk.awsDashSdkStrings.String_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StringSet extends DynamoDbSet {
-  var `type`: typings.awsDashSdk.awsDashSdkStrings.String
-  var values: js.Array[java.lang.String]
+  var `type`: String_ = js.native
+  var values: js.Array[java.lang.String] = js.native
 }
 
 object StringSet {
   @scala.inline
-  def apply(`type`: typings.awsDashSdk.awsDashSdkStrings.String, values: js.Array[java.lang.String]): StringSet = {
-    val __obj = js.Dynamic.literal(values = values)
-    __obj.updateDynamic("type")(`type`)
+  def apply(`type`: String_, values: js.Array[java.lang.String]): StringSet = {
+    val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[StringSet]
   }
 }

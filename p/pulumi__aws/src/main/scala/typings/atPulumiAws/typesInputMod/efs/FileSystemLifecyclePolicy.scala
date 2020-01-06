@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FileSystemLifecyclePolicy extends js.Object {
   /**
-    * Indicates how long it takes to transition files to the IA storage class. Valid values: `AFTER_14_DAYS`, `AFTER_30_DAYS`, `AFTER_60_DAYS`, or `AFTER_90_DAYS`.
+    * Indicates how long it takes to transition files to the IA storage class. Valid values: `AFTER_7_DAYS`, `AFTER_14_DAYS`, `AFTER_30_DAYS`, `AFTER_60_DAYS`, or `AFTER_90_DAYS`.
     */
-  var transitionToIa: js.UndefOr[Input[String]] = js.undefined
+  var transitionToIa: js.UndefOr[Input[String]] = js.native
 }
 
 object FileSystemLifecyclePolicy {

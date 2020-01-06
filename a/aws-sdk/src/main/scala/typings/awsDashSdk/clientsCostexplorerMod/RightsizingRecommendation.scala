@@ -4,27 +4,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RightsizingRecommendation extends js.Object {
   /**
     * The account that this recommendation is for.
     */
-  var AccountId: js.UndefOr[GenericString] = js.undefined
+  var AccountId: js.UndefOr[GenericString] = js.native
   /**
     *  Context regarding the current instance.
     */
-  var CurrentInstance: js.UndefOr[typings.awsDashSdk.clientsCostexplorerMod.CurrentInstance] = js.undefined
+  var CurrentInstance: js.UndefOr[typings.awsDashSdk.clientsCostexplorerMod.CurrentInstance] = js.native
   /**
     *  Details for modification recommendations. 
     */
-  var ModifyRecommendationDetail: js.UndefOr[typings.awsDashSdk.clientsCostexplorerMod.ModifyRecommendationDetail] = js.undefined
+  var ModifyRecommendationDetail: js.UndefOr[typings.awsDashSdk.clientsCostexplorerMod.ModifyRecommendationDetail] = js.native
   /**
     * Recommendation to either terminate or modify the resource.
     */
-  var RightsizingType: js.UndefOr[typings.awsDashSdk.clientsCostexplorerMod.RightsizingType] = js.undefined
+  var RightsizingType: js.UndefOr[typings.awsDashSdk.clientsCostexplorerMod.RightsizingType] = js.native
   /**
     * Details for termination recommendations.
     */
-  var TerminateRecommendationDetail: js.UndefOr[typings.awsDashSdk.clientsCostexplorerMod.TerminateRecommendationDetail] = js.undefined
+  var TerminateRecommendationDetail: js.UndefOr[typings.awsDashSdk.clientsCostexplorerMod.TerminateRecommendationDetail] = js.native
 }
 
 object RightsizingRecommendation {
@@ -37,11 +38,11 @@ object RightsizingRecommendation {
     TerminateRecommendationDetail: TerminateRecommendationDetail = null
   ): RightsizingRecommendation = {
     val __obj = js.Dynamic.literal()
-    if (AccountId != null) __obj.updateDynamic("AccountId")(AccountId)
-    if (CurrentInstance != null) __obj.updateDynamic("CurrentInstance")(CurrentInstance)
-    if (ModifyRecommendationDetail != null) __obj.updateDynamic("ModifyRecommendationDetail")(ModifyRecommendationDetail)
+    if (AccountId != null) __obj.updateDynamic("AccountId")(AccountId.asInstanceOf[js.Any])
+    if (CurrentInstance != null) __obj.updateDynamic("CurrentInstance")(CurrentInstance.asInstanceOf[js.Any])
+    if (ModifyRecommendationDetail != null) __obj.updateDynamic("ModifyRecommendationDetail")(ModifyRecommendationDetail.asInstanceOf[js.Any])
     if (RightsizingType != null) __obj.updateDynamic("RightsizingType")(RightsizingType.asInstanceOf[js.Any])
-    if (TerminateRecommendationDetail != null) __obj.updateDynamic("TerminateRecommendationDetail")(TerminateRecommendationDetail)
+    if (TerminateRecommendationDetail != null) __obj.updateDynamic("TerminateRecommendationDetail")(TerminateRecommendationDetail.asInstanceOf[js.Any])
     __obj.asInstanceOf[RightsizingRecommendation]
   }
 }

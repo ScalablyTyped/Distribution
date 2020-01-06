@@ -10,9 +10,9 @@ PhosphorJS - Drag and Drop
 | ------------------ | :-------------: |
 | Full name          | @phosphor/dragdrop |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 21 |
-| # downloads        | 818543 |
+| # releases         | 6 |
+| # dependents       | 33 |
+| # downloads        | 1275746 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ Encodings that map abstract data to visual representation.
 | ------------------ | :-------------: |
 | Full name          | d3-scale |
 | Keywords           | d3, d3-module, scale, visualization |
-| # releases         | 11 |
-| # dependents       | 553 |
-| # downloads        | 28449489 |
+| # releases         | 13 |
+| # dependents       | 734 |
+| # downloads        | 48109836 |
 | # stars            | 5 |
 
 ## Links

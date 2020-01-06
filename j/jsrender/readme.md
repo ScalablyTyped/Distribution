@@ -10,9 +10,9 @@ Best-of-breed templating in browser or on Node.js (with Express 4, Hapi and Brow
 | ------------------ | :-------------: |
 | Full name          | jsrender |
 | Keywords           | jsrender, node, express, hapi, browserify, templates, template, jquery-plugin, ecosystem:jquery |
-| # releases         | 10 |
-| # dependents       | 20 |
-| # downloads        | 269379 |
+| # releases         | 8 |
+| # dependents       | 25 |
+| # downloads        | 584834 |
 | # stars            | 0 |
 
 ## Links

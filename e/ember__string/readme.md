@@ -11,8 +11,8 @@ A set of utilities to transform strings
 | Full name          | @ember/string |
 | Keywords           | ember-addon |
 | # releases         | 3 |
-| # dependents       | 0 |
-| # downloads        | 300 |
+| # dependents       | 1 |
+| # downloads        | 7660 |
 | # stars            | 0 |
 
 ## Links

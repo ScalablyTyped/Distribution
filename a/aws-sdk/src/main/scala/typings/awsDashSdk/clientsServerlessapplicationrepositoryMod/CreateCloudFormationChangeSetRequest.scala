@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CreateCloudFormationChangeSetRequest extends js.Object {
   /**
     * The Amazon Resource Name (ARN) of the application.
     */
-  var ApplicationId: __string
+  var ApplicationId: __string = js.native
   /**
     * A list of values that you must specify before you can deploy certain applications.
     Some applications might include resources that can affect permissions in your AWS
@@ -34,63 +35,63 @@ trait CreateCloudFormationChangeSetRequest extends js.Object {
     all permissions associated with the application before deploying. If you don't specify
     this parameter for an application that requires capabilities, the call will fail.
     */
-  var Capabilities: js.UndefOr[__listOf__string] = js.undefined
+  var Capabilities: js.UndefOr[__listOf__string] = js.native
   /**
     * This property corresponds to the parameter of the same name for the AWS CloudFormation CreateChangeSet
     API.
     */
-  var ChangeSetName: js.UndefOr[__string] = js.undefined
+  var ChangeSetName: js.UndefOr[__string] = js.native
   /**
     * This property corresponds to the parameter of the same name for the AWS CloudFormation CreateChangeSet
     API.
     */
-  var ClientToken: js.UndefOr[__string] = js.undefined
+  var ClientToken: js.UndefOr[__string] = js.native
   /**
     * This property corresponds to the parameter of the same name for the AWS CloudFormation CreateChangeSet
     API.
     */
-  var Description: js.UndefOr[__string] = js.undefined
+  var Description: js.UndefOr[__string] = js.native
   /**
     * This property corresponds to the parameter of the same name for the AWS CloudFormation CreateChangeSet
     API.
     */
-  var NotificationArns: js.UndefOr[__listOf__string] = js.undefined
+  var NotificationArns: js.UndefOr[__listOf__string] = js.native
   /**
     * A list of parameter values for the parameters of the application.
     */
-  var ParameterOverrides: js.UndefOr[__listOfParameterValue] = js.undefined
+  var ParameterOverrides: js.UndefOr[__listOfParameterValue] = js.native
   /**
     * This property corresponds to the parameter of the same name for the AWS CloudFormation CreateChangeSet
     API.
     */
-  var ResourceTypes: js.UndefOr[__listOf__string] = js.undefined
+  var ResourceTypes: js.UndefOr[__listOf__string] = js.native
   /**
     * This property corresponds to the parameter of the same name for the AWS CloudFormation CreateChangeSet
     API.
     */
   var RollbackConfiguration: js.UndefOr[
     typings.awsDashSdk.clientsServerlessapplicationrepositoryMod.RollbackConfiguration
-  ] = js.undefined
+  ] = js.native
   /**
     * The semantic version of the application:
     https://semver.org/
     
     */
-  var SemanticVersion: js.UndefOr[__string] = js.undefined
+  var SemanticVersion: js.UndefOr[__string] = js.native
   /**
     * This property corresponds to the parameter of the same name for the AWS CloudFormation CreateChangeSet
     API.
     */
-  var StackName: __string
+  var StackName: __string = js.native
   /**
     * This property corresponds to the parameter of the same name for the AWS CloudFormation CreateChangeSet
     API.
     */
-  var Tags: js.UndefOr[__listOfTag] = js.undefined
+  var Tags: js.UndefOr[__listOfTag] = js.native
   /**
     * The UUID returned by CreateCloudFormationTemplate.Pattern: [0-9a-fA-F]{8}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{12}
     */
-  var TemplateId: js.UndefOr[__string] = js.undefined
+  var TemplateId: js.UndefOr[__string] = js.native
 }
 
 object CreateCloudFormationChangeSetRequest {
@@ -110,18 +111,18 @@ object CreateCloudFormationChangeSetRequest {
     Tags: __listOfTag = null,
     TemplateId: __string = null
   ): CreateCloudFormationChangeSetRequest = {
-    val __obj = js.Dynamic.literal(ApplicationId = ApplicationId, StackName = StackName)
-    if (Capabilities != null) __obj.updateDynamic("Capabilities")(Capabilities)
-    if (ChangeSetName != null) __obj.updateDynamic("ChangeSetName")(ChangeSetName)
-    if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken)
-    if (Description != null) __obj.updateDynamic("Description")(Description)
-    if (NotificationArns != null) __obj.updateDynamic("NotificationArns")(NotificationArns)
-    if (ParameterOverrides != null) __obj.updateDynamic("ParameterOverrides")(ParameterOverrides)
-    if (ResourceTypes != null) __obj.updateDynamic("ResourceTypes")(ResourceTypes)
-    if (RollbackConfiguration != null) __obj.updateDynamic("RollbackConfiguration")(RollbackConfiguration)
-    if (SemanticVersion != null) __obj.updateDynamic("SemanticVersion")(SemanticVersion)
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
-    if (TemplateId != null) __obj.updateDynamic("TemplateId")(TemplateId)
+    val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], StackName = StackName.asInstanceOf[js.Any])
+    if (Capabilities != null) __obj.updateDynamic("Capabilities")(Capabilities.asInstanceOf[js.Any])
+    if (ChangeSetName != null) __obj.updateDynamic("ChangeSetName")(ChangeSetName.asInstanceOf[js.Any])
+    if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken.asInstanceOf[js.Any])
+    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (NotificationArns != null) __obj.updateDynamic("NotificationArns")(NotificationArns.asInstanceOf[js.Any])
+    if (ParameterOverrides != null) __obj.updateDynamic("ParameterOverrides")(ParameterOverrides.asInstanceOf[js.Any])
+    if (ResourceTypes != null) __obj.updateDynamic("ResourceTypes")(ResourceTypes.asInstanceOf[js.Any])
+    if (RollbackConfiguration != null) __obj.updateDynamic("RollbackConfiguration")(RollbackConfiguration.asInstanceOf[js.Any])
+    if (SemanticVersion != null) __obj.updateDynamic("SemanticVersion")(SemanticVersion.asInstanceOf[js.Any])
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
+    if (TemplateId != null) __obj.updateDynamic("TemplateId")(TemplateId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCloudFormationChangeSetRequest]
   }
 }

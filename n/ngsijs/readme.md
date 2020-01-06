@@ -12,7 +12,7 @@ Node JavaScript library for Orion Context Broker
 | Keywords           | context broker, fiware, FIWARE, fiware-orion, iot, IoT, NGSI, orion, wirecloud |
 | # releases         | 7 |
 | # dependents       | 0 |
-| # downloads        | 1970 |
+| # downloads        | 2706 |
 | # stars            | 0 |
 
 ## Links

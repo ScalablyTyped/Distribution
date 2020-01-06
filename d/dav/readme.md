@@ -11,8 +11,8 @@ WebDAV, CalDAV, and CardDAV client for nodejs and the browser
 | Full name          | dav |
 | Keywords           | address book, calendar, contacts, dav, caldav, carddav, webdav, ical, vcard, sync, rfc 4791, rfc 6352, rfc 6578 |
 | # releases         | 2 |
-| # dependents       | 4 |
-| # downloads        | 5006 |
+| # dependents       | 9 |
+| # downloads        | 8559 |
 | # stars            | 15 |
 
 ## Links

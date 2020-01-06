@@ -28,72 +28,72 @@ object routerMod extends js.Object {
     def del(
       path: String,
       middlewares: Middleware,
-      /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param all because its type Middlewares is not an array type */ all: Middlewares
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param all because its type Middlewares is not an array type */ all: Middlewares
     ): Middleware = js.native
     def del(
       path: String,
       middlewares: Middlewares,
-      /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param all because its type Middlewares is not an array type */ all: Middlewares
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param all because its type Middlewares is not an array type */ all: Middlewares
     ): Middleware = js.native
     def error(
       name: String,
       middlewares: Middleware,
-      /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param all because its type Middlewares is not an array type */ all: Middlewares
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param all because its type Middlewares is not an array type */ all: Middlewares
     ): Middleware = js.native
     def error(
       name: String,
       middlewares: Middlewares,
-      /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param all because its type Middlewares is not an array type */ all: Middlewares
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param all because its type Middlewares is not an array type */ all: Middlewares
     ): Middleware = js.native
     def get(
       path: String,
       middlewares: Middleware,
-      /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param all because its type Middlewares is not an array type */ all: Middlewares
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param all because its type Middlewares is not an array type */ all: Middlewares
     ): Middleware = js.native
     def get(
       path: String,
       middlewares: Middlewares,
-      /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param all because its type Middlewares is not an array type */ all: Middlewares
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param all because its type Middlewares is not an array type */ all: Middlewares
     ): Middleware = js.native
     def post(
       path: String,
       middlewares: Middleware,
-      /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param all because its type Middlewares is not an array type */ all: Middlewares
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param all because its type Middlewares is not an array type */ all: Middlewares
     ): Middleware = js.native
     def post(
       path: String,
       middlewares: Middlewares,
-      /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param all because its type Middlewares is not an array type */ all: Middlewares
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param all because its type Middlewares is not an array type */ all: Middlewares
     ): Middleware = js.native
     def put(
       path: String,
       middlewares: Middleware,
-      /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param all because its type Middlewares is not an array type */ all: Middlewares
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param all because its type Middlewares is not an array type */ all: Middlewares
     ): Middleware = js.native
     def put(
       path: String,
       middlewares: Middlewares,
-      /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param all because its type Middlewares is not an array type */ all: Middlewares
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param all because its type Middlewares is not an array type */ all: Middlewares
     ): Middleware = js.native
     def socket(
       name: String,
       middlewares: Middleware,
-      /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param all because its type Middlewares is not an array type */ all: Middlewares
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param all because its type Middlewares is not an array type */ all: Middlewares
     ): Middleware = js.native
     def socket(
       name: String,
       middlewares: Middlewares,
-      /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param all because its type Middlewares is not an array type */ all: Middlewares
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param all because its type Middlewares is not an array type */ all: Middlewares
     ): Middleware = js.native
     def sub(
       subdomain: String,
       middlewares: Middleware,
-      /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param all because its type Middlewares is not an array type */ all: Middlewares
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param all because its type Middlewares is not an array type */ all: Middlewares
     ): Middleware = js.native
     def sub(
       subdomain: String,
       middlewares: Middlewares,
-      /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param all because its type Middlewares is not an array type */ all: Middlewares
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param all because its type Middlewares is not an array type */ all: Middlewares
     ): Middleware = js.native
   }
   

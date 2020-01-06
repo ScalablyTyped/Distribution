@@ -5,13 +5,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/CardHeader/CardHeader.CardHeaderClassKey>> */
+@js.native
 trait PartialClassNameMapCardHeaderClassKey extends js.Object {
-  var action: js.UndefOr[String] = js.undefined
-  var avatar: js.UndefOr[String] = js.undefined
-  var content: js.UndefOr[String] = js.undefined
-  var root: js.UndefOr[String] = js.undefined
-  var subheader: js.UndefOr[String] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
+  var action: js.UndefOr[String] = js.native
+  var avatar: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.native
+  var subheader: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.native
 }
 
 object PartialClassNameMapCardHeaderClassKey {

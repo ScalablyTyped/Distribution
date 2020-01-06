@@ -10,15 +10,15 @@ Helper function to create Redux modules using the ducks-modular-redux proposal.
 | ------------------ | :-------------: |
 | Full name          | redux-duck |
 | Keywords           | redux, duck, module, helper |
-| # releases         | 1 |
+| # releases         | 3 |
 | # dependents       | 2 |
-| # downloads        | 30561 |
+| # downloads        | 41894 |
 | # stars            | 2 |
 
 ## Links
-- [Homepage](https://github.com/PlatziDev/redux-duck/)
-- [Bugs](https://github.com/PlatziDev/redux-duck/issues)
-- [Repository](https://github.com/PlatziDev/redux-duck)
+- [Homepage](https://github.com/sergiodxa/redux-duck/)
+- [Bugs](https://github.com/sergiodxa/redux-duck/issues)
+- [Repository](https://github.com/sergiodxa/redux-duck)
 - [Npm](https://www.npmjs.com/package/redux-duck)
     
 

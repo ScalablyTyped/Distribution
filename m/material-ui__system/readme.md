@@ -10,9 +10,9 @@ Material-UI System - Design system for Material-UI.
 | ------------------ | :-------------: |
 | Full name          | @material-ui/system |
 | Keywords           | react, react-component, material design, material-ui, system |
-| # releases         | 23 |
+| # releases         | 25 |
 | # dependents       | 26 |
-| # downloads        | 18593392 |
+| # downloads        | 21241183 |
 | # stars            | 0 |
 
 ## Links

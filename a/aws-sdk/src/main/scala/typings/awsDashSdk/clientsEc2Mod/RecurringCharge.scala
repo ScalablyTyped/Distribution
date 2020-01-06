@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RecurringCharge extends js.Object {
   /**
     * The amount of the recurring charge.
     */
-  var Amount: js.UndefOr[Double] = js.undefined
+  var Amount: js.UndefOr[Double] = js.native
   /**
     * The frequency of the recurring charge.
     */
-  var Frequency: js.UndefOr[RecurringChargeFrequency] = js.undefined
+  var Frequency: js.UndefOr[RecurringChargeFrequency] = js.native
 }
 
 object RecurringCharge {

@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait JobCommand extends js.Object {
   /**
     * The name of the job command. Defaults to `glueetl`
     */
-  var name: js.UndefOr[Input[String]] = js.undefined
+  var name: js.UndefOr[Input[String]] = js.native
   /**
     * The Python version being used to execute a Python shell job. Allowed values are 2 or 3.
     */
-  var pythonVersion: js.UndefOr[Input[String]] = js.undefined
+  var pythonVersion: js.UndefOr[Input[String]] = js.native
   /**
     * Specifies the S3 path to a script that executes a job.
     */
-  var scriptLocation: Input[String]
+  var scriptLocation: Input[String] = js.native
 }
 
 object JobCommand {

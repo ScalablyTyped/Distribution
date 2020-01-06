@@ -9,9 +9,9 @@ JSON-Schema validator built for speed
 | ------------------ | :-------------: |
 | Full name          | jsen |
 | Keywords           | JSON, schema, validator, speed |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 35 |
-| # downloads        | 551530 |
+| # downloads        | 1316994 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ HTML5 backend for React DnD
 | ------------------ | :-------------: |
 | Full name          | react-dnd-html5-backend |
 | Keywords           | - |
-| # releases         | 28 |
-| # dependents       | 509 |
-| # downloads        | 11593509 |
+| # releases         | 40 |
+| # dependents       | 678 |
+| # downloads        | 17103230 |
 | # stars            | 4 |
 
 ## Links

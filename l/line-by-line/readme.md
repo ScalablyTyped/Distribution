@@ -11,8 +11,8 @@ A NodeJS module that helps you reading large text files, line by line, without b
 | Full name          | line-by-line |
 | Keywords           | line, file, reader, fs |
 | # releases         | 2 |
-| # dependents       | 116 |
-| # downloads        | 705585 |
+| # dependents       | 126 |
+| # downloads        | 941451 |
 | # stars            | 30 |
 
 ## Links

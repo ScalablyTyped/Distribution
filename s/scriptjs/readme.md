@@ -10,8 +10,8 @@ Asyncronous JavaScript loader and dependency manager
 | Full name          | scriptjs |
 | Keywords           | ender, script, dependency, ajax, jsonp, loader |
 | # releases         | 2 |
-| # dependents       | 134 |
-| # downloads        | 9858094 |
+| # dependents       | 175 |
+| # downloads        | 16470614 |
 | # stars            | 9 |
 
 ## Links

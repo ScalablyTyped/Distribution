@@ -7,51 +7,56 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PolicyState extends js.Object {
   /**
     * Specifies whether the adjustment is an absolute number or a percentage of the current capacity. Valid values are `ChangeInCapacity`, `ExactCapacity`, and `PercentChangeInCapacity`.
     */
-  val adjustmentType: js.UndefOr[Input[String]] = js.undefined
+  val adjustmentType: js.UndefOr[Input[String]] = js.native
   /**
     * The ARN assigned by AWS to the scaling policy.
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the autoscaling group.
     */
-  val autoscalingGroupName: js.UndefOr[Input[String]] = js.undefined
+  val autoscalingGroupName: js.UndefOr[Input[String]] = js.native
   /**
     * The amount of time, in seconds, after a scaling activity completes and before the next scaling activity can start.
     */
-  val cooldown: js.UndefOr[Input[Double]] = js.undefined
+  val cooldown: js.UndefOr[Input[Double]] = js.native
   /**
     * The estimated time, in seconds, until a newly launched instance will contribute CloudWatch metrics. Without a value, AWS will default to the group's specified cooldown period.
     */
-  val estimatedInstanceWarmup: js.UndefOr[Input[Double]] = js.undefined
+  val estimatedInstanceWarmup: js.UndefOr[Input[Double]] = js.native
   /**
     * The aggregation type for the policy's metrics. Valid values are "Minimum", "Maximum", and "Average". Without a value, AWS will treat the aggregation type as "Average".
     */
-  val metricAggregationType: js.UndefOr[Input[String]] = js.undefined
-  val minAdjustmentMagnitude: js.UndefOr[Input[Double]] = js.undefined
+  val metricAggregationType: js.UndefOr[Input[String]] = js.native
+  val minAdjustmentMagnitude: js.UndefOr[Input[Double]] = js.native
   /**
     * The name of the dimension.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * The policy type, either "SimpleScaling", "StepScaling" or "TargetTrackingScaling". If this value isn't provided, AWS will default to "SimpleScaling."
     */
-  val policyType: js.UndefOr[Input[String]] = js.undefined
+  val policyType: js.UndefOr[Input[String]] = js.native
   /**
     * The number of members by which to
     * scale, when the adjustment bounds are breached. A positive value scales
     * up. A negative value scales down.
     */
-  val scalingAdjustment: js.UndefOr[Input[Double]] = js.undefined
-  val stepAdjustments: js.UndefOr[Input[js.Array[Input[PolicyStepAdjustment]]]] = js.undefined
+  val scalingAdjustment: js.UndefOr[Input[Double]] = js.native
+  /**
+    * A set of adjustments that manage
+    * group scaling. These have the following structure:
+    */
+  val stepAdjustments: js.UndefOr[Input[js.Array[Input[PolicyStepAdjustment]]]] = js.native
   /**
     * A target tracking policy. These have the following structure:
     */
-  val targetTrackingConfiguration: js.UndefOr[Input[PolicyTargetTrackingConfiguration]] = js.undefined
+  val targetTrackingConfiguration: js.UndefOr[Input[PolicyTargetTrackingConfiguration]] = js.native
 }
 
 object PolicyState {

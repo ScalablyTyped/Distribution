@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DeviceStatusDetail extends js.Object {
   /**
     * The device status detail code.
     */
-  var Code: js.UndefOr[DeviceStatusDetailCode] = js.undefined
+  var Code: js.UndefOr[DeviceStatusDetailCode] = js.native
   /**
     * The list of available features on the device.
     */
-  var Feature: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.Feature] = js.undefined
+  var Feature: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.Feature] = js.native
 }
 
 object DeviceStatusDetail {

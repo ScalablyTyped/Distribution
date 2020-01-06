@@ -10,9 +10,9 @@ Share text, images (and other files), or a link via the native sharing widget of
 | ------------------ | :-------------: |
 | Full name          | cordova-plugin-x-socialsharing |
 | Keywords           | Social, Share, Twitter, Facebook, Email, SMS, WhatsApp, Tumblr, Pocket, LinkedIn, cordova, WebShare, ecosystem:cordova, cordova-ios, cordova-android, cordova-windows |
-| # releases         | 12 |
+| # releases         | 16 |
 | # dependents       | 7 |
-| # downloads        | 569272 |
+| # downloads        | 743649 |
 | # stars            | 10 |
 
 ## Links

@@ -4,15 +4,15 @@
 Typings are for version 3.5.5
 
 ## Library description:
-The mobile-friendly, responsive, and lightweight jQuery date & time input picker.
+The composable date & time picker.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | pickadate |
 | Keywords           | date, time, picker, input, responsive |
-| # releases         | 10 |
+| # releases         | 12 |
 | # dependents       | 14 |
-| # downloads        | 380483 |
+| # downloads        | 467842 |
 | # stars            | 5 |
 
 ## Links

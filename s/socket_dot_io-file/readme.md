@@ -10,9 +10,9 @@ File uploader module for Socket.io
 | ------------------ | :-------------: |
 | Full name          | socket.io-file |
 | Keywords           | WebSocket, Socket.io, binary, arraybuffer, file, upload |
-| # releases         | 4 |
+| # releases         | 3 |
 | # dependents       | 2 |
-| # downloads        | 8849 |
+| # downloads        | 8831 |
 | # stars            | 2 |
 
 ## Links

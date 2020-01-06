@@ -10,9 +10,9 @@ Default Jimp tiff encoder/decoder.
 | ------------------ | :-------------: |
 | Full name          | @jimp/tiff |
 | Keywords           | - |
-| # releases         | 18 |
+| # releases         | 71 |
 | # dependents       | 1 |
-| # downloads        | 7496401 |
+| # downloads        | 13955394 |
 | # stars            | 0 |
 
 ## Links

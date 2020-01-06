@@ -10,9 +10,9 @@ The Feathers Socket.io real-time API provider
 | ------------------ | :-------------: |
 | Full name          | @feathersjs/socketio |
 | Keywords           | feathers, feathers-plugin |
-| # releases         | 18 |
-| # dependents       | 25 |
-| # downloads        | 630485 |
+| # releases         | 34 |
+| # dependents       | 37 |
+| # downloads        | 602313 |
 | # stars            | 0 |
 
 ## Links

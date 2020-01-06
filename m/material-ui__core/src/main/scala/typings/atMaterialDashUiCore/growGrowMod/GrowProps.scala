@@ -13,23 +13,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined parent @material-ui/core.@material-ui/core.Omit<@material-ui/core.@material-ui/core/transitions/transition.TransitionProps, 'timeout'> */
+@js.native
 trait GrowProps extends js.Object {
-  var addEndListener: js.UndefOr[EndHandler] = js.undefined
-  var appear: js.UndefOr[Boolean] = js.undefined
-  var enter: js.UndefOr[Boolean] = js.undefined
-  var exit: js.UndefOr[Boolean] = js.undefined
-  var in: js.UndefOr[Boolean] = js.undefined
-  var mountOnEnter: js.UndefOr[Boolean] = js.undefined
-  var onEnter: js.UndefOr[EnterHandler] = js.undefined
-  var onEntered: js.UndefOr[EnterHandler] = js.undefined
-  var onEntering: js.UndefOr[EnterHandler] = js.undefined
-  var onExit: js.UndefOr[ExitHandler] = js.undefined
-  var onExited: js.UndefOr[ExitHandler] = js.undefined
-  var onExiting: js.UndefOr[ExitHandler] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
-  var theme: js.UndefOr[Theme] = js.undefined
-  var timeout: js.UndefOr[Double | Anon_Appear | auto] = js.undefined
-  var unmountOnExit: js.UndefOr[Boolean] = js.undefined
+  var addEndListener: js.UndefOr[EndHandler] = js.native
+  var appear: js.UndefOr[Boolean] = js.native
+  var enter: js.UndefOr[Boolean] = js.native
+  var exit: js.UndefOr[Boolean] = js.native
+  var in: js.UndefOr[Boolean] = js.native
+  var mountOnEnter: js.UndefOr[Boolean] = js.native
+  var onEnter: js.UndefOr[EnterHandler] = js.native
+  var onEntered: js.UndefOr[EnterHandler] = js.native
+  var onEntering: js.UndefOr[EnterHandler] = js.native
+  var onExit: js.UndefOr[ExitHandler] = js.native
+  var onExited: js.UndefOr[ExitHandler] = js.native
+  var onExiting: js.UndefOr[ExitHandler] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
+  var theme: js.UndefOr[Theme] = js.native
+  var timeout: js.UndefOr[Double | Anon_Appear | auto] = js.native
+  var unmountOnExit: js.UndefOr[Boolean] = js.native
 }
 
 object GrowProps {

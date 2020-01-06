@@ -10,9 +10,9 @@ Azure Cosmos DB Service Node.js SDK for SQL API
 | ------------------ | :-------------: |
 | Full name          | documentdb |
 | Keywords           | cosmosdb, cosmos db, documentdb, document database, azure, nosql, database, cloud |
-| # releases         | 15 |
-| # dependents       | 61 |
-| # downloads        | 723233 |
+| # releases         | 8 |
+| # dependents       | 63 |
+| # downloads        | 623975 |
 | # stars            | 8 |
 
 ## Links

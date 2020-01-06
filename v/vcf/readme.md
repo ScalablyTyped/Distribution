@@ -12,7 +12,7 @@ Parse and construct vCards, jCards
 | Keywords           | vcard, hcard, jcard, vcf |
 | # releases         | 6 |
 | # dependents       | 5 |
-| # downloads        | 94683 |
+| # downloads        | 115920 |
 | # stars            | 3 |
 
 ## Links

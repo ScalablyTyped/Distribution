@@ -12,7 +12,7 @@ An even better requestAnimationFrame
 | Keywords           | animationFrame, RAF, requestAnimationFrame, cancelAnimationFrame |
 | # releases         | 0 |
 | # dependents       | 14 |
-| # downloads        | 446721 |
+| # downloads        | 1112901 |
 | # stars            | 0 |
 
 ## Links

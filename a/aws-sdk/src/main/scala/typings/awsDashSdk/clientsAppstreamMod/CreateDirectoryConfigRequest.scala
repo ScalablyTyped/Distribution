@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CreateDirectoryConfigRequest extends js.Object {
   /**
     * The fully qualified name of the directory (for example, corp.example.com).
     */
-  var DirectoryName: typings.awsDashSdk.clientsAppstreamMod.DirectoryName
+  var DirectoryName: typings.awsDashSdk.clientsAppstreamMod.DirectoryName = js.native
   /**
     * The distinguished names of the organizational units for computer accounts.
     */
-  var OrganizationalUnitDistinguishedNames: OrganizationalUnitDistinguishedNamesList
+  var OrganizationalUnitDistinguishedNames: OrganizationalUnitDistinguishedNamesList = js.native
   /**
     * The credentials for the service account used by the fleet or image builder to connect to the directory.
     */
-  var ServiceAccountCredentials: typings.awsDashSdk.clientsAppstreamMod.ServiceAccountCredentials
+  var ServiceAccountCredentials: typings.awsDashSdk.clientsAppstreamMod.ServiceAccountCredentials = js.native
 }
 
 object CreateDirectoryConfigRequest {
@@ -26,7 +27,7 @@ object CreateDirectoryConfigRequest {
     OrganizationalUnitDistinguishedNames: OrganizationalUnitDistinguishedNamesList,
     ServiceAccountCredentials: ServiceAccountCredentials
   ): CreateDirectoryConfigRequest = {
-    val __obj = js.Dynamic.literal(DirectoryName = DirectoryName, OrganizationalUnitDistinguishedNames = OrganizationalUnitDistinguishedNames, ServiceAccountCredentials = ServiceAccountCredentials)
+    val __obj = js.Dynamic.literal(DirectoryName = DirectoryName.asInstanceOf[js.Any], OrganizationalUnitDistinguishedNames = OrganizationalUnitDistinguishedNames.asInstanceOf[js.Any], ServiceAccountCredentials = ServiceAccountCredentials.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CreateDirectoryConfigRequest]
   }

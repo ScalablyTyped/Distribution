@@ -11,8 +11,8 @@ parse the .git/config file into a useful data structure
 | Full name          | gitconfiglocal |
 | Keywords           | git, config |
 | # releases         | 3 |
-| # dependents       | 34 |
-| # downloads        | 16089735 |
+| # dependents       | 39 |
+| # downloads        | 31073333 |
 | # stars            | 0 |
 
 ## Links

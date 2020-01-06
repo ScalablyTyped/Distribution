@@ -6,51 +6,52 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VpcEndpointServiceState extends js.Object {
   /**
     * Whether or not VPC endpoint connection requests to the service must be accepted by the service owner - `true` or `false`.
     */
-  val acceptanceRequired: js.UndefOr[Input[Boolean]] = js.undefined
+  val acceptanceRequired: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The ARNs of one or more principals allowed to discover the endpoint service.
     */
-  val allowedPrincipals: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val allowedPrincipals: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The Availability Zones in which the service is available.
     */
-  val availabilityZones: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val availabilityZones: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The DNS names for the service.
     */
-  val baseEndpointDnsNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val baseEndpointDnsNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * Whether or not the service manages its VPC endpoints - `true` or `false`.
     */
-  val managesVpcEndpoints: js.UndefOr[Input[Boolean]] = js.undefined
+  val managesVpcEndpoints: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The ARNs of one or more Network Load Balancers for the endpoint service.
     */
-  val networkLoadBalancerArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val networkLoadBalancerArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The private DNS name for the service.
     */
-  val privateDnsName: js.UndefOr[Input[String]] = js.undefined
+  val privateDnsName: js.UndefOr[Input[String]] = js.native
   /**
     * The service name.
     */
-  val serviceName: js.UndefOr[Input[String]] = js.undefined
+  val serviceName: js.UndefOr[Input[String]] = js.native
   /**
     * The service type, `Gateway` or `Interface`.
     */
-  val serviceType: js.UndefOr[Input[String]] = js.undefined
+  val serviceType: js.UndefOr[Input[String]] = js.native
   /**
     * The state of the VPC endpoint service.
     */
-  val state: js.UndefOr[Input[String]] = js.undefined
+  val state: js.UndefOr[Input[String]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object VpcEndpointServiceState {

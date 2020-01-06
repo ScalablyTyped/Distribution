@@ -10,9 +10,9 @@ split a Text Stream into a Line Stream
 | ------------------ | :-------------: |
 | Full name          | split |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 773 |
-| # downloads        | 129672561 |
+| # releases         | 1 |
+| # dependents       | 816 |
+| # downloads        | 148536833 |
 | # stars            | 81 |
 
 ## Links

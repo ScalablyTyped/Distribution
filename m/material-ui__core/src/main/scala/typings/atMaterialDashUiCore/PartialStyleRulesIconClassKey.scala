@@ -6,16 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/Icon.IconClassKey>> */
+@js.native
 trait PartialStyleRulesIconClassKey extends js.Object {
-  var colorAction: js.UndefOr[CSSProperties] = js.undefined
-  var colorDisabled: js.UndefOr[CSSProperties] = js.undefined
-  var colorError: js.UndefOr[CSSProperties] = js.undefined
-  var colorPrimary: js.UndefOr[CSSProperties] = js.undefined
-  var colorSecondary: js.UndefOr[CSSProperties] = js.undefined
-  var fontSizeInherit: js.UndefOr[CSSProperties] = js.undefined
-  var fontSizeLarge: js.UndefOr[CSSProperties] = js.undefined
-  var fontSizeSmall: js.UndefOr[CSSProperties] = js.undefined
-  var root: js.UndefOr[CSSProperties] = js.undefined
+  var colorAction: js.UndefOr[CSSProperties] = js.native
+  var colorDisabled: js.UndefOr[CSSProperties] = js.native
+  var colorError: js.UndefOr[CSSProperties] = js.native
+  var colorPrimary: js.UndefOr[CSSProperties] = js.native
+  var colorSecondary: js.UndefOr[CSSProperties] = js.native
+  var fontSizeInherit: js.UndefOr[CSSProperties] = js.native
+  var fontSizeLarge: js.UndefOr[CSSProperties] = js.native
+  var fontSizeSmall: js.UndefOr[CSSProperties] = js.native
+  var root: js.UndefOr[CSSProperties] = js.native
 }
 
 object PartialStyleRulesIconClassKey {

@@ -10,9 +10,9 @@ Redux middleware that detects mutations between and outside redux dispatches. Fo
 | ------------------ | :-------------: |
 | Full name          | redux-immutable-state-invariant |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 47 |
-| # downloads        | 1894448 |
+| # releases         | 0 |
+| # dependents       | 64 |
+| # downloads        | 3594350 |
 | # stars            | 5 |
 
 ## Links

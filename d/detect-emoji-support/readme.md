@@ -10,9 +10,9 @@ Detect support for emoji character sets.
 | ------------------ | :-------------: |
 | Full name          | detect-emoji-support |
 | Keywords           | detect, emoji, support |
-| # releases         | 9 |
-| # dependents       | 0 |
-| # downloads        | 62975 |
+| # releases         | 3 |
+| # dependents       | 2 |
+| # downloads        | 43958 |
 | # stars            | 0 |
 
 ## Links

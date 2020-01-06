@@ -12,7 +12,7 @@ Linux uinput module
 | Keywords           | uinput, linux, user, input |
 | # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 1386 |
+| # downloads        | 1616 |
 | # stars            | 0 |
 
 ## Links

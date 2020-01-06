@@ -1,5 +1,6 @@
 package typings.parse.parseMod._Global_.Parse
 
+import typings.parse.Anon_Latitude
 import typings.parse.parseMod._Global_.Parse.Schema._TYPE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -30,8 +31,9 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Parse.GeoPoint")
 @js.native
 class GeoPoint () extends _TYPE {
-  def this(arg1: js.Any) = this()
-  def this(arg1: js.Any, arg2: js.Any) = this()
+  def this(coords: js.Tuple2[Double, Double]) = this()
+  def this(coords: Anon_Latitude) = this()
+  def this(latitude: Double, longitude: Double) = this()
   var latitude: Double = js.native
   var longitude: Double = js.native
   def current(): GeoPoint = js.native

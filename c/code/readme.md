@@ -10,9 +10,9 @@ assertion library
 | ------------------ | :-------------: |
 | Full name          | code |
 | Keywords           | test, expect, assertion |
-| # releases         | 9 |
-| # dependents       | 51 |
-| # downloads        | 1102488 |
+| # releases         | 6 |
+| # dependents       | 49 |
+| # downloads        | 1055508 |
 | # stars            | 17 |
 
 ## Links

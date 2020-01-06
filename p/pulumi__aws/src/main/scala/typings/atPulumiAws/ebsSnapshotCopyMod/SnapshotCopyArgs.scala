@@ -6,27 +6,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SnapshotCopyArgs extends js.Object {
   /**
     * A description of what the snapshot is.
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * Whether the snapshot is encrypted.
     */
-  val encrypted: js.UndefOr[Input[Boolean]] = js.undefined
+  val encrypted: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The ARN for the KMS encryption key.
     * * `sourceSnapshotId` The ARN for the snapshot to be copied.
     * * `sourceRegion` The region of the source snapshot.
     */
-  val kmsKeyId: js.UndefOr[Input[String]] = js.undefined
-  val sourceRegion: Input[String]
-  val sourceSnapshotId: Input[String]
+  val kmsKeyId: js.UndefOr[Input[String]] = js.native
+  val sourceRegion: Input[String] = js.native
+  val sourceSnapshotId: Input[String] = js.native
   /**
     * A mapping of tags for the snapshot.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object SnapshotCopyArgs {

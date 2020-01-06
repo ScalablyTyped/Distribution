@@ -4,21 +4,21 @@
 Typings are for version 1.1.4
 
 ## Library description:
-Lowercase a string
+Transforms the string to lower case
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | lower-case |
-| Keywords           | cases, lower, lowercase, case |
-| # releases         | 0 |
-| # dependents       | 31 |
-| # downloads        | 147051526 |
+| Keywords           | lower, case, downcase, locale, convert, transform |
+| # releases         | 3 |
+| # dependents       | 34 |
+| # downloads        | 219119032 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/blakeembrey/lower-case)
-- [Bugs](https://github.com/blakeembrey/lower-case/issues)
-- [Repository](https://github.com/blakeembrey/lower-case)
+- [Homepage](https://github.com/blakeembrey/change-case/tree/master/packages/lower-case#readme)
+- [Bugs](https://github.com/blakeembrey/change-case/issues)
+- [Repository](https://github.com/blakeembrey/change-case)
 - [Npm](https://www.npmjs.com/package/lower-case)
     
 

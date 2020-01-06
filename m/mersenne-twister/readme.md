@@ -10,9 +10,9 @@ Mersenne twister pseudorandom number generator
 | ------------------ | :-------------: |
 | Full name          | mersenne-twister |
 | Keywords           | random, mersenne, twister, mersennetwister, generator, seed |
-| # releases         | 1 |
-| # dependents       | 51 |
-| # downloads        | 1603892 |
+| # releases         | 0 |
+| # dependents       | 56 |
+| # downloads        | 1986230 |
 | # stars            | 3 |
 
 ## Links

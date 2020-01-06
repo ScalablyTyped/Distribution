@@ -5,12 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OrganizationRootPolicyType extends js.Object {
   /**
     * The status of the policy type as it relates to the associated root
     */
-  var status: js.UndefOr[Input[String]] = js.undefined
-  var `type`: js.UndefOr[Input[String]] = js.undefined
+  var status: js.UndefOr[Input[String]] = js.native
+  var `type`: js.UndefOr[Input[String]] = js.native
 }
 
 object OrganizationRootPolicyType {

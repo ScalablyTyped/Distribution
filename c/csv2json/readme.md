@@ -10,9 +10,9 @@ Stream and CLI to convert CSV to JSON
 | ------------------ | :-------------: |
 | Full name          | csv2json |
 | Keywords           | csv, json, csv2json, csvtojson, stream |
-| # releases         | 4 |
+| # releases         | 5 |
 | # dependents       | 4 |
-| # downloads        | 21261 |
+| # downloads        | 45247 |
 | # stars            | 6 |
 
 ## Links

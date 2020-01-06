@@ -6,24 +6,25 @@ import scala.scalajs.js.annotation._
 
 package object clientsEc2Mod {
   import typings.awsDashSdk.awsDashSdkStrings.ATTACHED
-  import typings.awsDashSdk.awsDashSdkStrings.Hourly
-  import typings.awsDashSdk.awsDashSdkStrings.Static
+  import typings.awsDashSdk.awsDashSdkStrings.Hourly_
+  import typings.awsDashSdk.awsDashSdkStrings.Static_
   import typings.awsDashSdk.awsDashSdkStrings.Topic
   import typings.awsDashSdk.awsDashSdkStrings.USD
-  import typings.awsDashSdk.awsDashSdkStrings.Windows
+  import typings.awsDashSdk.awsDashSdkStrings.Windows_
   import typings.awsDashSdk.awsDashSdkStrings.`amazon-dns`
-  import typings.awsDashSdk.awsDashSdkStrings.all
-  import typings.awsDashSdk.awsDashSdkStrings.default
+  import typings.awsDashSdk.awsDashSdkStrings.`use-capacity-reservations-first`
+  import typings.awsDashSdk.awsDashSdkStrings.all__
+  import typings.awsDashSdk.awsDashSdkStrings.default_
   import typings.awsDashSdk.awsDashSdkStrings.efa
-  import typings.awsDashSdk.awsDashSdkStrings.ipsecDOT1
+  import typings.awsDashSdk.awsDashSdkStrings.ipsecDot1
   import typings.awsDashSdk.awsDashSdkStrings.launchPermission
   import typings.awsDashSdk.awsDashSdkStrings.loadPermission
   import typings.awsDashSdk.awsDashSdkStrings.openvpn
   import typings.awsDashSdk.awsDashSdkStrings.ova
   import typings.awsDashSdk.awsDashSdkStrings.reachability
-  import typings.awsDashSdk.awsDashSdkStrings.spot
-  import typings.awsDashSdk.awsDashSdkStrings.volume
-  import typings.awsDashSdk.awsDashSdkStrings.vpc
+  import typings.awsDashSdk.awsDashSdkStrings.spot_
+  import typings.awsDashSdk.awsDashSdkStrings.volume_
+  import typings.awsDashSdk.awsDashSdkStrings.vpc_
   import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
   import typings.node.Buffer
   import typings.std.Date
@@ -40,28 +41,29 @@ package object clientsEc2Mod {
   type AccountAttributeValueList = js.Array[AccountAttributeValue]
   type ActiveInstanceSet = js.Array[ActiveInstance]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.error
+    - typings.awsDashSdk.awsDashSdkStrings.error__
     - typings.awsDashSdk.awsDashSdkStrings.pending_fulfillment
     - typings.awsDashSdk.awsDashSdkStrings.pending_termination
-    - typings.awsDashSdk.awsDashSdkStrings.fulfilled
+    - typings.awsDashSdk.awsDashSdkStrings.fulfilled__
     - java.lang.String
   */
   type ActivityStatus = _ActivityStatus | java.lang.String
   type AddressList = js.Array[Address]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.default
-    - typings.awsDashSdk.awsDashSdkStrings.host
+    - typings.awsDashSdk.awsDashSdkStrings.default_
+    - typings.awsDashSdk.awsDashSdkStrings.host_
     - java.lang.String
   */
   type Affinity = _Affinity | java.lang.String
+  type AllocationId = java.lang.String
   type AllocationIdList = js.Array[String]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.available
+    - typings.awsDashSdk.awsDashSdkStrings.available__
     - typings.awsDashSdk.awsDashSdkStrings.`under-assessment`
     - typings.awsDashSdk.awsDashSdkStrings.`permanent-failure`
     - typings.awsDashSdk.awsDashSdkStrings.released
     - typings.awsDashSdk.awsDashSdkStrings.`released-permanent-failure`
-    - typings.awsDashSdk.awsDashSdkStrings.pending
+    - typings.awsDashSdk.awsDashSdkStrings.pending__
     - java.lang.String
   */
   type AllocationState = _AllocationState | java.lang.String
@@ -74,65 +76,90 @@ package object clientsEc2Mod {
   type AllocationStrategy = _AllocationStrategy | java.lang.String
   type AllowedPrincipalSet = js.Array[AllowedPrincipal]
   /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.on_
+    - typings.awsDashSdk.awsDashSdkStrings.off__
+    - java.lang.String
+  */
+  type AllowsMultipleInstanceTypes = _AllowsMultipleInstanceTypes | java.lang.String
+  /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.i386
-    - typings.awsDashSdk.awsDashSdkStrings.x86_64
-    - typings.awsDashSdk.awsDashSdkStrings.arm64
+    - typings.awsDashSdk.awsDashSdkStrings.x86_64_
+    - typings.awsDashSdk.awsDashSdkStrings.arm64_
+    - java.lang.String
+  */
+  type ArchitectureType = _ArchitectureType | java.lang.String
+  type ArchitectureTypeList = js.Array[ArchitectureType]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.i386
+    - typings.awsDashSdk.awsDashSdkStrings.x86_64_
+    - typings.awsDashSdk.awsDashSdkStrings.arm64_
     - java.lang.String
   */
   type ArchitectureValues = _ArchitectureValues | java.lang.String
   type AssignedPrivateIpAddressList = js.Array[AssignedPrivateIpAddress]
-  type AssociatedNetworkType = vpc | java.lang.String
+  type AssociatedNetworkType = vpc_ | java.lang.String
   type AssociatedTargetNetworkSet = js.Array[AssociatedTargetNetwork]
   type AssociationIdList = js.Array[String]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.associating
-    - typings.awsDashSdk.awsDashSdkStrings.associated
+    - typings.awsDashSdk.awsDashSdkStrings.associating__
+    - typings.awsDashSdk.awsDashSdkStrings.associated__
     - typings.awsDashSdk.awsDashSdkStrings.`association-failed`
-    - typings.awsDashSdk.awsDashSdkStrings.disassociating
-    - typings.awsDashSdk.awsDashSdkStrings.disassociated
+    - typings.awsDashSdk.awsDashSdkStrings.disassociating__
+    - typings.awsDashSdk.awsDashSdkStrings.disassociated_
     - java.lang.String
   */
   type AssociationStatusCode = _AssociationStatusCode | java.lang.String
+  type AttachmentId = java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.attaching
-    - typings.awsDashSdk.awsDashSdkStrings.attached
-    - typings.awsDashSdk.awsDashSdkStrings.detaching
-    - typings.awsDashSdk.awsDashSdkStrings.detached
+    - typings.awsDashSdk.awsDashSdkStrings.attaching_
+    - typings.awsDashSdk.awsDashSdkStrings.attached_
+    - typings.awsDashSdk.awsDashSdkStrings.detaching__
+    - typings.awsDashSdk.awsDashSdkStrings.detached__
     - java.lang.String
   */
   type AttachmentStatus = _AttachmentStatus | java.lang.String
   type AuthorizationRuleSet = js.Array[AuthorizationRule]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.enable
-    - typings.awsDashSdk.awsDashSdkStrings.disable
+    - typings.awsDashSdk.awsDashSdkStrings.enable_
+    - typings.awsDashSdk.awsDashSdkStrings.disable_
     - java.lang.String
   */
   type AutoAcceptSharedAttachmentsValue = _AutoAcceptSharedAttachmentsValue | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.on
-    - typings.awsDashSdk.awsDashSdkStrings.off
+    - typings.awsDashSdk.awsDashSdkStrings.on_
+    - typings.awsDashSdk.awsDashSdkStrings.off__
     - java.lang.String
   */
   type AutoPlacement = _AutoPlacement | java.lang.String
+  type AutoRecoveryFlag = scala.Boolean
   type AvailabilityZoneList = js.Array[AvailabilityZone]
   type AvailabilityZoneMessageList = js.Array[AvailabilityZoneMessage]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.available
+    - typings.awsDashSdk.awsDashSdkStrings.`opt-in-not-required`
+    - typings.awsDashSdk.awsDashSdkStrings.`opted-in`
+    - typings.awsDashSdk.awsDashSdkStrings.`not-opted-in`
+    - java.lang.String
+  */
+  type AvailabilityZoneOptInStatus = _AvailabilityZoneOptInStatus | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.available__
     - typings.awsDashSdk.awsDashSdkStrings.information
-    - typings.awsDashSdk.awsDashSdkStrings.impaired
-    - typings.awsDashSdk.awsDashSdkStrings.unavailable
+    - typings.awsDashSdk.awsDashSdkStrings.impaired__
+    - typings.awsDashSdk.awsDashSdkStrings.unavailable__
     - java.lang.String
   */
   type AvailabilityZoneState = _AvailabilityZoneState | java.lang.String
+  type AvailabilityZoneStringList = js.Array[String]
   type AvailableInstanceCapacityList = js.Array[InstanceCapacity]
+  type BareMetalFlag = scala.Boolean
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.submitted
-    - typings.awsDashSdk.awsDashSdkStrings.active
-    - typings.awsDashSdk.awsDashSdkStrings.cancelled
-    - typings.awsDashSdk.awsDashSdkStrings.failed
+    - typings.awsDashSdk.awsDashSdkStrings.submitted__
+    - typings.awsDashSdk.awsDashSdkStrings.active__
+    - typings.awsDashSdk.awsDashSdkStrings.cancelled__
+    - typings.awsDashSdk.awsDashSdkStrings.failed__
     - typings.awsDashSdk.awsDashSdkStrings.cancelled_running
     - typings.awsDashSdk.awsDashSdkStrings.cancelled_terminating
-    - typings.awsDashSdk.awsDashSdkStrings.modifying
+    - typings.awsDashSdk.awsDashSdkStrings.modifying_
     - java.lang.String
   */
   type BatchState = _BatchState | java.lang.String
@@ -143,16 +170,17 @@ package object clientsEc2Mod {
   type BundleIdStringList = js.Array[String]
   type BundleTaskList = js.Array[BundleTask]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.pending
+    - typings.awsDashSdk.awsDashSdkStrings.pending__
     - typings.awsDashSdk.awsDashSdkStrings.`waiting-for-shutdown`
     - typings.awsDashSdk.awsDashSdkStrings.bundling
     - typings.awsDashSdk.awsDashSdkStrings.storing
-    - typings.awsDashSdk.awsDashSdkStrings.cancelling
-    - typings.awsDashSdk.awsDashSdkStrings.complete
-    - typings.awsDashSdk.awsDashSdkStrings.failed
+    - typings.awsDashSdk.awsDashSdkStrings.cancelling__
+    - typings.awsDashSdk.awsDashSdkStrings.complete__
+    - typings.awsDashSdk.awsDashSdkStrings.failed__
     - java.lang.String
   */
   type BundleTaskState = _BundleTaskState | java.lang.String
+  type BurstablePerformanceFlag = scala.Boolean
   type ByoipCidrSet = js.Array[ByoipCidr]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.advertised
@@ -161,7 +189,7 @@ package object clientsEc2Mod {
     - typings.awsDashSdk.awsDashSdkStrings.`failed-provision`
     - typings.awsDashSdk.awsDashSdkStrings.`pending-deprovision`
     - typings.awsDashSdk.awsDashSdkStrings.`pending-provision`
-    - typings.awsDashSdk.awsDashSdkStrings.provisioned
+    - typings.awsDashSdk.awsDashSdkStrings.provisioned_
     - java.lang.String
   */
   type ByoipCidrState = _ByoipCidrState | java.lang.String
@@ -176,21 +204,22 @@ package object clientsEc2Mod {
   type CancelSpotFleetRequestsErrorSet = js.Array[CancelSpotFleetRequestsErrorItem]
   type CancelSpotFleetRequestsSuccessSet = js.Array[CancelSpotFleetRequestsSuccessItem]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.active
-    - typings.awsDashSdk.awsDashSdkStrings.open
-    - typings.awsDashSdk.awsDashSdkStrings.closed
-    - typings.awsDashSdk.awsDashSdkStrings.cancelled
-    - typings.awsDashSdk.awsDashSdkStrings.completed
+    - typings.awsDashSdk.awsDashSdkStrings.active__
+    - typings.awsDashSdk.awsDashSdkStrings.open__
+    - typings.awsDashSdk.awsDashSdkStrings.closed_
+    - typings.awsDashSdk.awsDashSdkStrings.cancelled__
+    - typings.awsDashSdk.awsDashSdkStrings.completed__
     - java.lang.String
   */
   type CancelSpotInstanceRequestState = _CancelSpotInstanceRequestState | java.lang.String
   type CancelledSpotInstanceRequestList = js.Array[CancelledSpotInstanceRequest]
+  type CapacityReservationId = java.lang.String
   type CapacityReservationIdSet = js.Array[String]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.`Linux/UNIX`
+    - typings.awsDashSdk.awsDashSdkStrings.LinuxSlashUNIX
     - typings.awsDashSdk.awsDashSdkStrings.`Red Hat Enterprise Linux`
     - typings.awsDashSdk.awsDashSdkStrings.`SUSE Linux`
-    - typings.awsDashSdk.awsDashSdkStrings.Windows
+    - typings.awsDashSdk.awsDashSdkStrings.Windows_
     - typings.awsDashSdk.awsDashSdkStrings.`Windows with SQL Server`
     - typings.awsDashSdk.awsDashSdkStrings.`Windows with SQL Server Enterprise`
     - typings.awsDashSdk.awsDashSdkStrings.`Windows with SQL Server Standard`
@@ -202,24 +231,24 @@ package object clientsEc2Mod {
   */
   type CapacityReservationInstancePlatform = _CapacityReservationInstancePlatform | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.open
-    - typings.awsDashSdk.awsDashSdkStrings.none
+    - typings.awsDashSdk.awsDashSdkStrings.open__
+    - typings.awsDashSdk.awsDashSdkStrings.none__
     - java.lang.String
   */
   type CapacityReservationPreference = _CapacityReservationPreference | java.lang.String
   type CapacityReservationSet = js.Array[CapacityReservation]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.active
-    - typings.awsDashSdk.awsDashSdkStrings.expired
-    - typings.awsDashSdk.awsDashSdkStrings.cancelled
-    - typings.awsDashSdk.awsDashSdkStrings.pending
-    - typings.awsDashSdk.awsDashSdkStrings.failed
+    - typings.awsDashSdk.awsDashSdkStrings.active__
+    - typings.awsDashSdk.awsDashSdkStrings.expired__
+    - typings.awsDashSdk.awsDashSdkStrings.cancelled__
+    - typings.awsDashSdk.awsDashSdkStrings.pending__
+    - typings.awsDashSdk.awsDashSdkStrings.failed__
     - java.lang.String
   */
   type CapacityReservationState = _CapacityReservationState | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.default
-    - typings.awsDashSdk.awsDashSdkStrings.dedicated
+    - typings.awsDashSdk.awsDashSdkStrings.default_
+    - typings.awsDashSdk.awsDashSdkStrings.dedicated_
     - java.lang.String
   */
   type CapacityReservationTenancy = _CapacityReservationTenancy | java.lang.String
@@ -228,8 +257,8 @@ package object clientsEc2Mod {
   type ClassicLinkInstanceList = js.Array[ClassicLinkInstance]
   type ClassicLoadBalancers = js.Array[ClassicLoadBalancer]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.pending
-    - typings.awsDashSdk.awsDashSdkStrings.active
+    - typings.awsDashSdk.awsDashSdkStrings.pending__
+    - typings.awsDashSdk.awsDashSdkStrings.active__
     - java.lang.String
   */
   type ClientCertificateRevocationListStatusCode = _ClientCertificateRevocationListStatusCode | java.lang.String
@@ -244,85 +273,100 @@ package object clientsEc2Mod {
   type ClientVpnAuthenticationType = _ClientVpnAuthenticationType | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.authorizing
-    - typings.awsDashSdk.awsDashSdkStrings.active
-    - typings.awsDashSdk.awsDashSdkStrings.failed
+    - typings.awsDashSdk.awsDashSdkStrings.active__
+    - typings.awsDashSdk.awsDashSdkStrings.failed__
     - typings.awsDashSdk.awsDashSdkStrings.revoking
     - java.lang.String
   */
   type ClientVpnAuthorizationRuleStatusCode = _ClientVpnAuthorizationRuleStatusCode | java.lang.String
   type ClientVpnConnectionSet = js.Array[ClientVpnConnection]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.active
+    - typings.awsDashSdk.awsDashSdkStrings.active__
     - typings.awsDashSdk.awsDashSdkStrings.`failed-to-terminate`
-    - typings.awsDashSdk.awsDashSdkStrings.terminating
-    - typings.awsDashSdk.awsDashSdkStrings.terminated
+    - typings.awsDashSdk.awsDashSdkStrings.terminating__
+    - typings.awsDashSdk.awsDashSdkStrings.terminated__
     - java.lang.String
   */
   type ClientVpnConnectionStatusCode = _ClientVpnConnectionStatusCode | java.lang.String
+  type ClientVpnEndpointId = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`pending-associate`
-    - typings.awsDashSdk.awsDashSdkStrings.available
-    - typings.awsDashSdk.awsDashSdkStrings.deleting
-    - typings.awsDashSdk.awsDashSdkStrings.deleted
+    - typings.awsDashSdk.awsDashSdkStrings.available__
+    - typings.awsDashSdk.awsDashSdkStrings.deleting__
+    - typings.awsDashSdk.awsDashSdkStrings.deleted__
     - java.lang.String
   */
   type ClientVpnEndpointStatusCode = _ClientVpnEndpointStatusCode | java.lang.String
   type ClientVpnRouteSet = js.Array[ClientVpnRoute]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.creating
-    - typings.awsDashSdk.awsDashSdkStrings.active
-    - typings.awsDashSdk.awsDashSdkStrings.failed
-    - typings.awsDashSdk.awsDashSdkStrings.deleting
+    - typings.awsDashSdk.awsDashSdkStrings.creating__
+    - typings.awsDashSdk.awsDashSdkStrings.active__
+    - typings.awsDashSdk.awsDashSdkStrings.failed__
+    - typings.awsDashSdk.awsDashSdkStrings.deleting__
     - java.lang.String
   */
   type ClientVpnRouteStatusCode = _ClientVpnRouteStatusCode | java.lang.String
   type ClientVpnSecurityGroupIdSet = js.Array[String]
+  type CoipAddressUsageSet = js.Array[CoipAddressUsage]
+  type CoipPoolIdSet = js.Array[String]
+  type CoipPoolMaxResults = scala.Double
+  type CoipPoolSet = js.Array[CoipPool]
+  type ConnectionNotificationId = java.lang.String
   type ConnectionNotificationSet = js.Array[ConnectionNotification]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Enabled
-    - typings.awsDashSdk.awsDashSdkStrings.Disabled
+    - typings.awsDashSdk.awsDashSdkStrings.Enabled_
+    - typings.awsDashSdk.awsDashSdkStrings.Disabled_
     - java.lang.String
   */
   type ConnectionNotificationState = _ConnectionNotificationState | java.lang.String
   type ConnectionNotificationType = Topic | java.lang.String
   type ContainerFormat = ova | java.lang.String
   type ConversionIdStringList = js.Array[String]
+  type ConversionTaskId = java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.active
-    - typings.awsDashSdk.awsDashSdkStrings.cancelling
-    - typings.awsDashSdk.awsDashSdkStrings.cancelled
-    - typings.awsDashSdk.awsDashSdkStrings.completed
+    - typings.awsDashSdk.awsDashSdkStrings.active__
+    - typings.awsDashSdk.awsDashSdkStrings.cancelling__
+    - typings.awsDashSdk.awsDashSdkStrings.cancelled__
+    - typings.awsDashSdk.awsDashSdkStrings.completed__
     - java.lang.String
   */
   type ConversionTaskState = _ConversionTaskState | java.lang.String
-  type CopyTagsFromSource = volume | java.lang.String
+  type CopyTagsFromSource = volume_ | java.lang.String
+  type CoreCount = scala.Double
+  type CoreCountList = js.Array[CoreCount]
   type CreateFleetErrorsSet = js.Array[CreateFleetError]
   type CreateFleetInstancesSet = js.Array[CreateFleetInstance]
   type CreateVolumePermissionList = js.Array[CreateVolumePermission]
   type CurrencyCodeValues = USD | java.lang.String
+  type CurrentGenerationFlag = scala.Boolean
+  type CustomerGatewayId = java.lang.String
   type CustomerGatewayIdStringList = js.Array[String]
   type CustomerGatewayList = js.Array[CustomerGateway]
+  type DITMaxResults = scala.Double
+  type DITOMaxResults = scala.Double
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Active
-    - typings.awsDashSdk.awsDashSdkStrings.Inactive
+    - typings.awsDashSdk.awsDashSdkStrings.Active_
+    - typings.awsDashSdk.awsDashSdkStrings.Inactive_
     - java.lang.String
   */
   type DatafeedSubscriptionState = _DatafeedSubscriptionState | java.lang.String
   type DateTime = Date
+  type DedicatedHostFlag = scala.Boolean
+  type DedicatedHostId = java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.enable
-    - typings.awsDashSdk.awsDashSdkStrings.disable
+    - typings.awsDashSdk.awsDashSdkStrings.enable_
+    - typings.awsDashSdk.awsDashSdkStrings.disable_
     - java.lang.String
   */
   type DefaultRouteTableAssociationValue = _DefaultRouteTableAssociationValue | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.enable
-    - typings.awsDashSdk.awsDashSdkStrings.disable
+    - typings.awsDashSdk.awsDashSdkStrings.enable_
+    - typings.awsDashSdk.awsDashSdkStrings.disable_
     - java.lang.String
   */
   type DefaultRouteTablePropagationValue = _DefaultRouteTablePropagationValue | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.spot
+    - typings.awsDashSdk.awsDashSdkStrings.spot_
     - typings.awsDashSdk.awsDashSdkStrings.`on-demand`
     - java.lang.String
   */
@@ -360,6 +404,8 @@ package object clientsEc2Mod {
   type DescribeEgressOnlyInternetGatewaysMaxResults = scala.Double
   type DescribeElasticGpusMaxResults = scala.Double
   type DescribeExportImageTasksMaxResults = scala.Double
+  type DescribeFastSnapshotRestoreSuccessSet = js.Array[DescribeFastSnapshotRestoreSuccessItem]
+  type DescribeFastSnapshotRestoresMaxResults = scala.Double
   type DescribeFleetsErrorSet = js.Array[DescribeFleetError]
   type DescribeFleetsInstancesSet = js.Array[DescribeFleetsInstances]
   type DescribeFpgaImagesMaxResults = scala.Double
@@ -387,15 +433,20 @@ package object clientsEc2Mod {
   type DescribeVpcPeeringConnectionsMaxResults = scala.Double
   type DescribeVpcsMaxResults = scala.Double
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.ebs
+    - typings.awsDashSdk.awsDashSdkStrings.ebs_
     - typings.awsDashSdk.awsDashSdkStrings.`instance-store`
     - java.lang.String
   */
   type DeviceType = _DeviceType | java.lang.String
   type DhcpConfigurationList = js.Array[DhcpConfiguration]
   type DhcpConfigurationValueList = js.Array[AttributeValue]
+  type DhcpOptionsId = java.lang.String
   type DhcpOptionsIdStringList = js.Array[String]
   type DhcpOptionsList = js.Array[DhcpOptions]
+  type DisableFastSnapshotRestoreErrorSet = js.Array[DisableFastSnapshotRestoreErrorItem]
+  type DisableFastSnapshotRestoreStateErrorSet = js.Array[DisableFastSnapshotRestoreStateErrorItem]
+  type DisableFastSnapshotRestoreSuccessSet = js.Array[DisableFastSnapshotRestoreSuccessItem]
+  type DiskCount = scala.Double
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.VMDK
     - typings.awsDashSdk.awsDashSdkStrings.RAW
@@ -404,20 +455,41 @@ package object clientsEc2Mod {
   */
   type DiskImageFormat = _DiskImageFormat | java.lang.String
   type DiskImageList = js.Array[DiskImage]
+  type DiskInfoList = js.Array[DiskInfo]
+  type DiskSize = scala.Double
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.hdd
+    - typings.awsDashSdk.awsDashSdkStrings.ssd
+    - java.lang.String
+  */
+  type DiskType = _DiskType | java.lang.String
   type DnsEntrySet = js.Array[DnsEntry]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.enable
-    - typings.awsDashSdk.awsDashSdkStrings.disable
+    - typings.awsDashSdk.awsDashSdkStrings.enable_
+    - typings.awsDashSdk.awsDashSdkStrings.disable_
     - java.lang.String
   */
   type DnsSupportValue = _DnsSupportValue | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.vpc
-    - typings.awsDashSdk.awsDashSdkStrings.standard
+    - typings.awsDashSdk.awsDashSdkStrings.vpc_
+    - typings.awsDashSdk.awsDashSdkStrings.standard__
     - java.lang.String
   */
   type DomainType = _DomainType | java.lang.String
   type Double = scala.Double
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.unsupported
+    - typings.awsDashSdk.awsDashSdkStrings.supported
+    - java.lang.String
+  */
+  type EbsEncryptionSupport = _EbsEncryptionSupport | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.unsupported
+    - typings.awsDashSdk.awsDashSdkStrings.supported
+    - typings.awsDashSdk.awsDashSdkStrings.default_
+    - java.lang.String
+  */
+  type EbsOptimizedSupport = _EbsOptimizedSupport | java.lang.String
   type EgressOnlyInternetGatewayId = java.lang.String
   type EgressOnlyInternetGatewayIdList = js.Array[EgressOnlyInternetGatewayId]
   type EgressOnlyInternetGatewayList = js.Array[EgressOnlyInternetGateway]
@@ -435,9 +507,20 @@ package object clientsEc2Mod {
   */
   type ElasticGpuStatus = _ElasticGpuStatus | java.lang.String
   type ElasticInferenceAcceleratorAssociationList = js.Array[ElasticInferenceAcceleratorAssociation]
+  type ElasticInferenceAcceleratorCount = scala.Double
   type ElasticInferenceAccelerators = js.Array[ElasticInferenceAccelerator]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.unlimited
+    - typings.awsDashSdk.awsDashSdkStrings.unsupported
+    - typings.awsDashSdk.awsDashSdkStrings.supported
+    - typings.awsDashSdk.awsDashSdkStrings.required__
+    - java.lang.String
+  */
+  type EnaSupport = _EnaSupport | java.lang.String
+  type EnableFastSnapshotRestoreErrorSet = js.Array[EnableFastSnapshotRestoreErrorItem]
+  type EnableFastSnapshotRestoreStateErrorSet = js.Array[EnableFastSnapshotRestoreStateErrorItem]
+  type EnableFastSnapshotRestoreSuccessSet = js.Array[EnableFastSnapshotRestoreSuccessItem]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.unlimited_
     - typings.awsDashSdk.awsDashSdkStrings.limited
     - java.lang.String
   */
@@ -455,47 +538,58 @@ package object clientsEc2Mod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.instanceChange
     - typings.awsDashSdk.awsDashSdkStrings.fleetRequestChange
-    - typings.awsDashSdk.awsDashSdkStrings.error
+    - typings.awsDashSdk.awsDashSdkStrings.error__
     - typings.awsDashSdk.awsDashSdkStrings.information
     - java.lang.String
   */
   type EventType = _EventType | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.noTermination
-    - typings.awsDashSdk.awsDashSdkStrings.default
+    - typings.awsDashSdk.awsDashSdkStrings.default_
     - java.lang.String
   */
   type ExcessCapacityTerminationPolicy = _ExcessCapacityTerminationPolicy | java.lang.String
   type ExecutableByStringList = js.Array[String]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.citrix
-    - typings.awsDashSdk.awsDashSdkStrings.vmware
+    - typings.awsDashSdk.awsDashSdkStrings.vmware_
     - typings.awsDashSdk.awsDashSdkStrings.microsoft
     - java.lang.String
   */
   type ExportEnvironment = _ExportEnvironment | java.lang.String
   type ExportImageTaskIdList = js.Array[String]
   type ExportImageTaskList = js.Array[ExportImageTask]
+  type ExportTaskId = java.lang.String
   type ExportTaskIdStringList = js.Array[String]
   type ExportTaskList = js.Array[ExportTask]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.active
-    - typings.awsDashSdk.awsDashSdkStrings.cancelling
-    - typings.awsDashSdk.awsDashSdkStrings.cancelled
-    - typings.awsDashSdk.awsDashSdkStrings.completed
+    - typings.awsDashSdk.awsDashSdkStrings.active__
+    - typings.awsDashSdk.awsDashSdkStrings.cancelling__
+    - typings.awsDashSdk.awsDashSdkStrings.cancelled__
+    - typings.awsDashSdk.awsDashSdkStrings.completed__
     - java.lang.String
   */
   type ExportTaskState = _ExportTaskState | java.lang.String
   type FailedQueuedPurchaseDeletionSet = js.Array[FailedQueuedPurchaseDeletion]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.enabling__
+    - typings.awsDashSdk.awsDashSdkStrings.optimizing
+    - typings.awsDashSdk.awsDashSdkStrings.enabled__
+    - typings.awsDashSdk.awsDashSdkStrings.disabling_
+    - typings.awsDashSdk.awsDashSdkStrings.disabled__
+    - java.lang.String
+  */
+  type FastSnapshotRestoreStateCode = _FastSnapshotRestoreStateCode | java.lang.String
   type FilterList = js.Array[Filter]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.error
+    - typings.awsDashSdk.awsDashSdkStrings.error__
     - typings.awsDashSdk.awsDashSdkStrings.pending_fulfillment
     - typings.awsDashSdk.awsDashSdkStrings.pending_termination
-    - typings.awsDashSdk.awsDashSdkStrings.fulfilled
+    - typings.awsDashSdk.awsDashSdkStrings.fulfilled__
     - java.lang.String
   */
   type FleetActivityStatus = _FleetActivityStatus | java.lang.String
+  type FleetCapacityReservationUsageStrategy = `use-capacity-reservations-first` | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`instance-change`
     - typings.awsDashSdk.awsDashSdkStrings.`fleet-change`
@@ -523,18 +617,18 @@ package object clientsEc2Mod {
   type FleetOnDemandAllocationStrategy = _FleetOnDemandAllocationStrategy | java.lang.String
   type FleetSet = js.Array[FleetData]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.submitted
-    - typings.awsDashSdk.awsDashSdkStrings.active
-    - typings.awsDashSdk.awsDashSdkStrings.deleted
-    - typings.awsDashSdk.awsDashSdkStrings.failed
+    - typings.awsDashSdk.awsDashSdkStrings.submitted__
+    - typings.awsDashSdk.awsDashSdkStrings.active__
+    - typings.awsDashSdk.awsDashSdkStrings.deleted__
+    - typings.awsDashSdk.awsDashSdkStrings.failed__
     - typings.awsDashSdk.awsDashSdkStrings.deleted_running
     - typings.awsDashSdk.awsDashSdkStrings.deleted_terminating
-    - typings.awsDashSdk.awsDashSdkStrings.modifying
+    - typings.awsDashSdk.awsDashSdkStrings.modifying_
     - java.lang.String
   */
   type FleetStateCode = _FleetStateCode | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.request
+    - typings.awsDashSdk.awsDashSdkStrings.request_
     - typings.awsDashSdk.awsDashSdkStrings.maintain
     - typings.awsDashSdk.awsDashSdkStrings.instant
     - java.lang.String
@@ -549,50 +643,69 @@ package object clientsEc2Mod {
     - java.lang.String
   */
   type FlowLogsResourceType = _FlowLogsResourceType | java.lang.String
+  type FpgaDeviceCount = scala.Double
+  type FpgaDeviceInfoList = js.Array[FpgaDeviceInfo]
+  type FpgaDeviceManufacturerName = java.lang.String
+  type FpgaDeviceMemorySize = scala.Double
+  type FpgaDeviceName = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.description
-    - typings.awsDashSdk.awsDashSdkStrings.name
+    - typings.awsDashSdk.awsDashSdkStrings.name__
     - typings.awsDashSdk.awsDashSdkStrings.loadPermission
     - typings.awsDashSdk.awsDashSdkStrings.productCodes
     - java.lang.String
   */
   type FpgaImageAttributeName = _FpgaImageAttributeName | java.lang.String
+  type FpgaImageId = java.lang.String
   type FpgaImageIdList = js.Array[String]
   type FpgaImageList = js.Array[FpgaImage]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.pending
-    - typings.awsDashSdk.awsDashSdkStrings.failed
-    - typings.awsDashSdk.awsDashSdkStrings.available
-    - typings.awsDashSdk.awsDashSdkStrings.unavailable
+    - typings.awsDashSdk.awsDashSdkStrings.pending__
+    - typings.awsDashSdk.awsDashSdkStrings.failed__
+    - typings.awsDashSdk.awsDashSdkStrings.available__
+    - typings.awsDashSdk.awsDashSdkStrings.unavailable__
     - java.lang.String
   */
   type FpgaImageStateCode = _FpgaImageStateCode | java.lang.String
-  type GatewayType = ipsecDOT1 | java.lang.String
+  type FreeTierEligibleFlag = scala.Boolean
+  type GatewayType = ipsecDot1 | java.lang.String
   type GetCapacityReservationUsageRequestMaxResults = scala.Double
+  type GpuDeviceCount = scala.Double
+  type GpuDeviceInfoList = js.Array[GpuDeviceInfo]
+  type GpuDeviceManufacturerName = java.lang.String
+  type GpuDeviceMemorySize = scala.Double
+  type GpuDeviceName = java.lang.String
   type GroupIdStringList = js.Array[String]
   type GroupIdentifierList = js.Array[GroupIdentifier]
   type GroupIdentifierSet = js.Array[SecurityGroupIdentifier]
   type GroupIds = js.Array[String]
   type GroupNameStringList = js.Array[String]
+  type HibernationFlag = scala.Boolean
   type HistoryRecordSet = js.Array[HistoryRecordEntry]
   type HistoryRecords = js.Array[HistoryRecord]
   type HostInstanceList = js.Array[HostInstance]
   type HostList = js.Array[Host]
   type HostOfferingSet = js.Array[HostOffering]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.on
-    - typings.awsDashSdk.awsDashSdkStrings.off
+    - typings.awsDashSdk.awsDashSdkStrings.on_
+    - typings.awsDashSdk.awsDashSdkStrings.off__
     - java.lang.String
   */
   type HostRecovery = _HostRecovery | java.lang.String
   type HostReservationIdSet = js.Array[String]
   type HostReservationSet = js.Array[HostReservation]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.dedicated
-    - typings.awsDashSdk.awsDashSdkStrings.host
+    - typings.awsDashSdk.awsDashSdkStrings.dedicated_
+    - typings.awsDashSdk.awsDashSdkStrings.host_
     - java.lang.String
   */
   type HostTenancy = _HostTenancy | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.optional__
+    - typings.awsDashSdk.awsDashSdkStrings.required__
+    - java.lang.String
+  */
+  type HttpTokensState = _HttpTokensState | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.ovm
     - typings.awsDashSdk.awsDashSdkStrings.xen
@@ -603,10 +716,10 @@ package object clientsEc2Mod {
   type IKEVersionsRequestList = js.Array[IKEVersionsRequestListValue]
   type IamInstanceProfileAssociationSet = js.Array[IamInstanceProfileAssociation]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.associating
-    - typings.awsDashSdk.awsDashSdkStrings.associated
-    - typings.awsDashSdk.awsDashSdkStrings.disassociating
-    - typings.awsDashSdk.awsDashSdkStrings.disassociated
+    - typings.awsDashSdk.awsDashSdkStrings.associating__
+    - typings.awsDashSdk.awsDashSdkStrings.associated__
+    - typings.awsDashSdk.awsDashSdkStrings.disassociating__
+    - typings.awsDashSdk.awsDashSdkStrings.disassociated_
     - java.lang.String
   */
   type IamInstanceProfileAssociationState = _IamInstanceProfileAssociationState | java.lang.String
@@ -623,16 +736,17 @@ package object clientsEc2Mod {
   */
   type ImageAttributeName = _ImageAttributeName | java.lang.String
   type ImageDiskContainerList = js.Array[ImageDiskContainer]
+  type ImageId = java.lang.String
   type ImageIdStringList = js.Array[String]
   type ImageList = js.Array[Image]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.pending
-    - typings.awsDashSdk.awsDashSdkStrings.available
-    - typings.awsDashSdk.awsDashSdkStrings.invalid
-    - typings.awsDashSdk.awsDashSdkStrings.deregistered
+    - typings.awsDashSdk.awsDashSdkStrings.pending__
+    - typings.awsDashSdk.awsDashSdkStrings.available__
+    - typings.awsDashSdk.awsDashSdkStrings.invalid__
+    - typings.awsDashSdk.awsDashSdkStrings.deregistered__
     - typings.awsDashSdk.awsDashSdkStrings.transient
-    - typings.awsDashSdk.awsDashSdkStrings.failed
-    - typings.awsDashSdk.awsDashSdkStrings.error
+    - typings.awsDashSdk.awsDashSdkStrings.failed__
+    - typings.awsDashSdk.awsDashSdkStrings.error__
     - java.lang.String
   */
   type ImageState = _ImageState | java.lang.String
@@ -643,12 +757,19 @@ package object clientsEc2Mod {
     - java.lang.String
   */
   type ImageTypeValues = _ImageTypeValues | java.lang.String
+  type ImportImageLicenseSpecificationListRequest = js.Array[ImportImageLicenseConfigurationRequest]
+  type ImportImageLicenseSpecificationListResponse = js.Array[ImportImageLicenseConfigurationResponse]
   type ImportImageTaskList = js.Array[ImportImageTask]
   type ImportInstanceVolumeDetailSet = js.Array[ImportInstanceVolumeDetailItem]
   type ImportSnapshotTaskList = js.Array[ImportSnapshotTask]
+  type ImportTaskId = java.lang.String
   type ImportTaskIdList = js.Array[String]
+  type InferenceDeviceCount = scala.Double
+  type InferenceDeviceInfoList = js.Array[InferenceDeviceInfo]
+  type InferenceDeviceManufacturerName = java.lang.String
+  type InferenceDeviceName = java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.instanceType
+    - typings.awsDashSdk.awsDashSdkStrings.instanceType_
     - typings.awsDashSdk.awsDashSdkStrings.kernel
     - typings.awsDashSdk.awsDashSdkStrings.ramdisk
     - typings.awsDashSdk.awsDashSdkStrings.userData
@@ -672,8 +793,8 @@ package object clientsEc2Mod {
   type InstanceCreditSpecificationListRequest = js.Array[InstanceCreditSpecificationRequest]
   type InstanceEventId = java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.healthy
-    - typings.awsDashSdk.awsDashSdkStrings.unhealthy
+    - typings.awsDashSdk.awsDashSdkStrings.healthy__
+    - typings.awsDashSdk.awsDashSdkStrings.unhealthy__
     - java.lang.String
   */
   type InstanceHealthStatus = _InstanceHealthStatus | java.lang.String
@@ -684,283 +805,346 @@ package object clientsEc2Mod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.hibernate
     - typings.awsDashSdk.awsDashSdkStrings.stop
-    - typings.awsDashSdk.awsDashSdkStrings.terminate
+    - typings.awsDashSdk.awsDashSdkStrings.terminate_
     - java.lang.String
   */
   type InstanceInterruptionBehavior = _InstanceInterruptionBehavior | java.lang.String
   type InstanceIpv6AddressList = js.Array[InstanceIpv6Address]
   type InstanceIpv6AddressListRequest = js.Array[InstanceIpv6AddressRequest]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.spot
+    - typings.awsDashSdk.awsDashSdkStrings.spot_
     - typings.awsDashSdk.awsDashSdkStrings.`on-demand`
     - java.lang.String
   */
   type InstanceLifecycle = _InstanceLifecycle | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.spot
-    - typings.awsDashSdk.awsDashSdkStrings.scheduled
+    - typings.awsDashSdk.awsDashSdkStrings.spot_
+    - typings.awsDashSdk.awsDashSdkStrings.scheduled__
     - java.lang.String
   */
   type InstanceLifecycleType = _InstanceLifecycleType | java.lang.String
   type InstanceList = js.Array[Instance]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.open
+    - typings.awsDashSdk.awsDashSdkStrings.open__
     - typings.awsDashSdk.awsDashSdkStrings.targeted
     - java.lang.String
   */
   type InstanceMatchCriteria = _InstanceMatchCriteria | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.disabled__
+    - typings.awsDashSdk.awsDashSdkStrings.enabled__
+    - java.lang.String
+  */
+  type InstanceMetadataEndpointState = _InstanceMetadataEndpointState | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.pending__
+    - typings.awsDashSdk.awsDashSdkStrings.applied
+    - java.lang.String
+  */
+  type InstanceMetadataOptionsState = _InstanceMetadataOptionsState | java.lang.String
   type InstanceMonitoringList = js.Array[InstanceMonitoring]
   type InstanceNetworkInterfaceList = js.Array[InstanceNetworkInterface]
   type InstanceNetworkInterfaceSpecificationList = js.Array[InstanceNetworkInterfaceSpecification]
   type InstancePrivateIpAddressList = js.Array[InstancePrivateIpAddress]
   type InstanceStateChangeList = js.Array[InstanceStateChange]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.pending
-    - typings.awsDashSdk.awsDashSdkStrings.running
+    - typings.awsDashSdk.awsDashSdkStrings.pending__
+    - typings.awsDashSdk.awsDashSdkStrings.running__
     - typings.awsDashSdk.awsDashSdkStrings.`shutting-down`
-    - typings.awsDashSdk.awsDashSdkStrings.terminated
-    - typings.awsDashSdk.awsDashSdkStrings.stopping
-    - typings.awsDashSdk.awsDashSdkStrings.stopped
+    - typings.awsDashSdk.awsDashSdkStrings.terminated__
+    - typings.awsDashSdk.awsDashSdkStrings.stopping__
+    - typings.awsDashSdk.awsDashSdkStrings.stopped__
     - java.lang.String
   */
   type InstanceStateName = _InstanceStateName | java.lang.String
   type InstanceStatusDetailsList = js.Array[InstanceStatusDetails]
   type InstanceStatusEventList = js.Array[InstanceStatusEvent]
   type InstanceStatusList = js.Array[InstanceStatus]
+  type InstanceStorageFlag = scala.Boolean
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.t1DOTmicro
-    - typings.awsDashSdk.awsDashSdkStrings.t2DOTnano
-    - typings.awsDashSdk.awsDashSdkStrings.t2DOTmicro
-    - typings.awsDashSdk.awsDashSdkStrings.t2DOTsmall
-    - typings.awsDashSdk.awsDashSdkStrings.t2DOTmedium
-    - typings.awsDashSdk.awsDashSdkStrings.t2DOTlarge
-    - typings.awsDashSdk.awsDashSdkStrings.t2DOTxlarge
-    - typings.awsDashSdk.awsDashSdkStrings.t2DOT2xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.t3DOTnano
-    - typings.awsDashSdk.awsDashSdkStrings.t3DOTmicro
-    - typings.awsDashSdk.awsDashSdkStrings.t3DOTsmall
-    - typings.awsDashSdk.awsDashSdkStrings.t3DOTmedium
-    - typings.awsDashSdk.awsDashSdkStrings.t3DOTlarge
-    - typings.awsDashSdk.awsDashSdkStrings.t3DOTxlarge
-    - typings.awsDashSdk.awsDashSdkStrings.t3DOT2xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.t3aDOTnano
-    - typings.awsDashSdk.awsDashSdkStrings.t3aDOTmicro
-    - typings.awsDashSdk.awsDashSdkStrings.t3aDOTsmall
-    - typings.awsDashSdk.awsDashSdkStrings.t3aDOTmedium
-    - typings.awsDashSdk.awsDashSdkStrings.t3aDOTlarge
-    - typings.awsDashSdk.awsDashSdkStrings.t3aDOTxlarge
-    - typings.awsDashSdk.awsDashSdkStrings.t3aDOT2xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m1DOTsmall
-    - typings.awsDashSdk.awsDashSdkStrings.m1DOTmedium
-    - typings.awsDashSdk.awsDashSdkStrings.m1DOTlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m1DOTxlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m3DOTmedium
-    - typings.awsDashSdk.awsDashSdkStrings.m3DOTlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m3DOTxlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m3DOT2xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m4DOTlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m4DOTxlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m4DOT2xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m4DOT4xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m4DOT10xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m4DOT16xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m2DOTxlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m2DOT2xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m2DOT4xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.cr1DOT8xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r3DOTlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r3DOTxlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r3DOT2xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r3DOT4xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r3DOT8xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r4DOTlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r4DOTxlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r4DOT2xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r4DOT4xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r4DOT8xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r4DOT16xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r5DOTlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r5DOTxlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r5DOT2xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r5DOT4xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r5DOT8xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r5DOT12xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r5DOT16xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r5DOT24xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r5DOTmetal
-    - typings.awsDashSdk.awsDashSdkStrings.r5aDOTlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r5aDOTxlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r5aDOT2xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r5aDOT4xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r5aDOT8xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r5aDOT12xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r5aDOT16xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r5aDOT24xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r5dDOTlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r5dDOTxlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r5dDOT2xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r5dDOT4xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r5dDOT8xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r5dDOT12xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r5dDOT16xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r5dDOT24xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r5dDOTmetal
-    - typings.awsDashSdk.awsDashSdkStrings.r5adDOTlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r5adDOTxlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r5adDOT2xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r5adDOT4xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r5adDOT8xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r5adDOT12xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r5adDOT16xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r5adDOT24xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.x1DOT16xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.x1DOT32xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.x1eDOTxlarge
-    - typings.awsDashSdk.awsDashSdkStrings.x1eDOT2xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.x1eDOT4xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.x1eDOT8xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.x1eDOT16xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.x1eDOT32xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.i2DOTxlarge
-    - typings.awsDashSdk.awsDashSdkStrings.i2DOT2xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.i2DOT4xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.i2DOT8xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.i3DOTlarge
-    - typings.awsDashSdk.awsDashSdkStrings.i3DOTxlarge
-    - typings.awsDashSdk.awsDashSdkStrings.i3DOT2xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.i3DOT4xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.i3DOT8xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.i3DOT16xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.i3DOTmetal
-    - typings.awsDashSdk.awsDashSdkStrings.i3enDOTlarge
-    - typings.awsDashSdk.awsDashSdkStrings.i3enDOTxlarge
-    - typings.awsDashSdk.awsDashSdkStrings.i3enDOT2xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.i3enDOT3xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.i3enDOT6xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.i3enDOT12xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.i3enDOT24xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.i3enDOTmetal
-    - typings.awsDashSdk.awsDashSdkStrings.hi1DOT4xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.hs1DOT8xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.c1DOTmedium
-    - typings.awsDashSdk.awsDashSdkStrings.c1DOTxlarge
-    - typings.awsDashSdk.awsDashSdkStrings.c3DOTlarge
-    - typings.awsDashSdk.awsDashSdkStrings.c3DOTxlarge
-    - typings.awsDashSdk.awsDashSdkStrings.c3DOT2xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.c3DOT4xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.c3DOT8xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.c4DOTlarge
-    - typings.awsDashSdk.awsDashSdkStrings.c4DOTxlarge
-    - typings.awsDashSdk.awsDashSdkStrings.c4DOT2xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.c4DOT4xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.c4DOT8xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.c5DOTlarge
-    - typings.awsDashSdk.awsDashSdkStrings.c5DOTxlarge
-    - typings.awsDashSdk.awsDashSdkStrings.c5DOT2xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.c5DOT4xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.c5DOT9xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.c5DOT12xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.c5DOT18xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.c5DOT24xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.c5DOTmetal
-    - typings.awsDashSdk.awsDashSdkStrings.c5dDOTlarge
-    - typings.awsDashSdk.awsDashSdkStrings.c5dDOTxlarge
-    - typings.awsDashSdk.awsDashSdkStrings.c5dDOT2xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.c5dDOT4xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.c5dDOT9xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.c5dDOT18xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.c5nDOTlarge
-    - typings.awsDashSdk.awsDashSdkStrings.c5nDOTxlarge
-    - typings.awsDashSdk.awsDashSdkStrings.c5nDOT2xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.c5nDOT4xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.c5nDOT9xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.c5nDOT18xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.cc1DOT4xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.cc2DOT8xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.g2DOT2xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.g2DOT8xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.g3DOT4xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.g3DOT8xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.g3DOT16xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.g3sDOTxlarge
-    - typings.awsDashSdk.awsDashSdkStrings.g4dnDOTxlarge
-    - typings.awsDashSdk.awsDashSdkStrings.g4dnDOT2xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.g4dnDOT4xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.g4dnDOT8xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.g4dnDOT12xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.g4dnDOT16xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.cg1DOT4xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.p2DOTxlarge
-    - typings.awsDashSdk.awsDashSdkStrings.p2DOT8xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.p2DOT16xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.p3DOT2xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.p3DOT8xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.p3DOT16xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.p3dnDOT24xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.d2DOTxlarge
-    - typings.awsDashSdk.awsDashSdkStrings.d2DOT2xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.d2DOT4xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.d2DOT8xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.f1DOT2xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.f1DOT4xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.f1DOT16xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m5DOTlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m5DOTxlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m5DOT2xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m5DOT4xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m5DOT8xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m5DOT12xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m5DOT16xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m5DOT24xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m5DOTmetal
-    - typings.awsDashSdk.awsDashSdkStrings.m5aDOTlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m5aDOTxlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m5aDOT2xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m5aDOT4xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m5aDOT8xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m5aDOT12xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m5aDOT16xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m5aDOT24xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m5dDOTlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m5dDOTxlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m5dDOT2xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m5dDOT4xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m5dDOT8xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m5dDOT12xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m5dDOT16xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m5dDOT24xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m5dDOTmetal
-    - typings.awsDashSdk.awsDashSdkStrings.m5adDOTlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m5adDOTxlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m5adDOT2xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m5adDOT4xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m5adDOT8xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m5adDOT12xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m5adDOT16xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m5adDOT24xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.h1DOT2xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.h1DOT4xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.h1DOT8xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.h1DOT16xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.z1dDOTlarge
-    - typings.awsDashSdk.awsDashSdkStrings.z1dDOTxlarge
-    - typings.awsDashSdk.awsDashSdkStrings.z1dDOT2xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.z1dDOT3xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.z1dDOT6xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.z1dDOT12xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.z1dDOTmetal
-    - typings.awsDashSdk.awsDashSdkStrings.`u-6tb1DOTmetal`
-    - typings.awsDashSdk.awsDashSdkStrings.`u-9tb1DOTmetal`
-    - typings.awsDashSdk.awsDashSdkStrings.`u-12tb1DOTmetal`
-    - typings.awsDashSdk.awsDashSdkStrings.a1DOTmedium
-    - typings.awsDashSdk.awsDashSdkStrings.a1DOTlarge
-    - typings.awsDashSdk.awsDashSdkStrings.a1DOTxlarge
-    - typings.awsDashSdk.awsDashSdkStrings.a1DOT2xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.a1DOT4xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.t1Dotmicro
+    - typings.awsDashSdk.awsDashSdkStrings.t2Dotnano
+    - typings.awsDashSdk.awsDashSdkStrings.t2Dotmicro
+    - typings.awsDashSdk.awsDashSdkStrings.t2Dotsmall
+    - typings.awsDashSdk.awsDashSdkStrings.t2Dotmedium
+    - typings.awsDashSdk.awsDashSdkStrings.t2Dotlarge
+    - typings.awsDashSdk.awsDashSdkStrings.t2Dotxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.t2Dot2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.t3Dotnano
+    - typings.awsDashSdk.awsDashSdkStrings.t3Dotmicro
+    - typings.awsDashSdk.awsDashSdkStrings.t3Dotsmall
+    - typings.awsDashSdk.awsDashSdkStrings.t3Dotmedium
+    - typings.awsDashSdk.awsDashSdkStrings.t3Dotlarge
+    - typings.awsDashSdk.awsDashSdkStrings.t3Dotxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.t3Dot2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.t3aDotnano
+    - typings.awsDashSdk.awsDashSdkStrings.t3aDotmicro
+    - typings.awsDashSdk.awsDashSdkStrings.t3aDotsmall
+    - typings.awsDashSdk.awsDashSdkStrings.t3aDotmedium
+    - typings.awsDashSdk.awsDashSdkStrings.t3aDotlarge
+    - typings.awsDashSdk.awsDashSdkStrings.t3aDotxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.t3aDot2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m1Dotsmall
+    - typings.awsDashSdk.awsDashSdkStrings.m1Dotmedium
+    - typings.awsDashSdk.awsDashSdkStrings.m1Dotlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m1Dotxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m3Dotmedium
+    - typings.awsDashSdk.awsDashSdkStrings.m3Dotlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m3Dotxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m3Dot2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m4Dotlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m4Dotxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m4Dot2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m4Dot4xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m4Dot10xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m4Dot16xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m2Dotxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m2Dot2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m2Dot4xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.cr1Dot8xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r3Dotlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r3Dotxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r3Dot2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r3Dot4xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r3Dot8xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r4Dotlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r4Dotxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r4Dot2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r4Dot4xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r4Dot8xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r4Dot16xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5Dotlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5Dotxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5Dot2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5Dot4xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5Dot8xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5Dot12xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5Dot16xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5Dot24xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5Dotmetal
+    - typings.awsDashSdk.awsDashSdkStrings.r5aDotlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5aDotxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5aDot2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5aDot4xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5aDot8xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5aDot12xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5aDot16xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5aDot24xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5dDotlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5dDotxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5dDot2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5dDot4xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5dDot8xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5dDot12xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5dDot16xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5dDot24xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5dDotmetal
+    - typings.awsDashSdk.awsDashSdkStrings.r5adDotlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5adDotxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5adDot2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5adDot4xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5adDot8xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5adDot12xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5adDot16xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5adDot24xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.x1Dot16xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.x1Dot32xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.x1eDotxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.x1eDot2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.x1eDot4xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.x1eDot8xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.x1eDot16xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.x1eDot32xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.i2Dotxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.i2Dot2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.i2Dot4xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.i2Dot8xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.i3Dotlarge
+    - typings.awsDashSdk.awsDashSdkStrings.i3Dotxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.i3Dot2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.i3Dot4xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.i3Dot8xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.i3Dot16xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.i3Dotmetal
+    - typings.awsDashSdk.awsDashSdkStrings.i3enDotlarge
+    - typings.awsDashSdk.awsDashSdkStrings.i3enDotxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.i3enDot2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.i3enDot3xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.i3enDot6xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.i3enDot12xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.i3enDot24xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.i3enDotmetal
+    - typings.awsDashSdk.awsDashSdkStrings.hi1Dot4xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.hs1Dot8xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c1Dotmedium
+    - typings.awsDashSdk.awsDashSdkStrings.c1Dotxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c3Dotlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c3Dotxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c3Dot2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c3Dot4xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c3Dot8xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c4Dotlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c4Dotxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c4Dot2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c4Dot4xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c4Dot8xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c5Dotlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c5Dotxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c5Dot2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c5Dot4xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c5Dot9xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c5Dot12xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c5Dot18xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c5Dot24xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c5Dotmetal
+    - typings.awsDashSdk.awsDashSdkStrings.c5dDotlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c5dDotxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c5dDot2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c5dDot4xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c5dDot9xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c5dDot12xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c5dDot18xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c5dDot24xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c5dDotmetal
+    - typings.awsDashSdk.awsDashSdkStrings.c5nDotlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c5nDotxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c5nDot2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c5nDot4xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c5nDot9xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c5nDot18xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.cc1Dot4xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.cc2Dot8xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.g2Dot2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.g2Dot8xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.g3Dot4xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.g3Dot8xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.g3Dot16xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.g3sDotxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.g4dnDotxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.g4dnDot2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.g4dnDot4xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.g4dnDot8xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.g4dnDot12xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.g4dnDot16xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.cg1Dot4xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.p2Dotxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.p2Dot8xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.p2Dot16xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.p3Dot2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.p3Dot8xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.p3Dot16xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.p3dnDot24xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.d2Dotxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.d2Dot2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.d2Dot4xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.d2Dot8xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.f1Dot2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.f1Dot4xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.f1Dot16xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5Dotlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5Dotxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5Dot2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5Dot4xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5Dot8xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5Dot12xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5Dot16xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5Dot24xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5Dotmetal
+    - typings.awsDashSdk.awsDashSdkStrings.m5aDotlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5aDotxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5aDot2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5aDot4xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5aDot8xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5aDot12xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5aDot16xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5aDot24xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5dDotlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5dDotxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5dDot2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5dDot4xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5dDot8xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5dDot12xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5dDot16xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5dDot24xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5dDotmetal
+    - typings.awsDashSdk.awsDashSdkStrings.m5adDotlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5adDotxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5adDot2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5adDot4xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5adDot8xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5adDot12xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5adDot16xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5adDot24xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.h1Dot2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.h1Dot4xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.h1Dot8xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.h1Dot16xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.z1dDotlarge
+    - typings.awsDashSdk.awsDashSdkStrings.z1dDotxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.z1dDot2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.z1dDot3xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.z1dDot6xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.z1dDot12xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.z1dDotmetal
+    - typings.awsDashSdk.awsDashSdkStrings.`u-6tb1Dotmetal`
+    - typings.awsDashSdk.awsDashSdkStrings.`u-9tb1Dotmetal`
+    - typings.awsDashSdk.awsDashSdkStrings.`u-12tb1Dotmetal`
+    - typings.awsDashSdk.awsDashSdkStrings.`u-18tb1Dotmetal`
+    - typings.awsDashSdk.awsDashSdkStrings.`u-24tb1Dotmetal`
+    - typings.awsDashSdk.awsDashSdkStrings.a1Dotmedium
+    - typings.awsDashSdk.awsDashSdkStrings.a1Dotlarge
+    - typings.awsDashSdk.awsDashSdkStrings.a1Dotxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.a1Dot2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.a1Dot4xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.a1Dotmetal
+    - typings.awsDashSdk.awsDashSdkStrings.m5dnDotlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5dnDotxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5dnDot2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5dnDot4xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5dnDot8xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5dnDot12xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5dnDot16xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5dnDot24xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5nDotlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5nDotxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5nDot2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5nDot4xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5nDot8xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5nDot12xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5nDot16xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5nDot24xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5dnDotlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5dnDotxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5dnDot2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5dnDot4xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5dnDot8xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5dnDot12xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5dnDot16xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5dnDot24xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5nDotlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5nDotxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5nDot2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5nDot4xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5nDot8xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5nDot12xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5nDot16xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5nDot24xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.inf1Dotxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.inf1Dot2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.inf1Dot6xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.inf1Dot24xlarge
     - java.lang.String
   */
   type InstanceType = _InstanceType | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.nitro
+    - typings.awsDashSdk.awsDashSdkStrings.xen
+    - java.lang.String
+  */
+  type InstanceTypeHypervisor = _InstanceTypeHypervisor | java.lang.String
+  type InstanceTypeInfoList = js.Array[InstanceTypeInfo]
   type InstanceTypeList = js.Array[InstanceType]
+  type InstanceTypeOfferingsList = js.Array[InstanceTypeOffering]
   type InstanceUsageSet = js.Array[InstanceUsage]
   type Integer = scala.Double
   /* Rewritten from type alias, can be one of: 
@@ -970,6 +1154,7 @@ package object clientsEc2Mod {
   */
   type InterfacePermissionType = _InterfacePermissionType | java.lang.String
   type InternetGatewayAttachmentList = js.Array[InternetGatewayAttachment]
+  type InternetGatewayId = java.lang.String
   type InternetGatewayList = js.Array[InternetGateway]
   type IpPermissionList = js.Array[IpPermission]
   type IpRangeList = js.Array[IpRange]
@@ -977,20 +1162,25 @@ package object clientsEc2Mod {
   type Ipv6Address = java.lang.String
   type Ipv6AddressList = js.Array[String]
   type Ipv6CidrBlockSet = js.Array[Ipv6CidrBlock]
+  type Ipv6Flag = scala.Boolean
   type Ipv6RangeList = js.Array[Ipv6Range]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.enable
-    - typings.awsDashSdk.awsDashSdkStrings.disable
+    - typings.awsDashSdk.awsDashSdkStrings.enable_
+    - typings.awsDashSdk.awsDashSdkStrings.disable_
     - java.lang.String
   */
   type Ipv6SupportValue = _Ipv6SupportValue | java.lang.String
   type KeyNameStringList = js.Array[String]
+  type KeyPairIdStringList = js.Array[String]
   type KeyPairList = js.Array[KeyPairInfo]
+  type KeyPairName = java.lang.String
+  type KmsKeyId = java.lang.String
   type LaunchPermissionList = js.Array[LaunchPermission]
   type LaunchSpecsList = js.Array[SpotFleetLaunchSpecification]
   type LaunchTemplateBlockDeviceMappingList = js.Array[LaunchTemplateBlockDeviceMapping]
   type LaunchTemplateBlockDeviceMappingRequestList = js.Array[LaunchTemplateBlockDeviceMappingRequest]
   type LaunchTemplateConfigList = js.Array[LaunchTemplateConfig]
+  type LaunchTemplateElasticInferenceAcceleratorCount = scala.Double
   type LaunchTemplateElasticInferenceAcceleratorList = js.Array[LaunchTemplateElasticInferenceAccelerator]
   type LaunchTemplateElasticInferenceAcceleratorResponseList = js.Array[LaunchTemplateElasticInferenceAcceleratorResponse]
   /* Rewritten from type alias, can be one of: 
@@ -1003,6 +1193,7 @@ package object clientsEc2Mod {
     - java.lang.String
   */
   type LaunchTemplateErrorCode = _LaunchTemplateErrorCode | java.lang.String
+  type LaunchTemplateId = java.lang.String
   type LaunchTemplateInstanceNetworkInterfaceSpecificationList = js.Array[LaunchTemplateInstanceNetworkInterfaceSpecification]
   type LaunchTemplateInstanceNetworkInterfaceSpecificationRequestList = js.Array[LaunchTemplateInstanceNetworkInterfaceSpecificationRequest]
   type LaunchTemplateLicenseList = js.Array[LaunchTemplateLicenseConfiguration]
@@ -1017,37 +1208,85 @@ package object clientsEc2Mod {
   type LicenseList = js.Array[LicenseConfiguration]
   type LicenseSpecificationListRequest = js.Array[LicenseConfigurationRequest]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.available
+    - typings.awsDashSdk.awsDashSdkStrings.available__
     - typings.awsDashSdk.awsDashSdkStrings.sold
-    - typings.awsDashSdk.awsDashSdkStrings.cancelled
-    - typings.awsDashSdk.awsDashSdkStrings.pending
+    - typings.awsDashSdk.awsDashSdkStrings.cancelled__
+    - typings.awsDashSdk.awsDashSdkStrings.pending__
     - java.lang.String
   */
   type ListingState = _ListingState | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.active
-    - typings.awsDashSdk.awsDashSdkStrings.pending
-    - typings.awsDashSdk.awsDashSdkStrings.cancelled
-    - typings.awsDashSdk.awsDashSdkStrings.closed
+    - typings.awsDashSdk.awsDashSdkStrings.active__
+    - typings.awsDashSdk.awsDashSdkStrings.pending__
+    - typings.awsDashSdk.awsDashSdkStrings.cancelled__
+    - typings.awsDashSdk.awsDashSdkStrings.closed_
     - java.lang.String
   */
   type ListingStatus = _ListingStatus | java.lang.String
   type LoadPermissionList = js.Array[LoadPermission]
   type LoadPermissionListRequest = js.Array[LoadPermissionRequest]
+  type LocalGatewayIdSet = js.Array[String]
+  type LocalGatewayMaxResults = scala.Double
+  type LocalGatewayRouteList = js.Array[LocalGatewayRoute]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.pending__
+    - typings.awsDashSdk.awsDashSdkStrings.active__
+    - typings.awsDashSdk.awsDashSdkStrings.blackhole
+    - typings.awsDashSdk.awsDashSdkStrings.deleting__
+    - typings.awsDashSdk.awsDashSdkStrings.deleted__
+    - java.lang.String
+  */
+  type LocalGatewayRouteState = _LocalGatewayRouteState | java.lang.String
+  type LocalGatewayRouteTableIdSet = js.Array[String]
+  type LocalGatewayRouteTableSet = js.Array[LocalGatewayRouteTable]
+  type LocalGatewayRouteTableVirtualInterfaceGroupAssociationIdSet = js.Array[String]
+  type LocalGatewayRouteTableVirtualInterfaceGroupAssociationSet = js.Array[LocalGatewayRouteTableVirtualInterfaceGroupAssociation]
+  type LocalGatewayRouteTableVpcAssociationIdSet = js.Array[String]
+  type LocalGatewayRouteTableVpcAssociationSet = js.Array[LocalGatewayRouteTableVpcAssociation]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.static__
+    - typings.awsDashSdk.awsDashSdkStrings.propagated
+    - java.lang.String
+  */
+  type LocalGatewayRouteType = _LocalGatewayRouteType | java.lang.String
+  type LocalGatewaySet = js.Array[LocalGateway]
+  type LocalGatewayVirtualInterfaceGroupIdSet = js.Array[String]
+  type LocalGatewayVirtualInterfaceGroupSet = js.Array[LocalGatewayVirtualInterfaceGroup]
+  type LocalGatewayVirtualInterfaceIdSet = js.Array[String]
+  type LocalGatewayVirtualInterfaceSet = js.Array[LocalGatewayVirtualInterface]
+  type Location = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.region__
+    - typings.awsDashSdk.awsDashSdkStrings.`availability-zone`
+    - typings.awsDashSdk.awsDashSdkStrings.`availability-zone-id`
+    - java.lang.String
+  */
+  type LocationType = _LocationType | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`cloud-watch-logs`
-    - typings.awsDashSdk.awsDashSdkStrings.s3
+    - typings.awsDashSdk.awsDashSdkStrings.s3_
     - java.lang.String
   */
   type LogDestinationType = _LogDestinationType | java.lang.String
   type Long = scala.Double
-  type MarketType = spot | java.lang.String
+  type MarketType = spot_ | java.lang.String
+  type MaxIpv4AddrPerInterface = scala.Double
+  type MaxIpv6AddrPerInterface = scala.Double
+  type MaxNetworkInterfaces = scala.Double
+  type MaxResults = scala.Double
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.static__
+    - typings.awsDashSdk.awsDashSdkStrings.igmp
+    - java.lang.String
+  */
+  type MembershipType = _MembershipType | java.lang.String
+  type MemorySize = scala.Double
   type MillisecondDateTime = Date
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.disabled
-    - typings.awsDashSdk.awsDashSdkStrings.disabling
-    - typings.awsDashSdk.awsDashSdkStrings.enabled
-    - typings.awsDashSdk.awsDashSdkStrings.pending
+    - typings.awsDashSdk.awsDashSdkStrings.disabled__
+    - typings.awsDashSdk.awsDashSdkStrings.disabling_
+    - typings.awsDashSdk.awsDashSdkStrings.enabled__
+    - typings.awsDashSdk.awsDashSdkStrings.pending__
     - java.lang.String
   */
   type MonitoringState = _MonitoringState | java.lang.String
@@ -1058,19 +1297,28 @@ package object clientsEc2Mod {
   */
   type MoveStatus = _MoveStatus | java.lang.String
   type MovingAddressStatusSet = js.Array[MovingAddressStatus]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.enable_
+    - typings.awsDashSdk.awsDashSdkStrings.disable_
+    - java.lang.String
+  */
+  type MulticastSupportValue = _MulticastSupportValue | java.lang.String
   type NatGatewayAddressList = js.Array[NatGatewayAddress]
+  type NatGatewayId = java.lang.String
   type NatGatewayList = js.Array[NatGateway]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.pending
-    - typings.awsDashSdk.awsDashSdkStrings.failed
-    - typings.awsDashSdk.awsDashSdkStrings.available
-    - typings.awsDashSdk.awsDashSdkStrings.deleting
-    - typings.awsDashSdk.awsDashSdkStrings.deleted
+    - typings.awsDashSdk.awsDashSdkStrings.pending__
+    - typings.awsDashSdk.awsDashSdkStrings.failed__
+    - typings.awsDashSdk.awsDashSdkStrings.available__
+    - typings.awsDashSdk.awsDashSdkStrings.deleting__
+    - typings.awsDashSdk.awsDashSdkStrings.deleted__
     - java.lang.String
   */
   type NatGatewayState = _NatGatewayState | java.lang.String
+  type NetworkAclAssociationId = java.lang.String
   type NetworkAclAssociationList = js.Array[NetworkAclAssociation]
   type NetworkAclEntryList = js.Array[NetworkAclEntry]
+  type NetworkAclId = java.lang.String
   type NetworkAclList = js.Array[NetworkAcl]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.description
@@ -1081,46 +1329,49 @@ package object clientsEc2Mod {
   */
   type NetworkInterfaceAttribute = _NetworkInterfaceAttribute | java.lang.String
   type NetworkInterfaceCreationType = efa | java.lang.String
+  type NetworkInterfaceId = java.lang.String
   type NetworkInterfaceIdList = js.Array[String]
   type NetworkInterfaceIpv6AddressesList = js.Array[NetworkInterfaceIpv6Address]
   type NetworkInterfaceList = js.Array[NetworkInterface]
   type NetworkInterfacePermissionIdList = js.Array[String]
   type NetworkInterfacePermissionList = js.Array[NetworkInterfacePermission]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.pending
-    - typings.awsDashSdk.awsDashSdkStrings.granted
+    - typings.awsDashSdk.awsDashSdkStrings.pending__
+    - typings.awsDashSdk.awsDashSdkStrings.granted_
     - typings.awsDashSdk.awsDashSdkStrings.revoking
-    - typings.awsDashSdk.awsDashSdkStrings.revoked
+    - typings.awsDashSdk.awsDashSdkStrings.revoked__
     - java.lang.String
   */
   type NetworkInterfacePermissionStateCode = _NetworkInterfacePermissionStateCode | java.lang.String
   type NetworkInterfacePrivateIpAddressList = js.Array[NetworkInterfacePrivateIpAddress]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.available
-    - typings.awsDashSdk.awsDashSdkStrings.associated
-    - typings.awsDashSdk.awsDashSdkStrings.attaching
+    - typings.awsDashSdk.awsDashSdkStrings.available__
+    - typings.awsDashSdk.awsDashSdkStrings.associated__
+    - typings.awsDashSdk.awsDashSdkStrings.attaching_
     - typings.awsDashSdk.awsDashSdkStrings.`in-use`
-    - typings.awsDashSdk.awsDashSdkStrings.detaching
+    - typings.awsDashSdk.awsDashSdkStrings.detaching__
     - java.lang.String
   */
   type NetworkInterfaceStatus = _NetworkInterfaceStatus | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.interface
+    - typings.awsDashSdk.awsDashSdkStrings.interface_
     - typings.awsDashSdk.awsDashSdkStrings.natGateway
     - typings.awsDashSdk.awsDashSdkStrings.efa
     - java.lang.String
   */
   type NetworkInterfaceType = _NetworkInterfaceType | java.lang.String
+  type NetworkPerformance = java.lang.String
   type NewDhcpConfigurationList = js.Array[NewDhcpConfiguration]
   type NextToken = java.lang.String
   type OccurrenceDayRequestSet = js.Array[Integer]
   type OccurrenceDaySet = js.Array[Integer]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.standard
-    - typings.awsDashSdk.awsDashSdkStrings.convertible
+    - typings.awsDashSdk.awsDashSdkStrings.standard__
+    - typings.awsDashSdk.awsDashSdkStrings.convertible_
     - java.lang.String
   */
   type OfferingClassType = _OfferingClassType | java.lang.String
+  type OfferingId = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`Heavy Utilization`
     - typings.awsDashSdk.awsDashSdkStrings.`Medium Utilization`
@@ -1138,8 +1389,8 @@ package object clientsEc2Mod {
   */
   type OnDemandAllocationStrategy = _OnDemandAllocationStrategy | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.add
-    - typings.awsDashSdk.awsDashSdkStrings.remove
+    - typings.awsDashSdk.awsDashSdkStrings.add__
+    - typings.awsDashSdk.awsDashSdkStrings.remove__
     - java.lang.String
   */
   type OperationType = _OperationType | java.lang.String
@@ -1151,7 +1402,7 @@ package object clientsEc2Mod {
     - java.lang.String
   */
   type PaymentOption = _PaymentOption | java.lang.String
-  type PermissionGroup = all | java.lang.String
+  type PermissionGroup = all__ | java.lang.String
   type Phase1DHGroupNumbersList = js.Array[Phase1DHGroupNumbersListValue]
   type Phase1DHGroupNumbersRequestList = js.Array[Phase1DHGroupNumbersRequestListValue]
   type Phase1EncryptionAlgorithmsList = js.Array[Phase1EncryptionAlgorithmsListValue]
@@ -1164,24 +1415,34 @@ package object clientsEc2Mod {
   type Phase2EncryptionAlgorithmsRequestList = js.Array[Phase2EncryptionAlgorithmsRequestListValue]
   type Phase2IntegrityAlgorithmsList = js.Array[Phase2IntegrityAlgorithmsListValue]
   type Phase2IntegrityAlgorithmsRequestList = js.Array[Phase2IntegrityAlgorithmsRequestListValue]
+  type PlacementGroupIdStringList = js.Array[String]
   type PlacementGroupList = js.Array[PlacementGroup]
+  type PlacementGroupName = java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.pending
-    - typings.awsDashSdk.awsDashSdkStrings.available
-    - typings.awsDashSdk.awsDashSdkStrings.deleting
-    - typings.awsDashSdk.awsDashSdkStrings.deleted
+    - typings.awsDashSdk.awsDashSdkStrings.pending__
+    - typings.awsDashSdk.awsDashSdkStrings.available__
+    - typings.awsDashSdk.awsDashSdkStrings.deleting__
+    - typings.awsDashSdk.awsDashSdkStrings.deleted__
     - java.lang.String
   */
   type PlacementGroupState = _PlacementGroupState | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.cluster_
+    - typings.awsDashSdk.awsDashSdkStrings.partition
+    - typings.awsDashSdk.awsDashSdkStrings.spread
+    - java.lang.String
+  */
+  type PlacementGroupStrategy = _PlacementGroupStrategy | java.lang.String
+  type PlacementGroupStrategyList = js.Array[PlacementGroupStrategy]
   type PlacementGroupStringList = js.Array[String]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.cluster
+    - typings.awsDashSdk.awsDashSdkStrings.cluster_
     - typings.awsDashSdk.awsDashSdkStrings.spread
     - typings.awsDashSdk.awsDashSdkStrings.partition
     - java.lang.String
   */
   type PlacementStrategy = _PlacementStrategy | java.lang.String
-  type PlatformValues = Windows | java.lang.String
+  type PlatformValues = Windows_ | java.lang.String
   type PoolMaxResults = scala.Double
   type PrefixListIdList = js.Array[PrefixListId]
   type PrefixListIdSet = js.Array[String]
@@ -1191,23 +1452,24 @@ package object clientsEc2Mod {
   type PricingDetailsList = js.Array[PricingDetail]
   type PrincipalIdFormatList = js.Array[PrincipalIdFormat]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.All
-    - typings.awsDashSdk.awsDashSdkStrings.Service
+    - typings.awsDashSdk.awsDashSdkStrings.All_
+    - typings.awsDashSdk.awsDashSdkStrings.Service_
     - typings.awsDashSdk.awsDashSdkStrings.OrganizationUnit
-    - typings.awsDashSdk.awsDashSdkStrings.Account
-    - typings.awsDashSdk.awsDashSdkStrings.User
-    - typings.awsDashSdk.awsDashSdkStrings.Role
+    - typings.awsDashSdk.awsDashSdkStrings.Account_
+    - typings.awsDashSdk.awsDashSdkStrings.User_
+    - typings.awsDashSdk.awsDashSdkStrings.Role_
     - java.lang.String
   */
   type PrincipalType = _PrincipalType | java.lang.String
   type PrivateIpAddressConfigSet = js.Array[ScheduledInstancesPrivateIpAddressConfig]
   type PrivateIpAddressSpecificationList = js.Array[PrivateIpAddressSpecification]
   type PrivateIpAddressStringList = js.Array[String]
+  type ProcessorSustainedClockSpeed = scala.Double
   type ProductCodeList = js.Array[ProductCode]
   type ProductCodeStringList = js.Array[String]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.devpay
-    - typings.awsDashSdk.awsDashSdkStrings.marketplace
+    - typings.awsDashSdk.awsDashSdkStrings.marketplace_
     - java.lang.String
   */
   type ProductCodeValues = _ProductCodeValues | java.lang.String
@@ -1220,15 +1482,15 @@ package object clientsEc2Mod {
   type PurchaseSet = js.Array[Purchase]
   type PurchasedScheduledInstanceSet = js.Array[ScheduledInstance]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.`Linux/UNIX`
-    - typings.awsDashSdk.awsDashSdkStrings.`Linux/UNIX (Amazon VPC)`
-    - typings.awsDashSdk.awsDashSdkStrings.Windows
-    - typings.awsDashSdk.awsDashSdkStrings.`Windows (Amazon VPC)`
+    - typings.awsDashSdk.awsDashSdkStrings.LinuxSlashUNIX
+    - typings.awsDashSdk.awsDashSdkStrings.`LinuxSlashUNIX LeftparenthesisAmazon VPCRightparenthesis`
+    - typings.awsDashSdk.awsDashSdkStrings.Windows_
+    - typings.awsDashSdk.awsDashSdkStrings.`Windows LeftparenthesisAmazon VPCRightparenthesis`
     - java.lang.String
   */
   type RIProductDescription = _RIProductDescription | java.lang.String
   type ReasonCodesList = js.Array[ReportInstanceReasonCodes]
-  type RecurringChargeFrequency = Hourly | java.lang.String
+  type RecurringChargeFrequency = Hourly_ | java.lang.String
   type RecurringChargesList = js.Array[RecurringCharge]
   type RegionList = js.Array[Region]
   type RegionNameStringList = js.Array[String]
@@ -1241,23 +1503,24 @@ package object clientsEc2Mod {
     - typings.awsDashSdk.awsDashSdkStrings.`performance-instance-store`
     - typings.awsDashSdk.awsDashSdkStrings.`performance-ebs-volume`
     - typings.awsDashSdk.awsDashSdkStrings.`performance-other`
-    - typings.awsDashSdk.awsDashSdkStrings.other
+    - typings.awsDashSdk.awsDashSdkStrings.other_
     - java.lang.String
   */
   type ReportInstanceReasonCodes = _ReportInstanceReasonCodes | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.ok
-    - typings.awsDashSdk.awsDashSdkStrings.impaired
+    - typings.awsDashSdk.awsDashSdkStrings.ok__
+    - typings.awsDashSdk.awsDashSdkStrings.impaired__
     - java.lang.String
   */
   type ReportStatusType = _ReportStatusType | java.lang.String
   type RequestHostIdList = js.Array[String]
-  type RequestHostIdSet = js.Array[String]
+  type RequestHostIdSet = js.Array[DedicatedHostId]
+  type RequestInstanceTypeList = js.Array[InstanceType]
   type ReservationList = js.Array[Reservation]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`payment-pending`
     - typings.awsDashSdk.awsDashSdkStrings.`payment-failed`
-    - typings.awsDashSdk.awsDashSdkStrings.active
+    - typings.awsDashSdk.awsDashSdkStrings.active__
     - typings.awsDashSdk.awsDashSdkStrings.retired
     - java.lang.String
   */
@@ -1266,10 +1529,10 @@ package object clientsEc2Mod {
   type ReservedInstanceReservationValueSet = js.Array[ReservedInstanceReservationValue]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`payment-pending`
-    - typings.awsDashSdk.awsDashSdkStrings.active
+    - typings.awsDashSdk.awsDashSdkStrings.active__
     - typings.awsDashSdk.awsDashSdkStrings.`payment-failed`
     - typings.awsDashSdk.awsDashSdkStrings.retired
-    - typings.awsDashSdk.awsDashSdkStrings.queued
+    - typings.awsDashSdk.awsDashSdkStrings.queued__
     - typings.awsDashSdk.awsDashSdkStrings.`queued-deleted`
     - java.lang.String
   */
@@ -1277,6 +1540,7 @@ package object clientsEc2Mod {
   type ReservedInstancesConfigurationList = js.Array[ReservedInstancesConfiguration]
   type ReservedInstancesIdStringList = js.Array[String]
   type ReservedInstancesList = js.Array[ReservedInstances]
+  type ReservedInstancesListingId = java.lang.String
   type ReservedInstancesListingList = js.Array[ReservedInstancesListing]
   type ReservedInstancesModificationIdStringList = js.Array[String]
   type ReservedInstancesModificationList = js.Array[ReservedInstancesModification]
@@ -1298,26 +1562,30 @@ package object clientsEc2Mod {
     - typings.awsDashSdk.awsDashSdkStrings.`fpga-image`
     - typings.awsDashSdk.awsDashSdkStrings.`host-reservation`
     - typings.awsDashSdk.awsDashSdkStrings.image
-    - typings.awsDashSdk.awsDashSdkStrings.instance
+    - typings.awsDashSdk.awsDashSdkStrings.instance__
     - typings.awsDashSdk.awsDashSdkStrings.`internet-gateway`
+    - typings.awsDashSdk.awsDashSdkStrings.`key-pair`
     - typings.awsDashSdk.awsDashSdkStrings.`launch-template`
-    - typings.awsDashSdk.awsDashSdkStrings.natgateway
+    - typings.awsDashSdk.awsDashSdkStrings.natgateway_
     - typings.awsDashSdk.awsDashSdkStrings.`network-acl`
     - typings.awsDashSdk.awsDashSdkStrings.`network-interface`
+    - typings.awsDashSdk.awsDashSdkStrings.`placement-group`
     - typings.awsDashSdk.awsDashSdkStrings.`reserved-instances`
     - typings.awsDashSdk.awsDashSdkStrings.`route-table`
     - typings.awsDashSdk.awsDashSdkStrings.`security-group`
-    - typings.awsDashSdk.awsDashSdkStrings.snapshot
+    - typings.awsDashSdk.awsDashSdkStrings.snapshot_
+    - typings.awsDashSdk.awsDashSdkStrings.`spot-fleet-request`
     - typings.awsDashSdk.awsDashSdkStrings.`spot-instances-request`
-    - typings.awsDashSdk.awsDashSdkStrings.subnet
+    - typings.awsDashSdk.awsDashSdkStrings.subnet_
     - typings.awsDashSdk.awsDashSdkStrings.`traffic-mirror-filter`
     - typings.awsDashSdk.awsDashSdkStrings.`traffic-mirror-session`
     - typings.awsDashSdk.awsDashSdkStrings.`traffic-mirror-target`
     - typings.awsDashSdk.awsDashSdkStrings.`transit-gateway`
     - typings.awsDashSdk.awsDashSdkStrings.`transit-gateway-attachment`
+    - typings.awsDashSdk.awsDashSdkStrings.`transit-gateway-multicast-domain`
     - typings.awsDashSdk.awsDashSdkStrings.`transit-gateway-route-table`
-    - typings.awsDashSdk.awsDashSdkStrings.volume
-    - typings.awsDashSdk.awsDashSdkStrings.vpc
+    - typings.awsDashSdk.awsDashSdkStrings.volume_
+    - typings.awsDashSdk.awsDashSdkStrings.vpc_
     - typings.awsDashSdk.awsDashSdkStrings.`vpc-peering-connection`
     - typings.awsDashSdk.awsDashSdkStrings.`vpn-connection`
     - typings.awsDashSdk.awsDashSdkStrings.`vpn-gateway`
@@ -1327,6 +1595,13 @@ package object clientsEc2Mod {
   type ResponseHostIdList = js.Array[String]
   type ResponseHostIdSet = js.Array[String]
   type RestorableByStringList = js.Array[String]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.ebs_
+    - typings.awsDashSdk.awsDashSdkStrings.`instance-store`
+    - java.lang.String
+  */
+  type RootDeviceType = _RootDeviceType | java.lang.String
+  type RootDeviceTypeList = js.Array[RootDeviceType]
   type RouteList = js.Array[Route]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.CreateRouteTable
@@ -1336,20 +1611,33 @@ package object clientsEc2Mod {
   */
   type RouteOrigin = _RouteOrigin | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.active
+    - typings.awsDashSdk.awsDashSdkStrings.active__
     - typings.awsDashSdk.awsDashSdkStrings.blackhole
     - java.lang.String
   */
   type RouteState = _RouteState | java.lang.String
+  type RouteTableAssociationId = java.lang.String
   type RouteTableAssociationList = js.Array[RouteTableAssociation]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.associating__
+    - typings.awsDashSdk.awsDashSdkStrings.associated__
+    - typings.awsDashSdk.awsDashSdkStrings.disassociating__
+    - typings.awsDashSdk.awsDashSdkStrings.disassociated_
+    - typings.awsDashSdk.awsDashSdkStrings.failed__
+    - java.lang.String
+  */
+  type RouteTableAssociationStateCode = _RouteTableAssociationStateCode | java.lang.String
+  type RouteTableGatewayId = java.lang.String
+  type RouteTableId = java.lang.String
   type RouteTableList = js.Array[RouteTable]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.allow
-    - typings.awsDashSdk.awsDashSdkStrings.deny
+    - typings.awsDashSdk.awsDashSdkStrings.allow__
+    - typings.awsDashSdk.awsDashSdkStrings.deny__
     - java.lang.String
   */
   type RuleAction = _RuleAction | java.lang.String
   type ScheduledInstanceAvailabilitySet = js.Array[ScheduledInstanceAvailability]
+  type ScheduledInstanceId = java.lang.String
   type ScheduledInstanceIdRequestSet = js.Array[String]
   type ScheduledInstanceSet = js.Array[ScheduledInstance]
   type ScheduledInstancesBlockDeviceMappingSet = js.Array[ScheduledInstancesBlockDeviceMapping]
@@ -1360,14 +1648,16 @@ package object clientsEc2Mod {
   type SecurityGroupList = js.Array[SecurityGroup]
   type SecurityGroupReferences = js.Array[SecurityGroupReference]
   type SecurityGroupStringList = js.Array[String]
+  type SensitiveUserData = java.lang.String
   type ServiceConfigurationSet = js.Array[ServiceConfiguration]
   type ServiceDetailSet = js.Array[ServiceDetail]
+  type ServiceId = java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Pending
-    - typings.awsDashSdk.awsDashSdkStrings.Available
-    - typings.awsDashSdk.awsDashSdkStrings.Deleting
-    - typings.awsDashSdk.awsDashSdkStrings.Deleted
-    - typings.awsDashSdk.awsDashSdkStrings.Failed
+    - typings.awsDashSdk.awsDashSdkStrings.Pending_
+    - typings.awsDashSdk.awsDashSdkStrings.Available_
+    - typings.awsDashSdk.awsDashSdkStrings.Deleting_
+    - typings.awsDashSdk.awsDashSdkStrings.Deleted_
+    - typings.awsDashSdk.awsDashSdkStrings.Failed_
     - java.lang.String
   */
   type ServiceState = _ServiceState | java.lang.String
@@ -1380,7 +1670,7 @@ package object clientsEc2Mod {
   type ServiceTypeDetailSet = js.Array[ServiceTypeDetail]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.stop
-    - typings.awsDashSdk.awsDashSdkStrings.terminate
+    - typings.awsDashSdk.awsDashSdkStrings.terminate_
     - java.lang.String
   */
   type ShutdownBehavior = _ShutdownBehavior | java.lang.String
@@ -1391,13 +1681,14 @@ package object clientsEc2Mod {
   */
   type SnapshotAttributeName = _SnapshotAttributeName | java.lang.String
   type SnapshotDetailList = js.Array[SnapshotDetail]
+  type SnapshotId = java.lang.String
   type SnapshotIdStringList = js.Array[String]
   type SnapshotList = js.Array[Snapshot]
   type SnapshotSet = js.Array[SnapshotInfo]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.pending
-    - typings.awsDashSdk.awsDashSdkStrings.completed
-    - typings.awsDashSdk.awsDashSdkStrings.error
+    - typings.awsDashSdk.awsDashSdkStrings.pending__
+    - typings.awsDashSdk.awsDashSdkStrings.completed__
+    - typings.awsDashSdk.awsDashSdkStrings.error__
     - java.lang.String
   */
   type SnapshotState = _SnapshotState | java.lang.String
@@ -1409,22 +1700,23 @@ package object clientsEc2Mod {
   */
   type SpotAllocationStrategy = _SpotAllocationStrategy | java.lang.String
   type SpotFleetRequestConfigSet = js.Array[SpotFleetRequestConfig]
+  type SpotFleetRequestId = java.lang.String
   type SpotFleetTagSpecificationList = js.Array[SpotFleetTagSpecification]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.hibernate
     - typings.awsDashSdk.awsDashSdkStrings.stop
-    - typings.awsDashSdk.awsDashSdkStrings.terminate
+    - typings.awsDashSdk.awsDashSdkStrings.terminate_
     - java.lang.String
   */
   type SpotInstanceInterruptionBehavior = _SpotInstanceInterruptionBehavior | java.lang.String
   type SpotInstanceRequestIdList = js.Array[String]
   type SpotInstanceRequestList = js.Array[SpotInstanceRequest]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.open
-    - typings.awsDashSdk.awsDashSdkStrings.active
-    - typings.awsDashSdk.awsDashSdkStrings.closed
-    - typings.awsDashSdk.awsDashSdkStrings.cancelled
-    - typings.awsDashSdk.awsDashSdkStrings.failed
+    - typings.awsDashSdk.awsDashSdkStrings.open__
+    - typings.awsDashSdk.awsDashSdkStrings.active__
+    - typings.awsDashSdk.awsDashSdkStrings.closed_
+    - typings.awsDashSdk.awsDashSdkStrings.cancelled__
+    - typings.awsDashSdk.awsDashSdkStrings.failed__
     - java.lang.String
   */
   type SpotInstanceState = _SpotInstanceState | java.lang.String
@@ -1439,13 +1731,13 @@ package object clientsEc2Mod {
   type StaleSecurityGroupSet = js.Array[StaleSecurityGroup]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.PendingAcceptance
-    - typings.awsDashSdk.awsDashSdkStrings.Pending
-    - typings.awsDashSdk.awsDashSdkStrings.Available
-    - typings.awsDashSdk.awsDashSdkStrings.Deleting
-    - typings.awsDashSdk.awsDashSdkStrings.Deleted
-    - typings.awsDashSdk.awsDashSdkStrings.Rejected
-    - typings.awsDashSdk.awsDashSdkStrings.Failed
-    - typings.awsDashSdk.awsDashSdkStrings.Expired
+    - typings.awsDashSdk.awsDashSdkStrings.Pending_
+    - typings.awsDashSdk.awsDashSdkStrings.Available_
+    - typings.awsDashSdk.awsDashSdkStrings.Deleting_
+    - typings.awsDashSdk.awsDashSdkStrings.Deleted_
+    - typings.awsDashSdk.awsDashSdkStrings.Rejected_
+    - typings.awsDashSdk.awsDashSdkStrings.Failed_
+    - typings.awsDashSdk.awsDashSdkStrings.Expired_
     - java.lang.String
   */
   type State = _State | java.lang.String
@@ -1458,41 +1750,43 @@ package object clientsEc2Mod {
   type Status = _Status | java.lang.String
   type StatusName = reachability | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.passed
-    - typings.awsDashSdk.awsDashSdkStrings.failed
+    - typings.awsDashSdk.awsDashSdkStrings.passed_
+    - typings.awsDashSdk.awsDashSdkStrings.failed__
     - typings.awsDashSdk.awsDashSdkStrings.`insufficient-data`
-    - typings.awsDashSdk.awsDashSdkStrings.initializing
+    - typings.awsDashSdk.awsDashSdkStrings.initializing__
     - java.lang.String
   */
   type StatusType = _StatusType | java.lang.String
   type String = java.lang.String
+  type SubnetAssociationList = js.Array[SubnetAssociation]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.associating
-    - typings.awsDashSdk.awsDashSdkStrings.associated
-    - typings.awsDashSdk.awsDashSdkStrings.disassociating
-    - typings.awsDashSdk.awsDashSdkStrings.disassociated
-    - typings.awsDashSdk.awsDashSdkStrings.failing
-    - typings.awsDashSdk.awsDashSdkStrings.failed
+    - typings.awsDashSdk.awsDashSdkStrings.associating__
+    - typings.awsDashSdk.awsDashSdkStrings.associated__
+    - typings.awsDashSdk.awsDashSdkStrings.disassociating__
+    - typings.awsDashSdk.awsDashSdkStrings.disassociated_
+    - typings.awsDashSdk.awsDashSdkStrings.failing__
+    - typings.awsDashSdk.awsDashSdkStrings.failed__
     - java.lang.String
   */
   type SubnetCidrBlockStateCode = _SubnetCidrBlockStateCode | java.lang.String
+  type SubnetId = java.lang.String
   type SubnetIdStringList = js.Array[String]
   type SubnetIpv6CidrBlockAssociationSet = js.Array[SubnetIpv6CidrBlockAssociation]
   type SubnetList = js.Array[Subnet]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.pending
-    - typings.awsDashSdk.awsDashSdkStrings.available
+    - typings.awsDashSdk.awsDashSdkStrings.pending__
+    - typings.awsDashSdk.awsDashSdkStrings.available__
     - java.lang.String
   */
   type SubnetState = _SubnetState | java.lang.String
   type SuccessfulInstanceCreditSpecificationSet = js.Array[SuccessfulInstanceCreditSpecificationItem]
   type SuccessfulQueuedPurchaseDeletionSet = js.Array[SuccessfulQueuedPurchaseDeletion]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.ok
-    - typings.awsDashSdk.awsDashSdkStrings.impaired
+    - typings.awsDashSdk.awsDashSdkStrings.ok__
+    - typings.awsDashSdk.awsDashSdkStrings.impaired__
     - typings.awsDashSdk.awsDashSdkStrings.`insufficient-data`
     - typings.awsDashSdk.awsDashSdkStrings.`not-applicable`
-    - typings.awsDashSdk.awsDashSdkStrings.initializing
+    - typings.awsDashSdk.awsDashSdkStrings.initializing__
     - java.lang.String
   */
   type SummaryStatus = _SummaryStatus | java.lang.String
@@ -1510,19 +1804,22 @@ package object clientsEc2Mod {
   */
   type TelemetryStatus = _TelemetryStatus | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.default
-    - typings.awsDashSdk.awsDashSdkStrings.dedicated
-    - typings.awsDashSdk.awsDashSdkStrings.host
+    - typings.awsDashSdk.awsDashSdkStrings.default_
+    - typings.awsDashSdk.awsDashSdkStrings.dedicated_
+    - typings.awsDashSdk.awsDashSdkStrings.host_
     - java.lang.String
   */
   type Tenancy = _Tenancy | java.lang.String
   type TerminateConnectionStatusSet = js.Array[TerminateConnectionStatus]
+  type ThreadsPerCore = scala.Double
+  type ThreadsPerCoreList = js.Array[ThreadsPerCore]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.ingress
     - typings.awsDashSdk.awsDashSdkStrings.egress
     - java.lang.String
   */
   type TrafficDirection = _TrafficDirection | java.lang.String
+  type TrafficMirrorFilterId = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`destination-port-range`
     - typings.awsDashSdk.awsDashSdkStrings.`source-port-range`
@@ -1532,13 +1829,14 @@ package object clientsEc2Mod {
   */
   type TrafficMirrorFilterRuleField = _TrafficMirrorFilterRuleField | java.lang.String
   type TrafficMirrorFilterRuleFieldList = js.Array[TrafficMirrorFilterRuleField]
+  type TrafficMirrorFilterRuleId = java.lang.String
   type TrafficMirrorFilterRuleList = js.Array[TrafficMirrorFilterRule]
   type TrafficMirrorFilterSet = js.Array[TrafficMirrorFilter]
   type TrafficMirrorNetworkService = `amazon-dns` | java.lang.String
   type TrafficMirrorNetworkServiceList = js.Array[TrafficMirrorNetworkService]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.accept
-    - typings.awsDashSdk.awsDashSdkStrings.reject
+    - typings.awsDashSdk.awsDashSdkStrings.accept__
+    - typings.awsDashSdk.awsDashSdkStrings.reject__
     - java.lang.String
   */
   type TrafficMirrorRuleAction = _TrafficMirrorRuleAction | java.lang.String
@@ -1550,7 +1848,9 @@ package object clientsEc2Mod {
   */
   type TrafficMirrorSessionField = _TrafficMirrorSessionField | java.lang.String
   type TrafficMirrorSessionFieldList = js.Array[TrafficMirrorSessionField]
+  type TrafficMirrorSessionId = java.lang.String
   type TrafficMirrorSessionSet = js.Array[TrafficMirrorSession]
+  type TrafficMirrorTargetId = java.lang.String
   type TrafficMirrorTargetSet = js.Array[TrafficMirrorTarget]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`network-interface`
@@ -1567,10 +1867,10 @@ package object clientsEc2Mod {
   */
   type TrafficType = _TrafficType | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.associating
-    - typings.awsDashSdk.awsDashSdkStrings.associated
-    - typings.awsDashSdk.awsDashSdkStrings.disassociating
-    - typings.awsDashSdk.awsDashSdkStrings.disassociated
+    - typings.awsDashSdk.awsDashSdkStrings.associating__
+    - typings.awsDashSdk.awsDashSdkStrings.associated__
+    - typings.awsDashSdk.awsDashSdkStrings.disassociating__
+    - typings.awsDashSdk.awsDashSdkStrings.disassociated_
     - java.lang.String
   */
   type TransitGatewayAssociationState = _TransitGatewayAssociationState | java.lang.String
@@ -1578,46 +1878,70 @@ package object clientsEc2Mod {
   type TransitGatewayAttachmentList = js.Array[TransitGatewayAttachment]
   type TransitGatewayAttachmentPropagationList = js.Array[TransitGatewayAttachmentPropagation]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.vpc
+    - typings.awsDashSdk.awsDashSdkStrings.vpc_
     - typings.awsDashSdk.awsDashSdkStrings.vpn
     - typings.awsDashSdk.awsDashSdkStrings.`direct-connect-gateway`
+    - typings.awsDashSdk.awsDashSdkStrings.`tgw-peering`
     - java.lang.String
   */
   type TransitGatewayAttachmentResourceType = _TransitGatewayAttachmentResourceType | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.pendingAcceptance
-    - typings.awsDashSdk.awsDashSdkStrings.rollingBack
-    - typings.awsDashSdk.awsDashSdkStrings.pending
-    - typings.awsDashSdk.awsDashSdkStrings.available
-    - typings.awsDashSdk.awsDashSdkStrings.modifying
-    - typings.awsDashSdk.awsDashSdkStrings.deleting
-    - typings.awsDashSdk.awsDashSdkStrings.deleted
-    - typings.awsDashSdk.awsDashSdkStrings.failed
-    - typings.awsDashSdk.awsDashSdkStrings.rejected
-    - typings.awsDashSdk.awsDashSdkStrings.rejecting
-    - typings.awsDashSdk.awsDashSdkStrings.failing
+    - typings.awsDashSdk.awsDashSdkStrings.initiating
+    - typings.awsDashSdk.awsDashSdkStrings.pendingAcceptance_
+    - typings.awsDashSdk.awsDashSdkStrings.rollingBack_
+    - typings.awsDashSdk.awsDashSdkStrings.pending__
+    - typings.awsDashSdk.awsDashSdkStrings.available__
+    - typings.awsDashSdk.awsDashSdkStrings.modifying_
+    - typings.awsDashSdk.awsDashSdkStrings.deleting__
+    - typings.awsDashSdk.awsDashSdkStrings.deleted__
+    - typings.awsDashSdk.awsDashSdkStrings.failed__
+    - typings.awsDashSdk.awsDashSdkStrings.rejected__
+    - typings.awsDashSdk.awsDashSdkStrings.rejecting_
+    - typings.awsDashSdk.awsDashSdkStrings.failing__
     - java.lang.String
   */
   type TransitGatewayAttachmentState = _TransitGatewayAttachmentState | java.lang.String
+  type TransitGatewayId = java.lang.String
   type TransitGatewayIdStringList = js.Array[String]
   type TransitGatewayList = js.Array[TransitGateway]
   type TransitGatewayMaxResults = scala.Double
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.enabling
-    - typings.awsDashSdk.awsDashSdkStrings.enabled
-    - typings.awsDashSdk.awsDashSdkStrings.disabling
-    - typings.awsDashSdk.awsDashSdkStrings.disabled
+    - typings.awsDashSdk.awsDashSdkStrings.associating__
+    - typings.awsDashSdk.awsDashSdkStrings.associated__
+    - typings.awsDashSdk.awsDashSdkStrings.disassociating__
+    - typings.awsDashSdk.awsDashSdkStrings.disassociated_
+    - java.lang.String
+  */
+  type TransitGatewayMulitcastDomainAssociationState = _TransitGatewayMulitcastDomainAssociationState | java.lang.String
+  type TransitGatewayMulticastDomainAssociationList = js.Array[TransitGatewayMulticastDomainAssociation]
+  type TransitGatewayMulticastDomainIdStringList = js.Array[String]
+  type TransitGatewayMulticastDomainList = js.Array[TransitGatewayMulticastDomain]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.pending__
+    - typings.awsDashSdk.awsDashSdkStrings.available__
+    - typings.awsDashSdk.awsDashSdkStrings.deleting__
+    - typings.awsDashSdk.awsDashSdkStrings.deleted__
+    - java.lang.String
+  */
+  type TransitGatewayMulticastDomainState = _TransitGatewayMulticastDomainState | java.lang.String
+  type TransitGatewayMulticastGroupList = js.Array[TransitGatewayMulticastGroup]
+  type TransitGatewayPeeringAttachmentList = js.Array[TransitGatewayPeeringAttachment]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.enabling__
+    - typings.awsDashSdk.awsDashSdkStrings.enabled__
+    - typings.awsDashSdk.awsDashSdkStrings.disabling_
+    - typings.awsDashSdk.awsDashSdkStrings.disabled__
     - java.lang.String
   */
   type TransitGatewayPropagationState = _TransitGatewayPropagationState | java.lang.String
   type TransitGatewayRouteAttachmentList = js.Array[TransitGatewayRouteAttachment]
   type TransitGatewayRouteList = js.Array[TransitGatewayRoute]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.pending
-    - typings.awsDashSdk.awsDashSdkStrings.active
+    - typings.awsDashSdk.awsDashSdkStrings.pending__
+    - typings.awsDashSdk.awsDashSdkStrings.active__
     - typings.awsDashSdk.awsDashSdkStrings.blackhole
-    - typings.awsDashSdk.awsDashSdkStrings.deleting
-    - typings.awsDashSdk.awsDashSdkStrings.deleted
+    - typings.awsDashSdk.awsDashSdkStrings.deleting__
+    - typings.awsDashSdk.awsDashSdkStrings.deleted__
     - java.lang.String
   */
   type TransitGatewayRouteState = _TransitGatewayRouteState | java.lang.String
@@ -1626,51 +1950,66 @@ package object clientsEc2Mod {
   type TransitGatewayRouteTableList = js.Array[TransitGatewayRouteTable]
   type TransitGatewayRouteTablePropagationList = js.Array[TransitGatewayRouteTablePropagation]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.pending
-    - typings.awsDashSdk.awsDashSdkStrings.available
-    - typings.awsDashSdk.awsDashSdkStrings.deleting
-    - typings.awsDashSdk.awsDashSdkStrings.deleted
+    - typings.awsDashSdk.awsDashSdkStrings.pending__
+    - typings.awsDashSdk.awsDashSdkStrings.available__
+    - typings.awsDashSdk.awsDashSdkStrings.deleting__
+    - typings.awsDashSdk.awsDashSdkStrings.deleted__
     - java.lang.String
   */
   type TransitGatewayRouteTableState = _TransitGatewayRouteTableState | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.static
+    - typings.awsDashSdk.awsDashSdkStrings.static__
     - typings.awsDashSdk.awsDashSdkStrings.propagated
     - java.lang.String
   */
   type TransitGatewayRouteType = _TransitGatewayRouteType | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.pending
-    - typings.awsDashSdk.awsDashSdkStrings.available
-    - typings.awsDashSdk.awsDashSdkStrings.modifying
-    - typings.awsDashSdk.awsDashSdkStrings.deleting
-    - typings.awsDashSdk.awsDashSdkStrings.deleted
+    - typings.awsDashSdk.awsDashSdkStrings.pending__
+    - typings.awsDashSdk.awsDashSdkStrings.available__
+    - typings.awsDashSdk.awsDashSdkStrings.modifying_
+    - typings.awsDashSdk.awsDashSdkStrings.deleting__
+    - typings.awsDashSdk.awsDashSdkStrings.deleted__
     - java.lang.String
   */
   type TransitGatewayState = _TransitGatewayState | java.lang.String
   type TransitGatewayVpcAttachmentList = js.Array[TransitGatewayVpcAttachment]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.tcp
-    - typings.awsDashSdk.awsDashSdkStrings.udp
+    - typings.awsDashSdk.awsDashSdkStrings.tcp_
+    - typings.awsDashSdk.awsDashSdkStrings.udp_
     - java.lang.String
   */
   type TransportProtocol = _TransportProtocol | java.lang.String
   type TunnelOptionsList = js.Array[TunnelOption]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.InvalidInstanceIDDOTMalformed
-    - typings.awsDashSdk.awsDashSdkStrings.InvalidInstanceIDDOTNotFound
+    - typings.awsDashSdk.awsDashSdkStrings.t2
+    - typings.awsDashSdk.awsDashSdkStrings.t3
+    - typings.awsDashSdk.awsDashSdkStrings.t3a
+    - java.lang.String
+  */
+  type UnlimitedSupportedInstanceFamily = _UnlimitedSupportedInstanceFamily | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.InvalidInstanceIDDotMalformed
+    - typings.awsDashSdk.awsDashSdkStrings.InvalidInstanceIDDotNotFound
     - typings.awsDashSdk.awsDashSdkStrings.IncorrectInstanceState
-    - typings.awsDashSdk.awsDashSdkStrings.InstanceCreditSpecificationDOTNotSupported
+    - typings.awsDashSdk.awsDashSdkStrings.InstanceCreditSpecificationDotNotSupported
     - java.lang.String
   */
   type UnsuccessfulInstanceCreditSpecificationErrorCode = _UnsuccessfulInstanceCreditSpecificationErrorCode | java.lang.String
   type UnsuccessfulInstanceCreditSpecificationSet = js.Array[UnsuccessfulInstanceCreditSpecificationItem]
   type UnsuccessfulItemList = js.Array[UnsuccessfulItem]
   type UnsuccessfulItemSet = js.Array[UnsuccessfulItem]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.spot_
+    - typings.awsDashSdk.awsDashSdkStrings.`on-demand`
+    - java.lang.String
+  */
+  type UsageClassType = _UsageClassType | java.lang.String
+  type UsageClassTypeList = js.Array[UsageClassType]
   type UserGroupStringList = js.Array[String]
   type UserIdGroupPairList = js.Array[UserIdGroupPair]
   type UserIdGroupPairSet = js.Array[UserIdGroupPair]
   type UserIdStringList = js.Array[String]
+  type VCpuCount = scala.Double
   type ValueStringList = js.Array[String]
   type VersionDescription = java.lang.String
   type VersionStringList = js.Array[String]
@@ -1683,11 +2022,11 @@ package object clientsEc2Mod {
   type VirtualizationType = _VirtualizationType | java.lang.String
   type VolumeAttachmentList = js.Array[VolumeAttachment]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.attaching
-    - typings.awsDashSdk.awsDashSdkStrings.attached
-    - typings.awsDashSdk.awsDashSdkStrings.detaching
-    - typings.awsDashSdk.awsDashSdkStrings.detached
-    - typings.awsDashSdk.awsDashSdkStrings.busy
+    - typings.awsDashSdk.awsDashSdkStrings.attaching_
+    - typings.awsDashSdk.awsDashSdkStrings.attached_
+    - typings.awsDashSdk.awsDashSdkStrings.detaching__
+    - typings.awsDashSdk.awsDashSdkStrings.detached__
+    - typings.awsDashSdk.awsDashSdkStrings.busy_
     - java.lang.String
   */
   type VolumeAttachmentState = _VolumeAttachmentState | java.lang.String
@@ -1697,24 +2036,25 @@ package object clientsEc2Mod {
     - java.lang.String
   */
   type VolumeAttributeName = _VolumeAttributeName | java.lang.String
+  type VolumeId = java.lang.String
   type VolumeIdStringList = js.Array[String]
   type VolumeList = js.Array[Volume]
   type VolumeModificationList = js.Array[VolumeModification]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.modifying
+    - typings.awsDashSdk.awsDashSdkStrings.modifying_
     - typings.awsDashSdk.awsDashSdkStrings.optimizing
-    - typings.awsDashSdk.awsDashSdkStrings.completed
-    - typings.awsDashSdk.awsDashSdkStrings.failed
+    - typings.awsDashSdk.awsDashSdkStrings.completed__
+    - typings.awsDashSdk.awsDashSdkStrings.failed__
     - java.lang.String
   */
   type VolumeModificationState = _VolumeModificationState | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.creating
-    - typings.awsDashSdk.awsDashSdkStrings.available
+    - typings.awsDashSdk.awsDashSdkStrings.creating__
+    - typings.awsDashSdk.awsDashSdkStrings.available__
     - typings.awsDashSdk.awsDashSdkStrings.`in-use`
-    - typings.awsDashSdk.awsDashSdkStrings.deleting
-    - typings.awsDashSdk.awsDashSdkStrings.deleted
-    - typings.awsDashSdk.awsDashSdkStrings.error
+    - typings.awsDashSdk.awsDashSdkStrings.deleting__
+    - typings.awsDashSdk.awsDashSdkStrings.deleted__
+    - typings.awsDashSdk.awsDashSdkStrings.error__
     - java.lang.String
   */
   type VolumeState = _VolumeState | java.lang.String
@@ -1722,8 +2062,8 @@ package object clientsEc2Mod {
   type VolumeStatusDetailsList = js.Array[VolumeStatusDetails]
   type VolumeStatusEventsList = js.Array[VolumeStatusEvent]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.ok
-    - typings.awsDashSdk.awsDashSdkStrings.impaired
+    - typings.awsDashSdk.awsDashSdkStrings.ok__
+    - typings.awsDashSdk.awsDashSdkStrings.impaired__
     - typings.awsDashSdk.awsDashSdkStrings.`insufficient-data`
     - java.lang.String
   */
@@ -1736,7 +2076,7 @@ package object clientsEc2Mod {
   */
   type VolumeStatusName = _VolumeStatusName | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.standard
+    - typings.awsDashSdk.awsDashSdkStrings.standard__
     - typings.awsDashSdk.awsDashSdkStrings.io1
     - typings.awsDashSdk.awsDashSdkStrings.gp2
     - typings.awsDashSdk.awsDashSdkStrings.sc1
@@ -1751,20 +2091,22 @@ package object clientsEc2Mod {
     - java.lang.String
   */
   type VpcAttributeName = _VpcAttributeName | java.lang.String
+  type VpcCidrAssociationId = java.lang.String
   type VpcCidrBlockAssociationSet = js.Array[VpcCidrBlockAssociation]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.associating
-    - typings.awsDashSdk.awsDashSdkStrings.associated
-    - typings.awsDashSdk.awsDashSdkStrings.disassociating
-    - typings.awsDashSdk.awsDashSdkStrings.disassociated
-    - typings.awsDashSdk.awsDashSdkStrings.failing
-    - typings.awsDashSdk.awsDashSdkStrings.failed
+    - typings.awsDashSdk.awsDashSdkStrings.associating__
+    - typings.awsDashSdk.awsDashSdkStrings.associated__
+    - typings.awsDashSdk.awsDashSdkStrings.disassociating__
+    - typings.awsDashSdk.awsDashSdkStrings.disassociated_
+    - typings.awsDashSdk.awsDashSdkStrings.failing__
+    - typings.awsDashSdk.awsDashSdkStrings.failed__
     - java.lang.String
   */
   type VpcCidrBlockStateCode = _VpcCidrBlockStateCode | java.lang.String
   type VpcClassicLinkIdList = js.Array[String]
   type VpcClassicLinkList = js.Array[VpcClassicLink]
   type VpcEndpointConnectionSet = js.Array[VpcEndpointConnection]
+  type VpcEndpointId = java.lang.String
   type VpcEndpointSet = js.Array[VpcEndpoint]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.Interface
@@ -1772,51 +2114,55 @@ package object clientsEc2Mod {
     - java.lang.String
   */
   type VpcEndpointType = _VpcEndpointType | java.lang.String
+  type VpcId = java.lang.String
   type VpcIdStringList = js.Array[String]
   type VpcIpv6CidrBlockAssociationSet = js.Array[VpcIpv6CidrBlockAssociation]
   type VpcList = js.Array[Vpc]
+  type VpcPeeringConnectionId = java.lang.String
   type VpcPeeringConnectionList = js.Array[VpcPeeringConnection]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`initiating-request`
     - typings.awsDashSdk.awsDashSdkStrings.`pending-acceptance`
-    - typings.awsDashSdk.awsDashSdkStrings.active
-    - typings.awsDashSdk.awsDashSdkStrings.deleted
-    - typings.awsDashSdk.awsDashSdkStrings.rejected
-    - typings.awsDashSdk.awsDashSdkStrings.failed
-    - typings.awsDashSdk.awsDashSdkStrings.expired
-    - typings.awsDashSdk.awsDashSdkStrings.provisioning
-    - typings.awsDashSdk.awsDashSdkStrings.deleting
+    - typings.awsDashSdk.awsDashSdkStrings.active__
+    - typings.awsDashSdk.awsDashSdkStrings.deleted__
+    - typings.awsDashSdk.awsDashSdkStrings.rejected__
+    - typings.awsDashSdk.awsDashSdkStrings.failed__
+    - typings.awsDashSdk.awsDashSdkStrings.expired__
+    - typings.awsDashSdk.awsDashSdkStrings.provisioning_
+    - typings.awsDashSdk.awsDashSdkStrings.deleting__
     - java.lang.String
   */
   type VpcPeeringConnectionStateReasonCode = _VpcPeeringConnectionStateReasonCode | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.pending
-    - typings.awsDashSdk.awsDashSdkStrings.available
+    - typings.awsDashSdk.awsDashSdkStrings.pending__
+    - typings.awsDashSdk.awsDashSdkStrings.available__
     - java.lang.String
   */
   type VpcState = _VpcState | java.lang.String
-  type VpcTenancy = default | java.lang.String
+  type VpcTenancy = default_ | java.lang.String
+  type VpnConnectionId = java.lang.String
   type VpnConnectionIdStringList = js.Array[String]
   type VpnConnectionList = js.Array[VpnConnection]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.enable
-    - typings.awsDashSdk.awsDashSdkStrings.disable
+    - typings.awsDashSdk.awsDashSdkStrings.enable_
+    - typings.awsDashSdk.awsDashSdkStrings.disable_
     - java.lang.String
   */
   type VpnEcmpSupportValue = _VpnEcmpSupportValue | java.lang.String
+  type VpnGatewayId = java.lang.String
   type VpnGatewayIdStringList = js.Array[String]
   type VpnGatewayList = js.Array[VpnGateway]
   type VpnProtocol = openvpn | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.pending
-    - typings.awsDashSdk.awsDashSdkStrings.available
-    - typings.awsDashSdk.awsDashSdkStrings.deleting
-    - typings.awsDashSdk.awsDashSdkStrings.deleted
+    - typings.awsDashSdk.awsDashSdkStrings.pending__
+    - typings.awsDashSdk.awsDashSdkStrings.available__
+    - typings.awsDashSdk.awsDashSdkStrings.deleting__
+    - typings.awsDashSdk.awsDashSdkStrings.deleted__
     - java.lang.String
   */
   type VpnState = _VpnState | java.lang.String
   type VpnStaticRouteList = js.Array[VpnStaticRoute]
-  type VpnStaticRouteSource = Static | java.lang.String
+  type VpnStaticRouteSource = Static_ | java.lang.String
   type VpnTunnelOptionsSpecificationsList = js.Array[VpnTunnelOptionsSpecification]
   type ZoneIdStringList = js.Array[String]
   type ZoneNameStringList = js.Array[String]
@@ -1835,14 +2181,16 @@ package object clientsEc2Mod {
     - typings.awsDashSdk.awsDashSdkStrings.`2016-04-01`
     - typings.awsDashSdk.awsDashSdkStrings.`2016-09-15`
     - typings.awsDashSdk.awsDashSdkStrings.`2016-11-15`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`Availability Zone`
-    - typings.awsDashSdk.awsDashSdkStrings.Region
+    - typings.awsDashSdk.awsDashSdkStrings.Region_
     - java.lang.String
   */
   type scope = _scope | java.lang.String
+  type totalFpgaMemory = scala.Double
+  type totalGpuMemory = scala.Double
 }

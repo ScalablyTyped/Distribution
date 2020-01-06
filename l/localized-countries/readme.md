@@ -12,7 +12,7 @@ Country code to name mappings for several languages
 | Keywords           | countries, country, i18n, localize, code, lookup |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 18864 |
+| # downloads        | 40728 |
 | # stars            | 0 |
 
 ## Links

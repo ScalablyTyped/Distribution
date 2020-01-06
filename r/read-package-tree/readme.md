@@ -11,8 +11,8 @@ Read the contents of node_modules.
 | Full name          | read-package-tree |
 | Keywords           | - |
 | # releases         | 5 |
-| # dependents       | 65 |
-| # downloads        | 15758805 |
+| # dependents       | 82 |
+| # downloads        | 46951620 |
 | # stars            | 2 |
 
 ## Links

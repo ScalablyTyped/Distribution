@@ -10,9 +10,9 @@ The URI implementation that is used by VS Code and its extensions
 | ------------------ | :-------------: |
 | Full name          | vscode-uri |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 98 |
-| # downloads        | 8786385 |
+| # releases         | 13 |
+| # dependents       | 110 |
+| # downloads        | 19304203 |
 | # stars            | 0 |
 
 ## Links

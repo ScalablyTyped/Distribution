@@ -10,9 +10,9 @@ Rename files using some transformers.
 | ------------------ | :-------------: |
 | Full name          | rename |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 35 |
-| # downloads        | 293481 |
+| # releases         | 0 |
+| # dependents       | 39 |
+| # downloads        | 339461 |
 | # stars            | 4 |
 
 ## Links

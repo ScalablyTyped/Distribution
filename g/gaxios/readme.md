@@ -10,9 +10,9 @@ A simple common HTTP client specifically for Google APIs and services.
 | ------------------ | :-------------: |
 | Full name          | gaxios |
 | Keywords           | google |
-| # releases         | 31 |
-| # dependents       | 7 |
-| # downloads        | 7103117 |
+| # releases         | 38 |
+| # dependents       | 21 |
+| # downloads        | 62475838 |
 | # stars            | 0 |
 
 ## Links

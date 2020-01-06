@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AssociationState extends js.Object {
   /**
     * ARN of the license configuration.
     */
-  val licenseConfigurationArn: js.UndefOr[Input[String]] = js.undefined
+  val licenseConfigurationArn: js.UndefOr[Input[String]] = js.native
   /**
     * ARN of the resource associated with the license configuration.
     */
-  val resourceArn: js.UndefOr[Input[String]] = js.undefined
+  val resourceArn: js.UndefOr[Input[String]] = js.native
 }
 
 object AssociationState {

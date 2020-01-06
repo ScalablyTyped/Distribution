@@ -12,7 +12,7 @@ The https://meetfinch.com CLI app
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 0 |
-| # downloads        | 2170 |
+| # downloads        | 2785 |
 | # stars            | 0 |
 
 ## Links

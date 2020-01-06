@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CreateBucketConfiguration extends js.Object {
   /**
-    * Specifies the region where the bucket will be created. If you don't specify a region, the bucket is created in US East (N. Virginia) Region (us-east-1).
+    * Specifies the Region where the bucket will be created. If you don't specify a Region, the bucket is created in the US East (N. Virginia) Region (us-east-1).
     */
-  var LocationConstraint: js.UndefOr[BucketLocationConstraint] = js.undefined
+  var LocationConstraint: js.UndefOr[BucketLocationConstraint] = js.native
 }
 
 object CreateBucketConfiguration {

@@ -10,9 +10,9 @@ Measure the window size in React
 | ------------------ | :-------------: |
 | Full name          | @reach/window-size |
 | Keywords           | - |
-| # releases         | 9 |
-| # dependents       | 4 |
-| # downloads        | 107377 |
+| # releases         | 16 |
+| # dependents       | 7 |
+| # downloads        | 337163 |
 | # stars            | 0 |
 
 ## Links

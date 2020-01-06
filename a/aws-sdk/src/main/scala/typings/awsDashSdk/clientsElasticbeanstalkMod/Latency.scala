@@ -4,39 +4,40 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Latency extends js.Object {
   /**
     * The average latency for the slowest 90 percent of requests over the last 10 seconds.
     */
-  var P10: js.UndefOr[NullableDouble] = js.undefined
+  var P10: js.UndefOr[NullableDouble] = js.native
   /**
     * The average latency for the slowest 50 percent of requests over the last 10 seconds.
     */
-  var P50: js.UndefOr[NullableDouble] = js.undefined
+  var P50: js.UndefOr[NullableDouble] = js.native
   /**
     * The average latency for the slowest 25 percent of requests over the last 10 seconds.
     */
-  var P75: js.UndefOr[NullableDouble] = js.undefined
+  var P75: js.UndefOr[NullableDouble] = js.native
   /**
     * The average latency for the slowest 15 percent of requests over the last 10 seconds.
     */
-  var P85: js.UndefOr[NullableDouble] = js.undefined
+  var P85: js.UndefOr[NullableDouble] = js.native
   /**
     * The average latency for the slowest 10 percent of requests over the last 10 seconds.
     */
-  var P90: js.UndefOr[NullableDouble] = js.undefined
+  var P90: js.UndefOr[NullableDouble] = js.native
   /**
     * The average latency for the slowest 5 percent of requests over the last 10 seconds.
     */
-  var P95: js.UndefOr[NullableDouble] = js.undefined
+  var P95: js.UndefOr[NullableDouble] = js.native
   /**
     * The average latency for the slowest 1 percent of requests over the last 10 seconds.
     */
-  var P99: js.UndefOr[NullableDouble] = js.undefined
+  var P99: js.UndefOr[NullableDouble] = js.native
   /**
     * The average latency for the slowest 0.1 percent of requests over the last 10 seconds.
     */
-  var P999: js.UndefOr[NullableDouble] = js.undefined
+  var P999: js.UndefOr[NullableDouble] = js.native
 }
 
 object Latency {

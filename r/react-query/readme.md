@@ -10,9 +10,9 @@ Hooks for managing, caching and syncing asynchronous and remote data in React
 | ------------------ | :-------------: |
 | Full name          | react-query |
 | Keywords           | - |
-| # releases         | 20 |
-| # dependents       | 1 |
-| # downloads        | 3948 |
+| # releases         | 37 |
+| # dependents       | 2 |
+| # downloads        | 23834 |
 | # stars            | 0 |
 
 ## Links

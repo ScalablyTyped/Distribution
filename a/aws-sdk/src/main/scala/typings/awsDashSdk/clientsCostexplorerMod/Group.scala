@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Group extends js.Object {
   /**
     * The keys that are included in this group.
     */
-  var Keys: js.UndefOr[typings.awsDashSdk.clientsCostexplorerMod.Keys] = js.undefined
+  var Keys: js.UndefOr[typings.awsDashSdk.clientsCostexplorerMod.Keys] = js.native
   /**
     * The metrics that are included in this group.
     */
-  var Metrics: js.UndefOr[typings.awsDashSdk.clientsCostexplorerMod.Metrics] = js.undefined
+  var Metrics: js.UndefOr[typings.awsDashSdk.clientsCostexplorerMod.Metrics] = js.native
 }
 
 object Group {
   @scala.inline
   def apply(Keys: Keys = null, Metrics: Metrics = null): Group = {
     val __obj = js.Dynamic.literal()
-    if (Keys != null) __obj.updateDynamic("Keys")(Keys)
-    if (Metrics != null) __obj.updateDynamic("Metrics")(Metrics)
+    if (Keys != null) __obj.updateDynamic("Keys")(Keys.asInstanceOf[js.Any])
+    if (Metrics != null) __obj.updateDynamic("Metrics")(Metrics.asInstanceOf[js.Any])
     __obj.asInstanceOf[Group]
   }
 }

@@ -10,9 +10,9 @@ Express.js flash notifications that works with any template engine
 | ------------------ | :-------------: |
 | Full name          | express-flash-notification |
 | Keywords           | flash, flash message, flash notification, notification, express, hogan, mustache, logicless |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 6646 |
+| # downloads        | 8099 |
 | # stars            | 0 |
 
 ## Links

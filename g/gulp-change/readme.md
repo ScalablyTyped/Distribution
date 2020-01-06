@@ -11,8 +11,8 @@ allow file content manipulations
 | Full name          | gulp-change |
 | Keywords           | gulp, change, file, content, modify, static, analysis |
 | # releases         | 3 |
-| # dependents       | 24 |
-| # downloads        | 203109 |
+| # dependents       | 21 |
+| # downloads        | 247815 |
 | # stars            | 9 |
 
 ## Links

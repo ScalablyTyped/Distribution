@@ -13,11 +13,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object libEsmCommonIntentMod extends js.Object {
   /* Rewritten from type alias, can be one of: 
-    - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.warning
-    - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.success
-    - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.danger
     - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.none
     - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.primary
+    - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.danger
+    - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.warning
+    - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.success
   */
   trait Intent extends js.Object
   

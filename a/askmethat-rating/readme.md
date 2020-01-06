@@ -10,9 +10,9 @@ Simple plugin providing to use fonts as rating
 | ------------------ | :-------------: |
 | Full name          | askmethat-rating |
 | Keywords           | rating, font, askmethat, plugin, font-awesome, glyphicon |
-| # releases         | 7 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 973 |
+| # downloads        | 903 |
 | # stars            | 0 |
 
 ## Links

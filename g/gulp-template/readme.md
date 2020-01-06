@@ -11,8 +11,8 @@ Render/precompile Lodash/Underscore templates
 | Full name          | gulp-template |
 | Keywords           | gulpplugin, lodash, underscore, template, compile, html, render, rendering, precompile |
 | # releases         | 2 |
-| # dependents       | 596 |
-| # downloads        | 1131848 |
+| # dependents       | 603 |
+| # downloads        | 1137539 |
 | # stars            | 39 |
 
 ## Links

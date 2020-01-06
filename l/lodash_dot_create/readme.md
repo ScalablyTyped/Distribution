@@ -11,8 +11,8 @@ The lodash method `_.create` exported as a module.
 | Full name          | lodash.create |
 | Keywords           | lodash-modularized, create |
 | # releases         | 0 |
-| # dependents       | 22 |
-| # downloads        | 32285180 |
+| # dependents       | 23 |
+| # downloads        | 25268413 |
 | # stars            | 0 |
 
 ## Links

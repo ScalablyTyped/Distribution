@@ -28,16 +28,16 @@ class VueRouter () extends js.Object {
   def onError(cb: ErrorHandler): Unit = js.native
   def onReady(cb: js.Function): Unit = js.native
   def onReady(cb: js.Function, errorCb: ErrorHandler): Unit = js.native
-  def push(location: RawLocation): Unit = js.native
+  def push(location: RawLocation): js.Promise[Route] = js.native
   def push(location: RawLocation, onComplete: js.Function): Unit = js.native
   def push(location: RawLocation, onComplete: js.Function, onAbort: ErrorHandler): Unit = js.native
   @JSName("push")
-  def push_Promise(location: RawLocation): js.Promise[Route] = js.native
-  def replace(location: RawLocation): Unit = js.native
+  def push_Unit(location: RawLocation): Unit = js.native
+  def replace(location: RawLocation): js.Promise[Route] = js.native
   def replace(location: RawLocation, onComplete: js.Function): Unit = js.native
   def replace(location: RawLocation, onComplete: js.Function, onAbort: ErrorHandler): Unit = js.native
   @JSName("replace")
-  def replace_Promise(location: RawLocation): js.Promise[Route] = js.native
+  def replace_Unit(location: RawLocation): Unit = js.native
   def resolve(to: RawLocation): Anon_Href = js.native
   def resolve(to: RawLocation, current: Route): Anon_Href = js.native
   def resolve(to: RawLocation, current: Route, append: Boolean): Anon_Href = js.native

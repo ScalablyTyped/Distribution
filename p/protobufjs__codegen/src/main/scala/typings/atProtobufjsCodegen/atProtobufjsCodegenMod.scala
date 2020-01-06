@@ -35,7 +35,7 @@ object atProtobufjsCodegenMod extends js.Object {
   type Codegen = js.Function2[
     /* formatStringOrScope */ js.UndefOr[String | StringDictionary[js.Any]], 
     /* repeated */ js.Any, 
-    (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias @protobufjs/codegen.@protobufjs/codegen.Codegen */ js.Object) | js.Function
+    (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @protobufjs/codegen.@protobufjs/codegen.Codegen */ js.Object) | js.Function
   ]
 }
 

@@ -9,10 +9,10 @@ Get XDG Base Directory paths
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | xdg-basedir |
-| Keywords           | xdg, base, directory, dir, basedir, path, data, config, cache, linux, unix, spec |
-| # releases         | 1 |
-| # dependents       | 76 |
-| # downloads        | 135530113 |
+| Keywords           | xdg, base, directory, basedir, path, data, config, cache, linux, unix, spec |
+| # releases         | 2 |
+| # dependents       | 87 |
+| # downloads        | 234833423 |
 | # stars            | 5 |
 
 ## Links

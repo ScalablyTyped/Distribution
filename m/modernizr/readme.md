@@ -11,9 +11,9 @@ Modernizr is a JavaScript library that detects HTML5 and CSS3 features in the us
 | Full name          | modernizr |
 | Keywords           | modernizr, html5, css3, javascript, browser, feature detection |
 | # releases         | 5 |
-| # dependents       | 73 |
-| # downloads        | 2725639 |
-| # stars            | 43 |
+| # dependents       | 80 |
+| # downloads        | 3182813 |
+| # stars            | 44 |
 
 ## Links
 - [Homepage](https://github.com/Modernizr/Modernizr#readme)

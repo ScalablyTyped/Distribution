@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ServicePlacementConstraint extends js.Object {
-  var expression: js.UndefOr[Input[String]] = js.undefined
-  var `type`: Input[String]
+  var expression: js.UndefOr[Input[String]] = js.native
+  var `type`: Input[String] = js.native
 }
 
 object ServicePlacementConstraint {

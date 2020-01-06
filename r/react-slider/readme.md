@@ -10,15 +10,15 @@ Slider component for React
 | ------------------ | :-------------: |
 | Full name          | react-slider |
 | Keywords           | react-component, react, slider, component |
-| # releases         | 9 |
-| # dependents       | 36 |
-| # downloads        | 775637 |
+| # releases         | 10 |
+| # dependents       | 39 |
+| # downloads        | 964652 |
 | # stars            | 5 |
 
 ## Links
-- [Homepage](https://github.com/mpowaga/react-slider#readme)
-- [Bugs](https://github.com/mpowaga/react-slider/issues)
-- [Repository](https://github.com/mpowaga/react-slider)
+- [Homepage](https://github.com/zillow/react-slider)
+- [Bugs](https://github.com/zillow/react-slider/issues)
+- [Repository](https://github.com/zillow/react-slider)
 - [Npm](https://www.npmjs.com/package/react-slider)
     
 

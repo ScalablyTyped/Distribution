@@ -14,7 +14,7 @@ class EventRuleEventSubscription protected ()
   def this(name: String, eventRuleOrSchedule: String, handler: EventRuleEventHandler) = this()
   def this(
     name: String,
-    eventRuleOrSchedule: typings.atPulumiAws.cloudwatchEventRuleMixinsMod.cloudwatchEventRuleMod.EventRule,
+    eventRuleOrSchedule: typings.atPulumiAws.cloudwatchEventRuleMod.EventRule,
     handler: EventRuleEventHandler
   ) = this()
   def this(
@@ -25,7 +25,7 @@ class EventRuleEventSubscription protected ()
   ) = this()
   def this(
     name: String,
-    eventRuleOrSchedule: typings.atPulumiAws.cloudwatchEventRuleMixinsMod.cloudwatchEventRuleMod.EventRule,
+    eventRuleOrSchedule: typings.atPulumiAws.cloudwatchEventRuleMod.EventRule,
     handler: EventRuleEventHandler,
     args: EventRuleEventSubscriptionArgs
   ) = this()
@@ -38,7 +38,7 @@ class EventRuleEventSubscription protected ()
   ) = this()
   def this(
     name: String,
-    eventRuleOrSchedule: typings.atPulumiAws.cloudwatchEventRuleMixinsMod.cloudwatchEventRuleMod.EventRule,
+    eventRuleOrSchedule: typings.atPulumiAws.cloudwatchEventRuleMod.EventRule,
     handler: EventRuleEventHandler,
     args: EventRuleEventSubscriptionArgs,
     opts: ComponentResourceOptions

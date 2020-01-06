@@ -10,13 +10,13 @@ Everything you wish the HTML <select> element could do, wrapped up into a lightw
 | ------------------ | :-------------: |
 | Full name          | vue-select |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 27 |
-| # downloads        | 1330801 |
+| # releases         | 18 |
+| # dependents       | 56 |
+| # downloads        | 2332018 |
 | # stars            | 2 |
 
 ## Links
-- [Homepage](https://github.com/sagalbot/vue-select#readme)
+- [Homepage](https://vue-select.org)
 - [Bugs](https://github.com/sagalbot/vue-select/issues)
 - [Repository](https://github.com/sagalbot/vue-select)
 - [Npm](https://www.npmjs.com/package/vue-select)

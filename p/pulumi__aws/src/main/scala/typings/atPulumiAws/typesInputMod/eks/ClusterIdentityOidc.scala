@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClusterIdentityOidc extends js.Object {
   /**
     * Issuer URL for the OpenID Connect identity provider.
     */
-  var issuer: js.UndefOr[Input[String]] = js.undefined
+  var issuer: js.UndefOr[Input[String]] = js.native
 }
 
 object ClusterIdentityOidc {

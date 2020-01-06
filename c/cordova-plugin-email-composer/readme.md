@@ -9,9 +9,9 @@ Provides access to the standard interface that manages the editing and sending a
 | ------------------ | :-------------: |
 | Full name          | cordova-plugin-email-composer |
 | Keywords           | appplant, email, ecosystem:cordova, cordova-ios, cordova-osx, cordova-android, cordova-windows, cordova-browser |
-| # releases         | 16 |
-| # dependents       | 1 |
-| # downloads        | 152321 |
+| # releases         | 8 |
+| # dependents       | 2 |
+| # downloads        | 171963 |
 | # stars            | 2 |
 
 ## Links

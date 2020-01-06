@@ -11,8 +11,8 @@ recursively Object.freeze() objects and functions
 | Full name          | deep-freeze |
 | Keywords           | freeze, deep, object, recursive |
 | # releases         | 1 |
-| # dependents       | 124 |
-| # downloads        | 3783032 |
+| # dependents       | 141 |
+| # downloads        | 5037648 |
 | # stars            | 26 |
 
 ## Links

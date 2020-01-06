@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "mongoose-promise"
-version := "4.5.4-dt-20191003Z-a0c902"
+version := "4.5.4-dt-20191003Z-e5ad24"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "mpromise" % "0.5.4-dt-20190322Z-65c35d",
-  "org.scalablytyped" %%% "std" % "3.7-953338")
+  "org.scalablytyped" %%% "mpromise" % "0.5.4-dt-20190322Z-12dd4f",
+  "org.scalablytyped" %%% "std" % "3.7-b6d959")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

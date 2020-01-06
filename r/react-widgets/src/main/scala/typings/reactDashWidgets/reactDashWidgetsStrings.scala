@@ -1,14 +1,12 @@
 package typings.reactDashWidgets
 
 import typings.reactDashWidgets.libCalendarMod.CalendarView
+import typings.reactDashWidgets.libDateTimePickerMod.Open
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object reactDashWidgetsStrings {
-  @js.native
-  sealed trait calendar extends js.Object
-  
   @js.native
   sealed trait century extends CalendarView
   
@@ -19,7 +17,7 @@ object reactDashWidgetsStrings {
   sealed trait contains extends js.Object
   
   @js.native
-  sealed trait date extends js.Object
+  sealed trait date extends Open
   
   @js.native
   sealed trait decade extends CalendarView
@@ -46,13 +44,11 @@ object reactDashWidgetsStrings {
   sealed trait startsWith extends js.Object
   
   @js.native
-  sealed trait time extends js.Object
+  sealed trait time extends Open
   
   @js.native
   sealed trait year extends CalendarView
   
-  @scala.inline
-  def calendar: calendar = "calendar".asInstanceOf[calendar]
   @scala.inline
   def century: century = "century".asInstanceOf[century]
   @scala.inline

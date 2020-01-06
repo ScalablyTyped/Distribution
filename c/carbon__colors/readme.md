@@ -9,16 +9,16 @@ Colors for digital and software products using the Carbon Design System
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @carbon/colors |
-| Keywords           | eyeglass-module, ibm, elements, carbon, carbon-elements, carbon-design-system |
-| # releases         | 43 |
-| # dependents       | 7 |
-| # downloads        | 280295 |
+| Keywords           | eyeglass-module, ibm, elements, carbon, carbon-elements, carbon-design-system, components, react |
+| # releases         | 103 |
+| # dependents       | 11 |
+| # downloads        | 294628 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/IBM/carbon-elements#readme)
-- [Bugs](https://github.com/IBM/carbon-elements/issues)
-- [Repository](https://github.com/IBM/carbon-elements)
+- [Homepage](https://github.com/carbon-design-system/carbon#readme)
+- [Bugs](https://github.com/carbon-design-system/carbon/issues)
+- [Repository](https://github.com/carbon-design-system/carbon)
 - [Npm](https://www.npmjs.com/package/%40carbon%2Fcolors)
     
 

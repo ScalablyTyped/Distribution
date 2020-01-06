@@ -13,24 +13,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<{}, never, never> */
+@js.native
 trait HiddenProps extends js.Object {
-  var className: js.UndefOr[String] = js.undefined
-  var classes: js.UndefOr[Partial[ClassNameMap[scala.Nothing]]] = js.undefined
-  var implementation: js.UndefOr[js_ | css] = js.undefined
-  var initialWidth: js.UndefOr[Breakpoint] = js.undefined
-  var innerRef: js.UndefOr[Ref[_] | RefObject[_]] = js.undefined
-  var lgDown: js.UndefOr[Boolean] = js.undefined
-  var lgUp: js.UndefOr[Boolean] = js.undefined
-  var mdDown: js.UndefOr[Boolean] = js.undefined
-  var mdUp: js.UndefOr[Boolean] = js.undefined
-  var only: js.UndefOr[Breakpoint | js.Array[Breakpoint]] = js.undefined
-  var smDown: js.UndefOr[Boolean] = js.undefined
-  var smUp: js.UndefOr[Boolean] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
-  var xlDown: js.UndefOr[Boolean] = js.undefined
-  var xlUp: js.UndefOr[Boolean] = js.undefined
-  var xsDown: js.UndefOr[Boolean] = js.undefined
-  var xsUp: js.UndefOr[Boolean] = js.undefined
+  var className: js.UndefOr[String] = js.native
+  var classes: js.UndefOr[Partial[ClassNameMap[scala.Nothing]]] = js.native
+  var implementation: js.UndefOr[js_ | css] = js.native
+  var initialWidth: js.UndefOr[Breakpoint] = js.native
+  var innerRef: js.UndefOr[Ref[_] | RefObject[_]] = js.native
+  var lgDown: js.UndefOr[Boolean] = js.native
+  var lgUp: js.UndefOr[Boolean] = js.native
+  var mdDown: js.UndefOr[Boolean] = js.native
+  var mdUp: js.UndefOr[Boolean] = js.native
+  var only: js.UndefOr[Breakpoint | js.Array[Breakpoint]] = js.native
+  var smDown: js.UndefOr[Boolean] = js.native
+  var smUp: js.UndefOr[Boolean] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
+  var xlDown: js.UndefOr[Boolean] = js.native
+  var xlUp: js.UndefOr[Boolean] = js.native
+  var xsDown: js.UndefOr[Boolean] = js.native
+  var xsUp: js.UndefOr[Boolean] = js.native
 }
 
 object HiddenProps {

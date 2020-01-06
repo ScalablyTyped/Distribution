@@ -11,8 +11,8 @@ Seedable random number generator supporting many common distributions.
 | Full name          | random |
 | Keywords           | random, number, generator, rng, prng, stats, d3-random, seedrandom, distribution, pseudorandom, uniform, normal, gaussian, lognormal, poisson, exponential, irwinhall, bates |
 | # releases         | 17 |
-| # dependents       | 21 |
-| # downloads        | 37025 |
+| # dependents       | 38 |
+| # downloads        | 147926 |
 | # stars            | 0 |
 
 ## Links

@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SnapshotCreateVolumePermissionState extends js.Object {
   /**
     * An AWS Account ID to add create volume permissions
     */
-  val accountId: js.UndefOr[Input[String]] = js.undefined
+  val accountId: js.UndefOr[Input[String]] = js.native
   /**
     * A snapshot ID
     */
-  val snapshotId: js.UndefOr[Input[String]] = js.undefined
+  val snapshotId: js.UndefOr[Input[String]] = js.native
 }
 
 object SnapshotCreateVolumePermissionState {

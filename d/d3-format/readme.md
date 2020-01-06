@@ -10,9 +10,9 @@ Format numbers for human consumption.
 | ------------------ | :-------------: |
 | Full name          | d3-format |
 | Keywords           | d3, d3-module, format, localization |
-| # releases         | 6 |
-| # dependents       | 202 |
-| # downloads        | 29728056 |
+| # releases         | 9 |
+| # dependents       | 264 |
+| # downloads        | 47891771 |
 | # stars            | 3 |
 
 ## Links

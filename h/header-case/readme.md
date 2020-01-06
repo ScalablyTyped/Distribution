@@ -4,21 +4,21 @@
 Typings are for version 1.0.1
 
 ## Library description:
-Header case a string
+Transform into a dash separated string of capitalized words
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | header-case |
-| Keywords           | header, case, upper, http |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 16686028 |
+| Keywords           | header, case, dash, hyphen, capitalize, convert, transform |
+| # releases         | 3 |
+| # dependents       | 7 |
+| # downloads        | 33452843 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/blakeembrey/header-case)
-- [Bugs](https://github.com/blakeembrey/header-case/issues)
-- [Repository](https://github.com/blakeembrey/header-case)
+- [Homepage](https://github.com/blakeembrey/change-case/tree/master/packages/header-case#readme)
+- [Bugs](https://github.com/blakeembrey/change-case/issues)
+- [Repository](https://github.com/blakeembrey/change-case)
 - [Npm](https://www.npmjs.com/package/header-case)
     
 

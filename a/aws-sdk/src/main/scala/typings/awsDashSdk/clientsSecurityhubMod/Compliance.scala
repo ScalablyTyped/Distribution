@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Compliance extends js.Object {
   /**
     * The result of a compliance check.
     */
-  var Status: js.UndefOr[ComplianceStatus] = js.undefined
+  var Status: js.UndefOr[ComplianceStatus] = js.native
 }
 
 object Compliance {

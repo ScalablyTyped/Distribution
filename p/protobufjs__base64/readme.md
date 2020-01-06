@@ -10,9 +10,9 @@ A minimal base64 implementation for number arrays.
 | ------------------ | :-------------: |
 | Full name          | @protobufjs/base64 |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 18 |
-| # downloads        | 48777639 |
+| # releases         | 0 |
+| # dependents       | 31 |
+| # downloads        | 54074848 |
 | # stars            | 0 |
 
 ## Links

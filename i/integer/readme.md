@@ -10,9 +10,9 @@ Native 64-bit integers with overflow protection.
 | ------------------ | :-------------: |
 | Full name          | integer |
 | Keywords           | integer, 64-bit, 64bit, int, overflow, native |
-| # releases         | 12 |
-| # dependents       | 7 |
-| # downloads        | 1453809 |
+| # releases         | 9 |
+| # dependents       | 8 |
+| # downloads        | 2074903 |
 | # stars            | 0 |
 
 ## Links

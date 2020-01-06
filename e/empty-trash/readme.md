@@ -10,9 +10,9 @@ Empty the trash
 | ------------------ | :-------------: |
 | Full name          | empty-trash |
 | Keywords           | trash, recycle, file, files, directory, directories, empty, clear, macos, windows, linux |
-| # releases         | 0 |
+| # releases         | 2 |
 | # dependents       | 4 |
-| # downloads        | 10423 |
+| # downloads        | 10774 |
 | # stars            | 5 |
 
 ## Links

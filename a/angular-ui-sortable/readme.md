@@ -10,9 +10,9 @@ This directive allows you to jQueryUI Sortable.
 | ------------------ | :-------------: |
 | Full name          | angular-ui-sortable |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 2 |
 | # dependents       | 15 |
-| # downloads        | 770992 |
+| # downloads        | 1088141 |
 | # stars            | 2 |
 
 ## Links

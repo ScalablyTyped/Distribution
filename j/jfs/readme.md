@@ -10,9 +10,9 @@ A simple JSON file store
 | ------------------ | :-------------: |
 | Full name          | jfs |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 38 |
-| # downloads        | 457276 |
+| # releases         | 0 |
+| # dependents       | 37 |
+| # downloads        | 425794 |
 | # stars            | 1 |
 
 ## Links

@@ -11,8 +11,8 @@ Convert time strings to milliseconds
 | Full name          | millisecond |
 | Keywords           | ms, millisecond, milisecond, mili, milli, second, parse, time, string |
 | # releases         | 1 |
-| # dependents       | 27 |
-| # downloads        | 759595 |
+| # dependents       | 31 |
+| # downloads        | 807548 |
 | # stars            | 2 |
 
 ## Links

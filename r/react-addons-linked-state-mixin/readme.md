@@ -10,9 +10,9 @@ Typings are for version 0.14
 | ------------------ | :-------------: |
 | Full name          | react-addons-linked-state-mixin |
 | Keywords           | react, react-addon |
-| # releases         | 5 |
+| # releases         | 0 |
 | # dependents       | 10 |
-| # downloads        | 523168 |
+| # downloads        | 555802 |
 | # stars            | 3 |
 
 ## Links

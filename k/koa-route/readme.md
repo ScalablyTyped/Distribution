@@ -11,8 +11,8 @@ Koa route middleware
 | Full name          | koa-route |
 | Keywords           | koa, middleware, routes, router, route |
 | # releases         | 1 |
-| # dependents       | 168 |
-| # downloads        | 891869 |
+| # dependents       | 185 |
+| # downloads        | 1302979 |
 | # stars            | 23 |
 
 ## Links

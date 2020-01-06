@@ -10,9 +10,9 @@ High Level DOM Assertions for QUnit
 | ------------------ | :-------------: |
 | Full name          | qunit-dom |
 | Keywords           | browser, dom, ember-addon, html, qunit, testing |
-| # releases         | 25 |
-| # dependents       | 0 |
-| # downloads        | 1293445 |
+| # releases         | 17 |
+| # dependents       | 1 |
+| # downloads        | 2735767 |
 | # stars            | 0 |
 
 ## Links

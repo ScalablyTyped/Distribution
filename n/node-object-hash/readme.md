@@ -12,7 +12,7 @@ Node.js object hash library with properties/arrays sorting to provide constant h
 | Keywords           | hash, object, hash-object, object-hash, es6, crypto |
 | # releases         | 6 |
 | # dependents       | 58 |
-| # downloads        | 11976468 |
+| # downloads        | 12849385 |
 | # stars            | 2 |
 
 ## Links

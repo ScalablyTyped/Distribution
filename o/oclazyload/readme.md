@@ -10,8 +10,8 @@ Load modules on demand (lazy load) with angularJS
 | Full name          | oclazyload |
 | Keywords           | lazy load, lazy-load, load on demand, module, angular, angularJS |
 | # releases         | 0 |
-| # dependents       | 18 |
-| # downloads        | 749584 |
+| # dependents       | 20 |
+| # downloads        | 1059125 |
 | # stars            | 5 |
 
 ## Links

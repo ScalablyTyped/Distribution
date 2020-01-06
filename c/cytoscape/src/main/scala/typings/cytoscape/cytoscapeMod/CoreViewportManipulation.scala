@@ -238,21 +238,21 @@ trait CoreViewportManipulation extends js.Object {
     */
   def width(): Double = js.native
   /**
-    * Get the zoom level.
-    * http://js.cytoscape.org/#cy.zoom
-    */
-  def zoom(): Double = js.native
-  def zoom(level: Double): this.type = js.native
-  def zoom(level: ZoomOptions): this.type = js.native
-  /**
     * Set the zoom level.
     * http://js.cytoscape.org/#cy.zoom
     *
     * @param level The zoom level to set.
     * @param options The options for zooming.
     */
+  def zoom(): this.type = js.native
+  def zoom(level: Double): this.type = js.native
+  def zoom(level: ZoomOptions): this.type = js.native
+  /**
+    * Get the zoom level.
+    * http://js.cytoscape.org/#cy.zoom
+    */
   @JSName("zoom")
-  def zoom_This(): this.type = js.native
+  def zoom_Double(): Double = js.native
   /**
     * Set or get whether zooming is enabled. Get if no parameter provided.
     * http://js.cytoscape.org/#cy.zoomingEnabled

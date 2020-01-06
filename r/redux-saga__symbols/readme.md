@@ -10,9 +10,9 @@ Redux-saga internal symbol "registry".
 | ------------------ | :-------------: |
 | Full name          | @redux-saga/symbols |
 | Keywords           | redux, saga, redux-saga |
-| # releases         | 7 |
-| # dependents       | 4 |
-| # downloads        | 538969 |
+| # releases         | 9 |
+| # dependents       | 5 |
+| # downloads        | 8979597 |
 | # stars            | 0 |
 
 ## Links

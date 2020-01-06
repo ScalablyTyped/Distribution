@@ -32,7 +32,7 @@ package object jasmine {
   {[ K in keyof T ]: jasmine.jasmine.ExpectedRecursive<T[K]>}
     */ typings.jasmine.jasmineStrings.Expected with T) | T
   type ExpectedRecursive[T] = T | ObjectContaining[T] | AsymmetricMatcher[js.Any] | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]: / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias jasmine.jasmine.ExpectedRecursive<T[K]> * / object | jasmine.jasmine.Any}
+  {[ K in keyof T ]: / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias jasmine.jasmine.ExpectedRecursive<T[K]> * / object | jasmine.jasmine.Any}
     */ typings.jasmine.jasmineStrings.ExpectedRecursive with js.Any)
   type Func = js.Function1[/* repeated */ js.Any, js.Any]
   type ImplementationCallback = js.Function0[js.Thenable[js.Any]] | (js.Function1[/* done */ DoneFn, Unit])

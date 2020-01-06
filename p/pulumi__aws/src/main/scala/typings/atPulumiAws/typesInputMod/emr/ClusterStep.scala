@@ -5,13 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClusterStep extends js.Object {
-  var actionOnFailure: Input[String]
-  var hadoopJarStep: Input[ClusterStepHadoopJarStep]
+  var actionOnFailure: Input[String] = js.native
+  var hadoopJarStep: Input[ClusterStepHadoopJarStep] = js.native
   /**
     * The name of the job flow
     */
-  var name: Input[String]
+  var name: Input[String] = js.native
 }
 
 object ClusterStep {

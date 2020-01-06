@@ -11,7 +11,7 @@ Simple JS object validator
 | Keywords           | javascript, validation, json, object, schema |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 315 |
+| # downloads        | 239 |
 | # stars            | 0 |
 
 ## Links

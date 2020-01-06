@@ -10,9 +10,9 @@ Elvis operator functionality for JavaScript.
 | ------------------ | :-------------: |
 | Full name          | elv |
 | Keywords           | elvis, existential, is, defined, coalesce, truthy, exists |
-| # releases         | 5 |
+| # releases         | 4 |
 | # dependents       | 18 |
-| # downloads        | 40835 |
+| # downloads        | 39253 |
 | # stars            | 0 |
 
 ## Links

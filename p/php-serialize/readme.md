@@ -12,7 +12,7 @@ PHP serialize/unserialize in Javascript
 | Keywords           | - |
 | # releases         | 8 |
 | # dependents       | 8 |
-| # downloads        | 198317 |
+| # downloads        | 213989 |
 | # stars            | 3 |
 
 ## Links

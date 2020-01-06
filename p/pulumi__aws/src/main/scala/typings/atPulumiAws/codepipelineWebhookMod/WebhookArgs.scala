@@ -8,35 +8,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WebhookArgs extends js.Object {
   /**
     * The type of authentication  to use. One of `IP`, `GITHUB_HMAC`, or `UNAUTHENTICATED`.
     */
-  val authentication: Input[String]
+  val authentication: Input[String] = js.native
   /**
     * An `auth` block. Required for `IP` and `GITHUB_HMAC`. Auth blocks are documented below.
     */
-  val authenticationConfiguration: js.UndefOr[Input[WebhookAuthenticationConfiguration]] = js.undefined
+  val authenticationConfiguration: js.UndefOr[Input[WebhookAuthenticationConfiguration]] = js.native
   /**
     * One or more `filter` blocks. Filter blocks are documented below.
     */
-  val filters: Input[js.Array[Input[WebhookFilter]]]
+  val filters: Input[js.Array[Input[WebhookFilter]]] = js.native
   /**
     * The name of the webhook.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * The name of the action in a pipeline you want to connect to the webhook. The action must be from the source (first) stage of the pipeline.
     */
-  val targetAction: Input[String]
+  val targetAction: Input[String] = js.native
   /**
     * The name of the pipeline.
     */
-  val targetPipeline: Input[String]
+  val targetPipeline: Input[String] = js.native
 }
 
 object WebhookArgs {

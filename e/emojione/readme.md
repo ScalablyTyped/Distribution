@@ -10,9 +10,9 @@ EmojiOne is a complete set of emojis designed for the web. It includes libraries
 | ------------------ | :-------------: |
 | Full name          | emojione |
 | Keywords           | emojione, EmojiOne, emoji, emojis, emoticons, smileys, smilies, unicode, emoji set |
-| # releases         | 13 |
-| # dependents       | 92 |
-| # downloads        | 641349 |
+| # releases         | 8 |
+| # dependents       | 106 |
+| # downloads        | 957916 |
 | # stars            | 11 |
 
 ## Links

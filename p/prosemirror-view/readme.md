@@ -10,9 +10,9 @@ ProseMirror's view component
 | ------------------ | :-------------: |
 | Full name          | prosemirror-view |
 | Keywords           | - |
-| # releases         | 68 |
-| # dependents       | 64 |
-| # downloads        | 816437 |
+| # releases         | 95 |
+| # dependents       | 103 |
+| # downloads        | 2557811 |
 | # stars            | 0 |
 
 ## Links

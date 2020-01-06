@@ -10,9 +10,9 @@ Third-party login plugin for hapi
 | ------------------ | :-------------: |
 | Full name          | bell |
 | Keywords           | hapi, login, authentication, oauth, plugin, auth0, arcgisonline, bitbucket, dropbox, facebook, fitbit, foursquare, github, gitlab, google, instagram, medium, linkedin, live, meetup, nest, phabricator, office365, okta, reddit, spotify, tumblr, twitter, vk, wordpress, yahoo |
-| # releases         | 12 |
-| # dependents       | 38 |
-| # downloads        | 187880 |
+| # releases         | 9 |
+| # dependents       | 34 |
+| # downloads        | 219121 |
 | # stars            | 15 |
 
 ## Links

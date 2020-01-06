@@ -10,9 +10,9 @@ Returns path to globally installed package
 | ------------------ | :-------------: |
 | Full name          | global-modules-path |
 | Keywords           | npm, global, installed, path |
-| # releases         | 6 |
-| # dependents       | 19 |
-| # downloads        | 35031149 |
+| # releases         | 5 |
+| # dependents       | 23 |
+| # downloads        | 32957366 |
 | # stars            | 0 |
 
 ## Links

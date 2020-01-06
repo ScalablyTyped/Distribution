@@ -10,9 +10,9 @@ Run your Atom package tests using Mocha
 | ------------------ | :-------------: |
 | Full name          | atom-mocha-test-runner |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 18452 |
+| # downloads        | 9094 |
 | # stars            | 0 |
 
 ## Links

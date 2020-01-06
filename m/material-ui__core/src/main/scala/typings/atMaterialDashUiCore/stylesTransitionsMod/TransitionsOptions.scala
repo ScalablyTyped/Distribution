@@ -7,6 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TransitionsOptions extends js.Object {
   var create: js.UndefOr[
     js.Function2[
@@ -14,10 +15,10 @@ trait TransitionsOptions extends js.Object {
       /* options */ js.UndefOr[Partialdurationnumberstringeasingstringdelaynumber], 
       String
     ]
-  ] = js.undefined
-  var duration: js.UndefOr[PartialDuration] = js.undefined
-  var easing: js.UndefOr[PartialEasing] = js.undefined
-  var getAutoHeightDuration: js.UndefOr[js.Function1[/* height */ Double, Double]] = js.undefined
+  ] = js.native
+  var duration: js.UndefOr[PartialDuration] = js.native
+  var easing: js.UndefOr[PartialEasing] = js.native
+  var getAutoHeightDuration: js.UndefOr[js.Function1[/* height */ Double, Double]] = js.native
 }
 
 object TransitionsOptions {

@@ -10,9 +10,9 @@ A Promise-based API for setTimeout / clearTimeout
 | ------------------ | :-------------: |
 | Full name          | await-timeout |
 | Keywords           | timeout, promise, promise-api, promises, settimeout, cleartimeout |
-| # releases         | 10 |
-| # dependents       | 3 |
-| # downloads        | 75600 |
+| # releases         | 7 |
+| # dependents       | 10 |
+| # downloads        | 196102 |
 | # stars            | 0 |
 
 ## Links

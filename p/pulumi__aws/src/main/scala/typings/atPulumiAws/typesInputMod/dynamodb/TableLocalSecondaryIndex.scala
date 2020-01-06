@@ -5,17 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TableLocalSecondaryIndex extends js.Object {
   /**
     * The name of the index
     */
-  var name: Input[String]
+  var name: Input[String] = js.native
   /**
     * Only required with `INCLUDE` as a
     * projection type; a list of attributes to project into the index. These
     * do not need to be defined as attributes on the table.
     */
-  var nonKeyAttributes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  var nonKeyAttributes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * One of `ALL`, `INCLUDE` or `KEYS_ONLY`
     * where `ALL` projects every attribute into the index, `KEYS_ONLY`
@@ -23,11 +24,11 @@ trait TableLocalSecondaryIndex extends js.Object {
     * projects only the keys specified in the _non_key_attributes_
     * parameter.
     */
-  var projectionType: Input[String]
+  var projectionType: Input[String] = js.native
   /**
     * The name of the range key; must be defined
     */
-  var rangeKey: Input[String]
+  var rangeKey: Input[String] = js.native
 }
 
 object TableLocalSecondaryIndex {

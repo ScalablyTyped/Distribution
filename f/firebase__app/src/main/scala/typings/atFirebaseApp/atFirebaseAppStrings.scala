@@ -10,7 +10,7 @@ object atFirebaseAppStrings {
   sealed trait ErrorParams extends js.Object
   
   @js.native
-  sealed trait LeftsquarebracketDEFAULTRightsquarebracket extends js.Object
+  sealed trait `[DEFAULT]` extends js.Object
   
   @js.native
   sealed trait `app-deleted` extends AppError
@@ -69,7 +69,7 @@ object atFirebaseAppStrings {
   @scala.inline
   def ErrorParams: ErrorParams = "ErrorParams".asInstanceOf[ErrorParams]
   @scala.inline
-  def LeftsquarebracketDEFAULTRightsquarebracket: LeftsquarebracketDEFAULTRightsquarebracket = "[DEFAULT]".asInstanceOf[LeftsquarebracketDEFAULTRightsquarebracket]
+  def `[DEFAULT]`: `[DEFAULT]` = "[DEFAULT]".asInstanceOf[`[DEFAULT]`]
   @scala.inline
   def `app-deleted`: `app-deleted` = "app-deleted".asInstanceOf[`app-deleted`]
   @scala.inline

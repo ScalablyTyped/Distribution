@@ -10,9 +10,9 @@ Provides the middleware serializer for the AWS SDK
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/middleware-serializer |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 16 |
-| # downloads        | 6694 |
+| # releases         | 9 |
+| # dependents       | 368 |
+| # downloads        | 30823 |
 | # stars            | 0 |
 
 ## Links

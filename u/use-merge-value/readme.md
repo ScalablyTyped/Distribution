@@ -10,9 +10,9 @@ Easier to write a controlled component
 | ------------------ | :-------------: |
 | Full name          | use-merge-value |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 0 |
+| # releases         | 5 |
+| # dependents       | 5 |
+| # downloads        | 12397 |
 | # stars            | 0 |
 
 ## Links

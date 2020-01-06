@@ -21,11 +21,11 @@ trait Auth[T] extends js.Object {
   def getToken(strategyName: String): String = js.native
   def hasScope(scopeName: String): Boolean = js.native
   def login(
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
   ): js.Promise[scala.Nothing] = js.native
   def loginWith(
     strategyName: String,
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
   ): js.Promise[scala.Nothing] = js.native
   def logout(): js.Promise[scala.Nothing] = js.native
   def onError(handler: js.Function3[/* error */ Error, /* name */ String, /* endpoint */ js.Any, Unit]): js.Any = js.native

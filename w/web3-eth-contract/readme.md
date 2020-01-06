@@ -10,9 +10,9 @@ Web3 module to interact with Ethereum smart contracts.
 | ------------------ | :-------------: |
 | Full name          | web3-eth-contract |
 | Keywords           | - |
-| # releases         | 36 |
-| # dependents       | 31 |
-| # downloads        | 3751742 |
+| # releases         | 37 |
+| # dependents       | 39 |
+| # downloads        | 4181633 |
 | # stars            | 0 |
 
 ## Links

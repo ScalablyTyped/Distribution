@@ -10,9 +10,9 @@ Watch globs and execute a function upon change, with intelligent defaults for de
 | ------------------ | :-------------: |
 | Full name          | glob-watcher |
 | Keywords           | watch, glob, async, queue, debounce, callback |
-| # releases         | 7 |
-| # dependents       | 84 |
-| # downloads        | 52637351 |
+| # releases         | 4 |
+| # dependents       | 96 |
+| # downloads        | 64266755 |
 | # stars            | 3 |
 
 ## Links

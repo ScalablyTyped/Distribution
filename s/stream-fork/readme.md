@@ -12,7 +12,7 @@ Fork a writable stream into several parallel writable streams.
 | Keywords           | stream, chain |
 | # releases         | 5 |
 | # dependents       | 0 |
-| # downloads        | 1947 |
+| # downloads        | 3242 |
 | # stars            | 0 |
 
 ## Links

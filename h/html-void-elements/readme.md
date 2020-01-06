@@ -12,7 +12,7 @@ List of known void HTML elements
 | Keywords           | html, void, tag, name, element, tagname, w3c, whatwg |
 | # releases         | 3 |
 | # dependents       | 11 |
-| # downloads        | 4753800 |
+| # downloads        | 10345578 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ RSocket types
 | ------------------ | :-------------: |
 | Full name          | rsocket-types |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 11 |
-| # downloads        | 7671 |
+| # releases         | 15 |
+| # dependents       | 13 |
+| # downloads        | 120616 |
 | # stars            | 0 |
 
 ## Links

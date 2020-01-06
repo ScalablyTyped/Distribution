@@ -5,26 +5,27 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PolicyStepAdjustment extends js.Object {
   /**
     * The lower bound for the
     * difference between the alarm threshold and the CloudWatch metric.
     * Without a value, AWS will treat this bound as infinity.
     */
-  var metricIntervalLowerBound: js.UndefOr[Input[String]] = js.undefined
+  var metricIntervalLowerBound: js.UndefOr[Input[String]] = js.native
   /**
     * The upper bound for the
     * difference between the alarm threshold and the CloudWatch metric.
     * Without a value, AWS will treat this bound as infinity. The upper bound
     * must be greater than the lower bound.
     */
-  var metricIntervalUpperBound: js.UndefOr[Input[String]] = js.undefined
+  var metricIntervalUpperBound: js.UndefOr[Input[String]] = js.native
   /**
     * The number of members by which to
     * scale, when the adjustment bounds are breached. A positive value scales
     * up. A negative value scales down.
     */
-  var scalingAdjustment: Input[Double]
+  var scalingAdjustment: Input[Double] = js.native
 }
 
 object PolicyStepAdjustment {

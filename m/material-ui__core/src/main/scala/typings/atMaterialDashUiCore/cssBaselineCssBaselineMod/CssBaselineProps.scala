@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CssBaselineProps extends js.Object {
-  var children: js.UndefOr[ReactElement] = js.undefined
+  var children: js.UndefOr[ReactElement] = js.native
 }
 
 object CssBaselineProps {

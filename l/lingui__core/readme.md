@@ -10,9 +10,9 @@ I18n tools for javascript
 | ------------------ | :-------------: |
 | Full name          | @lingui/core |
 | Keywords           | i18n, i10n, i9n, internationalization, localization, translation |
-| # releases         | 41 |
-| # dependents       | 3 |
-| # downloads        | 630097 |
+| # releases         | 47 |
+| # dependents       | 5 |
+| # downloads        | 1150588 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ A stream implementation of the bunyan cli tool's pretty printing capabilities
 | ------------------ | :-------------: |
 | Full name          | bunyan-prettystream |
 | Keywords           | log, logging, console, bunyan, development, stream |
-| # releases         | 1 |
-| # dependents       | 79 |
-| # downloads        | 1682075 |
+| # releases         | 0 |
+| # dependents       | 91 |
+| # downloads        | 2730427 |
 | # stars            | 5 |
 
 ## Links

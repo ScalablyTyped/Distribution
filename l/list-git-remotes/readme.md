@@ -12,7 +12,7 @@ List the remotes for a local git repository. Sync and async.
 | Keywords           | git, list, remotes |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 327 |
+| # downloads        | 10145 |
 | # stars            | 0 |
 
 ## Links

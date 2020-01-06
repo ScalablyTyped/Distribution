@@ -8,37 +8,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DefaultNetworkAclState extends js.Object {
   /**
     * The Network ACL ID to manage. This
     * attribute is exported from `aws.ec2.Vpc`, or manually found via the AWS Console.
     */
-  val defaultNetworkAclId: js.UndefOr[Input[String]] = js.undefined
+  val defaultNetworkAclId: js.UndefOr[Input[String]] = js.native
   /**
     * Specifies an egress rule. Parameters defined below.
     */
-  val egress: js.UndefOr[Input[js.Array[Input[DefaultNetworkAclEgress]]]] = js.undefined
+  val egress: js.UndefOr[Input[js.Array[Input[DefaultNetworkAclEgress]]]] = js.native
   /**
     * Specifies an ingress rule. Parameters defined below.
     */
-  val ingress: js.UndefOr[Input[js.Array[Input[DefaultNetworkAclIngress]]]] = js.undefined
+  val ingress: js.UndefOr[Input[js.Array[Input[DefaultNetworkAclIngress]]]] = js.native
   /**
     * The ID of the AWS account that owns the Default Network ACL
     */
-  val ownerId: js.UndefOr[Input[String]] = js.undefined
+  val ownerId: js.UndefOr[Input[String]] = js.native
   /**
     * A list of Subnet IDs to apply the ACL to. See the
     * notes below on managing Subnets in the Default Network ACL
     */
-  val subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * The ID of the associated VPC
     */
-  val vpcId: js.UndefOr[Input[String]] = js.undefined
+  val vpcId: js.UndefOr[Input[String]] = js.native
 }
 
 object DefaultNetworkAclState {

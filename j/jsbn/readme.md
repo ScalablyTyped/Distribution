@@ -10,9 +10,9 @@ The jsbn library is a fast, portable implementation of large-number math in pure
 | ------------------ | :-------------: |
 | Full name          | jsbn |
 | Keywords           | biginteger, bignumber, big, integer |
-| # releases         | 1 |
-| # dependents       | 136 |
-| # downloads        | 360567116 |
+| # releases         | 0 |
+| # dependents       | 166 |
+| # downloads        | 515169605 |
 | # stars            | 9 |
 
 ## Links

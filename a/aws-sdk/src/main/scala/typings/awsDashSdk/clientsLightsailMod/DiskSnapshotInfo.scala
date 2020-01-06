@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DiskSnapshotInfo extends js.Object {
   /**
     * The size of the disk in GB (e.g., 32).
     */
-  var sizeInGb: js.UndefOr[integer] = js.undefined
+  var sizeInGb: js.UndefOr[integer] = js.native
 }
 
 object DiskSnapshotInfo {

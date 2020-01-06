@@ -145,7 +145,7 @@ package object clientsDiscoveryMod {
   type ToDeleteIdentifierList = js.Array[ImportTaskIdentifier]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2015-11-01`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | java.lang.String

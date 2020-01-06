@@ -10,9 +10,9 @@ Typings are for version 1.0
 | ------------------ | :-------------: |
 | Full name          | backbone.localstorage |
 | Keywords           | backbone, localstorage, local, storage, cache, sync |
-| # releases         | 4 |
+| # releases         | 1 |
 | # dependents       | 5 |
-| # downloads        | 134901 |
+| # downloads        | 162314 |
 | # stars            | 5 |
 
 ## Links

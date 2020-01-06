@@ -10,9 +10,9 @@ It's react's useEffect hook, except using deep comparison on the inputs, not ref
 | ------------------ | :-------------: |
 | Full name          | use-deep-compare-effect |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 9 |
-| # downloads        | 57546 |
+| # releases         | 7 |
+| # dependents       | 17 |
+| # downloads        | 219174 |
 | # stars            | 0 |
 
 ## Links

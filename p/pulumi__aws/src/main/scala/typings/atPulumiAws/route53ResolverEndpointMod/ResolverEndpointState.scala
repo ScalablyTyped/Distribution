@@ -7,38 +7,39 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ResolverEndpointState extends js.Object {
   /**
     * The ARN of the Route 53 Resolver endpoint.
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * The direction of DNS queries to or from the Route 53 Resolver endpoint.
     * Valid values are `INBOUND` (resolver forwards DNS queries to the DNS service for a VPC from your network or another VPC)
     * or `OUTBOUND` (resolver forwards DNS queries from the DNS service for a VPC to your network or another VPC).
     */
-  val direction: js.UndefOr[Input[String]] = js.undefined
+  val direction: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of the VPC that you want to create the resolver endpoint in.
     */
-  val hostVpcId: js.UndefOr[Input[String]] = js.undefined
+  val hostVpcId: js.UndefOr[Input[String]] = js.native
   /**
     * The subnets and IP addresses in your VPC that you want DNS queries to pass through on the way from your VPCs
     * to your network (for outbound endpoints) or on the way from your network to your VPCs (for inbound endpoints). Described below.
     */
-  val ipAddresses: js.UndefOr[Input[js.Array[Input[ResolverEndpointIpAddress]]]] = js.undefined
+  val ipAddresses: js.UndefOr[Input[js.Array[Input[ResolverEndpointIpAddress]]]] = js.native
   /**
     * The friendly name of the Route 53 Resolver endpoint.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of one or more security groups that you want to use to control access to this VPC.
     */
-  val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object ResolverEndpointState {

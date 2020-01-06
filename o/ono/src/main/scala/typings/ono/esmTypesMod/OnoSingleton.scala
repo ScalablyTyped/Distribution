@@ -17,8 +17,6 @@ trait OnoSingleton extends Ono[Error] {
   var error_Original: Ono[Error] = js.native
   @JSName("eval")
   var eval_Original: Ono[EvalError] = js.native
-  @JSName("formatter")
-  var formatter_Original: MessageFormatter = js.native
   @JSName("range")
   var range_Original: Ono[RangeError] = js.native
   @JSName("reference")
@@ -143,7 +141,6 @@ trait OnoSingleton extends Ono[Error] {
     * @param params - Optional arguments to replace the corresponding placeholders in the message
     */
   def eval[P /* <: js.Object */](props: P, message: String, params: js.Any*): EvalError with P with (OnoError[EvalError with P]) = js.native
-  def formatter(message: String, args: js.Any*): String = js.native
   def range(error: ErrorPOJO): RangeError with ErrorPOJO with (OnoError[RangeError with ErrorPOJO]) = js.native
   def range(error: ErrorPOJO, message: String, params: js.Any*): RangeError with ErrorPOJO with (OnoError[RangeError with ErrorPOJO]) = js.native
   /**

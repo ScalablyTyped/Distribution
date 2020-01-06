@@ -10,9 +10,9 @@ Break free from CSS prefix hell!
 | ------------------ | :-------------: |
 | Full name          | prefixfree |
 | Keywords           | CSS, prefixes |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 38326 |
+| # downloads        | 70126 |
 | # stars            | 2 |
 
 ## Links

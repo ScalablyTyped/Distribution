@@ -10,9 +10,9 @@ Topological sorting with grouping support
 | ------------------ | :-------------: |
 | Full name          | @hapi/topo |
 | Keywords           | topological, sort, toposort, topsort |
-| # releases         | 3 |
-| # dependents       | 4 |
-| # downloads        | 14494 |
+| # releases         | 9 |
+| # dependents       | 9 |
+| # downloads        | 53357273 |
 | # stars            | 0 |
 
 ## Links

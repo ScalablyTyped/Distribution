@@ -4,31 +4,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CreateRouteResponseRequest extends js.Object {
   /**
     * The API identifier.
     */
-  var ApiId: __string
+  var ApiId: __string = js.native
   /**
-    * The model selection expression for the route response.
+    * The model selection expression for the route response. Supported only for WebSocket APIs.
     */
-  var ModelSelectionExpression: js.UndefOr[SelectionExpression] = js.undefined
+  var ModelSelectionExpression: js.UndefOr[SelectionExpression] = js.native
   /**
     * The response models for the route response.
     */
-  var ResponseModels: js.UndefOr[RouteModels] = js.undefined
+  var ResponseModels: js.UndefOr[RouteModels] = js.native
   /**
     * The route response parameters.
     */
-  var ResponseParameters: js.UndefOr[RouteParameters] = js.undefined
+  var ResponseParameters: js.UndefOr[RouteParameters] = js.native
   /**
     * The route ID.
     */
-  var RouteId: __string
+  var RouteId: __string = js.native
   /**
     * The route response key.
     */
-  var RouteResponseKey: SelectionKey
+  var RouteResponseKey: SelectionKey = js.native
 }
 
 object CreateRouteResponseRequest {
@@ -41,10 +42,10 @@ object CreateRouteResponseRequest {
     ResponseModels: RouteModels = null,
     ResponseParameters: RouteParameters = null
   ): CreateRouteResponseRequest = {
-    val __obj = js.Dynamic.literal(ApiId = ApiId, RouteId = RouteId, RouteResponseKey = RouteResponseKey)
-    if (ModelSelectionExpression != null) __obj.updateDynamic("ModelSelectionExpression")(ModelSelectionExpression)
-    if (ResponseModels != null) __obj.updateDynamic("ResponseModels")(ResponseModels)
-    if (ResponseParameters != null) __obj.updateDynamic("ResponseParameters")(ResponseParameters)
+    val __obj = js.Dynamic.literal(ApiId = ApiId.asInstanceOf[js.Any], RouteId = RouteId.asInstanceOf[js.Any], RouteResponseKey = RouteResponseKey.asInstanceOf[js.Any])
+    if (ModelSelectionExpression != null) __obj.updateDynamic("ModelSelectionExpression")(ModelSelectionExpression.asInstanceOf[js.Any])
+    if (ResponseModels != null) __obj.updateDynamic("ResponseModels")(ResponseModels.asInstanceOf[js.Any])
+    if (ResponseParameters != null) __obj.updateDynamic("ResponseParameters")(ResponseParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateRouteResponseRequest]
   }
 }

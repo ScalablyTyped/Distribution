@@ -6,79 +6,80 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VpcState extends js.Object {
   /**
     * Amazon Resource Name (ARN) of VPC
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * Requests an Amazon-provided IPv6 CIDR
     * block with a /56 prefix length for the VPC. You cannot specify the range of IP addresses, or
     * the size of the CIDR block. Default is `false`.
     */
-  val assignGeneratedIpv6CidrBlock: js.UndefOr[Input[Boolean]] = js.undefined
+  val assignGeneratedIpv6CidrBlock: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The CIDR block for the VPC.
     */
-  val cidrBlock: js.UndefOr[Input[String]] = js.undefined
+  val cidrBlock: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of the network ACL created by default on VPC creation
     */
-  val defaultNetworkAclId: js.UndefOr[Input[String]] = js.undefined
+  val defaultNetworkAclId: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of the route table created by default on VPC creation
     */
-  val defaultRouteTableId: js.UndefOr[Input[String]] = js.undefined
+  val defaultRouteTableId: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of the security group created by default on VPC creation
     */
-  val defaultSecurityGroupId: js.UndefOr[Input[String]] = js.undefined
-  val dhcpOptionsId: js.UndefOr[Input[String]] = js.undefined
+  val defaultSecurityGroupId: js.UndefOr[Input[String]] = js.native
+  val dhcpOptionsId: js.UndefOr[Input[String]] = js.native
   /**
     * A boolean flag to enable/disable ClassicLink
     * for the VPC. Only valid in regions and accounts that support EC2 Classic.
     * See the [ClassicLink documentation][1] for more information. Defaults false.
     */
-  val enableClassiclink: js.UndefOr[Input[Boolean]] = js.undefined
+  val enableClassiclink: js.UndefOr[Input[Boolean]] = js.native
   /**
     * A boolean flag to enable/disable ClassicLink DNS Support for the VPC.
     * Only valid in regions and accounts that support EC2 Classic.
     */
-  val enableClassiclinkDnsSupport: js.UndefOr[Input[Boolean]] = js.undefined
+  val enableClassiclinkDnsSupport: js.UndefOr[Input[Boolean]] = js.native
   /**
     * A boolean flag to enable/disable DNS hostnames in the VPC. Defaults false.
     */
-  val enableDnsHostnames: js.UndefOr[Input[Boolean]] = js.undefined
+  val enableDnsHostnames: js.UndefOr[Input[Boolean]] = js.native
   /**
     * A boolean flag to enable/disable DNS support in the VPC. Defaults true.
     */
-  val enableDnsSupport: js.UndefOr[Input[Boolean]] = js.undefined
+  val enableDnsSupport: js.UndefOr[Input[Boolean]] = js.native
   /**
     * A tenancy option for instances launched into the VPC
     */
-  val instanceTenancy: js.UndefOr[Input[String]] = js.undefined
+  val instanceTenancy: js.UndefOr[Input[String]] = js.native
   /**
     * The association ID for the IPv6 CIDR block.
     */
-  val ipv6AssociationId: js.UndefOr[Input[String]] = js.undefined
+  val ipv6AssociationId: js.UndefOr[Input[String]] = js.native
   /**
     * The IPv6 CIDR block.
     */
-  val ipv6CidrBlock: js.UndefOr[Input[String]] = js.undefined
+  val ipv6CidrBlock: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of the main route table associated with
     * this VPC. Note that you can change a VPC's main route table by using an
     * [`aws.ec2.MainRouteTableAssociation`](https://www.terraform.io/docs/providers/aws/r/main_route_table_assoc.html).
     */
-  val mainRouteTableId: js.UndefOr[Input[String]] = js.undefined
+  val mainRouteTableId: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of the AWS account that owns the VPC.
     */
-  val ownerId: js.UndefOr[Input[String]] = js.undefined
+  val ownerId: js.UndefOr[Input[String]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object VpcState {

@@ -10,9 +10,9 @@ This is a simple SHA-512, SHA-384, SHA-512/224, SHA-512/256 hash functions for J
 | ------------------ | :-------------: |
 | Full name          | js-sha512 |
 | Keywords           | sha, sha2, sha384, sha512, sha512/224, sha512/256, hash, encryption, cryptography, HMAC |
-| # releases         | 7 |
-| # dependents       | 39 |
-| # downloads        | 215716 |
+| # releases         | 3 |
+| # dependents       | 54 |
+| # downloads        | 408589 |
 | # stars            | 3 |
 
 ## Links

@@ -4,27 +4,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RedshiftInstanceDetails extends js.Object {
   /**
     * Whether the recommendation is for a current-generation instance.
     */
-  var CurrentGeneration: js.UndefOr[GenericBoolean] = js.undefined
+  var CurrentGeneration: js.UndefOr[GenericBoolean] = js.native
   /**
     * The instance family of the recommended reservation.
     */
-  var Family: js.UndefOr[GenericString] = js.undefined
+  var Family: js.UndefOr[GenericString] = js.native
   /**
     * The type of node that AWS recommends.
     */
-  var NodeType: js.UndefOr[GenericString] = js.undefined
+  var NodeType: js.UndefOr[GenericString] = js.native
   /**
     * The AWS Region of the recommended reservation.
     */
-  var Region: js.UndefOr[GenericString] = js.undefined
+  var Region: js.UndefOr[GenericString] = js.native
   /**
     * Whether the recommended reservation is size flexible.
     */
-  var SizeFlexEligible: js.UndefOr[GenericBoolean] = js.undefined
+  var SizeFlexEligible: js.UndefOr[GenericBoolean] = js.native
 }
 
 object RedshiftInstanceDetails {
@@ -37,11 +38,11 @@ object RedshiftInstanceDetails {
     SizeFlexEligible: js.UndefOr[Boolean] = js.undefined
   ): RedshiftInstanceDetails = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(CurrentGeneration)) __obj.updateDynamic("CurrentGeneration")(CurrentGeneration)
-    if (Family != null) __obj.updateDynamic("Family")(Family)
-    if (NodeType != null) __obj.updateDynamic("NodeType")(NodeType)
-    if (Region != null) __obj.updateDynamic("Region")(Region)
-    if (!js.isUndefined(SizeFlexEligible)) __obj.updateDynamic("SizeFlexEligible")(SizeFlexEligible)
+    if (!js.isUndefined(CurrentGeneration)) __obj.updateDynamic("CurrentGeneration")(CurrentGeneration.asInstanceOf[js.Any])
+    if (Family != null) __obj.updateDynamic("Family")(Family.asInstanceOf[js.Any])
+    if (NodeType != null) __obj.updateDynamic("NodeType")(NodeType.asInstanceOf[js.Any])
+    if (Region != null) __obj.updateDynamic("Region")(Region.asInstanceOf[js.Any])
+    if (!js.isUndefined(SizeFlexEligible)) __obj.updateDynamic("SizeFlexEligible")(SizeFlexEligible.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedshiftInstanceDetails]
   }
 }

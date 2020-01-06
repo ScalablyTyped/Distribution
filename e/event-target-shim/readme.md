@@ -10,9 +10,9 @@ An implementation of WHATWG EventTarget interface.
 | ------------------ | :-------------: |
 | Full name          | event-target-shim |
 | Keywords           | w3c, whatwg, eventtarget, event, events, shim |
-| # releases         | 11 |
-| # dependents       | 106 |
-| # downloads        | 11913797 |
+| # releases         | 10 |
+| # dependents       | 141 |
+| # downloads        | 59811066 |
 | # stars            | 1 |
 
 ## Links

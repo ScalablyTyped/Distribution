@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BucketLogging extends js.Object {
   /**
     * The name of the bucket that will receive the log objects.
     */
-  var targetBucket: Input[String]
+  var targetBucket: Input[String] = js.native
   /**
     * To specify a key prefix for log objects.
     */
-  var targetPrefix: js.UndefOr[Input[String]] = js.undefined
+  var targetPrefix: js.UndefOr[Input[String]] = js.native
 }
 
 object BucketLogging {

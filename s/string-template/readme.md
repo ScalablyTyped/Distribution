@@ -11,8 +11,8 @@ A simple string template function based on named or indexed arguments
 | Full name          | string-template |
 | Keywords           | template, string, format, replace, arguments |
 | # releases         | 1 |
-| # dependents       | 248 |
-| # downloads        | 46710100 |
+| # dependents       | 284 |
+| # downloads        | 49273712 |
 | # stars            | 23 |
 
 ## Links

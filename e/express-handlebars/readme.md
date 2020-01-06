@@ -10,9 +10,9 @@ A Handlebars view engine for Express which doesn't suck.
 | ------------------ | :-------------: |
 | Full name          | express-handlebars |
 | Keywords           | express, express3, handlebars, view, layout, partials, templates |
-| # releases         | 3 |
-| # dependents       | 261 |
-| # downloads        | 3894741 |
+| # releases         | 4 |
+| # dependents       | 315 |
+| # downloads        | 4654137 |
 | # stars            | 83 |
 
 ## Links

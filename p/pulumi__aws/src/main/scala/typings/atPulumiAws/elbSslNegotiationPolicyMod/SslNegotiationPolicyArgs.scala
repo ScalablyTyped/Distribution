@@ -6,26 +6,27 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SslNegotiationPolicyArgs extends js.Object {
   /**
     * An SSL Negotiation policy attribute. Each has two properties:
     */
-  val attributes: js.UndefOr[Input[js.Array[Input[SslNegotiationPolicyAttribute]]]] = js.undefined
+  val attributes: js.UndefOr[Input[js.Array[Input[SslNegotiationPolicyAttribute]]]] = js.native
   /**
     * The load balancer port to which the policy
     * should be applied. This must be an active listener on the load
     * balancer.
     */
-  val lbPort: Input[Double]
+  val lbPort: Input[Double] = js.native
   /**
     * The load balancer to which the policy
     * should be attached.
     */
-  val loadBalancer: Input[String]
+  val loadBalancer: Input[String] = js.native
   /**
     * The name of the attribute
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
 }
 
 object SslNegotiationPolicyArgs {

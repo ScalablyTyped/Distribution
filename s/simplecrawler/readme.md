@@ -10,9 +10,9 @@ Very straightforward, event driven web crawler. Features a flexible queue interf
 | ------------------ | :-------------: |
 | Full name          | simplecrawler |
 | Keywords           | simple, crawler, spider, cache, queue, simplecrawler, eventemitter |
-| # releases         | 5 |
-| # dependents       | 48 |
-| # downloads        | 499397 |
+| # releases         | 3 |
+| # dependents       | 51 |
+| # downloads        | 739561 |
 | # stars            | 23 |
 
 ## Links

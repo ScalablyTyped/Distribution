@@ -2,7 +2,7 @@ package typings.baseui.selectMod
 
 import typings.baseui.Anon_LabelKey
 import typings.baseui.Anon_Option
-import typings.baseui.Anon_Option_666053661
+import typings.baseui.Anon_Option_1721897024
 import typings.baseui.baseuiStrings.compact
 import typings.baseui.baseuiStrings.default_
 import typings.baseui.baseuiStrings.large_
@@ -44,7 +44,7 @@ trait SelectProps extends js.Object {
   ] = js.undefined
   var filterOutSelected: js.UndefOr[Boolean] = js.undefined
   var getOptionLabel: js.UndefOr[js.Function1[/* args */ Anon_Option, ReactNode]] = js.undefined
-  var getValueLabel: js.UndefOr[js.Function1[/* args */ Anon_Option_666053661, ReactNode]] = js.undefined
+  var getValueLabel: js.UndefOr[js.Function1[/* args */ Anon_Option_1721897024, ReactNode]] = js.undefined
   var id: js.UndefOr[String] = js.undefined
   var isLoading: js.UndefOr[Boolean] = js.undefined
   var labelKey: js.UndefOr[String] = js.undefined
@@ -93,7 +93,7 @@ object SelectProps {
     filterOptions: (/* options */ Value, /* filterValue */ String, /* excludeOptions */ js.UndefOr[Value], /* newProps */ js.UndefOr[Anon_LabelKey]) => Value = null,
     filterOutSelected: js.UndefOr[Boolean] = js.undefined,
     getOptionLabel: /* args */ Anon_Option => ReactNode = null,
-    getValueLabel: /* args */ Anon_Option_666053661 => ReactNode = null,
+    getValueLabel: /* args */ Anon_Option_1721897024 => ReactNode = null,
     id: String = null,
     isLoading: js.UndefOr[Boolean] = js.undefined,
     labelKey: String = null,

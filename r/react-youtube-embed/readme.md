@@ -10,9 +10,9 @@ A responsive YouTube embed component for React.
 | ------------------ | :-------------: |
 | Full name          | react-youtube-embed |
 | Keywords           | react, youtube, embed, responsive |
-| # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 3791 |
+| # releases         | 5 |
+| # dependents       | 1 |
+| # downloads        | 7443 |
 | # stars            | 0 |
 
 ## Links

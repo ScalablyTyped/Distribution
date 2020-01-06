@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PatchBaselineApprovalRulePatchFilter extends js.Object {
-  var key: Input[String]
-  var values: Input[js.Array[Input[String]]]
+  var key: Input[String] = js.native
+  var values: Input[js.Array[Input[String]]] = js.native
 }
 
 object PatchBaselineApprovalRulePatchFilter {

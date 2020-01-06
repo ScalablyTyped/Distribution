@@ -4,10 +4,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GenerateClassNameOptions extends js.Object {
-  var dangerouslyUseGlobalCSS: js.UndefOr[Boolean] = js.undefined
-  var productionPrefix: js.UndefOr[String] = js.undefined
-  var seed: js.UndefOr[String] = js.undefined
+  var dangerouslyUseGlobalCSS: js.UndefOr[Boolean] = js.native
+  var productionPrefix: js.UndefOr[String] = js.native
+  var seed: js.UndefOr[String] = js.native
 }
 
 object GenerateClassNameOptions {

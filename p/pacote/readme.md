@@ -10,9 +10,9 @@ JavaScript package downloader
 | ------------------ | :-------------: |
 | Full name          | pacote |
 | Keywords           | packages, npm, git |
-| # releases         | 46 |
-| # dependents       | 96 |
-| # downloads        | 46355063 |
+| # releases         | 56 |
+| # dependents       | 118 |
+| # downloads        | 63853944 |
 | # stars            | 6 |
 
 ## Links

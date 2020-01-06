@@ -32,10 +32,10 @@ class AsyncPipe protected ()
   override def ngOnDestroy(): Unit = js.native
   /* CompleteClass */
   override def transform(value: js.Any, args: js.Any*): js.Any = js.native
-  def transform[T](): js.UndefOr[scala.Nothing] = js.native
+  def transform[T](): Null = js.native
   def transform[T](obj: js.Promise[T]): T | Null = js.native
   def transform[T](obj: Observable[T]): T | Null = js.native
   @JSName("transform")
-  def transform_T_Null[T](): Null = js.native
+  def transform_T_Union[T](): js.UndefOr[scala.Nothing] = js.native
 }
 

@@ -10,9 +10,9 @@ Mark methods as deprecated and warn the user when they're called
 | ------------------ | :-------------: |
 | Full name          | deprecate |
 | Keywords           | deprecate |
-| # releases         | 2 |
-| # dependents       | 81 |
-| # downloads        | 9796464 |
+| # releases         | 3 |
+| # dependents       | 86 |
+| # downloads        | 16354808 |
 | # stars            | 0 |
 
 ## Links

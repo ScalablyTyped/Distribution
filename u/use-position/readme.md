@@ -12,7 +12,7 @@ React hook for fetching and following browser location
 | Keywords           | react, hook, location, position, navigation, geolocation, position |
 | # releases         | 6 |
 | # dependents       | 0 |
-| # downloads        | 2330 |
+| # downloads        | 4385 |
 | # stars            | 0 |
 
 ## Links

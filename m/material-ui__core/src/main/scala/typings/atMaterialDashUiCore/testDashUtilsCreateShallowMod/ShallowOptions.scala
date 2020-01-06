@@ -6,10 +6,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ShallowOptions extends js.Object {
-  var dive: Boolean
-  var shallow: Fn_NodeOptionsProps
-  var untilSelector: EnzymeSelector
+  var dive: Boolean = js.native
+  var shallow: Fn_NodeOptionsProps = js.native
+  var untilSelector: EnzymeSelector = js.native
 }
 
 object ShallowOptions {

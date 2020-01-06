@@ -10,9 +10,9 @@ A simplified localStorage API that just works
 | ------------------ | :-------------: |
 | Full name          | local-storage |
 | Keywords           | localstorage, local-storage, persistance |
-| # releases         | 0 |
-| # dependents       | 32 |
-| # downloads        | 429642 |
+| # releases         | 2 |
+| # dependents       | 41 |
+| # downloads        | 966452 |
 | # stars            | 3 |
 
 ## Links

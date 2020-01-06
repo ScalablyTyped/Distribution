@@ -10,9 +10,9 @@ HTML-to-Markdown converter
 | ------------------ | :-------------: |
 | Full name          | to-markdown |
 | Keywords           | markdown |
-| # releases         | 3 |
-| # dependents       | 105 |
-| # downloads        | 1013075 |
+| # releases         | 1 |
+| # dependents       | 110 |
+| # downloads        | 997552 |
 | # stars            | 11 |
 
 ## Links

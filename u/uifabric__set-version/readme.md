@@ -4,15 +4,15 @@
 Typings are for version 7.0.2
 
 ## Library description:
-Non-Fabric specific package version setter
+Non-Fabric-specific package version setter
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @uifabric/set-version |
 | Keywords           | - |
-| # releases         | 19 |
-| # dependents       | 23 |
-| # downloads        | 282064 |
+| # releases         | 38 |
+| # dependents       | 25 |
+| # downloads        | 1225116 |
 | # stars            | 0 |
 
 ## Links

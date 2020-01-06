@@ -10,9 +10,9 @@ Like which(1) unix command. Find the first instance of an executable in the PATH
 | ------------------ | :-------------: |
 | Full name          | which |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 1222 |
-| # downloads        | 410319521 |
+| # releases         | 5 |
+| # dependents       | 1403 |
+| # downloads        | 559453046 |
 | # stars            | 16 |
 
 ## Links

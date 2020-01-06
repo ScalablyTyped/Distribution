@@ -10,9 +10,9 @@ Validation rule for GraphQL query complexity analysis
 | ------------------ | :-------------: |
 | Full name          | graphql-query-complexity |
 | Keywords           | graphql, query, validation, cost, complexity, analysis |
-| # releases         | 9 |
-| # dependents       | 5 |
-| # downloads        | 151345 |
+| # releases         | 8 |
+| # dependents       | 8 |
+| # downloads        | 1386054 |
 | # stars            | 0 |
 
 ## Links

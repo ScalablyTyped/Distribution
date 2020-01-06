@@ -9,10 +9,10 @@ Cypress.io end to end testing tool
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | cypress |
-| Keywords           | browser, cypress, cypress.io, automation, end-to-end, e2e, integration, mocks, test, testing, runner, spies, stubs |
-| # releases         | 59 |
-| # dependents       | 25 |
-| # downloads        | 8609105 |
+| Keywords           | automation, browser, cypress, cypress.io, e2e, end-to-end, integration, mocks, runner, spies, stubs, test, testing |
+| # releases         | 30 |
+| # dependents       | 68 |
+| # downloads        | 25373847 |
 | # stars            | 12 |
 
 ## Links

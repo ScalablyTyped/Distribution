@@ -11,9 +11,9 @@ Tiny, fast, and elegant implementation of core jQuery designed specifically for 
 | Full name          | cheerio |
 | Keywords           | htmlparser, jquery, selector, scraper, parser, html |
 | # releases         | 2 |
-| # dependents       | 7745 |
-| # downloads        | 118300274 |
-| # stars            | 618 |
+| # dependents       | 8736 |
+| # downloads        | 161100557 |
+| # stars            | 621 |
 
 ## Links
 - [Homepage](https://github.com/cheeriojs/cheerio#readme)

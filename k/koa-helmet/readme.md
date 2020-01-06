@@ -10,9 +10,9 @@ Security header middleware collection for koa
 | ------------------ | :-------------: |
 | Full name          | koa-helmet |
 | Keywords           | security, headers, koa, x-frame-options, csp, hsts |
-| # releases         | 6 |
-| # dependents       | 119 |
-| # downloads        | 1091215 |
+| # releases         | 8 |
+| # dependents       | 155 |
+| # downloads        | 2349593 |
 | # stars            | 15 |
 
 ## Links

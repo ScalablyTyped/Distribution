@@ -34,7 +34,7 @@ class LogDestination protected () extends CustomResource {
     */
   val roleArn: Output[String] = js.native
   /**
-    * The ARN of the target Amazon Kinesis stream or Amazon Lambda resource for the destination
+    * The ARN of the target Amazon Kinesis stream resource for the destination
     */
   val targetArn: Output[String] = js.native
 }

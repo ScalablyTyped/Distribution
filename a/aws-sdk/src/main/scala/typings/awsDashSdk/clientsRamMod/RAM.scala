@@ -39,6 +39,21 @@ trait RAM extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ AssociateResourceShareResponse, Unit]
   ): Request[AssociateResourceShareResponse, AWSError] = js.native
   /**
+    * Associates a permission with a resource share.
+    */
+  def associateResourceSharePermission(): Request[AssociateResourceSharePermissionResponse, AWSError] = js.native
+  def associateResourceSharePermission(
+    callback: js.Function2[/* err */ AWSError, /* data */ AssociateResourceSharePermissionResponse, Unit]
+  ): Request[AssociateResourceSharePermissionResponse, AWSError] = js.native
+  /**
+    * Associates a permission with a resource share.
+    */
+  def associateResourceSharePermission(params: AssociateResourceSharePermissionRequest): Request[AssociateResourceSharePermissionResponse, AWSError] = js.native
+  def associateResourceSharePermission(
+    params: AssociateResourceSharePermissionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AssociateResourceSharePermissionResponse, Unit]
+  ): Request[AssociateResourceSharePermissionResponse, AWSError] = js.native
+  /**
     * Creates a resource share.
     */
   def createResourceShare(): Request[CreateResourceShareResponse, AWSError] = js.native
@@ -78,6 +93,21 @@ trait RAM extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DisassociateResourceShareResponse, Unit]
   ): Request[DisassociateResourceShareResponse, AWSError] = js.native
   /**
+    * Disassociates an AWS RAM permission from a resource share.
+    */
+  def disassociateResourceSharePermission(): Request[DisassociateResourceSharePermissionResponse, AWSError] = js.native
+  def disassociateResourceSharePermission(
+    callback: js.Function2[/* err */ AWSError, /* data */ DisassociateResourceSharePermissionResponse, Unit]
+  ): Request[DisassociateResourceSharePermissionResponse, AWSError] = js.native
+  /**
+    * Disassociates an AWS RAM permission from a resource share.
+    */
+  def disassociateResourceSharePermission(params: DisassociateResourceSharePermissionRequest): Request[DisassociateResourceSharePermissionResponse, AWSError] = js.native
+  def disassociateResourceSharePermission(
+    params: DisassociateResourceSharePermissionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DisassociateResourceSharePermissionResponse, Unit]
+  ): Request[DisassociateResourceSharePermissionResponse, AWSError] = js.native
+  /**
     * Enables resource sharing within your AWS Organization. The caller must be the master account for the AWS Organization.
     */
   def enableSharingWithAwsOrganization(): Request[EnableSharingWithAwsOrganizationResponse, AWSError] = js.native
@@ -92,6 +122,19 @@ trait RAM extends Service {
     params: EnableSharingWithAwsOrganizationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ EnableSharingWithAwsOrganizationResponse, Unit]
   ): Request[EnableSharingWithAwsOrganizationResponse, AWSError] = js.native
+  /**
+    * Gets the contents of an AWS RAM permission in JSON format.
+    */
+  def getPermission(): Request[GetPermissionResponse, AWSError] = js.native
+  def getPermission(callback: js.Function2[/* err */ AWSError, /* data */ GetPermissionResponse, Unit]): Request[GetPermissionResponse, AWSError] = js.native
+  /**
+    * Gets the contents of an AWS RAM permission in JSON format.
+    */
+  def getPermission(params: GetPermissionRequest): Request[GetPermissionResponse, AWSError] = js.native
+  def getPermission(
+    params: GetPermissionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetPermissionResponse, Unit]
+  ): Request[GetPermissionResponse, AWSError] = js.native
   /**
     * Gets the policies for the specified resources that you own and have shared.
     */
@@ -160,18 +203,44 @@ trait RAM extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListPendingInvitationResourcesResponse, Unit]
   ): Request[ListPendingInvitationResourcesResponse, AWSError] = js.native
   /**
-    * Lists the principals that you have shared resources with or the principals that have shared resources with you.
+    * Lists the AWS RAM permissions.
+    */
+  def listPermissions(): Request[ListPermissionsResponse, AWSError] = js.native
+  def listPermissions(callback: js.Function2[/* err */ AWSError, /* data */ ListPermissionsResponse, Unit]): Request[ListPermissionsResponse, AWSError] = js.native
+  /**
+    * Lists the AWS RAM permissions.
+    */
+  def listPermissions(params: ListPermissionsRequest): Request[ListPermissionsResponse, AWSError] = js.native
+  def listPermissions(
+    params: ListPermissionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListPermissionsResponse, Unit]
+  ): Request[ListPermissionsResponse, AWSError] = js.native
+  /**
+    * Lists the principals that you have shared resources with or that have shared resources with you.
     */
   def listPrincipals(): Request[ListPrincipalsResponse, AWSError] = js.native
   def listPrincipals(callback: js.Function2[/* err */ AWSError, /* data */ ListPrincipalsResponse, Unit]): Request[ListPrincipalsResponse, AWSError] = js.native
   /**
-    * Lists the principals that you have shared resources with or the principals that have shared resources with you.
+    * Lists the principals that you have shared resources with or that have shared resources with you.
     */
   def listPrincipals(params: ListPrincipalsRequest): Request[ListPrincipalsResponse, AWSError] = js.native
   def listPrincipals(
     params: ListPrincipalsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListPrincipalsResponse, Unit]
   ): Request[ListPrincipalsResponse, AWSError] = js.native
+  /**
+    * Lists the AWS RAM permissions that are associated with a resource share.
+    */
+  def listResourceSharePermissions(): Request[ListResourceSharePermissionsResponse, AWSError] = js.native
+  def listResourceSharePermissions(callback: js.Function2[/* err */ AWSError, /* data */ ListResourceSharePermissionsResponse, Unit]): Request[ListResourceSharePermissionsResponse, AWSError] = js.native
+  /**
+    * Lists the AWS RAM permissions that are associated with a resource share.
+    */
+  def listResourceSharePermissions(params: ListResourceSharePermissionsRequest): Request[ListResourceSharePermissionsResponse, AWSError] = js.native
+  def listResourceSharePermissions(
+    params: ListResourceSharePermissionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListResourceSharePermissionsResponse, Unit]
+  ): Request[ListResourceSharePermissionsResponse, AWSError] = js.native
   /**
     * Lists the resources that you added to a resource shares or the resources that are shared with you.
     */
@@ -185,6 +254,21 @@ trait RAM extends Service {
     params: ListResourcesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListResourcesResponse, Unit]
   ): Request[ListResourcesResponse, AWSError] = js.native
+  /**
+    * Resource shares that were created by attaching a policy to a resource are visible only to the resource share owner, and the resource share cannot be modified in AWS RAM. Use this API action to promote the resource share. When you promote the resource share, it becomes:   Visible to all principals that it is shared with.   Modifiable in AWS RAM.  
+    */
+  def promoteResourceShareCreatedFromPolicy(): Request[PromoteResourceShareCreatedFromPolicyResponse, AWSError] = js.native
+  def promoteResourceShareCreatedFromPolicy(
+    callback: js.Function2[/* err */ AWSError, /* data */ PromoteResourceShareCreatedFromPolicyResponse, Unit]
+  ): Request[PromoteResourceShareCreatedFromPolicyResponse, AWSError] = js.native
+  /**
+    * Resource shares that were created by attaching a policy to a resource are visible only to the resource share owner, and the resource share cannot be modified in AWS RAM. Use this API action to promote the resource share. When you promote the resource share, it becomes:   Visible to all principals that it is shared with.   Modifiable in AWS RAM.  
+    */
+  def promoteResourceShareCreatedFromPolicy(params: PromoteResourceShareCreatedFromPolicyRequest): Request[PromoteResourceShareCreatedFromPolicyResponse, AWSError] = js.native
+  def promoteResourceShareCreatedFromPolicy(
+    params: PromoteResourceShareCreatedFromPolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PromoteResourceShareCreatedFromPolicyResponse, Unit]
+  ): Request[PromoteResourceShareCreatedFromPolicyResponse, AWSError] = js.native
   /**
     * Rejects an invitation to a resource share from another AWS account.
     */

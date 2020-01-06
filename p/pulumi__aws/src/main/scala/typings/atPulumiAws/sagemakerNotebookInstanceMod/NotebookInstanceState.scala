@@ -6,43 +6,44 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NotebookInstanceState extends js.Object {
   /**
     * The Amazon Resource Name (ARN) assigned by AWS to this notebook instance.
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * The name of ML compute instance type.
     */
-  val instanceType: js.UndefOr[Input[String]] = js.undefined
+  val instanceType: js.UndefOr[Input[String]] = js.native
   /**
     * The AWS Key Management Service (AWS KMS) key that Amazon SageMaker uses to encrypt the model artifacts at rest using Amazon S3 server-side encryption.
     */
-  val kmsKeyId: js.UndefOr[Input[String]] = js.undefined
+  val kmsKeyId: js.UndefOr[Input[String]] = js.native
   /**
     * The name of a lifecycle configuration to associate with the notebook instance.
     */
-  val lifecycleConfigName: js.UndefOr[Input[String]] = js.undefined
+  val lifecycleConfigName: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the notebook instance (must be unique).
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * The ARN of the IAM role to be used by the notebook instance which allows SageMaker to call other services on your behalf.
     */
-  val roleArn: js.UndefOr[Input[String]] = js.undefined
+  val roleArn: js.UndefOr[Input[String]] = js.native
   /**
     * The associated security groups.
     */
-  val securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The VPC subnet ID.
     */
-  val subnetId: js.UndefOr[Input[String]] = js.undefined
+  val subnetId: js.UndefOr[Input[String]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object NotebookInstanceState {

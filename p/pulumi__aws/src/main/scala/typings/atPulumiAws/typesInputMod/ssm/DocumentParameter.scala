@@ -5,17 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DocumentParameter extends js.Object {
-  var defaultValue: js.UndefOr[Input[String]] = js.undefined
+  var defaultValue: js.UndefOr[Input[String]] = js.native
   /**
     * The description of the document.
     */
-  var description: js.UndefOr[Input[String]] = js.undefined
+  var description: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the document.
     */
-  var name: js.UndefOr[Input[String]] = js.undefined
-  var `type`: js.UndefOr[Input[String]] = js.undefined
+  var name: js.UndefOr[Input[String]] = js.native
+  var `type`: js.UndefOr[Input[String]] = js.native
 }
 
 object DocumentParameter {

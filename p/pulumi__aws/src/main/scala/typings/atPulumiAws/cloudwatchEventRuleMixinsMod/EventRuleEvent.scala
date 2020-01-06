@@ -5,16 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EventRuleEvent extends js.Object {
-  var account: String
-  var detail: Record[String, _]
-  var `detail-type`: String
-  var id: String
-  var region: String
-  var resources: js.Array[String]
-  var source: String
-  var time: String
-  var version: String
+  var account: String = js.native
+  var detail: Record[String, _] = js.native
+  var `detail-type`: String = js.native
+  var id: String = js.native
+  var region: String = js.native
+  var resources: js.Array[String] = js.native
+  var source: String = js.native
+  var time: String = js.native
+  var version: String = js.native
 }
 
 object EventRuleEvent {
@@ -30,8 +31,8 @@ object EventRuleEvent {
     time: String,
     version: String
   ): EventRuleEvent = {
-    val __obj = js.Dynamic.literal(account = account, detail = detail, id = id, region = region, resources = resources, source = source, time = time, version = version)
-    __obj.updateDynamic("detail-type")(`detail-type`)
+    val __obj = js.Dynamic.literal(account = account.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], resources = resources.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    __obj.updateDynamic("detail-type")(`detail-type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventRuleEvent]
   }
 }

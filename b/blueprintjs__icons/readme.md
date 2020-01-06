@@ -10,9 +10,9 @@ Components, fonts, icons, and css files for creating and displaying icons.
 | ------------------ | :-------------: |
 | Full name          | @blueprintjs/icons |
 | Keywords           | palantir, blueprint, theme, react, icon |
-| # releases         | 22 |
-| # dependents       | 18 |
-| # downloads        | 2025496 |
+| # releases         | 28 |
+| # dependents       | 35 |
+| # downloads        | 3020506 |
 | # stars            | 0 |
 
 ## Links

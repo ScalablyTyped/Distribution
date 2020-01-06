@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ListLicenseConfigurationsRequest extends js.Object {
   /**
-    * One or more filters.
+    * Filters to scope the results. The following filters and logical operators are supported:    licenseCountingType - The dimension on which licenses are counted (vCPU). Logical operators are EQUALS | NOT_EQUALS.    enforceLicenseCount - A Boolean value that indicates whether hard license enforcement is used. Logical operators are EQUALS | NOT_EQUALS.    usagelimitExceeded - A Boolean value that indicates whether the available licenses have been exceeded. Logical operators are EQUALS | NOT_EQUALS.  
     */
-  var Filters: js.UndefOr[typings.awsDashSdk.clientsLicensemanagerMod.Filters] = js.undefined
+  var Filters: js.UndefOr[typings.awsDashSdk.clientsLicensemanagerMod.Filters] = js.native
   /**
-    * An array of ARNs for the calling account’s license configurations.
+    * Amazon Resource Names (ARN) of the license configurations.
     */
-  var LicenseConfigurationArns: js.UndefOr[StringList] = js.undefined
+  var LicenseConfigurationArns: js.UndefOr[StringList] = js.native
   /**
-    * Maximum number of results to return in a single call. To retrieve the remaining results, make another call with the returned NextToken value.
+    * Maximum number of results to return in a single call.
     */
-  var MaxResults: js.UndefOr[BoxInteger] = js.undefined
+  var MaxResults: js.UndefOr[BoxInteger] = js.native
   /**
     * Token for the next set of results.
     */
-  var NextToken: js.UndefOr[String] = js.undefined
+  var NextToken: js.UndefOr[String] = js.native
 }
 
 object ListLicenseConfigurationsRequest {
@@ -32,10 +33,10 @@ object ListLicenseConfigurationsRequest {
     NextToken: String = null
   ): ListLicenseConfigurationsRequest = {
     val __obj = js.Dynamic.literal()
-    if (Filters != null) __obj.updateDynamic("Filters")(Filters)
-    if (LicenseConfigurationArns != null) __obj.updateDynamic("LicenseConfigurationArns")(LicenseConfigurationArns)
+    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
+    if (LicenseConfigurationArns != null) __obj.updateDynamic("LicenseConfigurationArns")(LicenseConfigurationArns.asInstanceOf[js.Any])
     if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListLicenseConfigurationsRequest]
   }
 }

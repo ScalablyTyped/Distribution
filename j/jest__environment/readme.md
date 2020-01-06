@@ -10,8 +10,8 @@ Typings are for version 24.9.0
 | Full name          | @jest/environment |
 | Keywords           | - |
 | # releases         | 13 |
-| # dependents       | 14 |
-| # downloads        | 80629268 |
+| # dependents       | 15 |
+| # downloads        | 105700614 |
 | # stars            | 0 |
 
 ## Links

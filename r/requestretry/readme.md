@@ -10,9 +10,9 @@ request-retry wrap nodejs request to retry http(s) requests in case of error
 | ------------------ | :-------------: |
 | Full name          | requestretry |
 | Keywords           | - |
-| # releases         | 12 |
-| # dependents       | 140 |
-| # downloads        | 19755272 |
+| # releases         | 13 |
+| # dependents       | 158 |
+| # downloads        | 16445599 |
 | # stars            | 9 |
 
 ## Links

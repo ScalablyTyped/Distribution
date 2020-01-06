@@ -10,9 +10,9 @@ ANSI escape codes for styling strings in the terminal
 | ------------------ | :-------------: |
 | Full name          | ansi-styles |
 | Keywords           | ansi, styles, color, colour, colors, terminal, console, cli, string, tty, escape, formatting, rgb, 256, shell, xterm, log, logging, command-line, text |
-| # releases         | 4 |
-| # dependents       | 304 |
-| # downloads        | 758780355 |
+| # releases         | 6 |
+| # dependents       | 362 |
+| # downloads        | 1047647105 |
 | # stars            | 11 |
 
 ## Links

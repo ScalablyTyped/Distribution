@@ -33,7 +33,7 @@ trait Anon_ extends js.Object {
   @JSName("$lte")
   var $lte: Double | String | Date = js.native
   @JSName("$ne")
-  var $ne: String | Double | (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias sequelize.sequelize.WhereLogic */ js.Object) = js.native
+  var $ne: String | Double | (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias sequelize.sequelize.WhereLogic */ js.Object) = js.native
   @JSName("$not")
   var $not: Boolean | String | Double | AnyWhereOptions = js.native
   @JSName("$notBetween")

@@ -37,13 +37,13 @@ object EventRule extends js.Object {
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
     */
-  def get(name: String, id: Input[ID]): typings.atPulumiAws.cloudwatchEventRuleMixinsMod.cloudwatchEventRuleMod.EventRule = js.native
-  def get(name: String, id: Input[ID], state: EventRuleState): typings.atPulumiAws.cloudwatchEventRuleMixinsMod.cloudwatchEventRuleMod.EventRule = js.native
-  def get(name: String, id: Input[ID], state: EventRuleState, opts: CustomResourceOptions): typings.atPulumiAws.cloudwatchEventRuleMixinsMod.cloudwatchEventRuleMod.EventRule = js.native
+  def get(name: String, id: Input[ID]): typings.atPulumiAws.cloudwatchEventRuleMod.EventRule = js.native
+  def get(name: String, id: Input[ID], state: EventRuleState): typings.atPulumiAws.cloudwatchEventRuleMod.EventRule = js.native
+  def get(name: String, id: Input[ID], state: EventRuleState, opts: CustomResourceOptions): typings.atPulumiAws.cloudwatchEventRuleMod.EventRule = js.native
   /**
     * Returns true if the given object is an instance of EventRule.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
-  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/eventRuleMixins.@pulumi/aws/cloudwatch/eventRule.EventRule */ Boolean = js.native
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/eventRule.EventRule */ Boolean = js.native
 }
 

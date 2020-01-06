@@ -11,8 +11,8 @@ Formats whitespaces in a SQL query to make it more readable
 | Full name          | sql-formatter |
 | Keywords           | sql, formatter, format, n1ql, whitespaces |
 | # releases         | 8 |
-| # dependents       | 27 |
-| # downloads        | 444133 |
+| # dependents       | 35 |
+| # downloads        | 574137 |
 | # stars            | 0 |
 
 ## Links

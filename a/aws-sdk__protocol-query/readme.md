@@ -10,9 +10,9 @@ Provides a marshaller and unmarshaller for the AWS query & ec2 protocol
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/protocol-query |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 4 |
-| # downloads        | 1250 |
+| # releases         | 11 |
+| # dependents       | 39 |
+| # downloads        | 8308 |
 | # stars            | 0 |
 
 ## Links

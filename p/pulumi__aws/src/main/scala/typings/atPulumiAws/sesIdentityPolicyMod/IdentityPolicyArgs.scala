@@ -5,19 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IdentityPolicyArgs extends js.Object {
   /**
     * Name or Amazon Resource Name (ARN) of the SES Identity.
     */
-  val identity: Input[String]
+  val identity: Input[String] = js.native
   /**
     * Name of the policy.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
-  /**
-    * JSON string of the policy.
-    */
-  val policy: Input[String]
+  val name: js.UndefOr[Input[String]] = js.native
+  val policy: Input[String] = js.native
 }
 
 object IdentityPolicyArgs {

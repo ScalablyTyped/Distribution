@@ -10,9 +10,9 @@ Bunyan logging specifically for the browser
 | ------------------ | :-------------: |
 | Full name          | browser-bunyan |
 | Keywords           | log, logging, log4j, json, bunyan |
-| # releases         | 12 |
-| # dependents       | 12 |
-| # downloads        | 118727 |
+| # releases         | 8 |
+| # dependents       | 14 |
+| # downloads        | 195202 |
 | # stars            | 1 |
 
 ## Links

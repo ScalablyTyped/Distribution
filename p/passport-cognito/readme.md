@@ -10,9 +10,9 @@ Express passport module for Cognito User Pools
 | ------------------ | :-------------: |
 | Full name          | passport-cognito |
 | Keywords           | amazon, aws, passport, cognito, auth, authentication, identity |
-| # releases         | 3 |
+| # releases         | 1 |
 | # dependents       | 0 |
-| # downloads        | 27016 |
+| # downloads        | 97417 |
 | # stars            | 6 |
 
 ## Links

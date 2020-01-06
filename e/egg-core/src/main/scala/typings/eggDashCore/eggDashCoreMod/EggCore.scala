@@ -18,11 +18,11 @@ import scala.scalajs.js.annotation._
 class EggCore[Config] () extends EggCoreBase[Config] {
   def this(options: EggCoreOptions) = this()
   var Controller: Instantiable1[
-    /* import warning: RewrittenClass.unapply cls $anonfun was tparam Context */ /* ctx */ js.Any, 
+    /* import warning: RewrittenClass.unapply cls was tparam Context */ /* ctx */ js.Any, 
     BaseContextClass[js.Object, js.Object, js.Object, js.Object]
   ] = js.native
   var Service: Instantiable1[
-    /* import warning: RewrittenClass.unapply cls $anonfun was tparam Context */ /* ctx */ js.Any, 
+    /* import warning: RewrittenClass.unapply cls was tparam Context */ /* ctx */ js.Any, 
     BaseContextClass[js.Object, js.Object, js.Object, js.Object]
   ] = js.native
 }

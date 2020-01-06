@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object libUtilResolveDashConfigMod extends js.Object {
   def default(variableName: String): js.UndefOr[String] = js.native
+  def envToBool(env: String): Boolean = js.native
   def reInitializePackageJson(): Unit = js.native
   def reInitializePackageJson(directory: String): Unit = js.native
   def setDefaultValue(key: String, value: String): Unit = js.native

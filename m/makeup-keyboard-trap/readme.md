@@ -10,9 +10,9 @@ Restricts keyboard tabindex to a single subtree in the DOM
 | ------------------ | :-------------: |
 | Full name          | makeup-keyboard-trap |
 | Keywords           | makeup, ebay, accessibility, a11y |
-| # releases         | 13 |
+| # releases         | 5 |
 | # dependents       | 2 |
-| # downloads        | 9475 |
+| # downloads        | 3189 |
 | # stars            | 0 |
 
 ## Links

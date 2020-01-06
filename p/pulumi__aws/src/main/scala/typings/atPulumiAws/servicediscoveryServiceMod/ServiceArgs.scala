@@ -8,31 +8,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ServiceArgs extends js.Object {
   /**
     * The description of the service.
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * A complex type that contains information about the resource record sets that you want Amazon Route 53 to create when you register an instance.
     */
-  val dnsConfig: js.UndefOr[Input[ServiceDnsConfig]] = js.undefined
+  val dnsConfig: js.UndefOr[Input[ServiceDnsConfig]] = js.native
   /**
     * A complex type that contains settings for an optional health check. Only for Public DNS namespaces.
     */
-  val healthCheckConfig: js.UndefOr[Input[ServiceHealthCheckConfig]] = js.undefined
+  val healthCheckConfig: js.UndefOr[Input[ServiceHealthCheckConfig]] = js.native
   /**
     * A complex type that contains settings for ECS managed health checks.
     */
-  val healthCheckCustomConfig: js.UndefOr[Input[ServiceHealthCheckCustomConfig]] = js.undefined
+  val healthCheckCustomConfig: js.UndefOr[Input[ServiceHealthCheckCustomConfig]] = js.native
   /**
     * The name of the service.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of the namespace to use for DNS configuration.
     */
-  val namespaceId: js.UndefOr[Input[String]] = js.undefined
+  val namespaceId: js.UndefOr[Input[String]] = js.native
 }
 
 object ServiceArgs {

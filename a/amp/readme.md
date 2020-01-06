@@ -11,8 +11,8 @@ Abstract messaging protocol
 | Full name          | amp |
 | Keywords           | amp, actor, message, messaging, zmq, zeromq |
 | # releases         | 0 |
-| # dependents       | 20 |
-| # downloads        | 10837197 |
+| # dependents       | 21 |
+| # downloads        | 14451220 |
 | # stars            | 2 |
 
 ## Links

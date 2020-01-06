@@ -10,10 +10,10 @@ A library for arbitrary-precision decimal and non-decimal arithmetic
 | ------------------ | :-------------: |
 | Full name          | bignumber.js |
 | Keywords           | arbitrary, precision, arithmetic, big, number, decimal, float, biginteger, bigdecimal, bignumber, bigint, bignum |
-| # releases         | 18 |
-| # dependents       | 1220 |
-| # downloads        | 47074753 |
-| # stars            | 35 |
+| # releases         | 14 |
+| # dependents       | 1743 |
+| # downloads        | 102050874 |
+| # stars            | 36 |
 
 ## Links
 - [Homepage](https://github.com/MikeMcl/bignumber.js#readme)

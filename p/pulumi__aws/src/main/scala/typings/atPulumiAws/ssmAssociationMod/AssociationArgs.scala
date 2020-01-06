@@ -8,51 +8,52 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AssociationArgs extends js.Object {
   /**
     * The descriptive name for the association.
     */
-  val associationName: js.UndefOr[Input[String]] = js.undefined
+  val associationName: js.UndefOr[Input[String]] = js.native
   /**
     * The compliance severity for the association. Can be one of the following: `UNSPECIFIED`, `LOW`, `MEDIUM`, `HIGH` or `CRITICAL`
     */
-  val complianceSeverity: js.UndefOr[Input[String]] = js.undefined
+  val complianceSeverity: js.UndefOr[Input[String]] = js.native
   /**
     * The document version you want to associate with the target(s). Can be a specific version or the default version.
     */
-  val documentVersion: js.UndefOr[Input[String]] = js.undefined
+  val documentVersion: js.UndefOr[Input[String]] = js.native
   /**
     * The instance ID to apply an SSM document to. Use `targets` with key `InstanceIds` for document schema versions 2.0 and above.
     */
-  val instanceId: js.UndefOr[Input[String]] = js.undefined
+  val instanceId: js.UndefOr[Input[String]] = js.native
   /**
     * The maximum number of targets allowed to run the association at the same time. You can specify a number, for example 10, or a percentage of the target set, for example 10%.
     */
-  val maxConcurrency: js.UndefOr[Input[String]] = js.undefined
+  val maxConcurrency: js.UndefOr[Input[String]] = js.native
   /**
     * The number of errors that are allowed before the system stops sending requests to run the association on additional targets. You can specify a number, for example 10, or a percentage of the target set, for example 10%.
     */
-  val maxErrors: js.UndefOr[Input[String]] = js.undefined
+  val maxErrors: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the SSM document to apply.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * An output location block. Output Location is documented below.
     */
-  val outputLocation: js.UndefOr[Input[AssociationOutputLocation]] = js.undefined
+  val outputLocation: js.UndefOr[Input[AssociationOutputLocation]] = js.native
   /**
     * A block of arbitrary string parameters to pass to the SSM document.
     */
-  val parameters: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val parameters: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * A cron expression when the association will be applied to the target(s).
     */
-  val scheduleExpression: js.UndefOr[Input[String]] = js.undefined
+  val scheduleExpression: js.UndefOr[Input[String]] = js.native
   /**
     * A block containing the targets of the SSM association. Targets are documented below. AWS currently supports a maximum of 5 targets.
     */
-  val targets: js.UndefOr[Input[js.Array[Input[AssociationTarget]]]] = js.undefined
+  val targets: js.UndefOr[Input[js.Array[Input[AssociationTarget]]]] = js.native
 }
 
 object AssociationArgs {

@@ -5,43 +5,44 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ProjectArtifacts extends js.Object {
   /**
     * The artifact identifier. Must be the same specified inside AWS CodeBuild buildspec.
     */
-  var artifactIdentifier: js.UndefOr[Input[String]] = js.undefined
+  var artifactIdentifier: js.UndefOr[Input[String]] = js.native
   /**
     * If set to true, output artifacts will not be encrypted. If `type` is set to `NO_ARTIFACTS` then this value will be ignored. Defaults to `false`.
     */
-  var encryptionDisabled: js.UndefOr[Input[Boolean]] = js.undefined
+  var encryptionDisabled: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The location of the source code from git or s3.
     */
-  var location: js.UndefOr[Input[String]] = js.undefined
+  var location: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the project. If `type` is set to `S3`, this is the name of the output artifact object
     */
-  var name: js.UndefOr[Input[String]] = js.undefined
+  var name: js.UndefOr[Input[String]] = js.native
   /**
     * The namespace to use in storing build artifacts. If `type` is set to `S3`, then valid values for this parameter are: `BUILD_ID` or `NONE`.
     */
-  var namespaceType: js.UndefOr[Input[String]] = js.undefined
+  var namespaceType: js.UndefOr[Input[String]] = js.native
   /**
     * If set to true, a name specified in the build spec file overrides the artifact name.
     */
-  var overrideArtifactName: js.UndefOr[Input[Boolean]] = js.undefined
+  var overrideArtifactName: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The type of build output artifact to create. If `type` is set to `S3`, valid values for this parameter are: `NONE` or `ZIP`
     */
-  var packaging: js.UndefOr[Input[String]] = js.undefined
+  var packaging: js.UndefOr[Input[String]] = js.native
   /**
     * If `type` is set to `S3`, this is the path to the output artifact
     */
-  var path: js.UndefOr[Input[String]] = js.undefined
+  var path: js.UndefOr[Input[String]] = js.native
   /**
     * The type of repository that contains the source code to be built. Valid values for this parameter are: `CODECOMMIT`, `CODEPIPELINE`, `GITHUB`, `GITHUB_ENTERPRISE`, `BITBUCKET` or `S3`.
     */
-  var `type`: Input[String]
+  var `type`: Input[String] = js.native
 }
 
 object ProjectArtifacts {

@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ConsoleConstructor
-  extends Instantiable2[/* stdout */ WritableStream, /* stderr */ WritableStream, Console]
+  extends Instantiable1[(/* options */ ConsoleConstructorOptions) | (/* stdout */ WritableStream), Console]
+     with Instantiable2[/* stdout */ WritableStream, /* stderr */ WritableStream, Console]
      with Instantiable3[
       /* stdout */ WritableStream, 
       /* stderr */ WritableStream, 
       /* ignoreErrors */ Boolean, 
       Console
     ]
-     with Instantiable1[(/* options */ ConsoleConstructorOptions) | (/* stdout */ WritableStream), Console]
 

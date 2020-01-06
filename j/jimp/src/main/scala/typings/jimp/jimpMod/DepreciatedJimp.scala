@@ -45,7 +45,18 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait DepreciatedJimp
-  extends Instantiable3[
+  extends // Constructors
+// For custom constructors when using Jimp.appendConstructorOption
+Instantiable1[
+      (/* args (repeated) */ js.Any) | (/* data */ Bitmap) | (/* data */ Buffer) | (/* image */ DepreciatedJimp) | (/* path */ String) | (/* urlOptions */ URLOptions), 
+      DepreciatedJimp
+    ]
+     with Instantiable2[
+      (/* data */ Bitmap) | (/* data */ Buffer) | (/* image */ DepreciatedJimp) | (/* w */ Double) | (/* path */ String) | (/* urlOptions */ URLOptions), 
+      (/* h */ Double) | (/* cb */ ImageCallback[js.Any]), 
+      DepreciatedJimp
+    ]
+     with Instantiable3[
       /* w */ Double, 
       /* h */ Double, 
       (/* background */ Double) | (/* cb */ ImageCallback[js.Any]) | (/* background */ String), 
@@ -56,17 +67,6 @@ trait DepreciatedJimp
       /* h */ Double, 
       (/* background */ Double) | (/* background */ String), 
       /* cb */ ImageCallback[js.Any], 
-      DepreciatedJimp
-    ]
-     with // Constructors
-// For custom constructors when using Jimp.appendConstructorOption
-Instantiable1[
-      (/* args (repeated) */ js.Any) | (/* data */ Bitmap) | (/* data */ Buffer) | (/* image */ DepreciatedJimp) | (/* path */ String) | (/* urlOptions */ URLOptions), 
-      DepreciatedJimp
-    ]
-     with Instantiable2[
-      (/* data */ Bitmap) | (/* data */ Buffer) | (/* image */ DepreciatedJimp) | (/* w */ Double) | (/* path */ String) | (/* urlOptions */ URLOptions), 
-      (/* h */ Double) | (/* cb */ ImageCallback[js.Any]), 
       DepreciatedJimp
     ] {
   // Constants

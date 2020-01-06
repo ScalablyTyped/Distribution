@@ -10,9 +10,9 @@ Messaging patterns for Backbone applications.
 | ------------------ | :-------------: |
 | Full name          | backbone.radio |
 | Keywords           | backbone, marionette, decoupled, pubsub, publish, subscribe, messaging, architecture, spa |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 25 |
-| # downloads        | 552653 |
+| # downloads        | 558161 |
 | # stars            | 4 |
 
 ## Links

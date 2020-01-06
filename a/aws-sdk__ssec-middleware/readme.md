@@ -9,9 +9,9 @@ Typings are for version 0.1.0-preview.1
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/ssec-middleware |
 | Keywords           | - |
-| # releases         | 6 |
+| # releases         | 10 |
 | # dependents       | 2 |
-| # downloads        | 443 |
+| # downloads        | 3841 |
 | # stars            | 0 |
 
 ## Links

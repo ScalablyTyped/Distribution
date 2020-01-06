@@ -5,10 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ServiceNetworkConfiguration extends js.Object {
-  var assignPublicIp: js.UndefOr[Input[Boolean]] = js.undefined
-  var securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
-  var subnets: Input[js.Array[Input[String]]]
+  var assignPublicIp: js.UndefOr[Input[Boolean]] = js.native
+  var securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  var subnets: Input[js.Array[Input[String]]] = js.native
 }
 
 object ServiceNetworkConfiguration {

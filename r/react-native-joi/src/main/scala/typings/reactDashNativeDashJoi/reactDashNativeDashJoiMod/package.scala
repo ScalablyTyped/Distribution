@@ -14,7 +14,7 @@ package object reactDashNativeDashJoiMod {
 
   type ExtensionBoundSchema = Schema with Anon_Context
   type LanguageOptions = String | Boolean | Null | (StringDictionary[
-    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias react-native-joi.react-native-joi.LanguageOptions */ js.Object
+    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias react-native-joi.react-native-joi.LanguageOptions */ js.Object
   ])
   type LanguageRootOptions = Anon_Key with (Partial[Record[Types, LanguageOptions]])
   type LazySchema = AnySchema

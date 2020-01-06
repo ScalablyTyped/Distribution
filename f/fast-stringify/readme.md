@@ -12,7 +12,7 @@ A blazing fast stringifier that safely handles circular objects
 | Keywords           | stringify, fast, serialize, json |
 | # releases         | 11 |
 | # dependents       | 10 |
-| # downloads        | 460805 |
+| # downloads        | 636578 |
 | # stars            | 0 |
 
 ## Links

@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TypeObject extends js.Object {
-  var action: TypeAction
-  var background: TypeBackground
-  var divider: TypeDivider
-  var text: TypeText
+  var action: TypeAction = js.native
+  var background: TypeBackground = js.native
+  var divider: TypeDivider = js.native
+  var text: TypeText = js.native
 }
 
 object TypeObject {

@@ -10,15 +10,15 @@ Formats JavaScript dates to relative time strings.
 | ------------------ | :-------------: |
 | Full name          | intl-relativeformat |
 | Keywords           | intl, i18n, relative, moment, format, date |
-| # releases         | 3 |
-| # dependents       | 54 |
-| # downloads        | 13498090 |
+| # releases         | 19 |
+| # dependents       | 66 |
+| # downloads        | 18742398 |
 | # stars            | 2 |
 
 ## Links
-- [Homepage](https://github.com/yahoo/intl-relativeformat)
-- [Bugs](https://github.com/yahoo/intl-relativeformat/issues)
-- [Repository](https://github.com/yahoo/intl-relativeformat)
+- [Homepage](https://github.com/formatjs/formatjs)
+- [Bugs](https://github.com/formatjs/formatjs/issues)
+- [Repository](https://github.com/formatjs/formatjs)
 - [Npm](https://www.npmjs.com/package/intl-relativeformat)
     
 

@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VirtualRouterStatus extends js.Object {
   /**
     * The current status of the virtual router.
     */
-  var status: VirtualRouterStatusCode
+  var status: VirtualRouterStatusCode = js.native
 }
 
 object VirtualRouterStatus {

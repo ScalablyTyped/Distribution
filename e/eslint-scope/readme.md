@@ -11,8 +11,8 @@ ECMAScript scope analyzer for ESLint
 | Full name          | eslint-scope |
 | Keywords           | - |
 | # releases         | 10 |
-| # dependents       | 37 |
-| # downloads        | 257426367 |
+| # dependents       | 61 |
+| # downloads        | 539635609 |
 | # stars            | 0 |
 
 ## Links

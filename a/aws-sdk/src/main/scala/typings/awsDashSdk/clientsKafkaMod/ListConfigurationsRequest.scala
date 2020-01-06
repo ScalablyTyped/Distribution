@@ -4,20 +4,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ListConfigurationsRequest extends js.Object {
   /**
     * 
     The maximum number of results to return in the response. If there are more results, the response includes a NextToken parameter.
     
     */
-  var MaxResults: js.UndefOr[typings.awsDashSdk.clientsKafkaMod.MaxResults] = js.undefined
+  var MaxResults: js.UndefOr[typings.awsDashSdk.clientsKafkaMod.MaxResults] = js.native
   /**
     * 
     The paginated results marker. When the result of the operation is truncated, the call returns NextToken in the response. 
     To get the next batch, provide this token in your next request.
     
     */
-  var NextToken: js.UndefOr[__string] = js.undefined
+  var NextToken: js.UndefOr[__string] = js.native
 }
 
 object ListConfigurationsRequest {
@@ -25,7 +26,7 @@ object ListConfigurationsRequest {
   def apply(MaxResults: Int | Double = null, NextToken: __string = null): ListConfigurationsRequest = {
     val __obj = js.Dynamic.literal()
     if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListConfigurationsRequest]
   }
 }

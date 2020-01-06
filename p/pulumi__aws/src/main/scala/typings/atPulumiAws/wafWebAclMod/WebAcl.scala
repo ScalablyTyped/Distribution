@@ -1,5 +1,6 @@
 package typings.atPulumiAws.wafWebAclMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.atPulumiAws.typesOutputMod.waf.WebAclDefaultAction
 import typings.atPulumiAws.typesOutputMod.waf.WebAclLoggingConfiguration
 import typings.atPulumiAws.typesOutputMod.waf.WebAclRule
@@ -24,6 +25,9 @@ class WebAcl protected () extends CustomResource {
     */
   def this(name: String, args: WebAclArgs) = this()
   def this(name: String, args: WebAclArgs, opts: CustomResourceOptions) = this()
+  /**
+    * The ARN of the WAF WebACL.
+    */
   val arn: Output[String] = js.native
   /**
     * Configuration block with action that you want AWS WAF to take when a request doesn't match the criteria in any of the rules that are associated with the web ACL. Detailed below.
@@ -45,6 +49,10 @@ class WebAcl protected () extends CustomResource {
     * Configuration blocks containing rules to associate with the web ACL and the settings for each rule. Detailed below.
     */
   val rules: Output[js.UndefOr[js.Array[WebAclRule]]] = js.native
+  /**
+    * Key-value mapping of resource tags
+    */
+  val tags: Output[js.UndefOr[StringDictionary[_]]] = js.native
 }
 
 /* static members */

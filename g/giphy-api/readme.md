@@ -10,9 +10,9 @@ JavaScript module for the giphy.com API that supports promises and callbacks.
 | ------------------ | :-------------: |
 | Full name          | giphy-api |
 | Keywords           | giphy, gif, api |
-| # releases         | 6 |
-| # dependents       | 10 |
-| # downloads        | 83852 |
+| # releases         | 4 |
+| # dependents       | 15 |
+| # downloads        | 181956 |
 | # stars            | 7 |
 
 ## Links

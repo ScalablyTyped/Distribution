@@ -1,5 +1,6 @@
 package typings.figma
 
+import typings.figma.figmaMod._Global_.LineHeight
 import typings.figma.figmaStrings.PERCENT
 import typings.figma.figmaStrings.PIXELS
 import scala.scalajs.js

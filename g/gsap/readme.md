@@ -4,21 +4,21 @@
 Typings are for version 1.20.6
 
 ## Library description:
-GSAP is a JavaScript library for creating high-performance animations that work in **every** major browser (or beyond the browser). No other library delivers such advanced sequencing, reliability, API efficiency, and tight control while solving real-world
+GSAP is a JavaScript library for building high-performance animations that work in **every** major browser. Animate CSS, SVG, canvas, React, Vue, WebGL, colors, strings, motion paths, generic objects...anything JavaScript can touch! No other library deliv
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | gsap |
-| Keywords           | animation, TweenLite, TweenMax, TimelineLite, TimelineMax, GSAP, GreenSock, easing, EasePack, PixiPlugin, CustomEase, jQuery, jquery.gsap.js, Bezier, SVG, 3D, 2D, transform, morph, morphing, svg, tweening |
-| # releases         | 12 |
-| # dependents       | 252 |
-| # downloads        | 2542380 |
+| Keywords           | GSAP, GreenSock, animation, MotionPathPlugin, motion, motionPath, easing, JavaScript, PixiPlugin, CustomEase, SVG, 3D, 2D, transform, morph, morphing, tweening |
+| # releases         | 17 |
+| # dependents       | 336 |
+| # downloads        | 4918784 |
 | # stars            | 51 |
 
 ## Links
-- [Homepage](https://greensock.com/gsap/)
+- [Homepage](https://greensock.com)
 - [Bugs](https://greensock.com/forums/)
-- [Repository](https://github.com/greensock/GreenSock-JS)
+- [Repository](https://github.com/greensock/GSAP)
 - [Npm](https://www.npmjs.com/package/gsap)
     
 

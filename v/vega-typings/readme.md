@@ -10,9 +10,9 @@ Typings for Vega.
 | ------------------ | :-------------: |
 | Full name          | vega-typings |
 | Keywords           | vega, typescript, typings |
-| # releases         | 81 |
-| # dependents       | 8 |
-| # downloads        | 1773910 |
+| # releases         | 93 |
+| # dependents       | 13 |
+| # downloads        | 2759152 |
 | # stars            | 0 |
 
 ## Links

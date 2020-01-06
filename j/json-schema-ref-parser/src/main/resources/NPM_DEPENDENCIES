@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "json-schema-ref-parser" : "7.1.2"
+      "json-schema-ref-parser" : "7.1.3"
     }
   ],
   "test-dependencies" : [
     {
-      "json-schema-ref-parser" : "7.1.2"
+      "json-schema-ref-parser" : "7.1.3"
     }
   ],
   "compile-devDependencies" : [

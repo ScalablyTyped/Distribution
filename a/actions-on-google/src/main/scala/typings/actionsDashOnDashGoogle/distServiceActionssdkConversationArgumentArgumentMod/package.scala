@@ -11,16 +11,16 @@ package object distServiceActionssdkConversationArgumentArgumentMod {
   import typings.actionsDashOnDashGoogle.distServiceActionssdkApiV2Mod.GoogleRpcStatus
 
   /* Rewritten from type alias, can be one of: 
-    - java.lang.String
-    - `js.undefined`
-    - typings.actionsDashOnDashGoogle.distServiceActionssdkApiV2Mod.GoogleActionsV2DateTime
-    - typings.actionsDashOnDashGoogle.distCommonMod.ApiClientObjectMap[js.Any]
     - scala.Boolean
+    - `js.undefined`
+    - scala.Double
+    - typings.actionsDashOnDashGoogle.distCommonMod.ApiClientObjectMap[js.Any]
+    - java.lang.String
     - typings.actionsDashOnDashGoogle.distServiceActionssdkApiV2Mod.GoogleActionsV2Location
     - typings.actionsDashOnDashGoogle.distServiceActionssdkApiV2Mod.GoogleRpcStatus
-    - scala.Double
+    - typings.actionsDashOnDashGoogle.distServiceActionssdkApiV2Mod.GoogleActionsV2DateTime
   */
-  type Argument = js.UndefOr[_Argument | ApiClientObjectMap[js.Any] | String | Boolean | Double]
+  type Argument = js.UndefOr[_Argument | ApiClientObjectMap[js.Any] | Boolean | Double | String]
   type ArgumentsIndexable = StringDictionary[Argument]
   type ArgumentsRaw = /** @public */
   StringDictionary[GoogleActionsV2Argument]

@@ -10,9 +10,9 @@ A simple haversine module
 | ------------------ | :-------------: |
 | Full name          | haversine |
 | Keywords           | haversine, distance, coordinates, geolocation |
-| # releases         | 3 |
-| # dependents       | 22 |
-| # downloads        | 386616 |
+| # releases         | 2 |
+| # dependents       | 28 |
+| # downloads        | 680236 |
 | # stars            | 3 |
 
 ## Links

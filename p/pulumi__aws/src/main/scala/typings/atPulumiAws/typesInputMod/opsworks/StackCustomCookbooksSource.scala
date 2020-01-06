@@ -5,13 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StackCustomCookbooksSource extends js.Object {
-  var password: js.UndefOr[Input[String]] = js.undefined
-  var revision: js.UndefOr[Input[String]] = js.undefined
-  var sshKey: js.UndefOr[Input[String]] = js.undefined
-  var `type`: Input[String]
-  var url: Input[String]
-  var username: js.UndefOr[Input[String]] = js.undefined
+  var password: js.UndefOr[Input[String]] = js.native
+  var revision: js.UndefOr[Input[String]] = js.native
+  var sshKey: js.UndefOr[Input[String]] = js.native
+  var `type`: Input[String] = js.native
+  var url: Input[String] = js.native
+  var username: js.UndefOr[Input[String]] = js.native
 }
 
 object StackCustomCookbooksSource {

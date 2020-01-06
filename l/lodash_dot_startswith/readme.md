@@ -11,8 +11,8 @@ The lodash method `_.startsWith` exported as a module.
 | Full name          | lodash.startswith |
 | Keywords           | lodash-modularized, startswith |
 | # releases         | 0 |
-| # dependents       | 49 |
-| # downloads        | 9488456 |
+| # dependents       | 62 |
+| # downloads        | 7273051 |
 | # stars            | 1 |
 
 ## Links

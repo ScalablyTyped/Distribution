@@ -10,10 +10,10 @@ DOM-less simple JavaScript BDD testing framework for Node
 | ------------------ | :-------------: |
 | Full name          | jasmine-node |
 | Keywords           | testing, bdd |
-| # releases         | 7 |
-| # dependents       | 179 |
-| # downloads        | 1875632 |
-| # stars            | 31 |
+| # releases         | 8 |
+| # dependents       | 182 |
+| # downloads        | 1932722 |
+| # stars            | 30 |
 
 ## Links
 - [Homepage](https://github.com/mhevery/jasmine-node)

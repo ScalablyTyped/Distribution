@@ -10,13 +10,13 @@ Elegant ProgressBar and Profiler for Webpack
 | ------------------ | :-------------: |
 | Full name          | webpackbar |
 | Keywords           | - |
-| # releases         | 47 |
-| # dependents       | 190 |
-| # downloads        | 5900326 |
+| # releases         | 50 |
+| # dependents       | 294 |
+| # downloads        | 14268092 |
 | # stars            | 1 |
 
 ## Links
-- [Homepage](https://github.com/nuxt/webpackbar)
+- [Homepage](https://github.com/nuxt/webpackbar#readme)
 - [Bugs](https://github.com/nuxt/webpackbar/issues)
 - [Repository](https://github.com/nuxt/webpackbar)
 - [Npm](https://www.npmjs.com/package/webpackbar)

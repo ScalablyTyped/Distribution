@@ -10,9 +10,9 @@ Generate a random float
 | ------------------ | :-------------: |
 | Full name          | random-float |
 | Keywords           | random, randomize, float, floating, point, real, number, max, min, math, generate, generator |
-| # releases         | 0 |
+| # releases         | 2 |
 | # dependents       | 9 |
-| # downloads        | 34118 |
+| # downloads        | 33892 |
 | # stars            | 2 |
 
 ## Links

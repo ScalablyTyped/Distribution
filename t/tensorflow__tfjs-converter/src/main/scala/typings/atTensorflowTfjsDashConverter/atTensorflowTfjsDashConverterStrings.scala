@@ -23,7 +23,7 @@ object atTensorflowTfjsDashConverterStrings {
   sealed trait bool extends ParamType
   
   @js.native
-  sealed trait boolLeftsquarebracketRightsquarebracket extends ParamType
+  sealed trait `bool[]` extends ParamType
   
   @js.native
   sealed trait control extends Category
@@ -41,7 +41,7 @@ object atTensorflowTfjsDashConverterStrings {
   sealed trait dtype extends ParamType
   
   @js.native
-  sealed trait dtypeLeftsquarebracketRightsquarebracket extends ParamType
+  sealed trait `dtype[]` extends ParamType
   
   @js.native
   sealed trait dynamic extends Category
@@ -71,7 +71,7 @@ object atTensorflowTfjsDashConverterStrings {
   sealed trait number extends ParamType
   
   @js.native
-  sealed trait numberLeftsquarebracketRightsquarebracket extends ParamType
+  sealed trait `number[]` extends ParamType
   
   @js.native
   sealed trait reduction extends Category
@@ -80,7 +80,7 @@ object atTensorflowTfjsDashConverterStrings {
   sealed trait shape extends ParamType
   
   @js.native
-  sealed trait shapeLeftsquarebracketRightsquarebracket extends ParamType
+  sealed trait `shape[]` extends ParamType
   
   @js.native
   sealed trait slice_join extends Category
@@ -92,7 +92,7 @@ object atTensorflowTfjsDashConverterStrings {
   sealed trait string extends ParamType
   
   @js.native
-  sealed trait stringLeftsquarebracketRightsquarebracket extends ParamType
+  sealed trait `string[]` extends ParamType
   
   @js.native
   sealed trait tensor extends ParamType
@@ -114,7 +114,7 @@ object atTensorflowTfjsDashConverterStrings {
   @scala.inline
   def bool: bool = "bool".asInstanceOf[bool]
   @scala.inline
-  def boolLeftsquarebracketRightsquarebracket: boolLeftsquarebracketRightsquarebracket = "bool[]".asInstanceOf[boolLeftsquarebracketRightsquarebracket]
+  def `bool[]`: `bool[]` = "bool[]".asInstanceOf[`bool[]`]
   @scala.inline
   def control: control = "control".asInstanceOf[control]
   @scala.inline
@@ -126,7 +126,7 @@ object atTensorflowTfjsDashConverterStrings {
   @scala.inline
   def dtype: dtype = "dtype".asInstanceOf[dtype]
   @scala.inline
-  def dtypeLeftsquarebracketRightsquarebracket: dtypeLeftsquarebracketRightsquarebracket = "dtype[]".asInstanceOf[dtypeLeftsquarebracketRightsquarebracket]
+  def `dtype[]`: `dtype[]` = "dtype[]".asInstanceOf[`dtype[]`]
   @scala.inline
   def dynamic: dynamic = "dynamic".asInstanceOf[dynamic]
   @scala.inline
@@ -146,13 +146,13 @@ object atTensorflowTfjsDashConverterStrings {
   @scala.inline
   def number: number = "number".asInstanceOf[number]
   @scala.inline
-  def numberLeftsquarebracketRightsquarebracket: numberLeftsquarebracketRightsquarebracket = "number[]".asInstanceOf[numberLeftsquarebracketRightsquarebracket]
+  def `number[]`: `number[]` = "number[]".asInstanceOf[`number[]`]
   @scala.inline
   def reduction: reduction = "reduction".asInstanceOf[reduction]
   @scala.inline
   def shape: shape = "shape".asInstanceOf[shape]
   @scala.inline
-  def shapeLeftsquarebracketRightsquarebracket: shapeLeftsquarebracketRightsquarebracket = "shape[]".asInstanceOf[shapeLeftsquarebracketRightsquarebracket]
+  def `shape[]`: `shape[]` = "shape[]".asInstanceOf[`shape[]`]
   @scala.inline
   def slice_join: slice_join = "slice_join".asInstanceOf[slice_join]
   @scala.inline
@@ -160,7 +160,7 @@ object atTensorflowTfjsDashConverterStrings {
   @scala.inline
   def string: string = "string".asInstanceOf[string]
   @scala.inline
-  def stringLeftsquarebracketRightsquarebracket: stringLeftsquarebracketRightsquarebracket = "string[]".asInstanceOf[stringLeftsquarebracketRightsquarebracket]
+  def `string[]`: `string[]` = "string[]".asInstanceOf[`string[]`]
   @scala.inline
   def tensor: tensor = "tensor".asInstanceOf[tensor]
   @scala.inline

@@ -4,27 +4,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AccountLimit extends js.Object {
   /**
-    * The maximum size of your function's code and layers when they're extracted.
+    * The maximum size of a function's deployment package and layers when they're extracted.
     */
-  var CodeSizeUnzipped: js.UndefOr[Long] = js.undefined
+  var CodeSizeUnzipped: js.UndefOr[Long] = js.native
   /**
     * The maximum size of a deployment package when it's uploaded directly to AWS Lambda. Use Amazon S3 for larger files.
     */
-  var CodeSizeZipped: js.UndefOr[Long] = js.undefined
+  var CodeSizeZipped: js.UndefOr[Long] = js.native
   /**
     * The maximum number of simultaneous function executions.
     */
-  var ConcurrentExecutions: js.UndefOr[Integer] = js.undefined
+  var ConcurrentExecutions: js.UndefOr[Integer] = js.native
   /**
     * The amount of storage space that you can use for all deployment packages and layer archives.
     */
-  var TotalCodeSize: js.UndefOr[Long] = js.undefined
+  var TotalCodeSize: js.UndefOr[Long] = js.native
   /**
     * The maximum number of simultaneous function executions, minus the capacity that's reserved for individual functions with PutFunctionConcurrency.
     */
-  var UnreservedConcurrentExecutions: js.UndefOr[typings.awsDashSdk.clientsLambdaMod.UnreservedConcurrentExecutions] = js.undefined
+  var UnreservedConcurrentExecutions: js.UndefOr[typings.awsDashSdk.clientsLambdaMod.UnreservedConcurrentExecutions] = js.native
 }
 
 object AccountLimit {

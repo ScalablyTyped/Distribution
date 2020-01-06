@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ChannelHlsIngestIngestEndpoint extends js.Object {
   /**
     * The password
     */
-  var password: js.UndefOr[Input[String]] = js.undefined
+  var password: js.UndefOr[Input[String]] = js.native
   /**
     * The URL
     */
-  var url: js.UndefOr[Input[String]] = js.undefined
+  var url: js.UndefOr[Input[String]] = js.native
   /**
     * The username
     */
-  var username: js.UndefOr[Input[String]] = js.undefined
+  var username: js.UndefOr[Input[String]] = js.native
 }
 
 object ChannelHlsIngestIngestEndpoint {

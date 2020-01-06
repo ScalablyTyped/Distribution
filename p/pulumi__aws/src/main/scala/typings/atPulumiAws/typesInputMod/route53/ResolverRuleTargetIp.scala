@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ResolverRuleTargetIp extends js.Object {
   /**
     * One IP address that you want to forward DNS queries to. You can specify only IPv4 addresses.
     */
-  var ip: Input[String]
+  var ip: Input[String] = js.native
   /**
     * The port at `ip` that you want to forward DNS queries to. Default value is `53`
     */
-  var port: js.UndefOr[Input[Double]] = js.undefined
+  var port: js.UndefOr[Input[Double]] = js.native
 }
 
 object ResolverRuleTargetIp {

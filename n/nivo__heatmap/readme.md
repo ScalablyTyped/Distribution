@@ -10,9 +10,9 @@ Typings are for version 0.59.2
 | ------------------ | :-------------: |
 | Full name          | @nivo/heatmap |
 | Keywords           | nivo, dataviz, react, d3, charts, heatmap |
-| # releases         | 44 |
-| # dependents       | 2 |
-| # downloads        | 46269 |
+| # releases         | 30 |
+| # dependents       | 3 |
+| # downloads        | 72680 |
 | # stars            | 0 |
 
 ## Links

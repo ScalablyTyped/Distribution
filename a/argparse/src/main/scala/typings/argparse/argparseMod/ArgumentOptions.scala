@@ -13,7 +13,7 @@ trait ArgumentOptions extends js.Object {
   var defaultValue: js.UndefOr[js.Any] = js.undefined
   var dest: js.UndefOr[String] = js.undefined
   var help: js.UndefOr[String] = js.undefined
-  var metavar: js.UndefOr[String] = js.undefined
+  var metavar: js.UndefOr[String | js.Array[String]] = js.undefined
   var nargs: js.UndefOr[String | Double] = js.undefined
   var optionStrings: js.UndefOr[js.Array[String]] = js.undefined
   var required: js.UndefOr[Boolean] = js.undefined
@@ -30,7 +30,7 @@ object ArgumentOptions {
     defaultValue: js.Any = null,
     dest: String = null,
     help: String = null,
-    metavar: String = null,
+    metavar: String | js.Array[String] = null,
     nargs: String | Double = null,
     optionStrings: js.Array[String] = null,
     required: js.UndefOr[Boolean] = js.undefined,

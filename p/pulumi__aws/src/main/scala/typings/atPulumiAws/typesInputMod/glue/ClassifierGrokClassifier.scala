@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClassifierGrokClassifier extends js.Object {
   /**
     * An identifier of the data format that the classifier matches.
     */
-  var classification: Input[String]
+  var classification: Input[String] = js.native
   /**
     * Custom grok patterns used by this classifier.
     */
-  var customPatterns: js.UndefOr[Input[String]] = js.undefined
+  var customPatterns: js.UndefOr[Input[String]] = js.native
   /**
     * The grok pattern used by this classifier.
     */
-  var grokPattern: Input[String]
+  var grokPattern: Input[String] = js.native
 }
 
 object ClassifierGrokClassifier {

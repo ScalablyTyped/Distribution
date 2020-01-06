@@ -10,9 +10,9 @@ Inline import files as data-URIs, or copy them to output
 | ------------------ | :-------------: |
 | Full name          | rollup-plugin-url |
 | Keywords           | rollup-plugin, url, inline, copy |
-| # releases         | 9 |
-| # dependents       | 25 |
-| # downloads        | 387806 |
+| # releases         | 10 |
+| # dependents       | 42 |
+| # downloads        | 744050 |
 | # stars            | 0 |
 
 ## Links

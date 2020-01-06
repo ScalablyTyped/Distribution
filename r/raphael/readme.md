@@ -10,9 +10,9 @@ JavaScript Vector Library
 | ------------------ | :-------------: |
 | Full name          | raphael |
 | Keywords           | svg, vml, javascript |
-| # releases         | 0 |
-| # dependents       | 72 |
-| # downloads        | 1847792 |
+| # releases         | 3 |
+| # dependents       | 88 |
+| # downloads        | 2864218 |
 | # stars            | 5 |
 
 ## Links

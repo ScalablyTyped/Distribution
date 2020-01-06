@@ -12,7 +12,7 @@ Bindings to GDAL (Geospatial Data Abstraction Library)
 | Keywords           | gdal, libgdal, ogr, gis, geo, geos, geography, geospatial, raster, vector, gtiff, geojson, mapping |
 | # releases         | 4 |
 | # dependents       | 29 |
-| # downloads        | 75147 |
+| # downloads        | 73078 |
 | # stars            | 8 |
 
 ## Links

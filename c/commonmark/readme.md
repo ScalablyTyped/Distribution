@@ -11,8 +11,8 @@ a strongly specified, highly compatible variant of Markdown
 | Full name          | commonmark |
 | Keywords           | markdown, commonmark, md, stmd |
 | # releases         | 2 |
-| # dependents       | 112 |
-| # downloads        | 3664716 |
+| # dependents       | 133 |
+| # downloads        | 4883077 |
 | # stars            | 10 |
 
 ## Links

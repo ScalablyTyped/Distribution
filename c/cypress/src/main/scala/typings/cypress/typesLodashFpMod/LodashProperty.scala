@@ -15,7 +15,7 @@ trait LodashProperty extends js.Object {
   def apply(path: __): LodashProperty8x2 = js.native
   def apply(path: __, `object`: js.Any): LodashProperty9x2 = js.native
   def apply[T](path: Double, `object`: NumericDictionary[T]): T = js.native
-  def apply[TObject /* <: js.Object */](path: __, `object`: TObject): LodashProperty1x2[TObject] = js.native
+  def apply[TObject /* <: js.Object */](path: __, `object`: TObject): LodashProperty2x2[TObject] = js.native
   def apply[T](path: __, `object`: NumericDictionary[T]): LodashProperty7x2[T] = js.native
   def apply[TObject /* <: js.Object */, TKey /* <: String */](path: TKey): LodashProperty1x1[TObject, TKey] = js.native
   def apply[TObject /* <: js.Object */, TKey /* <: String */](path: TKey, `object`: TObject): /* import warning: importer.ImportType#apply Failed type conversion: TObject[TKey] */ js.Any = js.native

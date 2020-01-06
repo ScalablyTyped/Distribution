@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FileAccessLog extends js.Object {
   /**
     * The file path to write access logs to. You can use /dev/stdout to send
@@ -16,13 +17,13 @@ trait FileAccessLog extends js.Object {
     Otherwise, Envoy fails to bootstrap properly.
     
     */
-  var path: FilePath
+  var path: FilePath = js.native
 }
 
 object FileAccessLog {
   @scala.inline
   def apply(path: FilePath): FileAccessLog = {
-    val __obj = js.Dynamic.literal(path = path)
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FileAccessLog]
   }

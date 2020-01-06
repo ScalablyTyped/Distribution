@@ -10,9 +10,9 @@ Syncs a cookie's value with a MobX observable, allowing observers to react to it
 | ------------------ | :-------------: |
 | Full name          | mobx-cookie |
 | Keywords           | - |
-| # releases         | 16 |
+| # releases         | 17 |
 | # dependents       | 0 |
-| # downloads        | 11887 |
+| # downloads        | 26224 |
 | # stars            | 0 |
 
 ## Links

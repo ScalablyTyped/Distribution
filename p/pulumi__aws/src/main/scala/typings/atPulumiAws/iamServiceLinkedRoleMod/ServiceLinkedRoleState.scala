@@ -5,39 +5,40 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ServiceLinkedRoleState extends js.Object {
   /**
     * The Amazon Resource Name (ARN) specifying the role.
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * The AWS service to which this role is attached. You use a string similar to a URL but without the `http://` in front. For example: `elasticbeanstalk.amazonaws.com`. To find the full list of services that support service-linked roles, check [the docs](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.html).
     */
-  val awsServiceName: js.UndefOr[Input[String]] = js.undefined
+  val awsServiceName: js.UndefOr[Input[String]] = js.native
   /**
     * The creation date of the IAM role.
     */
-  val createDate: js.UndefOr[Input[String]] = js.undefined
+  val createDate: js.UndefOr[Input[String]] = js.native
   /**
     * Additional string appended to the role name. Not all AWS services support custom suffixes.
     */
-  val customSuffix: js.UndefOr[Input[String]] = js.undefined
+  val customSuffix: js.UndefOr[Input[String]] = js.native
   /**
     * The description of the role.
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the role.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * The path of the role.
     */
-  val path: js.UndefOr[Input[String]] = js.undefined
+  val path: js.UndefOr[Input[String]] = js.native
   /**
     * The stable and unique string identifying the role.
     */
-  val uniqueId: js.UndefOr[Input[String]] = js.undefined
+  val uniqueId: js.UndefOr[Input[String]] = js.native
 }
 
 object ServiceLinkedRoleState {

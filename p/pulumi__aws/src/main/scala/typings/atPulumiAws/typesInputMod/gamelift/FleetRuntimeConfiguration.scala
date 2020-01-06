@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FleetRuntimeConfiguration extends js.Object {
   /**
     * Maximum amount of time (in seconds) that a game session can remain in status `ACTIVATING`.
     */
-  var gameSessionActivationTimeoutSeconds: js.UndefOr[Input[Double]] = js.undefined
+  var gameSessionActivationTimeoutSeconds: js.UndefOr[Input[Double]] = js.native
   /**
     * Maximum number of game sessions with status `ACTIVATING` to allow on an instance simultaneously.
     */
-  var maxConcurrentGameSessionActivations: js.UndefOr[Input[Double]] = js.undefined
+  var maxConcurrentGameSessionActivations: js.UndefOr[Input[Double]] = js.native
   /**
     * Collection of server process configurations that describe which server processes to run on each instance in a fleet. See below.
     */
-  var serverProcesses: js.UndefOr[Input[js.Array[Input[FleetRuntimeConfigurationServerProcess]]]] = js.undefined
+  var serverProcesses: js.UndefOr[Input[js.Array[Input[FleetRuntimeConfigurationServerProcess]]]] = js.native
 }
 
 object FleetRuntimeConfiguration {

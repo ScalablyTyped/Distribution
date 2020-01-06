@@ -10,9 +10,9 @@ A dependency-free CSS-driven plain JavaScript modal written in ECMAScript 2015.
 | ------------------ | :-------------: |
 | Full name          | vanilla-modal |
 | Keywords           | modal, ecmascript, harmony, es6, es2015 |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 196602 |
+| # downloads        | 368150 |
 | # stars            | 7 |
 
 ## Links

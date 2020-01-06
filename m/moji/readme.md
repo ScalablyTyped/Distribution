@@ -12,7 +12,7 @@ Typings are for version 0.5
 | Keywords           | 半角, 全角, kataカタカナ, 半角カナ, 変換 |
 | # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 96745 |
+| # downloads        | 146466 |
 | # stars            | 1 |
 
 ## Links

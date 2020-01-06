@@ -6,15 +6,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ThingPrincipalAttachmentState extends js.Object {
   /**
     * The AWS IoT Certificate ARN or Amazon Cognito Identity ID.
     */
-  val principal: js.UndefOr[Input[ARN]] = js.undefined
+  val principal: js.UndefOr[Input[ARN]] = js.native
   /**
     * The name of the thing.
     */
-  val thing: js.UndefOr[Input[String]] = js.undefined
+  val thing: js.UndefOr[Input[String]] = js.native
 }
 
 object ThingPrincipalAttachmentState {

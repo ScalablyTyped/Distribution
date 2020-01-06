@@ -10,9 +10,9 @@ Make your terminal beep
 | ------------------ | :-------------: |
 | Full name          | beeper |
 | Keywords           | beep, beeper, boop, terminal, term, cli, console, ding, ping, alert, gulpfriendly |
-| # releases         | 0 |
-| # dependents       | 44 |
-| # downloads        | 64456547 |
+| # releases         | 2 |
+| # dependents       | 52 |
+| # downloads        | 60282942 |
 | # stars            | 15 |
 
 ## Links

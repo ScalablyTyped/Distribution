@@ -12,7 +12,7 @@ Wrap history with query support
 | Keywords           | history, query, search |
 | # releases         | 4 |
 | # dependents       | 2 |
-| # downloads        | 411414 |
+| # downloads        | 900441 |
 | # stars            | 2 |
 
 ## Links

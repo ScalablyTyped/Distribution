@@ -389,15 +389,15 @@ Instantiable0[T]
   def findByIdAndUpdate(
     id: String,
     update: js.Any,
-    options: Anon_NewTrue with QueryFindOneAndUpdateOptions,
-    callback: js.Function2[/* err */ js.Any, /* res */ FindAndModifyWriteOpResultObject[T], Unit]
-  ): Query[FindAndModifyWriteOpResultObject[T]] with QueryHelpers = js.native
-  def findByIdAndUpdate(
-    id: String,
-    update: js.Any,
     options: Anon_RawResult with QueryFindOneAndUpdateOptions,
     callback: js.Function2[/* err */ js.Any, /* res */ FindAndModifyWriteOpResultObject[T | Null], Unit]
   ): (Query[FindAndModifyWriteOpResultObject[T | Null]]) with QueryHelpers = js.native
+  def findByIdAndUpdate(
+    id: String,
+    update: js.Any,
+    options: Anon_NewTrue with QueryFindOneAndUpdateOptions,
+    callback: js.Function2[/* err */ js.Any, /* res */ FindAndModifyWriteOpResultObject[T], Unit]
+  ): Query[FindAndModifyWriteOpResultObject[T]] with QueryHelpers = js.native
   def findByIdAndUpdate(id: String, update: js.Any, options: QueryFindOneAndUpdateOptions): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
   def findByIdAndUpdate(
     id: String,
@@ -407,21 +407,21 @@ Instantiable0[T]
   ): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
   def findByIdAndUpdate(id: js.Any, update: js.Any): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
   def findByIdAndUpdate(id: js.Any, update: js.Any, callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
-  def findByIdAndUpdate(id: js.Any, update: js.Any, options: Anon_New with QueryFindOneAndUpdateOptions): (DocumentQuery[T, T, js.Object]) with QueryHelpers = js.native
   def findByIdAndUpdate(id: js.Any, update: js.Any, options: Anon_RawResult with QueryFindOneAndUpdateOptions): (Query[FindAndModifyWriteOpResultObject[T | Null]]) with QueryHelpers = js.native
+  def findByIdAndUpdate(id: js.Any, update: js.Any, options: Anon_New with QueryFindOneAndUpdateOptions): (DocumentQuery[T, T, js.Object]) with QueryHelpers = js.native
   def findByIdAndUpdate(id: js.Any, update: js.Any, options: Anon_NewTrue with QueryFindOneAndUpdateOptions): Query[FindAndModifyWriteOpResultObject[T]] with QueryHelpers = js.native
-  def findByIdAndUpdate(
-    id: js.Any,
-    update: js.Any,
-    options: Anon_RawResult with QueryFindOneAndUpdateOptions,
-    callback: js.Function2[/* err */ js.Any, /* res */ FindAndModifyWriteOpResultObject[T | Null], Unit]
-  ): (Query[FindAndModifyWriteOpResultObject[T | Null]]) with QueryHelpers = js.native
   def findByIdAndUpdate(
     id: js.Any,
     update: js.Any,
     options: Anon_New with QueryFindOneAndUpdateOptions,
     callback: js.Function2[/* err */ js.Any, /* res */ T, Unit]
   ): (DocumentQuery[T, T, js.Object]) with QueryHelpers = js.native
+  def findByIdAndUpdate(
+    id: js.Any,
+    update: js.Any,
+    options: Anon_RawResult with QueryFindOneAndUpdateOptions,
+    callback: js.Function2[/* err */ js.Any, /* res */ FindAndModifyWriteOpResultObject[T | Null], Unit]
+  ): (Query[FindAndModifyWriteOpResultObject[T | Null]]) with QueryHelpers = js.native
   def findByIdAndUpdate(
     id: js.Any,
     update: js.Any,
@@ -437,21 +437,21 @@ Instantiable0[T]
   ): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
   def findByIdAndUpdate(id: Double, update: js.Any): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
   def findByIdAndUpdate(id: Double, update: js.Any, callback: js.Function2[/* err */ js.Any, /* res */ T | Null, Unit]): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
-  def findByIdAndUpdate(id: Double, update: js.Any, options: Anon_New with QueryFindOneAndUpdateOptions): (DocumentQuery[T, T, js.Object]) with QueryHelpers = js.native
   def findByIdAndUpdate(id: Double, update: js.Any, options: Anon_RawResult with QueryFindOneAndUpdateOptions): (Query[FindAndModifyWriteOpResultObject[T | Null]]) with QueryHelpers = js.native
   def findByIdAndUpdate(id: Double, update: js.Any, options: Anon_NewTrue with QueryFindOneAndUpdateOptions): Query[FindAndModifyWriteOpResultObject[T]] with QueryHelpers = js.native
-  def findByIdAndUpdate(
-    id: Double,
-    update: js.Any,
-    options: Anon_RawResult with QueryFindOneAndUpdateOptions,
-    callback: js.Function2[/* err */ js.Any, /* res */ FindAndModifyWriteOpResultObject[T | Null], Unit]
-  ): (Query[FindAndModifyWriteOpResultObject[T | Null]]) with QueryHelpers = js.native
+  def findByIdAndUpdate(id: Double, update: js.Any, options: Anon_New with QueryFindOneAndUpdateOptions): (DocumentQuery[T, T, js.Object]) with QueryHelpers = js.native
   def findByIdAndUpdate(
     id: Double,
     update: js.Any,
     options: Anon_NewTrue with QueryFindOneAndUpdateOptions,
     callback: js.Function2[/* err */ js.Any, /* res */ FindAndModifyWriteOpResultObject[T], Unit]
   ): Query[FindAndModifyWriteOpResultObject[T]] with QueryHelpers = js.native
+  def findByIdAndUpdate(
+    id: Double,
+    update: js.Any,
+    options: Anon_RawResult with QueryFindOneAndUpdateOptions,
+    callback: js.Function2[/* err */ js.Any, /* res */ FindAndModifyWriteOpResultObject[T | Null], Unit]
+  ): (Query[FindAndModifyWriteOpResultObject[T | Null]]) with QueryHelpers = js.native
   def findByIdAndUpdate(
     id: Double,
     update: js.Any,
@@ -561,20 +561,9 @@ Instantiable0[T]
     update: js.Any,
     callback: js.Function3[/* err */ js.Any, /* doc */ T | Null, /* res */ js.Any, Unit]
   ): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
-  def findOneAndUpdate(conditions: js.Any, update: js.Any, options: Anon_RawResult with QueryFindOneAndUpdateOptions): (Query[FindAndModifyWriteOpResultObject[T | Null]]) with QueryHelpers = js.native
-  def findOneAndUpdate(conditions: js.Any, update: js.Any, options: Anon_New with QueryFindOneAndUpdateOptions): Query[FindAndModifyWriteOpResultObject[T]] with QueryHelpers = js.native
   def findOneAndUpdate(conditions: js.Any, update: js.Any, options: Anon_NewTrue with QueryFindOneAndUpdateOptions): (DocumentQuery[T, T, js.Object]) with QueryHelpers = js.native
-  def findOneAndUpdate(
-    conditions: js.Any,
-    update: js.Any,
-    options: Anon_RawResult with QueryFindOneAndUpdateOptions,
-    callback: js.Function3[
-      /* err */ js.Any, 
-      /* doc */ FindAndModifyWriteOpResultObject[T | Null], 
-      /* res */ js.Any, 
-      Unit
-    ]
-  ): (Query[FindAndModifyWriteOpResultObject[T | Null]]) with QueryHelpers = js.native
+  def findOneAndUpdate(conditions: js.Any, update: js.Any, options: Anon_New with QueryFindOneAndUpdateOptions): Query[FindAndModifyWriteOpResultObject[T]] with QueryHelpers = js.native
+  def findOneAndUpdate(conditions: js.Any, update: js.Any, options: Anon_RawResult with QueryFindOneAndUpdateOptions): (Query[FindAndModifyWriteOpResultObject[T | Null]]) with QueryHelpers = js.native
   def findOneAndUpdate(
     conditions: js.Any,
     update: js.Any,
@@ -592,6 +581,17 @@ Instantiable0[T]
       Unit
     ]
   ): Query[FindAndModifyWriteOpResultObject[T]] with QueryHelpers = js.native
+  def findOneAndUpdate(
+    conditions: js.Any,
+    update: js.Any,
+    options: Anon_RawResult with QueryFindOneAndUpdateOptions,
+    callback: js.Function3[
+      /* err */ js.Any, 
+      /* doc */ FindAndModifyWriteOpResultObject[T | Null], 
+      /* res */ js.Any, 
+      Unit
+    ]
+  ): (Query[FindAndModifyWriteOpResultObject[T | Null]]) with QueryHelpers = js.native
   def findOneAndUpdate(conditions: js.Any, update: js.Any, options: QueryFindOneAndUpdateOptions): (DocumentQuery[T | Null, T, js.Object]) with QueryHelpers = js.native
   def findOneAndUpdate(
     conditions: js.Any,

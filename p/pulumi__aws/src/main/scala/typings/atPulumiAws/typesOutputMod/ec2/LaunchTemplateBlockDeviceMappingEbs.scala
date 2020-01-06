@@ -4,14 +4,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LaunchTemplateBlockDeviceMappingEbs extends js.Object {
-  var deleteOnTermination: js.UndefOr[String] = js.undefined
-  var encrypted: js.UndefOr[String] = js.undefined
-  var iops: Double
-  var kmsKeyId: js.UndefOr[String] = js.undefined
-  var snapshotId: js.UndefOr[String] = js.undefined
-  var volumeSize: Double
-  var volumeType: String
+  var deleteOnTermination: js.UndefOr[String] = js.native
+  var encrypted: js.UndefOr[String] = js.native
+  var iops: Double = js.native
+  var kmsKeyId: js.UndefOr[String] = js.native
+  var snapshotId: js.UndefOr[String] = js.native
+  var volumeSize: Double = js.native
+  var volumeType: String = js.native
 }
 
 object LaunchTemplateBlockDeviceMappingEbs {
@@ -25,11 +26,11 @@ object LaunchTemplateBlockDeviceMappingEbs {
     kmsKeyId: String = null,
     snapshotId: String = null
   ): LaunchTemplateBlockDeviceMappingEbs = {
-    val __obj = js.Dynamic.literal(iops = iops, volumeSize = volumeSize, volumeType = volumeType)
-    if (deleteOnTermination != null) __obj.updateDynamic("deleteOnTermination")(deleteOnTermination)
-    if (encrypted != null) __obj.updateDynamic("encrypted")(encrypted)
-    if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId)
-    if (snapshotId != null) __obj.updateDynamic("snapshotId")(snapshotId)
+    val __obj = js.Dynamic.literal(iops = iops.asInstanceOf[js.Any], volumeSize = volumeSize.asInstanceOf[js.Any], volumeType = volumeType.asInstanceOf[js.Any])
+    if (deleteOnTermination != null) __obj.updateDynamic("deleteOnTermination")(deleteOnTermination.asInstanceOf[js.Any])
+    if (encrypted != null) __obj.updateDynamic("encrypted")(encrypted.asInstanceOf[js.Any])
+    if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
+    if (snapshotId != null) __obj.updateDynamic("snapshotId")(snapshotId.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchTemplateBlockDeviceMappingEbs]
   }
 }

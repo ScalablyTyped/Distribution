@@ -9,9 +9,9 @@ Typings are for version 24.9.0
 | ------------------ | :-------------: |
 | Full name          | jest-jasmine2 |
 | Keywords           | - |
-| # releases         | 87 |
-| # dependents       | 18 |
-| # downloads        | 219966056 |
+| # releases         | 75 |
+| # dependents       | 20 |
+| # downloads        | 236844406 |
 | # stars            | 1 |
 
 ## Links

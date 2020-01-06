@@ -10,9 +10,9 @@ Middleware composition utility
 | ------------------ | :-------------: |
 | Full name          | mali-compose |
 | Keywords           | mali, grpc, service, server, microservice |
-| # releases         | 4 |
-| # dependents       | 6 |
-| # downloads        | 58603 |
+| # releases         | 3 |
+| # dependents       | 3 |
+| # downloads        | 30090 |
 | # stars            | 0 |
 
 ## Links

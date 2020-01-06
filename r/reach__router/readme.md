@@ -10,9 +10,9 @@ Next generation Routing for React.
 | ------------------ | :-------------: |
 | Full name          | @reach/router |
 | Keywords           | react, react router |
-| # releases         | 23 |
-| # dependents       | 50 |
-| # downloads        | 5459048 |
+| # releases         | 24 |
+| # dependents       | 135 |
+| # downloads        | 30248173 |
 | # stars            | 0 |
 
 ## Links

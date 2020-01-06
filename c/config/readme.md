@@ -9,10 +9,10 @@ Configuration control for production node deployments
 | ------------------ | :-------------: |
 | Full name          | config |
 | Keywords           | conf, config, configuration, node-config, config-node, env, environment |
-| # releases         | 17 |
-| # dependents       | 1499 |
-| # downloads        | 13965065 |
-| # stars            | 230 |
+| # releases         | 19 |
+| # dependents       | 1712 |
+| # downloads        | 18913906 |
+| # stars            | 231 |
 
 ## Links
 - [Homepage](http://lorenwest.github.com/node-config)

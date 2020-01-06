@@ -161,11 +161,11 @@ trait MathJsStatic extends FactoryDependencies {
     */
   def arg(x: Double): Double = js.native
   def arg(x: BigNumber): BigNumber = js.native
-  def arg(x: Complex): Double = js.native
+  def arg(x: Complex): BigNumber = js.native
   def arg(x: MathArray): MathArray = js.native
   def arg(x: Matrix): Matrix = js.native
   @JSName("arg")
-  def arg_BigNumber(x: Complex): BigNumber = js.native
+  def arg_Double(x: Complex): Double = js.native
   /**
     * Calculate the inverse secant of a value. For matrices, the function
     * is evaluated element wise.
@@ -1095,6 +1095,7 @@ trait MathJsStatic extends FactoryDependencies {
     * @returns A help object
     */
   def help(search: js.Function0[_]): Help = js.native
+  def hypot(args: BigNumber*): BigNumber = js.native
   /**
     * Calculate the hypotenusa of a list with values. The hypotenusa is
     * defined as: hypot(a, b, c, ...) = sqrt(a^2 + b^2 + c^2 + ...) For
@@ -1105,9 +1106,8 @@ trait MathJsStatic extends FactoryDependencies {
     * whole matrix.
     * @returns Returns the hypothenuse of the input values.
     */
-  def hypot(args: Double*): Double = js.native
   @JSName("hypot")
-  def hypot_BigNumber(args: BigNumber*): BigNumber = js.native
+  def hypot_Double(args: Double*): Double = js.native
   /**
     * @param m The x dimension for the matrix
     * @param n The y dimension for the matrix

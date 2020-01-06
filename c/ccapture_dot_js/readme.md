@@ -11,8 +11,8 @@ A library to capture canvas-based animations at a fixed framerate
 | Full name          | ccapture.js |
 | Keywords           | capture, canvas, webgl, animation |
 | # releases         | 4 |
-| # dependents       | 7 |
-| # downloads        | 6894 |
+| # dependents       | 6 |
+| # downloads        | 8782 |
 | # stars            | 3 |
 
 ## Links

@@ -9,19 +9,19 @@ object atMaterialListStrings {
   sealed trait `Dotmdc-list-item buttonColonnotLeftparenthesisColondisabledRightparenthesisComma Dotmdc-list-item a` extends js.Object
   
   @js.native
-  sealed trait `Dotmdc-list-item buttonColonnotLeftparenthesisColondisabledRightparenthesisComma Dotmdc-list-item aComma Dotmdc-list-item inputLeftsquarebrackettypeEqualssignQuotationmarkradioQuotationmarkRightsquarebracketColonnotLeftparenthesisColondisabledRightparenthesisComma Dotmdc-list-item inputLeftsquarebrackettypeEqualssignQuotationmarkcheckboxQuotationmarkRightsquarebracketColonnotLeftparenthesisColondisabledRightparenthesis` extends js.Object
+  sealed trait `Dotmdc-list-item buttonColonnotLeftparenthesisColondisabledRightparenthesisComma Dotmdc-list-item aComma Dotmdc-list-item input[typeEqualssignQuotationmarkradioQuotationmark]ColonnotLeftparenthesisColondisabledRightparenthesisComma Dotmdc-list-item input[typeEqualssignQuotationmarkcheckboxQuotationmark]ColonnotLeftparenthesisColondisabledRightparenthesis` extends js.Object
   
   @js.native
   sealed trait `Dotmdc-list-itemColonnotLeftparenthesisDotmdc-list-item--disabledRightparenthesis` extends js.Object
   
   @js.native
-  sealed trait LeftsquarebracketroleEqualssignQuotationmarkcheckboxQuotationmarkRightsquarebracket extends js.Object
+  sealed trait `[roleEqualssignQuotationmarkcheckboxQuotationmark]` extends js.Object
   
   @js.native
-  sealed trait `LeftsquarebracketroleEqualssignQuotationmarkcheckboxQuotationmarkRightsquarebracketLeftsquarebracketaria-checkedEqualssignQuotationmarktrueQuotationmarkRightsquarebracket` extends js.Object
+  sealed trait `[roleEqualssignQuotationmarkcheckboxQuotationmark][aria-checkedEqualssignQuotationmarktrueQuotationmark]` extends js.Object
   
   @js.native
-  sealed trait `LeftsquarebracketroleEqualssignQuotationmarkradioQuotationmarkRightsquarebracketLeftsquarebracketaria-checkedEqualssignQuotationmarktrueQuotationmarkRightsquarebracket` extends js.Object
+  sealed trait `[roleEqualssignQuotationmarkradioQuotationmark][aria-checkedEqualssignQuotationmarktrueQuotationmark]` extends js.Object
   
   @js.native
   sealed trait `aria-checked` extends js.Object
@@ -36,13 +36,13 @@ object atMaterialListStrings {
   sealed trait horizontal extends js.Object
   
   @js.native
-  sealed trait inputLeftsquarebrackettypeEqualssignQuotationmarkcheckboxQuotationmarkRightsquarebracketColonnotLeftparenthesisColondisabledRightparenthesis extends js.Object
+  sealed trait `input[typeEqualssignQuotationmarkcheckboxQuotationmark]ColonnotLeftparenthesisColondisabledRightparenthesis` extends js.Object
   
   @js.native
-  sealed trait `inputLeftsquarebrackettypeEqualssignQuotationmarkcheckboxQuotationmarkRightsquarebracketColonnotLeftparenthesisColondisabledRightparenthesisComma inputLeftsquarebrackettypeEqualssignQuotationmarkradioQuotationmarkRightsquarebracketColonnotLeftparenthesisColondisabledRightparenthesis` extends js.Object
+  sealed trait `input[typeEqualssignQuotationmarkcheckboxQuotationmark]ColonnotLeftparenthesisColondisabledRightparenthesisComma input[typeEqualssignQuotationmarkradioQuotationmark]ColonnotLeftparenthesisColondisabledRightparenthesis` extends js.Object
   
   @js.native
-  sealed trait inputLeftsquarebrackettypeEqualssignQuotationmarkradioQuotationmarkRightsquarebracketColonnotLeftparenthesisColondisabledRightparenthesis extends js.Object
+  sealed trait `input[typeEqualssignQuotationmarkradioQuotationmark]ColonnotLeftparenthesisColondisabledRightparenthesis` extends js.Object
   
   @js.native
   sealed trait `mdc-list` extends js.Object
@@ -59,15 +59,15 @@ object atMaterialListStrings {
   @scala.inline
   def `Dotmdc-list-item buttonColonnotLeftparenthesisColondisabledRightparenthesisComma Dotmdc-list-item a`: `Dotmdc-list-item buttonColonnotLeftparenthesisColondisabledRightparenthesisComma Dotmdc-list-item a` = ".mdc-list-item button:not(:disabled), .mdc-list-item a".asInstanceOf[`Dotmdc-list-item buttonColonnotLeftparenthesisColondisabledRightparenthesisComma Dotmdc-list-item a`]
   @scala.inline
-  def `Dotmdc-list-item buttonColonnotLeftparenthesisColondisabledRightparenthesisComma Dotmdc-list-item aComma Dotmdc-list-item inputLeftsquarebrackettypeEqualssignQuotationmarkradioQuotationmarkRightsquarebracketColonnotLeftparenthesisColondisabledRightparenthesisComma Dotmdc-list-item inputLeftsquarebrackettypeEqualssignQuotationmarkcheckboxQuotationmarkRightsquarebracketColonnotLeftparenthesisColondisabledRightparenthesis`: `Dotmdc-list-item buttonColonnotLeftparenthesisColondisabledRightparenthesisComma Dotmdc-list-item aComma Dotmdc-list-item inputLeftsquarebrackettypeEqualssignQuotationmarkradioQuotationmarkRightsquarebracketColonnotLeftparenthesisColondisabledRightparenthesisComma Dotmdc-list-item inputLeftsquarebrackettypeEqualssignQuotationmarkcheckboxQuotationmarkRightsquarebracketColonnotLeftparenthesisColondisabledRightparenthesis` = ".mdc-list-item button:not(:disabled), .mdc-list-item a, .mdc-list-item input[type=\"radio\"]:not(:disabled), .mdc-list-item input[type=\"checkbox\"]:not(:disabled)".asInstanceOf[`Dotmdc-list-item buttonColonnotLeftparenthesisColondisabledRightparenthesisComma Dotmdc-list-item aComma Dotmdc-list-item inputLeftsquarebrackettypeEqualssignQuotationmarkradioQuotationmarkRightsquarebracketColonnotLeftparenthesisColondisabledRightparenthesisComma Dotmdc-list-item inputLeftsquarebrackettypeEqualssignQuotationmarkcheckboxQuotationmarkRightsquarebracketColonnotLeftparenthesisColondisabledRightparenthesis`]
+  def `Dotmdc-list-item buttonColonnotLeftparenthesisColondisabledRightparenthesisComma Dotmdc-list-item aComma Dotmdc-list-item input[typeEqualssignQuotationmarkradioQuotationmark]ColonnotLeftparenthesisColondisabledRightparenthesisComma Dotmdc-list-item input[typeEqualssignQuotationmarkcheckboxQuotationmark]ColonnotLeftparenthesisColondisabledRightparenthesis`: `Dotmdc-list-item buttonColonnotLeftparenthesisColondisabledRightparenthesisComma Dotmdc-list-item aComma Dotmdc-list-item input[typeEqualssignQuotationmarkradioQuotationmark]ColonnotLeftparenthesisColondisabledRightparenthesisComma Dotmdc-list-item input[typeEqualssignQuotationmarkcheckboxQuotationmark]ColonnotLeftparenthesisColondisabledRightparenthesis` = ".mdc-list-item button:not(:disabled), .mdc-list-item a, .mdc-list-item input[type=\"radio\"]:not(:disabled), .mdc-list-item input[type=\"checkbox\"]:not(:disabled)".asInstanceOf[`Dotmdc-list-item buttonColonnotLeftparenthesisColondisabledRightparenthesisComma Dotmdc-list-item aComma Dotmdc-list-item input[typeEqualssignQuotationmarkradioQuotationmark]ColonnotLeftparenthesisColondisabledRightparenthesisComma Dotmdc-list-item input[typeEqualssignQuotationmarkcheckboxQuotationmark]ColonnotLeftparenthesisColondisabledRightparenthesis`]
   @scala.inline
   def `Dotmdc-list-itemColonnotLeftparenthesisDotmdc-list-item--disabledRightparenthesis`: `Dotmdc-list-itemColonnotLeftparenthesisDotmdc-list-item--disabledRightparenthesis` = ".mdc-list-item:not(.mdc-list-item--disabled)".asInstanceOf[`Dotmdc-list-itemColonnotLeftparenthesisDotmdc-list-item--disabledRightparenthesis`]
   @scala.inline
-  def LeftsquarebracketroleEqualssignQuotationmarkcheckboxQuotationmarkRightsquarebracket: LeftsquarebracketroleEqualssignQuotationmarkcheckboxQuotationmarkRightsquarebracket = "[role=\"checkbox\"]".asInstanceOf[LeftsquarebracketroleEqualssignQuotationmarkcheckboxQuotationmarkRightsquarebracket]
+  def `[roleEqualssignQuotationmarkcheckboxQuotationmark]`: `[roleEqualssignQuotationmarkcheckboxQuotationmark]` = "[role=\"checkbox\"]".asInstanceOf[`[roleEqualssignQuotationmarkcheckboxQuotationmark]`]
   @scala.inline
-  def `LeftsquarebracketroleEqualssignQuotationmarkcheckboxQuotationmarkRightsquarebracketLeftsquarebracketaria-checkedEqualssignQuotationmarktrueQuotationmarkRightsquarebracket`: `LeftsquarebracketroleEqualssignQuotationmarkcheckboxQuotationmarkRightsquarebracketLeftsquarebracketaria-checkedEqualssignQuotationmarktrueQuotationmarkRightsquarebracket` = "[role=\"checkbox\"][aria-checked=\"true\"]".asInstanceOf[`LeftsquarebracketroleEqualssignQuotationmarkcheckboxQuotationmarkRightsquarebracketLeftsquarebracketaria-checkedEqualssignQuotationmarktrueQuotationmarkRightsquarebracket`]
+  def `[roleEqualssignQuotationmarkcheckboxQuotationmark][aria-checkedEqualssignQuotationmarktrueQuotationmark]`: `[roleEqualssignQuotationmarkcheckboxQuotationmark][aria-checkedEqualssignQuotationmarktrueQuotationmark]` = "[role=\"checkbox\"][aria-checked=\"true\"]".asInstanceOf[`[roleEqualssignQuotationmarkcheckboxQuotationmark][aria-checkedEqualssignQuotationmarktrueQuotationmark]`]
   @scala.inline
-  def `LeftsquarebracketroleEqualssignQuotationmarkradioQuotationmarkRightsquarebracketLeftsquarebracketaria-checkedEqualssignQuotationmarktrueQuotationmarkRightsquarebracket`: `LeftsquarebracketroleEqualssignQuotationmarkradioQuotationmarkRightsquarebracketLeftsquarebracketaria-checkedEqualssignQuotationmarktrueQuotationmarkRightsquarebracket` = "[role=\"radio\"][aria-checked=\"true\"]".asInstanceOf[`LeftsquarebracketroleEqualssignQuotationmarkradioQuotationmarkRightsquarebracketLeftsquarebracketaria-checkedEqualssignQuotationmarktrueQuotationmarkRightsquarebracket`]
+  def `[roleEqualssignQuotationmarkradioQuotationmark][aria-checkedEqualssignQuotationmarktrueQuotationmark]`: `[roleEqualssignQuotationmarkradioQuotationmark][aria-checkedEqualssignQuotationmarktrueQuotationmark]` = "[role=\"radio\"][aria-checked=\"true\"]".asInstanceOf[`[roleEqualssignQuotationmarkradioQuotationmark][aria-checkedEqualssignQuotationmarktrueQuotationmark]`]
   @scala.inline
   def `aria-checked`: `aria-checked` = "aria-checked".asInstanceOf[`aria-checked`]
   @scala.inline
@@ -77,11 +77,11 @@ object atMaterialListStrings {
   @scala.inline
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   @scala.inline
-  def inputLeftsquarebrackettypeEqualssignQuotationmarkcheckboxQuotationmarkRightsquarebracketColonnotLeftparenthesisColondisabledRightparenthesis: inputLeftsquarebrackettypeEqualssignQuotationmarkcheckboxQuotationmarkRightsquarebracketColonnotLeftparenthesisColondisabledRightparenthesis = "input[type=\"checkbox\"]:not(:disabled)".asInstanceOf[inputLeftsquarebrackettypeEqualssignQuotationmarkcheckboxQuotationmarkRightsquarebracketColonnotLeftparenthesisColondisabledRightparenthesis]
+  def `input[typeEqualssignQuotationmarkcheckboxQuotationmark]ColonnotLeftparenthesisColondisabledRightparenthesis`: `input[typeEqualssignQuotationmarkcheckboxQuotationmark]ColonnotLeftparenthesisColondisabledRightparenthesis` = "input[type=\"checkbox\"]:not(:disabled)".asInstanceOf[`input[typeEqualssignQuotationmarkcheckboxQuotationmark]ColonnotLeftparenthesisColondisabledRightparenthesis`]
   @scala.inline
-  def `inputLeftsquarebrackettypeEqualssignQuotationmarkcheckboxQuotationmarkRightsquarebracketColonnotLeftparenthesisColondisabledRightparenthesisComma inputLeftsquarebrackettypeEqualssignQuotationmarkradioQuotationmarkRightsquarebracketColonnotLeftparenthesisColondisabledRightparenthesis`: `inputLeftsquarebrackettypeEqualssignQuotationmarkcheckboxQuotationmarkRightsquarebracketColonnotLeftparenthesisColondisabledRightparenthesisComma inputLeftsquarebrackettypeEqualssignQuotationmarkradioQuotationmarkRightsquarebracketColonnotLeftparenthesisColondisabledRightparenthesis` = "input[type=\"checkbox\"]:not(:disabled), input[type=\"radio\"]:not(:disabled)".asInstanceOf[`inputLeftsquarebrackettypeEqualssignQuotationmarkcheckboxQuotationmarkRightsquarebracketColonnotLeftparenthesisColondisabledRightparenthesisComma inputLeftsquarebrackettypeEqualssignQuotationmarkradioQuotationmarkRightsquarebracketColonnotLeftparenthesisColondisabledRightparenthesis`]
+  def `input[typeEqualssignQuotationmarkcheckboxQuotationmark]ColonnotLeftparenthesisColondisabledRightparenthesisComma input[typeEqualssignQuotationmarkradioQuotationmark]ColonnotLeftparenthesisColondisabledRightparenthesis`: `input[typeEqualssignQuotationmarkcheckboxQuotationmark]ColonnotLeftparenthesisColondisabledRightparenthesisComma input[typeEqualssignQuotationmarkradioQuotationmark]ColonnotLeftparenthesisColondisabledRightparenthesis` = "input[type=\"checkbox\"]:not(:disabled), input[type=\"radio\"]:not(:disabled)".asInstanceOf[`input[typeEqualssignQuotationmarkcheckboxQuotationmark]ColonnotLeftparenthesisColondisabledRightparenthesisComma input[typeEqualssignQuotationmarkradioQuotationmark]ColonnotLeftparenthesisColondisabledRightparenthesis`]
   @scala.inline
-  def inputLeftsquarebrackettypeEqualssignQuotationmarkradioQuotationmarkRightsquarebracketColonnotLeftparenthesisColondisabledRightparenthesis: inputLeftsquarebrackettypeEqualssignQuotationmarkradioQuotationmarkRightsquarebracketColonnotLeftparenthesisColondisabledRightparenthesis = "input[type=\"radio\"]:not(:disabled)".asInstanceOf[inputLeftsquarebrackettypeEqualssignQuotationmarkradioQuotationmarkRightsquarebracketColonnotLeftparenthesisColondisabledRightparenthesis]
+  def `input[typeEqualssignQuotationmarkradioQuotationmark]ColonnotLeftparenthesisColondisabledRightparenthesis`: `input[typeEqualssignQuotationmarkradioQuotationmark]ColonnotLeftparenthesisColondisabledRightparenthesis` = "input[type=\"radio\"]:not(:disabled)".asInstanceOf[`input[typeEqualssignQuotationmarkradioQuotationmark]ColonnotLeftparenthesisColondisabledRightparenthesis`]
   @scala.inline
   def `mdc-list`: `mdc-list` = "mdc-list".asInstanceOf[`mdc-list`]
   @scala.inline

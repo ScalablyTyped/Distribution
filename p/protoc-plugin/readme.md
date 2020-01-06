@@ -10,9 +10,9 @@ Create protoc code-generation plugins easily in nodejs
 | ------------------ | :-------------: |
 | Full name          | protoc-plugin |
 | Keywords           | proto, protobuf, protoc, plugin |
-| # releases         | 2 |
-| # dependents       | 5 |
-| # downloads        | 2165 |
+| # releases         | 0 |
+| # dependents       | 8 |
+| # downloads        | 6780 |
 | # stars            | 0 |
 
 ## Links

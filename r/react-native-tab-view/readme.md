@@ -10,9 +10,9 @@ Tab view component for React Native
 | ------------------ | :-------------: |
 | Full name          | react-native-tab-view |
 | Keywords           | react-native-component, react-component, react-native, ios, android, tab, swipe, scrollable, coverflow |
-| # releases         | 43 |
-| # dependents       | 55 |
-| # downloads        | 8088642 |
+| # releases         | 50 |
+| # dependents       | 67 |
+| # downloads        | 12694699 |
 | # stars            | 8 |
 
 ## Links

@@ -10,9 +10,9 @@ standalone stripe checkout handler
 | ------------------ | :-------------: |
 | Full name          | stripe-checkout |
 | Keywords           | stripe |
-| # releases         | 5 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 5981 |
+| # downloads        | 7422 |
 | # stars            | 0 |
 
 ## Links

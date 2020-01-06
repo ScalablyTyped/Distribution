@@ -34,6 +34,6 @@ object applyMiddleware extends js.Object {
     middleware3: Middleware[Ext3, S, _],
     middleware4: Middleware[Ext4, S, _],
     middleware5: Middleware[Ext5, S, _]
-  ): StoreEnhancer[Anon_DispatchExt1Ext2Ext3Ext4[Ext1, Ext3, Ext5, Ext4, Ext2], js.Object] = js.native
+  ): StoreEnhancer[Anon_DispatchExt1Ext2Ext3Ext4[Ext1, Ext2, Ext3, Ext4, Ext5], js.Object] = js.native
 }
 

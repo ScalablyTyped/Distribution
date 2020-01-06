@@ -17,7 +17,7 @@ object macrotaskMod extends js.Object {
   def clear(cancel: CancelToken): Unit = js.native
   def run[TArgs /* <: js.Array[_] */](
     task: js.Function1[/* args */ TArgs, Unit],
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type TArgs is not an array type */ args: TArgs
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: TArgs
   ): CancelToken = js.native
 }
 

@@ -4,25 +4,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ChannelHlsIngestIngestEndpoint extends js.Object {
   /**
     * The password
     */
-  var password: String
+  var password: String = js.native
   /**
     * The URL
     */
-  var url: String
+  var url: String = js.native
   /**
     * The username
     */
-  var username: String
+  var username: String = js.native
 }
 
 object ChannelHlsIngestIngestEndpoint {
   @scala.inline
   def apply(password: String, url: String, username: String): ChannelHlsIngestIngestEndpoint = {
-    val __obj = js.Dynamic.literal(password = password, url = url, username = username)
+    val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ChannelHlsIngestIngestEndpoint]
   }

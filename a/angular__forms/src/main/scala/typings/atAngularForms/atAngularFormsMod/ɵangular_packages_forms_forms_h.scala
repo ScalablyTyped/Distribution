@@ -8,18 +8,18 @@ import scala.scalajs.js.annotation._
 @js.native
 object ɵangular_packages_forms_forms_h extends js.Object {
   @JSName("[class.ng-dirty]")
-  var `LeftsquarebracketclassDotng-dirtyRightsquarebracket`: String = js.native
+  var `[classDotng-dirty]`: String = js.native
   @JSName("[class.ng-invalid]")
-  var `LeftsquarebracketclassDotng-invalidRightsquarebracket`: String = js.native
+  var `[classDotng-invalid]`: String = js.native
   @JSName("[class.ng-pending]")
-  var `LeftsquarebracketclassDotng-pendingRightsquarebracket`: String = js.native
+  var `[classDotng-pending]`: String = js.native
   @JSName("[class.ng-pristine]")
-  var `LeftsquarebracketclassDotng-pristineRightsquarebracket`: String = js.native
+  var `[classDotng-pristine]`: String = js.native
   @JSName("[class.ng-touched]")
-  var `LeftsquarebracketclassDotng-touchedRightsquarebracket`: String = js.native
+  var `[classDotng-touched]`: String = js.native
   @JSName("[class.ng-untouched]")
-  var `LeftsquarebracketclassDotng-untouchedRightsquarebracket`: String = js.native
+  var `[classDotng-untouched]`: String = js.native
   @JSName("[class.ng-valid]")
-  var `LeftsquarebracketclassDotng-validRightsquarebracket`: String = js.native
+  var `[classDotng-valid]`: String = js.native
 }
 

@@ -12,7 +12,7 @@ A validator for OpenAPI documents.
 | Keywords           | openapi, schema, validator |
 | # releases         | 9 |
 | # dependents       | 12 |
-| # downloads        | 392953 |
+| # downloads        | 475749 |
 | # stars            | 0 |
 
 ## Links

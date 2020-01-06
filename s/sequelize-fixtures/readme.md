@@ -10,9 +10,9 @@ sequelize fixture loader
 | ------------------ | :-------------: |
 | Full name          | sequelize-fixtures |
 | Keywords           | sequelize, fixtures |
-| # releases         | 5 |
+| # releases         | 10 |
 | # dependents       | 8 |
-| # downloads        | 465209 |
+| # downloads        | 405789 |
 | # stars            | 7 |
 
 ## Links

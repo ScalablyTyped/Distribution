@@ -9,9 +9,9 @@ Typings are for version 0.1.0-preview.2
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/middleware-ec2-copysnapshot |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 0 |
-| # downloads        | 251 |
+| # releases         | 12 |
+| # dependents       | 2 |
+| # downloads        | 538 |
 | # stars            | 0 |
 
 ## Links

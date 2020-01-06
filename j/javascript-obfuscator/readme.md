@@ -10,9 +10,9 @@ JavaScript obfuscator
 | ------------------ | :-------------: |
 | Full name          | javascript-obfuscator |
 | Keywords           | obfuscator, obfuscation, uglify, crush, code protection, javascript obfuscator, js obfuscator |
-| # releases         | 44 |
-| # dependents       | 44 |
-| # downloads        | 757578 |
+| # releases         | 31 |
+| # dependents       | 61 |
+| # downloads        | 913208 |
 | # stars            | 12 |
 
 ## Links

@@ -10,9 +10,9 @@ Element React module for WordPress.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/element |
 | Keywords           | wordpress, element, react |
-| # releases         | 23 |
-| # dependents       | 22 |
-| # downloads        | 154343 |
+| # releases         | 33 |
+| # dependents       | 30 |
+| # downloads        | 347778 |
 | # stars            | 0 |
 
 ## Links

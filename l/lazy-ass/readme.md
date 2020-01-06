@@ -11,8 +11,8 @@ Lazy assertions without performance penalty
 | Full name          | lazy-ass |
 | Keywords           | assertion, assertions, browser, debugging, defensive, lazy, node |
 | # releases         | 0 |
-| # dependents       | 146 |
-| # downloads        | 9756076 |
+| # dependents       | 148 |
+| # downloads        | 24934063 |
 | # stars            | 1 |
 
 ## Links

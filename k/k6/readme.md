@@ -10,9 +10,9 @@ Dummy package for autocompleting k6 scripts.
 | ------------------ | :-------------: |
 | Full name          | k6 |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 6752 |
+| # downloads        | 28011 |
 | # stars            | 0 |
 
 ## Links

@@ -11,8 +11,8 @@ Find a free port.
 | Full name          | freeport |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 86 |
-| # downloads        | 1793849 |
+| # dependents       | 89 |
+| # downloads        | 1754633 |
 | # stars            | 7 |
 
 ## Links

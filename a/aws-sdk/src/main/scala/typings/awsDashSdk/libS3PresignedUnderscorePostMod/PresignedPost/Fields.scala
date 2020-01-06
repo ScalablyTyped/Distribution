@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Fields
   extends /**
   * Additional keys that must be included in the form to be submitted. This
@@ -17,12 +18,12 @@ trait Fields
     * upload. Composed of the conditions and expiration provided to
     * s3.createPresignedPost
     */
-  var Policy: String
+  var Policy: String = js.native
   /**
     * A hex-encoded HMAC of the POST policy, signed with the credentials
     * provided to the S3 client.
     */
-  var `X-Amz-Signature`: String
+  var `X-Amz-Signature`: String = js.native
 }
 
 object Fields {
@@ -37,9 +38,9 @@ object Fields {
     */
   /* key */ StringDictionary[String] = null
   ): Fields = {
-    val __obj = js.Dynamic.literal(Policy = Policy)
-    __obj.updateDynamic("X-Amz-Signature")(`X-Amz-Signature`)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal(Policy = Policy.asInstanceOf[js.Any])
+    __obj.updateDynamic("X-Amz-Signature")(`X-Amz-Signature`.asInstanceOf[js.Any])
+    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Fields]
   }
 }

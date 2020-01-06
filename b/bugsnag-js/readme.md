@@ -10,9 +10,9 @@ Automatically detect JavaScript errors, collect detailed diagnostic information,
 | ------------------ | :-------------: |
 | Full name          | bugsnag-js |
 | Keywords           | exception, bugsnag, error, JavaScript, browsers, monitoring, reporting, client-side |
-| # releases         | 55 |
+| # releases         | 27 |
 | # dependents       | 14 |
-| # downloads        | 3150856 |
+| # downloads        | 3020484 |
 | # stars            | 2 |
 
 ## Links

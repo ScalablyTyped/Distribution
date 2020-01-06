@@ -1,8 +1,5 @@
 package typings.reactDashWidgets.libNumberPickerMod
 
-import typings.react.reactMod.Key
-import typings.react.reactMod.LegacyRef
-import typings.react.reactMod.ReactNode
 import typings.reactDashWidgets.libCommonPropsMod.AutoFocus
 import typings.reactDashWidgets.libCommonPropsMod.ReactWidgetsCommonProps
 import typings.std.KeyboardEvent
@@ -11,7 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait NumberPickerProps
-  extends ReactWidgetsCommonProps[NumberPickerClass]
+  extends ReactWidgetsCommonProps
      with AutoFocus {
   /**
     * Set the culture of the NumberPicker, passed to the configured localizer.
@@ -99,7 +96,6 @@ object NumberPickerProps {
   @scala.inline
   def apply(
     autoFocus: js.UndefOr[Boolean] = js.undefined,
-    children: ReactNode = null,
     culture: String = null,
     defaultValue: Int | Double = null,
     disabled: Boolean | js.Array[_] = null,
@@ -107,7 +103,6 @@ object NumberPickerProps {
     id: String = null,
     inputProps: js.Object = null,
     isRtl: js.UndefOr[Boolean] = js.undefined,
-    key: Key = null,
     max: Int | Double = null,
     messages: NumberPickerMessages = null,
     min: Int | Double = null,
@@ -120,13 +115,11 @@ object NumberPickerProps {
     placeholder: String = null,
     precision: Int | Double = null,
     readOnly: Boolean | js.Array[_] = null,
-    ref: LegacyRef[NumberPickerClass] = null,
     step: Int | Double = null,
     value: Int | Double = null
   ): NumberPickerProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (culture != null) __obj.updateDynamic("culture")(culture.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
@@ -134,7 +127,6 @@ object NumberPickerProps {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps.asInstanceOf[js.Any])
     if (!js.isUndefined(isRtl)) __obj.updateDynamic("isRtl")(isRtl.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
@@ -147,7 +139,6 @@ object NumberPickerProps {
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
     if (readOnly != null) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[NumberPickerProps]

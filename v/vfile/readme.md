@@ -10,9 +10,9 @@ Virtual file format for text processing
 | ------------------ | :-------------: |
 | Full name          | vfile |
 | Keywords           | virtual, file, text, processing, message, warning, error, remark, retext |
-| # releases         | 7 |
-| # dependents       | 67 |
-| # downloads        | 45718737 |
+| # releases         | 6 |
+| # dependents       | 81 |
+| # downloads        | 126783286 |
 | # stars            | 2 |
 
 ## Links

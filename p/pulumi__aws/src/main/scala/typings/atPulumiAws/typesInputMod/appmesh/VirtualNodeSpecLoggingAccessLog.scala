@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VirtualNodeSpecLoggingAccessLog extends js.Object {
   /**
     * The file object to send virtual node access logs to.
     */
-  var file: js.UndefOr[Input[VirtualNodeSpecLoggingAccessLogFile]] = js.undefined
+  var file: js.UndefOr[Input[VirtualNodeSpecLoggingAccessLogFile]] = js.native
 }
 
 object VirtualNodeSpecLoggingAccessLog {

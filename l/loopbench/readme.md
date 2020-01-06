@@ -10,9 +10,9 @@ Benchmark your event loop
 | ------------------ | :-------------: |
 | Full name          | loopbench |
 | Keywords           | benchmark, event, loop |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 111422 |
+| # downloads        | 311781 |
 | # stars            | 1 |
 
 ## Links

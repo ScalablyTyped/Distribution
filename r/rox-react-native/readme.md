@@ -10,13 +10,13 @@ Rollout.io ROX JS SDK Client
 | ------------------ | :-------------: |
 | Full name          | rox-react-native |
 | Keywords           | feature-flag, feature-flags, remote-configuration, remote-variable, rollout, rox, flags, flag, configuration, remote-control, rollout.io |
-| # releases         | 37 |
+| # releases         | 45 |
 | # dependents       | 0 |
-| # downloads        | 15304 |
+| # downloads        | 84159 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://rollout.io/)
+- [Homepage](https://rollout.io)
 - [Npm](https://www.npmjs.com/package/rox-react-native)
     
 

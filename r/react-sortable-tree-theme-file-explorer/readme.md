@@ -10,9 +10,9 @@ File explorer theme for react-sortable-tree
 | ------------------ | :-------------: |
 | Full name          | react-sortable-tree-theme-file-explorer |
 | Keywords           | react, react-component |
-| # releases         | 6 |
-| # dependents       | 1 |
-| # downloads        | 92234 |
+| # releases         | 3 |
+| # dependents       | 3 |
+| # downloads        | 141148 |
 | # stars            | 2 |
 
 ## Links

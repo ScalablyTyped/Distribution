@@ -10,9 +10,9 @@ a fully tested and covered polyfill for new DOM Level 4 entries
 | ------------------ | :-------------: |
 | Full name          | dom4 |
 | Keywords           | DOM, Level 4, classList, CustomEvent, DOM4 |
-| # releases         | 12 |
-| # dependents       | 28 |
-| # downloads        | 2009600 |
+| # releases         | 10 |
+| # dependents       | 37 |
+| # downloads        | 3985033 |
 | # stars            | 4 |
 
 ## Links

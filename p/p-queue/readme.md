@@ -10,9 +10,9 @@ Promise queue with concurrency control
 | ------------------ | :-------------: |
 | Full name          | p-queue |
 | Keywords           | promise, queue, enqueue, limit, limited, concurrency, throttle, throat, rate, batch, ratelimit, priority, priorityqueue, fifo, job, task, async, await, promises, bluebird |
-| # releases         | 14 |
-| # dependents       | 181 |
-| # downloads        | 9898017 |
+| # releases         | 17 |
+| # dependents       | 303 |
+| # downloads        | 30442647 |
 | # stars            | 3 |
 
 ## Links

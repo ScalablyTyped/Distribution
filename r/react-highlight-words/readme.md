@@ -10,9 +10,9 @@ React component to highlight words within a larger body of text
 | ------------------ | :-------------: |
 | Full name          | react-highlight-words |
 | Keywords           | react, reactjs, react-component, highlighter, highlight, text, words, matches, substring, occurrences, search |
-| # releases         | 15 |
-| # dependents       | 43 |
-| # downloads        | 1418093 |
+| # releases         | 8 |
+| # dependents       | 86 |
+| # downloads        | 4232995 |
 | # stars            | 2 |
 
 ## Links

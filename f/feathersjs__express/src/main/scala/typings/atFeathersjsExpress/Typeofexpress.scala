@@ -36,7 +36,7 @@ trait Typeofexpress extends js.Object {
     * @since 4.17.0
     */
   @JSName("raw")
-  var raw_Original: Fn_OptionsNextHandleFunction_719916182 = js.native
+  var raw_Original: Fn_OptionsNextHandleFunction_13450650 = js.native
   var request: Request[ParamsDictionary] = js.native
   var response: Response = js.native
   /**

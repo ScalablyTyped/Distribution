@@ -53,7 +53,7 @@ trait SagaMiddleware[C /* <: js.Object */]
     */
   def run[S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Saga */ js.Any */](
     saga: S,
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type Parameters<S> is not an array type */ args: Parameters[S]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<S> is not an array type */ args: Parameters[S]
   ): js.Any = js.native
   def setContext(props: Partial[C]): Unit = js.native
 }

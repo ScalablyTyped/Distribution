@@ -6,24 +6,25 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BucketWebsite extends js.Object {
   /**
     * An absolute path to the document to return in case of a 4XX error.
     */
-  var errorDocument: js.UndefOr[Input[String]] = js.undefined
+  var errorDocument: js.UndefOr[Input[String]] = js.native
   /**
     * Amazon S3 returns this index document when requests are made to the root domain or any of the subfolders.
     */
-  var indexDocument: js.UndefOr[Input[String]] = js.undefined
+  var indexDocument: js.UndefOr[Input[String]] = js.native
   /**
     * A hostname to redirect all website requests for this bucket to. Hostname can optionally be prefixed with a protocol (`http://` or `https://`) to use when redirecting requests. The default is the protocol that is used in the original request.
     */
-  var redirectAllRequestsTo: js.UndefOr[Input[String]] = js.undefined
+  var redirectAllRequestsTo: js.UndefOr[Input[String]] = js.native
   /**
     * A json array containing [routing rules](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-websiteconfiguration-routingrules.html)
     * describing redirect behavior and when redirects are applied.
     */
-  var routingRules: js.UndefOr[Input[String | js.Array[RoutingRule]]] = js.undefined
+  var routingRules: js.UndefOr[Input[String | js.Array[RoutingRule]]] = js.native
 }
 
 object BucketWebsite {

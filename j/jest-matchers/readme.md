@@ -9,9 +9,9 @@ Typings are for version 20.0
 | ------------------ | :-------------: |
 | Full name          | jest-matchers |
 | Keywords           | - |
-| # releases         | 20 |
-| # dependents       | 5 |
-| # downloads        | 37604340 |
+| # releases         | 1 |
+| # dependents       | 8 |
+| # downloads        | 31729341 |
 | # stars            | 0 |
 
 ## Links

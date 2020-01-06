@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AssociationOutputLocation extends js.Object {
   /**
     * The S3 bucket name.
     */
-  var s3BucketName: Input[String]
+  var s3BucketName: Input[String] = js.native
   /**
     * The S3 bucket prefix. Results stored in the root if not configured.
     */
-  var s3KeyPrefix: js.UndefOr[Input[String]] = js.undefined
+  var s3KeyPrefix: js.UndefOr[Input[String]] = js.native
 }
 
 object AssociationOutputLocation {

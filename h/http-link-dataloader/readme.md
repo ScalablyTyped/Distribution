@@ -11,8 +11,8 @@ Typings are for version 0.1.6
 | Full name          | http-link-dataloader |
 | Keywords           | graphql, request, fetch, graphql-client, apollo |
 | # releases         | 11 |
-| # dependents       | 11 |
-| # downloads        | 532735 |
+| # dependents       | 10 |
+| # downloads        | 1094604 |
 | # stars            | 0 |
 
 ## Links

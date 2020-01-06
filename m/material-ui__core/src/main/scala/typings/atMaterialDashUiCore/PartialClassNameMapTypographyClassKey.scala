@@ -5,41 +5,42 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/Typography/Typography.TypographyClassKey>> */
+@js.native
 trait PartialClassNameMapTypographyClassKey extends js.Object {
-  var alignCenter: js.UndefOr[String] = js.undefined
-  var alignJustify: js.UndefOr[String] = js.undefined
-  var alignLeft: js.UndefOr[String] = js.undefined
-  var alignRight: js.UndefOr[String] = js.undefined
-  var body1: js.UndefOr[String] = js.undefined
-  var body2: js.UndefOr[String] = js.undefined
-  var button: js.UndefOr[String] = js.undefined
-  var caption: js.UndefOr[String] = js.undefined
-  var colorError: js.UndefOr[String] = js.undefined
-  var colorInherit: js.UndefOr[String] = js.undefined
-  var colorSecondary: js.UndefOr[String] = js.undefined
-  var colorTextSecondary: js.UndefOr[String] = js.undefined
-  var display1: js.UndefOr[String] = js.undefined
-  var display2: js.UndefOr[String] = js.undefined
-  var display3: js.UndefOr[String] = js.undefined
-  var display4: js.UndefOr[String] = js.undefined
-  var gutterBottom: js.UndefOr[String] = js.undefined
-  var h1: js.UndefOr[String] = js.undefined
-  var h2: js.UndefOr[String] = js.undefined
-  var h3: js.UndefOr[String] = js.undefined
-  var h4: js.UndefOr[String] = js.undefined
-  var h5: js.UndefOr[String] = js.undefined
-  var h6: js.UndefOr[String] = js.undefined
-  var headline: js.UndefOr[String] = js.undefined
-  var `inline`: js.UndefOr[String] = js.undefined
-  var noWrap: js.UndefOr[String] = js.undefined
-  var overline: js.UndefOr[String] = js.undefined
-  var paragraph: js.UndefOr[String] = js.undefined
-  var root: js.UndefOr[String] = js.undefined
-  var srOnly: js.UndefOr[String] = js.undefined
-  var subheading: js.UndefOr[String] = js.undefined
-  var subtitle1: js.UndefOr[String] = js.undefined
-  var subtitle2: js.UndefOr[String] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
+  var alignCenter: js.UndefOr[String] = js.native
+  var alignJustify: js.UndefOr[String] = js.native
+  var alignLeft: js.UndefOr[String] = js.native
+  var alignRight: js.UndefOr[String] = js.native
+  var body1: js.UndefOr[String] = js.native
+  var body2: js.UndefOr[String] = js.native
+  var button: js.UndefOr[String] = js.native
+  var caption: js.UndefOr[String] = js.native
+  var colorError: js.UndefOr[String] = js.native
+  var colorInherit: js.UndefOr[String] = js.native
+  var colorSecondary: js.UndefOr[String] = js.native
+  var colorTextSecondary: js.UndefOr[String] = js.native
+  var display1: js.UndefOr[String] = js.native
+  var display2: js.UndefOr[String] = js.native
+  var display3: js.UndefOr[String] = js.native
+  var display4: js.UndefOr[String] = js.native
+  var gutterBottom: js.UndefOr[String] = js.native
+  var h1: js.UndefOr[String] = js.native
+  var h2: js.UndefOr[String] = js.native
+  var h3: js.UndefOr[String] = js.native
+  var h4: js.UndefOr[String] = js.native
+  var h5: js.UndefOr[String] = js.native
+  var h6: js.UndefOr[String] = js.native
+  var headline: js.UndefOr[String] = js.native
+  var `inline`: js.UndefOr[String] = js.native
+  var noWrap: js.UndefOr[String] = js.native
+  var overline: js.UndefOr[String] = js.native
+  var paragraph: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.native
+  var srOnly: js.UndefOr[String] = js.native
+  var subheading: js.UndefOr[String] = js.native
+  var subtitle1: js.UndefOr[String] = js.native
+  var subtitle2: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.native
 }
 
 object PartialClassNameMapTypographyClassKey {

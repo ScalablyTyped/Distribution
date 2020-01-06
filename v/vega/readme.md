@@ -10,9 +10,9 @@ The Vega visualization grammar.
 | ------------------ | :-------------: |
 | Full name          | vega |
 | Keywords           | vega, visualization, interaction, dataflow, library, data, d3 |
-| # releases         | 55 |
-| # dependents       | 39 |
-| # downloads        | 825020 |
+| # releases         | 43 |
+| # dependents       | 57 |
+| # downloads        | 1109506 |
 | # stars            | 3 |
 
 ## Links

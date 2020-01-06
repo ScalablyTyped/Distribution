@@ -10,9 +10,9 @@ Web3 module to interact with the Whisper messaging protocol.
 | ------------------ | :-------------: |
 | Full name          | web3-shh |
 | Keywords           | - |
-| # releases         | 35 |
+| # releases         | 37 |
 | # dependents       | 14 |
-| # downloads        | 3644730 |
+| # downloads        | 4069641 |
 | # stars            | 0 |
 
 ## Links

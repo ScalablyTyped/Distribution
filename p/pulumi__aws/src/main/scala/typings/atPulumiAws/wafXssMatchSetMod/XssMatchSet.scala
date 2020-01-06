@@ -24,6 +24,10 @@ class XssMatchSet protected () extends CustomResource {
   def this(name: String, args: XssMatchSetArgs) = this()
   def this(name: String, args: XssMatchSetArgs, opts: CustomResourceOptions) = this()
   /**
+    * Amazon Resource Name (ARN)
+    */
+  val arn: Output[String] = js.native
+  /**
     * The name or description of the SizeConstraintSet.
     */
   val name: Output[String] = js.native

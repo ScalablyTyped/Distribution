@@ -10,9 +10,9 @@ Minify SVG files with gulp.
 | ------------------ | :-------------: |
 | Full name          | gulp-svgmin |
 | Keywords           | gulpplugin, minify, svg, svgo |
-| # releases         | 3 |
-| # dependents       | 83 |
-| # downloads        | 1483381 |
+| # releases         | 4 |
+| # dependents       | 90 |
+| # downloads        | 1638562 |
 | # stars            | 38 |
 
 ## Links

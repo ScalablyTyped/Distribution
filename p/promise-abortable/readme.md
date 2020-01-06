@@ -12,7 +12,7 @@ A little lib for aborting in Promise chain.
 | Keywords           | promise, abortable, cancellable, abort, aborting, aborted, cancel, canceling, canceled, async, await, signal, onabort, abortSignal, abortController |
 | # releases         | 14 |
 | # dependents       | 0 |
-| # downloads        | 1401 |
+| # downloads        | 1666 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ Easily execute a function when you scroll to an element
 | ------------------ | :-------------: |
 | Full name          | waypoints |
 | Keywords           | scroll |
-| # releases         | 1 |
-| # dependents       | 26 |
-| # downloads        | 1220811 |
+| # releases         | 0 |
+| # dependents       | 33 |
+| # downloads        | 1547966 |
 | # stars            | 10 |
 
 ## Links

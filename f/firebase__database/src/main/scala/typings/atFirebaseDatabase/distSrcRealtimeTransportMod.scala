@@ -58,7 +58,12 @@ object distSrcRealtimeTransportMod extends js.Object {
   
   @js.native
   trait TransportConstructor
-    extends Instantiable3[
+    extends Instantiable2[
+          /* connId */ String, 
+          (/* RepoInfo */ js.Any) | (/* repoInfo */ RepoInfo), 
+          js.Any | Transport
+        ]
+       with Instantiable3[
           /* connId */ String, 
           (/* RepoInfo */ js.Any) | (/* repoInfo */ RepoInfo), 
           /* transportSessionId */ String, 
@@ -69,11 +74,6 @@ object distSrcRealtimeTransportMod extends js.Object {
           (/* RepoInfo */ js.Any) | (/* repoInfo */ RepoInfo), 
           /* transportSessionId */ String, 
           /* lastSessionId */ String, 
-          js.Any | Transport
-        ]
-       with Instantiable2[
-          /* connId */ String, 
-          (/* RepoInfo */ js.Any) | (/* repoInfo */ RepoInfo), 
           js.Any | Transport
         ] {
     var healthyTimeout: js.UndefOr[Double] = js.native

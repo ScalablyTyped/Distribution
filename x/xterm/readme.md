@@ -10,9 +10,9 @@ Full xterm terminal, in your browser
 | ------------------ | :-------------: |
 | Full name          | xterm |
 | Keywords           | - |
-| # releases         | 33 |
-| # dependents       | 95 |
-| # downloads        | 2219861 |
+| # releases         | 289 |
+| # dependents       | 121 |
+| # downloads        | 4438848 |
 | # stars            | 10 |
 
 ## Links

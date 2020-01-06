@@ -10,9 +10,9 @@ Ensures a value is a valid error by making it one if not
 | ------------------ | :-------------: |
 | Full name          | ensure-error |
 | Keywords           | error, ensure, valid, stack, message, name, string, to, make, fix, clean, convert |
-| # releases         | 5 |
-| # dependents       | 4 |
-| # downloads        | 71663 |
+| # releases         | 2 |
+| # dependents       | 7 |
+| # downloads        | 157059 |
 | # stars            | 1 |
 
 ## Links

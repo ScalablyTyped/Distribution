@@ -10,10 +10,10 @@ SSH2 client and server modules written in pure JavaScript for node.js
 | ------------------ | :-------------: |
 | Full name          | ssh2 |
 | Keywords           | ssh, ssh2, sftp, secure, shell, exec, remote, client |
-| # releases         | 11 |
-| # dependents       | 665 |
-| # downloads        | 7879284 |
-| # stars            | 82 |
+| # releases         | 15 |
+| # dependents       | 729 |
+| # downloads        | 10890116 |
+| # stars            | 81 |
 
 ## Links
 - [Homepage](https://github.com/mscdex/ssh2#readme)

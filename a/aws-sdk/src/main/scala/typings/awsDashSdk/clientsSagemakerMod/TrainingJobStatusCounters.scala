@@ -4,27 +4,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TrainingJobStatusCounters extends js.Object {
   /**
     * The number of completed training jobs launched by the hyperparameter tuning job.
     */
-  var Completed: js.UndefOr[TrainingJobStatusCounter] = js.undefined
+  var Completed: js.UndefOr[TrainingJobStatusCounter] = js.native
   /**
     * The number of in-progress training jobs launched by a hyperparameter tuning job.
     */
-  var InProgress: js.UndefOr[TrainingJobStatusCounter] = js.undefined
+  var InProgress: js.UndefOr[TrainingJobStatusCounter] = js.native
   /**
     * The number of training jobs that failed and can't be retried. A failed training job can't be retried if it failed because a client error occurred.
     */
-  var NonRetryableError: js.UndefOr[TrainingJobStatusCounter] = js.undefined
+  var NonRetryableError: js.UndefOr[TrainingJobStatusCounter] = js.native
   /**
     * The number of training jobs that failed, but can be retried. A failed training job can be retried only if it failed because an internal service error occurred.
     */
-  var RetryableError: js.UndefOr[TrainingJobStatusCounter] = js.undefined
+  var RetryableError: js.UndefOr[TrainingJobStatusCounter] = js.native
   /**
     * The number of training jobs launched by a hyperparameter tuning job that were manually stopped.
     */
-  var Stopped: js.UndefOr[TrainingJobStatusCounter] = js.undefined
+  var Stopped: js.UndefOr[TrainingJobStatusCounter] = js.native
 }
 
 object TrainingJobStatusCounters {

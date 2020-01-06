@@ -11,8 +11,8 @@ Click effect insipired by Google Material Design
 | Full name          | node-waves |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 17 |
-| # downloads        | 199438 |
+| # dependents       | 27 |
+| # downloads        | 252523 |
 | # stars            | 2 |
 
 ## Links

@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait QuotaPeriod extends js.Object {
   /**
     * The time unit of a period.
     */
-  var PeriodUnit: js.UndefOr[typings.awsDashSdk.clientsServicequotasMod.PeriodUnit] = js.undefined
+  var PeriodUnit: js.UndefOr[typings.awsDashSdk.clientsServicequotasMod.PeriodUnit] = js.native
   /**
     * The value of a period.
     */
-  var PeriodValue: js.UndefOr[typings.awsDashSdk.clientsServicequotasMod.PeriodValue] = js.undefined
+  var PeriodValue: js.UndefOr[typings.awsDashSdk.clientsServicequotasMod.PeriodValue] = js.native
 }
 
 object QuotaPeriod {

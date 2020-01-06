@@ -10,9 +10,9 @@ Client library to use the IBM Watson Services
 | ------------------ | :-------------: |
 | Full name          | watson-developer-cloud |
 | Keywords           | assistant, compare comply, discovery, ibm, natural language classifier, natural language understanding, personality insights, speech to text, text to speech, tone analyzer, tone_analyzer, visual recognition, watson developer cloud, watson, wdc |
-| # releases         | 76 |
-| # dependents       | 95 |
-| # downloads        | 868303 |
+| # releases         | 57 |
+| # dependents       | 84 |
+| # downloads        | 839735 |
 | # stars            | 32 |
 
 ## Links

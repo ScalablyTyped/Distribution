@@ -9,9 +9,9 @@ Animate elements as they scroll into view
 | ------------------ | :-------------: |
 | Full name          | scrollreveal |
 | Keywords           | scroll, animation, reveal, css, transform, transition |
-| # releases         | 38 |
-| # dependents       | 6 |
-| # downloads        | 550283 |
+| # releases         | 16 |
+| # dependents       | 10 |
+| # downloads        | 590090 |
 | # stars            | 10 |
 
 ## Links

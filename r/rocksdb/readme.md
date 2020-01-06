@@ -4,21 +4,21 @@
 Typings are for version 3.0
 
 ## Library description:
-A Node.js RocksDB binding, a backend for LevelUP
+A low-level Node.js RocksDB binding
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | rocksdb |
 | Keywords           | leveldb, level |
-| # releases         | 10 |
+| # releases         | 11 |
 | # dependents       | 11 |
-| # downloads        | 53445 |
+| # downloads        | 73699 |
 | # stars            | 4 |
 
 ## Links
-- [Homepage](https://github.com/level/rocksdb)
-- [Bugs](https://github.com/level/rocksdb/issues)
-- [Repository](https://github.com/level/rocksdb)
+- [Homepage](https://github.com/Level/rocksdb)
+- [Bugs](https://github.com/Level/rocksdb/issues)
+- [Repository](https://github.com/Level/rocksdb)
 - [Npm](https://www.npmjs.com/package/rocksdb)
     
 

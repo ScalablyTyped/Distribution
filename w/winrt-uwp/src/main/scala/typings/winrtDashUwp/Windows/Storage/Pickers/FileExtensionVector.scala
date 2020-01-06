@@ -44,12 +44,9 @@ abstract class FileExtensionVector () extends Array[String] {
     */
   def getView(): IVectorView[String] = js.native
   def indexOf(value: String, extra: js.Any*): Anon_Index = js.native
-  /**
-    * Retrieves the index of a specified file name extension in the collection.
-    * @param value The file name extension to find in the collection.
-    */
+  /* hack */
   @JSName("indexOf")
-  def indexOf_Anon_Index(value: String): Anon_Index = js.native
+  def indexOf_Double(searchElement: String): Double = js.native
   /**
     * Inserts a file name extension into a collection at a specified index.
     * @param index Zero-based index of the location at which to insert the file name extension.

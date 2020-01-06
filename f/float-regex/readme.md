@@ -12,7 +12,7 @@ regular expression to match floating point numbers in javascript notation
 | Keywords           | regex, regexp, regular expression, floating, point |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 6619 |
+| # downloads        | 25602 |
 | # stars            | 0 |
 
 ## Links

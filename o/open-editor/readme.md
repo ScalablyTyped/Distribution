@@ -9,10 +9,10 @@ Open files in your editor at a specific line and column
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | open-editor |
-| Keywords           | open, editor, launch, files, file, line, column, position, path, filepath, editors, start, app, sublime, atom, vscode, webstorm, textmate, vim, neovim, intellij |
-| # releases         | 4 |
-| # dependents       | 11 |
-| # downloads        | 446984 |
+| Keywords           | open, editor, launch, files, file, line, column, position, path, filepath, editors, start, app, sublime, atom, vscode, webstorm, textmate, vim, neovim, intellij, emacs, nano |
+| # releases         | 3 |
+| # dependents       | 17 |
+| # downloads        | 767238 |
 | # stars            | 2 |
 
 ## Links

@@ -4,21 +4,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PutBucketAccelerateConfigurationRequest extends js.Object {
   /**
-    * Specifies the Accelerate Configuration you want to set for the bucket.
+    * Container for setting the transfer acceleration state.
     */
-  var AccelerateConfiguration: typings.awsDashSdk.clientsS3Mod.AccelerateConfiguration
+  var AccelerateConfiguration: typings.awsDashSdk.clientsS3Mod.AccelerateConfiguration = js.native
   /**
     * Name of the bucket for which the accelerate configuration is set.
     */
-  var Bucket: BucketName
+  var Bucket: BucketName = js.native
 }
 
 object PutBucketAccelerateConfigurationRequest {
   @scala.inline
   def apply(AccelerateConfiguration: AccelerateConfiguration, Bucket: BucketName): PutBucketAccelerateConfigurationRequest = {
-    val __obj = js.Dynamic.literal(AccelerateConfiguration = AccelerateConfiguration, Bucket = Bucket)
+    val __obj = js.Dynamic.literal(AccelerateConfiguration = AccelerateConfiguration.asInstanceOf[js.Any], Bucket = Bucket.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[PutBucketAccelerateConfigurationRequest]
   }

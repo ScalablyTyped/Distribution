@@ -10,9 +10,9 @@ JupyterLab - Markdown viewer Widget
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/markdownviewer |
 | Keywords           | - |
-| # releases         | 15 |
-| # dependents       | 3 |
-| # downloads        | 15050 |
+| # releases         | 45 |
+| # dependents       | 6 |
+| # downloads        | 367395 |
 | # stars            | 0 |
 
 ## Links

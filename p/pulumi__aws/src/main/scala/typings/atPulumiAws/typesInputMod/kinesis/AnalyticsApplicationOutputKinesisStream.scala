@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AnalyticsApplicationOutputKinesisStream extends js.Object {
-  var resourceArn: Input[String]
-  var roleArn: Input[String]
+  var resourceArn: Input[String] = js.native
+  var roleArn: Input[String] = js.native
 }
 
 object AnalyticsApplicationOutputKinesisStream {

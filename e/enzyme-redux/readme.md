@@ -10,9 +10,9 @@ Test utils to simplify testing of containers in redux with enzyme.
 | ------------------ | :-------------: |
 | Full name          | enzyme-redux |
 | Keywords           | redux, enzyme, store, test |
-| # releases         | 5 |
+| # releases         | 4 |
 | # dependents       | 1 |
-| # downloads        | 380566 |
+| # downloads        | 427162 |
 | # stars            | 1 |
 
 ## Links

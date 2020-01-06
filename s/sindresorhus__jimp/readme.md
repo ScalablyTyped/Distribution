@@ -11,8 +11,8 @@ Typings are for version 0.3.0
 | Full name          | @sindresorhus/jimp |
 | Keywords           | image, image processing, image manipulation, png, jpg, jpeg, bmp, resize, scale, crop |
 | # releases         | 3 |
-| # dependents       | 5 |
-| # downloads        | 13180 |
+| # dependents       | 6 |
+| # downloads        | 16198 |
 | # stars            | 0 |
 
 ## Links

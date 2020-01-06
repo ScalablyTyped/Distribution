@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "scroll-into-view-if-needed" : "2.2.20"
+      "scroll-into-view-if-needed" : "2.2.22"
     }
   ],
   "test-dependencies" : [
     {
-      "scroll-into-view-if-needed" : "2.2.20"
+      "scroll-into-view-if-needed" : "2.2.22"
     }
   ],
   "compile-devDependencies" : [

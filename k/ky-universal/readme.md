@@ -10,9 +10,9 @@ Use Ky in both Node.js and browsers
 | ------------------ | :-------------: |
 | Full name          | ky-universal |
 | Keywords           | ky, universal, isomorphic, browser, browsers, node, react, vue, ssr, fetch, request, requests, http, https, fetching, get, url, curl, wget, net, network, ajax, api, rest, xhr, browser, got, axios, node-fetch |
-| # releases         | 3 |
-| # dependents       | 5 |
-| # downloads        | 29152 |
+| # releases         | 7 |
+| # dependents       | 35 |
+| # downloads        | 1800378 |
 | # stars            | 0 |
 
 ## Links

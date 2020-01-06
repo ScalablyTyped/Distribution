@@ -10,9 +10,9 @@ WHATWG spec-compliant implementations of window.atob and window.btoa.
 | ------------------ | :-------------: |
 | Full name          | abab |
 | Keywords           | atob, btoa, browser |
-| # releases         | 3 |
-| # dependents       | 72 |
-| # downloads        | 199900658 |
+| # releases         | 5 |
+| # dependents       | 83 |
+| # downloads        | 257103694 |
 | # stars            | 1 |
 
 ## Links

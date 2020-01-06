@@ -17,14 +17,14 @@ object d3DashSelectionMod extends js.Object {
       * @param options either a GraphvizOptions object representing the options of the graphviz renderer or a boolean representing the
       *                  useWorker option.
       */
-    def graphviz(): Graphviz[GElement, Datum, BaseType, PDatum] = js.native
-    def graphviz(options: Boolean): Graphviz[GElement, Datum, BaseType, PDatum] = js.native
-    def graphviz(options: GraphvizOptions): Graphviz[GElement, Datum, BaseType, PDatum] = js.native
+    def graphviz(): Graphviz[GElement, Datum, PElement, PDatum] = js.native
+    def graphviz(options: Boolean): Graphviz[GElement, Datum, PElement, PDatum] = js.native
+    def graphviz(options: GraphvizOptions): Graphviz[GElement, Datum, PElement, PDatum] = js.native
     /**
       * For each selected element, selects the first descendant element that matches the specified selector string in the same ways as
       * d3-selection.select, but does not propagate any associated data from the current element to the corresponding selected element.
       */
-    def selectWithoutDataPropagation(): Selection[GElement, Datum, PElement, PDatum] = js.native
+    def selectWithoutDataPropagation(name: String): Selection[BaseType, Datum, PElement, PDatum] = js.native
   }
   
 }

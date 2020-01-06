@@ -12,7 +12,7 @@ Beam (OAuth) authentication strategies for Passport.
 | Keywords           | passport, beam, auth, authn, authentication, identity |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 859 |
+| # downloads        | 948 |
 | # stars            | 0 |
 
 ## Links

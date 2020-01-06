@@ -10,9 +10,9 @@ React Apollo Query, Mutation and Subscription components.
 | ------------------ | :-------------: |
 | Full name          | @apollo/react-components |
 | Keywords           | apollo, graphql, react, components |
-| # releases         | 12 |
-| # dependents       | 2 |
-| # downloads        | 780148 |
+| # releases         | 21 |
+| # dependents       | 11 |
+| # downloads        | 3888430 |
 | # stars            | 0 |
 
 ## Links

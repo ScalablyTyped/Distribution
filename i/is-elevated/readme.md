@@ -11,8 +11,8 @@ Check if the process is running with elevated privileges
 | Full name          | is-elevated |
 | Keywords           | admin, administrator, win, win32, windows, process, running, cmd, shell, command-line, check, detect, is, root, sudo, elevate, elevated, privileges |
 | # releases         | 2 |
-| # dependents       | 11 |
-| # downloads        | 137084 |
+| # dependents       | 18 |
+| # downloads        | 154113 |
 | # stars            | 2 |
 
 ## Links

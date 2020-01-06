@@ -4,16 +4,16 @@
 Typings are for version 3.1
 
 ## Library description:
-A REST and realtime API layer for modern applications.
+A framework for real-time applications and REST API with JavaScript and TypeScript
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @feathersjs/feathers |
 | Keywords           | feathers, REST, socket.io, realtime |
-| # releases         | 25 |
-| # dependents       | 80 |
-| # downloads        | 1193130 |
-| # stars            | 3 |
+| # releases         | 39 |
+| # dependents       | 114 |
+| # downloads        | 1178372 |
+| # stars            | 4 |
 
 ## Links
 - [Homepage](http://feathersjs.com)

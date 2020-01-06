@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClusterParameterGroupParameter extends js.Object {
   /**
     * Valid values are `immediate` and `pending-reboot`. Defaults to `pending-reboot`.
     */
-  var applyMethod: js.UndefOr[Input[String]] = js.undefined
+  var applyMethod: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the documentDB parameter.
     */
-  var name: Input[String]
+  var name: Input[String] = js.native
   /**
     * The value of the documentDB parameter.
     */
-  var value: Input[String]
+  var value: Input[String] = js.native
 }
 
 object ClusterParameterGroupParameter {

@@ -10,12 +10,15 @@ Accessible React Modal Dialog.
 | ------------------ | :-------------: |
 | Full name          | @reach/dialog |
 | Keywords           | - |
-| # releases         | 15 |
-| # dependents       | 18 |
-| # downloads        | 216481 |
+| # releases         | 30 |
+| # dependents       | 38 |
+| # downloads        | 994749 |
 | # stars            | 0 |
 
 ## Links
+- [Homepage](https://github.com/reach/reach-ui#readme)
+- [Bugs](https://github.com/reach/reach-ui/issues)
+- [Repository](https://github.com/reach/reach-ui)
 - [Npm](https://www.npmjs.com/package/%40reach%2Fdialog)
     
 

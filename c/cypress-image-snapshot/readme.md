@@ -12,7 +12,7 @@ Cypress bindings for jest-image-snapshot.
 | Keywords           | - |
 | # releases         | 34 |
 | # dependents       | 3 |
-| # downloads        | 677109 |
+| # downloads        | 777829 |
 | # stars            | 0 |
 
 ## Links

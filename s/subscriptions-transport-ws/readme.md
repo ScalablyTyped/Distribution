@@ -10,9 +10,9 @@ A websocket transport for GraphQL subscriptions
 | ------------------ | :-------------: |
 | Full name          | subscriptions-transport-ws |
 | Keywords           | - |
-| # releases         | 29 |
-| # dependents       | 211 |
-| # downloads        | 8680219 |
+| # releases         | 13 |
+| # dependents       | 317 |
+| # downloads        | 21941319 |
 | # stars            | 5 |
 
 ## Links

@@ -10,9 +10,9 @@ Restful Resources service for AngularJS apps
 | ------------------ | :-------------: |
 | Full name          | restangular |
 | Keywords           | angular, client, browser, restful, resources, rest, api |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 17 |
-| # downloads        | 624617 |
+| # downloads        | 724878 |
 | # stars            | 10 |
 
 ## Links

@@ -3,7 +3,7 @@ package typings.reactDashNative.reactDashNativeMod
 import typings.react.reactMod.Component
 import typings.react.reactMod._Global_.JSX.Element
 import typings.reactDashNative.Anon_Animated
-import typings.reactDashNative.Anon_AnimatedBoolean_1238086454
+import typings.reactDashNative.Anon_AnimatedBoolean_1077762777
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -53,6 +53,6 @@ class ScrollView ()
     * The animated prop defaults to true
     */
   def scrollToEnd(): Unit = js.native
-  def scrollToEnd(options: Anon_AnimatedBoolean_1238086454): Unit = js.native
+  def scrollToEnd(options: Anon_AnimatedBoolean_1077762777): Unit = js.native
 }
 

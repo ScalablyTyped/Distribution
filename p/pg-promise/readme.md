@@ -4,15 +4,15 @@
 Typings are for version 9.3.6
 
 ## Library description:
-Promises interface for PostgreSQL
+PostgreSQL interface for Node.js
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | pg-promise |
 | Keywords           | pg, promise, postgres |
-| # releases         | 119 |
-| # dependents       | 211 |
-| # downloads        | 3004610 |
+| # releases         | 84 |
+| # dependents       | 250 |
+| # downloads        | 4522216 |
 | # stars            | 35 |
 
 ## Links

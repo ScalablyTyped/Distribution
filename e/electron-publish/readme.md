@@ -10,9 +10,9 @@ Part of [electron-builder](https://github.com/electron-userland/electron-builder
 | ------------------ | :-------------: |
 | Full name          | electron-publish |
 | Keywords           | - |
-| # releases         | 139 |
-| # dependents       | 10 |
-| # downloads        | 3180567 |
+| # releases         | 102 |
+| # dependents       | 12 |
+| # downloads        | 4337814 |
 | # stars            | 0 |
 
 ## Links

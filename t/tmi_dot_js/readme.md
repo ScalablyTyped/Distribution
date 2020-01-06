@@ -10,9 +10,9 @@ Javascript library for the Twitch Messaging Interface.
 | ------------------ | :-------------: |
 | Full name          | tmi.js |
 | Keywords           | tmi, twitch, twitch.tv, stream, broadcast, message, messaging, interface, subscriber, websocket, ws, bot, robot |
-| # releases         | 6 |
-| # dependents       | 30 |
-| # downloads        | 26014 |
+| # releases         | 9 |
+| # dependents       | 38 |
+| # downloads        | 97653 |
 | # stars            | 9 |
 
 ## Links

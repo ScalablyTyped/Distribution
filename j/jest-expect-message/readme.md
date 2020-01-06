@@ -11,8 +11,8 @@ Add custom message to Jest expects
 | Full name          | jest-expect-message |
 | Keywords           | jest, expect, message, matchers, assertions, test |
 | # releases         | 5 |
-| # dependents       | 2 |
-| # downloads        | 101532 |
+| # dependents       | 9 |
+| # downloads        | 664437 |
 | # stars            | 0 |
 
 ## Links

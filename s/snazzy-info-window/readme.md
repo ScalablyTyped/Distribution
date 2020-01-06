@@ -10,9 +10,9 @@ Customizable info windows using the Google Maps JavaScript API.
 | ------------------ | :-------------: |
 | Full name          | snazzy-info-window |
 | Keywords           | snazzy-maps, google-maps, snazzy, google, maps, info, window |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 203313 |
+| # downloads        | 293597 |
 | # stars            | 0 |
 
 ## Links

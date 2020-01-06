@@ -10,9 +10,9 @@ Framework for transforming cascading style sheets (CSS) from left-to-right (LTR)
 | ------------------ | :-------------: |
 | Full name          | rtlcss |
 | Keywords           | rtl, css, ltr, rtlcss, framework, style, mirror, flip, convert, transform |
-| # releases         | 5 |
-| # dependents       | 40 |
-| # downloads        | 2065016 |
+| # releases         | 4 |
+| # dependents       | 44 |
+| # downloads        | 2921955 |
 | # stars            | 8 |
 
 ## Links

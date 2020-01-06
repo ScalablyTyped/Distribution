@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetApplicationRevisionOutput extends js.Object {
   /**
     * The name of the application that corresponds to the revision.
     */
-  var applicationName: js.UndefOr[ApplicationName] = js.undefined
+  var applicationName: js.UndefOr[ApplicationName] = js.native
   /**
     * Additional information about the revision, including type and location.
     */
-  var revision: js.UndefOr[RevisionLocation] = js.undefined
+  var revision: js.UndefOr[RevisionLocation] = js.native
   /**
     * General information about the revision.
     */
-  var revisionInfo: js.UndefOr[GenericRevisionInfo] = js.undefined
+  var revisionInfo: js.UndefOr[GenericRevisionInfo] = js.native
 }
 
 object GetApplicationRevisionOutput {
@@ -27,9 +28,9 @@ object GetApplicationRevisionOutput {
     revisionInfo: GenericRevisionInfo = null
   ): GetApplicationRevisionOutput = {
     val __obj = js.Dynamic.literal()
-    if (applicationName != null) __obj.updateDynamic("applicationName")(applicationName)
-    if (revision != null) __obj.updateDynamic("revision")(revision)
-    if (revisionInfo != null) __obj.updateDynamic("revisionInfo")(revisionInfo)
+    if (applicationName != null) __obj.updateDynamic("applicationName")(applicationName.asInstanceOf[js.Any])
+    if (revision != null) __obj.updateDynamic("revision")(revision.asInstanceOf[js.Any])
+    if (revisionInfo != null) __obj.updateDynamic("revisionInfo")(revisionInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetApplicationRevisionOutput]
   }
 }

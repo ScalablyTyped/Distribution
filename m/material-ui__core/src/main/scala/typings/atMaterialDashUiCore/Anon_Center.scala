@@ -4,8 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Anon_Center extends js.Object {
-  var center: js.UndefOr[Boolean] = js.undefined
+  var center: js.UndefOr[Boolean] = js.native
 }
 
 object Anon_Center {

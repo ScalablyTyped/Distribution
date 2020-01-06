@@ -6,28 +6,29 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ReplicationSubnetGroupState extends js.Object {
-  val replicationSubnetGroupArn: js.UndefOr[Input[String]] = js.undefined
+  val replicationSubnetGroupArn: js.UndefOr[Input[String]] = js.native
   /**
     * The description for the subnet group.
     */
-  val replicationSubnetGroupDescription: js.UndefOr[Input[String]] = js.undefined
+  val replicationSubnetGroupDescription: js.UndefOr[Input[String]] = js.native
   /**
     * The name for the replication subnet group. This value is stored as a lowercase string.
     */
-  val replicationSubnetGroupId: js.UndefOr[Input[String]] = js.undefined
+  val replicationSubnetGroupId: js.UndefOr[Input[String]] = js.native
   /**
     * A list of the EC2 subnet IDs for the subnet group.
     */
-  val subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * The ID of the VPC the subnet group is in.
     */
-  val vpcId: js.UndefOr[Input[String]] = js.undefined
+  val vpcId: js.UndefOr[Input[String]] = js.native
 }
 
 object ReplicationSubnetGroupState {

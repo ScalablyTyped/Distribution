@@ -10,9 +10,9 @@ Extendable base adapter class used by @pollyjs
 | ------------------ | :-------------: |
 | Full name          | @pollyjs/adapter |
 | Keywords           | polly, pollyjs, adapter |
-| # releases         | 21 |
+| # releases         | 23 |
 | # dependents       | 6 |
-| # downloads        | 187618 |
+| # downloads        | 427494 |
 | # stars            | 0 |
 
 ## Links

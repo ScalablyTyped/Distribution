@@ -10,9 +10,9 @@ ES2015 Number.isNaN() ponyfill
 | ------------------ | :-------------: |
 | Full name          | number-is-nan |
 | Keywords           | es2015, ecmascript, ponyfill, polyfill, shim, number, is, nan, not |
-| # releases         | 1 |
-| # dependents       | 63 |
-| # downloads        | 320089724 |
+| # releases         | 0 |
+| # dependents       | 78 |
+| # downloads        | 455647139 |
 | # stars            | 2 |
 
 ## Links

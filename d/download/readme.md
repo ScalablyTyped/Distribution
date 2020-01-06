@@ -10,10 +10,10 @@ Download and extract files
 | ------------------ | :-------------: |
 | Full name          | download |
 | Keywords           | download, extract, http, request, url |
-| # releases         | 11 |
-| # dependents       | 754 |
-| # downloads        | 51246068 |
-| # stars            | 98 |
+| # releases         | 3 |
+| # dependents       | 889 |
+| # downloads        | 79072263 |
+| # stars            | 99 |
 
 ## Links
 - [Homepage](https://github.com/kevva/download#readme)

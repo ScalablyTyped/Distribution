@@ -10,9 +10,9 @@ Hooks for require, vm and script used in istanbul
 | ------------------ | :-------------: |
 | Full name          | istanbul-lib-hook |
 | Keywords           | istanbul, hook |
-| # releases         | 13 |
-| # dependents       | 24 |
-| # downloads        | 162527357 |
+| # releases         | 16 |
+| # dependents       | 27 |
+| # downloads        | 206031780 |
 | # stars            | 0 |
 
 ## Links

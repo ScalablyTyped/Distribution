@@ -10,9 +10,9 @@ Event emitter
 | ------------------ | :-------------: |
 | Full name          | component-emitter |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 374 |
-| # downloads        | 341760111 |
+| # releases         | 2 |
+| # dependents       | 417 |
+| # downloads        | 522582997 |
 | # stars            | 7 |
 
 ## Links

@@ -164,7 +164,7 @@ package object Tabulator {
   type JSONRecord = Record[String, String | Double | Boolean]
   type RowChangedCallback = js.Function1[/* row */ RowComponent, Unit]
   type RowEventCallback = js.Function2[/* e */ js.Any, /* row */ RowComponent, Unit]
-  type RowLookup = RowComponent | HTMLElement | String | Double
+  type RowLookup = RowComponent | HTMLElement | String | Double | (js.Array[Double | String])
   type StandardStringParam = String | HTMLElement | (js.Function0[String | HTMLElement])
   type ValueBooleanCallback = js.Function1[/* value */ js.Any, Boolean]
   type ValueStringCallback = js.Function1[/* value */ js.Any, String]

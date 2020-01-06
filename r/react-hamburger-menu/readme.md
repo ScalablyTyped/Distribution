@@ -10,9 +10,9 @@ Dead simple Hamburger Menu to use as a mobile nav, with a bunch of styling optio
 | ------------------ | :-------------: |
 | Full name          | react-hamburger-menu |
 | Keywords           | react, react-component, menu, hamburger, ui-component, navigation |
-| # releases         | 4 |
-| # dependents       | 6 |
-| # downloads        | 126427 |
+| # releases         | 3 |
+| # dependents       | 12 |
+| # downloads        | 169638 |
 | # stars            | 1 |
 
 ## Links

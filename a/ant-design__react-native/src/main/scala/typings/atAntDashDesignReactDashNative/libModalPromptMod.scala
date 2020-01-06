@@ -11,20 +11,20 @@ import scala.scalajs.js.annotation._
 @JSImport("@ant-design/react-native/lib/modal/prompt", JSImport.Namespace)
 @js.native
 object libModalPromptMod extends js.Object {
-  def default(title: ReactNode, message: ReactNode, callbackOrActions: CallbackOrActions[TextStyle]): Unit = js.native
+  def default(title: ReactNode, message: ReactNode, callbackOrActions: CallbackOrActions[TextStyle]): js.UndefOr[Double] = js.native
   def default(
     title: ReactNode,
     message: ReactNode,
     callbackOrActions: CallbackOrActions[TextStyle],
     `type`: String
-  ): Unit = js.native
+  ): js.UndefOr[Double] = js.native
   def default(
     title: ReactNode,
     message: ReactNode,
     callbackOrActions: CallbackOrActions[TextStyle],
     `type`: String,
     defaultValue: String
-  ): Unit = js.native
+  ): js.UndefOr[Double] = js.native
   def default(
     title: ReactNode,
     message: ReactNode,
@@ -32,7 +32,7 @@ object libModalPromptMod extends js.Object {
     `type`: String,
     defaultValue: String,
     placeholders: js.Array[String]
-  ): Unit = js.native
+  ): js.UndefOr[Double] = js.native
   def default(
     title: ReactNode,
     message: ReactNode,
@@ -41,6 +41,6 @@ object libModalPromptMod extends js.Object {
     defaultValue: String,
     placeholders: js.Array[String],
     onBackHandler: CallbackOnBackHandler
-  ): Unit = js.native
+  ): js.UndefOr[Double] = js.native
 }
 

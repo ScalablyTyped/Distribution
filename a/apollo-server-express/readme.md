@@ -10,9 +10,9 @@ Production-ready Node.js GraphQL server for Express and Connect
 | ------------------ | :-------------: |
 | Full name          | apollo-server-express |
 | Keywords           | GraphQL, Apollo, Server, Express, Connect, Javascript |
-| # releases         | 106 |
-| # dependents       | 258 |
-| # downloads        | 8210106 |
+| # releases         | 157 |
+| # dependents       | 382 |
+| # downloads        | 18504306 |
 | # stars            | 8 |
 
 ## Links

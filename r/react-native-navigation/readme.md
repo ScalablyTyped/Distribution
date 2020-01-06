@@ -10,9 +10,9 @@ React Native Navigation - truly native navigation for iOS and Android
 | ------------------ | :-------------: |
 | Full name          | react-native-navigation |
 | Keywords           | - |
-| # releases         | 1486 |
-| # dependents       | 19 |
-| # downloads        | 4762639 |
+| # releases         | 1232 |
+| # dependents       | 20 |
+| # downloads        | 2179572 |
 | # stars            | 15 |
 
 ## Links

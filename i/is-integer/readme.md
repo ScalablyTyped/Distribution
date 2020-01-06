@@ -10,9 +10,9 @@ ES2015 (ES6) Number.isInteger polyfill
 | ------------------ | :-------------: |
 | Full name          | is-integer |
 | Keywords           | es2015, es6, Number, isInteger, polyfill |
-| # releases         | 2 |
-| # dependents       | 39 |
-| # downloads        | 10245750 |
+| # releases         | 0 |
+| # dependents       | 42 |
+| # downloads        | 10493071 |
 | # stars            | 2 |
 
 ## Links

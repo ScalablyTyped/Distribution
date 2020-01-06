@@ -12,7 +12,7 @@ An unobtrusive customizable JavaScript notification system
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 18287 |
+| # downloads        | 29109 |
 | # stars            | 1 |
 
 ## Links

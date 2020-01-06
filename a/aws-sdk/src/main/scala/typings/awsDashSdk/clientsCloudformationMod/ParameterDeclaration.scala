@@ -4,31 +4,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ParameterDeclaration extends js.Object {
   /**
     * The default value of the parameter.
     */
-  var DefaultValue: js.UndefOr[ParameterValue] = js.undefined
+  var DefaultValue: js.UndefOr[ParameterValue] = js.native
   /**
     * The description that is associate with the parameter.
     */
-  var Description: js.UndefOr[typings.awsDashSdk.clientsCloudformationMod.Description] = js.undefined
+  var Description: js.UndefOr[typings.awsDashSdk.clientsCloudformationMod.Description] = js.native
   /**
     * Flag that indicates whether the parameter value is shown as plain text in logs and in the AWS Management Console.
     */
-  var NoEcho: js.UndefOr[typings.awsDashSdk.clientsCloudformationMod.NoEcho] = js.undefined
+  var NoEcho: js.UndefOr[typings.awsDashSdk.clientsCloudformationMod.NoEcho] = js.native
   /**
     * The criteria that AWS CloudFormation uses to validate parameter values.
     */
-  var ParameterConstraints: js.UndefOr[typings.awsDashSdk.clientsCloudformationMod.ParameterConstraints] = js.undefined
+  var ParameterConstraints: js.UndefOr[typings.awsDashSdk.clientsCloudformationMod.ParameterConstraints] = js.native
   /**
     * The name that is associated with the parameter.
     */
-  var ParameterKey: js.UndefOr[typings.awsDashSdk.clientsCloudformationMod.ParameterKey] = js.undefined
+  var ParameterKey: js.UndefOr[typings.awsDashSdk.clientsCloudformationMod.ParameterKey] = js.native
   /**
     * The type of parameter.
     */
-  var ParameterType: js.UndefOr[typings.awsDashSdk.clientsCloudformationMod.ParameterType] = js.undefined
+  var ParameterType: js.UndefOr[typings.awsDashSdk.clientsCloudformationMod.ParameterType] = js.native
 }
 
 object ParameterDeclaration {
@@ -42,12 +43,12 @@ object ParameterDeclaration {
     ParameterType: ParameterType = null
   ): ParameterDeclaration = {
     val __obj = js.Dynamic.literal()
-    if (DefaultValue != null) __obj.updateDynamic("DefaultValue")(DefaultValue)
-    if (Description != null) __obj.updateDynamic("Description")(Description)
-    if (!js.isUndefined(NoEcho)) __obj.updateDynamic("NoEcho")(NoEcho)
-    if (ParameterConstraints != null) __obj.updateDynamic("ParameterConstraints")(ParameterConstraints)
-    if (ParameterKey != null) __obj.updateDynamic("ParameterKey")(ParameterKey)
-    if (ParameterType != null) __obj.updateDynamic("ParameterType")(ParameterType)
+    if (DefaultValue != null) __obj.updateDynamic("DefaultValue")(DefaultValue.asInstanceOf[js.Any])
+    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (!js.isUndefined(NoEcho)) __obj.updateDynamic("NoEcho")(NoEcho.asInstanceOf[js.Any])
+    if (ParameterConstraints != null) __obj.updateDynamic("ParameterConstraints")(ParameterConstraints.asInstanceOf[js.Any])
+    if (ParameterKey != null) __obj.updateDynamic("ParameterKey")(ParameterKey.asInstanceOf[js.Any])
+    if (ParameterType != null) __obj.updateDynamic("ParameterType")(ParameterType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParameterDeclaration]
   }
 }

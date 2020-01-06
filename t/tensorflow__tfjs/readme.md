@@ -10,9 +10,9 @@ An open-source machine learning framework.
 | ------------------ | :-------------: |
 | Full name          | @tensorflow/tfjs |
 | Keywords           | - |
-| # releases         | 60 |
-| # dependents       | 86 |
-| # downloads        | 353076 |
+| # releases         | 73 |
+| # dependents       | 118 |
+| # downloads        | 538922 |
 | # stars            | 0 |
 
 ## Links

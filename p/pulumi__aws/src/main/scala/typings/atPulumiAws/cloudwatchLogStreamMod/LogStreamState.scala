@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LogStreamState extends js.Object {
   /**
     * The Amazon Resource Name (ARN) specifying the log stream.
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the log group under which the log stream is to be created.
     */
-  val logGroupName: js.UndefOr[Input[String]] = js.undefined
+  val logGroupName: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the log stream. Must not be longer than 512 characters and must not contain `:`
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
 }
 
 object LogStreamState {

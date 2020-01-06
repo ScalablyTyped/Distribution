@@ -10,9 +10,9 @@ Conditional promise catch handler
 | ------------------ | :-------------: |
 | Full name          | p-catch-if |
 | Keywords           | promise, catch, if, conditional, cond, iff, chain, throw, error, reject, rejected, handler, filter, filtered, predicate, exception, thunk, function, async, await, promises, combinator, bluebird |
-| # releases         | 2 |
+| # releases         | 3 |
 | # dependents       | 10 |
-| # downloads        | 7509 |
+| # downloads        | 6973 |
 | # stars            | 1 |
 
 ## Links

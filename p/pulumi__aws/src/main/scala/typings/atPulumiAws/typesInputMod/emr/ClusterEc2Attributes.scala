@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClusterEc2Attributes extends js.Object {
-  var additionalMasterSecurityGroups: js.UndefOr[Input[String]] = js.undefined
-  var additionalSlaveSecurityGroups: js.UndefOr[Input[String]] = js.undefined
-  var emrManagedMasterSecurityGroup: js.UndefOr[Input[String]] = js.undefined
-  var emrManagedSlaveSecurityGroup: js.UndefOr[Input[String]] = js.undefined
-  var instanceProfile: Input[String]
-  var keyName: js.UndefOr[Input[String]] = js.undefined
-  var serviceAccessSecurityGroup: js.UndefOr[Input[String]] = js.undefined
-  var subnetId: js.UndefOr[Input[String]] = js.undefined
+  var additionalMasterSecurityGroups: js.UndefOr[Input[String]] = js.native
+  var additionalSlaveSecurityGroups: js.UndefOr[Input[String]] = js.native
+  var emrManagedMasterSecurityGroup: js.UndefOr[Input[String]] = js.native
+  var emrManagedSlaveSecurityGroup: js.UndefOr[Input[String]] = js.native
+  var instanceProfile: Input[String] = js.native
+  var keyName: js.UndefOr[Input[String]] = js.native
+  var serviceAccessSecurityGroup: js.UndefOr[Input[String]] = js.native
+  var subnetId: js.UndefOr[Input[String]] = js.native
 }
 
 object ClusterEc2Attributes {

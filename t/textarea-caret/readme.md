@@ -11,8 +11,8 @@ Typings are for version 3.0
 | Full name          | textarea-caret |
 | Keywords           | textarea, caret, position |
 | # releases         | 2 |
-| # dependents       | 32 |
-| # downloads        | 986168 |
+| # dependents       | 37 |
+| # downloads        | 1576636 |
 | # stars            | 2 |
 
 ## Links

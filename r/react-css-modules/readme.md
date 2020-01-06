@@ -10,9 +10,9 @@ Seamless mapping of class names to CSS modules inside of React components.
 | ------------------ | :-------------: |
 | Full name          | react-css-modules |
 | Keywords           | react-component, react, css, modules |
-| # releases         | 20 |
+| # releases         | 11 |
 | # dependents       | 116 |
-| # downloads        | 2076770 |
+| # downloads        | 1616107 |
 | # stars            | 21 |
 
 ## Links

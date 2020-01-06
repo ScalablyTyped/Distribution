@@ -10,9 +10,9 @@ Sanitize a string for use as a filename
 | ------------------ | :-------------: |
 | Full name          | sanitize-filename |
 | Keywords           | file, name, filename, sanitize, validate, escape |
-| # releases         | 1 |
-| # dependents       | 441 |
-| # downloads        | 11264783 |
+| # releases         | 3 |
+| # dependents       | 531 |
+| # downloads        | 19536822 |
 | # stars            | 20 |
 
 ## Links

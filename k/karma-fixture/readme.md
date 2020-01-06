@@ -11,8 +11,8 @@ A plugin for the Karma test runner that loads .html and .json fixtures
 | Full name          | karma-fixture |
 | Keywords           | karma, karma-plugin, fixtures, fixture |
 | # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 871537 |
+| # dependents       | 9 |
+| # downloads        | 743609 |
 | # stars            | 5 |
 
 ## Links

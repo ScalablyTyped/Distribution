@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ListResourceComplianceSummariesResult extends js.Object {
   /**
     * The token for the next set of items to return. Use this token to get the next set of results.
     */
-  var NextToken: js.UndefOr[typings.awsDashSdk.clientsSsmMod.NextToken] = js.undefined
+  var NextToken: js.UndefOr[typings.awsDashSdk.clientsSsmMod.NextToken] = js.native
   /**
     * A summary count for specified or targeted managed instances. Summary count includes information about compliant and non-compliant State Manager associations, patch status, or custom items according to the filter criteria that you specify. 
     */
-  var ResourceComplianceSummaryItems: js.UndefOr[ResourceComplianceSummaryItemList] = js.undefined
+  var ResourceComplianceSummaryItems: js.UndefOr[ResourceComplianceSummaryItemList] = js.native
 }
 
 object ListResourceComplianceSummariesResult {
@@ -22,8 +23,8 @@ object ListResourceComplianceSummariesResult {
     ResourceComplianceSummaryItems: ResourceComplianceSummaryItemList = null
   ): ListResourceComplianceSummariesResult = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
-    if (ResourceComplianceSummaryItems != null) __obj.updateDynamic("ResourceComplianceSummaryItems")(ResourceComplianceSummaryItems)
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
+    if (ResourceComplianceSummaryItems != null) __obj.updateDynamic("ResourceComplianceSummaryItems")(ResourceComplianceSummaryItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListResourceComplianceSummariesResult]
   }
 }

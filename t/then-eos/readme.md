@@ -11,8 +11,8 @@ Promise-based end-of-stream.
 | Full name          | then-eos |
 | Keywords           | end, eos, promise, stream |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 120 |
+| # dependents       | 1 |
+| # downloads        | 459 |
 | # stars            | 0 |
 
 ## Links

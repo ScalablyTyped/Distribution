@@ -11,8 +11,8 @@ Node.js os.tmpdir() ponyfill
 | Full name          | os-tmpdir |
 | Keywords           | built-in, core, ponyfill, polyfill, shim, os, tmpdir, tempdir, tmp, temp, dir, directory, env, environment |
 | # releases         | 2 |
-| # dependents       | 145 |
-| # downloads        | 315732821 |
+| # dependents       | 166 |
+| # downloads        | 445447762 |
 | # stars            | 1 |
 
 ## Links

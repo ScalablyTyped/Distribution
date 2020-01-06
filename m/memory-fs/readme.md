@@ -10,9 +10,9 @@ A simple in-memory filesystem. Holds data in a javascript object.
 | ------------------ | :-------------: |
 | Full name          | memory-fs |
 | Keywords           | fs, memory |
-| # releases         | 1 |
-| # dependents       | 459 |
-| # downloads        | 223182024 |
+| # releases         | 2 |
+| # dependents       | 565 |
+| # downloads        | 341126972 |
 | # stars            | 19 |
 
 ## Links

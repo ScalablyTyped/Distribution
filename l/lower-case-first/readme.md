@@ -4,21 +4,21 @@
 Typings are for version 1.0.2
 
 ## Library description:
-Lower case the first character of a string
+Transforms the string with only the first character in lower case
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | lower-case-first |
-| Keywords           | cases, first, lower, lowercase, case |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 23000659 |
+| Keywords           | lower, case, first, start, character |
+| # releases         | 3 |
+| # dependents       | 4 |
+| # downloads        | 39877706 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/blakeembrey/lower-case-first)
-- [Bugs](https://github.com/blakeembrey/lower-case-first/issues)
-- [Repository](https://github.com/blakeembrey/lower-case-first)
+- [Homepage](https://github.com/blakeembrey/change-case/tree/master/packages/lower-case-first#readme)
+- [Bugs](https://github.com/blakeembrey/change-case/issues)
+- [Repository](https://github.com/blakeembrey/change-case)
 - [Npm](https://www.npmjs.com/package/lower-case-first)
     
 

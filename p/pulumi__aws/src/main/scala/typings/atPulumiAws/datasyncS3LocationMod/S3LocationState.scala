@@ -8,28 +8,29 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait S3LocationState extends js.Object {
   /**
     * Amazon Resource Name (ARN) of the DataSync Location.
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * Amazon Resource Name (ARN) of the S3 Bucket.
     */
-  val s3BucketArn: js.UndefOr[Input[ARN]] = js.undefined
+  val s3BucketArn: js.UndefOr[Input[ARN]] = js.native
   /**
     * Configuration block containing information for connecting to S3.
     */
-  val s3Config: js.UndefOr[Input[S3LocationS3Config]] = js.undefined
+  val s3Config: js.UndefOr[Input[S3LocationS3Config]] = js.native
   /**
     * Prefix to perform actions as source or destination.
     */
-  val subdirectory: js.UndefOr[Input[String]] = js.undefined
+  val subdirectory: js.UndefOr[Input[String]] = js.native
   /**
     * Key-value pairs of resource tags to assign to the DataSync Location.
     */
-  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
-  val uri: js.UndefOr[Input[String]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+  val uri: js.UndefOr[Input[String]] = js.native
 }
 
 object S3LocationState {

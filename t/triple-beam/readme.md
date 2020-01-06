@@ -10,9 +10,9 @@ Definitions of levels for logging purposes & shareable Symbol constants.
 | ------------------ | :-------------: |
 | Full name          | triple-beam |
 | Keywords           | winstonjs, winston, logging, logform, symbols, logs, levels |
-| # releases         | 7 |
-| # dependents       | 36 |
-| # downloads        | 16894363 |
+| # releases         | 3 |
+| # dependents       | 63 |
+| # downloads        | 48530049 |
 | # stars            | 0 |
 
 ## Links

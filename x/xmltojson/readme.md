@@ -9,9 +9,9 @@ Configurable, lightweight XML to JSON converter.
 | ------------------ | :-------------: |
 | Full name          | xmltojson |
 | Keywords           | xml, convert, transform, json |
-| # releases         | 3 |
+| # releases         | 1 |
 | # dependents       | 2 |
-| # downloads        | 19132 |
+| # downloads        | 20607 |
 | # stars            | 7 |
 
 ## Links

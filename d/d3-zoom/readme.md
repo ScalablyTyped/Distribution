@@ -10,9 +10,9 @@ Pan and zoom SVG, HTML or Canvas using mouse or touch input.
 | ------------------ | :-------------: |
 | Full name          | d3-zoom |
 | Keywords           | d3, d3-module, zoom, behavior, interaction |
-| # releases         | 11 |
-| # dependents       | 69 |
-| # downloads        | 12636658 |
+| # releases         | 8 |
+| # dependents       | 89 |
+| # downloads        | 20814183 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ Onsen UI - React Components for Hybrid Cordova/PhoneGap Apps with Material Desig
 | ------------------ | :-------------: |
 | Full name          | react-onsenui |
 | Keywords           | react, react-component, phonegap, cordova, hybrid, app, mobile, ui, onsen, onsenui |
-| # releases         | 17 |
-| # dependents       | 7 |
-| # downloads        | 57288 |
+| # releases         | 5 |
+| # dependents       | 8 |
+| # downloads        | 60952 |
 | # stars            | 0 |
 
 ## Links

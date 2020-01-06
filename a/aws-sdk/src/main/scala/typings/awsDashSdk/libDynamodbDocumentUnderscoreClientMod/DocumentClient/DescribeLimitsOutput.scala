@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DescribeLimitsOutput extends js.Object {
   /**
     * The maximum total read capacity units that your account allows you to provision across all of your tables in this Region.
     */
-  var AccountMaxReadCapacityUnits: js.UndefOr[PositiveLongObject] = js.undefined
+  var AccountMaxReadCapacityUnits: js.UndefOr[PositiveLongObject] = js.native
   /**
     * The maximum total write capacity units that your account allows you to provision across all of your tables in this Region.
     */
-  var AccountMaxWriteCapacityUnits: js.UndefOr[PositiveLongObject] = js.undefined
+  var AccountMaxWriteCapacityUnits: js.UndefOr[PositiveLongObject] = js.native
   /**
     * The maximum read capacity units that your account allows you to provision for a new table that you are creating in this Region, including the read capacity units provisioned for its global secondary indexes (GSIs).
     */
-  var TableMaxReadCapacityUnits: js.UndefOr[PositiveLongObject] = js.undefined
+  var TableMaxReadCapacityUnits: js.UndefOr[PositiveLongObject] = js.native
   /**
     * The maximum write capacity units that your account allows you to provision for a new table that you are creating in this Region, including the write capacity units provisioned for its global secondary indexes (GSIs).
     */
-  var TableMaxWriteCapacityUnits: js.UndefOr[PositiveLongObject] = js.undefined
+  var TableMaxWriteCapacityUnits: js.UndefOr[PositiveLongObject] = js.native
 }
 
 object DescribeLimitsOutput {

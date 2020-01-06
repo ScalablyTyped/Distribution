@@ -9,101 +9,102 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BucketObjectArgs extends js.Object {
   /**
     * The [canned ACL](https://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html#canned-acl) to apply. Defaults to "private".
     */
-  val acl: js.UndefOr[Input[String]] = js.undefined
+  val acl: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the bucket to put the file in.
     */
-  val bucket: Input[String | Bucket]
+  val bucket: Input[String | Bucket] = js.native
   /**
     * Specifies caching behavior along the request/reply chain Read [w3c cacheControl](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9) for further details.
     */
-  val cacheControl: js.UndefOr[Input[String]] = js.undefined
+  val cacheControl: js.UndefOr[Input[String]] = js.native
   /**
     * Literal string value to use as the object content, which will be uploaded as UTF-8-encoded text.
     */
-  val content: js.UndefOr[Input[String]] = js.undefined
+  val content: js.UndefOr[Input[String]] = js.native
   /**
     * Base64-encoded data that will be decoded and uploaded as raw bytes for the object content. This allows safely uploading non-UTF8 binary data, but is recommended only for small content such as the result of the `gzipbase64` function with small text strings. For larger objects, use `source` to stream the content from a disk file.
     */
-  val contentBase64: js.UndefOr[Input[String]] = js.undefined
+  val contentBase64: js.UndefOr[Input[String]] = js.native
   /**
     * Specifies presentational information for the object. Read [w3c contentDisposition](http://www.w3.org/Protocols/rfc2616/rfc2616-sec19.html#sec19.5.1) for further information.
     */
-  val contentDisposition: js.UndefOr[Input[String]] = js.undefined
+  val contentDisposition: js.UndefOr[Input[String]] = js.native
   /**
     * Specifies what content encodings have been applied to the object and thus what decoding mechanisms must be applied to obtain the media-type referenced by the Content-Type header field. Read [w3c content encoding](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.11) for further information.
     */
-  val contentEncoding: js.UndefOr[Input[String]] = js.undefined
+  val contentEncoding: js.UndefOr[Input[String]] = js.native
   /**
     * The language the content is in e.g. en-US or en-GB.
     */
-  val contentLanguage: js.UndefOr[Input[String]] = js.undefined
+  val contentLanguage: js.UndefOr[Input[String]] = js.native
   /**
     * A standard MIME type describing the format of the object data, e.g. application/octet-stream. All Valid MIME Types are valid for this input.
     */
-  val contentType: js.UndefOr[Input[String]] = js.undefined
+  val contentType: js.UndefOr[Input[String]] = js.native
   /**
     * Used to trigger updates. The only meaningful value is `${filemd5("path/to/file")}` (this provider 0.11.12 or later) or `${md5(file("path/to/file"))}` (this provider 0.11.11 or earlier).
     * This attribute is not compatible with KMS encryption, `kmsKeyId` or `serverSideEncryption = "aws:kms"`.
     */
-  val etag: js.UndefOr[Input[String]] = js.undefined
+  val etag: js.UndefOr[Input[String]] = js.native
   /**
     * Allow the object to be deleted by removing any legal hold on any object version.
     * Default is `false`. This value should be set to `true` only if the bucket has S3 object lock enabled.
     */
-  val forceDestroy: js.UndefOr[Input[Boolean]] = js.undefined
+  val forceDestroy: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The name of the object once it is in the bucket.
     */
-  val key: js.UndefOr[Input[String]] = js.undefined
+  val key: js.UndefOr[Input[String]] = js.native
   /**
     * Specifies the AWS KMS Key ARN to use for object encryption.
     * This value is a fully qualified **ARN** of the KMS Key. If using `aws.kms.Key`,
     * use the exported `arn` attribute:
     * `kmsKeyId = "${aws_kms_key.foo.arn}"`
     */
-  val kmsKeyId: js.UndefOr[Input[String]] = js.undefined
+  val kmsKeyId: js.UndefOr[Input[String]] = js.native
   /**
     * A mapping of keys/values to provision metadata (will be automatically prefixed by `x-amz-meta-`, note that only lowercase label are currently supported by the AWS Go API).
     */
-  val metadata: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
+  val metadata: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * The [legal hold](https://docs.aws.amazon.com/AmazonS3/latest/dev/object-lock-overview.html#object-lock-legal-holds) status that you want to apply to the specified object. Valid values are `ON` and `OFF`.
     */
-  val objectLockLegalHoldStatus: js.UndefOr[Input[String]] = js.undefined
+  val objectLockLegalHoldStatus: js.UndefOr[Input[String]] = js.native
   /**
     * The object lock [retention mode](https://docs.aws.amazon.com/AmazonS3/latest/dev/object-lock-overview.html#object-lock-retention-modes) that you want to apply to this object. Valid values are `GOVERNANCE` and `COMPLIANCE`.
     */
-  val objectLockMode: js.UndefOr[Input[String]] = js.undefined
+  val objectLockMode: js.UndefOr[Input[String]] = js.native
   /**
     * The date and time, in [RFC3339 format](https://tools.ietf.org/html/rfc3339#section-5.8), when this object's object lock will [expire](https://docs.aws.amazon.com/AmazonS3/latest/dev/object-lock-overview.html#object-lock-retention-periods).
     */
-  val objectLockRetainUntilDate: js.UndefOr[Input[String]] = js.undefined
+  val objectLockRetainUntilDate: js.UndefOr[Input[String]] = js.native
   /**
     * Specifies server-side encryption of the object in S3. Valid values are "`AES256`" and "`aws:kms`".
     */
-  val serverSideEncryption: js.UndefOr[Input[String]] = js.undefined
+  val serverSideEncryption: js.UndefOr[Input[String]] = js.native
   /**
     * The path to a file that will be read and uploaded as raw bytes for the object content.
     */
-  val source: js.UndefOr[Input[Asset | Archive]] = js.undefined
+  val source: js.UndefOr[Input[Asset | Archive]] = js.native
   /**
     * Specifies the desired [Storage Class](http://docs.aws.amazon.com/AmazonS3/latest/dev/storage-class-intro.html)
     * for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA`", "`INTELLIGENT_TIERING`", "`GLACIER`", "`DEEP_ARCHIVE`", or "`STANDARD_IA`". Defaults to "`STANDARD`".
     */
-  val storageClass: js.UndefOr[Input[String]] = js.undefined
+  val storageClass: js.UndefOr[Input[String]] = js.native
   /**
     * A mapping of tags to assign to the object.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * Specifies a target URL for [website redirect](http://docs.aws.amazon.com/AmazonS3/latest/dev/how-to-page-redirect.html).
     */
-  val websiteRedirect: js.UndefOr[Input[String]] = js.undefined
+  val websiteRedirect: js.UndefOr[Input[String]] = js.native
 }
 
 object BucketObjectArgs {

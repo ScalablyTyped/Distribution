@@ -5,40 +5,41 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EipAssociationState extends js.Object {
   /**
     * The allocation ID. This is required for EC2-VPC.
     */
-  val allocationId: js.UndefOr[Input[String]] = js.undefined
+  val allocationId: js.UndefOr[Input[String]] = js.native
   /**
     * Whether to allow an Elastic IP to
     * be re-associated. Defaults to `true` in VPC.
     */
-  val allowReassociation: js.UndefOr[Input[Boolean]] = js.undefined
+  val allowReassociation: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The ID of the instance. This is required for
     * EC2-Classic. For EC2-VPC, you can specify either the instance ID or the
     * network interface ID, but not both. The operation fails if you specify an
     * instance ID unless exactly one network interface is attached.
     */
-  val instanceId: js.UndefOr[Input[String]] = js.undefined
+  val instanceId: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of the network interface. If the
     * instance has more than one network interface, you must specify a network
     * interface ID.
     */
-  val networkInterfaceId: js.UndefOr[Input[String]] = js.undefined
+  val networkInterfaceId: js.UndefOr[Input[String]] = js.native
   /**
     * The primary or secondary private IP address
     * to associate with the Elastic IP address. If no private IP address is
     * specified, the Elastic IP address is associated with the primary private IP
     * address.
     */
-  val privateIpAddress: js.UndefOr[Input[String]] = js.undefined
+  val privateIpAddress: js.UndefOr[Input[String]] = js.native
   /**
     * The Elastic IP address. This is required for EC2-Classic.
     */
-  val publicIp: js.UndefOr[Input[String]] = js.undefined
+  val publicIp: js.UndefOr[Input[String]] = js.native
 }
 
 object EipAssociationState {

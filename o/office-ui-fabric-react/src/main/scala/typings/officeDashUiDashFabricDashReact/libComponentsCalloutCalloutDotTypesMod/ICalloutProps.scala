@@ -149,7 +149,9 @@ trait ICalloutProps extends HTMLAttributes[HTMLDivElement] {
   var directionalHintFixed: js.UndefOr[Boolean] = js.undefined
   /**
     * How the element should be positioned in RTL layouts.
-    * If not specified, a mirror of `directionalHint` will be used instead
+    * If not specified, a mirror of the `directionalHint` alignment edge will be used instead.
+    * This means that `DirectionalHint.BottomLeft` will change to `DirectionalHint.BottomRight` but
+    * `DirectionalHint.LeftAuto` will not change.
     */
   var directionalHintForRTL: js.UndefOr[DirectionalHint] = js.undefined
   /**

@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DestinationBackup extends js.Object {
-  var CreateTimestamp: js.UndefOr[Timestamp] = js.undefined
-  var SourceBackup: js.UndefOr[BackupId] = js.undefined
-  var SourceCluster: js.UndefOr[ClusterId] = js.undefined
-  var SourceRegion: js.UndefOr[Region] = js.undefined
+  var CreateTimestamp: js.UndefOr[Timestamp] = js.native
+  var SourceBackup: js.UndefOr[BackupId] = js.native
+  var SourceCluster: js.UndefOr[ClusterId] = js.native
+  var SourceRegion: js.UndefOr[Region] = js.native
 }
 
 object DestinationBackup {
@@ -20,10 +21,10 @@ object DestinationBackup {
     SourceRegion: Region = null
   ): DestinationBackup = {
     val __obj = js.Dynamic.literal()
-    if (CreateTimestamp != null) __obj.updateDynamic("CreateTimestamp")(CreateTimestamp)
-    if (SourceBackup != null) __obj.updateDynamic("SourceBackup")(SourceBackup)
-    if (SourceCluster != null) __obj.updateDynamic("SourceCluster")(SourceCluster)
-    if (SourceRegion != null) __obj.updateDynamic("SourceRegion")(SourceRegion)
+    if (CreateTimestamp != null) __obj.updateDynamic("CreateTimestamp")(CreateTimestamp.asInstanceOf[js.Any])
+    if (SourceBackup != null) __obj.updateDynamic("SourceBackup")(SourceBackup.asInstanceOf[js.Any])
+    if (SourceCluster != null) __obj.updateDynamic("SourceCluster")(SourceCluster.asInstanceOf[js.Any])
+    if (SourceRegion != null) __obj.updateDynamic("SourceRegion")(SourceRegion.asInstanceOf[js.Any])
     __obj.asInstanceOf[DestinationBackup]
   }
 }

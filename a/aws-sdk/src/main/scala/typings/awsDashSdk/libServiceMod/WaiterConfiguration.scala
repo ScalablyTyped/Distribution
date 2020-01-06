@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WaiterConfiguration extends js.Object {
   /**
     * The number of seconds to wait between requests
     */
-  var delay: js.UndefOr[Double] = js.undefined
+  var delay: js.UndefOr[Double] = js.native
   /**
     * The maximum number of requests to send while waiting
     */
-  var maxAttempts: js.UndefOr[Double] = js.undefined
+  var maxAttempts: js.UndefOr[Double] = js.native
 }
 
 object WaiterConfiguration {

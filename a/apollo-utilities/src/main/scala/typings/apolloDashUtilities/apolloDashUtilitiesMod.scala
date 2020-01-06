@@ -83,7 +83,7 @@ object apolloDashUtilitiesMod extends js.Object {
   def isTest(): Boolean = js.native
   def maybeDeepFreeze(obj: js.Any): js.Any = js.native
   def mergeDeep[T /* <: js.Array[_] */](
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param sources because its type T is not an array type */ sources: T
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param sources because its type T is not an array type */ sources: T
   ): TupleToIntersection[T] = js.native
   def mergeDeepArray[T](sources: js.Array[T]): T = js.native
   def removeArgumentsFromDocument(config: js.Array[RemoveArgumentsConfig], doc: DocumentNode): DocumentNode = js.native

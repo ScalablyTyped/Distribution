@@ -10,9 +10,9 @@ Get all property keys of an object including non-enumerable and inherited ones
 | ------------------ | :-------------: |
 | Full name          | all-keys |
 | Keywords           | get, all, object, property, names, keys, properties, inherited, prototype, enumerable, non-enumerable, reflect, ownkeys, symbol, symbols |
-| # releases         | 5 |
-| # dependents       | 1 |
-| # downloads        | 840 |
+| # releases         | 6 |
+| # dependents       | 2 |
+| # downloads        | 1269 |
 | # stars            | 0 |
 
 ## Links

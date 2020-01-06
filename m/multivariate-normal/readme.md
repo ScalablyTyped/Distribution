@@ -10,9 +10,9 @@ Port of NumPy's random.multivariate_normal to Node.JS
 | ------------------ | :-------------: |
 | Full name          | multivariate-normal |
 | Keywords           | numpy, multivariate, random, gaussian, normal, distribution |
-| # releases         | 0 |
+| # releases         | 2 |
 | # dependents       | 2 |
-| # downloads        | 14085 |
+| # downloads        | 13993 |
 | # stars            | 0 |
 
 ## Links

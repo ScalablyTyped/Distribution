@@ -291,7 +291,7 @@ package object clientsSwfMod {
   type WorkflowTypeInfoList = js.Array[WorkflowTypeInfo]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2012-01-25`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

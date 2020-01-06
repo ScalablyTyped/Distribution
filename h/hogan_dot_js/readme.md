@@ -11,8 +11,8 @@ A mustache compiler.
 | Full name          | hogan.js |
 | Keywords           | mustache, template |
 | # releases         | 1 |
-| # dependents       | 376 |
-| # downloads        | 4653720 |
+| # dependents       | 382 |
+| # downloads        | 7090650 |
 | # stars            | 14 |
 
 ## Links

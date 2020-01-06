@@ -12,7 +12,7 @@ Utility for hashing and validating passwords using the default ASP.NET Identity 
 | Keywords           | ASP.NET, Identity, password, hash |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 5185 |
+| # downloads        | 19956 |
 | # stars            | 3 |
 
 ## Links

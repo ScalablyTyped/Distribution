@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-zeroconf
 
-Typings are for version 0.9
+Typings are for version 0.11
 
 ## Library description:
 A Zeroconf discovery utility for react-native
@@ -10,13 +10,13 @@ A Zeroconf discovery utility for react-native
 | ------------------ | :-------------: |
 | Full name          | react-native-zeroconf |
 | Keywords           | react-component, react-native, zeroconf, bonjour, avahi, network, lan, ios, android, network-discovery, discovery |
-| # releases         | 6 |
-| # dependents       | 1 |
-| # downloads        | 16505 |
+| # releases         | 8 |
+| # dependents       | 0 |
+| # downloads        | 21681 |
 | # stars            | 1 |
 
 ## Links
-- [Homepage](https://github.com/Apercu/react-native-zeroconf#readme)
+- [Homepage](https://github.com/balthazar/react-native-zeroconf)
 - [Bugs](https://github.com/Apercu/react-native-zeroconf/issues)
 - [Repository](https://github.com/Apercu/react-native-zeroconf)
 - [Npm](https://www.npmjs.com/package/react-native-zeroconf)

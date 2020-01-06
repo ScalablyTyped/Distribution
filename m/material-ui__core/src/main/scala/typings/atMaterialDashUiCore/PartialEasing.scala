@@ -5,11 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/transitions.Easing> */
+@js.native
 trait PartialEasing extends js.Object {
-  var easeIn: js.UndefOr[String] = js.undefined
-  var easeInOut: js.UndefOr[String] = js.undefined
-  var easeOut: js.UndefOr[String] = js.undefined
-  var sharp: js.UndefOr[String] = js.undefined
+  var easeIn: js.UndefOr[String] = js.native
+  var easeInOut: js.UndefOr[String] = js.native
+  var easeOut: js.UndefOr[String] = js.native
+  var sharp: js.UndefOr[String] = js.native
 }
 
 object PartialEasing {

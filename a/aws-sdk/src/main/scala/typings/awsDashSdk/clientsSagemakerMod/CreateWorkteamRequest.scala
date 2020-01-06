@@ -4,27 +4,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CreateWorkteamRequest extends js.Object {
   /**
     * A description of the work team.
     */
-  var Description: String200
+  var Description: String200 = js.native
   /**
     * A list of MemberDefinition objects that contains objects that identify the Amazon Cognito user pool that makes up the work team. For more information, see Amazon Cognito User Pools. All of the CognitoMemberDefinition objects that make up the member definition must have the same ClientId and UserPool values.
     */
-  var MemberDefinitions: typings.awsDashSdk.clientsSagemakerMod.MemberDefinitions
+  var MemberDefinitions: typings.awsDashSdk.clientsSagemakerMod.MemberDefinitions = js.native
   /**
     * Configures notification of workers regarding available or expiring work items.
     */
-  var NotificationConfiguration: js.UndefOr[typings.awsDashSdk.clientsSagemakerMod.NotificationConfiguration] = js.undefined
+  var NotificationConfiguration: js.UndefOr[typings.awsDashSdk.clientsSagemakerMod.NotificationConfiguration] = js.native
   /**
     * An array of key-value pairs. For more information, see Resource Tag and Using Cost Allocation Tags in the  AWS Billing and Cost Management User Guide.
     */
-  var Tags: js.UndefOr[TagList] = js.undefined
+  var Tags: js.UndefOr[TagList] = js.native
   /**
     * The name of the work team. Use this name to identify the work team.
     */
-  var WorkteamName: typings.awsDashSdk.clientsSagemakerMod.WorkteamName
+  var WorkteamName: typings.awsDashSdk.clientsSagemakerMod.WorkteamName = js.native
 }
 
 object CreateWorkteamRequest {
@@ -36,9 +37,9 @@ object CreateWorkteamRequest {
     NotificationConfiguration: NotificationConfiguration = null,
     Tags: TagList = null
   ): CreateWorkteamRequest = {
-    val __obj = js.Dynamic.literal(Description = Description, MemberDefinitions = MemberDefinitions, WorkteamName = WorkteamName)
-    if (NotificationConfiguration != null) __obj.updateDynamic("NotificationConfiguration")(NotificationConfiguration)
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
+    val __obj = js.Dynamic.literal(Description = Description.asInstanceOf[js.Any], MemberDefinitions = MemberDefinitions.asInstanceOf[js.Any], WorkteamName = WorkteamName.asInstanceOf[js.Any])
+    if (NotificationConfiguration != null) __obj.updateDynamic("NotificationConfiguration")(NotificationConfiguration.asInstanceOf[js.Any])
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateWorkteamRequest]
   }
 }

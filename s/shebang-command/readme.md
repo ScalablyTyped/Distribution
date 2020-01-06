@@ -10,9 +10,9 @@ Get the command from a shebang
 | ------------------ | :-------------: |
 | Full name          | shebang-command |
 | Keywords           | cmd, command, parse, shebang |
-| # releases         | 1 |
-| # dependents       | 40 |
-| # downloads        | 281678821 |
+| # releases         | 2 |
+| # dependents       | 56 |
+| # downloads        | 454689019 |
 | # stars            | 1 |
 
 ## Links

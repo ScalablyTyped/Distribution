@@ -12,7 +12,7 @@ Check whether a string has any emoji
 | Keywords           | emoji, emojis, string, text, has, contains, includes, detect, is |
 | # releases         | 2 |
 | # dependents       | 2 |
-| # downloads        | 6896 |
+| # downloads        | 25539 |
 | # stars            | 0 |
 
 ## Links

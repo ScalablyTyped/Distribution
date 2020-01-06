@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 trait ToasterProps extends js.Object {
   var autoHideDuration: js.UndefOr[Double] = js.undefined
   var overrides: js.UndefOr[ToasterOverrides] = js.undefined
-  var placement: js.UndefOr[bottomRight | bottom | topRight | bottomLeft | topLeft | top] = js.undefined
+  var placement: js.UndefOr[topLeft | topRight | bottomLeft | bottomRight | bottom | top] = js.undefined
   var usePortal: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -22,7 +22,7 @@ object ToasterProps {
   def apply(
     autoHideDuration: Int | Double = null,
     overrides: ToasterOverrides = null,
-    placement: bottomRight | bottom | topRight | bottomLeft | topLeft | top = null,
+    placement: topLeft | topRight | bottomLeft | bottomRight | bottom | top = null,
     usePortal: js.UndefOr[Boolean] = js.undefined
   ): ToasterProps = {
     val __obj = js.Dynamic.literal()

@@ -10,8 +10,8 @@ astar search algorithm in JavaScript
 | Full name          | javascript-astar |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 1111 |
+| # dependents       | 3 |
+| # downloads        | 1397 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ A lightweight, powerful javascript datetime picker
 | ------------------ | :-------------: |
 | Full name          | flatpickr |
 | Keywords           | javascript, datetimepicker, calendar, date, time, picker, lightweight |
-| # releases         | 71 |
-| # dependents       | 160 |
-| # downloads        | 5412459 |
+| # releases         | 29 |
+| # dependents       | 236 |
+| # downloads        | 9805245 |
 | # stars            | 17 |
 
 ## Links

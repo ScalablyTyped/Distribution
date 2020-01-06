@@ -22,13 +22,11 @@ trait Anon_AppComponent extends js.Object {
   var ErrorFactory: Instantiable3[
     /* service */ String, 
     /* serviceName */ String, 
-    /* errors */ ErrorMap[
-      /* import warning: RewrittenClass.unapply cls $anonfun was tparam ErrorCode */ js.Any
-    ], 
+    /* errors */ ErrorMap[/* import warning: RewrittenClass.unapply cls was tparam ErrorCode */ js.Any], 
     typings.atFirebaseUtil.atFirebaseUtilMod.ErrorFactory[
       String, 
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ K in / * import warning: RewrittenClass.unapply cls $anonfun was tparam ErrorCode * / any ]:? @firebase/util.@firebase/util/dist/src/errors.ErrorData}
+  {readonly [ K in / * import warning: RewrittenClass.unapply cls was tparam ErrorCode * / any ]:? @firebase/util.@firebase/util/dist/src/errors.ErrorData}
     */ typings.atFirebaseAppDashTypes.atFirebaseAppDashTypesStrings.Anon_AppComponent with js.Any
     ]
   ] = js.native

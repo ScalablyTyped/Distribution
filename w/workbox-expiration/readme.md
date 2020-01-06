@@ -10,9 +10,9 @@ A service worker helper library that expires cached responses based on age or ma
 | ------------------ | :-------------: |
 | Full name          | workbox-expiration |
 | Keywords           | workbox, workboxjs, service worker, sw, workbox-plugin |
-| # releases         | 19 |
+| # releases         | 18 |
 | # dependents       | 1 |
-| # downloads        | 18285284 |
+| # downloads        | 19770848 |
 | # stars            | 0 |
 
 ## Links

@@ -4,27 +4,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AttachTypedLinkRequest extends js.Object {
   /**
     * A set of attributes that are associated with the typed link.
     */
-  var Attributes: AttributeNameAndValueList
+  var Attributes: AttributeNameAndValueList = js.native
   /**
     * The Amazon Resource Name (ARN) of the directory where you want to attach the typed link.
     */
-  var DirectoryArn: Arn
+  var DirectoryArn: Arn = js.native
   /**
     * Identifies the source object that the typed link will attach to.
     */
-  var SourceObjectReference: ObjectReference
+  var SourceObjectReference: ObjectReference = js.native
   /**
     * Identifies the target object that the typed link will attach to.
     */
-  var TargetObjectReference: ObjectReference
+  var TargetObjectReference: ObjectReference = js.native
   /**
     * Identifies the typed link facet that is associated with the typed link.
     */
-  var TypedLinkFacet: TypedLinkSchemaAndFacetName
+  var TypedLinkFacet: TypedLinkSchemaAndFacetName = js.native
 }
 
 object AttachTypedLinkRequest {
@@ -36,7 +37,7 @@ object AttachTypedLinkRequest {
     TargetObjectReference: ObjectReference,
     TypedLinkFacet: TypedLinkSchemaAndFacetName
   ): AttachTypedLinkRequest = {
-    val __obj = js.Dynamic.literal(Attributes = Attributes, DirectoryArn = DirectoryArn, SourceObjectReference = SourceObjectReference, TargetObjectReference = TargetObjectReference, TypedLinkFacet = TypedLinkFacet)
+    val __obj = js.Dynamic.literal(Attributes = Attributes.asInstanceOf[js.Any], DirectoryArn = DirectoryArn.asInstanceOf[js.Any], SourceObjectReference = SourceObjectReference.asInstanceOf[js.Any], TargetObjectReference = TargetObjectReference.asInstanceOf[js.Any], TypedLinkFacet = TypedLinkFacet.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AttachTypedLinkRequest]
   }

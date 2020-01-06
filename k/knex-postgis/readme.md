@@ -10,9 +10,9 @@ postgis extension for knex
 | ------------------ | :-------------: |
 | Full name          | knex-postgis |
 | Keywords           | knex, postgres, postgis, sql, sql builder |
-| # releases         | 6 |
+| # releases         | 7 |
 | # dependents       | 7 |
-| # downloads        | 74923 |
+| # downloads        | 148753 |
 | # stars            | 0 |
 
 ## Links

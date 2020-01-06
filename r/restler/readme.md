@@ -11,8 +11,8 @@ An HTTP client library for node.js
 | Full name          | restler |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 393 |
-| # downloads        | 1508472 |
+| # dependents       | 396 |
+| # downloads        | 1744530 |
 | # stars            | 28 |
 
 ## Links

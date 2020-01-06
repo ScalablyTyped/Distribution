@@ -10,9 +10,9 @@ Fancy date ranges for Moment.js
 | ------------------ | :-------------: |
 | Full name          | moment-range |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 233 |
-| # downloads        | 4919021 |
+| # releases         | 5 |
+| # dependents       | 281 |
+| # downloads        | 7597039 |
 | # stars            | 11 |
 
 ## Links

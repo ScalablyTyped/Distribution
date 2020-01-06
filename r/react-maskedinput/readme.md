@@ -10,9 +10,9 @@ Masked <input/> React component
 | ------------------ | :-------------: |
 | Full name          | react-maskedinput |
 | Keywords           | react, masked, input, react-component |
-| # releases         | 3 |
-| # dependents       | 37 |
-| # downloads        | 1234763 |
+| # releases         | 2 |
+| # dependents       | 40 |
+| # downloads        | 1291508 |
 | # stars            | 3 |
 
 ## Links

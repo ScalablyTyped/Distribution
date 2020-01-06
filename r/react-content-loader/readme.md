@@ -4,15 +4,15 @@
 Typings are for version 4.3.4
 
 ## Library description:
-SVG component to create placeholder loading, like Facebook cards loading.
+SVG-Powered component to easily create placeholder loadings (like Facebook cards loading)
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-content-loader |
-| Keywords           | react, facebook-style, loader, loading, content, svg |
-| # releases         | 32 |
-| # dependents       | 38 |
-| # downloads        | 1357707 |
+| Keywords           | react, react-native, skeleton, placeholder, loader, loading, content, svg |
+| # releases         | 26 |
+| # dependents       | 73 |
+| # downloads        | 3267258 |
 | # stars            | 4 |
 
 ## Links

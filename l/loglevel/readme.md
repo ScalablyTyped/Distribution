@@ -10,10 +10,10 @@ Minimal lightweight logging for JavaScript, adding reliable log level methods to
 | ------------------ | :-------------: |
 | Full name          | loglevel |
 | Keywords           | log, logger, logging, browser |
-| # releases         | 5 |
-| # dependents       | 485 |
-| # downloads        | 130802383 |
-| # stars            | 14 |
+| # releases         | 6 |
+| # dependents       | 623 |
+| # downloads        | 226459627 |
+| # stars            | 15 |
 
 ## Links
 - [Homepage](https://github.com/pimterry/loglevel)

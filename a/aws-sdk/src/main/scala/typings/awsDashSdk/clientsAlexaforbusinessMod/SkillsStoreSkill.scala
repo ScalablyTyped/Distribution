@@ -4,35 +4,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SkillsStoreSkill extends js.Object {
   /**
     * The URL where the skill icon resides.
     */
-  var IconUrl: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.IconUrl] = js.undefined
+  var IconUrl: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.IconUrl] = js.native
   /**
     * Sample utterances that interact with the skill.
     */
-  var SampleUtterances: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.SampleUtterances] = js.undefined
+  var SampleUtterances: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.SampleUtterances] = js.native
   /**
     * Short description about the skill.
     */
-  var ShortDescription: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.ShortDescription] = js.undefined
+  var ShortDescription: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.ShortDescription] = js.native
   /**
     * Information about the skill.
     */
-  var SkillDetails: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.SkillDetails] = js.undefined
+  var SkillDetails: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.SkillDetails] = js.native
   /**
     * The ARN of the skill.
     */
-  var SkillId: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.SkillId] = js.undefined
+  var SkillId: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.SkillId] = js.native
   /**
     * The name of the skill.
     */
-  var SkillName: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.SkillName] = js.undefined
+  var SkillName: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.SkillName] = js.native
   /**
     * Linking support for a skill.
     */
-  var SupportsLinking: js.UndefOr[scala.Boolean] = js.undefined
+  var SupportsLinking: js.UndefOr[scala.Boolean] = js.native
 }
 
 object SkillsStoreSkill {
@@ -47,13 +48,13 @@ object SkillsStoreSkill {
     SupportsLinking: js.UndefOr[scala.Boolean] = js.undefined
   ): SkillsStoreSkill = {
     val __obj = js.Dynamic.literal()
-    if (IconUrl != null) __obj.updateDynamic("IconUrl")(IconUrl)
-    if (SampleUtterances != null) __obj.updateDynamic("SampleUtterances")(SampleUtterances)
-    if (ShortDescription != null) __obj.updateDynamic("ShortDescription")(ShortDescription)
-    if (SkillDetails != null) __obj.updateDynamic("SkillDetails")(SkillDetails)
-    if (SkillId != null) __obj.updateDynamic("SkillId")(SkillId)
-    if (SkillName != null) __obj.updateDynamic("SkillName")(SkillName)
-    if (!js.isUndefined(SupportsLinking)) __obj.updateDynamic("SupportsLinking")(SupportsLinking)
+    if (IconUrl != null) __obj.updateDynamic("IconUrl")(IconUrl.asInstanceOf[js.Any])
+    if (SampleUtterances != null) __obj.updateDynamic("SampleUtterances")(SampleUtterances.asInstanceOf[js.Any])
+    if (ShortDescription != null) __obj.updateDynamic("ShortDescription")(ShortDescription.asInstanceOf[js.Any])
+    if (SkillDetails != null) __obj.updateDynamic("SkillDetails")(SkillDetails.asInstanceOf[js.Any])
+    if (SkillId != null) __obj.updateDynamic("SkillId")(SkillId.asInstanceOf[js.Any])
+    if (SkillName != null) __obj.updateDynamic("SkillName")(SkillName.asInstanceOf[js.Any])
+    if (!js.isUndefined(SupportsLinking)) __obj.updateDynamic("SupportsLinking")(SupportsLinking.asInstanceOf[js.Any])
     __obj.asInstanceOf[SkillsStoreSkill]
   }
 }

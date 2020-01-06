@@ -10,13 +10,13 @@ wNumb - JavaScript Number & Money formatting
 | ------------------ | :-------------: |
 | Full name          | wnumb |
 | Keywords           | - |
-| # releases         | 0 |
+| # releases         | 2 |
 | # dependents       | 8 |
-| # downloads        | 384613 |
+| # downloads        | 473955 |
 | # stars            | 1 |
 
 ## Links
-- [Homepage](https://github.com/leongersen/wnumb)
+- [Homepage](https://github.com/leongersen/wnumb#readme)
 - [Bugs](https://github.com/leongersen/wnumb/issues)
 - [Repository](https://github.com/leongersen/wnumb)
 - [Npm](https://www.npmjs.com/package/wnumb)

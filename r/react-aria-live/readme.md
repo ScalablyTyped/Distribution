@@ -10,9 +10,9 @@ Add aria-live messaging to your React app
 | ------------------ | :-------------: |
 | Full name          | react-aria-live |
 | Keywords           | react-component |
-| # releases         | 10 |
+| # releases         | 9 |
 | # dependents       | 5 |
-| # downloads        | 164776 |
+| # downloads        | 288035 |
 | # stars            | 0 |
 
 ## Links

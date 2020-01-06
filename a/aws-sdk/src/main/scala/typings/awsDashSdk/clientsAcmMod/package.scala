@@ -83,6 +83,7 @@ package object clientsAcmMod {
     - typings.awsDashSdk.awsDashSdkStrings.PCA_INVALID_ARN
     - typings.awsDashSdk.awsDashSdkStrings.PCA_INVALID_STATE
     - typings.awsDashSdk.awsDashSdkStrings.PCA_REQUEST_FAILED
+    - typings.awsDashSdk.awsDashSdkStrings.PCA_NAME_CONSTRAINTS_VALIDATION
     - typings.awsDashSdk.awsDashSdkStrings.PCA_RESOURCE_NOT_FOUND
     - typings.awsDashSdk.awsDashSdkStrings.PCA_INVALID_ARGS
     - typings.awsDashSdk.awsDashSdkStrings.PCA_INVALID_DURATION
@@ -169,7 +170,7 @@ package object clientsAcmMod {
   type ValidationMethod = _ValidationMethod | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2015-12-08`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | java.lang.String

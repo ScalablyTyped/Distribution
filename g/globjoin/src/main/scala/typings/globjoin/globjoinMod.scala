@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("globjoin", JSImport.Namespace)
 @js.native
 object globjoinMod extends js.Object {
-  def apply(globs: (String | js.Array[String])*): js.Array[String] = js.native
+  def apply(globs: String*): String = js.native
 }
 

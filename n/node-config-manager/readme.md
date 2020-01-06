@@ -12,7 +12,7 @@ A configuration manager for NodeJS. It helps you to organize your project and th
 | Keywords           | util, config, environment, manager |
 | # releases         | 3 |
 | # dependents       | 6 |
-| # downloads        | 7070 |
+| # downloads        | 8596 |
 | # stars            | 6 |
 
 ## Links

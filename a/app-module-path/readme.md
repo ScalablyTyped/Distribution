@@ -11,8 +11,8 @@ Simple module to add additional directories to the Node module search for top-le
 | Full name          | app-module-path |
 | Keywords           | modules, path, node, extend, resolve |
 | # releases         | 1 |
-| # dependents       | 198 |
-| # downloads        | 4321364 |
+| # dependents       | 223 |
+| # downloads        | 6875018 |
 | # stars            | 40 |
 
 ## Links

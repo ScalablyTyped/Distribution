@@ -4,8 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InjectedProps extends js.Object {
-  var fullScreen: js.UndefOr[Boolean] = js.undefined
+  var fullScreen: js.UndefOr[Boolean] = js.native
 }
 
 object InjectedProps {

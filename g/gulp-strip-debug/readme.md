@@ -11,8 +11,8 @@ Strip console and debugger statements from JavaScript code
 | Full name          | gulp-strip-debug |
 | Keywords           | gulpplugin, strip, remove, delete, clean, debug, debugger, console, log, logging, js, javascript, ecmascript, ast, esprima |
 | # releases         | 3 |
-| # dependents       | 57 |
-| # downloads        | 523183 |
+| # dependents       | 58 |
+| # downloads        | 502104 |
 | # stars            | 39 |
 
 ## Links

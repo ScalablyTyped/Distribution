@@ -4,43 +4,44 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UpdateUserRequest extends js.Object {
   /**
     * Amazon WorkDocs authentication token. Do not set this field when using administrative API actions, as in accessing the API using AWS credentials.
     */
-  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.undefined
+  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.native
   /**
     * The given name of the user.
     */
-  var GivenName: js.UndefOr[UserAttributeValueType] = js.undefined
+  var GivenName: js.UndefOr[UserAttributeValueType] = js.native
   /**
     * Boolean value to determine whether the user is granted Poweruser privileges.
     */
-  var GrantPoweruserPrivileges: js.UndefOr[BooleanEnumType] = js.undefined
+  var GrantPoweruserPrivileges: js.UndefOr[BooleanEnumType] = js.native
   /**
     * The locale of the user.
     */
-  var Locale: js.UndefOr[LocaleType] = js.undefined
+  var Locale: js.UndefOr[LocaleType] = js.native
   /**
     * The amount of storage for the user.
     */
-  var StorageRule: js.UndefOr[StorageRuleType] = js.undefined
+  var StorageRule: js.UndefOr[StorageRuleType] = js.native
   /**
     * The surname of the user.
     */
-  var Surname: js.UndefOr[UserAttributeValueType] = js.undefined
+  var Surname: js.UndefOr[UserAttributeValueType] = js.native
   /**
     * The time zone ID of the user.
     */
-  var TimeZoneId: js.UndefOr[TimeZoneIdType] = js.undefined
+  var TimeZoneId: js.UndefOr[TimeZoneIdType] = js.native
   /**
     * The type of the user.
     */
-  var Type: js.UndefOr[UserType] = js.undefined
+  var Type: js.UndefOr[UserType] = js.native
   /**
     * The ID of the user.
     */
-  var UserId: IdType
+  var UserId: IdType = js.native
 }
 
 object UpdateUserRequest {
@@ -56,14 +57,14 @@ object UpdateUserRequest {
     TimeZoneId: TimeZoneIdType = null,
     Type: UserType = null
   ): UpdateUserRequest = {
-    val __obj = js.Dynamic.literal(UserId = UserId)
-    if (AuthenticationToken != null) __obj.updateDynamic("AuthenticationToken")(AuthenticationToken)
-    if (GivenName != null) __obj.updateDynamic("GivenName")(GivenName)
+    val __obj = js.Dynamic.literal(UserId = UserId.asInstanceOf[js.Any])
+    if (AuthenticationToken != null) __obj.updateDynamic("AuthenticationToken")(AuthenticationToken.asInstanceOf[js.Any])
+    if (GivenName != null) __obj.updateDynamic("GivenName")(GivenName.asInstanceOf[js.Any])
     if (GrantPoweruserPrivileges != null) __obj.updateDynamic("GrantPoweruserPrivileges")(GrantPoweruserPrivileges.asInstanceOf[js.Any])
     if (Locale != null) __obj.updateDynamic("Locale")(Locale.asInstanceOf[js.Any])
-    if (StorageRule != null) __obj.updateDynamic("StorageRule")(StorageRule)
-    if (Surname != null) __obj.updateDynamic("Surname")(Surname)
-    if (TimeZoneId != null) __obj.updateDynamic("TimeZoneId")(TimeZoneId)
+    if (StorageRule != null) __obj.updateDynamic("StorageRule")(StorageRule.asInstanceOf[js.Any])
+    if (Surname != null) __obj.updateDynamic("Surname")(Surname.asInstanceOf[js.Any])
+    if (TimeZoneId != null) __obj.updateDynamic("TimeZoneId")(TimeZoneId.asInstanceOf[js.Any])
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateUserRequest]
   }

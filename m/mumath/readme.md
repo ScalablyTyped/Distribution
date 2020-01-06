@@ -12,7 +12,7 @@ Practical math utils for components
 | Keywords           | math, geometry |
 | # releases         | 0 |
 | # dependents       | 16 |
-| # downloads        | 1528349 |
+| # downloads        | 2412913 |
 | # stars            | 0 |
 
 ## Links

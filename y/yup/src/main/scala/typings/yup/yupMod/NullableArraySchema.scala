@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 trait NullableArraySchema[T]
   extends BasicArraySchema[js.Array[T] | Null] {
   def notRequired(): NotRequiredNullableArraySchema[T] = js.native
-  def nullable(): NullableArraySchema[T] = js.native
+  def nullable(): ArraySchema[T] = js.native
   def nullable(isNullable: Boolean): ArraySchema[T] = js.native
   @JSName("nullable")
-  def nullable_ArraySchema(): ArraySchema[T] = js.native
+  def nullable_NullableArraySchema(): NullableArraySchema[T] = js.native
   @JSName("nullable")
   def nullable_false(isNullable: `false`): ArraySchema[T] = js.native
   @JSName("nullable")

@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FleetIdentityProvider extends js.Object {
   /**
     * The SAML metadata document provided by the customer’s identity provider.
     */
-  var samlMetadata: Input[String]
+  var samlMetadata: Input[String] = js.native
   /**
     * The type of identity provider.
     */
-  var `type`: Input[String]
+  var `type`: Input[String] = js.native
 }
 
 object FleetIdentityProvider {

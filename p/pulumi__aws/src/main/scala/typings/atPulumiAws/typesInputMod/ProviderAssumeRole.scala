@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ProviderAssumeRole extends js.Object {
-  var externalId: js.UndefOr[Input[String]] = js.undefined
-  var policy: js.UndefOr[Input[String]] = js.undefined
-  var roleArn: js.UndefOr[Input[String]] = js.undefined
-  var sessionName: js.UndefOr[Input[String]] = js.undefined
+  var externalId: js.UndefOr[Input[String]] = js.native
+  var policy: js.UndefOr[Input[String]] = js.native
+  var roleArn: js.UndefOr[Input[String]] = js.native
+  var sessionName: js.UndefOr[Input[String]] = js.native
 }
 
 object ProviderAssumeRole {

@@ -11,8 +11,8 @@ The lodash method `_.partition` exported as a module.
 | Full name          | lodash.partition |
 | Keywords           | lodash-modularized, partition |
 | # releases         | 0 |
-| # dependents       | 36 |
-| # downloads        | 1218716 |
+| # dependents       | 48 |
+| # downloads        | 804657 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ General natural language (tokenizing, stemming (English, Russian, Spanish), part
 | ------------------ | :-------------: |
 | Full name          | natural |
 | Keywords           | natural language processing, artifical intelligence, statistics, Porter stemmer, Lancaster stemmer, tokenizer, bigram, trigram, quadgram, ngram, stemmer, bayes, classifier, phonetic, metaphone, inflector, Wordnet, tf-idf, logistic regression, doublemetaphone, double, jaro-winkler distance, levenshtein distance, string distance, part-of-speech tagger, Eric Brill, Brill tagger, sentiment analysis, maximum entropy modelling |
-| # releases         | 11 |
-| # dependents       | 280 |
-| # downloads        | 3399528 |
+| # releases         | 7 |
+| # dependents       | 285 |
+| # downloads        | 3736942 |
 | # stars            | 115 |
 
 ## Links

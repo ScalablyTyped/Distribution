@@ -5,12 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DomainSnapshotOptions extends js.Object {
   /**
     * Hour during which the service takes an automated daily
     * snapshot of the indices in the domain.
     */
-  var automatedSnapshotStartHour: Input[Double]
+  var automatedSnapshotStartHour: Input[Double] = js.native
 }
 
 object DomainSnapshotOptions {

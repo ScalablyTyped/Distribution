@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GraphQLApiAdditionalAuthenticationProviderUserPoolConfig extends js.Object {
   /**
     * A regular expression for validating the incoming Amazon Cognito User Pool app client ID.
     */
-  var appIdClientRegex: js.UndefOr[Input[String]] = js.undefined
+  var appIdClientRegex: js.UndefOr[Input[String]] = js.native
   /**
     * The AWS region in which the user pool was created.
     */
-  var awsRegion: js.UndefOr[Input[String]] = js.undefined
+  var awsRegion: js.UndefOr[Input[String]] = js.native
   /**
     * The user pool ID.
     */
-  var userPoolId: Input[String]
+  var userPoolId: Input[String] = js.native
 }
 
 object GraphQLApiAdditionalAuthenticationProviderUserPoolConfig {

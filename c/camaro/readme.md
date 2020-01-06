@@ -9,10 +9,10 @@ Transforming XML to JSON using Node.js binding to native pugixml parser library
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | camaro |
-| Keywords           | xpath, json, transform, pugixml, xml, parser, n-api, xml2json |
-| # releases         | 57 |
-| # dependents       | 4 |
-| # downloads        | 28455 |
+| Keywords           | xpath, json, transform, pugixml, xml, parser, n-api, xml2json, webassembly, wasm |
+| # releases         | 50 |
+| # dependents       | 6 |
+| # downloads        | 69541 |
 | # stars            | 2 |
 
 ## Links

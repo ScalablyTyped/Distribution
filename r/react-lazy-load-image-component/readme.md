@@ -10,9 +10,9 @@ React Component to lazy load images using a HOC to track window scroll position.
 | ------------------ | :-------------: |
 | Full name          | react-lazy-load-image-component |
 | Keywords           | react, react-component, lazyload, lazyloading, lazy-loading, lazyload-images |
-| # releases         | 16 |
-| # dependents       | 8 |
-| # downloads        | 421369 |
+| # releases         | 19 |
+| # dependents       | 14 |
+| # downloads        | 502436 |
 | # stars            | 0 |
 
 ## Links

@@ -11,8 +11,8 @@ Webpack plugin to bundle Workers automagically.
 | Full name          | worker-plugin |
 | Keywords           | webpack, plugin, worker, web worker, thread |
 | # releases         | 11 |
-| # dependents       | 8 |
-| # downloads        | 10600589 |
+| # dependents       | 9 |
+| # downloads        | 12430398 |
 | # stars            | 0 |
 
 ## Links

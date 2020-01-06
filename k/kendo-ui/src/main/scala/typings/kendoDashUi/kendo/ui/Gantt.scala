@@ -44,10 +44,10 @@ class Gantt protected () extends Widget {
   def select(row: Element): Unit = js.native
   def setDataSource(dataSource: GanttDataSource): Unit = js.native
   def setDependenciesDataSource(dataSource: GanttDependencyDataSource): Unit = js.native
-  def view(): GanttView = js.native
+  def view(): Unit = js.native
   def view(`type`: String): Unit = js.native
   @JSName("view")
-  def view_Unit(): Unit = js.native
+  def view_GanttView(): GanttView = js.native
 }
 
 /* static members */

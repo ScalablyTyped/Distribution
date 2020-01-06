@@ -10,9 +10,9 @@ Sequential scenarios for Mocha
 | ------------------ | :-------------: |
 | Full name          | mocha-steps |
 | Keywords           | mocha, step, test, bdd, scenarios, sequence |
-| # releases         | 3 |
-| # dependents       | 3 |
-| # downloads        | 204724 |
+| # releases         | 2 |
+| # dependents       | 4 |
+| # downloads        | 417566 |
 | # stars            | 2 |
 
 ## Links

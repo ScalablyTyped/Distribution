@@ -5,27 +5,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BucketCorsRule extends js.Object {
   /**
     * Specifies which headers are allowed.
     */
-  var allowedHeaders: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  var allowedHeaders: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * Specifies which methods are allowed. Can be `GET`, `PUT`, `POST`, `DELETE` or `HEAD`.
     */
-  var allowedMethods: Input[js.Array[Input[String]]]
+  var allowedMethods: Input[js.Array[Input[String]]] = js.native
   /**
     * Specifies which origins are allowed.
     */
-  var allowedOrigins: Input[js.Array[Input[String]]]
+  var allowedOrigins: Input[js.Array[Input[String]]] = js.native
   /**
     * Specifies expose header in the response.
     */
-  var exposeHeaders: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  var exposeHeaders: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * Specifies time in seconds that browser can cache the response for a preflight request.
     */
-  var maxAgeSeconds: js.UndefOr[Input[Double]] = js.undefined
+  var maxAgeSeconds: js.UndefOr[Input[Double]] = js.native
 }
 
 object BucketCorsRule {

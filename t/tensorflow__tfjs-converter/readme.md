@@ -10,9 +10,9 @@ Tensorflow model converter for javascript
 | ------------------ | :-------------: |
 | Full name          | @tensorflow/tfjs-converter |
 | Keywords           | - |
-| # releases         | 55 |
-| # dependents       | 2 |
-| # downloads        | 382042 |
+| # releases         | 69 |
+| # dependents       | 4 |
+| # downloads        | 521700 |
 | # stars            | 0 |
 
 ## Links

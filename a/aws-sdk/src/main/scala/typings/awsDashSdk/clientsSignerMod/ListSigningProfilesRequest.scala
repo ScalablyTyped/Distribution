@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ListSigningProfilesRequest extends js.Object {
   /**
     * Designates whether to include profiles with the status of CANCELED.
     */
-  var includeCanceled: js.UndefOr[bool] = js.undefined
+  var includeCanceled: js.UndefOr[bool] = js.native
   /**
     * The maximum number of profiles to be returned.
     */
-  var maxResults: js.UndefOr[MaxResults] = js.undefined
+  var maxResults: js.UndefOr[MaxResults] = js.native
   /**
     * Value for specifying the next set of paginated results to return. After you receive a response with truncated results, use this parameter in a subsequent request. Set it to the value of nextToken from the response that you just received.
     */
-  var nextToken: js.UndefOr[NextToken] = js.undefined
+  var nextToken: js.UndefOr[NextToken] = js.native
 }
 
 object ListSigningProfilesRequest {
@@ -27,9 +28,9 @@ object ListSigningProfilesRequest {
     nextToken: NextToken = null
   ): ListSigningProfilesRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeCanceled)) __obj.updateDynamic("includeCanceled")(includeCanceled)
+    if (!js.isUndefined(includeCanceled)) __obj.updateDynamic("includeCanceled")(includeCanceled.asInstanceOf[js.Any])
     if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
+    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListSigningProfilesRequest]
   }
 }

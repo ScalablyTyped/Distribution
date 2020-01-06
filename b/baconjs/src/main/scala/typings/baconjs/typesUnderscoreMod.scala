@@ -57,7 +57,7 @@ object typesUnderscoreMod extends js.Object {
     @JSName("head")
     var head_Original: Fn_Xs = js.native
     @JSName("id")
-    var id_Original: Fn_XA_2056052176 = js.native
+    var id_Original: Fn_XA_1739873883 = js.native
     @JSName("indexOf")
     var indexOf_Original: Fn_X = js.native
     @JSName("indexWhere")
@@ -65,7 +65,7 @@ object typesUnderscoreMod extends js.Object {
     @JSName("isFunction")
     var isFunction_Original: js.Function1[/* f */ js.Any, /* is std.Function */ Boolean] = js.native
     @JSName("last")
-    var last_Original: Fn_XsAArray_988238076 = js.native
+    var last_Original: Fn_XsAArray_743677257 = js.native
     @JSName("map")
     var map_Original: Fn_AF = js.native
     @JSName("negate")

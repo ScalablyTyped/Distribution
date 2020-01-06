@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "nock" : "11.7.0"
+      "nock" : "11.7.1"
     }
   ],
   "test-dependencies" : [
     {
-      "nock" : "11.7.0"
+      "nock" : "11.7.1"
     }
   ],
   "compile-devDependencies" : [

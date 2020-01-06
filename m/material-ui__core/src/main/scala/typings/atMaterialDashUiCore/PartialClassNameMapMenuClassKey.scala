@@ -5,8 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/Menu/Menu.MenuClassKey>> */
+@js.native
 trait PartialClassNameMapMenuClassKey extends js.Object {
-  var paper: js.UndefOr[String] = js.undefined
+  var paper: js.UndefOr[String] = js.native
 }
 
 object PartialClassNameMapMenuClassKey {

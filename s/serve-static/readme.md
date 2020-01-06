@@ -10,9 +10,9 @@ Serve static files
 | ------------------ | :-------------: |
 | Full name          | serve-static |
 | Keywords           | - |
-| # releases         | 9 |
-| # dependents       | 1566 |
-| # downloads        | 321143033 |
+| # releases         | 4 |
+| # dependents       | 1718 |
+| # downloads        | 459178933 |
 | # stars            | 99 |
 
 ## Links

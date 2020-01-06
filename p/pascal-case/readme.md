@@ -4,21 +4,21 @@
 Typings are for version 2.0.1
 
 ## Library description:
-Pascal case a string
+Transform into a string of capitalized words without separators
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | pascal-case |
-| Keywords           | pascal, case |
-| # releases         | 2 |
-| # dependents       | 178 |
-| # downloads        | 24349053 |
+| Keywords           | pascal, case, camel, capital, convert, transform, identifier, class |
+| # releases         | 3 |
+| # dependents       | 206 |
+| # downloads        | 44164017 |
 | # stars            | 3 |
 
 ## Links
-- [Homepage](https://github.com/blakeembrey/pascal-case)
-- [Bugs](https://github.com/blakeembrey/pascal-case/issues)
-- [Repository](https://github.com/blakeembrey/pascal-case)
+- [Homepage](https://github.com/blakeembrey/change-case/tree/master/packages/pascal-case#readme)
+- [Bugs](https://github.com/blakeembrey/change-case/issues)
+- [Repository](https://github.com/blakeembrey/change-case)
 - [Npm](https://www.npmjs.com/package/pascal-case)
     
 

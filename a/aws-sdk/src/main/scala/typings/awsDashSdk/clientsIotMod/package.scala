@@ -18,6 +18,7 @@ package object clientsIotMod {
   type AbortAction = CANCEL | java.lang.String
   type AbortCriteriaList = js.Array[AbortCriteria]
   type AbortThresholdPercentage = Double
+  type AcmCertificateArn = java.lang.String
   type ActionList = js.Array[Action]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.PUBLISH
@@ -35,9 +36,22 @@ package object clientsIotMod {
   type AlertTargetArn = java.lang.String
   type AlertTargetType = SNS | java.lang.String
   type AlertTargets = StringDictionary[AlertTarget]
+  type AllowAuthorizerOverride = scala.Boolean
   type AllowAutoRegistration = scala.Boolean
   type ApproximateSecondsBeforeTimedOut = Double
   type AscendingOrder = scala.Boolean
+  type AssetId = java.lang.String
+  type AssetPropertyAlias = java.lang.String
+  type AssetPropertyBooleanValue = java.lang.String
+  type AssetPropertyDoubleValue = java.lang.String
+  type AssetPropertyEntryId = java.lang.String
+  type AssetPropertyId = java.lang.String
+  type AssetPropertyIntegerValue = java.lang.String
+  type AssetPropertyOffsetInNanos = java.lang.String
+  type AssetPropertyQuality = java.lang.String
+  type AssetPropertyStringValue = java.lang.String
+  type AssetPropertyTimeInSeconds = java.lang.String
+  type AssetPropertyValueList = js.Array[AssetPropertyValue]
   type AttributeKey = java.lang.String
   type AttributeName = java.lang.String
   type AttributeValue = java.lang.String
@@ -140,6 +154,7 @@ package object clientsIotMod {
     - java.lang.String
   */
   type AutoRegistrationStatus = _AutoRegistrationStatus | java.lang.String
+  type Average = Double
   type AwsAccountId = java.lang.String
   type AwsArn = java.lang.String
   type AwsIotJobArn = java.lang.String
@@ -154,6 +169,7 @@ package object clientsIotMod {
   type BillingGroupName = java.lang.String
   type BillingGroupNameAndArnList = js.Array[GroupNameAndArn]
   type Boolean = scala.Boolean
+  type BooleanKey = scala.Boolean
   type BucketName = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.ACTIVE
@@ -167,7 +183,7 @@ package object clientsIotMod {
   type CanceledFindingsCount = Double
   type CanceledThings = Double
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.`private`
+    - typings.awsDashSdk.awsDashSdkStrings.private__
     - typings.awsDashSdk.awsDashSdkStrings.`public-read`
     - typings.awsDashSdk.awsDashSdkStrings.`public-read-write`
     - typings.awsDashSdk.awsDashSdkStrings.`aws-exec-read`
@@ -218,6 +234,7 @@ package object clientsIotMod {
   */
   type ComparisonOperator = _ComparisonOperator | java.lang.String
   type CompliantChecksCount = Double
+  type ConfirmationToken = java.lang.String
   type ConnectivityTimestamp = Double
   type ConsecutiveDatapointsToAlarm = Double
   type ConsecutiveDatapointsToClear = Double
@@ -253,6 +270,23 @@ package object clientsIotMod {
   type DeviceCertificateUpdateAction = DEACTIVATE | java.lang.String
   type DeviceDefenderThingName = java.lang.String
   type DisableAllLogs = scala.Boolean
+  type DomainConfigurationArn = java.lang.String
+  type DomainConfigurationName = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.ENABLED
+    - typings.awsDashSdk.awsDashSdkStrings.DISABLED
+    - java.lang.String
+  */
+  type DomainConfigurationStatus = _DomainConfigurationStatus | java.lang.String
+  type DomainConfigurations = js.Array[DomainConfigurationSummary]
+  type DomainName = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.ENDPOINT
+    - typings.awsDashSdk.awsDashSdkStrings.AWS_MANAGED
+    - typings.awsDashSdk.awsDashSdkStrings.CUSTOMER_MANAGED
+    - java.lang.String
+  */
+  type DomainType = _DomainType | java.lang.String
   type DurationSeconds = Double
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.ACTIVE
@@ -299,9 +333,19 @@ package object clientsIotMod {
   type ExecutionNumber = Double
   type ExpectedVersion = Double
   type ExpiresInSec = Double
+  type ExpiresInSeconds = Double
   type FailedChecksCount = Double
   type FailedFindingsCount = Double
   type FailedThings = Double
+  type FieldName = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.Number_
+    - typings.awsDashSdk.awsDashSdkStrings.String_
+    - typings.awsDashSdk.awsDashSdkStrings.Boolean_
+    - java.lang.String
+  */
+  type FieldType = _FieldType | java.lang.String
+  type Fields = js.Array[Field]
   type FileId = Double
   type FileName = java.lang.String
   type FindingId = java.lang.String
@@ -313,11 +357,17 @@ package object clientsIotMod {
   type ForceFlag = scala.Boolean
   type Forced = scala.Boolean
   type FunctionArn = java.lang.String
-  type GEMaxResults = Double
   type GenerationId = java.lang.String
   type HashAlgorithm = java.lang.String
   type HashKeyField = java.lang.String
   type HashKeyValue = java.lang.String
+  type HeaderKey = java.lang.String
+  type HeaderList = js.Array[HttpActionHeader]
+  type HeaderValue = java.lang.String
+  type HttpHeaderName = java.lang.String
+  type HttpHeaderValue = java.lang.String
+  type HttpHeaders = StringDictionary[HttpHeaderValue]
+  type HttpQueryString = java.lang.String
   type InProgressChecksCount = Double
   type InProgressThings = Double
   type InProgressTimeoutInMinutes = Double
@@ -400,6 +450,7 @@ package object clientsIotMod {
   type Marker = java.lang.String
   type MaxJobExecutionsPerMin = Double
   type MaxResults = Double
+  type Maximum = Double
   type MaximumPerMinute = Double
   type Message = java.lang.String
   /* Rewritten from type alias, can be one of: 
@@ -409,6 +460,7 @@ package object clientsIotMod {
   */
   type MessageFormat = _MessageFormat | java.lang.String
   type MessageId = java.lang.String
+  type Minimum = Double
   type MinimumNumberOfExecutedThings = Double
   type MissingContextValue = java.lang.String
   type MissingContextValues = js.Array[MissingContextValue]
@@ -428,6 +480,9 @@ package object clientsIotMod {
     - java.lang.String
   */
   type MitigationActionType = _MitigationActionType | java.lang.String
+  type MqttClientId = java.lang.String
+  type MqttPassword = Buffer | Uint8Array | Blob | java.lang.String
+  type MqttUsername = java.lang.String
   type NextToken = java.lang.String
   type NonCompliantChecksCount = Double
   type NonCompliantResourcesCount = Double
@@ -455,7 +510,11 @@ package object clientsIotMod {
   type Parameters = StringDictionary[Value]
   type PartitionKey = java.lang.String
   type PayloadField = java.lang.String
+  type Percent = Double
+  type PercentList = js.Array[Percent]
+  type PercentValue = Double
   type Percentage = Double
+  type Percentiles = js.Array[PercentPair]
   type Platform = java.lang.String
   type Policies = js.Array[Policy]
   type PolicyArn = java.lang.String
@@ -478,8 +537,18 @@ package object clientsIotMod {
   type PrivateKey = java.lang.String
   type ProcessingTargetName = java.lang.String
   type ProcessingTargetNameList = js.Array[ProcessingTargetName]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.MQTT
+    - typings.awsDashSdk.awsDashSdkStrings.HTTP
+    - java.lang.String
+  */
+  type Protocol = _Protocol | java.lang.String
+  type Protocols = js.Array[Protocol]
+  type ProvisioningTemplateListing = js.Array[ProvisioningTemplateSummary]
+  type ProvisioningTemplateVersionListing = js.Array[ProvisioningTemplateVersionSummary]
   type PublicKey = java.lang.String
   type PublicKeyMap = StringDictionary[KeyValue]
+  type PutAssetPropertyValueEntryList = js.Array[PutAssetPropertyValueEntry]
   type Qos = Double
   type QueryMaxResults = Double
   type QueryString = java.lang.String
@@ -500,6 +569,7 @@ package object clientsIotMod {
   type RegistryS3KeyName = java.lang.String
   type RejectedThings = Double
   type RelatedResources = js.Array[RelatedResource]
+  type RemoveAuthorizerConfig = scala.Boolean
   type RemoveAutoRegistration = scala.Boolean
   type RemoveThingType = scala.Boolean
   type RemovedThings = Double
@@ -509,6 +579,7 @@ package object clientsIotMod {
     - java.lang.String
   */
   type ReportType = _ReportType | java.lang.String
+  type ReservedDomainConfigurationName = java.lang.String
   type Resource = java.lang.String
   type ResourceArn = java.lang.String
   type ResourceArns = StringDictionary[ResourceArn]
@@ -520,6 +591,8 @@ package object clientsIotMod {
     - typings.awsDashSdk.awsDashSdkStrings.COGNITO_IDENTITY_POOL
     - typings.awsDashSdk.awsDashSdkStrings.CLIENT_ID
     - typings.awsDashSdk.awsDashSdkStrings.ACCOUNT_SETTINGS
+    - typings.awsDashSdk.awsDashSdkStrings.ROLE_ALIAS
+    - typings.awsDashSdk.awsDashSdkStrings.IAM_ROLE
     - java.lang.String
   */
   type ResourceType = _ResourceType | java.lang.String
@@ -551,6 +624,24 @@ package object clientsIotMod {
   type SecurityProfileTargetArn = java.lang.String
   type SecurityProfileTargetMappings = js.Array[SecurityProfileTargetMapping]
   type SecurityProfileTargets = js.Array[SecurityProfileTarget]
+  type ServerCertificateArns = js.Array[AcmCertificateArn]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.INVALID
+    - typings.awsDashSdk.awsDashSdkStrings.VALID
+    - java.lang.String
+  */
+  type ServerCertificateStatus = _ServerCertificateStatus | java.lang.String
+  type ServerCertificateStatusDetail = java.lang.String
+  type ServerCertificates = js.Array[ServerCertificateSummary]
+  type ServerName = java.lang.String
+  type ServiceName = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.DATA
+    - typings.awsDashSdk.awsDashSdkStrings.CREDENTIAL_PROVIDER
+    - typings.awsDashSdk.awsDashSdkStrings.JOBS
+    - java.lang.String
+  */
+  type ServiceType = _ServiceType | java.lang.String
   type SetAsActive = scala.Boolean
   type SetAsActiveFlag = scala.Boolean
   type SetAsDefault = scala.Boolean
@@ -558,6 +649,7 @@ package object clientsIotMod {
   type SignatureAlgorithm = java.lang.String
   type SigningJobId = java.lang.String
   type SigningProfileName = java.lang.String
+  type SigningRegion = java.lang.String
   type SkippedFindingsCount = Double
   type SkyfallMaxResults = Double
   type SnsTopicArn = java.lang.String
@@ -565,14 +657,15 @@ package object clientsIotMod {
   type StateReason = java.lang.String
   type StateValue = java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.InProgress
-    - typings.awsDashSdk.awsDashSdkStrings.Completed
-    - typings.awsDashSdk.awsDashSdkStrings.Failed
-    - typings.awsDashSdk.awsDashSdkStrings.Cancelled
-    - typings.awsDashSdk.awsDashSdkStrings.Cancelling
+    - typings.awsDashSdk.awsDashSdkStrings.InProgress_
+    - typings.awsDashSdk.awsDashSdkStrings.Completed_
+    - typings.awsDashSdk.awsDashSdkStrings.Failed_
+    - typings.awsDashSdk.awsDashSdkStrings.Cancelled_
+    - typings.awsDashSdk.awsDashSdkStrings.Cancelling_
     - java.lang.String
   */
   type Status = _Status | java.lang.String
+  type StdDeviation = Double
   type StreamArn = java.lang.String
   type StreamDescription = java.lang.String
   type StreamFiles = js.Array[StreamFile]
@@ -584,6 +677,8 @@ package object clientsIotMod {
   type StringMap = StringDictionary[String]
   type SucceededFindingsCount = Double
   type SucceededThings = Double
+  type Sum = Double
+  type SumOfSquares = Double
   type TableName = java.lang.String
   type TagKey = java.lang.String
   type TagKeyList = js.Array[TagKey]
@@ -601,7 +696,11 @@ package object clientsIotMod {
   type Targets = js.Array[Target]
   type TaskId = java.lang.String
   type TaskIdList = js.Array[TaskId]
+  type TemplateArn = java.lang.String
   type TemplateBody = java.lang.String
+  type TemplateDescription = java.lang.String
+  type TemplateName = java.lang.String
+  type TemplateVersionId = Double
   type ThingArn = java.lang.String
   type ThingAttributeList = js.Array[ThingAttribute]
   /* Rewritten from type alias, can be one of: 
@@ -648,16 +747,29 @@ package object clientsIotMod {
   type TokenSignature = java.lang.String
   type Topic = java.lang.String
   type TopicPattern = java.lang.String
+  type TopicRuleDestinationMaxResults = Double
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.ENABLED
+    - typings.awsDashSdk.awsDashSdkStrings.IN_PROGRESS
+    - typings.awsDashSdk.awsDashSdkStrings.DISABLED
+    - typings.awsDashSdk.awsDashSdkStrings.ERROR
+    - java.lang.String
+  */
+  type TopicRuleDestinationStatus = _TopicRuleDestinationStatus | java.lang.String
+  type TopicRuleDestinationSummaries = js.Array[TopicRuleDestinationSummary]
   type TopicRuleList = js.Array[TopicRuleListItem]
+  type TopicRuleMaxResults = Double
   type TotalChecksCount = Double
   type TotalFindingsCount = Double
   type TotalResourcesCount = Double
   type UndoDeprecate = scala.Boolean
   type UnsignedLong = Double
+  type Url = java.lang.String
   type UseBase64 = scala.Boolean
   type Valid = scala.Boolean
   type ValidationErrors = js.Array[ValidationError]
   type Value = java.lang.String
+  type Variance = Double
   type Version = Double
   type VersionNumber = Double
   /* Rewritten from type alias, can be one of: 
@@ -672,7 +784,7 @@ package object clientsIotMod {
   type WaitingForDataCollectionChecksCount = Double
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2015-05-28`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | java.lang.String

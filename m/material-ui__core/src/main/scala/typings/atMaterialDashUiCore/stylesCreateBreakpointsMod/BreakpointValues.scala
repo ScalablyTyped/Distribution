@@ -5,12 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined {[ key in @material-ui/core.@material-ui/core/styles/createBreakpoints.Breakpoint ]: number} */
+@js.native
 trait BreakpointValues extends js.Object {
-  var lg: Double
-  var md: Double
-  var sm: Double
-  var xl: Double
-  var xs: Double
+  var lg: Double = js.native
+  var md: Double = js.native
+  var sm: Double = js.native
+  var xl: Double = js.native
+  var xs: Double = js.native
 }
 
 object BreakpointValues {

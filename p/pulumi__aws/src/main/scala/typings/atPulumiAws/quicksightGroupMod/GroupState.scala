@@ -5,27 +5,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GroupState extends js.Object {
   /**
     * Amazon Resource Name (ARN) of group
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * The ID for the AWS account that the group is in. Currently, you use the ID for the AWS account that contains your Amazon QuickSight account.
     */
-  val awsAccountId: js.UndefOr[Input[String]] = js.undefined
+  val awsAccountId: js.UndefOr[Input[String]] = js.native
   /**
     * A description for the group.
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * A name for the group.
     */
-  val groupName: js.UndefOr[Input[String]] = js.undefined
+  val groupName: js.UndefOr[Input[String]] = js.native
   /**
     * The namespace. Currently, you should set this to `default`.
     */
-  val namespace: js.UndefOr[Input[String]] = js.undefined
+  val namespace: js.UndefOr[Input[String]] = js.native
 }
 
 object GroupState {

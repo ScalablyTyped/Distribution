@@ -10,9 +10,9 @@ State-based routing for AngularJS 1.x
 | ------------------ | :-------------: |
 | Full name          | angular-ui-router |
 | Keywords           | - |
-| # releases         | 23 |
-| # dependents       | 293 |
-| # downloads        | 4902236 |
+| # releases         | 22 |
+| # dependents       | 296 |
+| # downloads        | 4886688 |
 | # stars            | 35 |
 
 ## Links

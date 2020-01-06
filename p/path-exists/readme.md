@@ -10,9 +10,9 @@ Check if a path exists
 | ------------------ | :-------------: |
 | Full name          | path-exists |
 | Keywords           | path, exists, exist, file, filepath, fs, filesystem, file-system, access, stat |
-| # releases         | 0 |
-| # dependents       | 696 |
-| # downloads        | 512382561 |
+| # releases         | 2 |
+| # dependents       | 753 |
+| # downloads        | 786977789 |
 | # stars            | 14 |
 
 ## Links

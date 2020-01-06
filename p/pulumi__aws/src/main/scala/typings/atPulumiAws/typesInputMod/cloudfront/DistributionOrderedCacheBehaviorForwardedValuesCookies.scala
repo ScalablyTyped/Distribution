@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DistributionOrderedCacheBehaviorForwardedValuesCookies extends js.Object {
   /**
     * Specifies whether you want CloudFront to forward
@@ -12,13 +13,13 @@ trait DistributionOrderedCacheBehaviorForwardedValuesCookies extends js.Object {
     * specify `all`, `none` or `whitelist`. If `whitelist`, you must include the
     * subsequent `whitelistedNames`
     */
-  var forward: Input[String]
+  var forward: Input[String] = js.native
   /**
     * If you have specified `whitelist` to
     * `forward`, the whitelisted cookies that you want CloudFront to forward to
     * your origin.
     */
-  var whitelistedNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  var whitelistedNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
 }
 
 object DistributionOrderedCacheBehaviorForwardedValuesCookies {

@@ -5,23 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VolumeAttachmentState extends js.Object {
   /**
     * The device name to expose to the instance (for
     * example, `/dev/sdh` or `xvdh`).  See [Device Naming on Linux Instances][1] and [Device Naming on Windows Instances][2] for more information.
     */
-  val deviceName: js.UndefOr[Input[String]] = js.undefined
+  val deviceName: js.UndefOr[Input[String]] = js.native
   /**
     * Set to `true` if you want to force the
     * volume to detach. Useful if previous attempts failed, but use this option only
     * as a last resort, as this can result in **data loss**. See
     * [Detaching an Amazon EBS Volume from an Instance][3] for more information.
     */
-  val forceDetach: js.UndefOr[Input[Boolean]] = js.undefined
+  val forceDetach: js.UndefOr[Input[Boolean]] = js.native
   /**
     * ID of the Instance to attach to
     */
-  val instanceId: js.UndefOr[Input[String]] = js.undefined
+  val instanceId: js.UndefOr[Input[String]] = js.native
   /**
     * Set this to true if you do not wish
     * to detach the volume from the instance to which it is attached at destroy
@@ -29,11 +30,11 @@ trait VolumeAttachmentState extends js.Object {
     * useful when destroying an instance which has volumes created by some other
     * means attached.
     */
-  val skipDestroy: js.UndefOr[Input[Boolean]] = js.undefined
+  val skipDestroy: js.UndefOr[Input[Boolean]] = js.native
   /**
     * ID of the Volume to be attached
     */
-  val volumeId: js.UndefOr[Input[String]] = js.undefined
+  val volumeId: js.UndefOr[Input[String]] = js.native
 }
 
 object VolumeAttachmentState {

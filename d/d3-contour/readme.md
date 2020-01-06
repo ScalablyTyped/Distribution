@@ -10,9 +10,9 @@ Compute contour polygons using marching squares.
 | ------------------ | :-------------: |
 | Full name          | d3-contour |
 | Keywords           | d3, d3-module, contour, isoline |
-| # releases         | 7 |
-| # dependents       | 17 |
-| # downloads        | 7391623 |
+| # releases         | 5 |
+| # dependents       | 20 |
+| # downloads        | 15287358 |
 | # stars            | 0 |
 
 ## Links

@@ -12,7 +12,7 @@ object ɵangular_packages_core_core_h extends js.Object {
   def apply[T](
     TemplateRefToken: Instantiable0[TemplateRef[js.Object]],
     ElementRefToken: Instantiable1[
-      /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ /* nativeElement */ js.Any, 
+      /* import warning: RewrittenClass.unapply cls was tparam T */ /* nativeElement */ js.Any, 
       ElementRef[js.Any]
     ],
     hostTNode: TNode,

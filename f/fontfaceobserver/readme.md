@@ -9,13 +9,13 @@ Detect if web fonts are available
 | ------------------ | :-------------: |
 | Full name          | fontfaceobserver |
 | Keywords           | fontloader, fonts, font, font-face, web font, font load, font events |
-| # releases         | 5 |
-| # dependents       | 120 |
-| # downloads        | 3146172 |
+| # releases         | 2 |
+| # dependents       | 142 |
+| # downloads        | 5292095 |
 | # stars            | 8 |
 
 ## Links
-- [Homepage](https://github.com/bramstein/fontfaceobserver#readme)
+- [Homepage](https://fontfaceobserver.com/)
 - [Bugs](https://github.com/bramstein/fontfaceobserver/issues)
 - [Repository](https://github.com/bramstein/fontfaceobserver)
 - [Npm](https://www.npmjs.com/package/fontfaceobserver)

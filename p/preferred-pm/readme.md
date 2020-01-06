@@ -11,8 +11,8 @@ Detects what package manager was used for installation
 | Full name          | preferred-pm |
 | Keywords           | npm, pnpm, yarn |
 | # releases         | 5 |
-| # dependents       | 4 |
-| # downloads        | 1049819 |
+| # dependents       | 7 |
+| # downloads        | 1888721 |
 | # stars            | 0 |
 
 ## Links

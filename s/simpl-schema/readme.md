@@ -10,9 +10,9 @@ A schema validation package that supports direct validation of MongoDB update mo
 | ------------------ | :-------------: |
 | Full name          | simpl-schema |
 | Keywords           | - |
-| # releases         | 27 |
-| # dependents       | 36 |
-| # downloads        | 415661 |
+| # releases         | 11 |
+| # dependents       | 44 |
+| # downloads        | 645581 |
 | # stars            | 8 |
 
 ## Links

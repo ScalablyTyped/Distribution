@@ -10,9 +10,9 @@ Bind Async Data Dependencies to React Components
 | ------------------ | :-------------: |
 | Full name          | react-frontload |
 | Keywords           | react, load, data, async, bind, server, server render, ssr, server-side rendering, server side rendering, server rendering |
-| # releases         | 8 |
-| # dependents       | 4 |
-| # downloads        | 59065 |
+| # releases         | 10 |
+| # dependents       | 5 |
+| # downloads        | 160245 |
 | # stars            | 0 |
 
 ## Links

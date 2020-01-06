@@ -8,11 +8,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/ListItemAvatar.ListItemAvatarProps> */
+@js.native
 trait PartialListItemAvatarProps extends js.Object {
-  var className: js.UndefOr[String] = js.undefined
-  var classes: js.UndefOr[PartialClassNameMapListItemAvatarClassKey] = js.undefined
-  var innerRef: js.UndefOr[Ref[_] | RefObject[_]] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
+  var className: js.UndefOr[String] = js.native
+  var classes: js.UndefOr[PartialClassNameMapListItemAvatarClassKey] = js.native
+  var innerRef: js.UndefOr[Ref[_] | RefObject[_]] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
 }
 
 object PartialListItemAvatarProps {

@@ -4,27 +4,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LiteralArrayOptions extends js.Object {
   /**
     * A value to use for the field if the field isn't specified for a document.
     */
-  var DefaultValue: js.UndefOr[FieldValue] = js.undefined
+  var DefaultValue: js.UndefOr[FieldValue] = js.native
   /**
     * Whether facet information can be returned for the field.
     */
-  var FacetEnabled: js.UndefOr[Boolean] = js.undefined
+  var FacetEnabled: js.UndefOr[Boolean] = js.native
   /**
     * Whether the contents of the field can be returned in the search results.
     */
-  var ReturnEnabled: js.UndefOr[Boolean] = js.undefined
+  var ReturnEnabled: js.UndefOr[Boolean] = js.native
   /**
     * Whether the contents of the field are searchable.
     */
-  var SearchEnabled: js.UndefOr[Boolean] = js.undefined
+  var SearchEnabled: js.UndefOr[Boolean] = js.native
   /**
     * A list of source fields to map to the field. 
     */
-  var SourceFields: js.UndefOr[FieldNameCommaList] = js.undefined
+  var SourceFields: js.UndefOr[FieldNameCommaList] = js.native
 }
 
 object LiteralArrayOptions {
@@ -37,11 +38,11 @@ object LiteralArrayOptions {
     SourceFields: FieldNameCommaList = null
   ): LiteralArrayOptions = {
     val __obj = js.Dynamic.literal()
-    if (DefaultValue != null) __obj.updateDynamic("DefaultValue")(DefaultValue)
-    if (!js.isUndefined(FacetEnabled)) __obj.updateDynamic("FacetEnabled")(FacetEnabled)
-    if (!js.isUndefined(ReturnEnabled)) __obj.updateDynamic("ReturnEnabled")(ReturnEnabled)
-    if (!js.isUndefined(SearchEnabled)) __obj.updateDynamic("SearchEnabled")(SearchEnabled)
-    if (SourceFields != null) __obj.updateDynamic("SourceFields")(SourceFields)
+    if (DefaultValue != null) __obj.updateDynamic("DefaultValue")(DefaultValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(FacetEnabled)) __obj.updateDynamic("FacetEnabled")(FacetEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(ReturnEnabled)) __obj.updateDynamic("ReturnEnabled")(ReturnEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(SearchEnabled)) __obj.updateDynamic("SearchEnabled")(SearchEnabled.asInstanceOf[js.Any])
+    if (SourceFields != null) __obj.updateDynamic("SourceFields")(SourceFields.asInstanceOf[js.Any])
     __obj.asInstanceOf[LiteralArrayOptions]
   }
 }

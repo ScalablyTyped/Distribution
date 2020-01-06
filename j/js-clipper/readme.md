@@ -11,7 +11,7 @@ common.js compatible version of JSClipper
 | Keywords           | JsClipper, js-clipper, clipperlib |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 15443 |
+| # downloads        | 28511 |
 | # stars            | 1 |
 
 ## Links

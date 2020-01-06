@@ -116,7 +116,7 @@ trait GoogleMaps extends js.Object {
   var MVCObject: Instantiable0[typings.googlemaps.google.maps.MVCObject]
   /** @see {@link https://developers.google.com/maps/documentation/javascript/reference/map#Map Maps JavaScript API} */
   var Map: Instantiable1[
-    /* import warning: RewrittenClass.unapply cls $anonfun was tparam E */ /* mapDiv */ js.Any, 
+    /* import warning: RewrittenClass.unapply cls was tparam E */ /* mapDiv */ js.Any, 
     typings.googlemaps.google.maps.Map[Element]
   ]
   var MapCanvasProjection: Instantiable0[typings.googlemaps.google.maps.MapCanvasProjection]
@@ -180,7 +180,7 @@ object GoogleMaps {
     MVCArray: Instantiable0[MVCArray[js.Object]],
     MVCObject: Instantiable0[MVCObject],
     Map: Instantiable1[
-      /* import warning: RewrittenClass.unapply cls $anonfun was tparam E */ /* mapDiv */ js.Any, 
+      /* import warning: RewrittenClass.unapply cls was tparam E */ /* mapDiv */ js.Any, 
       Map[Element]
     ],
     MapCanvasProjection: Instantiable0[MapCanvasProjection],

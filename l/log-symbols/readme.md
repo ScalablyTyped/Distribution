@@ -11,8 +11,8 @@ Colored symbols for various log levels. Example: `✔︎ Success`
 | Full name          | log-symbols |
 | Keywords           | unicode, cli, cmd, command-line, characters, symbol, symbols, figure, figures, fallback, windows, log, logging, terminal, stdout |
 | # releases         | 3 |
-| # dependents       | 1059 |
-| # downloads        | 182726494 |
+| # dependents       | 1607 |
+| # downloads        | 327983227 |
 | # stars            | 34 |
 
 ## Links

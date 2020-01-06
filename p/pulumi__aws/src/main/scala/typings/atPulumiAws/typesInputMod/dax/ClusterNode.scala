@@ -5,14 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClusterNode extends js.Object {
-  var address: js.UndefOr[Input[String]] = js.undefined
-  var availabilityZone: js.UndefOr[Input[String]] = js.undefined
-  var id: js.UndefOr[Input[String]] = js.undefined
+  var address: js.UndefOr[Input[String]] = js.native
+  var availabilityZone: js.UndefOr[Input[String]] = js.native
+  var id: js.UndefOr[Input[String]] = js.native
   /**
     * The port used by the configuration endpoint
     */
-  var port: js.UndefOr[Input[Double]] = js.undefined
+  var port: js.UndefOr[Input[Double]] = js.native
 }
 
 object ClusterNode {

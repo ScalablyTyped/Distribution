@@ -4,15 +4,15 @@
 Typings are for version 1.18
 
 ## Library description:
-A pre-made payments UI for accepting cards and alternative payments in the browser built using version 3 of the [Braintree JS client SDK](https://github.com/braintree/braintree-web).
+[![BrowserStack Status](https://automate.browserstack.com/badge.svg?badge_key=eXpPWDNzYkdKZkxuQ1VaYkRqOTYwT1hBZ1ZWcFNoWGE1Mm1UYk02cGNYRT0tLTc5RXJRNFhQdnBlOXFlQlYwdjY4SFE9PQ==--e62ce6f205d984a440dca2c74289c82a30ad84a8)](https://automate.browserstack.com/pu
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | braintree-web-drop-in |
 | Keywords           | - |
-| # releases         | 27 |
+| # releases         | 22 |
 | # dependents       | 10 |
-| # downloads        | 419498 |
+| # downloads        | 701752 |
 | # stars            | 0 |
 
 ## Links

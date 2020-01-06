@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ImageQuality extends js.Object {
   /**
     * Value representing brightness of the face. The service returns a value between 0 and 100 (inclusive). A higher value indicates a brighter face image.
     */
-  var Brightness: js.UndefOr[Float] = js.undefined
+  var Brightness: js.UndefOr[Float] = js.native
   /**
     * Value representing sharpness of the face. The service returns a value between 0 and 100 (inclusive). A higher value indicates a sharper face image.
     */
-  var Sharpness: js.UndefOr[Float] = js.undefined
+  var Sharpness: js.UndefOr[Float] = js.native
 }
 
 object ImageQuality {

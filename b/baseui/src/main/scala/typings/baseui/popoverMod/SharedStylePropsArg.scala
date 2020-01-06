@@ -27,7 +27,7 @@ trait SharedStylePropsArg extends js.Object {
   var $isOpen: js.UndefOr[Boolean] = js.native
   @JSName("$placement")
   var $placement: js.UndefOr[
-    rightTop | auto | leftBottom | bottomRight | leftTop | bottom | left | topRight | bottomLeft | rightBottom | topLeft | top | right
+    topLeft | leftBottom | topRight | rightBottom | bottomLeft | right | auto | bottomRight | leftTop | left | bottom | rightTop | top
   ] = js.native
   @JSName("$popoverOffset")
   var $popoverOffset: js.UndefOr[Offset] = js.native

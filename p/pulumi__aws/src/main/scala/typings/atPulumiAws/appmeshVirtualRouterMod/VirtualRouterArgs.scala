@@ -7,23 +7,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VirtualRouterArgs extends js.Object {
   /**
     * The name of the service mesh in which to create the virtual router.
     */
-  val meshName: Input[String]
+  val meshName: Input[String] = js.native
   /**
     * The name to use for the virtual router.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * The virtual router specification to apply.
     */
-  val spec: Input[VirtualRouterSpec]
+  val spec: Input[VirtualRouterSpec] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object VirtualRouterArgs {

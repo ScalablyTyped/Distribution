@@ -12,7 +12,7 @@ Serialize unserializable data and parse it back.
 | Keywords           | redux, devtools |
 | # releases         | 9 |
 | # dependents       | 8 |
-| # downloads        | 2908132 |
+| # downloads        | 2652161 |
 | # stars            | 0 |
 
 ## Links

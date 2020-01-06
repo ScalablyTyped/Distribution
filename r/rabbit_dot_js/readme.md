@@ -10,9 +10,9 @@ Easy stream-based messaging using RabbitMQ
 | ------------------ | :-------------: |
 | Full name          | rabbit.js |
 | Keywords           | - |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 39 |
-| # downloads        | 44321 |
+| # downloads        | 38615 |
 | # stars            | 10 |
 
 ## Links

@@ -7,6 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClusterState extends js.Object {
   /**
     * The list of cluster certificates.
@@ -16,39 +17,39 @@ trait ClusterState extends js.Object {
     * * `cluster_certificates.0.hsm_certificate` - The HSM certificate issued (signed) by the HSM hardware.
     * * `cluster_certificates.0.manufacturer_hardware_certificate` - The HSM hardware certificate issued (signed) by the hardware manufacturer.
     */
-  val clusterCertificates: js.UndefOr[Input[ClusterClusterCertificates]] = js.undefined
+  val clusterCertificates: js.UndefOr[Input[ClusterClusterCertificates]] = js.native
   /**
     * The id of the CloudHSM cluster.
     */
-  val clusterId: js.UndefOr[Input[String]] = js.undefined
+  val clusterId: js.UndefOr[Input[String]] = js.native
   /**
     * The state of the cluster.
     */
-  val clusterState: js.UndefOr[Input[String]] = js.undefined
+  val clusterState: js.UndefOr[Input[String]] = js.native
   /**
     * The type of HSM module in the cluster. Currently, only hsm1.medium is supported.
     */
-  val hsmType: js.UndefOr[Input[String]] = js.undefined
+  val hsmType: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of the security group associated with the CloudHSM cluster.
     */
-  val securityGroupId: js.UndefOr[Input[String]] = js.undefined
+  val securityGroupId: js.UndefOr[Input[String]] = js.native
   /**
     * The id of Cloud HSM v2 cluster backup to be restored.
     */
-  val sourceBackupIdentifier: js.UndefOr[Input[String]] = js.undefined
+  val sourceBackupIdentifier: js.UndefOr[Input[String]] = js.native
   /**
     * The IDs of subnets in which cluster will operate.
     */
-  val subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * The id of the VPC that the CloudHSM cluster resides in.
     */
-  val vpcId: js.UndefOr[Input[String]] = js.undefined
+  val vpcId: js.UndefOr[Input[String]] = js.native
 }
 
 object ClusterState {

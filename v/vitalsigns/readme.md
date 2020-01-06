@@ -11,8 +11,8 @@ Powerful and customizable application health monitoring
 | Full name          | vitalsigns |
 | Keywords           | health, check, monitor, express, cpu, memory, application |
 | # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 27579 |
+| # dependents       | 5 |
+| # downloads        | 63072 |
 | # stars            | 2 |
 
 ## Links

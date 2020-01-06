@@ -4,15 +4,15 @@
 Typings are for version 3.1.3
 
 ## Library description:
-React data container for Apollo Client
+React Apollo Hooks, Components, and HOC.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-apollo |
-| Keywords           | apollo, graphql, react |
-| # releases         | 109 |
-| # dependents       | 373 |
-| # downloads        | 13400234 |
+| Keywords           | apollo, graphql, react, hooks, hoc, components |
+| # releases         | 100 |
+| # dependents       | 475 |
+| # downloads        | 24890755 |
 | # stars            | 17 |
 
 ## Links

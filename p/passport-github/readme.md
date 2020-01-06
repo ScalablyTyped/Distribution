@@ -11,8 +11,8 @@ GitHub authentication strategy for Passport.
 | Full name          | passport-github |
 | Keywords           | passport, github, auth, authn, authentication, identity |
 | # releases         | 1 |
-| # dependents       | 171 |
-| # downloads        | 587671 |
+| # dependents       | 185 |
+| # downloads        | 767572 |
 | # stars            | 12 |
 
 ## Links

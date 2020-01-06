@@ -10,9 +10,9 @@ Front End framework that supported view binding.
 | ------------------ | :-------------: |
 | Full name          | homeworks |
 | Keywords           | Frontend Framework, Material, IGAWorks, homeworks, framework, PIGNOSE |
-| # releases         | 34 |
+| # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 2358 |
+| # downloads        | 3138 |
 | # stars            | 0 |
 
 ## Links

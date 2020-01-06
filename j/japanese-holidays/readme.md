@@ -10,9 +10,9 @@ Provides utilities to manipulate japanese holidays.
 | ------------------ | :-------------: |
 | Full name          | japanese-holidays |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 4 |
 | # dependents       | 1 |
-| # downloads        | 47806 |
+| # downloads        | 75762 |
 | # stars            | 0 |
 
 ## Links

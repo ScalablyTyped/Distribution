@@ -8,47 +8,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OrganizationState extends js.Object {
   /**
     * List of organization accounts including the master account. For a list excluding the master account, see the `nonMasterAccounts` attribute. All elements have these attributes:
     */
-  val accounts: js.UndefOr[Input[js.Array[Input[OrganizationAccount]]]] = js.undefined
+  val accounts: js.UndefOr[Input[js.Array[Input[OrganizationAccount]]]] = js.native
   /**
     * ARN of the root
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * List of AWS service principal names for which you want to enable integration with your organization. This is typically in the form of a URL, such as service-abbreviation.amazonaws.com. Organization must have `featureSet` set to `ALL`. For additional information, see the [AWS Organizations User Guide](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services.html).
     */
-  val awsServiceAccessPrincipals: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val awsServiceAccessPrincipals: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * List of Organizations policy types to enable in the Organization Root. Organization must have `featureSet` set to `ALL`. For additional information about valid policy types (e.g. `SERVICE_CONTROL_POLICY`), see the [AWS Organizations API Reference](https://docs.aws.amazon.com/organizations/latest/APIReference/API_EnablePolicyType.html).
     */
-  val enabledPolicyTypes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val enabledPolicyTypes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * Specify "ALL" (default) or "CONSOLIDATED_BILLING".
     */
-  val featureSet: js.UndefOr[Input[String]] = js.undefined
+  val featureSet: js.UndefOr[Input[String]] = js.native
   /**
     * ARN of the master account
     */
-  val masterAccountArn: js.UndefOr[Input[String]] = js.undefined
+  val masterAccountArn: js.UndefOr[Input[String]] = js.native
   /**
     * Email address of the master account
     */
-  val masterAccountEmail: js.UndefOr[Input[String]] = js.undefined
+  val masterAccountEmail: js.UndefOr[Input[String]] = js.native
   /**
     * Identifier of the master account
     */
-  val masterAccountId: js.UndefOr[Input[String]] = js.undefined
+  val masterAccountId: js.UndefOr[Input[String]] = js.native
   /**
     * List of organization accounts excluding the master account. For a list including the master account, see the `accounts` attribute. All elements have these attributes:
     */
-  val nonMasterAccounts: js.UndefOr[Input[js.Array[Input[OrganizationNonMasterAccount]]]] = js.undefined
+  val nonMasterAccounts: js.UndefOr[Input[js.Array[Input[OrganizationNonMasterAccount]]]] = js.native
   /**
     * List of organization roots. All elements have these attributes:
     */
-  val roots: js.UndefOr[Input[js.Array[Input[OrganizationRoot]]]] = js.undefined
+  val roots: js.UndefOr[Input[js.Array[Input[OrganizationRoot]]]] = js.native
 }
 
 object OrganizationState {

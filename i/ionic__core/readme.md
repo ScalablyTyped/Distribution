@@ -10,13 +10,13 @@ Base components for Ionic
 | ------------------ | :-------------: |
 | Full name          | @ionic/core |
 | Keywords           | ionic, framework, stencil, mobile, app, webapp, capacitor, cordova, electron, progressive web app, pwa |
-| # releases         | 185 |
-| # dependents       | 53 |
-| # downloads        | 4665987 |
+| # releases         | 511 |
+| # dependents       | 100 |
+| # downloads        | 4198592 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/ionic-team/ionic#readme)
+- [Homepage](https://ionicframework.com/)
 - [Bugs](https://github.com/ionic-team/ionic/issues)
 - [Repository](https://github.com/ionic-team/ionic)
 - [Npm](https://www.npmjs.com/package/%40ionic%2Fcore)

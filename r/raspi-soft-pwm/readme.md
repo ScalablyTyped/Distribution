@@ -10,9 +10,9 @@ Provides access to Soft PWM on the Raspberry Pi as part of the Raspi.js library 
 | ------------------ | :-------------: |
 | Full name          | raspi-soft-pwm |
 | Keywords           | nodebots, robotics, raspberry pi |
-| # releases         | 9 |
+| # releases         | 7 |
 | # dependents       | 1 |
-| # downloads        | 8085 |
+| # downloads        | 6998 |
 | # stars            | 0 |
 
 ## Links

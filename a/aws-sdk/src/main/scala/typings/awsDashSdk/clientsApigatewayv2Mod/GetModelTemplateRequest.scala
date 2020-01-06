@@ -4,21 +4,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetModelTemplateRequest extends js.Object {
   /**
     * The API identifier.
     */
-  var ApiId: __string
+  var ApiId: __string = js.native
   /**
     * The model ID.
     */
-  var ModelId: __string
+  var ModelId: __string = js.native
 }
 
 object GetModelTemplateRequest {
   @scala.inline
   def apply(ApiId: __string, ModelId: __string): GetModelTemplateRequest = {
-    val __obj = js.Dynamic.literal(ApiId = ApiId, ModelId = ModelId)
+    val __obj = js.Dynamic.literal(ApiId = ApiId.asInstanceOf[js.Any], ModelId = ModelId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetModelTemplateRequest]
   }

@@ -10,10 +10,10 @@ Check dependencies in your node module
 | ------------------ | :-------------: |
 | Full name          | depcheck |
 | Keywords           | check, unused, package, packages, depcheck, dependency, dependencies, devDependencies |
-| # releases         | 10 |
-| # dependents       | 57 |
-| # downloads        | 2207375 |
-| # stars            | 56 |
+| # releases         | 16 |
+| # dependents       | 73 |
+| # downloads        | 4566770 |
+| # stars            | 58 |
 
 ## Links
 - [Homepage](https://github.com/depcheck/depcheck#readme)

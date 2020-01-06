@@ -11,6 +11,7 @@ package object clientsApplicationinsightsMod {
   import typings.std.Date
 
   type AffectedResource = String
+  type AmazonResourceName = String
   type ApplicationComponentList = js.Array[ApplicationComponent]
   type ApplicationInfoList = js.Array[ApplicationInfo]
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
@@ -37,6 +38,12 @@ package object clientsApplicationinsightsMod {
   */
   type LogFilter = _LogFilter | String
   type LogGroup = String
+  type LogPatternList = js.Array[LogPattern]
+  type LogPatternName = String
+  type LogPatternRank = Double
+  type LogPatternRegex = String
+  type LogPatternSetList = js.Array[LogPatternSetName]
+  type LogPatternSetName = String
   type LogText = String
   type MaxEntities = Double
   type MetricName = String
@@ -57,9 +64,9 @@ package object clientsApplicationinsightsMod {
   type ResourceList = js.Array[ResourceARN]
   type ResourceType = String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.LOW
-    - typings.awsDashSdk.awsDashSdkStrings.MEDIUM
-    - typings.awsDashSdk.awsDashSdkStrings.HIGH
+    - typings.awsDashSdk.awsDashSdkStrings.Low_
+    - typings.awsDashSdk.awsDashSdkStrings.Medium_
+    - typings.awsDashSdk.awsDashSdkStrings.High_
     - java.lang.String
   */
   type SeverityLevel = _SeverityLevel | String
@@ -73,13 +80,25 @@ package object clientsApplicationinsightsMod {
     - java.lang.String
   */
   type Status = _Status | String
-  type Tier = String
+  type TagKey = String
+  type TagKeyList = js.Array[TagKey]
+  type TagList = js.Array[Tag]
+  type TagValue = String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.DEFAULT
+    - typings.awsDashSdk.awsDashSdkStrings.DOT_NET_CORE
+    - typings.awsDashSdk.awsDashSdkStrings.DOT_NET_WORKER
+    - typings.awsDashSdk.awsDashSdkStrings.DOT_NET_WEB
+    - typings.awsDashSdk.awsDashSdkStrings.SQL_SERVER
+    - java.lang.String
+  */
+  type Tier = _Tier | String
   type Title = String
   type Unit = String
   type Value = Double
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2018-11-25`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

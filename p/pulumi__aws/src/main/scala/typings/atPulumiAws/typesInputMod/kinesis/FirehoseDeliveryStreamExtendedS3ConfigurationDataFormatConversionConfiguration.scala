@@ -5,29 +5,30 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfiguration extends js.Object {
   /**
     * Defaults to `true`. Set it to `false` if you want to disable format conversion while preserving the configuration details.
     */
-  var enabled: js.UndefOr[Input[Boolean]] = js.undefined
+  var enabled: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Nested argument that specifies the deserializer that you want Kinesis Data Firehose to use to convert the format of your data from JSON. More details below.
     */
   var inputFormatConfiguration: Input[
     FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfiguration
-  ]
+  ] = js.native
   /**
     * Nested argument that specifies the serializer that you want Kinesis Data Firehose to use to convert the format of your data to the Parquet or ORC format. More details below.
     */
   var outputFormatConfiguration: Input[
     FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfiguration
-  ]
+  ] = js.native
   /**
     * Nested argument that specifies the AWS Glue Data Catalog table that contains the column information. More details below.
     */
   var schemaConfiguration: Input[
     FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfiguration
-  ]
+  ] = js.native
 }
 
 object FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfiguration {

@@ -4,21 +4,21 @@
 Typings are for version 14.0
 
 ## Library description:
-[![Greenkeeper badge](https://badges.greenkeeper.io/MetaMask/provider-engine.svg)](https://greenkeeper.io/)
+Web3 ProviderEngine is a tool for composing your own [web3 providers](https://github.com/ethereum/wiki/wiki/JavaScript-API#web3).
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | web3-provider-engine |
 | Keywords           | - |
-| # releases         | 63 |
-| # dependents       | 140 |
-| # downloads        | 1564428 |
+| # releases         | 33 |
+| # dependents       | 184 |
+| # downloads        | 1978416 |
 | # stars            | 1 |
 
 ## Links
-- [Homepage](https://github.com/MetaMask/provider-engine#readme)
-- [Bugs](https://github.com/MetaMask/provider-engine/issues)
-- [Repository](https://github.com/MetaMask/provider-engine)
+- [Homepage](https://github.com/MetaMask/web3-provider-engine#readme)
+- [Bugs](https://github.com/MetaMask/web3-provider-engine/issues)
+- [Repository](https://github.com/MetaMask/web3-provider-engine)
 - [Npm](https://www.npmjs.com/package/web3-provider-engine)
     
 

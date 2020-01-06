@@ -10,9 +10,9 @@ Typings are for version 0.59.1
 | ------------------ | :-------------: |
 | Full name          | @nivo/sankey |
 | Keywords           | nivo, dataviz, react, d3, charts, sankey-diagram |
-| # releases         | 40 |
+| # releases         | 32 |
 | # dependents       | 3 |
-| # downloads        | 40773 |
+| # downloads        | 52278 |
 | # stars            | 0 |
 
 ## Links

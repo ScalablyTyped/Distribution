@@ -10,9 +10,9 @@ Interface to websequencediagrams.com
 | ------------------ | :-------------: |
 | Full name          | websequencediagrams |
 | Keywords           | uml, sequence diagram, sequence, diagram, websequencediagrams, websequencediagrams.com |
-| # releases         | 4 |
-| # dependents       | 5 |
-| # downloads        | 13937 |
+| # releases         | 3 |
+| # dependents       | 4 |
+| # downloads        | 35933 |
 | # stars            | 0 |
 
 ## Links

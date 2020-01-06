@@ -9,13 +9,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait jsSHA
-  extends Instantiable3[
-      /* variant */ String, 
-      (/* inputFormat */ ArrayBufferDataFormat) | (/* inputFormat */ StringDataFormat), 
-      /* options */ Options, 
-      Hasher[ArrayBuffer | String]
-    ]
-     with /**
+  extends /**
   * Create a Hasher object.
   *
   * @param variant - The desired SHA variant (SHA-1, SHA-224, SHA-256,
@@ -25,6 +19,12 @@ trait jsSHA
 Instantiable2[
       /* variant */ String, 
       (/* inputFormat */ ArrayBufferDataFormat) | (/* inputFormat */ StringDataFormat), 
+      Hasher[ArrayBuffer | String]
+    ]
+     with Instantiable3[
+      /* variant */ String, 
+      (/* inputFormat */ ArrayBufferDataFormat) | (/* inputFormat */ StringDataFormat), 
+      /* options */ Options, 
       Hasher[ArrayBuffer | String]
     ]
 

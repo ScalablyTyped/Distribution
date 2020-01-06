@@ -11,9 +11,9 @@ A javascript library for multi-touch gestures
 | Full name          | hammerjs |
 | Keywords           | touch, gestures |
 | # releases         | 1 |
-| # dependents       | 862 |
-| # downloads        | 20691846 |
-| # stars            | 46 |
+| # dependents       | 1070 |
+| # downloads        | 37073719 |
+| # stars            | 47 |
 
 ## Links
 - [Homepage](http://hammerjs.github.io/)

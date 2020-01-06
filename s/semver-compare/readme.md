@@ -11,8 +11,8 @@ compare two semver version strings, returning -1, 0, or 1
 | Full name          | semver-compare |
 | Keywords           | semver, compare, cmp, comparison, sort |
 | # releases         | 1 |
-| # dependents       | 93 |
-| # downloads        | 24926951 |
+| # dependents       | 115 |
+| # downloads        | 82843478 |
 | # stars            | 5 |
 
 ## Links

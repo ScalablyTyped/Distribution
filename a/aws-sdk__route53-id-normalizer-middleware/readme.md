@@ -9,9 +9,9 @@ Typings are for version 0.1.0-preview.1
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/route53-id-normalizer-middleware |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 0 |
-| # downloads        | 195 |
+| # releases         | 9 |
+| # dependents       | 2 |
+| # downloads        | 381 |
 | # stars            | 0 |
 
 ## Links

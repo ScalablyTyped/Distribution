@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DefaultRetention extends js.Object {
   /**
     * The number of days that you want to specify for the default retention period.
     */
-  var Days: js.UndefOr[typings.awsDashSdk.clientsS3Mod.Days] = js.undefined
+  var Days: js.UndefOr[typings.awsDashSdk.clientsS3Mod.Days] = js.native
   /**
-    * The default object lock retention mode you want to apply to new objects placed in the specified bucket.
+    * The default Object Lock retention mode you want to apply to new objects placed in the specified bucket.
     */
-  var Mode: js.UndefOr[ObjectLockRetentionMode] = js.undefined
+  var Mode: js.UndefOr[ObjectLockRetentionMode] = js.native
   /**
     * The number of years that you want to specify for the default retention period.
     */
-  var Years: js.UndefOr[typings.awsDashSdk.clientsS3Mod.Years] = js.undefined
+  var Years: js.UndefOr[typings.awsDashSdk.clientsS3Mod.Years] = js.native
 }
 
 object DefaultRetention {

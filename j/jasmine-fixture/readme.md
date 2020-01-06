@@ -12,7 +12,7 @@ Makes injecting HTML snippets into the DOM easy & clean!
 | Keywords           | jasmine, bdd |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 334554 |
+| # downloads        | 73487 |
 | # stars            | 1 |
 
 ## Links

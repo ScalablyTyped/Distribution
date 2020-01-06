@@ -4,21 +4,21 @@
 Typings are for version 10.1.1
 
 ## Library description:
-Fast 3kb React alternative with the same modern API. Components & Virtual DOM.
+Fast 3kb React-compatible Virtual DOM library.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | preact |
 | Keywords           | preact, react, virtual dom, vdom, components, virtual, dom |
-| # releases         | 20 |
-| # dependents       | 384 |
-| # downloads        | 4566584 |
+| # releases         | 31 |
+| # dependents       | 486 |
+| # downloads        | 8171323 |
 | # stars            | 33 |
 
 ## Links
-- [Homepage](https://github.com/developit/preact)
-- [Bugs](https://github.com/developit/preact/issues)
-- [Repository](https://github.com/developit/preact)
+- [Homepage](https://github.com/preactjs/preact)
+- [Bugs](https://github.com/preactjs/preact/issues)
+- [Repository](https://github.com/preactjs/preact)
 - [Npm](https://www.npmjs.com/package/preact)
     
 

@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AliasRoutingStrategy extends js.Object {
   /**
     * ID of the Gamelift Fleet to point the alias to.
     */
-  var fleetId: js.UndefOr[Input[String]] = js.undefined
+  var fleetId: js.UndefOr[Input[String]] = js.native
   /**
     * Message text to be used with the `TERMINAL` routing strategy.
     */
-  var message: js.UndefOr[Input[String]] = js.undefined
+  var message: js.UndefOr[Input[String]] = js.native
   /**
     * Type of routing strategy. e.g. `SIMPLE` or `TERMINAL`
     */
-  var `type`: Input[String]
+  var `type`: Input[String] = js.native
 }
 
 object AliasRoutingStrategy {

@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StorageRuleType extends js.Object {
   /**
     * The amount of storage allocated, in bytes.
     */
-  var StorageAllocatedInBytes: js.UndefOr[PositiveSizeType] = js.undefined
+  var StorageAllocatedInBytes: js.UndefOr[PositiveSizeType] = js.native
   /**
     * The type of storage.
     */
-  var StorageType: js.UndefOr[typings.awsDashSdk.clientsWorkdocsMod.StorageType] = js.undefined
+  var StorageType: js.UndefOr[typings.awsDashSdk.clientsWorkdocsMod.StorageType] = js.native
 }
 
 object StorageRuleType {

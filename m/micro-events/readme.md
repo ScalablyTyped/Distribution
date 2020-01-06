@@ -11,8 +11,8 @@ A very, very simple event emitter implementation.
 | Full name          | micro-events |
 | Keywords           | util, events, server, client, browser |
 | # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 1921 |
+| # dependents       | 6 |
+| # downloads        | 2317 |
 | # stars            | 0 |
 
 ## Links

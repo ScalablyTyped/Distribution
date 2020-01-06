@@ -11,8 +11,8 @@ Compute ripemd160 of bytes or strings.
 | Full name          | ripemd160 |
 | Keywords           | string, strings, ripemd160, ripe160, bitcoin, bytes, cryptography |
 | # releases         | 2 |
-| # dependents       | 94 |
-| # downloads        | 207704738 |
+| # dependents       | 127 |
+| # downloads        | 287499387 |
 | # stars            | 0 |
 
 ## Links

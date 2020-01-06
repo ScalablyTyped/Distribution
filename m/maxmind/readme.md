@@ -10,9 +10,9 @@ IP lookup using Maxmind databases
 | ------------------ | :-------------: |
 | Full name          | maxmind |
 | Keywords           | maxmind, mmdb, geo, geoip, geoip2, geobase, geo lookup, ip base, geocode, timezone, asn |
-| # releases         | 13 |
-| # dependents       | 49 |
-| # downloads        | 1150514 |
+| # releases         | 22 |
+| # dependents       | 58 |
+| # downloads        | 1798531 |
 | # stars            | 17 |
 
 ## Links

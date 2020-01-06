@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetChangeTokenStatusResponse extends js.Object {
   /**
     * The status of the change token.
     */
-  var ChangeTokenStatus: js.UndefOr[typings.awsDashSdk.clientsWafregionalMod.ChangeTokenStatus] = js.undefined
+  var ChangeTokenStatus: js.UndefOr[typings.awsDashSdk.clientsWafregionalMod.ChangeTokenStatus] = js.native
 }
 
 object GetChangeTokenStatusResponse {

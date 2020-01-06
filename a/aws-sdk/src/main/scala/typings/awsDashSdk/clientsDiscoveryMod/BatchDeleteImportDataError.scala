@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BatchDeleteImportDataError extends js.Object {
   /**
     * The type of error that occurred for a specific import task.
     */
-  var errorCode: js.UndefOr[BatchDeleteImportDataErrorCode] = js.undefined
+  var errorCode: js.UndefOr[BatchDeleteImportDataErrorCode] = js.native
   /**
     * The description of the error that occurred for a specific import task.
     */
-  var errorDescription: js.UndefOr[BatchDeleteImportDataErrorDescription] = js.undefined
+  var errorDescription: js.UndefOr[BatchDeleteImportDataErrorDescription] = js.native
   /**
     * The unique import ID associated with the error that occurred.
     */
-  var importTaskId: js.UndefOr[ImportTaskIdentifier] = js.undefined
+  var importTaskId: js.UndefOr[ImportTaskIdentifier] = js.native
 }
 
 object BatchDeleteImportDataError {
@@ -28,8 +29,8 @@ object BatchDeleteImportDataError {
   ): BatchDeleteImportDataError = {
     val __obj = js.Dynamic.literal()
     if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode.asInstanceOf[js.Any])
-    if (errorDescription != null) __obj.updateDynamic("errorDescription")(errorDescription)
-    if (importTaskId != null) __obj.updateDynamic("importTaskId")(importTaskId)
+    if (errorDescription != null) __obj.updateDynamic("errorDescription")(errorDescription.asInstanceOf[js.Any])
+    if (importTaskId != null) __obj.updateDynamic("importTaskId")(importTaskId.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchDeleteImportDataError]
   }
 }

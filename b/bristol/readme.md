@@ -12,7 +12,7 @@ Insanely configurable logging for Node.js
 | Keywords           | log, datatype, commoninfomodel, json |
 | # releases         | 2 |
 | # dependents       | 9 |
-| # downloads        | 82433 |
+| # downloads        | 138497 |
 | # stars            | 0 |
 
 ## Links

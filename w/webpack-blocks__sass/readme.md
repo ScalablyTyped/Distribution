@@ -10,9 +10,9 @@ Webpack block for SASS.
 | ------------------ | :-------------: |
 | Full name          | @webpack-blocks/sass |
 | Keywords           | webpack, webpack-blocks |
-| # releases         | 7 |
+| # releases         | 6 |
 | # dependents       | 2 |
-| # downloads        | 157380 |
+| # downloads        | 129252 |
 | # stars            | 0 |
 
 ## Links

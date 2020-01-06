@@ -12,7 +12,7 @@ Return true if the given number is even.
 | Keywords           | array, count, even, filter, integer, is, math, numeric, odd, string |
 | # releases         | 1 |
 | # dependents       | 13 |
-| # downloads        | 2012251 |
+| # downloads        | 2481782 |
 | # stars            | 1 |
 
 ## Links

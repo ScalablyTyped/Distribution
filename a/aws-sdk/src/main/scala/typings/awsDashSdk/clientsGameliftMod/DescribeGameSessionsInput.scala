@@ -4,31 +4,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DescribeGameSessionsInput extends js.Object {
   /**
-    * Unique identifier for an alias associated with the fleet to retrieve all game sessions for. 
+    * A unique identifier for an alias associated with the fleet to retrieve all game sessions for. You can use either the alias ID or ARN value.
     */
-  var AliasId: js.UndefOr[typings.awsDashSdk.clientsGameliftMod.AliasId] = js.undefined
+  var AliasId: js.UndefOr[typings.awsDashSdk.clientsGameliftMod.AliasId] = js.native
   /**
-    * Unique identifier for a fleet to retrieve all game sessions for.
+    * A unique identifier for a fleet to retrieve all game sessions for. You can use either the fleet ID or ARN value. 
     */
-  var FleetId: js.UndefOr[typings.awsDashSdk.clientsGameliftMod.FleetId] = js.undefined
+  var FleetId: js.UndefOr[typings.awsDashSdk.clientsGameliftMod.FleetId] = js.native
   /**
-    * Unique identifier for the game session to retrieve. You can use either a GameSessionId or GameSessionArn value. 
+    * A unique identifier for the game session to retrieve. 
     */
-  var GameSessionId: js.UndefOr[ArnStringModel] = js.undefined
+  var GameSessionId: js.UndefOr[ArnStringModel] = js.native
   /**
-    * Maximum number of results to return. Use this parameter with NextToken to get results as a set of sequential pages.
+    * The maximum number of results to return. Use this parameter with NextToken to get results as a set of sequential pages.
     */
-  var Limit: js.UndefOr[PositiveInteger] = js.undefined
+  var Limit: js.UndefOr[PositiveInteger] = js.native
   /**
     * Token that indicates the start of the next sequential page of results. Use the token that is returned with a previous call to this action. To start at the beginning of the result set, do not specify a value.
     */
-  var NextToken: js.UndefOr[NonZeroAndMaxString] = js.undefined
+  var NextToken: js.UndefOr[NonZeroAndMaxString] = js.native
   /**
     * Game session status to filter results on. Possible game session statuses include ACTIVE, TERMINATED, ACTIVATING, and TERMINATING (the last two are transitory). 
     */
-  var StatusFilter: js.UndefOr[NonZeroAndMaxString] = js.undefined
+  var StatusFilter: js.UndefOr[NonZeroAndMaxString] = js.native
 }
 
 object DescribeGameSessionsInput {
@@ -42,12 +43,12 @@ object DescribeGameSessionsInput {
     StatusFilter: NonZeroAndMaxString = null
   ): DescribeGameSessionsInput = {
     val __obj = js.Dynamic.literal()
-    if (AliasId != null) __obj.updateDynamic("AliasId")(AliasId)
-    if (FleetId != null) __obj.updateDynamic("FleetId")(FleetId)
-    if (GameSessionId != null) __obj.updateDynamic("GameSessionId")(GameSessionId)
+    if (AliasId != null) __obj.updateDynamic("AliasId")(AliasId.asInstanceOf[js.Any])
+    if (FleetId != null) __obj.updateDynamic("FleetId")(FleetId.asInstanceOf[js.Any])
+    if (GameSessionId != null) __obj.updateDynamic("GameSessionId")(GameSessionId.asInstanceOf[js.Any])
     if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
-    if (StatusFilter != null) __obj.updateDynamic("StatusFilter")(StatusFilter)
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
+    if (StatusFilter != null) __obj.updateDynamic("StatusFilter")(StatusFilter.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeGameSessionsInput]
   }
 }

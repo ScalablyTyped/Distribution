@@ -11,8 +11,8 @@ The lodash method `_.isDate` exported as a module.
 | Full name          | lodash.isdate |
 | Keywords           | lodash-modularized, isdate |
 | # releases         | 0 |
-| # dependents       | 37 |
-| # downloads        | 356599 |
+| # dependents       | 42 |
+| # downloads        | 561154 |
 | # stars            | 0 |
 
 ## Links

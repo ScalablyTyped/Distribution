@@ -10,9 +10,9 @@ Pub/Sub library providing wildcard subscriptions, complex message handling, etc.
 | ------------------ | :-------------: |
 | Full name          | postal |
 | Keywords           | pub/sub, pub, sub, messaging, message, bus, event, mediator, broker, envelope |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 83 |
-| # downloads        | 1040047 |
+| # downloads        | 1083707 |
 | # stars            | 12 |
 
 ## Links

@@ -1,5 +1,6 @@
 package typings.atPulumiAws.wafregionalRuleMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.atPulumiAws.typesOutputMod.wafregional.RulePredicate
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
@@ -23,6 +24,10 @@ class Rule protected () extends CustomResource {
   def this(name: String, args: RuleArgs) = this()
   def this(name: String, args: RuleArgs, opts: CustomResourceOptions) = this()
   /**
+    * The ARN of the WAF Regional Rule.
+    */
+  val arn: Output[String] = js.native
+  /**
     * The name or description for the Amazon CloudWatch metric of this rule.
     */
   val metricName: Output[String] = js.native
@@ -34,6 +39,10 @@ class Rule protected () extends CustomResource {
     * The objects to include in a rule (documented below).
     */
   val predicates: Output[js.UndefOr[js.Array[RulePredicate]]] = js.native
+  /**
+    * Key-value mapping of resource tags
+    */
+  val tags: Output[js.UndefOr[StringDictionary[_]]] = js.native
 }
 
 /* static members */

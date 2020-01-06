@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DistributionOriginGroupFailoverCriteria extends js.Object {
   /**
     * A list of HTTP status codes for the origin group
     */
-  var statusCodes: Input[js.Array[Input[Double]]]
+  var statusCodes: Input[js.Array[Input[Double]]] = js.native
 }
 
 object DistributionOriginGroupFailoverCriteria {

@@ -11,8 +11,8 @@ Just a reasonable typeof
 | Full name          | type-name |
 | Keywords           | type, typeof |
 | # releases         | 0 |
-| # dependents       | 32 |
-| # downloads        | 13532835 |
+| # dependents       | 34 |
+| # downloads        | 12570514 |
 | # stars            | 3 |
 
 ## Links

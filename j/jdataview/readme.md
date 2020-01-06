@@ -9,9 +9,9 @@ A unique way to work with a binary file in the browser and the server.
 | ------------------ | :-------------: |
 | Full name          | jdataview |
 | Keywords           | buffer, binary, data, file, dataview, read, write, manipulation |
-| # releases         | 1 |
-| # dependents       | 23 |
-| # downloads        | 128921 |
+| # releases         | 0 |
+| # dependents       | 27 |
+| # downloads        | 206203 |
 | # stars            | 2 |
 
 ## Links

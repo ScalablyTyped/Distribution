@@ -4,15 +4,15 @@
 Typings are for version 1.5
 
 ## Library description:
-Passport for LinkedIn Oauth2
+Passport for LinkedIn OAuth2 API v2
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | passport-linkedin-oauth2 |
 | Keywords           | passport, linkedin, auth0 |
-| # releases         | 3 |
-| # dependents       | 24 |
-| # downloads        | 287010 |
+| # releases         | 4 |
+| # dependents       | 25 |
+| # downloads        | 392445 |
 | # stars            | 7 |
 
 ## Links

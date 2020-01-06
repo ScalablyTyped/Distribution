@@ -11,8 +11,8 @@ A simple utility for conditionally joining classNames together
 | Full name          | classnames |
 | Keywords           | react, css, classes, classname, classnames, util, utility |
 | # releases         | 2 |
-| # dependents       | 10141 |
-| # downloads        | 117091581 |
+| # dependents       | 13131 |
+| # downloads        | 175153839 |
 | # stars            | 224 |
 
 ## Links

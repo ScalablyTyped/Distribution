@@ -10,9 +10,9 @@ Utility to make WordPress REST API requests.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/api-fetch |
 | Keywords           | wordpress, rest-api, fetch |
-| # releases         | 24 |
-| # dependents       | 10 |
-| # downloads        | 110395 |
+| # releases         | 35 |
+| # dependents       | 16 |
+| # downloads        | 258378 |
 | # stars            | 0 |
 
 ## Links

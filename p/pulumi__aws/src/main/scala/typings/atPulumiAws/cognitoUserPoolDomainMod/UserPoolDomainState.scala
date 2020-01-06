@@ -5,35 +5,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UserPoolDomainState extends js.Object {
   /**
     * The AWS account ID for the user pool owner.
     */
-  val awsAccountId: js.UndefOr[Input[String]] = js.undefined
+  val awsAccountId: js.UndefOr[Input[String]] = js.native
   /**
     * The ARN of an ISSUED ACM certificate in us-east-1 for a custom domain.
     */
-  val certificateArn: js.UndefOr[Input[String]] = js.undefined
+  val certificateArn: js.UndefOr[Input[String]] = js.native
   /**
     * The ARN of the CloudFront distribution.
     */
-  val cloudfrontDistributionArn: js.UndefOr[Input[String]] = js.undefined
+  val cloudfrontDistributionArn: js.UndefOr[Input[String]] = js.native
   /**
     * The domain string.
     */
-  val domain: js.UndefOr[Input[String]] = js.undefined
+  val domain: js.UndefOr[Input[String]] = js.native
   /**
     * The S3 bucket where the static files for this domain are stored.
     */
-  val s3Bucket: js.UndefOr[Input[String]] = js.undefined
+  val s3Bucket: js.UndefOr[Input[String]] = js.native
   /**
     * The user pool ID.
     */
-  val userPoolId: js.UndefOr[Input[String]] = js.undefined
+  val userPoolId: js.UndefOr[Input[String]] = js.native
   /**
     * The app version.
     */
-  val version: js.UndefOr[Input[String]] = js.undefined
+  val version: js.UndefOr[Input[String]] = js.native
 }
 
 object UserPoolDomainState {

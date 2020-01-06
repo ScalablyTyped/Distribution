@@ -10,9 +10,9 @@ New Relic log encricher for the `winston` package. Allows `winston` logs to be c
 | ------------------ | :-------------: |
 | Full name          | @newrelic/winston-enricher |
 | Keywords           | - |
-| # releases         | 0 |
+| # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 0 |
+| # downloads        | 431 |
 | # stars            | 0 |
 
 ## Links

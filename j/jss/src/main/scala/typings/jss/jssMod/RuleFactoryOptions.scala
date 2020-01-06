@@ -11,7 +11,7 @@ trait RuleFactoryOptions extends js.Object {
   var index: js.UndefOr[Double] = js.undefined
   var jss: js.UndefOr[Jss] = js.undefined
   var selector: js.UndefOr[String] = js.undefined
-  var sheet: js.UndefOr[StyleSheet[String]] = js.undefined
+  var sheet: js.UndefOr[StyleSheet[String | Double | js.Symbol]] = js.undefined
 }
 
 object RuleFactoryOptions {
@@ -23,7 +23,7 @@ object RuleFactoryOptions {
     index: Int | Double = null,
     jss: Jss = null,
     selector: String = null,
-    sheet: StyleSheet[String] = null
+    sheet: StyleSheet[String | Double | js.Symbol] = null
   ): RuleFactoryOptions = {
     val __obj = js.Dynamic.literal()
     if (Renderer != null) __obj.updateDynamic("Renderer")(Renderer.asInstanceOf[js.Any])

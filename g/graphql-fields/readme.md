@@ -11,8 +11,8 @@ Turns GraphQLResolveInfo into a map of the requested fields
 | Full name          | graphql-fields |
 | Keywords           | graphql, graphql-js, graphqlresolveinfo, fields, schema, ast |
 | # releases         | 9 |
-| # dependents       | 13 |
-| # downloads        | 442067 |
+| # dependents       | 30 |
+| # downloads        | 797311 |
 | # stars            | 3 |
 
 ## Links

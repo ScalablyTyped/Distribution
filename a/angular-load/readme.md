@@ -10,9 +10,9 @@ angular-load ============
 | ------------------ | :-------------: |
 | Full name          | angular-load |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 4 |
-| # downloads        | 161554 |
+| # releases         | 0 |
+| # dependents       | 3 |
+| # downloads        | 140599 |
 | # stars            | 1 |
 
 ## Links

@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation._
 trait TypeofClassView
   extends Instantiable0[View[Model]]
      with Instantiable1[
-      /* options */ ViewOptions[
-        /* import warning: RewrittenClass.unapply cls $anonfun was tparam TModel */ js.Any
-      ], 
+      /* options */ ViewOptions[/* import warning: RewrittenClass.unapply cls was tparam TModel */ js.Any], 
       View[Model]
     ] {
   /**

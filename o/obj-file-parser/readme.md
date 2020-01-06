@@ -10,9 +10,9 @@ Wavefront 3D Object File (.OBJ) Parser
 | ------------------ | :-------------: |
 | Full name          | obj-file-parser |
 | Keywords           | obj, file, 3D, parser, wavefront, mtl |
-| # releases         | 9 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 2124 |
+| # downloads        | 5685 |
 | # stars            | 0 |
 
 ## Links

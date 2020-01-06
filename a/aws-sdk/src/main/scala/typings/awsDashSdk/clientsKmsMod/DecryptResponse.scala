@@ -4,22 +4,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DecryptResponse extends js.Object {
   /**
-    * ARN of the key used to perform the decryption. This value is returned if no errors are encountered during the operation.
+    * The encryption algorithm that was used to decrypt the ciphertext.
     */
-  var KeyId: js.UndefOr[KeyIdType] = js.undefined
+  var EncryptionAlgorithm: js.UndefOr[EncryptionAlgorithmSpec] = js.native
   /**
-    * Decrypted plaintext data. When you use the HTTP API or the AWS CLI, the value is Base64-encoded. Otherwise, it is not encoded.
+    * The ARN of the customer master key that was used to perform the decryption.
     */
-  var Plaintext: js.UndefOr[PlaintextType] = js.undefined
+  var KeyId: js.UndefOr[KeyIdType] = js.native
+  /**
+    * Decrypted plaintext data. When you use the HTTP API or the AWS CLI, the value is Base64-encoded. Otherwise, it is not Base64-encoded.
+    */
+  var Plaintext: js.UndefOr[PlaintextType] = js.native
 }
 
 object DecryptResponse {
   @scala.inline
-  def apply(KeyId: KeyIdType = null, Plaintext: PlaintextType = null): DecryptResponse = {
+  def apply(
+    EncryptionAlgorithm: EncryptionAlgorithmSpec = null,
+    KeyId: KeyIdType = null,
+    Plaintext: PlaintextType = null
+  ): DecryptResponse = {
     val __obj = js.Dynamic.literal()
-    if (KeyId != null) __obj.updateDynamic("KeyId")(KeyId)
+    if (EncryptionAlgorithm != null) __obj.updateDynamic("EncryptionAlgorithm")(EncryptionAlgorithm.asInstanceOf[js.Any])
+    if (KeyId != null) __obj.updateDynamic("KeyId")(KeyId.asInstanceOf[js.Any])
     if (Plaintext != null) __obj.updateDynamic("Plaintext")(Plaintext.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecryptResponse]
   }

@@ -11,8 +11,8 @@ Convert a file: URI to a file path
 | Full name          | file-uri-to-path |
 | Keywords           | file, uri, convert, path |
 | # releases         | 2 |
-| # dependents       | 15 |
-| # downloads        | 48505053 |
+| # dependents       | 20 |
+| # downloads        | 88780145 |
 | # stars            | 1 |
 
 ## Links

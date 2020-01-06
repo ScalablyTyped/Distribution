@@ -12,7 +12,7 @@ Convert any method to be curriable with placeholder support
 | Keywords           | curry, functional |
 | # releases         | 12 |
 | # dependents       | 3 |
-| # downloads        | 539743 |
+| # downloads        | 764559 |
 | # stars            | 0 |
 
 ## Links

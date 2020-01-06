@@ -10,9 +10,9 @@ PhosphorJS - Generic Collections
 | ------------------ | :-------------: |
 | Full name          | @phosphor/collections |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 1 |
-| # downloads        | 1328163 |
+| # releases         | 3 |
+| # dependents       | 2 |
+| # downloads        | 1666650 |
 | # stars            | 0 |
 
 ## Links

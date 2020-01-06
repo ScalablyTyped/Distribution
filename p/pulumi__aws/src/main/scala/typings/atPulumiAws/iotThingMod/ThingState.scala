@@ -6,31 +6,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ThingState extends js.Object {
   /**
     * The ARN of the thing.
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * Map of attributes of the thing.
     */
-  val attributes: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val attributes: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * The default client ID.
     */
-  val defaultClientId: js.UndefOr[Input[String]] = js.undefined
+  val defaultClientId: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the thing.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * The thing type name.
     */
-  val thingTypeName: js.UndefOr[Input[String]] = js.undefined
+  val thingTypeName: js.UndefOr[Input[String]] = js.native
   /**
     * The current version of the thing record in the registry.
     */
-  val version: js.UndefOr[Input[Double]] = js.undefined
+  val version: js.UndefOr[Input[Double]] = js.native
 }
 
 object ThingState {

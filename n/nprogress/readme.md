@@ -11,9 +11,9 @@ Simple slim progress bars
 | Full name          | nprogress |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 331 |
-| # downloads        | 4444887 |
-| # stars            | 27 |
+| # dependents       | 545 |
+| # downloads        | 8460442 |
+| # stars            | 28 |
 
 ## Links
 - [Homepage](https://github.com/rstacruz/nprogress)

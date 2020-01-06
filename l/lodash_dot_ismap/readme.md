@@ -11,8 +11,8 @@ The lodash method `_.isMap` exported as a module.
 | Full name          | lodash.ismap |
 | Keywords           | lodash-modularized, ismap |
 | # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 17555 |
+| # dependents       | 4 |
+| # downloads        | 20976 |
 | # stars            | 0 |
 
 ## Links

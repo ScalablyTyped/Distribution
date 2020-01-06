@@ -12,7 +12,7 @@ Simple WAMP (WebSocket Application Messaging Protocol) Javascript implementation
 | Keywords           | websocket, wamp, pubsub, rpc |
 | # releases         | 6 |
 | # dependents       | 1 |
-| # downloads        | 12456 |
+| # downloads        | 20723 |
 | # stars            | 0 |
 
 ## Links

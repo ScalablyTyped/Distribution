@@ -10,9 +10,9 @@ jsreport recipe embedding output html into the docx
 | ------------------ | :-------------: |
 | Full name          | jsreport-html-embedded-in-docx |
 | Keywords           | jsreport, docx |
-| # releases         | 7 |
+| # releases         | 6 |
 | # dependents       | 1 |
-| # downloads        | 873 |
+| # downloads        | 1345 |
 | # stars            | 0 |
 
 ## Links

@@ -11,8 +11,8 @@ A platform detection library that works on nearly all JavaScript platforms.
 | Full name          | platform |
 | Keywords           | environment, platform, ua, useragent |
 | # releases         | 2 |
-| # dependents       | 191 |
-| # downloads        | 23337341 |
+| # dependents       | 216 |
+| # downloads        | 29910579 |
 | # stars            | 26 |
 
 ## Links

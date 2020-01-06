@@ -10,9 +10,9 @@ The Final Countdown for jQuery
 | ------------------ | :-------------: |
 | Full name          | jquery-countdown |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 0 |
-| # downloads        | 251052 |
+| # releases         | 0 |
+| # dependents       | 1 |
+| # downloads        | 291823 |
 | # stars            | 2 |
 
 ## Links

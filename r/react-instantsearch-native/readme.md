@@ -10,13 +10,13 @@ Typings are for version 5.3
 | ------------------ | :-------------: |
 | Full name          | react-instantsearch-native |
 | Keywords           | algolia, components, fast, instantsearch, react, react-native, search |
-| # releases         | 14 |
+| # releases         | 21 |
 | # dependents       | 1 |
-| # downloads        | 319053 |
+| # downloads        | 619138 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://community.algolia.com/react-instantsearch)
+- [Homepage](https://www.algolia.com/doc/guides/building-search-ui/what-is-instantsearch/react/)
 - [Bugs](https://github.com/algolia/react-instantsearch/issues)
 - [Repository](https://github.com/algolia/react-instantsearch)
 - [Npm](https://www.npmjs.com/package/react-instantsearch-native)

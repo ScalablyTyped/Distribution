@@ -10,12 +10,15 @@ A plugin which, when combined with HTMLWebpackPlugin, adds CSP tags to the HTML 
 | ------------------ | :-------------: |
 | Full name          | csp-html-webpack-plugin |
 | Keywords           | webpack, csp, plugin, html |
-| # releases         | 19 |
-| # dependents       | 3 |
-| # downloads        | 97821 |
+| # releases         | 20 |
+| # dependents       | 5 |
+| # downloads        | 192110 |
 | # stars            | 0 |
 
 ## Links
+- [Homepage](https://github.com/slackhq/csp-html-webpack-plugin)
+- [Bugs](https://github.com/slackhq/csp-html-webpack-plugin/issues)
+- [Repository](https://github.com/slackhq/csp-html-webpack-plugin)
 - [Npm](https://www.npmjs.com/package/csp-html-webpack-plugin)
     
 

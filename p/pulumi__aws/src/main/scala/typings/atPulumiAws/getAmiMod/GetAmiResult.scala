@@ -8,11 +8,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetAmiResult extends js.Object {
   /**
     * The OS architecture of the AMI (ie: `i386` or `x8664`).
     */
-  val architecture: String
+  val architecture: String = js.native
   /**
     * The block device mappings of the AMI.
     * * `block_device_mappings.#.device_name` - The physical name of the device.
@@ -30,117 +31,117 @@ trait GetAmiResult extends js.Object {
     * * `block_device_mappings.#.virtual_name` - The virtual device name (for
     * instance stores).
     */
-  val blockDeviceMappings: js.Array[GetAmiBlockDeviceMapping]
+  val blockDeviceMappings: js.Array[GetAmiBlockDeviceMapping] = js.native
   /**
     * The date and time the image was created.
     */
-  val creationDate: String
+  val creationDate: String = js.native
   /**
     * The description of the AMI that was provided during image
     * creation.
     */
-  val description: String
-  val executableUsers: js.UndefOr[js.Array[String]] = js.undefined
-  val filters: js.UndefOr[js.Array[GetAmiFilter]] = js.undefined
+  val description: String = js.native
+  val executableUsers: js.UndefOr[js.Array[String]] = js.native
+  val filters: js.UndefOr[js.Array[GetAmiFilter]] = js.native
   /**
     * The hypervisor type of the image.
     */
-  val hypervisor: String
+  val hypervisor: String = js.native
   /**
     * id is the provider-assigned unique ID for this managed resource.
     */
-  val id: String
+  val id: String = js.native
   /**
     * The ID of the AMI. Should be the same as the resource `id`.
     */
-  val imageId: String
+  val imageId: String = js.native
   /**
     * The location of the AMI.
     */
-  val imageLocation: String
+  val imageLocation: String = js.native
   /**
     * The AWS account alias (for example, `amazon`, `self`) or
     * the AWS account ID of the AMI owner.
     */
-  val imageOwnerAlias: String
+  val imageOwnerAlias: String = js.native
   /**
     * The type of image.
     */
-  val imageType: String
+  val imageType: String = js.native
   /**
     * The kernel associated with the image, if any. Only applicable
     * for machine images.
     */
-  val kernelId: String
-  val mostRecent: js.UndefOr[Boolean] = js.undefined
+  val kernelId: String = js.native
+  val mostRecent: js.UndefOr[Boolean] = js.native
   /**
     * The name of the AMI that was provided during image creation.
     */
-  val name: String
-  val nameRegex: js.UndefOr[String] = js.undefined
+  val name: String = js.native
+  val nameRegex: js.UndefOr[String] = js.native
   /**
     * The AWS account ID of the image owner.
     */
-  val ownerId: String
-  val owners: js.Array[String]
+  val ownerId: String = js.native
+  val owners: js.Array[String] = js.native
   /**
     * The value is Windows for `Windows` AMIs; otherwise blank.
     */
-  val platform: String
+  val platform: String = js.native
   /**
     * Any product codes associated with the AMI.
     * * `product_codes.#.product_code_id` - The product code.
     * * `product_codes.#.product_code_type` - The type of product code.
     */
-  val productCodes: js.Array[GetAmiProductCode]
+  val productCodes: js.Array[GetAmiProductCode] = js.native
   /**
     * `true` if the image has public launch permissions.
     */
-  val public: Boolean
+  val public: Boolean = js.native
   /**
     * The RAM disk associated with the image, if any. Only applicable
     * for machine images.
     */
-  val ramdiskId: String
+  val ramdiskId: String = js.native
   /**
     * The device name of the root device.
     */
-  val rootDeviceName: String
+  val rootDeviceName: String = js.native
   /**
     * The type of root device (ie: `ebs` or `instance-store`).
     */
-  val rootDeviceType: String
+  val rootDeviceType: String = js.native
   /**
     * The snapshot id associated with the root device, if any
     * (only applies to `ebs` root devices).
     */
-  val rootSnapshotId: String
+  val rootSnapshotId: String = js.native
   /**
     * Specifies whether enhanced networking is enabled.
     */
-  val sriovNetSupport: String
+  val sriovNetSupport: String = js.native
   /**
     * The current state of the AMI. If the state is `available`, the image
     * is successfully registered and can be used to launch an instance.
     */
-  val state: String
+  val state: String = js.native
   /**
     * Describes a state change. Fields are `UNSET` if not available.
     * * `state_reason.code` - The reason code for the state change.
     * * `state_reason.message` - The message for the state change.
     */
-  val stateReason: StringDictionary[js.Any]
+  val stateReason: StringDictionary[js.Any] = js.native
   /**
     * Any tags assigned to the image.
     * * `tags.#.key` - The key name of the tag.
     * * `tags.#.value` - The value of the tag.
     */
-  val tags: StringDictionary[js.Any]
+  val tags: StringDictionary[js.Any] = js.native
   /**
     * The type of virtualization of the AMI (ie: `hvm` or
     * `paravirtual`).
     */
-  val virtualizationType: String
+  val virtualizationType: String = js.native
 }
 
 object GetAmiResult {
@@ -177,11 +178,11 @@ object GetAmiResult {
     mostRecent: js.UndefOr[Boolean] = js.undefined,
     nameRegex: String = null
   ): GetAmiResult = {
-    val __obj = js.Dynamic.literal(architecture = architecture, blockDeviceMappings = blockDeviceMappings, creationDate = creationDate, description = description, hypervisor = hypervisor, id = id, imageId = imageId, imageLocation = imageLocation, imageOwnerAlias = imageOwnerAlias, imageType = imageType, kernelId = kernelId, name = name, ownerId = ownerId, owners = owners, platform = platform, productCodes = productCodes, public = public, ramdiskId = ramdiskId, rootDeviceName = rootDeviceName, rootDeviceType = rootDeviceType, rootSnapshotId = rootSnapshotId, sriovNetSupport = sriovNetSupport, state = state, stateReason = stateReason, tags = tags, virtualizationType = virtualizationType)
-    if (executableUsers != null) __obj.updateDynamic("executableUsers")(executableUsers)
-    if (filters != null) __obj.updateDynamic("filters")(filters)
-    if (!js.isUndefined(mostRecent)) __obj.updateDynamic("mostRecent")(mostRecent)
-    if (nameRegex != null) __obj.updateDynamic("nameRegex")(nameRegex)
+    val __obj = js.Dynamic.literal(architecture = architecture.asInstanceOf[js.Any], blockDeviceMappings = blockDeviceMappings.asInstanceOf[js.Any], creationDate = creationDate.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], hypervisor = hypervisor.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], imageId = imageId.asInstanceOf[js.Any], imageLocation = imageLocation.asInstanceOf[js.Any], imageOwnerAlias = imageOwnerAlias.asInstanceOf[js.Any], imageType = imageType.asInstanceOf[js.Any], kernelId = kernelId.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], ownerId = ownerId.asInstanceOf[js.Any], owners = owners.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], productCodes = productCodes.asInstanceOf[js.Any], public = public.asInstanceOf[js.Any], ramdiskId = ramdiskId.asInstanceOf[js.Any], rootDeviceName = rootDeviceName.asInstanceOf[js.Any], rootDeviceType = rootDeviceType.asInstanceOf[js.Any], rootSnapshotId = rootSnapshotId.asInstanceOf[js.Any], sriovNetSupport = sriovNetSupport.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], stateReason = stateReason.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], virtualizationType = virtualizationType.asInstanceOf[js.Any])
+    if (executableUsers != null) __obj.updateDynamic("executableUsers")(executableUsers.asInstanceOf[js.Any])
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
+    if (!js.isUndefined(mostRecent)) __obj.updateDynamic("mostRecent")(mostRecent.asInstanceOf[js.Any])
+    if (nameRegex != null) __obj.updateDynamic("nameRegex")(nameRegex.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAmiResult]
   }
 }

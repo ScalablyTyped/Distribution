@@ -11,8 +11,8 @@ Convert efficiently index to/from line-column in a string
 | Full name          | line-column |
 | Keywords           | string, index, line, column, linecol, position |
 | # releases         | 0 |
-| # dependents       | 23 |
-| # downloads        | 202268 |
+| # dependents       | 24 |
+| # downloads        | 316200 |
 | # stars            | 1 |
 
 ## Links

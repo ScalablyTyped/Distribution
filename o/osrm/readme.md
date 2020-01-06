@@ -10,9 +10,9 @@ The Open Source Routing Machine is a high performance routing engine written in 
 | ------------------ | :-------------: |
 | Full name          | osrm |
 | Keywords           | - |
-| # releases         | 109 |
-| # dependents       | 4 |
-| # downloads        | 58881 |
+| # releases         | 71 |
+| # dependents       | 6 |
+| # downloads        | 54056 |
 | # stars            | 4 |
 
 ## Links

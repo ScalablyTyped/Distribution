@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CertificateOptions extends js.Object {
-  var certificateTransparencyLoggingPreference: js.UndefOr[Input[String]] = js.undefined
+  var certificateTransparencyLoggingPreference: js.UndefOr[Input[String]] = js.native
 }
 
 object CertificateOptions {

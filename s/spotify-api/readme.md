@@ -11,7 +11,7 @@ API for the new "Spotify Web API"
 | Keywords           | spotify, web, api, rest |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 260 |
+| # downloads        | 262 |
 | # stars            | 0 |
 
 ## Links

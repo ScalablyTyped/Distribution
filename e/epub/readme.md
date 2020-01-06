@@ -11,7 +11,7 @@ Parse ePub electronic book files with Node.JS
 | Keywords           | epub, books |
 | # releases         | 3 |
 | # dependents       | 6 |
-| # downloads        | 7234 |
+| # downloads        | 7961 |
 | # stars            | 6 |
 
 ## Links

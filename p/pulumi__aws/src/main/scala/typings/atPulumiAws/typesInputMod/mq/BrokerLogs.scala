@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BrokerLogs extends js.Object {
   /**
     * Enables audit logging. User management action made using JMX or the ActiveMQ Web Console is logged. Defaults to `false`.
     */
-  var audit: js.UndefOr[Input[Boolean]] = js.undefined
+  var audit: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Enables general logging via CloudWatch. Defaults to `false`.
     */
-  var general: js.UndefOr[Input[Boolean]] = js.undefined
+  var general: js.UndefOr[Input[Boolean]] = js.native
 }
 
 object BrokerLogs {

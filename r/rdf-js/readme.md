@@ -10,9 +10,9 @@ Mirror of the RDFJS TS typings
 | ------------------ | :-------------: |
 | Full name          | rdf-js |
 | Keywords           | RDF, RDFJS |
-| # releases         | 5 |
+| # releases         | 2 |
 | # dependents       | 2 |
-| # downloads        | 490 |
+| # downloads        | 333 |
 | # stars            | 0 |
 
 ## Links

@@ -12,7 +12,7 @@ Resilient Postgres listen client
 | Keywords           | pg, postgres, listen, subscribe, notify |
 | # releases         | 5 |
 | # dependents       | 1 |
-| # downloads        | 904 |
+| # downloads        | 581 |
 | # stars            | 0 |
 
 ## Links

@@ -5,27 +5,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PolicyState extends js.Object {
   /**
     * Amazon Resource Name (ARN) of the policy.
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * The policy content to add to the new policy. For example, if you create a [service control policy (SCP)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scp.html), this string must be JSON text that specifies the permissions that admins in attached accounts can delegate to their users, groups, and roles. For more information about the SCP syntax, see the [Service Control Policy Syntax documentation](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_reference_scp-syntax.html).
     */
-  val content: js.UndefOr[Input[String]] = js.undefined
+  val content: js.UndefOr[Input[String]] = js.native
   /**
     * A description to assign to the policy.
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * The friendly name to assign to the policy.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * The type of policy to create. Currently, the only valid value is `SERVICE_CONTROL_POLICY` (SCP).
     */
-  val `type`: js.UndefOr[Input[String]] = js.undefined
+  val `type`: js.UndefOr[Input[String]] = js.native
 }
 
 object PolicyState {

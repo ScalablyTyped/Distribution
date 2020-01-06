@@ -10,9 +10,9 @@ binding from mapbox gl to the leaflet api
 | ------------------ | :-------------: |
 | Full name          | mapbox-gl-leaflet |
 | Keywords           | mapbox, gl, leaflet, leafletjs, maps |
-| # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 27664 |
+| # releases         | 9 |
+| # dependents       | 3 |
+| # downloads        | 80537 |
 | # stars            | 0 |
 
 ## Links

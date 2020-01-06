@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VpnConnectionRouteState extends js.Object {
   /**
     * The CIDR block associated with the local subnet of the customer network.
     */
-  val destinationCidrBlock: js.UndefOr[Input[String]] = js.undefined
+  val destinationCidrBlock: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of the VPN connection.
     */
-  val vpnConnectionId: js.UndefOr[Input[String]] = js.undefined
+  val vpnConnectionId: js.UndefOr[Input[String]] = js.native
 }
 
 object VpnConnectionRouteState {

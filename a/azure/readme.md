@@ -10,9 +10,9 @@ Microsoft Azure Client Library for node
 | ------------------ | :-------------: |
 | Full name          | azure |
 | Keywords           | node, azure |
-| # releases         | 7 |
-| # dependents       | 94 |
-| # downloads        | 366038 |
+| # releases         | 3 |
+| # dependents       | 100 |
+| # downloads        | 860896 |
 | # stars            | 13 |
 
 ## Links

@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VideoSelectorPid extends js.Object {
   /**
     * Selects a specific PID from within a video source.
     */
-  var Pid: js.UndefOr[__integerMin0Max8191] = js.undefined
+  var Pid: js.UndefOr[__integerMin0Max8191] = js.native
 }
 
 object VideoSelectorPid {

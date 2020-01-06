@@ -9,9 +9,9 @@ Typings are for version 24.9.0
 | ------------------ | :-------------: |
 | Full name          | jest-config |
 | Keywords           | - |
-| # releases         | 87 |
+| # releases         | 75 |
 | # dependents       | 47 |
-| # downloads        | 220424490 |
+| # downloads        | 237126839 |
 | # stars            | 0 |
 
 ## Links

@@ -9,10 +9,10 @@ Strip comments from JSON. Lets you use comments in your JSON files!
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | strip-json-comments |
-| Keywords           | json, strip, remove, delete, trim, comments, multiline, parse, config, configuration, conf, settings, util, env, environment |
-| # releases         | 1 |
-| # dependents       | 521 |
-| # downloads        | 309129938 |
+| Keywords           | json, strip, comments, remove, delete, trim, multiline, parse, config, configuration, settings, util, env, environment |
+| # releases         | 3 |
+| # dependents       | 659 |
+| # downloads        | 525301283 |
 | # stars            | 24 |
 
 ## Links

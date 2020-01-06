@@ -30,7 +30,7 @@ object S3 extends js.Object {
   
   @js.native
   class PresignedPost ()
-    extends typings.awsDashSdk.clientsAllMod.S3.PresignedPost
+    extends typings.awsDashSdk.libS3PresignedUnderscorePostMod.PresignedPost
   
   /* static members */
   @js.native

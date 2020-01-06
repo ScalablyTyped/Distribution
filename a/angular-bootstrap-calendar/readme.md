@@ -9,9 +9,9 @@ A pure AngularJS bootstrap themed responsive calendar that can display events an
 | ------------------ | :-------------: |
 | Full name          | angular-bootstrap-calendar |
 | Keywords           | - |
-| # releases         | 9 |
+| # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 107907 |
+| # downloads        | 116540 |
 | # stars            | 0 |
 
 ## Links

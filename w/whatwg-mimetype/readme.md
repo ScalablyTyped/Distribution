@@ -11,8 +11,8 @@ Parses, serializes, and manipulates MIME types, according to the WHATWG MIME Sni
 | Full name          | whatwg-mimetype |
 | Keywords           | content-type, mime type, mimesniff, http, whatwg |
 | # releases         | 7 |
-| # dependents       | 26 |
-| # downloads        | 82855355 |
+| # dependents       | 39 |
+| # downloads        | 177944978 |
 | # stars            | 1 |
 
 ## Links

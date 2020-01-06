@@ -9,9 +9,9 @@ An express routing library that leverages swagger (open api) definitions to vali
 | ------------------ | :-------------: |
 | Full name          | skyway |
 | Keywords           | swagger, openapi, express, validation |
-| # releases         | 5 |
+| # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 1108 |
+| # downloads        | 1473 |
 | # stars            | 0 |
 
 ## Links

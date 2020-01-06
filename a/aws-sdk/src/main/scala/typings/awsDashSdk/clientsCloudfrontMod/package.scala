@@ -14,8 +14,8 @@ package object clientsCloudfrontMod {
   type AwsAccountNumberList = js.Array[String]
   type CacheBehaviorList = js.Array[CacheBehavior]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.cloudfront
-    - typings.awsDashSdk.awsDashSdkStrings.iam
+    - typings.awsDashSdk.awsDashSdkStrings.cloudfront_
+    - typings.awsDashSdk.awsDashSdkStrings.iam_
     - typings.awsDashSdk.awsDashSdkStrings.acm
     - java.lang.String
   */
@@ -43,13 +43,13 @@ package object clientsCloudfrontMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.blacklist
     - typings.awsDashSdk.awsDashSdkStrings.whitelist
-    - typings.awsDashSdk.awsDashSdkStrings.none
+    - typings.awsDashSdk.awsDashSdkStrings.none__
     - java.lang.String
   */
   type GeoRestrictionType = _GeoRestrictionType | String
   type HeaderList = js.Array[String]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.http1DOT1
+    - typings.awsDashSdk.awsDashSdkStrings.http1Dot1
     - typings.awsDashSdk.awsDashSdkStrings.http2
     - java.lang.String
   */
@@ -63,9 +63,9 @@ package object clientsCloudfrontMod {
   type ICPRecordalStatus = _ICPRecordalStatus | String
   type InvalidationSummaryList = js.Array[InvalidationSummary]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.none
+    - typings.awsDashSdk.awsDashSdkStrings.none__
     - typings.awsDashSdk.awsDashSdkStrings.whitelist
-    - typings.awsDashSdk.awsDashSdkStrings.all
+    - typings.awsDashSdk.awsDashSdkStrings.all__
     - java.lang.String
   */
   type ItemSelection = _ItemSelection | String
@@ -89,8 +89,8 @@ package object clientsCloudfrontMod {
     - typings.awsDashSdk.awsDashSdkStrings.SSLv3
     - typings.awsDashSdk.awsDashSdkStrings.TLSv1
     - typings.awsDashSdk.awsDashSdkStrings.TLSv1_2016
-    - typings.awsDashSdk.awsDashSdkStrings.TLSv1DOT1_2016
-    - typings.awsDashSdk.awsDashSdkStrings.TLSv1DOT2_2018
+    - typings.awsDashSdk.awsDashSdkStrings.TLSv1Dot1_2016
+    - typings.awsDashSdk.awsDashSdkStrings.TLSv1Dot2_2018
     - java.lang.String
   */
   type MinimumProtocolVersion = _MinimumProtocolVersion | String
@@ -127,8 +127,8 @@ package object clientsCloudfrontMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.SSLv3
     - typings.awsDashSdk.awsDashSdkStrings.TLSv1
-    - typings.awsDashSdk.awsDashSdkStrings.TLSv1DOT1
-    - typings.awsDashSdk.awsDashSdkStrings.TLSv1DOT2
+    - typings.awsDashSdk.awsDashSdkStrings.TLSv1Dot1
+    - typings.awsDashSdk.awsDashSdkStrings.TLSv1Dot2
     - java.lang.String
   */
   type SslProtocol = _SslProtocol | String
@@ -167,7 +167,7 @@ package object clientsCloudfrontMod {
     - typings.awsDashSdk.awsDashSdkStrings.`2018-06-18`
     - typings.awsDashSdk.awsDashSdkStrings.`2018-11-05`
     - typings.awsDashSdk.awsDashSdkStrings.`2019-03-26`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

@@ -17,7 +17,7 @@ object mutableMod extends js.Object {
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
   - typings.atEmberArray.dashPrivateEnumerableMod.Enumerable because Already inherited
-  - typings.atEmberArray.dashPrivateMutableDashEnumerableMod.MutableEnumerable because var conflicts: LeftsquarebracketRightsquarebracket, every_Original, filter_Original, find_Original, firstObject, forEach_Original, lastObject, map_Original, reduce_Original. Inlined addObject, addObjects, removeObject, removeObjects */ @js.native
+  - typings.atEmberArray.dashPrivateMutableDashEnumerableMod.MutableEnumerable because var conflicts: `[]`, every_Original, filter_Original, find_Original, firstObject, forEach_Original, lastObject, map_Original, reduce_Original. Inlined addObject, addObjects, removeObject, removeObjects */ @js.native
   trait MutableArray[T] extends Array[T] {
     /**
       * __Required.__ You must implement this method to apply this mixin.

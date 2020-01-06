@@ -10,9 +10,9 @@ Mendix Model SDK
 | ------------------ | :-------------: |
 | Full name          | mendixmodelsdk |
 | Keywords           | - |
-| # releases         | 253 |
-| # dependents       | 3 |
-| # downloads        | 143304 |
+| # releases         | 255 |
+| # dependents       | 4 |
+| # downloads        | 85290 |
 | # stars            | 1 |
 
 ## Links

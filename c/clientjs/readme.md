@@ -10,9 +10,9 @@ Device information and digital fingerprinting written in pure JavaScript.
 | ------------------ | :-------------: |
 | Full name          | clientjs |
 | Keywords           | browser, fingerprint, client, info, pure, javascript |
-| # releases         | 1 |
-| # dependents       | 10 |
-| # downloads        | 103640 |
+| # releases         | 0 |
+| # dependents       | 13 |
+| # downloads        | 151473 |
 | # stars            | 5 |
 
 ## Links

@@ -92,6 +92,21 @@ trait KinesisAnalyticsV2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ AddApplicationReferenceDataSourceResponse, Unit]
   ): Request[AddApplicationReferenceDataSourceResponse, AWSError] = js.native
   /**
+    * Adds a Virtual Private Cloud (VPC) configuration to the application. Applications can use VPCs to store and access resources securely. Note the following about VPC configurations for Kinesis Data Analytics applications:   VPC configurations are not supported for SQL applications.   When a VPC is added to a Kinesis Data Analytics application, the application can no longer be accessed from the Internet directly. To enable Internet access to the application, add an Internet gateway to your VPC.  
+    */
+  def addApplicationVpcConfiguration(): Request[AddApplicationVpcConfigurationResponse, AWSError] = js.native
+  def addApplicationVpcConfiguration(
+    callback: js.Function2[/* err */ AWSError, /* data */ AddApplicationVpcConfigurationResponse, Unit]
+  ): Request[AddApplicationVpcConfigurationResponse, AWSError] = js.native
+  /**
+    * Adds a Virtual Private Cloud (VPC) configuration to the application. Applications can use VPCs to store and access resources securely. Note the following about VPC configurations for Kinesis Data Analytics applications:   VPC configurations are not supported for SQL applications.   When a VPC is added to a Kinesis Data Analytics application, the application can no longer be accessed from the Internet directly. To enable Internet access to the application, add an Internet gateway to your VPC.  
+    */
+  def addApplicationVpcConfiguration(params: AddApplicationVpcConfigurationRequest): Request[AddApplicationVpcConfigurationResponse, AWSError] = js.native
+  def addApplicationVpcConfiguration(
+    params: AddApplicationVpcConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AddApplicationVpcConfigurationResponse, Unit]
+  ): Request[AddApplicationVpcConfigurationResponse, AWSError] = js.native
+  /**
     * Creates an Amazon Kinesis Data Analytics application. For information about creating a Kinesis Data Analytics application, see Creating an Application. 
     */
   def createApplication(): Request[CreateApplicationResponse, AWSError] = js.native
@@ -218,6 +233,21 @@ trait KinesisAnalyticsV2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteApplicationSnapshotResponse, Unit]
   ): Request[DeleteApplicationSnapshotResponse, AWSError] = js.native
   /**
+    * Removes a VPC configuration from a Kinesis Data Analytics application.
+    */
+  def deleteApplicationVpcConfiguration(): Request[DeleteApplicationVpcConfigurationResponse, AWSError] = js.native
+  def deleteApplicationVpcConfiguration(
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteApplicationVpcConfigurationResponse, Unit]
+  ): Request[DeleteApplicationVpcConfigurationResponse, AWSError] = js.native
+  /**
+    * Removes a VPC configuration from a Kinesis Data Analytics application.
+    */
+  def deleteApplicationVpcConfiguration(params: DeleteApplicationVpcConfigurationRequest): Request[DeleteApplicationVpcConfigurationResponse, AWSError] = js.native
+  def deleteApplicationVpcConfiguration(
+    params: DeleteApplicationVpcConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteApplicationVpcConfigurationResponse, Unit]
+  ): Request[DeleteApplicationVpcConfigurationResponse, AWSError] = js.native
+  /**
     * Returns information about a specific Amazon Kinesis Data Analytics application. If you want to retrieve a list of all applications in your account, use the ListApplications operation.
     */
   def describeApplication(): Request[DescribeApplicationResponse, AWSError] = js.native
@@ -283,12 +313,12 @@ trait KinesisAnalyticsV2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListApplicationsResponse, Unit]
   ): Request[ListApplicationsResponse, AWSError] = js.native
   /**
-    * Retrieves the list of key-value tags assigned to the application.
+    * Retrieves the list of key-value tags assigned to the application. For more information, see Using Tagging.
     */
   def listTagsForResource(): Request[ListTagsForResourceResponse, AWSError] = js.native
   def listTagsForResource(callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]): Request[ListTagsForResourceResponse, AWSError] = js.native
   /**
-    * Retrieves the list of key-value tags assigned to the application.
+    * Retrieves the list of key-value tags assigned to the application. For more information, see Using Tagging.
     */
   def listTagsForResource(params: ListTagsForResourceRequest): Request[ListTagsForResourceResponse, AWSError] = js.native
   def listTagsForResource(
@@ -322,12 +352,12 @@ trait KinesisAnalyticsV2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ StopApplicationResponse, Unit]
   ): Request[StopApplicationResponse, AWSError] = js.native
   /**
-    * Adds one or more key-value tags to a Kinesis Analytics application. Note that the maximum number of application tags includes system tags. The maximum number of user-defined application tags is 50.
+    * Adds one or more key-value tags to a Kinesis Analytics application. Note that the maximum number of application tags includes system tags. The maximum number of user-defined application tags is 50. For more information, see Using Tagging.
     */
   def tagResource(): Request[TagResourceResponse, AWSError] = js.native
   def tagResource(callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]): Request[TagResourceResponse, AWSError] = js.native
   /**
-    * Adds one or more key-value tags to a Kinesis Analytics application. Note that the maximum number of application tags includes system tags. The maximum number of user-defined application tags is 50.
+    * Adds one or more key-value tags to a Kinesis Analytics application. Note that the maximum number of application tags includes system tags. The maximum number of user-defined application tags is 50. For more information, see Using Tagging.
     */
   def tagResource(params: TagResourceRequest): Request[TagResourceResponse, AWSError] = js.native
   def tagResource(
@@ -335,12 +365,12 @@ trait KinesisAnalyticsV2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]
   ): Request[TagResourceResponse, AWSError] = js.native
   /**
-    * Removes one or more tags from a Kinesis Analytics application.
+    * Removes one or more tags from a Kinesis Analytics application. For more information, see Using Tagging.
     */
   def untagResource(): Request[UntagResourceResponse, AWSError] = js.native
   def untagResource(callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]): Request[UntagResourceResponse, AWSError] = js.native
   /**
-    * Removes one or more tags from a Kinesis Analytics application.
+    * Removes one or more tags from a Kinesis Analytics application. For more information, see Using Tagging.
     */
   def untagResource(params: UntagResourceRequest): Request[UntagResourceResponse, AWSError] = js.native
   def untagResource(

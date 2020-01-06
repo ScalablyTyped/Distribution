@@ -9,10 +9,10 @@ Get a random temporary file path
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | tempfile |
-| Keywords           | tmp, temp, temporary, tempfile, file, path, random, rand, uuid |
-| # releases         | 1 |
-| # dependents       | 143 |
-| # downloads        | 52351642 |
+| Keywords           | temp, temporary, tempfile, file, path, random, uuid |
+| # releases         | 2 |
+| # dependents       | 156 |
+| # downloads        | 60116820 |
 | # stars            | 4 |
 
 ## Links

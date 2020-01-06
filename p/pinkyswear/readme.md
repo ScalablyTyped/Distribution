@@ -10,9 +10,9 @@ Minimalistic Promises/A+ implementation, <500 bytes
 | ------------------ | :-------------: |
 | Full name          | pinkyswear |
 | Keywords           | promises, promises-aplus |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 137484 |
+| # downloads        | 179394 |
 | # stars            | 1 |
 
 ## Links

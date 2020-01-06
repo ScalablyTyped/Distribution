@@ -10,9 +10,9 @@ PostCSS plugin for CSS Modules to pass arbitrary values between your module file
 | ------------------ | :-------------: |
 | Full name          | postcss-icss-values |
 | Keywords           | css, modules, postcss |
-| # releases         | 5 |
-| # dependents       | 11 |
-| # downloads        | 134564 |
+| # releases         | 2 |
+| # dependents       | 12 |
+| # downloads        | 142603 |
 | # stars            | 0 |
 
 ## Links

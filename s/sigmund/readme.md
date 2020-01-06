@@ -10,9 +10,9 @@ Quick and dirty signatures for Objects.
 | ------------------ | :-------------: |
 | Full name          | sigmund |
 | Keywords           | object, signature, key, data, psychoanalysis |
-| # releases         | 1 |
-| # dependents       | 46 |
-| # downloads        | 97651634 |
+| # releases         | 0 |
+| # dependents       | 49 |
+| # downloads        | 109449304 |
 | # stars            | 9 |
 
 ## Links

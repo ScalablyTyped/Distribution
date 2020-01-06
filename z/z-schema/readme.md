@@ -10,9 +10,9 @@ JSON schema validator
 | ------------------ | :-------------: |
 | Full name          | z-schema |
 | Keywords           | JSON, Schema, Validator |
-| # releases         | 16 |
-| # dependents       | 129 |
-| # downloads        | 20200670 |
+| # releases         | 21 |
+| # dependents       | 142 |
+| # downloads        | 26083698 |
 | # stars            | 13 |
 
 ## Links

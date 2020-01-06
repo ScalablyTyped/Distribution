@@ -12,7 +12,7 @@ Builds and manages a javascript object that represents an oData query string
 | Keywords           | odata |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 643 |
+| # downloads        | 723 |
 | # stars            | 0 |
 
 ## Links

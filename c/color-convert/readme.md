@@ -11,9 +11,9 @@ Plain color conversion functions
 | Full name          | color-convert |
 | Keywords           | color, colour, convert, converter, conversion, rgb, hsl, hsv, hwb, cmyk, ansi, ansi16 |
 | # releases         | 5 |
-| # dependents       | 175 |
-| # downloads        | 377336241 |
-| # stars            | 10 |
+| # dependents       | 238 |
+| # downloads        | 571231802 |
+| # stars            | 11 |
 
 ## Links
 - [Homepage](https://github.com/Qix-/color-convert#readme)

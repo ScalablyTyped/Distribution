@@ -11,8 +11,8 @@ A node.js module to run connect-like middlewares in sequence
 | Full name          | connect-sequence |
 | Keywords           | node, node.js, connect, middleware, express |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 8848 |
+| # dependents       | 2 |
+| # downloads        | 6860 |
 | # stars            | 1 |
 
 ## Links

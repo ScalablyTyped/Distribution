@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LabelingJobStoppingConditions extends js.Object {
   /**
     * The maximum number of objects that can be labeled by human workers.
     */
-  var MaxHumanLabeledObjectCount: js.UndefOr[typings.awsDashSdk.clientsSagemakerMod.MaxHumanLabeledObjectCount] = js.undefined
+  var MaxHumanLabeledObjectCount: js.UndefOr[typings.awsDashSdk.clientsSagemakerMod.MaxHumanLabeledObjectCount] = js.native
   /**
     * The maximum number of input data objects that should be labeled.
     */
-  var MaxPercentageOfInputDatasetLabeled: js.UndefOr[typings.awsDashSdk.clientsSagemakerMod.MaxPercentageOfInputDatasetLabeled] = js.undefined
+  var MaxPercentageOfInputDatasetLabeled: js.UndefOr[typings.awsDashSdk.clientsSagemakerMod.MaxPercentageOfInputDatasetLabeled] = js.native
 }
 
 object LabelingJobStoppingConditions {

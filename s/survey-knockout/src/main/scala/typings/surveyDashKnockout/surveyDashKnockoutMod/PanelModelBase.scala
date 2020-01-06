@@ -14,6 +14,7 @@ class PanelModelBase ()
      with IConditionRunner
      with ISurveyErrorOwner {
   def this(name: String) = this()
+  val css: js.Any = js.native
   val cssClasses: js.Any = js.native
   val depth: Double = js.native
   /**
@@ -97,10 +98,10 @@ class PanelModelBase ()
     * @param index element index in the elements array
     */
   def addElement(element: IElement): Boolean = js.native
-  def addElement(element: IElement, index: Double): js.Any = js.native
+  def addElement(element: IElement, index: Double): Boolean = js.native
   def addElementCallback(element: IElement): Unit = js.native
   @JSName("addElement")
-  def addElement_Boolean(element: IElement, index: Double): Boolean = js.native
+  def addElement_Any(element: IElement, index: Double): js.Any = js.native
   /**
     * Creates a new panel and adds it into the end of the elements list. Returns null, if the panel could not be created or could not be added into page or panel.
     * @param name a panel name
@@ -211,9 +212,6 @@ class PanelModelBase ()
   def getQuestionByValueName(valueName: String): Question = js.native
   def getQuestionTitleLocation(): String = js.native
   /* protected */ def getRenderedTitle(str: String): String = js.native
-  /**
-    * Returns the type of the object as a string as it represents in the json. It should be in lowcase.
-    */
   /* InferMemberOverrides */
   override def getType(): String = js.native
   /**
@@ -237,7 +235,7 @@ class PanelModelBase ()
   def indexOf(element: IElement): Double = js.native
   def isLayoutTypeSupported(layoutType: String): Boolean = js.native
   /* InferMemberOverrides */
-  override def locStrsChanged(): Unit with js.Any = js.native
+  override def locStrsChanged(): js.Any with Unit = js.native
   /* protected */ def onAddElement(element: IElement, index: Double): Unit = js.native
   def onAnyValueChanged(name: String): Unit = js.native
   def onGetQuestionTitleLocation(): String = js.native

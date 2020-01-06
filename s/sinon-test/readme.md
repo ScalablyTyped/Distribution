@@ -10,9 +10,9 @@ Typings are for version 2.4
 | ------------------ | :-------------: |
 | Full name          | sinon-test |
 | Keywords           | - |
-| # releases         | 12 |
-| # dependents       | 3 |
-| # downloads        | 412645 |
+| # releases         | 8 |
+| # dependents       | 4 |
+| # downloads        | 1127310 |
 | # stars            | 0 |
 
 ## Links

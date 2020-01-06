@@ -10,9 +10,9 @@ Jaeger binding for OpenTracing Node
 | ------------------ | :-------------: |
 | Full name          | jaeger-client |
 | Keywords           | - |
-| # releases         | 24 |
-| # dependents       | 47 |
-| # downloads        | 1281963 |
+| # releases         | 19 |
+| # dependents       | 70 |
+| # downloads        | 2327425 |
 | # stars            | 1 |
 
 ## Links

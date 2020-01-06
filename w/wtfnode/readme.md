@@ -10,10 +10,10 @@ Utility to help find out why Node isn't exiting
 | ------------------ | :-------------: |
 | Full name          | wtfnode |
 | Keywords           | - |
-| # releases         | 12 |
-| # dependents       | 6 |
-| # downloads        | 492555 |
-| # stars            | 10 |
+| # releases         | 7 |
+| # dependents       | 11 |
+| # downloads        | 661866 |
+| # stars            | 11 |
 
 ## Links
 - [Homepage](https://github.com/myndzi/wtfnode#readme)

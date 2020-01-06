@@ -5,17 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DelegationSetState extends js.Object {
   /**
     * A list of authoritative name servers for the hosted zone
     * (effectively a list of NS records).
     */
-  val nameServers: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val nameServers: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * This is a reference name used in Caller Reference
     * (helpful for identifying single delegation set amongst others)
     */
-  val referenceName: js.UndefOr[Input[String]] = js.undefined
+  val referenceName: js.UndefOr[Input[String]] = js.native
 }
 
 object DelegationSetState {

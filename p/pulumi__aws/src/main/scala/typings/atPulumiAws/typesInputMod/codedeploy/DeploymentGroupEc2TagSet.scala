@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DeploymentGroupEc2TagSet extends js.Object {
   /**
     * Tag filters associated with the deployment group. See the AWS docs for details.
     */
-  var ec2TagFilters: js.UndefOr[Input[js.Array[Input[DeploymentGroupEc2TagSetEc2TagFilter]]]] = js.undefined
+  var ec2TagFilters: js.UndefOr[Input[js.Array[Input[DeploymentGroupEc2TagSetEc2TagFilter]]]] = js.native
 }
 
 object DeploymentGroupEc2TagSet {

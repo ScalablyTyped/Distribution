@@ -12,7 +12,7 @@ Adds an RSVP-like Promise.hash() method for resolving groups of promises.
 | Keywords           | promise, nodejs, hash, promises |
 | # releases         | 2 |
 | # dependents       | 2 |
-| # downloads        | 7706 |
+| # downloads        | 14407 |
 | # stars            | 0 |
 
 ## Links

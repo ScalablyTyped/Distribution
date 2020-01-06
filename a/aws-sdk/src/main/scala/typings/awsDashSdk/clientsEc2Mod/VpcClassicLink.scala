@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VpcClassicLink extends js.Object {
   /**
     * Indicates whether the VPC is enabled for ClassicLink.
     */
-  var ClassicLinkEnabled: js.UndefOr[Boolean] = js.undefined
+  var ClassicLinkEnabled: js.UndefOr[Boolean] = js.native
   /**
     * Any tags assigned to the VPC.
     */
-  var Tags: js.UndefOr[TagList] = js.undefined
+  var Tags: js.UndefOr[TagList] = js.native
   /**
     * The ID of the VPC.
     */
-  var VpcId: js.UndefOr[String] = js.undefined
+  var VpcId: js.UndefOr[String] = js.native
 }
 
 object VpcClassicLink {
@@ -27,9 +28,9 @@ object VpcClassicLink {
     VpcId: String = null
   ): VpcClassicLink = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ClassicLinkEnabled)) __obj.updateDynamic("ClassicLinkEnabled")(ClassicLinkEnabled)
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
-    if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId)
+    if (!js.isUndefined(ClassicLinkEnabled)) __obj.updateDynamic("ClassicLinkEnabled")(ClassicLinkEnabled.asInstanceOf[js.Any])
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
+    if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[VpcClassicLink]
   }
 }

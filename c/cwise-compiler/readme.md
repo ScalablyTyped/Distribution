@@ -10,9 +10,9 @@ cwise's internal compiler
 | ------------------ | :-------------: |
 | Full name          | cwise-compiler |
 | Keywords           | cwise, ndarray, compiler |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 10 |
-| # downloads        | 4209580 |
+| # downloads        | 5991005 |
 | # stars            | 0 |
 
 ## Links

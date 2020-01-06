@@ -10,9 +10,9 @@ High-level javascript interface for Trezor hardware wallet.
 | ------------------ | :-------------: |
 | Full name          | trezor-connect |
 | Keywords           | Trezor, trezor-connect, javascript |
-| # releases         | 62 |
-| # dependents       | 15 |
-| # downloads        | 42188 |
+| # releases         | 83 |
+| # dependents       | 26 |
+| # downloads        | 100823 |
 | # stars            | 0 |
 
 ## Links

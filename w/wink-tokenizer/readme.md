@@ -10,9 +10,9 @@ Multilingual tokenizer that automatically tags each token with its type
 | ------------------ | :-------------: |
 | Full name          | wink-tokenizer |
 | Keywords           | Tokenizer, Tokenize, Tags, Tagging, NLP, email, twitter, URL, Emoji, Emoticon, Multilingual, French, German, Spanish, Icelandic, wink |
-| # releases         | 16 |
-| # dependents       | 7 |
-| # downloads        | 15279 |
+| # releases         | 14 |
+| # dependents       | 9 |
+| # downloads        | 60068 |
 | # stars            | 2 |
 
 ## Links

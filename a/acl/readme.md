@@ -10,9 +10,9 @@ An Access Control List module, based on Redis with Express middleware support
 | ------------------ | :-------------: |
 | Full name          | acl |
 | Keywords           | middleware, acl, web |
-| # releases         | 2 |
-| # dependents       | 52 |
-| # downloads        | 923344 |
+| # releases         | 1 |
+| # dependents       | 53 |
+| # downloads        | 437495 |
 | # stars            | 60 |
 
 ## Links

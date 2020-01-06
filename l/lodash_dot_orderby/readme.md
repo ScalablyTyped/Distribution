@@ -11,8 +11,8 @@ The lodash method `_.orderBy` exported as a module.
 | Full name          | lodash.orderby |
 | Keywords           | lodash-modularized, orderby |
 | # releases         | 0 |
-| # dependents       | 73 |
-| # downloads        | 1071484 |
+| # dependents       | 89 |
+| # downloads        | 1861147 |
 | # stars            | 0 |
 
 ## Links

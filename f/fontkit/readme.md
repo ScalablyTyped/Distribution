@@ -11,8 +11,8 @@ An advanced font engine for Node and the browser
 | Full name          | fontkit |
 | Keywords           | opentype, font, typography, subset, emoji, glyph, layout |
 | # releases         | 3 |
-| # dependents       | 48 |
-| # downloads        | 5764920 |
+| # dependents       | 50 |
+| # downloads        | 8588981 |
 | # stars            | 4 |
 
 ## Links

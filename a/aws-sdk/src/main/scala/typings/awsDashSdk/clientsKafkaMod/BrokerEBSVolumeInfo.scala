@@ -4,25 +4,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BrokerEBSVolumeInfo extends js.Object {
   /**
     * 
     The ID of the broker to update.
     
     */
-  var KafkaBrokerNodeId: __string
+  var KafkaBrokerNodeId: __string = js.native
   /**
     * 
     Size of the EBS volume to update.
     
     */
-  var VolumeSizeGB: __integer
+  var VolumeSizeGB: __integer = js.native
 }
 
 object BrokerEBSVolumeInfo {
   @scala.inline
   def apply(KafkaBrokerNodeId: __string, VolumeSizeGB: __integer): BrokerEBSVolumeInfo = {
-    val __obj = js.Dynamic.literal(KafkaBrokerNodeId = KafkaBrokerNodeId, VolumeSizeGB = VolumeSizeGB)
+    val __obj = js.Dynamic.literal(KafkaBrokerNodeId = KafkaBrokerNodeId.asInstanceOf[js.Any], VolumeSizeGB = VolumeSizeGB.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[BrokerEBSVolumeInfo]
   }

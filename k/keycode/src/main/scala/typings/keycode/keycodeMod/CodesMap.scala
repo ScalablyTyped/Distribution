@@ -27,14 +27,12 @@ trait CodesMap extends js.Object {
   var Equalssign: Double
   @JSName("`")
   var Graveaccent: Double
-  @JSName("[")
-  var Leftsquarebracket: Double
-  @JSName("]")
-  var Rightsquarebracket: Double
   @JSName(";")
   var Semicolon: Double
   @JSName("/")
   var Slash: Double
+  var `[`: Double
+  var `]`: Double
   @JSName("-")
   var _dash: Double
   var a: Double
@@ -143,10 +141,10 @@ object CodesMap {
     Dot: Double,
     Equalssign: Double,
     Graveaccent: Double,
-    Leftsquarebracket: Double,
-    Rightsquarebracket: Double,
     Semicolon: Double,
     Slash: Double,
+    `[`: Double,
+    `]`: Double,
     _dash: Double,
     a: Double,
     alt: Double,
@@ -246,10 +244,10 @@ object CodesMap {
     __obj.updateDynamic(".")(Dot.asInstanceOf[js.Any])
     __obj.updateDynamic("=")(Equalssign.asInstanceOf[js.Any])
     __obj.updateDynamic("`")(Graveaccent.asInstanceOf[js.Any])
-    __obj.updateDynamic("[")(Leftsquarebracket.asInstanceOf[js.Any])
-    __obj.updateDynamic("]")(Rightsquarebracket.asInstanceOf[js.Any])
     __obj.updateDynamic(";")(Semicolon.asInstanceOf[js.Any])
     __obj.updateDynamic("/")(Slash.asInstanceOf[js.Any])
+    __obj.updateDynamic("[")(`[`.asInstanceOf[js.Any])
+    __obj.updateDynamic("]")(`]`.asInstanceOf[js.Any])
     __obj.updateDynamic("-")(_dash.asInstanceOf[js.Any])
     __obj.updateDynamic("caps lock")(`caps lock`.asInstanceOf[js.Any])
     __obj.updateDynamic("left command")(`left command`.asInstanceOf[js.Any])

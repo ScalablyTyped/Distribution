@@ -10,9 +10,9 @@ A dictionary of file extensions and associated module loaders.
 | ------------------ | :-------------: |
 | Full name          | interpret |
 | Keywords           | cirru-script, cjsx, co, coco, coffee, coffee-script, coffee.md, coffeescript, csv, earlgrey, es, es6, iced, iced.md, iced-coffee-script, ini, js, json, json5, jsx, react, litcoffee, liticed, ls, livescript, toml, ts, typescript, wisp, xml, yaml, yml |
-| # releases         | 5 |
-| # dependents       | 237 |
-| # downloads        | 237106713 |
+| # releases         | 3 |
+| # dependents       | 261 |
+| # downloads        | 312353453 |
 | # stars            | 14 |
 
 ## Links

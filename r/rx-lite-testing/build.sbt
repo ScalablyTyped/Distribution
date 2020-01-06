@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "rx-lite-testing"
-version := "4.0-dt-20180214Z-c8c1a6"
+version := "4.0-dt-20180214Z-ec4471"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "rx-core" % "4.0-dt-20190322Z-2bc65c",
-  "org.scalablytyped" %%% "rx-lite" % "4.0-dt-20190322Z-1799fb",
-  "org.scalablytyped" %%% "rx-lite-virtualtime" % "4.0-dt-20190322Z-59bc09",
-  "org.scalablytyped" %%% "std" % "3.7-953338")
+  "org.scalablytyped" %%% "rx-core" % "4.0-dt-20190322Z-b91d25",
+  "org.scalablytyped" %%% "rx-lite" % "4.0-dt-20190322Z-03325e",
+  "org.scalablytyped" %%% "rx-lite-virtualtime" % "4.0-dt-20190322Z-f616c3",
+  "org.scalablytyped" %%% "std" % "3.7-b6d959")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

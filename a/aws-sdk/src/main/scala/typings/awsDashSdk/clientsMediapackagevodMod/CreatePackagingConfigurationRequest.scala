@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CreatePackagingConfigurationRequest extends js.Object {
-  var CmafPackage: js.UndefOr[typings.awsDashSdk.clientsMediapackagevodMod.CmafPackage] = js.undefined
-  var DashPackage: js.UndefOr[typings.awsDashSdk.clientsMediapackagevodMod.DashPackage] = js.undefined
-  var HlsPackage: js.UndefOr[typings.awsDashSdk.clientsMediapackagevodMod.HlsPackage] = js.undefined
+  var CmafPackage: js.UndefOr[typings.awsDashSdk.clientsMediapackagevodMod.CmafPackage] = js.native
+  var DashPackage: js.UndefOr[typings.awsDashSdk.clientsMediapackagevodMod.DashPackage] = js.native
+  var HlsPackage: js.UndefOr[typings.awsDashSdk.clientsMediapackagevodMod.HlsPackage] = js.native
   /**
     * The ID of the PackagingConfiguration.
     */
-  var Id: __string
-  var MssPackage: js.UndefOr[typings.awsDashSdk.clientsMediapackagevodMod.MssPackage] = js.undefined
+  var Id: __string = js.native
+  var MssPackage: js.UndefOr[typings.awsDashSdk.clientsMediapackagevodMod.MssPackage] = js.native
   /**
     * The ID of a PackagingGroup.
     */
-  var PackagingGroupId: __string
+  var PackagingGroupId: __string = js.native
 }
 
 object CreatePackagingConfigurationRequest {
@@ -29,11 +30,11 @@ object CreatePackagingConfigurationRequest {
     HlsPackage: HlsPackage = null,
     MssPackage: MssPackage = null
   ): CreatePackagingConfigurationRequest = {
-    val __obj = js.Dynamic.literal(Id = Id, PackagingGroupId = PackagingGroupId)
-    if (CmafPackage != null) __obj.updateDynamic("CmafPackage")(CmafPackage)
-    if (DashPackage != null) __obj.updateDynamic("DashPackage")(DashPackage)
-    if (HlsPackage != null) __obj.updateDynamic("HlsPackage")(HlsPackage)
-    if (MssPackage != null) __obj.updateDynamic("MssPackage")(MssPackage)
+    val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], PackagingGroupId = PackagingGroupId.asInstanceOf[js.Any])
+    if (CmafPackage != null) __obj.updateDynamic("CmafPackage")(CmafPackage.asInstanceOf[js.Any])
+    if (DashPackage != null) __obj.updateDynamic("DashPackage")(DashPackage.asInstanceOf[js.Any])
+    if (HlsPackage != null) __obj.updateDynamic("HlsPackage")(HlsPackage.asInstanceOf[js.Any])
+    if (MssPackage != null) __obj.updateDynamic("MssPackage")(MssPackage.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePackagingConfigurationRequest]
   }
 }

@@ -10,9 +10,9 @@ Convert a URL to a valid filename
 | ------------------ | :-------------: |
 | Full name          | filenamify-url |
 | Keywords           | filename, file, name, string, path, convert, valid, url, uri |
-| # releases         | 1 |
-| # dependents       | 21 |
-| # downloads        | 1813328 |
+| # releases         | 4 |
+| # dependents       | 24 |
+| # downloads        | 3937646 |
 | # stars            | 1 |
 
 ## Links

@@ -6,81 +6,82 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SnapshotState extends js.Object {
   /**
     * Specifies the allocated storage size in gigabytes (GB).
     */
-  val allocatedStorage: js.UndefOr[Input[Double]] = js.undefined
+  val allocatedStorage: js.UndefOr[Input[Double]] = js.native
   /**
     * Specifies the name of the Availability Zone the DB instance was located in at the time of the DB snapshot.
     */
-  val availabilityZone: js.UndefOr[Input[String]] = js.undefined
+  val availabilityZone: js.UndefOr[Input[String]] = js.native
   /**
     * The DB Instance Identifier from which to take the snapshot.
     */
-  val dbInstanceIdentifier: js.UndefOr[Input[String]] = js.undefined
+  val dbInstanceIdentifier: js.UndefOr[Input[String]] = js.native
   /**
     * The Amazon Resource Name (ARN) for the DB snapshot.
     */
-  val dbSnapshotArn: js.UndefOr[Input[String]] = js.undefined
+  val dbSnapshotArn: js.UndefOr[Input[String]] = js.native
   /**
     * The Identifier for the snapshot.
     */
-  val dbSnapshotIdentifier: js.UndefOr[Input[String]] = js.undefined
+  val dbSnapshotIdentifier: js.UndefOr[Input[String]] = js.native
   /**
     * Specifies whether the DB snapshot is encrypted.
     */
-  val encrypted: js.UndefOr[Input[Boolean]] = js.undefined
+  val encrypted: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Specifies the name of the database engine.
     */
-  val engine: js.UndefOr[Input[String]] = js.undefined
+  val engine: js.UndefOr[Input[String]] = js.native
   /**
     * Specifies the version of the database engine.
     */
-  val engineVersion: js.UndefOr[Input[String]] = js.undefined
+  val engineVersion: js.UndefOr[Input[String]] = js.native
   /**
     * Specifies the Provisioned IOPS (I/O operations per second) value of the DB instance at the time of the snapshot.
     */
-  val iops: js.UndefOr[Input[Double]] = js.undefined
+  val iops: js.UndefOr[Input[Double]] = js.native
   /**
     * The ARN for the KMS encryption key.
     */
-  val kmsKeyId: js.UndefOr[Input[String]] = js.undefined
+  val kmsKeyId: js.UndefOr[Input[String]] = js.native
   /**
     * License model information for the restored DB instance.
     */
-  val licenseModel: js.UndefOr[Input[String]] = js.undefined
+  val licenseModel: js.UndefOr[Input[String]] = js.native
   /**
     * Provides the option group name for the DB snapshot.
     */
-  val optionGroupName: js.UndefOr[Input[String]] = js.undefined
-  val port: js.UndefOr[Input[Double]] = js.undefined
-  val snapshotType: js.UndefOr[Input[String]] = js.undefined
+  val optionGroupName: js.UndefOr[Input[String]] = js.native
+  val port: js.UndefOr[Input[Double]] = js.native
+  val snapshotType: js.UndefOr[Input[String]] = js.native
   /**
     * The DB snapshot Arn that the DB snapshot was copied from. It only has value in case of cross customer or cross region copy.
     */
-  val sourceDbSnapshotIdentifier: js.UndefOr[Input[String]] = js.undefined
+  val sourceDbSnapshotIdentifier: js.UndefOr[Input[String]] = js.native
   /**
     * The region that the DB snapshot was created in or copied from.
     */
-  val sourceRegion: js.UndefOr[Input[String]] = js.undefined
+  val sourceRegion: js.UndefOr[Input[String]] = js.native
   /**
     * Specifies the status of this DB snapshot.
     */
-  val status: js.UndefOr[Input[String]] = js.undefined
+  val status: js.UndefOr[Input[String]] = js.native
   /**
     * Specifies the storage type associated with DB snapshot.
     */
-  val storageType: js.UndefOr[Input[String]] = js.undefined
+  val storageType: js.UndefOr[Input[String]] = js.native
   /**
     * Key-value mapping of resource tags
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * Specifies the storage type associated with DB snapshot.
     */
-  val vpcId: js.UndefOr[Input[String]] = js.undefined
+  val vpcId: js.UndefOr[Input[String]] = js.native
 }
 
 object SnapshotState {

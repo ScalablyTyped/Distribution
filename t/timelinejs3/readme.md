@@ -12,7 +12,7 @@ TimelineJS v3: A Storytelling Timeline built in JavaScript.
 | Keywords           | timeline, storytelling, timelinejs, timeline.js, history, googledocs, storify |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 3345 |
+| # downloads        | 4671 |
 | # stars            | 0 |
 
 ## Links

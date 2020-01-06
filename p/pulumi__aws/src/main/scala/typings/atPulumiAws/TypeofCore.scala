@@ -4,13 +4,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TypeofCore extends js.Object {
-  def HTTP_DATA(): Unit
-  def SEND(): Unit
-  def VALIDATE_CREDENTIALS(): Unit
-  def VALIDATE_PARAMETERS(): Unit
-  def VALIDATE_REGION(): Unit
-  def removeListener(eventName: String, eventListener: js.Function): Unit
+  def HTTP_DATA(): Unit = js.native
+  def SEND(): Unit = js.native
+  def VALIDATE_CREDENTIALS(): Unit = js.native
+  def VALIDATE_PARAMETERS(): Unit = js.native
+  def VALIDATE_REGION(): Unit = js.native
+  def removeListener(eventName: String, eventListener: js.Function): Unit = js.native
 }
 
 object TypeofCore {

@@ -5,31 +5,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UserLoginProfileState extends js.Object {
   /**
     * The encrypted password, base64 encoded. Only available if password was handled on this provider resource creation, not import.
     */
-  val encryptedPassword: js.UndefOr[Input[String]] = js.undefined
+  val encryptedPassword: js.UndefOr[Input[String]] = js.native
   /**
     * The fingerprint of the PGP key used to encrypt the password. Only available if password was handled on this provider resource creation, not import.
     */
-  val keyFingerprint: js.UndefOr[Input[String]] = js.undefined
+  val keyFingerprint: js.UndefOr[Input[String]] = js.native
   /**
     * The length of the generated password on resource creation. Only applies on resource creation. Drift detection is not possible with this argument.
     */
-  val passwordLength: js.UndefOr[Input[Double]] = js.undefined
+  val passwordLength: js.UndefOr[Input[Double]] = js.native
   /**
     * Whether the user should be forced to reset the generated password on resource creation. Only applies on resource creation. Drift detection is not possible with this argument.
     */
-  val passwordResetRequired: js.UndefOr[Input[Boolean]] = js.undefined
+  val passwordResetRequired: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Either a base-64 encoded PGP public key, or a keybase username in the form `keybase:username`. Only applies on resource creation. Drift detection is not possible with this argument.
     */
-  val pgpKey: js.UndefOr[Input[String]] = js.undefined
+  val pgpKey: js.UndefOr[Input[String]] = js.native
   /**
     * The IAM user's name.
     */
-  val user: js.UndefOr[Input[String]] = js.undefined
+  val user: js.UndefOr[Input[String]] = js.native
 }
 
 object UserLoginProfileState {

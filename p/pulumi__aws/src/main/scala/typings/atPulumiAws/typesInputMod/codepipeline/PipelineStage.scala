@@ -5,12 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PipelineStage extends js.Object {
-  var actions: Input[js.Array[Input[PipelineStageAction]]]
+  var actions: Input[js.Array[Input[PipelineStageAction]]] = js.native
   /**
     * The name of the pipeline.
     */
-  var name: Input[String]
+  var name: Input[String] = js.native
 }
 
 object PipelineStage {

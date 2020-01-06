@@ -12,7 +12,7 @@ observe-js is a library for observing changes on JavaScript objects/arrays
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 17 |
-| # downloads        | 20302 |
+| # downloads        | 17221 |
 | # stars            | 7 |
 
 ## Links

@@ -20,7 +20,7 @@ class ^ () extends LinkifyIt {
 @JSImport("linkify-it", JSImport.Namespace)
 @js.native
 object ^ extends TopLevel[
-      Instantiable0[LinkifyIt] with (Instantiable1[/* schemas */ SchemaRules, LinkifyIt]) with (Instantiable2[/* schemas */ SchemaRules, /* options */ Options, LinkifyIt]) with (Instantiable1[/* schemas */ Options, LinkifyIt]) with (Instantiable2[/* schemas */ Options, /* options */ Options, LinkifyIt])
+      Instantiable0[LinkifyIt] with (Instantiable1[/* schemas */ Options, LinkifyIt]) with (Instantiable1[/* schemas */ SchemaRules, LinkifyIt]) with (Instantiable2[/* schemas */ Options, /* options */ Options, LinkifyIt]) with (Instantiable2[/* schemas */ SchemaRules, /* options */ Options, LinkifyIt])
     ] {
   def apply(): LinkifyIt = js.native
   def apply(schemas: Options): LinkifyIt = js.native

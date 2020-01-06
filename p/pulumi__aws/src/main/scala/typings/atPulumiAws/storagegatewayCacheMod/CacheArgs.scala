@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CacheArgs extends js.Object {
   /**
     * Local disk identifier. For example, `pci-0000:03:00.0-scsi-0:0:0:0`.
     */
-  val diskId: Input[String]
+  val diskId: Input[String] = js.native
   /**
     * The Amazon Resource Name (ARN) of the gateway.
     */
-  val gatewayArn: Input[String]
+  val gatewayArn: Input[String] = js.native
 }
 
 object CacheArgs {

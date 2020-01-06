@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait QueryStatistics extends js.Object {
   /**
     * The total number of bytes in the log events scanned during the query.
     */
-  var bytesScanned: js.UndefOr[StatsValue] = js.undefined
+  var bytesScanned: js.UndefOr[StatsValue] = js.native
   /**
     * The number of log events that matched the query string.
     */
-  var recordsMatched: js.UndefOr[StatsValue] = js.undefined
+  var recordsMatched: js.UndefOr[StatsValue] = js.native
   /**
     * The total number of log events scanned during the query.
     */
-  var recordsScanned: js.UndefOr[StatsValue] = js.undefined
+  var recordsScanned: js.UndefOr[StatsValue] = js.native
 }
 
 object QueryStatistics {

@@ -6,35 +6,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ExternalKeyArgs extends js.Object {
   /**
     * Duration in days after which the key is deleted after destruction of the resource. Must be between `7` and `30` days. Defaults to `30`.
     */
-  val deletionWindowInDays: js.UndefOr[Input[Double]] = js.undefined
+  val deletionWindowInDays: js.UndefOr[Input[Double]] = js.native
   /**
     * Description of the key.
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * Specifies whether the key is enabled. Keys pending import can only be `false`. Imported keys default to `true` unless expired.
     */
-  val enabled: js.UndefOr[Input[Boolean]] = js.undefined
+  val enabled: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Base64 encoded 256-bit symmetric encryption key material to import. The CMK is permanently associated with this key material. The same key material can be reimported, but you cannot import different key material.
     */
-  val keyMaterialBase64: js.UndefOr[Input[String]] = js.undefined
+  val keyMaterialBase64: js.UndefOr[Input[String]] = js.native
   /**
     * A key policy JSON document. If you do not provide a key policy, AWS KMS attaches a default key policy to the CMK.
     */
-  val policy: js.UndefOr[Input[String]] = js.undefined
+  val policy: js.UndefOr[Input[String]] = js.native
   /**
     * A key-value map of tags to assign to the key.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * Time at which the imported key material expires. When the key material expires, AWS KMS deletes the key material and the CMK becomes unusable. If not specified, key material does not expire. Valid values: [RFC3339 time string](https://tools.ietf.org/html/rfc3339#section-5.8) (`YYYY-MM-DDTHH:MM:SSZ`)
     */
-  val validTo: js.UndefOr[Input[String]] = js.undefined
+  val validTo: js.UndefOr[Input[String]] = js.native
 }
 
 object ExternalKeyArgs {

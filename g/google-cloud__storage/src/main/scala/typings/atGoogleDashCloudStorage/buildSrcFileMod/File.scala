@@ -504,12 +504,12 @@ class File protected () extends ServiceObject[File] {
     */
   def setEncryptionKey(encryptionKey: String): this.type = js.native
   def setEncryptionKey(encryptionKey: Buffer): this.type = js.native
-  def setStorageClass(storageClass: String): Unit = js.native
+  def setStorageClass(storageClass: String): js.Promise[SetStorageClassResponse] = js.native
   def setStorageClass(storageClass: String, callback: SetStorageClassCallback): Unit = js.native
   def setStorageClass(storageClass: String, options: SetStorageClassOptions): js.Promise[SetStorageClassResponse] = js.native
   def setStorageClass(storageClass: String, options: SetStorageClassOptions, callback: SetStorageClassCallback): Unit = js.native
   @JSName("setStorageClass")
-  def setStorageClass_Promise(storageClass: String): js.Promise[SetStorageClassResponse] = js.native
+  def setStorageClass_Unit(storageClass: String): Unit = js.native
   /**
     * Set a user project to be billed for all requests made from this File
     * object.

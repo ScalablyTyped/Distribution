@@ -10,9 +10,9 @@ A simple little module for passing data from NodeJS to R (and back again).
 | ------------------ | :-------------: |
 | Full name          | r-script |
 | Keywords           | R, rstats, statistics |
-| # releases         | 1 |
+| # releases         | 2 |
 | # dependents       | 2 |
-| # downloads        | 35730 |
+| # downloads        | 18300 |
 | # stars            | 4 |
 
 ## Links

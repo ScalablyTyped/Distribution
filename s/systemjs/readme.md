@@ -10,9 +10,9 @@ Dynamic ES module loader
 | ------------------ | :-------------: |
 | Full name          | systemjs |
 | Keywords           | - |
-| # releases         | 30 |
-| # dependents       | 741 |
-| # downloads        | 7874679 |
+| # releases         | 40 |
+| # dependents       | 761 |
+| # downloads        | 7343064 |
 | # stars            | 39 |
 
 ## Links

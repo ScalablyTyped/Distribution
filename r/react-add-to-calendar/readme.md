@@ -10,9 +10,9 @@ A simple and reusable add to calendar button component for React
 | ------------------ | :-------------: |
 | Full name          | react-add-to-calendar |
 | Keywords           | react, add-to-calendar, calendar, event, react-component |
-| # releases         | 2 |
-| # dependents       | 2 |
-| # downloads        | 192191 |
+| # releases         | 1 |
+| # dependents       | 3 |
+| # downloads        | 261484 |
 | # stars            | 3 |
 
 ## Links

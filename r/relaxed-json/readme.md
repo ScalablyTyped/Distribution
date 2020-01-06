@@ -11,8 +11,8 @@ Relaxed JSON is strict superset JSON, relaxing strictness of valilla JSON
 | Full name          | relaxed-json |
 | Keywords           | json, comments, comment, config |
 | # releases         | 3 |
-| # dependents       | 28 |
-| # downloads        | 338950 |
+| # dependents       | 31 |
+| # downloads        | 518699 |
 | # stars            | 0 |
 
 ## Links

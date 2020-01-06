@@ -10,9 +10,9 @@ Resolve any installed ES6 compatible promise
 | ------------------ | :-------------: |
 | Full name          | any-promise |
 | Keywords           | promise, es6 |
-| # releases         | 1 |
-| # dependents       | 245 |
-| # downloads        | 60469133 |
+| # releases         | 0 |
+| # dependents       | 265 |
+| # downloads        | 90946530 |
 | # stars            | 11 |
 
 ## Links

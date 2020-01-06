@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CertificateArgs extends js.Object {
   /**
     * The certificate identifier.
     */
-  val certificateId: Input[String]
+  val certificateId: Input[String] = js.native
   /**
     * The contents of the .pem X.509 certificate file for the certificate. Either `certificatePem` or `certificateWallet` must be set.
     */
-  val certificatePem: js.UndefOr[Input[String]] = js.undefined
+  val certificatePem: js.UndefOr[Input[String]] = js.native
   /**
     * The contents of the Oracle Wallet certificate for use with SSL. Either `certificatePem` or `certificateWallet` must be set.
     */
-  val certificateWallet: js.UndefOr[Input[String]] = js.undefined
+  val certificateWallet: js.UndefOr[Input[String]] = js.native
 }
 
 object CertificateArgs {

@@ -9,9 +9,9 @@ Typings are for version 24.9.0
 | ------------------ | :-------------: |
 | Full name          | jest-resolve |
 | Keywords           | - |
-| # releases         | 80 |
-| # dependents       | 1218 |
-| # downloads        | 259983423 |
+| # releases         | 68 |
+| # dependents       | 1287 |
+| # downloads        | 283686433 |
 | # stars            | 0 |
 
 ## Links

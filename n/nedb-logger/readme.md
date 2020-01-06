@@ -12,7 +12,7 @@ Logger outputting messages to a file in a nedb-readable format with minimal memo
 | Keywords           | logger, nedb |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 1919 |
+| # downloads        | 1337 |
 | # stars            | 0 |
 
 ## Links

@@ -6,16 +6,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ThingTypeArgs extends js.Object {
   /**
     * Whether the thing type is deprecated. If true, no new things could be associated with this type.
     */
-  val deprecated: js.UndefOr[Input[Boolean]] = js.undefined
+  val deprecated: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The name of the thing type.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
-  val properties: js.UndefOr[Input[ThingTypeProperties]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
+  /**
+    * , Configuration block that can contain the following properties of the thing type:
+    */
+  val properties: js.UndefOr[Input[ThingTypeProperties]] = js.native
 }
 
 object ThingTypeArgs {

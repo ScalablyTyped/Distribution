@@ -10,9 +10,9 @@ Copy stuff into clipboard using JS with fallbacks
 | ------------------ | :-------------: |
 | Full name          | copy-to-clipboard |
 | Keywords           | clipboard, copy, browser |
-| # releases         | 3 |
-| # dependents       | 128 |
-| # downloads        | 14292555 |
+| # releases         | 4 |
+| # dependents       | 252 |
+| # downloads        | 46165316 |
 | # stars            | 15 |
 
 ## Links

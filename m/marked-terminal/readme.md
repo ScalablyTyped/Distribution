@@ -10,9 +10,9 @@ A custom render for marked to output to the Terminal
 | ------------------ | :-------------: |
 | Full name          | marked-terminal |
 | Keywords           | marked, render, terminal, markdown, markdown-to-terminal |
-| # releases         | 5 |
-| # dependents       | 125 |
-| # downloads        | 11904143 |
+| # releases         | 6 |
+| # dependents       | 167 |
+| # downloads        | 17257661 |
 | # stars            | 14 |
 
 ## Links

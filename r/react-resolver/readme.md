@@ -10,9 +10,9 @@ Async-rendering & data-fetching for universal React applications
 | ------------------ | :-------------: |
 | Full name          | react-resolver |
 | Keywords           | async, decorator, lazy, load, react, resolve |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 9 |
-| # downloads        | 219672 |
+| # downloads        | 185945 |
 | # stars            | 2 |
 
 ## Links

@@ -12,7 +12,7 @@ Effortlessly compose compare functions for Array.prototype.sort
 | Keywords           | array, sort, compare, compose |
 | # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 241 |
+| # downloads        | 267 |
 | # stars            | 0 |
 
 ## Links

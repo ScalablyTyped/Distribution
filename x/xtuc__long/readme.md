@@ -11,8 +11,8 @@ A Long class for representing a 64-bit two's-complement integer value.
 | Full name          | @xtuc/long |
 | Keywords           | math |
 | # releases         | 7 |
-| # dependents       | 5 |
-| # downloads        | 87517129 |
+| # dependents       | 6 |
+| # downloads        | 191480546 |
 | # stars            | 0 |
 
 ## Links

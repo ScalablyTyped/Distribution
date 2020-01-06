@@ -15,6 +15,7 @@ trait Anon_Bounds extends js.Object {
   var location: js.UndefOr[LatLng | LatLngLiteral] = js.undefined
   var offset: js.UndefOr[Double | String] = js.undefined
   var radius: js.UndefOr[Double | String] = js.undefined
+  var sessionToken: js.UndefOr[js.Any] = js.undefined
   var types: js.UndefOr[js.Array[String]] = js.undefined
 }
 
@@ -26,6 +27,7 @@ object Anon_Bounds {
     location: LatLng | LatLngLiteral = null,
     offset: Double | String = null,
     radius: Double | String = null,
+    sessionToken: js.Any = null,
     types: js.Array[String] = null
   ): Anon_Bounds = {
     val __obj = js.Dynamic.literal()
@@ -34,6 +36,7 @@ object Anon_Bounds {
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (sessionToken != null) __obj.updateDynamic("sessionToken")(sessionToken.asInstanceOf[js.Any])
     if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_Bounds]
   }

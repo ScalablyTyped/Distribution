@@ -4,35 +4,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TaskStatistics extends js.Object {
   /**
     * The number of checks that did not run because the audit was canceled.
     */
-  var canceledChecks: js.UndefOr[CanceledChecksCount] = js.undefined
+  var canceledChecks: js.UndefOr[CanceledChecksCount] = js.native
   /**
     * The number of checks that found compliant resources.
     */
-  var compliantChecks: js.UndefOr[CompliantChecksCount] = js.undefined
+  var compliantChecks: js.UndefOr[CompliantChecksCount] = js.native
   /**
     * The number of checks.
     */
-  var failedChecks: js.UndefOr[FailedChecksCount] = js.undefined
+  var failedChecks: js.UndefOr[FailedChecksCount] = js.native
   /**
     * The number of checks in progress.
     */
-  var inProgressChecks: js.UndefOr[InProgressChecksCount] = js.undefined
+  var inProgressChecks: js.UndefOr[InProgressChecksCount] = js.native
   /**
     * The number of checks that found noncompliant resources.
     */
-  var nonCompliantChecks: js.UndefOr[NonCompliantChecksCount] = js.undefined
+  var nonCompliantChecks: js.UndefOr[NonCompliantChecksCount] = js.native
   /**
     * The number of checks in this audit.
     */
-  var totalChecks: js.UndefOr[TotalChecksCount] = js.undefined
+  var totalChecks: js.UndefOr[TotalChecksCount] = js.native
   /**
     * The number of checks waiting for data collection.
     */
-  var waitingForDataCollectionChecks: js.UndefOr[WaitingForDataCollectionChecksCount] = js.undefined
+  var waitingForDataCollectionChecks: js.UndefOr[WaitingForDataCollectionChecksCount] = js.native
 }
 
 object TaskStatistics {

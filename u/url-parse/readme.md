@@ -10,9 +10,9 @@ Small footprint URL parser that works seamlessly across Node.js and browser envi
 | ------------------ | :-------------: |
 | Full name          | url-parse |
 | Keywords           | URL, parser, uri, url, parse, query, string, querystring, stringify |
-| # releases         | 8 |
-| # dependents       | 740 |
-| # downloads        | 214116320 |
+| # releases         | 9 |
+| # dependents       | 974 |
+| # downloads        | 295371448 |
 | # stars            | 43 |
 
 ## Links

@@ -12,7 +12,7 @@ A simple wrapper around the native iOS and Android UUID classes for React Native
 | Keywords           | react-native, uuid |
 | # releases         | 7 |
 | # dependents       | 0 |
-| # downloads        | 28268 |
+| # downloads        | 68685 |
 | # stars            | 2 |
 
 ## Links

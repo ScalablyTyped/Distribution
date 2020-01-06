@@ -11,8 +11,8 @@ Run a function exactly one time
 | Full name          | once |
 | Keywords           | once, function, one, single |
 | # releases         | 1 |
-| # dependents       | 814 |
-| # downloads        | 420418571 |
+| # dependents       | 888 |
+| # downloads        | 580674953 |
 | # stars            | 41 |
 
 ## Links

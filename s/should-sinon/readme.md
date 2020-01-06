@@ -10,9 +10,9 @@ Sinon.js assertions for should.js
 | ------------------ | :-------------: |
 | Full name          | should-sinon |
 | Keywords           | should, sinon |
-| # releases         | 2 |
-| # dependents       | 6 |
-| # downloads        | 873323 |
+| # releases         | 0 |
+| # dependents       | 7 |
+| # downloads        | 837611 |
 | # stars            | 1 |
 
 ## Links

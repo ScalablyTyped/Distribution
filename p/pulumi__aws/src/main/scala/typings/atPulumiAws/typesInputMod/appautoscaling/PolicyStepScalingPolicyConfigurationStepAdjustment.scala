@@ -5,10 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PolicyStepScalingPolicyConfigurationStepAdjustment extends js.Object {
-  var metricIntervalLowerBound: js.UndefOr[Input[String]] = js.undefined
-  var metricIntervalUpperBound: js.UndefOr[Input[String]] = js.undefined
-  var scalingAdjustment: Input[Double]
+  var metricIntervalLowerBound: js.UndefOr[Input[String]] = js.native
+  var metricIntervalUpperBound: js.UndefOr[Input[String]] = js.native
+  var scalingAdjustment: Input[Double] = js.native
 }
 
 object PolicyStepScalingPolicyConfigurationStepAdjustment {

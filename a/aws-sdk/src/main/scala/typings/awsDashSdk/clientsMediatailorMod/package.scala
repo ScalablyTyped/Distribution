@@ -15,6 +15,7 @@ package object clientsMediatailorMod {
     - java.lang.String
   */
   type OriginManifestType = _OriginManifestType | String
+  type __integer = Double
   type __integerMin1Max100 = Double
   type __listOfPlaybackConfigurations = js.Array[PlaybackConfiguration]
   type __listOf__string = js.Array[__string]
@@ -22,7 +23,7 @@ package object clientsMediatailorMod {
   type __string = String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2018-04-23`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

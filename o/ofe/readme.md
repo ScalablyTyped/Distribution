@@ -12,7 +12,7 @@ Overwrite OnFatalError to produce heapdump
 | Keywords           | On Fatal Error, Fatal, Error, OnFatalError |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 94398 |
+| # downloads        | 37437 |
 | # stars            | 3 |
 
 ## Links

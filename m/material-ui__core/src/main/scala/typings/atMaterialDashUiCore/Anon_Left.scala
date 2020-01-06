@@ -4,9 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Anon_Left extends js.Object {
-  var left: Double
-  var width: Double
+  var left: Double = js.native
+  var width: Double = js.native
 }
 
 object Anon_Left {

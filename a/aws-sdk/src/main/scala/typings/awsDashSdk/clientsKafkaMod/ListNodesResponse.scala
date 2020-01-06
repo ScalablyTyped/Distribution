@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ListNodesResponse extends js.Object {
   /**
     * 
@@ -11,21 +12,21 @@ trait ListNodesResponse extends js.Object {
     To get another batch of nodes, provide this token in your next request.
     
     */
-  var NextToken: js.UndefOr[__string] = js.undefined
+  var NextToken: js.UndefOr[__string] = js.native
   /**
     * 
     List containing a NodeInfo object.
     
     */
-  var NodeInfoList: js.UndefOr[__listOfNodeInfo] = js.undefined
+  var NodeInfoList: js.UndefOr[__listOfNodeInfo] = js.native
 }
 
 object ListNodesResponse {
   @scala.inline
   def apply(NextToken: __string = null, NodeInfoList: __listOfNodeInfo = null): ListNodesResponse = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
-    if (NodeInfoList != null) __obj.updateDynamic("NodeInfoList")(NodeInfoList)
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
+    if (NodeInfoList != null) __obj.updateDynamic("NodeInfoList")(NodeInfoList.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListNodesResponse]
   }
 }

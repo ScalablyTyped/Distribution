@@ -10,9 +10,9 @@ A JavaScript implementation the Netflix OSS service registry, Eureka.
 | ------------------ | :-------------: |
 | Full name          | eureka-js-client |
 | Keywords           | eureka, service, registry, netflix |
-| # releases         | 4 |
-| # dependents       | 30 |
-| # downloads        | 165465 |
+| # releases         | 5 |
+| # dependents       | 43 |
+| # downloads        | 294025 |
 | # stars            | 8 |
 
 ## Links

@@ -10,9 +10,9 @@ A JavaScript implementation of the JSON Object Signing and Encryption (JOSE) for
 | ------------------ | :-------------: |
 | Full name          | node-jose |
 | Keywords           | crypto, jose, jwa, jwe, jwk, jws |
-| # releases         | 11 |
-| # dependents       | 70 |
-| # downloads        | 1672455 |
+| # releases         | 7 |
+| # dependents       | 100 |
+| # downloads        | 3914767 |
 | # stars            | 6 |
 
 ## Links

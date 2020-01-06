@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AnalyticsApplicationInputsStartingPositionConfiguration extends js.Object {
-  var startingPosition: js.UndefOr[Input[String]] = js.undefined
+  var startingPosition: js.UndefOr[Input[String]] = js.native
 }
 
 object AnalyticsApplicationInputsStartingPositionConfiguration {

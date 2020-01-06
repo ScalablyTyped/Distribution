@@ -12,7 +12,7 @@ A simple, modern, browser notification system
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 15 |
-| # downloads        | 87144 |
+| # downloads        | 90468 |
 | # stars            | 3 |
 
 ## Links

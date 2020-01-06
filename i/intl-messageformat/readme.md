@@ -10,15 +10,15 @@ Formats ICU Message strings with number, date, plural, and select placeholders t
 | ------------------ | :-------------: |
 | Full name          | intl-messageformat |
 | Keywords           | i18n, intl, internationalization, localization, globalization, messageformat, parser, plural, icu |
-| # releases         | 4 |
-| # dependents       | 151 |
-| # downloads        | 17569888 |
+| # releases         | 77 |
+| # dependents       | 187 |
+| # downloads        | 28473315 |
 | # stars            | 6 |
 
 ## Links
-- [Homepage](https://github.com/yahoo/intl-messageformat)
-- [Bugs](https://github.com/yahoo/intl-messageformat/issues)
-- [Repository](https://github.com/yahoo/intl-messageformat)
+- [Homepage](https://github.com/formatjs/formatjs)
+- [Bugs](https://github.com/formatjs/formatjs/issues)
+- [Repository](https://github.com/formatjs/formatjs)
 - [Npm](https://www.npmjs.com/package/intl-messageformat)
     
 

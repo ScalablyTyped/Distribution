@@ -9,9 +9,9 @@ Typings are for version 0.1.0-preview.1
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/service-error-classification |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 5 |
 | # dependents       | 1 |
-| # downloads        | 6510 |
+| # downloads        | 31333 |
 | # stars            | 0 |
 
 ## Links

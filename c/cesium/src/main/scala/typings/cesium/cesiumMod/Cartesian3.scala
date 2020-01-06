@@ -24,13 +24,13 @@ class Cartesian3 () extends Packable {
   def equals(right: Cartesian3): Boolean = js.native
   def equalsEpsilon(right: Cartesian3, relativeEpsilon: Double): Boolean = js.native
   def equalsEpsilon(right: Cartesian3, relativeEpsilon: Double, absoluteEpsilon: Double): Boolean = js.native
-  def getValue(time: JulianDate): js.Any = js.native
+  def getValue(time: JulianDate): Cartesian3 = js.native
   def getValue(time: JulianDate, result: js.Any): js.Any = js.native
   def getValue(time: JulianDate, result: Cartesian3): Cartesian3 = js.native
   def getValueInReferenceFrame(time: JulianDate, referenceFrame: ReferenceFrame): Cartesian3 = js.native
   def getValueInReferenceFrame(time: JulianDate, referenceFrame: ReferenceFrame, result: Cartesian3): Cartesian3 = js.native
   @JSName("getValue")
-  def getValue_Cartesian3(time: JulianDate): Cartesian3 = js.native
+  def getValue_Any(time: JulianDate): js.Any = js.native
 }
 
 /* static members */

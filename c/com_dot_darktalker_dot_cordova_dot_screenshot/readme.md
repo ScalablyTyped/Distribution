@@ -12,7 +12,7 @@ screenshot PhoneGap Plugin for Android
 | Keywords           | cordova, screenshot, ecosystem:cordova, cordova-android, cordova-ios, cordova-osx |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 42668 |
+| # downloads        | 71331 |
 | # stars            | 2 |
 
 ## Links

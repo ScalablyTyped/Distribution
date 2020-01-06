@@ -12,63 +12,64 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ReceiptRuleState extends js.Object {
   /**
     * A list of Add Header Action blocks. Documented below.
     */
-  val addHeaderActions: js.UndefOr[Input[js.Array[Input[ReceiptRuleAddHeaderAction]]]] = js.undefined
+  val addHeaderActions: js.UndefOr[Input[js.Array[Input[ReceiptRuleAddHeaderAction]]]] = js.native
   /**
     * The name of the rule to place this rule after
     */
-  val after: js.UndefOr[Input[String]] = js.undefined
+  val after: js.UndefOr[Input[String]] = js.native
   /**
     * A list of Bounce Action blocks. Documented below.
     */
-  val bounceActions: js.UndefOr[Input[js.Array[Input[ReceiptRuleBounceAction]]]] = js.undefined
+  val bounceActions: js.UndefOr[Input[js.Array[Input[ReceiptRuleBounceAction]]]] = js.native
   /**
     * If true, the rule will be enabled
     */
-  val enabled: js.UndefOr[Input[Boolean]] = js.undefined
+  val enabled: js.UndefOr[Input[Boolean]] = js.native
   /**
     * A list of Lambda Action blocks. Documented below.
     */
-  val lambdaActions: js.UndefOr[Input[js.Array[Input[ReceiptRuleLambdaAction]]]] = js.undefined
+  val lambdaActions: js.UndefOr[Input[js.Array[Input[ReceiptRuleLambdaAction]]]] = js.native
   /**
     * The name of the rule
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * A list of email addresses
     */
-  val recipients: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val recipients: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The name of the rule set
     */
-  val ruleSetName: js.UndefOr[Input[String]] = js.undefined
+  val ruleSetName: js.UndefOr[Input[String]] = js.native
   /**
     * A list of S3 Action blocks. Documented below.
     */
-  val s3Actions: js.UndefOr[Input[js.Array[Input[ReceiptRuleS3Action]]]] = js.undefined
+  val s3Actions: js.UndefOr[Input[js.Array[Input[ReceiptRuleS3Action]]]] = js.native
   /**
     * If true, incoming emails will be scanned for spam and viruses
     */
-  val scanEnabled: js.UndefOr[Input[Boolean]] = js.undefined
+  val scanEnabled: js.UndefOr[Input[Boolean]] = js.native
   /**
     * A list of SNS Action blocks. Documented below.
     */
-  val snsActions: js.UndefOr[Input[js.Array[Input[ReceiptRuleSnsAction]]]] = js.undefined
+  val snsActions: js.UndefOr[Input[js.Array[Input[ReceiptRuleSnsAction]]]] = js.native
   /**
     * A list of Stop Action blocks. Documented below.
     */
-  val stopActions: js.UndefOr[Input[js.Array[Input[ReceiptRuleStopAction]]]] = js.undefined
+  val stopActions: js.UndefOr[Input[js.Array[Input[ReceiptRuleStopAction]]]] = js.native
   /**
     * Require or Optional
     */
-  val tlsPolicy: js.UndefOr[Input[String]] = js.undefined
+  val tlsPolicy: js.UndefOr[Input[String]] = js.native
   /**
     * A list of WorkMail Action blocks. Documented below.
     */
-  val workmailActions: js.UndefOr[Input[js.Array[Input[ReceiptRuleWorkmailAction]]]] = js.undefined
+  val workmailActions: js.UndefOr[Input[js.Array[Input[ReceiptRuleWorkmailAction]]]] = js.native
 }
 
 object ReceiptRuleState {

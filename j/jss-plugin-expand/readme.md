@@ -1,7 +1,7 @@
 
 # Scala.js typings for jss-plugin-expand
 
-Typings are for version 10.0.1
+Typings are for version 10.0.3
 
 ## Library description:
 JSS plugin that gives you a better syntax than CSS.
@@ -10,9 +10,9 @@ JSS plugin that gives you a better syntax than CSS.
 | ------------------ | :-------------: |
 | Full name          | jss-plugin-expand |
 | Keywords           | cssinjs, css-in-js, css in js, jss, plugin, expand |
-| # releases         | 29 |
-| # dependents       | 3 |
-| # downloads        | 296832 |
+| # releases         | 32 |
+| # dependents       | 5 |
+| # downloads        | 526918 |
 | # stars            | 0 |
 
 ## Links

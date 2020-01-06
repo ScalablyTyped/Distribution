@@ -11,8 +11,8 @@ Library that can be used to retry functions that return promise
 | Full name          | @lifeomic/attempt |
 | Keywords           | attempt, try, retry, backoff, delay, jitter, promise, async, await, typescript |
 | # releases         | 10 |
-| # dependents       | 13 |
-| # downloads        | 194686 |
+| # dependents       | 15 |
+| # downloads        | 225229 |
 | # stars            | 0 |
 
 ## Links

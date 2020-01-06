@@ -18,9 +18,7 @@ trait IColorCellProps extends js.Object {
     */
   var index: js.UndefOr[Double] = js.undefined
   /**
-    * The label for this item.
-    * Visible text if this item is a header,
-    * tooltip if is this item is normal
+    * Tooltip and aria label for this item
     */
   var label: js.UndefOr[String] = js.undefined
 }

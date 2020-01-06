@@ -11,8 +11,8 @@ Enable destroying a server, and all currently open connections.
 | Full name          | server-destroy |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 228 |
-| # downloads        | 20925158 |
+| # dependents       | 265 |
+| # downloads        | 28315609 |
 | # stars            | 2 |
 
 ## Links

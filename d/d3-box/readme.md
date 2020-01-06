@@ -11,7 +11,7 @@ An NPM mirror of mbostock's box.js.
 | Keywords           | d3, box, whisker, plot |
 | # releases         | 1 |
 | # dependents       | 0 |
-| # downloads        | 250 |
+| # downloads        | 227 |
 | # stars            | 0 |
 
 ## Links

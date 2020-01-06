@@ -4,21 +4,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DescribeConfigurationRevisionRequest extends js.Object {
   /**
     * The unique ID that Amazon MQ generates for the configuration.
     */
-  var ConfigurationId: __string
+  var ConfigurationId: __string = js.native
   /**
     * The revision of the configuration.
     */
-  var ConfigurationRevision: __string
+  var ConfigurationRevision: __string = js.native
 }
 
 object DescribeConfigurationRevisionRequest {
   @scala.inline
   def apply(ConfigurationId: __string, ConfigurationRevision: __string): DescribeConfigurationRevisionRequest = {
-    val __obj = js.Dynamic.literal(ConfigurationId = ConfigurationId, ConfigurationRevision = ConfigurationRevision)
+    val __obj = js.Dynamic.literal(ConfigurationId = ConfigurationId.asInstanceOf[js.Any], ConfigurationRevision = ConfigurationRevision.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DescribeConfigurationRevisionRequest]
   }

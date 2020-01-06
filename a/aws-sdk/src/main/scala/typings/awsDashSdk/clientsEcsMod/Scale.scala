@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Scale extends js.Object {
   /**
     * The unit of measure for the scale value.
     */
-  var unit: js.UndefOr[ScaleUnit] = js.undefined
+  var unit: js.UndefOr[ScaleUnit] = js.native
   /**
     * The value, specified as a percent total of a service's desiredCount, to scale the task set. Accepted values are numbers between 0 and 100.
     */
-  var value: js.UndefOr[Double] = js.undefined
+  var value: js.UndefOr[Double] = js.native
 }
 
 object Scale {

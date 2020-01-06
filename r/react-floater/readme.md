@@ -10,9 +10,9 @@ Floaters everywhere!
 | ------------------ | :-------------: |
 | Full name          | react-floater |
 | Keywords           | react, react-component, component, tooltip, modal, popup, alert, notification |
-| # releases         | 14 |
-| # dependents       | 14 |
-| # downloads        | 1053564 |
+| # releases         | 15 |
+| # dependents       | 15 |
+| # downloads        | 1278799 |
 | # stars            | 0 |
 
 ## Links

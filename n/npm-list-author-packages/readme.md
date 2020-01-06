@@ -12,7 +12,7 @@ List an author's packages.
 | Keywords           | npm, list, ls, packages, pkgs, author, modules, public, cli |
 | # releases         | 1 |
 | # dependents       | 5 |
-| # downloads        | 1228 |
+| # downloads        | 614 |
 | # stars            | 1 |
 
 ## Links

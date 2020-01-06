@@ -5,16 +5,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/SvgIcon/SvgIcon.SvgIconClassKey>> */
+@js.native
 trait PartialClassNameMapSvgIconClassKey extends js.Object {
-  var colorAction: js.UndefOr[String] = js.undefined
-  var colorDisabled: js.UndefOr[String] = js.undefined
-  var colorError: js.UndefOr[String] = js.undefined
-  var colorPrimary: js.UndefOr[String] = js.undefined
-  var colorSecondary: js.UndefOr[String] = js.undefined
-  var fontSizeInherit: js.UndefOr[String] = js.undefined
-  var fontSizeLarge: js.UndefOr[String] = js.undefined
-  var fontSizeSmall: js.UndefOr[String] = js.undefined
-  var root: js.UndefOr[String] = js.undefined
+  var colorAction: js.UndefOr[String] = js.native
+  var colorDisabled: js.UndefOr[String] = js.native
+  var colorError: js.UndefOr[String] = js.native
+  var colorPrimary: js.UndefOr[String] = js.native
+  var colorSecondary: js.UndefOr[String] = js.native
+  var fontSizeInherit: js.UndefOr[String] = js.native
+  var fontSizeLarge: js.UndefOr[String] = js.native
+  var fontSizeSmall: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.native
 }
 
 object PartialClassNameMapSvgIconClassKey {

@@ -10,9 +10,9 @@ transform the ast on a recursive walk
 | ------------------ | :-------------: |
 | Full name          | falafel |
 | Keywords           | ast, burrito, source, syntax, traversal, tree |
-| # releases         | 1 |
-| # dependents       | 242 |
-| # downloads        | 22693896 |
+| # releases         | 0 |
+| # dependents       | 246 |
+| # downloads        | 31410166 |
 | # stars            | 17 |
 
 ## Links

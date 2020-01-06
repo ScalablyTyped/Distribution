@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UserPoolDomainArgs extends js.Object {
   /**
     * The ARN of an ISSUED ACM certificate in us-east-1 for a custom domain.
     */
-  val certificateArn: js.UndefOr[Input[String]] = js.undefined
+  val certificateArn: js.UndefOr[Input[String]] = js.native
   /**
     * The domain string.
     */
-  val domain: Input[String]
+  val domain: Input[String] = js.native
   /**
     * The user pool ID.
     */
-  val userPoolId: Input[String]
+  val userPoolId: Input[String] = js.native
 }
 
 object UserPoolDomainArgs {

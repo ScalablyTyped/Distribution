@@ -6,69 +6,70 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StaticWebLayerState extends js.Object {
   /**
     * Whether to automatically assign an elastic IP address to the layer's instances.
     */
-  val autoAssignElasticIps: js.UndefOr[Input[Boolean]] = js.undefined
+  val autoAssignElasticIps: js.UndefOr[Input[Boolean]] = js.native
   /**
     * For stacks belonging to a VPC, whether to automatically assign a public IP address to each of the layer's instances.
     */
-  val autoAssignPublicIps: js.UndefOr[Input[Boolean]] = js.undefined
+  val autoAssignPublicIps: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Whether to enable auto-healing for the layer.
     */
-  val autoHealing: js.UndefOr[Input[Boolean]] = js.undefined
-  val customConfigureRecipes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
-  val customDeployRecipes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val autoHealing: js.UndefOr[Input[Boolean]] = js.native
+  val customConfigureRecipes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  val customDeployRecipes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The ARN of an IAM profile that will be used for the layer's instances.
     */
-  val customInstanceProfileArn: js.UndefOr[Input[String]] = js.undefined
-  val customJson: js.UndefOr[Input[String]] = js.undefined
+  val customInstanceProfileArn: js.UndefOr[Input[String]] = js.native
+  val customJson: js.UndefOr[Input[String]] = js.native
   /**
     * Ids for a set of security groups to apply to the layer's instances.
     */
-  val customSecurityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
-  val customSetupRecipes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
-  val customShutdownRecipes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
-  val customUndeployRecipes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val customSecurityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  val customSetupRecipes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  val customShutdownRecipes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  val customUndeployRecipes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * Whether to enable Elastic Load Balancing connection draining.
     */
-  val drainElbOnShutdown: js.UndefOr[Input[Boolean]] = js.undefined
+  val drainElbOnShutdown: js.UndefOr[Input[Boolean]] = js.native
   /**
     * `ebsVolume` blocks, as described below, will each create an EBS volume and connect it to the layer's instances.
     */
-  val ebsVolumes: js.UndefOr[Input[js.Array[Input[StaticWebLayerEbsVolume]]]] = js.undefined
+  val ebsVolumes: js.UndefOr[Input[js.Array[Input[StaticWebLayerEbsVolume]]]] = js.native
   /**
     * Name of an Elastic Load Balancer to attach to this layer
     */
-  val elasticLoadBalancer: js.UndefOr[Input[String]] = js.undefined
+  val elasticLoadBalancer: js.UndefOr[Input[String]] = js.native
   /**
     * Whether to install OS and package updates on each instance when it boots.
     */
-  val installUpdatesOnBoot: js.UndefOr[Input[Boolean]] = js.undefined
+  val installUpdatesOnBoot: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The time, in seconds, that OpsWorks will wait for Chef to complete after triggering the Shutdown event.
     */
-  val instanceShutdownTimeout: js.UndefOr[Input[Double]] = js.undefined
+  val instanceShutdownTimeout: js.UndefOr[Input[Double]] = js.native
   /**
     * A human-readable name for the layer.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * The id of the stack the layer will belong to.
     */
-  val stackId: js.UndefOr[Input[String]] = js.undefined
+  val stackId: js.UndefOr[Input[String]] = js.native
   /**
     * Names of a set of system packages to install on the layer's instances.
     */
-  val systemPackages: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val systemPackages: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * Whether to use EBS-optimized instances.
     */
-  val useEbsOptimizedInstances: js.UndefOr[Input[Boolean]] = js.undefined
+  val useEbsOptimizedInstances: js.UndefOr[Input[Boolean]] = js.native
 }
 
 object StaticWebLayerState {

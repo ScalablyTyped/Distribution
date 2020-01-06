@@ -4,35 +4,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CreateGroupResponse extends js.Object {
   /**
     * The ARN of the definition.
     */
-  var Arn: js.UndefOr[__string] = js.undefined
+  var Arn: js.UndefOr[__string] = js.native
   /**
     * The time, in milliseconds since the epoch, when the definition was created.
     */
-  var CreationTimestamp: js.UndefOr[__string] = js.undefined
+  var CreationTimestamp: js.UndefOr[__string] = js.native
   /**
     * The ID of the definition.
     */
-  var Id: js.UndefOr[__string] = js.undefined
+  var Id: js.UndefOr[__string] = js.native
   /**
     * The time, in milliseconds since the epoch, when the definition was last updated.
     */
-  var LastUpdatedTimestamp: js.UndefOr[__string] = js.undefined
+  var LastUpdatedTimestamp: js.UndefOr[__string] = js.native
   /**
     * The ID of the latest version associated with the definition.
     */
-  var LatestVersion: js.UndefOr[__string] = js.undefined
+  var LatestVersion: js.UndefOr[__string] = js.native
   /**
     * The ARN of the latest version associated with the definition.
     */
-  var LatestVersionArn: js.UndefOr[__string] = js.undefined
+  var LatestVersionArn: js.UndefOr[__string] = js.native
   /**
     * The name of the definition.
     */
-  var Name: js.UndefOr[__string] = js.undefined
+  var Name: js.UndefOr[__string] = js.native
 }
 
 object CreateGroupResponse {
@@ -47,13 +48,13 @@ object CreateGroupResponse {
     Name: __string = null
   ): CreateGroupResponse = {
     val __obj = js.Dynamic.literal()
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn)
-    if (CreationTimestamp != null) __obj.updateDynamic("CreationTimestamp")(CreationTimestamp)
-    if (Id != null) __obj.updateDynamic("Id")(Id)
-    if (LastUpdatedTimestamp != null) __obj.updateDynamic("LastUpdatedTimestamp")(LastUpdatedTimestamp)
-    if (LatestVersion != null) __obj.updateDynamic("LatestVersion")(LatestVersion)
-    if (LatestVersionArn != null) __obj.updateDynamic("LatestVersionArn")(LatestVersionArn)
-    if (Name != null) __obj.updateDynamic("Name")(Name)
+    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
+    if (CreationTimestamp != null) __obj.updateDynamic("CreationTimestamp")(CreationTimestamp.asInstanceOf[js.Any])
+    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
+    if (LastUpdatedTimestamp != null) __obj.updateDynamic("LastUpdatedTimestamp")(LastUpdatedTimestamp.asInstanceOf[js.Any])
+    if (LatestVersion != null) __obj.updateDynamic("LatestVersion")(LatestVersion.asInstanceOf[js.Any])
+    if (LatestVersionArn != null) __obj.updateDynamic("LatestVersionArn")(LatestVersionArn.asInstanceOf[js.Any])
+    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateGroupResponse]
   }
 }

@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait F4vSettings extends js.Object {
   /**
     * If set to PROGRESSIVE_DOWNLOAD, the MOOV atom is relocated to the beginning of the archive as required for progressive downloading. Otherwise it is placed normally at the end.
     */
-  var MoovPlacement: js.UndefOr[F4vMoovPlacement] = js.undefined
+  var MoovPlacement: js.UndefOr[F4vMoovPlacement] = js.native
 }
 
 object F4vSettings {

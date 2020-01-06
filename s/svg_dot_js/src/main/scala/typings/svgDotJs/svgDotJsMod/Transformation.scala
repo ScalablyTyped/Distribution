@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Transformation
-  extends Instantiable2[/* source */ Transform, /* inversed */ Boolean, Transformation]
-     with Instantiable1[/* transform (repeated) */ Transform, Transformation] {
+  extends Instantiable1[/* source */ Transform, Transformation]
+     with Instantiable2[/* source */ Transform, /* inversed */ Boolean, Transformation] {
   def at(pos: Double): Matrix = js.native
   def undo(transform: Transform): this.type = js.native
 }

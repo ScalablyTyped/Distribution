@@ -26,6 +26,19 @@ trait TranscribeService extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateVocabularyResponse, Unit]
   ): Request[CreateVocabularyResponse, AWSError] = js.native
   /**
+    * Creates a new vocabulary filter that you can use to filter words, such as profane words, from the output of a transcription job.
+    */
+  def createVocabularyFilter(): Request[CreateVocabularyFilterResponse, AWSError] = js.native
+  def createVocabularyFilter(callback: js.Function2[/* err */ AWSError, /* data */ CreateVocabularyFilterResponse, Unit]): Request[CreateVocabularyFilterResponse, AWSError] = js.native
+  /**
+    * Creates a new vocabulary filter that you can use to filter words, such as profane words, from the output of a transcription job.
+    */
+  def createVocabularyFilter(params: CreateVocabularyFilterRequest): Request[CreateVocabularyFilterResponse, AWSError] = js.native
+  def createVocabularyFilter(
+    params: CreateVocabularyFilterRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateVocabularyFilterResponse, Unit]
+  ): Request[CreateVocabularyFilterResponse, AWSError] = js.native
+  /**
     * Deletes a previously submitted transcription job along with any other generated results such as the transcription, models, and so on.
     */
   def deleteTranscriptionJob(): Request[js.Object, AWSError] = js.native
@@ -49,6 +62,19 @@ trait TranscribeService extends Service {
   def deleteVocabulary(params: DeleteVocabularyRequest): Request[js.Object, AWSError] = js.native
   def deleteVocabulary(
     params: DeleteVocabularyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  /**
+    * Removes a vocabulary filter.
+    */
+  def deleteVocabularyFilter(): Request[js.Object, AWSError] = js.native
+  def deleteVocabularyFilter(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Removes a vocabulary filter.
+    */
+  def deleteVocabularyFilter(params: DeleteVocabularyFilterRequest): Request[js.Object, AWSError] = js.native
+  def deleteVocabularyFilter(
+    params: DeleteVocabularyFilterRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
@@ -78,6 +104,19 @@ trait TranscribeService extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetVocabularyResponse, Unit]
   ): Request[GetVocabularyResponse, AWSError] = js.native
   /**
+    * Returns information about a vocabulary filter.
+    */
+  def getVocabularyFilter(): Request[GetVocabularyFilterResponse, AWSError] = js.native
+  def getVocabularyFilter(callback: js.Function2[/* err */ AWSError, /* data */ GetVocabularyFilterResponse, Unit]): Request[GetVocabularyFilterResponse, AWSError] = js.native
+  /**
+    * Returns information about a vocabulary filter.
+    */
+  def getVocabularyFilter(params: GetVocabularyFilterRequest): Request[GetVocabularyFilterResponse, AWSError] = js.native
+  def getVocabularyFilter(
+    params: GetVocabularyFilterRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetVocabularyFilterResponse, Unit]
+  ): Request[GetVocabularyFilterResponse, AWSError] = js.native
+  /**
     * Lists transcription jobs with the specified status.
     */
   def listTranscriptionJobs(): Request[ListTranscriptionJobsResponse, AWSError] = js.native
@@ -104,6 +143,19 @@ trait TranscribeService extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListVocabulariesResponse, Unit]
   ): Request[ListVocabulariesResponse, AWSError] = js.native
   /**
+    * Gets information about vocabulary filters.
+    */
+  def listVocabularyFilters(): Request[ListVocabularyFiltersResponse, AWSError] = js.native
+  def listVocabularyFilters(callback: js.Function2[/* err */ AWSError, /* data */ ListVocabularyFiltersResponse, Unit]): Request[ListVocabularyFiltersResponse, AWSError] = js.native
+  /**
+    * Gets information about vocabulary filters.
+    */
+  def listVocabularyFilters(params: ListVocabularyFiltersRequest): Request[ListVocabularyFiltersResponse, AWSError] = js.native
+  def listVocabularyFilters(
+    params: ListVocabularyFiltersRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListVocabularyFiltersResponse, Unit]
+  ): Request[ListVocabularyFiltersResponse, AWSError] = js.native
+  /**
     * Starts an asynchronous job to transcribe speech to text. 
     */
   def startTranscriptionJob(): Request[StartTranscriptionJobResponse, AWSError] = js.native
@@ -129,5 +181,18 @@ trait TranscribeService extends Service {
     params: UpdateVocabularyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateVocabularyResponse, Unit]
   ): Request[UpdateVocabularyResponse, AWSError] = js.native
+  /**
+    * Updates a vocabulary filter with a new list of filtered words.
+    */
+  def updateVocabularyFilter(): Request[UpdateVocabularyFilterResponse, AWSError] = js.native
+  def updateVocabularyFilter(callback: js.Function2[/* err */ AWSError, /* data */ UpdateVocabularyFilterResponse, Unit]): Request[UpdateVocabularyFilterResponse, AWSError] = js.native
+  /**
+    * Updates a vocabulary filter with a new list of filtered words.
+    */
+  def updateVocabularyFilter(params: UpdateVocabularyFilterRequest): Request[UpdateVocabularyFilterResponse, AWSError] = js.native
+  def updateVocabularyFilter(
+    params: UpdateVocabularyFilterRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateVocabularyFilterResponse, Unit]
+  ): Request[UpdateVocabularyFilterResponse, AWSError] = js.native
 }
 

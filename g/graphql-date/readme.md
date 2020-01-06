@@ -11,8 +11,8 @@ GraphQL Date Type
 | Full name          | graphql-date |
 | Keywords           | graphql, date, type, datetype |
 | # releases         | 0 |
-| # dependents       | 24 |
-| # downloads        | 292527 |
+| # dependents       | 27 |
+| # downloads        | 361768 |
 | # stars            | 0 |
 
 ## Links

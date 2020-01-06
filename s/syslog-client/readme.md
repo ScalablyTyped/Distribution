@@ -11,8 +11,8 @@ TCP and UDP syslog client RFC 5424 & RFC 3164
 | Full name          | syslog-client |
 | Keywords           | logger, logging, syslog, syslog-client, syslog-logger, syslog-logging, tcp-syslog, tcp-syslog-client, udp-syslog, udp-syslog-client |
 | # releases         | 0 |
-| # dependents       | 10 |
-| # downloads        | 127032 |
+| # dependents       | 11 |
+| # downloads        | 147030 |
 | # stars            | 3 |
 
 ## Links

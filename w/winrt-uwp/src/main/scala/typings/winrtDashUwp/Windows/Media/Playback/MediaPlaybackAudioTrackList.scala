@@ -45,12 +45,9 @@ abstract class MediaPlaybackAudioTrackList () extends Array[AudioTrack] {
     */
   def getMany(startIndex: Double): Anon_ItemsReturnValueAudioTrack = js.native
   def indexOf(value: AudioTrack, extra: js.Any*): Anon_Index = js.native
-  /**
-    * Retrieves the index of a specified audio track in the list.
-    * @param value The audio track to find in the vector view.
-    */
+  /* hack */
   @JSName("indexOf")
-  def indexOf_Anon_Index(value: AudioTrack): Anon_Index = js.native
+  def indexOf_Double(searchElement: AudioTrack): Double = js.native
   /** Occurs when the index of the currently selected audio track changes. */
   def onselectedindexchanged(ev: js.Any with WinRTEvent[ISingleSelectMediaTrackList]): Unit = js.native
   def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native

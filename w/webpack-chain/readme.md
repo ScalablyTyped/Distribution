@@ -10,9 +10,9 @@ Typings are for version 6.3.0
 | ------------------ | :-------------: |
 | Full name          | webpack-chain |
 | Keywords           | webpack, config, chain, fluent, api |
-| # releases         | 26 |
-| # dependents       | 131 |
-| # downloads        | 6642588 |
+| # releases         | 19 |
+| # dependents       | 232 |
+| # downloads        | 16910263 |
 | # stars            | 2 |
 
 ## Links

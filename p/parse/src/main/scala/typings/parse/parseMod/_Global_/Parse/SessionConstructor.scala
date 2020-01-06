@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SessionConstructor
   extends ObjectStatic
-     with Instantiable1[/* attributes */ Attributes, Session[Attributes]]
-     with Instantiable0[Session[Attributes]] {
+     with Instantiable0[Session[Attributes]]
+     with Instantiable1[/* attributes */ Attributes, Session[Attributes]] {
   def current(): js.Promise[Session[Attributes]] = js.native
 }
 

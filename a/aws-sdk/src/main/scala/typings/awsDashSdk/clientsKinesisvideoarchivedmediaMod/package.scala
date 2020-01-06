@@ -58,6 +58,7 @@ package object clientsKinesisvideoarchivedmediaMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.ALWAYS
     - typings.awsDashSdk.awsDashSdkStrings.NEVER
+    - typings.awsDashSdk.awsDashSdkStrings.ON_DISCONTINUITY
     - java.lang.String
   */
   type HLSDiscontinuityMode = _HLSDiscontinuityMode | java.lang.String
@@ -90,7 +91,7 @@ package object clientsKinesisvideoarchivedmediaMod {
   type Timestamp = Date
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2017-09-30`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | java.lang.String

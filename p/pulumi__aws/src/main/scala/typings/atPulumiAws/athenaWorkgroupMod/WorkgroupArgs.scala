@@ -7,27 +7,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WorkgroupArgs extends js.Object {
   /**
     * Configuration block with various settings for the workgroup. Documented below.
     */
-  val configuration: js.UndefOr[Input[WorkgroupConfiguration]] = js.undefined
+  val configuration: js.UndefOr[Input[WorkgroupConfiguration]] = js.native
   /**
     * Description of the workgroup.
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * Name of the workgroup.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * State of the workgroup. Valid values are `DISABLED` or `ENABLED`. Defaults to `ENABLED`.
     */
-  val state: js.UndefOr[Input[String]] = js.undefined
+  val state: js.UndefOr[Input[String]] = js.native
   /**
     * Key-value mapping of resource tags for the workgroup.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object WorkgroupArgs {

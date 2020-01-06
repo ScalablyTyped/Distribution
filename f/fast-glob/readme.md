@@ -4,15 +4,15 @@
 Typings are for version 2.2.7
 
 ## Library description:
-Is a faster `node-glob` alternative
+It's a very fast and efficient glob library for Node.js
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | fast-glob |
 | Keywords           | glob, patterns, fast, implementation |
-| # releases         | 15 |
-| # dependents       | 344 |
-| # downloads        | 69818590 |
+| # releases         | 22 |
+| # dependents       | 631 |
+| # downloads        | 205581060 |
 | # stars            | 3 |
 
 ## Links

@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VirtualRouterSpecListener extends js.Object {
   /**
     * The port mapping information for the listener.
     */
-  var portMapping: Input[VirtualRouterSpecListenerPortMapping]
+  var portMapping: Input[VirtualRouterSpecListenerPortMapping] = js.native
 }
 
 object VirtualRouterSpecListener {

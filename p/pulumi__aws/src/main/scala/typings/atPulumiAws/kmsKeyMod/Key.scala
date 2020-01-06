@@ -54,9 +54,6 @@ class Key protected () extends CustomResource {
     * Defaults to ENCRYPT_DECRYPT, and only symmetric encryption and decryption are supported.
     */
   val keyUsage: Output[String] = js.native
-  /**
-    * A valid policy JSON document.
-    */
   val policy: Output[String] = js.native
   /**
     * A mapping of tags to assign to the object.

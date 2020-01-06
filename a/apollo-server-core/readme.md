@@ -10,9 +10,9 @@ Core engine for Apollo GraphQL server
 | ------------------ | :-------------: |
 | Full name          | apollo-server-core |
 | Keywords           | GraphQL, Apollo, Server, Javascript |
-| # releases         | 106 |
-| # dependents       | 65 |
-| # downloads        | 10203007 |
+| # releases         | 160 |
+| # dependents       | 108 |
+| # downloads        | 22870431 |
 | # stars            | 3 |
 
 ## Links

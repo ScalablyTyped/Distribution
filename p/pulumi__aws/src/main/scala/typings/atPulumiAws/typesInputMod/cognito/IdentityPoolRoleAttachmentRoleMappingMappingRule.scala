@@ -5,23 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IdentityPoolRoleAttachmentRoleMappingMappingRule extends js.Object {
   /**
     * The claim name that must be present in the token, for example, "isAdmin" or "paid".
     */
-  var claim: Input[String]
+  var claim: Input[String] = js.native
   /**
     * The match condition that specifies how closely the claim value in the IdP token must match Value.
     */
-  var matchType: Input[String]
+  var matchType: Input[String] = js.native
   /**
     * The role ARN.
     */
-  var roleArn: Input[String]
+  var roleArn: Input[String] = js.native
   /**
     * A brief string that the claim must match, for example, "paid" or "yes".
     */
-  var value: Input[String]
+  var value: Input[String] = js.native
 }
 
 object IdentityPoolRoleAttachmentRoleMappingMappingRule {

@@ -10,9 +10,9 @@ Returns `true` if the path appears to be relative.
 | ------------------ | :-------------: |
 | Full name          | is-relative |
 | Keywords           | absolute, check, file, filepath, is, normalize, path, path.relative, relative, resolve, slash, slashes, uri, url |
-| # releases         | 2 |
-| # dependents       | 66 |
-| # downloads        | 113609219 |
+| # releases         | 0 |
+| # dependents       | 78 |
+| # downloads        | 129162711 |
 | # stars            | 1 |
 
 ## Links

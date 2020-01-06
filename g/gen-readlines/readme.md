@@ -12,7 +12,7 @@ Generator based line reader
 | Keywords           | generator, file, line, reader, read, by, es6, ecma2015 |
 | # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 5636 |
+| # downloads        | 4311 |
 | # stars            | 0 |
 
 ## Links

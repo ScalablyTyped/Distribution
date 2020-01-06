@@ -10,9 +10,9 @@ base element for react-icons
 | ------------------ | :-------------: |
 | Full name          | react-icon-base |
 | Keywords           | react, icon, base |
-| # releases         | 8 |
-| # dependents       | 26 |
-| # downloads        | 17003249 |
+| # releases         | 1 |
+| # dependents       | 28 |
+| # downloads        | 13634136 |
 | # stars            | 3 |
 
 ## Links

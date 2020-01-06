@@ -10,9 +10,9 @@ A translation and localization library for Node.js and the browser
 | ------------------ | :-------------: |
 | Full name          | counterpart |
 | Keywords           | globalization, g11n, internationalization, i18n, localization, l10n, translation, translate, localize |
-| # releases         | 9 |
+| # releases         | 3 |
 | # dependents       | 13 |
-| # downloads        | 250960 |
+| # downloads        | 247242 |
 | # stars            | 2 |
 
 ## Links

@@ -10,8 +10,8 @@ Secure XSS Filters - Just sufficient output filtering to prevent XSS!
 | Full name          | xss-filters |
 | Keywords           | xss, output filter, sanitize, sanitise, escape, encode, filter, context-aware, context-sensitive, security, yahoo |
 | # releases         | 1 |
-| # dependents       | 56 |
-| # downloads        | 3224567 |
+| # dependents       | 54 |
+| # downloads        | 3373339 |
 | # stars            | 21 |
 
 ## Links

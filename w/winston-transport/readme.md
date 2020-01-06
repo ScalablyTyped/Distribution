@@ -10,9 +10,9 @@ Base stream implementations for winston@3 and up.
 | ------------------ | :-------------: |
 | Full name          | winston-transport |
 | Keywords           | winston, transport, winston3 |
-| # releases         | 13 |
-| # dependents       | 147 |
-| # downloads        | 17941101 |
+| # releases         | 9 |
+| # dependents       | 223 |
+| # downloads        | 49978453 |
 | # stars            | 0 |
 
 ## Links

@@ -39,11 +39,11 @@ package object clientsAutoscalingplansMod {
   type MetricNamespace = String
   type MetricScale = Double
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Average
-    - typings.awsDashSdk.awsDashSdkStrings.Minimum
-    - typings.awsDashSdk.awsDashSdkStrings.Maximum
+    - typings.awsDashSdk.awsDashSdkStrings.Average_
+    - typings.awsDashSdk.awsDashSdkStrings.Minimum_
+    - typings.awsDashSdk.awsDashSdkStrings.Maximum_
     - typings.awsDashSdk.awsDashSdkStrings.SampleCount
-    - typings.awsDashSdk.awsDashSdkStrings.Sum
+    - typings.awsDashSdk.awsDashSdkStrings.Sum_
     - java.lang.String
   */
   type MetricStatistic = _MetricStatistic | String
@@ -68,14 +68,14 @@ package object clientsAutoscalingplansMod {
   type ResourceIdMaxLen1600 = String
   type ResourceLabel = String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.`autoscaling:autoScalingGroup:DesiredCapacity`
-    - typings.awsDashSdk.awsDashSdkStrings.`ecs:service:DesiredCount`
-    - typings.awsDashSdk.awsDashSdkStrings.`ec2:spot-fleet-request:TargetCapacity`
-    - typings.awsDashSdk.awsDashSdkStrings.`rds:cluster:ReadReplicaCount`
-    - typings.awsDashSdk.awsDashSdkStrings.`dynamodb:table:ReadCapacityUnits`
-    - typings.awsDashSdk.awsDashSdkStrings.`dynamodb:table:WriteCapacityUnits`
-    - typings.awsDashSdk.awsDashSdkStrings.`dynamodb:index:ReadCapacityUnits`
-    - typings.awsDashSdk.awsDashSdkStrings.`dynamodb:index:WriteCapacityUnits`
+    - typings.awsDashSdk.awsDashSdkStrings.autoscalingColonautoScalingGroupColonDesiredCapacity
+    - typings.awsDashSdk.awsDashSdkStrings.ecsColonserviceColonDesiredCount
+    - typings.awsDashSdk.awsDashSdkStrings.`ec2Colonspot-fleet-requestColonTargetCapacity`
+    - typings.awsDashSdk.awsDashSdkStrings.rdsColonclusterColonReadReplicaCount
+    - typings.awsDashSdk.awsDashSdkStrings.dynamodbColontableColonReadCapacityUnits
+    - typings.awsDashSdk.awsDashSdkStrings.dynamodbColontableColonWriteCapacityUnits
+    - typings.awsDashSdk.awsDashSdkStrings.dynamodbColonindexColonReadCapacityUnits
+    - typings.awsDashSdk.awsDashSdkStrings.dynamodbColonindexColonWriteCapacityUnits
     - java.lang.String
   */
   type ScalableDimension = _ScalableDimension | String
@@ -101,7 +101,7 @@ package object clientsAutoscalingplansMod {
   type ScalingPlanNames = js.Array[ScalingPlanName]
   type ScalingPlanResources = js.Array[ScalingPlanResource]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Active
+    - typings.awsDashSdk.awsDashSdkStrings.Active_
     - typings.awsDashSdk.awsDashSdkStrings.ActiveWithProblems
     - typings.awsDashSdk.awsDashSdkStrings.CreationInProgress
     - typings.awsDashSdk.awsDashSdkStrings.CreationFailed
@@ -122,18 +122,18 @@ package object clientsAutoscalingplansMod {
   */
   type ScalingPolicyUpdateBehavior = _ScalingPolicyUpdateBehavior | String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Inactive
+    - typings.awsDashSdk.awsDashSdkStrings.Inactive_
     - typings.awsDashSdk.awsDashSdkStrings.PartiallyActive
-    - typings.awsDashSdk.awsDashSdkStrings.Active
+    - typings.awsDashSdk.awsDashSdkStrings.Active_
     - java.lang.String
   */
   type ScalingStatusCode = _ScalingStatusCode | String
   type ScheduledActionBufferTime = Double
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.autoscaling
-    - typings.awsDashSdk.awsDashSdkStrings.ecs
-    - typings.awsDashSdk.awsDashSdkStrings.ec2
-    - typings.awsDashSdk.awsDashSdkStrings.rds
+    - typings.awsDashSdk.awsDashSdkStrings.ecs_
+    - typings.awsDashSdk.awsDashSdkStrings.ec2_
+    - typings.awsDashSdk.awsDashSdkStrings.rds_
     - typings.awsDashSdk.awsDashSdkStrings.dynamodb
     - java.lang.String
   */
@@ -147,7 +147,7 @@ package object clientsAutoscalingplansMod {
   type XmlStringMaxLen256 = String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2018-01-06`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

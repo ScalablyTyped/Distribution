@@ -11,8 +11,8 @@ Map of HTTP status messages to codes based on Node's built-in (inverse) map
 | Full name          | http-codes |
 | Keywords           | http, status, codes, messages, builtin, map, javascript, nodejs, node |
 | # releases         | 1 |
-| # dependents       | 6 |
-| # downloads        | 80559 |
+| # dependents       | 8 |
+| # downloads        | 89808 |
 | # stars            | 1 |
 
 ## Links

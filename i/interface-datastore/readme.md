@@ -11,8 +11,8 @@ datastore interface
 | Full name          | interface-datastore |
 | Keywords           | interface, key-value, ipfs, datastore |
 | # releases         | 5 |
-| # dependents       | 31 |
-| # downloads        | 219880 |
+| # dependents       | 33 |
+| # downloads        | 241110 |
 | # stars            | 0 |
 
 ## Links

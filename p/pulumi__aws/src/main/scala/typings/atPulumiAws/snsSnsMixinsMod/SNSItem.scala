@@ -5,18 +5,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SNSItem extends js.Object {
-  var Message: String
-  var MessageAttributes: StringDictionary[SNSMessageAttribute]
-  var MessageId: String
-  var Signature: String
-  var SignatureVersion: String
-  var SigningCertUrl: String
-  var Subject: String
-  var Timestamp: String
-  var TopicArn: String
-  var Type: String
-  var UnsubscribeUrl: String
+  var Message: String = js.native
+  var MessageAttributes: StringDictionary[SNSMessageAttribute] = js.native
+  var MessageId: String = js.native
+  var Signature: String = js.native
+  var SignatureVersion: String = js.native
+  var SigningCertUrl: String = js.native
+  var Subject: String = js.native
+  var Timestamp: String = js.native
+  var TopicArn: String = js.native
+  var Type: String = js.native
+  var UnsubscribeUrl: String = js.native
 }
 
 object SNSItem {
@@ -34,7 +35,7 @@ object SNSItem {
     Type: String,
     UnsubscribeUrl: String
   ): SNSItem = {
-    val __obj = js.Dynamic.literal(Message = Message, MessageAttributes = MessageAttributes, MessageId = MessageId, Signature = Signature, SignatureVersion = SignatureVersion, SigningCertUrl = SigningCertUrl, Subject = Subject, Timestamp = Timestamp, TopicArn = TopicArn, Type = Type, UnsubscribeUrl = UnsubscribeUrl)
+    val __obj = js.Dynamic.literal(Message = Message.asInstanceOf[js.Any], MessageAttributes = MessageAttributes.asInstanceOf[js.Any], MessageId = MessageId.asInstanceOf[js.Any], Signature = Signature.asInstanceOf[js.Any], SignatureVersion = SignatureVersion.asInstanceOf[js.Any], SigningCertUrl = SigningCertUrl.asInstanceOf[js.Any], Subject = Subject.asInstanceOf[js.Any], Timestamp = Timestamp.asInstanceOf[js.Any], TopicArn = TopicArn.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], UnsubscribeUrl = UnsubscribeUrl.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SNSItem]
   }

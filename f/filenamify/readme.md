@@ -10,9 +10,9 @@ Convert a string to a valid safe filename
 | ------------------ | :-------------: |
 | Full name          | filenamify |
 | Keywords           | filename, safe, sanitize, file, name, string, path, filepath, convert, valid, dirname |
-| # releases         | 4 |
-| # dependents       | 76 |
-| # downloads        | 47117891 |
+| # releases         | 5 |
+| # dependents       | 109 |
+| # downloads        | 61321314 |
 | # stars            | 1 |
 
 ## Links

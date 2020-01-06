@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClusterEc2Attributes extends js.Object {
-  var additionalMasterSecurityGroups: js.UndefOr[String] = js.undefined
-  var additionalSlaveSecurityGroups: js.UndefOr[String] = js.undefined
-  var emrManagedMasterSecurityGroup: js.UndefOr[String] = js.undefined
-  var emrManagedSlaveSecurityGroup: js.UndefOr[String] = js.undefined
-  var instanceProfile: String
-  var keyName: js.UndefOr[String] = js.undefined
-  var serviceAccessSecurityGroup: js.UndefOr[String] = js.undefined
-  var subnetId: js.UndefOr[String] = js.undefined
+  var additionalMasterSecurityGroups: js.UndefOr[String] = js.native
+  var additionalSlaveSecurityGroups: js.UndefOr[String] = js.native
+  var emrManagedMasterSecurityGroup: js.UndefOr[String] = js.native
+  var emrManagedSlaveSecurityGroup: js.UndefOr[String] = js.native
+  var instanceProfile: String = js.native
+  var keyName: js.UndefOr[String] = js.native
+  var serviceAccessSecurityGroup: js.UndefOr[String] = js.native
+  var subnetId: js.UndefOr[String] = js.native
 }
 
 object ClusterEc2Attributes {
@@ -27,14 +28,14 @@ object ClusterEc2Attributes {
     serviceAccessSecurityGroup: String = null,
     subnetId: String = null
   ): ClusterEc2Attributes = {
-    val __obj = js.Dynamic.literal(instanceProfile = instanceProfile)
-    if (additionalMasterSecurityGroups != null) __obj.updateDynamic("additionalMasterSecurityGroups")(additionalMasterSecurityGroups)
-    if (additionalSlaveSecurityGroups != null) __obj.updateDynamic("additionalSlaveSecurityGroups")(additionalSlaveSecurityGroups)
-    if (emrManagedMasterSecurityGroup != null) __obj.updateDynamic("emrManagedMasterSecurityGroup")(emrManagedMasterSecurityGroup)
-    if (emrManagedSlaveSecurityGroup != null) __obj.updateDynamic("emrManagedSlaveSecurityGroup")(emrManagedSlaveSecurityGroup)
-    if (keyName != null) __obj.updateDynamic("keyName")(keyName)
-    if (serviceAccessSecurityGroup != null) __obj.updateDynamic("serviceAccessSecurityGroup")(serviceAccessSecurityGroup)
-    if (subnetId != null) __obj.updateDynamic("subnetId")(subnetId)
+    val __obj = js.Dynamic.literal(instanceProfile = instanceProfile.asInstanceOf[js.Any])
+    if (additionalMasterSecurityGroups != null) __obj.updateDynamic("additionalMasterSecurityGroups")(additionalMasterSecurityGroups.asInstanceOf[js.Any])
+    if (additionalSlaveSecurityGroups != null) __obj.updateDynamic("additionalSlaveSecurityGroups")(additionalSlaveSecurityGroups.asInstanceOf[js.Any])
+    if (emrManagedMasterSecurityGroup != null) __obj.updateDynamic("emrManagedMasterSecurityGroup")(emrManagedMasterSecurityGroup.asInstanceOf[js.Any])
+    if (emrManagedSlaveSecurityGroup != null) __obj.updateDynamic("emrManagedSlaveSecurityGroup")(emrManagedSlaveSecurityGroup.asInstanceOf[js.Any])
+    if (keyName != null) __obj.updateDynamic("keyName")(keyName.asInstanceOf[js.Any])
+    if (serviceAccessSecurityGroup != null) __obj.updateDynamic("serviceAccessSecurityGroup")(serviceAccessSecurityGroup.asInstanceOf[js.Any])
+    if (subnetId != null) __obj.updateDynamic("subnetId")(subnetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterEc2Attributes]
   }
 }

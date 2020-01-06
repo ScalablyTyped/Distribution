@@ -11,8 +11,8 @@ Image analysis and comparison with HTML5
 | Full name          | resemblejs |
 | Keywords           | comparison, visual, image, diff, compare, html5 |
 | # releases         | 18 |
-| # dependents       | 29 |
-| # downloads        | 641584 |
+| # dependents       | 39 |
+| # downloads        | 604864 |
 | # stars            | 7 |
 
 ## Links

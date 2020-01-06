@@ -10,9 +10,9 @@ Get the current week number.
 | ------------------ | :-------------: |
 | Full name          | week |
 | Keywords           | calendar, date, dates, format, get, js, month, months, util, utility, week, weekday, weeks, year |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 435 |
+| # downloads        | 3825 |
 | # stars            | 1 |
 
 ## Links

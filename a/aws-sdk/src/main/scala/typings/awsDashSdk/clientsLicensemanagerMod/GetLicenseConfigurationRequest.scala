@@ -4,17 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetLicenseConfigurationRequest extends js.Object {
   /**
-    * ARN of the license configuration being requested.
+    * Amazon Resource Name (ARN) of the license configuration.
     */
-  var LicenseConfigurationArn: String
+  var LicenseConfigurationArn: String = js.native
 }
 
 object GetLicenseConfigurationRequest {
   @scala.inline
   def apply(LicenseConfigurationArn: String): GetLicenseConfigurationRequest = {
-    val __obj = js.Dynamic.literal(LicenseConfigurationArn = LicenseConfigurationArn)
+    val __obj = js.Dynamic.literal(LicenseConfigurationArn = LicenseConfigurationArn.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetLicenseConfigurationRequest]
   }

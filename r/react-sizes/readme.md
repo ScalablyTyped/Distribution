@@ -10,9 +10,9 @@ Hoc to easily map window sizes to props.
 | ------------------ | :-------------: |
 | Full name          | react-sizes |
 | Keywords           | react, hoc, media, query, react-sizes, react, hoc, sizes, media, query |
-| # releases         | 20 |
-| # dependents       | 15 |
-| # downloads        | 821820 |
+| # releases         | 14 |
+| # dependents       | 24 |
+| # downloads        | 1071620 |
 | # stars            | 1 |
 
 ## Links

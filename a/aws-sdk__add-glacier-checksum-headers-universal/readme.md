@@ -9,9 +9,9 @@ Typings are for version 0.1.0-preview.2
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/add-glacier-checksum-headers-universal |
 | Keywords           | - |
-| # releases         | 7 |
+| # releases         | 12 |
 | # dependents       | 0 |
-| # downloads        | 240 |
+| # downloads        | 498 |
 | # stars            | 0 |
 
 ## Links

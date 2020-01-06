@@ -4,12 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AudioCodecSettings extends js.Object {
-  var AacSettings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.AacSettings] = js.undefined
-  var Ac3Settings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.Ac3Settings] = js.undefined
-  var Eac3Settings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.Eac3Settings] = js.undefined
-  var Mp2Settings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.Mp2Settings] = js.undefined
-  var PassThroughSettings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.PassThroughSettings] = js.undefined
+  var AacSettings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.AacSettings] = js.native
+  var Ac3Settings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.Ac3Settings] = js.native
+  var Eac3Settings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.Eac3Settings] = js.native
+  var Mp2Settings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.Mp2Settings] = js.native
+  var PassThroughSettings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.PassThroughSettings] = js.native
 }
 
 object AudioCodecSettings {
@@ -22,11 +23,11 @@ object AudioCodecSettings {
     PassThroughSettings: PassThroughSettings = null
   ): AudioCodecSettings = {
     val __obj = js.Dynamic.literal()
-    if (AacSettings != null) __obj.updateDynamic("AacSettings")(AacSettings)
-    if (Ac3Settings != null) __obj.updateDynamic("Ac3Settings")(Ac3Settings)
-    if (Eac3Settings != null) __obj.updateDynamic("Eac3Settings")(Eac3Settings)
-    if (Mp2Settings != null) __obj.updateDynamic("Mp2Settings")(Mp2Settings)
-    if (PassThroughSettings != null) __obj.updateDynamic("PassThroughSettings")(PassThroughSettings)
+    if (AacSettings != null) __obj.updateDynamic("AacSettings")(AacSettings.asInstanceOf[js.Any])
+    if (Ac3Settings != null) __obj.updateDynamic("Ac3Settings")(Ac3Settings.asInstanceOf[js.Any])
+    if (Eac3Settings != null) __obj.updateDynamic("Eac3Settings")(Eac3Settings.asInstanceOf[js.Any])
+    if (Mp2Settings != null) __obj.updateDynamic("Mp2Settings")(Mp2Settings.asInstanceOf[js.Any])
+    if (PassThroughSettings != null) __obj.updateDynamic("PassThroughSettings")(PassThroughSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioCodecSettings]
   }
 }

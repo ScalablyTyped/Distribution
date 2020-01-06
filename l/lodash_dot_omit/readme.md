@@ -11,8 +11,8 @@ The lodash method `_.omit` exported as a module.
 | Full name          | lodash.omit |
 | Keywords           | lodash-modularized, omit |
 | # releases         | 0 |
-| # dependents       | 580 |
-| # downloads        | 21850044 |
+| # dependents       | 669 |
+| # downloads        | 26006873 |
 | # stars            | 0 |
 
 ## Links

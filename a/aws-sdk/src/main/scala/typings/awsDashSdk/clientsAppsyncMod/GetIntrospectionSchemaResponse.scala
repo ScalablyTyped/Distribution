@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetIntrospectionSchemaResponse extends js.Object {
   /**
     * The schema, in GraphQL Schema Definition Language (SDL) format. For more information, see the GraphQL SDL documentation.
     */
-  var schema: js.UndefOr[_Blob] = js.undefined
+  var schema: js.UndefOr[_Blob] = js.native
 }
 
 object GetIntrospectionSchemaResponse {

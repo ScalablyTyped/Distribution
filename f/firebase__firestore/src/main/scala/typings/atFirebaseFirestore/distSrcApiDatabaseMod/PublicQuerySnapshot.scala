@@ -17,7 +17,7 @@ object PublicQuerySnapshot
         /* _originalQuery */ typings.atFirebaseFirestore.distSrcCoreQueryMod.Query, 
         /* _snapshot */ ViewSnapshot, 
         js.UndefOr[
-          FirestoreDataConverter[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any]
+          FirestoreDataConverter[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any]
         ], 
         QuerySnapshot[js.Object]
       ]

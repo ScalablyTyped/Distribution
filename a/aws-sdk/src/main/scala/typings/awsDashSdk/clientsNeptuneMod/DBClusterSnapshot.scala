@@ -4,87 +4,88 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DBClusterSnapshot extends js.Object {
   /**
     * Specifies the allocated storage size in gibibytes (GiB).
     */
-  var AllocatedStorage: js.UndefOr[Integer] = js.undefined
+  var AllocatedStorage: js.UndefOr[Integer] = js.native
   /**
     * Provides the list of EC2 Availability Zones that instances in the DB cluster snapshot can be restored in.
     */
-  var AvailabilityZones: js.UndefOr[typings.awsDashSdk.clientsNeptuneMod.AvailabilityZones] = js.undefined
+  var AvailabilityZones: js.UndefOr[typings.awsDashSdk.clientsNeptuneMod.AvailabilityZones] = js.native
   /**
     * Specifies the time when the DB cluster was created, in Universal Coordinated Time (UTC).
     */
-  var ClusterCreateTime: js.UndefOr[TStamp] = js.undefined
+  var ClusterCreateTime: js.UndefOr[TStamp] = js.native
   /**
     * Specifies the DB cluster identifier of the DB cluster that this DB cluster snapshot was created from.
     */
-  var DBClusterIdentifier: js.UndefOr[String] = js.undefined
+  var DBClusterIdentifier: js.UndefOr[String] = js.native
   /**
     * The Amazon Resource Name (ARN) for the DB cluster snapshot.
     */
-  var DBClusterSnapshotArn: js.UndefOr[String] = js.undefined
+  var DBClusterSnapshotArn: js.UndefOr[String] = js.native
   /**
     * Specifies the identifier for the DB cluster snapshot.
     */
-  var DBClusterSnapshotIdentifier: js.UndefOr[String] = js.undefined
+  var DBClusterSnapshotIdentifier: js.UndefOr[String] = js.native
   /**
     * Specifies the name of the database engine.
     */
-  var Engine: js.UndefOr[String] = js.undefined
+  var Engine: js.UndefOr[String] = js.native
   /**
     * Provides the version of the database engine for this DB cluster snapshot.
     */
-  var EngineVersion: js.UndefOr[String] = js.undefined
+  var EngineVersion: js.UndefOr[String] = js.native
   /**
     * True if mapping of AWS Identity and Access Management (IAM) accounts to database accounts is enabled, and otherwise false.
     */
-  var IAMDatabaseAuthenticationEnabled: js.UndefOr[Boolean] = js.undefined
+  var IAMDatabaseAuthenticationEnabled: js.UndefOr[Boolean] = js.native
   /**
     * If StorageEncrypted is true, the AWS KMS key identifier for the encrypted DB cluster snapshot.
     */
-  var KmsKeyId: js.UndefOr[String] = js.undefined
+  var KmsKeyId: js.UndefOr[String] = js.native
   /**
     * Provides the license model information for this DB cluster snapshot.
     */
-  var LicenseModel: js.UndefOr[String] = js.undefined
+  var LicenseModel: js.UndefOr[String] = js.native
   /**
     * Provides the master username for the DB cluster snapshot.
     */
-  var MasterUsername: js.UndefOr[String] = js.undefined
+  var MasterUsername: js.UndefOr[String] = js.native
   /**
     * Specifies the percentage of the estimated data that has been transferred.
     */
-  var PercentProgress: js.UndefOr[Integer] = js.undefined
+  var PercentProgress: js.UndefOr[Integer] = js.native
   /**
     * Specifies the port that the DB cluster was listening on at the time of the snapshot.
     */
-  var Port: js.UndefOr[Integer] = js.undefined
+  var Port: js.UndefOr[Integer] = js.native
   /**
     * Provides the time when the snapshot was taken, in Universal Coordinated Time (UTC).
     */
-  var SnapshotCreateTime: js.UndefOr[TStamp] = js.undefined
+  var SnapshotCreateTime: js.UndefOr[TStamp] = js.native
   /**
     * Provides the type of the DB cluster snapshot.
     */
-  var SnapshotType: js.UndefOr[String] = js.undefined
+  var SnapshotType: js.UndefOr[String] = js.native
   /**
     * If the DB cluster snapshot was copied from a source DB cluster snapshot, the Amazon Resource Name (ARN) for the source DB cluster snapshot, otherwise, a null value.
     */
-  var SourceDBClusterSnapshotArn: js.UndefOr[String] = js.undefined
+  var SourceDBClusterSnapshotArn: js.UndefOr[String] = js.native
   /**
     * Specifies the status of this DB cluster snapshot.
     */
-  var Status: js.UndefOr[String] = js.undefined
+  var Status: js.UndefOr[String] = js.native
   /**
     * Specifies whether the DB cluster snapshot is encrypted.
     */
-  var StorageEncrypted: js.UndefOr[Boolean] = js.undefined
+  var StorageEncrypted: js.UndefOr[Boolean] = js.native
   /**
     * Provides the VPC ID associated with the DB cluster snapshot.
     */
-  var VpcId: js.UndefOr[String] = js.undefined
+  var VpcId: js.UndefOr[String] = js.native
 }
 
 object DBClusterSnapshot {
@@ -113,25 +114,25 @@ object DBClusterSnapshot {
   ): DBClusterSnapshot = {
     val __obj = js.Dynamic.literal()
     if (AllocatedStorage != null) __obj.updateDynamic("AllocatedStorage")(AllocatedStorage.asInstanceOf[js.Any])
-    if (AvailabilityZones != null) __obj.updateDynamic("AvailabilityZones")(AvailabilityZones)
-    if (ClusterCreateTime != null) __obj.updateDynamic("ClusterCreateTime")(ClusterCreateTime)
-    if (DBClusterIdentifier != null) __obj.updateDynamic("DBClusterIdentifier")(DBClusterIdentifier)
-    if (DBClusterSnapshotArn != null) __obj.updateDynamic("DBClusterSnapshotArn")(DBClusterSnapshotArn)
-    if (DBClusterSnapshotIdentifier != null) __obj.updateDynamic("DBClusterSnapshotIdentifier")(DBClusterSnapshotIdentifier)
-    if (Engine != null) __obj.updateDynamic("Engine")(Engine)
-    if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion)
-    if (!js.isUndefined(IAMDatabaseAuthenticationEnabled)) __obj.updateDynamic("IAMDatabaseAuthenticationEnabled")(IAMDatabaseAuthenticationEnabled)
-    if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId)
-    if (LicenseModel != null) __obj.updateDynamic("LicenseModel")(LicenseModel)
-    if (MasterUsername != null) __obj.updateDynamic("MasterUsername")(MasterUsername)
+    if (AvailabilityZones != null) __obj.updateDynamic("AvailabilityZones")(AvailabilityZones.asInstanceOf[js.Any])
+    if (ClusterCreateTime != null) __obj.updateDynamic("ClusterCreateTime")(ClusterCreateTime.asInstanceOf[js.Any])
+    if (DBClusterIdentifier != null) __obj.updateDynamic("DBClusterIdentifier")(DBClusterIdentifier.asInstanceOf[js.Any])
+    if (DBClusterSnapshotArn != null) __obj.updateDynamic("DBClusterSnapshotArn")(DBClusterSnapshotArn.asInstanceOf[js.Any])
+    if (DBClusterSnapshotIdentifier != null) __obj.updateDynamic("DBClusterSnapshotIdentifier")(DBClusterSnapshotIdentifier.asInstanceOf[js.Any])
+    if (Engine != null) __obj.updateDynamic("Engine")(Engine.asInstanceOf[js.Any])
+    if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(IAMDatabaseAuthenticationEnabled)) __obj.updateDynamic("IAMDatabaseAuthenticationEnabled")(IAMDatabaseAuthenticationEnabled.asInstanceOf[js.Any])
+    if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
+    if (LicenseModel != null) __obj.updateDynamic("LicenseModel")(LicenseModel.asInstanceOf[js.Any])
+    if (MasterUsername != null) __obj.updateDynamic("MasterUsername")(MasterUsername.asInstanceOf[js.Any])
     if (PercentProgress != null) __obj.updateDynamic("PercentProgress")(PercentProgress.asInstanceOf[js.Any])
     if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
-    if (SnapshotCreateTime != null) __obj.updateDynamic("SnapshotCreateTime")(SnapshotCreateTime)
-    if (SnapshotType != null) __obj.updateDynamic("SnapshotType")(SnapshotType)
-    if (SourceDBClusterSnapshotArn != null) __obj.updateDynamic("SourceDBClusterSnapshotArn")(SourceDBClusterSnapshotArn)
-    if (Status != null) __obj.updateDynamic("Status")(Status)
-    if (!js.isUndefined(StorageEncrypted)) __obj.updateDynamic("StorageEncrypted")(StorageEncrypted)
-    if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId)
+    if (SnapshotCreateTime != null) __obj.updateDynamic("SnapshotCreateTime")(SnapshotCreateTime.asInstanceOf[js.Any])
+    if (SnapshotType != null) __obj.updateDynamic("SnapshotType")(SnapshotType.asInstanceOf[js.Any])
+    if (SourceDBClusterSnapshotArn != null) __obj.updateDynamic("SourceDBClusterSnapshotArn")(SourceDBClusterSnapshotArn.asInstanceOf[js.Any])
+    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
+    if (!js.isUndefined(StorageEncrypted)) __obj.updateDynamic("StorageEncrypted")(StorageEncrypted.asInstanceOf[js.Any])
+    if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DBClusterSnapshot]
   }
 }

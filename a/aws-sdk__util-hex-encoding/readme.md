@@ -10,9 +10,9 @@ Converts binary buffers to and from lowercase hexadecimal encoding
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/util-hex-encoding |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 5 |
 | # dependents       | 5 |
-| # downloads        | 14537 |
+| # downloads        | 913524 |
 | # stars            | 0 |
 
 ## Links

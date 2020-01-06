@@ -10,9 +10,9 @@ Production ready GraphQL Server
 | ------------------ | :-------------: |
 | Full name          | apollo-server |
 | Keywords           | GraphQL, Apollo, Server, Javascript |
-| # releases         | 88 |
-| # dependents       | 107 |
-| # downloads        | 1533052 |
+| # releases         | 158 |
+| # dependents       | 195 |
+| # downloads        | 4924273 |
 | # stars            | 4 |
 
 ## Links

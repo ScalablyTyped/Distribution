@@ -11,8 +11,8 @@ Wraps FS methods using Promise
 | Full name          | promise-fs |
 | Keywords           | promise, promisify, fs |
 | # releases         | 5 |
-| # dependents       | 23 |
-| # downloads        | 897218 |
+| # dependents       | 24 |
+| # downloads        | 950237 |
 | # stars            | 0 |
 
 ## Links

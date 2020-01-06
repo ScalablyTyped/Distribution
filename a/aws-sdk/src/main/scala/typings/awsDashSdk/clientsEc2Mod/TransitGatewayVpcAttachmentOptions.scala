@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TransitGatewayVpcAttachmentOptions extends js.Object {
   /**
     * Indicates whether DNS support is enabled.
     */
-  var DnsSupport: js.UndefOr[DnsSupportValue] = js.undefined
+  var DnsSupport: js.UndefOr[DnsSupportValue] = js.native
   /**
     * Indicates whether IPv6 support is enabled.
     */
-  var Ipv6Support: js.UndefOr[Ipv6SupportValue] = js.undefined
+  var Ipv6Support: js.UndefOr[Ipv6SupportValue] = js.native
 }
 
 object TransitGatewayVpcAttachmentOptions {

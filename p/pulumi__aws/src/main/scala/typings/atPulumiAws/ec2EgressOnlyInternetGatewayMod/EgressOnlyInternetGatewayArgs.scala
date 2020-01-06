@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EgressOnlyInternetGatewayArgs extends js.Object {
   /**
     * The VPC ID to create in.
     */
-  val vpcId: Input[String]
+  val vpcId: Input[String] = js.native
 }
 
 object EgressOnlyInternetGatewayArgs {

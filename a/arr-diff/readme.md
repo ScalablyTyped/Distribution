@@ -10,9 +10,9 @@ Returns an array with only the unique values from the first array, by excluding 
 | ------------------ | :-------------: |
 | Full name          | arr-diff |
 | Keywords           | arr, array, array differ, array-differ, diff, differ, difference |
-| # releases         | 2 |
-| # dependents       | 66 |
-| # downloads        | 531139960 |
+| # releases         | 0 |
+| # dependents       | 90 |
+| # downloads        | 681118933 |
 | # stars            | 3 |
 
 ## Links

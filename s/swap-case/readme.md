@@ -4,21 +4,21 @@
 Typings are for version 1.1.2
 
 ## Library description:
-Swap the case of a string
+Transform a string by swapping every character from upper to lower case, or lower to upper case
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | swap-case |
-| Keywords           | swap, case, reverse, switch |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 21917042 |
+| Keywords           | swap, case, invert, convert, transform, lower, upper |
+| # releases         | 3 |
+| # dependents       | 1 |
+| # downloads        | 40904007 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/blakeembrey/swap-case)
-- [Bugs](https://github.com/blakeembrey/swap-case/issues)
-- [Repository](https://github.com/blakeembrey/swap-case)
+- [Homepage](https://github.com/blakeembrey/change-case/tree/master/packages/swap-case#readme)
+- [Bugs](https://github.com/blakeembrey/change-case/issues)
+- [Repository](https://github.com/blakeembrey/change-case)
 - [Npm](https://www.npmjs.com/package/swap-case)
     
 

@@ -62,7 +62,7 @@ class Broker protected () extends CustomResource {
     */
   val engineType: Output[String] = js.native
   /**
-    * The version of the broker engine. Currently, See the [AmazonMQ Broker Engine docs](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/broker-engine.html) for supported versions.
+    * The version of the broker engine. See the [AmazonMQ Broker Engine docs](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/broker-engine.html) for supported versions.
     */
   val engineVersion: Output[String] = js.native
   /**

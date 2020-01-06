@@ -10,9 +10,9 @@ Task registry that allows composition through series/parallel methods.
 | ------------------ | :-------------: |
 | Full name          | undertaker |
 | Keywords           | registry, runner, task |
-| # releases         | 1 |
-| # dependents       | 30 |
-| # downloads        | 10631589 |
+| # releases         | 2 |
+| # dependents       | 32 |
+| # downloads        | 28272073 |
 | # stars            | 4 |
 
 ## Links

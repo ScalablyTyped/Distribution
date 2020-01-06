@@ -10,9 +10,9 @@ Triggers 'mouseexit' event when mouse focus has completely left the element. Thi
 | ------------------ | :-------------: |
 | Full name          | jquery-mouse-exit |
 | Keywords           | jquery-plugin, ecosystem:jquery, ebayui, accessibility, a11y |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 8796 |
+| # downloads        | 7732 |
 | # stars            | 0 |
 
 ## Links

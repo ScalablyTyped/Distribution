@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CreateInputRequest extends js.Object {
   /**
     * The definition of the input.
     */
-  var inputDefinition: InputDefinition
+  var inputDefinition: InputDefinition = js.native
   /**
     * A brief description of the input.
     */
-  var inputDescription: js.UndefOr[InputDescription] = js.undefined
+  var inputDescription: js.UndefOr[InputDescription] = js.native
   /**
     * The name you want to give to the input.
     */
-  var inputName: InputName
+  var inputName: InputName = js.native
   /**
     * Metadata that can be used to manage the input.
     */
-  var tags: js.UndefOr[Tags] = js.undefined
+  var tags: js.UndefOr[Tags] = js.native
 }
 
 object CreateInputRequest {
@@ -31,9 +32,9 @@ object CreateInputRequest {
     inputDescription: InputDescription = null,
     tags: Tags = null
   ): CreateInputRequest = {
-    val __obj = js.Dynamic.literal(inputDefinition = inputDefinition, inputName = inputName)
-    if (inputDescription != null) __obj.updateDynamic("inputDescription")(inputDescription)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
+    val __obj = js.Dynamic.literal(inputDefinition = inputDefinition.asInstanceOf[js.Any], inputName = inputName.asInstanceOf[js.Any])
+    if (inputDescription != null) __obj.updateDynamic("inputDescription")(inputDescription.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateInputRequest]
   }
 }

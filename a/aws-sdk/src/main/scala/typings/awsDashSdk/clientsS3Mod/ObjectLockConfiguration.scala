@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ObjectLockConfiguration extends js.Object {
   /**
-    * Indicates whether this bucket has an object lock configuration enabled.
+    * Indicates whether this bucket has an Object Lock configuration enabled.
     */
-  var ObjectLockEnabled: js.UndefOr[typings.awsDashSdk.clientsS3Mod.ObjectLockEnabled] = js.undefined
+  var ObjectLockEnabled: js.UndefOr[typings.awsDashSdk.clientsS3Mod.ObjectLockEnabled] = js.native
   /**
-    * The object lock rule in place for the specified object.
+    * The Object Lock rule in place for the specified object.
     */
-  var Rule: js.UndefOr[ObjectLockRule] = js.undefined
+  var Rule: js.UndefOr[ObjectLockRule] = js.native
 }
 
 object ObjectLockConfiguration {
@@ -20,7 +21,7 @@ object ObjectLockConfiguration {
   def apply(ObjectLockEnabled: ObjectLockEnabled = null, Rule: ObjectLockRule = null): ObjectLockConfiguration = {
     val __obj = js.Dynamic.literal()
     if (ObjectLockEnabled != null) __obj.updateDynamic("ObjectLockEnabled")(ObjectLockEnabled.asInstanceOf[js.Any])
-    if (Rule != null) __obj.updateDynamic("Rule")(Rule)
+    if (Rule != null) __obj.updateDynamic("Rule")(Rule.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectLockConfiguration]
   }
 }

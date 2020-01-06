@@ -36,8 +36,8 @@ trait LodashTransform extends js.Object {
     accumulator: Dictionary[TResult],
     `object`: Dictionary[T]
   ): Dictionary[TResult] = js.native
-  def apply[T, TResult](iteratee: MemoVoidIteratorCapped[T, Dictionary[TResult]], accumulator: __, `object`: js.Array[T]): LodashTransform2x5[TResult] = js.native
-  def apply[T, TResult](iteratee: MemoVoidIteratorCapped[T, js.Array[TResult]], accumulator: __, `object`: Dictionary[T]): LodashTransform4x5[TResult] = js.native
+  def apply[T, TResult](iteratee: MemoVoidIteratorCapped[T, js.Array[TResult]], accumulator: __, `object`: js.Array[T]): LodashTransform1x5[TResult] = js.native
+  def apply[T, TResult](iteratee: MemoVoidIteratorCapped[T, Dictionary[TResult]], accumulator: __, `object`: Dictionary[T]): LodashTransform3x5[TResult] = js.native
   def apply[T, TResult](iteratee: __, accumulator: js.Array[TResult], `object`: js.Array[T]): LodashTransform1x6[T, TResult] = js.native
   def apply[T, TResult](iteratee: __, accumulator: js.Array[TResult], `object`: Dictionary[T]): LodashTransform4x6[T, TResult] = js.native
   def apply[T, TResult](iteratee: __, accumulator: Dictionary[TResult], `object`: js.Array[T]): LodashTransform2x6[T, TResult] = js.native

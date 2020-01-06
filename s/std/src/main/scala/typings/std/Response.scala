@@ -22,8 +22,8 @@ trait Response extends Body {
 @JSGlobal("Response")
 @js.native
 object Response
-  extends Instantiable1[/* body */ BodyInit, Response]
-     with Instantiable0[Response]
+  extends Instantiable0[Response]
+     with Instantiable1[/* body */ BodyInit, Response]
      with Instantiable2[(/* body */ BodyInit) | (/* body */ Null), /* init */ ResponseInit, Response] {
   def error(): Response = js.native
   def redirect(url: java.lang.String): Response = js.native

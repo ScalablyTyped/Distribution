@@ -11,8 +11,8 @@ A small polyfill for Object.setprototypeof
 | Full name          | setprototypeof |
 | Keywords           | polyfill, object, setprototypeof |
 | # releases         | 3 |
-| # dependents       | 125 |
-| # downloads        | 477268258 |
+| # dependents       | 145 |
+| # downloads        | 680161093 |
 | # stars            | 2 |
 
 ## Links

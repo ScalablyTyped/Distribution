@@ -10,9 +10,9 @@ An extension to Leaflet that contains configurations for various free tile provi
 | ------------------ | :-------------: |
 | Full name          | leaflet-providers |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 6 |
-| # downloads        | 90512 |
+| # releases         | 11 |
+| # dependents       | 8 |
+| # downloads        | 145785 |
 | # stars            | 3 |
 
 ## Links

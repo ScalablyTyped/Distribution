@@ -12,7 +12,7 @@ Drag-and-drop sortable grid view for React Native.
 | Keywords           | drag-drop, sortable, grid |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 15044 |
+| # downloads        | 16590 |
 | # stars            | 0 |
 
 ## Links

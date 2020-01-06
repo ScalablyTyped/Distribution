@@ -10,9 +10,9 @@ Any node logging that is done through storybook should be done through this pack
 | ------------------ | :-------------: |
 | Full name          | @storybook/node-logger |
 | Keywords           | storybook |
-| # releases         | 314 |
-| # dependents       | 18 |
-| # downloads        | 34113614 |
+| # releases         | 429 |
+| # dependents       | 23 |
+| # downloads        | 41825248 |
 | # stars            | 0 |
 
 ## Links

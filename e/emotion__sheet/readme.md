@@ -10,9 +10,9 @@ emotion's stylesheet
 | ------------------ | :-------------: |
 | Full name          | @emotion/sheet |
 | Keywords           | - |
-| # releases         | 22 |
-| # dependents       | 7 |
-| # downloads        | 18256568 |
+| # releases         | 24 |
+| # dependents       | 8 |
+| # downloads        | 50924514 |
 | # stars            | 0 |
 
 ## Links

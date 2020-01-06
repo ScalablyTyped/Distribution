@@ -4,21 +4,21 @@
 Typings are for version 3.0.0
 
 ## Library description:
-Camel case a string
+Transform into a string with the separator denoted by the next word capitalized
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | camel-case |
-| Keywords           | camel, case, camelcase, camel-case, dash, hyphen, dot, underscore, lodash, separator, string, text, convert |
-| # releases         | 1 |
-| # dependents       | 278 |
-| # downloads        | 145143415 |
+| Keywords           | camel, case, camelcase, camel-case, convert, transform, identifier |
+| # releases         | 3 |
+| # dependents       | 310 |
+| # downloads        | 210157465 |
 | # stars            | 6 |
 
 ## Links
-- [Homepage](https://github.com/blakeembrey/camel-case)
-- [Bugs](https://github.com/blakeembrey/camel-case/issues)
-- [Repository](https://github.com/blakeembrey/camel-case)
+- [Homepage](https://github.com/blakeembrey/change-case/tree/master/packages/camel-case#readme)
+- [Bugs](https://github.com/blakeembrey/change-case/issues)
+- [Repository](https://github.com/blakeembrey/change-case)
 - [Npm](https://www.npmjs.com/package/camel-case)
     
 

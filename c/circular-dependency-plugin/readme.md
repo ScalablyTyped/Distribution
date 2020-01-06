@@ -10,9 +10,9 @@ Detect modules with circular dependencies when bundling with webpack.
 | ------------------ | :-------------: |
 | Full name          | circular-dependency-plugin |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 95 |
-| # downloads        | 30541122 |
+| # releases         | 7 |
+| # dependents       | 126 |
+| # downloads        | 46210890 |
 | # stars            | 2 |
 
 ## Links

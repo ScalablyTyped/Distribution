@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MemberAccountAssociationArgs extends js.Object {
   /**
     * The ID of the AWS account that you want to associate with Amazon Macie as a member account.
     */
-  val memberAccountId: Input[String]
+  val memberAccountId: Input[String] = js.native
 }
 
 object MemberAccountAssociationArgs {

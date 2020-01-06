@@ -11,8 +11,8 @@ The lodash method `_.reduceRight` exported as a module.
 | Full name          | lodash.reduceright |
 | Keywords           | lodash-modularized, reduceright |
 | # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 64234 |
+| # dependents       | 4 |
+| # downloads        | 74035 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ Cloud Storage Client Library for Node.js
 | ------------------ | :-------------: |
 | Full name          | @google-cloud/storage |
 | Keywords           | google apis client, google api client, google apis, google api, google, google cloud platform, google cloud, cloud, google storage, storage |
-| # releases         | 26 |
-| # dependents       | 246 |
-| # downloads        | 48593606 |
+| # releases         | 36 |
+| # dependents       | 348 |
+| # downloads        | 49413083 |
 | # stars            | 6 |
 
 ## Links

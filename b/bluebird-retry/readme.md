@@ -10,9 +10,9 @@ utility for retrying a bluebird promise until it succeeds
 | ------------------ | :-------------: |
 | Full name          | bluebird-retry |
 | Keywords           | bluebird, promise, retry |
-| # releases         | 2 |
-| # dependents       | 77 |
-| # downloads        | 2137844 |
+| # releases         | 0 |
+| # dependents       | 82 |
+| # downloads        | 4178102 |
 | # stars            | 9 |
 
 ## Links

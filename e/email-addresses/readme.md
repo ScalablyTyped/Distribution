@@ -10,9 +10,9 @@ An email address parser based on rfc5322
 | ------------------ | :-------------: |
 | Full name          | email-addresses |
 | Keywords           | email address, parser, rfc5322, 5322 |
-| # releases         | 6 |
-| # dependents       | 58 |
-| # downloads        | 2017778 |
+| # releases         | 5 |
+| # dependents       | 66 |
+| # downloads        | 4374411 |
 | # stars            | 6 |
 
 ## Links

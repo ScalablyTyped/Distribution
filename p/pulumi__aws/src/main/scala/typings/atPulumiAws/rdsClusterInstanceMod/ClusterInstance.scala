@@ -125,7 +125,7 @@ class ClusterInstance protected () extends CustomResource {
     */
   val preferredMaintenanceWindow: Output[String] = js.native
   /**
-    * Default 0. Failover Priority setting on instance level. The reader who has lower tier has higher priority to get promoter to writer.
+    * Default 0. Failover Priority setting on instance level. The reader who has lower tier has higher priority to get promoted to writer.
     */
   val promotionTier: Output[js.UndefOr[Double]] = js.native
   /**

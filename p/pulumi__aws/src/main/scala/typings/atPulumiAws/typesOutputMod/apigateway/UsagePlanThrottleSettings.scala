@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UsagePlanThrottleSettings extends js.Object {
   /**
     * The API request burst limit, the maximum rate limit over a time ranging from one to a few seconds, depending upon whether the underlying token bucket is at its full capacity.
     */
-  var burstLimit: js.UndefOr[Double] = js.undefined
+  var burstLimit: js.UndefOr[Double] = js.native
   /**
     * The API request steady-state rate limit.
     */
-  var rateLimit: js.UndefOr[Double] = js.undefined
+  var rateLimit: js.UndefOr[Double] = js.native
 }
 
 object UsagePlanThrottleSettings {

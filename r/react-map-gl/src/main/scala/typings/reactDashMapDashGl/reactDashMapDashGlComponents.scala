@@ -24,6 +24,8 @@ object reactDashMapDashGlComponents extends reactDashMapDashGlProps {
   @scala.inline
   def InteractiveMap: ComponentType[InteractiveMapProps] = js.constructorOf[typings.reactDashMapDashGl.reactDashMapDashGlMod.InteractiveMap].asInstanceOf[typings.react.reactMod.ComponentType[InteractiveMapProps]]
   @scala.inline
+  def Layer: ComponentType[LayerProps] = js.constructorOf[typings.reactDashMapDashGl.reactDashMapDashGlMod.Layer].asInstanceOf[typings.react.reactMod.ComponentType[LayerProps]]
+  @scala.inline
   def Marker: ComponentType[MarkerProps] = js.constructorOf[typings.reactDashMapDashGl.reactDashMapDashGlMod.Marker].asInstanceOf[typings.react.reactMod.ComponentType[MarkerProps]]
   @scala.inline
   def NavigationControl: ComponentType[NavigationControlProps] = js.constructorOf[typings.reactDashMapDashGl.reactDashMapDashGlMod.NavigationControl].asInstanceOf[typings.react.reactMod.ComponentType[NavigationControlProps]]
@@ -33,6 +35,8 @@ object reactDashMapDashGlComponents extends reactDashMapDashGlProps {
   def ReactDashMapDashGl: ComponentType[ReactDashMapDashGlProps] = js.constructorOf[typings.reactDashMapDashGl.reactDashMapDashGlMod.default].asInstanceOf[typings.react.reactMod.ComponentType[ReactDashMapDashGlProps]]
   @scala.inline
   def SVGOverlay: ComponentType[SVGOverlayProps] = js.constructorOf[typings.reactDashMapDashGl.reactDashMapDashGlMod.SVGOverlay].asInstanceOf[typings.react.reactMod.ComponentType[SVGOverlayProps]]
+  @scala.inline
+  def Source: ComponentType[SourceProps] = js.constructorOf[typings.reactDashMapDashGl.reactDashMapDashGlMod.Source].asInstanceOf[typings.react.reactMod.ComponentType[SourceProps]]
   @scala.inline
   def StaticMap: ComponentType[StaticMapProps] = js.constructorOf[typings.reactDashMapDashGl.reactDashMapDashGlMod.StaticMap].asInstanceOf[typings.react.reactMod.ComponentType[StaticMapProps]]
 }

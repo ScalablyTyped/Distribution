@@ -10,9 +10,9 @@ Visualize relationships or network flow with an aesthetically-pleasing circular 
 | ------------------ | :-------------: |
 | Full name          | d3-chord |
 | Keywords           | d3, d3-module, chord, radial, network, flow |
-| # releases         | 3 |
-| # dependents       | 22 |
-| # downloads        | 11878824 |
+| # releases         | 12 |
+| # dependents       | 25 |
+| # downloads        | 20373012 |
 | # stars            | 0 |
 
 ## Links

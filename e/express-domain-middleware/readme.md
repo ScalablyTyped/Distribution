@@ -10,8 +10,8 @@ wrap express request/response with node domains
 | Full name          | express-domain-middleware |
 | Keywords           | domain, express, middleware |
 | # releases         | 1 |
-| # dependents       | 17 |
-| # downloads        | 288046 |
+| # dependents       | 19 |
+| # downloads        | 293951 |
 | # stars            | 11 |
 
 ## Links

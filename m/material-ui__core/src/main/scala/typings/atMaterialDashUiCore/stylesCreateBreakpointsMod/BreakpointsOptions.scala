@@ -5,16 +5,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<{  unit  :string,   step  :number} & @material-ui/core.@material-ui/core/styles/createBreakpoints.Breakpoints> */
+@js.native
 trait BreakpointsOptions extends js.Object {
-  var between: js.UndefOr[js.Function2[/* start */ Breakpoint, /* end */ Breakpoint, String]] = js.undefined
-  var down: js.UndefOr[js.Function1[/* key */ Breakpoint | Double, String]] = js.undefined
-  var keys: js.UndefOr[js.Array[Breakpoint]] = js.undefined
-  var only: js.UndefOr[js.Function1[/* key */ Breakpoint, String]] = js.undefined
-  var step: js.UndefOr[Double] = js.undefined
-  var unit: js.UndefOr[String] = js.undefined
-  var up: js.UndefOr[js.Function1[/* key */ Breakpoint | Double, String]] = js.undefined
-  var values: js.UndefOr[BreakpointValues] = js.undefined
-  var width: js.UndefOr[js.Function1[/* key */ Breakpoint, Double]] = js.undefined
+  var between: js.UndefOr[js.Function2[/* start */ Breakpoint, /* end */ Breakpoint, String]] = js.native
+  var down: js.UndefOr[js.Function1[/* key */ Breakpoint | Double, String]] = js.native
+  var keys: js.UndefOr[js.Array[Breakpoint]] = js.native
+  var only: js.UndefOr[js.Function1[/* key */ Breakpoint, String]] = js.native
+  var step: js.UndefOr[Double] = js.native
+  var unit: js.UndefOr[String] = js.native
+  var up: js.UndefOr[js.Function1[/* key */ Breakpoint | Double, String]] = js.native
+  var values: js.UndefOr[BreakpointValues] = js.native
+  var width: js.UndefOr[js.Function1[/* key */ Breakpoint, Double]] = js.native
 }
 
 object BreakpointsOptions {

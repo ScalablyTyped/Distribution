@@ -10,9 +10,9 @@ vector tile mapreduce
 | ------------------ | :-------------: |
 | Full name          | tile-reduce |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 7 |
-| # downloads        | 3885 |
+| # releases         | 0 |
+| # dependents       | 6 |
+| # downloads        | 1420 |
 | # stars            | 0 |
 
 ## Links

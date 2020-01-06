@@ -4,27 +4,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VPCEConfiguration extends js.Object {
   /**
     * The Amazon Resource Name (ARN) of the VPC endpoint configuration.
     */
-  var arn: js.UndefOr[AmazonResourceName] = js.undefined
+  var arn: js.UndefOr[AmazonResourceName] = js.native
   /**
     * The DNS name that maps to the private IP address of the service you want to access.
     */
-  var serviceDnsName: js.UndefOr[ServiceDnsName] = js.undefined
+  var serviceDnsName: js.UndefOr[ServiceDnsName] = js.native
   /**
-    * An optional description, providing more details about your VPC endpoint configuration.
+    * An optional description that provides details about your VPC endpoint configuration.
     */
-  var vpceConfigurationDescription: js.UndefOr[VPCEConfigurationDescription] = js.undefined
+  var vpceConfigurationDescription: js.UndefOr[VPCEConfigurationDescription] = js.native
   /**
-    * The friendly name you give to your VPC endpoint configuration, to manage your configurations more easily.
+    * The friendly name you give to your VPC endpoint configuration to manage your configurations more easily.
     */
-  var vpceConfigurationName: js.UndefOr[VPCEConfigurationName] = js.undefined
+  var vpceConfigurationName: js.UndefOr[VPCEConfigurationName] = js.native
   /**
-    * The name of the VPC endpoint service running inside your AWS account that you want Device Farm to test.
+    * The name of the VPC endpoint service running in your AWS account that you want Device Farm to test.
     */
-  var vpceServiceName: js.UndefOr[VPCEServiceName] = js.undefined
+  var vpceServiceName: js.UndefOr[VPCEServiceName] = js.native
 }
 
 object VPCEConfiguration {
@@ -37,11 +38,11 @@ object VPCEConfiguration {
     vpceServiceName: VPCEServiceName = null
   ): VPCEConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn)
-    if (serviceDnsName != null) __obj.updateDynamic("serviceDnsName")(serviceDnsName)
-    if (vpceConfigurationDescription != null) __obj.updateDynamic("vpceConfigurationDescription")(vpceConfigurationDescription)
-    if (vpceConfigurationName != null) __obj.updateDynamic("vpceConfigurationName")(vpceConfigurationName)
-    if (vpceServiceName != null) __obj.updateDynamic("vpceServiceName")(vpceServiceName)
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (serviceDnsName != null) __obj.updateDynamic("serviceDnsName")(serviceDnsName.asInstanceOf[js.Any])
+    if (vpceConfigurationDescription != null) __obj.updateDynamic("vpceConfigurationDescription")(vpceConfigurationDescription.asInstanceOf[js.Any])
+    if (vpceConfigurationName != null) __obj.updateDynamic("vpceConfigurationName")(vpceConfigurationName.asInstanceOf[js.Any])
+    if (vpceServiceName != null) __obj.updateDynamic("vpceServiceName")(vpceServiceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[VPCEConfiguration]
   }
 }

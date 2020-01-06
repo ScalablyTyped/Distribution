@@ -10,8 +10,8 @@ Format and manipulate numbers.
 | Full name          | numeral |
 | Keywords           | numeral, number, format, time, money, percentage |
 | # releases         | 1 |
-| # dependents       | 784 |
-| # downloads        | 15030752 |
+| # dependents       | 989 |
+| # downloads        | 21123067 |
 | # stars            | 76 |
 
 ## Links

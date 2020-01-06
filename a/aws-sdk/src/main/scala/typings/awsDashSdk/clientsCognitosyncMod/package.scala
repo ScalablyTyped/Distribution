@@ -37,8 +37,8 @@ package object clientsCognitosyncMod {
   type Long = Double
   type MergedDatasetNameList = js.Array[String]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.replace
-    - typings.awsDashSdk.awsDashSdkStrings.remove
+    - typings.awsDashSdk.awsDashSdkStrings.replace_
+    - typings.awsDashSdk.awsDashSdkStrings.remove__
     - java.lang.String
   */
   type Operation = _Operation | java.lang.String
@@ -67,7 +67,7 @@ package object clientsCognitosyncMod {
   type _Date = Date
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2014-06-30`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | java.lang.String

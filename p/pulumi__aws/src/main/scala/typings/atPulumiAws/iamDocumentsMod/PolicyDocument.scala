@@ -7,10 +7,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PolicyDocument extends js.Object {
-  var Id: js.UndefOr[Input[String]] = js.undefined
-  var Statement: Input[js.Array[Input[PolicyStatement]]]
-  var Version: Input[`2008-10-17` | `2012-10-17`]
+  var Id: js.UndefOr[Input[String]] = js.native
+  var Statement: Input[js.Array[Input[PolicyStatement]]] = js.native
+  var Version: Input[`2008-10-17` | `2012-10-17`] = js.native
 }
 
 object PolicyDocument {

@@ -4,15 +4,15 @@
 Typings are for version 5.1.3
 
 ## Library description:
-tiny modular DOM lib for ie8+
+tiny modular DOM lib for ie9+
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | dom-helpers |
 | Keywords           | dom-helpers, react-component, dom, api, cross-browser, style, event, height, width, dom-helpers, class, classlist, css |
-| # releases         | 4 |
-| # dependents       | 383 |
-| # downloads        | 94498670 |
+| # releases         | 10 |
+| # dependents       | 455 |
+| # downloads        | 147891633 |
 | # stars            | 10 |
 
 ## Links

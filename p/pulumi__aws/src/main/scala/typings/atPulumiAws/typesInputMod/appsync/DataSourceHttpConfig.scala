@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DataSourceHttpConfig extends js.Object {
   /**
     * HTTP URL.
     */
-  var endpoint: Input[String]
+  var endpoint: Input[String] = js.native
 }
 
 object DataSourceHttpConfig {

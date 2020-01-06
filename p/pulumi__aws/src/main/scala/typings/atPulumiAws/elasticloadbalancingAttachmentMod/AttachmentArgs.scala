@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AttachmentArgs extends js.Object {
   /**
     * The name of the ELB.
     */
-  val elb: Input[String]
+  val elb: Input[String] = js.native
   /**
     * Instance ID to place in the ELB pool.
     */
-  val instance: Input[String]
+  val instance: Input[String] = js.native
 }
 
 object AttachmentArgs {

@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AppQuietTime extends js.Object {
   /**
     * The default end time for quiet time in ISO 8601 format. Required if `start` is set
     */
-  var end: js.UndefOr[Input[String]] = js.undefined
+  var end: js.UndefOr[Input[String]] = js.native
   /**
     * The default start time for quiet time in ISO 8601 format. Required if `end` is set
     */
-  var start: js.UndefOr[Input[String]] = js.undefined
+  var start: js.UndefOr[Input[String]] = js.native
 }
 
 object AppQuietTime {

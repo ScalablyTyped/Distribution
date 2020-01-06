@@ -7,15 +7,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RolePolicyAttachmentArgs extends js.Object {
   /**
     * The ARN of the policy you want to apply
     */
-  val policyArn: Input[ARN]
+  val policyArn: Input[ARN] = js.native
   /**
     * The role the policy should be applied to
     */
-  val role: Input[String | Role]
+  val role: Input[String | Role] = js.native
 }
 
 object RolePolicyAttachmentArgs {

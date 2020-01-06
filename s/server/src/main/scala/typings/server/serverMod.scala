@@ -15,11 +15,11 @@ object serverMod extends js.Object {
   val reply: Reply = js.native
   val router: Router = js.native
   def apply(
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param middlewares because its type Middlewares is not an array type */ middlewares: Middlewares
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param middlewares because its type Middlewares is not an array type */ middlewares: Middlewares
   ): js.Promise[Context] = js.native
   def apply(
     options: Options,
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param middlewares because its type Middlewares is not an array type */ middlewares: Middlewares
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param middlewares because its type Middlewares is not an array type */ middlewares: Middlewares
   ): js.Promise[Context] = js.native
 }
 

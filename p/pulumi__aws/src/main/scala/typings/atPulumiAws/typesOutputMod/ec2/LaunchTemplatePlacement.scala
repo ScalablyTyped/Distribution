@@ -4,13 +4,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LaunchTemplatePlacement extends js.Object {
-  var affinity: js.UndefOr[String] = js.undefined
-  var availabilityZone: js.UndefOr[String] = js.undefined
-  var groupName: js.UndefOr[String] = js.undefined
-  var hostId: js.UndefOr[String] = js.undefined
-  var spreadDomain: js.UndefOr[String] = js.undefined
-  var tenancy: js.UndefOr[String] = js.undefined
+  var affinity: js.UndefOr[String] = js.native
+  var availabilityZone: js.UndefOr[String] = js.native
+  var groupName: js.UndefOr[String] = js.native
+  var hostId: js.UndefOr[String] = js.native
+  var spreadDomain: js.UndefOr[String] = js.native
+  var tenancy: js.UndefOr[String] = js.native
 }
 
 object LaunchTemplatePlacement {
@@ -24,12 +25,12 @@ object LaunchTemplatePlacement {
     tenancy: String = null
   ): LaunchTemplatePlacement = {
     val __obj = js.Dynamic.literal()
-    if (affinity != null) __obj.updateDynamic("affinity")(affinity)
-    if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone)
-    if (groupName != null) __obj.updateDynamic("groupName")(groupName)
-    if (hostId != null) __obj.updateDynamic("hostId")(hostId)
-    if (spreadDomain != null) __obj.updateDynamic("spreadDomain")(spreadDomain)
-    if (tenancy != null) __obj.updateDynamic("tenancy")(tenancy)
+    if (affinity != null) __obj.updateDynamic("affinity")(affinity.asInstanceOf[js.Any])
+    if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])
+    if (groupName != null) __obj.updateDynamic("groupName")(groupName.asInstanceOf[js.Any])
+    if (hostId != null) __obj.updateDynamic("hostId")(hostId.asInstanceOf[js.Any])
+    if (spreadDomain != null) __obj.updateDynamic("spreadDomain")(spreadDomain.asInstanceOf[js.Any])
+    if (tenancy != null) __obj.updateDynamic("tenancy")(tenancy.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchTemplatePlacement]
   }
 }

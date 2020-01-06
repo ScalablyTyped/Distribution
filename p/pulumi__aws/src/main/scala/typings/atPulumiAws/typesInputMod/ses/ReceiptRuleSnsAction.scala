@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ReceiptRuleSnsAction extends js.Object {
   /**
     * The position of the action in the receipt rule
     */
-  var position: Input[Double]
+  var position: Input[Double] = js.native
   /**
     * The ARN of an SNS topic to notify
     */
-  var topicArn: Input[String]
+  var topicArn: Input[String] = js.native
 }
 
 object ReceiptRuleSnsAction {

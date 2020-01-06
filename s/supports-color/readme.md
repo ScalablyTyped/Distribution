@@ -10,9 +10,9 @@ Detect whether a terminal supports color
 | ------------------ | :-------------: |
 | Full name          | supports-color |
 | Keywords           | color, colour, colors, terminal, console, cli, ansi, styles, tty, rgb, 256, shell, xterm, command-line, support, supports, capability, detect, truecolor, 16m |
-| # releases         | 17 |
-| # dependents       | 458 |
-| # downloads        | 1210925305 |
+| # releases         | 9 |
+| # dependents       | 582 |
+| # downloads        | 1849389589 |
 | # stars            | 17 |
 
 ## Links

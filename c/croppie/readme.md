@@ -11,8 +11,8 @@ A simple javascript image cropper
 | Full name          | croppie |
 | Keywords           | crop, cropper, image, cropping |
 | # releases         | 5 |
-| # dependents       | 21 |
-| # downloads        | 578367 |
+| # dependents       | 30 |
+| # downloads        | 1169438 |
 | # stars            | 0 |
 
 ## Links

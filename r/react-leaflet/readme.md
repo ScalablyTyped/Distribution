@@ -10,9 +10,9 @@ React components for Leaflet maps
 | ------------------ | :-------------: |
 | Full name          | react-leaflet |
 | Keywords           | react-component, react, leaflet, map |
-| # releases         | 44 |
-| # dependents       | 92 |
-| # downloads        | 1427661 |
+| # releases         | 22 |
+| # dependents       | 129 |
+| # downloads        | 2330287 |
 | # stars            | 3 |
 
 ## Links

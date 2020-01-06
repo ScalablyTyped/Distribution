@@ -12,7 +12,7 @@ Provides a Redis store for the express-rate-limit RateLimit middleware.
 | Keywords           | - |
 | # releases         | 5 |
 | # dependents       | 8 |
-| # downloads        | 642790 |
+| # downloads        | 928763 |
 | # stars            | 3 |
 
 ## Links

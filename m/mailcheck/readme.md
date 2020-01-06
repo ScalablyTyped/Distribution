@@ -10,9 +10,9 @@ A standalone module that suggests a right domain when your users misspell it in 
 | ------------------ | :-------------: |
 | Full name          | mailcheck |
 | Keywords           | form, email, spell check |
-| # releases         | 1 |
-| # dependents       | 12 |
-| # downloads        | 1569263 |
+| # releases         | 0 |
+| # dependents       | 16 |
+| # downloads        | 1764933 |
 | # stars            | 5 |
 
 ## Links

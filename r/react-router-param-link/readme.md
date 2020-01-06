@@ -12,7 +12,7 @@ A wrapper around react-router's Link that allows paths with parameters.
 | Keywords           | link-component, component, parameter, dynamic, router, react |
 | # releases         | 6 |
 | # dependents       | 0 |
-| # downloads        | 207 |
+| # downloads        | 336 |
 | # stars            | 0 |
 
 ## Links

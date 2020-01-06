@@ -10,8 +10,8 @@ Locutus other languages' stadard libraries to JavaScript for fun and educational
 | Full name          | locutus |
 | Keywords           | php, golang, c, ruby, python, js, locutus |
 | # releases         | 3 |
-| # dependents       | 55 |
-| # downloads        | 1837416 |
+| # dependents       | 67 |
+| # downloads        | 3418968 |
 | # stars            | 5 |
 
 ## Links

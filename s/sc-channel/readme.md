@@ -10,9 +10,9 @@ Channel object for SocketCluster
 | ------------------ | :-------------: |
 | Full name          | sc-channel |
 | Keywords           | channel, socketcluster, pubsub, publish, subscribe |
-| # releases         | 4 |
+| # releases         | 2 |
 | # dependents       | 7 |
-| # downloads        | 3801975 |
+| # downloads        | 3275471 |
 | # stars            | 0 |
 
 ## Links

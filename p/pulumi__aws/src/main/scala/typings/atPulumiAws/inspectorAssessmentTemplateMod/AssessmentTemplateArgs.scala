@@ -5,23 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AssessmentTemplateArgs extends js.Object {
   /**
     * The duration of the inspector run.
     */
-  val duration: Input[Double]
+  val duration: Input[Double] = js.native
   /**
     * The name of the assessment template.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * The rules to be used during the run.
     */
-  val rulesPackageArns: Input[js.Array[Input[String]]]
+  val rulesPackageArns: Input[js.Array[Input[String]]] = js.native
   /**
     * The assessment target ARN to attach the template to.
     */
-  val targetArn: Input[String]
+  val targetArn: Input[String] = js.native
 }
 
 object AssessmentTemplateArgs {

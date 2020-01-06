@@ -10,10 +10,10 @@ A powerful charting and visualization library for browser
 | ------------------ | :-------------: |
 | Full name          | echarts |
 | Keywords           | visualization, canvas |
-| # releases         | 26 |
-| # dependents       | 625 |
-| # downloads        | 3024296 |
-| # stars            | 17 |
+| # releases         | 22 |
+| # dependents       | 1085 |
+| # downloads        | 5924080 |
+| # stars            | 19 |
 
 ## Links
 - [Homepage](http://echarts.apache.org)

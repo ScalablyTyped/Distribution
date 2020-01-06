@@ -10,9 +10,9 @@ The official Airtable JavaScript library.
 | ------------------ | :-------------: |
 | Full name          | airtable |
 | Keywords           | airtable, productivity, database, spreadsheet |
-| # releases         | 12 |
-| # dependents       | 32 |
-| # downloads        | 461719 |
+| # releases         | 16 |
+| # dependents       | 44 |
+| # downloads        | 1038929 |
 | # stars            | 6 |
 
 ## Links

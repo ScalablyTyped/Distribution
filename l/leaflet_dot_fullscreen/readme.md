@@ -10,9 +10,9 @@ Simple plugin for Leaflet that adds fullscreen button to your maps.
 | ------------------ | :-------------: |
 | Full name          | leaflet.fullscreen |
 | Keywords           | leaflet, plugins, maps, fullscreen |
-| # releases         | 3 |
-| # dependents       | 2 |
-| # downloads        | 71588 |
+| # releases         | 5 |
+| # dependents       | 3 |
+| # downloads        | 113628 |
 | # stars            | 3 |
 
 ## Links

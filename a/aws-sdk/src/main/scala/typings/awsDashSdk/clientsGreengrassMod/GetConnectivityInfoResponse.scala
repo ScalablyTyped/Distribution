@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetConnectivityInfoResponse extends js.Object {
   /**
     * Connectivity info list.
     */
-  var ConnectivityInfo: js.UndefOr[__listOfConnectivityInfo] = js.undefined
+  var ConnectivityInfo: js.UndefOr[__listOfConnectivityInfo] = js.native
   /**
     * A message about the connectivity info request.
     */
-  var Message: js.UndefOr[__string] = js.undefined
+  var Message: js.UndefOr[__string] = js.native
 }
 
 object GetConnectivityInfoResponse {
   @scala.inline
   def apply(ConnectivityInfo: __listOfConnectivityInfo = null, Message: __string = null): GetConnectivityInfoResponse = {
     val __obj = js.Dynamic.literal()
-    if (ConnectivityInfo != null) __obj.updateDynamic("ConnectivityInfo")(ConnectivityInfo)
-    if (Message != null) __obj.updateDynamic("Message")(Message)
+    if (ConnectivityInfo != null) __obj.updateDynamic("ConnectivityInfo")(ConnectivityInfo.asInstanceOf[js.Any])
+    if (Message != null) __obj.updateDynamic("Message")(Message.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetConnectivityInfoResponse]
   }
 }

@@ -10,10 +10,10 @@ A Query Language and Runtime which can target any service.
 | ------------------ | :-------------: |
 | Full name          | graphql |
 | Keywords           | graphql, graphql-js |
-| # releases         | 35 |
-| # dependents       | 2241 |
-| # downloads        | 49278971 |
-| # stars            | 109 |
+| # releases         | 30 |
+| # dependents       | 3094 |
+| # downloads        | 89706095 |
+| # stars            | 110 |
 
 ## Links
 - [Homepage](https://github.com/graphql/graphql-js)

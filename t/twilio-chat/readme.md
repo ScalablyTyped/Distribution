@@ -10,9 +10,9 @@ Twilio Chat service client library
 | ------------------ | :-------------: |
 | Full name          | twilio-chat |
 | Keywords           | - |
-| # releases         | 202 |
-| # dependents       | 3 |
-| # downloads        | 246849 |
+| # releases         | 49 |
+| # dependents       | 6 |
+| # downloads        | 520827 |
 | # stars            | 0 |
 
 ## Links

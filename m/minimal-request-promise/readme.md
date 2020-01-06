@@ -10,9 +10,9 @@ A+ Promise interface to Node.js HTTPS request, with no dependencies
 | ------------------ | :-------------: |
 | Full name          | minimal-request-promise |
 | Keywords           | promise, http, https, request, post, rest |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 11 |
-| # downloads        | 179521 |
+| # downloads        | 198464 |
 | # stars            | 1 |
 
 ## Links

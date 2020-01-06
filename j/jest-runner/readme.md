@@ -9,9 +9,9 @@ Typings are for version 24.9.0
 | ------------------ | :-------------: |
 | Full name          | jest-runner |
 | Keywords           | - |
-| # releases         | 87 |
-| # dependents       | 23 |
-| # downloads        | 177171981 |
+| # releases         | 75 |
+| # dependents       | 25 |
+| # downloads        | 196063935 |
 | # stars            | 0 |
 
 ## Links

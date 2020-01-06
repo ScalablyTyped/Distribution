@@ -26,8 +26,8 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ChaiJQuery
-  extends /* index */ StringDictionary[js.Any]
-     with /* index */ NumberDictionary[HTMLElement] {
+  extends /* index */ NumberDictionary[HTMLElement]
+     with /* index */ StringDictionary[js.Any] {
   /**
     * The DOM node context originally passed to jQuery(); if none was passed then context will likely be the document. (DEPRECATED from v1.10)
     */

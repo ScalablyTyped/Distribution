@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TypeText extends js.Object {
-  var disabled: String
-  var hint: String
-  var primary: String
-  var secondary: String
+  var disabled: String = js.native
+  var hint: String = js.native
+  var primary: String = js.native
+  var secondary: String = js.native
 }
 
 object TypeText {

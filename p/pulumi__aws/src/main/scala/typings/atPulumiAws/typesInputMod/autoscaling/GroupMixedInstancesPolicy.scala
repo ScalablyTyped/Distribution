@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GroupMixedInstancesPolicy extends js.Object {
   /**
     * Nested argument containing settings on how to mix on-demand and Spot instances in the Auto Scaling group. Defined below.
     */
-  var instancesDistribution: js.UndefOr[Input[GroupMixedInstancesPolicyInstancesDistribution]] = js.undefined
+  var instancesDistribution: js.UndefOr[Input[GroupMixedInstancesPolicyInstancesDistribution]] = js.native
   /**
-    * Nested argument containing launch template settings along with the overrides to specify multiple instance types. Defined below.
+    * Nested argument containing launch template settings along with the overrides to specify multiple instance types and weights. Defined below.
     */
-  var launchTemplate: Input[GroupMixedInstancesPolicyLaunchTemplate]
+  var launchTemplate: Input[GroupMixedInstancesPolicyLaunchTemplate] = js.native
 }
 
 object GroupMixedInstancesPolicy {

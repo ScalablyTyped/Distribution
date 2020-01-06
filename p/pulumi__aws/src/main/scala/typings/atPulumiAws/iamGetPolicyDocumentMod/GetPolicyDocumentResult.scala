@@ -5,20 +5,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetPolicyDocumentResult extends js.Object {
   /**
     * id is the provider-assigned unique ID for this managed resource.
     */
-  val id: String
+  val id: String = js.native
   /**
     * The above arguments serialized as a standard JSON policy document.
     */
-  val json: String
-  val overrideJson: js.UndefOr[String] = js.undefined
-  val policyId: js.UndefOr[String] = js.undefined
-  val sourceJson: js.UndefOr[String] = js.undefined
-  val statements: js.UndefOr[js.Array[GetPolicyDocumentStatement]] = js.undefined
-  val version: js.UndefOr[String] = js.undefined
+  val json: String = js.native
+  val overrideJson: js.UndefOr[String] = js.native
+  val policyId: js.UndefOr[String] = js.native
+  val sourceJson: js.UndefOr[String] = js.native
+  val statements: js.UndefOr[js.Array[GetPolicyDocumentStatement]] = js.native
+  val version: js.UndefOr[String] = js.native
 }
 
 object GetPolicyDocumentResult {
@@ -32,12 +33,12 @@ object GetPolicyDocumentResult {
     statements: js.Array[GetPolicyDocumentStatement] = null,
     version: String = null
   ): GetPolicyDocumentResult = {
-    val __obj = js.Dynamic.literal(id = id, json = json)
-    if (overrideJson != null) __obj.updateDynamic("overrideJson")(overrideJson)
-    if (policyId != null) __obj.updateDynamic("policyId")(policyId)
-    if (sourceJson != null) __obj.updateDynamic("sourceJson")(sourceJson)
-    if (statements != null) __obj.updateDynamic("statements")(statements)
-    if (version != null) __obj.updateDynamic("version")(version)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], json = json.asInstanceOf[js.Any])
+    if (overrideJson != null) __obj.updateDynamic("overrideJson")(overrideJson.asInstanceOf[js.Any])
+    if (policyId != null) __obj.updateDynamic("policyId")(policyId.asInstanceOf[js.Any])
+    if (sourceJson != null) __obj.updateDynamic("sourceJson")(sourceJson.asInstanceOf[js.Any])
+    if (statements != null) __obj.updateDynamic("statements")(statements.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPolicyDocumentResult]
   }
 }

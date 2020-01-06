@@ -10,9 +10,9 @@ Appcelerator Titanium Command line
 | ------------------ | :-------------: |
 | Full name          | titanium |
 | Keywords           | appcelerator, titanium, mobile, ios, iphone, android, blackberry, html5, mobileweb, mobile web, appc-client |
-| # releases         | 8 |
+| # releases         | 7 |
 | # dependents       | 6 |
-| # downloads        | 12460 |
+| # downloads        | 11632 |
 | # stars            | 6 |
 
 ## Links

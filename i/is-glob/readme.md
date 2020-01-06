@@ -10,9 +10,9 @@ Returns `true` if the given string looks like a glob pattern or an extglob patte
 | ------------------ | :-------------: |
 | Full name          | is-glob |
 | Keywords           | bash, braces, check, exec, expression, extglob, glob, globbing, globstar, is, match, matches, pattern, regex, regular, string, test |
-| # releases         | 3 |
-| # dependents       | 239 |
-| # downloads        | 726904430 |
+| # releases         | 2 |
+| # dependents       | 303 |
+| # downloads        | 1034928950 |
 | # stars            | 5 |
 
 ## Links

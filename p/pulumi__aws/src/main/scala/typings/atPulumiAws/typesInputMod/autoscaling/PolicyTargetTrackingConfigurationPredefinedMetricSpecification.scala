@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PolicyTargetTrackingConfigurationPredefinedMetricSpecification extends js.Object {
   /**
     * The metric type.
     */
-  var predefinedMetricType: Input[String]
+  var predefinedMetricType: Input[String] = js.native
   /**
     * Identifies the resource associated with the metric type.
     */
-  var resourceLabel: js.UndefOr[Input[String]] = js.undefined
+  var resourceLabel: js.UndefOr[Input[String]] = js.native
 }
 
 object PolicyTargetTrackingConfigurationPredefinedMetricSpecification {

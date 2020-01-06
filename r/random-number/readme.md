@@ -10,9 +10,9 @@ Generate pseudo-randum numbers
 | ------------------ | :-------------: |
 | Full name          | random-number |
 | Keywords           | random-number, random, random-integer |
-| # releases         | 3 |
-| # dependents       | 30 |
-| # downloads        | 376199 |
+| # releases         | 0 |
+| # dependents       | 37 |
+| # downloads        | 424407 |
 | # stars            | 0 |
 
 ## Links

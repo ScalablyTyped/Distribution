@@ -12,7 +12,7 @@ XML canonicalisation
 | Keywords           | xml, canonicalise, canonicalize, canonicalisation, canonicalization, c14n, exc-c14n, exclusive |
 | # releases         | 1 |
 | # dependents       | 4 |
-| # downloads        | 16208 |
+| # downloads        | 17411 |
 | # stars            | 1 |
 
 ## Links

@@ -10,9 +10,9 @@ check if the event loop is blocked
 | ------------------ | :-------------: |
 | Full name          | blocked |
 | Keywords           | block, event, loop, performance |
-| # releases         | 1 |
-| # dependents       | 19 |
-| # downloads        | 1117902 |
+| # releases         | 2 |
+| # dependents       | 20 |
+| # downloads        | 1442709 |
 | # stars            | 50 |
 
 ## Links

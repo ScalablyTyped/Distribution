@@ -5,44 +5,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AccessKeyState extends js.Object {
   /**
-    * The encrypted secret, base64 encoded.
+    * The encrypted secret, base64 encoded, if `pgpKey` was specified.
     * > **NOTE:** The encrypted secret may be decrypted using the command line,
     * for example: `... | base64 --decode | keybase pgp decrypt`.
     */
-  val encryptedSecret: js.UndefOr[Input[String]] = js.undefined
+  val encryptedSecret: js.UndefOr[Input[String]] = js.native
   /**
     * The fingerprint of the PGP key used to encrypt
     * the secret
     */
-  val keyFingerprint: js.UndefOr[Input[String]] = js.undefined
+  val keyFingerprint: js.UndefOr[Input[String]] = js.native
   /**
     * Either a base-64 encoded PGP public key, or a
-    * keybase username in the form `keybase:some_person_that_exists`.
+    * keybase username in the form `keybase:some_person_that_exists`, for use
+    * in the `encryptedSecret` output attribute.
     */
-  val pgpKey: js.UndefOr[Input[String]] = js.undefined
+  val pgpKey: js.UndefOr[Input[String]] = js.native
   /**
     * The secret access key. Note that this will be written
-    * to the state file. Please supply a `pgpKey` instead, which will prevent the
-    * secret from being stored in plain text
+    * to the state file. If you use this, please protect your backend state file
+    * judiciously. Alternatively, you may supply a `pgpKey` instead, which will
+    * prevent the secret from being stored in plaintext, at the cost of preventing
+    * the use of the secret key in automation.
     */
-  val secret: js.UndefOr[Input[String]] = js.undefined
+  val secret: js.UndefOr[Input[String]] = js.native
   /**
     * The secret access key converted into an SES SMTP
     * password by applying [AWS's documented conversion
     * algorithm](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/smtp-credentials.html#smtp-credentials-convert).
     */
-  val sesSmtpPassword: js.UndefOr[Input[String]] = js.undefined
+  val sesSmtpPassword: js.UndefOr[Input[String]] = js.native
   /**
     * The access key status to apply. Defaults to `Active`.
     * Valid values are `Active` and `Inactive`.
     */
-  val status: js.UndefOr[Input[String]] = js.undefined
+  val status: js.UndefOr[Input[String]] = js.native
   /**
     * The IAM user to associate with this access key.
     */
-  val user: js.UndefOr[Input[String]] = js.undefined
+  val user: js.UndefOr[Input[String]] = js.native
 }
 
 object AccessKeyState {

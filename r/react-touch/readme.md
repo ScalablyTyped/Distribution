@@ -10,9 +10,9 @@ React wrapper components that make touch events easy
 | ------------------ | :-------------: |
 | Full name          | react-touch |
 | Keywords           | react, reactjs, react-touch, touch |
-| # releases         | 3 |
-| # dependents       | 2 |
-| # downloads        | 41915 |
+| # releases         | 2 |
+| # dependents       | 4 |
+| # downloads        | 52853 |
 | # stars            | 2 |
 
 ## Links

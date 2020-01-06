@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MeshSpec extends js.Object {
-  var egressFilter: js.UndefOr[Input[MeshSpecEgressFilter]] = js.undefined
+  var egressFilter: js.UndefOr[Input[MeshSpecEgressFilter]] = js.native
 }
 
 object MeshSpec {

@@ -11,8 +11,8 @@ Noiseless testing framework
 | Full name          | ospec |
 | Keywords           | testing |
 | # releases         | 9 |
-| # dependents       | 3 |
-| # downloads        | 7140 |
+| # dependents       | 4 |
+| # downloads        | 12273 |
 | # stars            | 2 |
 
 ## Links

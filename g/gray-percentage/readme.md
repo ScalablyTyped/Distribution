@@ -11,8 +11,8 @@ Convenience function to get a gray value by percentage e.g. gray(60) -> hsla(0,0
 | Full name          | gray-percentage |
 | Keywords           | colors, css, gray, grey |
 | # releases         | 0 |
-| # dependents       | 53 |
-| # downloads        | 1685663 |
+| # dependents       | 59 |
+| # downloads        | 2033524 |
 | # stars            | 0 |
 
 ## Links

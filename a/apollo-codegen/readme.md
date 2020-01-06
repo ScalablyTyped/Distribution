@@ -10,9 +10,9 @@ Generate API code or type annotations based on a GraphQL schema and query docume
 | ------------------ | :-------------: |
 | Full name          | apollo-codegen |
 | Keywords           | - |
-| # releases         | 67 |
-| # dependents       | 14 |
-| # downloads        | 3476183 |
+| # releases         | 14 |
+| # dependents       | 19 |
+| # downloads        | 5044276 |
 | # stars            | 0 |
 
 ## Links

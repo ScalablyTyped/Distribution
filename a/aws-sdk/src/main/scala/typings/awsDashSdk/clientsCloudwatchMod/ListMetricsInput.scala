@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ListMetricsInput extends js.Object {
   /**
     * The dimensions to filter against.
     */
-  var Dimensions: js.UndefOr[DimensionFilters] = js.undefined
+  var Dimensions: js.UndefOr[DimensionFilters] = js.native
   /**
     * The name of the metric to filter against.
     */
-  var MetricName: js.UndefOr[typings.awsDashSdk.clientsCloudwatchMod.MetricName] = js.undefined
+  var MetricName: js.UndefOr[typings.awsDashSdk.clientsCloudwatchMod.MetricName] = js.native
   /**
     * The namespace to filter against.
     */
-  var Namespace: js.UndefOr[typings.awsDashSdk.clientsCloudwatchMod.Namespace] = js.undefined
+  var Namespace: js.UndefOr[typings.awsDashSdk.clientsCloudwatchMod.Namespace] = js.native
   /**
     * The token returned by a previous call to indicate that there is more data available.
     */
-  var NextToken: js.UndefOr[typings.awsDashSdk.clientsCloudwatchMod.NextToken] = js.undefined
+  var NextToken: js.UndefOr[typings.awsDashSdk.clientsCloudwatchMod.NextToken] = js.native
 }
 
 object ListMetricsInput {
@@ -32,10 +33,10 @@ object ListMetricsInput {
     NextToken: NextToken = null
   ): ListMetricsInput = {
     val __obj = js.Dynamic.literal()
-    if (Dimensions != null) __obj.updateDynamic("Dimensions")(Dimensions)
-    if (MetricName != null) __obj.updateDynamic("MetricName")(MetricName)
-    if (Namespace != null) __obj.updateDynamic("Namespace")(Namespace)
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
+    if (Dimensions != null) __obj.updateDynamic("Dimensions")(Dimensions.asInstanceOf[js.Any])
+    if (MetricName != null) __obj.updateDynamic("MetricName")(MetricName.asInstanceOf[js.Any])
+    if (Namespace != null) __obj.updateDynamic("Namespace")(Namespace.asInstanceOf[js.Any])
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListMetricsInput]
   }
 }

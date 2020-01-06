@@ -10,9 +10,9 @@ Wrapper for reply processing code in hiredis
 | ------------------ | :-------------: |
 | Full name          | hiredis |
 | Keywords           | - |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 434 |
-| # downloads        | 2631028 |
+| # downloads        | 2616196 |
 | # stars            | 28 |
 
 ## Links

@@ -10,9 +10,9 @@ Typings are for version 6.5.4
 | ------------------ | :-------------: |
 | Full name          | rxjs-compat |
 | Keywords           | - |
-| # releases         | 26 |
-| # dependents       | 435 |
-| # downloads        | 10167364 |
+| # releases         | 31 |
+| # dependents       | 552 |
+| # downloads        | 14877035 |
 | # stars            | 0 |
 
 ## Links

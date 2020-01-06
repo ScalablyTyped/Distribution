@@ -10,10 +10,10 @@ Keep the screen from going to sleep. iOS and Android.
 | ------------------ | :-------------: |
 | Full name          | react-native-keep-awake |
 | Keywords           | react-native, ios, android, awake, screen, lock, sleep |
-| # releases         | 9 |
-| # dependents       | 10 |
-| # downloads        | 353904 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 16 |
+| # downloads        | 575992 |
+| # stars            | 1 |
 
 ## Links
 - [Homepage](https://github.com/corbt/react-native-keep-awake#readme)

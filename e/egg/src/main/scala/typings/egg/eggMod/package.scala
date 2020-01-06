@@ -36,7 +36,7 @@ package object eggMod {
   // plain object
   type PlainObject[T] = StringDictionary[T]
   type PowerPartial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ U in keyof T ]:? T[U] extends object? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias egg.egg.PowerPartial<T[U]> * / object : T[U]}
+  {[ U in keyof T ]:? T[U] extends object? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias egg.egg.PowerPartial<T[U]> * / object : T[U]}
     */ typings.egg.eggStrings.PowerPartial with js.Any
   // Remove specific property from the specific class
   type RemoveSpecProp[T, P] = Pick[T, Exclude[String, P]]

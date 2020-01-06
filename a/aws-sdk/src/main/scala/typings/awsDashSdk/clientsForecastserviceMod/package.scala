@@ -13,10 +13,10 @@ package object clientsForecastserviceMod {
   type Arn = java.lang.String
   type ArnList = js.Array[Arn]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.string
-    - typings.awsDashSdk.awsDashSdkStrings.integer
-    - typings.awsDashSdk.awsDashSdkStrings.float
-    - typings.awsDashSdk.awsDashSdkStrings.timestamp
+    - typings.awsDashSdk.awsDashSdkStrings.string__
+    - typings.awsDashSdk.awsDashSdkStrings.integer__
+    - typings.awsDashSdk.awsDashSdkStrings.float_
+    - typings.awsDashSdk.awsDashSdkStrings.timestamp_
     - java.lang.String
   */
   type AttributeType = _AttributeType | java.lang.String
@@ -67,6 +67,8 @@ package object clientsForecastserviceMod {
   type Filters = js.Array[Filter]
   type ForecastDimensions = js.Array[Name]
   type ForecastExportJobs = js.Array[ForecastExportJobSummary]
+  type ForecastType = java.lang.String
+  type ForecastTypes = js.Array[ForecastType]
   type Forecasts = js.Array[ForecastSummary]
   type Frequency = java.lang.String
   type Integer = scala.Double
@@ -79,11 +81,12 @@ package object clientsForecastserviceMod {
   type ParameterKey = java.lang.String
   type ParameterValue = java.lang.String
   type PredictorEvaluationResults = js.Array[EvaluationResult]
+  type PredictorExecutions = js.Array[PredictorExecution]
   type Predictors = js.Array[PredictorSummary]
   type S3Path = java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Auto
-    - typings.awsDashSdk.awsDashSdkStrings.Linear
+    - typings.awsDashSdk.awsDashSdkStrings.Auto_
+    - typings.awsDashSdk.awsDashSdkStrings.Linear_
     - typings.awsDashSdk.awsDashSdkStrings.Logarithmic
     - typings.awsDashSdk.awsDashSdkStrings.ReverseLogarithmic
     - java.lang.String
@@ -93,6 +96,7 @@ package object clientsForecastserviceMod {
   type Status = java.lang.String
   type String = java.lang.String
   type SupplementaryFeatures = js.Array[SupplementaryFeature]
+  type TestWindowDetails = js.Array[TestWindowSummary]
   type TestWindows = js.Array[WindowSummary]
   type Timestamp = Date
   type TimestampFormat = java.lang.String
@@ -102,7 +106,7 @@ package object clientsForecastserviceMod {
   type WeightedQuantileLosses = js.Array[WeightedQuantileLoss]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2018-06-26`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | java.lang.String

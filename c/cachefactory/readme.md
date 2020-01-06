@@ -11,8 +11,8 @@ CacheFactory is a very simple and useful cache for the browser.
 | Full name          | cachefactory |
 | Keywords           | cache |
 | # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 65973 |
+| # dependents       | 3 |
+| # downloads        | 133272 |
 | # stars            | 1 |
 
 ## Links

@@ -10,9 +10,9 @@ Markdown to PDF converter
 | ------------------ | :-------------: |
 | Full name          | markdown-pdf |
 | Keywords           | markdown, pdf, convert, template |
-| # releases         | 5 |
-| # dependents       | 30 |
-| # downloads        | 159226 |
+| # releases         | 4 |
+| # dependents       | 35 |
+| # downloads        | 223865 |
 | # stars            | 42 |
 
 ## Links

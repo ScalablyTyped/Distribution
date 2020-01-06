@@ -5,10 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VpnConnectionRoute extends js.Object {
-  var destinationCidrBlock: js.UndefOr[Input[String]] = js.undefined
-  var source: js.UndefOr[Input[String]] = js.undefined
-  var state: js.UndefOr[Input[String]] = js.undefined
+  var destinationCidrBlock: js.UndefOr[Input[String]] = js.native
+  var source: js.UndefOr[Input[String]] = js.native
+  var state: js.UndefOr[Input[String]] = js.native
 }
 
 object VpnConnectionRoute {

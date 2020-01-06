@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetMetricWidgetImageOutput extends js.Object {
   /**
     * The image of the graph, in the output format specified.
     */
-  var MetricWidgetImage: js.UndefOr[typings.awsDashSdk.clientsCloudwatchMod.MetricWidgetImage] = js.undefined
+  var MetricWidgetImage: js.UndefOr[typings.awsDashSdk.clientsCloudwatchMod.MetricWidgetImage] = js.native
 }
 
 object GetMetricWidgetImageOutput {

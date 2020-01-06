@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DomainState extends js.Object {
   /**
     * The ARN of the Lightsail domain
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the Lightsail domain to manage
     */
-  val domainName: js.UndefOr[Input[String]] = js.undefined
+  val domainName: js.UndefOr[Input[String]] = js.native
 }
 
 object DomainState {

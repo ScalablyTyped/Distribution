@@ -10,9 +10,9 @@ A CSS Modules transform to make local scope the default
 | ------------------ | :-------------: |
 | Full name          | postcss-modules-local-by-default |
 | Keywords           | css-modules, postcss, css, postcss-plugin |
-| # releases         | 9 |
-| # dependents       | 85 |
-| # downloads        | 147544227 |
+| # releases         | 11 |
+| # dependents       | 105 |
+| # downloads        | 255692619 |
 | # stars            | 3 |
 
 ## Links

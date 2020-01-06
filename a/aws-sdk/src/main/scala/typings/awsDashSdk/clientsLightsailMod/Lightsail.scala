@@ -93,12 +93,12 @@ trait Lightsail extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CloseInstancePublicPortsResult, Unit]
   ): Request[CloseInstancePublicPortsResult, AWSError] = js.native
   /**
-    * Copies a manual instance or disk snapshot as another manual snapshot, or copies an automatic instance or disk snapshot as a manual snapshot. This operation can also be used to copy a manual or automatic snapshot of an instance or a disk from one AWS Region to another in Amazon Lightsail. When copying a manual snapshot, be sure to define the source region, source snapshot name, and target snapshot name parameters. When copying an automatic snapshot, be sure to define the source region, source resource name, target snapshot name, and either the restore date or the use latest restorable auto snapshot parameters.  Database snapshots cannot be copied at this time. 
+    * Copies a manual snapshot of an instance or disk as another manual snapshot, or copies an automatic snapshot of an instance or disk as a manual snapshot. This operation can also be used to copy a manual or automatic snapshot of an instance or a disk from one AWS Region to another in Amazon Lightsail. When copying a manual snapshot, be sure to define the source region, source snapshot name, and target snapshot name parameters. When copying an automatic snapshot, be sure to define the source region, source resource name, target snapshot name, and either the restore date or the use latest restorable auto snapshot parameters.
     */
   def copySnapshot(): Request[CopySnapshotResult, AWSError] = js.native
   def copySnapshot(callback: js.Function2[/* err */ AWSError, /* data */ CopySnapshotResult, Unit]): Request[CopySnapshotResult, AWSError] = js.native
   /**
-    * Copies a manual instance or disk snapshot as another manual snapshot, or copies an automatic instance or disk snapshot as a manual snapshot. This operation can also be used to copy a manual or automatic snapshot of an instance or a disk from one AWS Region to another in Amazon Lightsail. When copying a manual snapshot, be sure to define the source region, source snapshot name, and target snapshot name parameters. When copying an automatic snapshot, be sure to define the source region, source resource name, target snapshot name, and either the restore date or the use latest restorable auto snapshot parameters.  Database snapshots cannot be copied at this time. 
+    * Copies a manual snapshot of an instance or disk as another manual snapshot, or copies an automatic snapshot of an instance or disk as a manual snapshot. This operation can also be used to copy a manual or automatic snapshot of an instance or a disk from one AWS Region to another in Amazon Lightsail. When copying a manual snapshot, be sure to define the source region, source snapshot name, and target snapshot name parameters. When copying an automatic snapshot, be sure to define the source region, source resource name, target snapshot name, and either the restore date or the use latest restorable auto snapshot parameters.
     */
   def copySnapshot(params: CopySnapshotRequest): Request[CopySnapshotResult, AWSError] = js.native
   def copySnapshot(
@@ -307,12 +307,12 @@ trait Lightsail extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateRelationalDatabaseSnapshotResult, Unit]
   ): Request[CreateRelationalDatabaseSnapshotResult, AWSError] = js.native
   /**
-    * Deletes an automatic snapshot for an instance or disk.
+    * Deletes an automatic snapshot of an instance or disk. For more information, see the Lightsail Dev Guide.
     */
   def deleteAutoSnapshot(): Request[DeleteAutoSnapshotResult, AWSError] = js.native
   def deleteAutoSnapshot(callback: js.Function2[/* err */ AWSError, /* data */ DeleteAutoSnapshotResult, Unit]): Request[DeleteAutoSnapshotResult, AWSError] = js.native
   /**
-    * Deletes an automatic snapshot for an instance or disk.
+    * Deletes an automatic snapshot of an instance or disk. For more information, see the Lightsail Dev Guide.
     */
   def deleteAutoSnapshot(params: DeleteAutoSnapshotRequest): Request[DeleteAutoSnapshotResult, AWSError] = js.native
   def deleteAutoSnapshot(
@@ -584,12 +584,12 @@ trait Lightsail extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetActiveNamesResult, Unit]
   ): Request[GetActiveNamesResult, AWSError] = js.native
   /**
-    * Returns the available automatic snapshots for the specified resource name. For more information, see the Lightsail Dev Guide.
+    * Returns the available automatic snapshots for an instance or disk. For more information, see the Lightsail Dev Guide.
     */
   def getAutoSnapshots(): Request[GetAutoSnapshotsResult, AWSError] = js.native
   def getAutoSnapshots(callback: js.Function2[/* err */ AWSError, /* data */ GetAutoSnapshotsResult, Unit]): Request[GetAutoSnapshotsResult, AWSError] = js.native
   /**
-    * Returns the available automatic snapshots for the specified resource name. For more information, see the Lightsail Dev Guide.
+    * Returns the available automatic snapshots for an instance or disk. For more information, see the Lightsail Dev Guide.
     */
   def getAutoSnapshots(params: GetAutoSnapshotsRequest): Request[GetAutoSnapshotsResult, AWSError] = js.native
   def getAutoSnapshots(
@@ -1373,14 +1373,14 @@ trait Lightsail extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateRelationalDatabaseResult, Unit]
   ): Request[UpdateRelationalDatabaseResult, AWSError] = js.native
   /**
-    * Allows the update of one or more parameters of a database in Amazon Lightsail. Parameter updates don't cause outages; therefore, their application is not subject to the preferred maintenance window. However, there are two ways in which paramater updates are applied: dynamic or pending-reboot. Parameters marked with a dynamic apply type are applied immediately. Parameters marked with a pending-reboot apply type are applied only after the database is rebooted using the reboot relational database operation. The update relational database parameters operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
+    * Allows the update of one or more parameters of a database in Amazon Lightsail. Parameter updates don't cause outages; therefore, their application is not subject to the preferred maintenance window. However, there are two ways in which parameter updates are applied: dynamic or pending-reboot. Parameters marked with a dynamic apply type are applied immediately. Parameters marked with a pending-reboot apply type are applied only after the database is rebooted using the reboot relational database operation. The update relational database parameters operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
     */
   def updateRelationalDatabaseParameters(): Request[UpdateRelationalDatabaseParametersResult, AWSError] = js.native
   def updateRelationalDatabaseParameters(
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateRelationalDatabaseParametersResult, Unit]
   ): Request[UpdateRelationalDatabaseParametersResult, AWSError] = js.native
   /**
-    * Allows the update of one or more parameters of a database in Amazon Lightsail. Parameter updates don't cause outages; therefore, their application is not subject to the preferred maintenance window. However, there are two ways in which paramater updates are applied: dynamic or pending-reboot. Parameters marked with a dynamic apply type are applied immediately. Parameters marked with a pending-reboot apply type are applied only after the database is rebooted using the reboot relational database operation. The update relational database parameters operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
+    * Allows the update of one or more parameters of a database in Amazon Lightsail. Parameter updates don't cause outages; therefore, their application is not subject to the preferred maintenance window. However, there are two ways in which parameter updates are applied: dynamic or pending-reboot. Parameters marked with a dynamic apply type are applied immediately. Parameters marked with a pending-reboot apply type are applied only after the database is rebooted using the reboot relational database operation. The update relational database parameters operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
     */
   def updateRelationalDatabaseParameters(params: UpdateRelationalDatabaseParametersRequest): Request[UpdateRelationalDatabaseParametersResult, AWSError] = js.native
   def updateRelationalDatabaseParameters(

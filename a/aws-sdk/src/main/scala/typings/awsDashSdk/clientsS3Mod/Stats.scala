@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Stats extends js.Object {
   /**
     * The total number of uncompressed object bytes processed.
     */
-  var BytesProcessed: js.UndefOr[typings.awsDashSdk.clientsS3Mod.BytesProcessed] = js.undefined
+  var BytesProcessed: js.UndefOr[typings.awsDashSdk.clientsS3Mod.BytesProcessed] = js.native
   /**
     * The total number of bytes of records payload data returned.
     */
-  var BytesReturned: js.UndefOr[typings.awsDashSdk.clientsS3Mod.BytesReturned] = js.undefined
+  var BytesReturned: js.UndefOr[typings.awsDashSdk.clientsS3Mod.BytesReturned] = js.native
   /**
     * The total number of object bytes scanned.
     */
-  var BytesScanned: js.UndefOr[typings.awsDashSdk.clientsS3Mod.BytesScanned] = js.undefined
+  var BytesScanned: js.UndefOr[typings.awsDashSdk.clientsS3Mod.BytesScanned] = js.native
 }
 
 object Stats {

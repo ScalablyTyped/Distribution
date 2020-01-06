@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UsagePlanQuotaSettings extends js.Object {
   /**
     * The maximum number of requests that can be made in a given time period.
     */
-  var limit: Input[Double]
+  var limit: Input[Double] = js.native
   /**
     * The number of requests subtracted from the given limit in the initial time period.
     */
-  var offset: js.UndefOr[Input[Double]] = js.undefined
+  var offset: js.UndefOr[Input[Double]] = js.native
   /**
     * The time period in which the limit applies. Valid values are "DAY", "WEEK" or "MONTH".
     */
-  var period: Input[String]
+  var period: Input[String] = js.native
 }
 
 object UsagePlanQuotaSettings {

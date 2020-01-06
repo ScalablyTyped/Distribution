@@ -4,61 +4,62 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Finding extends js.Object {
   /**
     * The ID of the account in which the finding was generated.
     */
-  var AccountId: String
+  var AccountId: String = js.native
   /**
     * The ARN for the finding.
     */
-  var Arn: String
+  var Arn: String = js.native
   /**
     * The confidence score for the finding.
     */
-  var Confidence: js.UndefOr[Double] = js.undefined
+  var Confidence: js.UndefOr[Double] = js.native
   /**
     * The time and date at which the finding was created.
     */
-  var CreatedAt: String
+  var CreatedAt: String = js.native
   /**
     * The description of the finding.
     */
-  var Description: js.UndefOr[String] = js.undefined
+  var Description: js.UndefOr[String] = js.native
   /**
     * The ID of the finding.
     */
-  var Id: String
+  var Id: String = js.native
   /**
     * The partition associated with the finding.
     */
-  var Partition: js.UndefOr[String] = js.undefined
+  var Partition: js.UndefOr[String] = js.native
   /**
     * The Region in which the finding was generated.
     */
-  var Region: String
-  var Resource: typings.awsDashSdk.clientsGuarddutyMod.Resource
+  var Region: String = js.native
+  var Resource: typings.awsDashSdk.clientsGuarddutyMod.Resource = js.native
   /**
     * The version of the schema used for the finding.
     */
-  var SchemaVersion: String
-  var Service: js.UndefOr[typings.awsDashSdk.clientsGuarddutyMod.Service] = js.undefined
+  var SchemaVersion: String = js.native
+  var Service: js.UndefOr[typings.awsDashSdk.clientsGuarddutyMod.Service] = js.native
   /**
     * The severity of the finding.
     */
-  var Severity: Double
+  var Severity: Double = js.native
   /**
     * The title for the finding.
     */
-  var Title: js.UndefOr[String] = js.undefined
+  var Title: js.UndefOr[String] = js.native
   /**
     * The type of the finding.
     */
-  var Type: FindingType
+  var Type: FindingType = js.native
   /**
     * The time and date at which the finding was laste updated.
     */
-  var UpdatedAt: String
+  var UpdatedAt: String = js.native
 }
 
 object Finding {
@@ -80,12 +81,12 @@ object Finding {
     Service: Service = null,
     Title: String = null
   ): Finding = {
-    val __obj = js.Dynamic.literal(AccountId = AccountId, Arn = Arn, CreatedAt = CreatedAt, Id = Id, Region = Region, Resource = Resource, SchemaVersion = SchemaVersion, Severity = Severity, Type = Type, UpdatedAt = UpdatedAt)
+    val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], Arn = Arn.asInstanceOf[js.Any], CreatedAt = CreatedAt.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Region = Region.asInstanceOf[js.Any], Resource = Resource.asInstanceOf[js.Any], SchemaVersion = SchemaVersion.asInstanceOf[js.Any], Severity = Severity.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], UpdatedAt = UpdatedAt.asInstanceOf[js.Any])
     if (Confidence != null) __obj.updateDynamic("Confidence")(Confidence.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description)
-    if (Partition != null) __obj.updateDynamic("Partition")(Partition)
-    if (Service != null) __obj.updateDynamic("Service")(Service)
-    if (Title != null) __obj.updateDynamic("Title")(Title)
+    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (Partition != null) __obj.updateDynamic("Partition")(Partition.asInstanceOf[js.Any])
+    if (Service != null) __obj.updateDynamic("Service")(Service.asInstanceOf[js.Any])
+    if (Title != null) __obj.updateDynamic("Title")(Title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Finding]
   }
 }

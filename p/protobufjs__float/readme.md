@@ -11,8 +11,8 @@ Reads / writes floats / doubles from / to buffers in both modern and ancient bro
 | Full name          | @protobufjs/float |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 44890091 |
+| # dependents       | 27 |
+| # downloads        | 54148827 |
 | # stars            | 0 |
 
 ## Links

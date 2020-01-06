@@ -10,9 +10,9 @@ Parity's native order entry protocol
 | ------------------ | :-------------: |
 | Full name          | parity-poe |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 253 |
+| # downloads        | 461 |
 | # stars            | 0 |
 
 ## Links

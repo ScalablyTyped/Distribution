@@ -10,9 +10,9 @@ A user-friendly HTML5 Form validator for Bootstrap 3
 | ------------------ | :-------------: |
 | Full name          | bootstrap-validator |
 | Keywords           | bootstrap, bootstrap3, jquery, form, validator, validation, plugin |
-| # releases         | 1 |
-| # dependents       | 2 |
-| # downloads        | 304588 |
+| # releases         | 0 |
+| # dependents       | 7 |
+| # downloads        | 326032 |
 | # stars            | 5 |
 
 ## Links

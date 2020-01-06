@@ -10,9 +10,9 @@ Copy files && directories with webpack
 | ------------------ | :-------------: |
 | Full name          | copy-webpack-plugin |
 | Keywords           | webpack, plugin, transfer, move, copy |
-| # releases         | 22 |
-| # dependents       | 1124 |
-| # downloads        | 67370871 |
+| # releases         | 19 |
+| # dependents       | 1509 |
+| # downloads        | 105998324 |
 | # stars            | 50 |
 
 ## Links

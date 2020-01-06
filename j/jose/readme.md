@@ -4,21 +4,21 @@
 Typings are for version 1.17.2
 
 ## Library description:
-JSON Object Signing and Encryption (JOSE) library (symmetric and asymmetric)
+JSON Web Almost Everything - JWA, JWS, JWE, JWK, JWT, JWKS for Node.js with minimal dependencies
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | jose |
-| Keywords           | jws, jwe, jwk, jwt, jwa |
-| # releases         | 1 |
-| # dependents       | 2 |
-| # downloads        | 14284 |
+| Keywords           | compact, decode, decrypt, eddsa, electron, encrypt, flattened, general, id token, id_token, jose, json web token, jsonwebtoken, jwa, jwe, jwk, jwks, jws, jwt, access_token, access token, logout_token, logout token, secp256k1, sign, validate, verify |
+| # releases         | 20 |
+| # dependents       | 14 |
+| # downloads        | 160735 |
 | # stars            | 2 |
 
 ## Links
-- [Homepage](https://github.com/autoit4you/node-jose#readme)
-- [Bugs](https://github.com/autoit4you/node-jose/issues)
-- [Repository](https://github.com/autoit4you/node-jose)
+- [Homepage](https://github.com/panva/jose)
+- [Bugs](https://github.com/panva/jose/issues)
+- [Repository](https://github.com/panva/jose)
 - [Npm](https://www.npmjs.com/package/jose)
     
 

@@ -10,9 +10,9 @@ Tool to turn functions with Node-style callback APIs into functions that return 
 | ------------------ | :-------------: |
 | Full name          | denodeify |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 277 |
-| # downloads        | 19829341 |
+| # releases         | 0 |
+| # dependents       | 285 |
+| # downloads        | 20969559 |
 | # stars            | 6 |
 
 ## Links

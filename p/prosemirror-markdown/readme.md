@@ -11,8 +11,8 @@ ProseMirror Markdown integration
 | Full name          | prosemirror-markdown |
 | Keywords           | - |
 | # releases         | 16 |
-| # dependents       | 12 |
-| # downloads        | 412482 |
+| # dependents       | 20 |
+| # downloads        | 1383362 |
 | # stars            | 0 |
 
 ## Links

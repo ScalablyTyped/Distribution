@@ -11,8 +11,8 @@ Validate html using validator.w3.org/nu
 | Full name          | html-validator |
 | Keywords           | html-validator, validation |
 | # releases         | 20 |
-| # dependents       | 17 |
-| # downloads        | 241170 |
+| # dependents       | 24 |
+| # downloads        | 304704 |
 | # stars            | 3 |
 
 ## Links

@@ -4,31 +4,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UpdateMaintenanceWindowTargetResult extends js.Object {
   /**
     * The updated description.
     */
-  var Description: js.UndefOr[MaintenanceWindowDescription] = js.undefined
+  var Description: js.UndefOr[MaintenanceWindowDescription] = js.native
   /**
     * The updated name.
     */
-  var Name: js.UndefOr[MaintenanceWindowName] = js.undefined
+  var Name: js.UndefOr[MaintenanceWindowName] = js.native
   /**
     * The updated owner.
     */
-  var OwnerInformation: js.UndefOr[typings.awsDashSdk.clientsSsmMod.OwnerInformation] = js.undefined
+  var OwnerInformation: js.UndefOr[typings.awsDashSdk.clientsSsmMod.OwnerInformation] = js.native
   /**
     * The updated targets.
     */
-  var Targets: js.UndefOr[typings.awsDashSdk.clientsSsmMod.Targets] = js.undefined
+  var Targets: js.UndefOr[typings.awsDashSdk.clientsSsmMod.Targets] = js.native
   /**
     * The maintenance window ID specified in the update request.
     */
-  var WindowId: js.UndefOr[MaintenanceWindowId] = js.undefined
+  var WindowId: js.UndefOr[MaintenanceWindowId] = js.native
   /**
     * The target ID specified in the update request.
     */
-  var WindowTargetId: js.UndefOr[MaintenanceWindowTargetId] = js.undefined
+  var WindowTargetId: js.UndefOr[MaintenanceWindowTargetId] = js.native
 }
 
 object UpdateMaintenanceWindowTargetResult {
@@ -42,12 +43,12 @@ object UpdateMaintenanceWindowTargetResult {
     WindowTargetId: MaintenanceWindowTargetId = null
   ): UpdateMaintenanceWindowTargetResult = {
     val __obj = js.Dynamic.literal()
-    if (Description != null) __obj.updateDynamic("Description")(Description)
-    if (Name != null) __obj.updateDynamic("Name")(Name)
-    if (OwnerInformation != null) __obj.updateDynamic("OwnerInformation")(OwnerInformation)
-    if (Targets != null) __obj.updateDynamic("Targets")(Targets)
-    if (WindowId != null) __obj.updateDynamic("WindowId")(WindowId)
-    if (WindowTargetId != null) __obj.updateDynamic("WindowTargetId")(WindowTargetId)
+    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
+    if (OwnerInformation != null) __obj.updateDynamic("OwnerInformation")(OwnerInformation.asInstanceOf[js.Any])
+    if (Targets != null) __obj.updateDynamic("Targets")(Targets.asInstanceOf[js.Any])
+    if (WindowId != null) __obj.updateDynamic("WindowId")(WindowId.asInstanceOf[js.Any])
+    if (WindowTargetId != null) __obj.updateDynamic("WindowTargetId")(WindowTargetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateMaintenanceWindowTargetResult]
   }
 }

@@ -9,7 +9,25 @@ package object clientsStoragegatewayMod {
   import typings.std.Date
 
   type ActivationKey = String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.ACCESS_DENIED
+    - typings.awsDashSdk.awsDashSdkStrings.DETACHED
+    - typings.awsDashSdk.awsDashSdkStrings.JOINED
+    - typings.awsDashSdk.awsDashSdkStrings.JOINING
+    - typings.awsDashSdk.awsDashSdkStrings.NETWORK_ERROR
+    - typings.awsDashSdk.awsDashSdkStrings.TIMEOUT
+    - typings.awsDashSdk.awsDashSdkStrings.UNKNOWN_ERROR
+    - java.lang.String
+  */
+  type ActiveDirectoryStatus = _ActiveDirectoryStatus | String
   type Authentication = String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.COMPLETE
+    - typings.awsDashSdk.awsDashSdkStrings.FAILED
+    - typings.awsDashSdk.awsDashSdkStrings.PENDING
+    - java.lang.String
+  */
+  type AvailabilityMonitorTestStatus = _AvailabilityMonitorTestStatus | String
   type BandwidthDownloadRateLimit = Double
   type BandwidthType = String
   type BandwidthUploadRateLimit = Double
@@ -63,6 +81,14 @@ package object clientsStoragegatewayMod {
   type GatewayType = String
   type Gateways = js.Array[GatewayInfo]
   type Host = String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.VMWARE
+    - typings.awsDashSdk.awsDashSdkStrings.`HYPER-V`
+    - typings.awsDashSdk.awsDashSdkStrings.EC2
+    - typings.awsDashSdk.awsDashSdkStrings.OTHER
+    - java.lang.String
+  */
+  type HostEnvironment = _HostEnvironment | String
   type Hosts = js.Array[Host]
   type HourOfDay = Double
   type IPV4AddressCIDR = String
@@ -82,7 +108,7 @@ package object clientsStoragegatewayMod {
   type NotificationId = String
   type NumTapesToCreate = Double
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.`private`
+    - typings.awsDashSdk.awsDashSdkStrings.private__
     - typings.awsDashSdk.awsDashSdkStrings.`public-read`
     - typings.awsDashSdk.awsDashSdkStrings.`public-read-write`
     - typings.awsDashSdk.awsDashSdkStrings.`authenticated-read`
@@ -137,6 +163,7 @@ package object clientsStoragegatewayMod {
   type TargetARN = String
   type TargetName = String
   type Time = Date
+  type TimeoutInSeconds = Double
   type VTLDeviceARN = String
   type VTLDeviceARNs = js.Array[VTLDeviceARN]
   type VTLDeviceProductIdentifier = String
@@ -154,7 +181,7 @@ package object clientsStoragegatewayMod {
   type VolumeUsedInBytes = Double
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2013-06-30`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

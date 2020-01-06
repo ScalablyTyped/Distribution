@@ -5,23 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GroupArgs extends js.Object {
   /**
     * The ID for the AWS account that the group is in. Currently, you use the ID for the AWS account that contains your Amazon QuickSight account.
     */
-  val awsAccountId: js.UndefOr[Input[String]] = js.undefined
+  val awsAccountId: js.UndefOr[Input[String]] = js.native
   /**
     * A description for the group.
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * A name for the group.
     */
-  val groupName: Input[String]
+  val groupName: Input[String] = js.native
   /**
     * The namespace. Currently, you should set this to `default`.
     */
-  val namespace: js.UndefOr[Input[String]] = js.undefined
+  val namespace: js.UndefOr[Input[String]] = js.native
 }
 
 object GroupArgs {

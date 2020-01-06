@@ -10,9 +10,9 @@ Simple, expected, and deterministic best-match sorting of an array in JavaScript
 | ------------------ | :-------------: |
 | Full name          | match-sorter |
 | Keywords           | autocomplete, filter list, sort, advanced sort, user intuitive sort |
-| # releases         | 10 |
-| # dependents       | 56 |
-| # downloads        | 1976340 |
+| # releases         | 12 |
+| # dependents       | 85 |
+| # downloads        | 4165495 |
 | # stars            | 10 |
 
 ## Links

@@ -10,7 +10,7 @@ trait Iterator[T, TReturn, TNext] extends js.Object {
   var `throw`: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], IteratorResult[T, TReturn]]] = js.native
   // NOTE: 'next' is defined using a tuple to ensure we report the correct assignability errors in all places.
   def next(
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type [] | [TNext] is not an array type */ args: js.Array[js.Any | TNext]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type [] | [TNext] is not an array type */ args: js.Array[js.Any | TNext]
   ): IteratorResult[T, TReturn] = js.native
 }
 

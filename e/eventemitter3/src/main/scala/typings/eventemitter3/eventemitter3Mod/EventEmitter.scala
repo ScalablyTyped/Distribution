@@ -20,7 +20,7 @@ trait EventEmitter[EventTypes /* <: String | js.Symbol | (/* import warning: imp
     */
   def emit[T /* <: EventNames[EventTypes] */](
     event: T,
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type EventArgs<EventTypes, T> is not an array type */ args: EventArgs[EventTypes, T]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type EventArgs<EventTypes, T> is not an array type */ args: EventArgs[EventTypes, T]
   ): Boolean = js.native
   /**
     * Return an array listing the events for which the emitter has registered

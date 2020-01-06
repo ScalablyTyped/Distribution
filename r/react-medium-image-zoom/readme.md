@@ -10,9 +10,9 @@ Medium.com style image zoom for React
 | ------------------ | :-------------: |
 | Full name          | react-medium-image-zoom |
 | Keywords           | react, react-component, medium, zoom, modal |
-| # releases         | 29 |
-| # dependents       | 13 |
-| # downloads        | 218962 |
+| # releases         | 24 |
+| # dependents       | 28 |
+| # downloads        | 432220 |
 | # stars            | 2 |
 
 ## Links

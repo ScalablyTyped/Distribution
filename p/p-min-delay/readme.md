@@ -11,8 +11,8 @@ Delay a promise a minimum amount of time
 | Full name          | p-min-delay |
 | Keywords           | promise, delay, minimum, min, resolve, stall, defer, wait, timeout, settimeout, event, loop, next, tick, delay, async, await, promises, bluebird |
 | # releases         | 3 |
-| # dependents       | 6 |
-| # downloads        | 56765 |
+| # dependents       | 9 |
+| # downloads        | 102825 |
 | # stars            | 1 |
 
 ## Links

@@ -4,21 +4,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GameProperty extends js.Object {
   /**
-    * Game property identifier.
+    * The game property identifier.
     */
-  var Key: GamePropertyKey
+  var Key: GamePropertyKey = js.native
   /**
-    * Game property value.
+    * The game property value.
     */
-  var Value: GamePropertyValue
+  var Value: GamePropertyValue = js.native
 }
 
 object GameProperty {
   @scala.inline
   def apply(Key: GamePropertyKey, Value: GamePropertyValue): GameProperty = {
-    val __obj = js.Dynamic.literal(Key = Key, Value = Value)
+    val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GameProperty]
   }

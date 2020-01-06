@@ -11,8 +11,8 @@ jpegtran imagemin plugin
 | Full name          | imagemin-jpegtran |
 | Keywords           | compress, image, imageminplugin, img, jpeg, jpegtran, jpg, minify, optimize |
 | # releases         | 2 |
-| # dependents       | 142 |
-| # downloads        | 10043114 |
+| # dependents       | 191 |
+| # downloads        | 11518238 |
 | # stars            | 11 |
 
 ## Links

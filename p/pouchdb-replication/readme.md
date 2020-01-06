@@ -10,9 +10,9 @@ PouchDB's replication and sync algorithm, as a plugin.
 | ------------------ | :-------------: |
 | Full name          | pouchdb-replication |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 21 |
-| # downloads        | 130444 |
+| # releases         | 8 |
+| # dependents       | 23 |
+| # downloads        | 246949 |
 | # stars            | 1 |
 
 ## Links

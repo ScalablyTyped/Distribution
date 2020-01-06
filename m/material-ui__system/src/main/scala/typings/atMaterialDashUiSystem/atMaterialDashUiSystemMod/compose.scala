@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object compose extends js.Object {
   def apply[T /* <: js.Array[StyleFunction[_]] */](
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type T is not an array type */ args: T
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type T is not an array type */ args: T
   ): ComposedStyleFunction[T] = js.native
 }
 

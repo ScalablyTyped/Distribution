@@ -10,9 +10,9 @@ Cordova/Phonegap plugin to navigate to a destination using native navigation app
 | ------------------ | :-------------: |
 | Full name          | uk.co.workingedge.phonegap.plugin.launchnavigator |
 | Keywords           | ecosystem:cordova, cordova, phonegap, ios, android, windows, navigation, navigator |
-| # releases         | 23 |
-| # dependents       | 2 |
-| # downloads        | 231846 |
+| # releases         | 14 |
+| # dependents       | 3 |
+| # downloads        | 342606 |
 | # stars            | 1 |
 
 ## Links

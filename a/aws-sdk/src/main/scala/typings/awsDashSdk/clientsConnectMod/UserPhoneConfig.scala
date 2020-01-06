@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UserPhoneConfig extends js.Object {
   /**
-    * The After Call Work (ACW) timeout setting, in seconds, for the user.
+    * The After Call Work (ACW) timeout setting, in seconds.
     */
-  var AfterContactWorkTimeLimit: js.UndefOr[typings.awsDashSdk.clientsConnectMod.AfterContactWorkTimeLimit] = js.undefined
+  var AfterContactWorkTimeLimit: js.UndefOr[typings.awsDashSdk.clientsConnectMod.AfterContactWorkTimeLimit] = js.native
   /**
-    * The Auto accept setting for the user, Yes or No.
+    * The Auto accept setting.
     */
-  var AutoAccept: js.UndefOr[typings.awsDashSdk.clientsConnectMod.AutoAccept] = js.undefined
+  var AutoAccept: js.UndefOr[typings.awsDashSdk.clientsConnectMod.AutoAccept] = js.native
   /**
     * The phone number for the user's desk phone.
     */
-  var DeskPhoneNumber: js.UndefOr[PhoneNumber] = js.undefined
+  var DeskPhoneNumber: js.UndefOr[PhoneNumber] = js.native
   /**
-    * The phone type selected for the user, either Soft phone or Desk phone.
+    * The phone type.
     */
-  var PhoneType: typings.awsDashSdk.clientsConnectMod.PhoneType
+  var PhoneType: typings.awsDashSdk.clientsConnectMod.PhoneType = js.native
 }
 
 object UserPhoneConfig {
@@ -33,8 +34,8 @@ object UserPhoneConfig {
   ): UserPhoneConfig = {
     val __obj = js.Dynamic.literal(PhoneType = PhoneType.asInstanceOf[js.Any])
     if (AfterContactWorkTimeLimit != null) __obj.updateDynamic("AfterContactWorkTimeLimit")(AfterContactWorkTimeLimit.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutoAccept)) __obj.updateDynamic("AutoAccept")(AutoAccept)
-    if (DeskPhoneNumber != null) __obj.updateDynamic("DeskPhoneNumber")(DeskPhoneNumber)
+    if (!js.isUndefined(AutoAccept)) __obj.updateDynamic("AutoAccept")(AutoAccept.asInstanceOf[js.Any])
+    if (DeskPhoneNumber != null) __obj.updateDynamic("DeskPhoneNumber")(DeskPhoneNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserPhoneConfig]
   }
 }

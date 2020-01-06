@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 package object clientsIamMod {
   import org.scalablytyped.runtime.StringDictionary
   import typings.awsDashSdk.awsDashSdkStrings.PermissionsBoundaryPolicy
-  import typings.awsDashSdk.awsDashSdkStrings.`text/csv`
+  import typings.awsDashSdk.awsDashSdkStrings.textSlashcsv
   import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
   import typings.node.Buffer
   import typings.std.Date
@@ -24,17 +24,17 @@ package object clientsIamMod {
   type ContextKeyNameType = String
   type ContextKeyNamesResultListType = js.Array[ContextKeyNameType]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.string
-    - typings.awsDashSdk.awsDashSdkStrings.stringList
+    - typings.awsDashSdk.awsDashSdkStrings.string__
+    - typings.awsDashSdk.awsDashSdkStrings.stringList_
     - typings.awsDashSdk.awsDashSdkStrings.numeric
     - typings.awsDashSdk.awsDashSdkStrings.numericList
-    - typings.awsDashSdk.awsDashSdkStrings.boolean
+    - typings.awsDashSdk.awsDashSdkStrings.boolean__
     - typings.awsDashSdk.awsDashSdkStrings.booleanList
-    - typings.awsDashSdk.awsDashSdkStrings.ip
+    - typings.awsDashSdk.awsDashSdkStrings.ip_
     - typings.awsDashSdk.awsDashSdkStrings.ipList
-    - typings.awsDashSdk.awsDashSdkStrings.binary
+    - typings.awsDashSdk.awsDashSdkStrings.binary__
     - typings.awsDashSdk.awsDashSdkStrings.binaryList
-    - typings.awsDashSdk.awsDashSdkStrings.date
+    - typings.awsDashSdk.awsDashSdkStrings.date_
     - typings.awsDashSdk.awsDashSdkStrings.dateList
     - java.lang.String
   */
@@ -51,9 +51,9 @@ package object clientsIamMod {
   */
   type DeletionTaskStatusType = _DeletionTaskStatusType | String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.User
-    - typings.awsDashSdk.awsDashSdkStrings.Role
-    - typings.awsDashSdk.awsDashSdkStrings.Group
+    - typings.awsDashSdk.awsDashSdkStrings.User_
+    - typings.awsDashSdk.awsDashSdkStrings.Role_
+    - typings.awsDashSdk.awsDashSdkStrings.Group_
     - typings.awsDashSdk.awsDashSdkStrings.LocalManagedPolicy
     - typings.awsDashSdk.awsDashSdkStrings.AWSManagedPolicy
     - java.lang.String
@@ -68,7 +68,7 @@ package object clientsIamMod {
   type OpenIDConnectProviderUrlType = String
   type PermissionsBoundaryAttachmentType = PermissionsBoundaryPolicy | String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.allowed
+    - typings.awsDashSdk.awsDashSdkStrings.allowed__
     - typings.awsDashSdk.awsDashSdkStrings.explicitDeny
     - typings.awsDashSdk.awsDashSdkStrings.implicitDeny
     - java.lang.String
@@ -78,13 +78,13 @@ package object clientsIamMod {
   type PolicyIdentifierType = String
   type PolicyRoleListType = js.Array[PolicyRole]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.user
-    - typings.awsDashSdk.awsDashSdkStrings.group
-    - typings.awsDashSdk.awsDashSdkStrings.role
+    - typings.awsDashSdk.awsDashSdkStrings.user__
+    - typings.awsDashSdk.awsDashSdkStrings.group__
+    - typings.awsDashSdk.awsDashSdkStrings.role__
     - typings.awsDashSdk.awsDashSdkStrings.`aws-managed`
     - typings.awsDashSdk.awsDashSdkStrings.`user-managed`
-    - typings.awsDashSdk.awsDashSdkStrings.resource
-    - typings.awsDashSdk.awsDashSdkStrings.none
+    - typings.awsDashSdk.awsDashSdkStrings.resource__
+    - typings.awsDashSdk.awsDashSdkStrings.none__
     - java.lang.String
   */
   type PolicySourceType = _PolicySourceType | String
@@ -98,7 +98,7 @@ package object clientsIamMod {
   type ReasonType = String
   type RegionNameType = String
   type ReportContentType = Buffer | Uint8Array | Blob | String
-  type ReportFormatType = `text/csv` | String
+  type ReportFormatType = textSlashcsv | String
   type ReportStateDescriptionType = String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.STARTED
@@ -127,15 +127,15 @@ package object clientsIamMod {
   type accountAliasType = String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2010-05-08`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String
   type arnType = String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Assigned
+    - typings.awsDashSdk.awsDashSdkStrings.Assigned_
     - typings.awsDashSdk.awsDashSdkStrings.Unassigned
-    - typings.awsDashSdk.awsDashSdkStrings.Any
+    - typings.awsDashSdk.awsDashSdkStrings.Any_
     - java.lang.String
   */
   type assignmentStatusType = _assignmentStatusType | String
@@ -213,9 +213,9 @@ package object clientsIamMod {
   type policyOwnerEntityType = _policyOwnerEntityType | String
   type policyPathType = String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.All
+    - typings.awsDashSdk.awsDashSdkStrings.All_
     - typings.awsDashSdk.awsDashSdkStrings.AWS
-    - typings.awsDashSdk.awsDashSdkStrings.Local
+    - typings.awsDashSdk.awsDashSdkStrings.Local_
     - java.lang.String
   */
   type policyScopeType = _policyScopeType | String
@@ -255,8 +255,8 @@ package object clientsIamMod {
   */
   type sortKeyType = _sortKeyType | String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Active
-    - typings.awsDashSdk.awsDashSdkStrings.Inactive
+    - typings.awsDashSdk.awsDashSdkStrings.Active_
+    - typings.awsDashSdk.awsDashSdkStrings.Inactive_
     - java.lang.String
   */
   type statusType = _statusType | String

@@ -11,8 +11,8 @@ Treat a collection of Buffers as a single contiguous partially mutable Buffer.
 | Full name          | buffers |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 122 |
-| # downloads        | 26993668 |
+| # dependents       | 147 |
+| # downloads        | 32968535 |
 | # stars            | 0 |
 
 ## Links

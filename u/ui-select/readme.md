@@ -9,9 +9,9 @@ Typings are for version 0.13.2
 | ------------------ | :-------------: |
 | Full name          | ui-select |
 | Keywords           | - |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 42 |
-| # downloads        | 2354462 |
+| # downloads        | 3121213 |
 | # stars            | 3 |
 
 ## Links

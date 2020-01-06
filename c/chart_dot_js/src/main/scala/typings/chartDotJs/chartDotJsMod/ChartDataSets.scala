@@ -39,6 +39,7 @@ trait ChartDataSets extends js.Object {
   var hoverBackgroundColor: js.UndefOr[ChartColor | js.Array[ChartColor] | Scriptable[ChartColor]] = js.undefined
   var hoverBorderColor: js.UndefOr[ChartColor | js.Array[ChartColor] | Scriptable[ChartColor]] = js.undefined
   var hoverBorderWidth: js.UndefOr[Double | js.Array[Double] | Scriptable[Double]] = js.undefined
+  var hoverRadius: js.UndefOr[Double] = js.undefined
   var label: js.UndefOr[String] = js.undefined
   var lineTension: js.UndefOr[Double] = js.undefined
   var maxBarThickness: js.UndefOr[Double] = js.undefined
@@ -92,6 +93,7 @@ object ChartDataSets {
     hoverBackgroundColor: ChartColor | js.Array[ChartColor] | Scriptable[ChartColor] = null,
     hoverBorderColor: ChartColor | js.Array[ChartColor] | Scriptable[ChartColor] = null,
     hoverBorderWidth: Double | js.Array[Double] | Scriptable[Double] = null,
+    hoverRadius: Int | Double = null,
     label: String = null,
     lineTension: Int | Double = null,
     maxBarThickness: Int | Double = null,
@@ -140,6 +142,7 @@ object ChartDataSets {
     if (hoverBackgroundColor != null) __obj.updateDynamic("hoverBackgroundColor")(hoverBackgroundColor.asInstanceOf[js.Any])
     if (hoverBorderColor != null) __obj.updateDynamic("hoverBorderColor")(hoverBorderColor.asInstanceOf[js.Any])
     if (hoverBorderWidth != null) __obj.updateDynamic("hoverBorderWidth")(hoverBorderWidth.asInstanceOf[js.Any])
+    if (hoverRadius != null) __obj.updateDynamic("hoverRadius")(hoverRadius.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (lineTension != null) __obj.updateDynamic("lineTension")(lineTension.asInstanceOf[js.Any])
     if (maxBarThickness != null) __obj.updateDynamic("maxBarThickness")(maxBarThickness.asInstanceOf[js.Any])

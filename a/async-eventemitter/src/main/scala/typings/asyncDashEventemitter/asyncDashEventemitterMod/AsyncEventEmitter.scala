@@ -63,7 +63,7 @@ trait AsyncEventEmitter[T /* <: EventMap */] extends EventEmitter {
     */
   def emit[E /* <: String */](
     event: E with String,
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type Parameters<T[E]> is not an array type */ args: Parameters[
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<T[E]> is not an array type */ args: Parameters[
       /* import warning: importer.ImportType#apply Failed type conversion: T[E] */ js.Any
     ]
   ): Boolean = js.native

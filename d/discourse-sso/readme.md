@@ -12,7 +12,7 @@ Single-sign-on helper package for Discourse
 | Keywords           | discourse, sso, login, helper package |
 | # releases         | 1 |
 | # dependents       | 1 |
-| # downloads        | 97051 |
+| # downloads        | 195955 |
 | # stars            | 2 |
 
 ## Links

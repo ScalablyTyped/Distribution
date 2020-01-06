@@ -3,16 +3,16 @@ package typings.yaml.yamlMod.cst
 import typings.yaml.yamlStrings.Colon
 import typings.yaml.yamlStrings.Comma
 import typings.yaml.yamlStrings.Leftcurlybracket
-import typings.yaml.yamlStrings.Leftsquarebracket
 import typings.yaml.yamlStrings.Questionmark
 import typings.yaml.yamlStrings.Rightcurlybracket
-import typings.yaml.yamlStrings.Rightsquarebracket
+import typings.yaml.yamlStrings.`[`
+import typings.yaml.yamlStrings.`]`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FlowChar extends js.Object {
-  var char: Leftcurlybracket | Rightcurlybracket | Leftsquarebracket | Rightsquarebracket | Comma | Questionmark | Colon
+  var char: Leftcurlybracket | Rightcurlybracket | `[` | `]` | Comma | Questionmark | Colon
   var offset: Double
   var origOffset: js.UndefOr[Double] = js.undefined
 }
@@ -20,7 +20,7 @@ trait FlowChar extends js.Object {
 object FlowChar {
   @scala.inline
   def apply(
-    char: Leftcurlybracket | Rightcurlybracket | Leftsquarebracket | Rightsquarebracket | Comma | Questionmark | Colon,
+    char: Leftcurlybracket | Rightcurlybracket | `[` | `]` | Comma | Questionmark | Colon,
     offset: Double,
     origOffset: Int | Double = null
   ): FlowChar = {

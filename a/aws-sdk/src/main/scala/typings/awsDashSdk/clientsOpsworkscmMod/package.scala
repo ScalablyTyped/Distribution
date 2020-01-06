@@ -8,6 +8,7 @@ package object clientsOpsworkscmMod {
   import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
   import typings.std.Date
 
+  type AWSOpsWorksCMResourceArn = java.lang.String
   type AccountAttributes = js.Array[AccountAttribute]
   type AttributeName = java.lang.String
   type AttributeValue = java.lang.String
@@ -30,6 +31,9 @@ package object clientsOpsworkscmMod {
   type Backups = js.Array[Backup]
   type Boolean = scala.Boolean
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
+  type CustomCertificate = java.lang.String
+  type CustomDomain = java.lang.String
+  type CustomPrivateKey = java.lang.String
   type EngineAttributeName = java.lang.String
   type EngineAttributeValue = java.lang.String
   type EngineAttributes = js.Array[EngineAttribute]
@@ -76,11 +80,15 @@ package object clientsOpsworkscmMod {
   type ServiceRoleArn = java.lang.String
   type String = java.lang.String
   type Strings = js.Array[String]
+  type TagKey = java.lang.String
+  type TagKeyList = js.Array[TagKey]
+  type TagList = js.Array[Tag]
+  type TagValue = java.lang.String
   type TimeWindowDefinition = java.lang.String
   type Timestamp = Date
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2016-11-01`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | java.lang.String

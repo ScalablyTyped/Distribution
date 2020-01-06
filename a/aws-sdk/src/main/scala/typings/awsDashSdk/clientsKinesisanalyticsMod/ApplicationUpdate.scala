@@ -4,27 +4,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ApplicationUpdate extends js.Object {
   /**
     * Describes application code updates.
     */
-  var ApplicationCodeUpdate: js.UndefOr[ApplicationCode] = js.undefined
+  var ApplicationCodeUpdate: js.UndefOr[ApplicationCode] = js.native
   /**
     * Describes application CloudWatch logging option updates.
     */
-  var CloudWatchLoggingOptionUpdates: js.UndefOr[typings.awsDashSdk.clientsKinesisanalyticsMod.CloudWatchLoggingOptionUpdates] = js.undefined
+  var CloudWatchLoggingOptionUpdates: js.UndefOr[typings.awsDashSdk.clientsKinesisanalyticsMod.CloudWatchLoggingOptionUpdates] = js.native
   /**
     * Describes application input configuration updates.
     */
-  var InputUpdates: js.UndefOr[typings.awsDashSdk.clientsKinesisanalyticsMod.InputUpdates] = js.undefined
+  var InputUpdates: js.UndefOr[typings.awsDashSdk.clientsKinesisanalyticsMod.InputUpdates] = js.native
   /**
     * Describes application output configuration updates.
     */
-  var OutputUpdates: js.UndefOr[typings.awsDashSdk.clientsKinesisanalyticsMod.OutputUpdates] = js.undefined
+  var OutputUpdates: js.UndefOr[typings.awsDashSdk.clientsKinesisanalyticsMod.OutputUpdates] = js.native
   /**
     * Describes application reference data source updates.
     */
-  var ReferenceDataSourceUpdates: js.UndefOr[typings.awsDashSdk.clientsKinesisanalyticsMod.ReferenceDataSourceUpdates] = js.undefined
+  var ReferenceDataSourceUpdates: js.UndefOr[typings.awsDashSdk.clientsKinesisanalyticsMod.ReferenceDataSourceUpdates] = js.native
 }
 
 object ApplicationUpdate {
@@ -37,11 +38,11 @@ object ApplicationUpdate {
     ReferenceDataSourceUpdates: ReferenceDataSourceUpdates = null
   ): ApplicationUpdate = {
     val __obj = js.Dynamic.literal()
-    if (ApplicationCodeUpdate != null) __obj.updateDynamic("ApplicationCodeUpdate")(ApplicationCodeUpdate)
-    if (CloudWatchLoggingOptionUpdates != null) __obj.updateDynamic("CloudWatchLoggingOptionUpdates")(CloudWatchLoggingOptionUpdates)
-    if (InputUpdates != null) __obj.updateDynamic("InputUpdates")(InputUpdates)
-    if (OutputUpdates != null) __obj.updateDynamic("OutputUpdates")(OutputUpdates)
-    if (ReferenceDataSourceUpdates != null) __obj.updateDynamic("ReferenceDataSourceUpdates")(ReferenceDataSourceUpdates)
+    if (ApplicationCodeUpdate != null) __obj.updateDynamic("ApplicationCodeUpdate")(ApplicationCodeUpdate.asInstanceOf[js.Any])
+    if (CloudWatchLoggingOptionUpdates != null) __obj.updateDynamic("CloudWatchLoggingOptionUpdates")(CloudWatchLoggingOptionUpdates.asInstanceOf[js.Any])
+    if (InputUpdates != null) __obj.updateDynamic("InputUpdates")(InputUpdates.asInstanceOf[js.Any])
+    if (OutputUpdates != null) __obj.updateDynamic("OutputUpdates")(OutputUpdates.asInstanceOf[js.Any])
+    if (ReferenceDataSourceUpdates != null) __obj.updateDynamic("ReferenceDataSourceUpdates")(ReferenceDataSourceUpdates.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationUpdate]
   }
 }

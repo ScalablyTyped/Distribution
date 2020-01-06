@@ -11,8 +11,8 @@ The lodash method `_.values` exported as a module.
 | Full name          | lodash.values |
 | Keywords           | lodash-modularized, values |
 | # releases         | 0 |
-| # dependents       | 197 |
-| # downloads        | 29112564 |
+| # dependents       | 219 |
+| # downloads        | 32111630 |
 | # stars            | 0 |
 
 ## Links

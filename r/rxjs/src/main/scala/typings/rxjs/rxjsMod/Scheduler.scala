@@ -14,8 +14,8 @@ class Scheduler protected ()
   def this(SchedulerAction: Instantiable2[
         /* scheduler */ typings.rxjs.internalSchedulerMod.Scheduler, 
         /* work */ js.ThisFunction1[
-          /* this */ SchedulerAction[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any], 
-          /* state */ js.UndefOr[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any], 
+          /* this */ SchedulerAction[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
+          /* state */ js.UndefOr[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
           Unit
         ], 
         Action[js.Object]
@@ -24,8 +24,8 @@ class Scheduler protected ()
     SchedulerAction: Instantiable2[
         /* scheduler */ typings.rxjs.internalSchedulerMod.Scheduler, 
         /* work */ js.ThisFunction1[
-          /* this */ SchedulerAction[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any], 
-          /* state */ js.UndefOr[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any], 
+          /* this */ SchedulerAction[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
+          /* state */ js.UndefOr[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
           Unit
         ], 
         Action[js.Object]

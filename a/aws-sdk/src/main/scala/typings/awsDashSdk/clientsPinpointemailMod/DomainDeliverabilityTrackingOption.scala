@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DomainDeliverabilityTrackingOption extends js.Object {
   /**
     * A verified domain that’s associated with your AWS account and currently has an active Deliverability dashboard subscription.
     */
-  var Domain: js.UndefOr[typings.awsDashSdk.clientsPinpointemailMod.Domain] = js.undefined
+  var Domain: js.UndefOr[typings.awsDashSdk.clientsPinpointemailMod.Domain] = js.native
   /**
     * An object that contains information about the inbox placement data settings for the domain.
     */
-  var InboxPlacementTrackingOption: js.UndefOr[typings.awsDashSdk.clientsPinpointemailMod.InboxPlacementTrackingOption] = js.undefined
+  var InboxPlacementTrackingOption: js.UndefOr[typings.awsDashSdk.clientsPinpointemailMod.InboxPlacementTrackingOption] = js.native
   /**
     * The date, in Unix time format, when you enabled the Deliverability dashboard for the domain.
     */
-  var SubscriptionStartDate: js.UndefOr[Timestamp] = js.undefined
+  var SubscriptionStartDate: js.UndefOr[Timestamp] = js.native
 }
 
 object DomainDeliverabilityTrackingOption {
@@ -27,9 +28,9 @@ object DomainDeliverabilityTrackingOption {
     SubscriptionStartDate: Timestamp = null
   ): DomainDeliverabilityTrackingOption = {
     val __obj = js.Dynamic.literal()
-    if (Domain != null) __obj.updateDynamic("Domain")(Domain)
-    if (InboxPlacementTrackingOption != null) __obj.updateDynamic("InboxPlacementTrackingOption")(InboxPlacementTrackingOption)
-    if (SubscriptionStartDate != null) __obj.updateDynamic("SubscriptionStartDate")(SubscriptionStartDate)
+    if (Domain != null) __obj.updateDynamic("Domain")(Domain.asInstanceOf[js.Any])
+    if (InboxPlacementTrackingOption != null) __obj.updateDynamic("InboxPlacementTrackingOption")(InboxPlacementTrackingOption.asInstanceOf[js.Any])
+    if (SubscriptionStartDate != null) __obj.updateDynamic("SubscriptionStartDate")(SubscriptionStartDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainDeliverabilityTrackingOption]
   }
 }

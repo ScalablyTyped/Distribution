@@ -12,7 +12,7 @@ A fast and simple way to diff childNodes
 | Keywords           | dom, diff |
 | # releases         | 33 |
 | # dependents       | 10 |
-| # downloads        | 104705 |
+| # downloads        | 129561 |
 | # stars            | 0 |
 
 ## Links

@@ -10,10 +10,10 @@ A modern and powerful server for Node.js
 | ------------------ | :-------------: |
 | Full name          | server |
 | Keywords           | - |
-| # releases         | 43 |
-| # dependents       | 17 |
-| # downloads        | 69558 |
-| # stars            | 13 |
+| # releases         | 15 |
+| # dependents       | 24 |
+| # downloads        | 139161 |
+| # stars            | 14 |
 
 ## Links
 - [Homepage](https://serverjs.io/)

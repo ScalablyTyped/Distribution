@@ -10,9 +10,9 @@ Typings are for version 1.7
 | ------------------ | :-------------: |
 | Full name          | wepy |
 | Keywords           | - |
-| # releases         | 19 |
-| # dependents       | 31 |
-| # downloads        | 48177 |
+| # releases         | 8 |
+| # dependents       | 32 |
+| # downloads        | 37873 |
 | # stars            | 5 |
 
 ## Links

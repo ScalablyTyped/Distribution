@@ -10,12 +10,15 @@ Internal, shared utilities for Reach UI.
 | ------------------ | :-------------: |
 | Full name          | @reach/utils |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 10 |
-| # downloads        | 287476 |
+| # releases         | 18 |
+| # dependents       | 17 |
+| # downloads        | 1729042 |
 | # stars            | 0 |
 
 ## Links
+- [Homepage](https://github.com/reach/reach-ui#readme)
+- [Bugs](https://github.com/reach/reach-ui/issues)
+- [Repository](https://github.com/reach/reach-ui)
 - [Npm](https://www.npmjs.com/package/%40reach%2Futils)
     
 

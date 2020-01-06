@@ -9,10 +9,10 @@ OpenID Connect Relying Party (RP, Client) implementation for Node.js runtime, su
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | openid-client |
-| Keywords           | auth, authentication, basic, certified, client, connect, dynamic, hybrid, identity, implicit, oauth, oauth2, oidc, openid, relying party, passport, strategy |
-| # releases         | 38 |
-| # dependents       | 51 |
-| # downloads        | 1114669 |
+| Keywords           | auth, authentication, basic, certified, client, connect, dynamic, electron, hybrid, identity, implicit, oauth, oauth2, oidc, openid, passport, relying party, strategy |
+| # releases         | 53 |
+| # dependents       | 76 |
+| # downloads        | 2291325 |
 | # stars            | 12 |
 
 ## Links

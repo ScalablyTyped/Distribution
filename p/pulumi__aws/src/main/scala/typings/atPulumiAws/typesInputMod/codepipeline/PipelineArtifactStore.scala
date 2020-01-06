@@ -5,10 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PipelineArtifactStore extends js.Object {
-  var encryptionKey: js.UndefOr[Input[PipelineArtifactStoreEncryptionKey]] = js.undefined
-  var location: Input[String]
-  var `type`: Input[String]
+  var encryptionKey: js.UndefOr[Input[PipelineArtifactStoreEncryptionKey]] = js.native
+  var location: Input[String] = js.native
+  var `type`: Input[String] = js.native
 }
 
 object PipelineArtifactStore {

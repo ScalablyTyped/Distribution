@@ -10,9 +10,9 @@ Opinionated toolkit for building websites with beautiful typography
 | ------------------ | :-------------: |
 | Full name          | typography |
 | Keywords           | css, inline styles, react, typography, vertical-rhythm |
-| # releases         | 17 |
-| # dependents       | 37 |
-| # downloads        | 1012595 |
+| # releases         | 11 |
+| # dependents       | 78 |
+| # downloads        | 1901113 |
 | # stars            | 4 |
 
 ## Links

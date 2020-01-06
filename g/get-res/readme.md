@@ -12,7 +12,7 @@ Get ten most popular screen resolutions
 | Keywords           | resolution, screen, size |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 76711 |
+| # downloads        | 99183 |
 | # stars            | 0 |
 
 ## Links

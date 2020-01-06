@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object clientsApigatewayMod {
   import org.scalablytyped.runtime.StringDictionary
-  import typings.awsDashSdk.awsDashSdkStrings.csv
+  import typings.awsDashSdk.awsDashSdkStrings.csv_
   import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
   import typings.node.Buffer
   import typings.std.Date
@@ -18,7 +18,7 @@ package object clientsApigatewayMod {
     - java.lang.String
   */
   type ApiKeySourceType = _ApiKeySourceType | java.lang.String
-  type ApiKeysFormat = csv | java.lang.String
+  type ApiKeysFormat = csv_ | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.TOKEN
     - typings.awsDashSdk.awsDashSdkStrings.REQUEST
@@ -28,12 +28,12 @@ package object clientsApigatewayMod {
   type AuthorizerType = _AuthorizerType | java.lang.String
   type Boolean = scala.Boolean
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.`0DOT5`
-    - typings.awsDashSdk.awsDashSdkStrings.`1DOT6`
-    - typings.awsDashSdk.awsDashSdkStrings.`6DOT1`
-    - typings.awsDashSdk.awsDashSdkStrings.`13DOT5`
-    - typings.awsDashSdk.awsDashSdkStrings.`28DOT4`
-    - typings.awsDashSdk.awsDashSdkStrings.`58DOT2`
+    - typings.awsDashSdk.awsDashSdkStrings.`0Dot5`
+    - typings.awsDashSdk.awsDashSdkStrings.`1Dot6`
+    - typings.awsDashSdk.awsDashSdkStrings.`6Dot1`
+    - typings.awsDashSdk.awsDashSdkStrings.`13Dot5`
+    - typings.awsDashSdk.awsDashSdkStrings.`28Dot4`
+    - typings.awsDashSdk.awsDashSdkStrings.`58Dot2`
     - typings.awsDashSdk.awsDashSdkStrings.`118`
     - typings.awsDashSdk.awsDashSdkStrings.`237`
     - java.lang.String
@@ -174,12 +174,12 @@ package object clientsApigatewayMod {
   type NullableBoolean = scala.Boolean
   type NullableInteger = scala.Double
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.add
-    - typings.awsDashSdk.awsDashSdkStrings.remove
-    - typings.awsDashSdk.awsDashSdkStrings.replace
+    - typings.awsDashSdk.awsDashSdkStrings.add__
+    - typings.awsDashSdk.awsDashSdkStrings.remove__
+    - typings.awsDashSdk.awsDashSdkStrings.replace_
     - typings.awsDashSdk.awsDashSdkStrings.move
-    - typings.awsDashSdk.awsDashSdkStrings.copy
-    - typings.awsDashSdk.awsDashSdkStrings.test
+    - typings.awsDashSdk.awsDashSdkStrings.copy_
+    - typings.awsDashSdk.awsDashSdkStrings.test__
     - java.lang.String
   */
   type Op = _Op | java.lang.String
@@ -187,7 +187,7 @@ package object clientsApigatewayMod {
   type ProviderARN = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.merge
-    - typings.awsDashSdk.awsDashSdkStrings.overwrite
+    - typings.awsDashSdk.awsDashSdkStrings.overwrite_
     - java.lang.String
   */
   type PutMode = _PutMode | java.lang.String
@@ -225,7 +225,7 @@ package object clientsApigatewayMod {
   type _Blob = Buffer | Uint8Array | Blob | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2015-07-09`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | java.lang.String

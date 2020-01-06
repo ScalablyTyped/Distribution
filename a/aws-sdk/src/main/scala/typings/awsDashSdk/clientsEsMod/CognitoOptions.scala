@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CognitoOptions extends js.Object {
   /**
     * Specifies the option to enable Cognito for Kibana authentication.
     */
-  var Enabled: js.UndefOr[Boolean] = js.undefined
+  var Enabled: js.UndefOr[Boolean] = js.native
   /**
     * Specifies the Cognito identity pool ID for Kibana authentication.
     */
-  var IdentityPoolId: js.UndefOr[typings.awsDashSdk.clientsEsMod.IdentityPoolId] = js.undefined
+  var IdentityPoolId: js.UndefOr[typings.awsDashSdk.clientsEsMod.IdentityPoolId] = js.native
   /**
     * Specifies the role ARN that provides Elasticsearch permissions for accessing Cognito resources.
     */
-  var RoleArn: js.UndefOr[typings.awsDashSdk.clientsEsMod.RoleArn] = js.undefined
+  var RoleArn: js.UndefOr[typings.awsDashSdk.clientsEsMod.RoleArn] = js.native
   /**
     * Specifies the Cognito user pool ID for Kibana authentication.
     */
-  var UserPoolId: js.UndefOr[typings.awsDashSdk.clientsEsMod.UserPoolId] = js.undefined
+  var UserPoolId: js.UndefOr[typings.awsDashSdk.clientsEsMod.UserPoolId] = js.native
 }
 
 object CognitoOptions {
@@ -32,10 +33,10 @@ object CognitoOptions {
     UserPoolId: UserPoolId = null
   ): CognitoOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled)
-    if (IdentityPoolId != null) __obj.updateDynamic("IdentityPoolId")(IdentityPoolId)
-    if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn)
-    if (UserPoolId != null) __obj.updateDynamic("UserPoolId")(UserPoolId)
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.asInstanceOf[js.Any])
+    if (IdentityPoolId != null) __obj.updateDynamic("IdentityPoolId")(IdentityPoolId.asInstanceOf[js.Any])
+    if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn.asInstanceOf[js.Any])
+    if (UserPoolId != null) __obj.updateDynamic("UserPoolId")(UserPoolId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CognitoOptions]
   }
 }

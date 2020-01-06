@@ -10,9 +10,9 @@ Proxy middleware for koa
 | ------------------ | :-------------: |
 | Full name          | koa-proxy |
 | Keywords           | koa, middleware, proxy |
-| # releases         | 2 |
-| # dependents       | 69 |
-| # downloads        | 260543 |
+| # releases         | 5 |
+| # dependents       | 74 |
+| # downloads        | 306891 |
 | # stars            | 5 |
 
 ## Links

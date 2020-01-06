@@ -11,8 +11,8 @@ Convert to/from strings and array of bytes
 | Full name          | convert-string |
 | Keywords           | string, strings, convert, hex, bytes |
 | # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 830572 |
+| # dependents       | 9 |
+| # downloads        | 991255 |
 | # stars            | 0 |
 
 ## Links

@@ -4,25 +4,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ResultRowValue extends js.Object {
   /**
-    * The name of the field that Amazon Pinpoint uses to store the value specified by the Value property.
+    * The friendly name of the metric whose value is specified by the Value property.
     */
-  var Key: __string
+  var Key: __string = js.native
   /**
-    *  The data type of the value specified by the Value property.
+    * The data type of the value specified by the Value property.
     */
-  var Type: __string
+  var Type: __string = js.native
   /**
     * In a Values object, the value for the metric that the query retrieved data for. In a GroupedBys object, the value for the field that was used to group data in a result set that contains multiple results (Values objects).
     */
-  var Value: __string
+  var Value: __string = js.native
 }
 
 object ResultRowValue {
   @scala.inline
   def apply(Key: __string, Type: __string, Value: __string): ResultRowValue = {
-    val __obj = js.Dynamic.literal(Key = Key, Type = Type, Value = Value)
+    val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ResultRowValue]
   }

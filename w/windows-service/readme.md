@@ -12,7 +12,7 @@ Run Node.JS programs as native Windows Services.
 | Keywords           | service, windows, windows-service |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 824 |
+| # downloads        | 844 |
 | # stars            | 7 |
 
 ## Links

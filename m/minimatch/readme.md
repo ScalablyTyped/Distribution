@@ -11,8 +11,8 @@ a glob matcher in javascript
 | Full name          | minimatch |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 3049 |
-| # downloads        | 612131902 |
+| # dependents       | 3443 |
+| # downloads        | 757640631 |
 | # stars            | 99 |
 
 ## Links

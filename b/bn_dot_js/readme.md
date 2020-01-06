@@ -10,9 +10,9 @@ Big number implementation in pure javascript
 | ------------------ | :-------------: |
 | Full name          | bn.js |
 | Keywords           | BN, BigNum, Big number, Modulo, Montgomery |
-| # releases         | 3 |
-| # dependents       | 956 |
-| # downloads        | 197329430 |
+| # releases         | 4 |
+| # dependents       | 1265 |
+| # downloads        | 314903431 |
 | # stars            | 10 |
 
 ## Links

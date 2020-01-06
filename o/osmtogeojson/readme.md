@@ -10,9 +10,9 @@ convert OSM to geojson
 | ------------------ | :-------------: |
 | Full name          | osmtogeojson |
 | Keywords           | openstreetmap, geojson |
-| # releases         | 4 |
-| # dependents       | 20 |
-| # downloads        | 44804 |
+| # releases         | 2 |
+| # dependents       | 21 |
+| # downloads        | 86727 |
 | # stars            | 4 |
 
 ## Links

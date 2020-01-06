@@ -4,15 +4,15 @@
 Typings are for version 8.1
 
 ## Library description:
-An Apollo Link for Apollo Client that allows FileList, File, Blob or ReactNativeFile instances within query or mutation variables and sends GraphQL multipart requests.
+A terminating Apollo Link for Apollo Client that allows FileList, File, Blob or ReactNativeFile instances within query or mutation variables and sends GraphQL multipart requests.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | apollo-upload-client |
 | Keywords           | graphql, multipart, request, file, upload, apollo, client, link, react, native |
-| # releases         | 36 |
-| # dependents       | 18 |
-| # downloads        | 2694509 |
+| # releases         | 16 |
+| # dependents       | 44 |
+| # downloads        | 7100196 |
 | # stars            | 2 |
 
 ## Links

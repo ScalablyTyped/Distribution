@@ -10,9 +10,9 @@ Easy to use asynchronous job queue. Successor of 'caolan/async.queue'.
 | ------------------ | :-------------: |
 | Full name          | tress |
 | Keywords           | async, queue |
-| # releases         | 8 |
+| # releases         | 6 |
 | # dependents       | 3 |
-| # downloads        | 11818 |
+| # downloads        | 21623 |
 | # stars            | 1 |
 
 ## Links

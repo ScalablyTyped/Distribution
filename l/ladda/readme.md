@@ -10,9 +10,9 @@ Buttons with built-in loading indicators
 | ------------------ | :-------------: |
 | Full name          | ladda |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 23 |
-| # downloads        | 1240646 |
+| # releases         | 5 |
+| # dependents       | 25 |
+| # downloads        | 1427972 |
 | # stars            | 8 |
 
 ## Links

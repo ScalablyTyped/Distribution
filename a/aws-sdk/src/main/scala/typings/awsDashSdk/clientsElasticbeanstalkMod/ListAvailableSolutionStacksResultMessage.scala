@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ListAvailableSolutionStacksResultMessage extends js.Object {
   /**
     *  A list of available solution stacks and their SolutionStackDescription. 
     */
-  var SolutionStackDetails: js.UndefOr[AvailableSolutionStackDetailsList] = js.undefined
+  var SolutionStackDetails: js.UndefOr[AvailableSolutionStackDetailsList] = js.native
   /**
     * A list of available solution stacks.
     */
-  var SolutionStacks: js.UndefOr[AvailableSolutionStackNamesList] = js.undefined
+  var SolutionStacks: js.UndefOr[AvailableSolutionStackNamesList] = js.native
 }
 
 object ListAvailableSolutionStacksResultMessage {
@@ -22,8 +23,8 @@ object ListAvailableSolutionStacksResultMessage {
     SolutionStacks: AvailableSolutionStackNamesList = null
   ): ListAvailableSolutionStacksResultMessage = {
     val __obj = js.Dynamic.literal()
-    if (SolutionStackDetails != null) __obj.updateDynamic("SolutionStackDetails")(SolutionStackDetails)
-    if (SolutionStacks != null) __obj.updateDynamic("SolutionStacks")(SolutionStacks)
+    if (SolutionStackDetails != null) __obj.updateDynamic("SolutionStackDetails")(SolutionStackDetails.asInstanceOf[js.Any])
+    if (SolutionStacks != null) __obj.updateDynamic("SolutionStacks")(SolutionStacks.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAvailableSolutionStacksResultMessage]
   }
 }

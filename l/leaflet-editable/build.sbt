@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "leaflet-editable"
-version := "0.7-dt-20190212Z-51fb17"
-scalaVersion := "2.12.9"
+version := "0.7-dt-20190212Z-e88ba2"
+scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "geojson" % "7946.0-dt-20190925Z-2af848",
-  "org.scalablytyped" %%% "leaflet" % "1.5-dt-20190927Z-46e521",
-  "org.scalablytyped" %%% "std" % "3.6-c16502")
+  "org.scalablytyped" %%% "geojson" % "7946.0-dt-20190925Z-871c5b",
+  "org.scalablytyped" %%% "leaflet" % "1.5-dt-20191217Z-2e8b3a",
+  "org.scalablytyped" %%% "std" % "3.7-b6d959")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

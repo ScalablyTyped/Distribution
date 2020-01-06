@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
 */
 trait Protocol extends js.Object
 
+object Protocol {
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def tcp: typings.atPulumiAws.atPulumiAwsStrings.tcp = this.cast("tcp")
+  @scala.inline
+  def udp: typings.atPulumiAws.atPulumiAwsStrings.udp = this.cast("udp")
+}
+

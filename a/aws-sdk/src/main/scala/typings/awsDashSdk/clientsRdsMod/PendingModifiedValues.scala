@@ -4,64 +4,65 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PendingModifiedValues extends js.Object {
   /**
     *  Contains the new AllocatedStorage size for the DB instance that will be applied or is currently being applied. 
     */
-  var AllocatedStorage: js.UndefOr[IntegerOptional] = js.undefined
+  var AllocatedStorage: js.UndefOr[IntegerOptional] = js.native
   /**
     * Specifies the pending number of days for which automated backups are retained.
     */
-  var BackupRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined
+  var BackupRetentionPeriod: js.UndefOr[IntegerOptional] = js.native
   /**
     * Specifies the identifier of the CA certificate for the DB instance.
     */
-  var CACertificateIdentifier: js.UndefOr[String] = js.undefined
+  var CACertificateIdentifier: js.UndefOr[String] = js.native
   /**
     *  Contains the new DBInstanceClass for the DB instance that will be applied or is currently being applied. 
     */
-  var DBInstanceClass: js.UndefOr[String] = js.undefined
+  var DBInstanceClass: js.UndefOr[String] = js.native
   /**
     *  Contains the new DBInstanceIdentifier for the DB instance that will be applied or is currently being applied. 
     */
-  var DBInstanceIdentifier: js.UndefOr[String] = js.undefined
+  var DBInstanceIdentifier: js.UndefOr[String] = js.native
   /**
     * The new DB subnet group for the DB instance. 
     */
-  var DBSubnetGroupName: js.UndefOr[String] = js.undefined
+  var DBSubnetGroupName: js.UndefOr[String] = js.native
   /**
     * Indicates the database engine version.
     */
-  var EngineVersion: js.UndefOr[String] = js.undefined
+  var EngineVersion: js.UndefOr[String] = js.native
   /**
     * Specifies the new Provisioned IOPS value for the DB instance that will be applied or is currently being applied.
     */
-  var Iops: js.UndefOr[IntegerOptional] = js.undefined
+  var Iops: js.UndefOr[IntegerOptional] = js.native
   /**
     * The license model for the DB instance. Valid values: license-included | bring-your-own-license | general-public-license 
     */
-  var LicenseModel: js.UndefOr[String] = js.undefined
+  var LicenseModel: js.UndefOr[String] = js.native
   /**
     * Contains the pending or currently-in-progress change of the master credentials for the DB instance.
     */
-  var MasterUserPassword: js.UndefOr[String] = js.undefined
+  var MasterUserPassword: js.UndefOr[String] = js.native
   /**
     * Indicates that the Single-AZ DB instance is to change to a Multi-AZ deployment.
     */
-  var MultiAZ: js.UndefOr[BooleanOptional] = js.undefined
-  var PendingCloudwatchLogsExports: js.UndefOr[typings.awsDashSdk.clientsRdsMod.PendingCloudwatchLogsExports] = js.undefined
+  var MultiAZ: js.UndefOr[BooleanOptional] = js.native
+  var PendingCloudwatchLogsExports: js.UndefOr[typings.awsDashSdk.clientsRdsMod.PendingCloudwatchLogsExports] = js.native
   /**
     * Specifies the pending port for the DB instance.
     */
-  var Port: js.UndefOr[IntegerOptional] = js.undefined
+  var Port: js.UndefOr[IntegerOptional] = js.native
   /**
     * The number of CPU cores and the number of threads per core for the DB instance class of the DB instance.
     */
-  var ProcessorFeatures: js.UndefOr[ProcessorFeatureList] = js.undefined
+  var ProcessorFeatures: js.UndefOr[ProcessorFeatureList] = js.native
   /**
     * Specifies the storage type to be associated with the DB instance.
     */
-  var StorageType: js.UndefOr[String] = js.undefined
+  var StorageType: js.UndefOr[String] = js.native
 }
 
 object PendingModifiedValues {
@@ -86,19 +87,19 @@ object PendingModifiedValues {
     val __obj = js.Dynamic.literal()
     if (AllocatedStorage != null) __obj.updateDynamic("AllocatedStorage")(AllocatedStorage.asInstanceOf[js.Any])
     if (BackupRetentionPeriod != null) __obj.updateDynamic("BackupRetentionPeriod")(BackupRetentionPeriod.asInstanceOf[js.Any])
-    if (CACertificateIdentifier != null) __obj.updateDynamic("CACertificateIdentifier")(CACertificateIdentifier)
-    if (DBInstanceClass != null) __obj.updateDynamic("DBInstanceClass")(DBInstanceClass)
-    if (DBInstanceIdentifier != null) __obj.updateDynamic("DBInstanceIdentifier")(DBInstanceIdentifier)
-    if (DBSubnetGroupName != null) __obj.updateDynamic("DBSubnetGroupName")(DBSubnetGroupName)
-    if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion)
+    if (CACertificateIdentifier != null) __obj.updateDynamic("CACertificateIdentifier")(CACertificateIdentifier.asInstanceOf[js.Any])
+    if (DBInstanceClass != null) __obj.updateDynamic("DBInstanceClass")(DBInstanceClass.asInstanceOf[js.Any])
+    if (DBInstanceIdentifier != null) __obj.updateDynamic("DBInstanceIdentifier")(DBInstanceIdentifier.asInstanceOf[js.Any])
+    if (DBSubnetGroupName != null) __obj.updateDynamic("DBSubnetGroupName")(DBSubnetGroupName.asInstanceOf[js.Any])
+    if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion.asInstanceOf[js.Any])
     if (Iops != null) __obj.updateDynamic("Iops")(Iops.asInstanceOf[js.Any])
-    if (LicenseModel != null) __obj.updateDynamic("LicenseModel")(LicenseModel)
-    if (MasterUserPassword != null) __obj.updateDynamic("MasterUserPassword")(MasterUserPassword)
-    if (!js.isUndefined(MultiAZ)) __obj.updateDynamic("MultiAZ")(MultiAZ)
-    if (PendingCloudwatchLogsExports != null) __obj.updateDynamic("PendingCloudwatchLogsExports")(PendingCloudwatchLogsExports)
+    if (LicenseModel != null) __obj.updateDynamic("LicenseModel")(LicenseModel.asInstanceOf[js.Any])
+    if (MasterUserPassword != null) __obj.updateDynamic("MasterUserPassword")(MasterUserPassword.asInstanceOf[js.Any])
+    if (!js.isUndefined(MultiAZ)) __obj.updateDynamic("MultiAZ")(MultiAZ.asInstanceOf[js.Any])
+    if (PendingCloudwatchLogsExports != null) __obj.updateDynamic("PendingCloudwatchLogsExports")(PendingCloudwatchLogsExports.asInstanceOf[js.Any])
     if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
-    if (ProcessorFeatures != null) __obj.updateDynamic("ProcessorFeatures")(ProcessorFeatures)
-    if (StorageType != null) __obj.updateDynamic("StorageType")(StorageType)
+    if (ProcessorFeatures != null) __obj.updateDynamic("ProcessorFeatures")(ProcessorFeatures.asInstanceOf[js.Any])
+    if (StorageType != null) __obj.updateDynamic("StorageType")(StorageType.asInstanceOf[js.Any])
     __obj.asInstanceOf[PendingModifiedValues]
   }
 }

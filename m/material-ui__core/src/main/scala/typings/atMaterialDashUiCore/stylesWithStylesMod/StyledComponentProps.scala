@@ -7,9 +7,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StyledComponentProps[ClassKey /* <: String */] extends js.Object {
-  var classes: js.UndefOr[Partial[ClassNameMap[ClassKey]]] = js.undefined
-  var innerRef: js.UndefOr[Ref[_] | RefObject[_]] = js.undefined
+  var classes: js.UndefOr[Partial[ClassNameMap[ClassKey]]] = js.native
+  var innerRef: js.UndefOr[Ref[_] | RefObject[_]] = js.native
 }
 
 object StyledComponentProps {

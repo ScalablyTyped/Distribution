@@ -5,43 +5,44 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TopicRuleDynamodb extends js.Object {
   /**
     * The hash key name.
     */
-  var hashKeyField: Input[String]
+  var hashKeyField: Input[String] = js.native
   /**
     * The hash key type. Valid values are "STRING" or "NUMBER".
     */
-  var hashKeyType: js.UndefOr[Input[String]] = js.undefined
+  var hashKeyType: js.UndefOr[Input[String]] = js.native
   /**
     * The hash key value.
     */
-  var hashKeyValue: Input[String]
+  var hashKeyValue: Input[String] = js.native
   /**
     * The action payload.
     */
-  var payloadField: js.UndefOr[Input[String]] = js.undefined
+  var payloadField: js.UndefOr[Input[String]] = js.native
   /**
     * The range key name.
     */
-  var rangeKeyField: js.UndefOr[Input[String]] = js.undefined
+  var rangeKeyField: js.UndefOr[Input[String]] = js.native
   /**
     * The range key type. Valid values are "STRING" or "NUMBER".
     */
-  var rangeKeyType: js.UndefOr[Input[String]] = js.undefined
+  var rangeKeyType: js.UndefOr[Input[String]] = js.native
   /**
     * The range key value.
     */
-  var rangeKeyValue: js.UndefOr[Input[String]] = js.undefined
+  var rangeKeyValue: js.UndefOr[Input[String]] = js.native
   /**
     * The ARN of the IAM role that grants access.
     */
-  var roleArn: Input[String]
+  var roleArn: Input[String] = js.native
   /**
     * The name of the DynamoDB table.
     */
-  var tableName: Input[String]
+  var tableName: Input[String] = js.native
 }
 
 object TopicRuleDynamodb {

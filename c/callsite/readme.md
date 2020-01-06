@@ -10,9 +10,9 @@ access to v8's CallSites
 | ------------------ | :-------------: |
 | Full name          | callsite |
 | Keywords           | stack, trace, line |
-| # releases         | 1 |
-| # dependents       | 314 |
-| # downloads        | 103488433 |
+| # releases         | 0 |
+| # dependents       | 338 |
+| # downloads        | 134395672 |
 | # stars            | 10 |
 
 ## Links

@@ -10,9 +10,9 @@ Builds Materialize distribution packages
 | ------------------ | :-------------: |
 | Full name          | materialize-css |
 | Keywords           | - |
-| # releases         | 14 |
-| # dependents       | 125 |
-| # downloads        | 1285251 |
+| # releases         | 8 |
+| # dependents       | 137 |
+| # downloads        | 1517503 |
 | # stars            | 22 |
 
 ## Links

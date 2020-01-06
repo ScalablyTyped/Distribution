@@ -4,35 +4,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Alias extends js.Object {
   /**
-    * Unique identifier for an alias; alias ARNs are unique across all regions.
+    * Amazon Resource Name (ARN) that is assigned to a GameLift alias resource and uniquely identifies it. ARNs are unique across all Regions.. In a GameLift alias ARN, the resource ID matches the alias ID value.
     */
-  var AliasArn: js.UndefOr[ArnStringModel] = js.undefined
+  var AliasArn: js.UndefOr[ArnStringModel] = js.native
   /**
-    * Unique identifier for an alias; alias IDs are unique within a region.
+    * A unique identifier for an alias. Alias IDs are unique within a Region.
     */
-  var AliasId: js.UndefOr[typings.awsDashSdk.clientsGameliftMod.AliasId] = js.undefined
+  var AliasId: js.UndefOr[typings.awsDashSdk.clientsGameliftMod.AliasId] = js.native
   /**
-    * Time stamp indicating when this data object was created. Format is a number expressed in Unix time as milliseconds (for example "1469498468.057").
+    * A time stamp indicating when this data object was created. Format is a number expressed in Unix time as milliseconds (for example "1469498468.057").
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.undefined
+  var CreationTime: js.UndefOr[Timestamp] = js.native
   /**
-    * Human-readable description of an alias.
+    * A human-readable description of an alias.
     */
-  var Description: js.UndefOr[FreeText] = js.undefined
+  var Description: js.UndefOr[FreeText] = js.native
   /**
-    * Time stamp indicating when this data object was last modified. Format is a number expressed in Unix time as milliseconds (for example "1469498468.057").
+    * The time that this data object was last modified. Format is a number expressed in Unix time as milliseconds (for example "1469498468.057").
     */
-  var LastUpdatedTime: js.UndefOr[Timestamp] = js.undefined
+  var LastUpdatedTime: js.UndefOr[Timestamp] = js.native
   /**
-    * Descriptive label that is associated with an alias. Alias names do not need to be unique.
+    * A descriptive label that is associated with an alias. Alias names do not need to be unique.
     */
-  var Name: js.UndefOr[NonBlankAndLengthConstraintString] = js.undefined
+  var Name: js.UndefOr[NonBlankAndLengthConstraintString] = js.native
   /**
-    * Alias configuration for the alias, including routing type and settings.
+    * The routing configuration, including routing type and fleet target, for the alias. 
     */
-  var RoutingStrategy: js.UndefOr[typings.awsDashSdk.clientsGameliftMod.RoutingStrategy] = js.undefined
+  var RoutingStrategy: js.UndefOr[typings.awsDashSdk.clientsGameliftMod.RoutingStrategy] = js.native
 }
 
 object Alias {
@@ -47,13 +48,13 @@ object Alias {
     RoutingStrategy: RoutingStrategy = null
   ): Alias = {
     val __obj = js.Dynamic.literal()
-    if (AliasArn != null) __obj.updateDynamic("AliasArn")(AliasArn)
-    if (AliasId != null) __obj.updateDynamic("AliasId")(AliasId)
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime)
-    if (Description != null) __obj.updateDynamic("Description")(Description)
-    if (LastUpdatedTime != null) __obj.updateDynamic("LastUpdatedTime")(LastUpdatedTime)
-    if (Name != null) __obj.updateDynamic("Name")(Name)
-    if (RoutingStrategy != null) __obj.updateDynamic("RoutingStrategy")(RoutingStrategy)
+    if (AliasArn != null) __obj.updateDynamic("AliasArn")(AliasArn.asInstanceOf[js.Any])
+    if (AliasId != null) __obj.updateDynamic("AliasId")(AliasId.asInstanceOf[js.Any])
+    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
+    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (LastUpdatedTime != null) __obj.updateDynamic("LastUpdatedTime")(LastUpdatedTime.asInstanceOf[js.Any])
+    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
+    if (RoutingStrategy != null) __obj.updateDynamic("RoutingStrategy")(RoutingStrategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[Alias]
   }
 }

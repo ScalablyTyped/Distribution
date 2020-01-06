@@ -10,9 +10,9 @@ Angular $q decorator
 | ------------------ | :-------------: |
 | Full name          | angular-q-extras |
 | Keywords           | angular, $q, promise, allSettled |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 36715 |
+| # downloads        | 61808 |
 | # stars            | 0 |
 
 ## Links

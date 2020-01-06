@@ -11,8 +11,8 @@ Returns the next buffer/object in a stream's readable queue
 | Full name          | stream-shift |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 20 |
-| # downloads        | 168369217 |
+| # dependents       | 26 |
+| # downloads        | 315396526 |
 | # stars            | 0 |
 
 ## Links

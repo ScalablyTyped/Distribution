@@ -10,9 +10,9 @@ A generic asset loader, made with web games in mind.
 | ------------------ | :-------------: |
 | Full name          | resource-loader |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 18 |
-| # downloads        | 895522 |
+| # releases         | 13 |
+| # dependents       | 19 |
+| # downloads        | 999424 |
 | # stars            | 2 |
 
 ## Links

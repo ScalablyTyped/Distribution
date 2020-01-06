@@ -10,9 +10,9 @@ This is the [Cloud Firestore](https://firebase.google.com/docs/firestore/) compo
 | ------------------ | :-------------: |
 | Full name          | @firebase/firestore |
 | Keywords           | - |
-| # releases         | 608 |
-| # dependents       | 11 |
-| # downloads        | 21138363 |
+| # releases         | 1024 |
+| # dependents       | 17 |
+| # downloads        | 17667526 |
 | # stars            | 2 |
 
 ## Links

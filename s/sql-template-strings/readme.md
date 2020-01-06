@@ -12,7 +12,7 @@ ES6 tagged template strings for prepared statements with mysql and postgres
 | Keywords           | mysql, mysql2, postgres, pg, prepared, statements, placeholder, es6, tagged, template, strings |
 | # releases         | 1 |
 | # dependents       | 35 |
-| # downloads        | 761203 |
+| # downloads        | 835197 |
 | # stars            | 9 |
 
 ## Links

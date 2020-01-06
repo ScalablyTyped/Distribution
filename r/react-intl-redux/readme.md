@@ -10,9 +10,9 @@ Redux binding for React Intl
 | ------------------ | :-------------: |
 | Full name          | react-intl-redux |
 | Keywords           | react, reactjs, react-intl, react-redux, intl, i18n, redux |
-| # releases         | 10 |
+| # releases         | 9 |
 | # dependents       | 14 |
-| # downloads        | 744045 |
+| # downloads        | 949191 |
 | # stars            | 3 |
 
 ## Links

@@ -10,9 +10,9 @@ Calls a function repeatedly while a condition returns true and then resolves the
 | ------------------ | :-------------: |
 | Full name          | p-do-whilst |
 | Keywords           | promise, do, whilst, while, loop, wait, condition, conditional, async, await, promises, bluebird |
-| # releases         | 5 |
-| # dependents       | 6 |
-| # downloads        | 124307 |
+| # releases         | 3 |
+| # dependents       | 7 |
+| # downloads        | 107800 |
 | # stars            | 0 |
 
 ## Links

@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EndpointConnectionLogOptions extends js.Object {
   /**
     * The name of the CloudWatch Logs log group.
     */
-  var cloudwatchLogGroup: js.UndefOr[Input[String]] = js.undefined
+  var cloudwatchLogGroup: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the CloudWatch Logs log stream to which the connection data is published.
     */
-  var cloudwatchLogStream: js.UndefOr[Input[String]] = js.undefined
+  var cloudwatchLogStream: js.UndefOr[Input[String]] = js.native
   /**
     * Indicates whether connection logging is enabled.
     */
-  var enabled: Input[Boolean]
+  var enabled: Input[Boolean] = js.native
 }
 
 object EndpointConnectionLogOptions {

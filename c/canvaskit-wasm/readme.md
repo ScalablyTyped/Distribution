@@ -10,9 +10,9 @@ A WASM version of Skia's Canvas API
 | ------------------ | :-------------: |
 | Full name          | canvaskit-wasm |
 | Keywords           | - |
-| # releases         | 11 |
+| # releases         | 13 |
 | # dependents       | 0 |
-| # downloads        | 15820 |
+| # downloads        | 17337 |
 | # stars            | 0 |
 
 ## Links

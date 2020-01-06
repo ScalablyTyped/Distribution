@@ -10,9 +10,9 @@ Mobile friendly datetime picker for Vue. Supports date, datetime and time modes,
 | ------------------ | :-------------: |
 | Full name          | vue-datetime |
 | Keywords           | datetime, datetime-picker, picker, date, vue |
-| # releases         | 37 |
-| # dependents       | 11 |
-| # downloads        | 348314 |
+| # releases         | 17 |
+| # dependents       | 18 |
+| # downloads        | 508974 |
 | # stars            | 1 |
 
 ## Links

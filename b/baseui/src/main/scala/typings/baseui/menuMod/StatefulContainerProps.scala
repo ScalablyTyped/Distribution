@@ -41,7 +41,7 @@ object StatefulContainerProps {
     onItemSelect: /* args */ Anon_EventItem => js.Any = null,
     removeMenuFromNesting: /* ref */ Ref[HTMLElement] => Unit = null,
     rootRef: Ref[_] = null,
-    stateReducer: (/* changeType */ moveUp | mouseEnter | focus | click | reset | moveDown, /* changes */ StatefulContainerState, /* currentState */ StatefulContainerState) => StatefulContainerState = null
+    stateReducer: (/* changeType */ moveDown | moveUp | reset | click | focus | mouseEnter, /* changes */ StatefulContainerState, /* currentState */ StatefulContainerState) => StatefulContainerState = null
   ): StatefulContainerProps = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
     if (addMenuToNesting != null) __obj.updateDynamic("addMenuToNesting")(js.Any.fromFunction1(addMenuToNesting))

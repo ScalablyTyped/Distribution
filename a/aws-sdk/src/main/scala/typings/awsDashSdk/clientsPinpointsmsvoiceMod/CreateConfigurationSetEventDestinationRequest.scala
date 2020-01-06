@@ -4,16 +4,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CreateConfigurationSetEventDestinationRequest extends js.Object {
   /**
     * ConfigurationSetName
     */
-  var ConfigurationSetName: __string
-  var EventDestination: js.UndefOr[EventDestinationDefinition] = js.undefined
+  var ConfigurationSetName: __string = js.native
+  var EventDestination: js.UndefOr[EventDestinationDefinition] = js.native
   /**
     * A name that identifies the event destination.
     */
-  var EventDestinationName: js.UndefOr[NonEmptyString] = js.undefined
+  var EventDestinationName: js.UndefOr[NonEmptyString] = js.native
 }
 
 object CreateConfigurationSetEventDestinationRequest {
@@ -23,9 +24,9 @@ object CreateConfigurationSetEventDestinationRequest {
     EventDestination: EventDestinationDefinition = null,
     EventDestinationName: NonEmptyString = null
   ): CreateConfigurationSetEventDestinationRequest = {
-    val __obj = js.Dynamic.literal(ConfigurationSetName = ConfigurationSetName)
-    if (EventDestination != null) __obj.updateDynamic("EventDestination")(EventDestination)
-    if (EventDestinationName != null) __obj.updateDynamic("EventDestinationName")(EventDestinationName)
+    val __obj = js.Dynamic.literal(ConfigurationSetName = ConfigurationSetName.asInstanceOf[js.Any])
+    if (EventDestination != null) __obj.updateDynamic("EventDestination")(EventDestination.asInstanceOf[js.Any])
+    if (EventDestinationName != null) __obj.updateDynamic("EventDestinationName")(EventDestinationName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateConfigurationSetEventDestinationRequest]
   }
 }

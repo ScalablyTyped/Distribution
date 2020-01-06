@@ -5,16 +5,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/Tabs/Tabs.TabsClassKey>> */
+@js.native
 trait PartialClassNameMapTabsClassKey extends js.Object {
-  var centered: js.UndefOr[String] = js.undefined
-  var fixed: js.UndefOr[String] = js.undefined
-  var flexContainer: js.UndefOr[String] = js.undefined
-  var indicator: js.UndefOr[String] = js.undefined
-  var root: js.UndefOr[String] = js.undefined
-  var scrollButtons: js.UndefOr[String] = js.undefined
-  var scrollButtonsAuto: js.UndefOr[String] = js.undefined
-  var scrollable: js.UndefOr[String] = js.undefined
-  var scroller: js.UndefOr[String] = js.undefined
+  var centered: js.UndefOr[String] = js.native
+  var fixed: js.UndefOr[String] = js.native
+  var flexContainer: js.UndefOr[String] = js.native
+  var indicator: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.native
+  var scrollButtons: js.UndefOr[String] = js.native
+  var scrollButtonsAuto: js.UndefOr[String] = js.native
+  var scrollable: js.UndefOr[String] = js.native
+  var scroller: js.UndefOr[String] = js.native
 }
 
 object PartialClassNameMapTabsClassKey {

@@ -10,9 +10,9 @@ Linkify URLs in a string
 | ------------------ | :-------------: |
 | Full name          | linkify-urls |
 | Keywords           | linkify, urls, url, link, reference, references, linkifies, href, string, text, dom |
-| # releases         | 17 |
+| # releases         | 9 |
 | # dependents       | 1 |
-| # downloads        | 149650 |
+| # downloads        | 137954 |
 | # stars            | 1 |
 
 ## Links

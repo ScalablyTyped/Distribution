@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object framesyncMod extends js.Object {
   def getFrameData(): Anon_Delta = js.native
-  /* import warning: parser.TsParser#tsDeclVar $anonfun Dropped List(cancelSync) */ @js.native
+  /* import warning: parser.TsParser#tsDeclVar Dropped IArray(cancelSync) */ @js.native
   object default extends js.Object {
     def fixedUpdate(process: Process): Process = js.native
     def fixedUpdate(process: Process, keepAlive: Boolean): Process = js.native

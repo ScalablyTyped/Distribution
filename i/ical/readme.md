@@ -11,8 +11,8 @@ A tolerant, minimal icalendar parser
 | Full name          | ical |
 | Keywords           | ical, ics, calendar |
 | # releases         | 2 |
-| # dependents       | 34 |
-| # downloads        | 122221 |
+| # dependents       | 36 |
+| # downloads        | 120486 |
 | # stars            | 10 |
 
 ## Links

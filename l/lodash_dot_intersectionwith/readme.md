@@ -11,8 +11,8 @@ The lodash method `_.intersectionWith` exported as a module.
 | Full name          | lodash.intersectionwith |
 | Keywords           | lodash-modularized, intersectionwith |
 | # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 103839 |
+| # dependents       | 15 |
+| # downloads        | 119868 |
 | # stars            | 0 |
 
 ## Links

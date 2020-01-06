@@ -10,9 +10,9 @@ Javascript Timezone Offset
 | ------------------ | :-------------: |
 | Full name          | tz-offset |
 | Keywords           | timezone, offset, time, zone |
-| # releases         | 3 |
-| # dependents       | 1 |
-| # downloads        | 311327 |
+| # releases         | 4 |
+| # dependents       | 5 |
+| # downloads        | 1856450 |
 | # stars            | 0 |
 
 ## Links

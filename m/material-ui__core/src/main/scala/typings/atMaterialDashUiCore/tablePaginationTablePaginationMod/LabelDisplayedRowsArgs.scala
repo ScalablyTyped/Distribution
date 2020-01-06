@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LabelDisplayedRowsArgs extends js.Object {
-  var count: Double
-  var from: Double
-  var page: Double
-  var to: Double
+  var count: Double = js.native
+  var from: Double = js.native
+  var page: Double = js.native
+  var to: Double = js.native
 }
 
 object LabelDisplayedRowsArgs {

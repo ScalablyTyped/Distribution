@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsOrganizationsMod {
-  import typings.awsDashSdk.awsDashSdkStrings.SERVICE_CONTROL_POLICY
+  import typings.awsDashSdk.awsDashSdkStrings.TAG_POLICY
   import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
   import typings.std.Date
 
@@ -50,6 +50,7 @@ package object clientsOrganizationsMod {
     - typings.awsDashSdk.awsDashSdkStrings.INVALID_EMAIL
     - typings.awsDashSdk.awsDashSdkStrings.CONCURRENT_ACCOUNT_MODIFICATION
     - typings.awsDashSdk.awsDashSdkStrings.INTERNAL_FAILURE
+    - typings.awsDashSdk.awsDashSdkStrings.GOVCLOUD_ACCOUNT_ALREADY_EXISTS
     - java.lang.String
   */
   type CreateAccountFailureReason = _CreateAccountFailureReason | String
@@ -63,6 +64,7 @@ package object clientsOrganizationsMod {
   type CreateAccountState = _CreateAccountState | String
   type CreateAccountStates = js.Array[CreateAccountState]
   type CreateAccountStatuses = js.Array[CreateAccountStatus]
+  type EffectivePolicyType = TAG_POLICY | String
   type Email = String
   type EnabledServicePrincipals = js.Array[EnabledServicePrincipal]
   type GenericArn = String
@@ -139,7 +141,12 @@ package object clientsOrganizationsMod {
   type PolicyName = String
   type PolicyTargetId = String
   type PolicyTargets = js.Array[PolicyTargetSummary]
-  type PolicyType = SERVICE_CONTROL_POLICY | String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.SERVICE_CONTROL_POLICY
+    - typings.awsDashSdk.awsDashSdkStrings.TAG_POLICY
+    - java.lang.String
+  */
+  type PolicyType = _PolicyType | String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.ENABLED
     - typings.awsDashSdk.awsDashSdkStrings.PENDING_ENABLE
@@ -170,7 +177,7 @@ package object clientsOrganizationsMod {
   type Timestamp = Date
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2016-11-28`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

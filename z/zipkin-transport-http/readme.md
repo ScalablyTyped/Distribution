@@ -10,9 +10,9 @@ Transports Zipkin trace data via HTTP
 | ------------------ | :-------------: |
 | Full name          | zipkin-transport-http |
 | Keywords           | - |
-| # releases         | 20 |
-| # dependents       | 50 |
-| # downloads        | 540623 |
+| # releases         | 27 |
+| # dependents       | 57 |
+| # downloads        | 1056460 |
 | # stars            | 0 |
 
 ## Links

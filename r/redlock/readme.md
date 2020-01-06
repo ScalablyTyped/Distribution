@@ -10,9 +10,9 @@ A node.js redlock implementation for distributed redis locks
 | ------------------ | :-------------: |
 | Full name          | redlock |
 | Keywords           | nodejs, iojs, redlock, distributed, lock, redis |
-| # releases         | 7 |
-| # dependents       | 67 |
-| # downloads        | 1074525 |
+| # releases         | 5 |
+| # dependents       | 89 |
+| # downloads        | 1808833 |
 | # stars            | 7 |
 
 ## Links

@@ -5,31 +5,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GlobalClusterArgs extends js.Object {
   /**
     * Name for an automatically created database on cluster creation.
     */
-  val databaseName: js.UndefOr[Input[String]] = js.undefined
+  val databaseName: js.UndefOr[Input[String]] = js.native
   /**
     * If the Global Cluster should have deletion protection enabled. The database can't be deleted when this value is set to `true`. The default is `false`.
     */
-  val deletionProtection: js.UndefOr[Input[Boolean]] = js.undefined
+  val deletionProtection: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Name of the database engine to be used for this DB cluster. Valid values: `aurora`. Defaults to `aurora`.
     */
-  val engine: js.UndefOr[Input[String]] = js.undefined
+  val engine: js.UndefOr[Input[String]] = js.native
   /**
     * Engine version of the Aurora global database.
     */
-  val engineVersion: js.UndefOr[Input[String]] = js.undefined
+  val engineVersion: js.UndefOr[Input[String]] = js.native
   /**
     * The global cluster identifier.
     */
-  val globalClusterIdentifier: Input[String]
+  val globalClusterIdentifier: Input[String] = js.native
   /**
     * Specifies whether the DB cluster is encrypted. The default is `false`.
     */
-  val storageEncrypted: js.UndefOr[Input[Boolean]] = js.undefined
+  val storageEncrypted: js.UndefOr[Input[Boolean]] = js.native
 }
 
 object GlobalClusterArgs {

@@ -5,16 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ApplicationState extends js.Object {
   /**
     * The compute platform can either be `ECS`, `Lambda`, or `Server`. Default is `Server`.
     */
-  val computePlatform: js.UndefOr[Input[String]] = js.undefined
+  val computePlatform: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the application.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
-  val uniqueId: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
+  val uniqueId: js.UndefOr[Input[String]] = js.native
 }
 
 object ApplicationState {

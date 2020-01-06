@@ -11,8 +11,8 @@ An easy way to send JSON over TCP using sockets.
 | Full name          | json-socket |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 41 |
-| # downloads        | 434330 |
+| # dependents       | 43 |
+| # downloads        | 1069982 |
 | # stars            | 6 |
 
 ## Links

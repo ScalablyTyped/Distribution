@@ -11,8 +11,8 @@ String Scoring Algorithm packaged for NodeJS
 | Full name          | string_score |
 | Keywords           | string, score, string_score |
 | # releases         | 0 |
-| # dependents       | 17 |
-| # downloads        | 111196 |
+| # dependents       | 19 |
+| # downloads        | 183998 |
 | # stars            | 6 |
 
 ## Links

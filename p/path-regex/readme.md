@@ -10,9 +10,9 @@ Regular expression for matching the parts of a file path.
 | ------------------ | :-------------: |
 | Full name          | path-regex |
 | Keywords           | expression, file, filepath, match, matching, path, regex, regexp, regular |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 162 |
+| # downloads        | 200 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ VK.com authentication strategy for Passport.
 | ------------------ | :-------------: |
 | Full name          | passport-vkontakte |
 | Keywords           | passport, vkontakte, vk, вконтакте, auth, authn, authentication, identity |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 12 |
-| # downloads        | 48162 |
+| # downloads        | 70215 |
 | # stars            | 6 |
 
 ## Links

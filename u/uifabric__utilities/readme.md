@@ -10,9 +10,9 @@ Office UI Fabric utilities for building React components.
 | ------------------ | :-------------: |
 | Full name          | @uifabric/utilities |
 | Keywords           | - |
-| # releases         | 206 |
-| # dependents       | 20 |
-| # downloads        | 2229882 |
+| # releases         | 188 |
+| # dependents       | 24 |
+| # downloads        | 2351520 |
 | # stars            | 0 |
 
 ## Links

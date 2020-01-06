@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MonthlyTransfer extends js.Object {
   /**
     * The amount allocated per month (in GB).
     */
-  var gbPerMonthAllocated: js.UndefOr[integer] = js.undefined
+  var gbPerMonthAllocated: js.UndefOr[integer] = js.native
 }
 
 object MonthlyTransfer {

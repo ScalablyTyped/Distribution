@@ -12,7 +12,7 @@ A library to process OpenAPI security definitions in parallel.
 | Keywords           | openapi, security, handler, jsonschema |
 | # releases         | 9 |
 | # dependents       | 2 |
-| # downloads        | 324112 |
+| # downloads        | 375154 |
 | # stars            | 0 |
 
 ## Links

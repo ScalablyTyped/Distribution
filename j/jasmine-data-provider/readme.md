@@ -10,9 +10,9 @@ simple data provider for jasmine
 | ------------------ | :-------------: |
 | Full name          | jasmine-data-provider |
 | Keywords           | jasmine, data-provider |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 329267 |
+| # downloads        | 383515 |
 | # stars            | 2 |
 
 ## Links

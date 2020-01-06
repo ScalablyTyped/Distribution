@@ -10,9 +10,9 @@ A little library for asserting types and values.
 | ------------------ | :-------------: |
 | Full name          | check-types |
 | Keywords           | type, types, type-check, type-checking, duck-typing, arguments, parameters, values, data, contract, assert, check, verify, safe, safety |
-| # releases         | 8 |
-| # dependents       | 280 |
-| # downloads        | 45641651 |
+| # releases         | 15 |
+| # dependents       | 302 |
+| # downloads        | 95754397 |
 | # stars            | 16 |
 
 ## Links

@@ -10,9 +10,9 @@ capitalize the first letter of a string, or all words in a string
 | ------------------ | :-------------: |
 | Full name          | capitalize |
 | Keywords           | capitalize |
-| # releases         | 2 |
-| # dependents       | 169 |
-| # downloads        | 1694101 |
+| # releases         | 3 |
+| # dependents       | 184 |
+| # downloads        | 3266929 |
 | # stars            | 3 |
 
 ## Links

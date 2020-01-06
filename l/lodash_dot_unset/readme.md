@@ -11,8 +11,8 @@ The lodash method `_.unset` exported as a module.
 | Full name          | lodash.unset |
 | Keywords           | lodash-modularized, unset |
 | # releases         | 0 |
-| # dependents       | 57 |
-| # downloads        | 1333795 |
+| # dependents       | 89 |
+| # downloads        | 2262622 |
 | # stars            | 0 |
 
 ## Links

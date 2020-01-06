@@ -10,10 +10,10 @@ Runtime type checking for React props and similar objects.
 | ------------------ | :-------------: |
 | Full name          | prop-types |
 | Keywords           | react |
-| # releases         | 10 |
-| # dependents       | 18206 |
-| # downloads        | 241657867 |
-| # stars            | 151 |
+| # releases         | 6 |
+| # dependents       | 23544 |
+| # downloads        | 363369432 |
+| # stars            | 152 |
 
 ## Links
 - [Homepage](https://facebook.github.io/react/)

@@ -11,8 +11,8 @@ Binary serialization which sorts bytewise for arbirarily complex data structures
 | Full name          | bytewise |
 | Keywords           | binary, sort, collation, serialization, leveldb, indexeddb |
 | # releases         | 0 |
-| # dependents       | 86 |
-| # downloads        | 1364620 |
+| # dependents       | 83 |
+| # downloads        | 1655866 |
 | # stars            | 8 |
 
 ## Links

@@ -4,21 +4,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RegisterEndPointsInput extends js.Object {
   /**
     * The IDs of the instances.
     */
-  var Instances: typings.awsDashSdk.clientsElbMod.Instances
+  var Instances: typings.awsDashSdk.clientsElbMod.Instances = js.native
   /**
     * The name of the load balancer.
     */
-  var LoadBalancerName: AccessPointName
+  var LoadBalancerName: AccessPointName = js.native
 }
 
 object RegisterEndPointsInput {
   @scala.inline
   def apply(Instances: Instances, LoadBalancerName: AccessPointName): RegisterEndPointsInput = {
-    val __obj = js.Dynamic.literal(Instances = Instances, LoadBalancerName = LoadBalancerName)
+    val __obj = js.Dynamic.literal(Instances = Instances.asInstanceOf[js.Any], LoadBalancerName = LoadBalancerName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RegisterEndPointsInput]
   }

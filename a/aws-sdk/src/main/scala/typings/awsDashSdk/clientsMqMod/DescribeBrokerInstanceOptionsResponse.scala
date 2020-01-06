@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DescribeBrokerInstanceOptionsResponse extends js.Object {
   /**
     * List of available broker instance options.
     */
-  var BrokerInstanceOptions: js.UndefOr[__listOfBrokerInstanceOption] = js.undefined
+  var BrokerInstanceOptions: js.UndefOr[__listOfBrokerInstanceOption] = js.native
   /**
     * Required. The maximum number of instance options that can be returned per page (20 by default). This value must be an integer from 5 to 100.
     */
-  var MaxResults: js.UndefOr[__integerMin5Max100] = js.undefined
+  var MaxResults: js.UndefOr[__integerMin5Max100] = js.native
   /**
     * The token that specifies the next page of results Amazon MQ should return. To request the first page, leave nextToken empty.
     */
-  var NextToken: js.UndefOr[__string] = js.undefined
+  var NextToken: js.UndefOr[__string] = js.native
 }
 
 object DescribeBrokerInstanceOptionsResponse {
@@ -27,9 +28,9 @@ object DescribeBrokerInstanceOptionsResponse {
     NextToken: __string = null
   ): DescribeBrokerInstanceOptionsResponse = {
     val __obj = js.Dynamic.literal()
-    if (BrokerInstanceOptions != null) __obj.updateDynamic("BrokerInstanceOptions")(BrokerInstanceOptions)
+    if (BrokerInstanceOptions != null) __obj.updateDynamic("BrokerInstanceOptions")(BrokerInstanceOptions.asInstanceOf[js.Any])
     if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeBrokerInstanceOptionsResponse]
   }
 }

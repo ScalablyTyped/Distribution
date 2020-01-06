@@ -16,8 +16,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class StorageItemThumbnail ()
   extends IRandomAccessStream
-     with IThumbnailProperties
-     with IContentTypeProvider {
+     with IContentTypeProvider
+     with IThumbnailProperties {
   /* CompleteClass */
   override var canRead: Boolean = js.native
   /* CompleteClass */

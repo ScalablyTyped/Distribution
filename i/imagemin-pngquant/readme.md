@@ -9,11 +9,11 @@ Imagemin plugin for `pngquant`
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | imagemin-pngquant |
-| Keywords           | compress, image, imageminplugin, img, minify, optimize, png, pngquant |
+| Keywords           | compress, image, imageminplugin, minify, optimize, png, pngquant |
 | # releases         | 6 |
-| # dependents       | 347 |
-| # downloads        | 16814755 |
-| # stars            | 65 |
+| # dependents       | 433 |
+| # downloads        | 22229062 |
+| # stars            | 66 |
 
 ## Links
 - [Homepage](https://github.com/imagemin/imagemin-pngquant#readme)

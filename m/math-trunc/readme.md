@@ -12,7 +12,7 @@ ES6 Math.trunc() ponyfill
 | Keywords           | es6, math, polyfill, ponyfill, trunc |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 85506 |
+| # downloads        | 54339 |
 | # stars            | 0 |
 
 ## Links

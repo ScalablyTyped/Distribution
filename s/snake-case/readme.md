@@ -4,21 +4,21 @@
 Typings are for version 2.1.0
 
 ## Library description:
-Snake case a string
+Transform into a lower case string with underscores between words
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | snake-case |
-| Keywords           | snake, case, underscore |
-| # releases         | 1 |
-| # dependents       | 96 |
-| # downloads        | 33949182 |
+| Keywords           | snake, case, underscore, lower, convert, transform, identifier, python |
+| # releases         | 3 |
+| # dependents       | 110 |
+| # downloads        | 50724723 |
 | # stars            | 3 |
 
 ## Links
-- [Homepage](https://github.com/blakeembrey/snake-case)
-- [Bugs](https://github.com/blakeembrey/snake-case/issues)
-- [Repository](https://github.com/blakeembrey/snake-case)
+- [Homepage](https://github.com/blakeembrey/change-case/tree/master/packages/snake-case#readme)
+- [Bugs](https://github.com/blakeembrey/change-case/issues)
+- [Repository](https://github.com/blakeembrey/change-case)
 - [Npm](https://www.npmjs.com/package/snake-case)
     
 

@@ -11,8 +11,8 @@ The lodash method `_.invert` exported as a module.
 | Full name          | lodash.invert |
 | Keywords           | lodash-modularized, invert |
 | # releases         | 0 |
-| # dependents       | 27 |
-| # downloads        | 683619 |
+| # dependents       | 30 |
+| # downloads        | 729909 |
 | # stars            | 0 |
 
 ## Links

@@ -6,33 +6,34 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/Button.ButtonClassKey>> */
+@js.native
 trait PartialStyleRulesButtonClassKey extends js.Object {
-  var colorInherit: js.UndefOr[CSSProperties] = js.undefined
-  var contained: js.UndefOr[CSSProperties] = js.undefined
-  var containedPrimary: js.UndefOr[CSSProperties] = js.undefined
-  var containedSecondary: js.UndefOr[CSSProperties] = js.undefined
-  var disabled: js.UndefOr[CSSProperties] = js.undefined
-  var extendedFab: js.UndefOr[CSSProperties] = js.undefined
-  var fab: js.UndefOr[CSSProperties] = js.undefined
-  var flat: js.UndefOr[CSSProperties] = js.undefined
-  var flatPrimary: js.UndefOr[CSSProperties] = js.undefined
-  var flatSecondary: js.UndefOr[CSSProperties] = js.undefined
-  var focusVisible: js.UndefOr[CSSProperties] = js.undefined
-  var fullWidth: js.UndefOr[CSSProperties] = js.undefined
-  var label: js.UndefOr[CSSProperties] = js.undefined
-  var mini: js.UndefOr[CSSProperties] = js.undefined
-  var outlined: js.UndefOr[CSSProperties] = js.undefined
-  var outlinedPrimary: js.UndefOr[CSSProperties] = js.undefined
-  var outlinedSecondary: js.UndefOr[CSSProperties] = js.undefined
-  var raised: js.UndefOr[CSSProperties] = js.undefined
-  var raisedPrimary: js.UndefOr[CSSProperties] = js.undefined
-  var raisedSecondary: js.UndefOr[CSSProperties] = js.undefined
-  var root: js.UndefOr[CSSProperties] = js.undefined
-  var sizeLarge: js.UndefOr[CSSProperties] = js.undefined
-  var sizeSmall: js.UndefOr[CSSProperties] = js.undefined
-  var text: js.UndefOr[CSSProperties] = js.undefined
-  var textPrimary: js.UndefOr[CSSProperties] = js.undefined
-  var textSecondary: js.UndefOr[CSSProperties] = js.undefined
+  var colorInherit: js.UndefOr[CSSProperties] = js.native
+  var contained: js.UndefOr[CSSProperties] = js.native
+  var containedPrimary: js.UndefOr[CSSProperties] = js.native
+  var containedSecondary: js.UndefOr[CSSProperties] = js.native
+  var disabled: js.UndefOr[CSSProperties] = js.native
+  var extendedFab: js.UndefOr[CSSProperties] = js.native
+  var fab: js.UndefOr[CSSProperties] = js.native
+  var flat: js.UndefOr[CSSProperties] = js.native
+  var flatPrimary: js.UndefOr[CSSProperties] = js.native
+  var flatSecondary: js.UndefOr[CSSProperties] = js.native
+  var focusVisible: js.UndefOr[CSSProperties] = js.native
+  var fullWidth: js.UndefOr[CSSProperties] = js.native
+  var label: js.UndefOr[CSSProperties] = js.native
+  var mini: js.UndefOr[CSSProperties] = js.native
+  var outlined: js.UndefOr[CSSProperties] = js.native
+  var outlinedPrimary: js.UndefOr[CSSProperties] = js.native
+  var outlinedSecondary: js.UndefOr[CSSProperties] = js.native
+  var raised: js.UndefOr[CSSProperties] = js.native
+  var raisedPrimary: js.UndefOr[CSSProperties] = js.native
+  var raisedSecondary: js.UndefOr[CSSProperties] = js.native
+  var root: js.UndefOr[CSSProperties] = js.native
+  var sizeLarge: js.UndefOr[CSSProperties] = js.native
+  var sizeSmall: js.UndefOr[CSSProperties] = js.native
+  var text: js.UndefOr[CSSProperties] = js.native
+  var textPrimary: js.UndefOr[CSSProperties] = js.native
+  var textSecondary: js.UndefOr[CSSProperties] = js.native
 }
 
 object PartialStyleRulesButtonClassKey {

@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-toast-notifications
 
-Typings are for version 2.0
+Typings are for version 2.4
 
 ## Library description:
 A configurable, composable, toast notification system for react.
@@ -10,9 +10,9 @@ A configurable, composable, toast notification system for react.
 | ------------------ | :-------------: |
 | Full name          | react-toast-notifications |
 | Keywords           | react, toast, toasts, notification, notifications |
-| # releases         | 25 |
+| # releases         | 26 |
 | # dependents       | 9 |
-| # downloads        | 171636 |
+| # downloads        | 227962 |
 | # stars            | 0 |
 
 ## Links

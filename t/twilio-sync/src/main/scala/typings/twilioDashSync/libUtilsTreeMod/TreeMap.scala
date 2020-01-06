@@ -12,8 +12,8 @@ import scala.scalajs.js.annotation._
 @JSImport("twilio-sync/lib/utils/tree", "TreeMap")
 @js.native
 class TreeMap[K, V] ()
-  extends Iterable[js.Tuple2[K, V]]
-     with Map[K, V] {
+  extends Map[K, V]
+     with Iterable[js.Tuple2[K, V]] {
   def this(less: Less[K]) = this()
   def this(less: Less[K], equal: Equal[K]) = this()
   var count: js.Any = js.native

@@ -20,7 +20,7 @@ trait ErrorInfo extends js.Object {
     String, 
     Exclude[
       String, 
-      unknown_error_ | capabilities_negotiation_error | timeout_error | media_pipeline_error | connection_error
+      unknown_error_ | media_pipeline_error | connection_error | capabilities_negotiation_error | timeout_error
     ]
   ]
 }
@@ -33,7 +33,7 @@ object ErrorInfo {
       String, 
       Exclude[
         String, 
-        unknown_error_ | capabilities_negotiation_error | timeout_error | media_pipeline_error | connection_error
+        unknown_error_ | media_pipeline_error | connection_error | capabilities_negotiation_error | timeout_error
       ]
     ],
     description: String = null

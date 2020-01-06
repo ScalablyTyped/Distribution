@@ -22,6 +22,6 @@ object libRelayDashExperimentalLazyLoadEntryPointContainerMod extends js.Object 
   TExtraProps
     ]
   ): Element = js.native
-  type EntryPointContainerProps[TEntryPointParams, TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps] = Anon_EntryPointEntryPointParams[TPreloadedQueries, TRuntimeProps, TExtraProps, TPreloadedEntryPoints, TEntryPointParams]
+  type EntryPointContainerProps[TEntryPointParams, TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps] = Anon_EntryPointEntryPointParams[TEntryPointParams, TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps]
 }
 

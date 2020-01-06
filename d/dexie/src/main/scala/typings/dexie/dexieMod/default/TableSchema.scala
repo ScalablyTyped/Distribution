@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: parser.TsParser#tsDeclVar $anonfun Dropped List(IndexSpec, Events) */ @JSImport("dexie", "TableSchema")
+/* import warning: parser.TsParser#tsDeclVar Dropped IArray(IndexSpec, Events) */ @JSImport("dexie", "TableSchema")
 @js.native
 object TableSchema
   extends TopLevel[Instantiable0[typings.dexie.dexieMod.Dexie.TableSchema]]

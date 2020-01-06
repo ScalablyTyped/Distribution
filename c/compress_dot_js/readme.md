@@ -10,9 +10,9 @@ A client side JavaScript image compression library
 | ------------------ | :-------------: |
 | Full name          | compress.js |
 | Keywords           | javascript, image, compression, base64 |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 45960 |
+| # downloads        | 52317 |
 | # stars            | 1 |
 
 ## Links

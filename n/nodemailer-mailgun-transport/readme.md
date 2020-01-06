@@ -10,9 +10,9 @@ A transport module to use with nodemailer to leverage Mailgun's REST API
 | ------------------ | :-------------: |
 | Full name          | nodemailer-mailgun-transport |
 | Keywords           | email, nodemailer, mailgun |
-| # releases         | 4 |
-| # dependents       | 51 |
-| # downloads        | 517642 |
+| # releases         | 1 |
+| # dependents       | 53 |
+| # downloads        | 976580 |
 | # stars            | 6 |
 
 ## Links

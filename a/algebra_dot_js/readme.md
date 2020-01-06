@@ -10,9 +10,9 @@ Build, display, and solve algebraic equations.
 | ------------------ | :-------------: |
 | Full name          | algebra.js |
 | Keywords           | algebra, math, fractions, equations, expressions, latex |
-| # releases         | 1 |
-| # dependents       | 12 |
-| # downloads        | 8370 |
+| # releases         | 0 |
+| # dependents       | 11 |
+| # downloads        | 12959 |
 | # stars            | 5 |
 
 ## Links

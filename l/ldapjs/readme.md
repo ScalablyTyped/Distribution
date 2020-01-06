@@ -9,9 +9,9 @@ LDAP client and server APIs
 | ------------------ | :-------------: |
 | Full name          | ldapjs |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 170 |
-| # downloads        | 1709415 |
+| # releases         | 5 |
+| # dependents       | 190 |
+| # downloads        | 2524417 |
 | # stars            | 26 |
 
 ## Links

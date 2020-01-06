@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait KeyUsage extends js.Object {
   /**
     * A string value that contains a Key Usage extension name.
     */
-  var Name: js.UndefOr[KeyUsageName] = js.undefined
+  var Name: js.UndefOr[KeyUsageName] = js.native
 }
 
 object KeyUsage {

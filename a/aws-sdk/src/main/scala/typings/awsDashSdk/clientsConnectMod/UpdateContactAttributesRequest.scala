@@ -4,25 +4,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UpdateContactAttributesRequest extends js.Object {
   /**
-    * Specify a custom key-value pair using an attribute map. The attributes are standard Amazon Connect attributes, and can be accessed in contact flows just like any other contact attributes. There can be up to 32,768 UTF-8 bytes across all key-value pairs per contact. Attribute keys can include only alphanumeric, dash, and underscore characters.
+    * The Amazon Connect attributes. These attributes can be accessed in contact flows just like any other contact attributes. You can have up to 32,768 UTF-8 bytes across all attributes for a contact. Attribute keys can include only alphanumeric, dash, and underscore characters.
     */
-  var Attributes: typings.awsDashSdk.clientsConnectMod.Attributes
+  var Attributes: typings.awsDashSdk.clientsConnectMod.Attributes = js.native
   /**
-    * The unique identifier of the contact for which to update attributes. This is the identifier for the contact associated with the first interaction with the contact center.
+    * The identifier of the contact. This is the identifier of the contact associated with the first interaction with the contact center.
     */
-  var InitialContactId: ContactId
+  var InitialContactId: ContactId = js.native
   /**
-    * The identifier for your Amazon Connect instance. To find the ID of your instance, open the AWS console and select Amazon Connect. Select the alias of the instance in the Instance alias column. The instance ID is displayed in the Overview section of your instance settings. For example, the instance ID is the set of characters at the end of the instance ARN, after instance/, such as 10a4c4eb-f57e-4d4c-b602-bf39176ced07.
+    * The identifier of the Amazon Connect instance.
     */
-  var InstanceId: typings.awsDashSdk.clientsConnectMod.InstanceId
+  var InstanceId: typings.awsDashSdk.clientsConnectMod.InstanceId = js.native
 }
 
 object UpdateContactAttributesRequest {
   @scala.inline
   def apply(Attributes: Attributes, InitialContactId: ContactId, InstanceId: InstanceId): UpdateContactAttributesRequest = {
-    val __obj = js.Dynamic.literal(Attributes = Attributes, InitialContactId = InitialContactId, InstanceId = InstanceId)
+    val __obj = js.Dynamic.literal(Attributes = Attributes.asInstanceOf[js.Any], InitialContactId = InitialContactId.asInstanceOf[js.Any], InstanceId = InstanceId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UpdateContactAttributesRequest]
   }

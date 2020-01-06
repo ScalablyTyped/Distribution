@@ -11,8 +11,8 @@ Cookies, optionally signed using Keygrip.
 | Full name          | cookies |
 | Keywords           | - |
 | # releases         | 4 |
-| # dependents       | 314 |
-| # downloads        | 17442204 |
+| # dependents       | 366 |
+| # downloads        | 26286207 |
 | # stars            | 40 |
 
 ## Links

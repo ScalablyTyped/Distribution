@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SslNegotiationPolicyAttribute extends js.Object {
   /**
     * The name of the attribute
     */
-  var name: Input[String]
+  var name: Input[String] = js.native
   /**
     * The value of the attribute
     */
-  var value: Input[String]
+  var value: Input[String] = js.native
 }
 
 object SslNegotiationPolicyAttribute {

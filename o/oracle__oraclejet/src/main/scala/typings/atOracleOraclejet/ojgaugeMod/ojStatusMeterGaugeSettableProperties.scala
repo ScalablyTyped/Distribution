@@ -5,7 +5,7 @@ import typings.atOracleOraclejet.Anon_AutoBorderColor
 import typings.atOracleOraclejet.Anon_AutoCenter
 import typings.atOracleOraclejet.Anon_ComponentNameLabelAndValue
 import typings.atOracleOraclejet.Anon_ContextRendererAnonInsertAnonPreventDefaultCenterContext
-import typings.atOracleOraclejet.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1361795792
+import typings.atOracleOraclejet.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_117442419
 import typings.atOracleOraclejet.atOracleOraclejetStrings.all
 import typings.atOracleOraclejet.atOracleOraclejetStrings.auto
 import typings.atOracleOraclejet.atOracleOraclejetStrings.circular
@@ -47,7 +47,7 @@ trait ojStatusMeterGaugeSettableProperties extends dvtBaseGaugeSettablePropertie
   var svgStyle: js.Object
   var thresholdDisplay: currentOnly | all | onIndicator
   var thresholds: js.Array[Threshold]
-  var tooltip: Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1361795792
+  var tooltip: Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_117442419
   val transientValue: Double | Null
   var value: Double | Null
   var visualEffects: none | auto
@@ -78,7 +78,7 @@ object ojStatusMeterGaugeSettableProperties {
     svgStyle: js.Object,
     thresholdDisplay: currentOnly | all | onIndicator,
     thresholds: js.Array[Threshold],
-    tooltip: Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1361795792,
+    tooltip: Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_117442419,
     trackResize: on | off,
     translations: Anon_ComponentNameLabelAndValue,
     visualEffects: none | auto,

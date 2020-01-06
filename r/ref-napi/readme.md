@@ -10,9 +10,9 @@ Turn Buffer instances into "pointers"
 | ------------------ | :-------------: |
 | Full name          | ref-napi |
 | Keywords           | native, buffer, extensions, c++, pointer, reference, dereference, type, int, long, float, double, byte, 64, napi |
-| # releases         | 4 |
-| # dependents       | 10 |
-| # downloads        | 43318 |
+| # releases         | 3 |
+| # dependents       | 24 |
+| # downloads        | 247142 |
 | # stars            | 0 |
 
 ## Links

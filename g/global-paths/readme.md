@@ -12,7 +12,7 @@ Returns an array of unique "global" directories based on the user's platform and
 | Keywords           | directory, dirname, global, module, package, path, paths, prefix, resolve |
 | # releases         | 0 |
 | # dependents       | 8 |
-| # downloads        | 29223 |
+| # downloads        | 51133 |
 | # stars            | 2 |
 
 ## Links

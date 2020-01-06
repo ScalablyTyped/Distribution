@@ -31,11 +31,8 @@ abstract class AccessListEntryView () extends Array[AccessListEntry] {
     */
   def getMany(startIndex: Double): Anon_ItemsReturnValueAccessListEntry = js.native
   def indexOf(value: AccessListEntry, extra: js.Any*): Anon_Index = js.native
-  /**
-    * Retrieves the index of the specified storage item in the access list or most recently used (MRU) list.
-    * @param value The storage item.
-    */
+  /* hack */
   @JSName("indexOf")
-  def indexOf_Anon_Index(value: AccessListEntry): Anon_Index = js.native
+  def indexOf_Double(searchElement: AccessListEntry): Double = js.native
 }
 

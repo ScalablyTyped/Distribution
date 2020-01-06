@@ -15,10 +15,10 @@ object haversineStrings {
   sealed trait LeftcurlybracketlonCommalatRightcurlybracket extends js.Object
   
   @js.native
-  sealed trait LeftsquarebracketlatCommalonRightsquarebracket extends js.Object
+  sealed trait `[latCommalon]` extends js.Object
   
   @js.native
-  sealed trait LeftsquarebracketlonCommalatRightsquarebracket extends js.Object
+  sealed trait `[lonCommalat]` extends js.Object
   
   @js.native
   sealed trait geojson extends js.Object
@@ -42,9 +42,9 @@ object haversineStrings {
   @scala.inline
   def LeftcurlybracketlonCommalatRightcurlybracket: LeftcurlybracketlonCommalatRightcurlybracket = "{lon,lat}".asInstanceOf[LeftcurlybracketlonCommalatRightcurlybracket]
   @scala.inline
-  def LeftsquarebracketlatCommalonRightsquarebracket: LeftsquarebracketlatCommalonRightsquarebracket = "[lat,lon]".asInstanceOf[LeftsquarebracketlatCommalonRightsquarebracket]
+  def `[latCommalon]`: `[latCommalon]` = "[lat,lon]".asInstanceOf[`[latCommalon]`]
   @scala.inline
-  def LeftsquarebracketlonCommalatRightsquarebracket: LeftsquarebracketlonCommalatRightsquarebracket = "[lon,lat]".asInstanceOf[LeftsquarebracketlonCommalatRightsquarebracket]
+  def `[lonCommalat]`: `[lonCommalat]` = "[lon,lat]".asInstanceOf[`[lonCommalat]`]
   @scala.inline
   def geojson: geojson = "geojson".asInstanceOf[geojson]
   @scala.inline

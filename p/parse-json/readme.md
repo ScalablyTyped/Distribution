@@ -9,10 +9,10 @@ Parse JSON with more helpful errors
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | parse-json |
-| Keywords           | parse, json, graceful, error, message, humanize, friendly, helpful, string, str |
-| # releases         | 3 |
-| # dependents       | 130 |
-| # downloads        | 430725175 |
+| Keywords           | parse, json, graceful, error, message, humanize, friendly, helpful, string |
+| # releases         | 2 |
+| # dependents       | 167 |
+| # downloads        | 701086296 |
 | # stars            | 11 |
 
 ## Links

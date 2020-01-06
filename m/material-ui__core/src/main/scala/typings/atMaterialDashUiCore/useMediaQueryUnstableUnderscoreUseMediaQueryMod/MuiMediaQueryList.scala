@@ -4,10 +4,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MuiMediaQueryList extends js.Object {
-  var matches: Boolean
-  def addListener(listener: MuiMediaQueryListListener): Unit
-  def removeListener(listener: MuiMediaQueryListListener): Unit
+  var matches: Boolean = js.native
+  def addListener(listener: MuiMediaQueryListListener): Unit = js.native
+  def removeListener(listener: MuiMediaQueryListListener): Unit = js.native
 }
 
 object MuiMediaQueryList {

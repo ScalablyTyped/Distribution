@@ -9,9 +9,9 @@ A simple ChatWork API client for Node.js (UNOFFICIAL)
 | ------------------ | :-------------: |
 | Full name          | simple-cw-node |
 | Keywords           | chatwork, api |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 2 |
-| # downloads        | 448 |
+| # downloads        | 434 |
 | # stars            | 0 |
 
 ## Links

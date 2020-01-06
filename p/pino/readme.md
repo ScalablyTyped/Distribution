@@ -10,10 +10,10 @@ super fast, all natural json logger
 | ------------------ | :-------------: |
 | Full name          | pino |
 | Keywords           | fast, logger, stream, json |
-| # releases         | 84 |
-| # dependents       | 436 |
-| # downloads        | 6288921 |
-| # stars            | 47 |
+| # releases         | 79 |
+| # dependents       | 683 |
+| # downloads        | 14547588 |
+| # stars            | 48 |
 
 ## Links
 - [Homepage](http://getpino.io)

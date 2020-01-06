@@ -10,9 +10,9 @@ A JSON parser that isn't strict.
 | ------------------ | :-------------: |
 | Full name          | jsonic |
 | Keywords           | json, parser |
-| # releases         | 3 |
-| # dependents       | 105 |
-| # downloads        | 741257 |
+| # releases         | 2 |
+| # dependents       | 125 |
+| # downloads        | 787390 |
 | # stars            | 4 |
 
 ## Links

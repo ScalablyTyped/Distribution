@@ -12,8 +12,8 @@ Connect/Express middleware that auto provides mysql connections.
 | Keywords           | express, mysql, connect, pool, middleware |
 | # releases         | 1 |
 | # dependents       | 11 |
-| # downloads        | 36641 |
-| # stars            | 6 |
+| # downloads        | 38919 |
+| # stars            | 7 |
 
 ## Links
 - [Homepage](http://github.com/pwalczyszyn/express-myconnection)

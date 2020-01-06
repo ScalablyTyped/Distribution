@@ -10,9 +10,9 @@ React infinite scroll component designed for a Redux data-flow.
 | ------------------ | :-------------: |
 | Full name          | redux-infinite-scroll |
 | Keywords           | React, Redux, Infinite, Scroll |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 76364 |
+| # downloads        | 53531 |
 | # stars            | 1 |
 
 ## Links

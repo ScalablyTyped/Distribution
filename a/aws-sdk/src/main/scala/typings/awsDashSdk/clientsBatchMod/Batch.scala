@@ -65,12 +65,12 @@ trait Batch extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteComputeEnvironmentResponse, Unit]
   ): Request[DeleteComputeEnvironmentResponse, AWSError] = js.native
   /**
-    * Deletes the specified job queue. You must first disable submissions for a queue with the UpdateJobQueue operation. All jobs in the queue are terminated when you delete a job queue. It is not necessary to disassociate compute environments from a queue before submitting a DeleteJobQueue request. 
+    * Deletes the specified job queue. You must first disable submissions for a queue with the UpdateJobQueue operation. All jobs in the queue are terminated when you delete a job queue. It is not necessary to disassociate compute environments from a queue before submitting a DeleteJobQueue request.
     */
   def deleteJobQueue(): Request[DeleteJobQueueResponse, AWSError] = js.native
   def deleteJobQueue(callback: js.Function2[/* err */ AWSError, /* data */ DeleteJobQueueResponse, Unit]): Request[DeleteJobQueueResponse, AWSError] = js.native
   /**
-    * Deletes the specified job queue. You must first disable submissions for a queue with the UpdateJobQueue operation. All jobs in the queue are terminated when you delete a job queue. It is not necessary to disassociate compute environments from a queue before submitting a DeleteJobQueue request. 
+    * Deletes the specified job queue. You must first disable submissions for a queue with the UpdateJobQueue operation. All jobs in the queue are terminated when you delete a job queue. It is not necessary to disassociate compute environments from a queue before submitting a DeleteJobQueue request.
     */
   def deleteJobQueue(params: DeleteJobQueueRequest): Request[DeleteJobQueueResponse, AWSError] = js.native
   def deleteJobQueue(
@@ -156,12 +156,12 @@ trait Batch extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListJobsResponse, Unit]
   ): Request[ListJobsResponse, AWSError] = js.native
   /**
-    * Registers an AWS Batch job definition. 
+    * Registers an AWS Batch job definition.
     */
   def registerJobDefinition(): Request[RegisterJobDefinitionResponse, AWSError] = js.native
   def registerJobDefinition(callback: js.Function2[/* err */ AWSError, /* data */ RegisterJobDefinitionResponse, Unit]): Request[RegisterJobDefinitionResponse, AWSError] = js.native
   /**
-    * Registers an AWS Batch job definition. 
+    * Registers an AWS Batch job definition.
     */
   def registerJobDefinition(params: RegisterJobDefinitionRequest): Request[RegisterJobDefinitionResponse, AWSError] = js.native
   def registerJobDefinition(
@@ -169,12 +169,12 @@ trait Batch extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ RegisterJobDefinitionResponse, Unit]
   ): Request[RegisterJobDefinitionResponse, AWSError] = js.native
   /**
-    * Submits an AWS Batch job from a job definition. Parameters specified during SubmitJob override parameters defined in the job definition. 
+    * Submits an AWS Batch job from a job definition. Parameters specified during SubmitJob override parameters defined in the job definition.
     */
   def submitJob(): Request[SubmitJobResponse, AWSError] = js.native
   def submitJob(callback: js.Function2[/* err */ AWSError, /* data */ SubmitJobResponse, Unit]): Request[SubmitJobResponse, AWSError] = js.native
   /**
-    * Submits an AWS Batch job from a job definition. Parameters specified during SubmitJob override parameters defined in the job definition. 
+    * Submits an AWS Batch job from a job definition. Parameters specified during SubmitJob override parameters defined in the job definition.
     */
   def submitJob(params: SubmitJobRequest): Request[SubmitJobResponse, AWSError] = js.native
   def submitJob(

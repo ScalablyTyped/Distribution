@@ -10,9 +10,9 @@ Language server implementation for node
 | ------------------ | :-------------: |
 | Full name          | vscode-languageserver |
 | Keywords           | - |
-| # releases         | 58 |
-| # dependents       | 134 |
-| # downloads        | 2519662 |
+| # releases         | 46 |
+| # dependents       | 158 |
+| # downloads        | 9601961 |
 | # stars            | 0 |
 
 ## Links

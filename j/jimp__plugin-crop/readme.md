@@ -10,9 +10,9 @@ crop an image.
 | ------------------ | :-------------: |
 | Full name          | @jimp/plugin-crop |
 | Keywords           | - |
-| # releases         | 19 |
+| # releases         | 72 |
 | # dependents       | 2 |
-| # downloads        | 7486328 |
+| # downloads        | 14054774 |
 | # stars            | 0 |
 
 ## Links

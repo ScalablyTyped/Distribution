@@ -12,7 +12,7 @@ The lodash method `_.parseInt` exported as a module.
 | Keywords           | lodash-modularized, parseint |
 | # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 13165 |
+| # downloads        | 9849 |
 | # stars            | 0 |
 
 ## Links

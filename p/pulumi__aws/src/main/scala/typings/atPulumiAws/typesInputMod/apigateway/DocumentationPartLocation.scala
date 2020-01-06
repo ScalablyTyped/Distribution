@@ -5,27 +5,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DocumentationPartLocation extends js.Object {
   /**
     * The HTTP verb of a method. The default value is `*` for any method.
     */
-  var method: js.UndefOr[Input[String]] = js.undefined
+  var method: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the targeted API entity.
     */
-  var name: js.UndefOr[Input[String]] = js.undefined
+  var name: js.UndefOr[Input[String]] = js.native
   /**
     * The URL path of the target. The default value is `/` for the root resource.
     */
-  var path: js.UndefOr[Input[String]] = js.undefined
+  var path: js.UndefOr[Input[String]] = js.native
   /**
     * The HTTP status code of a response. The default value is `*` for any status code.
     */
-  var statusCode: js.UndefOr[Input[String]] = js.undefined
+  var statusCode: js.UndefOr[Input[String]] = js.native
   /**
     * The type of API entity to which the documentation content applies. e.g. `API`, `METHOD` or `REQUEST_BODY`
     */
-  var `type`: Input[String]
+  var `type`: Input[String] = js.native
 }
 
 object DocumentationPartLocation {

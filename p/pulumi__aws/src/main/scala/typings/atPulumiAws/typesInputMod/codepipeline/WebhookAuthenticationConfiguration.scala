@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WebhookAuthenticationConfiguration extends js.Object {
-  var allowedIpRange: js.UndefOr[Input[String]] = js.undefined
-  var secretToken: js.UndefOr[Input[String]] = js.undefined
+  var allowedIpRange: js.UndefOr[Input[String]] = js.native
+  var secretToken: js.UndefOr[Input[String]] = js.native
 }
 
 object WebhookAuthenticationConfiguration {

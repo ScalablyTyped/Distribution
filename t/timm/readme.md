@@ -10,12 +10,15 @@ Immutability helpers with fast reads and acceptable writes
 | ------------------ | :-------------: |
 | Full name          | timm |
 | Keywords           | immutability |
-| # releases         | 9 |
-| # dependents       | 31 |
-| # downloads        | 2356559 |
+| # releases         | 7 |
+| # dependents       | 35 |
+| # downloads        | 11877770 |
 | # stars            | 5 |
 
 ## Links
+- [Homepage](http://guigrpa.github.io/timm/)
+- [Bugs](https://github.com/guigrpa/timm/issues)
+- [Repository](https://github.com/guigrpa/timm)
 - [Npm](https://www.npmjs.com/package/timm)
     
 

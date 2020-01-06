@@ -151,16 +151,16 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   /**
     * @see _.at
     */
-  def at[T](props: PropertyPath*): LoDashImplicitWrapper[js.Array[T]] = js.native
-  /**
-    * @see _.at
-    */
-  @JSName("at")
-  def at_T_Object[T /* <: js.Object */](props: Many[String]*): LoDashImplicitWrapper[
+  def at[T /* <: js.Object */](props: Many[String]*): LoDashImplicitWrapper[
     js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
     ]
   ] = js.native
+  /**
+    * @see _.at
+    */
+  @JSName("at")
+  def at_T[T](props: PropertyPath*): LoDashImplicitWrapper[js.Array[T]] = js.native
   /**
     * @see _.attempt
     */
@@ -227,12 +227,12 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   /**
     * @see _.cloneWith
     */
-  def cloneWith[TResult /* <: js.Object | String | Double | Boolean | Null */](customizer: CloneWithCustomizer[TValue, TResult]): TResult = js.native
+  def cloneWith[TResult](customizer: CloneWithCustomizer[TValue, js.UndefOr[TResult]]): TResult | TValue = js.native
   /**
     * @see _.cloneWith
     */
   @JSName("cloneWith")
-  def cloneWith_TResult_Union[TResult](customizer: CloneWithCustomizer[TValue, js.UndefOr[TResult]]): TResult | TValue = js.native
+  def cloneWith_TResult_UnionObjectStringDoubleBooleanNull_TResult[TResult /* <: js.Object | String | Double | Boolean | Null */](customizer: CloneWithCustomizer[TValue, TResult]): TResult = js.native
   /**
     * @see _.compact
     */
@@ -256,19 +256,19 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   /**
     * @see _.countBy
     */
-  def countBy[T](): LoDashImplicitWrapper[Dictionary[Double]] = js.native
-  def countBy[T](iteratee: ValueIteratee[T]): LoDashImplicitWrapper[Dictionary[Double]] = js.native
-  /**
-    * @see _.countBy
-    */
-  @JSName("countBy")
-  def countBy_T_Object[T /* <: js.Object */](): LoDashImplicitWrapper[Dictionary[Double]] = js.native
-  @JSName("countBy")
-  def countBy_T_Object[T /* <: js.Object */](
+  def countBy[T /* <: js.Object */](): LoDashImplicitWrapper[Dictionary[Double]] = js.native
+  def countBy[T /* <: js.Object */](
     iteratee: ValueIteratee[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
     ]
   ): LoDashImplicitWrapper[Dictionary[Double]] = js.native
+  /**
+    * @see _.countBy
+    */
+  @JSName("countBy")
+  def countBy_T[T](): LoDashImplicitWrapper[Dictionary[Double]] = js.native
+  @JSName("countBy")
+  def countBy_T[T](iteratee: ValueIteratee[T]): LoDashImplicitWrapper[Dictionary[Double]] = js.native
   /**
     * @see _.create
     */
@@ -545,15 +545,15 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   /**
     * @see _.every
     */
-  def every[T /* <: js.Object */](): Boolean = js.native
-  def every[T /* <: js.Object */](predicate: ObjectIterateeCustom[T, Boolean]): Boolean = js.native
+  def every[T](): Boolean = js.native
+  def every[T](predicate: ListIterateeCustom[T, Boolean]): Boolean = js.native
   /**
     * @see _.every
     */
   @JSName("every")
-  def every_T[T](): Boolean = js.native
+  def every_T_Object[T /* <: js.Object */](): Boolean = js.native
   @JSName("every")
-  def every_T[T](predicate: ListIterateeCustom[T, Boolean]): Boolean = js.native
+  def every_T_Object[T /* <: js.Object */](predicate: ObjectIterateeCustom[T, Boolean]): Boolean = js.native
   /**
     * @see _.extend
     */
@@ -624,12 +624,18 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     */
   def filter(): LoDashImplicitWrapper[js.Array[String]] = js.native
   def filter(predicate: StringIterator[Boolean]): LoDashImplicitWrapper[js.Array[String]] = js.native
-  def filter[T](predicate: ListIterateeCustom[T, Boolean]): LoDashImplicitWrapper[js.Array[T]] = js.native
+  def filter[T /* <: js.Object */](predicate: ObjectIterateeCustom[T, Boolean]): LoDashImplicitWrapper[
+    js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
+  ] = js.native
   /**
     * @see _.filter
     */
   @JSName("filter")
   def filter_T[T](): LoDashImplicitWrapper[js.Array[T]] = js.native
+  @JSName("filter")
+  def filter_T[T](predicate: ListIterateeCustom[T, Boolean]): LoDashImplicitWrapper[js.Array[T]] = js.native
   /**
     * @see _.filter
     */
@@ -640,12 +646,6 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     */
   @JSName("filter")
   def filter_T_Object[T /* <: js.Object */](): LoDashImplicitWrapper[
-    js.Array[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-    ]
-  ] = js.native
-  @JSName("filter")
-  def filter_T_Object[T /* <: js.Object */](predicate: ObjectIterateeCustom[T, Boolean]): LoDashImplicitWrapper[
     js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
     ]
@@ -670,8 +670,8 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   /**
     * @see _.find
     */
-  def find[T, S /* <: T */](predicate: ListIteratorTypeGuard[T, S]): js.UndefOr[S] = js.native
-  def find[T, S /* <: T */](predicate: ListIteratorTypeGuard[T, S], fromIndex: Double): js.UndefOr[S] = js.native
+  def find[T /* <: js.Object */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any */](predicate: ObjectIteratorTypeGuard[T, S]): js.UndefOr[S] = js.native
+  def find[T /* <: js.Object */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any */](predicate: ObjectIteratorTypeGuard[T, S], fromIndex: Double): js.UndefOr[S] = js.native
   /**
     * @see _.findIndex
     */
@@ -698,8 +698,8 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   /**
     * @see _.findLast
     */
-  def findLast[T, S /* <: T */](predicate: ListIteratorTypeGuard[T, S]): js.UndefOr[S] = js.native
-  def findLast[T, S /* <: T */](predicate: ListIteratorTypeGuard[T, S], fromIndex: Double): js.UndefOr[S] = js.native
+  def findLast[T /* <: js.Object */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any */](predicate: ObjectIteratorTypeGuard[T, S]): js.UndefOr[S] = js.native
+  def findLast[T /* <: js.Object */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any */](predicate: ObjectIteratorTypeGuard[T, S], fromIndex: Double): js.UndefOr[S] = js.native
   /**
     * @see _.findLastIndex
     */
@@ -724,9 +724,9 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.findLast
     */
   @JSName("findLast")
-  def findLast_T_ObjectS_Any[T /* <: js.Object */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any */](predicate: ObjectIteratorTypeGuard[T, S]): js.UndefOr[S] = js.native
+  def findLast_TS_T[T, S /* <: T */](predicate: ListIteratorTypeGuard[T, S]): js.UndefOr[S] = js.native
   @JSName("findLast")
-  def findLast_T_ObjectS_Any[T /* <: js.Object */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any */](predicate: ObjectIteratorTypeGuard[T, S], fromIndex: Double): js.UndefOr[S] = js.native
+  def findLast_TS_T[T, S /* <: T */](predicate: ListIteratorTypeGuard[T, S], fromIndex: Double): js.UndefOr[S] = js.native
   /**
     * @see _.find
     */
@@ -740,9 +740,9 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.find
     */
   @JSName("find")
-  def find_T_ObjectS_Any[T /* <: js.Object */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any */](predicate: ObjectIteratorTypeGuard[T, S]): js.UndefOr[S] = js.native
+  def find_TS_T[T, S /* <: T */](predicate: ListIteratorTypeGuard[T, S]): js.UndefOr[S] = js.native
   @JSName("find")
-  def find_T_ObjectS_Any[T /* <: js.Object */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any */](predicate: ObjectIteratorTypeGuard[T, S], fromIndex: Double): js.UndefOr[S] = js.native
+  def find_TS_T[T, S /* <: T */](predicate: ListIteratorTypeGuard[T, S], fromIndex: Double): js.UndefOr[S] = js.native
   /**
     * @see _.head
     */
@@ -1363,21 +1363,14 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   /**
     * @see _.groupBy
     */
-  def groupBy[T](): LoDashImplicitWrapper[Dictionary[js.Array[T]]] = js.native
-  def groupBy[T](iteratee: ValueIteratee[T]): LoDashImplicitWrapper[Dictionary[js.Array[T]]] = js.native
-  /**
-    * @see _.groupBy
-    */
-  @JSName("groupBy")
-  def groupBy_T_Object[T /* <: js.Object */](): LoDashImplicitWrapper[
+  def groupBy[T /* <: js.Object */](): LoDashImplicitWrapper[
     Dictionary[
       js.Array[
         /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
       ]
     ]
   ] = js.native
-  @JSName("groupBy")
-  def groupBy_T_Object[T /* <: js.Object */](
+  def groupBy[T /* <: js.Object */](
     iteratee: ValueIteratee[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
     ]
@@ -1388,6 +1381,13 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
       ]
     ]
   ] = js.native
+  /**
+    * @see _.groupBy
+    */
+  @JSName("groupBy")
+  def groupBy_T[T](): LoDashImplicitWrapper[Dictionary[js.Array[T]]] = js.native
+  @JSName("groupBy")
+  def groupBy_T[T](iteratee: ValueIteratee[T]): LoDashImplicitWrapper[Dictionary[js.Array[T]]] = js.native
   /**
     * @see _.gt
     */
@@ -1474,19 +1474,19 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   /**
     * @see _.invertBy
     */
-  def invertBy[T](): LoDashImplicitWrapper[Dictionary[js.Array[String]]] = js.native
-  def invertBy[T](interatee: ValueIteratee[T]): LoDashImplicitWrapper[Dictionary[js.Array[String]]] = js.native
-  /**
-    * @see _.invertBy
-    */
-  @JSName("invertBy")
-  def invertBy_T_Object[T /* <: js.Object */](): LoDashImplicitWrapper[Dictionary[js.Array[String]]] = js.native
-  @JSName("invertBy")
-  def invertBy_T_Object[T /* <: js.Object */](
+  def invertBy[T /* <: js.Object */](): LoDashImplicitWrapper[Dictionary[js.Array[String]]] = js.native
+  def invertBy[T /* <: js.Object */](
     interatee: ValueIteratee[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
     ]
   ): LoDashImplicitWrapper[Dictionary[js.Array[String]]] = js.native
+  /**
+    * @see _.invertBy
+    */
+  @JSName("invertBy")
+  def invertBy_T[T](): LoDashImplicitWrapper[Dictionary[js.Array[String]]] = js.native
+  @JSName("invertBy")
+  def invertBy_T[T](interatee: ValueIteratee[T]): LoDashImplicitWrapper[Dictionary[js.Array[String]]] = js.native
   /**
     * @see _.invoke
     **/
@@ -1664,19 +1664,12 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   /**
     * @see _.keyBy
     */
-  def keyBy[T](): LoDashImplicitWrapper[Dictionary[T]] = js.native
-  def keyBy[T](iteratee: ValueIterateeCustom[T, PropertyName]): LoDashImplicitWrapper[Dictionary[T]] = js.native
-  /**
-    * @see _.keyBy
-    */
-  @JSName("keyBy")
-  def keyBy_T_Object[T /* <: js.Object */](): LoDashImplicitWrapper[
+  def keyBy[T /* <: js.Object */](): LoDashImplicitWrapper[
     Dictionary[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
     ]
   ] = js.native
-  @JSName("keyBy")
-  def keyBy_T_Object[T /* <: js.Object */](
+  def keyBy[T /* <: js.Object */](
     iteratee: ValueIterateeCustom[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 
       PropertyName
@@ -1686,6 +1679,13 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
     ]
   ] = js.native
+  /**
+    * @see _.keyBy
+    */
+  @JSName("keyBy")
+  def keyBy_T[T](): LoDashImplicitWrapper[Dictionary[T]] = js.native
+  @JSName("keyBy")
+  def keyBy_T[T](iteratee: ValueIterateeCustom[T, PropertyName]): LoDashImplicitWrapper[Dictionary[T]] = js.native
   /**
     * @see _.keys
     */
@@ -1740,23 +1740,23 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   /**
     * @see _.mapKeys
     */
-  def mapKeys[T](): LoDashImplicitWrapper[Dictionary[T]] = js.native
-  def mapKeys[T](iteratee: ListIteratee[T]): LoDashImplicitWrapper[Dictionary[T]] = js.native
+  def mapKeys[T /* <: js.Object */](): LoDashImplicitWrapper[
+    Dictionary[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
+  ] = js.native
+  def mapKeys[T /* <: js.Object */](iteratee: ObjectIteratee[T]): LoDashImplicitWrapper[
+    Dictionary[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
+  ] = js.native
   /**
     * @see _.mapKeys
     */
   @JSName("mapKeys")
-  def mapKeys_T_Object[T /* <: js.Object */](): LoDashImplicitWrapper[
-    Dictionary[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-    ]
-  ] = js.native
+  def mapKeys_T[T](): LoDashImplicitWrapper[Dictionary[T]] = js.native
   @JSName("mapKeys")
-  def mapKeys_T_Object[T /* <: js.Object */](iteratee: ObjectIteratee[T]): LoDashImplicitWrapper[
-    Dictionary[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-    ]
-  ] = js.native
+  def mapKeys_T[T](iteratee: ListIteratee[T]): LoDashImplicitWrapper[Dictionary[T]] = js.native
   /**
     * @see _.mapValues
     */
@@ -1767,16 +1767,20 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   def mapValues[TResult](callback: StringIterator[TResult]): LoDashImplicitWrapper[NumericDictionary[TResult]] = js.native
   /**
     * @see _.mapValues
-    * TODO: This would be better if we had a separate overload for obj: NumericDictionary that returned a NumericDictionary,
-    *       but TypeScript cannot select overload signatures based on number vs string index key type.
     */
-  def mapValues[T](iteratee: String): LoDashImplicitWrapper[Dictionary[_]] = js.native
+  def mapValues[T /* <: js.Object */](iteratee: String): LoDashImplicitWrapper[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in keyof T ]: any}
+    */ typings.lodash.lodashStrings.LoDashImplicitWrapper with js.Any
+  ] = js.native
   /**
     * @see _.mapValues
-    * TODO: This would be better if we had a separate overload for obj: NumericDictionary that returned a NumericDictionary,
-    *       but TypeScript cannot select overload signatures based on number vs string index key type.
     */
-  def mapValues[T](iteratee: js.Object): LoDashImplicitWrapper[Dictionary[Boolean]] = js.native
+  def mapValues[T /* <: js.Object */](iteratee: js.Object): LoDashImplicitWrapper[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in keyof T ]: boolean}
+    */ typings.lodash.lodashStrings.LoDashImplicitWrapper with js.Any
+  ] = js.native
   /**
     * @see _.mapValues
     * TODO: This would be better if we had a separate overload for obj: NumericDictionary that returned a NumericDictionary,
@@ -1800,30 +1804,26 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     *       but TypeScript cannot select overload signatures based on number vs string index key type.
     */
   @JSName("mapValues")
+  def mapValues_T[T](iteratee: String): LoDashImplicitWrapper[Dictionary[_]] = js.native
+  /**
+    * @see _.mapValues
+    * TODO: This would be better if we had a separate overload for obj: NumericDictionary that returned a NumericDictionary,
+    *       but TypeScript cannot select overload signatures based on number vs string index key type.
+    */
+  @JSName("mapValues")
+  def mapValues_T[T](iteratee: js.Object): LoDashImplicitWrapper[Dictionary[Boolean]] = js.native
+  /**
+    * @see _.mapValues
+    * TODO: This would be better if we had a separate overload for obj: NumericDictionary that returned a NumericDictionary,
+    *       but TypeScript cannot select overload signatures based on number vs string index key type.
+    */
+  @JSName("mapValues")
   def mapValues_TTResult[T, TResult](callback: DictionaryIterator[T, TResult]): LoDashImplicitWrapper[Dictionary[TResult]] = js.native
   /**
     * @see _.mapValues
     */
   @JSName("mapValues")
   def mapValues_T_Object[T /* <: js.Object */](): LoDashImplicitWrapper[T] = js.native
-  /**
-    * @see _.mapValues
-    */
-  @JSName("mapValues")
-  def mapValues_T_Object[T /* <: js.Object */](iteratee: String): LoDashImplicitWrapper[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: any}
-    */ typings.lodash.lodashStrings.LoDashImplicitWrapper with js.Any
-  ] = js.native
-  /**
-    * @see _.mapValues
-    */
-  @JSName("mapValues")
-  def mapValues_T_Object[T /* <: js.Object */](iteratee: js.Object): LoDashImplicitWrapper[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]: boolean}
-    */ typings.lodash.lodashStrings.LoDashImplicitWrapper with js.Any
-  ] = js.native
   /**
     * @see _.mapValues
     */
@@ -1983,26 +1983,26 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   /**
     * @see _.omit
     */
-  def omit[T /* <: js.Object */](paths: Many[PropertyName]*): LoDashImplicitWrapper[PartialObject[T]] = js.native
+  def omit[T /* <: AnyKindOfDictionary */](paths: Many[PropertyName]*): LoDashImplicitWrapper[T] = js.native
   /**
     * @see _.omitBy
     */
   def omitBy[T](): LoDashImplicitWrapper[Dictionary[T]] = js.native
-  def omitBy[T](predicate: ValueKeyIteratee[T]): LoDashImplicitWrapper[Dictionary[T]] = js.native
   /**
     * @see _.omitBy
     */
-  @JSName("omitBy")
-  def omitBy_T_Object[T /* <: js.Object */](
+  def omitBy[T /* <: js.Object */](
     predicate: ValueKeyIteratee[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
     ]
   ): LoDashImplicitWrapper[PartialObject[T]] = js.native
+  @JSName("omitBy")
+  def omitBy_T[T](predicate: ValueKeyIteratee[T]): LoDashImplicitWrapper[Dictionary[T]] = js.native
   /**
     * @see _.omit
     */
   @JSName("omit")
-  def omit_T_AnyKindOfDictionary[T /* <: AnyKindOfDictionary */](paths: Many[PropertyName]*): LoDashImplicitWrapper[T] = js.native
+  def omit_T_Object[T /* <: js.Object */](paths: Many[PropertyName]*): LoDashImplicitWrapper[PartialObject[T]] = js.native
   /**
     * @see _.omit
     */
@@ -2011,26 +2011,17 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   /**
     * @see _.orderBy
     */
-  def orderBy[T](): LoDashImplicitWrapper[js.Array[T]] = js.native
-  def orderBy[T](iteratees: Many[ListIteratee[T] | (ListIterator[T, NotVoid])]): LoDashImplicitWrapper[js.Array[T]] = js.native
-  def orderBy[T](iteratees: Many[ListIteratee[T] | (ListIterator[T, NotVoid])], orders: Many[Boolean | asc | desc]): LoDashImplicitWrapper[js.Array[T]] = js.native
-  /**
-    * @see _.orderBy
-    */
-  @JSName("orderBy")
-  def orderBy_T_Object[T /* <: js.Object */](): LoDashImplicitWrapper[
+  def orderBy[T /* <: js.Object */](): LoDashImplicitWrapper[
     js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
     ]
   ] = js.native
-  @JSName("orderBy")
-  def orderBy_T_Object[T /* <: js.Object */](iteratees: Many[ObjectIteratee[T] | (ObjectIterator[T, NotVoid])]): LoDashImplicitWrapper[
+  def orderBy[T /* <: js.Object */](iteratees: Many[ObjectIteratee[T] | (ObjectIterator[T, NotVoid])]): LoDashImplicitWrapper[
     js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
     ]
   ] = js.native
-  @JSName("orderBy")
-  def orderBy_T_Object[T /* <: js.Object */](
+  def orderBy[T /* <: js.Object */](
     iteratees: Many[ObjectIteratee[T] | (ObjectIterator[T, NotVoid])],
     orders: Many[Boolean | asc | desc]
   ): LoDashImplicitWrapper[
@@ -2038,6 +2029,15 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
     ]
   ] = js.native
+  /**
+    * @see _.orderBy
+    */
+  @JSName("orderBy")
+  def orderBy_T[T](): LoDashImplicitWrapper[js.Array[T]] = js.native
+  @JSName("orderBy")
+  def orderBy_T[T](iteratees: Many[ListIteratee[T] | (ListIterator[T, NotVoid])]): LoDashImplicitWrapper[js.Array[T]] = js.native
+  @JSName("orderBy")
+  def orderBy_T[T](iteratees: Many[ListIteratee[T] | (ListIterator[T, NotVoid])], orders: Many[Boolean | asc | desc]): LoDashImplicitWrapper[js.Array[T]] = js.native
   /**
     * @see _.over
     */
@@ -2394,8 +2394,12 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   /**
     * @see _.pickBy
     */
-  def pickBy[T](): LoDashImplicitWrapper[Dictionary[T]] = js.native
-  def pickBy[T](predicate: ValueKeyIteratee[T]): LoDashImplicitWrapper[Dictionary[T]] = js.native
+  def pickBy[T /* <: js.Object */](): LoDashImplicitWrapper[PartialObject[T]] = js.native
+  def pickBy[T /* <: js.Object */](
+    predicate: ValueKeyIteratee[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
+  ): LoDashImplicitWrapper[PartialObject[T]] = js.native
   /**
     * @see _.pickBy
     */
@@ -2404,13 +2408,9 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.pickBy
     */
   @JSName("pickBy")
-  def pickBy_T_Object[T /* <: js.Object */](): LoDashImplicitWrapper[PartialObject[T]] = js.native
+  def pickBy_T[T](): LoDashImplicitWrapper[Dictionary[T]] = js.native
   @JSName("pickBy")
-  def pickBy_T_Object[T /* <: js.Object */](
-    predicate: ValueKeyIteratee[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-    ]
-  ): LoDashImplicitWrapper[PartialObject[T]] = js.native
+  def pickBy_T[T](predicate: ValueKeyIteratee[T]): LoDashImplicitWrapper[Dictionary[T]] = js.native
   /**
     * @see _.pick
     */
@@ -2541,23 +2541,23 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     */
   def reject(): LoDashImplicitWrapper[js.Array[String]] = js.native
   def reject(predicate: StringIterator[Boolean]): LoDashImplicitWrapper[js.Array[String]] = js.native
-  def reject[T](predicate: ListIterateeCustom[T, Boolean]): LoDashImplicitWrapper[js.Array[T]] = js.native
+  def reject[T /* <: js.Object */](predicate: ObjectIterateeCustom[T, Boolean]): LoDashImplicitWrapper[
+    js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
+  ] = js.native
   /**
     * @see _.reject
     */
   @JSName("reject")
   def reject_T[T](): LoDashImplicitWrapper[js.Array[T]] = js.native
+  @JSName("reject")
+  def reject_T[T](predicate: ListIterateeCustom[T, Boolean]): LoDashImplicitWrapper[js.Array[T]] = js.native
   /**
     * @see _.reject
     */
   @JSName("reject")
   def reject_T_Object[T /* <: js.Object */](): LoDashImplicitWrapper[
-    js.Array[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-    ]
-  ] = js.native
-  @JSName("reject")
-  def reject_T_Object[T /* <: js.Object */](predicate: ObjectIterateeCustom[T, Boolean]): LoDashImplicitWrapper[
     js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
     ]
@@ -2613,23 +2613,23 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   /**
     * @see _.sampleSize
     */
-  def sampleSize[T](): LoDashImplicitWrapper[js.Array[T]] = js.native
-  def sampleSize[T](n: Double): LoDashImplicitWrapper[js.Array[T]] = js.native
+  def sampleSize[T /* <: js.Object */](): LoDashImplicitWrapper[
+    js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
+  ] = js.native
+  def sampleSize[T /* <: js.Object */](n: Double): LoDashImplicitWrapper[
+    js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]
+  ] = js.native
   /**
     * @see _.sampleSize
     */
   @JSName("sampleSize")
-  def sampleSize_T_Object[T /* <: js.Object */](): LoDashImplicitWrapper[
-    js.Array[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-    ]
-  ] = js.native
+  def sampleSize_T[T](): LoDashImplicitWrapper[js.Array[T]] = js.native
   @JSName("sampleSize")
-  def sampleSize_T_Object[T /* <: js.Object */](n: Double): LoDashImplicitWrapper[
-    js.Array[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-    ]
-  ] = js.native
+  def sampleSize_T[T](n: Double): LoDashImplicitWrapper[js.Array[T]] = js.native
   /**
     * @see _.sample
     */
@@ -2660,16 +2660,16 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   /**
     * @see _.shuffle
     */
-  def shuffle[T](): LoDashImplicitWrapper[js.Array[T]] = js.native
-  /**
-    * @see _.shuffle
-    */
-  @JSName("shuffle")
-  def shuffle_T_Object[T /* <: js.Object */](): LoDashImplicitWrapper[
+  def shuffle[T /* <: js.Object */](): LoDashImplicitWrapper[
     js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
     ]
   ] = js.native
+  /**
+    * @see _.shuffle
+    */
+  @JSName("shuffle")
+  def shuffle_T[T](): LoDashImplicitWrapper[js.Array[T]] = js.native
   /**
     * @see _.size
     */
@@ -2687,30 +2687,30 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   /**
     * @see _.some
     */
-  def some[T /* <: js.Object */](): Boolean = js.native
-  def some[T /* <: js.Object */](predicate: ObjectIterateeCustom[T, Boolean]): Boolean = js.native
+  def some[T](): Boolean = js.native
+  def some[T](predicate: ListIterateeCustom[T, Boolean]): Boolean = js.native
   /**
     * @see _.some
     */
   @JSName("some")
-  def some_T[T](): Boolean = js.native
+  def some_T_Object[T /* <: js.Object */](): Boolean = js.native
   @JSName("some")
-  def some_T[T](predicate: ListIterateeCustom[T, Boolean]): Boolean = js.native
+  def some_T_Object[T /* <: js.Object */](predicate: ObjectIterateeCustom[T, Boolean]): Boolean = js.native
   def sort[T](): this.type = js.native
   def sort[T](compareFn: js.Function2[/* a */ T, /* b */ T, Double]): this.type = js.native
   /**
     * @see _.sortBy
     */
-  def sortBy[T](iteratees: Many[ListIteratee[T]]*): LoDashImplicitWrapper[js.Array[T]] = js.native
-  /**
-    * @see _.sortBy
-    */
-  @JSName("sortBy")
-  def sortBy_T_Object[T /* <: js.Object */](iteratees: Many[ObjectIteratee[T]]*): LoDashImplicitWrapper[
+  def sortBy[T /* <: js.Object */](iteratees: Many[ObjectIteratee[T]]*): LoDashImplicitWrapper[
     js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
     ]
   ] = js.native
+  /**
+    * @see _.sortBy
+    */
+  @JSName("sortBy")
+  def sortBy_T[T](iteratees: Many[ListIteratee[T]]*): LoDashImplicitWrapper[js.Array[T]] = js.native
   /**
     * @see _.sortedIndex
     */
@@ -2856,16 +2856,16 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   /**
     * @see _.toArray
     */
-  def toArray[T](): LoDashImplicitWrapper[js.Array[T]] = js.native
-  /**
-    * @see _.toArray
-    */
-  @JSName("toArray")
-  def toArray_T_Object[T /* <: js.Object */](): LoDashImplicitWrapper[
+  def toArray[T /* <: js.Object */](): LoDashImplicitWrapper[
     js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
     ]
   ] = js.native
+  /**
+    * @see _.toArray
+    */
+  @JSName("toArray")
+  def toArray_T[T](): LoDashImplicitWrapper[js.Array[T]] = js.native
   /**
     * @see _.toFinite
     */
@@ -3109,16 +3109,16 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   /**
     * @see _.valuesIn
     */
-  def valuesIn[T](): LoDashImplicitWrapper[js.Array[T]] = js.native
-  /**
-    * @see _.valuesIn
-    */
-  @JSName("valuesIn")
-  def valuesIn_T_Object[T /* <: js.Object */](): LoDashImplicitWrapper[
+  def valuesIn[T /* <: js.Object */](): LoDashImplicitWrapper[
     js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
     ]
   ] = js.native
+  /**
+    * @see _.valuesIn
+    */
+  @JSName("valuesIn")
+  def valuesIn_T[T](): LoDashImplicitWrapper[js.Array[T]] = js.native
   /**
     * @see _.values
     */

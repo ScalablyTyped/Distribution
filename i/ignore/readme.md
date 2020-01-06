@@ -10,9 +10,9 @@ Ignore is a manager and filter for .gitignore rules, the one used by eslint, git
 | ------------------ | :-------------: |
 | Full name          | ignore |
 | Keywords           | ignore, .gitignore, gitignore, npmignore, rules, manager, filter, regexp, regex, fnmatch, glob, asterisks, regular-expression |
-| # releases         | 26 |
-| # dependents       | 307 |
-| # downloads        | 304231073 |
+| # releases         | 23 |
+| # dependents       | 416 |
+| # downloads        | 584871764 |
 | # stars            | 14 |
 
 ## Links

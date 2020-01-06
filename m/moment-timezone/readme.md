@@ -10,9 +10,9 @@ Parse and display moments in any timezone.
 | ------------------ | :-------------: |
 | Full name          | moment-timezone |
 | Keywords           | moment, date, time, timezone, olson, iana, zone, tz |
-| # releases         | 10 |
-| # dependents       | 1685 |
-| # downloads        | 106819293 |
+| # releases         | 14 |
+| # dependents       | 2200 |
+| # downloads        | 177346904 |
 | # stars            | 80 |
 
 ## Links

@@ -4,27 +4,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VolumeiSCSIAttributes extends js.Object {
   /**
     * Indicates whether mutual CHAP is enabled for the iSCSI target.
     */
-  var ChapEnabled: js.UndefOr[scala.Boolean] = js.undefined
+  var ChapEnabled: js.UndefOr[scala.Boolean] = js.native
   /**
     * The logical disk number.
     */
-  var LunNumber: js.UndefOr[PositiveIntObject] = js.undefined
+  var LunNumber: js.UndefOr[PositiveIntObject] = js.native
   /**
     * The network interface identifier.
     */
-  var NetworkInterfaceId: js.UndefOr[typings.awsDashSdk.clientsStoragegatewayMod.NetworkInterfaceId] = js.undefined
+  var NetworkInterfaceId: js.UndefOr[typings.awsDashSdk.clientsStoragegatewayMod.NetworkInterfaceId] = js.native
   /**
     * The port used to communicate with iSCSI targets.
     */
-  var NetworkInterfacePort: js.UndefOr[integer] = js.undefined
+  var NetworkInterfacePort: js.UndefOr[integer] = js.native
   /**
     * The Amazon Resource Name (ARN) of the volume target.
     */
-  var TargetARN: js.UndefOr[typings.awsDashSdk.clientsStoragegatewayMod.TargetARN] = js.undefined
+  var TargetARN: js.UndefOr[typings.awsDashSdk.clientsStoragegatewayMod.TargetARN] = js.native
 }
 
 object VolumeiSCSIAttributes {
@@ -37,11 +38,11 @@ object VolumeiSCSIAttributes {
     TargetARN: TargetARN = null
   ): VolumeiSCSIAttributes = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ChapEnabled)) __obj.updateDynamic("ChapEnabled")(ChapEnabled)
+    if (!js.isUndefined(ChapEnabled)) __obj.updateDynamic("ChapEnabled")(ChapEnabled.asInstanceOf[js.Any])
     if (LunNumber != null) __obj.updateDynamic("LunNumber")(LunNumber.asInstanceOf[js.Any])
-    if (NetworkInterfaceId != null) __obj.updateDynamic("NetworkInterfaceId")(NetworkInterfaceId)
+    if (NetworkInterfaceId != null) __obj.updateDynamic("NetworkInterfaceId")(NetworkInterfaceId.asInstanceOf[js.Any])
     if (NetworkInterfacePort != null) __obj.updateDynamic("NetworkInterfacePort")(NetworkInterfacePort.asInstanceOf[js.Any])
-    if (TargetARN != null) __obj.updateDynamic("TargetARN")(TargetARN)
+    if (TargetARN != null) __obj.updateDynamic("TargetARN")(TargetARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[VolumeiSCSIAttributes]
   }
 }

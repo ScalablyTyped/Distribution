@@ -11,8 +11,8 @@ Sprintf() for node.js
 | Full name          | sprintf |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 367 |
-| # downloads        | 5436947 |
+| # dependents       | 366 |
+| # downloads        | 5522161 |
 | # stars            | 7 |
 
 ## Links

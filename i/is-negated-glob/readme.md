@@ -12,7 +12,7 @@ Returns an object with a `negated` boolean and the `!` stripped from negation pa
 | Keywords           | extglob, glob, inverse, inverted, is, is-glob, match, micromatch, negate, negated, negation, negative, pattern, test |
 | # releases         | 0 |
 | # dependents       | 9 |
-| # downloads        | 20336488 |
+| # downloads        | 42382114 |
 | # stars            | 0 |
 
 ## Links

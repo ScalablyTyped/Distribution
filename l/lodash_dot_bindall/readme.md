@@ -11,8 +11,8 @@ The lodash method `_.bindAll` exported as a module.
 | Full name          | lodash.bindall |
 | Keywords           | lodash-modularized, bindall |
 | # releases         | 0 |
-| # dependents       | 18 |
-| # downloads        | 173073 |
+| # dependents       | 20 |
+| # downloads        | 156459 |
 | # stars            | 0 |
 
 ## Links

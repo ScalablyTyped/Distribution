@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "blueprintjs__datetime"
-version := "3.15.1-388004"
+version := "3.15.1-7d4f28"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "blueprintjs__core" % "3.22.3-13aa03",
-  "org.scalablytyped" %%% "blueprintjs__icons" % "3.13.0-e2265c",
-  "org.scalablytyped" %%% "csstype" % "2.6.6-32adec",
-  "org.scalablytyped" %%% "popper_dot_js" % "1.16.0-54a437",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-bfe2c5",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191220Z-73a5bc",
-  "org.scalablytyped" %%% "react-day-picker" % "7.4.0-151fa8",
-  "org.scalablytyped" %%% "react-popper" % "1.3.7-548245",
-  "org.scalablytyped" %%% "std" % "3.7-953338")
+  "org.scalablytyped" %%% "blueprintjs__core" % "3.22.3-d80632",
+  "org.scalablytyped" %%% "blueprintjs__icons" % "3.13.0-373154",
+  "org.scalablytyped" %%% "csstype" % "2.6.6-fd5644",
+  "org.scalablytyped" %%% "popper_dot_js" % "1.16.0-8923e4",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-b24434",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191220Z-22d23f",
+  "org.scalablytyped" %%% "react-day-picker" % "7.4.0-4e010f",
+  "org.scalablytyped" %%% "react-popper" % "1.3.7-f326ba",
+  "org.scalablytyped" %%% "std" % "3.7-b6d959")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

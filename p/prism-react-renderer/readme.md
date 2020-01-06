@@ -10,9 +10,9 @@ Renders highlighted Prism output using React
 | ------------------ | :-------------: |
 | Full name          | prism-react-renderer |
 | Keywords           | - |
-| # releases         | 12 |
-| # dependents       | 15 |
-| # downloads        | 46656 |
+| # releases         | 19 |
+| # dependents       | 105 |
+| # downloads        | 1734831 |
 | # stars            | 0 |
 
 ## Links

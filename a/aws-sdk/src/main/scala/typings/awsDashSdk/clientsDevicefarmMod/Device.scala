@@ -4,91 +4,92 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Device extends js.Object {
   /**
     * The device's ARN.
     */
-  var arn: js.UndefOr[AmazonResourceName] = js.undefined
+  var arn: js.UndefOr[AmazonResourceName] = js.native
   /**
-    * Reflects how likely a device will be available for a test run. It is currently available in the ListDevices and GetDevice API methods.
+    * Indicates how likely a device is available for a test run. Currently available in the ListDevices and GetDevice API methods.
     */
-  var availability: js.UndefOr[DeviceAvailability] = js.undefined
+  var availability: js.UndefOr[DeviceAvailability] = js.native
   /**
     * The device's carrier.
     */
-  var carrier: js.UndefOr[String] = js.undefined
+  var carrier: js.UndefOr[String] = js.native
   /**
     * Information about the device's CPU.
     */
-  var cpu: js.UndefOr[CPU] = js.undefined
+  var cpu: js.UndefOr[CPU] = js.native
   /**
     * The name of the fleet to which this device belongs.
     */
-  var fleetName: js.UndefOr[String] = js.undefined
+  var fleetName: js.UndefOr[String] = js.native
   /**
-    * The type of fleet to which this device belongs. Possible values for fleet type are PRIVATE and PUBLIC.
+    * The type of fleet to which this device belongs. Possible values are PRIVATE and PUBLIC.
     */
-  var fleetType: js.UndefOr[String] = js.undefined
+  var fleetType: js.UndefOr[String] = js.native
   /**
-    * The device's form factor. Allowed values include:   PHONE: The phone form factor.   TABLET: The tablet form factor.  
+    * The device's form factor. Allowed values include:   PHONE   TABLET  
     */
-  var formFactor: js.UndefOr[DeviceFormFactor] = js.undefined
+  var formFactor: js.UndefOr[DeviceFormFactor] = js.native
   /**
     * The device's heap size, expressed in bytes.
     */
-  var heapSize: js.UndefOr[Long] = js.undefined
+  var heapSize: js.UndefOr[Long] = js.native
   /**
     * The device's image name.
     */
-  var image: js.UndefOr[String] = js.undefined
+  var image: js.UndefOr[String] = js.native
   /**
-    * The instances belonging to this device.
+    * The instances that belong to this device.
     */
-  var instances: js.UndefOr[DeviceInstances] = js.undefined
+  var instances: js.UndefOr[DeviceInstances] = js.native
   /**
     * The device's manufacturer name.
     */
-  var manufacturer: js.UndefOr[String] = js.undefined
+  var manufacturer: js.UndefOr[String] = js.native
   /**
     * The device's total memory size, expressed in bytes.
     */
-  var memory: js.UndefOr[Long] = js.undefined
+  var memory: js.UndefOr[Long] = js.native
   /**
     * The device's model name.
     */
-  var model: js.UndefOr[String] = js.undefined
+  var model: js.UndefOr[String] = js.native
   /**
     * The device's model ID.
     */
-  var modelId: js.UndefOr[String] = js.undefined
+  var modelId: js.UndefOr[String] = js.native
   /**
     * The device's display name.
     */
-  var name: js.UndefOr[Name] = js.undefined
+  var name: js.UndefOr[Name] = js.native
   /**
     * The device's operating system type.
     */
-  var os: js.UndefOr[String] = js.undefined
+  var os: js.UndefOr[String] = js.native
   /**
-    * The device's platform. Allowed values include:   ANDROID: The Android platform.   IOS: The iOS platform.  
+    * The device's platform. Allowed values include:   ANDROID   IOS  
     */
-  var platform: js.UndefOr[DevicePlatform] = js.undefined
+  var platform: js.UndefOr[DevicePlatform] = js.native
   /**
     * The device's radio.
     */
-  var radio: js.UndefOr[String] = js.undefined
+  var radio: js.UndefOr[String] = js.native
   /**
     * Specifies whether remote access has been enabled for the specified device.
     */
-  var remoteAccessEnabled: js.UndefOr[Boolean] = js.undefined
+  var remoteAccessEnabled: js.UndefOr[Boolean] = js.native
   /**
-    * This flag is set to true if remote debugging is enabled for the device.  Remote debugging is no longer supported. 
+    * This flag is set to true if remote debugging is enabled for the device. Remote debugging is no longer supported.
     */
-  var remoteDebugEnabled: js.UndefOr[Boolean] = js.undefined
+  var remoteDebugEnabled: js.UndefOr[Boolean] = js.native
   /**
     * The resolution of the device.
     */
-  var resolution: js.UndefOr[Resolution] = js.undefined
+  var resolution: js.UndefOr[Resolution] = js.native
 }
 
 object Device {
@@ -117,27 +118,27 @@ object Device {
     resolution: Resolution = null
   ): Device = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn)
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
     if (availability != null) __obj.updateDynamic("availability")(availability.asInstanceOf[js.Any])
-    if (carrier != null) __obj.updateDynamic("carrier")(carrier)
-    if (cpu != null) __obj.updateDynamic("cpu")(cpu)
-    if (fleetName != null) __obj.updateDynamic("fleetName")(fleetName)
-    if (fleetType != null) __obj.updateDynamic("fleetType")(fleetType)
+    if (carrier != null) __obj.updateDynamic("carrier")(carrier.asInstanceOf[js.Any])
+    if (cpu != null) __obj.updateDynamic("cpu")(cpu.asInstanceOf[js.Any])
+    if (fleetName != null) __obj.updateDynamic("fleetName")(fleetName.asInstanceOf[js.Any])
+    if (fleetType != null) __obj.updateDynamic("fleetType")(fleetType.asInstanceOf[js.Any])
     if (formFactor != null) __obj.updateDynamic("formFactor")(formFactor.asInstanceOf[js.Any])
     if (heapSize != null) __obj.updateDynamic("heapSize")(heapSize.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image)
-    if (instances != null) __obj.updateDynamic("instances")(instances)
-    if (manufacturer != null) __obj.updateDynamic("manufacturer")(manufacturer)
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (instances != null) __obj.updateDynamic("instances")(instances.asInstanceOf[js.Any])
+    if (manufacturer != null) __obj.updateDynamic("manufacturer")(manufacturer.asInstanceOf[js.Any])
     if (memory != null) __obj.updateDynamic("memory")(memory.asInstanceOf[js.Any])
-    if (model != null) __obj.updateDynamic("model")(model)
-    if (modelId != null) __obj.updateDynamic("modelId")(modelId)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (os != null) __obj.updateDynamic("os")(os)
+    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (modelId != null) __obj.updateDynamic("modelId")(modelId.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (os != null) __obj.updateDynamic("os")(os.asInstanceOf[js.Any])
     if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
-    if (radio != null) __obj.updateDynamic("radio")(radio)
-    if (!js.isUndefined(remoteAccessEnabled)) __obj.updateDynamic("remoteAccessEnabled")(remoteAccessEnabled)
-    if (!js.isUndefined(remoteDebugEnabled)) __obj.updateDynamic("remoteDebugEnabled")(remoteDebugEnabled)
-    if (resolution != null) __obj.updateDynamic("resolution")(resolution)
+    if (radio != null) __obj.updateDynamic("radio")(radio.asInstanceOf[js.Any])
+    if (!js.isUndefined(remoteAccessEnabled)) __obj.updateDynamic("remoteAccessEnabled")(remoteAccessEnabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(remoteDebugEnabled)) __obj.updateDynamic("remoteDebugEnabled")(remoteDebugEnabled.asInstanceOf[js.Any])
+    if (resolution != null) __obj.updateDynamic("resolution")(resolution.asInstanceOf[js.Any])
     __obj.asInstanceOf[Device]
   }
 }

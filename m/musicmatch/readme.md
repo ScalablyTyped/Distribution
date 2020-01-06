@@ -12,7 +12,7 @@ musicmatch api
 | Keywords           | musicmatch, api |
 | # releases         | 9 |
 | # dependents       | 2 |
-| # downloads        | 4976 |
+| # downloads        | 3374 |
 | # stars            | 1 |
 
 ## Links

@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SigningConfigurationOverrides extends js.Object {
   /**
-    * A specified override of the default encryption algorithm that is used in an AWS Signer job.
+    * A specified override of the default encryption algorithm that is used in a code signing job.
     */
-  var encryptionAlgorithm: js.UndefOr[EncryptionAlgorithm] = js.undefined
+  var encryptionAlgorithm: js.UndefOr[EncryptionAlgorithm] = js.native
   /**
-    * A specified override of the default hash algorithm that is used in an AWS Signer job.
+    * A specified override of the default hash algorithm that is used in a code signing job.
     */
-  var hashAlgorithm: js.UndefOr[HashAlgorithm] = js.undefined
+  var hashAlgorithm: js.UndefOr[HashAlgorithm] = js.native
 }
 
 object SigningConfigurationOverrides {

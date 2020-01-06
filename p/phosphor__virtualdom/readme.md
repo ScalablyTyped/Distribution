@@ -10,9 +10,9 @@ PhosphorJS - Virtual DOM
 | ------------------ | :-------------: |
 | Full name          | @phosphor/virtualdom |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 26 |
-| # downloads        | 1105831 |
+| # releases         | 3 |
+| # dependents       | 30 |
+| # downloads        | 1211884 |
 | # stars            | 0 |
 
 ## Links

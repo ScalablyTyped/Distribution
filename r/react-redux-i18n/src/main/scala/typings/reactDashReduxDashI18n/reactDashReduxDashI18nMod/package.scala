@@ -15,7 +15,7 @@ package object reactDashReduxDashI18nMod {
     js.Any
   ]
   type SubTranslationObject = String | (StringDictionary[
-    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias react-redux-i18n.react-redux-i18n.SubTranslationObject */ js.Object
+    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias react-redux-i18n.react-redux-i18n.SubTranslationObject */ js.Object
   ])
   type TranslationObjects = StringDictionary[SubTranslationObject]
 }

@@ -1,11 +1,16 @@
 package typings.cliDashProgress.cliDashProgressMod
 
+import typings.cliDashProgress.cliDashProgressStrings.center
+import typings.cliDashProgress.cliDashProgressStrings.left
+import typings.cliDashProgress.cliDashProgressStrings.right
 import typings.node.NodeJS.WritableStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
+  /**  position of the progress bar - 'left' (default), 'right' or 'center  */
+  var align: js.UndefOr[left | right | center] = js.undefined
   /** character to use as "complete" indicator in the bar (default: "=") */
   var barCompleteChar: js.UndefOr[String] = js.undefined
   /** character to use as "complete" indicator in the bar (default: "=") */
@@ -44,8 +49,11 @@ trait Options extends js.Object {
   var format: js.UndefOr[String] = js.undefined
   /** the maximum update rate (default: 10) */
   var fps: js.UndefOr[Double] = js.undefined
-  /** hide the cursor during progress operation; restored on complete (default: false) */
-  var hideCursor: js.UndefOr[Boolean] = js.undefined
+  /**
+    * hide the cursor during progress operation; restored on complete (default: false)
+    * - pass `null` to keep terminal settings
+    */
+  var hideCursor: js.UndefOr[Boolean | Null] = js.undefined
   /** disable line wrapping (default: false) - pass null to keep terminal settings; pass true to trim the output to terminal width */
   var linewrap: js.UndefOr[Boolean | Null] = js.undefined
   /** enable scheduled output to notty streams - e.g. redirect to files (default: false) */
@@ -63,6 +71,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
+    align: left | right | center = null,
     barCompleteChar: String = null,
     barCompleteString: String = null,
     barIncompleteChar: String = null,
@@ -83,6 +92,7 @@ object Options {
     synchronousUpdate: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
+    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
     if (barCompleteChar != null) __obj.updateDynamic("barCompleteChar")(barCompleteChar.asInstanceOf[js.Any])
     if (barCompleteString != null) __obj.updateDynamic("barCompleteString")(barCompleteString.asInstanceOf[js.Any])
     if (barIncompleteChar != null) __obj.updateDynamic("barIncompleteChar")(barIncompleteChar.asInstanceOf[js.Any])

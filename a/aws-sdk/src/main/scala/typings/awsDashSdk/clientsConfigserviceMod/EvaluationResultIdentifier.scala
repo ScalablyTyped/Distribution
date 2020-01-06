@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EvaluationResultIdentifier extends js.Object {
   /**
     * Identifies an AWS Config rule used to evaluate an AWS resource, and provides the type and ID of the evaluated resource.
     */
-  var EvaluationResultQualifier: js.UndefOr[typings.awsDashSdk.clientsConfigserviceMod.EvaluationResultQualifier] = js.undefined
+  var EvaluationResultQualifier: js.UndefOr[typings.awsDashSdk.clientsConfigserviceMod.EvaluationResultQualifier] = js.native
   /**
     * The time of the event that triggered the evaluation of your AWS resources. The time can indicate when AWS Config delivered a configuration item change notification, or it can indicate when AWS Config delivered the configuration snapshot, depending on which event triggered the evaluation.
     */
-  var OrderingTimestamp: js.UndefOr[_Date] = js.undefined
+  var OrderingTimestamp: js.UndefOr[_Date] = js.native
 }
 
 object EvaluationResultIdentifier {
   @scala.inline
   def apply(EvaluationResultQualifier: EvaluationResultQualifier = null, OrderingTimestamp: _Date = null): EvaluationResultIdentifier = {
     val __obj = js.Dynamic.literal()
-    if (EvaluationResultQualifier != null) __obj.updateDynamic("EvaluationResultQualifier")(EvaluationResultQualifier)
-    if (OrderingTimestamp != null) __obj.updateDynamic("OrderingTimestamp")(OrderingTimestamp)
+    if (EvaluationResultQualifier != null) __obj.updateDynamic("EvaluationResultQualifier")(EvaluationResultQualifier.asInstanceOf[js.Any])
+    if (OrderingTimestamp != null) __obj.updateDynamic("OrderingTimestamp")(OrderingTimestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[EvaluationResultIdentifier]
   }
 }

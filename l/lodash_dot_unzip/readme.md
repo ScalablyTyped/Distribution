@@ -11,8 +11,8 @@ The lodash method `_.unzip` exported as a module.
 | Full name          | lodash.unzip |
 | Keywords           | lodash-modularized, unzip |
 | # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 37521 |
+| # dependents       | 7 |
+| # downloads        | 23817 |
 | # stars            | 0 |
 
 ## Links

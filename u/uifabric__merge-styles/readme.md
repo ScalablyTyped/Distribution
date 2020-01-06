@@ -4,15 +4,15 @@
 Typings are for version 7.8.1
 
 ## Library description:
-Office UI Fabric style loading utilities.
+Style loading utilities.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @uifabric/merge-styles |
 | Keywords           | - |
-| # releases         | 116 |
-| # dependents       | 16 |
-| # downloads        | 1689370 |
+| # releases         | 121 |
+| # dependents       | 19 |
+| # downloads        | 2008023 |
 | # stars            | 0 |
 
 ## Links

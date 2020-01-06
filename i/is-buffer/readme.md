@@ -11,8 +11,8 @@ Determine if an object is a Buffer
 | Full name          | is-buffer |
 | Keywords           | arraybuffer, browser, browser buffer, browserify, buffer, buffers, core buffer, dataview, float32array, float64array, int16array, int32array, type, typed array, uint32array |
 | # releases         | 6 |
-| # dependents       | 221 |
-| # downloads        | 365748094 |
+| # dependents       | 286 |
+| # downloads        | 657719135 |
 | # stars            | 4 |
 
 ## Links

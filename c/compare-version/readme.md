@@ -11,8 +11,8 @@ Compare semver version numbers
 | Full name          | compare-version |
 | Keywords           | compare, number, semver, version |
 | # releases         | 0 |
-| # dependents       | 42 |
-| # downloads        | 3547093 |
+| # dependents       | 49 |
+| # downloads        | 4064775 |
 | # stars            | 1 |
 
 ## Links

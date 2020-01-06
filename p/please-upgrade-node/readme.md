@@ -12,7 +12,7 @@ Displays a beginner-friendly message telling your user to upgrade their version 
 | Keywords           | node, engines, version, check, verify, upgrade |
 | # releases         | 5 |
 | # dependents       | 90 |
-| # downloads        | 69117961 |
+| # downloads        | 75672663 |
 | # stars            | 0 |
 
 ## Links

@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Phase2DHGroupNumbersRequestListValue extends js.Object {
   /**
     * The Diffie-Hellmann group number.
     */
-  var Value: js.UndefOr[Integer] = js.undefined
+  var Value: js.UndefOr[Integer] = js.native
 }
 
 object Phase2DHGroupNumbersRequestListValue {

@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UsagePlanKeyArgs extends js.Object {
   /**
     * The identifier of the API key resource.
     */
-  val keyId: Input[String]
+  val keyId: Input[String] = js.native
   /**
     * The type of the API key resource. Currently, the valid key type is API_KEY.
     */
-  val keyType: Input[String]
+  val keyType: Input[String] = js.native
   /**
     * The Id of the usage plan resource representing to associate the key to.
     */
-  val usagePlanId: Input[String]
+  val usagePlanId: Input[String] = js.native
 }
 
 object UsagePlanKeyArgs {

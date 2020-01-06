@@ -4,15 +4,15 @@
 Typings are for version 0.1
 
 ## Library description:
-canvas-confetti
+performant confetti animation in the browser
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | canvas-confetti |
-| Keywords           | - |
-| # releases         | 6 |
+| Keywords           | canvas, confetti, animation, burst, fireworks, snow, particles |
+| # releases         | 16 |
 | # dependents       | 0 |
-| # downloads        | 30396 |
+| # downloads        | 198765 |
 | # stars            | 0 |
 
 ## Links

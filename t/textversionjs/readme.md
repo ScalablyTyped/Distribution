@@ -12,7 +12,7 @@ A tool for generating the text version of an html email.
 | Keywords           | email, html, text, version, plaintext |
 | # releases         | 4 |
 | # dependents       | 4 |
-| # downloads        | 62909 |
+| # downloads        | 101001 |
 | # stars            | 0 |
 
 ## Links

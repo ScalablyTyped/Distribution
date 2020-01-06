@@ -10,9 +10,9 @@ Webpack block for the Extract Text Plugin.
 | ------------------ | :-------------: |
 | Full name          | @webpack-blocks/extract-text |
 | Keywords           | webpack, webpack-blocks |
-| # releases         | 7 |
+| # releases         | 6 |
 | # dependents       | 5 |
-| # downloads        | 146403 |
+| # downloads        | 121138 |
 | # stars            | 0 |
 
 ## Links

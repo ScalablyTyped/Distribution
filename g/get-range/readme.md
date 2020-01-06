@@ -10,9 +10,9 @@ Lazy number range generator
 | ------------------ | :-------------: |
 | Full name          | get-range |
 | Keywords           | range, xrange, generator, generate, iterator, iterable, iterate, gen, get, number, numbers |
-| # releases         | 0 |
+| # releases         | 3 |
 | # dependents       | 3 |
-| # downloads        | 622 |
+| # downloads        | 897 |
 | # stars            | 1 |
 
 ## Links

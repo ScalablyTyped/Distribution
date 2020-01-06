@@ -12,7 +12,7 @@ A ultra light-weight dependency injection container in Javascript
 | Keywords           | di, ioc, ioc container, dependency management, dependency injection, di container |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 1729 |
+| # downloads        | 1368 |
 | # stars            | 0 |
 
 ## Links

@@ -12,7 +12,7 @@ Minimatch but for collections of minimatcher matchers.
 | Keywords           | - |
 | # releases         | 6 |
 | # dependents       | 8 |
-| # downloads        | 10139440 |
+| # downloads        | 12234077 |
 | # stars            | 0 |
 
 ## Links

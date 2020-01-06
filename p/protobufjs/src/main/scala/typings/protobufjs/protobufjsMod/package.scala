@@ -21,7 +21,7 @@ package object protobufjsMod {
   type Codegen = js.Function2[
     /* formatStringOrScope */ js.UndefOr[String | StringDictionary[js.Any]], 
     /* repeated */ js.Any, 
-    (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias protobufjs.protobufjs.Codegen */ js.Object) | js.Function
+    (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias protobufjs.protobufjs.Codegen */ js.Object) | js.Function
   ]
   /**
     * Event listener as used by {@link util.EventEmitter}.

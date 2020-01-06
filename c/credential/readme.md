@@ -11,8 +11,8 @@ Easy password hashing and verification in Node. Protects against brute force, ra
 | Full name          | credential |
 | Keywords           | password, passwords, hash, auth, authorization, authentication, security, login, sign in, salt, rainbow, brute, stretching, PBKDF2 |
 | # releases         | 1 |
-| # dependents       | 17 |
-| # downloads        | 68082 |
+| # dependents       | 21 |
+| # downloads        | 61871 |
 | # stars            | 8 |
 
 ## Links

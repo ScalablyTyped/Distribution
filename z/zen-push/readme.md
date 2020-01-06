@@ -10,9 +10,9 @@ An Observable push stream
 | ------------------ | :-------------: |
 | Full name          | zen-push |
 | Keywords           | - |
-| # releases         | 9 |
-| # dependents       | 3 |
-| # downloads        | 33384 |
+| # releases         | 2 |
+| # dependents       | 4 |
+| # downloads        | 16153 |
 | # stars            | 0 |
 
 ## Links

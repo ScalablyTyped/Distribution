@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jss-plugin-vendor-prefixer" : "10.0.0"
+      "jss-plugin-vendor-prefixer" : "10.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "jss-plugin-vendor-prefixer" : "10.0.0"
+      "jss-plugin-vendor-prefixer" : "10.0.3"
     }
   ],
   "compile-devDependencies" : [

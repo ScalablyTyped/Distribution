@@ -351,12 +351,12 @@ trait CognitoIdentityServiceProvider extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ AdminUpdateUserAttributesResponse, Unit]
   ): Request[AdminUpdateUserAttributesResponse, AWSError] = js.native
   /**
-    * Signs out users from all devices, as an administrator. Calling this action requires developer credentials.
+    * Signs out users from all devices, as an administrator. It also invalidates all refresh tokens issued to a user. The user's current access and Id tokens remain valid until their expiry. Access and Id tokens expire one hour after they are issued. Calling this action requires developer credentials.
     */
   def adminUserGlobalSignOut(): Request[AdminUserGlobalSignOutResponse, AWSError] = js.native
   def adminUserGlobalSignOut(callback: js.Function2[/* err */ AWSError, /* data */ AdminUserGlobalSignOutResponse, Unit]): Request[AdminUserGlobalSignOutResponse, AWSError] = js.native
   /**
-    * Signs out users from all devices, as an administrator. Calling this action requires developer credentials.
+    * Signs out users from all devices, as an administrator. It also invalidates all refresh tokens issued to a user. The user's current access and Id tokens remain valid until their expiry. Access and Id tokens expire one hour after they are issued. Calling this action requires developer credentials.
     */
   def adminUserGlobalSignOut(params: AdminUserGlobalSignOutRequest): Request[AdminUserGlobalSignOutResponse, AWSError] = js.native
   def adminUserGlobalSignOut(
@@ -856,12 +856,12 @@ trait CognitoIdentityServiceProvider extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetUserPoolMfaConfigResponse, Unit]
   ): Request[GetUserPoolMfaConfigResponse, AWSError] = js.native
   /**
-    * Signs out users from all devices.
+    * Signs out users from all devices. It also invalidates all refresh tokens issued to a user. The user's current access and Id tokens remain valid until their expiry. Access and Id tokens expire one hour after they are issued.
     */
   def globalSignOut(): Request[GlobalSignOutResponse, AWSError] = js.native
   def globalSignOut(callback: js.Function2[/* err */ AWSError, /* data */ GlobalSignOutResponse, Unit]): Request[GlobalSignOutResponse, AWSError] = js.native
   /**
-    * Signs out users from all devices.
+    * Signs out users from all devices. It also invalidates all refresh tokens issued to a user. The user's current access and Id tokens remain valid until their expiry. Access and Id tokens expire one hour after they are issued.
     */
   def globalSignOut(params: GlobalSignOutRequest): Request[GlobalSignOutResponse, AWSError] = js.native
   def globalSignOut(
@@ -1191,12 +1191,12 @@ trait CognitoIdentityServiceProvider extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateDeviceStatusResponse, Unit]
   ): Request[UpdateDeviceStatusResponse, AWSError] = js.native
   /**
-    * Updates the specified group with the specified attributes. Calling this action requires developer credentials.
+    * Updates the specified group with the specified attributes. Calling this action requires developer credentials.  If you don't provide a value for an attribute, it will be set to the default value. 
     */
   def updateGroup(): Request[UpdateGroupResponse, AWSError] = js.native
   def updateGroup(callback: js.Function2[/* err */ AWSError, /* data */ UpdateGroupResponse, Unit]): Request[UpdateGroupResponse, AWSError] = js.native
   /**
-    * Updates the specified group with the specified attributes. Calling this action requires developer credentials.
+    * Updates the specified group with the specified attributes. Calling this action requires developer credentials.  If you don't provide a value for an attribute, it will be set to the default value. 
     */
   def updateGroup(params: UpdateGroupRequest): Request[UpdateGroupResponse, AWSError] = js.native
   def updateGroup(
@@ -1217,12 +1217,12 @@ trait CognitoIdentityServiceProvider extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateIdentityProviderResponse, Unit]
   ): Request[UpdateIdentityProviderResponse, AWSError] = js.native
   /**
-    * Updates the name and scopes of resource server. All other fields are read-only.
+    * Updates the name and scopes of resource server. All other fields are read-only.  If you don't provide a value for an attribute, it will be set to the default value. 
     */
   def updateResourceServer(): Request[UpdateResourceServerResponse, AWSError] = js.native
   def updateResourceServer(callback: js.Function2[/* err */ AWSError, /* data */ UpdateResourceServerResponse, Unit]): Request[UpdateResourceServerResponse, AWSError] = js.native
   /**
-    * Updates the name and scopes of resource server. All other fields are read-only.
+    * Updates the name and scopes of resource server. All other fields are read-only.  If you don't provide a value for an attribute, it will be set to the default value. 
     */
   def updateResourceServer(params: UpdateResourceServerRequest): Request[UpdateResourceServerResponse, AWSError] = js.native
   def updateResourceServer(
@@ -1243,12 +1243,12 @@ trait CognitoIdentityServiceProvider extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateUserAttributesResponse, Unit]
   ): Request[UpdateUserAttributesResponse, AWSError] = js.native
   /**
-    * Updates the specified user pool with the specified attributes. If you don't provide a value for an attribute, it will be set to the default value. You can get a list of the current user pool settings with .
+    * Updates the specified user pool with the specified attributes. You can get a list of the current user pool settings with .  If you don't provide a value for an attribute, it will be set to the default value. 
     */
   def updateUserPool(): Request[UpdateUserPoolResponse, AWSError] = js.native
   def updateUserPool(callback: js.Function2[/* err */ AWSError, /* data */ UpdateUserPoolResponse, Unit]): Request[UpdateUserPoolResponse, AWSError] = js.native
   /**
-    * Updates the specified user pool with the specified attributes. If you don't provide a value for an attribute, it will be set to the default value. You can get a list of the current user pool settings with .
+    * Updates the specified user pool with the specified attributes. You can get a list of the current user pool settings with .  If you don't provide a value for an attribute, it will be set to the default value. 
     */
   def updateUserPool(params: UpdateUserPoolRequest): Request[UpdateUserPoolResponse, AWSError] = js.native
   def updateUserPool(
@@ -1256,12 +1256,12 @@ trait CognitoIdentityServiceProvider extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateUserPoolResponse, Unit]
   ): Request[UpdateUserPoolResponse, AWSError] = js.native
   /**
-    * Updates the specified user pool app client with the specified attributes. If you don't provide a value for an attribute, it will be set to the default value. You can get a list of the current user pool app client settings with .
+    * Updates the specified user pool app client with the specified attributes. You can get a list of the current user pool app client settings with .  If you don't provide a value for an attribute, it will be set to the default value. 
     */
   def updateUserPoolClient(): Request[UpdateUserPoolClientResponse, AWSError] = js.native
   def updateUserPoolClient(callback: js.Function2[/* err */ AWSError, /* data */ UpdateUserPoolClientResponse, Unit]): Request[UpdateUserPoolClientResponse, AWSError] = js.native
   /**
-    * Updates the specified user pool app client with the specified attributes. If you don't provide a value for an attribute, it will be set to the default value. You can get a list of the current user pool app client settings with .
+    * Updates the specified user pool app client with the specified attributes. You can get a list of the current user pool app client settings with .  If you don't provide a value for an attribute, it will be set to the default value. 
     */
   def updateUserPoolClient(params: UpdateUserPoolClientRequest): Request[UpdateUserPoolClientResponse, AWSError] = js.native
   def updateUserPoolClient(

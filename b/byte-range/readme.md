@@ -12,7 +12,7 @@ Returns integer ranges for a given number of bytes
 | Keywords           | integer, byte, c, range |
 | # releases         | 5 |
 | # dependents       | 0 |
-| # downloads        | 116 |
+| # downloads        | 339 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ Create a hashed file name
 | ------------------ | :-------------: |
 | Full name          | hash-file |
 | Keywords           | file, hash, name, crypto |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 12 |
-| # downloads        | 53577 |
+| # downloads        | 77328 |
 | # stars            | 2 |
 
 ## Links

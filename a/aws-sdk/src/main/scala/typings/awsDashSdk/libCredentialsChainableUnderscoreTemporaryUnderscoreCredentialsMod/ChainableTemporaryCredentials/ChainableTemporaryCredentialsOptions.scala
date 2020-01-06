@@ -9,17 +9,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ChainableTemporaryCredentialsOptions extends js.Object {
-  var masterCredentials: js.UndefOr[Credentials] = js.undefined
-  var params: js.UndefOr[AssumeRoleRequest | GetSessionTokenRequest] = js.undefined
-  var stsConfig: js.UndefOr[ClientConfiguration] = js.undefined
+  var masterCredentials: js.UndefOr[Credentials] = js.native
+  var params: js.UndefOr[AssumeRoleRequest | GetSessionTokenRequest] = js.native
+  var stsConfig: js.UndefOr[ClientConfiguration] = js.native
   var tokenCodeFn: js.UndefOr[
     js.Function2[
       /* serialNumber */ String, 
       /* callback */ js.Function2[/* err */ js.UndefOr[Error], /* token */ js.UndefOr[String], Unit], 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
 }
 
 object ChainableTemporaryCredentialsOptions {
@@ -31,9 +32,9 @@ object ChainableTemporaryCredentialsOptions {
     tokenCodeFn: (/* serialNumber */ String, /* callback */ js.Function2[/* err */ js.UndefOr[Error], /* token */ js.UndefOr[String], Unit]) => Unit = null
   ): ChainableTemporaryCredentialsOptions = {
     val __obj = js.Dynamic.literal()
-    if (masterCredentials != null) __obj.updateDynamic("masterCredentials")(masterCredentials)
+    if (masterCredentials != null) __obj.updateDynamic("masterCredentials")(masterCredentials.asInstanceOf[js.Any])
     if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (stsConfig != null) __obj.updateDynamic("stsConfig")(stsConfig)
+    if (stsConfig != null) __obj.updateDynamic("stsConfig")(stsConfig.asInstanceOf[js.Any])
     if (tokenCodeFn != null) __obj.updateDynamic("tokenCodeFn")(js.Any.fromFunction2(tokenCodeFn))
     __obj.asInstanceOf[ChainableTemporaryCredentialsOptions]
   }

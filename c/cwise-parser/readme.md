@@ -12,7 +12,7 @@ Parser for cwise
 | Keywords           | cwise, parser, ndarray, internals |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 2988617 |
+| # downloads        | 3851308 |
 | # stars            | 0 |
 
 ## Links

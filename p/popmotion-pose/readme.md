@@ -10,9 +10,9 @@ A declarative animation library for HTML and SVG
 | ------------------ | :-------------: |
 | Full name          | popmotion-pose |
 | Keywords           | animation, dom, declarative, popmotion |
-| # releases         | 89 |
-| # dependents       | 7 |
-| # downloads        | 1205028 |
+| # releases         | 92 |
+| # dependents       | 9 |
+| # downloads        | 3343176 |
 | # stars            | 0 |
 
 ## Links

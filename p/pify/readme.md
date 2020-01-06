@@ -10,9 +10,9 @@ Promisify a callback-style function
 | ------------------ | :-------------: |
 | Full name          | pify |
 | Keywords           | promise, promises, promisify, all, denodify, denodeify, callback, cb, node, then, thenify, convert, transform, wrap, wrapper, bind, to, async, await, es2015, bluebird |
-| # releases         | 4 |
-| # dependents       | 1209 |
-| # downloads        | 594180332 |
+| # releases         | 3 |
+| # dependents       | 1262 |
+| # downloads        | 1043425647 |
 | # stars            | 61 |
 
 ## Links

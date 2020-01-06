@@ -1,24 +1,24 @@
 organization := "org.scalablytyped"
 name := "react-intl-redux"
-version := "v0.1.0-dt-20191111Z-20e5d7"
+version := "v0.1.0-dt-20191111Z-917209"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.6-32adec",
-  "org.scalablytyped" %%% "formatjs__intl-listformat" % "1.3.3-dc36b1",
-  "org.scalablytyped" %%% "formatjs__intl-relativetimeformat" % "4.5.3-f29c78",
-  "org.scalablytyped" %%% "formatjs__intl-unified-numberformat" % "3.0.0-577d97",
-  "org.scalablytyped" %%% "formatjs__intl-utils" % "2.0.0-5ba995",
-  "org.scalablytyped" %%% "hoist-non-react-statics" % "3.3-dt-20190402Z-427774",
-  "org.scalablytyped" %%% "intl-messageformat" % "7.7.5-d9df11",
-  "org.scalablytyped" %%% "intl-messageformat-parser" % "3.5.2-5d12d9",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-bfe2c5",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191220Z-73a5bc",
-  "org.scalablytyped" %%% "react-intl" % "3.10.0-818640",
-  "org.scalablytyped" %%% "react-redux" % "7.1-dt-20191018Z-2e623a",
-  "org.scalablytyped" %%% "redux" % "4.0.5-174ff7",
-  "org.scalablytyped" %%% "std" % "3.7-953338")
+  "org.scalablytyped" %%% "csstype" % "2.6.6-fd5644",
+  "org.scalablytyped" %%% "formatjs__intl-listformat" % "1.3.3-d4df8b",
+  "org.scalablytyped" %%% "formatjs__intl-relativetimeformat" % "4.5.3-a32b81",
+  "org.scalablytyped" %%% "formatjs__intl-unified-numberformat" % "3.0.0-bd6ed8",
+  "org.scalablytyped" %%% "formatjs__intl-utils" % "2.0.0-a08574",
+  "org.scalablytyped" %%% "hoist-non-react-statics" % "3.3-dt-20190402Z-516e80",
+  "org.scalablytyped" %%% "intl-messageformat" % "7.7.5-c659bd",
+  "org.scalablytyped" %%% "intl-messageformat-parser" % "3.5.2-3e00f0",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-b24434",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191220Z-22d23f",
+  "org.scalablytyped" %%% "react-intl" % "3.10.0-0a79b0",
+  "org.scalablytyped" %%% "react-redux" % "7.1-dt-20191018Z-359712",
+  "org.scalablytyped" %%% "redux" % "4.0.5-eabae9",
+  "org.scalablytyped" %%% "std" % "3.7-b6d959")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

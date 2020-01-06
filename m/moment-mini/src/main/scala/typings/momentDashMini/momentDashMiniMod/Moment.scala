@@ -5,9 +5,9 @@ import typings.momentDashMini.momentDashMiniMod.unitOfTime.Diff
 import typings.momentDashMini.momentDashMiniMod.unitOfTime.DurationConstructor
 import typings.momentDashMini.momentDashMiniMod.unitOfTime.StartOf
 import typings.momentDashMini.momentDashMiniStrings.LeftparenthesisRightparenthesis
-import typings.momentDashMini.momentDashMiniStrings.LeftparenthesisRightsquarebracket
-import typings.momentDashMini.momentDashMiniStrings.LeftsquarebracketRightparenthesis
-import typings.momentDashMini.momentDashMiniStrings.LeftsquarebracketRightsquarebracket
+import typings.momentDashMini.momentDashMiniStrings.`Leftparenthesis]`
+import typings.momentDashMini.momentDashMiniStrings.`[Rightparenthesis`
+import typings.momentDashMini.momentDashMiniStrings.`[]`
 import typings.std.Date
 import typings.std.Object
 import scala.scalajs.js
@@ -78,24 +78,9 @@ trait Moment
   def isBetween(a: MomentInput, b: MomentInput): Boolean = js.native
   def isBetween(a: MomentInput, b: MomentInput, granularity: StartOf): Boolean = js.native
   def isBetween(a: MomentInput, b: MomentInput, granularity: StartOf, inclusivity: LeftparenthesisRightparenthesis): Boolean = js.native
-  def isBetween(
-    a: MomentInput,
-    b: MomentInput,
-    granularity: StartOf,
-    inclusivity: LeftparenthesisRightsquarebracket
-  ): Boolean = js.native
-  def isBetween(
-    a: MomentInput,
-    b: MomentInput,
-    granularity: StartOf,
-    inclusivity: LeftsquarebracketRightparenthesis
-  ): Boolean = js.native
-  def isBetween(
-    a: MomentInput,
-    b: MomentInput,
-    granularity: StartOf,
-    inclusivity: LeftsquarebracketRightsquarebracket
-  ): Boolean = js.native
+  def isBetween(a: MomentInput, b: MomentInput, granularity: StartOf, inclusivity: `Leftparenthesis]`): Boolean = js.native
+  def isBetween(a: MomentInput, b: MomentInput, granularity: StartOf, inclusivity: `[Rightparenthesis`): Boolean = js.native
+  def isBetween(a: MomentInput, b: MomentInput, granularity: StartOf, inclusivity: `[]`): Boolean = js.native
   def isDST(): Boolean = js.native
   /**
     * @deprecated no reliable implementation

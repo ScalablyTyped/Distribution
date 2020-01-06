@@ -4,15 +4,15 @@
 Typings are for version 0.14.4
 
 ## Library description:
-[![Build Status][ci-img]][ci] [![Coverage Status][cov-img]][cov] [![NPM Published Version][npm-img]][npm] ![Node Version][node-img]
+[![Build Status][ci-img]][ci] [![Coverage Status][cov-img]][cov] [![NPM Published Version][npm-img]][npm] ![Node Version][node-img] [![Join the chat at https://gitter.im/opentracing/opentracing-javascript](https://badges.gitter.im/opentracing/opentracing-
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | opentracing |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 84 |
-| # downloads        | 4884881 |
+| # releases         | 4 |
+| # dependents       | 127 |
+| # downloads        | 17659953 |
 | # stars            | 3 |
 
 ## Links

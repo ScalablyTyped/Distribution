@@ -10,10 +10,10 @@ A Babel preset let you `import` application configs from **.env** file (zero run
 | ------------------ | :-------------: |
 | Full name          | react-native-dotenv |
 | Keywords           | dotenv, react-native |
-| # releases         | 5 |
+| # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 383027 |
-| # stars            | 0 |
+| # downloads        | 824335 |
+| # stars            | 1 |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/react-native-dotenv)

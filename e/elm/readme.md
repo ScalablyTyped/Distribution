@@ -4,15 +4,15 @@
 Typings are for version 0.12
 
 ## Library description:
-The Elm Platform: Binaries for the Elm programming language.
+Installer for Elm: just downloads the binary into node_modules
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | elm |
-| Keywords           | bin, binary, binaries, elm, platform |
-| # releases         | 13 |
-| # dependents       | 20 |
-| # downloads        | 1407338 |
+| Keywords           | bin, binary, binaries, elm, install, installer |
+| # releases         | 18 |
+| # dependents       | 22 |
+| # downloads        | 1875519 |
 | # stars            | 42 |
 
 ## Links

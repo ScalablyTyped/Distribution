@@ -11,7 +11,7 @@ MongoDB store for express-brute.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 31996 |
+| # downloads        | 35688 |
 | # stars            | 2 |
 
 ## Links

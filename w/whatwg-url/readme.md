@@ -10,10 +10,10 @@ An implementation of the WHATWG URL Standard's URL API and parsing machinery
 | ------------------ | :-------------: |
 | Full name          | whatwg-url |
 | Keywords           | - |
-| # releases         | 14 |
-| # dependents       | 118 |
-| # downloads        | 213821651 |
-| # stars            | 7 |
+| # releases         | 4 |
+| # dependents       | 148 |
+| # downloads        | 429230600 |
+| # stars            | 8 |
 
 ## Links
 - [Homepage](https://github.com/jsdom/whatwg-url#readme)

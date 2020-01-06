@@ -10,9 +10,9 @@ The Material Components for the web checkbox component
 | ------------------ | :-------------: |
 | Full name          | @material/checkbox |
 | Keywords           | material components, material design, checkbox |
-| # releases         | 54 |
-| # dependents       | 51 |
-| # downloads        | 1461286 |
+| # releases         | 119 |
+| # dependents       | 70 |
+| # downloads        | 1596919 |
 | # stars            | 0 |
 
 ## Links

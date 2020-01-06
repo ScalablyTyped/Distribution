@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Ono[T /* <: ErrorLike */] extends js.Object {
+  /**
+    * The type of Error that this `Ono` function produces.
+    */
+  @JSName(scala.scalajs.js.Symbol.species)
+  val species: ErrorLikeConstructor[T] = js.native
   def apply(error: ErrorPOJO): T with ErrorPOJO with (OnoError[T with ErrorPOJO]) = js.native
   def apply(error: ErrorPOJO, message: String, params: js.Any*): T with ErrorPOJO with (OnoError[T with ErrorPOJO]) = js.native
   /**

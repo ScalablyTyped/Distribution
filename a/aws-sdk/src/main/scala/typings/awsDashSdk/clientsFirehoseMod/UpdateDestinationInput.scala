@@ -4,39 +4,40 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UpdateDestinationInput extends js.Object {
   /**
     * Obtain this value from the VersionId result of DeliveryStreamDescription. This value is required, and helps the service perform conditional operations. For example, if there is an interleaving update and this value is null, then the update destination fails. After the update is successful, the VersionId value is updated. The service then performs a merge of the old configuration with the new configuration.
     */
-  var CurrentDeliveryStreamVersionId: DeliveryStreamVersionId
+  var CurrentDeliveryStreamVersionId: DeliveryStreamVersionId = js.native
   /**
     * The name of the delivery stream.
     */
-  var DeliveryStreamName: typings.awsDashSdk.clientsFirehoseMod.DeliveryStreamName
+  var DeliveryStreamName: typings.awsDashSdk.clientsFirehoseMod.DeliveryStreamName = js.native
   /**
     * The ID of the destination.
     */
-  var DestinationId: typings.awsDashSdk.clientsFirehoseMod.DestinationId
+  var DestinationId: typings.awsDashSdk.clientsFirehoseMod.DestinationId = js.native
   /**
     * Describes an update for a destination in Amazon ES.
     */
-  var ElasticsearchDestinationUpdate: js.UndefOr[typings.awsDashSdk.clientsFirehoseMod.ElasticsearchDestinationUpdate] = js.undefined
+  var ElasticsearchDestinationUpdate: js.UndefOr[typings.awsDashSdk.clientsFirehoseMod.ElasticsearchDestinationUpdate] = js.native
   /**
     * Describes an update for a destination in Amazon S3.
     */
-  var ExtendedS3DestinationUpdate: js.UndefOr[typings.awsDashSdk.clientsFirehoseMod.ExtendedS3DestinationUpdate] = js.undefined
+  var ExtendedS3DestinationUpdate: js.UndefOr[typings.awsDashSdk.clientsFirehoseMod.ExtendedS3DestinationUpdate] = js.native
   /**
     * Describes an update for a destination in Amazon Redshift.
     */
-  var RedshiftDestinationUpdate: js.UndefOr[typings.awsDashSdk.clientsFirehoseMod.RedshiftDestinationUpdate] = js.undefined
+  var RedshiftDestinationUpdate: js.UndefOr[typings.awsDashSdk.clientsFirehoseMod.RedshiftDestinationUpdate] = js.native
   /**
     * [Deprecated] Describes an update for a destination in Amazon S3.
     */
-  var S3DestinationUpdate: js.UndefOr[typings.awsDashSdk.clientsFirehoseMod.S3DestinationUpdate] = js.undefined
+  var S3DestinationUpdate: js.UndefOr[typings.awsDashSdk.clientsFirehoseMod.S3DestinationUpdate] = js.native
   /**
     * Describes an update for a destination in Splunk.
     */
-  var SplunkDestinationUpdate: js.UndefOr[typings.awsDashSdk.clientsFirehoseMod.SplunkDestinationUpdate] = js.undefined
+  var SplunkDestinationUpdate: js.UndefOr[typings.awsDashSdk.clientsFirehoseMod.SplunkDestinationUpdate] = js.native
 }
 
 object UpdateDestinationInput {
@@ -51,12 +52,12 @@ object UpdateDestinationInput {
     S3DestinationUpdate: S3DestinationUpdate = null,
     SplunkDestinationUpdate: SplunkDestinationUpdate = null
   ): UpdateDestinationInput = {
-    val __obj = js.Dynamic.literal(CurrentDeliveryStreamVersionId = CurrentDeliveryStreamVersionId, DeliveryStreamName = DeliveryStreamName, DestinationId = DestinationId)
-    if (ElasticsearchDestinationUpdate != null) __obj.updateDynamic("ElasticsearchDestinationUpdate")(ElasticsearchDestinationUpdate)
-    if (ExtendedS3DestinationUpdate != null) __obj.updateDynamic("ExtendedS3DestinationUpdate")(ExtendedS3DestinationUpdate)
-    if (RedshiftDestinationUpdate != null) __obj.updateDynamic("RedshiftDestinationUpdate")(RedshiftDestinationUpdate)
-    if (S3DestinationUpdate != null) __obj.updateDynamic("S3DestinationUpdate")(S3DestinationUpdate)
-    if (SplunkDestinationUpdate != null) __obj.updateDynamic("SplunkDestinationUpdate")(SplunkDestinationUpdate)
+    val __obj = js.Dynamic.literal(CurrentDeliveryStreamVersionId = CurrentDeliveryStreamVersionId.asInstanceOf[js.Any], DeliveryStreamName = DeliveryStreamName.asInstanceOf[js.Any], DestinationId = DestinationId.asInstanceOf[js.Any])
+    if (ElasticsearchDestinationUpdate != null) __obj.updateDynamic("ElasticsearchDestinationUpdate")(ElasticsearchDestinationUpdate.asInstanceOf[js.Any])
+    if (ExtendedS3DestinationUpdate != null) __obj.updateDynamic("ExtendedS3DestinationUpdate")(ExtendedS3DestinationUpdate.asInstanceOf[js.Any])
+    if (RedshiftDestinationUpdate != null) __obj.updateDynamic("RedshiftDestinationUpdate")(RedshiftDestinationUpdate.asInstanceOf[js.Any])
+    if (S3DestinationUpdate != null) __obj.updateDynamic("S3DestinationUpdate")(S3DestinationUpdate.asInstanceOf[js.Any])
+    if (SplunkDestinationUpdate != null) __obj.updateDynamic("SplunkDestinationUpdate")(SplunkDestinationUpdate.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDestinationInput]
   }
 }

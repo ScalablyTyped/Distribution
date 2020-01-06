@@ -10,9 +10,9 @@ Simple polyfill for URLSearchParams standard
 | ------------------ | :-------------: |
 | Full name          | url-search-params |
 | Keywords           | DOM, URLSearchParams, polyfill, shim |
-| # releases         | 11 |
-| # dependents       | 110 |
-| # downloads        | 2874110 |
+| # releases         | 7 |
+| # dependents       | 114 |
+| # downloads        | 4231409 |
 | # stars            | 4 |
 
 ## Links

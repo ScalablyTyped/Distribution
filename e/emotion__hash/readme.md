@@ -11,8 +11,8 @@ A MurmurHash2 implementation
 | Full name          | @emotion/hash |
 | Keywords           | - |
 | # releases         | 13 |
-| # dependents       | 17 |
-| # downloads        | 61734180 |
+| # dependents       | 21 |
+| # downloads        | 93385843 |
 | # stars            | 0 |
 
 ## Links

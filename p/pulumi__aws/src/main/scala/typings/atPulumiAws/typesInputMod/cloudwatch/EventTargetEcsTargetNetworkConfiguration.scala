@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EventTargetEcsTargetNetworkConfiguration extends js.Object {
   /**
     * Assign a public IP address to the ENI (Fargate launch type only). Valid values are `true` or `false`. Default `false`.
     */
-  var assignPublicIp: js.UndefOr[Input[Boolean]] = js.undefined
+  var assignPublicIp: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The security groups associated with the task or service. If you do not specify a security group, the default security group for the VPC is used.
     */
-  var securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  var securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The subnets associated with the task or service.
     */
-  var subnets: Input[js.Array[Input[String]]]
+  var subnets: Input[js.Array[Input[String]]] = js.native
 }
 
 object EventTargetEcsTargetNetworkConfiguration {

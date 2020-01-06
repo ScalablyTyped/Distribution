@@ -11,6 +11,7 @@ package object clientsDynamodbMod {
   import typings.std.Date
   import typings.std.Uint8Array
 
+  type ArchivalReason = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.ADD
     - typings.awsDashSdk.awsDashSdkStrings.PUT
@@ -104,14 +105,35 @@ package object clientsDynamodbMod {
     - java.lang.String
   */
   type ContinuousBackupsStatus = _ContinuousBackupsStatus | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.ENABLE
+    - typings.awsDashSdk.awsDashSdkStrings.DISABLE
+    - java.lang.String
+  */
+  type ContributorInsightsAction = _ContributorInsightsAction | java.lang.String
+  type ContributorInsightsRule = java.lang.String
+  type ContributorInsightsRuleList = js.Array[ContributorInsightsRule]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.ENABLING
+    - typings.awsDashSdk.awsDashSdkStrings.ENABLED
+    - typings.awsDashSdk.awsDashSdkStrings.DISABLING
+    - typings.awsDashSdk.awsDashSdkStrings.DISABLED
+    - typings.awsDashSdk.awsDashSdkStrings.FAILED
+    - java.lang.String
+  */
+  type ContributorInsightsStatus = _ContributorInsightsStatus | java.lang.String
+  type ContributorInsightsSummaries = js.Array[ContributorInsightsSummary]
   type Double = scala.Double
   type Endpoints = js.Array[Endpoint]
+  type ExceptionDescription = java.lang.String
+  type ExceptionName = java.lang.String
   type ExpectedAttributeMap = StringDictionary[ExpectedAttributeValue]
   type ExpressionAttributeNameMap = StringDictionary[AttributeName]
   type ExpressionAttributeNameVariable = java.lang.String
   type ExpressionAttributeValueMap = StringDictionary[AttributeValue]
   type ExpressionAttributeValueVariable = java.lang.String
   type FilterConditionMap = StringDictionary[Condition]
+  type GlobalSecondaryIndexAutoScalingUpdateList = js.Array[GlobalSecondaryIndexAutoScalingUpdate]
   type GlobalSecondaryIndexDescriptionList = js.Array[GlobalSecondaryIndexDescription]
   type GlobalSecondaryIndexList = js.Array[GlobalSecondaryIndex]
   type GlobalSecondaryIndexUpdateList = js.Array[GlobalSecondaryIndexUpdate]
@@ -160,7 +182,9 @@ package object clientsDynamodbMod {
     - java.lang.String
   */
   type KeyType = _KeyType | java.lang.String
+  type LastUpdateDateTime = Date
   type ListAttributeValue = js.Array[AttributeValue]
+  type ListContributorInsightsLimit = scala.Double
   type ListTablesInputLimit = scala.Double
   type LocalSecondaryIndexDescriptionList = js.Array[LocalSecondaryIndexDescription]
   type LocalSecondaryIndexList = js.Array[LocalSecondaryIndex]
@@ -192,7 +216,13 @@ package object clientsDynamodbMod {
   type ProjectionType = _ProjectionType | java.lang.String
   type PutItemInputAttributeMap = StringDictionary[AttributeValue]
   type RegionName = java.lang.String
+  type ReplicaAutoScalingDescriptionList = js.Array[ReplicaAutoScalingDescription]
+  type ReplicaAutoScalingUpdateList = js.Array[ReplicaAutoScalingUpdate]
   type ReplicaDescriptionList = js.Array[ReplicaDescription]
+  type ReplicaGlobalSecondaryIndexAutoScalingDescriptionList = js.Array[ReplicaGlobalSecondaryIndexAutoScalingDescription]
+  type ReplicaGlobalSecondaryIndexAutoScalingUpdateList = js.Array[ReplicaGlobalSecondaryIndexAutoScalingUpdate]
+  type ReplicaGlobalSecondaryIndexDescriptionList = js.Array[ReplicaGlobalSecondaryIndexDescription]
+  type ReplicaGlobalSecondaryIndexList = js.Array[ReplicaGlobalSecondaryIndex]
   type ReplicaGlobalSecondaryIndexSettingsDescriptionList = js.Array[ReplicaGlobalSecondaryIndexSettingsDescription]
   type ReplicaGlobalSecondaryIndexSettingsUpdateList = js.Array[ReplicaGlobalSecondaryIndexSettingsUpdate]
   type ReplicaList = js.Array[Replica]
@@ -200,13 +230,17 @@ package object clientsDynamodbMod {
   type ReplicaSettingsUpdateList = js.Array[ReplicaSettingsUpdate]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.CREATING
+    - typings.awsDashSdk.awsDashSdkStrings.CREATION_FAILED
     - typings.awsDashSdk.awsDashSdkStrings.UPDATING
     - typings.awsDashSdk.awsDashSdkStrings.DELETING
     - typings.awsDashSdk.awsDashSdkStrings.ACTIVE
     - java.lang.String
   */
   type ReplicaStatus = _ReplicaStatus | java.lang.String
+  type ReplicaStatusDescription = java.lang.String
+  type ReplicaStatusPercentProgress = java.lang.String
   type ReplicaUpdateList = js.Array[ReplicaUpdate]
+  type ReplicationGroupUpdateList = js.Array[ReplicationGroupUpdate]
   type ResourceArnString = java.lang.String
   type RestoreInProgress = Boolean
   /* Rewritten from type alias, can be one of: 
@@ -294,6 +328,9 @@ package object clientsDynamodbMod {
     - typings.awsDashSdk.awsDashSdkStrings.UPDATING
     - typings.awsDashSdk.awsDashSdkStrings.DELETING
     - typings.awsDashSdk.awsDashSdkStrings.ACTIVE
+    - typings.awsDashSdk.awsDashSdkStrings.INACCESSIBLE_ENCRYPTION_CREDENTIALS
+    - typings.awsDashSdk.awsDashSdkStrings.ARCHIVING
+    - typings.awsDashSdk.awsDashSdkStrings.ARCHIVED
     - java.lang.String
   */
   type TableStatus = _TableStatus | java.lang.String
@@ -321,7 +358,7 @@ package object clientsDynamodbMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2011-12-05`
     - typings.awsDashSdk.awsDashSdkStrings.`2012-08-10`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | java.lang.String

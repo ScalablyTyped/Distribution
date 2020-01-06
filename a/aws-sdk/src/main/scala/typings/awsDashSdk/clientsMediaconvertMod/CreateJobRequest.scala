@@ -4,55 +4,56 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CreateJobRequest extends js.Object {
   /**
     * Accelerated transcoding can significantly speed up jobs with long, visually complex content. Outputs that use this feature incur pro-tier pricing. For information about feature limitations, see the AWS Elemental MediaConvert User Guide.
     */
-  var AccelerationSettings: js.UndefOr[typings.awsDashSdk.clientsMediaconvertMod.AccelerationSettings] = js.undefined
+  var AccelerationSettings: js.UndefOr[typings.awsDashSdk.clientsMediaconvertMod.AccelerationSettings] = js.native
   /**
     * Optional. Choose a tag type that AWS Billing and Cost Management will use to sort your AWS Elemental MediaConvert costs on any billing report that you set up. Any transcoding outputs that don't have an associated tag will appear in your billing report unsorted. If you don't choose a valid value for this field, your job outputs will appear on the billing report unsorted.
     */
-  var BillingTagsSource: js.UndefOr[typings.awsDashSdk.clientsMediaconvertMod.BillingTagsSource] = js.undefined
+  var BillingTagsSource: js.UndefOr[typings.awsDashSdk.clientsMediaconvertMod.BillingTagsSource] = js.native
   /**
     * Idempotency token for CreateJob operation.
     */
-  var ClientRequestToken: js.UndefOr[__string] = js.undefined
+  var ClientRequestToken: js.UndefOr[__string] = js.native
   /**
     * When you create a job, you can either specify a job template or specify the transcoding settings individually
     */
-  var JobTemplate: js.UndefOr[__string] = js.undefined
+  var JobTemplate: js.UndefOr[__string] = js.native
   /**
     * Specify the relative priority for this job. In any given queue, the service begins processing the job with the highest value first. When more than one job has the same priority, the service begins processing the job that you submitted first. If you don't specify a priority, the service uses the default value 0.
     */
-  var Priority: js.UndefOr[__integerMinNegative50Max50] = js.undefined
+  var Priority: js.UndefOr[__integerMinNegative50Max50] = js.native
   /**
     * Optional. When you create a job, you can specify a queue to send it to. If you don't specify, the job will go to the default queue. For more about queues, see the User Guide topic at http://docs.aws.amazon.com/mediaconvert/latest/ug/what-is.html.
     */
-  var Queue: js.UndefOr[__string] = js.undefined
+  var Queue: js.UndefOr[__string] = js.native
   /**
     * Required. The IAM role you use for creating this job. For details about permissions, see the User Guide topic at the User Guide at http://docs.aws.amazon.com/mediaconvert/latest/ug/iam-role.html.
     */
-  var Role: __string
+  var Role: __string = js.native
   /**
     * JobSettings contains all the transcode settings for a job.
     */
-  var Settings: JobSettings
+  var Settings: JobSettings = js.native
   /**
     * Enable this setting when you run a test job to estimate how many reserved transcoding slots (RTS) you need. When this is enabled, MediaConvert runs your job from an on-demand queue with similar performance to what you will see with one RTS in a reserved queue. This setting is disabled by default.
     */
-  var SimulateReservedQueue: js.UndefOr[typings.awsDashSdk.clientsMediaconvertMod.SimulateReservedQueue] = js.undefined
+  var SimulateReservedQueue: js.UndefOr[typings.awsDashSdk.clientsMediaconvertMod.SimulateReservedQueue] = js.native
   /**
     * Specify how often MediaConvert sends STATUS_UPDATE events to Amazon CloudWatch Events. Set the interval, in seconds, between status updates. MediaConvert sends an update at this interval from the time the service begins processing your job to the time it completes the transcode or encounters an error.
     */
-  var StatusUpdateInterval: js.UndefOr[typings.awsDashSdk.clientsMediaconvertMod.StatusUpdateInterval] = js.undefined
+  var StatusUpdateInterval: js.UndefOr[typings.awsDashSdk.clientsMediaconvertMod.StatusUpdateInterval] = js.native
   /**
     * The tags that you want to add to the resource. You can tag resources with a key-value pair or with only a key.
     */
-  var Tags: js.UndefOr[__mapOf__string] = js.undefined
+  var Tags: js.UndefOr[__mapOf__string] = js.native
   /**
     * User-defined metadata that you want to associate with an MediaConvert job. You specify metadata in key/value pairs.
     */
-  var UserMetadata: js.UndefOr[__mapOf__string] = js.undefined
+  var UserMetadata: js.UndefOr[__mapOf__string] = js.native
 }
 
 object CreateJobRequest {
@@ -71,17 +72,17 @@ object CreateJobRequest {
     Tags: __mapOf__string = null,
     UserMetadata: __mapOf__string = null
   ): CreateJobRequest = {
-    val __obj = js.Dynamic.literal(Role = Role, Settings = Settings)
-    if (AccelerationSettings != null) __obj.updateDynamic("AccelerationSettings")(AccelerationSettings)
+    val __obj = js.Dynamic.literal(Role = Role.asInstanceOf[js.Any], Settings = Settings.asInstanceOf[js.Any])
+    if (AccelerationSettings != null) __obj.updateDynamic("AccelerationSettings")(AccelerationSettings.asInstanceOf[js.Any])
     if (BillingTagsSource != null) __obj.updateDynamic("BillingTagsSource")(BillingTagsSource.asInstanceOf[js.Any])
-    if (ClientRequestToken != null) __obj.updateDynamic("ClientRequestToken")(ClientRequestToken)
-    if (JobTemplate != null) __obj.updateDynamic("JobTemplate")(JobTemplate)
+    if (ClientRequestToken != null) __obj.updateDynamic("ClientRequestToken")(ClientRequestToken.asInstanceOf[js.Any])
+    if (JobTemplate != null) __obj.updateDynamic("JobTemplate")(JobTemplate.asInstanceOf[js.Any])
     if (Priority != null) __obj.updateDynamic("Priority")(Priority.asInstanceOf[js.Any])
-    if (Queue != null) __obj.updateDynamic("Queue")(Queue)
+    if (Queue != null) __obj.updateDynamic("Queue")(Queue.asInstanceOf[js.Any])
     if (SimulateReservedQueue != null) __obj.updateDynamic("SimulateReservedQueue")(SimulateReservedQueue.asInstanceOf[js.Any])
     if (StatusUpdateInterval != null) __obj.updateDynamic("StatusUpdateInterval")(StatusUpdateInterval.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
-    if (UserMetadata != null) __obj.updateDynamic("UserMetadata")(UserMetadata)
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
+    if (UserMetadata != null) __obj.updateDynamic("UserMetadata")(UserMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateJobRequest]
   }
 }

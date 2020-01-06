@@ -42,7 +42,25 @@ object ^ extends js.Object {
   	It includes a `.isCanceled` property for convenience.
   	*/
   var CancelError: Instantiable1[js.UndefOr[/* reason */ String], CancelErrorClass] = js.native
-  def fn[ReturnType](userFn: js.Function1[/* repeated */ js.Any, js.Thenable[ReturnType]]): js.Function1[/* repeated */ js.Any, PCancelable[ReturnType]] = js.native
+  /**
+  	Convenience method to make your promise-returning or async function cancelable.
+  	@param fn - A promise-returning function. The function you specify will have `onCancel` appended to its parameters.
+  	@example
+  	```
+  	import PCancelable = require('p-cancelable');
+  	const fn = PCancelable.fn((input, onCancel) => {
+  		const job = new Job();
+  		onCancel(() => {
+  			job.cleanup();
+  		});
+  		return job.start(); //=> Promise
+  	});
+  	const cancelablePromise = fn('input'); //=> PCancelable
+  	// …
+  	cancelablePromise.cancel();
+  	```
+  	*/
+  def fn[ReturnType](userFn: js.Function1[/* onCancel */ OnCancelFunction, js.Thenable[ReturnType]]): js.Function0[PCancelable[ReturnType]] = js.native
   def fn[Agument1Type, ReturnType](
     userFn: js.Function2[
       /* argument1 */ Agument1Type, 
@@ -106,25 +124,7 @@ object ^ extends js.Object {
     /* argument5 */ Agument5Type, 
     PCancelable[ReturnType]
   ] = js.native
-  /**
-  	Convenience method to make your promise-returning or async function cancelable.
-  	@param fn - A promise-returning function. The function you specify will have `onCancel` appended to its parameters.
-  	@example
-  	```
-  	import PCancelable = require('p-cancelable');
-  	const fn = PCancelable.fn((input, onCancel) => {
-  		const job = new Job();
-  		onCancel(() => {
-  			job.cleanup();
-  		});
-  		return job.start(); //=> Promise
-  	});
-  	const cancelablePromise = fn('input'); //=> PCancelable
-  	// …
-  	cancelablePromise.cancel();
-  	```
-  	*/
   @JSName("fn")
-  def fn_ReturnType_Function0[ReturnType](userFn: js.Function1[/* onCancel */ OnCancelFunction, js.Thenable[ReturnType]]): js.Function0[PCancelable[ReturnType]] = js.native
+  def fn_ReturnType_Function1[ReturnType](userFn: js.Function1[/* repeated */ js.Any, js.Thenable[ReturnType]]): js.Function1[/* repeated */ js.Any, PCancelable[ReturnType]] = js.native
 }
 

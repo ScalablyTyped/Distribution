@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UserPoolSchemaNumberAttributeConstraints extends js.Object {
   /**
     * The maximum value of an attribute that is of the number data type.
     */
-  var maxValue: js.UndefOr[Input[String]] = js.undefined
+  var maxValue: js.UndefOr[Input[String]] = js.native
   /**
     * The minimum value of an attribute that is of the number data type.
     */
-  var minValue: js.UndefOr[Input[String]] = js.undefined
+  var minValue: js.UndefOr[Input[String]] = js.native
 }
 
 object UserPoolSchemaNumberAttributeConstraints {

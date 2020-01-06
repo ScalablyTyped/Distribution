@@ -11,8 +11,8 @@ WebP imagemin plugin
 | Full name          | imagemin-webp |
 | Keywords           | compress, cwebp, image, imageminplugin, img, jpg, minify, optimize, png, tif, webp |
 | # releases         | 4 |
-| # dependents       | 63 |
-| # downloads        | 12620470 |
+| # dependents       | 79 |
+| # downloads        | 16299881 |
 | # stars            | 14 |
 
 ## Links

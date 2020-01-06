@@ -10,9 +10,9 @@ A Development Server in a Webpack Plugin
 | ------------------ | :-------------: |
 | Full name          | webpack-plugin-serve |
 | Keywords           | dev, development, devserver, serve, server, webpack |
-| # releases         | 18 |
-| # dependents       | 5 |
-| # downloads        | 18592 |
+| # releases         | 26 |
+| # dependents       | 6 |
+| # downloads        | 236103 |
 | # stars            | 0 |
 
 ## Links

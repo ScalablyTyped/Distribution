@@ -10,9 +10,9 @@ Knockout pre-rendered
 | ------------------ | :-------------: |
 | Full name          | knockout-pre-rendered |
 | Keywords           | knockout, foreach, pre-rendered, initialize, javascript |
-| # releases         | 7 |
+| # releases         | 5 |
 | # dependents       | 0 |
-| # downloads        | 5780 |
+| # downloads        | 5130 |
 | # stars            | 0 |
 
 ## Links

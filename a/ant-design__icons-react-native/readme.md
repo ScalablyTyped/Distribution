@@ -11,8 +11,8 @@ Typings are for version 1.0.2
 | Full name          | @ant-design/icons-react-native |
 | Keywords           | - |
 | # releases         | 5 |
-| # dependents       | 3 |
-| # downloads        | 31521 |
+| # dependents       | 4 |
+| # downloads        | 84269 |
 | # stars            | 0 |
 
 ## Links

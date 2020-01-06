@@ -11,8 +11,8 @@ Lightweight util.format() for the browser.
 | Full name          | format-util |
 | Keywords           | util, format, string |
 | # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 10199210 |
+| # dependents       | 5 |
+| # downloads        | 19307774 |
 | # stars            | 0 |
 
 ## Links

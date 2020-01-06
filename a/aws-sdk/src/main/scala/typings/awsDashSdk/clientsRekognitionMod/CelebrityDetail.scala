@@ -4,31 +4,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CelebrityDetail extends js.Object {
   /**
     * Bounding box around the body of a celebrity.
     */
-  var BoundingBox: js.UndefOr[typings.awsDashSdk.clientsRekognitionMod.BoundingBox] = js.undefined
+  var BoundingBox: js.UndefOr[typings.awsDashSdk.clientsRekognitionMod.BoundingBox] = js.native
   /**
     * The confidence, in percentage, that Amazon Rekognition has that the recognized face is the celebrity. 
     */
-  var Confidence: js.UndefOr[Percent] = js.undefined
+  var Confidence: js.UndefOr[Percent] = js.native
   /**
     * Face details for the recognized celebrity.
     */
-  var Face: js.UndefOr[FaceDetail] = js.undefined
+  var Face: js.UndefOr[FaceDetail] = js.native
   /**
     * The unique identifier for the celebrity. 
     */
-  var Id: js.UndefOr[RekognitionUniqueId] = js.undefined
+  var Id: js.UndefOr[RekognitionUniqueId] = js.native
   /**
     * The name of the celebrity.
     */
-  var Name: js.UndefOr[String] = js.undefined
+  var Name: js.UndefOr[String] = js.native
   /**
     * An array of URLs pointing to additional celebrity information. 
     */
-  var Urls: js.UndefOr[typings.awsDashSdk.clientsRekognitionMod.Urls] = js.undefined
+  var Urls: js.UndefOr[typings.awsDashSdk.clientsRekognitionMod.Urls] = js.native
 }
 
 object CelebrityDetail {
@@ -42,12 +43,12 @@ object CelebrityDetail {
     Urls: Urls = null
   ): CelebrityDetail = {
     val __obj = js.Dynamic.literal()
-    if (BoundingBox != null) __obj.updateDynamic("BoundingBox")(BoundingBox)
+    if (BoundingBox != null) __obj.updateDynamic("BoundingBox")(BoundingBox.asInstanceOf[js.Any])
     if (Confidence != null) __obj.updateDynamic("Confidence")(Confidence.asInstanceOf[js.Any])
-    if (Face != null) __obj.updateDynamic("Face")(Face)
-    if (Id != null) __obj.updateDynamic("Id")(Id)
-    if (Name != null) __obj.updateDynamic("Name")(Name)
-    if (Urls != null) __obj.updateDynamic("Urls")(Urls)
+    if (Face != null) __obj.updateDynamic("Face")(Face.asInstanceOf[js.Any])
+    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
+    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
+    if (Urls != null) __obj.updateDynamic("Urls")(Urls.asInstanceOf[js.Any])
     __obj.asInstanceOf[CelebrityDetail]
   }
 }

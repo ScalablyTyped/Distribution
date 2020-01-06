@@ -22,7 +22,7 @@ class ^ protected () extends Writable {
 @JSImport("flush-write-stream", JSImport.Namespace)
 @js.native
 object ^ extends TopLevel[
-      (Instantiable2[/* opts */ WritableOptions, /* write */ Write, Writable]) with (Instantiable3[/* opts */ WritableOptions, /* write */ Write, /* flush */ Flush, Writable]) with (Instantiable1[/* write */ Write, Writable]) with (Instantiable2[/* write */ Write, /* flush */ Flush, Writable])
+      (Instantiable1[/* write */ Write, Writable]) with (Instantiable2[/* opts */ WritableOptions, /* write */ Write, Writable]) with (Instantiable2[/* write */ Write, /* flush */ Flush, Writable]) with (Instantiable3[/* opts */ WritableOptions, /* write */ Write, /* flush */ Flush, Writable])
     ] {
   def apply(opts: WritableOptions, write: Write): Writable = js.native
   def apply(opts: WritableOptions, write: Write, flush: Flush): Writable = js.native

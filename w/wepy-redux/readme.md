@@ -10,9 +10,9 @@ WePY bindings for Redux
 | ------------------ | :-------------: |
 | Full name          | wepy-redux |
 | Keywords           | wepy-redux, wepy, redux, connect |
-| # releases         | 14 |
+| # releases         | 7 |
 | # dependents       | 2 |
-| # downloads        | 24756 |
+| # downloads        | 21784 |
 | # stars            | 0 |
 
 ## Links

@@ -11,8 +11,8 @@ Generate beautiful CSS3 powered animations
 | Full name          | bounce.js |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 8693 |
+| # dependents       | 2 |
+| # downloads        | 9684 |
 | # stars            | 1 |
 
 ## Links

@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BucketReplicationConfigurationRuleSourceSelectionCriteria extends js.Object {
   /**
     * Match SSE-KMS encrypted objects (documented below). If specified, `replicaKmsKeyId`
@@ -12,7 +13,7 @@ trait BucketReplicationConfigurationRuleSourceSelectionCriteria extends js.Objec
     */
   var sseKmsEncryptedObjects: js.UndefOr[
     Input[BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjects]
-  ] = js.undefined
+  ] = js.native
 }
 
 object BucketReplicationConfigurationRuleSourceSelectionCriteria {

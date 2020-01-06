@@ -6,23 +6,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VpcAttachmentAccepterArgs extends js.Object {
   /**
     * Key-value tags for the EC2 Transit Gateway VPC Attachment.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * The ID of the EC2 Transit Gateway Attachment to manage.
     */
-  val transitGatewayAttachmentId: Input[String]
+  val transitGatewayAttachmentId: Input[String] = js.native
   /**
     * Boolean whether the VPC Attachment should be associated with the EC2 Transit Gateway association default route table. Default value: `true`.
     */
-  val transitGatewayDefaultRouteTableAssociation: js.UndefOr[Input[Boolean]] = js.undefined
+  val transitGatewayDefaultRouteTableAssociation: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Boolean whether the VPC Attachment should propagate routes with the EC2 Transit Gateway propagation default route table. Default value: `true`.
     */
-  val transitGatewayDefaultRouteTablePropagation: js.UndefOr[Input[Boolean]] = js.undefined
+  val transitGatewayDefaultRouteTablePropagation: js.UndefOr[Input[Boolean]] = js.native
 }
 
 object VpcAttachmentAccepterArgs {

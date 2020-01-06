@@ -12,6 +12,10 @@ package object atKeystonejsKeystoneMod {
 
   type Access = Boolean | AccessCallback | Anon_Auth
   type AccessCallback = js.Function1[/* context */ AuthenticationContext, Boolean | GraphQLWhereClause]
+  /**
+    * Lists
+    */
+  type DefaultValueFunction = js.Function0[js.Any]
   type GraphQLWhereClause = StringDictionary[js.Any]
   type Hooks = Partial[Anon_AddFieldValidationError]
   type KeyValues[Keys /* <: String */, Values] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 

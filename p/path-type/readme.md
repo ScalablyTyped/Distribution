@@ -10,9 +10,9 @@ Check if a path is a file, directory, or symlink
 | ------------------ | :-------------: |
 | Full name          | path-type |
 | Keywords           | path, fs, type, is, check, directory, dir, file, filepath, symlink, symbolic, link, stat, stats, filesystem |
-| # releases         | 3 |
-| # dependents       | 66 |
-| # downloads        | 561977125 |
+| # releases         | 2 |
+| # dependents       | 85 |
+| # downloads        | 873005001 |
 | # stars            | 2 |
 
 ## Links

@@ -10,9 +10,9 @@ Error handler for pure-JSON Koa apps
 | ------------------ | :-------------: |
 | Full name          | koa-json-error |
 | Keywords           | koa, json, error, api, handler, middleware |
-| # releases         | 1 |
-| # dependents       | 16 |
-| # downloads        | 54915 |
+| # releases         | 0 |
+| # dependents       | 17 |
+| # downloads        | 79750 |
 | # stars            | 4 |
 
 ## Links

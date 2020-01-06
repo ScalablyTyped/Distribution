@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EventDestinationCloudwatchDestination extends js.Object {
   /**
     * The default value for the event
     */
-  var defaultValue: Input[String]
+  var defaultValue: Input[String] = js.native
   /**
     * The name for the dimension
     */
-  var dimensionName: Input[String]
+  var dimensionName: Input[String] = js.native
   /**
     * The source for the value. It can be either `"messageTag"` or `"emailHeader"`
     */
-  var valueSource: Input[String]
+  var valueSource: Input[String] = js.native
 }
 
 object EventDestinationCloudwatchDestination {

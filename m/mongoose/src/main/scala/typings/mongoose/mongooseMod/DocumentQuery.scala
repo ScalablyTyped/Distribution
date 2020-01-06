@@ -244,20 +244,9 @@ trait DocumentQuery[T, DocType /* <: Document */, QueryHelpers] extends mquery {
     update: js.Any,
     callback: js.Function3[/* err */ js.Any, /* doc */ DocType | Null, /* res */ js.Any, Unit]
   ): (DocumentQuery[DocType | Null, DocType, js.Object]) with QueryHelpers = js.native
-  def findOneAndUpdate(query: js.Any, update: js.Any, options: Anon_RawResult with QueryFindOneAndUpdateOptions): (Query[FindAndModifyWriteOpResultObject[DocType | Null]]) with QueryHelpers = js.native
-  def findOneAndUpdate(query: js.Any, update: js.Any, options: Anon_New with QueryFindOneAndUpdateOptions): Query[FindAndModifyWriteOpResultObject[DocType]] with QueryHelpers = js.native
   def findOneAndUpdate(query: js.Any, update: js.Any, options: Anon_NewTrue with QueryFindOneAndUpdateOptions): (DocumentQuery[DocType, DocType, js.Object]) with QueryHelpers = js.native
-  def findOneAndUpdate(
-    query: js.Any,
-    update: js.Any,
-    options: Anon_RawResult with QueryFindOneAndUpdateOptions,
-    callback: js.Function3[
-      /* err */ js.Any, 
-      /* doc */ FindAndModifyWriteOpResultObject[DocType | Null], 
-      /* res */ js.Any, 
-      Unit
-    ]
-  ): (Query[FindAndModifyWriteOpResultObject[DocType | Null]]) with QueryHelpers = js.native
+  def findOneAndUpdate(query: js.Any, update: js.Any, options: Anon_New with QueryFindOneAndUpdateOptions): Query[FindAndModifyWriteOpResultObject[DocType]] with QueryHelpers = js.native
+  def findOneAndUpdate(query: js.Any, update: js.Any, options: Anon_RawResult with QueryFindOneAndUpdateOptions): (Query[FindAndModifyWriteOpResultObject[DocType | Null]]) with QueryHelpers = js.native
   def findOneAndUpdate(
     query: js.Any,
     update: js.Any,
@@ -275,6 +264,17 @@ trait DocumentQuery[T, DocType /* <: Document */, QueryHelpers] extends mquery {
       Unit
     ]
   ): Query[FindAndModifyWriteOpResultObject[DocType]] with QueryHelpers = js.native
+  def findOneAndUpdate(
+    query: js.Any,
+    update: js.Any,
+    options: Anon_RawResult with QueryFindOneAndUpdateOptions,
+    callback: js.Function3[
+      /* err */ js.Any, 
+      /* doc */ FindAndModifyWriteOpResultObject[DocType | Null], 
+      /* res */ js.Any, 
+      Unit
+    ]
+  ): (Query[FindAndModifyWriteOpResultObject[DocType | Null]]) with QueryHelpers = js.native
   def findOneAndUpdate(query: js.Any, update: js.Any, options: QueryFindOneAndUpdateOptions): (DocumentQuery[DocType | Null, DocType, js.Object]) with QueryHelpers = js.native
   def findOneAndUpdate(
     query: js.Any,

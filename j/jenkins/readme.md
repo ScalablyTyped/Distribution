@@ -10,9 +10,9 @@ Jenkins client
 | ------------------ | :-------------: |
 | Full name          | jenkins |
 | Keywords           | jenkins |
-| # releases         | 8 |
-| # dependents       | 40 |
-| # downloads        | 240110 |
+| # releases         | 9 |
+| # dependents       | 50 |
+| # downloads        | 293735 |
 | # stars            | 12 |
 
 ## Links

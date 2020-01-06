@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Mp2Settings extends js.Object {
   /**
     * Average bitrate in bits/second.
     */
-  var Bitrate: js.UndefOr[__double] = js.undefined
+  var Bitrate: js.UndefOr[__double] = js.native
   /**
     * The MPEG2 Audio coding mode.  Valid values are codingMode10 (for mono) or codingMode20 (for stereo).
     */
-  var CodingMode: js.UndefOr[Mp2CodingMode] = js.undefined
+  var CodingMode: js.UndefOr[Mp2CodingMode] = js.native
   /**
     * Sample rate in Hz.
     */
-  var SampleRate: js.UndefOr[__double] = js.undefined
+  var SampleRate: js.UndefOr[__double] = js.native
 }
 
 object Mp2Settings {

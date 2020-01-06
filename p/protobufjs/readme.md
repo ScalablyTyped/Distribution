@@ -10,9 +10,9 @@ Protocol Buffers for JavaScript (& TypeScript).
 | ------------------ | :-------------: |
 | Full name          | protobufjs |
 | Keywords           | protobuf, protocol-buffers, serialization, typescript |
-| # releases         | 11 |
-| # dependents       | 746 |
-| # downloads        | 54910589 |
+| # releases         | 7 |
+| # dependents       | 897 |
+| # downloads        | 93925030 |
 | # stars            | 50 |
 
 ## Links

@@ -11,8 +11,8 @@ Small event emitter for using in es6 and plain js
 | Full name          | event-emitter-es6 |
 | Keywords           | eventemitter, event-emitter, event-emitter-es6 |
 | # releases         | 0 |
-| # dependents       | 27 |
-| # downloads        | 147827 |
+| # dependents       | 34 |
+| # downloads        | 85129 |
 | # stars            | 1 |
 
 ## Links

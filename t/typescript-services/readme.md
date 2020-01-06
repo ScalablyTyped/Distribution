@@ -12,7 +12,7 @@ Open up TypeScript language services for nodejs consumption
 | Keywords           | typescript, api, compiler, language, microsoft |
 | # releases         | 1 |
 | # dependents       | 1 |
-| # downloads        | 6444 |
+| # downloads        | 9843 |
 | # stars            | 1 |
 
 ## Links

@@ -10,9 +10,9 @@ ENS support for web3.
 | ------------------ | :-------------: |
 | Full name          | web3-eth-ens |
 | Keywords           | - |
-| # releases         | 26 |
+| # releases         | 30 |
 | # dependents       | 5 |
-| # downloads        | 2406789 |
+| # downloads        | 2949869 |
 | # stars            | 0 |
 
 ## Links

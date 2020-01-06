@@ -8,15 +8,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined parent std.Partial<@material-ui/core.@material-ui/core/styles/createTypography.FontStyle> */
+@js.native
 trait FontStyleOptions extends js.Object {
-  var allVariants: js.UndefOr[CSSProperties] = js.undefined
-  var fontFamily: js.UndefOr[FontFamilyProperty] = js.undefined
-  var fontSize: js.UndefOr[Double] = js.undefined
-  var fontWeightLight: js.UndefOr[FontWeightProperty] = js.undefined
-  var fontWeightMedium: js.UndefOr[FontWeightProperty] = js.undefined
-  var fontWeightRegular: js.UndefOr[FontWeightProperty] = js.undefined
-  var htmlFontSize: js.UndefOr[Double] = js.undefined
-  var useNextVariants: js.UndefOr[Boolean] = js.undefined
+  var allVariants: js.UndefOr[CSSProperties] = js.native
+  var fontFamily: js.UndefOr[FontFamilyProperty] = js.native
+  var fontSize: js.UndefOr[Double] = js.native
+  var fontWeightLight: js.UndefOr[FontWeightProperty] = js.native
+  var fontWeightMedium: js.UndefOr[FontWeightProperty] = js.native
+  var fontWeightRegular: js.UndefOr[FontWeightProperty] = js.native
+  var htmlFontSize: js.UndefOr[Double] = js.native
+  var useNextVariants: js.UndefOr[Boolean] = js.native
 }
 
 object FontStyleOptions {

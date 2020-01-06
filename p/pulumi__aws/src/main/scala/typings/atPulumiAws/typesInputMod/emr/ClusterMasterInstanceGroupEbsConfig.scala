@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClusterMasterInstanceGroupEbsConfig extends js.Object {
-  var iops: js.UndefOr[Input[Double]] = js.undefined
-  var size: Input[Double]
-  var `type`: Input[String]
-  var volumesPerInstance: js.UndefOr[Input[Double]] = js.undefined
+  var iops: js.UndefOr[Input[Double]] = js.native
+  var size: Input[Double] = js.native
+  var `type`: Input[String] = js.native
+  var volumesPerInstance: js.UndefOr[Input[Double]] = js.native
 }
 
 object ClusterMasterInstanceGroupEbsConfig {

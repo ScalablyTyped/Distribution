@@ -11,8 +11,8 @@ Run promise-returning & async functions in series, each passing its result to th
 | Full name          | p-waterfall |
 | Keywords           | promise, waterfall, series, serial, sequence, sequential, ordered, task, tasks, array, collection, iterable, iterator, async, await, promises, bluebird |
 | # releases         | 3 |
-| # dependents       | 31 |
-| # downloads        | 6408277 |
+| # dependents       | 34 |
+| # downloads        | 18318765 |
 | # stars            | 0 |
 
 ## Links

@@ -18,7 +18,7 @@ trait CbFailingInterface[Context] extends js.Object {
   	 */
   def apply[T /* <: js.Array[_] */](
     macros: OneOrMoreCbMacros[T, Context],
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param rest because its type T is not an array type */ rest: T
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rest because its type T is not an array type */ rest: T
   ): Unit = js.native
   /**
   	 * Declare a test that uses one or more macros. The macros must call `t.end()` when they're done.
@@ -27,7 +27,7 @@ trait CbFailingInterface[Context] extends js.Object {
   def apply[T /* <: js.Array[_] */](
     title: String,
     macros: OneOrMoreCbMacros[T, Context],
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param rest because its type T is not an array type */ rest: T
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rest because its type T is not an array type */ rest: T
   ): Unit = js.native
   /**
   	 * Declare a test that must call `t.end()` when it's done. Only this test and others declared with `.only()` are run.
@@ -39,7 +39,7 @@ trait CbFailingInterface[Context] extends js.Object {
   	 */
   def only[T /* <: js.Array[_] */](
     macros: OneOrMoreCbMacros[T, Context],
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param rest because its type T is not an array type */ rest: T
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rest because its type T is not an array type */ rest: T
   ): Unit = js.native
   /**
   	 * Declare a test that uses one or more macros. The macros must call `t.end()` when they're done.
@@ -48,20 +48,20 @@ trait CbFailingInterface[Context] extends js.Object {
   def only[T /* <: js.Array[_] */](
     title: String,
     macros: OneOrMoreCbMacros[T, Context],
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param rest because its type T is not an array type */ rest: T
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rest because its type T is not an array type */ rest: T
   ): Unit = js.native
   /** Skip this test. */
   def skip(title: String, implementation: CbImplementation[Context]): Unit = js.native
   /** Skip this test. */
   def skip[T /* <: js.Array[_] */](
     macros: OneOrMoreCbMacros[T, Context],
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param rest because its type T is not an array type */ rest: T
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rest because its type T is not an array type */ rest: T
   ): Unit = js.native
   /** Skip this test. */
   def skip[T /* <: js.Array[_] */](
     title: String,
     macros: OneOrMoreCbMacros[T, Context],
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param rest because its type T is not an array type */ rest: T
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param rest because its type T is not an array type */ rest: T
   ): Unit = js.native
 }
 

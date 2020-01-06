@@ -1,8 +1,8 @@
 package typings.mongooseDashSimpleDashRandom.mongooseDashSimpleDashRandomMod
 
-import typings.mongoose.mongooseMod.Document
 import typings.mongoose.mongooseMod.ModelProperties
 import typings.node.NodeJS.EventEmitter
+import typings.std.Document
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

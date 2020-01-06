@@ -10,9 +10,9 @@ A parser and formatter for delimiter-separated values, such as CSV and TSV
 | ------------------ | :-------------: |
 | Full name          | d3-dsv |
 | Keywords           | d3, d3-module, dsv, csv, tsv |
-| # releases         | 8 |
-| # dependents       | 103 |
-| # downloads        | 17296548 |
+| # releases         | 7 |
+| # dependents       | 133 |
+| # downloads        | 27923588 |
 | # stars            | 3 |
 
 ## Links

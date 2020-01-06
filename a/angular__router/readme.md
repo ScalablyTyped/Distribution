@@ -10,9 +10,9 @@ Angular - the routing library
 | ------------------ | :-------------: |
 | Full name          | @angular/router |
 | Keywords           | angular, router |
-| # releases         | 184 |
-| # dependents       | 4649 |
-| # downloads        | 72439304 |
+| # releases         | 182 |
+| # dependents       | 5706 |
+| # downloads        | 51683199 |
 | # stars            | 17 |
 
 ## Links

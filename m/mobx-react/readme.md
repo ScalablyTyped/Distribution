@@ -10,9 +10,9 @@ React bindings for MobX. Create fully reactive components.
 | ------------------ | :-------------: |
 | Full name          | mobx-react |
 | Keywords           | mobx, mobservable, react-component, react, reactjs, reactive |
-| # releases         | 52 |
-| # dependents       | 575 |
-| # downloads        | 6872217 |
+| # releases         | 51 |
+| # dependents       | 772 |
+| # downloads        | 10719943 |
 | # stars            | 7 |
 
 ## Links

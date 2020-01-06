@@ -20,7 +20,7 @@ package object clientsStsMod {
   type accountType = String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2011-06-15`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String
@@ -39,6 +39,10 @@ package object clientsStsMod {
   type roleSessionNameType = String
   type serialNumberType = String
   type sessionPolicyDocumentType = String
+  type tagKeyListType = js.Array[tagKeyType]
+  type tagKeyType = String
+  type tagListType = js.Array[Tag]
+  type tagValueType = String
   type tokenCodeType = String
   type tokenType = String
   type urlType = String

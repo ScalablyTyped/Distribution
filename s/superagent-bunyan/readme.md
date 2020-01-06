@@ -10,9 +10,9 @@ a plugin for superagent that uses bunyan to log the request s and responses
 | ------------------ | :-------------: |
 | Full name          | superagent-bunyan |
 | Keywords           | superagent, bunyan, log |
-| # releases         | 6 |
+| # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 2197 |
+| # downloads        | 1452 |
 | # stars            | 0 |
 
 ## Links

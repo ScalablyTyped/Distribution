@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object clientsOpsworksMod {
   import org.scalablytyped.runtime.StringDictionary
-  import typings.awsDashSdk.awsDashSdkStrings.Color
+  import typings.awsDashSdk.awsDashSdkStrings.Color_
   import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
 
   type AgentVersions = js.Array[AgentVersion]
@@ -21,18 +21,18 @@ package object clientsOpsworksMod {
   type AppAttributesKeys = _AppAttributesKeys | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`aws-flow-ruby`
-    - typings.awsDashSdk.awsDashSdkStrings.java
+    - typings.awsDashSdk.awsDashSdkStrings.java_
     - typings.awsDashSdk.awsDashSdkStrings.rails
-    - typings.awsDashSdk.awsDashSdkStrings.php
+    - typings.awsDashSdk.awsDashSdkStrings.php_
     - typings.awsDashSdk.awsDashSdkStrings.nodejs
-    - typings.awsDashSdk.awsDashSdkStrings.static
-    - typings.awsDashSdk.awsDashSdkStrings.other
+    - typings.awsDashSdk.awsDashSdkStrings.static__
+    - typings.awsDashSdk.awsDashSdkStrings.other_
     - java.lang.String
   */
   type AppType = _AppType | java.lang.String
   type Apps = js.Array[App]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.x86_64
+    - typings.awsDashSdk.awsDashSdkStrings.x86_64_
     - typings.awsDashSdk.awsDashSdkStrings.i386
     - java.lang.String
   */
@@ -166,10 +166,10 @@ package object clientsOpsworksMod {
     - typings.awsDashSdk.awsDashSdkStrings.update_custom_cookbooks
     - typings.awsDashSdk.awsDashSdkStrings.execute_recipes
     - typings.awsDashSdk.awsDashSdkStrings.configure
-    - typings.awsDashSdk.awsDashSdkStrings.setup
-    - typings.awsDashSdk.awsDashSdkStrings.deploy
-    - typings.awsDashSdk.awsDashSdkStrings.rollback
-    - typings.awsDashSdk.awsDashSdkStrings.start
+    - typings.awsDashSdk.awsDashSdkStrings.setup_
+    - typings.awsDashSdk.awsDashSdkStrings.deploy_
+    - typings.awsDashSdk.awsDashSdkStrings.rollback_
+    - typings.awsDashSdk.awsDashSdkStrings.start_
     - typings.awsDashSdk.awsDashSdkStrings.stop
     - typings.awsDashSdk.awsDashSdkStrings.restart
     - typings.awsDashSdk.awsDashSdkStrings.undeploy
@@ -219,15 +219,15 @@ package object clientsOpsworksMod {
     - typings.awsDashSdk.awsDashSdkStrings.`aws-flow-ruby`
     - typings.awsDashSdk.awsDashSdkStrings.`ecs-cluster`
     - typings.awsDashSdk.awsDashSdkStrings.`java-app`
-    - typings.awsDashSdk.awsDashSdkStrings.lb
-    - typings.awsDashSdk.awsDashSdkStrings.web
+    - typings.awsDashSdk.awsDashSdkStrings.lb_
+    - typings.awsDashSdk.awsDashSdkStrings.web_
     - typings.awsDashSdk.awsDashSdkStrings.`php-app`
     - typings.awsDashSdk.awsDashSdkStrings.`rails-app`
     - typings.awsDashSdk.awsDashSdkStrings.`nodejs-app`
     - typings.awsDashSdk.awsDashSdkStrings.memcached
     - typings.awsDashSdk.awsDashSdkStrings.`db-master`
     - typings.awsDashSdk.awsDashSdkStrings.`monitoring-master`
-    - typings.awsDashSdk.awsDashSdkStrings.custom
+    - typings.awsDashSdk.awsDashSdkStrings.custom__
     - java.lang.String
   */
   type LayerType = _LayerType | java.lang.String
@@ -244,22 +244,22 @@ package object clientsOpsworksMod {
   type RdsDbInstances = js.Array[RdsDbInstance]
   type ResourceArn = java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.ebs
+    - typings.awsDashSdk.awsDashSdkStrings.ebs_
     - typings.awsDashSdk.awsDashSdkStrings.`instance-store`
     - java.lang.String
   */
   type RootDeviceType = _RootDeviceType | java.lang.String
   type ServiceErrors = js.Array[ServiceError]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.git
+    - typings.awsDashSdk.awsDashSdkStrings.git_
     - typings.awsDashSdk.awsDashSdkStrings.svn
-    - typings.awsDashSdk.awsDashSdkStrings.archive
-    - typings.awsDashSdk.awsDashSdkStrings.s3
+    - typings.awsDashSdk.awsDashSdkStrings.archive_
+    - typings.awsDashSdk.awsDashSdkStrings.s3_
     - java.lang.String
   */
   type SourceType = _SourceType | java.lang.String
   type StackAttributes = StringDictionary[String]
-  type StackAttributesKeys = Color | java.lang.String
+  type StackAttributesKeys = Color_ | java.lang.String
   type Stacks = js.Array[Stack]
   type String = java.lang.String
   type Strings = js.Array[String]
@@ -281,14 +281,14 @@ package object clientsOpsworksMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.gp2
     - typings.awsDashSdk.awsDashSdkStrings.io1
-    - typings.awsDashSdk.awsDashSdkStrings.standard
+    - typings.awsDashSdk.awsDashSdkStrings.standard__
     - java.lang.String
   */
   type VolumeType = _VolumeType | java.lang.String
   type Volumes = js.Array[Volume]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2013-02-18`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | java.lang.String

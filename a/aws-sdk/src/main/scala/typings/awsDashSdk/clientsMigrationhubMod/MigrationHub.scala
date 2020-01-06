@@ -26,12 +26,12 @@ trait MigrationHub extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ AssociateCreatedArtifactResult, Unit]
   ): Request[AssociateCreatedArtifactResult, AWSError] = js.native
   /**
-    * Associates a discovered resource ID from Application Discovery Service (ADS) with a migration task.
+    * Associates a discovered resource ID from Application Discovery Service with a migration task.
     */
   def associateDiscoveredResource(): Request[AssociateDiscoveredResourceResult, AWSError] = js.native
   def associateDiscoveredResource(callback: js.Function2[/* err */ AWSError, /* data */ AssociateDiscoveredResourceResult, Unit]): Request[AssociateDiscoveredResourceResult, AWSError] = js.native
   /**
-    * Associates a discovered resource ID from Application Discovery Service (ADS) with a migration task.
+    * Associates a discovered resource ID from Application Discovery Service with a migration task.
     */
   def associateDiscoveredResource(params: AssociateDiscoveredResourceRequest): Request[AssociateDiscoveredResourceResult, AWSError] = js.native
   def associateDiscoveredResource(
@@ -52,12 +52,12 @@ trait MigrationHub extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateProgressUpdateStreamResult, Unit]
   ): Request[CreateProgressUpdateStreamResult, AWSError] = js.native
   /**
-    * Deletes a progress update stream, including all of its tasks, which was previously created as an AWS resource used for access control. This API has the following traits:   The only parameter needed for DeleteProgressUpdateStream is the stream name (same as a CreateProgressUpdateStream call).   The call will return, and a background process will asynchronously delete the stream and all of its resources (tasks, associated resources, resource attributes, created artifacts).   If the stream takes time to be deleted, it might still show up on a ListProgressUpdateStreams call.    CreateProgressUpdateStream, ImportMigrationTask, NotifyMigrationTaskState, and all Associate[*] APIs realted to the tasks belonging to the stream will throw "InvalidInputException" if the stream of the same name is in the process of being deleted.   Once the stream and all of its resources are deleted, CreateProgressUpdateStream for a stream of the same name will succeed, and that stream will be an entirely new logical resource (without any resources associated with the old stream).  
+    * Deletes a progress update stream, including all of its tasks, which was previously created as an AWS resource used for access control. This API has the following traits:   The only parameter needed for DeleteProgressUpdateStream is the stream name (same as a CreateProgressUpdateStream call).   The call will return, and a background process will asynchronously delete the stream and all of its resources (tasks, associated resources, resource attributes, created artifacts).   If the stream takes time to be deleted, it might still show up on a ListProgressUpdateStreams call.    CreateProgressUpdateStream, ImportMigrationTask, NotifyMigrationTaskState, and all Associate[*] APIs related to the tasks belonging to the stream will throw "InvalidInputException" if the stream of the same name is in the process of being deleted.   Once the stream and all of its resources are deleted, CreateProgressUpdateStream for a stream of the same name will succeed, and that stream will be an entirely new logical resource (without any resources associated with the old stream).  
     */
   def deleteProgressUpdateStream(): Request[DeleteProgressUpdateStreamResult, AWSError] = js.native
   def deleteProgressUpdateStream(callback: js.Function2[/* err */ AWSError, /* data */ DeleteProgressUpdateStreamResult, Unit]): Request[DeleteProgressUpdateStreamResult, AWSError] = js.native
   /**
-    * Deletes a progress update stream, including all of its tasks, which was previously created as an AWS resource used for access control. This API has the following traits:   The only parameter needed for DeleteProgressUpdateStream is the stream name (same as a CreateProgressUpdateStream call).   The call will return, and a background process will asynchronously delete the stream and all of its resources (tasks, associated resources, resource attributes, created artifacts).   If the stream takes time to be deleted, it might still show up on a ListProgressUpdateStreams call.    CreateProgressUpdateStream, ImportMigrationTask, NotifyMigrationTaskState, and all Associate[*] APIs realted to the tasks belonging to the stream will throw "InvalidInputException" if the stream of the same name is in the process of being deleted.   Once the stream and all of its resources are deleted, CreateProgressUpdateStream for a stream of the same name will succeed, and that stream will be an entirely new logical resource (without any resources associated with the old stream).  
+    * Deletes a progress update stream, including all of its tasks, which was previously created as an AWS resource used for access control. This API has the following traits:   The only parameter needed for DeleteProgressUpdateStream is the stream name (same as a CreateProgressUpdateStream call).   The call will return, and a background process will asynchronously delete the stream and all of its resources (tasks, associated resources, resource attributes, created artifacts).   If the stream takes time to be deleted, it might still show up on a ListProgressUpdateStreams call.    CreateProgressUpdateStream, ImportMigrationTask, NotifyMigrationTaskState, and all Associate[*] APIs related to the tasks belonging to the stream will throw "InvalidInputException" if the stream of the same name is in the process of being deleted.   Once the stream and all of its resources are deleted, CreateProgressUpdateStream for a stream of the same name will succeed, and that stream will be an entirely new logical resource (without any resources associated with the old stream).  
     */
   def deleteProgressUpdateStream(params: DeleteProgressUpdateStreamRequest): Request[DeleteProgressUpdateStreamResult, AWSError] = js.native
   def deleteProgressUpdateStream(
@@ -104,12 +104,12 @@ trait MigrationHub extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DisassociateCreatedArtifactResult, Unit]
   ): Request[DisassociateCreatedArtifactResult, AWSError] = js.native
   /**
-    * Disassociate an Application Discovery Service (ADS) discovered resource from a migration task.
+    * Disassociate an Application Discovery Service discovered resource from a migration task.
     */
   def disassociateDiscoveredResource(): Request[DisassociateDiscoveredResourceResult, AWSError] = js.native
   def disassociateDiscoveredResource(callback: js.Function2[/* err */ AWSError, /* data */ DisassociateDiscoveredResourceResult, Unit]): Request[DisassociateDiscoveredResourceResult, AWSError] = js.native
   /**
-    * Disassociate an Application Discovery Service (ADS) discovered resource from a migration task.
+    * Disassociate an Application Discovery Service discovered resource from a migration task.
     */
   def disassociateDiscoveredResource(params: DisassociateDiscoveredResourceRequest): Request[DisassociateDiscoveredResourceResult, AWSError] = js.native
   def disassociateDiscoveredResource(
@@ -208,12 +208,12 @@ trait MigrationHub extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ NotifyMigrationTaskStateResult, Unit]
   ): Request[NotifyMigrationTaskStateResult, AWSError] = js.native
   /**
-    * Provides identifying details of the resource being migrated so that it can be associated in the Application Discovery Service (ADS)'s repository. This association occurs asynchronously after PutResourceAttributes returns.    Keep in mind that subsequent calls to PutResourceAttributes will override previously stored attributes. For example, if it is first called with a MAC address, but later, it is desired to add an IP address, it will then be required to call it with both the IP and MAC addresses to prevent overiding the MAC address.   Note the instructions regarding the special use case of the  ResourceAttributeList  parameter when specifying any "VM" related value.      Because this is an asynchronous call, it will always return 200, whether an association occurs or not. To confirm if an association was found based on the provided details, call ListDiscoveredResources. 
+    * Provides identifying details of the resource being migrated so that it can be associated in the Application Discovery Service repository. This association occurs asynchronously after PutResourceAttributes returns.    Keep in mind that subsequent calls to PutResourceAttributes will override previously stored attributes. For example, if it is first called with a MAC address, but later, it is desired to add an IP address, it will then be required to call it with both the IP and MAC addresses to prevent overriding the MAC address.   Note the instructions regarding the special use case of the  ResourceAttributeList  parameter when specifying any "VM" related value.     Because this is an asynchronous call, it will always return 200, whether an association occurs or not. To confirm if an association was found based on the provided details, call ListDiscoveredResources. 
     */
   def putResourceAttributes(): Request[PutResourceAttributesResult, AWSError] = js.native
   def putResourceAttributes(callback: js.Function2[/* err */ AWSError, /* data */ PutResourceAttributesResult, Unit]): Request[PutResourceAttributesResult, AWSError] = js.native
   /**
-    * Provides identifying details of the resource being migrated so that it can be associated in the Application Discovery Service (ADS)'s repository. This association occurs asynchronously after PutResourceAttributes returns.    Keep in mind that subsequent calls to PutResourceAttributes will override previously stored attributes. For example, if it is first called with a MAC address, but later, it is desired to add an IP address, it will then be required to call it with both the IP and MAC addresses to prevent overiding the MAC address.   Note the instructions regarding the special use case of the  ResourceAttributeList  parameter when specifying any "VM" related value.      Because this is an asynchronous call, it will always return 200, whether an association occurs or not. To confirm if an association was found based on the provided details, call ListDiscoveredResources. 
+    * Provides identifying details of the resource being migrated so that it can be associated in the Application Discovery Service repository. This association occurs asynchronously after PutResourceAttributes returns.    Keep in mind that subsequent calls to PutResourceAttributes will override previously stored attributes. For example, if it is first called with a MAC address, but later, it is desired to add an IP address, it will then be required to call it with both the IP and MAC addresses to prevent overriding the MAC address.   Note the instructions regarding the special use case of the  ResourceAttributeList  parameter when specifying any "VM" related value.     Because this is an asynchronous call, it will always return 200, whether an association occurs or not. To confirm if an association was found based on the provided details, call ListDiscoveredResources. 
     */
   def putResourceAttributes(params: PutResourceAttributesRequest): Request[PutResourceAttributesResult, AWSError] = js.native
   def putResourceAttributes(

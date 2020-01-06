@@ -10,9 +10,9 @@ Murmur hash optimized for performance, not collision avoidance.
 | ------------------ | :-------------: |
 | Full name          | quick-hash |
 | Keywords           | hash, murmur, murmur hash, fast, performance, quick |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 7672 |
+| # downloads        | 7360 |
 | # stars            | 2 |
 
 ## Links

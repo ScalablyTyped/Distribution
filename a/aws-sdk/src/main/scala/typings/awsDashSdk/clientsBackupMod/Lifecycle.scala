@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Lifecycle extends js.Object {
   /**
     * Specifies the number of days after creation that a recovery point is deleted. Must be greater than MoveToColdStorageAfterDays.
     */
-  var DeleteAfterDays: js.UndefOr[Long] = js.undefined
+  var DeleteAfterDays: js.UndefOr[Long] = js.native
   /**
     * Specifies the number of days after creation that a recovery point is moved to cold storage.
     */
-  var MoveToColdStorageAfterDays: js.UndefOr[Long] = js.undefined
+  var MoveToColdStorageAfterDays: js.UndefOr[Long] = js.native
 }
 
 object Lifecycle {

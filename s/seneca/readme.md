@@ -10,9 +10,9 @@ A Microservices Framework for Node.js
 | ------------------ | :-------------: |
 | Full name          | seneca |
 | Keywords           | micro, service, microservice, micro-service, microservices, micro-services, services, micro services, micro service, framework, minimum, viable, product, toolkit, startup |
-| # releases         | 15 |
-| # dependents       | 173 |
-| # downloads        | 373096 |
+| # releases         | 28 |
+| # dependents       | 178 |
+| # downloads        | 428266 |
 | # stars            | 54 |
 
 ## Links

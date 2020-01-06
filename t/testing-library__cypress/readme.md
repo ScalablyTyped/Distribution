@@ -10,9 +10,9 @@ Simple and complete custom Cypress commands and utilities that encourage good te
 | ------------------ | :-------------: |
 | Full name          | @testing-library/cypress |
 | Keywords           | testing, cypress, ui, dom, integration, functional, end-to-end, e2e |
-| # releases         | 8 |
+| # releases         | 16 |
 | # dependents       | 0 |
-| # downloads        | 126290 |
+| # downloads        | 887463 |
 | # stars            | 0 |
 
 ## Links

@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FaultStatistics extends js.Object {
   /**
     * The number of requests that failed with untracked 5xx Server Error status codes.
     */
-  var OtherCount: js.UndefOr[NullableLong] = js.undefined
+  var OtherCount: js.UndefOr[NullableLong] = js.native
   /**
     * The total number of requests that failed with a 5xx Server Error status code.
     */
-  var TotalCount: js.UndefOr[NullableLong] = js.undefined
+  var TotalCount: js.UndefOr[NullableLong] = js.native
 }
 
 object FaultStatistics {

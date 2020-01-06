@@ -10,9 +10,9 @@ Helper for implementing advanced search features with algolia
 | ------------------ | :-------------: |
 | Full name          | algoliasearch-helper |
 | Keywords           | - |
-| # releases         | 12 |
-| # dependents       | 15 |
-| # downloads        | 2427057 |
+| # releases         | 17 |
+| # dependents       | 16 |
+| # downloads        | 4579015 |
 | # stars            | 4 |
 
 ## Links

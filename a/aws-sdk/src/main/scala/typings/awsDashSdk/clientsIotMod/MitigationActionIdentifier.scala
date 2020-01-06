@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MitigationActionIdentifier extends js.Object {
   /**
     * The IAM role ARN used to apply this mitigation action.
     */
-  var actionArn: js.UndefOr[MitigationActionArn] = js.undefined
+  var actionArn: js.UndefOr[MitigationActionArn] = js.native
   /**
     * The friendly name of the mitigation action.
     */
-  var actionName: js.UndefOr[MitigationActionName] = js.undefined
+  var actionName: js.UndefOr[MitigationActionName] = js.native
   /**
     * The date when this mitigation action was created.
     */
-  var creationDate: js.UndefOr[Timestamp] = js.undefined
+  var creationDate: js.UndefOr[Timestamp] = js.native
 }
 
 object MitigationActionIdentifier {
@@ -27,9 +28,9 @@ object MitigationActionIdentifier {
     creationDate: Timestamp = null
   ): MitigationActionIdentifier = {
     val __obj = js.Dynamic.literal()
-    if (actionArn != null) __obj.updateDynamic("actionArn")(actionArn)
-    if (actionName != null) __obj.updateDynamic("actionName")(actionName)
-    if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate)
+    if (actionArn != null) __obj.updateDynamic("actionArn")(actionArn.asInstanceOf[js.Any])
+    if (actionName != null) __obj.updateDynamic("actionName")(actionName.asInstanceOf[js.Any])
+    if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[MitigationActionIdentifier]
   }
 }

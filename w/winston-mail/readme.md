@@ -10,9 +10,9 @@ A mail transport for winston
 | ------------------ | :-------------: |
 | Full name          | winston-mail |
 | Keywords           | logging, sysadmin, tools, winston, email |
-| # releases         | 5 |
-| # dependents       | 20 |
-| # downloads        | 135358 |
+| # releases         | 6 |
+| # dependents       | 21 |
+| # downloads        | 150172 |
 | # stars            | 3 |
 
 ## Links

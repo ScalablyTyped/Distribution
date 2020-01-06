@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait QuotaSettings extends js.Object {
   /**
     * The maximum number of requests that can be made in a given time period.
     */
-  var limit: js.UndefOr[Integer] = js.undefined
+  var limit: js.UndefOr[Integer] = js.native
   /**
     * The number of requests subtracted from the given limit in the initial time period.
     */
-  var offset: js.UndefOr[Integer] = js.undefined
+  var offset: js.UndefOr[Integer] = js.native
   /**
     * The time period in which the limit applies. Valid values are "DAY", "WEEK" or "MONTH".
     */
-  var period: js.UndefOr[QuotaPeriodType] = js.undefined
+  var period: js.UndefOr[QuotaPeriodType] = js.native
 }
 
 object QuotaSettings {

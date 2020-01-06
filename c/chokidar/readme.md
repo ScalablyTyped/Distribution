@@ -10,9 +10,9 @@ A neat wrapper around node.js fs.watch / fs.watchFile / fsevents.
 | ------------------ | :-------------: |
 | Full name          | chokidar |
 | Keywords           | fs, watch, watchFile, watcher, watching, file, fsevents |
-| # releases         | 12 |
-| # dependents       | 3858 |
-| # downloads        | 400196535 |
+| # releases         | 24 |
+| # dependents       | 4691 |
+| # downloads        | 611813604 |
 | # stars            | 175 |
 
 ## Links

@@ -29,6 +29,10 @@ class Job protected () extends CustomResource {
     */
   val allocatedCapacity: Output[Double] = js.native
   /**
+    * Amazon Resource Name (ARN) of Glue Job
+    */
+  val arn: Output[String] = js.native
+  /**
     * The command of the job. Defined below.
     */
   val command: Output[JobCommand] = js.native
@@ -49,6 +53,10 @@ class Job protected () extends CustomResource {
     */
   val executionProperty: Output[JobExecutionProperty] = js.native
   /**
+    * The version of glue to use, for example "1.0". For information about available versions, see the [AWS Glue Release Notes](https://docs.aws.amazon.com/glue/latest/dg/release-notes.html).
+    */
+  val glueVersion: Output[String] = js.native
+  /**
     * The maximum number of AWS Glue data processing units (DPUs) that can be allocated when this job runs.
     */
   val maxCapacity: Output[Double] = js.native
@@ -61,6 +69,10 @@ class Job protected () extends CustomResource {
     */
   val name: Output[String] = js.native
   /**
+    * The number of workers of a defined workerType that are allocated when a job runs.
+    */
+  val numberOfWorkers: Output[js.UndefOr[Double]] = js.native
+  /**
     * The ARN of the IAM role associated with this job.
     */
   val roleArn: Output[String] = js.native
@@ -69,9 +81,17 @@ class Job protected () extends CustomResource {
     */
   val securityConfiguration: Output[js.UndefOr[String]] = js.native
   /**
+    * Key-value mapping of resource tags
+    */
+  val tags: Output[js.UndefOr[StringDictionary[_]]] = js.native
+  /**
     * The job timeout in minutes. The default is 2880 minutes (48 hours).
     */
   val timeout: Output[js.UndefOr[Double]] = js.native
+  /**
+    * The type of predefined worker that is allocated when a job runs. Accepts a value of Standard, G.1X, or G.2X.
+    */
+  val workerType: Output[js.UndefOr[String]] = js.native
 }
 
 /* static members */

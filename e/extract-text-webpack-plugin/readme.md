@@ -10,9 +10,9 @@ Extract text from bundle into a file.
 | ------------------ | :-------------: |
 | Full name          | extract-text-webpack-plugin |
 | Keywords           | - |
-| # releases         | 16 |
-| # dependents       | 3608 |
-| # downloads        | 97500638 |
+| # releases         | 3 |
+| # dependents       | 3777 |
+| # downloads        | 84741877 |
 | # stars            | 103 |
 
 ## Links

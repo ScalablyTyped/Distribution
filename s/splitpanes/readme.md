@@ -10,9 +10,9 @@ A Vue JS reliable, simple and touch-ready panes splitter / resizer
 | ------------------ | :-------------: |
 | Full name          | splitpanes |
 | Keywords           | split panes, panes resizer, vue, vuejs, ui |
-| # releases         | 35 |
-| # dependents       | 1 |
-| # downloads        | 9011 |
+| # releases         | 41 |
+| # dependents       | 3 |
+| # downloads        | 26542 |
 | # stars            | 0 |
 
 ## Links

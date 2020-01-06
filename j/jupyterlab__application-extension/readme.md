@@ -10,9 +10,9 @@ JupyterLab - Application Extension
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/application-extension |
 | Keywords           | - |
-| # releases         | 47 |
+| # releases         | 68 |
 | # dependents       | 1 |
-| # downloads        | 587337 |
+| # downloads        | 750568 |
 | # stars            | 0 |
 
 ## Links

@@ -20,11 +20,11 @@ class SlowBuffer protected () extends NodeBuffer {
 @JSGlobal("SlowBuffer")
 @js.native
 object SlowBuffer
-  extends Instantiable2[/* str */ String, /* encoding */ String, Buffer]
-     with Instantiable1[
+  extends Instantiable1[
       (/* array */ js.Array[js.Any]) | (/* size */ Double) | (/* str */ String) | (/* size */ Uint8Array), 
       Buffer
-    ] {
+    ]
+     with Instantiable2[/* str */ String, /* encoding */ String, Buffer] {
   def byteLength(string: String): Double = js.native
   def byteLength(string: String, encoding: String): Double = js.native
   def concat(list: js.Array[Buffer]): Buffer = js.native

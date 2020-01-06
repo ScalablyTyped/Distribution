@@ -32,65 +32,73 @@ package object clientsEsMod {
   type DomainNameList = js.Array[DomainName]
   type Double = scala.Double
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.m3DOTmediumDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.m3DOTlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.m3DOTxlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.m3DOT2xlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.m4DOTlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.m4DOTxlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.m4DOT2xlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.m4DOT4xlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.m4DOT10xlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.m5DOTlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.m5DOTxlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.m5DOT2xlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.m5DOT4xlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.m5DOT12xlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.r5DOTlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.r5DOTxlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.r5DOT2xlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.r5DOT4xlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.r5DOT12xlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.c5DOTlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.c5DOTxlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.c5DOT2xlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.c5DOT4xlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.c5DOT9xlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.c5DOT18xlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.t2DOTmicroDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.t2DOTsmallDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.t2DOTmediumDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.r3DOTlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.r3DOTxlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.r3DOT2xlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.r3DOT4xlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.r3DOT8xlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.i2DOTxlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.i2DOT2xlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.d2DOTxlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.d2DOT2xlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.d2DOT4xlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.d2DOT8xlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.c4DOTlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.c4DOTxlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.c4DOT2xlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.c4DOT4xlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.c4DOT8xlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.r4DOTlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.r4DOTxlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.r4DOT2xlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.r4DOT4xlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.r4DOT8xlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.r4DOT16xlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.i3DOTlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.i3DOTxlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.i3DOT2xlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.i3DOT4xlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.i3DOT8xlargeDOTelasticsearch
-    - typings.awsDashSdk.awsDashSdkStrings.i3DOT16xlargeDOTelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.m3DotmediumDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.m3DotlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.m3DotxlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.m3Dot2xlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.m4DotlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.m4DotxlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.m4Dot2xlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.m4Dot4xlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.m4Dot10xlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.m5DotlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.m5DotxlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.m5Dot2xlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.m5Dot4xlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.m5Dot12xlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.r5DotlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.r5DotxlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.r5Dot2xlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.r5Dot4xlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.r5Dot12xlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.c5DotlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.c5DotxlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.c5Dot2xlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.c5Dot4xlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.c5Dot9xlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.c5Dot18xlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.ultrawarm1DotmediumDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.ultrawarm1DotlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.t2DotmicroDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.t2DotsmallDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.t2DotmediumDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.r3DotlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.r3DotxlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.r3Dot2xlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.r3Dot4xlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.r3Dot8xlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.i2DotxlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.i2Dot2xlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.d2DotxlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.d2Dot2xlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.d2Dot4xlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.d2Dot8xlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.c4DotlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.c4DotxlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.c4Dot2xlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.c4Dot4xlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.c4Dot8xlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.r4DotlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.r4DotxlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.r4Dot2xlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.r4Dot4xlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.r4Dot8xlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.r4Dot16xlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.i3DotlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.i3DotxlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.i3Dot2xlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.i3Dot4xlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.i3Dot8xlargeDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.i3Dot16xlargeDotelasticsearch
     - java.lang.String
   */
   type ESPartitionInstanceType = _ESPartitionInstanceType | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.ultrawarm1DotmediumDotelasticsearch
+    - typings.awsDashSdk.awsDashSdkStrings.ultrawarm1DotlargeDotelasticsearch
+    - java.lang.String
+  */
+  type ESWarmPartitionInstanceType = _ESWarmPartitionInstanceType | java.lang.String
   type ElasticsearchDomainStatusList = js.Array[ElasticsearchDomainStatus]
   type ElasticsearchInstanceTypeList = js.Array[ESPartitionInstanceType]
   type ElasticsearchVersionList = js.Array[ElasticsearchVersionString]
@@ -123,8 +131,8 @@ package object clientsEsMod {
   type NextToken = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.RequiresIndexDocuments
-    - typings.awsDashSdk.awsDashSdkStrings.Processing
-    - typings.awsDashSdk.awsDashSdkStrings.Active
+    - typings.awsDashSdk.awsDashSdkStrings.Processing_
+    - typings.awsDashSdk.awsDashSdkStrings.Active_
     - java.lang.String
   */
   type OptionState = _OptionState | java.lang.String
@@ -180,7 +188,7 @@ package object clientsEsMod {
   type UpgradeStepsList = js.Array[UpgradeStepItem]
   type UserPoolId = java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.standard
+    - typings.awsDashSdk.awsDashSdkStrings.standard__
     - typings.awsDashSdk.awsDashSdkStrings.gp2
     - typings.awsDashSdk.awsDashSdkStrings.io1
     - java.lang.String
@@ -188,7 +196,7 @@ package object clientsEsMod {
   type VolumeType = _VolumeType | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2015-01-01`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | java.lang.String

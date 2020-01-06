@@ -11,8 +11,8 @@ Create nested values and any intermediaries using dot notation (`'a.b.c'`) paths
 | Full name          | set-value |
 | Keywords           | bury, deep-get-set, deep-object, deep-property, deep-set, deep-set-in, deephas, dot-prop, dot2val, es5-dot-prop, get, getsetdeep, has, hasown, key, keys, lodash.set, nested, notation, object, object-path, object-path-set, object-set, prop, properties, property, props, set, set-deep, set-deep-prop, set-nested-prop, setvalue, value, values |
 | # releases         | 4 |
-| # dependents       | 101 |
-| # downloads        | 501060311 |
+| # dependents       | 166 |
+| # downloads        | 680497724 |
 | # stars            | 6 |
 
 ## Links

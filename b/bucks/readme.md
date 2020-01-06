@@ -12,7 +12,7 @@ Async utilities for node and the browser. (amd support)
 | Keywords           | browser, node, async |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 610 |
+| # downloads        | 1076 |
 | # stars            | 1 |
 
 ## Links

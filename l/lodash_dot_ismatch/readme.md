@@ -11,8 +11,8 @@ The lodash method `_.isMatch` exported as a module.
 | Full name          | lodash.ismatch |
 | Keywords           | lodash-modularized, ismatch |
 | # releases         | 0 |
-| # dependents       | 20 |
-| # downloads        | 2436676 |
+| # dependents       | 27 |
+| # downloads        | 19226348 |
 | # stars            | 0 |
 
 ## Links

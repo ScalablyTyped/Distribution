@@ -10,9 +10,9 @@ Extends chai with assertions that allow for floating point rounding errors
 | ------------------ | :-------------: |
 | Full name          | chai-almost |
 | Keywords           | tests, testing, chai, number-equality, assertions, assertion, chai-plugin, rounding-errors, approximation, testing-libraries, deep-equality |
-| # releases         | 7 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 31283 |
+| # downloads        | 76168 |
 | # stars            | 0 |
 
 ## Links

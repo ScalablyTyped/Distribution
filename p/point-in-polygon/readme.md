@@ -10,9 +10,9 @@ determine if a point is inside a polygon with a ray intersection counting algori
 | ------------------ | :-------------: |
 | Full name          | point-in-polygon |
 | Keywords           | point, polygon, inside |
-| # releases         | 1 |
-| # dependents       | 53 |
-| # downloads        | 1522313 |
+| # releases         | 0 |
+| # dependents       | 64 |
+| # downloads        | 2581153 |
 | # stars            | 5 |
 
 ## Links

@@ -6,19 +6,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ThingArgs extends js.Object {
   /**
     * Map of attributes of the thing.
     */
-  val attributes: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val attributes: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * The name of the thing.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * The thing type name.
     */
-  val thingTypeName: js.UndefOr[Input[String]] = js.undefined
+  val thingTypeName: js.UndefOr[Input[String]] = js.native
 }
 
 object ThingArgs {

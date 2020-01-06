@@ -4,79 +4,80 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DescribeLabelingJobResponse extends js.Object {
   /**
     * The date and time that the labeling job was created.
     */
-  var CreationTime: Timestamp
+  var CreationTime: Timestamp = js.native
   /**
     * If the job failed, the reason that it failed. 
     */
-  var FailureReason: js.UndefOr[typings.awsDashSdk.clientsSagemakerMod.FailureReason] = js.undefined
+  var FailureReason: js.UndefOr[typings.awsDashSdk.clientsSagemakerMod.FailureReason] = js.native
   /**
     * Configuration information required for human workers to complete a labeling task.
     */
-  var HumanTaskConfig: typings.awsDashSdk.clientsSagemakerMod.HumanTaskConfig
+  var HumanTaskConfig: typings.awsDashSdk.clientsSagemakerMod.HumanTaskConfig = js.native
   /**
     * Input configuration information for the labeling job, such as the Amazon S3 location of the data objects and the location of the manifest file that describes the data objects.
     */
-  var InputConfig: LabelingJobInputConfig
+  var InputConfig: LabelingJobInputConfig = js.native
   /**
     * A unique identifier for work done as part of a labeling job.
     */
-  var JobReferenceCode: typings.awsDashSdk.clientsSagemakerMod.JobReferenceCode
+  var JobReferenceCode: typings.awsDashSdk.clientsSagemakerMod.JobReferenceCode = js.native
   /**
     * The attribute used as the label in the output manifest file.
     */
-  var LabelAttributeName: js.UndefOr[typings.awsDashSdk.clientsSagemakerMod.LabelAttributeName] = js.undefined
+  var LabelAttributeName: js.UndefOr[typings.awsDashSdk.clientsSagemakerMod.LabelAttributeName] = js.native
   /**
-    * The S3 location of the JSON file that defines the categories used to label data objects. The file is a JSON structure in the following format:  {    "document-version": "2018-11-28"    "labels": [    {    "label": "label 1"    },    {    "label": "label 2"    },    ...    {    "label": "label n"    }    ]   } 
+    * The S3 location of the JSON file that defines the categories used to label data objects. Please note the following label-category limits:   Semantic segmentation labeling jobs using automated labeling: 20 labels   Box bounding labeling jobs (all): 10 lables   The file is a JSON structure in the following format:  {    "document-version": "2018-11-28"    "labels": [    {    "label": "label 1"    },    {    "label": "label 2"    },    ...    {    "label": "label n"    }    ]   } 
     */
-  var LabelCategoryConfigS3Uri: js.UndefOr[S3Uri] = js.undefined
+  var LabelCategoryConfigS3Uri: js.UndefOr[S3Uri] = js.native
   /**
     * Provides a breakdown of the number of data objects labeled by humans, the number of objects labeled by machine, the number of objects than couldn't be labeled, and the total number of objects labeled. 
     */
-  var LabelCounters: typings.awsDashSdk.clientsSagemakerMod.LabelCounters
+  var LabelCounters: typings.awsDashSdk.clientsSagemakerMod.LabelCounters = js.native
   /**
     * Configuration information for automated data labeling.
     */
-  var LabelingJobAlgorithmsConfig: js.UndefOr[typings.awsDashSdk.clientsSagemakerMod.LabelingJobAlgorithmsConfig] = js.undefined
+  var LabelingJobAlgorithmsConfig: js.UndefOr[typings.awsDashSdk.clientsSagemakerMod.LabelingJobAlgorithmsConfig] = js.native
   /**
     * The Amazon Resource Name (ARN) of the labeling job.
     */
-  var LabelingJobArn: typings.awsDashSdk.clientsSagemakerMod.LabelingJobArn
+  var LabelingJobArn: typings.awsDashSdk.clientsSagemakerMod.LabelingJobArn = js.native
   /**
     * The name assigned to the labeling job when it was created.
     */
-  var LabelingJobName: typings.awsDashSdk.clientsSagemakerMod.LabelingJobName
+  var LabelingJobName: typings.awsDashSdk.clientsSagemakerMod.LabelingJobName = js.native
   /**
     * The location of the output produced by the labeling job.
     */
-  var LabelingJobOutput: js.UndefOr[typings.awsDashSdk.clientsSagemakerMod.LabelingJobOutput] = js.undefined
+  var LabelingJobOutput: js.UndefOr[typings.awsDashSdk.clientsSagemakerMod.LabelingJobOutput] = js.native
   /**
     * The processing status of the labeling job. 
     */
-  var LabelingJobStatus: typings.awsDashSdk.clientsSagemakerMod.LabelingJobStatus
+  var LabelingJobStatus: typings.awsDashSdk.clientsSagemakerMod.LabelingJobStatus = js.native
   /**
     * The date and time that the labeling job was last updated.
     */
-  var LastModifiedTime: Timestamp
+  var LastModifiedTime: Timestamp = js.native
   /**
     * The location of the job's output data and the AWS Key Management Service key ID for the key used to encrypt the output data, if any.
     */
-  var OutputConfig: LabelingJobOutputConfig
+  var OutputConfig: LabelingJobOutputConfig = js.native
   /**
     * The Amazon Resource Name (ARN) that Amazon SageMaker assumes to perform tasks on your behalf during data labeling.
     */
-  var RoleArn: typings.awsDashSdk.clientsSagemakerMod.RoleArn
+  var RoleArn: typings.awsDashSdk.clientsSagemakerMod.RoleArn = js.native
   /**
     * A set of conditions for stopping a labeling job. If any of the conditions are met, the job is automatically stopped.
     */
-  var StoppingConditions: js.UndefOr[LabelingJobStoppingConditions] = js.undefined
+  var StoppingConditions: js.UndefOr[LabelingJobStoppingConditions] = js.native
   /**
     * An array of key/value pairs. For more information, see Using Cost Allocation Tags in the AWS Billing and Cost Management User Guide.
     */
-  var Tags: js.UndefOr[TagList] = js.undefined
+  var Tags: js.UndefOr[TagList] = js.native
 }
 
 object DescribeLabelingJobResponse {
@@ -101,14 +102,14 @@ object DescribeLabelingJobResponse {
     StoppingConditions: LabelingJobStoppingConditions = null,
     Tags: TagList = null
   ): DescribeLabelingJobResponse = {
-    val __obj = js.Dynamic.literal(CreationTime = CreationTime, HumanTaskConfig = HumanTaskConfig, InputConfig = InputConfig, JobReferenceCode = JobReferenceCode, LabelCounters = LabelCounters, LabelingJobArn = LabelingJobArn, LabelingJobName = LabelingJobName, LabelingJobStatus = LabelingJobStatus.asInstanceOf[js.Any], LastModifiedTime = LastModifiedTime, OutputConfig = OutputConfig, RoleArn = RoleArn)
-    if (FailureReason != null) __obj.updateDynamic("FailureReason")(FailureReason)
-    if (LabelAttributeName != null) __obj.updateDynamic("LabelAttributeName")(LabelAttributeName)
-    if (LabelCategoryConfigS3Uri != null) __obj.updateDynamic("LabelCategoryConfigS3Uri")(LabelCategoryConfigS3Uri)
-    if (LabelingJobAlgorithmsConfig != null) __obj.updateDynamic("LabelingJobAlgorithmsConfig")(LabelingJobAlgorithmsConfig)
-    if (LabelingJobOutput != null) __obj.updateDynamic("LabelingJobOutput")(LabelingJobOutput)
-    if (StoppingConditions != null) __obj.updateDynamic("StoppingConditions")(StoppingConditions)
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
+    val __obj = js.Dynamic.literal(CreationTime = CreationTime.asInstanceOf[js.Any], HumanTaskConfig = HumanTaskConfig.asInstanceOf[js.Any], InputConfig = InputConfig.asInstanceOf[js.Any], JobReferenceCode = JobReferenceCode.asInstanceOf[js.Any], LabelCounters = LabelCounters.asInstanceOf[js.Any], LabelingJobArn = LabelingJobArn.asInstanceOf[js.Any], LabelingJobName = LabelingJobName.asInstanceOf[js.Any], LabelingJobStatus = LabelingJobStatus.asInstanceOf[js.Any], LastModifiedTime = LastModifiedTime.asInstanceOf[js.Any], OutputConfig = OutputConfig.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any])
+    if (FailureReason != null) __obj.updateDynamic("FailureReason")(FailureReason.asInstanceOf[js.Any])
+    if (LabelAttributeName != null) __obj.updateDynamic("LabelAttributeName")(LabelAttributeName.asInstanceOf[js.Any])
+    if (LabelCategoryConfigS3Uri != null) __obj.updateDynamic("LabelCategoryConfigS3Uri")(LabelCategoryConfigS3Uri.asInstanceOf[js.Any])
+    if (LabelingJobAlgorithmsConfig != null) __obj.updateDynamic("LabelingJobAlgorithmsConfig")(LabelingJobAlgorithmsConfig.asInstanceOf[js.Any])
+    if (LabelingJobOutput != null) __obj.updateDynamic("LabelingJobOutput")(LabelingJobOutput.asInstanceOf[js.Any])
+    if (StoppingConditions != null) __obj.updateDynamic("StoppingConditions")(StoppingConditions.asInstanceOf[js.Any])
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeLabelingJobResponse]
   }
 }

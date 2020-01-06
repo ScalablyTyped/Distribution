@@ -10,9 +10,9 @@ Basic logging mechanism for Node 6.10+ Lambda Functions
 | ------------------ | :-------------: |
 | Full name          | lambda-log |
 | Keywords           | lambda, aws, log, logger, console, wrap, wrapper, node6.10, error, warn, info, message, assert, json, cloudwatch, logs |
-| # releases         | 11 |
-| # dependents       | 5 |
-| # downloads        | 68435 |
+| # releases         | 9 |
+| # dependents       | 7 |
+| # downloads        | 191964 |
 | # stars            | 1 |
 
 ## Links

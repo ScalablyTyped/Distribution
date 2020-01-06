@@ -5,13 +5,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/Badge/Badge.BadgeClassKey>> */
+@js.native
 trait PartialClassNameMapBadgeClassKey extends js.Object {
-  var badge: js.UndefOr[String] = js.undefined
-  var colorPrimary: js.UndefOr[String] = js.undefined
-  var colorSecondary: js.UndefOr[String] = js.undefined
-  var dot: js.UndefOr[String] = js.undefined
-  var invisible: js.UndefOr[String] = js.undefined
-  var root: js.UndefOr[String] = js.undefined
+  var badge: js.UndefOr[String] = js.native
+  var colorPrimary: js.UndefOr[String] = js.native
+  var colorSecondary: js.UndefOr[String] = js.native
+  var dot: js.UndefOr[String] = js.native
+  var invisible: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.native
 }
 
 object PartialClassNameMapBadgeClassKey {

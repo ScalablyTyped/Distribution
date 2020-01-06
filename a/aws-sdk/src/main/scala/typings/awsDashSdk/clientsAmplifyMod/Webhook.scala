@@ -4,35 +4,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Webhook extends js.Object {
   /**
     *  Name for a branch, part of an Amplify App. 
     */
-  var branchName: BranchName
+  var branchName: BranchName = js.native
   /**
     *  Create date / time for a webhook. 
     */
-  var createTime: CreateTime
+  var createTime: CreateTime = js.native
   /**
     *  Description for a webhook. 
     */
-  var description: Description
+  var description: Description = js.native
   /**
     *  Update date / time for a webhook. 
     */
-  var updateTime: UpdateTime
+  var updateTime: UpdateTime = js.native
   /**
     *  ARN for the webhook. 
     */
-  var webhookArn: WebhookArn
+  var webhookArn: WebhookArn = js.native
   /**
     *  Id of the webhook. 
     */
-  var webhookId: WebhookId
+  var webhookId: WebhookId = js.native
   /**
     *  Url of the webhook. 
     */
-  var webhookUrl: WebhookUrl
+  var webhookUrl: WebhookUrl = js.native
 }
 
 object Webhook {
@@ -46,7 +47,7 @@ object Webhook {
     webhookId: WebhookId,
     webhookUrl: WebhookUrl
   ): Webhook = {
-    val __obj = js.Dynamic.literal(branchName = branchName, createTime = createTime, description = description, updateTime = updateTime, webhookArn = webhookArn, webhookId = webhookId, webhookUrl = webhookUrl)
+    val __obj = js.Dynamic.literal(branchName = branchName.asInstanceOf[js.Any], createTime = createTime.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], updateTime = updateTime.asInstanceOf[js.Any], webhookArn = webhookArn.asInstanceOf[js.Any], webhookId = webhookId.asInstanceOf[js.Any], webhookUrl = webhookUrl.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Webhook]
   }

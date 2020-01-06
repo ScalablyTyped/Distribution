@@ -10,9 +10,9 @@ Utilities for working with GraphQL ASTs
 | ------------------ | :-------------: |
 | Full name          | apollo-utilities |
 | Keywords           | - |
-| # releases         | 97 |
-| # dependents       | 129 |
-| # downloads        | 33998899 |
+| # releases         | 83 |
+| # dependents       | 195 |
+| # downloads        | 69151589 |
 | # stars            | 0 |
 
 ## Links

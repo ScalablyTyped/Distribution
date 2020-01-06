@@ -11,7 +11,7 @@ Option parser with generated usage and commands
 | Keywords           | arguments, option parser, command line, options, parser |
 | # releases         | 2 |
 | # dependents       | 546 |
-| # downloads        | 80624085 |
+| # downloads        | 63742406 |
 | # stars            | 32 |
 
 ## Links

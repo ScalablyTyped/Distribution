@@ -10,9 +10,9 @@ A thin wrapper that provides promisified methods for the `jsonwebtoken` module.
 | ------------------ | :-------------: |
 | Full name          | jsonwebtoken-promisified |
 | Keywords           | jsonwebtoken, jwt, promises, bluebird |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 2817 |
+| # downloads        | 3714 |
 | # stars            | 1 |
 
 ## Links

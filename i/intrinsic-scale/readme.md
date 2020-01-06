@@ -9,16 +9,16 @@ Replicate background-size: cover/contain (scale+crop) for canvas/CSS/Node/… on
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | intrinsic-scale |
-| Keywords           | browser, intrinsic, scale, crop, background-size, object-fit, cover, contain, media, canvas, image, video, webcam, css |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 8700 |
+| Keywords           | background-size, browser, canvas, contain, cover, crop, css, image, intrinsic, media, object-fit, scale, video, webcam |
+| # releases         | 2 |
+| # dependents       | 2 |
+| # downloads        | 16897 |
 | # stars            | 2 |
 
 ## Links
-- [Homepage](https://github.com/bfred-it/intrinsic-scale#readme)
-- [Bugs](https://github.com/bfred-it/intrinsic-scale/issues)
-- [Repository](https://github.com/bfred-it/intrinsic-scale)
+- [Homepage](https://github.com/fregante/intrinsic-scale#readme)
+- [Bugs](https://github.com/fregante/intrinsic-scale/issues)
+- [Repository](https://github.com/fregante/intrinsic-scale)
 - [Npm](https://www.npmjs.com/package/intrinsic-scale)
     
 

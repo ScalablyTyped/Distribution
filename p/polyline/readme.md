@@ -10,9 +10,9 @@ Polyline encoding and decoding
 | ------------------ | :-------------: |
 | Full name          | polyline |
 | Keywords           | - |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 31 |
-| # downloads        | 316595 |
+| # downloads        | 424589 |
 | # stars            | 5 |
 
 ## Links

@@ -10,9 +10,9 @@ An unopinionated OpenAPI framework for express
 | ------------------ | :-------------: |
 | Full name          | express-openapi |
 | Keywords           | openapi, swagger, express |
-| # releases         | 72 |
-| # dependents       | 2 |
-| # downloads        | 308239 |
+| # releases         | 76 |
+| # dependents       | 8 |
+| # downloads        | 445245 |
 | # stars            | 5 |
 
 ## Links

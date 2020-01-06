@@ -4,15 +4,15 @@
 Typings are for version 1.3
 
 ## Library description:
-JavaScript Client Library for the Ghost [Content API](http://localhost:8003/api/content/)
+JavaScript Client Library for the Ghost [Content API](https://ghost.org/docs/api/content/)
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @tryghost/content-api |
 | Keywords           | - |
-| # releases         | 23 |
-| # dependents       | 4 |
-| # downloads        | 77119 |
+| # releases         | 33 |
+| # dependents       | 7 |
+| # downloads        | 122775 |
 | # stars            | 0 |
 
 ## Links

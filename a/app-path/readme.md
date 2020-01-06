@@ -11,8 +11,8 @@ Get the path to an app (macOS)
 | Full name          | app-path |
 | Keywords           | macos, applescript, app, application, path, directory, bundle, location |
 | # releases         | 4 |
-| # dependents       | 8 |
-| # downloads        | 531758 |
+| # dependents       | 12 |
+| # downloads        | 1166722 |
 | # stars            | 0 |
 
 ## Links

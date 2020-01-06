@@ -10,9 +10,9 @@ Enhance Reselect selectors with deeper memoization and cache management
 | ------------------ | :-------------: |
 | Full name          | re-reselect |
 | Keywords           | react, redux, reselect, memoize, cache |
-| # releases         | 14 |
-| # dependents       | 21 |
-| # downloads        | 776396 |
+| # releases         | 10 |
+| # dependents       | 26 |
+| # downloads        | 1474732 |
 | # stars            | 0 |
 
 ## Links

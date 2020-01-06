@@ -6,27 +6,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CatalogDatabaseArgs extends js.Object {
   /**
     * ID of the Glue Catalog to create the database in. If omitted, this defaults to the AWS Account ID.
     */
-  val catalogId: js.UndefOr[Input[String]] = js.undefined
+  val catalogId: js.UndefOr[Input[String]] = js.native
   /**
     * Description of the database.
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * The location of the database (for example, an HDFS path).
     */
-  val locationUri: js.UndefOr[Input[String]] = js.undefined
+  val locationUri: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the database.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * A list of key-value pairs that define parameters and properties of the database.
     */
-  val parameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
+  val parameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object CatalogDatabaseArgs {

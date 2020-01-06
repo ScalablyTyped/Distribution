@@ -10,9 +10,9 @@ Find semver versions in a string: `unicorn v1.2.3` → `1.2.3`
 | ------------------ | :-------------: |
 | Full name          | find-versions |
 | Keywords           | semver, version, versions, regex, regexp, match, matching, semantic, find, extract, get |
-| # releases         | 1 |
-| # dependents       | 25 |
-| # downloads        | 29987752 |
+| # releases         | 4 |
+| # dependents       | 33 |
+| # downloads        | 43008556 |
 | # stars            | 5 |
 
 ## Links

@@ -62,12 +62,9 @@ object Pnp extends js.Object {
       */
     def getMany(startIndex: Double): Anon_ItemsReturnValueNumberPnpObject = js.native
     def indexOf(value: PnpObject, extra: js.Any*): Anon_Index = js.native
-    /**
-      * Retrieves the index of the specified item.
-      * @param value The value to find in the collection.
-      */
+    /* hack */
     @JSName("indexOf")
-    def indexOf_Anon_Index(value: PnpObject): Anon_Index = js.native
+    def indexOf_Double(searchElement: PnpObject): Double = js.native
   }
   
   @js.native

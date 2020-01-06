@@ -6,23 +6,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AliasState extends js.Object {
   /**
     * Alias ARN.
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * Description of the alias.
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * Name of the alias.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * Specifies the fleet and/or routing type to use for the alias.
     */
-  val routingStrategy: js.UndefOr[Input[AliasRoutingStrategy]] = js.undefined
+  val routingStrategy: js.UndefOr[Input[AliasRoutingStrategy]] = js.native
 }
 
 object AliasState {

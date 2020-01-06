@@ -10,9 +10,9 @@ Create C "array" instances on top of Buffers
 | ------------------ | :-------------: |
 | Full name          | ref-array-di |
 | Keywords           | array, ref |
-| # releases         | 4 |
-| # dependents       | 2 |
-| # downloads        | 3000 |
+| # releases         | 2 |
+| # dependents       | 5 |
+| # downloads        | 13857 |
 | # stars            | 0 |
 
 ## Links

@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BrokerConfiguration extends js.Object {
   /**
     * The Configuration ID.
     */
-  var id: js.UndefOr[Input[String]] = js.undefined
+  var id: js.UndefOr[Input[String]] = js.native
   /**
     * Revision of the Configuration.
     */
-  var revision: js.UndefOr[Input[Double]] = js.undefined
+  var revision: js.UndefOr[Input[Double]] = js.native
 }
 
 object BrokerConfiguration {

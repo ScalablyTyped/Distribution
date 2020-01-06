@@ -11,8 +11,8 @@ The lodash method `_.unionBy` exported as a module.
 | Full name          | lodash.unionby |
 | Keywords           | lodash-modularized, unionby |
 | # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 169607 |
+| # dependents       | 18 |
+| # downloads        | 523304 |
 | # stars            | 0 |
 
 ## Links

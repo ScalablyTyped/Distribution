@@ -11,8 +11,8 @@ A nice wrapper around [TJ Holowaychuck's](https://github.com/visionmedia) [node-
 | Full name          | progressbar |
 | Keywords           | progress, progressbar, bar, progress-bar, ticks, tick, status |
 | # releases         | 2 |
-| # dependents       | 7 |
-| # downloads        | 25286 |
+| # dependents       | 10 |
+| # downloads        | 21587 |
 | # stars            | 2 |
 
 ## Links

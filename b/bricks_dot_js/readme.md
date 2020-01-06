@@ -11,8 +11,8 @@ A blazing fast masonry layout generator for fixed width elements.
 | Full name          | bricks.js |
 | Keywords           | grid, masonry, layout, packing |
 | # releases         | 1 |
-| # dependents       | 15 |
-| # downloads        | 393896 |
+| # dependents       | 17 |
+| # downloads        | 508891 |
 | # stars            | 2 |
 
 ## Links

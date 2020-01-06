@@ -10,9 +10,9 @@ oniguruma regular expression library
 | ------------------ | :-------------: |
 | Full name          | oniguruma |
 | Keywords           | regex, regexp, re, regular expression, async |
-| # releases         | 9 |
-| # dependents       | 22 |
-| # downloads        | 453584 |
+| # releases         | 6 |
+| # dependents       | 24 |
+| # downloads        | 652513 |
 | # stars            | 2 |
 
 ## Links

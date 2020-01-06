@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EgressOnlyInternetGateway extends js.Object {
   /**
     * Information about the attachment of the egress-only internet gateway.
     */
-  var Attachments: js.UndefOr[InternetGatewayAttachmentList] = js.undefined
+  var Attachments: js.UndefOr[InternetGatewayAttachmentList] = js.native
   /**
     * The ID of the egress-only internet gateway.
     */
-  var EgressOnlyInternetGatewayId: js.UndefOr[typings.awsDashSdk.clientsEc2Mod.EgressOnlyInternetGatewayId] = js.undefined
+  var EgressOnlyInternetGatewayId: js.UndefOr[typings.awsDashSdk.clientsEc2Mod.EgressOnlyInternetGatewayId] = js.native
 }
 
 object EgressOnlyInternetGateway {
@@ -22,8 +23,8 @@ object EgressOnlyInternetGateway {
     EgressOnlyInternetGatewayId: EgressOnlyInternetGatewayId = null
   ): EgressOnlyInternetGateway = {
     val __obj = js.Dynamic.literal()
-    if (Attachments != null) __obj.updateDynamic("Attachments")(Attachments)
-    if (EgressOnlyInternetGatewayId != null) __obj.updateDynamic("EgressOnlyInternetGatewayId")(EgressOnlyInternetGatewayId)
+    if (Attachments != null) __obj.updateDynamic("Attachments")(Attachments.asInstanceOf[js.Any])
+    if (EgressOnlyInternetGatewayId != null) __obj.updateDynamic("EgressOnlyInternetGatewayId")(EgressOnlyInternetGatewayId.asInstanceOf[js.Any])
     __obj.asInstanceOf[EgressOnlyInternetGateway]
   }
 }

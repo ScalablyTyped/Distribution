@@ -4,37 +4,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DeviceDescription extends js.Object {
   /**
     * The ARN of the device.
     */
-  var Arn: js.UndefOr[__string] = js.undefined
+  var Arn: js.UndefOr[__string] = js.native
   /**
     * An array of zero or more elements of DeviceAttribute objects providing
     user specified device attributes.
     */
-  var Attributes: js.UndefOr[DeviceAttributes] = js.undefined
+  var Attributes: js.UndefOr[DeviceAttributes] = js.native
   /**
     * The unique identifier of the device.
     */
-  var DeviceId: js.UndefOr[__string] = js.undefined
+  var DeviceId: js.UndefOr[__string] = js.native
   /**
     * A Boolean value indicating whether or not the device is enabled.
     */
-  var Enabled: js.UndefOr[__boolean] = js.undefined
+  var Enabled: js.UndefOr[__boolean] = js.native
   /**
     * A value between 0 and 1 inclusive, representing the fraction of life remaining for the
     device.
     */
-  var RemainingLife: js.UndefOr[__doubleMin0Max100] = js.undefined
+  var RemainingLife: js.UndefOr[__doubleMin0Max100] = js.native
   /**
     * The tags currently associated with the AWS IoT 1-Click device.
     */
-  var Tags: js.UndefOr[__mapOf__string] = js.undefined
+  var Tags: js.UndefOr[__mapOf__string] = js.native
   /**
     * The type of the device, such as "button".
     */
-  var Type: js.UndefOr[__string] = js.undefined
+  var Type: js.UndefOr[__string] = js.native
 }
 
 object DeviceDescription {
@@ -49,13 +50,13 @@ object DeviceDescription {
     Type: __string = null
   ): DeviceDescription = {
     val __obj = js.Dynamic.literal()
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn)
-    if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes)
-    if (DeviceId != null) __obj.updateDynamic("DeviceId")(DeviceId)
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled)
+    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
+    if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes.asInstanceOf[js.Any])
+    if (DeviceId != null) __obj.updateDynamic("DeviceId")(DeviceId.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.asInstanceOf[js.Any])
     if (RemainingLife != null) __obj.updateDynamic("RemainingLife")(RemainingLife.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
-    if (Type != null) __obj.updateDynamic("Type")(Type)
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
+    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceDescription]
   }
 }

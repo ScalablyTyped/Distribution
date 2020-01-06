@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DataSourceDynamodbConfig extends js.Object {
   /**
     * AWS region of Elasticsearch domain. Defaults to current region.
     */
-  var region: js.UndefOr[Input[String]] = js.undefined
+  var region: js.UndefOr[Input[String]] = js.native
   /**
     * Name of the DynamoDB table.
     */
-  var tableName: Input[String]
+  var tableName: Input[String] = js.native
   /**
     * Set to `true` to use Amazon Cognito credentials with this data source.
     */
-  var useCallerCredentials: js.UndefOr[Input[Boolean]] = js.undefined
+  var useCallerCredentials: js.UndefOr[Input[Boolean]] = js.native
 }
 
 object DataSourceDynamodbConfig {

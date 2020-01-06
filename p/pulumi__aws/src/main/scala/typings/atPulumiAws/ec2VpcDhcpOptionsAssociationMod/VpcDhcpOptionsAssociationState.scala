@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VpcDhcpOptionsAssociationState extends js.Object {
   /**
     * The ID of the DHCP Options Set to associate to the VPC.
     */
-  val dhcpOptionsId: js.UndefOr[Input[String]] = js.undefined
+  val dhcpOptionsId: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of the VPC to which we would like to associate a DHCP Options Set.
     */
-  val vpcId: js.UndefOr[Input[String]] = js.undefined
+  val vpcId: js.UndefOr[Input[String]] = js.native
 }
 
 object VpcDhcpOptionsAssociationState {

@@ -5,13 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EndpointMongodbSettings extends js.Object {
-  var authMechanism: js.UndefOr[Input[String]] = js.undefined
-  var authSource: js.UndefOr[Input[String]] = js.undefined
-  var authType: js.UndefOr[Input[String]] = js.undefined
-  var docsToInvestigate: js.UndefOr[Input[String]] = js.undefined
-  var extractDocId: js.UndefOr[Input[String]] = js.undefined
-  var nestingLevel: js.UndefOr[Input[String]] = js.undefined
+  var authMechanism: js.UndefOr[Input[String]] = js.native
+  var authSource: js.UndefOr[Input[String]] = js.native
+  var authType: js.UndefOr[Input[String]] = js.native
+  var docsToInvestigate: js.UndefOr[Input[String]] = js.native
+  var extractDocId: js.UndefOr[Input[String]] = js.native
+  var nestingLevel: js.UndefOr[Input[String]] = js.native
 }
 
 object EndpointMongodbSettings {

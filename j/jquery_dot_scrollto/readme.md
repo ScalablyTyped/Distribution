@@ -12,7 +12,7 @@ Lightweight, cross-browser and highly customizable animated scrolling with jQuer
 | Keywords           | browser, animated, animation, scrolling, scroll, links, anchors, jquery, jquery-plugin, ecosystem:jquery |
 | # releases         | 0 |
 | # dependents       | 18 |
-| # downloads        | 1546738 |
+| # downloads        | 1660464 |
 | # stars            | 3 |
 
 ## Links

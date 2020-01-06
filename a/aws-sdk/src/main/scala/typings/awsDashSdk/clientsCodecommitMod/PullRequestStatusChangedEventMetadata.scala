@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PullRequestStatusChangedEventMetadata extends js.Object {
   /**
     * The changed status of the pull request.
     */
-  var pullRequestStatus: js.UndefOr[PullRequestStatusEnum] = js.undefined
+  var pullRequestStatus: js.UndefOr[PullRequestStatusEnum] = js.native
 }
 
 object PullRequestStatusChangedEventMetadata {

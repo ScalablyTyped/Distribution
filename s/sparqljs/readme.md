@@ -10,9 +10,9 @@ A parser for the SPARQL query language
 | ------------------ | :-------------: |
 | Full name          | sparqljs |
 | Keywords           | sparql, rdf, query, parser |
-| # releases         | 16 |
-| # dependents       | 19 |
-| # downloads        | 17541 |
+| # releases         | 13 |
+| # dependents       | 24 |
+| # downloads        | 32799 |
 | # stars            | 5 |
 
 ## Links

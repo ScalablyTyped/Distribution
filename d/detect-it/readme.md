@@ -10,9 +10,9 @@ Detect if a device is mouse only, touch only, or hybrid
 | ------------------ | :-------------: |
 | Full name          | detect-it |
 | Keywords           | detect, device, mouse, touch, hybrid, passive events |
-| # releases         | 7 |
-| # dependents       | 28 |
-| # downloads        | 459930 |
+| # releases         | 2 |
+| # dependents       | 32 |
+| # downloads        | 754878 |
 | # stars            | 1 |
 
 ## Links

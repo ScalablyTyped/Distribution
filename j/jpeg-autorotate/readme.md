@@ -11,8 +11,8 @@ Rotates JPEG images based on EXIF orientation
 | Full name          | jpeg-autorotate |
 | Keywords           | jpeg, rotate, autorotate, orientation, exif, thumbnail, cli |
 | # releases         | 6 |
-| # dependents       | 1 |
-| # downloads        | 58178 |
+| # dependents       | 3 |
+| # downloads        | 128382 |
 | # stars            | 1 |
 
 ## Links

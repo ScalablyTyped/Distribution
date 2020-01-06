@@ -6,20 +6,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/FilledInput.FilledInputClassKey>> */
+@js.native
 trait PartialStyleRulesFilledInputClassKey extends js.Object {
-  var adornedEnd: js.UndefOr[CSSProperties] = js.undefined
-  var adornedStart: js.UndefOr[CSSProperties] = js.undefined
-  var disabled: js.UndefOr[CSSProperties] = js.undefined
-  var error: js.UndefOr[CSSProperties] = js.undefined
-  var focused: js.UndefOr[CSSProperties] = js.undefined
-  var input: js.UndefOr[CSSProperties] = js.undefined
-  var inputAdornedEnd: js.UndefOr[CSSProperties] = js.undefined
-  var inputAdornedStart: js.UndefOr[CSSProperties] = js.undefined
-  var inputMarginDense: js.UndefOr[CSSProperties] = js.undefined
-  var inputMultiline: js.UndefOr[CSSProperties] = js.undefined
-  var multiline: js.UndefOr[CSSProperties] = js.undefined
-  var root: js.UndefOr[CSSProperties] = js.undefined
-  var underline: js.UndefOr[CSSProperties] = js.undefined
+  var adornedEnd: js.UndefOr[CSSProperties] = js.native
+  var adornedStart: js.UndefOr[CSSProperties] = js.native
+  var disabled: js.UndefOr[CSSProperties] = js.native
+  var error: js.UndefOr[CSSProperties] = js.native
+  var focused: js.UndefOr[CSSProperties] = js.native
+  var input: js.UndefOr[CSSProperties] = js.native
+  var inputAdornedEnd: js.UndefOr[CSSProperties] = js.native
+  var inputAdornedStart: js.UndefOr[CSSProperties] = js.native
+  var inputMarginDense: js.UndefOr[CSSProperties] = js.native
+  var inputMultiline: js.UndefOr[CSSProperties] = js.native
+  var multiline: js.UndefOr[CSSProperties] = js.native
+  var root: js.UndefOr[CSSProperties] = js.native
+  var underline: js.UndefOr[CSSProperties] = js.native
 }
 
 object PartialStyleRulesFilledInputClassKey {

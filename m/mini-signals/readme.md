@@ -11,8 +11,8 @@ signals, in JavaScript, fast
 | Full name          | mini-signals |
 | Keywords           | events, signals, fast |
 | # releases         | 0 |
-| # dependents       | 11 |
-| # downloads        | 802135 |
+| # dependents       | 10 |
+| # downloads        | 889845 |
 | # stars            | 1 |
 
 ## Links

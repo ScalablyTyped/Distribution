@@ -14,15 +14,11 @@ import scala.scalajs.js.annotation._
 trait TypeofClassPageableCollection
   extends Instantiable0[PageableCollection[Model]]
      with Instantiable1[
-      /* models */ js.Array[
-        /* import warning: RewrittenClass.unapply cls $anonfun was tparam TModel */ js.Any
-      ], 
+      /* models */ js.Array[/* import warning: RewrittenClass.unapply cls was tparam TModel */ js.Any], 
       PageableCollection[Model]
     ]
      with Instantiable2[
-      /* models */ js.Array[
-        /* import warning: RewrittenClass.unapply cls $anonfun was tparam TModel */ js.Any
-      ], 
+      /* models */ js.Array[/* import warning: RewrittenClass.unapply cls was tparam TModel */ js.Any], 
       /* options */ PageableInitialOptions, 
       PageableCollection[Model]
     ] {

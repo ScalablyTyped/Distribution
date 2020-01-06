@@ -12,7 +12,7 @@ A jQuery plugin for selecting a country
 | Keywords           | country, international, jQuery |
 | # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 17234 |
+| # downloads        | 13526 |
 | # stars            | 1 |
 
 ## Links

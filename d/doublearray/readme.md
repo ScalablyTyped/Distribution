@@ -10,8 +10,8 @@ JavaScript implementation of Double-Array trie
 | Full name          | doublearray |
 | Keywords           | trie |
 | # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 189518 |
+| # dependents       | 5 |
+| # downloads        | 230779 |
 | # stars            | 0 |
 
 ## Links

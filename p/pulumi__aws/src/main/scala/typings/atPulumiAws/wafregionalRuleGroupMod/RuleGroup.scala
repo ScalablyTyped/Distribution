@@ -1,5 +1,6 @@
 package typings.atPulumiAws.wafregionalRuleGroupMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.atPulumiAws.typesOutputMod.wafregional.RuleGroupActivatedRule
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
@@ -27,6 +28,10 @@ class RuleGroup protected () extends CustomResource {
     */
   val activatedRules: Output[js.UndefOr[js.Array[RuleGroupActivatedRule]]] = js.native
   /**
+    * The ARN of the WAF Regional Rule Group.
+    */
+  val arn: Output[String] = js.native
+  /**
     * A friendly name for the metrics from the rule group
     */
   val metricName: Output[String] = js.native
@@ -34,6 +39,10 @@ class RuleGroup protected () extends CustomResource {
     * A friendly name of the rule group
     */
   val name: Output[String] = js.native
+  /**
+    * Key-value mapping of resource tags
+    */
+  val tags: Output[js.UndefOr[StringDictionary[_]]] = js.native
 }
 
 /* static members */

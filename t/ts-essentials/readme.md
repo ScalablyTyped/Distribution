@@ -4,15 +4,15 @@
 Typings are for version 1.0.4
 
 ## Library description:
-All essential Typescript types in one place
+All essential TypeScript types in one place
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | ts-essentials |
-| Keywords           | typescript, types, essentials |
-| # releases         | 17 |
-| # dependents       | 17 |
-| # downloads        | 354908 |
+| Keywords           | typescript, types, essentials, utils, toolbox, toolbelt, lodash, underscore |
+| # releases         | 33 |
+| # dependents       | 35 |
+| # downloads        | 4602954 |
 | # stars            | 0 |
 
 ## Links

@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object libColorMod extends js.Object {
   val COLORS: Colors = js.native
-  /* import warning: parser.TsParser#tsDeclVar $anonfun Dropped List(weak, input, success, failure, ancillary, title) */ val strong: ColorFunction = js.native
+  /* import warning: parser.TsParser#tsDeclVar Dropped IArray(weak, input, success, failure, ancillary, title) */ val strong: ColorFunction = js.native
 }
 

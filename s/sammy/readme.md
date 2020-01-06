@@ -10,8 +10,8 @@ Sammy is a RESTful Evented JavaScript framework built on top of jQuery
 | Full name          | sammy |
 | Keywords           | framework, jquery, sammy |
 | # releases         | 1 |
-| # dependents       | 3 |
-| # downloads        | 46847 |
+| # dependents       | 2 |
+| # downloads        | 105722 |
 | # stars            | 2 |
 
 ## Links

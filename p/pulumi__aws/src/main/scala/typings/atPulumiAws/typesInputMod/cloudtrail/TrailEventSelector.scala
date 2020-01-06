@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TrailEventSelector extends js.Object {
   /**
     * Specifies logging data events. Fields documented below.
     */
-  var dataResources: js.UndefOr[Input[js.Array[Input[TrailEventSelectorDataResource]]]] = js.undefined
+  var dataResources: js.UndefOr[Input[js.Array[Input[TrailEventSelectorDataResource]]]] = js.native
   /**
     * Specify if you want your event selector to include management events for your trail.
     */
-  var includeManagementEvents: js.UndefOr[Input[Boolean]] = js.undefined
+  var includeManagementEvents: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Specify if you want your trail to log read-only events, write-only events, or all. By default, the value is All. You can specify only the following value: "ReadOnly", "WriteOnly", "All". Defaults to `All`.
     */
-  var readWriteType: js.UndefOr[Input[String]] = js.undefined
+  var readWriteType: js.UndefOr[Input[String]] = js.native
 }
 
 object TrailEventSelector {

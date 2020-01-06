@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AnalyticsApplicationInputsSchemaRecordFormatMappingParametersCsv extends js.Object {
-  var recordColumnDelimiter: Input[String]
-  var recordRowDelimiter: Input[String]
+  var recordColumnDelimiter: Input[String] = js.native
+  var recordRowDelimiter: Input[String] = js.native
 }
 
 object AnalyticsApplicationInputsSchemaRecordFormatMappingParametersCsv {

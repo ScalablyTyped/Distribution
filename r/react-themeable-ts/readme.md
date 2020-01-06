@@ -12,7 +12,7 @@ Handle classname and style props in React
 | Keywords           | typescript, react, style, classname |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 1027 |
+| # downloads        | 983 |
 | # stars            | 0 |
 
 ## Links

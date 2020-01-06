@@ -10,9 +10,9 @@ The lodash method `_.sample` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.sample |
 | Keywords           | lodash-modularized, sample |
-| # releases         | 1 |
-| # dependents       | 55 |
-| # downloads        | 7367517 |
+| # releases         | 0 |
+| # dependents       | 71 |
+| # downloads        | 7534556 |
 | # stars            | 1 |
 
 ## Links

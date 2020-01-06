@@ -10,9 +10,9 @@ Transfer static files
 | ------------------ | :-------------: |
 | Full name          | koa-send |
 | Keywords           | koa, file, static, sendfile |
-| # releases         | 8 |
-| # dependents       | 296 |
-| # downloads        | 5015002 |
+| # releases         | 5 |
+| # dependents       | 340 |
+| # downloads        | 7475938 |
 | # stars            | 13 |
 
 ## Links

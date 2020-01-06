@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MonetaryAmount extends js.Object {
   /**
     * The numerical amount of an offering or transaction.
     */
-  var amount: js.UndefOr[Double] = js.undefined
+  var amount: js.UndefOr[Double] = js.native
   /**
-    * The currency code of a monetary amount. For example, USD means "U.S. dollars."
+    * The currency code of a monetary amount. For example, USD means U.S. dollars.
     */
-  var currencyCode: js.UndefOr[CurrencyCode] = js.undefined
+  var currencyCode: js.UndefOr[CurrencyCode] = js.native
 }
 
 object MonetaryAmount {

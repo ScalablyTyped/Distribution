@@ -10,9 +10,9 @@ A collection of pre-built module patches that enable existing npm modules to pub
 | ------------------ | :-------------: |
 | Full name          | diagnostic-channel-publishers |
 | Keywords           | - |
-| # releases         | 11 |
-| # dependents       | 2 |
-| # downloads        | 1486528 |
+| # releases         | 8 |
+| # dependents       | 4 |
+| # downloads        | 3467646 |
 | # stars            | 0 |
 
 ## Links

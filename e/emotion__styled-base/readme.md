@@ -10,9 +10,9 @@ base styled API for emotion
 | ------------------ | :-------------: |
 | Full name          | @emotion/styled-base |
 | Keywords           | - |
-| # releases         | 54 |
-| # dependents       | 7 |
-| # downloads        | 13423949 |
+| # releases         | 67 |
+| # dependents       | 22 |
+| # downloads        | 41277704 |
 | # stars            | 0 |
 
 ## Links

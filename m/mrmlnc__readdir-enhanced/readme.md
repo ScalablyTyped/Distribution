@@ -11,8 +11,8 @@ fs.readdir with sync, async, and streaming APIs + filtering, recursion, absolute
 | Full name          | @mrmlnc/readdir-enhanced |
 | Keywords           | fs, readdir, stream, event, recursive, deep, filter, absolute |
 | # releases         | 4 |
-| # dependents       | 2 |
-| # downloads        | 133914851 |
+| # dependents       | 1 |
+| # downloads        | 160523916 |
 | # stars            | 0 |
 
 ## Links

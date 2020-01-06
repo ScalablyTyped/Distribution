@@ -10,9 +10,9 @@ Regular expression for matching semver versions
 | ------------------ | :-------------: |
 | Full name          | semver-regex |
 | Keywords           | semver, version, versions, regex, regexp, match, matching, semantic |
-| # releases         | 3 |
-| # dependents       | 78 |
-| # downloads        | 36318318 |
+| # releases         | 4 |
+| # dependents       | 86 |
+| # downloads        | 53600865 |
 | # stars            | 2 |
 
 ## Links

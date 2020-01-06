@@ -85,7 +85,7 @@ object formikMod extends js.Object {
     def this(props: FormikConfig[Values]) = this()
   }
   
-  /* import warning: parser.TsParser#tsDeclVar $anonfun Dropped List(FormikConsumer) */ val FormikProvider: ProviderExoticComponent[ProviderProps[FormikContext[js.Any]]] = js.native
+  /* import warning: parser.TsParser#tsDeclVar Dropped IArray(FormikConsumer) */ val FormikProvider: ProviderExoticComponent[ProviderProps[FormikContext[js.Any]]] = js.native
   def connect[OuterProps, Values](Comp: ComponentType[OuterProps with Anon_FormikFormikContext[Values]]): ComponentType[OuterProps] = js.native
   def getActiveElement(): Element | Null = js.native
   def getActiveElement(doc: Document): Element | Null = js.native

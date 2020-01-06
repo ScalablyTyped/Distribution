@@ -23,7 +23,7 @@ trait PriorityQueueOptions[T] extends js.Object {
   var strategy: js.UndefOr[
     Instantiable1[
       js.UndefOr[
-        /* options */ PriorityQueueOptions[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any]
+        /* options */ PriorityQueueOptions[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any]
       ], 
       AbstractPriorityQueue[js.Object]
     ]
@@ -37,7 +37,7 @@ object PriorityQueueOptions {
     initialValues: js.Array[T] = null,
     strategy: Instantiable1[
       js.UndefOr[
-        /* options */ PriorityQueueOptions[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any]
+        /* options */ PriorityQueueOptions[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any]
       ], 
       AbstractPriorityQueue[js.Object]
     ] = null

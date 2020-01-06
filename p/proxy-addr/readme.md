@@ -10,9 +10,9 @@ Determine address of proxied request
 | ------------------ | :-------------: |
 | Full name          | proxy-addr |
 | Keywords           | ip, proxy, x-forwarded-for |
-| # releases         | 6 |
-| # dependents       | 176 |
-| # downloads        | 300015363 |
+| # releases         | 4 |
+| # dependents       | 192 |
+| # downloads        | 417692702 |
 | # stars            | 13 |
 
 ## Links

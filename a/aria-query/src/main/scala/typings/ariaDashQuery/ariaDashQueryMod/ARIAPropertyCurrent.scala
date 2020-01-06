@@ -1,6 +1,6 @@
 package typings.ariaDashQuery.ariaDashQueryMod
 
-import typings.ariaDashQuery.ariaDashQueryStrings.`false`
+import typings.ariaDashQuery.ariaDashQueryBooleans.`false`
 import typings.ariaDashQuery.ariaDashQueryStrings.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -25,10 +25,10 @@ object ARIAPropertyCurrent {
   @scala.inline
   def date: typings.ariaDashQuery.ariaDashQueryStrings.date = this.cast("date")
   @scala.inline
-  def `false`: typings.ariaDashQuery.ariaDashQueryBooleans.`false` = this.cast(false)
+  def `false`: typings.ariaDashQuery.ariaDashQueryStrings.`false` = this.cast("false")
   @JSName("false")
   @scala.inline
-  def false_false: `false` = this.cast("false")
+  def false_false: `false` = this.cast(false)
   @scala.inline
   def location: typings.ariaDashQuery.ariaDashQueryStrings.location = this.cast("location")
   @scala.inline

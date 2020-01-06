@@ -10,9 +10,9 @@ dot-object makes it possible to transform and read (JSON) objects using dot nota
 | ------------------ | :-------------: |
 | Full name          | dot-object |
 | Keywords           | json, filter, transform, dot notation, dot |
-| # releases         | 4 |
-| # dependents       | 166 |
-| # downloads        | 1469746 |
+| # releases         | 9 |
+| # dependents       | 214 |
+| # downloads        | 2673464 |
 | # stars            | 13 |
 
 ## Links

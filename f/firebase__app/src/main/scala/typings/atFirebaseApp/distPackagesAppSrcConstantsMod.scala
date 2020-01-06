@@ -1,7 +1,7 @@
 package typings.atFirebaseApp
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.atFirebaseApp.atFirebaseAppStrings.LeftsquarebracketDEFAULTRightsquarebracket
+import typings.atFirebaseApp.atFirebaseAppStrings.`[DEFAULT]`
 import typings.atFirebaseApp.atFirebaseAppStrings.`fire-analytics`
 import typings.atFirebaseApp.atFirebaseAppStrings.`fire-auth`
 import typings.atFirebaseApp.atFirebaseAppStrings.`fire-core`
@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@firebase/app/dist/packages/app/src/constants", JSImport.Namespace)
 @js.native
 object distPackagesAppSrcConstantsMod extends js.Object {
-  val DEFAULT_ENTRY_NAME: LeftsquarebracketDEFAULTRightsquarebracket = js.native
+  val DEFAULT_ENTRY_NAME: `[DEFAULT]` = js.native
   @js.native
   object PLATFORM_LOG_STRING
     extends /* x */ StringDictionary[

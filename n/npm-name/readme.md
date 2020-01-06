@@ -4,15 +4,15 @@
 Typings are for version 5.5.0
 
 ## Library description:
-Check whether a package name is available on npm
+Check whether a package or organization name is available on npm
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | npm-name |
-| Keywords           | name, available, package, npm, pkg, app, check, taken |
-| # releases         | 10 |
-| # dependents       | 102 |
-| # downloads        | 260815 |
+| Keywords           | name, available, package, organization, npm, pkg, app, check, taken |
+| # releases         | 11 |
+| # dependents       | 108 |
+| # downloads        | 934158 |
 | # stars            | 4 |
 
 ## Links

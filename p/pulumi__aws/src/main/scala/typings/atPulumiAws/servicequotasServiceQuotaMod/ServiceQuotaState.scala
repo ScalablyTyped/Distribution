@@ -5,41 +5,42 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ServiceQuotaState extends js.Object {
   /**
     * Whether the service quota can be increased.
     */
-  val adjustable: js.UndefOr[Input[Boolean]] = js.undefined
+  val adjustable: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Amazon Resource Name (ARN) of the service quota.
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * Default value of the service quota.
     */
-  val defaultValue: js.UndefOr[Input[Double]] = js.undefined
+  val defaultValue: js.UndefOr[Input[Double]] = js.native
   /**
     * Code of the service quota to track. For example: `L-F678F1CE`. Available values can be found with the [AWS CLI service-quotas list-service-quotas command](https://docs.aws.amazon.com/cli/latest/reference/service-quotas/list-service-quotas.html).
     */
-  val quotaCode: js.UndefOr[Input[String]] = js.undefined
+  val quotaCode: js.UndefOr[Input[String]] = js.native
   /**
     * Name of the quota.
     */
-  val quotaName: js.UndefOr[Input[String]] = js.undefined
-  val requestId: js.UndefOr[Input[String]] = js.undefined
-  val requestStatus: js.UndefOr[Input[String]] = js.undefined
+  val quotaName: js.UndefOr[Input[String]] = js.native
+  val requestId: js.UndefOr[Input[String]] = js.native
+  val requestStatus: js.UndefOr[Input[String]] = js.native
   /**
     * Code of the service to track. For example: `vpc`. Available values can be found with the [AWS CLI service-quotas list-services command](https://docs.aws.amazon.com/cli/latest/reference/service-quotas/list-services.html).
     */
-  val serviceCode: js.UndefOr[Input[String]] = js.undefined
+  val serviceCode: js.UndefOr[Input[String]] = js.native
   /**
     * Name of the service.
     */
-  val serviceName: js.UndefOr[Input[String]] = js.undefined
+  val serviceName: js.UndefOr[Input[String]] = js.native
   /**
     * Float specifying the desired value for the service quota. If the desired value is higher than the current value, a quota increase request is submitted. When a known request is submitted and pending, the value reflects the desired value of the pending request.
     */
-  val value: js.UndefOr[Input[Double]] = js.undefined
+  val value: js.UndefOr[Input[Double]] = js.native
 }
 
 object ServiceQuotaState {

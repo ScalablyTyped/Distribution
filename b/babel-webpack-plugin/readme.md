@@ -10,9 +10,9 @@ babel plugin (not loader) for webpack
 | ------------------ | :-------------: |
 | Full name          | babel-webpack-plugin |
 | Keywords           | - |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 39564 |
+| # downloads        | 52019 |
 | # stars            | 1 |
 
 ## Links

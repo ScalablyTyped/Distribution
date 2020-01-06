@@ -10,10 +10,10 @@ Fast math typesetting for the web.
 | ------------------ | :-------------: |
 | Full name          | katex |
 | Keywords           | - |
-| # releases         | 17 |
-| # dependents       | 181 |
-| # downloads        | 2944105 |
-| # stars            | 10 |
+| # releases         | 13 |
+| # dependents       | 249 |
+| # downloads        | 4684274 |
+| # stars            | 11 |
 
 ## Links
 - [Homepage](https://katex.org/)

@@ -10,9 +10,9 @@ A set of components and utils to deal with React refs.
 | ------------------ | :-------------: |
 | Full name          | @stardust-ui/react-component-ref |
 | Keywords           | - |
-| # releases         | 24 |
-| # dependents       | 1 |
-| # downloads        | 62649 |
+| # releases         | 29 |
+| # dependents       | 4 |
+| # downloads        | 602445 |
 | # stars            | 0 |
 
 ## Links

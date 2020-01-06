@@ -10,9 +10,9 @@ Get a list of fields while resolving a GraphQL query
 | ------------------ | :-------------: |
 | Full name          | graphql-list-fields |
 | Keywords           | ast, schema, fields, graphqlresolveinfo, graphql-js, graphql |
-| # releases         | 4 |
-| # dependents       | 3 |
-| # downloads        | 89878 |
+| # releases         | 3 |
+| # dependents       | 9 |
+| # downloads        | 286507 |
 | # stars            | 1 |
 
 ## Links

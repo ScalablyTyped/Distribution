@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsEcrMod {
+  import org.scalablytyped.runtime.StringDictionary
   import typings.awsDashSdk.awsDashSdkStrings.EXPIRE
   import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
   import typings.node.Buffer
@@ -12,6 +13,9 @@ package object clientsEcrMod {
   import typings.std.Uint8Array
 
   type Arn = String
+  type AttributeKey = String
+  type AttributeList = js.Array[Attribute]
+  type AttributeValue = String
   type AuthorizationDataList = js.Array[AuthorizationData]
   type Base64 = String
   type BatchedOperationLayerDigest = String
@@ -20,6 +24,19 @@ package object clientsEcrMod {
   type CreationTimestamp = Date
   type EvaluationTimestamp = Date
   type ExpirationTimestamp = Date
+  type FindingDescription = String
+  type FindingName = String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.INFORMATIONAL
+    - typings.awsDashSdk.awsDashSdkStrings.LOW
+    - typings.awsDashSdk.awsDashSdkStrings.MEDIUM
+    - typings.awsDashSdk.awsDashSdkStrings.HIGH
+    - typings.awsDashSdk.awsDashSdkStrings.CRITICAL
+    - typings.awsDashSdk.awsDashSdkStrings.UNDEFINED
+    - java.lang.String
+  */
+  type FindingSeverity = _FindingSeverity | String
+  type FindingSeverityCounts = StringDictionary[SeverityCount]
   type ForceFlag = Boolean
   type GetAuthorizationTokenRegistryIdList = js.Array[RegistryId]
   type ImageActionType = EXPIRE | String
@@ -40,6 +57,7 @@ package object clientsEcrMod {
   type ImageIdentifierList = js.Array[ImageIdentifier]
   type ImageList = js.Array[Image]
   type ImageManifest = String
+  type ImageScanFindingList = js.Array[ImageScanFinding]
   type ImageSizeInBytes = Double
   type ImageTag = String
   type ImageTagList = js.Array[ImageTag]
@@ -92,6 +110,17 @@ package object clientsEcrMod {
   type RepositoryName = String
   type RepositoryNameList = js.Array[RepositoryName]
   type RepositoryPolicyText = String
+  type ScanOnPushFlag = Boolean
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.IN_PROGRESS
+    - typings.awsDashSdk.awsDashSdkStrings.COMPLETE
+    - typings.awsDashSdk.awsDashSdkStrings.FAILED
+    - java.lang.String
+  */
+  type ScanStatus = _ScanStatus | String
+  type ScanStatusDescription = String
+  type ScanTimestamp = Date
+  type SeverityCount = Double
   type TagKey = String
   type TagKeyList = js.Array[TagKey]
   type TagList = js.Array[Tag]
@@ -105,9 +134,10 @@ package object clientsEcrMod {
   type TagValue = String
   type UploadId = String
   type Url = String
+  type VulnerabilitySourceUpdateTimestamp = Date
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2015-09-21`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

@@ -12,7 +12,7 @@ deep freeze, works with Map and Set
 | Keywords           | freeze, deep-freeze, set, map |
 | # releases         | 5 |
 | # dependents       | 6 |
-| # downloads        | 11104 |
+| # downloads        | 25213 |
 | # stars            | 0 |
 
 ## Links

@@ -227,6 +227,7 @@ package object clientsEmrMod {
   type MetricDimensionList = js.Array[MetricDimension]
   type NewSupportedProductsList = js.Array[SupportedProductConfig]
   type NonNegativeDouble = Double
+  type OptionalArnType = java.lang.String
   type Port = Double
   type PortRanges = js.Array[PortRange]
   /* Rewritten from type alias, can be one of: 
@@ -260,6 +261,12 @@ package object clientsEmrMod {
     - java.lang.String
   */
   type Statistic = _Statistic | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.SEND_INTERRUPT
+    - typings.awsDashSdk.awsDashSdkStrings.TERMINATE_PROCESS
+    - java.lang.String
+  */
+  type StepCancellationOption = _StepCancellationOption | java.lang.String
   type StepConfigList = js.Array[StepConfig]
   type StepDetailList = js.Array[StepDetail]
   /* Rewritten from type alias, can be one of: 
@@ -333,7 +340,7 @@ package object clientsEmrMod {
   type _Date = Date
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2009-03-31`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | java.lang.String

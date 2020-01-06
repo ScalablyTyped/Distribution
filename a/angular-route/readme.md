@@ -10,9 +10,9 @@ AngularJS router module
 | ------------------ | :-------------: |
 | Full name          | angular-route |
 | Keywords           | angular, framework, browser, router, client-side |
-| # releases         | 17 |
-| # dependents       | 186 |
-| # downloads        | 3371681 |
+| # releases         | 15 |
+| # dependents       | 197 |
+| # downloads        | 4295722 |
 | # stars            | 21 |
 
 ## Links

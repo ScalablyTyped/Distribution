@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object clientsCostexplorerMod {
   import org.scalablytyped.runtime.StringDictionary
+  import typings.awsDashSdk.awsDashSdkStrings.CostCategoryExpressionDotv1
   import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
 
   /* Rewritten from type alias, can be one of: 
@@ -16,6 +17,7 @@ package object clientsCostexplorerMod {
   type AccountScope = _AccountScope | String
   type AmortizedRecurringFee = String
   type AmortizedUpfrontFee = String
+  type Arn = String
   type AttributeType = String
   type AttributeValue = String
   type Attributes = StringDictionary[AttributeValue]
@@ -23,9 +25,15 @@ package object clientsCostexplorerMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.COST_AND_USAGE
     - typings.awsDashSdk.awsDashSdkStrings.RESERVATIONS
+    - typings.awsDashSdk.awsDashSdkStrings.SAVINGS_PLANS
     - java.lang.String
   */
   type Context = _Context | String
+  type CostCategoryName = String
+  type CostCategoryReferencesList = js.Array[CostCategoryReference]
+  type CostCategoryRuleVersion = CostCategoryExpressionDotv1 | String
+  type CostCategoryRulesList = js.Array[CostCategoryRule]
+  type CostCategoryValue = String
   type CoverageHoursPercentage = String
   type CoverageNormalizedUnitsPercentage = String
   type CoveragesByTime = js.Array[CoverageByTime]
@@ -52,7 +60,11 @@ package object clientsCostexplorerMod {
     - typings.awsDashSdk.awsDashSdkStrings.INSTANCE_TYPE_FAMILY
     - typings.awsDashSdk.awsDashSdkStrings.BILLING_ENTITY
     - typings.awsDashSdk.awsDashSdkStrings.RESERVATION_ID
+    - typings.awsDashSdk.awsDashSdkStrings.RESOURCE_ID
     - typings.awsDashSdk.awsDashSdkStrings.RIGHTSIZING_TYPE
+    - typings.awsDashSdk.awsDashSdkStrings.SAVINGS_PLANS_TYPE
+    - typings.awsDashSdk.awsDashSdkStrings.SAVINGS_PLAN_ARN
+    - typings.awsDashSdk.awsDashSdkStrings.PAYMENT_OPTION
     - java.lang.String
   */
   type Dimension = _Dimension | String
@@ -74,6 +86,7 @@ package object clientsCostexplorerMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.DIMENSION
     - typings.awsDashSdk.awsDashSdkStrings.TAG
+    - typings.awsDashSdk.awsDashSdkStrings.COST_CATEGORY
     - java.lang.String
   */
   type GroupDefinitionType = _GroupDefinitionType | String
@@ -88,6 +101,7 @@ package object clientsCostexplorerMod {
     - java.lang.String
   */
   type LookbackPeriodInDays = _LookbackPeriodInDays | String
+  type MaxResults = Double
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.BLENDED_COST
     - typings.awsDashSdk.awsDashSdkStrings.UNBLENDED_COST
@@ -147,7 +161,18 @@ package object clientsCostexplorerMod {
     - java.lang.String
   */
   type RightsizingType = _RightsizingType | String
+  type SavingsPlanArn = String
+  type SavingsPlansCoverages = js.Array[SavingsPlansCoverage]
+  type SavingsPlansPurchaseRecommendationDetailList = js.Array[SavingsPlansPurchaseRecommendationDetail]
+  type SavingsPlansUtilizationDetails = js.Array[SavingsPlansUtilizationDetail]
+  type SavingsPlansUtilizationsByTime = js.Array[SavingsPlansUtilizationByTime]
   type SearchString = String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.COMPUTE_SP
+    - typings.awsDashSdk.awsDashSdkStrings.EC2_INSTANCE_SP
+    - java.lang.String
+  */
+  type SupportedSavingsPlansType = _SupportedSavingsPlansType | String
   type TagKey = String
   type TagList = js.Array[Entity]
   type TagValuesList = js.Array[TagValues]
@@ -172,9 +197,10 @@ package object clientsCostexplorerMod {
   type Value = String
   type Values = js.Array[Value]
   type YearMonthDay = String
+  type ZonedDateTime = String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2017-10-25`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

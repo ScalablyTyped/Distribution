@@ -10,9 +10,9 @@ Create living style guides using Markdown or React
 | ------------------ | :-------------: |
 | Full name          | catalog |
 | Keywords           | styleguide, style guide, docs, documentation, react, markdown |
-| # releases         | 50 |
-| # dependents       | 4 |
-| # downloads        | 263701 |
+| # releases         | 18 |
+| # dependents       | 7 |
+| # downloads        | 311459 |
 | # stars            | 4 |
 
 ## Links

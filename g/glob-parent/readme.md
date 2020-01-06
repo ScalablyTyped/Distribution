@@ -10,9 +10,9 @@ Extract the non-magic parent path from a glob string.
 | ------------------ | :-------------: |
 | Full name          | glob-parent |
 | Keywords           | glob, parent, strip, path, dirname, directory, base, wildcard |
-| # releases         | 3 |
-| # dependents       | 143 |
-| # downloads        | 474850874 |
+| # releases         | 4 |
+| # dependents       | 176 |
+| # downloads        | 705499576 |
 | # stars            | 1 |
 
 ## Links

@@ -11,8 +11,8 @@ parses number and unit, '20px' into [20, 'px']
 | Full name          | parse-unit |
 | Keywords           | parse, number, string, str, split, unit, in, m, px, %, pt, pc, em, deg, rad, css, value |
 | # releases         | 0 |
-| # dependents       | 20 |
-| # downloads        | 1907458 |
+| # dependents       | 22 |
+| # downloads        | 6427284 |
 | # stars            | 0 |
 
 ## Links

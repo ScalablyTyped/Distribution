@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TrafficMirrorPortRangeRequest extends js.Object {
   /**
     * The first port in the Traffic Mirror port range. This applies to the TCP and UDP protocols.
     */
-  var FromPort: js.UndefOr[Integer] = js.undefined
+  var FromPort: js.UndefOr[Integer] = js.native
   /**
     * The last port in the Traffic Mirror port range. This applies to the TCP and UDP protocols.
     */
-  var ToPort: js.UndefOr[Integer] = js.undefined
+  var ToPort: js.UndefOr[Integer] = js.native
 }
 
 object TrafficMirrorPortRangeRequest {

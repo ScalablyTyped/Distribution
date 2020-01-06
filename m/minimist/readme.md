@@ -11,9 +11,9 @@ parse argument options
 | Full name          | minimist |
 | Keywords           | argv, getopt, parser, optimist |
 | # releases         | 1 |
-| # dependents       | 10541 |
-| # downloads        | 989415045 |
-| # stars            | 430 |
+| # dependents       | 11813 |
+| # downloads        | 1420018871 |
+| # stars            | 432 |
 
 ## Links
 - [Homepage](https://github.com/substack/minimist)

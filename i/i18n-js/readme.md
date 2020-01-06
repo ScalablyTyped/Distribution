@@ -11,8 +11,8 @@ A javascript library similar to Ruby on Rails i18n gem
 | Full name          | i18n-js |
 | Keywords           | i18n |
 | # releases         | 10 |
-| # dependents       | 22 |
-| # downloads        | 3030714 |
+| # dependents       | 33 |
+| # downloads        | 4644378 |
 | # stars            | 0 |
 
 ## Links

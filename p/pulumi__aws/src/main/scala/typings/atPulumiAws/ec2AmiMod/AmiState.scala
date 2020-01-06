@@ -8,72 +8,73 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AmiState extends js.Object {
   /**
     * Machine architecture for created instances. Defaults to "x8664".
     */
-  val architecture: js.UndefOr[Input[String]] = js.undefined
+  val architecture: js.UndefOr[Input[String]] = js.native
   /**
     * A longer, human-readable description for the AMI.
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * Nested block describing an EBS block device that should be
     * attached to created instances. The structure of this block is described below.
     */
-  val ebsBlockDevices: js.UndefOr[Input[js.Array[Input[AmiEbsBlockDevice]]]] = js.undefined
+  val ebsBlockDevices: js.UndefOr[Input[js.Array[Input[AmiEbsBlockDevice]]]] = js.native
   /**
     * Specifies whether enhanced networking with ENA is enabled. Defaults to `false`.
     */
-  val enaSupport: js.UndefOr[Input[Boolean]] = js.undefined
+  val enaSupport: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Nested block describing an ephemeral block device that
     * should be attached to created instances. The structure of this block is described below.
     */
-  val ephemeralBlockDevices: js.UndefOr[Input[js.Array[Input[AmiEphemeralBlockDevice]]]] = js.undefined
+  val ephemeralBlockDevices: js.UndefOr[Input[js.Array[Input[AmiEphemeralBlockDevice]]]] = js.native
   /**
     * Path to an S3 object containing an image manifest, e.g. created
     * by the `ec2-upload-bundle` command in the EC2 command line tools.
     */
-  val imageLocation: js.UndefOr[Input[String]] = js.undefined
+  val imageLocation: js.UndefOr[Input[String]] = js.native
   /**
     * The id of the kernel image (AKI) that will be used as the paravirtual
     * kernel in created instances.
     */
-  val kernelId: js.UndefOr[Input[String]] = js.undefined
-  val manageEbsSnapshots: js.UndefOr[Input[Boolean]] = js.undefined
+  val kernelId: js.UndefOr[Input[String]] = js.native
+  val manageEbsSnapshots: js.UndefOr[Input[Boolean]] = js.native
   /**
     * A region-unique name for the AMI.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * The id of an initrd image (ARI) that will be used when booting the
     * created instances.
     */
-  val ramdiskId: js.UndefOr[Input[String]] = js.undefined
+  val ramdiskId: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the root device (for example, `/dev/sda1`, or `/dev/xvda`).
     */
-  val rootDeviceName: js.UndefOr[Input[String]] = js.undefined
+  val rootDeviceName: js.UndefOr[Input[String]] = js.native
   /**
     * The Snapshot ID for the root volume (for EBS-backed AMIs)
     */
-  val rootSnapshotId: js.UndefOr[Input[String]] = js.undefined
+  val rootSnapshotId: js.UndefOr[Input[String]] = js.native
   /**
     * When set to "simple" (the default), enables enhanced networking
     * for created instances. No other value is supported at this time.
     */
-  val sriovNetSupport: js.UndefOr[Input[String]] = js.undefined
+  val sriovNetSupport: js.UndefOr[Input[String]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * Keyword to choose what virtualization mode created instances
     * will use. Can be either "paravirtual" (the default) or "hvm". The choice of virtualization type
     * changes the set of further arguments that are required, as described below.
     */
-  val virtualizationType: js.UndefOr[Input[String]] = js.undefined
+  val virtualizationType: js.UndefOr[Input[String]] = js.native
 }
 
 object AmiState {

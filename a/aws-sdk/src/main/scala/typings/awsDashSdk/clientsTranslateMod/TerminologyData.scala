@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TerminologyData extends js.Object {
   /**
     * The file containing the custom terminology data.
     */
-  var File: TerminologyFile
+  var File: TerminologyFile = js.native
   /**
     * The data format of the custom terminology. Either CSV or TMX.
     */
-  var Format: TerminologyDataFormat
+  var Format: TerminologyDataFormat = js.native
 }
 
 object TerminologyData {

@@ -4,21 +4,21 @@
 Typings are for version 1.4
 
 ## Library description:
-Phonon is a lightweight & scalable Javascript/CSS3/HTML5 mobile framework to develop a single page application based on Phonegap / Apache Cordova.
+Phonon is an open source HTML, CSS and JavaScript agnostic framework that allows to create a website or a hybrid Web app.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | phonon |
-| Keywords           | - |
-| # releases         | 5 |
+| Keywords           | css, sass, mobile, desktop, responsive, front-end, framework, web |
+| # releases         | 7 |
 | # dependents       | 0 |
-| # downloads        | 1004 |
+| # downloads        | 3538 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/quark-dev/Phonon-Framework)
-- [Bugs](https://github.com/quark-dev/Phonon-Framework/issues)
-- [Repository](https://github.com/quark-dev/Phonon-Framework)
+- [Homepage](https://phonon-framework.github.io)
+- [Bugs](https://github.com/phonon-framework/phonon/issues)
+- [Repository](https://github.com/phonon-framework/phonon)
 - [Npm](https://www.npmjs.com/package/phonon)
     
 

@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CrawlerCatalogTarget extends js.Object {
   /**
     * The name of the Glue database to be synchronized.
     */
-  var databaseName: Input[String]
+  var databaseName: Input[String] = js.native
   /**
     * A list of catalog tables to be synchronized.
     */
-  var tables: Input[js.Array[Input[String]]]
+  var tables: Input[js.Array[Input[String]]] = js.native
 }
 
 object CrawlerCatalogTarget {

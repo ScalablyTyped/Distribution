@@ -4,8 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Spacing extends js.Object {
-  var unit: Double
+  var unit: Double = js.native
 }
 
 object Spacing {

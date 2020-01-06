@@ -23,13 +23,13 @@ class Environment () extends js.Object {
   def getExtension(name: String): Extension = js.native
   def getFilter(name: String): js.Function1[/* repeated */ js.Any, _] = js.native
   def getGlobal(name: String): js.Any = js.native
-  def getTemplate(name: String): Template = js.native
-  def getTemplate(name: String, eagerCompile: Boolean): Template = js.native
+  def getTemplate(name: String): Unit = js.native
+  def getTemplate(name: String, eagerCompile: Boolean): Unit = js.native
   def getTemplate(name: String, eagerCompile: Boolean, callback: Callback[Error, Template]): Unit = js.native
   @JSName("getTemplate")
-  def getTemplate_Unit(name: String): Unit = js.native
+  def getTemplate_Template(name: String): Template = js.native
   @JSName("getTemplate")
-  def getTemplate_Unit(name: String, eagerCompile: Boolean): Unit = js.native
+  def getTemplate_Template(name: String, eagerCompile: Boolean): Template = js.native
   def hasExtension(name: String): Boolean = js.native
   def removeExtension(name: String): Unit = js.native
   def render(name: String): String = js.native

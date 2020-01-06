@@ -9,9 +9,9 @@ Typings are for version 0.1.0-preview.2
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/util-user-agent-browser |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 7 |
-| # downloads        | 575 |
+| # releases         | 10 |
+| # dependents       | 184 |
+| # downloads        | 3861 |
 | # stars            | 0 |
 
 ## Links

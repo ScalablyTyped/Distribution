@@ -10,9 +10,9 @@ Mock HTTP calls in your protractor specs.
 | ------------------ | :-------------: |
 | Full name          | protractor-http-mock |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 142623 |
+| # downloads        | 184310 |
 | # stars            | 0 |
 
 ## Links

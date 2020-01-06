@@ -10,9 +10,9 @@ A library to convert a path into an absolute path.
 | ------------------ | :-------------: |
 | Full name          | abs |
 | Keywords           | absolute, path |
-| # releases         | 6 |
-| # dependents       | 49 |
-| # downloads        | 332870 |
+| # releases         | 2 |
+| # dependents       | 51 |
+| # downloads        | 587243 |
 | # stars            | 0 |
 
 ## Links

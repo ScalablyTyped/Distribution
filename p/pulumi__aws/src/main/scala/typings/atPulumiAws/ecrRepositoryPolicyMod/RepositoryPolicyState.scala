@@ -6,19 +6,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RepositoryPolicyState extends js.Object {
-  /**
-    * The policy document. This is a JSON formatted string.
-    */
-  val policy: js.UndefOr[Input[String | PolicyDocument]] = js.undefined
+  val policy: js.UndefOr[Input[String | PolicyDocument]] = js.native
   /**
     * The registry ID where the repository was created.
     */
-  val registryId: js.UndefOr[Input[String]] = js.undefined
+  val registryId: js.UndefOr[Input[String]] = js.native
   /**
     * Name of the repository to apply the policy.
     */
-  val repository: js.UndefOr[Input[String]] = js.undefined
+  val repository: js.UndefOr[Input[String]] = js.native
 }
 
 object RepositoryPolicyState {

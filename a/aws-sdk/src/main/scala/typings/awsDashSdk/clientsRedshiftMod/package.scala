@@ -5,12 +5,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsRedshiftMod {
-  import typings.awsDashSdk.awsDashSdkStrings.`restore-cluster`
+  import typings.awsDashSdk.awsDashSdkStrings.ResizeCluster
   import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
   import typings.std.Date
 
   type AccountsWithRestoreAccessList = js.Array[AccountWithRestoreAccess]
-  type ActionType = `restore-cluster` | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.`restore-cluster`
+    - typings.awsDashSdk.awsDashSdkStrings.`recommend-node-config`
+    - java.lang.String
+  */
+  type ActionType = _ActionType | java.lang.String
   type AssociatedClusterList = js.Array[ClusterAssociatedToSchedule]
   type AttributeList = js.Array[AccountAttribute]
   type AttributeNameList = js.Array[String]
@@ -55,30 +60,37 @@ package object clientsRedshiftMod {
   type IntegerOptional = scala.Double
   type Long = scala.Double
   type LongOptional = scala.Double
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.standard__
+    - typings.awsDashSdk.awsDashSdkStrings.`high-performance`
+    - java.lang.String
+  */
+  type Mode = _Mode | java.lang.String
   type NodeConfigurationOptionList = js.Array[NodeConfigurationOption]
   type NodeConfigurationOptionsFilterList = js.Array[NodeConfigurationOptionsFilter]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.NodeType
     - typings.awsDashSdk.awsDashSdkStrings.NumberOfNodes
     - typings.awsDashSdk.awsDashSdkStrings.EstimatedDiskUtilizationPercent
+    - typings.awsDashSdk.awsDashSdkStrings.Mode
     - java.lang.String
   */
   type NodeConfigurationOptionsFilterName = _NodeConfigurationOptionsFilterName | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.eq
-    - typings.awsDashSdk.awsDashSdkStrings.lt
-    - typings.awsDashSdk.awsDashSdkStrings.gt
-    - typings.awsDashSdk.awsDashSdkStrings.le
-    - typings.awsDashSdk.awsDashSdkStrings.ge
-    - typings.awsDashSdk.awsDashSdkStrings.in
-    - typings.awsDashSdk.awsDashSdkStrings.between
+    - typings.awsDashSdk.awsDashSdkStrings.eq_
+    - typings.awsDashSdk.awsDashSdkStrings.lt_
+    - typings.awsDashSdk.awsDashSdkStrings.gt_
+    - typings.awsDashSdk.awsDashSdkStrings.le_
+    - typings.awsDashSdk.awsDashSdkStrings.ge_
+    - typings.awsDashSdk.awsDashSdkStrings.in__
+    - typings.awsDashSdk.awsDashSdkStrings.between_
     - java.lang.String
   */
   type OperatorType = _OperatorType | java.lang.String
   type OrderableClusterOptionsList = js.Array[OrderableClusterOption]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.static
-    - typings.awsDashSdk.awsDashSdkStrings.dynamic
+    - typings.awsDashSdk.awsDashSdkStrings.static__
+    - typings.awsDashSdk.awsDashSdkStrings.dynamic__
     - java.lang.String
   */
   type ParameterApplyType = _ParameterApplyType | java.lang.String
@@ -89,7 +101,7 @@ package object clientsRedshiftMod {
   type ReservedNodeList = js.Array[ReservedNode]
   type ReservedNodeOfferingList = js.Array[ReservedNodeOffering]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Regular
+    - typings.awsDashSdk.awsDashSdkStrings.Regular_
     - typings.awsDashSdk.awsDashSdkStrings.Upgradable
     - java.lang.String
   */
@@ -104,6 +116,22 @@ package object clientsRedshiftMod {
     - java.lang.String
   */
   type ScheduleState = _ScheduleState | java.lang.String
+  type ScheduledActionFilterList = js.Array[ScheduledActionFilter]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.`cluster-identifier`
+    - typings.awsDashSdk.awsDashSdkStrings.`iam-role`
+    - java.lang.String
+  */
+  type ScheduledActionFilterName = _ScheduledActionFilterName | java.lang.String
+  type ScheduledActionList = js.Array[ScheduledAction]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.ACTIVE
+    - typings.awsDashSdk.awsDashSdkStrings.DISABLED
+    - java.lang.String
+  */
+  type ScheduledActionState = _ScheduledActionState | java.lang.String
+  type ScheduledActionTimeList = js.Array[TStamp]
+  type ScheduledActionTypeValues = ResizeCluster | java.lang.String
   type ScheduledSnapshotTimeList = js.Array[TStamp]
   type SensitiveString = java.lang.String
   /* Rewritten from type alias, can be one of: 
@@ -126,10 +154,11 @@ package object clientsRedshiftMod {
   type SortByOrder = _SortByOrder | java.lang.String
   type SourceIdsList = js.Array[String]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.cluster
+    - typings.awsDashSdk.awsDashSdkStrings.cluster_
     - typings.awsDashSdk.awsDashSdkStrings.`cluster-parameter-group`
     - typings.awsDashSdk.awsDashSdkStrings.`cluster-security-group`
     - typings.awsDashSdk.awsDashSdkStrings.`cluster-snapshot`
+    - typings.awsDashSdk.awsDashSdkStrings.`scheduled-action`
     - java.lang.String
   */
   type SourceType = _SourceType | java.lang.String
@@ -159,7 +188,7 @@ package object clientsRedshiftMod {
   type VpcSecurityGroupMembershipList = js.Array[VpcSecurityGroupMembership]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2012-12-01`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | java.lang.String

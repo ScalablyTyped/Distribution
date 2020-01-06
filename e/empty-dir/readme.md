@@ -11,8 +11,8 @@ Check if a directory is empty.
 | Full name          | empty-dir |
 | Keywords           | empty, is-empty, directory, folder, check |
 | # releases         | 3 |
-| # dependents       | 137 |
-| # downloads        | 1369736 |
+| # dependents       | 161 |
+| # downloads        | 2025268 |
 | # stars            | 2 |
 
 ## Links

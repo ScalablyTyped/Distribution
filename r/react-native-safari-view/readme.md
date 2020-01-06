@@ -10,9 +10,9 @@ A React Native wrapper for Safari View Controller
 | ------------------ | :-------------: |
 | Full name          | react-native-safari-view |
 | Keywords           | react-native, react, native, webview, web, view, safari, safariview, react-component, react-native-component |
-| # releases         | 2 |
-| # dependents       | 2 |
-| # downloads        | 302707 |
+| # releases         | 1 |
+| # dependents       | 4 |
+| # downloads        | 448078 |
 | # stars            | 3 |
 
 ## Links

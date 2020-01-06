@@ -4,35 +4,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TrafficMirrorTarget extends js.Object {
   /**
     * Information about the Traffic Mirror target.
     */
-  var Description: js.UndefOr[String] = js.undefined
+  var Description: js.UndefOr[String] = js.native
   /**
     * The network interface ID that is attached to the target.
     */
-  var NetworkInterfaceId: js.UndefOr[String] = js.undefined
+  var NetworkInterfaceId: js.UndefOr[String] = js.native
   /**
     * The Amazon Resource Name (ARN) of the Network Load Balancer.
     */
-  var NetworkLoadBalancerArn: js.UndefOr[String] = js.undefined
+  var NetworkLoadBalancerArn: js.UndefOr[String] = js.native
   /**
     * The ID of the account that owns the Traffic Mirror target.
     */
-  var OwnerId: js.UndefOr[String] = js.undefined
+  var OwnerId: js.UndefOr[String] = js.native
   /**
     * The tags assigned to the Traffic Mirror target.
     */
-  var Tags: js.UndefOr[TagList] = js.undefined
+  var Tags: js.UndefOr[TagList] = js.native
   /**
     * The ID of the Traffic Mirror target.
     */
-  var TrafficMirrorTargetId: js.UndefOr[String] = js.undefined
+  var TrafficMirrorTargetId: js.UndefOr[String] = js.native
   /**
     * The type of Traffic Mirror target.
     */
-  var Type: js.UndefOr[TrafficMirrorTargetType] = js.undefined
+  var Type: js.UndefOr[TrafficMirrorTargetType] = js.native
 }
 
 object TrafficMirrorTarget {
@@ -47,12 +48,12 @@ object TrafficMirrorTarget {
     Type: TrafficMirrorTargetType = null
   ): TrafficMirrorTarget = {
     val __obj = js.Dynamic.literal()
-    if (Description != null) __obj.updateDynamic("Description")(Description)
-    if (NetworkInterfaceId != null) __obj.updateDynamic("NetworkInterfaceId")(NetworkInterfaceId)
-    if (NetworkLoadBalancerArn != null) __obj.updateDynamic("NetworkLoadBalancerArn")(NetworkLoadBalancerArn)
-    if (OwnerId != null) __obj.updateDynamic("OwnerId")(OwnerId)
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
-    if (TrafficMirrorTargetId != null) __obj.updateDynamic("TrafficMirrorTargetId")(TrafficMirrorTargetId)
+    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (NetworkInterfaceId != null) __obj.updateDynamic("NetworkInterfaceId")(NetworkInterfaceId.asInstanceOf[js.Any])
+    if (NetworkLoadBalancerArn != null) __obj.updateDynamic("NetworkLoadBalancerArn")(NetworkLoadBalancerArn.asInstanceOf[js.Any])
+    if (OwnerId != null) __obj.updateDynamic("OwnerId")(OwnerId.asInstanceOf[js.Any])
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
+    if (TrafficMirrorTargetId != null) __obj.updateDynamic("TrafficMirrorTargetId")(TrafficMirrorTargetId.asInstanceOf[js.Any])
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrafficMirrorTarget]
   }

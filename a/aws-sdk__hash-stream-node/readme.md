@@ -10,9 +10,9 @@ A utility for calculating the hash of Node.JS readable streams. This package is 
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/hash-stream-node |
 | Keywords           | - |
-| # releases         | 7 |
+| # releases         | 11 |
 | # dependents       | 1 |
-| # downloads        | 497 |
+| # downloads        | 3860 |
 | # stars            | 0 |
 
 ## Links

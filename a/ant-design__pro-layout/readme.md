@@ -1,7 +1,7 @@
 
 # Scala.js typings for ant-design__pro-layout
 
-Typings are for version 4.10.2
+Typings are for version 4.10.3
 
 ## Library description:
 ant-design-pro layout, easy to use pro scaffolding.
@@ -9,13 +9,16 @@ ant-design-pro layout, easy to use pro scaffolding.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @ant-design/pro-layout |
-| Keywords           | - |
-| # releases         | 40 |
-| # dependents       | 5 |
-| # downloads        | 11048 |
+| Keywords           | admin, ant, ant-design, ant-design-pro, antd, design, layout, menu, pro |
+| # releases         | 92 |
+| # dependents       | 9 |
+| # downloads        | 113746 |
 | # stars            | 0 |
 
 ## Links
+- [Homepage](https://github.com/ant-design/ant-design-pro-layout#readme)
+- [Bugs](https://github.com/ant-design/ant-design-pro-layout/issues)
+- [Repository](https://github.com/ant-design/ant-design-pro-layout)
 - [Npm](https://www.npmjs.com/package/%40ant-design%2Fpro-layout)
     
 

@@ -10,9 +10,9 @@ Encode & decode XML/HTML entities with ease
 | ------------------ | :-------------: |
 | Full name          | entities |
 | Keywords           | html, xml, entity, decoding, encoding |
-| # releases         | 2 |
-| # dependents       | 263 |
-| # downloads        | 258489488 |
+| # releases         | 3 |
+| # dependents       | 310 |
+| # downloads        | 391833240 |
 | # stars            | 19 |
 
 ## Links

@@ -10,9 +10,9 @@ Typings are for version 1.6
 | ------------------ | :-------------: |
 | Full name          | leaflet-polylinedecorator |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 5 |
-| # downloads        | 67617 |
+| # releases         | 2 |
+| # dependents       | 7 |
+| # downloads        | 109007 |
 | # stars            | 0 |
 
 ## Links

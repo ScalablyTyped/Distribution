@@ -20,21 +20,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
+  - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.`right-top`
+  - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.`bottom-left`
+  - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.`left-top`
+  - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.right
+  - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.auto
+  - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.`left-bottom`
   - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.`top-right`
-  - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.bottom
-  - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.`right-bottom`
+  - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.`top-left`
   - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.`auto-end`
   - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.left
-  - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.auto
-  - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.`top-left`
-  - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.`bottom-left`
-  - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.right
-  - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.top
-  - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.`left-top`
-  - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.`left-bottom`
-  - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.`bottom-right`
+  - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.bottom
   - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.`auto-start`
-  - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.`right-top`
+  - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.`bottom-right`
+  - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.top
+  - typings.atBlueprintjsCore.atBlueprintjsCoreStrings.`right-bottom`
 */
 trait PopoverPosition extends js.Object
 

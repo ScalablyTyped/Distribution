@@ -9,6 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Route extends js.Object {
+  var check: js.UndefOr[Boolean] = js.undefined
   var `match`: RouteMatch
   var name: String
   var statusCode: js.UndefOr[Double] = js.undefined
@@ -23,11 +24,13 @@ object Route {
     `match`: /* pathname */ js.UndefOr[String] => `false` | Params,
     name: String,
     `type`: String,
+    check: js.UndefOr[Boolean] = js.undefined,
     statusCode: Int | Double = null
   ): Route = {
     val __obj = js.Dynamic.literal(fn = js.Any.fromFunction4(fn), name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("match")(js.Any.fromFunction1(`match`))
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(check)) __obj.updateDynamic("check")(check.asInstanceOf[js.Any])
     if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Route]
   }

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: parser.TsParser#tsDeclClass functionCall $anonfun class extends from : EmberObject.extend(Evented) * / any */ @js.native
+- Dropped / * import warning: parser.TsParser#tsDeclClass functionCall class extends from : EmberObject.extend(Evented) * / any */ @js.native
 trait Router extends js.Object {
   /**
     * The `location` property determines the type of URL's that your

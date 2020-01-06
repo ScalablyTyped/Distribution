@@ -10,9 +10,9 @@ Collect chunks / objects from a readable stream, write obejcts / chunks to a wri
 | ------------------ | :-------------: |
 | Full name          | list-stream |
 | Keywords           | buffer, stream |
-| # releases         | 0 |
-| # dependents       | 11 |
-| # downloads        | 94372 |
+| # releases         | 2 |
+| # dependents       | 22 |
+| # downloads        | 128370 |
 | # stars            | 0 |
 
 ## Links

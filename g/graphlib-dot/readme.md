@@ -10,15 +10,15 @@ A DOT language parser / writer for graphlib
 | ------------------ | :-------------: |
 | Full name          | graphlib-dot |
 | Keywords           | graph, dot, parse |
-| # releases         | 1 |
-| # dependents       | 17 |
-| # downloads        | 54930 |
+| # releases         | 2 |
+| # dependents       | 19 |
+| # downloads        | 105874 |
 | # stars            | 1 |
 
 ## Links
-- [Homepage](https://github.com/cpettitt/graphlib-dot)
-- [Bugs](https://github.com/cpettitt/graphlib-dot/issues)
-- [Repository](https://github.com/cpettitt/graphlib-dot)
+- [Homepage](https://github.com/dagrejs/graphlib-dot#readme)
+- [Bugs](https://github.com/dagrejs/graphlib-dot/issues)
+- [Repository](https://github.com/dagrejs/graphlib-dot)
 - [Npm](https://www.npmjs.com/package/graphlib-dot)
     
 

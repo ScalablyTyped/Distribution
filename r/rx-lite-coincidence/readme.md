@@ -12,7 +12,7 @@ Lightweight library with coincidence functions for composing asynchronous and ev
 | Keywords           | React, Reactive, Events, Rx, RxJS |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 879 |
+| # downloads        | 942 |
 | # stars            | 0 |
 
 ## Links

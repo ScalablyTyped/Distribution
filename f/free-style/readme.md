@@ -10,9 +10,9 @@ Make CSS easier and more maintainable by using JavaScript
 | ------------------ | :-------------: |
 | Full name          | free-style |
 | Keywords           | inline, css, style, js, hash, server |
-| # releases         | 9 |
-| # dependents       | 13 |
-| # downloads        | 715830 |
+| # releases         | 7 |
+| # dependents       | 15 |
+| # downloads        | 1295747 |
 | # stars            | 0 |
 
 ## Links

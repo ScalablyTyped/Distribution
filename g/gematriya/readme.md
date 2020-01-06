@@ -12,7 +12,7 @@ Convert numbers to gematriya representation, and vice-versa.
 | Keywords           | hebrew, gematriya, numbers |
 | # releases         | 2 |
 | # dependents       | 2 |
-| # downloads        | 8476 |
+| # downloads        | 6297 |
 | # stars            | 2 |
 
 ## Links

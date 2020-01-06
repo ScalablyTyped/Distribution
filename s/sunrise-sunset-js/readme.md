@@ -10,9 +10,9 @@ Sunrise and sunset time calculation for given coordinates
 | ------------------ | :-------------: |
 | Full name          | sunrise-sunset-js |
 | Keywords           | sunrise, sunset, sun, suncalc, day, events |
-| # releases         | 5 |
-| # dependents       | 0 |
-| # downloads        | 1541 |
+| # releases         | 8 |
+| # dependents       | 1 |
+| # downloads        | 9133 |
 | # stars            | 0 |
 
 ## Links

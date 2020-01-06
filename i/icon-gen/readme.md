@@ -10,9 +10,9 @@ Generate an icon files from the SVG or PNG files
 | ------------------ | :-------------: |
 | Full name          | icon-gen |
 | Keywords           | Icon, Generator, SVG, CLI |
-| # releases         | 12 |
-| # dependents       | 9 |
-| # downloads        | 74022 |
+| # releases         | 5 |
+| # dependents       | 10 |
+| # downloads        | 94492 |
 | # stars            | 3 |
 
 ## Links

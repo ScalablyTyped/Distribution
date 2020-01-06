@@ -10,9 +10,9 @@ Determine if a filename and/or buffer is text or binary. Smarter detection than 
 | ------------------ | :-------------: |
 | Full name          | istextorbinary |
 | Keywords           | bin, binary, check, detect, encoding, ext, extension, extensions, file, is binary file, is binary, is text file, is text or binary file, is text or binary, is text, is, isbinary, isbinaryfile, istext, istextfile, path, text |
-| # releases         | 8 |
-| # dependents       | 108 |
-| # downloads        | 30910645 |
+| # releases         | 20 |
+| # dependents       | 124 |
+| # downloads        | 30315715 |
 | # stars            | 1 |
 
 ## Links

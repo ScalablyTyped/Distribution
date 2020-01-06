@@ -10,9 +10,9 @@ JSON OT database backend
 | ------------------ | :-------------: |
 | Full name          | sharedb |
 | Keywords           | - |
-| # releases         | 14 |
-| # dependents       | 33 |
-| # downloads        | 132261 |
+| # releases         | 24 |
+| # dependents       | 42 |
+| # downloads        | 165441 |
 | # stars            | 4 |
 
 ## Links

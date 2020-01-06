@@ -29,7 +29,7 @@ class SubnetGroup protected () extends CustomResource {
   /**
     * The description of the neptune subnet group. Defaults to "Managed by Pulumi".
     */
-  val description: Output[js.UndefOr[String]] = js.native
+  val description: Output[String] = js.native
   /**
     * The name of the neptune subnet group. If omitted, this provider will assign a random, unique name.
     */

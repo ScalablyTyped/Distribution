@@ -40,7 +40,7 @@ package object clientsCodedeployMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.tar
     - typings.awsDashSdk.awsDashSdkStrings.tgz
-    - typings.awsDashSdk.awsDashSdkStrings.zip
+    - typings.awsDashSdk.awsDashSdkStrings.zip__
     - typings.awsDashSdk.awsDashSdkStrings.YAML
     - typings.awsDashSdk.awsDashSdkStrings.JSON
     - java.lang.String
@@ -49,8 +49,8 @@ package object clientsCodedeployMod {
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
   type CommitId = String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Server
-    - typings.awsDashSdk.awsDashSdkStrings.Lambda
+    - typings.awsDashSdk.awsDashSdkStrings.Server_
+    - typings.awsDashSdk.awsDashSdkStrings.Lambda_
     - typings.awsDashSdk.awsDashSdkStrings.ECS
     - java.lang.String
   */
@@ -59,7 +59,7 @@ package object clientsCodedeployMod {
   type DeploymentConfigName = String
   type DeploymentConfigsList = js.Array[DeploymentConfigName]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.user
+    - typings.awsDashSdk.awsDashSdkStrings.user__
     - typings.awsDashSdk.awsDashSdkStrings.autoscaling
     - typings.awsDashSdk.awsDashSdkStrings.codeDeployRollback
     - java.lang.String
@@ -83,13 +83,13 @@ package object clientsCodedeployMod {
   */
   type DeploymentReadyAction = _DeploymentReadyAction | String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Created
-    - typings.awsDashSdk.awsDashSdkStrings.Queued
-    - typings.awsDashSdk.awsDashSdkStrings.InProgress
-    - typings.awsDashSdk.awsDashSdkStrings.Succeeded
-    - typings.awsDashSdk.awsDashSdkStrings.Failed
-    - typings.awsDashSdk.awsDashSdkStrings.Stopped
-    - typings.awsDashSdk.awsDashSdkStrings.Ready
+    - typings.awsDashSdk.awsDashSdkStrings.Created_
+    - typings.awsDashSdk.awsDashSdkStrings.Queued_
+    - typings.awsDashSdk.awsDashSdkStrings.InProgress_
+    - typings.awsDashSdk.awsDashSdkStrings.Succeeded_
+    - typings.awsDashSdk.awsDashSdkStrings.Failed_
+    - typings.awsDashSdk.awsDashSdkStrings.Stopped_
+    - typings.awsDashSdk.awsDashSdkStrings.Ready_
     - java.lang.String
   */
   type DeploymentStatus = _DeploymentStatus | String
@@ -208,21 +208,21 @@ package object clientsCodedeployMod {
   type InstanceName = String
   type InstanceNameList = js.Array[InstanceName]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Pending
-    - typings.awsDashSdk.awsDashSdkStrings.InProgress
-    - typings.awsDashSdk.awsDashSdkStrings.Succeeded
-    - typings.awsDashSdk.awsDashSdkStrings.Failed
-    - typings.awsDashSdk.awsDashSdkStrings.Skipped
-    - typings.awsDashSdk.awsDashSdkStrings.Unknown
-    - typings.awsDashSdk.awsDashSdkStrings.Ready
+    - typings.awsDashSdk.awsDashSdkStrings.Pending_
+    - typings.awsDashSdk.awsDashSdkStrings.InProgress_
+    - typings.awsDashSdk.awsDashSdkStrings.Succeeded_
+    - typings.awsDashSdk.awsDashSdkStrings.Failed_
+    - typings.awsDashSdk.awsDashSdkStrings.Skipped_
+    - typings.awsDashSdk.awsDashSdkStrings.Unknown_
+    - typings.awsDashSdk.awsDashSdkStrings.Ready_
     - java.lang.String
   */
   type InstanceStatus = _InstanceStatus | String
   type InstanceStatusList = js.Array[InstanceStatus]
   type InstanceSummaryList = js.Array[InstanceSummary]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Blue
-    - typings.awsDashSdk.awsDashSdkStrings.Green
+    - typings.awsDashSdk.awsDashSdkStrings.Blue_
+    - typings.awsDashSdk.awsDashSdkStrings.Green_
     - java.lang.String
   */
   type InstanceType = _InstanceType | String
@@ -232,7 +232,7 @@ package object clientsCodedeployMod {
   type LambdaFunctionAlias = String
   type LambdaFunctionName = String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Success
+    - typings.awsDashSdk.awsDashSdkStrings.Success_
     - typings.awsDashSdk.awsDashSdkStrings.ScriptMissing
     - typings.awsDashSdk.awsDashSdkStrings.ScriptNotExecutable
     - typings.awsDashSdk.awsDashSdkStrings.ScriptTimedOut
@@ -245,20 +245,20 @@ package object clientsCodedeployMod {
   type LifecycleEventList = js.Array[LifecycleEvent]
   type LifecycleEventName = String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Pending
-    - typings.awsDashSdk.awsDashSdkStrings.InProgress
-    - typings.awsDashSdk.awsDashSdkStrings.Succeeded
-    - typings.awsDashSdk.awsDashSdkStrings.Failed
-    - typings.awsDashSdk.awsDashSdkStrings.Skipped
-    - typings.awsDashSdk.awsDashSdkStrings.Unknown
+    - typings.awsDashSdk.awsDashSdkStrings.Pending_
+    - typings.awsDashSdk.awsDashSdkStrings.InProgress_
+    - typings.awsDashSdk.awsDashSdkStrings.Succeeded_
+    - typings.awsDashSdk.awsDashSdkStrings.Failed_
+    - typings.awsDashSdk.awsDashSdkStrings.Skipped_
+    - typings.awsDashSdk.awsDashSdkStrings.Unknown_
     - java.lang.String
   */
   type LifecycleEventStatus = _LifecycleEventStatus | String
   type LifecycleMessage = String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.include
-    - typings.awsDashSdk.awsDashSdkStrings.exclude
-    - typings.awsDashSdk.awsDashSdkStrings.ignore
+    - typings.awsDashSdk.awsDashSdkStrings.include_
+    - typings.awsDashSdk.awsDashSdkStrings.exclude_
+    - typings.awsDashSdk.awsDashSdkStrings.ignore__
     - java.lang.String
   */
   type ListStateFilterAction = _ListStateFilterAction | String
@@ -280,8 +280,8 @@ package object clientsCodedeployMod {
   type RawStringContent = String
   type RawStringSha256 = String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Registered
-    - typings.awsDashSdk.awsDashSdkStrings.Deregistered
+    - typings.awsDashSdk.awsDashSdkStrings.Registered_
+    - typings.awsDashSdk.awsDashSdkStrings.Deregistered_
     - java.lang.String
   */
   type RegistrationStatus = _RegistrationStatus | String
@@ -290,8 +290,8 @@ package object clientsCodedeployMod {
   type RevisionLocationList = js.Array[RevisionLocation]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.S3
-    - typings.awsDashSdk.awsDashSdkStrings.GitHub
-    - typings.awsDashSdk.awsDashSdkStrings.String
+    - typings.awsDashSdk.awsDashSdkStrings.GitHub_
+    - typings.awsDashSdk.awsDashSdkStrings.String_
     - typings.awsDashSdk.awsDashSdkStrings.AppSpecContent
     - java.lang.String
   */
@@ -301,14 +301,14 @@ package object clientsCodedeployMod {
   type S3Key = String
   type ScriptName = String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.ascending
-    - typings.awsDashSdk.awsDashSdkStrings.descending
+    - typings.awsDashSdk.awsDashSdkStrings.ascending__
+    - typings.awsDashSdk.awsDashSdkStrings.descending__
     - java.lang.String
   */
   type SortOrder = _SortOrder | String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Pending
-    - typings.awsDashSdk.awsDashSdkStrings.Succeeded
+    - typings.awsDashSdk.awsDashSdkStrings.Pending_
+    - typings.awsDashSdk.awsDashSdkStrings.Succeeded_
     - java.lang.String
   */
   type StopStatus = _StopStatus | String
@@ -336,19 +336,19 @@ package object clientsCodedeployMod {
   type TargetId = String
   type TargetIdList = js.Array[TargetId]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Blue
-    - typings.awsDashSdk.awsDashSdkStrings.Green
+    - typings.awsDashSdk.awsDashSdkStrings.Blue_
+    - typings.awsDashSdk.awsDashSdkStrings.Green_
     - java.lang.String
   */
   type TargetLabel = _TargetLabel | String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Pending
-    - typings.awsDashSdk.awsDashSdkStrings.InProgress
-    - typings.awsDashSdk.awsDashSdkStrings.Succeeded
-    - typings.awsDashSdk.awsDashSdkStrings.Failed
-    - typings.awsDashSdk.awsDashSdkStrings.Skipped
-    - typings.awsDashSdk.awsDashSdkStrings.Unknown
-    - typings.awsDashSdk.awsDashSdkStrings.Ready
+    - typings.awsDashSdk.awsDashSdkStrings.Pending_
+    - typings.awsDashSdk.awsDashSdkStrings.InProgress_
+    - typings.awsDashSdk.awsDashSdkStrings.Succeeded_
+    - typings.awsDashSdk.awsDashSdkStrings.Failed_
+    - typings.awsDashSdk.awsDashSdkStrings.Skipped_
+    - typings.awsDashSdk.awsDashSdkStrings.Unknown_
+    - typings.awsDashSdk.awsDashSdkStrings.Ready_
     - java.lang.String
   */
   type TargetStatus = _TargetStatus | String
@@ -386,7 +386,7 @@ package object clientsCodedeployMod {
   type WaitTimeInMins = Double
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2014-10-06`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

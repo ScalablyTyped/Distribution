@@ -12,7 +12,7 @@ A node.js client for Librato Metrics (http://metrics.librato.com/)
 | Keywords           | librato, metrics, express |
 | # releases         | 3 |
 | # dependents       | 5 |
-| # downloads        | 596816 |
+| # downloads        | 767251 |
 | # stars            | 1 |
 
 ## Links

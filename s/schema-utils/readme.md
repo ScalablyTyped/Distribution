@@ -9,16 +9,16 @@ webpack Validation Utils
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | schema-utils |
-| Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 305 |
-| # downloads        | 384040618 |
+| Keywords           | webpack |
+| # releases         | 16 |
+| # dependents       | 417 |
+| # downloads        | 597872694 |
 | # stars            | 2 |
 
 ## Links
-- [Homepage](https://github.com/webpack-contrib/schema-utils)
-- [Bugs](https://github.com/webpack-contrib/schema-utils/issues)
-- [Repository](https://github.com/webpack-contrib/schema-utils)
+- [Homepage](https://github.com/webpack/schema-utils)
+- [Bugs](https://github.com/webpack/schema-utils/issues)
+- [Repository](https://github.com/webpack/schema-utils)
 - [Npm](https://www.npmjs.com/package/schema-utils)
     
 

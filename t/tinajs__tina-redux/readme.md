@@ -12,7 +12,7 @@ Tina.js bindings for Redux
 | Keywords           | - |
 | # releases         | 5 |
 | # dependents       | 0 |
-| # downloads        | 310 |
+| # downloads        | 176 |
 | # stars            | 0 |
 
 ## Links

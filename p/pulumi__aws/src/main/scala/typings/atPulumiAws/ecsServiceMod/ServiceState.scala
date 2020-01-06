@@ -1,6 +1,7 @@
 package typings.atPulumiAws.ecsServiceMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.atPulumiAws.typesInputMod.ecs.ServiceCapacityProviderStrategy
 import typings.atPulumiAws.typesInputMod.ecs.ServiceDeploymentController
 import typings.atPulumiAws.typesInputMod.ecs.ServiceLoadBalancer
 import typings.atPulumiAws.typesInputMod.ecs.ServiceNetworkConfiguration
@@ -12,97 +13,103 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ServiceState extends js.Object {
+  /**
+    * The capacity provider strategy to use for the service. Can be one or more.  Defined below.
+    */
+  val capacityProviderStrategies: js.UndefOr[Input[js.Array[Input[ServiceCapacityProviderStrategy]]]] = js.native
   /**
     * ARN of an ECS cluster
     */
-  val cluster: js.UndefOr[Input[String]] = js.undefined
+  val cluster: js.UndefOr[Input[String]] = js.native
   /**
     * Configuration block containing deployment controller configuration. Defined below.
     */
-  val deploymentController: js.UndefOr[Input[ServiceDeploymentController]] = js.undefined
+  val deploymentController: js.UndefOr[Input[ServiceDeploymentController]] = js.native
   /**
     * The upper limit (as a percentage of the service's desiredCount) of the number of running tasks that can be running in a service during a deployment. Not valid when using the `DAEMON` scheduling strategy.
     */
-  val deploymentMaximumPercent: js.UndefOr[Input[Double]] = js.undefined
+  val deploymentMaximumPercent: js.UndefOr[Input[Double]] = js.native
   /**
     * The lower limit (as a percentage of the service's desiredCount) of the number of running tasks that must remain running and healthy in a service during a deployment.
     */
-  val deploymentMinimumHealthyPercent: js.UndefOr[Input[Double]] = js.undefined
+  val deploymentMinimumHealthyPercent: js.UndefOr[Input[Double]] = js.native
   /**
     * The number of instances of the task definition to place and keep running. Defaults to 0. Do not specify if using the `DAEMON` scheduling strategy.
     */
-  val desiredCount: js.UndefOr[Input[Double]] = js.undefined
+  val desiredCount: js.UndefOr[Input[Double]] = js.native
   /**
     * Specifies whether to enable Amazon ECS managed tags for the tasks within the service.
     */
-  val enableEcsManagedTags: js.UndefOr[Input[Boolean]] = js.undefined
+  val enableEcsManagedTags: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Seconds to ignore failing load balancer health checks on newly instantiated tasks to prevent premature shutdown, up to 2147483647. Only valid for services configured to use load balancers.
     */
-  val healthCheckGracePeriodSeconds: js.UndefOr[Input[Double]] = js.undefined
+  val healthCheckGracePeriodSeconds: js.UndefOr[Input[Double]] = js.native
   /**
     * ARN of the IAM role that allows Amazon ECS to make calls to your load balancer on your behalf. This parameter is required if you are using a load balancer with your service, but only if your task definition does not use the `awsvpc` network mode. If using `awsvpc` network mode, do not specify this role. If your account has already created the Amazon ECS service-linked role, that role is used by default for your service unless you specify a role here.
     */
-  val iamRole: js.UndefOr[Input[String]] = js.undefined
+  val iamRole: js.UndefOr[Input[String]] = js.native
   /**
     * The launch type on which to run your service. The valid values are `EC2` and `FARGATE`. Defaults to `EC2`.
     */
-  val launchType: js.UndefOr[Input[String]] = js.undefined
+  val launchType: js.UndefOr[Input[String]] = js.native
   /**
     * A load balancer block. Load balancers documented below.
     */
-  val loadBalancers: js.UndefOr[Input[js.Array[Input[ServiceLoadBalancer]]]] = js.undefined
+  val loadBalancers: js.UndefOr[Input[js.Array[Input[ServiceLoadBalancer]]]] = js.native
   /**
     * The name of the service (up to 255 letters, numbers, hyphens, and underscores)
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * The network configuration for the service. This parameter is required for task definitions that use the `awsvpc` network mode to receive their own Elastic Network Interface, and it is not supported for other network modes.
     */
-  val networkConfiguration: js.UndefOr[Input[ServiceNetworkConfiguration]] = js.undefined
+  val networkConfiguration: js.UndefOr[Input[ServiceNetworkConfiguration]] = js.native
   /**
     * Service level strategy rules that are taken into consideration during task placement. List from top to bottom in order of precedence. The maximum number of `orderedPlacementStrategy` blocks is `5`. Defined below.
     */
-  val orderedPlacementStrategies: js.UndefOr[Input[js.Array[Input[ServiceOrderedPlacementStrategy]]]] = js.undefined
+  val orderedPlacementStrategies: js.UndefOr[Input[js.Array[Input[ServiceOrderedPlacementStrategy]]]] = js.native
   /**
     * rules that are taken into consideration during task placement. Maximum number of
     * `placementConstraints` is `10`. Defined below.
     */
-  val placementConstraints: js.UndefOr[Input[js.Array[Input[ServicePlacementConstraint]]]] = js.undefined
+  val placementConstraints: js.UndefOr[Input[js.Array[Input[ServicePlacementConstraint]]]] = js.native
   /**
     * The platform version on which to run your service. Only applicable for `launchType` set to `FARGATE`. Defaults to `LATEST`. More information about Fargate platform versions can be found in the [AWS ECS User Guide](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/platform_versions.html).
     */
-  val platformVersion: js.UndefOr[Input[String]] = js.undefined
+  val platformVersion: js.UndefOr[Input[String]] = js.native
   /**
     * Specifies whether to propagate the tags from the task definition or the service to the tasks. The valid values are `SERVICE` and `TASK_DEFINITION`.
     */
-  val propagateTags: js.UndefOr[Input[String]] = js.undefined
+  val propagateTags: js.UndefOr[Input[String]] = js.native
   /**
     * The scheduling strategy to use for the service. The valid values are `REPLICA` and `DAEMON`. Defaults to `REPLICA`. Note that [*Fargate tasks do not support the `DAEMON` scheduling strategy*](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/scheduling_tasks.html).
     */
-  val schedulingStrategy: js.UndefOr[Input[String]] = js.undefined
+  val schedulingStrategy: js.UndefOr[Input[String]] = js.native
   /**
     * The service discovery registries for the service. The maximum number of `serviceRegistries` blocks is `1`.
     */
-  val serviceRegistries: js.UndefOr[Input[ServiceServiceRegistries]] = js.undefined
+  val serviceRegistries: js.UndefOr[Input[ServiceServiceRegistries]] = js.native
   /**
     * Key-value mapping of resource tags
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * The family and revision (`family:revision`) or full ARN of the task definition that you want to run in your service.
     */
-  val taskDefinition: js.UndefOr[Input[String]] = js.undefined
+  val taskDefinition: js.UndefOr[Input[String]] = js.native
   /**
     * If `true`, this provider will wait for the service to reach a steady state (like [`aws ecs wait services-stable`](https://docs.aws.amazon.com/cli/latest/reference/ecs/wait/services-stable.html)) before continuing. Default `false`.
     */
-  val waitForSteadyState: js.UndefOr[Input[Boolean]] = js.undefined
+  val waitForSteadyState: js.UndefOr[Input[Boolean]] = js.native
 }
 
 object ServiceState {
   @scala.inline
   def apply(
+    capacityProviderStrategies: Input[js.Array[Input[ServiceCapacityProviderStrategy]]] = null,
     cluster: Input[String] = null,
     deploymentController: Input[ServiceDeploymentController] = null,
     deploymentMaximumPercent: Input[Double] = null,
@@ -126,6 +133,7 @@ object ServiceState {
     waitForSteadyState: Input[Boolean] = null
   ): ServiceState = {
     val __obj = js.Dynamic.literal()
+    if (capacityProviderStrategies != null) __obj.updateDynamic("capacityProviderStrategies")(capacityProviderStrategies.asInstanceOf[js.Any])
     if (cluster != null) __obj.updateDynamic("cluster")(cluster.asInstanceOf[js.Any])
     if (deploymentController != null) __obj.updateDynamic("deploymentController")(deploymentController.asInstanceOf[js.Any])
     if (deploymentMaximumPercent != null) __obj.updateDynamic("deploymentMaximumPercent")(deploymentMaximumPercent.asInstanceOf[js.Any])

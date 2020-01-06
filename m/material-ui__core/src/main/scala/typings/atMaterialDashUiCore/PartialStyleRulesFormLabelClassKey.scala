@@ -6,14 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/FormLabel.FormLabelClassKey>> */
+@js.native
 trait PartialStyleRulesFormLabelClassKey extends js.Object {
-  var asterisk: js.UndefOr[CSSProperties] = js.undefined
-  var disabled: js.UndefOr[CSSProperties] = js.undefined
-  var error: js.UndefOr[CSSProperties] = js.undefined
-  var filled: js.UndefOr[CSSProperties] = js.undefined
-  var focused: js.UndefOr[CSSProperties] = js.undefined
-  var required: js.UndefOr[CSSProperties] = js.undefined
-  var root: js.UndefOr[CSSProperties] = js.undefined
+  var asterisk: js.UndefOr[CSSProperties] = js.native
+  var disabled: js.UndefOr[CSSProperties] = js.native
+  var error: js.UndefOr[CSSProperties] = js.native
+  var filled: js.UndefOr[CSSProperties] = js.native
+  var focused: js.UndefOr[CSSProperties] = js.native
+  var required: js.UndefOr[CSSProperties] = js.native
+  var root: js.UndefOr[CSSProperties] = js.native
 }
 
 object PartialStyleRulesFormLabelClassKey {

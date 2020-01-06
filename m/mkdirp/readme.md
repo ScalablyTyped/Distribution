@@ -11,8 +11,8 @@ Recursively mkdir, like `mkdir -p`
 | Full name          | mkdirp |
 | Keywords           | mkdir, directory |
 | # releases         | 1 |
-| # dependents       | 14126 |
-| # downloads        | 482589591 |
+| # dependents       | 15511 |
+| # downloads        | 620533507 |
 | # stars            | 345 |
 
 ## Links

@@ -13,15 +13,15 @@ import scala.scalajs.js.annotation._
 trait IGlobStatic
   extends EventEmitter
      with Instantiable1[/* pattern */ String, IGlob]
+     with Instantiable2[
+      /* pattern */ String, 
+      (/* cb */ js.Function2[/* err */ Error | Null, /* matches */ js.Array[String], Unit]) | (/* options */ IOptions), 
+      IGlob
+    ]
      with Instantiable3[
       /* pattern */ String, 
       /* options */ IOptions, 
       /* cb */ js.Function2[/* err */ Error | Null, /* matches */ js.Array[String], Unit], 
-      IGlob
-    ]
-     with Instantiable2[
-      /* pattern */ String, 
-      (/* cb */ js.Function2[/* err */ Error | Null, /* matches */ js.Array[String], Unit]) | (/* options */ IOptions), 
       IGlob
     ]
 

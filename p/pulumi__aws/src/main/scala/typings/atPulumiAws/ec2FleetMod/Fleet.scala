@@ -49,7 +49,7 @@ class Fleet protected () extends CustomResource {
   /**
     * Map of Fleet tags. To tag instances at launch, specify the tags in the Launch Template.
     */
-  val tags: Output[js.UndefOr[StringDictionary[String]]] = js.native
+  val tags: Output[js.UndefOr[StringDictionary[_]]] = js.native
   /**
     * Nested argument containing target capacity configurations. Defined below.
     */

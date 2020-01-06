@@ -10,9 +10,9 @@ Smaller modular Lodash builds.
 | ------------------ | :-------------: |
 | Full name          | lodash-webpack-plugin |
 | Keywords           | lodash, modules, webpack-plugin |
-| # releases         | 4 |
-| # dependents       | 128 |
-| # downloads        | 4472634 |
+| # releases         | 2 |
+| # dependents       | 148 |
+| # downloads        | 7079792 |
 | # stars            | 25 |
 
 ## Links

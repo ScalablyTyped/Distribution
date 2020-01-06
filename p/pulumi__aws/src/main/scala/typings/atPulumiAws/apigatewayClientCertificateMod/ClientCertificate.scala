@@ -1,5 +1,6 @@
 package typings.atPulumiAws.apigatewayClientCertificateMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -23,6 +24,10 @@ class ClientCertificate protected () extends CustomResource {
   def this(name: String, args: ClientCertificateArgs) = this()
   def this(name: String, args: ClientCertificateArgs, opts: CustomResourceOptions) = this()
   /**
+    * Amazon Resource Name (ARN)
+    */
+  val arn: Output[String] = js.native
+  /**
     * The date when the client certificate was created.
     */
   val createdDate: Output[String] = js.native
@@ -38,6 +43,10 @@ class ClientCertificate protected () extends CustomResource {
     * The PEM-encoded public key of the client certificate.
     */
   val pemEncodedCertificate: Output[String] = js.native
+  /**
+    * Key-value mapping of resource tags
+    */
+  val tags: Output[js.UndefOr[StringDictionary[_]]] = js.native
 }
 
 /* static members */

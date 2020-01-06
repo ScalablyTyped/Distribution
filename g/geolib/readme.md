@@ -1,22 +1,22 @@
 
 # Scala.js typings for geolib
 
-Typings are for version 3.2.0
+Typings are for version 3.2.1
 
 ## Library description:
-Library to perform geo specific tasks
+[![CircleCI](https://circleci.com/gh/manuelbieh/geolib/tree/master.svg?style=svg)](https://circleci.com/gh/manuelbieh/geolib/tree/master) ![](https://badgen.net/bundlephobia/minzip/geolib) ![](https://badgen.net/npm/dm/geolib) ![](https://badgen.net/githu
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | geolib |
-| Keywords           | geodesy, distance, latitude, longitude, elevation, geolocation, geo, distance, geojson, geospatial, lbs, location |
-| # releases         | 3 |
-| # dependents       | 109 |
-| # downloads        | 2317280 |
-| # stars            | 57 |
+| Keywords           | - |
+| # releases         | 11 |
+| # dependents       | 130 |
+| # downloads        | 3639677 |
+| # stars            | 58 |
 
 ## Links
-- [Homepage](http://github.com/manuelbieh/Geolib)
+- [Homepage](https://github.com/manuelbieh/geolib#readme)
 - [Bugs](https://github.com/manuelbieh/geolib/issues)
 - [Repository](https://github.com/manuelbieh/geolib)
 - [Npm](https://www.npmjs.com/package/geolib)

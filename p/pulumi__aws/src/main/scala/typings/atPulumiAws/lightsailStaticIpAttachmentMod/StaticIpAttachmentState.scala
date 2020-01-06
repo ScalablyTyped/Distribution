@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StaticIpAttachmentState extends js.Object {
   /**
     * The name of the Lightsail instance to attach the IP to
     */
-  val instanceName: js.UndefOr[Input[String]] = js.undefined
+  val instanceName: js.UndefOr[Input[String]] = js.native
   /**
     * The allocated static IP address
     */
-  val ipAddress: js.UndefOr[Input[String]] = js.undefined
+  val ipAddress: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the allocated static IP
     */
-  val staticIpName: js.UndefOr[Input[String]] = js.undefined
+  val staticIpName: js.UndefOr[Input[String]] = js.native
 }
 
 object StaticIpAttachmentState {

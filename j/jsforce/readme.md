@@ -10,9 +10,9 @@ Salesforce API Library for JavaScript
 | ------------------ | :-------------: |
 | Full name          | jsforce |
 | Keywords           | salesforce, salesforce.com, sfdc, force.com, database.com |
-| # releases         | 10 |
-| # dependents       | 122 |
-| # downloads        | 2046261 |
+| # releases         | 14 |
+| # dependents       | 148 |
+| # downloads        | 4676689 |
 | # stars            | 11 |
 
 ## Links

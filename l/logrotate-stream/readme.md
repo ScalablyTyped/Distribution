@@ -11,8 +11,8 @@ Pipe log data to a stream, fuggetabout rotation
 | Full name          | logrotate-stream |
 | Keywords           | log, rotate, pipe, stream |
 | # releases         | 0 |
-| # dependents       | 21 |
-| # downloads        | 1025207 |
+| # dependents       | 22 |
+| # downloads        | 649879 |
 | # stars            | 4 |
 
 ## Links

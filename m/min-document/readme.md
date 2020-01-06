@@ -11,8 +11,8 @@ A minimal DOM implementation
 | Full name          | min-document |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 14 |
-| # downloads        | 74920020 |
+| # dependents       | 19 |
+| # downloads        | 114068511 |
 | # stars            | 8 |
 
 ## Links

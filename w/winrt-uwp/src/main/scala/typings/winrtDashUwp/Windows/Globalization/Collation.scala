@@ -44,12 +44,9 @@ object Collation extends js.Object {
       */
     def getMany(startIndex: Double): Anon_ItemsReturnValueCharacterGrouping = js.native
     def indexOf(value: CharacterGrouping, extra: js.Any*): Anon_Index = js.native
-    /**
-      * Returns the index of a specified CharacterGrouping object in the set of character groups.
-      * @param value The CharacterGrouping object to find in the set.
-      */
+    /* hack */
     @JSName("indexOf")
-    def indexOf_Anon_Index(value: CharacterGrouping): Anon_Index = js.native
+    def indexOf_Double(searchElement: CharacterGrouping): Double = js.native
     /**
       * Gets the label under which the provided text falls.
       * @param text The string for which to get the label.

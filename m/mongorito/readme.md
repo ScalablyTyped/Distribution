@@ -10,9 +10,9 @@ ES6 generator-based MongoDB ODM.
 | ------------------ | :-------------: |
 | Full name          | mongorito |
 | Keywords           | mongo, mongodb, odm |
-| # releases         | 6 |
+| # releases         | 1 |
 | # dependents       | 12 |
-| # downloads        | 68378 |
+| # downloads        | 62645 |
 | # stars            | 8 |
 
 ## Links

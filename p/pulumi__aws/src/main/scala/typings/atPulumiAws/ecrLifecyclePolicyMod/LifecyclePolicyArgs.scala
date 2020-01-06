@@ -6,15 +6,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LifecyclePolicyArgs extends js.Object {
-  /**
-    * The policy document. This is a JSON formatted string. See more details about [Policy Parameters](http://docs.aws.amazon.com/AmazonECR/latest/userguide/LifecyclePolicies.html#lifecycle_policy_parameters) in the official AWS docs.
-    */
-  val policy: Input[String | LifecyclePolicyDocument]
+  val policy: Input[String | LifecyclePolicyDocument] = js.native
   /**
     * Name of the repository to apply the policy.
     */
-  val repository: Input[String]
+  val repository: Input[String] = js.native
 }
 
 object LifecyclePolicyArgs {

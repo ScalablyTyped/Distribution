@@ -12,7 +12,7 @@ Measure the time a promise takes to resolve
 | Keywords           | promise, time, timed, timing, timer, elapsed, measure, bench, resolve, execute |
 | # releases         | 3 |
 | # dependents       | 5 |
-| # downloads        | 2139 |
+| # downloads        | 6512 |
 | # stars            | 0 |
 
 ## Links

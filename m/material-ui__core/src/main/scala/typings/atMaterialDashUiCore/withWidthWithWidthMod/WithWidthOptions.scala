@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WithWidthOptions extends js.Object {
-  var initialWidth: js.UndefOr[Breakpoint] = js.undefined
-  var noSSR: js.UndefOr[Boolean] = js.undefined
-  var resizeInterval: js.UndefOr[Double] = js.undefined
-  var withTheme: js.UndefOr[Boolean] = js.undefined
+  var initialWidth: js.UndefOr[Breakpoint] = js.native
+  var noSSR: js.UndefOr[Boolean] = js.native
+  var resizeInterval: js.UndefOr[Double] = js.native
+  var withTheme: js.UndefOr[Boolean] = js.native
 }
 
 object WithWidthOptions {

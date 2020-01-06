@@ -12,7 +12,7 @@ Adjusted Cache.Get return type Started SiteContext mapping
 | Keywords           | - |
 | # releases         | 22 |
 | # dependents       | 0 |
-| # downloads        | 7681 |
+| # downloads        | 10201 |
 | # stars            | 0 |
 
 ## Links

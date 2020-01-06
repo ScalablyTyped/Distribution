@@ -4,15 +4,15 @@
 Typings are for version 0.22
 
 ## Library description:
-A set of React components for building completely customizable rich-text editors.
+Tools for building completely customizable richtext editors with React.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | slate-react |
-| Keywords           | canvas, contenteditable, doc, docs, document, edit, editor, html, immutable, markdown, medium, paper, react, rich, rich-text, richtext, slate, text, wysiwyg, wysiwym |
-| # releases         | 159 |
-| # dependents       | 124 |
-| # downloads        | 2016165 |
+| Keywords           | canvas, contenteditable, docs, document, edit, editor, editable, html, immutable, markdown, medium, paper, react, rich, richtext, richtext, slate, text, wysiwyg, wysiwym |
+| # releases         | 148 |
+| # dependents       | 171 |
+| # downloads        | 3713078 |
 | # stars            | 1 |
 
 ## Links

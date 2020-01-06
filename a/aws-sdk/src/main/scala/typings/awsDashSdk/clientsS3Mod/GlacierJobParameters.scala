@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GlacierJobParameters extends js.Object {
   /**
     * Glacier retrieval tier at which the restore will be processed.
     */
-  var Tier: typings.awsDashSdk.clientsS3Mod.Tier
+  var Tier: typings.awsDashSdk.clientsS3Mod.Tier = js.native
 }
 
 object GlacierJobParameters {

@@ -10,9 +10,9 @@ log4js-node support Koa-middleware
 | ------------------ | :-------------: |
 | Full name          | koa-log4 |
 | Keywords           | log4js, Koa, logger |
-| # releases         | 6 |
-| # dependents       | 15 |
-| # downloads        | 30813 |
+| # releases         | 2 |
+| # dependents       | 14 |
+| # downloads        | 25568 |
 | # stars            | 3 |
 
 ## Links

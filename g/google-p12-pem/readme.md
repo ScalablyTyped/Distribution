@@ -4,15 +4,15 @@
 Typings are for version 2.0.2
 
 ## Library description:
-Convert Google .p12 keys to .pem keys
+Convert Google .p12 keys to .pem keys.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | google-p12-pem |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 9 |
 | # dependents       | 5 |
-| # downloads        | 44676776 |
+| # downloads        | 86685324 |
 | # stars            | 1 |
 
 ## Links

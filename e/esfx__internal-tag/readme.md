@@ -10,9 +10,9 @@ This package provides internal utilities for &#39;@esfx&#39; and is not intended
 | ------------------ | :-------------: |
 | Full name          | @esfx/internal-tag |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 0 |
+| # releases         | 3 |
+| # dependents       | 17 |
+| # downloads        | 41046 |
 | # stars            | 0 |
 
 ## Links

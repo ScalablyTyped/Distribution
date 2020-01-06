@@ -10,9 +10,9 @@ Beautiful, functional dialogs in vanilla JavaScript
 | ------------------ | :-------------: |
 | Full name          | vex-js |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 2 |
 | # dependents       | 14 |
-| # downloads        | 247521 |
+| # downloads        | 163588 |
 | # stars            | 4 |
 
 ## Links

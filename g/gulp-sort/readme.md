@@ -10,8 +10,8 @@ Sort files in stream by path or any custom sort comparator
 | Full name          | gulp-sort |
 | Keywords           | gulpplugin, gulp, sort, paths, order, comparator |
 | # releases         | 1 |
-| # dependents       | 21 |
-| # downloads        | 821454 |
+| # dependents       | 29 |
+| # downloads        | 1539252 |
 | # stars            | 7 |
 
 ## Links

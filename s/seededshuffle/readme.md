@@ -10,9 +10,9 @@ Shuffle and unshuffle an array by seed/key.
 | ------------------ | :-------------: |
 | Full name          | seededshuffle |
 | Keywords           | shuffle, seed, unshuffle, random, array, seeded |
-| # releases         | 2 |
+| # releases         | 1 |
 | # dependents       | 3 |
-| # downloads        | 21949 |
+| # downloads        | 38587 |
 | # stars            | 1 |
 
 ## Links

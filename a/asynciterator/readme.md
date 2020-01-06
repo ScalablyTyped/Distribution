@@ -11,8 +11,8 @@ An asynchronous iterator library for advanced object pipelines.
 | Full name          | asynciterator |
 | Keywords           | - |
 | # releases         | 4 |
-| # dependents       | 30 |
-| # downloads        | 15474 |
+| # dependents       | 32 |
+| # downloads        | 18126 |
 | # stars            | 0 |
 
 ## Links

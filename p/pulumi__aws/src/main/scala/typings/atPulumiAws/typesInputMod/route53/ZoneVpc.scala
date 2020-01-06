@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ZoneVpc extends js.Object {
   /**
     * ID of the VPC to associate.
     */
-  var vpcId: Input[String]
+  var vpcId: Input[String] = js.native
   /**
     * Region of the VPC to associate. Defaults to AWS provider region.
     */
-  var vpcRegion: js.UndefOr[Input[String]] = js.undefined
+  var vpcRegion: js.UndefOr[Input[String]] = js.native
 }
 
 object ZoneVpc {

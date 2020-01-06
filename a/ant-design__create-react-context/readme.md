@@ -10,9 +10,9 @@ A fork of create-react-context in MIT license
 | ------------------ | :-------------: |
 | Full name          | @ant-design/create-react-context |
 | Keywords           | react, context, contextTypes, polyfill, ponyfill |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 0 |
+| # releases         | 4 |
+| # dependents       | 50 |
+| # downloads        | 4993293 |
 | # stars            | 0 |
 
 ## Links

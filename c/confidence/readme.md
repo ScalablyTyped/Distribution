@@ -10,15 +10,15 @@ Configuration API
 | ------------------ | :-------------: |
 | Full name          | confidence |
 | Keywords           | hapi, plugin, configuration, api |
-| # releases         | 3 |
+| # releases         | 4 |
 | # dependents       | 36 |
-| # downloads        | 408372 |
+| # downloads        | 456127 |
 | # stars            | 11 |
 
 ## Links
-- [Homepage](https://github.com/hapijs/confidence#readme)
-- [Bugs](https://github.com/hapijs/confidence/issues)
-- [Repository](https://github.com/hapijs/confidence)
+- [Homepage](https://github.com/hapipal/confidence#readme)
+- [Bugs](https://github.com/hapipal/confidence/issues)
+- [Repository](https://github.com/hapipal/confidence)
 - [Npm](https://www.npmjs.com/package/confidence)
     
 

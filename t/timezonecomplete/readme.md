@@ -10,9 +10,9 @@ DateTime, TimeZone, Duration and Period library aimed at providing a consistent 
 | ------------------ | :-------------: |
 | Full name          | timezonecomplete |
 | Keywords           | Date, time zone, timezone, period, duration, timezonejs, date arithmetic, date math |
-| # releases         | 10 |
-| # dependents       | 0 |
-| # downloads        | 39250 |
+| # releases         | 12 |
+| # dependents       | 1 |
+| # downloads        | 47188 |
 | # stars            | 0 |
 
 ## Links

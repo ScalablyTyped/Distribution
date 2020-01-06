@@ -95,6 +95,7 @@ package object clientsDevicefarmMod {
     - java.lang.String
   */
   type DeviceAvailability = _DeviceAvailability | java.lang.String
+  type DeviceFarmArn = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.ARN
     - typings.awsDashSdk.awsDashSdkStrings.PLATFORM
@@ -192,6 +193,7 @@ package object clientsDevicefarmMod {
   type JobTimeoutMinutes = scala.Double
   type Jobs = js.Array[Job]
   type Long = scala.Double
+  type MaxPageSize = scala.Double
   type MaxSlotMap = StringDictionary[Integer]
   type Message = java.lang.String
   type Metadata = java.lang.String
@@ -226,6 +228,9 @@ package object clientsDevicefarmMod {
   type RecurringChargeFrequency = MONTHLY | java.lang.String
   type RecurringCharges = js.Array[RecurringCharge]
   type RemoteAccessSessions = js.Array[RemoteAccessSession]
+  type ResourceDescription = java.lang.String
+  type ResourceId = java.lang.String
+  type ResourceName = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.EQUALS
     - typings.awsDashSdk.awsDashSdkStrings.LESS_THAN
@@ -271,6 +276,31 @@ package object clientsDevicefarmMod {
   type TagKeyList = js.Array[TagKey]
   type TagList = js.Array[Tag]
   type TagValue = java.lang.String
+  type TestGridProjects = js.Array[TestGridProject]
+  type TestGridSessionActions = js.Array[TestGridSessionAction]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.VIDEO
+    - typings.awsDashSdk.awsDashSdkStrings.LOG
+    - java.lang.String
+  */
+  type TestGridSessionArtifactCategory = _TestGridSessionArtifactCategory | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.UNKNOWN
+    - typings.awsDashSdk.awsDashSdkStrings.VIDEO
+    - typings.awsDashSdk.awsDashSdkStrings.SELENIUM_LOG
+    - java.lang.String
+  */
+  type TestGridSessionArtifactType = _TestGridSessionArtifactType | java.lang.String
+  type TestGridSessionArtifacts = js.Array[TestGridSessionArtifact]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.ACTIVE
+    - typings.awsDashSdk.awsDashSdkStrings.CLOSED
+    - typings.awsDashSdk.awsDashSdkStrings.ERRORED
+    - java.lang.String
+  */
+  type TestGridSessionStatus = _TestGridSessionStatus | java.lang.String
+  type TestGridSessions = js.Array[TestGridSession]
+  type TestGridUrlExpiresInSecondsInput = scala.Double
   type TestParameters = StringDictionary[String]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.BUILTIN_FUZZ
@@ -360,7 +390,7 @@ package object clientsDevicefarmMod {
   type VideoCapture = scala.Boolean
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2015-06-23`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | java.lang.String

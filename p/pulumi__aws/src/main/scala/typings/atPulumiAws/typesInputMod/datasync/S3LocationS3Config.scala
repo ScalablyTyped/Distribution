@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait S3LocationS3Config extends js.Object {
   /**
     * Amazon Resource Names (ARN) of the IAM Role used to connect to the S3 Bucket.
     */
-  var bucketAccessRoleArn: Input[String]
+  var bucketAccessRoleArn: Input[String] = js.native
 }
 
 object S3LocationS3Config {

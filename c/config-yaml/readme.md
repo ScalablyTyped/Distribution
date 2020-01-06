@@ -10,9 +10,9 @@ YAML configuration for NodeJS
 | ------------------ | :-------------: |
 | Full name          | config-yaml |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 3 |
 | # dependents       | 8 |
-| # downloads        | 41456 |
+| # downloads        | 85080 |
 | # stars            | 0 |
 
 ## Links

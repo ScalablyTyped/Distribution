@@ -1,11 +1,12 @@
 package typings.nodemailerDashSesDashTransport.nodemailerDashSesDashTransportMod
 
+import typings.awsDashSdk.awsDashSdkMod.SES
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SesOptions extends js.Object {
-  var SES: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AWS.SES */ js.Any
+  var SES: typings.awsDashSdk.awsDashSdkMod.SES
   var component: js.UndefOr[String] = js.undefined
   var maxConnections: js.UndefOr[Double] = js.undefined
   var sendingRate: js.UndefOr[Double] = js.undefined
@@ -14,7 +15,7 @@ trait SesOptions extends js.Object {
 object SesOptions {
   @scala.inline
   def apply(
-    SES: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AWS.SES */ js.Any,
+    SES: SES,
     component: String = null,
     maxConnections: Int | Double = null,
     sendingRate: Int | Double = null

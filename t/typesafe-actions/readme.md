@@ -10,9 +10,9 @@ Typesafe Action Creators for Redux / Flux Architectures (in TypeScript)
 | ------------------ | :-------------: |
 | Full name          | typesafe-actions |
 | Keywords           | typescript, typesafe, actions, action-creator, redux, flux, redux-actions, static-typing |
-| # releases         | 36 |
-| # dependents       | 44 |
-| # downloads        | 1246622 |
+| # releases         | 54 |
+| # dependents       | 87 |
+| # downloads        | 3435395 |
 | # stars            | 2 |
 
 ## Links

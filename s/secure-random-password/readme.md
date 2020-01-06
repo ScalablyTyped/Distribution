@@ -10,15 +10,15 @@ Generate passwords using a cryptographically-strong source of randomness
 | ------------------ | :-------------: |
 | Full name          | secure-random-password |
 | Keywords           | secure, random, password, generator |
-| # releases         | 3 |
-| # dependents       | 0 |
-| # downloads        | 3831 |
+| # releases         | 5 |
+| # dependents       | 1 |
+| # downloads        | 17002 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/rackerlabs/secure-random-password#readme)
-- [Bugs](https://github.com/rackerlabs/secure-random-password/issues)
-- [Repository](https://github.com/rackerlabs/secure-random-password)
+- [Homepage](https://github.com/mkropat/secure-random-password#readme)
+- [Bugs](https://github.com/mkropat/secure-random-password/issues)
+- [Repository](https://github.com/mkropat/secure-random-password)
 - [Npm](https://www.npmjs.com/package/secure-random-password)
     
 

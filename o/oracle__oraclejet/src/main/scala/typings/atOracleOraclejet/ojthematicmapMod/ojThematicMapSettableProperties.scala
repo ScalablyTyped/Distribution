@@ -66,7 +66,7 @@ trait ojThematicMapSettableProperties[K1, K2, K3, D1, D2, D3] extends dvtBaseCom
     Anon_InsertSVGElement | Unit
   ]) | Null
   var styleDefaults: Anon_AreaSvgStyle
-  var tooltip: Anon_ContextRendererAnonInsertAnonPreventDefaultD1[D3, K1, K2, D1, K3, D2]
+  var tooltip: Anon_ContextRendererAnonInsertAnonPreventDefaultD1[K1, K2, K3, D1, D2, D3]
   var tooltipDisplay: auto | labelAndShortDesc | none | shortDesc
   var touchResponse: touchStart | auto
   @JSName("translations")
@@ -95,7 +95,7 @@ object ojThematicMapSettableProperties {
     selection: js.Array[K1 | K2 | K3],
     selectionMode: single | multiple | none,
     styleDefaults: Anon_AreaSvgStyle,
-    tooltip: Anon_ContextRendererAnonInsertAnonPreventDefaultD1[D3, K1, K2, D1, K3, D2],
+    tooltip: Anon_ContextRendererAnonInsertAnonPreventDefaultD1[K1, K2, K3, D1, D2, D3],
     tooltipDisplay: auto | labelAndShortDesc | none | shortDesc,
     touchResponse: touchStart | auto,
     trackResize: on | off,

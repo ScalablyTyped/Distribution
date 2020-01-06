@@ -10,9 +10,9 @@ Patches global.Promise to use bluebird and returns a bluebird instance
 | ------------------ | :-------------: |
 | Full name          | bluebird-global |
 | Keywords           | polyfill, promise-library, promise, performance, promises, promises-a, promises-aplus, async, await |
-| # releases         | 4 |
-| # dependents       | 9 |
-| # downloads        | 49625 |
+| # releases         | 0 |
+| # dependents       | 13 |
+| # downloads        | 109856 |
 | # stars            | 0 |
 
 ## Links

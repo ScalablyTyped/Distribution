@@ -7,24 +7,25 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ApplicationState extends js.Object {
-  val appversionLifecycle: js.UndefOr[Input[ApplicationAppversionLifecycle]] = js.undefined
+  val appversionLifecycle: js.UndefOr[Input[ApplicationAppversionLifecycle]] = js.native
   /**
     * The ARN assigned by AWS for this Elastic Beanstalk Application.
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * Short description of the application
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the application, must be unique within your account
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * Key-value mapping of tags for the Elastic Beanstalk Application.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object ApplicationState {

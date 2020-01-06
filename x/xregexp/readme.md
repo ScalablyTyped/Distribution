@@ -11,8 +11,8 @@ Extended regular expressions
 | Full name          | xregexp |
 | Keywords           | regex, regexp, regular expression, unicode |
 | # releases         | 8 |
-| # dependents       | 369 |
-| # downloads        | 118039517 |
+| # dependents       | 427 |
+| # downloads        | 183969347 |
 | # stars            | 31 |
 
 ## Links

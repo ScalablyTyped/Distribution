@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("gantt", JSImport.Namespace)
+@JSImport("Gantt", JSImport.Namespace)
 @js.native
 object ganttMod extends TopLevel[GanttEnterprise | GanttStatic]
 

@@ -10,9 +10,9 @@ Missing keepalive http.Agent
 | ------------------ | :-------------: |
 | Full name          | agentkeepalive |
 | Keywords           | http, https, agent, keepalive, agentkeepalive, HttpAgent, HttpsAgent |
-| # releases         | 11 |
-| # dependents       | 186 |
-| # downloads        | 41024946 |
+| # releases         | 10 |
+| # dependents       | 221 |
+| # downloads        | 93611303 |
 | # stars            | 5 |
 
 ## Links

@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EventTargetSqsTarget extends js.Object {
   /**
     * The FIFO message group ID to use as the target.
     */
-  var messageGroupId: js.UndefOr[Input[String]] = js.undefined
+  var messageGroupId: js.UndefOr[Input[String]] = js.native
 }
 
 object EventTargetSqsTarget {

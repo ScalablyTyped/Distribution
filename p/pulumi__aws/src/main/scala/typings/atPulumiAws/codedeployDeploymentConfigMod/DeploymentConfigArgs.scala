@@ -7,23 +7,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DeploymentConfigArgs extends js.Object {
   /**
     * The compute platform can be `Server`, `Lambda`, or `ECS`. Default is `Server`.
     */
-  val computePlatform: js.UndefOr[Input[String]] = js.undefined
+  val computePlatform: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the deployment config.
     */
-  val deploymentConfigName: Input[String]
+  val deploymentConfigName: Input[String] = js.native
   /**
     * A minimumHealthyHosts block. Minimum Healthy Hosts are documented below.
     */
-  val minimumHealthyHosts: js.UndefOr[Input[DeploymentConfigMinimumHealthyHosts]] = js.undefined
+  val minimumHealthyHosts: js.UndefOr[Input[DeploymentConfigMinimumHealthyHosts]] = js.native
   /**
     * A trafficRoutingConfig block. Traffic Routing Config is documented below.
     */
-  val trafficRoutingConfig: js.UndefOr[Input[DeploymentConfigTrafficRoutingConfig]] = js.undefined
+  val trafficRoutingConfig: js.UndefOr[Input[DeploymentConfigTrafficRoutingConfig]] = js.native
 }
 
 object DeploymentConfigArgs {

@@ -10,9 +10,9 @@ Tiny async loader for modern browsers
 | ------------------ | :-------------: |
 | Full name          | loadjs |
 | Keywords           | async, loader, dependency manager |
-| # releases         | 6 |
-| # dependents       | 35 |
-| # downloads        | 1172026 |
+| # releases         | 10 |
+| # dependents       | 57 |
+| # downloads        | 3656445 |
 | # stars            | 3 |
 
 ## Links

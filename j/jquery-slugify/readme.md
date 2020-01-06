@@ -10,9 +10,9 @@ Just another another (another) url slug plugin for jQuery
 | ------------------ | :-------------: |
 | Full name          | jquery-slugify |
 | Keywords           | javascript, jquery, slugs, slug, strings, jquery-plugin |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 3705 |
+| # downloads        | 9071 |
 | # stars            | 0 |
 
 ## Links

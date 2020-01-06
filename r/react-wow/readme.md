@@ -11,8 +11,8 @@ Using CSS animation in your react components.
 | Full name          | react-wow |
 | Keywords           | react, react-component, animation |
 | # releases         | 3 |
-| # dependents       | 0 |
-| # downloads        | 5563 |
+| # dependents       | 1 |
+| # downloads        | 16418 |
 | # stars            | 0 |
 
 ## Links

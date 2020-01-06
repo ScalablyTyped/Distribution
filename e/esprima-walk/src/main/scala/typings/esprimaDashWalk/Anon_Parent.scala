@@ -1,6 +1,6 @@
 package typings.esprimaDashWalk
 
-import typings.estree.estreeMod.Node
+import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

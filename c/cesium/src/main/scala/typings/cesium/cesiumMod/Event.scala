@@ -12,7 +12,7 @@ class Event[T /* <: js.Array[_] */] () extends js.Object {
   def addEventListener(listener: js.Function1[/* args */ T, Unit]): RemoveCallback = js.native
   def addEventListener(listener: js.Function1[/* args */ T, Unit], scope: js.Any): RemoveCallback = js.native
   def raiseEvent(
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type T is not an array type */ args: T
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type T is not an array type */ args: T
   ): Unit = js.native
   def removeEventListener(listener: js.Function1[/* args */ T, Unit]): Boolean = js.native
   def removeEventListener(listener: js.Function1[/* args */ T, Unit], scope: js.Any): Boolean = js.native

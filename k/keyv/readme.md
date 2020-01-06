@@ -10,9 +10,9 @@ Simple key-value storage with support for multiple backends
 | ------------------ | :-------------: |
 | Full name          | keyv |
 | Keywords           | key, value, store, cache, ttl |
-| # releases         | 27 |
-| # dependents       | 31 |
-| # downloads        | 32533596 |
+| # releases         | 3 |
+| # dependents       | 54 |
+| # downloads        | 87855131 |
 | # stars            | 2 |
 
 ## Links

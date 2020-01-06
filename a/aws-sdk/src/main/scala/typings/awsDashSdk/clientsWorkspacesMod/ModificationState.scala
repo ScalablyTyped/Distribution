@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ModificationState extends js.Object {
   /**
     * The resource.
     */
-  var Resource: js.UndefOr[ModificationResourceEnum] = js.undefined
+  var Resource: js.UndefOr[ModificationResourceEnum] = js.native
   /**
     * The modification state.
     */
-  var State: js.UndefOr[ModificationStateEnum] = js.undefined
+  var State: js.UndefOr[ModificationStateEnum] = js.native
 }
 
 object ModificationState {

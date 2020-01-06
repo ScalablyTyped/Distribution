@@ -10,9 +10,9 @@ zendesk API client wrapper
 | ------------------ | :-------------: |
 | Full name          | node-zendesk |
 | Keywords           | zendesk, API, support, supportdesk, buddha, radar, wrapper, help center, zopim, voice, reseller, knowledge base |
-| # releases         | 6 |
-| # dependents       | 11 |
-| # downloads        | 472952 |
+| # releases         | 4 |
+| # dependents       | 14 |
+| # downloads        | 752613 |
 | # stars            | 6 |
 
 ## Links

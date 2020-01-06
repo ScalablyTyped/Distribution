@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Rectangle extends js.Object {
   /**
     * Height of rectangle in pixels. Specify only even numbers.
     */
-  var Height: js.UndefOr[__integerMin2Max2147483647] = js.undefined
+  var Height: js.UndefOr[__integerMin2Max2147483647] = js.native
   /**
     * Width of rectangle in pixels. Specify only even numbers.
     */
-  var Width: js.UndefOr[__integerMin2Max2147483647] = js.undefined
+  var Width: js.UndefOr[__integerMin2Max2147483647] = js.native
   /**
     * The distance, in pixels, between the rectangle and the left edge of the video frame. Specify only even numbers.
     */
-  var X: js.UndefOr[__integerMin0Max2147483647] = js.undefined
+  var X: js.UndefOr[__integerMin0Max2147483647] = js.native
   /**
     * The distance, in pixels, between the rectangle and the top edge of the video frame. Specify only even numbers.
     */
-  var Y: js.UndefOr[__integerMin0Max2147483647] = js.undefined
+  var Y: js.UndefOr[__integerMin0Max2147483647] = js.native
 }
 
 object Rectangle {

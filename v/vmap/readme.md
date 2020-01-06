@@ -10,9 +10,9 @@ Javascript VMAP Parser
 | ------------------ | :-------------: |
 | Full name          | vmap |
 | Keywords           | vmap, ad, advertising, iab, in-stream, video |
-| # releases         | 6 |
+| # releases         | 7 |
 | # dependents       | 0 |
-| # downloads        | 14209 |
+| # downloads        | 23797 |
 | # stars            | 0 |
 
 ## Links

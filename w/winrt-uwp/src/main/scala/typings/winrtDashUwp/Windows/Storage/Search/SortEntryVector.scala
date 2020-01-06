@@ -44,12 +44,9 @@ abstract class SortEntryVector () extends Array[SortEntry] {
     */
   def getView(): IVectorView[SortEntry] = js.native
   def indexOf(value: SortEntry, extra: js.Any*): Anon_Index = js.native
-  /**
-    * Retrieves the index of a specified sort entry in the collection.
-    * @param value The sort entry to find in the collection.
-    */
+  /* hack */
   @JSName("indexOf")
-  def indexOf_Anon_Index(value: SortEntry): Anon_Index = js.native
+  def indexOf_Double(searchElement: SortEntry): Double = js.native
   /**
     * Inserts a sort entry into the collection at a specified index.
     * @param index The zero-based index of the location to insert the sort entry.

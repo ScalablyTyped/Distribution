@@ -5,14 +5,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/Snackbar/Snackbar.SnackbarClassKey>> */
+@js.native
 trait PartialClassNameMapSnackbarClassKey extends js.Object {
-  var anchorOriginBottomCenter: js.UndefOr[String] = js.undefined
-  var anchorOriginBottomLeft: js.UndefOr[String] = js.undefined
-  var anchorOriginBottomRight: js.UndefOr[String] = js.undefined
-  var anchorOriginTopCenter: js.UndefOr[String] = js.undefined
-  var anchorOriginTopLeft: js.UndefOr[String] = js.undefined
-  var anchorOriginTopRight: js.UndefOr[String] = js.undefined
-  var root: js.UndefOr[String] = js.undefined
+  var anchorOriginBottomCenter: js.UndefOr[String] = js.native
+  var anchorOriginBottomLeft: js.UndefOr[String] = js.native
+  var anchorOriginBottomRight: js.UndefOr[String] = js.native
+  var anchorOriginTopCenter: js.UndefOr[String] = js.native
+  var anchorOriginTopLeft: js.UndefOr[String] = js.native
+  var anchorOriginTopRight: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.native
 }
 
 object PartialClassNameMapSnackbarClassKey {

@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EncryptionInTransit extends js.Object {
   /**
     * 
@@ -17,14 +18,14 @@ trait EncryptionInTransit extends js.Object {
     The default value is TLS_PLAINTEXT.
     
     */
-  var ClientBroker: js.UndefOr[typings.awsDashSdk.clientsKafkaMod.ClientBroker] = js.undefined
+  var ClientBroker: js.UndefOr[typings.awsDashSdk.clientsKafkaMod.ClientBroker] = js.native
   /**
     * 
     When set to true, it indicates that data communication among the broker nodes of the cluster is encrypted. When set to false, the communication happens in plaintext.
     The default value is true.
     
     */
-  var InCluster: js.UndefOr[__boolean] = js.undefined
+  var InCluster: js.UndefOr[__boolean] = js.native
 }
 
 object EncryptionInTransit {
@@ -32,7 +33,7 @@ object EncryptionInTransit {
   def apply(ClientBroker: ClientBroker = null, InCluster: js.UndefOr[Boolean] = js.undefined): EncryptionInTransit = {
     val __obj = js.Dynamic.literal()
     if (ClientBroker != null) __obj.updateDynamic("ClientBroker")(ClientBroker.asInstanceOf[js.Any])
-    if (!js.isUndefined(InCluster)) __obj.updateDynamic("InCluster")(InCluster)
+    if (!js.isUndefined(InCluster)) __obj.updateDynamic("InCluster")(InCluster.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncryptionInTransit]
   }
 }

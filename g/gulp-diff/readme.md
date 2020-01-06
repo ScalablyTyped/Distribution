@@ -12,7 +12,7 @@ Show diffs for files in the stream against those in a target directory
 | Keywords           | gulpplugin, diff, diffs |
 | # releases         | 1 |
 | # dependents       | 2 |
-| # downloads        | 294726 |
+| # downloads        | 250347 |
 | # stars            | 4 |
 
 ## Links

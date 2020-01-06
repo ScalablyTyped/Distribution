@@ -10,9 +10,9 @@ Convert a value to an array
 | ------------------ | :-------------: |
 | Full name          | arrify |
 | Keywords           | array, arrify, arrayify, convert, value, ensure |
-| # releases         | 1 |
-| # dependents       | 355 |
-| # downloads        | 254294931 |
+| # releases         | 3 |
+| # dependents       | 395 |
+| # downloads        | 383542942 |
 | # stars            | 8 |
 
 ## Links

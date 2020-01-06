@@ -10,9 +10,9 @@ Check if IP address is private.
 | ------------------ | :-------------: |
 | Full name          | private-ip |
 | Keywords           | ip, address, private |
-| # releases         | 4 |
-| # dependents       | 3 |
-| # downloads        | 58090 |
+| # releases         | 0 |
+| # dependents       | 4 |
+| # downloads        | 103149 |
 | # stars            | 1 |
 
 ## Links

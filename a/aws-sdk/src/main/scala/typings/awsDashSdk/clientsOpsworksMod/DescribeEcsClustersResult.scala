@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DescribeEcsClustersResult extends js.Object {
   /**
     * A list of EcsCluster objects containing the cluster descriptions.
     */
-  var EcsClusters: js.UndefOr[typings.awsDashSdk.clientsOpsworksMod.EcsClusters] = js.undefined
+  var EcsClusters: js.UndefOr[typings.awsDashSdk.clientsOpsworksMod.EcsClusters] = js.native
   /**
     * If a paginated request does not return all of the remaining results, this parameter is set to a token that you can assign to the request object's NextToken parameter to retrieve the next set of results. If the previous paginated request returned all of the remaining results, this parameter is set to null.
     */
-  var NextToken: js.UndefOr[String] = js.undefined
+  var NextToken: js.UndefOr[String] = js.native
 }
 
 object DescribeEcsClustersResult {
   @scala.inline
   def apply(EcsClusters: EcsClusters = null, NextToken: String = null): DescribeEcsClustersResult = {
     val __obj = js.Dynamic.literal()
-    if (EcsClusters != null) __obj.updateDynamic("EcsClusters")(EcsClusters)
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
+    if (EcsClusters != null) __obj.updateDynamic("EcsClusters")(EcsClusters.asInstanceOf[js.Any])
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeEcsClustersResult]
   }
 }

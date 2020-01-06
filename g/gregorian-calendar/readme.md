@@ -11,8 +11,8 @@ date time utils ported from java
 | Full name          | gregorian-calendar |
 | Keywords           | date, time |
 | # releases         | 0 |
-| # dependents       | 58 |
-| # downloads        | 205600 |
+| # dependents       | 62 |
+| # downloads        | 263686 |
 | # stars            | 0 |
 
 ## Links

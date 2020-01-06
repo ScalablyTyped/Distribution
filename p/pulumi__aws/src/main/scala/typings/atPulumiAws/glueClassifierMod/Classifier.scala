@@ -1,5 +1,6 @@
 package typings.atPulumiAws.glueClassifierMod
 
+import typings.atPulumiAws.typesOutputMod.glue.ClassifierCsvClassifier
 import typings.atPulumiAws.typesOutputMod.glue.ClassifierGrokClassifier
 import typings.atPulumiAws.typesOutputMod.glue.ClassifierJsonClassifier
 import typings.atPulumiAws.typesOutputMod.glue.ClassifierXmlClassifier
@@ -25,6 +26,10 @@ class Classifier protected () extends CustomResource {
   def this(name: String) = this()
   def this(name: String, args: ClassifierArgs) = this()
   def this(name: String, args: ClassifierArgs, opts: CustomResourceOptions) = this()
+  /**
+    * A classifier for Csv content. Defined below.
+    */
+  val csvClassifier: Output[js.UndefOr[ClassifierCsvClassifier]] = js.native
   /**
     * A classifier that uses grok patterns. Defined below.
     */

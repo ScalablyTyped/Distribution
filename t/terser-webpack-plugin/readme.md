@@ -10,9 +10,9 @@ Terser plugin for webpack
 | ------------------ | :-------------: |
 | Full name          | terser-webpack-plugin |
 | Keywords           | uglify, uglify-js, uglify-es, terser, webpack, webpack-plugin, minification, compress, compressor, min, minification, minifier, minify, optimize, optimizer |
-| # releases         | 10 |
-| # dependents       | 1013 |
-| # downloads        | 52142728 |
+| # releases         | 26 |
+| # dependents       | 1921 |
+| # downloads        | 236048661 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ Material Components for the web wrapper for laying out form fields and labels ne
 | ------------------ | :-------------: |
 | Full name          | @material/form-field |
 | Keywords           | material components, material design, form |
-| # releases         | 52 |
-| # dependents       | 39 |
-| # downloads        | 1478833 |
+| # releases         | 118 |
+| # dependents       | 59 |
+| # downloads        | 1454524 |
 | # stars            | 0 |
 
 ## Links

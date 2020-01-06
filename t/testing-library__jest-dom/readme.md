@@ -10,9 +10,9 @@ Custom jest matchers to test the state of the DOM
 | ------------------ | :-------------: |
 | Full name          | @testing-library/jest-dom |
 | Keywords           | testing, dom, jest, jsdom |
-| # releases         | 11 |
-| # dependents       | 46 |
-| # downloads        | 3558268 |
+| # releases         | 13 |
+| # dependents       | 197 |
+| # downloads        | 6416201 |
 | # stars            | 0 |
 
 ## Links

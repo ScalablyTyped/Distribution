@@ -72,7 +72,7 @@ class WindowsFileSystem protected () extends CustomResource {
     */
   val skipFinalBackup: Output[js.UndefOr[Boolean]] = js.native
   /**
-    * Storage capacity (GiB) of the file system. Minimum of 300 and maximum of 65536.
+    * Storage capacity (GiB) of the file system. Minimum of 32 and maximum of 65536.
     */
   val storageCapacity: Output[Double] = js.native
   /**

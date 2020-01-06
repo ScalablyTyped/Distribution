@@ -4,35 +4,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EC2InstanceCounts extends js.Object {
   /**
     * Actual number of active instances in the fleet.
     */
-  var ACTIVE: js.UndefOr[WholeNumber] = js.undefined
+  var ACTIVE: js.UndefOr[WholeNumber] = js.native
   /**
     * Ideal number of active instances in the fleet.
     */
-  var DESIRED: js.UndefOr[WholeNumber] = js.undefined
+  var DESIRED: js.UndefOr[WholeNumber] = js.native
   /**
     * Number of active instances in the fleet that are not currently hosting a game session.
     */
-  var IDLE: js.UndefOr[WholeNumber] = js.undefined
+  var IDLE: js.UndefOr[WholeNumber] = js.native
   /**
-    * Maximum value allowed for the fleet's instance count.
+    * The maximum value allowed for the fleet's instance count.
     */
-  var MAXIMUM: js.UndefOr[WholeNumber] = js.undefined
+  var MAXIMUM: js.UndefOr[WholeNumber] = js.native
   /**
-    * Minimum value allowed for the fleet's instance count.
+    * The minimum value allowed for the fleet's instance count.
     */
-  var MINIMUM: js.UndefOr[WholeNumber] = js.undefined
+  var MINIMUM: js.UndefOr[WholeNumber] = js.native
   /**
     * Number of instances in the fleet that are starting but not yet active.
     */
-  var PENDING: js.UndefOr[WholeNumber] = js.undefined
+  var PENDING: js.UndefOr[WholeNumber] = js.native
   /**
     * Number of instances in the fleet that are no longer active but haven't yet been terminated.
     */
-  var TERMINATING: js.UndefOr[WholeNumber] = js.undefined
+  var TERMINATING: js.UndefOr[WholeNumber] = js.native
 }
 
 object EC2InstanceCounts {

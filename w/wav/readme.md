@@ -11,8 +11,8 @@ Typings are for version 1.0
 | Full name          | wav |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 28 |
-| # downloads        | 69246 |
+| # dependents       | 31 |
+| # downloads        | 72648 |
 | # stars            | 1 |
 
 ## Links

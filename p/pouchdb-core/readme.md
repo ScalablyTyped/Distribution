@@ -10,9 +10,9 @@ The core of PouchDB as a standalone package.
 | ------------------ | :-------------: |
 | Full name          | pouchdb-core |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 56 |
-| # downloads        | 379965 |
+| # releases         | 8 |
+| # dependents       | 64 |
+| # downloads        | 502166 |
 | # stars            | 1 |
 
 ## Links

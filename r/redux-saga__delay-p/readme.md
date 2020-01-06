@@ -10,9 +10,9 @@ Promisified setTimeout
 | ------------------ | :-------------: |
 | Full name          | @redux-saga/delay-p |
 | Keywords           | promise, resolve, delay, defer, wait, stall, timeout, settimeout, event, loop, next, tick, delay, async, await, promises, bluebird |
-| # releases         | 7 |
+| # releases         | 9 |
 | # dependents       | 2 |
-| # downloads        | 532740 |
+| # downloads        | 8883745 |
 | # stars            | 0 |
 
 ## Links

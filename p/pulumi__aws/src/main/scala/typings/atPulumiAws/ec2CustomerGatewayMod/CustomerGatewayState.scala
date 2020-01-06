@@ -6,24 +6,25 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CustomerGatewayState extends js.Object {
   /**
     * The gateway's Border Gateway Protocol (BGP) Autonomous System Number (ASN).
     */
-  val bgpAsn: js.UndefOr[Input[Double]] = js.undefined
+  val bgpAsn: js.UndefOr[Input[Double]] = js.native
   /**
     * The IP address of the gateway's Internet-routable external interface.
     */
-  val ipAddress: js.UndefOr[Input[String]] = js.undefined
+  val ipAddress: js.UndefOr[Input[String]] = js.native
   /**
     * Tags to apply to the gateway.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * The type of customer gateway. The only type AWS
     * supports at this time is "ipsec.1".
     */
-  val `type`: js.UndefOr[Input[String]] = js.undefined
+  val `type`: js.UndefOr[Input[String]] = js.native
 }
 
 object CustomerGatewayState {

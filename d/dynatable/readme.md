@@ -10,9 +10,9 @@ A wrapper for DynamoDB tables, with a promise wrapped simplified API for the AWS
 | ------------------ | :-------------: |
 | Full name          | dynatable |
 | Keywords           | dynamodb |
-| # releases         | 6 |
+| # releases         | 1 |
 | # dependents       | 0 |
-| # downloads        | 575 |
+| # downloads        | 1143 |
 | # stars            | 1 |
 
 ## Links

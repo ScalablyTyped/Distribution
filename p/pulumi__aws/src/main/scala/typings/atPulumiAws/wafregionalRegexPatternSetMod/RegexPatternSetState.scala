@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RegexPatternSetState extends js.Object {
   /**
     * The name or description of the Regex Pattern Set.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * A list of regular expression (regex) patterns that you want AWS WAF to search for, such as `B[a@]dB[o0]t`.
     */
-  val regexPatternStrings: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val regexPatternStrings: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
 }
 
 object RegexPatternSetState {

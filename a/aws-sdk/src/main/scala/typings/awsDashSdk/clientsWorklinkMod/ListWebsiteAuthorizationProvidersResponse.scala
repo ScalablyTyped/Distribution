@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ListWebsiteAuthorizationProvidersResponse extends js.Object {
   /**
     * The pagination token to use to retrieve the next page of results for this operation. If this value is null, it retrieves the first page.
     */
-  var NextToken: js.UndefOr[typings.awsDashSdk.clientsWorklinkMod.NextToken] = js.undefined
+  var NextToken: js.UndefOr[typings.awsDashSdk.clientsWorklinkMod.NextToken] = js.native
   /**
     * The website authorization providers.
     */
-  var WebsiteAuthorizationProviders: js.UndefOr[WebsiteAuthorizationProvidersSummaryList] = js.undefined
+  var WebsiteAuthorizationProviders: js.UndefOr[WebsiteAuthorizationProvidersSummaryList] = js.native
 }
 
 object ListWebsiteAuthorizationProvidersResponse {
@@ -22,8 +23,8 @@ object ListWebsiteAuthorizationProvidersResponse {
     WebsiteAuthorizationProviders: WebsiteAuthorizationProvidersSummaryList = null
   ): ListWebsiteAuthorizationProvidersResponse = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
-    if (WebsiteAuthorizationProviders != null) __obj.updateDynamic("WebsiteAuthorizationProviders")(WebsiteAuthorizationProviders)
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
+    if (WebsiteAuthorizationProviders != null) __obj.updateDynamic("WebsiteAuthorizationProviders")(WebsiteAuthorizationProviders.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListWebsiteAuthorizationProvidersResponse]
   }
 }

@@ -11,8 +11,8 @@ deterministic JSON.stringify() with custom sorting to get deterministic hashes f
 | Full name          | json-stable-stringify |
 | Keywords           | json, stringify, deterministic, hash, sort, stable |
 | # releases         | 1 |
-| # dependents       | 686 |
-| # downloads        | 229044989 |
+| # dependents       | 805 |
+| # downloads        | 228354195 |
 | # stars            | 20 |
 
 ## Links

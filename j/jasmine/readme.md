@@ -11,8 +11,8 @@ Command line jasmine
 | Full name          | jasmine |
 | Keywords           | test, jasmine, tdd, bdd |
 | # releases         | 10 |
-| # dependents       | 477 |
-| # downloads        | 45583853 |
+| # dependents       | 716 |
+| # downloads        | 63392825 |
 | # stars            | 64 |
 
 ## Links

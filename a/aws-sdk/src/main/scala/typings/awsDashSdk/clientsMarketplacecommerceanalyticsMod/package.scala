@@ -32,6 +32,8 @@ package object clientsMarketplacecommerceanalyticsMod {
     - typings.awsDashSdk.awsDashSdkStrings.disbursed_amount_by_customer_geo
     - typings.awsDashSdk.awsDashSdkStrings.disbursed_amount_by_age_of_uncollected_funds
     - typings.awsDashSdk.awsDashSdkStrings.disbursed_amount_by_age_of_disbursed_funds
+    - typings.awsDashSdk.awsDashSdkStrings.disbursed_amount_by_age_of_past_due_funds
+    - typings.awsDashSdk.awsDashSdkStrings.disbursed_amount_by_uncollected_funds_breakdown
     - typings.awsDashSdk.awsDashSdkStrings.customer_profile_by_industry
     - typings.awsDashSdk.awsDashSdkStrings.customer_profile_by_revenue
     - typings.awsDashSdk.awsDashSdkStrings.customer_profile_by_geography
@@ -55,7 +57,7 @@ package object clientsMarketplacecommerceanalyticsMod {
   type SupportDataSetType = _SupportDataSetType | String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2015-07-01`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

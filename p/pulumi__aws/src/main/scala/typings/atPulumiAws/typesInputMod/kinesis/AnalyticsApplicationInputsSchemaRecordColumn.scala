@@ -5,13 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AnalyticsApplicationInputsSchemaRecordColumn extends js.Object {
-  var mapping: js.UndefOr[Input[String]] = js.undefined
+  var mapping: js.UndefOr[Input[String]] = js.native
   /**
     * Name of the Kinesis Analytics Application.
     */
-  var name: Input[String]
-  var sqlType: Input[String]
+  var name: Input[String] = js.native
+  var sqlType: Input[String] = js.native
 }
 
 object AnalyticsApplicationInputsSchemaRecordColumn {

@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EventRiskType extends js.Object {
   /**
     * The risk decision.
     */
-  var RiskDecision: js.UndefOr[RiskDecisionType] = js.undefined
+  var RiskDecision: js.UndefOr[RiskDecisionType] = js.native
   /**
     * The risk level.
     */
-  var RiskLevel: js.UndefOr[RiskLevelType] = js.undefined
+  var RiskLevel: js.UndefOr[RiskLevelType] = js.native
 }
 
 object EventRiskType {

@@ -10,9 +10,9 @@ Coerce request properties according to an openapi parameter list.
 | ------------------ | :-------------: |
 | Full name          | openapi-request-coercer |
 | Keywords           | openapi, coercion, request, coercer, jsonschema |
-| # releases         | 10 |
+| # releases         | 11 |
 | # dependents       | 4 |
-| # downloads        | 334425 |
+| # downloads        | 414167 |
 | # stars            | 0 |
 
 ## Links

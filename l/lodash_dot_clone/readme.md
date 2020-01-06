@@ -11,8 +11,8 @@ The lodash method `_.clone` exported as a module.
 | Full name          | lodash.clone |
 | Keywords           | lodash-modularized, clone |
 | # releases         | 1 |
-| # dependents       | 235 |
-| # downloads        | 32097621 |
+| # dependents       | 269 |
+| # downloads        | 68305019 |
 | # stars            | 1 |
 
 ## Links

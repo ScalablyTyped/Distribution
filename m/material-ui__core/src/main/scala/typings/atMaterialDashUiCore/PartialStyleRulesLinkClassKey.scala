@@ -6,12 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/Link.LinkClassKey>> */
+@js.native
 trait PartialStyleRulesLinkClassKey extends js.Object {
-  var button: js.UndefOr[CSSProperties] = js.undefined
-  var root: js.UndefOr[CSSProperties] = js.undefined
-  var underlineAlways: js.UndefOr[CSSProperties] = js.undefined
-  var underlineHover: js.UndefOr[CSSProperties] = js.undefined
-  var underlineNone: js.UndefOr[CSSProperties] = js.undefined
+  var button: js.UndefOr[CSSProperties] = js.native
+  var root: js.UndefOr[CSSProperties] = js.native
+  var underlineAlways: js.UndefOr[CSSProperties] = js.native
+  var underlineHover: js.UndefOr[CSSProperties] = js.native
+  var underlineNone: js.UndefOr[CSSProperties] = js.native
 }
 
 object PartialStyleRulesLinkClassKey {

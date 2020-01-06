@@ -54,12 +54,12 @@ trait ComprehendMedical extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DetectEntitiesResponse, Unit]
   ): Request[DetectEntitiesResponse, AWSError] = js.native
   /**
-    * Inspects the clinical text for a variety of medical entities and returns specific information about them such as entity category, location, and confidence score on that information. The DetectEntitiesV2 operation replaces the DetectEntities operation. This new action uses a different model for determining the entities in your medical text and changes the way that some entities are returned in the output. You should use the DetectEntitiesV2 operation in all new applications. The DetectEntitiesV2 operation returns the Acuity and Direction entities as attributes instead of types. It does not return the Quality or Quantity entities.
+    * Inspects the clinical text for a variety of medical entities and returns specific information about them such as entity category, location, and confidence score on that information. The DetectEntitiesV2 operation replaces the DetectEntities operation. This new action uses a different model for determining the entities in your medical text and changes the way that some entities are returned in the output. You should use the DetectEntitiesV2 operation in all new applications. The DetectEntitiesV2 operation returns the Acuity and Direction entities as attributes instead of types. 
     */
   def detectEntitiesV2(): Request[DetectEntitiesV2Response, AWSError] = js.native
   def detectEntitiesV2(callback: js.Function2[/* err */ AWSError, /* data */ DetectEntitiesV2Response, Unit]): Request[DetectEntitiesV2Response, AWSError] = js.native
   /**
-    * Inspects the clinical text for a variety of medical entities and returns specific information about them such as entity category, location, and confidence score on that information. The DetectEntitiesV2 operation replaces the DetectEntities operation. This new action uses a different model for determining the entities in your medical text and changes the way that some entities are returned in the output. You should use the DetectEntitiesV2 operation in all new applications. The DetectEntitiesV2 operation returns the Acuity and Direction entities as attributes instead of types. It does not return the Quality or Quantity entities.
+    * Inspects the clinical text for a variety of medical entities and returns specific information about them such as entity category, location, and confidence score on that information. The DetectEntitiesV2 operation replaces the DetectEntities operation. This new action uses a different model for determining the entities in your medical text and changes the way that some entities are returned in the output. You should use the DetectEntitiesV2 operation in all new applications. The DetectEntitiesV2 operation returns the Acuity and Direction entities as attributes instead of types. 
     */
   def detectEntitiesV2(params: DetectEntitiesV2Request): Request[DetectEntitiesV2Response, AWSError] = js.native
   def detectEntitiesV2(
@@ -79,6 +79,32 @@ trait ComprehendMedical extends Service {
     params: DetectPHIRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DetectPHIResponse, Unit]
   ): Request[DetectPHIResponse, AWSError] = js.native
+  /**
+    * InferICD10CM detects medical conditions as entities listed in a patient record and links those entities to normalized concept identifiers in the ICD-10-CM knowledge base from the Centers for Disease Control.
+    */
+  def inferICD10CM(): Request[InferICD10CMResponse, AWSError] = js.native
+  def inferICD10CM(callback: js.Function2[/* err */ AWSError, /* data */ InferICD10CMResponse, Unit]): Request[InferICD10CMResponse, AWSError] = js.native
+  /**
+    * InferICD10CM detects medical conditions as entities listed in a patient record and links those entities to normalized concept identifiers in the ICD-10-CM knowledge base from the Centers for Disease Control.
+    */
+  def inferICD10CM(params: InferICD10CMRequest): Request[InferICD10CMResponse, AWSError] = js.native
+  def inferICD10CM(
+    params: InferICD10CMRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ InferICD10CMResponse, Unit]
+  ): Request[InferICD10CMResponse, AWSError] = js.native
+  /**
+    * InferRxNorm detects medications as entities listed in a patient record and links to the normalized concept identifiers in the RxNorm database from the National Library of Medicine.
+    */
+  def inferRxNorm(): Request[InferRxNormResponse, AWSError] = js.native
+  def inferRxNorm(callback: js.Function2[/* err */ AWSError, /* data */ InferRxNormResponse, Unit]): Request[InferRxNormResponse, AWSError] = js.native
+  /**
+    * InferRxNorm detects medications as entities listed in a patient record and links to the normalized concept identifiers in the RxNorm database from the National Library of Medicine.
+    */
+  def inferRxNorm(params: InferRxNormRequest): Request[InferRxNormResponse, AWSError] = js.native
+  def inferRxNorm(
+    params: InferRxNormRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ InferRxNormResponse, Unit]
+  ): Request[InferRxNormResponse, AWSError] = js.native
   /**
     * Gets a list of medical entity detection jobs that you have submitted.
     */

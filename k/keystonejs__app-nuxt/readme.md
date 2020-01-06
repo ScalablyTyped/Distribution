@@ -10,9 +10,9 @@ KeystoneJS Nuxt.js App.
 | ------------------ | :-------------: |
 | Full name          | @keystonejs/app-nuxt |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 232 |
+| # downloads        | 727 |
 | # stars            | 0 |
 
 ## Links

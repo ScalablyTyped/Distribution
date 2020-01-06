@@ -10,9 +10,9 @@ Provides high-level access to socket options like TCP_KEEPIDLE, TCP_KEEPINTVL, T
 | ------------------ | :-------------: |
 | Full name          | net-keepalive |
 | Keywords           | ffi, setsockopt, getsockopt, ref, net, keep-alive, keepalive, keep alive, keep, alive, tcp |
-| # releases         | 7 |
-| # dependents       | 5 |
-| # downloads        | 10624 |
+| # releases         | 5 |
+| # dependents       | 7 |
+| # downloads        | 30005 |
 | # stars            | 2 |
 
 ## Links

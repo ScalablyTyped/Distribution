@@ -10,9 +10,9 @@ A functional, reactive motion library.
 | ------------------ | :-------------: |
 | Full name          | popmotion |
 | Keywords           | animation, ux, ui, popmotion, canvas animation, dom animation, dom, pointer tracking, mouse, mouse tracking, touch, touch tracking, physics, interaction, interface, svg |
-| # releases         | 129 |
-| # dependents       | 47 |
-| # downloads        | 1672928 |
+| # releases         | 63 |
+| # dependents       | 61 |
+| # downloads        | 4746449 |
 | # stars            | 8 |
 
 ## Links

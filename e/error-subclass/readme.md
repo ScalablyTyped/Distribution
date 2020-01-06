@@ -11,8 +11,8 @@ Extendable Error Class
 | Full name          | error-subclass |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 22769 |
+| # dependents       | 8 |
+| # downloads        | 29065 |
 | # stars            | 0 |
 
 ## Links

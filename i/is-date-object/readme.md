@@ -11,8 +11,8 @@ Is this value a JS Date object? This module works cross-realm/iframe, and despit
 | Full name          | is-date-object |
 | Keywords           | Date, ES6, toStringTag, @@toStringTag, Date object |
 | # releases         | 0 |
-| # dependents       | 29 |
-| # downloads        | 200689816 |
+| # dependents       | 45 |
+| # downloads        | 360453995 |
 | # stars            | 2 |
 
 ## Links

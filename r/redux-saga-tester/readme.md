@@ -10,9 +10,9 @@ Full redux environment testing helper for redux-saga
 | ------------------ | :-------------: |
 | Full name          | redux-saga-tester |
 | Keywords           | redux-saga, test |
-| # releases         | 229 |
+| # releases         | 270 |
 | # dependents       | 0 |
-| # downloads        | 1312895 |
+| # downloads        | 798330 |
 | # stars            | 1 |
 
 ## Links

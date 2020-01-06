@@ -10,9 +10,9 @@ Filesystem-buffered, passthrough stream that buffers indefinitely rather than pr
 | ------------------ | :-------------: |
 | Full name          | fs-capacitor |
 | Keywords           | stream, buffer, file, split, clone |
-| # releases         | 15 |
-| # dependents       | 2 |
-| # downloads        | 3960475 |
+| # releases         | 25 |
+| # dependents       | 4 |
+| # downloads        | 16253902 |
 | # stars            | 0 |
 
 ## Links

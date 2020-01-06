@@ -11,8 +11,8 @@ Cooperative scheduler for the browser environment.
 | Full name          | schedule |
 | Keywords           | react |
 | # releases         | 6 |
-| # dependents       | 11 |
-| # downloads        | 18791729 |
+| # dependents       | 12 |
+| # downloads        | 13505288 |
 | # stars            | 3 |
 
 ## Links

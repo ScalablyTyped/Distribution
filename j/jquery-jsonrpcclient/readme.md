@@ -12,7 +12,7 @@ JSON-RPC 2.0 Client for HTTP and WebSocket backend
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 183 |
+| # downloads        | 173 |
 | # stars            | 0 |
 
 ## Links

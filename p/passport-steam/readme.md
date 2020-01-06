@@ -4,15 +4,15 @@
 Typings are for version 1.0
 
 ## Library description:
-Steam (OpenID) authentication strategy for Passport.
+Steam (OpenID 2) authentication strategy for PassportJS.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | passport-steam |
 | Keywords           | passport, steam, auth, authn, authentication, identity |
-| # releases         | 3 |
-| # dependents       | 18 |
-| # downloads        | 50052 |
+| # releases         | 5 |
+| # dependents       | 19 |
+| # downloads        | 93974 |
 | # stars            | 8 |
 
 ## Links

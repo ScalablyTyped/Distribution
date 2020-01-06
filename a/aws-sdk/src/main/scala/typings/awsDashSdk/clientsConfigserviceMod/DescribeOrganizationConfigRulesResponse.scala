@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DescribeOrganizationConfigRulesResponse extends js.Object {
   /**
     * The nextToken string returned on a previous page that you use to get the next page of results in a paginated response. 
     */
-  var NextToken: js.UndefOr[String] = js.undefined
+  var NextToken: js.UndefOr[String] = js.native
   /**
-    * Retuns a list OrganizationConfigRule objects.
+    * Returns a list of OrganizationConfigRule objects.
     */
-  var OrganizationConfigRules: js.UndefOr[typings.awsDashSdk.clientsConfigserviceMod.OrganizationConfigRules] = js.undefined
+  var OrganizationConfigRules: js.UndefOr[typings.awsDashSdk.clientsConfigserviceMod.OrganizationConfigRules] = js.native
 }
 
 object DescribeOrganizationConfigRulesResponse {
   @scala.inline
   def apply(NextToken: String = null, OrganizationConfigRules: OrganizationConfigRules = null): DescribeOrganizationConfigRulesResponse = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
-    if (OrganizationConfigRules != null) __obj.updateDynamic("OrganizationConfigRules")(OrganizationConfigRules)
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
+    if (OrganizationConfigRules != null) __obj.updateDynamic("OrganizationConfigRules")(OrganizationConfigRules.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeOrganizationConfigRulesResponse]
   }
 }

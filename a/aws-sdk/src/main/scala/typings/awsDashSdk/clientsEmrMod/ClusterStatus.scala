@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClusterStatus extends js.Object {
   /**
     * The current state of the cluster.
     */
-  var State: js.UndefOr[ClusterState] = js.undefined
+  var State: js.UndefOr[ClusterState] = js.native
   /**
     * The reason for the cluster status change.
     */
-  var StateChangeReason: js.UndefOr[ClusterStateChangeReason] = js.undefined
+  var StateChangeReason: js.UndefOr[ClusterStateChangeReason] = js.native
   /**
     * A timeline that represents the status of a cluster over the lifetime of the cluster.
     */
-  var Timeline: js.UndefOr[ClusterTimeline] = js.undefined
+  var Timeline: js.UndefOr[ClusterTimeline] = js.native
 }
 
 object ClusterStatus {
@@ -28,8 +29,8 @@ object ClusterStatus {
   ): ClusterStatus = {
     val __obj = js.Dynamic.literal()
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (StateChangeReason != null) __obj.updateDynamic("StateChangeReason")(StateChangeReason)
-    if (Timeline != null) __obj.updateDynamic("Timeline")(Timeline)
+    if (StateChangeReason != null) __obj.updateDynamic("StateChangeReason")(StateChangeReason.asInstanceOf[js.Any])
+    if (Timeline != null) __obj.updateDynamic("Timeline")(Timeline.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterStatus]
   }
 }

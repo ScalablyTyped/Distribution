@@ -10,8 +10,8 @@ An automatic loading bar for AngularJS
 | Full name          | angular-loading-bar |
 | Keywords           | angular, angularjs, loading, loadingbar, progress, progressbar |
 | # releases         | 0 |
-| # dependents       | 24 |
-| # downloads        | 1048481 |
+| # dependents       | 27 |
+| # downloads        | 1353040 |
 | # stars            | 6 |
 
 ## Links

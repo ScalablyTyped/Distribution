@@ -316,14 +316,14 @@ class Tensor[R /* <: Rank */] protected () extends js.Object {
     */
   /** @doc {heading: 'Tensors', subheading: 'Classes'} */
   def data(): js.Promise[Float32Array] = js.native
-  def dataSync(): js.Array[String] = js.native
   /**
     * Synchronously downloads the values from the `tf.Tensor`. This blocks the
     * UI thread until the values are ready, which can cause performance issues.
     */
   /** @doc {heading: 'Tensors', subheading: 'Classes'} */
+  def dataSync(): Float32Array = js.native
   @JSName("dataSync")
-  def dataSync_Float32Array(): Float32Array = js.native
+  def dataSync_Array(): js.Array[String] = js.native
   @JSName("dataSync")
   def dataSync_Int32Array(): Int32Array = js.native
   @JSName("dataSync")

@@ -11,8 +11,8 @@ jQuery plugin that makes it easy to support automatically updating fuzzy timesta
 | Full name          | timeago |
 | Keywords           | time, microformat |
 | # releases         | 7 |
-| # dependents       | 30 |
-| # downloads        | 7068407 |
+| # dependents       | 31 |
+| # downloads        | 9658081 |
 | # stars            | 0 |
 
 ## Links

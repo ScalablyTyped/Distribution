@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NetworkInterfaceAttachmentArgs extends js.Object {
   /**
     * Network interface index (int).
     */
-  val deviceIndex: Input[Double]
+  val deviceIndex: Input[Double] = js.native
   /**
     * Instance ID to attach.
     */
-  val instanceId: Input[String]
+  val instanceId: Input[String] = js.native
   /**
     * ENI ID to attach.
     */
-  val networkInterfaceId: Input[String]
+  val networkInterfaceId: Input[String] = js.native
 }
 
 object NetworkInterfaceAttachmentArgs {

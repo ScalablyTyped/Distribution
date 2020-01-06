@@ -10,9 +10,9 @@ Utils for jimp extensions.
 | ------------------ | :-------------: |
 | Full name          | @jimp/utils |
 | Keywords           | - |
-| # releases         | 13 |
+| # releases         | 66 |
 | # dependents       | 26 |
-| # downloads        | 7481900 |
+| # downloads        | 13943442 |
 | # stars            | 0 |
 
 ## Links

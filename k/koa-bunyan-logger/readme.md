@@ -10,9 +10,9 @@ Koa middleware for logging requests using bunyan
 | ------------------ | :-------------: |
 | Full name          | koa-bunyan-logger |
 | Keywords           | koa, bunyan, logging, middleware |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 19 |
-| # downloads        | 166806 |
+| # downloads        | 265740 |
 | # stars            | 6 |
 
 ## Links

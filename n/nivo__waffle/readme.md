@@ -10,9 +10,9 @@ Typings are for version 0.59.1
 | ------------------ | :-------------: |
 | Full name          | @nivo/waffle |
 | Keywords           | nivo, dataviz, react, d3, charts, waffle-chart |
-| # releases         | 19 |
+| # releases         | 27 |
 | # dependents       | 2 |
-| # downloads        | 11629 |
+| # downloads        | 16292 |
 | # stars            | 0 |
 
 ## Links

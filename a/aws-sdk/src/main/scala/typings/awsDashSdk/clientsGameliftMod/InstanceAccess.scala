@@ -4,27 +4,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InstanceAccess extends js.Object {
   /**
     * Credentials required to access the instance.
     */
-  var Credentials: js.UndefOr[InstanceCredentials] = js.undefined
+  var Credentials: js.UndefOr[InstanceCredentials] = js.native
   /**
-    * Unique identifier for a fleet containing the instance being accessed.
+    * A unique identifier for a fleet containing the instance being accessed.
     */
-  var FleetId: js.UndefOr[typings.awsDashSdk.clientsGameliftMod.FleetId] = js.undefined
+  var FleetId: js.UndefOr[typings.awsDashSdk.clientsGameliftMod.FleetId] = js.native
   /**
-    * Unique identifier for an instance being accessed.
+    * A unique identifier for an instance being accessed.
     */
-  var InstanceId: js.UndefOr[typings.awsDashSdk.clientsGameliftMod.InstanceId] = js.undefined
+  var InstanceId: js.UndefOr[typings.awsDashSdk.clientsGameliftMod.InstanceId] = js.native
   /**
-    * IP address assigned to the instance.
+    * IP address that is assigned to the instance.
     */
-  var IpAddress: js.UndefOr[typings.awsDashSdk.clientsGameliftMod.IpAddress] = js.undefined
+  var IpAddress: js.UndefOr[typings.awsDashSdk.clientsGameliftMod.IpAddress] = js.native
   /**
     * Operating system that is running on the instance.
     */
-  var OperatingSystem: js.UndefOr[typings.awsDashSdk.clientsGameliftMod.OperatingSystem] = js.undefined
+  var OperatingSystem: js.UndefOr[typings.awsDashSdk.clientsGameliftMod.OperatingSystem] = js.native
 }
 
 object InstanceAccess {
@@ -37,10 +38,10 @@ object InstanceAccess {
     OperatingSystem: OperatingSystem = null
   ): InstanceAccess = {
     val __obj = js.Dynamic.literal()
-    if (Credentials != null) __obj.updateDynamic("Credentials")(Credentials)
-    if (FleetId != null) __obj.updateDynamic("FleetId")(FleetId)
-    if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId)
-    if (IpAddress != null) __obj.updateDynamic("IpAddress")(IpAddress)
+    if (Credentials != null) __obj.updateDynamic("Credentials")(Credentials.asInstanceOf[js.Any])
+    if (FleetId != null) __obj.updateDynamic("FleetId")(FleetId.asInstanceOf[js.Any])
+    if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId.asInstanceOf[js.Any])
+    if (IpAddress != null) __obj.updateDynamic("IpAddress")(IpAddress.asInstanceOf[js.Any])
     if (OperatingSystem != null) __obj.updateDynamic("OperatingSystem")(OperatingSystem.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceAccess]
   }

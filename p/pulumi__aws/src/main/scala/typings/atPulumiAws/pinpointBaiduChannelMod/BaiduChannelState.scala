@@ -5,23 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BaiduChannelState extends js.Object {
   /**
     * Platform credential API key from Baidu.
     */
-  val apiKey: js.UndefOr[Input[String]] = js.undefined
+  val apiKey: js.UndefOr[Input[String]] = js.native
   /**
     * The application ID.
     */
-  val applicationId: js.UndefOr[Input[String]] = js.undefined
+  val applicationId: js.UndefOr[Input[String]] = js.native
   /**
     * Specifies whether to enable the channel. Defaults to `true`.
     */
-  val enabled: js.UndefOr[Input[Boolean]] = js.undefined
+  val enabled: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Platform credential Secret key from Baidu.
     */
-  val secretKey: js.UndefOr[Input[String]] = js.undefined
+  val secretKey: js.UndefOr[Input[String]] = js.native
 }
 
 object BaiduChannelState {

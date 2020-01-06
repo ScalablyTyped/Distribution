@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RecordGeolocationRoutingPolicy extends js.Object {
   /**
     * A two-letter continent code. See http://docs.aws.amazon.com/Route53/latest/APIReference/API_GetGeoLocation.html for code details. Either `continent` or `country` must be specified.
     */
-  var continent: js.UndefOr[Input[String]] = js.undefined
+  var continent: js.UndefOr[Input[String]] = js.native
   /**
     * A two-character country code or `*` to indicate a default resource record set.
     */
-  var country: js.UndefOr[Input[String]] = js.undefined
+  var country: js.UndefOr[Input[String]] = js.native
   /**
     * A subdivision code for a country.
     */
-  var subdivision: js.UndefOr[Input[String]] = js.undefined
+  var subdivision: js.UndefOr[Input[String]] = js.native
 }
 
 object RecordGeolocationRoutingPolicy {

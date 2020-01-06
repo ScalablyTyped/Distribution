@@ -10,9 +10,9 @@ Beautiful color gradients in terminal output
 | ------------------ | :-------------: |
 | Full name          | gradient-string |
 | Keywords           | cli, color, colors, colour, command-line, console, formatting, gradient, gradients, log, logging, shell, string, style, styles, terminal |
-| # releases         | 10 |
-| # dependents       | 64 |
-| # downloads        | 124941 |
+| # releases         | 3 |
+| # dependents       | 96 |
+| # downloads        | 267316 |
 | # stars            | 3 |
 
 ## Links

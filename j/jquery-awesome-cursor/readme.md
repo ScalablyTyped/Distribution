@@ -12,7 +12,7 @@ jQuery plugin for using FontAwesome icons as custom CSS cursors
 | Keywords           | jquery-plugin, fontawesome, cursor, custom, css |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 4865 |
+| # downloads        | 6377 |
 | # stars            | 0 |
 
 ## Links

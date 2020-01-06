@@ -4,27 +4,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UpdateServiceActionInput extends js.Object {
   /**
     * The language code.    en - English (default)    jp - Japanese    zh - Chinese  
     */
-  var AcceptLanguage: js.UndefOr[typings.awsDashSdk.clientsServicecatalogMod.AcceptLanguage] = js.undefined
+  var AcceptLanguage: js.UndefOr[typings.awsDashSdk.clientsServicecatalogMod.AcceptLanguage] = js.native
   /**
     * A map that defines the self-service action.
     */
-  var Definition: js.UndefOr[ServiceActionDefinitionMap] = js.undefined
+  var Definition: js.UndefOr[ServiceActionDefinitionMap] = js.native
   /**
     * The self-service action description.
     */
-  var Description: js.UndefOr[ServiceActionDescription] = js.undefined
+  var Description: js.UndefOr[ServiceActionDescription] = js.native
   /**
     * The self-service action identifier.
     */
-  var Id: typings.awsDashSdk.clientsServicecatalogMod.Id
+  var Id: typings.awsDashSdk.clientsServicecatalogMod.Id = js.native
   /**
     * The self-service action name.
     */
-  var Name: js.UndefOr[ServiceActionName] = js.undefined
+  var Name: js.UndefOr[ServiceActionName] = js.native
 }
 
 object UpdateServiceActionInput {
@@ -36,11 +37,11 @@ object UpdateServiceActionInput {
     Description: ServiceActionDescription = null,
     Name: ServiceActionName = null
   ): UpdateServiceActionInput = {
-    val __obj = js.Dynamic.literal(Id = Id)
-    if (AcceptLanguage != null) __obj.updateDynamic("AcceptLanguage")(AcceptLanguage)
-    if (Definition != null) __obj.updateDynamic("Definition")(Definition)
-    if (Description != null) __obj.updateDynamic("Description")(Description)
-    if (Name != null) __obj.updateDynamic("Name")(Name)
+    val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
+    if (AcceptLanguage != null) __obj.updateDynamic("AcceptLanguage")(AcceptLanguage.asInstanceOf[js.Any])
+    if (Definition != null) __obj.updateDynamic("Definition")(Definition.asInstanceOf[js.Any])
+    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateServiceActionInput]
   }
 }

@@ -10,9 +10,9 @@ Extract WordPress script dependencies from webpack bundles.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/dependency-extraction-webpack-plugin |
 | Keywords           | wordpress, webpack, dependency |
-| # releases         | 4 |
-| # dependents       | 1 |
-| # downloads        | 2295 |
+| # releases         | 8 |
+| # dependents       | 2 |
+| # downloads        | 88191 |
 | # stars            | 0 |
 
 ## Links

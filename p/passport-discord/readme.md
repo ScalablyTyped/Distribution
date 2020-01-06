@@ -10,9 +10,9 @@ Passport strategy for authentication with Discord (discordapp.com)
 | ------------------ | :-------------: |
 | Full name          | passport-discord |
 | Keywords           | passport, discord, auth, authentication, authn, identity |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 55056 |
+| # downloads        | 92375 |
 | # stars            | 1 |
 
 ## Links

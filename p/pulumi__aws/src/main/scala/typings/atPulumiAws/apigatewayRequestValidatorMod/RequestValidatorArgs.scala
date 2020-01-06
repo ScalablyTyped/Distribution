@@ -6,23 +6,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RequestValidatorArgs extends js.Object {
   /**
     * The name of the request validator
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of the associated Rest API
     */
-  val restApi: Input[RestApi]
+  val restApi: Input[RestApi] = js.native
   /**
     * Boolean whether to validate request body. Defaults to `false`.
     */
-  val validateRequestBody: js.UndefOr[Input[Boolean]] = js.undefined
+  val validateRequestBody: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Boolean whether to validate request parameters. Defaults to `false`.
     */
-  val validateRequestParameters: js.UndefOr[Input[Boolean]] = js.undefined
+  val validateRequestParameters: js.UndefOr[Input[Boolean]] = js.native
 }
 
 object RequestValidatorArgs {

@@ -10,14 +10,14 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ServiceType
-  extends Instantiable3[
+  extends Instantiable1[
+      (/* serviceTypeIdentifier */ Anon_Name) | (/* serviceTypeIdentifier */ js.Array[String]) | (/* serviceType */ ServiceType) | (/* serviceTypeIdentifier */ String), 
+      ServiceType
+    ]
+     with Instantiable3[
       /* name */ String, 
       /* protocol */ String, 
       /* subtypes (repeated) */ String, 
-      ServiceType
-    ]
-     with Instantiable1[
-      (/* serviceTypeIdentifier */ Anon_Name) | (/* serviceTypeIdentifier */ js.Array[String]) | (/* serviceType */ ServiceType) | (/* serviceTypeIdentifier */ String), 
       ServiceType
     ] {
   var fullyQualified: Boolean = js.native

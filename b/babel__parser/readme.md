@@ -10,9 +10,9 @@ A JavaScript parser
 | ------------------ | :-------------: |
 | Full name          | @babel/parser |
 | Keywords           | babel, javascript, parser, tc39, ecmascript, @babel/parser |
-| # releases         | 34 |
-| # dependents       | 372 |
-| # downloads        | 320207902 |
+| # releases         | 46 |
+| # dependents       | 670 |
+| # downloads        | 475794112 |
 | # stars            | 0 |
 
 ## Links

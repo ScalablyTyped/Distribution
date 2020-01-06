@@ -10,9 +10,9 @@ Color spaces! RGB, HSL, Cubehelix, Lab and HCL (Lch).
 | ------------------ | :-------------: |
 | Full name          | d3-color |
 | Keywords           | d3, d3-module, color, rgb, hsl, lab, hcl, lch, cubehelix |
-| # releases         | 7 |
-| # dependents       | 167 |
-| # downloads        | 30771691 |
+| # releases         | 14 |
+| # dependents       | 216 |
+| # downloads        | 50278221 |
 | # stars            | 2 |
 
 ## Links

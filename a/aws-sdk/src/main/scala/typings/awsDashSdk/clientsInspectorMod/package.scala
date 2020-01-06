@@ -179,11 +179,11 @@ package object clientsInspectorMod {
   type SecurityGroups = js.Array[SecurityGroup]
   type ServiceName = String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Low
-    - typings.awsDashSdk.awsDashSdkStrings.Medium
-    - typings.awsDashSdk.awsDashSdkStrings.High
-    - typings.awsDashSdk.awsDashSdkStrings.Informational
-    - typings.awsDashSdk.awsDashSdkStrings.Undefined
+    - typings.awsDashSdk.awsDashSdkStrings.Low_
+    - typings.awsDashSdk.awsDashSdkStrings.Medium_
+    - typings.awsDashSdk.awsDashSdkStrings.High_
+    - typings.awsDashSdk.awsDashSdkStrings.Informational_
+    - typings.awsDashSdk.awsDashSdkStrings.Undefined_
     - java.lang.String
   */
   type Severity = _Severity | String
@@ -210,7 +210,7 @@ package object clientsInspectorMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2015-08-18`
     - typings.awsDashSdk.awsDashSdkStrings.`2016-02-16`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

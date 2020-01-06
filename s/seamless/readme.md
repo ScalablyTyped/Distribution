@@ -12,7 +12,7 @@ Beautiful, seamless iframes with seamless.js -----------------------------------
 | Keywords           | - |
 | # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 12461 |
+| # downloads        | 14436 |
 | # stars            | 0 |
 
 ## Links

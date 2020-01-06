@@ -13,12 +13,12 @@ trait FMS extends Service {
   @JSName("config")
   var config_FMS: ConfigBase with ClientConfiguration = js.native
   /**
-    * Sets the AWS Firewall Manager administrator account. AWS Firewall Manager must be associated with the master account your AWS organization or associated with a member account that has the appropriate permissions. If the account ID that you submit is not an AWS Organizations master account, AWS Firewall Manager will set the appropriate permissions for the given member account. The account that you associate with AWS Firewall Manager is called the AWS Firewall Manager administrator account. 
+    * Sets the AWS Firewall Manager administrator account. AWS Firewall Manager must be associated with the master account of your AWS organization or associated with a member account that has the appropriate permissions. If the account ID that you submit is not an AWS Organizations master account, AWS Firewall Manager will set the appropriate permissions for the given member account. The account that you associate with AWS Firewall Manager is called the AWS Firewall Manager administrator account. 
     */
   def associateAdminAccount(): Request[js.Object, AWSError] = js.native
   def associateAdminAccount(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Sets the AWS Firewall Manager administrator account. AWS Firewall Manager must be associated with the master account your AWS organization or associated with a member account that has the appropriate permissions. If the account ID that you submit is not an AWS Organizations master account, AWS Firewall Manager will set the appropriate permissions for the given member account. The account that you associate with AWS Firewall Manager is called the AWS Firewall Manager administrator account. 
+    * Sets the AWS Firewall Manager administrator account. AWS Firewall Manager must be associated with the master account of your AWS organization or associated with a member account that has the appropriate permissions. If the account ID that you submit is not an AWS Organizations master account, AWS Firewall Manager will set the appropriate permissions for the given member account. The account that you associate with AWS Firewall Manager is called the AWS Firewall Manager administrator account. 
     */
   def associateAdminAccount(params: AssociateAdminAccountRequest): Request[js.Object, AWSError] = js.native
   def associateAdminAccount(
@@ -52,12 +52,12 @@ trait FMS extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
-    * Disassociates the account that has been set as the AWS Firewall Manager administrator account. To set a different account as the administrator account, you must submit an AssociateAdminAccount request .
+    * Disassociates the account that has been set as the AWS Firewall Manager administrator account. To set a different account as the administrator account, you must submit an AssociateAdminAccount request.
     */
   def disassociateAdminAccount(): Request[js.Object, AWSError] = js.native
   def disassociateAdminAccount(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Disassociates the account that has been set as the AWS Firewall Manager administrator account. To set a different account as the administrator account, you must submit an AssociateAdminAccount request .
+    * Disassociates the account that has been set as the AWS Firewall Manager administrator account. To set a different account as the administrator account, you must submit an AssociateAdminAccount request.
     */
   def disassociateAdminAccount(params: DisassociateAdminAccountRequest): Request[js.Object, AWSError] = js.native
   def disassociateAdminAccount(
@@ -78,12 +78,12 @@ trait FMS extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetAdminAccountResponse, Unit]
   ): Request[GetAdminAccountResponse, AWSError] = js.native
   /**
-    * Returns detailed compliance information about the specified member account. Details include resources that are in and out of compliance with the specified policy. Resources are considered non-compliant if the specified policy has not been applied to them.
+    * Returns detailed compliance information about the specified member account. Details include resources that are in and out of compliance with the specified policy. Resources are considered noncompliant for AWS WAF and Shield Advanced policies if the specified policy has not been applied to them. Resources are considered noncompliant for security group policies if they are in scope of the policy, they violate one or more of the policy rules, and remediation is disabled or not possible. 
     */
   def getComplianceDetail(): Request[GetComplianceDetailResponse, AWSError] = js.native
   def getComplianceDetail(callback: js.Function2[/* err */ AWSError, /* data */ GetComplianceDetailResponse, Unit]): Request[GetComplianceDetailResponse, AWSError] = js.native
   /**
-    * Returns detailed compliance information about the specified member account. Details include resources that are in and out of compliance with the specified policy. Resources are considered non-compliant if the specified policy has not been applied to them.
+    * Returns detailed compliance information about the specified member account. Details include resources that are in and out of compliance with the specified policy. Resources are considered noncompliant for AWS WAF and Shield Advanced policies if the specified policy has not been applied to them. Resources are considered noncompliant for security group policies if they are in scope of the policy, they violate one or more of the policy rules, and remediation is disabled or not possible. 
     */
   def getComplianceDetail(params: GetComplianceDetailRequest): Request[GetComplianceDetailResponse, AWSError] = js.native
   def getComplianceDetail(
@@ -91,12 +91,12 @@ trait FMS extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetComplianceDetailResponse, Unit]
   ): Request[GetComplianceDetailResponse, AWSError] = js.native
   /**
-    * Returns information about the Amazon Simple Notification Service (SNS) topic that is used to record AWS Firewall Manager SNS logs.
+    * Information about the Amazon Simple Notification Service (SNS) topic that is used to record AWS Firewall Manager SNS logs.
     */
   def getNotificationChannel(): Request[GetNotificationChannelResponse, AWSError] = js.native
   def getNotificationChannel(callback: js.Function2[/* err */ AWSError, /* data */ GetNotificationChannelResponse, Unit]): Request[GetNotificationChannelResponse, AWSError] = js.native
   /**
-    * Returns information about the Amazon Simple Notification Service (SNS) topic that is used to record AWS Firewall Manager SNS logs.
+    * Information about the Amazon Simple Notification Service (SNS) topic that is used to record AWS Firewall Manager SNS logs.
     */
   def getNotificationChannel(params: GetNotificationChannelRequest): Request[GetNotificationChannelResponse, AWSError] = js.native
   def getNotificationChannel(
@@ -117,12 +117,12 @@ trait FMS extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetPolicyResponse, Unit]
   ): Request[GetPolicyResponse, AWSError] = js.native
   /**
-    * If you created a Shield Advanced policy, returns policy-level attack summary information in the event of a potential DDoS attack.
+    * If you created a Shield Advanced policy, returns policy-level attack summary information in the event of a potential DDoS attack. Other policy types are currently unsupported.
     */
   def getProtectionStatus(): Request[GetProtectionStatusResponse, AWSError] = js.native
   def getProtectionStatus(callback: js.Function2[/* err */ AWSError, /* data */ GetProtectionStatusResponse, Unit]): Request[GetProtectionStatusResponse, AWSError] = js.native
   /**
-    * If you created a Shield Advanced policy, returns policy-level attack summary information in the event of a potential DDoS attack.
+    * If you created a Shield Advanced policy, returns policy-level attack summary information in the event of a potential DDoS attack. Other policy types are currently unsupported.
     */
   def getProtectionStatus(params: GetProtectionStatusRequest): Request[GetProtectionStatusResponse, AWSError] = js.native
   def getProtectionStatus(
@@ -182,12 +182,12 @@ trait FMS extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
-    * Creates an AWS Firewall Manager policy. Firewall Manager provides two types of policies: A Shield Advanced policy, which applies Shield Advanced protection to specified accounts and resources, or a WAF policy, which contains a rule group and defines which resources are to be protected by that rule group. A policy is specific to either WAF or Shield Advanced. If you want to enforce both WAF rules and Shield Advanced protection across accounts, you can create multiple policies. You can create one or more policies for WAF rules, and one or more policies for Shield Advanced. You must be subscribed to Shield Advanced to create a Shield Advanced policy. For more information on subscribing to Shield Advanced, see CreateSubscription.
+    * Creates an AWS Firewall Manager policy. Firewall Manager provides the following types of policies:    A Shield Advanced policy, which applies Shield Advanced protection to specified accounts and resources   An AWS WAF policy, which contains a rule group and defines which resources are to be protected by that rule group   A security group policy, which manages VPC security groups across your AWS organization.    Each policy is specific to one of the three types. If you want to enforce more than one policy type across accounts, you can create multiple policies. You can create multiple policies for each type. You must be subscribed to Shield Advanced to create a Shield Advanced policy. For more information about subscribing to Shield Advanced, see CreateSubscription.
     */
   def putPolicy(): Request[PutPolicyResponse, AWSError] = js.native
   def putPolicy(callback: js.Function2[/* err */ AWSError, /* data */ PutPolicyResponse, Unit]): Request[PutPolicyResponse, AWSError] = js.native
   /**
-    * Creates an AWS Firewall Manager policy. Firewall Manager provides two types of policies: A Shield Advanced policy, which applies Shield Advanced protection to specified accounts and resources, or a WAF policy, which contains a rule group and defines which resources are to be protected by that rule group. A policy is specific to either WAF or Shield Advanced. If you want to enforce both WAF rules and Shield Advanced protection across accounts, you can create multiple policies. You can create one or more policies for WAF rules, and one or more policies for Shield Advanced. You must be subscribed to Shield Advanced to create a Shield Advanced policy. For more information on subscribing to Shield Advanced, see CreateSubscription.
+    * Creates an AWS Firewall Manager policy. Firewall Manager provides the following types of policies:    A Shield Advanced policy, which applies Shield Advanced protection to specified accounts and resources   An AWS WAF policy, which contains a rule group and defines which resources are to be protected by that rule group   A security group policy, which manages VPC security groups across your AWS organization.    Each policy is specific to one of the three types. If you want to enforce more than one policy type across accounts, you can create multiple policies. You can create multiple policies for each type. You must be subscribed to Shield Advanced to create a Shield Advanced policy. For more information about subscribing to Shield Advanced, see CreateSubscription.
     */
   def putPolicy(params: PutPolicyRequest): Request[PutPolicyResponse, AWSError] = js.native
   def putPolicy(

@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PriceScheduleSpecification extends js.Object {
   /**
     * The currency for transacting the Reserved Instance resale. At this time, the only supported currency is USD.
     */
-  var CurrencyCode: js.UndefOr[CurrencyCodeValues] = js.undefined
+  var CurrencyCode: js.UndefOr[CurrencyCodeValues] = js.native
   /**
     * The fixed price for the term.
     */
-  var Price: js.UndefOr[Double] = js.undefined
+  var Price: js.UndefOr[Double] = js.native
   /**
     * The number of months remaining in the reservation. For example, 2 is the second to the last month before the capacity reservation expires.
     */
-  var Term: js.UndefOr[Long] = js.undefined
+  var Term: js.UndefOr[Long] = js.native
 }
 
 object PriceScheduleSpecification {

@@ -10,9 +10,9 @@ a word2vector interface for nodejs
 | ------------------ | :-------------: |
 | Full name          | word2vector |
 | Keywords           | word2vector, word2vec, word, vec, machine learning, chinese, deep-learning, 向量, vector, 文字, 機器學習 |
-| # releases         | 3 |
+| # releases         | 5 |
 | # dependents       | 1 |
-| # downloads        | 2885 |
+| # downloads        | 3162 |
 | # stars            | 0 |
 
 ## Links

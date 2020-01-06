@@ -6,10 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/StepContent.StepContentClasskey>> */
+@js.native
 trait PartialStyleRulesStepContentClasskey extends js.Object {
-  var last: js.UndefOr[CSSProperties] = js.undefined
-  var root: js.UndefOr[CSSProperties] = js.undefined
-  var transition: js.UndefOr[CSSProperties] = js.undefined
+  var last: js.UndefOr[CSSProperties] = js.native
+  var root: js.UndefOr[CSSProperties] = js.native
+  var transition: js.UndefOr[CSSProperties] = js.native
 }
 
 object PartialStyleRulesStepContentClasskey {

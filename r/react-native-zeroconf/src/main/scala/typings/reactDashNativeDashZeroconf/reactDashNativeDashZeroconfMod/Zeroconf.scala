@@ -55,6 +55,23 @@ trait Zeroconf extends EventEmitter {
   @JSName("on")
   def on_update(e: update, listener: js.Function0[_]): this.type = js.native
   /**
+    * Publish a service.
+    *
+    * @description This adds a service for the current device to the
+    * discoverable services on the network.
+    *
+    * @param type Should be both type of the service, for example 'http'.
+    * @param protocol Should be protocol of the service, for example 'tcp'.
+    * @param domain Should be the domain the service is sitting on, dot
+    * suffixed, for example `'local.'`. Defaults to `'local'`.
+    * @param name should be unique to the device, often the device name.
+    * @param port should be an integer between 0 and 65535.
+    */
+  def publishService(`type`: String, protocol: String): Unit = js.native
+  def publishService(`type`: String, protocol: String, domain: String): Unit = js.native
+  def publishService(`type`: String, protocol: String, domain: String, name: String): Unit = js.native
+  def publishService(`type`: String, protocol: String, domain: String, name: String, port: Double): Unit = js.native
+  /**
     * Remove listeners.
     *
     * @description Allow you to clean the listeners, avoiding potential
@@ -83,5 +100,14 @@ trait Zeroconf extends EventEmitter {
     * @description If any scan is running, stop it. Otherwise do nothing.
     */
   def stop(): Unit = js.native
+  /**
+    * Unpublish a service.
+    *
+    * @description This removes a service from those discoverable on the
+    * network.
+    *
+    * @param name should be the name used when publishing the service.
+    */
+  def unpublishService(name: String): Unit = js.native
 }
 

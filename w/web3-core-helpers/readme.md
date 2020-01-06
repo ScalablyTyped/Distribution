@@ -10,9 +10,9 @@ Web3 core tools helper for sub packages. This is an internal package.
 | ------------------ | :-------------: |
 | Full name          | web3-core-helpers |
 | Keywords           | - |
-| # releases         | 36 |
+| # releases         | 38 |
 | # dependents       | 64 |
-| # downloads        | 3978288 |
+| # downloads        | 4350418 |
 | # stars            | 0 |
 
 ## Links

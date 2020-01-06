@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DeleteLaunchTemplateVersionsResponseSuccessItem extends js.Object {
   /**
     * The ID of the launch template.
     */
-  var LaunchTemplateId: js.UndefOr[String] = js.undefined
+  var LaunchTemplateId: js.UndefOr[String] = js.native
   /**
     * The name of the launch template.
     */
-  var LaunchTemplateName: js.UndefOr[String] = js.undefined
+  var LaunchTemplateName: js.UndefOr[String] = js.native
   /**
     * The version number of the launch template.
     */
-  var VersionNumber: js.UndefOr[Long] = js.undefined
+  var VersionNumber: js.UndefOr[Long] = js.native
 }
 
 object DeleteLaunchTemplateVersionsResponseSuccessItem {
@@ -27,8 +28,8 @@ object DeleteLaunchTemplateVersionsResponseSuccessItem {
     VersionNumber: Int | scala.Double = null
   ): DeleteLaunchTemplateVersionsResponseSuccessItem = {
     val __obj = js.Dynamic.literal()
-    if (LaunchTemplateId != null) __obj.updateDynamic("LaunchTemplateId")(LaunchTemplateId)
-    if (LaunchTemplateName != null) __obj.updateDynamic("LaunchTemplateName")(LaunchTemplateName)
+    if (LaunchTemplateId != null) __obj.updateDynamic("LaunchTemplateId")(LaunchTemplateId.asInstanceOf[js.Any])
+    if (LaunchTemplateName != null) __obj.updateDynamic("LaunchTemplateName")(LaunchTemplateName.asInstanceOf[js.Any])
     if (VersionNumber != null) __obj.updateDynamic("VersionNumber")(VersionNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteLaunchTemplateVersionsResponseSuccessItem]
   }

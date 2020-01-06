@@ -11,8 +11,8 @@ simple in memory key/value cache with autoclean by timeout
 | Full name          | mem-cache |
 | Keywords           | cache |
 | # releases         | 0 |
-| # dependents       | 31 |
-| # downloads        | 37914 |
+| # dependents       | 32 |
+| # downloads        | 47308 |
 | # stars            | 0 |
 
 ## Links

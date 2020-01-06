@@ -12,7 +12,7 @@ A simple library to serialize/deserialize JSON-RPC 2.0 messages
 | Keywords           | json, jsonrpc, json-rpc, jsonrpc2 |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 11802 |
+| # downloads        | 12910 |
 | # stars            | 0 |
 
 ## Links

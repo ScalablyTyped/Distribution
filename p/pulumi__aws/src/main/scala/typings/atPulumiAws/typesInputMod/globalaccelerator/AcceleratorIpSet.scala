@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AcceleratorIpSet extends js.Object {
   /**
     * The array of IP addresses in the IP address set.
     */
-  var ipAddresses: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  var ipAddresses: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The types of IP addresses included in this IP set.
     */
-  var ipFamily: js.UndefOr[Input[String]] = js.undefined
+  var ipFamily: js.UndefOr[Input[String]] = js.native
 }
 
 object AcceleratorIpSet {

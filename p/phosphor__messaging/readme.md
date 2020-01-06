@@ -10,9 +10,9 @@ PhosphorJS - Message Passing
 | ------------------ | :-------------: |
 | Full name          | @phosphor/messaging |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 152 |
-| # downloads        | 1343843 |
+| # releases         | 3 |
+| # dependents       | 228 |
+| # downloads        | 1678981 |
 | # stars            | 0 |
 
 ## Links

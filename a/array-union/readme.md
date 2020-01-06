@@ -11,8 +11,8 @@ Create an array of unique values, in order, from the input arrays
 | Full name          | array-union |
 | Keywords           | array, set, uniq, unique, duplicate, remove, union, combine, merge |
 | # releases         | 3 |
-| # dependents       | 64 |
-| # downloads        | 269688235 |
+| # dependents       | 73 |
+| # downloads        | 355387261 |
 | # stars            | 4 |
 
 ## Links

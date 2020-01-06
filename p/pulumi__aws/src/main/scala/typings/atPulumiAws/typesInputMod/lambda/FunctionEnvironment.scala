@@ -6,11 +6,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FunctionEnvironment extends js.Object {
   /**
     * A map that defines environment variables for the Lambda function.
     */
-  var variables: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
+  var variables: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object FunctionEnvironment {

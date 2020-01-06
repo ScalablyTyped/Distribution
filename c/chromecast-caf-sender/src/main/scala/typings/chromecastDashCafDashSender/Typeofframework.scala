@@ -65,7 +65,7 @@ trait Typeofframework extends js.Object {
   var RemotePlayerChangedEvent: Instantiable3[
     /* type */ RemotePlayerEventType, 
     /* field */ String, 
-    /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ /* value */ js.Any, 
+    /* import warning: RewrittenClass.unapply cls was tparam T */ /* value */ js.Any, 
     typings.chromecastDashCafDashSender.cast.framework.RemotePlayerChangedEvent[js.Object]
   ]
   var RemotePlayerController: Instantiable1[
@@ -103,7 +103,7 @@ object Typeofframework {
     RemotePlayerChangedEvent: Instantiable3[
       /* type */ RemotePlayerEventType, 
       /* field */ String, 
-      /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ /* value */ js.Any, 
+      /* import warning: RewrittenClass.unapply cls was tparam T */ /* value */ js.Any, 
       RemotePlayerChangedEvent[js.Object]
     ],
     RemotePlayerController: Instantiable1[/* player */ RemotePlayer, RemotePlayerController],

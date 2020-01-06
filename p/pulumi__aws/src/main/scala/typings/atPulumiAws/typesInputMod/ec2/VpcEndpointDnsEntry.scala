@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VpcEndpointDnsEntry extends js.Object {
   /**
     * The DNS name.
     */
-  var dnsName: js.UndefOr[Input[String]] = js.undefined
+  var dnsName: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of the private hosted zone.
     */
-  var hostedZoneId: js.UndefOr[Input[String]] = js.undefined
+  var hostedZoneId: js.UndefOr[Input[String]] = js.native
 }
 
 object VpcEndpointDnsEntry {

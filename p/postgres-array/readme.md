@@ -12,7 +12,7 @@ Parse postgres array columns
 | Keywords           | postgres, array, parser |
 | # releases         | 3 |
 | # dependents       | 7 |
-| # downloads        | 21927311 |
+| # downloads        | 34105359 |
 | # stars            | 0 |
 
 ## Links

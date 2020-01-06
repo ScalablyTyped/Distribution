@@ -6,9 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined parent std.Partial<@material-ui/core.@material-ui/core/styles/createMixins.Mixins> */
+@js.native
 trait MixinsOptions extends js.Object {
-  var gutters: js.UndefOr[js.Function1[/* styles */ js.UndefOr[CSSProperties], CSSProperties]] = js.undefined
-  var toolbar: js.UndefOr[CSSProperties] = js.undefined
+  var gutters: js.UndefOr[js.Function1[/* styles */ js.UndefOr[CSSProperties], CSSProperties]] = js.native
+  var toolbar: js.UndefOr[CSSProperties] = js.native
 }
 
 object MixinsOptions {

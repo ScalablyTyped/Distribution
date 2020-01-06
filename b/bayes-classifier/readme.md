@@ -12,7 +12,7 @@ Naive Bayes classifier
 | Keywords           | naive, bayes, classifier |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 8830 |
+| # downloads        | 15019 |
 | # stars            | 1 |
 
 ## Links

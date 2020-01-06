@@ -10,9 +10,9 @@ Track events - custom user actions, clicks, pageviews, purchases.
 | ------------------ | :-------------: |
 | Full name          | keen-tracking |
 | Keywords           | Tracking, Tracker, Event Tracker, Event tracking, Track events, Page tracking, User tracking, Analytics event tracking, Analytics events, Analytics tracking, Custom events, Analytics, Stats, Statistics, Monitoring, Metrics, Pageviews, Segmentation, Funnel, Conversion, Log, Logger, Logging, Javascript events, Universal tracking, Click analytics |
-| # releases         | 48 |
-| # dependents       | 17 |
-| # downloads        | 253964 |
+| # releases         | 44 |
+| # dependents       | 16 |
+| # downloads        | 345064 |
 | # stars            | 1 |
 
 ## Links

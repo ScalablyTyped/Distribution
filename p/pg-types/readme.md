@@ -10,9 +10,9 @@ Query result type converters for node-postgres
 | ------------------ | :-------------: |
 | Full name          | pg-types |
 | Keywords           | postgres, PostgreSQL, pg |
-| # releases         | 4 |
-| # dependents       | 11 |
-| # downloads        | 23384988 |
+| # releases         | 6 |
+| # dependents       | 17 |
+| # downloads        | 38461590 |
 | # stars            | 0 |
 
 ## Links

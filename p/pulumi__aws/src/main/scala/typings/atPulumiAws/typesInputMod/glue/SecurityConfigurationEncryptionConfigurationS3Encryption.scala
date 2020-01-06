@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SecurityConfigurationEncryptionConfigurationS3Encryption extends js.Object {
   /**
     * Amazon Resource Name (ARN) of the KMS key to be used to encrypt the data.
     */
-  var kmsKeyArn: js.UndefOr[Input[String]] = js.undefined
+  var kmsKeyArn: js.UndefOr[Input[String]] = js.native
   /**
     * Encryption mode to use for S3 data. Valid values: `DISABLED`, `SSE-KMS`, `SSE-S3`. Default value: `DISABLED`.
     */
-  var s3EncryptionMode: js.UndefOr[Input[String]] = js.undefined
+  var s3EncryptionMode: js.UndefOr[Input[String]] = js.native
 }
 
 object SecurityConfigurationEncryptionConfigurationS3Encryption {

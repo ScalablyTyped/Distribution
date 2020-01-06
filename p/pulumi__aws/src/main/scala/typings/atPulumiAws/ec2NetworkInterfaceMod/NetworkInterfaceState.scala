@@ -7,41 +7,42 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NetworkInterfaceState extends js.Object {
   /**
     * Block to define the attachment of the ENI. Documented below.
     */
-  val attachments: js.UndefOr[Input[js.Array[Input[NetworkInterfaceAttachment]]]] = js.undefined
+  val attachments: js.UndefOr[Input[js.Array[Input[NetworkInterfaceAttachment]]]] = js.native
   /**
     * A description for the network interface.
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
-  val privateDnsName: js.UndefOr[Input[String]] = js.undefined
-  val privateIp: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
+  val privateDnsName: js.UndefOr[Input[String]] = js.native
+  val privateIp: js.UndefOr[Input[String]] = js.native
   /**
     * List of private IPs to assign to the ENI.
     */
-  val privateIps: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val privateIps: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * Number of secondary private IPs to assign to the ENI. The total number of private IPs will be 1 + private_ips_count, as a primary private IP will be assiged to an ENI by default.
     */
-  val privateIpsCount: js.UndefOr[Input[Double]] = js.undefined
+  val privateIpsCount: js.UndefOr[Input[Double]] = js.native
   /**
     * List of security group IDs to assign to the ENI.
     */
-  val securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * Whether to enable source destination checking for the ENI. Default true.
     */
-  val sourceDestCheck: js.UndefOr[Input[Boolean]] = js.undefined
+  val sourceDestCheck: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Subnet ID to create the ENI in.
     */
-  val subnetId: js.UndefOr[Input[String]] = js.undefined
+  val subnetId: js.UndefOr[Input[String]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object NetworkInterfaceState {

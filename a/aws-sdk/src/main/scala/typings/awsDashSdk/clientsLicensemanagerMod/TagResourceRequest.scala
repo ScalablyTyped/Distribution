@@ -4,21 +4,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TagResourceRequest extends js.Object {
   /**
-    * Resource of the ARN to be tagged.
+    * Amazon Resource Name (ARN) of the license configuration.
     */
-  var ResourceArn: String
+  var ResourceArn: String = js.native
   /**
-    * Names of the tags to attach to the resource.
+    * One or more tags.
     */
-  var Tags: TagList
+  var Tags: TagList = js.native
 }
 
 object TagResourceRequest {
   @scala.inline
   def apply(ResourceArn: String, Tags: TagList): TagResourceRequest = {
-    val __obj = js.Dynamic.literal(ResourceArn = ResourceArn, Tags = Tags)
+    val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TagResourceRequest]
   }

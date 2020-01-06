@@ -9,9 +9,9 @@ Typings are for version 24.9.0
 | ------------------ | :-------------: |
 | Full name          | jest-resolve-dependencies |
 | Keywords           | - |
-| # releases         | 59 |
-| # dependents       | 21 |
-| # downloads        | 208523962 |
+| # releases         | 58 |
+| # dependents       | 22 |
+| # downloads        | 225630557 |
 | # stars            | 0 |
 
 ## Links

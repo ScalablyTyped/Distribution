@@ -10,9 +10,9 @@ Webpack block for the webpack dev server.
 | ------------------ | :-------------: |
 | Full name          | @webpack-blocks/dev-server |
 | Keywords           | webpack, webpack-blocks |
-| # releases         | 7 |
+| # releases         | 6 |
 | # dependents       | 5 |
-| # downloads        | 160558 |
+| # downloads        | 138881 |
 | # stars            | 0 |
 
 ## Links

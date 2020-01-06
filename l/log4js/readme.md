@@ -10,10 +10,10 @@ Port of Log4js to work with node.
 | ------------------ | :-------------: |
 | Full name          | log4js |
 | Keywords           | logging, log, log4j, node |
-| # releases         | 41 |
-| # dependents       | 1634 |
-| # downloads        | 69293790 |
-| # stars            | 173 |
+| # releases         | 39 |
+| # dependents       | 1896 |
+| # downloads        | 86989632 |
+| # stars            | 174 |
 
 ## Links
 - [Homepage](https://log4js-node.github.io/log4js-node/)

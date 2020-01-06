@@ -12,7 +12,7 @@ trait Mock[T, Y /* <: js.Array[_] */]
      with MockInstance[T, Y]
      with Instantiable1[/* args */ Y, T] {
   def apply(
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type Y is not an array type */ args: Y
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Y is not an array type */ args: Y
   ): T = js.native
 }
 

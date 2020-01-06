@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait HttpRouteMatch extends js.Object {
   /**
-    * The client request headers to match on.
+    * An object that represents the client request headers to match on.
     */
-  var headers: js.UndefOr[HttpRouteHeaders] = js.undefined
+  var headers: js.UndefOr[HttpRouteHeaders] = js.native
   /**
-    * The client request header method to match on.
+    * The client request method to match on. Specify only one.
     */
-  var method: js.UndefOr[HttpMethod] = js.undefined
+  var method: js.UndefOr[HttpMethod] = js.native
   /**
     * Specifies the path to match requests with. This parameter must always start with
     /, which by itself matches all requests to the virtual service name. You
@@ -21,11 +22,11 @@ trait HttpRouteMatch extends js.Object {
     my-service.local/metrics, your prefix should be
     /metrics.
     */
-  var prefix: String
+  var prefix: String = js.native
   /**
-    * The client request header scheme to match on.
+    * The client request scheme to match on. Specify only one.
     */
-  var scheme: js.UndefOr[HttpScheme] = js.undefined
+  var scheme: js.UndefOr[HttpScheme] = js.native
 }
 
 object HttpRouteMatch {
@@ -36,8 +37,8 @@ object HttpRouteMatch {
     method: HttpMethod = null,
     scheme: HttpScheme = null
   ): HttpRouteMatch = {
-    val __obj = js.Dynamic.literal(prefix = prefix)
-    if (headers != null) __obj.updateDynamic("headers")(headers)
+    val __obj = js.Dynamic.literal(prefix = prefix.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (scheme != null) __obj.updateDynamic("scheme")(scheme.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpRouteMatch]

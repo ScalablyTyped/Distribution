@@ -10,9 +10,9 @@ RSocket WebSocket server
 | ------------------ | :-------------: |
 | Full name          | rsocket-websocket-server |
 | Keywords           | - |
-| # releases         | 10 |
+| # releases         | 19 |
 | # dependents       | 2 |
-| # downloads        | 1817 |
+| # downloads        | 5344 |
 | # stars            | 0 |
 
 ## Links

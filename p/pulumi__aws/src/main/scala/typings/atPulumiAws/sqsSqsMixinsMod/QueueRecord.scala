@@ -6,16 +6,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait QueueRecord extends js.Object {
-  var attributes: Anon_ApproximateFirstReceiveTimestamp
-  var awsRegion: String
-  var body: String
-  var eventSource: String
-  var eventSourceARN: String
-  var md5OfBody: String
-  var messageAttributes: Record[String, _]
-  var messageId: String
-  var receiptHandle: String
+  var attributes: Anon_ApproximateFirstReceiveTimestamp = js.native
+  var awsRegion: String = js.native
+  var body: String = js.native
+  var eventSource: String = js.native
+  var eventSourceARN: String = js.native
+  var md5OfBody: String = js.native
+  var messageAttributes: Record[String, _] = js.native
+  var messageId: String = js.native
+  var receiptHandle: String = js.native
 }
 
 object QueueRecord {
@@ -31,7 +32,7 @@ object QueueRecord {
     messageId: String,
     receiptHandle: String
   ): QueueRecord = {
-    val __obj = js.Dynamic.literal(attributes = attributes, awsRegion = awsRegion, body = body, eventSource = eventSource, eventSourceARN = eventSourceARN, md5OfBody = md5OfBody, messageAttributes = messageAttributes, messageId = messageId, receiptHandle = receiptHandle)
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], awsRegion = awsRegion.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], eventSource = eventSource.asInstanceOf[js.Any], eventSourceARN = eventSourceARN.asInstanceOf[js.Any], md5OfBody = md5OfBody.asInstanceOf[js.Any], messageAttributes = messageAttributes.asInstanceOf[js.Any], messageId = messageId.asInstanceOf[js.Any], receiptHandle = receiptHandle.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[QueueRecord]
   }

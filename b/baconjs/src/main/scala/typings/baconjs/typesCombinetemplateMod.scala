@@ -12,7 +12,7 @@ object typesCombinetemplateMod extends js.Object {
   type ArrayTemplate[A] = js.Array[A | ObjectTemplate[A]]
   type CombinedTemplate[O] = O | ArrayTemplate[js.Any] | ObjectTemplate[O]
   type ObjectTemplate[O] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof O ]: O[K] extends baconjs.baconjs/types/observable.default<infer I>? any : O[K] extends std.Record<any, any>? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias baconjs.baconjs/types/combinetemplate.ObjectTemplate<O[K]> * / object : O[K] extends std.Array<infer I2>? baconjs.baconjs/types/combinetemplate.ArrayTemplate<any> : O[K]}
+  {[ K in keyof O ]: O[K] extends baconjs.baconjs/types/observable.default<infer I>? any : O[K] extends std.Record<any, any>? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias baconjs.baconjs/types/combinetemplate.ObjectTemplate<O[K]> * / object : O[K] extends std.Array<infer I2>? baconjs.baconjs/types/combinetemplate.ArrayTemplate<any> : O[K]}
     */ typings.baconjs.baconjsStrings.ObjectTemplate with js.Any
 }
 

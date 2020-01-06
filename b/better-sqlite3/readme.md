@@ -10,9 +10,9 @@ The fastest and simplest library for SQLite3 in Node.js.
 | ------------------ | :-------------: |
 | Full name          | better-sqlite3 |
 | Keywords           | sql, sqlite, sqlite3, transactions, user-defined functions, aggregate functions, window functions, database |
-| # releases         | 33 |
-| # dependents       | 98 |
-| # downloads        | 1520250 |
+| # releases         | 17 |
+| # dependents       | 157 |
+| # downloads        | 2115624 |
 | # stars            | 10 |
 
 ## Links

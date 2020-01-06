@@ -12,7 +12,7 @@ FreeSWITCH ESL Node.js Implementation
 | Keywords           | freeswitch, api, wrapper, esl, event, socket, library |
 | # releases         | 2 |
 | # dependents       | 7 |
-| # downloads        | 48978 |
+| # downloads        | 70650 |
 | # stars            | 2 |
 
 ## Links

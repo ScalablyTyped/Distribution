@@ -123,7 +123,7 @@ object jestDashConfigStrings {
   sealed trait WeakSet extends js.Object
   
   @js.native
-  sealed trait `^DotPlussignBackslashDotLeftsquarebracketjtRightsquarebracketsxQuestionmark$` extends js.Object
+  sealed trait `^DotPlussignBackslashDot[jt]sxQuestionmark$` extends js.Object
   
   @js.native
   sealed trait _replaceRootDirTags extends js.Object
@@ -303,7 +303,7 @@ object jestDashConfigStrings {
   @scala.inline
   def WeakSet: WeakSet = "WeakSet".asInstanceOf[WeakSet]
   @scala.inline
-  def `^DotPlussignBackslashDotLeftsquarebracketjtRightsquarebracketsxQuestionmark$`: `^DotPlussignBackslashDotLeftsquarebracketjtRightsquarebracketsxQuestionmark$` = "^.+\\.[jt]sx?$".asInstanceOf[`^DotPlussignBackslashDotLeftsquarebracketjtRightsquarebracketsxQuestionmark$`]
+  def `^DotPlussignBackslashDot[jt]sxQuestionmark$`: `^DotPlussignBackslashDot[jt]sxQuestionmark$` = "^.+\\.[jt]sx?$".asInstanceOf[`^DotPlussignBackslashDot[jt]sxQuestionmark$`]
   @scala.inline
   def _replaceRootDirTags: _replaceRootDirTags = "_replaceRootDirTags".asInstanceOf[_replaceRootDirTags]
   @scala.inline

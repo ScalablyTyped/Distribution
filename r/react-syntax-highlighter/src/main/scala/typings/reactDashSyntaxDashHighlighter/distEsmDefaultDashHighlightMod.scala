@@ -6,6 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+// esm start
 @JSImport("react-syntax-highlighter/dist/esm/default-highlight", JSImport.Namespace)
 @js.native
 object distEsmDefaultDashHighlightMod extends js.Object {

@@ -28,28 +28,28 @@ class ManagementClient[A, U] protected () extends js.Object {
   def createConnection(data: CreateConnection, cb: js.Function2[/* err */ Error, /* connection */ Connection, Unit]): Unit = js.native
   def createDevicePublicKey(data: Data): js.Promise[User[A, U]] = js.native
   def createDevicePublicKey(data: Data, cb: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
-  def createEmailTemplate(data: Data): Unit = js.native
-  def createEmailTemplate(data: Data, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
   // Templates
+  def createEmailTemplate(data: Data): js.Promise[_] = js.native
+  def createEmailTemplate(data: Data, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
   @JSName("createEmailTemplate")
-  def createEmailTemplate_Promise(data: Data): js.Promise[_] = js.native
-  def createEmailVerificationTicket(data: EmailVerificationTicketOptions): Unit = js.native
+  def createEmailTemplate_Unit(data: Data): Unit = js.native
+  def createEmailVerificationTicket(data: EmailVerificationTicketOptions): js.Promise[_] = js.native
   def createEmailVerificationTicket(data: EmailVerificationTicketOptions, cb: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
   @JSName("createEmailVerificationTicket")
-  def createEmailVerificationTicket_Promise(data: EmailVerificationTicketOptions): js.Promise[_] = js.native
-  def createPasswordChangeTicket(params: PasswordChangeTicketParams): Unit = js.native
+  def createEmailVerificationTicket_Unit(data: EmailVerificationTicketOptions): Unit = js.native
+  // Tickets
+  def createPasswordChangeTicket(params: PasswordChangeTicketParams): js.Promise[PasswordChangeTicketResponse] = js.native
   def createPasswordChangeTicket(
     params: PasswordChangeTicketParams,
     cb: js.Function2[/* err */ Error, /* data */ PasswordChangeTicketResponse, Unit]
   ): Unit = js.native
-  // Tickets
   @JSName("createPasswordChangeTicket")
-  def createPasswordChangeTicket_Promise(params: PasswordChangeTicketParams): js.Promise[PasswordChangeTicketResponse] = js.native
-  def createResourceServer(data: CreateResourceServer): Unit = js.native
-  def createResourceServer(data: CreateResourceServer, cb: js.Function2[/* err */ Error, /* data */ ResourceServer, Unit]): Unit = js.native
+  def createPasswordChangeTicket_Unit(params: PasswordChangeTicketParams): Unit = js.native
   // Resource Server
+  def createResourceServer(data: CreateResourceServer): js.Promise[ResourceServer] = js.native
+  def createResourceServer(data: CreateResourceServer, cb: js.Function2[/* err */ Error, /* data */ ResourceServer, Unit]): Unit = js.native
   @JSName("createResourceServer")
-  def createResourceServer_Promise(data: CreateResourceServer): js.Promise[ResourceServer] = js.native
+  def createResourceServer_Unit(data: CreateResourceServer): Unit = js.native
   def createRole(data: CreateRoleData): js.Promise[Role] = js.native
   def createRole(data: CreateRoleData, cb: js.Function2[/* err */ Error, /* role */ Role, Unit]): Unit = js.native
   def createRule(data: Data): js.Promise[Rule] = js.native
@@ -67,38 +67,38 @@ class ManagementClient[A, U] protected () extends js.Object {
   def deleteConnection(params: ObjectWithId, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
   def deleteDeviceCredential(params: ClientParams): js.Promise[User[A, U]] = js.native
   def deleteDeviceCredential(params: ClientParams, cb: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
-  def deleteEmailProvider(): Unit = js.native
+  def deleteEmailProvider(): js.Promise[_] = js.native
   def deleteEmailProvider(cb: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
   @JSName("deleteEmailProvider")
-  def deleteEmailProvider_Promise(): js.Promise[_] = js.native
-  def deleteResourceServer(params: ObjectWithId): Unit = js.native
+  def deleteEmailProvider_Unit(): Unit = js.native
+  def deleteResourceServer(params: ObjectWithId): js.Promise[Unit] = js.native
   def deleteResourceServer(params: ObjectWithId, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
   @JSName("deleteResourceServer")
-  def deleteResourceServer_Promise(params: ObjectWithId): js.Promise[Unit] = js.native
+  def deleteResourceServer_Unit(params: ObjectWithId): Unit = js.native
   def deleteRole(params: ObjectWithId): js.Promise[Unit] = js.native
   def deleteRole(params: ObjectWithId, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
   def deleteRule(params: ObjectWithId): js.Promise[Unit] = js.native
   def deleteRule(params: ObjectWithId, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
-  def deleteUser(params: ObjectWithId): Unit = js.native
+  def deleteUser(params: ObjectWithId): js.Promise[Unit] = js.native
   def deleteUser(params: ObjectWithId, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
   def deleteUserMultifactor(params: DeleteMultifactorParams): js.Promise[Unit] = js.native
   def deleteUserMultifactor(params: DeleteMultifactorParams, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
   @JSName("deleteUser")
-  def deleteUser_Promise(params: ObjectWithId): js.Promise[Unit] = js.native
-  def exportUsers(data: ExportUsersOptions): Unit = js.native
+  def deleteUser_Unit(params: ObjectWithId): Unit = js.native
+  def exportUsers(data: ExportUsersOptions): js.Promise[ExportUsersJob] = js.native
   def exportUsers(data: ExportUsersOptions, cb: js.Function2[/* err */ Error, /* data */ ExportUsersJob, Unit]): Unit = js.native
   @JSName("exportUsers")
-  def exportUsers_Promise(data: ExportUsersOptions): js.Promise[ExportUsersJob] = js.native
-  def getActiveUsersCount(): Unit = js.native
-  def getActiveUsersCount(cb: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
+  def exportUsers_Unit(data: ExportUsersOptions): Unit = js.native
   // Statistics
+  def getActiveUsersCount(): js.Promise[_] = js.native
+  def getActiveUsersCount(cb: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
   @JSName("getActiveUsersCount")
-  def getActiveUsersCount_Promise(): js.Promise[_] = js.native
-  def getBlacklistedTokens(): Unit = js.native
-  def getBlacklistedTokens(cb: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
+  def getActiveUsersCount_Unit(): Unit = js.native
   // Tokens
+  def getBlacklistedTokens(): js.Promise[_] = js.native
+  def getBlacklistedTokens(cb: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
   @JSName("getBlacklistedTokens")
-  def getBlacklistedTokens_Promise(): js.Promise[_] = js.native
+  def getBlacklistedTokens_Unit(): Unit = js.native
   def getClient(params: ClientParams): js.Promise[Client] = js.native
   def getClient(params: ClientParams, cb: js.Function2[/* err */ Error, /* client */ Client, Unit]): Unit = js.native
   // Client Grants
@@ -120,42 +120,42 @@ class ManagementClient[A, U] protected () extends js.Object {
   // Device Keys
   def getDeviceCredentials(): js.Promise[User[A, U]] = js.native
   def getDeviceCredentials(cb: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
-  def getEmailProvider(): Unit = js.native
-  def getEmailProvider(cb: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
   // Providers
+  def getEmailProvider(): js.Promise[_] = js.native
+  def getEmailProvider(cb: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
   @JSName("getEmailProvider")
-  def getEmailProvider_Promise(): js.Promise[_] = js.native
-  def getEmailTemplate(data: Data): Unit = js.native
+  def getEmailProvider_Unit(): Unit = js.native
+  def getEmailTemplate(data: Data): js.Promise[_] = js.native
   def getEmailTemplate(data: Data, cb: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
   @JSName("getEmailTemplate")
-  def getEmailTemplate_Promise(data: Data): js.Promise[_] = js.native
-  def getJob(params: ObjectWithId): Unit = js.native
-  def getJob(params: ObjectWithId, cb: js.Function2[/* err */ Error, /* data */ Job, Unit]): Unit = js.native
+  def getEmailTemplate_Unit(data: Data): Unit = js.native
   // Jobs
+  def getJob(params: ObjectWithId): js.Promise[Job] = js.native
+  def getJob(params: ObjectWithId, cb: js.Function2[/* err */ Error, /* data */ Job, Unit]): Unit = js.native
   @JSName("getJob")
-  def getJob_Promise(params: ObjectWithId): js.Promise[Job] = js.native
-  def getLog(params: ObjectWithId): Unit = js.native
-  def getLog(params: ObjectWithId, cb: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
+  def getJob_Unit(params: ObjectWithId): Unit = js.native
   // Logs
+  def getLog(params: ObjectWithId): js.Promise[_] = js.native
+  def getLog(params: ObjectWithId, cb: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
   @JSName("getLog")
-  def getLog_Promise(params: ObjectWithId): js.Promise[_] = js.native
-  def getLogs(): Unit = js.native
+  def getLog_Unit(params: ObjectWithId): Unit = js.native
+  def getLogs(): js.Promise[_] = js.native
   def getLogs(cb: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
   @JSName("getLogs")
-  def getLogs_Promise(): js.Promise[_] = js.native
+  def getLogs_Unit(): Unit = js.native
   def getPermissionsInRole(params: ObjectWithId): js.Promise[js.Array[Permission]] = js.native
   def getPermissionsInRole(
     params: ObjectWithId,
     cb: js.Function2[/* err */ Error, /* permissions */ js.Array[Permission], Unit]
   ): Unit = js.native
-  def getResourceServer(data: ObjectWithId): Unit = js.native
+  def getResourceServer(data: ObjectWithId): js.Promise[ResourceServer] = js.native
   def getResourceServer(data: ObjectWithId, cb: js.Function2[/* err */ Error, /* data */ ResourceServer, Unit]): Unit = js.native
   @JSName("getResourceServer")
-  def getResourceServer_Promise(data: ObjectWithId): js.Promise[ResourceServer] = js.native
-  def getResourceServers(): Unit = js.native
+  def getResourceServer_Unit(data: ObjectWithId): Unit = js.native
+  def getResourceServers(): js.Promise[js.Array[ResourceServer]] = js.native
   def getResourceServers(cb: js.Function2[/* err */ Error, /* data */ js.Array[ResourceServer], Unit]): Unit = js.native
   @JSName("getResourceServers")
-  def getResourceServers_Promise(): js.Promise[js.Array[ResourceServer]] = js.native
+  def getResourceServers_Unit(): Unit = js.native
   def getRole(params: ObjectWithId): js.Promise[Role] = js.native
   def getRole(params: ObjectWithId, cb: js.Function2[/* err */ Error, /* role */ Role, Unit]): Unit = js.native
   // Roles
@@ -170,12 +170,12 @@ class ManagementClient[A, U] protected () extends js.Object {
   // Rules
   def getRules(): js.Promise[js.Array[Rule]] = js.native
   def getRules(cb: js.Function2[/* err */ Error, /* rules */ js.Array[Rule], Unit]): Unit = js.native
-  def getTenantSettings(): Unit = js.native
-  def getTenantSettings(cb: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
   // Tenant
+  def getTenantSettings(): js.Promise[_] = js.native
+  def getTenantSettings(cb: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
   @JSName("getTenantSettings")
-  def getTenantSettings_Promise(): js.Promise[_] = js.native
-  def getUser(params: ObjectWithId): Unit = js.native
+  def getTenantSettings_Unit(): Unit = js.native
+  def getUser(params: ObjectWithId): js.Promise[User[A, U]] = js.native
   def getUser(params: ObjectWithId, cb: js.Function2[/* err */ Error, /* user */ User[A, U], Unit]): Unit = js.native
   // User Blocks
   def getUserBlocks(params: ObjectWithId): js.Promise[UserBlocks] = js.native
@@ -206,18 +206,18 @@ class ManagementClient[A, U] protected () extends js.Object {
   def getUserRoles(params: ObjectWithId): js.Promise[js.Array[Role]] = js.native
   def getUserRoles(params: ObjectWithId, cb: js.Function2[/* err */ Error, /* roles */ js.Array[Role], Unit]): Unit = js.native
   @JSName("getUser")
-  def getUser_Promise(params: ObjectWithId): js.Promise[User[A, U]] = js.native
-  def getUsers(): Unit = js.native
+  def getUser_Unit(params: ObjectWithId): Unit = js.native
+  def getUsers(): js.Promise[js.Array[User[A, U]]] = js.native
   def getUsers(cb: js.Function2[/* err */ Error, /* users */ js.Array[User[A, U]], Unit]): Unit = js.native
-  def getUsers(params: GetUsersData): Unit = js.native
+  def getUsers(params: GetUsersData): js.Promise[js.Array[User[A, U]]] = js.native
   // Users
   def getUsers(params: GetUsersDataPaged): js.Promise[UserPage[A, U]] = js.native
   def getUsers(params: GetUsersDataPaged, cb: js.Function2[/* err */ Error, /* userPage */ UserPage[A, U], Unit]): Unit = js.native
   def getUsers(params: GetUsersData, cb: js.Function2[/* err */ Error, /* users */ js.Array[User[A, U]], Unit]): Unit = js.native
-  def getUsersByEmail(email: String): Unit = js.native
+  def getUsersByEmail(email: String): js.Promise[js.Array[User[A, U]]] = js.native
   def getUsersByEmail(email: String, cb: js.Function2[/* err */ Error, /* users */ js.Array[User[A, U]], Unit]): Unit = js.native
   @JSName("getUsersByEmail")
-  def getUsersByEmail_Promise(email: String): js.Promise[js.Array[User[A, U]]] = js.native
+  def getUsersByEmail_Unit(email: String): Unit = js.native
   def getUsersInRole(params: GetRoleUsersData): js.Promise[js.Array[User[A, U]]] = js.native
   def getUsersInRole(params: GetRoleUsersDataPaged): js.Promise[UserPage[A, U]] = js.native
   def getUsersInRole(
@@ -231,13 +231,13 @@ class ManagementClient[A, U] protected () extends js.Object {
   def getUsersInRole(params: ObjectWithId): js.Promise[js.Array[User[A, U]]] = js.native
   def getUsersInRole(params: ObjectWithId, cb: js.Function2[/* err */ Error, /* users */ js.Array[User[A, U]], Unit]): Unit = js.native
   @JSName("getUsers")
-  def getUsers_Promise(): js.Promise[js.Array[User[A, U]]] = js.native
+  def getUsers_Unit(): Unit = js.native
   @JSName("getUsers")
-  def getUsers_Promise(params: GetUsersData): js.Promise[js.Array[User[A, U]]] = js.native
-  def importUsers(data: ImportUsersOptions): Unit = js.native
+  def getUsers_Unit(params: GetUsersData): Unit = js.native
+  def importUsers(data: ImportUsersOptions): js.Promise[ImportUsersJob] = js.native
   def importUsers(data: ImportUsersOptions, cb: js.Function2[/* err */ Error, /* data */ ImportUsersJob, Unit]): Unit = js.native
   @JSName("importUsers")
-  def importUsers_Promise(data: ImportUsersOptions): js.Promise[ImportUsersJob] = js.native
+  def importUsers_Unit(data: ImportUsersOptions): Unit = js.native
   def linkUsers(userId: String, params: LinkAccountsParams): js.Promise[_] = js.native
   def linkUsers(
     userId: String,
@@ -250,10 +250,10 @@ class ManagementClient[A, U] protected () extends js.Object {
   def removePermissionsFromUser(params: ObjectWithId, data: PermissionsData, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
   def removeRolesFromUser(params: ObjectWithId, data: RolesData): js.Promise[Unit] = js.native
   def removeRolesFromUser(params: ObjectWithId, data: RolesData, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
-  def sendEmailVerification(data: UserIdParams): Unit = js.native
+  def sendEmailVerification(data: UserIdParams): js.Promise[VerificationEmailJob] = js.native
   def sendEmailVerification(data: UserIdParams, cb: js.Function2[/* err */ Error, /* data */ VerificationEmailJob, Unit]): Unit = js.native
   @JSName("sendEmailVerification")
-  def sendEmailVerification_Promise(data: UserIdParams): js.Promise[VerificationEmailJob] = js.native
+  def sendEmailVerification_Unit(data: UserIdParams): Unit = js.native
   def unblockUser(params: ObjectWithId): js.Promise[String] = js.native
   def unblockUser(params: ObjectWithId, cb: js.Function2[/* err */ Error, /* response */ String, Unit]): Unit = js.native
   def unblockUserByIdentifier(params: ObjectWithIdentifier): js.Promise[String] = js.native
@@ -279,22 +279,22 @@ class ManagementClient[A, U] protected () extends js.Object {
     data: UpdateConnection,
     cb: js.Function2[/* err */ Error, /* connection */ Connection, Unit]
   ): Unit = js.native
-  def updateEmailProvider(params: js.Object, data: Data): Unit = js.native
+  def updateEmailProvider(params: js.Object, data: Data): js.Promise[_] = js.native
   def updateEmailProvider(params: js.Object, data: Data, cb: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
   @JSName("updateEmailProvider")
-  def updateEmailProvider_Promise(params: js.Object, data: Data): js.Promise[_] = js.native
-  def updateEmailTemplate(params: js.Object, data: Data): Unit = js.native
+  def updateEmailProvider_Unit(params: js.Object, data: Data): Unit = js.native
+  def updateEmailTemplate(params: js.Object, data: Data): js.Promise[_] = js.native
   def updateEmailTemplate(params: js.Object, data: Data, cb: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
   @JSName("updateEmailTemplate")
-  def updateEmailTemplate_Promise(params: js.Object, data: Data): js.Promise[_] = js.native
-  def updateResourceServer(params: ObjectWithId, data: ResourceServer): Unit = js.native
+  def updateEmailTemplate_Unit(params: js.Object, data: Data): Unit = js.native
+  def updateResourceServer(params: ObjectWithId, data: ResourceServer): js.Promise[ResourceServer] = js.native
   def updateResourceServer(
     params: ObjectWithId,
     data: ResourceServer,
     cb: js.Function2[/* err */ Error, /* data */ ResourceServer, Unit]
   ): Unit = js.native
   @JSName("updateResourceServer")
-  def updateResourceServer_Promise(params: ObjectWithId, data: ResourceServer): js.Promise[ResourceServer] = js.native
+  def updateResourceServer_Unit(params: ObjectWithId, data: ResourceServer): Unit = js.native
   def updateRole(params: ObjectWithId, data: UpdateRoleData): js.Promise[Role] = js.native
   def updateRole(
     params: ObjectWithId,
@@ -303,10 +303,10 @@ class ManagementClient[A, U] protected () extends js.Object {
   ): Unit = js.native
   def updateRule(params: ObjectWithId, data: Data): js.Promise[Rule] = js.native
   def updateRule(params: ObjectWithId, data: Data, cb: js.Function2[/* err */ Error, /* rule */ Rule, Unit]): Unit = js.native
-  def updateTenantSettings(data: Data): Unit = js.native
+  def updateTenantSettings(data: Data): js.Promise[_] = js.native
   def updateTenantSettings(data: Data, cb: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
   @JSName("updateTenantSettings")
-  def updateTenantSettings_Promise(data: Data): js.Promise[_] = js.native
+  def updateTenantSettings_Unit(data: Data): Unit = js.native
   def updateUser(params: ObjectWithId, data: UpdateUserData): js.Promise[User[A, U]] = js.native
   def updateUser(
     params: ObjectWithId,

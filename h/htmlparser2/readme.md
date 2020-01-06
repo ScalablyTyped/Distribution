@@ -10,14 +10,14 @@ Fast & forgiving HTML/XML/RSS parser
 | ------------------ | :-------------: |
 | Full name          | htmlparser2 |
 | Keywords           | html, parser, streams, xml, dom, rss, feed, atom |
-| # releases         | 3 |
-| # dependents       | 884 |
-| # downloads        | 282032553 |
+| # releases         | 4 |
+| # dependents       | 1004 |
+| # downloads        | 361115762 |
 | # stars            | 91 |
 
 ## Links
 - [Homepage](https://github.com/fb55/htmlparser2#readme)
-- [Bugs](http://github.com/fb55/htmlparser2/issues)
+- [Bugs](https://github.com/fb55/htmlparser2/issues)
 - [Repository](https://github.com/fb55/htmlparser2)
 - [Npm](https://www.npmjs.com/package/htmlparser2)
     

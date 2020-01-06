@@ -6,10 +6,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TypeofS3 extends js.Object {
-  var ManagedUpload: js.Any | TypeofClassManagedUpload
-  var PresignedPost: js.Any | Instantiable0[typings.awsDashSdk.awsDashSdkMod.S3.PresignedPost]
-  val Types: this.type
+  val ManagedUpload: TypeofClassManagedUpload = js.native
+  val PresignedPost: Instantiable0[typings.awsDashSdk.awsDashSdkMod.S3.PresignedPost] = js.native
+  val Types: this.type = js.native
 }
 
 object TypeofS3 {
@@ -19,7 +20,7 @@ object TypeofS3 {
     PresignedPost: Instantiable0[PresignedPost],
     Types: TypeofS3
   ): TypeofS3 = {
-    val __obj = js.Dynamic.literal(ManagedUpload = ManagedUpload, PresignedPost = PresignedPost, Types = Types)
+    val __obj = js.Dynamic.literal(ManagedUpload = ManagedUpload.asInstanceOf[js.Any], PresignedPost = PresignedPost.asInstanceOf[js.Any], Types = Types.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeofS3]
   }

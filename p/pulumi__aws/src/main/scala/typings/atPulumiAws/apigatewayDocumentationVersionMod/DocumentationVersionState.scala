@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DocumentationVersionState extends js.Object {
   /**
     * The description of the API documentation version.
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of the associated Rest API
     */
-  val restApiId: js.UndefOr[Input[String]] = js.undefined
+  val restApiId: js.UndefOr[Input[String]] = js.native
   /**
     * The version identifier of the API documentation snapshot.
     */
-  val version: js.UndefOr[Input[String]] = js.undefined
+  val version: js.UndefOr[Input[String]] = js.native
 }
 
 object DocumentationVersionState {

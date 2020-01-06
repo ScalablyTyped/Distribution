@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CrawlerS3Target extends js.Object {
   /**
     * A list of glob patterns used to exclude from the crawl.
     */
-  var exclusions: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  var exclusions: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The path to the Amazon S3 target.
     */
-  var path: Input[String]
+  var path: Input[String] = js.native
 }
 
 object CrawlerS3Target {

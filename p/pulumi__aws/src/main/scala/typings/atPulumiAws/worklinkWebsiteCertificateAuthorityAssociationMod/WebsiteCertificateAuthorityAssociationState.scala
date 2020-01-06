@@ -5,23 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WebsiteCertificateAuthorityAssociationState extends js.Object {
   /**
     * The root certificate of the Certificate Authority.
     */
-  val certificate: js.UndefOr[Input[String]] = js.undefined
+  val certificate: js.UndefOr[Input[String]] = js.native
   /**
     * The certificate name to display.
     */
-  val displayName: js.UndefOr[Input[String]] = js.undefined
+  val displayName: js.UndefOr[Input[String]] = js.native
   /**
     * The ARN of the fleet.
     */
-  val fleetArn: js.UndefOr[Input[String]] = js.undefined
+  val fleetArn: js.UndefOr[Input[String]] = js.native
   /**
     * A unique identifier for the Certificate Authority.
     */
-  val websiteCaId: js.UndefOr[Input[String]] = js.undefined
+  val websiteCaId: js.UndefOr[Input[String]] = js.native
 }
 
 object WebsiteCertificateAuthorityAssociationState {

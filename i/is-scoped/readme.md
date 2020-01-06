@@ -10,9 +10,9 @@ Check if a string is a scoped npm package name
 | ------------------ | :-------------: |
 | Full name          | is-scoped |
 | Keywords           | scoped, npm, package, name, is, detect, validate, validation |
-| # releases         | 1 |
-| # dependents       | 57 |
-| # downloads        | 15763363 |
+| # releases         | 3 |
+| # dependents       | 64 |
+| # downloads        | 13398576 |
 | # stars            | 0 |
 
 ## Links

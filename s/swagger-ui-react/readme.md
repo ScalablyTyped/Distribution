@@ -10,13 +10,13 @@ Typings are for version 3.23
 | ------------------ | :-------------: |
 | Full name          | swagger-ui-react |
 | Keywords           | - |
-| # releases         | 22 |
-| # dependents       | 1 |
-| # downloads        | 78652 |
+| # releases         | 32 |
+| # dependents       | 3 |
+| # downloads        | 193008 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/swagger-api/swagger-ui#readme)
+- [Homepage](https://github.com/swagger-api/swagger-ui)
 - [Bugs](https://github.com/swagger-api/swagger-ui/issues)
 - [Repository](https://github.com/swagger-api/swagger-ui)
 - [Npm](https://www.npmjs.com/package/swagger-ui-react)

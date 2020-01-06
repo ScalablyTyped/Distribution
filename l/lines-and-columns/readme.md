@@ -11,8 +11,8 @@ Maps lines and columns to character offsets and back.
 | Full name          | lines-and-columns |
 | Keywords           | lines, columns, parser |
 | # releases         | 0 |
-| # dependents       | 21 |
-| # downloads        | 4548451 |
+| # dependents       | 30 |
+| # downloads        | 35687866 |
 | # stars            | 0 |
 
 ## Links

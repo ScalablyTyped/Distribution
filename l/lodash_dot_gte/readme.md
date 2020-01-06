@@ -12,7 +12,7 @@ The lodash method `_.gte` exported as a module.
 | Keywords           | lodash-modularized, gte |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 3056 |
+| # downloads        | 14210 |
 | # stars            | 0 |
 
 ## Links

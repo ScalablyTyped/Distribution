@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DashboardArgs extends js.Object {
   /**
     * The detailed information about the dashboard, including what widgets are included and their location on the dashboard. You can read more about the body structure in the [documentation](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/CloudWatch-Dashboard-Body-Structure.html).
     */
-  val dashboardBody: Input[String]
+  val dashboardBody: Input[String] = js.native
   /**
     * The name of the dashboard.
     */
-  val dashboardName: Input[String]
+  val dashboardName: Input[String] = js.native
 }
 
 object DashboardArgs {

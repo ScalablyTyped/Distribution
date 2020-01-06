@@ -10,9 +10,9 @@ The ultra-lightweight Node.js HTTP client
 | ------------------ | :-------------: |
 | Full name          | phin |
 | Keywords           | http, https, request, fetch, ajax, url, uri |
-| # releases         | 50 |
-| # dependents       | 27 |
-| # downloads        | 7472767 |
+| # releases         | 16 |
+| # dependents       | 61 |
+| # downloads        | 22935887 |
 | # stars            | 1 |
 
 ## Links

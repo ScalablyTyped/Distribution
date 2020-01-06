@@ -29,7 +29,7 @@ class Inventory protected () extends CustomResource {
     */
   val bucket: Output[String] = js.native
   /**
-    * Destination bucket where inventory list files are written (documented below).
+    * Contains information about where to publish the inventory results (documented below).
     */
   val destination: Output[InventoryDestination] = js.native
   /**
@@ -37,11 +37,11 @@ class Inventory protected () extends CustomResource {
     */
   val enabled: Output[js.UndefOr[Boolean]] = js.native
   /**
-    * Object filtering that accepts a prefix (documented below).
+    * Specifies an inventory filter. The inventory only includes objects that meet the filter's criteria (documented below).
     */
   val filter: Output[js.UndefOr[InventoryFilter]] = js.native
   /**
-    * Object filtering that accepts a prefix (documented below). Can be `All` or `Current`.
+    * Object versions to include in the inventory list. Valid values: `All`, `Current`.
     */
   val includedObjectVersions: Output[String] = js.native
   /**
@@ -49,11 +49,12 @@ class Inventory protected () extends CustomResource {
     */
   val name: Output[String] = js.native
   /**
-    * Contains the optional fields that are included in the inventory results.
+    * List of optional fields that are included in the inventory results.
+    * Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUploaded`, `ReplicationStatus`, `EncryptionStatus`, `ObjectLockRetainUntilDate`, `ObjectLockMode`, `ObjectLockLegalHoldStatus`, `IntelligentTieringAccessTier`.
     */
   val optionalFields: Output[js.UndefOr[js.Array[String]]] = js.native
   /**
-    * Contains the frequency for generating inventory results (documented below).
+    * Specifies the schedule for generating inventory results (documented below).
     */
   val schedule: Output[InventorySchedule] = js.native
 }

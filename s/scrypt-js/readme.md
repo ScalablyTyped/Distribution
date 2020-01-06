@@ -4,15 +4,15 @@
 Typings are for version 2.0
 
 ## Library description:
-The scrypt password-based key derivation function with asynchronous operation and ablility to be cancelled.
+The scrypt password-based key derivation function with sync and cancellable async.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | scrypt-js |
 | Keywords           | scrypt, pbkdf, password, async, asynchronous, stepwise |
-| # releases         | 2 |
-| # dependents       | 55 |
-| # downloads        | 1436546 |
+| # releases         | 3 |
+| # dependents       | 83 |
+| # downloads        | 4050978 |
 | # stars            | 1 |
 
 ## Links

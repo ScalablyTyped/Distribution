@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ListThingRegistrationTaskReportsRequest extends js.Object {
   /**
     * The maximum number of results to return per request.
     */
-  var maxResults: js.UndefOr[RegistryMaxResults] = js.undefined
+  var maxResults: js.UndefOr[RegistryMaxResults] = js.native
   /**
     * The token to retrieve the next set of results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.undefined
+  var nextToken: js.UndefOr[NextToken] = js.native
   /**
     * The type of task report.
     */
-  var reportType: ReportType
+  var reportType: ReportType = js.native
   /**
     * The id of the task.
     */
-  var taskId: TaskId
+  var taskId: TaskId = js.native
 }
 
 object ListThingRegistrationTaskReportsRequest {
@@ -31,9 +32,9 @@ object ListThingRegistrationTaskReportsRequest {
     maxResults: Int | Double = null,
     nextToken: NextToken = null
   ): ListThingRegistrationTaskReportsRequest = {
-    val __obj = js.Dynamic.literal(reportType = reportType.asInstanceOf[js.Any], taskId = taskId)
+    val __obj = js.Dynamic.literal(reportType = reportType.asInstanceOf[js.Any], taskId = taskId.asInstanceOf[js.Any])
     if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
+    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListThingRegistrationTaskReportsRequest]
   }
 }

@@ -4,13 +4,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ZIndex extends js.Object {
-  var appBar: Double
-  var drawer: Double
-  var mobileStepper: Double
-  var modal: Double
-  var snackbar: Double
-  var tooltip: Double
+  var appBar: Double = js.native
+  var drawer: Double = js.native
+  var mobileStepper: Double = js.native
+  var modal: Double = js.native
+  var snackbar: Double = js.native
+  var tooltip: Double = js.native
 }
 
 object ZIndex {

@@ -10,9 +10,9 @@ An opinionated connector between socket.io and redux
 | ------------------ | :-------------: |
 | Full name          | redux-socket.io |
 | Keywords           | redux, middleware, socket.io, action |
-| # releases         | 2 |
+| # releases         | 1 |
 | # dependents       | 6 |
-| # downloads        | 59240 |
+| # downloads        | 50742 |
 | # stars            | 4 |
 
 ## Links

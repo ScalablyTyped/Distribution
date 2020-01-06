@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "react-smooth-scrollbar"
-version := "8.0-dt-20180806Z-e006bd"
+version := "8.0-dt-20180806Z-4e2e07"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.6-32adec",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-bfe2c5",
-  "org.scalablytyped" %%% "react" % "16.9-dt-20191220Z-73a5bc",
-  "org.scalablytyped" %%% "smooth-scrollbar" % "8.5.1-85dcd1",
-  "org.scalablytyped" %%% "std" % "3.7-953338")
+  "org.scalablytyped" %%% "csstype" % "2.6.6-fd5644",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-b24434",
+  "org.scalablytyped" %%% "react" % "16.9-dt-20191220Z-22d23f",
+  "org.scalablytyped" %%% "smooth-scrollbar" % "8.5.1-6273af",
+  "org.scalablytyped" %%% "std" % "3.7-b6d959")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -10,9 +10,9 @@ s3 download streams
 | ------------------ | :-------------: |
 | Full name          | s3-download-stream |
 | Keywords           | s3 |
-| # releases         | 4 |
-| # dependents       | 7 |
-| # downloads        | 129926 |
+| # releases         | 3 |
+| # dependents       | 8 |
+| # downloads        | 235977 |
 | # stars            | 0 |
 
 ## Links

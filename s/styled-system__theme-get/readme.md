@@ -11,8 +11,8 @@ The `themeGet` function is an existential getter function that can be used in an
 | Full name          | @styled-system/theme-get |
 | Keywords           | - |
 | # releases         | 26 |
-| # dependents       | 42 |
-| # downloads        | 242488 |
+| # dependents       | 52 |
+| # downloads        | 341298 |
 | # stars            | 0 |
 
 ## Links

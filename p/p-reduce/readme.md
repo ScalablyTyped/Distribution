@@ -10,9 +10,9 @@ Reduce a list of values using promises into a promise for a value
 | ------------------ | :-------------: |
 | Full name          | p-reduce |
 | Keywords           | promise, reduce, collection, iterable, iterator, async, await, promises, accumulate, bluebird |
-| # releases         | 1 |
-| # dependents       | 56 |
-| # downloads        | 37081787 |
+| # releases         | 3 |
+| # dependents       | 83 |
+| # downloads        | 134177555 |
 | # stars            | 0 |
 
 ## Links

@@ -6,10 +6,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StylesCreator extends js.Object {
-  var options: Anon_Index
-  var themingEnabled: Boolean
-  def create(theme: Theme, name: String): StyleRules[String]
+  var options: Anon_Index = js.native
+  var themingEnabled: Boolean = js.native
+  def create(theme: Theme, name: String): StyleRules[String] = js.native
 }
 
 object StylesCreator {

@@ -11,8 +11,8 @@ Typings are for version 1.2
 | Full name          | signale |
 | Keywords           | hackable, colorful, console, logger |
 | # releases         | 10 |
-| # dependents       | 220 |
-| # downloads        | 2405042 |
+| # dependents       | 427 |
+| # downloads        | 7941045 |
 | # stars            | 0 |
 
 ## Links

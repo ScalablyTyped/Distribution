@@ -10,9 +10,9 @@ Download an array of objects as a CSV file in the browser
 | ------------------ | :-------------: |
 | Full name          | save-csv |
 | Keywords           | csv, save, excel, export, locale-aware, download, browser, json |
-| # releases         | 32 |
+| # releases         | 5 |
 | # dependents       | 0 |
-| # downloads        | 7556 |
+| # downloads        | 27448 |
 | # stars            | 1 |
 
 ## Links

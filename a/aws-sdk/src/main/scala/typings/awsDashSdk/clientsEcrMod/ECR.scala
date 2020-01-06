@@ -1,5 +1,8 @@
 package typings.awsDashSdk.clientsEcrMod
 
+import typings.awsDashSdk.Anon_Waiter
+import typings.awsDashSdk.awsDashSdkStrings.imageScanComplete
+import typings.awsDashSdk.awsDashSdkStrings.lifecyclePolicyPreviewComplete
 import typings.awsDashSdk.libConfigMod.ConfigBase
 import typings.awsDashSdk.libErrorMod.AWSError
 import typings.awsDashSdk.libRequestMod.Request
@@ -65,12 +68,12 @@ trait ECR extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CompleteLayerUploadResponse, Unit]
   ): Request[CompleteLayerUploadResponse, AWSError] = js.native
   /**
-    * Creates an image repository.
+    * Creates an Amazon Elastic Container Registry (Amazon ECR) repository, where users can push and pull Docker images. For more information, see Amazon ECR Repositories in the Amazon Elastic Container Registry User Guide.
     */
   def createRepository(): Request[CreateRepositoryResponse, AWSError] = js.native
   def createRepository(callback: js.Function2[/* err */ AWSError, /* data */ CreateRepositoryResponse, Unit]): Request[CreateRepositoryResponse, AWSError] = js.native
   /**
-    * Creates an image repository.
+    * Creates an Amazon Elastic Container Registry (Amazon ECR) repository, where users can push and pull Docker images. For more information, see Amazon ECR Repositories in the Amazon Elastic Container Registry User Guide.
     */
   def createRepository(params: CreateRepositoryRequest): Request[CreateRepositoryResponse, AWSError] = js.native
   def createRepository(
@@ -116,6 +119,19 @@ trait ECR extends Service {
     params: DeleteRepositoryPolicyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteRepositoryPolicyResponse, Unit]
   ): Request[DeleteRepositoryPolicyResponse, AWSError] = js.native
+  /**
+    * Describes the image scan findings for the specified image.
+    */
+  def describeImageScanFindings(): Request[DescribeImageScanFindingsResponse, AWSError] = js.native
+  def describeImageScanFindings(callback: js.Function2[/* err */ AWSError, /* data */ DescribeImageScanFindingsResponse, Unit]): Request[DescribeImageScanFindingsResponse, AWSError] = js.native
+  /**
+    * Describes the image scan findings for the specified image.
+    */
+  def describeImageScanFindings(params: DescribeImageScanFindingsRequest): Request[DescribeImageScanFindingsResponse, AWSError] = js.native
+  def describeImageScanFindings(
+    params: DescribeImageScanFindingsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeImageScanFindingsResponse, Unit]
+  ): Request[DescribeImageScanFindingsResponse, AWSError] = js.native
   /**
     * Returns metadata about the images in a repository, including image size, image tags, and creation date.  Beginning with Docker version 1.9, the Docker client compresses image layers before pushing them to a V2 Docker registry. The output of the docker images command shows the uncompressed image size, so it may return a larger image size than the image sizes returned by DescribeImages. 
     */
@@ -260,12 +276,25 @@ trait ECR extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ PutImageResponse, Unit]
   ): Request[PutImageResponse, AWSError] = js.native
   /**
-    * Updates the image tag mutability settings for a repository.
+    * Updates the image scanning configuration for a repository.
+    */
+  def putImageScanningConfiguration(): Request[PutImageScanningConfigurationResponse, AWSError] = js.native
+  def putImageScanningConfiguration(callback: js.Function2[/* err */ AWSError, /* data */ PutImageScanningConfigurationResponse, Unit]): Request[PutImageScanningConfigurationResponse, AWSError] = js.native
+  /**
+    * Updates the image scanning configuration for a repository.
+    */
+  def putImageScanningConfiguration(params: PutImageScanningConfigurationRequest): Request[PutImageScanningConfigurationResponse, AWSError] = js.native
+  def putImageScanningConfiguration(
+    params: PutImageScanningConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutImageScanningConfigurationResponse, Unit]
+  ): Request[PutImageScanningConfigurationResponse, AWSError] = js.native
+  /**
+    * Updates the image tag mutability settings for a repository. When a repository is configured with tag immutability, all image tags within the repository will be prevented them from being overwritten. For more information, see Image Tag Mutability in the Amazon Elastic Container Registry User Guide.
     */
   def putImageTagMutability(): Request[PutImageTagMutabilityResponse, AWSError] = js.native
   def putImageTagMutability(callback: js.Function2[/* err */ AWSError, /* data */ PutImageTagMutabilityResponse, Unit]): Request[PutImageTagMutabilityResponse, AWSError] = js.native
   /**
-    * Updates the image tag mutability settings for a repository.
+    * Updates the image tag mutability settings for a repository. When a repository is configured with tag immutability, all image tags within the repository will be prevented them from being overwritten. For more information, see Image Tag Mutability in the Amazon Elastic Container Registry User Guide.
     */
   def putImageTagMutability(params: PutImageTagMutabilityRequest): Request[PutImageTagMutabilityResponse, AWSError] = js.native
   def putImageTagMutability(
@@ -298,6 +327,19 @@ trait ECR extends Service {
     params: SetRepositoryPolicyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ SetRepositoryPolicyResponse, Unit]
   ): Request[SetRepositoryPolicyResponse, AWSError] = js.native
+  /**
+    * Starts an image vulnerability scan. An image scan can only be started once per day on an individual image. This limit includes if an image was scanned on initial push. For more information, see Image Scanning in the Amazon Elastic Container Registry User Guide.
+    */
+  def startImageScan(): Request[StartImageScanResponse, AWSError] = js.native
+  def startImageScan(callback: js.Function2[/* err */ AWSError, /* data */ StartImageScanResponse, Unit]): Request[StartImageScanResponse, AWSError] = js.native
+  /**
+    * Starts an image vulnerability scan. An image scan can only be started once per day on an individual image. This limit includes if an image was scanned on initial push. For more information, see Image Scanning in the Amazon Elastic Container Registry User Guide.
+    */
+  def startImageScan(params: StartImageScanRequest): Request[StartImageScanResponse, AWSError] = js.native
+  def startImageScan(
+    params: StartImageScanRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StartImageScanResponse, Unit]
+  ): Request[StartImageScanResponse, AWSError] = js.native
   /**
     * Starts a preview of the specified lifecycle policy. This allows you to see the results before creating the lifecycle policy.
     */
@@ -350,5 +392,47 @@ trait ECR extends Service {
     params: UploadLayerPartRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UploadLayerPartResponse, Unit]
   ): Request[UploadLayerPartResponse, AWSError] = js.native
+  /**
+    * Waits for the imageScanComplete state by periodically calling the underlying ECR.describeImageScanFindingsoperation every 5 seconds (at most 60 times). Wait until an image scan is complete and findings can be accessed
+    */
+  @JSName("waitFor")
+  def waitFor_imageScanComplete(state: imageScanComplete): Request[DescribeImageScanFindingsResponse, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_imageScanComplete(
+    state: imageScanComplete,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeImageScanFindingsResponse, Unit]
+  ): Request[DescribeImageScanFindingsResponse, AWSError] = js.native
+  /**
+    * Waits for the imageScanComplete state by periodically calling the underlying ECR.describeImageScanFindingsoperation every 5 seconds (at most 60 times). Wait until an image scan is complete and findings can be accessed
+    */
+  @JSName("waitFor")
+  def waitFor_imageScanComplete(state: imageScanComplete, params: DescribeImageScanFindingsRequest with Anon_Waiter): Request[DescribeImageScanFindingsResponse, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_imageScanComplete(
+    state: imageScanComplete,
+    params: DescribeImageScanFindingsRequest with Anon_Waiter,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeImageScanFindingsResponse, Unit]
+  ): Request[DescribeImageScanFindingsResponse, AWSError] = js.native
+  /**
+    * Waits for the lifecyclePolicyPreviewComplete state by periodically calling the underlying ECR.getLifecyclePolicyPreviewoperation every 5 seconds (at most 20 times). Wait until a lifecycle policy preview request is complete and results can be accessed
+    */
+  @JSName("waitFor")
+  def waitFor_lifecyclePolicyPreviewComplete(state: lifecyclePolicyPreviewComplete): Request[GetLifecyclePolicyPreviewResponse, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_lifecyclePolicyPreviewComplete(
+    state: lifecyclePolicyPreviewComplete,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetLifecyclePolicyPreviewResponse, Unit]
+  ): Request[GetLifecyclePolicyPreviewResponse, AWSError] = js.native
+  /**
+    * Waits for the lifecyclePolicyPreviewComplete state by periodically calling the underlying ECR.getLifecyclePolicyPreviewoperation every 5 seconds (at most 20 times). Wait until a lifecycle policy preview request is complete and results can be accessed
+    */
+  @JSName("waitFor")
+  def waitFor_lifecyclePolicyPreviewComplete(state: lifecyclePolicyPreviewComplete, params: GetLifecyclePolicyPreviewRequest with Anon_Waiter): Request[GetLifecyclePolicyPreviewResponse, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_lifecyclePolicyPreviewComplete(
+    state: lifecyclePolicyPreviewComplete,
+    params: GetLifecyclePolicyPreviewRequest with Anon_Waiter,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetLifecyclePolicyPreviewResponse, Unit]
+  ): Request[GetLifecyclePolicyPreviewResponse, AWSError] = js.native
 }
 

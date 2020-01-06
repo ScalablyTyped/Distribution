@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AmiLaunchPermissionState extends js.Object {
   /**
     * An AWS Account ID to add launch permissions.
     */
-  val accountId: js.UndefOr[Input[String]] = js.undefined
+  val accountId: js.UndefOr[Input[String]] = js.native
   /**
     * A region-unique name for the AMI.
     */
-  val imageId: js.UndefOr[Input[String]] = js.undefined
+  val imageId: js.UndefOr[Input[String]] = js.native
 }
 
 object AmiLaunchPermissionState {

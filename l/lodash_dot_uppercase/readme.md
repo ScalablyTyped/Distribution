@@ -12,7 +12,7 @@ The lodash method `_.upperCase` exported as a module.
 | Keywords           | lodash-modularized, uppercase |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 226832 |
+| # downloads        | 1184949 |
 | # stars            | 0 |
 
 ## Links

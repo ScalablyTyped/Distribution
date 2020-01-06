@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UpdateBillingGroupResponse extends js.Object {
   /**
     * The latest version of the billing group.
     */
-  var version: js.UndefOr[Version] = js.undefined
+  var version: js.UndefOr[Version] = js.native
 }
 
 object UpdateBillingGroupResponse {

@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WebhookFilter extends js.Object {
-  var jsonPath: Input[String]
-  var matchEquals: Input[String]
+  var jsonPath: Input[String] = js.native
+  var matchEquals: Input[String] = js.native
 }
 
 object WebhookFilter {

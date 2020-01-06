@@ -4,31 +4,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DeploymentOverview extends js.Object {
   /**
     * The number of instances in the deployment in a failed state.
     */
-  var Failed: js.UndefOr[InstanceCount] = js.undefined
+  var Failed: js.UndefOr[InstanceCount] = js.native
   /**
     * The number of instances in which the deployment is in progress.
     */
-  var InProgress: js.UndefOr[InstanceCount] = js.undefined
+  var InProgress: js.UndefOr[InstanceCount] = js.native
   /**
     * The number of instances in the deployment in a pending state.
     */
-  var Pending: js.UndefOr[InstanceCount] = js.undefined
+  var Pending: js.UndefOr[InstanceCount] = js.native
   /**
     * The number of instances in a replacement environment ready to receive traffic in a blue/green deployment.
     */
-  var Ready: js.UndefOr[InstanceCount] = js.undefined
+  var Ready: js.UndefOr[InstanceCount] = js.native
   /**
     * The number of instances in the deployment in a skipped state.
     */
-  var Skipped: js.UndefOr[InstanceCount] = js.undefined
+  var Skipped: js.UndefOr[InstanceCount] = js.native
   /**
     * The number of instances in the deployment to which revisions have been successfully deployed.
     */
-  var Succeeded: js.UndefOr[InstanceCount] = js.undefined
+  var Succeeded: js.UndefOr[InstanceCount] = js.native
 }
 
 object DeploymentOverview {

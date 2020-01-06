@@ -19,7 +19,7 @@ class Channel () extends js.Object {
   def addPeerListener(eventName: String, listener: Listener): Unit = js.native
   def emit(
     eventName: String,
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
   ): Unit = js.native
   def eventNames(): js.Array[String] = js.native
   def listenerCount(eventName: String): Double = js.native

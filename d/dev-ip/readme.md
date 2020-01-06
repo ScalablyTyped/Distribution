@@ -10,9 +10,9 @@ Find a suitable IP host to view local websites on.
 | ------------------ | :-------------: |
 | Full name          | dev-ip |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 32 |
-| # downloads        | 14923681 |
+| # releases         | 0 |
+| # dependents       | 33 |
+| # downloads        | 17571460 |
 | # stars            | 9 |
 
 ## Links

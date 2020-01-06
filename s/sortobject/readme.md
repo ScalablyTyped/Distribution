@@ -9,10 +9,10 @@ Returns a copy of an object, sorted deeply by its keys, without mangling any arr
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | sortobject |
-| Keywords           | sort, object, keys, comparator, array, deep, deeply |
-| # releases         | 2 |
-| # dependents       | 8 |
-| # downloads        | 2146181 |
+| Keywords           | array, browser, comparator, deep, deeply, export-default, keys, module, object, sort, typed, types, typescript |
+| # releases         | 16 |
+| # dependents       | 9 |
+| # downloads        | 2299248 |
 | # stars            | 0 |
 
 ## Links

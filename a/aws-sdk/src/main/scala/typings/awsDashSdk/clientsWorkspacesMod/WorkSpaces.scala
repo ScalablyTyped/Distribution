@@ -130,12 +130,25 @@ trait WorkSpaces extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteWorkspaceImageResult, Unit]
   ): Request[DeleteWorkspaceImageResult, AWSError] = js.native
   /**
-    * Retrieves a list that describes the configuration of bring your own license (BYOL) for the specified account.
+    * Deregisters the specified directory. This operation is asynchronous and returns before the WorkSpace directory is deregistered. If any WorkSpaces are registered to this directory, you must remove them before you can deregister the directory.
+    */
+  def deregisterWorkspaceDirectory(): Request[DeregisterWorkspaceDirectoryResult, AWSError] = js.native
+  def deregisterWorkspaceDirectory(callback: js.Function2[/* err */ AWSError, /* data */ DeregisterWorkspaceDirectoryResult, Unit]): Request[DeregisterWorkspaceDirectoryResult, AWSError] = js.native
+  /**
+    * Deregisters the specified directory. This operation is asynchronous and returns before the WorkSpace directory is deregistered. If any WorkSpaces are registered to this directory, you must remove them before you can deregister the directory.
+    */
+  def deregisterWorkspaceDirectory(params: DeregisterWorkspaceDirectoryRequest): Request[DeregisterWorkspaceDirectoryResult, AWSError] = js.native
+  def deregisterWorkspaceDirectory(
+    params: DeregisterWorkspaceDirectoryRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeregisterWorkspaceDirectoryResult, Unit]
+  ): Request[DeregisterWorkspaceDirectoryResult, AWSError] = js.native
+  /**
+    * Retrieves a list that describes the configuration of Bring Your Own License (BYOL) for the specified account.
     */
   def describeAccount(): Request[DescribeAccountResult, AWSError] = js.native
   def describeAccount(callback: js.Function2[/* err */ AWSError, /* data */ DescribeAccountResult, Unit]): Request[DescribeAccountResult, AWSError] = js.native
   /**
-    * Retrieves a list that describes the configuration of bring your own license (BYOL) for the specified account.
+    * Retrieves a list that describes the configuration of Bring Your Own License (BYOL) for the specified account.
     */
   def describeAccount(params: DescribeAccountRequest): Request[DescribeAccountResult, AWSError] = js.native
   def describeAccount(
@@ -143,12 +156,12 @@ trait WorkSpaces extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeAccountResult, Unit]
   ): Request[DescribeAccountResult, AWSError] = js.native
   /**
-    * Retrieves a list that describes modifications to the configuration of bring your own license (BYOL) for the specified account.
+    * Retrieves a list that describes modifications to the configuration of Bring Your Own License (BYOL) for the specified account.
     */
   def describeAccountModifications(): Request[DescribeAccountModificationsResult, AWSError] = js.native
   def describeAccountModifications(callback: js.Function2[/* err */ AWSError, /* data */ DescribeAccountModificationsResult, Unit]): Request[DescribeAccountModificationsResult, AWSError] = js.native
   /**
-    * Retrieves a list that describes modifications to the configuration of bring your own license (BYOL) for the specified account.
+    * Retrieves a list that describes modifications to the configuration of Bring Your Own License (BYOL) for the specified account.
     */
   def describeAccountModifications(params: DescribeAccountModificationsRequest): Request[DescribeAccountModificationsResult, AWSError] = js.native
   def describeAccountModifications(
@@ -208,12 +221,12 @@ trait WorkSpaces extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeWorkspaceBundlesResult, Unit]
   ): Request[DescribeWorkspaceBundlesResult, AWSError] = js.native
   /**
-    * Describes the available AWS Directory Service directories that are registered with Amazon WorkSpaces.
+    * Describes the available directories that are registered with Amazon WorkSpaces.
     */
   def describeWorkspaceDirectories(): Request[DescribeWorkspaceDirectoriesResult, AWSError] = js.native
   def describeWorkspaceDirectories(callback: js.Function2[/* err */ AWSError, /* data */ DescribeWorkspaceDirectoriesResult, Unit]): Request[DescribeWorkspaceDirectoriesResult, AWSError] = js.native
   /**
-    * Describes the available AWS Directory Service directories that are registered with Amazon WorkSpaces.
+    * Describes the available directories that are registered with Amazon WorkSpaces.
     */
   def describeWorkspaceDirectories(params: DescribeWorkspaceDirectoriesRequest): Request[DescribeWorkspaceDirectoriesResult, AWSError] = js.native
   def describeWorkspaceDirectories(
@@ -288,12 +301,12 @@ trait WorkSpaces extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DisassociateIpGroupsResult, Unit]
   ): Request[DisassociateIpGroupsResult, AWSError] = js.native
   /**
-    * Imports the specified Windows 7 or Windows 10 bring your own license (BYOL) image into Amazon WorkSpaces. The image must be an already licensed EC2 image that is in your AWS account, and you must own the image. 
+    * Imports the specified Windows 7 or Windows 10 Bring Your Own License (BYOL) image into Amazon WorkSpaces. The image must be an already licensed EC2 image that is in your AWS account, and you must own the image. 
     */
   def importWorkspaceImage(): Request[ImportWorkspaceImageResult, AWSError] = js.native
   def importWorkspaceImage(callback: js.Function2[/* err */ AWSError, /* data */ ImportWorkspaceImageResult, Unit]): Request[ImportWorkspaceImageResult, AWSError] = js.native
   /**
-    * Imports the specified Windows 7 or Windows 10 bring your own license (BYOL) image into Amazon WorkSpaces. The image must be an already licensed EC2 image that is in your AWS account, and you must own the image. 
+    * Imports the specified Windows 7 or Windows 10 Bring Your Own License (BYOL) image into Amazon WorkSpaces. The image must be an already licensed EC2 image that is in your AWS account, and you must own the image. 
     */
   def importWorkspaceImage(params: ImportWorkspaceImageRequest): Request[ImportWorkspaceImageResult, AWSError] = js.native
   def importWorkspaceImage(
@@ -301,14 +314,14 @@ trait WorkSpaces extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ImportWorkspaceImageResult, Unit]
   ): Request[ImportWorkspaceImageResult, AWSError] = js.native
   /**
-    * Retrieves a list of IP address ranges, specified as IPv4 CIDR blocks, that you can use for the network management interface when you enable bring your own license (BYOL).  The management network interface is connected to a secure Amazon WorkSpaces management network. It is used for interactive streaming of the WorkSpace desktop to Amazon WorkSpaces clients, and to allow Amazon WorkSpaces to manage the WorkSpace.
+    * Retrieves a list of IP address ranges, specified as IPv4 CIDR blocks, that you can use for the network management interface when you enable Bring Your Own License (BYOL).  The management network interface is connected to a secure Amazon WorkSpaces management network. It is used for interactive streaming of the WorkSpace desktop to Amazon WorkSpaces clients, and to allow Amazon WorkSpaces to manage the WorkSpace.
     */
   def listAvailableManagementCidrRanges(): Request[ListAvailableManagementCidrRangesResult, AWSError] = js.native
   def listAvailableManagementCidrRanges(
     callback: js.Function2[/* err */ AWSError, /* data */ ListAvailableManagementCidrRangesResult, Unit]
   ): Request[ListAvailableManagementCidrRangesResult, AWSError] = js.native
   /**
-    * Retrieves a list of IP address ranges, specified as IPv4 CIDR blocks, that you can use for the network management interface when you enable bring your own license (BYOL).  The management network interface is connected to a secure Amazon WorkSpaces management network. It is used for interactive streaming of the WorkSpace desktop to Amazon WorkSpaces clients, and to allow Amazon WorkSpaces to manage the WorkSpace.
+    * Retrieves a list of IP address ranges, specified as IPv4 CIDR blocks, that you can use for the network management interface when you enable Bring Your Own License (BYOL).  The management network interface is connected to a secure Amazon WorkSpaces management network. It is used for interactive streaming of the WorkSpace desktop to Amazon WorkSpaces clients, and to allow Amazon WorkSpaces to manage the WorkSpace.
     */
   def listAvailableManagementCidrRanges(params: ListAvailableManagementCidrRangesRequest): Request[ListAvailableManagementCidrRangesResult, AWSError] = js.native
   def listAvailableManagementCidrRanges(
@@ -316,12 +329,12 @@ trait WorkSpaces extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListAvailableManagementCidrRangesResult, Unit]
   ): Request[ListAvailableManagementCidrRangesResult, AWSError] = js.native
   /**
-    * Modifies the configuration of bring your own license (BYOL) for the specified account.
+    * Modifies the configuration of Bring Your Own License (BYOL) for the specified account.
     */
   def modifyAccount(): Request[ModifyAccountResult, AWSError] = js.native
   def modifyAccount(callback: js.Function2[/* err */ AWSError, /* data */ ModifyAccountResult, Unit]): Request[ModifyAccountResult, AWSError] = js.native
   /**
-    * Modifies the configuration of bring your own license (BYOL) for the specified account.
+    * Modifies the configuration of Bring Your Own License (BYOL) for the specified account.
     */
   def modifyAccount(params: ModifyAccountRequest): Request[ModifyAccountResult, AWSError] = js.native
   def modifyAccount(
@@ -341,6 +354,47 @@ trait WorkSpaces extends Service {
     params: ModifyClientPropertiesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ModifyClientPropertiesResult, Unit]
   ): Request[ModifyClientPropertiesResult, AWSError] = js.native
+  /**
+    * Modifies the self-service WorkSpace management capabilities for your users. For more information, see Enable Self-Service WorkSpace Management Capabilities for Your Users.
+    */
+  def modifySelfservicePermissions(): Request[ModifySelfservicePermissionsResult, AWSError] = js.native
+  def modifySelfservicePermissions(callback: js.Function2[/* err */ AWSError, /* data */ ModifySelfservicePermissionsResult, Unit]): Request[ModifySelfservicePermissionsResult, AWSError] = js.native
+  /**
+    * Modifies the self-service WorkSpace management capabilities for your users. For more information, see Enable Self-Service WorkSpace Management Capabilities for Your Users.
+    */
+  def modifySelfservicePermissions(params: ModifySelfservicePermissionsRequest): Request[ModifySelfservicePermissionsResult, AWSError] = js.native
+  def modifySelfservicePermissions(
+    params: ModifySelfservicePermissionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifySelfservicePermissionsResult, Unit]
+  ): Request[ModifySelfservicePermissionsResult, AWSError] = js.native
+  /**
+    * Specifies which devices and operating systems users can use to access their Workspaces. For more information, see  Control Device Access.
+    */
+  def modifyWorkspaceAccessProperties(): Request[ModifyWorkspaceAccessPropertiesResult, AWSError] = js.native
+  def modifyWorkspaceAccessProperties(callback: js.Function2[/* err */ AWSError, /* data */ ModifyWorkspaceAccessPropertiesResult, Unit]): Request[ModifyWorkspaceAccessPropertiesResult, AWSError] = js.native
+  /**
+    * Specifies which devices and operating systems users can use to access their Workspaces. For more information, see  Control Device Access.
+    */
+  def modifyWorkspaceAccessProperties(params: ModifyWorkspaceAccessPropertiesRequest): Request[ModifyWorkspaceAccessPropertiesResult, AWSError] = js.native
+  def modifyWorkspaceAccessProperties(
+    params: ModifyWorkspaceAccessPropertiesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyWorkspaceAccessPropertiesResult, Unit]
+  ): Request[ModifyWorkspaceAccessPropertiesResult, AWSError] = js.native
+  /**
+    * Modify the default properties used to create WorkSpaces.
+    */
+  def modifyWorkspaceCreationProperties(): Request[ModifyWorkspaceCreationPropertiesResult, AWSError] = js.native
+  def modifyWorkspaceCreationProperties(
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyWorkspaceCreationPropertiesResult, Unit]
+  ): Request[ModifyWorkspaceCreationPropertiesResult, AWSError] = js.native
+  /**
+    * Modify the default properties used to create WorkSpaces.
+    */
+  def modifyWorkspaceCreationProperties(params: ModifyWorkspaceCreationPropertiesRequest): Request[ModifyWorkspaceCreationPropertiesResult, AWSError] = js.native
+  def modifyWorkspaceCreationProperties(
+    params: ModifyWorkspaceCreationPropertiesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyWorkspaceCreationPropertiesResult, Unit]
+  ): Request[ModifyWorkspaceCreationPropertiesResult, AWSError] = js.native
   /**
     * Modifies the specified WorkSpace properties.
     */
@@ -393,6 +447,19 @@ trait WorkSpaces extends Service {
     params: RebuildWorkspacesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ RebuildWorkspacesResult, Unit]
   ): Request[RebuildWorkspacesResult, AWSError] = js.native
+  /**
+    * Registers the specified directory. This operation is asynchronous and returns before the WorkSpace directory is registered. If this is the first time you are registering a directory, you will need to create the workspaces_DefaultRole role before you can register a directory. For more information, see  Creating the workspaces_DefaultRole Role.
+    */
+  def registerWorkspaceDirectory(): Request[RegisterWorkspaceDirectoryResult, AWSError] = js.native
+  def registerWorkspaceDirectory(callback: js.Function2[/* err */ AWSError, /* data */ RegisterWorkspaceDirectoryResult, Unit]): Request[RegisterWorkspaceDirectoryResult, AWSError] = js.native
+  /**
+    * Registers the specified directory. This operation is asynchronous and returns before the WorkSpace directory is registered. If this is the first time you are registering a directory, you will need to create the workspaces_DefaultRole role before you can register a directory. For more information, see  Creating the workspaces_DefaultRole Role.
+    */
+  def registerWorkspaceDirectory(params: RegisterWorkspaceDirectoryRequest): Request[RegisterWorkspaceDirectoryResult, AWSError] = js.native
+  def registerWorkspaceDirectory(
+    params: RegisterWorkspaceDirectoryRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RegisterWorkspaceDirectoryResult, Unit]
+  ): Request[RegisterWorkspaceDirectoryResult, AWSError] = js.native
   /**
     * Restores the specified WorkSpace to its last known healthy state. You cannot restore a WorkSpace unless its state is  AVAILABLE, ERROR, or UNHEALTHY. Restoring a WorkSpace is a potentially destructive action that can result in the loss of data. For more information, see Restore a WorkSpace. This operation is asynchronous and returns before the WorkSpace is completely restored.
     */

@@ -10,9 +10,9 @@ convert wkt to geojson
 | ------------------ | :-------------: |
 | Full name          | wellknown |
 | Keywords           | wkt, geojson, maps |
-| # releases         | 1 |
-| # dependents       | 32 |
-| # downloads        | 484880 |
+| # releases         | 0 |
+| # dependents       | 43 |
+| # downloads        | 528430 |
 | # stars            | 3 |
 
 ## Links

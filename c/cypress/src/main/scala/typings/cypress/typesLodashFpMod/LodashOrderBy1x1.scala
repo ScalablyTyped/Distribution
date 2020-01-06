@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait LodashOrderBy1x1[T] extends js.Object {
-  def apply(orders: Many[Boolean | asc | desc]): js.Array[T] = js.native
+  def apply(orders: Many[Boolean | asc | desc]): LodashOrderBy1x3[T] = js.native
   def apply(orders: Many[Boolean | asc | desc], collection: js.Object): js.Array[T] = js.native
   def apply(orders: Many[Boolean | asc | desc], collection: List[T]): js.Array[T] = js.native
   def apply(orders: __): LodashOrderBy1x5[T] = js.native

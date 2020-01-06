@@ -12,7 +12,7 @@ Get a weighted random object from an array of objects.
 | Keywords           | simple, random, weighted, weights |
 | # releases         | 2 |
 | # dependents       | 2 |
-| # downloads        | 674 |
+| # downloads        | 941 |
 | # stars            | 1 |
 
 ## Links

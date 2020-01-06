@@ -4,18 +4,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UpdateBuildOutput extends js.Object {
   /**
-    * Object that contains the updated build record.
+    * The updated build record.
     */
-  var Build: js.UndefOr[typings.awsDashSdk.clientsGameliftMod.Build] = js.undefined
+  var Build: js.UndefOr[typings.awsDashSdk.clientsGameliftMod.Build] = js.native
 }
 
 object UpdateBuildOutput {
   @scala.inline
   def apply(Build: Build = null): UpdateBuildOutput = {
     val __obj = js.Dynamic.literal()
-    if (Build != null) __obj.updateDynamic("Build")(Build)
+    if (Build != null) __obj.updateDynamic("Build")(Build.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateBuildOutput]
   }
 }

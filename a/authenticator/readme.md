@@ -10,9 +10,9 @@ Two- / Multi- Factor Authenication (2FA / MFA) for node.js
 | ------------------ | :-------------: |
 | Full name          | authenticator |
 | Keywords           | authenticator, 2fa, mfa, token, key, base32, code, generator, one-time, time-based, authy, google, microsoft |
-| # releases         | 4 |
-| # dependents       | 11 |
-| # downloads        | 137129 |
+| # releases         | 3 |
+| # dependents       | 13 |
+| # downloads        | 143746 |
 | # stars            | 7 |
 
 ## Links

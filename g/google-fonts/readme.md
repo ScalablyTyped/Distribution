@@ -11,8 +11,8 @@ A small helper library for embedding Google Fonts on your page.
 | Full name          | google-fonts |
 | Keywords           | google, fonts, webfonts, inline, embed, append |
 | # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 17659 |
+| # dependents       | 9 |
+| # downloads        | 12826 |
 | # stars            | 0 |
 
 ## Links

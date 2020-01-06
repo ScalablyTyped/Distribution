@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StatusCodes extends js.Object {
   /**
     * The percentage of requests over the last 10 seconds that resulted in a 2xx (200, 201, etc.) status code.
     */
-  var Status2xx: js.UndefOr[NullableInteger] = js.undefined
+  var Status2xx: js.UndefOr[NullableInteger] = js.native
   /**
     * The percentage of requests over the last 10 seconds that resulted in a 3xx (300, 301, etc.) status code.
     */
-  var Status3xx: js.UndefOr[NullableInteger] = js.undefined
+  var Status3xx: js.UndefOr[NullableInteger] = js.native
   /**
     * The percentage of requests over the last 10 seconds that resulted in a 4xx (400, 401, etc.) status code.
     */
-  var Status4xx: js.UndefOr[NullableInteger] = js.undefined
+  var Status4xx: js.UndefOr[NullableInteger] = js.native
   /**
     * The percentage of requests over the last 10 seconds that resulted in a 5xx (500, 501, etc.) status code.
     */
-  var Status5xx: js.UndefOr[NullableInteger] = js.undefined
+  var Status5xx: js.UndefOr[NullableInteger] = js.native
 }
 
 object StatusCodes {

@@ -73,6 +73,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InputBaseComponentProps
   extends HTMLAttributes[HTMLInputElement | HTMLTextAreaElement]
      with // Accommodate arbitrary additional props coming from the `inputProps` prop

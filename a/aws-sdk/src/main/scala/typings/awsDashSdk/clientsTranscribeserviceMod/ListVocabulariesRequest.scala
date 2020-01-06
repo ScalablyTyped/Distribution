@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ListVocabulariesRequest extends js.Object {
   /**
     * The maximum number of vocabularies to return in the response. If there are fewer results in the list, this response contains only the actual results.
     */
-  var MaxResults: js.UndefOr[typings.awsDashSdk.clientsTranscribeserviceMod.MaxResults] = js.undefined
+  var MaxResults: js.UndefOr[typings.awsDashSdk.clientsTranscribeserviceMod.MaxResults] = js.native
   /**
     * When specified, the vocabularies returned in the list are limited to vocabularies whose name contains the specified string. The search is case-insensitive, ListVocabularies will return both "vocabularyname" and "VocabularyName" in the response list.
     */
-  var NameContains: js.UndefOr[VocabularyName] = js.undefined
+  var NameContains: js.UndefOr[VocabularyName] = js.native
   /**
     * If the result of the previous request to ListVocabularies was truncated, include the NextToken to fetch the next set of jobs.
     */
-  var NextToken: js.UndefOr[typings.awsDashSdk.clientsTranscribeserviceMod.NextToken] = js.undefined
+  var NextToken: js.UndefOr[typings.awsDashSdk.clientsTranscribeserviceMod.NextToken] = js.native
   /**
     * When specified, only returns vocabularies with the VocabularyState field equal to the specified state.
     */
-  var StateEquals: js.UndefOr[VocabularyState] = js.undefined
+  var StateEquals: js.UndefOr[VocabularyState] = js.native
 }
 
 object ListVocabulariesRequest {
@@ -33,8 +34,8 @@ object ListVocabulariesRequest {
   ): ListVocabulariesRequest = {
     val __obj = js.Dynamic.literal()
     if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
-    if (NameContains != null) __obj.updateDynamic("NameContains")(NameContains)
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
+    if (NameContains != null) __obj.updateDynamic("NameContains")(NameContains.asInstanceOf[js.Any])
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (StateEquals != null) __obj.updateDynamic("StateEquals")(StateEquals.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListVocabulariesRequest]
   }

@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MountOptions extends js.Object {
-  var mount: Fn_Node
+  var mount: Fn_Node = js.native
 }
 
 object MountOptions {

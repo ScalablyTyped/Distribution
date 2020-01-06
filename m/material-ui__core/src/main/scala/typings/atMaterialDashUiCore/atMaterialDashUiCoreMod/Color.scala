@@ -4,21 +4,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Color extends js.Object {
-  var `100`: String
-  var `200`: String
-  var `300`: String
-  var `400`: String
-  var `50`: String
-  var `500`: String
-  var `600`: String
-  var `700`: String
-  var `800`: String
-  var `900`: String
-  var A100: String
-  var A200: String
-  var A400: String
-  var A700: String
+  var `100`: String = js.native
+  var `200`: String = js.native
+  var `300`: String = js.native
+  var `400`: String = js.native
+  var `50`: String = js.native
+  var `500`: String = js.native
+  var `600`: String = js.native
+  var `700`: String = js.native
+  var `800`: String = js.native
+  var `900`: String = js.native
+  var A100: String = js.native
+  var A200: String = js.native
+  var A400: String = js.native
+  var A700: String = js.native
 }
 
 object Color {

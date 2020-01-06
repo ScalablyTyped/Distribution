@@ -11,8 +11,8 @@ The ZeroClipboard library provides an easy way to copy text to the clipboard usi
 | Full name          | zeroclipboard |
 | Keywords           | flash, clipboard, copy, cut, paste, zclip, clip, clippy |
 | # releases         | 0 |
-| # dependents       | 25 |
-| # downloads        | 859762 |
+| # dependents       | 27 |
+| # downloads        | 853406 |
 | # stars            | 5 |
 
 ## Links

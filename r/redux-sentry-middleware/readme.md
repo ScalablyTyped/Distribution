@@ -10,9 +10,9 @@ Redux middleware for propagating Redux state/actions to use with new @sentry/bro
 | ------------------ | :-------------: |
 | Full name          | redux-sentry-middleware |
 | Keywords           | redux, middleware, sentry, logging |
-| # releases         | 14 |
+| # releases         | 18 |
 | # dependents       | 1 |
-| # downloads        | 58219 |
+| # downloads        | 390402 |
 | # stars            | 0 |
 
 ## Links

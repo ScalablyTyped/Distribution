@@ -10,9 +10,9 @@ Kerberos library for Node.js
 | ------------------ | :-------------: |
 | Full name          | kerberos |
 | Keywords           | kerberos, security, authentication |
-| # releases         | 5 |
-| # dependents       | 102 |
-| # downloads        | 2484712 |
+| # releases         | 7 |
+| # dependents       | 104 |
+| # downloads        | 2705754 |
 | # stars            | 7 |
 
 ## Links

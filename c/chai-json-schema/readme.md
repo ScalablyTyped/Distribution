@@ -12,7 +12,7 @@ Chai plugin for JSON Schema v4
 | Keywords           | array, assert, assertion, browser, chai, chai-plugin, json, json-schema, objects, schema, test, testing |
 | # releases         | 2 |
 | # dependents       | 5 |
-| # downloads        | 420926 |
+| # downloads        | 650534 |
 | # stars            | 4 |
 
 ## Links

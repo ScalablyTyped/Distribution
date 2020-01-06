@@ -48,7 +48,12 @@ class DOMQuad ()
 @JSGlobal("DOMQuad")
 @js.native
 object DOMQuad
-  extends Instantiable2[
+  extends Instantiable0[typings.geometryDashDom.GeometryDom.DOMQuad]
+     with Instantiable1[
+      (/* p1 */ DOMPointInit) | (/* rect */ DOMRectInit), 
+      typings.geometryDashDom.GeometryDom.DOMQuad
+    ]
+     with Instantiable2[
       /* p1 */ DOMPointInit, 
       /* p2 */ DOMPointInit, 
       typings.geometryDashDom.GeometryDom.DOMQuad
@@ -66,9 +71,4 @@ object DOMQuad
       /* p4 */ DOMPointInit, 
       typings.geometryDashDom.GeometryDom.DOMQuad
     ]
-     with Instantiable1[
-      (/* p1 */ DOMPointInit) | (/* rect */ DOMRectInit), 
-      typings.geometryDashDom.GeometryDom.DOMQuad
-    ]
-     with Instantiable0[typings.geometryDashDom.GeometryDom.DOMQuad]
 

@@ -9,10 +9,10 @@ An implementation of The Web Application Messaging Protocol (WAMP).
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | autobahn |
-| Keywords           | WAMP, WebSocket, RPC, PubSub |
-| # releases         | 8 |
-| # dependents       | 56 |
-| # downloads        | 196308 |
+| Keywords           | WAMP, WebSocket, RPC, PubSub, ethereum, solidity, xbr, crossbar, autobahn, wamp, data-service, data-monetization |
+| # releases         | 15 |
+| # dependents       | 59 |
+| # downloads        | 193762 |
 | # stars            | 12 |
 
 ## Links

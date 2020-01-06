@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LaunchTemplateLicenseSpecification extends js.Object {
-  var licenseConfigurationArn: Input[String]
+  var licenseConfigurationArn: Input[String] = js.native
 }
 
 object LaunchTemplateLicenseSpecification {

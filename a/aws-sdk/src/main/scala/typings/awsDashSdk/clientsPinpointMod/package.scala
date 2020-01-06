@@ -106,8 +106,10 @@ package object clientsPinpointMod {
   type Include = _Include | String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.CREATED
+    - typings.awsDashSdk.awsDashSdkStrings.PREPARING_FOR_INITIALIZATION
     - typings.awsDashSdk.awsDashSdkStrings.INITIALIZING
     - typings.awsDashSdk.awsDashSdkStrings.PROCESSING
+    - typings.awsDashSdk.awsDashSdkStrings.PENDING_JOB
     - typings.awsDashSdk.awsDashSdkStrings.COMPLETING
     - typings.awsDashSdk.awsDashSdkStrings.COMPLETED
     - typings.awsDashSdk.awsDashSdkStrings.FAILING
@@ -122,16 +124,22 @@ package object clientsPinpointMod {
   type ListOfEndpointResponse = js.Array[EndpointResponse]
   type ListOfExportJobResponse = js.Array[ExportJobResponse]
   type ListOfImportJobResponse = js.Array[ImportJobResponse]
+  type ListOfJourneyResponse = js.Array[JourneyResponse]
+  type ListOfMultiConditionalBranch = js.Array[MultiConditionalBranch]
+  type ListOfRandomSplitEntry = js.Array[RandomSplitEntry]
   type ListOfResultRow = js.Array[ResultRow]
   type ListOfResultRowValue = js.Array[ResultRowValue]
   type ListOfSegmentDimensions = js.Array[SegmentDimensions]
   type ListOfSegmentGroup = js.Array[SegmentGroup]
   type ListOfSegmentReference = js.Array[SegmentReference]
   type ListOfSegmentResponse = js.Array[SegmentResponse]
+  type ListOfSimpleCondition = js.Array[SimpleCondition]
   type ListOfTemplateResponse = js.Array[TemplateResponse]
+  type ListOfTemplateVersionResponse = js.Array[TemplateVersionResponse]
   type ListOfTreatmentResource = js.Array[TreatmentResource]
   type ListOfWriteTreatmentResource = js.Array[WriteTreatmentResource]
   type ListOf__string = js.Array[__string]
+  type MapOfActivity = StringDictionary[Activity]
   type MapOfAddressConfiguration = StringDictionary[AddressConfiguration]
   type MapOfAttributeDimension = StringDictionary[AttributeDimension]
   type MapOfChannelResponse = StringDictionary[ChannelResponse]
@@ -161,6 +169,12 @@ package object clientsPinpointMod {
   */
   type Mode = _Mode | String
   /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.ALL
+    - typings.awsDashSdk.awsDashSdkStrings.ANY
+    - java.lang.String
+  */
+  type Operator = _Operator | String
+  /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.ACTIVE
     - typings.awsDashSdk.awsDashSdkStrings.INACTIVE
     - java.lang.String
@@ -180,8 +194,18 @@ package object clientsPinpointMod {
   */
   type SourceType = _SourceType | String
   /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.DRAFT
+    - typings.awsDashSdk.awsDashSdkStrings.ACTIVE
+    - typings.awsDashSdk.awsDashSdkStrings.COMPLETED
+    - typings.awsDashSdk.awsDashSdkStrings.CANCELLED
+    - typings.awsDashSdk.awsDashSdkStrings.CLOSED
+    - java.lang.String
+  */
+  type State = _State | String
+  /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.EMAIL
     - typings.awsDashSdk.awsDashSdkStrings.SMS
+    - typings.awsDashSdk.awsDashSdkStrings.VOICE
     - typings.awsDashSdk.awsDashSdkStrings.PUSH
     - java.lang.String
   */
@@ -201,7 +225,7 @@ package object clientsPinpointMod {
   type __timestampIso8601 = Date
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2016-12-01`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

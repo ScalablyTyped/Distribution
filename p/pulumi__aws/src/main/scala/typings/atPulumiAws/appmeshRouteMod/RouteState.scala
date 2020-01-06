@@ -7,39 +7,40 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RouteState extends js.Object {
   /**
     * The ARN of the route.
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * The creation date of the route.
     */
-  val createdDate: js.UndefOr[Input[String]] = js.undefined
+  val createdDate: js.UndefOr[Input[String]] = js.native
   /**
     * The last update date of the route.
     */
-  val lastUpdatedDate: js.UndefOr[Input[String]] = js.undefined
+  val lastUpdatedDate: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the service mesh in which to create the route.
     */
-  val meshName: js.UndefOr[Input[String]] = js.undefined
+  val meshName: js.UndefOr[Input[String]] = js.native
   /**
     * The name to use for the route.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * The route specification to apply.
     */
-  val spec: js.UndefOr[Input[RouteSpec]] = js.undefined
+  val spec: js.UndefOr[Input[RouteSpec]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * The name of the virtual router in which to create the route.
     */
-  val virtualRouterName: js.UndefOr[Input[String]] = js.undefined
+  val virtualRouterName: js.UndefOr[Input[String]] = js.native
 }
 
 object RouteState {

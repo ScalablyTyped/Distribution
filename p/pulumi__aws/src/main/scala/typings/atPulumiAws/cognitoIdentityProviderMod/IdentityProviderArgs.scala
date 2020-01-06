@@ -6,31 +6,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IdentityProviderArgs extends js.Object {
   /**
     * The map of attribute mapping of user pool attributes. [AttributeMapping in AWS API documentation](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_CreateIdentityProvider.html#CognitoUserPools-CreateIdentityProvider-request-AttributeMapping)
     */
-  val attributeMapping: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val attributeMapping: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * The list of identity providers.
     */
-  val idpIdentifiers: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val idpIdentifiers: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The map of identity details, such as access token
     */
-  val providerDetails: Input[StringDictionary[_]]
+  val providerDetails: Input[StringDictionary[_]] = js.native
   /**
     * The provider name
     */
-  val providerName: Input[String]
+  val providerName: Input[String] = js.native
   /**
     * The provider type.  [See AWS API for valid values](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_CreateIdentityProvider.html#CognitoUserPools-CreateIdentityProvider-request-ProviderType)
     */
-  val providerType: Input[String]
+  val providerType: Input[String] = js.native
   /**
     * The user pool id
     */
-  val userPoolId: Input[String]
+  val userPoolId: Input[String] = js.native
 }
 
 object IdentityProviderArgs {

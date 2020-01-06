@@ -10,9 +10,9 @@ Interact with and control an embedded Vimeo Player.
 | ------------------ | :-------------: |
 | Full name          | @vimeo/player |
 | Keywords           | vimeo, player, api, iframe, embed, video, javascript, postMessage |
-| # releases         | 21 |
-| # dependents       | 17 |
-| # downloads        | 1464238 |
+| # releases         | 19 |
+| # dependents       | 29 |
+| # downloads        | 1585978 |
 | # stars            | 3 |
 
 ## Links

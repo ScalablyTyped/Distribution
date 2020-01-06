@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object clientsEcsMod {
   import org.scalablytyped.runtime.StringDictionary
+  import typings.awsDashSdk.awsDashSdkStrings.ACTIVE
   import typings.awsDashSdk.awsDashSdkStrings.APPMESH
   import typings.awsDashSdk.awsDashSdkStrings.GPU
   import typings.awsDashSdk.awsDashSdkStrings.PERCENT
@@ -39,8 +40,17 @@ package object clientsEcsMod {
   type Boolean = scala.Boolean
   type BoxedBoolean = scala.Boolean
   type BoxedInteger = scala.Double
+  type CapacityProviderField = TAGS | java.lang.String
+  type CapacityProviderFieldList = js.Array[CapacityProviderField]
+  type CapacityProviderStatus = ACTIVE | java.lang.String
+  type CapacityProviderStrategy = js.Array[CapacityProviderStrategyItem]
+  type CapacityProviderStrategyItemBase = scala.Double
+  type CapacityProviderStrategyItemWeight = scala.Double
+  type CapacityProviders = js.Array[CapacityProvider]
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
   /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.ATTACHMENTS
+    - typings.awsDashSdk.awsDashSdkStrings.SETTINGS
     - typings.awsDashSdk.awsDashSdkStrings.STATISTICS
     - typings.awsDashSdk.awsDashSdkStrings.TAGS
     - java.lang.String
@@ -104,9 +114,9 @@ package object clientsEcsMod {
   */
   type DesiredStatus = _DesiredStatus | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.read
-    - typings.awsDashSdk.awsDashSdkStrings.write
-    - typings.awsDashSdk.awsDashSdkStrings.mknod
+    - typings.awsDashSdk.awsDashSdkStrings.read_
+    - typings.awsDashSdk.awsDashSdkStrings.write_
+    - typings.awsDashSdk.awsDashSdkStrings.mknod_
     - java.lang.String
   */
   type DeviceCgroupPermission = _DeviceCgroupPermission | java.lang.String
@@ -136,9 +146,9 @@ package object clientsEcsMod {
   type InferenceAccelerators = js.Array[InferenceAccelerator]
   type Integer = scala.Double
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.host
-    - typings.awsDashSdk.awsDashSdkStrings.task
-    - typings.awsDashSdk.awsDashSdkStrings.none
+    - typings.awsDashSdk.awsDashSdkStrings.host_
+    - typings.awsDashSdk.awsDashSdkStrings.task_
+    - typings.awsDashSdk.awsDashSdkStrings.none__
     - java.lang.String
   */
   type IpcMode = _IpcMode | java.lang.String
@@ -163,20 +173,34 @@ package object clientsEcsMod {
   */
   type LogDriver = _LogDriver | java.lang.String
   type Long = scala.Double
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.ENABLED
+    - typings.awsDashSdk.awsDashSdkStrings.DISABLED
+    - java.lang.String
+  */
+  type ManagedScalingStatus = _ManagedScalingStatus | java.lang.String
+  type ManagedScalingStepSize = scala.Double
+  type ManagedScalingTargetCapacity = scala.Double
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.ENABLED
+    - typings.awsDashSdk.awsDashSdkStrings.DISABLED
+    - java.lang.String
+  */
+  type ManagedTerminationProtection = _ManagedTerminationProtection | java.lang.String
   type MountPointList = js.Array[MountPoint]
   type NetworkBindings = js.Array[NetworkBinding]
   type NetworkInterfaces = js.Array[NetworkInterface]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.bridge
-    - typings.awsDashSdk.awsDashSdkStrings.host
-    - typings.awsDashSdk.awsDashSdkStrings.awsvpc
-    - typings.awsDashSdk.awsDashSdkStrings.none
+    - typings.awsDashSdk.awsDashSdkStrings.host_
+    - typings.awsDashSdk.awsDashSdkStrings.awsvpc_
+    - typings.awsDashSdk.awsDashSdkStrings.none__
     - java.lang.String
   */
   type NetworkMode = _NetworkMode | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.host
-    - typings.awsDashSdk.awsDashSdkStrings.task
+    - typings.awsDashSdk.awsDashSdkStrings.host_
+    - typings.awsDashSdk.awsDashSdkStrings.task_
     - java.lang.String
   */
   type PidMode = _PidMode | java.lang.String
@@ -189,7 +213,7 @@ package object clientsEcsMod {
   type PlacementConstraints = js.Array[PlacementConstraint]
   type PlacementStrategies = js.Array[PlacementStrategy]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.random
+    - typings.awsDashSdk.awsDashSdkStrings.random_
     - typings.awsDashSdk.awsDashSdkStrings.spread
     - typings.awsDashSdk.awsDashSdkStrings.binpack
     - java.lang.String
@@ -223,8 +247,8 @@ package object clientsEcsMod {
   */
   type SchedulingStrategy = _SchedulingStrategy | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.task
-    - typings.awsDashSdk.awsDashSdkStrings.shared
+    - typings.awsDashSdk.awsDashSdkStrings.task_
+    - typings.awsDashSdk.awsDashSdkStrings.shared__
     - java.lang.String
   */
   type Scope = _Scope | java.lang.String
@@ -297,16 +321,16 @@ package object clientsEcsMod {
   type Timestamp = Date
   type TmpfsList = js.Array[Tmpfs]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.tcp
-    - typings.awsDashSdk.awsDashSdkStrings.udp
+    - typings.awsDashSdk.awsDashSdkStrings.tcp_
+    - typings.awsDashSdk.awsDashSdkStrings.udp_
     - java.lang.String
   */
   type TransportProtocol = _TransportProtocol | java.lang.String
   type UlimitList = js.Array[Ulimit]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.core
-    - typings.awsDashSdk.awsDashSdkStrings.cpu
-    - typings.awsDashSdk.awsDashSdkStrings.data
+    - typings.awsDashSdk.awsDashSdkStrings.core__
+    - typings.awsDashSdk.awsDashSdkStrings.cpu__
+    - typings.awsDashSdk.awsDashSdkStrings.data_
     - typings.awsDashSdk.awsDashSdkStrings.fsize
     - typings.awsDashSdk.awsDashSdkStrings.locks
     - typings.awsDashSdk.awsDashSdkStrings.memlock
@@ -326,7 +350,7 @@ package object clientsEcsMod {
   type VolumeList = js.Array[Volume]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2014-11-13`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | java.lang.String

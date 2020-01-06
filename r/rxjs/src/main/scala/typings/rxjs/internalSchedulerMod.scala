@@ -16,8 +16,8 @@ object internalSchedulerMod extends js.Object {
     def this(SchedulerAction: Instantiable2[
             /* scheduler */ Scheduler, 
             /* work */ js.ThisFunction1[
-              /* this */ SchedulerAction[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any], 
-              /* state */ js.UndefOr[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any], 
+              /* this */ SchedulerAction[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
+              /* state */ js.UndefOr[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
               Unit
             ], 
             Action[js.Object]
@@ -26,8 +26,8 @@ object internalSchedulerMod extends js.Object {
       SchedulerAction: Instantiable2[
             /* scheduler */ Scheduler, 
             /* work */ js.ThisFunction1[
-              /* this */ SchedulerAction[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any], 
-              /* state */ js.UndefOr[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any], 
+              /* this */ SchedulerAction[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
+              /* state */ js.UndefOr[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
               Unit
             ], 
             Action[js.Object]

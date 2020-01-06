@@ -10,9 +10,9 @@ Various hash functions that could be run by both browser and node
 | ------------------ | :-------------: |
 | Full name          | hash.js |
 | Keywords           | hash, sha256, sha224, hmac |
-| # releases         | 9 |
-| # dependents       | 231 |
-| # downloads        | 205081684 |
+| # releases         | 5 |
+| # dependents       | 312 |
+| # downloads        | 306533319 |
 | # stars            | 13 |
 
 ## Links

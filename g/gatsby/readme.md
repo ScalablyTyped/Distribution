@@ -10,9 +10,9 @@ Blazing fast modern site generator for React
 | ------------------ | :-------------: |
 | Full name          | gatsby |
 | Keywords           | blog, generator, jekyll, markdown, react, ssg, website |
-| # releases         | 868 |
-| # dependents       | 124 |
-| # downloads        | 9741030 |
+| # releases         | 907 |
+| # dependents       | 318 |
+| # downloads        | 12871753 |
 | # stars            | 23 |
 
 ## Links

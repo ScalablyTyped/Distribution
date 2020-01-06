@@ -11,8 +11,8 @@ Sugar methods for using sinon.js stubs with promises
 | Full name          | sinon-as-promised |
 | Keywords           | sinon, promises, test |
 | # releases         | 1 |
-| # dependents       | 25 |
-| # downloads        | 1204130 |
+| # dependents       | 26 |
+| # downloads        | 1331254 |
 | # stars            | 14 |
 
 ## Links

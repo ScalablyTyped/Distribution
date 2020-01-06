@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClusterSnapshotArgs extends js.Object {
   /**
     * The DB Cluster Identifier from which to take the snapshot.
     */
-  val dbClusterIdentifier: Input[String]
+  val dbClusterIdentifier: Input[String] = js.native
   /**
     * The Identifier for the snapshot.
     */
-  val dbClusterSnapshotIdentifier: Input[String]
+  val dbClusterSnapshotIdentifier: Input[String] = js.native
 }
 
 object ClusterSnapshotArgs {

@@ -10,9 +10,9 @@ GitHub REST API client for Node.js
 | ------------------ | :-------------: |
 | Full name          | @octokit/rest |
 | Keywords           | octokit, github, rest, api-client |
-| # releases         | 129 |
-| # dependents       | 427 |
-| # downloads        | 28674571 |
+| # releases         | 166 |
+| # dependents       | 663 |
+| # downloads        | 44796284 |
 | # stars            | 2 |
 
 ## Links

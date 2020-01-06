@@ -4,55 +4,56 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DescribeContactResponse extends js.Object {
   /**
     * UUID of a contact.
     */
-  var contactId: js.UndefOr[String] = js.undefined
+  var contactId: js.UndefOr[String] = js.native
   /**
     * Status of a contact.
     */
-  var contactStatus: js.UndefOr[ContactStatus] = js.undefined
+  var contactStatus: js.UndefOr[ContactStatus] = js.native
   /**
     * End time of a contact.
     */
-  var endTime: js.UndefOr[Timestamp] = js.undefined
+  var endTime: js.UndefOr[Timestamp] = js.native
   /**
     * Error message for a contact.
     */
-  var errorMessage: js.UndefOr[String] = js.undefined
+  var errorMessage: js.UndefOr[String] = js.native
   /**
     * Ground station for a contact.
     */
-  var groundStation: js.UndefOr[String] = js.undefined
+  var groundStation: js.UndefOr[String] = js.native
   /**
     * Maximum elevation angle of a contact.
     */
-  var maximumElevation: js.UndefOr[Elevation] = js.undefined
+  var maximumElevation: js.UndefOr[Elevation] = js.native
   /**
     * ARN of a mission profile.
     */
-  var missionProfileArn: js.UndefOr[MissionProfileArn] = js.undefined
+  var missionProfileArn: js.UndefOr[MissionProfileArn] = js.native
   /**
     * Amount of time after a contact ends that you’d like to receive a CloudWatch event indicating the pass has finished.
     */
-  var postPassEndTime: js.UndefOr[Timestamp] = js.undefined
+  var postPassEndTime: js.UndefOr[Timestamp] = js.native
   /**
     * Amount of time prior to contact start you’d like to receive a CloudWatch event indicating an upcoming pass.
     */
-  var prePassStartTime: js.UndefOr[Timestamp] = js.undefined
+  var prePassStartTime: js.UndefOr[Timestamp] = js.native
   /**
     * ARN of a satellite.
     */
-  var satelliteArn: js.UndefOr[typings.awsDashSdk.clientsGroundstationMod.satelliteArn] = js.undefined
+  var satelliteArn: js.UndefOr[typings.awsDashSdk.clientsGroundstationMod.satelliteArn] = js.native
   /**
     * Start time of a contact.
     */
-  var startTime: js.UndefOr[Timestamp] = js.undefined
+  var startTime: js.UndefOr[Timestamp] = js.native
   /**
     * Tags assigned to a contact.
     */
-  var tags: js.UndefOr[TagsMap] = js.undefined
+  var tags: js.UndefOr[TagsMap] = js.native
 }
 
 object DescribeContactResponse {
@@ -72,18 +73,18 @@ object DescribeContactResponse {
     tags: TagsMap = null
   ): DescribeContactResponse = {
     val __obj = js.Dynamic.literal()
-    if (contactId != null) __obj.updateDynamic("contactId")(contactId)
+    if (contactId != null) __obj.updateDynamic("contactId")(contactId.asInstanceOf[js.Any])
     if (contactStatus != null) __obj.updateDynamic("contactStatus")(contactStatus.asInstanceOf[js.Any])
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
-    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage)
-    if (groundStation != null) __obj.updateDynamic("groundStation")(groundStation)
-    if (maximumElevation != null) __obj.updateDynamic("maximumElevation")(maximumElevation)
-    if (missionProfileArn != null) __obj.updateDynamic("missionProfileArn")(missionProfileArn)
-    if (postPassEndTime != null) __obj.updateDynamic("postPassEndTime")(postPassEndTime)
-    if (prePassStartTime != null) __obj.updateDynamic("prePassStartTime")(prePassStartTime)
-    if (satelliteArn != null) __obj.updateDynamic("satelliteArn")(satelliteArn)
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
+    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
+    if (groundStation != null) __obj.updateDynamic("groundStation")(groundStation.asInstanceOf[js.Any])
+    if (maximumElevation != null) __obj.updateDynamic("maximumElevation")(maximumElevation.asInstanceOf[js.Any])
+    if (missionProfileArn != null) __obj.updateDynamic("missionProfileArn")(missionProfileArn.asInstanceOf[js.Any])
+    if (postPassEndTime != null) __obj.updateDynamic("postPassEndTime")(postPassEndTime.asInstanceOf[js.Any])
+    if (prePassStartTime != null) __obj.updateDynamic("prePassStartTime")(prePassStartTime.asInstanceOf[js.Any])
+    if (satelliteArn != null) __obj.updateDynamic("satelliteArn")(satelliteArn.asInstanceOf[js.Any])
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeContactResponse]
   }
 }

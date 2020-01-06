@@ -4,15 +4,15 @@
 Typings are for version 2.0
 
 ## Library description:
-A thin, Promise-returning helper for loading the Google Maps JavaScript API.
+A lightweight Promise-returning helper for loading the Google Maps JavaScript API
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | load-google-maps-api |
 | Keywords           | api, google, google-maps, google-maps-api, loader, maps, promise |
-| # releases         | 9 |
-| # dependents       | 9 |
-| # downloads        | 374331 |
+| # releases         | 11 |
+| # dependents       | 13 |
+| # downloads        | 771195 |
 | # stars            | 1 |
 
 ## Links

@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClusterServerSideEncryption extends js.Object {
   /**
     * Whether to enable encryption at rest. Defaults to `false`.
     */
-  var enabled: js.UndefOr[Input[Boolean]] = js.undefined
+  var enabled: js.UndefOr[Input[Boolean]] = js.native
 }
 
 object ClusterServerSideEncryption {

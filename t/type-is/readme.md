@@ -10,9 +10,9 @@ Infer the content-type of a request.
 | ------------------ | :-------------: |
 | Full name          | type-is |
 | Keywords           | content, type, checking |
-| # releases         | 2 |
-| # dependents       | 409 |
-| # downloads        | 317771260 |
+| # releases         | 4 |
+| # dependents       | 457 |
+| # downloads        | 453726164 |
 | # stars            | 25 |
 
 ## Links

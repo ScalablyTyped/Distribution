@@ -1,0 +1,23 @@
+package typings.awsDashSdk.clientsTextractMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait HumanLoopDataAttributes extends js.Object {
+  /**
+    * Sets whether the input image is free of personally identifiable information or adult content.
+    */
+  var ContentClassifiers: js.UndefOr[typings.awsDashSdk.clientsTextractMod.ContentClassifiers] = js.native
+}
+
+object HumanLoopDataAttributes {
+  @scala.inline
+  def apply(ContentClassifiers: ContentClassifiers = null): HumanLoopDataAttributes = {
+    val __obj = js.Dynamic.literal()
+    if (ContentClassifiers != null) __obj.updateDynamic("ContentClassifiers")(ContentClassifiers.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HumanLoopDataAttributes]
+  }
+}
+

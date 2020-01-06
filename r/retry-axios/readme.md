@@ -11,8 +11,8 @@ Retry HTTP requests with Axios.
 | Full name          | retry-axios |
 | Keywords           | axios, retry |
 | # releases         | 12 |
-| # dependents       | 10 |
-| # downloads        | 23114658 |
+| # dependents       | 11 |
+| # downloads        | 22584906 |
 | # stars            | 0 |
 
 ## Links

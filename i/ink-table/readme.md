@@ -10,9 +10,9 @@ A table component for Ink.
 | ------------------ | :-------------: |
 | Full name          | ink-table |
 | Keywords           | cli, ink-cli, ink, table, ink-table, ink-component, component |
-| # releases         | 10 |
-| # dependents       | 6 |
-| # downloads        | 3058 |
+| # releases         | 7 |
+| # dependents       | 14 |
+| # downloads        | 2748 |
 | # stars            | 0 |
 
 ## Links

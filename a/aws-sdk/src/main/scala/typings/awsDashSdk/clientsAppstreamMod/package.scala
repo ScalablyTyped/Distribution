@@ -48,6 +48,8 @@ package object clientsAppstreamMod {
   type DisplayName = java.lang.String
   type Domain = java.lang.String
   type DomainList = js.Array[Domain]
+  type EmbedHostDomain = java.lang.String
+  type EmbedHostDomains = js.Array[EmbedHostDomain]
   type FeedbackURL = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.VPC_CONFIGURATION
@@ -200,6 +202,7 @@ package object clientsAppstreamMod {
     - typings.awsDashSdk.awsDashSdkStrings.FEEDBACK_URL
     - typings.awsDashSdk.awsDashSdkStrings.THEME_NAME
     - typings.awsDashSdk.awsDashSdkStrings.USER_SETTINGS
+    - typings.awsDashSdk.awsDashSdkStrings.EMBED_HOST_DOMAINS
     - typings.awsDashSdk.awsDashSdkStrings.IAM_ROLE_ARN
     - typings.awsDashSdk.awsDashSdkStrings.ACCESS_ENDPOINTS
     - java.lang.String
@@ -263,7 +266,7 @@ package object clientsAppstreamMod {
   type VisibilityType = _VisibilityType | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2016-12-01`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | java.lang.String

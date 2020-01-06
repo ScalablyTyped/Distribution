@@ -11,8 +11,8 @@ Async coordination primitives and extensions on top of ES6 Promises
 | Full name          | prex |
 | Keywords           | async, promise, promises, future, deferred, promise-a, promise-a-plus, then, await, coordination, semaphore, cancellation, cancellationtoken |
 | # releases         | 8 |
-| # dependents       | 5 |
-| # downloads        | 31259 |
+| # dependents       | 4 |
+| # downloads        | 48895 |
 | # stars            | 2 |
 
 ## Links

@@ -10,9 +10,9 @@ A package that contains an array of every single file extension there is for tex
 | ------------------ | :-------------: |
 | Full name          | textextensions |
 | Keywords           | text, extensions, text extensions, text-extensions |
-| # releases         | 6 |
-| # dependents       | 11 |
-| # downloads        | 31050112 |
+| # releases         | 16 |
+| # dependents       | 12 |
+| # downloads        | 30809217 |
 | # stars            | 1 |
 
 ## Links

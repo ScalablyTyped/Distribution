@@ -10,9 +10,9 @@ Optimize PNG, JPG, GIF, SVG images with gulp task.
 | ------------------ | :-------------: |
 | Full name          | gulp-image |
 | Keywords           | compress, minify, optimize, image, img, jpg, jpeg, png, gif, svg, gulpplugin |
-| # releases         | 12 |
-| # dependents       | 14 |
-| # downloads        | 131545 |
+| # releases         | 7 |
+| # dependents       | 17 |
+| # downloads        | 147623 |
 | # stars            | 32 |
 
 ## Links

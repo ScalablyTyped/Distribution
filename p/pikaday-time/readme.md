@@ -10,9 +10,9 @@ Time support added to pikaday
 | ------------------ | :-------------: |
 | Full name          | pikaday-time |
 | Keywords           | datepicker, calendar, date, time, datetime |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 168392 |
+| # downloads        | 127140 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ Viewport module for WordPress.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/viewport |
 | Keywords           | wordpress, viewport |
-| # releases         | 25 |
+| # releases         | 32 |
 | # dependents       | 7 |
-| # downloads        | 69074 |
+| # downloads        | 132531 |
 | # stars            | 0 |
 
 ## Links

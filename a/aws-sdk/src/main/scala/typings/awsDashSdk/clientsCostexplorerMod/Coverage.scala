@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Coverage extends js.Object {
   /**
     * The amount of cost that the reservation covered.
     */
-  var CoverageCost: js.UndefOr[typings.awsDashSdk.clientsCostexplorerMod.CoverageCost] = js.undefined
+  var CoverageCost: js.UndefOr[typings.awsDashSdk.clientsCostexplorerMod.CoverageCost] = js.native
   /**
     * The amount of instance usage that the reservation covered, in hours.
     */
-  var CoverageHours: js.UndefOr[typings.awsDashSdk.clientsCostexplorerMod.CoverageHours] = js.undefined
+  var CoverageHours: js.UndefOr[typings.awsDashSdk.clientsCostexplorerMod.CoverageHours] = js.native
   /**
     * The amount of instance usage that the reservation covered, in normalized units.
     */
-  var CoverageNormalizedUnits: js.UndefOr[typings.awsDashSdk.clientsCostexplorerMod.CoverageNormalizedUnits] = js.undefined
+  var CoverageNormalizedUnits: js.UndefOr[typings.awsDashSdk.clientsCostexplorerMod.CoverageNormalizedUnits] = js.native
 }
 
 object Coverage {
@@ -27,9 +28,9 @@ object Coverage {
     CoverageNormalizedUnits: CoverageNormalizedUnits = null
   ): Coverage = {
     val __obj = js.Dynamic.literal()
-    if (CoverageCost != null) __obj.updateDynamic("CoverageCost")(CoverageCost)
-    if (CoverageHours != null) __obj.updateDynamic("CoverageHours")(CoverageHours)
-    if (CoverageNormalizedUnits != null) __obj.updateDynamic("CoverageNormalizedUnits")(CoverageNormalizedUnits)
+    if (CoverageCost != null) __obj.updateDynamic("CoverageCost")(CoverageCost.asInstanceOf[js.Any])
+    if (CoverageHours != null) __obj.updateDynamic("CoverageHours")(CoverageHours.asInstanceOf[js.Any])
+    if (CoverageNormalizedUnits != null) __obj.updateDynamic("CoverageNormalizedUnits")(CoverageNormalizedUnits.asInstanceOf[js.Any])
     __obj.asInstanceOf[Coverage]
   }
 }

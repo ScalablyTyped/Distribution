@@ -10,9 +10,9 @@ A nodejs module for local and remote Inter Process Communication (IPC), Neural N
 | ------------------ | :-------------: |
 | Full name          | node-ipc |
 | Keywords           | IPC, Neural Networking, Machine Learning, inter, process, communication, unix, windows, win, socket, TCP, UDP, domain, sockets, threaded, communication, multi, process, shared, memory |
-| # releases         | 3 |
-| # dependents       | 138 |
-| # downloads        | 6373787 |
+| # releases         | 1 |
+| # dependents       | 184 |
+| # downloads        | 15317722 |
 | # stars            | 33 |
 
 ## Links

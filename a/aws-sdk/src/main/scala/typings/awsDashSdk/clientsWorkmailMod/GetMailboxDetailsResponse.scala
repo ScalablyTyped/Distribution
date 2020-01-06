@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetMailboxDetailsResponse extends js.Object {
   /**
     * The maximum allowed mailbox size, in MB, for the specified user.
     */
-  var MailboxQuota: js.UndefOr[typings.awsDashSdk.clientsWorkmailMod.MailboxQuota] = js.undefined
+  var MailboxQuota: js.UndefOr[typings.awsDashSdk.clientsWorkmailMod.MailboxQuota] = js.native
   /**
     * The current mailbox size, in MB, for the specified user.
     */
-  var MailboxSize: js.UndefOr[typings.awsDashSdk.clientsWorkmailMod.MailboxSize] = js.undefined
+  var MailboxSize: js.UndefOr[typings.awsDashSdk.clientsWorkmailMod.MailboxSize] = js.native
 }
 
 object GetMailboxDetailsResponse {

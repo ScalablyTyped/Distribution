@@ -4,28 +4,29 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SslPolicy extends js.Object {
   /**
     * The ciphers.
     */
-  var Ciphers: js.UndefOr[typings.awsDashSdk.clientsElbv2Mod.Ciphers] = js.undefined
+  var Ciphers: js.UndefOr[typings.awsDashSdk.clientsElbv2Mod.Ciphers] = js.native
   /**
     * The name of the policy.
     */
-  var Name: js.UndefOr[SslPolicyName] = js.undefined
+  var Name: js.UndefOr[SslPolicyName] = js.native
   /**
     * The protocols.
     */
-  var SslProtocols: js.UndefOr[typings.awsDashSdk.clientsElbv2Mod.SslProtocols] = js.undefined
+  var SslProtocols: js.UndefOr[typings.awsDashSdk.clientsElbv2Mod.SslProtocols] = js.native
 }
 
 object SslPolicy {
   @scala.inline
   def apply(Ciphers: Ciphers = null, Name: SslPolicyName = null, SslProtocols: SslProtocols = null): SslPolicy = {
     val __obj = js.Dynamic.literal()
-    if (Ciphers != null) __obj.updateDynamic("Ciphers")(Ciphers)
-    if (Name != null) __obj.updateDynamic("Name")(Name)
-    if (SslProtocols != null) __obj.updateDynamic("SslProtocols")(SslProtocols)
+    if (Ciphers != null) __obj.updateDynamic("Ciphers")(Ciphers.asInstanceOf[js.Any])
+    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
+    if (SslProtocols != null) __obj.updateDynamic("SslProtocols")(SslProtocols.asInstanceOf[js.Any])
     __obj.asInstanceOf[SslPolicy]
   }
 }

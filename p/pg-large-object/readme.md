@@ -12,7 +12,7 @@ Large object support for PostgreSQL clients (node-postgres)
 | Keywords           | big object, binary, database, file, pg, postgres, stream, sql |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 77333 |
+| # downloads        | 107391 |
 | # stars            | 3 |
 
 ## Links

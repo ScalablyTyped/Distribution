@@ -6,12 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/InputAdornment.InputAdornmentClassKey>> */
+@js.native
 trait PartialStyleRulesInputAdornmentClassKey extends js.Object {
-  var disablePointerEvents: js.UndefOr[CSSProperties] = js.undefined
-  var filled: js.UndefOr[CSSProperties] = js.undefined
-  var positionEnd: js.UndefOr[CSSProperties] = js.undefined
-  var positionStart: js.UndefOr[CSSProperties] = js.undefined
-  var root: js.UndefOr[CSSProperties] = js.undefined
+  var disablePointerEvents: js.UndefOr[CSSProperties] = js.native
+  var filled: js.UndefOr[CSSProperties] = js.native
+  var positionEnd: js.UndefOr[CSSProperties] = js.native
+  var positionStart: js.UndefOr[CSSProperties] = js.native
+  var root: js.UndefOr[CSSProperties] = js.native
 }
 
 object PartialStyleRulesInputAdornmentClassKey {

@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SearchTransitGatewayRoutesResult extends js.Object {
   /**
     * Indicates whether there are additional routes available.
     */
-  var AdditionalRoutesAvailable: js.UndefOr[Boolean] = js.undefined
+  var AdditionalRoutesAvailable: js.UndefOr[Boolean] = js.native
   /**
     * Information about the routes.
     */
-  var Routes: js.UndefOr[TransitGatewayRouteList] = js.undefined
+  var Routes: js.UndefOr[TransitGatewayRouteList] = js.native
 }
 
 object SearchTransitGatewayRoutesResult {
@@ -22,8 +23,8 @@ object SearchTransitGatewayRoutesResult {
     Routes: TransitGatewayRouteList = null
   ): SearchTransitGatewayRoutesResult = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AdditionalRoutesAvailable)) __obj.updateDynamic("AdditionalRoutesAvailable")(AdditionalRoutesAvailable)
-    if (Routes != null) __obj.updateDynamic("Routes")(Routes)
+    if (!js.isUndefined(AdditionalRoutesAvailable)) __obj.updateDynamic("AdditionalRoutesAvailable")(AdditionalRoutesAvailable.asInstanceOf[js.Any])
+    if (Routes != null) __obj.updateDynamic("Routes")(Routes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchTransitGatewayRoutesResult]
   }
 }

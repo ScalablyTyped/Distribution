@@ -10,9 +10,9 @@ Templates rendering plugin support for hapi.js
 | ------------------ | :-------------: |
 | Full name          | @hapi/vision |
 | Keywords           | view, render, template, hapi |
-| # releases         | 3 |
-| # dependents       | 0 |
-| # downloads        | 55 |
+| # releases         | 7 |
+| # dependents       | 27 |
+| # downloads        | 413203 |
 | # stars            | 0 |
 
 ## Links

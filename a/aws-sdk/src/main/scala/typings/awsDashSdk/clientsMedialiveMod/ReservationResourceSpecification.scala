@@ -4,39 +4,40 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ReservationResourceSpecification extends js.Object {
   /**
     * Channel class, e.g. 'STANDARD'
     */
-  var ChannelClass: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.ChannelClass] = js.undefined
+  var ChannelClass: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.ChannelClass] = js.native
   /**
     * Codec, e.g. 'AVC'
     */
-  var Codec: js.UndefOr[ReservationCodec] = js.undefined
+  var Codec: js.UndefOr[ReservationCodec] = js.native
   /**
     * Maximum bitrate, e.g. 'MAX_20_MBPS'
     */
-  var MaximumBitrate: js.UndefOr[ReservationMaximumBitrate] = js.undefined
+  var MaximumBitrate: js.UndefOr[ReservationMaximumBitrate] = js.native
   /**
     * Maximum framerate, e.g. 'MAX_30_FPS' (Outputs only)
     */
-  var MaximumFramerate: js.UndefOr[ReservationMaximumFramerate] = js.undefined
+  var MaximumFramerate: js.UndefOr[ReservationMaximumFramerate] = js.native
   /**
     * Resolution, e.g. 'HD'
     */
-  var Resolution: js.UndefOr[ReservationResolution] = js.undefined
+  var Resolution: js.UndefOr[ReservationResolution] = js.native
   /**
-    * Resource type, 'INPUT', 'OUTPUT', or 'CHANNEL'
+    * Resource type, 'INPUT', 'OUTPUT', 'MULTIPLEX', or 'CHANNEL'
     */
-  var ResourceType: js.UndefOr[ReservationResourceType] = js.undefined
+  var ResourceType: js.UndefOr[ReservationResourceType] = js.native
   /**
     * Special feature, e.g. 'AUDIO_NORMALIZATION' (Channels only)
     */
-  var SpecialFeature: js.UndefOr[ReservationSpecialFeature] = js.undefined
+  var SpecialFeature: js.UndefOr[ReservationSpecialFeature] = js.native
   /**
     * Video quality, e.g. 'STANDARD' (Outputs only)
     */
-  var VideoQuality: js.UndefOr[ReservationVideoQuality] = js.undefined
+  var VideoQuality: js.UndefOr[ReservationVideoQuality] = js.native
 }
 
 object ReservationResourceSpecification {

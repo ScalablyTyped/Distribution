@@ -182,6 +182,19 @@ trait CloudSearch extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeAvailabilityOptionsResponse, Unit]
   ): Request[DescribeAvailabilityOptionsResponse, AWSError] = js.native
   /**
+    * Returns the domain's endpoint options, specifically whether all requests to the domain must arrive over HTTPS. For more information, see Configuring Domain Endpoint Options in the Amazon CloudSearch Developer Guide.
+    */
+  def describeDomainEndpointOptions(): Request[DescribeDomainEndpointOptionsResponse, AWSError] = js.native
+  def describeDomainEndpointOptions(callback: js.Function2[/* err */ AWSError, /* data */ DescribeDomainEndpointOptionsResponse, Unit]): Request[DescribeDomainEndpointOptionsResponse, AWSError] = js.native
+  /**
+    * Returns the domain's endpoint options, specifically whether all requests to the domain must arrive over HTTPS. For more information, see Configuring Domain Endpoint Options in the Amazon CloudSearch Developer Guide.
+    */
+  def describeDomainEndpointOptions(params: DescribeDomainEndpointOptionsRequest): Request[DescribeDomainEndpointOptionsResponse, AWSError] = js.native
+  def describeDomainEndpointOptions(
+    params: DescribeDomainEndpointOptionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeDomainEndpointOptionsResponse, Unit]
+  ): Request[DescribeDomainEndpointOptionsResponse, AWSError] = js.native
+  /**
     * Gets information about the search domains owned by this account. Can be limited to specific domains. Shows all domains by default. To get the number of searchable documents in a domain, use the console or submit a matchall request to your domain's search endpoint: q=matchall&amp;amp;q.parser=structured&amp;amp;size=0. For more information, see Getting Information about a Search Domain in the Amazon CloudSearch Developer Guide.
     */
   def describeDomains(): Request[DescribeDomainsResponse, AWSError] = js.native
@@ -290,6 +303,19 @@ trait CloudSearch extends Service {
     params: UpdateAvailabilityOptionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateAvailabilityOptionsResponse, Unit]
   ): Request[UpdateAvailabilityOptionsResponse, AWSError] = js.native
+  /**
+    * Updates the domain's endpoint options, specifically whether all requests to the domain must arrive over HTTPS. For more information, see Configuring Domain Endpoint Options in the Amazon CloudSearch Developer Guide.
+    */
+  def updateDomainEndpointOptions(): Request[UpdateDomainEndpointOptionsResponse, AWSError] = js.native
+  def updateDomainEndpointOptions(callback: js.Function2[/* err */ AWSError, /* data */ UpdateDomainEndpointOptionsResponse, Unit]): Request[UpdateDomainEndpointOptionsResponse, AWSError] = js.native
+  /**
+    * Updates the domain's endpoint options, specifically whether all requests to the domain must arrive over HTTPS. For more information, see Configuring Domain Endpoint Options in the Amazon CloudSearch Developer Guide.
+    */
+  def updateDomainEndpointOptions(params: UpdateDomainEndpointOptionsRequest): Request[UpdateDomainEndpointOptionsResponse, AWSError] = js.native
+  def updateDomainEndpointOptions(
+    params: UpdateDomainEndpointOptionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateDomainEndpointOptionsResponse, Unit]
+  ): Request[UpdateDomainEndpointOptionsResponse, AWSError] = js.native
   /**
     * Configures scaling parameters for a domain. A domain's scaling parameters specify the desired search instance type and replication count. Amazon CloudSearch will still automatically scale your domain based on the volume of data and traffic, but not below the desired instance type and replication count. If the Multi-AZ option is enabled, these values control the resources used per Availability Zone. For more information, see Configuring Scaling Options in the Amazon CloudSearch Developer Guide. 
     */

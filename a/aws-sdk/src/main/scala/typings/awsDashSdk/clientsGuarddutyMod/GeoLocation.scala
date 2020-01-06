@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GeoLocation extends js.Object {
   /**
     * Latitude information of remote IP address.
     */
-  var Lat: js.UndefOr[Double] = js.undefined
+  var Lat: js.UndefOr[Double] = js.native
   /**
     * Longitude information of remote IP address.
     */
-  var Lon: js.UndefOr[Double] = js.undefined
+  var Lon: js.UndefOr[Double] = js.native
 }
 
 object GeoLocation {

@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DomainArgs extends js.Object {
   /**
     * The name of the Lightsail domain to manage
     */
-  val domainName: Input[String]
+  val domainName: Input[String] = js.native
 }
 
 object DomainArgs {

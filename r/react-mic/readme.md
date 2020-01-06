@@ -11,8 +11,8 @@ Record audio from your microphone and display as a sound oscillation
 | Full name          | react-mic |
 | Keywords           | react, react-component, microphone, MediaRecorder, volume meter |
 | # releases         | 16 |
-| # dependents       | 6 |
-| # downloads        | 59454 |
+| # dependents       | 8 |
+| # downloads        | 64175 |
 | # stars            | 1 |
 
 ## Links

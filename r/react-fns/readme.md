@@ -10,9 +10,9 @@ Modern React components, hoc's, and utilities functions.
 | ------------------ | :-------------: |
 | Full name          | react-fns |
 | Keywords           | react, react-fns, render-props, hoc |
-| # releases         | 8 |
-| # dependents       | 2 |
-| # downloads        | 70248 |
+| # releases         | 3 |
+| # dependents       | 5 |
+| # downloads        | 92735 |
 | # stars            | 2 |
 
 ## Links

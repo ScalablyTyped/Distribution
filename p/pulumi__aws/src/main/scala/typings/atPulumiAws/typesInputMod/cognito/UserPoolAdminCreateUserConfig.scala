@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UserPoolAdminCreateUserConfig extends js.Object {
   /**
     * Set to True if only the administrator is allowed to create user profiles. Set to False if users can sign themselves up via an app.
     */
-  var allowAdminCreateUserOnly: js.UndefOr[Input[Boolean]] = js.undefined
+  var allowAdminCreateUserOnly: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The invite message template structure.
     */
-  var inviteMessageTemplate: js.UndefOr[Input[UserPoolAdminCreateUserConfigInviteMessageTemplate]] = js.undefined
+  var inviteMessageTemplate: js.UndefOr[Input[UserPoolAdminCreateUserConfigInviteMessageTemplate]] = js.native
   /**
     * The user account expiration limit, in days, after which the account is no longer usable.
     */
-  var unusedAccountValidityDays: js.UndefOr[Input[Double]] = js.undefined
+  var unusedAccountValidityDays: js.UndefOr[Input[Double]] = js.native
 }
 
 object UserPoolAdminCreateUserConfig {

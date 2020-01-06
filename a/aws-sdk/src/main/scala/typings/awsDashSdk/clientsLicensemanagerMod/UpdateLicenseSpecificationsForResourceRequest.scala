@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UpdateLicenseSpecificationsForResourceRequest extends js.Object {
   /**
-    * License configuration ARNs to be added to a resource.
+    * ARNs of the license configurations to add.
     */
-  var AddLicenseSpecifications: js.UndefOr[LicenseSpecifications] = js.undefined
+  var AddLicenseSpecifications: js.UndefOr[LicenseSpecifications] = js.native
   /**
-    * License configuration ARNs to be removed from a resource.
+    * ARNs of the license configurations to remove.
     */
-  var RemoveLicenseSpecifications: js.UndefOr[LicenseSpecifications] = js.undefined
+  var RemoveLicenseSpecifications: js.UndefOr[LicenseSpecifications] = js.native
   /**
-    * ARN for an AWS server resource.
+    * Amazon Resource Name (ARN) of the AWS resource.
     */
-  var ResourceArn: String
+  var ResourceArn: String = js.native
 }
 
 object UpdateLicenseSpecificationsForResourceRequest {
@@ -26,9 +27,9 @@ object UpdateLicenseSpecificationsForResourceRequest {
     AddLicenseSpecifications: LicenseSpecifications = null,
     RemoveLicenseSpecifications: LicenseSpecifications = null
   ): UpdateLicenseSpecificationsForResourceRequest = {
-    val __obj = js.Dynamic.literal(ResourceArn = ResourceArn)
-    if (AddLicenseSpecifications != null) __obj.updateDynamic("AddLicenseSpecifications")(AddLicenseSpecifications)
-    if (RemoveLicenseSpecifications != null) __obj.updateDynamic("RemoveLicenseSpecifications")(RemoveLicenseSpecifications)
+    val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any])
+    if (AddLicenseSpecifications != null) __obj.updateDynamic("AddLicenseSpecifications")(AddLicenseSpecifications.asInstanceOf[js.Any])
+    if (RemoveLicenseSpecifications != null) __obj.updateDynamic("RemoveLicenseSpecifications")(RemoveLicenseSpecifications.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateLicenseSpecificationsForResourceRequest]
   }
 }

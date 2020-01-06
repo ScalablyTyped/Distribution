@@ -9,9 +9,9 @@ ECMAScript JS AST traversal functions
 | ------------------ | :-------------: |
 | Full name          | estraverse |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 560 |
-| # downloads        | 367500443 |
+| # releases         | 2 |
+| # dependents       | 629 |
+| # downloads        | 529821992 |
 | # stars            | 10 |
 
 ## Links

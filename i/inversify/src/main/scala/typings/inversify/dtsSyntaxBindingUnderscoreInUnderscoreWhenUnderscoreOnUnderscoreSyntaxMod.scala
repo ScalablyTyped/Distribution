@@ -15,9 +15,9 @@ import scala.scalajs.js.annotation._
 object dtsSyntaxBindingUnderscoreInUnderscoreWhenUnderscoreOnUnderscoreSyntaxMod extends js.Object {
   @js.native
   class BindingInWhenOnSyntax[T] protected ()
-    extends BindingWhenSyntax[T]
-       with BindingOnSyntax[T]
-       with BindingInSyntax[T] {
+    extends BindingInSyntax[T]
+       with BindingWhenSyntax[T]
+       with BindingOnSyntax[T] {
     def this(binding: Binding[T]) = this()
     var _binding: js.Any = js.native
     var _bindingInSyntax: js.Any = js.native

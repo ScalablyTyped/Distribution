@@ -4,15 +4,15 @@
 Typings are for version 3.3.0
 
 ## Library description:
-Recursive version of fs.readdir with streaming api.
+Recursive version of fs.readdir with streaming API.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | readdirp |
 | Keywords           | recursive, fs, stream, streams, readdir, filesystem, find, filter |
-| # releases         | 6 |
-| # dependents       | 262 |
-| # downloads        | 318293899 |
+| # releases         | 13 |
+| # dependents       | 307 |
+| # downloads        | 451870949 |
 | # stars            | 26 |
 
 ## Links

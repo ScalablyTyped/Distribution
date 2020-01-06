@@ -12,7 +12,7 @@ Map pan control for Leaflet
 | Keywords           | leaflet, map, pan |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 2540 |
+| # downloads        | 1236 |
 | # stars            | 0 |
 
 ## Links

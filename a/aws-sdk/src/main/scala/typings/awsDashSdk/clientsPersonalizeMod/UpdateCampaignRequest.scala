@@ -4,27 +4,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UpdateCampaignRequest extends js.Object {
   /**
     * The Amazon Resource Name (ARN) of the campaign.
     */
-  var campaignArn: Arn
+  var campaignArn: Arn = js.native
   /**
     * Specifies the requested minimum provisioned transactions (recommendations) per second that Amazon Personalize will support.
     */
-  var minProvisionedTPS: js.UndefOr[TransactionsPerSecond] = js.undefined
+  var minProvisionedTPS: js.UndefOr[TransactionsPerSecond] = js.native
   /**
     * The ARN of a new solution version to deploy.
     */
-  var solutionVersionArn: js.UndefOr[Arn] = js.undefined
+  var solutionVersionArn: js.UndefOr[Arn] = js.native
 }
 
 object UpdateCampaignRequest {
   @scala.inline
   def apply(campaignArn: Arn, minProvisionedTPS: Int | Double = null, solutionVersionArn: Arn = null): UpdateCampaignRequest = {
-    val __obj = js.Dynamic.literal(campaignArn = campaignArn)
+    val __obj = js.Dynamic.literal(campaignArn = campaignArn.asInstanceOf[js.Any])
     if (minProvisionedTPS != null) __obj.updateDynamic("minProvisionedTPS")(minProvisionedTPS.asInstanceOf[js.Any])
-    if (solutionVersionArn != null) __obj.updateDynamic("solutionVersionArn")(solutionVersionArn)
+    if (solutionVersionArn != null) __obj.updateDynamic("solutionVersionArn")(solutionVersionArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateCampaignRequest]
   }
 }

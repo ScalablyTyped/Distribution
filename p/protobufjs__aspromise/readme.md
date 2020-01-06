@@ -10,9 +10,9 @@ Returns a promise from a node-style callback function.
 | ------------------ | :-------------: |
 | Full name          | @protobufjs/aspromise |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 13 |
-| # downloads        | 36982174 |
+| # releases         | 1 |
+| # dependents       | 30 |
+| # downloads        | 52816140 |
 | # stars            | 0 |
 
 ## Links

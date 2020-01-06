@@ -240,9 +240,6 @@ object Simulate extends js.Object {
     var L: Double = js.native
      // = 36,
     var LEFT: Double = js.native
-     // = 192,
-    @JSName("[")
-    var Leftsquarebracket: Double = js.native
      // = 76,
     var M: Double = js.native
      // = 77,
@@ -295,9 +292,6 @@ object Simulate extends js.Object {
     var RETURN: Double = js.native
      // = 38,
     var RIGHT: Double = js.native
-     // = 220,
-    @JSName("]")
-    var Rightsquarebracket: Double = js.native
      // = 82,
     var S: Double = js.native
      // = 144,
@@ -334,6 +328,10 @@ object Simulate extends js.Object {
     var Y: Double = js.native
      // = 89,
     var Z: Double = js.native
+     // = 192,
+    var `[`: Double = js.native
+     // = 220,
+    var `]`: Double = js.native
      // = 188,
     @JSName("-")
     var _dash: Double = js.native

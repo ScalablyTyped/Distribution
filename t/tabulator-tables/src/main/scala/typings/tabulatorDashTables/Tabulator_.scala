@@ -21,6 +21,7 @@ import typings.tabulatorDashTables.Tabulator.SortDirection
 import typings.tabulatorDashTables.Tabulator.Sorter
 import typings.tabulatorDashTables.Tabulator.VisibleRowRangeLookup
 import typings.tabulatorDashTables.tabulatorDashTablesBooleans.`false`
+import typings.tabulatorDashTables.tabulatorDashTablesBooleans.`true`
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.active
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.all
 import typings.tabulatorDashTables.tabulatorDashTablesStrings.first
@@ -367,13 +368,15 @@ class Tabulator_ protected () extends js.Object {
   /** The searchRows function allows you to retreive an array of row components that match any filters you pass in. it accepts the same arguments as the setFilter function. */
   def searchRows(field: String, `type`: FilterType, value: js.Any): js.Array[RowComponent] = js.native
   /** To programmatically select a row you can use the selectRow function.
-    To select a specific row you can pass the any of the standard row component look up options into the first argument of the function. If you leave the argument blank you will select all rows (if you have set the selectable option to a numeric value, it will be ignored when selecting all rows). */
+    To select a specific row you can pass the any of the standard row component look up options into the first argument of the function. If you leave the argument blank you will select all rows (if you have set the selectable option to a numeric value, it will be ignored when selecting all rows). If lookup value is true you will selected all current filtered rows.*/
   def selectRow(): Unit = js.native
   def selectRow(lookup: js.Array[RowLookup]): Unit = js.native
   @JSName("selectRow")
   def selectRow_active(lookup: active): Unit = js.native
   @JSName("selectRow")
   def selectRow_all(lookup: all): Unit = js.native
+  @JSName("selectRow")
+  def selectRow_true(lookup: `true`): Unit = js.native
   @JSName("selectRow")
   def selectRow_visible(lookup: visible): Unit = js.native
   /** If you have previously used the getColumnLayout function to retrieve a tables layout, you can use the setColumnLayout function to apply it to a table. */

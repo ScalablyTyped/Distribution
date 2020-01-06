@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsWafregionalMod {
+  import typings.awsDashSdk.awsDashSdkStrings.Country_
   import typings.awsDashSdk.awsDashSdkStrings.IP
   import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
   import typings.node.Buffer
@@ -44,7 +45,7 @@ package object clientsWafregionalMod {
   type ComparisonOperator = _ComparisonOperator | String
   type Country = String
   type ExcludedRules = js.Array[ExcludedRule]
-  type GeoMatchConstraintType = typings.awsDashSdk.awsDashSdkStrings.Country | String
+  type GeoMatchConstraintType = Country_ | String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.AF
     - typings.awsDashSdk.awsDashSdkStrings.AX
@@ -439,7 +440,7 @@ package object clientsWafregionalMod {
   type XssMatchTuples = js.Array[XssMatchTuple]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2016-11-28`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

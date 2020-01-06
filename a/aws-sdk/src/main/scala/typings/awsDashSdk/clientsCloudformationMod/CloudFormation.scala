@@ -5,7 +5,9 @@ import typings.awsDashSdk.awsDashSdkStrings.changeSetCreateComplete
 import typings.awsDashSdk.awsDashSdkStrings.stackCreateComplete
 import typings.awsDashSdk.awsDashSdkStrings.stackDeleteComplete
 import typings.awsDashSdk.awsDashSdkStrings.stackExists
+import typings.awsDashSdk.awsDashSdkStrings.stackImportComplete
 import typings.awsDashSdk.awsDashSdkStrings.stackUpdateComplete
+import typings.awsDashSdk.awsDashSdkStrings.typeRegistrationComplete
 import typings.awsDashSdk.libConfigMod.ConfigBase
 import typings.awsDashSdk.libErrorMod.AWSError
 import typings.awsDashSdk.libRequestMod.Request
@@ -45,12 +47,12 @@ trait CloudFormation extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ContinueUpdateRollbackOutput, Unit]
   ): Request[ContinueUpdateRollbackOutput, AWSError] = js.native
   /**
-    * Creates a list of changes that will be applied to a stack so that you can review the changes before executing them. You can create a change set for a stack that doesn't exist or an existing stack. If you create a change set for a stack that doesn't exist, the change set shows all of the resources that AWS CloudFormation will create. If you create a change set for an existing stack, AWS CloudFormation compares the stack's information with the information that you submit in the change set and lists the differences. Use change sets to understand which resources AWS CloudFormation will create or change, and how it will change resources in an existing stack, before you create or update a stack. To create a change set for a stack that doesn't exist, for the ChangeSetType parameter, specify CREATE. To create a change set for an existing stack, specify UPDATE for the ChangeSetType parameter. After the CreateChangeSet call successfully completes, AWS CloudFormation starts creating the change set. To check the status of the change set or to review it, use the DescribeChangeSet action. When you are satisfied with the changes the change set will make, execute the change set by using the ExecuteChangeSet action. AWS CloudFormation doesn't make changes until you execute the change set.
+    * Creates a list of changes that will be applied to a stack so that you can review the changes before executing them. You can create a change set for a stack that doesn't exist or an existing stack. If you create a change set for a stack that doesn't exist, the change set shows all of the resources that AWS CloudFormation will create. If you create a change set for an existing stack, AWS CloudFormation compares the stack's information with the information that you submit in the change set and lists the differences. Use change sets to understand which resources AWS CloudFormation will create or change, and how it will change resources in an existing stack, before you create or update a stack. To create a change set for a stack that doesn't exist, for the ChangeSetType parameter, specify CREATE. To create a change set for an existing stack, specify UPDATE for the ChangeSetType parameter. To create a change set for an import operation, specify IMPORT for the ChangeSetType parameter. After the CreateChangeSet call successfully completes, AWS CloudFormation starts creating the change set. To check the status of the change set or to review it, use the DescribeChangeSet action. When you are satisfied with the changes the change set will make, execute the change set by using the ExecuteChangeSet action. AWS CloudFormation doesn't make changes until you execute the change set.
     */
   def createChangeSet(): Request[CreateChangeSetOutput, AWSError] = js.native
   def createChangeSet(callback: js.Function2[/* err */ AWSError, /* data */ CreateChangeSetOutput, Unit]): Request[CreateChangeSetOutput, AWSError] = js.native
   /**
-    * Creates a list of changes that will be applied to a stack so that you can review the changes before executing them. You can create a change set for a stack that doesn't exist or an existing stack. If you create a change set for a stack that doesn't exist, the change set shows all of the resources that AWS CloudFormation will create. If you create a change set for an existing stack, AWS CloudFormation compares the stack's information with the information that you submit in the change set and lists the differences. Use change sets to understand which resources AWS CloudFormation will create or change, and how it will change resources in an existing stack, before you create or update a stack. To create a change set for a stack that doesn't exist, for the ChangeSetType parameter, specify CREATE. To create a change set for an existing stack, specify UPDATE for the ChangeSetType parameter. After the CreateChangeSet call successfully completes, AWS CloudFormation starts creating the change set. To check the status of the change set or to review it, use the DescribeChangeSet action. When you are satisfied with the changes the change set will make, execute the change set by using the ExecuteChangeSet action. AWS CloudFormation doesn't make changes until you execute the change set.
+    * Creates a list of changes that will be applied to a stack so that you can review the changes before executing them. You can create a change set for a stack that doesn't exist or an existing stack. If you create a change set for a stack that doesn't exist, the change set shows all of the resources that AWS CloudFormation will create. If you create a change set for an existing stack, AWS CloudFormation compares the stack's information with the information that you submit in the change set and lists the differences. Use change sets to understand which resources AWS CloudFormation will create or change, and how it will change resources in an existing stack, before you create or update a stack. To create a change set for a stack that doesn't exist, for the ChangeSetType parameter, specify CREATE. To create a change set for an existing stack, specify UPDATE for the ChangeSetType parameter. To create a change set for an import operation, specify IMPORT for the ChangeSetType parameter. After the CreateChangeSet call successfully completes, AWS CloudFormation starts creating the change set. To check the status of the change set or to review it, use the DescribeChangeSet action. When you are satisfied with the changes the change set will make, execute the change set by using the ExecuteChangeSet action. AWS CloudFormation doesn't make changes until you execute the change set.
     */
   def createChangeSet(params: CreateChangeSetInput): Request[CreateChangeSetOutput, AWSError] = js.native
   def createChangeSet(
@@ -145,6 +147,19 @@ trait CloudFormation extends Service {
     params: DeleteStackSetInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteStackSetOutput, Unit]
   ): Request[DeleteStackSetOutput, AWSError] = js.native
+  /**
+    * Removes a type or type version from active use in the CloudFormation registry. If a type or type version is deregistered, it cannot be used in CloudFormation operations. To deregister a type, you must individually deregister all registered versions of that type. If a type has only a single registered version, deregistering that version results in the type itself being deregistered.  You cannot deregister the default version of a type, unless it is the only registered version of that type, in which case the type itself is deregistered as well. 
+    */
+  def deregisterType(): Request[DeregisterTypeOutput, AWSError] = js.native
+  def deregisterType(callback: js.Function2[/* err */ AWSError, /* data */ DeregisterTypeOutput, Unit]): Request[DeregisterTypeOutput, AWSError] = js.native
+  /**
+    * Removes a type or type version from active use in the CloudFormation registry. If a type or type version is deregistered, it cannot be used in CloudFormation operations. To deregister a type, you must individually deregister all registered versions of that type. If a type has only a single registered version, deregistering that version results in the type itself being deregistered.  You cannot deregister the default version of a type, unless it is the only registered version of that type, in which case the type itself is deregistered as well. 
+    */
+  def deregisterType(params: DeregisterTypeInput): Request[DeregisterTypeOutput, AWSError] = js.native
+  def deregisterType(
+    params: DeregisterTypeInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeregisterTypeOutput, Unit]
+  ): Request[DeregisterTypeOutput, AWSError] = js.native
   /**
     * Retrieves your account's AWS CloudFormation limits, such as the maximum number of stacks that you can create in your account. For more information about account limits, see AWS CloudFormation Limits in the AWS CloudFormation User Guide.
     */
@@ -291,6 +306,32 @@ trait CloudFormation extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeStacksOutput, Unit]
   ): Request[DescribeStacksOutput, AWSError] = js.native
   /**
+    * Returns detailed information about a type that has been registered. If you specify a VersionId, DescribeType returns information about that specific type version. Otherwise, it returns information about the default type version.
+    */
+  def describeType(): Request[DescribeTypeOutput, AWSError] = js.native
+  def describeType(callback: js.Function2[/* err */ AWSError, /* data */ DescribeTypeOutput, Unit]): Request[DescribeTypeOutput, AWSError] = js.native
+  /**
+    * Returns detailed information about a type that has been registered. If you specify a VersionId, DescribeType returns information about that specific type version. Otherwise, it returns information about the default type version.
+    */
+  def describeType(params: DescribeTypeInput): Request[DescribeTypeOutput, AWSError] = js.native
+  def describeType(
+    params: DescribeTypeInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeTypeOutput, Unit]
+  ): Request[DescribeTypeOutput, AWSError] = js.native
+  /**
+    * Returns information about a type's registration, including its current status and type and version identifiers. When you initiate a registration request using  RegisterType , you can then use  DescribeTypeRegistration  to monitor the progress of that registration request. Once the registration request has completed, use  DescribeType  to return detailed informaiton about a type.
+    */
+  def describeTypeRegistration(): Request[DescribeTypeRegistrationOutput, AWSError] = js.native
+  def describeTypeRegistration(callback: js.Function2[/* err */ AWSError, /* data */ DescribeTypeRegistrationOutput, Unit]): Request[DescribeTypeRegistrationOutput, AWSError] = js.native
+  /**
+    * Returns information about a type's registration, including its current status and type and version identifiers. When you initiate a registration request using  RegisterType , you can then use  DescribeTypeRegistration  to monitor the progress of that registration request. Once the registration request has completed, use  DescribeType  to return detailed informaiton about a type.
+    */
+  def describeTypeRegistration(params: DescribeTypeRegistrationInput): Request[DescribeTypeRegistrationOutput, AWSError] = js.native
+  def describeTypeRegistration(
+    params: DescribeTypeRegistrationInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeTypeRegistrationOutput, Unit]
+  ): Request[DescribeTypeRegistrationOutput, AWSError] = js.native
+  /**
     * Detects whether a stack's actual configuration differs, or has drifted, from it's expected configuration, as defined in the stack template and any values specified as template parameters. For each resource in the stack that supports drift detection, AWS CloudFormation compares the actual configuration of the resource with its expected template configuration. Only resource properties explicitly defined in the stack template are checked for drift. A stack is considered to have drifted if one or more of its resources differ from their expected template configurations. For more information, see Detecting Unregulated Configuration Changes to Stacks and Resources. Use DetectStackDrift to detect drift on all supported resources for a given stack, or DetectStackResourceDrift to detect drift on individual resources. For a list of stack resources that currently support drift detection, see Resources that Support Drift Detection.  DetectStackDrift can take up to several minutes, depending on the number of resources contained within the stack. Use DescribeStackDriftDetectionStatus to monitor the progress of a detect stack drift operation. Once the drift detection operation has completed, use DescribeStackResourceDrifts to return drift information about the stack and its resources. When detecting drift on a stack, AWS CloudFormation does not detect drift on any nested stacks belonging to that stack. Perform DetectStackDrift directly on the nested stack itself.
     */
   def detectStackDrift(): Request[DetectStackDriftOutput, AWSError] = js.native
@@ -316,6 +357,19 @@ trait CloudFormation extends Service {
     params: DetectStackResourceDriftInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DetectStackResourceDriftOutput, Unit]
   ): Request[DetectStackResourceDriftOutput, AWSError] = js.native
+  /**
+    * Detect drift on a stack set. When CloudFormation performs drift detection on a stack set, it performs drift detection on the stack associated with each stack instance in the stack set. For more information, see How CloudFormation Performs Drift Detection on a Stack Set.  DetectStackSetDrift returns the OperationId of the stack set drift detection operation. Use this operation id with  DescribeStackSetOperation  to monitor the progress of the drift detection operation. The drift detection operation may take some time, depending on the number of stack instances included in the stack set, as well as the number of resources included in each stack. Once the operation has completed, use the following actions to return drift information:   Use  DescribeStackSet  to return detailed informaiton about the stack set, including detailed information about the last completed drift operation performed on the stack set. (Information about drift operations that are in progress is not included.)   Use  ListStackInstances  to return a list of stack instances belonging to the stack set, including the drift status and last drift time checked of each instance.   Use  DescribeStackInstance  to return detailed information about a specific stack instance, including its drift status and last drift time checked.   For more information on performing a drift detection operation on a stack set, see Detecting Unmanaged Changes in Stack Sets.  You can only run a single drift detection operation on a given stack set at one time.  To stop a drift detection stack set operation, use  StopStackSetOperation .
+    */
+  def detectStackSetDrift(): Request[DetectStackSetDriftOutput, AWSError] = js.native
+  def detectStackSetDrift(callback: js.Function2[/* err */ AWSError, /* data */ DetectStackSetDriftOutput, Unit]): Request[DetectStackSetDriftOutput, AWSError] = js.native
+  /**
+    * Detect drift on a stack set. When CloudFormation performs drift detection on a stack set, it performs drift detection on the stack associated with each stack instance in the stack set. For more information, see How CloudFormation Performs Drift Detection on a Stack Set.  DetectStackSetDrift returns the OperationId of the stack set drift detection operation. Use this operation id with  DescribeStackSetOperation  to monitor the progress of the drift detection operation. The drift detection operation may take some time, depending on the number of stack instances included in the stack set, as well as the number of resources included in each stack. Once the operation has completed, use the following actions to return drift information:   Use  DescribeStackSet  to return detailed informaiton about the stack set, including detailed information about the last completed drift operation performed on the stack set. (Information about drift operations that are in progress is not included.)   Use  ListStackInstances  to return a list of stack instances belonging to the stack set, including the drift status and last drift time checked of each instance.   Use  DescribeStackInstance  to return detailed information about a specific stack instance, including its drift status and last drift time checked.   For more information on performing a drift detection operation on a stack set, see Detecting Unmanaged Changes in Stack Sets.  You can only run a single drift detection operation on a given stack set at one time.  To stop a drift detection stack set operation, use  StopStackSetOperation .
+    */
+  def detectStackSetDrift(params: DetectStackSetDriftInput): Request[DetectStackSetDriftOutput, AWSError] = js.native
+  def detectStackSetDrift(
+    params: DetectStackSetDriftInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ DetectStackSetDriftOutput, Unit]
+  ): Request[DetectStackSetDriftOutput, AWSError] = js.native
   /**
     * Returns the estimated monthly cost of a template. The return value is an AWS Simple Monthly Calculator URL with a query string that describes the resources required to run the template.
     */
@@ -499,6 +553,71 @@ trait CloudFormation extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListStacksOutput, Unit]
   ): Request[ListStacksOutput, AWSError] = js.native
   /**
+    * Returns a list of registration tokens for the specified type.
+    */
+  def listTypeRegistrations(): Request[ListTypeRegistrationsOutput, AWSError] = js.native
+  def listTypeRegistrations(callback: js.Function2[/* err */ AWSError, /* data */ ListTypeRegistrationsOutput, Unit]): Request[ListTypeRegistrationsOutput, AWSError] = js.native
+  /**
+    * Returns a list of registration tokens for the specified type.
+    */
+  def listTypeRegistrations(params: ListTypeRegistrationsInput): Request[ListTypeRegistrationsOutput, AWSError] = js.native
+  def listTypeRegistrations(
+    params: ListTypeRegistrationsInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListTypeRegistrationsOutput, Unit]
+  ): Request[ListTypeRegistrationsOutput, AWSError] = js.native
+  /**
+    * Returns summary information about the versions of a type.
+    */
+  def listTypeVersions(): Request[ListTypeVersionsOutput, AWSError] = js.native
+  def listTypeVersions(callback: js.Function2[/* err */ AWSError, /* data */ ListTypeVersionsOutput, Unit]): Request[ListTypeVersionsOutput, AWSError] = js.native
+  /**
+    * Returns summary information about the versions of a type.
+    */
+  def listTypeVersions(params: ListTypeVersionsInput): Request[ListTypeVersionsOutput, AWSError] = js.native
+  def listTypeVersions(
+    params: ListTypeVersionsInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListTypeVersionsOutput, Unit]
+  ): Request[ListTypeVersionsOutput, AWSError] = js.native
+  /**
+    * Returns summary information about types that have been registered with CloudFormation.
+    */
+  def listTypes(): Request[ListTypesOutput, AWSError] = js.native
+  def listTypes(callback: js.Function2[/* err */ AWSError, /* data */ ListTypesOutput, Unit]): Request[ListTypesOutput, AWSError] = js.native
+  /**
+    * Returns summary information about types that have been registered with CloudFormation.
+    */
+  def listTypes(params: ListTypesInput): Request[ListTypesOutput, AWSError] = js.native
+  def listTypes(
+    params: ListTypesInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListTypesOutput, Unit]
+  ): Request[ListTypesOutput, AWSError] = js.native
+  /**
+    * Reports progress of a resource handler to CloudFormation. Reserved for use by the CloudFormation CLI. Do not use this API in your code.
+    */
+  def recordHandlerProgress(): Request[RecordHandlerProgressOutput, AWSError] = js.native
+  def recordHandlerProgress(callback: js.Function2[/* err */ AWSError, /* data */ RecordHandlerProgressOutput, Unit]): Request[RecordHandlerProgressOutput, AWSError] = js.native
+  /**
+    * Reports progress of a resource handler to CloudFormation. Reserved for use by the CloudFormation CLI. Do not use this API in your code.
+    */
+  def recordHandlerProgress(params: RecordHandlerProgressInput): Request[RecordHandlerProgressOutput, AWSError] = js.native
+  def recordHandlerProgress(
+    params: RecordHandlerProgressInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ RecordHandlerProgressOutput, Unit]
+  ): Request[RecordHandlerProgressOutput, AWSError] = js.native
+  /**
+    * Registers a type with the CloudFormation service. Registering a type makes it available for use in CloudFormation templates in your AWS account, and includes:   Validating the resource schema   Determining which handlers have been specified for the resource   Making the resource type available for use in your account   For more information on how to develop types and ready them for registeration, see Creating Resource Providers in the CloudFormation CLI User Guide. Once you have initiated a registration request using  RegisterType , you can use  DescribeTypeRegistration  to monitor the progress of the registration request.
+    */
+  def registerType(): Request[RegisterTypeOutput, AWSError] = js.native
+  def registerType(callback: js.Function2[/* err */ AWSError, /* data */ RegisterTypeOutput, Unit]): Request[RegisterTypeOutput, AWSError] = js.native
+  /**
+    * Registers a type with the CloudFormation service. Registering a type makes it available for use in CloudFormation templates in your AWS account, and includes:   Validating the resource schema   Determining which handlers have been specified for the resource   Making the resource type available for use in your account   For more information on how to develop types and ready them for registeration, see Creating Resource Providers in the CloudFormation CLI User Guide. Once you have initiated a registration request using  RegisterType , you can use  DescribeTypeRegistration  to monitor the progress of the registration request.
+    */
+  def registerType(params: RegisterTypeInput): Request[RegisterTypeOutput, AWSError] = js.native
+  def registerType(
+    params: RegisterTypeInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ RegisterTypeOutput, Unit]
+  ): Request[RegisterTypeOutput, AWSError] = js.native
+  /**
     * Sets a stack policy for a specified stack.
     */
   def setStackPolicy(): Request[js.Object, AWSError] = js.native
@@ -511,6 +630,19 @@ trait CloudFormation extends Service {
     params: SetStackPolicyInput,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  /**
+    * Specify the default version of a type. The default version of a type will be used in CloudFormation operations.
+    */
+  def setTypeDefaultVersion(): Request[SetTypeDefaultVersionOutput, AWSError] = js.native
+  def setTypeDefaultVersion(callback: js.Function2[/* err */ AWSError, /* data */ SetTypeDefaultVersionOutput, Unit]): Request[SetTypeDefaultVersionOutput, AWSError] = js.native
+  /**
+    * Specify the default version of a type. The default version of a type will be used in CloudFormation operations.
+    */
+  def setTypeDefaultVersion(params: SetTypeDefaultVersionInput): Request[SetTypeDefaultVersionOutput, AWSError] = js.native
+  def setTypeDefaultVersion(
+    params: SetTypeDefaultVersionInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ SetTypeDefaultVersionOutput, Unit]
+  ): Request[SetTypeDefaultVersionOutput, AWSError] = js.native
   /**
     * Sends a signal to the specified resource with a success or failure status. You can use the SignalResource API in conjunction with a creation policy or update policy. AWS CloudFormation doesn't proceed with a stack creation or update until resources receive the required number of signals or the timeout period is exceeded. The SignalResource API is useful in cases where you want to send signals from anywhere other than an Amazon EC2 instance.
     */
@@ -687,6 +819,27 @@ trait CloudFormation extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeStacksOutput, Unit]
   ): Request[DescribeStacksOutput, AWSError] = js.native
   /**
+    * Waits for the stackImportComplete state by periodically calling the underlying CloudFormation.describeStacksoperation every 30 seconds (at most 120 times). Wait until stack status is IMPORT_COMPLETE.
+    */
+  @JSName("waitFor")
+  def waitFor_stackImportComplete(state: stackImportComplete): Request[DescribeStacksOutput, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_stackImportComplete(
+    state: stackImportComplete,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeStacksOutput, Unit]
+  ): Request[DescribeStacksOutput, AWSError] = js.native
+  /**
+    * Waits for the stackImportComplete state by periodically calling the underlying CloudFormation.describeStacksoperation every 30 seconds (at most 120 times). Wait until stack status is IMPORT_COMPLETE.
+    */
+  @JSName("waitFor")
+  def waitFor_stackImportComplete(state: stackImportComplete, params: DescribeStacksInput with Anon_Waiter): Request[DescribeStacksOutput, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_stackImportComplete(
+    state: stackImportComplete,
+    params: DescribeStacksInput with Anon_Waiter,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeStacksOutput, Unit]
+  ): Request[DescribeStacksOutput, AWSError] = js.native
+  /**
     * Waits for the stackUpdateComplete state by periodically calling the underlying CloudFormation.describeStacksoperation every 30 seconds (at most 120 times). Wait until stack status is UPDATE_COMPLETE.
     */
   @JSName("waitFor")
@@ -707,5 +860,26 @@ trait CloudFormation extends Service {
     params: DescribeStacksInput with Anon_Waiter,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeStacksOutput, Unit]
   ): Request[DescribeStacksOutput, AWSError] = js.native
+  /**
+    * Waits for the typeRegistrationComplete state by periodically calling the underlying CloudFormation.describeTypeRegistrationoperation every 30 seconds (at most 120 times). Wait until type registration is COMPLETE.
+    */
+  @JSName("waitFor")
+  def waitFor_typeRegistrationComplete(state: typeRegistrationComplete): Request[DescribeTypeRegistrationOutput, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_typeRegistrationComplete(
+    state: typeRegistrationComplete,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeTypeRegistrationOutput, Unit]
+  ): Request[DescribeTypeRegistrationOutput, AWSError] = js.native
+  /**
+    * Waits for the typeRegistrationComplete state by periodically calling the underlying CloudFormation.describeTypeRegistrationoperation every 30 seconds (at most 120 times). Wait until type registration is COMPLETE.
+    */
+  @JSName("waitFor")
+  def waitFor_typeRegistrationComplete(state: typeRegistrationComplete, params: DescribeTypeRegistrationInput with Anon_Waiter): Request[DescribeTypeRegistrationOutput, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_typeRegistrationComplete(
+    state: typeRegistrationComplete,
+    params: DescribeTypeRegistrationInput with Anon_Waiter,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeTypeRegistrationOutput, Unit]
+  ): Request[DescribeTypeRegistrationOutput, AWSError] = js.native
 }
 

@@ -11,8 +11,8 @@ The lodash method `_.isArrayLikeObject` exported as a module.
 | Full name          | lodash.isarraylikeobject |
 | Keywords           | lodash-modularized, isarraylikeobject |
 | # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 2948 |
+| # dependents       | 4 |
+| # downloads        | 6997 |
 | # stars            | 0 |
 
 ## Links

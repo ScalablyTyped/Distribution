@@ -11,8 +11,8 @@ the little xml parser that could
 | Full name          | xml-parser |
 | Keywords           | xml, sucks |
 | # releases         | 1 |
-| # dependents       | 97 |
-| # downloads        | 953947 |
+| # dependents       | 104 |
+| # downloads        | 1375791 |
 | # stars            | 10 |
 
 ## Links

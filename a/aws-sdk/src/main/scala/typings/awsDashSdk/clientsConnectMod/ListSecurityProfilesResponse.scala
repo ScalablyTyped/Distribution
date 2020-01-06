@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ListSecurityProfilesResponse extends js.Object {
   /**
-    * A string returned in the response. Use the value returned in the response as the value of the NextToken in a subsequent request to retrieve the next set of results.
+    * If there are additional results, this is the token for the next set of results.
     */
-  var NextToken: js.UndefOr[typings.awsDashSdk.clientsConnectMod.NextToken] = js.undefined
+  var NextToken: js.UndefOr[typings.awsDashSdk.clientsConnectMod.NextToken] = js.native
   /**
-    * An array of SecurityProfileSummary objects.
+    * Information about the security profiles.
     */
-  var SecurityProfileSummaryList: js.UndefOr[typings.awsDashSdk.clientsConnectMod.SecurityProfileSummaryList] = js.undefined
+  var SecurityProfileSummaryList: js.UndefOr[typings.awsDashSdk.clientsConnectMod.SecurityProfileSummaryList] = js.native
 }
 
 object ListSecurityProfilesResponse {
   @scala.inline
   def apply(NextToken: NextToken = null, SecurityProfileSummaryList: SecurityProfileSummaryList = null): ListSecurityProfilesResponse = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
-    if (SecurityProfileSummaryList != null) __obj.updateDynamic("SecurityProfileSummaryList")(SecurityProfileSummaryList)
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
+    if (SecurityProfileSummaryList != null) __obj.updateDynamic("SecurityProfileSummaryList")(SecurityProfileSummaryList.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListSecurityProfilesResponse]
   }
 }

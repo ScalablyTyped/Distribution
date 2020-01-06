@@ -10,9 +10,9 @@ A CSS-in-JS theming solution, inspired by styled-components
 | ------------------ | :-------------: |
 | Full name          | emotion-theming |
 | Keywords           | react, theme, theming, emotion, cssinjs, css-in-js |
-| # releases         | 48 |
-| # dependents       | 127 |
-| # downloads        | 3463534 |
+| # releases         | 49 |
+| # dependents       | 261 |
+| # downloads        | 28586291 |
 | # stars            | 1 |
 
 ## Links

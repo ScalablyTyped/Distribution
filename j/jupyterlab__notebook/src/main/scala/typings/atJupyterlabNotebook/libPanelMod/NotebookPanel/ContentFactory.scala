@@ -30,16 +30,18 @@ class ContentFactory ()
     * This is a separate readonly attribute rather than a factory method as we need
     * to pass it around.
     */
-  /* CompleteClass */
+  /* InferMemberOverrides */
   override val editorFactory: Factory = js.native
   /**
     * Create a new cell header for the parent widget.
     */
+  /* CompleteClass */
   /* InferMemberOverrides */
   override def createCellFooter(): ICellFooter = js.native
   /**
     * Create a new cell header for the parent widget.
     */
+  /* CompleteClass */
   /* InferMemberOverrides */
   override def createCellHeader(): ICellHeader = js.native
   /**

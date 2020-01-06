@@ -4,13 +4,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CaptionSelectorSettings extends js.Object {
-  var AribSourceSettings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.AribSourceSettings] = js.undefined
-  var DvbSubSourceSettings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.DvbSubSourceSettings] = js.undefined
-  var EmbeddedSourceSettings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.EmbeddedSourceSettings] = js.undefined
-  var Scte20SourceSettings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.Scte20SourceSettings] = js.undefined
-  var Scte27SourceSettings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.Scte27SourceSettings] = js.undefined
-  var TeletextSourceSettings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.TeletextSourceSettings] = js.undefined
+  var AribSourceSettings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.AribSourceSettings] = js.native
+  var DvbSubSourceSettings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.DvbSubSourceSettings] = js.native
+  var EmbeddedSourceSettings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.EmbeddedSourceSettings] = js.native
+  var Scte20SourceSettings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.Scte20SourceSettings] = js.native
+  var Scte27SourceSettings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.Scte27SourceSettings] = js.native
+  var TeletextSourceSettings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.TeletextSourceSettings] = js.native
 }
 
 object CaptionSelectorSettings {
@@ -24,12 +25,12 @@ object CaptionSelectorSettings {
     TeletextSourceSettings: TeletextSourceSettings = null
   ): CaptionSelectorSettings = {
     val __obj = js.Dynamic.literal()
-    if (AribSourceSettings != null) __obj.updateDynamic("AribSourceSettings")(AribSourceSettings)
-    if (DvbSubSourceSettings != null) __obj.updateDynamic("DvbSubSourceSettings")(DvbSubSourceSettings)
-    if (EmbeddedSourceSettings != null) __obj.updateDynamic("EmbeddedSourceSettings")(EmbeddedSourceSettings)
-    if (Scte20SourceSettings != null) __obj.updateDynamic("Scte20SourceSettings")(Scte20SourceSettings)
-    if (Scte27SourceSettings != null) __obj.updateDynamic("Scte27SourceSettings")(Scte27SourceSettings)
-    if (TeletextSourceSettings != null) __obj.updateDynamic("TeletextSourceSettings")(TeletextSourceSettings)
+    if (AribSourceSettings != null) __obj.updateDynamic("AribSourceSettings")(AribSourceSettings.asInstanceOf[js.Any])
+    if (DvbSubSourceSettings != null) __obj.updateDynamic("DvbSubSourceSettings")(DvbSubSourceSettings.asInstanceOf[js.Any])
+    if (EmbeddedSourceSettings != null) __obj.updateDynamic("EmbeddedSourceSettings")(EmbeddedSourceSettings.asInstanceOf[js.Any])
+    if (Scte20SourceSettings != null) __obj.updateDynamic("Scte20SourceSettings")(Scte20SourceSettings.asInstanceOf[js.Any])
+    if (Scte27SourceSettings != null) __obj.updateDynamic("Scte27SourceSettings")(Scte27SourceSettings.asInstanceOf[js.Any])
+    if (TeletextSourceSettings != null) __obj.updateDynamic("TeletextSourceSettings")(TeletextSourceSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[CaptionSelectorSettings]
   }
 }

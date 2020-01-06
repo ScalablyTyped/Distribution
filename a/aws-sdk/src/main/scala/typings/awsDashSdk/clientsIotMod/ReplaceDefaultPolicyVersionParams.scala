@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ReplaceDefaultPolicyVersionParams extends js.Object {
   /**
     * The name of the template to be applied. The only supported value is BLANK_POLICY.
     */
-  var templateName: PolicyTemplateName
+  var templateName: PolicyTemplateName = js.native
 }
 
 object ReplaceDefaultPolicyVersionParams {

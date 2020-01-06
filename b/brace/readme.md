@@ -10,9 +10,9 @@ browserify compatible version of the ace editor.
 | ------------------ | :-------------: |
 | Full name          | brace |
 | Keywords           | ace, editor, browser, package, bundle, inline, browserify |
-| # releases         | 3 |
-| # dependents       | 242 |
-| # downloads        | 6168482 |
+| # releases         | 2 |
+| # dependents       | 338 |
+| # downloads        | 9856684 |
 | # stars            | 14 |
 
 ## Links

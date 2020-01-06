@@ -10,9 +10,9 @@ Convert between keyboard keycodes and keynames and vice versa.
 | ------------------ | :-------------: |
 | Full name          | keycode |
 | Keywords           | keyboard, keycode, keyboardevent, ascii, keydown, keyup, metakey, keyname, keypress |
-| # releases         | 3 |
-| # dependents       | 429 |
-| # downloads        | 46495777 |
+| # releases         | 2 |
+| # dependents       | 486 |
+| # downloads        | 58992528 |
 | # stars            | 18 |
 
 ## Links

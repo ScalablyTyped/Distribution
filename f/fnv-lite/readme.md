@@ -12,7 +12,7 @@ Small 128-bit FNV-1a library for the browser.
 | Keywords           | FNV, FNV-1a, Fowler-Noll-Vo, browser, small, lightweight, hash |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 5138 |
+| # downloads        | 4731 |
 | # stars            | 0 |
 
 ## Links

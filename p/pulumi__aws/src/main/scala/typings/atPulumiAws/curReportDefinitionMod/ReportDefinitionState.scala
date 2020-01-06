@@ -5,43 +5,44 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ReportDefinitionState extends js.Object {
   /**
     * A list of additional artifacts. Valid values are: REDSHIFT, QUICKSIGHT.
     */
-  val additionalArtifacts: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val additionalArtifacts: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * A list of schema elements. Valid values are: RESOURCES.
     */
-  val additionalSchemaElements: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val additionalSchemaElements: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * Compression format for report. Valid values are: GZIP, ZIP.
     */
-  val compression: js.UndefOr[Input[String]] = js.undefined
+  val compression: js.UndefOr[Input[String]] = js.native
   /**
     * Format for report. Valid values are: textORcsv.
     */
-  val format: js.UndefOr[Input[String]] = js.undefined
+  val format: js.UndefOr[Input[String]] = js.native
   /**
     * Unique name for the report. Must start with a number/letter and is case sensitive. Limited to 256 characters.
     */
-  val reportName: js.UndefOr[Input[String]] = js.undefined
+  val reportName: js.UndefOr[Input[String]] = js.native
   /**
     * Name of the existing S3 bucket to hold generated reports.
     */
-  val s3Bucket: js.UndefOr[Input[String]] = js.undefined
+  val s3Bucket: js.UndefOr[Input[String]] = js.native
   /**
     * Report path prefix. Limited to 256 characters.
     */
-  val s3Prefix: js.UndefOr[Input[String]] = js.undefined
+  val s3Prefix: js.UndefOr[Input[String]] = js.native
   /**
     * Region of the existing S3 bucket to hold generated reports.
     */
-  val s3Region: js.UndefOr[Input[String]] = js.undefined
+  val s3Region: js.UndefOr[Input[String]] = js.native
   /**
     * The frequency on which report data are measured and displayed.  Valid values are: HOURLY, DAILY.
     */
-  val timeUnit: js.UndefOr[Input[String]] = js.undefined
+  val timeUnit: js.UndefOr[Input[String]] = js.native
 }
 
 object ReportDefinitionState {

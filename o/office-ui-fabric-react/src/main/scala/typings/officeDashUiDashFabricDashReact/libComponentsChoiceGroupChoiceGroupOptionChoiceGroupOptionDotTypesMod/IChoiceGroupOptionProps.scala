@@ -296,7 +296,7 @@ object IChoiceGroupOptionProps {
     onProgress: SyntheticEvent[HTMLElement | HTMLInputElement, Event] => Unit = null,
     onRateChange: SyntheticEvent[HTMLElement | HTMLInputElement, Event] => Unit = null,
     onRenderField: (/* props */ js.UndefOr[IChoiceGroupOption], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IChoiceGroupOption], Element | Null]]) => Element | Null = null,
-    onRenderLabel: /* option */ IChoiceGroupOption => Element = null,
+    onRenderLabel: (/* props */ js.UndefOr[IChoiceGroupOption], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IChoiceGroupOption], Element | Null]]) => Element | Null = null,
     onReset: FormEvent[HTMLElement | HTMLInputElement] => Unit = null,
     onScroll: UIEvent[HTMLElement | HTMLInputElement] => Unit = null,
     onSeeked: SyntheticEvent[HTMLElement | HTMLInputElement, Event] => Unit = null,
@@ -515,7 +515,7 @@ object IChoiceGroupOptionProps {
     if (onProgress != null) __obj.updateDynamic("onProgress")(js.Any.fromFunction1(onProgress))
     if (onRateChange != null) __obj.updateDynamic("onRateChange")(js.Any.fromFunction1(onRateChange))
     if (onRenderField != null) __obj.updateDynamic("onRenderField")(js.Any.fromFunction2(onRenderField))
-    if (onRenderLabel != null) __obj.updateDynamic("onRenderLabel")(js.Any.fromFunction1(onRenderLabel))
+    if (onRenderLabel != null) __obj.updateDynamic("onRenderLabel")(js.Any.fromFunction2(onRenderLabel))
     if (onReset != null) __obj.updateDynamic("onReset")(js.Any.fromFunction1(onReset))
     if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
     if (onSeeked != null) __obj.updateDynamic("onSeeked")(js.Any.fromFunction1(onSeeked))

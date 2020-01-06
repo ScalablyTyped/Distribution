@@ -10,9 +10,9 @@ SocketCluster JavaScript client
 | ------------------ | :-------------: |
 | Full name          | socketcluster-client |
 | Keywords           | - |
-| # releases         | 44 |
-| # dependents       | 46 |
-| # downloads        | 3083509 |
+| # releases         | 25 |
+| # dependents       | 57 |
+| # downloads        | 2866928 |
 | # stars            | 1 |
 
 ## Links

@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetServersRequest extends js.Object {
   /**
     * The maximum number of results to return in a single call. The default value is 50. To retrieve the remaining results, make another call with the returned NextToken value.
     */
-  var maxResults: js.UndefOr[MaxResults] = js.undefined
+  var maxResults: js.UndefOr[MaxResults] = js.native
   /**
     * The token for the next set of results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.undefined
+  var nextToken: js.UndefOr[NextToken] = js.native
   /**
     * List of VmServerAddress objects
     */
-  var vmServerAddressList: js.UndefOr[VmServerAddressList] = js.undefined
+  var vmServerAddressList: js.UndefOr[VmServerAddressList] = js.native
 }
 
 object GetServersRequest {
@@ -28,8 +29,8 @@ object GetServersRequest {
   ): GetServersRequest = {
     val __obj = js.Dynamic.literal()
     if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken)
-    if (vmServerAddressList != null) __obj.updateDynamic("vmServerAddressList")(vmServerAddressList)
+    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
+    if (vmServerAddressList != null) __obj.updateDynamic("vmServerAddressList")(vmServerAddressList.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetServersRequest]
   }
 }

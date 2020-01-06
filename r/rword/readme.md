@@ -4,15 +4,15 @@
 Typings are for version 3.1.1
 
 ## Library description:
-A cryptographically secure random generator for real English words. Contains ~130,000 English words between 3 and 10 characters long.
+A cryptographically secure random generator for real English words. Contains 370,000 words.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | rword |
 | Keywords           | random, randomly, generate, generated, generator, words, word, english, real, cryptographically secure, csprng, cprng |
-| # releases         | 3 |
-| # dependents       | 0 |
-| # downloads        | 7252 |
+| # releases         | 6 |
+| # dependents       | 2 |
+| # downloads        | 12769 |
 | # stars            | 0 |
 
 ## Links

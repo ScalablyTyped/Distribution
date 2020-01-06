@@ -10,9 +10,9 @@ Webpack plugin and CLI utility that represents bundle content as convenient inte
 | ------------------ | :-------------: |
 | Full name          | webpack-bundle-analyzer |
 | Keywords           | webpack, bundle, analyzer, modules, size, interactive, chart, treemap, zoomable, zoom |
-| # releases         | 30 |
-| # dependents       | 796 |
-| # downloads        | 43282532 |
+| # releases         | 28 |
+| # dependents       | 1125 |
+| # downloads        | 82145796 |
 | # stars            | 191 |
 
 ## Links

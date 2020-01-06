@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DateRange extends js.Object {
   /**
     * A date range unit for the date filter.
     */
-  var Unit: js.UndefOr[DateRangeUnit] = js.undefined
+  var Unit: js.UndefOr[DateRangeUnit] = js.native
   /**
     * A date range value for the date filter.
     */
-  var Value: js.UndefOr[Integer] = js.undefined
+  var Value: js.UndefOr[Integer] = js.native
 }
 
 object DateRange {

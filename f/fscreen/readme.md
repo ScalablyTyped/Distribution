@@ -10,9 +10,9 @@ fullscreen spec api in a vendor agnostic wrapper
 | ------------------ | :-------------: |
 | Full name          | fscreen |
 | Keywords           | fullscreen, browser |
-| # releases         | 5 |
-| # dependents       | 13 |
-| # downloads        | 326178 |
+| # releases         | 0 |
+| # dependents       | 19 |
+| # downloads        | 725881 |
 | # stars            | 1 |
 
 ## Links

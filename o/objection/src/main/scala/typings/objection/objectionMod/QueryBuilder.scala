@@ -14,12 +14,12 @@ class QueryBuilder[QM /* <: Model */, RM, RV] ()
   def castTo[T /* <: TypeofClassModel */](model: T): QueryBuilder[
     QM, 
     js.Array[InstanceType[T]], 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for RV */ _
   ] = js.native
   def throwIfNotFound(): QueryBuilder[
     QM, 
     RM, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for RV */ _
   ] = js.native
 }
 
@@ -29,8 +29,8 @@ class QueryBuilder[QM /* <: Model */, RM, RV] ()
 object QueryBuilder extends js.Object {
   def forClass[M /* <: Model */, MC /* <: ModelClass[M] */](modelClass: MC): QueryBuilder[
     M, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for RM */ _, 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for RV */ _
   ] = js.native
 }
 

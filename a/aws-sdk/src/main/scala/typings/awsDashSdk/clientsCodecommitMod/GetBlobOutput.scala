@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetBlobOutput extends js.Object {
   /**
     * The content of the blob, usually a file.
     */
-  var content: blob
+  var content: blob = js.native
 }
 
 object GetBlobOutput {

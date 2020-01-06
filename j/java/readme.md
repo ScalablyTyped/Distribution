@@ -10,9 +10,9 @@ Bridge API to connect with existing Java APIs.
 | ------------------ | :-------------: |
 | Full name          | java |
 | Keywords           | java, jvm, bridge |
-| # releases         | 5 |
-| # dependents       | 109 |
-| # downloads        | 426891 |
+| # releases         | 6 |
+| # dependents       | 113 |
+| # downloads        | 824079 |
 | # stars            | 21 |
 
 ## Links

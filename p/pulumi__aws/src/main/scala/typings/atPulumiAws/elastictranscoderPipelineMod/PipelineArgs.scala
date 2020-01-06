@@ -10,47 +10,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PipelineArgs extends js.Object {
   /**
     * The AWS Key Management Service (AWS KMS) key that you want to use with this pipeline.
     */
-  val awsKmsKeyArn: js.UndefOr[Input[String]] = js.undefined
+  val awsKmsKeyArn: js.UndefOr[Input[String]] = js.native
   /**
     * The ContentConfig object specifies information about the Amazon S3 bucket in which you want Elastic Transcoder to save transcoded files and playlists. (documented below)
     */
-  val contentConfig: js.UndefOr[Input[PipelineContentConfig]] = js.undefined
+  val contentConfig: js.UndefOr[Input[PipelineContentConfig]] = js.native
   /**
     * The permissions for the `contentConfig` object. (documented below)
     */
-  val contentConfigPermissions: js.UndefOr[Input[js.Array[Input[PipelineContentConfigPermission]]]] = js.undefined
+  val contentConfigPermissions: js.UndefOr[Input[js.Array[Input[PipelineContentConfigPermission]]]] = js.native
   /**
     * The Amazon S3 bucket in which you saved the media files that you want to transcode and the graphics that you want to use as watermarks.
     */
-  val inputBucket: Input[String]
+  val inputBucket: Input[String] = js.native
   /**
     * The name of the pipeline. Maximum 40 characters
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * The Amazon Simple Notification Service (Amazon SNS) topic that you want to notify to report job status. (documented below)
     */
-  val notifications: js.UndefOr[Input[PipelineNotifications]] = js.undefined
+  val notifications: js.UndefOr[Input[PipelineNotifications]] = js.native
   /**
     * The Amazon S3 bucket in which you want Elastic Transcoder to save the transcoded files.
     */
-  val outputBucket: js.UndefOr[Input[String]] = js.undefined
+  val outputBucket: js.UndefOr[Input[String]] = js.native
   /**
     * The IAM Amazon Resource Name (ARN) for the role that you want Elastic Transcoder to use to transcode jobs for this pipeline.
     */
-  val role: Input[String]
+  val role: Input[String] = js.native
   /**
     * The ThumbnailConfig object specifies information about the Amazon S3 bucket in which you want Elastic Transcoder to save thumbnail files. (documented below)
     */
-  val thumbnailConfig: js.UndefOr[Input[PipelineThumbnailConfig]] = js.undefined
+  val thumbnailConfig: js.UndefOr[Input[PipelineThumbnailConfig]] = js.native
   /**
     * The permissions for the `thumbnailConfig` object. (documented below)
     */
-  val thumbnailConfigPermissions: js.UndefOr[Input[js.Array[Input[PipelineThumbnailConfigPermission]]]] = js.undefined
+  val thumbnailConfigPermissions: js.UndefOr[Input[js.Array[Input[PipelineThumbnailConfigPermission]]]] = js.native
 }
 
 object PipelineArgs {

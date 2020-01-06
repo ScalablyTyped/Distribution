@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ProjectSourceAuth extends js.Object {
   /**
     * The resource value that applies to the specified authorization type.
     */
-  var resource: js.UndefOr[Input[String]] = js.undefined
+  var resource: js.UndefOr[Input[String]] = js.native
   /**
     * The type of repository that contains the source code to be built. Valid values for this parameter are: `CODECOMMIT`, `CODEPIPELINE`, `GITHUB`, `GITHUB_ENTERPRISE`, `BITBUCKET` or `S3`.
     */
-  var `type`: Input[String]
+  var `type`: Input[String] = js.native
 }
 
 object ProjectSourceAuth {

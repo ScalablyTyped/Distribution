@@ -45,7 +45,7 @@ class Builder () extends js.Object {
     */
   def clear(): Unit = js.native
   /**
-    * Conveniance function for creating Long objects.
+    * Convenience function for creating Long objects.
     */
   def createLong(low: Double, high: Double): Long = js.native
   /**
@@ -79,6 +79,9 @@ class Builder () extends js.Object {
   def endVector(): Offset = js.native
   def finish(root_table: Offset): Unit = js.native
   def finish(root_table: Offset, file_identifier: String): Unit = js.native
+  def finish(root_table: Offset, file_identifier: String, size_prefix: Boolean): Unit = js.native
+  def finishSizePrefixed(root_table: Offset): Unit = js.native
+  def finishSizePrefixed(root_table: Offset, file_identifier: String): Unit = js.native
   /**
     * In order to save space, fields that are set to their default value
     * don't get serialized into the buffer. Forcing defaults provides a

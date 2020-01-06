@@ -20,6 +20,7 @@ trait BorderlessButtonProperties extends BaseButtonProperties {
 object BorderlessButtonProperties {
   @scala.inline
   def apply(
+    accessibilityLabel: String = null,
     activeOpacity: Int | Double = null,
     borderless: js.UndefOr[Boolean] = js.undefined,
     disallowInterruption: js.UndefOr[Boolean] = js.undefined,
@@ -40,6 +41,7 @@ object BorderlessButtonProperties {
     waitFor: Ref[_] | js.Array[Ref[_]] = null
   ): BorderlessButtonProperties = {
     val __obj = js.Dynamic.literal()
+    if (accessibilityLabel != null) __obj.updateDynamic("accessibilityLabel")(accessibilityLabel.asInstanceOf[js.Any])
     if (activeOpacity != null) __obj.updateDynamic("activeOpacity")(activeOpacity.asInstanceOf[js.Any])
     if (!js.isUndefined(borderless)) __obj.updateDynamic("borderless")(borderless.asInstanceOf[js.Any])
     if (!js.isUndefined(disallowInterruption)) __obj.updateDynamic("disallowInterruption")(disallowInterruption.asInstanceOf[js.Any])

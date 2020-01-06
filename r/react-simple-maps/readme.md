@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-simple-maps
 
-Typings are for version 0.12
+Typings are for version 1.0
 
 ## Library description:
 An svg map component built with and for React
@@ -10,9 +10,9 @@ An svg map component built with and for React
 | ------------------ | :-------------: |
 | Full name          | react-simple-maps |
 | Keywords           | react, maps, worldmap, geo, d3 |
-| # releases         | 26 |
-| # dependents       | 8 |
-| # downloads        | 284400 |
+| # releases         | 10 |
+| # dependents       | 12 |
+| # downloads        | 552917 |
 | # stars            | 3 |
 
 ## Links

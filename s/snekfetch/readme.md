@@ -10,9 +10,9 @@ Just do http requests without all that weird nastiness from other libs
 | ------------------ | :-------------: |
 | Full name          | snekfetch |
 | Keywords           | - |
-| # releases         | 52 |
+| # releases         | 12 |
 | # dependents       | 171 |
-| # downloads        | 1602629 |
+| # downloads        | 3937891 |
 | # stars            | 8 |
 
 ## Links

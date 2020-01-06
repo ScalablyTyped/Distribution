@@ -10,9 +10,9 @@ Data library for istanbul coverage objects
 | ------------------ | :-------------: |
 | Full name          | istanbul-lib-coverage |
 | Keywords           | istanbul, coverage, data |
-| # releases         | 10 |
-| # dependents       | 68 |
-| # downloads        | 225045923 |
+| # releases         | 14 |
+| # dependents       | 102 |
+| # downloads        | 394512183 |
 | # stars            | 1 |
 
 ## Links

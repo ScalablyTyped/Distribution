@@ -10,9 +10,9 @@ jsreport recipe which is rendering pdf from html using phantomjs
 | ------------------ | :-------------: |
 | Full name          | jsreport-phantom-pdf |
 | Keywords           | jsreport, pdf |
-| # releases         | 15 |
+| # releases         | 14 |
 | # dependents       | 3 |
-| # downloads        | 90374 |
+| # downloads        | 143781 |
 | # stars            | 0 |
 
 ## Links

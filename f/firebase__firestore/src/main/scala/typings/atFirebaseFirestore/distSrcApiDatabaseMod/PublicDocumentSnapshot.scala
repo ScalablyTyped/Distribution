@@ -20,7 +20,7 @@ object PublicDocumentSnapshot
         /* _fromCache */ Boolean, 
         /* _hasPendingWrites */ Boolean, 
         js.UndefOr[
-          FirestoreDataConverter[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any]
+          FirestoreDataConverter[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any]
         ], 
         DocumentSnapshot[js.Object]
       ]

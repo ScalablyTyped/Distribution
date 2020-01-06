@@ -6,39 +6,40 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ResolverArgs extends js.Object {
   /**
     * The API ID for the GraphQL API.
     */
-  val apiId: Input[String]
+  val apiId: Input[String] = js.native
   /**
     * The DataSource name.
     */
-  val dataSource: js.UndefOr[Input[String]] = js.undefined
+  val dataSource: js.UndefOr[Input[String]] = js.native
   /**
     * The field name from the schema defined in the GraphQL API.
     */
-  val field: Input[String]
+  val field: Input[String] = js.native
   /**
     * The resolver type. Valid values are `UNIT` and `PIPELINE`.
     */
-  val kind: js.UndefOr[Input[String]] = js.undefined
+  val kind: js.UndefOr[Input[String]] = js.native
   /**
     * The PipelineConfig. A `pipelineConfig` block is documented below.
     */
-  val pipelineConfig: js.UndefOr[Input[ResolverPipelineConfig]] = js.undefined
+  val pipelineConfig: js.UndefOr[Input[ResolverPipelineConfig]] = js.native
   /**
     * The request mapping template for UNIT resolver or 'before mapping template' for PIPELINE resolver.
     */
-  val requestTemplate: Input[String]
+  val requestTemplate: Input[String] = js.native
   /**
     * The response mapping template for UNIT resolver or 'after mapping template' for PIPELINE resolver.
     */
-  val responseTemplate: Input[String]
+  val responseTemplate: Input[String] = js.native
   /**
     * The type name from the schema defined in the GraphQL API.
     */
-  val `type`: Input[String]
+  val `type`: Input[String] = js.native
 }
 
 object ResolverArgs {

@@ -10,9 +10,9 @@ JavaScript Load Image is a library to load images provided as File or Blob objec
 | ------------------ | :-------------: |
 | Full name          | blueimp-load-image |
 | Keywords           | javascript, load, loading, image, file, blob, url, scale, crop, img, canvas, meta, exif, iptc, thumbnail, resizing |
-| # releases         | 12 |
-| # dependents       | 50 |
-| # downloads        | 2959285 |
+| # releases         | 9 |
+| # dependents       | 61 |
+| # downloads        | 4048954 |
 | # stars            | 12 |
 
 ## Links

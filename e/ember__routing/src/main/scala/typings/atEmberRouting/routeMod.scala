@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object routeMod extends js.Object {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: parser.TsParser#tsDeclClass functionCall $anonfun class extends from : EmberObject.extend(ActionHandler, Evented) * / any */ @js.native
+  - Dropped / * import warning: parser.TsParser#tsDeclClass functionCall class extends from : EmberObject.extend(ActionHandler, Evented) * / any */ @js.native
   trait Route extends js.Object {
     // properties
     /**

@@ -11,8 +11,8 @@ Friendly BEM class names generator, greate for React
 | Full name          | bem-cn |
 | Keywords           | BEM, React, class, classname, block, element, modifier |
 | # releases         | 5 |
-| # dependents       | 17 |
-| # downloads        | 184496 |
+| # dependents       | 19 |
+| # downloads        | 206577 |
 | # stars            | 2 |
 
 ## Links

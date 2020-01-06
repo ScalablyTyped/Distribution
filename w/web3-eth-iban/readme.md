@@ -10,9 +10,9 @@ This package converts Ethereum addresses to IBAN addresses a vice versa.
 | ------------------ | :-------------: |
 | Full name          | web3-eth-iban |
 | Keywords           | - |
-| # releases         | 36 |
+| # releases         | 37 |
 | # dependents       | 10 |
-| # downloads        | 3974259 |
+| # downloads        | 4441490 |
 | # stars            | 0 |
 
 ## Links

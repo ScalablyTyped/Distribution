@@ -1,7 +1,7 @@
 package typings.terminalDashKit.textBufferMod
 
 import typings.terminalDashKit.Anon_AttrMisc
-import typings.terminalDashKit.Anon_Dst_216994768
+import typings.terminalDashKit.Anon_Dst_1628987852
 import typings.terminalDashKit.Anon_FinalCall
 import typings.terminalDashKit.Anon_Height
 import typings.terminalDashKit.rectMod.Region
@@ -22,7 +22,7 @@ trait TextBuffer extends js.Object {
   def draw(): Unit = js.native
   def draw(options: DrawOptions): Unit = js.native
   def drawCursor(): Unit = js.native
-  def drawCursor(options: Anon_Dst_216994768): Unit = js.native
+  def drawCursor(options: Anon_Dst_1628987852): Unit = js.native
   def getContentSize(): Anon_Height = js.native
   def getHidden(): Boolean = js.native
   def getMisc(): js.Any = js.native

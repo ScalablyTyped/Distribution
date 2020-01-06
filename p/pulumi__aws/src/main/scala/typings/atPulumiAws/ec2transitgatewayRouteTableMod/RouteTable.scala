@@ -33,7 +33,7 @@ class RouteTable protected () extends CustomResource {
   /**
     * Key-value tags for the EC2 Transit Gateway Route Table.
     */
-  val tags: Output[js.UndefOr[StringDictionary[String]]] = js.native
+  val tags: Output[js.UndefOr[StringDictionary[_]]] = js.native
   /**
     * Identifier of EC2 Transit Gateway.
     */

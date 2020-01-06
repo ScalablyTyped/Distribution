@@ -16,7 +16,7 @@ object ValidationError {
   def Anon_Error(
     msg: js.Any,
     nestedErrors: js.Array[
-      /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias express-validator.express-validator/src/base.ValidationError */ js.Object
+      /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias express-validator.express-validator/src/base.ValidationError */ js.Object
     ],
     param: _error,
     location: js.UndefOr[scala.Nothing] = js.undefined,

@@ -10,9 +10,9 @@ React component which allows selection of a single item from a dropdown list. Su
 | ------------------ | :-------------: |
 | Full name          | @atlaskit/single-select |
 | Keywords           | - |
-| # releases         | 81 |
-| # dependents       | 2 |
-| # downloads        | 503823 |
+| # releases         | 57 |
+| # dependents       | 1 |
+| # downloads        | 135997 |
 | # stars            | 0 |
 
 ## Links

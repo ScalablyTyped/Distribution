@@ -1,5 +1,6 @@
 package typings.sqsDashProducer.sqsDashProducerMod
 
+import typings.awsDashSdk.awsDashSdkMod.SQS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,9 +11,7 @@ trait Options extends js.Object {
   var queueUrl: String
   var region: js.UndefOr[String] = js.undefined
   var secretAccessKey: js.UndefOr[String] = js.undefined
-  var sqs: js.UndefOr[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SQS */ js.Any
-  ] = js.undefined
+  var sqs: js.UndefOr[SQS] = js.undefined
 }
 
 object Options {
@@ -23,7 +22,7 @@ object Options {
     batchSize: Int | Double = null,
     region: String = null,
     secretAccessKey: String = null,
-    sqs: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SQS */ js.Any = null
+    sqs: SQS = null
   ): Options = {
     val __obj = js.Dynamic.literal(queueUrl = queueUrl.asInstanceOf[js.Any])
     if (accessKeyId != null) __obj.updateDynamic("accessKeyId")(accessKeyId.asInstanceOf[js.Any])

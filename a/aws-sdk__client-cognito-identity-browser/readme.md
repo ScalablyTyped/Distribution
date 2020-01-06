@@ -10,9 +10,9 @@ Browser SDK for Amazon Cognito Identity
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/client-cognito-identity-browser |
 | Keywords           | - |
-| # releases         | 7 |
+| # releases         | 12 |
 | # dependents       | 1 |
-| # downloads        | 341 |
+| # downloads        | 1836 |
 | # stars            | 0 |
 
 ## Links

@@ -12,20 +12,20 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Static
-  extends Instantiable2[/* maskOrAlias */ String, /* opts */ Options, Instance]
+  extends /**
+  * Creates a new Inputmask instance.
+  *
+  * @param maskOrAlias A mask pattern or a reference to a predefined alias.
+  * @param opts Mask options.
+  */
+Instantiable1[(/* opts */ Options) | (/* maskOrAlias */ String), Instance]
      with /**
   * Creates a new Inputmask instance.
   *
   * @param opts Mask options.
   */
 Instantiable0[Instance]
-     with /**
-  * Creates a new Inputmask instance.
-  *
-  * @param maskOrAlias A mask pattern or a reference to a predefined alias.
-  * @param opts Mask options.
-  */
-Instantiable1[(/* opts */ Options) | (/* maskOrAlias */ String), Instance] {
+     with Instantiable2[/* maskOrAlias */ String, /* opts */ Options, Instance] {
   /**
     * Creates a new Inputmask instance.
     *

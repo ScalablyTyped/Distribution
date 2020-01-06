@@ -10,9 +10,9 @@ asynchronous before/error/after hooks for internal functionality
 | ------------------ | :-------------: |
 | Full name          | before-after-hook |
 | Keywords           | hook, hooks, api |
-| # releases         | 8 |
-| # dependents       | 10 |
-| # downloads        | 13381296 |
+| # releases         | 11 |
+| # dependents       | 16 |
+| # downloads        | 38916688 |
 | # stars            | 0 |
 
 ## Links

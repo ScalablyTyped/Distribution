@@ -1,5 +1,6 @@
 package typings.atPulumiAws.swfDomainMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -22,6 +23,10 @@ class Domain protected () extends CustomResource {
   def this(name: String, args: DomainArgs) = this()
   def this(name: String, args: DomainArgs, opts: CustomResourceOptions) = this()
   /**
+    * Amazon Resource Name (ARN)
+    */
+  val arn: Output[String] = js.native
+  /**
     * The domain description.
     */
   val description: Output[js.UndefOr[String]] = js.native
@@ -33,6 +38,10 @@ class Domain protected () extends CustomResource {
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`.
     */
   val namePrefix: Output[js.UndefOr[String]] = js.native
+  /**
+    * Key-value mapping of resource tags
+    */
+  val tags: Output[js.UndefOr[StringDictionary[_]]] = js.native
   /**
     * Length of time that SWF will continue to retain information about the workflow execution after the workflow execution is complete, must be between 0 and 90 days.
     */

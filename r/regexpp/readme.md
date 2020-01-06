@@ -4,15 +4,15 @@
 Typings are for version 3.0.0
 
 ## Library description:
-Regular expression parser for ECMAScript 2018.
+Regular expression parser for ECMAScript.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | regexpp |
-| Keywords           | regexp, regular, expression, parser, validator, ast, abstract, syntax, tree, ecmascript, es2015, es2016, es2017, es2018, annexB |
-| # releases         | 9 |
-| # dependents       | 13 |
-| # downloads        | 129463164 |
+| Keywords           | regexp, regular, expression, parser, validator, ast, abstract, syntax, tree, ecmascript, es2015, es2016, es2017, es2018, es2019, es2020, annexB |
+| # releases         | 10 |
+| # dependents       | 31 |
+| # downloads        | 263348645 |
 | # stars            | 0 |
 
 ## Links

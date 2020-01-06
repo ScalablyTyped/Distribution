@@ -35,9 +35,6 @@ class GroupPolicy protected () extends CustomResource {
     * prefix. Conflicts with `name`.
     */
   val namePrefix: Output[js.UndefOr[String]] = js.native
-  /**
-    * The policy document. This is a JSON formatted string.
-    */
   val policy: Output[String] = js.native
 }
 

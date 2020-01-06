@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PrincipalAssociationState extends js.Object {
   /**
     * The principal to associate with the resource share. Possible values are an AWS account ID, an AWS Organizations Organization ARN, or an AWS Organizations Organization Unit ARN.
     */
-  val principal: js.UndefOr[Input[String]] = js.undefined
+  val principal: js.UndefOr[Input[String]] = js.native
   /**
     * The Amazon Resource Name (ARN) of the resource share.
     */
-  val resourceShareArn: js.UndefOr[Input[String]] = js.undefined
+  val resourceShareArn: js.UndefOr[Input[String]] = js.native
 }
 
 object PrincipalAssociationState {

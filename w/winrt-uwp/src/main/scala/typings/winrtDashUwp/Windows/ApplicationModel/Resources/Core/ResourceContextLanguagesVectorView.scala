@@ -31,11 +31,8 @@ abstract class ResourceContextLanguagesVectorView () extends Array[String] {
     */
   def getMany(startIndex: Double): Anon_ItemsReturnValueArray = js.native
   def indexOf(value: String, extra: js.Any*): Anon_Index = js.native
-  /**
-    * Returns the index of a specified ResourceContext language qualifier in the set.
-    * @param value The ResourceContext language qualifier to find in the set.
-    */
+  /* hack */
   @JSName("indexOf")
-  def indexOf_Anon_Index(value: String): Anon_Index = js.native
+  def indexOf_Double(searchElement: String): Double = js.native
 }
 

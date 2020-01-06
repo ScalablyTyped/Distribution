@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation._
 
 package object clientsDmsMod {
   import typings.awsDashSdk.awsDashSdkStrings.`replication-instance`
-  import typings.awsDashSdk.awsDashSdkStrings.beta
-  import typings.awsDashSdk.awsDashSdkStrings.json
+  import typings.awsDashSdk.awsDashSdkStrings.beta_
+  import typings.awsDashSdk.awsDashSdkStrings.json_
   import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
   import typings.node.Buffer
   import typings.std.Date
@@ -15,15 +15,15 @@ package object clientsDmsMod {
 
   type AccountQuotaList = js.Array[AccountQuota]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.default
+    - typings.awsDashSdk.awsDashSdkStrings.default_
     - typings.awsDashSdk.awsDashSdkStrings.mongodb_cr
     - typings.awsDashSdk.awsDashSdkStrings.scram_sha_1
     - java.lang.String
   */
   type AuthMechanismValue = _AuthMechanismValue | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.no
-    - typings.awsDashSdk.awsDashSdkStrings.password
+    - typings.awsDashSdk.awsDashSdkStrings.no_
+    - typings.awsDashSdk.awsDashSdkStrings.password__
     - java.lang.String
   */
   type AuthTypeValue = _AuthTypeValue | java.lang.String
@@ -34,21 +34,21 @@ package object clientsDmsMod {
   type CertificateWallet = Buffer | Uint8Array | Blob | java.lang.String
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.none
-    - typings.awsDashSdk.awsDashSdkStrings.gzip
+    - typings.awsDashSdk.awsDashSdkStrings.none__
+    - typings.awsDashSdk.awsDashSdkStrings.gzip__
     - java.lang.String
   */
   type CompressionTypeValue = _CompressionTypeValue | java.lang.String
   type ConnectionList = js.Array[Connection]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.csv
-    - typings.awsDashSdk.awsDashSdkStrings.parquet
+    - typings.awsDashSdk.awsDashSdkStrings.csv_
+    - typings.awsDashSdk.awsDashSdkStrings.parquet_
     - java.lang.String
   */
   type DataFormatValue = _DataFormatValue | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.none
-    - typings.awsDashSdk.awsDashSdkStrings.require
+    - typings.awsDashSdk.awsDashSdkStrings.none__
+    - typings.awsDashSdk.awsDashSdkStrings.require__
     - typings.awsDashSdk.awsDashSdkStrings.`verify-ca`
     - typings.awsDashSdk.awsDashSdkStrings.`verify-full`
     - java.lang.String
@@ -62,8 +62,8 @@ package object clientsDmsMod {
   */
   type EncodingTypeValue = _EncodingTypeValue | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.`sse-s3`
-    - typings.awsDashSdk.awsDashSdkStrings.`sse-kms`
+    - typings.awsDashSdk.awsDashSdkStrings.`sse-s3_`
+    - typings.awsDashSdk.awsDashSdkStrings.`sse-kms_`
     - java.lang.String
   */
   type EncryptionModeValue = _EncryptionModeValue | java.lang.String
@@ -78,7 +78,7 @@ package object clientsDmsMod {
   type IntegerOptional = Double
   type KeyList = js.Array[String]
   type Long = Double
-  type MessageFormatValue = json | java.lang.String
+  type MessageFormatValue = json_ | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`full-load`
     - typings.awsDashSdk.awsDashSdkStrings.cdc
@@ -87,7 +87,7 @@ package object clientsDmsMod {
   */
   type MigrationTypeValue = _MigrationTypeValue | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.none
+    - typings.awsDashSdk.awsDashSdkStrings.none__
     - typings.awsDashSdk.awsDashSdkStrings.one
     - java.lang.String
   */
@@ -102,13 +102,13 @@ package object clientsDmsMod {
   type PendingMaintenanceActionDetails = js.Array[PendingMaintenanceAction]
   type PendingMaintenanceActions = js.Array[ResourcePendingMaintenanceActions]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.successful
-    - typings.awsDashSdk.awsDashSdkStrings.failed
+    - typings.awsDashSdk.awsDashSdkStrings.successful__
+    - typings.awsDashSdk.awsDashSdkStrings.failed__
     - typings.awsDashSdk.awsDashSdkStrings.refreshing
     - java.lang.String
   */
   type RefreshSchemasStatusTypeValue = _RefreshSchemasStatusTypeValue | java.lang.String
-  type ReleaseStatusValues = beta | java.lang.String
+  type ReleaseStatusValues = beta_ | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`data-reload`
     - typings.awsDashSdk.awsDashSdkStrings.`validate-only`
@@ -116,8 +116,8 @@ package object clientsDmsMod {
   */
   type ReloadOptionValue = _ReloadOptionValue | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.source
-    - typings.awsDashSdk.awsDashSdkStrings.target
+    - typings.awsDashSdk.awsDashSdkStrings.source_
+    - typings.awsDashSdk.awsDashSdkStrings.target_
     - java.lang.String
   */
   type ReplicationEndpointTypeValue = _ReplicationEndpointTypeValue | java.lang.String
@@ -151,7 +151,7 @@ package object clientsDmsMod {
   type VpcSecurityGroupMembershipList = js.Array[VpcSecurityGroupMembership]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2016-01-01`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | java.lang.String

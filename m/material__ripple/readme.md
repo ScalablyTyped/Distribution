@@ -10,9 +10,9 @@ The Material Components for the web Ink Ripple effect for web element interactio
 | ------------------ | :-------------: |
 | Full name          | @material/ripple |
 | Keywords           | material components, material design, ripple |
-| # releases         | 50 |
-| # dependents       | 83 |
-| # downloads        | 2808429 |
+| # releases         | 117 |
+| # dependents       | 113 |
+| # downloads        | 3664822 |
 | # stars            | 1 |
 
 ## Links

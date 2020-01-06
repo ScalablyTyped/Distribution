@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ConflictResolution extends js.Object {
   /**
-    * Files that will be deleted as part of the merge conflict resolution.
+    * Files to be deleted as part of the merge conflict resolution.
     */
-  var deleteFiles: js.UndefOr[DeleteFileEntries] = js.undefined
+  var deleteFiles: js.UndefOr[DeleteFileEntries] = js.native
   /**
-    * Files that will have content replaced as part of the merge conflict resolution.
+    * Files to have content replaced as part of the merge conflict resolution.
     */
-  var replaceContents: js.UndefOr[ReplaceContentEntries] = js.undefined
+  var replaceContents: js.UndefOr[ReplaceContentEntries] = js.native
   /**
-    * File modes that will be set as part of the merge conflict resolution.
+    * File modes that are set as part of the merge conflict resolution.
     */
-  var setFileModes: js.UndefOr[SetFileModeEntries] = js.undefined
+  var setFileModes: js.UndefOr[SetFileModeEntries] = js.native
 }
 
 object ConflictResolution {
@@ -27,9 +28,9 @@ object ConflictResolution {
     setFileModes: SetFileModeEntries = null
   ): ConflictResolution = {
     val __obj = js.Dynamic.literal()
-    if (deleteFiles != null) __obj.updateDynamic("deleteFiles")(deleteFiles)
-    if (replaceContents != null) __obj.updateDynamic("replaceContents")(replaceContents)
-    if (setFileModes != null) __obj.updateDynamic("setFileModes")(setFileModes)
+    if (deleteFiles != null) __obj.updateDynamic("deleteFiles")(deleteFiles.asInstanceOf[js.Any])
+    if (replaceContents != null) __obj.updateDynamic("replaceContents")(replaceContents.asInstanceOf[js.Any])
+    if (setFileModes != null) __obj.updateDynamic("setFileModes")(setFileModes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConflictResolution]
   }
 }

@@ -10,9 +10,9 @@ NASDAQ SoupBinTCP 3.00 client and server
 | ------------------ | :-------------: |
 | Full name          | soupbintcp |
 | Keywords           | finance, nasdaq, trading |
-| # releases         | 4 |
+| # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 382 |
+| # downloads        | 709 |
 | # stars            | 0 |
 
 ## Links

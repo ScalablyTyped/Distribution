@@ -10,9 +10,9 @@ Minimal ORM for mysql, postgresql and sqlite with complete arbitrary SQL query s
 | ------------------ | :-------------: |
 | Full name          | anydb-sql |
 | Keywords           | any, db, sql, orm, postgres, pg, postgresql, mysql, sqlite |
-| # releases         | 7 |
-| # dependents       | 3 |
-| # downloads        | 8280 |
+| # releases         | 5 |
+| # dependents       | 4 |
+| # downloads        | 8919 |
 | # stars            | 3 |
 
 ## Links

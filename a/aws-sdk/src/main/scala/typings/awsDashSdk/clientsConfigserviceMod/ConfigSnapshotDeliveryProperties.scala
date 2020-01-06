@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ConfigSnapshotDeliveryProperties extends js.Object {
   /**
     * The frequency with which AWS Config delivers configuration snapshots.
     */
-  var deliveryFrequency: js.UndefOr[MaximumExecutionFrequency] = js.undefined
+  var deliveryFrequency: js.UndefOr[MaximumExecutionFrequency] = js.native
 }
 
 object ConfigSnapshotDeliveryProperties {

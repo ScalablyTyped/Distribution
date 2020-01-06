@@ -10,9 +10,9 @@ PhosphorJS - Attached Properties
 | ------------------ | :-------------: |
 | Full name          | @phosphor/properties |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 21 |
-| # downloads        | 1101408 |
+| # releases         | 2 |
+| # dependents       | 37 |
+| # downloads        | 1178891 |
 | # stars            | 0 |
 
 ## Links

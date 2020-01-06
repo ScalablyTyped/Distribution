@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ProjectLogsConfigCloudwatchLogs extends js.Object {
   /**
     * The group name of the logs in CloudWatch Logs.
     */
-  var groupName: js.UndefOr[Input[String]] = js.undefined
+  var groupName: js.UndefOr[Input[String]] = js.native
   /**
     * Current status of logs in S3 for a build project. Valid values: `ENABLED`, `DISABLED`. Defaults to `DISABLED`.
     */
-  var status: js.UndefOr[Input[String]] = js.undefined
+  var status: js.UndefOr[Input[String]] = js.native
   /**
     * The stream name of the logs in CloudWatch Logs.
     */
-  var streamName: js.UndefOr[Input[String]] = js.undefined
+  var streamName: js.UndefOr[Input[String]] = js.native
 }
 
 object ProjectLogsConfigCloudwatchLogs {

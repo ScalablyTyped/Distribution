@@ -11,8 +11,8 @@ The lodash method `_.invertBy` exported as a module.
 | Full name          | lodash.invertby |
 | Keywords           | lodash-modularized, invertby |
 | # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 13145 |
+| # dependents       | 7 |
+| # downloads        | 79644 |
 | # stars            | 0 |
 
 ## Links

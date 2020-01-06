@@ -10,8 +10,8 @@ Typings are for version 24.9.0
 | Full name          | @jest/transform |
 | Keywords           | - |
 | # releases         | 13 |
-| # dependents       | 10 |
-| # downloads        | 84454379 |
+| # dependents       | 12 |
+| # downloads        | 110789745 |
 | # stars            | 0 |
 
 ## Links

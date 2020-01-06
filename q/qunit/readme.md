@@ -11,8 +11,8 @@ An easy-to-use JavaScript Unit Testing framework.
 | Full name          | qunit |
 | Keywords           | testing, unit, jquery |
 | # releases         | 13 |
-| # dependents       | 35 |
-| # downloads        | 3829496 |
+| # dependents       | 42 |
+| # downloads        | 4948594 |
 | # stars            | 11 |
 
 ## Links

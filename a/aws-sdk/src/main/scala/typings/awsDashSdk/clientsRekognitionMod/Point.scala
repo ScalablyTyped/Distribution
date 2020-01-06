@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Point extends js.Object {
   /**
     * The value of the X coordinate for a point on a Polygon.
     */
-  var X: js.UndefOr[Float] = js.undefined
+  var X: js.UndefOr[Float] = js.native
   /**
     * The value of the Y coordinate for a point on a Polygon.
     */
-  var Y: js.UndefOr[Float] = js.undefined
+  var Y: js.UndefOr[Float] = js.native
 }
 
 object Point {

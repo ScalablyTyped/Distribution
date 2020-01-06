@@ -10,9 +10,9 @@ Simple and tiny (101 bytes) event emitter library
 | ------------------ | :-------------: |
 | Full name          | nanoevents |
 | Keywords           | EventEmitter, Events, emit, emitter, event, pub/sub, publish, reactor, subscribe |
-| # releases         | 12 |
-| # dependents       | 20 |
-| # downloads        | 35882 |
+| # releases         | 8 |
+| # dependents       | 34 |
+| # downloads        | 149414 |
 | # stars            | 0 |
 
 ## Links

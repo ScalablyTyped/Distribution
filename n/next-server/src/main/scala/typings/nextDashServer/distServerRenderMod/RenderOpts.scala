@@ -1,7 +1,7 @@
 package typings.nextDashServer.distServerRenderMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.nextDashServer.Anon_Error_1933525888
+import typings.nextDashServer.Anon_Error_1641997805
 import typings.nextDashServer.distLibUtilsMod.AppType
 import typings.nextDashServer.distLibUtilsMod.DocumentType
 import typings.nextDashServer.distLibUtilsMod.NextPageContext
@@ -17,7 +17,7 @@ trait RenderOpts extends js.Object {
   var App: AppType
   var Component: ComponentType[js.Object]
   var Document: DocumentType
-  var ErrorDebug: js.UndefOr[ComponentType[Anon_Error_1933525888]] = js.undefined
+  var ErrorDebug: js.UndefOr[ComponentType[Anon_Error_1641997805]] = js.undefined
   var ampBindInitData: Boolean
   var ampMode: js.UndefOr[js.Any] = js.undefined
   var ampPath: js.UndefOr[String] = js.undefined
@@ -58,7 +58,7 @@ object RenderOpts {
     pageConfig: PageConfig,
     reactLoadableManifest: ReactLoadableManifest,
     staticMarkup: Boolean,
-    ErrorDebug: ComponentType[Anon_Error_1933525888] = null,
+    ErrorDebug: ComponentType[Anon_Error_1641997805] = null,
     ampMode: js.Any = null,
     ampPath: String = null,
     ampValidator: (/* html */ String, /* pathname */ String) => js.Promise[Unit] = null,

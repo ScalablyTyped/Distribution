@@ -11,15 +11,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Float64ArrayConstructor
   extends Instantiable0[Float64Array]
+     with Instantiable1[
+      (/* arrayOrArrayBuffer */ ArrayBufferLike) | (/* arrayOrArrayBuffer */ ArrayLike[Double]) | (/* length */ Double) | (/* elements */ Iterable[Double]), 
+      Float64Array
+    ]
      with Instantiable2[/* buffer */ ArrayBufferLike, /* byteOffset */ Double, Float64Array]
      with Instantiable3[
       /* buffer */ ArrayBufferLike, 
       /* byteOffset */ Double, 
       /* length */ Double, 
-      Float64Array
-    ]
-     with Instantiable1[
-      (/* arrayOrArrayBuffer */ ArrayBufferLike) | (/* arrayOrArrayBuffer */ ArrayLike[Double]) | (/* length */ Double) | (/* elements */ Iterable[Double]), 
       Float64Array
     ] {
   /**

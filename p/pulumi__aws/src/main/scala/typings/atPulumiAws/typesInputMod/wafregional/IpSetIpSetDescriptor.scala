@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IpSetIpSetDescriptor extends js.Object {
   /**
     * The string like IPV4 or IPV6.
     */
-  var `type`: Input[String]
+  var `type`: Input[String] = js.native
   /**
     * The CIDR notation.
     */
-  var value: Input[String]
+  var value: Input[String] = js.native
 }
 
 object IpSetIpSetDescriptor {

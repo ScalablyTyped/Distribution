@@ -10,9 +10,9 @@ A node.js through stream that does basic streaming text search and replace and i
 | ------------------ | :-------------: |
 | Full name          | replacestream |
 | Keywords           | replace, text, regex, stream, streams, streaming, search |
-| # releases         | 2 |
-| # dependents       | 184 |
-| # downloads        | 9306694 |
+| # releases         | 1 |
+| # dependents       | 192 |
+| # downloads        | 10771705 |
 | # stars            | 11 |
 
 ## Links

@@ -10,9 +10,9 @@ A tiny JavaScript library that simplifies cookies.
 | ------------------ | :-------------: |
 | Full name          | cookie_js |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 100469 |
+| # releases         | 3 |
+| # dependents       | 6 |
+| # downloads        | 91914 |
 | # stars            | 0 |
 
 ## Links

@@ -4,21 +4,21 @@
 Typings are for version 3.1
 
 ## Library description:
-Compile Hast tree to React with remark
+rehype plugin to transform to React
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | rehype-react |
-| Keywords           | compile, html, markdown, remark, stringify |
+| Keywords           | unified, rehype, html, hast, react |
 | # releases         | 5 |
-| # dependents       | 15 |
-| # downloads        | 156674 |
+| # dependents       | 38 |
+| # downloads        | 374341 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/rhysd/rehype-react#readme)
-- [Bugs](https://github.com/rhysd/rehype-react/issues)
-- [Repository](https://github.com/rhysd/rehype-react)
+- [Homepage](https://github.com/rehypejs/rehype-react#readme)
+- [Bugs](https://github.com/rehypejs/rehype-react/issues)
+- [Repository](https://github.com/rehypejs/rehype-react)
 - [Npm](https://www.npmjs.com/package/rehype-react)
     
 

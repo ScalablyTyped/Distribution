@@ -11,12 +11,12 @@ Smooth scrolling for the web
 | Full name          | iscroll |
 | Keywords           | scrolling, carousel, zoom, iphone, android, mobile, desktop |
 | # releases         | 1 |
-| # dependents       | 94 |
-| # downloads        | 443521 |
+| # dependents       | 115 |
+| # downloads        | 595772 |
 | # stars            | 19 |
 
 ## Links
-- [Homepage](https://github.com/cubiq/iscroll#readme)
+- [Homepage](http://iscrolljs.com)
 - [Bugs](https://github.com/cubiq/iscroll/issues)
 - [Repository](https://github.com/cubiq/iscroll)
 - [Npm](https://www.npmjs.com/package/iscroll)

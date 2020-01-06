@@ -10,9 +10,9 @@ A collection of loading spinners with React.js based on halogen
 | ------------------ | :-------------: |
 | Full name          | halogenium |
 | Keywords           | react, react-component, loader, spinner, halogen, halogenium |
-| # releases         | 6 |
-| # dependents       | 7 |
-| # downloads        | 198952 |
+| # releases         | 29 |
+| # dependents       | 8 |
+| # downloads        | 255837 |
 | # stars            | 0 |
 
 ## Links

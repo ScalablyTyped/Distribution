@@ -10,9 +10,9 @@ Find a file by walking down parent directories.
 | ------------------ | :-------------: |
 | Full name          | find-down |
 | Keywords           | find, down, find-down, finddown, look-down, look, file, files, search, match, package, resolve, parent, parents, folder, directory, directories, dir, dirs, walk, walking, path, paths |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 17580 |
+| # downloads        | 7717 |
 | # stars            | 0 |
 
 ## Links

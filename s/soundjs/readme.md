@@ -10,9 +10,9 @@ A JavaScript library that provides a simple API, and powerful features to make w
 | ------------------ | :-------------: |
 | Full name          | soundjs |
 | Keywords           | createjs, soundjs, gskinner, javascript, audio, webaudio, html5, flash |
-| # releases         | 3 |
-| # dependents       | 0 |
-| # downloads        | 8882 |
+| # releases         | 0 |
+| # dependents       | 2 |
+| # downloads        | 27176 |
 | # stars            | 1 |
 
 ## Links

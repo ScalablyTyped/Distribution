@@ -11,8 +11,8 @@ JavaScript UI library. Includes grid, layout, toolbars, trees, popups.
 | Full name          | w2ui |
 | Keywords           | JavaScript, JS, UI, grid, layout, tree, popup |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 3073 |
+| # dependents       | 0 |
+| # downloads        | 6283 |
 | # stars            | 0 |
 
 ## Links

@@ -1,5 +1,6 @@
 package typings.parse.reactDashNativeMod
 
+import typings.parse.Anon_Latitude
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,7 +31,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class GeoPoint ()
   extends typings.parse.parseMod.GeoPoint {
-  def this(arg1: js.Any) = this()
-  def this(arg1: js.Any, arg2: js.Any) = this()
+  def this(coords: js.Tuple2[Double, Double]) = this()
+  def this(coords: Anon_Latitude) = this()
+  def this(latitude: Double, longitude: Double) = this()
 }
 

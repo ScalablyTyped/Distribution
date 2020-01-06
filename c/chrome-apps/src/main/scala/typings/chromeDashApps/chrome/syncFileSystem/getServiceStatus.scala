@@ -28,7 +28,7 @@ object getServiceStatus extends js.Object {
         String, 
         Exclude[
           String, 
-          initializing | running | temporary_unavailable | authentication_required | disabled_
+          temporary_unavailable | authentication_required | disabled_ | initializing | running
         ]
       ], 
       Unit

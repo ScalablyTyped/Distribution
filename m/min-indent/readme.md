@@ -10,9 +10,9 @@ Get the shortest leading whitespace from lines in a string
 | ------------------ | :-------------: |
 | Full name          | min-indent |
 | Keywords           | indent, indentation, normalize, whitespace, space, tab, string, str, min, minimum |
-| # releases         | 3 |
-| # dependents       | 3 |
-| # downloads        | 12748 |
+| # releases         | 0 |
+| # dependents       | 6 |
+| # downloads        | 6245438 |
 | # stars            | 0 |
 
 ## Links

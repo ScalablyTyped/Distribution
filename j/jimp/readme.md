@@ -4,15 +4,15 @@
 Typings are for version 0.8.5
 
 ## Library description:
-An image processing library written entirely in JavaScript (i.e. zero external or native dependencies).
+An image processing library written entirely in JavaScript (i.e. zero external or native dependencies)
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | jimp |
 | Keywords           | image, image processing, image manipulation, png, jpg, jpeg, bmp, resize, scale, crop |
-| # releases         | 26 |
-| # dependents       | 621 |
-| # downloads        | 13499164 |
+| # releases         | 80 |
+| # dependents       | 797 |
+| # downloads        | 29483809 |
 | # stars            | 136 |
 
 ## Links

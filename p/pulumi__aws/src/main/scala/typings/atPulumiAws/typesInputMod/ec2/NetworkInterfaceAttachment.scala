@@ -5,10 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NetworkInterfaceAttachment extends js.Object {
-  var attachmentId: js.UndefOr[Input[String]] = js.undefined
-  var deviceIndex: Input[Double]
-  var instance: Input[String]
+  var attachmentId: js.UndefOr[Input[String]] = js.native
+  var deviceIndex: Input[Double] = js.native
+  var instance: Input[String] = js.native
 }
 
 object NetworkInterfaceAttachment {

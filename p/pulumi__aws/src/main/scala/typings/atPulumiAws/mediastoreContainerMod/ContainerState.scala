@@ -6,23 +6,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ContainerState extends js.Object {
   /**
     * The ARN of the container.
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * The DNS endpoint of the container.
     */
-  val endpoint: js.UndefOr[Input[String]] = js.undefined
+  val endpoint: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the container. Must contain alphanumeric characters or underscores.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object ContainerState {

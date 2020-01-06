@@ -11,8 +11,8 @@ a body parser for koa
 | Full name          | koa-bodyparser |
 | Keywords           | bodyParser, json, urlencoded, koa, body |
 | # releases         | 2 |
-| # dependents       | 893 |
-| # downloads        | 4782104 |
+| # dependents       | 1121 |
+| # downloads        | 8170514 |
 | # stars            | 35 |
 
 ## Links

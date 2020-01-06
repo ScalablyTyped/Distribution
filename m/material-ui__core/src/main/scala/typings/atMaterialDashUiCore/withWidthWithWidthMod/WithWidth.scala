@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WithWidth extends js.Object {
-  var width: Breakpoint
+  var width: Breakpoint = js.native
 }
 
 object WithWidth {

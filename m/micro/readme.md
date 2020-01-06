@@ -10,10 +10,10 @@ Asynchronous HTTP microservices
 | ------------------ | :-------------: |
 | Full name          | micro |
 | Keywords           | micro, service, microservice, serverless, API |
-| # releases         | 20 |
-| # dependents       | 266 |
-| # downloads        | 3644657 |
-| # stars            | 46 |
+| # releases         | 16 |
+| # dependents       | 320 |
+| # downloads        | 2857311 |
+| # stars            | 47 |
 
 ## Links
 - [Homepage](https://github.com/zeit/micro#readme)

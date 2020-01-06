@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ResourceServerScope extends js.Object {
   /**
     * The scope description.
     */
-  var scopeDescription: Input[String]
+  var scopeDescription: Input[String] = js.native
   /**
     * The scope name.
     */
-  var scopeName: Input[String]
+  var scopeName: Input[String] = js.native
 }
 
 object ResourceServerScope {

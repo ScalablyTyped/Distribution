@@ -1,7 +1,7 @@
 
 # Scala.js typings for jss-plugin-props-sort
 
-Typings are for version 10.0.0
+Typings are for version 10.0.3
 
 ## Library description:
 JSS plugin that ensures style properties extend each other instead of override
@@ -10,9 +10,9 @@ JSS plugin that ensures style properties extend each other instead of override
 | ------------------ | :-------------: |
 | Full name          | jss-plugin-props-sort |
 | Keywords           | cssinjs, css-in-js, css in js, jss, plugin, sort, props |
-| # releases         | 29 |
+| # releases         | 32 |
 | # dependents       | 11 |
-| # downloads        | 6615621 |
+| # downloads        | 11470857 |
 | # stars            | 0 |
 
 ## Links

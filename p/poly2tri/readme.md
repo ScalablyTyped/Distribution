@@ -10,9 +10,9 @@ A 2D constrained Delaunay triangulation library
 | ------------------ | :-------------: |
 | Full name          | poly2tri |
 | Keywords           | 2D, constrained, Delaunay, triangulation, geometry, polygon, point, triangle, tessellation, Steiner |
-| # releases         | 1 |
-| # dependents       | 6 |
-| # downloads        | 20612 |
+| # releases         | 0 |
+| # dependents       | 8 |
+| # downloads        | 30254 |
 | # stars            | 3 |
 
 ## Links

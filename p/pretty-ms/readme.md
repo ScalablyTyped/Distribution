@@ -9,10 +9,10 @@ Convert milliseconds to a human readable string: `1337000000` → `15d 11h 23m 2
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | pretty-ms |
-| Keywords           | pretty, prettify, human, humanize, humanized, readable, time, ms, milliseconds, duration, period, range, text, string, str, number, hrtime |
-| # releases         | 6 |
-| # dependents       | 313 |
-| # downloads        | 24672231 |
+| Keywords           | pretty, prettify, human, humanize, humanized, readable, time, ms, milliseconds, duration, period, range, text, string, number, hrtime |
+| # releases         | 3 |
+| # dependents       | 397 |
+| # downloads        | 33377346 |
 | # stars            | 24 |
 
 ## Links

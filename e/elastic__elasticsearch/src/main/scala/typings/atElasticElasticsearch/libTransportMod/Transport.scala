@@ -30,17 +30,17 @@ trait Transport extends js.Object {
   def emit(event: String, args: js.Any*): Boolean = js.native
   def emit(event: js.Symbol, args: js.Any*): Boolean = js.native
   def getConnection(opts: TransportGetConnectionOptions): typings.atElasticElasticsearch.libConnectionMod.default | Null = js.native
-  def request(params: TransportRequestParams): TransportRequestCallback = js.native
-  def request(params: TransportRequestParams, options: TransportRequestOptions): TransportRequestCallback = js.native
+  def request(params: TransportRequestParams): js.Promise[ApiResponse[_, _]] = js.native
+  def request(params: TransportRequestParams, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
   def request(
     params: TransportRequestParams,
     options: TransportRequestOptions,
     callback: js.Function2[/* err */ Error | Null, /* result */ ApiResponse[_, _], Unit]
   ): TransportRequestCallback = js.native
   @JSName("request")
-  def request_Promise(params: TransportRequestParams): js.Promise[ApiResponse[_, _]] = js.native
+  def request_TransportRequestCallback(params: TransportRequestParams): TransportRequestCallback = js.native
   @JSName("request")
-  def request_Promise(params: TransportRequestParams, options: TransportRequestOptions): js.Promise[ApiResponse[_, _]] = js.native
+  def request_TransportRequestCallback(params: TransportRequestParams, options: TransportRequestOptions): TransportRequestCallback = js.native
   def sniff(): Unit = js.native
   def sniff(opts: TransportSniffOptions): Unit = js.native
   def sniff(opts: TransportSniffOptions, callback: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native

@@ -10,9 +10,9 @@ GraphQL IDE for better development workflows (GraphQL Subscriptions, interactive
 | ------------------ | :-------------: |
 | Full name          | graphql-playground-middleware-express |
 | Keywords           | graphql, graphiql, playground, graphcool |
-| # releases         | 74 |
-| # dependents       | 42 |
-| # downloads        | 3969529 |
+| # releases         | 33 |
+| # dependents       | 63 |
+| # downloads        | 11967494 |
 | # stars            | 0 |
 
 ## Links

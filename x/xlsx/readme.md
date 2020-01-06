@@ -10,10 +10,10 @@ SheetJS Spreadsheet data parser and writer
 | ------------------ | :-------------: |
 | Full name          | xlsx |
 | Keywords           | excel, xls, xlsx, xlsb, xlsm, ods, csv, dbf, dif, sylk, office, spreadsheet |
-| # releases         | 55 |
-| # dependents       | 658 |
-| # downloads        | 11106585 |
-| # stars            | 164 |
+| # releases         | 36 |
+| # dependents       | 910 |
+| # downloads        | 17102902 |
+| # stars            | 165 |
 
 ## Links
 - [Homepage](http://sheetjs.com/opensource)

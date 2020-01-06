@@ -11,8 +11,8 @@ Isomorphic function returning a deferred promise. Uses native `Promise.defer` if
 | Full name          | defer-promise |
 | Keywords           | defer, promise, es6, native, deferred |
 | # releases         | 4 |
-| # dependents       | 9 |
-| # downloads        | 782439 |
+| # dependents       | 11 |
+| # downloads        | 982777 |
 | # stars            | 1 |
 
 ## Links

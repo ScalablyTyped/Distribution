@@ -20,6 +20,12 @@ trait Wizard extends js.Object {
   def next(nextHandler: js.Function0[Boolean]): Unit = js.native
   def previous(): Unit = js.native
   def reset(): Unit = js.native
+  /** Set the edit mode of the wizard.
+    * Setting editMode to `true` will make ALL steps accessible,
+    * setting edit mode to `false` will make all steps with an index lower than
+    * the latest "completed" step accessible.
+    */
+  def setEditMode(editMode: Boolean): Unit = js.native
   def totalStepCount(): Double = js.native
 }
 

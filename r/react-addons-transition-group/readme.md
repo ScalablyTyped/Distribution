@@ -10,9 +10,9 @@ The code in this package has moved. We recommend you to use `TransitionGroup` fr
 | ------------------ | :-------------: |
 | Full name          | react-addons-transition-group |
 | Keywords           | react, react-addon |
-| # releases         | 11 |
-| # dependents       | 166 |
-| # downloads        | 4026291 |
+| # releases         | 1 |
+| # dependents       | 181 |
+| # downloads        | 3339442 |
 | # stars            | 4 |
 
 ## Links

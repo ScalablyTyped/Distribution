@@ -10,9 +10,9 @@ Parse and stringify file paths with line and column like `unicorn.js:8:14`
 | ------------------ | :-------------: |
 | Full name          | line-column-path |
 | Keywords           | file, filepath, line, column, path, editor, position, parse, stringify, parsing, decode, encode, format |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 4 |
-| # downloads        | 444323 |
+| # downloads        | 786147 |
 | # stars            | 0 |
 
 ## Links

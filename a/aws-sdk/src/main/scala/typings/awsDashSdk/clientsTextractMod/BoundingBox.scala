@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BoundingBox extends js.Object {
   /**
     * The height of the bounding box as a ratio of the overall document page height.
     */
-  var Height: js.UndefOr[Float] = js.undefined
+  var Height: js.UndefOr[Float] = js.native
   /**
     * The left coordinate of the bounding box as a ratio of overall document page width.
     */
-  var Left: js.UndefOr[Float] = js.undefined
+  var Left: js.UndefOr[Float] = js.native
   /**
     * The top coordinate of the bounding box as a ratio of overall document page height.
     */
-  var Top: js.UndefOr[Float] = js.undefined
+  var Top: js.UndefOr[Float] = js.native
   /**
     * The width of the bounding box as a ratio of the overall document page width.
     */
-  var Width: js.UndefOr[Float] = js.undefined
+  var Width: js.UndefOr[Float] = js.native
 }
 
 object BoundingBox {

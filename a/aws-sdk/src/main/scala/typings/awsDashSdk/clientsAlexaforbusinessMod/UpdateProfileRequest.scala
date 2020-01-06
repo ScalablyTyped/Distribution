@@ -4,55 +4,60 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UpdateProfileRequest extends js.Object {
   /**
     * The updated address for the room profile.
     */
-  var Address: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.Address] = js.undefined
+  var Address: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.Address] = js.native
   /**
     * The updated distance unit for the room profile.
     */
-  var DistanceUnit: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.DistanceUnit] = js.undefined
+  var DistanceUnit: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.DistanceUnit] = js.native
   /**
     * Sets the profile as default if selected. If this is missing, no update is done to the default status.
     */
-  var IsDefault: js.UndefOr[Boolean] = js.undefined
+  var IsDefault: js.UndefOr[Boolean] = js.native
   /**
-    * The updated locale for the room profile.
+    * The updated locale for the room profile. (This is currently only available to a limited preview audience.)
     */
-  var Locale: js.UndefOr[DeviceLocale] = js.undefined
+  var Locale: js.UndefOr[DeviceLocale] = js.native
   /**
     * The updated maximum volume limit for the room profile.
     */
-  var MaxVolumeLimit: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.MaxVolumeLimit] = js.undefined
+  var MaxVolumeLimit: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.MaxVolumeLimit] = js.native
+  /**
+    * The updated meeting room settings of a room profile.
+    */
+  var MeetingRoomConfiguration: js.UndefOr[UpdateMeetingRoomConfiguration] = js.native
   /**
     * Whether the PSTN setting of the room profile is enabled.
     */
-  var PSTNEnabled: js.UndefOr[Boolean] = js.undefined
+  var PSTNEnabled: js.UndefOr[Boolean] = js.native
   /**
     * The ARN of the room profile to update. Required.
     */
-  var ProfileArn: js.UndefOr[Arn] = js.undefined
+  var ProfileArn: js.UndefOr[Arn] = js.native
   /**
     * The updated name for the room profile.
     */
-  var ProfileName: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.ProfileName] = js.undefined
+  var ProfileName: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.ProfileName] = js.native
   /**
     * Whether the setup mode of the profile is enabled.
     */
-  var SetupModeDisabled: js.UndefOr[Boolean] = js.undefined
+  var SetupModeDisabled: js.UndefOr[Boolean] = js.native
   /**
     * The updated temperature unit for the room profile.
     */
-  var TemperatureUnit: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.TemperatureUnit] = js.undefined
+  var TemperatureUnit: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.TemperatureUnit] = js.native
   /**
     * The updated timezone for the room profile.
     */
-  var Timezone: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.Timezone] = js.undefined
+  var Timezone: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.Timezone] = js.native
   /**
     * The updated wake word for the room profile.
     */
-  var WakeWord: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.WakeWord] = js.undefined
+  var WakeWord: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.WakeWord] = js.native
 }
 
 object UpdateProfileRequest {
@@ -63,6 +68,7 @@ object UpdateProfileRequest {
     IsDefault: js.UndefOr[scala.Boolean] = js.undefined,
     Locale: DeviceLocale = null,
     MaxVolumeLimit: Int | Double = null,
+    MeetingRoomConfiguration: UpdateMeetingRoomConfiguration = null,
     PSTNEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     ProfileArn: Arn = null,
     ProfileName: ProfileName = null,
@@ -72,17 +78,18 @@ object UpdateProfileRequest {
     WakeWord: WakeWord = null
   ): UpdateProfileRequest = {
     val __obj = js.Dynamic.literal()
-    if (Address != null) __obj.updateDynamic("Address")(Address)
+    if (Address != null) __obj.updateDynamic("Address")(Address.asInstanceOf[js.Any])
     if (DistanceUnit != null) __obj.updateDynamic("DistanceUnit")(DistanceUnit.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsDefault)) __obj.updateDynamic("IsDefault")(IsDefault)
-    if (Locale != null) __obj.updateDynamic("Locale")(Locale)
+    if (!js.isUndefined(IsDefault)) __obj.updateDynamic("IsDefault")(IsDefault.asInstanceOf[js.Any])
+    if (Locale != null) __obj.updateDynamic("Locale")(Locale.asInstanceOf[js.Any])
     if (MaxVolumeLimit != null) __obj.updateDynamic("MaxVolumeLimit")(MaxVolumeLimit.asInstanceOf[js.Any])
-    if (!js.isUndefined(PSTNEnabled)) __obj.updateDynamic("PSTNEnabled")(PSTNEnabled)
-    if (ProfileArn != null) __obj.updateDynamic("ProfileArn")(ProfileArn)
-    if (ProfileName != null) __obj.updateDynamic("ProfileName")(ProfileName)
-    if (!js.isUndefined(SetupModeDisabled)) __obj.updateDynamic("SetupModeDisabled")(SetupModeDisabled)
+    if (MeetingRoomConfiguration != null) __obj.updateDynamic("MeetingRoomConfiguration")(MeetingRoomConfiguration.asInstanceOf[js.Any])
+    if (!js.isUndefined(PSTNEnabled)) __obj.updateDynamic("PSTNEnabled")(PSTNEnabled.asInstanceOf[js.Any])
+    if (ProfileArn != null) __obj.updateDynamic("ProfileArn")(ProfileArn.asInstanceOf[js.Any])
+    if (ProfileName != null) __obj.updateDynamic("ProfileName")(ProfileName.asInstanceOf[js.Any])
+    if (!js.isUndefined(SetupModeDisabled)) __obj.updateDynamic("SetupModeDisabled")(SetupModeDisabled.asInstanceOf[js.Any])
     if (TemperatureUnit != null) __obj.updateDynamic("TemperatureUnit")(TemperatureUnit.asInstanceOf[js.Any])
-    if (Timezone != null) __obj.updateDynamic("Timezone")(Timezone)
+    if (Timezone != null) __obj.updateDynamic("Timezone")(Timezone.asInstanceOf[js.Any])
     if (WakeWord != null) __obj.updateDynamic("WakeWord")(WakeWord.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateProfileRequest]
   }

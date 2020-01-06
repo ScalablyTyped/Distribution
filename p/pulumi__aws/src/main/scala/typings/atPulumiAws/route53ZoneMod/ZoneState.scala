@@ -7,40 +7,41 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ZoneState extends js.Object {
   /**
     * A comment for the hosted zone. Defaults to 'Managed by Pulumi'.
     */
-  val comment: js.UndefOr[Input[String]] = js.undefined
+  val comment: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of the reusable delegation set whose NS records you want to assign to the hosted zone. Conflicts with `vpc` as delegation sets can only be used for public zones.
     */
-  val delegationSetId: js.UndefOr[Input[String]] = js.undefined
+  val delegationSetId: js.UndefOr[Input[String]] = js.native
   /**
     * Whether to destroy all records (possibly managed outside of this provider) in the zone when destroying the zone.
     */
-  val forceDestroy: js.UndefOr[Input[Boolean]] = js.undefined
+  val forceDestroy: js.UndefOr[Input[Boolean]] = js.native
   /**
     * This is the name of the hosted zone.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * A list of name servers in associated (or default) delegation set.
     * Find more about delegation sets in [AWS docs](https://docs.aws.amazon.com/Route53/latest/APIReference/actions-on-reusable-delegation-sets.html).
     */
-  val nameServers: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val nameServers: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * A mapping of tags to assign to the zone.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * Configuration block(s) specifying VPC(s) to associate with a private hosted zone. Conflicts with the `delegationSetId` argument in this resource and any [`aws.route53.ZoneAssociation` resource](https://www.terraform.io/docs/providers/aws/r/route53_zone_association.html) specifying the same zone ID. Detailed below.
     */
-  val vpcs: js.UndefOr[Input[js.Array[Input[ZoneVpc]]]] = js.undefined
+  val vpcs: js.UndefOr[Input[js.Array[Input[ZoneVpc]]]] = js.native
   /**
     * The Hosted Zone ID. This can be referenced by zone records.
     */
-  val zoneId: js.UndefOr[Input[String]] = js.undefined
+  val zoneId: js.UndefOr[Input[String]] = js.native
 }
 
 object ZoneState {

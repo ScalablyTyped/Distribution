@@ -10,9 +10,9 @@ Test utility
 | ------------------ | :-------------: |
 | Full name          | lab |
 | Keywords           | test |
-| # releases         | 47 |
-| # dependents       | 47 |
-| # downloads        | 1143385 |
+| # releases         | 29 |
+| # dependents       | 48 |
+| # downloads        | 995872 |
 | # stars            | 46 |
 
 ## Links

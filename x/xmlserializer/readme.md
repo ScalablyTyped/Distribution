@@ -11,8 +11,8 @@ Serializes a document to XML/XHTML
 | Full name          | xmlserializer |
 | Keywords           | html, html5, xhtml, xml, serializer, XMLSerializer |
 | # releases         | 2 |
-| # dependents       | 19 |
-| # downloads        | 299296 |
+| # dependents       | 25 |
+| # downloads        | 606281 |
 | # stars            | 1 |
 
 ## Links

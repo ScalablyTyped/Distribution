@@ -11,8 +11,8 @@ Convert a number in milliseconds to a standard duration string.
 | Full name          | format-duration |
 | Keywords           | display, duration, format, hh:mm:ss, hours, milliseconds, mm:ss, seconds, time |
 | # releases         | 6 |
-| # dependents       | 10 |
-| # downloads        | 25725 |
+| # dependents       | 12 |
+| # downloads        | 31328 |
 | # stars            | 1 |
 
 ## Links

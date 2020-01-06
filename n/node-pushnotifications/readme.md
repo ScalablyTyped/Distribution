@@ -10,9 +10,9 @@ A cross-platform push service for node.js
 | ------------------ | :-------------: |
 | Full name          | node-pushnotifications |
 | Keywords           | notifications, push, push notifications, apple, ios, iphone, ipad, apns, google, android, gcm, fcm, amazon, kindle, adm, microsoft, windows, wphone, windows phone, wns, mpns, webpush |
-| # releases         | 15 |
-| # dependents       | 3 |
-| # downloads        | 141134 |
+| # releases         | 19 |
+| # dependents       | 9 |
+| # downloads        | 183802 |
 | # stars            | 14 |
 
 ## Links

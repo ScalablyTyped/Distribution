@@ -11,8 +11,8 @@ The lodash method `_.isString` exported as a module.
 | Full name          | lodash.isstring |
 | Keywords           | lodash-modularized, isstring |
 | # releases         | 0 |
-| # dependents       | 427 |
-| # downloads        | 81403478 |
+| # dependents       | 496 |
+| # downloads        | 129392557 |
 | # stars            | 0 |
 
 ## Links

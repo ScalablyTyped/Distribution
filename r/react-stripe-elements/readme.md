@@ -10,9 +10,9 @@ React components for Stripe.js and Stripe Elements
 | ------------------ | :-------------: |
 | Full name          | react-stripe-elements |
 | Keywords           | - |
-| # releases         | 26 |
-| # dependents       | 33 |
-| # downloads        | 4203780 |
+| # releases         | 22 |
+| # dependents       | 91 |
+| # downloads        | 9230069 |
 | # stars            | 2 |
 
 ## Links

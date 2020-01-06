@@ -11,8 +11,8 @@ Check whether a string is a URL.
 | Full name          | is-url |
 | Keywords           | - |
 | # releases         | 3 |
-| # dependents       | 411 |
-| # downloads        | 40481719 |
+| # dependents       | 498 |
+| # downloads        | 53825309 |
 | # stars            | 8 |
 
 ## Links

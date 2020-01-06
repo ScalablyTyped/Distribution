@@ -10,10 +10,10 @@ An AST-based pattern checker for JavaScript.
 | ------------------ | :-------------: |
 | Full name          | eslint |
 | Keywords           | ast, lint, javascript, ecmascript, espree |
-| # releases         | 65 |
-| # dependents       | 6705 |
-| # downloads        | 244431547 |
-| # stars            | 326 |
+| # releases         | 58 |
+| # dependents       | 8612 |
+| # downloads        | 369862844 |
+| # stars            | 329 |
 
 ## Links
 - [Homepage](https://eslint.org)

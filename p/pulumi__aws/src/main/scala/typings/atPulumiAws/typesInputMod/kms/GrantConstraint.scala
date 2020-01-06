@@ -6,9 +6,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GrantConstraint extends js.Object {
-  var encryptionContextEquals: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
-  var encryptionContextSubset: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
+  var encryptionContextEquals: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+  var encryptionContextSubset: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object GrantConstraint {

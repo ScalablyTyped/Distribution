@@ -10,9 +10,9 @@ lottie animation view for React
 | ------------------ | :-------------: |
 | Full name          | react-lottie |
 | Keywords           | - |
-| # releases         | 15 |
-| # dependents       | 6 |
-| # downloads        | 841164 |
+| # releases         | 5 |
+| # dependents       | 25 |
+| # downloads        | 2212158 |
 | # stars            | 0 |
 
 ## Links

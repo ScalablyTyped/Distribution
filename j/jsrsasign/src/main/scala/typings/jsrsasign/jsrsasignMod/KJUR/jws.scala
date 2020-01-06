@@ -1,7 +1,7 @@
 package typings.jsrsasign.jsrsasignMod.KJUR
 
 import typings.jsrsasign.Anon_AlgAud
-import typings.jsrsasign.Anon_AlgString_323429936
+import typings.jsrsasign.Anon_AlgString_2026625850
 import typings.jsrsasign.Anon_B64
 import typings.jsrsasign.Anon_HeaderObj
 import typings.jsrsasign.Anon_Hex
@@ -346,14 +346,14 @@ object jws extends js.Object {
       * // header and payload can be passed by both string and object
       * sJWS = KJUR.jws.JWS.sign(null, '{alg:"HS256",cty:"JWT"}', '{age:21}', "aaa");
       */
-    def sign(alg: String, spHead: Anon_AlgString_323429936, spPayload: String): String = js.native
-    def sign(alg: String, spHead: Anon_AlgString_323429936, spPayload: String, pass: String): String = js.native
-    def sign(alg: String, spHead: Anon_AlgString_323429936, spPayload: js.Object): String = js.native
-    def sign(alg: String, spHead: Anon_AlgString_323429936, spPayload: js.Object, pass: String): String = js.native
-    def sign(alg: Null, spHead: Anon_AlgString_323429936, spPayload: String): String = js.native
-    def sign(alg: Null, spHead: Anon_AlgString_323429936, spPayload: String, pass: String): String = js.native
-    def sign(alg: Null, spHead: Anon_AlgString_323429936, spPayload: js.Object): String = js.native
-    def sign(alg: Null, spHead: Anon_AlgString_323429936, spPayload: js.Object, pass: String): String = js.native
+    def sign(alg: String, spHead: Anon_AlgString_2026625850, spPayload: String): String = js.native
+    def sign(alg: String, spHead: Anon_AlgString_2026625850, spPayload: String, pass: String): String = js.native
+    def sign(alg: String, spHead: Anon_AlgString_2026625850, spPayload: js.Object): String = js.native
+    def sign(alg: String, spHead: Anon_AlgString_2026625850, spPayload: js.Object, pass: String): String = js.native
+    def sign(alg: Null, spHead: Anon_AlgString_2026625850, spPayload: String): String = js.native
+    def sign(alg: Null, spHead: Anon_AlgString_2026625850, spPayload: String, pass: String): String = js.native
+    def sign(alg: Null, spHead: Anon_AlgString_2026625850, spPayload: js.Object): String = js.native
+    def sign(alg: Null, spHead: Anon_AlgString_2026625850, spPayload: js.Object, pass: String): String = js.native
     /**
       * verify JWS signature by specified key or certificate
       * @param sJWS string of JWS signature to verify

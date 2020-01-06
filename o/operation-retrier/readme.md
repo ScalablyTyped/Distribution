@@ -3,18 +3,22 @@
 
 Typings are for version 3.0.1
 
-
+## Library description:
+RTD retrier
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | operation-retrier |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 9 |
 | # dependents       | 6 |
-| # downloads        | 310730 |
+| # downloads        | 702156 |
 | # stars            | 0 |
 
 ## Links
+- [Homepage](https://github.com/twilio/operation-retrier.ts#readme)
+- [Bugs](https://github.com/twilio/operation-retrier.ts/issues)
+- [Repository](https://github.com/twilio/operation-retrier.ts)
 - [Npm](https://www.npmjs.com/package/operation-retrier)
     
 

@@ -10,9 +10,9 @@ The easiest way to configure your development environment with your GraphQL sche
 | ------------------ | :-------------: |
 | Full name          | graphql-config |
 | Keywords           | graphql, config, relay, apollo |
-| # releases         | 40 |
-| # dependents       | 49 |
-| # downloads        | 13832363 |
+| # releases         | 32 |
+| # dependents       | 63 |
+| # downloads        | 27985244 |
 | # stars            | 0 |
 
 ## Links

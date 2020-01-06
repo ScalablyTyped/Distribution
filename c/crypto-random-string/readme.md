@@ -10,9 +10,9 @@ Generate a cryptographically strong random string
 | ------------------ | :-------------: |
 | Full name          | crypto-random-string |
 | Keywords           | random, string, text, id, identifier, slug, salt, crypto, strong, secure, hex |
-| # releases         | 0 |
-| # dependents       | 74 |
-| # downloads        | 121539292 |
+| # releases         | 4 |
+| # dependents       | 99 |
+| # downloads        | 209939641 |
 | # stars            | 6 |
 
 ## Links

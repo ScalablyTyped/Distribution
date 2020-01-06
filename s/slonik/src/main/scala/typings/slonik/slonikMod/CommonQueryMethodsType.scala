@@ -25,43 +25,43 @@ trait CommonQueryMethodsType extends js.Object {
   @JSName("query")
   var query_Original: QueryFunctionType = js.native
   def any[T](
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type QueryMethodParams<T> is not an array type */ args: QueryMethodParams[T]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type QueryMethodParams<T> is not an array type */ args: QueryMethodParams[T]
   ): js.Promise[js.Array[T]] = js.native
   def anyFirst[T](
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type QueryMethodParams<T> is not an array type */ args: QueryMethodParams[T]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type QueryMethodParams<T> is not an array type */ args: QueryMethodParams[T]
   ): js.Promise[
     js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
     ]
   ] = js.native
   def many[T](
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type QueryMethodParams<T> is not an array type */ args: QueryMethodParams[T]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type QueryMethodParams<T> is not an array type */ args: QueryMethodParams[T]
   ): js.Promise[js.Array[T]] = js.native
   def manyFirst[T](
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type QueryMethodParams<T> is not an array type */ args: QueryMethodParams[T]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type QueryMethodParams<T> is not an array type */ args: QueryMethodParams[T]
   ): js.Promise[
     js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
     ]
   ] = js.native
   def maybeOne[T](
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type QueryMethodParams<T> is not an array type */ args: QueryMethodParams[T]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type QueryMethodParams<T> is not an array type */ args: QueryMethodParams[T]
   ): js.Promise[T | Null] = js.native
   def maybeOneFirst[T](
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type QueryMethodParams<T> is not an array type */ args: QueryMethodParams[T]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type QueryMethodParams<T> is not an array type */ args: QueryMethodParams[T]
   ): js.Promise[
     (/* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any) | Null
   ] = js.native
   def one[T](
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type QueryMethodParams<T> is not an array type */ args: QueryMethodParams[T]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type QueryMethodParams<T> is not an array type */ args: QueryMethodParams[T]
   ): js.Promise[T] = js.native
   def oneFirst[T](
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type QueryMethodParams<T> is not an array type */ args: QueryMethodParams[T]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type QueryMethodParams<T> is not an array type */ args: QueryMethodParams[T]
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
   ] = js.native
   def query[T](
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type QueryMethodParams<T> is not an array type */ args: QueryMethodParams[T]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type QueryMethodParams<T> is not an array type */ args: QueryMethodParams[T]
   ): js.Promise[QueryResultType[T]] = js.native
 }
 

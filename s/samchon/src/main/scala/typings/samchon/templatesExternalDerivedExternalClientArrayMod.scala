@@ -116,6 +116,8 @@ object templatesExternalDerivedExternalClientArrayMod extends js.Object {
       * @param items Items to insert.
       * @return Number of elements in the container after insertion.
       */
+    /* CompleteClass */
+    /* InferMemberOverrides */
     /* InferMemberOverrides */
     override def push(items: T*): Double = js.native
     /**
@@ -131,8 +133,6 @@ object templatesExternalDerivedExternalClientArrayMod extends js.Object {
       *
       * @return Reverse iterator to the first.
       */
-    /* CompleteClass */
-    /* InferMemberOverrides */
     /* InferMemberOverrides */
     override def rbegin(): ReverseIterator[T] = js.native
     /* InferMemberOverrides */
@@ -142,15 +142,11 @@ object templatesExternalDerivedExternalClientArrayMod extends js.Object {
       *
       * @return Reverse iterator to the end.
       */
-    /* CompleteClass */
-    /* InferMemberOverrides */
     /* InferMemberOverrides */
     override def rend(): ReverseIterator[T] = js.native
     /**
       * Number of elements in the container.
       */
-    /* CompleteClass */
-    /* InferMemberOverrides */
     /* InferMemberOverrides */
     override def size(): Double = js.native
   }

@@ -10,9 +10,9 @@ Typings are for version 0.59.1
 | ------------------ | :-------------: |
 | Full name          | @nivo/calendar |
 | Keywords           | nivo, dataviz, react, d3, charts, calendar |
-| # releases         | 43 |
-| # dependents       | 2 |
-| # downloads        | 46238 |
+| # releases         | 29 |
+| # dependents       | 3 |
+| # downloads        | 102902 |
 | # stars            | 0 |
 
 ## Links

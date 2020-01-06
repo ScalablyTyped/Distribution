@@ -8,11 +8,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MuiThemeProviderProps extends js.Object {
-  var children: ReactNode
-  var disableStylesGeneration: js.UndefOr[Boolean] = js.undefined
-  var sheetsManager: js.UndefOr[Map[StylesCreator, Map[Theme, SheetManagerTheme]]] = js.undefined
-  var theme: Theme | (js.Function1[/* outer */ Theme | Null, Theme])
+  var children: ReactNode = js.native
+  var disableStylesGeneration: js.UndefOr[Boolean] = js.native
+  var sheetsManager: js.UndefOr[Map[StylesCreator, Map[Theme, SheetManagerTheme]]] = js.native
+  var theme: Theme | (js.Function1[/* outer */ Theme | Null, Theme]) = js.native
 }
 
 object MuiThemeProviderProps {

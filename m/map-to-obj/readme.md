@@ -11,8 +11,8 @@ ES2015 Map to plain object.
 | Full name          | map-to-obj |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 126 |
+| # dependents       | 1 |
+| # downloads        | 182 |
 | # stars            | 0 |
 
 ## Links

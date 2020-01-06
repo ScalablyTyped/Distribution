@@ -9,9 +9,9 @@ Typings are for version 0.1.0-preview.1
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/chunked-blob-reader |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 5 |
 | # dependents       | 2 |
-| # downloads        | 185 |
+| # downloads        | 584 |
 | # stars            | 0 |
 
 ## Links

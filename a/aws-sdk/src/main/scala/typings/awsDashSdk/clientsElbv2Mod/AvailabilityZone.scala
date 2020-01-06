@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AvailabilityZone extends js.Object {
   /**
-    * [Network Load Balancers] If you need static IP addresses for your load balancer, you can specify one Elastic IP address per Availability Zone when you create the load balancer.
+    * [Network Load Balancers] If you need static IP addresses for your load balancer, you can specify one Elastic IP address per Availability Zone when you create an internal-facing load balancer. For internal load balancers, you can specify a private IP address from the IPv4 range of the subnet.
     */
-  var LoadBalancerAddresses: js.UndefOr[typings.awsDashSdk.clientsElbv2Mod.LoadBalancerAddresses] = js.undefined
+  var LoadBalancerAddresses: js.UndefOr[typings.awsDashSdk.clientsElbv2Mod.LoadBalancerAddresses] = js.native
   /**
     * The ID of the subnet. You can specify one subnet per Availability Zone.
     */
-  var SubnetId: js.UndefOr[typings.awsDashSdk.clientsElbv2Mod.SubnetId] = js.undefined
+  var SubnetId: js.UndefOr[typings.awsDashSdk.clientsElbv2Mod.SubnetId] = js.native
   /**
     * The name of the Availability Zone.
     */
-  var ZoneName: js.UndefOr[typings.awsDashSdk.clientsElbv2Mod.ZoneName] = js.undefined
+  var ZoneName: js.UndefOr[typings.awsDashSdk.clientsElbv2Mod.ZoneName] = js.native
 }
 
 object AvailabilityZone {
@@ -27,9 +28,9 @@ object AvailabilityZone {
     ZoneName: ZoneName = null
   ): AvailabilityZone = {
     val __obj = js.Dynamic.literal()
-    if (LoadBalancerAddresses != null) __obj.updateDynamic("LoadBalancerAddresses")(LoadBalancerAddresses)
-    if (SubnetId != null) __obj.updateDynamic("SubnetId")(SubnetId)
-    if (ZoneName != null) __obj.updateDynamic("ZoneName")(ZoneName)
+    if (LoadBalancerAddresses != null) __obj.updateDynamic("LoadBalancerAddresses")(LoadBalancerAddresses.asInstanceOf[js.Any])
+    if (SubnetId != null) __obj.updateDynamic("SubnetId")(SubnetId.asInstanceOf[js.Any])
+    if (ZoneName != null) __obj.updateDynamic("ZoneName")(ZoneName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AvailabilityZone]
   }
 }

@@ -54,19 +54,19 @@ package object clientsAutoscalingMod {
   type LifecycleHookSpecifications = js.Array[LifecycleHookSpecification]
   type LifecycleHooks = js.Array[LifecycleHook]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Pending
-    - typings.awsDashSdk.awsDashSdkStrings.`Pending:Wait`
-    - typings.awsDashSdk.awsDashSdkStrings.`Pending:Proceed`
+    - typings.awsDashSdk.awsDashSdkStrings.Pending_
+    - typings.awsDashSdk.awsDashSdkStrings.PendingColonWait
+    - typings.awsDashSdk.awsDashSdkStrings.PendingColonProceed
     - typings.awsDashSdk.awsDashSdkStrings.Quarantined
     - typings.awsDashSdk.awsDashSdkStrings.InService
-    - typings.awsDashSdk.awsDashSdkStrings.Terminating
-    - typings.awsDashSdk.awsDashSdkStrings.`Terminating:Wait`
-    - typings.awsDashSdk.awsDashSdkStrings.`Terminating:Proceed`
-    - typings.awsDashSdk.awsDashSdkStrings.Terminated
-    - typings.awsDashSdk.awsDashSdkStrings.Detaching
-    - typings.awsDashSdk.awsDashSdkStrings.Detached
+    - typings.awsDashSdk.awsDashSdkStrings.Terminating_
+    - typings.awsDashSdk.awsDashSdkStrings.TerminatingColonWait
+    - typings.awsDashSdk.awsDashSdkStrings.TerminatingColonProceed
+    - typings.awsDashSdk.awsDashSdkStrings.Terminated_
+    - typings.awsDashSdk.awsDashSdkStrings.Detaching_
+    - typings.awsDashSdk.awsDashSdkStrings.Detached_
     - typings.awsDashSdk.awsDashSdkStrings.EnteringStandby
-    - typings.awsDashSdk.awsDashSdkStrings.Standby
+    - typings.awsDashSdk.awsDashSdkStrings.Standby_
     - java.lang.String
   */
   type LifecycleState = _LifecycleState | String
@@ -74,6 +74,7 @@ package object clientsAutoscalingMod {
   type LoadBalancerNames = js.Array[XmlStringMaxLen255]
   type LoadBalancerStates = js.Array[LoadBalancerState]
   type LoadBalancerTargetGroupStates = js.Array[LoadBalancerTargetGroupState]
+  type MaxInstanceLifetime = Double
   type MaxNumberOfAutoScalingGroups = Double
   type MaxNumberOfLaunchConfigurations = Double
   type MaxRecords = Double
@@ -86,11 +87,11 @@ package object clientsAutoscalingMod {
   type MetricNamespace = String
   type MetricScale = Double
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Average
-    - typings.awsDashSdk.awsDashSdkStrings.Minimum
-    - typings.awsDashSdk.awsDashSdkStrings.Maximum
+    - typings.awsDashSdk.awsDashSdkStrings.Average_
+    - typings.awsDashSdk.awsDashSdkStrings.Minimum_
+    - typings.awsDashSdk.awsDashSdkStrings.Maximum_
     - typings.awsDashSdk.awsDashSdkStrings.SampleCount
-    - typings.awsDashSdk.awsDashSdkStrings.Sum
+    - typings.awsDashSdk.awsDashSdkStrings.Sum_
     - java.lang.String
   */
   type MetricStatistic = _MetricStatistic | String
@@ -131,13 +132,13 @@ package object clientsAutoscalingMod {
     - typings.awsDashSdk.awsDashSdkStrings.WaitingForSpotInstanceId
     - typings.awsDashSdk.awsDashSdkStrings.WaitingForInstanceId
     - typings.awsDashSdk.awsDashSdkStrings.PreInService
-    - typings.awsDashSdk.awsDashSdkStrings.InProgress
+    - typings.awsDashSdk.awsDashSdkStrings.InProgress_
     - typings.awsDashSdk.awsDashSdkStrings.WaitingForELBConnectionDraining
     - typings.awsDashSdk.awsDashSdkStrings.MidLifecycleAction
     - typings.awsDashSdk.awsDashSdkStrings.WaitingForInstanceWarmup
-    - typings.awsDashSdk.awsDashSdkStrings.Successful
-    - typings.awsDashSdk.awsDashSdkStrings.Failed
-    - typings.awsDashSdk.awsDashSdkStrings.Cancelled
+    - typings.awsDashSdk.awsDashSdkStrings.Successful_
+    - typings.awsDashSdk.awsDashSdkStrings.Failed_
+    - typings.awsDashSdk.awsDashSdkStrings.Cancelled_
     - java.lang.String
   */
   type ScalingActivityStatusCode = _ScalingActivityStatusCode | String
@@ -172,7 +173,7 @@ package object clientsAutoscalingMod {
   type XmlStringUserData = String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2011-01-01`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

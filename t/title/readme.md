@@ -11,8 +11,8 @@ Capitalize your titles properly
 | Full name          | title |
 | Keywords           | title, capitalize, chicago, manual, of, style |
 | # releases         | 11 |
-| # dependents       | 6 |
-| # downloads        | 128768 |
+| # dependents       | 10 |
+| # downloads        | 339556 |
 | # stars            | 1 |
 
 ## Links

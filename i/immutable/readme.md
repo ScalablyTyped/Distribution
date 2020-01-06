@@ -10,9 +10,9 @@ Immutable Data Collections
 | ------------------ | :-------------: |
 | Full name          | immutable |
 | Keywords           | immutable, persistent, lazy, data, datastructure, functional, collection, stateless, sequence, iteration |
-| # releases         | 12 |
-| # dependents       | 3644 |
-| # downloads        | 84817942 |
+| # releases         | 4 |
+| # dependents       | 4161 |
+| # downloads        | 121118803 |
 | # stars            | 136 |
 
 ## Links

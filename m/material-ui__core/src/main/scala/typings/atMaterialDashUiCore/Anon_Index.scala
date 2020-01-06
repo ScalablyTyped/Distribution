@@ -4,8 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Anon_Index extends js.Object {
-  var index: Double
+  var index: Double = js.native
 }
 
 object Anon_Index {

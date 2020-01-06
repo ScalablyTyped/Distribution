@@ -12,7 +12,7 @@ Typings are for version 2.3.16
 | Keywords           | - |
 | # releases         | 116 |
 | # dependents       | 33 |
-| # downloads        | 477849 |
+| # downloads        | 472336 |
 | # stars            | 1 |
 
 ## Links

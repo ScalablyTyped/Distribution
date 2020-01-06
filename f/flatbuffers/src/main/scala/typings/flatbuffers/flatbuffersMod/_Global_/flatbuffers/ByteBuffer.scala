@@ -49,7 +49,7 @@ class ByteBuffer protected () extends js.Object {
   def capacity(): Double = js.native
   def clear(): Unit = js.native
   /**
-    * Conveniance function for creating Long objects.
+    * Convenience function for creating Long objects.
     */
   def createLong(low: Double, high: Double): Long = js.native
   def getBufferIdentifier(): String = js.native

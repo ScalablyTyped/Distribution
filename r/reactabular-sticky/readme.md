@@ -12,7 +12,7 @@ Sticky header and body for Reactabular
 | Keywords           | react, reactjs, table, tables, reactabular |
 | # releases         | 3 |
 | # dependents       | 2 |
-| # downloads        | 85273 |
+| # downloads        | 89349 |
 | # stars            | 0 |
 
 ## Links

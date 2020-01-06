@@ -10,9 +10,9 @@ Slider/Carousel powered by React Motion.
 | ------------------ | :-------------: |
 | Full name          | react-motion-slider |
 | Keywords           | react, component, slider, carousel |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 5345 |
+| # downloads        | 6083 |
 | # stars            | 0 |
 
 ## Links

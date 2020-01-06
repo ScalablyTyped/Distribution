@@ -10,9 +10,9 @@ Scalable interactive table component
 | ------------------ | :-------------: |
 | Full name          | @blueprintjs/table |
 | Keywords           | palantir, blueprint, table, cell, spreadsheet |
-| # releases         | 47 |
-| # dependents       | 22 |
-| # downloads        | 516122 |
+| # releases         | 30 |
+| # dependents       | 26 |
+| # downloads        | 561728 |
 | # stars            | 0 |
 
 ## Links

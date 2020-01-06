@@ -10,9 +10,9 @@ A stateful ui library
 | ------------------ | :-------------: |
 | Full name          | f1 |
 | Keywords           | state,stateful,ui,ease,tween |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 8022 |
+| # downloads        | 5788 |
 | # stars            | 1 |
 
 ## Links

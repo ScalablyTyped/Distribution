@@ -10,9 +10,9 @@ Capture a React Native view to an image
 | ------------------ | :-------------: |
 | Full name          | react-native-view-shot |
 | Keywords           | react-native, screenshot, viewshot, view-snapshot, snapshot, rasterize |
-| # releases         | 12 |
-| # dependents       | 14 |
-| # downloads        | 1695409 |
+| # releases         | 8 |
+| # dependents       | 17 |
+| # downloads        | 2671688 |
 | # stars            | 1 |
 
 ## Links

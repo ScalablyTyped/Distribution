@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ListResolverEndpointsResponse extends js.Object {
   /**
     * The value that you specified for MaxResults in the request.
     */
-  var MaxResults: js.UndefOr[typings.awsDashSdk.clientsRoute53resolverMod.MaxResults] = js.undefined
+  var MaxResults: js.UndefOr[typings.awsDashSdk.clientsRoute53resolverMod.MaxResults] = js.native
   /**
     * If more than MaxResults IP addresses match the specified criteria, you can submit another ListResolverEndpoint request to get the next group of results. In the next request, specify the value of NextToken from the previous response. 
     */
-  var NextToken: js.UndefOr[typings.awsDashSdk.clientsRoute53resolverMod.NextToken] = js.undefined
+  var NextToken: js.UndefOr[typings.awsDashSdk.clientsRoute53resolverMod.NextToken] = js.native
   /**
     * The resolver endpoints that were created by using the current AWS account, and that match the specified filters, if any.
     */
-  var ResolverEndpoints: js.UndefOr[typings.awsDashSdk.clientsRoute53resolverMod.ResolverEndpoints] = js.undefined
+  var ResolverEndpoints: js.UndefOr[typings.awsDashSdk.clientsRoute53resolverMod.ResolverEndpoints] = js.native
 }
 
 object ListResolverEndpointsResponse {
@@ -28,8 +29,8 @@ object ListResolverEndpointsResponse {
   ): ListResolverEndpointsResponse = {
     val __obj = js.Dynamic.literal()
     if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
-    if (ResolverEndpoints != null) __obj.updateDynamic("ResolverEndpoints")(ResolverEndpoints)
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
+    if (ResolverEndpoints != null) __obj.updateDynamic("ResolverEndpoints")(ResolverEndpoints.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListResolverEndpointsResponse]
   }
 }

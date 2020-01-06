@@ -10,9 +10,9 @@ Resize an image.
 | ------------------ | :-------------: |
 | Full name          | @jimp/plugin-resize |
 | Keywords           | - |
-| # releases         | 17 |
-| # dependents       | 2 |
-| # downloads        | 7454862 |
+| # releases         | 70 |
+| # dependents       | 3 |
+| # downloads        | 14034284 |
 | # stars            | 0 |
 
 ## Links

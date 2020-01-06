@@ -669,64 +669,16 @@ trait Chainable[Subject] extends js.Object {
     */
   @JSName("$$")
   def DollarDollar[TElement](callback: js.ThisFunction1[/* this */ Document, /* $ */ this.type, Unit]): JQuery[TElement] = js.native
-  /**
-    * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
-    * @param element_elementArray _&#x40;param_ `element_elementArray`
-    * <br>
-    * * `element` — A DOM element to wrap in a jQuery object. <br>
-    * * `elementArray` — An array containing a set of DOM elements to wrap in a jQuery object.
-    * @see \`{@link https://api.jquery.com/jQuery/ }\`
-    * @since 1.0
-    * @example ​ ````Set the background color of the page to black.
-  ```javascript
-  $( document.body ).css( "background", "black" );
-  ```
-    * @example ​ ````Hide all the input elements within a form.
-  ```javascript
-  $( myForm.elements ).hide();
-  ```
-    */
-  /**
-    * jQuery library bound to the AUT
-    *
-    * @see https://on.cypress.io/$
-    * @example
-    *    cy.$$('p')
-    */
-  @JSName("$$")
-  def DollarDollar[T /* <: Element */](element_elementArray: T): JQuery[T] = js.native
   @JSName("$$")
   def DollarDollar[T /* <: Element */](element_elementArray: ArrayLike[T]): JQuery[T] = js.native
+  @JSName("$$")
+  def DollarDollar[TElement /* <: HTMLElement */](html: htmlString, ownerDocument_attributes: PlainObject[_]): JQuery[TElement] = js.native
   /**
-    * Creates DOM elements on the fly from the provided string of raw HTML.
-    * @param html _&#x40;param_ `html`
-    * <br>
-    * * `html (ownerDocument)` — A string of HTML to create on the fly. Note that this parses HTML, not XML. <br>
-    * * `html (attributes)` — A string defining a single, standalone, HTML element (e.g. &lt;div/&gt; or &lt;div&gt;&lt;/div&gt;).
-    * @param ownerDocument_attributes _&#x40;param_ `ownerDocument_attributes`
-    * <br>
-    * * `ownerDocument` — A document in which the new elements will be created. <br>
-    * * `attributes` — An object of attributes, events, and methods to call on the newly-created element.
+    * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
+    * @param object A plain object to wrap in a jQuery object.
     * @see \`{@link https://api.jquery.com/jQuery/ }\`
     * @since 1.0
-    * @since 1.4
-    * @example ​ ````Create a div element (and all of its contents) dynamically and append it to the body element. Internally, an element is created and its innerHTML property set to the given markup.
-  ```javascript
-  $( "<div><p>Hello</p></div>" ).appendTo( "body" )
-  ```
-    * @example ​ ````Create some DOM elements.
-  ```javascript
-  $( "<div/>", {
-    "class": "test",
-    text: "Click me!",
-    click: function() {
-    $( this ).toggleClass( "test" );
-    }
-  })
-    .appendTo( "body" );
-  ```
     */
-  // tslint:disable-next-line:no-unnecessary-generics
   /**
     * jQuery library bound to the AUT
     *
@@ -735,11 +687,7 @@ trait Chainable[Subject] extends js.Object {
     *    cy.$$('p')
     */
   @JSName("$$")
-  def DollarDollar[TElement /* <: HTMLElement */](html: htmlString): JQuery[TElement] = js.native
-  @JSName("$$")
-  def DollarDollar[TElement /* <: HTMLElement */](html: htmlString, ownerDocument_attributes: PlainObject[_]): JQuery[TElement] = js.native
-  @JSName("$$")
-  def DollarDollar[TElement /* <: HTMLElement */](html: htmlString, ownerDocument_attributes: Document): JQuery[TElement] = js.native
+  def DollarDollar[T /* <: PlainObject[_] */](`object`: T): JQuery[T] = js.native
   /**
     * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
     * @param selection An existing jQuery object to clone.
@@ -755,10 +703,6 @@ trait Chainable[Subject] extends js.Object {
     */
   @JSName("$$")
   def DollarDollar[T](selection: JQuery[T]): JQuery[T] = js.native
-  @JSName("$$")
-  def DollarDollar[TElement /* <: Element */](selector: Selector, context: JQuery[HTMLElement]): JQuery[TElement] = js.native
-  @JSName("$$")
-  def DollarDollar[TElement /* <: Element */](selector: Selector, context: Element): JQuery[TElement] = js.native
   /**
     * Accepts a string containing a CSS selector which is then used to match a set of elements.
     * @param selector A string containing a selector expression
@@ -805,14 +749,70 @@ trait Chainable[Subject] extends js.Object {
     *    cy.$$('p')
     */
   @JSName("$$")
-  def DollarDollar_TElement_Element[TElement /* <: Element */](selector: Selector): JQuery[TElement] = js.native
+  def DollarDollar[TElement /* <: Element */](selector: Selector): JQuery[TElement] = js.native
   @JSName("$$")
-  def DollarDollar_TElement_Element[TElement /* <: Element */](selector: Selector, context: Document): JQuery[TElement] = js.native
+  def DollarDollar[TElement /* <: Element */](selector: Selector, context: JQuery[HTMLElement]): JQuery[TElement] = js.native
+  @JSName("$$")
+  def DollarDollar[TElement /* <: Element */](selector: Selector, context: Document): JQuery[TElement] = js.native
+  @JSName("$$")
+  def DollarDollar[TElement /* <: Element */](selector: Selector, context: Element): JQuery[TElement] = js.native
   /**
-    * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
-    * @param object A plain object to wrap in a jQuery object.
+    * Creates DOM elements on the fly from the provided string of raw HTML.
+    * @param html _&#x40;param_ `html`
+    * <br>
+    * * `html (ownerDocument)` — A string of HTML to create on the fly. Note that this parses HTML, not XML. <br>
+    * * `html (attributes)` — A string defining a single, standalone, HTML element (e.g. &lt;div/&gt; or &lt;div&gt;&lt;/div&gt;).
+    * @param ownerDocument_attributes _&#x40;param_ `ownerDocument_attributes`
+    * <br>
+    * * `ownerDocument` — A document in which the new elements will be created. <br>
+    * * `attributes` — An object of attributes, events, and methods to call on the newly-created element.
     * @see \`{@link https://api.jquery.com/jQuery/ }\`
     * @since 1.0
+    * @since 1.4
+    * @example ​ ````Create a div element (and all of its contents) dynamically and append it to the body element. Internally, an element is created and its innerHTML property set to the given markup.
+  ```javascript
+  $( "<div><p>Hello</p></div>" ).appendTo( "body" )
+  ```
+    * @example ​ ````Create some DOM elements.
+  ```javascript
+  $( "<div/>", {
+    "class": "test",
+    text: "Click me!",
+    click: function() {
+    $( this ).toggleClass( "test" );
+    }
+  })
+    .appendTo( "body" );
+  ```
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  /**
+    * jQuery library bound to the AUT
+    *
+    * @see https://on.cypress.io/$
+    * @example
+    *    cy.$$('p')
+    */
+  @JSName("$$")
+  def DollarDollar_TElement_HTMLElement[TElement /* <: HTMLElement */](html: htmlString): JQuery[TElement] = js.native
+  @JSName("$$")
+  def DollarDollar_TElement_HTMLElement[TElement /* <: HTMLElement */](html: htmlString, ownerDocument_attributes: Document): JQuery[TElement] = js.native
+  /**
+    * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
+    * @param element_elementArray _&#x40;param_ `element_elementArray`
+    * <br>
+    * * `element` — A DOM element to wrap in a jQuery object. <br>
+    * * `elementArray` — An array containing a set of DOM elements to wrap in a jQuery object.
+    * @see \`{@link https://api.jquery.com/jQuery/ }\`
+    * @since 1.0
+    * @example ​ ````Set the background color of the page to black.
+  ```javascript
+  $( document.body ).css( "background", "black" );
+  ```
+    * @example ​ ````Hide all the input elements within a form.
+  ```javascript
+  $( myForm.elements ).hide();
+  ```
     */
   /**
     * jQuery library bound to the AUT
@@ -822,7 +822,7 @@ trait Chainable[Subject] extends js.Object {
     *    cy.$$('p')
     */
   @JSName("$$")
-  def DollarDollar_T_PlainObjectWildcard[T /* <: PlainObject[_] */](`object`: T): JQuery[T] = js.native
+  def DollarDollar_T_Element[T /* <: Element */](element_elementArray: T): JQuery[T] = js.native
   // fallback
   /**
     * Create an assertion. Assertions are automatically retried until they pass or time out.
@@ -7686,16 +7686,17 @@ trait Chainable[Subject] extends js.Object {
   def focused(): Chainable[JQuery[HTMLElement]] = js.native
   def focused(options: Partial[Loggable with Timeoutable]): Chainable[JQuery[HTMLElement]] = js.native
   /**
-    * Get one or more DOM elements by selector.
-    * The querying behavior of this command matches exactly how $(…) works in jQuery.
-    * @see https://on.cypress.io/get
+    * Get one or more DOM elements by alias.
+    * @see https://on.cypress.io/get#Alias
     * @example
-    *    cy.get('.list>li')    // Yield the <li>'s in <.list>
-    *    cy.get('ul li:first').should('have.class', 'active')
-    *    cy.get('.dropdown-menu').click()
+    *    // Get the aliased ‘todos’ elements
+    *    cy.get('ul#todos').as('todos')
+    *    //...hack hack hack...
+    *    //later retrieve the todos
+    *    cy.get('@todos')
     */
-  def get[E /* <: Node */](selector: String): Chainable[JQuery[E]] = js.native
-  def get[E /* <: Node */](selector: String, options: Partial[Loggable with Timeoutable with Withinable]): Chainable[JQuery[E]] = js.native
+  def get[S](alias: String): Chainable[S] = js.native
+  def get[S](alias: String, options: Partial[Loggable with Timeoutable with Withinable]): Chainable[S] = js.native
   /**
     * Get a browser cookie by its name.
     *
@@ -7711,19 +7712,18 @@ trait Chainable[Subject] extends js.Object {
   def getCookies(): Chainable[js.Array[Cookie]] = js.native
   def getCookies(options: Partial[Loggable with Timeoutable]): Chainable[js.Array[Cookie]] = js.native
   /**
-    * Get one or more DOM elements by alias.
-    * @see https://on.cypress.io/get#Alias
+    * Get one or more DOM elements by selector.
+    * The querying behavior of this command matches exactly how $(…) works in jQuery.
+    * @see https://on.cypress.io/get
     * @example
-    *    // Get the aliased ‘todos’ elements
-    *    cy.get('ul#todos').as('todos')
-    *    //...hack hack hack...
-    *    //later retrieve the todos
-    *    cy.get('@todos')
+    *    cy.get('.list>li')    // Yield the <li>'s in <.list>
+    *    cy.get('ul li:first').should('have.class', 'active')
+    *    cy.get('.dropdown-menu').click()
     */
   @JSName("get")
-  def get_S[S](alias: String): Chainable[S] = js.native
+  def get_E_Node[E /* <: Node */](selector: String): Chainable[JQuery[E]] = js.native
   @JSName("get")
-  def get_S[S](alias: String, options: Partial[Loggable with Timeoutable with Withinable]): Chainable[S] = js.native
+  def get_E_Node[E /* <: Node */](selector: String, options: Partial[Loggable with Timeoutable with Withinable]): Chainable[JQuery[E]] = js.native
   /**
     * Get one or more DOM elements by node name: input, button, etc.
     * @see https://on.cypress.io/get
@@ -20722,6 +20722,22 @@ trait Chainable[Subject] extends js.Object {
     * @see https://on.cypress.io/within
     */
   def within(options: Partial[Loggable], fn: js.Function1[/* currentSubject */ Subject, Unit]): Chainable[Subject] = js.native
+  def wrap[E /* <: Node */](element: JQuery[E]): Chainable[JQuery[E]] = js.native
+  def wrap[E /* <: Node */](element: JQuery[E], options: Partial[Loggable with Timeoutable]): Chainable[JQuery[E]] = js.native
+  /**
+    * Yields whatever is passed into `.wrap()` to the next command in the Cypress chain.
+    *
+    * @see https://on.cypress.io/wrap
+    * @example
+    ```
+    // Make assertions about object
+    cy.wrap({ amount: 10 })
+    .should('have.property', 'amount')
+    .and('eq', 10)
+    ```
+    */
+  def wrap[S](`object`: S): Chainable[S] = js.native
+  def wrap[S](`object`: S, options: Partial[Loggable with Timeoutable]): Chainable[S] = js.native
   // inconsistent argument order
   /**
     * Yield the element passed into `.wrap()`.
@@ -20736,10 +20752,10 @@ trait Chainable[Subject] extends js.Object {
     })
     ```
     */
-  def wrap[E /* <: Node */](element: E): Chainable[JQuery[E]] = js.native
-  def wrap[E /* <: Node */](element: E, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[E]] = js.native
-  def wrap[E /* <: Node */](element: JQuery[E]): Chainable[JQuery[E]] = js.native
-  def wrap[E /* <: Node */](element: JQuery[E], options: Partial[Loggable with Timeoutable]): Chainable[JQuery[E]] = js.native
+  @JSName("wrap")
+  def wrap_E_Node[E /* <: Node */](element: E): Chainable[JQuery[E]] = js.native
+  @JSName("wrap")
+  def wrap_E_Node[E /* <: Node */](element: E, options: Partial[Loggable with Timeoutable]): Chainable[JQuery[E]] = js.native
   /**
     * Yield the element passed into `.wrap()` to the next command in the Cypress chain.
     *
@@ -20755,22 +20771,6 @@ trait Chainable[Subject] extends js.Object {
   def wrap_F_PromiseSS[F /* <: js.Promise[S] */, S](promise: F): Chainable[S] = js.native
   @JSName("wrap")
   def wrap_F_PromiseSS[F /* <: js.Promise[S] */, S](promise: F, options: Partial[Loggable with Timeoutable]): Chainable[S] = js.native
-  /**
-    * Yields whatever is passed into `.wrap()` to the next command in the Cypress chain.
-    *
-    * @see https://on.cypress.io/wrap
-    * @example
-    ```
-    // Make assertions about object
-    cy.wrap({ amount: 10 })
-    .should('have.property', 'amount')
-    .and('eq', 10)
-    ```
-    */
-  @JSName("wrap")
-  def wrap_S[S](`object`: S): Chainable[S] = js.native
-  @JSName("wrap")
-  def wrap_S[S](`object`: S, options: Partial[Loggable with Timeoutable]): Chainable[S] = js.native
   /**
     * Write to a file with the specified encoding and contents.
     *

@@ -14,11 +14,25 @@ package object clientsComprehendMod {
   type ClientRequestTokenString = java.lang.String
   type ComprehendArn = java.lang.String
   type ComprehendArnName = java.lang.String
+  type ComprehendEndpointArn = java.lang.String
+  type ComprehendEndpointName = java.lang.String
+  type ComprehendModelArn = java.lang.String
   type DocumentClassificationJobPropertiesList = js.Array[DocumentClassificationJobProperties]
   type DocumentClassifierArn = java.lang.String
+  type DocumentClassifierEndpointArn = java.lang.String
   type DocumentClassifierPropertiesList = js.Array[DocumentClassifierProperties]
   type DominantLanguageDetectionJobPropertiesList = js.Array[DominantLanguageDetectionJobProperties]
   type Double = scala.Double
+  type EndpointPropertiesList = js.Array[EndpointProperties]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.CREATING
+    - typings.awsDashSdk.awsDashSdkStrings.DELETING
+    - typings.awsDashSdk.awsDashSdkStrings.FAILED
+    - typings.awsDashSdk.awsDashSdkStrings.IN_SERVICE
+    - typings.awsDashSdk.awsDashSdkStrings.UPDATING
+    - java.lang.String
+  */
+  type EndpointStatus = _EndpointStatus | java.lang.String
   type EntitiesDetectionJobPropertiesList = js.Array[EntitiesDetectionJobProperties]
   type EntityRecognizerArn = java.lang.String
   type EntityRecognizerMetadataEntityTypesList = js.Array[EntityRecognizerMetadataEntityTypesListItem]
@@ -40,6 +54,7 @@ package object clientsComprehendMod {
   type EntityTypesList = js.Array[EntityTypesListItem]
   type Float = scala.Double
   type IamRoleArn = java.lang.String
+  type InferenceUnitsInteger = scala.Double
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.ONE_DOC_PER_FILE
     - typings.awsDashSdk.awsDashSdkStrings.ONE_DOC_PER_LINE
@@ -63,14 +78,21 @@ package object clientsComprehendMod {
   type KmsKeyId = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.en
-    - typings.awsDashSdk.awsDashSdkStrings.es
-    - typings.awsDashSdk.awsDashSdkStrings.fr
-    - typings.awsDashSdk.awsDashSdkStrings.de
-    - typings.awsDashSdk.awsDashSdkStrings.it
-    - typings.awsDashSdk.awsDashSdkStrings.pt
+    - typings.awsDashSdk.awsDashSdkStrings.es_
+    - typings.awsDashSdk.awsDashSdkStrings.fr_
+    - typings.awsDashSdk.awsDashSdkStrings.de_
+    - typings.awsDashSdk.awsDashSdkStrings.it_
+    - typings.awsDashSdk.awsDashSdkStrings.pt_
+    - typings.awsDashSdk.awsDashSdkStrings.ar_
+    - typings.awsDashSdk.awsDashSdkStrings.hi
+    - typings.awsDashSdk.awsDashSdkStrings.ja
+    - typings.awsDashSdk.awsDashSdkStrings.ko
+    - typings.awsDashSdk.awsDashSdkStrings.zh
+    - typings.awsDashSdk.awsDashSdkStrings.`zh-TW`
     - java.lang.String
   */
   type LanguageCode = _LanguageCode | java.lang.String
+  type ListOfClasses = js.Array[DocumentClass]
   type ListOfDetectDominantLanguageResult = js.Array[BatchDetectDominantLanguageItemResult]
   type ListOfDetectEntitiesResult = js.Array[BatchDetectEntitiesItemResult]
   type ListOfDetectKeyPhrasesResult = js.Array[BatchDetectKeyPhrasesItemResult]
@@ -133,11 +155,11 @@ package object clientsComprehendMod {
   type Subnets = js.Array[SubnetId]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.en
-    - typings.awsDashSdk.awsDashSdkStrings.es
-    - typings.awsDashSdk.awsDashSdkStrings.fr
-    - typings.awsDashSdk.awsDashSdkStrings.de
-    - typings.awsDashSdk.awsDashSdkStrings.it
-    - typings.awsDashSdk.awsDashSdkStrings.pt
+    - typings.awsDashSdk.awsDashSdkStrings.es_
+    - typings.awsDashSdk.awsDashSdkStrings.fr_
+    - typings.awsDashSdk.awsDashSdkStrings.de_
+    - typings.awsDashSdk.awsDashSdkStrings.it_
+    - typings.awsDashSdk.awsDashSdkStrings.pt_
     - java.lang.String
   */
   type SyntaxLanguageCode = _SyntaxLanguageCode | java.lang.String
@@ -149,7 +171,7 @@ package object clientsComprehendMod {
   type TopicsDetectionJobPropertiesList = js.Array[TopicsDetectionJobProperties]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2017-11-27`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | java.lang.String

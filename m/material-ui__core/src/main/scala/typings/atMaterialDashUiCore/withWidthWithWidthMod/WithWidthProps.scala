@@ -8,9 +8,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined parent std.Partial<@material-ui/core.@material-ui/core/withWidth/withWidth.WithWidth> */
+@js.native
 trait WithWidthProps extends js.Object {
-  var innerRef: js.UndefOr[Ref[_] | RefObject[_]] = js.undefined
-  var width: js.UndefOr[Breakpoint] = js.undefined
+  var innerRef: js.UndefOr[Ref[_] | RefObject[_]] = js.native
+  var width: js.UndefOr[Breakpoint] = js.native
 }
 
 object WithWidthProps {

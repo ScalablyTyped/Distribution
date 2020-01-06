@@ -10,9 +10,9 @@ Check if a value is an error constructor
 | ------------------ | :-------------: |
 | Full name          | is-error-constructor |
 | Keywords           | is, error, constructor, ctor, check, detect, instanceof |
-| # releases         | 1 |
+| # releases         | 3 |
 | # dependents       | 2 |
-| # downloads        | 7467 |
+| # downloads        | 6940 |
 | # stars            | 0 |
 
 ## Links

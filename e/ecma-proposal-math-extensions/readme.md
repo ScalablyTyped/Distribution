@@ -12,7 +12,7 @@ Tests and a polyfill for the ES2017 Math Extensions Proposal
 | Keywords           | ecmascript, math, test262, Math.map, Math.remap, Math.scale, Math.clamp, Math.constrain, Math.radians, Math.degrees |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 1935 |
+| # downloads        | 12063 |
 | # stars            | 0 |
 
 ## Links

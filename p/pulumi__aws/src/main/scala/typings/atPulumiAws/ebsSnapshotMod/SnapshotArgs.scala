@@ -6,19 +6,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SnapshotArgs extends js.Object {
   /**
     * A description of what the snapshot is.
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * A mapping of tags to assign to the snapshot
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * The Volume ID of which to make a snapshot.
     */
-  val volumeId: Input[String]
+  val volumeId: Input[String] = js.native
 }
 
 object SnapshotArgs {

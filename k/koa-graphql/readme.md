@@ -10,9 +10,9 @@ Production ready GraphQL Koa middleware.
 | ------------------ | :-------------: |
 | Full name          | koa-graphql |
 | Keywords           | koa, http, graphql, middleware, api |
-| # releases         | 7 |
-| # dependents       | 25 |
-| # downloads        | 126405 |
+| # releases         | 4 |
+| # dependents       | 22 |
+| # downloads        | 187434 |
 | # stars            | 3 |
 
 ## Links

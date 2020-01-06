@@ -12,7 +12,7 @@ A Functional Reactive Programming (FRP) library for JavaScript
 | Keywords           | frp, functional, reactive, typescript, sodium |
 | # releases         | 17 |
 | # dependents       | 2 |
-| # downloads        | 1988 |
+| # downloads        | 1955 |
 | # stars            | 0 |
 
 ## Links

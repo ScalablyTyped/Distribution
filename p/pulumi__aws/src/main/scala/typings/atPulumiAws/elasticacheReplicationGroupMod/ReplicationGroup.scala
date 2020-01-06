@@ -64,6 +64,10 @@ class ReplicationGroup protected () extends CustomResource {
     */
   val engineVersion: Output[String] = js.native
   /**
+    * The ARN of the key that you wish to use if encrypting at rest. If not supplied, uses service managed encryption. Can be specified only if `atRestEncryptionEnabled = true`.
+    */
+  val kmsKeyId: Output[js.UndefOr[String]] = js.native
+  /**
     * Specifies the weekly time range for when maintenance
     * on the cache cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi` (24H Clock UTC).
     * The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09:00`

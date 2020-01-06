@@ -10,9 +10,9 @@ Low level stellar support library
 | ------------------ | :-------------: |
 | Full name          | stellar-base |
 | Keywords           | stellar |
-| # releases         | 14 |
+| # releases         | 27 |
 | # dependents       | 17 |
-| # downloads        | 190845 |
+| # downloads        | 294091 |
 | # stars            | 1 |
 
 ## Links

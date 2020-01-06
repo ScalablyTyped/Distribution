@@ -10,15 +10,15 @@ React Native Elements & UI Toolkit
 | ------------------ | :-------------: |
 | Full name          | react-native-elements |
 | Keywords           | react-native, reactjs, reactnative, bootstrap |
-| # releases         | 30 |
-| # dependents       | 64 |
-| # downloads        | 1327030 |
+| # releases         | 21 |
+| # dependents       | 92 |
+| # downloads        | 2335330 |
 | # stars            | 15 |
 
 ## Links
-- [Homepage](https://react-native-training.github.io/react-native-elements/)
-- [Bugs](https://github.com/react-native-training/react-native-elements/issues)
-- [Repository](https://github.com/react-native-training/react-native-elements)
+- [Homepage](https://react-native-elements.github.io/react-native-elements/)
+- [Bugs](https://github.com/react-native-elements/react-native-elements/issues)
+- [Repository](https://github.com/react-native-elements/react-native-elements)
 - [Npm](https://www.npmjs.com/package/react-native-elements)
     
 

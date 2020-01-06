@@ -6,32 +6,30 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PolicyState extends js.Object {
   /**
     * The ARN assigned by AWS to this policy.
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * Description of the IAM policy.
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the policy. If omitted, this provider will assign a random, unique name.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`.
     */
-  val namePrefix: js.UndefOr[Input[String]] = js.undefined
+  val namePrefix: js.UndefOr[Input[String]] = js.native
   /**
     * Path in which to create the policy.
     * See [IAM Identifiers](https://docs.aws.amazon.com/IAM/latest/UserGuide/Using_Identifiers.html) for more information.
     */
-  val path: js.UndefOr[Input[String]] = js.undefined
-  /**
-    * The policy document. This is a JSON formatted string.
-    */
-  val policy: js.UndefOr[Input[String | PolicyDocument]] = js.undefined
+  val path: js.UndefOr[Input[String]] = js.native
+  val policy: js.UndefOr[Input[String | PolicyDocument]] = js.native
 }
 
 object PolicyState {

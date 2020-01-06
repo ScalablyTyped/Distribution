@@ -10,9 +10,9 @@ Optionals for JS - wrapper for possibly undefined values, inspired by Java Optio
 | ------------------ | :-------------: |
 | Full name          | optional-js |
 | Keywords           | optional, java, javascript |
-| # releases         | 3 |
-| # dependents       | 9 |
-| # downloads        | 400947 |
+| # releases         | 6 |
+| # dependents       | 10 |
+| # downloads        | 2132649 |
 | # stars            | 1 |
 
 ## Links

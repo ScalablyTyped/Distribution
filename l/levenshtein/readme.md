@@ -10,9 +10,9 @@ Javascript implementation of the L-diggity.
 | ------------------ | :-------------: |
 | Full name          | levenshtein |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 65 |
-| # downloads        | 555218 |
+| # releases         | 0 |
+| # dependents       | 68 |
+| # downloads        | 405597 |
 | # stars            | 8 |
 
 ## Links

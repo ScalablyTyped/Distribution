@@ -10,9 +10,9 @@ Bootstrapping for Redux applications
 | ------------------ | :-------------: |
 | Full name          | redux-bootstrap |
 | Keywords           | redux, react, bootstrap |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 3955 |
+| # downloads        | 3880 |
 | # stars            | 0 |
 
 ## Links

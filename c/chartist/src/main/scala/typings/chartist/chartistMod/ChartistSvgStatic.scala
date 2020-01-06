@@ -13,7 +13,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ChartistSvgStatic
-  extends Instantiable2[
+  extends Instantiable0[IChartistSvg]
+     with Instantiable1[(/* name */ HTMLElement) | (/* name */ String), IChartistSvg]
+     with Instantiable2[
       (/* name */ HTMLElement) | (/* name */ String), 
       /* attributes */ js.Object, 
       IChartistSvg
@@ -24,7 +26,6 @@ trait ChartistSvgStatic
       /* className */ String, 
       IChartistSvg
     ]
-     with Instantiable1[(/* name */ HTMLElement) | (/* name */ String), IChartistSvg]
      with Instantiable4[
       (/* name */ HTMLElement) | (/* name */ String), 
       /* attributes */ js.Object, 
@@ -39,8 +40,7 @@ trait ChartistSvgStatic
       /* parent */ js.Object, 
       /* insertFirst */ Boolean, 
       IChartistSvg
-    ]
-     with Instantiable0[IChartistSvg] {
+    ] {
   var Easing: ChartistEasingStatic = js.native
   /**
     * This method checks for support of a given SVG feature like Extensibility, SVG-animation or the like. Check http://www.w3.org/TR/SVG11/feature for a detailed list.

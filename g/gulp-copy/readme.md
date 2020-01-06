@@ -10,9 +10,9 @@ Plugin copying files to a new destination and using that destination for other a
 | ------------------ | :-------------: |
 | Full name          | gulp-copy |
 | Keywords           | gulpplugin, copy, gulp |
-| # releases         | 5 |
-| # dependents       | 64 |
-| # downloads        | 1226675 |
+| # releases         | 4 |
+| # dependents       | 73 |
+| # downloads        | 1338721 |
 | # stars            | 42 |
 
 ## Links

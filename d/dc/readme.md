@@ -9,9 +9,9 @@ A multi-dimensional charting library built to work natively with crossfilter and
 | ------------------ | :-------------: |
 | Full name          | dc |
 | Keywords           | visualization, svg, animation, canvas, chart, dimensional, crossfilter, d3 |
-| # releases         | 27 |
-| # dependents       | 22 |
-| # downloads        | 581618 |
+| # releases         | 34 |
+| # dependents       | 24 |
+| # downloads        | 779714 |
 | # stars            | 4 |
 
 ## Links

@@ -10,9 +10,9 @@ Filter promises concurrently
 | ------------------ | :-------------: |
 | Full name          | p-filter |
 | Keywords           | promise, filter, collection, iterable, iterator, fulfilled, async, await, promises, concurrently, concurrency, parallel, bluebird |
-| # releases         | 1 |
-| # dependents       | 27 |
-| # downloads        | 2994380 |
+| # releases         | 3 |
+| # dependents       | 35 |
+| # downloads        | 8372161 |
 | # stars            | 2 |
 
 ## Links

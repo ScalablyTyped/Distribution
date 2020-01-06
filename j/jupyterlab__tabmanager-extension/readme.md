@@ -10,9 +10,9 @@ JupyterLab - Tab Manager Extension
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/tabmanager-extension |
 | Keywords           | - |
-| # releases         | 44 |
+| # releases         | 62 |
 | # dependents       | 2 |
-| # downloads        | 581651 |
+| # downloads        | 713758 |
 | # stars            | 0 |
 
 ## Links

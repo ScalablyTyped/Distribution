@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NetworkAssociationArgs extends js.Object {
   /**
     * The ID of the Client VPN endpoint.
     */
-  val clientVpnEndpointId: Input[String]
+  val clientVpnEndpointId: Input[String] = js.native
   /**
     * The ID of the subnet to associate with the Client VPN endpoint.
     */
-  val subnetId: Input[String]
+  val subnetId: Input[String] = js.native
 }
 
 object NetworkAssociationArgs {

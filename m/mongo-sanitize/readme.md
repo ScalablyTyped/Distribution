@@ -12,7 +12,7 @@ Helper to sanitize mongodb queries against query selector injections
 | Keywords           | mongodb, sanitize, query, selector, injection, Petko |
 | # releases         | 2 |
 | # dependents       | 9 |
-| # downloads        | 127953 |
+| # downloads        | 209390 |
 | # stars            | 7 |
 
 ## Links

@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AssociateServiceActionWithProvisioningArtifactInput extends js.Object {
   /**
     * The language code.    en - English (default)    jp - Japanese    zh - Chinese  
     */
-  var AcceptLanguage: js.UndefOr[typings.awsDashSdk.clientsServicecatalogMod.AcceptLanguage] = js.undefined
+  var AcceptLanguage: js.UndefOr[typings.awsDashSdk.clientsServicecatalogMod.AcceptLanguage] = js.native
   /**
     * The product identifier. For example, prod-abcdzk7xy33qa.
     */
-  var ProductId: Id
+  var ProductId: Id = js.native
   /**
     * The identifier of the provisioning artifact. For example, pa-4abcdjnxjj6ne.
     */
-  var ProvisioningArtifactId: Id
+  var ProvisioningArtifactId: Id = js.native
   /**
     * The self-service action identifier. For example, act-fs7abcd89wxyz.
     */
-  var ServiceActionId: Id
+  var ServiceActionId: Id = js.native
 }
 
 object AssociateServiceActionWithProvisioningArtifactInput {
@@ -31,8 +32,8 @@ object AssociateServiceActionWithProvisioningArtifactInput {
     ServiceActionId: Id,
     AcceptLanguage: AcceptLanguage = null
   ): AssociateServiceActionWithProvisioningArtifactInput = {
-    val __obj = js.Dynamic.literal(ProductId = ProductId, ProvisioningArtifactId = ProvisioningArtifactId, ServiceActionId = ServiceActionId)
-    if (AcceptLanguage != null) __obj.updateDynamic("AcceptLanguage")(AcceptLanguage)
+    val __obj = js.Dynamic.literal(ProductId = ProductId.asInstanceOf[js.Any], ProvisioningArtifactId = ProvisioningArtifactId.asInstanceOf[js.Any], ServiceActionId = ServiceActionId.asInstanceOf[js.Any])
+    if (AcceptLanguage != null) __obj.updateDynamic("AcceptLanguage")(AcceptLanguage.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateServiceActionWithProvisioningArtifactInput]
   }
 }

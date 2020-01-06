@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DomainDkimArgs extends js.Object {
   /**
     * Verified domain name to generate DKIM tokens for.
     */
-  val domain: Input[String]
+  val domain: Input[String] = js.native
 }
 
 object DomainDkimArgs {

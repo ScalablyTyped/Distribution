@@ -12,7 +12,7 @@ minimal Least Recently Used Cache
 | Keywords           | cache, LRU |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 14456 |
+| # downloads        | 36981 |
 | # stars            | 0 |
 
 ## Links

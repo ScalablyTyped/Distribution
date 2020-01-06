@@ -10,9 +10,9 @@ Typings are for version 2.1
 | ------------------ | :-------------: |
 | Full name          | retinajs |
 | Keywords           | retina, images, @2x, @3x, retina.js |
-| # releases         | 3 |
-| # dependents       | 2 |
-| # downloads        | 105905 |
+| # releases         | 0 |
+| # dependents       | 1 |
+| # downloads        | 146303 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ Extensibly serialize & deserialize Draft.js ContentState
 | ------------------ | :-------------: |
 | Full name          | draft-convert |
 | Keywords           | draft, draftjs, draft-convert, convert |
-| # releases         | 12 |
-| # dependents       | 48 |
-| # downloads        | 799939 |
+| # releases         | 11 |
+| # dependents       | 59 |
+| # downloads        | 1376044 |
 | # stars            | 3 |
 
 ## Links

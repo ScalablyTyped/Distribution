@@ -10,9 +10,9 @@ Teddy Templating Engine
 | ------------------ | :-------------: |
 | Full name          | teddy |
 | Keywords           | teddy.js, node.js, teddy, template, view |
-| # releases         | 20 |
+| # releases         | 7 |
 | # dependents       | 1 |
-| # downloads        | 22360 |
+| # downloads        | 21362 |
 | # stars            | 0 |
 
 ## Links

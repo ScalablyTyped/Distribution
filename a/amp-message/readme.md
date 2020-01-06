@@ -11,8 +11,8 @@ Higher level Message object for the AMP protocol
 | Full name          | amp-message |
 | Keywords           | amp, actor, message, messaging, zmq, zeromq |
 | # releases         | 0 |
-| # dependents       | 25 |
-| # downloads        | 10069983 |
+| # dependents       | 26 |
+| # downloads        | 14680801 |
 | # stars            | 0 |
 
 ## Links

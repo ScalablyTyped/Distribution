@@ -1,6 +1,6 @@
 package typings.atPulumiAws
 
-import typings.atPulumiAws.albIpAddressTypeMod.IpAddressType
+import typings.atPulumiAws.applicationloadbalancingIpAddressTypeMod.IpAddressType
 import typings.atPulumiAws.applicationloadbalancingLoadBalancerTypeMod.LoadBalancerType
 import typings.atPulumiAws.autoscalingMetricsMod.Metric
 import typings.atPulumiAws.autoscalingNotificationTypeMod.NotificationType
@@ -27,9 +27,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object atPulumiAwsStrings {
-  @js.native
-  sealed trait `*` extends Principal
-  
   @js.native
   sealed trait `1Minute` extends js.Object
   
@@ -59,6 +56,9 @@ object atPulumiAwsStrings {
   
   @js.native
   sealed trait Allow extends js.Object
+  
+  @js.native
+  sealed trait Asterisk extends Principal
   
   @js.native
   sealed trait BLOCK_SUSPEND extends KernelCapability
@@ -145,7 +145,7 @@ object atPulumiAwsStrings {
   sealed trait LINUX_IMMUTABLE extends KernelCapability
   
   @js.native
-  sealed trait `Linux/UNIX` extends InstancePlatform
+  sealed trait LinuxSlashUNIX extends InstancePlatform
   
   @js.native
   sealed trait MAC_ADMIN extends KernelCapability
@@ -289,22 +289,22 @@ object atPulumiAwsStrings {
   sealed trait `Windows with SQL Server Web` extends InstancePlatform
   
   @js.native
-  sealed trait a1DOT2xlarge extends InstanceType
+  sealed trait a1Dot2xlarge extends InstanceType
   
   @js.native
-  sealed trait a1DOT4xlarge extends InstanceType
+  sealed trait a1Dot4xlarge extends InstanceType
   
   @js.native
-  sealed trait a1DOTlarge extends InstanceType
+  sealed trait a1Dotlarge extends InstanceType
   
   @js.native
-  sealed trait a1DOTmedium extends InstanceType
+  sealed trait a1Dotmedium extends InstanceType
   
   @js.native
-  sealed trait a1DOTxlarge extends InstanceType
+  sealed trait a1Dotxlarge extends InstanceType
   
   @js.native
-  sealed trait all extends ProtocolType
+  sealed trait all_ extends ProtocolType
   
   @js.native
   sealed trait any extends js.Object
@@ -345,28 +345,28 @@ object atPulumiAwsStrings {
   sealed trait `authenticated-read` extends CannedAcl
   
   @js.native
-  sealed trait `autoscaling:EC2_INSTANCE_LAUNCH` extends NotificationType
+  sealed trait autoscalingColonEC2_INSTANCE_LAUNCH extends NotificationType
   
   @js.native
-  sealed trait `autoscaling:EC2_INSTANCE_LAUNCH_ERROR` extends NotificationType
+  sealed trait autoscalingColonEC2_INSTANCE_LAUNCH_ERROR extends NotificationType
   
   @js.native
-  sealed trait `autoscaling:EC2_INSTANCE_TERMINATE` extends NotificationType
+  sealed trait autoscalingColonEC2_INSTANCE_TERMINATE extends NotificationType
   
   @js.native
-  sealed trait `autoscaling:EC2_INSTANCE_TERMINATE_ERROR` extends NotificationType
+  sealed trait autoscalingColonEC2_INSTANCE_TERMINATE_ERROR extends NotificationType
   
   @js.native
-  sealed trait `autoscaling:TEST_NOTIFICATION` extends NotificationType
+  sealed trait autoscalingColonTEST_NOTIFICATION extends NotificationType
   
   @js.native
   sealed trait `aws-exec-read` extends CannedAcl
   
   @js.native
-  sealed trait `aws:kinesis` extends js.Object
+  sealed trait awsColonkinesis extends js.Object
   
   @js.native
-  sealed trait `aws:kinesis:record` extends js.Object
+  sealed trait awsColonkinesisColonrecord extends js.Object
   
   @js.native
   sealed trait awslogs extends LogDriver
@@ -378,88 +378,88 @@ object atPulumiAwsStrings {
   sealed trait `bucket-owner-read` extends CannedAcl
   
   @js.native
-  sealed trait c3DOT2xlarge extends InstanceType
+  sealed trait c3Dot2xlarge extends InstanceType
   
   @js.native
-  sealed trait c3DOT4xlarge extends InstanceType
+  sealed trait c3Dot4xlarge extends InstanceType
   
   @js.native
-  sealed trait c3DOT8xlarge extends InstanceType
+  sealed trait c3Dot8xlarge extends InstanceType
   
   @js.native
-  sealed trait c3DOTlarge extends InstanceType
+  sealed trait c3Dotlarge extends InstanceType
   
   @js.native
-  sealed trait c3DOTxlarge extends InstanceType
+  sealed trait c3Dotxlarge extends InstanceType
   
   @js.native
-  sealed trait c4DOT2xlarge extends InstanceType
+  sealed trait c4Dot2xlarge extends InstanceType
   
   @js.native
-  sealed trait c4DOT4xlarge extends InstanceType
+  sealed trait c4Dot4xlarge extends InstanceType
   
   @js.native
-  sealed trait c4DOT8xlarge extends InstanceType
+  sealed trait c4Dot8xlarge extends InstanceType
   
   @js.native
-  sealed trait c4DOTlarge extends InstanceType
+  sealed trait c4Dotlarge extends InstanceType
   
   @js.native
-  sealed trait c4DOTxlarge extends InstanceType
+  sealed trait c4Dotxlarge extends InstanceType
   
   @js.native
-  sealed trait c5DOT18xlarge extends InstanceType
+  sealed trait c5Dot18xlarge extends InstanceType
   
   @js.native
-  sealed trait c5DOT2xlarge extends InstanceType
+  sealed trait c5Dot2xlarge extends InstanceType
   
   @js.native
-  sealed trait c5DOT4xlarge extends InstanceType
+  sealed trait c5Dot4xlarge extends InstanceType
   
   @js.native
-  sealed trait c5DOT9xlarge extends InstanceType
+  sealed trait c5Dot9xlarge extends InstanceType
   
   @js.native
-  sealed trait c5DOTlarge extends InstanceType
+  sealed trait c5Dotlarge extends InstanceType
   
   @js.native
-  sealed trait c5DOTxlarge extends InstanceType
+  sealed trait c5Dotxlarge extends InstanceType
   
   @js.native
-  sealed trait c5dDOT18xlarge extends InstanceType
+  sealed trait c5dDot18xlarge extends InstanceType
   
   @js.native
-  sealed trait c5dDOT2xlarge extends InstanceType
+  sealed trait c5dDot2xlarge extends InstanceType
   
   @js.native
-  sealed trait c5dDOT4xlarge extends InstanceType
+  sealed trait c5dDot4xlarge extends InstanceType
   
   @js.native
-  sealed trait c5dDOT9xlarge extends InstanceType
+  sealed trait c5dDot9xlarge extends InstanceType
   
   @js.native
-  sealed trait c5dDOTlarge extends InstanceType
+  sealed trait c5dDotlarge extends InstanceType
   
   @js.native
-  sealed trait c5dDOTxlarge extends InstanceType
+  sealed trait c5dDotxlarge extends InstanceType
   
   @js.native
-  sealed trait c5nDOT18xlarge extends InstanceType
+  sealed trait c5nDot18xlarge extends InstanceType
   
   @js.native
-  sealed trait c5nDOT2xlarge extends InstanceType
+  sealed trait c5nDot2xlarge extends InstanceType
   
   @js.native
-  sealed trait c5nDOT4xlarge extends InstanceType
+  sealed trait c5nDot4xlarge extends InstanceType
   
   @js.native
-  sealed trait c5nDOT9xlarge extends InstanceType
+  sealed trait c5nDot9xlarge extends InstanceType
   
   @js.native
-  sealed trait c5nDOTlarge extends InstanceType
+  sealed trait c5nDotlarge extends InstanceType
   
   @js.native
-  sealed trait c5nDOTxlarge extends InstanceType
+  sealed trait c5nDotxlarge extends InstanceType
   
   @js.native
   sealed trait `ca-central-1` extends Region
@@ -480,254 +480,254 @@ object atPulumiAwsStrings {
   sealed trait cpu extends UlimitName
   
   @js.native
-  sealed trait d2DOT2xlarge extends InstanceType
+  sealed trait d2Dot2xlarge extends InstanceType
   
   @js.native
-  sealed trait d2DOT4xlarge extends InstanceType
+  sealed trait d2Dot4xlarge extends InstanceType
   
   @js.native
-  sealed trait d2DOT8xlarge extends InstanceType
+  sealed trait d2Dot8xlarge extends InstanceType
   
   @js.native
-  sealed trait d2DOTxlarge extends InstanceType
+  sealed trait d2Dotxlarge extends InstanceType
   
   @js.native
   sealed trait data extends UlimitName
   
   @js.native
-  sealed trait dbDOTm1DOTlarge
+  sealed trait dbDotm1Dotlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTm1DOTmedium
+  sealed trait dbDotm1Dotmedium
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTm1DOTsmall
+  sealed trait dbDotm1Dotsmall
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTm1DOTxlarge
+  sealed trait dbDotm1Dotxlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTm2DOT2xlarge
+  sealed trait dbDotm2Dot2xlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTm2DOT4xlarge
+  sealed trait dbDotm2Dot4xlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTm2DOTxlarge
+  sealed trait dbDotm2Dotxlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTm3DOT2xlarge
+  sealed trait dbDotm3Dot2xlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTm3DOTlarge
+  sealed trait dbDotm3Dotlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTm3DOTmedium
+  sealed trait dbDotm3Dotmedium
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTm3DOTxlarge
+  sealed trait dbDotm3Dotxlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTm4DOT10xlarge
+  sealed trait dbDotm4Dot10xlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTm4DOT16xlarge
+  sealed trait dbDotm4Dot16xlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTm4DOT2xlarge
+  sealed trait dbDotm4Dot2xlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTm4DOT4xlarge
+  sealed trait dbDotm4Dot4xlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTm4DOTlarge
+  sealed trait dbDotm4Dotlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTm4DOTxlarge
+  sealed trait dbDotm4Dotxlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTm5DOT12xlarge
+  sealed trait dbDotm5Dot12xlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTm5DOT24xlarge
+  sealed trait dbDotm5Dot24xlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTm5DOT2xlarge
+  sealed trait dbDotm5Dot2xlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTm5DOT4xlarge
+  sealed trait dbDotm5Dot4xlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTm5DOTlarge
+  sealed trait dbDotm5Dotlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTm5DOTxlarge
+  sealed trait dbDotm5Dotxlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTr3DOT2xlarge
+  sealed trait dbDotr3Dot2xlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTr3DOT4xlarge
+  sealed trait dbDotr3Dot4xlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTr3DOT8xlarge
+  sealed trait dbDotr3Dot8xlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTr3DOTlarge
+  sealed trait dbDotr3Dotlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTr3DOTxlarge
+  sealed trait dbDotr3Dotxlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTr4DOT16xlarge
+  sealed trait dbDotr4Dot16xlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTr4DOT2xlarge
+  sealed trait dbDotr4Dot2xlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTr4DOT4xlarge
+  sealed trait dbDotr4Dot4xlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTr4DOT8xlarge
+  sealed trait dbDotr4Dot8xlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTr4DOTlarge
+  sealed trait dbDotr4Dotlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTr4DOTxlarge
+  sealed trait dbDotr4Dotxlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTr5DOT12xlarge
+  sealed trait dbDotr5Dot12xlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTr5DOT24xlarge
+  sealed trait dbDotr5Dot24xlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTr5DOT2xlarge
+  sealed trait dbDotr5Dot2xlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTr5DOT4xlarge
+  sealed trait dbDotr5Dot4xlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTr5DOTlarge
+  sealed trait dbDotr5Dotlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTr5DOTxlarge
+  sealed trait dbDotr5Dotxlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTt2DOT2xlarge
+  sealed trait dbDott2Dot2xlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTt2DOTlarge
+  sealed trait dbDott2Dotlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTt2DOTmedium
+  sealed trait dbDott2Dotmedium
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTt2DOTmicro
+  sealed trait dbDott2Dotmicro
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTt2DOTsmall
+  sealed trait dbDott2Dotsmall
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTt2DOTxlarge
+  sealed trait dbDott2Dotxlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTt3DOT2xlarge
+  sealed trait dbDott3Dot2xlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTt3DOTlarge
+  sealed trait dbDott3Dotlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTt3DOTmedium
+  sealed trait dbDott3Dotmedium
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTt3DOTmicro
+  sealed trait dbDott3Dotmicro
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTt3DOTsmall
+  sealed trait dbDott3Dotsmall
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTt3DOTxlarge
+  sealed trait dbDott3Dotxlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTx1DOT16xlarge
+  sealed trait dbDotx1Dot16xlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTx1DOT32xlarge
+  sealed trait dbDotx1Dot32xlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTx1eDOT2xlarge
+  sealed trait dbDotx1eDot2xlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTx1eDOT32xlarge
+  sealed trait dbDotx1eDot32xlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTx1eDOT4xlarge
+  sealed trait dbDotx1eDot4xlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTx1eDOT8xlarge
+  sealed trait dbDotx1eDot8xlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
-  sealed trait dbDOTx1eDOTxlarge
+  sealed trait dbDotx1eDotxlarge
     extends typings.atPulumiAws.rdsInstanceTypeMod.InstanceType
   
   @js.native
@@ -737,18 +737,18 @@ object atPulumiAwsStrings {
   sealed trait default extends Tenancy
   
   @js.native
-  sealed trait dotnetcore1DOT0 extends Runtime
+  sealed trait dotnetcore1Dot0 extends Runtime
   
   @js.native
-  sealed trait dotnetcore2DOT0 extends Runtime
+  sealed trait dotnetcore2Dot0 extends Runtime
   
   @js.native
-  sealed trait dotnetcore2DOT1 extends Runtime
+  sealed trait dotnetcore2Dot1 extends Runtime
   
   @js.native
   sealed trait dualstack
     extends IpAddressType
-       with typings.atPulumiAws.applicationloadbalancingIpAddressTypeMod.IpAddressType
+       with typings.atPulumiAws.albIpAddressTypeMod.IpAddressType
   
   @js.native
   sealed trait `eu-central-1` extends Region
@@ -769,10 +769,10 @@ object atPulumiAwsStrings {
   sealed trait expire extends js.Object
   
   @js.native
-  sealed trait f1DOT16xlarge extends InstanceType
+  sealed trait f1Dot16xlarge extends InstanceType
   
   @js.native
-  sealed trait f1DOT2xlarge extends InstanceType
+  sealed trait f1Dot2xlarge extends InstanceType
   
   @js.native
   sealed trait fluentd extends LogDriver
@@ -781,22 +781,22 @@ object atPulumiAwsStrings {
   sealed trait fsize extends UlimitName
   
   @js.native
-  sealed trait g2DOT2xlarge extends InstanceType
+  sealed trait g2Dot2xlarge extends InstanceType
   
   @js.native
-  sealed trait g2DOT8xlarge extends InstanceType
+  sealed trait g2Dot8xlarge extends InstanceType
   
   @js.native
-  sealed trait g3DOT16xlarge extends InstanceType
+  sealed trait g3Dot16xlarge extends InstanceType
   
   @js.native
-  sealed trait g3DOT4xlarge extends InstanceType
+  sealed trait g3Dot4xlarge extends InstanceType
   
   @js.native
-  sealed trait g3DOT8xlarge extends InstanceType
+  sealed trait g3Dot8xlarge extends InstanceType
   
   @js.native
-  sealed trait g3sDOTxlarge extends InstanceType
+  sealed trait g3sDotxlarge extends InstanceType
   
   @js.native
   sealed trait gelf extends LogDriver
@@ -805,46 +805,46 @@ object atPulumiAwsStrings {
   sealed trait global extends EngineMode
   
   @js.native
-  sealed trait go1DOTx extends Runtime
+  sealed trait go1Dotx extends Runtime
   
   @js.native
   sealed trait gp2 extends StorageType
   
   @js.native
-  sealed trait h1DOT16xlarge extends InstanceType
+  sealed trait h1Dot16xlarge extends InstanceType
   
   @js.native
-  sealed trait h1DOT2xlarge extends InstanceType
+  sealed trait h1Dot2xlarge extends InstanceType
   
   @js.native
-  sealed trait h1DOT4xlarge extends InstanceType
+  sealed trait h1Dot4xlarge extends InstanceType
   
   @js.native
-  sealed trait h1DOT8xlarge extends InstanceType
+  sealed trait h1Dot8xlarge extends InstanceType
   
   @js.native
-  sealed trait hs1DOT8xlarge extends InstanceType
+  sealed trait hs1Dot8xlarge extends InstanceType
   
   @js.native
-  sealed trait i3DOT16xlarge extends InstanceType
+  sealed trait i3Dot16xlarge extends InstanceType
   
   @js.native
-  sealed trait i3DOT2xlarge extends InstanceType
+  sealed trait i3Dot2xlarge extends InstanceType
   
   @js.native
-  sealed trait i3DOT4xlarge extends InstanceType
+  sealed trait i3Dot4xlarge extends InstanceType
   
   @js.native
-  sealed trait i3DOT8xlarge extends InstanceType
+  sealed trait i3Dot8xlarge extends InstanceType
   
   @js.native
-  sealed trait i3DOTlarge extends InstanceType
+  sealed trait i3Dotlarge extends InstanceType
   
   @js.native
-  sealed trait i3DOTmetal extends InstanceType
+  sealed trait i3Dotmetal extends InstanceType
   
   @js.native
-  sealed trait i3DOTxlarge extends InstanceType
+  sealed trait i3Dotxlarge extends InstanceType
   
   @js.native
   sealed trait icmp extends ProtocolType
@@ -858,7 +858,10 @@ object atPulumiAwsStrings {
   @js.native
   sealed trait ipv4
     extends IpAddressType
-       with typings.atPulumiAws.applicationloadbalancingIpAddressTypeMod.IpAddressType
+       with typings.atPulumiAws.albIpAddressTypeMod.IpAddressType
+  
+  @js.native
+  sealed trait java11 extends Runtime
   
   @js.native
   sealed trait java8 extends Runtime
@@ -876,88 +879,88 @@ object atPulumiAwsStrings {
   sealed trait `log-delivery-write` extends CannedAcl
   
   @js.native
-  sealed trait m3DOT2xlarge extends InstanceType
+  sealed trait m3Dot2xlarge extends InstanceType
   
   @js.native
-  sealed trait m3DOTlarge extends InstanceType
+  sealed trait m3Dotlarge extends InstanceType
   
   @js.native
-  sealed trait m3DOTmedium extends InstanceType
+  sealed trait m3Dotmedium extends InstanceType
   
   @js.native
-  sealed trait m3DOTxlarge extends InstanceType
+  sealed trait m3Dotxlarge extends InstanceType
   
   @js.native
-  sealed trait m4DOT10xlarge extends InstanceType
+  sealed trait m4Dot10xlarge extends InstanceType
   
   @js.native
-  sealed trait m4DOT16xlarge extends InstanceType
+  sealed trait m4Dot16xlarge extends InstanceType
   
   @js.native
-  sealed trait m4DOT2xlarge extends InstanceType
+  sealed trait m4Dot2xlarge extends InstanceType
   
   @js.native
-  sealed trait m4DOT4xlarge extends InstanceType
+  sealed trait m4Dot4xlarge extends InstanceType
   
   @js.native
-  sealed trait m4DOTlarge extends InstanceType
+  sealed trait m4Dotlarge extends InstanceType
   
   @js.native
-  sealed trait m4DOTxlarge extends InstanceType
+  sealed trait m4Dotxlarge extends InstanceType
   
   @js.native
-  sealed trait m5DOT12xlarge extends InstanceType
+  sealed trait m5Dot12xlarge extends InstanceType
   
   @js.native
-  sealed trait m5DOT24xlarge extends InstanceType
+  sealed trait m5Dot24xlarge extends InstanceType
   
   @js.native
-  sealed trait m5DOT2xlarge extends InstanceType
+  sealed trait m5Dot2xlarge extends InstanceType
   
   @js.native
-  sealed trait m5DOT4xlarge extends InstanceType
+  sealed trait m5Dot4xlarge extends InstanceType
   
   @js.native
-  sealed trait m5DOTlarge extends InstanceType
+  sealed trait m5Dotlarge extends InstanceType
   
   @js.native
-  sealed trait m5DOTxlarge extends InstanceType
+  sealed trait m5Dotxlarge extends InstanceType
   
   @js.native
-  sealed trait m5aDOT12xlarge extends InstanceType
+  sealed trait m5aDot12xlarge extends InstanceType
   
   @js.native
-  sealed trait m5aDOT24xlarge extends InstanceType
+  sealed trait m5aDot24xlarge extends InstanceType
   
   @js.native
-  sealed trait m5aDOT2xlarge extends InstanceType
+  sealed trait m5aDot2xlarge extends InstanceType
   
   @js.native
-  sealed trait m5aDOT4xlarge extends InstanceType
+  sealed trait m5aDot4xlarge extends InstanceType
   
   @js.native
-  sealed trait m5aDOTlarge extends InstanceType
+  sealed trait m5aDotlarge extends InstanceType
   
   @js.native
-  sealed trait m5aDOTxlarge extends InstanceType
+  sealed trait m5aDotxlarge extends InstanceType
   
   @js.native
-  sealed trait m5dDOT12xlarge extends InstanceType
+  sealed trait m5dDot12xlarge extends InstanceType
   
   @js.native
-  sealed trait m5dDOT24xlarge extends InstanceType
+  sealed trait m5dDot24xlarge extends InstanceType
   
   @js.native
-  sealed trait m5dDOT2xlarge extends InstanceType
+  sealed trait m5dDot2xlarge extends InstanceType
   
   @js.native
-  sealed trait m5dDOT4xlarge extends InstanceType
+  sealed trait m5dDot4xlarge extends InstanceType
   
   @js.native
-  sealed trait m5dDOTlarge extends InstanceType
+  sealed trait m5dDotlarge extends InstanceType
   
   @js.native
-  sealed trait m5dDOTxlarge extends InstanceType
+  sealed trait m5dDotxlarge extends InstanceType
   
   @js.native
   sealed trait `me-south-1` extends Region
@@ -980,19 +983,22 @@ object atPulumiAwsStrings {
   sealed trait nodejs extends Runtime
   
   @js.native
-  sealed trait nodejs10DOTx extends Runtime
+  sealed trait nodejs10Dotx extends Runtime
   
   @js.native
-  sealed trait nodejs4DOT3 extends Runtime
+  sealed trait nodejs12Dotx extends Runtime
   
   @js.native
-  sealed trait `nodejs4DOT3-edge` extends Runtime
+  sealed trait nodejs4Dot3 extends Runtime
   
   @js.native
-  sealed trait nodejs6DOT10 extends Runtime
+  sealed trait `nodejs4Dot3-edge` extends Runtime
   
   @js.native
-  sealed trait nodejs8DOT10 extends Runtime
+  sealed trait nodejs6Dot10 extends Runtime
+  
+  @js.native
+  sealed trait nodejs8Dot10 extends Runtime
   
   @js.native
   sealed trait nofile extends UlimitName
@@ -1001,25 +1007,25 @@ object atPulumiAwsStrings {
   sealed trait nproc extends UlimitName
   
   @js.native
-  sealed trait p2DOT16xlarge extends InstanceType
+  sealed trait p2Dot16xlarge extends InstanceType
   
   @js.native
-  sealed trait p2DOT8xlarge extends InstanceType
+  sealed trait p2Dot8xlarge extends InstanceType
   
   @js.native
-  sealed trait p2DOTxlarge extends InstanceType
+  sealed trait p2Dotxlarge extends InstanceType
   
   @js.native
-  sealed trait p3DOT16xlarge extends InstanceType
+  sealed trait p3Dot16xlarge extends InstanceType
   
   @js.native
-  sealed trait p3DOT2xlarge extends InstanceType
+  sealed trait p3Dot2xlarge extends InstanceType
   
   @js.native
-  sealed trait p3DOT8xlarge extends InstanceType
+  sealed trait p3Dot8xlarge extends InstanceType
   
   @js.native
-  sealed trait p3dnDOT24xlarge extends InstanceType
+  sealed trait p3dnDot24xlarge extends InstanceType
   
   @js.native
   sealed trait parallelquery extends EngineMode
@@ -1040,100 +1046,103 @@ object atPulumiAwsStrings {
   sealed trait `public-read-write` extends CannedAcl
   
   @js.native
-  sealed trait python2DOT7 extends Runtime
+  sealed trait python2Dot7 extends Runtime
   
   @js.native
-  sealed trait python3DOT6 extends Runtime
+  sealed trait python3Dot6 extends Runtime
   
   @js.native
-  sealed trait python3DOT7 extends Runtime
+  sealed trait python3Dot7 extends Runtime
   
   @js.native
-  sealed trait r3DOT2xlarge extends InstanceType
+  sealed trait python3Dot8 extends Runtime
   
   @js.native
-  sealed trait r3DOT4xlarge extends InstanceType
+  sealed trait r3Dot2xlarge extends InstanceType
   
   @js.native
-  sealed trait r3DOT8xlarge extends InstanceType
+  sealed trait r3Dot4xlarge extends InstanceType
   
   @js.native
-  sealed trait r3DOTlarge extends InstanceType
+  sealed trait r3Dot8xlarge extends InstanceType
   
   @js.native
-  sealed trait r3DOTxlarge extends InstanceType
+  sealed trait r3Dotlarge extends InstanceType
   
   @js.native
-  sealed trait r4DOT16xlarge extends InstanceType
+  sealed trait r3Dotxlarge extends InstanceType
   
   @js.native
-  sealed trait r4DOT2xlarge extends InstanceType
+  sealed trait r4Dot16xlarge extends InstanceType
   
   @js.native
-  sealed trait r4DOT4xlarge extends InstanceType
+  sealed trait r4Dot2xlarge extends InstanceType
   
   @js.native
-  sealed trait r4DOT8xlarge extends InstanceType
+  sealed trait r4Dot4xlarge extends InstanceType
   
   @js.native
-  sealed trait r4DOTlarge extends InstanceType
+  sealed trait r4Dot8xlarge extends InstanceType
   
   @js.native
-  sealed trait r4DOTxlarge extends InstanceType
+  sealed trait r4Dotlarge extends InstanceType
   
   @js.native
-  sealed trait r5DOT12xlarge extends InstanceType
+  sealed trait r4Dotxlarge extends InstanceType
   
   @js.native
-  sealed trait r5DOT24xlarge extends InstanceType
+  sealed trait r5Dot12xlarge extends InstanceType
   
   @js.native
-  sealed trait r5DOT2xlarge extends InstanceType
+  sealed trait r5Dot24xlarge extends InstanceType
   
   @js.native
-  sealed trait r5DOT4xlarge extends InstanceType
+  sealed trait r5Dot2xlarge extends InstanceType
   
   @js.native
-  sealed trait r5DOTlarge extends InstanceType
+  sealed trait r5Dot4xlarge extends InstanceType
   
   @js.native
-  sealed trait r5DOTxlarge extends InstanceType
+  sealed trait r5Dotlarge extends InstanceType
   
   @js.native
-  sealed trait r5aDOT12xlarge extends InstanceType
+  sealed trait r5Dotxlarge extends InstanceType
   
   @js.native
-  sealed trait r5aDOT24xlarge extends InstanceType
+  sealed trait r5aDot12xlarge extends InstanceType
   
   @js.native
-  sealed trait r5aDOT2xlarge extends InstanceType
+  sealed trait r5aDot24xlarge extends InstanceType
   
   @js.native
-  sealed trait r5aDOT4xlarge extends InstanceType
+  sealed trait r5aDot2xlarge extends InstanceType
   
   @js.native
-  sealed trait r5aDOTlarge extends InstanceType
+  sealed trait r5aDot4xlarge extends InstanceType
   
   @js.native
-  sealed trait r5aDOTxlarge extends InstanceType
+  sealed trait r5aDotlarge extends InstanceType
   
   @js.native
-  sealed trait r5dDOT12xlarge extends InstanceType
+  sealed trait r5aDotxlarge extends InstanceType
   
   @js.native
-  sealed trait r5dDOT24xlarge extends InstanceType
+  sealed trait r5dDot12xlarge extends InstanceType
   
   @js.native
-  sealed trait r5dDOT2xlarge extends InstanceType
+  sealed trait r5dDot24xlarge extends InstanceType
   
   @js.native
-  sealed trait r5dDOT4xlarge extends InstanceType
+  sealed trait r5dDot2xlarge extends InstanceType
   
   @js.native
-  sealed trait r5dDOTlarge extends InstanceType
+  sealed trait r5dDot4xlarge extends InstanceType
   
   @js.native
-  sealed trait r5dDOTxlarge extends InstanceType
+  sealed trait r5dDotlarge extends InstanceType
+  
+  @js.native
+  sealed trait r5dDotxlarge extends InstanceType
   
   @js.native
   sealed trait rss extends UlimitName
@@ -1145,7 +1154,7 @@ object atPulumiAwsStrings {
   sealed trait rttime extends UlimitName
   
   @js.native
-  sealed trait ruby2DOT5 extends Runtime
+  sealed trait ruby2Dot5 extends Runtime
   
   @js.native
   sealed trait `sa-east-1` extends Region
@@ -1172,70 +1181,70 @@ object atPulumiAwsStrings {
   sealed trait standard extends StorageType
   
   @js.native
-  sealed trait syslog extends LogDriver
+  sealed trait syslog_ extends LogDriver
   
   @js.native
-  sealed trait t2DOT2xlarge extends InstanceType
+  sealed trait t2Dot2xlarge extends InstanceType
   
   @js.native
-  sealed trait t2DOTlarge extends InstanceType
+  sealed trait t2Dotlarge extends InstanceType
   
   @js.native
-  sealed trait t2DOTmedium extends InstanceType
+  sealed trait t2Dotmedium extends InstanceType
   
   @js.native
-  sealed trait t2DOTmicro extends InstanceType
+  sealed trait t2Dotmicro extends InstanceType
   
   @js.native
-  sealed trait t2DOTnano extends InstanceType
+  sealed trait t2Dotnano extends InstanceType
   
   @js.native
-  sealed trait t2DOTsmall extends InstanceType
+  sealed trait t2Dotsmall extends InstanceType
   
   @js.native
-  sealed trait t2DOTxlarge extends InstanceType
+  sealed trait t2Dotxlarge extends InstanceType
   
   @js.native
-  sealed trait t3DOT2xlarge extends InstanceType
+  sealed trait t3Dot2xlarge extends InstanceType
   
   @js.native
-  sealed trait t3DOTlarge extends InstanceType
+  sealed trait t3Dotlarge extends InstanceType
   
   @js.native
-  sealed trait t3DOTmedium extends InstanceType
+  sealed trait t3Dotmedium extends InstanceType
   
   @js.native
-  sealed trait t3DOTmicro extends InstanceType
+  sealed trait t3Dotmicro extends InstanceType
   
   @js.native
-  sealed trait t3DOTnano extends InstanceType
+  sealed trait t3Dotnano extends InstanceType
   
   @js.native
-  sealed trait t3DOTsmall extends InstanceType
+  sealed trait t3Dotsmall extends InstanceType
   
   @js.native
-  sealed trait t3DOTxlarge extends InstanceType
+  sealed trait t3Dotxlarge extends InstanceType
   
   @js.native
-  sealed trait t3aDOT2xlarge extends InstanceType
+  sealed trait t3aDot2xlarge extends InstanceType
   
   @js.native
-  sealed trait t3aDOTlarge extends InstanceType
+  sealed trait t3aDotlarge extends InstanceType
   
   @js.native
-  sealed trait t3aDOTmedium extends InstanceType
+  sealed trait t3aDotmedium extends InstanceType
   
   @js.native
-  sealed trait t3aDOTmicro extends InstanceType
+  sealed trait t3aDotmicro extends InstanceType
   
   @js.native
-  sealed trait t3aDOTnano extends InstanceType
+  sealed trait t3aDotnano extends InstanceType
   
   @js.native
-  sealed trait t3aDOTsmall extends InstanceType
+  sealed trait t3aDotsmall extends InstanceType
   
   @js.native
-  sealed trait t3aDOTxlarge extends InstanceType
+  sealed trait t3aDotxlarge extends InstanceType
   
   @js.native
   sealed trait tagged extends js.Object
@@ -1246,13 +1255,13 @@ object atPulumiAwsStrings {
        with ProtocolType
   
   @js.native
-  sealed trait `u-12tb1DOTmetal` extends InstanceType
+  sealed trait `u-12tb1Dotmetal` extends InstanceType
   
   @js.native
-  sealed trait `u-6tb1DOTmetal` extends InstanceType
+  sealed trait `u-6tb1Dotmetal` extends InstanceType
   
   @js.native
-  sealed trait `u-9tb1DOTmetal` extends InstanceType
+  sealed trait `u-9tb1Dotmetal` extends InstanceType
   
   @js.native
   sealed trait udp
@@ -1275,49 +1284,47 @@ object atPulumiAwsStrings {
   sealed trait `us-west-2` extends Region
   
   @js.native
-  sealed trait x1DOT16xlarge extends InstanceType
+  sealed trait x1Dot16xlarge extends InstanceType
   
   @js.native
-  sealed trait x1DOT32xlarge extends InstanceType
+  sealed trait x1Dot32xlarge extends InstanceType
   
   @js.native
-  sealed trait x1eDOT16xlarge extends InstanceType
+  sealed trait x1eDot16xlarge extends InstanceType
   
   @js.native
-  sealed trait x1eDOT2xlarge extends InstanceType
+  sealed trait x1eDot2xlarge extends InstanceType
   
   @js.native
-  sealed trait x1eDOT32xlarge extends InstanceType
+  sealed trait x1eDot32xlarge extends InstanceType
   
   @js.native
-  sealed trait x1eDOT4xlarge extends InstanceType
+  sealed trait x1eDot4xlarge extends InstanceType
   
   @js.native
-  sealed trait x1eDOT8xlarge extends InstanceType
+  sealed trait x1eDot8xlarge extends InstanceType
   
   @js.native
-  sealed trait x1eDOTxlarge extends InstanceType
+  sealed trait x1eDotxlarge extends InstanceType
   
   @js.native
-  sealed trait z1dDOT12xlarge extends InstanceType
+  sealed trait z1dDot12xlarge extends InstanceType
   
   @js.native
-  sealed trait z1dDOT2xlarge extends InstanceType
+  sealed trait z1dDot2xlarge extends InstanceType
   
   @js.native
-  sealed trait z1dDOT3xlarge extends InstanceType
+  sealed trait z1dDot3xlarge extends InstanceType
   
   @js.native
-  sealed trait z1dDOT6xlarge extends InstanceType
+  sealed trait z1dDot6xlarge extends InstanceType
   
   @js.native
-  sealed trait z1dDOTlarge extends InstanceType
+  sealed trait z1dDotlarge extends InstanceType
   
   @js.native
-  sealed trait z1dDOTxlarge extends InstanceType
+  sealed trait z1dDotxlarge extends InstanceType
   
-  @scala.inline
-  def `*`: `*` = "*".asInstanceOf[`*`]
   @scala.inline
   def `1Minute`: `1Minute` = "1Minute".asInstanceOf[`1Minute`]
   @scala.inline
@@ -1338,6 +1345,8 @@ object atPulumiAwsStrings {
   def AUDIT_WRITE: AUDIT_WRITE = "AUDIT_WRITE".asInstanceOf[AUDIT_WRITE]
   @scala.inline
   def Allow: Allow = "Allow".asInstanceOf[Allow]
+  @scala.inline
+  def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   @scala.inline
   def BLOCK_SUSPEND: BLOCK_SUSPEND = "BLOCK_SUSPEND".asInstanceOf[BLOCK_SUSPEND]
   @scala.inline
@@ -1395,7 +1404,7 @@ object atPulumiAwsStrings {
   @scala.inline
   def LINUX_IMMUTABLE: LINUX_IMMUTABLE = "LINUX_IMMUTABLE".asInstanceOf[LINUX_IMMUTABLE]
   @scala.inline
-  def `Linux/UNIX`: `Linux/UNIX` = "Linux/UNIX".asInstanceOf[`Linux/UNIX`]
+  def LinuxSlashUNIX: LinuxSlashUNIX = "Linux/UNIX".asInstanceOf[LinuxSlashUNIX]
   @scala.inline
   def MAC_ADMIN: MAC_ADMIN = "MAC_ADMIN".asInstanceOf[MAC_ADMIN]
   @scala.inline
@@ -1491,17 +1500,17 @@ object atPulumiAwsStrings {
   @scala.inline
   def `Windows with SQL Server Web`: `Windows with SQL Server Web` = "Windows with SQL Server Web".asInstanceOf[`Windows with SQL Server Web`]
   @scala.inline
-  def a1DOT2xlarge: a1DOT2xlarge = "a1.2xlarge".asInstanceOf[a1DOT2xlarge]
+  def a1Dot2xlarge: a1Dot2xlarge = "a1.2xlarge".asInstanceOf[a1Dot2xlarge]
   @scala.inline
-  def a1DOT4xlarge: a1DOT4xlarge = "a1.4xlarge".asInstanceOf[a1DOT4xlarge]
+  def a1Dot4xlarge: a1Dot4xlarge = "a1.4xlarge".asInstanceOf[a1Dot4xlarge]
   @scala.inline
-  def a1DOTlarge: a1DOTlarge = "a1.large".asInstanceOf[a1DOTlarge]
+  def a1Dotlarge: a1Dotlarge = "a1.large".asInstanceOf[a1Dotlarge]
   @scala.inline
-  def a1DOTmedium: a1DOTmedium = "a1.medium".asInstanceOf[a1DOTmedium]
+  def a1Dotmedium: a1Dotmedium = "a1.medium".asInstanceOf[a1Dotmedium]
   @scala.inline
-  def a1DOTxlarge: a1DOTxlarge = "a1.xlarge".asInstanceOf[a1DOTxlarge]
+  def a1Dotxlarge: a1Dotxlarge = "a1.xlarge".asInstanceOf[a1Dotxlarge]
   @scala.inline
-  def all: all = "all".asInstanceOf[all]
+  def all_ : all_ = "all".asInstanceOf[all_]
   @scala.inline
   def any: any = "any".asInstanceOf[any]
   @scala.inline
@@ -1527,21 +1536,21 @@ object atPulumiAwsStrings {
   @scala.inline
   def `authenticated-read`: `authenticated-read` = "authenticated-read".asInstanceOf[`authenticated-read`]
   @scala.inline
-  def `autoscaling:EC2_INSTANCE_LAUNCH`: `autoscaling:EC2_INSTANCE_LAUNCH` = "autoscaling:EC2_INSTANCE_LAUNCH".asInstanceOf[`autoscaling:EC2_INSTANCE_LAUNCH`]
+  def autoscalingColonEC2_INSTANCE_LAUNCH: autoscalingColonEC2_INSTANCE_LAUNCH = "autoscaling:EC2_INSTANCE_LAUNCH".asInstanceOf[autoscalingColonEC2_INSTANCE_LAUNCH]
   @scala.inline
-  def `autoscaling:EC2_INSTANCE_LAUNCH_ERROR`: `autoscaling:EC2_INSTANCE_LAUNCH_ERROR` = "autoscaling:EC2_INSTANCE_LAUNCH_ERROR".asInstanceOf[`autoscaling:EC2_INSTANCE_LAUNCH_ERROR`]
+  def autoscalingColonEC2_INSTANCE_LAUNCH_ERROR: autoscalingColonEC2_INSTANCE_LAUNCH_ERROR = "autoscaling:EC2_INSTANCE_LAUNCH_ERROR".asInstanceOf[autoscalingColonEC2_INSTANCE_LAUNCH_ERROR]
   @scala.inline
-  def `autoscaling:EC2_INSTANCE_TERMINATE`: `autoscaling:EC2_INSTANCE_TERMINATE` = "autoscaling:EC2_INSTANCE_TERMINATE".asInstanceOf[`autoscaling:EC2_INSTANCE_TERMINATE`]
+  def autoscalingColonEC2_INSTANCE_TERMINATE: autoscalingColonEC2_INSTANCE_TERMINATE = "autoscaling:EC2_INSTANCE_TERMINATE".asInstanceOf[autoscalingColonEC2_INSTANCE_TERMINATE]
   @scala.inline
-  def `autoscaling:EC2_INSTANCE_TERMINATE_ERROR`: `autoscaling:EC2_INSTANCE_TERMINATE_ERROR` = "autoscaling:EC2_INSTANCE_TERMINATE_ERROR".asInstanceOf[`autoscaling:EC2_INSTANCE_TERMINATE_ERROR`]
+  def autoscalingColonEC2_INSTANCE_TERMINATE_ERROR: autoscalingColonEC2_INSTANCE_TERMINATE_ERROR = "autoscaling:EC2_INSTANCE_TERMINATE_ERROR".asInstanceOf[autoscalingColonEC2_INSTANCE_TERMINATE_ERROR]
   @scala.inline
-  def `autoscaling:TEST_NOTIFICATION`: `autoscaling:TEST_NOTIFICATION` = "autoscaling:TEST_NOTIFICATION".asInstanceOf[`autoscaling:TEST_NOTIFICATION`]
+  def autoscalingColonTEST_NOTIFICATION: autoscalingColonTEST_NOTIFICATION = "autoscaling:TEST_NOTIFICATION".asInstanceOf[autoscalingColonTEST_NOTIFICATION]
   @scala.inline
   def `aws-exec-read`: `aws-exec-read` = "aws-exec-read".asInstanceOf[`aws-exec-read`]
   @scala.inline
-  def `aws:kinesis`: `aws:kinesis` = "aws:kinesis".asInstanceOf[`aws:kinesis`]
+  def awsColonkinesis: awsColonkinesis = "aws:kinesis".asInstanceOf[awsColonkinesis]
   @scala.inline
-  def `aws:kinesis:record`: `aws:kinesis:record` = "aws:kinesis:record".asInstanceOf[`aws:kinesis:record`]
+  def awsColonkinesisColonrecord: awsColonkinesisColonrecord = "aws:kinesis:record".asInstanceOf[awsColonkinesisColonrecord]
   @scala.inline
   def awslogs: awslogs = "awslogs".asInstanceOf[awslogs]
   @scala.inline
@@ -1549,61 +1558,61 @@ object atPulumiAwsStrings {
   @scala.inline
   def `bucket-owner-read`: `bucket-owner-read` = "bucket-owner-read".asInstanceOf[`bucket-owner-read`]
   @scala.inline
-  def c3DOT2xlarge: c3DOT2xlarge = "c3.2xlarge".asInstanceOf[c3DOT2xlarge]
+  def c3Dot2xlarge: c3Dot2xlarge = "c3.2xlarge".asInstanceOf[c3Dot2xlarge]
   @scala.inline
-  def c3DOT4xlarge: c3DOT4xlarge = "c3.4xlarge".asInstanceOf[c3DOT4xlarge]
+  def c3Dot4xlarge: c3Dot4xlarge = "c3.4xlarge".asInstanceOf[c3Dot4xlarge]
   @scala.inline
-  def c3DOT8xlarge: c3DOT8xlarge = "c3.8xlarge".asInstanceOf[c3DOT8xlarge]
+  def c3Dot8xlarge: c3Dot8xlarge = "c3.8xlarge".asInstanceOf[c3Dot8xlarge]
   @scala.inline
-  def c3DOTlarge: c3DOTlarge = "c3.large".asInstanceOf[c3DOTlarge]
+  def c3Dotlarge: c3Dotlarge = "c3.large".asInstanceOf[c3Dotlarge]
   @scala.inline
-  def c3DOTxlarge: c3DOTxlarge = "c3.xlarge".asInstanceOf[c3DOTxlarge]
+  def c3Dotxlarge: c3Dotxlarge = "c3.xlarge".asInstanceOf[c3Dotxlarge]
   @scala.inline
-  def c4DOT2xlarge: c4DOT2xlarge = "c4.2xlarge".asInstanceOf[c4DOT2xlarge]
+  def c4Dot2xlarge: c4Dot2xlarge = "c4.2xlarge".asInstanceOf[c4Dot2xlarge]
   @scala.inline
-  def c4DOT4xlarge: c4DOT4xlarge = "c4.4xlarge".asInstanceOf[c4DOT4xlarge]
+  def c4Dot4xlarge: c4Dot4xlarge = "c4.4xlarge".asInstanceOf[c4Dot4xlarge]
   @scala.inline
-  def c4DOT8xlarge: c4DOT8xlarge = "c4.8xlarge".asInstanceOf[c4DOT8xlarge]
+  def c4Dot8xlarge: c4Dot8xlarge = "c4.8xlarge".asInstanceOf[c4Dot8xlarge]
   @scala.inline
-  def c4DOTlarge: c4DOTlarge = "c4.large".asInstanceOf[c4DOTlarge]
+  def c4Dotlarge: c4Dotlarge = "c4.large".asInstanceOf[c4Dotlarge]
   @scala.inline
-  def c4DOTxlarge: c4DOTxlarge = "c4.xlarge".asInstanceOf[c4DOTxlarge]
+  def c4Dotxlarge: c4Dotxlarge = "c4.xlarge".asInstanceOf[c4Dotxlarge]
   @scala.inline
-  def c5DOT18xlarge: c5DOT18xlarge = "c5.18xlarge".asInstanceOf[c5DOT18xlarge]
+  def c5Dot18xlarge: c5Dot18xlarge = "c5.18xlarge".asInstanceOf[c5Dot18xlarge]
   @scala.inline
-  def c5DOT2xlarge: c5DOT2xlarge = "c5.2xlarge".asInstanceOf[c5DOT2xlarge]
+  def c5Dot2xlarge: c5Dot2xlarge = "c5.2xlarge".asInstanceOf[c5Dot2xlarge]
   @scala.inline
-  def c5DOT4xlarge: c5DOT4xlarge = "c5.4xlarge".asInstanceOf[c5DOT4xlarge]
+  def c5Dot4xlarge: c5Dot4xlarge = "c5.4xlarge".asInstanceOf[c5Dot4xlarge]
   @scala.inline
-  def c5DOT9xlarge: c5DOT9xlarge = "c5.9xlarge".asInstanceOf[c5DOT9xlarge]
+  def c5Dot9xlarge: c5Dot9xlarge = "c5.9xlarge".asInstanceOf[c5Dot9xlarge]
   @scala.inline
-  def c5DOTlarge: c5DOTlarge = "c5.large".asInstanceOf[c5DOTlarge]
+  def c5Dotlarge: c5Dotlarge = "c5.large".asInstanceOf[c5Dotlarge]
   @scala.inline
-  def c5DOTxlarge: c5DOTxlarge = "c5.xlarge".asInstanceOf[c5DOTxlarge]
+  def c5Dotxlarge: c5Dotxlarge = "c5.xlarge".asInstanceOf[c5Dotxlarge]
   @scala.inline
-  def c5dDOT18xlarge: c5dDOT18xlarge = "c5d.18xlarge".asInstanceOf[c5dDOT18xlarge]
+  def c5dDot18xlarge: c5dDot18xlarge = "c5d.18xlarge".asInstanceOf[c5dDot18xlarge]
   @scala.inline
-  def c5dDOT2xlarge: c5dDOT2xlarge = "c5d.2xlarge".asInstanceOf[c5dDOT2xlarge]
+  def c5dDot2xlarge: c5dDot2xlarge = "c5d.2xlarge".asInstanceOf[c5dDot2xlarge]
   @scala.inline
-  def c5dDOT4xlarge: c5dDOT4xlarge = "c5d.4xlarge".asInstanceOf[c5dDOT4xlarge]
+  def c5dDot4xlarge: c5dDot4xlarge = "c5d.4xlarge".asInstanceOf[c5dDot4xlarge]
   @scala.inline
-  def c5dDOT9xlarge: c5dDOT9xlarge = "c5d.9xlarge".asInstanceOf[c5dDOT9xlarge]
+  def c5dDot9xlarge: c5dDot9xlarge = "c5d.9xlarge".asInstanceOf[c5dDot9xlarge]
   @scala.inline
-  def c5dDOTlarge: c5dDOTlarge = "c5d.large".asInstanceOf[c5dDOTlarge]
+  def c5dDotlarge: c5dDotlarge = "c5d.large".asInstanceOf[c5dDotlarge]
   @scala.inline
-  def c5dDOTxlarge: c5dDOTxlarge = "c5d.xlarge".asInstanceOf[c5dDOTxlarge]
+  def c5dDotxlarge: c5dDotxlarge = "c5d.xlarge".asInstanceOf[c5dDotxlarge]
   @scala.inline
-  def c5nDOT18xlarge: c5nDOT18xlarge = "c5n.18xlarge".asInstanceOf[c5nDOT18xlarge]
+  def c5nDot18xlarge: c5nDot18xlarge = "c5n.18xlarge".asInstanceOf[c5nDot18xlarge]
   @scala.inline
-  def c5nDOT2xlarge: c5nDOT2xlarge = "c5n.2xlarge".asInstanceOf[c5nDOT2xlarge]
+  def c5nDot2xlarge: c5nDot2xlarge = "c5n.2xlarge".asInstanceOf[c5nDot2xlarge]
   @scala.inline
-  def c5nDOT4xlarge: c5nDOT4xlarge = "c5n.4xlarge".asInstanceOf[c5nDOT4xlarge]
+  def c5nDot4xlarge: c5nDot4xlarge = "c5n.4xlarge".asInstanceOf[c5nDot4xlarge]
   @scala.inline
-  def c5nDOT9xlarge: c5nDOT9xlarge = "c5n.9xlarge".asInstanceOf[c5nDOT9xlarge]
+  def c5nDot9xlarge: c5nDot9xlarge = "c5n.9xlarge".asInstanceOf[c5nDot9xlarge]
   @scala.inline
-  def c5nDOTlarge: c5nDOTlarge = "c5n.large".asInstanceOf[c5nDOTlarge]
+  def c5nDotlarge: c5nDotlarge = "c5n.large".asInstanceOf[c5nDotlarge]
   @scala.inline
-  def c5nDOTxlarge: c5nDOTxlarge = "c5n.xlarge".asInstanceOf[c5nDOTxlarge]
+  def c5nDotxlarge: c5nDotxlarge = "c5n.xlarge".asInstanceOf[c5nDotxlarge]
   @scala.inline
   def `ca-central-1`: `ca-central-1` = "ca-central-1".asInstanceOf[`ca-central-1`]
   @scala.inline
@@ -1617,143 +1626,143 @@ object atPulumiAwsStrings {
   @scala.inline
   def cpu: cpu = "cpu".asInstanceOf[cpu]
   @scala.inline
-  def d2DOT2xlarge: d2DOT2xlarge = "d2.2xlarge".asInstanceOf[d2DOT2xlarge]
+  def d2Dot2xlarge: d2Dot2xlarge = "d2.2xlarge".asInstanceOf[d2Dot2xlarge]
   @scala.inline
-  def d2DOT4xlarge: d2DOT4xlarge = "d2.4xlarge".asInstanceOf[d2DOT4xlarge]
+  def d2Dot4xlarge: d2Dot4xlarge = "d2.4xlarge".asInstanceOf[d2Dot4xlarge]
   @scala.inline
-  def d2DOT8xlarge: d2DOT8xlarge = "d2.8xlarge".asInstanceOf[d2DOT8xlarge]
+  def d2Dot8xlarge: d2Dot8xlarge = "d2.8xlarge".asInstanceOf[d2Dot8xlarge]
   @scala.inline
-  def d2DOTxlarge: d2DOTxlarge = "d2.xlarge".asInstanceOf[d2DOTxlarge]
+  def d2Dotxlarge: d2Dotxlarge = "d2.xlarge".asInstanceOf[d2Dotxlarge]
   @scala.inline
   def data: data = "data".asInstanceOf[data]
   @scala.inline
-  def dbDOTm1DOTlarge: dbDOTm1DOTlarge = "db.m1.large".asInstanceOf[dbDOTm1DOTlarge]
+  def dbDotm1Dotlarge: dbDotm1Dotlarge = "db.m1.large".asInstanceOf[dbDotm1Dotlarge]
   @scala.inline
-  def dbDOTm1DOTmedium: dbDOTm1DOTmedium = "db.m1.medium".asInstanceOf[dbDOTm1DOTmedium]
+  def dbDotm1Dotmedium: dbDotm1Dotmedium = "db.m1.medium".asInstanceOf[dbDotm1Dotmedium]
   @scala.inline
-  def dbDOTm1DOTsmall: dbDOTm1DOTsmall = "db.m1.small".asInstanceOf[dbDOTm1DOTsmall]
+  def dbDotm1Dotsmall: dbDotm1Dotsmall = "db.m1.small".asInstanceOf[dbDotm1Dotsmall]
   @scala.inline
-  def dbDOTm1DOTxlarge: dbDOTm1DOTxlarge = "db.m1.xlarge".asInstanceOf[dbDOTm1DOTxlarge]
+  def dbDotm1Dotxlarge: dbDotm1Dotxlarge = "db.m1.xlarge".asInstanceOf[dbDotm1Dotxlarge]
   @scala.inline
-  def dbDOTm2DOT2xlarge: dbDOTm2DOT2xlarge = "db.m2.2xlarge".asInstanceOf[dbDOTm2DOT2xlarge]
+  def dbDotm2Dot2xlarge: dbDotm2Dot2xlarge = "db.m2.2xlarge".asInstanceOf[dbDotm2Dot2xlarge]
   @scala.inline
-  def dbDOTm2DOT4xlarge: dbDOTm2DOT4xlarge = "db.m2.4xlarge".asInstanceOf[dbDOTm2DOT4xlarge]
+  def dbDotm2Dot4xlarge: dbDotm2Dot4xlarge = "db.m2.4xlarge".asInstanceOf[dbDotm2Dot4xlarge]
   @scala.inline
-  def dbDOTm2DOTxlarge: dbDOTm2DOTxlarge = "db.m2.xlarge".asInstanceOf[dbDOTm2DOTxlarge]
+  def dbDotm2Dotxlarge: dbDotm2Dotxlarge = "db.m2.xlarge".asInstanceOf[dbDotm2Dotxlarge]
   @scala.inline
-  def dbDOTm3DOT2xlarge: dbDOTm3DOT2xlarge = "db.m3.2xlarge".asInstanceOf[dbDOTm3DOT2xlarge]
+  def dbDotm3Dot2xlarge: dbDotm3Dot2xlarge = "db.m3.2xlarge".asInstanceOf[dbDotm3Dot2xlarge]
   @scala.inline
-  def dbDOTm3DOTlarge: dbDOTm3DOTlarge = "db.m3.large".asInstanceOf[dbDOTm3DOTlarge]
+  def dbDotm3Dotlarge: dbDotm3Dotlarge = "db.m3.large".asInstanceOf[dbDotm3Dotlarge]
   @scala.inline
-  def dbDOTm3DOTmedium: dbDOTm3DOTmedium = "db.m3.medium".asInstanceOf[dbDOTm3DOTmedium]
+  def dbDotm3Dotmedium: dbDotm3Dotmedium = "db.m3.medium".asInstanceOf[dbDotm3Dotmedium]
   @scala.inline
-  def dbDOTm3DOTxlarge: dbDOTm3DOTxlarge = "db.m3.xlarge".asInstanceOf[dbDOTm3DOTxlarge]
+  def dbDotm3Dotxlarge: dbDotm3Dotxlarge = "db.m3.xlarge".asInstanceOf[dbDotm3Dotxlarge]
   @scala.inline
-  def dbDOTm4DOT10xlarge: dbDOTm4DOT10xlarge = "db.m4.10xlarge".asInstanceOf[dbDOTm4DOT10xlarge]
+  def dbDotm4Dot10xlarge: dbDotm4Dot10xlarge = "db.m4.10xlarge".asInstanceOf[dbDotm4Dot10xlarge]
   @scala.inline
-  def dbDOTm4DOT16xlarge: dbDOTm4DOT16xlarge = "db.m4.16xlarge".asInstanceOf[dbDOTm4DOT16xlarge]
+  def dbDotm4Dot16xlarge: dbDotm4Dot16xlarge = "db.m4.16xlarge".asInstanceOf[dbDotm4Dot16xlarge]
   @scala.inline
-  def dbDOTm4DOT2xlarge: dbDOTm4DOT2xlarge = "db.m4.2xlarge".asInstanceOf[dbDOTm4DOT2xlarge]
+  def dbDotm4Dot2xlarge: dbDotm4Dot2xlarge = "db.m4.2xlarge".asInstanceOf[dbDotm4Dot2xlarge]
   @scala.inline
-  def dbDOTm4DOT4xlarge: dbDOTm4DOT4xlarge = "db.m4.4xlarge".asInstanceOf[dbDOTm4DOT4xlarge]
+  def dbDotm4Dot4xlarge: dbDotm4Dot4xlarge = "db.m4.4xlarge".asInstanceOf[dbDotm4Dot4xlarge]
   @scala.inline
-  def dbDOTm4DOTlarge: dbDOTm4DOTlarge = "db.m4.large".asInstanceOf[dbDOTm4DOTlarge]
+  def dbDotm4Dotlarge: dbDotm4Dotlarge = "db.m4.large".asInstanceOf[dbDotm4Dotlarge]
   @scala.inline
-  def dbDOTm4DOTxlarge: dbDOTm4DOTxlarge = "db.m4.xlarge".asInstanceOf[dbDOTm4DOTxlarge]
+  def dbDotm4Dotxlarge: dbDotm4Dotxlarge = "db.m4.xlarge".asInstanceOf[dbDotm4Dotxlarge]
   @scala.inline
-  def dbDOTm5DOT12xlarge: dbDOTm5DOT12xlarge = "db.m5.12xlarge".asInstanceOf[dbDOTm5DOT12xlarge]
+  def dbDotm5Dot12xlarge: dbDotm5Dot12xlarge = "db.m5.12xlarge".asInstanceOf[dbDotm5Dot12xlarge]
   @scala.inline
-  def dbDOTm5DOT24xlarge: dbDOTm5DOT24xlarge = "db.m5.24xlarge".asInstanceOf[dbDOTm5DOT24xlarge]
+  def dbDotm5Dot24xlarge: dbDotm5Dot24xlarge = "db.m5.24xlarge".asInstanceOf[dbDotm5Dot24xlarge]
   @scala.inline
-  def dbDOTm5DOT2xlarge: dbDOTm5DOT2xlarge = "db.m5.2xlarge".asInstanceOf[dbDOTm5DOT2xlarge]
+  def dbDotm5Dot2xlarge: dbDotm5Dot2xlarge = "db.m5.2xlarge".asInstanceOf[dbDotm5Dot2xlarge]
   @scala.inline
-  def dbDOTm5DOT4xlarge: dbDOTm5DOT4xlarge = "db.m5.4xlarge".asInstanceOf[dbDOTm5DOT4xlarge]
+  def dbDotm5Dot4xlarge: dbDotm5Dot4xlarge = "db.m5.4xlarge".asInstanceOf[dbDotm5Dot4xlarge]
   @scala.inline
-  def dbDOTm5DOTlarge: dbDOTm5DOTlarge = "db.m5.large".asInstanceOf[dbDOTm5DOTlarge]
+  def dbDotm5Dotlarge: dbDotm5Dotlarge = "db.m5.large".asInstanceOf[dbDotm5Dotlarge]
   @scala.inline
-  def dbDOTm5DOTxlarge: dbDOTm5DOTxlarge = "db.m5.xlarge".asInstanceOf[dbDOTm5DOTxlarge]
+  def dbDotm5Dotxlarge: dbDotm5Dotxlarge = "db.m5.xlarge".asInstanceOf[dbDotm5Dotxlarge]
   @scala.inline
-  def dbDOTr3DOT2xlarge: dbDOTr3DOT2xlarge = "db.r3.2xlarge".asInstanceOf[dbDOTr3DOT2xlarge]
+  def dbDotr3Dot2xlarge: dbDotr3Dot2xlarge = "db.r3.2xlarge".asInstanceOf[dbDotr3Dot2xlarge]
   @scala.inline
-  def dbDOTr3DOT4xlarge: dbDOTr3DOT4xlarge = "db.r3.4xlarge".asInstanceOf[dbDOTr3DOT4xlarge]
+  def dbDotr3Dot4xlarge: dbDotr3Dot4xlarge = "db.r3.4xlarge".asInstanceOf[dbDotr3Dot4xlarge]
   @scala.inline
-  def dbDOTr3DOT8xlarge: dbDOTr3DOT8xlarge = "db.r3.8xlarge".asInstanceOf[dbDOTr3DOT8xlarge]
+  def dbDotr3Dot8xlarge: dbDotr3Dot8xlarge = "db.r3.8xlarge".asInstanceOf[dbDotr3Dot8xlarge]
   @scala.inline
-  def dbDOTr3DOTlarge: dbDOTr3DOTlarge = "db.r3.large".asInstanceOf[dbDOTr3DOTlarge]
+  def dbDotr3Dotlarge: dbDotr3Dotlarge = "db.r3.large".asInstanceOf[dbDotr3Dotlarge]
   @scala.inline
-  def dbDOTr3DOTxlarge: dbDOTr3DOTxlarge = "db.r3.xlarge".asInstanceOf[dbDOTr3DOTxlarge]
+  def dbDotr3Dotxlarge: dbDotr3Dotxlarge = "db.r3.xlarge".asInstanceOf[dbDotr3Dotxlarge]
   @scala.inline
-  def dbDOTr4DOT16xlarge: dbDOTr4DOT16xlarge = "db.r4.16xlarge".asInstanceOf[dbDOTr4DOT16xlarge]
+  def dbDotr4Dot16xlarge: dbDotr4Dot16xlarge = "db.r4.16xlarge".asInstanceOf[dbDotr4Dot16xlarge]
   @scala.inline
-  def dbDOTr4DOT2xlarge: dbDOTr4DOT2xlarge = "db.r4.2xlarge".asInstanceOf[dbDOTr4DOT2xlarge]
+  def dbDotr4Dot2xlarge: dbDotr4Dot2xlarge = "db.r4.2xlarge".asInstanceOf[dbDotr4Dot2xlarge]
   @scala.inline
-  def dbDOTr4DOT4xlarge: dbDOTr4DOT4xlarge = "db.r4.4xlarge".asInstanceOf[dbDOTr4DOT4xlarge]
+  def dbDotr4Dot4xlarge: dbDotr4Dot4xlarge = "db.r4.4xlarge".asInstanceOf[dbDotr4Dot4xlarge]
   @scala.inline
-  def dbDOTr4DOT8xlarge: dbDOTr4DOT8xlarge = "db.r4.8xlarge".asInstanceOf[dbDOTr4DOT8xlarge]
+  def dbDotr4Dot8xlarge: dbDotr4Dot8xlarge = "db.r4.8xlarge".asInstanceOf[dbDotr4Dot8xlarge]
   @scala.inline
-  def dbDOTr4DOTlarge: dbDOTr4DOTlarge = "db.r4.large".asInstanceOf[dbDOTr4DOTlarge]
+  def dbDotr4Dotlarge: dbDotr4Dotlarge = "db.r4.large".asInstanceOf[dbDotr4Dotlarge]
   @scala.inline
-  def dbDOTr4DOTxlarge: dbDOTr4DOTxlarge = "db.r4.xlarge".asInstanceOf[dbDOTr4DOTxlarge]
+  def dbDotr4Dotxlarge: dbDotr4Dotxlarge = "db.r4.xlarge".asInstanceOf[dbDotr4Dotxlarge]
   @scala.inline
-  def dbDOTr5DOT12xlarge: dbDOTr5DOT12xlarge = "db.r5.12xlarge".asInstanceOf[dbDOTr5DOT12xlarge]
+  def dbDotr5Dot12xlarge: dbDotr5Dot12xlarge = "db.r5.12xlarge".asInstanceOf[dbDotr5Dot12xlarge]
   @scala.inline
-  def dbDOTr5DOT24xlarge: dbDOTr5DOT24xlarge = "db.r5.24xlarge".asInstanceOf[dbDOTr5DOT24xlarge]
+  def dbDotr5Dot24xlarge: dbDotr5Dot24xlarge = "db.r5.24xlarge".asInstanceOf[dbDotr5Dot24xlarge]
   @scala.inline
-  def dbDOTr5DOT2xlarge: dbDOTr5DOT2xlarge = "db.r5.2xlarge".asInstanceOf[dbDOTr5DOT2xlarge]
+  def dbDotr5Dot2xlarge: dbDotr5Dot2xlarge = "db.r5.2xlarge".asInstanceOf[dbDotr5Dot2xlarge]
   @scala.inline
-  def dbDOTr5DOT4xlarge: dbDOTr5DOT4xlarge = "db.r5.4xlarge".asInstanceOf[dbDOTr5DOT4xlarge]
+  def dbDotr5Dot4xlarge: dbDotr5Dot4xlarge = "db.r5.4xlarge".asInstanceOf[dbDotr5Dot4xlarge]
   @scala.inline
-  def dbDOTr5DOTlarge: dbDOTr5DOTlarge = "db.r5.large".asInstanceOf[dbDOTr5DOTlarge]
+  def dbDotr5Dotlarge: dbDotr5Dotlarge = "db.r5.large".asInstanceOf[dbDotr5Dotlarge]
   @scala.inline
-  def dbDOTr5DOTxlarge: dbDOTr5DOTxlarge = "db.r5.xlarge".asInstanceOf[dbDOTr5DOTxlarge]
+  def dbDotr5Dotxlarge: dbDotr5Dotxlarge = "db.r5.xlarge".asInstanceOf[dbDotr5Dotxlarge]
   @scala.inline
-  def dbDOTt2DOT2xlarge: dbDOTt2DOT2xlarge = "db.t2.2xlarge".asInstanceOf[dbDOTt2DOT2xlarge]
+  def dbDott2Dot2xlarge: dbDott2Dot2xlarge = "db.t2.2xlarge".asInstanceOf[dbDott2Dot2xlarge]
   @scala.inline
-  def dbDOTt2DOTlarge: dbDOTt2DOTlarge = "db.t2.large".asInstanceOf[dbDOTt2DOTlarge]
+  def dbDott2Dotlarge: dbDott2Dotlarge = "db.t2.large".asInstanceOf[dbDott2Dotlarge]
   @scala.inline
-  def dbDOTt2DOTmedium: dbDOTt2DOTmedium = "db.t2.medium".asInstanceOf[dbDOTt2DOTmedium]
+  def dbDott2Dotmedium: dbDott2Dotmedium = "db.t2.medium".asInstanceOf[dbDott2Dotmedium]
   @scala.inline
-  def dbDOTt2DOTmicro: dbDOTt2DOTmicro = "db.t2.micro".asInstanceOf[dbDOTt2DOTmicro]
+  def dbDott2Dotmicro: dbDott2Dotmicro = "db.t2.micro".asInstanceOf[dbDott2Dotmicro]
   @scala.inline
-  def dbDOTt2DOTsmall: dbDOTt2DOTsmall = "db.t2.small".asInstanceOf[dbDOTt2DOTsmall]
+  def dbDott2Dotsmall: dbDott2Dotsmall = "db.t2.small".asInstanceOf[dbDott2Dotsmall]
   @scala.inline
-  def dbDOTt2DOTxlarge: dbDOTt2DOTxlarge = "db.t2.xlarge".asInstanceOf[dbDOTt2DOTxlarge]
+  def dbDott2Dotxlarge: dbDott2Dotxlarge = "db.t2.xlarge".asInstanceOf[dbDott2Dotxlarge]
   @scala.inline
-  def dbDOTt3DOT2xlarge: dbDOTt3DOT2xlarge = "db.t3.2xlarge".asInstanceOf[dbDOTt3DOT2xlarge]
+  def dbDott3Dot2xlarge: dbDott3Dot2xlarge = "db.t3.2xlarge".asInstanceOf[dbDott3Dot2xlarge]
   @scala.inline
-  def dbDOTt3DOTlarge: dbDOTt3DOTlarge = "db.t3.large".asInstanceOf[dbDOTt3DOTlarge]
+  def dbDott3Dotlarge: dbDott3Dotlarge = "db.t3.large".asInstanceOf[dbDott3Dotlarge]
   @scala.inline
-  def dbDOTt3DOTmedium: dbDOTt3DOTmedium = "db.t3.medium".asInstanceOf[dbDOTt3DOTmedium]
+  def dbDott3Dotmedium: dbDott3Dotmedium = "db.t3.medium".asInstanceOf[dbDott3Dotmedium]
   @scala.inline
-  def dbDOTt3DOTmicro: dbDOTt3DOTmicro = "db.t3.micro".asInstanceOf[dbDOTt3DOTmicro]
+  def dbDott3Dotmicro: dbDott3Dotmicro = "db.t3.micro".asInstanceOf[dbDott3Dotmicro]
   @scala.inline
-  def dbDOTt3DOTsmall: dbDOTt3DOTsmall = "db.t3.small".asInstanceOf[dbDOTt3DOTsmall]
+  def dbDott3Dotsmall: dbDott3Dotsmall = "db.t3.small".asInstanceOf[dbDott3Dotsmall]
   @scala.inline
-  def dbDOTt3DOTxlarge: dbDOTt3DOTxlarge = "db.t3.xlarge".asInstanceOf[dbDOTt3DOTxlarge]
+  def dbDott3Dotxlarge: dbDott3Dotxlarge = "db.t3.xlarge".asInstanceOf[dbDott3Dotxlarge]
   @scala.inline
-  def dbDOTx1DOT16xlarge: dbDOTx1DOT16xlarge = "db.x1.16xlarge".asInstanceOf[dbDOTx1DOT16xlarge]
+  def dbDotx1Dot16xlarge: dbDotx1Dot16xlarge = "db.x1.16xlarge".asInstanceOf[dbDotx1Dot16xlarge]
   @scala.inline
-  def dbDOTx1DOT32xlarge: dbDOTx1DOT32xlarge = "db.x1.32xlarge".asInstanceOf[dbDOTx1DOT32xlarge]
+  def dbDotx1Dot32xlarge: dbDotx1Dot32xlarge = "db.x1.32xlarge".asInstanceOf[dbDotx1Dot32xlarge]
   @scala.inline
-  def dbDOTx1eDOT2xlarge: dbDOTx1eDOT2xlarge = "db.x1e.2xlarge".asInstanceOf[dbDOTx1eDOT2xlarge]
+  def dbDotx1eDot2xlarge: dbDotx1eDot2xlarge = "db.x1e.2xlarge".asInstanceOf[dbDotx1eDot2xlarge]
   @scala.inline
-  def dbDOTx1eDOT32xlarge: dbDOTx1eDOT32xlarge = "db.x1e.32xlarge".asInstanceOf[dbDOTx1eDOT32xlarge]
+  def dbDotx1eDot32xlarge: dbDotx1eDot32xlarge = "db.x1e.32xlarge".asInstanceOf[dbDotx1eDot32xlarge]
   @scala.inline
-  def dbDOTx1eDOT4xlarge: dbDOTx1eDOT4xlarge = "db.x1e.4xlarge".asInstanceOf[dbDOTx1eDOT4xlarge]
+  def dbDotx1eDot4xlarge: dbDotx1eDot4xlarge = "db.x1e.4xlarge".asInstanceOf[dbDotx1eDot4xlarge]
   @scala.inline
-  def dbDOTx1eDOT8xlarge: dbDOTx1eDOT8xlarge = "db.x1e.8xlarge".asInstanceOf[dbDOTx1eDOT8xlarge]
+  def dbDotx1eDot8xlarge: dbDotx1eDot8xlarge = "db.x1e.8xlarge".asInstanceOf[dbDotx1eDot8xlarge]
   @scala.inline
-  def dbDOTx1eDOTxlarge: dbDOTx1eDOTxlarge = "db.x1e.xlarge".asInstanceOf[dbDOTx1eDOTxlarge]
+  def dbDotx1eDotxlarge: dbDotx1eDotxlarge = "db.x1e.xlarge".asInstanceOf[dbDotx1eDotxlarge]
   @scala.inline
   def dedicated: dedicated = "dedicated".asInstanceOf[dedicated]
   @scala.inline
   def default: default = "default".asInstanceOf[default]
   @scala.inline
-  def dotnetcore1DOT0: dotnetcore1DOT0 = "dotnetcore1.0".asInstanceOf[dotnetcore1DOT0]
+  def dotnetcore1Dot0: dotnetcore1Dot0 = "dotnetcore1.0".asInstanceOf[dotnetcore1Dot0]
   @scala.inline
-  def dotnetcore2DOT0: dotnetcore2DOT0 = "dotnetcore2.0".asInstanceOf[dotnetcore2DOT0]
+  def dotnetcore2Dot0: dotnetcore2Dot0 = "dotnetcore2.0".asInstanceOf[dotnetcore2Dot0]
   @scala.inline
-  def dotnetcore2DOT1: dotnetcore2DOT1 = "dotnetcore2.1".asInstanceOf[dotnetcore2DOT1]
+  def dotnetcore2Dot1: dotnetcore2Dot1 = "dotnetcore2.1".asInstanceOf[dotnetcore2Dot1]
   @scala.inline
   def dualstack: dualstack = "dualstack".asInstanceOf[dualstack]
   @scala.inline
@@ -1769,57 +1778,57 @@ object atPulumiAwsStrings {
   @scala.inline
   def expire: expire = "expire".asInstanceOf[expire]
   @scala.inline
-  def f1DOT16xlarge: f1DOT16xlarge = "f1.16xlarge".asInstanceOf[f1DOT16xlarge]
+  def f1Dot16xlarge: f1Dot16xlarge = "f1.16xlarge".asInstanceOf[f1Dot16xlarge]
   @scala.inline
-  def f1DOT2xlarge: f1DOT2xlarge = "f1.2xlarge".asInstanceOf[f1DOT2xlarge]
+  def f1Dot2xlarge: f1Dot2xlarge = "f1.2xlarge".asInstanceOf[f1Dot2xlarge]
   @scala.inline
   def fluentd: fluentd = "fluentd".asInstanceOf[fluentd]
   @scala.inline
   def fsize: fsize = "fsize".asInstanceOf[fsize]
   @scala.inline
-  def g2DOT2xlarge: g2DOT2xlarge = "g2.2xlarge".asInstanceOf[g2DOT2xlarge]
+  def g2Dot2xlarge: g2Dot2xlarge = "g2.2xlarge".asInstanceOf[g2Dot2xlarge]
   @scala.inline
-  def g2DOT8xlarge: g2DOT8xlarge = "g2.8xlarge".asInstanceOf[g2DOT8xlarge]
+  def g2Dot8xlarge: g2Dot8xlarge = "g2.8xlarge".asInstanceOf[g2Dot8xlarge]
   @scala.inline
-  def g3DOT16xlarge: g3DOT16xlarge = "g3.16xlarge".asInstanceOf[g3DOT16xlarge]
+  def g3Dot16xlarge: g3Dot16xlarge = "g3.16xlarge".asInstanceOf[g3Dot16xlarge]
   @scala.inline
-  def g3DOT4xlarge: g3DOT4xlarge = "g3.4xlarge".asInstanceOf[g3DOT4xlarge]
+  def g3Dot4xlarge: g3Dot4xlarge = "g3.4xlarge".asInstanceOf[g3Dot4xlarge]
   @scala.inline
-  def g3DOT8xlarge: g3DOT8xlarge = "g3.8xlarge".asInstanceOf[g3DOT8xlarge]
+  def g3Dot8xlarge: g3Dot8xlarge = "g3.8xlarge".asInstanceOf[g3Dot8xlarge]
   @scala.inline
-  def g3sDOTxlarge: g3sDOTxlarge = "g3s.xlarge".asInstanceOf[g3sDOTxlarge]
+  def g3sDotxlarge: g3sDotxlarge = "g3s.xlarge".asInstanceOf[g3sDotxlarge]
   @scala.inline
   def gelf: gelf = "gelf".asInstanceOf[gelf]
   @scala.inline
   def global: global = "global".asInstanceOf[global]
   @scala.inline
-  def go1DOTx: go1DOTx = "go1.x".asInstanceOf[go1DOTx]
+  def go1Dotx: go1Dotx = "go1.x".asInstanceOf[go1Dotx]
   @scala.inline
   def gp2: gp2 = "gp2".asInstanceOf[gp2]
   @scala.inline
-  def h1DOT16xlarge: h1DOT16xlarge = "h1.16xlarge".asInstanceOf[h1DOT16xlarge]
+  def h1Dot16xlarge: h1Dot16xlarge = "h1.16xlarge".asInstanceOf[h1Dot16xlarge]
   @scala.inline
-  def h1DOT2xlarge: h1DOT2xlarge = "h1.2xlarge".asInstanceOf[h1DOT2xlarge]
+  def h1Dot2xlarge: h1Dot2xlarge = "h1.2xlarge".asInstanceOf[h1Dot2xlarge]
   @scala.inline
-  def h1DOT4xlarge: h1DOT4xlarge = "h1.4xlarge".asInstanceOf[h1DOT4xlarge]
+  def h1Dot4xlarge: h1Dot4xlarge = "h1.4xlarge".asInstanceOf[h1Dot4xlarge]
   @scala.inline
-  def h1DOT8xlarge: h1DOT8xlarge = "h1.8xlarge".asInstanceOf[h1DOT8xlarge]
+  def h1Dot8xlarge: h1Dot8xlarge = "h1.8xlarge".asInstanceOf[h1Dot8xlarge]
   @scala.inline
-  def hs1DOT8xlarge: hs1DOT8xlarge = "hs1.8xlarge".asInstanceOf[hs1DOT8xlarge]
+  def hs1Dot8xlarge: hs1Dot8xlarge = "hs1.8xlarge".asInstanceOf[hs1Dot8xlarge]
   @scala.inline
-  def i3DOT16xlarge: i3DOT16xlarge = "i3.16xlarge".asInstanceOf[i3DOT16xlarge]
+  def i3Dot16xlarge: i3Dot16xlarge = "i3.16xlarge".asInstanceOf[i3Dot16xlarge]
   @scala.inline
-  def i3DOT2xlarge: i3DOT2xlarge = "i3.2xlarge".asInstanceOf[i3DOT2xlarge]
+  def i3Dot2xlarge: i3Dot2xlarge = "i3.2xlarge".asInstanceOf[i3Dot2xlarge]
   @scala.inline
-  def i3DOT4xlarge: i3DOT4xlarge = "i3.4xlarge".asInstanceOf[i3DOT4xlarge]
+  def i3Dot4xlarge: i3Dot4xlarge = "i3.4xlarge".asInstanceOf[i3Dot4xlarge]
   @scala.inline
-  def i3DOT8xlarge: i3DOT8xlarge = "i3.8xlarge".asInstanceOf[i3DOT8xlarge]
+  def i3Dot8xlarge: i3Dot8xlarge = "i3.8xlarge".asInstanceOf[i3Dot8xlarge]
   @scala.inline
-  def i3DOTlarge: i3DOTlarge = "i3.large".asInstanceOf[i3DOTlarge]
+  def i3Dotlarge: i3Dotlarge = "i3.large".asInstanceOf[i3Dotlarge]
   @scala.inline
-  def i3DOTmetal: i3DOTmetal = "i3.metal".asInstanceOf[i3DOTmetal]
+  def i3Dotmetal: i3Dotmetal = "i3.metal".asInstanceOf[i3Dotmetal]
   @scala.inline
-  def i3DOTxlarge: i3DOTxlarge = "i3.xlarge".asInstanceOf[i3DOTxlarge]
+  def i3Dotxlarge: i3Dotxlarge = "i3.xlarge".asInstanceOf[i3Dotxlarge]
   @scala.inline
   def icmp: icmp = "icmp".asInstanceOf[icmp]
   @scala.inline
@@ -1828,6 +1837,8 @@ object atPulumiAwsStrings {
   def io1: io1 = "io1".asInstanceOf[io1]
   @scala.inline
   def ipv4: ipv4 = "ipv4".asInstanceOf[ipv4]
+  @scala.inline
+  def java11: java11 = "java11".asInstanceOf[java11]
   @scala.inline
   def java8: java8 = "java8".asInstanceOf[java8]
   @scala.inline
@@ -1839,61 +1850,61 @@ object atPulumiAwsStrings {
   @scala.inline
   def `log-delivery-write`: `log-delivery-write` = "log-delivery-write".asInstanceOf[`log-delivery-write`]
   @scala.inline
-  def m3DOT2xlarge: m3DOT2xlarge = "m3.2xlarge".asInstanceOf[m3DOT2xlarge]
+  def m3Dot2xlarge: m3Dot2xlarge = "m3.2xlarge".asInstanceOf[m3Dot2xlarge]
   @scala.inline
-  def m3DOTlarge: m3DOTlarge = "m3.large".asInstanceOf[m3DOTlarge]
+  def m3Dotlarge: m3Dotlarge = "m3.large".asInstanceOf[m3Dotlarge]
   @scala.inline
-  def m3DOTmedium: m3DOTmedium = "m3.medium".asInstanceOf[m3DOTmedium]
+  def m3Dotmedium: m3Dotmedium = "m3.medium".asInstanceOf[m3Dotmedium]
   @scala.inline
-  def m3DOTxlarge: m3DOTxlarge = "m3.xlarge".asInstanceOf[m3DOTxlarge]
+  def m3Dotxlarge: m3Dotxlarge = "m3.xlarge".asInstanceOf[m3Dotxlarge]
   @scala.inline
-  def m4DOT10xlarge: m4DOT10xlarge = "m4.10xlarge".asInstanceOf[m4DOT10xlarge]
+  def m4Dot10xlarge: m4Dot10xlarge = "m4.10xlarge".asInstanceOf[m4Dot10xlarge]
   @scala.inline
-  def m4DOT16xlarge: m4DOT16xlarge = "m4.16xlarge".asInstanceOf[m4DOT16xlarge]
+  def m4Dot16xlarge: m4Dot16xlarge = "m4.16xlarge".asInstanceOf[m4Dot16xlarge]
   @scala.inline
-  def m4DOT2xlarge: m4DOT2xlarge = "m4.2xlarge".asInstanceOf[m4DOT2xlarge]
+  def m4Dot2xlarge: m4Dot2xlarge = "m4.2xlarge".asInstanceOf[m4Dot2xlarge]
   @scala.inline
-  def m4DOT4xlarge: m4DOT4xlarge = "m4.4xlarge".asInstanceOf[m4DOT4xlarge]
+  def m4Dot4xlarge: m4Dot4xlarge = "m4.4xlarge".asInstanceOf[m4Dot4xlarge]
   @scala.inline
-  def m4DOTlarge: m4DOTlarge = "m4.large".asInstanceOf[m4DOTlarge]
+  def m4Dotlarge: m4Dotlarge = "m4.large".asInstanceOf[m4Dotlarge]
   @scala.inline
-  def m4DOTxlarge: m4DOTxlarge = "m4.xlarge".asInstanceOf[m4DOTxlarge]
+  def m4Dotxlarge: m4Dotxlarge = "m4.xlarge".asInstanceOf[m4Dotxlarge]
   @scala.inline
-  def m5DOT12xlarge: m5DOT12xlarge = "m5.12xlarge".asInstanceOf[m5DOT12xlarge]
+  def m5Dot12xlarge: m5Dot12xlarge = "m5.12xlarge".asInstanceOf[m5Dot12xlarge]
   @scala.inline
-  def m5DOT24xlarge: m5DOT24xlarge = "m5.24xlarge".asInstanceOf[m5DOT24xlarge]
+  def m5Dot24xlarge: m5Dot24xlarge = "m5.24xlarge".asInstanceOf[m5Dot24xlarge]
   @scala.inline
-  def m5DOT2xlarge: m5DOT2xlarge = "m5.2xlarge".asInstanceOf[m5DOT2xlarge]
+  def m5Dot2xlarge: m5Dot2xlarge = "m5.2xlarge".asInstanceOf[m5Dot2xlarge]
   @scala.inline
-  def m5DOT4xlarge: m5DOT4xlarge = "m5.4xlarge".asInstanceOf[m5DOT4xlarge]
+  def m5Dot4xlarge: m5Dot4xlarge = "m5.4xlarge".asInstanceOf[m5Dot4xlarge]
   @scala.inline
-  def m5DOTlarge: m5DOTlarge = "m5.large".asInstanceOf[m5DOTlarge]
+  def m5Dotlarge: m5Dotlarge = "m5.large".asInstanceOf[m5Dotlarge]
   @scala.inline
-  def m5DOTxlarge: m5DOTxlarge = "m5.xlarge".asInstanceOf[m5DOTxlarge]
+  def m5Dotxlarge: m5Dotxlarge = "m5.xlarge".asInstanceOf[m5Dotxlarge]
   @scala.inline
-  def m5aDOT12xlarge: m5aDOT12xlarge = "m5a.12xlarge".asInstanceOf[m5aDOT12xlarge]
+  def m5aDot12xlarge: m5aDot12xlarge = "m5a.12xlarge".asInstanceOf[m5aDot12xlarge]
   @scala.inline
-  def m5aDOT24xlarge: m5aDOT24xlarge = "m5a.24xlarge".asInstanceOf[m5aDOT24xlarge]
+  def m5aDot24xlarge: m5aDot24xlarge = "m5a.24xlarge".asInstanceOf[m5aDot24xlarge]
   @scala.inline
-  def m5aDOT2xlarge: m5aDOT2xlarge = "m5a.2xlarge".asInstanceOf[m5aDOT2xlarge]
+  def m5aDot2xlarge: m5aDot2xlarge = "m5a.2xlarge".asInstanceOf[m5aDot2xlarge]
   @scala.inline
-  def m5aDOT4xlarge: m5aDOT4xlarge = "m5a.4xlarge".asInstanceOf[m5aDOT4xlarge]
+  def m5aDot4xlarge: m5aDot4xlarge = "m5a.4xlarge".asInstanceOf[m5aDot4xlarge]
   @scala.inline
-  def m5aDOTlarge: m5aDOTlarge = "m5a.large".asInstanceOf[m5aDOTlarge]
+  def m5aDotlarge: m5aDotlarge = "m5a.large".asInstanceOf[m5aDotlarge]
   @scala.inline
-  def m5aDOTxlarge: m5aDOTxlarge = "m5a.xlarge".asInstanceOf[m5aDOTxlarge]
+  def m5aDotxlarge: m5aDotxlarge = "m5a.xlarge".asInstanceOf[m5aDotxlarge]
   @scala.inline
-  def m5dDOT12xlarge: m5dDOT12xlarge = "m5d.12xlarge".asInstanceOf[m5dDOT12xlarge]
+  def m5dDot12xlarge: m5dDot12xlarge = "m5d.12xlarge".asInstanceOf[m5dDot12xlarge]
   @scala.inline
-  def m5dDOT24xlarge: m5dDOT24xlarge = "m5d.24xlarge".asInstanceOf[m5dDOT24xlarge]
+  def m5dDot24xlarge: m5dDot24xlarge = "m5d.24xlarge".asInstanceOf[m5dDot24xlarge]
   @scala.inline
-  def m5dDOT2xlarge: m5dDOT2xlarge = "m5d.2xlarge".asInstanceOf[m5dDOT2xlarge]
+  def m5dDot2xlarge: m5dDot2xlarge = "m5d.2xlarge".asInstanceOf[m5dDot2xlarge]
   @scala.inline
-  def m5dDOT4xlarge: m5dDOT4xlarge = "m5d.4xlarge".asInstanceOf[m5dDOT4xlarge]
+  def m5dDot4xlarge: m5dDot4xlarge = "m5d.4xlarge".asInstanceOf[m5dDot4xlarge]
   @scala.inline
-  def m5dDOTlarge: m5dDOTlarge = "m5d.large".asInstanceOf[m5dDOTlarge]
+  def m5dDotlarge: m5dDotlarge = "m5d.large".asInstanceOf[m5dDotlarge]
   @scala.inline
-  def m5dDOTxlarge: m5dDOTxlarge = "m5d.xlarge".asInstanceOf[m5dDOTxlarge]
+  def m5dDotxlarge: m5dDotxlarge = "m5d.xlarge".asInstanceOf[m5dDotxlarge]
   @scala.inline
   def `me-south-1`: `me-south-1` = "me-south-1".asInstanceOf[`me-south-1`]
   @scala.inline
@@ -1907,33 +1918,35 @@ object atPulumiAwsStrings {
   @scala.inline
   def nodejs: nodejs = "nodejs".asInstanceOf[nodejs]
   @scala.inline
-  def nodejs10DOTx: nodejs10DOTx = "nodejs10.x".asInstanceOf[nodejs10DOTx]
+  def nodejs10Dotx: nodejs10Dotx = "nodejs10.x".asInstanceOf[nodejs10Dotx]
   @scala.inline
-  def nodejs4DOT3: nodejs4DOT3 = "nodejs4.3".asInstanceOf[nodejs4DOT3]
+  def nodejs12Dotx: nodejs12Dotx = "nodejs12.x".asInstanceOf[nodejs12Dotx]
   @scala.inline
-  def `nodejs4DOT3-edge`: `nodejs4DOT3-edge` = "nodejs4.3-edge".asInstanceOf[`nodejs4DOT3-edge`]
+  def nodejs4Dot3: nodejs4Dot3 = "nodejs4.3".asInstanceOf[nodejs4Dot3]
   @scala.inline
-  def nodejs6DOT10: nodejs6DOT10 = "nodejs6.10".asInstanceOf[nodejs6DOT10]
+  def `nodejs4Dot3-edge`: `nodejs4Dot3-edge` = "nodejs4.3-edge".asInstanceOf[`nodejs4Dot3-edge`]
   @scala.inline
-  def nodejs8DOT10: nodejs8DOT10 = "nodejs8.10".asInstanceOf[nodejs8DOT10]
+  def nodejs6Dot10: nodejs6Dot10 = "nodejs6.10".asInstanceOf[nodejs6Dot10]
+  @scala.inline
+  def nodejs8Dot10: nodejs8Dot10 = "nodejs8.10".asInstanceOf[nodejs8Dot10]
   @scala.inline
   def nofile: nofile = "nofile".asInstanceOf[nofile]
   @scala.inline
   def nproc: nproc = "nproc".asInstanceOf[nproc]
   @scala.inline
-  def p2DOT16xlarge: p2DOT16xlarge = "p2.16xlarge".asInstanceOf[p2DOT16xlarge]
+  def p2Dot16xlarge: p2Dot16xlarge = "p2.16xlarge".asInstanceOf[p2Dot16xlarge]
   @scala.inline
-  def p2DOT8xlarge: p2DOT8xlarge = "p2.8xlarge".asInstanceOf[p2DOT8xlarge]
+  def p2Dot8xlarge: p2Dot8xlarge = "p2.8xlarge".asInstanceOf[p2Dot8xlarge]
   @scala.inline
-  def p2DOTxlarge: p2DOTxlarge = "p2.xlarge".asInstanceOf[p2DOTxlarge]
+  def p2Dotxlarge: p2Dotxlarge = "p2.xlarge".asInstanceOf[p2Dotxlarge]
   @scala.inline
-  def p3DOT16xlarge: p3DOT16xlarge = "p3.16xlarge".asInstanceOf[p3DOT16xlarge]
+  def p3Dot16xlarge: p3Dot16xlarge = "p3.16xlarge".asInstanceOf[p3Dot16xlarge]
   @scala.inline
-  def p3DOT2xlarge: p3DOT2xlarge = "p3.2xlarge".asInstanceOf[p3DOT2xlarge]
+  def p3Dot2xlarge: p3Dot2xlarge = "p3.2xlarge".asInstanceOf[p3Dot2xlarge]
   @scala.inline
-  def p3DOT8xlarge: p3DOT8xlarge = "p3.8xlarge".asInstanceOf[p3DOT8xlarge]
+  def p3Dot8xlarge: p3Dot8xlarge = "p3.8xlarge".asInstanceOf[p3Dot8xlarge]
   @scala.inline
-  def p3dnDOT24xlarge: p3dnDOT24xlarge = "p3dn.24xlarge".asInstanceOf[p3dnDOT24xlarge]
+  def p3dnDot24xlarge: p3dnDot24xlarge = "p3dn.24xlarge".asInstanceOf[p3dnDot24xlarge]
   @scala.inline
   def parallelquery: parallelquery = "parallelquery".asInstanceOf[parallelquery]
   @scala.inline
@@ -1947,69 +1960,71 @@ object atPulumiAwsStrings {
   @scala.inline
   def `public-read-write`: `public-read-write` = "public-read-write".asInstanceOf[`public-read-write`]
   @scala.inline
-  def python2DOT7: python2DOT7 = "python2.7".asInstanceOf[python2DOT7]
+  def python2Dot7: python2Dot7 = "python2.7".asInstanceOf[python2Dot7]
   @scala.inline
-  def python3DOT6: python3DOT6 = "python3.6".asInstanceOf[python3DOT6]
+  def python3Dot6: python3Dot6 = "python3.6".asInstanceOf[python3Dot6]
   @scala.inline
-  def python3DOT7: python3DOT7 = "python3.7".asInstanceOf[python3DOT7]
+  def python3Dot7: python3Dot7 = "python3.7".asInstanceOf[python3Dot7]
   @scala.inline
-  def r3DOT2xlarge: r3DOT2xlarge = "r3.2xlarge".asInstanceOf[r3DOT2xlarge]
+  def python3Dot8: python3Dot8 = "python3.8".asInstanceOf[python3Dot8]
   @scala.inline
-  def r3DOT4xlarge: r3DOT4xlarge = "r3.4xlarge".asInstanceOf[r3DOT4xlarge]
+  def r3Dot2xlarge: r3Dot2xlarge = "r3.2xlarge".asInstanceOf[r3Dot2xlarge]
   @scala.inline
-  def r3DOT8xlarge: r3DOT8xlarge = "r3.8xlarge".asInstanceOf[r3DOT8xlarge]
+  def r3Dot4xlarge: r3Dot4xlarge = "r3.4xlarge".asInstanceOf[r3Dot4xlarge]
   @scala.inline
-  def r3DOTlarge: r3DOTlarge = "r3.large".asInstanceOf[r3DOTlarge]
+  def r3Dot8xlarge: r3Dot8xlarge = "r3.8xlarge".asInstanceOf[r3Dot8xlarge]
   @scala.inline
-  def r3DOTxlarge: r3DOTxlarge = "r3.xlarge".asInstanceOf[r3DOTxlarge]
+  def r3Dotlarge: r3Dotlarge = "r3.large".asInstanceOf[r3Dotlarge]
   @scala.inline
-  def r4DOT16xlarge: r4DOT16xlarge = "r4.16xlarge".asInstanceOf[r4DOT16xlarge]
+  def r3Dotxlarge: r3Dotxlarge = "r3.xlarge".asInstanceOf[r3Dotxlarge]
   @scala.inline
-  def r4DOT2xlarge: r4DOT2xlarge = "r4.2xlarge".asInstanceOf[r4DOT2xlarge]
+  def r4Dot16xlarge: r4Dot16xlarge = "r4.16xlarge".asInstanceOf[r4Dot16xlarge]
   @scala.inline
-  def r4DOT4xlarge: r4DOT4xlarge = "r4.4xlarge".asInstanceOf[r4DOT4xlarge]
+  def r4Dot2xlarge: r4Dot2xlarge = "r4.2xlarge".asInstanceOf[r4Dot2xlarge]
   @scala.inline
-  def r4DOT8xlarge: r4DOT8xlarge = "r4.8xlarge".asInstanceOf[r4DOT8xlarge]
+  def r4Dot4xlarge: r4Dot4xlarge = "r4.4xlarge".asInstanceOf[r4Dot4xlarge]
   @scala.inline
-  def r4DOTlarge: r4DOTlarge = "r4.large".asInstanceOf[r4DOTlarge]
+  def r4Dot8xlarge: r4Dot8xlarge = "r4.8xlarge".asInstanceOf[r4Dot8xlarge]
   @scala.inline
-  def r4DOTxlarge: r4DOTxlarge = "r4.xlarge".asInstanceOf[r4DOTxlarge]
+  def r4Dotlarge: r4Dotlarge = "r4.large".asInstanceOf[r4Dotlarge]
   @scala.inline
-  def r5DOT12xlarge: r5DOT12xlarge = "r5.12xlarge".asInstanceOf[r5DOT12xlarge]
+  def r4Dotxlarge: r4Dotxlarge = "r4.xlarge".asInstanceOf[r4Dotxlarge]
   @scala.inline
-  def r5DOT24xlarge: r5DOT24xlarge = "r5.24xlarge".asInstanceOf[r5DOT24xlarge]
+  def r5Dot12xlarge: r5Dot12xlarge = "r5.12xlarge".asInstanceOf[r5Dot12xlarge]
   @scala.inline
-  def r5DOT2xlarge: r5DOT2xlarge = "r5.2xlarge".asInstanceOf[r5DOT2xlarge]
+  def r5Dot24xlarge: r5Dot24xlarge = "r5.24xlarge".asInstanceOf[r5Dot24xlarge]
   @scala.inline
-  def r5DOT4xlarge: r5DOT4xlarge = "r5.4xlarge".asInstanceOf[r5DOT4xlarge]
+  def r5Dot2xlarge: r5Dot2xlarge = "r5.2xlarge".asInstanceOf[r5Dot2xlarge]
   @scala.inline
-  def r5DOTlarge: r5DOTlarge = "r5.large".asInstanceOf[r5DOTlarge]
+  def r5Dot4xlarge: r5Dot4xlarge = "r5.4xlarge".asInstanceOf[r5Dot4xlarge]
   @scala.inline
-  def r5DOTxlarge: r5DOTxlarge = "r5.xlarge".asInstanceOf[r5DOTxlarge]
+  def r5Dotlarge: r5Dotlarge = "r5.large".asInstanceOf[r5Dotlarge]
   @scala.inline
-  def r5aDOT12xlarge: r5aDOT12xlarge = "r5a.12xlarge".asInstanceOf[r5aDOT12xlarge]
+  def r5Dotxlarge: r5Dotxlarge = "r5.xlarge".asInstanceOf[r5Dotxlarge]
   @scala.inline
-  def r5aDOT24xlarge: r5aDOT24xlarge = "r5a.24xlarge".asInstanceOf[r5aDOT24xlarge]
+  def r5aDot12xlarge: r5aDot12xlarge = "r5a.12xlarge".asInstanceOf[r5aDot12xlarge]
   @scala.inline
-  def r5aDOT2xlarge: r5aDOT2xlarge = "r5a.2xlarge".asInstanceOf[r5aDOT2xlarge]
+  def r5aDot24xlarge: r5aDot24xlarge = "r5a.24xlarge".asInstanceOf[r5aDot24xlarge]
   @scala.inline
-  def r5aDOT4xlarge: r5aDOT4xlarge = "r5a.4xlarge".asInstanceOf[r5aDOT4xlarge]
+  def r5aDot2xlarge: r5aDot2xlarge = "r5a.2xlarge".asInstanceOf[r5aDot2xlarge]
   @scala.inline
-  def r5aDOTlarge: r5aDOTlarge = "r5a.large".asInstanceOf[r5aDOTlarge]
+  def r5aDot4xlarge: r5aDot4xlarge = "r5a.4xlarge".asInstanceOf[r5aDot4xlarge]
   @scala.inline
-  def r5aDOTxlarge: r5aDOTxlarge = "r5a.xlarge".asInstanceOf[r5aDOTxlarge]
+  def r5aDotlarge: r5aDotlarge = "r5a.large".asInstanceOf[r5aDotlarge]
   @scala.inline
-  def r5dDOT12xlarge: r5dDOT12xlarge = "r5d.12xlarge".asInstanceOf[r5dDOT12xlarge]
+  def r5aDotxlarge: r5aDotxlarge = "r5a.xlarge".asInstanceOf[r5aDotxlarge]
   @scala.inline
-  def r5dDOT24xlarge: r5dDOT24xlarge = "r5d.24xlarge".asInstanceOf[r5dDOT24xlarge]
+  def r5dDot12xlarge: r5dDot12xlarge = "r5d.12xlarge".asInstanceOf[r5dDot12xlarge]
   @scala.inline
-  def r5dDOT2xlarge: r5dDOT2xlarge = "r5d.2xlarge".asInstanceOf[r5dDOT2xlarge]
+  def r5dDot24xlarge: r5dDot24xlarge = "r5d.24xlarge".asInstanceOf[r5dDot24xlarge]
   @scala.inline
-  def r5dDOT4xlarge: r5dDOT4xlarge = "r5d.4xlarge".asInstanceOf[r5dDOT4xlarge]
+  def r5dDot2xlarge: r5dDot2xlarge = "r5d.2xlarge".asInstanceOf[r5dDot2xlarge]
   @scala.inline
-  def r5dDOTlarge: r5dDOTlarge = "r5d.large".asInstanceOf[r5dDOTlarge]
+  def r5dDot4xlarge: r5dDot4xlarge = "r5d.4xlarge".asInstanceOf[r5dDot4xlarge]
   @scala.inline
-  def r5dDOTxlarge: r5dDOTxlarge = "r5d.xlarge".asInstanceOf[r5dDOTxlarge]
+  def r5dDotlarge: r5dDotlarge = "r5d.large".asInstanceOf[r5dDotlarge]
+  @scala.inline
+  def r5dDotxlarge: r5dDotxlarge = "r5d.xlarge".asInstanceOf[r5dDotxlarge]
   @scala.inline
   def rss: rss = "rss".asInstanceOf[rss]
   @scala.inline
@@ -2017,7 +2032,7 @@ object atPulumiAwsStrings {
   @scala.inline
   def rttime: rttime = "rttime".asInstanceOf[rttime]
   @scala.inline
-  def ruby2DOT5: ruby2DOT5 = "ruby2.5".asInstanceOf[ruby2DOT5]
+  def ruby2Dot5: ruby2Dot5 = "ruby2.5".asInstanceOf[ruby2Dot5]
   @scala.inline
   def `sa-east-1`: `sa-east-1` = "sa-east-1".asInstanceOf[`sa-east-1`]
   @scala.inline
@@ -2035,59 +2050,59 @@ object atPulumiAwsStrings {
   @scala.inline
   def standard: standard = "standard".asInstanceOf[standard]
   @scala.inline
-  def syslog: syslog = "syslog".asInstanceOf[syslog]
+  def syslog_ : syslog_ = "syslog".asInstanceOf[syslog_]
   @scala.inline
-  def t2DOT2xlarge: t2DOT2xlarge = "t2.2xlarge".asInstanceOf[t2DOT2xlarge]
+  def t2Dot2xlarge: t2Dot2xlarge = "t2.2xlarge".asInstanceOf[t2Dot2xlarge]
   @scala.inline
-  def t2DOTlarge: t2DOTlarge = "t2.large".asInstanceOf[t2DOTlarge]
+  def t2Dotlarge: t2Dotlarge = "t2.large".asInstanceOf[t2Dotlarge]
   @scala.inline
-  def t2DOTmedium: t2DOTmedium = "t2.medium".asInstanceOf[t2DOTmedium]
+  def t2Dotmedium: t2Dotmedium = "t2.medium".asInstanceOf[t2Dotmedium]
   @scala.inline
-  def t2DOTmicro: t2DOTmicro = "t2.micro".asInstanceOf[t2DOTmicro]
+  def t2Dotmicro: t2Dotmicro = "t2.micro".asInstanceOf[t2Dotmicro]
   @scala.inline
-  def t2DOTnano: t2DOTnano = "t2.nano".asInstanceOf[t2DOTnano]
+  def t2Dotnano: t2Dotnano = "t2.nano".asInstanceOf[t2Dotnano]
   @scala.inline
-  def t2DOTsmall: t2DOTsmall = "t2.small".asInstanceOf[t2DOTsmall]
+  def t2Dotsmall: t2Dotsmall = "t2.small".asInstanceOf[t2Dotsmall]
   @scala.inline
-  def t2DOTxlarge: t2DOTxlarge = "t2.xlarge".asInstanceOf[t2DOTxlarge]
+  def t2Dotxlarge: t2Dotxlarge = "t2.xlarge".asInstanceOf[t2Dotxlarge]
   @scala.inline
-  def t3DOT2xlarge: t3DOT2xlarge = "t3.2xlarge".asInstanceOf[t3DOT2xlarge]
+  def t3Dot2xlarge: t3Dot2xlarge = "t3.2xlarge".asInstanceOf[t3Dot2xlarge]
   @scala.inline
-  def t3DOTlarge: t3DOTlarge = "t3.large".asInstanceOf[t3DOTlarge]
+  def t3Dotlarge: t3Dotlarge = "t3.large".asInstanceOf[t3Dotlarge]
   @scala.inline
-  def t3DOTmedium: t3DOTmedium = "t3.medium".asInstanceOf[t3DOTmedium]
+  def t3Dotmedium: t3Dotmedium = "t3.medium".asInstanceOf[t3Dotmedium]
   @scala.inline
-  def t3DOTmicro: t3DOTmicro = "t3.micro".asInstanceOf[t3DOTmicro]
+  def t3Dotmicro: t3Dotmicro = "t3.micro".asInstanceOf[t3Dotmicro]
   @scala.inline
-  def t3DOTnano: t3DOTnano = "t3.nano".asInstanceOf[t3DOTnano]
+  def t3Dotnano: t3Dotnano = "t3.nano".asInstanceOf[t3Dotnano]
   @scala.inline
-  def t3DOTsmall: t3DOTsmall = "t3.small".asInstanceOf[t3DOTsmall]
+  def t3Dotsmall: t3Dotsmall = "t3.small".asInstanceOf[t3Dotsmall]
   @scala.inline
-  def t3DOTxlarge: t3DOTxlarge = "t3.xlarge".asInstanceOf[t3DOTxlarge]
+  def t3Dotxlarge: t3Dotxlarge = "t3.xlarge".asInstanceOf[t3Dotxlarge]
   @scala.inline
-  def t3aDOT2xlarge: t3aDOT2xlarge = "t3a.2xlarge".asInstanceOf[t3aDOT2xlarge]
+  def t3aDot2xlarge: t3aDot2xlarge = "t3a.2xlarge".asInstanceOf[t3aDot2xlarge]
   @scala.inline
-  def t3aDOTlarge: t3aDOTlarge = "t3a.large".asInstanceOf[t3aDOTlarge]
+  def t3aDotlarge: t3aDotlarge = "t3a.large".asInstanceOf[t3aDotlarge]
   @scala.inline
-  def t3aDOTmedium: t3aDOTmedium = "t3a.medium".asInstanceOf[t3aDOTmedium]
+  def t3aDotmedium: t3aDotmedium = "t3a.medium".asInstanceOf[t3aDotmedium]
   @scala.inline
-  def t3aDOTmicro: t3aDOTmicro = "t3a.micro".asInstanceOf[t3aDOTmicro]
+  def t3aDotmicro: t3aDotmicro = "t3a.micro".asInstanceOf[t3aDotmicro]
   @scala.inline
-  def t3aDOTnano: t3aDOTnano = "t3a.nano".asInstanceOf[t3aDOTnano]
+  def t3aDotnano: t3aDotnano = "t3a.nano".asInstanceOf[t3aDotnano]
   @scala.inline
-  def t3aDOTsmall: t3aDOTsmall = "t3a.small".asInstanceOf[t3aDOTsmall]
+  def t3aDotsmall: t3aDotsmall = "t3a.small".asInstanceOf[t3aDotsmall]
   @scala.inline
-  def t3aDOTxlarge: t3aDOTxlarge = "t3a.xlarge".asInstanceOf[t3aDOTxlarge]
+  def t3aDotxlarge: t3aDotxlarge = "t3a.xlarge".asInstanceOf[t3aDotxlarge]
   @scala.inline
   def tagged: tagged = "tagged".asInstanceOf[tagged]
   @scala.inline
   def tcp: tcp = "tcp".asInstanceOf[tcp]
   @scala.inline
-  def `u-12tb1DOTmetal`: `u-12tb1DOTmetal` = "u-12tb1.metal".asInstanceOf[`u-12tb1DOTmetal`]
+  def `u-12tb1Dotmetal`: `u-12tb1Dotmetal` = "u-12tb1.metal".asInstanceOf[`u-12tb1Dotmetal`]
   @scala.inline
-  def `u-6tb1DOTmetal`: `u-6tb1DOTmetal` = "u-6tb1.metal".asInstanceOf[`u-6tb1DOTmetal`]
+  def `u-6tb1Dotmetal`: `u-6tb1Dotmetal` = "u-6tb1.metal".asInstanceOf[`u-6tb1Dotmetal`]
   @scala.inline
-  def `u-9tb1DOTmetal`: `u-9tb1DOTmetal` = "u-9tb1.metal".asInstanceOf[`u-9tb1DOTmetal`]
+  def `u-9tb1Dotmetal`: `u-9tb1Dotmetal` = "u-9tb1.metal".asInstanceOf[`u-9tb1Dotmetal`]
   @scala.inline
   def udp: udp = "udp".asInstanceOf[udp]
   @scala.inline
@@ -2101,32 +2116,32 @@ object atPulumiAwsStrings {
   @scala.inline
   def `us-west-2`: `us-west-2` = "us-west-2".asInstanceOf[`us-west-2`]
   @scala.inline
-  def x1DOT16xlarge: x1DOT16xlarge = "x1.16xlarge".asInstanceOf[x1DOT16xlarge]
+  def x1Dot16xlarge: x1Dot16xlarge = "x1.16xlarge".asInstanceOf[x1Dot16xlarge]
   @scala.inline
-  def x1DOT32xlarge: x1DOT32xlarge = "x1.32xlarge".asInstanceOf[x1DOT32xlarge]
+  def x1Dot32xlarge: x1Dot32xlarge = "x1.32xlarge".asInstanceOf[x1Dot32xlarge]
   @scala.inline
-  def x1eDOT16xlarge: x1eDOT16xlarge = "x1e.16xlarge".asInstanceOf[x1eDOT16xlarge]
+  def x1eDot16xlarge: x1eDot16xlarge = "x1e.16xlarge".asInstanceOf[x1eDot16xlarge]
   @scala.inline
-  def x1eDOT2xlarge: x1eDOT2xlarge = "x1e.2xlarge".asInstanceOf[x1eDOT2xlarge]
+  def x1eDot2xlarge: x1eDot2xlarge = "x1e.2xlarge".asInstanceOf[x1eDot2xlarge]
   @scala.inline
-  def x1eDOT32xlarge: x1eDOT32xlarge = "x1e.32xlarge".asInstanceOf[x1eDOT32xlarge]
+  def x1eDot32xlarge: x1eDot32xlarge = "x1e.32xlarge".asInstanceOf[x1eDot32xlarge]
   @scala.inline
-  def x1eDOT4xlarge: x1eDOT4xlarge = "x1e.4xlarge".asInstanceOf[x1eDOT4xlarge]
+  def x1eDot4xlarge: x1eDot4xlarge = "x1e.4xlarge".asInstanceOf[x1eDot4xlarge]
   @scala.inline
-  def x1eDOT8xlarge: x1eDOT8xlarge = "x1e.8xlarge".asInstanceOf[x1eDOT8xlarge]
+  def x1eDot8xlarge: x1eDot8xlarge = "x1e.8xlarge".asInstanceOf[x1eDot8xlarge]
   @scala.inline
-  def x1eDOTxlarge: x1eDOTxlarge = "x1e.xlarge".asInstanceOf[x1eDOTxlarge]
+  def x1eDotxlarge: x1eDotxlarge = "x1e.xlarge".asInstanceOf[x1eDotxlarge]
   @scala.inline
-  def z1dDOT12xlarge: z1dDOT12xlarge = "z1d.12xlarge".asInstanceOf[z1dDOT12xlarge]
+  def z1dDot12xlarge: z1dDot12xlarge = "z1d.12xlarge".asInstanceOf[z1dDot12xlarge]
   @scala.inline
-  def z1dDOT2xlarge: z1dDOT2xlarge = "z1d.2xlarge".asInstanceOf[z1dDOT2xlarge]
+  def z1dDot2xlarge: z1dDot2xlarge = "z1d.2xlarge".asInstanceOf[z1dDot2xlarge]
   @scala.inline
-  def z1dDOT3xlarge: z1dDOT3xlarge = "z1d.3xlarge".asInstanceOf[z1dDOT3xlarge]
+  def z1dDot3xlarge: z1dDot3xlarge = "z1d.3xlarge".asInstanceOf[z1dDot3xlarge]
   @scala.inline
-  def z1dDOT6xlarge: z1dDOT6xlarge = "z1d.6xlarge".asInstanceOf[z1dDOT6xlarge]
+  def z1dDot6xlarge: z1dDot6xlarge = "z1d.6xlarge".asInstanceOf[z1dDot6xlarge]
   @scala.inline
-  def z1dDOTlarge: z1dDOTlarge = "z1d.large".asInstanceOf[z1dDOTlarge]
+  def z1dDotlarge: z1dDotlarge = "z1d.large".asInstanceOf[z1dDotlarge]
   @scala.inline
-  def z1dDOTxlarge: z1dDOTxlarge = "z1d.xlarge".asInstanceOf[z1dDOTxlarge]
+  def z1dDotxlarge: z1dDotxlarge = "z1d.xlarge".asInstanceOf[z1dDotxlarge]
 }
 

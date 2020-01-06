@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PutBucketVersioningRequest extends js.Object {
   /**
-    * 
+    * The bucket name.
     */
-  var Bucket: BucketName
+  var Bucket: BucketName = js.native
   /**
-    * 
+    * &gt;The base64-encoded 128-bit MD5 digest of the data. You must use this header as a message integrity check to verify that the request body was not corrupted in transit. For more information, see RFC 1864.
     */
-  var ContentMD5: js.UndefOr[typings.awsDashSdk.clientsS3Mod.ContentMD5] = js.undefined
+  var ContentMD5: js.UndefOr[typings.awsDashSdk.clientsS3Mod.ContentMD5] = js.native
   /**
     * The concatenation of the authentication device's serial number, a space, and the value that is displayed on your authentication device.
     */
-  var MFA: js.UndefOr[typings.awsDashSdk.clientsS3Mod.MFA] = js.undefined
+  var MFA: js.UndefOr[typings.awsDashSdk.clientsS3Mod.MFA] = js.native
   /**
-    * 
+    * Container for setting the versioning state.
     */
-  var VersioningConfiguration: typings.awsDashSdk.clientsS3Mod.VersioningConfiguration
+  var VersioningConfiguration: typings.awsDashSdk.clientsS3Mod.VersioningConfiguration = js.native
 }
 
 object PutBucketVersioningRequest {
@@ -31,9 +32,9 @@ object PutBucketVersioningRequest {
     ContentMD5: ContentMD5 = null,
     MFA: MFA = null
   ): PutBucketVersioningRequest = {
-    val __obj = js.Dynamic.literal(Bucket = Bucket, VersioningConfiguration = VersioningConfiguration)
-    if (ContentMD5 != null) __obj.updateDynamic("ContentMD5")(ContentMD5)
-    if (MFA != null) __obj.updateDynamic("MFA")(MFA)
+    val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], VersioningConfiguration = VersioningConfiguration.asInstanceOf[js.Any])
+    if (ContentMD5 != null) __obj.updateDynamic("ContentMD5")(ContentMD5.asInstanceOf[js.Any])
+    if (MFA != null) __obj.updateDynamic("MFA")(MFA.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBucketVersioningRequest]
   }
 }

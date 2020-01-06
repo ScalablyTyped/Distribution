@@ -9,9 +9,9 @@ A cross-browser DOM range and selection library
 | ------------------ | :-------------: |
 | Full name          | rangy |
 | Keywords           | range, selection, caret, DOM |
-| # releases         | 1 |
-| # dependents       | 21 |
-| # downloads        | 976055 |
+| # releases         | 0 |
+| # dependents       | 26 |
+| # downloads        | 1395441 |
 | # stars            | 6 |
 
 ## Links

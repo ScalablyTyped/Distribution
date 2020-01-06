@@ -10,9 +10,9 @@ A quick less to sass converter
 | ------------------ | :-------------: |
 | Full name          | less2sass |
 | Keywords           | - |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 44167 |
+| # downloads        | 133709 |
 | # stars            | 1 |
 
 ## Links

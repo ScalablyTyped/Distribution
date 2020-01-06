@@ -11,8 +11,8 @@ A library to create readable "multipart/form-data" in node and the browser.
 | Full name          | isomorphic-form-data |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 40 |
-| # downloads        | 3847512 |
+| # dependents       | 51 |
+| # downloads        | 4301447 |
 | # stars            | 1 |
 
 ## Links

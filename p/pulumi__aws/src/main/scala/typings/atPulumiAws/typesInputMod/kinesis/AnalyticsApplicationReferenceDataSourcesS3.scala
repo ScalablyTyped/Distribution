@@ -5,10 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AnalyticsApplicationReferenceDataSourcesS3 extends js.Object {
-  var bucketArn: Input[String]
-  var fileKey: Input[String]
-  var roleArn: Input[String]
+  var bucketArn: Input[String] = js.native
+  var fileKey: Input[String] = js.native
+  var roleArn: Input[String] = js.native
 }
 
 object AnalyticsApplicationReferenceDataSourcesS3 {

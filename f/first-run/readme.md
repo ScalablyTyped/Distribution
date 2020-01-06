@@ -10,9 +10,9 @@ Check if it's the first time the process is run
 | ------------------ | :-------------: |
 | Full name          | first-run |
 | Keywords           | first, init, initial, run, time, process, start |
-| # releases         | 0 |
+| # releases         | 2 |
 | # dependents       | 22 |
-| # downloads        | 9615 |
+| # downloads        | 19206 |
 | # stars            | 1 |
 
 ## Links

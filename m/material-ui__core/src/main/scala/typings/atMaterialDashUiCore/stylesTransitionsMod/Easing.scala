@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Easing extends js.Object {
-  var easeIn: String
-  var easeInOut: String
-  var easeOut: String
-  var sharp: String
+  var easeIn: String = js.native
+  var easeInOut: String = js.native
+  var easeOut: String = js.native
+  var sharp: String = js.native
 }
 
 object Easing {

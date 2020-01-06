@@ -16,12 +16,12 @@ package object clientsGlacierMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.ArchiveRetrieval
     - typings.awsDashSdk.awsDashSdkStrings.InventoryRetrieval
-    - typings.awsDashSdk.awsDashSdkStrings.Select
+    - typings.awsDashSdk.awsDashSdkStrings.Select_
     - java.lang.String
   */
   type ActionCode = _ActionCode | String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.`private`
+    - typings.awsDashSdk.awsDashSdkStrings.private__
     - typings.awsDashSdk.awsDashSdkStrings.`public-read`
     - typings.awsDashSdk.awsDashSdkStrings.`public-read-write`
     - typings.awsDashSdk.awsDashSdkStrings.`aws-exec-read`
@@ -35,7 +35,7 @@ package object clientsGlacierMod {
   type DataRetrievalRulesList = js.Array[DataRetrievalRule]
   type DateTime = String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.`aws:kms`
+    - typings.awsDashSdk.awsDashSdkStrings.awsColonkms
     - typings.awsDashSdk.awsDashSdkStrings.AES256
     - java.lang.String
   */
@@ -70,9 +70,9 @@ package object clientsGlacierMod {
   type QuoteFields = _QuoteFields | String
   type Size = Double
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.InProgress
-    - typings.awsDashSdk.awsDashSdkStrings.Succeeded
-    - typings.awsDashSdk.awsDashSdkStrings.Failed
+    - typings.awsDashSdk.awsDashSdkStrings.InProgress_
+    - typings.awsDashSdk.awsDashSdkStrings.Succeeded_
+    - typings.awsDashSdk.awsDashSdkStrings.Failed_
     - java.lang.String
   */
   type StatusCode = _StatusCode | String
@@ -91,7 +91,7 @@ package object clientsGlacierMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.AmazonCustomerByEmail
     - typings.awsDashSdk.awsDashSdkStrings.CanonicalUser
-    - typings.awsDashSdk.awsDashSdkStrings.Group
+    - typings.awsDashSdk.awsDashSdkStrings.Group_
     - java.lang.String
   */
   type Type = _Type | String
@@ -99,7 +99,7 @@ package object clientsGlacierMod {
   type VaultList = js.Array[DescribeVaultOutput]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2012-06-01`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

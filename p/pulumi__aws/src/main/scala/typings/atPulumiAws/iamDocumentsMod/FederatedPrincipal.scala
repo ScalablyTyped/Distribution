@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FederatedPrincipal extends Principal {
-  var Federated: Input[js.Array[Input[String]] | String]
+  var Federated: Input[js.Array[Input[String]] | String] = js.native
 }
 
 object FederatedPrincipal {

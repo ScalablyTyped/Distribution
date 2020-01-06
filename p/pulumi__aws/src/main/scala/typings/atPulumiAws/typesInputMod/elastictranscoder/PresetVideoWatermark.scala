@@ -5,47 +5,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PresetVideoWatermark extends js.Object {
   /**
     * The horizontal position of the watermark unless you specify a nonzero value for `horzontalOffset`.
     */
-  var horizontalAlign: js.UndefOr[Input[String]] = js.undefined
+  var horizontalAlign: js.UndefOr[Input[String]] = js.native
   /**
     * The amount by which you want the horizontal position of the watermark to be offset from the position specified by `horizontalAlign`.
     */
-  var horizontalOffset: js.UndefOr[Input[String]] = js.undefined
+  var horizontalOffset: js.UndefOr[Input[String]] = js.native
   /**
     * A unique identifier for the settings for one watermark. The value of Id can be up to 40 characters long. You can specify settings for up to four watermarks.
     */
-  var id: js.UndefOr[Input[String]] = js.undefined
+  var id: js.UndefOr[Input[String]] = js.native
   /**
     * The maximum height of the watermark.
     */
-  var maxHeight: js.UndefOr[Input[String]] = js.undefined
+  var maxHeight: js.UndefOr[Input[String]] = js.native
   /**
     * The maximum width of the watermark.
     */
-  var maxWidth: js.UndefOr[Input[String]] = js.undefined
+  var maxWidth: js.UndefOr[Input[String]] = js.native
   /**
     * A percentage that indicates how much you want a watermark to obscure the video in the location where it appears.
     */
-  var opacity: js.UndefOr[Input[String]] = js.undefined
+  var opacity: js.UndefOr[Input[String]] = js.native
   /**
     * A value that controls scaling of the watermark. Valid values are: `Fit`, `Stretch`, `ShrinkToFit`
     */
-  var sizingPolicy: js.UndefOr[Input[String]] = js.undefined
+  var sizingPolicy: js.UndefOr[Input[String]] = js.native
   /**
     * A value that determines how Elastic Transcoder interprets values that you specified for `video_watermarks.horizontal_offset`, `video_watermarks.vertical_offset`, `video_watermarks.max_width`, and `video_watermarks.max_height`. Valid values are `Content` and `Frame`.
     */
-  var target: js.UndefOr[Input[String]] = js.undefined
+  var target: js.UndefOr[Input[String]] = js.native
   /**
     * The vertical position of the watermark unless you specify a nonzero value for `verticalAlign`. Valid values are `Top`, `Bottom`, `Center`.
     */
-  var verticalAlign: js.UndefOr[Input[String]] = js.undefined
+  var verticalAlign: js.UndefOr[Input[String]] = js.native
   /**
     * The amount by which you want the vertical position of the watermark to be offset from the position specified by `verticalAlign`
     */
-  var verticalOffset: js.UndefOr[Input[String]] = js.undefined
+  var verticalOffset: js.UndefOr[Input[String]] = js.native
 }
 
 object PresetVideoWatermark {

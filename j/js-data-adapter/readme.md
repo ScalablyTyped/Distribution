@@ -10,9 +10,9 @@ Base adapter class that all other js-data adapters extend.
 | ------------------ | :-------------: |
 | Full name          | js-data-adapter |
 | Keywords           | js-data, jsdata, adapter |
-| # releases         | 5 |
+| # releases         | 2 |
 | # dependents       | 15 |
-| # downloads        | 123280 |
+| # downloads        | 132122 |
 | # stars            | 0 |
 
 ## Links

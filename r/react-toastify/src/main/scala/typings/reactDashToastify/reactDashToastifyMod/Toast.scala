@@ -54,7 +54,9 @@ trait Toast extends js.Object {
   /**
     * Listen for change when a toast is added or removed. The number of toast displayed is passed as paran to the callback
     */
-  def onChange(callback: js.Function1[/* count */ js.UndefOr[Double], Unit]): Unit = js.native
+  def onChange(
+    callback: js.Function2[/* count */ js.UndefOr[Double], /* containerId */ js.UndefOr[String | Double], Unit]
+  ): Unit = js.native
   /**
     * Shorthand to display toast of type 'success'.
     */

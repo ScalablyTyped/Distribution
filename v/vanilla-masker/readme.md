@@ -10,9 +10,9 @@ VanillaMasker is a pure javascript input mask.
 | ------------------ | :-------------: |
 | Full name          | vanilla-masker |
 | Keywords           | mask input, javascript, lightweight, cross-browser, cross-device |
-| # releases         | 2 |
-| # dependents       | 84 |
-| # downloads        | 401916 |
+| # releases         | 1 |
+| # dependents       | 96 |
+| # downloads        | 460404 |
 | # stars            | 5 |
 
 ## Links

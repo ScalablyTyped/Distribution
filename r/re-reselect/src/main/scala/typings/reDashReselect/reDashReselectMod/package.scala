@@ -23,7 +23,7 @@ package object reDashReselectMod {
   type OutputParametricCachedSelector[S, P, R, C, D] = js.Function2[
     /* options */ (ParametricKeySelector[S, P]) | (ParametricOptions[S, P, C, D]), 
     /* legacyOptions */ js.UndefOr[(ParametricOptions[S, P, C, D]) | CreateSelectorInstance], 
-    (OutputParametricSelector[S, P, R, C, D]) with (Anon_ArgsCache[C, R, S, P, D])
+    (OutputParametricSelector[S, P, R, C, D]) with (Anon_ArgsCache[S, P, R, C, D])
   ]
   type OutputParametricSelector[S, P, R, C, D] = (ParametricSelector[S, P, R]) with (Anon_Dependencies[C, D])
   type OutputSelector[S, R, C, D] = (Selector[S, R]) with (Anon_Dependencies[C, D])

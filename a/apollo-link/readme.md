@@ -10,9 +10,9 @@ Flexible, lightweight transport layer for GraphQL
 | ------------------ | :-------------: |
 | Full name          | apollo-link |
 | Keywords           | - |
-| # releases         | 47 |
-| # dependents       | 371 |
-| # downloads        | 30978781 |
+| # releases         | 18 |
+| # dependents       | 560 |
+| # downloads        | 68509742 |
 | # stars            | 0 |
 
 ## Links

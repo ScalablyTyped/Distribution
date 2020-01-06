@@ -153,10 +153,11 @@ class Button () extends _WidgetBase {
   @JSName("get")
   def get_value(property: value): String = js.native
   /**
-    *
+    * Tells if this widget is focusable or not.  Used internally by dijit.
+    * 
     */
   @JSName("isFocusable")
-  def isFocusable_Boolean(): Boolean = js.native
+  def isFocusable_Any(): js.Any = js.native
   /**
     * Callback when this widget's value is changed.
     *

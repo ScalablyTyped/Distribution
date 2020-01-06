@@ -9,14 +9,14 @@ Regular expression for matching a shebang line
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | shebang-regex |
-| Keywords           | re, regex, regexp, shebang, match, test, line |
-| # releases         | 1 |
-| # dependents       | 55 |
-| # downloads        | 284556510 |
+| Keywords           | regex, regexp, shebang, match, test, line |
+| # releases         | 2 |
+| # dependents       | 72 |
+| # downloads        | 455624371 |
 | # stars            | 1 |
 
 ## Links
-- [Homepage](https://github.com/sindresorhus/shebang-regex)
+- [Homepage](https://github.com/sindresorhus/shebang-regex#readme)
 - [Bugs](https://github.com/sindresorhus/shebang-regex/issues)
 - [Repository](https://github.com/sindresorhus/shebang-regex)
 - [Npm](https://www.npmjs.com/package/shebang-regex)

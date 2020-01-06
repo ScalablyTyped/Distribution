@@ -12,7 +12,7 @@ Xml assertions for Chai
 | Keywords           | chai-plugin, chai, xml, test, assert, assertion, assertXml |
 | # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 178465 |
+| # downloads        | 261257 |
 | # stars            | 2 |
 
 ## Links

@@ -10,15 +10,15 @@ an opinionated implementation of resque in node
 | ------------------ | :-------------: |
 | Full name          | node-resque |
 | Keywords           | delayed, queue, resque, redis, work, worker, background, job, task |
-| # releases         | 18 |
+| # releases         | 20 |
 | # dependents       | 19 |
-| # downloads        | 193401 |
+| # downloads        | 264252 |
 | # stars            | 11 |
 
 ## Links
-- [Homepage](http://github.com/taskrabbit/node-resque)
-- [Bugs](https://github.com/taskrabbit/node-resque/issues)
-- [Repository](https://github.com/taskrabbit/node-resque)
+- [Homepage](http://github.com/actionhero/node-resque)
+- [Bugs](https://github.com/actionhero/node-resque/issues)
+- [Repository](https://github.com/actionhero/node-resque)
 - [Npm](https://www.npmjs.com/package/node-resque)
     
 

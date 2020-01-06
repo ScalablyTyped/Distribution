@@ -7,15 +7,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PolicyAttachmentArgs extends js.Object {
   /**
     * The name of the policy to attach.
     */
-  val policy: Input[String | Policy]
+  val policy: Input[String | Policy] = js.native
   /**
     * The identity to which the policy is attached.
     */
-  val target: Input[ARN]
+  val target: Input[ARN] = js.native
 }
 
 object PolicyAttachmentArgs {

@@ -9,9 +9,9 @@ parallel.js enables easy multi-thread processing in javascript
 | ------------------ | :-------------: |
 | Full name          | paralleljs |
 | Keywords           | parallel, spawn, map, thread, parallel.js, workers, webworkers |
-| # releases         | 1 |
-| # dependents       | 16 |
-| # downloads        | 77651 |
+| # releases         | 0 |
+| # dependents       | 18 |
+| # downloads        | 1361220 |
 | # stars            | 9 |
 
 ## Links

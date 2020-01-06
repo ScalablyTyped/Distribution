@@ -11,8 +11,8 @@ The lodash method `_.slice` exported as a module.
 | Full name          | lodash.slice |
 | Keywords           | lodash-modularized, slice |
 | # releases         | 0 |
-| # dependents       | 14 |
-| # downloads        | 105572 |
+| # dependents       | 18 |
+| # downloads        | 172680 |
 | # stars            | 0 |
 
 ## Links

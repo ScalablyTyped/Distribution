@@ -10,15 +10,15 @@ Run the supplied function exactly one time (once)
 | ------------------ | :-------------: |
 | Full name          | one-time |
 | Keywords           | once, function, single, one, one-time, execution, nope |
-| # releases         | 1 |
-| # dependents       | 38 |
-| # downloads        | 18029947 |
+| # releases         | 2 |
+| # dependents       | 43 |
+| # downloads        | 48137372 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/unshiftio/one-time)
-- [Bugs](https://github.com/unshiftio/one-time/issues)
-- [Repository](https://github.com/unshiftio/one-time)
+- [Homepage](https://github.com/3rd-Eden/one-time#readme)
+- [Bugs](https://github.com/3rd-Eden/one-time/issues)
+- [Repository](https://github.com/3rd-Eden/one-time)
 - [Npm](https://www.npmjs.com/package/one-time)
     
 

@@ -15,12 +15,11 @@ object use extends js.Object {
     * unloaded. Static and non-static methods are available, and you can even
     * replace method implementations.
     *
-    * Uses the app's class loader by default, but you may customize this by
-    * assigning a different loader instance to `Java.classFactory.loader`.
+    * Uses the app's class loader, but you may access classes on other loaders
+    * by calling `Java.ClassFactory.get()`.
     *
     * @param className Canonical class name to get a wrapper for.
     */
   def apply(className: String): Wrapper = js.native
-  def apply(className: String, options: UseOptions): Wrapper = js.native
 }
 

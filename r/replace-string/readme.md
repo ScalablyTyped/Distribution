@@ -10,9 +10,9 @@ Replace all substring matches in a string
 | ------------------ | :-------------: |
 | Full name          | replace-string |
 | Keywords           | replace, string, text, all, many, multiple, global, match, matches, replacement, replacer, modify, substring, sub-string, needle, search |
-| # releases         | 2 |
-| # dependents       | 26 |
-| # downloads        | 1596102 |
+| # releases         | 3 |
+| # dependents       | 33 |
+| # downloads        | 1915464 |
 | # stars            | 3 |
 
 ## Links

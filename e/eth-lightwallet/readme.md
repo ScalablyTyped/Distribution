@@ -10,9 +10,9 @@ A lightweight ethereum javascript wallet.
 | ------------------ | :-------------: |
 | Full name          | eth-lightwallet |
 | Keywords           | ethereum, blockchain, transactions, contracts, wallet |
-| # releases         | 5 |
+| # releases         | 3 |
 | # dependents       | 37 |
-| # downloads        | 136260 |
+| # downloads        | 196866 |
 | # stars            | 1 |
 
 ## Links

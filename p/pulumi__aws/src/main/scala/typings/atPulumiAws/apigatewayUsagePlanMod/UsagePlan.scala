@@ -1,5 +1,6 @@
 package typings.atPulumiAws.apigatewayUsagePlanMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.atPulumiAws.typesOutputMod.apigateway.UsagePlanApiStage
 import typings.atPulumiAws.typesOutputMod.apigateway.UsagePlanQuotaSettings
 import typings.atPulumiAws.typesOutputMod.apigateway.UsagePlanThrottleSettings
@@ -30,6 +31,10 @@ class UsagePlan protected () extends CustomResource {
     */
   val apiStages: Output[js.UndefOr[js.Array[UsagePlanApiStage]]] = js.native
   /**
+    * Amazon Resource Name (ARN)
+    */
+  val arn: Output[String] = js.native
+  /**
     * The description of a usage plan.
     */
   val description: Output[js.UndefOr[String]] = js.native
@@ -45,6 +50,10 @@ class UsagePlan protected () extends CustomResource {
     * The quota settings of the usage plan.
     */
   val quotaSettings: Output[js.UndefOr[UsagePlanQuotaSettings]] = js.native
+  /**
+    * Key-value mapping of resource tags
+    */
+  val tags: Output[js.UndefOr[StringDictionary[_]]] = js.native
   /**
     * The throttling limits of the usage plan.
     */

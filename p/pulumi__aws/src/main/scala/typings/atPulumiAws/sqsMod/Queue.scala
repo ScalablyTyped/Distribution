@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/sqs", "Queue")
 @js.native
 class Queue protected ()
-  extends typings.atPulumiAws.sqsSqsMixinsMod.sqsQueueMod.Queue {
+  extends typings.atPulumiAws.sqsQueueMod.Queue {
   /**
     * Create a Queue resource with the given unique name, arguments, and options.
     *
@@ -37,13 +37,13 @@ object Queue extends js.Object {
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
     */
-  def get(name: String, id: Input[ID]): typings.atPulumiAws.sqsSqsMixinsMod.sqsQueueMod.Queue = js.native
-  def get(name: String, id: Input[ID], state: QueueState): typings.atPulumiAws.sqsSqsMixinsMod.sqsQueueMod.Queue = js.native
-  def get(name: String, id: Input[ID], state: QueueState, opts: CustomResourceOptions): typings.atPulumiAws.sqsSqsMixinsMod.sqsQueueMod.Queue = js.native
+  def get(name: String, id: Input[ID]): typings.atPulumiAws.sqsQueueMod.Queue = js.native
+  def get(name: String, id: Input[ID], state: QueueState): typings.atPulumiAws.sqsQueueMod.Queue = js.native
+  def get(name: String, id: Input[ID], state: QueueState, opts: CustomResourceOptions): typings.atPulumiAws.sqsQueueMod.Queue = js.native
   /**
     * Returns true if the given object is an instance of Queue.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
-  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sqs/sqsMixins.@pulumi/aws/sqs/queue.Queue */ Boolean = js.native
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sqs/queue.Queue */ Boolean = js.native
 }
 

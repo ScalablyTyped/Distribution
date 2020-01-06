@@ -11,8 +11,8 @@ Node's first framework for building immersive CLI apps.
 | Full name          | vorpal |
 | Keywords           | api, cli, repl, shell, immersive, framework, app, application, command, commander, automated, prompt, inquirer |
 | # releases         | 1 |
-| # dependents       | 419 |
-| # downloads        | 1322911 |
+| # dependents       | 444 |
+| # downloads        | 1926784 |
 | # stars            | 50 |
 
 ## Links

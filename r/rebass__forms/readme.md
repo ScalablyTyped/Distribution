@@ -11,8 +11,8 @@ Accessible and themeable form components for use with Rebass or Theme UI.
 | Full name          | @rebass/forms |
 | Keywords           | - |
 | # releases         | 5 |
-| # dependents       | 3 |
-| # downloads        | 27311 |
+| # dependents       | 10 |
+| # downloads        | 53438 |
 | # stars            | 0 |
 
 ## Links

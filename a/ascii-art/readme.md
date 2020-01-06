@@ -10,9 +10,9 @@ Ansi codes, figlet fonts, and ascii art. 100% JS
 | ------------------ | :-------------: |
 | Full name          | ascii-art |
 | Keywords           | ascii, figlet, ansi, terminal, text, command-line, logging, log, xterm, shell, 256, rgb, formatting, tty, styles, style, str, string, cli, console, terminal, table, compositing, colors, colour, color, chalk |
-| # releases         | 5 |
-| # dependents       | 41 |
-| # downloads        | 66794 |
+| # releases         | 20 |
+| # dependents       | 52 |
+| # downloads        | 83322 |
 | # stars            | 17 |
 
 ## Links

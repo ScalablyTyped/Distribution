@@ -5,23 +5,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PolicyState extends js.Object {
   /**
     * The ARN assigned by AWS to this policy.
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * The default version of this policy.
     */
-  val defaultVersionId: js.UndefOr[Input[String]] = js.undefined
+  val defaultVersionId: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the policy.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
-  /**
-    * The policy document. This is a JSON formatted string. Use the [IoT Developer Guide](http://docs.aws.amazon.com/iot/latest/developerguide/iot-policies.html) for more information on IoT Policies.
-    */
-  val policy: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
+  val policy: js.UndefOr[Input[String]] = js.native
 }
 
 object PolicyState {

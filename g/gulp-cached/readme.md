@@ -10,8 +10,8 @@ A simple in-memory file cache for gulp
 | Full name          | gulp-cached |
 | Keywords           | gulpplugin |
 | # releases         | 1 |
-| # dependents       | 184 |
-| # downloads        | 2038166 |
+| # dependents       | 189 |
+| # downloads        | 2519557 |
 | # stars            | 48 |
 
 ## Links

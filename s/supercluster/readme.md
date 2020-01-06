@@ -10,9 +10,9 @@ A very fast geospatial point clustering library.
 | ------------------ | :-------------: |
 | Full name          | supercluster |
 | Keywords           | clustering, geospatial, markers |
-| # releases         | 11 |
-| # dependents       | 75 |
-| # downloads        | 5597507 |
+| # releases         | 10 |
+| # dependents       | 105 |
+| # downloads        | 9493258 |
 | # stars            | 5 |
 
 ## Links

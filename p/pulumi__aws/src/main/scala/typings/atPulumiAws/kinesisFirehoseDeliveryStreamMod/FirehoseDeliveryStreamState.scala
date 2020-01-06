@@ -13,55 +13,59 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FirehoseDeliveryStreamState extends js.Object {
   /**
     * The Amazon Resource Name (ARN) specifying the Stream
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * This is the destination to where the data is delivered. The only options are `s3` (Deprecated, use `extendedS3` instead), `extendedS3`, `redshift`, `elasticsearch`, and `splunk`.
     */
-  val destination: js.UndefOr[Input[String]] = js.undefined
-  val destinationId: js.UndefOr[Input[String]] = js.undefined
-  val elasticsearchConfiguration: js.UndefOr[Input[FirehoseDeliveryStreamElasticsearchConfiguration]] = js.undefined
+  val destination: js.UndefOr[Input[String]] = js.native
+  val destinationId: js.UndefOr[Input[String]] = js.native
+  /**
+    * Configuration options if elasticsearch is the destination. More details are given below.
+    */
+  val elasticsearchConfiguration: js.UndefOr[Input[FirehoseDeliveryStreamElasticsearchConfiguration]] = js.native
   /**
     * Enhanced configuration options for the s3 destination. More details are given below.
     */
-  val extendedS3Configuration: js.UndefOr[Input[FirehoseDeliveryStreamExtendedS3Configuration]] = js.undefined
+  val extendedS3Configuration: js.UndefOr[Input[FirehoseDeliveryStreamExtendedS3Configuration]] = js.native
   /**
     * Allows the ability to specify the kinesis stream that is used as the source of the firehose delivery stream.
     */
-  val kinesisSourceConfiguration: js.UndefOr[Input[FirehoseDeliveryStreamKinesisSourceConfiguration]] = js.undefined
+  val kinesisSourceConfiguration: js.UndefOr[Input[FirehoseDeliveryStreamKinesisSourceConfiguration]] = js.native
   /**
     * A name to identify the stream. This is unique to the
     * AWS account and region the Stream is created in.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * Configuration options if redshift is the destination.
     * Using `redshiftConfiguration` requires the user to also specify a
     * `s3Configuration` block. More details are given below.
     */
-  val redshiftConfiguration: js.UndefOr[Input[FirehoseDeliveryStreamRedshiftConfiguration]] = js.undefined
+  val redshiftConfiguration: js.UndefOr[Input[FirehoseDeliveryStreamRedshiftConfiguration]] = js.native
   /**
     * Required for non-S3 destinations. For S3 destination, use `extendedS3Configuration` instead. Configuration options for the s3 destination (or the intermediate bucket if the destination
     * is redshift). More details are given below.
     */
-  val s3Configuration: js.UndefOr[Input[FirehoseDeliveryStreamS3Configuration]] = js.undefined
+  val s3Configuration: js.UndefOr[Input[FirehoseDeliveryStreamS3Configuration]] = js.native
   /**
     * Encrypt at rest options.
     * Server-side encryption should not be enabled when a kinesis stream is configured as the source of the firehose delivery stream.
     */
-  val serverSideEncryption: js.UndefOr[Input[FirehoseDeliveryStreamServerSideEncryption]] = js.undefined
-  val splunkConfiguration: js.UndefOr[Input[FirehoseDeliveryStreamSplunkConfiguration]] = js.undefined
+  val serverSideEncryption: js.UndefOr[Input[FirehoseDeliveryStreamServerSideEncryption]] = js.native
+  val splunkConfiguration: js.UndefOr[Input[FirehoseDeliveryStreamSplunkConfiguration]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * Specifies the table version for the output data schema. Defaults to `LATEST`.
     */
-  val versionId: js.UndefOr[Input[String]] = js.undefined
+  val versionId: js.UndefOr[Input[String]] = js.native
 }
 
 object FirehoseDeliveryStreamState {

@@ -10,9 +10,9 @@ A complete, fully tested data structure library written in TypeScript.
 | ------------------ | :-------------: |
 | Full name          | typescript-collections |
 | Keywords           | typescript, generics, data, structures, collections, linked, list, dictionary, default, dictionary, multi, dictionary, binary, search, tree, key, value, stack, queue, set, bag, binary, heap, priority, queue, array |
-| # releases         | 2 |
-| # dependents       | 70 |
-| # downloads        | 468020 |
+| # releases         | 3 |
+| # dependents       | 74 |
+| # downloads        | 528204 |
 | # stars            | 2 |
 
 ## Links

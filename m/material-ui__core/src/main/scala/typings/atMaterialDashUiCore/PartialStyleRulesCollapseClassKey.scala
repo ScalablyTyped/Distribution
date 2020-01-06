@@ -6,11 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/Collapse.CollapseClassKey>> */
+@js.native
 trait PartialStyleRulesCollapseClassKey extends js.Object {
-  var container: js.UndefOr[CSSProperties] = js.undefined
-  var entered: js.UndefOr[CSSProperties] = js.undefined
-  var wrapper: js.UndefOr[CSSProperties] = js.undefined
-  var wrapperInner: js.UndefOr[CSSProperties] = js.undefined
+  var container: js.UndefOr[CSSProperties] = js.native
+  var entered: js.UndefOr[CSSProperties] = js.native
+  var wrapper: js.UndefOr[CSSProperties] = js.native
+  var wrapperInner: js.UndefOr[CSSProperties] = js.native
 }
 
 object PartialStyleRulesCollapseClassKey {

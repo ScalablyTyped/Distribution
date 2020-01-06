@@ -10,9 +10,9 @@ o.js is a isomorphic Odata Javascript library to simplify the request of data. T
 | ------------------ | :-------------: |
 | Full name          | o.js |
 | Keywords           | - |
-| # releases         | 10 |
+| # releases         | 9 |
 | # dependents       | 0 |
-| # downloads        | 2144 |
+| # downloads        | 7398 |
 | # stars            | 0 |
 
 ## Links

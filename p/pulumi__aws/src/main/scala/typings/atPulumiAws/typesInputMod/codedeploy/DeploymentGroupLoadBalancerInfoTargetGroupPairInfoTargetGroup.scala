@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroup extends js.Object {
   /**
     * Name of the target group.
     */
-  var name: Input[String]
+  var name: Input[String] = js.native
 }
 
 object DeploymentGroupLoadBalancerInfoTargetGroupPairInfoTargetGroup {

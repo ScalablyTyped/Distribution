@@ -12,7 +12,7 @@ Angular OAuth2
 | Keywords           | AngularJS, Authentication, OAuth2 |
 | # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 18996 |
+| # downloads        | 22335 |
 | # stars            | 0 |
 
 ## Links

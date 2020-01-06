@@ -37,7 +37,7 @@ class VpcAttachment protected () extends CustomResource {
   /**
     * Key-value tags for the EC2 Transit Gateway VPC Attachment.
     */
-  val tags: Output[js.UndefOr[StringDictionary[String]]] = js.native
+  val tags: Output[js.UndefOr[StringDictionary[_]]] = js.native
   /**
     * Boolean whether the VPC Attachment should be associated with the EC2 Transit Gateway association default route table. This cannot be configured or perform drift detection with Resource Access Manager shared EC2 Transit Gateways. Default value: `true`.
     */

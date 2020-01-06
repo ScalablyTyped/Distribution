@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LifecyclePolicyPolicyDetailsScheduleRetainRule extends js.Object {
   /**
     * How many snapshots to keep. Must be an integer between 1 and 1000.
     */
-  var count: Input[Double]
+  var count: Input[Double] = js.native
 }
 
 object LifecyclePolicyPolicyDetailsScheduleRetainRule {

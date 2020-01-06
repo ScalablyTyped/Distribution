@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LaunchTemplateInstanceMarketOptionsRequest extends js.Object {
   /**
     * The market type.
     */
-  var MarketType: js.UndefOr[typings.awsDashSdk.clientsEc2Mod.MarketType] = js.undefined
+  var MarketType: js.UndefOr[typings.awsDashSdk.clientsEc2Mod.MarketType] = js.native
   /**
     * The options for Spot Instances.
     */
-  var SpotOptions: js.UndefOr[LaunchTemplateSpotMarketOptionsRequest] = js.undefined
+  var SpotOptions: js.UndefOr[LaunchTemplateSpotMarketOptionsRequest] = js.native
 }
 
 object LaunchTemplateInstanceMarketOptionsRequest {
@@ -20,7 +21,7 @@ object LaunchTemplateInstanceMarketOptionsRequest {
   def apply(MarketType: MarketType = null, SpotOptions: LaunchTemplateSpotMarketOptionsRequest = null): LaunchTemplateInstanceMarketOptionsRequest = {
     val __obj = js.Dynamic.literal()
     if (MarketType != null) __obj.updateDynamic("MarketType")(MarketType.asInstanceOf[js.Any])
-    if (SpotOptions != null) __obj.updateDynamic("SpotOptions")(SpotOptions)
+    if (SpotOptions != null) __obj.updateDynamic("SpotOptions")(SpotOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchTemplateInstanceMarketOptionsRequest]
   }
 }

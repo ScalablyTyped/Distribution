@@ -10,7 +10,7 @@ package object atXstyledSystemMod {
   type AliasKey = String
   type BreakPointsRules = StringDictionary[js.Any]
   type ObjectOrArray[T] = js.Array[T] | (StringDictionary[
-    T | (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias @xstyled/system.@xstyled/system.ObjectOrArray<T> */ js.Object)
+    T | (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @xstyled/system.@xstyled/system.ObjectOrArray<T> */ js.Object)
   ])
   type ResponsiveValue[T] = T | StringDictionary[T]
   type StyledSystemLength = String | Double

@@ -4,27 +4,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SigningCertificate extends js.Object {
   /**
     * The contents of the signing certificate.
     */
-  var CertificateBody: certificateBodyType
+  var CertificateBody: certificateBodyType = js.native
   /**
     * The ID for the signing certificate.
     */
-  var CertificateId: certificateIdType
+  var CertificateId: certificateIdType = js.native
   /**
     * The status of the signing certificate. Active means that the key is valid for API calls, while Inactive means it is not.
     */
-  var Status: statusType
+  var Status: statusType = js.native
   /**
     * The date when the signing certificate was uploaded.
     */
-  var UploadDate: js.UndefOr[dateType] = js.undefined
+  var UploadDate: js.UndefOr[dateType] = js.native
   /**
     * The name of the user the signing certificate is associated with.
     */
-  var UserName: userNameType
+  var UserName: userNameType = js.native
 }
 
 object SigningCertificate {
@@ -36,8 +37,8 @@ object SigningCertificate {
     UserName: userNameType,
     UploadDate: dateType = null
   ): SigningCertificate = {
-    val __obj = js.Dynamic.literal(CertificateBody = CertificateBody, CertificateId = CertificateId, Status = Status.asInstanceOf[js.Any], UserName = UserName)
-    if (UploadDate != null) __obj.updateDynamic("UploadDate")(UploadDate)
+    val __obj = js.Dynamic.literal(CertificateBody = CertificateBody.asInstanceOf[js.Any], CertificateId = CertificateId.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], UserName = UserName.asInstanceOf[js.Any])
+    if (UploadDate != null) __obj.updateDynamic("UploadDate")(UploadDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[SigningCertificate]
   }
 }

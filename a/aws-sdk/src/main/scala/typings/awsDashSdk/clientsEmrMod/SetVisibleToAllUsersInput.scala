@@ -4,21 +4,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SetVisibleToAllUsersInput extends js.Object {
   /**
-    * Identifiers of the job flows to receive the new visibility setting.
+    * The unique identifier of the job flow (cluster).
     */
-  var JobFlowIds: XmlStringList
+  var JobFlowIds: XmlStringList = js.native
   /**
-    *  This member will be deprecated.  Whether the specified clusters are visible to all IAM users of the AWS account associated with the cluster. If this value is set to True, all IAM users of that AWS account can view and, if they have the proper IAM policy permissions set, manage the clusters. If it is set to False, only the IAM user that created a cluster can view and manage it.
+    * A value of true indicates that all IAM users in the AWS account can perform cluster actions if they have the proper IAM policy permissions. This is the default. A value of false indicates that only the IAM user who created the cluster can perform actions.
     */
-  var VisibleToAllUsers: Boolean
+  var VisibleToAllUsers: Boolean = js.native
 }
 
 object SetVisibleToAllUsersInput {
   @scala.inline
   def apply(JobFlowIds: XmlStringList, VisibleToAllUsers: Boolean): SetVisibleToAllUsersInput = {
-    val __obj = js.Dynamic.literal(JobFlowIds = JobFlowIds, VisibleToAllUsers = VisibleToAllUsers)
+    val __obj = js.Dynamic.literal(JobFlowIds = JobFlowIds.asInstanceOf[js.Any], VisibleToAllUsers = VisibleToAllUsers.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SetVisibleToAllUsersInput]
   }

@@ -10,9 +10,9 @@ An npm wrapper for Ardhi Lukianto’s Leaflet.MousePosition plugin
 | ------------------ | :-------------: |
 | Full name          | leaflet-mouse-position |
 | Keywords           | leaflet, leafletjs |
-| # releases         | 4 |
-| # dependents       | 1 |
-| # downloads        | 8756 |
+| # releases         | 6 |
+| # dependents       | 2 |
+| # downloads        | 26735 |
 | # stars            | 0 |
 
 ## Links

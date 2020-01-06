@@ -10,9 +10,9 @@ RxJS based middleware for Redux. Compose and cancel async actions and more.
 | ------------------ | :-------------: |
 | Full name          | redux-observable |
 | Keywords           | Rx, Ducks, Reducks, Redux, middleware, observable, thunk, async, cancel, action |
-| # releases         | 13 |
-| # dependents       | 177 |
-| # downloads        | 3604948 |
+| # releases         | 14 |
+| # dependents       | 232 |
+| # downloads        | 5790297 |
 | # stars            | 11 |
 
 ## Links

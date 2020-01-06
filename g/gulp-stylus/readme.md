@@ -11,8 +11,8 @@ Stylus plugin for gulp
 | Full name          | gulp-stylus |
 | Keywords           | gulp, stylus, css, preprocessor, gulpplugin, gulp-plugin |
 | # releases         | 2 |
-| # dependents       | 214 |
-| # downloads        | 920164 |
+| # dependents       | 225 |
+| # downloads        | 1006095 |
 | # stars            | 64 |
 
 ## Links

@@ -10,9 +10,9 @@ Map over promises concurrently
 | ------------------ | :-------------: |
 | Full name          | p-map |
 | Keywords           | promise, map, resolved, wait, collection, iterable, iterator, race, fulfilled, async, await, promises, concurrently, concurrency, parallel, bluebird |
-| # releases         | 2 |
-| # dependents       | 288 |
-| # downloads        | 185606921 |
+| # releases         | 4 |
+| # dependents       | 375 |
+| # downloads        | 366057221 |
 | # stars            | 6 |
 
 ## Links

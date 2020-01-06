@@ -10,9 +10,9 @@ A profiler designed for use in the game of Screeps.
 | ------------------ | :-------------: |
 | Full name          | screeps-profiler |
 | Keywords           | screeps, profiler |
-| # releases         | 4 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 1307 |
+| # downloads        | 1142 |
 | # stars            | 0 |
 
 ## Links

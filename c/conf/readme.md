@@ -10,9 +10,9 @@ Simple config handling for your app or module
 | ------------------ | :-------------: |
 | Full name          | conf |
 | Keywords           | config, store, app, storage, conf, configuration, settings, preferences, json, data, persist, persistent, save, load, read, write, cache |
-| # releases         | 13 |
-| # dependents       | 239 |
-| # downloads        | 2624656 |
+| # releases         | 15 |
+| # dependents       | 353 |
+| # downloads        | 8399800 |
 | # stars            | 13 |
 
 ## Links

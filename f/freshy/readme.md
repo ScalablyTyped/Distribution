@@ -10,9 +10,9 @@ A node module (un|re)loader.
 | ------------------ | :-------------: |
 | Full name          | freshy |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 7 |
-| # downloads        | 226328 |
+| # releases         | 0 |
+| # dependents       | 8 |
+| # downloads        | 180911 |
 | # stars            | 1 |
 
 ## Links

@@ -22,6 +22,12 @@ trait StripeProps extends js.Object {
   def createSource(sourceData: SourceOptions): js.Promise[SourceResponse] = js.native
   def createToken(): js.Promise[PatchedTokenResponse] = js.native
   def createToken(options: TokenOptions): js.Promise[PatchedTokenResponse] = js.native
+  /**
+    * Use `stripe.handleCardAction` in the Payment Intents API manual confirmation flow
+    * to handle a PaymentIntent with the requires_action status.
+    * It will throw an error if the PaymentIntent has a different status.
+    */
+  def handleCardAction(clientSecret: String): js.Promise[PaymentIntentResponse] = js.native
   def handleCardPayment(clientSecret: String): js.Promise[PaymentIntentResponse] = js.native
   def handleCardPayment(clientSecret: String, options: HandleCardPaymentWithoutElementsOptions): js.Promise[PaymentIntentResponse] = js.native
   def handleCardSetup(clientSecret: String): js.Promise[SetupIntentResponse] = js.native

@@ -5,35 +5,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ProjectSource extends js.Object {
   /**
     * Information about the authorization settings for AWS CodeBuild to access the source code to be built. Auth blocks are documented below.
     */
-  var auths: js.UndefOr[Input[js.Array[Input[ProjectSourceAuth]]]] = js.undefined
+  var auths: js.UndefOr[Input[js.Array[Input[ProjectSourceAuth]]]] = js.native
   /**
     * The build spec declaration to use for this build project's related builds.
     */
-  var buildspec: js.UndefOr[Input[String]] = js.undefined
+  var buildspec: js.UndefOr[Input[String]] = js.native
   /**
     * Truncate git history to this many commits.
     */
-  var gitCloneDepth: js.UndefOr[Input[Double]] = js.undefined
+  var gitCloneDepth: js.UndefOr[Input[Double]] = js.native
   /**
     * Ignore SSL warnings when connecting to source control.
     */
-  var insecureSsl: js.UndefOr[Input[Boolean]] = js.undefined
+  var insecureSsl: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The location of the source code from git or s3.
     */
-  var location: js.UndefOr[Input[String]] = js.undefined
+  var location: js.UndefOr[Input[String]] = js.native
   /**
     * Set to `true` to report the status of a build's start and finish to your source provider. This option is only valid when your source provider is `GITHUB`, `BITBUCKET`, or `GITHUB_ENTERPRISE`.
     */
-  var reportBuildStatus: js.UndefOr[Input[Boolean]] = js.undefined
+  var reportBuildStatus: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The type of repository that contains the source code to be built. Valid values for this parameter are: `CODECOMMIT`, `CODEPIPELINE`, `GITHUB`, `GITHUB_ENTERPRISE`, `BITBUCKET` or `S3`.
     */
-  var `type`: Input[String]
+  var `type`: Input[String] = js.native
 }
 
 object ProjectSource {

@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AssociationTarget extends js.Object {
   /**
     * Either `InstanceIds` or `tag:Tag Name` to specify an EC2 tag.
     */
-  var key: Input[String]
+  var key: Input[String] = js.native
   /**
     * A list of instance IDs or tag values. AWS currently limits this list size to one value.
     */
-  var values: Input[js.Array[Input[String]]]
+  var values: Input[js.Array[Input[String]]] = js.native
 }
 
 object AssociationTarget {

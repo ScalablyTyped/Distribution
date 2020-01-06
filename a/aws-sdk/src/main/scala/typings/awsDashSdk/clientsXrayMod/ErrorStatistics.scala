@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ErrorStatistics extends js.Object {
   /**
     * The number of requests that failed with untracked 4xx Client Error status codes.
     */
-  var OtherCount: js.UndefOr[NullableLong] = js.undefined
+  var OtherCount: js.UndefOr[NullableLong] = js.native
   /**
     * The number of requests that failed with a 419 throttling status code.
     */
-  var ThrottleCount: js.UndefOr[NullableLong] = js.undefined
+  var ThrottleCount: js.UndefOr[NullableLong] = js.native
   /**
     * The total number of requests that failed with a 4xx Client Error status code.
     */
-  var TotalCount: js.UndefOr[NullableLong] = js.undefined
+  var TotalCount: js.UndefOr[NullableLong] = js.native
 }
 
 object ErrorStatistics {

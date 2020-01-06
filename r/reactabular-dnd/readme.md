@@ -12,7 +12,7 @@ Drag and drop helpers for Reactabular
 | Keywords           | react, reactjs, table, tables, reactabular, dnd |
 | # releases         | 6 |
 | # dependents       | 4 |
-| # downloads        | 69880 |
+| # downloads        | 79150 |
 | # stars            | 0 |
 
 ## Links

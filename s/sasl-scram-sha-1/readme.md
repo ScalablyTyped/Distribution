@@ -10,9 +10,9 @@ JavaScript implementation of SCRAM-SHA-1 SASL mechanism.
 | ------------------ | :-------------: |
 | Full name          | sasl-scram-sha-1 |
 | Keywords           | sasl, auth, authn, authentication, security |
-| # releases         | 1 |
-| # dependents       | 4 |
-| # downloads        | 78324 |
+| # releases         | 0 |
+| # dependents       | 5 |
+| # downloads        | 89023 |
 | # stars            | 1 |
 
 ## Links

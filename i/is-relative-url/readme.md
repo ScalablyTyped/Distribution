@@ -10,9 +10,9 @@ Check if an URL is relative
 | ------------------ | :-------------: |
 | Full name          | is-relative-url |
 | Keywords           | url, relative, absolute, uri, is, check |
-| # releases         | 0 |
-| # dependents       | 52 |
-| # downloads        | 5822433 |
+| # releases         | 2 |
+| # dependents       | 67 |
+| # downloads        | 11198878 |
 | # stars            | 2 |
 
 ## Links

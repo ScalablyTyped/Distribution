@@ -10,13 +10,13 @@ Production ready GraphQL HTTP middleware.
 | ------------------ | :-------------: |
 | Full name          | express-graphql |
 | Keywords           | express, restify, connect, http, graphql, middleware, api |
-| # releases         | 7 |
-| # dependents       | 215 |
-| # downloads        | 6944677 |
+| # releases         | 6 |
+| # dependents       | 281 |
+| # downloads        | 12950730 |
 | # stars            | 42 |
 
 ## Links
-- [Homepage](https://github.com/graphql/express-graphql#readme)
+- [Homepage](https://github.com/graphql/express-graphql)
 - [Bugs](https://github.com/graphql/express-graphql/issues)
 - [Repository](https://github.com/graphql/express-graphql)
 - [Npm](https://www.npmjs.com/package/express-graphql)

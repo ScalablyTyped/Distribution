@@ -21,7 +21,16 @@ object reactDashMapDashGlStrings {
   sealed trait left extends js.Object
   
   @js.native
+  sealed trait mapbox extends js.Object
+  
+  @js.native
   sealed trait right extends js.Object
+  
+  @js.native
+  sealed trait terrarium extends js.Object
+  
+  @js.native
+  sealed trait tms extends js.Object
   
   @js.native
   sealed trait top extends js.Object
@@ -31,6 +40,9 @@ object reactDashMapDashGlStrings {
   
   @js.native
   sealed trait `top-right` extends js.Object
+  
+  @js.native
+  sealed trait xyz extends js.Object
   
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
@@ -43,12 +55,20 @@ object reactDashMapDashGlStrings {
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   @scala.inline
+  def mapbox: mapbox = "mapbox".asInstanceOf[mapbox]
+  @scala.inline
   def right: right = "right".asInstanceOf[right]
+  @scala.inline
+  def terrarium: terrarium = "terrarium".asInstanceOf[terrarium]
+  @scala.inline
+  def tms: tms = "tms".asInstanceOf[tms]
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   @scala.inline
   def `top-left`: `top-left` = "top-left".asInstanceOf[`top-left`]
   @scala.inline
   def `top-right`: `top-right` = "top-right".asInstanceOf[`top-right`]
+  @scala.inline
+  def xyz: xyz = "xyz".asInstanceOf[xyz]
 }
 

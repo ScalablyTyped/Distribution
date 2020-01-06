@@ -12,7 +12,7 @@ ES6 Harmony like collections such Map, WeakMap, and Set
 | Keywords           | WeakMap, Map, Set, shim, polyfill, ES6, Harmony |
 | # releases         | 0 |
 | # dependents       | 30 |
-| # downloads        | 577400 |
+| # downloads        | 552863 |
 | # stars            | 1 |
 
 ## Links

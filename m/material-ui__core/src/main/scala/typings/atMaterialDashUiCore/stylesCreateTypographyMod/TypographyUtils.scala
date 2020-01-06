@@ -4,8 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TypographyUtils extends js.Object {
-  def pxToRem(px: Double): String
+  def pxToRem(px: Double): String = js.native
 }
 
 object TypographyUtils {

@@ -32,7 +32,7 @@ class ListenerRule protected () extends CustomResource {
     */
   val arn: Output[String] = js.native
   /**
-    * A Condition block. Condition blocks are documented below.
+    * A Condition block. Multiple condition blocks of different types can be set and all must be satisfied for the rule to match. Condition blocks are documented below.
     */
   val conditions: Output[js.Array[ListenerRuleCondition]] = js.native
   /**

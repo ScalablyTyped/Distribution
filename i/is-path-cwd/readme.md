@@ -4,15 +4,15 @@
 Typings are for version 2.2.0
 
 ## Library description:
-Check if a path is CWD
+Check if a path is the current working directory
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | is-path-cwd |
 | Keywords           | path, cwd, pwd, check, filepath, file, folder |
-| # releases         | 2 |
-| # dependents       | 24 |
-| # downloads        | 209495396 |
+| # releases         | 4 |
+| # dependents       | 31 |
+| # downloads        | 313272802 |
 | # stars            | 2 |
 
 ## Links

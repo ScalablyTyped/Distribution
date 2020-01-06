@@ -25,7 +25,7 @@ object ^ extends js.Object {
   	```
   	*/
   def apply(input: HashaInput): String = js.native
-  def apply(input: HashaInput, options: Options[buffer]): Buffer = js.native
+  def apply(input: HashaInput, options: Options[ToStringEncoding]): String = js.native
   /**
   	Asynchronously calculate the hash for a `string`, `Buffer`, or an array thereof.
   	In Node.js 12 or later, the operation is executed using `worker_threads`. A thread is lazily spawned on the first operation and lives until the end of the program execution. It's unrefed, so it won't keep the process alive.

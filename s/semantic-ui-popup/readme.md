@@ -10,9 +10,9 @@ Single component release of popup
 | ------------------ | :-------------: |
 | Full name          | semantic-ui-popup |
 | Keywords           | - |
-| # releases         | 6 |
+| # releases         | 4 |
 | # dependents       | 3 |
-| # downloads        | 48751 |
+| # downloads        | 35614 |
 | # stars            | 0 |
 
 ## Links

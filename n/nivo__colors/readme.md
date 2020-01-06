@@ -10,9 +10,9 @@ Typings are for version 0.59.0
 | ------------------ | :-------------: |
 | Full name          | @nivo/colors |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 19 |
-| # downloads        | 8118 |
+| # releases         | 7 |
+| # dependents       | 22 |
+| # downloads        | 423965 |
 | # stars            | 0 |
 
 ## Links

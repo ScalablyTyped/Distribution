@@ -22,7 +22,7 @@ package object ArangoDB {
   type Edge[T /* <: js.Object */] = Document[T] with Anon_FromTo
   type EdgeCollectionType = `3`
   type Patch[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]:? T[K] | / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias arangodb.ArangoDB.Patch<T[K]> * / object}
+  {[ K in keyof T ]:? T[K] | / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias arangodb.ArangoDB.Patch<T[K]> * / object}
     */ Patch_ with T
   type ViewType = arangosearch
 }

@@ -10,9 +10,9 @@ Deprecation utility for WordPress.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/deprecated |
 | Keywords           | wordpress, deprecated |
-| # releases         | 18 |
-| # dependents       | 6 |
-| # downloads        | 91206 |
+| # releases         | 23 |
+| # dependents       | 10 |
+| # downloads        | 154371 |
 | # stars            | 0 |
 
 ## Links

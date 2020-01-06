@@ -10,12 +10,15 @@ A consistent interface for SHA256 across browsers and NodeJs
 | ------------------ | :-------------: |
 | Full name          | @aws-crypto/sha256-universal |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 6 |
 | # dependents       | 1 |
-| # downloads        | 867 |
+| # downloads        | 2277 |
 | # stars            | 0 |
 
 ## Links
+- [Homepage](https://github.com/aws/aws-sdk-js-crypto-helpers#readme)
+- [Bugs](https://github.com/aws/aws-sdk-js-crypto-helpers/issues)
+- [Repository](https://github.com/aws/aws-sdk-js-crypto-helpers)
 - [Npm](https://www.npmjs.com/package/%40aws-crypto%2Fsha256-universal)
     
 

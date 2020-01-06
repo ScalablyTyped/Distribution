@@ -10,9 +10,9 @@ Webpack block for Typescript.
 | ------------------ | :-------------: |
 | Full name          | @webpack-blocks/typescript |
 | Keywords           | webpack, webpack-blocks |
-| # releases         | 7 |
+| # releases         | 6 |
 | # dependents       | 3 |
-| # downloads        | 145667 |
+| # downloads        | 121969 |
 | # stars            | 0 |
 
 ## Links

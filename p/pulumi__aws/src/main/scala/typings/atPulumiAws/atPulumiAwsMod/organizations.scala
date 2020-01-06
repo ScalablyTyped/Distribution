@@ -3,6 +3,8 @@ package typings.atPulumiAws.atPulumiAwsMod
 import typings.atPulumiAws.organizationsAccountMod.AccountArgs
 import typings.atPulumiAws.organizationsAccountMod.AccountState
 import typings.atPulumiAws.organizationsGetOrganizationMod.GetOrganizationResult
+import typings.atPulumiAws.organizationsGetOrganizationalUnitsMod.GetOrganizationalUnitsArgs
+import typings.atPulumiAws.organizationsGetOrganizationalUnitsMod.GetOrganizationalUnitsResult
 import typings.atPulumiAws.organizationsOrganizationMod.OrganizationArgs
 import typings.atPulumiAws.organizationsOrganizationMod.OrganizationState
 import typings.atPulumiAws.organizationsOrganizationalUnitMod.OrganizationalUnitArgs
@@ -95,6 +97,8 @@ object organizations extends js.Object {
   
   def getOrganization(): js.Promise[GetOrganizationResult] with GetOrganizationResult = js.native
   def getOrganization(opts: InvokeOptions): js.Promise[GetOrganizationResult] with GetOrganizationResult = js.native
+  def getOrganizationalUnits(args: GetOrganizationalUnitsArgs): js.Promise[GetOrganizationalUnitsResult] with GetOrganizationalUnitsResult = js.native
+  def getOrganizationalUnits(args: GetOrganizationalUnitsArgs, opts: InvokeOptions): js.Promise[GetOrganizationalUnitsResult] with GetOrganizationalUnitsResult = js.native
   /* static members */
   @js.native
   object Account extends js.Object {

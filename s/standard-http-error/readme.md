@@ -10,9 +10,9 @@ Standard HTTP error class. Proper serialization, no bloat. Extensible.
 | ------------------ | :-------------: |
 | Full name          | standard-http-error |
 | Keywords           | error, errors, http, exception |
-| # releases         | 2 |
-| # dependents       | 23 |
-| # downloads        | 354914 |
+| # releases         | 0 |
+| # dependents       | 29 |
+| # downloads        | 492266 |
 | # stars            | 0 |
 
 ## Links

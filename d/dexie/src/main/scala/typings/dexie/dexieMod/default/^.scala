@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   var Promise: DexiePromiseConstructor = js.native
-  /* import warning: parser.TsParser#tsDeclVar $anonfun Dropped List(IndexSpec, Events) */ var TableSchema: Instantiable0[typings.dexie.dexieMod.Dexie.TableSchema] = js.native
+  /* import warning: parser.TsParser#tsDeclVar Dropped IArray(IndexSpec, Events) */ var TableSchema: Instantiable0[typings.dexie.dexieMod.Dexie.TableSchema] = js.native
   var addons: js.Array[js.Function1[/* db */ Dexie, Unit]] = js.native
   var currentTransaction: Transaction = js.native
   var default: Dexie = js.native

@@ -10,9 +10,9 @@ A package that contains an array of every single file extension there is for bin
 | ------------------ | :-------------: |
 | Full name          | binaryextensions |
 | Keywords           | binary, extensions, binary extensions, binary-extensions |
-| # releases         | 4 |
-| # dependents       | 7 |
-| # downloads        | 31016019 |
+| # releases         | 21 |
+| # dependents       | 8 |
+| # downloads        | 30512657 |
 | # stars            | 0 |
 
 ## Links

@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ConfigurationAggregatorAccountAggregationSource extends js.Object {
   /**
     * List of 12-digit account IDs of the account(s) being aggregated.
     */
-  var accountIds: Input[js.Array[Input[String]]]
+  var accountIds: Input[js.Array[Input[String]]] = js.native
   /**
     * If true, aggregate existing AWS Config regions and future regions.
     */
-  var allRegions: js.UndefOr[Input[Boolean]] = js.undefined
+  var allRegions: js.UndefOr[Input[Boolean]] = js.native
   /**
     * List of source regions being aggregated.
     */
-  var regions: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  var regions: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
 }
 
 object ConfigurationAggregatorAccountAggregationSource {

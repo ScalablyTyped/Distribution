@@ -10,9 +10,9 @@ React Native plugin for integrating the Instabug SDK
 | ------------------ | :-------------: |
 | Full name          | instabug-reactnative |
 | Keywords           | react-native, bug, reporting, feedback, instabug, sdk |
-| # releases         | 105 |
+| # releases         | 95 |
 | # dependents       | 0 |
-| # downloads        | 254825 |
+| # downloads        | 340823 |
 | # stars            | 0 |
 
 ## Links

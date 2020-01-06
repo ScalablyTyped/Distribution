@@ -12,7 +12,7 @@ OAuth2 shim for OAuth1 services, works with the clientside library HelloJS
 | Keywords           | oauth, oauth-proxy, oauth-shim, rest |
 | # releases         | 5 |
 | # dependents       | 3 |
-| # downloads        | 20910 |
+| # downloads        | 26017 |
 | # stars            | 5 |
 
 ## Links

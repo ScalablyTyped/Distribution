@@ -26,11 +26,8 @@ trait IVectorView[T]
     */
   def getMany(startIndex: Double): Anon_Items[T] = js.native
   def indexOf(value: T, extra: js.Any*): Anon_Index = js.native
-  /**
-    * Retrieves the index of a specified item in the vector view.
-    * @param value The item to find in the vector view.
-    */
+  /* hack */
   @JSName("indexOf")
-  def indexOf_Anon_Index(value: T): Anon_Index = js.native
+  def indexOf_Double(searchElement: T): Double = js.native
 }
 

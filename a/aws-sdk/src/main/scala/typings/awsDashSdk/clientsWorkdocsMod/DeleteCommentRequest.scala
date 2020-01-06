@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DeleteCommentRequest extends js.Object {
   /**
     * Amazon WorkDocs authentication token. Do not set this field when using administrative API actions, as in accessing the API using AWS credentials.
     */
-  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.undefined
+  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.native
   /**
     * The ID of the comment.
     */
-  var CommentId: CommentIdType
+  var CommentId: CommentIdType = js.native
   /**
     * The ID of the document.
     */
-  var DocumentId: ResourceIdType
+  var DocumentId: ResourceIdType = js.native
   /**
     * The ID of the document version.
     */
-  var VersionId: DocumentVersionIdType
+  var VersionId: DocumentVersionIdType = js.native
 }
 
 object DeleteCommentRequest {
@@ -31,8 +32,8 @@ object DeleteCommentRequest {
     VersionId: DocumentVersionIdType,
     AuthenticationToken: AuthenticationHeaderType = null
   ): DeleteCommentRequest = {
-    val __obj = js.Dynamic.literal(CommentId = CommentId, DocumentId = DocumentId, VersionId = VersionId)
-    if (AuthenticationToken != null) __obj.updateDynamic("AuthenticationToken")(AuthenticationToken)
+    val __obj = js.Dynamic.literal(CommentId = CommentId.asInstanceOf[js.Any], DocumentId = DocumentId.asInstanceOf[js.Any], VersionId = VersionId.asInstanceOf[js.Any])
+    if (AuthenticationToken != null) __obj.updateDynamic("AuthenticationToken")(AuthenticationToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteCommentRequest]
   }
 }

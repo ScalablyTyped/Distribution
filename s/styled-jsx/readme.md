@@ -10,10 +10,10 @@ Full CSS support for JSX without compromises
 | ------------------ | :-------------: |
 | Full name          | styled-jsx |
 | Keywords           | babel-plugin-macros, zeit, css-in-js, css |
-| # releases         | 44 |
-| # dependents       | 170 |
-| # downloads        | 5723871 |
-| # stars            | 19 |
+| # releases         | 20 |
+| # dependents       | 218 |
+| # downloads        | 12094803 |
+| # stars            | 20 |
 
 ## Links
 - [Homepage](https://github.com/zeit/styled-jsx#readme)

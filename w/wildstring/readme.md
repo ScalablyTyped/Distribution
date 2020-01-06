@@ -12,7 +12,7 @@ Simple String Wildcard Handling
 | Keywords           | wildcard, string, interpolation |
 | # releases         | 0 |
 | # dependents       | 16 |
-| # downloads        | 351487 |
+| # downloads        | 412519 |
 | # stars            | 1 |
 
 ## Links

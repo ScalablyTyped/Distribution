@@ -5,27 +5,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ThreatIntelSetState extends js.Object {
   /**
     * Specifies whether GuardDuty is to start using the uploaded ThreatIntelSet.
     */
-  val activate: js.UndefOr[Input[Boolean]] = js.undefined
+  val activate: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The detector ID of the GuardDuty.
     */
-  val detectorId: js.UndefOr[Input[String]] = js.undefined
+  val detectorId: js.UndefOr[Input[String]] = js.native
   /**
     * The format of the file that contains the ThreatIntelSet. Valid values: `TXT` | `STIX` | `OTX_CSV` | `ALIEN_VAULT` | `PROOF_POINT` | `FIRE_EYE`
     */
-  val format: js.UndefOr[Input[String]] = js.undefined
+  val format: js.UndefOr[Input[String]] = js.native
   /**
     * The URI of the file that contains the ThreatIntelSet.
     */
-  val location: js.UndefOr[Input[String]] = js.undefined
+  val location: js.UndefOr[Input[String]] = js.native
   /**
     * The friendly name to identify the ThreatIntelSet.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
 }
 
 object ThreatIntelSetState {

@@ -12,7 +12,7 @@ Graphite UDP client for Node.js
 | Keywords           | graphite, udp |
 | # releases         | 1 |
 | # dependents       | 3 |
-| # downloads        | 19104 |
+| # downloads        | 88519 |
 | # stars            | 3 |
 
 ## Links

@@ -10,9 +10,9 @@ mask an image.
 | ------------------ | :-------------: |
 | Full name          | @jimp/plugin-mask |
 | Keywords           | - |
-| # releases         | 18 |
+| # releases         | 71 |
 | # dependents       | 1 |
-| # downloads        | 7461472 |
+| # downloads        | 14021551 |
 | # stars            | 0 |
 
 ## Links

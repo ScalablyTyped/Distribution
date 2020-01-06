@@ -11,8 +11,8 @@ The lodash method `_.isEmpty` exported as a module.
 | Full name          | lodash.isempty |
 | Keywords           | lodash-modularized, isempty |
 | # releases         | 1 |
-| # dependents       | 389 |
-| # downloads        | 22787102 |
+| # dependents       | 495 |
+| # downloads        | 28075252 |
 | # stars            | 0 |
 
 ## Links

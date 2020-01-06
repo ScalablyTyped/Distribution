@@ -6,23 +6,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AggregateAuthorizationState extends js.Object {
   /**
     * Account ID
     */
-  val accountId: js.UndefOr[Input[String]] = js.undefined
+  val accountId: js.UndefOr[Input[String]] = js.native
   /**
     * The ARN of the authorization
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * Region
     */
-  val region: js.UndefOr[Input[String]] = js.undefined
+  val region: js.UndefOr[Input[String]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object AggregateAuthorizationState {

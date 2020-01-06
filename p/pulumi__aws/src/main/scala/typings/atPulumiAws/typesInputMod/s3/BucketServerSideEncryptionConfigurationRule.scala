@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BucketServerSideEncryptionConfigurationRule extends js.Object {
   /**
     * A single object for setting server-side encryption by default. (documented below)
     */
-  var applyServerSideEncryptionByDefault: Input[BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefault]
+  var applyServerSideEncryptionByDefault: Input[BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefault] = js.native
 }
 
 object BucketServerSideEncryptionConfigurationRule {

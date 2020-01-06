@@ -25,9 +25,7 @@ trait TypeofClassBluebird
   extends Instantiable1[
       /* callback */ js.Function3[
         /* resolve */ js.Function1[
-          /* thenableOrResult */ js.UndefOr[
-            Resolvable[/* import warning: RewrittenClass.unapply cls $anonfun was tparam R */ js.Any]
-          ], 
+          /* thenableOrResult */ js.UndefOr[Resolvable[/* import warning: RewrittenClass.unapply cls was tparam R */ js.Any]], 
           Unit
         ], 
         /* reject */ js.Function1[/* error */ js.UndefOr[js.Any], Unit], 

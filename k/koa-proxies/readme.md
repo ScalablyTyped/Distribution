@@ -10,9 +10,9 @@ Http Proxy Middleware for Koa@2.x/next
 | ------------------ | :-------------: |
 | Full name          | koa-proxies |
 | Keywords           | koa, middleware, proxy, proxies |
-| # releases         | 6 |
-| # dependents       | 24 |
-| # downloads        | 206272 |
+| # releases         | 5 |
+| # dependents       | 26 |
+| # downloads        | 223200 |
 | # stars            | 1 |
 
 ## Links

@@ -10,9 +10,9 @@ Provides a React component that prevents the screen sleeping when rendered. It a
 | ------------------ | :-------------: |
 | Full name          | expo-keep-awake |
 | Keywords           | react-native, expo, awake, keep-awake |
-| # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 168 |
+| # releases         | 13 |
+| # dependents       | 6 |
+| # downloads        | 1179614 |
 | # stars            | 0 |
 
 ## Links

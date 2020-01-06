@@ -5,10 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<{  duration  :number | string,   easing  :string,   delay  :number | string}> */
+@js.native
 trait Partialdurationnumberstringeasingstringdelaynumber extends js.Object {
-  var delay: js.UndefOr[Double | String] = js.undefined
-  var duration: js.UndefOr[Double | String] = js.undefined
-  var easing: js.UndefOr[String] = js.undefined
+  var delay: js.UndefOr[Double | String] = js.native
+  var duration: js.UndefOr[Double | String] = js.native
+  var easing: js.UndefOr[String] = js.native
 }
 
 object Partialdurationnumberstringeasingstringdelaynumber {

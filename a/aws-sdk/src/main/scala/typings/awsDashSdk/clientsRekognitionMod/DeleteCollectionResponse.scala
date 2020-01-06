@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DeleteCollectionResponse extends js.Object {
   /**
     * HTTP status code that indicates the result of the operation.
     */
-  var StatusCode: js.UndefOr[UInteger] = js.undefined
+  var StatusCode: js.UndefOr[UInteger] = js.native
 }
 
 object DeleteCollectionResponse {

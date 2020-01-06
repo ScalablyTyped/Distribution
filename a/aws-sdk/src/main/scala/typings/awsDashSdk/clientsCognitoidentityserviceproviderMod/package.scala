@@ -31,7 +31,7 @@ package object clientsCognitoidentityserviceproviderMod {
   type AdvancedSecurityModeType = _AdvancedSecurityModeType | String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.phone_number
-    - typings.awsDashSdk.awsDashSdkStrings.email
+    - typings.awsDashSdk.awsDashSdkStrings.email__
     - typings.awsDashSdk.awsDashSdkStrings.preferred_username
     - java.lang.String
   */
@@ -39,10 +39,10 @@ package object clientsCognitoidentityserviceproviderMod {
   type AliasAttributesListType = js.Array[AliasAttributeType]
   type ArnType = String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.String
-    - typings.awsDashSdk.awsDashSdkStrings.Number
-    - typings.awsDashSdk.awsDashSdkStrings.DateTime
-    - typings.awsDashSdk.awsDashSdkStrings.Boolean
+    - typings.awsDashSdk.awsDashSdkStrings.String_
+    - typings.awsDashSdk.awsDashSdkStrings.Number_
+    - typings.awsDashSdk.awsDashSdkStrings.DateTime_
+    - typings.awsDashSdk.awsDashSdkStrings.Boolean_
     - java.lang.String
   */
   type AttributeDataType = _AttributeDataType | String
@@ -60,6 +60,7 @@ package object clientsCognitoidentityserviceproviderMod {
     - typings.awsDashSdk.awsDashSdkStrings.CUSTOM_AUTH
     - typings.awsDashSdk.awsDashSdkStrings.ADMIN_NO_SRP_AUTH
     - typings.awsDashSdk.awsDashSdkStrings.USER_PASSWORD_AUTH
+    - typings.awsDashSdk.awsDashSdkStrings.ADMIN_USER_PASSWORD_AUTH
     - java.lang.String
   */
   type AuthFlowType = _AuthFlowType | String
@@ -70,7 +71,7 @@ package object clientsCognitoidentityserviceproviderMod {
   type CSSVersionType = String
   type CallbackURLsListType = js.Array[RedirectUrlType]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Password
+    - typings.awsDashSdk.awsDashSdkStrings.Password_
     - typings.awsDashSdk.awsDashSdkStrings.Mfa
     - java.lang.String
   */
@@ -91,8 +92,8 @@ package object clientsCognitoidentityserviceproviderMod {
   type ChallengeNameType = _ChallengeNameType | String
   type ChallengeParametersType = StringDictionary[StringType]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Success
-    - typings.awsDashSdk.awsDashSdkStrings.Failure
+    - typings.awsDashSdk.awsDashSdkStrings.Success_
+    - typings.awsDashSdk.awsDashSdkStrings.Failure_
     - java.lang.String
   */
   type ChallengeResponse = _ChallengeResponse | String
@@ -174,8 +175,8 @@ package object clientsCognitoidentityserviceproviderMod {
   type EventFiltersType = js.Array[EventFilterType]
   type EventIdType = String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Success
-    - typings.awsDashSdk.awsDashSdkStrings.Failure
+    - typings.awsDashSdk.awsDashSdkStrings.Success_
+    - typings.awsDashSdk.awsDashSdkStrings.Failure_
     - java.lang.String
   */
   type EventResponseType = _EventResponseType | String
@@ -191,12 +192,17 @@ package object clientsCognitoidentityserviceproviderMod {
     - typings.awsDashSdk.awsDashSdkStrings.ADMIN_NO_SRP_AUTH
     - typings.awsDashSdk.awsDashSdkStrings.CUSTOM_AUTH_FLOW_ONLY
     - typings.awsDashSdk.awsDashSdkStrings.USER_PASSWORD_AUTH
+    - typings.awsDashSdk.awsDashSdkStrings.ALLOW_ADMIN_USER_PASSWORD_AUTH
+    - typings.awsDashSdk.awsDashSdkStrings.ALLOW_CUSTOM_AUTH
+    - typings.awsDashSdk.awsDashSdkStrings.ALLOW_USER_PASSWORD_AUTH
+    - typings.awsDashSdk.awsDashSdkStrings.ALLOW_USER_SRP_AUTH
+    - typings.awsDashSdk.awsDashSdkStrings.ALLOW_REFRESH_TOKEN_AUTH
     - java.lang.String
   */
   type ExplicitAuthFlowsType = _ExplicitAuthFlowsType | String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Valid
-    - typings.awsDashSdk.awsDashSdkStrings.Invalid
+    - typings.awsDashSdk.awsDashSdkStrings.Valid_
+    - typings.awsDashSdk.awsDashSdkStrings.Invalid_
     - java.lang.String
   */
   type FeedbackValueType = _FeedbackValueType | String
@@ -211,6 +217,7 @@ package object clientsCognitoidentityserviceproviderMod {
     - typings.awsDashSdk.awsDashSdkStrings.Facebook
     - typings.awsDashSdk.awsDashSdkStrings.Google
     - typings.awsDashSdk.awsDashSdkStrings.LoginWithAmazon
+    - typings.awsDashSdk.awsDashSdkStrings.SignInWithApple
     - typings.awsDashSdk.awsDashSdkStrings.OIDC
     - java.lang.String
   */
@@ -247,12 +254,27 @@ package object clientsCognitoidentityserviceproviderMod {
   type PoolQueryLimitType = Double
   type PreSignedUrlType = String
   type PrecedenceType = Double
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.LEGACY
+    - typings.awsDashSdk.awsDashSdkStrings.ENABLED
+    - java.lang.String
+  */
+  type PreventUserExistenceErrorTypes = _PreventUserExistenceErrorTypes | String
+  type PriorityType = Double
   type ProviderDetailsType = StringDictionary[StringType]
   type ProviderNameType = String
   type ProviderNameTypeV1 = String
   type ProvidersListType = js.Array[ProviderDescription]
   type QueryLimit = Double
   type QueryLimitType = Double
+  type RecoveryMechanismsType = js.Array[RecoveryOptionType]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.verified_email
+    - typings.awsDashSdk.awsDashSdkStrings.verified_phone_number
+    - typings.awsDashSdk.awsDashSdkStrings.admin_only
+    - java.lang.String
+  */
+  type RecoveryOptionNameType = _RecoveryOptionNameType | String
   type RedirectUrlType = String
   type RefreshTokenValidityType = Double
   type ResourceServerIdentifierType = String
@@ -264,18 +286,19 @@ package object clientsCognitoidentityserviceproviderMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.NoRisk
     - typings.awsDashSdk.awsDashSdkStrings.AccountTakeover
-    - typings.awsDashSdk.awsDashSdkStrings.Block
+    - typings.awsDashSdk.awsDashSdkStrings.Block_
     - java.lang.String
   */
   type RiskDecisionType = _RiskDecisionType | String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Low
-    - typings.awsDashSdk.awsDashSdkStrings.Medium
-    - typings.awsDashSdk.awsDashSdkStrings.High
+    - typings.awsDashSdk.awsDashSdkStrings.Low_
+    - typings.awsDashSdk.awsDashSdkStrings.Medium_
+    - typings.awsDashSdk.awsDashSdkStrings.High_
     - java.lang.String
   */
   type RiskLevelType = _RiskLevelType | String
   type S3BucketType = String
+  type SESConfigurationSet = String
   type SchemaAttributesListType = js.Array[SchemaAttributeType]
   type ScopeListType = js.Array[ScopeType]
   type ScopeType = String
@@ -288,8 +311,8 @@ package object clientsCognitoidentityserviceproviderMod {
   type SmsVerificationMessageType = String
   type SoftwareTokenMFAUserCodeType = String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Enabled
-    - typings.awsDashSdk.awsDashSdkStrings.Disabled
+    - typings.awsDashSdk.awsDashSdkStrings.Enabled_
+    - typings.awsDashSdk.awsDashSdkStrings.Disabled_
     - java.lang.String
   */
   type StatusType = _StatusType | String
@@ -303,14 +326,14 @@ package object clientsCognitoidentityserviceproviderMod {
   type UserImportJobIdType = String
   type UserImportJobNameType = String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Created
-    - typings.awsDashSdk.awsDashSdkStrings.Pending
-    - typings.awsDashSdk.awsDashSdkStrings.InProgress
-    - typings.awsDashSdk.awsDashSdkStrings.Stopping
-    - typings.awsDashSdk.awsDashSdkStrings.Expired
-    - typings.awsDashSdk.awsDashSdkStrings.Stopped
-    - typings.awsDashSdk.awsDashSdkStrings.Failed
-    - typings.awsDashSdk.awsDashSdkStrings.Succeeded
+    - typings.awsDashSdk.awsDashSdkStrings.Created_
+    - typings.awsDashSdk.awsDashSdkStrings.Pending_
+    - typings.awsDashSdk.awsDashSdkStrings.InProgress_
+    - typings.awsDashSdk.awsDashSdkStrings.Stopping_
+    - typings.awsDashSdk.awsDashSdkStrings.Expired_
+    - typings.awsDashSdk.awsDashSdkStrings.Stopped_
+    - typings.awsDashSdk.awsDashSdkStrings.Failed_
+    - typings.awsDashSdk.awsDashSdkStrings.Succeeded_
     - java.lang.String
   */
   type UserImportJobStatusType = _UserImportJobStatusType | String
@@ -342,7 +365,7 @@ package object clientsCognitoidentityserviceproviderMod {
   type UserStatusType = _UserStatusType | String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.phone_number
-    - typings.awsDashSdk.awsDashSdkStrings.email
+    - typings.awsDashSdk.awsDashSdkStrings.email__
     - java.lang.String
   */
   type UsernameAttributeType = _UsernameAttributeType | String
@@ -351,7 +374,7 @@ package object clientsCognitoidentityserviceproviderMod {
   type UsersListType = js.Array[UserType]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.phone_number
-    - typings.awsDashSdk.awsDashSdkStrings.email
+    - typings.awsDashSdk.awsDashSdkStrings.email__
     - java.lang.String
   */
   type VerifiedAttributeType = _VerifiedAttributeType | String
@@ -364,7 +387,7 @@ package object clientsCognitoidentityserviceproviderMod {
   type VerifySoftwareTokenResponseType = _VerifySoftwareTokenResponseType | String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2016-04-18`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

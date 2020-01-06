@@ -9,10 +9,10 @@ A GraphQL response deduplicator. Removes duplicate entities from the GraphQL res
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | graphql-deduplicator |
-| Keywords           | graphql, apollo, deduplicator, normalizer |
+| Keywords           | apollo, compression, deduplicator, graphql, normalizer |
 | # releases         | 7 |
-| # dependents       | 8 |
-| # downloads        | 606791 |
+| # dependents       | 13 |
+| # downloads        | 970441 |
 | # stars            | 1 |
 
 ## Links

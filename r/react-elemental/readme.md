@@ -10,9 +10,9 @@ Flat UI library for React
 | ------------------ | :-------------: |
 | Full name          | react-elemental |
 | Keywords           | - |
-| # releases         | 16 |
+| # releases         | 9 |
 | # dependents       | 0 |
-| # downloads        | 1228 |
+| # downloads        | 1388 |
 | # stars            | 1 |
 
 ## Links

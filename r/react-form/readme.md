@@ -4,21 +4,21 @@
 Typings are for version 2.16
 
 ## Library description:
-React Form is a lightweight framework and utility for building powerful forms in React applications.
+⚛️ 💼 React hooks for managing form state and lifecycle
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-form |
-| Keywords           | react, reactjs, redux, react-redux, redux-form, form, react-form, async, async-form, asynchronous-form, asynchronous |
-| # releases         | 78 |
+| Keywords           | - |
+| # releases         | 56 |
 | # dependents       | 16 |
-| # downloads        | 845308 |
+| # downloads        | 875052 |
 | # stars            | 5 |
 
 ## Links
-- [Homepage](https://github.com/react-tools/react-form#readme)
-- [Bugs](https://github.com/react-tools/react-form/issues)
-- [Repository](https://github.com/react-tools/react-form)
+- [Homepage](https://github.com/tannerlinsley/react-form#readme)
+- [Bugs](https://github.com/tannerlinsley/react-form/issues)
+- [Repository](https://github.com/tannerlinsley/react-form)
 - [Npm](https://www.npmjs.com/package/react-form)
     
 

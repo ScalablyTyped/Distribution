@@ -11,8 +11,8 @@ Maps proxy protocols to `http.Agent` implementations
 | Full name          | proxy-agent |
 | Keywords           | http, https, socks, agent, mapping, proxy, cache |
 | # releases         | 9 |
-| # dependents       | 116 |
-| # downloads        | 46590741 |
+| # dependents       | 154 |
+| # downloads        | 62654788 |
 | # stars            | 9 |
 
 ## Links

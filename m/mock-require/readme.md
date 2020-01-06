@@ -11,8 +11,8 @@ Simple, intuitive mocking of Node.js modules.
 | Full name          | mock-require |
 | Keywords           | require, dependency, injection, di, inject, swap, test, mock, stub |
 | # releases         | 5 |
-| # dependents       | 69 |
-| # downloads        | 2717695 |
+| # dependents       | 82 |
+| # downloads        | 5216340 |
 | # stars            | 16 |
 
 ## Links

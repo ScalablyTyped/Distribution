@@ -4,19 +4,19 @@
 Typings are for version 4.0
 
 ## Library description:
-React primitive UI components built with styled-system
+React primitive UI components built with Styled System
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | rebass |
-| Keywords           | components, react, react-component, ui, design-system, styled-system, styled-components, presentational, stateless, functional |
-| # releases         | 57 |
-| # dependents       | 61 |
-| # downloads        | 441696 |
+| Keywords           | components, react, react-component, ui, design-system, styled-system, styled-components, emotion, theming, presentational, stateless, functional |
+| # releases         | 56 |
+| # dependents       | 101 |
+| # downloads        | 1115171 |
 | # stars            | 2 |
 
 ## Links
-- [Homepage](https://github.com/rebassjs/rebass)
+- [Homepage](https://github.com/rebassjs/rebass#readme)
 - [Bugs](https://github.com/rebassjs/rebass/issues)
 - [Repository](https://github.com/rebassjs/rebass)
 - [Npm](https://www.npmjs.com/package/rebass)

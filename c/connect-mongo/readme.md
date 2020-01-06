@@ -10,9 +10,9 @@ MongoDB session store for Express and Connect
 | ------------------ | :-------------: |
 | Full name          | connect-mongo |
 | Keywords           | connect, mongo, mongodb, session, express |
-| # releases         | 5 |
-| # dependents       | 350 |
-| # downloads        | 3073972 |
+| # releases         | 11 |
+| # dependents       | 379 |
+| # downloads        | 3457647 |
 | # stars            | 105 |
 
 ## Links

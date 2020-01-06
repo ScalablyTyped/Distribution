@@ -10,9 +10,9 @@ Keycloak Connect Middleware
 | ------------------ | :-------------: |
 | Full name          | keycloak-connect |
 | Keywords           | sso, keycloak, oauth, oauth2.0, authentication |
-| # releases         | 31 |
-| # dependents       | 23 |
-| # downloads        | 279183 |
+| # releases         | 25 |
+| # dependents       | 32 |
+| # downloads        | 822356 |
 | # stars            | 0 |
 
 ## Links

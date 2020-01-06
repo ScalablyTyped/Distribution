@@ -11,8 +11,8 @@ A write stream constructor that supports a flush function that is called before 
 | Full name          | flush-write-stream |
 | Keywords           | - |
 | # releases         | 5 |
-| # dependents       | 38 |
-| # downloads        | 147963855 |
+| # dependents       | 45 |
+| # downloads        | 278786386 |
 | # stars            | 1 |
 
 ## Links

@@ -26,7 +26,7 @@ object dtsServerMod extends js.Object {
     /* private */ def handlerFactory(controllerName: js.Any, key: js.Any): js.Any = js.native
     /* private */ def registerControllers(): js.Any = js.native
     /* private */ def resolveMiddleware(
-      /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param middleware because its type <none> is not an array type */ middleware: js.Any
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param middleware because its type <none> is not an array type */ middleware: js.Any
     ): js.Any = js.native
     def setConfig(fn: ConfigFunction): InversifyRestifyServer = js.native
   }

@@ -10,9 +10,9 @@ Convert HTML/XML source code or DOM nodes to React elements
 | ------------------ | :-------------: |
 | Full name          | react-from-dom |
 | Keywords           | string, DOM, converter, react, component |
-| # releases         | 7 |
-| # dependents       | 2 |
-| # downloads        | 166024 |
+| # releases         | 8 |
+| # dependents       | 3 |
+| # downloads        | 348758 |
 | # stars            | 0 |
 
 ## Links

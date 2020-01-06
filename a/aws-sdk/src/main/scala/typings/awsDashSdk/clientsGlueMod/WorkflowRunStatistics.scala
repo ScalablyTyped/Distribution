@@ -4,31 +4,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WorkflowRunStatistics extends js.Object {
   /**
     * Total number of Actions which have failed.
     */
-  var FailedActions: js.UndefOr[IntegerValue] = js.undefined
+  var FailedActions: js.UndefOr[IntegerValue] = js.native
   /**
     * Total number Actions in running state.
     */
-  var RunningActions: js.UndefOr[IntegerValue] = js.undefined
+  var RunningActions: js.UndefOr[IntegerValue] = js.native
   /**
     * Total number of Actions which have stopped.
     */
-  var StoppedActions: js.UndefOr[IntegerValue] = js.undefined
+  var StoppedActions: js.UndefOr[IntegerValue] = js.native
   /**
     * Total number of Actions which have succeeded.
     */
-  var SucceededActions: js.UndefOr[IntegerValue] = js.undefined
+  var SucceededActions: js.UndefOr[IntegerValue] = js.native
   /**
     * Total number of Actions which timed out.
     */
-  var TimeoutActions: js.UndefOr[IntegerValue] = js.undefined
+  var TimeoutActions: js.UndefOr[IntegerValue] = js.native
   /**
     * Total number of Actions in the workflow run.
     */
-  var TotalActions: js.UndefOr[IntegerValue] = js.undefined
+  var TotalActions: js.UndefOr[IntegerValue] = js.native
 }
 
 object WorkflowRunStatistics {

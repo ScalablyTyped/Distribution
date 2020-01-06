@@ -11,8 +11,8 @@ A ping utility using TCP connection
 | Full name          | tcp-ping |
 | Keywords           | ping, util, tcp, availability |
 | # releases         | 1 |
-| # dependents       | 34 |
-| # downloads        | 356154 |
+| # dependents       | 41 |
+| # downloads        | 861484 |
 | # stars            | 13 |
 
 ## Links

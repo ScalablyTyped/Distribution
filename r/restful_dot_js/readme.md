@@ -10,9 +10,9 @@ A pure JS client for interacting with server-side RESTful resources. Think Resta
 | ------------------ | :-------------: |
 | Full name          | restful.js |
 | Keywords           | - |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 32962 |
+| # downloads        | 41370 |
 | # stars            | 4 |
 
 ## Links

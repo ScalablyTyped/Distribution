@@ -10,9 +10,9 @@ A strophe.js plugin for Roster Versioning (XEP-0237).
 | ------------------ | :-------------: |
 | Full name          | strophejs-plugin-roster |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 6956 |
+| # downloads        | 14831 |
 | # stars            | 0 |
 
 ## Links

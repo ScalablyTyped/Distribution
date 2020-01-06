@@ -10,9 +10,9 @@ Return a copy of an object excluding the given key, or array of keys. Also accep
 | ------------------ | :-------------: |
 | Full name          | object.omit |
 | Keywords           | clear, delete, key, object, omit, property, remove, value |
-| # releases         | 2 |
-| # dependents       | 188 |
-| # downloads        | 227643460 |
+| # releases         | 0 |
+| # dependents       | 220 |
+| # downloads        | 252758589 |
 | # stars            | 6 |
 
 ## Links

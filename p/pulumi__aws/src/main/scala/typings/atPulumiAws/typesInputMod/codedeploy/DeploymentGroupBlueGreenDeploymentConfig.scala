@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DeploymentGroupBlueGreenDeploymentConfig extends js.Object {
   /**
     * Information about the action to take when newly provisioned instances are ready to receive traffic in a blue/green deployment (documented below).
     */
-  var deploymentReadyOption: js.UndefOr[Input[DeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOption]] = js.undefined
+  var deploymentReadyOption: js.UndefOr[Input[DeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOption]] = js.native
   /**
     * Information about how instances are provisioned for a replacement environment in a blue/green deployment (documented below).
     */
-  var greenFleetProvisioningOption: js.UndefOr[Input[DeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOption]] = js.undefined
+  var greenFleetProvisioningOption: js.UndefOr[Input[DeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOption]] = js.native
   /**
     * Information about whether to terminate instances in the original fleet during a blue/green deployment (documented below).
     */
@@ -21,7 +22,7 @@ trait DeploymentGroupBlueGreenDeploymentConfig extends js.Object {
     Input[
       DeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccess
     ]
-  ] = js.undefined
+  ] = js.native
 }
 
 object DeploymentGroupBlueGreenDeploymentConfig {

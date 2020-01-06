@@ -11,7 +11,7 @@ Typings are for version 4.5.4
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 189 |
+| # downloads        | 193 |
 | # stars            | 0 |
 
 ## Links

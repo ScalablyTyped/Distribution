@@ -1,20 +1,236 @@
 package typings.mockDashAwsDashS3.mockDashAwsDashS3Mod
 
+import typings.awsDashSdk.clientsAccessanalyzerMod.ClientConfiguration
+import typings.awsDashSdk.libConfigMod.APIVersions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GlobalConfigInstance * / any */ trait MockConfigInstance extends js.Object {
-  var basePath: String
-}
-
-object MockConfigInstance {
-  @scala.inline
-  def apply(basePath: String): MockConfigInstance = {
-    val __obj = js.Dynamic.literal(basePath = basePath.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[MockConfigInstance]
-  }
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typings.awsDashSdk.libConfigUnderscoreServiceUnderscorePlaceholdersMod.ConfigurationServicePlaceholders because Inheritance from two classes. Inlined accessanalyzer, acm, acmpca, alexaforbusiness, amplify, apigateway, apigatewaymanagementapi, apigatewayv2, appconfig, applicationautoscaling, applicationinsights, appmesh, appstream, appsync, athena, augmentedairuntime, autoscaling, autoscalingplans, backup, batch, budgets, chime, cloud9, clouddirectory, cloudformation, cloudfront, cloudhsm, cloudhsmv2, cloudsearch, cloudsearchdomain, cloudtrail, cloudwatch, cloudwatchevents, cloudwatchlogs, codebuild, codecommit, codedeploy, codeguruprofiler, codegurureviewer, codepipeline, codestar, codestarconnections, codestarnotifications, cognitoidentity, cognitoidentityserviceprovider, cognitosync, comprehend, comprehendmedical, computeoptimizer, configservice, connect, connectparticipant, costexplorer, cur, dataexchange, datapipeline, datasync, dax, detective, devicefarm, directconnect, directoryservice, discovery, dlm, dms, docdb, dynamodb, dynamodbstreams, ebs, ec2, ec2instanceconnect, ecr, ecs, efs, eks, elasticache, elasticbeanstalk, elasticinference, elastictranscoder, elb, elbv2, emr, es, eventbridge, firehose, fms, forecastqueryservice, forecastservice, frauddetector, fsx, gamelift, glacier, globalaccelerator, glue, greengrass, groundstation, guardduty, health, iam, imagebuilder, importexport, inspector, iot, iot1clickdevicesservice, iot1clickprojects, iotanalytics, iotdata, iotevents, ioteventsdata, iotjobsdataplane, iotsecuretunneling, iotthingsgraph, kafka, kendra, kinesis, kinesisanalytics, kinesisanalyticsv2, kinesisvideo, kinesisvideoarchivedmedia, kinesisvideomedia, kinesisvideosignalingchannels, kms, lakeformation, lambda, lexmodelbuildingservice, lexruntime, licensemanager, lightsail, machinelearning, macie, managedblockchain, marketplacecatalog, marketplacecommerceanalytics, marketplaceentitlementservice, marketplacemetering, mediaconnect, mediaconvert, medialive, mediapackage, mediapackagevod, mediastore, mediastoredata, mediatailor, migrationhub, migrationhubconfig, mobile, mobileanalytics, mq, mturk, neptune, networkmanager, opsworks, opsworkscm, organizations, outposts, personalize, personalizeevents, personalizeruntime, pi, pinpoint, pinpointemail, pinpointsmsvoice, polly, pricing, qldb, qldbsession, quicksight, ram, rds, rdsdataservice, redshift, rekognition, resourcegroups, resourcegroupstaggingapi, robomaker, route53, route53domains, route53resolver, s3, s3control, sagemaker, sagemakerruntime, savingsplans, schemas, secretsmanager, securityhub, serverlessapplicationrepository, servicecatalog, servicediscovery, servicequotas, ses, sesv2, shield, signer, simpledb, sms, snowball, sns, sqs, ssm, sso, ssooidc, stepfunctions, storagegateway, sts, support, swf, textract, transcribeservice, transfer, translate, waf, wafregional, wafv2, workdocs, worklink, workmail, workmailmessageflow, workspaces, xray */ @js.native
+trait MockConfigInstance
+  extends typings.awsDashSdk.libConfigMod.Config
+     with APIVersions {
+  var accessanalyzer: js.UndefOr[ClientConfiguration] = js.native
+  var acm: js.UndefOr[typings.awsDashSdk.clientsAcmMod.ClientConfiguration] = js.native
+  var acmpca: js.UndefOr[typings.awsDashSdk.clientsAcmpcaMod.ClientConfiguration] = js.native
+  var alexaforbusiness: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.ClientConfiguration] = js.native
+  var amplify: js.UndefOr[typings.awsDashSdk.clientsAmplifyMod.ClientConfiguration] = js.native
+  var apigateway: js.UndefOr[typings.awsDashSdk.clientsApigatewayMod.ClientConfiguration] = js.native
+  var apigatewaymanagementapi: js.UndefOr[typings.awsDashSdk.clientsApigatewaymanagementapiMod.ClientConfiguration] = js.native
+  var apigatewayv2: js.UndefOr[typings.awsDashSdk.clientsApigatewayv2Mod.ClientConfiguration] = js.native
+  var appconfig: js.UndefOr[typings.awsDashSdk.clientsAppconfigMod.ClientConfiguration] = js.native
+  var applicationautoscaling: js.UndefOr[typings.awsDashSdk.clientsApplicationautoscalingMod.ClientConfiguration] = js.native
+  var applicationinsights: js.UndefOr[typings.awsDashSdk.clientsApplicationinsightsMod.ClientConfiguration] = js.native
+  var appmesh: js.UndefOr[typings.awsDashSdk.clientsAppmeshMod.ClientConfiguration] = js.native
+  var appstream: js.UndefOr[typings.awsDashSdk.clientsAppstreamMod.ClientConfiguration] = js.native
+  var appsync: js.UndefOr[typings.awsDashSdk.clientsAppsyncMod.ClientConfiguration] = js.native
+  var athena: js.UndefOr[typings.awsDashSdk.clientsAthenaMod.ClientConfiguration] = js.native
+  var augmentedairuntime: js.UndefOr[typings.awsDashSdk.clientsAugmentedairuntimeMod.ClientConfiguration] = js.native
+  var autoscaling: js.UndefOr[typings.awsDashSdk.clientsAutoscalingMod.ClientConfiguration] = js.native
+  var autoscalingplans: js.UndefOr[typings.awsDashSdk.clientsAutoscalingplansMod.ClientConfiguration] = js.native
+  var backup: js.UndefOr[typings.awsDashSdk.clientsBackupMod.ClientConfiguration] = js.native
+  var basePath: String = js.native
+  var batch: js.UndefOr[typings.awsDashSdk.clientsBatchMod.ClientConfiguration] = js.native
+  var budgets: js.UndefOr[typings.awsDashSdk.clientsBudgetsMod.ClientConfiguration] = js.native
+  var chime: js.UndefOr[typings.awsDashSdk.clientsChimeMod.ClientConfiguration] = js.native
+  var cloud9: js.UndefOr[typings.awsDashSdk.clientsCloud9Mod.ClientConfiguration] = js.native
+  var clouddirectory: js.UndefOr[typings.awsDashSdk.clientsClouddirectoryMod.ClientConfiguration] = js.native
+  var cloudformation: js.UndefOr[typings.awsDashSdk.clientsCloudformationMod.ClientConfiguration] = js.native
+  var cloudfront: js.UndefOr[typings.awsDashSdk.clientsCloudfrontMod.ClientConfiguration] = js.native
+  var cloudhsm: js.UndefOr[typings.awsDashSdk.clientsCloudhsmMod.ClientConfiguration] = js.native
+  var cloudhsmv2: js.UndefOr[typings.awsDashSdk.clientsCloudhsmv2Mod.ClientConfiguration] = js.native
+  var cloudsearch: js.UndefOr[typings.awsDashSdk.clientsCloudsearchMod.ClientConfiguration] = js.native
+  var cloudsearchdomain: js.UndefOr[typings.awsDashSdk.clientsCloudsearchdomainMod.ClientConfiguration] = js.native
+  var cloudtrail: js.UndefOr[typings.awsDashSdk.clientsCloudtrailMod.ClientConfiguration] = js.native
+  var cloudwatch: js.UndefOr[typings.awsDashSdk.clientsCloudwatchMod.ClientConfiguration] = js.native
+  var cloudwatchevents: js.UndefOr[typings.awsDashSdk.clientsCloudwatcheventsMod.ClientConfiguration] = js.native
+  var cloudwatchlogs: js.UndefOr[typings.awsDashSdk.clientsCloudwatchlogsMod.ClientConfiguration] = js.native
+  var codebuild: js.UndefOr[typings.awsDashSdk.clientsCodebuildMod.ClientConfiguration] = js.native
+  var codecommit: js.UndefOr[typings.awsDashSdk.clientsCodecommitMod.ClientConfiguration] = js.native
+  var codedeploy: js.UndefOr[typings.awsDashSdk.clientsCodedeployMod.ClientConfiguration] = js.native
+  var codeguruprofiler: js.UndefOr[typings.awsDashSdk.clientsCodeguruprofilerMod.ClientConfiguration] = js.native
+  var codegurureviewer: js.UndefOr[typings.awsDashSdk.clientsCodegurureviewerMod.ClientConfiguration] = js.native
+  var codepipeline: js.UndefOr[typings.awsDashSdk.clientsCodepipelineMod.ClientConfiguration] = js.native
+  var codestar: js.UndefOr[typings.awsDashSdk.clientsCodestarMod.ClientConfiguration] = js.native
+  var codestarconnections: js.UndefOr[typings.awsDashSdk.clientsCodestarconnectionsMod.ClientConfiguration] = js.native
+  var codestarnotifications: js.UndefOr[typings.awsDashSdk.clientsCodestarnotificationsMod.ClientConfiguration] = js.native
+  var cognitoidentity: js.UndefOr[typings.awsDashSdk.clientsCognitoidentityMod.ClientConfiguration] = js.native
+  var cognitoidentityserviceprovider: js.UndefOr[typings.awsDashSdk.clientsCognitoidentityserviceproviderMod.ClientConfiguration] = js.native
+  var cognitosync: js.UndefOr[typings.awsDashSdk.clientsCognitosyncMod.ClientConfiguration] = js.native
+  var comprehend: js.UndefOr[typings.awsDashSdk.clientsComprehendMod.ClientConfiguration] = js.native
+  var comprehendmedical: js.UndefOr[typings.awsDashSdk.clientsComprehendmedicalMod.ClientConfiguration] = js.native
+  var computeoptimizer: js.UndefOr[typings.awsDashSdk.clientsComputeoptimizerMod.ClientConfiguration] = js.native
+  var configservice: js.UndefOr[typings.awsDashSdk.clientsConfigserviceMod.ClientConfiguration] = js.native
+  var connect: js.UndefOr[typings.awsDashSdk.clientsConnectMod.ClientConfiguration] = js.native
+  var connectparticipant: js.UndefOr[typings.awsDashSdk.clientsConnectparticipantMod.ClientConfiguration] = js.native
+  var costexplorer: js.UndefOr[typings.awsDashSdk.clientsCostexplorerMod.ClientConfiguration] = js.native
+  var cur: js.UndefOr[typings.awsDashSdk.clientsCurMod.ClientConfiguration] = js.native
+  var dataexchange: js.UndefOr[typings.awsDashSdk.clientsDataexchangeMod.ClientConfiguration] = js.native
+  var datapipeline: js.UndefOr[typings.awsDashSdk.clientsDatapipelineMod.ClientConfiguration] = js.native
+  var datasync: js.UndefOr[typings.awsDashSdk.clientsDatasyncMod.ClientConfiguration] = js.native
+  var dax: js.UndefOr[typings.awsDashSdk.clientsDaxMod.ClientConfiguration] = js.native
+  var detective: js.UndefOr[typings.awsDashSdk.clientsDetectiveMod.ClientConfiguration] = js.native
+  var devicefarm: js.UndefOr[typings.awsDashSdk.clientsDevicefarmMod.ClientConfiguration] = js.native
+  var directconnect: js.UndefOr[typings.awsDashSdk.clientsDirectconnectMod.ClientConfiguration] = js.native
+  var directoryservice: js.UndefOr[typings.awsDashSdk.clientsDirectoryserviceMod.ClientConfiguration] = js.native
+  var discovery: js.UndefOr[typings.awsDashSdk.clientsDiscoveryMod.ClientConfiguration] = js.native
+  var dlm: js.UndefOr[typings.awsDashSdk.clientsDlmMod.ClientConfiguration] = js.native
+  var dms: js.UndefOr[typings.awsDashSdk.clientsDmsMod.ClientConfiguration] = js.native
+  var docdb: js.UndefOr[typings.awsDashSdk.clientsDocdbMod.ClientConfiguration] = js.native
+  var dynamodb: js.UndefOr[typings.awsDashSdk.clientsDynamodbMod.ClientConfiguration] = js.native
+  var dynamodbstreams: js.UndefOr[typings.awsDashSdk.clientsDynamodbstreamsMod.ClientConfiguration] = js.native
+  var ebs: js.UndefOr[typings.awsDashSdk.clientsEbsMod.ClientConfiguration] = js.native
+  var ec2: js.UndefOr[typings.awsDashSdk.clientsEc2Mod.ClientConfiguration] = js.native
+  var ec2instanceconnect: js.UndefOr[typings.awsDashSdk.clientsEc2instanceconnectMod.ClientConfiguration] = js.native
+  var ecr: js.UndefOr[typings.awsDashSdk.clientsEcrMod.ClientConfiguration] = js.native
+  var ecs: js.UndefOr[typings.awsDashSdk.clientsEcsMod.ClientConfiguration] = js.native
+  var efs: js.UndefOr[typings.awsDashSdk.clientsEfsMod.ClientConfiguration] = js.native
+  var eks: js.UndefOr[typings.awsDashSdk.clientsEksMod.ClientConfiguration] = js.native
+  var elasticache: js.UndefOr[typings.awsDashSdk.clientsElasticacheMod.ClientConfiguration] = js.native
+  var elasticbeanstalk: js.UndefOr[typings.awsDashSdk.clientsElasticbeanstalkMod.ClientConfiguration] = js.native
+  var elasticinference: js.UndefOr[typings.awsDashSdk.clientsElasticinferenceMod.ClientConfiguration] = js.native
+  var elastictranscoder: js.UndefOr[typings.awsDashSdk.clientsElastictranscoderMod.ClientConfiguration] = js.native
+  var elb: js.UndefOr[typings.awsDashSdk.clientsElbMod.ClientConfiguration] = js.native
+  var elbv2: js.UndefOr[typings.awsDashSdk.clientsElbv2Mod.ClientConfiguration] = js.native
+  var emr: js.UndefOr[typings.awsDashSdk.clientsEmrMod.ClientConfiguration] = js.native
+  var es: js.UndefOr[typings.awsDashSdk.clientsEsMod.ClientConfiguration] = js.native
+  var eventbridge: js.UndefOr[typings.awsDashSdk.clientsEventbridgeMod.ClientConfiguration] = js.native
+  var firehose: js.UndefOr[typings.awsDashSdk.clientsFirehoseMod.ClientConfiguration] = js.native
+  var fms: js.UndefOr[typings.awsDashSdk.clientsFmsMod.ClientConfiguration] = js.native
+  var forecastqueryservice: js.UndefOr[typings.awsDashSdk.clientsForecastqueryserviceMod.ClientConfiguration] = js.native
+  var forecastservice: js.UndefOr[typings.awsDashSdk.clientsForecastserviceMod.ClientConfiguration] = js.native
+  var frauddetector: js.UndefOr[typings.awsDashSdk.clientsFrauddetectorMod.ClientConfiguration] = js.native
+  var fsx: js.UndefOr[typings.awsDashSdk.clientsFsxMod.ClientConfiguration] = js.native
+  var gamelift: js.UndefOr[typings.awsDashSdk.clientsGameliftMod.ClientConfiguration] = js.native
+  var glacier: js.UndefOr[typings.awsDashSdk.clientsGlacierMod.ClientConfiguration] = js.native
+  var globalaccelerator: js.UndefOr[typings.awsDashSdk.clientsGlobalacceleratorMod.ClientConfiguration] = js.native
+  var glue: js.UndefOr[typings.awsDashSdk.clientsGlueMod.ClientConfiguration] = js.native
+  var greengrass: js.UndefOr[typings.awsDashSdk.clientsGreengrassMod.ClientConfiguration] = js.native
+  var groundstation: js.UndefOr[typings.awsDashSdk.clientsGroundstationMod.ClientConfiguration] = js.native
+  var guardduty: js.UndefOr[typings.awsDashSdk.clientsGuarddutyMod.ClientConfiguration] = js.native
+  var health: js.UndefOr[typings.awsDashSdk.clientsHealthMod.ClientConfiguration] = js.native
+  var iam: js.UndefOr[typings.awsDashSdk.clientsIamMod.ClientConfiguration] = js.native
+  var imagebuilder: js.UndefOr[typings.awsDashSdk.clientsImagebuilderMod.ClientConfiguration] = js.native
+  var importexport: js.UndefOr[typings.awsDashSdk.clientsImportexportMod.ClientConfiguration] = js.native
+  var inspector: js.UndefOr[typings.awsDashSdk.clientsInspectorMod.ClientConfiguration] = js.native
+  var iot: js.UndefOr[typings.awsDashSdk.clientsIotMod.ClientConfiguration] = js.native
+  var iot1clickdevicesservice: js.UndefOr[typings.awsDashSdk.clientsIot1clickdevicesserviceMod.ClientConfiguration] = js.native
+  var iot1clickprojects: js.UndefOr[typings.awsDashSdk.clientsIot1clickprojectsMod.ClientConfiguration] = js.native
+  var iotanalytics: js.UndefOr[typings.awsDashSdk.clientsIotanalyticsMod.ClientConfiguration] = js.native
+  var iotdata: js.UndefOr[typings.awsDashSdk.clientsIotdataMod.ClientConfiguration] = js.native
+  var iotevents: js.UndefOr[typings.awsDashSdk.clientsIoteventsMod.ClientConfiguration] = js.native
+  var ioteventsdata: js.UndefOr[typings.awsDashSdk.clientsIoteventsdataMod.ClientConfiguration] = js.native
+  var iotjobsdataplane: js.UndefOr[typings.awsDashSdk.clientsIotjobsdataplaneMod.ClientConfiguration] = js.native
+  var iotsecuretunneling: js.UndefOr[typings.awsDashSdk.clientsIotsecuretunnelingMod.ClientConfiguration] = js.native
+  var iotthingsgraph: js.UndefOr[typings.awsDashSdk.clientsIotthingsgraphMod.ClientConfiguration] = js.native
+  var kafka: js.UndefOr[typings.awsDashSdk.clientsKafkaMod.ClientConfiguration] = js.native
+  var kendra: js.UndefOr[typings.awsDashSdk.clientsKendraMod.ClientConfiguration] = js.native
+  var kinesis: js.UndefOr[typings.awsDashSdk.clientsKinesisMod.ClientConfiguration] = js.native
+  var kinesisanalytics: js.UndefOr[typings.awsDashSdk.clientsKinesisanalyticsMod.ClientConfiguration] = js.native
+  var kinesisanalyticsv2: js.UndefOr[typings.awsDashSdk.clientsKinesisanalyticsv2Mod.ClientConfiguration] = js.native
+  var kinesisvideo: js.UndefOr[typings.awsDashSdk.clientsKinesisvideoMod.ClientConfiguration] = js.native
+  var kinesisvideoarchivedmedia: js.UndefOr[typings.awsDashSdk.clientsKinesisvideoarchivedmediaMod.ClientConfiguration] = js.native
+  var kinesisvideomedia: js.UndefOr[typings.awsDashSdk.clientsKinesisvideomediaMod.ClientConfiguration] = js.native
+  var kinesisvideosignalingchannels: js.UndefOr[typings.awsDashSdk.clientsKinesisvideosignalingchannelsMod.ClientConfiguration] = js.native
+  var kms: js.UndefOr[typings.awsDashSdk.clientsKmsMod.ClientConfiguration] = js.native
+  var lakeformation: js.UndefOr[typings.awsDashSdk.clientsLakeformationMod.ClientConfiguration] = js.native
+  var lambda: js.UndefOr[typings.awsDashSdk.clientsLambdaMod.ClientConfiguration] = js.native
+  var lexmodelbuildingservice: js.UndefOr[typings.awsDashSdk.clientsLexmodelbuildingserviceMod.ClientConfiguration] = js.native
+  var lexruntime: js.UndefOr[typings.awsDashSdk.clientsLexruntimeMod.ClientConfiguration] = js.native
+  var licensemanager: js.UndefOr[typings.awsDashSdk.clientsLicensemanagerMod.ClientConfiguration] = js.native
+  var lightsail: js.UndefOr[typings.awsDashSdk.clientsLightsailMod.ClientConfiguration] = js.native
+  var machinelearning: js.UndefOr[typings.awsDashSdk.clientsMachinelearningMod.ClientConfiguration] = js.native
+  var macie: js.UndefOr[typings.awsDashSdk.clientsMacieMod.ClientConfiguration] = js.native
+  var managedblockchain: js.UndefOr[typings.awsDashSdk.clientsManagedblockchainMod.ClientConfiguration] = js.native
+  var marketplacecatalog: js.UndefOr[typings.awsDashSdk.clientsMarketplacecatalogMod.ClientConfiguration] = js.native
+  var marketplacecommerceanalytics: js.UndefOr[typings.awsDashSdk.clientsMarketplacecommerceanalyticsMod.ClientConfiguration] = js.native
+  var marketplaceentitlementservice: js.UndefOr[typings.awsDashSdk.clientsMarketplaceentitlementserviceMod.ClientConfiguration] = js.native
+  var marketplacemetering: js.UndefOr[typings.awsDashSdk.clientsMarketplacemeteringMod.ClientConfiguration] = js.native
+  var mediaconnect: js.UndefOr[typings.awsDashSdk.clientsMediaconnectMod.ClientConfiguration] = js.native
+  var mediaconvert: js.UndefOr[typings.awsDashSdk.clientsMediaconvertMod.ClientConfiguration] = js.native
+  var medialive: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.ClientConfiguration] = js.native
+  var mediapackage: js.UndefOr[typings.awsDashSdk.clientsMediapackageMod.ClientConfiguration] = js.native
+  var mediapackagevod: js.UndefOr[typings.awsDashSdk.clientsMediapackagevodMod.ClientConfiguration] = js.native
+  var mediastore: js.UndefOr[typings.awsDashSdk.clientsMediastoreMod.ClientConfiguration] = js.native
+  var mediastoredata: js.UndefOr[typings.awsDashSdk.clientsMediastoredataMod.ClientConfiguration] = js.native
+  var mediatailor: js.UndefOr[typings.awsDashSdk.clientsMediatailorMod.ClientConfiguration] = js.native
+  var migrationhub: js.UndefOr[typings.awsDashSdk.clientsMigrationhubMod.ClientConfiguration] = js.native
+  var migrationhubconfig: js.UndefOr[typings.awsDashSdk.clientsMigrationhubconfigMod.ClientConfiguration] = js.native
+  var mobile: js.UndefOr[typings.awsDashSdk.clientsMobileMod.ClientConfiguration] = js.native
+  var mobileanalytics: js.UndefOr[typings.awsDashSdk.clientsMobileanalyticsMod.ClientConfiguration] = js.native
+  var mq: js.UndefOr[typings.awsDashSdk.clientsMqMod.ClientConfiguration] = js.native
+  var mturk: js.UndefOr[typings.awsDashSdk.clientsMturkMod.ClientConfiguration] = js.native
+  var neptune: js.UndefOr[typings.awsDashSdk.clientsNeptuneMod.ClientConfiguration] = js.native
+  var networkmanager: js.UndefOr[typings.awsDashSdk.clientsNetworkmanagerMod.ClientConfiguration] = js.native
+  var opsworks: js.UndefOr[typings.awsDashSdk.clientsOpsworksMod.ClientConfiguration] = js.native
+  var opsworkscm: js.UndefOr[typings.awsDashSdk.clientsOpsworkscmMod.ClientConfiguration] = js.native
+  var organizations: js.UndefOr[typings.awsDashSdk.clientsOrganizationsMod.ClientConfiguration] = js.native
+  var outposts: js.UndefOr[typings.awsDashSdk.clientsOutpostsMod.ClientConfiguration] = js.native
+  var personalize: js.UndefOr[typings.awsDashSdk.clientsPersonalizeMod.ClientConfiguration] = js.native
+  var personalizeevents: js.UndefOr[typings.awsDashSdk.clientsPersonalizeeventsMod.ClientConfiguration] = js.native
+  var personalizeruntime: js.UndefOr[typings.awsDashSdk.clientsPersonalizeruntimeMod.ClientConfiguration] = js.native
+  var pi: js.UndefOr[typings.awsDashSdk.clientsPiMod.ClientConfiguration] = js.native
+  var pinpoint: js.UndefOr[typings.awsDashSdk.clientsPinpointMod.ClientConfiguration] = js.native
+  var pinpointemail: js.UndefOr[typings.awsDashSdk.clientsPinpointemailMod.ClientConfiguration] = js.native
+  var pinpointsmsvoice: js.UndefOr[typings.awsDashSdk.clientsPinpointsmsvoiceMod.ClientConfiguration] = js.native
+  var polly: js.UndefOr[typings.awsDashSdk.clientsPollyMod.ClientConfiguration] = js.native
+  var pricing: js.UndefOr[typings.awsDashSdk.clientsPricingMod.ClientConfiguration] = js.native
+  var qldb: js.UndefOr[typings.awsDashSdk.clientsQldbMod.ClientConfiguration] = js.native
+  var qldbsession: js.UndefOr[typings.awsDashSdk.clientsQldbsessionMod.ClientConfiguration] = js.native
+  var quicksight: js.UndefOr[typings.awsDashSdk.clientsQuicksightMod.ClientConfiguration] = js.native
+  var ram: js.UndefOr[typings.awsDashSdk.clientsRamMod.ClientConfiguration] = js.native
+  var rds: js.UndefOr[typings.awsDashSdk.clientsRdsMod.ClientConfiguration] = js.native
+  var rdsdataservice: js.UndefOr[typings.awsDashSdk.clientsRdsdataserviceMod.ClientConfiguration] = js.native
+  var redshift: js.UndefOr[typings.awsDashSdk.clientsRedshiftMod.ClientConfiguration] = js.native
+  var rekognition: js.UndefOr[typings.awsDashSdk.clientsRekognitionMod.ClientConfiguration] = js.native
+  var resourcegroups: js.UndefOr[typings.awsDashSdk.clientsResourcegroupsMod.ClientConfiguration] = js.native
+  var resourcegroupstaggingapi: js.UndefOr[typings.awsDashSdk.clientsResourcegroupstaggingapiMod.ClientConfiguration] = js.native
+  var robomaker: js.UndefOr[typings.awsDashSdk.clientsRobomakerMod.ClientConfiguration] = js.native
+  var route53: js.UndefOr[typings.awsDashSdk.clientsRoute53Mod.ClientConfiguration] = js.native
+  var route53domains: js.UndefOr[typings.awsDashSdk.clientsRoute53domainsMod.ClientConfiguration] = js.native
+  var route53resolver: js.UndefOr[typings.awsDashSdk.clientsRoute53resolverMod.ClientConfiguration] = js.native
+  var s3: js.UndefOr[typings.awsDashSdk.clientsS3Mod.ClientConfiguration] = js.native
+  var s3control: js.UndefOr[typings.awsDashSdk.clientsS3controlMod.ClientConfiguration] = js.native
+  var sagemaker: js.UndefOr[typings.awsDashSdk.clientsSagemakerMod.ClientConfiguration] = js.native
+  var sagemakerruntime: js.UndefOr[typings.awsDashSdk.clientsSagemakerruntimeMod.ClientConfiguration] = js.native
+  var savingsplans: js.UndefOr[typings.awsDashSdk.clientsSavingsplansMod.ClientConfiguration] = js.native
+  var schemas: js.UndefOr[typings.awsDashSdk.clientsSchemasMod.ClientConfiguration] = js.native
+  var secretsmanager: js.UndefOr[typings.awsDashSdk.clientsSecretsmanagerMod.ClientConfiguration] = js.native
+  var securityhub: js.UndefOr[typings.awsDashSdk.clientsSecurityhubMod.ClientConfiguration] = js.native
+  var serverlessapplicationrepository: js.UndefOr[typings.awsDashSdk.clientsServerlessapplicationrepositoryMod.ClientConfiguration] = js.native
+  var servicecatalog: js.UndefOr[typings.awsDashSdk.clientsServicecatalogMod.ClientConfiguration] = js.native
+  var servicediscovery: js.UndefOr[typings.awsDashSdk.clientsServicediscoveryMod.ClientConfiguration] = js.native
+  var servicequotas: js.UndefOr[typings.awsDashSdk.clientsServicequotasMod.ClientConfiguration] = js.native
+  var ses: js.UndefOr[typings.awsDashSdk.clientsSesMod.ClientConfiguration] = js.native
+  var sesv2: js.UndefOr[typings.awsDashSdk.clientsSesv2Mod.ClientConfiguration] = js.native
+  var shield: js.UndefOr[typings.awsDashSdk.clientsShieldMod.ClientConfiguration] = js.native
+  var signer: js.UndefOr[typings.awsDashSdk.clientsSignerMod.ClientConfiguration] = js.native
+  var simpledb: js.UndefOr[typings.awsDashSdk.clientsSimpledbMod.ClientConfiguration] = js.native
+  var sms: js.UndefOr[typings.awsDashSdk.clientsSmsMod.ClientConfiguration] = js.native
+  var snowball: js.UndefOr[typings.awsDashSdk.clientsSnowballMod.ClientConfiguration] = js.native
+  var sns: js.UndefOr[typings.awsDashSdk.clientsSnsMod.ClientConfiguration] = js.native
+  var sqs: js.UndefOr[typings.awsDashSdk.clientsSqsMod.ClientConfiguration] = js.native
+  var ssm: js.UndefOr[typings.awsDashSdk.clientsSsmMod.ClientConfiguration] = js.native
+  var sso: js.UndefOr[typings.awsDashSdk.clientsSsoMod.ClientConfiguration] = js.native
+  var ssooidc: js.UndefOr[typings.awsDashSdk.clientsSsooidcMod.ClientConfiguration] = js.native
+  var stepfunctions: js.UndefOr[typings.awsDashSdk.clientsStepfunctionsMod.ClientConfiguration] = js.native
+  var storagegateway: js.UndefOr[typings.awsDashSdk.clientsStoragegatewayMod.ClientConfiguration] = js.native
+  var sts: js.UndefOr[typings.awsDashSdk.clientsStsMod.ClientConfiguration] = js.native
+  var support: js.UndefOr[typings.awsDashSdk.clientsSupportMod.ClientConfiguration] = js.native
+  var swf: js.UndefOr[typings.awsDashSdk.clientsSwfMod.ClientConfiguration] = js.native
+  var textract: js.UndefOr[typings.awsDashSdk.clientsTextractMod.ClientConfiguration] = js.native
+  var transcribeservice: js.UndefOr[typings.awsDashSdk.clientsTranscribeserviceMod.ClientConfiguration] = js.native
+  var transfer: js.UndefOr[typings.awsDashSdk.clientsTransferMod.ClientConfiguration] = js.native
+  var translate: js.UndefOr[typings.awsDashSdk.clientsTranslateMod.ClientConfiguration] = js.native
+  var waf: js.UndefOr[typings.awsDashSdk.clientsWafMod.ClientConfiguration] = js.native
+  var wafregional: js.UndefOr[typings.awsDashSdk.clientsWafregionalMod.ClientConfiguration] = js.native
+  var wafv2: js.UndefOr[typings.awsDashSdk.clientsWafv2Mod.ClientConfiguration] = js.native
+  var workdocs: js.UndefOr[typings.awsDashSdk.clientsWorkdocsMod.ClientConfiguration] = js.native
+  var worklink: js.UndefOr[typings.awsDashSdk.clientsWorklinkMod.ClientConfiguration] = js.native
+  var workmail: js.UndefOr[typings.awsDashSdk.clientsWorkmailMod.ClientConfiguration] = js.native
+  var workmailmessageflow: js.UndefOr[typings.awsDashSdk.clientsWorkmailmessageflowMod.ClientConfiguration] = js.native
+  var workspaces: js.UndefOr[typings.awsDashSdk.clientsWorkspacesMod.ClientConfiguration] = js.native
+  var xray: js.UndefOr[typings.awsDashSdk.clientsXrayMod.ClientConfiguration] = js.native
 }
 

@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetLoadBalancerArgs extends js.Object {
   /**
     * The unique name of the load balancer.
     */
-  val name: String
-  val tags: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  val name: String = js.native
+  val tags: js.UndefOr[StringDictionary[js.Any]] = js.native
 }
 
 object GetLoadBalancerArgs {
   @scala.inline
   def apply(name: String, tags: StringDictionary[js.Any] = null): GetLoadBalancerArgs = {
-    val __obj = js.Dynamic.literal(name = name)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetLoadBalancerArgs]
   }
 }

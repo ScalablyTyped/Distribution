@@ -10,9 +10,9 @@ Lightweight CSS framework based on Google's Material Design guidelines
 | ------------------ | :-------------: |
 | Full name          | muicss |
 | Keywords           | MUI, CSS, CSS Framework, Material Design, React |
-| # releases         | 27 |
-| # dependents       | 9 |
-| # downloads        | 151167 |
+| # releases         | 11 |
+| # dependents       | 11 |
+| # downloads        | 143592 |
 | # stars            | 5 |
 
 ## Links

@@ -10,9 +10,9 @@ node.js realtime framework server
 | ------------------ | :-------------: |
 | Full name          | socket.io |
 | Keywords           | realtime, framework, websocket, tcp, events, socket, io |
-| # releases         | 12 |
-| # dependents       | 5014 |
-| # downloads        | 108447414 |
+| # releases         | 5 |
+| # dependents       | 5581 |
+| # downloads        | 134651962 |
 | # stars            | 794 |
 
 ## Links

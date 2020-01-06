@@ -5,23 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PolicyRule extends js.Object {
   /**
     * The action to perform when selection criteria is met.
     */
-  var action: Action
+  var action: Action = js.native
   /**
     * An optional description for the rule.
     */
-  var description: js.UndefOr[Input[String]] = js.undefined
+  var description: js.UndefOr[Input[String]] = js.native
   /**
     * Indicate the Rule Priority - each rule must have a different priority.
     */
-  var rulePriority: Input[Double]
+  var rulePriority: Input[Double] = js.native
   /**
     * The selection criteria for the rule.
     */
-  var selection: Selection
+  var selection: Selection = js.native
 }
 
 object PolicyRule {
@@ -32,7 +33,7 @@ object PolicyRule {
     selection: Selection,
     description: Input[String] = null
   ): PolicyRule = {
-    val __obj = js.Dynamic.literal(action = action, rulePriority = rulePriority.asInstanceOf[js.Any], selection = selection)
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], rulePriority = rulePriority.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolicyRule]
   }

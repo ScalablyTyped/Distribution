@@ -11,8 +11,8 @@ a command line option parser that will make you smile
 | Full name          | docopt |
 | Keywords           | command, options, argument, args, cli, commandline |
 | # releases         | 0 |
-| # dependents       | 255 |
-| # downloads        | 6475951 |
+| # dependents       | 265 |
+| # downloads        | 8884430 |
 | # stars            | 7 |
 
 ## Links

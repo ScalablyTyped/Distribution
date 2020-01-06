@@ -37,7 +37,7 @@ trait Anon_Blockdevice extends js.Object {
   def on_blockdevice(
     event: blockdevice,
     listener: js.Function3[/* path */ String, /* stat */ Stats, /* depth */ Double, Unit]
-  ): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias walkdir.walkdir/walkdir.WalkEmitter */ js.Object = js.native
+  ): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias walkdir.walkdir/walkdir.WalkEmitter */ js.Object = js.native
   /**
     * found a character device / tty / terminal
     */
@@ -45,7 +45,7 @@ trait Anon_Blockdevice extends js.Object {
   def on_characterdevice(
     event: characterdevice,
     listener: js.Function3[/* path */ String, /* stat */ Stats, /* depth */ Double, Unit]
-  ): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias walkdir.walkdir/walkdir.WalkEmitter */ js.Object = js.native
+  ): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias walkdir.walkdir/walkdir.WalkEmitter */ js.Object = js.native
   /**
     * found a directory
     */
@@ -53,7 +53,7 @@ trait Anon_Blockdevice extends js.Object {
   def on_directory(
     event: directory,
     listener: js.Function3[/* path */ String, /* stat */ Stats, /* depth */ Double, Unit]
-  ): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias walkdir.walkdir/walkdir.WalkEmitter */ js.Object = js.native
+  ): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias walkdir.walkdir/walkdir.WalkEmitter */ js.Object = js.native
   /**
     * helpful event that lets you know if a directory is empty
     */
@@ -61,32 +61,32 @@ trait Anon_Blockdevice extends js.Object {
   def on_empty(
     event: empty,
     listener: js.Function3[/* path */ String, /* stat */ Stats, /* depth */ Double, Unit]
-  ): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias walkdir.walkdir/walkdir.WalkEmitter */ js.Object = js.native
+  ): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias walkdir.walkdir/walkdir.WalkEmitter */ js.Object = js.native
   /**
     * emitted if there is an error from the file system reading the initial or target directory
     */
   @JSName("on")
-  def on_error(event: error, listener: js.Function1[/* error */ Error, Unit]): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias walkdir.walkdir/walkdir.WalkEmitter */ js.Object = js.native
+  def on_error(event: error, listener: js.Function1[/* error */ Error, Unit]): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias walkdir.walkdir/walkdir.WalkEmitter */ js.Object = js.native
   /**
     *  emitted when there is an error from the filesystem reading as nested path.
     */
   @JSName("on")
-  def on_fail(event: fail, listener: js.Function2[/* path */ String, /* error */ Error, Unit]): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias walkdir.walkdir/walkdir.WalkEmitter */ js.Object = js.native
+  def on_fail(event: fail, listener: js.Function2[/* path */ String, /* error */ Error, Unit]): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias walkdir.walkdir/walkdir.WalkEmitter */ js.Object = js.native
   /**
     * found a fifo
     */
   @JSName("on")
-  def on_fifo(event: fifo, listener: js.Function3[/* path */ String, /* stat */ Stats, /* depth */ Double, Unit]): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias walkdir.walkdir/walkdir.WalkEmitter */ js.Object = js.native
+  def on_fifo(event: fifo, listener: js.Function3[/* path */ String, /* stat */ Stats, /* depth */ Double, Unit]): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias walkdir.walkdir/walkdir.WalkEmitter */ js.Object = js.native
   /**
     * found a file
     */
   @JSName("on")
-  def on_file(event: file, listener: js.Function3[/* path */ String, /* stat */ Stats, /* depth */ Double, Unit]): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias walkdir.walkdir/walkdir.WalkEmitter */ js.Object = js.native
+  def on_file(event: file, listener: js.Function3[/* path */ String, /* stat */ Stats, /* depth */ Double, Unit]): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias walkdir.walkdir/walkdir.WalkEmitter */ js.Object = js.native
   /**
     * found a symlink
     */
   @JSName("on")
-  def on_link(event: link, listener: js.Function3[/* path */ String, /* stat */ Stats, /* depth */ Double, Unit]): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias walkdir.walkdir/walkdir.WalkEmitter */ js.Object = js.native
+  def on_link(event: link, listener: js.Function3[/* path */ String, /* stat */ Stats, /* depth */ Double, Unit]): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias walkdir.walkdir/walkdir.WalkEmitter */ js.Object = js.native
   /**
     * found a path. this is the expected use case. every path for everything inside target directory is emitted here.
     */
@@ -94,13 +94,13 @@ trait Anon_Blockdevice extends js.Object {
   def on_path(
     event: path,
     listener: js.ThisFunction3[
-      /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias walkdir.walkdir/walkdir.WalkEmitter */ /* this */ js.Object, 
+      /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias walkdir.walkdir/walkdir.WalkEmitter */ /* this */ js.Object, 
       /* path */ String, 
       /* stat */ Stats, 
       /* depth */ Double, 
       Unit
     ]
-  ): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias walkdir.walkdir/walkdir.WalkEmitter */ js.Object = js.native
+  ): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias walkdir.walkdir/walkdir.WalkEmitter */ js.Object = js.native
   /**
     * found a socket
     */
@@ -108,7 +108,7 @@ trait Anon_Blockdevice extends js.Object {
   def on_socket(
     event: socket,
     listener: js.Function3[/* path */ String, /* stat */ Stats, /* depth */ Double, Unit]
-  ): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias walkdir.walkdir/walkdir.WalkEmitter */ js.Object = js.native
+  ): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias walkdir.walkdir/walkdir.WalkEmitter */ js.Object = js.native
   /**
     * the stat of the target directory. not emitted through any other event.
     */
@@ -116,7 +116,7 @@ trait Anon_Blockdevice extends js.Object {
   def on_targetdirectory(
     event: targetdirectory,
     listener: js.Function3[/* path */ String, /* stat */ Stats, /* depth */ Double, Unit]
-  ): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias walkdir.walkdir/walkdir.WalkEmitter */ js.Object = js.native
+  ): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias walkdir.walkdir/walkdir.WalkEmitter */ js.Object = js.native
   /**
     * pause the walk
     */

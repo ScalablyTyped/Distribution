@@ -11,8 +11,8 @@ Open a web address or call, email, text or iMessage (iOS only) someone in React 
 | Full name          | react-native-communications |
 | Keywords           | react, native, react-native, email, phone, text, sms, iMessage, communications, ios, android, react-component |
 | # releases         | 1 |
-| # dependents       | 47 |
-| # downloads        | 809282 |
+| # dependents       | 59 |
+| # downloads        | 1235901 |
 | # stars            | 8 |
 
 ## Links

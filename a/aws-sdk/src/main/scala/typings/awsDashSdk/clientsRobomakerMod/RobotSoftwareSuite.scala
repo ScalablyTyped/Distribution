@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RobotSoftwareSuite extends js.Object {
   /**
     * The name of the robot software suite.
     */
-  var name: js.UndefOr[RobotSoftwareSuiteType] = js.undefined
+  var name: js.UndefOr[RobotSoftwareSuiteType] = js.native
   /**
     * The version of the robot software suite.
     */
-  var version: js.UndefOr[RobotSoftwareSuiteVersionType] = js.undefined
+  var version: js.UndefOr[RobotSoftwareSuiteVersionType] = js.native
 }
 
 object RobotSoftwareSuite {

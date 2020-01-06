@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NoiseReducerSpatialFilterSettings extends js.Object {
   /**
     * Specify strength of post noise reduction sharpening filter, with 0 disabling the filter and 3 enabling it at maximum strength.
     */
-  var PostFilterSharpenStrength: js.UndefOr[__integerMin0Max3] = js.undefined
+  var PostFilterSharpenStrength: js.UndefOr[__integerMin0Max3] = js.native
   /**
     * The speed of the filter, from -2 (lower speed) to 3 (higher speed), with 0 being the nominal value.
     */
-  var Speed: js.UndefOr[__integerMinNegative2Max3] = js.undefined
+  var Speed: js.UndefOr[__integerMinNegative2Max3] = js.native
   /**
     * Relative strength of noise reducing filter. Higher values produce stronger filtering.
     */
-  var Strength: js.UndefOr[__integerMin0Max16] = js.undefined
+  var Strength: js.UndefOr[__integerMin0Max16] = js.native
 }
 
 object NoiseReducerSpatialFilterSettings {

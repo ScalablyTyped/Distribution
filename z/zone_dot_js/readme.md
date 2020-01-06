@@ -10,15 +10,15 @@ Zones for JavaScript
 | ------------------ | :-------------: |
 | Full name          | zone.js |
 | Keywords           | - |
-| # releases         | 25 |
-| # dependents       | 5949 |
-| # downloads        | 38223940 |
+| # releases         | 16 |
+| # dependents       | 7103 |
+| # downloads        | 53748772 |
 | # stars            | 25 |
 
 ## Links
-- [Homepage](https://github.com/angular/zone.js#readme)
-- [Bugs](https://github.com/angular/zone.js/issues)
-- [Repository](https://github.com/angular/zone.js)
+- [Homepage](https://github.com/angular/angular#readme)
+- [Bugs](https://github.com/angular/angular/issues)
+- [Repository](https://github.com/angular/angular)
 - [Npm](https://www.npmjs.com/package/zone.js)
     
 

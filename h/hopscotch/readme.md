@@ -10,9 +10,9 @@ A framework to make it easy for developers to add product tours to their pages.
 | ------------------ | :-------------: |
 | Full name          | hopscotch |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 10 |
-| # downloads        | 303739 |
+| # releases         | 0 |
+| # dependents       | 11 |
+| # downloads        | 413312 |
 | # stars            | 5 |
 
 ## Links

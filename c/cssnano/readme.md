@@ -10,10 +10,10 @@ A modular minifier, built on top of the PostCSS ecosystem.
 | ------------------ | :-------------: |
 | Full name          | cssnano |
 | Keywords           | css, compress, minify, optimise, optimisation, postcss, postcss-plugin |
-| # releases         | 21 |
-| # dependents       | 927 |
-| # downloads        | 139122611 |
-| # stars            | 53 |
+| # releases         | 17 |
+| # dependents       | 1284 |
+| # downloads        | 198134238 |
+| # stars            | 52 |
 
 ## Links
 - [Homepage](https://github.com/cssnano/cssnano)

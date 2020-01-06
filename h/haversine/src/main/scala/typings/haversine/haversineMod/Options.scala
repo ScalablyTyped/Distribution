@@ -2,8 +2,8 @@ package typings.haversine.haversineMod
 
 import typings.haversine.haversineStrings.LeftcurlybracketlatCommalngRightcurlybracket
 import typings.haversine.haversineStrings.LeftcurlybracketlonCommalatRightcurlybracket
-import typings.haversine.haversineStrings.LeftsquarebracketlatCommalonRightsquarebracket
-import typings.haversine.haversineStrings.LeftsquarebracketlonCommalatRightsquarebracket
+import typings.haversine.haversineStrings.`[latCommalon]`
+import typings.haversine.haversineStrings.`[lonCommalat]`
 import typings.haversine.haversineStrings.geojson
 import typings.haversine.haversineStrings.km
 import typings.haversine.haversineStrings.meter
@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 trait Options extends js.Object {
   /** Format of coordinate arguments. */
   var format: js.UndefOr[
-    LeftsquarebracketlatCommalonRightsquarebracket | LeftsquarebracketlonCommalatRightsquarebracket | LeftcurlybracketlonCommalatRightcurlybracket | LeftcurlybracketlatCommalngRightcurlybracket | geojson
+    `[latCommalon]` | `[lonCommalat]` | LeftcurlybracketlonCommalatRightcurlybracket | LeftcurlybracketlatCommalngRightcurlybracket | geojson
   ] = js.undefined
   /**
     * If passed, will result in library returning boolean value of whether or not the start and end points are within that supplied threshold.
@@ -29,7 +29,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    format: LeftsquarebracketlatCommalonRightsquarebracket | LeftsquarebracketlonCommalatRightsquarebracket | LeftcurlybracketlonCommalatRightcurlybracket | LeftcurlybracketlatCommalngRightcurlybracket | geojson = null,
+    format: `[latCommalon]` | `[lonCommalat]` | LeftcurlybracketlonCommalatRightcurlybracket | LeftcurlybracketlatCommalngRightcurlybracket | geojson = null,
     threshold: Int | Double = null,
     unit: km | mile | meter | nmi = null
   ): Options = {

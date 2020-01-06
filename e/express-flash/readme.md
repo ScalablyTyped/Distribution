@@ -11,8 +11,8 @@ Flash Messages for your Express Application
 | Full name          | express-flash |
 | Keywords           | express, flash, messages |
 | # releases         | 1 |
-| # dependents       | 78 |
-| # downloads        | 858070 |
+| # dependents       | 88 |
+| # downloads        | 943481 |
 | # stars            | 17 |
 
 ## Links

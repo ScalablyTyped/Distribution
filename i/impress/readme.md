@@ -10,9 +10,9 @@ Impress Application Server for Node.js
 | ------------------ | :-------------: |
 | Full name          | impress |
 | Keywords           | application, server, api, rpc, soa, service, stateful, rest, restful, web, framework, router, routing, cluster, cloud, cache, http, https, sse, eventstream, static, websocket, websockets |
-| # releases         | 64 |
+| # releases         | 57 |
 | # dependents       | 2 |
-| # downloads        | 41823 |
+| # downloads        | 40160 |
 | # stars            | 12 |
 
 ## Links

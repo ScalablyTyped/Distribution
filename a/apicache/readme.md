@@ -10,10 +10,10 @@ An ultra-simplified API response caching middleware for Express/Node using plain
 | ------------------ | :-------------: |
 | Full name          | apicache |
 | Keywords           | cache, API, redis, memcache, response, express, JSON, duration, middleware, memory |
-| # releases         | 20 |
-| # dependents       | 26 |
-| # downloads        | 686104 |
-| # stars            | 25 |
+| # releases         | 11 |
+| # dependents       | 31 |
+| # downloads        | 709195 |
+| # stars            | 26 |
 
 ## Links
 - [Homepage](https://github.com/kwhitley/apicache#readme)

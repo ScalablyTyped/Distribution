@@ -10,9 +10,9 @@ Official node.js driver for OrientDB. Fast, lightweight, uses the binary protoco
 | ------------------ | :-------------: |
 | Full name          | orientjs |
 | Keywords           | orientdb, orient, driver, graph, database, db, graphdb, node, node.js |
-| # releases         | 16 |
-| # dependents       | 27 |
-| # downloads        | 217952 |
+| # releases         | 17 |
+| # dependents       | 30 |
+| # downloads        | 236329 |
 | # stars            | 7 |
 
 ## Links

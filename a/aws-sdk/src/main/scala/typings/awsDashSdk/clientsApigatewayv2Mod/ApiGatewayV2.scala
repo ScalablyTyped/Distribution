@@ -80,16 +80,16 @@ trait ApiGatewayV2 extends Service {
   /**
     * Creates an Integration.
     */
-  def createIntegration(): Request[CreateIntegrationResponse, AWSError] = js.native
-  def createIntegration(callback: js.Function2[/* err */ AWSError, /* data */ CreateIntegrationResponse, Unit]): Request[CreateIntegrationResponse, AWSError] = js.native
+  def createIntegration(): Request[CreateIntegrationResult, AWSError] = js.native
+  def createIntegration(callback: js.Function2[/* err */ AWSError, /* data */ CreateIntegrationResult, Unit]): Request[CreateIntegrationResult, AWSError] = js.native
   /**
     * Creates an Integration.
     */
-  def createIntegration(params: CreateIntegrationRequest): Request[CreateIntegrationResponse, AWSError] = js.native
+  def createIntegration(params: CreateIntegrationRequest): Request[CreateIntegrationResult, AWSError] = js.native
   def createIntegration(
     params: CreateIntegrationRequest,
-    callback: js.Function2[/* err */ AWSError, /* data */ CreateIntegrationResponse, Unit]
-  ): Request[CreateIntegrationResponse, AWSError] = js.native
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateIntegrationResult, Unit]
+  ): Request[CreateIntegrationResult, AWSError] = js.native
   /**
     * Creates an IntegrationResponses.
     */
@@ -119,16 +119,16 @@ trait ApiGatewayV2 extends Service {
   /**
     * Creates a Route for an API.
     */
-  def createRoute(): Request[CreateRouteResponse, AWSError] = js.native
-  def createRoute(callback: js.Function2[/* err */ AWSError, /* data */ CreateRouteResponse, Unit]): Request[CreateRouteResponse, AWSError] = js.native
+  def createRoute(): Request[CreateRouteResult, AWSError] = js.native
+  def createRoute(callback: js.Function2[/* err */ AWSError, /* data */ CreateRouteResult, Unit]): Request[CreateRouteResult, AWSError] = js.native
   /**
     * Creates a Route for an API.
     */
-  def createRoute(params: CreateRouteRequest): Request[CreateRouteResponse, AWSError] = js.native
+  def createRoute(params: CreateRouteRequest): Request[CreateRouteResult, AWSError] = js.native
   def createRoute(
     params: CreateRouteRequest,
-    callback: js.Function2[/* err */ AWSError, /* data */ CreateRouteResponse, Unit]
-  ): Request[CreateRouteResponse, AWSError] = js.native
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateRouteResult, Unit]
+  ): Request[CreateRouteResult, AWSError] = js.native
   /**
     * Creates a RouteResponse for a Route.
     */
@@ -189,6 +189,19 @@ trait ApiGatewayV2 extends Service {
   def deleteAuthorizer(params: DeleteAuthorizerRequest): Request[js.Object, AWSError] = js.native
   def deleteAuthorizer(
     params: DeleteAuthorizerRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes a CORS configuration.
+    */
+  def deleteCorsConfiguration(): Request[js.Object, AWSError] = js.native
+  def deleteCorsConfiguration(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes a CORS configuration.
+    */
+  def deleteCorsConfiguration(params: DeleteCorsConfigurationRequest): Request[js.Object, AWSError] = js.native
+  def deleteCorsConfiguration(
+    params: DeleteCorsConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
@@ -277,6 +290,19 @@ trait ApiGatewayV2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
+    * Deletes the RouteSettings for a stage.
+    */
+  def deleteRouteSettings(): Request[js.Object, AWSError] = js.native
+  def deleteRouteSettings(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes the RouteSettings for a stage.
+    */
+  def deleteRouteSettings(params: DeleteRouteSettingsRequest): Request[js.Object, AWSError] = js.native
+  def deleteRouteSettings(
+    params: DeleteRouteSettingsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  /**
     * Deletes a Stage.
     */
   def deleteStage(): Request[js.Object, AWSError] = js.native
@@ -297,12 +323,12 @@ trait ApiGatewayV2 extends Service {
   def getApi(params: GetApiRequest): Request[GetApiResponse, AWSError] = js.native
   def getApi(params: GetApiRequest, callback: js.Function2[/* err */ AWSError, /* data */ GetApiResponse, Unit]): Request[GetApiResponse, AWSError] = js.native
   /**
-    * The API mapping.
+    * Gets an API mapping.
     */
   def getApiMapping(): Request[GetApiMappingResponse, AWSError] = js.native
   def getApiMapping(callback: js.Function2[/* err */ AWSError, /* data */ GetApiMappingResponse, Unit]): Request[GetApiMappingResponse, AWSError] = js.native
   /**
-    * The API mapping.
+    * Gets an API mapping.
     */
   def getApiMapping(params: GetApiMappingRequest): Request[GetApiMappingResponse, AWSError] = js.native
   def getApiMapping(
@@ -310,12 +336,12 @@ trait ApiGatewayV2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetApiMappingResponse, Unit]
   ): Request[GetApiMappingResponse, AWSError] = js.native
   /**
-    * The API mappings.
+    * Gets API mappings.
     */
   def getApiMappings(): Request[GetApiMappingsResponse, AWSError] = js.native
   def getApiMappings(callback: js.Function2[/* err */ AWSError, /* data */ GetApiMappingsResponse, Unit]): Request[GetApiMappingsResponse, AWSError] = js.native
   /**
-    * The API mappings.
+    * Gets API mappings.
     */
   def getApiMappings(params: GetApiMappingsRequest): Request[GetApiMappingsResponse, AWSError] = js.native
   def getApiMappings(
@@ -416,16 +442,16 @@ trait ApiGatewayV2 extends Service {
   /**
     * Gets an Integration.
     */
-  def getIntegration(): Request[GetIntegrationResponse, AWSError] = js.native
-  def getIntegration(callback: js.Function2[/* err */ AWSError, /* data */ GetIntegrationResponse, Unit]): Request[GetIntegrationResponse, AWSError] = js.native
+  def getIntegration(): Request[GetIntegrationResult, AWSError] = js.native
+  def getIntegration(callback: js.Function2[/* err */ AWSError, /* data */ GetIntegrationResult, Unit]): Request[GetIntegrationResult, AWSError] = js.native
   /**
     * Gets an Integration.
     */
-  def getIntegration(params: GetIntegrationRequest): Request[GetIntegrationResponse, AWSError] = js.native
+  def getIntegration(params: GetIntegrationRequest): Request[GetIntegrationResult, AWSError] = js.native
   def getIntegration(
     params: GetIntegrationRequest,
-    callback: js.Function2[/* err */ AWSError, /* data */ GetIntegrationResponse, Unit]
-  ): Request[GetIntegrationResponse, AWSError] = js.native
+    callback: js.Function2[/* err */ AWSError, /* data */ GetIntegrationResult, Unit]
+  ): Request[GetIntegrationResult, AWSError] = js.native
   /**
     * Gets an IntegrationResponses.
     */
@@ -507,16 +533,16 @@ trait ApiGatewayV2 extends Service {
   /**
     * Gets a Route.
     */
-  def getRoute(): Request[GetRouteResponse, AWSError] = js.native
-  def getRoute(callback: js.Function2[/* err */ AWSError, /* data */ GetRouteResponse, Unit]): Request[GetRouteResponse, AWSError] = js.native
+  def getRoute(): Request[GetRouteResult, AWSError] = js.native
+  def getRoute(callback: js.Function2[/* err */ AWSError, /* data */ GetRouteResult, Unit]): Request[GetRouteResult, AWSError] = js.native
   /**
     * Gets a Route.
     */
-  def getRoute(params: GetRouteRequest): Request[GetRouteResponse, AWSError] = js.native
+  def getRoute(params: GetRouteRequest): Request[GetRouteResult, AWSError] = js.native
   def getRoute(
     params: GetRouteRequest,
-    callback: js.Function2[/* err */ AWSError, /* data */ GetRouteResponse, Unit]
-  ): Request[GetRouteResponse, AWSError] = js.native
+    callback: js.Function2[/* err */ AWSError, /* data */ GetRouteResult, Unit]
+  ): Request[GetRouteResult, AWSError] = js.native
   /**
     * Gets a RouteResponse.
     */
@@ -583,12 +609,12 @@ trait ApiGatewayV2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetStagesResponse, Unit]
   ): Request[GetStagesResponse, AWSError] = js.native
   /**
-    * Gets the Tags for an API.
+    * Gets a collection of Tag resources.
     */
   def getTags(): Request[GetTagsResponse, AWSError] = js.native
   def getTags(callback: js.Function2[/* err */ AWSError, /* data */ GetTagsResponse, Unit]): Request[GetTagsResponse, AWSError] = js.native
   /**
-    * Gets the Tags for an API.
+    * Gets a collection of Tag resources.
     */
   def getTags(params: GetTagsRequest): Request[GetTagsResponse, AWSError] = js.native
   def getTags(
@@ -596,12 +622,38 @@ trait ApiGatewayV2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetTagsResponse, Unit]
   ): Request[GetTagsResponse, AWSError] = js.native
   /**
-    * Tag an APIGW resource
+    * Imports an API.
+    */
+  def importApi(): Request[ImportApiResponse, AWSError] = js.native
+  def importApi(callback: js.Function2[/* err */ AWSError, /* data */ ImportApiResponse, Unit]): Request[ImportApiResponse, AWSError] = js.native
+  /**
+    * Imports an API.
+    */
+  def importApi(params: ImportApiRequest): Request[ImportApiResponse, AWSError] = js.native
+  def importApi(
+    params: ImportApiRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ImportApiResponse, Unit]
+  ): Request[ImportApiResponse, AWSError] = js.native
+  /**
+    * Puts an Api resource.
+    */
+  def reimportApi(): Request[ReimportApiResponse, AWSError] = js.native
+  def reimportApi(callback: js.Function2[/* err */ AWSError, /* data */ ReimportApiResponse, Unit]): Request[ReimportApiResponse, AWSError] = js.native
+  /**
+    * Puts an Api resource.
+    */
+  def reimportApi(params: ReimportApiRequest): Request[ReimportApiResponse, AWSError] = js.native
+  def reimportApi(
+    params: ReimportApiRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ReimportApiResponse, Unit]
+  ): Request[ReimportApiResponse, AWSError] = js.native
+  /**
+    * Creates a new Tag resource to represent a tag.
     */
   def tagResource(): Request[TagResourceResponse, AWSError] = js.native
   def tagResource(callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]): Request[TagResourceResponse, AWSError] = js.native
   /**
-    * Tag an APIGW resource
+    * Creates a new Tag resource to represent a tag.
     */
   def tagResource(params: TagResourceRequest): Request[TagResourceResponse, AWSError] = js.native
   def tagResource(
@@ -609,12 +661,12 @@ trait ApiGatewayV2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]
   ): Request[TagResourceResponse, AWSError] = js.native
   /**
-    * Untag an APIGW resource
+    * Deletes a Tag.
     */
   def untagResource(): Request[js.Object, AWSError] = js.native
   def untagResource(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Untag an APIGW resource
+    * Deletes a Tag.
     */
   def untagResource(params: UntagResourceRequest): Request[js.Object, AWSError] = js.native
   def untagResource(
@@ -689,16 +741,16 @@ trait ApiGatewayV2 extends Service {
   /**
     * Updates an Integration.
     */
-  def updateIntegration(): Request[UpdateIntegrationResponse, AWSError] = js.native
-  def updateIntegration(callback: js.Function2[/* err */ AWSError, /* data */ UpdateIntegrationResponse, Unit]): Request[UpdateIntegrationResponse, AWSError] = js.native
+  def updateIntegration(): Request[UpdateIntegrationResult, AWSError] = js.native
+  def updateIntegration(callback: js.Function2[/* err */ AWSError, /* data */ UpdateIntegrationResult, Unit]): Request[UpdateIntegrationResult, AWSError] = js.native
   /**
     * Updates an Integration.
     */
-  def updateIntegration(params: UpdateIntegrationRequest): Request[UpdateIntegrationResponse, AWSError] = js.native
+  def updateIntegration(params: UpdateIntegrationRequest): Request[UpdateIntegrationResult, AWSError] = js.native
   def updateIntegration(
     params: UpdateIntegrationRequest,
-    callback: js.Function2[/* err */ AWSError, /* data */ UpdateIntegrationResponse, Unit]
-  ): Request[UpdateIntegrationResponse, AWSError] = js.native
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateIntegrationResult, Unit]
+  ): Request[UpdateIntegrationResult, AWSError] = js.native
   /**
     * Updates an IntegrationResponses.
     */
@@ -728,16 +780,16 @@ trait ApiGatewayV2 extends Service {
   /**
     * Updates a Route.
     */
-  def updateRoute(): Request[UpdateRouteResponse, AWSError] = js.native
-  def updateRoute(callback: js.Function2[/* err */ AWSError, /* data */ UpdateRouteResponse, Unit]): Request[UpdateRouteResponse, AWSError] = js.native
+  def updateRoute(): Request[UpdateRouteResult, AWSError] = js.native
+  def updateRoute(callback: js.Function2[/* err */ AWSError, /* data */ UpdateRouteResult, Unit]): Request[UpdateRouteResult, AWSError] = js.native
   /**
     * Updates a Route.
     */
-  def updateRoute(params: UpdateRouteRequest): Request[UpdateRouteResponse, AWSError] = js.native
+  def updateRoute(params: UpdateRouteRequest): Request[UpdateRouteResult, AWSError] = js.native
   def updateRoute(
     params: UpdateRouteRequest,
-    callback: js.Function2[/* err */ AWSError, /* data */ UpdateRouteResponse, Unit]
-  ): Request[UpdateRouteResponse, AWSError] = js.native
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateRouteResult, Unit]
+  ): Request[UpdateRouteResult, AWSError] = js.native
   /**
     * Updates a RouteResponse.
     */

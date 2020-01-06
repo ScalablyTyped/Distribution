@@ -10,9 +10,9 @@ File system module for Hexo.
 | ------------------ | :-------------: |
 | Full name          | hexo-fs |
 | Keywords           | file, file system, fs, hexo |
-| # releases         | 8 |
-| # dependents       | 136 |
-| # downloads        | 634582 |
+| # releases         | 6 |
+| # dependents       | 155 |
+| # downloads        | 772569 |
 | # stars            | 0 |
 
 ## Links

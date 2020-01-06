@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InventoryDestinationBucketEncryption extends js.Object {
   /**
     * Specifies to use server-side encryption with AWS KMS-managed keys to encrypt the inventory file (documented below).
     */
-  var sseKms: js.UndefOr[Input[InventoryDestinationBucketEncryptionSseKms]] = js.undefined
+  var sseKms: js.UndefOr[Input[InventoryDestinationBucketEncryptionSseKms]] = js.native
   /**
     * Specifies to use server-side encryption with Amazon S3-managed keys (SSE-S3) to encrypt the inventory file.
     */
-  var sseS3: js.UndefOr[Input[InventoryDestinationBucketEncryptionSseS3]] = js.undefined
+  var sseS3: js.UndefOr[Input[InventoryDestinationBucketEncryptionSseS3]] = js.native
 }
 
 object InventoryDestinationBucketEncryption {

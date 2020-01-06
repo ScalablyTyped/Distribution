@@ -32,7 +32,7 @@ trait ExecutionContext[Context] extends Assertions {
   	*/
   def `try`[Args /* <: js.Array[_] */](
     fn: js.Array[EitherMacro[Args, Context]],
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type Args is not an array type */ args: Args
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Args is not an array type */ args: Args
   ): js.Promise[js.Array[TryResult]] = js.native
   /**
   	* Requires opt-in. Attempt to run some assertions. The result must be explicitly committed or discarded or else
@@ -40,7 +40,7 @@ trait ExecutionContext[Context] extends Assertions {
   	*/
   def `try`[Args /* <: js.Array[_] */](
     fn: EitherMacro[Args, Context],
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type Args is not an array type */ args: Args
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Args is not an array type */ args: Args
   ): js.Promise[TryResult] = js.native
   /**
   	* Requires opt-in. Attempt to run some assertions. The result must be explicitly committed or discarded or else
@@ -50,7 +50,7 @@ trait ExecutionContext[Context] extends Assertions {
   def `try`[Args /* <: js.Array[_] */](
     title: String,
     fn: js.Array[EitherMacro[Args, Context]],
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type Args is not an array type */ args: Args
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Args is not an array type */ args: Args
   ): js.Promise[js.Array[TryResult]] = js.native
   /**
   	 * Requires opt-in. Attempt to run some assertions. The result must be explicitly committed or discarded or else
@@ -60,7 +60,7 @@ trait ExecutionContext[Context] extends Assertions {
   def `try`[Args /* <: js.Array[_] */](
     title: String,
     fn: EitherMacro[Args, Context],
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type Args is not an array type */ args: Args
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Args is not an array type */ args: Args
   ): js.Promise[TryResult] = js.native
 }
 

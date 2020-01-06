@@ -5,27 +5,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UserGroupArgs extends js.Object {
   /**
     * The description of the user group.
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the user group.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * The precedence of the user group.
     */
-  val precedence: js.UndefOr[Input[Double]] = js.undefined
+  val precedence: js.UndefOr[Input[Double]] = js.native
   /**
     * The ARN of the IAM role to be associated with the user group.
     */
-  val roleArn: js.UndefOr[Input[String]] = js.undefined
+  val roleArn: js.UndefOr[Input[String]] = js.native
   /**
     * The user pool ID.
     */
-  val userPoolId: Input[String]
+  val userPoolId: Input[String] = js.native
 }
 
 object UserGroupArgs {

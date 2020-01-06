@@ -11,8 +11,8 @@ The Lodash method `_.isEqual` exported as a module.
 | Full name          | lodash.isequal |
 | Keywords           | lodash-modularized, isequal |
 | # releases         | 0 |
-| # dependents       | 1005 |
-| # downloads        | 102419833 |
+| # dependents       | 1344 |
+| # downloads        | 152075201 |
 | # stars            | 4 |
 
 ## Links

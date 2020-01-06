@@ -4,17 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TimeSeriesServiceStatistics extends js.Object {
-  var EdgeSummaryStatistics: js.UndefOr[EdgeStatistics] = js.undefined
+  var EdgeSummaryStatistics: js.UndefOr[EdgeStatistics] = js.native
   /**
     * The response time histogram for the selected entities.
     */
-  var ResponseTimeHistogram: js.UndefOr[Histogram] = js.undefined
-  var ServiceSummaryStatistics: js.UndefOr[ServiceStatistics] = js.undefined
+  var ResponseTimeHistogram: js.UndefOr[Histogram] = js.native
+  var ServiceSummaryStatistics: js.UndefOr[ServiceStatistics] = js.native
   /**
     * Timestamp of the window for which statistics are aggregated.
     */
-  var Timestamp: js.UndefOr[typings.awsDashSdk.clientsXrayMod.Timestamp] = js.undefined
+  var Timestamp: js.UndefOr[typings.awsDashSdk.clientsXrayMod.Timestamp] = js.native
 }
 
 object TimeSeriesServiceStatistics {
@@ -26,10 +27,10 @@ object TimeSeriesServiceStatistics {
     Timestamp: Timestamp = null
   ): TimeSeriesServiceStatistics = {
     val __obj = js.Dynamic.literal()
-    if (EdgeSummaryStatistics != null) __obj.updateDynamic("EdgeSummaryStatistics")(EdgeSummaryStatistics)
-    if (ResponseTimeHistogram != null) __obj.updateDynamic("ResponseTimeHistogram")(ResponseTimeHistogram)
-    if (ServiceSummaryStatistics != null) __obj.updateDynamic("ServiceSummaryStatistics")(ServiceSummaryStatistics)
-    if (Timestamp != null) __obj.updateDynamic("Timestamp")(Timestamp)
+    if (EdgeSummaryStatistics != null) __obj.updateDynamic("EdgeSummaryStatistics")(EdgeSummaryStatistics.asInstanceOf[js.Any])
+    if (ResponseTimeHistogram != null) __obj.updateDynamic("ResponseTimeHistogram")(ResponseTimeHistogram.asInstanceOf[js.Any])
+    if (ServiceSummaryStatistics != null) __obj.updateDynamic("ServiceSummaryStatistics")(ServiceSummaryStatistics.asInstanceOf[js.Any])
+    if (Timestamp != null) __obj.updateDynamic("Timestamp")(Timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeSeriesServiceStatistics]
   }
 }

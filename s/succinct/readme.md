@@ -9,9 +9,9 @@ Typings are for version v1.1.0
 | ------------------ | :-------------: |
 | Full name          | succinct |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 159 |
+| # downloads        | 162 |
 | # stars            | 0 |
 
 ## Links

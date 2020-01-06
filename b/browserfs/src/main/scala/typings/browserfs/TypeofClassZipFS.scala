@@ -17,14 +17,14 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TypeofClassZipFS
-  extends Instantiable3[
+  extends Instantiable1[(/* input */ Buffer) | (/* input */ ZipTOC), default]
+     with Instantiable2[(/* input */ Buffer) | (/* input */ ZipTOC), /* name */ String, default]
+     with Instantiable3[
       (/* input */ Buffer) | (/* input */ ZipTOC), 
       /* name */ String, 
       /* deprecateMsg */ Boolean, 
       default
-    ]
-     with Instantiable1[(/* input */ Buffer) | (/* input */ ZipTOC), default]
-     with Instantiable2[(/* input */ Buffer) | (/* input */ ZipTOC), /* name */ String, default] {
+    ] {
   val Name: String = js.native
   val Options: FileSystemOptions = js.native
   /**

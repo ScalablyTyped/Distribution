@@ -10,9 +10,9 @@ Microscopic & functional event emitter in ~350 bytes, extensible through plugins
 | ------------------ | :-------------: |
 | Full name          | dush |
 | Keywords           | browser, browserify, cjs, client, commonjs, compatible, emit, emitter, event, event-emitter, events, functional, lightweight, micro, microscopic, mini, minimal, nodejs, pubsub, small, subscribe, tiny, webpack |
-| # releases         | 2 |
-| # dependents       | 10 |
-| # downloads        | 8850 |
+| # releases         | 1 |
+| # dependents       | 8 |
+| # downloads        | 13059 |
 | # stars            | 0 |
 
 ## Links

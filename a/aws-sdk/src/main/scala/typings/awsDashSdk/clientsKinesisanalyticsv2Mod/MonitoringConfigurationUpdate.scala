@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MonitoringConfigurationUpdate extends js.Object {
   /**
-    * Describes updates to whether to use the default CloudWatch logging configuration for an application.
+    * Describes updates to whether to use the default CloudWatch logging configuration for an application. You must set this property to CUSTOM in order to set the LogLevel or MetricsLevel parameters.
     */
-  var ConfigurationTypeUpdate: js.UndefOr[ConfigurationType] = js.undefined
+  var ConfigurationTypeUpdate: js.UndefOr[ConfigurationType] = js.native
   /**
     * Describes updates to the verbosity of the CloudWatch Logs for an application.
     */
-  var LogLevelUpdate: js.UndefOr[LogLevel] = js.undefined
+  var LogLevelUpdate: js.UndefOr[LogLevel] = js.native
   /**
     * Describes updates to the granularity of the CloudWatch Logs for an application.
     */
-  var MetricsLevelUpdate: js.UndefOr[MetricsLevel] = js.undefined
+  var MetricsLevelUpdate: js.UndefOr[MetricsLevel] = js.native
 }
 
 object MonitoringConfigurationUpdate {

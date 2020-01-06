@@ -10,8 +10,8 @@ Run Mocha tests
 | Full name          | gulp-mocha |
 | Keywords           | gulpplugin, mocha, test, testing, unit, framework, runner, tdd, bdd, qunit, spec, tap |
 | # releases         | 5 |
-| # dependents       | 294 |
-| # downloads        | 4861737 |
+| # dependents       | 307 |
+| # downloads        | 5786798 |
 | # stars            | 49 |
 
 ## Links

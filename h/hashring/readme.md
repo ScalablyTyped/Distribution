@@ -11,8 +11,8 @@ A consistent hashring compatible with ketama hashing and python's hash_ring
 | Full name          | hashring |
 | Keywords           | hashring, hash ring, hashing, hashvalue, ketama, hash_ring, hash, consistent hashing, libketama |
 | # releases         | 0 |
-| # dependents       | 65 |
-| # downloads        | 2820893 |
+| # dependents       | 68 |
+| # downloads        | 3191859 |
 | # stars            | 4 |
 
 ## Links

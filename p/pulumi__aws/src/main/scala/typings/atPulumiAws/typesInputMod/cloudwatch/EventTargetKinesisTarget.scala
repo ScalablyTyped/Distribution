@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EventTargetKinesisTarget extends js.Object {
   /**
     * The JSON path to be extracted from the event and used as the partition key.
     */
-  var partitionKeyPath: js.UndefOr[Input[String]] = js.undefined
+  var partitionKeyPath: js.UndefOr[Input[String]] = js.native
 }
 
 object EventTargetKinesisTarget {

@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CreateAddressBookRequest extends js.Object {
   /**
     * A unique, user-specified identifier for the request that ensures idempotency.
     */
-  var ClientRequestToken: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.ClientRequestToken] = js.undefined
+  var ClientRequestToken: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.ClientRequestToken] = js.native
   /**
     * The description of the address book.
     */
-  var Description: js.UndefOr[AddressBookDescription] = js.undefined
+  var Description: js.UndefOr[AddressBookDescription] = js.native
   /**
     * The name of the address book.
     */
-  var Name: AddressBookName
+  var Name: AddressBookName = js.native
 }
 
 object CreateAddressBookRequest {
@@ -26,9 +27,9 @@ object CreateAddressBookRequest {
     ClientRequestToken: ClientRequestToken = null,
     Description: AddressBookDescription = null
   ): CreateAddressBookRequest = {
-    val __obj = js.Dynamic.literal(Name = Name)
-    if (ClientRequestToken != null) __obj.updateDynamic("ClientRequestToken")(ClientRequestToken)
-    if (Description != null) __obj.updateDynamic("Description")(Description)
+    val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
+    if (ClientRequestToken != null) __obj.updateDynamic("ClientRequestToken")(ClientRequestToken.asInstanceOf[js.Any])
+    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAddressBookRequest]
   }
 }

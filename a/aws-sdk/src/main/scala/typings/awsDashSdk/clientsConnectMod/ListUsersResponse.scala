@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ListUsersResponse extends js.Object {
   /**
-    * A string returned in the response. Use the value returned in the response as the value of the NextToken in a subsequent request to retrieve the next set of results.
+    * If there are additional results, this is the token for the next set of results.
     */
-  var NextToken: js.UndefOr[typings.awsDashSdk.clientsConnectMod.NextToken] = js.undefined
+  var NextToken: js.UndefOr[typings.awsDashSdk.clientsConnectMod.NextToken] = js.native
   /**
-    * An array of UserSummary objects that contain information about the users in your instance.
+    * Information about the users.
     */
-  var UserSummaryList: js.UndefOr[typings.awsDashSdk.clientsConnectMod.UserSummaryList] = js.undefined
+  var UserSummaryList: js.UndefOr[typings.awsDashSdk.clientsConnectMod.UserSummaryList] = js.native
 }
 
 object ListUsersResponse {
   @scala.inline
   def apply(NextToken: NextToken = null, UserSummaryList: UserSummaryList = null): ListUsersResponse = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
-    if (UserSummaryList != null) __obj.updateDynamic("UserSummaryList")(UserSummaryList)
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
+    if (UserSummaryList != null) __obj.updateDynamic("UserSummaryList")(UserSummaryList.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListUsersResponse]
   }
 }

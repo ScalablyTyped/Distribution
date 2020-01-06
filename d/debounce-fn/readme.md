@@ -10,9 +10,9 @@ Debounce a function
 | ------------------ | :-------------: |
 | Full name          | debounce-fn |
 | Keywords           | debounce, function, debouncer, fn, func, throttle, delay, invoked |
-| # releases         | 1 |
-| # dependents       | 4 |
-| # downloads        | 20214 |
+| # releases         | 3 |
+| # dependents       | 9 |
+| # downloads        | 281619 |
 | # stars            | 0 |
 
 ## Links

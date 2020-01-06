@@ -1,7 +1,5 @@
 package typings.leafletDashEditable.leafletMod
 
-import typings.geojson.geojsonMod.LineString
-import typings.geojson.geojsonMod.MultiLineString
 import typings.leaflet.leafletMod.LayerGroup
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,17 +18,13 @@ trait EditOptions extends js.Object {
     */
   var editLayer: js.UndefOr[
     LayerGroup[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ILayer */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ILayer */ _
     ]
   ] = js.undefined
   /**
     * Default layer used to store drawn features (marker, polyline…).
     */
-  var featuresLayer: js.UndefOr[
-    LayerGroup[
-      (typings.leaflet.leafletMod.Polyline[LineString | MultiLineString, _]) | typings.leaflet.leafletMod.Polygon[_] | typings.leaflet.leafletMod.Marker[_]
-    ]
-  ] = js.undefined
+  var featuresLayer: js.UndefOr[LayerGroup[Polyline | Polygon | Marker]] = js.undefined
   /**
     * Options to be passed to the line guides.
     */
@@ -78,11 +72,9 @@ object EditOptions {
   def apply(
     drawingCSSClass: String = null,
     editLayer: LayerGroup[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ILayer */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ILayer */ _
     ] = null,
-    featuresLayer: LayerGroup[
-      (typings.leaflet.leafletMod.Polyline[LineString | MultiLineString, _]) | typings.leaflet.leafletMod.Polygon[_] | typings.leaflet.leafletMod.Marker[_]
-    ] = null,
+    featuresLayer: LayerGroup[Polyline | Polygon | Marker] = null,
     lineGuideOptions: js.Object = null,
     markerClass: js.Object = null,
     markerEditorClass: js.Object = null,
@@ -95,19 +87,19 @@ object EditOptions {
     vertexMarkerClass: js.Object = null
   ): EditOptions = {
     val __obj = js.Dynamic.literal()
-    if (drawingCSSClass != null) __obj.updateDynamic("drawingCSSClass")(drawingCSSClass)
-    if (editLayer != null) __obj.updateDynamic("editLayer")(editLayer)
-    if (featuresLayer != null) __obj.updateDynamic("featuresLayer")(featuresLayer)
-    if (lineGuideOptions != null) __obj.updateDynamic("lineGuideOptions")(lineGuideOptions)
-    if (markerClass != null) __obj.updateDynamic("markerClass")(markerClass)
-    if (markerEditorClass != null) __obj.updateDynamic("markerEditorClass")(markerEditorClass)
-    if (middleMarkerClass != null) __obj.updateDynamic("middleMarkerClass")(middleMarkerClass)
-    if (polygonClass != null) __obj.updateDynamic("polygonClass")(polygonClass)
-    if (polygonEditorClass != null) __obj.updateDynamic("polygonEditorClass")(polygonEditorClass)
-    if (polylineClass != null) __obj.updateDynamic("polylineClass")(polylineClass)
-    if (polylineEditorClass != null) __obj.updateDynamic("polylineEditorClass")(polylineEditorClass)
-    if (!js.isUndefined(skipMiddleMarkers)) __obj.updateDynamic("skipMiddleMarkers")(skipMiddleMarkers)
-    if (vertexMarkerClass != null) __obj.updateDynamic("vertexMarkerClass")(vertexMarkerClass)
+    if (drawingCSSClass != null) __obj.updateDynamic("drawingCSSClass")(drawingCSSClass.asInstanceOf[js.Any])
+    if (editLayer != null) __obj.updateDynamic("editLayer")(editLayer.asInstanceOf[js.Any])
+    if (featuresLayer != null) __obj.updateDynamic("featuresLayer")(featuresLayer.asInstanceOf[js.Any])
+    if (lineGuideOptions != null) __obj.updateDynamic("lineGuideOptions")(lineGuideOptions.asInstanceOf[js.Any])
+    if (markerClass != null) __obj.updateDynamic("markerClass")(markerClass.asInstanceOf[js.Any])
+    if (markerEditorClass != null) __obj.updateDynamic("markerEditorClass")(markerEditorClass.asInstanceOf[js.Any])
+    if (middleMarkerClass != null) __obj.updateDynamic("middleMarkerClass")(middleMarkerClass.asInstanceOf[js.Any])
+    if (polygonClass != null) __obj.updateDynamic("polygonClass")(polygonClass.asInstanceOf[js.Any])
+    if (polygonEditorClass != null) __obj.updateDynamic("polygonEditorClass")(polygonEditorClass.asInstanceOf[js.Any])
+    if (polylineClass != null) __obj.updateDynamic("polylineClass")(polylineClass.asInstanceOf[js.Any])
+    if (polylineEditorClass != null) __obj.updateDynamic("polylineEditorClass")(polylineEditorClass.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipMiddleMarkers)) __obj.updateDynamic("skipMiddleMarkers")(skipMiddleMarkers.asInstanceOf[js.Any])
+    if (vertexMarkerClass != null) __obj.updateDynamic("vertexMarkerClass")(vertexMarkerClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditOptions]
   }
 }

@@ -10,143 +10,144 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetInstanceResult extends js.Object {
   /**
     * The ID of the AMI used to launch the instance.
     */
-  val ami: String
+  val ami: String = js.native
   /**
     * The ARN of the instance.
     */
-  val arn: String
+  val arn: String = js.native
   /**
     * Whether or not the Instance is associated with a public IP address or not (Boolean).
     */
-  val associatePublicIpAddress: Boolean
+  val associatePublicIpAddress: Boolean = js.native
   /**
     * The availability zone of the Instance.
     */
-  val availabilityZone: String
+  val availabilityZone: String = js.native
   /**
     * The credit specification of the Instance.
     */
-  val creditSpecifications: js.Array[GetInstanceCreditSpecification]
-  val disableApiTermination: Boolean
+  val creditSpecifications: js.Array[GetInstanceCreditSpecification] = js.native
+  val disableApiTermination: Boolean = js.native
   /**
     * The EBS block device mappings of the Instance.
     */
-  val ebsBlockDevices: js.Array[GetInstanceEbsBlockDevice]
+  val ebsBlockDevices: js.Array[GetInstanceEbsBlockDevice] = js.native
   /**
     * Whether the Instance is EBS optimized or not (Boolean).
     */
-  val ebsOptimized: Boolean
+  val ebsOptimized: Boolean = js.native
   /**
     * The ephemeral block device mappings of the Instance.
     */
-  val ephemeralBlockDevices: js.Array[GetInstanceEphemeralBlockDevice]
-  val filters: js.UndefOr[js.Array[GetInstanceFilter]] = js.undefined
-  val getPasswordData: js.UndefOr[Boolean] = js.undefined
-  val getUserData: js.UndefOr[Boolean] = js.undefined
+  val ephemeralBlockDevices: js.Array[GetInstanceEphemeralBlockDevice] = js.native
+  val filters: js.UndefOr[js.Array[GetInstanceFilter]] = js.native
+  val getPasswordData: js.UndefOr[Boolean] = js.native
+  val getUserData: js.UndefOr[Boolean] = js.native
   /**
     * The Id of the dedicated host the instance will be assigned to.
     */
-  val hostId: String
+  val hostId: String = js.native
   /**
     * The name of the instance profile associated with the Instance.
     */
-  val iamInstanceProfile: String
+  val iamInstanceProfile: String = js.native
   /**
     * id is the provider-assigned unique ID for this managed resource.
     */
-  val id: String
-  val instanceId: js.UndefOr[String] = js.undefined
+  val id: String = js.native
+  val instanceId: js.UndefOr[String] = js.native
   /**
     * The state of the instance. One of: `pending`, `running`, `shutting-down`, `terminated`, `stopping`, `stopped`. See [Instance Lifecycle](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-lifecycle.html) for more information.
     */
-  val instanceState: String
-  val instanceTags: StringDictionary[js.Any]
+  val instanceState: String = js.native
+  val instanceTags: StringDictionary[js.Any] = js.native
   /**
     * The type of the Instance.
     */
-  val instanceType: String
+  val instanceType: String = js.native
   /**
     * The key name of the Instance.
     */
-  val keyName: String
+  val keyName: String = js.native
   /**
     * Whether detailed monitoring is enabled or disabled for the Instance (Boolean).
     */
-  val monitoring: Boolean
+  val monitoring: Boolean = js.native
   /**
     * The ID of the network interface that was created with the Instance.
     */
-  val networkInterfaceId: String
+  val networkInterfaceId: String = js.native
   /**
     * Base-64 encoded encrypted password data for the instance.
     * Useful for getting the administrator password for instances running Microsoft Windows.
     * This attribute is only exported if `getPasswordData` is true.
     * See [GetPasswordData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetPasswordData.html) for more information.
     */
-  val passwordData: String
+  val passwordData: String = js.native
   /**
     * The placement group of the Instance.
     */
-  val placementGroup: String
+  val placementGroup: String = js.native
   /**
     * The private DNS name assigned to the Instance. Can only be
     * used inside the Amazon EC2, and only available if you've enabled DNS hostnames
     * for your VPC.
     */
-  val privateDns: String
+  val privateDns: String = js.native
   /**
     * The private IP address assigned to the Instance.
     */
-  val privateIp: String
+  val privateIp: String = js.native
   /**
     * The public DNS name assigned to the Instance. For EC2-VPC, this
     * is only available if you've enabled DNS hostnames for your VPC.
     */
-  val publicDns: String
+  val publicDns: String = js.native
   /**
     * The public IP address assigned to the Instance, if applicable. **NOTE**: If you are using an [`aws.ec2.Eip`](https://www.terraform.io/docs/providers/aws/r/eip.html) with your instance, you should refer to the EIP's address directly and not use `publicIp`, as this field will change after the EIP is attached.
     */
-  val publicIp: String
+  val publicIp: String = js.native
   /**
     * The root block device mappings of the Instance
     */
-  val rootBlockDevices: js.Array[GetInstanceRootBlockDevice]
+  val rootBlockDevices: js.Array[GetInstanceRootBlockDevice] = js.native
   /**
     * The associated security groups.
     */
-  val securityGroups: js.Array[String]
+  val securityGroups: js.Array[String] = js.native
   /**
     * Whether the network interface performs source/destination checking (Boolean).
     */
-  val sourceDestCheck: Boolean
+  val sourceDestCheck: Boolean = js.native
   /**
     * The VPC subnet ID.
     */
-  val subnetId: String
+  val subnetId: String = js.native
   /**
     * A mapping of tags assigned to the Instance.
     */
-  val tags: StringDictionary[js.Any]
+  val tags: StringDictionary[js.Any] = js.native
   /**
     * The tenancy of the instance: `dedicated`, `default`, `host`.
     */
-  val tenancy: String
+  val tenancy: String = js.native
   /**
     * SHA-1 hash of User Data supplied to the Instance.
     */
-  val userData: String
+  val userData: String = js.native
   /**
     * Base64 encoded contents of User Data supplied to the Instance. Valid UTF-8 contents can be decoded with the [`base64decode` function](https://www.terraform.io/docs/configuration/functions/base64decode.html). This attribute is only exported if `getUserData` is true.
     */
-  val userDataBase64: String
+  val userDataBase64: String = js.native
   /**
     * The associated security groups in a non-default VPC.
     */
-  val vpcSecurityGroupIds: js.Array[String]
+  val vpcSecurityGroupIds: js.Array[String] = js.native
 }
 
 object GetInstanceResult {
@@ -190,11 +191,11 @@ object GetInstanceResult {
     getUserData: js.UndefOr[Boolean] = js.undefined,
     instanceId: String = null
   ): GetInstanceResult = {
-    val __obj = js.Dynamic.literal(ami = ami, arn = arn, associatePublicIpAddress = associatePublicIpAddress, availabilityZone = availabilityZone, creditSpecifications = creditSpecifications, disableApiTermination = disableApiTermination, ebsBlockDevices = ebsBlockDevices, ebsOptimized = ebsOptimized, ephemeralBlockDevices = ephemeralBlockDevices, hostId = hostId, iamInstanceProfile = iamInstanceProfile, id = id, instanceState = instanceState, instanceTags = instanceTags, instanceType = instanceType, keyName = keyName, monitoring = monitoring, networkInterfaceId = networkInterfaceId, passwordData = passwordData, placementGroup = placementGroup, privateDns = privateDns, privateIp = privateIp, publicDns = publicDns, publicIp = publicIp, rootBlockDevices = rootBlockDevices, securityGroups = securityGroups, sourceDestCheck = sourceDestCheck, subnetId = subnetId, tags = tags, tenancy = tenancy, userData = userData, userDataBase64 = userDataBase64, vpcSecurityGroupIds = vpcSecurityGroupIds)
-    if (filters != null) __obj.updateDynamic("filters")(filters)
-    if (!js.isUndefined(getPasswordData)) __obj.updateDynamic("getPasswordData")(getPasswordData)
-    if (!js.isUndefined(getUserData)) __obj.updateDynamic("getUserData")(getUserData)
-    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId)
+    val __obj = js.Dynamic.literal(ami = ami.asInstanceOf[js.Any], arn = arn.asInstanceOf[js.Any], associatePublicIpAddress = associatePublicIpAddress.asInstanceOf[js.Any], availabilityZone = availabilityZone.asInstanceOf[js.Any], creditSpecifications = creditSpecifications.asInstanceOf[js.Any], disableApiTermination = disableApiTermination.asInstanceOf[js.Any], ebsBlockDevices = ebsBlockDevices.asInstanceOf[js.Any], ebsOptimized = ebsOptimized.asInstanceOf[js.Any], ephemeralBlockDevices = ephemeralBlockDevices.asInstanceOf[js.Any], hostId = hostId.asInstanceOf[js.Any], iamInstanceProfile = iamInstanceProfile.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], instanceState = instanceState.asInstanceOf[js.Any], instanceTags = instanceTags.asInstanceOf[js.Any], instanceType = instanceType.asInstanceOf[js.Any], keyName = keyName.asInstanceOf[js.Any], monitoring = monitoring.asInstanceOf[js.Any], networkInterfaceId = networkInterfaceId.asInstanceOf[js.Any], passwordData = passwordData.asInstanceOf[js.Any], placementGroup = placementGroup.asInstanceOf[js.Any], privateDns = privateDns.asInstanceOf[js.Any], privateIp = privateIp.asInstanceOf[js.Any], publicDns = publicDns.asInstanceOf[js.Any], publicIp = publicIp.asInstanceOf[js.Any], rootBlockDevices = rootBlockDevices.asInstanceOf[js.Any], securityGroups = securityGroups.asInstanceOf[js.Any], sourceDestCheck = sourceDestCheck.asInstanceOf[js.Any], subnetId = subnetId.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], tenancy = tenancy.asInstanceOf[js.Any], userData = userData.asInstanceOf[js.Any], userDataBase64 = userDataBase64.asInstanceOf[js.Any], vpcSecurityGroupIds = vpcSecurityGroupIds.asInstanceOf[js.Any])
+    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
+    if (!js.isUndefined(getPasswordData)) __obj.updateDynamic("getPasswordData")(getPasswordData.asInstanceOf[js.Any])
+    if (!js.isUndefined(getUserData)) __obj.updateDynamic("getUserData")(getUserData.asInstanceOf[js.Any])
+    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetInstanceResult]
   }
 }

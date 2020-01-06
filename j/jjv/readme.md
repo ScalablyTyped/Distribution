@@ -11,8 +11,8 @@ A simple and extensible json-schema validator written in javascript. JJV runs in
 | Full name          | jjv |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 34 |
-| # downloads        | 421781 |
+| # dependents       | 32 |
+| # downloads        | 407039 |
 | # stars            | 3 |
 
 ## Links

@@ -10,9 +10,9 @@ Get a formatted timestamp.
 | ------------------ | :-------------: |
 | Full name          | time-stamp |
 | Keywords           | console, date, format, formatting, log, pretty, stamp, terminal, time, time-stamp |
-| # releases         | 6 |
-| # dependents       | 109 |
-| # downloads        | 175568000 |
+| # releases         | 4 |
+| # dependents       | 123 |
+| # downloads        | 167620370 |
 | # stars            | 15 |
 
 ## Links

@@ -4,6 +4,7 @@ import typings.node.Buffer
 import typings.node.fsMod.WriteStream
 import typings.nodegit.oidMod.Oid
 import typings.nodegit.repositoryMod.Repository
+import typings.nodegit.wrapperMod.Wrapper
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,7 +21,7 @@ object blobMod extends js.Object {
     def id(): Oid = js.native
     def isBinary(): Double = js.native
     def owner(): Repository = js.native
-    def rawcontent(): Buffer = js.native
+    def rawcontent(): Wrapper = js.native
     def rawsize(): Double = js.native
   }
   

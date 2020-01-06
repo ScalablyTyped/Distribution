@@ -10,9 +10,9 @@ Rich Text Editor Based On Draft.js
 | ------------------ | :-------------: |
 | Full name          | braft-editor |
 | Keywords           | braft, draft, draft-js, rich, text, editor, rich-text-editor, wysiwyg |
-| # releases         | 141 |
-| # dependents       | 23 |
-| # downloads        | 68586 |
+| # releases         | 118 |
+| # dependents       | 50 |
+| # downloads        | 131446 |
 | # stars            | 0 |
 
 ## Links

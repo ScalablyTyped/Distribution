@@ -10,9 +10,9 @@ Ultra fast and compact implementation of deep equal without any production depen
 | ------------------ | :-------------: |
 | Full name          | nano-equal |
 | Keywords           | equal, deep equal |
-| # releases         | 4 |
+| # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 59746 |
+| # downloads        | 82404 |
 | # stars            | 0 |
 
 ## Links

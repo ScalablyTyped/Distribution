@@ -44,12 +44,9 @@ abstract class XmlNamedNodeMap () extends Array[IXmlNode] {
     */
   def getNamedItemNS(namespaceUri: js.Any, name: String): IXmlNode = js.native
   def indexOf(value: IXmlNode, extra: js.Any*): Anon_Index = js.native
-  /**
-    * Returns the index of a specified item in the vector view.
-    * @param value The item to find in the vector view.
-    */
+  /* hack */
   @JSName("indexOf")
-  def indexOf_Anon_Index(value: IXmlNode): Anon_Index = js.native
+  def indexOf_Double(searchElement: IXmlNode): Double = js.native
   /**
     * Allows random access to individual nodes within the collection.
     * @param index The index of the item within the collection. The first item is zero.

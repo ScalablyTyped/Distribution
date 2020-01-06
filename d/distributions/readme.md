@@ -11,8 +11,8 @@ A collection of probability distribution functions
 | Full name          | distributions |
 | Keywords           | distribution, normal, studentt, uniform |
 | # releases         | 3 |
-| # dependents       | 12 |
-| # downloads        | 173972 |
+| # dependents       | 15 |
+| # downloads        | 260722 |
 | # stars            | 3 |
 
 ## Links

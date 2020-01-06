@@ -12,7 +12,7 @@ XMPP identifiers (JID) for JavaScript
 | Keywords           | XMPP, JID |
 | # releases         | 6 |
 | # dependents       | 13 |
-| # downloads        | 780750 |
+| # downloads        | 517695 |
 | # stars            | 0 |
 
 ## Links

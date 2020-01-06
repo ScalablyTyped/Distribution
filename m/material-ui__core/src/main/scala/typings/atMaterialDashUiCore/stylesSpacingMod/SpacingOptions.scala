@@ -5,8 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/spacing.Spacing> */
+@js.native
 trait SpacingOptions extends js.Object {
-  var unit: js.UndefOr[Double] = js.undefined
+  var unit: js.UndefOr[Double] = js.native
 }
 
 object SpacingOptions {

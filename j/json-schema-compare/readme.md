@@ -10,9 +10,9 @@ Compare json schemas smarter.
 | ------------------ | :-------------: |
 | Full name          | json-schema-compare |
 | Keywords           | json, schema, jsonschema, json-schema, comparison |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 171339 |
+| # downloads        | 208103 |
 | # stars            | 0 |
 
 ## Links

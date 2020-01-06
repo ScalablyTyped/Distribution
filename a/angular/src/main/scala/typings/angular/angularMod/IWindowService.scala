@@ -24,7 +24,9 @@ trait IWindowService
   /* InferMemberOverrides */
   override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
   /* InferMemberOverrides */
+  /* InferMemberOverrides */
   override def atob(data: String): String = js.native
+  /* InferMemberOverrides */
   /* InferMemberOverrides */
   override def btoa(data: String): String = js.native
   /* InferMemberOverrides */

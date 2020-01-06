@@ -18,6 +18,13 @@ package object clientsTransferMod {
   */
   type EndpointType = _EndpointType | String
   type HomeDirectory = String
+  type HomeDirectoryMappings = js.Array[HomeDirectoryMapEntry]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.PATH
+    - typings.awsDashSdk.awsDashSdkStrings.LOGICAL
+    - java.lang.String
+  */
+  type HomeDirectoryType = _HomeDirectoryType | String
   type HostKey = String
   type HostKeyFingerprint = String
   /* Rewritten from type alias, can be one of: 
@@ -28,6 +35,8 @@ package object clientsTransferMod {
   type IdentityProviderType = _IdentityProviderType | String
   type ListedServers = js.Array[ListedServer]
   type ListedUsers = js.Array[ListedUser]
+  type MapEntry = String
+  type MapTarget = String
   type MaxResults = Double
   type Message = String
   type NextToken = String
@@ -62,7 +71,7 @@ package object clientsTransferMod {
   type VpcEndpointId = String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2018-11-05`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

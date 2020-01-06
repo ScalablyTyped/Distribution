@@ -34,12 +34,12 @@ trait Runner extends ExecFunction {
   var spawn_Original: Fn_ArgsCommand = js.native
   @JSName("sync")
   var sync_Original: Fn_Command = js.native
-  def execSync(command: String): Buffer = js.native
+  def execSync(command: String): String = js.native
   def execSync(command: String, options: ExecSyncOptions): Buffer = js.native
   def execSync(command: String, options: ExecSyncOptionsWithBufferEncoding): Buffer = js.native
   def execSync(command: String, options: ExecSyncOptionsWithStringEncoding): String = js.native
   @JSName("execSync")
-  def execSync_String(command: String): String = js.native
+  def execSync_Buffer(command: String): Buffer = js.native
   def spawn(command: String): ChildProcessWithoutNullStreams = js.native
   def spawn(command: String, args: js.Array[String]): ChildProcessWithoutNullStreams = js.native
   def spawn(command: String, args: js.Array[String], options: SpawnOptions): ChildProcess = js.native
@@ -63,11 +63,11 @@ trait Runner extends ExecFunction {
   def spawnSync(command: String, options: SpawnSyncOptions): SpawnSyncReturns[Buffer] = js.native
   def spawnSync(command: String, options: SpawnSyncOptionsWithBufferEncoding): SpawnSyncReturns[Buffer] = js.native
   def spawnSync(command: String, options: SpawnSyncOptionsWithStringEncoding): SpawnSyncReturns[String] = js.native
-  def sync(command: String): Buffer = js.native
+  def sync(command: String): String = js.native
   def sync(command: String, options: ExecSyncOptions): Buffer = js.native
   def sync(command: String, options: ExecSyncOptionsWithBufferEncoding): Buffer = js.native
   def sync(command: String, options: ExecSyncOptionsWithStringEncoding): String = js.native
   @JSName("sync")
-  def sync_String(command: String): String = js.native
+  def sync_Buffer(command: String): Buffer = js.native
 }
 

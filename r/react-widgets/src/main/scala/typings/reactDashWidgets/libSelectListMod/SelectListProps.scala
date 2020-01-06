@@ -1,8 +1,5 @@
 package typings.reactDashWidgets.libSelectListMod
 
-import typings.react.reactMod.Key
-import typings.react.reactMod.LegacyRef
-import typings.react.reactMod.ReactNode
 import typings.react.reactMod.ReactType
 import typings.reactDashWidgets.libCommonPropsMod.AutoFocus
 import typings.reactDashWidgets.libCommonPropsMod.ReactWidgetsCommonProps
@@ -13,7 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SelectListProps
-  extends ReactWidgetsCommonProps[SelectListClass]
+  extends ReactWidgetsCommonProps
      with AutoFocus {
   /**
     * Mark whether the widget is in a busy or loading state. If true the widget will display a
@@ -128,7 +125,6 @@ object SelectListProps {
   def apply(
     autoFocus: js.UndefOr[Boolean] = js.undefined,
     busy: js.UndefOr[Boolean] = js.undefined,
-    children: ReactNode = null,
     data: js.Array[_] = null,
     defaultValue: js.Any | js.Array[_] = null,
     delay: Int | Double = null,
@@ -138,7 +134,6 @@ object SelectListProps {
     id: String = null,
     isRtl: js.UndefOr[Boolean] = js.undefined,
     itemComponent: ReactType[_] = null,
-    key: Key = null,
     listComponent: ReactType[_] | String = null,
     listProps: js.Object = null,
     messages: SelectListMessages = null,
@@ -149,7 +144,6 @@ object SelectListProps {
     onKeyPress: /* event */ KeyboardEvent => Unit = null,
     onMove: (/* list */ HTMLElement, /* focusedNode */ HTMLElement, /* focusedItem */ js.Any) => Unit = null,
     readOnly: Boolean | js.Array[_] = null,
-    ref: LegacyRef[SelectListClass] = null,
     tabIndex: Int | Double = null,
     textField: String | (js.Function1[/* dataItem */ js.Any, String]) = null,
     value: js.Any | js.Array[_] = null,
@@ -158,7 +152,6 @@ object SelectListProps {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
     if (!js.isUndefined(busy)) __obj.updateDynamic("busy")(busy.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
@@ -168,7 +161,6 @@ object SelectListProps {
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (!js.isUndefined(isRtl)) __obj.updateDynamic("isRtl")(isRtl.asInstanceOf[js.Any])
     if (itemComponent != null) __obj.updateDynamic("itemComponent")(itemComponent.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (listComponent != null) __obj.updateDynamic("listComponent")(listComponent.asInstanceOf[js.Any])
     if (listProps != null) __obj.updateDynamic("listProps")(listProps.asInstanceOf[js.Any])
     if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
@@ -179,7 +171,6 @@ object SelectListProps {
     if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction1(onKeyPress))
     if (onMove != null) __obj.updateDynamic("onMove")(js.Any.fromFunction3(onMove))
     if (readOnly != null) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (textField != null) __obj.updateDynamic("textField")(textField.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])

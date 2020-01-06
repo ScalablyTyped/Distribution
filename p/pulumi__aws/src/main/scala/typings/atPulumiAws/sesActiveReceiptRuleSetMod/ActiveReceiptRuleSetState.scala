@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ActiveReceiptRuleSetState extends js.Object {
   /**
     * The name of the rule set
     */
-  val ruleSetName: js.UndefOr[Input[String]] = js.undefined
+  val ruleSetName: js.UndefOr[Input[String]] = js.native
 }
 
 object ActiveReceiptRuleSetState {

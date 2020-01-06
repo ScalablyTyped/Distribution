@@ -7,8 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Tablelvl2ContextProps extends js.Object {
-  var variant: head | body | footer
+  var variant: head | body | footer = js.native
 }
 
 object Tablelvl2ContextProps {

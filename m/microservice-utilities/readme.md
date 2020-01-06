@@ -10,9 +10,9 @@ Utilities supporting authorization, request logging and other often reused parts
 | ------------------ | :-------------: |
 | Full name          | microservice-utilities |
 | Keywords           | microservice, authorizer, loggger, client |
-| # releases         | 23 |
+| # releases         | 32 |
 | # dependents       | 0 |
-| # downloads        | 5434 |
+| # downloads        | 19138 |
 | # stars            | 0 |
 
 ## Links

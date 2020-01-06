@@ -1,5 +1,6 @@
 package typings.sqsDashConsumer.distConsumerMod
 
+import typings.awsDashSdk.clientsSqsMod.^
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,9 +16,7 @@ trait ConsumerOptions extends js.Object {
   var pollingWaitTimeMs: js.UndefOr[Double] = js.undefined
   var queueUrl: js.UndefOr[String] = js.undefined
   var region: js.UndefOr[String] = js.undefined
-  var sqs: js.UndefOr[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SQS */ js.Any
-  ] = js.undefined
+  var sqs: js.UndefOr[^] = js.undefined
   var stopped: js.UndefOr[Boolean] = js.undefined
   var terminateVisibilityTimeout: js.UndefOr[Boolean] = js.undefined
   var visibilityTimeout: js.UndefOr[Double] = js.undefined
@@ -37,7 +36,7 @@ object ConsumerOptions {
     pollingWaitTimeMs: Int | Double = null,
     queueUrl: String = null,
     region: String = null,
-    sqs: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SQS */ js.Any = null,
+    sqs: ^ = null,
     stopped: js.UndefOr[Boolean] = js.undefined,
     terminateVisibilityTimeout: js.UndefOr[Boolean] = js.undefined,
     visibilityTimeout: Int | Double = null,

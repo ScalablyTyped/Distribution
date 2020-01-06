@@ -7,27 +7,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DeploymentArgs extends js.Object {
   /**
     * The description of the deployment
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of the associated REST API
     */
-  val restApi: Input[RestApi]
+  val restApi: Input[RestApi] = js.native
   /**
     * The description of the stage
     */
-  val stageDescription: js.UndefOr[Input[String]] = js.undefined
+  val stageDescription: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the stage. If the specified stage already exists, it will be updated to point to the new deployment. If the stage does not exist, a new one will be created and point to this deployment.
     */
-  val stageName: js.UndefOr[Input[String]] = js.undefined
+  val stageName: js.UndefOr[Input[String]] = js.native
   /**
     * A map that defines variables for the stage
     */
-  val variables: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
+  val variables: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object DeploymentArgs {

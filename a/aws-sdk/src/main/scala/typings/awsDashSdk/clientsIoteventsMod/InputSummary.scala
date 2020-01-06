@@ -4,31 +4,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InputSummary extends js.Object {
   /**
     * The time the input was created.
     */
-  var creationTime: js.UndefOr[Timestamp] = js.undefined
+  var creationTime: js.UndefOr[Timestamp] = js.native
   /**
     * The ARN of the input.
     */
-  var inputArn: js.UndefOr[InputArn] = js.undefined
+  var inputArn: js.UndefOr[InputArn] = js.native
   /**
     * A brief description of the input.
     */
-  var inputDescription: js.UndefOr[InputDescription] = js.undefined
+  var inputDescription: js.UndefOr[InputDescription] = js.native
   /**
     * The name of the input.
     */
-  var inputName: js.UndefOr[InputName] = js.undefined
+  var inputName: js.UndefOr[InputName] = js.native
   /**
     * The last time the input was updated.
     */
-  var lastUpdateTime: js.UndefOr[Timestamp] = js.undefined
+  var lastUpdateTime: js.UndefOr[Timestamp] = js.native
   /**
     * The status of the input.
     */
-  var status: js.UndefOr[InputStatus] = js.undefined
+  var status: js.UndefOr[InputStatus] = js.native
 }
 
 object InputSummary {
@@ -42,11 +43,11 @@ object InputSummary {
     status: InputStatus = null
   ): InputSummary = {
     val __obj = js.Dynamic.literal()
-    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime)
-    if (inputArn != null) __obj.updateDynamic("inputArn")(inputArn)
-    if (inputDescription != null) __obj.updateDynamic("inputDescription")(inputDescription)
-    if (inputName != null) __obj.updateDynamic("inputName")(inputName)
-    if (lastUpdateTime != null) __obj.updateDynamic("lastUpdateTime")(lastUpdateTime)
+    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
+    if (inputArn != null) __obj.updateDynamic("inputArn")(inputArn.asInstanceOf[js.Any])
+    if (inputDescription != null) __obj.updateDynamic("inputDescription")(inputDescription.asInstanceOf[js.Any])
+    if (inputName != null) __obj.updateDynamic("inputName")(inputName.asInstanceOf[js.Any])
+    if (lastUpdateTime != null) __obj.updateDynamic("lastUpdateTime")(lastUpdateTime.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputSummary]
   }

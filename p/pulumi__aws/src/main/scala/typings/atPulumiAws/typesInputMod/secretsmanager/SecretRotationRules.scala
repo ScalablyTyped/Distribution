@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SecretRotationRules extends js.Object {
   /**
     * Specifies the number of days between automatic scheduled rotations of the secret.
     */
-  var automaticallyAfterDays: Input[Double]
+  var automaticallyAfterDays: Input[Double] = js.native
 }
 
 object SecretRotationRules {

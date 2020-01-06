@@ -11,8 +11,8 @@ The lodash method `_.upperFirst` exported as a module.
 | Full name          | lodash.upperfirst |
 | Keywords           | lodash-modularized, upperfirst |
 | # releases         | 0 |
-| # dependents       | 100 |
-| # downloads        | 7301211 |
+| # dependents       | 122 |
+| # downloads        | 13756174 |
 | # stars            | 0 |
 
 ## Links

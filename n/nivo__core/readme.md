@@ -10,9 +10,9 @@ Typings are for version 0.59.1
 | ------------------ | :-------------: |
 | Full name          | @nivo/core |
 | Keywords           | - |
-| # releases         | 36 |
-| # dependents       | 43 |
-| # downloads        | 809974 |
+| # releases         | 26 |
+| # dependents       | 51 |
+| # downloads        | 1204508 |
 | # stars            | 0 |
 
 ## Links

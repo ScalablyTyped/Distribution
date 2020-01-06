@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GeoMatchConstraint extends js.Object {
   /**
     * The type of geographical area you want AWS WAF to search for. Currently Country is the only valid value.
     */
-  var Type: GeoMatchConstraintType
+  var Type: GeoMatchConstraintType = js.native
   /**
     * The country that you want AWS WAF to search for.
     */
-  var Value: GeoMatchConstraintValue
+  var Value: GeoMatchConstraintValue = js.native
 }
 
 object GeoMatchConstraint {

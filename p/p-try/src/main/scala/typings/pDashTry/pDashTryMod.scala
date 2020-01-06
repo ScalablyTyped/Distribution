@@ -37,7 +37,7 @@ object pDashTryMod extends js.Object {
   	*/
   def apply[ValueType, ArgumentsType /* <: js.Array[_] */](
     fn: js.Function1[/* arguments */ ArgumentsType, js.Thenable[ValueType] | ValueType],
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param arguments because its type ArgumentsType is not an array type */ arguments: ArgumentsType
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param arguments because its type ArgumentsType is not an array type */ arguments: ArgumentsType
   ): js.Promise[ValueType] = js.native
   /**
   	Start a promise chain.
@@ -67,7 +67,7 @@ object pDashTryMod extends js.Object {
   // export = pTry;
   def default[ValueType, ArgumentsType /* <: js.Array[_] */](
     fn: js.Function1[/* arguments */ ArgumentsType, js.Thenable[ValueType] | ValueType],
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param arguments because its type ArgumentsType is not an array type */ arguments: ArgumentsType
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param arguments because its type ArgumentsType is not an array type */ arguments: ArgumentsType
   ): js.Promise[ValueType] = js.native
 }
 

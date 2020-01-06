@@ -10,9 +10,9 @@ A set of complementary tools to React, including the JSX transformer.
 | ------------------ | :-------------: |
 | Full name          | react-tools |
 | Keywords           | react, jsx, transformer, view |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 177 |
-| # downloads        | 1786363 |
+| # downloads        | 1563698 |
 | # stars            | 57 |
 
 ## Links

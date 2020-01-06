@@ -10,9 +10,9 @@ Constructable, plain JavaScript DOMTokenList implementation, supporting non-brow
 | ------------------ | :-------------: |
 | Full name          | @wordpress/token-list |
 | Keywords           | domtokenlist |
-| # releases         | 7 |
+| # releases         | 14 |
 | # dependents       | 3 |
-| # downloads        | 54082 |
+| # downloads        | 115301 |
 | # stars            | 0 |
 
 ## Links

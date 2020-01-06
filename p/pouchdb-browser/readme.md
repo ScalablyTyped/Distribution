@@ -10,9 +10,9 @@ PouchDB, the browser-only edition.
 | ------------------ | :-------------: |
 | Full name          | pouchdb-browser |
 | Keywords           | - |
-| # releases         | 12 |
-| # dependents       | 30 |
-| # downloads        | 152259 |
+| # releases         | 8 |
+| # dependents       | 37 |
+| # downloads        | 165950 |
 | # stars            | 1 |
 
 ## Links

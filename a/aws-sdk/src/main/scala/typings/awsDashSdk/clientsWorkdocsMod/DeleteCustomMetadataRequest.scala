@@ -4,27 +4,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DeleteCustomMetadataRequest extends js.Object {
   /**
     * Amazon WorkDocs authentication token. Do not set this field when using administrative API actions, as in accessing the API using AWS credentials.
     */
-  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.undefined
+  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.native
   /**
     * Flag to indicate removal of all custom metadata properties from the specified resource.
     */
-  var DeleteAll: js.UndefOr[BooleanType] = js.undefined
+  var DeleteAll: js.UndefOr[BooleanType] = js.native
   /**
     * List of properties to remove.
     */
-  var Keys: js.UndefOr[CustomMetadataKeyList] = js.undefined
+  var Keys: js.UndefOr[CustomMetadataKeyList] = js.native
   /**
     * The ID of the resource, either a document or folder.
     */
-  var ResourceId: ResourceIdType
+  var ResourceId: ResourceIdType = js.native
   /**
     * The ID of the version, if the custom metadata is being deleted from a document version.
     */
-  var VersionId: js.UndefOr[DocumentVersionIdType] = js.undefined
+  var VersionId: js.UndefOr[DocumentVersionIdType] = js.native
 }
 
 object DeleteCustomMetadataRequest {
@@ -36,11 +37,11 @@ object DeleteCustomMetadataRequest {
     Keys: CustomMetadataKeyList = null,
     VersionId: DocumentVersionIdType = null
   ): DeleteCustomMetadataRequest = {
-    val __obj = js.Dynamic.literal(ResourceId = ResourceId)
-    if (AuthenticationToken != null) __obj.updateDynamic("AuthenticationToken")(AuthenticationToken)
-    if (!js.isUndefined(DeleteAll)) __obj.updateDynamic("DeleteAll")(DeleteAll)
-    if (Keys != null) __obj.updateDynamic("Keys")(Keys)
-    if (VersionId != null) __obj.updateDynamic("VersionId")(VersionId)
+    val __obj = js.Dynamic.literal(ResourceId = ResourceId.asInstanceOf[js.Any])
+    if (AuthenticationToken != null) __obj.updateDynamic("AuthenticationToken")(AuthenticationToken.asInstanceOf[js.Any])
+    if (!js.isUndefined(DeleteAll)) __obj.updateDynamic("DeleteAll")(DeleteAll.asInstanceOf[js.Any])
+    if (Keys != null) __obj.updateDynamic("Keys")(Keys.asInstanceOf[js.Any])
+    if (VersionId != null) __obj.updateDynamic("VersionId")(VersionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteCustomMetadataRequest]
   }
 }

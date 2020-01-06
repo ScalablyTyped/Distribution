@@ -11,8 +11,8 @@ Convert a Blob to a Buffer
 | Full name          | blob-to-buffer |
 | Keywords           | blob, browserify, buffer, convert, filereader |
 | # releases         | 3 |
-| # dependents       | 44 |
-| # downloads        | 1194829 |
+| # dependents       | 48 |
+| # downloads        | 1475599 |
 | # stars            | 1 |
 
 ## Links

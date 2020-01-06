@@ -46,7 +46,7 @@ package object styledDashSystemMod {
     mt | typings.styledDashSystem.styledDashSystemStrings.marginTop
   ]
   type ObjectOrArray[T] = js.Array[T] | (StringDictionary[
-    T | (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias styled-system.styled-system.ObjectOrArray<T> */ js.Object)
+    T | (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias styled-system.styled-system.ObjectOrArray<T> */ js.Object)
   ])
   type PaddingBottomProps = Pick[
     SpaceProps[TLengthStyledSystem], 

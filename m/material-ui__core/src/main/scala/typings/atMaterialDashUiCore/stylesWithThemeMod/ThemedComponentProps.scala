@@ -8,9 +8,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined parent std.Partial<@material-ui/core.@material-ui/core/styles/withTheme.WithTheme> */
+@js.native
 trait ThemedComponentProps extends js.Object {
-  var innerRef: js.UndefOr[Ref[_] | RefObject[_]] = js.undefined
-  var theme: js.UndefOr[Theme] = js.undefined
+  var innerRef: js.UndefOr[Ref[_] | RefObject[_]] = js.native
+  var theme: js.UndefOr[Theme] = js.native
 }
 
 object ThemedComponentProps {

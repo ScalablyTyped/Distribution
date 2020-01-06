@@ -11,8 +11,8 @@ Compare items in two sequences to find a longest common subsequence
 | Full name          | diff-sequences |
 | Keywords           | fast, linear, space, callback, diff |
 | # releases         | 28 |
-| # dependents       | 9 |
-| # downloads        | 73364316 |
+| # dependents       | 10 |
+| # downloads        | 113956768 |
 | # stars            | 0 |
 
 ## Links

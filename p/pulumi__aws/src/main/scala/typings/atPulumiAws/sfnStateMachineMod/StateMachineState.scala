@@ -6,31 +6,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StateMachineState extends js.Object {
   /**
     * The date the state machine was created.
     */
-  val creationDate: js.UndefOr[Input[String]] = js.undefined
+  val creationDate: js.UndefOr[Input[String]] = js.native
   /**
     * The Amazon States Language definition of the state machine.
     */
-  val definition: js.UndefOr[Input[String]] = js.undefined
+  val definition: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the state machine.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * The Amazon Resource Name (ARN) of the IAM role to use for this state machine.
     */
-  val roleArn: js.UndefOr[Input[String]] = js.undefined
+  val roleArn: js.UndefOr[Input[String]] = js.native
   /**
     * The current status of the state machine. Either "ACTIVE" or "DELETING".
     */
-  val status: js.UndefOr[Input[String]] = js.undefined
+  val status: js.UndefOr[Input[String]] = js.native
   /**
     * Key-value mapping of resource tags
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object StateMachineState {

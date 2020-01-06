@@ -4,15 +4,15 @@
 Typings are for version 1.1.0
 
 ## Library description:
-Node.js library for colorizing text using ANSI escape sequences.
+Color your terminal using pure idiomatic JavaScript.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | colorette |
 | Keywords           | colorette, terminal, styles, color, ansi |
-| # releases         | 11 |
-| # dependents       | 69 |
-| # downloads        | 1102072 |
+| # releases         | 13 |
+| # dependents       | 130 |
+| # downloads        | 10714719 |
 | # stars            | 1 |
 
 ## Links

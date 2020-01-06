@@ -1,7 +1,7 @@
 
 # Scala.js typings for express-validator
 
-Typings are for version 6.3.0
+Typings are for version 6.3.1
 
 ## Library description:
 Express middleware for the validator module.
@@ -10,9 +10,9 @@ Express middleware for the validator module.
 | ------------------ | :-------------: |
 | Full name          | express-validator |
 | Keywords           | express, validator, validation, validate, sanitize, sanitization, xss |
-| # releases         | 19 |
-| # dependents       | 257 |
-| # downloads        | 4359713 |
+| # releases         | 18 |
+| # dependents       | 310 |
+| # downloads        | 5819541 |
 | # stars            | 113 |
 
 ## Links

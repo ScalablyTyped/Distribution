@@ -18,6 +18,8 @@ import typings.atPulumiAws.glueSecurityConfigurationMod.SecurityConfigurationArg
 import typings.atPulumiAws.glueSecurityConfigurationMod.SecurityConfigurationState
 import typings.atPulumiAws.glueTriggerMod.TriggerArgs
 import typings.atPulumiAws.glueTriggerMod.TriggerState
+import typings.atPulumiAws.glueWorkflowMod.WorkflowArgs
+import typings.atPulumiAws.glueWorkflowMod.WorkflowState
 import typings.atPulumiPulumi.invokeMod.InvokeOptions
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.resourceMod.CustomResourceOptions
@@ -141,6 +143,21 @@ object glueMod extends js.Object {
       */
     def this(name: String, args: TriggerArgs) = this()
     def this(name: String, args: TriggerArgs, opts: CustomResourceOptions) = this()
+  }
+  
+  @js.native
+  class Workflow protected ()
+    extends typings.atPulumiAws.glueWorkflowMod.Workflow {
+    /**
+      * Create a Workflow resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: String) = this()
+    def this(name: String, args: WorkflowArgs) = this()
+    def this(name: String, args: WorkflowArgs, opts: CustomResourceOptions) = this()
   }
   
   def getScript(args: GetScriptArgs): js.Promise[GetScriptResult] with GetScriptResult = js.native
@@ -311,6 +328,27 @@ object glueMod extends js.Object {
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
     def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/trigger.Trigger */ Boolean = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object Workflow extends js.Object {
+    /**
+      * Get an existing Workflow resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      */
+    def get(name: String, id: Input[ID]): typings.atPulumiAws.glueWorkflowMod.Workflow = js.native
+    def get(name: String, id: Input[ID], state: WorkflowState): typings.atPulumiAws.glueWorkflowMod.Workflow = js.native
+    def get(name: String, id: Input[ID], state: WorkflowState, opts: CustomResourceOptions): typings.atPulumiAws.glueWorkflowMod.Workflow = js.native
+    /**
+      * Returns true if the given object is an instance of Workflow.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/workflow.Workflow */ Boolean = js.native
   }
   
 }

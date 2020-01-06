@@ -10,13 +10,13 @@ CSV parser and writer
 | ------------------ | :-------------: |
 | Full name          | fast-csv |
 | Keywords           | csv, parser, fast, writer, csv writer, CSV |
-| # releases         | 10 |
-| # dependents       | 249 |
-| # downloads        | 6177604 |
+| # releases         | 17 |
+| # dependents       | 260 |
+| # downloads        | 7055601 |
 | # stars            | 56 |
 
 ## Links
-- [Homepage](http://c2fo.github.com/fast-csv/index.html)
+- [Homepage](http://c2fo.github.com/fast-csv)
 - [Bugs](https://github.com/C2FO/fast-csv/issues)
 - [Repository](https://github.com/C2FO/fast-csv)
 - [Npm](https://www.npmjs.com/package/fast-csv)

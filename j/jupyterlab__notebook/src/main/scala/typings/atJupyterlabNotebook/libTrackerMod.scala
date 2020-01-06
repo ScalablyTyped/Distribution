@@ -45,7 +45,7 @@ object libTrackerMod extends js.Object {
       * #### Notes
       * If the last instance being tracked is disposed, `null` will be emitted.
       */
-    /* CompleteClass */
+    /* InferMemberOverrides */
     override val currentChanged: ISignal[this.type, NotebookPanel | Null] = js.native
     /**
       * The current widget is the most recently focused or added widget.
@@ -54,7 +54,7 @@ object libTrackerMod extends js.Object {
       * It is the most recently focused widget, or the most recently added
       * widget if no widget has taken focus.
       */
-    /* CompleteClass */
+    /* InferMemberOverrides */
     override val currentWidget: NotebookPanel | Null = js.native
     /**
       * Test whether the object has been disposed.
@@ -62,7 +62,7 @@ object libTrackerMod extends js.Object {
       * #### Notes
       * This property is always safe to access.
       */
-    /* CompleteClass */
+    /* InferMemberOverrides */
     override val isDisposed: Boolean = js.native
     /**
       * A promise that is resolved when the widget tracker has been
@@ -85,17 +85,17 @@ object libTrackerMod extends js.Object {
     /**
       * The number of instances held by the tracker.
       */
-    /* CompleteClass */
+    /* InferMemberOverrides */
     override val size: Double = js.native
     /**
       * A signal emitted when a widget is added.
       */
-    /* CompleteClass */
+    /* InferMemberOverrides */
     override val widgetAdded: ISignal[this.type, NotebookPanel] = js.native
     /**
       * A signal emitted when a widget is updated.
       */
-    /* CompleteClass */
+    /* InferMemberOverrides */
     override val widgetUpdated: ISignal[this.type, NotebookPanel] = js.native
     /**
       * Add a new widget to the tracker.
@@ -129,7 +129,6 @@ object libTrackerMod extends js.Object {
       *
       * @param fn - The function by which to filter.
       */
-    /* CompleteClass */
     /* InferMemberOverrides */
     override def filter(fn: js.Function1[NotebookPanel, Boolean]): js.Array[NotebookPanel] = js.native
     /**
@@ -140,7 +139,6 @@ object libTrackerMod extends js.Object {
       * #### Notes
       * If nothing is found, the value returned is `undefined`.
       */
-    /* CompleteClass */
     /* InferMemberOverrides */
     override def find(fn: js.Function1[NotebookPanel, Boolean]): js.UndefOr[NotebookPanel] = js.native
     /**
@@ -148,7 +146,6 @@ object libTrackerMod extends js.Object {
       *
       * @param fn - The function to call on each instance.
       */
-    /* CompleteClass */
     /* InferMemberOverrides */
     override def forEach(fn: js.Function1[NotebookPanel, Unit]): Unit = js.native
     /**
@@ -156,7 +153,6 @@ object libTrackerMod extends js.Object {
       *
       * @param obj - The object whose existence is being checked.
       */
-    /* CompleteClass */
     /* InferMemberOverrides */
     override def has(obj: Widget): Boolean = js.native
     /**
@@ -165,7 +161,6 @@ object libTrackerMod extends js.Object {
       *
       * @param obj - The instance to inject into the tracker.
       */
-    /* CompleteClass */
     /* InferMemberOverrides */
     override def inject(obj: NotebookPanel): Unit = js.native
     /* InferMemberOverrides */
@@ -186,7 +181,6 @@ object libTrackerMod extends js.Object {
       * @returns A promise that settles when restored with `any` results.
       *
       */
-    /* InferMemberOverrides */
     /* InferMemberOverrides */
     override def restore(options: IOptions[NotebookPanel]): js.Promise[js.Any] = js.native
     /**

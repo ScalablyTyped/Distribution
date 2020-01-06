@@ -10,9 +10,9 @@ Less code, more flow. Let's dance!
 | ------------------ | :-------------: |
 | Full name          | bagpipes |
 | Keywords           | swagger, plumbing, pipes |
-| # releases         | 4 |
+| # releases         | 5 |
 | # dependents       | 7 |
-| # downloads        | 717470 |
+| # downloads        | 686099 |
 | # stars            | 0 |
 
 ## Links

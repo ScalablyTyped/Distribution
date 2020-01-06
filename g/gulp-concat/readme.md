@@ -10,8 +10,8 @@ Concatenates files
 | Full name          | gulp-concat |
 | Keywords           | gulpplugin |
 | # releases         | 1 |
-| # dependents       | 1408 |
-| # downloads        | 18649586 |
+| # dependents       | 1485 |
+| # downloads        | 19799293 |
 | # stars            | 451 |
 
 ## Links

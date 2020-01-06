@@ -10,9 +10,9 @@ Basic IP rate-limiting middleware for Express. Use to limit repeated requests to
 | ------------------ | :-------------: |
 | Full name          | express-rate-limit |
 | Keywords           | express-rate-limit, express, rate, limit, ratelimit, rate-limit, middleware, ip, auth, authorization, security, brute, force, bruteforce, brute-force, attack |
-| # releases         | 25 |
-| # dependents       | 108 |
-| # downloads        | 2231747 |
+| # releases         | 36 |
+| # dependents       | 166 |
+| # downloads        | 3620169 |
 | # stars            | 45 |
 
 ## Links

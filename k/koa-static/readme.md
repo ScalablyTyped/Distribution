@@ -10,10 +10,10 @@ Static file serving middleware for koa
 | ------------------ | :-------------: |
 | Full name          | koa-static |
 | Keywords           | koa, middleware, file, static, sendfile |
-| # releases         | 7 |
-| # dependents       | 977 |
-| # downloads        | 4300286 |
-| # stars            | 31 |
+| # releases         | 4 |
+| # dependents       | 1224 |
+| # downloads        | 6536468 |
+| # stars            | 32 |
 
 ## Links
 - [Homepage](https://github.com/koajs/static#readme)

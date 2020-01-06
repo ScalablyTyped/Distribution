@@ -10,9 +10,9 @@ Node SDK for Amazon Glacier
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/client-glacier-node |
 | Keywords           | - |
-| # releases         | 7 |
+| # releases         | 12 |
 | # dependents       | 0 |
-| # downloads        | 229 |
+| # downloads        | 518 |
 | # stars            | 0 |
 
 ## Links

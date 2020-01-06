@@ -8,76 +8,77 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DocumentState extends js.Object {
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * The JSON or YAML content of the document.
     */
-  val content: js.UndefOr[Input[String]] = js.undefined
+  val content: js.UndefOr[Input[String]] = js.native
   /**
     * The date the document was created.
     */
-  val createdDate: js.UndefOr[Input[String]] = js.undefined
+  val createdDate: js.UndefOr[Input[String]] = js.native
   /**
     * The default version of the document.
     */
-  val defaultVersion: js.UndefOr[Input[String]] = js.undefined
+  val defaultVersion: js.UndefOr[Input[String]] = js.native
   /**
     * The description of the document.
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * The format of the document. Valid document types include: `JSON` and `YAML`
     */
-  val documentFormat: js.UndefOr[Input[String]] = js.undefined
+  val documentFormat: js.UndefOr[Input[String]] = js.native
   /**
     * The type of the document. Valid document types include: `Command`, `Policy`, `Automation` and `Session`
     */
-  val documentType: js.UndefOr[Input[String]] = js.undefined
+  val documentType: js.UndefOr[Input[String]] = js.native
   /**
     * The sha1 or sha256 of the document content
     */
-  val hash: js.UndefOr[Input[String]] = js.undefined
+  val hash: js.UndefOr[Input[String]] = js.native
   /**
     * "Sha1" "Sha256". The hashing algorithm used when hashing the content.
     */
-  val hashType: js.UndefOr[Input[String]] = js.undefined
+  val hashType: js.UndefOr[Input[String]] = js.native
   /**
     * The latest version of the document.
     */
-  val latestVersion: js.UndefOr[Input[String]] = js.undefined
+  val latestVersion: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the document.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * The AWS user account of the person who created the document.
     */
-  val owner: js.UndefOr[Input[String]] = js.undefined
+  val owner: js.UndefOr[Input[String]] = js.native
   /**
     * The parameters that are available to this document.
     */
-  val parameters: js.UndefOr[Input[js.Array[Input[DocumentParameter]]]] = js.undefined
+  val parameters: js.UndefOr[Input[js.Array[Input[DocumentParameter]]]] = js.native
   /**
     * Additional Permissions to attach to the document. See Permissions below for details.
     */
-  val permissions: js.UndefOr[Input[DocumentPermissions]] = js.undefined
+  val permissions: js.UndefOr[Input[DocumentPermissions]] = js.native
   /**
     * A list of OS platforms compatible with this SSM document, either "Windows" or "Linux".
     */
-  val platformTypes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val platformTypes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The schema version of the document.
     */
-  val schemaVersion: js.UndefOr[Input[String]] = js.undefined
+  val schemaVersion: js.UndefOr[Input[String]] = js.native
   /**
     * "Creating", "Active" or "Deleting". The current status of the document.
     */
-  val status: js.UndefOr[Input[String]] = js.undefined
+  val status: js.UndefOr[Input[String]] = js.native
   /**
     * A mapping of tags to assign to the object.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object DocumentState {

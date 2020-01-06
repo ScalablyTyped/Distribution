@@ -12,7 +12,7 @@ Labels for leaflet maps
 | Keywords           | gis, map |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 18204 |
+| # downloads        | 12299 |
 | # stars            | 0 |
 
 ## Links

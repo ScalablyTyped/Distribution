@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AssociateProductWithPortfolioInput extends js.Object {
   /**
     * The language code.    en - English (default)    jp - Japanese    zh - Chinese  
     */
-  var AcceptLanguage: js.UndefOr[typings.awsDashSdk.clientsServicecatalogMod.AcceptLanguage] = js.undefined
+  var AcceptLanguage: js.UndefOr[typings.awsDashSdk.clientsServicecatalogMod.AcceptLanguage] = js.native
   /**
     * The portfolio identifier.
     */
-  var PortfolioId: Id
+  var PortfolioId: Id = js.native
   /**
     * The product identifier.
     */
-  var ProductId: Id
+  var ProductId: Id = js.native
   /**
     * The identifier of the source portfolio.
     */
-  var SourcePortfolioId: js.UndefOr[Id] = js.undefined
+  var SourcePortfolioId: js.UndefOr[Id] = js.native
 }
 
 object AssociateProductWithPortfolioInput {
@@ -31,9 +32,9 @@ object AssociateProductWithPortfolioInput {
     AcceptLanguage: AcceptLanguage = null,
     SourcePortfolioId: Id = null
   ): AssociateProductWithPortfolioInput = {
-    val __obj = js.Dynamic.literal(PortfolioId = PortfolioId, ProductId = ProductId)
-    if (AcceptLanguage != null) __obj.updateDynamic("AcceptLanguage")(AcceptLanguage)
-    if (SourcePortfolioId != null) __obj.updateDynamic("SourcePortfolioId")(SourcePortfolioId)
+    val __obj = js.Dynamic.literal(PortfolioId = PortfolioId.asInstanceOf[js.Any], ProductId = ProductId.asInstanceOf[js.Any])
+    if (AcceptLanguage != null) __obj.updateDynamic("AcceptLanguage")(AcceptLanguage.asInstanceOf[js.Any])
+    if (SourcePortfolioId != null) __obj.updateDynamic("SourcePortfolioId")(SourcePortfolioId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateProductWithPortfolioInput]
   }
 }

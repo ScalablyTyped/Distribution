@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PermissionInfo extends js.Object {
   /**
     * The role of the user.
     */
-  var Role: js.UndefOr[RoleType] = js.undefined
+  var Role: js.UndefOr[RoleType] = js.native
   /**
     * The type of permissions.
     */
-  var Type: js.UndefOr[RolePermissionType] = js.undefined
+  var Type: js.UndefOr[RolePermissionType] = js.native
 }
 
 object PermissionInfo {

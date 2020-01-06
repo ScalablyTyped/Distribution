@@ -11,8 +11,8 @@ A React component that is a base button.
 | Full name          | @atlaskit/button |
 | Keywords           | - |
 | # releases         | 117 |
-| # dependents       | 44 |
-| # downloads        | 3264006 |
+| # dependents       | 58 |
+| # downloads        | 4257963 |
 | # stars            | 0 |
 
 ## Links

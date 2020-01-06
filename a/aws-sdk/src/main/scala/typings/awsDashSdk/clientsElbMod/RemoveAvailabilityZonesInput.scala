@@ -4,21 +4,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RemoveAvailabilityZonesInput extends js.Object {
   /**
     * The Availability Zones.
     */
-  var AvailabilityZones: typings.awsDashSdk.clientsElbMod.AvailabilityZones
+  var AvailabilityZones: typings.awsDashSdk.clientsElbMod.AvailabilityZones = js.native
   /**
     * The name of the load balancer.
     */
-  var LoadBalancerName: AccessPointName
+  var LoadBalancerName: AccessPointName = js.native
 }
 
 object RemoveAvailabilityZonesInput {
   @scala.inline
   def apply(AvailabilityZones: AvailabilityZones, LoadBalancerName: AccessPointName): RemoveAvailabilityZonesInput = {
-    val __obj = js.Dynamic.literal(AvailabilityZones = AvailabilityZones, LoadBalancerName = LoadBalancerName)
+    val __obj = js.Dynamic.literal(AvailabilityZones = AvailabilityZones.asInstanceOf[js.Any], LoadBalancerName = LoadBalancerName.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[RemoveAvailabilityZonesInput]
   }

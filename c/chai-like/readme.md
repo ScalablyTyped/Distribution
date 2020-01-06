@@ -12,7 +12,7 @@ A JSON matcher for chai
 | Keywords           | chai, chai-plugin, objects, json, like, test, integration, API |
 | # releases         | 4 |
 | # dependents       | 3 |
-| # downloads        | 227622 |
+| # downloads        | 242938 |
 | # stars            | 0 |
 
 ## Links

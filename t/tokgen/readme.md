@@ -11,8 +11,8 @@ Generate cryptographically secure token strings
 | Full name          | tokgen |
 | Keywords           | string, generator, random, crypto, token |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 14154 |
+| # dependents       | 1 |
+| # downloads        | 18911 |
 | # stars            | 0 |
 
 ## Links

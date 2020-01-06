@@ -11,8 +11,8 @@ A library for integrating with Braintree.
 | Full name          | braintree |
 | Keywords           | braintree, payments |
 | # releases         | 19 |
-| # dependents       | 26 |
-| # downloads        | 877671 |
+| # dependents       | 28 |
+| # downloads        | 1344131 |
 | # stars            | 20 |
 
 ## Links

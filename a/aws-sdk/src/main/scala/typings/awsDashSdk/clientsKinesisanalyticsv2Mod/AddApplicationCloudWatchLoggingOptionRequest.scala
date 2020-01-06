@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AddApplicationCloudWatchLoggingOptionRequest extends js.Object {
   /**
     * The Kinesis Data Analytics application name.
     */
-  var ApplicationName: typings.awsDashSdk.clientsKinesisanalyticsv2Mod.ApplicationName
+  var ApplicationName: typings.awsDashSdk.clientsKinesisanalyticsv2Mod.ApplicationName = js.native
   /**
     * Provides the Amazon CloudWatch log stream Amazon Resource Name (ARN). 
     */
-  var CloudWatchLoggingOption: typings.awsDashSdk.clientsKinesisanalyticsv2Mod.CloudWatchLoggingOption
+  var CloudWatchLoggingOption: typings.awsDashSdk.clientsKinesisanalyticsv2Mod.CloudWatchLoggingOption = js.native
   /**
     * The version ID of the Kinesis Data Analytics application. You can retrieve the application version ID using DescribeApplication.
     */
-  var CurrentApplicationVersionId: ApplicationVersionId
+  var CurrentApplicationVersionId: ApplicationVersionId = js.native
 }
 
 object AddApplicationCloudWatchLoggingOptionRequest {
@@ -26,7 +27,7 @@ object AddApplicationCloudWatchLoggingOptionRequest {
     CloudWatchLoggingOption: CloudWatchLoggingOption,
     CurrentApplicationVersionId: ApplicationVersionId
   ): AddApplicationCloudWatchLoggingOptionRequest = {
-    val __obj = js.Dynamic.literal(ApplicationName = ApplicationName, CloudWatchLoggingOption = CloudWatchLoggingOption, CurrentApplicationVersionId = CurrentApplicationVersionId)
+    val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any], CloudWatchLoggingOption = CloudWatchLoggingOption.asInstanceOf[js.Any], CurrentApplicationVersionId = CurrentApplicationVersionId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[AddApplicationCloudWatchLoggingOptionRequest]
   }

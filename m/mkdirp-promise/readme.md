@@ -11,8 +11,8 @@ Promise version of mkdirp
 | Full name          | mkdirp-promise |
 | Keywords           | mkdirp, promise |
 | # releases         | 1 |
-| # dependents       | 193 |
-| # downloads        | 5174287 |
+| # dependents       | 210 |
+| # downloads        | 12691261 |
 | # stars            | 3 |
 
 ## Links

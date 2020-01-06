@@ -10,9 +10,9 @@ the bare-bones internationalization library used by yargs
 | ------------------ | :-------------: |
 | Full name          | y18n |
 | Keywords           | i18n, internationalization, yargs |
-| # releases         | 2 |
-| # dependents       | 62 |
-| # downloads        | 391215918 |
+| # releases         | 0 |
+| # dependents       | 82 |
+| # downloads        | 620106051 |
 | # stars            | 6 |
 
 ## Links

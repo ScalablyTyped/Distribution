@@ -4,21 +4,21 @@
 Typings are for version 1.7
 
 ## Library description:
-utilities for working with htmlparser2's dom
+Utilities for working with htmlparser2's dom
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | domutils |
 | Keywords           | dom, htmlparser2 |
-| # releases         | 4 |
-| # dependents       | 79 |
-| # downloads        | 392201044 |
+| # releases         | 3 |
+| # dependents       | 91 |
+| # downloads        | 535629875 |
 | # stars            | 3 |
 
 ## Links
-- [Homepage](https://github.com/FB55/domutils#readme)
-- [Bugs](https://github.com/FB55/domutils/issues)
-- [Repository](https://github.com/FB55/domutils)
+- [Homepage](https://github.com/fb55/domutils#readme)
+- [Bugs](https://github.com/fb55/domutils/issues)
+- [Repository](https://github.com/fb55/domutils)
 - [Npm](https://www.npmjs.com/package/domutils)
     
 

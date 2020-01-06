@@ -12,7 +12,7 @@ Compose custom types containing mutually exclusive keys, using this generic Type
 | Keywords           | typescript, custom types, mutually exlusive keys, xor |
 | # releases         | 11 |
 | # dependents       | 9 |
-| # downloads        | 106366 |
+| # downloads        | 114876 |
 | # stars            | 0 |
 
 ## Links

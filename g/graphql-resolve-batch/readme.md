@@ -12,7 +12,7 @@ A GraphQL batching model which groups execution by GraphQL fields.
 | Keywords           | graphql, batch, resolve, field |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 79193 |
+| # downloads        | 111482 |
 | # stars            | 0 |
 
 ## Links

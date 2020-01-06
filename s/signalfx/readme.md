@@ -10,9 +10,9 @@ Node.js client library for SignalFx
 | ------------------ | :-------------: |
 | Full name          | signalfx |
 | Keywords           | signalfx, nodejs |
-| # releases         | 3 |
+| # releases         | 4 |
 | # dependents       | 4 |
-| # downloads        | 84605 |
+| # downloads        | 126158 |
 | # stars            | 2 |
 
 ## Links

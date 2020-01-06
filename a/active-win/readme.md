@@ -10,9 +10,9 @@ Get metadata about the active window (title, id, bounds, owner, etc). Works on m
 | ------------------ | :-------------: |
 | Full name          | active-win |
 | Keywords           | macos, linux, windows, app, application, window, win, active, focused, current, title, name, id, pid, screenshot, capture, metadata, bounds, memory, usage, bundleid |
-| # releases         | 8 |
-| # dependents       | 4 |
-| # downloads        | 4934 |
+| # releases         | 10 |
+| # dependents       | 9 |
+| # downloads        | 14185 |
 | # stars            | 1 |
 
 ## Links

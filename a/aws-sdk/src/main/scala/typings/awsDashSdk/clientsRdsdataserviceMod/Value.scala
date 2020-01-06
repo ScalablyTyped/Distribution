@@ -4,47 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Value extends js.Object {
   /**
     * An array of column values.
     */
-  var arrayValues: js.UndefOr[ArrayValueList] = js.undefined
+  var arrayValues: js.UndefOr[ArrayValueList] = js.native
   /**
     * A value for a column of big integer data type.
     */
-  var bigIntValue: js.UndefOr[BoxedLong] = js.undefined
+  var bigIntValue: js.UndefOr[BoxedLong] = js.native
   /**
     * A value for a column of BIT data type.
     */
-  var bitValue: js.UndefOr[BoxedBoolean] = js.undefined
+  var bitValue: js.UndefOr[BoxedBoolean] = js.native
   /**
     * A value for a column of BLOB data type.
     */
-  var blobValue: js.UndefOr[_Blob] = js.undefined
+  var blobValue: js.UndefOr[_Blob] = js.native
   /**
     * A value for a column of double data type.
     */
-  var doubleValue: js.UndefOr[BoxedDouble] = js.undefined
+  var doubleValue: js.UndefOr[BoxedDouble] = js.native
   /**
     * A value for a column of integer data type.
     */
-  var intValue: js.UndefOr[BoxedInteger] = js.undefined
+  var intValue: js.UndefOr[BoxedInteger] = js.native
   /**
     * A NULL value.
     */
-  var isNull: js.UndefOr[BoxedBoolean] = js.undefined
+  var isNull: js.UndefOr[BoxedBoolean] = js.native
   /**
     * A value for a column of real data type.
     */
-  var realValue: js.UndefOr[BoxedFloat] = js.undefined
+  var realValue: js.UndefOr[BoxedFloat] = js.native
   /**
     * A value for a column of string data type.
     */
-  var stringValue: js.UndefOr[String] = js.undefined
+  var stringValue: js.UndefOr[String] = js.native
   /**
     * A value for a column of STRUCT data type.
     */
-  var structValue: js.UndefOr[StructValue] = js.undefined
+  var structValue: js.UndefOr[StructValue] = js.native
 }
 
 object Value {
@@ -62,16 +63,16 @@ object Value {
     structValue: StructValue = null
   ): Value = {
     val __obj = js.Dynamic.literal()
-    if (arrayValues != null) __obj.updateDynamic("arrayValues")(arrayValues)
+    if (arrayValues != null) __obj.updateDynamic("arrayValues")(arrayValues.asInstanceOf[js.Any])
     if (bigIntValue != null) __obj.updateDynamic("bigIntValue")(bigIntValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(bitValue)) __obj.updateDynamic("bitValue")(bitValue)
+    if (!js.isUndefined(bitValue)) __obj.updateDynamic("bitValue")(bitValue.asInstanceOf[js.Any])
     if (blobValue != null) __obj.updateDynamic("blobValue")(blobValue.asInstanceOf[js.Any])
     if (doubleValue != null) __obj.updateDynamic("doubleValue")(doubleValue.asInstanceOf[js.Any])
     if (intValue != null) __obj.updateDynamic("intValue")(intValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(isNull)) __obj.updateDynamic("isNull")(isNull)
+    if (!js.isUndefined(isNull)) __obj.updateDynamic("isNull")(isNull.asInstanceOf[js.Any])
     if (realValue != null) __obj.updateDynamic("realValue")(realValue.asInstanceOf[js.Any])
-    if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue)
-    if (structValue != null) __obj.updateDynamic("structValue")(structValue)
+    if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue.asInstanceOf[js.Any])
+    if (structValue != null) __obj.updateDynamic("structValue")(structValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[Value]
   }
 }

@@ -12,7 +12,7 @@ Scoping helpers for building reusable components with Redux
 | Keywords           | redux, scope, doghouse, react |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 11081 |
+| # downloads        | 20462 |
 | # stars            | 0 |
 
 ## Links

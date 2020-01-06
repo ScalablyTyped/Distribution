@@ -10,9 +10,9 @@ Easy state management for react using hooks in less than 1kb.
 | ------------------ | :-------------: |
 | Full name          | use-global-hook |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 0 |
-| # downloads        | 11761 |
+| # releases         | 15 |
+| # dependents       | 1 |
+| # downloads        | 30994 |
 | # stars            | 0 |
 
 ## Links

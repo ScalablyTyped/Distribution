@@ -37,14 +37,14 @@ package object clientsLexmodelbuildingserviceMod {
     - typings.awsDashSdk.awsDashSdkStrings.Facebook
     - typings.awsDashSdk.awsDashSdkStrings.Slack
     - typings.awsDashSdk.awsDashSdkStrings.`Twilio-Sms`
-    - typings.awsDashSdk.awsDashSdkStrings.Kik
+    - typings.awsDashSdk.awsDashSdkStrings.Kik_
     - java.lang.String
   */
   type ChannelType = _ChannelType | java.lang.String
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
   type ContentString = java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.PlainText
+    - typings.awsDashSdk.awsDashSdkStrings.PlainText_
     - typings.awsDashSdk.awsDashSdkStrings.SSML
     - typings.awsDashSdk.awsDashSdkStrings.CustomPayload
     - java.lang.String
@@ -53,6 +53,12 @@ package object clientsLexmodelbuildingserviceMod {
   type Count = Double
   type CustomOrBuiltinSlotTypeName = java.lang.String
   type Description = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.CLOUDWATCH_LOGS
+    - typings.awsDashSdk.awsDashSdkStrings.S3
+    - java.lang.String
+  */
+  type Destination = _Destination | java.lang.String
   type EnumerationValues = js.Array[EnumerationValue]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.IN_PROGRESS
@@ -74,6 +80,7 @@ package object clientsLexmodelbuildingserviceMod {
   */
   type FulfillmentActivityType = _FulfillmentActivityType | java.lang.String
   type GroupNumber = Double
+  type IamRoleArn = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.IN_PROGRESS
     - typings.awsDashSdk.awsDashSdkStrings.COMPLETE
@@ -85,6 +92,7 @@ package object clientsLexmodelbuildingserviceMod {
   type IntentMetadataList = js.Array[IntentMetadata]
   type IntentName = java.lang.String
   type IntentUtteranceList = js.Array[Utterance]
+  type KmsKeyArn = java.lang.String
   type LambdaARN = java.lang.String
   type ListOfUtterance = js.Array[UtteranceData]
   type ListsOfUtterances = js.Array[UtteranceList]
@@ -96,6 +104,14 @@ package object clientsLexmodelbuildingserviceMod {
   */
   type Locale = _Locale | java.lang.String
   type LocaleList = js.Array[Locale]
+  type LogSettingsRequestList = js.Array[LogSettingsRequest]
+  type LogSettingsResponseList = js.Array[LogSettingsResponse]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.AUDIO
+    - typings.awsDashSdk.awsDashSdkStrings.TEXT
+    - java.lang.String
+  */
+  type LogType = _LogType | java.lang.String
   type MaxResults = Double
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.OVERWRITE_LATEST
@@ -108,6 +124,12 @@ package object clientsLexmodelbuildingserviceMod {
   type Name = java.lang.String
   type NextToken = java.lang.String
   type NumericalVersion = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.NONE
+    - typings.awsDashSdk.awsDashSdkStrings.DEFAULT_OBFUSCATION
+    - java.lang.String
+  */
+  type ObfuscationSetting = _ObfuscationSetting | java.lang.String
   type Priority = Double
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.SAVE
@@ -116,6 +138,8 @@ package object clientsLexmodelbuildingserviceMod {
   */
   type ProcessBehavior = _ProcessBehavior | java.lang.String
   type PromptMaxAttempts = Double
+  type ResourceArn = java.lang.String
+  type ResourcePrefix = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.BOT
     - typings.awsDashSdk.awsDashSdkStrings.INTENT
@@ -126,8 +150,8 @@ package object clientsLexmodelbuildingserviceMod {
   type ResponseCard = java.lang.String
   type SessionTTL = Double
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Required
-    - typings.awsDashSdk.awsDashSdkStrings.Optional
+    - typings.awsDashSdk.awsDashSdkStrings.Required_
+    - typings.awsDashSdk.awsDashSdkStrings.Optional_
     - java.lang.String
   */
   type SlotConstraint = _SlotConstraint | java.lang.String
@@ -153,7 +177,7 @@ package object clientsLexmodelbuildingserviceMod {
   type Status = _Status | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.Detected
-    - typings.awsDashSdk.awsDashSdkStrings.Missed
+    - typings.awsDashSdk.awsDashSdkStrings.Missed_
     - java.lang.String
   */
   type StatusType = _StatusType | java.lang.String
@@ -169,7 +193,7 @@ package object clientsLexmodelbuildingserviceMod {
   type _Blob = Buffer | Uint8Array | Blob | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2017-04-19`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | java.lang.String

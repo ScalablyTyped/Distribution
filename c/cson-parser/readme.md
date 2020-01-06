@@ -11,8 +11,8 @@ Safe parsing of CSON files
 | Full name          | cson-parser |
 | Keywords           | cson, parser |
 | # releases         | 7 |
-| # dependents       | 42 |
-| # downloads        | 6686813 |
+| # dependents       | 45 |
+| # downloads        | 7137231 |
 | # stars            | 2 |
 
 ## Links

@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ServiceDnsConfigDnsRecord extends js.Object {
   /**
     * The amount of time, in seconds, that you want DNS resolvers to cache the settings for this resource record set.
     */
-  var ttl: Input[Double]
+  var ttl: Input[Double] = js.native
   /**
     * The type of health check that you want to create, which indicates how Route 53 determines whether an endpoint is healthy. Valid Values: HTTP, HTTPS, TCP
     */
-  var `type`: Input[String]
+  var `type`: Input[String] = js.native
 }
 
 object ServiceDnsConfigDnsRecord {

@@ -6,44 +6,45 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SubnetArgs extends js.Object {
   /**
     * Specify true to indicate
     * that network interfaces created in the specified subnet should be
     * assigned an IPv6 address. Default is `false`
     */
-  val assignIpv6AddressOnCreation: js.UndefOr[Input[Boolean]] = js.undefined
+  val assignIpv6AddressOnCreation: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The AZ for the subnet.
     */
-  val availabilityZone: js.UndefOr[Input[String]] = js.undefined
+  val availabilityZone: js.UndefOr[Input[String]] = js.native
   /**
     * The AZ ID of the subnet.
     */
-  val availabilityZoneId: js.UndefOr[Input[String]] = js.undefined
+  val availabilityZoneId: js.UndefOr[Input[String]] = js.native
   /**
     * The CIDR block for the subnet.
     */
-  val cidrBlock: Input[String]
+  val cidrBlock: Input[String] = js.native
   /**
     * The IPv6 network range for the subnet,
     * in CIDR notation. The subnet size must use a /64 prefix length.
     */
-  val ipv6CidrBlock: js.UndefOr[Input[String]] = js.undefined
+  val ipv6CidrBlock: js.UndefOr[Input[String]] = js.native
   /**
     * Specify true to indicate
     * that instances launched into the subnet should be assigned
     * a public IP address. Default is `false`.
     */
-  val mapPublicIpOnLaunch: js.UndefOr[Input[Boolean]] = js.undefined
+  val mapPublicIpOnLaunch: js.UndefOr[Input[Boolean]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * The VPC ID.
     */
-  val vpcId: Input[String]
+  val vpcId: Input[String] = js.native
 }
 
 object SubnetArgs {

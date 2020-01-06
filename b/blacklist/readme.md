@@ -10,9 +10,9 @@ Returns a shallow copy of an object without blacklisted properties
 | ------------------ | :-------------: |
 | Full name          | blacklist |
 | Keywords           | blacklist, filter, object, utility |
-| # releases         | 1 |
-| # dependents       | 120 |
-| # downloads        | 1712789 |
+| # releases         | 0 |
+| # dependents       | 129 |
+| # downloads        | 2550738 |
 | # stars            | 1 |
 
 ## Links

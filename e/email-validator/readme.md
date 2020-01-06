@@ -10,9 +10,9 @@ Provides a fast, pretty robust e-mail validator. Only checks form, not function.
 | ------------------ | :-------------: |
 | Full name          | email-validator |
 | Keywords           | email, validation, validator, syntax |
-| # releases         | 10 |
-| # dependents       | 206 |
-| # downloads        | 8683134 |
+| # releases         | 8 |
+| # dependents       | 260 |
+| # downloads        | 12079648 |
 | # stars            | 16 |
 
 ## Links

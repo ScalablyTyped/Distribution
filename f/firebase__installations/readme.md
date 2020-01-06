@@ -9,9 +9,9 @@ Typings are for version 0.3.8
 | ------------------ | :-------------: |
 | Full name          | @firebase/installations |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 0 |
+| # releases         | 390 |
+| # dependents       | 8 |
+| # downloads        | 7981911 |
 | # stars            | 0 |
 
 ## Links

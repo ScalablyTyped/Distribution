@@ -10,9 +10,9 @@ Functionality commonly needed by Rollup plugins
 | ------------------ | :-------------: |
 | Full name          | rollup-pluginutils |
 | Keywords           | rollup, utils |
-| # releases         | 11 |
-| # dependents       | 379 |
-| # downloads        | 20320929 |
+| # releases         | 17 |
+| # dependents       | 493 |
+| # downloads        | 35788555 |
 | # stars            | 1 |
 
 ## Links

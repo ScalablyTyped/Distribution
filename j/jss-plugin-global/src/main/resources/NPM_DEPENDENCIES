@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jss-plugin-global" : "10.0.0"
+      "jss-plugin-global" : "10.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "jss-plugin-global" : "10.0.0"
+      "jss-plugin-global" : "10.0.3"
     }
   ],
   "compile-devDependencies" : [

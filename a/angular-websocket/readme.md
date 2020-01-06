@@ -10,9 +10,9 @@ An Angular WebSocket service for connecting client applications to servers.
 | ------------------ | :-------------: |
 | Full name          | angular-websocket |
 | Keywords           | angular, angularjs, javascript, realtime, websockets, websocket, angular-websocket, angular-websockets, angular-socket, ngWebSocket, ngWebSockets, angular-class, AngularClass, gdi2290, PatrickJS |
-| # releases         | 1 |
-| # dependents       | 6 |
-| # downloads        | 175631 |
+| # releases         | 0 |
+| # dependents       | 7 |
+| # downloads        | 219772 |
 | # stars            | 3 |
 
 ## Links

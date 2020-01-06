@@ -10,9 +10,9 @@ a JSON logging library for node.js services
 | ------------------ | :-------------: |
 | Full name          | bunyan |
 | Keywords           | log, logging, log4j, json, bunyan |
-| # releases         | 7 |
-| # dependents       | 1745 |
-| # downloads        | 25499089 |
+| # releases         | 1 |
+| # dependents       | 1947 |
+| # downloads        | 32763987 |
 | # stars            | 202 |
 
 ## Links

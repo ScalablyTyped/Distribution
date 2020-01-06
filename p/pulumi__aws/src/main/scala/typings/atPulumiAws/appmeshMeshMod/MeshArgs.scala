@@ -7,19 +7,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MeshArgs extends js.Object {
   /**
     * The name to use for the service mesh.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * The service mesh specification to apply.
     */
-  val spec: js.UndefOr[Input[MeshSpec]] = js.undefined
+  val spec: js.UndefOr[Input[MeshSpec]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object MeshArgs {

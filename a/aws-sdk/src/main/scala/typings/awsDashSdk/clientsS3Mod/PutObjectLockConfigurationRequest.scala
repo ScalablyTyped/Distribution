@@ -4,24 +4,25 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PutObjectLockConfigurationRequest extends js.Object {
   /**
-    * The bucket whose object lock configuration you want to create or replace.
+    * The bucket whose Object Lock configuration you want to create or replace.
     */
-  var Bucket: BucketName
+  var Bucket: BucketName = js.native
   /**
     * The MD5 hash for the request body.
     */
-  var ContentMD5: js.UndefOr[typings.awsDashSdk.clientsS3Mod.ContentMD5] = js.undefined
+  var ContentMD5: js.UndefOr[typings.awsDashSdk.clientsS3Mod.ContentMD5] = js.native
   /**
-    * The object lock configuration that you want to apply to the specified bucket.
+    * The Object Lock configuration that you want to apply to the specified bucket.
     */
-  var ObjectLockConfiguration: js.UndefOr[typings.awsDashSdk.clientsS3Mod.ObjectLockConfiguration] = js.undefined
-  var RequestPayer: js.UndefOr[typings.awsDashSdk.clientsS3Mod.RequestPayer] = js.undefined
+  var ObjectLockConfiguration: js.UndefOr[typings.awsDashSdk.clientsS3Mod.ObjectLockConfiguration] = js.native
+  var RequestPayer: js.UndefOr[typings.awsDashSdk.clientsS3Mod.RequestPayer] = js.native
   /**
-    * A token to allow Amazon S3 object lock to be enabled for an existing bucket.
+    * A token to allow Object Lock to be enabled for an existing bucket.
     */
-  var Token: js.UndefOr[ObjectLockToken] = js.undefined
+  var Token: js.UndefOr[ObjectLockToken] = js.native
 }
 
 object PutObjectLockConfigurationRequest {
@@ -33,11 +34,11 @@ object PutObjectLockConfigurationRequest {
     RequestPayer: RequestPayer = null,
     Token: ObjectLockToken = null
   ): PutObjectLockConfigurationRequest = {
-    val __obj = js.Dynamic.literal(Bucket = Bucket)
-    if (ContentMD5 != null) __obj.updateDynamic("ContentMD5")(ContentMD5)
-    if (ObjectLockConfiguration != null) __obj.updateDynamic("ObjectLockConfiguration")(ObjectLockConfiguration)
+    val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
+    if (ContentMD5 != null) __obj.updateDynamic("ContentMD5")(ContentMD5.asInstanceOf[js.Any])
+    if (ObjectLockConfiguration != null) __obj.updateDynamic("ObjectLockConfiguration")(ObjectLockConfiguration.asInstanceOf[js.Any])
     if (RequestPayer != null) __obj.updateDynamic("RequestPayer")(RequestPayer.asInstanceOf[js.Any])
-    if (Token != null) __obj.updateDynamic("Token")(Token)
+    if (Token != null) __obj.updateDynamic("Token")(Token.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutObjectLockConfigurationRequest]
   }
 }

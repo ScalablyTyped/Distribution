@@ -10,9 +10,9 @@ Node SDK for Amazon DynamoDB
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/client-dynamodb-node |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 0 |
-| # downloads        | 303 |
+| # releases         | 10 |
+| # dependents       | 1 |
+| # downloads        | 1857 |
 | # stars            | 0 |
 
 ## Links

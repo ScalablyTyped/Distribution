@@ -17,7 +17,7 @@ package object betterDashSqlite3Mod {
   type SqliteError = Instantiable2[
     /* message */ String, 
     /* code */ String, 
-    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias better-sqlite3.better-sqlite3.SqliteError */ js.Object
+    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias better-sqlite3.better-sqlite3.SqliteError */ js.Object
   ]
   type Statement[BindParameters /* <: js.Array[_] | js.Object */] = typings.betterDashSqlite3.betterDashSqlite3Mod.BetterSqlite3.Statement[js.Array[BindParameters] | BindParameters]
   type Transaction = typings.betterDashSqlite3.betterDashSqlite3Mod.BetterSqlite3.Transaction[VariableArgFunction]

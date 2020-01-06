@@ -10,9 +10,9 @@ React Native Restart Component
 | ------------------ | :-------------: |
 | Full name          | react-native-restart |
 | Keywords           | react-component, react-native, ios, android, restart |
-| # releases         | 9 |
+| # releases         | 8 |
 | # dependents       | 4 |
-| # downloads        | 407724 |
+| # downloads        | 752160 |
 | # stars            | 3 |
 
 ## Links

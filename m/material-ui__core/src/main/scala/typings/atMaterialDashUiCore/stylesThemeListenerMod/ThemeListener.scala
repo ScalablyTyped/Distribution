@@ -4,10 +4,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ThemeListener[S] extends js.Object {
-  def initial(context: MuiContext[S]): S | Null
-  def subscribe(context: MuiContext[S], callback: js.Function1[/* state */ S, Unit]): Double | Null
-  def unsubscribe(context: MuiContext[S], subscriptionId: Double): Unit
+  def initial(context: MuiContext[S]): S | Null = js.native
+  def subscribe(context: MuiContext[S], callback: js.Function1[/* state */ S, Unit]): Double | Null = js.native
+  def unsubscribe(context: MuiContext[S], subscriptionId: Double): Unit = js.native
 }
 
 object ThemeListener {

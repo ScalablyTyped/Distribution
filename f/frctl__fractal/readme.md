@@ -10,9 +10,9 @@ A tool to help you build and document web component libraries and then integrate
 | ------------------ | :-------------: |
 | Full name          | @frctl/fractal |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 47 |
-| # downloads        | 740864 |
+| # releases         | 7 |
+| # dependents       | 63 |
+| # downloads        | 675976 |
 | # stars            | 2 |
 
 ## Links

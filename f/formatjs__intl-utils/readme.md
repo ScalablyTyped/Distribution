@@ -10,9 +10,9 @@ Smartly determine best unit for relative time format
 | ------------------ | :-------------: |
 | Full name          | @formatjs/intl-utils |
 | Keywords           | intl, i18n, relative, moment, format, date |
-| # releases         | 19 |
-| # dependents       | 0 |
-| # downloads        | 5436 |
+| # releases         | 38 |
+| # dependents       | 5 |
+| # downloads        | 1809917 |
 | # stars            | 0 |
 
 ## Links

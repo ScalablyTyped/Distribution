@@ -11,8 +11,8 @@ An Ed25519 implementation for node.js
 | Full name          | ed25519 |
 | Keywords           | Ed25519, elliptic, curve, crypto, Curve25519, EdDSA |
 | # releases         | 1 |
-| # dependents       | 57 |
-| # downloads        | 319366 |
+| # dependents       | 55 |
+| # downloads        | 383651 |
 | # stars            | 2 |
 
 ## Links

@@ -10,13 +10,15 @@ Animate on scroll library
 | ------------------ | :-------------: |
 | Full name          | aos |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 10 |
-| # downloads        | 547097 |
+| # releases         | 12 |
+| # dependents       | 17 |
+| # downloads        | 927019 |
 | # stars            | 8 |
 
 ## Links
 - [Homepage](https://michalsnik.github.io/aos/)
+- [Bugs](https://github.com/michalsnik/aos/issues)
+- [Repository](https://github.com/michalsnik/aos)
 - [Npm](https://www.npmjs.com/package/aos)
     
 

@@ -11,8 +11,8 @@ evaluate statically-analyzable expressions
 | Full name          | static-eval |
 | Keywords           | static, eval, expression, esprima, ast, abstract, syntax, tree, analysis |
 | # releases         | 4 |
-| # dependents       | 46 |
-| # downloads        | 21033924 |
+| # dependents       | 47 |
+| # downloads        | 37079343 |
 | # stars            | 6 |
 
 ## Links

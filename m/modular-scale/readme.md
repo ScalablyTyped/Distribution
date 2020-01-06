@@ -11,8 +11,8 @@ Module for generating a modular scale.
 | Full name          | modular-scale |
 | Keywords           | modular, scale, typography, design, css |
 | # releases         | 5 |
-| # dependents       | 9 |
-| # downloads        | 23523 |
+| # dependents       | 11 |
+| # downloads        | 28234 |
 | # stars            | 0 |
 
 ## Links

@@ -12,7 +12,7 @@ Parse human-readable date to range of dates.
 | Keywords           | date, human, parse, range |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 118 |
+| # downloads        | 136 |
 | # stars            | 0 |
 
 ## Links

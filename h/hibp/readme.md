@@ -10,9 +10,9 @@ A Promise-based API for querying the 'Have I been pwned?' service.
 | ------------------ | :-------------: |
 | Full name          | hibp |
 | Keywords           | haveibeenpwned, hibp, pwned, security, hack, dump, breach, pastes, passwords |
-| # releases         | 32 |
-| # dependents       | 2 |
-| # downloads        | 19313 |
+| # releases         | 22 |
+| # dependents       | 5 |
+| # downloads        | 52096 |
 | # stars            | 1 |
 
 ## Links

@@ -4,15 +4,15 @@
 Typings are for version 7.0
 
 ## Library description:
-Minify images
+Minify images seamlessly
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | imagemin |
 | Keywords           | minify, compress, image, images, jpeg, jpg, png, gif, svg |
 | # releases         | 5 |
-| # dependents       | 409 |
-| # downloads        | 23914264 |
+| # dependents       | 527 |
+| # downloads        | 34413926 |
 | # stars            | 117 |
 
 ## Links

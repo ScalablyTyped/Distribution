@@ -11,8 +11,8 @@ FSA-compliant promise middleware for Redux.
 | Full name          | redux-promise |
 | Keywords           | redux, promise, middleware, redux-middleware, fsa, flux |
 | # releases         | 2 |
-| # dependents       | 116 |
-| # downloads        | 2565195 |
+| # dependents       | 130 |
+| # downloads        | 2886737 |
 | # stars            | 44 |
 
 ## Links

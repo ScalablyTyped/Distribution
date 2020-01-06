@@ -6,15 +6,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ThingPrincipalAttachmentArgs extends js.Object {
   /**
     * The AWS IoT Certificate ARN or Amazon Cognito Identity ID.
     */
-  val principal: Input[ARN]
+  val principal: Input[ARN] = js.native
   /**
     * The name of the thing.
     */
-  val thing: Input[String]
+  val thing: Input[String] = js.native
 }
 
 object ThingPrincipalAttachmentArgs {

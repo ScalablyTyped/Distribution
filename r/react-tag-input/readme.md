@@ -10,9 +10,9 @@ React tags is a fantastically simple tagging component for your React projects
 | ------------------ | :-------------: |
 | Full name          | react-tag-input |
 | Keywords           | react, drag-drop, tags, tag input, react-component, autosuggest |
-| # releases         | 29 |
-| # dependents       | 13 |
-| # downloads        | 581612 |
+| # releases         | 25 |
+| # dependents       | 18 |
+| # downloads        | 771145 |
 | # stars            | 9 |
 
 ## Links

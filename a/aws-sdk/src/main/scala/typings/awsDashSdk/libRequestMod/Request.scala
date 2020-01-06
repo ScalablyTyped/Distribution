@@ -1,9 +1,9 @@
 package typings.awsDashSdk.libRequestMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.awsDashSdk.awsDashSdkStrings.build
-import typings.awsDashSdk.awsDashSdkStrings.complete
-import typings.awsDashSdk.awsDashSdkStrings.error
+import typings.awsDashSdk.awsDashSdkStrings.build__
+import typings.awsDashSdk.awsDashSdkStrings.complete__
+import typings.awsDashSdk.awsDashSdkStrings.error__
 import typings.awsDashSdk.awsDashSdkStrings.extractData
 import typings.awsDashSdk.awsDashSdkStrings.extractError
 import typings.awsDashSdk.awsDashSdkStrings.httpData
@@ -12,10 +12,10 @@ import typings.awsDashSdk.awsDashSdkStrings.httpDownloadProgress
 import typings.awsDashSdk.awsDashSdkStrings.httpError
 import typings.awsDashSdk.awsDashSdkStrings.httpHeaders
 import typings.awsDashSdk.awsDashSdkStrings.httpUploadProgress
-import typings.awsDashSdk.awsDashSdkStrings.retry
-import typings.awsDashSdk.awsDashSdkStrings.send
-import typings.awsDashSdk.awsDashSdkStrings.sign
-import typings.awsDashSdk.awsDashSdkStrings.success
+import typings.awsDashSdk.awsDashSdkStrings.retry_
+import typings.awsDashSdk.awsDashSdkStrings.send_
+import typings.awsDashSdk.awsDashSdkStrings.sign__
+import typings.awsDashSdk.awsDashSdkStrings.success__
 import typings.awsDashSdk.awsDashSdkStrings.validate
 import typings.awsDashSdk.libErrorMod.AWSError
 import typings.awsDashSdk.libHttpUnderscoreRequestMod.HttpRequest
@@ -100,9 +100,9 @@ class Request[D, E] protected () extends js.Object {
     * @param {boolean} prepend - If set, prepends listener instead of appending.
     */
   @JSName("onAsync")
-  def onAsync_build(event: build, listener: js.Function1[/* request */ Request[D, E], Unit]): Request[D, E] = js.native
+  def onAsync_build(event: build__, listener: js.Function1[/* request */ Request[D, E], Unit]): Request[D, E] = js.native
   @JSName("onAsync")
-  def onAsync_build(event: build, listener: js.Function1[/* request */ Request[D, E], Unit], prepend: Boolean): Request[D, E] = js.native
+  def onAsync_build(event: build__, listener: js.Function1[/* request */ Request[D, E], Unit], prepend: Boolean): Request[D, E] = js.native
   /**
     * Adds a listener that is triggered whenever a request cycle completes.
     *
@@ -111,9 +111,9 @@ class Request[D, E] protected () extends js.Object {
     * @param {boolean} prepend - If set, prepends listener instead of appending.
     */
   @JSName("onAsync")
-  def onAsync_complete(event: complete, listener: js.Function1[/* response */ Response[D, E], Unit]): Request[D, E] = js.native
+  def onAsync_complete(event: complete__, listener: js.Function1[/* response */ Response[D, E], Unit]): Request[D, E] = js.native
   @JSName("onAsync")
-  def onAsync_complete(event: complete, listener: js.Function1[/* response */ Response[D, E], Unit], prepend: Boolean): Request[D, E] = js.native
+  def onAsync_complete(event: complete__, listener: js.Function1[/* response */ Response[D, E], Unit], prepend: Boolean): Request[D, E] = js.native
   /**
     * Adds a listener that is triggered when an error occurs at any point during the request.
     *
@@ -122,10 +122,10 @@ class Request[D, E] protected () extends js.Object {
     * @param {boolean} prepend - If set, prepends listener instead of appending.
     */
   @JSName("onAsync")
-  def onAsync_error(event: error, listener: js.Function2[/* err */ AWSError, /* response */ Response[D, E], Unit]): Request[D, E] = js.native
+  def onAsync_error(event: error__, listener: js.Function2[/* err */ AWSError, /* response */ Response[D, E], Unit]): Request[D, E] = js.native
   @JSName("onAsync")
   def onAsync_error(
-    event: error,
+    event: error__,
     listener: js.Function2[/* err */ AWSError, /* response */ Response[D, E], Unit],
     prepend: Boolean
   ): Request[D, E] = js.native
@@ -269,9 +269,9 @@ class Request[D, E] protected () extends js.Object {
     * @param {boolean} prepend - If set, prepends listener instead of appending.
     */
   @JSName("onAsync")
-  def onAsync_retry(event: retry, listener: js.Function1[/* response */ Response[D, E], Unit]): Request[D, E] = js.native
+  def onAsync_retry(event: retry_, listener: js.Function1[/* response */ Response[D, E], Unit]): Request[D, E] = js.native
   @JSName("onAsync")
-  def onAsync_retry(event: retry, listener: js.Function1[/* response */ Response[D, E], Unit], prepend: Boolean): Request[D, E] = js.native
+  def onAsync_retry(event: retry_, listener: js.Function1[/* response */ Response[D, E], Unit], prepend: Boolean): Request[D, E] = js.native
   /**
     * Adds a listener that is triggered when a request is ready to be sent.
     *
@@ -280,9 +280,9 @@ class Request[D, E] protected () extends js.Object {
     * @param {boolean} prepend - If set, prepends listener instead of appending.
     */
   @JSName("onAsync")
-  def onAsync_send(event: send, listener: js.Function1[/* response */ Response[D, E], Unit]): Request[D, E] = js.native
+  def onAsync_send(event: send_, listener: js.Function1[/* response */ Response[D, E], Unit]): Request[D, E] = js.native
   @JSName("onAsync")
-  def onAsync_send(event: send, listener: js.Function1[/* response */ Response[D, E], Unit], prepend: Boolean): Request[D, E] = js.native
+  def onAsync_send(event: send_, listener: js.Function1[/* response */ Response[D, E], Unit], prepend: Boolean): Request[D, E] = js.native
   /**
     * Adds a listener that is triggered when a request is being signed.
     *
@@ -291,9 +291,9 @@ class Request[D, E] protected () extends js.Object {
     * @param {boolean} prepend - If set, prepends listener instead of appending.
     */
   @JSName("onAsync")
-  def onAsync_sign(event: sign, listener: js.Function1[/* request */ Request[D, E], Unit]): Request[D, E] = js.native
+  def onAsync_sign(event: sign__, listener: js.Function1[/* request */ Request[D, E], Unit]): Request[D, E] = js.native
   @JSName("onAsync")
-  def onAsync_sign(event: sign, listener: js.Function1[/* request */ Request[D, E], Unit], prepend: Boolean): Request[D, E] = js.native
+  def onAsync_sign(event: sign__, listener: js.Function1[/* request */ Request[D, E], Unit], prepend: Boolean): Request[D, E] = js.native
   /**
     * Adds a listener that is triggered when the request completed successfully.
     *
@@ -302,9 +302,9 @@ class Request[D, E] protected () extends js.Object {
     * @param {boolean} prepend - If set, prepends listener instead of appending.
     */
   @JSName("onAsync")
-  def onAsync_success(event: success, listener: js.Function1[/* response */ Response[D, E], Unit]): Request[D, E] = js.native
+  def onAsync_success(event: success__, listener: js.Function1[/* response */ Response[D, E], Unit]): Request[D, E] = js.native
   @JSName("onAsync")
-  def onAsync_success(event: success, listener: js.Function1[/* response */ Response[D, E], Unit], prepend: Boolean): Request[D, E] = js.native
+  def onAsync_success(event: success__, listener: js.Function1[/* response */ Response[D, E], Unit], prepend: Boolean): Request[D, E] = js.native
   /**
     * Adds a listener that is triggered when a request is being validated.
     *
@@ -324,9 +324,9 @@ class Request[D, E] protected () extends js.Object {
     * @param {boolean} prepend - If set, prepends listener instead of appending.
     */
   @JSName("on")
-  def on_build(event: build, listener: js.Function1[/* request */ Request[D, E], Unit]): Request[D, E] = js.native
+  def on_build(event: build__, listener: js.Function1[/* request */ Request[D, E], Unit]): Request[D, E] = js.native
   @JSName("on")
-  def on_build(event: build, listener: js.Function1[/* request */ Request[D, E], Unit], prepend: Boolean): Request[D, E] = js.native
+  def on_build(event: build__, listener: js.Function1[/* request */ Request[D, E], Unit], prepend: Boolean): Request[D, E] = js.native
   /**
     * Adds a listener that is triggered whenever a request cycle completes.
     *
@@ -335,9 +335,9 @@ class Request[D, E] protected () extends js.Object {
     * @param {boolean} prepend - If set, prepends listener instead of appending.
     */
   @JSName("on")
-  def on_complete(event: complete, listener: js.Function1[/* response */ Response[D, E], Unit]): Request[D, E] = js.native
+  def on_complete(event: complete__, listener: js.Function1[/* response */ Response[D, E], Unit]): Request[D, E] = js.native
   @JSName("on")
-  def on_complete(event: complete, listener: js.Function1[/* response */ Response[D, E], Unit], prepend: Boolean): Request[D, E] = js.native
+  def on_complete(event: complete__, listener: js.Function1[/* response */ Response[D, E], Unit], prepend: Boolean): Request[D, E] = js.native
   /**
     * Adds a listener that is triggered when an error occurs at any point during the request.
     *
@@ -346,10 +346,10 @@ class Request[D, E] protected () extends js.Object {
     * @param {boolean} prepend - If set, prepends listener instead of appending.
     */
   @JSName("on")
-  def on_error(event: error, listener: js.Function2[/* err */ AWSError, /* response */ Response[D, E], Unit]): Request[D, E] = js.native
+  def on_error(event: error__, listener: js.Function2[/* err */ AWSError, /* response */ Response[D, E], Unit]): Request[D, E] = js.native
   @JSName("on")
   def on_error(
-    event: error,
+    event: error__,
     listener: js.Function2[/* err */ AWSError, /* response */ Response[D, E], Unit],
     prepend: Boolean
   ): Request[D, E] = js.native
@@ -493,9 +493,9 @@ class Request[D, E] protected () extends js.Object {
     * @param {boolean} prepend - If set, prepends listener instead of appending.
     */
   @JSName("on")
-  def on_retry(event: retry, listener: js.Function1[/* response */ Response[D, E], Unit]): Request[D, E] = js.native
+  def on_retry(event: retry_, listener: js.Function1[/* response */ Response[D, E], Unit]): Request[D, E] = js.native
   @JSName("on")
-  def on_retry(event: retry, listener: js.Function1[/* response */ Response[D, E], Unit], prepend: Boolean): Request[D, E] = js.native
+  def on_retry(event: retry_, listener: js.Function1[/* response */ Response[D, E], Unit], prepend: Boolean): Request[D, E] = js.native
   /**
     * Adds a listener that is triggered when a request is ready to be sent.
     *
@@ -504,9 +504,9 @@ class Request[D, E] protected () extends js.Object {
     * @param {boolean} prepend - If set, prepends listener instead of appending.
     */
   @JSName("on")
-  def on_send(event: send, listener: js.Function1[/* response */ Response[D, E], Unit]): Request[D, E] = js.native
+  def on_send(event: send_, listener: js.Function1[/* response */ Response[D, E], Unit]): Request[D, E] = js.native
   @JSName("on")
-  def on_send(event: send, listener: js.Function1[/* response */ Response[D, E], Unit], prepend: Boolean): Request[D, E] = js.native
+  def on_send(event: send_, listener: js.Function1[/* response */ Response[D, E], Unit], prepend: Boolean): Request[D, E] = js.native
   /**
     * Adds a listener that is triggered when a request is being signed.
     *
@@ -515,9 +515,9 @@ class Request[D, E] protected () extends js.Object {
     * @param {boolean} prepend - If set, prepends listener instead of appending.
     */
   @JSName("on")
-  def on_sign(event: sign, listener: js.Function1[/* request */ Request[D, E], Unit]): Request[D, E] = js.native
+  def on_sign(event: sign__, listener: js.Function1[/* request */ Request[D, E], Unit]): Request[D, E] = js.native
   @JSName("on")
-  def on_sign(event: sign, listener: js.Function1[/* request */ Request[D, E], Unit], prepend: Boolean): Request[D, E] = js.native
+  def on_sign(event: sign__, listener: js.Function1[/* request */ Request[D, E], Unit], prepend: Boolean): Request[D, E] = js.native
   /**
     * Adds a listener that is triggered when the request completed successfully.
     *
@@ -526,9 +526,9 @@ class Request[D, E] protected () extends js.Object {
     * @param {boolean} prepend - If set, prepends listener instead of appending.
     */
   @JSName("on")
-  def on_success(event: success, listener: js.Function1[/* response */ Response[D, E], Unit]): Request[D, E] = js.native
+  def on_success(event: success__, listener: js.Function1[/* response */ Response[D, E], Unit]): Request[D, E] = js.native
   @JSName("on")
-  def on_success(event: success, listener: js.Function1[/* response */ Response[D, E], Unit], prepend: Boolean): Request[D, E] = js.native
+  def on_success(event: success__, listener: js.Function1[/* response */ Response[D, E], Unit], prepend: Boolean): Request[D, E] = js.native
   /**
     * Adds a listener that is triggered when a request is being validated.
     *

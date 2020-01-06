@@ -4,10 +4,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UpdateJobOutput extends js.Object {
-  var ArtifactList: js.UndefOr[typings.awsDashSdk.clientsImportexportMod.ArtifactList] = js.undefined
-  var Success: js.UndefOr[typings.awsDashSdk.clientsImportexportMod.Success] = js.undefined
-  var WarningMessage: js.UndefOr[typings.awsDashSdk.clientsImportexportMod.WarningMessage] = js.undefined
+  var ArtifactList: js.UndefOr[typings.awsDashSdk.clientsImportexportMod.ArtifactList] = js.native
+  var Success: js.UndefOr[typings.awsDashSdk.clientsImportexportMod.Success] = js.native
+  var WarningMessage: js.UndefOr[typings.awsDashSdk.clientsImportexportMod.WarningMessage] = js.native
 }
 
 object UpdateJobOutput {
@@ -18,9 +19,9 @@ object UpdateJobOutput {
     WarningMessage: WarningMessage = null
   ): UpdateJobOutput = {
     val __obj = js.Dynamic.literal()
-    if (ArtifactList != null) __obj.updateDynamic("ArtifactList")(ArtifactList)
-    if (!js.isUndefined(Success)) __obj.updateDynamic("Success")(Success)
-    if (WarningMessage != null) __obj.updateDynamic("WarningMessage")(WarningMessage)
+    if (ArtifactList != null) __obj.updateDynamic("ArtifactList")(ArtifactList.asInstanceOf[js.Any])
+    if (!js.isUndefined(Success)) __obj.updateDynamic("Success")(Success.asInstanceOf[js.Any])
+    if (WarningMessage != null) __obj.updateDynamic("WarningMessage")(WarningMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateJobOutput]
   }
 }

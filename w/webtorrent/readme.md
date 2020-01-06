@@ -10,9 +10,9 @@ Streaming torrent client
 | ------------------ | :-------------: |
 | Full name          | webtorrent |
 | Keywords           | bittorrent, bittorrent client, download, mad science, p2p, peer-to-peer, peers, streaming, swarm, torrent, web torrent, webrtc, webrtc data, webtorrent |
-| # releases         | 25 |
-| # dependents       | 86 |
-| # downloads        | 249141 |
+| # releases         | 47 |
+| # dependents       | 93 |
+| # downloads        | 189963 |
 | # stars            | 60 |
 
 ## Links

@@ -299,7 +299,7 @@ object builtBrowserMod extends js.Object {
     /* private */ def executeAsyncScript_(
       script: js.Any,
       description: js.Any,
-      /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param scriptArgs because its type <none> is not an array type */ scriptArgs: js.Any
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param scriptArgs because its type <none> is not an array type */ scriptArgs: js.Any
     ): js.Any = js.native
     /**
       * The same as {@code webdriver.WebDriver.prototype.executeScript},

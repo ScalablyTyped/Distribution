@@ -10,9 +10,9 @@ A lightweight toolset for writing styles in Javascript.
 | ------------------ | :-------------: |
 | Full name          | polished |
 | Keywords           | styled-components, polished, emotion, glamor, css-in-js, inline-styles, react, flow, typescript |
-| # releases         | 52 |
-| # dependents       | 523 |
-| # downloads        | 8507297 |
+| # releases         | 40 |
+| # dependents       | 815 |
+| # downloads        | 38004149 |
 | # stars            | 7 |
 
 ## Links

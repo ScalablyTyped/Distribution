@@ -10,9 +10,9 @@ Returns a filtered copy of an object with only the specified keys, similar to `_
 | ------------------ | :-------------: |
 | Full name          | object.pick |
 | Keywords           | object, pick |
-| # releases         | 2 |
-| # dependents       | 114 |
-| # downloads        | 260123957 |
+| # releases         | 0 |
+| # dependents       | 134 |
+| # downloads        | 376330301 |
 | # stars            | 2 |
 
 ## Links

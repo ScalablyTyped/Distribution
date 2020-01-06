@@ -12,7 +12,7 @@ Typings are for version 1.0
 | Keywords           | .net, date, ticks |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 158 |
+| # downloads        | 242 |
 | # stars            | 0 |
 
 ## Links

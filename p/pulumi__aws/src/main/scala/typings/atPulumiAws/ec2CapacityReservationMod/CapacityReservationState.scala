@@ -9,51 +9,52 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CapacityReservationState extends js.Object {
   /**
     * The Availability Zone in which to create the Capacity Reservation.
     */
-  val availabilityZone: js.UndefOr[Input[String]] = js.undefined
+  val availabilityZone: js.UndefOr[Input[String]] = js.native
   /**
     * Indicates whether the Capacity Reservation supports EBS-optimized instances.
     */
-  val ebsOptimized: js.UndefOr[Input[Boolean]] = js.undefined
+  val ebsOptimized: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The date and time at which the Capacity Reservation expires. When a Capacity Reservation expires, the reserved capacity is released and you can no longer launch instances into it. Valid values: [RFC3339 time string](https://tools.ietf.org/html/rfc3339#section-5.8) (`YYYY-MM-DDTHH:MM:SSZ`)
     */
-  val endDate: js.UndefOr[Input[String]] = js.undefined
+  val endDate: js.UndefOr[Input[String]] = js.native
   /**
     * Indicates the way in which the Capacity Reservation ends. Specify either `unlimited` or `limited`.
     */
-  val endDateType: js.UndefOr[Input[String]] = js.undefined
+  val endDateType: js.UndefOr[Input[String]] = js.native
   /**
     * Indicates whether the Capacity Reservation supports instances with temporary, block-level storage.
     */
-  val ephemeralStorage: js.UndefOr[Input[Boolean]] = js.undefined
+  val ephemeralStorage: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The number of instances for which to reserve capacity.
     */
-  val instanceCount: js.UndefOr[Input[Double]] = js.undefined
+  val instanceCount: js.UndefOr[Input[Double]] = js.native
   /**
     * Indicates the type of instance launches that the Capacity Reservation accepts. Specify either `open` or `targeted`.
     */
-  val instanceMatchCriteria: js.UndefOr[Input[String]] = js.undefined
+  val instanceMatchCriteria: js.UndefOr[Input[String]] = js.native
   /**
     * The type of operating system for which to reserve capacity. Valid options are `Linux/UNIX`, `Red Hat Enterprise Linux`, `SUSE Linux`, `Windows`, `Windows with SQL Server`, `Windows with SQL Server Enterprise`, `Windows with SQL Server Standard` or `Windows with SQL Server Web`.
     */
-  val instancePlatform: js.UndefOr[Input[InstancePlatform]] = js.undefined
+  val instancePlatform: js.UndefOr[Input[InstancePlatform]] = js.native
   /**
     * The instance type for which to reserve capacity.
     */
-  val instanceType: js.UndefOr[Input[InstanceType]] = js.undefined
+  val instanceType: js.UndefOr[Input[InstanceType]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * Indicates the tenancy of the Capacity Reservation. Specify either `default` or `dedicated`.
     */
-  val tenancy: js.UndefOr[Input[Tenancy]] = js.undefined
+  val tenancy: js.UndefOr[Input[Tenancy]] = js.native
 }
 
 object CapacityReservationState {

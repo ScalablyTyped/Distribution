@@ -10,9 +10,9 @@ Create, read and edit .zip files with JavaScript http://stuartk.com/jszip
 | ------------------ | :-------------: |
 | Full name          | jszip |
 | Keywords           | zip, deflate, inflate |
-| # releases         | 5 |
-| # dependents       | 857 |
-| # downloads        | 46411150 |
+| # releases         | 4 |
+| # dependents       | 1133 |
+| # downloads        | 86004960 |
 | # stars            | 49 |
 
 ## Links

@@ -6,15 +6,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BucketPolicyArgs extends js.Object {
   /**
     * The name of the bucket to which to apply the policy.
     */
-  val bucket: Input[String]
-  /**
-    * The text of the policy.
-    */
-  val policy: Input[String | PolicyDocument]
+  val bucket: Input[String] = js.native
+  val policy: Input[String | PolicyDocument] = js.native
 }
 
 object BucketPolicyArgs {

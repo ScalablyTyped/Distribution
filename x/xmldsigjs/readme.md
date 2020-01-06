@@ -10,9 +10,9 @@ XMLDSIGjs provides an implementation of XMLDSIG in Typescript/Javascript based o
 | ------------------ | :-------------: |
 | Full name          | xmldsigjs |
 | Keywords           | xml, xmldsig, webcrypto, signature, rsa, ec |
-| # releases         | 15 |
-| # dependents       | 2 |
-| # downloads        | 3003 |
+| # releases         | 11 |
+| # dependents       | 3 |
+| # downloads        | 6816 |
 | # stars            | 0 |
 
 ## Links

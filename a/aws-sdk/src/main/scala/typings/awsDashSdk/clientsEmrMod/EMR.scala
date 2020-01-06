@@ -261,18 +261,31 @@ trait EMR extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListSecurityConfigurationsOutput, scala.Unit]
   ): Request[ListSecurityConfigurationsOutput, AWSError] = js.native
   /**
-    * Provides a list of steps for the cluster in reverse order unless you specify stepIds with the request.
+    * Provides a list of steps for the cluster in reverse order unless you specify stepIds with the request of filter by StepStates. You can specify a maximum of ten stepIDs.
     */
   def listSteps(): Request[ListStepsOutput, AWSError] = js.native
   def listSteps(callback: js.Function2[/* err */ AWSError, /* data */ ListStepsOutput, scala.Unit]): Request[ListStepsOutput, AWSError] = js.native
   /**
-    * Provides a list of steps for the cluster in reverse order unless you specify stepIds with the request.
+    * Provides a list of steps for the cluster in reverse order unless you specify stepIds with the request of filter by StepStates. You can specify a maximum of ten stepIDs.
     */
   def listSteps(params: ListStepsInput): Request[ListStepsOutput, AWSError] = js.native
   def listSteps(
     params: ListStepsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListStepsOutput, scala.Unit]
   ): Request[ListStepsOutput, AWSError] = js.native
+  /**
+    * Modifies the number of steps that can be executed concurrently for the cluster specified using ClusterID.
+    */
+  def modifyCluster(): Request[ModifyClusterOutput, AWSError] = js.native
+  def modifyCluster(callback: js.Function2[/* err */ AWSError, /* data */ ModifyClusterOutput, scala.Unit]): Request[ModifyClusterOutput, AWSError] = js.native
+  /**
+    * Modifies the number of steps that can be executed concurrently for the cluster specified using ClusterID.
+    */
+  def modifyCluster(params: ModifyClusterInput): Request[ModifyClusterOutput, AWSError] = js.native
+  def modifyCluster(
+    params: ModifyClusterInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyClusterOutput, scala.Unit]
+  ): Request[ModifyClusterOutput, AWSError] = js.native
   /**
     * Modifies the target On-Demand and target Spot capacities for the instance fleet with the specified InstanceFleetID within the cluster specified using ClusterID. The call either succeeds or fails atomically.  The instance fleet configuration is available only in Amazon EMR versions 4.8.0 and later, excluding 5.0.x versions. 
     */
@@ -380,12 +393,12 @@ trait EMR extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, scala.Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
-    *  This member will be deprecated.  Sets whether all AWS Identity and Access Management (IAM) users under your account can access the specified clusters (job flows). This action works on running clusters. You can also set the visibility of a cluster when you launch it using the VisibleToAllUsers parameter of RunJobFlow. The SetVisibleToAllUsers action can be called only by an IAM user who created the cluster or the AWS account that owns the cluster.
+    * Sets the Cluster$VisibleToAllUsers value, which determines whether the cluster is visible to all IAM users of the AWS account associated with the cluster. Only the IAM user who created the cluster or the AWS account root user can call this action. The default value, true, indicates that all IAM users in the AWS account can perform cluster actions if they have the proper IAM policy permissions. If set to false, only the IAM user that created the cluster can perform actions. This action works on running clusters. You can override the default true setting when you create a cluster by using the VisibleToAllUsers parameter with RunJobFlow.
     */
   def setVisibleToAllUsers(): Request[js.Object, AWSError] = js.native
   def setVisibleToAllUsers(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, scala.Unit]): Request[js.Object, AWSError] = js.native
   /**
-    *  This member will be deprecated.  Sets whether all AWS Identity and Access Management (IAM) users under your account can access the specified clusters (job flows). This action works on running clusters. You can also set the visibility of a cluster when you launch it using the VisibleToAllUsers parameter of RunJobFlow. The SetVisibleToAllUsers action can be called only by an IAM user who created the cluster or the AWS account that owns the cluster.
+    * Sets the Cluster$VisibleToAllUsers value, which determines whether the cluster is visible to all IAM users of the AWS account associated with the cluster. Only the IAM user who created the cluster or the AWS account root user can call this action. The default value, true, indicates that all IAM users in the AWS account can perform cluster actions if they have the proper IAM policy permissions. If set to false, only the IAM user that created the cluster can perform actions. This action works on running clusters. You can override the default true setting when you create a cluster by using the VisibleToAllUsers parameter with RunJobFlow.
     */
   def setVisibleToAllUsers(params: SetVisibleToAllUsersInput): Request[js.Object, AWSError] = js.native
   def setVisibleToAllUsers(

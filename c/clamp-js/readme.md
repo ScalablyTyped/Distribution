@@ -12,7 +12,7 @@ Clamps (ie. cuts off) an HTML element's content by adding ellipsis to it if the 
 | Keywords           | clamp, ellipsis, multiline, browser |
 | # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 137842 |
+| # downloads        | 191469 |
 | # stars            | 1 |
 
 ## Links

@@ -4,21 +4,21 @@
 Typings are for version 2.1.1
 
 ## Library description:
-Sentence case a string
+Transform into a lower case with spaces between words, then capitalize the string
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | sentence-case |
-| Keywords           | sentence, case, upper-case, first, lower-case |
-| # releases         | 2 |
-| # dependents       | 14 |
-| # downloads        | 24680592 |
+| Keywords           | sentence, case, lower, capitalize, convert, transform |
+| # releases         | 3 |
+| # dependents       | 20 |
+| # downloads        | 43074087 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/blakeembrey/sentence-case)
-- [Bugs](https://github.com/blakeembrey/sentence-case/issues)
-- [Repository](https://github.com/blakeembrey/sentence-case)
+- [Homepage](https://github.com/blakeembrey/change-case/tree/master/packages/sentence-case#readme)
+- [Bugs](https://github.com/blakeembrey/change-case/issues)
+- [Repository](https://github.com/blakeembrey/change-case)
 - [Npm](https://www.npmjs.com/package/sentence-case)
     
 

@@ -11,8 +11,8 @@ The lodash method `_.toString` exported as a module.
 | Full name          | lodash.tostring |
 | Keywords           | lodash-modularized, tostring |
 | # releases         | 0 |
-| # dependents       | 11 |
-| # downloads        | 2710342 |
+| # dependents       | 14 |
+| # downloads        | 2002620 |
 | # stars            | 0 |
 
 ## Links

@@ -10,6 +10,6 @@ package object jszipMod {
   import typings.std.Blob
   import typings.std.Uint8Array
 
-  type InputFileFormat = String | Uint8Array | js.Array[Double] | ReadableStream | ArrayBuffer | Blob
+  type InputFileFormat = ArrayBuffer | ReadableStream | String | Blob | js.Array[Double] | Uint8Array
   type OnUpdateCallback = js.Function1[/* metadata */ Metadata, Unit]
 }

@@ -10,9 +10,9 @@ Stack navigator component for React Navigation
 | ------------------ | :-------------: |
 | Full name          | react-navigation-stack |
 | Keywords           | react-native-component, react-component, react-native, ios, android, stack |
-| # releases         | 129 |
-| # dependents       | 23 |
-| # downloads        | 7200120 |
+| # releases         | 139 |
+| # dependents       | 31 |
+| # downloads        | 8042442 |
 | # stars            | 0 |
 
 ## Links

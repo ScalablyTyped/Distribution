@@ -24,7 +24,7 @@ trait TypeofClassBluebird
       /* callback */ js.Function3[
         /* resolve */ js.Function1[
           /* thenableOrResult */ js.UndefOr[
-            (/* import warning: RewrittenClass.unapply cls $anonfun was tparam R */ js.Any) | (js.Thenable[/* import warning: RewrittenClass.unapply cls $anonfun was tparam R */ js.Any])
+            (/* import warning: RewrittenClass.unapply cls was tparam R */ js.Any) | (js.Thenable[/* import warning: RewrittenClass.unapply cls was tparam R */ js.Any])
           ], 
           Unit
         ], 

@@ -46,11 +46,11 @@ package object libRelayDashExperimentalEntryPointTypesMod {
   ]
   type InternalEntryPointRepresentation[TEntryPointParams, TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps] = Anon_EntryPointParams[TEntryPointParams, TPreloadedQueries, TPreloadedEntryPoints, TExtraProps]
   type PreloadProps[TPreloadParams, TPreloadedQueries /* <: js.Object */, TPreloadedEntryPoints /* <: js.Object */, TExtraProps, TEnvironmentProviderOptions] = Anon_EntryPointsExtraProps[
-    TPreloadParams, 
     TPreloadedEntryPoints, 
+    TPreloadParams, 
     TExtraProps, 
-    TEnvironmentProviderOptions, 
-    TPreloadedQueries
+    TPreloadedQueries, 
+    TEnvironmentProviderOptions
   ]
   type PreloadableConcreteRequest[TQuery /* <: OperationType */] = js.Object
   type PreloadedEntryPoint[TEntryPointComponent] = Anon_EntryPointsExtraPropsGetComponent[TEntryPointComponent]

@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AcknowledgeJobOutput extends js.Object {
   /**
     * Whether the job worker has received the specified job.
     */
-  var status: js.UndefOr[JobStatus] = js.undefined
+  var status: js.UndefOr[JobStatus] = js.native
 }
 
 object AcknowledgeJobOutput {

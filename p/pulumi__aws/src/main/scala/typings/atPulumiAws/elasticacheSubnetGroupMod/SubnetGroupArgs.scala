@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SubnetGroupArgs extends js.Object {
   /**
     * Description for the cache subnet group. Defaults to "Managed by Pulumi".
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * Name for the cache subnet group. Elasticache converts this name to lowercase.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * List of VPC Subnet IDs for the cache subnet group
     */
-  val subnetIds: Input[js.Array[Input[String]]]
+  val subnetIds: Input[js.Array[Input[String]]] = js.native
 }
 
 object SubnetGroupArgs {

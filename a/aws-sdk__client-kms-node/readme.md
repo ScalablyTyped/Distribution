@@ -10,9 +10,9 @@ Node SDK for AWS Key Management Service
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/client-kms-node |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 0 |
-| # downloads        | 364 |
+| # releases         | 10 |
+| # dependents       | 1 |
+| # downloads        | 1380 |
 | # stars            | 0 |
 
 ## Links

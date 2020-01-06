@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait CookiesFunction
-  extends Instantiable2[/* request */ IncomingMessage, /* response */ ServerResponse, Cookies]
-     with /**
+  extends /**
   * "options" array of key strings is deprecated, provide using options {"keys": keygrip}
   */
 // tslint:disable-next-line:unified-signatures
@@ -27,7 +26,8 @@ Instantiable3[
       /* response */ ServerResponse, 
       (/* options */ js.Array[String]) | (/* options */ Keygrip) | (/* options */ Option), 
       Cookies
-    ] {
+    ]
+     with Instantiable2[/* request */ IncomingMessage, /* response */ ServerResponse, Cookies] {
   var Cookie: Anon_Attrs = js.native
   def apply(request: IncomingMessage, response: ServerResponse): Cookies = js.native
   /**

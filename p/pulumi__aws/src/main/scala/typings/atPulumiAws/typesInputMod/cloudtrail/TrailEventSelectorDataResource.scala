@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TrailEventSelectorDataResource extends js.Object {
   /**
     * The resource type in which you want to log data events. You can specify only the follwing value: "AWS::S3::Object", "AWS::Lambda::Function"
     */
-  var `type`: Input[String]
+  var `type`: Input[String] = js.native
   /**
     * A list of ARN for the specified S3 buckets and object prefixes..
     */
-  var values: Input[js.Array[Input[String]]]
+  var values: Input[js.Array[Input[String]]] = js.native
 }
 
 object TrailEventSelectorDataResource {

@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ValueWithServiceIds extends js.Object {
   /**
     * Values of the annotation.
     */
-  var AnnotationValue: js.UndefOr[typings.awsDashSdk.clientsXrayMod.AnnotationValue] = js.undefined
+  var AnnotationValue: js.UndefOr[typings.awsDashSdk.clientsXrayMod.AnnotationValue] = js.native
   /**
     * Services to which the annotation applies.
     */
-  var ServiceIds: js.UndefOr[typings.awsDashSdk.clientsXrayMod.ServiceIds] = js.undefined
+  var ServiceIds: js.UndefOr[typings.awsDashSdk.clientsXrayMod.ServiceIds] = js.native
 }
 
 object ValueWithServiceIds {
   @scala.inline
   def apply(AnnotationValue: AnnotationValue = null, ServiceIds: ServiceIds = null): ValueWithServiceIds = {
     val __obj = js.Dynamic.literal()
-    if (AnnotationValue != null) __obj.updateDynamic("AnnotationValue")(AnnotationValue)
-    if (ServiceIds != null) __obj.updateDynamic("ServiceIds")(ServiceIds)
+    if (AnnotationValue != null) __obj.updateDynamic("AnnotationValue")(AnnotationValue.asInstanceOf[js.Any])
+    if (ServiceIds != null) __obj.updateDynamic("ServiceIds")(ServiceIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueWithServiceIds]
   }
 }

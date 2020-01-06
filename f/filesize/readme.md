@@ -10,9 +10,9 @@ JavaScript library to generate a human readable String describing the file size
 | ------------------ | :-------------: |
 | Full name          | filesize |
 | Keywords           | file, filesize, size, readable, file system, bytes, diff |
-| # releases         | 11 |
-| # dependents       | 872 |
-| # downloads        | 130406099 |
+| # releases         | 14 |
+| # dependents       | 1024 |
+| # downloads        | 213667058 |
 | # stars            | 30 |
 
 ## Links

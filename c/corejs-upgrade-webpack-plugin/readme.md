@@ -12,7 +12,7 @@ a webpack plugin that transforms core-js v2 paths to core-js v3 paths
 | Keywords           | core-js, path, resolve, transform, webpack |
 | # releases         | 7 |
 | # dependents       | 1 |
-| # downloads        | 4811229 |
+| # downloads        | 13792144 |
 | # stars            | 0 |
 
 ## Links

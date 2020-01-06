@@ -10,9 +10,9 @@ Time and SMTPE Timecodes conversions
 | ------------------ | :-------------: |
 | Full name          | node-timecodes |
 | Keywords           | node, timecode, smtpe, time, conversion |
-| # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 7112 |
+| # releases         | 0 |
+| # dependents       | 2 |
+| # downloads        | 8690 |
 | # stars            | 0 |
 
 ## Links

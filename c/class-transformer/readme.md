@@ -11,8 +11,8 @@ Proper decorator-based transformation / serialization / deserialization of plain
 | Full name          | class-transformer |
 | Keywords           | - |
 | # releases         | 7 |
-| # dependents       | 307 |
-| # downloads        | 4640421 |
+| # dependents       | 323 |
+| # downloads        | 5150010 |
 | # stars            | 3 |
 
 ## Links

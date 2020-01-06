@@ -4,13 +4,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CreateJobOutput extends js.Object {
-  var ArtifactList: js.UndefOr[typings.awsDashSdk.clientsImportexportMod.ArtifactList] = js.undefined
-  var JobId: js.UndefOr[typings.awsDashSdk.clientsImportexportMod.JobId] = js.undefined
-  var JobType: js.UndefOr[typings.awsDashSdk.clientsImportexportMod.JobType] = js.undefined
-  var Signature: js.UndefOr[typings.awsDashSdk.clientsImportexportMod.Signature] = js.undefined
-  var SignatureFileContents: js.UndefOr[typings.awsDashSdk.clientsImportexportMod.SignatureFileContents] = js.undefined
-  var WarningMessage: js.UndefOr[typings.awsDashSdk.clientsImportexportMod.WarningMessage] = js.undefined
+  var ArtifactList: js.UndefOr[typings.awsDashSdk.clientsImportexportMod.ArtifactList] = js.native
+  var JobId: js.UndefOr[typings.awsDashSdk.clientsImportexportMod.JobId] = js.native
+  var JobType: js.UndefOr[typings.awsDashSdk.clientsImportexportMod.JobType] = js.native
+  var Signature: js.UndefOr[typings.awsDashSdk.clientsImportexportMod.Signature] = js.native
+  var SignatureFileContents: js.UndefOr[typings.awsDashSdk.clientsImportexportMod.SignatureFileContents] = js.native
+  var WarningMessage: js.UndefOr[typings.awsDashSdk.clientsImportexportMod.WarningMessage] = js.native
 }
 
 object CreateJobOutput {
@@ -24,12 +25,12 @@ object CreateJobOutput {
     WarningMessage: WarningMessage = null
   ): CreateJobOutput = {
     val __obj = js.Dynamic.literal()
-    if (ArtifactList != null) __obj.updateDynamic("ArtifactList")(ArtifactList)
-    if (JobId != null) __obj.updateDynamic("JobId")(JobId)
+    if (ArtifactList != null) __obj.updateDynamic("ArtifactList")(ArtifactList.asInstanceOf[js.Any])
+    if (JobId != null) __obj.updateDynamic("JobId")(JobId.asInstanceOf[js.Any])
     if (JobType != null) __obj.updateDynamic("JobType")(JobType.asInstanceOf[js.Any])
-    if (Signature != null) __obj.updateDynamic("Signature")(Signature)
-    if (SignatureFileContents != null) __obj.updateDynamic("SignatureFileContents")(SignatureFileContents)
-    if (WarningMessage != null) __obj.updateDynamic("WarningMessage")(WarningMessage)
+    if (Signature != null) __obj.updateDynamic("Signature")(Signature.asInstanceOf[js.Any])
+    if (SignatureFileContents != null) __obj.updateDynamic("SignatureFileContents")(SignatureFileContents.asInstanceOf[js.Any])
+    if (WarningMessage != null) __obj.updateDynamic("WarningMessage")(WarningMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateJobOutput]
   }
 }

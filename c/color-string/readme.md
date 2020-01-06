@@ -11,8 +11,8 @@ Parser and generator for CSS color strings
 | Full name          | color-string |
 | Keywords           | color, colour, rgb, css |
 | # releases         | 2 |
-| # dependents       | 58 |
-| # downloads        | 187697183 |
+| # dependents       | 76 |
+| # downloads        | 275727205 |
 | # stars            | 3 |
 
 ## Links

@@ -11,8 +11,8 @@ Multi-value map syntax for D3 selections.
 | Full name          | d3-selection-multi |
 | Keywords           | d3, d3-module, dom, selection |
 | # releases         | 0 |
-| # dependents       | 35 |
-| # downloads        | 614181 |
+| # dependents       | 39 |
+| # downloads        | 972078 |
 | # stars            | 0 |
 
 ## Links

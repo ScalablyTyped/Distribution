@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LaunchTemplateCapacityReservationSpecification extends js.Object {
-  var capacityReservationPreference: js.UndefOr[Input[String]] = js.undefined
-  var capacityReservationTarget: js.UndefOr[Input[LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget]] = js.undefined
+  var capacityReservationPreference: js.UndefOr[Input[String]] = js.native
+  var capacityReservationTarget: js.UndefOr[Input[LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget]] = js.native
 }
 
 object LaunchTemplateCapacityReservationSpecification {

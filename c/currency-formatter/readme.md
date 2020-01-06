@@ -11,8 +11,8 @@ A simple Javascript utility that helps you to display currency properly
 | Full name          | currency-formatter |
 | Keywords           | format, currency, money |
 | # releases         | 14 |
-| # dependents       | 48 |
-| # downloads        | 1476877 |
+| # dependents       | 57 |
+| # downloads        | 2020376 |
 | # stars            | 8 |
 
 ## Links

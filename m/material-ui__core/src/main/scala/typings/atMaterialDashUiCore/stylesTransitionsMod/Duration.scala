@@ -5,14 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Duration extends js.Object {
-  var complex: Double
-  var enteringScreen: Double
-  var leavingScreen: Double
-  var short: Double
-  var shorter: Double
-  var shortest: Double
-  var standard: Double
+  var complex: Double = js.native
+  var enteringScreen: Double = js.native
+  var leavingScreen: Double = js.native
+  var short: Double = js.native
+  var shorter: Double = js.native
+  var shortest: Double = js.native
+  var standard: Double = js.native
 }
 
 object Duration {

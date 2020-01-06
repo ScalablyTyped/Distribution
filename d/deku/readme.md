@@ -10,9 +10,9 @@ Render interfaces using pure functions and virtual DOM
 | ------------------ | :-------------: |
 | Full name          | deku |
 | Keywords           | deku, functional, react, virtual, dom, elm, redux |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 31 |
-| # downloads        | 22286 |
+| # downloads        | 22665 |
 | # stars            | 6 |
 
 ## Links

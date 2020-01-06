@@ -1,7 +1,7 @@
 
 # Scala.js typings for p-limit
 
-Typings are for version 2.2.1
+Typings are for version 2.2.2
 
 ## Library description:
 Run multiple promise-returning & async functions with limited concurrency
@@ -10,9 +10,9 @@ Run multiple promise-returning & async functions with limited concurrency
 | ------------------ | :-------------: |
 | Full name          | p-limit |
 | Keywords           | promise, limit, limited, concurrency, throttle, throat, rate, batch, ratelimit, task, queue, async, await, promises, bluebird |
-| # releases         | 4 |
-| # dependents       | 146 |
-| # downloads        | 313623825 |
+| # releases         | 8 |
+| # dependents       | 253 |
+| # downloads        | 746309442 |
 | # stars            | 5 |
 
 ## Links

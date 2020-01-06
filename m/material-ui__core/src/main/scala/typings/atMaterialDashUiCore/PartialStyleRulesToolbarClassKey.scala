@@ -6,11 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/Toolbar.ToolbarClassKey>> */
+@js.native
 trait PartialStyleRulesToolbarClassKey extends js.Object {
-  var dense: js.UndefOr[CSSProperties] = js.undefined
-  var gutters: js.UndefOr[CSSProperties] = js.undefined
-  var regular: js.UndefOr[CSSProperties] = js.undefined
-  var root: js.UndefOr[CSSProperties] = js.undefined
+  var dense: js.UndefOr[CSSProperties] = js.native
+  var gutters: js.UndefOr[CSSProperties] = js.native
+  var regular: js.UndefOr[CSSProperties] = js.native
+  var root: js.UndefOr[CSSProperties] = js.native
 }
 
 object PartialStyleRulesToolbarClassKey {

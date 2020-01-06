@@ -10,9 +10,9 @@ An efficient data structure for matching and querying elements against a large s
 | ------------------ | :-------------: |
 | Full name          | selector-set |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 4 |
 | # dependents       | 8 |
-| # downloads        | 77865 |
+| # downloads        | 104679 |
 | # stars            | 0 |
 
 ## Links

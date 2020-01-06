@@ -6,13 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/IconButton.IconButtonClassKey>> */
+@js.native
 trait PartialStyleRulesIconButtonClassKey extends js.Object {
-  var colorInherit: js.UndefOr[CSSProperties] = js.undefined
-  var colorPrimary: js.UndefOr[CSSProperties] = js.undefined
-  var colorSecondary: js.UndefOr[CSSProperties] = js.undefined
-  var disabled: js.UndefOr[CSSProperties] = js.undefined
-  var label: js.UndefOr[CSSProperties] = js.undefined
-  var root: js.UndefOr[CSSProperties] = js.undefined
+  var colorInherit: js.UndefOr[CSSProperties] = js.native
+  var colorPrimary: js.UndefOr[CSSProperties] = js.native
+  var colorSecondary: js.UndefOr[CSSProperties] = js.native
+  var disabled: js.UndefOr[CSSProperties] = js.native
+  var label: js.UndefOr[CSSProperties] = js.native
+  var root: js.UndefOr[CSSProperties] = js.native
 }
 
 object PartialStyleRulesIconButtonClassKey {

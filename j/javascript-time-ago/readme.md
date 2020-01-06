@@ -10,9 +10,9 @@ International highly customizable relative date/time formatting
 | ------------------ | :-------------: |
 | Full name          | javascript-time-ago |
 | Keywords           | time, ago, relative, format |
-| # releases         | 43 |
-| # dependents       | 21 |
-| # downloads        | 458850 |
+| # releases         | 46 |
+| # dependents       | 23 |
+| # downloads        | 532698 |
 | # stars            | 3 |
 
 ## Links

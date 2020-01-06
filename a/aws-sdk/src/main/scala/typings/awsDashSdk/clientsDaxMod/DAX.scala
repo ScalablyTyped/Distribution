@@ -130,12 +130,12 @@ trait DAX extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeDefaultParametersResponse, Unit]
   ): Request[DescribeDefaultParametersResponse, AWSError] = js.native
   /**
-    * Returns events related to DAX clusters and parameter groups. You can obtain events specific to a particular DAX cluster or parameter group by providing the name as a parameter. By default, only the events occurring within the last hour are returned; however, you can retrieve up to 14 days' worth of events if necessary.
+    * Returns events related to DAX clusters and parameter groups. You can obtain events specific to a particular DAX cluster or parameter group by providing the name as a parameter. By default, only the events occurring within the last 24 hours are returned; however, you can retrieve up to 14 days' worth of events if necessary.
     */
   def describeEvents(): Request[DescribeEventsResponse, AWSError] = js.native
   def describeEvents(callback: js.Function2[/* err */ AWSError, /* data */ DescribeEventsResponse, Unit]): Request[DescribeEventsResponse, AWSError] = js.native
   /**
-    * Returns events related to DAX clusters and parameter groups. You can obtain events specific to a particular DAX cluster or parameter group by providing the name as a parameter. By default, only the events occurring within the last hour are returned; however, you can retrieve up to 14 days' worth of events if necessary.
+    * Returns events related to DAX clusters and parameter groups. You can obtain events specific to a particular DAX cluster or parameter group by providing the name as a parameter. By default, only the events occurring within the last 24 hours are returned; however, you can retrieve up to 14 days' worth of events if necessary.
     */
   def describeEvents(params: DescribeEventsRequest): Request[DescribeEventsResponse, AWSError] = js.native
   def describeEvents(
@@ -208,12 +208,12 @@ trait DAX extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsResponse, Unit]
   ): Request[ListTagsResponse, AWSError] = js.native
   /**
-    * Reboots a single node of a DAX cluster. The reboot action takes place as soon as possible. During the reboot, the node status is set to REBOOTING.
+    * Reboots a single node of a DAX cluster. The reboot action takes place as soon as possible. During the reboot, the node status is set to REBOOTING.   RebootNode restarts the DAX engine process and does not remove the contents of the cache.  
     */
   def rebootNode(): Request[RebootNodeResponse, AWSError] = js.native
   def rebootNode(callback: js.Function2[/* err */ AWSError, /* data */ RebootNodeResponse, Unit]): Request[RebootNodeResponse, AWSError] = js.native
   /**
-    * Reboots a single node of a DAX cluster. The reboot action takes place as soon as possible. During the reboot, the node status is set to REBOOTING.
+    * Reboots a single node of a DAX cluster. The reboot action takes place as soon as possible. During the reboot, the node status is set to REBOOTING.   RebootNode restarts the DAX engine process and does not remove the contents of the cache.  
     */
   def rebootNode(params: RebootNodeRequest): Request[RebootNodeResponse, AWSError] = js.native
   def rebootNode(

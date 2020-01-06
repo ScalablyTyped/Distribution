@@ -4,15 +4,15 @@
 Typings are for version 2.0
 
 ## Library description:
-GraphQL API Koa middleware; the first Node.js GraphQL server to support native ESM.
+GraphQL execution and error handling middleware written from scratch for Koa.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | graphql-api-koa |
-| Keywords           | graphql, api, koa, esm, mjs |
-| # releases         | 11 |
-| # dependents       | 1 |
-| # downloads        | 1825 |
+| Keywords           | graphql, api, koa |
+| # releases         | 15 |
+| # dependents       | 2 |
+| # downloads        | 4075 |
 | # stars            | 0 |
 
 ## Links

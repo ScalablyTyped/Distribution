@@ -9,9 +9,9 @@ Export TypeScript .d.ts files as an external module definition
 | ------------------ | :-------------: |
 | Full name          | dts-bundle |
 | Keywords           | typescript, definition, bundle, export, d.ts |
-| # releases         | 2 |
-| # dependents       | 36 |
-| # downloads        | 535969 |
+| # releases         | 0 |
+| # dependents       | 41 |
+| # downloads        | 588233 |
 | # stars            | 2 |
 
 ## Links

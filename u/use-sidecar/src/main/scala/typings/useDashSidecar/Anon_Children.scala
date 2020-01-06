@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Children[T /* <: js.Array[_] */] extends js.Object {
   def children(
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param prop because its type T is not an array type */ prop: T
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param prop because its type T is not an array type */ prop: T
   ): js.Any
 }
 

@@ -4,12 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ResourceDataSyncS3Destination extends js.Object {
-  var bucketName: String
-  var kmsKeyArn: js.UndefOr[String] = js.undefined
-  var prefix: js.UndefOr[String] = js.undefined
-  var region: String
-  var syncFormat: js.UndefOr[String] = js.undefined
+  var bucketName: String = js.native
+  var kmsKeyArn: js.UndefOr[String] = js.native
+  var prefix: js.UndefOr[String] = js.native
+  var region: String = js.native
+  var syncFormat: js.UndefOr[String] = js.native
 }
 
 object ResourceDataSyncS3Destination {
@@ -21,10 +22,10 @@ object ResourceDataSyncS3Destination {
     prefix: String = null,
     syncFormat: String = null
   ): ResourceDataSyncS3Destination = {
-    val __obj = js.Dynamic.literal(bucketName = bucketName, region = region)
-    if (kmsKeyArn != null) __obj.updateDynamic("kmsKeyArn")(kmsKeyArn)
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
-    if (syncFormat != null) __obj.updateDynamic("syncFormat")(syncFormat)
+    val __obj = js.Dynamic.literal(bucketName = bucketName.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any])
+    if (kmsKeyArn != null) __obj.updateDynamic("kmsKeyArn")(kmsKeyArn.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    if (syncFormat != null) __obj.updateDynamic("syncFormat")(syncFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceDataSyncS3Destination]
   }
 }

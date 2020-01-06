@@ -6,13 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/ListItemText.ListItemTextClassKey>> */
+@js.native
 trait PartialStyleRulesListItemTextClassKey extends js.Object {
-  var dense: js.UndefOr[CSSProperties] = js.undefined
-  var inset: js.UndefOr[CSSProperties] = js.undefined
-  var primary: js.UndefOr[CSSProperties] = js.undefined
-  var root: js.UndefOr[CSSProperties] = js.undefined
-  var secondary: js.UndefOr[CSSProperties] = js.undefined
-  var textDense: js.UndefOr[CSSProperties] = js.undefined
+  var dense: js.UndefOr[CSSProperties] = js.native
+  var inset: js.UndefOr[CSSProperties] = js.native
+  var primary: js.UndefOr[CSSProperties] = js.native
+  var root: js.UndefOr[CSSProperties] = js.native
+  var secondary: js.UndefOr[CSSProperties] = js.native
+  var textDense: js.UndefOr[CSSProperties] = js.native
 }
 
 object PartialStyleRulesListItemTextClassKey {

@@ -10,9 +10,9 @@ Type checking and DDD for JavaScript
 | ------------------ | :-------------: |
 | Full name          | tcomb |
 | Keywords           | type, combinators, checking, safety, model, domain, debugging, immutable, DDD, JSON, store |
-| # releases         | 10 |
-| # dependents       | 141 |
-| # downloads        | 10191837 |
+| # releases         | 6 |
+| # dependents       | 150 |
+| # downloads        | 13615129 |
 | # stars            | 7 |
 
 ## Links

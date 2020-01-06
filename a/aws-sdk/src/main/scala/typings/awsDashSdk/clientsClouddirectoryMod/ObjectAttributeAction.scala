@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ObjectAttributeAction extends js.Object {
   /**
     * A type that can be either Update or Delete.
     */
-  var ObjectAttributeActionType: js.UndefOr[UpdateActionType] = js.undefined
+  var ObjectAttributeActionType: js.UndefOr[UpdateActionType] = js.native
   /**
     * The value that you want to update to.
     */
-  var ObjectAttributeUpdateValue: js.UndefOr[TypedAttributeValue] = js.undefined
+  var ObjectAttributeUpdateValue: js.UndefOr[TypedAttributeValue] = js.native
 }
 
 object ObjectAttributeAction {
@@ -23,7 +24,7 @@ object ObjectAttributeAction {
   ): ObjectAttributeAction = {
     val __obj = js.Dynamic.literal()
     if (ObjectAttributeActionType != null) __obj.updateDynamic("ObjectAttributeActionType")(ObjectAttributeActionType.asInstanceOf[js.Any])
-    if (ObjectAttributeUpdateValue != null) __obj.updateDynamic("ObjectAttributeUpdateValue")(ObjectAttributeUpdateValue)
+    if (ObjectAttributeUpdateValue != null) __obj.updateDynamic("ObjectAttributeUpdateValue")(ObjectAttributeUpdateValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectAttributeAction]
   }
 }

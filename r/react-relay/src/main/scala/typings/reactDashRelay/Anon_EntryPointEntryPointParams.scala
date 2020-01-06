@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_EntryPointEntryPointParams[TPreloadedQueries, TRuntimeProps, TExtraProps, TPreloadedEntryPoints, TEntryPointParams] extends js.Object {
+trait Anon_EntryPointEntryPointParams[TEntryPointParams, TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps] extends js.Object {
   var entryPoint: EntryPoint[
     TEntryPointParams, 
     EntryPointComponent[TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps]
@@ -20,7 +20,7 @@ trait Anon_EntryPointEntryPointParams[TPreloadedQueries, TRuntimeProps, TExtraPr
 
 object Anon_EntryPointEntryPointParams {
   @scala.inline
-  def apply[TPreloadedQueries, TRuntimeProps, TExtraProps, TPreloadedEntryPoints, TEntryPointParams](
+  def apply[TEntryPointParams, TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps](
     entryPoint: EntryPoint[
       TEntryPointParams, 
       EntryPointComponent[TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps]
@@ -28,10 +28,10 @@ object Anon_EntryPointEntryPointParams {
     entryPointParams: TEntryPointParams,
     props: TRuntimeProps,
     environmentProvider: IEnvironmentProvider[EnvironmentProviderOptions] = null
-  ): Anon_EntryPointEntryPointParams[TPreloadedQueries, TRuntimeProps, TExtraProps, TPreloadedEntryPoints, TEntryPointParams] = {
+  ): Anon_EntryPointEntryPointParams[TEntryPointParams, TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps] = {
     val __obj = js.Dynamic.literal(entryPoint = entryPoint.asInstanceOf[js.Any], entryPointParams = entryPointParams.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
     if (environmentProvider != null) __obj.updateDynamic("environmentProvider")(environmentProvider.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Anon_EntryPointEntryPointParams[TPreloadedQueries, TRuntimeProps, TExtraProps, TPreloadedEntryPoints, TEntryPointParams]]
+    __obj.asInstanceOf[Anon_EntryPointEntryPointParams[TEntryPointParams, TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps]]
   }
 }
 

@@ -15,7 +15,7 @@ object PublicQuery
         /* _query */ typings.atFirebaseFirestore.distSrcCoreQueryMod.Query, 
         /* firestore */ Firestore, 
         js.UndefOr[
-          FirestoreDataConverter[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any]
+          FirestoreDataConverter[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any]
         ], 
         Query[js.Object]
       ]

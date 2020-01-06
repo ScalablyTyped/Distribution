@@ -16,42 +16,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TopicRuleState extends js.Object {
   /**
     * The ARN of the topic rule
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
-  val cloudwatchAlarm: js.UndefOr[Input[TopicRuleCloudwatchAlarm]] = js.undefined
-  val cloudwatchMetric: js.UndefOr[Input[TopicRuleCloudwatchMetric]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
+  val cloudwatchAlarm: js.UndefOr[Input[TopicRuleCloudwatchAlarm]] = js.native
+  val cloudwatchMetric: js.UndefOr[Input[TopicRuleCloudwatchMetric]] = js.native
   /**
     * The description of the rule.
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
-  val dynamodb: js.UndefOr[Input[TopicRuleDynamodb]] = js.undefined
-  val elasticsearch: js.UndefOr[Input[TopicRuleElasticsearch]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
+  val dynamodb: js.UndefOr[Input[TopicRuleDynamodb]] = js.native
+  val elasticsearch: js.UndefOr[Input[TopicRuleElasticsearch]] = js.native
   /**
     * Specifies whether the rule is enabled.
     */
-  val enabled: js.UndefOr[Input[Boolean]] = js.undefined
-  val firehose: js.UndefOr[Input[TopicRuleFirehose]] = js.undefined
-  val kinesis: js.UndefOr[Input[TopicRuleKinesis]] = js.undefined
-  val lambda: js.UndefOr[Input[TopicRuleLambda]] = js.undefined
+  val enabled: js.UndefOr[Input[Boolean]] = js.native
+  val firehose: js.UndefOr[Input[TopicRuleFirehose]] = js.native
+  val kinesis: js.UndefOr[Input[TopicRuleKinesis]] = js.native
+  val lambda: js.UndefOr[Input[TopicRuleLambda]] = js.native
   /**
     * The name of the rule.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
-  val republish: js.UndefOr[Input[TopicRuleRepublish]] = js.undefined
-  val s3: js.UndefOr[Input[TopicRuleS3]] = js.undefined
-  val sns: js.UndefOr[Input[TopicRuleSns]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
+  val republish: js.UndefOr[Input[TopicRuleRepublish]] = js.native
+  val s3: js.UndefOr[Input[TopicRuleS3]] = js.native
+  val sns: js.UndefOr[Input[TopicRuleSns]] = js.native
   /**
     * The SQL statement used to query the topic. For more information, see AWS IoT SQL Reference (http://docs.aws.amazon.com/iot/latest/developerguide/iot-rules.html#aws-iot-sql-reference) in the AWS IoT Developer Guide.
     */
-  val sql: js.UndefOr[Input[String]] = js.undefined
+  val sql: js.UndefOr[Input[String]] = js.native
   /**
     * The version of the SQL rules engine to use when evaluating the rule.
     */
-  val sqlVersion: js.UndefOr[Input[String]] = js.undefined
-  val sqs: js.UndefOr[Input[TopicRuleSqs]] = js.undefined
+  val sqlVersion: js.UndefOr[Input[String]] = js.native
+  val sqs: js.UndefOr[Input[TopicRuleSqs]] = js.native
 }
 
 object TopicRuleState {

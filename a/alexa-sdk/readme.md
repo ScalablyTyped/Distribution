@@ -10,9 +10,9 @@ Alexa Skill SDK for Node.js
 | ------------------ | :-------------: |
 | Full name          | alexa-sdk |
 | Keywords           | Alexa, skill, sdk |
-| # releases         | 18 |
-| # dependents       | 18 |
-| # downloads        | 189318 |
+| # releases         | 2 |
+| # dependents       | 19 |
+| # downloads        | 55181 |
 | # stars            | 10 |
 
 ## Links

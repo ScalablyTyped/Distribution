@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BusinessReportContentRange extends js.Object {
   /**
     * The interval of the content range.
     */
-  var Interval: js.UndefOr[BusinessReportInterval] = js.undefined
+  var Interval: js.UndefOr[BusinessReportInterval] = js.native
 }
 
 object BusinessReportContentRange {

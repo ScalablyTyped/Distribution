@@ -10,9 +10,9 @@ Handles keyboard shortcuts in the browser
 | ------------------ | :-------------: |
 | Full name          | combokeys |
 | Keywords           | keyboard, shortcuts, events, browser |
-| # releases         | 3 |
-| # dependents       | 20 |
-| # downloads        | 468807 |
+| # releases         | 2 |
+| # dependents       | 22 |
+| # downloads        | 614776 |
 | # stars            | 9 |
 
 ## Links

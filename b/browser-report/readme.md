@@ -10,9 +10,9 @@ Report browser settings like whatsmybrowser.org.
 | ------------------ | :-------------: |
 | Full name          | browser-report |
 | Keywords           | browser details, browser detection, browser, detect, report, supported, user agent string, user agent, user-agent, useragent, viewport, whatsmybrowser |
-| # releases         | 3 |
+| # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 2744 |
+| # downloads        | 5037 |
 | # stars            | 1 |
 
 ## Links

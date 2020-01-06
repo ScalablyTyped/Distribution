@@ -4,19 +4,19 @@
 Typings are for version 0.5
 
 ## Library description:
-A simple, responsive lightbox component for displaying an array of images with React.js
+A mobile-friendly, highly customizable, carousel component for displaying media in ReactJS
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-images |
-| Keywords           | react, react-component, react-images, react-lightbox, react-carousel, react-gallery, react images, react lightbox, react carousel, react gallery, lightbox, carousel, gallery |
-| # releases         | 21 |
-| # dependents       | 55 |
-| # downloads        | 1200900 |
+| Keywords           | react, images, carousel, lightbox, gallery, modal |
+| # releases         | 13 |
+| # dependents       | 82 |
+| # downloads        | 1781374 |
 | # stars            | 9 |
 
 ## Links
-- [Homepage](http://jossmac.github.io/react-images)
+- [Homepage](https://jossmac.github.io/react-images/)
 - [Bugs](https://github.com/jossmac/react-images/issues)
 - [Repository](https://github.com/jossmac/react-images)
 - [Npm](https://www.npmjs.com/package/react-images)

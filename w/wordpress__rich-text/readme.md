@@ -10,9 +10,9 @@ Rich text value and manipulation API.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/rich-text |
 | Keywords           | wordpress, rich-text |
-| # releases         | 25 |
-| # dependents       | 6 |
-| # downloads        | 71899 |
+| # releases         | 34 |
+| # dependents       | 8 |
+| # downloads        | 170512 |
 | # stars            | 0 |
 
 ## Links

@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SimplePaletteColorOptions extends PaletteColorOptions {
-  var contrastText: js.UndefOr[String] = js.undefined
-  var dark: js.UndefOr[String] = js.undefined
-  var light: js.UndefOr[String] = js.undefined
-  var main: String
+  var contrastText: js.UndefOr[String] = js.native
+  var dark: js.UndefOr[String] = js.native
+  var light: js.UndefOr[String] = js.native
+  var main: String = js.native
 }
 
 object SimplePaletteColorOptions {

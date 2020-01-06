@@ -12,7 +12,7 @@ six koa
 | Keywords           | six, koa |
 | # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 87 |
+| # downloads        | 107 |
 | # stars            | 0 |
 
 ## Links

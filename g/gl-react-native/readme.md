@@ -4,21 +4,18 @@
 Typings are for version 3.15
 
 ## Library description:
-OpenGL bindings for react-native to implement complex effects over images and components, in the descriptive VDOM paradigm
+React Native standalone implementation of gl-react, an universal React library to write and compose WebGL shaders
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | gl-react-native |
-| Keywords           | gl, opengl, react, react-native |
-| # releases         | 32 |
+| Keywords           | gl-react, gl, opengl, react, react-native, react-component |
+| # releases         | 16 |
 | # dependents       | 5 |
-| # downloads        | 42039 |
+| # downloads        | 29671 |
 | # stars            | 2 |
 
 ## Links
-- [Homepage](https://github.com/ProjectSeptemberInc/gl-react-native#readme)
-- [Bugs](https://github.com/ProjectSeptemberInc/gl-react-native/issues)
-- [Repository](https://github.com/ProjectSeptemberInc/gl-react-native)
 - [Npm](https://www.npmjs.com/package/gl-react-native)
     
 

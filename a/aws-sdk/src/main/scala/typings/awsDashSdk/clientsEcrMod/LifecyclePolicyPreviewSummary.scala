@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LifecyclePolicyPreviewSummary extends js.Object {
   /**
     * The number of expiring images.
     */
-  var expiringImageTotalCount: js.UndefOr[ImageCount] = js.undefined
+  var expiringImageTotalCount: js.UndefOr[ImageCount] = js.native
 }
 
 object LifecyclePolicyPreviewSummary {

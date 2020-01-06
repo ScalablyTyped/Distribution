@@ -10,9 +10,9 @@ A JavaScript template literal tag that parses GraphQL queries
 | ------------------ | :-------------: |
 | Full name          | graphql-tag |
 | Keywords           | - |
-| # releases         | 21 |
-| # dependents       | 878 |
-| # downloads        | 26070578 |
+| # releases         | 11 |
+| # dependents       | 1307 |
+| # downloads        | 49999347 |
 | # stars            | 12 |
 
 ## Links

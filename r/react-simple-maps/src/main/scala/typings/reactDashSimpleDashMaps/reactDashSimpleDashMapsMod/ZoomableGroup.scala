@@ -1,12 +1,12 @@
 package typings.reactDashSimpleDashMaps.reactDashSimpleDashMapsMod
 
-import typings.react.reactMod.Component
+import org.scalablytyped.runtime.TopLevel
+import typings.react.reactMod.FunctionComponent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("react-simple-maps", "ZoomableGroup")
 @js.native
-class ZoomableGroup ()
-  extends Component[ZoomableGroupProps, js.Object, js.Any]
+object ZoomableGroup extends TopLevel[FunctionComponent[ZoomableGroupProps]]
 

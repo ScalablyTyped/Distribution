@@ -4,27 +4,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ListWorkteamsRequest extends js.Object {
   /**
     * The maximum number of work teams to return in each page of the response.
     */
-  var MaxResults: js.UndefOr[typings.awsDashSdk.clientsSagemakerMod.MaxResults] = js.undefined
+  var MaxResults: js.UndefOr[typings.awsDashSdk.clientsSagemakerMod.MaxResults] = js.native
   /**
     * A string in the work team's name. This filter returns only work teams whose name contains the specified string.
     */
-  var NameContains: js.UndefOr[WorkteamName] = js.undefined
+  var NameContains: js.UndefOr[WorkteamName] = js.native
   /**
     * If the result of the previous ListWorkteams request was truncated, the response includes a NextToken. To retrieve the next set of labeling jobs, use the token in the next request.
     */
-  var NextToken: js.UndefOr[typings.awsDashSdk.clientsSagemakerMod.NextToken] = js.undefined
+  var NextToken: js.UndefOr[typings.awsDashSdk.clientsSagemakerMod.NextToken] = js.native
   /**
     * The field to sort results by. The default is CreationTime.
     */
-  var SortBy: js.UndefOr[ListWorkteamsSortByOptions] = js.undefined
+  var SortBy: js.UndefOr[ListWorkteamsSortByOptions] = js.native
   /**
     * The sort order for results. The default is Ascending.
     */
-  var SortOrder: js.UndefOr[typings.awsDashSdk.clientsSagemakerMod.SortOrder] = js.undefined
+  var SortOrder: js.UndefOr[typings.awsDashSdk.clientsSagemakerMod.SortOrder] = js.native
 }
 
 object ListWorkteamsRequest {
@@ -38,8 +39,8 @@ object ListWorkteamsRequest {
   ): ListWorkteamsRequest = {
     val __obj = js.Dynamic.literal()
     if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
-    if (NameContains != null) __obj.updateDynamic("NameContains")(NameContains)
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
+    if (NameContains != null) __obj.updateDynamic("NameContains")(NameContains.asInstanceOf[js.Any])
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     if (SortBy != null) __obj.updateDynamic("SortBy")(SortBy.asInstanceOf[js.Any])
     if (SortOrder != null) __obj.updateDynamic("SortOrder")(SortOrder.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListWorkteamsRequest]

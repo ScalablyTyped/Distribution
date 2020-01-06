@@ -11,8 +11,8 @@ Asynchronous port scanner for Node.js
 | Full name          | portscanner |
 | Keywords           | portscanner, port, scanner, checker, status |
 | # releases         | 2 |
-| # dependents       | 228 |
-| # downloads        | 20894913 |
+| # dependents       | 253 |
+| # downloads        | 25186903 |
 | # stars            | 17 |
 
 ## Links

@@ -1,5 +1,6 @@
 package typings.atPulumiAws.apigatewayVpcLinkMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -21,6 +22,7 @@ class VpcLink protected () extends CustomResource {
     */
   def this(name: String, args: VpcLinkArgs) = this()
   def this(name: String, args: VpcLinkArgs, opts: CustomResourceOptions) = this()
+  val arn: Output[String] = js.native
   /**
     * The description of the VPC link.
     */
@@ -29,6 +31,10 @@ class VpcLink protected () extends CustomResource {
     * The name used to label and identify the VPC link.
     */
   val name: Output[String] = js.native
+  /**
+    * Key-value mapping of resource tags
+    */
+  val tags: Output[js.UndefOr[StringDictionary[_]]] = js.native
   /**
     * The list of network load balancer arns in the VPC targeted by the VPC link. Currently AWS only supports 1 target.
     */

@@ -10,9 +10,9 @@ A lightweight scroll animation javascript library without any dependency.
 | ------------------ | :-------------: |
 | Full name          | moveto |
 | Keywords           | simple, lightweight, scroll, animated, scrolling, animation, smooth, smoothscroll |
-| # releases         | 7 |
+| # releases         | 6 |
 | # dependents       | 12 |
-| # downloads        | 60334 |
+| # downloads        | 104025 |
 | # stars            | 4 |
 
 ## Links

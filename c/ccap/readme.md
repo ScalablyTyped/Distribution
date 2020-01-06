@@ -12,7 +12,7 @@ node.js generate captcha using c++ library CImg without install any other lib or
 | Keywords           | node, captcha, c++, image, CImg |
 | # releases         | 1 |
 | # dependents       | 8 |
-| # downloads        | 16583 |
+| # downloads        | 14361 |
 | # stars            | 13 |
 
 ## Links

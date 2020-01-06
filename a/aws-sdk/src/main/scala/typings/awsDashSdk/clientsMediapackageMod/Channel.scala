@@ -4,21 +4,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Channel extends js.Object {
   /**
     * The Amazon Resource Name (ARN) assigned to the Channel.
     */
-  var Arn: js.UndefOr[__string] = js.undefined
+  var Arn: js.UndefOr[__string] = js.native
   /**
     * A short text description of the Channel.
     */
-  var Description: js.UndefOr[__string] = js.undefined
-  var HlsIngest: js.UndefOr[typings.awsDashSdk.clientsMediapackageMod.HlsIngest] = js.undefined
+  var Description: js.UndefOr[__string] = js.native
+  var HlsIngest: js.UndefOr[typings.awsDashSdk.clientsMediapackageMod.HlsIngest] = js.native
   /**
     * The ID of the Channel.
     */
-  var Id: js.UndefOr[__string] = js.undefined
-  var Tags: js.UndefOr[typings.awsDashSdk.clientsMediapackageMod.Tags] = js.undefined
+  var Id: js.UndefOr[__string] = js.native
+  var Tags: js.UndefOr[typings.awsDashSdk.clientsMediapackageMod.Tags] = js.native
 }
 
 object Channel {
@@ -31,11 +32,11 @@ object Channel {
     Tags: Tags = null
   ): Channel = {
     val __obj = js.Dynamic.literal()
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn)
-    if (Description != null) __obj.updateDynamic("Description")(Description)
-    if (HlsIngest != null) __obj.updateDynamic("HlsIngest")(HlsIngest)
-    if (Id != null) __obj.updateDynamic("Id")(Id)
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
+    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
+    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (HlsIngest != null) __obj.updateDynamic("HlsIngest")(HlsIngest.asInstanceOf[js.Any])
+    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[Channel]
   }
 }

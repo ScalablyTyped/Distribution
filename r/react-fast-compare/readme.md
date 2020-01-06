@@ -10,9 +10,9 @@ Fastest deep equal comparison for React. Perfect for shouldComponentUpdate. Also
 | ------------------ | :-------------: |
 | Full name          | react-fast-compare |
 | Keywords           | fast, equal, react, compare, shouldComponentUpdate, deep-equal |
-| # releases         | 7 |
-| # dependents       | 86 |
-| # downloads        | 8687583 |
+| # releases         | 8 |
+| # dependents       | 161 |
+| # downloads        | 53887547 |
 | # stars            | 0 |
 
 ## Links

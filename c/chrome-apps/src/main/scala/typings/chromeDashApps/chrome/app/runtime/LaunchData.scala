@@ -72,7 +72,7 @@ trait LaunchData extends js.Object {
       String, 
       Exclude[
         String, 
-        new_tab_page | context_menu | reload | ephemeral_app | restart | test | url_handler | chrome_internal | kiosk | installed_notification | keyboard | untracked | about_page | load_and_launch | command_line | app_launcher | extensions_page | management_api | background | file_handler | system_tray
+        command_line | background | url_handler | system_tray | context_menu | chrome_internal | installed_notification | kiosk | restart | reload | new_tab_page | test | extensions_page | file_handler | management_api | about_page | load_and_launch | untracked | app_launcher | keyboard | ephemeral_app
       ]
     ]
   ] = js.undefined
@@ -96,7 +96,7 @@ object LaunchData {
       String, 
       Exclude[
         String, 
-        new_tab_page | context_menu | reload | ephemeral_app | restart | test | url_handler | chrome_internal | kiosk | installed_notification | keyboard | untracked | about_page | load_and_launch | command_line | app_launcher | extensions_page | management_api | background | file_handler | system_tray
+        command_line | background | url_handler | system_tray | context_menu | chrome_internal | installed_notification | kiosk | restart | reload | new_tab_page | test | extensions_page | file_handler | management_api | about_page | load_and_launch | untracked | app_launcher | keyboard | ephemeral_app
       ]
     ] = null,
     url: String = null

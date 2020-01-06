@@ -10,9 +10,9 @@ CanvasJS charting library
 | ------------------ | :-------------: |
 | Full name          | canvasjs |
 | Keywords           | - |
-| # releases         | 1 |
+| # releases         | 3 |
 | # dependents       | 3 |
-| # downloads        | 26953 |
+| # downloads        | 52392 |
 | # stars            | 1 |
 
 ## Links

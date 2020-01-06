@@ -10,9 +10,9 @@ PhosphorJS - Algorithms and Iterators
 | ------------------ | :-------------: |
 | Full name          | @phosphor/algorithm |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 124 |
-| # downloads        | 1689796 |
+| # releases         | 3 |
+| # dependents       | 179 |
+| # downloads        | 1907003 |
 | # stars            | 0 |
 
 ## Links

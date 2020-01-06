@@ -11,8 +11,8 @@ Angular directive to show an animated spinner (using [spin.js](http://fgnass.git
 | Full name          | angular-spinner |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 14 |
-| # downloads        | 231002 |
+| # dependents       | 13 |
+| # downloads        | 275088 |
 | # stars            | 3 |
 
 ## Links

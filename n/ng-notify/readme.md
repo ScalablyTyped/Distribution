@@ -12,7 +12,7 @@ A simple, lightweight module for displaying notifications in your AngularJS app.
 | Keywords           | AngularJS, App, notify, Provider, notification, alert, notice |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 20489 |
+| # downloads        | 30101 |
 | # stars            | 3 |
 
 ## Links

@@ -4,31 +4,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DescribeConfigurationOptionsMessage extends js.Object {
   /**
     * The name of the application associated with the configuration template or environment. Only needed if you want to describe the configuration options associated with either the configuration template or environment.
     */
-  var ApplicationName: js.UndefOr[typings.awsDashSdk.clientsElasticbeanstalkMod.ApplicationName] = js.undefined
+  var ApplicationName: js.UndefOr[typings.awsDashSdk.clientsElasticbeanstalkMod.ApplicationName] = js.native
   /**
     * The name of the environment whose configuration options you want to describe.
     */
-  var EnvironmentName: js.UndefOr[typings.awsDashSdk.clientsElasticbeanstalkMod.EnvironmentName] = js.undefined
+  var EnvironmentName: js.UndefOr[typings.awsDashSdk.clientsElasticbeanstalkMod.EnvironmentName] = js.native
   /**
     * If specified, restricts the descriptions to only the specified options.
     */
-  var Options: js.UndefOr[OptionsSpecifierList] = js.undefined
+  var Options: js.UndefOr[OptionsSpecifierList] = js.native
   /**
     * The ARN of the custom platform.
     */
-  var PlatformArn: js.UndefOr[typings.awsDashSdk.clientsElasticbeanstalkMod.PlatformArn] = js.undefined
+  var PlatformArn: js.UndefOr[typings.awsDashSdk.clientsElasticbeanstalkMod.PlatformArn] = js.native
   /**
     * The name of the solution stack whose configuration options you want to describe.
     */
-  var SolutionStackName: js.UndefOr[typings.awsDashSdk.clientsElasticbeanstalkMod.SolutionStackName] = js.undefined
+  var SolutionStackName: js.UndefOr[typings.awsDashSdk.clientsElasticbeanstalkMod.SolutionStackName] = js.native
   /**
     * The name of the configuration template whose configuration options you want to describe.
     */
-  var TemplateName: js.UndefOr[ConfigurationTemplateName] = js.undefined
+  var TemplateName: js.UndefOr[ConfigurationTemplateName] = js.native
 }
 
 object DescribeConfigurationOptionsMessage {
@@ -42,12 +43,12 @@ object DescribeConfigurationOptionsMessage {
     TemplateName: ConfigurationTemplateName = null
   ): DescribeConfigurationOptionsMessage = {
     val __obj = js.Dynamic.literal()
-    if (ApplicationName != null) __obj.updateDynamic("ApplicationName")(ApplicationName)
-    if (EnvironmentName != null) __obj.updateDynamic("EnvironmentName")(EnvironmentName)
-    if (Options != null) __obj.updateDynamic("Options")(Options)
-    if (PlatformArn != null) __obj.updateDynamic("PlatformArn")(PlatformArn)
-    if (SolutionStackName != null) __obj.updateDynamic("SolutionStackName")(SolutionStackName)
-    if (TemplateName != null) __obj.updateDynamic("TemplateName")(TemplateName)
+    if (ApplicationName != null) __obj.updateDynamic("ApplicationName")(ApplicationName.asInstanceOf[js.Any])
+    if (EnvironmentName != null) __obj.updateDynamic("EnvironmentName")(EnvironmentName.asInstanceOf[js.Any])
+    if (Options != null) __obj.updateDynamic("Options")(Options.asInstanceOf[js.Any])
+    if (PlatformArn != null) __obj.updateDynamic("PlatformArn")(PlatformArn.asInstanceOf[js.Any])
+    if (SolutionStackName != null) __obj.updateDynamic("SolutionStackName")(SolutionStackName.asInstanceOf[js.Any])
+    if (TemplateName != null) __obj.updateDynamic("TemplateName")(TemplateName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeConfigurationOptionsMessage]
   }
 }

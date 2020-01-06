@@ -10,15 +10,15 @@ Storybook decorator to center components
 | ------------------ | :-------------: |
 | Full name          | @storybook/addon-centered |
 | Keywords           | addon, storybook |
-| # releases         | 243 |
-| # dependents       | 15 |
-| # downloads        | 3342912 |
+| # releases         | 426 |
+| # dependents       | 23 |
+| # downloads        | 3455176 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/storybooks/storybook/tree/master/addons/centered)
-- [Bugs](https://github.com/storybooks/storybook/issues)
-- [Repository](https://github.com/storybooks/storybook)
+- [Homepage](https://github.com/storybookjs/storybook/tree/master/addons/centered)
+- [Bugs](https://github.com/storybookjs/storybook/issues)
+- [Repository](https://github.com/storybookjs/storybook)
 - [Npm](https://www.npmjs.com/package/%40storybook%2Faddon-centered)
     
 

@@ -11,8 +11,8 @@ a low-level, lightweight protocol buffers implementation in JavaScript
 | Full name          | pbf |
 | Keywords           | protocol, buffer, pbf, protobuf, binary, format, serialization, encoder, decoder |
 | # releases         | 3 |
-| # dependents       | 121 |
-| # downloads        | 5742091 |
+| # dependents       | 163 |
+| # downloads        | 10922548 |
 | # stars            | 6 |
 
 ## Links

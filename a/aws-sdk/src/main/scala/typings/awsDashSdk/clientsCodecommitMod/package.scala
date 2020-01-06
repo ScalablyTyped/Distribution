@@ -13,8 +13,29 @@ package object clientsCodecommitMod {
 
   type AccountId = String
   type AdditionalData = String
+  type ApprovalList = js.Array[Approval]
+  type ApprovalRuleContent = String
+  type ApprovalRuleId = String
+  type ApprovalRuleName = String
+  type ApprovalRuleTemplateContent = String
+  type ApprovalRuleTemplateDescription = String
+  type ApprovalRuleTemplateId = String
+  type ApprovalRuleTemplateName = String
+  type ApprovalRuleTemplateNameList = js.Array[ApprovalRuleTemplateName]
+  type ApprovalRulesList = js.Array[ApprovalRule]
+  type ApprovalRulesNotSatisfiedList = js.Array[ApprovalRuleName]
+  type ApprovalRulesSatisfiedList = js.Array[ApprovalRuleName]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.APPROVE
+    - typings.awsDashSdk.awsDashSdkStrings.REVOKE
+    - java.lang.String
+  */
+  type ApprovalState = _ApprovalState | String
+  type Approved = Boolean
   type Arn = String
+  type BatchAssociateApprovalRuleTemplateWithRepositoriesErrorsList = js.Array[BatchAssociateApprovalRuleTemplateWithRepositoriesError]
   type BatchDescribeMergeConflictsErrors = js.Array[BatchDescribeMergeConflictsError]
+  type BatchDisassociateApprovalRuleTemplateFromRepositoriesErrorsList = js.Array[BatchDisassociateApprovalRuleTemplateFromRepositoriesError]
   type BatchGetCommitsErrorsList = js.Array[BatchGetCommitsError]
   type BranchName = String
   type BranchNameList = js.Array[BranchName]
@@ -116,11 +137,18 @@ package object clientsCodecommitMod {
   */
   type ObjectTypeEnum = _ObjectTypeEnum | String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.ascending
-    - typings.awsDashSdk.awsDashSdkStrings.descending
+    - typings.awsDashSdk.awsDashSdkStrings.ascending__
+    - typings.awsDashSdk.awsDashSdkStrings.descending__
     - java.lang.String
   */
   type OrderEnum = _OrderEnum | String
+  type Overridden = Boolean
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.OVERRIDE
+    - typings.awsDashSdk.awsDashSdkStrings.REVOKE
+    - java.lang.String
+  */
+  type OverrideStatus = _OverrideStatus | String
   type ParentList = js.Array[ObjectId]
   type Path = String
   type Position = Double
@@ -130,6 +158,11 @@ package object clientsCodecommitMod {
     - typings.awsDashSdk.awsDashSdkStrings.PULL_REQUEST_STATUS_CHANGED
     - typings.awsDashSdk.awsDashSdkStrings.PULL_REQUEST_SOURCE_REFERENCE_UPDATED
     - typings.awsDashSdk.awsDashSdkStrings.PULL_REQUEST_MERGE_STATE_CHANGED
+    - typings.awsDashSdk.awsDashSdkStrings.PULL_REQUEST_APPROVAL_RULE_CREATED
+    - typings.awsDashSdk.awsDashSdkStrings.PULL_REQUEST_APPROVAL_RULE_UPDATED
+    - typings.awsDashSdk.awsDashSdkStrings.PULL_REQUEST_APPROVAL_RULE_DELETED
+    - typings.awsDashSdk.awsDashSdkStrings.PULL_REQUEST_APPROVAL_RULE_OVERRIDDEN
+    - typings.awsDashSdk.awsDashSdkStrings.PULL_REQUEST_APPROVAL_STATE_CHANGED
     - java.lang.String
   */
   type PullRequestEventType = _PullRequestEventType | String
@@ -168,7 +201,7 @@ package object clientsCodecommitMod {
   type RepositoryNotFoundList = js.Array[RepositoryName]
   type RepositoryTriggerCustomData = String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.all
+    - typings.awsDashSdk.awsDashSdkStrings.all__
     - typings.awsDashSdk.awsDashSdkStrings.updateReference
     - typings.awsDashSdk.awsDashSdkStrings.createReference
     - typings.awsDashSdk.awsDashSdkStrings.deleteReference
@@ -183,10 +216,12 @@ package object clientsCodecommitMod {
   type RepositoryTriggersConfigurationId = String
   type RepositoryTriggersList = js.Array[RepositoryTrigger]
   type ResourceArn = String
+  type RevisionId = String
+  type RuleContentSha256 = String
   type SetFileModeEntries = js.Array[SetFileModeEntry]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.repositoryName
-    - typings.awsDashSdk.awsDashSdkStrings.lastModifiedDate
+    - typings.awsDashSdk.awsDashSdkStrings.lastModifiedDate_
     - java.lang.String
   */
   type SortByEnum = _SortByEnum | String
@@ -201,7 +236,7 @@ package object clientsCodecommitMod {
   type _Date = String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2015-04-13`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

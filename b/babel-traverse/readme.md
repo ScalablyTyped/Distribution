@@ -10,9 +10,9 @@ The Babel Traverse module maintains the overall tree state, and is responsible f
 | ------------------ | :-------------: |
 | Full name          | babel-traverse |
 | Keywords           | - |
-| # releases         | 19 |
-| # dependents       | 493 |
-| # downloads        | 237499737 |
+| # releases         | 1 |
+| # dependents       | 538 |
+| # downloads        | 265530131 |
 | # stars            | 5 |
 
 ## Links

@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BucketServerSideEncryptionConfiguration extends js.Object {
   /**
     * The Object Lock rule in place for this bucket.
     */
-  var rule: Input[BucketServerSideEncryptionConfigurationRule]
+  var rule: Input[BucketServerSideEncryptionConfigurationRule] = js.native
 }
 
 object BucketServerSideEncryptionConfiguration {

@@ -10,9 +10,9 @@ A Modern JavaScript Date Library
 | ------------------ | :-------------: |
 | Full name          | xdate |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 52 |
-| # downloads        | 1090888 |
+| # releases         | 0 |
+| # dependents       | 76 |
+| # downloads        | 1761702 |
 | # stars            | 1 |
 
 ## Links

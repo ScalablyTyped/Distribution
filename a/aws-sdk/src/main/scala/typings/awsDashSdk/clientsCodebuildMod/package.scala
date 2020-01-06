@@ -5,8 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsCodebuildMod {
+  import org.scalablytyped.runtime.StringDictionary
   import typings.awsDashSdk.awsDashSdkStrings.OAUTH
   import typings.awsDashSdk.awsDashSdkStrings.SECRETS_MANAGER
+  import typings.awsDashSdk.awsDashSdkStrings.TEST
   import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
   import typings.std.Date
 
@@ -55,6 +57,7 @@ package object clientsCodebuildMod {
   */
   type BuildPhaseType = _BuildPhaseType | java.lang.String
   type BuildPhases = js.Array[BuildPhase]
+  type BuildReportArns = js.Array[String]
   type Builds = js.Array[Build]
   type BuildsNotDeleted = js.Array[BuildNotDeleted]
   /* Rewritten from type alias, can be one of: 
@@ -76,6 +79,7 @@ package object clientsCodebuildMod {
     - typings.awsDashSdk.awsDashSdkStrings.BUILD_GENERAL1_SMALL
     - typings.awsDashSdk.awsDashSdkStrings.BUILD_GENERAL1_MEDIUM
     - typings.awsDashSdk.awsDashSdkStrings.BUILD_GENERAL1_LARGE
+    - typings.awsDashSdk.awsDashSdkStrings.BUILD_GENERAL1_2XLARGE
     - java.lang.String
   */
   type ComputeType = _ComputeType | java.lang.String
@@ -86,16 +90,20 @@ package object clientsCodebuildMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.WINDOWS_CONTAINER
     - typings.awsDashSdk.awsDashSdkStrings.LINUX_CONTAINER
+    - typings.awsDashSdk.awsDashSdkStrings.LINUX_GPU_CONTAINER
+    - typings.awsDashSdk.awsDashSdkStrings.ARM_CONTAINER
     - java.lang.String
   */
   type EnvironmentType = _EnvironmentType | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.PLAINTEXT
     - typings.awsDashSdk.awsDashSdkStrings.PARAMETER_STORE
+    - typings.awsDashSdk.awsDashSdkStrings.SECRETS_MANAGER
     - java.lang.String
   */
   type EnvironmentVariableType = _EnvironmentVariableType | java.lang.String
   type EnvironmentVariables = js.Array[EnvironmentVariable]
+  type ExportedEnvironmentVariables = js.Array[ExportedEnvironmentVariable]
   type FilterGroup = js.Array[WebhookFilter]
   type FilterGroups = js.Array[FilterGroup]
   type GitCloneDepth = Double
@@ -128,6 +136,7 @@ package object clientsCodebuildMod {
   */
   type LogsConfigStatusType = _LogsConfigStatusType | java.lang.String
   type NonEmptyString = java.lang.String
+  type PageSize = Double
   type PhaseContexts = js.Array[PhaseContext]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.DEBIAN
@@ -137,6 +146,7 @@ package object clientsCodebuildMod {
     - java.lang.String
   */
   type PlatformType = _PlatformType | java.lang.String
+  type ProjectArns = js.Array[NonEmptyString]
   type ProjectArtifactsList = js.Array[ProjectArtifacts]
   type ProjectCacheModes = js.Array[CacheMode]
   type ProjectDescription = java.lang.String
@@ -152,6 +162,41 @@ package object clientsCodebuildMod {
   type ProjectSortByType = _ProjectSortByType | java.lang.String
   type ProjectSources = js.Array[ProjectSource]
   type Projects = js.Array[Project]
+  type ReportArns = js.Array[NonEmptyString]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.S3
+    - typings.awsDashSdk.awsDashSdkStrings.NO_EXPORT
+    - java.lang.String
+  */
+  type ReportExportConfigType = _ReportExportConfigType | java.lang.String
+  type ReportGroupArns = js.Array[NonEmptyString]
+  type ReportGroupName = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.NAME
+    - typings.awsDashSdk.awsDashSdkStrings.CREATED_TIME
+    - typings.awsDashSdk.awsDashSdkStrings.LAST_MODIFIED_TIME
+    - java.lang.String
+  */
+  type ReportGroupSortByType = _ReportGroupSortByType | java.lang.String
+  type ReportGroups = js.Array[ReportGroup]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.ZIP
+    - typings.awsDashSdk.awsDashSdkStrings.NONE
+    - java.lang.String
+  */
+  type ReportPackagingType = _ReportPackagingType | java.lang.String
+  type ReportStatusCounts = StringDictionary[WrapperInt]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.GENERATING
+    - typings.awsDashSdk.awsDashSdkStrings.SUCCEEDED
+    - typings.awsDashSdk.awsDashSdkStrings.FAILED
+    - typings.awsDashSdk.awsDashSdkStrings.INCOMPLETE
+    - typings.awsDashSdk.awsDashSdkStrings.DELETING
+    - java.lang.String
+  */
+  type ReportStatusType = _ReportStatusType | java.lang.String
+  type ReportType = TEST | java.lang.String
+  type Reports = js.Array[Report]
   type SecurityGroupIds = js.Array[NonEmptyString]
   type SensitiveNonEmptyString = java.lang.String
   /* Rewritten from type alias, can be one of: 
@@ -161,6 +206,12 @@ package object clientsCodebuildMod {
     - java.lang.String
   */
   type ServerType = _ServerType | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.ARN
+    - typings.awsDashSdk.awsDashSdkStrings.MODIFIED_TIME
+    - java.lang.String
+  */
+  type SharedResourceSortByType = _SharedResourceSortByType | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.ASCENDING
     - typings.awsDashSdk.awsDashSdkStrings.DESCENDING
@@ -193,6 +244,7 @@ package object clientsCodebuildMod {
   type String = java.lang.String
   type Subnets = js.Array[NonEmptyString]
   type TagList = js.Array[Tag]
+  type TestCases = js.Array[TestCase]
   type TimeOut = Double
   type Timestamp = Date
   type ValueInput = java.lang.String
@@ -210,7 +262,7 @@ package object clientsCodebuildMod {
   type WrapperLong = Double
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2016-10-06`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | java.lang.String

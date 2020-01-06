@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FunctionRunAsConfig extends js.Object {
   /**
     * The group ID whose permissions are used to run a Lambda function.
     */
-  var Gid: js.UndefOr[__integer] = js.undefined
+  var Gid: js.UndefOr[__integer] = js.native
   /**
     * The user ID whose permissions are used to run a Lambda function.
     */
-  var Uid: js.UndefOr[__integer] = js.undefined
+  var Uid: js.UndefOr[__integer] = js.native
 }
 
 object FunctionRunAsConfig {

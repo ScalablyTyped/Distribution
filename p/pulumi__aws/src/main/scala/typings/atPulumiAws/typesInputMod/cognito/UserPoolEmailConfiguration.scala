@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UserPoolEmailConfiguration extends js.Object {
   /**
     * Instruct Cognito to either use its built-in functional or Amazon SES to send out emails.
     */
-  var emailSendingAccount: js.UndefOr[Input[String]] = js.undefined
+  var emailSendingAccount: js.UndefOr[Input[String]] = js.native
   /**
     * The REPLY-TO email address.
     */
-  var replyToEmailAddress: js.UndefOr[Input[String]] = js.undefined
+  var replyToEmailAddress: js.UndefOr[Input[String]] = js.native
   /**
     * The ARN of the email source.
     */
-  var sourceArn: js.UndefOr[Input[String]] = js.undefined
+  var sourceArn: js.UndefOr[Input[String]] = js.native
 }
 
 object UserPoolEmailConfiguration {

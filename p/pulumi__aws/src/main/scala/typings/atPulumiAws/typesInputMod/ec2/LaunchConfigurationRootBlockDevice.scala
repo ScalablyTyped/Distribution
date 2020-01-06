@@ -5,12 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LaunchConfigurationRootBlockDevice extends js.Object {
-  var deleteOnTermination: js.UndefOr[Input[Boolean]] = js.undefined
-  var encrypted: js.UndefOr[Input[Boolean]] = js.undefined
-  var iops: js.UndefOr[Input[Double]] = js.undefined
-  var volumeSize: js.UndefOr[Input[Double]] = js.undefined
-  var volumeType: js.UndefOr[Input[String]] = js.undefined
+  var deleteOnTermination: js.UndefOr[Input[Boolean]] = js.native
+  var encrypted: js.UndefOr[Input[Boolean]] = js.native
+  var iops: js.UndefOr[Input[Double]] = js.native
+  var volumeSize: js.UndefOr[Input[Double]] = js.native
+  var volumeType: js.UndefOr[Input[String]] = js.native
 }
 
 object LaunchConfigurationRootBlockDevice {

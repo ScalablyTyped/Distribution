@@ -10,9 +10,9 @@ A javascript scrollbar plugin which hides native scrollbars, provides custom sty
 | ------------------ | :-------------: |
 | Full name          | overlayscrollbars |
 | Keywords           | overlayscrollbars, custom, scrollbar, scrollbars, scroll, frontend |
-| # releases         | 22 |
-| # dependents       | 5 |
-| # downloads        | 142964 |
+| # releases         | 29 |
+| # dependents       | 15 |
+| # downloads        | 354194 |
 | # stars            | 0 |
 
 ## Links

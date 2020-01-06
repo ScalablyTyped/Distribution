@@ -10,9 +10,9 @@ Parity's native market data protocol
 | ------------------ | :-------------: |
 | Full name          | parity-pmd |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 339 |
+| # downloads        | 607 |
 | # stars            | 0 |
 
 ## Links

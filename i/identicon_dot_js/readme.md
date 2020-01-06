@@ -10,9 +10,9 @@ GitHub-style identicons as PNGs or SVGs in JS.
 | ------------------ | :-------------: |
 | Full name          | identicon.js |
 | Keywords           | identicon |
-| # releases         | 8 |
-| # dependents       | 10 |
-| # downloads        | 140576 |
+| # releases         | 3 |
+| # dependents       | 16 |
+| # downloads        | 205328 |
 | # stars            | 4 |
 
 ## Links

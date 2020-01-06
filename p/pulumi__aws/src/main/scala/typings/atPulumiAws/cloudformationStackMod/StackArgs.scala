@@ -6,64 +6,65 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StackArgs extends js.Object {
   /**
     * A list of capabilities.
     * Valid values: `CAPABILITY_IAM`, `CAPABILITY_NAMED_IAM`, or `CAPABILITY_AUTO_EXPAND`
     */
-  val capabilities: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val capabilities: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * Set to true to disable rollback of the stack if stack creation failed.
     * Conflicts with `onFailure`.
     */
-  val disableRollback: js.UndefOr[Input[Boolean]] = js.undefined
+  val disableRollback: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The ARN of an IAM role that AWS CloudFormation assumes to create the stack. If you don't specify a value, AWS CloudFormation uses the role that was previously associated with the stack. If no role is available, AWS CloudFormation uses a temporary session that is generated from your user credentials.
     */
-  val iamRoleArn: js.UndefOr[Input[String]] = js.undefined
+  val iamRoleArn: js.UndefOr[Input[String]] = js.native
   /**
     * Stack name.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * A list of SNS topic ARNs to publish stack related events.
     */
-  val notificationArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val notificationArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * Action to be taken if stack creation fails. This must be
     * one of: `DO_NOTHING`, `ROLLBACK`, or `DELETE`. Conflicts with `disableRollback`.
     */
-  val onFailure: js.UndefOr[Input[String]] = js.undefined
+  val onFailure: js.UndefOr[Input[String]] = js.native
   /**
     * A map of Parameter structures that specify input parameters for the stack.
     */
-  val parameters: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val parameters: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * Structure containing the stack policy body.
     * Conflicts w/ `policyUrl`.
     */
-  val policyBody: js.UndefOr[Input[String]] = js.undefined
+  val policyBody: js.UndefOr[Input[String]] = js.native
   /**
     * Location of a file containing the stack policy.
     * Conflicts w/ `policyBody`.
     */
-  val policyUrl: js.UndefOr[Input[String]] = js.undefined
+  val policyUrl: js.UndefOr[Input[String]] = js.native
   /**
     * A list of tags to associate with this stack.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * Structure containing the template body (max size: 51,200 bytes).
     */
-  val templateBody: js.UndefOr[Input[String]] = js.undefined
+  val templateBody: js.UndefOr[Input[String]] = js.native
   /**
     * Location of a file containing the template body (max size: 460,800 bytes).
     */
-  val templateUrl: js.UndefOr[Input[String]] = js.undefined
+  val templateUrl: js.UndefOr[Input[String]] = js.native
   /**
     * The amount of time that can pass before the stack status becomes `CREATE_FAILED`.
     */
-  val timeoutInMinutes: js.UndefOr[Input[Double]] = js.undefined
+  val timeoutInMinutes: js.UndefOr[Input[Double]] = js.native
 }
 
 object StackArgs {

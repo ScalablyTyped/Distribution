@@ -15,19 +15,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Theme extends js.Object {
-  var breakpoints: Breakpoints
-  var direction: Direction
-  var mixins: Mixins
-  var overrides: js.UndefOr[Overrides] = js.undefined
-  var palette: Palette
-  var props: js.UndefOr[ComponentsProps] = js.undefined
-  var shadows: Shadows
-  var shape: Shape
-  var spacing: Spacing
-  var transitions: Transitions
-  var typography: Typography
-  var zIndex: ZIndex
+  var breakpoints: Breakpoints = js.native
+  var direction: Direction = js.native
+  var mixins: Mixins = js.native
+  var overrides: js.UndefOr[Overrides] = js.native
+  var palette: Palette = js.native
+  var props: js.UndefOr[ComponentsProps] = js.native
+  var shadows: Shadows = js.native
+  var shape: Shape = js.native
+  var spacing: Spacing = js.native
+  var transitions: Transitions = js.native
+  var typography: Typography = js.native
+  var zIndex: ZIndex = js.native
 }
 
 object Theme {

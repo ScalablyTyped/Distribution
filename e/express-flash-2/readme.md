@@ -10,9 +10,9 @@ Flash message middleware for express.
 | ------------------ | :-------------: |
 | Full name          | express-flash-2 |
 | Keywords           | express, flash, messages |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 8734 |
+| # downloads        | 5502 |
 | # stars            | 1 |
 
 ## Links

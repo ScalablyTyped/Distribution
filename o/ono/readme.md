@@ -1,7 +1,7 @@
 
 # Scala.js typings for ono
 
-Typings are for version 5.1.0
+Typings are for version 6.0.0
 
 ## Library description:
 Throw better errors.
@@ -10,13 +10,13 @@ Throw better errors.
 | ------------------ | :-------------: |
 | Full name          | ono |
 | Keywords           | throw, error, errors, exception, printf, format, wrap, inner, original, stack, properties |
-| # releases         | 19 |
-| # dependents       | 24 |
-| # downloads        | 21991914 |
+| # releases         | 15 |
+| # dependents       | 38 |
+| # downloads        | 25920546 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://jsdevtools.org/ono)
+- [Homepage](https://jstools.dev/ono)
 - [Bugs](https://github.com/JS-DevTools/ono/issues)
 - [Repository](https://github.com/JS-DevTools/ono)
 - [Npm](https://www.npmjs.com/package/ono)

@@ -10,9 +10,9 @@ Convert HEX color to RGBA
 | ------------------ | :-------------: |
 | Full name          | hex-rgb |
 | Keywords           | hex, rgb, rgba, color, colour, convert, conversion, converter |
-| # releases         | 3 |
-| # dependents       | 64 |
-| # downloads        | 465957 |
+| # releases         | 5 |
+| # dependents       | 79 |
+| # downloads        | 960302 |
 | # stars            | 3 |
 
 ## Links

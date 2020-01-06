@@ -11,7 +11,7 @@ Typings are for version 9.0
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 259 |
+| # downloads        | 217 |
 | # stars            | 0 |
 
 ## Links

@@ -12,7 +12,7 @@ JavaScript library that prevents the autoplaying of the animated Gifs
 | Keywords           | gif, player |
 | # releases         | 4 |
 | # dependents       | 1 |
-| # downloads        | 15774 |
+| # downloads        | 13090 |
 | # stars            | 0 |
 
 ## Links

@@ -4,35 +4,40 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CreateLicenseConfigurationRequest extends js.Object {
   /**
-    * Human-friendly description of the license configuration.
+    * Description of the license configuration.
     */
-  var Description: js.UndefOr[String] = js.undefined
+  var Description: js.UndefOr[String] = js.native
   /**
     * Number of licenses managed by the license configuration.
     */
-  var LicenseCount: js.UndefOr[BoxLong] = js.undefined
+  var LicenseCount: js.UndefOr[BoxLong] = js.native
   /**
-    * Flag indicating whether hard or soft license enforcement is used. Exceeding a hard limit results in the blocked deployment of new instances.
+    * Indicates whether hard or soft license enforcement is used. Exceeding a hard limit blocks the launch of new instances.
     */
-  var LicenseCountHardLimit: js.UndefOr[BoxBoolean] = js.undefined
+  var LicenseCountHardLimit: js.UndefOr[BoxBoolean] = js.native
   /**
-    * Dimension to use to track the license inventory.
+    * Dimension used to track the license inventory.
     */
-  var LicenseCountingType: typings.awsDashSdk.clientsLicensemanagerMod.LicenseCountingType
+  var LicenseCountingType: typings.awsDashSdk.clientsLicensemanagerMod.LicenseCountingType = js.native
   /**
-    * Array of configured License Manager rules.
+    * License rules. The syntax is #name=value (for example, #allowedTenancy=EC2-DedicatedHost). Available rules vary by dimension.    Cores dimension: allowedTenancy | maximumCores | minimumCores     Instances dimension: allowedTenancy | maximumCores | minimumCores | maximumSockets | minimumSockets | maximumVcpus | minimumVcpus     Sockets dimension: allowedTenancy | maximumSockets | minimumSockets     vCPUs dimension: allowedTenancy | honorVcpuOptimization | maximumVcpus | minimumVcpus   
     */
-  var LicenseRules: js.UndefOr[StringList] = js.undefined
+  var LicenseRules: js.UndefOr[StringList] = js.native
   /**
     * Name of the license configuration.
     */
-  var Name: String
+  var Name: String = js.native
   /**
-    * The tags to apply to the resources during launch. You can only tag instances and volumes on launch. The specified tags are applied to all instances or volumes that are created during launch. To tag a resource after it has been created, see CreateTags . 
+    * Product information.
     */
-  var Tags: js.UndefOr[TagList] = js.undefined
+  var ProductInformationList: js.UndefOr[typings.awsDashSdk.clientsLicensemanagerMod.ProductInformationList] = js.native
+  /**
+    * Tags to add to the license configuration.
+    */
+  var Tags: js.UndefOr[TagList] = js.native
 }
 
 object CreateLicenseConfigurationRequest {
@@ -44,14 +49,16 @@ object CreateLicenseConfigurationRequest {
     LicenseCount: Int | Double = null,
     LicenseCountHardLimit: js.UndefOr[scala.Boolean] = js.undefined,
     LicenseRules: StringList = null,
+    ProductInformationList: ProductInformationList = null,
     Tags: TagList = null
   ): CreateLicenseConfigurationRequest = {
-    val __obj = js.Dynamic.literal(LicenseCountingType = LicenseCountingType.asInstanceOf[js.Any], Name = Name)
-    if (Description != null) __obj.updateDynamic("Description")(Description)
+    val __obj = js.Dynamic.literal(LicenseCountingType = LicenseCountingType.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
+    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (LicenseCount != null) __obj.updateDynamic("LicenseCount")(LicenseCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(LicenseCountHardLimit)) __obj.updateDynamic("LicenseCountHardLimit")(LicenseCountHardLimit)
-    if (LicenseRules != null) __obj.updateDynamic("LicenseRules")(LicenseRules)
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
+    if (!js.isUndefined(LicenseCountHardLimit)) __obj.updateDynamic("LicenseCountHardLimit")(LicenseCountHardLimit.asInstanceOf[js.Any])
+    if (LicenseRules != null) __obj.updateDynamic("LicenseRules")(LicenseRules.asInstanceOf[js.Any])
+    if (ProductInformationList != null) __obj.updateDynamic("ProductInformationList")(ProductInformationList.asInstanceOf[js.Any])
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateLicenseConfigurationRequest]
   }
 }

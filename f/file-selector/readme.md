@@ -10,9 +10,9 @@ Convert DataTransfer object to a list of File objects
 | ------------------ | :-------------: |
 | Full name          | file-selector |
 | Keywords           | drag-and-drop, html5, file-api, DataTransfer, File |
-| # releases         | 13 |
-| # dependents       | 5 |
-| # downloads        | 853598 |
+| # releases         | 15 |
+| # dependents       | 11 |
+| # downloads        | 5910870 |
 | # stars            | 0 |
 
 ## Links

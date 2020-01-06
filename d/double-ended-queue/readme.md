@@ -10,9 +10,9 @@ Extremely fast double-ended queue implementation
 | ------------------ | :-------------: |
 | Full name          | double-ended-queue |
 | Keywords           | data-structure, data-structures, queue, deque, double-ended-queue |
-| # releases         | 1 |
-| # dependents       | 62 |
-| # downloads        | 46671772 |
+| # releases         | 0 |
+| # dependents       | 72 |
+| # downloads        | 54685525 |
 | # stars            | 10 |
 
 ## Links

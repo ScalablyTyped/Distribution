@@ -10,9 +10,9 @@ Source maps support for istanbul
 | ------------------ | :-------------: |
 | Full name          | istanbul-lib-source-maps |
 | Keywords           | istanbul, sourcemaps, sourcemap, source, maps |
-| # releases         | 15 |
-| # dependents       | 31 |
-| # downloads        | 186619789 |
+| # releases         | 21 |
+| # dependents       | 48 |
+| # downloads        | 288485409 |
 | # stars            | 0 |
 
 ## Links

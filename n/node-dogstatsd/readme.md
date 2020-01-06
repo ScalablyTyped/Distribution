@@ -11,7 +11,7 @@ node client for extended StatsD server of Datadog
 | Keywords           | - |
 | # releases         | 2 |
 | # dependents       | 33 |
-| # downloads        | 1734101 |
+| # downloads        | 2607778 |
 | # stars            | 4 |
 
 ## Links

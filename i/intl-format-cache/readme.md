@@ -10,9 +10,9 @@ A memoizer factory for Intl format constructors.
 | ------------------ | :-------------: |
 | Full name          | intl-format-cache |
 | Keywords           | intl, i18n |
-| # releases         | 16 |
-| # dependents       | 54 |
-| # downloads        | 15402491 |
+| # releases         | 62 |
+| # dependents       | 57 |
+| # downloads        | 20947602 |
 | # stars            | 1 |
 
 ## Links

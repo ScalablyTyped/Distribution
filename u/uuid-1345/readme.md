@@ -11,8 +11,8 @@ Generate UUIDs of versions 1, 3, 4, and 5.
 | Full name          | uuid-1345 |
 | Keywords           | uuid, guid, rfc4122, uuid-v1, uuid-v3, uuid-v4, uuid-v5 |
 | # releases         | 2 |
-| # dependents       | 24 |
-| # downloads        | 439975 |
+| # dependents       | 27 |
+| # downloads        | 362681 |
 | # stars            | 0 |
 
 ## Links

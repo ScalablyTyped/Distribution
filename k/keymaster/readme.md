@@ -11,8 +11,8 @@ library for defining and dispatching keyboard shortcuts
 | Full name          | keymaster |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 42 |
-| # downloads        | 682959 |
+| # dependents       | 52 |
+| # downloads        | 1177617 |
 | # stars            | 13 |
 
 ## Links

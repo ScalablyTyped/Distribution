@@ -10,9 +10,9 @@ A simple web server for the roads framework
 | ------------------ | :-------------: |
 | Full name          | roads-server |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 1 |
-| # downloads        | 217 |
+| # releases         | 8 |
+| # dependents       | 2 |
+| # downloads        | 633 |
 | # stars            | 0 |
 
 ## Links

@@ -9,14 +9,14 @@ quote and parse shell commands
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | shell-quote |
-| Keywords           | shell, command, quote, parse |
-| # releases         | 1 |
-| # dependents       | 401 |
-| # downloads        | 107146469 |
+| Keywords           | command, parse, quote, shell |
+| # releases         | 6 |
+| # dependents       | 488 |
+| # downloads        | 186639450 |
 | # stars            | 6 |
 
 ## Links
-- [Homepage](https://github.com/substack/node-shell-quote#readme)
+- [Homepage](https://github.com/substack/node-shell-quote)
 - [Bugs](https://github.com/substack/node-shell-quote/issues)
 - [Repository](https://github.com/substack/node-shell-quote)
 - [Npm](https://www.npmjs.com/package/shell-quote)

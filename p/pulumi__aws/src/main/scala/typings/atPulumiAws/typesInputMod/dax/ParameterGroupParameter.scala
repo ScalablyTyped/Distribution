@@ -5,12 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ParameterGroupParameter extends js.Object {
   /**
     * The name of the parameter group.
     */
-  var name: Input[String]
-  var value: Input[String]
+  var name: Input[String] = js.native
+  var value: Input[String] = js.native
 }
 
 object ParameterGroupParameter {

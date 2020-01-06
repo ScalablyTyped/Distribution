@@ -1,7 +1,7 @@
 package typings.pubnub.pubnubMod
 
 import typings.pubnub.Anon_DataMessageAction
-import typings.pubnub.Anon_Data_583575529
+import typings.pubnub.Anon_Data_357783305
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -146,10 +146,10 @@ trait Pubnub extends js.Object {
     params: RemoveMembersParameters,
     callback: js.Function2[/* status */ PubnubStatus, /* response */ GetMembersResponse, Unit]
   ): Unit = js.native
-  def removeMessageAction(params: RemoveMessageActionParameters): js.Promise[Anon_Data_583575529] = js.native
+  def removeMessageAction(params: RemoveMessageActionParameters): js.Promise[Anon_Data_357783305] = js.native
   def removeMessageAction(
     params: RemoveMessageActionParameters,
-    callback: js.Function2[/* status */ PubnubStatus, /* response */ Anon_Data_583575529, Unit]
+    callback: js.Function2[/* status */ PubnubStatus, /* response */ Anon_Data_357783305, Unit]
   ): Unit = js.native
   def setAuthKey(authKey: String): Unit = js.native
   def setFilterExpression(filterExpression: String): Unit = js.native

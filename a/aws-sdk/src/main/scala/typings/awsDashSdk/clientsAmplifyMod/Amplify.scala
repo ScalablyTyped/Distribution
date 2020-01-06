@@ -26,6 +26,19 @@ trait Amplify extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateAppResult, Unit]
   ): Request[CreateAppResult, AWSError] = js.native
   /**
+    *  Creates a new backend environment for an Amplify App. 
+    */
+  def createBackendEnvironment(): Request[CreateBackendEnvironmentResult, AWSError] = js.native
+  def createBackendEnvironment(callback: js.Function2[/* err */ AWSError, /* data */ CreateBackendEnvironmentResult, Unit]): Request[CreateBackendEnvironmentResult, AWSError] = js.native
+  /**
+    *  Creates a new backend environment for an Amplify App. 
+    */
+  def createBackendEnvironment(params: CreateBackendEnvironmentRequest): Request[CreateBackendEnvironmentResult, AWSError] = js.native
+  def createBackendEnvironment(
+    params: CreateBackendEnvironmentRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateBackendEnvironmentResult, Unit]
+  ): Request[CreateBackendEnvironmentResult, AWSError] = js.native
+  /**
     *  Creates a new Branch for an Amplify App. 
     */
   def createBranch(): Request[CreateBranchResult, AWSError] = js.native
@@ -91,6 +104,19 @@ trait Amplify extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteAppResult, Unit]
   ): Request[DeleteAppResult, AWSError] = js.native
   /**
+    *  Delete backend environment for an Amplify App. 
+    */
+  def deleteBackendEnvironment(): Request[DeleteBackendEnvironmentResult, AWSError] = js.native
+  def deleteBackendEnvironment(callback: js.Function2[/* err */ AWSError, /* data */ DeleteBackendEnvironmentResult, Unit]): Request[DeleteBackendEnvironmentResult, AWSError] = js.native
+  /**
+    *  Delete backend environment for an Amplify App. 
+    */
+  def deleteBackendEnvironment(params: DeleteBackendEnvironmentRequest): Request[DeleteBackendEnvironmentResult, AWSError] = js.native
+  def deleteBackendEnvironment(
+    params: DeleteBackendEnvironmentRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteBackendEnvironmentResult, Unit]
+  ): Request[DeleteBackendEnvironmentResult, AWSError] = js.native
+  /**
     *  Deletes a branch for an Amplify App. 
     */
   def deleteBranch(): Request[DeleteBranchResult, AWSError] = js.native
@@ -143,12 +169,12 @@ trait Amplify extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteWebhookResult, Unit]
   ): Request[DeleteWebhookResult, AWSError] = js.native
   /**
-    *  Retrieve website access logs for a specific time range via a pre-signed URL. Optionally, deliver the logs to a given S3 bucket. 
+    *  Retrieve website access logs for a specific time range via a pre-signed URL. 
     */
   def generateAccessLogs(): Request[GenerateAccessLogsResult, AWSError] = js.native
   def generateAccessLogs(callback: js.Function2[/* err */ AWSError, /* data */ GenerateAccessLogsResult, Unit]): Request[GenerateAccessLogsResult, AWSError] = js.native
   /**
-    *  Retrieve website access logs for a specific time range via a pre-signed URL. Optionally, deliver the logs to a given S3 bucket. 
+    *  Retrieve website access logs for a specific time range via a pre-signed URL. 
     */
   def generateAccessLogs(params: GenerateAccessLogsRequest): Request[GenerateAccessLogsResult, AWSError] = js.native
   def generateAccessLogs(
@@ -178,6 +204,19 @@ trait Amplify extends Service {
     params: GetArtifactUrlRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetArtifactUrlResult, Unit]
   ): Request[GetArtifactUrlResult, AWSError] = js.native
+  /**
+    *  Retrieves a backend environment for an Amplify App. 
+    */
+  def getBackendEnvironment(): Request[GetBackendEnvironmentResult, AWSError] = js.native
+  def getBackendEnvironment(callback: js.Function2[/* err */ AWSError, /* data */ GetBackendEnvironmentResult, Unit]): Request[GetBackendEnvironmentResult, AWSError] = js.native
+  /**
+    *  Retrieves a backend environment for an Amplify App. 
+    */
+  def getBackendEnvironment(params: GetBackendEnvironmentRequest): Request[GetBackendEnvironmentResult, AWSError] = js.native
+  def getBackendEnvironment(
+    params: GetBackendEnvironmentRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetBackendEnvironmentResult, Unit]
+  ): Request[GetBackendEnvironmentResult, AWSError] = js.native
   /**
     *  Retrieves a branch for an Amplify App. 
     */
@@ -253,6 +292,19 @@ trait Amplify extends Service {
     params: ListArtifactsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListArtifactsResult, Unit]
   ): Request[ListArtifactsResult, AWSError] = js.native
+  /**
+    *  Lists backend environments for an Amplify App. 
+    */
+  def listBackendEnvironments(): Request[ListBackendEnvironmentsResult, AWSError] = js.native
+  def listBackendEnvironments(callback: js.Function2[/* err */ AWSError, /* data */ ListBackendEnvironmentsResult, Unit]): Request[ListBackendEnvironmentsResult, AWSError] = js.native
+  /**
+    *  Lists backend environments for an Amplify App. 
+    */
+  def listBackendEnvironments(params: ListBackendEnvironmentsRequest): Request[ListBackendEnvironmentsResult, AWSError] = js.native
+  def listBackendEnvironments(
+    params: ListBackendEnvironmentsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListBackendEnvironmentsResult, Unit]
+  ): Request[ListBackendEnvironmentsResult, AWSError] = js.native
   /**
     *  Lists branches for an Amplify App. 
     */

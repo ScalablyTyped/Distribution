@@ -12,7 +12,7 @@ An API Server and Framework for node.js
 | Keywords           | framework, api, application, branding, server, modular, nodal |
 | # releases         | 22 |
 | # dependents       | 0 |
-| # downloads        | 22158 |
+| # downloads        | 18463 |
 | # stars            | 8 |
 
 ## Links

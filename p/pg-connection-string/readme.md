@@ -11,8 +11,8 @@ Functions for dealing with a PostgresSQL connection string
 | Full name          | pg-connection-string |
 | Keywords           | pg, connection, string, parse |
 | # releases         | 2 |
-| # dependents       | 102 |
-| # downloads        | 29500322 |
+| # dependents       | 119 |
+| # downloads        | 45811569 |
 | # stars            | 0 |
 
 ## Links

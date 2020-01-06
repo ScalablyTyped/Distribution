@@ -9,56 +9,57 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StageArgs extends js.Object {
   /**
     * Enables access logs for the API stage. Detailed below.
     */
-  val accessLogSettings: js.UndefOr[Input[StageAccessLogSettings]] = js.undefined
+  val accessLogSettings: js.UndefOr[Input[StageAccessLogSettings]] = js.native
   /**
     * Specifies whether a cache cluster is enabled for the stage
     */
-  val cacheClusterEnabled: js.UndefOr[Input[Boolean]] = js.undefined
+  val cacheClusterEnabled: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The size of the cache cluster for the stage, if enabled.
     * Allowed values include `0.5`, `1.6`, `6.1`, `13.5`, `28.4`, `58.2`, `118` and `237`.
     */
-  val cacheClusterSize: js.UndefOr[Input[String]] = js.undefined
+  val cacheClusterSize: js.UndefOr[Input[String]] = js.native
   /**
     * The identifier of a client certificate for the stage.
     */
-  val clientCertificateId: js.UndefOr[Input[String]] = js.undefined
+  val clientCertificateId: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of the deployment that the stage points to
     */
-  val deployment: Input[Deployment]
+  val deployment: Input[Deployment] = js.native
   /**
     * The description of the stage
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * The version of the associated API documentation
     */
-  val documentationVersion: js.UndefOr[Input[String]] = js.undefined
+  val documentationVersion: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of the associated REST API
     */
-  val restApi: Input[RestApi]
+  val restApi: Input[RestApi] = js.native
   /**
     * The name of the stage
     */
-  val stageName: Input[String]
+  val stageName: Input[String] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * A map that defines the stage variables
     */
-  val variables: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val variables: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * Whether active tracing with X-ray is enabled. Defaults to `false`.
     */
-  val xrayTracingEnabled: js.UndefOr[Input[Boolean]] = js.undefined
+  val xrayTracingEnabled: js.UndefOr[Input[Boolean]] = js.native
 }
 
 object StageArgs {

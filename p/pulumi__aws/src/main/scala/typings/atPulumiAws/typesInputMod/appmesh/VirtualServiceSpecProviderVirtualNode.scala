@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VirtualServiceSpecProviderVirtualNode extends js.Object {
   /**
     * The name of the virtual node that is acting as a service provider.
     */
-  var virtualNodeName: Input[String]
+  var virtualNodeName: Input[String] = js.native
 }
 
 object VirtualServiceSpecProviderVirtualNode {

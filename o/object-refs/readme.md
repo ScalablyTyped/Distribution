@@ -11,8 +11,8 @@ Minimal bi-directional object references for JavaScript
 | Full name          | object-refs |
 | Keywords           | object, bidirectional, references, refs, ref, property, binding |
 | # releases         | 2 |
-| # dependents       | 11 |
-| # downloads        | 249552 |
+| # dependents       | 24 |
+| # downloads        | 419687 |
 | # stars            | 0 |
 
 ## Links

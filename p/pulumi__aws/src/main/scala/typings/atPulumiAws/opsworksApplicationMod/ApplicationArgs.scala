@@ -8,75 +8,76 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ApplicationArgs extends js.Object {
   /**
     * SCM configuration of the app as described below.
     */
-  val appSources: js.UndefOr[Input[js.Array[Input[ApplicationAppSource]]]] = js.undefined
+  val appSources: js.UndefOr[Input[js.Array[Input[ApplicationAppSource]]]] = js.native
   /**
     * Run bundle install when deploying for application of type `rails`.
     */
-  val autoBundleOnDeploy: js.UndefOr[Input[String]] = js.undefined
+  val autoBundleOnDeploy: js.UndefOr[Input[String]] = js.native
   /**
     * Specify activity and workflow workers for your app using the aws-flow gem.
     */
-  val awsFlowRubySettings: js.UndefOr[Input[String]] = js.undefined
+  val awsFlowRubySettings: js.UndefOr[Input[String]] = js.native
   /**
     * The data source's ARN.
     */
-  val dataSourceArn: js.UndefOr[Input[String]] = js.undefined
+  val dataSourceArn: js.UndefOr[Input[String]] = js.native
   /**
     * The database name.
     */
-  val dataSourceDatabaseName: js.UndefOr[Input[String]] = js.undefined
+  val dataSourceDatabaseName: js.UndefOr[Input[String]] = js.native
   /**
     * The data source's type one of `AutoSelectOpsworksMysqlInstance`, `OpsworksMysqlInstance`, or `RdsDbInstance`.
     */
-  val dataSourceType: js.UndefOr[Input[String]] = js.undefined
+  val dataSourceType: js.UndefOr[Input[String]] = js.native
   /**
     * A description of the app.
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * Subfolder for the document root for application of type `rails`.
     */
-  val documentRoot: js.UndefOr[Input[String]] = js.undefined
+  val documentRoot: js.UndefOr[Input[String]] = js.native
   /**
     * A list of virtual host alias.
     */
-  val domains: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val domains: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * Whether to enable SSL for the app. This must be set in order to let `ssl_configuration.private_key`, `ssl_configuration.certificate` and `ssl_configuration.chain` take effect.
     */
-  val enableSsl: js.UndefOr[Input[Boolean]] = js.undefined
+  val enableSsl: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Object to define environment variables.  Object is described below.
     */
-  val environments: js.UndefOr[Input[js.Array[Input[ApplicationEnvironment]]]] = js.undefined
+  val environments: js.UndefOr[Input[js.Array[Input[ApplicationEnvironment]]]] = js.native
   /**
     * A human-readable name for the application.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the Rails environment for application of type `rails`.
     */
-  val railsEnv: js.UndefOr[Input[String]] = js.undefined
+  val railsEnv: js.UndefOr[Input[String]] = js.native
   /**
     * A short, machine-readable name for the application. This can only be defined on resource creation and ignored on resource update.
     */
-  val shortName: js.UndefOr[Input[String]] = js.undefined
+  val shortName: js.UndefOr[Input[String]] = js.native
   /**
     * The SSL configuration of the app. Object is described below.
     */
-  val sslConfigurations: js.UndefOr[Input[js.Array[Input[ApplicationSslConfiguration]]]] = js.undefined
+  val sslConfigurations: js.UndefOr[Input[js.Array[Input[ApplicationSslConfiguration]]]] = js.native
   /**
     * The id of the stack the application will belong to.
     */
-  val stackId: Input[String]
+  val stackId: Input[String] = js.native
   /**
     * The type of source to use. For example, "archive".
     */
-  val `type`: Input[String]
+  val `type`: Input[String] = js.native
 }
 
 object ApplicationArgs {

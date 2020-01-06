@@ -9,9 +9,9 @@ A datepicker for Bootstrap
 | ------------------ | :-------------: |
 | Full name          | bootstrap-datepicker |
 | Keywords           | datepicker, bootstrap |
-| # releases         | 5 |
-| # dependents       | 89 |
-| # downloads        | 4072584 |
+| # releases         | 3 |
+| # dependents       | 96 |
+| # downloads        | 5244232 |
 | # stars            | 11 |
 
 ## Links

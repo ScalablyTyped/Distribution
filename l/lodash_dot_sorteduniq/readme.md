@@ -11,8 +11,8 @@ The lodash method `_.sortedUniq` exported as a module.
 | Full name          | lodash.sorteduniq |
 | Keywords           | lodash-modularized, sorteduniq |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 26577 |
+| # dependents       | 1 |
+| # downloads        | 47031 |
 | # stars            | 0 |
 
 ## Links

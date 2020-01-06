@@ -11,8 +11,8 @@ Nanoscale assertion module
 | Full name          | nanoassert |
 | Keywords           | assert, unassert, power-assert, tiny, nano, pico |
 | # releases         | 2 |
-| # dependents       | 87 |
-| # downloads        | 3163408 |
+| # dependents       | 99 |
+| # downloads        | 3235069 |
 | # stars            | 0 |
 
 ## Links

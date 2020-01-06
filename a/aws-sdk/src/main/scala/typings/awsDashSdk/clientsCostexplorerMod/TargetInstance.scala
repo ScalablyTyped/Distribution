@@ -4,31 +4,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TargetInstance extends js.Object {
   /**
     *  The currency code that Amazon Web Services used to calculate the costs for this instance.
     */
-  var CurrencyCode: js.UndefOr[GenericString] = js.undefined
+  var CurrencyCode: js.UndefOr[GenericString] = js.native
   /**
     *  Indicates whether or not this recommendation is the defaulted Amazon Web Services recommendation.
     */
-  var DefaultTargetInstance: js.UndefOr[GenericBoolean] = js.undefined
+  var DefaultTargetInstance: js.UndefOr[GenericBoolean] = js.native
   /**
     *  Expected cost to operate this instance type on a monthly basis.
     */
-  var EstimatedMonthlyCost: js.UndefOr[GenericString] = js.undefined
+  var EstimatedMonthlyCost: js.UndefOr[GenericString] = js.native
   /**
     *  Estimated savings resulting from modification, on a monthly basis.
     */
-  var EstimatedMonthlySavings: js.UndefOr[GenericString] = js.undefined
+  var EstimatedMonthlySavings: js.UndefOr[GenericString] = js.native
   /**
     *  Expected utilization metrics for target instance type.
     */
-  var ExpectedResourceUtilization: js.UndefOr[ResourceUtilization] = js.undefined
+  var ExpectedResourceUtilization: js.UndefOr[ResourceUtilization] = js.native
   /**
     *  Details on the target instance type. 
     */
-  var ResourceDetails: js.UndefOr[typings.awsDashSdk.clientsCostexplorerMod.ResourceDetails] = js.undefined
+  var ResourceDetails: js.UndefOr[typings.awsDashSdk.clientsCostexplorerMod.ResourceDetails] = js.native
 }
 
 object TargetInstance {
@@ -42,12 +43,12 @@ object TargetInstance {
     ResourceDetails: ResourceDetails = null
   ): TargetInstance = {
     val __obj = js.Dynamic.literal()
-    if (CurrencyCode != null) __obj.updateDynamic("CurrencyCode")(CurrencyCode)
-    if (!js.isUndefined(DefaultTargetInstance)) __obj.updateDynamic("DefaultTargetInstance")(DefaultTargetInstance)
-    if (EstimatedMonthlyCost != null) __obj.updateDynamic("EstimatedMonthlyCost")(EstimatedMonthlyCost)
-    if (EstimatedMonthlySavings != null) __obj.updateDynamic("EstimatedMonthlySavings")(EstimatedMonthlySavings)
-    if (ExpectedResourceUtilization != null) __obj.updateDynamic("ExpectedResourceUtilization")(ExpectedResourceUtilization)
-    if (ResourceDetails != null) __obj.updateDynamic("ResourceDetails")(ResourceDetails)
+    if (CurrencyCode != null) __obj.updateDynamic("CurrencyCode")(CurrencyCode.asInstanceOf[js.Any])
+    if (!js.isUndefined(DefaultTargetInstance)) __obj.updateDynamic("DefaultTargetInstance")(DefaultTargetInstance.asInstanceOf[js.Any])
+    if (EstimatedMonthlyCost != null) __obj.updateDynamic("EstimatedMonthlyCost")(EstimatedMonthlyCost.asInstanceOf[js.Any])
+    if (EstimatedMonthlySavings != null) __obj.updateDynamic("EstimatedMonthlySavings")(EstimatedMonthlySavings.asInstanceOf[js.Any])
+    if (ExpectedResourceUtilization != null) __obj.updateDynamic("ExpectedResourceUtilization")(ExpectedResourceUtilization.asInstanceOf[js.Any])
+    if (ResourceDetails != null) __obj.updateDynamic("ResourceDetails")(ResourceDetails.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetInstance]
   }
 }

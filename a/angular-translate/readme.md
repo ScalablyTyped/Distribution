@@ -10,9 +10,9 @@ A translation module for AngularJS
 | ------------------ | :-------------: |
 | Full name          | angular-translate |
 | Keywords           | angular-translate, angular, AngularJS, translation |
-| # releases         | 7 |
-| # dependents       | 99 |
-| # downloads        | 4282848 |
+| # releases         | 3 |
+| # dependents       | 103 |
+| # downloads        | 4428151 |
 | # stars            | 13 |
 
 ## Links

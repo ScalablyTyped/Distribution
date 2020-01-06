@@ -24,11 +24,19 @@ object blipDashSdkMod extends js.Object {
         def deleteIntents(): js.Promise[js.Object] = js.native
         def deleteWordSet(id: String): js.Promise[js.Object] = js.native
         // Analysis
-        def getAnalysis(): js.Promise[js.Array[js.Object]] = js.native
-        def getAnalysis(skip: Double): js.Promise[js.Array[js.Object]] = js.native
-        def getAnalysis(skip: Double, take: Double): js.Promise[js.Array[js.Object]] = js.native
-        def getAnalysis(skip: Double, take: Double, ascending: Boolean): js.Promise[js.Array[js.Object]] = js.native
-        def getAnalysis(skip: Double, take: Double, ascending: Boolean, filter: String): js.Promise[js.Array[js.Object]] = js.native
+        def getAnalysis(
+          skip: js.UndefOr[Double],
+          take: js.UndefOr[Double],
+          ascending: js.UndefOr[Boolean],
+          filter: js.UndefOr[String],
+          intents: js.UndefOr[js.Array[String]],
+          feedbacks: js.UndefOr[js.Array[String]],
+          source: js.UndefOr[String],
+          beginDate: js.UndefOr[String],
+          endDate: js.UndefOr[String],
+          minScore: js.UndefOr[String],
+          maxScore: js.UndefOr[String]
+        ): js.Promise[js.Object] = js.native
         // Analytics (Confusion Matrix)
         def getAnalytics(): js.Promise[js.Object] = js.native
         def getAnalytics(id: String): js.Promise[js.Object] = js.native
@@ -72,7 +80,16 @@ object blipDashSdkMod extends js.Object {
         def mergeIntents(intents: js.Array[js.Object]): js.Promise[js.Object] = js.native
         def publishModel(id: String): js.Promise[js.Object] = js.native
         def setAnalysesFeedback(analyses: js.Array[js.Object]): js.Promise[js.Object] = js.native
-        def setAnalysisByEmail(analysis: js.Object): js.Promise[js.Object] = js.native
+        def setAnalysisByEmail(
+          emailAndFilter: js.Object,
+          intents: js.UndefOr[js.Array[String]],
+          feedbacks: js.UndefOr[js.Array[String]],
+          source: js.UndefOr[String],
+          beginDate: js.UndefOr[String],
+          endDate: js.UndefOr[String],
+          minScore: js.UndefOr[String],
+          maxScore: js.UndefOr[String]
+        ): js.Promise[js.Object] = js.native
         def setAnalysisFeedback(id: String, analysisFeedback: js.Object): js.Promise[js.Object] = js.native
         def setAnalytics(confusionMatrix: js.Object): js.Promise[js.Object] = js.native
         def setEntity(entity: js.Object): js.Promise[js.Object] = js.native

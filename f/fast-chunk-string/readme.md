@@ -12,7 +12,7 @@ Chunk string into equal substrings with unicode support
 | Keywords           | string, split, chunk, unicode, utf, utf8, substring |
 | # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 83651 |
+| # downloads        | 125000 |
 | # stars            | 0 |
 
 ## Links

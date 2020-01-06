@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Duration extends js.Object {
   /**
-    * The unit of time between retry attempts.
+    * A unit of time.
     */
-  var unit: js.UndefOr[DurationUnit] = js.undefined
+  var unit: js.UndefOr[DurationUnit] = js.native
   /**
-    * The duration of time between retry attempts.
+    * A number of time units.
     */
-  var value: js.UndefOr[DurationValue] = js.undefined
+  var value: js.UndefOr[DurationValue] = js.native
 }
 
 object Duration {

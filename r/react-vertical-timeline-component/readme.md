@@ -10,9 +10,9 @@ Vertical timeline for React.js
 | ------------------ | :-------------: |
 | Full name          | react-vertical-timeline-component |
 | Keywords           | react, reactjs, React Vertical Timeline |
-| # releases         | 29 |
-| # dependents       | 0 |
-| # downloads        | 64961 |
+| # releases         | 16 |
+| # dependents       | 2 |
+| # downloads        | 159268 |
 | # stars            | 2 |
 
 ## Links

@@ -10,9 +10,9 @@ ejs render middleware for koa
 | ------------------ | :-------------: |
 | Full name          | koa-ejs |
 | Keywords           | koa, render, ejs, view |
-| # releases         | 4 |
+| # releases         | 6 |
 | # dependents       | 67 |
-| # downloads        | 135037 |
+| # downloads        | 197352 |
 | # stars            | 6 |
 
 ## Links

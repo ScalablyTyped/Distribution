@@ -9,7 +9,7 @@ package object clientsDocdbMod {
   import typings.std.Date
 
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.immediate
+    - typings.awsDashSdk.awsDashSdkStrings.immediate_
     - typings.awsDashSdk.awsDashSdkStrings.`pending-reboot`
     - java.lang.String
   */
@@ -64,7 +64,7 @@ package object clientsDocdbMod {
   type VpcSecurityGroupMembershipList = js.Array[VpcSecurityGroupMembership]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2014-10-31`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | java.lang.String

@@ -9,9 +9,9 @@ Open chrome in shell
 | ------------------ | :-------------: |
 | Full name          | chrome |
 | Keywords           | - |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 22049 |
+| # downloads        | 25607 |
 | # stars            | 0 |
 
 ## Links

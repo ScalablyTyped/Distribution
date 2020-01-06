@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PipelinePauseStateSettings extends js.Object {
   /**
     * Pipeline ID to pause ("PIPELINE_0" or "PIPELINE_1").
     */
-  var PipelineId: typings.awsDashSdk.clientsMedialiveMod.PipelineId
+  var PipelineId: typings.awsDashSdk.clientsMedialiveMod.PipelineId = js.native
 }
 
 object PipelinePauseStateSettings {

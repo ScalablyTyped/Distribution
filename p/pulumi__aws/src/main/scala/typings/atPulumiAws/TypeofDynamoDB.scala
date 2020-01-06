@@ -6,10 +6,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TypeofDynamoDB extends js.Object {
-  var Converter: js.Any | TypeofClassConverter
-  var DocumentClient: js.Any | Instantiable0[typings.awsDashSdk.awsDashSdkMod.DynamoDB.DocumentClient]
-  val Types: this.type
+  val Converter: TypeofClassConverter = js.native
+  val DocumentClient: Instantiable0[typings.awsDashSdk.awsDashSdkMod.DynamoDB.DocumentClient] = js.native
+  val Types: this.type = js.native
 }
 
 object TypeofDynamoDB {
@@ -19,7 +20,7 @@ object TypeofDynamoDB {
     DocumentClient: Instantiable0[DocumentClient],
     Types: TypeofDynamoDB
   ): TypeofDynamoDB = {
-    val __obj = js.Dynamic.literal(Converter = Converter, DocumentClient = DocumentClient, Types = Types)
+    val __obj = js.Dynamic.literal(Converter = Converter.asInstanceOf[js.Any], DocumentClient = DocumentClient.asInstanceOf[js.Any], Types = Types.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeofDynamoDB]
   }

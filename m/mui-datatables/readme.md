@@ -10,9 +10,9 @@ Datatables for React using Material-UI
 | ------------------ | :-------------: |
 | Full name          | mui-datatables |
 | Keywords           | material-ui, datatables, react |
-| # releases         | 77 |
-| # dependents       | 8 |
-| # downloads        | 170644 |
+| # releases         | 102 |
+| # dependents       | 20 |
+| # downloads        | 741610 |
 | # stars            | 1 |
 
 ## Links

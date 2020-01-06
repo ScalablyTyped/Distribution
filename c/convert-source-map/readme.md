@@ -11,8 +11,8 @@ Converts a source-map from/to  different formats and allows adding/changing prop
 | Full name          | convert-source-map |
 | Keywords           | convert, sourcemap, source, map, browser, debug |
 | # releases         | 3 |
-| # dependents       | 435 |
-| # downloads        | 339921483 |
+| # dependents       | 479 |
+| # downloads        | 499805978 |
 | # stars            | 4 |
 
 ## Links

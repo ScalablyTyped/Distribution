@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InventoryFilter extends js.Object {
   /**
     * The prefix that is prepended to all inventory results.
     */
-  var prefix: js.UndefOr[Input[String]] = js.undefined
+  var prefix: js.UndefOr[Input[String]] = js.native
 }
 
 object InventoryFilter {

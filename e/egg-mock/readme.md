@@ -10,9 +10,9 @@ mock server for egg
 | ------------------ | :-------------: |
 | Full name          | egg-mock |
 | Keywords           | egg, mock |
-| # releases         | 41 |
+| # releases         | 32 |
 | # dependents       | 5 |
-| # downloads        | 168020 |
+| # downloads        | 202350 |
 | # stars            | 1 |
 
 ## Links

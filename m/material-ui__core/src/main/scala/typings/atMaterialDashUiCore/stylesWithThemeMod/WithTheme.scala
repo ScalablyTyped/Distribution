@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WithTheme extends js.Object {
-  var theme: Theme
+  var theme: Theme = js.native
 }
 
 object WithTheme {

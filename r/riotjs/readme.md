@@ -11,7 +11,7 @@ The 1kb MV* library for building modular web applications.
 | Keywords           | MVP, MVC, framework, library, micro |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 2585 |
+| # downloads        | 6587 |
 | # stars            | 2 |
 
 ## Links

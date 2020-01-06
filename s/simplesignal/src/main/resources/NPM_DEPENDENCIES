@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "simplesignal" : "4.0.2"
+      "simplesignal" : "4.0.4"
     }
   ],
   "test-dependencies" : [
     {
-      "simplesignal" : "4.0.2"
+      "simplesignal" : "4.0.4"
     }
   ],
   "compile-devDependencies" : [

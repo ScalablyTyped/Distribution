@@ -10,8 +10,8 @@ Lint your CoffeeScript using gulp and CoffeeLint
 | Full name          | gulp-coffeelint |
 | Keywords           | gulpplugin, lint, coffee, coffeelint, coffeescript, coffee-script, codeconventions |
 | # releases         | 0 |
-| # dependents       | 30 |
-| # downloads        | 336159 |
+| # dependents       | 31 |
+| # downloads        | 206663 |
 | # stars            | 12 |
 
 ## Links

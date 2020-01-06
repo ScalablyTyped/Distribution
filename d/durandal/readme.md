@@ -12,7 +12,7 @@ Durandal is a cross-device, cross-platform client framework written in JavaScrip
 | Keywords           | durandal, jquery, knockout, requirejs, spa |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 12167 |
+| # downloads        | 45753 |
 | # stars            | 1 |
 
 ## Links

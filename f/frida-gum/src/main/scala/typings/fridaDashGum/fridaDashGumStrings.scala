@@ -229,9 +229,6 @@ object fridaDashGumStrings {
   sealed trait compile extends StalkerEventType
   
   @js.native
-  sealed trait consult extends js.Object
-  
-  @js.native
   sealed trait cooperative extends SchedulingBehavior
   
   @js.native
@@ -1058,9 +1055,6 @@ object fridaDashGumStrings {
   sealed trait `single-step` extends ExceptionType
   
   @js.native
-  sealed trait skip extends js.Object
-  
-  @js.native
   sealed trait sl extends ArmRegister
   
   @js.native
@@ -1601,8 +1595,6 @@ object fridaDashGumStrings {
   @scala.inline
   def compile: compile = "compile".asInstanceOf[compile]
   @scala.inline
-  def consult: consult = "consult".asInstanceOf[consult]
-  @scala.inline
   def cooperative: cooperative = "cooperative".asInstanceOf[cooperative]
   @scala.inline
   def create: create = "create".asInstanceOf[create]
@@ -2092,8 +2084,6 @@ object fridaDashGumStrings {
   def `signed-offset`: `signed-offset` = "signed-offset".asInstanceOf[`signed-offset`]
   @scala.inline
   def `single-step`: `single-step` = "single-step".asInstanceOf[`single-step`]
-  @scala.inline
-  def skip: skip = "skip".asInstanceOf[skip]
   @scala.inline
   def sl: sl = "sl".asInstanceOf[sl]
   @scala.inline

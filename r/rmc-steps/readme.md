@@ -10,9 +10,9 @@ steps ui component for react mobile
 | ------------------ | :-------------: |
 | Full name          | rmc-steps |
 | Keywords           | react, react-component, react-steps, mobile steps |
-| # releases         | 3 |
-| # dependents       | 19 |
-| # downloads        | 290840 |
+| # releases         | 1 |
+| # dependents       | 23 |
+| # downloads        | 544494 |
 | # stars            | 0 |
 
 ## Links

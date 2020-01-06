@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessor extends js.Object {
   /**
     * Array of processor parameters. More details are given below
@@ -12,11 +13,11 @@ trait FirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProces
     js.Array[
       FirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessorParameter
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * The type of processor. Valid Values: `Lambda`
     */
-  var `type`: String
+  var `type`: String = js.native
 }
 
 object FirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessor {
@@ -28,8 +29,8 @@ object FirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProce
     ] = null
   ): FirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessor = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`)
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirehoseDeliveryStreamExtendedS3ConfigurationProcessingConfigurationProcessor]
   }
 }

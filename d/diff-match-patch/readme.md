@@ -11,8 +11,8 @@ npm package for https://github.com/google/diff-match-patch
 | Full name          | diff-match-patch |
 | Keywords           | diff, diff-match-patch, google-diff-match-patch |
 | # releases         | 5 |
-| # dependents       | 87 |
-| # downloads        | 15118262 |
+| # dependents       | 135 |
+| # downloads        | 17551949 |
 | # stars            | 2 |
 
 ## Links

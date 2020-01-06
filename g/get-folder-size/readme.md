@@ -11,8 +11,8 @@ Get the size of a folder by recursively iterating through all its sub(files && f
 | Full name          | get-folder-size |
 | Keywords           | folder, size |
 | # releases         | 4 |
-| # dependents       | 68 |
-| # downloads        | 874996 |
+| # dependents       | 86 |
+| # downloads        | 1138523 |
 | # stars            | 2 |
 
 ## Links

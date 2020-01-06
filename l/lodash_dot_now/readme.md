@@ -12,7 +12,7 @@ The lodash method `_.now` exported as a module.
 | Keywords           | lodash-modularized, now |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 3446905 |
+| # downloads        | 2503962 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ Error comparison and information related utility for node and the browser
 | ------------------ | :-------------: |
 | Full name          | check-error |
 | Keywords           | check-error, error, chai util |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 14 |
-| # downloads        | 79645965 |
+| # downloads        | 91322543 |
 | # stars            | 1 |
 
 ## Links

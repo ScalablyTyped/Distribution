@@ -7,74 +7,75 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClusterArgs extends js.Object {
   /**
     * List of Availability Zones in which the
     * nodes will be created
     */
-  val availabilityZones: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val availabilityZones: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * Group identifier. DAX converts this name to
     * lowercase
     */
-  val clusterName: Input[String]
+  val clusterName: Input[String] = js.native
   /**
     * Description for the cluster
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * A valid Amazon Resource Name (ARN) that identifies
     * an IAM role. At runtime, DAX will assume this role and use the role's
     * permissions to access DynamoDB on your behalf
     */
-  val iamRoleArn: Input[String]
+  val iamRoleArn: Input[String] = js.native
   /**
     * Specifies the weekly time range for when
     * maintenance on the cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi`
     * (24H Clock UTC). The minimum maintenance window is a 60 minute period. Example:
     * `sun:05:00-sun:09:00`
     */
-  val maintenanceWindow: js.UndefOr[Input[String]] = js.undefined
+  val maintenanceWindow: js.UndefOr[Input[String]] = js.native
   /**
     * The compute and memory capacity of the nodes. See
     * [Nodes][1] for supported node types
     */
-  val nodeType: Input[String]
+  val nodeType: Input[String] = js.native
   /**
     * An Amazon Resource Name (ARN) of an
     * SNS topic to send DAX notifications to. Example:
     * `arn:aws:sns:us-east-1:012345678999:my_sns_topic`
     */
-  val notificationTopicArn: js.UndefOr[Input[String]] = js.undefined
+  val notificationTopicArn: js.UndefOr[Input[String]] = js.native
   /**
     * Name of the parameter group to associate
     * with this DAX cluster
     */
-  val parameterGroupName: js.UndefOr[Input[String]] = js.undefined
+  val parameterGroupName: js.UndefOr[Input[String]] = js.native
   /**
     * The number of nodes in the DAX cluster. A
     * replication factor of 1 will create a single-node cluster, without any read
     * replicas
     */
-  val replicationFactor: Input[Double]
+  val replicationFactor: Input[Double] = js.native
   /**
     * One or more VPC security groups associated
     * with the cluster
     */
-  val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * Encrypt at rest options
     */
-  val serverSideEncryption: js.UndefOr[Input[ClusterServerSideEncryption]] = js.undefined
+  val serverSideEncryption: js.UndefOr[Input[ClusterServerSideEncryption]] = js.native
   /**
     * Name of the subnet group to be used for the
     * cluster
     */
-  val subnetGroupName: js.UndefOr[Input[String]] = js.undefined
+  val subnetGroupName: js.UndefOr[Input[String]] = js.native
   /**
     * A mapping of tags to assign to the resource
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object ClusterArgs {

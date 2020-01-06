@@ -6,8 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/withWidth.WithWidth> */
+@js.native
 trait PartialWithWidth extends js.Object {
-  var width: js.UndefOr[Breakpoint] = js.undefined
+  var width: js.UndefOr[Breakpoint] = js.native
 }
 
 object PartialWithWidth {

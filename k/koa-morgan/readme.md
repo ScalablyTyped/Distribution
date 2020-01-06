@@ -10,9 +10,9 @@ HTTP request logger middleware for koa
 | ------------------ | :-------------: |
 | Full name          | koa-morgan |
 | Keywords           | logger, morgan |
-| # releases         | 1 |
-| # dependents       | 66 |
-| # downloads        | 624067 |
+| # releases         | 0 |
+| # dependents       | 83 |
+| # downloads        | 957071 |
 | # stars            | 6 |
 
 ## Links

@@ -12,7 +12,7 @@ Amplify is a wrapper around the NodeJS http packages to help make development ea
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 7908 |
+| # downloads        | 16844 |
 | # stars            | 0 |
 
 ## Links

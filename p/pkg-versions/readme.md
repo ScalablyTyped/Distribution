@@ -10,9 +10,9 @@ Get the version numbers of a package from the npm registry
 | ------------------ | :-------------: |
 | Full name          | pkg-versions |
 | Keywords           | versions, version, numbers, npm, registry, package, package.json, json, module |
-| # releases         | 1 |
+| # releases         | 3 |
 | # dependents       | 8 |
-| # downloads        | 7275 |
+| # downloads        | 8550 |
 | # stars            | 0 |
 
 ## Links

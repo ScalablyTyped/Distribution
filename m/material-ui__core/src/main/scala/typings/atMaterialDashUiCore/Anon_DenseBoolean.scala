@@ -4,8 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Anon_DenseBoolean extends js.Object {
-  var dense: js.UndefOr[Boolean] = js.undefined
+  var dense: js.UndefOr[Boolean] = js.native
 }
 
 object Anon_DenseBoolean {

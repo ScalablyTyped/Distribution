@@ -4,15 +4,15 @@
 Typings are for version 1.0
 
 ## Library description:
-Unique Token authentication strategy for Passport - modified from passport-local.
+Unique Token authentication strategy for Passport.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | passport-unique-token |
-| Keywords           | passport, token, auth, authn, authentication |
-| # releases         | 0 |
+| Keywords           | passport, token, auth, authentication |
+| # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 72366 |
+| # downloads        | 105858 |
 | # stars            | 1 |
 
 ## Links

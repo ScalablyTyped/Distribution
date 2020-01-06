@@ -4,21 +4,21 @@
 Typings are for version 1.41
 
 ## Library description:
-The vscode NPM module provides VS Code extension authors tools to write extensions. It provides the vscode.d.ts node module (all accessible API for extensions) as well as commands for compiling and testing extensions.
+## ⚠️ Use @types/vscode and vscode-test instead ⚠️
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | vscode |
 | Keywords           | - |
-| # releases         | 34 |
-| # dependents       | 19 |
-| # downloads        | 1136443 |
-| # stars            | 3 |
+| # releases         | 30 |
+| # dependents       | 20 |
+| # downloads        | 1529374 |
+| # stars            | 4 |
 
 ## Links
-- [Homepage](https://github.com/Microsoft/vscode#readme)
+- [Homepage](https://github.com/Microsoft/vscode-extension-vscode#readme)
 - [Bugs](https://github.com/Microsoft/vscode-extension-vscode/issues)
-- [Repository](https://github.com/Microsoft/vscode)
+- [Repository](https://github.com/Microsoft/vscode-extension-vscode)
 - [Npm](https://www.npmjs.com/package/vscode)
     
 

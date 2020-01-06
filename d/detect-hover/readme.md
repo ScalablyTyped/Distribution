@@ -10,9 +10,9 @@ JavaScript wrapper for hover and any-hover media queries
 | ------------------ | :-------------: |
 | Full name          | detect-hover |
 | Keywords           | detect, hover, any-hover, media query |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 442039 |
+| # downloads        | 741610 |
 | # stars            | 0 |
 
 ## Links

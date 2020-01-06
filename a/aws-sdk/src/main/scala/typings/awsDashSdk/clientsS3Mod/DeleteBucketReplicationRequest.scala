@@ -4,17 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DeleteBucketReplicationRequest extends js.Object {
   /**
-    *  The bucket name.   It can take a while to propagate the deletion of a replication configuration to all Amazon S3 systems. 
+    *  The bucket name. 
     */
-  var Bucket: BucketName
+  var Bucket: BucketName = js.native
 }
 
 object DeleteBucketReplicationRequest {
   @scala.inline
   def apply(Bucket: BucketName): DeleteBucketReplicationRequest = {
-    val __obj = js.Dynamic.literal(Bucket = Bucket)
+    val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeleteBucketReplicationRequest]
   }

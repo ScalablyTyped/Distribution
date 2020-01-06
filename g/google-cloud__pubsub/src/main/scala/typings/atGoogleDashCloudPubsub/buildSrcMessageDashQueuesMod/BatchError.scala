@@ -12,8 +12,8 @@ import scala.scalajs.js.annotation._
 @JSImport("@google-cloud/pubsub/build/src/message-queues", "BatchError")
 @js.native
 class BatchError protected ()
-  extends StatusObject
-     with Error {
+  extends Error
+     with StatusObject {
   def this(err: ServiceError, ackIds: js.Array[String], rpc: String) = this()
   var ackIds: js.Array[String] = js.native
   /* CompleteClass */

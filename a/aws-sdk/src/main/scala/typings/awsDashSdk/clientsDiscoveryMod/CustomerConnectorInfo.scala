@@ -4,35 +4,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CustomerConnectorInfo extends js.Object {
   /**
     * Number of active discovery connectors.
     */
-  var activeConnectors: Integer
+  var activeConnectors: Integer = js.native
   /**
     * Number of blacklisted discovery connectors.
     */
-  var blackListedConnectors: Integer
+  var blackListedConnectors: Integer = js.native
   /**
     * Number of healthy discovery connectors.
     */
-  var healthyConnectors: Integer
+  var healthyConnectors: Integer = js.native
   /**
     * Number of discovery connectors with status SHUTDOWN,
     */
-  var shutdownConnectors: Integer
+  var shutdownConnectors: Integer = js.native
   /**
     * Total number of discovery connectors.
     */
-  var totalConnectors: Integer
+  var totalConnectors: Integer = js.native
   /**
     * Number of unhealthy discovery connectors.
     */
-  var unhealthyConnectors: Integer
+  var unhealthyConnectors: Integer = js.native
   /**
     * Number of unknown discovery connectors.
     */
-  var unknownConnectors: Integer
+  var unknownConnectors: Integer = js.native
 }
 
 object CustomerConnectorInfo {
@@ -46,7 +47,7 @@ object CustomerConnectorInfo {
     unhealthyConnectors: Integer,
     unknownConnectors: Integer
   ): CustomerConnectorInfo = {
-    val __obj = js.Dynamic.literal(activeConnectors = activeConnectors, blackListedConnectors = blackListedConnectors, healthyConnectors = healthyConnectors, shutdownConnectors = shutdownConnectors, totalConnectors = totalConnectors, unhealthyConnectors = unhealthyConnectors, unknownConnectors = unknownConnectors)
+    val __obj = js.Dynamic.literal(activeConnectors = activeConnectors.asInstanceOf[js.Any], blackListedConnectors = blackListedConnectors.asInstanceOf[js.Any], healthyConnectors = healthyConnectors.asInstanceOf[js.Any], shutdownConnectors = shutdownConnectors.asInstanceOf[js.Any], totalConnectors = totalConnectors.asInstanceOf[js.Any], unhealthyConnectors = unhealthyConnectors.asInstanceOf[js.Any], unknownConnectors = unknownConnectors.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[CustomerConnectorInfo]
   }

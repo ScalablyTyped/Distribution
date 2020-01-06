@@ -10,9 +10,9 @@ add magnet links and torrents to deluge
 | ------------------ | :-------------: |
 | Full name          | deluge |
 | Keywords           | deluge, deluge-webui, torrent |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 591 |
+| # downloads        | 757 |
 | # stars            | 2 |
 
 ## Links

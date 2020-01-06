@@ -27,8 +27,8 @@ trait reactDashSimpleDashMapsProps {
   def MarkerProps: typings.reactDashSimpleDashMaps.reactDashSimpleDashMapsMod.MarkerProps.type = typings.reactDashSimpleDashMaps.reactDashSimpleDashMapsMod.MarkerProps
   type MarkerProps = typings.reactDashSimpleDashMaps.reactDashSimpleDashMapsMod.MarkerProps
   @scala.inline
-  def ZoomableGlobeProps: typings.reactDashSimpleDashMaps.reactDashSimpleDashMapsMod.ZoomableGlobeProps.type = typings.reactDashSimpleDashMaps.reactDashSimpleDashMapsMod.ZoomableGlobeProps
-  type ZoomableGlobeProps = typings.reactDashSimpleDashMaps.reactDashSimpleDashMapsMod.ZoomableGlobeProps
+  def SphereProps: typings.reactDashSimpleDashMaps.reactDashSimpleDashMapsMod.SphereProps.type = typings.reactDashSimpleDashMaps.reactDashSimpleDashMapsMod.SphereProps
+  type SphereProps = typings.reactDashSimpleDashMaps.reactDashSimpleDashMapsMod.SphereProps
   @scala.inline
   def ZoomableGroupProps: typings.reactDashSimpleDashMaps.reactDashSimpleDashMapsMod.ZoomableGroupProps.type = typings.reactDashSimpleDashMaps.reactDashSimpleDashMapsMod.ZoomableGroupProps
   type ZoomableGroupProps = typings.reactDashSimpleDashMaps.reactDashSimpleDashMapsMod.ZoomableGroupProps

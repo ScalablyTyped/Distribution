@@ -12,7 +12,7 @@ JavaScript Library for Building Pixel Isometric Element with HTML5 Canvas
 | Keywords           | obelisk, javascript, canvas, pixel, isometric, game, graphic, art, 2.5D |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 497 |
+| # downloads        | 767 |
 | # stars            | 1 |
 
 ## Links

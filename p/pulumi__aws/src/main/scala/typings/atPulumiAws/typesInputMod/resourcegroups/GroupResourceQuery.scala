@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GroupResourceQuery extends js.Object {
-  var query: Input[String]
-  var `type`: js.UndefOr[Input[String]] = js.undefined
+  var query: Input[String] = js.native
+  var `type`: js.UndefOr[Input[String]] = js.native
 }
 
 object GroupResourceQuery {

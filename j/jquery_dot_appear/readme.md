@@ -11,8 +11,8 @@ jQuery plugin to call a function when an element appears
 | Full name          | jquery.appear |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 38204 |
+| # dependents       | 3 |
+| # downloads        | 66774 |
 | # stars            | 1 |
 
 ## Links

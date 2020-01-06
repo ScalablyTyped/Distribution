@@ -12,7 +12,7 @@ Minifies json files by parsing and re-stringifying them.
 | Keywords           | gulp, gulpplugin, json, jsonmin, min, minify |
 | # releases         | 2 |
 | # dependents       | 3 |
-| # downloads        | 35138 |
+| # downloads        | 39507 |
 | # stars            | 1 |
 
 ## Links

@@ -10,9 +10,9 @@ a little globber
 | ------------------ | :-------------: |
 | Full name          | glob |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 12143 |
-| # downloads        | 982534652 |
+| # releases         | 5 |
+| # dependents       | 14112 |
+| # downloads        | 1316166624 |
 | # stars            | 351 |
 
 ## Links

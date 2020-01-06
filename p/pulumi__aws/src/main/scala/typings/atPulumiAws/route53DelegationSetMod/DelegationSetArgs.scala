@@ -5,12 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DelegationSetArgs extends js.Object {
   /**
     * This is a reference name used in Caller Reference
     * (helpful for identifying single delegation set amongst others)
     */
-  val referenceName: js.UndefOr[Input[String]] = js.undefined
+  val referenceName: js.UndefOr[Input[String]] = js.native
 }
 
 object DelegationSetArgs {

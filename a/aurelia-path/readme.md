@@ -10,9 +10,9 @@ Utilities for path manipulation.
 | ------------------ | :-------------: |
 | Full name          | aurelia-path |
 | Keywords           | aurelia, path |
-| # releases         | 1 |
-| # dependents       | 36 |
-| # downloads        | 355107 |
+| # releases         | 5 |
+| # dependents       | 37 |
+| # downloads        | 457451 |
 | # stars            | 0 |
 
 ## Links

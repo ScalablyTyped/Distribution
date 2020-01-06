@@ -10,9 +10,9 @@ React component and hook which listens to `beforeunload` on the window when moun
 | ------------------ | :-------------: |
 | Full name          | react-beforeunload |
 | Keywords           | beforeunload, component, event, hook, onbeforeunload, react, unload, window |
-| # releases         | 9 |
-| # dependents       | 0 |
-| # downloads        | 97857 |
+| # releases         | 5 |
+| # dependents       | 2 |
+| # downloads        | 239616 |
 | # stars            | 0 |
 
 ## Links

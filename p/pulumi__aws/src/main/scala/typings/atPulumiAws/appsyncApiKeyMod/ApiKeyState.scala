@@ -5,23 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ApiKeyState extends js.Object {
   /**
     * The ID of the associated AppSync API
     */
-  val apiId: js.UndefOr[Input[String]] = js.undefined
+  val apiId: js.UndefOr[Input[String]] = js.native
   /**
     * The API key description. Defaults to "Managed by Pulumi".
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * RFC3339 string representation of the expiry date. Rounded down to nearest hour. By default, it is 7 days from the date of creation.
     */
-  val expires: js.UndefOr[Input[String]] = js.undefined
+  val expires: js.UndefOr[Input[String]] = js.native
   /**
     * The API key
     */
-  val key: js.UndefOr[Input[String]] = js.undefined
+  val key: js.UndefOr[Input[String]] = js.native
 }
 
 object ApiKeyState {

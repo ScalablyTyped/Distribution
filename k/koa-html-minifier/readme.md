@@ -10,9 +10,9 @@ minify HTML responses like some crazy guy
 | ------------------ | :-------------: |
 | Full name          | koa-html-minifier |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 8 |
-| # downloads        | 7326 |
+| # releases         | 0 |
+| # dependents       | 7 |
+| # downloads        | 5511 |
 | # stars            | 0 |
 
 ## Links

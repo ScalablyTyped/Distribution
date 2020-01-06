@@ -14,6 +14,7 @@ package object clientsPersonalizeMod {
   type Arn = String
   type ArnList = js.Array[Arn]
   type AvroSchema = String
+  type BatchInferenceJobs = js.Array[BatchInferenceJobSummary]
   type Boolean = scala.Boolean
   type Campaigns = js.Array[CampaignSummary]
   type CategoricalHyperParameterRanges = js.Array[CategoricalHyperParameterRange]
@@ -52,6 +53,7 @@ package object clientsPersonalizeMod {
   type Metrics = StringDictionary[MetricValue]
   type Name = String
   type NextToken = String
+  type NumBatchResults = Double
   type ParameterName = String
   type ParameterValue = String
   type PerformAutoML = scala.Boolean
@@ -69,12 +71,18 @@ package object clientsPersonalizeMod {
   type TrackingId = String
   type TrainingHours = Double
   type TrainingInputMode = String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.FULL
+    - typings.awsDashSdk.awsDashSdkStrings.UPDATE
+    - java.lang.String
+  */
+  type TrainingMode = _TrainingMode | String
   type TransactionsPerSecond = Double
   type Tunable = scala.Boolean
   type _Date = Date
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2018-05-22`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

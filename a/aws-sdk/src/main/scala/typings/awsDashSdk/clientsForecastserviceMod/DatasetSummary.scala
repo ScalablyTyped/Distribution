@@ -4,31 +4,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DatasetSummary extends js.Object {
   /**
     * When the dataset was created.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.undefined
+  var CreationTime: js.UndefOr[Timestamp] = js.native
   /**
     * The Amazon Resource Name (ARN) of the dataset.
     */
-  var DatasetArn: js.UndefOr[Arn] = js.undefined
+  var DatasetArn: js.UndefOr[Arn] = js.native
   /**
     * The name of the dataset.
     */
-  var DatasetName: js.UndefOr[Name] = js.undefined
+  var DatasetName: js.UndefOr[Name] = js.native
   /**
     * The dataset type.
     */
-  var DatasetType: js.UndefOr[typings.awsDashSdk.clientsForecastserviceMod.DatasetType] = js.undefined
+  var DatasetType: js.UndefOr[typings.awsDashSdk.clientsForecastserviceMod.DatasetType] = js.native
   /**
     * The domain associated with the dataset.
     */
-  var Domain: js.UndefOr[typings.awsDashSdk.clientsForecastserviceMod.Domain] = js.undefined
+  var Domain: js.UndefOr[typings.awsDashSdk.clientsForecastserviceMod.Domain] = js.native
   /**
-    * When the dataset is created, LastModificationTime is the same as CreationTime. After a CreateDatasetImportJob operation is called, LastModificationTime is when the import job finished or failed. While data is being imported to the dataset, LastModificationTime is the current query time.
+    * When you create a dataset, LastModificationTime is the same as CreationTime. While data is being imported to the dataset, LastModificationTime is the current time of the ListDatasets call. After a CreateDatasetImportJob operation has finished, LastModificationTime is when the import job completed or failed.
     */
-  var LastModificationTime: js.UndefOr[Timestamp] = js.undefined
+  var LastModificationTime: js.UndefOr[Timestamp] = js.native
 }
 
 object DatasetSummary {
@@ -42,12 +43,12 @@ object DatasetSummary {
     LastModificationTime: Timestamp = null
   ): DatasetSummary = {
     val __obj = js.Dynamic.literal()
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime)
-    if (DatasetArn != null) __obj.updateDynamic("DatasetArn")(DatasetArn)
-    if (DatasetName != null) __obj.updateDynamic("DatasetName")(DatasetName)
+    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
+    if (DatasetArn != null) __obj.updateDynamic("DatasetArn")(DatasetArn.asInstanceOf[js.Any])
+    if (DatasetName != null) __obj.updateDynamic("DatasetName")(DatasetName.asInstanceOf[js.Any])
     if (DatasetType != null) __obj.updateDynamic("DatasetType")(DatasetType.asInstanceOf[js.Any])
     if (Domain != null) __obj.updateDynamic("Domain")(Domain.asInstanceOf[js.Any])
-    if (LastModificationTime != null) __obj.updateDynamic("LastModificationTime")(LastModificationTime)
+    if (LastModificationTime != null) __obj.updateDynamic("LastModificationTime")(LastModificationTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatasetSummary]
   }
 }

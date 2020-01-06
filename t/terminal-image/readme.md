@@ -10,9 +10,9 @@ Display images in the terminal
 | ------------------ | :-------------: |
 | Full name          | terminal-image |
 | Keywords           | terminal, image, term, iterm, shell, console, command-line, img, pic, picture, photo, ansi, escape, jpg, jpeg, display, show, pixels |
-| # releases         | 5 |
-| # dependents       | 102 |
-| # downloads        | 12941 |
+| # releases         | 6 |
+| # dependents       | 133 |
+| # downloads        | 16470 |
 | # stars            | 0 |
 
 ## Links

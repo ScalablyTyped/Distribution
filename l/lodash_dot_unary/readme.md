@@ -12,7 +12,7 @@ The lodash method `_.unary` exported as a module.
 | Keywords           | lodash-modularized, unary |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 336 |
+| # downloads        | 685 |
 | # stars            | 0 |
 
 ## Links

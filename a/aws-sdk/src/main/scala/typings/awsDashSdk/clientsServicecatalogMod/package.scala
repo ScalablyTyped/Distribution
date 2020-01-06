@@ -10,6 +10,7 @@ package object clientsServicecatalogMod {
   import typings.awsDashSdk.awsDashSdkStrings.CLOUDFORMATION
   import typings.awsDashSdk.awsDashSdkStrings.CopyTags
   import typings.awsDashSdk.awsDashSdkStrings.IAM
+  import typings.awsDashSdk.awsDashSdkStrings.Id_
   import typings.awsDashSdk.awsDashSdkStrings.OWNER
   import typings.awsDashSdk.awsDashSdkStrings.SSM_AUTOMATION
   import typings.awsDashSdk.awsDashSdkStrings.SearchQuery
@@ -18,9 +19,9 @@ package object clientsServicecatalogMod {
 
   type AcceptLanguage = String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Account
-    - typings.awsDashSdk.awsDashSdkStrings.Role
-    - typings.awsDashSdk.awsDashSdkStrings.User
+    - typings.awsDashSdk.awsDashSdkStrings.Account_
+    - typings.awsDashSdk.awsDashSdkStrings.Role_
+    - typings.awsDashSdk.awsDashSdkStrings.User_
     - java.lang.String
   */
   type AccessLevelFilterKey = _AccessLevelFilterKey | String
@@ -149,7 +150,7 @@ package object clientsServicecatalogMod {
   type ProductViewDistributor = String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.FullTextSearch
-    - typings.awsDashSdk.awsDashSdkStrings.Owner
+    - typings.awsDashSdk.awsDashSdkStrings.Owner_
     - typings.awsDashSdk.awsDashSdkStrings.ProductType
     - typings.awsDashSdk.awsDashSdkStrings.SourceProductId
     - java.lang.String
@@ -162,7 +163,7 @@ package object clientsServicecatalogMod {
   type ProductViewOwner = String
   type ProductViewShortDescription = String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Title
+    - typings.awsDashSdk.awsDashSdkStrings.Title_
     - typings.awsDashSdk.awsDashSdkStrings.VersionCount
     - typings.awsDashSdk.awsDashSdkStrings.CreationDate
     - java.lang.String
@@ -222,7 +223,7 @@ package object clientsServicecatalogMod {
   type ProvisioningArtifactInfoValue = String
   type ProvisioningArtifactName = String
   type ProvisioningArtifactParameters = js.Array[ProvisioningArtifactParameter]
-  type ProvisioningArtifactPropertyName = typings.awsDashSdk.awsDashSdkStrings.Id | String
+  type ProvisioningArtifactPropertyName = Id_ | String
   type ProvisioningArtifactPropertyValue = String
   type ProvisioningArtifactSummaries = js.Array[ProvisioningArtifactSummary]
   /* Rewritten from type alias, can be one of: 
@@ -303,8 +304,8 @@ package object clientsServicecatalogMod {
   type ServiceActionAssociationErrorMessage = String
   type ServiceActionAssociations = js.Array[ServiceActionAssociation]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Name
-    - typings.awsDashSdk.awsDashSdkStrings.Version
+    - typings.awsDashSdk.awsDashSdkStrings.Name_
+    - typings.awsDashSdk.awsDashSdkStrings.Version_
     - typings.awsDashSdk.awsDashSdkStrings.AssumeRole
     - typings.awsDashSdk.awsDashSdkStrings.Parameters
     - java.lang.String
@@ -390,7 +391,7 @@ package object clientsServicecatalogMod {
   type Verbose = Boolean
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2015-12-10`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

@@ -10,9 +10,9 @@ Linkify GitHub issue references
 | ------------------ | :-------------: |
 | Full name          | linkify-issues |
 | Keywords           | issue, issues, linkify, link, pr, pull, request, reference, references, github, gh, link |
-| # releases         | 7 |
+| # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 5367 |
+| # downloads        | 6128 |
 | # stars            | 1 |
 
 ## Links

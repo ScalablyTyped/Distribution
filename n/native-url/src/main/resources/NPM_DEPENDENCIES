@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "native-url" : "0.2.3"
+      "native-url" : "0.2.4"
     }
   ],
   "test-dependencies" : [
     {
-      "native-url" : "0.2.3"
+      "native-url" : "0.2.4"
     }
   ],
   "compile-devDependencies" : [

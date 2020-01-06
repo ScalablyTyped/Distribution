@@ -15,7 +15,7 @@ trait LodashFlatMapDepth extends js.Object {
   def apply(iteratee: String, depth: __): LodashFlatMapDepth3x5 = js.native
   def apply(iteratee: String, depth: __, collection: js.Object): LodashFlatMapDepth3x5 = js.native
   def apply(iteratee: js.Object): LodashFlatMapDepth4x1 = js.native
-  def apply(iteratee: js.Object, depth: Double): js.Array[Boolean] = js.native
+  def apply(iteratee: js.Object, depth: Double): LodashFlatMapDepth4x3 = js.native
   def apply(iteratee: js.Object, depth: Double, collection: js.Object): js.Array[Boolean] = js.native
   def apply(iteratee: js.Object, depth: __): LodashFlatMapDepth4x5 = js.native
   def apply(iteratee: js.Object, depth: __, collection: js.Object): LodashFlatMapDepth4x5 = js.native
@@ -34,7 +34,7 @@ trait LodashFlatMapDepth extends js.Object {
       ListOfRecursiveArraysOrValues[TResult] | TResult
     ],
     depth: Double
-  ): js.Array[TResult] = js.native
+  ): LodashFlatMapDepth2x3[T, TResult] = js.native
   def apply[T /* <: js.Object */, TResult](
     iteratee: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
@@ -48,7 +48,13 @@ trait LodashFlatMapDepth extends js.Object {
     depth: Double,
     collection: List[T]
   ): js.Array[TResult] = js.native
-  def apply[T, TResult](iteratee: js.Function1[/* value */ T, ListOfRecursiveArraysOrValues[TResult] | TResult], depth: __): LodashFlatMapDepth1x5[TResult] = js.native
+  def apply[T /* <: js.Object */, TResult](
+    iteratee: js.Function1[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
+      ListOfRecursiveArraysOrValues[TResult] | TResult
+    ],
+    depth: __
+  ): LodashFlatMapDepth2x5[TResult] = js.native
   def apply[T /* <: js.Object */, TResult](
     iteratee: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 

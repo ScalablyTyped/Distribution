@@ -9,9 +9,9 @@ A general purpose library for building credit card forms, validating inputs and 
 | ------------------ | :-------------: |
 | Full name          | jquery.payment |
 | Keywords           | payment, cc, card |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 519472 |
+| # downloads        | 522403 |
 | # stars            | 1 |
 
 ## Links

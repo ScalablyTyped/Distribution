@@ -2,7 +2,6 @@ package typings.mobxDashTask.libTaskMod
 
 import typings.std.MethodDecorator
 import typings.std.Pick
-import typings.std.PropertyDecorator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +10,7 @@ import scala.scalajs.js.annotation._
 - js.Function because Already inherited
 - typings.std.PropertyDecorator because var conflicts: length. Inlined  */ @js.native
 trait TaskCreator[K /* <: String */] extends MethodDecorator {
-  def apply(options: Pick[TaskOptions[_, _], K]): PropertyDecorator = js.native
+  def apply(options: Pick[TaskOptions[_, _], K]): MethodDecorator = js.native
   /**
     * Calls the actual task function.
     */

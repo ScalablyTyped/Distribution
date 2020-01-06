@@ -10,9 +10,9 @@ Web3 module to interact with the Ethereum nodes networking properties.
 | ------------------ | :-------------: |
 | Full name          | web3-net |
 | Keywords           | - |
-| # releases         | 35 |
+| # releases         | 36 |
 | # dependents       | 35 |
-| # downloads        | 3713873 |
+| # downloads        | 4153618 |
 | # stars            | 0 |
 
 ## Links

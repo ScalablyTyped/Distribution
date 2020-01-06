@@ -4,15 +4,15 @@
 Typings are for version 4.4
 
 ## Library description:
-The lodash method `_.template` exported as a module.
+The Lodash method `_.template` exported as a module.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | lodash.template |
 | Keywords           | lodash-modularized, template |
-| # releases         | 1 |
-| # dependents       | 420 |
-| # downloads        | 185020282 |
+| # releases         | 2 |
+| # dependents       | 531 |
+| # downloads        | 247149264 |
 | # stars            | 7 |
 
 ## Links

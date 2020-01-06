@@ -4,43 +4,44 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Bot extends js.Object {
   /**
     * The bot email address.
     */
-  var BotEmail: js.UndefOr[SensitiveString] = js.undefined
+  var BotEmail: js.UndefOr[SensitiveString] = js.native
   /**
     * The bot ID.
     */
-  var BotId: js.UndefOr[String] = js.undefined
+  var BotId: js.UndefOr[String] = js.native
   /**
     * The bot type.
     */
-  var BotType: js.UndefOr[typings.awsDashSdk.clientsChimeMod.BotType] = js.undefined
+  var BotType: js.UndefOr[typings.awsDashSdk.clientsChimeMod.BotType] = js.native
   /**
     * The bot creation timestamp, in ISO 8601 format.
     */
-  var CreatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
+  var CreatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.native
   /**
     * When true, the bot is stopped from running in your account.
     */
-  var Disabled: js.UndefOr[NullableBoolean] = js.undefined
+  var Disabled: js.UndefOr[NullableBoolean] = js.native
   /**
     * The bot display name.
     */
-  var DisplayName: js.UndefOr[SensitiveString] = js.undefined
+  var DisplayName: js.UndefOr[SensitiveString] = js.native
   /**
     * The security token used to authenticate Amazon Chime with the outgoing event endpoint.
     */
-  var SecurityToken: js.UndefOr[SensitiveString] = js.undefined
+  var SecurityToken: js.UndefOr[SensitiveString] = js.native
   /**
     * The updated bot timestamp, in ISO 8601 format.
     */
-  var UpdatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
+  var UpdatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.native
   /**
     * The unique ID for the bot user.
     */
-  var UserId: js.UndefOr[String] = js.undefined
+  var UserId: js.UndefOr[String] = js.native
 }
 
 object Bot {
@@ -57,15 +58,15 @@ object Bot {
     UserId: String = null
   ): Bot = {
     val __obj = js.Dynamic.literal()
-    if (BotEmail != null) __obj.updateDynamic("BotEmail")(BotEmail)
-    if (BotId != null) __obj.updateDynamic("BotId")(BotId)
+    if (BotEmail != null) __obj.updateDynamic("BotEmail")(BotEmail.asInstanceOf[js.Any])
+    if (BotId != null) __obj.updateDynamic("BotId")(BotId.asInstanceOf[js.Any])
     if (BotType != null) __obj.updateDynamic("BotType")(BotType.asInstanceOf[js.Any])
-    if (CreatedTimestamp != null) __obj.updateDynamic("CreatedTimestamp")(CreatedTimestamp)
-    if (!js.isUndefined(Disabled)) __obj.updateDynamic("Disabled")(Disabled)
-    if (DisplayName != null) __obj.updateDynamic("DisplayName")(DisplayName)
-    if (SecurityToken != null) __obj.updateDynamic("SecurityToken")(SecurityToken)
-    if (UpdatedTimestamp != null) __obj.updateDynamic("UpdatedTimestamp")(UpdatedTimestamp)
-    if (UserId != null) __obj.updateDynamic("UserId")(UserId)
+    if (CreatedTimestamp != null) __obj.updateDynamic("CreatedTimestamp")(CreatedTimestamp.asInstanceOf[js.Any])
+    if (!js.isUndefined(Disabled)) __obj.updateDynamic("Disabled")(Disabled.asInstanceOf[js.Any])
+    if (DisplayName != null) __obj.updateDynamic("DisplayName")(DisplayName.asInstanceOf[js.Any])
+    if (SecurityToken != null) __obj.updateDynamic("SecurityToken")(SecurityToken.asInstanceOf[js.Any])
+    if (UpdatedTimestamp != null) __obj.updateDynamic("UpdatedTimestamp")(UpdatedTimestamp.asInstanceOf[js.Any])
+    if (UserId != null) __obj.updateDynamic("UserId")(UserId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Bot]
   }
 }

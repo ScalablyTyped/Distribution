@@ -20,16 +20,16 @@ object labeledDashStreamDashSplicerMod extends js.Object {
     def indexOf(labelOrStream: Stream): Double = js.native
     def pop(): js.UndefOr[Stream] = js.native
     def push(
-      /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param stream because its type ReadonlyArray<Stream> is not an array type */ stream: js.Array[Stream]
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param stream because its type ReadonlyArray<Stream> is not an array type */ stream: js.Array[Stream]
     ): Double = js.native
     def shift(): js.UndefOr[Stream] = js.native
     def splice(
       index: Index,
       howMany: Double,
-      /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param stream because its type ReadonlyArray<Stream> is not an array type */ stream: js.Array[Stream]
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param stream because its type ReadonlyArray<Stream> is not an array type */ stream: js.Array[Stream]
     ): js.Array[Stream] = js.native
     def unshift(
-      /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param stream because its type ReadonlyArray<Stream> is not an array type */ stream: js.Array[Stream]
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param stream because its type ReadonlyArray<Stream> is not an array type */ stream: js.Array[Stream]
     ): Double = js.native
   }
   

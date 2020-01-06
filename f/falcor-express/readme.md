@@ -12,7 +12,7 @@ A falcor server for express.
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 7 |
-| # downloads        | 24227 |
+| # downloads        | 11323 |
 | # stars            | 3 |
 
 ## Links

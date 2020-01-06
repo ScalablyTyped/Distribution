@@ -10,15 +10,15 @@ node's assert.deepEqual algorithm
 | ------------------ | :-------------: |
 | Full name          | deep-equal |
 | Keywords           | equality, equal, compare |
-| # releases         | 1 |
-| # dependents       | 1285 |
-| # downloads        | 222701680 |
+| # releases         | 4 |
+| # dependents       | 1489 |
+| # downloads        | 324824096 |
 | # stars            | 34 |
 
 ## Links
-- [Homepage](https://github.com/substack/node-deep-equal#readme)
-- [Bugs](https://github.com/substack/node-deep-equal/issues)
-- [Repository](https://github.com/substack/node-deep-equal)
+- [Homepage](https://github.com/inspect-js/node-deep-equal#readme)
+- [Bugs](https://github.com/inspect-js/node-deep-equal/issues)
+- [Repository](https://github.com/inspect-js/node-deep-equal)
 - [Npm](https://www.npmjs.com/package/deep-equal)
     
 

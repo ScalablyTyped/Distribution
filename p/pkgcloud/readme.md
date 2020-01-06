@@ -4,16 +4,16 @@
 Typings are for version 1.7
 
 ## Library description:
-An infrastructure-as-a-service agnostic cloud library for node.js
+A provider agnostic cloud library for Node.js
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | pkgcloud |
-| Keywords           | cloud, cloud computing, api, rackspace, joyent, aws, amazon, azure, google, iaas, servers, compute, storage, databases, client, mongolab, iriscouch, mongohq, openstack, redistogo, hpcloud, hp, helion |
-| # releases         | 4 |
-| # dependents       | 117 |
-| # downloads        | 645247 |
-| # stars            | 15 |
+| Keywords           | cloud, cloud computing, api, rackspace, aws, amazon, azure, google, iaas, servers, compute, storage, client, openstack, hpcloud, hp, helion |
+| # releases         | 8 |
+| # dependents       | 124 |
+| # downloads        | 736263 |
+| # stars            | 16 |
 
 ## Links
 - [Homepage](https://github.com/pkgcloud/pkgcloud#readme)

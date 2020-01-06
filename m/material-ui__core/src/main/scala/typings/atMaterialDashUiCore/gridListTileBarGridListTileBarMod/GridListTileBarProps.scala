@@ -14,16 +14,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<{}, @material-ui/core.@material-ui/core/GridListTileBar/GridListTileBar.GridListTileBarClassKey, never> */
+@js.native
 trait GridListTileBarProps extends js.Object {
-  var actionIcon: js.UndefOr[ReactNode] = js.undefined
-  var actionPosition: js.UndefOr[left | right] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var classes: js.UndefOr[PartialClassNameMapGridListTileBarClassKey] = js.undefined
-  var innerRef: js.UndefOr[Ref[_] | RefObject[_]] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
-  var subtitle: js.UndefOr[ReactNode] = js.undefined
-  var title: js.UndefOr[ReactNode] = js.undefined
-  var titlePosition: js.UndefOr[top | bottom] = js.undefined
+  var actionIcon: js.UndefOr[ReactNode] = js.native
+  var actionPosition: js.UndefOr[left | right] = js.native
+  var className: js.UndefOr[String] = js.native
+  var classes: js.UndefOr[PartialClassNameMapGridListTileBarClassKey] = js.native
+  var innerRef: js.UndefOr[Ref[_] | RefObject[_]] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
+  var subtitle: js.UndefOr[ReactNode] = js.native
+  var title: js.UndefOr[ReactNode] = js.native
+  var titlePosition: js.UndefOr[top | bottom] = js.native
 }
 
 object GridListTileBarProps {

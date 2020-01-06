@@ -9,10 +9,10 @@ Tiny turboboosted JavaScript library for creating user interfaces. 100 % test co
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | redom |
-| Keywords           | redom, tiny, dom, library |
-| # releases         | 83 |
-| # dependents       | 6 |
-| # downloads        | 33809 |
+| Keywords           | redom, javascript, tiny, dom, library |
+| # releases         | 49 |
+| # dependents       | 11 |
+| # downloads        | 41797 |
 | # stars            | 1 |
 
 ## Links

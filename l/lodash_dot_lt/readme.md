@@ -12,7 +12,7 @@ The lodash method `_.lt` exported as a module.
 | Keywords           | lodash-modularized, lt |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 66481 |
+| # downloads        | 73295 |
 | # stars            | 0 |
 
 ## Links

@@ -9,9 +9,9 @@ Library that assists in handling FHIR resources. Supports serialization between 
 | ------------------ | :-------------: |
 | Full name          | fhir |
 | Keywords           | fhir, healthcare, interoperability, xml, json, serialization, hl7, standards, clinical |
-| # releases         | 38 |
+| # releases         | 39 |
 | # dependents       | 0 |
-| # downloads        | 9040 |
+| # downloads        | 16917 |
 | # stars            | 1 |
 
 ## Links

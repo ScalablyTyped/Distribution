@@ -4,27 +4,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ImportVolumeRequest extends js.Object {
   /**
     * The Availability Zone for the resulting EBS volume.
     */
-  var AvailabilityZone: String
+  var AvailabilityZone: String = js.native
   /**
     * A description of the volume.
     */
-  var Description: js.UndefOr[String] = js.undefined
+  var Description: js.UndefOr[String] = js.native
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.undefined
+  var DryRun: js.UndefOr[Boolean] = js.native
   /**
     * The disk image.
     */
-  var Image: DiskImageDetail
+  var Image: DiskImageDetail = js.native
   /**
     * The volume size.
     */
-  var Volume: VolumeDetail
+  var Volume: VolumeDetail = js.native
 }
 
 object ImportVolumeRequest {
@@ -36,9 +37,9 @@ object ImportVolumeRequest {
     Description: String = null,
     DryRun: js.UndefOr[scala.Boolean] = js.undefined
   ): ImportVolumeRequest = {
-    val __obj = js.Dynamic.literal(AvailabilityZone = AvailabilityZone, Image = Image, Volume = Volume)
-    if (Description != null) __obj.updateDynamic("Description")(Description)
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun)
+    val __obj = js.Dynamic.literal(AvailabilityZone = AvailabilityZone.asInstanceOf[js.Any], Image = Image.asInstanceOf[js.Any], Volume = Volume.asInstanceOf[js.Any])
+    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportVolumeRequest]
   }
 }

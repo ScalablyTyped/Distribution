@@ -10,9 +10,9 @@ Query TypeScript ASTs with the esquery API!
 | ------------------ | :-------------: |
 | Full name          | @phenomnomnominal/tsquery |
 | Keywords           | - |
-| # releases         | 28 |
-| # dependents       | 18 |
-| # downloads        | 1280622 |
+| # releases         | 29 |
+| # dependents       | 40 |
+| # downloads        | 2470261 |
 | # stars            | 0 |
 
 ## Links

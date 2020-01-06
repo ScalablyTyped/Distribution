@@ -11,9 +11,9 @@ Spies for the Chai assertion library.
 | Full name          | chai-spies |
 | Keywords           | chai, chai-plugin, browser, mocks-and-spies, testing, spies, stubs, mocks |
 | # releases         | 2 |
-| # dependents       | 59 |
-| # downloads        | 1004279 |
-| # stars            | 0 |
+| # dependents       | 81 |
+| # downloads        | 1221799 |
+| # stars            | 1 |
 
 ## Links
 - [Homepage](https://github.com/chaijs/chai-spies#readme)

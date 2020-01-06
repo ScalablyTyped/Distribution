@@ -6,23 +6,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RouteTableState extends js.Object {
   /**
     * Boolean whether this is the default association route table for the EC2 Transit Gateway.
     */
-  val defaultAssociationRouteTable: js.UndefOr[Input[Boolean]] = js.undefined
+  val defaultAssociationRouteTable: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Boolean whether this is the default propagation route table for the EC2 Transit Gateway.
     */
-  val defaultPropagationRouteTable: js.UndefOr[Input[Boolean]] = js.undefined
+  val defaultPropagationRouteTable: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Key-value tags for the EC2 Transit Gateway Route Table.
     */
-  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * Identifier of EC2 Transit Gateway.
     */
-  val transitGatewayId: js.UndefOr[Input[String]] = js.undefined
+  val transitGatewayId: js.UndefOr[Input[String]] = js.native
 }
 
 object RouteTableState {
@@ -30,7 +31,7 @@ object RouteTableState {
   def apply(
     defaultAssociationRouteTable: Input[Boolean] = null,
     defaultPropagationRouteTable: Input[Boolean] = null,
-    tags: Input[StringDictionary[Input[String]]] = null,
+    tags: Input[StringDictionary[_]] = null,
     transitGatewayId: Input[String] = null
   ): RouteTableState = {
     val __obj = js.Dynamic.literal()

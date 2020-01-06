@@ -4,27 +4,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SignalWorkflowExecutionInput extends js.Object {
   /**
     * The name of the domain containing the workflow execution to signal.
     */
-  var domain: DomainName
+  var domain: DomainName = js.native
   /**
     * Data to attach to the WorkflowExecutionSignaled event in the target workflow execution's history.
     */
-  var input: js.UndefOr[Data] = js.undefined
+  var input: js.UndefOr[Data] = js.native
   /**
     * The runId of the workflow execution to signal.
     */
-  var runId: js.UndefOr[WorkflowRunIdOptional] = js.undefined
+  var runId: js.UndefOr[WorkflowRunIdOptional] = js.native
   /**
     * The name of the signal. This name must be meaningful to the target workflow.
     */
-  var signalName: SignalName
+  var signalName: SignalName = js.native
   /**
     * The workflowId of the workflow execution to signal.
     */
-  var workflowId: WorkflowId
+  var workflowId: WorkflowId = js.native
 }
 
 object SignalWorkflowExecutionInput {
@@ -36,9 +37,9 @@ object SignalWorkflowExecutionInput {
     input: Data = null,
     runId: WorkflowRunIdOptional = null
   ): SignalWorkflowExecutionInput = {
-    val __obj = js.Dynamic.literal(domain = domain, signalName = signalName, workflowId = workflowId)
-    if (input != null) __obj.updateDynamic("input")(input)
-    if (runId != null) __obj.updateDynamic("runId")(runId)
+    val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], signalName = signalName.asInstanceOf[js.Any], workflowId = workflowId.asInstanceOf[js.Any])
+    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
+    if (runId != null) __obj.updateDynamic("runId")(runId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignalWorkflowExecutionInput]
   }
 }

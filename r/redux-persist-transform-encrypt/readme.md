@@ -10,9 +10,9 @@ Encrypt your Redux store.
 | ------------------ | :-------------: |
 | Full name          | redux-persist-transform-encrypt |
 | Keywords           | redux, redux-persist, redux-persist-transform, encryption |
-| # releases         | 3 |
-| # dependents       | 4 |
-| # downloads        | 195090 |
+| # releases         | 2 |
+| # dependents       | 6 |
+| # downloads        | 277777 |
 | # stars            | 3 |
 
 ## Links

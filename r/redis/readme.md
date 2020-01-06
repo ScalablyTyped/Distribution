@@ -10,9 +10,9 @@ Redis client library
 | ------------------ | :-------------: |
 | Full name          | redis |
 | Keywords           | database, redis, transaction, pipelining, performance, queue, nodejs, pubsub, backpressure |
-| # releases         | 2 |
-| # dependents       | 3999 |
-| # downloads        | 51050422 |
+| # releases         | 1 |
+| # dependents       | 4411 |
+| # downloads        | 57886154 |
 | # stars            | 448 |
 
 ## Links

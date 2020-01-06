@@ -10,9 +10,9 @@ An isomophic http framework
 | ------------------ | :-------------: |
 | Full name          | roads |
 | Keywords           | api, framework, isomorphic |
-| # releases         | 13 |
-| # dependents       | 2 |
-| # downloads        | 3501 |
+| # releases         | 22 |
+| # dependents       | 4 |
+| # downloads        | 7170 |
 | # stars            | 1 |
 
 ## Links

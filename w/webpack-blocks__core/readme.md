@@ -10,9 +10,9 @@ Functional approach to compose your webpack config.
 | ------------------ | :-------------: |
 | Full name          | @webpack-blocks/core |
 | Keywords           | webpack, webpack-blocks, block, feature, functional |
-| # releases         | 6 |
+| # releases         | 5 |
 | # dependents       | 5 |
-| # downloads        | 258933 |
+| # downloads        | 215509 |
 | # stars            | 0 |
 
 ## Links

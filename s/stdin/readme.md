@@ -10,9 +10,9 @@ Because stdin with node is annoying
 | ------------------ | :-------------: |
 | Full name          | stdin |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 53 |
-| # downloads        | 2260042 |
+| # releases         | 0 |
+| # dependents       | 60 |
+| # downloads        | 2606983 |
 | # stars            | 2 |
 
 ## Links

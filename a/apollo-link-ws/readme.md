@@ -10,9 +10,9 @@ WebSocket transport layer for GraphQL
 | ------------------ | :-------------: |
 | Full name          | apollo-link-ws |
 | Keywords           | - |
-| # releases         | 36 |
-| # dependents       | 109 |
-| # downloads        | 4055951 |
+| # releases         | 17 |
+| # dependents       | 176 |
+| # downloads        | 9040354 |
 | # stars            | 0 |
 
 ## Links

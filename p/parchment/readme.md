@@ -10,9 +10,9 @@ A document model for rich text editors
 | ------------------ | :-------------: |
 | Full name          | parchment |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 26 |
-| # downloads        | 6975147 |
+| # releases         | 3 |
+| # dependents       | 47 |
+| # downloads        | 10673372 |
 | # stars            | 1 |
 
 ## Links

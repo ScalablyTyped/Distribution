@@ -5,15 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait QueuePolicyArgs extends js.Object {
-  /**
-    * The JSON policy for the SQS queue.
-    */
-  val policy: Input[String]
+  val policy: Input[String] = js.native
   /**
     * The URL of the SQS Queue to which to attach the policy
     */
-  val queueUrl: Input[String]
+  val queueUrl: Input[String] = js.native
 }
 
 object QueuePolicyArgs {

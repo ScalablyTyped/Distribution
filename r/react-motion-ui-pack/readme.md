@@ -10,9 +10,9 @@ Addon component wrappers for common UI transitions.
 | ------------------ | :-------------: |
 | Full name          | react-motion-ui-pack |
 | Keywords           | react, component, react-component, ui, motion, transition, animation |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 11 |
-| # downloads        | 236393 |
+| # downloads        | 173782 |
 | # stars            | 4 |
 
 ## Links

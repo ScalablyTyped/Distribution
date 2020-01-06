@@ -10,9 +10,9 @@ Validation Library
 | ------------------ | :-------------: |
 | Full name          | spected |
 | Keywords           | Validation, Deeply Nested Validation Rules, Forms |
-| # releases         | 9 |
+| # releases         | 3 |
 | # dependents       | 7 |
-| # downloads        | 74697 |
+| # downloads        | 92677 |
 | # stars            | 0 |
 
 ## Links

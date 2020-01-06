@@ -10,9 +10,9 @@ Constants and utilities about visitor keys to traverse AST.
 | ------------------ | :-------------: |
 | Full name          | eslint-visitor-keys |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 28 |
-| # downloads        | 133020603 |
+| # releases         | 2 |
+| # dependents       | 53 |
+| # downloads        | 249102830 |
 | # stars            | 0 |
 
 ## Links

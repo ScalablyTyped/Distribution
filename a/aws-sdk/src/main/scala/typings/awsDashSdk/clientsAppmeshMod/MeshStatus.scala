@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MeshStatus extends js.Object {
   /**
     * The current mesh status.
     */
-  var status: js.UndefOr[MeshStatusCode] = js.undefined
+  var status: js.UndefOr[MeshStatusCode] = js.native
 }
 
 object MeshStatus {

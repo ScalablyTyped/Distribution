@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetSubscriptionStateResponse extends js.Object {
   /**
     * The status of the subscription.
     */
-  var SubscriptionState: typings.awsDashSdk.clientsShieldMod.SubscriptionState
+  var SubscriptionState: typings.awsDashSdk.clientsShieldMod.SubscriptionState = js.native
 }
 
 object GetSubscriptionStateResponse {

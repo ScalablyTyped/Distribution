@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait HiddenJsProps extends js.Object {
-  var initialWidth: js.UndefOr[Breakpoint] = js.undefined
-  var lgDown: js.UndefOr[Boolean] = js.undefined
-  var lgUp: js.UndefOr[Boolean] = js.undefined
-  var mdDown: js.UndefOr[Boolean] = js.undefined
-  var mdUp: js.UndefOr[Boolean] = js.undefined
-  var only: js.UndefOr[Breakpoint | js.Array[Breakpoint]] = js.undefined
-  var smDown: js.UndefOr[Boolean] = js.undefined
-  var smUp: js.UndefOr[Boolean] = js.undefined
-  var xlDown: js.UndefOr[Boolean] = js.undefined
-  var xlUp: js.UndefOr[Boolean] = js.undefined
-  var xsDown: js.UndefOr[Boolean] = js.undefined
-  var xsUp: js.UndefOr[Boolean] = js.undefined
+  var initialWidth: js.UndefOr[Breakpoint] = js.native
+  var lgDown: js.UndefOr[Boolean] = js.native
+  var lgUp: js.UndefOr[Boolean] = js.native
+  var mdDown: js.UndefOr[Boolean] = js.native
+  var mdUp: js.UndefOr[Boolean] = js.native
+  var only: js.UndefOr[Breakpoint | js.Array[Breakpoint]] = js.native
+  var smDown: js.UndefOr[Boolean] = js.native
+  var smUp: js.UndefOr[Boolean] = js.native
+  var xlDown: js.UndefOr[Boolean] = js.native
+  var xlUp: js.UndefOr[Boolean] = js.native
+  var xsDown: js.UndefOr[Boolean] = js.native
+  var xsUp: js.UndefOr[Boolean] = js.native
 }
 
 object HiddenJsProps {

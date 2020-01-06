@@ -10,9 +10,9 @@ React component for star (or any other icon based) ratings
 | ------------------ | :-------------: |
 | Full name          | react-star-rating-component |
 | Keywords           | react, component, star, rating, rate, input |
-| # releases         | 4 |
-| # dependents       | 14 |
-| # downloads        | 431874 |
+| # releases         | 3 |
+| # dependents       | 20 |
+| # downloads        | 551852 |
 | # stars            | 3 |
 
 ## Links

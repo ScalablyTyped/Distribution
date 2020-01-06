@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Geometries extends Geometry {
   var geometries: js.Array[
-    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias amap-js-api.AMap.GeoJSON.Geometry */ js.Object
+    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias amap-js-api.AMap.GeoJSON.Geometry */ js.Object
   ]
   var `type`: GeometryCollection
 }
@@ -17,7 +17,7 @@ object Anon_Geometries {
   @scala.inline
   def apply(
     geometries: js.Array[
-      /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias amap-js-api.AMap.GeoJSON.Geometry */ js.Object
+      /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias amap-js-api.AMap.GeoJSON.Geometry */ js.Object
     ],
     `type`: GeometryCollection
   ): Anon_Geometries = {

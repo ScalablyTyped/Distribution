@@ -9,9 +9,9 @@ date / time comparison matchers for chai
 | ------------------ | :-------------: |
 | Full name          | chai-datetime |
 | Keywords           | chai, chai-plugin, objects, date, time, browser, testing, jasmine |
-| # releases         | 2 |
-| # dependents       | 21 |
-| # downloads        | 1347472 |
+| # releases         | 0 |
+| # dependents       | 23 |
+| # downloads        | 1734586 |
 | # stars            | 2 |
 
 ## Links

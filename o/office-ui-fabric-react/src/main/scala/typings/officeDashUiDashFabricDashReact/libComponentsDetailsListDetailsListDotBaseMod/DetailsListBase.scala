@@ -91,9 +91,6 @@ class DetailsListBase protected ()
   def componentDidUpdate_MDetailsListBase(prevProps: IDetailsListProps, prevState: IDetailsListState): Unit = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MDetailsListBase(): Unit = js.native
-  /**
-    * Force the component to update.
-    */
   /* InferMemberOverrides */
   override def forceUpdate(): Unit = js.native
 }

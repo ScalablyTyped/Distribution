@@ -10,9 +10,9 @@ Middleware for handling `multipart/form-data` for koa.
 | ------------------ | :-------------: |
 | Full name          | koa-multer |
 | Keywords           | form, post, multipart, form-data, formdata, koa, middleware |
-| # releases         | 2 |
-| # dependents       | 62 |
-| # downloads        | 243008 |
+| # releases         | 1 |
+| # dependents       | 85 |
+| # downloads        | 381544 |
 | # stars            | 4 |
 
 ## Links

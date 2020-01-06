@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UsagePlanApiStage extends js.Object {
   /**
     * API Id of the associated API stage in a usage plan.
     */
-  var apiId: Input[String]
+  var apiId: Input[String] = js.native
   /**
     * API stage name of the associated API stage in a usage plan.
     */
-  var stage: Input[String]
+  var stage: Input[String] = js.native
 }
 
 object UsagePlanApiStage {

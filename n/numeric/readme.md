@@ -10,9 +10,9 @@ Numerical analysis in javascript
 | ------------------ | :-------------: |
 | Full name          | numeric |
 | Keywords           | numeric, analysis, math |
-| # releases         | 1 |
-| # dependents       | 84 |
-| # downloads        | 1593868 |
+| # releases         | 0 |
+| # dependents       | 86 |
+| # downloads        | 2159165 |
 | # stars            | 5 |
 
 ## Links

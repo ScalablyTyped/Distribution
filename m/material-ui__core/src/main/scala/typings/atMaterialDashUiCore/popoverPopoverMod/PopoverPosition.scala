@@ -4,9 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PopoverPosition extends js.Object {
-  var left: Double
-  var top: Double
+  var left: Double = js.native
+  var top: Double = js.native
 }
 
 object PopoverPosition {

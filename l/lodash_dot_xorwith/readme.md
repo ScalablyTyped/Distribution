@@ -12,7 +12,7 @@ The lodash method `_.xorWith` exported as a module.
 | Keywords           | lodash-modularized, xorwith |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 26048 |
+| # downloads        | 21461 |
 | # stars            | 0 |
 
 ## Links

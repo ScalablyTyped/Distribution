@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ResourceAssociationArgs extends js.Object {
   /**
     * Amazon Resource Name (ARN) of the resource to associate with the RAM Resource Share.
     */
-  val resourceArn: Input[String]
+  val resourceArn: Input[String] = js.native
   /**
     * Amazon Resource Name (ARN) of the RAM Resource Share.
     */
-  val resourceShareArn: Input[String]
+  val resourceShareArn: Input[String] = js.native
 }
 
 object ResourceAssociationArgs {

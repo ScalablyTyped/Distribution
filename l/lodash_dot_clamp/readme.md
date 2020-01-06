@@ -11,8 +11,8 @@ The lodash method `_.clamp` exported as a module.
 | Full name          | lodash.clamp |
 | Keywords           | lodash-modularized, clamp |
 | # releases         | 0 |
-| # dependents       | 37 |
-| # downloads        | 120310 |
+| # dependents       | 46 |
+| # downloads        | 280246 |
 | # stars            | 0 |
 
 ## Links

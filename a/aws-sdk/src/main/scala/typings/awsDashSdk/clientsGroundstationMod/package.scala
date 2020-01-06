@@ -69,11 +69,11 @@ package object clientsGroundstationMod {
   type EirpUnits = dBW | java.lang.String
   type EndpointDetailsList = js.Array[EndpointDetails]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.created
-    - typings.awsDashSdk.awsDashSdkStrings.creating
-    - typings.awsDashSdk.awsDashSdkStrings.deleted
-    - typings.awsDashSdk.awsDashSdkStrings.deleting
-    - typings.awsDashSdk.awsDashSdkStrings.failed
+    - typings.awsDashSdk.awsDashSdkStrings.created__
+    - typings.awsDashSdk.awsDashSdkStrings.creating__
+    - typings.awsDashSdk.awsDashSdkStrings.deleted__
+    - typings.awsDashSdk.awsDashSdkStrings.deleting__
+    - typings.awsDashSdk.awsDashSdkStrings.failed__
     - java.lang.String
   */
   type EndpointStatus = _EndpointStatus | java.lang.String
@@ -109,7 +109,7 @@ package object clientsGroundstationMod {
   type Uuid = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2019-05-23`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | java.lang.String

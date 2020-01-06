@@ -11,8 +11,8 @@ JavaScript Template Library
 | Full name          | spectrum |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 11577 |
+| # dependents       | 4 |
+| # downloads        | 15137 |
 | # stars            | 0 |
 
 ## Links

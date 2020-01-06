@@ -11,8 +11,8 @@ like `chmod -R`
 | Full name          | chmodr |
 | Keywords           | - |
 | # releases         | 3 |
-| # dependents       | 33 |
-| # downloads        | 4332381 |
+| # dependents       | 38 |
+| # downloads        | 4346470 |
 | # stars            | 4 |
 
 ## Links

@@ -10,10 +10,10 @@ Extends Chai with assertions about promises.
 | ------------------ | :-------------: |
 | Full name          | chai-as-promised |
 | Keywords           | chai, chai-plugin, browser, async, testing, assertions, promises, promises-aplus |
-| # releases         | 4 |
-| # dependents       | 415 |
-| # downloads        | 20407050 |
-| # stars            | 59 |
+| # releases         | 1 |
+| # dependents       | 471 |
+| # downloads        | 26512084 |
+| # stars            | 60 |
 
 ## Links
 - [Homepage](https://github.com/domenic/chai-as-promised#readme)

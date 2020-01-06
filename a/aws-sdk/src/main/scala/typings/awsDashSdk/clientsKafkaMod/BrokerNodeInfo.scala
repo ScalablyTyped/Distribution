@@ -4,43 +4,44 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BrokerNodeInfo extends js.Object {
   /**
     * 
     The attached elastic network interface of the broker.
     
     */
-  var AttachedENIId: js.UndefOr[__string] = js.undefined
+  var AttachedENIId: js.UndefOr[__string] = js.native
   /**
     * 
     The ID of the broker.
     
     */
-  var BrokerId: js.UndefOr[__double] = js.undefined
+  var BrokerId: js.UndefOr[__double] = js.native
   /**
     * 
     The client subnet to which this broker node belongs.
     
     */
-  var ClientSubnet: js.UndefOr[__string] = js.undefined
+  var ClientSubnet: js.UndefOr[__string] = js.native
   /**
     * 
     The virtual private cloud (VPC) of the client.
     
     */
-  var ClientVpcIpAddress: js.UndefOr[__string] = js.undefined
+  var ClientVpcIpAddress: js.UndefOr[__string] = js.native
   /**
     * 
     Information about the version of software currently deployed on the Kafka brokers in the cluster.
     
     */
-  var CurrentBrokerSoftwareInfo: js.UndefOr[BrokerSoftwareInfo] = js.undefined
+  var CurrentBrokerSoftwareInfo: js.UndefOr[BrokerSoftwareInfo] = js.native
   /**
     * 
     Endpoints for accessing the broker.
     
     */
-  var Endpoints: js.UndefOr[__listOf__string] = js.undefined
+  var Endpoints: js.UndefOr[__listOf__string] = js.native
 }
 
 object BrokerNodeInfo {
@@ -54,12 +55,12 @@ object BrokerNodeInfo {
     Endpoints: __listOf__string = null
   ): BrokerNodeInfo = {
     val __obj = js.Dynamic.literal()
-    if (AttachedENIId != null) __obj.updateDynamic("AttachedENIId")(AttachedENIId)
+    if (AttachedENIId != null) __obj.updateDynamic("AttachedENIId")(AttachedENIId.asInstanceOf[js.Any])
     if (BrokerId != null) __obj.updateDynamic("BrokerId")(BrokerId.asInstanceOf[js.Any])
-    if (ClientSubnet != null) __obj.updateDynamic("ClientSubnet")(ClientSubnet)
-    if (ClientVpcIpAddress != null) __obj.updateDynamic("ClientVpcIpAddress")(ClientVpcIpAddress)
-    if (CurrentBrokerSoftwareInfo != null) __obj.updateDynamic("CurrentBrokerSoftwareInfo")(CurrentBrokerSoftwareInfo)
-    if (Endpoints != null) __obj.updateDynamic("Endpoints")(Endpoints)
+    if (ClientSubnet != null) __obj.updateDynamic("ClientSubnet")(ClientSubnet.asInstanceOf[js.Any])
+    if (ClientVpcIpAddress != null) __obj.updateDynamic("ClientVpcIpAddress")(ClientVpcIpAddress.asInstanceOf[js.Any])
+    if (CurrentBrokerSoftwareInfo != null) __obj.updateDynamic("CurrentBrokerSoftwareInfo")(CurrentBrokerSoftwareInfo.asInstanceOf[js.Any])
+    if (Endpoints != null) __obj.updateDynamic("Endpoints")(Endpoints.asInstanceOf[js.Any])
     __obj.asInstanceOf[BrokerNodeInfo]
   }
 }

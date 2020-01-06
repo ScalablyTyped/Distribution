@@ -11,8 +11,8 @@ pack node-style source files from a json stream into a browser bundle
 | Full name          | browser-pack |
 | Keywords           | browser, bundle, commonjs, commonj-esque, exports, module.exports, require |
 | # releases         | 4 |
-| # dependents       | 78 |
-| # downloads        | 26436560 |
+| # dependents       | 81 |
+| # downloads        | 27417372 |
 | # stars            | 7 |
 
 ## Links

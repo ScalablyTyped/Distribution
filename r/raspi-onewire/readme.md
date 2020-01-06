@@ -10,9 +10,9 @@ Provides access to 1-Wire on the Raspberry Pi from Node.js
 | ------------------ | :-------------: |
 | Full name          | raspi-onewire |
 | Keywords           | nodebots, robotics, raspberry pi |
-| # releases         | 4 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 207 |
+| # downloads        | 258 |
 | # stars            | 0 |
 
 ## Links

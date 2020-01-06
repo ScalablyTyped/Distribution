@@ -4,35 +4,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VpcLink extends js.Object {
   /**
     * The description of the VPC link.
     */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String] = js.native
   /**
     * The identifier of the VpcLink. It is used in an Integration to reference this VpcLink.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String] = js.native
   /**
     * The name used to label and identify the VPC link.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     * The status of the VPC link. The valid values are AVAILABLE, PENDING, DELETING, or FAILED. Deploying an API will wait if the status is PENDING and will fail if the status is DELETING. 
     */
-  var status: js.UndefOr[VpcLinkStatus] = js.undefined
+  var status: js.UndefOr[VpcLinkStatus] = js.native
   /**
     * A description about the VPC link status.
     */
-  var statusMessage: js.UndefOr[String] = js.undefined
+  var statusMessage: js.UndefOr[String] = js.native
   /**
     * The collection of tags. Each tag element is associated with a given resource.
     */
-  var tags: js.UndefOr[MapOfStringToString] = js.undefined
+  var tags: js.UndefOr[MapOfStringToString] = js.native
   /**
     * The ARNs of network load balancers of the VPC targeted by the VPC link. The network load balancers must be owned by the same AWS account of the API owner.
     */
-  var targetArns: js.UndefOr[ListOfString] = js.undefined
+  var targetArns: js.UndefOr[ListOfString] = js.native
 }
 
 object VpcLink {
@@ -47,13 +48,13 @@ object VpcLink {
     targetArns: ListOfString = null
   ): VpcLink = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (id != null) __obj.updateDynamic("id")(id)
-    if (name != null) __obj.updateDynamic("name")(name)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (statusMessage != null) __obj.updateDynamic("statusMessage")(statusMessage)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
-    if (targetArns != null) __obj.updateDynamic("targetArns")(targetArns)
+    if (statusMessage != null) __obj.updateDynamic("statusMessage")(statusMessage.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (targetArns != null) __obj.updateDynamic("targetArns")(targetArns.asInstanceOf[js.Any])
     __obj.asInstanceOf[VpcLink]
   }
 }

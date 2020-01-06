@@ -10,9 +10,9 @@ Simple and robust resource pool for node.js
 | ------------------ | :-------------: |
 | Full name          | tarn |
 | Keywords           | pool, pooling, throttle |
-| # releases         | 6 |
-| # dependents       | 19 |
-| # downloads        | 5276288 |
+| # releases         | 10 |
+| # dependents       | 24 |
+| # downloads        | 11667296 |
 | # stars            | 0 |
 
 ## Links

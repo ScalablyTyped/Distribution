@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ListDocumentClassificationJobsResponse extends js.Object {
   /**
     * A list containing the properties of each job returned.
     */
-  var DocumentClassificationJobPropertiesList: js.UndefOr[typings.awsDashSdk.clientsComprehendMod.DocumentClassificationJobPropertiesList] = js.undefined
+  var DocumentClassificationJobPropertiesList: js.UndefOr[typings.awsDashSdk.clientsComprehendMod.DocumentClassificationJobPropertiesList] = js.native
   /**
     * Identifies the next page of results to return.
     */
-  var NextToken: js.UndefOr[String] = js.undefined
+  var NextToken: js.UndefOr[String] = js.native
 }
 
 object ListDocumentClassificationJobsResponse {
@@ -22,8 +23,8 @@ object ListDocumentClassificationJobsResponse {
     NextToken: String = null
   ): ListDocumentClassificationJobsResponse = {
     val __obj = js.Dynamic.literal()
-    if (DocumentClassificationJobPropertiesList != null) __obj.updateDynamic("DocumentClassificationJobPropertiesList")(DocumentClassificationJobPropertiesList)
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
+    if (DocumentClassificationJobPropertiesList != null) __obj.updateDynamic("DocumentClassificationJobPropertiesList")(DocumentClassificationJobPropertiesList.asInstanceOf[js.Any])
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDocumentClassificationJobsResponse]
   }
 }

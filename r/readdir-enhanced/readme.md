@@ -4,19 +4,19 @@
 Typings are for version 4.0.3
 
 ## Library description:
-fs.readdir with sync, async, and streaming APIs + filtering, recursion, absolute paths, etc.
+fs.readdir with sync, async, streaming, and async iterator APIs + filtering, recursion, absolute paths, etc.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | readdir-enhanced |
-| Keywords           | fs, readdir, stream, event, recursive, deep, filter, absolute |
-| # releases         | 8 |
-| # dependents       | 22 |
-| # downloads        | 1835570 |
+| Keywords           | fs, readdir, async, promise, iterator, generator, async-iterator, stream, event, event-emitter, recursive, deep, walk, crawl, filter, absolute |
+| # releases         | 17 |
+| # dependents       | 24 |
+| # downloads        | 1652011 |
 | # stars            | 1 |
 
 ## Links
-- [Homepage](https://jsdevtools.org/readdir-enhanced)
+- [Homepage](https://jstools.dev/readdir-enhanced)
 - [Bugs](https://github.com/JS-DevTools/readdir-enhanced/issues)
 - [Repository](https://github.com/JS-DevTools/readdir-enhanced)
 - [Npm](https://www.npmjs.com/package/readdir-enhanced)

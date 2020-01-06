@@ -12,7 +12,7 @@ Create ABI-compliant "union" instances on top of Buffers
 | Keywords           | union, ref, abi, c, c++, ffi |
 | # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 215 |
+| # downloads        | 254 |
 | # stars            | 0 |
 
 ## Links

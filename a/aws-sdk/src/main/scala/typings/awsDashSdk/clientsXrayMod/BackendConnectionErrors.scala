@@ -4,31 +4,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BackendConnectionErrors extends js.Object {
   /**
     * 
     */
-  var ConnectionRefusedCount: js.UndefOr[NullableInteger] = js.undefined
+  var ConnectionRefusedCount: js.UndefOr[NullableInteger] = js.native
   /**
     * 
     */
-  var HTTPCode4XXCount: js.UndefOr[NullableInteger] = js.undefined
+  var HTTPCode4XXCount: js.UndefOr[NullableInteger] = js.native
   /**
     * 
     */
-  var HTTPCode5XXCount: js.UndefOr[NullableInteger] = js.undefined
+  var HTTPCode5XXCount: js.UndefOr[NullableInteger] = js.native
   /**
     * 
     */
-  var OtherCount: js.UndefOr[NullableInteger] = js.undefined
+  var OtherCount: js.UndefOr[NullableInteger] = js.native
   /**
     * 
     */
-  var TimeoutCount: js.UndefOr[NullableInteger] = js.undefined
+  var TimeoutCount: js.UndefOr[NullableInteger] = js.native
   /**
     * 
     */
-  var UnknownHostCount: js.UndefOr[NullableInteger] = js.undefined
+  var UnknownHostCount: js.UndefOr[NullableInteger] = js.native
 }
 
 object BackendConnectionErrors {

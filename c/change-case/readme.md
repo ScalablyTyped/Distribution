@@ -4,19 +4,19 @@
 Typings are for version 3.1.0
 
 ## Library description:
-Convert a string between camelCase, PascalCase, Title Case, snake_case and more.
+Transform a string between `camelCase`, `PascalCase`, `Capital Case`, `snake_case`, `param-case`, `CONSTANT_CASE` and others
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | change-case |
-| Keywords           | camel, pascal, title, case, lower, upper, param, kebab, hyphen, dot, path, constant, cases, check |
-| # releases         | 3 |
-| # dependents       | 850 |
-| # downloads        | 26839914 |
+| Keywords           | change, case, convert, transform, camel-case, pascal-case, param-case, kebab-case, header-case |
+| # releases         | 5 |
+| # dependents       | 1063 |
+| # downloads        | 43744632 |
 | # stars            | 37 |
 
 ## Links
-- [Homepage](https://github.com/blakeembrey/change-case#readme)
+- [Homepage](https://github.com/blakeembrey/change-case/tree/master/packages/camel-case#readme)
 - [Bugs](https://github.com/blakeembrey/change-case/issues)
 - [Repository](https://github.com/blakeembrey/change-case)
 - [Npm](https://www.npmjs.com/package/change-case)

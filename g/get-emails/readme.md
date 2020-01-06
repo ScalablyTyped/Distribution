@@ -10,9 +10,9 @@ Get all email addresses in a string
 | ------------------ | :-------------: |
 | Full name          | get-emails |
 | Keywords           | get, extract, find, scrape, text, string, email, address, emails |
-| # releases         | 1 |
-| # dependents       | 6 |
-| # downloads        | 19420 |
+| # releases         | 2 |
+| # dependents       | 7 |
+| # downloads        | 49185 |
 | # stars            | 4 |
 
 ## Links

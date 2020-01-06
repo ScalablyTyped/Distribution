@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ModelPackageStatusDetails extends js.Object {
   /**
     * The status of the scan of the Docker image container for the model package.
     */
-  var ImageScanStatuses: js.UndefOr[ModelPackageStatusItemList] = js.undefined
+  var ImageScanStatuses: js.UndefOr[ModelPackageStatusItemList] = js.native
   /**
     * The validation status of the model package.
     */
-  var ValidationStatuses: ModelPackageStatusItemList
+  var ValidationStatuses: ModelPackageStatusItemList = js.native
 }
 
 object ModelPackageStatusDetails {
@@ -21,8 +22,8 @@ object ModelPackageStatusDetails {
     ValidationStatuses: ModelPackageStatusItemList,
     ImageScanStatuses: ModelPackageStatusItemList = null
   ): ModelPackageStatusDetails = {
-    val __obj = js.Dynamic.literal(ValidationStatuses = ValidationStatuses)
-    if (ImageScanStatuses != null) __obj.updateDynamic("ImageScanStatuses")(ImageScanStatuses)
+    val __obj = js.Dynamic.literal(ValidationStatuses = ValidationStatuses.asInstanceOf[js.Any])
+    if (ImageScanStatuses != null) __obj.updateDynamic("ImageScanStatuses")(ImageScanStatuses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelPackageStatusDetails]
   }
 }

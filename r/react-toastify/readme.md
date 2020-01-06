@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-toastify
 
-Typings are for version 5.4.1
+Typings are for version 5.5.0
 
 ## Library description:
 React notification made easy
@@ -10,9 +10,9 @@ React notification made easy
 | ------------------ | :-------------: |
 | Full name          | react-toastify |
 | Keywords           | react, notification, toast, react-component, react-toastify, push, alert |
-| # releases         | 75 |
-| # dependents       | 87 |
-| # downloads        | 3813351 |
+| # releases         | 57 |
+| # dependents       | 169 |
+| # downloads        | 9153386 |
 | # stars            | 12 |
 
 ## Links

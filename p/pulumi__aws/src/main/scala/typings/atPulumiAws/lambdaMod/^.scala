@@ -13,8 +13,10 @@ object ^ extends js.Object {
   var DotnetCore2d0Runtime: Runtime = js.native
   var DotnetCore2d1Runtime: Runtime = js.native
   var Go1dxRuntime: Runtime = js.native
+  var Java11Runtime: Runtime = js.native
   var Java8Runtime: Runtime = js.native
   var NodeJS10dXRuntime: Runtime = js.native
+  var NodeJS12dXRuntime: Runtime = js.native
   var NodeJS4d3EdgeRuntime: Runtime = js.native
   var NodeJS4d3Runtime: Runtime = js.native
   var NodeJS6d10Runtime: Runtime = js.native
@@ -23,6 +25,7 @@ object ^ extends js.Object {
   var Python2d7Runtime: Runtime = js.native
   var Python3d6Runtime: Runtime = js.native
   var Python3d7Runtime: Runtime = js.native
+  var Python3d8Runtime: Runtime = js.native
   var Ruby2d5Runtime: Runtime = js.native
 }
 

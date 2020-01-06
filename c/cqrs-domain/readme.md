@@ -10,9 +10,9 @@ Node-cqrs-domain is a node.js module based on node-eventstore. It can be very us
 | ------------------ | :-------------: |
 | Full name          | cqrs-domain |
 | Keywords           | cqrs, eventsourcing, ddd, dddd, command, event, eventdenormalizer, domain |
-| # releases         | 38 |
+| # releases         | 27 |
 | # dependents       | 3 |
-| # downloads        | 33819 |
+| # downloads        | 26976 |
 | # stars            | 5 |
 
 ## Links

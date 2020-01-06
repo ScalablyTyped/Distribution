@@ -11,42 +11,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PresetArgs extends js.Object {
   /**
     * Audio parameters object (documented below).
     */
-  val audio: js.UndefOr[Input[PresetAudio]] = js.undefined
+  val audio: js.UndefOr[Input[PresetAudio]] = js.native
   /**
     * Codec options for the audio parameters (documented below)
     */
-  val audioCodecOptions: js.UndefOr[Input[PresetAudioCodecOptions]] = js.undefined
+  val audioCodecOptions: js.UndefOr[Input[PresetAudioCodecOptions]] = js.native
   /**
     * The container type for the output file. Valid values are `flac`, `flv`, `fmp4`, `gif`, `mp3`, `mp4`, `mpg`, `mxf`, `oga`, `ogg`, `ts`, and `webm`.
     */
-  val container: Input[String]
+  val container: Input[String] = js.native
   /**
     * A description of the preset (maximum 255 characters)
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the preset. (maximum 40 characters)
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * Thumbnail parameters object (documented below)
     */
-  val thumbnails: js.UndefOr[Input[PresetThumbnails]] = js.undefined
-  val `type`: js.UndefOr[Input[String]] = js.undefined
+  val thumbnails: js.UndefOr[Input[PresetThumbnails]] = js.native
+  val `type`: js.UndefOr[Input[String]] = js.native
   /**
     * Video parameters object (documented below)
     */
-  val video: js.UndefOr[Input[PresetVideo]] = js.undefined
-  val videoCodecOptions: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val video: js.UndefOr[Input[PresetVideo]] = js.native
+  val videoCodecOptions: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * Watermark parameters for the video parameters (documented below)
     * * `videoCodecOptions` (Optional, Forces new resource) Codec options for the video parameters
     */
-  val videoWatermarks: js.UndefOr[Input[js.Array[Input[PresetVideoWatermark]]]] = js.undefined
+  val videoWatermarks: js.UndefOr[Input[js.Array[Input[PresetVideoWatermark]]]] = js.native
 }
 
 object PresetArgs {

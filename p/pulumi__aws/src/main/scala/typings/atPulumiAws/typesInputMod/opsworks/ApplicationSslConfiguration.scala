@@ -5,10 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ApplicationSslConfiguration extends js.Object {
-  var certificate: Input[String]
-  var chain: js.UndefOr[Input[String]] = js.undefined
-  var privateKey: Input[String]
+  var certificate: Input[String] = js.native
+  var chain: js.UndefOr[Input[String]] = js.native
+  var privateKey: Input[String] = js.native
 }
 
 object ApplicationSslConfiguration {

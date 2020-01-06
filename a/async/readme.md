@@ -11,8 +11,8 @@ Higher-order functions and common patterns for asynchronous code
 | Full name          | async |
 | Keywords           | async, callback, module, utility |
 | # releases         | 8 |
-| # dependents       | 21748 |
-| # downloads        | 937669290 |
+| # dependents       | 22727 |
+| # downloads        | 1168565180 |
 | # stars            | 1213 |
 
 ## Links

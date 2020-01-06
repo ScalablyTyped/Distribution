@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DatasetSchemaSummary extends js.Object {
   /**
     * The date and time (in Unix time) that the schema was created.
     */
-  var creationDateTime: js.UndefOr[_Date] = js.undefined
+  var creationDateTime: js.UndefOr[_Date] = js.native
   /**
     * The date and time (in Unix time) that the schema was last updated.
     */
-  var lastUpdatedDateTime: js.UndefOr[_Date] = js.undefined
+  var lastUpdatedDateTime: js.UndefOr[_Date] = js.native
   /**
     * The name of the schema.
     */
-  var name: js.UndefOr[Name] = js.undefined
+  var name: js.UndefOr[Name] = js.native
   /**
     * The Amazon Resource Name (ARN) of the schema.
     */
-  var schemaArn: js.UndefOr[Arn] = js.undefined
+  var schemaArn: js.UndefOr[Arn] = js.native
 }
 
 object DatasetSchemaSummary {
@@ -32,10 +33,10 @@ object DatasetSchemaSummary {
     schemaArn: Arn = null
   ): DatasetSchemaSummary = {
     val __obj = js.Dynamic.literal()
-    if (creationDateTime != null) __obj.updateDynamic("creationDateTime")(creationDateTime)
-    if (lastUpdatedDateTime != null) __obj.updateDynamic("lastUpdatedDateTime")(lastUpdatedDateTime)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (schemaArn != null) __obj.updateDynamic("schemaArn")(schemaArn)
+    if (creationDateTime != null) __obj.updateDynamic("creationDateTime")(creationDateTime.asInstanceOf[js.Any])
+    if (lastUpdatedDateTime != null) __obj.updateDynamic("lastUpdatedDateTime")(lastUpdatedDateTime.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (schemaArn != null) __obj.updateDynamic("schemaArn")(schemaArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatasetSchemaSummary]
   }
 }

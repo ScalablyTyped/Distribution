@@ -10,9 +10,9 @@ Simple drop-in for express apps to spawn multiple processes
 | ------------------ | :-------------: |
 | Full name          | express-cluster |
 | Keywords           | cluster, express, http, https, net, listener |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 9 |
-| # downloads        | 151649 |
+| # downloads        | 141227 |
 | # stars            | 11 |
 
 ## Links

@@ -10,9 +10,9 @@ A msgpack v5 implementation for node.js and the browser, with extension points
 | ------------------ | :-------------: |
 | Full name          | msgpack5 |
 | Keywords           | msgpack, extension, v5, MessagePack, ext |
-| # releases         | 10 |
-| # dependents       | 108 |
-| # downloads        | 2880307 |
+| # releases         | 6 |
+| # dependents       | 127 |
+| # downloads        | 3486224 |
 | # stars            | 12 |
 
 ## Links

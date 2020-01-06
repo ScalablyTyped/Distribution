@@ -10,9 +10,9 @@ The async-writer module makes it possible to asynchronously write data to an out
 | ------------------ | :-------------: |
 | Full name          | async-writer |
 | Keywords           | - |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 459804 |
+| # downloads        | 442780 |
 | # stars            | 0 |
 
 ## Links

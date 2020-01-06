@@ -10,9 +10,9 @@ Ecore (EMOF) JavaScript Implementation
 | ------------------ | :-------------: |
 | Full name          | ecore |
 | Keywords           | emf, emof, model |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 1652 |
+| # downloads        | 1680 |
 | # stars            | 0 |
 
 ## Links

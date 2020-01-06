@@ -4,15 +4,15 @@
 Typings are for version 11.5.3
 
 ## Library description:
-An enhanced React-Native modal
+An enhanced React Native modal
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-native-modal |
 | Keywords           | react-native, react, native, modal, android, ios, backdrop, simple, animated |
-| # releases         | 35 |
-| # dependents       | 59 |
-| # downloads        | 2405324 |
+| # releases         | 36 |
+| # dependents       | 95 |
+| # downloads        | 4891863 |
 | # stars            | 3 |
 
 ## Links

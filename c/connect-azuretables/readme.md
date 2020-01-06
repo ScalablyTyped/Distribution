@@ -12,7 +12,7 @@ Azure Table Storage session store for express-session
 | Keywords           | - |
 | # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 4473 |
+| # downloads        | 5839 |
 | # stars            | 1 |
 
 ## Links

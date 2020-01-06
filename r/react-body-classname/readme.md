@@ -11,8 +11,8 @@ A declarative, nested way to manipulate your body's className
 | Full name          | react-body-classname |
 | Keywords           | react, component, react-component, body.className, title, jsx |
 | # releases         | 3 |
-| # dependents       | 6 |
-| # downloads        | 474276 |
+| # dependents       | 9 |
+| # downloads        | 482826 |
 | # stars            | 0 |
 
 ## Links

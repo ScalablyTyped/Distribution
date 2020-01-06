@@ -10,9 +10,9 @@ This package is no longer supported and has been deprecated. To avoid malicious 
 | ------------------ | :-------------: |
 | Full name          | dynatrace |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 865 |
+| # downloads        | 962 |
 | # stars            | 0 |
 
 ## Links

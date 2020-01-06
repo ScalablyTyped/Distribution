@@ -9,16 +9,16 @@ Utilities for perspective-enabled Web Mercator projections
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | viewport-mercator-project |
-| Keywords           | - |
-| # releases         | 23 |
-| # dependents       | 31 |
-| # downloads        | 1119587 |
+| Keywords           | webgl, javascript, math, geospatial, cartographic, projection, web mercator, geographic |
+| # releases         | 20 |
+| # dependents       | 47 |
+| # downloads        | 2393499 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/uber-common/viewport-mercator-project#readme)
-- [Bugs](https://github.com/uber-common/viewport-mercator-project/issues)
-- [Repository](https://github.com/uber-common/viewport-mercator-project)
+- [Homepage](https://github.com/uber-web/math.gl#readme)
+- [Bugs](https://github.com/uber-web/math.gl/issues)
+- [Repository](https://github.com/uber-web/math.gl)
 - [Npm](https://www.npmjs.com/package/viewport-mercator-project)
     
 

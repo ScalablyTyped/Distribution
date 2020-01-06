@@ -10,9 +10,9 @@ The Feathers Primus real-time API provider
 | ------------------ | :-------------: |
 | Full name          | @feathersjs/primus |
 | Keywords           | feathers, feathers-plugin |
-| # releases         | 18 |
+| # releases         | 35 |
 | # dependents       | 1 |
-| # downloads        | 16755 |
+| # downloads        | 26253 |
 | # stars            | 0 |
 
 ## Links

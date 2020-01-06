@@ -10,9 +10,9 @@ Super simple stubs and spies with 1-step sandbox restore
 | ------------------ | :-------------: |
 | Full name          | simple-mock |
 | Keywords           | test, simplemock, simple, mock, stub, spy, fake |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 9 |
-| # downloads        | 269820 |
+| # downloads        | 317522 |
 | # stars            | 4 |
 
 ## Links

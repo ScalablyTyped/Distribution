@@ -11,8 +11,8 @@ A js library to generate and parse UUIDs,TimeUUIDs and generate TimeUUID based o
 | Full name          | uuid-js |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 53 |
-| # downloads        | 2648062 |
+| # dependents       | 64 |
+| # downloads        | 4494989 |
 | # stars            | 0 |
 
 ## Links

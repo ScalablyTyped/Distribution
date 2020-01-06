@@ -11,8 +11,8 @@ Check something against an array of types.
 | Full name          | multi-typeof |
 | Keywords           | check, multi, multiple, test, type, typeof |
 | # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 3364 |
+| # dependents       | 5 |
+| # downloads        | 3403 |
 | # stars            | 0 |
 
 ## Links

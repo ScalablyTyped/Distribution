@@ -11,7 +11,7 @@ SharedWorker interface which perisists URLs so it can be accessed through differ
 | Keywords           | shared, worker, sharedworker, tab, windows, page |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 107 |
+| # downloads        | 109 |
 | # stars            | 0 |
 
 ## Links

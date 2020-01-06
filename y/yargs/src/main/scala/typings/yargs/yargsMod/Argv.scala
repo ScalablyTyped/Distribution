@@ -119,7 +119,18 @@ trait Argv[T] extends js.Object {
     */
   def coerce[K /* <: String */, V](key: K, func: js.Function1[/* arg */ js.Any, V]): Argv[(Omit[T, K]) with typings.yargs.yargsStrings.Argv with js.Any] = js.native
   def coerce[K /* <: String */, V](key: js.Array[K], func: js.Function1[/* arg */ js.Any, V]): Argv[(Omit[T, K]) with typings.yargs.yargsStrings.Argv with js.Any] = js.native
-  def command[O /* <: StringDictionary[Options] */](command: String, description: String): Argv[T] = js.native
+  /**
+    * Define the commands exposed by your application.
+    * @param command Should be a string representing the command or an array of strings representing the command and its aliases.
+    * @param description Use to provide a description for each command your application accepts (the values stored in `argv._`).
+    * Set `description` to false to create a hidden command. Hidden commands don't show up in the help output and aren't available for completion.
+    * @param [builder] Object to give hints about the options that your command accepts.
+    * Can also be a function. This function is executed with a yargs instance, and can be used to provide advanced command specific help.
+    *
+    * Note that when `void` is returned, the handler `argv` object type will not include command-specific arguments.
+    * @param [handler] Function, which will be executed with the parsed `argv` object.
+    */
+  def command[U](command: String, description: String): Argv[T] = js.native
   def command[O /* <: StringDictionary[Options] */](command: String, description: String, builder: O): Argv[T] = js.native
   def command[O /* <: StringDictionary[Options] */](
     command: String,
@@ -135,7 +146,7 @@ trait Argv[T] extends js.Object {
     handler: js.Function1[/* args */ Arguments[U], Unit]
   ): Argv[T] = js.native
   def command[U](command: String, description: String, module: CommandModule[T, U]): Argv[U] = js.native
-  def command[O /* <: StringDictionary[Options] */](command: js.Array[String], description: String): Argv[T] = js.native
+  def command[U](command: js.Array[String], description: String): Argv[T] = js.native
   def command[O /* <: StringDictionary[Options] */](command: js.Array[String], description: String, builder: O): Argv[T] = js.native
   def command[O /* <: StringDictionary[Options] */](
     command: js.Array[String],
@@ -156,23 +167,12 @@ trait Argv[T] extends js.Object {
   /** Apply command modules from a directory relative to the module calling this method. */
   def commandDir(dir: String): Argv[T] = js.native
   def commandDir(dir: String, opts: RequireDirectoryOptions): Argv[T] = js.native
-  /**
-    * Define the commands exposed by your application.
-    * @param command Should be a string representing the command or an array of strings representing the command and its aliases.
-    * @param description Use to provide a description for each command your application accepts (the values stored in `argv._`).
-    * Set `description` to false to create a hidden command. Hidden commands don't show up in the help output and aren't available for completion.
-    * @param [builder] Object to give hints about the options that your command accepts.
-    * Can also be a function. This function is executed with a yargs instance, and can be used to provide advanced command specific help.
-    *
-    * Note that when `void` is returned, the handler `argv` object type will not include command-specific arguments.
-    * @param [handler] Function, which will be executed with the parsed `argv` object.
-    */
   @JSName("command")
-  def command_U[U](command: String, description: String): Argv[T] = js.native
+  def command_O_StringDictionaryOptions[O /* <: StringDictionary[Options] */](command: String, description: String): Argv[T] = js.native
   @JSName("command")
-  def command_U[U](command: js.Array[String], description: String): Argv[T] = js.native
+  def command_O_StringDictionaryOptions[O /* <: StringDictionary[Options] */](command: js.Array[String], description: String): Argv[T] = js.native
   @JSName("command")
-  def command_false[O /* <: StringDictionary[Options] */](command: String, showInHelp: `false`): Argv[T] = js.native
+  def command_false[U](command: String, showInHelp: `false`): Argv[T] = js.native
   @JSName("command")
   def command_false[O /* <: StringDictionary[Options] */](command: String, showInHelp: `false`, builder: O): Argv[T] = js.native
   @JSName("command")
@@ -194,7 +194,7 @@ trait Argv[T] extends js.Object {
   @JSName("command")
   def command_false[U](command: String, showInHelp: `false`, module: CommandModule[T, U]): Argv[U] = js.native
   @JSName("command")
-  def command_false[O /* <: StringDictionary[Options] */](command: js.Array[String], showInHelp: `false`): Argv[T] = js.native
+  def command_false[U](command: js.Array[String], showInHelp: `false`): Argv[T] = js.native
   @JSName("command")
   def command_false[O /* <: StringDictionary[Options] */](command: js.Array[String], showInHelp: `false`, builder: O): Argv[T] = js.native
   @JSName("command")
@@ -216,9 +216,9 @@ trait Argv[T] extends js.Object {
   @JSName("command")
   def command_false[U](command: js.Array[String], showInHelp: `false`, module: CommandModule[T, U]): Argv[U] = js.native
   @JSName("command")
-  def command_false_U[U](command: String, showInHelp: `false`): Argv[T] = js.native
+  def command_false_O_StringDictionaryOptions[O /* <: StringDictionary[Options] */](command: String, showInHelp: `false`): Argv[T] = js.native
   @JSName("command")
-  def command_false_U[U](command: js.Array[String], showInHelp: `false`): Argv[T] = js.native
+  def command_false_O_StringDictionaryOptions[O /* <: StringDictionary[Options] */](command: js.Array[String], showInHelp: `false`): Argv[T] = js.native
   /**
     * Enable bash/zsh-completion shortcuts for commands and options.
     *
@@ -650,7 +650,7 @@ trait Argv[T] extends js.Object {
     * and allows you to provide configuration for the positional arguments accepted by your program:
     */
   def usage(message: String): Argv[T] = js.native
-  def usage[O /* <: StringDictionary[Options] */](command: String, description: String): Argv[T] = js.native
+  def usage[U](command: String, description: String): Argv[T] = js.native
   def usage[O /* <: StringDictionary[Options] */](command: String, description: String, builder: O): Argv[T] = js.native
   def usage[O /* <: StringDictionary[Options] */](
     command: String,
@@ -665,7 +665,7 @@ trait Argv[T] extends js.Object {
     builder: js.Function1[/* args */ Argv[T], Argv[U]],
     handler: js.Function1[/* args */ Arguments[U], Unit]
   ): Argv[T] = js.native
-  def usage[O /* <: StringDictionary[Options] */](command: String, showInHelp: Boolean): Argv[T] = js.native
+  def usage[U](command: String, showInHelp: Boolean): Argv[T] = js.native
   def usage[O /* <: StringDictionary[Options] */](command: String, showInHelp: Boolean, builder: O): Argv[T] = js.native
   def usage[O /* <: StringDictionary[Options] */](
     command: String,
@@ -680,7 +680,7 @@ trait Argv[T] extends js.Object {
     builder: js.Function1[/* args */ Argv[T], Argv[U]],
     handler: js.Function1[/* args */ Arguments[U], Unit]
   ): Argv[T] = js.native
-  def usage[O /* <: StringDictionary[Options] */](command: js.Array[String], description: String): Argv[T] = js.native
+  def usage[U](command: js.Array[String], description: String): Argv[T] = js.native
   def usage[O /* <: StringDictionary[Options] */](command: js.Array[String], description: String, builder: O): Argv[T] = js.native
   def usage[O /* <: StringDictionary[Options] */](
     command: js.Array[String],
@@ -695,7 +695,7 @@ trait Argv[T] extends js.Object {
     builder: js.Function1[/* args */ Argv[T], Argv[U]],
     handler: js.Function1[/* args */ Arguments[U], Unit]
   ): Argv[T] = js.native
-  def usage[O /* <: StringDictionary[Options] */](command: js.Array[String], showInHelp: Boolean): Argv[T] = js.native
+  def usage[U](command: js.Array[String], showInHelp: Boolean): Argv[T] = js.native
   def usage[O /* <: StringDictionary[Options] */](command: js.Array[String], showInHelp: Boolean, builder: O): Argv[T] = js.native
   def usage[O /* <: StringDictionary[Options] */](
     command: js.Array[String],
@@ -711,13 +711,13 @@ trait Argv[T] extends js.Object {
     handler: js.Function1[/* args */ Arguments[U], Unit]
   ): Argv[T] = js.native
   @JSName("usage")
-  def usage_U[U](command: String, description: String): Argv[T] = js.native
+  def usage_O_StringDictionaryOptions[O /* <: StringDictionary[Options] */](command: String, description: String): Argv[T] = js.native
   @JSName("usage")
-  def usage_U[U](command: String, showInHelp: Boolean): Argv[T] = js.native
+  def usage_O_StringDictionaryOptions[O /* <: StringDictionary[Options] */](command: String, showInHelp: Boolean): Argv[T] = js.native
   @JSName("usage")
-  def usage_U[U](command: js.Array[String], description: String): Argv[T] = js.native
+  def usage_O_StringDictionaryOptions[O /* <: StringDictionary[Options] */](command: js.Array[String], description: String): Argv[T] = js.native
   @JSName("usage")
-  def usage_U[U](command: js.Array[String], showInHelp: Boolean): Argv[T] = js.native
+  def usage_O_StringDictionaryOptions[O /* <: StringDictionary[Options] */](command: js.Array[String], showInHelp: Boolean): Argv[T] = js.native
   /**
     * Add an option (e.g. `--version`) that displays the version number (given by the version parameter) and exits the process.
     * By default yargs enables version for the `--version` option.

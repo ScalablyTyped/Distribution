@@ -9,9 +9,9 @@ Typings are for version 0.59.2
 | ------------------ | :-------------: |
 | Full name          | @nivo/axes |
 | Keywords           | nivo, dataviz, react, axes |
-| # releases         | 12 |
-| # dependents       | 13 |
-| # downloads        | 388802 |
+| # releases         | 17 |
+| # dependents       | 17 |
+| # downloads        | 870411 |
 | # stars            | 0 |
 
 ## Links

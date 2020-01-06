@@ -9,10 +9,10 @@ gridstack.js is a jQuery plugin for widget layout
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | gridstack |
-| Keywords           | gridstack, grid, gridster, layout, jquery |
-| # releases         | 3 |
-| # dependents       | 7 |
-| # downloads        | 254583 |
+| Keywords           | gridstack, grid, gridster, layout |
+| # releases         | 9 |
+| # dependents       | 8 |
+| # downloads        | 419929 |
 | # stars            | 1 |
 
 ## Links

@@ -6,14 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/Select.SelectClassKey>> */
+@js.native
 trait PartialStyleRulesSelectClassKey extends js.Object {
-  var disabled: js.UndefOr[CSSProperties] = js.undefined
-  var filled: js.UndefOr[CSSProperties] = js.undefined
-  var icon: js.UndefOr[CSSProperties] = js.undefined
-  var outlined: js.UndefOr[CSSProperties] = js.undefined
-  var root: js.UndefOr[CSSProperties] = js.undefined
-  var select: js.UndefOr[CSSProperties] = js.undefined
-  var selectMenu: js.UndefOr[CSSProperties] = js.undefined
+  var disabled: js.UndefOr[CSSProperties] = js.native
+  var filled: js.UndefOr[CSSProperties] = js.native
+  var icon: js.UndefOr[CSSProperties] = js.native
+  var outlined: js.UndefOr[CSSProperties] = js.native
+  var root: js.UndefOr[CSSProperties] = js.native
+  var select: js.UndefOr[CSSProperties] = js.native
+  var selectMenu: js.UndefOr[CSSProperties] = js.native
 }
 
 object PartialStyleRulesSelectClassKey {

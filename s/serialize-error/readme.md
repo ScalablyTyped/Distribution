@@ -4,15 +4,15 @@
 Typings are for version 5.0.0
 
 ## Library description:
-Serialize an error into a plain object
+Serialize/deserialize an error into a plain object
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | serialize-error |
-| Keywords           | error, serialize, stringify, object, convert, process, send |
-| # releases         | 4 |
-| # dependents       | 223 |
-| # downloads        | 22346785 |
+| Keywords           | error, serialize, stringify, object, convert, process, send, deserialize |
+| # releases         | 5 |
+| # dependents       | 283 |
+| # downloads        | 42391731 |
 | # stars            | 10 |
 
 ## Links

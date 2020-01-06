@@ -10,9 +10,9 @@ A jQuery plugin for advanced cross-browser ellipsis on multiple line content.
 | ------------------ | :-------------: |
 | Full name          | dotdotdot |
 | Keywords           | ellipsis, dotdotdot, multiline, text, text-overflow, overflow, dots |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 113422 |
+| # downloads        | 128552 |
 | # stars            | 2 |
 
 ## Links

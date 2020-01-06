@@ -10,9 +10,9 @@ horsepower for your modules
 | ------------------ | :-------------: |
 | Full name          | steed |
 | Keywords           | control, flow, async, series, parallel |
-| # releases         | 1 |
-| # dependents       | 44 |
-| # downloads        | 510552 |
+| # releases         | 0 |
+| # dependents       | 47 |
+| # downloads        | 625725 |
 | # stars            | 8 |
 
 ## Links

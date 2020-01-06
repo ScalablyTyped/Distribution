@@ -4,39 +4,31 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Rule extends js.Object {
+  var AbortIncompleteMultipartUpload: js.UndefOr[typings.awsDashSdk.clientsS3Mod.AbortIncompleteMultipartUpload] = js.native
   /**
-    * 
+    * Specifies the expiration for the lifecycle of the object.
     */
-  var AbortIncompleteMultipartUpload: js.UndefOr[typings.awsDashSdk.clientsS3Mod.AbortIncompleteMultipartUpload] = js.undefined
-  /**
-    * 
-    */
-  var Expiration: js.UndefOr[LifecycleExpiration] = js.undefined
+  var Expiration: js.UndefOr[LifecycleExpiration] = js.native
   /**
     * Unique identifier for the rule. The value can't be longer than 255 characters.
     */
-  var ID: js.UndefOr[typings.awsDashSdk.clientsS3Mod.ID] = js.undefined
-  /**
-    * 
-    */
-  var NoncurrentVersionExpiration: js.UndefOr[typings.awsDashSdk.clientsS3Mod.NoncurrentVersionExpiration] = js.undefined
-  /**
-    * 
-    */
-  var NoncurrentVersionTransition: js.UndefOr[typings.awsDashSdk.clientsS3Mod.NoncurrentVersionTransition] = js.undefined
+  var ID: js.UndefOr[typings.awsDashSdk.clientsS3Mod.ID] = js.native
+  var NoncurrentVersionExpiration: js.UndefOr[typings.awsDashSdk.clientsS3Mod.NoncurrentVersionExpiration] = js.native
+  var NoncurrentVersionTransition: js.UndefOr[typings.awsDashSdk.clientsS3Mod.NoncurrentVersionTransition] = js.native
   /**
     * Object key prefix that identifies one or more objects to which this rule applies.
     */
-  var Prefix: typings.awsDashSdk.clientsS3Mod.Prefix
+  var Prefix: typings.awsDashSdk.clientsS3Mod.Prefix = js.native
   /**
     * If Enabled, the rule is currently being applied. If Disabled, the rule is not currently being applied.
     */
-  var Status: ExpirationStatus
+  var Status: ExpirationStatus = js.native
   /**
-    * 
+    * Specifies when an object transitions to a specified storage class.
     */
-  var Transition: js.UndefOr[typings.awsDashSdk.clientsS3Mod.Transition] = js.undefined
+  var Transition: js.UndefOr[typings.awsDashSdk.clientsS3Mod.Transition] = js.native
 }
 
 object Rule {
@@ -51,13 +43,13 @@ object Rule {
     NoncurrentVersionTransition: NoncurrentVersionTransition = null,
     Transition: Transition = null
   ): Rule = {
-    val __obj = js.Dynamic.literal(Prefix = Prefix, Status = Status.asInstanceOf[js.Any])
-    if (AbortIncompleteMultipartUpload != null) __obj.updateDynamic("AbortIncompleteMultipartUpload")(AbortIncompleteMultipartUpload)
-    if (Expiration != null) __obj.updateDynamic("Expiration")(Expiration)
-    if (ID != null) __obj.updateDynamic("ID")(ID)
-    if (NoncurrentVersionExpiration != null) __obj.updateDynamic("NoncurrentVersionExpiration")(NoncurrentVersionExpiration)
-    if (NoncurrentVersionTransition != null) __obj.updateDynamic("NoncurrentVersionTransition")(NoncurrentVersionTransition)
-    if (Transition != null) __obj.updateDynamic("Transition")(Transition)
+    val __obj = js.Dynamic.literal(Prefix = Prefix.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
+    if (AbortIncompleteMultipartUpload != null) __obj.updateDynamic("AbortIncompleteMultipartUpload")(AbortIncompleteMultipartUpload.asInstanceOf[js.Any])
+    if (Expiration != null) __obj.updateDynamic("Expiration")(Expiration.asInstanceOf[js.Any])
+    if (ID != null) __obj.updateDynamic("ID")(ID.asInstanceOf[js.Any])
+    if (NoncurrentVersionExpiration != null) __obj.updateDynamic("NoncurrentVersionExpiration")(NoncurrentVersionExpiration.asInstanceOf[js.Any])
+    if (NoncurrentVersionTransition != null) __obj.updateDynamic("NoncurrentVersionTransition")(NoncurrentVersionTransition.asInstanceOf[js.Any])
+    if (Transition != null) __obj.updateDynamic("Transition")(Transition.asInstanceOf[js.Any])
     __obj.asInstanceOf[Rule]
   }
 }

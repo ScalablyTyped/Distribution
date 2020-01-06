@@ -10,9 +10,9 @@ Get free disk space info from `df -kP`
 | ------------------ | :-------------: |
 | Full name          | @sindresorhus/df |
 | Keywords           | df, dfkp, df-kp, disk, space, free, info, data, fs, filesystem, file-system, drive, mount, size, capacity |
-| # releases         | 3 |
-| # dependents       | 7 |
-| # downloads        | 2319528 |
+| # releases         | 4 |
+| # dependents       | 9 |
+| # downloads        | 1896469 |
 | # stars            | 0 |
 
 ## Links

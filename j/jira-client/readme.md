@@ -10,9 +10,9 @@ Wrapper for the JIRA API
 | ------------------ | :-------------: |
 | Full name          | jira-client |
 | Keywords           | - |
-| # releases         | 12 |
-| # dependents       | 30 |
-| # downloads        | 330821 |
+| # releases         | 14 |
+| # dependents       | 36 |
+| # downloads        | 645816 |
 | # stars            | 9 |
 
 ## Links

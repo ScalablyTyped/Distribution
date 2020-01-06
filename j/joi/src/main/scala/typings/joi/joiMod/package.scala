@@ -15,7 +15,7 @@ package object joiMod {
   type DefaultsFunction = js.Function1[/* root */ Schema, Schema]
   type ExtensionBoundSchema = Schema with Anon_Context
   type LanguageOptions = String | Boolean | Null | (StringDictionary[
-    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias joi.joi.LanguageOptions */ js.Object
+    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias joi.joi.LanguageOptions */ js.Object
   ])
   type LanguageRootOptions = Anon_Key with (Partial[Record[Types, LanguageOptions]])
   type LazySchema = AnySchema

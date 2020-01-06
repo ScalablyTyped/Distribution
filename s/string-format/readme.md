@@ -11,8 +11,8 @@ String formatting inspired by Python's str.format()
 | Full name          | string-format |
 | Keywords           | string, formatting, language, util |
 | # releases         | 3 |
-| # dependents       | 187 |
-| # downloads        | 2114823 |
+| # dependents       | 208 |
+| # downloads        | 4345416 |
 | # stars            | 10 |
 
 ## Links

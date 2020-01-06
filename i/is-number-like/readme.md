@@ -10,9 +10,9 @@ Checks whether provided parameter looks like a number
 | ------------------ | :-------------: |
 | Full name          | is-number-like |
 | Keywords           | is-number, typeof, number-like |
-| # releases         | 2 |
-| # dependents       | 8 |
-| # downloads        | 15867244 |
+| # releases         | 0 |
+| # dependents       | 9 |
+| # downloads        | 19814944 |
 | # stars            | 1 |
 
 ## Links

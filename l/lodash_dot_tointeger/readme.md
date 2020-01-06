@@ -12,7 +12,7 @@ The lodash method `_.toInteger` exported as a module.
 | Keywords           | lodash-modularized, tointeger |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 7466 |
+| # downloads        | 17029 |
 | # stars            | 0 |
 
 ## Links

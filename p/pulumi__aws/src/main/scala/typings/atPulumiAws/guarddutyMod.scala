@@ -2,6 +2,8 @@ package typings.atPulumiAws
 
 import typings.atPulumiAws.guarddutyDetectorMod.DetectorArgs
 import typings.atPulumiAws.guarddutyDetectorMod.DetectorState
+import typings.atPulumiAws.guarddutyGetDetectorMod.GetDetectorArgs
+import typings.atPulumiAws.guarddutyGetDetectorMod.GetDetectorResult
 import typings.atPulumiAws.guarddutyIPSetMod.IPSetArgs
 import typings.atPulumiAws.guarddutyIPSetMod.IPSetState
 import typings.atPulumiAws.guarddutyInviteAccepterMod.InviteAccepterArgs
@@ -10,6 +12,7 @@ import typings.atPulumiAws.guarddutyMemberMod.MemberArgs
 import typings.atPulumiAws.guarddutyMemberMod.MemberState
 import typings.atPulumiAws.guarddutyThreatIntelSetMod.ThreatIntelSetArgs
 import typings.atPulumiAws.guarddutyThreatIntelSetMod.ThreatIntelSetState
+import typings.atPulumiPulumi.invokeMod.InvokeOptions
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.resourceMod.CustomResourceOptions
 import typings.atPulumiPulumi.resourceMod.ID
@@ -91,6 +94,9 @@ object guarddutyMod extends js.Object {
     def this(name: String, args: ThreatIntelSetArgs, opts: CustomResourceOptions) = this()
   }
   
+  def getDetector(): js.Promise[GetDetectorResult] with GetDetectorResult = js.native
+  def getDetector(args: GetDetectorArgs): js.Promise[GetDetectorResult] with GetDetectorResult = js.native
+  def getDetector(args: GetDetectorArgs, opts: InvokeOptions): js.Promise[GetDetectorResult] with GetDetectorResult = js.native
   /* static members */
   @js.native
   object Detector extends js.Object {

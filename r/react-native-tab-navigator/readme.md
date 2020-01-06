@@ -10,9 +10,9 @@ A tab bar that switches between scenes, written in JS for cross-platform support
 | ------------------ | :-------------: |
 | Full name          | react-native-tab-navigator |
 | Keywords           | react-native, tab-bar, navigator, ios, android |
-| # releases         | 2 |
-| # dependents       | 17 |
-| # downloads        | 275815 |
+| # releases         | 1 |
+| # dependents       | 21 |
+| # downloads        | 186205 |
 | # stars            | 9 |
 
 ## Links

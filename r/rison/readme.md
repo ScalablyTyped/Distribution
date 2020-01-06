@@ -10,8 +10,8 @@ URI friendly encoding for JSON structures
 | Full name          | rison |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 10 |
-| # downloads        | 458520 |
+| # dependents       | 11 |
+| # downloads        | 481855 |
 | # stars            | 0 |
 
 ## Links

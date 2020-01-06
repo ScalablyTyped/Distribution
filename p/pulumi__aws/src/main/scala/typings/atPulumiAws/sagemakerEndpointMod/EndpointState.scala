@@ -6,23 +6,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EndpointState extends js.Object {
   /**
     * The Amazon Resource Name (ARN) assigned by AWS to this endpoint.
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the endpoint configuration to use.
     */
-  val endpointConfigName: js.UndefOr[Input[String]] = js.undefined
+  val endpointConfigName: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the endpoint. If omitted, this provider will assign a random, unique name.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object EndpointState {

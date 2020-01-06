@@ -10,9 +10,9 @@ React resize detector
 | ------------------ | :-------------: |
 | Full name          | react-resize-detector |
 | Keywords           | react, resize, detector |
-| # releases         | 23 |
-| # dependents       | 94 |
-| # downloads        | 8294060 |
+| # releases         | 27 |
+| # dependents       | 159 |
+| # downloads        | 28706376 |
 | # stars            | 5 |
 
 ## Links

@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RequestPaymentConfiguration extends js.Object {
   /**
     * Specifies who pays for the download and request fees.
     */
-  var Payer: typings.awsDashSdk.clientsS3Mod.Payer
+  var Payer: typings.awsDashSdk.clientsS3Mod.Payer = js.native
 }
 
 object RequestPaymentConfiguration {

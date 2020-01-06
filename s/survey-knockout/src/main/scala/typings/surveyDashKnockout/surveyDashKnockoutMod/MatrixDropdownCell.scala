@@ -10,6 +10,7 @@ class MatrixDropdownCell protected () extends js.Object {
   def this(column: MatrixDropdownColumn, row: MatrixDropdownRowModelBase, data: IMatrixDropdownData) = this()
   var column: MatrixDropdownColumn = js.native
   var data: IMatrixDropdownData = js.native
+  val hasCondition: Boolean = js.native
   val question: Question = js.native
   var row: MatrixDropdownRowModelBase = js.native
   var value: js.Any = js.native

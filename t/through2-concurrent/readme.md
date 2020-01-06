@@ -11,8 +11,8 @@ Like through2 except runs in parallel with limited concurrency
 | Full name          | through2-concurrent |
 | Keywords           | through2, streams, streams2, through, transform, concurrency, parallel |
 | # releases         | 2 |
-| # dependents       | 70 |
-| # downloads        | 5337377 |
+| # dependents       | 78 |
+| # downloads        | 6192313 |
 | # stars            | 5 |
 
 ## Links

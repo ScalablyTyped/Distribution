@@ -86,7 +86,7 @@ trait ExtensionInfo extends js.Object {
   var installType: ToStringLiteral[
     Anon_ADMIN, 
     String, 
-    Exclude[String, other_ | admin | development | sideload | normal]
+    Exclude[String, other_ | normal | development | admin | sideload]
   ]
   /**
     * True if this is an app, which it will be till this is removed.
@@ -153,7 +153,7 @@ object ExtensionInfo {
     installType: ToStringLiteral[
       Anon_ADMIN, 
       String, 
-      Exclude[String, other_ | admin | development | sideload | normal]
+      Exclude[String, other_ | normal | development | admin | sideload]
     ],
     mayDisable: Boolean,
     name: String,

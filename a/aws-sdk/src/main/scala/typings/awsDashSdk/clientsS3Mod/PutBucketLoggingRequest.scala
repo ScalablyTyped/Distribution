@@ -4,26 +4,27 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PutBucketLoggingRequest extends js.Object {
   /**
-    * 
+    * The name of the bucket for which to set the logging parameters.
     */
-  var Bucket: BucketName
+  var Bucket: BucketName = js.native
   /**
-    * 
+    * Container for logging status information.
     */
-  var BucketLoggingStatus: typings.awsDashSdk.clientsS3Mod.BucketLoggingStatus
+  var BucketLoggingStatus: typings.awsDashSdk.clientsS3Mod.BucketLoggingStatus = js.native
   /**
-    * 
+    * The MD5 hash of the PutBucketLogging request body.
     */
-  var ContentMD5: js.UndefOr[typings.awsDashSdk.clientsS3Mod.ContentMD5] = js.undefined
+  var ContentMD5: js.UndefOr[typings.awsDashSdk.clientsS3Mod.ContentMD5] = js.native
 }
 
 object PutBucketLoggingRequest {
   @scala.inline
   def apply(Bucket: BucketName, BucketLoggingStatus: BucketLoggingStatus, ContentMD5: ContentMD5 = null): PutBucketLoggingRequest = {
-    val __obj = js.Dynamic.literal(Bucket = Bucket, BucketLoggingStatus = BucketLoggingStatus)
-    if (ContentMD5 != null) __obj.updateDynamic("ContentMD5")(ContentMD5)
+    val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], BucketLoggingStatus = BucketLoggingStatus.asInstanceOf[js.Any])
+    if (ContentMD5 != null) __obj.updateDynamic("ContentMD5")(ContentMD5.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBucketLoggingRequest]
   }
 }

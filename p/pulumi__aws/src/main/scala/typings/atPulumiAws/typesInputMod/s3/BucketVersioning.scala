@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BucketVersioning extends js.Object {
   /**
     * Boolean which indicates if this criteria is enabled.
     */
-  var enabled: js.UndefOr[Input[Boolean]] = js.undefined
+  var enabled: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Enable MFA delete for either `Change the versioning state of your bucket` or `Permanently delete an object version`. Default is `false`.
     */
-  var mfaDelete: js.UndefOr[Input[Boolean]] = js.undefined
+  var mfaDelete: js.UndefOr[Input[Boolean]] = js.native
 }
 
 object BucketVersioning {

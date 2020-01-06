@@ -1,5 +1,6 @@
 package typings.atPulumiAws.rdsClusterSnapshotMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -71,6 +72,10 @@ class ClusterSnapshot protected () extends CustomResource {
     * Specifies whether the DB cluster snapshot is encrypted.
     */
   val storageEncrypted: Output[Boolean] = js.native
+  /**
+    * A mapping of tags to assign to the DB cluster.
+    */
+  val tags: Output[js.UndefOr[StringDictionary[_]]] = js.native
   /**
     * The VPC ID associated with the DB cluster snapshot.
     */

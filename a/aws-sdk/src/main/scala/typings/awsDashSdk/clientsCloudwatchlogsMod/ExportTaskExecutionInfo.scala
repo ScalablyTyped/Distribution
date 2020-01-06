@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ExportTaskExecutionInfo extends js.Object {
   /**
     * The completion time of the export task, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC.
     */
-  var completionTime: js.UndefOr[Timestamp] = js.undefined
+  var completionTime: js.UndefOr[Timestamp] = js.native
   /**
     * The creation time of the export task, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC.
     */
-  var creationTime: js.UndefOr[Timestamp] = js.undefined
+  var creationTime: js.UndefOr[Timestamp] = js.native
 }
 
 object ExportTaskExecutionInfo {

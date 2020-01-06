@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AccountUsage extends js.Object {
   /**
     * The number of Lambda functions.
     */
-  var FunctionCount: js.UndefOr[Long] = js.undefined
+  var FunctionCount: js.UndefOr[Long] = js.native
   /**
     * The amount of storage space, in bytes, that's being used by deployment packages and layer archives.
     */
-  var TotalCodeSize: js.UndefOr[Long] = js.undefined
+  var TotalCodeSize: js.UndefOr[Long] = js.native
 }
 
 object AccountUsage {

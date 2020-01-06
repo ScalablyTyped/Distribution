@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Threshold extends js.Object {
   /**
-    * The Threshold to use to compare service level metrics to. Only "Less than" (LT) comparisons are supported.
+    * The type of comparison. Only "less than" (LT) comparisons are supported.
     */
-  var Comparison: js.UndefOr[typings.awsDashSdk.clientsConnectMod.Comparison] = js.undefined
+  var Comparison: js.UndefOr[typings.awsDashSdk.clientsConnectMod.Comparison] = js.native
   /**
-    * The value of the threshold to compare the metric to. Only "Less than" (LT) comparisons are supported.
+    * The threshold value to compare.
     */
-  var ThresholdValue: js.UndefOr[typings.awsDashSdk.clientsConnectMod.ThresholdValue] = js.undefined
+  var ThresholdValue: js.UndefOr[typings.awsDashSdk.clientsConnectMod.ThresholdValue] = js.native
 }
 
 object Threshold {

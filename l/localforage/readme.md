@@ -10,9 +10,9 @@ Offline storage, improved.
 | ------------------ | :-------------: |
 | Full name          | localforage |
 | Keywords           | indexeddb, localstorage, storage, websql |
-| # releases         | 13 |
-| # dependents       | 370 |
-| # downloads        | 8883311 |
+| # releases         | 8 |
+| # dependents       | 630 |
+| # downloads        | 11122364 |
 | # stars            | 38 |
 
 ## Links

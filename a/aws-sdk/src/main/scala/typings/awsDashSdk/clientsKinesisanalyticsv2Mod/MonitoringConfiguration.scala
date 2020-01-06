@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MonitoringConfiguration extends js.Object {
   /**
-    * Describes whether to use the default CloudWatch logging configuration for an application.
+    * Describes whether to use the default CloudWatch logging configuration for an application. You must set this property to CUSTOM in order to set the LogLevel or MetricsLevel parameters.
     */
-  var ConfigurationType: typings.awsDashSdk.clientsKinesisanalyticsv2Mod.ConfigurationType
+  var ConfigurationType: typings.awsDashSdk.clientsKinesisanalyticsv2Mod.ConfigurationType = js.native
   /**
     * Describes the verbosity of the CloudWatch Logs for an application.
     */
-  var LogLevel: js.UndefOr[typings.awsDashSdk.clientsKinesisanalyticsv2Mod.LogLevel] = js.undefined
+  var LogLevel: js.UndefOr[typings.awsDashSdk.clientsKinesisanalyticsv2Mod.LogLevel] = js.native
   /**
     * Describes the granularity of the CloudWatch Logs for an application.
     */
-  var MetricsLevel: js.UndefOr[typings.awsDashSdk.clientsKinesisanalyticsv2Mod.MetricsLevel] = js.undefined
+  var MetricsLevel: js.UndefOr[typings.awsDashSdk.clientsKinesisanalyticsv2Mod.MetricsLevel] = js.native
 }
 
 object MonitoringConfiguration {

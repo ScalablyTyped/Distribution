@@ -10,9 +10,9 @@ A service model parser and validator
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/service-model |
 | Keywords           | - |
-| # releases         | 6 |
+| # releases         | 7 |
 | # dependents       | 1 |
-| # downloads        | 246 |
+| # downloads        | 341 |
 | # stars            | 0 |
 
 ## Links

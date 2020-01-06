@@ -11,8 +11,8 @@ Media Type Database
 | Full name          | mime-db |
 | Keywords           | mime, db, type, types, database, charset, charsets |
 | # releases         | 11 |
-| # dependents       | 137 |
-| # downloads        | 613581455 |
+| # dependents       | 169 |
+| # downloads        | 893931505 |
 | # stars            | 11 |
 
 ## Links

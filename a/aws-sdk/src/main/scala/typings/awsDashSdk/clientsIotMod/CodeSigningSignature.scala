@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CodeSigningSignature extends js.Object {
   /**
     * A base64 encoded binary representation of the code signing signature.
     */
-  var inlineDocument: js.UndefOr[Signature] = js.undefined
+  var inlineDocument: js.UndefOr[Signature] = js.native
 }
 
 object CodeSigningSignature {

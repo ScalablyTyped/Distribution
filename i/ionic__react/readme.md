@@ -10,9 +10,9 @@ React specific wrapper for @ionic/core
 | ------------------ | :-------------: |
 | Full name          | @ionic/react |
 | Keywords           | ionic, framework, react, mobile, app, hybrid, webapp, cordova, progressive web app, pwa |
-| # releases         | 13 |
-| # dependents       | 0 |
-| # downloads        | 6884 |
+| # releases         | 143 |
+| # dependents       | 4 |
+| # downloads        | 100258 |
 | # stars            | 0 |
 
 ## Links

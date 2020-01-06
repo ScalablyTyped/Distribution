@@ -11,8 +11,8 @@ The lodash method `_.chunk` exported as a module.
 | Full name          | lodash.chunk |
 | Keywords           | lodash-modularized, chunk |
 | # releases         | 0 |
-| # dependents       | 101 |
-| # downloads        | 7511744 |
+| # dependents       | 145 |
+| # downloads        | 9640510 |
 | # stars            | 0 |
 
 ## Links

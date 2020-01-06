@@ -12,7 +12,7 @@ jasmine-like fixtures without testing framework dependencies
 | Keywords           | test, fixture, mocha, testing, jasmine |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 16022 |
+| # downloads        | 21353 |
 | # stars            | 1 |
 
 ## Links

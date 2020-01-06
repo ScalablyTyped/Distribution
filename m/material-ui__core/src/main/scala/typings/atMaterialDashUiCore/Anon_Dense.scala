@@ -8,14 +8,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Anon_Dense extends js.Object {
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var error: js.UndefOr[Boolean] = js.undefined
-  var filled: js.UndefOr[Boolean] = js.undefined
-  var focused: js.UndefOr[Boolean] = js.undefined
-  var margin: js.UndefOr[dense | none | normal] = js.undefined
-  var required: js.UndefOr[Boolean] = js.undefined
-  var startAdornment: js.UndefOr[ReactNode] = js.undefined
+  var disabled: js.UndefOr[Boolean] = js.native
+  var error: js.UndefOr[Boolean] = js.native
+  var filled: js.UndefOr[Boolean] = js.native
+  var focused: js.UndefOr[Boolean] = js.native
+  var margin: js.UndefOr[dense | none | normal] = js.native
+  var required: js.UndefOr[Boolean] = js.native
+  var startAdornment: js.UndefOr[ReactNode] = js.native
 }
 
 object Anon_Dense {

@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DeploymentGroupLoadBalancerInfoElbInfo extends js.Object {
   /**
     * Name of the target group.
     */
-  var name: js.UndefOr[Input[String]] = js.undefined
+  var name: js.UndefOr[Input[String]] = js.native
 }
 
 object DeploymentGroupLoadBalancerInfoElbInfo {

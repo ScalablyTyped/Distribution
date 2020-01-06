@@ -4,27 +4,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait HierarchyStructure extends js.Object {
   /**
-    * A HierarchyLevel object that contains information about the hierarchy group level.
+    * Information about level five.
     */
-  var LevelFive: js.UndefOr[HierarchyLevel] = js.undefined
+  var LevelFive: js.UndefOr[HierarchyLevel] = js.native
   /**
-    * A HierarchyLevel object that contains information about the hierarchy group level.
+    * Information about level four.
     */
-  var LevelFour: js.UndefOr[HierarchyLevel] = js.undefined
+  var LevelFour: js.UndefOr[HierarchyLevel] = js.native
   /**
-    * A HierarchyLevel object that contains information about the hierarchy group level.
+    * Information about level one.
     */
-  var LevelOne: js.UndefOr[HierarchyLevel] = js.undefined
+  var LevelOne: js.UndefOr[HierarchyLevel] = js.native
   /**
-    * A HierarchyLevel object that contains information about the hierarchy group level.
+    * Information about level three.
     */
-  var LevelThree: js.UndefOr[HierarchyLevel] = js.undefined
+  var LevelThree: js.UndefOr[HierarchyLevel] = js.native
   /**
-    * A HierarchyLevel object that contains information about the hierarchy group level.
+    * Information about level two.
     */
-  var LevelTwo: js.UndefOr[HierarchyLevel] = js.undefined
+  var LevelTwo: js.UndefOr[HierarchyLevel] = js.native
 }
 
 object HierarchyStructure {
@@ -37,11 +38,11 @@ object HierarchyStructure {
     LevelTwo: HierarchyLevel = null
   ): HierarchyStructure = {
     val __obj = js.Dynamic.literal()
-    if (LevelFive != null) __obj.updateDynamic("LevelFive")(LevelFive)
-    if (LevelFour != null) __obj.updateDynamic("LevelFour")(LevelFour)
-    if (LevelOne != null) __obj.updateDynamic("LevelOne")(LevelOne)
-    if (LevelThree != null) __obj.updateDynamic("LevelThree")(LevelThree)
-    if (LevelTwo != null) __obj.updateDynamic("LevelTwo")(LevelTwo)
+    if (LevelFive != null) __obj.updateDynamic("LevelFive")(LevelFive.asInstanceOf[js.Any])
+    if (LevelFour != null) __obj.updateDynamic("LevelFour")(LevelFour.asInstanceOf[js.Any])
+    if (LevelOne != null) __obj.updateDynamic("LevelOne")(LevelOne.asInstanceOf[js.Any])
+    if (LevelThree != null) __obj.updateDynamic("LevelThree")(LevelThree.asInstanceOf[js.Any])
+    if (LevelTwo != null) __obj.updateDynamic("LevelTwo")(LevelTwo.asInstanceOf[js.Any])
     __obj.asInstanceOf[HierarchyStructure]
   }
 }

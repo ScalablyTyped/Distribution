@@ -4,10 +4,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
-  var defaultMatches: js.UndefOr[Boolean] = js.undefined
-  var noSsr: js.UndefOr[Boolean] = js.undefined
-  var ssrMatchMedia: js.UndefOr[js.Function1[/* query */ String, MuiMediaQueryList]] = js.undefined
+  var defaultMatches: js.UndefOr[Boolean] = js.native
+  var noSsr: js.UndefOr[Boolean] = js.native
+  var ssrMatchMedia: js.UndefOr[js.Function1[/* query */ String, MuiMediaQueryList]] = js.native
 }
 
 object Options {

@@ -10,9 +10,9 @@ Glob matching for javascript/node.js. A replacement and faster alternative to mi
 | ------------------ | :-------------: |
 | Full name          | micromatch |
 | Keywords           | bash, bracket, character-class, expand, expansion, expression, extglob, extglobs, file, files, filter, find, glob, globbing, globs, globstar, lookahead, lookaround, lookbehind, match, matcher, matches, matching, micromatch, minimatch, multimatch, negate, negation, path, pattern, patterns, posix, regex, regexp, regular, shell, star, wildcard |
-| # releases         | 17 |
-| # dependents       | 605 |
-| # downloads        | 550848702 |
+| # releases         | 10 |
+| # dependents       | 790 |
+| # downloads        | 744359720 |
 | # stars            | 26 |
 
 ## Links

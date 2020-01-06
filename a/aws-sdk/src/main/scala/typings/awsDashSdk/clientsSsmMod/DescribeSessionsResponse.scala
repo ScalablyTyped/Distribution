@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DescribeSessionsResponse extends js.Object {
   /**
     * The token for the next set of items to return. (You received this token from a previous call.)
     */
-  var NextToken: js.UndefOr[typings.awsDashSdk.clientsSsmMod.NextToken] = js.undefined
+  var NextToken: js.UndefOr[typings.awsDashSdk.clientsSsmMod.NextToken] = js.native
   /**
     * A list of sessions meeting the request parameters.
     */
-  var Sessions: js.UndefOr[SessionList] = js.undefined
+  var Sessions: js.UndefOr[SessionList] = js.native
 }
 
 object DescribeSessionsResponse {
   @scala.inline
   def apply(NextToken: NextToken = null, Sessions: SessionList = null): DescribeSessionsResponse = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
-    if (Sessions != null) __obj.updateDynamic("Sessions")(Sessions)
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
+    if (Sessions != null) __obj.updateDynamic("Sessions")(Sessions.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSessionsResponse]
   }
 }

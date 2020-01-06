@@ -1,29 +1,21 @@
 package typings.reactDashJss
 
-import typings.reactDashJss.reactDashJssMod.WithStyles
-import typings.std.Partial
+import typings.jss.jssMod.Classes
+import typings.jss.jssMod.Styles
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Classes[Props /* <: WithStyles[S] */] extends js.Object {
-  var classes: js.UndefOr[
-    Partial[
-      /* import warning: importer.ImportType#apply Failed type conversion: Props['classes'] */ js.Any
-    ]
-  ] = js.undefined
+trait Anon_Classes[S /* <: Styles[ClassNames] | (js.Function1[/* theme */ js.Any, Styles[ClassNames]]) */, ClassNames /* <: String | Double | js.Symbol */] extends js.Object {
+  var classes: Classes[ClassNames | String]
 }
 
 object Anon_Classes {
   @scala.inline
-  def apply[Props /* <: WithStyles[S] */](
-    classes: Partial[
-      /* import warning: importer.ImportType#apply Failed type conversion: Props['classes'] */ js.Any
-    ] = null
-  ): Anon_Classes[Props] = {
-    val __obj = js.Dynamic.literal()
-    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Anon_Classes[Props]]
+  def apply[S /* <: Styles[ClassNames] | (js.Function1[/* theme */ js.Any, Styles[ClassNames]]) */, ClassNames /* <: String | Double | js.Symbol */](classes: Classes[ClassNames | String]): Anon_Classes[S, ClassNames] = {
+    val __obj = js.Dynamic.literal(classes = classes.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Anon_Classes[S, ClassNames]]
   }
 }
 

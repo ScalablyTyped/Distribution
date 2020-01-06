@@ -10,9 +10,9 @@ React flexbox grid made simple.
 | ------------------ | :-------------: |
 | Full name          | react-flexr |
 | Keywords           | react, grid, flex, flexbox, react-component |
-| # releases         | 6 |
+| # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 3719 |
+| # downloads        | 4831 |
 | # stars            | 1 |
 
 ## Links

@@ -15,8 +15,8 @@ package object clientsMachinelearningMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.CreatedAt
     - typings.awsDashSdk.awsDashSdkStrings.LastUpdatedAt
-    - typings.awsDashSdk.awsDashSdkStrings.Status
-    - typings.awsDashSdk.awsDashSdkStrings.Name
+    - typings.awsDashSdk.awsDashSdkStrings.Status_
+    - typings.awsDashSdk.awsDashSdkStrings.Name_
     - typings.awsDashSdk.awsDashSdkStrings.IAMUser
     - typings.awsDashSdk.awsDashSdkStrings.MLModelId
     - typings.awsDashSdk.awsDashSdkStrings.DataSourceId
@@ -33,8 +33,8 @@ package object clientsMachinelearningMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.CreatedAt
     - typings.awsDashSdk.awsDashSdkStrings.LastUpdatedAt
-    - typings.awsDashSdk.awsDashSdkStrings.Status
-    - typings.awsDashSdk.awsDashSdkStrings.Name
+    - typings.awsDashSdk.awsDashSdkStrings.Status_
+    - typings.awsDashSdk.awsDashSdkStrings.Name_
     - typings.awsDashSdk.awsDashSdkStrings.DataLocationS3
     - typings.awsDashSdk.awsDashSdkStrings.IAMUser
     - java.lang.String
@@ -70,8 +70,8 @@ package object clientsMachinelearningMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.CreatedAt
     - typings.awsDashSdk.awsDashSdkStrings.LastUpdatedAt
-    - typings.awsDashSdk.awsDashSdkStrings.Status
-    - typings.awsDashSdk.awsDashSdkStrings.Name
+    - typings.awsDashSdk.awsDashSdkStrings.Status_
+    - typings.awsDashSdk.awsDashSdkStrings.Name_
     - typings.awsDashSdk.awsDashSdkStrings.IAMUser
     - typings.awsDashSdk.awsDashSdkStrings.MLModelId
     - typings.awsDashSdk.awsDashSdkStrings.DataSourceId
@@ -86,8 +86,8 @@ package object clientsMachinelearningMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.CreatedAt
     - typings.awsDashSdk.awsDashSdkStrings.LastUpdatedAt
-    - typings.awsDashSdk.awsDashSdkStrings.Status
-    - typings.awsDashSdk.awsDashSdkStrings.Name
+    - typings.awsDashSdk.awsDashSdkStrings.Status_
+    - typings.awsDashSdk.awsDashSdkStrings.Name_
     - typings.awsDashSdk.awsDashSdkStrings.IAMUser
     - typings.awsDashSdk.awsDashSdkStrings.TrainingDataSourceId
     - typings.awsDashSdk.awsDashSdkStrings.RealtimeEndpointStatus
@@ -138,7 +138,7 @@ package object clientsMachinelearningMod {
   type ScoreValue = Double
   type ScoreValuePerLabelMap = StringDictionary[ScoreValue]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.asc
+    - typings.awsDashSdk.awsDashSdkStrings.asc_
     - typings.awsDashSdk.awsDashSdkStrings.dsc
     - java.lang.String
   */
@@ -151,7 +151,7 @@ package object clientsMachinelearningMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.BatchPrediction
     - typings.awsDashSdk.awsDashSdkStrings.DataSource
-    - typings.awsDashSdk.awsDashSdkStrings.Evaluation
+    - typings.awsDashSdk.awsDashSdkStrings.Evaluation_
     - typings.awsDashSdk.awsDashSdkStrings.MLModel
     - java.lang.String
   */
@@ -163,7 +163,7 @@ package object clientsMachinelearningMod {
   type VipURL = String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2014-12-12`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

@@ -11,8 +11,8 @@ A tiny javascript type testing tool
 | Full name          | is-lite |
 | Keywords           | type, test |
 | # releases         | 12 |
-| # dependents       | 15 |
-| # downloads        | 1042716 |
+| # dependents       | 16 |
+| # downloads        | 1380411 |
 | # stars            | 0 |
 
 ## Links

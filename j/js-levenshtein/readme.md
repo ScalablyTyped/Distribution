@@ -10,9 +10,9 @@ The most efficient JS implementation calculating the Levenshtein distance, i.e. 
 | ------------------ | :-------------: |
 | Full name          | js-levenshtein |
 | Keywords           | levenshtein, distance, algorithm, algo, string, difference, diff, fast, fuzzy, similar, similarity, compare, comparison, edit, text, match, matching |
-| # releases         | 10 |
-| # dependents       | 18 |
-| # downloads        | 53193972 |
+| # releases         | 4 |
+| # dependents       | 40 |
+| # downloads        | 178740024 |
 | # stars            | 0 |
 
 ## Links

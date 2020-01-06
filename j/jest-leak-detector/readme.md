@@ -10,9 +10,9 @@ Module for verifying whether an object has been garbage collected or not.
 | ------------------ | :-------------: |
 | Full name          | jest-leak-detector |
 | Keywords           | - |
-| # releases         | 64 |
-| # dependents       | 11 |
-| # downloads        | 168726366 |
+| # releases         | 53 |
+| # dependents       | 12 |
+| # downloads        | 188714491 |
 | # stars            | 0 |
 
 ## Links

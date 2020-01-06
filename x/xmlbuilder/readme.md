@@ -10,9 +10,9 @@ An XML builder for node.js
 | ------------------ | :-------------: |
 | Full name          | xmlbuilder |
 | Keywords           | xml, xmlbuilder |
-| # releases         | 15 |
-| # dependents       | 674 |
-| # downloads        | 248579748 |
+| # releases         | 14 |
+| # dependents       | 777 |
+| # downloads        | 332420883 |
 | # stars            | 29 |
 
 ## Links

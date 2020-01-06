@@ -10,9 +10,9 @@ Extends `minimatch.match()` with support for multiple patterns
 | ------------------ | :-------------: |
 | Full name          | multimatch |
 | Keywords           | expand, find, glob, globbing, globs, match, matcher, minimatch, pattern, patterns, wildcard |
-| # releases         | 2 |
-| # dependents       | 485 |
-| # downloads        | 52834843 |
+| # releases         | 3 |
+| # dependents       | 565 |
+| # downloads        | 76590855 |
 | # stars            | 8 |
 
 ## Links

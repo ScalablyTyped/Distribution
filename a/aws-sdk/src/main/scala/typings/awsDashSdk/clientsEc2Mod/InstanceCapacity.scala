@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InstanceCapacity extends js.Object {
   /**
-    * The number of instances that can still be launched onto the Dedicated Host.
+    * The number of instances that can be launched onto the Dedicated Host based on the host's available capacity.
     */
-  var AvailableCapacity: js.UndefOr[Integer] = js.undefined
+  var AvailableCapacity: js.UndefOr[Integer] = js.native
   /**
-    * The instance type size supported by the Dedicated Host.
+    * The instance type supported by the Dedicated Host.
     */
-  var InstanceType: js.UndefOr[String] = js.undefined
+  var InstanceType: js.UndefOr[String] = js.native
   /**
-    * The total number of instances that can be launched onto the Dedicated Host.
+    * The total number of instances that can be launched onto the Dedicated Host if there are no instances running on it.
     */
-  var TotalCapacity: js.UndefOr[Integer] = js.undefined
+  var TotalCapacity: js.UndefOr[Integer] = js.native
 }
 
 object InstanceCapacity {
@@ -28,7 +29,7 @@ object InstanceCapacity {
   ): InstanceCapacity = {
     val __obj = js.Dynamic.literal()
     if (AvailableCapacity != null) __obj.updateDynamic("AvailableCapacity")(AvailableCapacity.asInstanceOf[js.Any])
-    if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType)
+    if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
     if (TotalCapacity != null) __obj.updateDynamic("TotalCapacity")(TotalCapacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceCapacity]
   }

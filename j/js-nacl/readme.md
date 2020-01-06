@@ -12,7 +12,7 @@ High-level API to libsodium.
 | Keywords           | encryption, high-level, crypto, networking, nacl |
 | # releases         | 4 |
 | # dependents       | 42 |
-| # downloads        | 32015 |
+| # downloads        | 30185 |
 | # stars            | 3 |
 
 ## Links

@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VpnGatewayRoutePropagationArgs extends js.Object {
   /**
     * The id of the `aws.ec2.RouteTable` to propagate routes into.
     */
-  val routeTableId: Input[String]
+  val routeTableId: Input[String] = js.native
   /**
     * The id of the `aws.ec2.VpnGateway` to propagate routes from.
     */
-  val vpnGatewayId: Input[String]
+  val vpnGatewayId: Input[String] = js.native
 }
 
 object VpnGatewayRoutePropagationArgs {

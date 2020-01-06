@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VirtualNodeSpecServiceDiscoveryDns extends js.Object {
   /**
     * The DNS host name for your virtual node.
     */
-  var hostname: Input[String]
+  var hostname: Input[String] = js.native
 }
 
 object VirtualNodeSpecServiceDiscoveryDns {

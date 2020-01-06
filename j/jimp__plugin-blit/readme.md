@@ -10,9 +10,9 @@ Blit an image.
 | ------------------ | :-------------: |
 | Full name          | @jimp/plugin-blit |
 | Keywords           | - |
-| # releases         | 18 |
+| # releases         | 71 |
 | # dependents       | 1 |
-| # downloads        | 7470632 |
+| # downloads        | 13903521 |
 | # stars            | 0 |
 
 ## Links

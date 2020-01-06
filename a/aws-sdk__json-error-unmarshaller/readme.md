@@ -9,9 +9,9 @@ Typings are for version 0.1.0-preview.2
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/json-error-unmarshaller |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 13 |
-| # downloads        | 5950 |
+| # releases         | 10 |
+| # dependents       | 324 |
+| # downloads        | 20910 |
 | # stars            | 0 |
 
 ## Links

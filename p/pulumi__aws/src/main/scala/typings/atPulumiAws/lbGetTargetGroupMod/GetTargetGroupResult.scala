@@ -7,25 +7,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetTargetGroupResult extends js.Object {
-  val arn: String
-  val arnSuffix: String
-  val deregistrationDelay: Double
-  val healthCheck: GetTargetGroupHealthCheck
+  val arn: String = js.native
+  val arnSuffix: String = js.native
+  val deregistrationDelay: Double = js.native
+  val healthCheck: GetTargetGroupHealthCheck = js.native
   /**
     * id is the provider-assigned unique ID for this managed resource.
     */
-  val id: String
-  val lambdaMultiValueHeadersEnabled: Boolean
-  val name: String
-  val port: Double
-  val protocol: String
-  val proxyProtocolV2: Boolean
-  val slowStart: Double
-  val stickiness: GetTargetGroupStickiness
-  val tags: StringDictionary[js.Any]
-  val targetType: String
-  val vpcId: String
+  val id: String = js.native
+  val lambdaMultiValueHeadersEnabled: Boolean = js.native
+  val name: String = js.native
+  val port: Double = js.native
+  val protocol: String = js.native
+  val proxyProtocolV2: Boolean = js.native
+  val slowStart: Double = js.native
+  val stickiness: GetTargetGroupStickiness = js.native
+  val tags: StringDictionary[js.Any] = js.native
+  val targetType: String = js.native
+  val vpcId: String = js.native
 }
 
 object GetTargetGroupResult {
@@ -47,7 +48,7 @@ object GetTargetGroupResult {
     targetType: String,
     vpcId: String
   ): GetTargetGroupResult = {
-    val __obj = js.Dynamic.literal(arn = arn, arnSuffix = arnSuffix, deregistrationDelay = deregistrationDelay, healthCheck = healthCheck, id = id, lambdaMultiValueHeadersEnabled = lambdaMultiValueHeadersEnabled, name = name, port = port, protocol = protocol, proxyProtocolV2 = proxyProtocolV2, slowStart = slowStart, stickiness = stickiness, tags = tags, targetType = targetType, vpcId = vpcId)
+    val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], arnSuffix = arnSuffix.asInstanceOf[js.Any], deregistrationDelay = deregistrationDelay.asInstanceOf[js.Any], healthCheck = healthCheck.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], lambdaMultiValueHeadersEnabled = lambdaMultiValueHeadersEnabled.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], proxyProtocolV2 = proxyProtocolV2.asInstanceOf[js.Any], slowStart = slowStart.asInstanceOf[js.Any], stickiness = stickiness.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], targetType = targetType.asInstanceOf[js.Any], vpcId = vpcId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetTargetGroupResult]
   }

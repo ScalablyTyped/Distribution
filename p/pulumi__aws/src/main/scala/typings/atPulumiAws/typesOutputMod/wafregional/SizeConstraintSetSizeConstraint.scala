@@ -4,22 +4,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SizeConstraintSetSizeConstraint extends js.Object {
   /**
     * The type of comparison you want to perform.
     * e.g. `EQ`, `NE`, `LT`, `GT`.
     * See [docs](http://docs.aws.amazon.com/waf/latest/APIReference/API_SizeConstraint.html#WAF-Type-SizeConstraint-ComparisonOperator) for all supported values.
     */
-  var comparisonOperator: String
+  var comparisonOperator: String = js.native
   /**
     * Specifies where in a web request to look for the size constraint.
     */
-  var fieldToMatch: SizeConstraintSetSizeConstraintFieldToMatch
+  var fieldToMatch: SizeConstraintSetSizeConstraintFieldToMatch = js.native
   /**
     * The size in bytes that you want to compare against the size of the specified `fieldToMatch`.
     * Valid values are between 0 - 21474836480 bytes (0 - 20 GB).
     */
-  var size: Double
+  var size: Double = js.native
   /**
     * Text transformations used to eliminate unusual formatting that attackers use in web requests in an effort to bypass AWS WAF.
     * If you specify a transformation, AWS WAF performs the transformation on `fieldToMatch` before inspecting a request for a match.
@@ -28,7 +29,7 @@ trait SizeConstraintSetSizeConstraint extends js.Object {
     * for all supported values.
     * **Note:** if you choose `BODY` as `type`, you must choose `NONE` because CloudFront forwards only the first 8192 bytes for inspection.
     */
-  var textTransformation: String
+  var textTransformation: String = js.native
 }
 
 object SizeConstraintSetSizeConstraint {
@@ -39,7 +40,7 @@ object SizeConstraintSetSizeConstraint {
     size: Double,
     textTransformation: String
   ): SizeConstraintSetSizeConstraint = {
-    val __obj = js.Dynamic.literal(comparisonOperator = comparisonOperator, fieldToMatch = fieldToMatch, size = size, textTransformation = textTransformation)
+    val __obj = js.Dynamic.literal(comparisonOperator = comparisonOperator.asInstanceOf[js.Any], fieldToMatch = fieldToMatch.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], textTransformation = textTransformation.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[SizeConstraintSetSizeConstraint]
   }

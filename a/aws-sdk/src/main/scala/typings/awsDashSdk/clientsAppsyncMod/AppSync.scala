@@ -13,6 +13,19 @@ trait AppSync extends Service {
   @JSName("config")
   var config_AppSync: ConfigBase with ClientConfiguration = js.native
   /**
+    * Creates a cache for the GraphQL API.
+    */
+  def createApiCache(): Request[CreateApiCacheResponse, AWSError] = js.native
+  def createApiCache(callback: js.Function2[/* err */ AWSError, /* data */ CreateApiCacheResponse, Unit]): Request[CreateApiCacheResponse, AWSError] = js.native
+  /**
+    * Creates a cache for the GraphQL API.
+    */
+  def createApiCache(params: CreateApiCacheRequest): Request[CreateApiCacheResponse, AWSError] = js.native
+  def createApiCache(
+    params: CreateApiCacheRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateApiCacheResponse, Unit]
+  ): Request[CreateApiCacheResponse, AWSError] = js.native
+  /**
     * Creates a unique key that you can distribute to clients who are executing your API.
     */
   def createApiKey(): Request[CreateApiKeyResponse, AWSError] = js.native
@@ -91,6 +104,19 @@ trait AppSync extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateTypeResponse, Unit]
   ): Request[CreateTypeResponse, AWSError] = js.native
   /**
+    * Deletes an ApiCache object.
+    */
+  def deleteApiCache(): Request[DeleteApiCacheResponse, AWSError] = js.native
+  def deleteApiCache(callback: js.Function2[/* err */ AWSError, /* data */ DeleteApiCacheResponse, Unit]): Request[DeleteApiCacheResponse, AWSError] = js.native
+  /**
+    * Deletes an ApiCache object.
+    */
+  def deleteApiCache(params: DeleteApiCacheRequest): Request[DeleteApiCacheResponse, AWSError] = js.native
+  def deleteApiCache(
+    params: DeleteApiCacheRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteApiCacheResponse, Unit]
+  ): Request[DeleteApiCacheResponse, AWSError] = js.native
+  /**
     * Deletes an API key.
     */
   def deleteApiKey(): Request[DeleteApiKeyResponse, AWSError] = js.native
@@ -168,6 +194,32 @@ trait AppSync extends Service {
     params: DeleteTypeRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteTypeResponse, Unit]
   ): Request[DeleteTypeResponse, AWSError] = js.native
+  /**
+    * Flushes an ApiCache object.
+    */
+  def flushApiCache(): Request[FlushApiCacheResponse, AWSError] = js.native
+  def flushApiCache(callback: js.Function2[/* err */ AWSError, /* data */ FlushApiCacheResponse, Unit]): Request[FlushApiCacheResponse, AWSError] = js.native
+  /**
+    * Flushes an ApiCache object.
+    */
+  def flushApiCache(params: FlushApiCacheRequest): Request[FlushApiCacheResponse, AWSError] = js.native
+  def flushApiCache(
+    params: FlushApiCacheRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ FlushApiCacheResponse, Unit]
+  ): Request[FlushApiCacheResponse, AWSError] = js.native
+  /**
+    * Retrieves an ApiCache object.
+    */
+  def getApiCache(): Request[GetApiCacheResponse, AWSError] = js.native
+  def getApiCache(callback: js.Function2[/* err */ AWSError, /* data */ GetApiCacheResponse, Unit]): Request[GetApiCacheResponse, AWSError] = js.native
+  /**
+    * Retrieves an ApiCache object.
+    */
+  def getApiCache(params: GetApiCacheRequest): Request[GetApiCacheResponse, AWSError] = js.native
+  def getApiCache(
+    params: GetApiCacheRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetApiCacheResponse, Unit]
+  ): Request[GetApiCacheResponse, AWSError] = js.native
   /**
     * Retrieves a DataSource object.
     */
@@ -402,6 +454,19 @@ trait AppSync extends Service {
     params: UntagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]
   ): Request[UntagResourceResponse, AWSError] = js.native
+  /**
+    * Updates the cache for the GraphQL API.
+    */
+  def updateApiCache(): Request[UpdateApiCacheResponse, AWSError] = js.native
+  def updateApiCache(callback: js.Function2[/* err */ AWSError, /* data */ UpdateApiCacheResponse, Unit]): Request[UpdateApiCacheResponse, AWSError] = js.native
+  /**
+    * Updates the cache for the GraphQL API.
+    */
+  def updateApiCache(params: UpdateApiCacheRequest): Request[UpdateApiCacheResponse, AWSError] = js.native
+  def updateApiCache(
+    params: UpdateApiCacheRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateApiCacheResponse, Unit]
+  ): Request[UpdateApiCacheResponse, AWSError] = js.native
   /**
     * Updates an API key.
     */

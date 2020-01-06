@@ -9,9 +9,9 @@ Typings are for version 4.x
 | ------------------ | :-------------: |
 | Full name          | greasemonkey |
 | Keywords           | firefox, chrome, api, user.js, userscript, greasemonkey |
-| # releases         | 5 |
+| # releases         | 6 |
 | # dependents       | 0 |
-| # downloads        | 238 |
+| # downloads        | 321 |
 | # stars            | 0 |
 
 ## Links

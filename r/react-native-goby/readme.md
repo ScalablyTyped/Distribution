@@ -10,9 +10,9 @@ React Native plugin for the Goby service
 | ------------------ | :-------------: |
 | Full name          | react-native-goby |
 | Keywords           | react-native, code, push |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 577 |
+| # downloads        | 552 |
 | # stars            | 0 |
 
 ## Links

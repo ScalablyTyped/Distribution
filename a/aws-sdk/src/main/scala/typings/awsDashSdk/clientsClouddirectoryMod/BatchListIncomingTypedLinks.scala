@@ -4,27 +4,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BatchListIncomingTypedLinks extends js.Object {
   /**
     * Provides range filters for multiple attributes. When providing ranges to typed link selection, any inexact ranges must be specified at the end. Any attributes that do not have a range specified are presumed to match the entire range.
     */
-  var FilterAttributeRanges: js.UndefOr[TypedLinkAttributeRangeList] = js.undefined
+  var FilterAttributeRanges: js.UndefOr[TypedLinkAttributeRangeList] = js.native
   /**
     * Filters are interpreted in the order of the attributes on the typed link facet, not the order in which they are supplied to any API calls.
     */
-  var FilterTypedLink: js.UndefOr[TypedLinkSchemaAndFacetName] = js.undefined
+  var FilterTypedLink: js.UndefOr[TypedLinkSchemaAndFacetName] = js.native
   /**
     * The maximum number of results to retrieve.
     */
-  var MaxResults: js.UndefOr[NumberResults] = js.undefined
+  var MaxResults: js.UndefOr[NumberResults] = js.native
   /**
     * The pagination token.
     */
-  var NextToken: js.UndefOr[typings.awsDashSdk.clientsClouddirectoryMod.NextToken] = js.undefined
+  var NextToken: js.UndefOr[typings.awsDashSdk.clientsClouddirectoryMod.NextToken] = js.native
   /**
     * The reference that identifies the object whose attributes will be listed.
     */
-  var ObjectReference: typings.awsDashSdk.clientsClouddirectoryMod.ObjectReference
+  var ObjectReference: typings.awsDashSdk.clientsClouddirectoryMod.ObjectReference = js.native
 }
 
 object BatchListIncomingTypedLinks {
@@ -36,11 +37,11 @@ object BatchListIncomingTypedLinks {
     MaxResults: Int | Double = null,
     NextToken: NextToken = null
   ): BatchListIncomingTypedLinks = {
-    val __obj = js.Dynamic.literal(ObjectReference = ObjectReference)
-    if (FilterAttributeRanges != null) __obj.updateDynamic("FilterAttributeRanges")(FilterAttributeRanges)
-    if (FilterTypedLink != null) __obj.updateDynamic("FilterTypedLink")(FilterTypedLink)
+    val __obj = js.Dynamic.literal(ObjectReference = ObjectReference.asInstanceOf[js.Any])
+    if (FilterAttributeRanges != null) __obj.updateDynamic("FilterAttributeRanges")(FilterAttributeRanges.asInstanceOf[js.Any])
+    if (FilterTypedLink != null) __obj.updateDynamic("FilterTypedLink")(FilterTypedLink.asInstanceOf[js.Any])
     if (MaxResults != null) __obj.updateDynamic("MaxResults")(MaxResults.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchListIncomingTypedLinks]
   }
 }

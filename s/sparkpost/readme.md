@@ -10,9 +10,9 @@ A Node.js wrapper for interfacing with your favorite SparkPost APIs
 | ------------------ | :-------------: |
 | Full name          | sparkpost |
 | Keywords           | email, messaging |
-| # releases         | 2 |
-| # dependents       | 30 |
-| # downloads        | 380799 |
+| # releases         | 3 |
+| # dependents       | 34 |
+| # downloads        | 495356 |
 | # stars            | 6 |
 
 ## Links

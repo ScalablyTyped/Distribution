@@ -10,9 +10,9 @@ light - weight css preprocessor
 | ------------------ | :-------------: |
 | Full name          | stylis |
 | Keywords           | css, preprocessor |
-| # releases         | 80 |
-| # dependents       | 72 |
-| # downloads        | 39107877 |
+| # releases         | 11 |
+| # dependents       | 102 |
+| # downloads        | 74749439 |
 | # stars            | 1 |
 
 ## Links

@@ -10,9 +10,9 @@ Lets users sign their signatures
 | ------------------ | :-------------: |
 | Full name          | react-native-signature-capture |
 | Keywords           | react-component, react-native, ios, signature |
-| # releases         | 5 |
+| # releases         | 2 |
 | # dependents       | 4 |
-| # downloads        | 168916 |
+| # downloads        | 218247 |
 | # stars            | 0 |
 
 ## Links

@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ServerEndpointDetails extends js.Object {
   /**
     * The ID of the VPC endpoint.
     */
-  var vpcEndpointId: Input[String]
+  var vpcEndpointId: Input[String] = js.native
 }
 
 object ServerEndpointDetails {

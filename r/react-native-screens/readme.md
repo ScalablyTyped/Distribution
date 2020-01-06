@@ -10,9 +10,9 @@ First incomplete navigation solution for your react-native app.
 | ------------------ | :-------------: |
 | Full name          | react-native-screens |
 | Keywords           | - |
-| # releases         | 32 |
-| # dependents       | 25 |
-| # downloads        | 7512598 |
+| # releases         | 44 |
+| # dependents       | 28 |
+| # downloads        | 8247188 |
 | # stars            | 0 |
 
 ## Links

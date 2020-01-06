@@ -10,9 +10,9 @@ Find files simply. Walks a directory tree emitting events based on what it finds
 | ------------------ | :-------------: |
 | Full name          | walkdir |
 | Keywords           | find, walk, tree, files, fs |
-| # releases         | 8 |
-| # dependents       | 167 |
-| # downloads        | 28339146 |
+| # releases         | 9 |
+| # dependents       | 179 |
+| # downloads        | 58127895 |
 | # stars            | 15 |
 
 ## Links

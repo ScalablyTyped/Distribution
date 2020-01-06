@@ -46,11 +46,13 @@ abstract class HttpMethodHeaderValueCollection () extends Array[HttpMethod] {
   def getView(): IVectorView[HttpMethod] = js.native
   def indexOf(value: HttpMethod, extra: js.Any*): Anon_Index = js.native
   /**
-    * Retrieves the index of an HttpMethod in the collection.
-    * @param value The HttpMethod to find in the HttpMethodHeaderValueCollection .
+    * Determines the index of a specific item in the collection.
+    * @param item The object to locate in the collection.
+    * @return The index of item if found in the collection; otherwise, –1.
     */
+  /* hack */
   @JSName("indexOf")
-  def indexOf_Anon_Index(value: HttpMethod): Anon_Index = js.native
+  def indexOf_Double(item: HttpMethod): Double = js.native
   /**
     * Inserts an HttpMethod into the collection at the specified index.
     * @param index The zero-based index at which value should be inserted.

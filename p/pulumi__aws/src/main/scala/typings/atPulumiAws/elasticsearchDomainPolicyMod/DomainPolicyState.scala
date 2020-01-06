@@ -6,15 +6,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DomainPolicyState extends js.Object {
   /**
     * IAM policy document specifying the access policies for the domain
     */
-  val accessPolicies: js.UndefOr[Input[String | PolicyDocument]] = js.undefined
+  val accessPolicies: js.UndefOr[Input[String | PolicyDocument]] = js.native
   /**
     * Name of the domain.
     */
-  val domainName: js.UndefOr[Input[String]] = js.undefined
+  val domainName: js.UndefOr[Input[String]] = js.native
 }
 
 object DomainPolicyState {

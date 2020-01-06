@@ -10,9 +10,9 @@ Typings are for version v1.8.0
 | ------------------ | :-------------: |
 | Full name          | fs-finder |
 | Keywords           | file, fs, finder, recursive, walk |
-| # releases         | 1 |
-| # dependents       | 60 |
-| # downloads        | 196812 |
+| # releases         | 0 |
+| # dependents       | 63 |
+| # downloads        | 299149 |
 | # stars            | 5 |
 
 ## Links

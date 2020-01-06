@@ -10,9 +10,9 @@ Angular - the core framework
 | ------------------ | :-------------: |
 | Full name          | @angular/core |
 | Keywords           | - |
-| # releases         | 183 |
-| # dependents       | 6541 |
-| # downloads        | 87854504 |
+| # releases         | 180 |
+| # dependents       | 7716 |
+| # downloads        | 58982080 |
 | # stars            | 46 |
 
 ## Links

@@ -10,9 +10,9 @@ Chai plugin for performing assertions on UUIDs
 | ------------------ | :-------------: |
 | Full name          | chai-uuid |
 | Keywords           | chai, plugin, uuid, expect, should, guid, chai-plugin, browser |
-| # releases         | 9 |
-| # dependents       | 1 |
-| # downloads        | 181602 |
+| # releases         | 0 |
+| # dependents       | 2 |
+| # downloads        | 355242 |
 | # stars            | 0 |
 
 ## Links

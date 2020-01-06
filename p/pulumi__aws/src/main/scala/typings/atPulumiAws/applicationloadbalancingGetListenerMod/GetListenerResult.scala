@@ -5,18 +5,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetListenerResult extends js.Object {
-  val arn: String
-  val certificateArn: String
-  val defaultActions: js.Array[GetListenerDefaultAction]
+  val arn: String = js.native
+  val certificateArn: String = js.native
+  val defaultActions: js.Array[GetListenerDefaultAction] = js.native
   /**
     * id is the provider-assigned unique ID for this managed resource.
     */
-  val id: String
-  val loadBalancerArn: String
-  val port: Double
-  val protocol: String
-  val sslPolicy: String
+  val id: String = js.native
+  val loadBalancerArn: String = js.native
+  val port: Double = js.native
+  val protocol: String = js.native
+  val sslPolicy: String = js.native
 }
 
 object GetListenerResult {
@@ -31,7 +32,7 @@ object GetListenerResult {
     protocol: String,
     sslPolicy: String
   ): GetListenerResult = {
-    val __obj = js.Dynamic.literal(arn = arn, certificateArn = certificateArn, defaultActions = defaultActions, id = id, loadBalancerArn = loadBalancerArn, port = port, protocol = protocol, sslPolicy = sslPolicy)
+    val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], certificateArn = certificateArn.asInstanceOf[js.Any], defaultActions = defaultActions.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], loadBalancerArn = loadBalancerArn.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], sslPolicy = sslPolicy.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetListenerResult]
   }

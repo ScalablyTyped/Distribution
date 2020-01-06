@@ -4,17 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UpdateEndpointWeightsAndCapacitiesOutput extends js.Object {
   /**
     * The Amazon Resource Name (ARN) of the updated endpoint.
     */
-  var EndpointArn: typings.awsDashSdk.clientsSagemakerMod.EndpointArn
+  var EndpointArn: typings.awsDashSdk.clientsSagemakerMod.EndpointArn = js.native
 }
 
 object UpdateEndpointWeightsAndCapacitiesOutput {
   @scala.inline
   def apply(EndpointArn: EndpointArn): UpdateEndpointWeightsAndCapacitiesOutput = {
-    val __obj = js.Dynamic.literal(EndpointArn = EndpointArn)
+    val __obj = js.Dynamic.literal(EndpointArn = EndpointArn.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UpdateEndpointWeightsAndCapacitiesOutput]
   }

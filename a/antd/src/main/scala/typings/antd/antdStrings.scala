@@ -156,7 +156,7 @@ object antdStrings {
   sealed trait `-webkit-sticky` extends js.Object
   
   @js.native
-  sealed trait `3Dot26Dot4` extends js.Object
+  sealed trait `3Dot26Dot6` extends js.Object
   
   @js.native
   sealed trait AM extends js.Object
@@ -1962,7 +1962,7 @@ object antdStrings {
   @scala.inline
   def `-webkit-sticky`: `-webkit-sticky` = "-webkit-sticky".asInstanceOf[`-webkit-sticky`]
   @scala.inline
-  def `3Dot26Dot4`: `3Dot26Dot4` = "3.26.4".asInstanceOf[`3Dot26Dot4`]
+  def `3Dot26Dot6`: `3Dot26Dot6` = "3.26.6".asInstanceOf[`3Dot26Dot6`]
   @scala.inline
   def AM: AM = "AM".asInstanceOf[AM]
   @scala.inline

@@ -10,9 +10,9 @@ Social media share buttons and share counts for React.
 | ------------------ | :-------------: |
 | Full name          | react-share |
 | Keywords           | react, component, react-component, social, media, social-media, share, button, count |
-| # releases         | 21 |
-| # dependents       | 35 |
-| # downloads        | 1862690 |
+| # releases         | 12 |
+| # dependents       | 70 |
+| # downloads        | 3309049 |
 | # stars            | 11 |
 
 ## Links

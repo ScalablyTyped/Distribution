@@ -10,9 +10,9 @@ Samchon, a OON (Object Oriented Network) Framework with C++ and TypeScript
 | ------------------ | :-------------: |
 | Full name          | samchon |
 | Keywords           | samchon, framework, OON, object oriented network, interaction, cloud system, distributed processing system, parallel processing system, C++, TypeScript, Entity |
-| # releases         | 52 |
+| # releases         | 32 |
 | # dependents       | 3 |
-| # downloads        | 7169 |
+| # downloads        | 6902 |
 | # stars            | 0 |
 
 ## Links

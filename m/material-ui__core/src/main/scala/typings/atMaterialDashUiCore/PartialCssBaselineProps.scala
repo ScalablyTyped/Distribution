@@ -6,8 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/CssBaseline.CssBaselineProps> */
+@js.native
 trait PartialCssBaselineProps extends js.Object {
-  var children: js.UndefOr[ReactElement] = js.undefined
+  var children: js.UndefOr[ReactElement] = js.native
 }
 
 object PartialCssBaselineProps {

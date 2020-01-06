@@ -6,17 +6,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/StepConnector.StepConnectorClasskey>> */
+@js.native
 trait PartialStyleRulesStepConnectorClasskey extends js.Object {
-  var active: js.UndefOr[CSSProperties] = js.undefined
-  var alternativeLabel: js.UndefOr[CSSProperties] = js.undefined
-  var completed: js.UndefOr[CSSProperties] = js.undefined
-  var disabled: js.UndefOr[CSSProperties] = js.undefined
-  var horizontal: js.UndefOr[CSSProperties] = js.undefined
-  var line: js.UndefOr[CSSProperties] = js.undefined
-  var lineHorizontal: js.UndefOr[CSSProperties] = js.undefined
-  var lineVertical: js.UndefOr[CSSProperties] = js.undefined
-  var root: js.UndefOr[CSSProperties] = js.undefined
-  var vertical: js.UndefOr[CSSProperties] = js.undefined
+  var active: js.UndefOr[CSSProperties] = js.native
+  var alternativeLabel: js.UndefOr[CSSProperties] = js.native
+  var completed: js.UndefOr[CSSProperties] = js.native
+  var disabled: js.UndefOr[CSSProperties] = js.native
+  var horizontal: js.UndefOr[CSSProperties] = js.native
+  var line: js.UndefOr[CSSProperties] = js.native
+  var lineHorizontal: js.UndefOr[CSSProperties] = js.native
+  var lineVertical: js.UndefOr[CSSProperties] = js.native
+  var root: js.UndefOr[CSSProperties] = js.native
+  var vertical: js.UndefOr[CSSProperties] = js.native
 }
 
 object PartialStyleRulesStepConnectorClasskey {

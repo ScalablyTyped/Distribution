@@ -10,9 +10,9 @@ A lightweight XML Document class for JavaScript.
 | ------------------ | :-------------: |
 | Full name          | xmldoc |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 194 |
-| # downloads        | 9850470 |
+| # releases         | 3 |
+| # dependents       | 218 |
+| # downloads        | 14615649 |
 | # stars            | 4 |
 
 ## Links

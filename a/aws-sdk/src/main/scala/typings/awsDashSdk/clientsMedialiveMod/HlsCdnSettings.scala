@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait HlsCdnSettings extends js.Object {
-  var HlsAkamaiSettings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.HlsAkamaiSettings] = js.undefined
-  var HlsBasicPutSettings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.HlsBasicPutSettings] = js.undefined
-  var HlsMediaStoreSettings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.HlsMediaStoreSettings] = js.undefined
-  var HlsWebdavSettings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.HlsWebdavSettings] = js.undefined
+  var HlsAkamaiSettings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.HlsAkamaiSettings] = js.native
+  var HlsBasicPutSettings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.HlsBasicPutSettings] = js.native
+  var HlsMediaStoreSettings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.HlsMediaStoreSettings] = js.native
+  var HlsWebdavSettings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.HlsWebdavSettings] = js.native
 }
 
 object HlsCdnSettings {
@@ -20,10 +21,10 @@ object HlsCdnSettings {
     HlsWebdavSettings: HlsWebdavSettings = null
   ): HlsCdnSettings = {
     val __obj = js.Dynamic.literal()
-    if (HlsAkamaiSettings != null) __obj.updateDynamic("HlsAkamaiSettings")(HlsAkamaiSettings)
-    if (HlsBasicPutSettings != null) __obj.updateDynamic("HlsBasicPutSettings")(HlsBasicPutSettings)
-    if (HlsMediaStoreSettings != null) __obj.updateDynamic("HlsMediaStoreSettings")(HlsMediaStoreSettings)
-    if (HlsWebdavSettings != null) __obj.updateDynamic("HlsWebdavSettings")(HlsWebdavSettings)
+    if (HlsAkamaiSettings != null) __obj.updateDynamic("HlsAkamaiSettings")(HlsAkamaiSettings.asInstanceOf[js.Any])
+    if (HlsBasicPutSettings != null) __obj.updateDynamic("HlsBasicPutSettings")(HlsBasicPutSettings.asInstanceOf[js.Any])
+    if (HlsMediaStoreSettings != null) __obj.updateDynamic("HlsMediaStoreSettings")(HlsMediaStoreSettings.asInstanceOf[js.Any])
+    if (HlsWebdavSettings != null) __obj.updateDynamic("HlsWebdavSettings")(HlsWebdavSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[HlsCdnSettings]
   }
 }

@@ -10,9 +10,9 @@ Official React component for Font Awesome 5
 | ------------------ | :-------------: |
 | Full name          | @fortawesome/react-fontawesome |
 | Keywords           | - |
-| # releases         | 40 |
-| # dependents       | 346 |
-| # downloads        | 6158836 |
+| # releases         | 26 |
+| # dependents       | 627 |
+| # downloads        | 10640117 |
 | # stars            | 6 |
 
 ## Links

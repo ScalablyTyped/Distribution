@@ -10,9 +10,9 @@ Library for generating various random variables.
 | ------------------ | :-------------: |
 | Full name          | ranjs |
 | Keywords           | random, generator, distributions, mcmc, statistics, test |
-| # releases         | 49 |
+| # releases         | 52 |
 | # dependents       | 0 |
-| # downloads        | 5534 |
+| # downloads        | 6067 |
 | # stars            | 0 |
 
 ## Links

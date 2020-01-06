@@ -10,9 +10,9 @@ Find the root directory of a Node.js project or npm package
 | ------------------ | :-------------: |
 | Full name          | pkg-dir |
 | Keywords           | package, json, root, npm, entry, find, up, find-up, findup, look-up, look, file, search, match, resolve, parent, parents, folder, directory, dir, walk, walking, path |
-| # releases         | 3 |
-| # dependents       | 276 |
-| # downloads        | 398702794 |
+| # releases         | 5 |
+| # dependents       | 382 |
+| # downloads        | 720592728 |
 | # stars            | 8 |
 
 ## Links

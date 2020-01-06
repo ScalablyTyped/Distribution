@@ -77,7 +77,7 @@ import scala.scalajs.js.annotation._
 
 trait IChoiceGroupProps extends InputHTMLAttributes[HTMLElement | HTMLInputElement] {
   /**
-    * Aria labelled by prop for the ChoiceGroup itself
+    * ID of an element to use as the aria label for this ChoiceGroup.
     */
   var ariaLabelledBy: js.UndefOr[String] = js.undefined
   /**
@@ -129,7 +129,7 @@ trait IChoiceGroupProps extends InputHTMLAttributes[HTMLElement | HTMLInputEleme
     */
   var styles: js.UndefOr[IStyleFunctionOrObject[IChoiceGroupStyleProps, IChoiceGroupStyles]] = js.undefined
   /**
-    * Theme (provided through customization.)
+    * Theme (provided through customization).
     */
   var theme: js.UndefOr[ITheme] = js.undefined
 }

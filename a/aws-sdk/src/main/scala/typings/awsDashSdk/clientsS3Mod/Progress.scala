@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Progress extends js.Object {
   /**
     * The current number of uncompressed object bytes processed.
     */
-  var BytesProcessed: js.UndefOr[typings.awsDashSdk.clientsS3Mod.BytesProcessed] = js.undefined
+  var BytesProcessed: js.UndefOr[typings.awsDashSdk.clientsS3Mod.BytesProcessed] = js.native
   /**
     * The current number of bytes of records payload data returned.
     */
-  var BytesReturned: js.UndefOr[typings.awsDashSdk.clientsS3Mod.BytesReturned] = js.undefined
+  var BytesReturned: js.UndefOr[typings.awsDashSdk.clientsS3Mod.BytesReturned] = js.native
   /**
     * The current number of object bytes scanned.
     */
-  var BytesScanned: js.UndefOr[typings.awsDashSdk.clientsS3Mod.BytesScanned] = js.undefined
+  var BytesScanned: js.UndefOr[typings.awsDashSdk.clientsS3Mod.BytesScanned] = js.native
 }
 
 object Progress {

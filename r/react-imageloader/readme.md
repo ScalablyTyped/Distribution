@@ -10,9 +10,9 @@ A React component for wrangling image loading
 | ------------------ | :-------------: |
 | Full name          | react-imageloader |
 | Keywords           | react-component, react, loader, component |
-| # releases         | 2 |
-| # dependents       | 9 |
-| # downloads        | 141437 |
+| # releases         | 0 |
+| # dependents       | 8 |
+| # downloads        | 114000 |
 | # stars            | 4 |
 
 ## Links

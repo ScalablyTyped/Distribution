@@ -10,9 +10,9 @@ Provides a marshaller and unmarshaller for the AWS REST protocol
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/protocol-rest |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 6 |
-| # downloads        | 1497 |
+| # releases         | 12 |
+| # dependents       | 138 |
+| # downloads        | 8775 |
 | # stars            | 0 |
 
 ## Links

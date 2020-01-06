@@ -10,9 +10,9 @@ A set of common controls for the @wordpress/data api.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/data-controls |
 | Keywords           | wordpress, data, controls |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 0 |
+| # releases         | 12 |
+| # dependents       | 1 |
+| # downloads        | 56374 |
 | # stars            | 0 |
 
 ## Links

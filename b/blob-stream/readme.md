@@ -10,9 +10,9 @@ A Node-style writable stream for HTML5 Blobs
 | ------------------ | :-------------: |
 | Full name          | blob-stream |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 19 |
-| # downloads        | 347082 |
+| # releases         | 0 |
+| # dependents       | 27 |
+| # downloads        | 1195471 |
 | # stars            | 4 |
 
 ## Links

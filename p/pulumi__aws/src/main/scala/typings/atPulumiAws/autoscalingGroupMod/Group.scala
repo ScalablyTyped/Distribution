@@ -85,7 +85,7 @@ class Group protected () extends CustomResource {
     */
   val launchConfiguration: Output[js.UndefOr[String]] = js.native
   /**
-    * Nested argument containing launch template settings along with the overrides to specify multiple instance types. Defined below.
+    * Nested argument containing launch template settings along with the overrides to specify multiple instance types and weights. Defined below.
     */
   val launchTemplate: Output[js.UndefOr[GroupLaunchTemplate]] = js.native
   /**
@@ -93,6 +93,10 @@ class Group protected () extends CustomResource {
     * group names. Only valid for classic load balancers. For ALBs, use `targetGroupArns` instead.
     */
   val loadBalancers: Output[js.Array[String]] = js.native
+  /**
+    * The maximum amount of time, in seconds, that an instance can be in service, values must be either equal to 0 or between 604800 and 31536000 seconds.
+    */
+  val maxInstanceLifetime: Output[js.UndefOr[Double]] = js.native
   /**
     * The maximum size of the auto scale group.
     */

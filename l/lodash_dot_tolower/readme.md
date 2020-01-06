@@ -11,8 +11,8 @@ The lodash method `_.toLower` exported as a module.
 | Full name          | lodash.tolower |
 | Keywords           | lodash-modularized, tolower |
 | # releases         | 0 |
-| # dependents       | 16 |
-| # downloads        | 43869 |
+| # dependents       | 19 |
+| # downloads        | 70587 |
 | # stars            | 0 |
 
 ## Links

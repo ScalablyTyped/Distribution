@@ -9,9 +9,9 @@ Simple file input component for React
 | ------------------ | :-------------: |
 | Full name          | react-file-input |
 | Keywords           | react, react-component, upload, file, input |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 66343 |
+| # downloads        | 47792 |
 | # stars            | 3 |
 
 ## Links

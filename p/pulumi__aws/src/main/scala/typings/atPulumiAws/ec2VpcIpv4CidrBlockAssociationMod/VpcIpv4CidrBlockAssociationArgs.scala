@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VpcIpv4CidrBlockAssociationArgs extends js.Object {
   /**
     * The additional IPv4 CIDR block to associate with the VPC.
     */
-  val cidrBlock: Input[String]
+  val cidrBlock: Input[String] = js.native
   /**
     * The ID of the VPC to make the association with.
     */
-  val vpcId: Input[String]
+  val vpcId: Input[String] = js.native
 }
 
 object VpcIpv4CidrBlockAssociationArgs {

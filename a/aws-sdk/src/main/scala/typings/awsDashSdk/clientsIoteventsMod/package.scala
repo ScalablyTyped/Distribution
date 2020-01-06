@@ -33,6 +33,12 @@ package object clientsIoteventsMod {
   */
   type DetectorModelVersionStatus = _DetectorModelVersionStatus | String
   type DetectorModelVersionSummaries = js.Array[DetectorModelVersionSummary]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.BATCH
+    - typings.awsDashSdk.awsDashSdkStrings.SERIAL
+    - java.lang.String
+  */
+  type EvaluationMethod = _EvaluationMethod | String
   type EventName = String
   type Events = js.Array[Event]
   type FirehoseSeparator = String
@@ -76,7 +82,7 @@ package object clientsIoteventsMod {
   type VariableValue = String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2018-07-27`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

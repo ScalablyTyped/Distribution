@@ -4,35 +4,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ConnectionNotification extends js.Object {
   /**
     * The events for the notification. Valid values are Accept, Connect, Delete, and Reject.
     */
-  var ConnectionEvents: js.UndefOr[ValueStringList] = js.undefined
+  var ConnectionEvents: js.UndefOr[ValueStringList] = js.native
   /**
     * The ARN of the SNS topic for the notification.
     */
-  var ConnectionNotificationArn: js.UndefOr[String] = js.undefined
+  var ConnectionNotificationArn: js.UndefOr[String] = js.native
   /**
     * The ID of the notification.
     */
-  var ConnectionNotificationId: js.UndefOr[String] = js.undefined
+  var ConnectionNotificationId: js.UndefOr[String] = js.native
   /**
     * The state of the notification.
     */
-  var ConnectionNotificationState: js.UndefOr[typings.awsDashSdk.clientsEc2Mod.ConnectionNotificationState] = js.undefined
+  var ConnectionNotificationState: js.UndefOr[typings.awsDashSdk.clientsEc2Mod.ConnectionNotificationState] = js.native
   /**
     * The type of notification.
     */
-  var ConnectionNotificationType: js.UndefOr[typings.awsDashSdk.clientsEc2Mod.ConnectionNotificationType] = js.undefined
+  var ConnectionNotificationType: js.UndefOr[typings.awsDashSdk.clientsEc2Mod.ConnectionNotificationType] = js.native
   /**
     * The ID of the endpoint service.
     */
-  var ServiceId: js.UndefOr[String] = js.undefined
+  var ServiceId: js.UndefOr[String] = js.native
   /**
     * The ID of the VPC endpoint.
     */
-  var VpcEndpointId: js.UndefOr[String] = js.undefined
+  var VpcEndpointId: js.UndefOr[String] = js.native
 }
 
 object ConnectionNotification {
@@ -47,13 +48,13 @@ object ConnectionNotification {
     VpcEndpointId: String = null
   ): ConnectionNotification = {
     val __obj = js.Dynamic.literal()
-    if (ConnectionEvents != null) __obj.updateDynamic("ConnectionEvents")(ConnectionEvents)
-    if (ConnectionNotificationArn != null) __obj.updateDynamic("ConnectionNotificationArn")(ConnectionNotificationArn)
-    if (ConnectionNotificationId != null) __obj.updateDynamic("ConnectionNotificationId")(ConnectionNotificationId)
+    if (ConnectionEvents != null) __obj.updateDynamic("ConnectionEvents")(ConnectionEvents.asInstanceOf[js.Any])
+    if (ConnectionNotificationArn != null) __obj.updateDynamic("ConnectionNotificationArn")(ConnectionNotificationArn.asInstanceOf[js.Any])
+    if (ConnectionNotificationId != null) __obj.updateDynamic("ConnectionNotificationId")(ConnectionNotificationId.asInstanceOf[js.Any])
     if (ConnectionNotificationState != null) __obj.updateDynamic("ConnectionNotificationState")(ConnectionNotificationState.asInstanceOf[js.Any])
     if (ConnectionNotificationType != null) __obj.updateDynamic("ConnectionNotificationType")(ConnectionNotificationType.asInstanceOf[js.Any])
-    if (ServiceId != null) __obj.updateDynamic("ServiceId")(ServiceId)
-    if (VpcEndpointId != null) __obj.updateDynamic("VpcEndpointId")(VpcEndpointId)
+    if (ServiceId != null) __obj.updateDynamic("ServiceId")(ServiceId.asInstanceOf[js.Any])
+    if (VpcEndpointId != null) __obj.updateDynamic("VpcEndpointId")(VpcEndpointId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionNotification]
   }
 }

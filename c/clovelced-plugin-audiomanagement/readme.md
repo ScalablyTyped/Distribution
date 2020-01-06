@@ -12,7 +12,7 @@ A plugin to manage audio mode and volume
 | Keywords           | cordova, device, audio, volume, vibrate |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 484 |
+| # downloads        | 1697 |
 | # stars            | 0 |
 
 ## Links

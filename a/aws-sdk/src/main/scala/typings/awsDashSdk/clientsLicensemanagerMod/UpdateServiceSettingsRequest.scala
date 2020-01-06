@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UpdateServiceSettingsRequest extends js.Object {
   /**
     * Activates cross-account discovery.
     */
-  var EnableCrossAccountsDiscovery: js.UndefOr[BoxBoolean] = js.undefined
+  var EnableCrossAccountsDiscovery: js.UndefOr[BoxBoolean] = js.native
   /**
-    * Integrates AWS Organizations with License Manager for cross-account discovery.
+    * Enables integration with AWS Organizations for cross-account discovery.
     */
-  var OrganizationConfiguration: js.UndefOr[typings.awsDashSdk.clientsLicensemanagerMod.OrganizationConfiguration] = js.undefined
+  var OrganizationConfiguration: js.UndefOr[typings.awsDashSdk.clientsLicensemanagerMod.OrganizationConfiguration] = js.native
   /**
-    * ARN of the Amazon S3 bucket where License Manager information is stored.
+    * Amazon Resource Name (ARN) of the Amazon S3 bucket where the License Manager information is stored.
     */
-  var S3BucketArn: js.UndefOr[String] = js.undefined
+  var S3BucketArn: js.UndefOr[String] = js.native
   /**
-    * ARN of the Amazon SNS topic used for License Manager alerts.
+    * Amazon Resource Name (ARN) of the Amazon SNS topic used for License Manager alerts.
     */
-  var SnsTopicArn: js.UndefOr[String] = js.undefined
+  var SnsTopicArn: js.UndefOr[String] = js.native
 }
 
 object UpdateServiceSettingsRequest {
@@ -32,10 +33,10 @@ object UpdateServiceSettingsRequest {
     SnsTopicArn: String = null
   ): UpdateServiceSettingsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(EnableCrossAccountsDiscovery)) __obj.updateDynamic("EnableCrossAccountsDiscovery")(EnableCrossAccountsDiscovery)
-    if (OrganizationConfiguration != null) __obj.updateDynamic("OrganizationConfiguration")(OrganizationConfiguration)
-    if (S3BucketArn != null) __obj.updateDynamic("S3BucketArn")(S3BucketArn)
-    if (SnsTopicArn != null) __obj.updateDynamic("SnsTopicArn")(SnsTopicArn)
+    if (!js.isUndefined(EnableCrossAccountsDiscovery)) __obj.updateDynamic("EnableCrossAccountsDiscovery")(EnableCrossAccountsDiscovery.asInstanceOf[js.Any])
+    if (OrganizationConfiguration != null) __obj.updateDynamic("OrganizationConfiguration")(OrganizationConfiguration.asInstanceOf[js.Any])
+    if (S3BucketArn != null) __obj.updateDynamic("S3BucketArn")(S3BucketArn.asInstanceOf[js.Any])
+    if (SnsTopicArn != null) __obj.updateDynamic("SnsTopicArn")(SnsTopicArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateServiceSettingsRequest]
   }
 }

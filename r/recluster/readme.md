@@ -11,8 +11,8 @@ Clustering library with support for zero-downtime reloading
 | Full name          | recluster |
 | Keywords           | load, balancer, cluster, zero, downtime, reload, sticky, websockets, socket.io |
 | # releases         | 0 |
-| # dependents       | 13 |
-| # downloads        | 139352 |
+| # dependents       | 14 |
+| # downloads        | 143748 |
 | # stars            | 5 |
 
 ## Links

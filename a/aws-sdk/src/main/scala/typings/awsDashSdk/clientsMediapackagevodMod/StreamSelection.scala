@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StreamSelection extends js.Object {
   /**
     * The maximum video bitrate (bps) to include in output.
     */
-  var MaxVideoBitsPerSecond: js.UndefOr[__integer] = js.undefined
+  var MaxVideoBitsPerSecond: js.UndefOr[__integer] = js.native
   /**
     * The minimum video bitrate (bps) to include in output.
     */
-  var MinVideoBitsPerSecond: js.UndefOr[__integer] = js.undefined
+  var MinVideoBitsPerSecond: js.UndefOr[__integer] = js.native
   /**
     * A directive that determines the order of streams in the output.
     */
-  var StreamOrder: js.UndefOr[typings.awsDashSdk.clientsMediapackagevodMod.StreamOrder] = js.undefined
+  var StreamOrder: js.UndefOr[typings.awsDashSdk.clientsMediapackagevodMod.StreamOrder] = js.native
 }
 
 object StreamSelection {

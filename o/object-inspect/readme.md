@@ -10,9 +10,9 @@ string representations of objects in node and the browser
 | ------------------ | :-------------: |
 | Full name          | object-inspect |
 | Keywords           | inspect, util.inspect, object, stringify, pretty |
-| # releases         | 6 |
-| # dependents       | 56 |
-| # downloads        | 72260882 |
+| # releases         | 3 |
+| # dependents       | 65 |
+| # downloads        | 190948737 |
 | # stars            | 2 |
 
 ## Links

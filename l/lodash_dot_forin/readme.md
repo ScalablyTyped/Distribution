@@ -11,8 +11,8 @@ The lodash method `_.forIn` exported as a module.
 | Full name          | lodash.forin |
 | Keywords           | lodash-modularized, forin |
 | # releases         | 0 |
-| # dependents       | 24 |
-| # downloads        | 1796409 |
+| # dependents       | 30 |
+| # downloads        | 2545270 |
 | # stars            | 1 |
 
 ## Links

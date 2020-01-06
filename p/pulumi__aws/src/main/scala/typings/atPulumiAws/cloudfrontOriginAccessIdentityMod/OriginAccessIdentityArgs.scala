@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OriginAccessIdentityArgs extends js.Object {
   /**
     * An optional comment for the origin access identity.
     */
-  val comment: js.UndefOr[Input[String]] = js.undefined
+  val comment: js.UndefOr[Input[String]] = js.native
 }
 
 object OriginAccessIdentityArgs {

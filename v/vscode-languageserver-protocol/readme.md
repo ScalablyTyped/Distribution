@@ -10,9 +10,9 @@ VSCode Language Server Protocol implementation
 | ------------------ | :-------------: |
 | Full name          | vscode-languageserver-protocol |
 | Keywords           | - |
-| # releases         | 48 |
+| # releases         | 40 |
 | # dependents       | 39 |
-| # downloads        | 3143679 |
+| # downloads        | 10441657 |
 | # stars            | 0 |
 
 ## Links

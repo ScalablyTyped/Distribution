@@ -8,39 +8,40 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WebhookState extends js.Object {
   /**
     * The type of authentication  to use. One of `IP`, `GITHUB_HMAC`, or `UNAUTHENTICATED`.
     */
-  val authentication: js.UndefOr[Input[String]] = js.undefined
+  val authentication: js.UndefOr[Input[String]] = js.native
   /**
     * An `auth` block. Required for `IP` and `GITHUB_HMAC`. Auth blocks are documented below.
     */
-  val authenticationConfiguration: js.UndefOr[Input[WebhookAuthenticationConfiguration]] = js.undefined
+  val authenticationConfiguration: js.UndefOr[Input[WebhookAuthenticationConfiguration]] = js.native
   /**
     * One or more `filter` blocks. Filter blocks are documented below.
     */
-  val filters: js.UndefOr[Input[js.Array[Input[WebhookFilter]]]] = js.undefined
+  val filters: js.UndefOr[Input[js.Array[Input[WebhookFilter]]]] = js.native
   /**
     * The name of the webhook.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * The name of the action in a pipeline you want to connect to the webhook. The action must be from the source (first) stage of the pipeline.
     */
-  val targetAction: js.UndefOr[Input[String]] = js.undefined
+  val targetAction: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the pipeline.
     */
-  val targetPipeline: js.UndefOr[Input[String]] = js.undefined
+  val targetPipeline: js.UndefOr[Input[String]] = js.native
   /**
     * The CodePipeline webhook's URL. POST events to this endpoint to trigger the target.
     */
-  val url: js.UndefOr[Input[String]] = js.undefined
+  val url: js.UndefOr[Input[String]] = js.native
 }
 
 object WebhookState {

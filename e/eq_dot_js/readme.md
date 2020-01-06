@@ -11,7 +11,7 @@ Element queries, fast and light
 | Keywords           | Element Queries, Responsive Web Design, JavaScript, RWD |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 26809 |
+| # downloads        | 16326 |
 | # stars            | 1 |
 
 ## Links

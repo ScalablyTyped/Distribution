@@ -10,15 +10,12 @@ A MobX and Apollo Client integration utility.
 | ------------------ | :-------------: |
 | Full name          | mobx-apollo |
 | Keywords           | - |
-| # releases         | 20 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 9365 |
+| # downloads        | 11881 |
 | # stars            | 1 |
 
 ## Links
-- [Homepage](https://github.com/sonaye/mobx-apollo#readme)
-- [Bugs](https://github.com/sonaye/mobx-apollo/issues)
-- [Repository](https://github.com/sonaye/mobx-apollo)
 - [Npm](https://www.npmjs.com/package/mobx-apollo)
     
 

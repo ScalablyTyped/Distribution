@@ -11,8 +11,8 @@ An visual feedback indicator for the MaxLength attribute
 | Full name          | bootstrap-maxlength |
 | Keywords           | form, maxlength, html5, input, feedback, jquery-plugin, jquery |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 166998 |
+| # dependents       | 3 |
+| # downloads        | 196908 |
 | # stars            | 1 |
 
 ## Links

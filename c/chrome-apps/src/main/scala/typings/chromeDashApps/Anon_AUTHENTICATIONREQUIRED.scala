@@ -41,7 +41,7 @@ trait Anon_Authenticationrequired extends js.Object {
     String, 
     Exclude[
       String, 
-      initializing | running | temporary_unavailable | authentication_required | disabled_
+      temporary_unavailable | authentication_required | disabled_ | initializing | running
     ]
   ]
 }
@@ -55,7 +55,7 @@ object Anon_Authenticationrequired {
       String, 
       Exclude[
         String, 
-        initializing | running | temporary_unavailable | authentication_required | disabled_
+        temporary_unavailable | authentication_required | disabled_ | initializing | running
       ]
     ]
   ): Anon_Authenticationrequired = {

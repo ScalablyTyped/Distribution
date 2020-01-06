@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NoiseReducerFilterSettings extends js.Object {
   /**
     * Relative strength of noise reducing filter. Higher values produce stronger filtering.
     */
-  var Strength: js.UndefOr[__integerMin0Max3] = js.undefined
+  var Strength: js.UndefOr[__integerMin0Max3] = js.native
 }
 
 object NoiseReducerFilterSettings {

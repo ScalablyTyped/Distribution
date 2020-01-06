@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SelectObjectContentOutput extends js.Object {
   /**
-    * 
+    * The array of results.
     */
-  var Payload: js.UndefOr[SelectObjectContentEventStream] = js.undefined
+  var Payload: js.UndefOr[SelectObjectContentEventStream] = js.native
 }
 
 object SelectObjectContentOutput {

@@ -11,8 +11,8 @@ access passport.js authenticated user information from socket.io
 | Full name          | passport.socketio |
 | Keywords           | socket, socket.io, passport |
 | # releases         | 0 |
-| # dependents       | 40 |
-| # downloads        | 620731 |
+| # dependents       | 38 |
+| # downloads        | 647132 |
 | # stars            | 2 |
 
 ## Links

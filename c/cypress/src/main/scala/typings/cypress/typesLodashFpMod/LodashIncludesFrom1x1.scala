@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait LodashIncludesFrom1x1[T] extends js.Object {
-  def apply(fromIndex: Double): LodashIncludesFrom1x3[T] = js.native
+  def apply(fromIndex: Double): Boolean = js.native
   def apply(fromIndex: Double, collection: Dictionary[T]): Boolean = js.native
   def apply(fromIndex: Double, collection: List[T]): Boolean = js.native
   def apply(fromIndex: Double, collection: NumericDictionary[T]): Boolean = js.native

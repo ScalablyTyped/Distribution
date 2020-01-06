@@ -4,8 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DomainTransferability extends js.Object {
-  var Transferable: js.UndefOr[typings.awsDashSdk.clientsRoute53domainsMod.Transferable] = js.undefined
+  var Transferable: js.UndefOr[typings.awsDashSdk.clientsRoute53domainsMod.Transferable] = js.native
 }
 
 object DomainTransferability {

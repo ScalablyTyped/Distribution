@@ -10,9 +10,9 @@ Get a random property from an object
 | ------------------ | :-------------: |
 | Full name          | random-obj-prop |
 | Keywords           | random, randomize, math, object, property, prop, pick, select, choice |
-| # releases         | 0 |
+| # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 161 |
+| # downloads        | 298 |
 | # stars            | 1 |
 
 ## Links

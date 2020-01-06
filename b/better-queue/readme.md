@@ -10,9 +10,9 @@ Better Queue for NodeJS
 | ------------------ | :-------------: |
 | Full name          | better-queue |
 | Keywords           | queue, cargo, async, timeout, priority |
-| # releases         | 5 |
-| # dependents       | 49 |
-| # downloads        | 4922260 |
+| # releases         | 4 |
+| # dependents       | 85 |
+| # downloads        | 9363966 |
 | # stars            | 6 |
 
 ## Links

@@ -10,9 +10,9 @@ A small, fast delegated event library.
 | ------------------ | :-------------: |
 | Full name          | delegated-events |
 | Keywords           | - |
-| # releases         | 9 |
-| # dependents       | 5 |
-| # downloads        | 24851 |
+| # releases         | 8 |
+| # dependents       | 8 |
+| # downloads        | 94397 |
 | # stars            | 1 |
 
 ## Links

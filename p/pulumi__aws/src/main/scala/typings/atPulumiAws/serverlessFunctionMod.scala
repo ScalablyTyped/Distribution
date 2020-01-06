@@ -3,8 +3,6 @@ package typings.atPulumiAws
 import typings.atPulumiAws.iamMod.Role
 import typings.atPulumiAws.lambdaLambdaMixinsMod.Callback
 import typings.atPulumiAws.lambdaLambdaMixinsMod.CallbackFunctionArgs
-import typings.atPulumiAws.serverlessFunctionMod.FunctionOptions
-import typings.atPulumiAws.serverlessFunctionMod.Handler
 import typings.atPulumiAws.utilsMod.Overwrite
 import typings.atPulumiPulumi.atPulumiPulumiMod.ComponentResource
 import typings.atPulumiPulumi.resourceMod.ResourceOptions
@@ -16,7 +14,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object serverlessFunctionMod extends js.Object {
   @js.native
-  class Function protected () extends ComponentResource {
+  class Function protected ()
+    extends ComponentResource[js.Any] {
     /**
       * @param func Deprecated.  Pass the function as [options.func] or [options.factoryFunc] instead.
       */

@@ -10,8 +10,8 @@ An easy way to run reliable polling without messing with setTimeout.
 | Full name          | async-polling |
 | Keywords           | poll, polling, async, setTimeout, setInterval, task |
 | # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 49265 |
+| # dependents       | 4 |
+| # downloads        | 157072 |
 | # stars            | 0 |
 
 ## Links

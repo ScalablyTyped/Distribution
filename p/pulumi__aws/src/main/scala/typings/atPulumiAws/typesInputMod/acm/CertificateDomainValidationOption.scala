@@ -5,23 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CertificateDomainValidationOption extends js.Object {
   /**
     * A domain name for which the certificate should be issued
     */
-  var domainName: js.UndefOr[Input[String]] = js.undefined
+  var domainName: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the DNS record to create to validate the certificate
     */
-  var resourceRecordName: js.UndefOr[Input[String]] = js.undefined
+  var resourceRecordName: js.UndefOr[Input[String]] = js.native
   /**
     * The type of DNS record to create
     */
-  var resourceRecordType: js.UndefOr[Input[String]] = js.undefined
+  var resourceRecordType: js.UndefOr[Input[String]] = js.native
   /**
     * The value the DNS record needs to have
     */
-  var resourceRecordValue: js.UndefOr[Input[String]] = js.undefined
+  var resourceRecordValue: js.UndefOr[Input[String]] = js.native
 }
 
 object CertificateDomainValidationOption {

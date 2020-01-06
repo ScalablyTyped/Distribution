@@ -10,9 +10,9 @@ A library to generate ASCII boxes via NodeJS
 | ------------------ | :-------------: |
 | Full name          | cli-box |
 | Keywords           | cli, box, ascii, node |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 19 |
-| # downloads        | 151291 |
+| # downloads        | 178586 |
 | # stars            | 3 |
 
 ## Links

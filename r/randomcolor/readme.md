@@ -10,13 +10,13 @@ A tiny script for generating attractive random colors
 | ------------------ | :-------------: |
 | Full name          | randomcolor |
 | Keywords           | attractive, random, color, generator |
-| # releases         | 6 |
-| # dependents       | 107 |
-| # downloads        | 1155962 |
+| # releases         | 2 |
+| # dependents       | 131 |
+| # downloads        | 2073157 |
 | # stars            | 14 |
 
 ## Links
-- [Homepage](https://randomcolor.lllllllllllllllll.com/)
+- [Homepage](https://github.com/davidmerfield/randomColor#readme)
 - [Bugs](https://github.com/davidmerfield/randomColor/issues)
 - [Repository](https://github.com/davidmerfield/randomColor)
 - [Npm](https://www.npmjs.com/package/randomcolor)

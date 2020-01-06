@@ -10,13 +10,13 @@ HTTP server cookie parsing and serialization
 | ------------------ | :-------------: |
 | Full name          | cookie |
 | Keywords           | cookie, cookies |
-| # releases         | 1 |
-| # dependents       | 1045 |
-| # downloads        | 302959372 |
+| # releases         | 2 |
+| # dependents       | 1268 |
+| # downloads        | 513453748 |
 | # stars            | 71 |
 
 ## Links
-- [Homepage](https://github.com/jshttp/cookie)
+- [Homepage](https://github.com/jshttp/cookie#readme)
 - [Bugs](https://github.com/jshttp/cookie/issues)
 - [Repository](https://github.com/jshttp/cookie)
 - [Npm](https://www.npmjs.com/package/cookie)

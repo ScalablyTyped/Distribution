@@ -5,27 +5,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LoadBalancerCookieStickinessPolicyArgs extends js.Object {
   /**
     * The time period after which
     * the session cookie should be considered stale, expressed in seconds.
     */
-  val cookieExpirationPeriod: js.UndefOr[Input[Double]] = js.undefined
+  val cookieExpirationPeriod: js.UndefOr[Input[Double]] = js.native
   /**
     * The load balancer port to which the policy
     * should be applied. This must be an active listener on the load
     * balancer.
     */
-  val lbPort: Input[Double]
+  val lbPort: Input[Double] = js.native
   /**
     * The load balancer to which the policy
     * should be attached.
     */
-  val loadBalancer: Input[String]
+  val loadBalancer: Input[String] = js.native
   /**
     * The name of the stickiness policy.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
 }
 
 object LoadBalancerCookieStickinessPolicyArgs {

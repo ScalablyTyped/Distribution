@@ -1,27 +1,32 @@
 package typings.vue2DashDatepicker.vue2DashDatepickerMod.Datepicker
 
-import typings.vue2DashDatepicker.Anon_Date
+import typings.vue2DashDatepicker.Anon_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Lang extends js.Object {
-  var days: js.Array[String]
-  var months: js.Array[String]
-  var pickers: js.Array[String]
-  var placeholder: Anon_Date
+  var days: js.UndefOr[js.Array[String]] = js.undefined
+  var formatLocale: Anon_
+  var monthBeforeYear: Boolean
+  var monthFormat: String
+  var months: js.UndefOr[js.Array[String]] = js.undefined
+  var yearFormat: String
 }
 
 object Lang {
   @scala.inline
   def apply(
-    days: js.Array[String],
-    months: js.Array[String],
-    pickers: js.Array[String],
-    placeholder: Anon_Date
+    formatLocale: Anon_,
+    monthBeforeYear: Boolean,
+    monthFormat: String,
+    yearFormat: String,
+    days: js.Array[String] = null,
+    months: js.Array[String] = null
   ): Lang = {
-    val __obj = js.Dynamic.literal(days = days.asInstanceOf[js.Any], months = months.asInstanceOf[js.Any], pickers = pickers.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal(formatLocale = formatLocale.asInstanceOf[js.Any], monthBeforeYear = monthBeforeYear.asInstanceOf[js.Any], monthFormat = monthFormat.asInstanceOf[js.Any], yearFormat = yearFormat.asInstanceOf[js.Any])
+    if (days != null) __obj.updateDynamic("days")(days.asInstanceOf[js.Any])
+    if (months != null) __obj.updateDynamic("months")(months.asInstanceOf[js.Any])
     __obj.asInstanceOf[Lang]
   }
 }

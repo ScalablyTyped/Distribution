@@ -11,8 +11,8 @@ Javascript SignalR client without jQuery dependency
 | Full name          | signalr-no-jquery |
 | Keywords           | signalr |
 | # releases         | 3 |
-| # dependents       | 6 |
-| # downloads        | 74755 |
+| # dependents       | 7 |
+| # downloads        | 84057 |
 | # stars            | 2 |
 
 ## Links

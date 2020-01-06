@@ -12,7 +12,7 @@ A wrapper library for the autobahn wamp v1/v2 library in the browser/node
 | Keywords           | rx, rxjs, wamp, async, realtime |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 730 |
+| # downloads        | 861 |
 | # stars            | 0 |
 
 ## Links

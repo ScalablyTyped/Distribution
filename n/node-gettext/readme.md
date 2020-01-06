@@ -10,9 +10,9 @@ A JavaScript implementation of gettext, a localization framework
 | ------------------ | :-------------: |
 | Full name          | node-gettext |
 | Keywords           | i18n, l10n, internationalization, localization, translation, gettext |
-| # releases         | 2 |
-| # dependents       | 29 |
-| # downloads        | 680422 |
+| # releases         | 1 |
+| # dependents       | 31 |
+| # downloads        | 993306 |
 | # stars            | 5 |
 
 ## Links

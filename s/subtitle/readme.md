@@ -11,8 +11,8 @@ Parse and manipulate SRT (SubRip)
 | Full name          | subtitle |
 | Keywords           | subtitle, webvtt, srt, captions, subrip, parser, stringify |
 | # releases         | 8 |
-| # dependents       | 4 |
-| # downloads        | 27006 |
+| # dependents       | 10 |
+| # downloads        | 50012 |
 | # stars            | 1 |
 
 ## Links

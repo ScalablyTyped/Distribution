@@ -10,9 +10,9 @@ STOMP for JavaScript apps (Web browser & node.js)
 | ------------------ | :-------------: |
 | Full name          | stompjs |
 | Keywords           | STOMP, Web sockets, messaging, queue |
-| # releases         | 1 |
-| # dependents       | 53 |
-| # downloads        | 553490 |
+| # releases         | 0 |
+| # dependents       | 84 |
+| # downloads        | 757988 |
 | # stars            | 3 |
 
 ## Links

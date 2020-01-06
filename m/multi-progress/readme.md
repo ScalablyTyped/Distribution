@@ -10,9 +10,9 @@ Multiple progress bars based on the "progress" package
 | ------------------ | :-------------: |
 | Full name          | multi-progress |
 | Keywords           | multi, multiple, progress, bar |
-| # releases         | 1 |
-| # dependents       | 36 |
-| # downloads        | 362071 |
+| # releases         | 0 |
+| # dependents       | 46 |
+| # downloads        | 535587 |
 | # stars            | 1 |
 
 ## Links

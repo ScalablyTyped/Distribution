@@ -10,9 +10,9 @@ headless-gl implementation of gl-react, an universal React library to write and 
 | ------------------ | :-------------: |
 | Full name          | gl-react-headless |
 | Keywords           | - |
-| # releases         | 24 |
+| # releases         | 14 |
 | # dependents       | 0 |
-| # downloads        | 1297 |
+| # downloads        | 1849 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ A list of color names and its values
 | ------------------ | :-------------: |
 | Full name          | color-name |
 | Keywords           | color-name, color, color-keyword, keyword |
-| # releases         | 3 |
-| # dependents       | 67 |
-| # downloads        | 365186098 |
+| # releases         | 2 |
+| # dependents       | 99 |
+| # downloads        | 611227655 |
 | # stars            | 0 |
 
 ## Links

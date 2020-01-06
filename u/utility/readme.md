@@ -10,10 +10,10 @@ A collection of useful utilities.
 | ------------------ | :-------------: |
 | Full name          | utility |
 | Keywords           | utility, util, utils, sha256, sha1, hash, hex |
-| # releases         | 6 |
-| # dependents       | 154 |
-| # downloads        | 3894914 |
-| # stars            | 21 |
+| # releases         | 8 |
+| # dependents       | 182 |
+| # downloads        | 4473764 |
+| # stars            | 23 |
 
 ## Links
 - [Homepage](https://github.com/node-modules/utility)

@@ -11,8 +11,8 @@ Clone and modify a RegExp instance
 | Full name          | clone-regexp |
 | Keywords           | regexp, regex, re, regular, expression, clone, duplicate, modify, mutate |
 | # releases         | 5 |
-| # dependents       | 18 |
-| # downloads        | 29550186 |
+| # dependents       | 19 |
+| # downloads        | 46382472 |
 | # stars            | 1 |
 
 ## Links

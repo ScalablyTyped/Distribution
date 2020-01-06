@@ -9,10 +9,10 @@ Firebase JavaScript library for web and Node.js
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | firebase |
-| Keywords           | authentication, database, Firebase, firebase, realtime, storage |
-| # releases         | 626 |
-| # dependents       | 984 |
-| # downloads        | 19043964 |
+| Keywords           | authentication, database, Firebase, firebase, realtime, storage, performance, remote-config |
+| # releases         | 1040 |
+| # dependents       | 1223 |
+| # downloads        | 24426401 |
 | # stars            | 132 |
 
 ## Links

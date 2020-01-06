@@ -12,8 +12,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Point
   extends Instantiable0[Point]
-     with Instantiable2[/* x */ Double, /* y */ Double, Point]
-     with Instantiable1[(/* position */ Anon_X) | (/* position */ ArrayPoint) | (/* point */ Point), Point] {
+     with Instantiable1[(/* position */ Anon_X) | (/* position */ ArrayPoint) | (/* point */ Point), Point]
+     with Instantiable2[/* x */ Double, /* y */ Double, Point] {
   var x: Double = js.native
   var y: Double = js.native
   def at(pos: Double): Point = js.native

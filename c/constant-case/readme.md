@@ -4,21 +4,21 @@
 Typings are for version 2.0.0
 
 ## Library description:
-Constant case a string
+Transform into upper case string with an underscore between words
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | constant-case |
-| Keywords           | constant, case, upper |
-| # releases         | 0 |
-| # dependents       | 38 |
-| # downloads        | 24795322 |
+| Keywords           | constant, case, upper, uppercase, underscore, convert, transform |
+| # releases         | 3 |
+| # dependents       | 39 |
+| # downloads        | 41622893 |
 | # stars            | 1 |
 
 ## Links
-- [Homepage](https://github.com/blakeembrey/constant-case)
-- [Bugs](https://github.com/blakeembrey/constant-case/issues)
-- [Repository](https://github.com/blakeembrey/constant-case)
+- [Homepage](https://github.com/blakeembrey/change-case/tree/master/packages/constant-case#readme)
+- [Bugs](https://github.com/blakeembrey/change-case/issues)
+- [Repository](https://github.com/blakeembrey/change-case)
 - [Npm](https://www.npmjs.com/package/constant-case)
     
 

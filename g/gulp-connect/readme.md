@@ -10,9 +10,9 @@ Gulp plugin to run a webserver (with LiveReload)
 | ------------------ | :-------------: |
 | Full name          | gulp-connect |
 | Keywords           | gulpfriendly, connect, livereload, webserver, server |
-| # releases         | 7 |
-| # dependents       | 217 |
-| # downloads        | 2314416 |
+| # releases         | 5 |
+| # dependents       | 240 |
+| # downloads        | 2208839 |
 | # stars            | 140 |
 
 ## Links

@@ -10,9 +10,9 @@ Repeat the given string n times. Fastest implementation for repeating a string.
 | ------------------ | :-------------: |
 | Full name          | repeat-string |
 | Keywords           | fast, fastest, fill, left, left-pad, multiple, pad, padding, repeat, repeating, repetition, right, right-pad, string, times |
-| # releases         | 1 |
-| # dependents       | 156 |
-| # downloads        | 343852348 |
+| # releases         | 0 |
+| # dependents       | 184 |
+| # downloads        | 458619014 |
 | # stars            | 5 |
 
 ## Links

@@ -15,15 +15,15 @@ trait Co extends js.Object {
   var default_Original: Co = js.native
   def apply[F /* <: js.Function1[/* repeated */ js.Any, Iterator[_, _, js.UndefOr[scala.Nothing]]] */](
     fn: F,
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type Parameters<F> is not an array type */ args: Parameters[F]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<F> is not an array type */ args: Parameters[F]
   ): js.Promise[ExtractType[ReturnType[F]]] = js.native
   def co[F /* <: js.Function1[/* repeated */ js.Any, Iterator[_, _, js.UndefOr[scala.Nothing]]] */](
     fn: F,
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type Parameters<F> is not an array type */ args: Parameters[F]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<F> is not an array type */ args: Parameters[F]
   ): js.Promise[ExtractType[ReturnType[F]]] = js.native
   def default[F /* <: js.Function1[/* repeated */ js.Any, Iterator[_, _, js.UndefOr[scala.Nothing]]] */](
     fn: F,
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type Parameters<F> is not an array type */ args: Parameters[F]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<F> is not an array type */ args: Parameters[F]
   ): js.Promise[ExtractType[ReturnType[F]]] = js.native
   def wrap[F /* <: js.Function1[/* repeated */ js.Any, Iterator[_, _, js.UndefOr[scala.Nothing]]] */](fn: F): js.Function1[/* args */ Parameters[F], js.Promise[ExtractType[ReturnType[F]]]] = js.native
 }

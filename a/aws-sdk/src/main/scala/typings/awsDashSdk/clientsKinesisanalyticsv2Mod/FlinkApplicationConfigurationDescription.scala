@@ -4,29 +4,30 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FlinkApplicationConfigurationDescription extends js.Object {
   /**
     * Describes an application's checkpointing configuration. Checkpointing is the process of persisting application state for fault tolerance.
     */
   var CheckpointConfigurationDescription: js.UndefOr[
     typings.awsDashSdk.clientsKinesisanalyticsv2Mod.CheckpointConfigurationDescription
-  ] = js.undefined
+  ] = js.native
   /**
     * The job plan for an application. For more information about the job plan, see Jobs and Scheduling in the Apache Flink Documentation. To retrieve the job plan for the application, use the DescribeApplicationRequest$IncludeAdditionalDetails parameter of the DescribeApplication operation.
     */
-  var JobPlanDescription: js.UndefOr[typings.awsDashSdk.clientsKinesisanalyticsv2Mod.JobPlanDescription] = js.undefined
+  var JobPlanDescription: js.UndefOr[typings.awsDashSdk.clientsKinesisanalyticsv2Mod.JobPlanDescription] = js.native
   /**
     * Describes configuration parameters for Amazon CloudWatch logging for an application.
     */
   var MonitoringConfigurationDescription: js.UndefOr[
     typings.awsDashSdk.clientsKinesisanalyticsv2Mod.MonitoringConfigurationDescription
-  ] = js.undefined
+  ] = js.native
   /**
     * Describes parameters for how an application executes multiple tasks simultaneously.
     */
   var ParallelismConfigurationDescription: js.UndefOr[
     typings.awsDashSdk.clientsKinesisanalyticsv2Mod.ParallelismConfigurationDescription
-  ] = js.undefined
+  ] = js.native
 }
 
 object FlinkApplicationConfigurationDescription {
@@ -38,10 +39,10 @@ object FlinkApplicationConfigurationDescription {
     ParallelismConfigurationDescription: ParallelismConfigurationDescription = null
   ): FlinkApplicationConfigurationDescription = {
     val __obj = js.Dynamic.literal()
-    if (CheckpointConfigurationDescription != null) __obj.updateDynamic("CheckpointConfigurationDescription")(CheckpointConfigurationDescription)
-    if (JobPlanDescription != null) __obj.updateDynamic("JobPlanDescription")(JobPlanDescription)
-    if (MonitoringConfigurationDescription != null) __obj.updateDynamic("MonitoringConfigurationDescription")(MonitoringConfigurationDescription)
-    if (ParallelismConfigurationDescription != null) __obj.updateDynamic("ParallelismConfigurationDescription")(ParallelismConfigurationDescription)
+    if (CheckpointConfigurationDescription != null) __obj.updateDynamic("CheckpointConfigurationDescription")(CheckpointConfigurationDescription.asInstanceOf[js.Any])
+    if (JobPlanDescription != null) __obj.updateDynamic("JobPlanDescription")(JobPlanDescription.asInstanceOf[js.Any])
+    if (MonitoringConfigurationDescription != null) __obj.updateDynamic("MonitoringConfigurationDescription")(MonitoringConfigurationDescription.asInstanceOf[js.Any])
+    if (ParallelismConfigurationDescription != null) __obj.updateDynamic("ParallelismConfigurationDescription")(ParallelismConfigurationDescription.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlinkApplicationConfigurationDescription]
   }
 }

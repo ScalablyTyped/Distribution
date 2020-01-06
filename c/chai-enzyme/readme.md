@@ -10,9 +10,9 @@ Chai.js assertions for enzyme
 | ------------------ | :-------------: |
 | Full name          | chai-enzyme |
 | Keywords           | javascript, shallow rendering, shallowRender, test, reactjs, react, flux, testing, test utils, assertion helpers, tdd, mocha, chai, chaijs, enzyme |
-| # releases         | 6 |
-| # dependents       | 37 |
-| # downloads        | 3652369 |
+| # releases         | 2 |
+| # dependents       | 38 |
+| # downloads        | 4356102 |
 | # stars            | 2 |
 
 ## Links

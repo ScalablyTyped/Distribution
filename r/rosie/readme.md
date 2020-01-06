@@ -10,8 +10,8 @@ factory for building JavaScript objects, mostly useful for setting up test data.
 | Full name          | rosie |
 | Keywords           | factory, rosie, test |
 | # releases         | 3 |
-| # dependents       | 8 |
-| # downloads        | 1779150 |
+| # dependents       | 10 |
+| # downloads        | 2268671 |
 | # stars            | 6 |
 
 ## Links

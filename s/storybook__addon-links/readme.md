@@ -10,15 +10,15 @@ Story Links addon for storybook
 | ------------------ | :-------------: |
 | Full name          | @storybook/addon-links |
 | Keywords           | addon, storybook |
-| # releases         | 238 |
-| # dependents       | 66 |
-| # downloads        | 32375026 |
+| # releases         | 416 |
+| # dependents       | 108 |
+| # downloads        | 24875595 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/storybooks/storybook/tree/master/addons/links)
-- [Bugs](https://github.com/storybooks/storybook/issues)
-- [Repository](https://github.com/storybooks/storybook)
+- [Homepage](https://github.com/storybookjs/storybook/tree/master/addons/links)
+- [Bugs](https://github.com/storybookjs/storybook/issues)
+- [Repository](https://github.com/storybookjs/storybook)
 - [Npm](https://www.npmjs.com/package/%40storybook%2Faddon-links)
     
 

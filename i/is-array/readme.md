@@ -11,8 +11,8 @@ Check if the given value is an Array
 | Full name          | is-array |
 | Keywords           | isArray, es5, array |
 | # releases         | 0 |
-| # dependents       | 72 |
-| # downloads        | 1382187 |
+| # dependents       | 74 |
+| # downloads        | 1943994 |
 | # stars            | 1 |
 
 ## Links

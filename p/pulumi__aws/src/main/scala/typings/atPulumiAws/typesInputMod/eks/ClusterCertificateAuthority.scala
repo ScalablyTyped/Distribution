@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClusterCertificateAuthority extends js.Object {
   /**
     * The base64 encoded certificate data required to communicate with your cluster. Add this to the `certificate-authority-data` section of the `kubeconfig` file for your cluster.
     */
-  var data: js.UndefOr[Input[String]] = js.undefined
+  var data: js.UndefOr[Input[String]] = js.native
 }
 
 object ClusterCertificateAuthority {

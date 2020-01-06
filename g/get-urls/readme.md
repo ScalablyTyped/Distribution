@@ -9,10 +9,10 @@ Get all URLs in a string
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | get-urls |
-| Keywords           | get, urls, url, uri, extract, find, scrape, text, string |
-| # releases         | 3 |
-| # dependents       | 28 |
-| # downloads        | 798084 |
+| Keywords           | get, urls, url, extract, find, scrape, text, string |
+| # releases         | 5 |
+| # dependents       | 37 |
+| # downloads        | 1162089 |
 | # stars            | 8 |
 
 ## Links

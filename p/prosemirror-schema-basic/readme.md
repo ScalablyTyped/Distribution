@@ -10,9 +10,9 @@ Basic schema elements for ProseMirror
 | ------------------ | :-------------: |
 | Full name          | prosemirror-schema-basic |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 25 |
-| # downloads        | 188465 |
+| # releases         | 5 |
+| # dependents       | 43 |
+| # downloads        | 475191 |
 | # stars            | 0 |
 
 ## Links

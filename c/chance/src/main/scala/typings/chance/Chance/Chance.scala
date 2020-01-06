@@ -51,10 +51,10 @@ trait Chance extends Seeded {
   def avatar(): String = js.native
   def avatar(opts: Options): String = js.native
   def bb_pin(): String = js.native
-  def birthday(): Date = js.native
+  def birthday(): Date | String = js.native
   def birthday(opts: Options): Date | String = js.native
   @JSName("birthday")
-  def birthday_Union(): Date | String = js.native
+  def birthday_Date(): Date = js.native
   // Basics
   def bool(): Boolean = js.native
   def bool(opts: Anon_Likelihood): Boolean = js.native
@@ -244,10 +244,10 @@ trait Chance extends Seeded {
   def provinces(): js.Array[Name] = js.native
   def radio(): String = js.native
   def radio(opts: Options): String = js.native
-  def rpg(dice: String): js.Array[Double] = js.native
+  def rpg(dice: String): js.Array[Double] | Double = js.native
   def rpg(dice: String, opts: Options): js.Array[Double] | Double = js.native
   @JSName("rpg")
-  def rpg_Union(dice: String): js.Array[Double] | Double = js.native
+  def rpg_Array(dice: String): js.Array[Double] = js.native
   def second(): Double = js.native
   def sentence(): String = js.native
   def sentence(

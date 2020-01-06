@@ -11,8 +11,8 @@ Store enhancer that syncs (a subset of) your redux store state to localstorage.
 | Full name          | redux-localstorage |
 | Keywords           | Redux, localstorage |
 | # releases         | 1 |
-| # dependents       | 32 |
-| # downloads        | 1125342 |
+| # dependents       | 35 |
+| # downloads        | 1461700 |
 | # stars            | 10 |
 
 ## Links

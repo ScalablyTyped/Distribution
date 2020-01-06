@@ -5,17 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait S3BucketAssociationClassificationType extends js.Object {
   /**
     * A string value indicating that Macie perform a one-time classification of all of the existing objects in the bucket.
     * The only valid value is the default value, `FULL`.
     */
-  var continuous: js.UndefOr[Input[String]] = js.undefined
+  var continuous: js.UndefOr[Input[String]] = js.native
   /**
     * A string value indicating whether or not Macie performs a one-time classification of all of the existing objects in the bucket.
     * Valid values are `NONE` and `FULL`. Defaults to `NONE` indicating that Macie only classifies objects that are added after the association was created.
     */
-  var oneTime: js.UndefOr[Input[String]] = js.undefined
+  var oneTime: js.UndefOr[Input[String]] = js.native
 }
 
 object S3BucketAssociationClassificationType {

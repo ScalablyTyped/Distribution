@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LaunchTemplateInstanceMarketOptions extends js.Object {
-  var marketType: js.UndefOr[Input[String]] = js.undefined
-  var spotOptions: js.UndefOr[Input[LaunchTemplateInstanceMarketOptionsSpotOptions]] = js.undefined
+  var marketType: js.UndefOr[Input[String]] = js.native
+  var spotOptions: js.UndefOr[Input[LaunchTemplateInstanceMarketOptionsSpotOptions]] = js.native
 }
 
 object LaunchTemplateInstanceMarketOptions {

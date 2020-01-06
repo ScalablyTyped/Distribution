@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IdentityPoolCognitoIdentityProvider extends js.Object {
   /**
     * The client ID for the Amazon Cognito Identity User Pool.
     */
-  var clientId: js.UndefOr[Input[String]] = js.undefined
+  var clientId: js.UndefOr[Input[String]] = js.native
   /**
     * The provider name for an Amazon Cognito Identity User Pool.
     */
-  var providerName: js.UndefOr[Input[String]] = js.undefined
+  var providerName: js.UndefOr[Input[String]] = js.native
   /**
     * Whether server-side token validation is enabled for the identity provider’s token or not.
     */
-  var serverSideTokenCheck: js.UndefOr[Input[Boolean]] = js.undefined
+  var serverSideTokenCheck: js.UndefOr[Input[Boolean]] = js.native
 }
 
 object IdentityPoolCognitoIdentityProvider {

@@ -4,21 +4,21 @@
 Typings are for version 2.0.8
 
 ## Library description:
-Check user permissions in React Native
+An unified permissions API for React Native on iOS and Android
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-native-permissions |
-| Keywords           | react-native, react-permissions, permissions |
-| # releases         | 11 |
-| # dependents       | 16 |
-| # downloads        | 1528316 |
+| Keywords           | react-native, react native, permission, authorization |
+| # releases         | 16 |
+| # dependents       | 31 |
+| # downloads        | 2831945 |
 | # stars            | 2 |
 
 ## Links
-- [Homepage](https://github.com/yonahforst/react-native-permissions)
-- [Bugs](https://github.com/yonahforst/react-native-permissions/issues)
-- [Repository](https://github.com/yonahforst/react-native-permissions)
+- [Homepage](https://github.com/react-native-community/react-native-permissions#readme)
+- [Bugs](https://github.com/react-native-community/react-native-permissions/issues)
+- [Repository](https://github.com/react-native-community/react-native-permissions)
 - [Npm](https://www.npmjs.com/package/react-native-permissions)
     
 

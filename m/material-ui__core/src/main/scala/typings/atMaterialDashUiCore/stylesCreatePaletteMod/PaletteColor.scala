@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PaletteColor extends js.Object {
-  var contrastText: String
-  var dark: String
-  var light: String
-  var main: String
+  var contrastText: String = js.native
+  var dark: String = js.native
+  var light: String = js.native
+  var main: String = js.native
 }
 
 object PaletteColor {

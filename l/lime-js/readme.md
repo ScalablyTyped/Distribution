@@ -10,9 +10,9 @@ JavaScript LIME implementation
 | ------------------ | :-------------: |
 | Full name          | lime-js |
 | Keywords           | LIME, MessagingHub, TypeScript, TCP, WebSocket, WS |
-| # releases         | 0 |
+| # releases         | 7 |
 | # dependents       | 5 |
-| # downloads        | 23129 |
+| # downloads        | 16265 |
 | # stars            | 0 |
 
 ## Links

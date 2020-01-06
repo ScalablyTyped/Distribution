@@ -4,47 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CsvClassifier extends js.Object {
   /**
     * Enables the processing of files that contain only one column.
     */
-  var AllowSingleColumn: js.UndefOr[NullableBoolean] = js.undefined
+  var AllowSingleColumn: js.UndefOr[NullableBoolean] = js.native
   /**
     * Indicates whether the CSV file contains a header.
     */
-  var ContainsHeader: js.UndefOr[CsvHeaderOption] = js.undefined
+  var ContainsHeader: js.UndefOr[CsvHeaderOption] = js.native
   /**
     * The time that this classifier was registered.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.undefined
+  var CreationTime: js.UndefOr[Timestamp] = js.native
   /**
     * A custom symbol to denote what separates each column entry in the row.
     */
-  var Delimiter: js.UndefOr[CsvColumnDelimiter] = js.undefined
+  var Delimiter: js.UndefOr[CsvColumnDelimiter] = js.native
   /**
     * Specifies not to trim values before identifying the type of column values. The default value is true.
     */
-  var DisableValueTrimming: js.UndefOr[NullableBoolean] = js.undefined
+  var DisableValueTrimming: js.UndefOr[NullableBoolean] = js.native
   /**
     * A list of strings representing column names.
     */
-  var Header: js.UndefOr[CsvHeader] = js.undefined
+  var Header: js.UndefOr[CsvHeader] = js.native
   /**
     * The time that this classifier was last updated.
     */
-  var LastUpdated: js.UndefOr[Timestamp] = js.undefined
+  var LastUpdated: js.UndefOr[Timestamp] = js.native
   /**
     * The name of the classifier.
     */
-  var Name: NameString
+  var Name: NameString = js.native
   /**
     * A custom symbol to denote what combines content into a single column value. It must be different from the column delimiter.
     */
-  var QuoteSymbol: js.UndefOr[CsvQuoteSymbol] = js.undefined
+  var QuoteSymbol: js.UndefOr[CsvQuoteSymbol] = js.native
   /**
     * The version of this classifier.
     */
-  var Version: js.UndefOr[VersionId] = js.undefined
+  var Version: js.UndefOr[VersionId] = js.native
 }
 
 object CsvClassifier {
@@ -61,15 +62,15 @@ object CsvClassifier {
     QuoteSymbol: CsvQuoteSymbol = null,
     Version: Int | Double = null
   ): CsvClassifier = {
-    val __obj = js.Dynamic.literal(Name = Name)
-    if (!js.isUndefined(AllowSingleColumn)) __obj.updateDynamic("AllowSingleColumn")(AllowSingleColumn)
+    val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
+    if (!js.isUndefined(AllowSingleColumn)) __obj.updateDynamic("AllowSingleColumn")(AllowSingleColumn.asInstanceOf[js.Any])
     if (ContainsHeader != null) __obj.updateDynamic("ContainsHeader")(ContainsHeader.asInstanceOf[js.Any])
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime)
-    if (Delimiter != null) __obj.updateDynamic("Delimiter")(Delimiter)
-    if (!js.isUndefined(DisableValueTrimming)) __obj.updateDynamic("DisableValueTrimming")(DisableValueTrimming)
-    if (Header != null) __obj.updateDynamic("Header")(Header)
-    if (LastUpdated != null) __obj.updateDynamic("LastUpdated")(LastUpdated)
-    if (QuoteSymbol != null) __obj.updateDynamic("QuoteSymbol")(QuoteSymbol)
+    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
+    if (Delimiter != null) __obj.updateDynamic("Delimiter")(Delimiter.asInstanceOf[js.Any])
+    if (!js.isUndefined(DisableValueTrimming)) __obj.updateDynamic("DisableValueTrimming")(DisableValueTrimming.asInstanceOf[js.Any])
+    if (Header != null) __obj.updateDynamic("Header")(Header.asInstanceOf[js.Any])
+    if (LastUpdated != null) __obj.updateDynamic("LastUpdated")(LastUpdated.asInstanceOf[js.Any])
+    if (QuoteSymbol != null) __obj.updateDynamic("QuoteSymbol")(QuoteSymbol.asInstanceOf[js.Any])
     if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
     __obj.asInstanceOf[CsvClassifier]
   }

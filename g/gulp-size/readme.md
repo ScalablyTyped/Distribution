@@ -10,9 +10,9 @@ Display the size of your project
 | ------------------ | :-------------: |
 | Full name          | gulp-size |
 | Keywords           | gulpplugin, filesize, file, size, log, measure, inspect, debug, gzip |
-| # releases         | 2 |
-| # dependents       | 210 |
-| # downloads        | 2358882 |
+| # releases         | 1 |
+| # dependents       | 221 |
+| # downloads        | 2189739 |
 | # stars            | 66 |
 
 ## Links

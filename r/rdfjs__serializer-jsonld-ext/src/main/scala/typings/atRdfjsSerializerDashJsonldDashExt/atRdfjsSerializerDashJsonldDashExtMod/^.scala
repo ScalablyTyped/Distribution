@@ -1,7 +1,7 @@
 package typings.atRdfjsSerializerDashJsonldDashExt.atRdfjsSerializerDashJsonldDashExtMod
 
 import typings.node.eventsMod.EventEmitter
-import typings.rdfDashJs.rdfDashJsMod.Quad
+import typings.rdfDashJs.rdfDashJsMod.BaseQuad
 import typings.rdfDashJs.rdfDashJsMod.Stream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@rdfjs/serializer-jsonld-ext", JSImport.Namespace)
 @js.native
-class ^ () extends Serializer {
+class ^[Q /* <: BaseQuad */] () extends Serializer[Q] {
   def this(options: SerializerOptions) = this()
   /**
     * Consumes the given stream.
@@ -22,6 +22,6 @@ class ^ () extends Serializer {
     * @return The resulting event emitter.
     */
   /* CompleteClass */
-  override def `import`(stream: Stream[Quad]): EventEmitter = js.native
+  override def `import`(stream: Stream[Q]): EventEmitter = js.native
 }
 

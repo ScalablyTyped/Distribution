@@ -10,9 +10,9 @@ SuperTest + Promises
 | ------------------ | :-------------: |
 | Full name          | promisify-supertest |
 | Keywords           | SuperTest, promise, as, promised, promisify, superagent, test |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 6619 |
+| # downloads        | 5341 |
 | # stars            | 1 |
 
 ## Links

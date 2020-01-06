@@ -10,9 +10,9 @@ A mathematically correct random number generator library for JavaScript.
 | ------------------ | :-------------: |
 | Full name          | random-js |
 | Keywords           | random |
-| # releases         | 7 |
-| # dependents       | 171 |
-| # downloads        | 745984 |
+| # releases         | 8 |
+| # dependents       | 184 |
+| # downloads        | 1671261 |
 | # stars            | 23 |
 
 ## Links

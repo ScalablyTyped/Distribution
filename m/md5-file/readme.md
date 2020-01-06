@@ -10,9 +10,9 @@ return an md5sum of a given file
 | ------------------ | :-------------: |
 | Full name          | md5-file |
 | Keywords           | md5, md5sum, checksum |
-| # releases         | 6 |
-| # dependents       | 340 |
-| # downloads        | 12027897 |
+| # releases         | 2 |
+| # dependents       | 402 |
+| # downloads        | 24825211 |
 | # stars            | 17 |
 
 ## Links

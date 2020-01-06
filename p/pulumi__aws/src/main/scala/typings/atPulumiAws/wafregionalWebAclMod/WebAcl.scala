@@ -1,5 +1,6 @@
 package typings.atPulumiAws.wafregionalWebAclMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.atPulumiAws.typesOutputMod.wafregional.WebAclDefaultAction
 import typings.atPulumiAws.typesOutputMod.wafregional.WebAclLoggingConfiguration
 import typings.atPulumiAws.typesOutputMod.wafregional.WebAclRule
@@ -48,6 +49,10 @@ class WebAcl protected () extends CustomResource {
     * Set of configuration blocks containing rules for the web ACL. Detailed below.
     */
   val rules: Output[js.UndefOr[js.Array[WebAclRule]]] = js.native
+  /**
+    * Key-value mapping of resource tags
+    */
+  val tags: Output[js.UndefOr[StringDictionary[_]]] = js.native
 }
 
 /* static members */

@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AuditNotificationTarget extends js.Object {
   /**
     * True if notifications to the target are enabled.
     */
-  var enabled: js.UndefOr[Enabled] = js.undefined
+  var enabled: js.UndefOr[Enabled] = js.native
   /**
     * The ARN of the role that grants permission to send notifications to the target.
     */
-  var roleArn: js.UndefOr[RoleArn] = js.undefined
+  var roleArn: js.UndefOr[RoleArn] = js.native
   /**
     * The ARN of the target (SNS topic) to which audit notifications are sent.
     */
-  var targetArn: js.UndefOr[TargetArn] = js.undefined
+  var targetArn: js.UndefOr[TargetArn] = js.native
 }
 
 object AuditNotificationTarget {
@@ -27,9 +28,9 @@ object AuditNotificationTarget {
     targetArn: TargetArn = null
   ): AuditNotificationTarget = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn)
-    if (targetArn != null) __obj.updateDynamic("targetArn")(targetArn)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
+    if (targetArn != null) __obj.updateDynamic("targetArn")(targetArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuditNotificationTarget]
   }
 }

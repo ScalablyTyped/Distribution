@@ -6,19 +6,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NatGatewayArgs extends js.Object {
   /**
     * The Allocation ID of the Elastic IP address for the gateway.
     */
-  val allocationId: Input[String]
+  val allocationId: Input[String] = js.native
   /**
     * The Subnet ID of the subnet in which to place the gateway.
     */
-  val subnetId: Input[String]
+  val subnetId: Input[String] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object NatGatewayArgs {

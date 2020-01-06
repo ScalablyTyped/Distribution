@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait S3InitiateRestoreObjectOperation extends js.Object {
   /**
     * 
     */
-  var ExpirationInDays: js.UndefOr[S3ExpirationInDays] = js.undefined
+  var ExpirationInDays: js.UndefOr[S3ExpirationInDays] = js.native
   /**
     * 
     */
-  var GlacierJobTier: js.UndefOr[S3GlacierJobTier] = js.undefined
+  var GlacierJobTier: js.UndefOr[S3GlacierJobTier] = js.native
 }
 
 object S3InitiateRestoreObjectOperation {

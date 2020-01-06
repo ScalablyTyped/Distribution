@@ -10,9 +10,9 @@ Easy dependency injection for node.js unit testing
 | ------------------ | :-------------: |
 | Full name          | rewire |
 | Keywords           | dependency, injection, mock, shim, module, unit, test, leak, inspect, fake, require |
-| # releases         | 6 |
-| # dependents       | 120 |
-| # downloads        | 7199928 |
+| # releases         | 3 |
+| # dependents       | 147 |
+| # downloads        | 9581547 |
 | # stars            | 89 |
 
 ## Links

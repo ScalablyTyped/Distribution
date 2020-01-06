@@ -12,7 +12,7 @@ Text plugin for Zdog
 | Keywords           | zdog, 3d, font, text, truetype, ttf |
 | # releases         | 12 |
 | # dependents       | 0 |
-| # downloads        | 2066 |
+| # downloads        | 2275 |
 | # stars            | 0 |
 
 ## Links

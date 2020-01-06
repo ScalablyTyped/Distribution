@@ -11,8 +11,8 @@ ebml parser
 | Full name          | ebml |
 | Keywords           | ebml, webm, mkv, matroska, format |
 | # releases         | 5 |
-| # dependents       | 9 |
-| # downloads        | 97043 |
+| # dependents       | 10 |
+| # downloads        | 121381 |
 | # stars            | 1 |
 
 ## Links

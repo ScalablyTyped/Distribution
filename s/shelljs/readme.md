@@ -10,9 +10,9 @@ Portable Unix shell commands for Node.js
 | ------------------ | :-------------: |
 | Full name          | shelljs |
 | Keywords           | shelljs, bash, unix, shell, makefile, make, jake, synchronous |
-| # releases         | 6 |
-| # dependents       | 6776 |
-| # downloads        | 182608183 |
+| # releases         | 5 |
+| # dependents       | 8367 |
+| # downloads        | 234570958 |
 | # stars            | 432 |
 
 ## Links

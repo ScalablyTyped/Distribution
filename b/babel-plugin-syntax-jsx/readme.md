@@ -10,9 +10,9 @@ Allow parsing of jsx
 | ------------------ | :-------------: |
 | Full name          | babel-plugin-syntax-jsx |
 | Keywords           | babel-plugin |
-| # releases         | 15 |
-| # dependents       | 400 |
-| # downloads        | 114997534 |
+| # releases         | 1 |
+| # dependents       | 454 |
+| # downloads        | 143953542 |
 | # stars            | 2 |
 
 ## Links

@@ -6,23 +6,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PipelineStageAction extends js.Object {
-  var category: Input[String]
-  var configuration: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
-  var inputArtifacts: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  var category: Input[String] = js.native
+  var configuration: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  var inputArtifacts: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The name of the pipeline.
     */
-  var name: Input[String]
-  var outputArtifacts: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
-  var owner: Input[String]
-  var provider: Input[String]
+  var name: Input[String] = js.native
+  var outputArtifacts: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  var owner: Input[String] = js.native
+  var provider: Input[String] = js.native
   /**
     * A service role Amazon Resource Name (ARN) that grants AWS CodePipeline permission to make calls to AWS services on your behalf.
     */
-  var roleArn: js.UndefOr[Input[String]] = js.undefined
-  var runOrder: js.UndefOr[Input[Double]] = js.undefined
-  var version: Input[String]
+  var roleArn: js.UndefOr[Input[String]] = js.native
+  var runOrder: js.UndefOr[Input[Double]] = js.native
+  var version: Input[String] = js.native
 }
 
 object PipelineStageAction {

@@ -5,12 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VpnConnectionVgwTelemetry extends js.Object {
-  var acceptedRouteCount: js.UndefOr[Input[Double]] = js.undefined
-  var lastStatusChange: js.UndefOr[Input[String]] = js.undefined
-  var outsideIpAddress: js.UndefOr[Input[String]] = js.undefined
-  var status: js.UndefOr[Input[String]] = js.undefined
-  var statusMessage: js.UndefOr[Input[String]] = js.undefined
+  var acceptedRouteCount: js.UndefOr[Input[Double]] = js.native
+  var lastStatusChange: js.UndefOr[Input[String]] = js.native
+  var outsideIpAddress: js.UndefOr[Input[String]] = js.native
+  var status: js.UndefOr[Input[String]] = js.native
+  var statusMessage: js.UndefOr[Input[String]] = js.native
 }
 
 object VpnConnectionVgwTelemetry {

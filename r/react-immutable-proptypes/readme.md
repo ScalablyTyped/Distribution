@@ -11,8 +11,8 @@ PropType validators that work with Immutable.js.
 | Full name          | react-immutable-proptypes |
 | Keywords           | react, immutable-js, immutable, immutablejs, proptype |
 | # releases         | 1 |
-| # dependents       | 210 |
-| # downloads        | 6511751 |
+| # dependents       | 227 |
+| # downloads        | 7830576 |
 | # stars            | 24 |
 
 ## Links

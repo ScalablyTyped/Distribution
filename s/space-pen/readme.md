@@ -9,9 +9,9 @@ Write markup on the final frontier
 | ------------------ | :-------------: |
 | Full name          | space-pen |
 | Keywords           | - |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 2352483 |
+| # downloads        | 2046755 |
 | # stars            | 1 |
 
 ## Links

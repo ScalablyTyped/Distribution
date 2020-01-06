@@ -10,9 +10,9 @@ A lightweight implementation of OOP Class in JavaScript
 | ------------------ | :-------------: |
 | Full name          | core-object |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 111 |
-| # downloads        | 20838200 |
+| # releases         | 0 |
+| # dependents       | 114 |
+| # downloads        | 17267624 |
 | # stars            | 0 |
 
 ## Links

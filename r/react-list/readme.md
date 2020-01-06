@@ -10,9 +10,9 @@ A versatile infinite scroll [React] component.
 | ------------------ | :-------------: |
 | Full name          | react-list |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 38 |
-| # downloads        | 1202961 |
+| # releases         | 6 |
+| # dependents       | 53 |
+| # downloads        | 1624338 |
 | # stars            | 7 |
 
 ## Links

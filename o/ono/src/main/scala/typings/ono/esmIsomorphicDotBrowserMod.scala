@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object esmIsomorphicDotBrowserMod extends js.Object {
   val addInspectMethod: `false` = js.native
-  def formatter(args: js.Any*): String = js.native
+  val format: `false` = js.native
 }
 

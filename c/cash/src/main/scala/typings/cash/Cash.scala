@@ -359,14 +359,14 @@ trait Cash extends js.Object {
     */
   def trigger(eventName: String): Cash = js.native
   def trigger(eventName: String, data: js.Any): Cash = js.native
+  def `val`(): Cash = js.native
+  def `val`(value: String): Cash = js.native
   /**
     * val
     * Returns an inputs value. If value is supplied, sets all inputs in collection's value to the value argument.
     */
-  def `val`(): js.Any = js.native
-  def `val`(value: String): Cash = js.native
   @JSName("val")
-  def val_Cash(): Cash = js.native
+  def val_Any(): js.Any = js.native
   /**
     * width
     * Returns the width of the element.

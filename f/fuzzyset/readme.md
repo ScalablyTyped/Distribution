@@ -12,7 +12,7 @@ A fuzzy string set for JavaScript
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 9175 |
+| # downloads        | 24952 |
 | # stars            | 0 |
 
 ## Links

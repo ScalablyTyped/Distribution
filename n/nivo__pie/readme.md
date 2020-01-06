@@ -10,9 +10,9 @@ Typings are for version 0.59.1
 | ------------------ | :-------------: |
 | Full name          | @nivo/pie |
 | Keywords           | nivo, dataviz, react, d3, charts, pie-chart |
-| # releases         | 41 |
-| # dependents       | 7 |
-| # downloads        | 309190 |
+| # releases         | 29 |
+| # dependents       | 15 |
+| # downloads        | 477154 |
 | # stars            | 0 |
 
 ## Links

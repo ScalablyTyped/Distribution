@@ -10,9 +10,9 @@ In-place editing with Twitter Bootstrap, jQuery UI or pure jQuery
 | ------------------ | :-------------: |
 | Full name          | x-editable |
 | Keywords           | - |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 9 |
-| # downloads        | 654001 |
+| # downloads        | 558978 |
 | # stars            | 4 |
 
 ## Links

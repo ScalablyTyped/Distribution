@@ -10,9 +10,9 @@ Provides access to the system's web browser and supports handling redirects. On 
 | ------------------ | :-------------: |
 | Full name          | expo-web-browser |
 | Keywords           | react-native, expo, expo-web-browser, web, browser |
-| # releases         | 5 |
-| # dependents       | 1 |
-| # downloads        | 1149 |
+| # releases         | 15 |
+| # dependents       | 7 |
+| # downloads        | 840875 |
 | # stars            | 0 |
 
 ## Links

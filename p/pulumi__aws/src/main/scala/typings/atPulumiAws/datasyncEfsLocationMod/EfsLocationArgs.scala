@@ -8,23 +8,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EfsLocationArgs extends js.Object {
   /**
     * Configuration block containing EC2 configurations for connecting to the EFS File System.
     */
-  val ec2Config: Input[EfsLocationEc2Config]
+  val ec2Config: Input[EfsLocationEc2Config] = js.native
   /**
     * Amazon Resource Name (ARN) of EFS File System.
     */
-  val efsFileSystemArn: Input[ARN]
+  val efsFileSystemArn: Input[ARN] = js.native
   /**
     * Subdirectory to perform actions as source or destination. Default `/`.
     */
-  val subdirectory: js.UndefOr[Input[String]] = js.undefined
+  val subdirectory: js.UndefOr[Input[String]] = js.native
   /**
     * Key-value pairs of resource tags to assign to the DataSync Location.
     */
-  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object EfsLocationArgs {

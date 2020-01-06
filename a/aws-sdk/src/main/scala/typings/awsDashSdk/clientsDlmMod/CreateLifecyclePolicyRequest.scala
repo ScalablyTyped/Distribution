@@ -4,23 +4,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CreateLifecyclePolicyRequest extends js.Object {
   /**
     * A description of the lifecycle policy. The characters ^[0-9A-Za-z _-]+$ are supported.
     */
-  var Description: PolicyDescription
+  var Description: PolicyDescription = js.native
   /**
     * The Amazon Resource Name (ARN) of the IAM role used to run the operations specified by the lifecycle policy.
     */
-  var ExecutionRoleArn: typings.awsDashSdk.clientsDlmMod.ExecutionRoleArn
+  var ExecutionRoleArn: typings.awsDashSdk.clientsDlmMod.ExecutionRoleArn = js.native
   /**
-    * The configuration details of the lifecycle policy. Target tags cannot be re-used across lifecycle policies.
+    * The configuration details of the lifecycle policy.
     */
-  var PolicyDetails: typings.awsDashSdk.clientsDlmMod.PolicyDetails
+  var PolicyDetails: typings.awsDashSdk.clientsDlmMod.PolicyDetails = js.native
   /**
     * The desired activation state of the lifecycle policy after creation.
     */
-  var State: SettablePolicyStateValues
+  var State: SettablePolicyStateValues = js.native
+  /**
+    * The tags to apply to the lifecycle policy during creation.
+    */
+  var Tags: js.UndefOr[TagMap] = js.native
 }
 
 object CreateLifecyclePolicyRequest {
@@ -29,10 +34,11 @@ object CreateLifecyclePolicyRequest {
     Description: PolicyDescription,
     ExecutionRoleArn: ExecutionRoleArn,
     PolicyDetails: PolicyDetails,
-    State: SettablePolicyStateValues
+    State: SettablePolicyStateValues,
+    Tags: TagMap = null
   ): CreateLifecyclePolicyRequest = {
-    val __obj = js.Dynamic.literal(Description = Description, ExecutionRoleArn = ExecutionRoleArn, PolicyDetails = PolicyDetails, State = State.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal(Description = Description.asInstanceOf[js.Any], ExecutionRoleArn = ExecutionRoleArn.asInstanceOf[js.Any], PolicyDetails = PolicyDetails.asInstanceOf[js.Any], State = State.asInstanceOf[js.Any])
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateLifecyclePolicyRequest]
   }
 }

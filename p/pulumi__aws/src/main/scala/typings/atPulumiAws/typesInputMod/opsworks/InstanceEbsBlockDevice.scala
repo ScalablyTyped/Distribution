@@ -5,13 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InstanceEbsBlockDevice extends js.Object {
-  var deleteOnTermination: js.UndefOr[Input[Boolean]] = js.undefined
-  var deviceName: Input[String]
-  var iops: js.UndefOr[Input[Double]] = js.undefined
-  var snapshotId: js.UndefOr[Input[String]] = js.undefined
-  var volumeSize: js.UndefOr[Input[Double]] = js.undefined
-  var volumeType: js.UndefOr[Input[String]] = js.undefined
+  var deleteOnTermination: js.UndefOr[Input[Boolean]] = js.native
+  var deviceName: Input[String] = js.native
+  var iops: js.UndefOr[Input[Double]] = js.native
+  var snapshotId: js.UndefOr[Input[String]] = js.native
+  var volumeSize: js.UndefOr[Input[Double]] = js.native
+  var volumeType: js.UndefOr[Input[String]] = js.native
 }
 
 object InstanceEbsBlockDevice {

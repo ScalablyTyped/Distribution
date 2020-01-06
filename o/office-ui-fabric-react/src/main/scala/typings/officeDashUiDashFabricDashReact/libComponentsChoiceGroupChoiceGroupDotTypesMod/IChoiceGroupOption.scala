@@ -82,24 +82,25 @@ import scala.scalajs.js.annotation._
 
 trait IChoiceGroupOption extends InputHTMLAttributes[HTMLElement | HTMLInputElement] {
   /**
-    * The aria label of the ChoiceGroupOption for the benefit of screen readers.
+    * Aria label of the option for the benefit of screen reader users.
     */
   var ariaLabel: js.UndefOr[String] = js.undefined
   /**
-    * The Icon component props for choice field
+    * Props for an icon to display with this option.
     */
   var iconProps: js.UndefOr[IIconProps] = js.undefined
   /**
-    * The alt of image for choice field. Defaults to '' if not set.
+    * Alt text if the option is an image.
+    * @default '' (empty string)
     */
   var imageAlt: js.UndefOr[String] = js.undefined
   /**
     * The width and height of the image in px for choice field.
-    * @defaultvalue \{ width: 32, height: 32 \}
+    * @defaultvalue `{ width: 32, height: 32 }`
     */
   var imageSize: js.UndefOr[Anon_HeightWidth] = js.undefined
   /**
-    * The src of image for choice field.
+    * Image to display with this option.
     */
   var imageSrc: js.UndefOr[String] = js.undefined
   /**
@@ -107,18 +108,17 @@ trait IChoiceGroupOption extends InputHTMLAttributes[HTMLElement | HTMLInputElem
     */
   var key: String
   /**
-    * DOM id to tag the ChoiceGroup label with, for reference.
-    * Should be used for 'aria-owns' and other such uses, rather than direct reference for programmatic purposes.
+    * ID used on the option's label.
     */
   var labelId: js.UndefOr[String] = js.undefined
   /**
-    * Optional override of option render
+    * Used to customize option rendering.
     */
   var onRenderField: js.UndefOr[IRenderFunction[IChoiceGroupOption]] = js.undefined
   /**
-    * Optional override of label render
+    * Used to customize label rendering.
     */
-  var onRenderLabel: js.UndefOr[js.Function1[/* option */ IChoiceGroupOption, Element]] = js.undefined
+  var onRenderLabel: js.UndefOr[IRenderFunction[IChoiceGroupOption]] = js.undefined
   /**
     * The src of image for choice field which is selected.
     */
@@ -304,7 +304,7 @@ object IChoiceGroupOption {
     onProgress: SyntheticEvent[HTMLElement | HTMLInputElement, Event] => Unit = null,
     onRateChange: SyntheticEvent[HTMLElement | HTMLInputElement, Event] => Unit = null,
     onRenderField: (/* props */ js.UndefOr[IChoiceGroupOption], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IChoiceGroupOption], Element | Null]]) => Element | Null = null,
-    onRenderLabel: /* option */ IChoiceGroupOption => Element = null,
+    onRenderLabel: (/* props */ js.UndefOr[IChoiceGroupOption], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IChoiceGroupOption], Element | Null]]) => Element | Null = null,
     onReset: FormEvent[HTMLElement | HTMLInputElement] => Unit = null,
     onScroll: UIEvent[HTMLElement | HTMLInputElement] => Unit = null,
     onSeeked: SyntheticEvent[HTMLElement | HTMLInputElement, Event] => Unit = null,
@@ -520,7 +520,7 @@ object IChoiceGroupOption {
     if (onProgress != null) __obj.updateDynamic("onProgress")(js.Any.fromFunction1(onProgress))
     if (onRateChange != null) __obj.updateDynamic("onRateChange")(js.Any.fromFunction1(onRateChange))
     if (onRenderField != null) __obj.updateDynamic("onRenderField")(js.Any.fromFunction2(onRenderField))
-    if (onRenderLabel != null) __obj.updateDynamic("onRenderLabel")(js.Any.fromFunction1(onRenderLabel))
+    if (onRenderLabel != null) __obj.updateDynamic("onRenderLabel")(js.Any.fromFunction2(onRenderLabel))
     if (onReset != null) __obj.updateDynamic("onReset")(js.Any.fromFunction1(onReset))
     if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
     if (onSeeked != null) __obj.updateDynamic("onSeeked")(js.Any.fromFunction1(onSeeked))

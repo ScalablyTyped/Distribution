@@ -10,9 +10,9 @@ A fully accessible and flexible React-powered menu button
 | ------------------ | :-------------: |
 | Full name          | react-aria-menubutton |
 | Keywords           | react, reactjs, react-component, aria, accessibility, menu, dropdown, widget |
-| # releases         | 10 |
-| # dependents       | 20 |
-| # downloads        | 866283 |
+| # releases         | 5 |
+| # dependents       | 26 |
+| # downloads        | 1489769 |
 | # stars            | 1 |
 
 ## Links

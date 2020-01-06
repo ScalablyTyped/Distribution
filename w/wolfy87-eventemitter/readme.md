@@ -10,9 +10,9 @@ Event based JavaScript for the browser
 | ------------------ | :-------------: |
 | Full name          | wolfy87-eventemitter |
 | Keywords           | eventemitter, events, browser, amd |
-| # releases         | 8 |
-| # dependents       | 231 |
-| # downloads        | 2055303 |
+| # releases         | 5 |
+| # dependents       | 278 |
+| # downloads        | 3404255 |
 | # stars            | 6 |
 
 ## Links

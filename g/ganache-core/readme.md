@@ -4,15 +4,15 @@
 Typings are for version 2.8.0
 
 ## Library description:
-[![npm](https://img.shields.io/npm/v/ganache-core.svg)]() [![npm](https://img.shields.io/npm/dm/ganache-core.svg)]() [![Build Status](https://travis-ci.org/trufflesuite/ganache-core.svg?branch=master)](https://travis-ci.org/trufflesuite/ganache-core) [![C
+[![npm Version](https://img.shields.io/npm/v/ganache-core.svg)](https://www.npmjs.com/package/ganache-core) [![npm Downloads](https://img.shields.io/npm/dm/ganache-core.svg)](https://www.npmjs.com/package/ganache-core) [![Build Status](https://travis-ci.o
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | ganache-core |
 | Keywords           | - |
-| # releases         | 57 |
-| # dependents       | 29 |
-| # downloads        | 310993 |
+| # releases         | 61 |
+| # dependents       | 46 |
+| # downloads        | 692542 |
 | # stars            | 0 |
 
 ## Links

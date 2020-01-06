@@ -10,10 +10,10 @@ Unofficial JavaScript SDK for MEGA
 | ------------------ | :-------------: |
 | Full name          | megajs |
 | Keywords           | mega, storage |
-| # releases         | 31 |
+| # releases         | 14 |
 | # dependents       | 7 |
-| # downloads        | 26088 |
-| # stars            | 0 |
+| # downloads        | 23711 |
+| # stars            | 1 |
 
 ## Links
 - [Homepage](https://github.com/qgustavor/mega#readme)

@@ -10,9 +10,9 @@ RSS/Atom/JSON feed parser
 | ------------------ | :-------------: |
 | Full name          | feedme |
 | Keywords           | feed, rss, atom, json, parser |
-| # releases         | 6 |
-| # dependents       | 13 |
-| # downloads        | 140534 |
+| # releases         | 4 |
+| # dependents       | 14 |
+| # downloads        | 166294 |
 | # stars            | 6 |
 
 ## Links

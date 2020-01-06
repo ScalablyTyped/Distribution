@@ -4,21 +4,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DescribeUserRequest extends js.Object {
   /**
     * The unique ID that Amazon MQ generates for the broker.
     */
-  var BrokerId: __string
+  var BrokerId: __string = js.native
   /**
     * The username of the ActiveMQ user. This value can contain only alphanumeric characters, dashes, periods, underscores, and tildes (- . _ ~). This value must be 2-100 characters long.
     */
-  var Username: __string
+  var Username: __string = js.native
 }
 
 object DescribeUserRequest {
   @scala.inline
   def apply(BrokerId: __string, Username: __string): DescribeUserRequest = {
-    val __obj = js.Dynamic.literal(BrokerId = BrokerId, Username = Username)
+    val __obj = js.Dynamic.literal(BrokerId = BrokerId.asInstanceOf[js.Any], Username = Username.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DescribeUserRequest]
   }

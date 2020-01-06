@@ -76,7 +76,7 @@ object templatesExternalExternalSystemMod extends js.Object {
       *
       * @return Iterator to the first element.
       */
-    /* InferMemberOverrides */
+    /* CompleteClass */
     /* InferMemberOverrides */
     override def begin(): typings.tstl.baseIteratorIteratorMod.Iterator[
         ExternalSystemRole, 
@@ -131,14 +131,13 @@ object templatesExternalExternalSystemMod extends js.Object {
       * Test whether container is empty.
       */
     /* InferMemberOverrides */
-    /* InferMemberOverrides */
     override def empty(): Boolean = js.native
     /**
       * Iterator to the end.
       *
       * @return Iterator to the end.
       */
-    /* InferMemberOverrides */
+    /* CompleteClass */
     /* InferMemberOverrides */
     override def end(): typings.tstl.baseIteratorIteratorMod.Iterator[
         ExternalSystemRole, 
@@ -169,7 +168,7 @@ object templatesExternalExternalSystemMod extends js.Object {
       * @param items Items to insert.
       * @return Number of elements in the container after insertion.
       */
-    /* InferMemberOverrides */
+    /* CompleteClass */
     /* InferMemberOverrides */
     override def push(items: ExternalSystemRole*): Double = js.native
     /**
@@ -179,7 +178,6 @@ object templatesExternalExternalSystemMod extends js.Object {
       */
     /* CompleteClass */
     /* InferMemberOverrides */
-    /* InferMemberOverrides */
     override def push_back(`val`: ExternalSystemRole): Unit = js.native
     /**
       * Reverse iterator to the first element in reverse.
@@ -187,7 +185,6 @@ object templatesExternalExternalSystemMod extends js.Object {
       * @return Reverse iterator to the first.
       */
     /* CompleteClass */
-    /* InferMemberOverrides */
     /* InferMemberOverrides */
     override def rbegin(): ReverseIterator[ExternalSystemRole] = js.native
     /* CompleteClass */
@@ -207,7 +204,6 @@ object templatesExternalExternalSystemMod extends js.Object {
       * @return Reverse iterator to the end.
       */
     /* CompleteClass */
-    /* InferMemberOverrides */
     /* InferMemberOverrides */
     override def rend(): ReverseIterator[ExternalSystemRole] = js.native
     /**
@@ -231,8 +227,6 @@ object templatesExternalExternalSystemMod extends js.Object {
     /**
       * Number of elements in the container.
       */
-    /* CompleteClass */
-    /* InferMemberOverrides */
     /* InferMemberOverrides */
     override def size(): Double = js.native
   }

@@ -10,9 +10,9 @@ OpenID 1.1/2.0 library for node.js
 | ------------------ | :-------------: |
 | Full name          | openid |
 | Keywords           | openid, auth, authentication, identity, identifier, relying, party, 1.1, 2.0, library |
-| # releases         | 1 |
-| # dependents       | 35 |
-| # downloads        | 460745 |
+| # releases         | 0 |
+| # dependents       | 36 |
+| # downloads        | 546345 |
 | # stars            | 6 |
 
 ## Links

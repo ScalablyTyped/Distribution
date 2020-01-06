@@ -10,9 +10,9 @@ Easily add and manipulate loading states of any element on the page
 | ------------------ | :-------------: |
 | Full name          | jquery-easy-loading |
 | Keywords           | jquery, jquery-plugin, ecosystem:jquery, overlay, loading, loader, ajax |
-| # releases         | 2 |
+| # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 12816 |
+| # downloads        | 20579 |
 | # stars            | 0 |
 
 ## Links

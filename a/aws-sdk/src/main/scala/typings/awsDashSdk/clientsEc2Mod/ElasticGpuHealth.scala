@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ElasticGpuHealth extends js.Object {
   /**
     * The health status.
     */
-  var Status: js.UndefOr[ElasticGpuStatus] = js.undefined
+  var Status: js.UndefOr[ElasticGpuStatus] = js.native
 }
 
 object ElasticGpuHealth {

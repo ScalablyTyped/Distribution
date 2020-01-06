@@ -4,21 +4,21 @@
 Typings are for version 1.1.3
 
 ## Library description:
-Check if a string is lower cased
+Returns `true` if the string is lower case only
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | is-lower-case |
-| Keywords           | cases, lower, lowercase, check |
-| # releases         | 1 |
-| # dependents       | 2 |
-| # downloads        | 23878177 |
+| Keywords           | is, lower, case, check, boolean |
+| # releases         | 3 |
+| # dependents       | 1 |
+| # downloads        | 40884455 |
 | # stars            | 1 |
 
 ## Links
-- [Homepage](https://github.com/blakeembrey/is-lower-case)
-- [Bugs](https://github.com/blakeembrey/is-lower-case/issues)
-- [Repository](https://github.com/blakeembrey/is-lower-case)
+- [Homepage](https://github.com/blakeembrey/change-case/tree/master/packages/is-lower-case#readme)
+- [Bugs](https://github.com/blakeembrey/change-case/issues)
+- [Repository](https://github.com/blakeembrey/change-case)
 - [Npm](https://www.npmjs.com/package/is-lower-case)
     
 

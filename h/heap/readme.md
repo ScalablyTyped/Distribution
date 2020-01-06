@@ -10,9 +10,9 @@ binary heap (priority queue) algorithms (ported from Python's heapq module)
 | ------------------ | :-------------: |
 | Full name          | heap |
 | Keywords           | algorithm, data structure, heap |
-| # releases         | 1 |
-| # dependents       | 78 |
-| # downloads        | 2432292 |
+| # releases         | 0 |
+| # dependents       | 94 |
+| # downloads        | 4664624 |
 | # stars            | 7 |
 
 ## Links

@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UpdateThingShadowResponse extends js.Object {
   /**
     * The state information, in JSON format.
     */
-  var payload: js.UndefOr[JsonDocument] = js.undefined
+  var payload: js.UndefOr[JsonDocument] = js.native
 }
 
 object UpdateThingShadowResponse {

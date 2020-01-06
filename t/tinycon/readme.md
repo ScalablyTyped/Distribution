@@ -10,9 +10,9 @@ Add notification bubbles in the favicon
 | ------------------ | :-------------: |
 | Full name          | tinycon |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 242640 |
+| # downloads        | 209780 |
 | # stars            | 2 |
 
 ## Links

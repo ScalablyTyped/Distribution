@@ -4,39 +4,40 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UpdateClusterRequest extends js.Object {
   /**
     * The ID of the updated Address object.
     */
-  var AddressId: js.UndefOr[typings.awsDashSdk.clientsSnowballMod.AddressId] = js.undefined
+  var AddressId: js.UndefOr[typings.awsDashSdk.clientsSnowballMod.AddressId] = js.native
   /**
     * The cluster ID of the cluster that you want to update, for example CID123e4567-e89b-12d3-a456-426655440000.
     */
-  var ClusterId: typings.awsDashSdk.clientsSnowballMod.ClusterId
+  var ClusterId: typings.awsDashSdk.clientsSnowballMod.ClusterId = js.native
   /**
     * The updated description of this cluster.
     */
-  var Description: js.UndefOr[String] = js.undefined
+  var Description: js.UndefOr[String] = js.native
   /**
     * The updated ID for the forwarding address for a cluster. This field is not supported in most regions.
     */
-  var ForwardingAddressId: js.UndefOr[AddressId] = js.undefined
+  var ForwardingAddressId: js.UndefOr[AddressId] = js.native
   /**
     * The new or updated Notification object.
     */
-  var Notification: js.UndefOr[typings.awsDashSdk.clientsSnowballMod.Notification] = js.undefined
+  var Notification: js.UndefOr[typings.awsDashSdk.clientsSnowballMod.Notification] = js.native
   /**
     * The updated arrays of JobResource objects that can include updated S3Resource objects or LambdaResource objects.
     */
-  var Resources: js.UndefOr[JobResource] = js.undefined
+  var Resources: js.UndefOr[JobResource] = js.native
   /**
     * The new role Amazon Resource Name (ARN) that you want to associate with this cluster. To create a role ARN, use the CreateRole API action in AWS Identity and Access Management (IAM).
     */
-  var RoleARN: js.UndefOr[typings.awsDashSdk.clientsSnowballMod.RoleARN] = js.undefined
+  var RoleARN: js.UndefOr[typings.awsDashSdk.clientsSnowballMod.RoleARN] = js.native
   /**
     * The updated shipping option value of this cluster's ShippingDetails object.
     */
-  var ShippingOption: js.UndefOr[typings.awsDashSdk.clientsSnowballMod.ShippingOption] = js.undefined
+  var ShippingOption: js.UndefOr[typings.awsDashSdk.clientsSnowballMod.ShippingOption] = js.native
 }
 
 object UpdateClusterRequest {
@@ -51,13 +52,13 @@ object UpdateClusterRequest {
     RoleARN: RoleARN = null,
     ShippingOption: ShippingOption = null
   ): UpdateClusterRequest = {
-    val __obj = js.Dynamic.literal(ClusterId = ClusterId)
-    if (AddressId != null) __obj.updateDynamic("AddressId")(AddressId)
-    if (Description != null) __obj.updateDynamic("Description")(Description)
-    if (ForwardingAddressId != null) __obj.updateDynamic("ForwardingAddressId")(ForwardingAddressId)
-    if (Notification != null) __obj.updateDynamic("Notification")(Notification)
-    if (Resources != null) __obj.updateDynamic("Resources")(Resources)
-    if (RoleARN != null) __obj.updateDynamic("RoleARN")(RoleARN)
+    val __obj = js.Dynamic.literal(ClusterId = ClusterId.asInstanceOf[js.Any])
+    if (AddressId != null) __obj.updateDynamic("AddressId")(AddressId.asInstanceOf[js.Any])
+    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (ForwardingAddressId != null) __obj.updateDynamic("ForwardingAddressId")(ForwardingAddressId.asInstanceOf[js.Any])
+    if (Notification != null) __obj.updateDynamic("Notification")(Notification.asInstanceOf[js.Any])
+    if (Resources != null) __obj.updateDynamic("Resources")(Resources.asInstanceOf[js.Any])
+    if (RoleARN != null) __obj.updateDynamic("RoleARN")(RoleARN.asInstanceOf[js.Any])
     if (ShippingOption != null) __obj.updateDynamic("ShippingOption")(ShippingOption.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateClusterRequest]
   }

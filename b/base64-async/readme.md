@@ -10,9 +10,9 @@ Non-blocking chunked Base64 encoding
 | ------------------ | :-------------: |
 | Full name          | base64-async |
 | Keywords           | async, asynchronous, non-blocking, base64, encode, decode |
-| # releases         | 10 |
-| # dependents       | 1 |
-| # downloads        | 5409 |
+| # releases         | 0 |
+| # dependents       | 0 |
+| # downloads        | 7161 |
 | # stars            | 4 |
 
 ## Links

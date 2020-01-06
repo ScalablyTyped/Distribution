@@ -12,7 +12,7 @@ Add a leading zero to a number.
 | Keywords           | zero, leading, places, decimal, number, format, formatter, digits |
 | # releases         | 0 |
 | # dependents       | 12 |
-| # downloads        | 68632 |
+| # downloads        | 137064 |
 | # stars            | 1 |
 
 ## Links

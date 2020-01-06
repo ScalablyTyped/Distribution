@@ -4,15 +4,15 @@
 Typings are for version v0.7.0
 
 ## Library description:
-The same old headroom simplified
+Minimal implementation of headroom.js
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | headroom |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 38 |
+| # downloads        | 490 |
 | # stars            | 0 |
 
 ## Links

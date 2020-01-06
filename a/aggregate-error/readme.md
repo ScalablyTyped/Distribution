@@ -9,10 +9,10 @@ Create an error from multiple errors
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | aggregate-error |
-| Keywords           | aggregate, error, err, combine, multiple, many, collection, iterable, iterator |
-| # releases         | 5 |
-| # dependents       | 43 |
-| # downloads        | 10808797 |
+| Keywords           | aggregate, error, combine, multiple, many, collection, iterable, iterator |
+| # releases         | 6 |
+| # dependents       | 71 |
+| # downloads        | 45789558 |
 | # stars            | 0 |
 
 ## Links

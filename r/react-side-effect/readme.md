@@ -11,8 +11,8 @@ Create components whose prop changes map to a global side effect
 | Full name          | react-side-effect |
 | Keywords           | react, component, side, effect |
 | # releases         | 6 |
-| # dependents       | 71 |
-| # downloads        | 23146596 |
+| # dependents       | 80 |
+| # downloads        | 35370636 |
 | # stars            | 4 |
 
 ## Links

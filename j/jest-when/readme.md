@@ -10,9 +10,9 @@ An extension lib for jest
 | ------------------ | :-------------: |
 | Full name          | jest-when |
 | Keywords           | - |
-| # releases         | 9 |
+| # releases         | 16 |
 | # dependents       | 1 |
-| # downloads        | 138164 |
+| # downloads        | 701204 |
 | # stars            | 0 |
 
 ## Links

@@ -10,10 +10,10 @@ A powerful templating engine with inheritance, asynchronous control, and more (j
 | ------------------ | :-------------: |
 | Full name          | nunjucks |
 | Keywords           | template, templating |
-| # releases         | 11 |
-| # dependents       | 1020 |
-| # downloads        | 6068563 |
-| # stars            | 52 |
+| # releases         | 10 |
+| # dependents       | 1188 |
+| # downloads        | 9427214 |
+| # stars            | 53 |
 
 ## Links
 - [Homepage](https://github.com/mozilla/nunjucks#readme)

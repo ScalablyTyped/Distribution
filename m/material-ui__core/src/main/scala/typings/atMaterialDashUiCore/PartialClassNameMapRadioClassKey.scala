@@ -5,13 +5,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/Radio/Radio.RadioClassKey>> */
+@js.native
 trait PartialClassNameMapRadioClassKey extends js.Object {
-  var checked: js.UndefOr[String] = js.undefined
-  var colorPrimary: js.UndefOr[String] = js.undefined
-  var colorSecondary: js.UndefOr[String] = js.undefined
-  var disabled: js.UndefOr[String] = js.undefined
-  var input: js.UndefOr[String] = js.undefined
-  var root: js.UndefOr[String] = js.undefined
+  var checked: js.UndefOr[String] = js.native
+  var colorPrimary: js.UndefOr[String] = js.native
+  var colorSecondary: js.UndefOr[String] = js.native
+  var disabled: js.UndefOr[String] = js.native
+  var input: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.native
 }
 
 object PartialClassNameMapRadioClassKey {

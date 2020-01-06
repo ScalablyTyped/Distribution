@@ -11,8 +11,8 @@ grab bag of easing equations
 | Full name          | eases |
 | Keywords           | ease, eases, robert, penner, easing, easings, linear, lerp, animation, tween, anim, animations, tweening, tweens, function, functions, expo, quint, quadratic |
 | # releases         | 1 |
-| # dependents       | 43 |
-| # downloads        | 387230 |
+| # dependents       | 46 |
+| # downloads        | 452811 |
 | # stars            | 11 |
 
 ## Links

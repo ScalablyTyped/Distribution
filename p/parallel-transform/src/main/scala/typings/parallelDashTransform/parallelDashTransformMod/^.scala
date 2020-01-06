@@ -26,12 +26,12 @@ class ^ protected () extends Transform {
 @js.native
 object ^
   extends TopLevel[
-      (Instantiable3[/* maxParallel */ Double, /* opts */ Options, /* ontransform */ OnTransform, Transform]) with (Instantiable3[
+      (Instantiable1[/* ontransform */ OnTransform, Transform]) with (Instantiable2[/* opts */ js.UndefOr[scala.Nothing], /* ontransform */ OnTransform, Transform]) with (Instantiable2[/* opts */ Double, /* ontransform */ OnTransform, Transform]) with (Instantiable2[/* opts */ Null, /* ontransform */ OnTransform, Transform]) with (Instantiable2[/* opts */ Options, /* ontransform */ OnTransform, Transform]) with (Instantiable3[
         /* maxParallel */ Double, 
         /* opts */ js.UndefOr[scala.Nothing], 
         /* ontransform */ OnTransform, 
         Transform
-      ]) with (Instantiable3[/* maxParallel */ Double, /* opts */ Null, /* ontransform */ OnTransform, Transform]) with (Instantiable2[/* opts */ Options, /* ontransform */ OnTransform, Transform]) with (Instantiable2[/* opts */ Double, /* ontransform */ OnTransform, Transform]) with (Instantiable2[/* opts */ js.UndefOr[scala.Nothing], /* ontransform */ OnTransform, Transform]) with (Instantiable2[/* opts */ Null, /* ontransform */ OnTransform, Transform]) with (Instantiable1[/* ontransform */ OnTransform, Transform])
+      ]) with (Instantiable3[/* maxParallel */ Double, /* opts */ Null, /* ontransform */ OnTransform, Transform]) with (Instantiable3[/* maxParallel */ Double, /* opts */ Options, /* ontransform */ OnTransform, Transform])
     ] {
   def apply(maxParallel: Double, opts: js.UndefOr[scala.Nothing], ontransform: OnTransform): Transform = js.native
   def apply(maxParallel: Double, opts: Null, ontransform: OnTransform): Transform = js.native

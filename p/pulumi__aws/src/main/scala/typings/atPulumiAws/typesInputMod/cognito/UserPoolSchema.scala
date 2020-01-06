@@ -5,35 +5,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UserPoolSchema extends js.Object {
   /**
     * The attribute data type. Must be one of `Boolean`, `Number`, `String`, `DateTime`.
     */
-  var attributeDataType: Input[String]
+  var attributeDataType: Input[String] = js.native
   /**
     * Specifies whether the attribute type is developer only.
     */
-  var developerOnlyAttribute: js.UndefOr[Input[Boolean]] = js.undefined
+  var developerOnlyAttribute: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Specifies whether the attribute can be changed once it has been created.
     */
-  var mutable: js.UndefOr[Input[Boolean]] = js.undefined
+  var mutable: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The name of the attribute.
     */
-  var name: Input[String]
+  var name: Input[String] = js.native
   /**
     * Specifies the constraints for an attribute of the number type.
     */
-  var numberAttributeConstraints: js.UndefOr[Input[UserPoolSchemaNumberAttributeConstraints]] = js.undefined
+  var numberAttributeConstraints: js.UndefOr[Input[UserPoolSchemaNumberAttributeConstraints]] = js.native
   /**
     * Specifies whether a user pool attribute is required. If the attribute is required and the user does not provide a value, registration or sign-in will fail.
     */
-  var required: js.UndefOr[Input[Boolean]] = js.undefined
+  var required: js.UndefOr[Input[Boolean]] = js.native
   /**
     * -Specifies the constraints for an attribute of the string type.
     */
-  var stringAttributeConstraints: js.UndefOr[Input[UserPoolSchemaStringAttributeConstraints]] = js.undefined
+  var stringAttributeConstraints: js.UndefOr[Input[UserPoolSchemaStringAttributeConstraints]] = js.native
 }
 
 object UserPoolSchema {

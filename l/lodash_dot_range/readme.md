@@ -11,8 +11,8 @@ The lodash method `_.range` exported as a module.
 | Full name          | lodash.range |
 | Keywords           | lodash-modularized, range |
 | # releases         | 0 |
-| # dependents       | 111 |
-| # downloads        | 3594029 |
+| # dependents       | 135 |
+| # downloads        | 3233318 |
 | # stars            | 0 |
 
 ## Links

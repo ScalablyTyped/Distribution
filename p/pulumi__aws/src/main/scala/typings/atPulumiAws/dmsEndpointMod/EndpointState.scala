@@ -8,75 +8,76 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EndpointState extends js.Object {
   /**
     * The Amazon Resource Name (ARN) for the certificate.
     */
-  val certificateArn: js.UndefOr[Input[String]] = js.undefined
+  val certificateArn: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the endpoint database.
     */
-  val databaseName: js.UndefOr[Input[String]] = js.undefined
+  val databaseName: js.UndefOr[Input[String]] = js.native
   /**
     * The Amazon Resource Name (ARN) for the endpoint.
     */
-  val endpointArn: js.UndefOr[Input[String]] = js.undefined
+  val endpointArn: js.UndefOr[Input[String]] = js.native
   /**
     * The database endpoint identifier.
     */
-  val endpointId: js.UndefOr[Input[String]] = js.undefined
+  val endpointId: js.UndefOr[Input[String]] = js.native
   /**
     * The type of endpoint. Can be one of `source | target`.
     */
-  val endpointType: js.UndefOr[Input[String]] = js.undefined
+  val endpointType: js.UndefOr[Input[String]] = js.native
   /**
     * The type of engine for the endpoint. Can be one of `aurora | azuredb | db2 | docdb | dynamodb | mariadb | mongodb | mysql | oracle | postgres | redshift | s3 | sqlserver | sybase`.
     */
-  val engineName: js.UndefOr[Input[String]] = js.undefined
+  val engineName: js.UndefOr[Input[String]] = js.native
   /**
     * Additional attributes associated with the connection. For available attributes see [Using Extra Connection Attributes with AWS Database Migration Service](http://docs.aws.amazon.com/dms/latest/userguide/CHAP_Introduction.ConnectionAttributes.html).
     */
-  val extraConnectionAttributes: js.UndefOr[Input[String]] = js.undefined
+  val extraConnectionAttributes: js.UndefOr[Input[String]] = js.native
   /**
     * The Amazon Resource Name (ARN) for the KMS key that will be used to encrypt the connection parameters. If you do not specify a value for `kmsKeyArn`, then AWS DMS will use your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS region.
     */
-  val kmsKeyArn: js.UndefOr[Input[String]] = js.undefined
+  val kmsKeyArn: js.UndefOr[Input[String]] = js.native
   /**
     * Settings for the source MongoDB endpoint. Available settings are `authType` (default: `password`), `authMechanism` (default: `default`), `nestingLevel` (default: `none`), `extractDocId` (default: `false`), `docsToInvestigate` (default: `1000`) and `authSource` (default: `admin`). For more details, see [Using MongoDB as a Source for AWS DMS](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Source.MongoDB.html).
     */
-  val mongodbSettings: js.UndefOr[Input[EndpointMongodbSettings]] = js.undefined
+  val mongodbSettings: js.UndefOr[Input[EndpointMongodbSettings]] = js.native
   /**
     * The password to be used to login to the endpoint database.
     */
-  val password: js.UndefOr[Input[String]] = js.undefined
+  val password: js.UndefOr[Input[String]] = js.native
   /**
     * The port used by the endpoint database.
     */
-  val port: js.UndefOr[Input[Double]] = js.undefined
+  val port: js.UndefOr[Input[Double]] = js.native
   /**
     * Settings for the target S3 endpoint. Available settings are `serviceAccessRoleArn`, `externalTableDefinition`, `csvRowDelimiter` (default: `\\n`), `csvDelimiter` (default: `,`), `bucketFolder`, `bucketName` and `compressionType` (default: `NONE`). For more details, see [Using Amazon S3 as a Target for AWS Database Migration Service](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Target.S3.html).
     */
-  val s3Settings: js.UndefOr[Input[EndpointS3Settings]] = js.undefined
+  val s3Settings: js.UndefOr[Input[EndpointS3Settings]] = js.native
   /**
     * The host name of the server.
     */
-  val serverName: js.UndefOr[Input[String]] = js.undefined
+  val serverName: js.UndefOr[Input[String]] = js.native
   /**
     * The Amazon Resource Name (ARN) used by the service access IAM role for dynamodb endpoints.
     */
-  val serviceAccessRole: js.UndefOr[Input[String]] = js.undefined
+  val serviceAccessRole: js.UndefOr[Input[String]] = js.native
   /**
     * The SSL mode to use for the connection. Can be one of `none | require | verify-ca | verify-full`
     */
-  val sslMode: js.UndefOr[Input[String]] = js.undefined
+  val sslMode: js.UndefOr[Input[String]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * The user name to be used to login to the endpoint database.
     */
-  val username: js.UndefOr[Input[String]] = js.undefined
+  val username: js.UndefOr[Input[String]] = js.native
 }
 
 object EndpointState {

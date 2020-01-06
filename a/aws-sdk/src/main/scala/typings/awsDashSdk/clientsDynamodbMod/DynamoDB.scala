@@ -55,12 +55,12 @@ trait DynamoDB extends DynamoDBCustomizations {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateBackupOutput, Unit]
   ): Request[CreateBackupOutput, AWSError] = js.native
   /**
-    * Creates a global table from an existing table. A global table creates a replication relationship between two or more DynamoDB tables with the same table name in the provided Regions.  If you want to add a new replica table to a global table, each of the following conditions must be true:   The table must have the same primary key as all of the other replicas.   The table must have the same name as all of the other replicas.   The table must have DynamoDB Streams enabled, with the stream containing both the new and the old images of the item.   None of the replica tables in the global table can contain any data.    If global secondary indexes are specified, then the following conditions must also be met:     The global secondary indexes must have the same name.     The global secondary indexes must have the same hash key and sort key (if present).      Write capacity settings should be set consistently across your replica tables and secondary indexes. DynamoDB strongly recommends enabling auto scaling to manage the write capacity settings for all of your global tables replicas and indexes.   If you prefer to manage write capacity settings manually, you should provision equal replicated write capacity units to your replica tables. You should also provision equal replicated write capacity units to matching secondary indexes across your global table.  
+    * Creates a global table from an existing table. A global table creates a replication relationship between two or more DynamoDB tables with the same table name in the provided Regions.   This method only applies to Version 2017.11.29 of global tables.  If you want to add a new replica table to a global table, each of the following conditions must be true:   The table must have the same primary key as all of the other replicas.   The table must have the same name as all of the other replicas.   The table must have DynamoDB Streams enabled, with the stream containing both the new and the old images of the item.   None of the replica tables in the global table can contain any data.    If global secondary indexes are specified, then the following conditions must also be met:     The global secondary indexes must have the same name.     The global secondary indexes must have the same hash key and sort key (if present).      Write capacity settings should be set consistently across your replica tables and secondary indexes. DynamoDB strongly recommends enabling auto scaling to manage the write capacity settings for all of your global tables replicas and indexes.   If you prefer to manage write capacity settings manually, you should provision equal replicated write capacity units to your replica tables. You should also provision equal replicated write capacity units to matching secondary indexes across your global table.  
     */
   def createGlobalTable(): Request[CreateGlobalTableOutput, AWSError] = js.native
   def createGlobalTable(callback: js.Function2[/* err */ AWSError, /* data */ CreateGlobalTableOutput, Unit]): Request[CreateGlobalTableOutput, AWSError] = js.native
   /**
-    * Creates a global table from an existing table. A global table creates a replication relationship between two or more DynamoDB tables with the same table name in the provided Regions.  If you want to add a new replica table to a global table, each of the following conditions must be true:   The table must have the same primary key as all of the other replicas.   The table must have the same name as all of the other replicas.   The table must have DynamoDB Streams enabled, with the stream containing both the new and the old images of the item.   None of the replica tables in the global table can contain any data.    If global secondary indexes are specified, then the following conditions must also be met:     The global secondary indexes must have the same name.     The global secondary indexes must have the same hash key and sort key (if present).      Write capacity settings should be set consistently across your replica tables and secondary indexes. DynamoDB strongly recommends enabling auto scaling to manage the write capacity settings for all of your global tables replicas and indexes.   If you prefer to manage write capacity settings manually, you should provision equal replicated write capacity units to your replica tables. You should also provision equal replicated write capacity units to matching secondary indexes across your global table.  
+    * Creates a global table from an existing table. A global table creates a replication relationship between two or more DynamoDB tables with the same table name in the provided Regions.   This method only applies to Version 2017.11.29 of global tables.  If you want to add a new replica table to a global table, each of the following conditions must be true:   The table must have the same primary key as all of the other replicas.   The table must have the same name as all of the other replicas.   The table must have DynamoDB Streams enabled, with the stream containing both the new and the old images of the item.   None of the replica tables in the global table can contain any data.    If global secondary indexes are specified, then the following conditions must also be met:     The global secondary indexes must have the same name.     The global secondary indexes must have the same hash key and sort key (if present).      Write capacity settings should be set consistently across your replica tables and secondary indexes. DynamoDB strongly recommends enabling auto scaling to manage the write capacity settings for all of your global tables replicas and indexes.   If you prefer to manage write capacity settings manually, you should provision equal replicated write capacity units to your replica tables. You should also provision equal replicated write capacity units to matching secondary indexes across your global table.  
     */
   def createGlobalTable(params: CreateGlobalTableInput): Request[CreateGlobalTableOutput, AWSError] = js.native
   def createGlobalTable(
@@ -146,6 +146,19 @@ trait DynamoDB extends DynamoDBCustomizations {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeContinuousBackupsOutput, Unit]
   ): Request[DescribeContinuousBackupsOutput, AWSError] = js.native
   /**
+    * Returns information about contributor insights, for a given table or global secondary index.
+    */
+  def describeContributorInsights(): Request[DescribeContributorInsightsOutput, AWSError] = js.native
+  def describeContributorInsights(callback: js.Function2[/* err */ AWSError, /* data */ DescribeContributorInsightsOutput, Unit]): Request[DescribeContributorInsightsOutput, AWSError] = js.native
+  /**
+    * Returns information about contributor insights, for a given table or global secondary index.
+    */
+  def describeContributorInsights(params: DescribeContributorInsightsInput): Request[DescribeContributorInsightsOutput, AWSError] = js.native
+  def describeContributorInsights(
+    params: DescribeContributorInsightsInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeContributorInsightsOutput, Unit]
+  ): Request[DescribeContributorInsightsOutput, AWSError] = js.native
+  /**
     * Returns the regional endpoint information.
     */
   def describeEndpoints(): Request[DescribeEndpointsResponse, AWSError] = js.native
@@ -159,12 +172,12 @@ trait DynamoDB extends DynamoDBCustomizations {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeEndpointsResponse, Unit]
   ): Request[DescribeEndpointsResponse, AWSError] = js.native
   /**
-    * Returns information about the specified global table.
+    * Returns information about the specified global table.  This method only applies to Version 2017.11.29 of global tables. 
     */
   def describeGlobalTable(): Request[DescribeGlobalTableOutput, AWSError] = js.native
   def describeGlobalTable(callback: js.Function2[/* err */ AWSError, /* data */ DescribeGlobalTableOutput, Unit]): Request[DescribeGlobalTableOutput, AWSError] = js.native
   /**
-    * Returns information about the specified global table.
+    * Returns information about the specified global table.  This method only applies to Version 2017.11.29 of global tables. 
     */
   def describeGlobalTable(params: DescribeGlobalTableInput): Request[DescribeGlobalTableOutput, AWSError] = js.native
   def describeGlobalTable(
@@ -172,12 +185,12 @@ trait DynamoDB extends DynamoDBCustomizations {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeGlobalTableOutput, Unit]
   ): Request[DescribeGlobalTableOutput, AWSError] = js.native
   /**
-    * Describes Region-specific settings for a global table.
+    * Describes Region-specific settings for a global table.  This method only applies to Version 2017.11.29 of global tables. 
     */
   def describeGlobalTableSettings(): Request[DescribeGlobalTableSettingsOutput, AWSError] = js.native
   def describeGlobalTableSettings(callback: js.Function2[/* err */ AWSError, /* data */ DescribeGlobalTableSettingsOutput, Unit]): Request[DescribeGlobalTableSettingsOutput, AWSError] = js.native
   /**
-    * Describes Region-specific settings for a global table.
+    * Describes Region-specific settings for a global table.  This method only applies to Version 2017.11.29 of global tables. 
     */
   def describeGlobalTableSettings(params: DescribeGlobalTableSettingsInput): Request[DescribeGlobalTableSettingsOutput, AWSError] = js.native
   def describeGlobalTableSettings(
@@ -210,6 +223,19 @@ trait DynamoDB extends DynamoDBCustomizations {
     params: DescribeTableInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeTableOutput, Unit]
   ): Request[DescribeTableOutput, AWSError] = js.native
+  /**
+    * Describes auto scaling settings across replicas of the global table at once.  This method only applies to Version 2019.11.21 of global tables. 
+    */
+  def describeTableReplicaAutoScaling(): Request[DescribeTableReplicaAutoScalingOutput, AWSError] = js.native
+  def describeTableReplicaAutoScaling(callback: js.Function2[/* err */ AWSError, /* data */ DescribeTableReplicaAutoScalingOutput, Unit]): Request[DescribeTableReplicaAutoScalingOutput, AWSError] = js.native
+  /**
+    * Describes auto scaling settings across replicas of the global table at once.  This method only applies to Version 2019.11.21 of global tables. 
+    */
+  def describeTableReplicaAutoScaling(params: DescribeTableReplicaAutoScalingInput): Request[DescribeTableReplicaAutoScalingOutput, AWSError] = js.native
+  def describeTableReplicaAutoScaling(
+    params: DescribeTableReplicaAutoScalingInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeTableReplicaAutoScalingOutput, Unit]
+  ): Request[DescribeTableReplicaAutoScalingOutput, AWSError] = js.native
   /**
     * Gives a description of the Time to Live (TTL) status on the specified table. 
     */
@@ -247,12 +273,25 @@ trait DynamoDB extends DynamoDBCustomizations {
     callback: js.Function2[/* err */ AWSError, /* data */ ListBackupsOutput, Unit]
   ): Request[ListBackupsOutput, AWSError] = js.native
   /**
-    * Lists all global tables that have a replica in the specified Region.
+    * Returns a list of ContributorInsightsSummary for a table and all its global secondary indexes.
+    */
+  def listContributorInsights(): Request[ListContributorInsightsOutput, AWSError] = js.native
+  def listContributorInsights(callback: js.Function2[/* err */ AWSError, /* data */ ListContributorInsightsOutput, Unit]): Request[ListContributorInsightsOutput, AWSError] = js.native
+  /**
+    * Returns a list of ContributorInsightsSummary for a table and all its global secondary indexes.
+    */
+  def listContributorInsights(params: ListContributorInsightsInput): Request[ListContributorInsightsOutput, AWSError] = js.native
+  def listContributorInsights(
+    params: ListContributorInsightsInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListContributorInsightsOutput, Unit]
+  ): Request[ListContributorInsightsOutput, AWSError] = js.native
+  /**
+    * Lists all global tables that have a replica in the specified Region.  This method only applies to Version 2017.11.29 of global tables. 
     */
   def listGlobalTables(): Request[ListGlobalTablesOutput, AWSError] = js.native
   def listGlobalTables(callback: js.Function2[/* err */ AWSError, /* data */ ListGlobalTablesOutput, Unit]): Request[ListGlobalTablesOutput, AWSError] = js.native
   /**
-    * Lists all global tables that have a replica in the specified Region.
+    * Lists all global tables that have a replica in the specified Region.  This method only applies to Version 2017.11.29 of global tables. 
     */
   def listGlobalTables(params: ListGlobalTablesInput): Request[ListGlobalTablesOutput, AWSError] = js.native
   def listGlobalTables(
@@ -352,12 +391,12 @@ trait DynamoDB extends DynamoDBCustomizations {
   def tagResource(params: TagResourceInput): Request[js.Object, AWSError] = js.native
   def tagResource(params: TagResourceInput, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    *  TransactGetItems is a synchronous operation that atomically retrieves multiple items from one or more tables (but not from indexes) in a single account and Region. A TransactGetItems call can contain up to 25 TransactGetItem objects, each of which contains a Get structure that specifies an item to retrieve from a table in the account and Region. A call to TransactGetItems cannot retrieve items from tables in more than one AWS account or Region. The aggregate size of the items in the transaction cannot exceed 4 MB.  All AWS Regions and AWS GovCloud (US) support up to 25 items per transaction with up to 4 MB of data, except the following AWS Regions:    China (Beijing)   China (Ningxia)   The China (Beijing) and China (Ningxia) Regions support up to 10 items per transaction with up to 4 MB of data.   DynamoDB rejects the entire TransactGetItems request if any of the following is true:   A conflicting operation is in the process of updating an item to be read.   There is insufficient provisioned capacity for the transaction to be completed.   There is a user error, such as an invalid data format.   The aggregate size of the items in the transaction cannot exceed 4 MB.  
+    *  TransactGetItems is a synchronous operation that atomically retrieves multiple items from one or more tables (but not from indexes) in a single account and Region. A TransactGetItems call can contain up to 25 TransactGetItem objects, each of which contains a Get structure that specifies an item to retrieve from a table in the account and Region. A call to TransactGetItems cannot retrieve items from tables in more than one AWS account or Region. The aggregate size of the items in the transaction cannot exceed 4 MB. DynamoDB rejects the entire TransactGetItems request if any of the following is true:   A conflicting operation is in the process of updating an item to be read.   There is insufficient provisioned capacity for the transaction to be completed.   There is a user error, such as an invalid data format.   The aggregate size of the items in the transaction cannot exceed 4 MB.  
     */
   def transactGetItems(): Request[TransactGetItemsOutput, AWSError] = js.native
   def transactGetItems(callback: js.Function2[/* err */ AWSError, /* data */ TransactGetItemsOutput, Unit]): Request[TransactGetItemsOutput, AWSError] = js.native
   /**
-    *  TransactGetItems is a synchronous operation that atomically retrieves multiple items from one or more tables (but not from indexes) in a single account and Region. A TransactGetItems call can contain up to 25 TransactGetItem objects, each of which contains a Get structure that specifies an item to retrieve from a table in the account and Region. A call to TransactGetItems cannot retrieve items from tables in more than one AWS account or Region. The aggregate size of the items in the transaction cannot exceed 4 MB.  All AWS Regions and AWS GovCloud (US) support up to 25 items per transaction with up to 4 MB of data, except the following AWS Regions:    China (Beijing)   China (Ningxia)   The China (Beijing) and China (Ningxia) Regions support up to 10 items per transaction with up to 4 MB of data.   DynamoDB rejects the entire TransactGetItems request if any of the following is true:   A conflicting operation is in the process of updating an item to be read.   There is insufficient provisioned capacity for the transaction to be completed.   There is a user error, such as an invalid data format.   The aggregate size of the items in the transaction cannot exceed 4 MB.  
+    *  TransactGetItems is a synchronous operation that atomically retrieves multiple items from one or more tables (but not from indexes) in a single account and Region. A TransactGetItems call can contain up to 25 TransactGetItem objects, each of which contains a Get structure that specifies an item to retrieve from a table in the account and Region. A call to TransactGetItems cannot retrieve items from tables in more than one AWS account or Region. The aggregate size of the items in the transaction cannot exceed 4 MB. DynamoDB rejects the entire TransactGetItems request if any of the following is true:   A conflicting operation is in the process of updating an item to be read.   There is insufficient provisioned capacity for the transaction to be completed.   There is a user error, such as an invalid data format.   The aggregate size of the items in the transaction cannot exceed 4 MB.  
     */
   def transactGetItems(params: TransactGetItemsInput): Request[TransactGetItemsOutput, AWSError] = js.native
   def transactGetItems(
@@ -365,12 +404,12 @@ trait DynamoDB extends DynamoDBCustomizations {
     callback: js.Function2[/* err */ AWSError, /* data */ TransactGetItemsOutput, Unit]
   ): Request[TransactGetItemsOutput, AWSError] = js.native
   /**
-    *  TransactWriteItems is a synchronous write operation that groups up to 25 action requests. These actions can target items in different tables, but not in different AWS accounts or Regions, and no two actions can target the same item. For example, you cannot both ConditionCheck and Update the same item. The aggregate size of the items in the transaction cannot exceed 4 MB.  All AWS Regions and AWS GovCloud (US) support up to 25 items per transaction with up to 4 MB of data, except the following AWS Regions:    China (Beijing)   China (Ningxia)   The China (Beijing) and China (Ningxia) Regions support up to 10 items per transaction with up to 4 MB of data.   The actions are completed atomically so that either all of them succeed, or all of them fail. They are defined by the following objects:    Put  &#x97;   Initiates a PutItem operation to write a new item. This structure specifies the primary key of the item to be written, the name of the table to write it in, an optional condition expression that must be satisfied for the write to succeed, a list of the item's attributes, and a field indicating whether to retrieve the item's attributes if the condition is not met.    Update  &#x97;   Initiates an UpdateItem operation to update an existing item. This structure specifies the primary key of the item to be updated, the name of the table where it resides, an optional condition expression that must be satisfied for the update to succeed, an expression that defines one or more attributes to be updated, and a field indicating whether to retrieve the item's attributes if the condition is not met.    Delete  &#x97;   Initiates a DeleteItem operation to delete an existing item. This structure specifies the primary key of the item to be deleted, the name of the table where it resides, an optional condition expression that must be satisfied for the deletion to succeed, and a field indicating whether to retrieve the item's attributes if the condition is not met.    ConditionCheck  &#x97;   Applies a condition to an item that is not being modified by the transaction. This structure specifies the primary key of the item to be checked, the name of the table where it resides, a condition expression that must be satisfied for the transaction to succeed, and a field indicating whether to retrieve the item's attributes if the condition is not met.   DynamoDB rejects the entire TransactWriteItems request if any of the following is true:   A condition in one of the condition expressions is not met.   An ongoing operation is in the process of updating the same item.   There is insufficient provisioned capacity for the transaction to be completed.   An item size becomes too large (bigger than 400 KB), a local secondary index (LSI) becomes too large, or a similar validation error occurs because of changes made by the transaction.   The aggregate size of the items in the transaction exceeds 4 MB.   There is a user error, such as an invalid data format.  
+    *  TransactWriteItems is a synchronous write operation that groups up to 25 action requests. These actions can target items in different tables, but not in different AWS accounts or Regions, and no two actions can target the same item. For example, you cannot both ConditionCheck and Update the same item. The aggregate size of the items in the transaction cannot exceed 4 MB. The actions are completed atomically so that either all of them succeed, or all of them fail. They are defined by the following objects:    Put  &#x97;   Initiates a PutItem operation to write a new item. This structure specifies the primary key of the item to be written, the name of the table to write it in, an optional condition expression that must be satisfied for the write to succeed, a list of the item's attributes, and a field indicating whether to retrieve the item's attributes if the condition is not met.    Update  &#x97;   Initiates an UpdateItem operation to update an existing item. This structure specifies the primary key of the item to be updated, the name of the table where it resides, an optional condition expression that must be satisfied for the update to succeed, an expression that defines one or more attributes to be updated, and a field indicating whether to retrieve the item's attributes if the condition is not met.    Delete  &#x97;   Initiates a DeleteItem operation to delete an existing item. This structure specifies the primary key of the item to be deleted, the name of the table where it resides, an optional condition expression that must be satisfied for the deletion to succeed, and a field indicating whether to retrieve the item's attributes if the condition is not met.    ConditionCheck  &#x97;   Applies a condition to an item that is not being modified by the transaction. This structure specifies the primary key of the item to be checked, the name of the table where it resides, a condition expression that must be satisfied for the transaction to succeed, and a field indicating whether to retrieve the item's attributes if the condition is not met.   DynamoDB rejects the entire TransactWriteItems request if any of the following is true:   A condition in one of the condition expressions is not met.   An ongoing operation is in the process of updating the same item.   There is insufficient provisioned capacity for the transaction to be completed.   An item size becomes too large (bigger than 400 KB), a local secondary index (LSI) becomes too large, or a similar validation error occurs because of changes made by the transaction.   The aggregate size of the items in the transaction exceeds 4 MB.   There is a user error, such as an invalid data format.  
     */
   def transactWriteItems(): Request[TransactWriteItemsOutput, AWSError] = js.native
   def transactWriteItems(callback: js.Function2[/* err */ AWSError, /* data */ TransactWriteItemsOutput, Unit]): Request[TransactWriteItemsOutput, AWSError] = js.native
   /**
-    *  TransactWriteItems is a synchronous write operation that groups up to 25 action requests. These actions can target items in different tables, but not in different AWS accounts or Regions, and no two actions can target the same item. For example, you cannot both ConditionCheck and Update the same item. The aggregate size of the items in the transaction cannot exceed 4 MB.  All AWS Regions and AWS GovCloud (US) support up to 25 items per transaction with up to 4 MB of data, except the following AWS Regions:    China (Beijing)   China (Ningxia)   The China (Beijing) and China (Ningxia) Regions support up to 10 items per transaction with up to 4 MB of data.   The actions are completed atomically so that either all of them succeed, or all of them fail. They are defined by the following objects:    Put  &#x97;   Initiates a PutItem operation to write a new item. This structure specifies the primary key of the item to be written, the name of the table to write it in, an optional condition expression that must be satisfied for the write to succeed, a list of the item's attributes, and a field indicating whether to retrieve the item's attributes if the condition is not met.    Update  &#x97;   Initiates an UpdateItem operation to update an existing item. This structure specifies the primary key of the item to be updated, the name of the table where it resides, an optional condition expression that must be satisfied for the update to succeed, an expression that defines one or more attributes to be updated, and a field indicating whether to retrieve the item's attributes if the condition is not met.    Delete  &#x97;   Initiates a DeleteItem operation to delete an existing item. This structure specifies the primary key of the item to be deleted, the name of the table where it resides, an optional condition expression that must be satisfied for the deletion to succeed, and a field indicating whether to retrieve the item's attributes if the condition is not met.    ConditionCheck  &#x97;   Applies a condition to an item that is not being modified by the transaction. This structure specifies the primary key of the item to be checked, the name of the table where it resides, a condition expression that must be satisfied for the transaction to succeed, and a field indicating whether to retrieve the item's attributes if the condition is not met.   DynamoDB rejects the entire TransactWriteItems request if any of the following is true:   A condition in one of the condition expressions is not met.   An ongoing operation is in the process of updating the same item.   There is insufficient provisioned capacity for the transaction to be completed.   An item size becomes too large (bigger than 400 KB), a local secondary index (LSI) becomes too large, or a similar validation error occurs because of changes made by the transaction.   The aggregate size of the items in the transaction exceeds 4 MB.   There is a user error, such as an invalid data format.  
+    *  TransactWriteItems is a synchronous write operation that groups up to 25 action requests. These actions can target items in different tables, but not in different AWS accounts or Regions, and no two actions can target the same item. For example, you cannot both ConditionCheck and Update the same item. The aggregate size of the items in the transaction cannot exceed 4 MB. The actions are completed atomically so that either all of them succeed, or all of them fail. They are defined by the following objects:    Put  &#x97;   Initiates a PutItem operation to write a new item. This structure specifies the primary key of the item to be written, the name of the table to write it in, an optional condition expression that must be satisfied for the write to succeed, a list of the item's attributes, and a field indicating whether to retrieve the item's attributes if the condition is not met.    Update  &#x97;   Initiates an UpdateItem operation to update an existing item. This structure specifies the primary key of the item to be updated, the name of the table where it resides, an optional condition expression that must be satisfied for the update to succeed, an expression that defines one or more attributes to be updated, and a field indicating whether to retrieve the item's attributes if the condition is not met.    Delete  &#x97;   Initiates a DeleteItem operation to delete an existing item. This structure specifies the primary key of the item to be deleted, the name of the table where it resides, an optional condition expression that must be satisfied for the deletion to succeed, and a field indicating whether to retrieve the item's attributes if the condition is not met.    ConditionCheck  &#x97;   Applies a condition to an item that is not being modified by the transaction. This structure specifies the primary key of the item to be checked, the name of the table where it resides, a condition expression that must be satisfied for the transaction to succeed, and a field indicating whether to retrieve the item's attributes if the condition is not met.   DynamoDB rejects the entire TransactWriteItems request if any of the following is true:   A condition in one of the condition expressions is not met.   An ongoing operation is in the process of updating the same item.   There is insufficient provisioned capacity for the transaction to be completed.   An item size becomes too large (bigger than 400 KB), a local secondary index (LSI) becomes too large, or a similar validation error occurs because of changes made by the transaction.   The aggregate size of the items in the transaction exceeds 4 MB.   There is a user error, such as an invalid data format.  
     */
   def transactWriteItems(params: TransactWriteItemsInput): Request[TransactWriteItemsOutput, AWSError] = js.native
   def transactWriteItems(
@@ -400,6 +439,19 @@ trait DynamoDB extends DynamoDBCustomizations {
     params: UpdateContinuousBackupsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateContinuousBackupsOutput, Unit]
   ): Request[UpdateContinuousBackupsOutput, AWSError] = js.native
+  /**
+    * Updates the status for contributor insights for a specific table or index.
+    */
+  def updateContributorInsights(): Request[UpdateContributorInsightsOutput, AWSError] = js.native
+  def updateContributorInsights(callback: js.Function2[/* err */ AWSError, /* data */ UpdateContributorInsightsOutput, Unit]): Request[UpdateContributorInsightsOutput, AWSError] = js.native
+  /**
+    * Updates the status for contributor insights for a specific table or index.
+    */
+  def updateContributorInsights(params: UpdateContributorInsightsInput): Request[UpdateContributorInsightsOutput, AWSError] = js.native
+  def updateContributorInsights(
+    params: UpdateContributorInsightsInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateContributorInsightsOutput, Unit]
+  ): Request[UpdateContributorInsightsOutput, AWSError] = js.native
   /**
     * Adds or removes replicas in the specified global table. The global table must already exist to be able to use this operation. Any replica to be added must be empty, have the same name as the global table, have the same key schema, have DynamoDB Streams enabled, and have the same provisioned and maximum write capacity units.  Although you can use UpdateGlobalTable to add replicas and remove replicas in a single request, for simplicity we recommend that you issue separate requests for adding or removing replicas.   If global secondary indexes are specified, then the following conditions must also be met:     The global secondary indexes must have the same name.     The global secondary indexes must have the same hash key and sort key (if present).     The global secondary indexes must have the same provisioned and maximum write capacity units.   
     */
@@ -452,6 +504,19 @@ trait DynamoDB extends DynamoDBCustomizations {
     params: UpdateTableInput,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateTableOutput, Unit]
   ): Request[UpdateTableOutput, AWSError] = js.native
+  /**
+    * Updates auto scaling settings on your global tables at once.  This method only applies to Version 2019.11.21 of global tables. 
+    */
+  def updateTableReplicaAutoScaling(): Request[UpdateTableReplicaAutoScalingOutput, AWSError] = js.native
+  def updateTableReplicaAutoScaling(callback: js.Function2[/* err */ AWSError, /* data */ UpdateTableReplicaAutoScalingOutput, Unit]): Request[UpdateTableReplicaAutoScalingOutput, AWSError] = js.native
+  /**
+    * Updates auto scaling settings on your global tables at once.  This method only applies to Version 2019.11.21 of global tables. 
+    */
+  def updateTableReplicaAutoScaling(params: UpdateTableReplicaAutoScalingInput): Request[UpdateTableReplicaAutoScalingOutput, AWSError] = js.native
+  def updateTableReplicaAutoScaling(
+    params: UpdateTableReplicaAutoScalingInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateTableReplicaAutoScalingOutput, Unit]
+  ): Request[UpdateTableReplicaAutoScalingOutput, AWSError] = js.native
   /**
     * The UpdateTimeToLive method enables or disables Time to Live (TTL) for the specified table. A successful UpdateTimeToLive call returns the current TimeToLiveSpecification. It can take up to one hour for the change to fully process. Any additional UpdateTimeToLive calls for the same table during this one hour duration result in a ValidationException.  TTL compares the current time in epoch time format to the time stored in the TTL attribute of an item. If the epoch time value stored in the attribute is less than the current time, the item is marked as expired and subsequently deleted.   The epoch time format is the number of seconds elapsed since 12:00:00 AM January 1, 1970 UTC.   DynamoDB deletes expired items on a best-effort basis to ensure availability of throughput for other data operations.   DynamoDB typically deletes expired items within two days of expiration. The exact duration within which an item gets deleted after expiration is specific to the nature of the workload. Items that have expired and not been deleted will still show up in reads, queries, and scans.  As items are deleted, they are removed from any local secondary index and global secondary index immediately in the same eventually consistent way as a standard delete operation. For more information, see Time To Live in the Amazon DynamoDB Developer Guide. 
     */

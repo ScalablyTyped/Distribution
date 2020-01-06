@@ -11,8 +11,8 @@ Add-on to jQuery Validation to enable unobtrusive validation options in data-* a
 | Full name          | jquery-validation-unobtrusive |
 | Keywords           | jquery, asp.net, mvc, validation, unobtrusive |
 | # releases         | 5 |
-| # dependents       | 9 |
-| # downloads        | 381424 |
+| # dependents       | 11 |
+| # downloads        | 636802 |
 | # stars            | 3 |
 
 ## Links

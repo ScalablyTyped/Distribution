@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ServicePrincipal extends Principal {
-  var Service: Input[js.Array[Input[String]] | String]
+  var Service: Input[js.Array[Input[String]] | String] = js.native
 }
 
 object ServicePrincipal {

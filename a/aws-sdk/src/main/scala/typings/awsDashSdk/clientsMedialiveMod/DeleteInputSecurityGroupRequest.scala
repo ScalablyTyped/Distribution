@@ -4,17 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DeleteInputSecurityGroupRequest extends js.Object {
   /**
     * The Input Security Group to delete
     */
-  var InputSecurityGroupId: __string
+  var InputSecurityGroupId: __string = js.native
 }
 
 object DeleteInputSecurityGroupRequest {
   @scala.inline
   def apply(InputSecurityGroupId: __string): DeleteInputSecurityGroupRequest = {
-    val __obj = js.Dynamic.literal(InputSecurityGroupId = InputSecurityGroupId)
+    val __obj = js.Dynamic.literal(InputSecurityGroupId = InputSecurityGroupId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeleteInputSecurityGroupRequest]
   }

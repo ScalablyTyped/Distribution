@@ -96,6 +96,7 @@ trait SystemProps
      with BorderWidthProps[StyledSystemLength]
      with BorderStyleProps
      with BorderRadiusProps[StyledSystemLength]
+     with DisplayProps
      with AlignItemsProps
      with AlignContentProps
      with JustifyContentProps
@@ -159,7 +160,6 @@ trait SystemProps
      with TextTransformProps
      with ColProps
      with RowProps
-     with DisplayProps
 
 object SystemProps {
   @scala.inline

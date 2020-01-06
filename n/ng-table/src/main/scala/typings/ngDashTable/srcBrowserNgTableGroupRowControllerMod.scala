@@ -41,7 +41,7 @@ object srcBrowserNgTableGroupRowControllerMod extends js.Object {
     def toggleDetail(): IPromise[
         js.Array[
           DataResult[
-            /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for T */ _
+            /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for T */ _
           ]
         ]
       ] = js.native

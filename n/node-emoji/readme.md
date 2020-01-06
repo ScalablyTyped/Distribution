@@ -10,9 +10,9 @@ simple emoji support for node.js projects
 | ------------------ | :-------------: |
 | Full name          | node-emoji |
 | Keywords           | emoji, simple, emoticons, emoticon, emojis, smiley, smileys, smilies, ideogram, ideograms |
-| # releases         | 8 |
-| # dependents       | 533 |
-| # downloads        | 21810247 |
+| # releases         | 3 |
+| # dependents       | 709 |
+| # downloads        | 36089914 |
 | # stars            | 36 |
 
 ## Links

@@ -10,9 +10,9 @@ Memoize functions - An optimization used to speed up consecutive function calls 
 | ------------------ | :-------------: |
 | Full name          | mem |
 | Keywords           | memoize, function, mem, memoization, cache, caching, optimize, performance, ttl, expire, promise |
-| # releases         | 8 |
-| # dependents       | 86 |
-| # downloads        | 302202840 |
+| # releases         | 11 |
+| # dependents       | 164 |
+| # downloads        | 526818927 |
 | # stars            | 9 |
 
 ## Links

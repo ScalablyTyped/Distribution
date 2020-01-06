@@ -12,7 +12,7 @@ Framebus allows you to easily send messages across frames (and iframes) with a s
 | Keywords           | - |
 | # releases         | 4 |
 | # dependents       | 3 |
-| # downloads        | 1501899 |
+| # downloads        | 3468392 |
 | # stars            | 0 |
 
 ## Links

@@ -11,8 +11,8 @@ The lodash method `_.without` exported as a module.
 | Full name          | lodash.without |
 | Keywords           | lodash-modularized, without |
 | # releases         | 0 |
-| # dependents       | 71 |
-| # downloads        | 9442709 |
+| # dependents       | 83 |
+| # downloads        | 12404586 |
 | # stars            | 0 |
 
 ## Links

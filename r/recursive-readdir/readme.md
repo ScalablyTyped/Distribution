@@ -10,9 +10,9 @@ Get an array of all files in a directory and subdirectories.
 | ------------------ | :-------------: |
 | Full name          | recursive-readdir |
 | Keywords           | directory, lister |
-| # releases         | 4 |
-| # dependents       | 1101 |
-| # downloads        | 79188358 |
+| # releases         | 2 |
+| # dependents       | 1257 |
+| # downloads        | 126304478 |
 | # stars            | 34 |
 
 ## Links

@@ -11,72 +11,73 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BrokerArgs extends js.Object {
   /**
     * Specifies whether any broker modifications
     * are applied immediately, or during the next maintenance window. Default is `false`.
     */
-  val applyImmediately: js.UndefOr[Input[Boolean]] = js.undefined
+  val applyImmediately: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Enables automatic upgrades to new minor versions for brokers, as Apache releases the versions.
     */
-  val autoMinorVersionUpgrade: js.UndefOr[Input[Boolean]] = js.undefined
+  val autoMinorVersionUpgrade: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The name of the broker.
     */
-  val brokerName: Input[String]
+  val brokerName: Input[String] = js.native
   /**
     * Configuration of the broker. See below.
     */
-  val configuration: js.UndefOr[Input[BrokerConfiguration]] = js.undefined
+  val configuration: js.UndefOr[Input[BrokerConfiguration]] = js.native
   /**
     * The deployment mode of the broker. Supported: `SINGLE_INSTANCE` and `ACTIVE_STANDBY_MULTI_AZ`. Defaults to `SINGLE_INSTANCE`.
     */
-  val deploymentMode: js.UndefOr[Input[String]] = js.undefined
+  val deploymentMode: js.UndefOr[Input[String]] = js.native
   /**
     * Configuration block containing encryption options. See below.
     */
-  val encryptionOptions: js.UndefOr[Input[BrokerEncryptionOptions]] = js.undefined
+  val encryptionOptions: js.UndefOr[Input[BrokerEncryptionOptions]] = js.native
   /**
     * The type of broker engine. Currently, Amazon MQ supports only `ActiveMQ`.
     */
-  val engineType: Input[String]
+  val engineType: Input[String] = js.native
   /**
-    * The version of the broker engine. Currently, See the [AmazonMQ Broker Engine docs](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/broker-engine.html) for supported versions.
+    * The version of the broker engine. See the [AmazonMQ Broker Engine docs](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/broker-engine.html) for supported versions.
     */
-  val engineVersion: Input[String]
+  val engineVersion: Input[String] = js.native
   /**
     * The broker's instance type. e.g. `mq.t2.micro` or `mq.m4.large`
     */
-  val hostInstanceType: Input[String]
+  val hostInstanceType: Input[String] = js.native
   /**
     * Logging configuration of the broker. See below.
     */
-  val logs: js.UndefOr[Input[BrokerLogs]] = js.undefined
+  val logs: js.UndefOr[Input[BrokerLogs]] = js.native
   /**
     * Maintenance window start time. See below.
     */
-  val maintenanceWindowStartTime: js.UndefOr[Input[BrokerMaintenanceWindowStartTime]] = js.undefined
+  val maintenanceWindowStartTime: js.UndefOr[Input[BrokerMaintenanceWindowStartTime]] = js.native
   /**
     * Whether to enable connections from applications outside of the VPC that hosts the broker's subnets.
     */
-  val publiclyAccessible: js.UndefOr[Input[Boolean]] = js.undefined
+  val publiclyAccessible: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The list of security group IDs assigned to the broker.
     */
-  val securityGroups: Input[js.Array[Input[String]]]
+  val securityGroups: Input[js.Array[Input[String]]] = js.native
   /**
     * The list of subnet IDs in which to launch the broker. A `SINGLE_INSTANCE` deployment requires one subnet. An `ACTIVE_STANDBY_MULTI_AZ` deployment requires two subnets.
     */
-  val subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * The list of all ActiveMQ usernames for the specified broker. See below.
     */
-  val users: Input[js.Array[Input[BrokerUser]]]
+  val users: Input[js.Array[Input[BrokerUser]]] = js.native
 }
 
 object BrokerArgs {

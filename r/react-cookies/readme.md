@@ -11,8 +11,8 @@ Load and save cookies with React
 | Full name          | react-cookies |
 | Keywords           | react-cookies, react-cookie, cookie, cookies, react, reactjs, jsx |
 | # releases         | 3 |
-| # dependents       | 39 |
-| # downloads        | 889961 |
+| # dependents       | 41 |
+| # downloads        | 904602 |
 | # stars            | 1 |
 
 ## Links

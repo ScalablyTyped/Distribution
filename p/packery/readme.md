@@ -11,8 +11,8 @@ Gapless, draggable grid layouts
 | Full name          | packery |
 | Keywords           | DOM, browser, layout, bin, binpacking, packing, masonry, gapless, draggable |
 | # releases         | 2 |
-| # dependents       | 22 |
-| # downloads        | 288169 |
+| # dependents       | 23 |
+| # downloads        | 400238 |
 | # stars            | 2 |
 
 ## Links

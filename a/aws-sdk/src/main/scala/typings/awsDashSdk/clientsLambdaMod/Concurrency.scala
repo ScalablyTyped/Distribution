@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Concurrency extends js.Object {
   /**
     * The number of concurrent executions that are reserved for this function. For more information, see Managing Concurrency.
     */
-  var ReservedConcurrentExecutions: js.UndefOr[typings.awsDashSdk.clientsLambdaMod.ReservedConcurrentExecutions] = js.undefined
+  var ReservedConcurrentExecutions: js.UndefOr[typings.awsDashSdk.clientsLambdaMod.ReservedConcurrentExecutions] = js.native
 }
 
 object Concurrency {

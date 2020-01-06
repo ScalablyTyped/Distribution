@@ -11,61 +11,62 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AnalyticsApplicationState extends js.Object {
   /**
     * The ARN of the Kinesis Analytics Appliation.
     */
-  val arn: js.UndefOr[Input[ARN]] = js.undefined
+  val arn: js.UndefOr[Input[ARN]] = js.native
   /**
     * The CloudWatch log stream options to monitor application errors.
     * See CloudWatch Logging Options below for more details.
     */
-  val cloudwatchLoggingOptions: js.UndefOr[Input[AnalyticsApplicationCloudwatchLoggingOptions]] = js.undefined
+  val cloudwatchLoggingOptions: js.UndefOr[Input[AnalyticsApplicationCloudwatchLoggingOptions]] = js.native
   /**
     * SQL Code to transform input data, and generate output.
     */
-  val code: js.UndefOr[Input[String]] = js.undefined
+  val code: js.UndefOr[Input[String]] = js.native
   /**
     * The Timestamp when the application version was created.
     */
-  val createTimestamp: js.UndefOr[Input[String]] = js.undefined
+  val createTimestamp: js.UndefOr[Input[String]] = js.native
   /**
     * Description of the application.
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * Input configuration of the application. See Inputs below for more details.
     */
-  val inputs: js.UndefOr[Input[AnalyticsApplicationInputs]] = js.undefined
+  val inputs: js.UndefOr[Input[AnalyticsApplicationInputs]] = js.native
   /**
     * The Timestamp when the application was last updated.
     */
-  val lastUpdateTimestamp: js.UndefOr[Input[String]] = js.undefined
+  val lastUpdateTimestamp: js.UndefOr[Input[String]] = js.native
   /**
     * Name of the Kinesis Analytics Application.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * Output destination configuration of the application. See Outputs below for more details.
     */
-  val outputs: js.UndefOr[Input[js.Array[Input[AnalyticsApplicationOutput]]]] = js.undefined
+  val outputs: js.UndefOr[Input[js.Array[Input[AnalyticsApplicationOutput]]]] = js.native
   /**
     * An S3 Reference Data Source for the application.
     * See Reference Data Sources below for more details.
     */
-  val referenceDataSources: js.UndefOr[Input[AnalyticsApplicationReferenceDataSources]] = js.undefined
+  val referenceDataSources: js.UndefOr[Input[AnalyticsApplicationReferenceDataSources]] = js.native
   /**
     * The Status of the application.
     */
-  val status: js.UndefOr[Input[String]] = js.undefined
+  val status: js.UndefOr[Input[String]] = js.native
   /**
     * Key-value mapping of tags for the Kinesis Analytics Application.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * The Version of the application.
     */
-  val version: js.UndefOr[Input[Double]] = js.undefined
+  val version: js.UndefOr[Input[Double]] = js.native
 }
 
 object AnalyticsApplicationState {

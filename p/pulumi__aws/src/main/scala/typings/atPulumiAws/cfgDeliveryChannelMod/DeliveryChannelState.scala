@@ -6,27 +6,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DeliveryChannelState extends js.Object {
   /**
     * The name of the delivery channel. Defaults to `default`. Changing it recreates the resource.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the S3 bucket used to store the configuration history.
     */
-  val s3BucketName: js.UndefOr[Input[String]] = js.undefined
+  val s3BucketName: js.UndefOr[Input[String]] = js.native
   /**
     * The prefix for the specified S3 bucket.
     */
-  val s3KeyPrefix: js.UndefOr[Input[String]] = js.undefined
+  val s3KeyPrefix: js.UndefOr[Input[String]] = js.native
   /**
     * Options for how AWS Config delivers configuration snapshots. See below
     */
-  val snapshotDeliveryProperties: js.UndefOr[Input[DeliveryChannelSnapshotDeliveryProperties]] = js.undefined
+  val snapshotDeliveryProperties: js.UndefOr[Input[DeliveryChannelSnapshotDeliveryProperties]] = js.native
   /**
     * The ARN of the SNS topic that AWS Config delivers notifications to.
     */
-  val snsTopicArn: js.UndefOr[Input[String]] = js.undefined
+  val snsTopicArn: js.UndefOr[Input[String]] = js.native
 }
 
 object DeliveryChannelState {

@@ -57,22 +57,22 @@ object libCodeConverterMod extends js.Object {
     def asDocumentSymbolParams(textDocument: TextDocument): DocumentSymbolParams = js.native
     def asFormattingOptions(item: FormattingOptions): typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.FormattingOptions = js.native
     def asOpenTextDocumentParams(textDocument: TextDocument): DidOpenTextDocumentParams = js.native
-    def asPosition(): Null = js.native
+    def asPosition(): js.UndefOr[scala.Nothing] = js.native
     def asPosition(value: Position): js.UndefOr[
         typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Position | Null
       ] = js.native
     @JSName("asPosition")
-    def asPosition_Position(value: Position): typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Position = js.native
+    def asPosition_Null(): Null = js.native
     @JSName("asPosition")
-    def asPosition_Union(): js.UndefOr[scala.Nothing] = js.native
-    def asRange(): Null = js.native
+    def asPosition_Position(value: Position): typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Position = js.native
+    def asRange(): js.UndefOr[scala.Nothing] = js.native
     def asRange(value: Range): js.UndefOr[
         typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Range | Null
       ] = js.native
     @JSName("asRange")
-    def asRange_Range(value: Range): typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Range = js.native
+    def asRange_Null(): Null = js.native
     @JSName("asRange")
-    def asRange_Union(): js.UndefOr[scala.Nothing] = js.native
+    def asRange_Range(value: Range): typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Range = js.native
     def asReferenceParams(textDocument: TextDocument, position: Position, options: Anon_IncludeDeclaration): ReferenceParams = js.native
     def asSaveTextDocumentParams(textDocument: TextDocument): DidSaveTextDocumentParams = js.native
     def asSaveTextDocumentParams(textDocument: TextDocument, includeContent: Boolean): DidSaveTextDocumentParams = js.native

@@ -10,8 +10,8 @@ Precision timer for nanosecond differences
 | Full name          | precise |
 | Keywords           | precise, precision, nanosecond, timer, time, difference, elasped |
 | # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 5783 |
+| # dependents       | 6 |
+| # downloads        | 19840 |
 | # stars            | 1 |
 
 ## Links

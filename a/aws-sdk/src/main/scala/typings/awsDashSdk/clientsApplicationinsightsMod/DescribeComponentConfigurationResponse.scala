@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DescribeComponentConfigurationResponse extends js.Object {
   /**
     * The configuration settings of the component. The value is the escaped JSON of the configuration.
     */
-  var ComponentConfiguration: js.UndefOr[typings.awsDashSdk.clientsApplicationinsightsMod.ComponentConfiguration] = js.undefined
+  var ComponentConfiguration: js.UndefOr[typings.awsDashSdk.clientsApplicationinsightsMod.ComponentConfiguration] = js.native
   /**
     * Indicates whether the application component is monitored.
     */
-  var Monitor: js.UndefOr[typings.awsDashSdk.clientsApplicationinsightsMod.Monitor] = js.undefined
+  var Monitor: js.UndefOr[typings.awsDashSdk.clientsApplicationinsightsMod.Monitor] = js.native
   /**
-    * The tier of the application component. Supported tiers include DOT_NET_WORKER, DOT_NET_WEB, SQL_SERVER, and DEFAULT 
+    * The tier of the application component. Supported tiers include DOT_NET_CORE, DOT_NET_WORKER, DOT_NET_WEB, SQL_SERVER, and DEFAULT 
     */
-  var Tier: js.UndefOr[typings.awsDashSdk.clientsApplicationinsightsMod.Tier] = js.undefined
+  var Tier: js.UndefOr[typings.awsDashSdk.clientsApplicationinsightsMod.Tier] = js.native
 }
 
 object DescribeComponentConfigurationResponse {
@@ -27,9 +28,9 @@ object DescribeComponentConfigurationResponse {
     Tier: Tier = null
   ): DescribeComponentConfigurationResponse = {
     val __obj = js.Dynamic.literal()
-    if (ComponentConfiguration != null) __obj.updateDynamic("ComponentConfiguration")(ComponentConfiguration)
-    if (!js.isUndefined(Monitor)) __obj.updateDynamic("Monitor")(Monitor)
-    if (Tier != null) __obj.updateDynamic("Tier")(Tier)
+    if (ComponentConfiguration != null) __obj.updateDynamic("ComponentConfiguration")(ComponentConfiguration.asInstanceOf[js.Any])
+    if (!js.isUndefined(Monitor)) __obj.updateDynamic("Monitor")(Monitor.asInstanceOf[js.Any])
+    if (Tier != null) __obj.updateDynamic("Tier")(Tier.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeComponentConfigurationResponse]
   }
 }

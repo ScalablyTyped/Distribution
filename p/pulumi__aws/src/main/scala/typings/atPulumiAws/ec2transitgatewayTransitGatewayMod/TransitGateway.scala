@@ -67,7 +67,7 @@ class TransitGateway protected () extends CustomResource {
   /**
     * Key-value tags for the EC2 Transit Gateway.
     */
-  val tags: Output[js.UndefOr[StringDictionary[String]]] = js.native
+  val tags: Output[js.UndefOr[StringDictionary[_]]] = js.native
   /**
     * Whether VPN Equal Cost Multipath Protocol support is enabled. Valid values: `disable`, `enable`. Default value: `enable`.
     */

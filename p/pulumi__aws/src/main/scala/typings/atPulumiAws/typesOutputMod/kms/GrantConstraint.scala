@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GrantConstraint extends js.Object {
-  var encryptionContextEquals: js.UndefOr[StringDictionary[String]] = js.undefined
-  var encryptionContextSubset: js.UndefOr[StringDictionary[String]] = js.undefined
+  var encryptionContextEquals: js.UndefOr[StringDictionary[String]] = js.native
+  var encryptionContextSubset: js.UndefOr[StringDictionary[String]] = js.native
 }
 
 object GrantConstraint {
@@ -17,8 +18,8 @@ object GrantConstraint {
     encryptionContextSubset: StringDictionary[String] = null
   ): GrantConstraint = {
     val __obj = js.Dynamic.literal()
-    if (encryptionContextEquals != null) __obj.updateDynamic("encryptionContextEquals")(encryptionContextEquals)
-    if (encryptionContextSubset != null) __obj.updateDynamic("encryptionContextSubset")(encryptionContextSubset)
+    if (encryptionContextEquals != null) __obj.updateDynamic("encryptionContextEquals")(encryptionContextEquals.asInstanceOf[js.Any])
+    if (encryptionContextSubset != null) __obj.updateDynamic("encryptionContextSubset")(encryptionContextSubset.asInstanceOf[js.Any])
     __obj.asInstanceOf[GrantConstraint]
   }
 }

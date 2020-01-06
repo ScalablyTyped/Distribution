@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetClusterResult extends js.Object {
   /**
     * The list of cluster certificates.
@@ -15,25 +16,25 @@ trait GetClusterResult extends js.Object {
     * * `cluster_certificates.0.manufacturer_hardware_certificate` - The HSM hardware certificate issued (signed) by the hardware manufacturer.
     * The number of available cluster certificates may vary depending on state of the cluster.
     */
-  val clusterCertificates: GetClusterClusterCertificates
-  val clusterId: String
-  val clusterState: String
+  val clusterCertificates: GetClusterClusterCertificates = js.native
+  val clusterId: String = js.native
+  val clusterState: String = js.native
   /**
     * id is the provider-assigned unique ID for this managed resource.
     */
-  val id: String
+  val id: String = js.native
   /**
     * The ID of the security group associated with the CloudHSM cluster.
     */
-  val securityGroupId: String
+  val securityGroupId: String = js.native
   /**
     * The IDs of subnets in which cluster operates.
     */
-  val subnetIds: js.Array[String]
+  val subnetIds: js.Array[String] = js.native
   /**
     * The id of the VPC that the CloudHSM cluster resides in.
     */
-  val vpcId: String
+  val vpcId: String = js.native
 }
 
 object GetClusterResult {
@@ -47,7 +48,7 @@ object GetClusterResult {
     subnetIds: js.Array[String],
     vpcId: String
   ): GetClusterResult = {
-    val __obj = js.Dynamic.literal(clusterCertificates = clusterCertificates, clusterId = clusterId, clusterState = clusterState, id = id, securityGroupId = securityGroupId, subnetIds = subnetIds, vpcId = vpcId)
+    val __obj = js.Dynamic.literal(clusterCertificates = clusterCertificates.asInstanceOf[js.Any], clusterId = clusterId.asInstanceOf[js.Any], clusterState = clusterState.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], securityGroupId = securityGroupId.asInstanceOf[js.Any], subnetIds = subnetIds.asInstanceOf[js.Any], vpcId = vpcId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetClusterResult]
   }

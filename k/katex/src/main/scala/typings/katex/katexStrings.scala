@@ -15,13 +15,13 @@ object katexStrings {
   sealed trait Leftparenthesis extends js.Object
   
   @js.native
-  sealed trait Leftsquarebracket extends js.Object
-  
-  @js.native
   sealed trait Rightparenthesis extends js.Object
   
   @js.native
-  sealed trait Rightsquarebracket extends js.Object
+  sealed trait `[` extends js.Object
+  
+  @js.native
+  sealed trait `]` extends js.Object
   
   @js.native
   sealed trait a extends js.Object
@@ -393,11 +393,11 @@ object katexStrings {
   @scala.inline
   def Leftparenthesis: Leftparenthesis = "(".asInstanceOf[Leftparenthesis]
   @scala.inline
-  def Leftsquarebracket: Leftsquarebracket = "[".asInstanceOf[Leftsquarebracket]
-  @scala.inline
   def Rightparenthesis: Rightparenthesis = ")".asInstanceOf[Rightparenthesis]
   @scala.inline
-  def Rightsquarebracket: Rightsquarebracket = "]".asInstanceOf[Rightsquarebracket]
+  def `[`: `[` = "[".asInstanceOf[`[`]
+  @scala.inline
+  def `]`: `]` = "]".asInstanceOf[`]`]
   @scala.inline
   def a: a = "a".asInstanceOf[a]
   @scala.inline

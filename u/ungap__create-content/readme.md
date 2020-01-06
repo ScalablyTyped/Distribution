@@ -12,7 +12,7 @@ A cross browser utility to create HTML or SVG runtime content
 | Keywords           | HTMLTemplateElement, createContent, dom, utility, ungap |
 | # releases         | 7 |
 | # dependents       | 7 |
-| # downloads        | 59332 |
+| # downloads        | 64709 |
 | # stars            | 0 |
 
 ## Links

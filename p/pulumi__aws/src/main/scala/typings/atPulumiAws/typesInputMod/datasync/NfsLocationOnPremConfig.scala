@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NfsLocationOnPremConfig extends js.Object {
   /**
     * List of Amazon Resource Names (ARNs) of the DataSync Agents used to connect to the NFS server.
     */
-  var agentArns: Input[js.Array[Input[String]]]
+  var agentArns: Input[js.Array[Input[String]]] = js.native
 }
 
 object NfsLocationOnPremConfig {

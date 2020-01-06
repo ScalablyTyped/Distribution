@@ -12,7 +12,7 @@ Language Negotiation API for Fluent
 | Keywords           | localization, l10n, internationalization, i18n, locale, language, language-negotiation |
 | # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 4847 |
+| # downloads        | 10831 |
 | # stars            | 0 |
 
 ## Links

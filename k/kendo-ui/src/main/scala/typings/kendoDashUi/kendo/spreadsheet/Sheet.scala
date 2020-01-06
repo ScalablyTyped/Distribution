@@ -19,14 +19,14 @@ class Sheet () extends Observable {
   def deleteColumn(index: Double): Unit = js.native
   def deleteRow(index: Double): Unit = js.native
   def fromJSON(data: js.Any): Unit = js.native
-  def frozenColumns(): Double = js.native
+  def frozenColumns(): Unit = js.native
   def frozenColumns(count: Double): Unit = js.native
   @JSName("frozenColumns")
-  def frozenColumns_Unit(): Unit = js.native
-  def frozenRows(): Double = js.native
+  def frozenColumns_Double(): Double = js.native
+  def frozenRows(): Unit = js.native
   def frozenRows(count: Double): Unit = js.native
   @JSName("frozenRows")
-  def frozenRows_Unit(): Unit = js.native
+  def frozenRows_Double(): Double = js.native
   def hideColumn(index: Double): Unit = js.native
   def hideRow(index: Double): Unit = js.native
   def insertColumn(index: Double): Unit = js.native

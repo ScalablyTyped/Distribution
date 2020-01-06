@@ -11,8 +11,8 @@ Filters file paths using globs, regular expressions, or custom criteria
 | Full name          | file-path-filter |
 | Keywords           | filter, find, file, path, regex, regexp, glob, include, exclude |
 | # releases         | 12 |
-| # dependents       | 1 |
-| # downloads        | 1254 |
+| # dependents       | 3 |
+| # downloads        | 2553 |
 | # stars            | 0 |
 
 ## Links

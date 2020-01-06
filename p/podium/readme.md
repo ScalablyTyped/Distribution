@@ -10,9 +10,9 @@ Node compatible event emitter with extra features
 | ------------------ | :-------------: |
 | Full name          | podium |
 | Keywords           | emitter, event |
-| # releases         | 15 |
-| # dependents       | 3 |
-| # downloads        | 4281553 |
+| # releases         | 6 |
+| # dependents       | 2 |
+| # downloads        | 7433987 |
 | # stars            | 0 |
 
 ## Links

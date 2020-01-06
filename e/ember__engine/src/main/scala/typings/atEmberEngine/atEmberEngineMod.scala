@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object atEmberEngineMod extends js.Object {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: parser.TsParser#tsDeclClass functionCall $anonfun class extends from : EmberObject.extend(RegistryProxyMixin) * / any */ @js.native
+  - Dropped / * import warning: parser.TsParser#tsDeclClass functionCall class extends from : EmberObject.extend(RegistryProxyMixin) * / any */ @js.native
   trait Engine extends js.Object {
     /**
       * Set this to provide an alternate class to `Ember.DefaultResolver`

@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - typings.strange.strangeStrings.LeftparenthesisRightparenthesis
-  - typings.strange.strangeStrings.LeftsquarebracketRightsquarebracket
-  - typings.strange.strangeStrings.LeftsquarebracketRightparenthesis
-  - typings.strange.strangeStrings.LeftparenthesisRightsquarebracket
+  - typings.strange.strangeStrings.`[]`
+  - typings.strange.strangeStrings.`[Rightparenthesis`
+  - typings.strange.strangeStrings.`Leftparenthesis]`
 */
 trait Bounds extends js.Object
 
@@ -16,11 +16,11 @@ object Bounds {
   @scala.inline
   def LeftparenthesisRightparenthesis: typings.strange.strangeStrings.LeftparenthesisRightparenthesis = this.cast("()")
   @scala.inline
-  def LeftparenthesisRightsquarebracket: typings.strange.strangeStrings.LeftparenthesisRightsquarebracket = this.cast("(]")
+  def `Leftparenthesis]`: typings.strange.strangeStrings.`Leftparenthesis]` = this.cast("(]")
   @scala.inline
-  def LeftsquarebracketRightparenthesis: typings.strange.strangeStrings.LeftsquarebracketRightparenthesis = this.cast("[)")
+  def `[Rightparenthesis`: typings.strange.strangeStrings.`[Rightparenthesis` = this.cast("[)")
   @scala.inline
-  def LeftsquarebracketRightsquarebracket: typings.strange.strangeStrings.LeftsquarebracketRightsquarebracket = this.cast("[]")
+  def `[]`: typings.strange.strangeStrings.`[]` = this.cast("[]")
   @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
 }

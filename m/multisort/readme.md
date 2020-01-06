@@ -11,8 +11,8 @@ Sort an array using any number of separate, ranked criteria
 | Full name          | multisort |
 | Keywords           | sort, sorting, multiple, multi, multisort, comparator |
 | # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 22425 |
+| # dependents       | 5 |
+| # downloads        | 25047 |
 | # stars            | 0 |
 
 ## Links

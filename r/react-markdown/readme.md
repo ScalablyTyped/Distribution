@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-markdown
 
-Typings are for version 4.2.2
+Typings are for version 4.3.0
 
 ## Library description:
 Renders Markdown as React components
@@ -10,9 +10,9 @@ Renders Markdown as React components
 | ------------------ | :-------------: |
 | Full name          | react-markdown |
 | Keywords           | markdown, react, react-component |
-| # releases         | 34 |
-| # dependents       | 325 |
-| # downloads        | 6523535 |
+| # releases         | 28 |
+| # dependents       | 468 |
+| # downloads        | 12517504 |
 | # stars            | 17 |
 
 ## Links

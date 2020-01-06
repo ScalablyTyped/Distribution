@@ -10,10 +10,10 @@ A module to make Express interact with Redis (create, get, delete). You can auto
 | ------------------ | :-------------: |
 | Full name          | express-redis-cache |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 4 |
 | # dependents       | 6 |
-| # downloads        | 163271 |
-| # stars            | 18 |
+| # downloads        | 229294 |
+| # stars            | 19 |
 
 ## Links
 - [Homepage](https://github.com/rv-kip/express-redis-cache#readme)

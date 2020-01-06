@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PortInfo extends js.Object {
   /**
     * The first port in the range.
     */
-  var fromPort: js.UndefOr[Port] = js.undefined
+  var fromPort: js.UndefOr[Port] = js.native
   /**
     * The protocol. 
     */
-  var protocol: js.UndefOr[NetworkProtocol] = js.undefined
+  var protocol: js.UndefOr[NetworkProtocol] = js.native
   /**
     * The last port in the range.
     */
-  var toPort: js.UndefOr[Port] = js.undefined
+  var toPort: js.UndefOr[Port] = js.native
 }
 
 object PortInfo {

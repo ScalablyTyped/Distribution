@@ -4,31 +4,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DeviceInstance extends js.Object {
   /**
     * The Amazon Resource Name (ARN) of the device instance.
     */
-  var arn: js.UndefOr[AmazonResourceName] = js.undefined
+  var arn: js.UndefOr[AmazonResourceName] = js.native
   /**
-    * The Amazon Resource Name (ARN) of the device.
+    * The ARN of the device.
     */
-  var deviceArn: js.UndefOr[AmazonResourceName] = js.undefined
+  var deviceArn: js.UndefOr[AmazonResourceName] = js.native
   /**
-    * A object containing information about the instance profile.
+    * A object that contains information about the instance profile.
     */
-  var instanceProfile: js.UndefOr[InstanceProfile] = js.undefined
+  var instanceProfile: js.UndefOr[InstanceProfile] = js.native
   /**
-    * An array of strings describing the device instance.
+    * An array of strings that describe the device instance.
     */
-  var labels: js.UndefOr[InstanceLabels] = js.undefined
+  var labels: js.UndefOr[InstanceLabels] = js.native
   /**
-    * The status of the device instance. Valid values are listed below.
+    * The status of the device instance. Valid values are listed here.
     */
-  var status: js.UndefOr[InstanceStatus] = js.undefined
+  var status: js.UndefOr[InstanceStatus] = js.native
   /**
     * Unique device identifier for the device instance.
     */
-  var udid: js.UndefOr[String] = js.undefined
+  var udid: js.UndefOr[String] = js.native
 }
 
 object DeviceInstance {
@@ -42,12 +43,12 @@ object DeviceInstance {
     udid: String = null
   ): DeviceInstance = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn)
-    if (deviceArn != null) __obj.updateDynamic("deviceArn")(deviceArn)
-    if (instanceProfile != null) __obj.updateDynamic("instanceProfile")(instanceProfile)
-    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (deviceArn != null) __obj.updateDynamic("deviceArn")(deviceArn.asInstanceOf[js.Any])
+    if (instanceProfile != null) __obj.updateDynamic("instanceProfile")(instanceProfile.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (udid != null) __obj.updateDynamic("udid")(udid)
+    if (udid != null) __obj.updateDynamic("udid")(udid.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceInstance]
   }
 }

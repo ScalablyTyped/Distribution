@@ -11,8 +11,8 @@ An ES6 string tag that strips indentation from multi-line strings
 | Full name          | dedent |
 | Keywords           | dedent, tag, multi-line string, es6 |
 | # releases         | 1 |
-| # dependents       | 262 |
-| # downloads        | 46504528 |
+| # dependents       | 318 |
+| # downloads        | 90023304 |
 | # stars            | 11 |
 
 ## Links

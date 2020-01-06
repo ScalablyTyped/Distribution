@@ -12,7 +12,7 @@ A Redux middleware that allows actions to be converted into Promises
 | Keywords           | - |
 | # releases         | 5 |
 | # dependents       | 0 |
-| # downloads        | 90998 |
+| # downloads        | 111985 |
 | # stars            | 0 |
 
 ## Links

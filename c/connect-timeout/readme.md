@@ -10,8 +10,8 @@ Request timeout middleware for Connect/Express
 | Full name          | connect-timeout |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 105 |
-| # downloads        | 10675527 |
+| # dependents       | 110 |
+| # downloads        | 8805764 |
 | # stars            | 12 |
 
 ## Links

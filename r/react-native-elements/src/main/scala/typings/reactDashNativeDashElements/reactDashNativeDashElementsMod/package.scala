@@ -33,7 +33,7 @@ package object reactDashNativeDashElementsMod {
   */
   type IconType = _IconType | String
   type RecursivePartial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]:? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias react-native-elements.react-native-elements.RecursivePartial<T[P]> * / object}
+  {[ P in keyof T ]:? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias react-native-elements.react-native-elements.RecursivePartial<T[P]> * / object}
     */ typings.reactDashNativeDashElements.reactDashNativeDashElementsStrings.RecursivePartial with js.Any
   type ReplaceTheme = js.Function1[/* updates */ RecursivePartial[FullTheme], Unit]
   type SearchBarProps = SearchBarWrapper with SearchBarBase with SearchBarPlatform with SearchBarDefault with SearchBarIOS with SearchBarAndroid

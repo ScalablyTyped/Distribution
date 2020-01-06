@@ -12,7 +12,7 @@ Angular wrapper for js-data.
 | Keywords           | - |
 | # releases         | 4 |
 | # dependents       | 1 |
-| # downloads        | 49157 |
+| # downloads        | 73364 |
 | # stars            | 0 |
 
 ## Links

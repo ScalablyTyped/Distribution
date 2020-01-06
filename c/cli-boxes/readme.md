@@ -10,9 +10,9 @@ Boxes for use in the terminal
 | ------------------ | :-------------: |
 | Full name          | cli-boxes |
 | Keywords           | cli, box, boxes, terminal, term, console, ascii, unicode, border, text, json |
-| # releases         | 1 |
-| # dependents       | 30 |
-| # downloads        | 110003058 |
+| # releases         | 4 |
+| # dependents       | 35 |
+| # downloads        | 211096088 |
 | # stars            | 2 |
 
 ## Links

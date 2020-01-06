@@ -12,7 +12,7 @@ Get random Star Wars names
 | Keywords           | random, star, wars |
 | # releases         | 1 |
 | # dependents       | 3 |
-| # downloads        | 10422 |
+| # downloads        | 56079 |
 | # stars            | 4 |
 
 ## Links

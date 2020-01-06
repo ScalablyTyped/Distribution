@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TimecodeConfig extends js.Object {
   /**
     * Identifies the source for the timecode that will be associated with the events outputs.
@@ -11,11 +12,11 @@ trait TimecodeConfig extends js.Object {
   -System Clock (systemclock): Use the UTC time.
   -Start at 0 (zerobased): The time of the first frame of the event will be 00:00:00:00.
     */
-  var Source: TimecodeConfigSource
+  var Source: TimecodeConfigSource = js.native
   /**
     * Threshold in frames beyond which output timecode is resynchronized to the input timecode. Discrepancies below this threshold are permitted to avoid unnecessary discontinuities in the output timecode. No timecode sync when this is not specified.
     */
-  var SyncThreshold: js.UndefOr[__integerMin1Max1000000] = js.undefined
+  var SyncThreshold: js.UndefOr[__integerMin1Max1000000] = js.native
 }
 
 object TimecodeConfig {

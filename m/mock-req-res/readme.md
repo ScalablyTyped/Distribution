@@ -10,9 +10,9 @@ Extensible mock req / res objects for use in unit tests of Express controller an
 | ------------------ | :-------------: |
 | Full name          | mock-req-res |
 | Keywords           | express, mocks, testing, request, response |
-| # releases         | 10 |
+| # releases         | 13 |
 | # dependents       | 3 |
-| # downloads        | 57245 |
+| # downloads        | 138078 |
 | # stars            | 0 |
 
 ## Links

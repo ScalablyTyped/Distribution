@@ -10,9 +10,9 @@ Storybook Client API
 | ------------------ | :-------------: |
 | Full name          | @storybook/client-api |
 | Keywords           | storybook |
-| # releases         | 156 |
-| # dependents       | 9 |
-| # downloads        | 13481484 |
+| # releases         | 274 |
+| # dependents       | 13 |
+| # downloads        | 25612776 |
 | # stars            | 0 |
 
 ## Links

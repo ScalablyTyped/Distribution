@@ -10,9 +10,9 @@ The standard Ratings component for React Native
 | ------------------ | :-------------: |
 | Full name          | react-native-ratings |
 | Keywords           | react-native, reactjs, reactnative, gestures, ios, stars, android, ratings, ui-components |
-| # releases         | 22 |
-| # dependents       | 3 |
-| # downloads        | 178747 |
+| # releases         | 12 |
+| # dependents       | 10 |
+| # downloads        | 1434979 |
 | # stars            | 1 |
 
 ## Links

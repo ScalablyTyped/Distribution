@@ -10,9 +10,9 @@ KeystoneJS Next.js App.
 | ------------------ | :-------------: |
 | Full name          | @keystonejs/app-next |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 444 |
+| # downloads        | 1151 |
 | # stars            | 0 |
 
 ## Links

@@ -11,8 +11,8 @@ Leaflet Awesome Markers - allows you to display custom icons easily using Leafle
 | Full name          | leaflet.awesome-markers |
 | Keywords           | leaflet, map, icons |
 | # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 94531 |
+| # dependents       | 2 |
+| # downloads        | 131009 |
 | # stars            | 1 |
 
 ## Links

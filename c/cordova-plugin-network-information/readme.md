@@ -10,14 +10,14 @@ Cordova Network Information Plugin
 | ------------------ | :-------------: |
 | Full name          | cordova-plugin-network-information |
 | Keywords           | cordova, network, information, ecosystem:cordova, cordova-android, cordova-ios, cordova-windows, cordova-browser |
-| # releases         | 5 |
-| # dependents       | 26 |
-| # downloads        | 1014382 |
+| # releases         | 4 |
+| # dependents       | 31 |
+| # downloads        | 1320869 |
 | # stars            | 19 |
 
 ## Links
 - [Homepage](https://github.com/apache/cordova-plugin-network-information#readme)
-- [Bugs](https://issues.apache.org/jira/browse/CB)
+- [Bugs](https://github.com/apache/cordova-plugin-network-information/issues)
 - [Repository](https://github.com/apache/cordova-plugin-network-information)
 - [Npm](https://www.npmjs.com/package/cordova-plugin-network-information)
     

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "zfont"
-version := "1.2-dt-20191122Z-01973c"
+version := "1.2-dt-20191122Z-134eb9"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "std" % "3.7-953338",
-  "org.scalablytyped" %%% "zdog" % "1.1-dt-20191122Z-8fbc61")
+  "org.scalablytyped" %%% "std" % "3.7-b6d959",
+  "org.scalablytyped" %%% "zdog" % "1.1-dt-20191122Z-c9a37c")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

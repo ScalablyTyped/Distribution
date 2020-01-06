@@ -10,12 +10,15 @@ Modern style system for styled-components & emotion.
 | ------------------ | :-------------: |
 | Full name          | @xstyled/system |
 | Keywords           | emotion, styled-components, css, system, styled-system |
-| # releases         | 24 |
-| # dependents       | 4 |
-| # downloads        | 27470 |
+| # releases         | 27 |
+| # dependents       | 32 |
+| # downloads        | 48458 |
 | # stars            | 0 |
 
 ## Links
+- [Homepage](https://xstyled.dev)
+- [Bugs](https://github.com/smooth-code/xstyled/issues)
+- [Repository](https://github.com/smooth-code/xstyled)
 - [Npm](https://www.npmjs.com/package/%40xstyled%2Fsystem)
     
 

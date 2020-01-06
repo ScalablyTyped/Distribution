@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DistributionViewerCertificate extends js.Object {
   /**
     * The ARN of the [AWS Certificate Manager][6]
@@ -12,19 +13,19 @@ trait DistributionViewerCertificate extends js.Object {
     * `cloudfrontDefaultCertificate`, or `iamCertificateId`.  The ACM
     * certificate must be in  US-EAST-1.
     */
-  var acmCertificateArn: js.UndefOr[Input[String]] = js.undefined
+  var acmCertificateArn: js.UndefOr[Input[String]] = js.native
   /**
     * `true` if you want viewers to use HTTPS
     * to request your objects and you're using the CloudFront domain name for your
     * distribution. Specify this, `acmCertificateArn`, or `iamCertificateId`.
     */
-  var cloudfrontDefaultCertificate: js.UndefOr[Input[Boolean]] = js.undefined
+  var cloudfrontDefaultCertificate: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The IAM certificate identifier of the custom viewer
     * certificate for this distribution if you are using a custom domain. Specify
     * this, `acmCertificateArn`, or `cloudfrontDefaultCertificate`.
     */
-  var iamCertificateId: js.UndefOr[Input[String]] = js.undefined
+  var iamCertificateId: js.UndefOr[Input[String]] = js.native
   /**
     * The minimum version of the SSL protocol that
     * you want CloudFront to use for HTTPS connections. One of `SSLv3`, `TLSv1`,
@@ -36,8 +37,8 @@ trait DistributionViewerCertificate extends js.Object {
     * specified. If you have specified `cloudfrontDefaultCertificate`, `TLSv1`
     * must be specified.
     */
-  var minimumProtocolVersion: js.UndefOr[Input[String]] = js.undefined
-  var sslSupportMethod: js.UndefOr[Input[String]] = js.undefined
+  var minimumProtocolVersion: js.UndefOr[Input[String]] = js.native
+  var sslSupportMethod: js.UndefOr[Input[String]] = js.native
 }
 
 object DistributionViewerCertificate {

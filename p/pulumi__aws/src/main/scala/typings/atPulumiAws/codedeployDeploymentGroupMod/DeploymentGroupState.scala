@@ -15,67 +15,68 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DeploymentGroupState extends js.Object {
   /**
     * Configuration block of alarms associated with the deployment group (documented below).
     */
-  val alarmConfiguration: js.UndefOr[Input[DeploymentGroupAlarmConfiguration]] = js.undefined
+  val alarmConfiguration: js.UndefOr[Input[DeploymentGroupAlarmConfiguration]] = js.native
   /**
     * The name of the application.
     */
-  val appName: js.UndefOr[Input[String]] = js.undefined
+  val appName: js.UndefOr[Input[String]] = js.native
   /**
     * Configuration block of the automatic rollback configuration associated with the deployment group (documented below).
     */
-  val autoRollbackConfiguration: js.UndefOr[Input[DeploymentGroupAutoRollbackConfiguration]] = js.undefined
+  val autoRollbackConfiguration: js.UndefOr[Input[DeploymentGroupAutoRollbackConfiguration]] = js.native
   /**
     * Autoscaling groups associated with the deployment group.
     */
-  val autoscalingGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val autoscalingGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * Configuration block of the blue/green deployment options for a deployment group (documented below).
     */
-  val blueGreenDeploymentConfig: js.UndefOr[Input[DeploymentGroupBlueGreenDeploymentConfig]] = js.undefined
+  val blueGreenDeploymentConfig: js.UndefOr[Input[DeploymentGroupBlueGreenDeploymentConfig]] = js.native
   /**
     * The name of the group's deployment config. The default is "CodeDeployDefault.OneAtATime".
     */
-  val deploymentConfigName: js.UndefOr[Input[String]] = js.undefined
+  val deploymentConfigName: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the deployment group.
     */
-  val deploymentGroupName: js.UndefOr[Input[String]] = js.undefined
+  val deploymentGroupName: js.UndefOr[Input[String]] = js.native
   /**
     * Configuration block of the type of deployment, either in-place or blue/green, you want to run and whether to route deployment traffic behind a load balancer (documented below).
     */
-  val deploymentStyle: js.UndefOr[Input[DeploymentGroupDeploymentStyle]] = js.undefined
+  val deploymentStyle: js.UndefOr[Input[DeploymentGroupDeploymentStyle]] = js.native
   /**
     * Tag filters associated with the deployment group. See the AWS docs for details.
     */
-  val ec2TagFilters: js.UndefOr[Input[js.Array[Input[DeploymentGroupEc2TagFilter]]]] = js.undefined
+  val ec2TagFilters: js.UndefOr[Input[js.Array[Input[DeploymentGroupEc2TagFilter]]]] = js.native
   /**
     * Configuration block(s) of Tag filters associated with the deployment group, which are also referred to as tag groups (documented below). See the AWS docs for details.
     */
-  val ec2TagSets: js.UndefOr[Input[js.Array[Input[DeploymentGroupEc2TagSet]]]] = js.undefined
+  val ec2TagSets: js.UndefOr[Input[js.Array[Input[DeploymentGroupEc2TagSet]]]] = js.native
   /**
     * Configuration block(s) of the ECS services for a deployment group (documented below).
     */
-  val ecsService: js.UndefOr[Input[DeploymentGroupEcsService]] = js.undefined
+  val ecsService: js.UndefOr[Input[DeploymentGroupEcsService]] = js.native
   /**
     * Single configuration block of the load balancer to use in a blue/green deployment (documented below).
     */
-  val loadBalancerInfo: js.UndefOr[Input[DeploymentGroupLoadBalancerInfo]] = js.undefined
+  val loadBalancerInfo: js.UndefOr[Input[DeploymentGroupLoadBalancerInfo]] = js.native
   /**
     * On premise tag filters associated with the group. See the AWS docs for details.
     */
-  val onPremisesInstanceTagFilters: js.UndefOr[Input[js.Array[Input[DeploymentGroupOnPremisesInstanceTagFilter]]]] = js.undefined
+  val onPremisesInstanceTagFilters: js.UndefOr[Input[js.Array[Input[DeploymentGroupOnPremisesInstanceTagFilter]]]] = js.native
   /**
     * The service role ARN that allows deployments.
     */
-  val serviceRoleArn: js.UndefOr[Input[String]] = js.undefined
+  val serviceRoleArn: js.UndefOr[Input[String]] = js.native
   /**
     * Configuration block(s) of the triggers for the deployment group (documented below).
     */
-  val triggerConfigurations: js.UndefOr[Input[js.Array[Input[DeploymentGroupTriggerConfiguration]]]] = js.undefined
+  val triggerConfigurations: js.UndefOr[Input[js.Array[Input[DeploymentGroupTriggerConfiguration]]]] = js.native
 }
 
 object DeploymentGroupState {

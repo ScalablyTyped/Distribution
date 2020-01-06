@@ -10,9 +10,9 @@ Put data into tables
 | ------------------ | :-------------: |
 | Full name          | tabulator |
 | Keywords           | - |
-| # releases         | 25 |
+| # releases         | 13 |
 | # dependents       | 1 |
-| # downloads        | 2463 |
+| # downloads        | 4884 |
 | # stars            | 0 |
 
 ## Links

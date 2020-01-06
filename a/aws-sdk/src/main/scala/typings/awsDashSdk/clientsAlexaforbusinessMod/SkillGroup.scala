@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SkillGroup extends js.Object {
   /**
     * The description of a skill group.
     */
-  var Description: js.UndefOr[SkillGroupDescription] = js.undefined
+  var Description: js.UndefOr[SkillGroupDescription] = js.native
   /**
     * The ARN of a skill group.
     */
-  var SkillGroupArn: js.UndefOr[Arn] = js.undefined
+  var SkillGroupArn: js.UndefOr[Arn] = js.native
   /**
     * The name of a skill group.
     */
-  var SkillGroupName: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.SkillGroupName] = js.undefined
+  var SkillGroupName: js.UndefOr[typings.awsDashSdk.clientsAlexaforbusinessMod.SkillGroupName] = js.native
 }
 
 object SkillGroup {
@@ -27,9 +28,9 @@ object SkillGroup {
     SkillGroupName: SkillGroupName = null
   ): SkillGroup = {
     val __obj = js.Dynamic.literal()
-    if (Description != null) __obj.updateDynamic("Description")(Description)
-    if (SkillGroupArn != null) __obj.updateDynamic("SkillGroupArn")(SkillGroupArn)
-    if (SkillGroupName != null) __obj.updateDynamic("SkillGroupName")(SkillGroupName)
+    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (SkillGroupArn != null) __obj.updateDynamic("SkillGroupArn")(SkillGroupArn.asInstanceOf[js.Any])
+    if (SkillGroupName != null) __obj.updateDynamic("SkillGroupName")(SkillGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SkillGroup]
   }
 }

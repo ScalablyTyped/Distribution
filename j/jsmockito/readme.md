@@ -12,7 +12,7 @@ Javascript mocking framework inspired by the awesome mockito
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 27648 |
+| # downloads        | 18212 |
 | # stars            | 0 |
 
 ## Links

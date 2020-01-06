@@ -10,9 +10,9 @@ An mutable object-based log format designed for chaining & objectMode streams.
 | ------------------ | :-------------: |
 | Full name          | logform |
 | Keywords           | winston, logging, format, winstonjs |
-| # releases         | 22 |
-| # dependents       | 28 |
-| # downloads        | 19627611 |
+| # releases         | 16 |
+| # dependents       | 60 |
+| # downloads        | 53766589 |
 | # stars            | 0 |
 
 ## Links

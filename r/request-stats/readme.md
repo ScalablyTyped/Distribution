@@ -10,9 +10,9 @@ Get stats on your Node.js HTTP server requests
 | ------------------ | :-------------: |
 | Full name          | request-stats |
 | Keywords           | stats, statistics, http, https, middleware, connect, express, analytics |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 975543 |
+| # downloads        | 1314465 |
 | # stars            | 3 |
 
 ## Links

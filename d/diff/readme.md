@@ -10,9 +10,9 @@ A javascript text diff implementation.
 | ------------------ | :-------------: |
 | Full name          | diff |
 | Keywords           | diff, javascript |
-| # releases         | 7 |
-| # dependents       | 750 |
-| # downloads        | 310812905 |
+| # releases         | 4 |
+| # dependents       | 901 |
+| # downloads        | 406008901 |
 | # stars            | 77 |
 
 ## Links

@@ -10,43 +10,44 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClusterArgs extends js.Object {
   /**
     * Configuration block for the broker nodes of the Kafka cluster.
     */
-  val brokerNodeGroupInfo: Input[ClusterBrokerNodeGroupInfo]
+  val brokerNodeGroupInfo: Input[ClusterBrokerNodeGroupInfo] = js.native
   /**
     * Configuration block for specifying a client authentication. See below.
     */
-  val clientAuthentication: js.UndefOr[Input[ClusterClientAuthentication]] = js.undefined
+  val clientAuthentication: js.UndefOr[Input[ClusterClientAuthentication]] = js.native
   /**
     * Name of the MSK cluster.
     */
-  val clusterName: Input[String]
+  val clusterName: Input[String] = js.native
   /**
     * Configuration block for specifying a MSK Configuration to attach to Kafka brokers. See below.
     */
-  val configurationInfo: js.UndefOr[Input[ClusterConfigurationInfo]] = js.undefined
+  val configurationInfo: js.UndefOr[Input[ClusterConfigurationInfo]] = js.native
   /**
     * Configuration block for specifying encryption. See below.
     */
-  val encryptionInfo: js.UndefOr[Input[ClusterEncryptionInfo]] = js.undefined
+  val encryptionInfo: js.UndefOr[Input[ClusterEncryptionInfo]] = js.native
   /**
     * Specify the desired enhanced MSK CloudWatch monitoring level.  See [Monitoring Amazon MSK with Amazon CloudWatch](https://docs.aws.amazon.com/msk/latest/developerguide/monitoring.html)
     */
-  val enhancedMonitoring: js.UndefOr[Input[String]] = js.undefined
+  val enhancedMonitoring: js.UndefOr[Input[String]] = js.native
   /**
     * Specify the desired Kafka software version.
     */
-  val kafkaVersion: Input[String]
+  val kafkaVersion: Input[String] = js.native
   /**
     * The desired total number of broker nodes in the kafka cluster.  It must be a multiple of the number of specified client subnets.
     */
-  val numberOfBrokerNodes: Input[Double]
+  val numberOfBrokerNodes: Input[Double] = js.native
   /**
     * A mapping of tags to assign to the resource
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object ClusterArgs {

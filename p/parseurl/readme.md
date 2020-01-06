@@ -10,9 +10,9 @@ parse a url with memoization
 | ------------------ | :-------------: |
 | Full name          | parseurl |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 517 |
-| # downloads        | 303421185 |
+| # releases         | 2 |
+| # dependents       | 570 |
+| # downloads        | 452198843 |
 | # stars            | 22 |
 
 ## Links

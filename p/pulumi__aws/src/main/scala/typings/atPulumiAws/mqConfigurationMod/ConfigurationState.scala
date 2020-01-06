@@ -6,41 +6,42 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ConfigurationState extends js.Object {
   /**
     * The ARN of the configuration.
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * The broker configuration in XML format.
     * See [official docs](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-broker-configuration-parameters.html)
     * for supported parameters and format of the XML.
     */
-  val data: js.UndefOr[Input[String]] = js.undefined
+  val data: js.UndefOr[Input[String]] = js.native
   /**
     * The description of the configuration.
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * The type of broker engine.
     */
-  val engineType: js.UndefOr[Input[String]] = js.undefined
+  val engineType: js.UndefOr[Input[String]] = js.native
   /**
     * The version of the broker engine.
     */
-  val engineVersion: js.UndefOr[Input[String]] = js.undefined
+  val engineVersion: js.UndefOr[Input[String]] = js.native
   /**
     * The latest revision of the configuration.
     */
-  val latestRevision: js.UndefOr[Input[Double]] = js.undefined
+  val latestRevision: js.UndefOr[Input[Double]] = js.native
   /**
     * The name of the configuration
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object ConfigurationState {

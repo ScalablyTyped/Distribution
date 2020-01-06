@@ -4,16 +4,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UpgradeElasticsearchDomainRequest extends js.Object {
-  var DomainName: typings.awsDashSdk.clientsEsMod.DomainName
+  var DomainName: typings.awsDashSdk.clientsEsMod.DomainName = js.native
   /**
     *  This flag, when set to True, indicates that an Upgrade Eligibility Check needs to be performed. This will not actually perform the Upgrade. 
     */
-  var PerformCheckOnly: js.UndefOr[Boolean] = js.undefined
+  var PerformCheckOnly: js.UndefOr[Boolean] = js.native
   /**
     * The version of Elasticsearch that you intend to upgrade the domain to.
     */
-  var TargetVersion: ElasticsearchVersionString
+  var TargetVersion: ElasticsearchVersionString = js.native
 }
 
 object UpgradeElasticsearchDomainRequest {
@@ -23,8 +24,8 @@ object UpgradeElasticsearchDomainRequest {
     TargetVersion: ElasticsearchVersionString,
     PerformCheckOnly: js.UndefOr[scala.Boolean] = js.undefined
   ): UpgradeElasticsearchDomainRequest = {
-    val __obj = js.Dynamic.literal(DomainName = DomainName, TargetVersion = TargetVersion)
-    if (!js.isUndefined(PerformCheckOnly)) __obj.updateDynamic("PerformCheckOnly")(PerformCheckOnly)
+    val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any], TargetVersion = TargetVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(PerformCheckOnly)) __obj.updateDynamic("PerformCheckOnly")(PerformCheckOnly.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpgradeElasticsearchDomainRequest]
   }
 }

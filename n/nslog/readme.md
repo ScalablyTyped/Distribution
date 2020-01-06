@@ -10,9 +10,9 @@ Cross platform native logging
 | ------------------ | :-------------: |
 | Full name          | nslog |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 46285 |
+| # downloads        | 28537 |
 | # stars            | 1 |
 
 ## Links

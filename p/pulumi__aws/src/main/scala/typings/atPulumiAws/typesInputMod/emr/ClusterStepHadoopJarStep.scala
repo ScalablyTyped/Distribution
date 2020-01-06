@@ -6,11 +6,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClusterStepHadoopJarStep extends js.Object {
-  var args: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
-  var jar: Input[String]
-  var mainClass: js.UndefOr[Input[String]] = js.undefined
-  var properties: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  var args: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  var jar: Input[String] = js.native
+  var mainClass: js.UndefOr[Input[String]] = js.native
+  var properties: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object ClusterStepHadoopJarStep {

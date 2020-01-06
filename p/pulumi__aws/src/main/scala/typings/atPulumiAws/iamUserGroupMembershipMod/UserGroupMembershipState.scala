@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UserGroupMembershipState extends js.Object {
   /**
     * A list of [IAM Groups][1] to add the user to
     */
-  val groups: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val groups: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The name of the [IAM User][2] to add to groups
     */
-  val user: js.UndefOr[Input[String]] = js.undefined
+  val user: js.UndefOr[Input[String]] = js.native
 }
 
 object UserGroupMembershipState {

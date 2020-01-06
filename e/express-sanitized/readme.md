@@ -12,7 +12,7 @@ Express middleware for the sanitizer module using Caja's HTML Sanitizer.
 | Keywords           | express, sanitize, sanitization, xss |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 26860 |
+| # downloads        | 23853 |
 | # stars            | 0 |
 
 ## Links

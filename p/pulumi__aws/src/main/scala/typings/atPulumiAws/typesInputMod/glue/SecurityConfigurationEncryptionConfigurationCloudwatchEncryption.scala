@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SecurityConfigurationEncryptionConfigurationCloudwatchEncryption extends js.Object {
   /**
     * Encryption mode to use for CloudWatch data. Valid values: `DISABLED`, `SSE-KMS`. Default value: `DISABLED`.
     */
-  var cloudwatchEncryptionMode: js.UndefOr[Input[String]] = js.undefined
+  var cloudwatchEncryptionMode: js.UndefOr[Input[String]] = js.native
   /**
     * Amazon Resource Name (ARN) of the KMS key to be used to encrypt the data.
     */
-  var kmsKeyArn: js.UndefOr[Input[String]] = js.undefined
+  var kmsKeyArn: js.UndefOr[Input[String]] = js.native
 }
 
 object SecurityConfigurationEncryptionConfigurationCloudwatchEncryption {

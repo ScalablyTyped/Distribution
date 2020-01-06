@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VolumeStatistics extends js.Object {
   /**
     * The total number of emails that arrived in recipients' inboxes.
     */
-  var InboxRawCount: js.UndefOr[Volume] = js.undefined
+  var InboxRawCount: js.UndefOr[Volume] = js.native
   /**
     * An estimate of the percentage of emails sent from the current domain that will arrive in recipients' inboxes.
     */
-  var ProjectedInbox: js.UndefOr[Volume] = js.undefined
+  var ProjectedInbox: js.UndefOr[Volume] = js.native
   /**
     * An estimate of the percentage of emails sent from the current domain that will arrive in recipients' spam or junk mail folders.
     */
-  var ProjectedSpam: js.UndefOr[Volume] = js.undefined
+  var ProjectedSpam: js.UndefOr[Volume] = js.native
   /**
     * The total number of emails that arrived in recipients' spam or junk mail folders.
     */
-  var SpamRawCount: js.UndefOr[Volume] = js.undefined
+  var SpamRawCount: js.UndefOr[Volume] = js.native
 }
 
 object VolumeStatistics {

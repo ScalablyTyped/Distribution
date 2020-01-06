@@ -5,20 +5,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SecurityGroupArgs extends js.Object {
   /**
     * description for the cache security group. Defaults to "Managed by Pulumi".
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * Name for the cache security group. This value is stored as a lowercase string.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * List of EC2 security group names to be
     * authorized for ingress to the cache security group
     */
-  val securityGroupNames: Input[js.Array[Input[String]]]
+  val securityGroupNames: Input[js.Array[Input[String]]] = js.native
 }
 
 object SecurityGroupArgs {

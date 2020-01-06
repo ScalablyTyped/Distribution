@@ -10,9 +10,9 @@ A development middleware for webpack
 | ------------------ | :-------------: |
 | Full name          | webpack-dev-middleware |
 | Keywords           | webpack, middleware, develompent |
-| # releases         | 27 |
-| # dependents       | 1347 |
-| # downloads        | 202370443 |
+| # releases         | 22 |
+| # dependents       | 1567 |
+| # downloads        | 316849049 |
 | # stars            | 51 |
 
 ## Links

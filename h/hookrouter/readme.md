@@ -10,9 +10,9 @@ A hook based router for React
 | ------------------ | :-------------: |
 | Full name          | hookrouter |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 1 |
-| # downloads        | 1886 |
+| # releases         | 18 |
+| # dependents       | 4 |
+| # downloads        | 100659 |
 | # stars            | 0 |
 
 ## Links

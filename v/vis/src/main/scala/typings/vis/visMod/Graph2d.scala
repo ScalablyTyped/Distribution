@@ -40,9 +40,9 @@ class Graph2d protected () extends js.Object {
    // TODO
   def getSelection(): js.Array[IdType] = js.native
   def getVisibleItems(): js.Array[IdType] = js.native
-  def getWindow(): Anon_End = js.native
+  def getWindow(): TimelineWindow = js.native
   @JSName("getWindow")
-  def getWindow_TimelineWindow(): TimelineWindow = js.native
+  def getWindow_Anon_End(): Anon_End = js.native
   def moveTo(time: DateType): Unit = js.native
   def moveTo(time: DateType, options: TimelineAnimationOptions): Unit = js.native
   def off(event: TimelineEvents, callback: js.Function0[Unit]): Unit = js.native

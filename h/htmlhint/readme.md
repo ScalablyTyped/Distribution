@@ -11,9 +11,9 @@ The Static Code Analysis Tool for your HTML
 | Full name          | htmlhint |
 | Keywords           | html, hint, analysis, javascript |
 | # releases         | 6 |
-| # dependents       | 56 |
-| # downloads        | 1871826 |
-| # stars            | 7 |
+| # dependents       | 64 |
+| # downloads        | 2114427 |
+| # stars            | 8 |
 
 ## Links
 - [Homepage](https://github.com/thedaviddias/HTMLHint#readme)

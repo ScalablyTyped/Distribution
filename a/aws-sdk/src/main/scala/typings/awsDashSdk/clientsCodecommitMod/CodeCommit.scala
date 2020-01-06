@@ -13,6 +13,42 @@ trait CodeCommit extends Service {
   @JSName("config")
   var config_CodeCommit: ConfigBase with ClientConfiguration = js.native
   /**
+    * Creates an association between an approval rule template and a specified repository. Then, the next time a pull request is created in the repository where the destination reference (if specified) matches the destination reference (branch) for the pull request, an approval rule that matches the template conditions is automatically created for that pull request. If no destination references are specified in the template, an approval rule that matches the template contents is created for all pull requests in that repository.
+    */
+  def associateApprovalRuleTemplateWithRepository(): Request[js.Object, AWSError] = js.native
+  def associateApprovalRuleTemplateWithRepository(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Creates an association between an approval rule template and a specified repository. Then, the next time a pull request is created in the repository where the destination reference (if specified) matches the destination reference (branch) for the pull request, an approval rule that matches the template conditions is automatically created for that pull request. If no destination references are specified in the template, an approval rule that matches the template contents is created for all pull requests in that repository.
+    */
+  def associateApprovalRuleTemplateWithRepository(params: AssociateApprovalRuleTemplateWithRepositoryInput): Request[js.Object, AWSError] = js.native
+  def associateApprovalRuleTemplateWithRepository(
+    params: AssociateApprovalRuleTemplateWithRepositoryInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  /**
+    * Creates an association between an approval rule template and one or more specified repositories. 
+    */
+  def batchAssociateApprovalRuleTemplateWithRepositories(): Request[BatchAssociateApprovalRuleTemplateWithRepositoriesOutput, AWSError] = js.native
+  def batchAssociateApprovalRuleTemplateWithRepositories(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ BatchAssociateApprovalRuleTemplateWithRepositoriesOutput, 
+      Unit
+    ]
+  ): Request[BatchAssociateApprovalRuleTemplateWithRepositoriesOutput, AWSError] = js.native
+  /**
+    * Creates an association between an approval rule template and one or more specified repositories. 
+    */
+  def batchAssociateApprovalRuleTemplateWithRepositories(params: BatchAssociateApprovalRuleTemplateWithRepositoriesInput): Request[BatchAssociateApprovalRuleTemplateWithRepositoriesOutput, AWSError] = js.native
+  def batchAssociateApprovalRuleTemplateWithRepositories(
+    params: BatchAssociateApprovalRuleTemplateWithRepositoriesInput,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ BatchAssociateApprovalRuleTemplateWithRepositoriesOutput, 
+      Unit
+    ]
+  ): Request[BatchAssociateApprovalRuleTemplateWithRepositoriesOutput, AWSError] = js.native
+  /**
     * Returns information about one or more merge conflicts in the attempted merge of two commit specifiers using the squash or three-way merge strategy.
     */
   def batchDescribeMergeConflicts(): Request[BatchDescribeMergeConflictsOutput, AWSError] = js.native
@@ -25,6 +61,29 @@ trait CodeCommit extends Service {
     params: BatchDescribeMergeConflictsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ BatchDescribeMergeConflictsOutput, Unit]
   ): Request[BatchDescribeMergeConflictsOutput, AWSError] = js.native
+  /**
+    * Removes the association between an approval rule template and one or more specified repositories. 
+    */
+  def batchDisassociateApprovalRuleTemplateFromRepositories(): Request[BatchDisassociateApprovalRuleTemplateFromRepositoriesOutput, AWSError] = js.native
+  def batchDisassociateApprovalRuleTemplateFromRepositories(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ BatchDisassociateApprovalRuleTemplateFromRepositoriesOutput, 
+      Unit
+    ]
+  ): Request[BatchDisassociateApprovalRuleTemplateFromRepositoriesOutput, AWSError] = js.native
+  /**
+    * Removes the association between an approval rule template and one or more specified repositories. 
+    */
+  def batchDisassociateApprovalRuleTemplateFromRepositories(params: BatchDisassociateApprovalRuleTemplateFromRepositoriesInput): Request[BatchDisassociateApprovalRuleTemplateFromRepositoriesOutput, AWSError] = js.native
+  def batchDisassociateApprovalRuleTemplateFromRepositories(
+    params: BatchDisassociateApprovalRuleTemplateFromRepositoriesInput,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ BatchDisassociateApprovalRuleTemplateFromRepositoriesOutput, 
+      Unit
+    ]
+  ): Request[BatchDisassociateApprovalRuleTemplateFromRepositoriesOutput, AWSError] = js.native
   /**
     * Returns information about the contents of one or more commits in a repository.
     */
@@ -39,12 +98,12 @@ trait CodeCommit extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ BatchGetCommitsOutput, Unit]
   ): Request[BatchGetCommitsOutput, AWSError] = js.native
   /**
-    * Returns information about one or more repositories.  The description field for a repository accepts all HTML characters and all valid Unicode characters. Applications that do not HTML-encode the description and display it in a web page could expose users to potentially malicious code. Make sure that you HTML-encode the description field in any application that uses this API to display the repository description on a web page. 
+    * Returns information about one or more repositories.  The description field for a repository accepts all HTML characters and all valid Unicode characters. Applications that do not HTML-encode the description and display it in a webpage can expose users to potentially malicious code. Make sure that you HTML-encode the description field in any application that uses this API to display the repository description on a webpage. 
     */
   def batchGetRepositories(): Request[BatchGetRepositoriesOutput, AWSError] = js.native
   def batchGetRepositories(callback: js.Function2[/* err */ AWSError, /* data */ BatchGetRepositoriesOutput, Unit]): Request[BatchGetRepositoriesOutput, AWSError] = js.native
   /**
-    * Returns information about one or more repositories.  The description field for a repository accepts all HTML characters and all valid Unicode characters. Applications that do not HTML-encode the description and display it in a web page could expose users to potentially malicious code. Make sure that you HTML-encode the description field in any application that uses this API to display the repository description on a web page. 
+    * Returns information about one or more repositories.  The description field for a repository accepts all HTML characters and all valid Unicode characters. Applications that do not HTML-encode the description and display it in a webpage can expose users to potentially malicious code. Make sure that you HTML-encode the description field in any application that uses this API to display the repository description on a webpage. 
     */
   def batchGetRepositories(params: BatchGetRepositoriesInput): Request[BatchGetRepositoriesOutput, AWSError] = js.native
   def batchGetRepositories(
@@ -52,12 +111,25 @@ trait CodeCommit extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ BatchGetRepositoriesOutput, Unit]
   ): Request[BatchGetRepositoriesOutput, AWSError] = js.native
   /**
-    * Creates a new branch in a repository and points the branch to a commit.  Calling the create branch operation does not set a repository's default branch. To do this, call the update default branch operation. 
+    * Creates a template for approval rules that can then be associated with one or more repositories in your AWS account. When you associate a template with a repository, AWS CodeCommit creates an approval rule that matches the conditions of the template for all pull requests that meet the conditions of the template. For more information, see AssociateApprovalRuleTemplateWithRepository.
+    */
+  def createApprovalRuleTemplate(): Request[CreateApprovalRuleTemplateOutput, AWSError] = js.native
+  def createApprovalRuleTemplate(callback: js.Function2[/* err */ AWSError, /* data */ CreateApprovalRuleTemplateOutput, Unit]): Request[CreateApprovalRuleTemplateOutput, AWSError] = js.native
+  /**
+    * Creates a template for approval rules that can then be associated with one or more repositories in your AWS account. When you associate a template with a repository, AWS CodeCommit creates an approval rule that matches the conditions of the template for all pull requests that meet the conditions of the template. For more information, see AssociateApprovalRuleTemplateWithRepository.
+    */
+  def createApprovalRuleTemplate(params: CreateApprovalRuleTemplateInput): Request[CreateApprovalRuleTemplateOutput, AWSError] = js.native
+  def createApprovalRuleTemplate(
+    params: CreateApprovalRuleTemplateInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateApprovalRuleTemplateOutput, Unit]
+  ): Request[CreateApprovalRuleTemplateOutput, AWSError] = js.native
+  /**
+    * Creates a branch in a repository and points the branch to a commit.  Calling the create branch operation does not set a repository's default branch. To do this, call the update default branch operation. 
     */
   def createBranch(): Request[js.Object, AWSError] = js.native
   def createBranch(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Creates a new branch in a repository and points the branch to a commit.  Calling the create branch operation does not set a repository's default branch. To do this, call the update default branch operation. 
+    * Creates a branch in a repository and points the branch to a commit.  Calling the create branch operation does not set a repository's default branch. To do this, call the update default branch operation. 
     */
   def createBranch(params: CreateBranchInput): Request[js.Object, AWSError] = js.native
   def createBranch(params: CreateBranchInput, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
@@ -88,6 +160,19 @@ trait CodeCommit extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreatePullRequestOutput, Unit]
   ): Request[CreatePullRequestOutput, AWSError] = js.native
   /**
+    * Creates an approval rule for a pull request.
+    */
+  def createPullRequestApprovalRule(): Request[CreatePullRequestApprovalRuleOutput, AWSError] = js.native
+  def createPullRequestApprovalRule(callback: js.Function2[/* err */ AWSError, /* data */ CreatePullRequestApprovalRuleOutput, Unit]): Request[CreatePullRequestApprovalRuleOutput, AWSError] = js.native
+  /**
+    * Creates an approval rule for a pull request.
+    */
+  def createPullRequestApprovalRule(params: CreatePullRequestApprovalRuleInput): Request[CreatePullRequestApprovalRuleOutput, AWSError] = js.native
+  def createPullRequestApprovalRule(
+    params: CreatePullRequestApprovalRuleInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreatePullRequestApprovalRuleOutput, Unit]
+  ): Request[CreatePullRequestApprovalRuleOutput, AWSError] = js.native
+  /**
     * Creates a new, empty repository.
     */
   def createRepository(): Request[CreateRepositoryOutput, AWSError] = js.native
@@ -101,18 +186,31 @@ trait CodeCommit extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateRepositoryOutput, Unit]
   ): Request[CreateRepositoryOutput, AWSError] = js.native
   /**
-    * Creates an unreferenced commit that represents the result of merging two branches using a specified merge strategy. This can help you determine the outcome of a potential merge. This API cannot be used with the fast-forward merge strategy, as that strategy does not create a merge commit.  This unreferenced merge commit can only be accessed using the GetCommit API or through git commands such as git fetch. To retrieve this commit, you must specify its commit ID or otherwise reference it. 
+    * Creates an unreferenced commit that represents the result of merging two branches using a specified merge strategy. This can help you determine the outcome of a potential merge. This API cannot be used with the fast-forward merge strategy because that strategy does not create a merge commit.  This unreferenced merge commit can only be accessed using the GetCommit API or through git commands such as git fetch. To retrieve this commit, you must specify its commit ID or otherwise reference it. 
     */
   def createUnreferencedMergeCommit(): Request[CreateUnreferencedMergeCommitOutput, AWSError] = js.native
   def createUnreferencedMergeCommit(callback: js.Function2[/* err */ AWSError, /* data */ CreateUnreferencedMergeCommitOutput, Unit]): Request[CreateUnreferencedMergeCommitOutput, AWSError] = js.native
   /**
-    * Creates an unreferenced commit that represents the result of merging two branches using a specified merge strategy. This can help you determine the outcome of a potential merge. This API cannot be used with the fast-forward merge strategy, as that strategy does not create a merge commit.  This unreferenced merge commit can only be accessed using the GetCommit API or through git commands such as git fetch. To retrieve this commit, you must specify its commit ID or otherwise reference it. 
+    * Creates an unreferenced commit that represents the result of merging two branches using a specified merge strategy. This can help you determine the outcome of a potential merge. This API cannot be used with the fast-forward merge strategy because that strategy does not create a merge commit.  This unreferenced merge commit can only be accessed using the GetCommit API or through git commands such as git fetch. To retrieve this commit, you must specify its commit ID or otherwise reference it. 
     */
   def createUnreferencedMergeCommit(params: CreateUnreferencedMergeCommitInput): Request[CreateUnreferencedMergeCommitOutput, AWSError] = js.native
   def createUnreferencedMergeCommit(
     params: CreateUnreferencedMergeCommitInput,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateUnreferencedMergeCommitOutput, Unit]
   ): Request[CreateUnreferencedMergeCommitOutput, AWSError] = js.native
+  /**
+    * Deletes a specified approval rule template. Deleting a template does not remove approval rules on pull requests already created with the template.
+    */
+  def deleteApprovalRuleTemplate(): Request[DeleteApprovalRuleTemplateOutput, AWSError] = js.native
+  def deleteApprovalRuleTemplate(callback: js.Function2[/* err */ AWSError, /* data */ DeleteApprovalRuleTemplateOutput, Unit]): Request[DeleteApprovalRuleTemplateOutput, AWSError] = js.native
+  /**
+    * Deletes a specified approval rule template. Deleting a template does not remove approval rules on pull requests already created with the template.
+    */
+  def deleteApprovalRuleTemplate(params: DeleteApprovalRuleTemplateInput): Request[DeleteApprovalRuleTemplateOutput, AWSError] = js.native
+  def deleteApprovalRuleTemplate(
+    params: DeleteApprovalRuleTemplateInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteApprovalRuleTemplateOutput, Unit]
+  ): Request[DeleteApprovalRuleTemplateOutput, AWSError] = js.native
   /**
     * Deletes a branch from a repository, unless that branch is the default branch for the repository. 
     */
@@ -140,12 +238,12 @@ trait CodeCommit extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteCommentContentOutput, Unit]
   ): Request[DeleteCommentContentOutput, AWSError] = js.native
   /**
-    * Deletes a specified file from a specified branch. A commit is created on the branch that contains the revision. The file will still exist in the commits prior to the commit that contains the deletion.
+    * Deletes a specified file from a specified branch. A commit is created on the branch that contains the revision. The file still exists in the commits earlier to the commit that contains the deletion.
     */
   def deleteFile(): Request[DeleteFileOutput, AWSError] = js.native
   def deleteFile(callback: js.Function2[/* err */ AWSError, /* data */ DeleteFileOutput, Unit]): Request[DeleteFileOutput, AWSError] = js.native
   /**
-    * Deletes a specified file from a specified branch. A commit is created on the branch that contains the revision. The file will still exist in the commits prior to the commit that contains the deletion.
+    * Deletes a specified file from a specified branch. A commit is created on the branch that contains the revision. The file still exists in the commits earlier to the commit that contains the deletion.
     */
   def deleteFile(params: DeleteFileInput): Request[DeleteFileOutput, AWSError] = js.native
   def deleteFile(
@@ -153,12 +251,25 @@ trait CodeCommit extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteFileOutput, Unit]
   ): Request[DeleteFileOutput, AWSError] = js.native
   /**
-    * Deletes a repository. If a specified repository was already deleted, a null repository ID will be returned.  Deleting a repository also deletes all associated objects and metadata. After a repository is deleted, all future push calls to the deleted repository will fail. 
+    * Deletes an approval rule from a specified pull request. Approval rules can be deleted from a pull request only if the pull request is open, and if the approval rule was created specifically for a pull request and not generated from an approval rule template associated with the repository where the pull request was created. You cannot delete an approval rule from a merged or closed pull request.
+    */
+  def deletePullRequestApprovalRule(): Request[DeletePullRequestApprovalRuleOutput, AWSError] = js.native
+  def deletePullRequestApprovalRule(callback: js.Function2[/* err */ AWSError, /* data */ DeletePullRequestApprovalRuleOutput, Unit]): Request[DeletePullRequestApprovalRuleOutput, AWSError] = js.native
+  /**
+    * Deletes an approval rule from a specified pull request. Approval rules can be deleted from a pull request only if the pull request is open, and if the approval rule was created specifically for a pull request and not generated from an approval rule template associated with the repository where the pull request was created. You cannot delete an approval rule from a merged or closed pull request.
+    */
+  def deletePullRequestApprovalRule(params: DeletePullRequestApprovalRuleInput): Request[DeletePullRequestApprovalRuleOutput, AWSError] = js.native
+  def deletePullRequestApprovalRule(
+    params: DeletePullRequestApprovalRuleInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeletePullRequestApprovalRuleOutput, Unit]
+  ): Request[DeletePullRequestApprovalRuleOutput, AWSError] = js.native
+  /**
+    * Deletes a repository. If a specified repository was already deleted, a null repository ID is returned.  Deleting a repository also deletes all associated objects and metadata. After a repository is deleted, all future push calls to the deleted repository fail. 
     */
   def deleteRepository(): Request[DeleteRepositoryOutput, AWSError] = js.native
   def deleteRepository(callback: js.Function2[/* err */ AWSError, /* data */ DeleteRepositoryOutput, Unit]): Request[DeleteRepositoryOutput, AWSError] = js.native
   /**
-    * Deletes a repository. If a specified repository was already deleted, a null repository ID will be returned.  Deleting a repository also deletes all associated objects and metadata. After a repository is deleted, all future push calls to the deleted repository will fail. 
+    * Deletes a repository. If a specified repository was already deleted, a null repository ID is returned.  Deleting a repository also deletes all associated objects and metadata. After a repository is deleted, all future push calls to the deleted repository fail. 
     */
   def deleteRepository(params: DeleteRepositoryInput): Request[DeleteRepositoryOutput, AWSError] = js.native
   def deleteRepository(
@@ -166,12 +277,12 @@ trait CodeCommit extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteRepositoryOutput, Unit]
   ): Request[DeleteRepositoryOutput, AWSError] = js.native
   /**
-    * Returns information about one or more merge conflicts in the attempted merge of two commit specifiers using the squash or three-way merge strategy. If the merge option for the attempted merge is specified as FAST_FORWARD_MERGE, an exception will be thrown.
+    * Returns information about one or more merge conflicts in the attempted merge of two commit specifiers using the squash or three-way merge strategy. If the merge option for the attempted merge is specified as FAST_FORWARD_MERGE, an exception is thrown.
     */
   def describeMergeConflicts(): Request[DescribeMergeConflictsOutput, AWSError] = js.native
   def describeMergeConflicts(callback: js.Function2[/* err */ AWSError, /* data */ DescribeMergeConflictsOutput, Unit]): Request[DescribeMergeConflictsOutput, AWSError] = js.native
   /**
-    * Returns information about one or more merge conflicts in the attempted merge of two commit specifiers using the squash or three-way merge strategy. If the merge option for the attempted merge is specified as FAST_FORWARD_MERGE, an exception will be thrown.
+    * Returns information about one or more merge conflicts in the attempted merge of two commit specifiers using the squash or three-way merge strategy. If the merge option for the attempted merge is specified as FAST_FORWARD_MERGE, an exception is thrown.
     */
   def describeMergeConflicts(params: DescribeMergeConflictsInput): Request[DescribeMergeConflictsOutput, AWSError] = js.native
   def describeMergeConflicts(
@@ -192,12 +303,53 @@ trait CodeCommit extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribePullRequestEventsOutput, Unit]
   ): Request[DescribePullRequestEventsOutput, AWSError] = js.native
   /**
-    * Returns the base-64 encoded content of an individual blob within a repository.
+    * Removes the association between a template and a repository so that approval rules based on the template are not automatically created when pull requests are created in the specified repository. This does not delete any approval rules previously created for pull requests through the template association.
+    */
+  def disassociateApprovalRuleTemplateFromRepository(): Request[js.Object, AWSError] = js.native
+  def disassociateApprovalRuleTemplateFromRepository(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Removes the association between a template and a repository so that approval rules based on the template are not automatically created when pull requests are created in the specified repository. This does not delete any approval rules previously created for pull requests through the template association.
+    */
+  def disassociateApprovalRuleTemplateFromRepository(params: DisassociateApprovalRuleTemplateFromRepositoryInput): Request[js.Object, AWSError] = js.native
+  def disassociateApprovalRuleTemplateFromRepository(
+    params: DisassociateApprovalRuleTemplateFromRepositoryInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  /**
+    * Evaluates whether a pull request has met all the conditions specified in its associated approval rules.
+    */
+  def evaluatePullRequestApprovalRules(): Request[EvaluatePullRequestApprovalRulesOutput, AWSError] = js.native
+  def evaluatePullRequestApprovalRules(
+    callback: js.Function2[/* err */ AWSError, /* data */ EvaluatePullRequestApprovalRulesOutput, Unit]
+  ): Request[EvaluatePullRequestApprovalRulesOutput, AWSError] = js.native
+  /**
+    * Evaluates whether a pull request has met all the conditions specified in its associated approval rules.
+    */
+  def evaluatePullRequestApprovalRules(params: EvaluatePullRequestApprovalRulesInput): Request[EvaluatePullRequestApprovalRulesOutput, AWSError] = js.native
+  def evaluatePullRequestApprovalRules(
+    params: EvaluatePullRequestApprovalRulesInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ EvaluatePullRequestApprovalRulesOutput, Unit]
+  ): Request[EvaluatePullRequestApprovalRulesOutput, AWSError] = js.native
+  /**
+    * Returns information about a specified approval rule template.
+    */
+  def getApprovalRuleTemplate(): Request[GetApprovalRuleTemplateOutput, AWSError] = js.native
+  def getApprovalRuleTemplate(callback: js.Function2[/* err */ AWSError, /* data */ GetApprovalRuleTemplateOutput, Unit]): Request[GetApprovalRuleTemplateOutput, AWSError] = js.native
+  /**
+    * Returns information about a specified approval rule template.
+    */
+  def getApprovalRuleTemplate(params: GetApprovalRuleTemplateInput): Request[GetApprovalRuleTemplateOutput, AWSError] = js.native
+  def getApprovalRuleTemplate(
+    params: GetApprovalRuleTemplateInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetApprovalRuleTemplateOutput, Unit]
+  ): Request[GetApprovalRuleTemplateOutput, AWSError] = js.native
+  /**
+    * Returns the base-64 encoded content of an individual blob in a repository.
     */
   def getBlob(): Request[GetBlobOutput, AWSError] = js.native
   def getBlob(callback: js.Function2[/* err */ AWSError, /* data */ GetBlobOutput, Unit]): Request[GetBlobOutput, AWSError] = js.native
   /**
-    * Returns the base-64 encoded content of an individual blob within a repository.
+    * Returns the base-64 encoded content of an individual blob in a repository.
     */
   def getBlob(params: GetBlobInput): Request[GetBlobOutput, AWSError] = js.native
   def getBlob(params: GetBlobInput, callback: js.Function2[/* err */ AWSError, /* data */ GetBlobOutput, Unit]): Request[GetBlobOutput, AWSError] = js.native
@@ -267,12 +419,12 @@ trait CodeCommit extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetCommitOutput, Unit]
   ): Request[GetCommitOutput, AWSError] = js.native
   /**
-    * Returns information about the differences in a valid commit specifier (such as a branch, tag, HEAD, commit ID or other fully qualified reference). Results can be limited to a specified path.
+    * Returns information about the differences in a valid commit specifier (such as a branch, tag, HEAD, commit ID, or other fully qualified reference). Results can be limited to a specified path.
     */
   def getDifferences(): Request[GetDifferencesOutput, AWSError] = js.native
   def getDifferences(callback: js.Function2[/* err */ AWSError, /* data */ GetDifferencesOutput, Unit]): Request[GetDifferencesOutput, AWSError] = js.native
   /**
-    * Returns information about the differences in a valid commit specifier (such as a branch, tag, HEAD, commit ID or other fully qualified reference). Results can be limited to a specified path.
+    * Returns information about the differences in a valid commit specifier (such as a branch, tag, HEAD, commit ID, or other fully qualified reference). Results can be limited to a specified path.
     */
   def getDifferences(params: GetDifferencesInput): Request[GetDifferencesOutput, AWSError] = js.native
   def getDifferences(
@@ -329,12 +481,12 @@ trait CodeCommit extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetMergeConflictsOutput, Unit]
   ): Request[GetMergeConflictsOutput, AWSError] = js.native
   /**
-    * Returns information about the merge options available for merging two specified branches. For details about why a particular merge option is not available, use GetMergeConflicts or DescribeMergeConflicts.
+    * Returns information about the merge options available for merging two specified branches. For details about why a merge option is not available, use GetMergeConflicts or DescribeMergeConflicts.
     */
   def getMergeOptions(): Request[GetMergeOptionsOutput, AWSError] = js.native
   def getMergeOptions(callback: js.Function2[/* err */ AWSError, /* data */ GetMergeOptionsOutput, Unit]): Request[GetMergeOptionsOutput, AWSError] = js.native
   /**
-    * Returns information about the merge options available for merging two specified branches. For details about why a particular merge option is not available, use GetMergeConflicts or DescribeMergeConflicts.
+    * Returns information about the merge options available for merging two specified branches. For details about why a merge option is not available, use GetMergeConflicts or DescribeMergeConflicts.
     */
   def getMergeOptions(params: GetMergeOptionsInput): Request[GetMergeOptionsOutput, AWSError] = js.native
   def getMergeOptions(
@@ -355,12 +507,38 @@ trait CodeCommit extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetPullRequestOutput, Unit]
   ): Request[GetPullRequestOutput, AWSError] = js.native
   /**
-    * Returns information about a repository.  The description field for a repository accepts all HTML characters and all valid Unicode characters. Applications that do not HTML-encode the description and display it in a web page could expose users to potentially malicious code. Make sure that you HTML-encode the description field in any application that uses this API to display the repository description on a web page. 
+    * Gets information about the approval states for a specified pull request. Approval states only apply to pull requests that have one or more approval rules applied to them.
+    */
+  def getPullRequestApprovalStates(): Request[GetPullRequestApprovalStatesOutput, AWSError] = js.native
+  def getPullRequestApprovalStates(callback: js.Function2[/* err */ AWSError, /* data */ GetPullRequestApprovalStatesOutput, Unit]): Request[GetPullRequestApprovalStatesOutput, AWSError] = js.native
+  /**
+    * Gets information about the approval states for a specified pull request. Approval states only apply to pull requests that have one or more approval rules applied to them.
+    */
+  def getPullRequestApprovalStates(params: GetPullRequestApprovalStatesInput): Request[GetPullRequestApprovalStatesOutput, AWSError] = js.native
+  def getPullRequestApprovalStates(
+    params: GetPullRequestApprovalStatesInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetPullRequestApprovalStatesOutput, Unit]
+  ): Request[GetPullRequestApprovalStatesOutput, AWSError] = js.native
+  /**
+    * Returns information about whether approval rules have been set aside (overridden) for a pull request, and if so, the Amazon Resource Name (ARN) of the user or identity that overrode the rules and their requirements for the pull request.
+    */
+  def getPullRequestOverrideState(): Request[GetPullRequestOverrideStateOutput, AWSError] = js.native
+  def getPullRequestOverrideState(callback: js.Function2[/* err */ AWSError, /* data */ GetPullRequestOverrideStateOutput, Unit]): Request[GetPullRequestOverrideStateOutput, AWSError] = js.native
+  /**
+    * Returns information about whether approval rules have been set aside (overridden) for a pull request, and if so, the Amazon Resource Name (ARN) of the user or identity that overrode the rules and their requirements for the pull request.
+    */
+  def getPullRequestOverrideState(params: GetPullRequestOverrideStateInput): Request[GetPullRequestOverrideStateOutput, AWSError] = js.native
+  def getPullRequestOverrideState(
+    params: GetPullRequestOverrideStateInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetPullRequestOverrideStateOutput, Unit]
+  ): Request[GetPullRequestOverrideStateOutput, AWSError] = js.native
+  /**
+    * Returns information about a repository.  The description field for a repository accepts all HTML characters and all valid Unicode characters. Applications that do not HTML-encode the description and display it in a webpage can expose users to potentially malicious code. Make sure that you HTML-encode the description field in any application that uses this API to display the repository description on a webpage. 
     */
   def getRepository(): Request[GetRepositoryOutput, AWSError] = js.native
   def getRepository(callback: js.Function2[/* err */ AWSError, /* data */ GetRepositoryOutput, Unit]): Request[GetRepositoryOutput, AWSError] = js.native
   /**
-    * Returns information about a repository.  The description field for a repository accepts all HTML characters and all valid Unicode characters. Applications that do not HTML-encode the description and display it in a web page could expose users to potentially malicious code. Make sure that you HTML-encode the description field in any application that uses this API to display the repository description on a web page. 
+    * Returns information about a repository.  The description field for a repository accepts all HTML characters and all valid Unicode characters. Applications that do not HTML-encode the description and display it in a webpage can expose users to potentially malicious code. Make sure that you HTML-encode the description field in any application that uses this API to display the repository description on a webpage. 
     */
   def getRepository(params: GetRepositoryInput): Request[GetRepositoryOutput, AWSError] = js.native
   def getRepository(
@@ -380,6 +558,42 @@ trait CodeCommit extends Service {
     params: GetRepositoryTriggersInput,
     callback: js.Function2[/* err */ AWSError, /* data */ GetRepositoryTriggersOutput, Unit]
   ): Request[GetRepositoryTriggersOutput, AWSError] = js.native
+  /**
+    * Lists all approval rule templates in the specified AWS Region in your AWS account. If an AWS Region is not specified, the AWS Region where you are signed in is used.
+    */
+  def listApprovalRuleTemplates(): Request[ListApprovalRuleTemplatesOutput, AWSError] = js.native
+  def listApprovalRuleTemplates(callback: js.Function2[/* err */ AWSError, /* data */ ListApprovalRuleTemplatesOutput, Unit]): Request[ListApprovalRuleTemplatesOutput, AWSError] = js.native
+  /**
+    * Lists all approval rule templates in the specified AWS Region in your AWS account. If an AWS Region is not specified, the AWS Region where you are signed in is used.
+    */
+  def listApprovalRuleTemplates(params: ListApprovalRuleTemplatesInput): Request[ListApprovalRuleTemplatesOutput, AWSError] = js.native
+  def listApprovalRuleTemplates(
+    params: ListApprovalRuleTemplatesInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListApprovalRuleTemplatesOutput, Unit]
+  ): Request[ListApprovalRuleTemplatesOutput, AWSError] = js.native
+  /**
+    * Lists all approval rule templates that are associated with a specified repository.
+    */
+  def listAssociatedApprovalRuleTemplatesForRepository(): Request[ListAssociatedApprovalRuleTemplatesForRepositoryOutput, AWSError] = js.native
+  def listAssociatedApprovalRuleTemplatesForRepository(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ ListAssociatedApprovalRuleTemplatesForRepositoryOutput, 
+      Unit
+    ]
+  ): Request[ListAssociatedApprovalRuleTemplatesForRepositoryOutput, AWSError] = js.native
+  /**
+    * Lists all approval rule templates that are associated with a specified repository.
+    */
+  def listAssociatedApprovalRuleTemplatesForRepository(params: ListAssociatedApprovalRuleTemplatesForRepositoryInput): Request[ListAssociatedApprovalRuleTemplatesForRepositoryOutput, AWSError] = js.native
+  def listAssociatedApprovalRuleTemplatesForRepository(
+    params: ListAssociatedApprovalRuleTemplatesForRepositoryInput,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ ListAssociatedApprovalRuleTemplatesForRepositoryOutput, 
+      Unit
+    ]
+  ): Request[ListAssociatedApprovalRuleTemplatesForRepositoryOutput, AWSError] = js.native
   /**
     * Gets information about one or more branches in a repository.
     */
@@ -419,6 +633,21 @@ trait CodeCommit extends Service {
     params: ListRepositoriesInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListRepositoriesOutput, Unit]
   ): Request[ListRepositoriesOutput, AWSError] = js.native
+  /**
+    * Lists all repositories associated with the specified approval rule template.
+    */
+  def listRepositoriesForApprovalRuleTemplate(): Request[ListRepositoriesForApprovalRuleTemplateOutput, AWSError] = js.native
+  def listRepositoriesForApprovalRuleTemplate(
+    callback: js.Function2[/* err */ AWSError, /* data */ ListRepositoriesForApprovalRuleTemplateOutput, Unit]
+  ): Request[ListRepositoriesForApprovalRuleTemplateOutput, AWSError] = js.native
+  /**
+    * Lists all repositories associated with the specified approval rule template.
+    */
+  def listRepositoriesForApprovalRuleTemplate(params: ListRepositoriesForApprovalRuleTemplateInput): Request[ListRepositoriesForApprovalRuleTemplateOutput, AWSError] = js.native
+  def listRepositoriesForApprovalRuleTemplate(
+    params: ListRepositoriesForApprovalRuleTemplateInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListRepositoriesForApprovalRuleTemplateOutput, Unit]
+  ): Request[ListRepositoriesForApprovalRuleTemplateOutput, AWSError] = js.native
   /**
     * Gets information about AWS tags for a specified Amazon Resource Name (ARN) in AWS CodeCommit. For a list of valid resources in AWS CodeCommit, see CodeCommit Resources and Operations in the AWS CodeCommit User Guide.
     */
@@ -511,6 +740,19 @@ trait CodeCommit extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ MergePullRequestByThreeWayOutput, Unit]
   ): Request[MergePullRequestByThreeWayOutput, AWSError] = js.native
   /**
+    * Sets aside (overrides) all approval rule requirements for a specified pull request.
+    */
+  def overridePullRequestApprovalRules(): Request[js.Object, AWSError] = js.native
+  def overridePullRequestApprovalRules(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Sets aside (overrides) all approval rule requirements for a specified pull request.
+    */
+  def overridePullRequestApprovalRules(params: OverridePullRequestApprovalRulesInput): Request[js.Object, AWSError] = js.native
+  def overridePullRequestApprovalRules(
+    params: OverridePullRequestApprovalRulesInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  /**
     * Posts a comment on the comparison between two commits.
     */
   def postCommentForComparedCommit(): Request[PostCommentForComparedCommitOutput, AWSError] = js.native
@@ -560,12 +802,12 @@ trait CodeCommit extends Service {
   def putFile(params: PutFileInput): Request[PutFileOutput, AWSError] = js.native
   def putFile(params: PutFileInput, callback: js.Function2[/* err */ AWSError, /* data */ PutFileOutput, Unit]): Request[PutFileOutput, AWSError] = js.native
   /**
-    * Replaces all triggers for a repository. This can be used to create or delete triggers.
+    * Replaces all triggers for a repository. Used to create or delete triggers.
     */
   def putRepositoryTriggers(): Request[PutRepositoryTriggersOutput, AWSError] = js.native
   def putRepositoryTriggers(callback: js.Function2[/* err */ AWSError, /* data */ PutRepositoryTriggersOutput, Unit]): Request[PutRepositoryTriggersOutput, AWSError] = js.native
   /**
-    * Replaces all triggers for a repository. This can be used to create or delete triggers.
+    * Replaces all triggers for a repository. Used to create or delete triggers.
     */
   def putRepositoryTriggers(params: PutRepositoryTriggersInput): Request[PutRepositoryTriggersOutput, AWSError] = js.native
   def putRepositoryTriggers(
@@ -583,12 +825,12 @@ trait CodeCommit extends Service {
   def tagResource(params: TagResourceInput): Request[js.Object, AWSError] = js.native
   def tagResource(params: TagResourceInput, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Tests the functionality of repository triggers by sending information to the trigger target. If real data is available in the repository, the test will send data from the last commit. If no data is available, sample data will be generated.
+    * Tests the functionality of repository triggers by sending information to the trigger target. If real data is available in the repository, the test sends data from the last commit. If no data is available, sample data is generated.
     */
   def testRepositoryTriggers(): Request[TestRepositoryTriggersOutput, AWSError] = js.native
   def testRepositoryTriggers(callback: js.Function2[/* err */ AWSError, /* data */ TestRepositoryTriggersOutput, Unit]): Request[TestRepositoryTriggersOutput, AWSError] = js.native
   /**
-    * Tests the functionality of repository triggers by sending information to the trigger target. If real data is available in the repository, the test will send data from the last commit. If no data is available, sample data will be generated.
+    * Tests the functionality of repository triggers by sending information to the trigger target. If real data is available in the repository, the test sends data from the last commit. If no data is available, sample data is generated.
     */
   def testRepositoryTriggers(params: TestRepositoryTriggersInput): Request[TestRepositoryTriggersOutput, AWSError] = js.native
   def testRepositoryTriggers(
@@ -605,6 +847,49 @@ trait CodeCommit extends Service {
     */
   def untagResource(params: UntagResourceInput): Request[js.Object, AWSError] = js.native
   def untagResource(params: UntagResourceInput, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Updates the content of an approval rule template. You can change the number of required approvals, the membership of the approval rule, and whether an approval pool is defined.
+    */
+  def updateApprovalRuleTemplateContent(): Request[UpdateApprovalRuleTemplateContentOutput, AWSError] = js.native
+  def updateApprovalRuleTemplateContent(
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateApprovalRuleTemplateContentOutput, Unit]
+  ): Request[UpdateApprovalRuleTemplateContentOutput, AWSError] = js.native
+  /**
+    * Updates the content of an approval rule template. You can change the number of required approvals, the membership of the approval rule, and whether an approval pool is defined.
+    */
+  def updateApprovalRuleTemplateContent(params: UpdateApprovalRuleTemplateContentInput): Request[UpdateApprovalRuleTemplateContentOutput, AWSError] = js.native
+  def updateApprovalRuleTemplateContent(
+    params: UpdateApprovalRuleTemplateContentInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateApprovalRuleTemplateContentOutput, Unit]
+  ): Request[UpdateApprovalRuleTemplateContentOutput, AWSError] = js.native
+  /**
+    * Updates the description for a specified approval rule template.
+    */
+  def updateApprovalRuleTemplateDescription(): Request[UpdateApprovalRuleTemplateDescriptionOutput, AWSError] = js.native
+  def updateApprovalRuleTemplateDescription(
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateApprovalRuleTemplateDescriptionOutput, Unit]
+  ): Request[UpdateApprovalRuleTemplateDescriptionOutput, AWSError] = js.native
+  /**
+    * Updates the description for a specified approval rule template.
+    */
+  def updateApprovalRuleTemplateDescription(params: UpdateApprovalRuleTemplateDescriptionInput): Request[UpdateApprovalRuleTemplateDescriptionOutput, AWSError] = js.native
+  def updateApprovalRuleTemplateDescription(
+    params: UpdateApprovalRuleTemplateDescriptionInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateApprovalRuleTemplateDescriptionOutput, Unit]
+  ): Request[UpdateApprovalRuleTemplateDescriptionOutput, AWSError] = js.native
+  /**
+    * Updates the name of a specified approval rule template.
+    */
+  def updateApprovalRuleTemplateName(): Request[UpdateApprovalRuleTemplateNameOutput, AWSError] = js.native
+  def updateApprovalRuleTemplateName(callback: js.Function2[/* err */ AWSError, /* data */ UpdateApprovalRuleTemplateNameOutput, Unit]): Request[UpdateApprovalRuleTemplateNameOutput, AWSError] = js.native
+  /**
+    * Updates the name of a specified approval rule template.
+    */
+  def updateApprovalRuleTemplateName(params: UpdateApprovalRuleTemplateNameInput): Request[UpdateApprovalRuleTemplateNameOutput, AWSError] = js.native
+  def updateApprovalRuleTemplateName(
+    params: UpdateApprovalRuleTemplateNameInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateApprovalRuleTemplateNameOutput, Unit]
+  ): Request[UpdateApprovalRuleTemplateNameOutput, AWSError] = js.native
   /**
     * Replaces the contents of a comment.
     */
@@ -629,6 +914,34 @@ trait CodeCommit extends Service {
   def updateDefaultBranch(params: UpdateDefaultBranchInput): Request[js.Object, AWSError] = js.native
   def updateDefaultBranch(
     params: UpdateDefaultBranchInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  /**
+    * Updates the structure of an approval rule created specifically for a pull request. For example, you can change the number of required approvers and the approval pool for approvers. 
+    */
+  def updatePullRequestApprovalRuleContent(): Request[UpdatePullRequestApprovalRuleContentOutput, AWSError] = js.native
+  def updatePullRequestApprovalRuleContent(
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdatePullRequestApprovalRuleContentOutput, Unit]
+  ): Request[UpdatePullRequestApprovalRuleContentOutput, AWSError] = js.native
+  /**
+    * Updates the structure of an approval rule created specifically for a pull request. For example, you can change the number of required approvers and the approval pool for approvers. 
+    */
+  def updatePullRequestApprovalRuleContent(params: UpdatePullRequestApprovalRuleContentInput): Request[UpdatePullRequestApprovalRuleContentOutput, AWSError] = js.native
+  def updatePullRequestApprovalRuleContent(
+    params: UpdatePullRequestApprovalRuleContentInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdatePullRequestApprovalRuleContentOutput, Unit]
+  ): Request[UpdatePullRequestApprovalRuleContentOutput, AWSError] = js.native
+  /**
+    * Updates the state of a user's approval on a pull request. The user is derived from the signed-in account when the request is made.
+    */
+  def updatePullRequestApprovalState(): Request[js.Object, AWSError] = js.native
+  def updatePullRequestApprovalState(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Updates the state of a user's approval on a pull request. The user is derived from the signed-in account when the request is made.
+    */
+  def updatePullRequestApprovalState(params: UpdatePullRequestApprovalStateInput): Request[js.Object, AWSError] = js.native
+  def updatePullRequestApprovalState(
+    params: UpdatePullRequestApprovalStateInput,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
@@ -671,12 +984,12 @@ trait CodeCommit extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdatePullRequestTitleOutput, Unit]
   ): Request[UpdatePullRequestTitleOutput, AWSError] = js.native
   /**
-    * Sets or changes the comment or description for a repository.  The description field for a repository accepts all HTML characters and all valid Unicode characters. Applications that do not HTML-encode the description and display it in a web page could expose users to potentially malicious code. Make sure that you HTML-encode the description field in any application that uses this API to display the repository description on a web page. 
+    * Sets or changes the comment or description for a repository.  The description field for a repository accepts all HTML characters and all valid Unicode characters. Applications that do not HTML-encode the description and display it in a webpage can expose users to potentially malicious code. Make sure that you HTML-encode the description field in any application that uses this API to display the repository description on a webpage. 
     */
   def updateRepositoryDescription(): Request[js.Object, AWSError] = js.native
   def updateRepositoryDescription(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Sets or changes the comment or description for a repository.  The description field for a repository accepts all HTML characters and all valid Unicode characters. Applications that do not HTML-encode the description and display it in a web page could expose users to potentially malicious code. Make sure that you HTML-encode the description field in any application that uses this API to display the repository description on a web page. 
+    * Sets or changes the comment or description for a repository.  The description field for a repository accepts all HTML characters and all valid Unicode characters. Applications that do not HTML-encode the description and display it in a webpage can expose users to potentially malicious code. Make sure that you HTML-encode the description field in any application that uses this API to display the repository description on a webpage. 
     */
   def updateRepositoryDescription(params: UpdateRepositoryDescriptionInput): Request[js.Object, AWSError] = js.native
   def updateRepositoryDescription(
@@ -684,12 +997,12 @@ trait CodeCommit extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
-    * Renames a repository. The repository name must be unique across the calling AWS account. In addition, repository names are limited to 100 alphanumeric, dash, and underscore characters, and cannot include certain characters. The suffix ".git" is prohibited. For a full description of the limits on repository names, see Limits in the AWS CodeCommit User Guide.
+    * Renames a repository. The repository name must be unique across the calling AWS account. Repository names are limited to 100 alphanumeric, dash, and underscore characters, and cannot include certain characters. The suffix .git is prohibited. For more information about the limits on repository names, see Limits in the AWS CodeCommit User Guide.
     */
   def updateRepositoryName(): Request[js.Object, AWSError] = js.native
   def updateRepositoryName(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Renames a repository. The repository name must be unique across the calling AWS account. In addition, repository names are limited to 100 alphanumeric, dash, and underscore characters, and cannot include certain characters. The suffix ".git" is prohibited. For a full description of the limits on repository names, see Limits in the AWS CodeCommit User Guide.
+    * Renames a repository. The repository name must be unique across the calling AWS account. Repository names are limited to 100 alphanumeric, dash, and underscore characters, and cannot include certain characters. The suffix .git is prohibited. For more information about the limits on repository names, see Limits in the AWS CodeCommit User Guide.
     */
   def updateRepositoryName(params: UpdateRepositoryNameInput): Request[js.Object, AWSError] = js.native
   def updateRepositoryName(

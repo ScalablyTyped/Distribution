@@ -10,9 +10,9 @@ QR Code Generator implementation in JavaScript.
 | ------------------ | :-------------: |
 | Full name          | qrcode-generator |
 | Keywords           | qr, qrcode, generator |
-| # releases         | 7 |
-| # dependents       | 34 |
-| # downloads        | 233615 |
+| # releases         | 6 |
+| # dependents       | 51 |
+| # downloads        | 356431 |
 | # stars            | 2 |
 
 ## Links

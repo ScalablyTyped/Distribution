@@ -11,8 +11,8 @@ Pretty unicode tables for the CLI
 | Full name          | cli-table |
 | Keywords           | cli, colors, table |
 | # releases         | 1 |
-| # dependents       | 1629 |
-| # downloads        | 52623504 |
+| # dependents       | 1814 |
+| # downloads        | 60171468 |
 | # stars            | 80 |
 
 ## Links

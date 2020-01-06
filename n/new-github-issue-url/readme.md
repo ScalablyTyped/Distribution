@@ -10,9 +10,9 @@ Generate a URL for opening a new GitHub issue with prefilled title, body, and ot
 | ------------------ | :-------------: |
 | Full name          | new-github-issue-url |
 | Keywords           | github, issue, new, generate, url, gh, query, search, parameters, params |
-| # releases         | 5 |
-| # dependents       | 2 |
-| # downloads        | 10216 |
+| # releases         | 7 |
+| # dependents       | 3 |
+| # downloads        | 54306 |
 | # stars            | 0 |
 
 ## Links

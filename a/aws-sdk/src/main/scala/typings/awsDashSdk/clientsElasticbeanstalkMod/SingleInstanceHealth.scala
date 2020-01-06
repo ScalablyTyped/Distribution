@@ -4,47 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SingleInstanceHealth extends js.Object {
   /**
     * Request metrics from your application.
     */
-  var ApplicationMetrics: js.UndefOr[typings.awsDashSdk.clientsElasticbeanstalkMod.ApplicationMetrics] = js.undefined
+  var ApplicationMetrics: js.UndefOr[typings.awsDashSdk.clientsElasticbeanstalkMod.ApplicationMetrics] = js.native
   /**
     * The availability zone in which the instance runs.
     */
-  var AvailabilityZone: js.UndefOr[String] = js.undefined
+  var AvailabilityZone: js.UndefOr[String] = js.native
   /**
     * Represents the causes, which provide more information about the current health status.
     */
-  var Causes: js.UndefOr[typings.awsDashSdk.clientsElasticbeanstalkMod.Causes] = js.undefined
+  var Causes: js.UndefOr[typings.awsDashSdk.clientsElasticbeanstalkMod.Causes] = js.native
   /**
     * Represents the color indicator that gives you information about the health of the EC2 instance. For more information, see Health Colors and Statuses.
     */
-  var Color: js.UndefOr[String] = js.undefined
+  var Color: js.UndefOr[String] = js.native
   /**
     * Information about the most recent deployment to an instance.
     */
-  var Deployment: js.UndefOr[typings.awsDashSdk.clientsElasticbeanstalkMod.Deployment] = js.undefined
+  var Deployment: js.UndefOr[typings.awsDashSdk.clientsElasticbeanstalkMod.Deployment] = js.native
   /**
     * Returns the health status of the specified instance. For more information, see Health Colors and Statuses.
     */
-  var HealthStatus: js.UndefOr[String] = js.undefined
+  var HealthStatus: js.UndefOr[String] = js.native
   /**
     * The ID of the Amazon EC2 instance.
     */
-  var InstanceId: js.UndefOr[typings.awsDashSdk.clientsElasticbeanstalkMod.InstanceId] = js.undefined
+  var InstanceId: js.UndefOr[typings.awsDashSdk.clientsElasticbeanstalkMod.InstanceId] = js.native
   /**
     * The instance's type.
     */
-  var InstanceType: js.UndefOr[String] = js.undefined
+  var InstanceType: js.UndefOr[String] = js.native
   /**
     * The time at which the EC2 instance was launched.
     */
-  var LaunchedAt: js.UndefOr[typings.awsDashSdk.clientsElasticbeanstalkMod.LaunchedAt] = js.undefined
+  var LaunchedAt: js.UndefOr[typings.awsDashSdk.clientsElasticbeanstalkMod.LaunchedAt] = js.native
   /**
     * Operating system metrics from the instance.
     */
-  var System: js.UndefOr[SystemStatus] = js.undefined
+  var System: js.UndefOr[SystemStatus] = js.native
 }
 
 object SingleInstanceHealth {
@@ -62,16 +63,16 @@ object SingleInstanceHealth {
     System: SystemStatus = null
   ): SingleInstanceHealth = {
     val __obj = js.Dynamic.literal()
-    if (ApplicationMetrics != null) __obj.updateDynamic("ApplicationMetrics")(ApplicationMetrics)
-    if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone)
-    if (Causes != null) __obj.updateDynamic("Causes")(Causes)
-    if (Color != null) __obj.updateDynamic("Color")(Color)
-    if (Deployment != null) __obj.updateDynamic("Deployment")(Deployment)
-    if (HealthStatus != null) __obj.updateDynamic("HealthStatus")(HealthStatus)
-    if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId)
-    if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType)
-    if (LaunchedAt != null) __obj.updateDynamic("LaunchedAt")(LaunchedAt)
-    if (System != null) __obj.updateDynamic("System")(System)
+    if (ApplicationMetrics != null) __obj.updateDynamic("ApplicationMetrics")(ApplicationMetrics.asInstanceOf[js.Any])
+    if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
+    if (Causes != null) __obj.updateDynamic("Causes")(Causes.asInstanceOf[js.Any])
+    if (Color != null) __obj.updateDynamic("Color")(Color.asInstanceOf[js.Any])
+    if (Deployment != null) __obj.updateDynamic("Deployment")(Deployment.asInstanceOf[js.Any])
+    if (HealthStatus != null) __obj.updateDynamic("HealthStatus")(HealthStatus.asInstanceOf[js.Any])
+    if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId.asInstanceOf[js.Any])
+    if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
+    if (LaunchedAt != null) __obj.updateDynamic("LaunchedAt")(LaunchedAt.asInstanceOf[js.Any])
+    if (System != null) __obj.updateDynamic("System")(System.asInstanceOf[js.Any])
     __obj.asInstanceOf[SingleInstanceHealth]
   }
 }

@@ -47,7 +47,6 @@ object templatesDistributedDerivedDistributedClientArrayMod extends js.Object {
       */
     /* CompleteClass */
     override def addClient(driver: IClientDriver): Unit = js.native
-    /* CompleteClass */
     /* InferMemberOverrides */
     override def addEventListener(`type`: Type, listener: Listener[System, Deque[System], Iterator[System], ReverseIterator[System]]): Unit = js.native
     /**
@@ -55,7 +54,7 @@ object templatesDistributedDerivedDistributedClientArrayMod extends js.Object {
       *
       * @return Iterator to the first element.
       */
-    /* InferMemberOverrides */
+    /* CompleteClass */
     /* InferMemberOverrides */
     override def begin(): typings.tstl.baseIteratorIteratorMod.Iterator[System, Deque[System], Iterator[System], ReverseIterator[System], System] = js.native
     /**
@@ -98,13 +97,12 @@ object templatesDistributedDerivedDistributedClientArrayMod extends js.Object {
       * @return A new {@link IServerBase} object.
       */
     /* protected */ def createServerBase(): IServer = js.native
-    /* CompleteClass */
     /* InferMemberOverrides */
     override def dispatchEvent(event: CollectionEvent[System, Deque[System], Iterator[System], ReverseIterator[System]]): Unit = js.native
     /**
       * Test whether container is empty.
       */
-    /* InferMemberOverrides */
+    /* CompleteClass */
     /* InferMemberOverrides */
     override def empty(): Boolean = js.native
     /**
@@ -112,10 +110,9 @@ object templatesDistributedDerivedDistributedClientArrayMod extends js.Object {
       *
       * @return Iterator to the end.
       */
-    /* InferMemberOverrides */
+    /* CompleteClass */
     /* InferMemberOverrides */
     override def end(): typings.tstl.baseIteratorIteratorMod.Iterator[System, Deque[System], Iterator[System], ReverseIterator[System], System] = js.native
-    /* CompleteClass */
     /* InferMemberOverrides */
     override def hasEventListener(`type`: Type): Boolean = js.native
     /**
@@ -131,7 +128,7 @@ object templatesDistributedDerivedDistributedClientArrayMod extends js.Object {
       * @param items Items to insert.
       * @return Number of elements in the container after insertion.
       */
-    /* InferMemberOverrides */
+    /* CompleteClass */
     /* InferMemberOverrides */
     override def push(items: System*): Double = js.native
     /**
@@ -148,9 +145,7 @@ object templatesDistributedDerivedDistributedClientArrayMod extends js.Object {
       */
     /* CompleteClass */
     /* InferMemberOverrides */
-    /* InferMemberOverrides */
     override def rbegin(): ReverseIterator[System] = js.native
-    /* CompleteClass */
     /* InferMemberOverrides */
     override def removeEventListener(`type`: Type, listener: Listener[System, Deque[System], Iterator[System], ReverseIterator[System]]): Unit = js.native
     /**
@@ -160,13 +155,10 @@ object templatesDistributedDerivedDistributedClientArrayMod extends js.Object {
       */
     /* CompleteClass */
     /* InferMemberOverrides */
-    /* InferMemberOverrides */
     override def rend(): ReverseIterator[System] = js.native
     /**
       * Number of elements in the container.
       */
-    /* CompleteClass */
-    /* InferMemberOverrides */
     /* InferMemberOverrides */
     override def size(): Double = js.native
   }

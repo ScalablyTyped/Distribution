@@ -25,7 +25,7 @@ jQuery plugin for in-place image cropping (zoom & pan, as opposed to select and 
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 1247 |
+| # downloads        | 1561 |
 | # stars            | 0 |
 
 ## Links

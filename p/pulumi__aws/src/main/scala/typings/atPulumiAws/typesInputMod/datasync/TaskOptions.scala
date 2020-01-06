@@ -5,43 +5,44 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TaskOptions extends js.Object {
   /**
     * A file metadata that shows the last time a file was accessed (that is when the file was read or written to). If set to `BEST_EFFORT`, the DataSync Task attempts to preserve the original (that is, the version before sync `PREPARING` phase) `atime` attribute on all source files. Valid values: `BEST_EFFORT`, `NONE`. Default: `BEST_EFFORT`.
     */
-  var atime: js.UndefOr[Input[String]] = js.undefined
+  var atime: js.UndefOr[Input[String]] = js.native
   /**
     * Limits the bandwidth utilized. For example, to set a maximum of 1 MB, set this value to `1048576`. Value values: `-1` or greater. Default: `-1` (unlimited).
     */
-  var bytesPerSecond: js.UndefOr[Input[Double]] = js.undefined
+  var bytesPerSecond: js.UndefOr[Input[Double]] = js.native
   /**
     * Group identifier of the file's owners. Valid values: `BOTH`, `INT_VALUE`, `NAME`, `NONE`. Default: `INT_VALUE` (preserve integer value of the ID).
     */
-  var gid: js.UndefOr[Input[String]] = js.undefined
+  var gid: js.UndefOr[Input[String]] = js.native
   /**
     * A file metadata that indicates the last time a file was modified (written to) before the sync `PREPARING` phase. Value values: `NONE`, `PRESERVE`. Default: `PRESERVE`.
     */
-  var mtime: js.UndefOr[Input[String]] = js.undefined
+  var mtime: js.UndefOr[Input[String]] = js.native
   /**
-    * Determines which users or groups can access a file for a specific purpose such as reading, writing, or execution of the file. Valid values: `BEST_EFFORT`, `NONE`, `PRESERVE`. Default: `PRESERVE`.
+    * Determines which users or groups can access a file for a specific purpose such as reading, writing, or execution of the file. Valid values: `NONE`, `PRESERVE`. Default: `PRESERVE`.
     */
-  var posixPermissions: js.UndefOr[Input[String]] = js.undefined
+  var posixPermissions: js.UndefOr[Input[String]] = js.native
   /**
     * Whether files deleted in the source should be removed or preserved in the destination file system. Valid values: `PRESERVE`, `REMOVE`. Default: `PRESERVE`.
     */
-  var preserveDeletedFiles: js.UndefOr[Input[String]] = js.undefined
+  var preserveDeletedFiles: js.UndefOr[Input[String]] = js.native
   /**
     * Whether the DataSync Task should preserve the metadata of block and character devices in the source files system, and recreate the files with that device name and metadata on the destination. The DataSync Task can’t sync the actual contents of such devices, because many of the devices are non-terminal and don’t return an end of file (EOF) marker. Valid values: `NONE`, `PRESERVE`. Default: `NONE` (ignore special devices).
     */
-  var preserveDevices: js.UndefOr[Input[String]] = js.undefined
+  var preserveDevices: js.UndefOr[Input[String]] = js.native
   /**
     * User identifier of the file's owners. Valid values: `BOTH`, `INT_VALUE`, `NAME`, `NONE`. Default: `INT_VALUE` (preserve integer value of the ID).
     */
-  var uid: js.UndefOr[Input[String]] = js.undefined
+  var uid: js.UndefOr[Input[String]] = js.native
   /**
     * Whether a data integrity verification should be performed at the end of a task execution after all data and metadata have been transferred. Valid values: `NONE`, `POINT_IN_TIME_CONSISTENT`. Default: `POINT_IN_TIME_CONSISTENT`.
     */
-  var verifyMode: js.UndefOr[Input[String]] = js.undefined
+  var verifyMode: js.UndefOr[Input[String]] = js.native
 }
 
 object TaskOptions {

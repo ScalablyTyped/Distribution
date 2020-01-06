@@ -8,39 +8,41 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InventoryArgs extends js.Object {
   /**
     * The S3 bucket configuration where inventory results are published (documented below).
     */
-  val bucket: Input[String]
+  val bucket: Input[String] = js.native
   /**
-    * Destination bucket where inventory list files are written (documented below).
+    * Contains information about where to publish the inventory results (documented below).
     */
-  val destination: Input[InventoryDestination]
+  val destination: Input[InventoryDestination] = js.native
   /**
     * Specifies whether the inventory is enabled or disabled.
     */
-  val enabled: js.UndefOr[Input[Boolean]] = js.undefined
+  val enabled: js.UndefOr[Input[Boolean]] = js.native
   /**
-    * Object filtering that accepts a prefix (documented below).
+    * Specifies an inventory filter. The inventory only includes objects that meet the filter's criteria (documented below).
     */
-  val filter: js.UndefOr[Input[InventoryFilter]] = js.undefined
+  val filter: js.UndefOr[Input[InventoryFilter]] = js.native
   /**
-    * Object filtering that accepts a prefix (documented below). Can be `All` or `Current`.
+    * Object versions to include in the inventory list. Valid values: `All`, `Current`.
     */
-  val includedObjectVersions: Input[String]
+  val includedObjectVersions: Input[String] = js.native
   /**
     * Unique identifier of the inventory configuration for the bucket.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
-    * Contains the optional fields that are included in the inventory results.
+    * List of optional fields that are included in the inventory results.
+    * Valid values: `Size`, `LastModifiedDate`, `StorageClass`, `ETag`, `IsMultipartUploaded`, `ReplicationStatus`, `EncryptionStatus`, `ObjectLockRetainUntilDate`, `ObjectLockMode`, `ObjectLockLegalHoldStatus`, `IntelligentTieringAccessTier`.
     */
-  val optionalFields: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val optionalFields: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
-    * Contains the frequency for generating inventory results (documented below).
+    * Specifies the schedule for generating inventory results (documented below).
     */
-  val schedule: Input[InventorySchedule]
+  val schedule: Input[InventorySchedule] = js.native
 }
 
 object InventoryArgs {

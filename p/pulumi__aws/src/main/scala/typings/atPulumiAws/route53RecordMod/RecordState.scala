@@ -11,68 +11,69 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RecordState extends js.Object {
   /**
     * An alias block. Conflicts with `ttl` & `records`.
     * Alias record documented below.
     */
-  val aliases: js.UndefOr[Input[js.Array[Input[RecordAlias]]]] = js.undefined
+  val aliases: js.UndefOr[Input[js.Array[Input[RecordAlias]]]] = js.native
   /**
     * Allow creation of this record to overwrite an existing record, if any. This does not affect the ability to update the record using this provider and does not prevent other resources within this provider or manual Route 53 changes outside this provider from overwriting this record. `false` by default. This configuration is not recommended for most environments.
     */
-  val allowOverwrite: js.UndefOr[Input[Boolean]] = js.undefined
+  val allowOverwrite: js.UndefOr[Input[Boolean]] = js.native
   /**
     * A block indicating the routing behavior when associated health check fails. Conflicts with any other routing policy. Documented below.
     */
-  val failoverRoutingPolicies: js.UndefOr[Input[js.Array[Input[RecordFailoverRoutingPolicy]]]] = js.undefined
+  val failoverRoutingPolicies: js.UndefOr[Input[js.Array[Input[RecordFailoverRoutingPolicy]]]] = js.native
   /**
     * [FQDN](https://en.wikipedia.org/wiki/Fully_qualified_domain_name) built using the zone domain and `name`.
     */
-  val fqdn: js.UndefOr[Input[String]] = js.undefined
+  val fqdn: js.UndefOr[Input[String]] = js.native
   /**
     * A block indicating a routing policy based on the geolocation of the requestor. Conflicts with any other routing policy. Documented below.
     */
-  val geolocationRoutingPolicies: js.UndefOr[Input[js.Array[Input[RecordGeolocationRoutingPolicy]]]] = js.undefined
+  val geolocationRoutingPolicies: js.UndefOr[Input[js.Array[Input[RecordGeolocationRoutingPolicy]]]] = js.native
   /**
     * The health check the record should be associated with.
     */
-  val healthCheckId: js.UndefOr[Input[String]] = js.undefined
+  val healthCheckId: js.UndefOr[Input[String]] = js.native
   /**
     * A block indicating a routing policy based on the latency between the requestor and an AWS region. Conflicts with any other routing policy. Documented below.
     */
-  val latencyRoutingPolicies: js.UndefOr[Input[js.Array[Input[RecordLatencyRoutingPolicy]]]] = js.undefined
+  val latencyRoutingPolicies: js.UndefOr[Input[js.Array[Input[RecordLatencyRoutingPolicy]]]] = js.native
   /**
     * Set to `true` to indicate a multivalue answer routing policy. Conflicts with any other routing policy.
     */
-  val multivalueAnswerRoutingPolicy: js.UndefOr[Input[Boolean]] = js.undefined
+  val multivalueAnswerRoutingPolicy: js.UndefOr[Input[Boolean]] = js.native
   /**
     * DNS domain name for a CloudFront distribution, S3 bucket, ELB, or another resource record set in this hosted zone.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * A string list of records. To specify a single record value longer than 255 characters such as a TXT record for DKIM, add `\"\"` inside the configuration string (e.g. `"first255characters\"\"morecharacters"`).
     */
-  val records: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val records: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * Unique identifier to differentiate records with routing policies from one another. Required if using `failover`, `geolocation`, `latency`, or `weighted` routing policies documented below.
     */
-  val setIdentifier: js.UndefOr[Input[String]] = js.undefined
+  val setIdentifier: js.UndefOr[Input[String]] = js.native
   /**
     * The TTL of the record.
     */
-  val ttl: js.UndefOr[Input[Double]] = js.undefined
+  val ttl: js.UndefOr[Input[Double]] = js.native
   /**
     * `PRIMARY` or `SECONDARY`. A `PRIMARY` record will be served if its healthcheck is passing, otherwise the `SECONDARY` will be served. See http://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover-configuring-options.html#dns-failover-failover-rrsets
     */
-  val `type`: js.UndefOr[Input[String | RecordType]] = js.undefined
+  val `type`: js.UndefOr[Input[String | RecordType]] = js.native
   /**
     * A block indicating a weighted routing policy. Conflicts with any other routing policy. Documented below.
     */
-  val weightedRoutingPolicies: js.UndefOr[Input[js.Array[Input[RecordWeightedRoutingPolicy]]]] = js.undefined
+  val weightedRoutingPolicies: js.UndefOr[Input[js.Array[Input[RecordWeightedRoutingPolicy]]]] = js.native
   /**
     * Hosted zone ID for a CloudFront distribution, S3 bucket, ELB, or Route 53 hosted zone. See [`resource_elb.zone_id`](https://www.terraform.io/docs/providers/aws/r/elb.html#zone_id) for example.
     */
-  val zoneId: js.UndefOr[Input[String]] = js.undefined
+  val zoneId: js.UndefOr[Input[String]] = js.native
 }
 
 object RecordState {

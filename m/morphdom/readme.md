@@ -10,9 +10,9 @@ Morph a DOM tree to another DOM tree (no virtual DOM needed)
 | ------------------ | :-------------: |
 | Full name          | morphdom |
 | Keywords           | dom, diff, patch, virtual, browser |
-| # releases         | 6 |
-| # dependents       | 52 |
-| # downloads        | 304255 |
+| # releases         | 15 |
+| # dependents       | 57 |
+| # downloads        | 406164 |
 | # stars            | 13 |
 
 ## Links

@@ -11,8 +11,8 @@ Ensure a function is only called once
 | Full name          | onetime |
 | Keywords           | once, function, one, onetime, func, fn, single, call, called, prevent |
 | # releases         | 5 |
-| # dependents       | 53 |
-| # downloads        | 326272107 |
+| # dependents       | 73 |
+| # downloads        | 494845933 |
 | # stars            | 7 |
 
 ## Links

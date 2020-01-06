@@ -4,15 +4,15 @@
 Typings are for version 10.3
 
 ## Library description:
-Avatar / profile picture component. Resize and crop your uploaded image using a intuitive user interface.
+Small avatar & profile picture component. Resize and crop uploaded images using a intuitive user interface.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-avatar-editor |
 | Keywords           | react-component, reactjs, react, canvas, avatar, editor, profile, image |
-| # releases         | 16 |
-| # dependents       | 32 |
-| # downloads        | 1225243 |
+| # releases         | 10 |
+| # dependents       | 46 |
+| # downloads        | 1748192 |
 | # stars            | 9 |
 
 ## Links

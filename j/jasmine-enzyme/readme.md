@@ -10,9 +10,9 @@ Jasmine assertions for enzyme
 | ------------------ | :-------------: |
 | Full name          | jasmine-enzyme |
 | Keywords           | javascript, shallow rendering, shallowRender, test, reactjs, react, flux, testing, test utils, assertion helpers, tdd, jasmine, enzyme |
-| # releases         | 40 |
+| # releases         | 24 |
 | # dependents       | 1 |
-| # downloads        | 522148 |
+| # downloads        | 630170 |
 | # stars            | 0 |
 
 ## Links

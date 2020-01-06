@@ -1,7 +1,7 @@
 package typings.multerDashGridfsDashStorage.multerDashGridfsDashStorageMod
 
-import typings.expressDashServeDashStaticDashCore.expressDashServeDashStaticDashCoreMod._Global_.Express.Request
 import typings.multerDashGridfsDashStorage.multerDashGridfsDashStorageMod._Global_.Express.Multer.File
+import typings.std.Request
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

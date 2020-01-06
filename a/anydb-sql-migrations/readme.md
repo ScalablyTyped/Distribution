@@ -10,9 +10,9 @@ Database migrations for anydb-sql
 | ------------------ | :-------------: |
 | Full name          | anydb-sql-migrations |
 | Keywords           | anydb, sql, migrations |
-| # releases         | 17 |
-| # dependents       | 0 |
-| # downloads        | 4429 |
+| # releases         | 10 |
+| # dependents       | 1 |
+| # downloads        | 5444 |
 | # stars            | 0 |
 
 ## Links

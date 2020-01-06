@@ -10,9 +10,9 @@ A robust, performance-focused and full-featured Redis client for Node.js.
 | ------------------ | :-------------: |
 | Full name          | ioredis |
 | Keywords           | redis, cluster, sentinel, pipelining |
-| # releases         | 36 |
-| # dependents       | 987 |
-| # downloads        | 12323028 |
+| # releases         | 50 |
+| # dependents       | 1283 |
+| # downloads        | 22151442 |
 | # stars            | 85 |
 
 ## Links

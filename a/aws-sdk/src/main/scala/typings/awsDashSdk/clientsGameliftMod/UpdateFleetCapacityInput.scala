@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UpdateFleetCapacityInput extends js.Object {
   /**
     * Number of EC2 instances you want this fleet to host.
     */
-  var DesiredInstances: js.UndefOr[WholeNumber] = js.undefined
+  var DesiredInstances: js.UndefOr[WholeNumber] = js.native
   /**
-    * Unique identifier for a fleet to update capacity for.
+    * A unique identifier for a fleet to update capacity for. You can use either the fleet ID or ARN value.
     */
-  var FleetId: typings.awsDashSdk.clientsGameliftMod.FleetId
+  var FleetId: typings.awsDashSdk.clientsGameliftMod.FleetId = js.native
   /**
-    * Maximum value allowed for the fleet's instance count. Default if not set is 1.
+    * The maximum value allowed for the fleet's instance count. Default if not set is 1.
     */
-  var MaxSize: js.UndefOr[WholeNumber] = js.undefined
+  var MaxSize: js.UndefOr[WholeNumber] = js.native
   /**
-    * Minimum value allowed for the fleet's instance count. Default if not set is 0.
+    * The minimum value allowed for the fleet's instance count. Default if not set is 0.
     */
-  var MinSize: js.UndefOr[WholeNumber] = js.undefined
+  var MinSize: js.UndefOr[WholeNumber] = js.native
 }
 
 object UpdateFleetCapacityInput {
@@ -31,7 +32,7 @@ object UpdateFleetCapacityInput {
     MaxSize: Int | scala.Double = null,
     MinSize: Int | scala.Double = null
   ): UpdateFleetCapacityInput = {
-    val __obj = js.Dynamic.literal(FleetId = FleetId)
+    val __obj = js.Dynamic.literal(FleetId = FleetId.asInstanceOf[js.Any])
     if (DesiredInstances != null) __obj.updateDynamic("DesiredInstances")(DesiredInstances.asInstanceOf[js.Any])
     if (MaxSize != null) __obj.updateDynamic("MaxSize")(MaxSize.asInstanceOf[js.Any])
     if (MinSize != null) __obj.updateDynamic("MinSize")(MinSize.asInstanceOf[js.Any])

@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IcmpTypeCode extends js.Object {
   /**
     * The ICMP code. A value of -1 means all codes for the specified ICMP type.
     */
-  var Code: js.UndefOr[Integer] = js.undefined
+  var Code: js.UndefOr[Integer] = js.native
   /**
     * The ICMP type. A value of -1 means all types.
     */
-  var Type: js.UndefOr[Integer] = js.undefined
+  var Type: js.UndefOr[Integer] = js.native
 }
 
 object IcmpTypeCode {

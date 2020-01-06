@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TimeBasedLinear extends js.Object {
   /**
     * The number of minutes between each incremental traffic shift of a TimeBasedLinear deployment.
     */
-  var linearInterval: js.UndefOr[WaitTimeInMins] = js.undefined
+  var linearInterval: js.UndefOr[WaitTimeInMins] = js.native
   /**
     * The percentage of traffic that is shifted at the start of each increment of a TimeBasedLinear deployment.
     */
-  var linearPercentage: js.UndefOr[Percentage] = js.undefined
+  var linearPercentage: js.UndefOr[Percentage] = js.native
 }
 
 object TimeBasedLinear {

@@ -10,9 +10,9 @@ wechat js-sdk
 | ------------------ | :-------------: |
 | Full name          | jweixin |
 | Keywords           | - |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 700 |
+| # downloads        | 710 |
 | # stars            | 1 |
 
 ## Links

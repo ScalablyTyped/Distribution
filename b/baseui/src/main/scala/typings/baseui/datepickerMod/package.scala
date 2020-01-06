@@ -18,7 +18,7 @@ package object datepickerMod {
 
   type DatepickerProps = CalendarProps with Anon_Ariadescribedby
   type StateReducer = js.Function3[
-    /* stateType */ moveUp | mouseOver | moveLeft | moveRight | change_ | mouseLeave | moveDown, 
+    /* stateType */ mouseLeave | moveRight | moveDown | moveUp | mouseOver | change_ | moveLeft, 
     /* nextState */ ContainerState, 
     /* currentState */ ContainerState, 
     ContainerState

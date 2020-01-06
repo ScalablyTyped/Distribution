@@ -23,6 +23,7 @@ class SizeConstraintSet protected () extends CustomResource {
   def this(name: String) = this()
   def this(name: String, args: SizeConstraintSetArgs) = this()
   def this(name: String, args: SizeConstraintSetArgs, opts: CustomResourceOptions) = this()
+  val arn: Output[String] = js.native
   /**
     * The name or description of the Size Constraint Set.
     */

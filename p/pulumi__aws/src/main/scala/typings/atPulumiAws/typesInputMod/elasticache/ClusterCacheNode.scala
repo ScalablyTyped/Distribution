@@ -5,17 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClusterCacheNode extends js.Object {
-  var address: js.UndefOr[Input[String]] = js.undefined
+  var address: js.UndefOr[Input[String]] = js.native
   /**
     * The Availability Zone for the cache cluster. If you want to create cache nodes in multi-az, use `preferredAvailabilityZones` instead. Default: System chosen Availability Zone.
     */
-  var availabilityZone: js.UndefOr[Input[String]] = js.undefined
-  var id: js.UndefOr[Input[String]] = js.undefined
+  var availabilityZone: js.UndefOr[Input[String]] = js.native
+  var id: js.UndefOr[Input[String]] = js.native
   /**
     * The port number on which each of the cache nodes will accept connections. For Memcache the default is 11211, and for Redis the default port is 6379. Cannot be provided with `replicationGroupId`.
     */
-  var port: js.UndefOr[Input[Double]] = js.undefined
+  var port: js.UndefOr[Input[Double]] = js.native
 }
 
 object ClusterCacheNode {

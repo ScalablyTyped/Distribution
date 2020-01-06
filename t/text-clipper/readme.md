@@ -10,9 +10,9 @@ Fast and correct clip functions for HTML and plain text.
 | ------------------ | :-------------: |
 | Full name          | text-clipper |
 | Keywords           | clip, html, string, text, trim, truncate |
-| # releases         | 2 |
+| # releases         | 6 |
 | # dependents       | 2 |
-| # downloads        | 62050 |
+| # downloads        | 90549 |
 | # stars            | 0 |
 
 ## Links

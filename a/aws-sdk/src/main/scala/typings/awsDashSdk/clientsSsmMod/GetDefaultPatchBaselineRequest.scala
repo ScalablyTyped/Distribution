@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetDefaultPatchBaselineRequest extends js.Object {
   /**
     * Returns the default patch baseline for the specified operating system.
     */
-  var OperatingSystem: js.UndefOr[typings.awsDashSdk.clientsSsmMod.OperatingSystem] = js.undefined
+  var OperatingSystem: js.UndefOr[typings.awsDashSdk.clientsSsmMod.OperatingSystem] = js.native
 }
 
 object GetDefaultPatchBaselineRequest {

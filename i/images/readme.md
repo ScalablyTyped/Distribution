@@ -10,9 +10,9 @@ Cross-platform image decoder(webp/png/jpeg/gif) and encoder(webp/png/jpeg) for N
 | ------------------ | :-------------: |
 | Full name          | images |
 | Keywords           | image, decoder, encoder, webp, png, jpeg, gif, cross-platform, images |
-| # releases         | 4 |
-| # dependents       | 95 |
-| # downloads        | 248252 |
+| # releases         | 2 |
+| # dependents       | 103 |
+| # downloads        | 181138 |
 | # stars            | 26 |
 
 ## Links

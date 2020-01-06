@@ -12,7 +12,7 @@ The lodash method `_.fill` exported as a module.
 | Keywords           | lodash-modularized, fill |
 | # releases         | 0 |
 | # dependents       | 11 |
-| # downloads        | 1526020 |
+| # downloads        | 1709346 |
 | # stars            | 0 |
 
 ## Links

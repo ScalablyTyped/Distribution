@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RemoveThingFromBillingGroupRequest extends js.Object {
   /**
     * The ARN of the billing group.
     */
-  var billingGroupArn: js.UndefOr[BillingGroupArn] = js.undefined
+  var billingGroupArn: js.UndefOr[BillingGroupArn] = js.native
   /**
     * The name of the billing group.
     */
-  var billingGroupName: js.UndefOr[BillingGroupName] = js.undefined
+  var billingGroupName: js.UndefOr[BillingGroupName] = js.native
   /**
     * The ARN of the thing to be removed from the billing group.
     */
-  var thingArn: js.UndefOr[ThingArn] = js.undefined
+  var thingArn: js.UndefOr[ThingArn] = js.native
   /**
     * The name of the thing to be removed from the billing group.
     */
-  var thingName: js.UndefOr[ThingName] = js.undefined
+  var thingName: js.UndefOr[ThingName] = js.native
 }
 
 object RemoveThingFromBillingGroupRequest {
@@ -32,10 +33,10 @@ object RemoveThingFromBillingGroupRequest {
     thingName: ThingName = null
   ): RemoveThingFromBillingGroupRequest = {
     val __obj = js.Dynamic.literal()
-    if (billingGroupArn != null) __obj.updateDynamic("billingGroupArn")(billingGroupArn)
-    if (billingGroupName != null) __obj.updateDynamic("billingGroupName")(billingGroupName)
-    if (thingArn != null) __obj.updateDynamic("thingArn")(thingArn)
-    if (thingName != null) __obj.updateDynamic("thingName")(thingName)
+    if (billingGroupArn != null) __obj.updateDynamic("billingGroupArn")(billingGroupArn.asInstanceOf[js.Any])
+    if (billingGroupName != null) __obj.updateDynamic("billingGroupName")(billingGroupName.asInstanceOf[js.Any])
+    if (thingArn != null) __obj.updateDynamic("thingArn")(thingArn.asInstanceOf[js.Any])
+    if (thingName != null) __obj.updateDynamic("thingName")(thingName.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveThingFromBillingGroupRequest]
   }
 }

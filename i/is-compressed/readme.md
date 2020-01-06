@@ -12,7 +12,7 @@ Check if a file path is a compressed file
 | Keywords           | extensions, extension, file, path, check, detect, is, compressed, compress, archive, zip, tar, rar, 7z |
 | # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 5322 |
+| # downloads        | 1600 |
 | # stars            | 1 |
 
 ## Links

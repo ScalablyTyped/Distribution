@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OptionGroupOptionOptionSetting extends js.Object {
   /**
     * The Name of the setting.
     */
-  var name: Input[String]
+  var name: Input[String] = js.native
   /**
     * The Value of the setting.
     */
-  var value: Input[String]
+  var value: Input[String] = js.native
 }
 
 object OptionGroupOptionOptionSetting {

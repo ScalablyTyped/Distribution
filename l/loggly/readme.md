@@ -10,9 +10,9 @@ A client implementation for Loggly cloud Logging-as-a-Service API
 | ------------------ | :-------------: |
 | Full name          | loggly |
 | Keywords           | cloud computing, api, logging, loggly |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 49 |
-| # downloads        | 16756325 |
+| # downloads        | 10881880 |
 | # stars            | 8 |
 
 ## Links

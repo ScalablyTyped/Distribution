@@ -10,9 +10,9 @@ Vue plugin for work with LocalStorage from Vue context
 | ------------------ | :-------------: |
 | Full name          | vue-ls |
 | Keywords           | storage, localstorage, local-storage, vue-localstorage, vuejs-localstorage, vue-local-storage, vuejs-local-storage, memorystroage, sessionstorage, session-storage, vue-sessionstorage, vuejs-sessionstorage, vue-session-storage, vuejs-session-storage, memory-stroage, vue-ls, vue, vuejs, vue-plugin, watch, es6-modules |
-| # releases         | 11 |
-| # dependents       | 24 |
-| # downloads        | 181445 |
+| # releases         | 10 |
+| # dependents       | 38 |
+| # downloads        | 244760 |
 | # stars            | 4 |
 
 ## Links

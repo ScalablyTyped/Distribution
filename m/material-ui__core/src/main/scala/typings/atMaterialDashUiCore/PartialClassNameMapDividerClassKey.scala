@@ -5,12 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/Divider/Divider.DividerClassKey>> */
+@js.native
 trait PartialClassNameMapDividerClassKey extends js.Object {
-  var absolute: js.UndefOr[String] = js.undefined
-  var inset: js.UndefOr[String] = js.undefined
-  var light: js.UndefOr[String] = js.undefined
-  var middle: js.UndefOr[String] = js.undefined
-  var root: js.UndefOr[String] = js.undefined
+  var absolute: js.UndefOr[String] = js.native
+  var inset: js.UndefOr[String] = js.native
+  var light: js.UndefOr[String] = js.native
+  var middle: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.native
 }
 
 object PartialClassNameMapDividerClassKey {

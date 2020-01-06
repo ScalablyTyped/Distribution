@@ -9,10 +9,10 @@ A hapi plugin integrating Objection ORM
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | schwifty |
-| Keywords           | hapi, plugin, objection, database, orm |
+| Keywords           | hapi, joi, plugin, objection, database, orm |
 | # releases         | 8 |
-| # dependents       | 1 |
-| # downloads        | 30213 |
+| # dependents       | 2 |
+| # downloads        | 61311 |
 | # stars            | 0 |
 
 ## Links

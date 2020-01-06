@@ -11,8 +11,8 @@ The lodash method `_.mapValues` exported as a module.
 | Full name          | lodash.mapvalues |
 | Keywords           | lodash-modularized, mapvalues |
 | # releases         | 0 |
-| # dependents       | 227 |
-| # downloads        | 15770288 |
+| # dependents       | 272 |
+| # downloads        | 24407670 |
 | # stars            | 0 |
 
 ## Links

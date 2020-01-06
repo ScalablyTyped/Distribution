@@ -10,10 +10,10 @@ A practical functional library for JavaScript programmers.
 | ------------------ | :-------------: |
 | Full name          | ramda |
 | Keywords           | ramda, functional, utils, utilities, toolkit, fp, tacit, point-free, curried, pure, fantasy-land |
-| # releases         | 9 |
-| # dependents       | 4575 |
-| # downloads        | 107475792 |
-| # stars            | 131 |
+| # releases         | 3 |
+| # dependents       | 5576 |
+| # downloads        | 211488334 |
+| # stars            | 134 |
 
 ## Links
 - [Homepage](https://ramdajs.com/)

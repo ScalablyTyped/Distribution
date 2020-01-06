@@ -12,7 +12,7 @@ deep equals assertions with tolerance for chai
 | Keywords           | assertions, testing, chai, chai-plugin, numbers, deep-eql, tolerance |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 47223 |
+| # downloads        | 53807 |
 | # stars            | 0 |
 
 ## Links

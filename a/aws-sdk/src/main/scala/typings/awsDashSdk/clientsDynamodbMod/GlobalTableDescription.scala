@@ -4,27 +4,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GlobalTableDescription extends js.Object {
   /**
     * The creation time of the global table.
     */
-  var CreationDateTime: js.UndefOr[_Date] = js.undefined
+  var CreationDateTime: js.UndefOr[_Date] = js.native
   /**
     * The unique identifier of the global table.
     */
-  var GlobalTableArn: js.UndefOr[GlobalTableArnString] = js.undefined
+  var GlobalTableArn: js.UndefOr[GlobalTableArnString] = js.native
   /**
     * The global table name.
     */
-  var GlobalTableName: js.UndefOr[TableName] = js.undefined
+  var GlobalTableName: js.UndefOr[TableName] = js.native
   /**
     * The current state of the global table:    CREATING - The global table is being created.    UPDATING - The global table is being updated.    DELETING - The global table is being deleted.    ACTIVE - The global table is ready for use.  
     */
-  var GlobalTableStatus: js.UndefOr[typings.awsDashSdk.clientsDynamodbMod.GlobalTableStatus] = js.undefined
+  var GlobalTableStatus: js.UndefOr[typings.awsDashSdk.clientsDynamodbMod.GlobalTableStatus] = js.native
   /**
-    * The regions where the global table has replicas.
+    * The Regions where the global table has replicas.
     */
-  var ReplicationGroup: js.UndefOr[ReplicaDescriptionList] = js.undefined
+  var ReplicationGroup: js.UndefOr[ReplicaDescriptionList] = js.native
 }
 
 object GlobalTableDescription {
@@ -37,11 +38,11 @@ object GlobalTableDescription {
     ReplicationGroup: ReplicaDescriptionList = null
   ): GlobalTableDescription = {
     val __obj = js.Dynamic.literal()
-    if (CreationDateTime != null) __obj.updateDynamic("CreationDateTime")(CreationDateTime)
-    if (GlobalTableArn != null) __obj.updateDynamic("GlobalTableArn")(GlobalTableArn)
-    if (GlobalTableName != null) __obj.updateDynamic("GlobalTableName")(GlobalTableName)
+    if (CreationDateTime != null) __obj.updateDynamic("CreationDateTime")(CreationDateTime.asInstanceOf[js.Any])
+    if (GlobalTableArn != null) __obj.updateDynamic("GlobalTableArn")(GlobalTableArn.asInstanceOf[js.Any])
+    if (GlobalTableName != null) __obj.updateDynamic("GlobalTableName")(GlobalTableName.asInstanceOf[js.Any])
     if (GlobalTableStatus != null) __obj.updateDynamic("GlobalTableStatus")(GlobalTableStatus.asInstanceOf[js.Any])
-    if (ReplicationGroup != null) __obj.updateDynamic("ReplicationGroup")(ReplicationGroup)
+    if (ReplicationGroup != null) __obj.updateDynamic("ReplicationGroup")(ReplicationGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalTableDescription]
   }
 }

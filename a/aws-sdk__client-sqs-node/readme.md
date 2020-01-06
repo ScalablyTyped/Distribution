@@ -10,9 +10,9 @@ Node SDK for Amazon Simple Queue Service
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/client-sqs-node |
 | Keywords           | - |
-| # releases         | 7 |
+| # releases         | 12 |
 | # dependents       | 0 |
-| # downloads        | 1041 |
+| # downloads        | 4508 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ Typings are for version 3.3.4
 | ------------------ | :-------------: |
 | Full name          | temp-file |
 | Keywords           | - |
-| # releases         | 23 |
-| # dependents       | 11 |
-| # downloads        | 2654077 |
+| # releases         | 14 |
+| # dependents       | 15 |
+| # downloads        | 3807837 |
 | # stars            | 0 |
 
 ## Links

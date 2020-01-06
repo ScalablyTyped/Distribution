@@ -5,9 +5,9 @@ import typings.moment.momentMod.unitOfTime.Diff
 import typings.moment.momentMod.unitOfTime.DurationConstructor
 import typings.moment.momentMod.unitOfTime.StartOf
 import typings.moment.momentStrings.LeftparenthesisRightparenthesis
-import typings.moment.momentStrings.LeftparenthesisRightsquarebracket
-import typings.moment.momentStrings.LeftsquarebracketRightparenthesis
-import typings.moment.momentStrings.LeftsquarebracketRightsquarebracket
+import typings.moment.momentStrings.`Leftparenthesis]`
+import typings.moment.momentStrings.`[Rightparenthesis`
+import typings.moment.momentStrings.`[]`
 import typings.std.Date
 import typings.std.Object
 import scala.scalajs.js
@@ -78,24 +78,9 @@ trait Moment
   def isBetween(a: MomentInput, b: MomentInput): Boolean = js.native
   def isBetween(a: MomentInput, b: MomentInput, granularity: StartOf): Boolean = js.native
   def isBetween(a: MomentInput, b: MomentInput, granularity: StartOf, inclusivity: LeftparenthesisRightparenthesis): Boolean = js.native
-  def isBetween(
-    a: MomentInput,
-    b: MomentInput,
-    granularity: StartOf,
-    inclusivity: LeftparenthesisRightsquarebracket
-  ): Boolean = js.native
-  def isBetween(
-    a: MomentInput,
-    b: MomentInput,
-    granularity: StartOf,
-    inclusivity: LeftsquarebracketRightparenthesis
-  ): Boolean = js.native
-  def isBetween(
-    a: MomentInput,
-    b: MomentInput,
-    granularity: StartOf,
-    inclusivity: LeftsquarebracketRightsquarebracket
-  ): Boolean = js.native
+  def isBetween(a: MomentInput, b: MomentInput, granularity: StartOf, inclusivity: `Leftparenthesis]`): Boolean = js.native
+  def isBetween(a: MomentInput, b: MomentInput, granularity: StartOf, inclusivity: `[Rightparenthesis`): Boolean = js.native
+  def isBetween(a: MomentInput, b: MomentInput, granularity: StartOf, inclusivity: `[]`): Boolean = js.native
   def isDST(): Boolean = js.native
   /**
     * @deprecated no reliable implementation

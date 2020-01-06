@@ -11,8 +11,8 @@ The lodash method `_.result` exported as a module.
 | Full name          | lodash.result |
 | Keywords           | lodash-modularized, result |
 | # releases         | 0 |
-| # dependents       | 50 |
-| # downloads        | 2298013 |
+| # dependents       | 53 |
+| # downloads        | 3263951 |
 | # stars            | 0 |
 
 ## Links

@@ -10,7 +10,7 @@ trait Anon_Error extends ValidationError {
   var location: js.UndefOr[scala.Nothing] = js.undefined
   var msg: js.Any
   var nestedErrors: js.Array[
-    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias express-validator.express-validator/src/base.ValidationError */ js.Object
+    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias express-validator.express-validator/src/base.ValidationError */ js.Object
   ]
   var param: _error
   var value: js.UndefOr[scala.Nothing] = js.undefined
@@ -21,7 +21,7 @@ object Anon_Error {
   def apply(
     msg: js.Any,
     nestedErrors: js.Array[
-      /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias express-validator.express-validator/src/base.ValidationError */ js.Object
+      /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias express-validator.express-validator/src/base.ValidationError */ js.Object
     ],
     param: _error,
     location: js.UndefOr[scala.Nothing] = js.undefined,

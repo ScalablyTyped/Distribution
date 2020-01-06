@@ -7,28 +7,29 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NfsLocationState extends js.Object {
   /**
     * Amazon Resource Name (ARN) of the DataSync Location.
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * Configuration block containing information for connecting to the NFS File System.
     */
-  val onPremConfig: js.UndefOr[Input[NfsLocationOnPremConfig]] = js.undefined
+  val onPremConfig: js.UndefOr[Input[NfsLocationOnPremConfig]] = js.native
   /**
     * Specifies the IP address or DNS name of the NFS server. The DataSync Agent(s) use this to mount the NFS server.
     */
-  val serverHostname: js.UndefOr[Input[String]] = js.undefined
+  val serverHostname: js.UndefOr[Input[String]] = js.native
   /**
     * Subdirectory to perform actions as source or destination. Should be exported by the NFS server.
     */
-  val subdirectory: js.UndefOr[Input[String]] = js.undefined
+  val subdirectory: js.UndefOr[Input[String]] = js.native
   /**
     * Key-value pairs of resource tags to assign to the DataSync Location.
     */
-  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
-  val uri: js.UndefOr[Input[String]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+  val uri: js.UndefOr[Input[String]] = js.native
 }
 
 object NfsLocationState {

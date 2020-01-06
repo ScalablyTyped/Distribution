@@ -14,7 +14,7 @@ trait TypeofClassPromise
       /* callback */ js.Function2[
         /* resolve */ js.Function1[
           /* value */ js.UndefOr[
-            (/* import warning: RewrittenClass.unapply cls $anonfun was tparam R */ js.Any) | (Thenable[/* import warning: RewrittenClass.unapply cls $anonfun was tparam R */ js.Any])
+            (/* import warning: RewrittenClass.unapply cls was tparam R */ js.Any) | (Thenable[/* import warning: RewrittenClass.unapply cls was tparam R */ js.Any])
           ], 
           Unit
         ], 

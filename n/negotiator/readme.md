@@ -10,9 +10,9 @@ HTTP content negotiation
 | ------------------ | :-------------: |
 | Full name          | negotiator |
 | Keywords           | http, content negotiation, accept, accept-language, accept-encoding, accept-charset |
-| # releases         | 1 |
-| # dependents       | 163 |
-| # downloads        | 311143432 |
+| # releases         | 2 |
+| # dependents       | 181 |
+| # downloads        | 474540977 |
 | # stars            | 11 |
 
 ## Links

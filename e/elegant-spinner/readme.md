@@ -10,9 +10,9 @@ Elegant spinner for interactive CLI apps
 | ------------------ | :-------------: |
 | Full name          | elegant-spinner |
 | Keywords           | ansi, terminal, console, cli, string, log, logging, spinner, busy, indicator, loading, loader, progress, elegant, loiter, interactive |
-| # releases         | 0 |
-| # dependents       | 108 |
-| # downloads        | 52965511 |
+| # releases         | 2 |
+| # dependents       | 113 |
+| # downloads        | 96074435 |
 | # stars            | 4 |
 
 ## Links

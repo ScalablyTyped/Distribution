@@ -10,9 +10,9 @@ Check that proxies are working, verify their anonymity level, check for other ca
 | ------------------ | :-------------: |
 | Full name          | proxy-verifier |
 | Keywords           | proxy, proxies, verify, check, anonymity |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 2063 |
+| # releases         | 2 |
+| # dependents       | 2 |
+| # downloads        | 2071 |
 | # stars            | 0 |
 
 ## Links

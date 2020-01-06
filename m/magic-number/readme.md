@@ -9,9 +9,9 @@ Determine a file's type from its magic number.
 | ------------------ | :-------------: |
 | Full name          | magic-number |
 | Keywords           | magicnumber, magic, number, file, detection, type |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 791 |
+| # downloads        | 18195 |
 | # stars            | 0 |
 
 ## Links

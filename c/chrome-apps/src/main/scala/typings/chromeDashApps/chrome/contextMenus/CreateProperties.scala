@@ -45,7 +45,7 @@ trait CreateProperties extends js.Object {
         String, 
         Exclude[
           String, 
-          browser_action | launcher | all_ | frame | audio | link | page | selection | page_action | editable | video | image
+          browser_action | selection | video | launcher | image | editable | page_action | page | audio | frame | all_ | link
         ]
       ]
     ]
@@ -117,7 +117,7 @@ object CreateProperties {
         String, 
         Exclude[
           String, 
-          browser_action | launcher | all_ | frame | audio | link | page | selection | page_action | editable | video | image
+          browser_action | selection | video | launcher | image | editable | page_action | page | audio | frame | all_ | link
         ]
       ]
     ] = null,

@@ -10,9 +10,9 @@ A red hot validation library for React
 | ------------------ | :-------------: |
 | Full name          | calidation |
 | Keywords           | validation, react, react validation |
-| # releases         | 33 |
+| # releases         | 35 |
 | # dependents       | 0 |
-| # downloads        | 14506 |
+| # downloads        | 28236 |
 | # stars            | 0 |
 
 ## Links

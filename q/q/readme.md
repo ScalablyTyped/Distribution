@@ -10,9 +10,9 @@ A library for promises (CommonJS/Promises/A,B,D)
 | ------------------ | :-------------: |
 | Full name          | q |
 | Keywords           | q, promise, promises, promises-a, promises-aplus, deferred, future, async, flow control, fluent, browser, node |
-| # releases         | 2 |
-| # dependents       | 7518 |
-| # downloads        | 258225500 |
+| # releases         | 1 |
+| # dependents       | 7714 |
+| # downloads        | 349113315 |
 | # stars            | 425 |
 
 ## Links

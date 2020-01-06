@@ -11,8 +11,8 @@ An Express middleware of Formidable that just works.
 | Full name          | express-formidable |
 | Keywords           | express, middleware, formidable |
 | # releases         | 2 |
-| # dependents       | 11 |
-| # downloads        | 149279 |
+| # dependents       | 17 |
+| # downloads        | 613915 |
 | # stars            | 15 |
 
 ## Links

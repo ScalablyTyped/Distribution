@@ -4,15 +4,15 @@
 Typings are for version 1.3
 
 ## Library description:
-npm for https://github.com/mpetazzoni/leaflet-gpx
+A Leaflet plugin for showing a GPX track on a map
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | leaflet-gpx |
-| Keywords           | leaflet, gpx |
-| # releases         | 4 |
+| Keywords           | leaflet, gpx, leaflet-gpx, map, gps |
+| # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 1569 |
+| # downloads        | 3404 |
 | # stars            | 0 |
 
 ## Links

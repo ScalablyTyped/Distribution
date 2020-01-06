@@ -4,31 +4,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MigrationTaskSummary extends js.Object {
   /**
-    * Unique identifier that references the migration task.
+    * Unique identifier that references the migration task. Do not store personal data in this field. 
     */
-  var MigrationTaskName: js.UndefOr[typings.awsDashSdk.clientsMigrationhubMod.MigrationTaskName] = js.undefined
+  var MigrationTaskName: js.UndefOr[typings.awsDashSdk.clientsMigrationhubMod.MigrationTaskName] = js.native
   /**
-    * 
+    * Indication of the percentage completion of the task.
     */
-  var ProgressPercent: js.UndefOr[typings.awsDashSdk.clientsMigrationhubMod.ProgressPercent] = js.undefined
+  var ProgressPercent: js.UndefOr[typings.awsDashSdk.clientsMigrationhubMod.ProgressPercent] = js.native
   /**
     * An AWS resource used for access control. It should uniquely identify the migration tool as it is used for all updates made by the tool.
     */
-  var ProgressUpdateStream: js.UndefOr[typings.awsDashSdk.clientsMigrationhubMod.ProgressUpdateStream] = js.undefined
+  var ProgressUpdateStream: js.UndefOr[typings.awsDashSdk.clientsMigrationhubMod.ProgressUpdateStream] = js.native
   /**
     * Status of the task.
     */
-  var Status: js.UndefOr[typings.awsDashSdk.clientsMigrationhubMod.Status] = js.undefined
+  var Status: js.UndefOr[typings.awsDashSdk.clientsMigrationhubMod.Status] = js.native
   /**
     * Detail information of what is being done within the overall status state.
     */
-  var StatusDetail: js.UndefOr[typings.awsDashSdk.clientsMigrationhubMod.StatusDetail] = js.undefined
+  var StatusDetail: js.UndefOr[typings.awsDashSdk.clientsMigrationhubMod.StatusDetail] = js.native
   /**
     * The timestamp when the task was gathered.
     */
-  var UpdateDateTime: js.UndefOr[typings.awsDashSdk.clientsMigrationhubMod.UpdateDateTime] = js.undefined
+  var UpdateDateTime: js.UndefOr[typings.awsDashSdk.clientsMigrationhubMod.UpdateDateTime] = js.native
 }
 
 object MigrationTaskSummary {
@@ -42,12 +43,12 @@ object MigrationTaskSummary {
     UpdateDateTime: UpdateDateTime = null
   ): MigrationTaskSummary = {
     val __obj = js.Dynamic.literal()
-    if (MigrationTaskName != null) __obj.updateDynamic("MigrationTaskName")(MigrationTaskName)
+    if (MigrationTaskName != null) __obj.updateDynamic("MigrationTaskName")(MigrationTaskName.asInstanceOf[js.Any])
     if (ProgressPercent != null) __obj.updateDynamic("ProgressPercent")(ProgressPercent.asInstanceOf[js.Any])
-    if (ProgressUpdateStream != null) __obj.updateDynamic("ProgressUpdateStream")(ProgressUpdateStream)
+    if (ProgressUpdateStream != null) __obj.updateDynamic("ProgressUpdateStream")(ProgressUpdateStream.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (StatusDetail != null) __obj.updateDynamic("StatusDetail")(StatusDetail)
-    if (UpdateDateTime != null) __obj.updateDynamic("UpdateDateTime")(UpdateDateTime)
+    if (StatusDetail != null) __obj.updateDynamic("StatusDetail")(StatusDetail.asInstanceOf[js.Any])
+    if (UpdateDateTime != null) __obj.updateDynamic("UpdateDateTime")(UpdateDateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[MigrationTaskSummary]
   }
 }

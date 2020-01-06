@@ -35,6 +35,10 @@ class InstanceGroup protected () extends CustomResource {
     */
   val clusterId: Output[String] = js.native
   /**
+    * A JSON string for supplying list of configurations specific to the EMR instance group. Note that this can only be changed when using EMR release 5.21 or later.
+    */
+  val configurationsJson: Output[js.UndefOr[String]] = js.native
+  /**
     * One or more `ebsConfig` blocks as defined below. Changing this forces a new resource to be created.
     */
   val ebsConfigs: Output[js.Array[InstanceGroupEbsConfig]] = js.native

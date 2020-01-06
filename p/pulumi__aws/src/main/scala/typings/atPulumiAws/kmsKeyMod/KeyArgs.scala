@@ -6,38 +6,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait KeyArgs extends js.Object {
   /**
     * Duration in days after which the key is deleted
     * after destruction of the resource, must be between 7 and 30 days. Defaults to 30 days.
     */
-  val deletionWindowInDays: js.UndefOr[Input[Double]] = js.undefined
+  val deletionWindowInDays: js.UndefOr[Input[Double]] = js.native
   /**
     * The description of the key as viewed in AWS console.
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * Specifies whether [key rotation](http://docs.aws.amazon.com/kms/latest/developerguide/rotate-keys.html)
     * is enabled. Defaults to false.
     */
-  val enableKeyRotation: js.UndefOr[Input[Boolean]] = js.undefined
+  val enableKeyRotation: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Specifies whether the key is enabled. Defaults to true.
     */
-  val isEnabled: js.UndefOr[Input[Boolean]] = js.undefined
+  val isEnabled: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Specifies the intended use of the key.
     * Defaults to ENCRYPT_DECRYPT, and only symmetric encryption and decryption are supported.
     */
-  val keyUsage: js.UndefOr[Input[String]] = js.undefined
-  /**
-    * A valid policy JSON document.
-    */
-  val policy: js.UndefOr[Input[String]] = js.undefined
+  val keyUsage: js.UndefOr[Input[String]] = js.native
+  val policy: js.UndefOr[Input[String]] = js.native
   /**
     * A mapping of tags to assign to the object.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object KeyArgs {

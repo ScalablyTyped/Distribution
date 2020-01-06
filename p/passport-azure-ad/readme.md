@@ -10,9 +10,9 @@ OIDC and Bearer Passport strategies for Azure Active Directory
 | ------------------ | :-------------: |
 | Full name          | passport-azure-ad |
 | Keywords           | azure active directory, aad, adfs, sso, oidc, bearer, shibboleth |
-| # releases         | 8 |
-| # dependents       | 11 |
-| # downloads        | 2167054 |
+| # releases         | 7 |
+| # dependents       | 15 |
+| # downloads        | 2490776 |
 | # stars            | 6 |
 
 ## Links

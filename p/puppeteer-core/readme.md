@@ -10,9 +10,9 @@ A high-level API to control headless Chrome over the DevTools Protocol
 | ------------------ | :-------------: |
 | Full name          | puppeteer-core |
 | Keywords           | - |
-| # releases         | 12 |
-| # dependents       | 44 |
-| # downloads        | 423159 |
+| # releases         | 20 |
+| # dependents       | 134 |
+| # downloads        | 2440957 |
 | # stars            | 0 |
 
 ## Links

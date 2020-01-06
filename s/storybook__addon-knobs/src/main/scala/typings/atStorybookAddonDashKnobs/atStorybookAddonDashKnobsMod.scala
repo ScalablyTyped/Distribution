@@ -64,7 +64,7 @@ object atStorybookAddonDashKnobsMod extends js.Object {
     optionsObj: OptionsKnobOptions,
     groupId: String
   ): T = js.native
-  def radios(name: String, options: RadiosTypeOptionsProp[Null]): Null = js.native
+  def radios(name: String, options: RadiosTypeOptionsProp[js.UndefOr[scala.Nothing]]): js.UndefOr[scala.Nothing] = js.native
   def radios(
     name: String,
     options: RadiosTypeOptionsProp[js.UndefOr[scala.Nothing]],
@@ -77,8 +77,8 @@ object atStorybookAddonDashKnobsMod extends js.Object {
   def radios(name: String, options: RadiosTypeOptionsProp[Double], value: Double, groupId: String): Double = js.native
   def radios(name: String, options: RadiosTypeOptionsProp[Null], value: Null, groupId: String): Null = js.native
   @JSName("radios")
-  def radios_Union(name: String, options: RadiosTypeOptionsProp[js.UndefOr[scala.Nothing]]): js.UndefOr[scala.Nothing] = js.native
-  def select(name: String, options: SelectTypeOptionsProp[Null]): Null = js.native
+  def radios_Null(name: String, options: RadiosTypeOptionsProp[Null]): Null = js.native
+  def select(name: String, options: SelectTypeOptionsProp[js.UndefOr[scala.Nothing]]): js.UndefOr[scala.Nothing] = js.native
   def select(
     name: String,
     options: SelectTypeOptionsProp[js.UndefOr[scala.Nothing]],
@@ -98,11 +98,11 @@ object atStorybookAddonDashKnobsMod extends js.Object {
   def select(name: String, options: SelectTypeOptionsProp[Double], value: Double, groupId: String): Double = js.native
   def select(name: String, options: SelectTypeOptionsProp[Null], value: Null, groupId: String): Null = js.native
   @JSName("select")
-  def select_Union(name: String, options: SelectTypeOptionsProp[js.UndefOr[scala.Nothing]]): js.UndefOr[scala.Nothing] = js.native
+  def select_Null(name: String, options: SelectTypeOptionsProp[Null]): Null = js.native
   def text(name: String, value: String): String = js.native
   def text(name: String, value: String, groupId: String): String = js.native
   def withKnobs(
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
   ): js.Any = js.native
 }
 

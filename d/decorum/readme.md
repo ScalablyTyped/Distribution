@@ -12,7 +12,7 @@ Vanilla, lightweight, simple JavaScript decorators to use in your classes.
 | Keywords           | - |
 | # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 79 |
+| # downloads        | 147 |
 | # stars            | 0 |
 
 ## Links

@@ -11,7 +11,7 @@ package object clientsElbv2Mod {
 
   type ActionOrder = Double
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.forward
+    - typings.awsDashSdk.awsDashSdkStrings.forward__
     - typings.awsDashSdk.awsDashSdkStrings.`authenticate-oidc`
     - typings.awsDashSdk.awsDashSdkStrings.`authenticate-cognito`
     - typings.awsDashSdk.awsDashSdkStrings.redirect
@@ -25,8 +25,8 @@ package object clientsElbv2Mod {
   type AuthenticateCognitoActionAuthenticationRequestParamName = java.lang.String
   type AuthenticateCognitoActionAuthenticationRequestParamValue = java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.deny
-    - typings.awsDashSdk.awsDashSdkStrings.allow
+    - typings.awsDashSdk.awsDashSdkStrings.deny__
+    - typings.awsDashSdk.awsDashSdkStrings.allow__
     - typings.awsDashSdk.awsDashSdkStrings.authenticate
     - java.lang.String
   */
@@ -44,8 +44,8 @@ package object clientsElbv2Mod {
   type AuthenticateOidcActionClientId = java.lang.String
   type AuthenticateOidcActionClientSecret = java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.deny
-    - typings.awsDashSdk.awsDashSdkStrings.allow
+    - typings.awsDashSdk.awsDashSdkStrings.deny__
+    - typings.awsDashSdk.awsDashSdkStrings.allow__
     - typings.awsDashSdk.awsDashSdkStrings.authenticate
     - java.lang.String
   */
@@ -82,7 +82,7 @@ package object clientsElbv2Mod {
   type HttpHeaderConditionName = java.lang.String
   type IpAddress = java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.ipv4
+    - typings.awsDashSdk.awsDashSdkStrings.ipv4_
     - typings.awsDashSdk.awsDashSdkStrings.dualstack
     - java.lang.String
   */
@@ -108,16 +108,16 @@ package object clientsElbv2Mod {
   */
   type LoadBalancerSchemeEnum = _LoadBalancerSchemeEnum | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.active
-    - typings.awsDashSdk.awsDashSdkStrings.provisioning
+    - typings.awsDashSdk.awsDashSdkStrings.active__
+    - typings.awsDashSdk.awsDashSdkStrings.provisioning_
     - typings.awsDashSdk.awsDashSdkStrings.active_impaired
-    - typings.awsDashSdk.awsDashSdkStrings.failed
+    - typings.awsDashSdk.awsDashSdkStrings.failed__
     - java.lang.String
   */
   type LoadBalancerStateEnum = _LoadBalancerStateEnum | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.application
-    - typings.awsDashSdk.awsDashSdkStrings.network
+    - typings.awsDashSdk.awsDashSdkStrings.application_
+    - typings.awsDashSdk.awsDashSdkStrings.network_
     - java.lang.String
   */
   type LoadBalancerTypeEnum = _LoadBalancerTypeEnum | java.lang.String
@@ -128,6 +128,7 @@ package object clientsElbv2Mod {
   type PageSize = Double
   type Path = java.lang.String
   type Port = Double
+  type PrivateIPv4Address = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.HTTP
     - typings.awsDashSdk.awsDashSdkStrings.HTTPS
@@ -182,41 +183,45 @@ package object clientsElbv2Mod {
   type TargetGroupAttributeKey = java.lang.String
   type TargetGroupAttributeValue = java.lang.String
   type TargetGroupAttributes = js.Array[TargetGroupAttribute]
+  type TargetGroupList = js.Array[TargetGroupTuple]
   type TargetGroupName = java.lang.String
   type TargetGroupNames = js.Array[TargetGroupName]
+  type TargetGroupStickinessDurationSeconds = Double
+  type TargetGroupStickinessEnabled = Boolean
+  type TargetGroupWeight = Double
   type TargetGroups = js.Array[TargetGroup]
   type TargetHealthDescriptions = js.Array[TargetHealthDescription]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.ElbDOTRegistrationInProgress
-    - typings.awsDashSdk.awsDashSdkStrings.ElbDOTInitialHealthChecking
-    - typings.awsDashSdk.awsDashSdkStrings.TargetDOTResponseCodeMismatch
-    - typings.awsDashSdk.awsDashSdkStrings.TargetDOTTimeout
-    - typings.awsDashSdk.awsDashSdkStrings.TargetDOTFailedHealthChecks
-    - typings.awsDashSdk.awsDashSdkStrings.TargetDOTNotRegistered
-    - typings.awsDashSdk.awsDashSdkStrings.TargetDOTNotInUse
-    - typings.awsDashSdk.awsDashSdkStrings.TargetDOTDeregistrationInProgress
-    - typings.awsDashSdk.awsDashSdkStrings.TargetDOTInvalidState
-    - typings.awsDashSdk.awsDashSdkStrings.TargetDOTIpUnusable
-    - typings.awsDashSdk.awsDashSdkStrings.TargetDOTHealthCheckDisabled
-    - typings.awsDashSdk.awsDashSdkStrings.ElbDOTInternalError
+    - typings.awsDashSdk.awsDashSdkStrings.ElbDotRegistrationInProgress
+    - typings.awsDashSdk.awsDashSdkStrings.ElbDotInitialHealthChecking
+    - typings.awsDashSdk.awsDashSdkStrings.TargetDotResponseCodeMismatch
+    - typings.awsDashSdk.awsDashSdkStrings.TargetDotTimeout
+    - typings.awsDashSdk.awsDashSdkStrings.TargetDotFailedHealthChecks
+    - typings.awsDashSdk.awsDashSdkStrings.TargetDotNotRegistered
+    - typings.awsDashSdk.awsDashSdkStrings.TargetDotNotInUse
+    - typings.awsDashSdk.awsDashSdkStrings.TargetDotDeregistrationInProgress
+    - typings.awsDashSdk.awsDashSdkStrings.TargetDotInvalidState
+    - typings.awsDashSdk.awsDashSdkStrings.TargetDotIpUnusable
+    - typings.awsDashSdk.awsDashSdkStrings.TargetDotHealthCheckDisabled
+    - typings.awsDashSdk.awsDashSdkStrings.ElbDotInternalError
     - java.lang.String
   */
   type TargetHealthReasonEnum = _TargetHealthReasonEnum | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.initial
-    - typings.awsDashSdk.awsDashSdkStrings.healthy
-    - typings.awsDashSdk.awsDashSdkStrings.unhealthy
+    - typings.awsDashSdk.awsDashSdkStrings.initial_
+    - typings.awsDashSdk.awsDashSdkStrings.healthy__
+    - typings.awsDashSdk.awsDashSdkStrings.unhealthy__
     - typings.awsDashSdk.awsDashSdkStrings.unused
-    - typings.awsDashSdk.awsDashSdkStrings.draining
-    - typings.awsDashSdk.awsDashSdkStrings.unavailable
+    - typings.awsDashSdk.awsDashSdkStrings.draining_
+    - typings.awsDashSdk.awsDashSdkStrings.unavailable__
     - java.lang.String
   */
   type TargetHealthStateEnum = _TargetHealthStateEnum | java.lang.String
   type TargetId = java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.instance
-    - typings.awsDashSdk.awsDashSdkStrings.ip
-    - typings.awsDashSdk.awsDashSdkStrings.lambda
+    - typings.awsDashSdk.awsDashSdkStrings.instance__
+    - typings.awsDashSdk.awsDashSdkStrings.ip_
+    - typings.awsDashSdk.awsDashSdkStrings.lambda__
     - java.lang.String
   */
   type TargetTypeEnum = _TargetTypeEnum | java.lang.String
@@ -224,7 +229,7 @@ package object clientsElbv2Mod {
   type ZoneName = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2015-12-01`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | java.lang.String

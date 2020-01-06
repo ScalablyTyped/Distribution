@@ -10,9 +10,9 @@ Converts XML into a human readable format (pretty print) while respecting the xm
 | ------------------ | :-------------: |
 | Full name          | xml-formatter |
 | Keywords           | xml, pretty-print, indent, parser, formatter, xml:space, preserve |
-| # releases         | 2 |
-| # dependents       | 22 |
-| # downloads        | 298271 |
+| # releases         | 3 |
+| # dependents       | 35 |
+| # downloads        | 535372 |
 | # stars            | 1 |
 
 ## Links

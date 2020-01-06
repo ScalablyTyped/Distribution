@@ -11,8 +11,8 @@ Resolve the path of a globally installed module
 | Full name          | resolve-global |
 | Keywords           | resolve, global, package, module, globally, path, npm, yarn, packages, require |
 | # releases         | 2 |
-| # dependents       | 11 |
-| # downloads        | 3278118 |
+| # dependents       | 21 |
+| # downloads        | 10502777 |
 | # stars            | 0 |
 
 ## Links

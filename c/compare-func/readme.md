@@ -10,9 +10,9 @@ Get a compare function for array to sort
 | ------------------ | :-------------: |
 | Full name          | compare-func |
 | Keywords           | compare-func, arr, array, by, compare, dot, get, obj, object, prop, property, sort, sorting |
-| # releases         | 1 |
-| # dependents       | 71 |
-| # downloads        | 20275769 |
+| # releases         | 0 |
+| # dependents       | 89 |
+| # downloads        | 37792658 |
 | # stars            | 1 |
 
 ## Links

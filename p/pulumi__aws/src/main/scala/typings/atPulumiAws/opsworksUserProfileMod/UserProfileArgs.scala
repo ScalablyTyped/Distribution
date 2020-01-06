@@ -5,23 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UserProfileArgs extends js.Object {
   /**
     * Whether users can specify their own SSH public key through the My Settings page
     */
-  val allowSelfManagement: js.UndefOr[Input[Boolean]] = js.undefined
+  val allowSelfManagement: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The users public key
     */
-  val sshPublicKey: js.UndefOr[Input[String]] = js.undefined
+  val sshPublicKey: js.UndefOr[Input[String]] = js.native
   /**
     * The ssh username, with witch this user wants to log in
     */
-  val sshUsername: Input[String]
+  val sshUsername: Input[String] = js.native
   /**
     * The user's IAM ARN
     */
-  val userArn: Input[String]
+  val userArn: Input[String] = js.native
 }
 
 object UserProfileArgs {

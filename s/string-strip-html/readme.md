@@ -10,9 +10,9 @@ Strips HTML tags from strings. Detects legit unencoded brackets.
 | ------------------ | :-------------: |
 | Full name          | string-strip-html |
 | Keywords           | amount, currency, digits, from, numbers, remove, separator, separators, string, thousand, thousands |
-| # releases         | 91 |
+| # releases         | 92 |
 | # dependents       | 13 |
-| # downloads        | 169364 |
+| # downloads        | 191414 |
 | # stars            | 0 |
 
 ## Links

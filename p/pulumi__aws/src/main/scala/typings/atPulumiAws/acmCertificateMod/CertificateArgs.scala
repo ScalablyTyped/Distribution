@@ -7,42 +7,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CertificateArgs extends js.Object {
   /**
     * ARN of an ACMPCA
     */
-  val certificateAuthorityArn: js.UndefOr[Input[String]] = js.undefined
+  val certificateAuthorityArn: js.UndefOr[Input[String]] = js.native
   /**
     * The certificate's PEM-formatted public key
     */
-  val certificateBody: js.UndefOr[Input[String]] = js.undefined
+  val certificateBody: js.UndefOr[Input[String]] = js.native
   /**
     * The certificate's PEM-formatted chain
     * * Creating a private CA issued certificate
     */
-  val certificateChain: js.UndefOr[Input[String]] = js.undefined
+  val certificateChain: js.UndefOr[Input[String]] = js.native
   /**
     * A domain name for which the certificate should be issued
     */
-  val domainName: js.UndefOr[Input[String]] = js.undefined
-  val options: js.UndefOr[Input[CertificateOptions]] = js.undefined
+  val domainName: js.UndefOr[Input[String]] = js.native
+  val options: js.UndefOr[Input[CertificateOptions]] = js.native
   /**
     * The certificate's PEM-formatted private key
     */
-  val privateKey: js.UndefOr[Input[String]] = js.undefined
+  val privateKey: js.UndefOr[Input[String]] = js.native
   /**
     * A list of domains that should be SANs in the issued certificate
     */
-  val subjectAlternativeNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val subjectAlternativeNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * Which method to use for validation. `DNS` or `EMAIL` are valid, `NONE` can be used for certificates that were imported into ACM and then into state managed by this provider.
     * * Importing an existing certificate
     */
-  val validationMethod: js.UndefOr[Input[String]] = js.undefined
+  val validationMethod: js.UndefOr[Input[String]] = js.native
 }
 
 object CertificateArgs {

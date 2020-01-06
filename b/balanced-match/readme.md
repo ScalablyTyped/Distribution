@@ -10,9 +10,9 @@ Match balanced character pairs, like "{" and "}"
 | ------------------ | :-------------: |
 | Full name          | balanced-match |
 | Keywords           | match, regexp, test, balanced, parse |
-| # releases         | 2 |
-| # dependents       | 141 |
-| # downloads        | 547440378 |
+| # releases         | 0 |
+| # dependents       | 166 |
+| # downloads        | 673551354 |
 | # stars            | 5 |
 
 ## Links

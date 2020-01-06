@@ -11,8 +11,8 @@ A route map utility for express.
 | Full name          | routie |
 | Keywords           | route, map, express, compound |
 | # releases         | 1 |
-| # dependents       | 0 |
-| # downloads        | 200 |
+| # dependents       | 1 |
+| # downloads        | 215 |
 | # stars            | 0 |
 
 ## Links

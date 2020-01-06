@@ -10,9 +10,9 @@ The swiss army knife for binary data in JavaScript.
 | ------------------ | :-------------: |
 | Full name          | bytebuffer |
 | Keywords           | net, array, buffer, arraybuffer, typed array, bytebuffer, json, websocket, webrtc |
-| # releases         | 1 |
-| # dependents       | 337 |
-| # downloads        | 25701747 |
+| # releases         | 0 |
+| # dependents       | 415 |
+| # downloads        | 36830049 |
 | # stars            | 7 |
 
 ## Links

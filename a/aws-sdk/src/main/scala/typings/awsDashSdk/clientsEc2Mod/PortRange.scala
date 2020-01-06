@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PortRange extends js.Object {
   /**
     * The first port in the range.
     */
-  var From: js.UndefOr[Integer] = js.undefined
+  var From: js.UndefOr[Integer] = js.native
   /**
     * The last port in the range.
     */
-  var To: js.UndefOr[Integer] = js.undefined
+  var To: js.UndefOr[Integer] = js.native
 }
 
 object PortRange {

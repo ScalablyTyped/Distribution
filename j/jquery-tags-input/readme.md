@@ -10,9 +10,9 @@ Do you use tags to organize content on your site? This plugin will turn your bor
 | ------------------ | :-------------: |
 | Full name          | jquery-tags-input |
 | Keywords           | - |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 64301 |
+| # downloads        | 93650 |
 | # stars            | 1 |
 
 ## Links

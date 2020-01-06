@@ -10,9 +10,9 @@ Register and receive push notifications.
 | ------------------ | :-------------: |
 | Full name          | phonegap-plugin-push |
 | Keywords           | ecosystem:cordova, ecosystem:phonegap, cordova-ios, cordova-android, cordova-windows8, cordova-windows, cordova-wp8, cordova-browser |
-| # releases         | 20 |
+| # releases         | 10 |
 | # dependents       | 8 |
-| # downloads        | 487780 |
+| # downloads        | 432316 |
 | # stars            | 19 |
 
 ## Links

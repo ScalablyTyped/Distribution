@@ -5,17 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PolicyTargetTrackingScalingPolicyConfiguration extends js.Object {
   var customizedMetricSpecification: js.UndefOr[
     Input[PolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecification]
-  ] = js.undefined
-  var disableScaleIn: js.UndefOr[Input[Boolean]] = js.undefined
+  ] = js.native
+  var disableScaleIn: js.UndefOr[Input[Boolean]] = js.native
   var predefinedMetricSpecification: js.UndefOr[
     Input[PolicyTargetTrackingScalingPolicyConfigurationPredefinedMetricSpecification]
-  ] = js.undefined
-  var scaleInCooldown: js.UndefOr[Input[Double]] = js.undefined
-  var scaleOutCooldown: js.UndefOr[Input[Double]] = js.undefined
-  var targetValue: Input[Double]
+  ] = js.native
+  var scaleInCooldown: js.UndefOr[Input[Double]] = js.native
+  var scaleOutCooldown: js.UndefOr[Input[Double]] = js.native
+  var targetValue: Input[Double] = js.native
 }
 
 object PolicyTargetTrackingScalingPolicyConfiguration {

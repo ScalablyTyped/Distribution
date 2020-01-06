@@ -10,9 +10,9 @@ Single component release of rating
 | ------------------ | :-------------: |
 | Full name          | semantic-ui-rating |
 | Keywords           | - |
-| # releases         | 6 |
+| # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 2917 |
+| # downloads        | 3276 |
 | # stars            | 0 |
 
 ## Links

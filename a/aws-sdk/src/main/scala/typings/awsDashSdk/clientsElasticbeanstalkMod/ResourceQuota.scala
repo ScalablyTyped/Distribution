@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ResourceQuota extends js.Object {
   /**
     * The maximum number of instances of this Elastic Beanstalk resource type that an AWS account can use.
     */
-  var Maximum: js.UndefOr[BoxedInt] = js.undefined
+  var Maximum: js.UndefOr[BoxedInt] = js.native
 }
 
 object ResourceQuota {

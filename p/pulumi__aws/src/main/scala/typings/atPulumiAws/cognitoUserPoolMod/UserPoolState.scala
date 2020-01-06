@@ -15,99 +15,100 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UserPoolState extends js.Object {
   /**
     * The configuration for AdminCreateUser requests.
     */
-  val adminCreateUserConfig: js.UndefOr[Input[UserPoolAdminCreateUserConfig]] = js.undefined
+  val adminCreateUserConfig: js.UndefOr[Input[UserPoolAdminCreateUserConfig]] = js.native
   /**
     * Attributes supported as an alias for this user pool. Possible values: phone_number, email, or preferred_username. Conflicts with `usernameAttributes`.
     */
-  val aliasAttributes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val aliasAttributes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The ARN of the user pool.
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * The attributes to be auto-verified. Possible values: email, phone_number.
     */
-  val autoVerifiedAttributes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val autoVerifiedAttributes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The date the user pool was created.
     */
-  val creationDate: js.UndefOr[Input[String]] = js.undefined
+  val creationDate: js.UndefOr[Input[String]] = js.native
   /**
     * The configuration for the user pool's device tracking.
     */
-  val deviceConfiguration: js.UndefOr[Input[UserPoolDeviceConfiguration]] = js.undefined
+  val deviceConfiguration: js.UndefOr[Input[UserPoolDeviceConfiguration]] = js.native
   /**
     * The Email Configuration.
     */
-  val emailConfiguration: js.UndefOr[Input[UserPoolEmailConfiguration]] = js.undefined
+  val emailConfiguration: js.UndefOr[Input[UserPoolEmailConfiguration]] = js.native
   /**
     * A string representing the email verification message. Conflicts with `verificationMessageTemplate` configuration block `emailMessage` argument.
     */
-  val emailVerificationMessage: js.UndefOr[Input[String]] = js.undefined
+  val emailVerificationMessage: js.UndefOr[Input[String]] = js.native
   /**
     * A string representing the email verification subject. Conflicts with `verificationMessageTemplate` configuration block `emailSubject` argument.
     */
-  val emailVerificationSubject: js.UndefOr[Input[String]] = js.undefined
+  val emailVerificationSubject: js.UndefOr[Input[String]] = js.native
   /**
     * The endpoint name of the user pool. Example format: cognito-idp.REGION.amazonaws.com/xxxx_yyyyy
     */
-  val endpoint: js.UndefOr[Input[String]] = js.undefined
+  val endpoint: js.UndefOr[Input[String]] = js.native
   /**
     * A container for the AWS Lambda triggers associated with the user pool.
     */
-  val lambdaConfig: js.UndefOr[Input[UserPoolLambdaConfig]] = js.undefined
+  val lambdaConfig: js.UndefOr[Input[UserPoolLambdaConfig]] = js.native
   /**
     * The date the user pool was last modified.
     */
-  val lastModifiedDate: js.UndefOr[Input[String]] = js.undefined
+  val lastModifiedDate: js.UndefOr[Input[String]] = js.native
   /**
     * Set to enable multi-factor authentication. Must be one of the following values (ON, OFF, OPTIONAL)
     */
-  val mfaConfiguration: js.UndefOr[Input[String]] = js.undefined
+  val mfaConfiguration: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the attribute.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * A container for information about the user pool password policy.
     */
-  val passwordPolicy: js.UndefOr[Input[UserPoolPasswordPolicy]] = js.undefined
+  val passwordPolicy: js.UndefOr[Input[UserPoolPasswordPolicy]] = js.native
   /**
     * A container with the schema attributes of a user pool. Maximum of 50 attributes.
     */
-  val schemas: js.UndefOr[Input[js.Array[Input[UserPoolSchema]]]] = js.undefined
+  val schemas: js.UndefOr[Input[js.Array[Input[UserPoolSchema]]]] = js.native
   /**
     * A string representing the SMS authentication message.
     */
-  val smsAuthenticationMessage: js.UndefOr[Input[String]] = js.undefined
+  val smsAuthenticationMessage: js.UndefOr[Input[String]] = js.native
   /**
     * The SMS Configuration.
     */
-  val smsConfiguration: js.UndefOr[Input[UserPoolSmsConfiguration]] = js.undefined
+  val smsConfiguration: js.UndefOr[Input[UserPoolSmsConfiguration]] = js.native
   /**
     * A string representing the SMS verification message. Conflicts with `verificationMessageTemplate` configuration block `smsMessage` argument.
     */
-  val smsVerificationMessage: js.UndefOr[Input[String]] = js.undefined
+  val smsVerificationMessage: js.UndefOr[Input[String]] = js.native
   /**
     * A mapping of tags to assign to the User Pool.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * Configuration block for user pool add-ons to enable user pool advanced security mode features.
     */
-  val userPoolAddOns: js.UndefOr[Input[UserPoolUserPoolAddOns]] = js.undefined
+  val userPoolAddOns: js.UndefOr[Input[UserPoolUserPoolAddOns]] = js.native
   /**
     * Specifies whether email addresses or phone numbers can be specified as usernames when a user signs up. Conflicts with `aliasAttributes`.
     */
-  val usernameAttributes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val usernameAttributes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The verification message templates configuration.
     */
-  val verificationMessageTemplate: js.UndefOr[Input[UserPoolVerificationMessageTemplate]] = js.undefined
+  val verificationMessageTemplate: js.UndefOr[Input[UserPoolVerificationMessageTemplate]] = js.native
 }
 
 object UserPoolState {

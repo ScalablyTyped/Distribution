@@ -9,11 +9,11 @@ Easily load and save config without having to think about where and how
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | configstore |
-| Keywords           | config, store, storage, conf, configuration, settings, preferences, json, data, persist, persistent, save |
+| Keywords           | config, store, storage, configuration, settings, preferences, json, data, persist, persistent, save |
 | # releases         | 4 |
-| # dependents       | 699 |
-| # downloads        | 154870127 |
-| # stars            | 35 |
+| # dependents       | 910 |
+| # downloads        | 248878157 |
+| # stars            | 36 |
 
 ## Links
 - [Homepage](https://github.com/yeoman/configstore#readme)

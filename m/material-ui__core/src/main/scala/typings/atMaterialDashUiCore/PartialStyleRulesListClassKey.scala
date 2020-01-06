@@ -6,11 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/List.ListClassKey>> */
+@js.native
 trait PartialStyleRulesListClassKey extends js.Object {
-  var dense: js.UndefOr[CSSProperties] = js.undefined
-  var padding: js.UndefOr[CSSProperties] = js.undefined
-  var root: js.UndefOr[CSSProperties] = js.undefined
-  var subheader: js.UndefOr[CSSProperties] = js.undefined
+  var dense: js.UndefOr[CSSProperties] = js.native
+  var padding: js.UndefOr[CSSProperties] = js.native
+  var root: js.UndefOr[CSSProperties] = js.native
+  var subheader: js.UndefOr[CSSProperties] = js.native
 }
 
 object PartialStyleRulesListClassKey {

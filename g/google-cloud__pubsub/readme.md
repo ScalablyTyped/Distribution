@@ -10,9 +10,9 @@ Cloud Pub/Sub Client Library for Node.js
 | ------------------ | :-------------: |
 | Full name          | @google-cloud/pubsub |
 | Keywords           | google apis client, google api client, google apis, google api, google, google cloud platform, google cloud, cloud, google pubsub, pubsub |
-| # releases         | 41 |
-| # dependents       | 105 |
-| # downloads        | 7569746 |
+| # releases         | 44 |
+| # dependents       | 162 |
+| # downloads        | 7960761 |
 | # stars            | 2 |
 
 ## Links

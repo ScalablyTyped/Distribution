@@ -9,9 +9,9 @@ Typings are for version 0.1.0-preview.1
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/util-locate-window |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 5 |
 | # dependents       | 5 |
-| # downloads        | 1375 |
+| # downloads        | 5071 |
 | # stars            | 0 |
 
 ## Links

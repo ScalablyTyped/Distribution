@@ -9,7 +9,7 @@ trait Anon_1EmptyInfiniteNonEmptyAnonCODENAMEERRORInfinite[TupleSet /* <: js.Arr
   var empty: js.Array[js.Any]
   var infinite: Anon_CODENAMEERRORInfinite
   var nonEmpty: Concat[
-    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias typescript-tuple.typescript-tuple/lib/utils.ConcatMultiple<typescript-tuple.typescript-tuple/lib/utils.Reverse<ReversedRest, []>> */ js.Object, 
+    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias typescript-tuple.typescript-tuple/lib/utils.ConcatMultiple<typescript-tuple.typescript-tuple/lib/utils.Reverse<ReversedRest, []>> */ js.Object, 
     _
   ]
 }
@@ -20,7 +20,7 @@ object Anon_1EmptyInfiniteNonEmptyAnonCODENAMEERRORInfinite {
     empty: js.Array[js.Any],
     infinite: Anon_CODENAMEERRORInfinite,
     nonEmpty: Concat[
-      /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias typescript-tuple.typescript-tuple/lib/utils.ConcatMultiple<typescript-tuple.typescript-tuple/lib/utils.Reverse<ReversedRest, []>> */ js.Object, 
+      /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias typescript-tuple.typescript-tuple/lib/utils.ConcatMultiple<typescript-tuple.typescript-tuple/lib/utils.Reverse<ReversedRest, []>> */ js.Object, 
       _
     ]
   ): Anon_1EmptyInfiniteNonEmptyAnonCODENAMEERRORInfinite[TupleSet] = {

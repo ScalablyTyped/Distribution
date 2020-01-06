@@ -10,9 +10,9 @@ The iconic font, CSS, and SVG framework
 | ------------------ | :-------------: |
 | Full name          | @fortawesome/fontawesome-svg-core |
 | Keywords           | font, awesome, fontawesome, icon, svg, bootstrap |
-| # releases         | 30 |
-| # dependents       | 451 |
-| # downloads        | 11603574 |
+| # releases         | 55 |
+| # dependents       | 940 |
+| # downloads        | 17211142 |
 | # stars            | 0 |
 
 ## Links

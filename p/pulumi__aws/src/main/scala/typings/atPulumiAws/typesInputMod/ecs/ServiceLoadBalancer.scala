@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ServiceLoadBalancer extends js.Object {
-  var containerName: Input[String]
-  var containerPort: Input[Double]
-  var elbName: js.UndefOr[Input[String]] = js.undefined
-  var targetGroupArn: js.UndefOr[Input[String]] = js.undefined
+  var containerName: Input[String] = js.native
+  var containerPort: Input[Double] = js.native
+  var elbName: js.UndefOr[Input[String]] = js.native
+  var targetGroupArn: js.UndefOr[Input[String]] = js.native
 }
 
 object ServiceLoadBalancer {

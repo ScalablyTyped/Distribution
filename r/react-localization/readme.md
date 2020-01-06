@@ -10,9 +10,9 @@ Simple module to localize the React interface using the same syntax used in the 
 | ------------------ | :-------------: |
 | Full name          | react-localization |
 | Keywords           | react-component, react, localization, internationalization, javascript, typescript, react, react-component |
-| # releases         | 30 |
-| # dependents       | 15 |
-| # downloads        | 579024 |
+| # releases         | 23 |
+| # dependents       | 23 |
+| # downloads        | 869828 |
 | # stars            | 5 |
 
 ## Links

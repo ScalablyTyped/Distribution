@@ -10,9 +10,9 @@ PouchDB's map/reduce query API as a plugin.
 | ------------------ | :-------------: |
 | Full name          | pouchdb-mapreduce |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 23 |
-| # downloads        | 210485 |
+| # releases         | 8 |
+| # dependents       | 29 |
+| # downloads        | 232447 |
 | # stars            | 1 |
 
 ## Links

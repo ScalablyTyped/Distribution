@@ -10,9 +10,9 @@ Apollo Server plugin base classes
 | ------------------ | :-------------: |
 | Full name          | apollo-server-plugin-base |
 | Keywords           | - |
-| # releases         | 41 |
-| # dependents       | 4 |
-| # downloads        | 3898078 |
+| # releases         | 95 |
+| # dependents       | 11 |
+| # downloads        | 17806410 |
 | # stars            | 0 |
 
 ## Links

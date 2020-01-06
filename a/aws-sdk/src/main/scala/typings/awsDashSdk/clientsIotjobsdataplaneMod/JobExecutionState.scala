@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait JobExecutionState extends js.Object {
   /**
     * The status of the job execution. Can be one of: "QUEUED", "IN_PROGRESS", "FAILED", "SUCCESS", "CANCELED", "REJECTED", or "REMOVED".
     */
-  var status: js.UndefOr[JobExecutionStatus] = js.undefined
+  var status: js.UndefOr[JobExecutionStatus] = js.native
   /**
     * A collection of name/value pairs that describe the status of the job execution.
     */
-  var statusDetails: js.UndefOr[DetailsMap] = js.undefined
+  var statusDetails: js.UndefOr[DetailsMap] = js.native
   /**
     * The version of the job execution. Job execution versions are incremented each time they are updated by a device.
     */
-  var versionNumber: js.UndefOr[VersionNumber] = js.undefined
+  var versionNumber: js.UndefOr[VersionNumber] = js.native
 }
 
 object JobExecutionState {
@@ -28,7 +29,7 @@ object JobExecutionState {
   ): JobExecutionState = {
     val __obj = js.Dynamic.literal()
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (statusDetails != null) __obj.updateDynamic("statusDetails")(statusDetails)
+    if (statusDetails != null) __obj.updateDynamic("statusDetails")(statusDetails.asInstanceOf[js.Any])
     if (versionNumber != null) __obj.updateDynamic("versionNumber")(versionNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobExecutionState]
   }

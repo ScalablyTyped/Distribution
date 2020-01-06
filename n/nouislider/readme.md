@@ -10,9 +10,9 @@ noUiSlider is a lightweight JavaScript range slider.
 | ------------------ | :-------------: |
 | Full name          | nouislider |
 | Keywords           | - |
-| # releases         | 16 |
-| # dependents       | 94 |
-| # downloads        | 3159481 |
+| # releases         | 19 |
+| # dependents       | 119 |
+| # downloads        | 4334829 |
 | # stars            | 9 |
 
 ## Links

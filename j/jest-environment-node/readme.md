@@ -9,9 +9,9 @@ Typings are for version 24.9.0
 | ------------------ | :-------------: |
 | Full name          | jest-environment-node |
 | Keywords           | - |
-| # releases         | 75 |
-| # dependents       | 64 |
-| # downloads        | 219209915 |
+| # releases         | 63 |
+| # dependents       | 68 |
+| # downloads        | 236523652 |
 | # stars            | 0 |
 
 ## Links

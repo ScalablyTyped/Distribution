@@ -12,7 +12,7 @@ Utilities module suitable for both Node.js and client-side use
 | Keywords           | utility, server, client, browser |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 505 |
+| # downloads        | 594 |
 | # stars            | 0 |
 
 ## Links

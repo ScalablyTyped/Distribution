@@ -1,5 +1,6 @@
 package typings.rollupDashPluginDashTypescript2.distIoptionsMod
 
+import typings.rollupDashPluginDashTypescript2.TypeoftsTypes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +18,7 @@ trait IOptions extends js.Object {
   var tsconfig: js.UndefOr[String] = js.undefined
   var tsconfigDefaults: js.Any
   var tsconfigOverride: js.Any
-  var typescript: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof tsTypes */ js.Any
+  var typescript: TypeoftsTypes
   var useTsconfigDeclarationDir: Boolean
   var verbosity: Double
   def sourceMapCallback(id: String, map: String): Unit
@@ -38,7 +39,7 @@ object IOptions {
     transformers: js.Array[TransformerFactoryCreator],
     tsconfigDefaults: js.Any,
     tsconfigOverride: js.Any,
-    typescript: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof tsTypes */ js.Any,
+    typescript: TypeoftsTypes,
     useTsconfigDeclarationDir: Boolean,
     verbosity: Double,
     tsconfig: String = null

@@ -11,8 +11,8 @@ A memoization function that uses a WeakMap
 | Full name          | @emotion/weak-memoize |
 | Keywords           | - |
 | # releases         | 12 |
-| # dependents       | 5 |
-| # downloads        | 29004937 |
+| # dependents       | 8 |
+| # downloads        | 51159151 |
 | # stars            | 0 |
 
 ## Links

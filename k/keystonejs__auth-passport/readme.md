@@ -10,9 +10,9 @@ Provides Social Authentication Strategies based on PassportJS.
 | ------------------ | :-------------: |
 | Full name          | @keystonejs/auth-passport |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 77 |
+| # downloads        | 356 |
 | # stars            | 0 |
 
 ## Links

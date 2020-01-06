@@ -10,9 +10,9 @@ A cross-browser / node.js validator powered by JSON Schema
 | ------------------ | :-------------: |
 | Full name          | revalidator |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 71 |
-| # downloads        | 27655108 |
+| # releases         | 0 |
+| # dependents       | 69 |
+| # downloads        | 28070601 |
 | # stars            | 8 |
 
 ## Links

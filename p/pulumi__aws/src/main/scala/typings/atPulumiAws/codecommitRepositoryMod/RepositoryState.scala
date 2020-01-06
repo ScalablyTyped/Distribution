@@ -6,39 +6,40 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RepositoryState extends js.Object {
   /**
     * The ARN of the repository
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * The URL to use for cloning the repository over HTTPS.
     */
-  val cloneUrlHttp: js.UndefOr[Input[String]] = js.undefined
+  val cloneUrlHttp: js.UndefOr[Input[String]] = js.native
   /**
     * The URL to use for cloning the repository over SSH.
     */
-  val cloneUrlSsh: js.UndefOr[Input[String]] = js.undefined
+  val cloneUrlSsh: js.UndefOr[Input[String]] = js.native
   /**
     * The default branch of the repository. The branch specified here needs to exist.
     */
-  val defaultBranch: js.UndefOr[Input[String]] = js.undefined
+  val defaultBranch: js.UndefOr[Input[String]] = js.native
   /**
     * The description of the repository. This needs to be less than 1000 characters
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of the repository
     */
-  val repositoryId: js.UndefOr[Input[String]] = js.undefined
+  val repositoryId: js.UndefOr[Input[String]] = js.native
   /**
     * The name for the repository. This needs to be less than 100 characters.
     */
-  val repositoryName: js.UndefOr[Input[String]] = js.undefined
+  val repositoryName: js.UndefOr[Input[String]] = js.native
   /**
     * Key-value mapping of resource tags
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object RepositoryState {

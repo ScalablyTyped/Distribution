@@ -10,9 +10,9 @@ A minuscule library to parse URLs
 | ------------------ | :-------------: |
 | Full name          | purl |
 | Keywords           | url, parse, browser, javascript, isomorphic |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 5739 |
+| # downloads        | 20993 |
 | # stars            | 3 |
 
 ## Links

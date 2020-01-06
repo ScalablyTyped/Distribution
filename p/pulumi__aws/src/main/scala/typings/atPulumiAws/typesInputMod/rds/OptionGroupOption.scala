@@ -5,31 +5,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OptionGroupOption extends js.Object {
   /**
     * A list of DB Security Groups for which the option is enabled.
     */
-  var dbSecurityGroupMemberships: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  var dbSecurityGroupMemberships: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The Name of the Option (e.g. MEMCACHED).
     */
-  var optionName: Input[String]
+  var optionName: Input[String] = js.native
   /**
     * A list of option settings to apply.
     */
-  var optionSettings: js.UndefOr[Input[js.Array[Input[OptionGroupOptionOptionSetting]]]] = js.undefined
+  var optionSettings: js.UndefOr[Input[js.Array[Input[OptionGroupOptionOptionSetting]]]] = js.native
   /**
     * The Port number when connecting to the Option (e.g. 11211).
     */
-  var port: js.UndefOr[Input[Double]] = js.undefined
+  var port: js.UndefOr[Input[Double]] = js.native
   /**
     * The version of the option (e.g. 13.1.0.0).
     */
-  var version: js.UndefOr[Input[String]] = js.undefined
+  var version: js.UndefOr[Input[String]] = js.native
   /**
     * A list of VPC Security Groups for which the option is enabled.
     */
-  var vpcSecurityGroupMemberships: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  var vpcSecurityGroupMemberships: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
 }
 
 object OptionGroupOption {

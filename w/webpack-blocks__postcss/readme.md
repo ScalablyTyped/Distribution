@@ -10,9 +10,9 @@ Webpack block for PostCSS.
 | ------------------ | :-------------: |
 | Full name          | @webpack-blocks/postcss |
 | Keywords           | webpack, webpack-blocks |
-| # releases         | 7 |
+| # releases         | 6 |
 | # dependents       | 5 |
-| # downloads        | 163754 |
+| # downloads        | 145097 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ A calculator for humanity’s peculiar conventions of time.
 | ------------------ | :-------------: |
 | Full name          | d3-time |
 | Keywords           | d3, d3-module, time, interval, calendar |
-| # releases         | 7 |
-| # dependents       | 79 |
-| # downloads        | 25107037 |
+| # releases         | 5 |
+| # dependents       | 117 |
+| # downloads        | 45623830 |
 | # stars            | 1 |
 
 ## Links

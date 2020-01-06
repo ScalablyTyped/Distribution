@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation._
 
 // tslint:disable-next-line strict-export-declare-modifiers
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: parser.TsParser#tsDeclClass functionCall $anonfun class extends from : Immutable.Record(object) * / any */ @js.native
+- Dropped / * import warning: parser.TsParser#tsDeclClass functionCall class extends from : Immutable.Record(object) * / any */ @js.native
 trait BaseNode extends js.Object {
   var data: Data = js.native
   var key: String = js.native

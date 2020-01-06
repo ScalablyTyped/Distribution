@@ -10,9 +10,9 @@ Utilize your package root directory from anywhere in your module.
 | ------------------ | :-------------: |
 | Full name          | ebongarde-root |
 | Keywords           | application, root, ebongarde |
-| # releases         | 11 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 479 |
+| # downloads        | 572 |
 | # stars            | 1 |
 
 ## Links

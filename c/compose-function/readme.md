@@ -9,9 +9,9 @@ Compose new functions f(g(x))
 | ------------------ | :-------------: |
 | Full name          | compose-function |
 | Keywords           | function, compose, functional |
-| # releases         | 1 |
-| # dependents       | 26 |
-| # downloads        | 2822097 |
+| # releases         | 0 |
+| # dependents       | 34 |
+| # downloads        | 13199233 |
 | # stars            | 3 |
 
 ## Links

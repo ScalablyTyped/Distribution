@@ -5,10 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MaintenanceWindowTaskLoggingInfo extends js.Object {
-  var s3BucketName: Input[String]
-  var s3BucketPrefix: js.UndefOr[Input[String]] = js.undefined
-  var s3Region: Input[String]
+  var s3BucketName: Input[String] = js.native
+  var s3BucketPrefix: js.UndefOr[Input[String]] = js.native
+  var s3Region: Input[String] = js.native
 }
 
 object MaintenanceWindowTaskLoggingInfo {

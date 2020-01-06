@@ -10,9 +10,9 @@ htmlparser2 tree adapter for parse5.
 | ------------------ | :-------------: |
 | Full name          | parse5-htmlparser2-tree-adapter |
 | Keywords           | parse5, parser, tree adapter, htmlparser2 |
-| # releases         | 4 |
-| # dependents       | 7 |
-| # downloads        | 35797 |
+| # releases         | 5 |
+| # dependents       | 17 |
+| # downloads        | 7173562 |
 | # stars            | 0 |
 
 ## Links

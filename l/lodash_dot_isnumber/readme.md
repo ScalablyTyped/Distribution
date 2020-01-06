@@ -11,8 +11,8 @@ The lodash method `_.isNumber` exported as a module.
 | Full name          | lodash.isnumber |
 | Keywords           | lodash-modularized, isnumber |
 | # releases         | 0 |
-| # dependents       | 138 |
-| # downloads        | 47036848 |
+| # dependents       | 157 |
+| # downloads        | 88667749 |
 | # stars            | 0 |
 
 ## Links

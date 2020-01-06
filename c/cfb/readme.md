@@ -10,9 +10,9 @@ Compound File Binary File Format extractor
 | ------------------ | :-------------: |
 | Full name          | cfb |
 | Keywords           | cfb, compression, office |
-| # releases         | 17 |
-| # dependents       | 76 |
-| # downloads        | 10622569 |
+| # releases         | 12 |
+| # dependents       | 117 |
+| # downloads        | 17452094 |
 | # stars            | 2 |
 
 ## Links

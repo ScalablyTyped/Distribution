@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InviteAccepterArgs extends js.Object {
   /**
     * The detector ID of the member GuardDuty account.
     */
-  val detectorId: Input[String]
+  val detectorId: Input[String] = js.native
   /**
     * AWS account ID for master account.
     */
-  val masterAccountId: Input[String]
+  val masterAccountId: Input[String] = js.native
 }
 
 object InviteAccepterArgs {

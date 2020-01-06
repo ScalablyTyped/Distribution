@@ -11,8 +11,8 @@ Clear the terminal screen if possible
 | Full name          | clear |
 | Keywords           | ansi, clear, terminal |
 | # releases         | 2 |
-| # dependents       | 867 |
-| # downloads        | 1225190 |
+| # dependents       | 1110 |
+| # downloads        | 1543242 |
 | # stars            | 18 |
 
 ## Links

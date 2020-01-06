@@ -10,9 +10,9 @@ A super light and fast circular JSON parser.
 | ------------------ | :-------------: |
 | Full name          | flatted |
 | Keywords           | circular, JSON, fast, parser, minimal |
-| # releases         | 12 |
-| # dependents       | 59 |
-| # downloads        | 22642816 |
+| # releases         | 13 |
+| # dependents       | 128 |
+| # downloads        | 174590094 |
 | # stars            | 0 |
 
 ## Links

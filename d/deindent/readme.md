@@ -11,8 +11,8 @@ ES6 template string helper for deindentation
 | Full name          | deindent |
 | Keywords           | es6, template, strings, indendation, dedent |
 | # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 87657 |
+| # dependents       | 6 |
+| # downloads        | 156389 |
 | # stars            | 1 |
 
 ## Links

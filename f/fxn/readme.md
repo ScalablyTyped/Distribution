@@ -10,9 +10,9 @@ Stateless Architecture
 | ------------------ | :-------------: |
 | Full name          | fxn |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 4 |
 | # dependents       | 4 |
-| # downloads        | 8072 |
+| # downloads        | 7287 |
 | # stars            | 0 |
 
 ## Links

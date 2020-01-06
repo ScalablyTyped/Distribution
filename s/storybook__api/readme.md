@@ -10,9 +10,9 @@ Core Storybook API & Context
 | ------------------ | :-------------: |
 | Full name          | @storybook/api |
 | Keywords           | storybook |
-| # releases         | 62 |
-| # dependents       | 14 |
-| # downloads        | 237616 |
+| # releases         | 245 |
+| # dependents       | 34 |
+| # downloads        | 20989929 |
 | # stars            | 0 |
 
 ## Links

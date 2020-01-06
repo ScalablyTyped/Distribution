@@ -12,7 +12,7 @@ The lodash method `_.meanBy` exported as a module.
 | Keywords           | lodash-modularized, meanby |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 11449 |
+| # downloads        | 21175 |
 | # stars            | 0 |
 
 ## Links

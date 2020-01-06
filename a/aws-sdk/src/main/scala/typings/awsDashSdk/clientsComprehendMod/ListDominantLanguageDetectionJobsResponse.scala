@@ -4,17 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ListDominantLanguageDetectionJobsResponse extends js.Object {
   /**
     * A list containing the properties of each job that is returned.
     */
   var DominantLanguageDetectionJobPropertiesList: js.UndefOr[
     typings.awsDashSdk.clientsComprehendMod.DominantLanguageDetectionJobPropertiesList
-  ] = js.undefined
+  ] = js.native
   /**
     * Identifies the next page of results to return.
     */
-  var NextToken: js.UndefOr[String] = js.undefined
+  var NextToken: js.UndefOr[String] = js.native
 }
 
 object ListDominantLanguageDetectionJobsResponse {
@@ -24,8 +25,8 @@ object ListDominantLanguageDetectionJobsResponse {
     NextToken: String = null
   ): ListDominantLanguageDetectionJobsResponse = {
     val __obj = js.Dynamic.literal()
-    if (DominantLanguageDetectionJobPropertiesList != null) __obj.updateDynamic("DominantLanguageDetectionJobPropertiesList")(DominantLanguageDetectionJobPropertiesList)
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
+    if (DominantLanguageDetectionJobPropertiesList != null) __obj.updateDynamic("DominantLanguageDetectionJobPropertiesList")(DominantLanguageDetectionJobPropertiesList.asInstanceOf[js.Any])
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDominantLanguageDetectionJobsResponse]
   }
 }

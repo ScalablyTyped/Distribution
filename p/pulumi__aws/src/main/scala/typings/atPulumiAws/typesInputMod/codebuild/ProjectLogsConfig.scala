@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ProjectLogsConfig extends js.Object {
   /**
     * Configuration for the builds to store logs to CloudWatch
     */
-  var cloudwatchLogs: js.UndefOr[Input[ProjectLogsConfigCloudwatchLogs]] = js.undefined
+  var cloudwatchLogs: js.UndefOr[Input[ProjectLogsConfigCloudwatchLogs]] = js.native
   /**
     * Configuration for the builds to store logs to S3.
     */
-  var s3Logs: js.UndefOr[Input[ProjectLogsConfigS3Logs]] = js.undefined
+  var s3Logs: js.UndefOr[Input[ProjectLogsConfigS3Logs]] = js.native
 }
 
 object ProjectLogsConfig {

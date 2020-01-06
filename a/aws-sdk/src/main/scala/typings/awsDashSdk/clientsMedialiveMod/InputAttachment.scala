@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InputAttachment extends js.Object {
   /**
     * User-specified name for the attachment. This is required if the user wants to use this input in an input switch action.
     */
-  var InputAttachmentName: js.UndefOr[__string] = js.undefined
+  var InputAttachmentName: js.UndefOr[__string] = js.native
   /**
     * The ID of the input
     */
-  var InputId: js.UndefOr[__string] = js.undefined
+  var InputId: js.UndefOr[__string] = js.native
   /**
     * Settings of an input (caption selector, etc.)
     */
-  var InputSettings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.InputSettings] = js.undefined
+  var InputSettings: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.InputSettings] = js.native
 }
 
 object InputAttachment {
@@ -27,9 +28,9 @@ object InputAttachment {
     InputSettings: InputSettings = null
   ): InputAttachment = {
     val __obj = js.Dynamic.literal()
-    if (InputAttachmentName != null) __obj.updateDynamic("InputAttachmentName")(InputAttachmentName)
-    if (InputId != null) __obj.updateDynamic("InputId")(InputId)
-    if (InputSettings != null) __obj.updateDynamic("InputSettings")(InputSettings)
+    if (InputAttachmentName != null) __obj.updateDynamic("InputAttachmentName")(InputAttachmentName.asInstanceOf[js.Any])
+    if (InputId != null) __obj.updateDynamic("InputId")(InputId.asInstanceOf[js.Any])
+    if (InputSettings != null) __obj.updateDynamic("InputSettings")(InputSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputAttachment]
   }
 }

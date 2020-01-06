@@ -12,7 +12,7 @@ yog2 kernel
 | Keywords           | nodejs, fis |
 | # releases         | 3 |
 | # dependents       | 2 |
-| # downloads        | 4138 |
+| # downloads        | 4678 |
 | # stars            | 0 |
 
 ## Links

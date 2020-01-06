@@ -10,12 +10,15 @@ Accessible React button dropdown menu.
 | ------------------ | :-------------: |
 | Full name          | @reach/menu-button |
 | Keywords           | - |
-| # releases         | 21 |
-| # dependents       | 6 |
-| # downloads        | 67809 |
+| # releases         | 36 |
+| # dependents       | 17 |
+| # downloads        | 351948 |
 | # stars            | 0 |
 
 ## Links
+- [Homepage](https://github.com/reach/reach-ui#readme)
+- [Bugs](https://github.com/reach/reach-ui/issues)
+- [Repository](https://github.com/reach/reach-ui)
 - [Npm](https://www.npmjs.com/package/%40reach%2Fmenu-button)
     
 

@@ -10,9 +10,9 @@ Simplified SPARQL HTTP request client
 | ------------------ | :-------------: |
 | Full name          | sparql-http-client |
 | Keywords           | sparql, http, rdf |
-| # releases         | 4 |
-| # dependents       | 8 |
-| # downloads        | 4165 |
+| # releases         | 3 |
+| # dependents       | 10 |
+| # downloads        | 3886 |
 | # stars            | 0 |
 
 ## Links

@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DescribeFleetUtilizationInput extends js.Object {
   /**
-    * Unique identifier for a fleet(s) to retrieve utilization data for. To request utilization data for all fleets, leave this parameter empty.
+    * A unique identifier for a fleet(s) to retrieve utilization data for. You can use either the fleet ID or ARN value.
     */
-  var FleetIds: js.UndefOr[FleetIdList] = js.undefined
+  var FleetIds: js.UndefOr[FleetIdList] = js.native
   /**
-    * Maximum number of results to return. Use this parameter with NextToken to get results as a set of sequential pages. This parameter is ignored when the request specifies one or a list of fleet IDs.
+    * The maximum number of results to return. Use this parameter with NextToken to get results as a set of sequential pages. This parameter is ignored when the request specifies one or a list of fleet IDs.
     */
-  var Limit: js.UndefOr[PositiveInteger] = js.undefined
+  var Limit: js.UndefOr[PositiveInteger] = js.native
   /**
     * Token that indicates the start of the next sequential page of results. Use the token that is returned with a previous call to this action. To start at the beginning of the result set, do not specify a value. This parameter is ignored when the request specifies one or a list of fleet IDs.
     */
-  var NextToken: js.UndefOr[NonZeroAndMaxString] = js.undefined
+  var NextToken: js.UndefOr[NonZeroAndMaxString] = js.native
 }
 
 object DescribeFleetUtilizationInput {
@@ -27,9 +28,9 @@ object DescribeFleetUtilizationInput {
     NextToken: NonZeroAndMaxString = null
   ): DescribeFleetUtilizationInput = {
     val __obj = js.Dynamic.literal()
-    if (FleetIds != null) __obj.updateDynamic("FleetIds")(FleetIds)
+    if (FleetIds != null) __obj.updateDynamic("FleetIds")(FleetIds.asInstanceOf[js.Any])
     if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeFleetUtilizationInput]
   }
 }

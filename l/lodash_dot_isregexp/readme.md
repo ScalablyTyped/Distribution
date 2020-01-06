@@ -11,8 +11,8 @@ The lodash method `_.isRegExp` exported as a module.
 | Full name          | lodash.isregexp |
 | Keywords           | lodash-modularized, isregexp |
 | # releases         | 0 |
-| # dependents       | 50 |
-| # downloads        | 711883 |
+| # dependents       | 59 |
+| # downloads        | 1249461 |
 | # stars            | 0 |
 
 ## Links

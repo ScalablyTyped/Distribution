@@ -10,9 +10,9 @@ PouchDB adapter using Node-based SQLite as its data store.
 | ------------------ | :-------------: |
 | Full name          | pouchdb-adapter-node-websql |
 | Keywords           | - |
-| # releases         | 12 |
+| # releases         | 5 |
 | # dependents       | 7 |
-| # downloads        | 42044 |
+| # downloads        | 57956 |
 | # stars            | 0 |
 
 ## Links

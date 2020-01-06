@@ -10,9 +10,9 @@ Check if a number is positive zero
 | ------------------ | :-------------: |
 | Full name          | positive-zero |
 | Keywords           | number, is, check, detect, positive, zero |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 330 |
+| # releases         | 2 |
+| # dependents       | 3 |
+| # downloads        | 446 |
 | # stars            | 0 |
 
 ## Links

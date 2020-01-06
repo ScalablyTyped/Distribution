@@ -10,9 +10,9 @@ $(document).ready() for the 21st century
 | ------------------ | :-------------: |
 | Full name          | when-dom-ready |
 | Keywords           | check, dom, loaded, ready, promise, async, asynchronous, pure |
-| # releases         | 2 |
-| # dependents       | 7 |
-| # downloads        | 31810 |
+| # releases         | 0 |
+| # dependents       | 12 |
+| # downloads        | 74531 |
 | # stars            | 0 |
 
 ## Links

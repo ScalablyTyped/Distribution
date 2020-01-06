@@ -16,14 +16,22 @@ import scala.scalajs.js.annotation._
 trait SequelizeStatic
   extends SequelizeStaticAndInstance
      with DataTypes
-     with Instantiable4[
-      /* database */ String, 
-      /* username */ String, 
-      /* password */ String, 
-      /* options */ Options, 
-      Sequelize
-    ]
-     with Instantiable2[/* database */ String, (/* options */ Options) | (/* username */ String), Sequelize]
+     with /**
+  * Instantiate sequelize with an URI
+  * @name Sequelize
+  * @constructor
+  *
+  * @param uri A full database URI
+  * @param options See above for possible options
+  */
+/**
+  * Instantiate sequelize with an options object which containing username, password, database
+  * @name Sequelize
+  * @constructor
+  *
+  * @param options An object with options. See above for possible options
+  */
+Instantiable1[(/* options */ Options) | (/* uri */ String), Sequelize]
      with /**
   * Instantiate sequelize with name of database, username and password
   *
@@ -59,22 +67,14 @@ Instantiable3[
       (/* options */ Options) | (/* password */ String), 
       Sequelize
     ]
-     with /**
-  * Instantiate sequelize with an URI
-  * @name Sequelize
-  * @constructor
-  *
-  * @param uri A full database URI
-  * @param options See above for possible options
-  */
-/**
-  * Instantiate sequelize with an options object which containing username, password, database
-  * @name Sequelize
-  * @constructor
-  *
-  * @param options An object with options. See above for possible options
-  */
-Instantiable1[(/* options */ Options) | (/* uri */ String), Sequelize] {
+     with Instantiable2[/* database */ String, (/* options */ Options) | (/* username */ String), Sequelize]
+     with Instantiable4[
+      /* database */ String, 
+      /* username */ String, 
+      /* password */ String, 
+      /* options */ Options, 
+      Sequelize
+    ] {
   /**
     * Export sequelize static on the instance for `import Sequelize from 'sequelize';` kind of imports
     */

@@ -10,9 +10,9 @@ Simple, safe and straight-forward password hashing / salting for node.js
 | ------------------ | :-------------: |
 | Full name          | password-hash-and-salt |
 | Keywords           | crypto, node.js, node, hash, salt, password, pbkdf2 |
-| # releases         | 1 |
-| # dependents       | 24 |
-| # downloads        | 48436 |
+| # releases         | 0 |
+| # dependents       | 23 |
+| # downloads        | 64287 |
 | # stars            | 7 |
 
 ## Links

@@ -10,9 +10,9 @@ Matches strings against configurable strings, globs, regular expressions, and/or
 | ------------------ | :-------------: |
 | Full name          | anymatch |
 | Keywords           | match, any, string, file, fs, list, glob, regex, regexp, regular, expression, function |
-| # releases         | 3 |
-| # dependents       | 210 |
-| # downloads        | 393055814 |
+| # releases         | 8 |
+| # dependents       | 249 |
+| # downloads        | 550094175 |
 | # stars            | 17 |
 
 ## Links

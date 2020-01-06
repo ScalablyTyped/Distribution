@@ -5,33 +5,34 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SpotFleetRequestLaunchSpecification extends js.Object {
-  var ami: String
-  var associatePublicIpAddress: js.UndefOr[Boolean] = js.undefined
-  var availabilityZone: String
-  var ebsBlockDevices: js.Array[SpotFleetRequestLaunchSpecificationEbsBlockDevice]
-  var ebsOptimized: js.UndefOr[Boolean] = js.undefined
-  var ephemeralBlockDevices: js.Array[SpotFleetRequestLaunchSpecificationEphemeralBlockDevice]
-  var iamInstanceProfile: js.UndefOr[String] = js.undefined
-  var iamInstanceProfileArn: js.UndefOr[String] = js.undefined
-  var instanceType: String
-  var keyName: String
-  var monitoring: js.UndefOr[Boolean] = js.undefined
-  var placementGroup: String
-  var placementTenancy: js.UndefOr[String] = js.undefined
-  var rootBlockDevices: js.Array[SpotFleetRequestLaunchSpecificationRootBlockDevice]
+  var ami: String = js.native
+  var associatePublicIpAddress: js.UndefOr[Boolean] = js.native
+  var availabilityZone: String = js.native
+  var ebsBlockDevices: js.Array[SpotFleetRequestLaunchSpecificationEbsBlockDevice] = js.native
+  var ebsOptimized: js.UndefOr[Boolean] = js.native
+  var ephemeralBlockDevices: js.Array[SpotFleetRequestLaunchSpecificationEphemeralBlockDevice] = js.native
+  var iamInstanceProfile: js.UndefOr[String] = js.native
+  var iamInstanceProfileArn: js.UndefOr[String] = js.native
+  var instanceType: String = js.native
+  var keyName: String = js.native
+  var monitoring: js.UndefOr[Boolean] = js.native
+  var placementGroup: String = js.native
+  var placementTenancy: js.UndefOr[String] = js.native
+  var rootBlockDevices: js.Array[SpotFleetRequestLaunchSpecificationRootBlockDevice] = js.native
   /**
     * The maximum bid price per unit hour.
     */
-  var spotPrice: js.UndefOr[String] = js.undefined
-  var subnetId: String
+  var spotPrice: js.UndefOr[String] = js.native
+  var subnetId: String = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  var tags: js.UndefOr[StringDictionary[js.Any]] = js.undefined
-  var userData: js.UndefOr[String] = js.undefined
-  var vpcSecurityGroupIds: js.Array[String]
-  var weightedCapacity: js.UndefOr[String] = js.undefined
+  var tags: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var userData: js.UndefOr[String] = js.native
+  var vpcSecurityGroupIds: js.Array[String] = js.native
+  var weightedCapacity: js.UndefOr[String] = js.native
 }
 
 object SpotFleetRequestLaunchSpecification {
@@ -58,17 +59,17 @@ object SpotFleetRequestLaunchSpecification {
     userData: String = null,
     weightedCapacity: String = null
   ): SpotFleetRequestLaunchSpecification = {
-    val __obj = js.Dynamic.literal(ami = ami, availabilityZone = availabilityZone, ebsBlockDevices = ebsBlockDevices, ephemeralBlockDevices = ephemeralBlockDevices, instanceType = instanceType, keyName = keyName, placementGroup = placementGroup, rootBlockDevices = rootBlockDevices, subnetId = subnetId, vpcSecurityGroupIds = vpcSecurityGroupIds)
-    if (!js.isUndefined(associatePublicIpAddress)) __obj.updateDynamic("associatePublicIpAddress")(associatePublicIpAddress)
-    if (!js.isUndefined(ebsOptimized)) __obj.updateDynamic("ebsOptimized")(ebsOptimized)
-    if (iamInstanceProfile != null) __obj.updateDynamic("iamInstanceProfile")(iamInstanceProfile)
-    if (iamInstanceProfileArn != null) __obj.updateDynamic("iamInstanceProfileArn")(iamInstanceProfileArn)
-    if (!js.isUndefined(monitoring)) __obj.updateDynamic("monitoring")(monitoring)
-    if (placementTenancy != null) __obj.updateDynamic("placementTenancy")(placementTenancy)
-    if (spotPrice != null) __obj.updateDynamic("spotPrice")(spotPrice)
-    if (tags != null) __obj.updateDynamic("tags")(tags)
-    if (userData != null) __obj.updateDynamic("userData")(userData)
-    if (weightedCapacity != null) __obj.updateDynamic("weightedCapacity")(weightedCapacity)
+    val __obj = js.Dynamic.literal(ami = ami.asInstanceOf[js.Any], availabilityZone = availabilityZone.asInstanceOf[js.Any], ebsBlockDevices = ebsBlockDevices.asInstanceOf[js.Any], ephemeralBlockDevices = ephemeralBlockDevices.asInstanceOf[js.Any], instanceType = instanceType.asInstanceOf[js.Any], keyName = keyName.asInstanceOf[js.Any], placementGroup = placementGroup.asInstanceOf[js.Any], rootBlockDevices = rootBlockDevices.asInstanceOf[js.Any], subnetId = subnetId.asInstanceOf[js.Any], vpcSecurityGroupIds = vpcSecurityGroupIds.asInstanceOf[js.Any])
+    if (!js.isUndefined(associatePublicIpAddress)) __obj.updateDynamic("associatePublicIpAddress")(associatePublicIpAddress.asInstanceOf[js.Any])
+    if (!js.isUndefined(ebsOptimized)) __obj.updateDynamic("ebsOptimized")(ebsOptimized.asInstanceOf[js.Any])
+    if (iamInstanceProfile != null) __obj.updateDynamic("iamInstanceProfile")(iamInstanceProfile.asInstanceOf[js.Any])
+    if (iamInstanceProfileArn != null) __obj.updateDynamic("iamInstanceProfileArn")(iamInstanceProfileArn.asInstanceOf[js.Any])
+    if (!js.isUndefined(monitoring)) __obj.updateDynamic("monitoring")(monitoring.asInstanceOf[js.Any])
+    if (placementTenancy != null) __obj.updateDynamic("placementTenancy")(placementTenancy.asInstanceOf[js.Any])
+    if (spotPrice != null) __obj.updateDynamic("spotPrice")(spotPrice.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (userData != null) __obj.updateDynamic("userData")(userData.asInstanceOf[js.Any])
+    if (weightedCapacity != null) __obj.updateDynamic("weightedCapacity")(weightedCapacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpotFleetRequestLaunchSpecification]
   }
 }

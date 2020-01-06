@@ -11,8 +11,8 @@ Webpack plugin for loadable (required for SSR).
 | Full name          | @loadable/webpack-plugin |
 | Keywords           | loadable |
 | # releases         | 17 |
-| # dependents       | 24 |
-| # downloads        | 615282 |
+| # dependents       | 36 |
+| # downloads        | 1118768 |
 | # stars            | 0 |
 
 ## Links

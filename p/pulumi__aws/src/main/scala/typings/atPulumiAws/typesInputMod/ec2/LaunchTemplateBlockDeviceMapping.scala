@@ -5,25 +5,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LaunchTemplateBlockDeviceMapping extends js.Object {
   /**
     * The name of the device to mount.
     */
-  var deviceName: js.UndefOr[Input[String]] = js.undefined
+  var deviceName: js.UndefOr[Input[String]] = js.native
   /**
     * Configure EBS volume properties.
     */
-  var ebs: js.UndefOr[Input[LaunchTemplateBlockDeviceMappingEbs]] = js.undefined
+  var ebs: js.UndefOr[Input[LaunchTemplateBlockDeviceMappingEbs]] = js.native
   /**
     * Suppresses the specified device included in the AMI's block device mapping.
     */
-  var noDevice: js.UndefOr[Input[String]] = js.undefined
+  var noDevice: js.UndefOr[Input[String]] = js.native
   /**
     * The [Instance Store Device
     * Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#InstanceStoreDeviceNames)
     * (e.g. `"ephemeral0"`).
     */
-  var virtualName: js.UndefOr[Input[String]] = js.undefined
+  var virtualName: js.UndefOr[Input[String]] = js.native
 }
 
 object LaunchTemplateBlockDeviceMapping {

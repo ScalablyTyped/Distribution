@@ -10,10 +10,10 @@ A small, fast, easy-to-use library for arbitrary-precision decimal arithmetic
 | ------------------ | :-------------: |
 | Full name          | big.js |
 | Keywords           | arbitrary, precision, arithmetic, big, number, decimal, float, biginteger, bigdecimal, bignumber, bigint, bignum |
-| # releases         | 14 |
-| # dependents       | 317 |
-| # downloads        | 219251214 |
-| # stars            | 14 |
+| # releases         | 6 |
+| # dependents       | 409 |
+| # downloads        | 422382856 |
+| # stars            | 15 |
 
 ## Links
 - [Homepage](https://github.com/MikeMcl/big.js#readme)

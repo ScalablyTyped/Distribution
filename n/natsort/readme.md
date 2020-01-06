@@ -10,15 +10,15 @@ Javascript natural sort algorithm with unicode support.
 | ------------------ | :-------------: |
 | Full name          | natsort |
 | Keywords           | natural, natsort, sort, sorter, numeric, unicode, algorithm, date, datetime, desc, case-insensitive |
-| # releases         | 2 |
+| # releases         | 3 |
 | # dependents       | 4 |
-| # downloads        | 121779 |
+| # downloads        | 189381 |
 | # stars            | 1 |
 
 ## Links
-- [Homepage](https://github.com/bubkoo/natsort#readme)
-- [Bugs](https://github.com/bubkoo/natsort/issues)
-- [Repository](https://github.com/bubkoo/natsort)
+- [Homepage](https://github.com/netop/natsort#readme)
+- [Bugs](https://github.com/netop/natsort/issues)
+- [Repository](https://github.com/netop/natsort)
 - [Npm](https://www.npmjs.com/package/natsort)
     
 

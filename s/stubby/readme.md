@@ -10,9 +10,9 @@ a lightweight server for stubbing external systems and endpoints
 | ------------------ | :-------------: |
 | Full name          | stubby |
 | Keywords           | server, stub, mock, testing, service, endpoint, http, https, api, rest |
-| # releases         | 2 |
-| # dependents       | 5 |
-| # downloads        | 179130 |
+| # releases         | 3 |
+| # dependents       | 6 |
+| # downloads        | 228087 |
 | # stars            | 6 |
 
 ## Links

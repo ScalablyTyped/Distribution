@@ -1,6 +1,7 @@
 package typings.atPulumiAws.ecrRepositoryMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.atPulumiAws.typesOutputMod.ecr.RepositoryImageScanningConfiguration
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -27,6 +28,10 @@ class Repository protected () extends CustomResource {
     * Full ARN of the repository.
     */
   val arn: Output[String] = js.native
+  /**
+    * Configuration block that defines image scanning configuration for the repository. By default, image scanning must be manually triggered. See the [ECR User Guide](https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-scanning.html) for more information about image scanning.
+    */
+  val imageScanningConfiguration: Output[js.UndefOr[RepositoryImageScanningConfiguration]] = js.native
   /**
     * The tag mutability setting for the repository. Must be one of: `MUTABLE` or `IMMUTABLE`. Defaults to `MUTABLE`.
     */

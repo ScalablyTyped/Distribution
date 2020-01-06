@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 object default
   extends Instantiable0[Stream[js.Object]]
      with Instantiable1[
-      /* producer */ InternalProducer[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any], 
+      /* producer */ InternalProducer[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
       Stream[js.Object]
     ] {
   /**

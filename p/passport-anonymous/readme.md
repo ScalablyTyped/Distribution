@@ -12,7 +12,7 @@ Anonymous authentication strategy for Passport.
 | Keywords           | passport, authn, authentication, anonymous |
 | # releases         | 0 |
 | # dependents       | 21 |
-| # downloads        | 117918 |
+| # downloads        | 156199 |
 | # stars            | 3 |
 
 ## Links

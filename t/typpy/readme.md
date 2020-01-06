@@ -10,9 +10,9 @@ A better typeof for JavaScript.
 | ------------------ | :-------------: |
 | Full name          | typpy |
 | Keywords           | typeof, javascript, typpy |
-| # releases         | 4 |
+| # releases         | 3 |
 | # dependents       | 45 |
-| # downloads        | 1320821 |
+| # downloads        | 2021674 |
 | # stars            | 0 |
 
 ## Links

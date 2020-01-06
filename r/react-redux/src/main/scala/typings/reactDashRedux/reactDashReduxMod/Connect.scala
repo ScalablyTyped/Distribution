@@ -44,23 +44,23 @@ trait Connect extends js.Object {
   ): InferableComponentEnhancerWithProps[TDispatchProps, TOwnProps] = js.native
   def apply[no_state, no_dispatch, TOwnProps, TMergedProps](
     mapStateToProps: js.UndefOr[scala.Nothing],
-    mapDispatchToProps: js.UndefOr[scala.Nothing],
+    mapDispatchToProps: Null,
     mergeProps: MergeProps[js.UndefOr[scala.Nothing], js.UndefOr[scala.Nothing], TOwnProps, TMergedProps]
   ): InferableComponentEnhancerWithProps[TMergedProps, TOwnProps] = js.native
-  def apply[no_state, no_dispatch, TOwnProps, TMergedProps](
+  def apply[no_state, TDispatchProps, TOwnProps, TMergedProps](
     mapStateToProps: js.UndefOr[scala.Nothing],
-    mapDispatchToProps: Null,
-    mergeProps: MergeProps[js.UndefOr[scala.Nothing], js.UndefOr[scala.Nothing], TOwnProps, TMergedProps]
-  ): InferableComponentEnhancerWithProps[TMergedProps, TOwnProps] = js.native
-  def apply[no_state, no_dispatch, TOwnProps, TMergedProps](
-    mapStateToProps: Null,
-    mapDispatchToProps: js.UndefOr[scala.Nothing],
-    mergeProps: MergeProps[js.UndefOr[scala.Nothing], js.UndefOr[scala.Nothing], TOwnProps, TMergedProps]
+    mapDispatchToProps: MapDispatchToPropsParam[TDispatchProps, TOwnProps],
+    mergeProps: MergeProps[js.UndefOr[scala.Nothing], TDispatchProps, TOwnProps, TMergedProps]
   ): InferableComponentEnhancerWithProps[TMergedProps, TOwnProps] = js.native
   def apply[no_state, no_dispatch, TOwnProps, TMergedProps](
     mapStateToProps: Null,
     mapDispatchToProps: Null,
     mergeProps: MergeProps[js.UndefOr[scala.Nothing], js.UndefOr[scala.Nothing], TOwnProps, TMergedProps]
+  ): InferableComponentEnhancerWithProps[TMergedProps, TOwnProps] = js.native
+  def apply[no_state, TDispatchProps, TOwnProps, TMergedProps](
+    mapStateToProps: Null,
+    mapDispatchToProps: MapDispatchToPropsParam[TDispatchProps, TOwnProps],
+    mergeProps: MergeProps[js.UndefOr[scala.Nothing], TDispatchProps, TOwnProps, TMergedProps]
   ): InferableComponentEnhancerWithProps[TMergedProps, TOwnProps] = js.native
   def apply[TStateProps, no_dispatch, TOwnProps, State](mapStateToProps: MapStateToPropsParam[TStateProps, TOwnProps, State]): InferableComponentEnhancerWithProps[TStateProps with DispatchProp[AnyAction], TOwnProps] = js.native
   def apply[TStateProps, no_dispatch, TOwnProps, State](

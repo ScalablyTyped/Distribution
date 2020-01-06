@@ -10,9 +10,9 @@ Clones a value, recursively extracting File, Blob and ReactNativeFile instances 
 | ------------------ | :-------------: |
 | Full name          | extract-files |
 | Keywords           | extract, file, files, File, FileList, Blob, react, native, esm, mjs |
-| # releases         | 14 |
-| # dependents       | 15 |
-| # downloads        | 2809637 |
+| # releases         | 9 |
+| # dependents       | 31 |
+| # downloads        | 7740390 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ Module for creating an accessible, progressively enhanced floating label
 | ------------------ | :-------------: |
 | Full name          | makeup-floating-label |
 | Keywords           | makeup, ebay, accessibility, a11y |
-| # releases         | 6 |
+| # releases         | 7 |
 | # dependents       | 1 |
-| # downloads        | 1747 |
+| # downloads        | 4257 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ JS type check (TypeScript supported) functions like `isPlainObject() isArray()` 
 | ------------------ | :-------------: |
 | Full name          | is-what |
 | Keywords           | javascript, typescript, typechecker, check-type, javascript-type, primitive-types, plain-object, plain-objects, class-instance, class-identifier, type-checking, type-checker, type-check, define-type, get-type, what-type, is-object, is-plain-obj, is-plain-object |
-| # releases         | 24 |
-| # dependents       | 8 |
-| # downloads        | 17548 |
+| # releases         | 28 |
+| # dependents       | 17 |
+| # downloads        | 16379970 |
 | # stars            | 0 |
 
 ## Links

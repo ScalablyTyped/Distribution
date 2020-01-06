@@ -42,9 +42,6 @@ class Policy protected () extends CustomResource {
     * See [IAM Identifiers](https://docs.aws.amazon.com/IAM/latest/UserGuide/Using_Identifiers.html) for more information.
     */
   val path: Output[js.UndefOr[String]] = js.native
-  /**
-    * The policy document. This is a JSON formatted string.
-    */
   val policy: Output[String] = js.native
 }
 

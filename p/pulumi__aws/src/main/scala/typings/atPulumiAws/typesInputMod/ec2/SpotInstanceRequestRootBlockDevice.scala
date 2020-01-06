@@ -5,38 +5,39 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SpotInstanceRequestRootBlockDevice extends js.Object {
   /**
     * Whether the volume should be destroyed
     * on instance termination (Default: `true`).
     */
-  var deleteOnTermination: js.UndefOr[Input[Boolean]] = js.undefined
+  var deleteOnTermination: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Enables [EBS
     * encryption](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html)
     * on the volume (Default: `false`). Cannot be used with `snapshotId`. Must be configured to perform drift detection.
     */
-  var encrypted: js.UndefOr[Input[Boolean]] = js.undefined
+  var encrypted: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The amount of provisioned
     * [IOPS](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-io-characteristics.html).
     * This must be set with a `volumeType` of `"io1"`.
     */
-  var iops: js.UndefOr[Input[Double]] = js.undefined
+  var iops: js.UndefOr[Input[Double]] = js.native
   /**
     * Amazon Resource Name (ARN) of the KMS Key to use when encrypting the volume. Must be configured to perform drift detection.
     */
-  var kmsKeyId: js.UndefOr[Input[String]] = js.undefined
-  var volumeId: js.UndefOr[Input[String]] = js.undefined
+  var kmsKeyId: js.UndefOr[Input[String]] = js.native
+  var volumeId: js.UndefOr[Input[String]] = js.native
   /**
     * The size of the volume in gibibytes (GiB).
     */
-  var volumeSize: js.UndefOr[Input[Double]] = js.undefined
+  var volumeSize: js.UndefOr[Input[Double]] = js.native
   /**
     * The type of volume. Can be `"standard"`, `"gp2"`,
     * or `"io1"`. (Default: `"standard"`).
     */
-  var volumeType: js.UndefOr[Input[String]] = js.undefined
+  var volumeType: js.UndefOr[Input[String]] = js.native
 }
 
 object SpotInstanceRequestRootBlockDevice {

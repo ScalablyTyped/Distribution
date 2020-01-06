@@ -10,9 +10,9 @@ List of standard HTML tags
 | ------------------ | :-------------: |
 | Full name          | html-tags |
 | Keywords           | html, html5, tags, elements, list, whatwg, w3c, void, self-closing |
-| # releases         | 4 |
-| # dependents       | 68 |
-| # downloads        | 35870166 |
+| # releases         | 3 |
+| # dependents       | 74 |
+| # downloads        | 71473242 |
 | # stars            | 7 |
 
 ## Links

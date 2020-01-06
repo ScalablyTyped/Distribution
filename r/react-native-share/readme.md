@@ -12,11 +12,11 @@ Social share, sending simple data to other apps.
 | Keywords           | react-native, android, ios, windows, bridge, react, share |
 | # releases         | 12 |
 | # dependents       | 16 |
-| # downloads        | 592781 |
+| # downloads        | 1139243 |
 | # stars            | 4 |
 
 ## Links
-- [Homepage](https://github.com/react-native-community/react-native-share)
+- [Homepage](https://github.com/react-native-community/react-native-share#readme)
 - [Bugs](https://github.com/react-native-community/react-native-share/issues)
 - [Repository](https://github.com/react-native-community/react-native-share)
 - [Npm](https://www.npmjs.com/package/react-native-share)

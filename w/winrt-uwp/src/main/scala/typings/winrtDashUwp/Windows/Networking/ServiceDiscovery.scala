@@ -113,12 +113,9 @@ object ServiceDiscovery extends js.Object {
         */
       def getMany(startIndex: Double): Anon_ItemsReturnValueDnssdServiceInstance = js.native
       def indexOf(value: DnssdServiceInstance, extra: js.Any*): Anon_Index = js.native
-      /**
-        * Gets a value indicating whether a given DnssdServiceInstance is at the specified index in this service instance collection.
-        * @param value The DnssdServiceInstance to get the index of.
-        */
+      /* hack */
       @JSName("indexOf")
-      def indexOf_Anon_Index(value: DnssdServiceInstance): Anon_Index = js.native
+      def indexOf_Double(searchElement: DnssdServiceInstance): Double = js.native
     }
     
     /** Maintains a collection of available DNS Service Discovery (DNS-SD) service instances. */

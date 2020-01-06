@@ -26,7 +26,7 @@ trait TetherProps extends js.Object {
   var children: ReactNode
   var onPopperUpdate: js.UndefOr[js.Function2[/* offsets */ NormalizedOffsets, /* popper */ PopperDataObject, _]] = js.undefined
   var placement: js.UndefOr[
-    rightTop | auto | leftBottom | bottomRight | leftTop | bottom | left | topRight | bottomLeft | rightBottom | topLeft | top | right
+    topLeft | leftBottom | topRight | rightBottom | bottomLeft | right | auto | bottomRight | leftTop | left | bottom | rightTop | top
   ] = js.undefined
   var popperOptions: js.UndefOr[js.Any] = js.undefined
   var popperRef: js.UndefOr[Ref[HTMLElement]] = js.undefined
@@ -39,7 +39,7 @@ object TetherProps {
     arrowRef: Ref[HTMLElement] = null,
     children: ReactNode = null,
     onPopperUpdate: (/* offsets */ NormalizedOffsets, /* popper */ PopperDataObject) => _ = null,
-    placement: rightTop | auto | leftBottom | bottomRight | leftTop | bottom | left | topRight | bottomLeft | rightBottom | topLeft | top | right = null,
+    placement: topLeft | leftBottom | topRight | rightBottom | bottomLeft | right | auto | bottomRight | leftTop | left | bottom | rightTop | top = null,
     popperOptions: js.Any = null,
     popperRef: Ref[HTMLElement] = null
   ): TetherProps = {

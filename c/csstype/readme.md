@@ -10,9 +10,9 @@ Strict TypeScript and Flow types for style based on MDN data
 | ------------------ | :-------------: |
 | Full name          | csstype |
 | Keywords           | css, style, typescript, flow, typings, types, definitions |
-| # releases         | 40 |
-| # dependents       | 73 |
-| # downloads        | 62681036 |
+| # releases         | 43 |
+| # dependents       | 163 |
+| # downloads        | 148365842 |
 | # stars            | 0 |
 
 ## Links

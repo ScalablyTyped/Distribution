@@ -10,9 +10,9 @@ DynamoDB data mapper for node.js
 | ------------------ | :-------------: |
 | Full name          | dynamodb |
 | Keywords           | datamapper, DynamoDB, aws, amazon, nosql |
-| # releases         | 5 |
-| # dependents       | 11 |
-| # downloads        | 232834 |
+| # releases         | 6 |
+| # dependents       | 13 |
+| # downloads        | 255745 |
 | # stars            | 13 |
 
 ## Links

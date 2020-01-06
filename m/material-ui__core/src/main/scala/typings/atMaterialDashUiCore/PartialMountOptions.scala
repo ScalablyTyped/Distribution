@@ -5,8 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/test-utils/createMount.MountOptions> */
+@js.native
 trait PartialMountOptions extends js.Object {
-  var mount: js.UndefOr[Fn_Mount] = js.undefined
+  var mount: js.UndefOr[Fn_Mount] = js.native
 }
 
 object PartialMountOptions {

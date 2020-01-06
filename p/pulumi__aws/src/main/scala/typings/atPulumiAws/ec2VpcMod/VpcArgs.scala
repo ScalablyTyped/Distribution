@@ -6,44 +6,45 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VpcArgs extends js.Object {
   /**
     * Requests an Amazon-provided IPv6 CIDR
     * block with a /56 prefix length for the VPC. You cannot specify the range of IP addresses, or
     * the size of the CIDR block. Default is `false`.
     */
-  val assignGeneratedIpv6CidrBlock: js.UndefOr[Input[Boolean]] = js.undefined
+  val assignGeneratedIpv6CidrBlock: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The CIDR block for the VPC.
     */
-  val cidrBlock: Input[String]
+  val cidrBlock: Input[String] = js.native
   /**
     * A boolean flag to enable/disable ClassicLink
     * for the VPC. Only valid in regions and accounts that support EC2 Classic.
     * See the [ClassicLink documentation][1] for more information. Defaults false.
     */
-  val enableClassiclink: js.UndefOr[Input[Boolean]] = js.undefined
+  val enableClassiclink: js.UndefOr[Input[Boolean]] = js.native
   /**
     * A boolean flag to enable/disable ClassicLink DNS Support for the VPC.
     * Only valid in regions and accounts that support EC2 Classic.
     */
-  val enableClassiclinkDnsSupport: js.UndefOr[Input[Boolean]] = js.undefined
+  val enableClassiclinkDnsSupport: js.UndefOr[Input[Boolean]] = js.native
   /**
     * A boolean flag to enable/disable DNS hostnames in the VPC. Defaults false.
     */
-  val enableDnsHostnames: js.UndefOr[Input[Boolean]] = js.undefined
+  val enableDnsHostnames: js.UndefOr[Input[Boolean]] = js.native
   /**
     * A boolean flag to enable/disable DNS support in the VPC. Defaults true.
     */
-  val enableDnsSupport: js.UndefOr[Input[Boolean]] = js.undefined
+  val enableDnsSupport: js.UndefOr[Input[Boolean]] = js.native
   /**
     * A tenancy option for instances launched into the VPC
     */
-  val instanceTenancy: js.UndefOr[Input[String]] = js.undefined
+  val instanceTenancy: js.UndefOr[Input[String]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object VpcArgs {

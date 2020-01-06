@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UserPoolSchemaStringAttributeConstraints extends js.Object {
   /**
     * The maximum length of an attribute value of the string type.
     */
-  var maxLength: js.UndefOr[Input[String]] = js.undefined
+  var maxLength: js.UndefOr[Input[String]] = js.native
   /**
     * The minimum length of an attribute value of the string type.
     */
-  var minLength: js.UndefOr[Input[String]] = js.undefined
+  var minLength: js.UndefOr[Input[String]] = js.native
 }
 
 object UserPoolSchemaStringAttributeConstraints {

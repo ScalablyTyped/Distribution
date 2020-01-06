@@ -10,9 +10,9 @@ A light-weight JS library to lazy load any HTML element such as images, ads, vid
 | ------------------ | :-------------: |
 | Full name          | lozad |
 | Keywords           | lazy, loader, lazyloader, lazyload, performance, image, video, iframe, ads |
-| # releases         | 23 |
-| # dependents       | 5 |
-| # downloads        | 243335 |
+| # releases         | 11 |
+| # dependents       | 24 |
+| # downloads        | 697770 |
 | # stars            | 3 |
 
 ## Links

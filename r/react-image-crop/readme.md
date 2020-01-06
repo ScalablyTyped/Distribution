@@ -10,9 +10,9 @@ A responsive image cropping tool for React
 | ------------------ | :-------------: |
 | Full name          | react-image-crop |
 | Keywords           | react, reactjs, image, crop, react-component |
-| # releases         | 47 |
-| # dependents       | 34 |
-| # downloads        | 1408525 |
+| # releases         | 50 |
+| # dependents       | 73 |
+| # downloads        | 2731037 |
 | # stars            | 6 |
 
 ## Links

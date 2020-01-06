@@ -9,9 +9,9 @@ AXEL is a Node.js graphics library for drawing graphics to your console with ASC
 | ------------------ | :-------------: |
 | Full name          | axel |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 13 |
-| # downloads        | 1315 |
+| # releases         | 0 |
+| # dependents       | 14 |
+| # downloads        | 2193 |
 | # stars            | 3 |
 
 ## Links

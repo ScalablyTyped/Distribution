@@ -9,16 +9,13 @@ A Pug middleware for Koa
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | koa-pug |
-| Keywords           | koa, jade, template, pug |
-| # releases         | 0 |
-| # dependents       | 11 |
-| # downloads        | 46764 |
+| Keywords           | - |
+| # releases         | 3 |
+| # dependents       | 12 |
+| # downloads        | 105609 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/chrisyip/koa-pug)
-- [Bugs](https://github.com/chrisyip/koa-pug/issues)
-- [Repository](https://github.com/chrisyip/koa-pug)
 - [Npm](https://www.npmjs.com/package/koa-pug)
     
 

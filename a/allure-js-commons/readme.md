@@ -4,21 +4,21 @@
 Typings are for version 0.0
 
 ## Library description:
-Common helper for writing plugins to allure-framework
+Allure JS Commons
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | allure-js-commons |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 27 |
-| # downloads        | 1785964 |
+| # releases         | 7 |
+| # dependents       | 37 |
+| # downloads        | 4591691 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/allure-framework/allure-js-commons#readme)
-- [Bugs](https://github.com/allure-framework/allure-js-commons/issues)
-- [Repository](https://github.com/allure-framework/allure-js-commons)
+- [Homepage](https://github.com/allure-framework/allure-js#readme)
+- [Bugs](https://github.com/allure-framework/allure-js/issues)
+- [Repository](https://github.com/allure-framework/allure-js)
 - [Npm](https://www.npmjs.com/package/allure-js-commons)
     
 

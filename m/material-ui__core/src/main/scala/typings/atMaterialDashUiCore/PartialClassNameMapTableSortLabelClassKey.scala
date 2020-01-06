@@ -5,12 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/TableSortLabel/TableSortLabel.TableSortLabelClassKey>> */
+@js.native
 trait PartialClassNameMapTableSortLabelClassKey extends js.Object {
-  var active: js.UndefOr[String] = js.undefined
-  var icon: js.UndefOr[String] = js.undefined
-  var iconDirectionAsc: js.UndefOr[String] = js.undefined
-  var iconDirectionDesc: js.UndefOr[String] = js.undefined
-  var root: js.UndefOr[String] = js.undefined
+  var active: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.native
+  var iconDirectionAsc: js.UndefOr[String] = js.native
+  var iconDirectionDesc: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.native
 }
 
 object PartialClassNameMapTableSortLabelClassKey {

@@ -1,5 +1,6 @@
 package typings.awsDashSdk.clientsBudgetsMod
 
+import typings.std.Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation._
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class ^ () extends Budgets {
+class ^ () extends Array[Budget] {
   def this(options: ClientConfiguration) = this()
 }
 

@@ -4,17 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AudioSelectorSettings extends js.Object {
-  var AudioLanguageSelection: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.AudioLanguageSelection] = js.undefined
-  var AudioPidSelection: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.AudioPidSelection] = js.undefined
+  var AudioLanguageSelection: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.AudioLanguageSelection] = js.native
+  var AudioPidSelection: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.AudioPidSelection] = js.native
 }
 
 object AudioSelectorSettings {
   @scala.inline
   def apply(AudioLanguageSelection: AudioLanguageSelection = null, AudioPidSelection: AudioPidSelection = null): AudioSelectorSettings = {
     val __obj = js.Dynamic.literal()
-    if (AudioLanguageSelection != null) __obj.updateDynamic("AudioLanguageSelection")(AudioLanguageSelection)
-    if (AudioPidSelection != null) __obj.updateDynamic("AudioPidSelection")(AudioPidSelection)
+    if (AudioLanguageSelection != null) __obj.updateDynamic("AudioLanguageSelection")(AudioLanguageSelection.asInstanceOf[js.Any])
+    if (AudioPidSelection != null) __obj.updateDynamic("AudioPidSelection")(AudioPidSelection.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioSelectorSettings]
   }
 }

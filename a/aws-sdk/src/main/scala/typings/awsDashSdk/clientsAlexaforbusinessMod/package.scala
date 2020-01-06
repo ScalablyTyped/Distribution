@@ -46,6 +46,7 @@ package object clientsAlexaforbusinessMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.ONE_DAY
     - typings.awsDashSdk.awsDashSdkStrings.ONE_WEEK
+    - typings.awsDashSdk.awsDashSdkStrings.THIRTY_DAYS
     - java.lang.String
   */
   type BusinessReportInterval = _BusinessReportInterval | String
@@ -165,6 +166,15 @@ package object clientsAlexaforbusinessMod {
     - java.lang.String
   */
   type EnablementTypeFilter = _EnablementTypeFilter | String
+  type EndOfMeetingReminderMinutesList = js.Array[Minutes]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.ANNOUNCEMENT_TIME_CHECK
+    - typings.awsDashSdk.awsDashSdkStrings.ANNOUNCEMENT_VARIABLE_TIME_LEFT
+    - typings.awsDashSdk.awsDashSdkStrings.CHIME
+    - typings.awsDashSdk.awsDashSdkStrings.KNOCK
+    - java.lang.String
+  */
+  type EndOfMeetingReminderType = _EndOfMeetingReminderType | String
   type EndUserLicenseAgreement = String
   type Endpoint = String
   type EnrollmentId = String
@@ -210,6 +220,7 @@ package object clientsAlexaforbusinessMod {
   type MacAddress = String
   type MaxResults = Double
   type MaxVolumeLimit = Double
+  type Minutes = Double
   type NetworkEapMethod = EAP_TLS | String
   type NetworkProfileDataList = js.Array[NetworkProfileData]
   type NetworkProfileDescription = String
@@ -339,7 +350,7 @@ package object clientsAlexaforbusinessMod {
   type _Date = String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2017-11-09`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

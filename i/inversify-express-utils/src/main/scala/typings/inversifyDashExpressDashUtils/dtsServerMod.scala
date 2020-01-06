@@ -240,7 +240,7 @@ object dtsServerMod extends js.Object {
     /* private */ def handlerFactory(controllerName: js.Any, key: js.Any, parameterMetadata: js.Any): js.Any = js.native
     /* private */ def registerControllers(): js.Any = js.native
     /* private */ def resolveMidleware(
-      /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param middleware because its type <none> is not an array type */ middleware: js.Any
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param middleware because its type <none> is not an array type */ middleware: js.Any
     ): js.Any = js.native
     /**
       * Sets the configuration function to be applied to the application.

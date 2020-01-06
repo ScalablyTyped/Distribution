@@ -10,9 +10,9 @@ Check if a stream has ended
 | ------------------ | :-------------: |
 | Full name          | is-stream-ended |
 | Keywords           | stream, end, ended, consumed, complete |
-| # releases         | 5 |
+| # releases         | 2 |
 | # dependents       | 8 |
-| # downloads        | 25492813 |
+| # downloads        | 48690385 |
 | # stars            | 0 |
 
 ## Links

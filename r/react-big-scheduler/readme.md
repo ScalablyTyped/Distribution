@@ -10,9 +10,9 @@ A scheduler and resource planning component built for React and made for modern 
 | ------------------ | :-------------: |
 | Full name          | react-big-scheduler |
 | Keywords           | scheduler, react-component, react, react-big-scheduler, resource planning, antd |
-| # releases         | 10 |
+| # releases         | 11 |
 | # dependents       | 0 |
-| # downloads        | 22550 |
+| # downloads        | 51570 |
 | # stars            | 0 |
 
 ## Links

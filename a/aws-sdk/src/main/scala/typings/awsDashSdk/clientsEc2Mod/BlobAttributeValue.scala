@@ -4,8 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BlobAttributeValue extends js.Object {
-  var Value: js.UndefOr[_Blob] = js.undefined
+  var Value: js.UndefOr[_Blob] = js.native
 }
 
 object BlobAttributeValue {

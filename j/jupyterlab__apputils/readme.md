@@ -10,9 +10,9 @@ JupyterLab - Application Utilities
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/apputils |
 | Keywords           | - |
-| # releases         | 49 |
-| # dependents       | 221 |
-| # downloads        | 796329 |
+| # releases         | 66 |
+| # dependents       | 356 |
+| # downloads        | 1048921 |
 | # stars            | 0 |
 
 ## Links

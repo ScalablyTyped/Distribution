@@ -1,6 +1,5 @@
 package typings.reactDashWidgets
 
-import typings.reactDashWidgets.libComboboxMod.ComboBoxProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,11 +9,8 @@ trait reactDashWidgetsProps {
   def CalendarProps: typings.reactDashWidgets.libCalendarMod.CalendarProps.type = typings.reactDashWidgets.libCalendarMod.CalendarProps
   type CalendarProps = typings.reactDashWidgets.libCalendarMod.CalendarProps
   @scala.inline
-  def ClassProps: typings.reactDashWidgets.libCalendarMod.CalendarProps.type = typings.reactDashWidgets.libCalendarMod.CalendarProps
-  type ClassProps = typings.reactDashWidgets.libCalendarMod.CalendarProps
-  @scala.inline
-  def ComboboxProps: ComboBoxProps.type = typings.reactDashWidgets.libComboboxMod.ComboBoxProps
-  type ComboboxProps = ComboBoxProps
+  def ComboboxProps: typings.reactDashWidgets.libComboboxMod.ComboboxProps.type = typings.reactDashWidgets.libComboboxMod.ComboboxProps
+  type ComboboxProps = typings.reactDashWidgets.libComboboxMod.ComboboxProps
   @scala.inline
   def DateTimePickerProps: typings.reactDashWidgets.libDateTimePickerMod.DateTimePickerProps.type = typings.reactDashWidgets.libDateTimePickerMod.DateTimePickerProps
   type DateTimePickerProps = typings.reactDashWidgets.libDateTimePickerMod.DateTimePickerProps

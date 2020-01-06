@@ -4,39 +4,40 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Hsm extends js.Object {
   /**
     * The Availability Zone that contains the HSM.
     */
-  var AvailabilityZone: js.UndefOr[ExternalAz] = js.undefined
+  var AvailabilityZone: js.UndefOr[ExternalAz] = js.native
   /**
     * The identifier (ID) of the cluster that contains the HSM.
     */
-  var ClusterId: js.UndefOr[typings.awsDashSdk.clientsCloudhsmv2Mod.ClusterId] = js.undefined
+  var ClusterId: js.UndefOr[typings.awsDashSdk.clientsCloudhsmv2Mod.ClusterId] = js.native
   /**
     * The identifier (ID) of the HSM's elastic network interface (ENI).
     */
-  var EniId: js.UndefOr[typings.awsDashSdk.clientsCloudhsmv2Mod.EniId] = js.undefined
+  var EniId: js.UndefOr[typings.awsDashSdk.clientsCloudhsmv2Mod.EniId] = js.native
   /**
     * The IP address of the HSM's elastic network interface (ENI).
     */
-  var EniIp: js.UndefOr[IpAddress] = js.undefined
+  var EniIp: js.UndefOr[IpAddress] = js.native
   /**
     * The HSM's identifier (ID).
     */
-  var HsmId: typings.awsDashSdk.clientsCloudhsmv2Mod.HsmId
+  var HsmId: typings.awsDashSdk.clientsCloudhsmv2Mod.HsmId = js.native
   /**
     * The HSM's state.
     */
-  var State: js.UndefOr[HsmState] = js.undefined
+  var State: js.UndefOr[HsmState] = js.native
   /**
     * A description of the HSM's state.
     */
-  var StateMessage: js.UndefOr[String] = js.undefined
+  var StateMessage: js.UndefOr[String] = js.native
   /**
     * The subnet that contains the HSM's elastic network interface (ENI).
     */
-  var SubnetId: js.UndefOr[typings.awsDashSdk.clientsCloudhsmv2Mod.SubnetId] = js.undefined
+  var SubnetId: js.UndefOr[typings.awsDashSdk.clientsCloudhsmv2Mod.SubnetId] = js.native
 }
 
 object Hsm {
@@ -51,14 +52,14 @@ object Hsm {
     StateMessage: String = null,
     SubnetId: SubnetId = null
   ): Hsm = {
-    val __obj = js.Dynamic.literal(HsmId = HsmId)
-    if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone)
-    if (ClusterId != null) __obj.updateDynamic("ClusterId")(ClusterId)
-    if (EniId != null) __obj.updateDynamic("EniId")(EniId)
-    if (EniIp != null) __obj.updateDynamic("EniIp")(EniIp)
+    val __obj = js.Dynamic.literal(HsmId = HsmId.asInstanceOf[js.Any])
+    if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
+    if (ClusterId != null) __obj.updateDynamic("ClusterId")(ClusterId.asInstanceOf[js.Any])
+    if (EniId != null) __obj.updateDynamic("EniId")(EniId.asInstanceOf[js.Any])
+    if (EniIp != null) __obj.updateDynamic("EniIp")(EniIp.asInstanceOf[js.Any])
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (StateMessage != null) __obj.updateDynamic("StateMessage")(StateMessage)
-    if (SubnetId != null) __obj.updateDynamic("SubnetId")(SubnetId)
+    if (StateMessage != null) __obj.updateDynamic("StateMessage")(StateMessage.asInstanceOf[js.Any])
+    if (SubnetId != null) __obj.updateDynamic("SubnetId")(SubnetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Hsm]
   }
 }

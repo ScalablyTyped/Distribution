@@ -4,27 +4,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Grantee extends js.Object {
   /**
     * Screen name of the grantee.
     */
-  var DisplayName: js.UndefOr[typings.awsDashSdk.clientsS3Mod.DisplayName] = js.undefined
+  var DisplayName: js.UndefOr[typings.awsDashSdk.clientsS3Mod.DisplayName] = js.native
   /**
     * Email address of the grantee.
     */
-  var EmailAddress: js.UndefOr[typings.awsDashSdk.clientsS3Mod.EmailAddress] = js.undefined
+  var EmailAddress: js.UndefOr[typings.awsDashSdk.clientsS3Mod.EmailAddress] = js.native
   /**
     * The canonical user ID of the grantee.
     */
-  var ID: js.UndefOr[typings.awsDashSdk.clientsS3Mod.ID] = js.undefined
+  var ID: js.UndefOr[typings.awsDashSdk.clientsS3Mod.ID] = js.native
   /**
     * Type of grantee
     */
-  var Type: typings.awsDashSdk.clientsS3Mod.Type
+  var Type: typings.awsDashSdk.clientsS3Mod.Type = js.native
   /**
     * URI of the grantee group.
     */
-  var URI: js.UndefOr[typings.awsDashSdk.clientsS3Mod.URI] = js.undefined
+  var URI: js.UndefOr[typings.awsDashSdk.clientsS3Mod.URI] = js.native
 }
 
 object Grantee {
@@ -37,10 +38,10 @@ object Grantee {
     URI: URI = null
   ): Grantee = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
-    if (DisplayName != null) __obj.updateDynamic("DisplayName")(DisplayName)
-    if (EmailAddress != null) __obj.updateDynamic("EmailAddress")(EmailAddress)
-    if (ID != null) __obj.updateDynamic("ID")(ID)
-    if (URI != null) __obj.updateDynamic("URI")(URI)
+    if (DisplayName != null) __obj.updateDynamic("DisplayName")(DisplayName.asInstanceOf[js.Any])
+    if (EmailAddress != null) __obj.updateDynamic("EmailAddress")(EmailAddress.asInstanceOf[js.Any])
+    if (ID != null) __obj.updateDynamic("ID")(ID.asInstanceOf[js.Any])
+    if (URI != null) __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
     __obj.asInstanceOf[Grantee]
   }
 }

@@ -86,11 +86,11 @@ package object clientsCloudwatchlogsMod {
   type QueryInfoList = js.Array[QueryInfo]
   type QueryResults = js.Array[ResultRows]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Scheduled
-    - typings.awsDashSdk.awsDashSdkStrings.Running
-    - typings.awsDashSdk.awsDashSdkStrings.Complete
-    - typings.awsDashSdk.awsDashSdkStrings.Failed
-    - typings.awsDashSdk.awsDashSdkStrings.Cancelled
+    - typings.awsDashSdk.awsDashSdkStrings.Scheduled_
+    - typings.awsDashSdk.awsDashSdkStrings.Running_
+    - typings.awsDashSdk.awsDashSdkStrings.Complete_
+    - typings.awsDashSdk.awsDashSdkStrings.Failed_
+    - typings.awsDashSdk.awsDashSdkStrings.Cancelled_
     - java.lang.String
   */
   type QueryStatus = _QueryStatus | String
@@ -116,7 +116,7 @@ package object clientsCloudwatchlogsMod {
   type Value = String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2014-03-28`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

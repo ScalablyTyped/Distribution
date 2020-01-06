@@ -12,7 +12,7 @@ Ultra fast realization of javascript strftime function without memory leak
 | Keywords           | ultrafast, strftime, format, date |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 8469 |
+| # downloads        | 9146 |
 | # stars            | 0 |
 
 ## Links

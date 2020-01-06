@@ -1,7 +1,7 @@
 package typings.gulpDashInsert
 
 import typings.node.NodeJS.ReadWriteStream
-import typings.vinyl.vinylMod.File
+import typings.std.File
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

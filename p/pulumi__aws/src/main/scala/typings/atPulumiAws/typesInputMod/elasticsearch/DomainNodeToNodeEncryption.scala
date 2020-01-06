@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DomainNodeToNodeEncryption extends js.Object {
   /**
     * Specifies whether Amazon Cognito authentication with Kibana is enabled or not
     */
-  var enabled: Input[Boolean]
+  var enabled: Input[Boolean] = js.native
 }
 
 object DomainNodeToNodeEncryption {

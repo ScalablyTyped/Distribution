@@ -1,7 +1,7 @@
 
 # Scala.js typings for blip-sdk
 
-Typings are for version 7.x
+Typings are for version 7.3
 
 ## Library description:
 BLiP SDK JavaScript
@@ -10,9 +10,9 @@ BLiP SDK JavaScript
 | ------------------ | :-------------: |
 | Full name          | blip-sdk |
 | Keywords           | - |
-| # releases         | 34 |
+| # releases         | 39 |
 | # dependents       | 1 |
-| # downloads        | 8121 |
+| # downloads        | 7610 |
 | # stars            | 0 |
 
 ## Links

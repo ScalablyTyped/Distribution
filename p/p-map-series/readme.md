@@ -11,8 +11,8 @@ Map over promises serially
 | Full name          | p-map-series |
 | Keywords           | promise, map, collection, iterable, iterator, fulfilled, serial, serially, async, await, promises, bluebird |
 | # releases         | 3 |
-| # dependents       | 51 |
-| # downloads        | 18225135 |
+| # dependents       | 59 |
+| # downloads        | 39310892 |
 | # stars            | 0 |
 
 ## Links

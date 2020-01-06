@@ -10,9 +10,9 @@ Wrap those words. Show them at what columns to start and stop.
 | ------------------ | :-------------: |
 | Full name          | wordwrap |
 | Keywords           | word, wrap, rule, format, column |
-| # releases         | 1 |
-| # dependents       | 297 |
-| # downloads        | 630010048 |
+| # releases         | 0 |
+| # dependents       | 333 |
+| # downloads        | 840492348 |
 | # stars            | 13 |
 
 ## Links

@@ -29,7 +29,7 @@ trait OverriddenMethods[TEmitter, TEventRecord, TEmitRecord] extends js.Object {
   def emit(event: js.Symbol, args: js.Any*): Unit = js.native
   def emit[P /* <: String */, T](
     event: P,
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type ListenerType<TEmitRecord[P]> is not an array type */ args: ListenerType[
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type ListenerType<TEmitRecord[P]> is not an array type */ args: ListenerType[
       /* import warning: importer.ImportType#apply Failed type conversion: TEmitRecord[P] */ js.Any
     ]
   ): EEMethodReturnType[TEmitter, typings.tmiDotJs.tmiDotJsStrings.emit, T, Unit] = js.native

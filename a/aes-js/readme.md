@@ -10,9 +10,9 @@ A pure JavaScript implementation of the AES block cipher and all common modes of
 | ------------------ | :-------------: |
 | Full name          | aes-js |
 | Keywords           | aes, aes-ctr, aes-ofb, aes-ecb, aes-cbc, aes-cfb, encrypt, decrypt, block, cipher |
-| # releases         | 4 |
-| # dependents       | 136 |
-| # downloads        | 3035366 |
+| # releases         | 3 |
+| # dependents       | 195 |
+| # downloads        | 5723038 |
 | # stars            | 9 |
 
 ## Links

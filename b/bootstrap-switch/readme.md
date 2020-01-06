@@ -9,9 +9,9 @@ Turn checkboxes and radio buttons into toggle switches.
 | ------------------ | :-------------: |
 | Full name          | bootstrap-switch |
 | Keywords           | bootstrap, switch, javascript, js |
-| # releases         | 0 |
-| # dependents       | 19 |
-| # downloads        | 1100131 |
+| # releases         | 3 |
+| # dependents       | 24 |
+| # downloads        | 1461894 |
 | # stars            | 5 |
 
 ## Links

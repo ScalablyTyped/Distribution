@@ -4,21 +4,18 @@
 Typings are for version 1.4.13
 
 ## Library description:
-Send reports about your GraphQL services to Apollo Engine
+Send reports about your GraphQL services to Apollo Graph Manager (previously known as Apollo Engine)
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | apollo-engine-reporting |
 | Keywords           | - |
-| # releases         | 64 |
-| # dependents       | 6 |
-| # downloads        | 6901574 |
+| # releases         | 123 |
+| # dependents       | 7 |
+| # downloads        | 19798926 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/apollographql/apollo-engine-reporting#readme)
-- [Bugs](https://github.com/apollographql/apollo-engine-reporting/issues)
-- [Repository](https://github.com/apollographql/apollo-engine-reporting)
 - [Npm](https://www.npmjs.com/package/apollo-engine-reporting)
     
 

@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TopicRuleSqs extends js.Object {
   /**
     * The URL of the Amazon SQS queue.
     */
-  var queueUrl: Input[String]
+  var queueUrl: Input[String] = js.native
   /**
     * The ARN of the IAM role that grants access.
     */
-  var roleArn: Input[String]
+  var roleArn: Input[String] = js.native
   /**
     * Specifies whether to use Base64 encoding.
     */
-  var useBase64: Input[Boolean]
+  var useBase64: Input[Boolean] = js.native
 }
 
 object TopicRuleSqs {

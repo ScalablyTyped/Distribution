@@ -10,9 +10,9 @@ Return true if a value is a valid glob pattern or patterns.
 | ------------------ | :-------------: |
 | Full name          | is-valid-glob |
 | Keywords           | array, check, glob, is, match, pattern, patterns, read, test, valid, validate |
-| # releases         | 2 |
-| # dependents       | 21 |
-| # downloads        | 46672218 |
+| # releases         | 0 |
+| # dependents       | 26 |
+| # downloads        | 61413749 |
 | # stars            | 0 |
 
 ## Links

@@ -5,53 +5,54 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClusterSnapshotState extends js.Object {
   /**
     * List of EC2 Availability Zones that instances in the DocDB cluster snapshot can be restored in.
     */
-  val availabilityZones: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val availabilityZones: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The DocDB Cluster Identifier from which to take the snapshot.
     */
-  val dbClusterIdentifier: js.UndefOr[Input[String]] = js.undefined
+  val dbClusterIdentifier: js.UndefOr[Input[String]] = js.native
   /**
     * The Amazon Resource Name (ARN) for the DocDB Cluster Snapshot.
     */
-  val dbClusterSnapshotArn: js.UndefOr[Input[String]] = js.undefined
+  val dbClusterSnapshotArn: js.UndefOr[Input[String]] = js.native
   /**
     * The Identifier for the snapshot.
     */
-  val dbClusterSnapshotIdentifier: js.UndefOr[Input[String]] = js.undefined
+  val dbClusterSnapshotIdentifier: js.UndefOr[Input[String]] = js.native
   /**
     * Specifies the name of the database engine.
     */
-  val engine: js.UndefOr[Input[String]] = js.undefined
+  val engine: js.UndefOr[Input[String]] = js.native
   /**
     * Version of the database engine for this DocDB cluster snapshot.
     */
-  val engineVersion: js.UndefOr[Input[String]] = js.undefined
+  val engineVersion: js.UndefOr[Input[String]] = js.native
   /**
     * If storageEncrypted is true, the AWS KMS key identifier for the encrypted DocDB cluster snapshot.
     */
-  val kmsKeyId: js.UndefOr[Input[String]] = js.undefined
+  val kmsKeyId: js.UndefOr[Input[String]] = js.native
   /**
     * Port that the DocDB cluster was listening on at the time of the snapshot.
     */
-  val port: js.UndefOr[Input[Double]] = js.undefined
-  val snapshotType: js.UndefOr[Input[String]] = js.undefined
-  val sourceDbClusterSnapshotArn: js.UndefOr[Input[String]] = js.undefined
+  val port: js.UndefOr[Input[Double]] = js.native
+  val snapshotType: js.UndefOr[Input[String]] = js.native
+  val sourceDbClusterSnapshotArn: js.UndefOr[Input[String]] = js.native
   /**
     * The status of this DocDB Cluster Snapshot.
     */
-  val status: js.UndefOr[Input[String]] = js.undefined
+  val status: js.UndefOr[Input[String]] = js.native
   /**
     * Specifies whether the DocDB cluster snapshot is encrypted.
     */
-  val storageEncrypted: js.UndefOr[Input[Boolean]] = js.undefined
+  val storageEncrypted: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The VPC ID associated with the DocDB cluster snapshot.
     */
-  val vpcId: js.UndefOr[Input[String]] = js.undefined
+  val vpcId: js.UndefOr[Input[String]] = js.native
 }
 
 object ClusterSnapshotState {

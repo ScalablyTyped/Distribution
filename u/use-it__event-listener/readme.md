@@ -11,8 +11,8 @@ A custom React Hook that provides a useEventListener.
 | Full name          | @use-it/event-listener |
 | Keywords           | react-hooks, hooks, react, utils, lib, event-listener |
 | # releases         | 7 |
-| # dependents       | 7 |
-| # downloads        | 64466 |
+| # dependents       | 16 |
+| # downloads        | 299302 |
 | # stars            | 0 |
 
 ## Links

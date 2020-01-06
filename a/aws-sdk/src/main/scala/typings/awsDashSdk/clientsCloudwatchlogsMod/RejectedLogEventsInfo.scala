@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RejectedLogEventsInfo extends js.Object {
   /**
     * The expired log events.
     */
-  var expiredLogEventEndIndex: js.UndefOr[LogEventIndex] = js.undefined
+  var expiredLogEventEndIndex: js.UndefOr[LogEventIndex] = js.native
   /**
     * The log events that are too new.
     */
-  var tooNewLogEventStartIndex: js.UndefOr[LogEventIndex] = js.undefined
+  var tooNewLogEventStartIndex: js.UndefOr[LogEventIndex] = js.native
   /**
     * The log events that are too old.
     */
-  var tooOldLogEventEndIndex: js.UndefOr[LogEventIndex] = js.undefined
+  var tooOldLogEventEndIndex: js.UndefOr[LogEventIndex] = js.native
 }
 
 object RejectedLogEventsInfo {

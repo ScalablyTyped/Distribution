@@ -24,10 +24,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UnionType
   extends Type
-     with Instantiable2[/* arg */ Buffer, /* data */ js.Object, js.Any]
-     with Instantiable0[js.Any]
      with /** Pass it an existing Buffer instance to use that as the backing buffer. */
-Instantiable1[(/* arg */ Buffer) | (/* data */ js.Object), js.Any] {
+Instantiable1[(/* arg */ Buffer) | (/* data */ js.Object), js.Any]
+     with Instantiable0[js.Any]
+     with Instantiable2[/* arg */ Buffer, /* data */ js.Object, js.Any] {
   var fields: StringDictionary[Anon_Type] = js.native
   def apply(): js.Any = js.native
   /** Pass it an existing Buffer instance to use that as the backing buffer. */

@@ -11,8 +11,8 @@ Typings are for version 2.0.1
 | Full name          | indefinite-observable |
 | Keywords           | - |
 | # releases         | 4 |
-| # dependents       | 6 |
-| # downloads        | 10224880 |
+| # dependents       | 5 |
+| # downloads        | 16395969 |
 | # stars            | 0 |
 
 ## Links

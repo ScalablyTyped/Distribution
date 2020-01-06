@@ -10,9 +10,9 @@ KeystoneJS Static File App.
 | ------------------ | :-------------: |
 | Full name          | @keystonejs/app-static |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 952 |
+| # downloads        | 7078 |
 | # stars            | 0 |
 
 ## Links

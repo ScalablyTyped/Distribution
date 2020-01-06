@@ -11,8 +11,8 @@ Static binaries for ffprobe.
 | Full name          | ffprobe-static |
 | Keywords           | ffprobe, ffmpeg |
 | # releases         | 2 |
-| # dependents       | 14 |
-| # downloads        | 235090 |
+| # dependents       | 22 |
+| # downloads        | 598501 |
 | # stars            | 1 |
 
 ## Links

@@ -12,7 +12,7 @@ Helper for HTTP Statuses
 | Keywords           | http, status, code, message, typescript |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 3819 |
+| # downloads        | 7406 |
 | # stars            | 0 |
 
 ## Links

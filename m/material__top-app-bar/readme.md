@@ -10,9 +10,9 @@ The Material Components for the web top app bar component
 | ------------------ | :-------------: |
 | Full name          | @material/top-app-bar |
 | Keywords           | material components, material design, top app bar, top-app-bar, topappbar |
-| # releases         | 32 |
-| # dependents       | 20 |
-| # downloads        | 917485 |
+| # releases         | 120 |
+| # dependents       | 40 |
+| # downloads        | 1011895 |
 | # stars            | 0 |
 
 ## Links

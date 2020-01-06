@@ -10,9 +10,9 @@ A base component used to build inline-editable components that match the Atlassi
 | ------------------ | :-------------: |
 | Full name          | @atlaskit/inline-edit |
 | Keywords           | atlaskit, react, ui |
-| # releases         | 75 |
-| # dependents       | 0 |
-| # downloads        | 301552 |
+| # releases         | 81 |
+| # dependents       | 1 |
+| # downloads        | 157173 |
 | # stars            | 0 |
 
 ## Links

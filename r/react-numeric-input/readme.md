@@ -10,9 +10,9 @@ Number input component that can replace the native number input which is not yet
 | ------------------ | :-------------: |
 | Full name          | react-numeric-input |
 | Keywords           | react, input, number, numeric, widget, component |
-| # releases         | 7 |
-| # dependents       | 30 |
-| # downloads        | 778618 |
+| # releases         | 4 |
+| # dependents       | 41 |
+| # downloads        | 1525438 |
 | # stars            | 1 |
 
 ## Links

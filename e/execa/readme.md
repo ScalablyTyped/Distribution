@@ -4,15 +4,15 @@
 Typings are for version 2.1.0
 
 ## Library description:
-A better `child_process`
+Process execution for humans
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | execa |
 | Keywords           | exec, child, process, execute, fork, execfile, spawn, file, shell, bin, binary, binaries, npm, path, local |
-| # releases         | 7 |
-| # dependents       | 2068 |
-| # downloads        | 462993378 |
+| # releases         | 17 |
+| # dependents       | 3233 |
+| # downloads        | 888830995 |
 | # stars            | 38 |
 
 ## Links

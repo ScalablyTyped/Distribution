@@ -10,9 +10,9 @@ Query and manipulate moment objects within the context of business/working hours
 | ------------------ | :-------------: |
 | Full name          | moment-business-time |
 | Keywords           | moment, working time, workings days, working hours, business time, business hours |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 3 |
-| # downloads        | 76855 |
+| # downloads        | 167970 |
 | # stars            | 0 |
 
 ## Links

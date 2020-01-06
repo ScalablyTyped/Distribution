@@ -10,9 +10,9 @@ Check if a path is the root path. Example: `/` or `C:\`
 | ------------------ | :-------------: |
 | Full name          | is-root-path |
 | Keywords           | root, path, dir, directory, top, level, absolute, check, detect, is |
-| # releases         | 0 |
+| # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 139 |
+| # downloads        | 231 |
 | # stars            | 0 |
 
 ## Links

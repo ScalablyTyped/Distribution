@@ -456,6 +456,9 @@ object expressDashValidatorStrings {
   sealed trait `et-EE` extends MobilePhoneLocale
   
   @js.native
+  sealed trait `express-validatorNumbersigncontexts` extends js.Object
+  
+  @js.native
   sealed trait `fa-IR` extends MobilePhoneLocale
   
   @js.native
@@ -908,6 +911,8 @@ object expressDashValidatorStrings {
   def `es-UY`: `es-UY` = "es-UY".asInstanceOf[`es-UY`]
   @scala.inline
   def `et-EE`: `et-EE` = "et-EE".asInstanceOf[`et-EE`]
+  @scala.inline
+  def `express-validatorNumbersigncontexts`: `express-validatorNumbersigncontexts` = "express-validator#contexts".asInstanceOf[`express-validatorNumbersigncontexts`]
   @scala.inline
   def `fa-IR`: `fa-IR` = "fa-IR".asInstanceOf[`fa-IR`]
   @scala.inline

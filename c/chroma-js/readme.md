@@ -10,9 +10,9 @@ JavaScript library for color conversions
 | ------------------ | :-------------: |
 | Full name          | chroma-js |
 | Keywords           | color |
-| # releases         | 11 |
-| # dependents       | 238 |
-| # downloads        | 2708265 |
+| # releases         | 14 |
+| # dependents       | 293 |
+| # downloads        | 4768355 |
 | # stars            | 13 |
 
 ## Links

@@ -4,18 +4,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UpdateGameSessionQueueOutput extends js.Object {
   /**
-    * Object that describes the newly updated game session queue.
+    * An object that describes the newly updated game session queue.
     */
-  var GameSessionQueue: js.UndefOr[typings.awsDashSdk.clientsGameliftMod.GameSessionQueue] = js.undefined
+  var GameSessionQueue: js.UndefOr[typings.awsDashSdk.clientsGameliftMod.GameSessionQueue] = js.native
 }
 
 object UpdateGameSessionQueueOutput {
   @scala.inline
   def apply(GameSessionQueue: GameSessionQueue = null): UpdateGameSessionQueueOutput = {
     val __obj = js.Dynamic.literal()
-    if (GameSessionQueue != null) __obj.updateDynamic("GameSessionQueue")(GameSessionQueue)
+    if (GameSessionQueue != null) __obj.updateDynamic("GameSessionQueue")(GameSessionQueue.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateGameSessionQueueOutput]
   }
 }

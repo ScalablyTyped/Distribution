@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CodeSigning extends js.Object {
   /**
     * The ID of the AWSSignerJob which was created to sign the file.
     */
-  var awsSignerJobId: js.UndefOr[SigningJobId] = js.undefined
+  var awsSignerJobId: js.UndefOr[SigningJobId] = js.native
   /**
     * A custom method for code signing a file.
     */
-  var customCodeSigning: js.UndefOr[CustomCodeSigning] = js.undefined
+  var customCodeSigning: js.UndefOr[CustomCodeSigning] = js.native
   /**
     * Describes the code-signing job.
     */
-  var startSigningJobParameter: js.UndefOr[StartSigningJobParameter] = js.undefined
+  var startSigningJobParameter: js.UndefOr[StartSigningJobParameter] = js.native
 }
 
 object CodeSigning {
@@ -27,9 +28,9 @@ object CodeSigning {
     startSigningJobParameter: StartSigningJobParameter = null
   ): CodeSigning = {
     val __obj = js.Dynamic.literal()
-    if (awsSignerJobId != null) __obj.updateDynamic("awsSignerJobId")(awsSignerJobId)
-    if (customCodeSigning != null) __obj.updateDynamic("customCodeSigning")(customCodeSigning)
-    if (startSigningJobParameter != null) __obj.updateDynamic("startSigningJobParameter")(startSigningJobParameter)
+    if (awsSignerJobId != null) __obj.updateDynamic("awsSignerJobId")(awsSignerJobId.asInstanceOf[js.Any])
+    if (customCodeSigning != null) __obj.updateDynamic("customCodeSigning")(customCodeSigning.asInstanceOf[js.Any])
+    if (startSigningJobParameter != null) __obj.updateDynamic("startSigningJobParameter")(startSigningJobParameter.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeSigning]
   }
 }

@@ -9,9 +9,9 @@ Typings are for version 0.1.0-preview.2
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/hash-blob-browser |
 | Keywords           | - |
-| # releases         | 7 |
+| # releases         | 11 |
 | # dependents       | 1 |
-| # downloads        | 242 |
+| # downloads        | 745 |
 | # stars            | 0 |
 
 ## Links

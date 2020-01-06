@@ -10,9 +10,9 @@ Simple and easy-to-use NodeJS Mongoose Schema plugin to pull random documents
 | ------------------ | :-------------: |
 | Full name          | mongoose-simple-random |
 | Keywords           | mongoose, random |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 32378 |
+| # downloads        | 25809 |
 | # stars            | 7 |
 
 ## Links

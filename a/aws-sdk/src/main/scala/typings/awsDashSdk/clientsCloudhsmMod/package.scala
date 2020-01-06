@@ -18,8 +18,8 @@ package object clientsCloudhsmMod {
   type ClientList = js.Array[ClientArn]
   type ClientToken = java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.`5DOT1`
-    - typings.awsDashSdk.awsDashSdkStrings.`5DOT3`
+    - typings.awsDashSdk.awsDashSdkStrings.`5Dot1`
+    - typings.awsDashSdk.awsDashSdkStrings.`5Dot3`
     - java.lang.String
   */
   type ClientVersion = _ClientVersion | java.lang.String
@@ -68,7 +68,7 @@ package object clientsCloudhsmMod {
   type VpcId = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2014-05-30`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | java.lang.String

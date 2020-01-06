@@ -10,9 +10,9 @@ Simple, customizable draggable timetable.
 | ------------------ | :-------------: |
 | Full name          | drag-timetable |
 | Keywords           | timetable, schedule |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 577 |
+| # downloads        | 706 |
 | # stars            | 1 |
 
 ## Links

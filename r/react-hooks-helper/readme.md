@@ -12,7 +12,7 @@ A custom React Hooks library that gives you custom hooks for your code.
 | Keywords           | react-hooks, hooks, react, utils, lib, form, step, wizard |
 | # releases         | 28 |
 | # dependents       | 0 |
-| # downloads        | 2833 |
+| # downloads        | 7915 |
 | # stars            | 0 |
 
 ## Links

@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DocumentMetadata extends js.Object {
   /**
-    * The number of pages detected in the document.
+    * The number of pages that are detected in the document.
     */
-  var Pages: js.UndefOr[UInteger] = js.undefined
+  var Pages: js.UndefOr[UInteger] = js.native
 }
 
 object DocumentMetadata {

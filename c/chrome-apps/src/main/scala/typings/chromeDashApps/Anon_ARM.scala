@@ -29,14 +29,14 @@ object Anon_ARM {
 }
 
 trait Anon_Arm extends js.Object {
-  var nacl_arch: ToStringLiteral[Anon_ARM, String, Exclude[String, mips | arm | `x86-64` | `x86-32` | mips64]]
+  var nacl_arch: ToStringLiteral[Anon_ARM, String, Exclude[String, mips64 | arm | `x86-64` | `x86-32` | mips]]
   var sub_package_path: String
 }
 
 object Anon_Arm {
   @scala.inline
   def apply(
-    nacl_arch: ToStringLiteral[Anon_ARM, String, Exclude[String, mips | arm | `x86-64` | `x86-32` | mips64]],
+    nacl_arch: ToStringLiteral[Anon_ARM, String, Exclude[String, mips64 | arm | `x86-64` | `x86-32` | mips]],
     sub_package_path: String
   ): Anon_Arm = {
     val __obj = js.Dynamic.literal(nacl_arch = nacl_arch.asInstanceOf[js.Any], sub_package_path = sub_package_path.asInstanceOf[js.Any])

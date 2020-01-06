@@ -11,8 +11,8 @@ require and resolve modules relative to a path of your choice
 | Full name          | require-relative |
 | Keywords           | require, resolve, modules, relative |
 | # releases         | 0 |
-| # dependents       | 98 |
-| # downloads        | 12722927 |
+| # dependents       | 108 |
+| # downloads        | 17784092 |
 | # stars            | 0 |
 
 ## Links

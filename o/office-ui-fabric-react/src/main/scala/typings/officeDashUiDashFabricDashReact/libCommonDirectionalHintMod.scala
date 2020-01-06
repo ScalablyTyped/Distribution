@@ -22,20 +22,20 @@ import scala.scalajs.js.annotation._
 @js.native
 object libCommonDirectionalHintMod extends js.Object {
   /* Rewritten from type alias, can be one of: 
-    - typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactNumbers.`8`
-    - typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactNumbers.`12`
-    - typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactNumbers.`0`
     - typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactNumbers.`3`
     - typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactNumbers.`13`
-    - typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactNumbers.`10`
     - typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactNumbers.`2`
-    - typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactNumbers.`11`
-    - typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactNumbers.`1`
-    - typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactNumbers.`9`
-    - typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactNumbers.`6`
     - typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactNumbers.`4`
-    - typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactNumbers.`5`
+    - typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactNumbers.`0`
     - typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactNumbers.`7`
+    - typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactNumbers.`5`
+    - typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactNumbers.`12`
+    - typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactNumbers.`11`
+    - typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactNumbers.`6`
+    - typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactNumbers.`10`
+    - typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactNumbers.`9`
+    - typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactNumbers.`8`
+    - typings.officeDashUiDashFabricDashReact.officeDashUiDashFabricDashReactNumbers.`1`
   */
   trait DirectionalHint extends js.Object
   

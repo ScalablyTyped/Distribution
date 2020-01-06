@@ -14,7 +14,7 @@ trait Anon_Json[T] extends js.Object {
     * Send data `any` data in response
     */
   var send: Send[T]
-  def status(statusCode: Double): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias next.next/dist/next-server/lib/utils.NextApiResponse<T> */ js.Object
+  def status(statusCode: Double): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias next.next/dist/next-server/lib/utils.NextApiResponse<T> */ js.Object
 }
 
 object Anon_Json {
@@ -22,7 +22,7 @@ object Anon_Json {
   def apply[T](
     json: T => Unit,
     send: T => Unit,
-    status: Double => /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias next.next/dist/next-server/lib/utils.NextApiResponse<T> */ js.Object
+    status: Double => /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias next.next/dist/next-server/lib/utils.NextApiResponse<T> */ js.Object
   ): Anon_Json[T] = {
     val __obj = js.Dynamic.literal(json = js.Any.fromFunction1(json), send = js.Any.fromFunction1(send), status = js.Any.fromFunction1(status))
   

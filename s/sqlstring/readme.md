@@ -10,9 +10,9 @@ Simple SQL escape and format for MySQL
 | ------------------ | :-------------: |
 | Full name          | sqlstring |
 | Keywords           | sqlstring, sql, escape, sql escape |
-| # releases         | 3 |
-| # dependents       | 96 |
-| # downloads        | 17893629 |
+| # releases         | 2 |
+| # dependents       | 135 |
+| # downloads        | 26334300 |
 | # stars            | 9 |
 
 ## Links

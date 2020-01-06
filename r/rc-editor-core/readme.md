@@ -10,9 +10,9 @@ editor-core ui component for react
 | ------------------ | :-------------: |
 | Full name          | rc-editor-core |
 | Keywords           | react, react-component, react-editor-core, editor-core |
-| # releases         | 23 |
-| # dependents       | 8 |
-| # downloads        | 5808570 |
+| # releases         | 10 |
+| # dependents       | 10 |
+| # downloads        | 9888909 |
 | # stars            | 0 |
 
 ## Links

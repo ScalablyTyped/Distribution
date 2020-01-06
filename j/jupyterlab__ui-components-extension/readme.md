@@ -10,9 +10,9 @@ JupyterLab - UI component plugins
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/ui-components-extension |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 2 |
-| # downloads        | 76772 |
+| # releases         | 22 |
+| # dependents       | 1 |
+| # downloads        | 225420 |
 | # stars            | 0 |
 
 ## Links

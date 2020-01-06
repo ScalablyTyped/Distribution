@@ -10,9 +10,9 @@ React component for SimpleBar
 | ------------------ | :-------------: |
 | Full name          | simplebar-react |
 | Keywords           | - |
-| # releases         | 32 |
-| # dependents       | 6 |
-| # downloads        | 4338775 |
+| # releases         | 56 |
+| # dependents       | 10 |
+| # downloads        | 15326560 |
 | # stars            | 0 |
 
 ## Links

@@ -9,9 +9,9 @@ Typings are for version 0.1.0-preview.1
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/util-uri-escape |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 5 |
 | # dependents       | 2 |
-| # downloads        | 6469 |
+| # downloads        | 31499 |
 | # stars            | 0 |
 
 ## Links

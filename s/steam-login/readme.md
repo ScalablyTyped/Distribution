@@ -10,9 +10,9 @@ Simple Connect / Express Steam authentication library.
 | ------------------ | :-------------: |
 | Full name          | steam-login |
 | Keywords           | authentication, login, steam, user |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 3 |
-| # downloads        | 5643 |
+| # downloads        | 2509 |
 | # stars            | 3 |
 
 ## Links

@@ -9,10 +9,10 @@ Check if a Buffer/Uint8Array is a PNG image
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | is-png |
-| Keywords           | png, portable, network, graphics, image, img, pic, picture, photo, type, detect, check, is, exif, binary, buffer, uint8array |
-| # releases         | 0 |
-| # dependents       | 47 |
-| # downloads        | 22304835 |
+| Keywords           | png, portable, network, graphics, image, picture, photo, type, detect, check, is, exif, binary, buffer, uint8array |
+| # releases         | 2 |
+| # dependents       | 58 |
+| # downloads        | 29633097 |
 | # stars            | 2 |
 
 ## Links

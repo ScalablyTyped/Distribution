@@ -10,9 +10,9 @@ Typings are for version 2.5.2
 | ------------------ | :-------------: |
 | Full name          | graphql-binding |
 | Keywords           | - |
-| # releases         | 88 |
-| # dependents       | 37 |
-| # downloads        | 510580 |
+| # releases         | 81 |
+| # dependents       | 41 |
+| # downloads        | 736752 |
 | # stars            | 0 |
 
 ## Links

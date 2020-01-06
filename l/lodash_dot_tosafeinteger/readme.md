@@ -12,7 +12,7 @@ The lodash method `_.toSafeInteger` exported as a module.
 | Keywords           | lodash-modularized, tosafeinteger |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 4580 |
+| # downloads        | 9133 |
 | # stars            | 0 |
 
 ## Links

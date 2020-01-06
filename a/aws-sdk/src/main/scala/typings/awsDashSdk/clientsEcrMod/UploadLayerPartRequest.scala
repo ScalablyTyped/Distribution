@@ -4,31 +4,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UploadLayerPartRequest extends js.Object {
   /**
     * The base64-encoded layer part payload.
     */
-  var layerPartBlob: LayerPartBlob
+  var layerPartBlob: LayerPartBlob = js.native
   /**
     * The integer value of the first byte of the layer part.
     */
-  var partFirstByte: PartSize
+  var partFirstByte: PartSize = js.native
   /**
     * The integer value of the last byte of the layer part.
     */
-  var partLastByte: PartSize
+  var partLastByte: PartSize = js.native
   /**
     * The AWS account ID associated with the registry to which you are uploading layer parts. If you do not specify a registry, the default registry is assumed.
     */
-  var registryId: js.UndefOr[RegistryId] = js.undefined
+  var registryId: js.UndefOr[RegistryId] = js.native
   /**
     * The name of the repository to which you are uploading layer parts.
     */
-  var repositoryName: RepositoryName
+  var repositoryName: RepositoryName = js.native
   /**
     * The upload ID from a previous InitiateLayerUpload operation to associate with the layer part upload.
     */
-  var uploadId: UploadId
+  var uploadId: UploadId = js.native
 }
 
 object UploadLayerPartRequest {
@@ -41,8 +42,8 @@ object UploadLayerPartRequest {
     uploadId: UploadId,
     registryId: RegistryId = null
   ): UploadLayerPartRequest = {
-    val __obj = js.Dynamic.literal(layerPartBlob = layerPartBlob.asInstanceOf[js.Any], partFirstByte = partFirstByte, partLastByte = partLastByte, repositoryName = repositoryName, uploadId = uploadId)
-    if (registryId != null) __obj.updateDynamic("registryId")(registryId)
+    val __obj = js.Dynamic.literal(layerPartBlob = layerPartBlob.asInstanceOf[js.Any], partFirstByte = partFirstByte.asInstanceOf[js.Any], partLastByte = partLastByte.asInstanceOf[js.Any], repositoryName = repositoryName.asInstanceOf[js.Any], uploadId = uploadId.asInstanceOf[js.Any])
+    if (registryId != null) __obj.updateDynamic("registryId")(registryId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadLayerPartRequest]
   }
 }

@@ -16,7 +16,7 @@ Expect the first stable release soon.
 
 ## About
 
-This is the home of Scala.js typings for **8258** Javascript libraries,
+This is the home of Scala.js typings for **8271** Javascript libraries,
  which should span more or less the entire set of modern and popular libraries.
 
 This should make it one of the biggest Scala repos on the planet:
@@ -25,13 +25,13 @@ This should make it one of the biggest Scala repos on the planet:
 --------------------------------------------------------------------------------
  Language             Files        Lines        Blank      Comment         Code
 --------------------------------------------------------------------------------
- Scala               329285     13755656      1399041      3108725      9247890
- Markdown              8394       298516        99242            0       199274
+ Scala               357062     15283112      1504289      3667720     10111103
+ Markdown              8410       299463        99425            0       200038
  JSON                     9           90            0            0           90
- Makefile                 3           45           10            0           35
+ Makefile                 5           69           16            0           53
  HTML                     1            6            0            0            6
 --------------------------------------------------------------------------------
- Total               337692     14054313      1498293      3108725      9447295
+ Total               365487     15582740      1603730      3667720     10311290
 --------------------------------------------------------------------------------
 
 ```
@@ -100,7 +100,7 @@ These should be the main steps you would have to follow:
 ScalablyTyped is hosted at bintray, so make sure to include the resolver
 ```scala
   resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "201912290355")
+  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "202001050938")
 ```
 
 ### `build.sbt`
@@ -171,7 +171,7 @@ You'll see there are two projects which target Scala.
 `DefinitelyScala` is an awesome project, but it's not finished.
 This project tries to pick up where it left off and finish the task.
 
-The converter, `tso`, powers `ScalablyTyped` with a huge set of features not frequently found elsewhere:
+ScalablyTypedConverter powers `ScalablyTyped` with a huge set of features not frequently found elsewhere:
 - Parser for ~all of Typescript
 - Keeps ~all comments
 - Full handling of dependencies between libraries, including those outside of `DefinitelyTyped`
@@ -268,7 +268,7 @@ libraryDependencies ++= Seq(
 A `ScalablyTyped` package is generated based on two or three axis:
 - a library at a given version
 - if the typings are declared outside the library, the version of the typings
-- the version of the `tso` converter
+- the version of ScalablyTypedConverter
 
 A good versioning scheme has the following properties
 - sortable/monotonously increasing

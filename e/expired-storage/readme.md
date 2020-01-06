@@ -10,9 +10,9 @@ Micro JS lib that provide local & session storage with expiration time.
 | ------------------ | :-------------: |
 | Full name          | expired-storage |
 | Keywords           | localStorage, sessionStorage, storage, expiration, expired, temporary |
-| # releases         | 5 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 7715 |
+| # downloads        | 10786 |
 | # stars            | 0 |
 
 ## Links

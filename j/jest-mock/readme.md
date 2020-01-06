@@ -10,9 +10,9 @@ Typings are for version 24.9.0
 | ------------------ | :-------------: |
 | Full name          | jest-mock |
 | Keywords           | - |
-| # releases         | 69 |
-| # dependents       | 44 |
-| # downloads        | 218058284 |
+| # releases         | 52 |
+| # dependents       | 46 |
+| # downloads        | 247600812 |
 | # stars            | 1 |
 
 ## Links

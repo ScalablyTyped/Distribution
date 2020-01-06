@@ -12,7 +12,7 @@ The lodash method `_.overSome` exported as a module.
 | Keywords           | lodash-modularized, oversome |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 4315 |
+| # downloads        | 12735 |
 | # stars            | 0 |
 
 ## Links

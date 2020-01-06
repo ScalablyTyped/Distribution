@@ -11,8 +11,8 @@ Escape strings for use as JavaScript string literals
 | Full name          | js-string-escape |
 | Keywords           | string, escape, backslash, javascript, ecmascript |
 | # releases         | 1 |
-| # dependents       | 204 |
-| # downloads        | 24734058 |
+| # dependents       | 215 |
+| # downloads        | 29657836 |
 | # stars            | 9 |
 
 ## Links

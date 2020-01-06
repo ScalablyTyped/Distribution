@@ -8,7 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Anon_ArgsCache[C, R, S, P, D] extends js.Object {
+trait Anon_ArgsCache[S, P, R, C, D] extends js.Object {
   var cache: ICacheObject = js.native
   @JSName("keySelector")
   var keySelector_Original: ParametricKeySelector[S, P] = js.native

@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ResourceValue extends js.Object {
   /**
     * The value is a resource ID.
     */
-  var Value: ResourceValueType
+  var Value: ResourceValueType = js.native
 }
 
 object ResourceValue {

@@ -10,9 +10,9 @@ node's fs with more helpers
 | ------------------ | :-------------: |
 | Full name          | fs-plus |
 | Keywords           | fs, filesystem |
-| # releases         | 6 |
-| # dependents       | 142 |
-| # downloads        | 4044968 |
+| # releases         | 5 |
+| # dependents       | 151 |
+| # downloads        | 4136961 |
 | # stars            | 13 |
 
 ## Links

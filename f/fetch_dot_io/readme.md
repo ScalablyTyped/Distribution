@@ -10,9 +10,9 @@ extends the whatwg fetch api, makes it easier to use
 | ------------------ | :-------------: |
 | Full name          | fetch.io |
 | Keywords           | request, axios, fetch, ajax, http, api |
-| # releases         | 6 |
-| # dependents       | 0 |
-| # downloads        | 1483 |
+| # releases         | 2 |
+| # dependents       | 2 |
+| # downloads        | 2104 |
 | # stars            | 2 |
 
 ## Links

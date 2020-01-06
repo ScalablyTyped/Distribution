@@ -10,9 +10,9 @@ Typings are for version 1.0.20
 | ------------------ | :-------------: |
 | Full name          | xml-core |
 | Keywords           | xml |
-| # releases         | 6 |
-| # dependents       | 4 |
-| # downloads        | 12598 |
+| # releases         | 7 |
+| # dependents       | 7 |
+| # downloads        | 20331 |
 | # stars            | 0 |
 
 ## Links

@@ -5,7 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientsCloudformationMod {
-  import typings.awsDashSdk.awsDashSdkStrings.Resource
+  import org.scalablytyped.runtime.StringDictionary
+  import typings.awsDashSdk.awsDashSdkStrings.RESOURCE
+  import typings.awsDashSdk.awsDashSdkStrings.Resource_
   import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
   import typings.std.Date
 
@@ -36,9 +38,10 @@ package object clientsCloudformationMod {
   type Capability = _Capability | String
   type CausingEntity = String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Add
-    - typings.awsDashSdk.awsDashSdkStrings.Modify
-    - typings.awsDashSdk.awsDashSdkStrings.Remove
+    - typings.awsDashSdk.awsDashSdkStrings.Add_
+    - typings.awsDashSdk.awsDashSdkStrings.Modify_
+    - typings.awsDashSdk.awsDashSdkStrings.Remove_
+    - typings.awsDashSdk.awsDashSdkStrings.Import_
     - java.lang.String
   */
   type ChangeAction = _ChangeAction | String
@@ -59,6 +62,7 @@ package object clientsCloudformationMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.CREATE
     - typings.awsDashSdk.awsDashSdkStrings.UPDATE
+    - typings.awsDashSdk.awsDashSdkStrings.IMPORT
     - java.lang.String
   */
   type ChangeSetType = _ChangeSetType | String
@@ -67,17 +71,23 @@ package object clientsCloudformationMod {
     - typings.awsDashSdk.awsDashSdkStrings.ParameterReference
     - typings.awsDashSdk.awsDashSdkStrings.ResourceAttribute
     - typings.awsDashSdk.awsDashSdkStrings.DirectModification
-    - typings.awsDashSdk.awsDashSdkStrings.Automatic
+    - typings.awsDashSdk.awsDashSdkStrings.Automatic_
     - java.lang.String
   */
   type ChangeSource = _ChangeSource | String
-  type ChangeType = Resource | String
+  type ChangeType = Resource_ | String
   type Changes = js.Array[Change]
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
   type ClientRequestToken = String
   type ClientToken = String
   type CreationTime = Date
   type DeletionTime = Date
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.LIVE
+    - typings.awsDashSdk.awsDashSdkStrings.DEPRECATED
+    - java.lang.String
+  */
+  type DeprecatedStatus = _DeprecatedStatus | String
   type Description = String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.ADD
@@ -87,10 +97,11 @@ package object clientsCloudformationMod {
   */
   type DifferenceType = _DifferenceType | String
   type DisableRollback = Boolean
+  type DriftedStackInstancesCount = Double
   type EnableTerminationProtection = Boolean
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Static
-    - typings.awsDashSdk.awsDashSdkStrings.Dynamic
+    - typings.awsDashSdk.awsDashSdkStrings.Static_
+    - typings.awsDashSdk.awsDashSdkStrings.Dynamic_
     - java.lang.String
   */
   type EvaluationType = _EvaluationType | String
@@ -109,13 +120,35 @@ package object clientsCloudformationMod {
   type ExportName = String
   type ExportValue = String
   type Exports = js.Array[Export]
+  type FailedStackInstancesCount = Double
   type FailureToleranceCount = Double
   type FailureTolerancePercentage = Double
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.NotUpdatable
+    - typings.awsDashSdk.awsDashSdkStrings.InvalidRequest
+    - typings.awsDashSdk.awsDashSdkStrings.AccessDenied
+    - typings.awsDashSdk.awsDashSdkStrings.InvalidCredentials
+    - typings.awsDashSdk.awsDashSdkStrings.AlreadyExists
+    - typings.awsDashSdk.awsDashSdkStrings.NotFound
+    - typings.awsDashSdk.awsDashSdkStrings.ResourceConflict
+    - typings.awsDashSdk.awsDashSdkStrings.Throttling_
+    - typings.awsDashSdk.awsDashSdkStrings.ServiceLimitExceeded
+    - typings.awsDashSdk.awsDashSdkStrings.NotStabilized
+    - typings.awsDashSdk.awsDashSdkStrings.GeneralServiceException
+    - typings.awsDashSdk.awsDashSdkStrings.ServiceInternalError
+    - typings.awsDashSdk.awsDashSdkStrings.NetworkFailure
+    - typings.awsDashSdk.awsDashSdkStrings.InternalFailure
+    - java.lang.String
+  */
+  type HandlerErrorCode = _HandlerErrorCode | String
   type Imports = js.Array[StackName]
+  type InProgressStackInstancesCount = Double
+  type InSyncStackInstancesCount = Double
   type Key = String
   type LastUpdatedTime = Date
   type LimitName = String
   type LimitValue = Double
+  type LogGroupName = String
   type LogicalResourceId = String
   type LogicalResourceIds = js.Array[LogicalResourceId]
   type MaxConcurrentCount = Double
@@ -134,6 +167,15 @@ package object clientsCloudformationMod {
     - java.lang.String
   */
   type OnFailure = _OnFailure | String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.PENDING
+    - typings.awsDashSdk.awsDashSdkStrings.IN_PROGRESS
+    - typings.awsDashSdk.awsDashSdkStrings.SUCCESS
+    - typings.awsDashSdk.awsDashSdkStrings.FAILED
+    - java.lang.String
+  */
+  type OperationStatus = _OperationStatus | String
+  type OptionalSecureUrl = String
   type OutputKey = String
   type OutputValue = String
   type Outputs = js.Array[Output]
@@ -144,39 +186,64 @@ package object clientsCloudformationMod {
   type Parameters = js.Array[Parameter]
   type PhysicalResourceId = String
   type PhysicalResourceIdContext = js.Array[PhysicalResourceIdContextKeyValuePair]
+  type PrivateTypeArn = String
   type Properties = String
   type PropertyDifferences = js.Array[PropertyDifference]
   type PropertyName = String
   type PropertyPath = String
   type PropertyValue = String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.NON_PROVISIONABLE
+    - typings.awsDashSdk.awsDashSdkStrings.IMMUTABLE
+    - typings.awsDashSdk.awsDashSdkStrings.FULLY_MUTABLE
+    - java.lang.String
+  */
+  type ProvisioningType = _ProvisioningType | String
   type Reason = String
   type Region = String
   type RegionList = js.Array[Region]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.True
-    - typings.awsDashSdk.awsDashSdkStrings.False
-    - typings.awsDashSdk.awsDashSdkStrings.Conditional
+    - typings.awsDashSdk.awsDashSdkStrings.COMPLETE
+    - typings.awsDashSdk.awsDashSdkStrings.IN_PROGRESS
+    - typings.awsDashSdk.awsDashSdkStrings.FAILED
+    - java.lang.String
+  */
+  type RegistrationStatus = _RegistrationStatus | String
+  type RegistrationToken = String
+  type RegistrationTokenList = js.Array[RegistrationToken]
+  type RegistryType = RESOURCE | String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.True_
+    - typings.awsDashSdk.awsDashSdkStrings.False_
+    - typings.awsDashSdk.awsDashSdkStrings.Conditional_
     - java.lang.String
   */
   type Replacement = _Replacement | String
+  type RequestToken = String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Never
-    - typings.awsDashSdk.awsDashSdkStrings.Conditionally
-    - typings.awsDashSdk.awsDashSdkStrings.Always
+    - typings.awsDashSdk.awsDashSdkStrings.Never_
+    - typings.awsDashSdk.awsDashSdkStrings.Conditionally_
+    - typings.awsDashSdk.awsDashSdkStrings.Always_
     - java.lang.String
   */
   type RequiresRecreation = _RequiresRecreation | String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Properties
-    - typings.awsDashSdk.awsDashSdkStrings.Metadata
-    - typings.awsDashSdk.awsDashSdkStrings.CreationPolicy
-    - typings.awsDashSdk.awsDashSdkStrings.UpdatePolicy
-    - typings.awsDashSdk.awsDashSdkStrings.DeletionPolicy
-    - typings.awsDashSdk.awsDashSdkStrings.Tags
+    - typings.awsDashSdk.awsDashSdkStrings.Properties_
+    - typings.awsDashSdk.awsDashSdkStrings.Metadata_
+    - typings.awsDashSdk.awsDashSdkStrings.CreationPolicy_
+    - typings.awsDashSdk.awsDashSdkStrings.UpdatePolicy_
+    - typings.awsDashSdk.awsDashSdkStrings.DeletionPolicy_
+    - typings.awsDashSdk.awsDashSdkStrings.Tags_
     - java.lang.String
   */
   type ResourceAttribute = _ResourceAttribute | String
   type ResourceChangeDetails = js.Array[ResourceChangeDetail]
+  type ResourceIdentifierProperties = StringDictionary[ResourceIdentifierPropertyValue]
+  type ResourceIdentifierPropertyKey = String
+  type ResourceIdentifierPropertyValue = String
+  type ResourceIdentifierSummaries = js.Array[ResourceIdentifierSummary]
+  type ResourceIdentifiers = js.Array[ResourceIdentifierPropertyKey]
+  type ResourceModel = String
   type ResourceProperties = String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.SUCCESS
@@ -196,6 +263,12 @@ package object clientsCloudformationMod {
     - typings.awsDashSdk.awsDashSdkStrings.UPDATE_IN_PROGRESS
     - typings.awsDashSdk.awsDashSdkStrings.UPDATE_FAILED
     - typings.awsDashSdk.awsDashSdkStrings.UPDATE_COMPLETE
+    - typings.awsDashSdk.awsDashSdkStrings.IMPORT_FAILED
+    - typings.awsDashSdk.awsDashSdkStrings.IMPORT_COMPLETE
+    - typings.awsDashSdk.awsDashSdkStrings.IMPORT_IN_PROGRESS
+    - typings.awsDashSdk.awsDashSdkStrings.IMPORT_ROLLBACK_IN_PROGRESS
+    - typings.awsDashSdk.awsDashSdkStrings.IMPORT_ROLLBACK_FAILED
+    - typings.awsDashSdk.awsDashSdkStrings.IMPORT_ROLLBACK_COMPLETE
     - java.lang.String
   */
   type ResourceStatus = _ResourceStatus | String
@@ -203,12 +276,15 @@ package object clientsCloudformationMod {
   type ResourceToSkip = String
   type ResourceType = String
   type ResourceTypes = js.Array[ResourceType]
+  type ResourcesToImport = js.Array[ResourceToImport]
   type ResourcesToSkip = js.Array[ResourceToSkip]
   type RetainResources = js.Array[LogicalResourceId]
   type RetainStacks = Boolean
   type RetainStacksNullable = Boolean
   type RoleARN = String
+  type RoleArn = String
   type RollbackTriggers = js.Array[RollbackTrigger]
+  type S3Url = String
   type Scope = js.Array[ResourceAttribute]
   type StackDriftDetectionId = String
   /* Rewritten from type alias, can be one of: 
@@ -256,6 +332,22 @@ package object clientsCloudformationMod {
   type StackResourceSummaries = js.Array[StackResourceSummary]
   type StackResources = js.Array[StackResource]
   type StackSetARN = String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.COMPLETED
+    - typings.awsDashSdk.awsDashSdkStrings.FAILED
+    - typings.awsDashSdk.awsDashSdkStrings.PARTIAL_SUCCESS
+    - typings.awsDashSdk.awsDashSdkStrings.IN_PROGRESS
+    - typings.awsDashSdk.awsDashSdkStrings.STOPPED
+    - java.lang.String
+  */
+  type StackSetDriftDetectionStatus = _StackSetDriftDetectionStatus | String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.DRIFTED
+    - typings.awsDashSdk.awsDashSdkStrings.IN_SYNC
+    - typings.awsDashSdk.awsDashSdkStrings.NOT_CHECKED
+    - java.lang.String
+  */
+  type StackSetDriftStatus = _StackSetDriftStatus | String
   type StackSetId = String
   type StackSetName = String
   type StackSetNameOrId = String
@@ -263,6 +355,7 @@ package object clientsCloudformationMod {
     - typings.awsDashSdk.awsDashSdkStrings.CREATE
     - typings.awsDashSdk.awsDashSdkStrings.UPDATE
     - typings.awsDashSdk.awsDashSdkStrings.DELETE
+    - typings.awsDashSdk.awsDashSdkStrings.DETECT_DRIFT
     - java.lang.String
   */
   type StackSetOperationAction = _StackSetOperationAction | String
@@ -311,6 +404,11 @@ package object clientsCloudformationMod {
     - typings.awsDashSdk.awsDashSdkStrings.UPDATE_ROLLBACK_COMPLETE_CLEANUP_IN_PROGRESS
     - typings.awsDashSdk.awsDashSdkStrings.UPDATE_ROLLBACK_COMPLETE
     - typings.awsDashSdk.awsDashSdkStrings.REVIEW_IN_PROGRESS
+    - typings.awsDashSdk.awsDashSdkStrings.IMPORT_IN_PROGRESS
+    - typings.awsDashSdk.awsDashSdkStrings.IMPORT_COMPLETE
+    - typings.awsDashSdk.awsDashSdkStrings.IMPORT_ROLLBACK_IN_PROGRESS
+    - typings.awsDashSdk.awsDashSdkStrings.IMPORT_ROLLBACK_FAILED
+    - typings.awsDashSdk.awsDashSdkStrings.IMPORT_ROLLBACK_COMPLETE
     - java.lang.String
   */
   type StackStatus = _StackStatus | String
@@ -319,6 +417,7 @@ package object clientsCloudformationMod {
   type StackSummaries = js.Array[StackSummary]
   type Stacks = js.Array[Stack]
   type StageList = js.Array[TemplateStage]
+  type StatusMessage = String
   type TagKey = String
   type TagValue = String
   type Tags = js.Array[Tag]
@@ -326,7 +425,7 @@ package object clientsCloudformationMod {
   type TemplateDescription = String
   type TemplateParameters = js.Array[TemplateParameter]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Original
+    - typings.awsDashSdk.awsDashSdkStrings.Original_
     - typings.awsDashSdk.awsDashSdkStrings.Processed
     - java.lang.String
   */
@@ -334,17 +433,30 @@ package object clientsCloudformationMod {
   type TemplateURL = String
   type TimeoutMinutes = Double
   type Timestamp = Date
+  type TotalStackInstancesCount = Double
   type TransformName = String
   type TransformsList = js.Array[TransformName]
   type Type = String
+  type TypeArn = String
+  type TypeName = String
+  type TypeSchema = String
+  type TypeSummaries = js.Array[TypeSummary]
+  type TypeVersionId = String
+  type TypeVersionSummaries = js.Array[TypeVersionSummary]
   type Url = String
   type UsePreviousTemplate = Boolean
   type UsePreviousValue = Boolean
   type Value = String
   type Version = String
   /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.PUBLIC
+    - typings.awsDashSdk.awsDashSdkStrings.PRIVATE
+    - java.lang.String
+  */
+  type Visibility = _Visibility | String
+  /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2010-05-15`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

@@ -12,7 +12,7 @@ Pack/Unpack multibyte binary values from/to buffers
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 15 |
-| # downloads        | 19660 |
+| # downloads        | 20402 |
 | # stars            | 3 |
 
 ## Links

@@ -6,39 +6,40 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VolumeArgs extends js.Object {
   /**
     * The AZ where the EBS volume will exist.
     */
-  val availabilityZone: Input[String]
+  val availabilityZone: Input[String] = js.native
   /**
     * If true, the disk will be encrypted.
     */
-  val encrypted: js.UndefOr[Input[Boolean]] = js.undefined
+  val encrypted: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The amount of IOPS to provision for the disk.
     */
-  val iops: js.UndefOr[Input[Double]] = js.undefined
+  val iops: js.UndefOr[Input[Double]] = js.native
   /**
     * The ARN for the KMS encryption key. When specifying `kmsKeyId`, `encrypted` needs to be set to true.
     */
-  val kmsKeyId: js.UndefOr[Input[String]] = js.undefined
+  val kmsKeyId: js.UndefOr[Input[String]] = js.native
   /**
     * The size of the drive in GiBs.
     */
-  val size: js.UndefOr[Input[Double]] = js.undefined
+  val size: js.UndefOr[Input[Double]] = js.native
   /**
     * A snapshot to base the EBS volume off of.
     */
-  val snapshotId: js.UndefOr[Input[String]] = js.undefined
+  val snapshotId: js.UndefOr[Input[String]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * The type of EBS volume. Can be "standard", "gp2", "io1", "sc1" or "st1" (Default: "standard").
     */
-  val `type`: js.UndefOr[Input[String]] = js.undefined
+  val `type`: js.UndefOr[Input[String]] = js.native
 }
 
 object VolumeArgs {

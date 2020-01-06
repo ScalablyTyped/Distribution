@@ -10,9 +10,9 @@ A factory library for Node.js and JavaScript inspired by factory_girl
 | ------------------ | :-------------: |
 | Full name          | factory-girl |
 | Keywords           | factory, test, bdd, tdd, fixture |
-| # releases         | 8 |
-| # dependents       | 4 |
-| # downloads        | 878684 |
+| # releases         | 4 |
+| # dependents       | 5 |
+| # downloads        | 1247639 |
 | # stars            | 11 |
 
 ## Links

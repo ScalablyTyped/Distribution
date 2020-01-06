@@ -11,8 +11,8 @@ Handles josa selection for dynamically generated strings
 | Full name          | josa |
 | Keywords           | 한글, 한국어, 문법, 조사, Korean, Hangul, Hangeul, syntax, grammar, josa |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 5231 |
+| # dependents       | 2 |
+| # downloads        | 6563 |
 | # stars            | 1 |
 
 ## Links

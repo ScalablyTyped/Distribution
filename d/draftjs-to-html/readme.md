@@ -10,9 +10,9 @@ A library for draftjs to html conversion.
 | ------------------ | :-------------: |
 | Full name          | draftjs-to-html |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 78 |
-| # downloads        | 1442782 |
+| # releases         | 5 |
+| # dependents       | 93 |
+| # downloads        | 1770020 |
 | # stars            | 3 |
 
 ## Links

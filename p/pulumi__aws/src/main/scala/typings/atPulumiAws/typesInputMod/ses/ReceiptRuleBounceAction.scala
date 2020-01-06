@@ -5,31 +5,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ReceiptRuleBounceAction extends js.Object {
   /**
     * The message to send
     */
-  var message: Input[String]
+  var message: Input[String] = js.native
   /**
     * The position of the action in the receipt rule
     */
-  var position: Input[Double]
+  var position: Input[Double] = js.native
   /**
     * The email address of the sender
     */
-  var sender: Input[String]
+  var sender: Input[String] = js.native
   /**
     * The RFC 5321 SMTP reply code
     */
-  var smtpReplyCode: Input[String]
+  var smtpReplyCode: Input[String] = js.native
   /**
     * The RFC 3463 SMTP enhanced status code
     */
-  var statusCode: js.UndefOr[Input[String]] = js.undefined
+  var statusCode: js.UndefOr[Input[String]] = js.native
   /**
     * The ARN of an SNS topic to notify
     */
-  var topicArn: js.UndefOr[Input[String]] = js.undefined
+  var topicArn: js.UndefOr[Input[String]] = js.native
 }
 
 object ReceiptRuleBounceAction {

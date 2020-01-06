@@ -10,9 +10,9 @@ Typings are for version 3.1
 | ------------------ | :-------------: |
 | Full name          | socket.io-emitter |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 18 |
-| # downloads        | 494234 |
+| # releases         | 0 |
+| # dependents       | 19 |
+| # downloads        | 570028 |
 | # stars            | 7 |
 
 ## Links

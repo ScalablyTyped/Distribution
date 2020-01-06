@@ -10,9 +10,9 @@ A higher order component that accepts lifecycle hook functions as props
 | ------------------ | :-------------: |
 | Full name          | react-lifecycle-component |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 3 |
 | # dependents       | 5 |
-| # downloads        | 108147 |
+| # downloads        | 111100 |
 | # stars            | 1 |
 
 ## Links

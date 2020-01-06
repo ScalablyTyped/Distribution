@@ -5,63 +5,64 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UserPoolClientArgs extends js.Object {
   /**
     * List of allowed OAuth flows (code, implicit, client_credentials).
     */
-  val allowedOauthFlows: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val allowedOauthFlows: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * Whether the client is allowed to follow the OAuth protocol when interacting with Cognito user pools.
     */
-  val allowedOauthFlowsUserPoolClient: js.UndefOr[Input[Boolean]] = js.undefined
+  val allowedOauthFlowsUserPoolClient: js.UndefOr[Input[Boolean]] = js.native
   /**
     * List of allowed OAuth scopes (phone, email, openid, profile, and aws.cognito.signin.user.admin).
     */
-  val allowedOauthScopes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val allowedOauthScopes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * List of allowed callback URLs for the identity providers.
     */
-  val callbackUrls: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val callbackUrls: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The default redirect URI. Must be in the list of callback URLs.
     */
-  val defaultRedirectUri: js.UndefOr[Input[String]] = js.undefined
+  val defaultRedirectUri: js.UndefOr[Input[String]] = js.native
   /**
     * List of authentication flows (ADMIN_NO_SRP_AUTH, CUSTOM_AUTH_FLOW_ONLY, USER_PASSWORD_AUTH).
     */
-  val explicitAuthFlows: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val explicitAuthFlows: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * Should an application secret be generated.
     */
-  val generateSecret: js.UndefOr[Input[Boolean]] = js.undefined
+  val generateSecret: js.UndefOr[Input[Boolean]] = js.native
   /**
     * List of allowed logout URLs for the identity providers.
     */
-  val logoutUrls: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val logoutUrls: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The name of the application client.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * List of user pool attributes the application client can read from.
     */
-  val readAttributes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val readAttributes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The time limit in days refresh tokens are valid for.
     */
-  val refreshTokenValidity: js.UndefOr[Input[Double]] = js.undefined
+  val refreshTokenValidity: js.UndefOr[Input[Double]] = js.native
   /**
     * List of provider names for the identity providers that are supported on this client.
     */
-  val supportedIdentityProviders: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val supportedIdentityProviders: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The user pool the client belongs to.
     */
-  val userPoolId: Input[String]
+  val userPoolId: Input[String] = js.native
   /**
     * List of user pool attributes the application client can write to.
     */
-  val writeAttributes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val writeAttributes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
 }
 
 object UserPoolClientArgs {

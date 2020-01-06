@@ -39,6 +39,7 @@ import typings.mongoose.mongooseStrings.timestamps
 import typings.mongoose.mongooseStrings.toJSON
 import typings.mongoose.mongooseStrings.toObject
 import typings.mongoose.mongooseStrings.typeKey
+import typings.mongoose.mongooseStrings.typePojoToMixed
 import typings.mongoose.mongooseStrings.update
 import typings.mongoose.mongooseStrings.updateMany
 import typings.mongoose.mongooseStrings.updateOne
@@ -423,6 +424,10 @@ trait Schema[T] extends EventEmitter {
   def set_typeKey(key: typeKey): String = js.native
   @JSName("set")
   def set_typeKey(key: typeKey, value: String): this.type = js.native
+  @JSName("set")
+  def set_typePojoToMixed(key: typePojoToMixed): Boolean = js.native
+  @JSName("set")
+  def set_typePojoToMixed(key: typePojoToMixed, value: Boolean): this.type = js.native
   @JSName("set")
   def set_useNestedStrict(key: useNestedStrict): Boolean = js.native
   @JSName("set")

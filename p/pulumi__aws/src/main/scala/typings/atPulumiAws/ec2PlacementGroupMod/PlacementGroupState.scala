@@ -6,15 +6,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PlacementGroupState extends js.Object {
   /**
     * The name of the placement group.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * The placement strategy.
     */
-  val strategy: js.UndefOr[Input[PlacementStrategy]] = js.undefined
+  val strategy: js.UndefOr[Input[PlacementStrategy]] = js.native
 }
 
 object PlacementGroupState {

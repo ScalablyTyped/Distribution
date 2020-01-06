@@ -1,6 +1,5 @@
 package typings.tar.tarMod
 
-import typings.node.streamMod.Writable
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,17 +15,17 @@ object Extract extends js.Object {
 @JSImport("tar", "extract")
 @js.native
 object extract extends js.Object {
+  def apply(options: ExtractOptions with FileOptions): js.Promise[Unit] = js.native
   def apply(
     options: ExtractOptions with FileOptions,
     fileList: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
   ): Unit = js.native
-  def apply(options: ExtractOptions): Writable = js.native
-  def apply(options: ExtractOptions, fileList: js.Array[String]): Writable = js.native
+  def apply(options: ExtractOptions with FileOptions, fileList: js.Array[String]): js.Promise[Unit] = js.native
   def apply(
-    options: ExtractOptions,
+    options: ExtractOptions with FileOptions,
     fileList: js.Array[String],
     callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-  ): Writable = js.native
+  ): Unit = js.native
 }
 

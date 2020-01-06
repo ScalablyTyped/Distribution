@@ -7,15 +7,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PolicyAttachmentState extends js.Object {
   /**
     * The name of the policy to attach.
     */
-  val policy: js.UndefOr[Input[String | Policy]] = js.undefined
+  val policy: js.UndefOr[Input[String | Policy]] = js.native
   /**
     * The identity to which the policy is attached.
     */
-  val target: js.UndefOr[Input[ARN]] = js.undefined
+  val target: js.UndefOr[Input[ARN]] = js.native
 }
 
 object PolicyAttachmentState {

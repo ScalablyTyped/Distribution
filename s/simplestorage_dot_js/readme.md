@@ -12,7 +12,7 @@ Cross-browser key-value store database to store data locally in the browser
 | Keywords           | JSON, localStorage, TTL |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 6262 |
+| # downloads        | 51804 |
 | # stars            | 2 |
 
 ## Links

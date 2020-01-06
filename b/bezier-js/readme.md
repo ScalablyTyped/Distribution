@@ -9,9 +9,9 @@ A javascript library for working with Bezier curves
 | ------------------ | :-------------: |
 | Full name          | bezier-js |
 | Keywords           | bezier, curves |
-| # releases         | 18 |
-| # dependents       | 16 |
-| # downloads        | 153517 |
+| # releases         | 21 |
+| # dependents       | 25 |
+| # downloads        | 347994 |
 | # stars            | 2 |
 
 ## Links

@@ -4,15 +4,15 @@
 Typings are for version 0.2
 
 ## Library description:
-Build consistent, themeable React UIs based on design system constraints and design tokens
+Build consistent, themeable React UIs based on design system constraints
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | theme-ui |
-| Keywords           | - |
-| # releases         | 40 |
-| # dependents       | 18 |
-| # downloads        | 7852 |
+| Keywords           | theme-ui, emotion, mdx, css, styles, css-in-js |
+| # releases         | 74 |
+| # dependents       | 309 |
+| # downloads        | 367695 |
 | # stars            | 0 |
 
 ## Links

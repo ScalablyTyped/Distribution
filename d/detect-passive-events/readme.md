@@ -10,9 +10,9 @@ Detect if the browser supports passive events
 | ------------------ | :-------------: |
 | Full name          | detect-passive-events |
 | Keywords           | detect, passive, passive events |
-| # releases         | 3 |
-| # dependents       | 18 |
-| # downloads        | 3525808 |
+| # releases         | 0 |
+| # dependents       | 23 |
+| # downloads        | 5736126 |
 | # stars            | 1 |
 
 ## Links

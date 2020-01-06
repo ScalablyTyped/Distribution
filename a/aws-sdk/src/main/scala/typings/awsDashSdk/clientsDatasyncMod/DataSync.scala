@@ -78,12 +78,12 @@ trait DataSync extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateLocationS3Response, Unit]
   ): Request[CreateLocationS3Response, AWSError] = js.native
   /**
-    * Defines a file system on an Server Message Block (SMB) server that can be read from or written to
+    * Defines a file system on an Server Message Block (SMB) server that can be read from or written to.
     */
   def createLocationSmb(): Request[CreateLocationSmbResponse, AWSError] = js.native
   def createLocationSmb(callback: js.Function2[/* err */ AWSError, /* data */ CreateLocationSmbResponse, Unit]): Request[CreateLocationSmbResponse, AWSError] = js.native
   /**
-    * Defines a file system on an Server Message Block (SMB) server that can be read from or written to
+    * Defines a file system on an Server Message Block (SMB) server that can be read from or written to.
     */
   def createLocationSmb(params: CreateLocationSmbRequest): Request[CreateLocationSmbResponse, AWSError] = js.native
   def createLocationSmb(

@@ -10,9 +10,9 @@ Client Runtime for Node.js Azure client libraries generated using AutoRest
 | ------------------ | :-------------: |
 | Full name          | ms-rest-azure |
 | Keywords           | node, microsoft, autorest, azure, clientruntime |
-| # releases         | 17 |
+| # releases         | 13 |
 | # dependents       | 167 |
-| # downloads        | 3261893 |
+| # downloads        | 3530883 |
 | # stars            | 2 |
 
 ## Links

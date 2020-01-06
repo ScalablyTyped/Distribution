@@ -10,9 +10,9 @@ Flexible ascii progress bar
 | ------------------ | :-------------: |
 | Full name          | progress |
 | Keywords           | cli, progress |
-| # releases         | 3 |
-| # dependents       | 1763 |
-| # downloads        | 263680651 |
+| # releases         | 4 |
+| # dependents       | 1997 |
+| # downloads        | 389804751 |
 | # stars            | 125 |
 
 ## Links

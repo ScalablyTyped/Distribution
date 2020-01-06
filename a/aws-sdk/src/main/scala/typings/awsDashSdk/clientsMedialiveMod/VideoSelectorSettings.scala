@@ -4,17 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VideoSelectorSettings extends js.Object {
-  var VideoSelectorPid: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.VideoSelectorPid] = js.undefined
-  var VideoSelectorProgramId: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.VideoSelectorProgramId] = js.undefined
+  var VideoSelectorPid: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.VideoSelectorPid] = js.native
+  var VideoSelectorProgramId: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.VideoSelectorProgramId] = js.native
 }
 
 object VideoSelectorSettings {
   @scala.inline
   def apply(VideoSelectorPid: VideoSelectorPid = null, VideoSelectorProgramId: VideoSelectorProgramId = null): VideoSelectorSettings = {
     val __obj = js.Dynamic.literal()
-    if (VideoSelectorPid != null) __obj.updateDynamic("VideoSelectorPid")(VideoSelectorPid)
-    if (VideoSelectorProgramId != null) __obj.updateDynamic("VideoSelectorProgramId")(VideoSelectorProgramId)
+    if (VideoSelectorPid != null) __obj.updateDynamic("VideoSelectorPid")(VideoSelectorPid.asInstanceOf[js.Any])
+    if (VideoSelectorProgramId != null) __obj.updateDynamic("VideoSelectorProgramId")(VideoSelectorProgramId.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoSelectorSettings]
   }
 }

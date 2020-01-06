@@ -11,8 +11,8 @@ A filesystem in your browser!
 | Full name          | browserfs |
 | Keywords           | filesystem, node, storage |
 | # releases         | 2 |
-| # dependents       | 28 |
-| # downloads        | 131994 |
+| # dependents       | 31 |
+| # downloads        | 190698 |
 | # stars            | 2 |
 
 ## Links

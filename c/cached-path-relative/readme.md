@@ -11,8 +11,8 @@ Memoize the results of the path.relative function
 | Full name          | cached-path-relative |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 70 |
-| # downloads        | 21815943 |
+| # dependents       | 75 |
+| # downloads        | 25750778 |
 | # stars            | 0 |
 
 ## Links

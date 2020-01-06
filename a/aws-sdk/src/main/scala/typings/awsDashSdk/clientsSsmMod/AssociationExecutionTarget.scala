@@ -4,43 +4,44 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AssociationExecutionTarget extends js.Object {
   /**
     * The association ID.
     */
-  var AssociationId: js.UndefOr[typings.awsDashSdk.clientsSsmMod.AssociationId] = js.undefined
+  var AssociationId: js.UndefOr[typings.awsDashSdk.clientsSsmMod.AssociationId] = js.native
   /**
     * The association version.
     */
-  var AssociationVersion: js.UndefOr[typings.awsDashSdk.clientsSsmMod.AssociationVersion] = js.undefined
+  var AssociationVersion: js.UndefOr[typings.awsDashSdk.clientsSsmMod.AssociationVersion] = js.native
   /**
     * Detailed information about the execution status.
     */
-  var DetailedStatus: js.UndefOr[StatusName] = js.undefined
+  var DetailedStatus: js.UndefOr[StatusName] = js.native
   /**
     * The execution ID.
     */
-  var ExecutionId: js.UndefOr[AssociationExecutionId] = js.undefined
+  var ExecutionId: js.UndefOr[AssociationExecutionId] = js.native
   /**
     * The date of the last execution.
     */
-  var LastExecutionDate: js.UndefOr[DateTime] = js.undefined
+  var LastExecutionDate: js.UndefOr[DateTime] = js.native
   /**
     * The location where the association details are saved.
     */
-  var OutputSource: js.UndefOr[typings.awsDashSdk.clientsSsmMod.OutputSource] = js.undefined
+  var OutputSource: js.UndefOr[typings.awsDashSdk.clientsSsmMod.OutputSource] = js.native
   /**
     * The resource ID, for example, the instance ID where the association ran.
     */
-  var ResourceId: js.UndefOr[AssociationResourceId] = js.undefined
+  var ResourceId: js.UndefOr[AssociationResourceId] = js.native
   /**
     * The resource type, for example, instance.
     */
-  var ResourceType: js.UndefOr[AssociationResourceType] = js.undefined
+  var ResourceType: js.UndefOr[AssociationResourceType] = js.native
   /**
     * The association execution status.
     */
-  var Status: js.UndefOr[StatusName] = js.undefined
+  var Status: js.UndefOr[StatusName] = js.native
 }
 
 object AssociationExecutionTarget {
@@ -57,15 +58,15 @@ object AssociationExecutionTarget {
     Status: StatusName = null
   ): AssociationExecutionTarget = {
     val __obj = js.Dynamic.literal()
-    if (AssociationId != null) __obj.updateDynamic("AssociationId")(AssociationId)
-    if (AssociationVersion != null) __obj.updateDynamic("AssociationVersion")(AssociationVersion)
-    if (DetailedStatus != null) __obj.updateDynamic("DetailedStatus")(DetailedStatus)
-    if (ExecutionId != null) __obj.updateDynamic("ExecutionId")(ExecutionId)
-    if (LastExecutionDate != null) __obj.updateDynamic("LastExecutionDate")(LastExecutionDate)
-    if (OutputSource != null) __obj.updateDynamic("OutputSource")(OutputSource)
-    if (ResourceId != null) __obj.updateDynamic("ResourceId")(ResourceId)
-    if (ResourceType != null) __obj.updateDynamic("ResourceType")(ResourceType)
-    if (Status != null) __obj.updateDynamic("Status")(Status)
+    if (AssociationId != null) __obj.updateDynamic("AssociationId")(AssociationId.asInstanceOf[js.Any])
+    if (AssociationVersion != null) __obj.updateDynamic("AssociationVersion")(AssociationVersion.asInstanceOf[js.Any])
+    if (DetailedStatus != null) __obj.updateDynamic("DetailedStatus")(DetailedStatus.asInstanceOf[js.Any])
+    if (ExecutionId != null) __obj.updateDynamic("ExecutionId")(ExecutionId.asInstanceOf[js.Any])
+    if (LastExecutionDate != null) __obj.updateDynamic("LastExecutionDate")(LastExecutionDate.asInstanceOf[js.Any])
+    if (OutputSource != null) __obj.updateDynamic("OutputSource")(OutputSource.asInstanceOf[js.Any])
+    if (ResourceId != null) __obj.updateDynamic("ResourceId")(ResourceId.asInstanceOf[js.Any])
+    if (ResourceType != null) __obj.updateDynamic("ResourceType")(ResourceType.asInstanceOf[js.Any])
+    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociationExecutionTarget]
   }
 }

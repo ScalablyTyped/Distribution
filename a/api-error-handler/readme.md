@@ -12,7 +12,7 @@ Express error handlers for JSON APIs
 | Keywords           | express, error, handler, api, json |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 35932 |
+| # downloads        | 49121 |
 | # stars            | 1 |
 
 ## Links

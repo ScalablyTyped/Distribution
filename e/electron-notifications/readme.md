@@ -10,9 +10,9 @@ A node module for sending notifications in electron applications
 | ------------------ | :-------------: |
 | Full name          | electron-notifications |
 | Keywords           | electron, notification, notification center, toaster, growl, notify-send, terminal-notifier, notify |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 12309 |
+| # downloads        | 17367 |
 | # stars            | 8 |
 
 ## Links

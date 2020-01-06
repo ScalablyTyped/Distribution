@@ -4,9 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DeploymentConfigTrafficRoutingConfigTimeBasedLinear extends js.Object {
-  var interval: js.UndefOr[Double] = js.undefined
-  var percentage: js.UndefOr[Double] = js.undefined
+  var interval: js.UndefOr[Double] = js.native
+  var percentage: js.UndefOr[Double] = js.native
 }
 
 object DeploymentConfigTrafficRoutingConfigTimeBasedLinear {

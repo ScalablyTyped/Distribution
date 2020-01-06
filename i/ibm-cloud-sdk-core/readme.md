@@ -10,9 +10,9 @@ Core functionality to support SDKs generated with IBM's OpenAPI 3 SDK Generator.
 | ------------------ | :-------------: |
 | Full name          | ibm-cloud-sdk-core |
 | Keywords           | ibm, sdk, openapi, core |
-| # releases         | 23 |
-| # dependents       | 3 |
-| # downloads        | 335538 |
+| # releases         | 38 |
+| # dependents       | 4 |
+| # downloads        | 508628 |
 | # stars            | 0 |
 
 ## Links

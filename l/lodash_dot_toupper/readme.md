@@ -11,8 +11,8 @@ The lodash method `_.toUpper` exported as a module.
 | Full name          | lodash.toupper |
 | Keywords           | lodash-modularized, toupper |
 | # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 6880 |
+| # dependents       | 5 |
+| # downloads        | 10917 |
 | # stars            | 0 |
 
 ## Links

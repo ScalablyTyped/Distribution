@@ -4,31 +4,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CreateStreamingURLRequest extends js.Object {
   /**
     * The name of the application to launch after the session starts. This is the name that you specified as Name in the Image Assistant.
     */
-  var ApplicationId: js.UndefOr[String] = js.undefined
+  var ApplicationId: js.UndefOr[String] = js.native
   /**
     * The name of the fleet.
     */
-  var FleetName: String
+  var FleetName: String = js.native
   /**
     * The session context. For more information, see Session Context in the Amazon AppStream 2.0 Administration Guide.
     */
-  var SessionContext: js.UndefOr[String] = js.undefined
+  var SessionContext: js.UndefOr[String] = js.native
   /**
     * The name of the stack.
     */
-  var StackName: String
+  var StackName: String = js.native
   /**
     * The identifier of the user.
     */
-  var UserId: StreamingUrlUserId
+  var UserId: StreamingUrlUserId = js.native
   /**
     * The time that the streaming URL will be valid, in seconds. Specify a value between 1 and 604800 seconds. The default is 60 seconds.
     */
-  var Validity: js.UndefOr[Long] = js.undefined
+  var Validity: js.UndefOr[Long] = js.native
 }
 
 object CreateStreamingURLRequest {
@@ -41,9 +42,9 @@ object CreateStreamingURLRequest {
     SessionContext: String = null,
     Validity: Int | Double = null
   ): CreateStreamingURLRequest = {
-    val __obj = js.Dynamic.literal(FleetName = FleetName, StackName = StackName, UserId = UserId)
-    if (ApplicationId != null) __obj.updateDynamic("ApplicationId")(ApplicationId)
-    if (SessionContext != null) __obj.updateDynamic("SessionContext")(SessionContext)
+    val __obj = js.Dynamic.literal(FleetName = FleetName.asInstanceOf[js.Any], StackName = StackName.asInstanceOf[js.Any], UserId = UserId.asInstanceOf[js.Any])
+    if (ApplicationId != null) __obj.updateDynamic("ApplicationId")(ApplicationId.asInstanceOf[js.Any])
+    if (SessionContext != null) __obj.updateDynamic("SessionContext")(SessionContext.asInstanceOf[js.Any])
     if (Validity != null) __obj.updateDynamic("Validity")(Validity.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateStreamingURLRequest]
   }

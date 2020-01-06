@@ -11,8 +11,8 @@ The lodash method `_.flatten` exported as a module.
 | Full name          | lodash.flatten |
 | Keywords           | lodash-modularized, flatten |
 | # releases         | 0 |
-| # dependents       | 372 |
-| # downloads        | 66519292 |
+| # dependents       | 419 |
+| # downloads        | 90760249 |
 | # stars            | 0 |
 
 ## Links

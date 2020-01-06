@@ -10,9 +10,9 @@ An incredibly fast JavaScript library for Delaunay triangulation of 2D points
 | ------------------ | :-------------: |
 | Full name          | delaunator |
 | Keywords           | delaunay triangulation, computational geometry, algorithms |
-| # releases         | 17 |
-| # dependents       | 6 |
-| # downloads        | 63586 |
+| # releases         | 12 |
+| # dependents       | 11 |
+| # downloads        | 1730892 |
 | # stars            | 0 |
 
 ## Links

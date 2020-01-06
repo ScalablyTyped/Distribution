@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: parser.TsParser#tsDeclClass functionCall $anonfun class extends from : Component.extend(TextSupport) * / any */ trait TextField extends js.Object {
+- Dropped / * import warning: parser.TsParser#tsDeclClass functionCall class extends from : Component.extend(TextSupport) * / any */ trait TextField extends js.Object {
   /**
     * The `max` attribute of input element used with `type="number"` or `type="range"`.
     */

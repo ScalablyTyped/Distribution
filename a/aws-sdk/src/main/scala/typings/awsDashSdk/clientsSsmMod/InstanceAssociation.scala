@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InstanceAssociation extends js.Object {
   /**
     * The association ID.
     */
-  var AssociationId: js.UndefOr[typings.awsDashSdk.clientsSsmMod.AssociationId] = js.undefined
+  var AssociationId: js.UndefOr[typings.awsDashSdk.clientsSsmMod.AssociationId] = js.native
   /**
     * Version information for the association on the instance.
     */
-  var AssociationVersion: js.UndefOr[typings.awsDashSdk.clientsSsmMod.AssociationVersion] = js.undefined
+  var AssociationVersion: js.UndefOr[typings.awsDashSdk.clientsSsmMod.AssociationVersion] = js.native
   /**
     * The content of the association document for the instance(s).
     */
-  var Content: js.UndefOr[DocumentContent] = js.undefined
+  var Content: js.UndefOr[DocumentContent] = js.native
   /**
     * The instance ID.
     */
-  var InstanceId: js.UndefOr[typings.awsDashSdk.clientsSsmMod.InstanceId] = js.undefined
+  var InstanceId: js.UndefOr[typings.awsDashSdk.clientsSsmMod.InstanceId] = js.native
 }
 
 object InstanceAssociation {
@@ -32,10 +33,10 @@ object InstanceAssociation {
     InstanceId: InstanceId = null
   ): InstanceAssociation = {
     val __obj = js.Dynamic.literal()
-    if (AssociationId != null) __obj.updateDynamic("AssociationId")(AssociationId)
-    if (AssociationVersion != null) __obj.updateDynamic("AssociationVersion")(AssociationVersion)
-    if (Content != null) __obj.updateDynamic("Content")(Content)
-    if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId)
+    if (AssociationId != null) __obj.updateDynamic("AssociationId")(AssociationId.asInstanceOf[js.Any])
+    if (AssociationVersion != null) __obj.updateDynamic("AssociationVersion")(AssociationVersion.asInstanceOf[js.Any])
+    if (Content != null) __obj.updateDynamic("Content")(Content.asInstanceOf[js.Any])
+    if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceAssociation]
   }
 }

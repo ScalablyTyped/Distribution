@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AwsJobExecutionsRolloutConfig extends js.Object {
   /**
     * The maximum number of OTA update job executions started per minute.
     */
-  var maximumPerMinute: js.UndefOr[MaximumPerMinute] = js.undefined
+  var maximumPerMinute: js.UndefOr[MaximumPerMinute] = js.native
 }
 
 object AwsJobExecutionsRolloutConfig {

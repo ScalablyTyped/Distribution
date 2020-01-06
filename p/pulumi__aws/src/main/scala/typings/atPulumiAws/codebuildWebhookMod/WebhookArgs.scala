@@ -6,19 +6,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WebhookArgs extends js.Object {
   /**
     * A regular expression used to determine which branches get built. Default is all branches are built. It is recommended to use `filterGroup` over `branchFilter`.
     */
-  val branchFilter: js.UndefOr[Input[String]] = js.undefined
+  val branchFilter: js.UndefOr[Input[String]] = js.native
   /**
     * Information about the webhook's trigger. Filter group blocks are documented below.
     */
-  val filterGroups: js.UndefOr[Input[js.Array[Input[WebhookFilterGroup]]]] = js.undefined
+  val filterGroups: js.UndefOr[Input[js.Array[Input[WebhookFilterGroup]]]] = js.native
   /**
     * The name of the build project.
     */
-  val projectName: Input[String]
+  val projectName: Input[String] = js.native
 }
 
 object WebhookArgs {

@@ -12,7 +12,7 @@ RSMQ helper to simply implement a worker around the message queue
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 22 |
-| # downloads        | 166179 |
+| # downloads        | 217976 |
 | # stars            | 1 |
 
 ## Links

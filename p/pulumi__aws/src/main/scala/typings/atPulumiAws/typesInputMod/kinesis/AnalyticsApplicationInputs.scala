@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AnalyticsApplicationInputs extends js.Object {
   /**
     * The ARN of the Kinesis Analytics Application.
     */
-  var id: js.UndefOr[Input[String]] = js.undefined
-  var kinesisFirehose: js.UndefOr[Input[AnalyticsApplicationInputsKinesisFirehose]] = js.undefined
-  var kinesisStream: js.UndefOr[Input[AnalyticsApplicationInputsKinesisStream]] = js.undefined
-  var namePrefix: Input[String]
-  var parallelism: js.UndefOr[Input[AnalyticsApplicationInputsParallelism]] = js.undefined
-  var processingConfiguration: js.UndefOr[Input[AnalyticsApplicationInputsProcessingConfiguration]] = js.undefined
-  var schema: Input[AnalyticsApplicationInputsSchema]
-  var startingPositionConfigurations: js.UndefOr[Input[js.Array[Input[AnalyticsApplicationInputsStartingPositionConfiguration]]]] = js.undefined
-  var streamNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  var id: js.UndefOr[Input[String]] = js.native
+  var kinesisFirehose: js.UndefOr[Input[AnalyticsApplicationInputsKinesisFirehose]] = js.native
+  var kinesisStream: js.UndefOr[Input[AnalyticsApplicationInputsKinesisStream]] = js.native
+  var namePrefix: Input[String] = js.native
+  var parallelism: js.UndefOr[Input[AnalyticsApplicationInputsParallelism]] = js.native
+  var processingConfiguration: js.UndefOr[Input[AnalyticsApplicationInputsProcessingConfiguration]] = js.native
+  var schema: Input[AnalyticsApplicationInputsSchema] = js.native
+  var startingPositionConfigurations: js.UndefOr[Input[js.Array[Input[AnalyticsApplicationInputsStartingPositionConfiguration]]]] = js.native
+  var streamNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
 }
 
 object AnalyticsApplicationInputs {

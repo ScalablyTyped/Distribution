@@ -12,7 +12,7 @@ Cordova plugin for Ouralabs centralized remote logging platform.
 | Keywords           | cordova, ouralabs, logging, logger, logs, ecosystem:cordova, cordova-android, cordova-ios |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 1193 |
+| # downloads        | 1238 |
 | # stars            | 0 |
 
 ## Links

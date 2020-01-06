@@ -10,11 +10,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined @material-ui/core.@material-ui/core.StandardProps<{}, never, never> */
+@js.native
 trait StandardPropsnevernever extends js.Object {
-  var className: js.UndefOr[String] = js.undefined
-  var classes: js.UndefOr[Partial[ClassNameMap[scala.Nothing]]] = js.undefined
-  var innerRef: js.UndefOr[Ref[_] | RefObject[_]] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
+  var className: js.UndefOr[String] = js.native
+  var classes: js.UndefOr[Partial[ClassNameMap[scala.Nothing]]] = js.native
+  var innerRef: js.UndefOr[Ref[_] | RefObject[_]] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
 }
 
 object StandardPropsnevernever {

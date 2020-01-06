@@ -10,9 +10,9 @@ Declarative routing for React
 | ------------------ | :-------------: |
 | Full name          | react-router |
 | Keywords           | react, router, route, routing, history, link |
-| # releases         | 27 |
-| # dependents       | 2788 |
-| # downloads        | 86524305 |
+| # releases         | 28 |
+| # dependents       | 3261 |
+| # downloads        | 123789106 |
 | # stars            | 259 |
 
 ## Links

@@ -10,9 +10,9 @@ Legacy API for creating React components.
 | ------------------ | :-------------: |
 | Full name          | create-react-class |
 | Keywords           | react |
-| # releases         | 8 |
-| # dependents       | 847 |
-| # downloads        | 73703306 |
+| # releases         | 2 |
+| # dependents       | 966 |
+| # downloads        | 83459527 |
 | # stars            | 10 |
 
 ## Links

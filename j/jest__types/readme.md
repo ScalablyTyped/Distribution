@@ -9,9 +9,9 @@ Typings are for version 24.9.0
 | ------------------ | :-------------: |
 | Full name          | @jest/types |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 32 |
-| # downloads        | 14020882 |
+| # releases         | 10 |
+| # dependents       | 51 |
+| # downloads        | 129045963 |
 | # stars            | 0 |
 
 ## Links

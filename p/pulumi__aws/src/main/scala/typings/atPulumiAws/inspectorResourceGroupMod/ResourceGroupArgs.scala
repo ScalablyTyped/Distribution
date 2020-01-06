@@ -6,11 +6,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ResourceGroupArgs extends js.Object {
   /**
     * The tags on your EC2 Instance.
     */
-  val tags: Input[StringDictionary[_]]
+  val tags: Input[StringDictionary[_]] = js.native
 }
 
 object ResourceGroupArgs {

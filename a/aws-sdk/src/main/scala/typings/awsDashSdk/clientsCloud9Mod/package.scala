@@ -16,7 +16,9 @@ package object clientsCloud9Mod {
   type EnvironmentId = java.lang.String
   type EnvironmentIdList = js.Array[EnvironmentId]
   /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.CREATING
     - typings.awsDashSdk.awsDashSdkStrings.CREATED
+    - typings.awsDashSdk.awsDashSdkStrings.CREATE_FAILED
     - typings.awsDashSdk.awsDashSdkStrings.DELETING
     - typings.awsDashSdk.awsDashSdkStrings.DELETE_FAILED
     - java.lang.String
@@ -26,19 +28,19 @@ package object clientsCloud9Mod {
   type EnvironmentMembersList = js.Array[EnvironmentMember]
   type EnvironmentName = java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.error
-    - typings.awsDashSdk.awsDashSdkStrings.creating
-    - typings.awsDashSdk.awsDashSdkStrings.connecting
-    - typings.awsDashSdk.awsDashSdkStrings.ready
-    - typings.awsDashSdk.awsDashSdkStrings.stopping
-    - typings.awsDashSdk.awsDashSdkStrings.stopped
-    - typings.awsDashSdk.awsDashSdkStrings.deleting
+    - typings.awsDashSdk.awsDashSdkStrings.error__
+    - typings.awsDashSdk.awsDashSdkStrings.creating__
+    - typings.awsDashSdk.awsDashSdkStrings.connecting__
+    - typings.awsDashSdk.awsDashSdkStrings.ready__
+    - typings.awsDashSdk.awsDashSdkStrings.stopping__
+    - typings.awsDashSdk.awsDashSdkStrings.stopped__
+    - typings.awsDashSdk.awsDashSdkStrings.deleting__
     - java.lang.String
   */
   type EnvironmentStatus = _EnvironmentStatus | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.ssh
-    - typings.awsDashSdk.awsDashSdkStrings.ec2
+    - typings.awsDashSdk.awsDashSdkStrings.ssh_
+    - typings.awsDashSdk.awsDashSdkStrings.ec2_
     - java.lang.String
   */
   type EnvironmentType = _EnvironmentType | java.lang.String
@@ -51,7 +53,7 @@ package object clientsCloud9Mod {
   */
   type MemberPermissions = _MemberPermissions | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.owner
+    - typings.awsDashSdk.awsDashSdkStrings.owner__
     - typings.awsDashSdk.awsDashSdkStrings.`read-write`
     - typings.awsDashSdk.awsDashSdkStrings.`read-only`
     - java.lang.String
@@ -64,7 +66,7 @@ package object clientsCloud9Mod {
   type UserArn = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2017-09-23`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | java.lang.String

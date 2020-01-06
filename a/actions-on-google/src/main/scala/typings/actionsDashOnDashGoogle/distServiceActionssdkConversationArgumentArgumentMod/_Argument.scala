@@ -13,13 +13,6 @@ trait _Argument extends js.Object
 
 object _Argument {
   @scala.inline
-  def GoogleActionsV2DateTime(date: GoogleTypeDate = null, time: GoogleTypeTimeOfDay = null): _Argument = {
-    val __obj = js.Dynamic.literal()
-    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Argument]
-  }
-  @scala.inline
   def GoogleActionsV2Location(
     city: String = null,
     coordinates: GoogleTypeLatLng = null,
@@ -49,6 +42,13 @@ object _Argument {
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
     if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    __obj.asInstanceOf[_Argument]
+  }
+  @scala.inline
+  def GoogleActionsV2DateTime(date: GoogleTypeDate = null, time: GoogleTypeTimeOfDay = null): _Argument = {
+    val __obj = js.Dynamic.literal()
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
     __obj.asInstanceOf[_Argument]
   }
 }

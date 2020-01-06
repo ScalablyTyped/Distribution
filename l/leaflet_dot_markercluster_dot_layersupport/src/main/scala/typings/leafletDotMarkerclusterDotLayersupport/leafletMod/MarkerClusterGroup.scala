@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @JSImport("leaflet", "MarkerClusterGroup")
 @js.native
 object MarkerClusterGroup extends js.Object {
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MarkerClusterGroup * / any */ @js.native
-  trait LayerSupport extends js.Object {
+  @js.native
+  trait LayerSupport
+    extends typings.leafletDotMarkercluster.leafletMod.MarkerClusterGroup {
     def checkIn(layers: js.Array[Layer]): this.type = js.native
     /**
       * Stamps the passed layers as being part of this group, but without adding

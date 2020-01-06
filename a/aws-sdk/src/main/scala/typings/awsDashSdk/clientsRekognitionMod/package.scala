@@ -10,6 +10,7 @@ package object clientsRekognitionMod {
   import typings.std.Date
   import typings.std.Uint8Array
 
+  type Assets = js.Array[Asset]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.DEFAULT
     - typings.awsDashSdk.awsDashSdkStrings.ALL
@@ -33,6 +34,13 @@ package object clientsRekognitionMod {
   type CompareFacesMatchList = js.Array[CompareFacesMatch]
   type CompareFacesUnmatchList = js.Array[ComparedFace]
   type ComparedFaceList = js.Array[ComparedFace]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.FreeOfPersonallyIdentifiableInformation
+    - typings.awsDashSdk.awsDashSdkStrings.FreeOfAdultContent
+    - java.lang.String
+  */
+  type ContentClassifier = _ContentClassifier | java.lang.String
+  type ContentClassifiers = js.Array[ContentClassifier]
   type ContentModerationDetections = js.Array[ContentModerationDetection]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.NAME
@@ -40,6 +48,7 @@ package object clientsRekognitionMod {
     - java.lang.String
   */
   type ContentModerationSortBy = _ContentModerationSortBy | java.lang.String
+  type CustomLabels = js.Array[CustomLabel]
   type DateTime = Date
   type Degree = Double
   /* Rewritten from type alias, can be one of: 
@@ -56,6 +65,7 @@ package object clientsRekognitionMod {
   */
   type EmotionName = _EmotionName | java.lang.String
   type Emotions = js.Array[Emotion]
+  type ExtendedPaginationToken = java.lang.String
   type ExternalImageId = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.DEFAULT
@@ -78,14 +88,21 @@ package object clientsRekognitionMod {
   */
   type FaceSearchSortBy = _FaceSearchSortBy | java.lang.String
   type Float = Double
+  type FlowDefinitionArn = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.Male
     - typings.awsDashSdk.awsDashSdkStrings.Female
     - java.lang.String
   */
   type GenderType = _GenderType | java.lang.String
+  type HumanLoopActivationConditionsEvaluationResults = java.lang.String
+  type HumanLoopActivationReason = java.lang.String
+  type HumanLoopActivationReasons = js.Array[HumanLoopActivationReason]
+  type HumanLoopArn = java.lang.String
+  type HumanLoopName = java.lang.String
   type ImageBlob = Buffer | Uint8Array | Blob | java.lang.String
   type ImageId = java.lang.String
+  type InferenceUnits = Double
   type Instances = js.Array[Instance]
   type JobId = java.lang.String
   type JobTag = java.lang.String
@@ -160,9 +177,39 @@ package object clientsRekognitionMod {
   */
   type PersonTrackingSortBy = _PersonTrackingSortBy | java.lang.String
   type Polygon = js.Array[Point]
+  type ProjectArn = java.lang.String
+  type ProjectDescriptions = js.Array[ProjectDescription]
+  type ProjectName = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.CREATING
+    - typings.awsDashSdk.awsDashSdkStrings.CREATED
+    - typings.awsDashSdk.awsDashSdkStrings.DELETING
+    - java.lang.String
+  */
+  type ProjectStatus = _ProjectStatus | java.lang.String
+  type ProjectVersionArn = java.lang.String
+  type ProjectVersionDescriptions = js.Array[ProjectVersionDescription]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.TRAINING_IN_PROGRESS
+    - typings.awsDashSdk.awsDashSdkStrings.TRAINING_COMPLETED
+    - typings.awsDashSdk.awsDashSdkStrings.TRAINING_FAILED
+    - typings.awsDashSdk.awsDashSdkStrings.STARTING
+    - typings.awsDashSdk.awsDashSdkStrings.RUNNING
+    - typings.awsDashSdk.awsDashSdkStrings.FAILED
+    - typings.awsDashSdk.awsDashSdkStrings.STOPPING
+    - typings.awsDashSdk.awsDashSdkStrings.STOPPED
+    - typings.awsDashSdk.awsDashSdkStrings.DELETING
+    - java.lang.String
+  */
+  type ProjectVersionStatus = _ProjectVersionStatus | java.lang.String
+  type ProjectVersionsPageSize = Double
+  type ProjectsPageSize = Double
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.NONE
     - typings.awsDashSdk.awsDashSdkStrings.AUTO
+    - typings.awsDashSdk.awsDashSdkStrings.LOW
+    - typings.awsDashSdk.awsDashSdkStrings.MEDIUM
+    - typings.awsDashSdk.awsDashSdkStrings.HIGH
     - java.lang.String
   */
   type QualityFilter = _QualityFilter | java.lang.String
@@ -173,6 +220,7 @@ package object clientsRekognitionMod {
     - typings.awsDashSdk.awsDashSdkStrings.LOW_SHARPNESS
     - typings.awsDashSdk.awsDashSdkStrings.LOW_CONFIDENCE
     - typings.awsDashSdk.awsDashSdkStrings.SMALL_BOUNDING_BOX
+    - typings.awsDashSdk.awsDashSdkStrings.LOW_FACE_QUALITY
     - java.lang.String
   */
   type Reason = _Reason | java.lang.String
@@ -180,6 +228,7 @@ package object clientsRekognitionMod {
   type RekognitionUniqueId = java.lang.String
   type RoleArn = java.lang.String
   type S3Bucket = java.lang.String
+  type S3KeyPrefix = java.lang.String
   type S3ObjectName = java.lang.String
   type S3ObjectVersion = java.lang.String
   type SNSTopicArn = java.lang.String
@@ -210,6 +259,8 @@ package object clientsRekognitionMod {
   type UnindexedFaces = js.Array[UnindexedFace]
   type Url = java.lang.String
   type Urls = js.Array[Url]
+  type VersionName = java.lang.String
+  type VersionNames = js.Array[VersionName]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.IN_PROGRESS
     - typings.awsDashSdk.awsDashSdkStrings.SUCCEEDED
@@ -219,7 +270,7 @@ package object clientsRekognitionMod {
   type VideoJobStatus = _VideoJobStatus | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2016-06-27`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | java.lang.String

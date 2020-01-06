@@ -10,9 +10,9 @@ Generic API for building plug.dj bots
 | ------------------ | :-------------: |
 | Full name          | plugapi |
 | Keywords           | api, bot, plug, plug.dj |
-| # releases         | 4 |
+| # releases         | 3 |
 | # dependents       | 4 |
-| # downloads        | 3817 |
+| # downloads        | 3555 |
 | # stars            | 2 |
 
 ## Links

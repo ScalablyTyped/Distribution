@@ -10,9 +10,9 @@ ansi control sequences for terminal cursor hopping and colors
 | ------------------ | :-------------: |
 | Full name          | charm |
 | Keywords           | terminal, ansi, cursor, color, console, control, escape, sequence |
-| # releases         | 1 |
-| # dependents       | 148 |
-| # downloads        | 17724179 |
+| # releases         | 0 |
+| # dependents       | 149 |
+| # downloads        | 22862275 |
 | # stars            | 15 |
 
 ## Links

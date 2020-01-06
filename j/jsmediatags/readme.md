@@ -10,9 +10,9 @@ Media Tags Reader (ID3, MP4)
 | ------------------ | :-------------: |
 | Full name          | jsmediatags |
 | Keywords           | ID3, tags, mp3, audio, mp4 |
-| # releases         | 5 |
-| # dependents       | 9 |
-| # downloads        | 29894 |
+| # releases         | 4 |
+| # dependents       | 8 |
+| # downloads        | 32816 |
 | # stars            | 8 |
 
 ## Links

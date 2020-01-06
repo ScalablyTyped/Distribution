@@ -12,7 +12,7 @@ Typings are for version 1.0
 | Keywords           | bluetooth, react-native |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 5351 |
+| # downloads        | 7607 |
 | # stars            | 1 |
 
 ## Links

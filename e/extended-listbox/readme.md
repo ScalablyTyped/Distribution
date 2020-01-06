@@ -10,9 +10,9 @@ A simple to use javascript component as powerful alternative to the HTML <select
 | ------------------ | :-------------: |
 | Full name          | extended-listbox |
 | Keywords           | listbox, select, multiselect, form, input, ui |
-| # releases         | 13 |
+| # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 6112 |
+| # downloads        | 4925 |
 | # stars            | 0 |
 
 ## Links

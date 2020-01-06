@@ -10,9 +10,9 @@ Splunk HTTP Event Collector Stream for Bunyan
 | ------------------ | :-------------: |
 | Full name          | splunk-bunyan-logger |
 | Keywords           | splunk, HTTP, event, collector, logging, stream, bunyan |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 34452 |
+| # downloads        | 69308 |
 | # stars            | 0 |
 
 ## Links

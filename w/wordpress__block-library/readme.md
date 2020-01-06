@@ -10,9 +10,9 @@ Block library for the WordPress editor.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/block-library |
 | Keywords           | wordpress, blocks |
-| # releases         | 39 |
-| # dependents       | 4 |
-| # downloads        | 51759 |
+| # releases         | 54 |
+| # dependents       | 7 |
+| # downloads        | 85216 |
 | # stars            | 0 |
 
 ## Links

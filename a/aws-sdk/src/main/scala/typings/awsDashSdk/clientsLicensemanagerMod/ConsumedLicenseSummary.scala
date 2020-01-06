@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ConsumedLicenseSummary extends js.Object {
   /**
-    * Number of licenses consumed by a resource.
+    * Number of licenses consumed by the resource.
     */
-  var ConsumedLicenses: js.UndefOr[BoxLong] = js.undefined
+  var ConsumedLicenses: js.UndefOr[BoxLong] = js.native
   /**
-    * Resource type of the resource consuming a license (instance, host, or AMI).
+    * Resource type of the resource consuming a license.
     */
-  var ResourceType: js.UndefOr[typings.awsDashSdk.clientsLicensemanagerMod.ResourceType] = js.undefined
+  var ResourceType: js.UndefOr[typings.awsDashSdk.clientsLicensemanagerMod.ResourceType] = js.native
 }
 
 object ConsumedLicenseSummary {

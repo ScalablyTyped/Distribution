@@ -78,6 +78,19 @@ trait Comprehend extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ BatchDetectSyntaxResponse, Unit]
   ): Request[BatchDetectSyntaxResponse, AWSError] = js.native
   /**
+    * Creates a new document classification request to analyze a single document in real-time, using a previously created and trained custom model and an endpoint.
+    */
+  def classifyDocument(): Request[ClassifyDocumentResponse, AWSError] = js.native
+  def classifyDocument(callback: js.Function2[/* err */ AWSError, /* data */ ClassifyDocumentResponse, Unit]): Request[ClassifyDocumentResponse, AWSError] = js.native
+  /**
+    * Creates a new document classification request to analyze a single document in real-time, using a previously created and trained custom model and an endpoint.
+    */
+  def classifyDocument(params: ClassifyDocumentRequest): Request[ClassifyDocumentResponse, AWSError] = js.native
+  def classifyDocument(
+    params: ClassifyDocumentRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ClassifyDocumentResponse, Unit]
+  ): Request[ClassifyDocumentResponse, AWSError] = js.native
+  /**
     * Creates a new document classifier that you can use to categorize documents. To create a classifier you provide a set of training documents that labeled with the categories that you want to use. After the classifier is trained you can use it to categorize a set of labeled documents into the categories. For more information, see how-document-classification.
     */
   def createDocumentClassifier(): Request[CreateDocumentClassifierResponse, AWSError] = js.native
@@ -90,6 +103,19 @@ trait Comprehend extends Service {
     params: CreateDocumentClassifierRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateDocumentClassifierResponse, Unit]
   ): Request[CreateDocumentClassifierResponse, AWSError] = js.native
+  /**
+    * Creates a model-specific endpoint for synchronous inference for a previously trained custom model 
+    */
+  def createEndpoint(): Request[CreateEndpointResponse, AWSError] = js.native
+  def createEndpoint(callback: js.Function2[/* err */ AWSError, /* data */ CreateEndpointResponse, Unit]): Request[CreateEndpointResponse, AWSError] = js.native
+  /**
+    * Creates a model-specific endpoint for synchronous inference for a previously trained custom model 
+    */
+  def createEndpoint(params: CreateEndpointRequest): Request[CreateEndpointResponse, AWSError] = js.native
+  def createEndpoint(
+    params: CreateEndpointRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateEndpointResponse, Unit]
+  ): Request[CreateEndpointResponse, AWSError] = js.native
   /**
     * Creates an entity recognizer using submitted files. After your CreateEntityRecognizer request is submitted, you can check job status using the API. 
     */
@@ -116,6 +142,19 @@ trait Comprehend extends Service {
     params: DeleteDocumentClassifierRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteDocumentClassifierResponse, Unit]
   ): Request[DeleteDocumentClassifierResponse, AWSError] = js.native
+  /**
+    * Deletes a model-specific endpoint for a previously-trained custom model. All endpoints must be deleted in order for the model to be deleted.
+    */
+  def deleteEndpoint(): Request[DeleteEndpointResponse, AWSError] = js.native
+  def deleteEndpoint(callback: js.Function2[/* err */ AWSError, /* data */ DeleteEndpointResponse, Unit]): Request[DeleteEndpointResponse, AWSError] = js.native
+  /**
+    * Deletes a model-specific endpoint for a previously-trained custom model. All endpoints must be deleted in order for the model to be deleted.
+    */
+  def deleteEndpoint(params: DeleteEndpointRequest): Request[DeleteEndpointResponse, AWSError] = js.native
+  def deleteEndpoint(
+    params: DeleteEndpointRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteEndpointResponse, Unit]
+  ): Request[DeleteEndpointResponse, AWSError] = js.native
   /**
     * Deletes an entity recognizer. Only those recognizers that are in terminated states (IN_ERROR, TRAINED) will be deleted. If an active inference job is using the model, a ResourceInUseException will be returned. This is an asynchronous action that puts the recognizer into a DELETING state, and it is then removed by a background job. Once removed, the recognizer disappears from your account and is no longer available for use. 
     */
@@ -172,6 +211,19 @@ trait Comprehend extends Service {
     params: DescribeDominantLanguageDetectionJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeDominantLanguageDetectionJobResponse, Unit]
   ): Request[DescribeDominantLanguageDetectionJobResponse, AWSError] = js.native
+  /**
+    * Gets the properties associated with a specific endpoint. Use this operation to get the status of an endpoint.
+    */
+  def describeEndpoint(): Request[DescribeEndpointResponse, AWSError] = js.native
+  def describeEndpoint(callback: js.Function2[/* err */ AWSError, /* data */ DescribeEndpointResponse, Unit]): Request[DescribeEndpointResponse, AWSError] = js.native
+  /**
+    * Gets the properties associated with a specific endpoint. Use this operation to get the status of an endpoint.
+    */
+  def describeEndpoint(params: DescribeEndpointRequest): Request[DescribeEndpointResponse, AWSError] = js.native
+  def describeEndpoint(
+    params: DescribeEndpointRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeEndpointResponse, Unit]
+  ): Request[DescribeEndpointResponse, AWSError] = js.native
   /**
     * Gets the properties associated with an entities detection job. Use this operation to get the status of a detection job.
     */
@@ -347,6 +399,19 @@ trait Comprehend extends Service {
     params: ListDominantLanguageDetectionJobsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListDominantLanguageDetectionJobsResponse, Unit]
   ): Request[ListDominantLanguageDetectionJobsResponse, AWSError] = js.native
+  /**
+    * Gets a list of all existing endpoints that you've created.
+    */
+  def listEndpoints(): Request[ListEndpointsResponse, AWSError] = js.native
+  def listEndpoints(callback: js.Function2[/* err */ AWSError, /* data */ ListEndpointsResponse, Unit]): Request[ListEndpointsResponse, AWSError] = js.native
+  /**
+    * Gets a list of all existing endpoints that you've created.
+    */
+  def listEndpoints(params: ListEndpointsRequest): Request[ListEndpointsResponse, AWSError] = js.native
+  def listEndpoints(
+    params: ListEndpointsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListEndpointsResponse, Unit]
+  ): Request[ListEndpointsResponse, AWSError] = js.native
   /**
     * Gets a list of the entity detection jobs that you have submitted.
     */
@@ -615,5 +680,18 @@ trait Comprehend extends Service {
     params: UntagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]
   ): Request[UntagResourceResponse, AWSError] = js.native
+  /**
+    * Updates information about the specified endpoint.
+    */
+  def updateEndpoint(): Request[UpdateEndpointResponse, AWSError] = js.native
+  def updateEndpoint(callback: js.Function2[/* err */ AWSError, /* data */ UpdateEndpointResponse, Unit]): Request[UpdateEndpointResponse, AWSError] = js.native
+  /**
+    * Updates information about the specified endpoint.
+    */
+  def updateEndpoint(params: UpdateEndpointRequest): Request[UpdateEndpointResponse, AWSError] = js.native
+  def updateEndpoint(
+    params: UpdateEndpointRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateEndpointResponse, Unit]
+  ): Request[UpdateEndpointResponse, AWSError] = js.native
 }
 

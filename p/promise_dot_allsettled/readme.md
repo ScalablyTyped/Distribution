@@ -10,15 +10,15 @@ ES Proposal spec-compliant shim for Promise.allSettled
 | ------------------ | :-------------: |
 | Full name          | promise.allsettled |
 | Keywords           | Promise, promises, allsettled, settled, fulfilled, resolved, rejected, promise.allsettled, shim, polyfill, es-shim, API |
-| # releases         | 5 |
-| # dependents       | 1 |
-| # downloads        | 1679432 |
+| # releases         | 4 |
+| # dependents       | 20 |
+| # downloads        | 17833682 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/ljharb/promise.allsettled#readme)
-- [Bugs](https://github.com/ljharb/promise.allsettled/issues)
-- [Repository](https://github.com/ljharb/Promise.allSettled)
+- [Homepage](https://github.com/es-shims/promise.allsettled#readme)
+- [Bugs](https://github.com/es-shims/promise.allsettled/issues)
+- [Repository](https://github.com/es-shims/Promise.allSettled)
 - [Npm](https://www.npmjs.com/package/promise.allsettled)
     
 

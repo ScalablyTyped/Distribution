@@ -10,9 +10,9 @@ DocumentVision is a node.js library for processing and understanding scanned doc
 | ------------------ | :-------------: |
 | Full name          | dv |
 | Keywords           | graphics, vision, image, images, barcode, barcodes, ocr, omr, leptonica, tesseract, zxing |
-| # releases         | 4 |
+| # releases         | 5 |
 | # dependents       | 1 |
-| # downloads        | 9349 |
+| # downloads        | 12201 |
 | # stars            | 5 |
 
 ## Links

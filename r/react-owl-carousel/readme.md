@@ -10,9 +10,9 @@ React.js + Owl Carousel
 | ------------------ | :-------------: |
 | Full name          | react-owl-carousel |
 | Keywords           | react, OwlCarousel, gallery |
-| # releases         | 4 |
+| # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 123861 |
+| # downloads        | 208276 |
 | # stars            | 2 |
 
 ## Links

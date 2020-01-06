@@ -13,8 +13,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait RouterLike
-  extends /* key */ StringDictionary[js.Any]
-     with /* key */ NumberDictionary[js.Any] {
+  extends /* key */ NumberDictionary[js.Any]
+     with /* key */ StringDictionary[js.Any] {
   @JSName("get")
   var get_Original: IRouterMatcher[this.type] = js.native
   def get(

@@ -17,10 +17,10 @@ package object clientsSnowballMod {
   type ClusterListEntryList = js.Array[ClusterListEntry]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.AwaitingQuorum
-    - typings.awsDashSdk.awsDashSdkStrings.Pending
+    - typings.awsDashSdk.awsDashSdkStrings.Pending_
     - typings.awsDashSdk.awsDashSdkStrings.InUse
-    - typings.awsDashSdk.awsDashSdkStrings.Complete
-    - typings.awsDashSdk.awsDashSdkStrings.Cancelled
+    - typings.awsDashSdk.awsDashSdkStrings.Complete_
+    - typings.awsDashSdk.awsDashSdkStrings.Cancelled_
     - java.lang.String
   */
   type ClusterState = _ClusterState | java.lang.String
@@ -32,7 +32,7 @@ package object clientsSnowballMod {
   type JobListEntryList = js.Array[JobListEntry]
   type JobMetadataList = js.Array[JobMetadata]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.New
+    - typings.awsDashSdk.awsDashSdkStrings.New_
     - typings.awsDashSdk.awsDashSdkStrings.PreparingAppliance
     - typings.awsDashSdk.awsDashSdkStrings.PreparingShipment
     - typings.awsDashSdk.awsDashSdkStrings.InTransitToCustomer
@@ -40,11 +40,11 @@ package object clientsSnowballMod {
     - typings.awsDashSdk.awsDashSdkStrings.InTransitToAWS
     - typings.awsDashSdk.awsDashSdkStrings.WithAWSSortingFacility
     - typings.awsDashSdk.awsDashSdkStrings.WithAWS
-    - typings.awsDashSdk.awsDashSdkStrings.InProgress
-    - typings.awsDashSdk.awsDashSdkStrings.Complete
-    - typings.awsDashSdk.awsDashSdkStrings.Cancelled
+    - typings.awsDashSdk.awsDashSdkStrings.InProgress_
+    - typings.awsDashSdk.awsDashSdkStrings.Complete_
+    - typings.awsDashSdk.awsDashSdkStrings.Cancelled_
     - typings.awsDashSdk.awsDashSdkStrings.Listing
-    - typings.awsDashSdk.awsDashSdkStrings.Pending
+    - typings.awsDashSdk.awsDashSdkStrings.Pending_
     - java.lang.String
   */
   type JobState = _JobState | java.lang.String
@@ -93,7 +93,7 @@ package object clientsSnowballMod {
   type Timestamp = Date
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2016-06-30`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | java.lang.String

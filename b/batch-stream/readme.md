@@ -11,8 +11,8 @@ Transform a stream into batches
 | Full name          | batch-stream |
 | Keywords           | batch, stream, chunks, chunked |
 | # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 77363 |
+| # dependents       | 8 |
+| # downloads        | 141524 |
 | # stars            | 0 |
 
 ## Links

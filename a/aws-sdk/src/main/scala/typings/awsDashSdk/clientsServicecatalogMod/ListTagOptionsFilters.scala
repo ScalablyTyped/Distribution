@@ -4,28 +4,29 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ListTagOptionsFilters extends js.Object {
   /**
     * The active state.
     */
-  var Active: js.UndefOr[TagOptionActive] = js.undefined
+  var Active: js.UndefOr[TagOptionActive] = js.native
   /**
     * The TagOption key.
     */
-  var Key: js.UndefOr[TagOptionKey] = js.undefined
+  var Key: js.UndefOr[TagOptionKey] = js.native
   /**
     * The TagOption value.
     */
-  var Value: js.UndefOr[TagOptionValue] = js.undefined
+  var Value: js.UndefOr[TagOptionValue] = js.native
 }
 
 object ListTagOptionsFilters {
   @scala.inline
   def apply(Active: js.UndefOr[Boolean] = js.undefined, Key: TagOptionKey = null, Value: TagOptionValue = null): ListTagOptionsFilters = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Active)) __obj.updateDynamic("Active")(Active)
-    if (Key != null) __obj.updateDynamic("Key")(Key)
-    if (Value != null) __obj.updateDynamic("Value")(Value)
+    if (!js.isUndefined(Active)) __obj.updateDynamic("Active")(Active.asInstanceOf[js.Any])
+    if (Key != null) __obj.updateDynamic("Key")(Key.asInstanceOf[js.Any])
+    if (Value != null) __obj.updateDynamic("Value")(Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTagOptionsFilters]
   }
 }

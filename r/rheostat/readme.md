@@ -10,9 +10,9 @@ Rheostat is a www, mobile, and accessible slider component built with React
 | ------------------ | :-------------: |
 | Full name          | rheostat |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 22 |
-| # downloads        | 780435 |
+| # releases         | 12 |
+| # dependents       | 25 |
+| # downloads        | 990728 |
 | # stars            | 1 |
 
 ## Links

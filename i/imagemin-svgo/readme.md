@@ -10,9 +10,9 @@ SVGO imagemin plugin
 | ------------------ | :-------------: |
 | Full name          | imagemin-svgo |
 | Keywords           | compress, image, imageminplugin, img, minify, optimize, svg, svgo |
-| # releases         | 6 |
-| # dependents       | 162 |
-| # downloads        | 20215463 |
+| # releases         | 2 |
+| # dependents       | 216 |
+| # downloads        | 23387814 |
 | # stars            | 13 |
 
 ## Links

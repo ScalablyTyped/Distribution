@@ -6,12 +6,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LaunchTemplateTagSpecification extends js.Object {
-  var resourceType: js.UndefOr[Input[String]] = js.undefined
+  var resourceType: js.UndefOr[Input[String]] = js.native
   /**
     * A mapping of tags to assign to the launch template.
     */
-  var tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  var tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object LaunchTemplateTagSpecification {

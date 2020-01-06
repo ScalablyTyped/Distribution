@@ -10,9 +10,9 @@ evaluate the wcag color contrast score for two colors
 | ------------------ | :-------------: |
 | Full name          | wcag-contrast |
 | Keywords           | color, contrast, wcag |
-| # releases         | 10 |
-| # dependents       | 7 |
-| # downloads        | 100179 |
+| # releases         | 11 |
+| # dependents       | 8 |
+| # downloads        | 185275 |
 | # stars            | 2 |
 
 ## Links

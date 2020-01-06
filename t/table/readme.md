@@ -10,9 +10,9 @@ Formats data into a string table.
 | ------------------ | :-------------: |
 | Full name          | table |
 | Keywords           | ascii, text, table, align, ansi |
-| # releases         | 12 |
-| # dependents       | 287 |
-| # downloads        | 242314245 |
+| # releases         | 22 |
+| # dependents       | 418 |
+| # downloads        | 382262456 |
 | # stars            | 22 |
 
 ## Links

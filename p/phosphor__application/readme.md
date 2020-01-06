@@ -10,9 +10,9 @@ PhosphorJS - Pluggable Application
 | ------------------ | :-------------: |
 | Full name          | @phosphor/application |
 | Keywords           | - |
-| # releases         | 17 |
-| # dependents       | 11 |
-| # downloads        | 516844 |
+| # releases         | 10 |
+| # dependents       | 21 |
+| # downloads        | 936792 |
 | # stars            | 0 |
 
 ## Links

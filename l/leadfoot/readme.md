@@ -11,7 +11,7 @@ Leadfoot. A JavaScript client library that brings cross-platform consistency to 
 | Keywords           | javascript, test, functional, selenium, webdriver, sauce labs, browserstack, testingbot |
 | # releases         | 3 |
 | # dependents       | 5 |
-| # downloads        | 368657 |
+| # downloads        | 381093 |
 | # stars            | 1 |
 
 ## Links

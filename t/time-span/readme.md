@@ -10,9 +10,9 @@ Simplified high resolution timing
 | ------------------ | :-------------: |
 | Full name          | time-span |
 | Keywords           | time, span, elapsed, process, hrtime, highres, timing, perf, performance, bench, benchmark, profiling, measure, seconds, milliseconds, nanoseconds |
-| # releases         | 2 |
-| # dependents       | 15 |
-| # downloads        | 156213 |
+| # releases         | 3 |
+| # dependents       | 24 |
+| # downloads        | 460033 |
 | # stars            | 0 |
 
 ## Links

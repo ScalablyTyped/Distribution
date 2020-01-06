@@ -11,8 +11,8 @@ Provide helpful constants for setting responsive breakpoints
 | Full name          | typography-breakpoint-constants |
 | Keywords           | css, inline, styles, typography, vertical-rhythm |
 | # releases         | 4 |
-| # dependents       | 38 |
-| # downloads        | 520537 |
+| # dependents       | 40 |
+| # downloads        | 626216 |
 | # stars            | 0 |
 
 ## Links

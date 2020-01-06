@@ -304,7 +304,6 @@ object libWidgetMod extends js.Object {
       *
       * @param msg - The message to be processed.
       */
-    /* CompleteClass */
     /* InferMemberOverrides */
     override def processMessage(msg: Message): Unit = js.native
     /**

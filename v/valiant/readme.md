@@ -10,9 +10,9 @@ JavaScript interval arithmetic library
 | ------------------ | :-------------: |
 | Full name          | valiant |
 | Keywords           | - |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 147 |
+| # downloads        | 218 |
 | # stars            | 0 |
 
 ## Links

@@ -12,7 +12,7 @@ Markup, style, and code in one language.
 | Keywords           | dom, html, css, template, browser, server |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 877 |
+| # downloads        | 1040 |
 | # stars            | 1 |
 
 ## Links

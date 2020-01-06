@@ -11,8 +11,8 @@ Implementation of Function.prototype.bind
 | Full name          | function-bind |
 | Keywords           | function, bind, shim, es5 |
 | # releases         | 0 |
-| # dependents       | 126 |
-| # downloads        | 379408889 |
+| # dependents       | 124 |
+| # downloads        | 398684349 |
 | # stars            | 0 |
 
 ## Links

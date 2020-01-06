@@ -10,15 +10,15 @@ Use react-devtools outside of the browser
 | ------------------ | :-------------: |
 | Full name          | react-devtools |
 | Keywords           | - |
-| # releases         | 26 |
-| # dependents       | 7 |
-| # downloads        | 745214 |
+| # releases         | 45 |
+| # dependents       | 9 |
+| # downloads        | 962961 |
 | # stars            | 7 |
 
 ## Links
-- [Homepage](https://github.com/facebook/react-devtools#readme)
-- [Bugs](https://github.com/facebook/react-devtools/issues)
-- [Repository](https://github.com/facebook/react-devtools)
+- [Homepage](https://github.com/facebook/react#readme)
+- [Bugs](https://github.com/facebook/react/issues)
+- [Repository](https://github.com/facebook/react)
 - [Npm](https://www.npmjs.com/package/react-devtools)
     
 

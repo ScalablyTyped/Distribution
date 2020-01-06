@@ -5,17 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccess extends js.Object {
   /**
     * The action to take on instances in the original environment after a successful blue/green deployment.
     * * `TERMINATE`: Instances are terminated after a specified wait time.
     * * `KEEP_ALIVE`: Instances are left running after they are deregistered from the load balancer and removed from the deployment group.
     */
-  var action: js.UndefOr[Input[String]] = js.undefined
+  var action: js.UndefOr[Input[String]] = js.native
   /**
     * The number of minutes to wait after a successful blue/green deployment before terminating instances from the original environment.
     */
-  var terminationWaitTimeInMinutes: js.UndefOr[Input[Double]] = js.undefined
+  var terminationWaitTimeInMinutes: js.UndefOr[Input[Double]] = js.native
 }
 
 object DeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccess {

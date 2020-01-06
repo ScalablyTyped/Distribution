@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UpdateAliasInput extends js.Object {
   /**
-    * Unique identifier for a fleet alias. Specify the alias you want to update.
+    * A unique identifier for the alias that you want to update. You can use either the alias ID or ARN value.
     */
-  var AliasId: typings.awsDashSdk.clientsGameliftMod.AliasId
+  var AliasId: typings.awsDashSdk.clientsGameliftMod.AliasId = js.native
   /**
-    * Human-readable description of an alias.
+    * A human-readable description of the alias.
     */
-  var Description: js.UndefOr[NonZeroAndMaxString] = js.undefined
+  var Description: js.UndefOr[NonZeroAndMaxString] = js.native
   /**
-    * Descriptive label that is associated with an alias. Alias names do not need to be unique.
+    * A descriptive label that is associated with an alias. Alias names do not need to be unique.
     */
-  var Name: js.UndefOr[NonBlankAndLengthConstraintString] = js.undefined
+  var Name: js.UndefOr[NonBlankAndLengthConstraintString] = js.native
   /**
-    * Object that specifies the fleet and routing type to use for the alias.
+    * The routing configuration, including routing type and fleet target, for the alias.
     */
-  var RoutingStrategy: js.UndefOr[typings.awsDashSdk.clientsGameliftMod.RoutingStrategy] = js.undefined
+  var RoutingStrategy: js.UndefOr[typings.awsDashSdk.clientsGameliftMod.RoutingStrategy] = js.native
 }
 
 object UpdateAliasInput {
@@ -31,10 +32,10 @@ object UpdateAliasInput {
     Name: NonBlankAndLengthConstraintString = null,
     RoutingStrategy: RoutingStrategy = null
   ): UpdateAliasInput = {
-    val __obj = js.Dynamic.literal(AliasId = AliasId)
-    if (Description != null) __obj.updateDynamic("Description")(Description)
-    if (Name != null) __obj.updateDynamic("Name")(Name)
-    if (RoutingStrategy != null) __obj.updateDynamic("RoutingStrategy")(RoutingStrategy)
+    val __obj = js.Dynamic.literal(AliasId = AliasId.asInstanceOf[js.Any])
+    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
+    if (RoutingStrategy != null) __obj.updateDynamic("RoutingStrategy")(RoutingStrategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateAliasInput]
   }
 }

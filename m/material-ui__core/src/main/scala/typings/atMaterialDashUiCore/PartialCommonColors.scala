@@ -5,9 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/colors/common.CommonColors> */
+@js.native
 trait PartialCommonColors extends js.Object {
-  var black: js.UndefOr[String] = js.undefined
-  var white: js.UndefOr[String] = js.undefined
+  var black: js.UndefOr[String] = js.native
+  var white: js.UndefOr[String] = js.native
 }
 
 object PartialCommonColors {

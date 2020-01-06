@@ -1,5 +1,6 @@
 package typings.atPulumiAws.apigatewayDomainNameMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.atPulumiAws.typesOutputMod.apigateway.DomainNameEndpointConfiguration
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
@@ -22,6 +23,10 @@ class DomainName protected () extends CustomResource {
     */
   def this(name: String, args: DomainNameArgs) = this()
   def this(name: String, args: DomainNameArgs, opts: CustomResourceOptions) = this()
+  /**
+    * Amazon Resource Name (ARN)
+    */
+  val arn: Output[String] = js.native
   /**
     * The ARN for an AWS-managed certificate. AWS Certificate Manager is the only supported source. Used when an edge-optimized domain name is desired. Conflicts with `certificateName`, `certificateBody`, `certificateChain`, `certificatePrivateKey`, `regionalCertificateArn`, and `regionalCertificateName`.
     */
@@ -93,6 +98,10 @@ class DomainName protected () extends CustomResource {
     * The Transport Layer Security (TLS) version + cipher suite for this DomainName. The valid values are `TLS_1_0` and `TLS_1_2`. Must be configured to perform drift detection.
     */
   val securityPolicy: Output[String] = js.native
+  /**
+    * Key-value mapping of resource tags
+    */
+  val tags: Output[js.UndefOr[StringDictionary[_]]] = js.native
 }
 
 /* static members */

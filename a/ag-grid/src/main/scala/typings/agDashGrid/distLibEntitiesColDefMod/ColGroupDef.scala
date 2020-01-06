@@ -1,6 +1,6 @@
 package typings.agDashGrid.distLibEntitiesColDefMod
 
-import typings.agDashGrid.Anon_Any_746802533
+import typings.agDashGrid.Anon_Any_640158205
 import typings.agDashGrid.Anon_IHeaderGroupComp
 import typings.agDashGrid.distLibComponentsFrameworkComponentResolverMod.ComponentHolder
 import scala.scalajs.js
@@ -17,7 +17,7 @@ trait ColGroupDef
   /** The custom header group component to be used for rendering the component header. If none specified the default ag-Grid is used**/
   var headerGroupComponent: js.UndefOr[String | Anon_IHeaderGroupComp] = js.undefined
   /** The custom header group component to be used for rendering the component header in the hosting framework (ie: React/Angular). If none specified the default ag-Grid is used**/
-  var headerGroupComponentFramework: js.UndefOr[Anon_Any_746802533] = js.undefined
+  var headerGroupComponentFramework: js.UndefOr[Anon_Any_640158205] = js.undefined
   /** The custom header group component to be used for rendering the component header. If none specified the default ag-Grid is used**/
   var headerGroupComponentParams: js.UndefOr[js.Any] = js.undefined
   /** If true, group cannot be broken up by column moving, child columns will always appear side by side, however you can rearrange child columns within the group */
@@ -34,7 +34,7 @@ object ColGroupDef {
     groupId: String = null,
     headerClass: String | js.Array[String] | (js.Function1[/* params */ js.Any, String | js.Array[String]]) = null,
     headerGroupComponent: String | Anon_IHeaderGroupComp = null,
-    headerGroupComponentFramework: Anon_Any_746802533 = null,
+    headerGroupComponentFramework: Anon_Any_640158205 = null,
     headerGroupComponentParams: js.Any = null,
     headerName: String = null,
     headerTooltip: String = null,

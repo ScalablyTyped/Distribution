@@ -10,9 +10,9 @@ Check if filepath exists and is a file
 | ------------------ | :-------------: |
 | Full name          | file-exists |
 | Keywords           | file, exists, fs, isfile, is-file |
-| # releases         | 4 |
-| # dependents       | 245 |
-| # downloads        | 2521633 |
+| # releases         | 2 |
+| # dependents       | 267 |
+| # downloads        | 2217875 |
 | # stars            | 6 |
 
 ## Links

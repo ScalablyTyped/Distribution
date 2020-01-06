@@ -11,8 +11,8 @@ Display express server routes in your terminal
 | Full name          | express-routemap |
 | Keywords           | express, routes |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 20245 |
+| # dependents       | 0 |
+| # downloads        | 24988 |
 | # stars            | 1 |
 
 ## Links

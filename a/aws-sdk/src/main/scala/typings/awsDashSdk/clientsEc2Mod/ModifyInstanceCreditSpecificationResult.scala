@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ModifyInstanceCreditSpecificationResult extends js.Object {
   /**
     * Information about the instances whose credit option for CPU usage was successfully modified.
     */
-  var SuccessfulInstanceCreditSpecifications: js.UndefOr[SuccessfulInstanceCreditSpecificationSet] = js.undefined
+  var SuccessfulInstanceCreditSpecifications: js.UndefOr[SuccessfulInstanceCreditSpecificationSet] = js.native
   /**
     * Information about the instances whose credit option for CPU usage was not modified.
     */
-  var UnsuccessfulInstanceCreditSpecifications: js.UndefOr[UnsuccessfulInstanceCreditSpecificationSet] = js.undefined
+  var UnsuccessfulInstanceCreditSpecifications: js.UndefOr[UnsuccessfulInstanceCreditSpecificationSet] = js.native
 }
 
 object ModifyInstanceCreditSpecificationResult {
@@ -22,8 +23,8 @@ object ModifyInstanceCreditSpecificationResult {
     UnsuccessfulInstanceCreditSpecifications: UnsuccessfulInstanceCreditSpecificationSet = null
   ): ModifyInstanceCreditSpecificationResult = {
     val __obj = js.Dynamic.literal()
-    if (SuccessfulInstanceCreditSpecifications != null) __obj.updateDynamic("SuccessfulInstanceCreditSpecifications")(SuccessfulInstanceCreditSpecifications)
-    if (UnsuccessfulInstanceCreditSpecifications != null) __obj.updateDynamic("UnsuccessfulInstanceCreditSpecifications")(UnsuccessfulInstanceCreditSpecifications)
+    if (SuccessfulInstanceCreditSpecifications != null) __obj.updateDynamic("SuccessfulInstanceCreditSpecifications")(SuccessfulInstanceCreditSpecifications.asInstanceOf[js.Any])
+    if (UnsuccessfulInstanceCreditSpecifications != null) __obj.updateDynamic("UnsuccessfulInstanceCreditSpecifications")(UnsuccessfulInstanceCreditSpecifications.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyInstanceCreditSpecificationResult]
   }
 }

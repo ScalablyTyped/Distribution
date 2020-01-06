@@ -9,9 +9,9 @@ NodeJS Library for Facebook
 | ------------------ | :-------------: |
 | Full name          | fb |
 | Keywords           | facebook, fb, graph |
-| # releases         | 3 |
-| # dependents       | 77 |
-| # downloads        | 783154 |
+| # releases         | 1 |
+| # dependents       | 85 |
+| # downloads        | 1019612 |
 | # stars            | 25 |
 
 ## Links

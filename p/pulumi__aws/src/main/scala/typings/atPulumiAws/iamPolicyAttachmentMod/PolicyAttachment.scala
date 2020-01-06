@@ -1,9 +1,6 @@
 package typings.atPulumiAws.iamPolicyAttachmentMod
 
 import typings.atPulumiAws.arnMod.ARN
-import typings.atPulumiAws.iamGroupMod.Group
-import typings.atPulumiAws.iamRoleMod.Role
-import typings.atPulumiAws.iamUserMod.User
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -28,7 +25,7 @@ class PolicyAttachment protected () extends CustomResource {
   /**
     * The group(s) the policy should be applied to
     */
-  val groups: Output[js.UndefOr[js.Array[Group]]] = js.native
+  val groups: Output[js.UndefOr[js.Array[String]]] = js.native
   /**
     * The name of the attachment. This cannot be an empty string.
     */
@@ -40,11 +37,11 @@ class PolicyAttachment protected () extends CustomResource {
   /**
     * The role(s) the policy should be applied to
     */
-  val roles: Output[js.UndefOr[js.Array[Role]]] = js.native
+  val roles: Output[js.UndefOr[js.Array[String]]] = js.native
   /**
     * The user(s) the policy should be applied to
     */
-  val users: Output[js.UndefOr[js.Array[User]]] = js.native
+  val users: Output[js.UndefOr[js.Array[String]]] = js.native
 }
 
 /* static members */

@@ -9,9 +9,9 @@ Touch events using PEP
 | ------------------ | :-------------: |
 | Full name          | touch-events |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 318 |
+| # downloads        | 425 |
 | # stars            | 0 |
 
 ## Links

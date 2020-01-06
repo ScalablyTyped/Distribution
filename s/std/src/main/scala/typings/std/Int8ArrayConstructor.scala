@@ -11,12 +11,12 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Int8ArrayConstructor
   extends Instantiable0[Int8Array]
-     with Instantiable2[/* buffer */ ArrayBufferLike, /* byteOffset */ Double, Int8Array]
-     with Instantiable3[/* buffer */ ArrayBufferLike, /* byteOffset */ Double, /* length */ Double, Int8Array]
      with Instantiable1[
       (/* arrayOrArrayBuffer */ ArrayBufferLike) | (/* arrayOrArrayBuffer */ ArrayLike[Double]) | (/* length */ Double) | (/* elements */ Iterable[Double]), 
       Int8Array
-    ] {
+    ]
+     with Instantiable2[/* buffer */ ArrayBufferLike, /* byteOffset */ Double, Int8Array]
+     with Instantiable3[/* buffer */ ArrayBufferLike, /* byteOffset */ Double, /* length */ Double, Int8Array] {
   /**
     * The size in bytes of each element in the array.
     */

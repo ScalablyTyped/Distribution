@@ -10,9 +10,9 @@ A compression algorithm for JSON
 | ------------------ | :-------------: |
 | Full name          | jsonpack |
 | Keywords           | compress, json |
-| # releases         | 1 |
-| # dependents       | 22 |
-| # downloads        | 128457 |
+| # releases         | 0 |
+| # dependents       | 25 |
+| # downloads        | 236348 |
 | # stars            | 7 |
 
 ## Links

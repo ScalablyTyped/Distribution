@@ -10,12 +10,15 @@ provides middleware to load controllers based on api versions
 | ------------------ | :-------------: |
 | Full name          | express-version-route |
 | Keywords           | - |
-| # releases         | 6 |
+| # releases         | 10 |
 | # dependents       | 0 |
-| # downloads        | 4955 |
+| # downloads        | 29927 |
 | # stars            | 0 |
 
 ## Links
+- [Homepage](https://github.com/lirantal/express-version-route#readme)
+- [Bugs](https://github.com/lirantal/express-version-route/issues)
+- [Repository](https://github.com/lirantal/express-version-route)
 - [Npm](https://www.npmjs.com/package/express-version-route)
     
 

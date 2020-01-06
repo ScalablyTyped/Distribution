@@ -4,21 +4,21 @@
 Typings are for version 2.1.1
 
 ## Library description:
-Path case a string
+Transform into a lower case string with slashes between words
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | path-case |
-| Keywords           | path, case, slash |
-| # releases         | 0 |
+| Keywords           | path, case, slash, lower, convert, transform |
+| # releases         | 3 |
 | # dependents       | 3 |
-| # downloads        | 24778397 |
+| # downloads        | 41574364 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/blakeembrey/path-case)
-- [Bugs](https://github.com/blakeembrey/path-case/issues)
-- [Repository](https://github.com/blakeembrey/path-case)
+- [Homepage](https://github.com/blakeembrey/change-case/tree/master/packages/path-case#readme)
+- [Bugs](https://github.com/blakeembrey/change-case/issues)
+- [Repository](https://github.com/blakeembrey/change-case)
 - [Npm](https://www.npmjs.com/package/path-case)
     
 

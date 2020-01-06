@@ -10,9 +10,9 @@ A set of primitives to build simple, flexible, WAI-ARIA compliant React autocomp
 | ------------------ | :-------------: |
 | Full name          | downshift |
 | Keywords           | enhanced input, react, autocomplete, autosuggest, typeahead, dropdown, select, combobox, omnibox, accessibility, WAI-ARIA, multiselect, multiple selection |
-| # releases         | 178 |
-| # dependents       | 149 |
-| # downloads        | 5214688 |
+| # releases         | 128 |
+| # dependents       | 281 |
+| # downloads        | 10505823 |
 | # stars            | 12 |
 
 ## Links

@@ -4,15 +4,15 @@
 Typings are for version 5.5.0
 
 ## Library description:
-Swipe and touch handlers for react
+React Swipe event handler component & hook
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-swipeable |
-| Keywords           | react swipe, react touch, react hook, react-swipe, react-touch, touch, swipe, mobile, swipeable, react, hook, react-component |
-| # releases         | 24 |
-| # dependents       | 78 |
-| # downloads        | 3605835 |
+| Keywords           | react swipe, react touch, react hook, touch, swipe, swipeable, react, hook, react-component |
+| # releases         | 28 |
+| # dependents       | 103 |
+| # downloads        | 5996258 |
 | # stars            | 11 |
 
 ## Links

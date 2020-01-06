@@ -22,11 +22,11 @@ class default protected () extends Anon_CallBackCallback {
 @JSImport("@ant-design/react-native/lib/picker/NativePicker.android", JSImport.Default)
 @js.native
 object default
-  extends Instantiable2[/* props */ PickerProps, /* context */ js.Any, Anon_CallBackCallback]
-     with Instantiable1[
+  extends Instantiable1[
       (/* props */ PickerProps) | (/* props */ ReadonlyPickerProps), 
       Anon_CallBackCallback
-    ] {
+    ]
+     with Instantiable2[/* props */ PickerProps, /* context */ js.Any, Anon_CallBackCallback] {
   var contextType: js.UndefOr[Context[_]] = js.native
   def Item(_props: Anon_ValueAny): Null = js.native
 }

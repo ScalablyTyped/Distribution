@@ -10,9 +10,9 @@ A clock-style timepicker for Bootstrap (or jQuery)
 | ------------------ | :-------------: |
 | Full name          | clockpicker |
 | Keywords           | - |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 136823 |
+| # downloads        | 185818 |
 | # stars            | 2 |
 
 ## Links

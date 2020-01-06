@@ -10,15 +10,12 @@ Apollo Optics Agent for GraphQL-js
 | ------------------ | :-------------: |
 | Full name          | optics-agent |
 | Keywords           | graphql |
-| # releases         | 8 |
+| # releases         | 1 |
 | # dependents       | 1 |
-| # downloads        | 85049 |
+| # downloads        | 84636 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/apollostack/optics-agent-js#readme)
-- [Bugs](https://github.com/apollostack/optics-agent-js/issues)
-- [Repository](https://github.com/apollostack/optics-agent-js)
 - [Npm](https://www.npmjs.com/package/optics-agent)
     
 

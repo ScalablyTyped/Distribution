@@ -4,116 +4,117 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait HeadObjectOutput extends js.Object {
   /**
-    * 
+    * Indicates that a range of bytes was specified.
     */
-  var AcceptRanges: js.UndefOr[typings.awsDashSdk.clientsS3Mod.AcceptRanges] = js.undefined
+  var AcceptRanges: js.UndefOr[typings.awsDashSdk.clientsS3Mod.AcceptRanges] = js.native
   /**
     * Specifies caching behavior along the request/reply chain.
     */
-  var CacheControl: js.UndefOr[typings.awsDashSdk.clientsS3Mod.CacheControl] = js.undefined
+  var CacheControl: js.UndefOr[typings.awsDashSdk.clientsS3Mod.CacheControl] = js.native
   /**
     * Specifies presentational information for the object.
     */
-  var ContentDisposition: js.UndefOr[typings.awsDashSdk.clientsS3Mod.ContentDisposition] = js.undefined
+  var ContentDisposition: js.UndefOr[typings.awsDashSdk.clientsS3Mod.ContentDisposition] = js.native
   /**
     * Specifies what content encodings have been applied to the object and thus what decoding mechanisms must be applied to obtain the media-type referenced by the Content-Type header field.
     */
-  var ContentEncoding: js.UndefOr[typings.awsDashSdk.clientsS3Mod.ContentEncoding] = js.undefined
+  var ContentEncoding: js.UndefOr[typings.awsDashSdk.clientsS3Mod.ContentEncoding] = js.native
   /**
     * The language the content is in.
     */
-  var ContentLanguage: js.UndefOr[typings.awsDashSdk.clientsS3Mod.ContentLanguage] = js.undefined
+  var ContentLanguage: js.UndefOr[typings.awsDashSdk.clientsS3Mod.ContentLanguage] = js.native
   /**
     * Size of the body in bytes.
     */
-  var ContentLength: js.UndefOr[typings.awsDashSdk.clientsS3Mod.ContentLength] = js.undefined
+  var ContentLength: js.UndefOr[typings.awsDashSdk.clientsS3Mod.ContentLength] = js.native
   /**
     * A standard MIME type describing the format of the object data.
     */
-  var ContentType: js.UndefOr[typings.awsDashSdk.clientsS3Mod.ContentType] = js.undefined
+  var ContentType: js.UndefOr[typings.awsDashSdk.clientsS3Mod.ContentType] = js.native
   /**
     * Specifies whether the object retrieved was (true) or was not (false) a Delete Marker. If false, this response header does not appear in the response.
     */
-  var DeleteMarker: js.UndefOr[typings.awsDashSdk.clientsS3Mod.DeleteMarker] = js.undefined
+  var DeleteMarker: js.UndefOr[typings.awsDashSdk.clientsS3Mod.DeleteMarker] = js.native
   /**
-    * An ETag is an opaque identifier assigned by a web server to a specific version of a resource found at a URL
+    * An ETag is an opaque identifier assigned by a web server to a specific version of a resource found at a URL.
     */
-  var ETag: js.UndefOr[typings.awsDashSdk.clientsS3Mod.ETag] = js.undefined
+  var ETag: js.UndefOr[typings.awsDashSdk.clientsS3Mod.ETag] = js.native
   /**
-    * If the object expiration is configured (see PUT Bucket lifecycle), the response includes this header. It includes the expiry-date and rule-id key value pairs providing object expiration information. The value of the rule-id is URL encoded.
+    * If the object expiration is configured (see PUT Bucket lifecycle), the response includes this header. It includes the expiry-date and rule-id key-value pairs providing object expiration information. The value of the rule-id is URL encoded.
     */
-  var Expiration: js.UndefOr[typings.awsDashSdk.clientsS3Mod.Expiration] = js.undefined
+  var Expiration: js.UndefOr[typings.awsDashSdk.clientsS3Mod.Expiration] = js.native
   /**
     * The date and time at which the object is no longer cacheable.
     */
-  var Expires: js.UndefOr[typings.awsDashSdk.clientsS3Mod.Expires] = js.undefined
+  var Expires: js.UndefOr[typings.awsDashSdk.clientsS3Mod.Expires] = js.native
   /**
     * Last modified date of the object
     */
-  var LastModified: js.UndefOr[typings.awsDashSdk.clientsS3Mod.LastModified] = js.undefined
+  var LastModified: js.UndefOr[typings.awsDashSdk.clientsS3Mod.LastModified] = js.native
   /**
     * A map of metadata to store with the object in S3.
     */
-  var Metadata: js.UndefOr[typings.awsDashSdk.clientsS3Mod.Metadata] = js.undefined
+  var Metadata: js.UndefOr[typings.awsDashSdk.clientsS3Mod.Metadata] = js.native
   /**
     * This is set to the number of metadata entries not returned in x-amz-meta headers. This can happen if you create metadata using an API like SOAP that supports more flexible metadata than the REST API. For example, using SOAP, you can create metadata whose values are not legal HTTP headers.
     */
-  var MissingMeta: js.UndefOr[typings.awsDashSdk.clientsS3Mod.MissingMeta] = js.undefined
+  var MissingMeta: js.UndefOr[typings.awsDashSdk.clientsS3Mod.MissingMeta] = js.native
   /**
-    * The Legal Hold status for the specified object.
+    * Specifies whether a legal hold is in effect for this object. This header is only returned if the requester has the s3:GetObjectLegalHold permission. This header is not returned if the specified version of this object has never had a legal hold applied. For more information about S3 Object Lock, see Object Lock.
     */
-  var ObjectLockLegalHoldStatus: js.UndefOr[typings.awsDashSdk.clientsS3Mod.ObjectLockLegalHoldStatus] = js.undefined
+  var ObjectLockLegalHoldStatus: js.UndefOr[typings.awsDashSdk.clientsS3Mod.ObjectLockLegalHoldStatus] = js.native
   /**
-    * The object lock mode currently in place for this object.
+    * The Object Lock mode, if any, that's in effect for this object. This header is only returned if the requester has the s3:GetObjectRetention permission. For more information about S3 Object Lock, see Object Lock. 
     */
-  var ObjectLockMode: js.UndefOr[typings.awsDashSdk.clientsS3Mod.ObjectLockMode] = js.undefined
+  var ObjectLockMode: js.UndefOr[typings.awsDashSdk.clientsS3Mod.ObjectLockMode] = js.native
   /**
-    * The date and time when this object's object lock expires.
+    * The date and time when the Object Lock retention period expires. This header is only returned if the requester has the s3:GetObjectRetention permission.
     */
-  var ObjectLockRetainUntilDate: js.UndefOr[typings.awsDashSdk.clientsS3Mod.ObjectLockRetainUntilDate] = js.undefined
+  var ObjectLockRetainUntilDate: js.UndefOr[typings.awsDashSdk.clientsS3Mod.ObjectLockRetainUntilDate] = js.native
   /**
     * The count of parts this object has.
     */
-  var PartsCount: js.UndefOr[typings.awsDashSdk.clientsS3Mod.PartsCount] = js.undefined
+  var PartsCount: js.UndefOr[typings.awsDashSdk.clientsS3Mod.PartsCount] = js.native
   /**
-    * 
+    * Amazon S3 can return this header if your request involves a bucket that is either a source or destination in a replication rule. In replication, you have a source bucket on which you configure replication and destination bucket where Amazon S3 stores object replicas. When you request an object (GetObject) or object metadata (HeadObject) from these buckets, Amazon S3 will return the x-amz-replication-status header in the response as follows:   If requesting an object from the source bucket — Amazon S3 will return the x-amz-replication-status header if the object in your request is eligible for replication.  For example, suppose that in your replication configuration, you specify object prefix TaxDocs requesting Amazon S3 to replicate objects with key prefix TaxDocs. Any objects you upload with this key name prefix, for example TaxDocs/document1.pdf, are eligible for replication. For any object request with this key name prefix, Amazon S3 will return the x-amz-replication-status header with value PENDING, COMPLETED or FAILED indicating object replication status.   If requesting an object from the destination bucket — Amazon S3 will return the x-amz-replication-status header with value REPLICA if the object in your request is a replica that Amazon S3 created.   For more information, see Replication.
     */
-  var ReplicationStatus: js.UndefOr[typings.awsDashSdk.clientsS3Mod.ReplicationStatus] = js.undefined
-  var RequestCharged: js.UndefOr[typings.awsDashSdk.clientsS3Mod.RequestCharged] = js.undefined
+  var ReplicationStatus: js.UndefOr[typings.awsDashSdk.clientsS3Mod.ReplicationStatus] = js.native
+  var RequestCharged: js.UndefOr[typings.awsDashSdk.clientsS3Mod.RequestCharged] = js.native
   /**
-    * Provides information about object restoration operation and expiration time of the restored object copy.
+    * If the object is an archived object (an object whose storage class is GLACIER), the response includes this header if either the archive restoration is in progress (see RestoreObject or an archive copy is already restored.  If an archive copy is already restored, the header value indicates when Amazon S3 is scheduled to delete the object copy. For example:  x-amz-restore: ongoing-request="false", expiry-date="Fri, 23 Dec 2012 00:00:00 GMT"  If the object restoration is in progress, the header returns the value ongoing-request="true". For more information about archiving objects, see Transitioning Objects: General Considerations.
     */
-  var Restore: js.UndefOr[typings.awsDashSdk.clientsS3Mod.Restore] = js.undefined
+  var Restore: js.UndefOr[typings.awsDashSdk.clientsS3Mod.Restore] = js.native
   /**
     * If server-side encryption with a customer-provided encryption key was requested, the response will include this header confirming the encryption algorithm used.
     */
-  var SSECustomerAlgorithm: js.UndefOr[typings.awsDashSdk.clientsS3Mod.SSECustomerAlgorithm] = js.undefined
+  var SSECustomerAlgorithm: js.UndefOr[typings.awsDashSdk.clientsS3Mod.SSECustomerAlgorithm] = js.native
   /**
-    * If server-side encryption with a customer-provided encryption key was requested, the response will include this header to provide round trip message integrity verification of the customer-provided encryption key.
+    * If server-side encryption with a customer-provided encryption key was requested, the response will include this header to provide round-trip message integrity verification of the customer-provided encryption key.
     */
-  var SSECustomerKeyMD5: js.UndefOr[typings.awsDashSdk.clientsS3Mod.SSECustomerKeyMD5] = js.undefined
+  var SSECustomerKeyMD5: js.UndefOr[typings.awsDashSdk.clientsS3Mod.SSECustomerKeyMD5] = js.native
   /**
-    * If present, specifies the ID of the AWS Key Management Service (KMS) master encryption key that was used for the object.
+    * If present, specifies the ID of the AWS Key Management Service (AWS KMS) symmetric customer managed customer master key (CMK) that was used for the object.
     */
-  var SSEKMSKeyId: js.UndefOr[typings.awsDashSdk.clientsS3Mod.SSEKMSKeyId] = js.undefined
+  var SSEKMSKeyId: js.UndefOr[typings.awsDashSdk.clientsS3Mod.SSEKMSKeyId] = js.native
   /**
-    * The Server-side encryption algorithm used when storing this object in S3 (e.g., AES256, aws:kms).
+    * If the object is stored using server-side encryption either with an AWS KMS customer master key (CMK) or an Amazon S3-managed encryption key, the response includes this header with the value of the server-side encryption algorithm used when storing this object in Amazon S3 (for example, AES256, aws:kms).
     */
-  var ServerSideEncryption: js.UndefOr[typings.awsDashSdk.clientsS3Mod.ServerSideEncryption] = js.undefined
+  var ServerSideEncryption: js.UndefOr[typings.awsDashSdk.clientsS3Mod.ServerSideEncryption] = js.native
   /**
-    * 
+    * Provides storage class information of the object. Amazon S3 returns this header for all objects except for Standard storage class objects. For more information, see Storage Classes.
     */
-  var StorageClass: js.UndefOr[typings.awsDashSdk.clientsS3Mod.StorageClass] = js.undefined
+  var StorageClass: js.UndefOr[typings.awsDashSdk.clientsS3Mod.StorageClass] = js.native
   /**
     * Version of the object.
     */
-  var VersionId: js.UndefOr[ObjectVersionId] = js.undefined
+  var VersionId: js.UndefOr[ObjectVersionId] = js.native
   /**
     * If the bucket is configured as a website, redirects requests for this object to another object in the same bucket or to an external URL. Amazon S3 stores the value of this header in the object metadata.
     */
-  var WebsiteRedirectLocation: js.UndefOr[typings.awsDashSdk.clientsS3Mod.WebsiteRedirectLocation] = js.undefined
+  var WebsiteRedirectLocation: js.UndefOr[typings.awsDashSdk.clientsS3Mod.WebsiteRedirectLocation] = js.native
 }
 
 object HeadObjectOutput {
@@ -149,34 +150,34 @@ object HeadObjectOutput {
     WebsiteRedirectLocation: WebsiteRedirectLocation = null
   ): HeadObjectOutput = {
     val __obj = js.Dynamic.literal()
-    if (AcceptRanges != null) __obj.updateDynamic("AcceptRanges")(AcceptRanges)
-    if (CacheControl != null) __obj.updateDynamic("CacheControl")(CacheControl)
-    if (ContentDisposition != null) __obj.updateDynamic("ContentDisposition")(ContentDisposition)
-    if (ContentEncoding != null) __obj.updateDynamic("ContentEncoding")(ContentEncoding)
-    if (ContentLanguage != null) __obj.updateDynamic("ContentLanguage")(ContentLanguage)
+    if (AcceptRanges != null) __obj.updateDynamic("AcceptRanges")(AcceptRanges.asInstanceOf[js.Any])
+    if (CacheControl != null) __obj.updateDynamic("CacheControl")(CacheControl.asInstanceOf[js.Any])
+    if (ContentDisposition != null) __obj.updateDynamic("ContentDisposition")(ContentDisposition.asInstanceOf[js.Any])
+    if (ContentEncoding != null) __obj.updateDynamic("ContentEncoding")(ContentEncoding.asInstanceOf[js.Any])
+    if (ContentLanguage != null) __obj.updateDynamic("ContentLanguage")(ContentLanguage.asInstanceOf[js.Any])
     if (ContentLength != null) __obj.updateDynamic("ContentLength")(ContentLength.asInstanceOf[js.Any])
-    if (ContentType != null) __obj.updateDynamic("ContentType")(ContentType)
-    if (!js.isUndefined(DeleteMarker)) __obj.updateDynamic("DeleteMarker")(DeleteMarker)
-    if (ETag != null) __obj.updateDynamic("ETag")(ETag)
-    if (Expiration != null) __obj.updateDynamic("Expiration")(Expiration)
-    if (Expires != null) __obj.updateDynamic("Expires")(Expires)
-    if (LastModified != null) __obj.updateDynamic("LastModified")(LastModified)
-    if (Metadata != null) __obj.updateDynamic("Metadata")(Metadata)
+    if (ContentType != null) __obj.updateDynamic("ContentType")(ContentType.asInstanceOf[js.Any])
+    if (!js.isUndefined(DeleteMarker)) __obj.updateDynamic("DeleteMarker")(DeleteMarker.asInstanceOf[js.Any])
+    if (ETag != null) __obj.updateDynamic("ETag")(ETag.asInstanceOf[js.Any])
+    if (Expiration != null) __obj.updateDynamic("Expiration")(Expiration.asInstanceOf[js.Any])
+    if (Expires != null) __obj.updateDynamic("Expires")(Expires.asInstanceOf[js.Any])
+    if (LastModified != null) __obj.updateDynamic("LastModified")(LastModified.asInstanceOf[js.Any])
+    if (Metadata != null) __obj.updateDynamic("Metadata")(Metadata.asInstanceOf[js.Any])
     if (MissingMeta != null) __obj.updateDynamic("MissingMeta")(MissingMeta.asInstanceOf[js.Any])
     if (ObjectLockLegalHoldStatus != null) __obj.updateDynamic("ObjectLockLegalHoldStatus")(ObjectLockLegalHoldStatus.asInstanceOf[js.Any])
     if (ObjectLockMode != null) __obj.updateDynamic("ObjectLockMode")(ObjectLockMode.asInstanceOf[js.Any])
-    if (ObjectLockRetainUntilDate != null) __obj.updateDynamic("ObjectLockRetainUntilDate")(ObjectLockRetainUntilDate)
+    if (ObjectLockRetainUntilDate != null) __obj.updateDynamic("ObjectLockRetainUntilDate")(ObjectLockRetainUntilDate.asInstanceOf[js.Any])
     if (PartsCount != null) __obj.updateDynamic("PartsCount")(PartsCount.asInstanceOf[js.Any])
     if (ReplicationStatus != null) __obj.updateDynamic("ReplicationStatus")(ReplicationStatus.asInstanceOf[js.Any])
     if (RequestCharged != null) __obj.updateDynamic("RequestCharged")(RequestCharged.asInstanceOf[js.Any])
-    if (Restore != null) __obj.updateDynamic("Restore")(Restore)
-    if (SSECustomerAlgorithm != null) __obj.updateDynamic("SSECustomerAlgorithm")(SSECustomerAlgorithm)
-    if (SSECustomerKeyMD5 != null) __obj.updateDynamic("SSECustomerKeyMD5")(SSECustomerKeyMD5)
-    if (SSEKMSKeyId != null) __obj.updateDynamic("SSEKMSKeyId")(SSEKMSKeyId)
+    if (Restore != null) __obj.updateDynamic("Restore")(Restore.asInstanceOf[js.Any])
+    if (SSECustomerAlgorithm != null) __obj.updateDynamic("SSECustomerAlgorithm")(SSECustomerAlgorithm.asInstanceOf[js.Any])
+    if (SSECustomerKeyMD5 != null) __obj.updateDynamic("SSECustomerKeyMD5")(SSECustomerKeyMD5.asInstanceOf[js.Any])
+    if (SSEKMSKeyId != null) __obj.updateDynamic("SSEKMSKeyId")(SSEKMSKeyId.asInstanceOf[js.Any])
     if (ServerSideEncryption != null) __obj.updateDynamic("ServerSideEncryption")(ServerSideEncryption.asInstanceOf[js.Any])
     if (StorageClass != null) __obj.updateDynamic("StorageClass")(StorageClass.asInstanceOf[js.Any])
-    if (VersionId != null) __obj.updateDynamic("VersionId")(VersionId)
-    if (WebsiteRedirectLocation != null) __obj.updateDynamic("WebsiteRedirectLocation")(WebsiteRedirectLocation)
+    if (VersionId != null) __obj.updateDynamic("VersionId")(VersionId.asInstanceOf[js.Any])
+    if (WebsiteRedirectLocation != null) __obj.updateDynamic("WebsiteRedirectLocation")(WebsiteRedirectLocation.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeadObjectOutput]
   }
 }

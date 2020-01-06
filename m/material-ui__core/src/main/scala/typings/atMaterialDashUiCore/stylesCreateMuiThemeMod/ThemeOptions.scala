@@ -16,19 +16,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ThemeOptions extends js.Object {
-  var breakpoints: js.UndefOr[BreakpointsOptions] = js.undefined
-  var direction: js.UndefOr[Direction] = js.undefined
-  var mixins: js.UndefOr[MixinsOptions] = js.undefined
-  var overrides: js.UndefOr[Overrides] = js.undefined
-  var palette: js.UndefOr[PaletteOptions] = js.undefined
-  var props: js.UndefOr[ComponentsProps] = js.undefined
-  var shadows: js.UndefOr[Shadows] = js.undefined
-  var shape: js.UndefOr[ShapeOptions] = js.undefined
-  var spacing: js.UndefOr[SpacingOptions] = js.undefined
-  var transitions: js.UndefOr[TransitionsOptions] = js.undefined
-  var typography: js.UndefOr[TypographyOptions | (js.Function1[/* palette */ Palette, TypographyOptions])] = js.undefined
-  var zIndex: js.UndefOr[ZIndexOptions] = js.undefined
+  var breakpoints: js.UndefOr[BreakpointsOptions] = js.native
+  var direction: js.UndefOr[Direction] = js.native
+  var mixins: js.UndefOr[MixinsOptions] = js.native
+  var overrides: js.UndefOr[Overrides] = js.native
+  var palette: js.UndefOr[PaletteOptions] = js.native
+  var props: js.UndefOr[ComponentsProps] = js.native
+  var shadows: js.UndefOr[Shadows] = js.native
+  var shape: js.UndefOr[ShapeOptions] = js.native
+  var spacing: js.UndefOr[SpacingOptions] = js.native
+  var transitions: js.UndefOr[TransitionsOptions] = js.native
+  var typography: js.UndefOr[TypographyOptions | (js.Function1[/* palette */ Palette, TypographyOptions])] = js.native
+  var zIndex: js.UndefOr[ZIndexOptions] = js.native
 }
 
 object ThemeOptions {

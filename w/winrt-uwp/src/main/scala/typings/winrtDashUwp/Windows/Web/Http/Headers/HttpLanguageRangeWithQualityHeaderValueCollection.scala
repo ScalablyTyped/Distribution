@@ -45,11 +45,13 @@ abstract class HttpLanguageRangeWithQualityHeaderValueCollection () extends Arra
   def getView(): IVectorView[HttpLanguageRangeWithQualityHeaderValue] = js.native
   def indexOf(value: HttpLanguageRangeWithQualityHeaderValue, extra: js.Any*): Anon_Index = js.native
   /**
-    * Retrieves the index of an HttpLanguageRangeWithQualityHeaderValue in the collection.
-    * @param value The HttpLanguageRangeWithQualityHeaderValue to find in the HttpLanguageRangeWithQualityHeaderValueCollection .
+    * Determines the index of a specific item in the collection.
+    * @param item The object to locate in the collection.
+    * @return The index of item if found in the collection; otherwise, –1.
     */
+  /* hack */
   @JSName("indexOf")
-  def indexOf_Anon_Index(value: HttpLanguageRangeWithQualityHeaderValue): Anon_Index = js.native
+  def indexOf_Double(item: HttpLanguageRangeWithQualityHeaderValue): Double = js.native
   /**
     * Inserts an HttpLanguageRangeWithQualityHeaderValue into the collection at the specified index.
     * @param index The zero-based index at which value should be inserted.

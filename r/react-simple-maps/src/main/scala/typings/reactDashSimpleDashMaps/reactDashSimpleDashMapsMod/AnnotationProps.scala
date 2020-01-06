@@ -1,45 +1,39 @@
 package typings.reactDashSimpleDashMaps.reactDashSimpleDashMapsMod
 
-import typings.react.reactMod.CSSProperties
+import typings.react.reactMod.ClassAttributes
+import typings.react.reactMod.SVGAttributes
+import typings.react.reactMod.SVGProps
+import typings.std.SVGGElement
+import typings.std.SVGPathElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AnnotationProps extends js.Object {
+trait AnnotationProps
+  extends SVGAttributes[SVGGElement]
+     with ClassAttributes[SVGGElement] {
+  var connectorProps: SVGProps[SVGPathElement]
+  /**
+    * @default 0
+    */
   var curve: js.UndefOr[Double] = js.undefined
-  var dx: js.UndefOr[Double] = js.undefined
-  var dy: js.UndefOr[Double] = js.undefined
-  var markerEnd: js.UndefOr[String] = js.undefined
-  var stroke: js.UndefOr[String] = js.undefined
-  var strokeWidth: js.UndefOr[Double] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
   var subject: js.UndefOr[Point] = js.undefined
-  var zoom: js.UndefOr[Double] = js.undefined
 }
 
 object AnnotationProps {
   @scala.inline
   def apply(
+    connectorProps: SVGProps[SVGPathElement],
+    ClassAttributes: ClassAttributes[SVGGElement] = null,
+    SVGAttributes: SVGAttributes[SVGGElement] = null,
     curve: Int | Double = null,
-    dx: Int | Double = null,
-    dy: Int | Double = null,
-    markerEnd: String = null,
-    stroke: String = null,
-    strokeWidth: Int | Double = null,
-    style: CSSProperties = null,
-    subject: Point = null,
-    zoom: Int | Double = null
+    subject: Point = null
   ): AnnotationProps = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(connectorProps = connectorProps.asInstanceOf[js.Any])
+    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
+    if (SVGAttributes != null) js.Dynamic.global.Object.assign(__obj, SVGAttributes)
     if (curve != null) __obj.updateDynamic("curve")(curve.asInstanceOf[js.Any])
-    if (dx != null) __obj.updateDynamic("dx")(dx.asInstanceOf[js.Any])
-    if (dy != null) __obj.updateDynamic("dy")(dy.asInstanceOf[js.Any])
-    if (markerEnd != null) __obj.updateDynamic("markerEnd")(markerEnd.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
-    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotationProps]
   }
 }

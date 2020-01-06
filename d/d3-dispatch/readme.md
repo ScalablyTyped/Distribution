@@ -10,9 +10,9 @@ Register named callbacks and call them with arguments.
 | ------------------ | :-------------: |
 | Full name          | d3-dispatch |
 | Keywords           | d3, d3-module, event, listener, dispatch |
-| # releases         | 3 |
-| # dependents       | 75 |
-| # downloads        | 18193783 |
+| # releases         | 4 |
+| # dependents       | 88 |
+| # downloads        | 29682615 |
 | # stars            | 1 |
 
 ## Links

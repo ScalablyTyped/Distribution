@@ -10,9 +10,8 @@ object enumerateClassLoaders extends js.Object {
   /**
     * Enumerates class loaders.
     *
-    * You may assign such a loader to `Java.classFactory.loader` to make
-    * `Java.use()` look for classes on a specific loader instead of the default
-    * loader used by the app.
+    * You may pass such a loader to `Java.ClassFactory.get()` to be able to
+    * `.use()` classes on the specified class loader.
     *
     * @param callbacks Object with callbacks.
     */

@@ -13,9 +13,16 @@ import scala.scalajs.js.annotation._
 
 trait ISwatchColorPickerProps extends js.Object {
   /**
+    * Position this grid is in the parent set (index in a parent menu, for example)
+    */
+  var ariaPosInSet: js.UndefOr[Double] = js.undefined
+  /**
+    * Size of the parent set (size of parent menu, for example)
+    */
+  var ariaSetSize: js.UndefOr[Double] = js.undefined
+  /**
     * Width of the border indicating a hovered/selected cell, in pixels
-    * If `cellWidth` is less than 24px, then default value is 2px. Otherwise it defaults to 4px.
-    * @defaultvalue 2
+    * @defaultvalue If `cellWidth` is less than 24px, then default value is 2px. Otherwise it defaults to 4px.
     */
   var cellBorderWidth: js.UndefOr[Double] = js.undefined
   /**
@@ -29,7 +36,8 @@ trait ISwatchColorPickerProps extends js.Object {
     */
   var cellMargin: js.UndefOr[Double] = js.undefined
   /**
-    * The shape of the color cells, defaults to circle
+    * The shape of the color cells.
+    * @default 'circle'
     */
   var cellShape: js.UndefOr[circle | square] = js.undefined
   /**
@@ -44,91 +52,90 @@ trait ISwatchColorPickerProps extends js.Object {
   /**
     * The color cells that will be made available to the user.
     *
-    * Note: When the reference to this prop changes,
-    * regardless of how many color cells change, all of the color cells
-    * will be re-rendered (potentially bad perf.) because we memoize
+    * Note: When the reference to this prop changes, regardless of how many color cells change,
+    * all of the color cells will be re-rendered (potentially bad perf) because we memoize
     * based on this prop's reference.
     */
   var colorCells: js.Array[IColorCellProps]
   /**
-    * the number of columns for the swatch color picker
+    * Number of columns for the swatch color picker
     */
   var columnCount: Double
   /**
-    * Is this swatch color picker disabled?
+    * Whether the control is disabled.
     */
   var disabled: js.UndefOr[Boolean] = js.undefined
   /**
-    * If true do not contain the grid inside of a FocusZone.
-    * If false contain the grid inside of a FocusZone.
+    * If false (the default), the grid is contained inside a FocusZone.
+    * If true, a FocusZone is not used.
+    * @default false
     */
   var doNotContainWithinFocusZone: js.UndefOr[Boolean] = js.undefined
   /**
-    * Optional, whether to update focus when a cell is hovered.
+    * Whether to update focus when a cell is hovered.
     * @defaultvalue false
     */
   var focusOnHover: js.UndefOr[Boolean] = js.undefined
   /**
-    * Optional styles for the component.
+    * Styles for the grid cells.
     */
   var getColorGridCellStyles: js.UndefOr[
     IStyleFunctionOrObject[IColorPickerGridCellStyleProps, IColorPickerGridCellStyles]
   ] = js.undefined
   /**
-    * The id for the swatch color picker
+    * ID for the swatch color picker's root element. Also used as a prefix for the IDs of color cells.
     */
   var id: js.UndefOr[String] = js.undefined
   /**
     * Indicates whether the SwatchColorPicker is fully controlled.
     * When true, the component will not set its internal state to track the selected color.
     * Instead, the parent component will be responsible for handling state in the callbacks like
-    * onColorChanged.
+    * `onColorChanged`.
     *
     * NOTE: This property is a temporary workaround to force the component to be fully controllable
     * without breaking existing behavior
     */
   var isControlled: js.UndefOr[Boolean] = js.undefined
   /**
-    * Selector to focus on mouseLeave
-    * SHOULD ONLY BE USED IN CONJUNCTION WITH focusOnHover
+    * Selector to focus on mouse leave. Should only be used in conjunction with `focusOnHover`.
     */
   var mouseLeaveParentSelector: js.UndefOr[String] = js.undefined
   /**
-    * Callback issued when the user focuses a color cell.
-    * Note, if no id or color is given, cells are not longer being focused
+    * Callback for when the user focuses a color cell.
+    * If `id` and `color` are unspecified, cells are no longer being focused.
     */
   var onCellFocused: js.UndefOr[js.Function2[/* id */ js.UndefOr[String], /* color */ js.UndefOr[String], Unit]] = js.undefined
   /**
-    * Callback issued when the user hovers over a color cell.
-    * Note, if no id or color is given, cells are not longer being hovered
+    * Callback for when the user hovers over a color cell.
+    * If `id` and `color` are unspecified, cells are no longer being hovered.
     */
   var onCellHovered: js.UndefOr[js.Function2[/* id */ js.UndefOr[String], /* color */ js.UndefOr[String], Unit]] = js.undefined
   /**
-    * Callback issued when the user changes the color.
-    * Note, if no id or color is given, there is no selected cell
+    * Callback for when the user changes the color.
+    * If `id` and `color` are unspecified, there is no selected cell.
     * (e.g. the user executed the currently selected cell to unselect it)
     */
   var onColorChanged: js.UndefOr[js.Function2[/* id */ js.UndefOr[String], /* color */ js.UndefOr[String], Unit]] = js.undefined
   /**
-    * The optional position this grid is in the parent set (index in a parent menu, for example)
+    * @deprecated Use `ariaPosInSet`
     */
   var positionInSet: js.UndefOr[Double] = js.undefined
   /**
-    * The id of color cell that is currently selected
+    * The ID of color cell that is currently selected
     */
   var selectedId: js.UndefOr[String] = js.undefined
   /**
-    * The optional size of the parent set (size of parent menu, for example)
+    * @deprecated Use `ariaSetSize`
     */
   var setSize: js.UndefOr[Double] = js.undefined
   /**
-    * Should focus cycle to the beginning of once the user navigates past the end (and vice versa).
-    * This prop is only relevant if doNotcontainWithinFocusZone is not true
+    * Whether focus should cycle back to the beginning once the user navigates past the end (and vice versa).
+    * Only relevant if `doNotContainWithinFocusZone` is not true.
     * @defaultvalue true
     */
   var shouldFocusCircularNavigate: js.UndefOr[Boolean] = js.undefined
   /**
-    * Optional styles for the component.
+    * Styles for the component.
     */
   var styles: js.UndefOr[IStyleFunctionOrObject[ISwatchColorPickerStyleProps, ISwatchColorPickerStyles]] = js.undefined
   /**
@@ -142,6 +149,8 @@ object ISwatchColorPickerProps {
   def apply(
     colorCells: js.Array[IColorCellProps],
     columnCount: Double,
+    ariaPosInSet: Int | Double = null,
+    ariaSetSize: Int | Double = null,
     cellBorderWidth: Int | Double = null,
     cellHeight: Int | Double = null,
     cellMargin: Int | Double = null,
@@ -166,6 +175,8 @@ object ISwatchColorPickerProps {
     theme: ITheme = null
   ): ISwatchColorPickerProps = {
     val __obj = js.Dynamic.literal(colorCells = colorCells.asInstanceOf[js.Any], columnCount = columnCount.asInstanceOf[js.Any])
+    if (ariaPosInSet != null) __obj.updateDynamic("ariaPosInSet")(ariaPosInSet.asInstanceOf[js.Any])
+    if (ariaSetSize != null) __obj.updateDynamic("ariaSetSize")(ariaSetSize.asInstanceOf[js.Any])
     if (cellBorderWidth != null) __obj.updateDynamic("cellBorderWidth")(cellBorderWidth.asInstanceOf[js.Any])
     if (cellHeight != null) __obj.updateDynamic("cellHeight")(cellHeight.asInstanceOf[js.Any])
     if (cellMargin != null) __obj.updateDynamic("cellMargin")(cellMargin.asInstanceOf[js.Any])

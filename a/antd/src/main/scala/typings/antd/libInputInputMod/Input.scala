@@ -17,9 +17,15 @@ trait Input
   extends Component[InputProps, InputState, js.Any] {
   var clearableInput: typings.antd.libInputClearableLabeledInputMod.default = js.native
   var input: HTMLInputElement = js.native
+  var removePasswordTimeout: Double = js.native
   def blur(): Unit = js.native
+  def clearPasswordValueAttribute(): Unit = js.native
+  @JSName("componentDidMount")
+  def componentDidMount_MInput(): Unit = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MInput(): Unit = js.native
+  @JSName("componentWillUnmount")
+  def componentWillUnmount_MInput(): Unit = js.native
   def focus(): Unit = js.native
   @JSName("getSnapshotBeforeUpdate")
   def getSnapshotBeforeUpdate_MInput(prevProps: InputProps): Null = js.native

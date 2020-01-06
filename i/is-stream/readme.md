@@ -10,9 +10,9 @@ Check if something is a Node.js stream
 | ------------------ | :-------------: |
 | Full name          | is-stream |
 | Keywords           | stream, type, streams, writable, readable, duplex, transform, check, detect, is |
-| # releases         | 1 |
-| # dependents       | 297 |
-| # downloads        | 298933457 |
+| # releases         | 2 |
+| # dependents       | 351 |
+| # downloads        | 479425284 |
 | # stars            | 5 |
 
 ## Links

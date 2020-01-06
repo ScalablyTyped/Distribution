@@ -11,8 +11,8 @@ A robust base64 encoder/decoder that is fully compatible with `atob()` and `btoa
 | Full name          | base-64 |
 | Keywords           | codec, decoder, encoder, base64, atob, btoa |
 | # releases         | 1 |
-| # dependents       | 412 |
-| # downloads        | 9113400 |
+| # dependents       | 525 |
+| # downloads        | 12324328 |
 | # stars            | 19 |
 
 ## Links

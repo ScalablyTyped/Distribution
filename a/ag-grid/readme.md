@@ -10,9 +10,9 @@ Advanced Data Grid / Data Table supporting Javascript / React / AngularJS / Web 
 | ------------------ | :-------------: |
 | Full name          | ag-grid |
 | Keywords           | web-components, grid, data, table, angular, angular-component, react, react-component, angularjs, reactjs |
-| # releases         | 42 |
-| # dependents       | 94 |
-| # downloads        | 2213384 |
+| # releases         | 22 |
+| # dependents       | 97 |
+| # downloads        | 2102109 |
 | # stars            | 10 |
 
 ## Links

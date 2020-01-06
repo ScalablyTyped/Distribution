@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jss-preset-default" : "10.0.1"
+      "jss-preset-default" : "10.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "jss-preset-default" : "10.0.1"
+      "jss-preset-default" : "10.0.3"
     }
   ],
   "compile-devDependencies" : [

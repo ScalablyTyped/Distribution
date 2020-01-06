@@ -8,29 +8,30 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VpcPeeringConnectionAccepterArgs extends js.Object {
   /**
     * A configuration block that describes [VPC Peering Connection]
     * (http://docs.aws.amazon.com/AmazonVPC/latest/PeeringGuide) options set for the accepter VPC.
     */
-  val accepter: js.UndefOr[Input[VpcPeeringConnectionAccepterAccepter]] = js.undefined
+  val accepter: js.UndefOr[Input[VpcPeeringConnectionAccepterAccepter]] = js.native
   /**
     * Whether or not to accept the peering request. Defaults to `false`.
     */
-  val autoAccept: js.UndefOr[Input[Boolean]] = js.undefined
+  val autoAccept: js.UndefOr[Input[Boolean]] = js.native
   /**
     * A configuration block that describes [VPC Peering Connection]
     * (http://docs.aws.amazon.com/AmazonVPC/latest/PeeringGuide) options set for the requester VPC.
     */
-  val requester: js.UndefOr[Input[VpcPeeringConnectionAccepterRequester]] = js.undefined
+  val requester: js.UndefOr[Input[VpcPeeringConnectionAccepterRequester]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * The VPC Peering Connection ID to manage.
     */
-  val vpcPeeringConnectionId: Input[String]
+  val vpcPeeringConnectionId: Input[String] = js.native
 }
 
 object VpcPeeringConnectionAccepterArgs {

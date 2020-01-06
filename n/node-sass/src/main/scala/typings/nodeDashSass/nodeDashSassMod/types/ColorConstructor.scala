@@ -10,17 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ColorConstructor
   extends /**
-		 * Constructs a new Sass color given the RGBA component values. Do not invoke with the `new` keyword.
-		 *
-		 * @param r integer 0-255 inclusive
-		 * @param g integer 0-255 inclusive
-		 * @param b integer 0-255 inclusive
-		 * @param [a] float 0 - 1 inclusive
-		 * @returns a SassColor instance.
-		 */
-Instantiable3[/* r */ Double, /* g */ Double, /* b */ Double, Color]
-     with Instantiable4[/* r */ Double, /* g */ Double, /* b */ Double, /* a */ Double, Color]
-     with /**
 		 * Constructs a new Sass color given a 4 byte number. Do not invoke with the `new` keyword.
 		 *
 		 * If a single number is passed it is assumed to be a number that contains
@@ -40,7 +29,18 @@ Instantiable3[/* r */ Double, /* g */ Double, /* b */ Double, Color]
 		 *   let components = [c.getR(), c.getG(), c.getR(), c.getA()] // [ 136, 0, 255, 0.8 ]
 		 *   assert.deepEqual(componentBytes, components); // does not raise.
 		 */
-Instantiable1[/* hexN */ Double, Color] {
+Instantiable1[/* hexN */ Double, Color]
+     with /**
+		 * Constructs a new Sass color given the RGBA component values. Do not invoke with the `new` keyword.
+		 *
+		 * @param r integer 0-255 inclusive
+		 * @param g integer 0-255 inclusive
+		 * @param b integer 0-255 inclusive
+		 * @param [a] float 0 - 1 inclusive
+		 * @returns a SassColor instance.
+		 */
+Instantiable3[/* r */ Double, /* g */ Double, /* b */ Double, Color]
+     with Instantiable4[/* r */ Double, /* g */ Double, /* b */ Double, /* a */ Double, Color] {
   /**
   		 * Constructs a new Sass color given a 4 byte number. Do not invoke with the `new` keyword.
   		 *

@@ -6,8 +6,6 @@ import scala.scalajs.js.annotation._
 
 package object clientsApigatewayv2Mod {
   import org.scalablytyped.runtime.StringDictionary
-  import typings.awsDashSdk.awsDashSdkStrings.REQUEST
-  import typings.awsDashSdk.awsDashSdkStrings.WEBSOCKET
   import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
   import typings.std.Date
 
@@ -17,10 +15,16 @@ package object clientsApigatewayv2Mod {
     - typings.awsDashSdk.awsDashSdkStrings.NONE
     - typings.awsDashSdk.awsDashSdkStrings.AWS_IAM
     - typings.awsDashSdk.awsDashSdkStrings.CUSTOM
+    - typings.awsDashSdk.awsDashSdkStrings.JWT
     - java.lang.String
   */
   type AuthorizationType = _AuthorizationType | String
-  type AuthorizerType = REQUEST | String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.REQUEST
+    - typings.awsDashSdk.awsDashSdkStrings.JWT
+    - java.lang.String
+  */
+  type AuthorizerType = _AuthorizerType | String
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.INTERNET
@@ -34,6 +38,9 @@ package object clientsApigatewayv2Mod {
     - java.lang.String
   */
   type ContentHandlingStrategy = _ContentHandlingStrategy | String
+  type CorsHeaderList = js.Array[__string]
+  type CorsMethodList = js.Array[StringWithLengthBetween1And64]
+  type CorsOriginList = js.Array[__string]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.PENDING
     - typings.awsDashSdk.awsDashSdkStrings.FAILED
@@ -58,6 +65,7 @@ package object clientsApigatewayv2Mod {
   type IdentitySourceList = js.Array[__string]
   type IntegerWithLengthBetween0And3600 = Double
   type IntegerWithLengthBetween50And29000 = Double
+  type IntegerWithLengthBetweenMinus1And86400 = Double
   type IntegrationParameters = StringDictionary[StringWithLengthBetween1And512]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.AWS
@@ -71,7 +79,7 @@ package object clientsApigatewayv2Mod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.ERROR
     - typings.awsDashSdk.awsDashSdkStrings.INFO
-    - typings.awsDashSdk.awsDashSdkStrings.`false`
+    - typings.awsDashSdk.awsDashSdkStrings.false__
     - java.lang.String
   */
   type LoggingLevel = _LoggingLevel | String
@@ -83,8 +91,12 @@ package object clientsApigatewayv2Mod {
     - java.lang.String
   */
   type PassthroughBehavior = _PassthroughBehavior | String
-  type ProtocolType = WEBSOCKET | String
-  type ProviderArnList = js.Array[Arn]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.WEBSOCKET
+    - typings.awsDashSdk.awsDashSdkStrings.HTTP
+    - java.lang.String
+  */
+  type ProtocolType = _ProtocolType | String
   type RouteModels = StringDictionary[StringWithLengthBetween1And128]
   type RouteParameters = StringDictionary[ParameterConstraints]
   type RouteSettingsMap = StringDictionary[RouteSettings]
@@ -124,12 +136,11 @@ package object clientsApigatewayv2Mod {
   type __listOfRouteResponse = js.Array[RouteResponse]
   type __listOfStage = js.Array[Stage]
   type __listOf__string = js.Array[__string]
-  type __mapOf__string = StringDictionary[__string]
   type __string = String
   type __timestampIso8601 = Date
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2018-11-29`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

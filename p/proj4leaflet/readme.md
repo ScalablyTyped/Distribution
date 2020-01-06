@@ -10,9 +10,9 @@ Smooth Proj4js integration with Leaflet
 | ------------------ | :-------------: |
 | Full name          | proj4leaflet |
 | Keywords           | maps, proj4, projection, leaflet |
-| # releases         | 2 |
-| # dependents       | 11 |
-| # downloads        | 72835 |
+| # releases         | 0 |
+| # dependents       | 18 |
+| # downloads        | 105361 |
 | # stars            | 0 |
 
 ## Links

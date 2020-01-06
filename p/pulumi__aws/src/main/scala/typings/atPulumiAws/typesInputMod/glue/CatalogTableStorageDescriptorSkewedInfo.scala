@@ -6,19 +6,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CatalogTableStorageDescriptorSkewedInfo extends js.Object {
   /**
     * A list of names of columns that contain skewed values.
     */
-  var skewedColumnNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  var skewedColumnNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * A list of values that appear so frequently as to be considered skewed.
     */
-  var skewedColumnValueLocationMaps: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
+  var skewedColumnValueLocationMaps: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * A mapping of skewed values to the columns that contain them.
     */
-  var skewedColumnValues: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  var skewedColumnValues: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
 }
 
 object CatalogTableStorageDescriptorSkewedInfo {

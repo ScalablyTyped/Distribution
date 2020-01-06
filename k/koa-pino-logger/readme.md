@@ -10,9 +10,9 @@ pino logging koa middleware
 | ------------------ | :-------------: |
 | Full name          | koa-pino-logger |
 | Keywords           | koa, http, logger, fast, pino |
-| # releases         | 7 |
-| # dependents       | 11 |
-| # downloads        | 125380 |
+| # releases         | 6 |
+| # dependents       | 14 |
+| # downloads        | 322348 |
 | # stars            | 0 |
 
 ## Links

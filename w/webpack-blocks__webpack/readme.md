@@ -10,9 +10,9 @@ Webpack block for the webpack 2.x base configuration.
 | ------------------ | :-------------: |
 | Full name          | @webpack-blocks/webpack |
 | Keywords           | webpack, webpack-blocks |
-| # releases         | 7 |
+| # releases         | 6 |
 | # dependents       | 6 |
-| # downloads        | 203465 |
+| # downloads        | 180853 |
 | # stars            | 1 |
 
 ## Links

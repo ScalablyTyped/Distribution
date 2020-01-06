@@ -30,14 +30,14 @@ object LabelOptions {
     zoomAnimation: js.UndefOr[Boolean] = js.undefined
   ): LabelOptions = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className)
-    if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable)
-    if (direction != null) __obj.updateDynamic("direction")(direction)
-    if (!js.isUndefined(noHide)) __obj.updateDynamic("noHide")(noHide)
-    if (offset != null) __obj.updateDynamic("offset")(offset)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable.asInstanceOf[js.Any])
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    if (!js.isUndefined(noHide)) __obj.updateDynamic("noHide")(noHide.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (pane != null) __obj.updateDynamic("pane")(pane)
-    if (!js.isUndefined(zoomAnimation)) __obj.updateDynamic("zoomAnimation")(zoomAnimation)
+    if (pane != null) __obj.updateDynamic("pane")(pane.asInstanceOf[js.Any])
+    if (!js.isUndefined(zoomAnimation)) __obj.updateDynamic("zoomAnimation")(zoomAnimation.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelOptions]
   }
 }

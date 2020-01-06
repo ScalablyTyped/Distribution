@@ -42,11 +42,8 @@ class WwwFormUrlDecoder protected () extends Array[IWwwFormUrlDecoderEntry] {
     */
   def getMany(startIndex: Double): Anon_ItemsReturnValue = js.native
   def indexOf(value: IWwwFormUrlDecoderEntry, extra: js.Any*): Anon_Index = js.native
-  /**
-    * Gets a value indicating whether the specified IWwwFormUrlDecoderEntry is at the specified index in the current URL query string.
-    * @param value The name-value pair to get the index of.
-    */
+  /* hack */
   @JSName("indexOf")
-  def indexOf_Anon_Index(value: IWwwFormUrlDecoderEntry): Anon_Index = js.native
+  def indexOf_Double(searchElement: IWwwFormUrlDecoderEntry): Double = js.native
 }
 

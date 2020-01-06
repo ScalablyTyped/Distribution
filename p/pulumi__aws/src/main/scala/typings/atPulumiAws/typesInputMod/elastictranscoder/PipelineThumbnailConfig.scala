@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PipelineThumbnailConfig extends js.Object {
   /**
     * The Amazon S3 bucket in which you want Elastic Transcoder to save thumbnail files.
     */
-  var bucket: js.UndefOr[Input[String]] = js.undefined
+  var bucket: js.UndefOr[Input[String]] = js.native
   /**
     * The Amazon S3 storage class, Standard or ReducedRedundancy, that you want Elastic Transcoder to assign to the thumbnails that it stores in your Amazon S3 bucket.
     */
-  var storageClass: js.UndefOr[Input[String]] = js.undefined
+  var storageClass: js.UndefOr[Input[String]] = js.native
 }
 
 object PipelineThumbnailConfig {

@@ -10,9 +10,9 @@ A library for validating credit card fields
 | ------------------ | :-------------: |
 | Full name          | card-validator |
 | Keywords           | - |
-| # releases         | 9 |
-| # dependents       | 56 |
-| # downloads        | 3139527 |
+| # releases         | 7 |
+| # dependents       | 75 |
+| # downloads        | 5918022 |
 | # stars            | 2 |
 
 ## Links

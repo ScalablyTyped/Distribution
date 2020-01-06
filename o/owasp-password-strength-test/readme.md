@@ -11,8 +11,8 @@ A password-strength tester based upon the OWASP guidelines for enforcing strong 
 | Full name          | owasp-password-strength-test |
 | Keywords           | security, password, owasp |
 | # releases         | 1 |
-| # dependents       | 19 |
-| # downloads        | 452256 |
+| # dependents       | 23 |
+| # downloads        | 658137 |
 | # stars            | 9 |
 
 ## Links

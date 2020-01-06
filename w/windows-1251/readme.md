@@ -12,7 +12,7 @@ A robust windows-1251 encoder/decoder written in JavaScript.
 | Keywords           | codec, decoder, decoding, encoder, encoding, legacy, legacy-encoding, cp1251, windows-1251, x-cp1251 |
 | # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 30009 |
+| # downloads        | 35528 |
 | # stars            | 1 |
 
 ## Links

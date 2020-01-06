@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait ISwatchColorPickerStyles extends js.Object {
   /**
-    * Optional, style for the FocusZone container for the grid
+    * Style for the FocusZone container for the grid.
     */
   var focusedContainer: js.UndefOr[IStyle] = js.undefined
   /**
-    * Style applied to the container grid of the swatchColorPicker
+    * Style applied to the container grid.
     */
   var root: IStyle
   /**

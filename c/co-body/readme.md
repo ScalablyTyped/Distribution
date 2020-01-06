@@ -10,8 +10,8 @@ request body parsing for co
 | Full name          | co-body |
 | Keywords           | request, parse, parser, json, co, generators, urlencoded |
 | # releases         | 3 |
-| # dependents       | 226 |
-| # downloads        | 6791563 |
+| # dependents       | 235 |
+| # downloads        | 11486732 |
 | # stars            | 17 |
 
 ## Links

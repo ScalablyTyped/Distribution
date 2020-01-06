@@ -12,7 +12,7 @@ The lodash method `_.unzipWith` exported as a module.
 | Keywords           | lodash-modularized, unzipwith |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 586 |
+| # downloads        | 921 |
 | # stars            | 0 |
 
 ## Links

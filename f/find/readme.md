@@ -11,8 +11,8 @@ Find files or directories by name
 | Full name          | find |
 | Keywords           | find, findfile, search, files |
 | # releases         | 4 |
-| # dependents       | 148 |
-| # downloads        | 8800795 |
+| # dependents       | 190 |
+| # downloads        | 16053647 |
 | # stars            | 10 |
 
 ## Links

@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ParameterDefinition extends js.Object {
   /**
     * A regular expression that represents the patterns to allow for String types.
     */
-  var AllowedPattern: js.UndefOr[__string] = js.undefined
+  var AllowedPattern: js.UndefOr[__string] = js.native
   /**
     * An array containing the list of values allowed for the parameter.
     */
-  var AllowedValues: js.UndefOr[__listOf__string] = js.undefined
+  var AllowedValues: js.UndefOr[__listOf__string] = js.native
   /**
     * A string that explains a constraint when the constraint is violated. For example, without a constraint description,
     a parameter that has an allowed pattern of [A-Za-z0-9]+ displays the following error message when the user
@@ -23,45 +24,45 @@ trait ParameterDefinition extends js.Object {
     Malformed input-Parameter MyParameter must contain only uppercase and lowercase letters and numbers.
     
     */
-  var ConstraintDescription: js.UndefOr[__string] = js.undefined
+  var ConstraintDescription: js.UndefOr[__string] = js.native
   /**
     * A value of the appropriate type for the template to use if no value is specified when a stack is created.
     If you define constraints for the parameter, you must specify a value that adheres to those constraints.
     */
-  var DefaultValue: js.UndefOr[__string] = js.undefined
+  var DefaultValue: js.UndefOr[__string] = js.native
   /**
     * A string of up to 4,000 characters that describes the parameter.
     */
-  var Description: js.UndefOr[__string] = js.undefined
+  var Description: js.UndefOr[__string] = js.native
   /**
     * An integer value that determines the largest number of characters that you want to allow for String types.
     */
-  var MaxLength: js.UndefOr[__integer] = js.undefined
+  var MaxLength: js.UndefOr[__integer] = js.native
   /**
     * A numeric value that determines the largest numeric value that you want to allow for Number types.
     */
-  var MaxValue: js.UndefOr[__integer] = js.undefined
+  var MaxValue: js.UndefOr[__integer] = js.native
   /**
     * An integer value that determines the smallest number of characters that you want to allow for String types.
     */
-  var MinLength: js.UndefOr[__integer] = js.undefined
+  var MinLength: js.UndefOr[__integer] = js.native
   /**
     * A numeric value that determines the smallest numeric value that you want to allow for Number types.
     */
-  var MinValue: js.UndefOr[__integer] = js.undefined
+  var MinValue: js.UndefOr[__integer] = js.native
   /**
     * The name of the parameter.
     */
-  var Name: __string
+  var Name: __string = js.native
   /**
     * Whether to mask the parameter value whenever anyone makes a call that describes the stack. If you set the
     value to true, the parameter value is masked with asterisks (*****).
     */
-  var NoEcho: js.UndefOr[__boolean] = js.undefined
+  var NoEcho: js.UndefOr[__boolean] = js.native
   /**
     * A list of AWS SAM resources that use this parameter.
     */
-  var ReferencedByResources: __listOf__string
+  var ReferencedByResources: __listOf__string = js.native
   /**
     * The type of the parameter.Valid values: String | Number | List&lt;Number> | CommaDelimitedList
     
@@ -73,7 +74,7 @@ trait ParameterDefinition extends js.Object {
     CommaDelimitedList: An array of literal strings that are separated by commas. The total number of strings should be one more than the total number of commas.
     Also, each member string is space-trimmed.For example, users might specify "test,dev,prod", and then Ref results in ["test","dev","prod"].
     */
-  var Type: js.UndefOr[__string] = js.undefined
+  var Type: js.UndefOr[__string] = js.native
 }
 
 object ParameterDefinition {
@@ -93,18 +94,18 @@ object ParameterDefinition {
     NoEcho: js.UndefOr[Boolean] = js.undefined,
     Type: __string = null
   ): ParameterDefinition = {
-    val __obj = js.Dynamic.literal(Name = Name, ReferencedByResources = ReferencedByResources)
-    if (AllowedPattern != null) __obj.updateDynamic("AllowedPattern")(AllowedPattern)
-    if (AllowedValues != null) __obj.updateDynamic("AllowedValues")(AllowedValues)
-    if (ConstraintDescription != null) __obj.updateDynamic("ConstraintDescription")(ConstraintDescription)
-    if (DefaultValue != null) __obj.updateDynamic("DefaultValue")(DefaultValue)
-    if (Description != null) __obj.updateDynamic("Description")(Description)
+    val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], ReferencedByResources = ReferencedByResources.asInstanceOf[js.Any])
+    if (AllowedPattern != null) __obj.updateDynamic("AllowedPattern")(AllowedPattern.asInstanceOf[js.Any])
+    if (AllowedValues != null) __obj.updateDynamic("AllowedValues")(AllowedValues.asInstanceOf[js.Any])
+    if (ConstraintDescription != null) __obj.updateDynamic("ConstraintDescription")(ConstraintDescription.asInstanceOf[js.Any])
+    if (DefaultValue != null) __obj.updateDynamic("DefaultValue")(DefaultValue.asInstanceOf[js.Any])
+    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (MaxLength != null) __obj.updateDynamic("MaxLength")(MaxLength.asInstanceOf[js.Any])
     if (MaxValue != null) __obj.updateDynamic("MaxValue")(MaxValue.asInstanceOf[js.Any])
     if (MinLength != null) __obj.updateDynamic("MinLength")(MinLength.asInstanceOf[js.Any])
     if (MinValue != null) __obj.updateDynamic("MinValue")(MinValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(NoEcho)) __obj.updateDynamic("NoEcho")(NoEcho)
-    if (Type != null) __obj.updateDynamic("Type")(Type)
+    if (!js.isUndefined(NoEcho)) __obj.updateDynamic("NoEcho")(NoEcho.asInstanceOf[js.Any])
+    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParameterDefinition]
   }
 }

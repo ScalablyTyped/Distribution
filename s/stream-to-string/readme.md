@@ -11,8 +11,8 @@ Pipe a stream into a string, collect value with callback or promise
 | Full name          | stream-to-string |
 | Keywords           | stream, string, buffer, callback, promise |
 | # releases         | 2 |
-| # dependents       | 79 |
-| # downloads        | 1092161 |
+| # dependents       | 93 |
+| # downloads        | 2097306 |
 | # stars            | 2 |
 
 ## Links

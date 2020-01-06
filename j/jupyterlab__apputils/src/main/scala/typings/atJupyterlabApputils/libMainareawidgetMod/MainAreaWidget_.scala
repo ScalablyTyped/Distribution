@@ -293,7 +293,6 @@ class MainAreaWidget_[T /* <: Widget */] protected ()
     *
     * @param msg - The message to be processed.
     */
-  /* CompleteClass */
   /* InferMemberOverrides */
   override def processMessage(msg: Message): Unit = js.native
   /**

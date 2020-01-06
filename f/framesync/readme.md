@@ -10,9 +10,9 @@ A Unity-inspired render loop for JavaScript
 | ------------------ | :-------------: |
 | Full name          | framesync |
 | Keywords           | animation, raf |
-| # releases         | 19 |
-| # dependents       | 8 |
-| # downloads        | 1472580 |
+| # releases         | 12 |
+| # dependents       | 9 |
+| # downloads        | 4463578 |
 | # stars            | 0 |
 
 ## Links

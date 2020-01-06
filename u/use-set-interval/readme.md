@@ -12,7 +12,7 @@ A React Hook (using useEffect) which uses window.setInterval().
 | Keywords           | react, hook, hooks, react-hook, react-hooks |
 | # releases         | 11 |
 | # dependents       | 0 |
-| # downloads        | 825 |
+| # downloads        | 1200 |
 | # stars            | 0 |
 
 ## Links

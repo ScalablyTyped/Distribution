@@ -5,23 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FleetEc2InboundPermission extends js.Object {
   /**
     * Starting value for a range of allowed port numbers.
     */
-  var fromPort: Input[Double]
+  var fromPort: Input[Double] = js.native
   /**
     * Range of allowed IP addresses expressed in CIDR notation. e.g. `000.000.000.000/[subnet mask]` or `0.0.0.0/[subnet mask]`.
     */
-  var ipRange: Input[String]
+  var ipRange: Input[String] = js.native
   /**
     * Network communication protocol used by the fleet. e.g. `TCP` or `UDP`
     */
-  var protocol: Input[String]
+  var protocol: Input[String] = js.native
   /**
     * Ending value for a range of allowed port numbers. Port numbers are end-inclusive. This value must be higher than `fromPort`.
     */
-  var toPort: Input[Double]
+  var toPort: Input[Double] = js.native
 }
 
 object FleetEc2InboundPermission {

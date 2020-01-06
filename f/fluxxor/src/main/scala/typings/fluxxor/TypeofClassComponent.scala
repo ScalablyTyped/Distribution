@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TypeofClassComponent
   extends Instantiable1[
-      /* import warning: RewrittenClass.unapply cls $anonfun was tparam P */ /* props */ js.Any, 
+      /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ js.Any, 
       Component[js.Object, js.Object, js.Object]
     ] {
   // tslint won't let me format the sample code in a way that vscode likes it :(

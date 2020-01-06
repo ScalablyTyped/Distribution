@@ -6,48 +6,46 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VpcEndpointArgs extends js.Object {
   /**
     * Accept the VPC endpoint (the VPC endpoint and service need to be in the same AWS account).
     */
-  val autoAccept: js.UndefOr[Input[Boolean]] = js.undefined
-  /**
-    * A policy to attach to the endpoint that controls access to the service. Defaults to full access. All `Gateway` and some `Interface` endpoints support policies - see the [relevant AWS documentation](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-endpoints-access.html) for more details.
-    */
-  val policy: js.UndefOr[Input[String]] = js.undefined
+  val autoAccept: js.UndefOr[Input[Boolean]] = js.native
+  val policy: js.UndefOr[Input[String]] = js.native
   /**
     * Whether or not to associate a private hosted zone with the specified VPC. Applicable for endpoints of type `Interface`.
     * Defaults to `false`.
     */
-  val privateDnsEnabled: js.UndefOr[Input[Boolean]] = js.undefined
+  val privateDnsEnabled: js.UndefOr[Input[Boolean]] = js.native
   /**
     * One or more route table IDs. Applicable for endpoints of type `Gateway`.
     */
-  val routeTableIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val routeTableIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The ID of one or more security groups to associate with the network interface. Required for endpoints of type `Interface`.
     */
-  val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The service name, in the form `com.amazonaws.region.service` for AWS services.
     */
-  val serviceName: Input[String]
+  val serviceName: Input[String] = js.native
   /**
     * The ID of one or more subnets in which to create a network interface for the endpoint. Applicable for endpoints of type `Interface`.
     */
-  val subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * The VPC endpoint type, `Gateway` or `Interface`. Defaults to `Gateway`.
     */
-  val vpcEndpointType: js.UndefOr[Input[String]] = js.undefined
+  val vpcEndpointType: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of the VPC in which the endpoint will be used.
     */
-  val vpcId: Input[String]
+  val vpcId: Input[String] = js.native
 }
 
 object VpcEndpointArgs {

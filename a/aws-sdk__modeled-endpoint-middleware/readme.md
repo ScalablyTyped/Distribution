@@ -9,9 +9,9 @@ Typings are for version 0.1.0-preview.1
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/modeled-endpoint-middleware |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 0 |
-| # downloads        | 203 |
+| # releases         | 10 |
+| # dependents       | 2 |
+| # downloads        | 414 |
 | # stars            | 0 |
 
 ## Links

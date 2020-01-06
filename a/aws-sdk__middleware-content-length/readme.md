@@ -9,9 +9,9 @@ Typings are for version 0.1.0-preview.1
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/middleware-content-length |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 16 |
-| # downloads        | 6668 |
+| # releases         | 9 |
+| # dependents       | 368 |
+| # downloads        | 30228 |
 | # stars            | 0 |
 
 ## Links

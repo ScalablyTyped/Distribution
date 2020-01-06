@@ -6,24 +6,25 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ResourceServerState extends js.Object {
   /**
     * An identifier for the resource server.
     */
-  val identifier: js.UndefOr[Input[String]] = js.undefined
+  val identifier: js.UndefOr[Input[String]] = js.native
   /**
     * A name for the resource server.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * A list of all scopes configured for this resource server in the format identifier/scope_name.
     */
-  val scopeIdentifiers: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val scopeIdentifiers: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * A list of Authorization Scope.
     */
-  val scopes: js.UndefOr[Input[js.Array[Input[ResourceServerScope]]]] = js.undefined
-  val userPoolId: js.UndefOr[Input[String]] = js.undefined
+  val scopes: js.UndefOr[Input[js.Array[Input[ResourceServerScope]]]] = js.native
+  val userPoolId: js.UndefOr[Input[String]] = js.native
 }
 
 object ResourceServerState {

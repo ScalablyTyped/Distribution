@@ -10,9 +10,9 @@ Test utils to simplify testing of containers in redux.
 | ------------------ | :-------------: |
 | Full name          | redux-test-utils |
 | Keywords           | redux, store, test |
-| # releases         | 6 |
-| # dependents       | 5 |
-| # downloads        | 1142044 |
+| # releases         | 2 |
+| # dependents       | 6 |
+| # downloads        | 1213499 |
 | # stars            | 1 |
 
 ## Links

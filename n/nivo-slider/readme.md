@@ -12,7 +12,7 @@ The Most Awesome jQuery Image Slider.
 | Keywords           | nivo, image, slider |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 3006 |
+| # downloads        | 4882 |
 | # stars            | 0 |
 
 ## Links

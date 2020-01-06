@@ -10,9 +10,9 @@ SDK for sending events to debessmann
 | ------------------ | :-------------: |
 | Full name          | debessmann |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 101 |
+| # downloads        | 134 |
 | # stars            | 0 |
 
 ## Links

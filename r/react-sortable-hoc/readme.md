@@ -10,9 +10,9 @@ Set of higher-order components to turn any list into a sortable, touch-friendly,
 | ------------------ | :-------------: |
 | Full name          | react-sortable-hoc |
 | Keywords           | react, reactjs, react-component, sortable, sortable-list, list, sortable list, smooth, animated, hoc, higher-order, component |
-| # releases         | 38 |
-| # dependents       | 165 |
-| # downloads        | 6749631 |
+| # releases         | 36 |
+| # dependents       | 242 |
+| # downloads        | 11891547 |
 | # stars            | 9 |
 
 ## Links

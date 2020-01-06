@@ -9,9 +9,9 @@ A CoffeeScript documentation generator.
 | ------------------ | :-------------: |
 | Full name          | donna |
 | Keywords           | coffeescript, doc, api |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 28335 |
+| # downloads        | 24475 |
 | # stars            | 0 |
 
 ## Links

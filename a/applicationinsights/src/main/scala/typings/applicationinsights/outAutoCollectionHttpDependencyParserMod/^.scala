@@ -1,7 +1,7 @@
 package typings.applicationinsights.outAutoCollectionHttpDependencyParserMod
 
 import typings.node.httpMod.ClientRequest
-import typings.node.httpMod.RequestOptions
+import typings.node.httpsMod.RequestOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("applicationinsights/out/AutoCollection/HttpDependencyParser", JSImport.Namespace)
 @js.native
 class ^ protected () extends HttpDependencyParser {
-  def this(requestOptions: RequestOptions | typings.node.httpsMod.RequestOptions, request: ClientRequest) = this()
+  def this(requestOptions: RequestOptions | typings.node.httpMod.RequestOptions, request: ClientRequest) = this()
   def this(requestOptions: String, request: ClientRequest) = this()
 }
 

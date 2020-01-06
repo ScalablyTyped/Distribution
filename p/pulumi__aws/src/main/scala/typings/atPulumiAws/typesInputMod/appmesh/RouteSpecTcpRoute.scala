@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RouteSpecTcpRoute extends js.Object {
   /**
     * The action to take if a match is determined.
     */
-  var action: Input[RouteSpecTcpRouteAction]
+  var action: Input[RouteSpecTcpRouteAction] = js.native
 }
 
 object RouteSpecTcpRoute {

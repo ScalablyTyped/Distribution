@@ -11,8 +11,8 @@ Some utilities for JSON pointers described by RFC 6901
 | Full name          | json-pointer |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 129 |
-| # downloads        | 2001192 |
+| # dependents       | 148 |
+| # downloads        | 3492811 |
 | # stars            | 11 |
 
 ## Links

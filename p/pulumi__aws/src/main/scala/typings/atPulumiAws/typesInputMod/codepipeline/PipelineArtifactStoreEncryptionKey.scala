@@ -5,12 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PipelineArtifactStoreEncryptionKey extends js.Object {
   /**
     * The codepipeline ID.
     */
-  var id: Input[String]
-  var `type`: Input[String]
+  var id: Input[String] = js.native
+  var `type`: Input[String] = js.native
 }
 
 object PipelineArtifactStoreEncryptionKey {

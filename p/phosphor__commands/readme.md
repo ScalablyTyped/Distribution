@@ -10,9 +10,9 @@ PhosphorJS - Commands
 | ------------------ | :-------------: |
 | Full name          | @phosphor/commands |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 60 |
-| # downloads        | 1207144 |
+| # releases         | 9 |
+| # dependents       | 80 |
+| # downloads        | 1340382 |
 | # stars            | 0 |
 
 ## Links

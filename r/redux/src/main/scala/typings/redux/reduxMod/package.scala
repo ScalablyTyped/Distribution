@@ -14,7 +14,7 @@ package object reduxMod {
   type ActionFromReducersMapObject[M] = ActionFromReducer[ReducerFromReducersMapObject[M]]
   type CombinedState[S] = Anon_CombinedState with S
   type DeepPartial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]:? T[K] extends object? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias redux.redux.DeepPartial<T[K]> * / object : T[K]}
+  {[ K in keyof T ]:? T[K] extends object? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias redux.redux.DeepPartial<T[K]> * / object : T[K]}
     */ typings.redux.reduxStrings.DeepPartial with js.Any
   type Dispatch[A /* <: Action[_] */] = js.Function1[/* action */ A, A]
   /* compose */
@@ -27,7 +27,7 @@ package object reduxMod {
     js.Function1[/* next */ Dispatch[AnyAction], js.Function1[/* action */ js.Any, js.Any]]
   ]
   type PreloadedState[S] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof S ]: S[K] extends object? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias redux.redux.PreloadedState<S[K]> * / object : S[K]}
+  {[ K in keyof S ]: S[K] extends object? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias redux.redux.PreloadedState<S[K]> * / object : S[K]}
     */ typings.redux.reduxStrings.PreloadedState with js.Any
   type Reducer[S, A /* <: Action[_] */] = js.Function2[/* state */ js.UndefOr[S], /* action */ A, S]
   type ReducerFromReducersMapObject[M] = js.Any

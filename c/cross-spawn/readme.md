@@ -10,9 +10,9 @@ Cross platform child_process#spawn and child_process#spawnSync
 | ------------------ | :-------------: |
 | Full name          | cross-spawn |
 | Keywords           | spawn, spawnSync, windows, cross-platform, path-ext, shebang, cmd, execute |
-| # releases         | 7 |
-| # dependents       | 2853 |
-| # downloads        | 612520952 |
+| # releases         | 9 |
+| # dependents       | 3607 |
+| # downloads        | 1048607418 |
 | # stars            | 49 |
 
 ## Links

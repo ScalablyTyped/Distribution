@@ -10,15 +10,15 @@ Display the JSX of the story
 | ------------------ | :-------------: |
 | Full name          | storybook-addon-jsx |
 | Keywords           | - |
-| # releases         | 31 |
-| # dependents       | 3 |
-| # downloads        | 777723 |
+| # releases         | 33 |
+| # dependents       | 11 |
+| # downloads        | 1499469 |
 | # stars            | 1 |
 
 ## Links
-- [Homepage](https://github.com/storybooks/addon-jsx#readme)
-- [Bugs](https://github.com/storybooks/addon-jsx/issues)
-- [Repository](https://github.com/storybooks/addon-jsx)
+- [Homepage](https://github.com/storybookjs/addon-jsx#readme)
+- [Bugs](https://github.com/storybookjs/addon-jsx/issues)
+- [Repository](https://github.com/storybookjs/addon-jsx)
 - [Npm](https://www.npmjs.com/package/storybook-addon-jsx)
     
 

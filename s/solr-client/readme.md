@@ -11,8 +11,8 @@ A Solr client library for indexing, adding, deleting, committing, optimizing and
 | Full name          | solr-client |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 33 |
-| # downloads        | 526323 |
+| # dependents       | 32 |
+| # downloads        | 521254 |
 | # stars            | 13 |
 
 ## Links

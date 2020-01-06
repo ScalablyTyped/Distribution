@@ -11,12 +11,12 @@ Mongoose MongoDB ODM
 | Full name          | mongoose |
 | Keywords           | mongodb, document, model, schema, database, odm, data, datastore, query, nosql, orm, db |
 | # releases         | 149 |
-| # dependents       | 4290 |
-| # downloads        | 24522792 |
-| # stars            | 740 |
+| # dependents       | 5027 |
+| # downloads        | 29387554 |
+| # stars            | 743 |
 
 ## Links
-- [Homepage](http://mongoosejs.com)
+- [Homepage](https://mongoosejs.com)
 - [Bugs](https://github.com/Automattic/mongoose/issues/new)
 - [Repository](https://github.com/Automattic/mongoose)
 - [Npm](https://www.npmjs.com/package/mongoose)

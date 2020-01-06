@@ -5,12 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClusterKerberosAttributes extends js.Object {
-  var adDomainJoinPassword: js.UndefOr[Input[String]] = js.undefined
-  var adDomainJoinUser: js.UndefOr[Input[String]] = js.undefined
-  var crossRealmTrustPrincipalPassword: js.UndefOr[Input[String]] = js.undefined
-  var kdcAdminPassword: Input[String]
-  var realm: Input[String]
+  var adDomainJoinPassword: js.UndefOr[Input[String]] = js.native
+  var adDomainJoinUser: js.UndefOr[Input[String]] = js.native
+  var crossRealmTrustPrincipalPassword: js.UndefOr[Input[String]] = js.native
+  var kdcAdminPassword: Input[String] = js.native
+  var realm: Input[String] = js.native
 }
 
 object ClusterKerberosAttributes {

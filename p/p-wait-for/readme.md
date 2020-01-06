@@ -11,8 +11,8 @@ Wait for a condition to be true
 | Full name          | p-wait-for |
 | Keywords           | promise, wait, for, waits, condition, poll, polling, boolean, async, await, promises, bluebird |
 | # releases         | 5 |
-| # dependents       | 21 |
-| # downloads        | 610178 |
+| # dependents       | 36 |
+| # downloads        | 1550338 |
 | # stars            | 3 |
 
 ## Links

@@ -12,7 +12,7 @@ TypeScript generics to work with boolean types
 | Keywords           | logic, generic, typescript, boolean, true, false |
 | # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 637812 |
+| # downloads        | 7129744 |
 | # stars            | 0 |
 
 ## Links

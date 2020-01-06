@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait StyleSheet[RuleName /* <: String */] extends js.Object {
+trait StyleSheet[RuleName /* <: String | Double | js.Symbol */] extends js.Object {
   var attached: Boolean = js.native
   // Gives auto-completion on the rules declared in `createStyleSheet` without
   // causing errors for rules added dynamically after creation.
@@ -14,14 +14,14 @@ trait StyleSheet[RuleName /* <: String */] extends js.Object {
   var keyframes: Keyframes[String] = js.native
   var linked: Boolean = js.native
   var options: StyleSheetOptions = js.native
-  def addRule(name: RuleName, style: Style): Rule = js.native
-  def addRule(name: RuleName, style: Style, options: Partial[RuleOptions]): Rule = js.native
+  def addRule(name: RuleName, style: JssStyle): Rule = js.native
+  def addRule(name: RuleName, style: JssStyle, options: Partial[RuleOptions]): Rule = js.native
   /**
     * Add a rule to the current stylesheet.
     * Will insert a rule also after the stylesheet has been rendered first time.
     */
-  def addRule(style: Style): Rule = js.native
-  def addRule(style: Style, options: Partial[RuleOptions]): Rule = js.native
+  def addRule(style: JssStyle): Rule = js.native
+  def addRule(style: JssStyle, options: Partial[RuleOptions]): Rule = js.native
   /**
     * Create and add rules.
     * Will render also after Style Sheet was rendered the first time.

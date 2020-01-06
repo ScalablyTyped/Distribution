@@ -10,9 +10,9 @@ Rules Engine expressed in simple json
 | ------------------ | :-------------: |
 | Full name          | json-rules-engine |
 | Keywords           | rules, engine, rules engine |
-| # releases         | 20 |
-| # dependents       | 7 |
-| # downloads        | 480960 |
+| # releases         | 26 |
+| # dependents       | 12 |
+| # downloads        | 583815 |
 | # stars            | 7 |
 
 ## Links

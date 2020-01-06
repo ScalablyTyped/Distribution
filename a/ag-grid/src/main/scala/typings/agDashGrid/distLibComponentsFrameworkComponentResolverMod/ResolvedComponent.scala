@@ -1,6 +1,6 @@
 package typings.agDashGrid.distLibComponentsFrameworkComponentResolverMod
 
-import typings.agDashGrid.Anon_A_771672828
+import typings.agDashGrid.Anon_A_185944039
 import typings.agDashGrid.Anon_B
 import typings.agDashGrid.distLibInterfacesIComponentMod.IComponent
 import scala.scalajs.js
@@ -8,7 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ResolvedComponent[A /* <: IComponent[_] with B */, B] extends js.Object {
-  var component: Anon_A_771672828[A] | Anon_B[B]
+  var component: Anon_A_185944039[A] | Anon_B[B]
   var dynamicParams: js.Any
   var source: ComponentSource
   var `type`: ComponentType
@@ -17,7 +17,7 @@ trait ResolvedComponent[A /* <: IComponent[_] with B */, B] extends js.Object {
 object ResolvedComponent {
   @scala.inline
   def apply[A /* <: IComponent[_] with B */, B](
-    component: Anon_A_771672828[A] | Anon_B[B],
+    component: Anon_A_185944039[A] | Anon_B[B],
     dynamicParams: js.Any,
     source: ComponentSource,
     `type`: ComponentType

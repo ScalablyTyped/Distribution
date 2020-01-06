@@ -10,9 +10,9 @@ Rotate an image.
 | ------------------ | :-------------: |
 | Full name          | @jimp/plugin-rotate |
 | Keywords           | - |
-| # releases         | 18 |
+| # releases         | 71 |
 | # dependents       | 1 |
-| # downloads        | 7488538 |
+| # downloads        | 14052174 |
 | # stars            | 0 |
 
 ## Links

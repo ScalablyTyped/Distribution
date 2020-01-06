@@ -10,9 +10,9 @@ Naver authentication strategy for Passport
 | ------------------ | :-------------: |
 | Full name          | passport-naver |
 | Keywords           | passport, naver, auth, oauth, authentication, oauth2 |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 9870 |
+| # downloads        | 38377 |
 | # stars            | 2 |
 
 ## Links

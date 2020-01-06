@@ -10,9 +10,9 @@ RSocket core
 | ------------------ | :-------------: |
 | Full name          | rsocket-core |
 | Keywords           | - |
-| # releases         | 9 |
-| # dependents       | 11 |
-| # downloads        | 7802 |
+| # releases         | 18 |
+| # dependents       | 18 |
+| # downloads        | 128005 |
 | # stars            | 0 |
 
 ## Links

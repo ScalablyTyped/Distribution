@@ -11,8 +11,8 @@ Convert globs to regular expressions
 | Full name          | glob-to-regexp |
 | Keywords           | regexp, glob, regexps, regular expressions, regular expression, wildcard |
 | # releases         | 3 |
-| # dependents       | 102 |
-| # downloads        | 85595342 |
+| # dependents       | 118 |
+| # downloads        | 178170539 |
 | # stars            | 3 |
 
 ## Links

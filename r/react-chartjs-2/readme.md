@@ -10,9 +10,9 @@ react-chartjs-2
 | ------------------ | :-------------: |
 | Full name          | react-chartjs-2 |
 | Keywords           | chart, chart-js, chart.js, react-chartjs-2, react chart.js |
-| # releases         | 25 |
-| # dependents       | 84 |
-| # downloads        | 3633853 |
+| # releases         | 9 |
+| # dependents       | 139 |
+| # downloads        | 6629389 |
 | # stars            | 8 |
 
 ## Links

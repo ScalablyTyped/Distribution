@@ -7,33 +7,34 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MethodResponseArgs extends js.Object {
   /**
     * The HTTP Method (`GET`, `POST`, `PUT`, `DELETE`, `HEAD`, `OPTIONS`, `ANY`)
     */
-  val httpMethod: Input[String]
+  val httpMethod: Input[String] = js.native
   /**
     * The API resource ID
     */
-  val resourceId: Input[String]
+  val resourceId: Input[String] = js.native
   /**
     * A map of the API models used for the response's content type
     */
-  val responseModels: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
+  val responseModels: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * A map of response parameters that can be sent to the caller.
     * For example: `responseParameters = { "method.response.header.X-Some-Header" = true }`
     * would define that the header `X-Some-Header` can be provided on the response.
     */
-  val responseParameters: js.UndefOr[Input[StringDictionary[Input[Boolean]]]] = js.undefined
+  val responseParameters: js.UndefOr[Input[StringDictionary[Input[Boolean]]]] = js.native
   /**
     * The ID of the associated REST API
     */
-  val restApi: Input[RestApi]
+  val restApi: Input[RestApi] = js.native
   /**
     * The HTTP status code
     */
-  val statusCode: Input[String]
+  val statusCode: Input[String] = js.native
 }
 
 object MethodResponseArgs {

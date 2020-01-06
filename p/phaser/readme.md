@@ -10,9 +10,9 @@ A fast, free and fun HTML5 Game Framework for Desktop and Mobile web browsers.
 | ------------------ | :-------------: |
 | Full name          | phaser |
 | Keywords           | 2d, HTML5, WebGL, canvas, game, javascript, physics, tweens, typescript, web audio |
-| # releases         | 54 |
-| # dependents       | 69 |
-| # downloads        | 221253 |
+| # releases         | 52 |
+| # dependents       | 71 |
+| # downloads        | 316823 |
 | # stars            | 25 |
 
 ## Links

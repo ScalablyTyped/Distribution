@@ -9,9 +9,9 @@ multicast DNS service discovery
 | ------------------ | :-------------: |
 | Full name          | mdns |
 | Keywords           | zeroconf, bonjour, dns_sd, mDNSResponder |
-| # releases         | 3 |
-| # dependents       | 118 |
-| # downloads        | 139319 |
+| # releases         | 4 |
+| # dependents       | 126 |
+| # downloads        | 110315 |
 | # stars            | 14 |
 
 ## Links

@@ -35,7 +35,7 @@ trait NewableFunction
     */
   def call[T, A /* <: js.Array[_] */](
     thisArg: T,
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type A is not an array type */ args: A
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type A is not an array type */ args: A
   ): Unit = js.native
 }
 

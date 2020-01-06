@@ -10,9 +10,9 @@ A plotly.js react component from Plotly
 | ------------------ | :-------------: |
 | Full name          | react-plotly.js |
 | Keywords           | graphing, plotting, data, visualization, plotly, react |
-| # releases         | 18 |
-| # dependents       | 15 |
-| # downloads        | 331600 |
+| # releases         | 12 |
+| # dependents       | 21 |
+| # downloads        | 885186 |
 | # stars            | 1 |
 
 ## Links

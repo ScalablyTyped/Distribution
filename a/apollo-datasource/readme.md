@@ -9,9 +9,9 @@ Typings are for version 0.6.4
 | ------------------ | :-------------: |
 | Full name          | apollo-datasource |
 | Keywords           | - |
-| # releases         | 23 |
-| # dependents       | 19 |
-| # downloads        | 6079061 |
+| # releases         | 36 |
+| # dependents       | 32 |
+| # downloads        | 22557695 |
 | # stars            | 0 |
 
 ## Links

@@ -11,8 +11,8 @@ A simple, lightweight jQuery plugin for reading, writing and deleting cookies.
 | Full name          | jquery.cookie |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 39 |
-| # downloads        | 1558450 |
+| # dependents       | 44 |
+| # downloads        | 2084230 |
 | # stars            | 15 |
 
 ## Links

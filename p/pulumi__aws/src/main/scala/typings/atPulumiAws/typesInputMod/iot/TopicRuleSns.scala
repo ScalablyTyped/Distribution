@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TopicRuleSns extends js.Object {
   /**
     * The message format of the message to publish. Accepted values are "JSON" and "RAW".
     */
-  var messageFormat: js.UndefOr[Input[String]] = js.undefined
+  var messageFormat: js.UndefOr[Input[String]] = js.native
   /**
     * The ARN of the IAM role that grants access.
     */
-  var roleArn: Input[String]
+  var roleArn: Input[String] = js.native
   /**
     * The ARN of the SNS topic.
     */
-  var targetArn: Input[String]
+  var targetArn: Input[String] = js.native
 }
 
 object TopicRuleSns {

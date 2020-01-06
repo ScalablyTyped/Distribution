@@ -10,9 +10,9 @@ The parser/stringifier for Yarn lockfiles.
 | ------------------ | :-------------: |
 | Full name          | @yarnpkg/lockfile |
 | Keywords           | yarn, yarnpkg, lockfile, dependency, npm |
-| # releases         | 6 |
-| # dependents       | 63 |
-| # downloads        | 17064935 |
+| # releases         | 4 |
+| # dependents       | 82 |
+| # downloads        | 44759905 |
 | # stars            | 0 |
 
 ## Links

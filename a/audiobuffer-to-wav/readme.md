@@ -12,7 +12,7 @@ convert an AudioBuffer to .wav format
 | Keywords           | convert, AudioBuffer, to, wav, format, for, browser, webaudio, web audio, audio, buffer, conversion, formats, fmt, riff, wave, sound |
 | # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 27662 |
+| # downloads        | 43795 |
 | # stars            | 2 |
 
 ## Links

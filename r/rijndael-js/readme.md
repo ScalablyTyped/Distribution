@@ -10,9 +10,9 @@ Rijndael in Pure Javascript
 | ------------------ | :-------------: |
 | Full name          | rijndael-js |
 | Keywords           | - |
-| # releases         | 0 |
+| # releases         | 2 |
 | # dependents       | 2 |
-| # downloads        | 26916 |
+| # downloads        | 43906 |
 | # stars            | 0 |
 
 ## Links

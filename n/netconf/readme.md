@@ -12,7 +12,7 @@ Pure JavaScript NETCONF library.
 | Keywords           | xml-rpc, netconf, juniper |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 942 |
+| # downloads        | 939 |
 | # stars            | 0 |
 
 ## Links

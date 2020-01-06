@@ -12,16 +12,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NativeSelectInputProps extends js.Object {
-  var IconComponent: js.UndefOr[ReactType[_]] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var inputRef: js.UndefOr[js.Function1[/* ref */ HTMLSelectElement | Anon_Node, Unit]] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
+  var IconComponent: js.UndefOr[ReactType[_]] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
+  var inputRef: js.UndefOr[js.Function1[/* ref */ HTMLSelectElement | Anon_Node, Unit]] = js.native
+  var name: js.UndefOr[String] = js.native
   var onChange: js.UndefOr[
     js.Function2[/* event */ ChangeEvent[HTMLSelectElement], /* child */ ReactNode, Unit]
-  ] = js.undefined
-  var value: js.UndefOr[(js.Array[String | Double | Boolean]) | String | Double | Boolean] = js.undefined
-  var variant: js.UndefOr[standard | outlined | filled] = js.undefined
+  ] = js.native
+  var value: js.UndefOr[(js.Array[String | Double | Boolean]) | String | Double | Boolean] = js.native
+  var variant: js.UndefOr[standard | outlined | filled] = js.native
 }
 
 object NativeSelectInputProps {

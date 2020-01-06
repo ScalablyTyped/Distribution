@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 @JSImport("@google-cloud/pubsub/build/src/message-stream", "StatusError")
 @js.native
 class StatusError protected ()
-  extends StatusObject
-     with Error {
+  extends Error
+     with StatusObject {
   def this(status: StatusObject) = this()
   /* CompleteClass */
   override var code: Status = js.native

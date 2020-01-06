@@ -10,9 +10,9 @@ SpatiaLite for node
 | ------------------ | :-------------: |
 | Full name          | spatialite |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 1940 |
+| # releases         | 0 |
+| # dependents       | 2 |
+| # downloads        | 1973 |
 | # stars            | 0 |
 
 ## Links

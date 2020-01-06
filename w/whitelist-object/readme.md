@@ -12,7 +12,7 @@ returns specified keys for passed in object
 | Keywords           | object, whitelist, filter, reduce |
 | # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 806 |
+| # downloads        | 561 |
 | # stars            | 1 |
 
 ## Links

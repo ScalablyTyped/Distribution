@@ -3,15 +3,15 @@
 
 
 ## Library description:
-Prevent app from going to sleep in background.
+Prevent apps from going to sleep in background.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | cordova-plugin-background-mode |
-| Keywords           | appplant, background, cordova, ecosystem:cordova |
-| # releases         | 0 |
+| Keywords           | appplant, background, ecosystem:cordova, cordova-ios, cordova-android, cordova-browser |
+| # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 97235 |
+| # downloads        | 102800 |
 | # stars            | 2 |
 
 ## Links

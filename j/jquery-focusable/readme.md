@@ -10,9 +10,9 @@ Gets all focusable descendant elements for the first element in the set of match
 | ------------------ | :-------------: |
 | Full name          | jquery-focusable |
 | Keywords           | jquery-plugin, ecosystem:jquery, ebay, accessibility, a11y |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 17615 |
+| # downloads        | 10449 |
 | # stars            | 0 |
 
 ## Links

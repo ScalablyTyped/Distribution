@@ -10,9 +10,9 @@ DynamoDB data mapper
 | ------------------ | :-------------: |
 | Full name          | dynogels |
 | Keywords           | datamapper, DynamoDB, dynamodb, aws, amazon, nosql |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 6 |
-| # downloads        | 219311 |
+| # downloads        | 249004 |
 | # stars            | 5 |
 
 ## Links

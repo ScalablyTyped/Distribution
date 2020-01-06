@@ -134,8 +134,8 @@ package object clientsRoute53Mod {
   type IPAddress = String
   type IPAddressCidr = String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Healthy
-    - typings.awsDashSdk.awsDashSdkStrings.Unhealthy
+    - typings.awsDashSdk.awsDashSdkStrings.Healthy_
+    - typings.awsDashSdk.awsDashSdkStrings.Unhealthy_
     - typings.awsDashSdk.awsDashSdkStrings.LastKnownStatus
     - java.lang.String
   */
@@ -232,11 +232,11 @@ package object clientsRoute53Mod {
   type SearchString = String
   type ServicePrincipal = String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Average
-    - typings.awsDashSdk.awsDashSdkStrings.Sum
+    - typings.awsDashSdk.awsDashSdkStrings.Average_
+    - typings.awsDashSdk.awsDashSdkStrings.Sum_
     - typings.awsDashSdk.awsDashSdkStrings.SampleCount
-    - typings.awsDashSdk.awsDashSdkStrings.Maximum
-    - typings.awsDashSdk.awsDashSdkStrings.Minimum
+    - typings.awsDashSdk.awsDashSdkStrings.Maximum_
+    - typings.awsDashSdk.awsDashSdkStrings.Minimum_
     - java.lang.String
   */
   type Statistic = _Statistic | String
@@ -299,7 +299,7 @@ package object clientsRoute53Mod {
   type VPCs = js.Array[VPC]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2013-04-01`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

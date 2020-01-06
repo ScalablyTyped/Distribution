@@ -6,30 +6,31 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SnapshotScheduleState extends js.Object {
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * The definition of the snapshot schedule. The definition is made up of schedule expressions, for example `cron(30 12 *)` or `rate(12 hours)`.
     */
-  val definitions: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val definitions: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The description of the snapshot schedule.
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * Whether to destroy all associated clusters with this snapshot schedule on deletion. Must be enabled and applied before attempting deletion.
     */
-  val forceDestroy: js.UndefOr[Input[Boolean]] = js.undefined
-  val identifier: js.UndefOr[Input[String]] = js.undefined
+  val forceDestroy: js.UndefOr[Input[Boolean]] = js.native
+  val identifier: js.UndefOr[Input[String]] = js.native
   /**
     * Creates a unique
     * identifier beginning with the specified prefix. Conflicts with `identifier`.
     */
-  val identifierPrefix: js.UndefOr[Input[String]] = js.undefined
+  val identifierPrefix: js.UndefOr[Input[String]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object SnapshotScheduleState {

@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "fs-merger"
-version := "3.0.2-b357ac"
+version := "3.0.2-516c7a"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "broccoli-node-api" % "1.7.0-d26b7d",
-  "org.scalablytyped" %%% "node" % "13.1-dt-20191226Z-155d58",
-  "org.scalablytyped" %%% "std" % "3.7-953338",
-  "org.scalablytyped" %%% "walk-sync" % "0.3.4-1c28b1")
+  "org.scalablytyped" %%% "broccoli-node-api" % "1.7.0-61cd92",
+  "org.scalablytyped" %%% "node" % "13.1-dt-20200103Z-b9f880",
+  "org.scalablytyped" %%% "std" % "3.7-b6d959",
+  "org.scalablytyped" %%% "walk-sync" % "0.3.4-572b62")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

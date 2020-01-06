@@ -4,27 +4,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Destination extends js.Object {
   /**
     * Specify this only in a cross-account scenario (where source and destination bucket owners are not the same), and you want to change replica ownership to the AWS account that owns the destination bucket. If this is not specified in the replication configuration, the replicas are owned by same AWS account that owns the source object.
     */
-  var AccessControlTranslation: js.UndefOr[typings.awsDashSdk.clientsS3Mod.AccessControlTranslation] = js.undefined
+  var AccessControlTranslation: js.UndefOr[typings.awsDashSdk.clientsS3Mod.AccessControlTranslation] = js.native
   /**
-    * Destination bucket owner account ID. In a cross-account scenario, if you direct Amazon S3 to change replica ownership to the AWS account that owns the destination bucket by specifying the AccessControlTranslation property, this is the account ID of the destination bucket owner. For more information, see Cross-Region Replication Additional Configuration: Change Replica Owner in the Amazon Simple Storage Service Developer Guide.
+    * Destination bucket owner account ID. In a cross-account scenario, if you direct Amazon S3 to change replica ownership to the AWS account that owns the destination bucket by specifying the AccessControlTranslation property, this is the account ID of the destination bucket owner. For more information, see Replication Additional Configuration: Changing the Replica Owner in the Amazon Simple Storage Service Developer Guide.
     */
-  var Account: js.UndefOr[AccountId] = js.undefined
+  var Account: js.UndefOr[AccountId] = js.native
   /**
-    *  The Amazon Resource Name (ARN) of the bucket where you want Amazon S3 to store replicas of the object identified by the rule. A replication configuration can replicate objects to only one destination bucket. If there are multiple rules in your replication configuration, all rules must specify the same destination bucket.
+    *  The Amazon Resource Name (ARN) of the bucket where you want Amazon S3 to store the results.
     */
-  var Bucket: BucketName
+  var Bucket: BucketName = js.native
   /**
     * A container that provides information about encryption. If SourceSelectionCriteria is specified, you must specify this element.
     */
-  var EncryptionConfiguration: js.UndefOr[typings.awsDashSdk.clientsS3Mod.EncryptionConfiguration] = js.undefined
+  var EncryptionConfiguration: js.UndefOr[typings.awsDashSdk.clientsS3Mod.EncryptionConfiguration] = js.native
+  /**
+    *  A container specifying replication metrics-related settings enabling metrics and Amazon S3 events for S3 Replication Time Control (S3 RTC). Must be specified together with a ReplicationTime block. 
+    */
+  var Metrics: js.UndefOr[typings.awsDashSdk.clientsS3Mod.Metrics] = js.native
+  /**
+    *  A container specifying S3 Replication Time Control (S3 RTC), including whether S3 RTC is enabled and the time when all objects and operations on objects must be replicated. Must be specified together with a Metrics block. 
+    */
+  var ReplicationTime: js.UndefOr[typings.awsDashSdk.clientsS3Mod.ReplicationTime] = js.native
   /**
     *  The storage class to use when replicating objects, such as standard or reduced redundancy. By default, Amazon S3 uses the storage class of the source object to create the object replica.  For valid values, see the StorageClass element of the PUT Bucket replication action in the Amazon Simple Storage Service API Reference.
     */
-  var StorageClass: js.UndefOr[typings.awsDashSdk.clientsS3Mod.StorageClass] = js.undefined
+  var StorageClass: js.UndefOr[typings.awsDashSdk.clientsS3Mod.StorageClass] = js.native
 }
 
 object Destination {
@@ -34,12 +43,16 @@ object Destination {
     AccessControlTranslation: AccessControlTranslation = null,
     Account: AccountId = null,
     EncryptionConfiguration: EncryptionConfiguration = null,
+    Metrics: Metrics = null,
+    ReplicationTime: ReplicationTime = null,
     StorageClass: StorageClass = null
   ): Destination = {
-    val __obj = js.Dynamic.literal(Bucket = Bucket)
-    if (AccessControlTranslation != null) __obj.updateDynamic("AccessControlTranslation")(AccessControlTranslation)
-    if (Account != null) __obj.updateDynamic("Account")(Account)
-    if (EncryptionConfiguration != null) __obj.updateDynamic("EncryptionConfiguration")(EncryptionConfiguration)
+    val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
+    if (AccessControlTranslation != null) __obj.updateDynamic("AccessControlTranslation")(AccessControlTranslation.asInstanceOf[js.Any])
+    if (Account != null) __obj.updateDynamic("Account")(Account.asInstanceOf[js.Any])
+    if (EncryptionConfiguration != null) __obj.updateDynamic("EncryptionConfiguration")(EncryptionConfiguration.asInstanceOf[js.Any])
+    if (Metrics != null) __obj.updateDynamic("Metrics")(Metrics.asInstanceOf[js.Any])
+    if (ReplicationTime != null) __obj.updateDynamic("ReplicationTime")(ReplicationTime.asInstanceOf[js.Any])
     if (StorageClass != null) __obj.updateDynamic("StorageClass")(StorageClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[Destination]
   }

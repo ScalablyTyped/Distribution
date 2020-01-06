@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DescribeComplianceByConfigRuleRequest extends js.Object {
   /**
     * Filters the results by compliance. The allowed values are COMPLIANT and NON_COMPLIANT.
     */
-  var ComplianceTypes: js.UndefOr[typings.awsDashSdk.clientsConfigserviceMod.ComplianceTypes] = js.undefined
+  var ComplianceTypes: js.UndefOr[typings.awsDashSdk.clientsConfigserviceMod.ComplianceTypes] = js.native
   /**
     * Specify one or more AWS Config rule names to filter the results by rule.
     */
-  var ConfigRuleNames: js.UndefOr[typings.awsDashSdk.clientsConfigserviceMod.ConfigRuleNames] = js.undefined
+  var ConfigRuleNames: js.UndefOr[typings.awsDashSdk.clientsConfigserviceMod.ConfigRuleNames] = js.native
   /**
     * The nextToken string returned on a previous page that you use to get the next page of results in a paginated response.
     */
-  var NextToken: js.UndefOr[String] = js.undefined
+  var NextToken: js.UndefOr[String] = js.native
 }
 
 object DescribeComplianceByConfigRuleRequest {
@@ -27,9 +28,9 @@ object DescribeComplianceByConfigRuleRequest {
     NextToken: String = null
   ): DescribeComplianceByConfigRuleRequest = {
     val __obj = js.Dynamic.literal()
-    if (ComplianceTypes != null) __obj.updateDynamic("ComplianceTypes")(ComplianceTypes)
-    if (ConfigRuleNames != null) __obj.updateDynamic("ConfigRuleNames")(ConfigRuleNames)
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
+    if (ComplianceTypes != null) __obj.updateDynamic("ComplianceTypes")(ComplianceTypes.asInstanceOf[js.Any])
+    if (ConfigRuleNames != null) __obj.updateDynamic("ConfigRuleNames")(ConfigRuleNames.asInstanceOf[js.Any])
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeComplianceByConfigRuleRequest]
   }
 }

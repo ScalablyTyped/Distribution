@@ -10,9 +10,9 @@ Get consecutively unique elements from an array
 | ------------------ | :-------------: |
 | Full name          | unique-random-array |
 | Keywords           | unique, random, number, single, generate, non-repeating, array, item, element |
-| # releases         | 1 |
-| # dependents       | 955 |
-| # downloads        | 559531 |
+| # releases         | 3 |
+| # dependents       | 1016 |
+| # downloads        | 970852 |
 | # stars            | 5 |
 
 ## Links

@@ -21,9 +21,6 @@ class RepositoryPolicy protected () extends CustomResource {
     */
   def this(name: String, args: RepositoryPolicyArgs) = this()
   def this(name: String, args: RepositoryPolicyArgs, opts: CustomResourceOptions) = this()
-  /**
-    * The policy document. This is a JSON formatted string.
-    */
   val policy: Output[String] = js.native
   /**
     * The registry ID where the repository was created.

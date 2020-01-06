@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BrokerEncryptionOptions extends js.Object {
   /**
     * Amazon Resource Name (ARN) of Key Management Service (KMS) Customer Master Key (CMK) to use for encryption at rest. Requires setting `useAwsOwnedKey` to `false`. To perform drift detection when AWS managed CMKs or customer managed CMKs are in use, this value must be configured.
     */
-  var kmsKeyId: js.UndefOr[Input[String]] = js.undefined
+  var kmsKeyId: js.UndefOr[Input[String]] = js.native
   /**
     * Boolean to enable an AWS owned Key Management Service (KMS) Customer Master Key (CMK) that is not in your account. Defaults to `true`. Setting to `false` without configuring `kmsKeyId` will create an AWS managed Customer Master Key (CMK) aliased to `aws/mq` in your account.
     */
-  var useAwsOwnedKey: js.UndefOr[Input[Boolean]] = js.undefined
+  var useAwsOwnedKey: js.UndefOr[Input[Boolean]] = js.native
 }
 
 object BrokerEncryptionOptions {

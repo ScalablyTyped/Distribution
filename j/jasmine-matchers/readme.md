@@ -10,9 +10,9 @@ Extends the matchers jasmine provides.
 | ------------------ | :-------------: |
 | Full name          | jasmine-matchers |
 | Keywords           | - |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 31161 |
+| # downloads        | 37670 |
 | # stars            | 0 |
 
 ## Links

@@ -10,10 +10,10 @@ DOM bindings for React Router
 | ------------------ | :-------------: |
 | Full name          | react-router-dom |
 | Keywords           | react, router, route, routing, history, link |
-| # releases         | 24 |
-| # dependents       | 3007 |
-| # downloads        | 68094715 |
-| # stars            | 71 |
+| # releases         | 23 |
+| # dependents       | 4503 |
+| # downloads        | 107306688 |
+| # stars            | 72 |
 
 ## Links
 - [Homepage](https://github.com/ReactTraining/react-router#readme)

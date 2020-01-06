@@ -10,9 +10,9 @@ A simple in-memory cache. put(), get() and del()
 | ------------------ | :-------------: |
 | Full name          | memory-cache |
 | Keywords           | cache, ram, simple, storage |
-| # releases         | 2 |
-| # dependents       | 277 |
-| # downloads        | 3624586 |
+| # releases         | 1 |
+| # dependents       | 308 |
+| # downloads        | 5040148 |
 | # stars            | 63 |
 
 ## Links

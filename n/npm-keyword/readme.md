@@ -10,9 +10,9 @@ Get a list of npm packages with a certain keyword
 | ------------------ | :-------------: |
 | Full name          | npm-keyword |
 | Keywords           | npm, keyword, package, packages, pkg, registry, find, search |
-| # releases         | 2 |
-| # dependents       | 17 |
-| # downloads        | 1906327 |
+| # releases         | 3 |
+| # dependents       | 22 |
+| # downloads        | 2403477 |
 | # stars            | 2 |
 
 ## Links

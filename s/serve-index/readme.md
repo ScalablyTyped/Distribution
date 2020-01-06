@@ -10,9 +10,9 @@ Serve directory listings
 | ------------------ | :-------------: |
 | Full name          | serve-index |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 395 |
-| # downloads        | 161160834 |
+| # releases         | 1 |
+| # dependents       | 440 |
+| # downloads        | 222468905 |
 | # stars            | 19 |
 
 ## Links

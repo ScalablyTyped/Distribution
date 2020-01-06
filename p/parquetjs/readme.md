@@ -12,7 +12,7 @@ fully asynchronous, pure JavaScript implementation of the Parquet file format
 | Keywords           | dremel, parquet |
 | # releases         | 6 |
 | # dependents       | 3 |
-| # downloads        | 6220 |
+| # downloads        | 90127 |
 | # stars            | 0 |
 
 ## Links

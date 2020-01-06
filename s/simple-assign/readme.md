@@ -11,8 +11,8 @@ Simple implementation of Object.assign
 | Full name          | simple-assign |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 107 |
-| # downloads        | 4622683 |
+| # dependents       | 111 |
+| # downloads        | 4564990 |
 | # stars            | 0 |
 
 ## Links

@@ -12,7 +12,7 @@ A wechat access middleware for expressjs
 | Keywords           | express, expressjs, wechat, wechat-sdk, wechat-nodejs, middleware, wechat-sdk, typescript, javascript, weixin, weixin-sdk, weixin-node |
 | # releases         | 17 |
 | # dependents       | 1 |
-| # downloads        | 1119 |
+| # downloads        | 1202 |
 | # stars            | 0 |
 
 ## Links

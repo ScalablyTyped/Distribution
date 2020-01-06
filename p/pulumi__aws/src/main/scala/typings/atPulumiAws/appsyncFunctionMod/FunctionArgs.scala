@@ -5,35 +5,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FunctionArgs extends js.Object {
   /**
     * The ID of the associated AppSync API.
     */
-  val apiId: Input[String]
+  val apiId: Input[String] = js.native
   /**
     * The Function DataSource name.
     */
-  val dataSource: Input[String]
+  val dataSource: Input[String] = js.native
   /**
     * The Function description.
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * The version of the request mapping template. Currently the supported value is `2018-05-29`.
     */
-  val functionVersion: js.UndefOr[Input[String]] = js.undefined
+  val functionVersion: js.UndefOr[Input[String]] = js.native
   /**
     * The Function name. The function name does not have to be unique.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * The Function request mapping template. Functions support only the 2018-05-29 version of the request mapping template.
     */
-  val requestMappingTemplate: Input[String]
+  val requestMappingTemplate: Input[String] = js.native
   /**
     * The Function response mapping template.
     */
-  val responseMappingTemplate: Input[String]
+  val responseMappingTemplate: Input[String] = js.native
 }
 
 object FunctionArgs {

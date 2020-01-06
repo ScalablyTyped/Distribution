@@ -5,23 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RouteArgs extends js.Object {
   /**
     * Indicates whether to drop traffic that matches this route (default to `false`).
     */
-  val blackhole: js.UndefOr[Input[Boolean]] = js.undefined
+  val blackhole: js.UndefOr[Input[Boolean]] = js.native
   /**
     * IPv4 CIDR range used for destination matches. Routing decisions are based on the most specific match.
     */
-  val destinationCidrBlock: Input[String]
+  val destinationCidrBlock: Input[String] = js.native
   /**
     * Identifier of EC2 Transit Gateway Attachment (required if `blackhole` is set to false).
     */
-  val transitGatewayAttachmentId: js.UndefOr[Input[String]] = js.undefined
+  val transitGatewayAttachmentId: js.UndefOr[Input[String]] = js.native
   /**
     * Identifier of EC2 Transit Gateway Route Table.
     */
-  val transitGatewayRouteTableId: Input[String]
+  val transitGatewayRouteTableId: Input[String] = js.native
 }
 
 object RouteArgs {

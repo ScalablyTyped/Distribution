@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object useFragment extends js.Object {
   def apply[TKey /* <: KeyType */](fragmentInput: GraphQLTaggedNode): $Call[KeyReturnType[TKey]] | Null = js.native
-  def apply[TKey /* <: ArrayKeyType */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): js.Array[$Call[ArrayKeyReturnType[TKey]]] = js.native
+  def apply[TKey /* <: KeyType */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): $Call[KeyReturnType[TKey]] | Null = js.native
 }
 

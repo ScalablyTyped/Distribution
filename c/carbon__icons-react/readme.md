@@ -10,9 +10,9 @@ React components for icons in digital and software products using the Carbon Des
 | ------------------ | :-------------: |
 | Full name          | @carbon/icons-react |
 | Keywords           | ibm, elements, carbon, carbon-elements, carbon-design-system, components, react |
-| # releases         | 75 |
-| # dependents       | 9 |
-| # downloads        | 465111 |
+| # releases         | 124 |
+| # dependents       | 13 |
+| # downloads        | 802124 |
 | # stars            | 0 |
 
 ## Links

@@ -4,8 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ButtonBaseActions extends js.Object {
-  def focusVisible(): Unit
+  def focusVisible(): Unit = js.native
 }
 
 object ButtonBaseActions {

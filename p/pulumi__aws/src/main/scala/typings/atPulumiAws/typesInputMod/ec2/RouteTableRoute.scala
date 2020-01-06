@@ -5,43 +5,44 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RouteTableRoute extends js.Object {
   /**
     * The CIDR block of the route.
     */
-  var cidrBlock: js.UndefOr[Input[String]] = js.undefined
+  var cidrBlock: js.UndefOr[Input[String]] = js.native
   /**
     * Identifier of a VPC Egress Only Internet Gateway.
     */
-  var egressOnlyGatewayId: js.UndefOr[Input[String]] = js.undefined
+  var egressOnlyGatewayId: js.UndefOr[Input[String]] = js.native
   /**
     * Identifier of a VPC internet gateway or a virtual private gateway.
     */
-  var gatewayId: js.UndefOr[Input[String]] = js.undefined
+  var gatewayId: js.UndefOr[Input[String]] = js.native
   /**
     * Identifier of an EC2 instance.
     */
-  var instanceId: js.UndefOr[Input[String]] = js.undefined
+  var instanceId: js.UndefOr[Input[String]] = js.native
   /**
     * The Ipv6 CIDR block of the route.
     */
-  var ipv6CidrBlock: js.UndefOr[Input[String]] = js.undefined
+  var ipv6CidrBlock: js.UndefOr[Input[String]] = js.native
   /**
     * Identifier of a VPC NAT gateway.
     */
-  var natGatewayId: js.UndefOr[Input[String]] = js.undefined
+  var natGatewayId: js.UndefOr[Input[String]] = js.native
   /**
     * Identifier of an EC2 network interface.
     */
-  var networkInterfaceId: js.UndefOr[Input[String]] = js.undefined
+  var networkInterfaceId: js.UndefOr[Input[String]] = js.native
   /**
     * Identifier of an EC2 Transit Gateway.
     */
-  var transitGatewayId: js.UndefOr[Input[String]] = js.undefined
+  var transitGatewayId: js.UndefOr[Input[String]] = js.native
   /**
     * Identifier of a VPC peering connection.
     */
-  var vpcPeeringConnectionId: js.UndefOr[Input[String]] = js.undefined
+  var vpcPeeringConnectionId: js.UndefOr[Input[String]] = js.native
 }
 
 object RouteTableRoute {

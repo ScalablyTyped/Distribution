@@ -9,9 +9,9 @@ Knockback.js provides Knockout.js magic for Backbone.js Models and Collections
 | ------------------ | :-------------: |
 | Full name          | knockback |
 | Keywords           | knockback, knockbackjs, backbone, backbonejs, knockout, knockoutjs |
-| # releases         | 0 |
+| # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 10027 |
+| # downloads        | 21649 |
 | # stars            | 0 |
 
 ## Links

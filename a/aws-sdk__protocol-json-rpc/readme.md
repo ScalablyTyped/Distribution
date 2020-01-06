@@ -10,9 +10,9 @@ Provides a marshaller and unmarshaller for the AWS JSON-RPC protocol
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/protocol-json-rpc |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 9 |
-| # downloads        | 5052 |
+| # releases         | 10 |
+| # dependents       | 194 |
+| # downloads        | 16812 |
 | # stars            | 0 |
 
 ## Links

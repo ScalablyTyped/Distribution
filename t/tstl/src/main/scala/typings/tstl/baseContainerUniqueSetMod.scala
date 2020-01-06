@@ -22,20 +22,20 @@ object baseContainerUniqueSetMod extends js.Object {
       */
     var _Extract_by_val: js.Any = js.native
     /**
-      * Extract an element by iterator.
-      *
-      * @param pos The iterator to the element for extraction.
-      * @return Iterator following the *pos*, strained by the extraction.
-      */
-    def extract(it: IteratorT): IteratorT = js.native
-    /**
       * Extract an element by key.
       *
       * @param key Key to search for.
       * @return The extracted element.
       */
+    def extract(key: Key): Key = js.native
+    /**
+      * Extract an element by iterator.
+      *
+      * @param pos The iterator to the element for extraction.
+      * @return Iterator following the *pos*, strained by the extraction.
+      */
     @JSName("extract")
-    def extract_Key(key: Key): Key = js.native
+    def extract_IteratorT(it: IteratorT): IteratorT = js.native
   }
   
 }

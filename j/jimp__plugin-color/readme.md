@@ -10,9 +10,9 @@ Bitmap manipulation to adjust the color in an image.
 | ------------------ | :-------------: |
 | Full name          | @jimp/plugin-color |
 | Keywords           | - |
-| # releases         | 20 |
+| # releases         | 73 |
 | # dependents       | 1 |
-| # downloads        | 7519538 |
+| # downloads        | 14083373 |
 | # stars            | 0 |
 
 ## Links

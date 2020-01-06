@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "p-retry"
-version := "4.2.0-7bfcbb"
+version := "4.2.0-d9d482"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "retry" % "0.12-dt-20181229Z-b26978",
-  "org.scalablytyped" %%% "std" % "3.7-953338")
+  "org.scalablytyped" %%% "retry" % "0.12-dt-20181229Z-7c0085",
+  "org.scalablytyped" %%% "std" % "3.7-b6d959")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

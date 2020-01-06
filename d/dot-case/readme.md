@@ -4,21 +4,21 @@
 Typings are for version 2.1.1
 
 ## Library description:
-Dot case a string
+Transform into a lower case string with a period between words
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | dot-case |
-| Keywords           | dot, case, period |
-| # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 24757593 |
+| Keywords           | dot, case, period, full, stop, convert, transform |
+| # releases         | 3 |
+| # dependents       | 8 |
+| # downloads        | 41603231 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/blakeembrey/dot-case)
-- [Bugs](https://github.com/blakeembrey/dot-case/issues)
-- [Repository](https://github.com/blakeembrey/dot-case)
+- [Homepage](https://github.com/blakeembrey/change-case/tree/master/packages/dot-case#readme)
+- [Bugs](https://github.com/blakeembrey/change-case/issues)
+- [Repository](https://github.com/blakeembrey/change-case)
 - [Npm](https://www.npmjs.com/package/dot-case)
     
 

@@ -5,15 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TopicPolicyState extends js.Object {
   /**
     * The ARN of the SNS topic
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
-  /**
-    * The fully-formed AWS policy as JSON.
-    */
-  val policy: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
+  val policy: js.UndefOr[Input[String]] = js.native
 }
 
 object TopicPolicyState {

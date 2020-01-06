@@ -220,6 +220,7 @@ class Question protected ()
     * Question name should be unique in the survey and valueName could be not unique. It allows to share data between several questions with the same valueName.
     * The library set the value automatically if the question.name property is not valid. For example, if it contains the period '.' symbol.
     * In this case if you set the question.name property to 'x.y' then the valueName becomes 'x y'.
+    * @see name
     */
   var valueName: String = js.native
   /**
@@ -247,6 +248,7 @@ class Question protected ()
     * @param error
     */
   def addError(error: SurveyError): Unit = js.native
+  /* protected */ def addSupportedValidators(supportedValidators: js.Array[String]): Unit = js.native
   /**
     * Get is question ready to use
     */
@@ -333,6 +335,7 @@ class Question protected ()
   def getQuestionTitleTemplate(): String = js.native
   /* protected */ def getQuizQuestionCount(): Double = js.native
   /* protected */ def getRootCss(classes: js.Any): js.Any = js.native
+  def getSupportedValidators(): js.Array[String] = js.native
   /**
     * Return the title location based on question titleLocation property and QuestionTitleLocation of it's parents
     * @see titleLocation
@@ -341,9 +344,6 @@ class Question protected ()
     */
   def getTitleLocation(): String = js.native
   /* protected */ def getTitleLocationCore(): String = js.native
-  /**
-    * Returns the type of the object as a string as it represents in the json. It should be in lowcase.
-    */
   /* InferMemberOverrides */
   override def getType(): String = js.native
   /* CompleteClass */
@@ -372,7 +372,7 @@ class Question protected ()
   def isLayoutTypeSupported(layoutType: String): Boolean = js.native
   /* protected */ def isTextValue(): Boolean = js.native
   /* InferMemberOverrides */
-  override def locStrsChanged(): Unit with js.Any = js.native
+  override def locStrsChanged(): js.Any with Unit = js.native
   /**
     * Move question to a new container Page/Panel. Add as a last element if insertBefore parameter is not used or inserted into the given index,
     * if insert parameter is number, or before the given element, if the insertBefore parameter is a question or panel
@@ -418,7 +418,7 @@ class Question protected ()
   def supportOther(): Boolean = js.native
   def surveyLoadCallback(): Unit = js.native
   def updateCommentFromSurvey(newValue: js.Any): js.Any = js.native
-  /* protected */ def updateCssClasses(res: js.Any, surveyCss: js.Any): Unit = js.native
+  /* protected */ def updateCssClasses(res: js.Any, css: js.Any): Unit = js.native
   def updateCustomWidget(): Unit = js.native
   /* protected */ def updateDisplayValue(): js.Any = js.native
   /* protected */ def updateIsAnswered(): Unit = js.native

@@ -10,9 +10,9 @@ Throttle a function
 | ------------------ | :-------------: |
 | Full name          | throttleit |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 55 |
-| # downloads        | 59922987 |
+| # releases         | 0 |
+| # dependents       | 56 |
+| # downloads        | 72600609 |
 | # stars            | 4 |
 
 ## Links

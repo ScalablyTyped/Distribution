@@ -10,9 +10,9 @@ React wrapper for josdejong/jsoneditor
 | ------------------ | :-------------: |
 | Full name          | jsoneditor-for-react |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 825 |
+| # downloads        | 2224 |
 | # stars            | 0 |
 
 ## Links

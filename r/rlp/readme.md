@@ -10,9 +10,9 @@ Recursive Length Prefix Encoding Module
 | ------------------ | :-------------: |
 | Full name          | rlp |
 | Keywords           | rlp, ethereum |
-| # releases         | 6 |
-| # dependents       | 123 |
-| # downloads        | 2395679 |
+| # releases         | 7 |
+| # dependents       | 184 |
+| # downloads        | 3731657 |
 | # stars            | 1 |
 
 ## Links

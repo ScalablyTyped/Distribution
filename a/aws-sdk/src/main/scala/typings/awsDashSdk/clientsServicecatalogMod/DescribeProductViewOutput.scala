@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DescribeProductViewOutput extends js.Object {
   /**
     * Summary information about the product.
     */
-  var ProductViewSummary: js.UndefOr[typings.awsDashSdk.clientsServicecatalogMod.ProductViewSummary] = js.undefined
+  var ProductViewSummary: js.UndefOr[typings.awsDashSdk.clientsServicecatalogMod.ProductViewSummary] = js.native
   /**
     * Information about the provisioning artifacts for the product.
     */
-  var ProvisioningArtifacts: js.UndefOr[typings.awsDashSdk.clientsServicecatalogMod.ProvisioningArtifacts] = js.undefined
+  var ProvisioningArtifacts: js.UndefOr[typings.awsDashSdk.clientsServicecatalogMod.ProvisioningArtifacts] = js.native
 }
 
 object DescribeProductViewOutput {
   @scala.inline
   def apply(ProductViewSummary: ProductViewSummary = null, ProvisioningArtifacts: ProvisioningArtifacts = null): DescribeProductViewOutput = {
     val __obj = js.Dynamic.literal()
-    if (ProductViewSummary != null) __obj.updateDynamic("ProductViewSummary")(ProductViewSummary)
-    if (ProvisioningArtifacts != null) __obj.updateDynamic("ProvisioningArtifacts")(ProvisioningArtifacts)
+    if (ProductViewSummary != null) __obj.updateDynamic("ProductViewSummary")(ProductViewSummary.asInstanceOf[js.Any])
+    if (ProvisioningArtifacts != null) __obj.updateDynamic("ProvisioningArtifacts")(ProvisioningArtifacts.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeProductViewOutput]
   }
 }

@@ -11,8 +11,8 @@ The lodash method `_.floor` exported as a module.
 | Full name          | lodash.floor |
 | Keywords           | lodash-modularized, floor |
 | # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 8204 |
+| # dependents       | 5 |
+| # downloads        | 19955 |
 | # stars            | 0 |
 
 ## Links

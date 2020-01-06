@@ -11,8 +11,8 @@ The lodash method `_.min` exported as a module.
 | Full name          | lodash.min |
 | Keywords           | lodash-modularized, min |
 | # releases         | 0 |
-| # dependents       | 13 |
-| # downloads        | 201663 |
+| # dependents       | 18 |
+| # downloads        | 300623 |
 | # stars            | 0 |
 
 ## Links

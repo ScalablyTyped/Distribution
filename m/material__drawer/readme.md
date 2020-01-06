@@ -10,9 +10,9 @@ The Material Components Web drawer component
 | ------------------ | :-------------: |
 | Full name          | @material/drawer |
 | Keywords           | material components, material design, navigation, drawer |
-| # releases         | 48 |
-| # dependents       | 35 |
-| # downloads        | 1333565 |
+| # releases         | 116 |
+| # dependents       | 53 |
+| # downloads        | 1257387 |
 | # stars            | 0 |
 
 ## Links

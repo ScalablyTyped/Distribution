@@ -12,7 +12,7 @@ Functional programming date management.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 25649 |
+| # downloads        | 27370 |
 | # stars            | 0 |
 
 ## Links

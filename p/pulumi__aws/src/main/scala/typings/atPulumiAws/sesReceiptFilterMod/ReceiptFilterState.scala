@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ReceiptFilterState extends js.Object {
   /**
     * The IP address or address range to filter, in CIDR notation
     */
-  val cidr: js.UndefOr[Input[String]] = js.undefined
+  val cidr: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the filter
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * Block or Allow
     */
-  val policy: js.UndefOr[Input[String]] = js.undefined
+  val policy: js.UndefOr[Input[String]] = js.native
 }
 
 object ReceiptFilterState {

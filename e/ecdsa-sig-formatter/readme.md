@@ -11,8 +11,8 @@ Translate ECDSA signatures between ASN.1/DER and JOSE-style concatenation
 | Full name          | ecdsa-sig-formatter |
 | Keywords           | ecdsa, der, asn.1, jwt, jwa, jsonwebtoken, jose |
 | # releases         | 3 |
-| # dependents       | 13 |
-| # downloads        | 88195023 |
+| # dependents       | 18 |
+| # downloads        | 146535281 |
 | # stars            | 0 |
 
 ## Links

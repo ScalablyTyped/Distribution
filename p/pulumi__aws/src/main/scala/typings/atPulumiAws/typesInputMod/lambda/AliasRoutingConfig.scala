@@ -6,11 +6,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AliasRoutingConfig extends js.Object {
   /**
     * A map that defines the proportion of events that should be sent to different versions of a lambda function.
     */
-  var additionalVersionWeights: js.UndefOr[Input[StringDictionary[Input[Double]]]] = js.undefined
+  var additionalVersionWeights: js.UndefOr[Input[StringDictionary[Input[Double]]]] = js.native
 }
 
 object AliasRoutingConfig {

@@ -12,7 +12,7 @@ Wrapper library to ServiceNow's JSON/REST plugin
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 0 |
-| # downloads        | 2134 |
+| # downloads        | 2244 |
 | # stars            | 1 |
 
 ## Links

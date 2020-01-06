@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetStatusOutput extends js.Object {
-  var ArtifactList: js.UndefOr[typings.awsDashSdk.clientsImportexportMod.ArtifactList] = js.undefined
-  var Carrier: js.UndefOr[typings.awsDashSdk.clientsImportexportMod.Carrier] = js.undefined
-  var CreationDate: js.UndefOr[typings.awsDashSdk.clientsImportexportMod.CreationDate] = js.undefined
-  var CurrentManifest: js.UndefOr[typings.awsDashSdk.clientsImportexportMod.CurrentManifest] = js.undefined
-  var ErrorCount: js.UndefOr[typings.awsDashSdk.clientsImportexportMod.ErrorCount] = js.undefined
-  var JobId: js.UndefOr[typings.awsDashSdk.clientsImportexportMod.JobId] = js.undefined
-  var JobType: js.UndefOr[typings.awsDashSdk.clientsImportexportMod.JobType] = js.undefined
-  var LocationCode: js.UndefOr[typings.awsDashSdk.clientsImportexportMod.LocationCode] = js.undefined
-  var LocationMessage: js.UndefOr[typings.awsDashSdk.clientsImportexportMod.LocationMessage] = js.undefined
-  var LogBucket: js.UndefOr[typings.awsDashSdk.clientsImportexportMod.LogBucket] = js.undefined
-  var LogKey: js.UndefOr[typings.awsDashSdk.clientsImportexportMod.LogKey] = js.undefined
-  var ProgressCode: js.UndefOr[typings.awsDashSdk.clientsImportexportMod.ProgressCode] = js.undefined
-  var ProgressMessage: js.UndefOr[typings.awsDashSdk.clientsImportexportMod.ProgressMessage] = js.undefined
-  var Signature: js.UndefOr[typings.awsDashSdk.clientsImportexportMod.Signature] = js.undefined
-  var SignatureFileContents: js.UndefOr[Signature] = js.undefined
-  var TrackingNumber: js.UndefOr[typings.awsDashSdk.clientsImportexportMod.TrackingNumber] = js.undefined
+  var ArtifactList: js.UndefOr[typings.awsDashSdk.clientsImportexportMod.ArtifactList] = js.native
+  var Carrier: js.UndefOr[typings.awsDashSdk.clientsImportexportMod.Carrier] = js.native
+  var CreationDate: js.UndefOr[typings.awsDashSdk.clientsImportexportMod.CreationDate] = js.native
+  var CurrentManifest: js.UndefOr[typings.awsDashSdk.clientsImportexportMod.CurrentManifest] = js.native
+  var ErrorCount: js.UndefOr[typings.awsDashSdk.clientsImportexportMod.ErrorCount] = js.native
+  var JobId: js.UndefOr[typings.awsDashSdk.clientsImportexportMod.JobId] = js.native
+  var JobType: js.UndefOr[typings.awsDashSdk.clientsImportexportMod.JobType] = js.native
+  var LocationCode: js.UndefOr[typings.awsDashSdk.clientsImportexportMod.LocationCode] = js.native
+  var LocationMessage: js.UndefOr[typings.awsDashSdk.clientsImportexportMod.LocationMessage] = js.native
+  var LogBucket: js.UndefOr[typings.awsDashSdk.clientsImportexportMod.LogBucket] = js.native
+  var LogKey: js.UndefOr[typings.awsDashSdk.clientsImportexportMod.LogKey] = js.native
+  var ProgressCode: js.UndefOr[typings.awsDashSdk.clientsImportexportMod.ProgressCode] = js.native
+  var ProgressMessage: js.UndefOr[typings.awsDashSdk.clientsImportexportMod.ProgressMessage] = js.native
+  var Signature: js.UndefOr[typings.awsDashSdk.clientsImportexportMod.Signature] = js.native
+  var SignatureFileContents: js.UndefOr[Signature] = js.native
+  var TrackingNumber: js.UndefOr[typings.awsDashSdk.clientsImportexportMod.TrackingNumber] = js.native
 }
 
 object GetStatusOutput {
@@ -44,22 +45,22 @@ object GetStatusOutput {
     TrackingNumber: TrackingNumber = null
   ): GetStatusOutput = {
     val __obj = js.Dynamic.literal()
-    if (ArtifactList != null) __obj.updateDynamic("ArtifactList")(ArtifactList)
-    if (Carrier != null) __obj.updateDynamic("Carrier")(Carrier)
-    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate)
-    if (CurrentManifest != null) __obj.updateDynamic("CurrentManifest")(CurrentManifest)
+    if (ArtifactList != null) __obj.updateDynamic("ArtifactList")(ArtifactList.asInstanceOf[js.Any])
+    if (Carrier != null) __obj.updateDynamic("Carrier")(Carrier.asInstanceOf[js.Any])
+    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
+    if (CurrentManifest != null) __obj.updateDynamic("CurrentManifest")(CurrentManifest.asInstanceOf[js.Any])
     if (ErrorCount != null) __obj.updateDynamic("ErrorCount")(ErrorCount.asInstanceOf[js.Any])
-    if (JobId != null) __obj.updateDynamic("JobId")(JobId)
+    if (JobId != null) __obj.updateDynamic("JobId")(JobId.asInstanceOf[js.Any])
     if (JobType != null) __obj.updateDynamic("JobType")(JobType.asInstanceOf[js.Any])
-    if (LocationCode != null) __obj.updateDynamic("LocationCode")(LocationCode)
-    if (LocationMessage != null) __obj.updateDynamic("LocationMessage")(LocationMessage)
-    if (LogBucket != null) __obj.updateDynamic("LogBucket")(LogBucket)
-    if (LogKey != null) __obj.updateDynamic("LogKey")(LogKey)
-    if (ProgressCode != null) __obj.updateDynamic("ProgressCode")(ProgressCode)
-    if (ProgressMessage != null) __obj.updateDynamic("ProgressMessage")(ProgressMessage)
-    if (Signature != null) __obj.updateDynamic("Signature")(Signature)
-    if (SignatureFileContents != null) __obj.updateDynamic("SignatureFileContents")(SignatureFileContents)
-    if (TrackingNumber != null) __obj.updateDynamic("TrackingNumber")(TrackingNumber)
+    if (LocationCode != null) __obj.updateDynamic("LocationCode")(LocationCode.asInstanceOf[js.Any])
+    if (LocationMessage != null) __obj.updateDynamic("LocationMessage")(LocationMessage.asInstanceOf[js.Any])
+    if (LogBucket != null) __obj.updateDynamic("LogBucket")(LogBucket.asInstanceOf[js.Any])
+    if (LogKey != null) __obj.updateDynamic("LogKey")(LogKey.asInstanceOf[js.Any])
+    if (ProgressCode != null) __obj.updateDynamic("ProgressCode")(ProgressCode.asInstanceOf[js.Any])
+    if (ProgressMessage != null) __obj.updateDynamic("ProgressMessage")(ProgressMessage.asInstanceOf[js.Any])
+    if (Signature != null) __obj.updateDynamic("Signature")(Signature.asInstanceOf[js.Any])
+    if (SignatureFileContents != null) __obj.updateDynamic("SignatureFileContents")(SignatureFileContents.asInstanceOf[js.Any])
+    if (TrackingNumber != null) __obj.updateDynamic("TrackingNumber")(TrackingNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetStatusOutput]
   }
 }

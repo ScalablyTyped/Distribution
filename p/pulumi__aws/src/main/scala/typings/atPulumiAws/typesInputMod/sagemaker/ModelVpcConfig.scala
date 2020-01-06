@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ModelVpcConfig extends js.Object {
-  var securityGroupIds: Input[js.Array[Input[String]]]
-  var subnets: Input[js.Array[Input[String]]]
+  var securityGroupIds: Input[js.Array[Input[String]]] = js.native
+  var subnets: Input[js.Array[Input[String]]] = js.native
 }
 
 object ModelVpcConfig {

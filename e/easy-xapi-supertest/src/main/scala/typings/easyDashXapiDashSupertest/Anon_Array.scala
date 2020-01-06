@@ -9,8 +9,12 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Array
-  extends Instantiable2[/* str */ String, /* encoding */ String, Buffer]
-     with /**
+  extends /**
+  * Allocates a new buffer containing the given {array} of octets.
+  *
+  * @param array The octets to store.
+  */
+/**
   * Allocates a new buffer containing the given {str}.
   *
   * @param str String to store in buffer.
@@ -21,15 +25,11 @@ trait Anon_Array
   *
   * @param size count of octets to allocate.
   */
-/**
-  * Allocates a new buffer containing the given {array} of octets.
-  *
-  * @param array The octets to store.
-  */
 Instantiable1[
       (/* array */ js.Array[js.Any]) | (/* size */ Double) | (/* str */ String) | (/* array */ Uint8Array), 
       Buffer
-    ] {
+    ]
+     with Instantiable2[/* str */ String, /* encoding */ String, Buffer] {
   /**
     * Gives the actual byte length of a string. encoding defaults to 'utf8'.
     * This is not the same as String.prototype.length since that returns the number of characters in a string.

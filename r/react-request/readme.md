@@ -12,7 +12,7 @@ Declarative HTTP requests with React.
 | Keywords           | react, http, https, request, requests, response, xhr, xmlhttprequest, fetch, cors, json, api, data, rest, restful, crud |
 | # releases         | 25 |
 | # dependents       | 3 |
-| # downloads        | 51608 |
+| # downloads        | 108184 |
 | # stars            | 0 |
 
 ## Links

@@ -4,15 +4,15 @@
 Typings are for version 1.0.3
 
 ## Library description:
-<img src="https://avatars2.githubusercontent.com/u/2810941?v=3&s=96" alt="Google Cloud Platform logo" title="Google Cloud Platform" align="right" height="96" width="96"/>
+A simple utility for precise-dateing functions and classes.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @google-cloud/precise-date |
-| Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 3 |
-| # downloads        | 265181 |
+| Keywords           | nano, date, time, precise |
+| # releases         | 7 |
+| # dependents       | 4 |
+| # downloads        | 4623901 |
 | # stars            | 0 |
 
 ## Links

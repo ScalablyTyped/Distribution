@@ -64,10 +64,10 @@ class Range () extends Observable {
   def fontFamily(value: String): Unit = js.native
   @JSName("fontFamily")
   def fontFamily_Unit(): Unit = js.native
-  def fontSize(): Double = js.native
+  def fontSize(): Unit = js.native
   def fontSize(value: Double): Unit = js.native
   @JSName("fontSize")
-  def fontSize_Unit(): Unit = js.native
+  def fontSize_Double(): Double = js.native
   def forEachCell(callback: js.Function): Unit = js.native
   def format(): String = js.native
   def format(format: String): Unit = js.native

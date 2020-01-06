@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ObjectTypes extends js.Object {
   /**
     * The type of the object in the base commit of the merge.
     */
-  var base: js.UndefOr[ObjectTypeEnum] = js.undefined
+  var base: js.UndefOr[ObjectTypeEnum] = js.native
   /**
     * The type of the object in the destination branch.
     */
-  var destination: js.UndefOr[ObjectTypeEnum] = js.undefined
+  var destination: js.UndefOr[ObjectTypeEnum] = js.native
   /**
     * The type of the object in the source branch.
     */
-  var source: js.UndefOr[ObjectTypeEnum] = js.undefined
+  var source: js.UndefOr[ObjectTypeEnum] = js.native
 }
 
 object ObjectTypes {

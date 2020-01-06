@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ReceiptRuleStopAction extends js.Object {
   /**
     * The position of the action in the receipt rule
     */
-  var position: Input[Double]
+  var position: Input[Double] = js.native
   /**
     * The scope to apply
     */
-  var scope: Input[String]
+  var scope: Input[String] = js.native
   /**
     * The ARN of an SNS topic to notify
     */
-  var topicArn: js.UndefOr[Input[String]] = js.undefined
+  var topicArn: js.UndefOr[Input[String]] = js.native
 }
 
 object ReceiptRuleStopAction {

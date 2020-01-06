@@ -10,9 +10,9 @@ Triggers 'focusexit' event when keyboard focus has completely left the element. 
 | ------------------ | :-------------: |
 | Full name          | jquery-focus-exit |
 | Keywords           | jquery-plugin, ecosystem:jquery, ebay, accessibility, a11y |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 25337 |
+| # downloads        | 10207 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ Serves a webpack app. Updates the browser on changes.
 | ------------------ | :-------------: |
 | Full name          | webpack-dev-server |
 | Keywords           | - |
-| # releases         | 58 |
-| # dependents       | 4798 |
-| # downloads        | 156512391 |
+| # releases         | 45 |
+| # dependents       | 6077 |
+| # downloads        | 243402751 |
 | # stars            | 130 |
 
 ## Links

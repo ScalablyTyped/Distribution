@@ -12,7 +12,7 @@ Tiny Module for emitting folding syntax for Travis CI output
 | Keywords           | travis, travis-ci, folding |
 | # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 125702 |
+| # downloads        | 150790 |
 | # stars            | 0 |
 
 ## Links

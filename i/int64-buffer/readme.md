@@ -10,9 +10,9 @@ Typings are for version 0.1.10
 | ------------------ | :-------------: |
 | Full name          | int64-buffer |
 | Keywords           | 64bit, IEEE-754, arraybuffer, buffer, int, int64, int8array, integer, long, longlong, signed, uint64, unsinged |
-| # releases         | 3 |
-| # dependents       | 85 |
-| # downloads        | 4530447 |
+| # releases         | 2 |
+| # dependents       | 101 |
+| # downloads        | 9912819 |
 | # stars            | 0 |
 
 ## Links

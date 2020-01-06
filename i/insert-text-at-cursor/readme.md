@@ -12,7 +12,7 @@ Cross-browser lib for inserting text at selection in a textarea / input
 | Keywords           | text, range, selection, textarea |
 | # releases         | 7 |
 | # dependents       | 3 |
-| # downloads        | 30552 |
+| # downloads        | 33230 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ Access memory using small fixed sized buffers
 | ------------------ | :-------------: |
 | Full name          | memory-pager |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 6 |
-| # downloads        | 12260661 |
+| # releases         | 6 |
+| # dependents       | 5 |
+| # downloads        | 25575514 |
 | # stars            | 0 |
 
 ## Links

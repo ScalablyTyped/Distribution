@@ -10,9 +10,9 @@ displace an image.
 | ------------------ | :-------------: |
 | Full name          | @jimp/plugin-displace |
 | Keywords           | - |
-| # releases         | 13 |
+| # releases         | 66 |
 | # dependents       | 1 |
-| # downloads        | 7447811 |
+| # downloads        | 14017787 |
 | # stars            | 0 |
 
 ## Links

@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ConnectivityInfo extends js.Object {
   /**
     * The endpoint for the Greengrass core. Can be an IP address or DNS.
     */
-  var HostAddress: js.UndefOr[__string] = js.undefined
+  var HostAddress: js.UndefOr[__string] = js.native
   /**
     * The ID of the connectivity information.
     */
-  var Id: js.UndefOr[__string] = js.undefined
+  var Id: js.UndefOr[__string] = js.native
   /**
     * Metadata for this endpoint.
     */
-  var Metadata: js.UndefOr[__string] = js.undefined
+  var Metadata: js.UndefOr[__string] = js.native
   /**
     * The port of the Greengrass core. Usually 8883.
     */
-  var PortNumber: js.UndefOr[__integer] = js.undefined
+  var PortNumber: js.UndefOr[__integer] = js.native
 }
 
 object ConnectivityInfo {
@@ -32,9 +33,9 @@ object ConnectivityInfo {
     PortNumber: Int | Double = null
   ): ConnectivityInfo = {
     val __obj = js.Dynamic.literal()
-    if (HostAddress != null) __obj.updateDynamic("HostAddress")(HostAddress)
-    if (Id != null) __obj.updateDynamic("Id")(Id)
-    if (Metadata != null) __obj.updateDynamic("Metadata")(Metadata)
+    if (HostAddress != null) __obj.updateDynamic("HostAddress")(HostAddress.asInstanceOf[js.Any])
+    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
+    if (Metadata != null) __obj.updateDynamic("Metadata")(Metadata.asInstanceOf[js.Any])
     if (PortNumber != null) __obj.updateDynamic("PortNumber")(PortNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectivityInfo]
   }

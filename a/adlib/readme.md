@@ -10,9 +10,9 @@ Templating for deep JSON object graphs
 | ------------------ | :-------------: |
 | Full name          | adlib |
 | Keywords           | arcgis, json, templating |
-| # releases         | 27 |
-| # dependents       | 2 |
-| # downloads        | 9984 |
+| # releases         | 17 |
+| # dependents       | 3 |
+| # downloads        | 10563 |
 | # stars            | 0 |
 
 ## Links

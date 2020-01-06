@@ -10,9 +10,9 @@ Shortcode module for WordPress.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/shortcode |
 | Keywords           | wordpress, shortcode |
-| # releases         | 12 |
+| # releases         | 17 |
 | # dependents       | 2 |
-| # downloads        | 61836 |
+| # downloads        | 125122 |
 | # stars            | 0 |
 
 ## Links

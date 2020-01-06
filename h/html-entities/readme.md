@@ -10,9 +10,9 @@ Faster HTML entities encode/decode library.
 | ------------------ | :-------------: |
 | Full name          | html-entities |
 | Keywords           | html, html entities, html entities encode, html entities decode, entities, entities encode, entities decode |
-| # releases         | 2 |
-| # dependents       | 516 |
-| # downloads        | 148872356 |
+| # releases         | 1 |
+| # dependents       | 579 |
+| # downloads        | 237770406 |
 | # stars            | 36 |
 
 ## Links

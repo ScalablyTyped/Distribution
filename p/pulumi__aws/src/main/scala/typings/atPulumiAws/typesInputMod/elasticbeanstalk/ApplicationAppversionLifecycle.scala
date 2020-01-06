@@ -5,23 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ApplicationAppversionLifecycle extends js.Object {
   /**
     * Set to `true` to delete a version's source bundle from S3 when the application version is deleted.
     */
-  var deleteSourceFromS3: js.UndefOr[Input[Boolean]] = js.undefined
+  var deleteSourceFromS3: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The number of days to retain an application version.
     */
-  var maxAgeInDays: js.UndefOr[Input[Double]] = js.undefined
+  var maxAgeInDays: js.UndefOr[Input[Double]] = js.native
   /**
     * The maximum number of application versions to retain.
     */
-  var maxCount: js.UndefOr[Input[Double]] = js.undefined
+  var maxCount: js.UndefOr[Input[Double]] = js.native
   /**
     * The ARN of an IAM service role under which the application version is deleted.  Elastic Beanstalk must have permission to assume this role.
     */
-  var serviceRole: Input[String]
+  var serviceRole: Input[String] = js.native
 }
 
 object ApplicationAppversionLifecycle {

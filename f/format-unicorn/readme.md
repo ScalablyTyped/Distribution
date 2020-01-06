@@ -10,9 +10,9 @@ Stack Exchange's string format function.
 | ------------------ | :-------------: |
 | Full name          | format-unicorn |
 | Keywords           | string, format, formatunicorn, stackexchange |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 42630 |
+| # downloads        | 93208 |
 | # stars            | 0 |
 
 ## Links

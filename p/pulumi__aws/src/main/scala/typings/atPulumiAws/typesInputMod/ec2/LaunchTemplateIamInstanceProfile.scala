@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LaunchTemplateIamInstanceProfile extends js.Object {
   /**
     * Amazon Resource Name (ARN) of the launch template.
     */
-  var arn: js.UndefOr[Input[String]] = js.undefined
+  var arn: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the launch template. If you leave this blank, this provider will auto-generate a unique name.
     */
-  var name: js.UndefOr[Input[String]] = js.undefined
+  var name: js.UndefOr[Input[String]] = js.native
 }
 
 object LaunchTemplateIamInstanceProfile {

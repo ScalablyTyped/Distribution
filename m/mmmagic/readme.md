@@ -11,8 +11,8 @@ An async libmagic binding for node.js for detecting content types by data inspec
 | Full name          | mmmagic |
 | Keywords           | magic, libmagic, file, filetype, mime, mimetype |
 | # releases         | 5 |
-| # dependents       | 91 |
-| # downloads        | 397041 |
+| # dependents       | 95 |
+| # downloads        | 527019 |
 | # stars            | 10 |
 
 ## Links

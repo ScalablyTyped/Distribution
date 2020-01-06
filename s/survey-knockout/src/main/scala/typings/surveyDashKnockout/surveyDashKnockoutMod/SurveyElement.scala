@@ -44,7 +44,6 @@ class SurveyElement protected ()
   val survey: ISurvey = js.native
   val surveyImpl: ISurveyImpl = js.native
   val textProcessor: ITextProcessor = js.native
-  /* protected */ def copyCssClasses(dest: js.Any, source: js.Any): Unit = js.native
   /* CompleteClass */
   override def delete(): js.Any = js.native
   /* protected */ def getContainsErrors(): Boolean = js.native

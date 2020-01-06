@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.applicationinsights.Anon_Code
 import typings.node.httpMod.ClientRequest
 import typings.node.httpMod.IncomingMessage
-import typings.node.httpMod.RequestOptions
 import typings.node.httpMod.ServerResponse
 import typings.node.httpsMod.Agent
+import typings.node.httpsMod.RequestOptions
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -79,7 +79,7 @@ object ^ extends js.Object {
   def makeRequest(
     config: typings.applicationinsights.outLibraryConfigMod.^,
     requestUrl: String,
-    requestOptions: RequestOptions | typings.node.httpsMod.RequestOptions,
+    requestOptions: RequestOptions | typings.node.httpMod.RequestOptions,
     requestCallback: js.Function1[/* res */ IncomingMessage, Unit]
   ): ClientRequest = js.native
   /**

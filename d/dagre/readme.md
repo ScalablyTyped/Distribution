@@ -11,8 +11,8 @@ Graph layout for JavaScript
 | Full name          | dagre |
 | Keywords           | graph, layout |
 | # releases         | 5 |
-| # dependents       | 60 |
-| # downloads        | 1641756 |
+| # dependents       | 104 |
+| # downloads        | 3108516 |
 | # stars            | 6 |
 
 ## Links

@@ -11,7 +11,7 @@ High-level I/O for binary data.
 | Keywords           | parse, edit, buffer, binary, file, read, write, manipulate |
 | # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 19383 |
+| # downloads        | 22756 |
 | # stars            | 0 |
 
 ## Links

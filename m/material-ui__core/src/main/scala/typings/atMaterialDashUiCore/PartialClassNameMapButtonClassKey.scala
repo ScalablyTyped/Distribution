@@ -5,33 +5,34 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/Button/Button.ButtonClassKey>> */
+@js.native
 trait PartialClassNameMapButtonClassKey extends js.Object {
-  var colorInherit: js.UndefOr[String] = js.undefined
-  var contained: js.UndefOr[String] = js.undefined
-  var containedPrimary: js.UndefOr[String] = js.undefined
-  var containedSecondary: js.UndefOr[String] = js.undefined
-  var disabled: js.UndefOr[String] = js.undefined
-  var extendedFab: js.UndefOr[String] = js.undefined
-  var fab: js.UndefOr[String] = js.undefined
-  var flat: js.UndefOr[String] = js.undefined
-  var flatPrimary: js.UndefOr[String] = js.undefined
-  var flatSecondary: js.UndefOr[String] = js.undefined
-  var focusVisible: js.UndefOr[String] = js.undefined
-  var fullWidth: js.UndefOr[String] = js.undefined
-  var label: js.UndefOr[String] = js.undefined
-  var mini: js.UndefOr[String] = js.undefined
-  var outlined: js.UndefOr[String] = js.undefined
-  var outlinedPrimary: js.UndefOr[String] = js.undefined
-  var outlinedSecondary: js.UndefOr[String] = js.undefined
-  var raised: js.UndefOr[String] = js.undefined
-  var raisedPrimary: js.UndefOr[String] = js.undefined
-  var raisedSecondary: js.UndefOr[String] = js.undefined
-  var root: js.UndefOr[String] = js.undefined
-  var sizeLarge: js.UndefOr[String] = js.undefined
-  var sizeSmall: js.UndefOr[String] = js.undefined
-  var text: js.UndefOr[String] = js.undefined
-  var textPrimary: js.UndefOr[String] = js.undefined
-  var textSecondary: js.UndefOr[String] = js.undefined
+  var colorInherit: js.UndefOr[String] = js.native
+  var contained: js.UndefOr[String] = js.native
+  var containedPrimary: js.UndefOr[String] = js.native
+  var containedSecondary: js.UndefOr[String] = js.native
+  var disabled: js.UndefOr[String] = js.native
+  var extendedFab: js.UndefOr[String] = js.native
+  var fab: js.UndefOr[String] = js.native
+  var flat: js.UndefOr[String] = js.native
+  var flatPrimary: js.UndefOr[String] = js.native
+  var flatSecondary: js.UndefOr[String] = js.native
+  var focusVisible: js.UndefOr[String] = js.native
+  var fullWidth: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.native
+  var mini: js.UndefOr[String] = js.native
+  var outlined: js.UndefOr[String] = js.native
+  var outlinedPrimary: js.UndefOr[String] = js.native
+  var outlinedSecondary: js.UndefOr[String] = js.native
+  var raised: js.UndefOr[String] = js.native
+  var raisedPrimary: js.UndefOr[String] = js.native
+  var raisedSecondary: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.native
+  var sizeLarge: js.UndefOr[String] = js.native
+  var sizeSmall: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.native
+  var textPrimary: js.UndefOr[String] = js.native
+  var textSecondary: js.UndefOr[String] = js.native
 }
 
 object PartialClassNameMapButtonClassKey {

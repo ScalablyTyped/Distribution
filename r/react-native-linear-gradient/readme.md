@@ -10,9 +10,9 @@ A <LinearGradient> element for React Native
 | ------------------ | :-------------: |
 | Full name          | react-native-linear-gradient |
 | Keywords           | - |
-| # releases         | 15 |
-| # dependents       | 84 |
-| # downloads        | 2546748 |
+| # releases         | 13 |
+| # dependents       | 121 |
+| # downloads        | 4371462 |
 | # stars            | 8 |
 
 ## Links

@@ -10,8 +10,8 @@ Provides UI of snap and slide
 | Full name          | flipsnap |
 | Keywords           | mobile, ui, browser |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 35130 |
+| # dependents       | 2 |
+| # downloads        | 50387 |
 | # stars            | 0 |
 
 ## Links

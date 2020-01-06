@@ -38,7 +38,7 @@ object distIndexDotConsoleMod extends js.Object {
     def this(
       _key: DocumentKey,
       firestore: typings.atFirebaseFirestore.distSrcApiDatabaseMod.Firestore,
-      _converter: FirestoreDataConverter[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ _]
+      _converter: FirestoreDataConverter[/* import warning: RewrittenClass.unapply cls was tparam T */ _]
     ) = this()
   }
   
@@ -82,7 +82,7 @@ object distIndexDotConsoleMod extends js.Object {
     /* _path */ ResourcePath, 
     /* firestore */ typings.atFirebaseFirestore.distSrcApiDatabaseMod.Firestore, 
     js.UndefOr[
-      /* _converter */ FirestoreDataConverter[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any]
+      /* _converter */ FirestoreDataConverter[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any]
     ], 
     typings.atFirebaseFirestore.distSrcApiDatabaseMod.CollectionReference[js.Object]
   ] = js.native
@@ -93,7 +93,7 @@ object distIndexDotConsoleMod extends js.Object {
     /* _fromCache */ Boolean, 
     /* _hasPendingWrites */ Boolean, 
     js.UndefOr[
-      FirestoreDataConverter[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any]
+      FirestoreDataConverter[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any]
     ], 
     typings.atFirebaseFirestore.distSrcApiDatabaseMod.DocumentSnapshot[js.Object]
   ] = js.native
@@ -102,7 +102,7 @@ object distIndexDotConsoleMod extends js.Object {
     /* _originalQuery */ Query, 
     /* _snapshot */ ViewSnapshot, 
     js.UndefOr[
-      FirestoreDataConverter[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any]
+      FirestoreDataConverter[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any]
     ], 
     typings.atFirebaseFirestore.distSrcApiDatabaseMod.QuerySnapshot[js.Object]
   ] = js.native
@@ -115,15 +115,15 @@ object distIndexDotConsoleMod extends js.Object {
   
   @js.native
   object DocumentReference
-    extends Instantiable3[
+    extends Instantiable2[
           /* _key */ DocumentKey, 
           /* firestore */ typings.atFirebaseFirestore.distSrcApiDatabaseMod.Firestore, 
-          /* _converter */ FirestoreDataConverter[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any], 
           typings.atFirebaseFirestore.distSrcApiDatabaseMod.DocumentReference[js.Object]
         ]
-       with Instantiable2[
+       with Instantiable3[
           /* _key */ DocumentKey, 
           /* firestore */ typings.atFirebaseFirestore.distSrcApiDatabaseMod.Firestore, 
+          /* _converter */ FirestoreDataConverter[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
           typings.atFirebaseFirestore.distSrcApiDatabaseMod.DocumentReference[js.Object]
         ] {
     def forPath[U](path: ResourcePath, firestore: typings.atFirebaseFirestore.distSrcApiDatabaseMod.Firestore): typings.atFirebaseFirestore.distSrcApiDatabaseMod.DocumentReference[U] = js.native

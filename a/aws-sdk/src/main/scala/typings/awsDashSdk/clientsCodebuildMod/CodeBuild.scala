@@ -26,12 +26,12 @@ trait CodeBuild extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ BatchDeleteBuildsOutput, Unit]
   ): Request[BatchDeleteBuildsOutput, AWSError] = js.native
   /**
-    * Gets information about builds.
+    * Gets information about one or more builds.
     */
   def batchGetBuilds(): Request[BatchGetBuildsOutput, AWSError] = js.native
   def batchGetBuilds(callback: js.Function2[/* err */ AWSError, /* data */ BatchGetBuildsOutput, Unit]): Request[BatchGetBuildsOutput, AWSError] = js.native
   /**
-    * Gets information about builds.
+    * Gets information about one or more builds.
     */
   def batchGetBuilds(params: BatchGetBuildsInput): Request[BatchGetBuildsOutput, AWSError] = js.native
   def batchGetBuilds(
@@ -39,18 +39,44 @@ trait CodeBuild extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ BatchGetBuildsOutput, Unit]
   ): Request[BatchGetBuildsOutput, AWSError] = js.native
   /**
-    * Gets information about build projects.
+    * Gets information about one or more build projects.
     */
   def batchGetProjects(): Request[BatchGetProjectsOutput, AWSError] = js.native
   def batchGetProjects(callback: js.Function2[/* err */ AWSError, /* data */ BatchGetProjectsOutput, Unit]): Request[BatchGetProjectsOutput, AWSError] = js.native
   /**
-    * Gets information about build projects.
+    * Gets information about one or more build projects.
     */
   def batchGetProjects(params: BatchGetProjectsInput): Request[BatchGetProjectsOutput, AWSError] = js.native
   def batchGetProjects(
     params: BatchGetProjectsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ BatchGetProjectsOutput, Unit]
   ): Request[BatchGetProjectsOutput, AWSError] = js.native
+  /**
+    *  Returns an array of report groups. 
+    */
+  def batchGetReportGroups(): Request[BatchGetReportGroupsOutput, AWSError] = js.native
+  def batchGetReportGroups(callback: js.Function2[/* err */ AWSError, /* data */ BatchGetReportGroupsOutput, Unit]): Request[BatchGetReportGroupsOutput, AWSError] = js.native
+  /**
+    *  Returns an array of report groups. 
+    */
+  def batchGetReportGroups(params: BatchGetReportGroupsInput): Request[BatchGetReportGroupsOutput, AWSError] = js.native
+  def batchGetReportGroups(
+    params: BatchGetReportGroupsInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ BatchGetReportGroupsOutput, Unit]
+  ): Request[BatchGetReportGroupsOutput, AWSError] = js.native
+  /**
+    *  Returns an array of reports. 
+    */
+  def batchGetReports(): Request[BatchGetReportsOutput, AWSError] = js.native
+  def batchGetReports(callback: js.Function2[/* err */ AWSError, /* data */ BatchGetReportsOutput, Unit]): Request[BatchGetReportsOutput, AWSError] = js.native
+  /**
+    *  Returns an array of reports. 
+    */
+  def batchGetReports(params: BatchGetReportsInput): Request[BatchGetReportsOutput, AWSError] = js.native
+  def batchGetReports(
+    params: BatchGetReportsInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ BatchGetReportsOutput, Unit]
+  ): Request[BatchGetReportsOutput, AWSError] = js.native
   /**
     * Creates a build project.
     */
@@ -65,6 +91,19 @@ trait CodeBuild extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateProjectOutput, Unit]
   ): Request[CreateProjectOutput, AWSError] = js.native
   /**
+    *  Creates a report group. A report group contains a collection of reports. 
+    */
+  def createReportGroup(): Request[CreateReportGroupOutput, AWSError] = js.native
+  def createReportGroup(callback: js.Function2[/* err */ AWSError, /* data */ CreateReportGroupOutput, Unit]): Request[CreateReportGroupOutput, AWSError] = js.native
+  /**
+    *  Creates a report group. A report group contains a collection of reports. 
+    */
+  def createReportGroup(params: CreateReportGroupInput): Request[CreateReportGroupOutput, AWSError] = js.native
+  def createReportGroup(
+    params: CreateReportGroupInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateReportGroupOutput, Unit]
+  ): Request[CreateReportGroupOutput, AWSError] = js.native
+  /**
     * For an existing AWS CodeBuild build project that has its source code stored in a GitHub or Bitbucket repository, enables AWS CodeBuild to start rebuilding the source code every time a code change is pushed to the repository.  If you enable webhooks for an AWS CodeBuild project, and the project is used as a build step in AWS CodePipeline, then two identical builds are created for each commit. One build is triggered through webhooks, and one through AWS CodePipeline. Because billing is on a per-build basis, you are billed for both builds. Therefore, if you are using AWS CodePipeline, we recommend that you disable webhooks in AWS CodeBuild. In the AWS CodeBuild console, clear the Webhook box. For more information, see step 5 in Change a Build Project's Settings. 
     */
   def createWebhook(): Request[CreateWebhookOutput, AWSError] = js.native
@@ -78,18 +117,57 @@ trait CodeBuild extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateWebhookOutput, Unit]
   ): Request[CreateWebhookOutput, AWSError] = js.native
   /**
-    * Deletes a build project.
+    *  Deletes a build project. When you delete a project, its builds are not deleted. 
     */
   def deleteProject(): Request[DeleteProjectOutput, AWSError] = js.native
   def deleteProject(callback: js.Function2[/* err */ AWSError, /* data */ DeleteProjectOutput, Unit]): Request[DeleteProjectOutput, AWSError] = js.native
   /**
-    * Deletes a build project.
+    *  Deletes a build project. When you delete a project, its builds are not deleted. 
     */
   def deleteProject(params: DeleteProjectInput): Request[DeleteProjectOutput, AWSError] = js.native
   def deleteProject(
     params: DeleteProjectInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteProjectOutput, Unit]
   ): Request[DeleteProjectOutput, AWSError] = js.native
+  /**
+    *  Deletes a report. 
+    */
+  def deleteReport(): Request[DeleteReportOutput, AWSError] = js.native
+  def deleteReport(callback: js.Function2[/* err */ AWSError, /* data */ DeleteReportOutput, Unit]): Request[DeleteReportOutput, AWSError] = js.native
+  /**
+    *  Deletes a report. 
+    */
+  def deleteReport(params: DeleteReportInput): Request[DeleteReportOutput, AWSError] = js.native
+  def deleteReport(
+    params: DeleteReportInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteReportOutput, Unit]
+  ): Request[DeleteReportOutput, AWSError] = js.native
+  /**
+    *  DeleteReportGroup: Deletes a report group. Before you delete a report group, you must delete its reports. Use ListReportsForReportGroup to get the reports in a report group. Use DeleteReport to delete the reports. If you call DeleteReportGroup for a report group that contains one or more reports, an exception is thrown. 
+    */
+  def deleteReportGroup(): Request[DeleteReportGroupOutput, AWSError] = js.native
+  def deleteReportGroup(callback: js.Function2[/* err */ AWSError, /* data */ DeleteReportGroupOutput, Unit]): Request[DeleteReportGroupOutput, AWSError] = js.native
+  /**
+    *  DeleteReportGroup: Deletes a report group. Before you delete a report group, you must delete its reports. Use ListReportsForReportGroup to get the reports in a report group. Use DeleteReport to delete the reports. If you call DeleteReportGroup for a report group that contains one or more reports, an exception is thrown. 
+    */
+  def deleteReportGroup(params: DeleteReportGroupInput): Request[DeleteReportGroupOutput, AWSError] = js.native
+  def deleteReportGroup(
+    params: DeleteReportGroupInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteReportGroupOutput, Unit]
+  ): Request[DeleteReportGroupOutput, AWSError] = js.native
+  /**
+    *  Deletes a resource policy that is identified by its resource ARN. 
+    */
+  def deleteResourcePolicy(): Request[DeleteResourcePolicyOutput, AWSError] = js.native
+  def deleteResourcePolicy(callback: js.Function2[/* err */ AWSError, /* data */ DeleteResourcePolicyOutput, Unit]): Request[DeleteResourcePolicyOutput, AWSError] = js.native
+  /**
+    *  Deletes a resource policy that is identified by its resource ARN. 
+    */
+  def deleteResourcePolicy(params: DeleteResourcePolicyInput): Request[DeleteResourcePolicyOutput, AWSError] = js.native
+  def deleteResourcePolicy(
+    params: DeleteResourcePolicyInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteResourcePolicyOutput, Unit]
+  ): Request[DeleteResourcePolicyOutput, AWSError] = js.native
   /**
     *  Deletes a set of GitHub, GitHub Enterprise, or Bitbucket source credentials. 
     */
@@ -116,6 +194,32 @@ trait CodeBuild extends Service {
     params: DeleteWebhookInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteWebhookOutput, Unit]
   ): Request[DeleteWebhookOutput, AWSError] = js.native
+  /**
+    *  Returns a list of details about test cases for a report. 
+    */
+  def describeTestCases(): Request[DescribeTestCasesOutput, AWSError] = js.native
+  def describeTestCases(callback: js.Function2[/* err */ AWSError, /* data */ DescribeTestCasesOutput, Unit]): Request[DescribeTestCasesOutput, AWSError] = js.native
+  /**
+    *  Returns a list of details about test cases for a report. 
+    */
+  def describeTestCases(params: DescribeTestCasesInput): Request[DescribeTestCasesOutput, AWSError] = js.native
+  def describeTestCases(
+    params: DescribeTestCasesInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeTestCasesOutput, Unit]
+  ): Request[DescribeTestCasesOutput, AWSError] = js.native
+  /**
+    *  Gets a resource policy that is identified by its resource ARN. 
+    */
+  def getResourcePolicy(): Request[GetResourcePolicyOutput, AWSError] = js.native
+  def getResourcePolicy(callback: js.Function2[/* err */ AWSError, /* data */ GetResourcePolicyOutput, Unit]): Request[GetResourcePolicyOutput, AWSError] = js.native
+  /**
+    *  Gets a resource policy that is identified by its resource ARN. 
+    */
+  def getResourcePolicy(params: GetResourcePolicyInput): Request[GetResourcePolicyOutput, AWSError] = js.native
+  def getResourcePolicy(
+    params: GetResourcePolicyInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetResourcePolicyOutput, Unit]
+  ): Request[GetResourcePolicyOutput, AWSError] = js.native
   /**
     *  Imports the source repository credentials for an AWS CodeBuild project that has its source code stored in a GitHub, GitHub Enterprise, or Bitbucket repository. 
     */
@@ -195,6 +299,71 @@ trait CodeBuild extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListProjectsOutput, Unit]
   ): Request[ListProjectsOutput, AWSError] = js.native
   /**
+    *  Gets a list ARNs for the report groups in the current AWS account. 
+    */
+  def listReportGroups(): Request[ListReportGroupsOutput, AWSError] = js.native
+  def listReportGroups(callback: js.Function2[/* err */ AWSError, /* data */ ListReportGroupsOutput, Unit]): Request[ListReportGroupsOutput, AWSError] = js.native
+  /**
+    *  Gets a list ARNs for the report groups in the current AWS account. 
+    */
+  def listReportGroups(params: ListReportGroupsInput): Request[ListReportGroupsOutput, AWSError] = js.native
+  def listReportGroups(
+    params: ListReportGroupsInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListReportGroupsOutput, Unit]
+  ): Request[ListReportGroupsOutput, AWSError] = js.native
+  /**
+    *  Returns a list of ARNs for the reports in the current AWS account. 
+    */
+  def listReports(): Request[ListReportsOutput, AWSError] = js.native
+  def listReports(callback: js.Function2[/* err */ AWSError, /* data */ ListReportsOutput, Unit]): Request[ListReportsOutput, AWSError] = js.native
+  /**
+    *  Returns a list of ARNs for the reports in the current AWS account. 
+    */
+  def listReports(params: ListReportsInput): Request[ListReportsOutput, AWSError] = js.native
+  def listReports(
+    params: ListReportsInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListReportsOutput, Unit]
+  ): Request[ListReportsOutput, AWSError] = js.native
+  /**
+    *  Returns a list of ARNs for the reports that belong to a ReportGroup. 
+    */
+  def listReportsForReportGroup(): Request[ListReportsForReportGroupOutput, AWSError] = js.native
+  def listReportsForReportGroup(callback: js.Function2[/* err */ AWSError, /* data */ ListReportsForReportGroupOutput, Unit]): Request[ListReportsForReportGroupOutput, AWSError] = js.native
+  /**
+    *  Returns a list of ARNs for the reports that belong to a ReportGroup. 
+    */
+  def listReportsForReportGroup(params: ListReportsForReportGroupInput): Request[ListReportsForReportGroupOutput, AWSError] = js.native
+  def listReportsForReportGroup(
+    params: ListReportsForReportGroupInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListReportsForReportGroupOutput, Unit]
+  ): Request[ListReportsForReportGroupOutput, AWSError] = js.native
+  /**
+    *  Gets a list of projects that are shared with other AWS accounts or users. 
+    */
+  def listSharedProjects(): Request[ListSharedProjectsOutput, AWSError] = js.native
+  def listSharedProjects(callback: js.Function2[/* err */ AWSError, /* data */ ListSharedProjectsOutput, Unit]): Request[ListSharedProjectsOutput, AWSError] = js.native
+  /**
+    *  Gets a list of projects that are shared with other AWS accounts or users. 
+    */
+  def listSharedProjects(params: ListSharedProjectsInput): Request[ListSharedProjectsOutput, AWSError] = js.native
+  def listSharedProjects(
+    params: ListSharedProjectsInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListSharedProjectsOutput, Unit]
+  ): Request[ListSharedProjectsOutput, AWSError] = js.native
+  /**
+    *  Gets a list of report groups that are shared with other AWS accounts or users. 
+    */
+  def listSharedReportGroups(): Request[ListSharedReportGroupsOutput, AWSError] = js.native
+  def listSharedReportGroups(callback: js.Function2[/* err */ AWSError, /* data */ ListSharedReportGroupsOutput, Unit]): Request[ListSharedReportGroupsOutput, AWSError] = js.native
+  /**
+    *  Gets a list of report groups that are shared with other AWS accounts or users. 
+    */
+  def listSharedReportGroups(params: ListSharedReportGroupsInput): Request[ListSharedReportGroupsOutput, AWSError] = js.native
+  def listSharedReportGroups(
+    params: ListSharedReportGroupsInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListSharedReportGroupsOutput, Unit]
+  ): Request[ListSharedReportGroupsOutput, AWSError] = js.native
+  /**
     *  Returns a list of SourceCredentialsInfo objects. 
     */
   def listSourceCredentials(): Request[ListSourceCredentialsOutput, AWSError] = js.native
@@ -207,6 +376,19 @@ trait CodeBuild extends Service {
     params: ListSourceCredentialsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListSourceCredentialsOutput, Unit]
   ): Request[ListSourceCredentialsOutput, AWSError] = js.native
+  /**
+    *  Stores a resource policy for the ARN of a Project or ReportGroup object. 
+    */
+  def putResourcePolicy(): Request[PutResourcePolicyOutput, AWSError] = js.native
+  def putResourcePolicy(callback: js.Function2[/* err */ AWSError, /* data */ PutResourcePolicyOutput, Unit]): Request[PutResourcePolicyOutput, AWSError] = js.native
+  /**
+    *  Stores a resource policy for the ARN of a Project or ReportGroup object. 
+    */
+  def putResourcePolicy(params: PutResourcePolicyInput): Request[PutResourcePolicyOutput, AWSError] = js.native
+  def putResourcePolicy(
+    params: PutResourcePolicyInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutResourcePolicyOutput, Unit]
+  ): Request[PutResourcePolicyOutput, AWSError] = js.native
   /**
     * Starts running a build.
     */
@@ -246,6 +428,19 @@ trait CodeBuild extends Service {
     params: UpdateProjectInput,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateProjectOutput, Unit]
   ): Request[UpdateProjectOutput, AWSError] = js.native
+  /**
+    *  Updates a report group. 
+    */
+  def updateReportGroup(): Request[UpdateReportGroupOutput, AWSError] = js.native
+  def updateReportGroup(callback: js.Function2[/* err */ AWSError, /* data */ UpdateReportGroupOutput, Unit]): Request[UpdateReportGroupOutput, AWSError] = js.native
+  /**
+    *  Updates a report group. 
+    */
+  def updateReportGroup(params: UpdateReportGroupInput): Request[UpdateReportGroupOutput, AWSError] = js.native
+  def updateReportGroup(
+    params: UpdateReportGroupInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateReportGroupOutput, Unit]
+  ): Request[UpdateReportGroupOutput, AWSError] = js.native
   /**
     *  Updates the webhook associated with an AWS CodeBuild build project.    If you use Bitbucket for your repository, rotateSecret is ignored.  
     */

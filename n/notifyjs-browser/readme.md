@@ -11,7 +11,7 @@ Notify.js =====
 | Keywords           | notify, notification, prompt, popup, jquery-plugin |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 70702 |
+| # downloads        | 80334 |
 | # stars            | 0 |
 
 ## Links

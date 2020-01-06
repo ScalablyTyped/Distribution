@@ -11,8 +11,8 @@ The lodash method `_.setWith` exported as a module.
 | Full name          | lodash.setwith |
 | Keywords           | lodash-modularized, setwith |
 | # releases         | 0 |
-| # dependents       | 10 |
-| # downloads        | 122901 |
+| # dependents       | 16 |
+| # downloads        | 203930 |
 | # stars            | 0 |
 
 ## Links

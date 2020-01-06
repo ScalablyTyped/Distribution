@@ -42,8 +42,8 @@ object internalSchedulerVirtualTimeSchedulerMod extends js.Object {
     def this(SchedulerAction: Instantiable2[
             /* scheduler */ AsyncScheduler, 
             /* work */ js.ThisFunction1[
-              /* this */ SchedulerAction[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any], 
-              /* state */ js.UndefOr[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any], 
+              /* this */ SchedulerAction[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
+              /* state */ js.UndefOr[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
               Unit
             ], 
             AsyncAction[js.Object]
@@ -52,8 +52,8 @@ object internalSchedulerVirtualTimeSchedulerMod extends js.Object {
       SchedulerAction: Instantiable2[
             /* scheduler */ AsyncScheduler, 
             /* work */ js.ThisFunction1[
-              /* this */ SchedulerAction[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any], 
-              /* state */ js.UndefOr[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any], 
+              /* this */ SchedulerAction[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
+              /* state */ js.UndefOr[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
               Unit
             ], 
             AsyncAction[js.Object]

@@ -11,8 +11,8 @@ Drawer navigator component for React Navigation
 | Full name          | react-navigation-drawer |
 | Keywords           | react-native-component, react-component, react-native, ios, android, drawer, material |
 | # releases         | 48 |
-| # dependents       | 8 |
-| # downloads        | 7046593 |
+| # dependents       | 10 |
+| # downloads        | 7272860 |
 | # stars            | 0 |
 
 ## Links

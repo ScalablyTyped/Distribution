@@ -10,9 +10,9 @@ Components for interacting with dates and times
 | ------------------ | :-------------: |
 | Full name          | @blueprintjs/datetime |
 | Keywords           | palantir, blueprint, theme, react, day, picker, date, time |
-| # releases         | 43 |
-| # dependents       | 23 |
-| # downloads        | 1188459 |
+| # releases         | 40 |
+| # dependents       | 35 |
+| # downloads        | 1146907 |
 | # stars            | 1 |
 
 ## Links

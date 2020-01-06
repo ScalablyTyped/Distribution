@@ -54,9 +54,6 @@ object yamlStrings {
   sealed trait Leftcurlybracket extends js.Object
   
   @js.native
-  sealed trait Leftsquarebracket extends js.Object
-  
-  @js.native
   sealed trait MAP extends js.Object
   
   @js.native
@@ -90,9 +87,6 @@ object yamlStrings {
   sealed trait Rightcurlybracket extends js.Object
   
   @js.native
-  sealed trait Rightsquarebracket extends js.Object
-  
-  @js.native
   sealed trait SEQ extends js.Object
   
   @js.native
@@ -112,6 +106,12 @@ object yamlStrings {
   
   @js.native
   sealed trait YAMLSyntaxError extends js.Object
+  
+  @js.native
+  sealed trait `[` extends js.Object
+  
+  @js.native
+  sealed trait `]` extends js.Object
   
   @js.native
   sealed trait core extends js.Object
@@ -158,8 +158,6 @@ object yamlStrings {
   @scala.inline
   def Leftcurlybracket: Leftcurlybracket = "{".asInstanceOf[Leftcurlybracket]
   @scala.inline
-  def Leftsquarebracket: Leftsquarebracket = "[".asInstanceOf[Leftsquarebracket]
-  @scala.inline
   def MAP: MAP = "MAP".asInstanceOf[MAP]
   @scala.inline
   def MAP_KEY: MAP_KEY = "MAP_KEY".asInstanceOf[MAP_KEY]
@@ -182,8 +180,6 @@ object yamlStrings {
   @scala.inline
   def Rightcurlybracket: Rightcurlybracket = "}".asInstanceOf[Rightcurlybracket]
   @scala.inline
-  def Rightsquarebracket: Rightsquarebracket = "]".asInstanceOf[Rightsquarebracket]
-  @scala.inline
   def SEQ: SEQ = "SEQ".asInstanceOf[SEQ]
   @scala.inline
   def SEQ_ITEM: SEQ_ITEM = "SEQ_ITEM".asInstanceOf[SEQ_ITEM]
@@ -197,6 +193,10 @@ object yamlStrings {
   def YAMLSemanticError: YAMLSemanticError = "YAMLSemanticError".asInstanceOf[YAMLSemanticError]
   @scala.inline
   def YAMLSyntaxError: YAMLSyntaxError = "YAMLSyntaxError".asInstanceOf[YAMLSyntaxError]
+  @scala.inline
+  def `[`: `[` = "[".asInstanceOf[`[`]
+  @scala.inline
+  def `]`: `]` = "]".asInstanceOf[`]`]
   @scala.inline
   def core: core = "core".asInstanceOf[core]
   @scala.inline

@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait JobProgressSummary extends js.Object {
   /**
     * 
     */
-  var NumberOfTasksFailed: js.UndefOr[JobNumberOfTasksFailed] = js.undefined
+  var NumberOfTasksFailed: js.UndefOr[JobNumberOfTasksFailed] = js.native
   /**
     * 
     */
-  var NumberOfTasksSucceeded: js.UndefOr[JobNumberOfTasksSucceeded] = js.undefined
+  var NumberOfTasksSucceeded: js.UndefOr[JobNumberOfTasksSucceeded] = js.native
   /**
     * 
     */
-  var TotalNumberOfTasks: js.UndefOr[JobTotalNumberOfTasks] = js.undefined
+  var TotalNumberOfTasks: js.UndefOr[JobTotalNumberOfTasks] = js.native
 }
 
 object JobProgressSummary {

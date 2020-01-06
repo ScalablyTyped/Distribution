@@ -7,76 +7,74 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VpcEndpointState extends js.Object {
   /**
     * Accept the VPC endpoint (the VPC endpoint and service need to be in the same AWS account).
     */
-  val autoAccept: js.UndefOr[Input[Boolean]] = js.undefined
+  val autoAccept: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The list of CIDR blocks for the exposed AWS service. Applicable for endpoints of type `Gateway`.
     */
-  val cidrBlocks: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val cidrBlocks: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The DNS entries for the VPC Endpoint. Applicable for endpoints of type `Interface`. DNS blocks are documented below.
     */
-  val dnsEntries: js.UndefOr[Input[js.Array[Input[VpcEndpointDnsEntry]]]] = js.undefined
+  val dnsEntries: js.UndefOr[Input[js.Array[Input[VpcEndpointDnsEntry]]]] = js.native
   /**
     * One or more network interfaces for the VPC Endpoint. Applicable for endpoints of type `Interface`.
     */
-  val networkInterfaceIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val networkInterfaceIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The ID of the AWS account that owns the VPC endpoint.
     */
-  val ownerId: js.UndefOr[Input[String]] = js.undefined
-  /**
-    * A policy to attach to the endpoint that controls access to the service. Defaults to full access. All `Gateway` and some `Interface` endpoints support policies - see the [relevant AWS documentation](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-endpoints-access.html) for more details.
-    */
-  val policy: js.UndefOr[Input[String]] = js.undefined
+  val ownerId: js.UndefOr[Input[String]] = js.native
+  val policy: js.UndefOr[Input[String]] = js.native
   /**
     * The prefix list ID of the exposed AWS service. Applicable for endpoints of type `Gateway`.
     */
-  val prefixListId: js.UndefOr[Input[String]] = js.undefined
+  val prefixListId: js.UndefOr[Input[String]] = js.native
   /**
     * Whether or not to associate a private hosted zone with the specified VPC. Applicable for endpoints of type `Interface`.
     * Defaults to `false`.
     */
-  val privateDnsEnabled: js.UndefOr[Input[Boolean]] = js.undefined
+  val privateDnsEnabled: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Whether or not the VPC Endpoint is being managed by its service - `true` or `false`.
     */
-  val requesterManaged: js.UndefOr[Input[Boolean]] = js.undefined
+  val requesterManaged: js.UndefOr[Input[Boolean]] = js.native
   /**
     * One or more route table IDs. Applicable for endpoints of type `Gateway`.
     */
-  val routeTableIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val routeTableIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The ID of one or more security groups to associate with the network interface. Required for endpoints of type `Interface`.
     */
-  val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The service name, in the form `com.amazonaws.region.service` for AWS services.
     */
-  val serviceName: js.UndefOr[Input[String]] = js.undefined
+  val serviceName: js.UndefOr[Input[String]] = js.native
   /**
     * The state of the VPC endpoint.
     */
-  val state: js.UndefOr[Input[String]] = js.undefined
+  val state: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of one or more subnets in which to create a network interface for the endpoint. Applicable for endpoints of type `Interface`.
     */
-  val subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * The VPC endpoint type, `Gateway` or `Interface`. Defaults to `Gateway`.
     */
-  val vpcEndpointType: js.UndefOr[Input[String]] = js.undefined
+  val vpcEndpointType: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of the VPC in which the endpoint will be used.
     */
-  val vpcId: js.UndefOr[Input[String]] = js.undefined
+  val vpcId: js.UndefOr[Input[String]] = js.native
 }
 
 object VpcEndpointState {

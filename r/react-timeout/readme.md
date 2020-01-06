@@ -10,9 +10,9 @@ HOC for React and React Native providing versions of setTimeout etc. that cancel
 | ------------------ | :-------------: |
 | Full name          | react-timeout |
 | Keywords           | react, reactjs, native, timer, timeout, hoc |
-| # releases         | 6 |
-| # dependents       | 10 |
-| # downloads        | 445819 |
+| # releases         | 5 |
+| # dependents       | 12 |
+| # downloads        | 860842 |
 | # stars            | 3 |
 
 ## Links

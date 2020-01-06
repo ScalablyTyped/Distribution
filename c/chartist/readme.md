@@ -10,9 +10,9 @@ Simple, responsive charts
 | ------------------ | :-------------: |
 | Full name          | chartist |
 | Keywords           | chartist, responsive charts, charts, charting |
-| # releases         | 1 |
-| # dependents       | 76 |
-| # downloads        | 1844269 |
+| # releases         | 5 |
+| # dependents       | 96 |
+| # downloads        | 3217147 |
 | # stars            | 15 |
 
 ## Links

@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MaintenanceWindowTaskTaskInvocationParametersStepFunctionsParameters extends js.Object {
   /**
     * The inputs for the STEP_FUNCTION task.
     */
-  var input: js.UndefOr[Input[String]] = js.undefined
+  var input: js.UndefOr[Input[String]] = js.native
   /**
     * The parameter name.
     */
-  var name: js.UndefOr[Input[String]] = js.undefined
+  var name: js.UndefOr[Input[String]] = js.native
 }
 
 object MaintenanceWindowTaskTaskInvocationParametersStepFunctionsParameters {

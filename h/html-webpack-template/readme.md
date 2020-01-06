@@ -10,9 +10,9 @@ A template with more features than the default html-webpack-plugin template
 | ------------------ | :-------------: |
 | Full name          | html-webpack-template |
 | Keywords           | webpack, template, html-webpack-plugin, index.html, index.ejs |
-| # releases         | 7 |
-| # dependents       | 37 |
-| # downloads        | 1762574 |
+| # releases         | 2 |
+| # dependents       | 45 |
+| # downloads        | 867328 |
 | # stars            | 9 |
 
 ## Links

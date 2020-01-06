@@ -4,123 +4,126 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait H264Settings extends js.Object {
   /**
     * Adaptive quantization. Allows intra-frame quantizers to vary to improve visual quality.
     */
-  var AdaptiveQuantization: js.UndefOr[H264AdaptiveQuantization] = js.undefined
+  var AdaptiveQuantization: js.UndefOr[H264AdaptiveQuantization] = js.native
   /**
     * Indicates that AFD values will be written into the output stream.  If afdSignaling is "auto", the system will try to preserve the input AFD value (in cases where multiple AFD values are valid). If set to "fixed", the AFD value will be the value configured in the fixedAfd parameter.
     */
-  var AfdSignaling: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.AfdSignaling] = js.undefined
+  var AfdSignaling: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.AfdSignaling] = js.native
   /**
     * Average bitrate in bits/second. Required when the rate control mode is VBR or CBR. Not used for QVBR. In an MS Smooth output group, each output must have a unique value when its bitrate is rounded down to the nearest multiple of 1000.
     */
-  var Bitrate: js.UndefOr[__integerMin1000] = js.undefined
+  var Bitrate: js.UndefOr[__integerMin1000] = js.native
   /**
     * Percentage of the buffer that should initially be filled (HRD buffer model).
     */
-  var BufFillPct: js.UndefOr[__integerMin0Max100] = js.undefined
+  var BufFillPct: js.UndefOr[__integerMin0Max100] = js.native
   /**
     * Size of buffer (HRD buffer model) in bits.
     */
-  var BufSize: js.UndefOr[__integerMin0] = js.undefined
+  var BufSize: js.UndefOr[__integerMin0] = js.native
   /**
     * Includes colorspace metadata in the output.
     */
-  var ColorMetadata: js.UndefOr[H264ColorMetadata] = js.undefined
+  var ColorMetadata: js.UndefOr[H264ColorMetadata] = js.native
   /**
     * Color Space settings
     */
-  var ColorSpaceSettings: js.UndefOr[H264ColorSpaceSettings] = js.undefined
+  var ColorSpaceSettings: js.UndefOr[H264ColorSpaceSettings] = js.native
   /**
     * Entropy encoding mode.  Use cabac (must be in Main or High profile) or cavlc.
     */
-  var EntropyEncoding: js.UndefOr[H264EntropyEncoding] = js.undefined
+  var EntropyEncoding: js.UndefOr[H264EntropyEncoding] = js.native
   /**
     * Four bit AFD value to write on all frames of video in the output stream. Only valid when afdSignaling is set to 'Fixed'.
     */
-  var FixedAfd: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.FixedAfd] = js.undefined
+  var FixedAfd: js.UndefOr[typings.awsDashSdk.clientsMedialiveMod.FixedAfd] = js.native
   /**
     * If set to enabled, adjust quantization within each frame to reduce flicker or 'pop' on I-frames.
     */
-  var FlickerAq: js.UndefOr[H264FlickerAq] = js.undefined
+  var FlickerAq: js.UndefOr[H264FlickerAq] = js.native
   /**
     * This field indicates how the output video frame rate is specified.  If "specified" is selected then the output video frame rate is determined by framerateNumerator and framerateDenominator, else if "initializeFromSource" is selected then the output video frame rate will be set equal to the input video frame rate of the first input.
     */
-  var FramerateControl: js.UndefOr[H264FramerateControl] = js.undefined
+  var FramerateControl: js.UndefOr[H264FramerateControl] = js.native
   /**
     * Framerate denominator.
     */
-  var FramerateDenominator: js.UndefOr[__integerMin1] = js.undefined
+  var FramerateDenominator: js.UndefOr[__integerMin1] = js.native
   /**
     * Framerate numerator - framerate is a fraction, e.g. 24000 / 1001 = 23.976 fps.
     */
-  var FramerateNumerator: js.UndefOr[__integerMin1] = js.undefined
+  var FramerateNumerator: js.UndefOr[__integerMin1] = js.native
   /**
     * Documentation update needed
     */
-  var GopBReference: js.UndefOr[H264GopBReference] = js.undefined
+  var GopBReference: js.UndefOr[H264GopBReference] = js.native
   /**
     * Frequency of closed GOPs. In streaming applications, it is recommended that this be set to 1 so a decoder joining mid-stream will receive an IDR frame as quickly as possible. Setting this value to 0 will break output segmenting.
     */
-  var GopClosedCadence: js.UndefOr[__integerMin0] = js.undefined
+  var GopClosedCadence: js.UndefOr[__integerMin0] = js.native
   /**
     * Number of B-frames between reference frames.
     */
-  var GopNumBFrames: js.UndefOr[__integerMin0Max7] = js.undefined
+  var GopNumBFrames: js.UndefOr[__integerMin0Max7] = js.native
   /**
-    * GOP size (keyframe interval) in units of either frames or seconds per gopSizeUnits. Must be greater than zero.
+    * GOP size (keyframe interval) in units of either frames or seconds per gopSizeUnits.
+  If gopSizeUnits is frames, gopSize must be an integer and must be greater than or equal to 1.
+  If gopSizeUnits is seconds, gopSize must be greater than 0, but need not be an integer.
     */
-  var GopSize: js.UndefOr[__doubleMin1] = js.undefined
+  var GopSize: js.UndefOr[__double] = js.native
   /**
     * Indicates if the gopSize is specified in frames or seconds. If seconds the system will convert the gopSize into a frame count at run time.
     */
-  var GopSizeUnits: js.UndefOr[H264GopSizeUnits] = js.undefined
+  var GopSizeUnits: js.UndefOr[H264GopSizeUnits] = js.native
   /**
     * H.264 Level.
     */
-  var Level: js.UndefOr[H264Level] = js.undefined
+  var Level: js.UndefOr[H264Level] = js.native
   /**
     * Amount of lookahead. A value of low can decrease latency and memory usage, while high can produce better quality for certain content.
     */
-  var LookAheadRateControl: js.UndefOr[H264LookAheadRateControl] = js.undefined
+  var LookAheadRateControl: js.UndefOr[H264LookAheadRateControl] = js.native
   /**
     * For QVBR: See the tooltip for Quality level
   For VBR: Set the maximum bitrate in order to accommodate expected spikes in the complexity of the video.
     */
-  var MaxBitrate: js.UndefOr[__integerMin1000] = js.undefined
+  var MaxBitrate: js.UndefOr[__integerMin1000] = js.native
   /**
-    * Only meaningful if sceneChangeDetect is set to enabled.  Enforces separation between repeated (cadence) I-frames and I-frames inserted by Scene Change Detection. If a scene change I-frame is within I-interval frames of a cadence I-frame, the GOP is shrunk and/or stretched to the scene change I-frame. GOP stretch requires enabling lookahead as well as setting I-interval. The normal cadence resumes for the next GOP. Note: Maximum GOP stretch = GOP size + Min-I-interval - 1
+    * Only meaningful if sceneChangeDetect is set to enabled.  Defaults to 5 if multiplex rate control is used.  Enforces separation between repeated (cadence) I-frames and I-frames inserted by Scene Change Detection. If a scene change I-frame is within I-interval frames of a cadence I-frame, the GOP is shrunk and/or stretched to the scene change I-frame. GOP stretch requires enabling lookahead as well as setting I-interval. The normal cadence resumes for the next GOP. Note: Maximum GOP stretch = GOP size + Min-I-interval - 1
     */
-  var MinIInterval: js.UndefOr[__integerMin0Max30] = js.undefined
+  var MinIInterval: js.UndefOr[__integerMin0Max30] = js.native
   /**
     * Number of reference frames to use. The encoder may use more than requested if using B-frames and/or interlaced encoding.
     */
-  var NumRefFrames: js.UndefOr[__integerMin1Max6] = js.undefined
+  var NumRefFrames: js.UndefOr[__integerMin1Max6] = js.native
   /**
     * This field indicates how the output pixel aspect ratio is specified.  If "specified" is selected then the output video pixel aspect ratio is determined by parNumerator and parDenominator, else if "initializeFromSource" is selected then the output pixsel aspect ratio will be set equal to the input video pixel aspect ratio of the first input.
     */
-  var ParControl: js.UndefOr[H264ParControl] = js.undefined
+  var ParControl: js.UndefOr[H264ParControl] = js.native
   /**
     * Pixel Aspect Ratio denominator.
     */
-  var ParDenominator: js.UndefOr[__integerMin1] = js.undefined
+  var ParDenominator: js.UndefOr[__integerMin1] = js.native
   /**
     * Pixel Aspect Ratio numerator.
     */
-  var ParNumerator: js.UndefOr[__integer] = js.undefined
+  var ParNumerator: js.UndefOr[__integer] = js.native
   /**
     * H.264 Profile.
     */
-  var Profile: js.UndefOr[H264Profile] = js.undefined
+  var Profile: js.UndefOr[H264Profile] = js.native
   /**
     * Controls the target quality for the video encode. Applies only when the rate control mode is QVBR. Set values for the QVBR quality level field and Max bitrate field that suit your most important viewing devices. Recommended values are:
   - Primary screen: Quality level: 8 to 10. Max bitrate: 4M
   - PC or tablet: Quality level: 7. Max bitrate: 1.5M to 3M
   - Smartphone: Quality level: 6. Max bitrate: 1M to 1.5M
     */
-  var QvbrQualityLevel: js.UndefOr[__integerMin1Max10] = js.undefined
+  var QvbrQualityLevel: js.UndefOr[__integerMin1Max10] = js.native
   /**
     * Rate control mode.
   QVBR: Quality will match the specified quality level except when it is constrained by the
@@ -129,49 +132,52 @@ trait H264Settings extends js.Object {
   if you want to maintain a specific average bitrate over the duration of the channel.
   CBR: Quality varies, depending on the video complexity. Recommended only if you distribute
   your assets to devices that cannot handle variable bitrates.
+  Multiplex: This rate control mode is only supported (and is required) when the video is being
+  delivered to a MediaLive Multiplex in which case the rate control configuration is controlled
+  by the properties within the Multiplex Program.
     */
-  var RateControlMode: js.UndefOr[H264RateControlMode] = js.undefined
+  var RateControlMode: js.UndefOr[H264RateControlMode] = js.native
   /**
     * Sets the scan type of the output to progressive or top-field-first interlaced.
     */
-  var ScanType: js.UndefOr[H264ScanType] = js.undefined
+  var ScanType: js.UndefOr[H264ScanType] = js.native
   /**
     * Scene change detection.
   - On: inserts I-frames when scene change is detected.
   - Off: does not force an I-frame when scene change is detected.
     */
-  var SceneChangeDetect: js.UndefOr[H264SceneChangeDetect] = js.undefined
+  var SceneChangeDetect: js.UndefOr[H264SceneChangeDetect] = js.native
   /**
     * Number of slices per picture. Must be less than or equal to the number of macroblock rows for progressive pictures, and less than or equal to half the number of macroblock rows for interlaced pictures.
   This field is optional; when no value is specified the encoder will choose the number of slices based on encode resolution.
     */
-  var Slices: js.UndefOr[__integerMin1Max32] = js.undefined
+  var Slices: js.UndefOr[__integerMin1Max32] = js.native
   /**
     * Softness. Selects quantizer matrix, larger values reduce high-frequency content in the encoded image.
     */
-  var Softness: js.UndefOr[__integerMin0Max128] = js.undefined
+  var Softness: js.UndefOr[__integerMin0Max128] = js.native
   /**
     * If set to enabled, adjust quantization within each frame based on spatial variation of content complexity.
     */
-  var SpatialAq: js.UndefOr[H264SpatialAq] = js.undefined
+  var SpatialAq: js.UndefOr[H264SpatialAq] = js.native
   /**
     * If set to fixed, use gopNumBFrames B-frames per sub-GOP. If set to dynamic, optimize the number of B-frames used for each sub-GOP to improve visual quality.
     */
-  var SubgopLength: js.UndefOr[H264SubGopLength] = js.undefined
+  var SubgopLength: js.UndefOr[H264SubGopLength] = js.native
   /**
     * Produces a bitstream compliant with SMPTE RP-2027.
     */
-  var Syntax: js.UndefOr[H264Syntax] = js.undefined
+  var Syntax: js.UndefOr[H264Syntax] = js.native
   /**
     * If set to enabled, adjust quantization within each frame based on temporal variation of content complexity.
     */
-  var TemporalAq: js.UndefOr[H264TemporalAq] = js.undefined
+  var TemporalAq: js.UndefOr[H264TemporalAq] = js.native
   /**
     * Determines how timecodes should be inserted into the video elementary stream.
   - 'disabled': Do not include timecodes
   - 'picTimingSei': Pass through picture timing SEI messages from the source specified in Timecode Config
     */
-  var TimecodeInsertion: js.UndefOr[H264TimecodeInsertionBehavior] = js.undefined
+  var TimecodeInsertion: js.UndefOr[H264TimecodeInsertionBehavior] = js.native
 }
 
 object H264Settings {
@@ -223,7 +229,7 @@ object H264Settings {
     if (BufFillPct != null) __obj.updateDynamic("BufFillPct")(BufFillPct.asInstanceOf[js.Any])
     if (BufSize != null) __obj.updateDynamic("BufSize")(BufSize.asInstanceOf[js.Any])
     if (ColorMetadata != null) __obj.updateDynamic("ColorMetadata")(ColorMetadata.asInstanceOf[js.Any])
-    if (ColorSpaceSettings != null) __obj.updateDynamic("ColorSpaceSettings")(ColorSpaceSettings)
+    if (ColorSpaceSettings != null) __obj.updateDynamic("ColorSpaceSettings")(ColorSpaceSettings.asInstanceOf[js.Any])
     if (EntropyEncoding != null) __obj.updateDynamic("EntropyEncoding")(EntropyEncoding.asInstanceOf[js.Any])
     if (FixedAfd != null) __obj.updateDynamic("FixedAfd")(FixedAfd.asInstanceOf[js.Any])
     if (FlickerAq != null) __obj.updateDynamic("FlickerAq")(FlickerAq.asInstanceOf[js.Any])

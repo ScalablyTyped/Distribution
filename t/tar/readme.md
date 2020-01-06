@@ -10,9 +10,9 @@ tar for node
 | ------------------ | :-------------: |
 | Full name          | tar |
 | Keywords           | - |
-| # releases         | 41 |
-| # dependents       | 1211 |
-| # downloads        | 318876402 |
+| # releases         | 25 |
+| # dependents       | 1475 |
+| # downloads        | 512435598 |
 | # stars            | 45 |
 
 ## Links

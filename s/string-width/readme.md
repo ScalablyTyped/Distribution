@@ -10,9 +10,9 @@ Get the visual width of a string - the number of columns required to display it
 | ------------------ | :-------------: |
 | Full name          | string-width |
 | Keywords           | string, character, unicode, width, visual, column, columns, fullwidth, full-width, full, ansi, escape, codes, cli, command-line, terminal, console, cjk, chinese, japanese, korean, fixed-width |
-| # releases         | 7 |
-| # dependents       | 278 |
-| # downloads        | 666728699 |
+| # releases         | 6 |
+| # dependents       | 349 |
+| # downloads        | 1260742413 |
 | # stars            | 4 |
 
 ## Links

@@ -7,23 +7,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MethodSettingsArgs extends js.Object {
   /**
     * Method path defined as `{resource_path}/{http_method}` for an individual method override, or `*&#47;*` for overriding all methods in the stage.
     */
-  val methodPath: Input[String]
+  val methodPath: Input[String] = js.native
   /**
     * The ID of the REST API
     */
-  val restApi: Input[RestApi]
+  val restApi: Input[RestApi] = js.native
   /**
     * The settings block, see below.
     */
-  val settings: Input[MethodSettingsSettings]
+  val settings: Input[MethodSettingsSettings] = js.native
   /**
     * The name of the stage
     */
-  val stageName: Input[String]
+  val stageName: Input[String] = js.native
 }
 
 object MethodSettingsArgs {

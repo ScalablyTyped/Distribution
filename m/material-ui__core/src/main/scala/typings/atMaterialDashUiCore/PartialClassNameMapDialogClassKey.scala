@@ -5,21 +5,22 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/Dialog/Dialog.DialogClassKey>> */
+@js.native
 trait PartialClassNameMapDialogClassKey extends js.Object {
-  var container: js.UndefOr[String] = js.undefined
-  var paper: js.UndefOr[String] = js.undefined
-  var paperFullScreen: js.UndefOr[String] = js.undefined
-  var paperFullWidth: js.UndefOr[String] = js.undefined
-  var paperScrollBody: js.UndefOr[String] = js.undefined
-  var paperScrollPaper: js.UndefOr[String] = js.undefined
-  var paperWidthLg: js.UndefOr[String] = js.undefined
-  var paperWidthMd: js.UndefOr[String] = js.undefined
-  var paperWidthSm: js.UndefOr[String] = js.undefined
-  var paperWidthXl: js.UndefOr[String] = js.undefined
-  var paperWidthXs: js.UndefOr[String] = js.undefined
-  var root: js.UndefOr[String] = js.undefined
-  var scrollBody: js.UndefOr[String] = js.undefined
-  var scrollPaper: js.UndefOr[String] = js.undefined
+  var container: js.UndefOr[String] = js.native
+  var paper: js.UndefOr[String] = js.native
+  var paperFullScreen: js.UndefOr[String] = js.native
+  var paperFullWidth: js.UndefOr[String] = js.native
+  var paperScrollBody: js.UndefOr[String] = js.native
+  var paperScrollPaper: js.UndefOr[String] = js.native
+  var paperWidthLg: js.UndefOr[String] = js.native
+  var paperWidthMd: js.UndefOr[String] = js.native
+  var paperWidthSm: js.UndefOr[String] = js.native
+  var paperWidthXl: js.UndefOr[String] = js.native
+  var paperWidthXs: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.native
+  var scrollBody: js.UndefOr[String] = js.native
+  var scrollPaper: js.UndefOr[String] = js.native
 }
 
 object PartialClassNameMapDialogClassKey {

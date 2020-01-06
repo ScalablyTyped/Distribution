@@ -42,9 +42,9 @@ package object atStyledDashSystemCssMod {
   type Theme = (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof @styled-system/css.@styled-system/css.StandardCSSProperties ]: @styled-system/css.@styled-system/css.ThemeValue<@styled-system/css.@styled-system/css.StandardCSSProperties[K]>}
     */ typings.atStyledDashSystemCss.atStyledDashSystemCssStrings.Theme with StandardCSSProperties) | Partial[ScaleThemeProperties] | ThemeBreakPoints | (StringDictionary[
-    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias @styled-system/css.@styled-system/css.Theme */ js.Object
+    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @styled-system/css.@styled-system/css.Theme */ js.Object
   ])
   type ThemeValue[T] = js.Array[T] | (StringDictionary[
-    T | (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias @styled-system/css.@styled-system/css.ThemeValue<T> */ js.Object)
+    T | (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @styled-system/css.@styled-system/css.ThemeValue<T> */ js.Object)
   ])
 }

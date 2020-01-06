@@ -12,7 +12,7 @@ The lodash method `_.matches` exported as a module.
 | Keywords           | lodash-modularized, matches |
 | # releases         | 0 |
 | # dependents       | 13 |
-| # downloads        | 189539 |
+| # downloads        | 300826 |
 | # stars            | 0 |
 
 ## Links

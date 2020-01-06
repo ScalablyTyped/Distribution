@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SseKmsEncryptedObjects extends js.Object {
   /**
-    * Specifies whether Amazon S3 replicates objects created with server-side encryption using an AWS KMS-managed key.
+    * Specifies whether Amazon S3 replicates objects created with server-side encryption using a customer master key (CMK) stored in AWS Key Management Service.
     */
-  var Status: SseKmsEncryptedObjectsStatus
+  var Status: SseKmsEncryptedObjectsStatus = js.native
 }
 
 object SseKmsEncryptedObjects {

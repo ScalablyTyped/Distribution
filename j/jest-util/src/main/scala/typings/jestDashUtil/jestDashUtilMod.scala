@@ -44,7 +44,7 @@ object jestDashUtilMod extends js.Object {
   
   @js.native
   class FakeTimers[TimerRef] protected () extends JestFakeTimers[TimerRef] {
-    def this(hasGlobalModuleMockerTimerConfigConfigMaxLoops: Anon_Config[/* import warning: RewrittenClass.unapply cls $anonfun was tparam TimerRef */ _]) = this()
+    def this(hasGlobalModuleMockerTimerConfigConfigMaxLoops: Anon_Config[/* import warning: RewrittenClass.unapply cls was tparam TimerRef */ _]) = this()
   }
   
   @js.native
@@ -116,9 +116,7 @@ object jestDashUtilMod extends js.Object {
   object FakeTimers
     extends TopLevel[
           Instantiable1[
-            /* hasGlobalModuleMockerTimerConfigConfigMaxLoops */ Anon_Config[
-              /* import warning: RewrittenClass.unapply cls $anonfun was tparam TimerRef */ js.Any
-            ], 
+            /* hasGlobalModuleMockerTimerConfigConfigMaxLoops */ Anon_Config[/* import warning: RewrittenClass.unapply cls was tparam TimerRef */ js.Any], 
             JestFakeTimers[js.Object]
           ]
         ]

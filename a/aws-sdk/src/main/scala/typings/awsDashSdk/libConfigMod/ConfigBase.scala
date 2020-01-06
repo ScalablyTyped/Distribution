@@ -1,8 +1,8 @@
 package typings.awsDashSdk.libConfigMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.awsDashSdk.awsDashSdkNumbers.`false`
-import typings.awsDashSdk.awsDashSdkNumbers.`true`
+import typings.awsDashSdk.awsDashSdkBooleans.`false`
+import typings.awsDashSdk.awsDashSdkBooleans.`true`
 import typings.awsDashSdk.libErrorMod.AWSError
 import typings.std.PromiseConstructor
 import scala.scalajs.js

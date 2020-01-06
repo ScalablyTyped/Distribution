@@ -11,8 +11,8 @@ The lodash method `_.findLastIndex` exported as a module.
 | Full name          | lodash.findlastindex |
 | Keywords           | lodash-modularized, findlastindex |
 | # releases         | 0 |
-| # dependents       | 13 |
-| # downloads        | 66963 |
+| # dependents       | 15 |
+| # downloads        | 221584 |
 | # stars            | 0 |
 
 ## Links

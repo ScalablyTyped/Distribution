@@ -27,10 +27,10 @@ trait TypeofPg extends js.Object {
   var Pool: Instantiable1[js.UndefOr[/* config */ PoolConfig], typings.pg.pgMod.Pool]
   var Query: Instantiable2[
     js.UndefOr[
-      String | (QueryConfig[/* import warning: RewrittenClass.unapply cls $anonfun was tparam I */ js.Any])
+      String | (QueryConfig[/* import warning: RewrittenClass.unapply cls was tparam I */ js.Any])
     ], 
     js.UndefOr[
-      /* import warning: RewrittenClass.unapply cls $anonfun was tparam I */ /* values */ js.Any
+      /* import warning: RewrittenClass.unapply cls was tparam I */ /* values */ js.Any
     ], 
     typings.pg.pgMod.Query[QueryResultRow, js.Array[js.Any]]
   ]
@@ -48,10 +48,10 @@ object TypeofPg {
     Pool: Instantiable1[js.UndefOr[/* config */ PoolConfig], Pool],
     Query: Instantiable2[
       js.UndefOr[
-        String | (QueryConfig[/* import warning: RewrittenClass.unapply cls $anonfun was tparam I */ js.Any])
+        String | (QueryConfig[/* import warning: RewrittenClass.unapply cls was tparam I */ js.Any])
       ], 
       js.UndefOr[
-        /* import warning: RewrittenClass.unapply cls $anonfun was tparam I */ /* values */ js.Any
+        /* import warning: RewrittenClass.unapply cls was tparam I */ /* values */ js.Any
       ], 
       Query[QueryResultRow, js.Array[js.Any]]
     ],

@@ -10,15 +10,15 @@ Module to generate Windows installers for Electron apps
 | ------------------ | :-------------: |
 | Full name          | electron-winstaller |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 9 |
-| # downloads        | 527098 |
+| # releases         | 7 |
+| # dependents       | 16 |
+| # downloads        | 565141 |
 | # stars            | 5 |
 
 ## Links
-- [Homepage](https://github.com/electronjs/windows-installer#readme)
-- [Bugs](https://github.com/electronjs/windows-installer/issues)
-- [Repository](https://github.com/electronjs/windows-installer)
+- [Homepage](https://github.com/electron/windows-installer#readme)
+- [Bugs](https://github.com/electron/windows-installer/issues)
+- [Repository](https://github.com/electron/windows-installer)
 - [Npm](https://www.npmjs.com/package/electron-winstaller)
     
 

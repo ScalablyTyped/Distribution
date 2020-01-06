@@ -11,8 +11,8 @@ Gravatar Node.js library
 | Full name          | gravatar |
 | Keywords           | gravatar, avatar, package.json |
 | # releases         | 3 |
-| # dependents       | 152 |
-| # downloads        | 566830 |
+| # dependents       | 167 |
+| # downloads        | 802921 |
 | # stars            | 22 |
 
 ## Links

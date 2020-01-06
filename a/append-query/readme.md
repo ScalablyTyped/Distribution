@@ -10,9 +10,9 @@ Append querystring params to a URL.
 | ------------------ | :-------------: |
 | Full name          | append-query |
 | Keywords           | string, url, querystring, query params, query, append |
-| # releases         | 0 |
-| # dependents       | 32 |
-| # downloads        | 344552 |
+| # releases         | 2 |
+| # dependents       | 35 |
+| # downloads        | 438216 |
 | # stars            | 0 |
 
 ## Links

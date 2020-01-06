@@ -10,9 +10,9 @@ serialization utils for emotion
 | ------------------ | :-------------: |
 | Full name          | @emotion/serialize |
 | Keywords           | - |
-| # releases         | 36 |
-| # dependents       | 11 |
-| # downloads        | 43284531 |
+| # releases         | 47 |
+| # dependents       | 15 |
+| # downloads        | 87576219 |
 | # stars            | 0 |
 
 ## Links

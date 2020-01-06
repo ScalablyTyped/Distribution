@@ -12,7 +12,7 @@ Assert a Map has a given key and return the value for it.
 | Keywords           | - |
 | # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 178 |
+| # downloads        | 221 |
 | # stars            | 0 |
 
 ## Links

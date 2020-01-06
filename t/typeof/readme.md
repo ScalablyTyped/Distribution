@@ -10,9 +10,9 @@ Node module. typeOf('a string') == 'string', typeOf([]) == 'array', etc.. Also s
 | ------------------ | :-------------: |
 | Full name          | typeof |
 | Keywords           | typeof, type |
-| # releases         | 1 |
-| # dependents       | 31 |
-| # downloads        | 44789 |
+| # releases         | 0 |
+| # dependents       | 33 |
+| # downloads        | 62229 |
 | # stars            | 1 |
 
 ## Links

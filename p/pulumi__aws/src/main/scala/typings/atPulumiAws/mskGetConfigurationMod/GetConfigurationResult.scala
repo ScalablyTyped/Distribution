@@ -4,32 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetConfigurationResult extends js.Object {
   /**
     * Amazon Resource Name (ARN) of the configuration.
     */
-  val arn: String
+  val arn: String = js.native
   /**
     * Description of the configuration.
     */
-  val description: String
+  val description: String = js.native
   /**
     * id is the provider-assigned unique ID for this managed resource.
     */
-  val id: String
+  val id: String = js.native
   /**
     * List of Apache Kafka versions which can use this configuration.
     */
-  val kafkaVersions: js.Array[String]
+  val kafkaVersions: js.Array[String] = js.native
   /**
     * Latest revision of the configuration.
     */
-  val latestRevision: Double
-  val name: String
+  val latestRevision: Double = js.native
+  val name: String = js.native
   /**
     * Contents of the server.properties file.
     */
-  val serverProperties: String
+  val serverProperties: String = js.native
 }
 
 object GetConfigurationResult {
@@ -43,7 +44,7 @@ object GetConfigurationResult {
     name: String,
     serverProperties: String
   ): GetConfigurationResult = {
-    val __obj = js.Dynamic.literal(arn = arn, description = description, id = id, kafkaVersions = kafkaVersions, latestRevision = latestRevision, name = name, serverProperties = serverProperties)
+    val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kafkaVersions = kafkaVersions.asInstanceOf[js.Any], latestRevision = latestRevision.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], serverProperties = serverProperties.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetConfigurationResult]
   }

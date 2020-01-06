@@ -10,8 +10,8 @@ CSS parser / stringifier
 | Full name          | css |
 | Keywords           | css, parser, stringifier, stylesheet |
 | # releases         | 4 |
-| # dependents       | 714 |
-| # downloads        | 73477111 |
+| # dependents       | 802 |
+| # downloads        | 125846089 |
 | # stars            | 30 |
 
 ## Links

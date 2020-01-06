@@ -11,8 +11,8 @@ Utility to automatically link the URLs, email addresses, phone numbers, hashtags
 | Full name          | autolinker |
 | Keywords           | auto, link, autolink, url, urls, anchor |
 | # releases         | 22 |
-| # dependents       | 44 |
-| # downloads        | 8618785 |
+| # dependents       | 62 |
+| # downloads        | 12412283 |
 | # stars            | 10 |
 
 ## Links

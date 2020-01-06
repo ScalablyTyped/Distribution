@@ -4,47 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ADMChannelResponse extends js.Object {
   /**
     * The unique identifier for the application that the ADM channel applies to.
     */
-  var ApplicationId: js.UndefOr[__string] = js.undefined
+  var ApplicationId: js.UndefOr[__string] = js.native
   /**
     * The date and time when the ADM channel was enabled.
     */
-  var CreationDate: js.UndefOr[__string] = js.undefined
+  var CreationDate: js.UndefOr[__string] = js.native
   /**
     * Specifies whether the ADM channel is enabled for the application.
     */
-  var Enabled: js.UndefOr[__boolean] = js.undefined
+  var Enabled: js.UndefOr[__boolean] = js.native
   /**
     * (Not used) This property is retained only for backward compatibility.
     */
-  var HasCredential: js.UndefOr[__boolean] = js.undefined
+  var HasCredential: js.UndefOr[__boolean] = js.native
   /**
     * (Deprecated) An identifier for the ADM channel. This property is retained only for backward compatibility.
     */
-  var Id: js.UndefOr[__string] = js.undefined
+  var Id: js.UndefOr[__string] = js.native
   /**
     * Specifies whether the ADM channel is archived.
     */
-  var IsArchived: js.UndefOr[__boolean] = js.undefined
+  var IsArchived: js.UndefOr[__boolean] = js.native
   /**
     * The user who last modified the ADM channel.
     */
-  var LastModifiedBy: js.UndefOr[__string] = js.undefined
+  var LastModifiedBy: js.UndefOr[__string] = js.native
   /**
     * The date and time when the ADM channel was last modified.
     */
-  var LastModifiedDate: js.UndefOr[__string] = js.undefined
+  var LastModifiedDate: js.UndefOr[__string] = js.native
   /**
     * The type of messaging or notification platform for the channel. For the ADM channel, this value is ADM.
     */
-  var Platform: __string
+  var Platform: __string = js.native
   /**
     * The current version of the ADM channel.
     */
-  var Version: js.UndefOr[__integer] = js.undefined
+  var Version: js.UndefOr[__integer] = js.native
 }
 
 object ADMChannelResponse {
@@ -61,15 +62,15 @@ object ADMChannelResponse {
     LastModifiedDate: __string = null,
     Version: Int | Double = null
   ): ADMChannelResponse = {
-    val __obj = js.Dynamic.literal(Platform = Platform)
-    if (ApplicationId != null) __obj.updateDynamic("ApplicationId")(ApplicationId)
-    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate)
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled)
-    if (!js.isUndefined(HasCredential)) __obj.updateDynamic("HasCredential")(HasCredential)
-    if (Id != null) __obj.updateDynamic("Id")(Id)
-    if (!js.isUndefined(IsArchived)) __obj.updateDynamic("IsArchived")(IsArchived)
-    if (LastModifiedBy != null) __obj.updateDynamic("LastModifiedBy")(LastModifiedBy)
-    if (LastModifiedDate != null) __obj.updateDynamic("LastModifiedDate")(LastModifiedDate)
+    val __obj = js.Dynamic.literal(Platform = Platform.asInstanceOf[js.Any])
+    if (ApplicationId != null) __obj.updateDynamic("ApplicationId")(ApplicationId.asInstanceOf[js.Any])
+    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.asInstanceOf[js.Any])
+    if (!js.isUndefined(HasCredential)) __obj.updateDynamic("HasCredential")(HasCredential.asInstanceOf[js.Any])
+    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
+    if (!js.isUndefined(IsArchived)) __obj.updateDynamic("IsArchived")(IsArchived.asInstanceOf[js.Any])
+    if (LastModifiedBy != null) __obj.updateDynamic("LastModifiedBy")(LastModifiedBy.asInstanceOf[js.Any])
+    if (LastModifiedDate != null) __obj.updateDynamic("LastModifiedDate")(LastModifiedDate.asInstanceOf[js.Any])
     if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ADMChannelResponse]
   }

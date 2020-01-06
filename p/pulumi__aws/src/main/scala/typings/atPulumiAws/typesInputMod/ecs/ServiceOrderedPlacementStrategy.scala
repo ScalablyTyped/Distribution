@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ServiceOrderedPlacementStrategy extends js.Object {
-  var field: js.UndefOr[Input[String]] = js.undefined
-  var `type`: Input[String]
+  var field: js.UndefOr[Input[String]] = js.native
+  var `type`: Input[String] = js.native
 }
 
 object ServiceOrderedPlacementStrategy {

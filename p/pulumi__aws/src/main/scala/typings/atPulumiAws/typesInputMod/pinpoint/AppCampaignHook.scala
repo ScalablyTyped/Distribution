@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AppCampaignHook extends js.Object {
   /**
     * Lambda function name or ARN to be called for delivery. Conflicts with `webUrl`
     */
-  var lambdaFunctionName: js.UndefOr[Input[String]] = js.undefined
+  var lambdaFunctionName: js.UndefOr[Input[String]] = js.native
   /**
     * What mode Lambda should be invoked in. Valid values for this parameter are `DELIVERY`, `FILTER`.
     */
-  var mode: js.UndefOr[Input[String]] = js.undefined
+  var mode: js.UndefOr[Input[String]] = js.native
   /**
     * Web URL to call for hook. If the URL has authentication specified it will be added as authentication to the request. Conflicts with `lambdaFunctionName`
     */
-  var webUrl: js.UndefOr[Input[String]] = js.undefined
+  var webUrl: js.UndefOr[Input[String]] = js.native
 }
 
 object AppCampaignHook {

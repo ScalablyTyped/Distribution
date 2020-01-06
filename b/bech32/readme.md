@@ -10,9 +10,9 @@ Bech32 encoding / decoding
 | ------------------ | :-------------: |
 | Full name          | bech32 |
 | Keywords           | base32, bech32, bitcoin, crypto, crytography, decode, decoding, encode, encoding |
-| # releases         | 7 |
-| # dependents       | 80 |
-| # downloads        | 707522 |
+| # releases         | 4 |
+| # dependents       | 156 |
+| # downloads        | 1253625 |
 | # stars            | 0 |
 
 ## Links

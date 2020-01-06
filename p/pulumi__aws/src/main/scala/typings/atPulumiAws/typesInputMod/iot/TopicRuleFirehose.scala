@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TopicRuleFirehose extends js.Object {
   /**
     * The delivery stream name.
     */
-  var deliveryStreamName: Input[String]
+  var deliveryStreamName: Input[String] = js.native
   /**
     * The ARN of the IAM role that grants access.
     */
-  var roleArn: Input[String]
+  var roleArn: Input[String] = js.native
   /**
     * A character separator that is used to separate records written to the Firehose stream. Valid values are: '\n' (newline), '\t' (tab), '\r\n' (Windows newline), ',' (comma).
     */
-  var separator: js.UndefOr[Input[String]] = js.undefined
+  var separator: js.UndefOr[Input[String]] = js.native
 }
 
 object TopicRuleFirehose {

@@ -4,63 +4,72 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UpdateBranchRequest extends js.Object {
   /**
     *  Unique Id for an Amplify App. 
     */
-  var appId: AppId
+  var appId: AppId = js.native
+  /**
+    *  ARN for a Backend Environment, part of an Amplify App. 
+    */
+  var backendEnvironmentArn: js.UndefOr[BackendEnvironmentArn] = js.native
   /**
     *  Basic Authorization credentials for the branch. 
     */
-  var basicAuthCredentials: js.UndefOr[BasicAuthCredentials] = js.undefined
+  var basicAuthCredentials: js.UndefOr[BasicAuthCredentials] = js.native
   /**
     *  Name for the branch. 
     */
-  var branchName: BranchName
+  var branchName: BranchName = js.native
   /**
     *  BuildSpec for the branch. 
     */
-  var buildSpec: js.UndefOr[BuildSpec] = js.undefined
+  var buildSpec: js.UndefOr[BuildSpec] = js.native
   /**
     *  Description for the branch. 
     */
-  var description: js.UndefOr[Description] = js.undefined
+  var description: js.UndefOr[Description] = js.native
   /**
     *  Display name for a branch, will use as the default domain prefix. 
     */
-  var displayName: js.UndefOr[DisplayName] = js.undefined
+  var displayName: js.UndefOr[DisplayName] = js.native
   /**
     *  Enables auto building for the branch. 
     */
-  var enableAutoBuild: js.UndefOr[EnableAutoBuild] = js.undefined
+  var enableAutoBuild: js.UndefOr[EnableAutoBuild] = js.native
   /**
     *  Enables Basic Auth for the branch. 
     */
-  var enableBasicAuth: js.UndefOr[EnableBasicAuth] = js.undefined
+  var enableBasicAuth: js.UndefOr[EnableBasicAuth] = js.native
   /**
     *  Enables notifications for the branch. 
     */
-  var enableNotification: js.UndefOr[EnableNotification] = js.undefined
+  var enableNotification: js.UndefOr[EnableNotification] = js.native
   /**
     *  Enables Pull Request Preview for this branch. 
     */
-  var enablePullRequestPreview: js.UndefOr[EnablePullRequestPreview] = js.undefined
+  var enablePullRequestPreview: js.UndefOr[EnablePullRequestPreview] = js.native
   /**
     *  Environment Variables for the branch. 
     */
-  var environmentVariables: js.UndefOr[EnvironmentVariables] = js.undefined
+  var environmentVariables: js.UndefOr[EnvironmentVariables] = js.native
   /**
     *  Framework for the branch. 
     */
-  var framework: js.UndefOr[Framework] = js.undefined
+  var framework: js.UndefOr[Framework] = js.native
+  /**
+    *  The Amplify Environment name for the pull request. 
+    */
+  var pullRequestEnvironmentName: js.UndefOr[PullRequestEnvironmentName] = js.native
   /**
     *  Stage for the branch. 
     */
-  var stage: js.UndefOr[Stage] = js.undefined
+  var stage: js.UndefOr[Stage] = js.native
   /**
     *  The content TTL for the website in seconds. 
     */
-  var ttl: js.UndefOr[TTL] = js.undefined
+  var ttl: js.UndefOr[TTL] = js.native
 }
 
 object UpdateBranchRequest {
@@ -68,6 +77,7 @@ object UpdateBranchRequest {
   def apply(
     appId: AppId,
     branchName: BranchName,
+    backendEnvironmentArn: BackendEnvironmentArn = null,
     basicAuthCredentials: BasicAuthCredentials = null,
     buildSpec: BuildSpec = null,
     description: Description = null,
@@ -78,22 +88,25 @@ object UpdateBranchRequest {
     enablePullRequestPreview: js.UndefOr[Boolean] = js.undefined,
     environmentVariables: EnvironmentVariables = null,
     framework: Framework = null,
+    pullRequestEnvironmentName: PullRequestEnvironmentName = null,
     stage: Stage = null,
     ttl: TTL = null
   ): UpdateBranchRequest = {
-    val __obj = js.Dynamic.literal(appId = appId, branchName = branchName)
-    if (basicAuthCredentials != null) __obj.updateDynamic("basicAuthCredentials")(basicAuthCredentials)
-    if (buildSpec != null) __obj.updateDynamic("buildSpec")(buildSpec)
-    if (description != null) __obj.updateDynamic("description")(description)
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
-    if (!js.isUndefined(enableAutoBuild)) __obj.updateDynamic("enableAutoBuild")(enableAutoBuild)
-    if (!js.isUndefined(enableBasicAuth)) __obj.updateDynamic("enableBasicAuth")(enableBasicAuth)
-    if (!js.isUndefined(enableNotification)) __obj.updateDynamic("enableNotification")(enableNotification)
-    if (!js.isUndefined(enablePullRequestPreview)) __obj.updateDynamic("enablePullRequestPreview")(enablePullRequestPreview)
-    if (environmentVariables != null) __obj.updateDynamic("environmentVariables")(environmentVariables)
-    if (framework != null) __obj.updateDynamic("framework")(framework)
+    val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], branchName = branchName.asInstanceOf[js.Any])
+    if (backendEnvironmentArn != null) __obj.updateDynamic("backendEnvironmentArn")(backendEnvironmentArn.asInstanceOf[js.Any])
+    if (basicAuthCredentials != null) __obj.updateDynamic("basicAuthCredentials")(basicAuthCredentials.asInstanceOf[js.Any])
+    if (buildSpec != null) __obj.updateDynamic("buildSpec")(buildSpec.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableAutoBuild)) __obj.updateDynamic("enableAutoBuild")(enableAutoBuild.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableBasicAuth)) __obj.updateDynamic("enableBasicAuth")(enableBasicAuth.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableNotification)) __obj.updateDynamic("enableNotification")(enableNotification.asInstanceOf[js.Any])
+    if (!js.isUndefined(enablePullRequestPreview)) __obj.updateDynamic("enablePullRequestPreview")(enablePullRequestPreview.asInstanceOf[js.Any])
+    if (environmentVariables != null) __obj.updateDynamic("environmentVariables")(environmentVariables.asInstanceOf[js.Any])
+    if (framework != null) __obj.updateDynamic("framework")(framework.asInstanceOf[js.Any])
+    if (pullRequestEnvironmentName != null) __obj.updateDynamic("pullRequestEnvironmentName")(pullRequestEnvironmentName.asInstanceOf[js.Any])
     if (stage != null) __obj.updateDynamic("stage")(stage.asInstanceOf[js.Any])
-    if (ttl != null) __obj.updateDynamic("ttl")(ttl)
+    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateBranchRequest]
   }
 }

@@ -12,7 +12,7 @@ Middleware composition utility
 | Keywords           | mali, grpc, service, server, microservice |
 | # releases         | 5 |
 | # dependents       | 4 |
-| # downloads        | 41788 |
+| # downloads        | 64392 |
 | # stars            | 0 |
 
 ## Links

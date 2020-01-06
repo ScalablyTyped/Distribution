@@ -10,9 +10,9 @@ The lodash method `_.flattenDeep` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.flattendeep |
 | Keywords           | lodash-modularized, flattendeep |
-| # releases         | 1 |
-| # dependents       | 124 |
-| # downloads        | 61872811 |
+| # releases         | 0 |
+| # dependents       | 151 |
+| # downloads        | 104323219 |
 | # stars            | 1 |
 
 ## Links

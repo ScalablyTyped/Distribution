@@ -10,9 +10,9 @@ Core abstract of Caching layer for Apollo Client
 | ------------------ | :-------------: |
 | Full name          | apollo-cache |
 | Keywords           | - |
-| # releases         | 90 |
-| # dependents       | 35 |
-| # downloads        | 18932653 |
+| # releases         | 83 |
+| # dependents       | 50 |
+| # downloads        | 41188689 |
 | # stars            | 0 |
 
 ## Links

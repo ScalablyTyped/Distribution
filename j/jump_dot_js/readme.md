@@ -10,9 +10,9 @@ A modern smooth scrolling library.
 | ------------------ | :-------------: |
 | Full name          | jump.js |
 | Keywords           | smooth, scroll |
-| # releases         | 1 |
-| # dependents       | 43 |
-| # downloads        | 1540943 |
+| # releases         | 0 |
+| # dependents       | 51 |
+| # downloads        | 2241018 |
 | # stars            | 6 |
 
 ## Links

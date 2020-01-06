@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SpotDatafeedSubscriptionState extends js.Object {
   /**
     * The Amazon S3 bucket in which to store the Spot instance data feed.
     */
-  val bucket: js.UndefOr[Input[String]] = js.undefined
+  val bucket: js.UndefOr[Input[String]] = js.native
   /**
     * Path of folder inside bucket to place spot pricing data.
     */
-  val prefix: js.UndefOr[Input[String]] = js.undefined
+  val prefix: js.UndefOr[Input[String]] = js.native
 }
 
 object SpotDatafeedSubscriptionState {

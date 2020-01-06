@@ -10,9 +10,9 @@ Native node.js addon/wrapper for snap7
 | ------------------ | :-------------: |
 | Full name          | node-snap7 |
 | Keywords           | snap7, sps, S7, PLC |
-| # releases         | 6 |
-| # dependents       | 4 |
-| # downloads        | 6077 |
+| # releases         | 5 |
+| # dependents       | 5 |
+| # downloads        | 8434 |
 | # stars            | 3 |
 
 ## Links

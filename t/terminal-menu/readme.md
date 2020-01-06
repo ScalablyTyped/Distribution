@@ -11,8 +11,8 @@ retro ansi terminal menus for serious 80s technicolor business
 | Full name          | terminal-menu |
 | Keywords           | menu, terminal, ansi, 80s, ibm |
 | # releases         | 1 |
-| # dependents       | 55 |
-| # downloads        | 46767 |
+| # dependents       | 57 |
+| # downloads        | 42905 |
 | # stars            | 40 |
 
 ## Links

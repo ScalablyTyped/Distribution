@@ -53,13 +53,7 @@ object momentStrings {
   sealed trait LeftparenthesisRightparenthesis extends js.Object
   
   @js.native
-  sealed trait LeftparenthesisRightsquarebracket extends js.Object
-  
-  @js.native
-  sealed trait LeftsquarebracketRightparenthesis extends js.Object
-  
-  @js.native
-  sealed trait LeftsquarebracketRightsquarebracket extends js.Object
+  sealed trait `Leftparenthesis]` extends js.Object
   
   @js.native
   sealed trait M
@@ -84,6 +78,12 @@ object momentStrings {
   sealed trait W
     extends _isoWeek
        with All
+  
+  @js.native
+  sealed trait `[Rightparenthesis` extends js.Object
+  
+  @js.native
+  sealed trait `[]` extends js.Object
   
   @js.native
   sealed trait d_
@@ -420,11 +420,7 @@ object momentStrings {
   @scala.inline
   def LeftparenthesisRightparenthesis: LeftparenthesisRightparenthesis = "()".asInstanceOf[LeftparenthesisRightparenthesis]
   @scala.inline
-  def LeftparenthesisRightsquarebracket: LeftparenthesisRightsquarebracket = "(]".asInstanceOf[LeftparenthesisRightsquarebracket]
-  @scala.inline
-  def LeftsquarebracketRightparenthesis: LeftsquarebracketRightparenthesis = "[)".asInstanceOf[LeftsquarebracketRightparenthesis]
-  @scala.inline
-  def LeftsquarebracketRightsquarebracket: LeftsquarebracketRightsquarebracket = "[]".asInstanceOf[LeftsquarebracketRightsquarebracket]
+  def `Leftparenthesis]`: `Leftparenthesis]` = "(]".asInstanceOf[`Leftparenthesis]`]
   @scala.inline
   def M: M = "M".asInstanceOf[M]
   @scala.inline
@@ -433,6 +429,10 @@ object momentStrings {
   def Q: Q = "Q".asInstanceOf[Q]
   @scala.inline
   def W: W = "W".asInstanceOf[W]
+  @scala.inline
+  def `[Rightparenthesis`: `[Rightparenthesis` = "[)".asInstanceOf[`[Rightparenthesis`]
+  @scala.inline
+  def `[]`: `[]` = "[]".asInstanceOf[`[]`]
   @scala.inline
   def d_ : d_ = "d".asInstanceOf[d_]
   @scala.inline

@@ -10,9 +10,9 @@ Find out if a computer is charging
 | ------------------ | :-------------: |
 | Full name          | is-charging |
 | Keywords           | battery, charge, charging, indication, is, linux, mac, osx, utility, win, windows |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 5726 |
+| # downloads        | 6985 |
 | # stars            | 2 |
 
 ## Links

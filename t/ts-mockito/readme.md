@@ -10,9 +10,9 @@ Mocking library for TypeScript
 | ------------------ | :-------------: |
 | Full name          | ts-mockito |
 | Keywords           | mock, typescript, tests, fake, stub, spy, javascript |
-| # releases         | 19 |
-| # dependents       | 4 |
-| # downloads        | 1209210 |
+| # releases         | 11 |
+| # dependents       | 7 |
+| # downloads        | 1756224 |
 | # stars            | 1 |
 
 ## Links

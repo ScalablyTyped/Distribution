@@ -4,26 +4,27 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ADMChannelRequest extends js.Object {
   /**
     * The Client ID that you received from Amazon to send messages by using ADM.
     */
-  var ClientId: __string
+  var ClientId: __string = js.native
   /**
     * The Client Secret that you received from Amazon to send messages by using ADM.
     */
-  var ClientSecret: __string
+  var ClientSecret: __string = js.native
   /**
     * Specifies whether to enable the ADM channel for the application.
     */
-  var Enabled: js.UndefOr[__boolean] = js.undefined
+  var Enabled: js.UndefOr[__boolean] = js.native
 }
 
 object ADMChannelRequest {
   @scala.inline
   def apply(ClientId: __string, ClientSecret: __string, Enabled: js.UndefOr[Boolean] = js.undefined): ADMChannelRequest = {
-    val __obj = js.Dynamic.literal(ClientId = ClientId, ClientSecret = ClientSecret)
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled)
+    val __obj = js.Dynamic.literal(ClientId = ClientId.asInstanceOf[js.Any], ClientSecret = ClientSecret.asInstanceOf[js.Any])
+    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[ADMChannelRequest]
   }
 }

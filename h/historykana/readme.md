@@ -11,8 +11,8 @@ Analyse Japanese Furigana from key input history
 | Full name          | historykana |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 2 |
-| # downloads        | 26550 |
+| # dependents       | 1 |
+| # downloads        | 38483 |
 | # stars            | 0 |
 
 ## Links

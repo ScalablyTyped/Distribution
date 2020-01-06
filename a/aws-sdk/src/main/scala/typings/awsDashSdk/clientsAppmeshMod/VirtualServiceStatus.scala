@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VirtualServiceStatus extends js.Object {
   /**
     * The current status of the virtual service.
     */
-  var status: VirtualServiceStatusCode
+  var status: VirtualServiceStatusCode = js.native
 }
 
 object VirtualServiceStatus {

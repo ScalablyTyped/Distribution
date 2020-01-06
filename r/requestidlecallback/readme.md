@@ -11,8 +11,8 @@ A polyfill for the requestIdleCallback.
 | Full name          | requestidlecallback |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 6 |
-| # downloads        | 219625 |
+| # dependents       | 10 |
+| # downloads        | 1444109 |
 | # stars            | 2 |
 
 ## Links

@@ -6,15 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/MobileStepper.MobileStepperClassKey>> */
+@js.native
 trait PartialStyleRulesMobileStepperClassKey extends js.Object {
-  var dot: js.UndefOr[CSSProperties] = js.undefined
-  var dotActive: js.UndefOr[CSSProperties] = js.undefined
-  var dots: js.UndefOr[CSSProperties] = js.undefined
-  var positionBottom: js.UndefOr[CSSProperties] = js.undefined
-  var positionStatic: js.UndefOr[CSSProperties] = js.undefined
-  var positionTop: js.UndefOr[CSSProperties] = js.undefined
-  var progress: js.UndefOr[CSSProperties] = js.undefined
-  var root: js.UndefOr[CSSProperties] = js.undefined
+  var dot: js.UndefOr[CSSProperties] = js.native
+  var dotActive: js.UndefOr[CSSProperties] = js.native
+  var dots: js.UndefOr[CSSProperties] = js.native
+  var positionBottom: js.UndefOr[CSSProperties] = js.native
+  var positionStatic: js.UndefOr[CSSProperties] = js.native
+  var positionTop: js.UndefOr[CSSProperties] = js.native
+  var progress: js.UndefOr[CSSProperties] = js.native
+  var root: js.UndefOr[CSSProperties] = js.native
 }
 
 object PartialStyleRulesMobileStepperClassKey {

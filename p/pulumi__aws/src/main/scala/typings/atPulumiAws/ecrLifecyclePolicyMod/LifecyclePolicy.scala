@@ -21,9 +21,6 @@ class LifecyclePolicy protected () extends CustomResource {
     */
   def this(name: String, args: LifecyclePolicyArgs) = this()
   def this(name: String, args: LifecyclePolicyArgs, opts: CustomResourceOptions) = this()
-  /**
-    * The policy document. This is a JSON formatted string. See more details about [Policy Parameters](http://docs.aws.amazon.com/AmazonECR/latest/userguide/LifecyclePolicies.html#lifecycle_policy_parameters) in the official AWS docs.
-    */
   val policy: Output[String] = js.native
   /**
     * The registry ID where the repository was created.

@@ -10,9 +10,9 @@ Node adapter for RequireJS, for loading AMD modules. Includes RequireJS optimize
 | ------------------ | :-------------: |
 | Full name          | requirejs |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 719 |
-| # downloads        | 15060644 |
+| # releases         | 2 |
+| # dependents       | 755 |
+| # downloads        | 17914680 |
 | # stars            | 71 |
 
 ## Links

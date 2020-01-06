@@ -11,8 +11,8 @@ Database-agnostic connection pooling, querying, and result sets
 | Full name          | any-db |
 | Keywords           | mysql, postgres, pg, sqlite, sqlite3 |
 | # releases         | 2 |
-| # dependents       | 22 |
-| # downloads        | 72638 |
+| # dependents       | 23 |
+| # downloads        | 71550 |
 | # stars            | 8 |
 
 ## Links

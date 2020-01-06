@@ -5,47 +5,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UserPoolLambdaConfig extends js.Object {
   /**
     * The ARN of the lambda creating an authentication challenge.
     */
-  var createAuthChallenge: js.UndefOr[Input[String]] = js.undefined
+  var createAuthChallenge: js.UndefOr[Input[String]] = js.native
   /**
     * A custom Message AWS Lambda trigger.
     */
-  var customMessage: js.UndefOr[Input[String]] = js.undefined
+  var customMessage: js.UndefOr[Input[String]] = js.native
   /**
     * Defines the authentication challenge.
     */
-  var defineAuthChallenge: js.UndefOr[Input[String]] = js.undefined
+  var defineAuthChallenge: js.UndefOr[Input[String]] = js.native
   /**
     * A post-authentication AWS Lambda trigger.
     */
-  var postAuthentication: js.UndefOr[Input[String]] = js.undefined
+  var postAuthentication: js.UndefOr[Input[String]] = js.native
   /**
     * A post-confirmation AWS Lambda trigger.
     */
-  var postConfirmation: js.UndefOr[Input[String]] = js.undefined
+  var postConfirmation: js.UndefOr[Input[String]] = js.native
   /**
     * A pre-authentication AWS Lambda trigger.
     */
-  var preAuthentication: js.UndefOr[Input[String]] = js.undefined
+  var preAuthentication: js.UndefOr[Input[String]] = js.native
   /**
     * A pre-registration AWS Lambda trigger.
     */
-  var preSignUp: js.UndefOr[Input[String]] = js.undefined
+  var preSignUp: js.UndefOr[Input[String]] = js.native
   /**
     * Allow to customize identity token claims before token generation.
     */
-  var preTokenGeneration: js.UndefOr[Input[String]] = js.undefined
+  var preTokenGeneration: js.UndefOr[Input[String]] = js.native
   /**
     * The user migration Lambda config type.
     */
-  var userMigration: js.UndefOr[Input[String]] = js.undefined
+  var userMigration: js.UndefOr[Input[String]] = js.native
   /**
     * Verifies the authentication challenge response.
     */
-  var verifyAuthChallengeResponse: js.UndefOr[Input[String]] = js.undefined
+  var verifyAuthChallengeResponse: js.UndefOr[Input[String]] = js.native
 }
 
 object UserPoolLambdaConfig {

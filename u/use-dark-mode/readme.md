@@ -11,8 +11,8 @@ A custom React Hook to help you implement a "dark mode" component.
 | Full name          | use-dark-mode |
 | Keywords           | react-hooks, hooks, react, utils, lib, dark-mode |
 | # releases         | 26 |
-| # dependents       | 0 |
-| # downloads        | 6040 |
+| # dependents       | 7 |
+| # downloads        | 78252 |
 | # stars            | 0 |
 
 ## Links

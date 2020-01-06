@@ -11,8 +11,8 @@ Parse and lookup IP network blocks
 | Full name          | netmask |
 | Keywords           | net, mask, ip, network, cidr, netmask, subnet, ipcalc |
 | # releases         | 1 |
-| # dependents       | 81 |
-| # downloads        | 44639298 |
+| # dependents       | 93 |
+| # downloads        | 60274918 |
 | # stars            | 6 |
 
 ## Links

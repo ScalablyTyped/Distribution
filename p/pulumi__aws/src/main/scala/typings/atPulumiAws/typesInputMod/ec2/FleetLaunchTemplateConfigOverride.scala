@@ -5,31 +5,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FleetLaunchTemplateConfigOverride extends js.Object {
   /**
     * Availability Zone in which to launch the instances.
     */
-  var availabilityZone: js.UndefOr[Input[String]] = js.undefined
+  var availabilityZone: js.UndefOr[Input[String]] = js.native
   /**
     * Instance type.
     */
-  var instanceType: js.UndefOr[Input[String]] = js.undefined
+  var instanceType: js.UndefOr[Input[String]] = js.native
   /**
     * Maximum price per unit hour that you are willing to pay for a Spot Instance.
     */
-  var maxPrice: js.UndefOr[Input[String]] = js.undefined
+  var maxPrice: js.UndefOr[Input[String]] = js.native
   /**
     * Priority for the launch template override. If `onDemandOptions` `allocationStrategy` is set to `prioritized`, EC2 Fleet uses priority to determine which launch template override to use first in fulfilling On-Demand capacity. The highest priority is launched first. The lower the number, the higher the priority. If no number is set, the launch template override has the lowest priority. Valid values are whole numbers starting at 0.
     */
-  var priority: js.UndefOr[Input[Double]] = js.undefined
+  var priority: js.UndefOr[Input[Double]] = js.native
   /**
     * ID of the subnet in which to launch the instances.
     */
-  var subnetId: js.UndefOr[Input[String]] = js.undefined
+  var subnetId: js.UndefOr[Input[String]] = js.native
   /**
     * Number of units provided by the specified instance type.
     */
-  var weightedCapacity: js.UndefOr[Input[Double]] = js.undefined
+  var weightedCapacity: js.UndefOr[Input[Double]] = js.native
 }
 
 object FleetLaunchTemplateConfigOverride {

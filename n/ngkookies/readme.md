@@ -12,7 +12,7 @@ More powerful replacer for built-in Angular $cookieStore (https://github.com/ang
 | Keywords           | angular, javascript, cookies, ngKookies, ngCookies |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 1991 |
+| # downloads        | 2396 |
 | # stars            | 0 |
 
 ## Links

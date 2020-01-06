@@ -6,13 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TypeofCloudFront extends js.Object {
-  var Signer: js.Any | (Instantiable2[
+  val Signer: Instantiable2[
     /* keyPairId */ String, 
     /* privateKey */ String, 
     typings.awsDashSdk.awsDashSdkMod.CloudFront.Signer
-  ])
-  val Types: this.type
+  ] = js.native
+  val Types: this.type = js.native
 }
 
 object TypeofCloudFront {
@@ -21,7 +22,7 @@ object TypeofCloudFront {
     Signer: Instantiable2[/* keyPairId */ String, /* privateKey */ String, Signer],
     Types: TypeofCloudFront
   ): TypeofCloudFront = {
-    val __obj = js.Dynamic.literal(Signer = Signer, Types = Types)
+    val __obj = js.Dynamic.literal(Signer = Signer.asInstanceOf[js.Any], Types = Types.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TypeofCloudFront]
   }

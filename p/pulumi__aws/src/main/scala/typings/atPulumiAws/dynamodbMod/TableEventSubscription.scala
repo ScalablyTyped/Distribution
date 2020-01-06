@@ -13,13 +13,13 @@ class TableEventSubscription protected ()
   extends typings.atPulumiAws.dynamodbDynamodbMixinsMod.TableEventSubscription {
   def this(
     name: String,
-    table: typings.atPulumiAws.dynamodbDynamodbMixinsMod.dynamodbTableMod.Table,
+    table: typings.atPulumiAws.dynamodbTableMod.Table,
     handler: TableEventHandler,
     args: TableEventSubscriptionArgs
   ) = this()
   def this(
     name: String,
-    table: typings.atPulumiAws.dynamodbDynamodbMixinsMod.dynamodbTableMod.Table,
+    table: typings.atPulumiAws.dynamodbTableMod.Table,
     handler: TableEventHandler,
     args: TableEventSubscriptionArgs,
     opts: ComponentResourceOptions

@@ -12,7 +12,7 @@ Constructs a Voronoi diagram for a collection of points
 | Keywords           | voronoi, diagram, point, delaunay, incremental |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 299 |
+| # downloads        | 411 |
 | # stars            | 2 |
 
 ## Links

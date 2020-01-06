@@ -10,9 +10,9 @@ AlgoliaSearch API JavaScript client
 | ------------------ | :-------------: |
 | Full name          | algoliasearch |
 | Keywords           | algolia, search, search api, instant search, realtime, autocomplete |
-| # releases         | 27 |
-| # dependents       | 131 |
-| # downloads        | 7097749 |
+| # releases         | 26 |
+| # dependents       | 174 |
+| # downloads        | 12851436 |
 | # stars            | 9 |
 
 ## Links

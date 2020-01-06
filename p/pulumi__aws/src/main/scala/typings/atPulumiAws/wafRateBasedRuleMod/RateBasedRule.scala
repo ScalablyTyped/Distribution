@@ -1,5 +1,6 @@
 package typings.atPulumiAws.wafRateBasedRuleMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.atPulumiAws.typesOutputMod.waf.RateBasedRulePredicate
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
@@ -23,6 +24,10 @@ class RateBasedRule protected () extends CustomResource {
   def this(name: String, args: RateBasedRuleArgs) = this()
   def this(name: String, args: RateBasedRuleArgs, opts: CustomResourceOptions) = this()
   /**
+    * Amazon Resource Name (ARN)
+    */
+  val arn: Output[String] = js.native
+  /**
     * The name or description for the Amazon CloudWatch metric of this rule.
     */
   val metricName: Output[String] = js.native
@@ -42,6 +47,10 @@ class RateBasedRule protected () extends CustomResource {
     * The maximum number of requests, which have an identical value in the field specified by the RateKey, allowed in a five-minute period. Minimum value is 100.
     */
   val rateLimit: Output[Double] = js.native
+  /**
+    * Key-value mapping of resource tags
+    */
+  val tags: Output[js.UndefOr[StringDictionary[_]]] = js.native
 }
 
 /* static members */

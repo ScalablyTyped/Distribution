@@ -126,7 +126,7 @@ trait baseuiProps {
   def FlagProps: typings.baseui.phoneDashInputMod.FlagProps.type = typings.baseui.phoneDashInputMod.FlagProps
   type FlagProps = typings.baseui.phoneDashInputMod.FlagProps
   type FlexGridProps = typings.baseui.flexDashGridMod.FlexGridProps
-  type FlexGridItemProps = typings.baseui.flexDashGridMod.FlexGridProps
+  type FlexGridItemProps = typings.baseui.flexDashGridMod.FlexGridItemProps
   @scala.inline
   def FocusOnceProps: Anon_Children.type = typings.baseui.Anon_Children
   type FocusOnceProps = Anon_Children

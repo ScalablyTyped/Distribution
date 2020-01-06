@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/cloudwatch", "LogGroup")
 @js.native
 class LogGroup protected ()
-  extends typings.atPulumiAws.cloudwatchLogGroupMixinsMod.cloudwatchLogGroupMod.LogGroup {
+  extends typings.atPulumiAws.cloudwatchLogGroupMod.LogGroup {
   /**
     * Create a LogGroup resource with the given unique name, arguments, and options.
     *
@@ -37,13 +37,13 @@ object LogGroup extends js.Object {
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
     */
-  def get(name: String, id: Input[ID]): typings.atPulumiAws.cloudwatchLogGroupMixinsMod.cloudwatchLogGroupMod.LogGroup = js.native
-  def get(name: String, id: Input[ID], state: LogGroupState): typings.atPulumiAws.cloudwatchLogGroupMixinsMod.cloudwatchLogGroupMod.LogGroup = js.native
-  def get(name: String, id: Input[ID], state: LogGroupState, opts: CustomResourceOptions): typings.atPulumiAws.cloudwatchLogGroupMixinsMod.cloudwatchLogGroupMod.LogGroup = js.native
+  def get(name: String, id: Input[ID]): typings.atPulumiAws.cloudwatchLogGroupMod.LogGroup = js.native
+  def get(name: String, id: Input[ID], state: LogGroupState): typings.atPulumiAws.cloudwatchLogGroupMod.LogGroup = js.native
+  def get(name: String, id: Input[ID], state: LogGroupState, opts: CustomResourceOptions): typings.atPulumiAws.cloudwatchLogGroupMod.LogGroup = js.native
   /**
     * Returns true if the given object is an instance of LogGroup.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
-  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/logGroupMixins.@pulumi/aws/cloudwatch/logGroup.LogGroup */ Boolean = js.native
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/logGroup.LogGroup */ Boolean = js.native
 }
 

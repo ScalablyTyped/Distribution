@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UploadDocumentsResponse extends js.Object {
   /**
     * The number of documents that were added to the search domain.
     */
-  var adds: js.UndefOr[Adds] = js.undefined
+  var adds: js.UndefOr[Adds] = js.native
   /**
     * The number of documents that were deleted from the search domain.
     */
-  var deletes: js.UndefOr[Deletes] = js.undefined
+  var deletes: js.UndefOr[Deletes] = js.native
   /**
     * The status of an UploadDocumentsRequest.
     */
-  var status: js.UndefOr[String] = js.undefined
+  var status: js.UndefOr[String] = js.native
   /**
     * Any warnings returned by the document service about the documents being uploaded.
     */
-  var warnings: js.UndefOr[DocumentServiceWarnings] = js.undefined
+  var warnings: js.UndefOr[DocumentServiceWarnings] = js.native
 }
 
 object UploadDocumentsResponse {
@@ -34,8 +35,8 @@ object UploadDocumentsResponse {
     val __obj = js.Dynamic.literal()
     if (adds != null) __obj.updateDynamic("adds")(adds.asInstanceOf[js.Any])
     if (deletes != null) __obj.updateDynamic("deletes")(deletes.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status)
-    if (warnings != null) __obj.updateDynamic("warnings")(warnings)
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (warnings != null) __obj.updateDynamic("warnings")(warnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadDocumentsResponse]
   }
 }

@@ -12,7 +12,7 @@ Create and use boilerplates with ease
 | Keywords           | boilerplate, automation, template, generator, scaffold, cli |
 | # releases         | 9 |
 | # dependents       | 1 |
-| # downloads        | 3881 |
+| # downloads        | 7106 |
 | # stars            | 0 |
 
 ## Links

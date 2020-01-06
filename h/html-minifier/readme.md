@@ -10,9 +10,9 @@ Highly configurable, well-tested, JavaScript-based HTML minifier.
 | ------------------ | :-------------: |
 | Full name          | html-minifier |
 | Keywords           | cli, compress, compressor, css, html, htmlmin, javascript, min, minification, minifier, minify, optimize, optimizer, pack, packer, parse, parser, uglifier, uglify |
-| # releases         | 25 |
-| # dependents       | 1102 |
-| # downloads        | 152688362 |
+| # releases         | 16 |
+| # dependents       | 1258 |
+| # downloads        | 213664360 |
 | # stars            | 97 |
 
 ## Links

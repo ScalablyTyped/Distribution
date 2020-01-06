@@ -10,9 +10,9 @@ Alexa Voice Service wrapper for the browser.
 | ------------------ | :-------------: |
 | Full name          | alexa-voice-service |
 | Keywords           | amazon, alexa, skill, kit, echo, voice, ask, avs, speech |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 1600 |
+| # downloads        | 1684 |
 | # stars            | 3 |
 
 ## Links

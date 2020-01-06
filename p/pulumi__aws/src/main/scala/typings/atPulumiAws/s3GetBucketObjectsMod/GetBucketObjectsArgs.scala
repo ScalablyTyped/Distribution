@@ -4,35 +4,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetBucketObjectsArgs extends js.Object {
   /**
     * Lists object keys in this S3 bucket
     */
-  val bucket: String
+  val bucket: String = js.native
   /**
     * A character used to group keys (Default: none)
     */
-  val delimiter: js.UndefOr[String] = js.undefined
+  val delimiter: js.UndefOr[String] = js.native
   /**
     * Encodes keys using this method (Default: none; besides none, only "url" can be used)
     */
-  val encodingType: js.UndefOr[String] = js.undefined
+  val encodingType: js.UndefOr[String] = js.native
   /**
     * Boolean specifying whether to populate the owner list (Default: false)
     */
-  val fetchOwner: js.UndefOr[Boolean] = js.undefined
+  val fetchOwner: js.UndefOr[Boolean] = js.native
   /**
     * Maximum object keys to return (Default: 1000)
     */
-  val maxKeys: js.UndefOr[Double] = js.undefined
+  val maxKeys: js.UndefOr[Double] = js.native
   /**
     * Limits results to object keys with this prefix (Default: none)
     */
-  val prefix: js.UndefOr[String] = js.undefined
+  val prefix: js.UndefOr[String] = js.native
   /**
     * Returns key names lexicographically after a specific object key in your bucket (Default: none; S3 lists object keys in UTF-8 character encoding in lexicographical order)
     */
-  val startAfter: js.UndefOr[String] = js.undefined
+  val startAfter: js.UndefOr[String] = js.native
 }
 
 object GetBucketObjectsArgs {
@@ -46,13 +47,13 @@ object GetBucketObjectsArgs {
     prefix: String = null,
     startAfter: String = null
   ): GetBucketObjectsArgs = {
-    val __obj = js.Dynamic.literal(bucket = bucket)
-    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
-    if (encodingType != null) __obj.updateDynamic("encodingType")(encodingType)
-    if (!js.isUndefined(fetchOwner)) __obj.updateDynamic("fetchOwner")(fetchOwner)
+    val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any])
+    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
+    if (encodingType != null) __obj.updateDynamic("encodingType")(encodingType.asInstanceOf[js.Any])
+    if (!js.isUndefined(fetchOwner)) __obj.updateDynamic("fetchOwner")(fetchOwner.asInstanceOf[js.Any])
     if (maxKeys != null) __obj.updateDynamic("maxKeys")(maxKeys.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
-    if (startAfter != null) __obj.updateDynamic("startAfter")(startAfter)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    if (startAfter != null) __obj.updateDynamic("startAfter")(startAfter.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketObjectsArgs]
   }
 }

@@ -4,35 +4,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DomainMetadataResult extends js.Object {
   /**
     * The number of unique attribute names in the domain.
     */
-  var AttributeNameCount: js.UndefOr[Integer] = js.undefined
+  var AttributeNameCount: js.UndefOr[Integer] = js.native
   /**
     * The total size of all unique attribute names in the domain, in bytes.
     */
-  var AttributeNamesSizeBytes: js.UndefOr[Long] = js.undefined
+  var AttributeNamesSizeBytes: js.UndefOr[Long] = js.native
   /**
     * The number of all attribute name/value pairs in the domain.
     */
-  var AttributeValueCount: js.UndefOr[Integer] = js.undefined
+  var AttributeValueCount: js.UndefOr[Integer] = js.native
   /**
     * The total size of all attribute values in the domain, in bytes.
     */
-  var AttributeValuesSizeBytes: js.UndefOr[Long] = js.undefined
+  var AttributeValuesSizeBytes: js.UndefOr[Long] = js.native
   /**
     * The number of all items in the domain.
     */
-  var ItemCount: js.UndefOr[Integer] = js.undefined
+  var ItemCount: js.UndefOr[Integer] = js.native
   /**
     * The total size of all item names in the domain, in bytes.
     */
-  var ItemNamesSizeBytes: js.UndefOr[Long] = js.undefined
+  var ItemNamesSizeBytes: js.UndefOr[Long] = js.native
   /**
     * The data and time when metadata was calculated, in Epoch (UNIX) seconds.
     */
-  var Timestamp: js.UndefOr[Integer] = js.undefined
+  var Timestamp: js.UndefOr[Integer] = js.native
 }
 
 object DomainMetadataResult {

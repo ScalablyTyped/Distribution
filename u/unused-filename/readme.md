@@ -10,9 +10,9 @@ Get an unused filename by appending a number if it exists: `file.txt` → `file 
 | ------------------ | :-------------: |
 | Full name          | unused-filename |
 | Keywords           | unused, filename, filepath, file, name, available, safe, unique, usable, filesystem, fs, exists, path |
-| # releases         | 2 |
-| # dependents       | 9 |
-| # downloads        | 390655 |
+| # releases         | 3 |
+| # dependents       | 13 |
+| # downloads        | 638732 |
 | # stars            | 1 |
 
 ## Links

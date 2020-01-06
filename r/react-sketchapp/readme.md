@@ -10,9 +10,9 @@ A React renderer for Sketch.app
 | ------------------ | :-------------: |
 | Full name          | react-sketchapp |
 | Keywords           | sketch, sketchapp, react, reactjs, renderer |
-| # releases         | 34 |
+| # releases         | 22 |
 | # dependents       | 12 |
-| # downloads        | 28810 |
+| # downloads        | 32810 |
 | # stars            | 10 |
 
 ## Links

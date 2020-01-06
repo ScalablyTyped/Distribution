@@ -5,27 +5,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClusterS3Import extends js.Object {
   /**
     * The bucket name where your backup is stored
     */
-  var bucketName: Input[String]
+  var bucketName: Input[String] = js.native
   /**
     * Can be blank, but is the path to your backup
     */
-  var bucketPrefix: js.UndefOr[Input[String]] = js.undefined
+  var bucketPrefix: js.UndefOr[Input[String]] = js.native
   /**
     * Role applied to load the data.
     */
-  var ingestionRole: Input[String]
+  var ingestionRole: Input[String] = js.native
   /**
     * Source engine for the backup
     */
-  var sourceEngine: Input[String]
+  var sourceEngine: Input[String] = js.native
   /**
     * Version of the source engine used to make the backup
     */
-  var sourceEngineVersion: Input[String]
+  var sourceEngineVersion: Input[String] = js.native
 }
 
 object ClusterS3Import {

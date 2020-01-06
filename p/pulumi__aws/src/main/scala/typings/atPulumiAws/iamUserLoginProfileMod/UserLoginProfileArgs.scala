@@ -5,23 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UserLoginProfileArgs extends js.Object {
   /**
     * The length of the generated password on resource creation. Only applies on resource creation. Drift detection is not possible with this argument.
     */
-  val passwordLength: js.UndefOr[Input[Double]] = js.undefined
+  val passwordLength: js.UndefOr[Input[Double]] = js.native
   /**
     * Whether the user should be forced to reset the generated password on resource creation. Only applies on resource creation. Drift detection is not possible with this argument.
     */
-  val passwordResetRequired: js.UndefOr[Input[Boolean]] = js.undefined
+  val passwordResetRequired: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Either a base-64 encoded PGP public key, or a keybase username in the form `keybase:username`. Only applies on resource creation. Drift detection is not possible with this argument.
     */
-  val pgpKey: Input[String]
+  val pgpKey: Input[String] = js.native
   /**
     * The IAM user's name.
     */
-  val user: Input[String]
+  val user: Input[String] = js.native
 }
 
 object UserLoginProfileArgs {

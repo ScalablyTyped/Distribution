@@ -10,9 +10,9 @@ Parse a github URL into an object.
 | ------------------ | :-------------: |
 | Full name          | parse-github-url |
 | Keywords           | branch, git, github, match, parse, regex, repo, test, url, user, username |
-| # releases         | 3 |
-| # dependents       | 101 |
-| # downloads        | 6934275 |
+| # releases         | 1 |
+| # dependents       | 126 |
+| # downloads        | 13118803 |
 | # stars            | 3 |
 
 ## Links

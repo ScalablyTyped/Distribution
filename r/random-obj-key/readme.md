@@ -10,9 +10,9 @@ Get a random key from an object
 | ------------------ | :-------------: |
 | Full name          | random-obj-key |
 | Keywords           | random, randomize, math, object, key, pick, select, choice |
-| # releases         | 0 |
+| # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 205 |
+| # downloads        | 416 |
 | # stars            | 1 |
 
 ## Links

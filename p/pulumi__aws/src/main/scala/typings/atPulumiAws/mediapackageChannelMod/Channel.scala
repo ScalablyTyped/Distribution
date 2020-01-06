@@ -34,7 +34,7 @@ class Channel protected () extends CustomResource {
   /**
     * A description of the channel
     */
-  val description: Output[js.UndefOr[String]] = js.native
+  val description: Output[String] = js.native
   /**
     * A single item list of HLS ingest information
     */

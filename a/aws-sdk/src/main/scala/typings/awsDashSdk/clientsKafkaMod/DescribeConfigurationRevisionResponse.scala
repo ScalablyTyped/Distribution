@@ -4,38 +4,39 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DescribeConfigurationRevisionResponse extends js.Object {
   /**
     * 
     The Amazon Resource Name (ARN) of the configuration.
     
     */
-  var Arn: js.UndefOr[__string] = js.undefined
+  var Arn: js.UndefOr[__string] = js.native
   /**
     * 
     The time when the configuration was created.
     
     */
-  var CreationTime: js.UndefOr[__timestampIso8601] = js.undefined
+  var CreationTime: js.UndefOr[__timestampIso8601] = js.native
   /**
     * 
     The description of the configuration.
     
     */
-  var Description: js.UndefOr[__string] = js.undefined
+  var Description: js.UndefOr[__string] = js.native
   /**
     * 
     The revision number.
     
     */
-  var Revision: js.UndefOr[__long] = js.undefined
+  var Revision: js.UndefOr[__long] = js.native
   /**
     * 
     Contents of the server.properties file. When using the API, you must ensure that the contents of the file are base64 encoded. 
     When using the AWS Management Console, the SDK, or the AWS CLI, the contents of server.properties can be in plaintext.
     
     */
-  var ServerProperties: js.UndefOr[__blob] = js.undefined
+  var ServerProperties: js.UndefOr[__blob] = js.native
 }
 
 object DescribeConfigurationRevisionResponse {
@@ -48,9 +49,9 @@ object DescribeConfigurationRevisionResponse {
     ServerProperties: __blob = null
   ): DescribeConfigurationRevisionResponse = {
     val __obj = js.Dynamic.literal()
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn)
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime)
-    if (Description != null) __obj.updateDynamic("Description")(Description)
+    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
+    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
+    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     if (Revision != null) __obj.updateDynamic("Revision")(Revision.asInstanceOf[js.Any])
     if (ServerProperties != null) __obj.updateDynamic("ServerProperties")(ServerProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeConfigurationRevisionResponse]

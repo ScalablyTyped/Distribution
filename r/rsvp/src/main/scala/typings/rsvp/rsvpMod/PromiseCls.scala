@@ -11,7 +11,7 @@ class PromiseCls[T] protected ()
   extends typings.rsvp.rsvpMod.RSVP.Promise[T] {
   def this(executor: js.Function2[
         /* resolve */ js.Function1[
-          /* value */ js.UndefOr[Arg[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ _]], 
+          /* value */ js.UndefOr[Arg[/* import warning: RewrittenClass.unapply cls was tparam T */ _]], 
           Unit
         ], 
         /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], Unit], 
@@ -20,7 +20,7 @@ class PromiseCls[T] protected ()
   def this(
     executor: js.Function2[
         /* resolve */ js.Function1[
-          /* value */ js.UndefOr[Arg[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ _]], 
+          /* value */ js.UndefOr[Arg[/* import warning: RewrittenClass.unapply cls was tparam T */ _]], 
           Unit
         ], 
         /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], Unit], 

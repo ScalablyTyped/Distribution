@@ -10,27 +10,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Selection extends js.Object {
   /**
     * The maximum number of images or the max age for which to apply the image selection.
     */
-  var countNumber: Input[Double]
+  var countNumber: Input[Double] = js.native
   /**
     * Indicate whether to evaluate the rule based on `imageCountMoreThan` or `sinceImagePushed`.
     */
-  var countType: Input[imageCountMoreThan | sinceImagePushed]
+  var countType: Input[imageCountMoreThan | sinceImagePushed] = js.native
   /**
     * The unit of time e.g. days for which to apply the selection.
     */
-  var countUnit: js.UndefOr[Input[String]] = js.undefined
+  var countUnit: js.UndefOr[Input[String]] = js.native
   /**
     * Specify one or more image tag prefixes for selection.
     */
-  var tagPrefixList: js.UndefOr[Input[String] | js.Array[Input[String]]] = js.undefined
+  var tagPrefixList: js.UndefOr[Input[String] | js.Array[Input[String]]] = js.native
   /**
     * Indicate whether to select `tagged`, `untagged` or `any` images in the repository.
     */
-  var tagStatus: Input[tagged | untagged | any]
+  var tagStatus: Input[tagged | untagged | any] = js.native
 }
 
 object Selection {

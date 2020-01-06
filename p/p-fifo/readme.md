@@ -12,7 +12,7 @@ Promised First-In-First-Out buffer. Await on push to be told when a value is con
 | Keywords           | fifo, buffer, queue, promise, push, shift, array |
 | # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 6074 |
+| # downloads        | 48811 |
 | # stars            | 0 |
 
 ## Links

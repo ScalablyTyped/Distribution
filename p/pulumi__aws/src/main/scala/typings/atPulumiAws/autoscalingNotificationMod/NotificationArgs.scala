@@ -6,20 +6,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NotificationArgs extends js.Object {
   /**
     * A list of AutoScaling Group Names
     */
-  val groupNames: Input[js.Array[Input[String]]]
+  val groupNames: Input[js.Array[Input[String]]] = js.native
   /**
     * A list of Notification Types that trigger
     * notifications. Acceptable values are documented [in the AWS documentation here][1]
     */
-  val notifications: Input[js.Array[Input[NotificationType]]]
+  val notifications: Input[js.Array[Input[NotificationType]]] = js.native
   /**
     * The Topic ARN for notifications to be sent through
     */
-  val topicArn: Input[String]
+  val topicArn: Input[String] = js.native
 }
 
 object NotificationArgs {

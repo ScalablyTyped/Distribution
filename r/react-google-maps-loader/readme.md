@@ -10,9 +10,9 @@ React component to use google maps services into your react applications using a
 | ------------------ | :-------------: |
 | Full name          | react-google-maps-loader |
 | Keywords           | react, google, maps, googlemaps, loader, decorator |
-| # releases         | 13 |
-| # dependents       | 5 |
-| # downloads        | 104429 |
+| # releases         | 8 |
+| # dependents       | 6 |
+| # downloads        | 220737 |
 | # stars            | 1 |
 
 ## Links

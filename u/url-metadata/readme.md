@@ -11,8 +11,8 @@ Request an http(s) url and scrape its metadata.
 | Full name          | url-metadata |
 | Keywords           | http, https, url, metadata, metatags, meta, tags, article, scrape, scraper, node, node.js, javascript, js, og, open graph, og tags |
 | # releases         | 9 |
-| # dependents       | 4 |
-| # downloads        | 19181 |
+| # dependents       | 6 |
+| # downloads        | 37014 |
 | # stars            | 1 |
 
 ## Links

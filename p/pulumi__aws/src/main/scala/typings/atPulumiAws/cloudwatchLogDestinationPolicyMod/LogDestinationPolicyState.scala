@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LogDestinationPolicyState extends js.Object {
   /**
     * The policy document. This is a JSON formatted string.
     */
-  val accessPolicy: js.UndefOr[Input[String]] = js.undefined
+  val accessPolicy: js.UndefOr[Input[String]] = js.native
   /**
     * A name for the subscription filter
     */
-  val destinationName: js.UndefOr[Input[String]] = js.undefined
+  val destinationName: js.UndefOr[Input[String]] = js.native
 }
 
 object LogDestinationPolicyState {

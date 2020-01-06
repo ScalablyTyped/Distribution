@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ListReservationsResponse extends js.Object {
   /**
     * Token to retrieve the next page of results
     */
-  var NextToken: js.UndefOr[__string] = js.undefined
+  var NextToken: js.UndefOr[__string] = js.native
   /**
     * List of reservations
     */
-  var Reservations: js.UndefOr[__listOfReservation] = js.undefined
+  var Reservations: js.UndefOr[__listOfReservation] = js.native
 }
 
 object ListReservationsResponse {
   @scala.inline
   def apply(NextToken: __string = null, Reservations: __listOfReservation = null): ListReservationsResponse = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
-    if (Reservations != null) __obj.updateDynamic("Reservations")(Reservations)
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
+    if (Reservations != null) __obj.updateDynamic("Reservations")(Reservations.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListReservationsResponse]
   }
 }

@@ -4,35 +4,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FleetSummary extends js.Object {
   /**
     * The identifier used by users to sign into the Amazon WorkLink app.
     */
-  var CompanyCode: js.UndefOr[typings.awsDashSdk.clientsWorklinkMod.CompanyCode] = js.undefined
+  var CompanyCode: js.UndefOr[typings.awsDashSdk.clientsWorklinkMod.CompanyCode] = js.native
   /**
     * The time when the fleet was created.
     */
-  var CreatedTime: js.UndefOr[DateTime] = js.undefined
+  var CreatedTime: js.UndefOr[DateTime] = js.native
   /**
     * The name to display.
     */
-  var DisplayName: js.UndefOr[typings.awsDashSdk.clientsWorklinkMod.DisplayName] = js.undefined
+  var DisplayName: js.UndefOr[typings.awsDashSdk.clientsWorklinkMod.DisplayName] = js.native
   /**
     * The ARN of the fleet.
     */
-  var FleetArn: js.UndefOr[typings.awsDashSdk.clientsWorklinkMod.FleetArn] = js.undefined
+  var FleetArn: js.UndefOr[typings.awsDashSdk.clientsWorklinkMod.FleetArn] = js.native
   /**
     * The name of the fleet.
     */
-  var FleetName: js.UndefOr[typings.awsDashSdk.clientsWorklinkMod.FleetName] = js.undefined
+  var FleetName: js.UndefOr[typings.awsDashSdk.clientsWorklinkMod.FleetName] = js.native
   /**
     * The status of the fleet.
     */
-  var FleetStatus: js.UndefOr[typings.awsDashSdk.clientsWorklinkMod.FleetStatus] = js.undefined
+  var FleetStatus: js.UndefOr[typings.awsDashSdk.clientsWorklinkMod.FleetStatus] = js.native
   /**
     * The time when the fleet was last updated.
     */
-  var LastUpdatedTime: js.UndefOr[DateTime] = js.undefined
+  var LastUpdatedTime: js.UndefOr[DateTime] = js.native
 }
 
 object FleetSummary {
@@ -47,13 +48,13 @@ object FleetSummary {
     LastUpdatedTime: DateTime = null
   ): FleetSummary = {
     val __obj = js.Dynamic.literal()
-    if (CompanyCode != null) __obj.updateDynamic("CompanyCode")(CompanyCode)
-    if (CreatedTime != null) __obj.updateDynamic("CreatedTime")(CreatedTime)
-    if (DisplayName != null) __obj.updateDynamic("DisplayName")(DisplayName)
-    if (FleetArn != null) __obj.updateDynamic("FleetArn")(FleetArn)
-    if (FleetName != null) __obj.updateDynamic("FleetName")(FleetName)
+    if (CompanyCode != null) __obj.updateDynamic("CompanyCode")(CompanyCode.asInstanceOf[js.Any])
+    if (CreatedTime != null) __obj.updateDynamic("CreatedTime")(CreatedTime.asInstanceOf[js.Any])
+    if (DisplayName != null) __obj.updateDynamic("DisplayName")(DisplayName.asInstanceOf[js.Any])
+    if (FleetArn != null) __obj.updateDynamic("FleetArn")(FleetArn.asInstanceOf[js.Any])
+    if (FleetName != null) __obj.updateDynamic("FleetName")(FleetName.asInstanceOf[js.Any])
     if (FleetStatus != null) __obj.updateDynamic("FleetStatus")(FleetStatus.asInstanceOf[js.Any])
-    if (LastUpdatedTime != null) __obj.updateDynamic("LastUpdatedTime")(LastUpdatedTime)
+    if (LastUpdatedTime != null) __obj.updateDynamic("LastUpdatedTime")(LastUpdatedTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[FleetSummary]
   }
 }

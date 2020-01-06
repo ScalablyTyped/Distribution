@@ -12,7 +12,7 @@ The lodash method `_.isBuffer` exported as a module.
 | Keywords           | lodash-modularized, isbuffer |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 8717 |
+| # downloads        | 25460 |
 | # stars            | 0 |
 
 ## Links

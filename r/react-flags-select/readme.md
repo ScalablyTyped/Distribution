@@ -10,9 +10,9 @@ react-flags-select React component
 | ------------------ | :-------------: |
 | Full name          | react-flags-select |
 | Keywords           | react-component |
-| # releases         | 25 |
-| # dependents       | 1 |
-| # downloads        | 51728 |
+| # releases         | 11 |
+| # dependents       | 3 |
+| # downloads        | 155690 |
 | # stars            | 2 |
 
 ## Links

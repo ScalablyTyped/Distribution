@@ -10,9 +10,9 @@ react-notification-system-redux
 | ------------------ | :-------------: |
 | Full name          | react-notification-system-redux |
 | Keywords           | react-notification-system, redux |
-| # releases         | 10 |
-| # dependents       | 9 |
-| # downloads        | 508148 |
+| # releases         | 2 |
+| # dependents       | 10 |
+| # downloads        | 559481 |
 | # stars            | 3 |
 
 ## Links

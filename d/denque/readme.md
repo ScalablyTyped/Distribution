@@ -11,8 +11,8 @@ The fastest javascript implementation of a double-ended queue. Maintains compata
 | Full name          | denque |
 | Keywords           | data-structure, data-structures, queue, double, end, ended, deque, denque, double-ended-queue |
 | # releases         | 8 |
-| # dependents       | 41 |
-| # downloads        | 31735007 |
+| # dependents       | 56 |
+| # downloads        | 39683247 |
 | # stars            | 5 |
 
 ## Links

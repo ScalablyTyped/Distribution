@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DistributionOriginGroupMember extends js.Object {
   /**
     * The unique identifier of the member origin
     */
-  var originId: Input[String]
+  var originId: Input[String] = js.native
 }
 
 object DistributionOriginGroupMember {

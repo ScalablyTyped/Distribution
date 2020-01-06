@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MatchedPlayerSession extends js.Object {
   /**
-    * Unique identifier for a player 
+    * A unique identifier for a player 
     */
-  var PlayerId: js.UndefOr[NonZeroAndMaxString] = js.undefined
+  var PlayerId: js.UndefOr[NonZeroAndMaxString] = js.native
   /**
-    * Unique identifier for a player session
+    * A unique identifier for a player session
     */
-  var PlayerSessionId: js.UndefOr[typings.awsDashSdk.clientsGameliftMod.PlayerSessionId] = js.undefined
+  var PlayerSessionId: js.UndefOr[typings.awsDashSdk.clientsGameliftMod.PlayerSessionId] = js.native
 }
 
 object MatchedPlayerSession {
   @scala.inline
   def apply(PlayerId: NonZeroAndMaxString = null, PlayerSessionId: PlayerSessionId = null): MatchedPlayerSession = {
     val __obj = js.Dynamic.literal()
-    if (PlayerId != null) __obj.updateDynamic("PlayerId")(PlayerId)
-    if (PlayerSessionId != null) __obj.updateDynamic("PlayerSessionId")(PlayerSessionId)
+    if (PlayerId != null) __obj.updateDynamic("PlayerId")(PlayerId.asInstanceOf[js.Any])
+    if (PlayerSessionId != null) __obj.updateDynamic("PlayerSessionId")(PlayerSessionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatchedPlayerSession]
   }
 }

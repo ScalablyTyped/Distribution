@@ -10,9 +10,9 @@ Create SAML assertions.
 | ------------------ | :-------------: |
 | Full name          | saml |
 | Keywords           | saml, authentication |
-| # releases         | 8 |
-| # dependents       | 6 |
-| # downloads        | 251102 |
+| # releases         | 3 |
+| # dependents       | 7 |
+| # downloads        | 477339 |
 | # stars            | 1 |
 
 ## Links

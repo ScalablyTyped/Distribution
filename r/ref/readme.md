@@ -9,9 +9,9 @@ Turn Buffer instances into "pointers"
 | ------------------ | :-------------: |
 | Full name          | ref |
 | Keywords           | native, buffer, extensions, c++, pointer, reference, dereference, type, int, long, float, double, byte, 64 |
-| # releases         | 2 |
-| # dependents       | 217 |
-| # downloads        | 2216843 |
+| # releases         | 1 |
+| # dependents       | 248 |
+| # downloads        | 2714327 |
 | # stars            | 8 |
 
 ## Links

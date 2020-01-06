@@ -12,19 +12,19 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait LevelUpConstructor
-  extends Instantiable3[
-      /* db */ AbstractLevelDOWN[js.Any, js.Any], 
-      /* options */ js.Any, 
-      /* cb */ ErrorCallback, 
-      LevelUp[AbstractLevelDOWN[js.Any, js.Any], AbstractIterator[js.Any, js.Any]]
-    ]
-     with Instantiable1[
+  extends Instantiable1[
       /* db */ AbstractLevelDOWN[js.Any, js.Any], 
       LevelUp[AbstractLevelDOWN[js.Any, js.Any], AbstractIterator[js.Any, js.Any]]
     ]
      with Instantiable2[
       /* db */ AbstractLevelDOWN[js.Any, js.Any], 
       (/* options */ js.Any) | (/* cb */ ErrorCallback), 
+      LevelUp[AbstractLevelDOWN[js.Any, js.Any], AbstractIterator[js.Any, js.Any]]
+    ]
+     with Instantiable3[
+      /* db */ AbstractLevelDOWN[js.Any, js.Any], 
+      /* options */ js.Any, 
+      /* cb */ ErrorCallback, 
       LevelUp[AbstractLevelDOWN[js.Any, js.Any], AbstractIterator[js.Any, js.Any]]
     ] {
   var errors: /*typeof levelerrors*/ js.Any = js.native

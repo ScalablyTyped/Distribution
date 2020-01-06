@@ -4,17 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DeleteDocumentClassifierRequest extends js.Object {
   /**
     * The Amazon Resource Name (ARN) that identifies the document classifier. 
     */
-  var DocumentClassifierArn: typings.awsDashSdk.clientsComprehendMod.DocumentClassifierArn
+  var DocumentClassifierArn: typings.awsDashSdk.clientsComprehendMod.DocumentClassifierArn = js.native
 }
 
 object DeleteDocumentClassifierRequest {
   @scala.inline
   def apply(DocumentClassifierArn: DocumentClassifierArn): DeleteDocumentClassifierRequest = {
-    val __obj = js.Dynamic.literal(DocumentClassifierArn = DocumentClassifierArn)
+    val __obj = js.Dynamic.literal(DocumentClassifierArn = DocumentClassifierArn.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeleteDocumentClassifierRequest]
   }

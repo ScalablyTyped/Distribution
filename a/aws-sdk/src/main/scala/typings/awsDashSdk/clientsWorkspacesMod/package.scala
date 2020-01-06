@@ -10,6 +10,12 @@ package object clientsWorkspacesMod {
   import typings.std.Date
 
   type ARN = String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.ALLOW
+    - typings.awsDashSdk.awsDashSdkStrings.DENY
+    - java.lang.String
+  */
+  type AccessPropertyValue = _AccessPropertyValue | String
   type AccountModificationList = js.Array[AccountModification]
   type Alias = String
   type BooleanObject = Boolean
@@ -138,6 +144,12 @@ package object clientsWorkspacesMod {
     - java.lang.String
   */
   type TargetWorkspaceState = _TargetWorkspaceState | String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.DEDICATED
+    - typings.awsDashSdk.awsDashSdkStrings.SHARED
+    - java.lang.String
+  */
+  type Tenancy = _Tenancy | String
   type TerminateWorkspaceRequests = js.Array[TerminateRequest]
   type Timestamp = Date
   type UserName = String
@@ -214,7 +226,7 @@ package object clientsWorkspacesMod {
   type WorkspacesIpGroupsList = js.Array[WorkspacesIpGroup]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2015-04-08`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

@@ -10,9 +10,9 @@ Mock AWS S3 SDK for Node.js
 | ------------------ | :-------------: |
 | Full name          | mock-aws-s3 |
 | Keywords           | aws, s3, sdk, mock, amazon, test |
-| # releases         | 5 |
+| # releases         | 2 |
 | # dependents       | 11 |
-| # downloads        | 732045 |
+| # downloads        | 1441878 |
 | # stars            | 2 |
 
 ## Links

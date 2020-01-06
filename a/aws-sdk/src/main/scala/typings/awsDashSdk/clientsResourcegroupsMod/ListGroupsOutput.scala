@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ListGroupsOutput extends js.Object {
   /**
     * A list of GroupIdentifier objects. Each identifier is an object that contains both the GroupName and the GroupArn.
     */
-  var GroupIdentifiers: js.UndefOr[GroupIdentifierList] = js.undefined
+  var GroupIdentifiers: js.UndefOr[GroupIdentifierList] = js.native
   /**
     * A list of resource groups.
     */
-  var Groups: js.UndefOr[GroupList] = js.undefined
+  var Groups: js.UndefOr[GroupList] = js.native
   /**
     * The NextToken value to include in a subsequent ListGroups request, to get more results.
     */
-  var NextToken: js.UndefOr[typings.awsDashSdk.clientsResourcegroupsMod.NextToken] = js.undefined
+  var NextToken: js.UndefOr[typings.awsDashSdk.clientsResourcegroupsMod.NextToken] = js.native
 }
 
 object ListGroupsOutput {
@@ -27,9 +28,9 @@ object ListGroupsOutput {
     NextToken: NextToken = null
   ): ListGroupsOutput = {
     val __obj = js.Dynamic.literal()
-    if (GroupIdentifiers != null) __obj.updateDynamic("GroupIdentifiers")(GroupIdentifiers)
-    if (Groups != null) __obj.updateDynamic("Groups")(Groups)
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
+    if (GroupIdentifiers != null) __obj.updateDynamic("GroupIdentifiers")(GroupIdentifiers.asInstanceOf[js.Any])
+    if (Groups != null) __obj.updateDynamic("Groups")(Groups.asInstanceOf[js.Any])
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListGroupsOutput]
   }
 }

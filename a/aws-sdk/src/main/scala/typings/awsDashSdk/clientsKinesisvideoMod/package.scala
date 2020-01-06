@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 package object clientsKinesisvideoMod {
   import org.scalablytyped.runtime.StringDictionary
   import typings.awsDashSdk.awsDashSdkStrings.BEGINS_WITH
+  import typings.awsDashSdk.awsDashSdkStrings.SINGLE_MASTER
   import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
   import typings.std.Date
 
@@ -20,6 +21,21 @@ package object clientsKinesisvideoMod {
     - java.lang.String
   */
   type APIName = _APIName | String
+  type ChannelInfoList = js.Array[ChannelInfo]
+  type ChannelName = String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.WSS
+    - typings.awsDashSdk.awsDashSdkStrings.HTTPS
+    - java.lang.String
+  */
+  type ChannelProtocol = _ChannelProtocol | String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.MASTER
+    - typings.awsDashSdk.awsDashSdkStrings.VIEWER
+    - java.lang.String
+  */
+  type ChannelRole = _ChannelRole | String
+  type ChannelType = SINGLE_MASTER | String
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
   type ComparisonOperator = BEGINS_WITH | String
   type DataEndpoint = String
@@ -27,10 +43,14 @@ package object clientsKinesisvideoMod {
   type DataRetentionInHours = Double
   type DeviceName = String
   type KmsKeyId = String
+  type ListOfProtocols = js.Array[ChannelProtocol]
   type ListStreamsInputLimit = Double
   type MediaType = String
+  type MessageTtlSeconds = Double
   type NextToken = String
   type ResourceARN = String
+  type ResourceEndpoint = String
+  type ResourceEndpointList = js.Array[ResourceEndpointListItem]
   type ResourceTags = StringDictionary[TagValue]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.CREATING
@@ -44,6 +64,8 @@ package object clientsKinesisvideoMod {
   type StreamName = String
   type TagKey = String
   type TagKeyList = js.Array[TagKey]
+  type TagList = js.Array[Tag]
+  type TagOnCreateList = js.Array[Tag]
   type TagValue = String
   type Timestamp = Date
   /* Rewritten from type alias, can be one of: 
@@ -55,7 +77,7 @@ package object clientsKinesisvideoMod {
   type Version = String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2017-09-30`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

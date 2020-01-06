@@ -10,9 +10,9 @@ Android and iOS supported pure JS slider component with multiple markers for Rea
 | ------------------ | :-------------: |
 | Full name          | @ptomasroos/react-native-multi-slider |
 | Keywords           | react-native-multi-slider, react-component, react-components, react, native, slider, multiple, react-native, component, ios, android |
-| # releases         | 9 |
-| # dependents       | 8 |
-| # downloads        | 366999 |
+| # releases         | 5 |
+| # dependents       | 10 |
+| # downloads        | 379208 |
 | # stars            | 0 |
 
 ## Links

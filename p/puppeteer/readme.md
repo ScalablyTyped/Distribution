@@ -10,10 +10,10 @@ A high-level API to control headless Chrome over the DevTools Protocol
 | ------------------ | :-------------: |
 | Full name          | puppeteer |
 | Keywords           | - |
-| # releases         | 612 |
-| # dependents       | 1378 |
-| # downloads        | 31164838 |
-| # stars            | 77 |
+| # releases         | 669 |
+| # dependents       | 2054 |
+| # downloads        | 49584955 |
+| # stars            | 81 |
 
 ## Links
 - [Homepage](https://github.com/GoogleChrome/puppeteer#readme)

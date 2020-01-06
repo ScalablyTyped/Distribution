@@ -11,8 +11,8 @@ Minimalist HTML5 Canvas Gauges
 | Full name          | canvas-gauges |
 | Keywords           | gauge, canvas, html5, javascript, radial-gauge, linear-gauge |
 | # releases         | 4 |
-| # dependents       | 6 |
-| # downloads        | 55566 |
+| # dependents       | 7 |
+| # downloads        | 88341 |
 | # stars            | 0 |
 
 ## Links

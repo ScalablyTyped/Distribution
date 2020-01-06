@@ -10,10 +10,10 @@ Tiny millisecond conversion utility
 | ------------------ | :-------------: |
 | Full name          | ms |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 994 |
-| # downloads        | 877534189 |
-| # stars            | 112 |
+| # releases         | 1 |
+| # dependents       | 1209 |
+| # downloads        | 1493318855 |
+| # stars            | 113 |
 
 ## Links
 - [Homepage](https://github.com/zeit/ms#readme)

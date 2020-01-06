@@ -10,9 +10,9 @@ A typesetting library for SVG and Canvas
 | ------------------ | :-------------: |
 | Full name          | typesettable |
 | Keywords           | canvas, svg, text, wrap |
-| # releases         | 8 |
-| # dependents       | 1 |
-| # downloads        | 59241 |
+| # releases         | 2 |
+| # dependents       | 2 |
+| # downloads        | 70299 |
 | # stars            | 0 |
 
 ## Links

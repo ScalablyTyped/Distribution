@@ -10,9 +10,9 @@ Create boxes in the terminal
 | ------------------ | :-------------: |
 | Full name          | boxen |
 | Keywords           | cli, box, boxes, terminal, term, console, ascii, unicode, border, text |
-| # releases         | 8 |
-| # dependents       | 636 |
-| # downloads        | 124324041 |
+| # releases         | 9 |
+| # dependents       | 998 |
+| # downloads        | 230789058 |
 | # stars            | 8 |
 
 ## Links

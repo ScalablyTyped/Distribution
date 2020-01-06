@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ConnectionAssociationState extends js.Object {
   /**
     * The ID of the connection.
     */
-  val connectionId: js.UndefOr[Input[String]] = js.undefined
+  val connectionId: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of the LAG with which to associate the connection.
     */
-  val lagId: js.UndefOr[Input[String]] = js.undefined
+  val lagId: js.UndefOr[Input[String]] = js.native
 }
 
 object ConnectionAssociationState {

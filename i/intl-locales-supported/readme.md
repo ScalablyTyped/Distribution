@@ -10,15 +10,15 @@ Utility to help you polyfill the Node.js runtime when the Intl APIs are missing,
 | ------------------ | :-------------: |
 | Full name          | intl-locales-supported |
 | Keywords           | i18n, intl, internationalization, localization, globalization |
-| # releases         | 1 |
-| # dependents       | 29 |
-| # downloads        | 1292473 |
+| # releases         | 34 |
+| # dependents       | 34 |
+| # downloads        | 3154399 |
 | # stars            | 1 |
 
 ## Links
-- [Homepage](https://github.com/yahoo/intl-locales-supported)
-- [Bugs](https://github.com/yahoo/intl-locales-supported/issues)
-- [Repository](https://github.com/yahoo/intl-locales-supported)
+- [Homepage](https://github.com/formatjs/formatjs)
+- [Bugs](https://github.com/formatjs/formatjs/issues)
+- [Repository](https://github.com/formatjs/formatjs)
 - [Npm](https://www.npmjs.com/package/intl-locales-supported)
     
 

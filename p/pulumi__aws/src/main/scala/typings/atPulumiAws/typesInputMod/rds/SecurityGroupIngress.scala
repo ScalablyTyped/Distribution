@@ -5,24 +5,25 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SecurityGroupIngress extends js.Object {
   /**
     * The CIDR block to accept
     */
-  var cidr: js.UndefOr[Input[String]] = js.undefined
+  var cidr: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of the security group to authorize
     */
-  var securityGroupId: js.UndefOr[Input[String]] = js.undefined
+  var securityGroupId: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the security group to authorize
     */
-  var securityGroupName: js.UndefOr[Input[String]] = js.undefined
+  var securityGroupName: js.UndefOr[Input[String]] = js.native
   /**
     * The owner Id of the security group provided
     * by `securityGroupName`.
     */
-  var securityGroupOwnerId: js.UndefOr[Input[String]] = js.undefined
+  var securityGroupOwnerId: js.UndefOr[Input[String]] = js.native
 }
 
 object SecurityGroupIngress {

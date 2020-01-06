@@ -11,8 +11,8 @@ A robust & optimized `Array.from` polyfill, based on the ECMAScript 6 specificat
 | Full name          | array.from |
 | Keywords           | array, es6, ecmascript, polyfill |
 | # releases         | 1 |
-| # dependents       | 25 |
-| # downloads        | 436066 |
+| # dependents       | 23 |
+| # downloads        | 428647 |
 | # stars            | 1 |
 
 ## Links

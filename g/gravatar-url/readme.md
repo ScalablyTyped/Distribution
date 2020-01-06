@@ -4,15 +4,15 @@
 Typings are for version 3.1.0
 
 ## Library description:
-Get the URL to a Gravatar image from an email
+Get the URL to a Gravatar image from an identifier, such as an email
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | gravatar-url |
-| Keywords           | gravatar, avatar, profile, image, img, picture, pic, photo, hash, email |
-| # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 40911 |
+| Keywords           | gravatar, avatar, profile, image, picture, photo, hash, email, identifier |
+| # releases         | 4 |
+| # dependents       | 13 |
+| # downloads        | 81693 |
 | # stars            | 2 |
 
 ## Links

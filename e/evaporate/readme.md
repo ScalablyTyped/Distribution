@@ -10,9 +10,9 @@ Javascript library for browser to S3 multipart resumable uploads for browsers an
 | ------------------ | :-------------: |
 | Full name          | evaporate |
 | Keywords           | aws, amazon, S3, multipart, multi-part, uploads, browser, transfer, acceleration, signature version 4, v4, electron, ReadableFileStream, fs, stream, checksum, Content-MD5 |
-| # releases         | 5 |
-| # dependents       | 8 |
-| # downloads        | 184886 |
+| # releases         | 0 |
+| # dependents       | 10 |
+| # downloads        | 278535 |
 | # stars            | 1 |
 
 ## Links

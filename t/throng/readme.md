@@ -11,8 +11,8 @@ A simple worker-manager for clustered apps
 | Full name          | throng |
 | Keywords           | cluster, worker, process |
 | # releases         | 1 |
-| # dependents       | 29 |
-| # downloads        | 925945 |
+| # dependents       | 35 |
+| # downloads        | 1197552 |
 | # stars            | 25 |
 
 ## Links

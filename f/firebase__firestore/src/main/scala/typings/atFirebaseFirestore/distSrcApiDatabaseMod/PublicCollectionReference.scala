@@ -16,7 +16,7 @@ object PublicCollectionReference
         /* _path */ ResourcePath, 
         /* firestore */ Firestore, 
         js.UndefOr[
-          /* _converter */ FirestoreDataConverter[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any]
+          /* _converter */ FirestoreDataConverter[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any]
         ], 
         CollectionReference[js.Object]
       ]

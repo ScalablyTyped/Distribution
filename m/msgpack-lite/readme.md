@@ -11,8 +11,8 @@ Fast Pure JavaScript MessagePack Encoder and Decoder
 | Full name          | msgpack-lite |
 | Keywords           | arraybuffer, buffer, fluentd, messagepack, msgpack, serialize, stream, typedarray, uint8array |
 | # releases         | 1 |
-| # dependents       | 202 |
-| # downloads        | 3679514 |
+| # dependents       | 224 |
+| # downloads        | 8064555 |
 | # stars            | 18 |
 
 ## Links

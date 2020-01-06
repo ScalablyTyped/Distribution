@@ -9,10 +9,10 @@ Postgresql database migration management tool for node.js
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | node-pg-migrate |
-| Keywords           | db, database, migrate, migration, migrations, migrator, db-migrate, sql, pg, postgre, postgres, postgresql, extensible, expandable, programatic, programable, api |
-| # releases         | 86 |
-| # dependents       | 6 |
-| # downloads        | 209674 |
+| Keywords           | db, database, migrate, migration, migrations, migrator, db-migrate, sql, pg, postgre, postgres, postgresql, cockroach, cockroachdb, extensible, expandable, programatic, programable, api |
+| # releases         | 78 |
+| # dependents       | 9 |
+| # downloads        | 343623 |
 | # stars            | 7 |
 
 ## Links

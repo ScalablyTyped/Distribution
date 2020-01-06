@@ -12,7 +12,7 @@ The lodash method `_.isTypedArray` exported as a module.
 | Keywords           | lodash-modularized, istypedarray |
 | # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 20931779 |
+| # downloads        | 25591331 |
 | # stars            | 0 |
 
 ## Links

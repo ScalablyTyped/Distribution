@@ -1,7 +1,5 @@
 package typings.awsDashSdk
 
-import typings.awsDashSdk.libCredentialsCredentialUnderscoreProviderUnderscoreChainMod.CredentialProviderChain
-import typings.awsDashSdk.libCredentialsCredentialUnderscoreProviderUnderscoreChainMod.provider
 import typings.awsDashSdk.libCredentialsMod.Credentials
 import typings.awsDashSdk.libErrorMod.AWSError
 import scala.scalajs.js

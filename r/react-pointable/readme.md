@@ -10,9 +10,9 @@ Declarative pointer event binding. Works well alongside PEP.
 | ------------------ | :-------------: |
 | Full name          | react-pointable |
 | Keywords           | pointer, events, pep, react |
-| # releases         | 6 |
+| # releases         | 3 |
 | # dependents       | 3 |
-| # downloads        | 55647 |
+| # downloads        | 76134 |
 | # stars            | 0 |
 
 ## Links

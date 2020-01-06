@@ -5,39 +5,40 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ResourceShareAccepterState extends js.Object {
   /**
     * The ARN of the resource share invitation.
     */
-  val invitationArn: js.UndefOr[Input[String]] = js.undefined
+  val invitationArn: js.UndefOr[Input[String]] = js.native
   /**
     * The account ID of the receiver account which accepts the invitation.
     */
-  val receiverAccountId: js.UndefOr[Input[String]] = js.undefined
+  val receiverAccountId: js.UndefOr[Input[String]] = js.native
   /**
     * A list of the resource ARNs shared via the resource share.
     */
-  val resources: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val resources: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The account ID of the sender account which extends the invitation.
     */
-  val senderAccountId: js.UndefOr[Input[String]] = js.undefined
+  val senderAccountId: js.UndefOr[Input[String]] = js.native
   /**
     * The ARN of the resource share.
     */
-  val shareArn: js.UndefOr[Input[String]] = js.undefined
+  val shareArn: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of the resource share as displayed in the console.
     */
-  val shareId: js.UndefOr[Input[String]] = js.undefined
+  val shareId: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the resource share.
     */
-  val shareName: js.UndefOr[Input[String]] = js.undefined
+  val shareName: js.UndefOr[Input[String]] = js.native
   /**
     * The status of the invitation (e.g., ACCEPTED, REJECTED).
     */
-  val status: js.UndefOr[Input[String]] = js.undefined
+  val status: js.UndefOr[Input[String]] = js.native
 }
 
 object ResourceShareAccepterState {

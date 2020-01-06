@@ -4,15 +4,15 @@
 Typings are for version 1.0
 
 ## Library description:
-btoa and atob (ie base64 encoding and decoding) support for node.js or old browsers, with the Unicode Problems fixed
+btoa and atob (ie base64/base64url encoding and decoding) support for node.js or old browsers, with the Unicode Problems fixed
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | b2a |
-| Keywords           | btoa, encode, decode, atob, base64, unicode, 16-bit, 8-bit, homoglyphs |
-| # releases         | 14 |
-| # dependents       | 2 |
-| # downloads        | 49189 |
+| Keywords           | btoa, encode, decode, atob, base64, base64url, base64-url, unicode, 16-bit, 8-bit, homoglyphs |
+| # releases         | 7 |
+| # dependents       | 4 |
+| # downloads        | 76906 |
 | # stars            | 0 |
 
 ## Links

@@ -9,7 +9,7 @@ object jestDashCliStrings {
   sealed trait `DocumentationColon httpsColonSlashSlashjestjsDotioSlash` extends js.Object
   
   @js.native
-  sealed trait `UsageColon $0 Leftsquarebracket--configEqualssignLessthansignpathToConfigFileGreaterthansignRightsquarebracket LeftsquarebracketTestPathPatternRightsquarebracket` extends js.Object
+  sealed trait `UsageColon $0 [--configEqualssignLessthansignpathToConfigFileGreaterthansign] [TestPathPattern]` extends js.Object
   
   @js.native
   sealed trait array extends js.Object
@@ -32,7 +32,7 @@ object jestDashCliStrings {
   @scala.inline
   def `DocumentationColon httpsColonSlashSlashjestjsDotioSlash`: `DocumentationColon httpsColonSlashSlashjestjsDotioSlash` = "Documentation: https://jestjs.io/".asInstanceOf[`DocumentationColon httpsColonSlashSlashjestjsDotioSlash`]
   @scala.inline
-  def `UsageColon $0 Leftsquarebracket--configEqualssignLessthansignpathToConfigFileGreaterthansignRightsquarebracket LeftsquarebracketTestPathPatternRightsquarebracket`: `UsageColon $0 Leftsquarebracket--configEqualssignLessthansignpathToConfigFileGreaterthansignRightsquarebracket LeftsquarebracketTestPathPatternRightsquarebracket` = "Usage: $0 [--config=<pathToConfigFile>] [TestPathPattern]".asInstanceOf[`UsageColon $0 Leftsquarebracket--configEqualssignLessthansignpathToConfigFileGreaterthansignRightsquarebracket LeftsquarebracketTestPathPatternRightsquarebracket`]
+  def `UsageColon $0 [--configEqualssignLessthansignpathToConfigFileGreaterthansign] [TestPathPattern]`: `UsageColon $0 [--configEqualssignLessthansignpathToConfigFileGreaterthansign] [TestPathPattern]` = "Usage: $0 [--config=<pathToConfigFile>] [TestPathPattern]".asInstanceOf[`UsageColon $0 [--configEqualssignLessthansignpathToConfigFileGreaterthansign] [TestPathPattern]`]
   @scala.inline
   def array: array = "array".asInstanceOf[array]
   @scala.inline

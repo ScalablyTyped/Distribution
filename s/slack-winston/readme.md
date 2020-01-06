@@ -10,9 +10,9 @@ A Slack transport for winston
 | ------------------ | :-------------: |
 | Full name          | slack-winston |
 | Keywords           | logging, sysadmin, tools, chat, winston, slack, flatiron |
-| # releases         | 3 |
-| # dependents       | 4 |
-| # downloads        | 41186 |
+| # releases         | 0 |
+| # dependents       | 5 |
+| # downloads        | 36638 |
 | # stars            | 4 |
 
 ## Links

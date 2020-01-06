@@ -9,43 +9,44 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DataSourceArgs extends js.Object {
   /**
     * The API ID for the GraphQL API for the DataSource.
     */
-  val apiId: Input[String]
+  val apiId: Input[String] = js.native
   /**
     * A description of the DataSource.
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * DynamoDB settings. See below
     */
-  val dynamodbConfig: js.UndefOr[Input[DataSourceDynamodbConfig]] = js.undefined
+  val dynamodbConfig: js.UndefOr[Input[DataSourceDynamodbConfig]] = js.native
   /**
     * Amazon Elasticsearch settings. See below
     */
-  val elasticsearchConfig: js.UndefOr[Input[DataSourceElasticsearchConfig]] = js.undefined
+  val elasticsearchConfig: js.UndefOr[Input[DataSourceElasticsearchConfig]] = js.native
   /**
     * HTTP settings. See below
     */
-  val httpConfig: js.UndefOr[Input[DataSourceHttpConfig]] = js.undefined
+  val httpConfig: js.UndefOr[Input[DataSourceHttpConfig]] = js.native
   /**
     * AWS Lambda settings. See below
     */
-  val lambdaConfig: js.UndefOr[Input[DataSourceLambdaConfig]] = js.undefined
+  val lambdaConfig: js.UndefOr[Input[DataSourceLambdaConfig]] = js.native
   /**
     * A user-supplied name for the DataSource.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * The IAM service role ARN for the data source.
     */
-  val serviceRoleArn: js.UndefOr[Input[String]] = js.undefined
+  val serviceRoleArn: js.UndefOr[Input[String]] = js.native
   /**
     * The type of the DataSource. Valid values: `AWS_LAMBDA`, `AMAZON_DYNAMODB`, `AMAZON_ELASTICSEARCH`, `HTTP`, `NONE`.
     */
-  val `type`: Input[String]
+  val `type`: Input[String] = js.native
 }
 
 object DataSourceArgs {

@@ -5,31 +5,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ApplicationAppSource extends js.Object {
   /**
-    * Password to use when authenticating to the source.
+    * <elided>
     */
-  var password: js.UndefOr[Input[String]] = js.undefined
+  var password: js.UndefOr[Input[String]] = js.native
   /**
     * For sources that are version-aware, the revision to use.
     */
-  var revision: js.UndefOr[Input[String]] = js.undefined
+  var revision: js.UndefOr[Input[String]] = js.native
   /**
-    * SSH key to use when authenticating to the source.
+    * <elided>
     */
-  var sshKey: js.UndefOr[Input[String]] = js.undefined
+  var sshKey: js.UndefOr[Input[String]] = js.native
   /**
     * The type of source to use. For example, "archive".
     */
-  var `type`: Input[String]
+  var `type`: Input[String] = js.native
   /**
     * The URL where the app resource can be found.
     */
-  var url: js.UndefOr[Input[String]] = js.undefined
+  var url: js.UndefOr[Input[String]] = js.native
   /**
     * Username to use when authenticating to the source.
     */
-  var username: js.UndefOr[Input[String]] = js.undefined
+  var username: js.UndefOr[Input[String]] = js.native
 }
 
 object ApplicationAppSource {

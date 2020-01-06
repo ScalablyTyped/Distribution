@@ -14,7 +14,7 @@ trait Password
   def blur(): Unit = js.native
   def focus(): Unit = js.native
   def getIcon(): Element = js.native
-  def onChange(): Unit = js.native
+  def onVisibleChange(): Unit = js.native
   def saveInput(instance: typings.antd.libInputInputMod.default): Unit = js.native
   def select(): Unit = js.native
 }

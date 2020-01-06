@@ -9,14 +9,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TableEventRecord extends js.Object {
-  var awsRegion: String
-  var dynamodb: Anon_ApproximateCreationDateTime
-  var eventID: String
-  var eventName: INSERT | MODIFY | REMOVE
-  var eventSource: String
-  var eventVersion: String
-  var userIdentity: Anon_PrincipalId
+  var awsRegion: String = js.native
+  var dynamodb: Anon_ApproximateCreationDateTime = js.native
+  var eventID: String = js.native
+  var eventName: INSERT | MODIFY | REMOVE = js.native
+  var eventSource: String = js.native
+  var eventVersion: String = js.native
+  var userIdentity: Anon_PrincipalId = js.native
 }
 
 object TableEventRecord {
@@ -30,7 +31,7 @@ object TableEventRecord {
     eventVersion: String,
     userIdentity: Anon_PrincipalId
   ): TableEventRecord = {
-    val __obj = js.Dynamic.literal(awsRegion = awsRegion, dynamodb = dynamodb, eventID = eventID, eventName = eventName.asInstanceOf[js.Any], eventSource = eventSource, eventVersion = eventVersion, userIdentity = userIdentity)
+    val __obj = js.Dynamic.literal(awsRegion = awsRegion.asInstanceOf[js.Any], dynamodb = dynamodb.asInstanceOf[js.Any], eventID = eventID.asInstanceOf[js.Any], eventName = eventName.asInstanceOf[js.Any], eventSource = eventSource.asInstanceOf[js.Any], eventVersion = eventVersion.asInstanceOf[js.Any], userIdentity = userIdentity.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[TableEventRecord]
   }

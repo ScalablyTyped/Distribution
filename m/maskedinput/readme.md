@@ -11,7 +11,7 @@ Maskedinput is a javascript library which creates an input mask.  Maskedinput ca
 | Keywords           | form, input, maskedinput, jquery, jquery-plugin, mask, plugins |
 | # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 2442 |
+| # downloads        | 3429 |
 | # stars            | 0 |
 
 ## Links

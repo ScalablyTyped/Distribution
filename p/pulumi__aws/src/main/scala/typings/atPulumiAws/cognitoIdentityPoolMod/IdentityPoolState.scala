@@ -7,44 +7,45 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IdentityPoolState extends js.Object {
   /**
     * Whether the identity pool supports unauthenticated logins or not.
     */
-  val allowUnauthenticatedIdentities: js.UndefOr[Input[Boolean]] = js.undefined
+  val allowUnauthenticatedIdentities: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The ARN of the identity pool.
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * An array of Amazon Cognito Identity user pools and their client IDs.
     */
-  val cognitoIdentityProviders: js.UndefOr[Input[js.Array[Input[IdentityPoolCognitoIdentityProvider]]]] = js.undefined
+  val cognitoIdentityProviders: js.UndefOr[Input[js.Array[Input[IdentityPoolCognitoIdentityProvider]]]] = js.native
   /**
     * The "domain" by which Cognito will refer to your users. This name acts as a placeholder that allows your
     * backend and the Cognito service to communicate about the developer provider.
     */
-  val developerProviderName: js.UndefOr[Input[String]] = js.undefined
+  val developerProviderName: js.UndefOr[Input[String]] = js.native
   /**
     * The Cognito Identity Pool name.
     */
-  val identityPoolName: js.UndefOr[Input[String]] = js.undefined
+  val identityPoolName: js.UndefOr[Input[String]] = js.native
   /**
     * A list of OpendID Connect provider ARNs.
     */
-  val openidConnectProviderArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val openidConnectProviderArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * An array of Amazon Resource Names (ARNs) of the SAML provider for your identity.
     */
-  val samlProviderArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val samlProviderArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * Key-Value pairs mapping provider names to provider app IDs.
     */
-  val supportedLoginProviders: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
+  val supportedLoginProviders: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * A mapping of tags to assign to the Identity Pool.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object IdentityPoolState {

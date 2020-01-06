@@ -4,27 +4,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FieldLevelEncryptionProfileSummary extends js.Object {
   /**
     * An optional comment for the field-level encryption profile summary.
     */
-  var Comment: js.UndefOr[String] = js.undefined
+  var Comment: js.UndefOr[String] = js.native
   /**
     * A complex data type of encryption entities for the field-level encryption profile that include the public key ID, provider, and field patterns for specifying which fields to encrypt with this key.
     */
-  var EncryptionEntities: typings.awsDashSdk.clientsCloudfrontMod.EncryptionEntities
+  var EncryptionEntities: typings.awsDashSdk.clientsCloudfrontMod.EncryptionEntities = js.native
   /**
     * ID for the field-level encryption profile summary.
     */
-  var Id: String
+  var Id: String = js.native
   /**
     * The time when the the field-level encryption profile summary was last updated.
     */
-  var LastModifiedTime: timestamp
+  var LastModifiedTime: timestamp = js.native
   /**
     * Name for the field-level encryption profile summary.
     */
-  var Name: String
+  var Name: String = js.native
 }
 
 object FieldLevelEncryptionProfileSummary {
@@ -36,8 +37,8 @@ object FieldLevelEncryptionProfileSummary {
     Name: String,
     Comment: String = null
   ): FieldLevelEncryptionProfileSummary = {
-    val __obj = js.Dynamic.literal(EncryptionEntities = EncryptionEntities, Id = Id, LastModifiedTime = LastModifiedTime, Name = Name)
-    if (Comment != null) __obj.updateDynamic("Comment")(Comment)
+    val __obj = js.Dynamic.literal(EncryptionEntities = EncryptionEntities.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], LastModifiedTime = LastModifiedTime.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
+    if (Comment != null) __obj.updateDynamic("Comment")(Comment.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldLevelEncryptionProfileSummary]
   }
 }

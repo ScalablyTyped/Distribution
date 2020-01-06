@@ -10,9 +10,9 @@ Sinon extensions for Mongoose stubs
 | ------------------ | :-------------: |
 | Full name          | sinon-mongoose |
 | Keywords           | sinon, mongoose, mock, stub, expects, test, unit, query, static, promise, method |
-| # releases         | 6 |
+| # releases         | 5 |
 | # dependents       | 5 |
-| # downloads        | 271524 |
+| # downloads        | 665356 |
 | # stars            | 5 |
 
 ## Links

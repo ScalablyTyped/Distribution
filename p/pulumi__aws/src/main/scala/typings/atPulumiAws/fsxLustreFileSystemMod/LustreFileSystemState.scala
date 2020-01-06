@@ -6,59 +6,60 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LustreFileSystemState extends js.Object {
   /**
     * Amazon Resource Name of the file system.
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * DNS name for the file system, e.g. `fs-12345678.fsx.us-west-2.amazonaws.com`
     */
-  val dnsName: js.UndefOr[Input[String]] = js.undefined
+  val dnsName: js.UndefOr[Input[String]] = js.native
   /**
     * S3 URI (with optional prefix) where the root of your Amazon FSx file system is exported. Can only be specified with `importPath` argument and the path must use the same Amazon S3 bucket as specified in `importPath`. Set equal to `importPath` to overwrite files on export. Defaults to `s3://{IMPORT BUCKET}/FSxLustre{CREATION TIMESTAMP}`.
     */
-  val exportPath: js.UndefOr[Input[String]] = js.undefined
+  val exportPath: js.UndefOr[Input[String]] = js.native
   /**
     * S3 URI (with optional prefix) that you're using as the data repository for your FSx for Lustre file system. For example, `s3://example-bucket/optional-prefix/`.
     */
-  val importPath: js.UndefOr[Input[String]] = js.undefined
+  val importPath: js.UndefOr[Input[String]] = js.native
   /**
     * For files imported from a data repository, this value determines the stripe count and maximum amount of data per file (in MiB) stored on a single physical disk. Can only be specified with `importPath` argument. Defaults to `1024`. Minimum of `1` and maximum of `512000`.
     */
-  val importedFileChunkSize: js.UndefOr[Input[Double]] = js.undefined
+  val importedFileChunkSize: js.UndefOr[Input[Double]] = js.native
   /**
     * Set of Elastic Network Interface identifiers from which the file system is accessible.
     */
-  val networkInterfaceIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val networkInterfaceIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * AWS account identifier that created the file system.
     */
-  val ownerId: js.UndefOr[Input[String]] = js.undefined
+  val ownerId: js.UndefOr[Input[String]] = js.native
   /**
     * A list of IDs for the security groups that apply to the specified network interfaces created for file system access. These security groups will apply to all network interfaces.
     */
-  val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The storage capacity (GiB) of the file system. Minimum of `3600`. Storage capacity is provisioned in increments of 3,600 GiB.
     */
-  val storageCapacity: js.UndefOr[Input[Double]] = js.undefined
+  val storageCapacity: js.UndefOr[Input[Double]] = js.native
   /**
     * A list of IDs for the subnets that the file system will be accessible from. File systems currently support only one subnet. The file server is also launched in that subnet's Availability Zone.
     */
-  val subnetIds: js.UndefOr[Input[String]] = js.undefined
+  val subnetIds: js.UndefOr[Input[String]] = js.native
   /**
     * A mapping of tags to assign to the file system.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * Identifier of the Virtual Private Cloud for the file system.
     */
-  val vpcId: js.UndefOr[Input[String]] = js.undefined
+  val vpcId: js.UndefOr[Input[String]] = js.native
   /**
     * The preferred start time (in `d:HH:MM` format) to perform weekly maintenance, in the UTC time zone.
     */
-  val weeklyMaintenanceStartTime: js.UndefOr[Input[String]] = js.undefined
+  val weeklyMaintenanceStartTime: js.UndefOr[Input[String]] = js.native
 }
 
 object LustreFileSystemState {

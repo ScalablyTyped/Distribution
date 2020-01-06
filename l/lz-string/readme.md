@@ -11,9 +11,9 @@ LZ-based compression algorithm
 | Full name          | lz-string |
 | Keywords           | lz, compression, string |
 | # releases         | 1 |
-| # dependents       | 126 |
-| # downloads        | 3388702 |
-| # stars            | 11 |
+| # dependents       | 171 |
+| # downloads        | 7006650 |
+| # stars            | 13 |
 
 ## Links
 - [Homepage](http://pieroxy.net/blog/pages/lz-string/index.html)

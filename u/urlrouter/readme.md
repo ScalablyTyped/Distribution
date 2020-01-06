@@ -11,7 +11,7 @@ connect missing router middleware, support express format routing.
 | Keywords           | router, url, connect, middleware, express |
 | # releases         | 0 |
 | # dependents       | 22 |
-| # downloads        | 6150 |
+| # downloads        | 8711 |
 | # stars            | 0 |
 
 ## Links

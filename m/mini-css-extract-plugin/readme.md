@@ -10,9 +10,9 @@ extracts CSS into separate files
 | ------------------ | :-------------: |
 | Full name          | mini-css-extract-plugin |
 | Keywords           | webpack, css, extract, hmr |
-| # releases         | 11 |
-| # dependents       | 1691 |
-| # downloads        | 63255379 |
+| # releases         | 16 |
+| # dependents       | 2991 |
+| # downloads        | 188318966 |
 | # stars            | 2 |
 
 ## Links

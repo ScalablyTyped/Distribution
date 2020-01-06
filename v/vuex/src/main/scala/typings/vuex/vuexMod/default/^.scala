@@ -26,7 +26,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   var Store: Instantiable1[
-    /* options */ StoreOptions[/* import warning: RewrittenClass.unapply cls $anonfun was tparam S */ js.Any], 
+    /* options */ StoreOptions[/* import warning: RewrittenClass.unapply cls was tparam S */ js.Any], 
     typings.vuex.vuexMod.Store[js.Object]
   ] = js.native
   @JSName("createNamespacedHelpers")

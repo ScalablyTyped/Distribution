@@ -10,13 +10,13 @@ A no-frills flexbox grid system for React.
 | ------------------ | :-------------: |
 | Full name          | hedron |
 | Keywords           | - |
-| # releases         | 13 |
+| # releases         | 8 |
 | # dependents       | 5 |
-| # downloads        | 33371 |
+| # downloads        | 31564 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/garetmckinley/hedron#readme)
+- [Homepage](https://github.com/garetmckinley/hedron)
 - [Bugs](https://github.com/garetmckinley/hedron/issues)
 - [Repository](https://github.com/garetmckinley/hedron)
 - [Npm](https://www.npmjs.com/package/hedron)

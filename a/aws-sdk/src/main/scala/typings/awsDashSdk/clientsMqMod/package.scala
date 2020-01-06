@@ -20,6 +20,12 @@ package object clientsMqMod {
   */
   type BrokerState = _BrokerState | String
   /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.EBS
+    - typings.awsDashSdk.awsDashSdkStrings.EFS
+    - java.lang.String
+  */
+  type BrokerStorageType = _BrokerStorageType | String
+  /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.CREATE
     - typings.awsDashSdk.awsDashSdkStrings.UPDATE
     - typings.awsDashSdk.awsDashSdkStrings.DELETE
@@ -64,6 +70,7 @@ package object clientsMqMod {
   type __listOfConfiguration = js.Array[Configuration]
   type __listOfConfigurationId = js.Array[ConfigurationId]
   type __listOfConfigurationRevision = js.Array[ConfigurationRevision]
+  type __listOfDeploymentMode = js.Array[DeploymentMode]
   type __listOfEngineVersion = js.Array[EngineVersion]
   type __listOfSanitizationWarning = js.Array[SanitizationWarning]
   type __listOfUser = js.Array[User]
@@ -74,7 +81,7 @@ package object clientsMqMod {
   type __timestampIso8601 = Date
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2017-11-27`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

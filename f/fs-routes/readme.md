@@ -12,7 +12,7 @@ Scan a filesystem for route files.
 | Keywords           | filesystem, routes, paths, api |
 | # releases         | 12 |
 | # dependents       | 1 |
-| # downloads        | 335688 |
+| # downloads        | 396411 |
 | # stars            | 0 |
 
 ## Links

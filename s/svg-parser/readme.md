@@ -10,15 +10,15 @@ Create a JSON-friendly object from an SVG string
 | ------------------ | :-------------: |
 | Full name          | svg-parser |
 | Keywords           | SVG, parser, JSON, object |
-| # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 45944 |
+| # releases         | 5 |
+| # dependents       | 11 |
+| # downloads        | 21548238 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://gitlab.com/Rich-Harris/svg-parser#README)
-- [Bugs](https://gitlab.com/Rich-Harris/svg-parser/issues)
-- [Repository](https://gitlab.com/Rich-Harris/svg-parser)
+- [Homepage](https://github.com/Rich-Harris/svg-parser#README)
+- [Bugs](https://github.com/Rich-Harris/svg-parser/issues)
+- [Repository](https://github.com/Rich-Harris/svg-parser)
 - [Npm](https://www.npmjs.com/package/svg-parser)
     
 

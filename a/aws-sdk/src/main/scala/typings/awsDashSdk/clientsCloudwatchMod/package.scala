@@ -23,6 +23,7 @@ package object clientsCloudwatchMod {
   type AnomalyDetectorExcludedTimeRanges = js.Array[Range]
   type AnomalyDetectorMetricTimezone = String
   type AnomalyDetectors = js.Array[AnomalyDetector]
+  type BatchFailures = js.Array[PartialFailure]
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.GreaterThanOrEqualToThreshold
@@ -55,18 +56,43 @@ package object clientsCloudwatchMod {
   type Dimensions = js.Array[Dimension]
   type EvaluateLowSampleCountPercentile = String
   type EvaluationPeriods = Double
+  type ExceptionType = String
   type ExtendedStatistic = String
   type ExtendedStatistics = js.Array[ExtendedStatistic]
+  type FailureCode = String
+  type FailureDescription = String
+  type FailureResource = String
   type GetMetricDataMaxDatapoints = Double
   type HistoryData = String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.ConfigurationUpdate
     - typings.awsDashSdk.awsDashSdkStrings.StateUpdate
-    - typings.awsDashSdk.awsDashSdkStrings.Action
+    - typings.awsDashSdk.awsDashSdkStrings.Action_
     - java.lang.String
   */
   type HistoryItemType = _HistoryItemType | String
   type HistorySummary = String
+  type InsightRuleAggregationStatistic = String
+  type InsightRuleContributorDatapoints = js.Array[InsightRuleContributorDatapoint]
+  type InsightRuleContributorKey = String
+  type InsightRuleContributorKeyLabel = String
+  type InsightRuleContributorKeyLabels = js.Array[InsightRuleContributorKeyLabel]
+  type InsightRuleContributorKeys = js.Array[InsightRuleContributorKey]
+  type InsightRuleContributors = js.Array[InsightRuleContributor]
+  type InsightRuleDefinition = String
+  type InsightRuleMaxResults = Double
+  type InsightRuleMetricDatapoints = js.Array[InsightRuleMetricDatapoint]
+  type InsightRuleMetricList = js.Array[InsightRuleMetricName]
+  type InsightRuleMetricName = String
+  type InsightRuleName = String
+  type InsightRuleNames = js.Array[InsightRuleName]
+  type InsightRuleOrderBy = String
+  type InsightRuleSchema = String
+  type InsightRuleState = String
+  type InsightRuleUnboundDouble = Double
+  type InsightRuleUnboundInteger = Double
+  type InsightRuleUnboundLong = Double
+  type InsightRules = js.Array[InsightRule]
   type LastModified = Date
   type MaxRecords = Double
   type MaxReturnedResultsCount = Double
@@ -100,33 +126,33 @@ package object clientsCloudwatchMod {
   type ScanBy = _ScanBy | String
   type Size = Double
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Seconds
+    - typings.awsDashSdk.awsDashSdkStrings.Seconds_
     - typings.awsDashSdk.awsDashSdkStrings.Microseconds
-    - typings.awsDashSdk.awsDashSdkStrings.Milliseconds
-    - typings.awsDashSdk.awsDashSdkStrings.Bytes
+    - typings.awsDashSdk.awsDashSdkStrings.Milliseconds_
+    - typings.awsDashSdk.awsDashSdkStrings.Bytes_
     - typings.awsDashSdk.awsDashSdkStrings.Kilobytes
     - typings.awsDashSdk.awsDashSdkStrings.Megabytes
     - typings.awsDashSdk.awsDashSdkStrings.Gigabytes
     - typings.awsDashSdk.awsDashSdkStrings.Terabytes
-    - typings.awsDashSdk.awsDashSdkStrings.Bits
+    - typings.awsDashSdk.awsDashSdkStrings.Bits_
     - typings.awsDashSdk.awsDashSdkStrings.Kilobits
     - typings.awsDashSdk.awsDashSdkStrings.Megabits
     - typings.awsDashSdk.awsDashSdkStrings.Gigabits
     - typings.awsDashSdk.awsDashSdkStrings.Terabits
-    - typings.awsDashSdk.awsDashSdkStrings.Percent
-    - typings.awsDashSdk.awsDashSdkStrings.Count
-    - typings.awsDashSdk.awsDashSdkStrings.`Bytes/Second`
-    - typings.awsDashSdk.awsDashSdkStrings.`Kilobytes/Second`
-    - typings.awsDashSdk.awsDashSdkStrings.`Megabytes/Second`
-    - typings.awsDashSdk.awsDashSdkStrings.`Gigabytes/Second`
-    - typings.awsDashSdk.awsDashSdkStrings.`Terabytes/Second`
-    - typings.awsDashSdk.awsDashSdkStrings.`Bits/Second`
-    - typings.awsDashSdk.awsDashSdkStrings.`Kilobits/Second`
-    - typings.awsDashSdk.awsDashSdkStrings.`Megabits/Second`
-    - typings.awsDashSdk.awsDashSdkStrings.`Gigabits/Second`
-    - typings.awsDashSdk.awsDashSdkStrings.`Terabits/Second`
-    - typings.awsDashSdk.awsDashSdkStrings.`Count/Second`
-    - typings.awsDashSdk.awsDashSdkStrings.None
+    - typings.awsDashSdk.awsDashSdkStrings.Percent_
+    - typings.awsDashSdk.awsDashSdkStrings.Count_
+    - typings.awsDashSdk.awsDashSdkStrings.BytesSlashSecond
+    - typings.awsDashSdk.awsDashSdkStrings.KilobytesSlashSecond
+    - typings.awsDashSdk.awsDashSdkStrings.MegabytesSlashSecond
+    - typings.awsDashSdk.awsDashSdkStrings.GigabytesSlashSecond
+    - typings.awsDashSdk.awsDashSdkStrings.TerabytesSlashSecond
+    - typings.awsDashSdk.awsDashSdkStrings.BitsSlashSecond
+    - typings.awsDashSdk.awsDashSdkStrings.KilobitsSlashSecond
+    - typings.awsDashSdk.awsDashSdkStrings.MegabitsSlashSecond
+    - typings.awsDashSdk.awsDashSdkStrings.GigabitsSlashSecond
+    - typings.awsDashSdk.awsDashSdkStrings.TerabitsSlashSecond
+    - typings.awsDashSdk.awsDashSdkStrings.CountSlashSecond
+    - typings.awsDashSdk.awsDashSdkStrings.None_
     - java.lang.String
   */
   type StandardUnit = _StandardUnit | String
@@ -142,16 +168,16 @@ package object clientsCloudwatchMod {
   type StateValue = _StateValue | String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.SampleCount
-    - typings.awsDashSdk.awsDashSdkStrings.Average
-    - typings.awsDashSdk.awsDashSdkStrings.Sum
-    - typings.awsDashSdk.awsDashSdkStrings.Minimum
-    - typings.awsDashSdk.awsDashSdkStrings.Maximum
+    - typings.awsDashSdk.awsDashSdkStrings.Average_
+    - typings.awsDashSdk.awsDashSdkStrings.Sum_
+    - typings.awsDashSdk.awsDashSdkStrings.Minimum_
+    - typings.awsDashSdk.awsDashSdkStrings.Maximum_
     - java.lang.String
   */
   type Statistic = _Statistic | String
   type Statistics = js.Array[Statistic]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Complete
+    - typings.awsDashSdk.awsDashSdkStrings.Complete_
     - typings.awsDashSdk.awsDashSdkStrings.InternalError
     - typings.awsDashSdk.awsDashSdkStrings.PartialData
     - java.lang.String
@@ -169,7 +195,7 @@ package object clientsCloudwatchMod {
   type Values = js.Array[DatapointValue]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2010-08-01`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

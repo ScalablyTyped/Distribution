@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ComputeType extends js.Object {
   /**
     * The compute type.
     */
-  var Name: js.UndefOr[Compute] = js.undefined
+  var Name: js.UndefOr[Compute] = js.native
 }
 
 object ComputeType {

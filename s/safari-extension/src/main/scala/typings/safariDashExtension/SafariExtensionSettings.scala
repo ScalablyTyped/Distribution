@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SafariExtensionSettings
   extends SafariEventTarget
-     with /* index */ StringDictionary[js.Any]
-     with /* index */ NumberDictionary[js.Any] {
+     with /* index */ NumberDictionary[js.Any]
+     with /* index */ StringDictionary[js.Any] {
   def clear(): Unit = js.native
   def getItem(key: String): js.Any = js.native
   def removeItem(key: String): Unit = js.native

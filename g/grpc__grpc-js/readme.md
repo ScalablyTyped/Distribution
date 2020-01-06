@@ -10,9 +10,9 @@ gRPC Library for Node - pure JS implementation
 | ------------------ | :-------------: |
 | Full name          | @grpc/grpc-js |
 | Keywords           | - |
-| # releases         | 11 |
-| # dependents       | 18 |
-| # downloads        | 9016256 |
+| # releases         | 34 |
+| # dependents       | 42 |
+| # downloads        | 27858214 |
 | # stars            | 0 |
 
 ## Links

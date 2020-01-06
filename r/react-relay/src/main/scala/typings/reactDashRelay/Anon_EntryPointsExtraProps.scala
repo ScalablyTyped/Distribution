@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_EntryPointsExtraProps[TPreloadParams, TPreloadedEntryPoints /* <: js.Object */, TExtraProps, TEnvironmentProviderOptions, TPreloadedQueries /* <: js.Object */] extends js.Object {
+trait Anon_EntryPointsExtraProps[TPreloadedEntryPoints /* <: js.Object */, TPreloadParams, TExtraProps, TPreloadedQueries /* <: js.Object */, TEnvironmentProviderOptions] extends js.Object {
   var entryPoints: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ T in keyof TPreloadedEntryPoints ]: react-relay.react-relay/lib/relay-experimental/EntryPointTypes.ExtractEntryPointTypeHelper<TPreloadParams>}
@@ -20,7 +20,7 @@ trait Anon_EntryPointsExtraProps[TPreloadParams, TPreloadedEntryPoints /* <: js.
 
 object Anon_EntryPointsExtraProps {
   @scala.inline
-  def apply[TPreloadParams, TPreloadedEntryPoints /* <: js.Object */, TExtraProps, TEnvironmentProviderOptions, TPreloadedQueries /* <: js.Object */](
+  def apply[TPreloadedEntryPoints /* <: js.Object */, TPreloadParams, TExtraProps, TPreloadedQueries /* <: js.Object */, TEnvironmentProviderOptions](
     entryPoints: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ T in keyof TPreloadedEntryPoints ]: react-relay.react-relay/lib/relay-experimental/EntryPointTypes.ExtractEntryPointTypeHelper<TPreloadParams>}
     */ typings.reactDashRelay.reactDashRelayStrings.Anon_EntryPointsExtraProps with js.Any = null,
@@ -29,22 +29,22 @@ object Anon_EntryPointsExtraProps {
   {[ T in keyof TPreloadedQueries ]: react-relay.react-relay/lib/relay-experimental/EntryPointTypes.ExtractQueryTypeHelper<TEnvironmentProviderOptions>}
     */ typings.reactDashRelay.reactDashRelayStrings.Anon_EntryPointsExtraProps with js.Any = null
   ): Anon_EntryPointsExtraProps[
-    TPreloadParams, 
     TPreloadedEntryPoints, 
+    TPreloadParams, 
     TExtraProps, 
-    TEnvironmentProviderOptions, 
-    TPreloadedQueries
+    TPreloadedQueries, 
+    TEnvironmentProviderOptions
   ] = {
     val __obj = js.Dynamic.literal()
     if (entryPoints != null) __obj.updateDynamic("entryPoints")(entryPoints.asInstanceOf[js.Any])
     if (extraProps != null) __obj.updateDynamic("extraProps")(extraProps.asInstanceOf[js.Any])
     if (queries != null) __obj.updateDynamic("queries")(queries.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_EntryPointsExtraProps[
-  TPreloadParams, 
   TPreloadedEntryPoints, 
+  TPreloadParams, 
   TExtraProps, 
-  TEnvironmentProviderOptions, 
-  TPreloadedQueries]]
+  TPreloadedQueries, 
+  TEnvironmentProviderOptions]]
   }
 }
 

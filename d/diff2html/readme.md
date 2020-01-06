@@ -9,9 +9,9 @@ Fast Diff to colorized HTML
 | ------------------ | :-------------: |
 | Full name          | diff2html |
 | Keywords           | git, diff, pretty, side, line, side-by-side, line-by-line, character, highlight, pretty, color, html, diff2html, difftohtml, colorized |
-| # releases         | 8 |
-| # dependents       | 35 |
-| # downloads        | 627946 |
+| # releases         | 27 |
+| # dependents       | 45 |
+| # downloads        | 1389533 |
 | # stars            | 6 |
 
 ## Links

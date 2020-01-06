@@ -9,10 +9,10 @@ Detect when an element is ready in the DOM
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | element-ready |
-| Keywords           | browser, element, ready, el, dom, css, selector, wait, detect, check |
-| # releases         | 7 |
-| # dependents       | 4 |
-| # downloads        | 19452 |
+| Keywords           | browser, element, ready, dom, css, selector, wait, detect, check, dom, domcontentloaded, domready |
+| # releases         | 6 |
+| # dependents       | 5 |
+| # downloads        | 16758 |
 | # stars            | 1 |
 
 ## Links

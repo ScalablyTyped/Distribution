@@ -13,7 +13,7 @@ trait Anon_2 extends js.Object {
   var sea: CryptoKeyPair
   var soul: String
   def on(
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type [unknown, unknown, unknown] is not an array type */ args: js.Tuple3[_, _, _]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type [unknown, unknown, unknown] is not an array type */ args: js.Tuple3[_, _, _]
   ): js.Any
 }
 

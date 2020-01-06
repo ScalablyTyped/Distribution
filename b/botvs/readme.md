@@ -9,9 +9,9 @@ Typings are for version 1.0.5
 | ------------------ | :-------------: |
 | Full name          | botvs |
 | Keywords           | - |
-| # releases         | 8 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 733 |
+| # downloads        | 827 |
 | # stars            | 0 |
 
 ## Links

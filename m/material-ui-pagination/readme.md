@@ -10,9 +10,9 @@ An easy to use and customizable pagination component for material ui.
 | ------------------ | :-------------: |
 | Full name          | material-ui-pagination |
 | Keywords           | pagination, material-ui |
-| # releases         | 12 |
+| # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 124510 |
+| # downloads        | 62780 |
 | # stars            | 1 |
 
 ## Links

@@ -11,8 +11,8 @@ CORS middleware for Koa
 | Full name          | koa-cors |
 | Keywords           | cors, koa, koajs |
 | # releases         | 1 |
-| # dependents       | 147 |
-| # downloads        | 833553 |
+| # dependents       | 164 |
+| # downloads        | 1004399 |
 | # stars            | 15 |
 
 ## Links

@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MotionImageInsertionOffset extends js.Object {
   /**
     * Set the distance, in pixels, between the overlay and the left edge of the video frame.
     */
-  var ImageX: js.UndefOr[__integerMin0Max2147483647] = js.undefined
+  var ImageX: js.UndefOr[__integerMin0Max2147483647] = js.native
   /**
     * Set the distance, in pixels, between the overlay and the top edge of the video frame.
     */
-  var ImageY: js.UndefOr[__integerMin0Max2147483647] = js.undefined
+  var ImageY: js.UndefOr[__integerMin0Max2147483647] = js.native
 }
 
 object MotionImageInsertionOffset {

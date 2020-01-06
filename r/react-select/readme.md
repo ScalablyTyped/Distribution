@@ -10,9 +10,9 @@ A Select control built with and for ReactJS
 | ------------------ | :-------------: |
 | Full name          | react-select |
 | Keywords           | combobox, form, input, multiselect, react, react-component, select, ui |
-| # releases         | 40 |
-| # dependents       | 913 |
-| # downloads        | 31321200 |
+| # releases         | 42 |
+| # dependents       | 1347 |
+| # downloads        | 60793960 |
 | # stars            | 37 |
 
 ## Links

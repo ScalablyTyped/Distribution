@@ -5,31 +5,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TopicRuleCloudwatchMetric extends js.Object {
   /**
     * The CloudWatch metric name.
     */
-  var metricName: Input[String]
+  var metricName: Input[String] = js.native
   /**
     * The CloudWatch metric namespace name.
     */
-  var metricNamespace: Input[String]
+  var metricNamespace: Input[String] = js.native
   /**
     * An optional Unix timestamp (http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/cloudwatch_concepts.html#about_timestamp).
     */
-  var metricTimestamp: js.UndefOr[Input[String]] = js.undefined
+  var metricTimestamp: js.UndefOr[Input[String]] = js.native
   /**
     * The metric unit (supported units can be found here: http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/cloudwatch_concepts.html#Unit)
     */
-  var metricUnit: Input[String]
+  var metricUnit: Input[String] = js.native
   /**
     * The CloudWatch metric value.
     */
-  var metricValue: Input[String]
+  var metricValue: Input[String] = js.native
   /**
     * The ARN of the IAM role that grants access.
     */
-  var roleArn: Input[String]
+  var roleArn: Input[String] = js.native
 }
 
 object TopicRuleCloudwatchMetric {

@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DocumentPermissions extends js.Object {
-  var accountIds: Input[String]
-  var `type`: Input[String]
+  var accountIds: Input[String] = js.native
+  var `type`: Input[String] = js.native
 }
 
 object DocumentPermissions {

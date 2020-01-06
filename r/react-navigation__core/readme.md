@@ -10,9 +10,9 @@ Core utilities for the react-navigation framework
 | ------------------ | :-------------: |
 | Full name          | @react-navigation/core |
 | Keywords           | react-navigation, routing, ios, android |
-| # releases         | 78 |
-| # dependents       | 18 |
-| # downloads        | 5197555 |
+| # releases         | 88 |
+| # dependents       | 16 |
+| # downloads        | 6281274 |
 | # stars            | 0 |
 
 ## Links

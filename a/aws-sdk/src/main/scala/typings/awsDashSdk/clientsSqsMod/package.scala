@@ -45,8 +45,8 @@ package object clientsSqsMod {
   type MessageSystemAttributeNameForSends = AWSTraceHeader | java.lang.String
   type QueueAttributeMap = StringDictionary[String]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.All
-    - typings.awsDashSdk.awsDashSdkStrings.Policy
+    - typings.awsDashSdk.awsDashSdkStrings.All_
+    - typings.awsDashSdk.awsDashSdkStrings.Policy_
     - typings.awsDashSdk.awsDashSdkStrings.VisibilityTimeout
     - typings.awsDashSdk.awsDashSdkStrings.MaximumMessageSize
     - typings.awsDashSdk.awsDashSdkStrings.MessageRetentionPeriod
@@ -77,7 +77,7 @@ package object clientsSqsMod {
   type TagValue = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2012-11-05`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | java.lang.String

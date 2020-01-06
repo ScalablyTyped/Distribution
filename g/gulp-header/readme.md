@@ -11,8 +11,8 @@ Gulp extension to add header to file(s) in the pipeline.
 | Full name          | gulp-header |
 | Keywords           | header, gulpplugin, eventstream |
 | # releases         | 10 |
-| # dependents       | 191 |
-| # downloads        | 5621226 |
+| # dependents       | 198 |
+| # downloads        | 7640437 |
 | # stars            | 59 |
 
 ## Links

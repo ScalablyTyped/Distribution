@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TargetCapacitySpecification extends js.Object {
   /**
     * The default TotalTargetCapacity, which is either Spot or On-Demand.
     */
-  var DefaultTargetCapacityType: js.UndefOr[typings.awsDashSdk.clientsEc2Mod.DefaultTargetCapacityType] = js.undefined
+  var DefaultTargetCapacityType: js.UndefOr[typings.awsDashSdk.clientsEc2Mod.DefaultTargetCapacityType] = js.native
   /**
     * The number of On-Demand units to request. If you specify a target capacity for Spot units, you cannot specify a target capacity for On-Demand units.
     */
-  var OnDemandTargetCapacity: js.UndefOr[Integer] = js.undefined
+  var OnDemandTargetCapacity: js.UndefOr[Integer] = js.native
   /**
     * The maximum number of Spot units to launch. If you specify a target capacity for On-Demand units, you cannot specify a target capacity for Spot units.
     */
-  var SpotTargetCapacity: js.UndefOr[Integer] = js.undefined
+  var SpotTargetCapacity: js.UndefOr[Integer] = js.native
   /**
     * The number of units to request, filled using DefaultTargetCapacityType.
     */
-  var TotalTargetCapacity: js.UndefOr[Integer] = js.undefined
+  var TotalTargetCapacity: js.UndefOr[Integer] = js.native
 }
 
 object TargetCapacitySpecification {

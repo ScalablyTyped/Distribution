@@ -10,9 +10,9 @@ Copy text to the clipboard in modern browsers (0.2 kB)
 | ------------------ | :-------------: |
 | Full name          | copy-text-to-clipboard |
 | Keywords           | copy, text, clipboard, browser, clipboard.js, modern |
-| # releases         | 7 |
-| # dependents       | 19 |
-| # downloads        | 764313 |
+| # releases         | 4 |
+| # dependents       | 46 |
+| # downloads        | 2523707 |
 | # stars            | 1 |
 
 ## Links

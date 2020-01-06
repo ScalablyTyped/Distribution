@@ -12,14 +12,14 @@ import typings.baconjs.Fn_FXXsA
 import typings.baconjs.Fn_Fn
 import typings.baconjs.Fn_X
 import typings.baconjs.Fn_XA
-import typings.baconjs.Fn_XA_2056052176
+import typings.baconjs.Fn_XA_1739873883
 import typings.baconjs.Fn_XXs
 import typings.baconjs.Fn_XXsA
 import typings.baconjs.Fn_XXsArray
 import typings.baconjs.Fn_Xs
 import typings.baconjs.Fn_XsA
 import typings.baconjs.Fn_XsAArray
-import typings.baconjs.Fn_XsAArray_988238076
+import typings.baconjs.Fn_XsAArray_743677257
 import typings.baconjs.Fn_XsArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -50,7 +50,7 @@ object _underscore extends js.Object {
   @JSName("head")
   var head_Original: Fn_Xs = js.native
   @JSName("id")
-  var id_Original: Fn_XA_2056052176 = js.native
+  var id_Original: Fn_XA_1739873883 = js.native
   @JSName("indexOf")
   var indexOf_Original: Fn_X = js.native
   @JSName("indexWhere")
@@ -58,7 +58,7 @@ object _underscore extends js.Object {
   @JSName("isFunction")
   var isFunction_Original: js.Function1[/* f */ js.Any, /* is std.Function */ Boolean] = js.native
   @JSName("last")
-  var last_Original: Fn_XsAArray_988238076 = js.native
+  var last_Original: Fn_XsAArray_743677257 = js.native
   @JSName("map")
   var map_Original: Fn_AF = js.native
   @JSName("negate")

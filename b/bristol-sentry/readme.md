@@ -12,7 +12,7 @@ Sentry transport + formatter for the Bristol logger
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 6153 |
+| # downloads        | 10227 |
 | # stars            | 0 |
 
 ## Links

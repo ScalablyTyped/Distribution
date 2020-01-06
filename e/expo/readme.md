@@ -10,10 +10,10 @@ The Expo SDK
 | ------------------ | :-------------: |
 | Full name          | expo |
 | Keywords           | expo |
-| # releases         | 162 |
-| # dependents       | 151 |
-| # downloads        | 2105756 |
-| # stars            | 7 |
+| # releases         | 118 |
+| # dependents       | 206 |
+| # downloads        | 2737193 |
+| # stars            | 8 |
 
 ## Links
 - [Homepage](https://github.com/expo/expo/tree/master/packages/expo)

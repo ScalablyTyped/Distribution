@@ -8,31 +8,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TaskArgs extends js.Object {
   /**
     * Amazon Resource Name (ARN) of the CloudWatch Log Group that is used to monitor and log events in the sync task.
     */
-  val cloudwatchLogGroupArn: js.UndefOr[Input[ARN]] = js.undefined
+  val cloudwatchLogGroupArn: js.UndefOr[Input[ARN]] = js.native
   /**
     * Amazon Resource Name (ARN) of destination DataSync Location.
     */
-  val destinationLocationArn: Input[ARN]
+  val destinationLocationArn: Input[ARN] = js.native
   /**
     * Name of the DataSync Task.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * Configuration block containing option that controls the default behavior when you start an execution of this DataSync Task. For each individual task execution, you can override these options by specifying an overriding configuration in those executions.
     */
-  val options: js.UndefOr[Input[TaskOptions]] = js.undefined
+  val options: js.UndefOr[Input[TaskOptions]] = js.native
   /**
     * Amazon Resource Name (ARN) of source DataSync Location.
     */
-  val sourceLocationArn: Input[ARN]
+  val sourceLocationArn: Input[ARN] = js.native
   /**
     * Key-value pairs of resource tags to assign to the DataSync Task.
     */
-  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object TaskArgs {

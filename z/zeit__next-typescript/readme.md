@@ -10,9 +10,9 @@ Use [Typescript](https://www.typescriptlang.org/) with [Next.js](https://github.
 | ------------------ | :-------------: |
 | Full name          | @zeit/next-typescript |
 | Keywords           | - |
-| # releases         | 19 |
-| # dependents       | 25 |
-| # downloads        | 1517297 |
+| # releases         | 18 |
+| # dependents       | 30 |
+| # downloads        | 2230249 |
 | # stars            | 0 |
 
 ## Links

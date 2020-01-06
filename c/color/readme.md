@@ -11,8 +11,8 @@ Color conversion and manipulation with CSS string support
 | Full name          | color |
 | Keywords           | color, colour, css |
 | # releases         | 5 |
-| # dependents       | 1032 |
-| # downloads        | 212770037 |
+| # dependents       | 1326 |
+| # downloads        | 318620120 |
 | # stars            | 49 |
 
 ## Links

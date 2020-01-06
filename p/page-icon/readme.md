@@ -11,8 +11,8 @@ Find the best icon for a web page
 | Full name          | page-icon |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 11 |
-| # downloads        | 69727 |
+| # dependents       | 12 |
+| # downloads        | 88361 |
 | # stars            | 0 |
 
 ## Links

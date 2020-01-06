@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VideoDetail extends js.Object {
   /**
     * Height in pixels for the output
     */
-  var HeightInPx: js.UndefOr[__integer] = js.undefined
+  var HeightInPx: js.UndefOr[__integer] = js.native
   /**
     * Width in pixels for the output
     */
-  var WidthInPx: js.UndefOr[__integer] = js.undefined
+  var WidthInPx: js.UndefOr[__integer] = js.native
 }
 
 object VideoDetail {

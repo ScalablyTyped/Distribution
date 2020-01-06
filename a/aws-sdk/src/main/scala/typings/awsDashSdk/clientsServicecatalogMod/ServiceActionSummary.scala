@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ServiceActionSummary extends js.Object {
   /**
     * The self-service action definition type. For example, SSM_AUTOMATION.
     */
-  var DefinitionType: js.UndefOr[ServiceActionDefinitionType] = js.undefined
+  var DefinitionType: js.UndefOr[ServiceActionDefinitionType] = js.native
   /**
     * The self-service action description.
     */
-  var Description: js.UndefOr[ServiceActionDescription] = js.undefined
+  var Description: js.UndefOr[ServiceActionDescription] = js.native
   /**
     * The self-service action identifier.
     */
-  var Id: js.UndefOr[typings.awsDashSdk.clientsServicecatalogMod.Id] = js.undefined
+  var Id: js.UndefOr[typings.awsDashSdk.clientsServicecatalogMod.Id] = js.native
   /**
     * The self-service action name.
     */
-  var Name: js.UndefOr[ServiceActionName] = js.undefined
+  var Name: js.UndefOr[ServiceActionName] = js.native
 }
 
 object ServiceActionSummary {
@@ -33,9 +34,9 @@ object ServiceActionSummary {
   ): ServiceActionSummary = {
     val __obj = js.Dynamic.literal()
     if (DefinitionType != null) __obj.updateDynamic("DefinitionType")(DefinitionType.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description)
-    if (Id != null) __obj.updateDynamic("Id")(Id)
-    if (Name != null) __obj.updateDynamic("Name")(Name)
+    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
+    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceActionSummary]
   }
 }

@@ -11,8 +11,8 @@ The lodash method `_.isArrayBuffer` exported as a module.
 | Full name          | lodash.isarraybuffer |
 | Keywords           | lodash-modularized, isarraybuffer |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 715 |
+| # dependents       | 3 |
+| # downloads        | 1875 |
 | # stars            | 0 |
 
 ## Links

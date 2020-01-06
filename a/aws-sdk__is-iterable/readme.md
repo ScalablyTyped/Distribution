@@ -10,9 +10,9 @@ Provides a function for detecting if input is iterable
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/is-iterable |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 5 |
 | # dependents       | 4 |
-| # downloads        | 6599 |
+| # downloads        | 31618 |
 | # stars            | 0 |
 
 ## Links

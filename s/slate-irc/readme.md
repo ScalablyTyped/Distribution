@@ -11,7 +11,7 @@ General purpose IRC client
 | Keywords           | irc, client, chat |
 | # releases         | 0 |
 | # dependents       | 12 |
-| # downloads        | 5963 |
+| # downloads        | 5490 |
 | # stars            | 2 |
 
 ## Links

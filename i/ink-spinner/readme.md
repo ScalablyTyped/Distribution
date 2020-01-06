@@ -11,8 +11,8 @@ Spinner component for Ink
 | Full name          | ink-spinner |
 | Keywords           | ink, progress, spinner, loader, loading, component, jsx, react |
 | # releases         | 4 |
-| # dependents       | 44 |
-| # downloads        | 18331 |
+| # dependents       | 89 |
+| # downloads        | 5111628 |
 | # stars            | 0 |
 
 ## Links

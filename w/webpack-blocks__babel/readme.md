@@ -10,9 +10,9 @@ Webpack block for babel 6+.
 | ------------------ | :-------------: |
 | Full name          | @webpack-blocks/babel |
 | Keywords           | webpack, webpack-blocks |
-| # releases         | 8 |
+| # releases         | 6 |
 | # dependents       | 1 |
-| # downloads        | 161876 |
+| # downloads        | 140269 |
 | # stars            | 0 |
 
 ## Links

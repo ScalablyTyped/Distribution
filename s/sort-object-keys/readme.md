@@ -10,9 +10,9 @@ Sort an object's keys, including an optional key list
 | ------------------ | :-------------: |
 | Full name          | sort-object-keys |
 | Keywords           | keys, object, sort |
-| # releases         | 1 |
-| # dependents       | 19 |
-| # downloads        | 4751895 |
+| # releases         | 2 |
+| # dependents       | 25 |
+| # downloads        | 7598031 |
 | # stars            | 0 |
 
 ## Links

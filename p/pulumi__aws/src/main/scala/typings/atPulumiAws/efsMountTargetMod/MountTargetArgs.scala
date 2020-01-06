@@ -5,25 +5,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MountTargetArgs extends js.Object {
   /**
     * The ID of the file system for which the mount target is intended.
     */
-  val fileSystemId: Input[String]
+  val fileSystemId: Input[String] = js.native
   /**
     * The address (within the address range of the specified subnet) at
     * which the file system may be mounted via the mount target.
     */
-  val ipAddress: js.UndefOr[Input[String]] = js.undefined
+  val ipAddress: js.UndefOr[Input[String]] = js.native
   /**
     * A list of up to 5 VPC security group IDs (that must
     * be for the same VPC as subnet specified) in effect for the mount target.
     */
-  val securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The ID of the subnet to add the mount target in.
     */
-  val subnetId: Input[String]
+  val subnetId: Input[String] = js.native
 }
 
 object MountTargetArgs {

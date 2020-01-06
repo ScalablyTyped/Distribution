@@ -10,9 +10,9 @@ Node.js library for parsing crontab instructions
 | ------------------ | :-------------: |
 | Full name          | cron-parser |
 | Keywords           | cron, crontab, parser |
-| # releases         | 14 |
-| # dependents       | 121 |
-| # downloads        | 9013159 |
+| # releases         | 15 |
+| # dependents       | 148 |
+| # downloads        | 14923965 |
 | # stars            | 9 |
 
 ## Links

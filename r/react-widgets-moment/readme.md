@@ -10,9 +10,9 @@ A moment.js localizer for react-widgets
 | ------------------ | :-------------: |
 | Full name          | react-widgets-moment |
 | Keywords           | react-widgets |
-| # releases         | 43 |
-| # dependents       | 13 |
-| # downloads        | 568060 |
+| # releases         | 25 |
+| # dependents       | 14 |
+| # downloads        | 912275 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ Redux bindings for React Router — keep your router state inside your Redux Sto
 | ------------------ | :-------------: |
 | Full name          | redux-router |
 | Keywords           | redux, react-router, react, router |
-| # releases         | 1 |
-| # dependents       | 33 |
-| # downloads        | 1097341 |
+| # releases         | 0 |
+| # dependents       | 36 |
+| # downloads        | 418375 |
 | # stars            | 4 |
 
 ## Links

@@ -30,7 +30,7 @@ package object clientsSesMod {
     - typings.awsDashSdk.awsDashSdkStrings.MessageTooLarge
     - typings.awsDashSdk.awsDashSdkStrings.ExceededQuota
     - typings.awsDashSdk.awsDashSdkStrings.ContentRejected
-    - typings.awsDashSdk.awsDashSdkStrings.Undefined
+    - typings.awsDashSdk.awsDashSdkStrings.Undefined_
     - typings.awsDashSdk.awsDashSdkStrings.TemporaryFailure
     - java.lang.String
   */
@@ -39,7 +39,7 @@ package object clientsSesMod {
   type BulkEmailDestinationList = js.Array[BulkEmailDestination]
   type BulkEmailDestinationStatusList = js.Array[BulkEmailDestinationStatus]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Success
+    - typings.awsDashSdk.awsDashSdkStrings.Success_
     - typings.awsDashSdk.awsDashSdkStrings.MessageRejected
     - typings.awsDashSdk.awsDashSdkStrings.MailFromDomainNotVerified
     - typings.awsDashSdk.awsDashSdkStrings.ConfigurationSetDoesNotExist
@@ -52,7 +52,7 @@ package object clientsSesMod {
     - typings.awsDashSdk.awsDashSdkStrings.ConfigurationSetSendingPaused
     - typings.awsDashSdk.awsDashSdkStrings.InvalidParameterValue
     - typings.awsDashSdk.awsDashSdkStrings.TransientFailure
-    - typings.awsDashSdk.awsDashSdkStrings.Failed
+    - typings.awsDashSdk.awsDashSdkStrings.Failed_
     - java.lang.String
   */
   type BulkEmailStatus = _BulkEmailStatus | String
@@ -73,9 +73,9 @@ package object clientsSesMod {
   type ConfigurationSets = js.Array[ConfigurationSet]
   type Counter = Double
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Pending
-    - typings.awsDashSdk.awsDashSdkStrings.Success
-    - typings.awsDashSdk.awsDashSdkStrings.Failed
+    - typings.awsDashSdk.awsDashSdkStrings.Pending_
+    - typings.awsDashSdk.awsDashSdkStrings.Success_
+    - typings.awsDashSdk.awsDashSdkStrings.Failed_
     - typings.awsDashSdk.awsDashSdkStrings.TemporaryFailure
     - java.lang.String
   */
@@ -95,11 +95,11 @@ package object clientsSesMod {
   type DkimAttributes = StringDictionary[IdentityDkimAttributes]
   type Domain = String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.failed
-    - typings.awsDashSdk.awsDashSdkStrings.delayed
+    - typings.awsDashSdk.awsDashSdkStrings.failed__
+    - typings.awsDashSdk.awsDashSdkStrings.delayed_
     - typings.awsDashSdk.awsDashSdkStrings.delivered
     - typings.awsDashSdk.awsDashSdkStrings.relayed
-    - typings.awsDashSdk.awsDashSdkStrings.expanded
+    - typings.awsDashSdk.awsDashSdkStrings.expanded_
     - java.lang.String
   */
   type DsnAction = _DsnAction | String
@@ -109,13 +109,13 @@ package object clientsSesMod {
   type EventDestinationName = String
   type EventDestinations = js.Array[EventDestination]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.send
-    - typings.awsDashSdk.awsDashSdkStrings.reject
-    - typings.awsDashSdk.awsDashSdkStrings.bounce
-    - typings.awsDashSdk.awsDashSdkStrings.complaint
-    - typings.awsDashSdk.awsDashSdkStrings.delivery
-    - typings.awsDashSdk.awsDashSdkStrings.open
-    - typings.awsDashSdk.awsDashSdkStrings.click
+    - typings.awsDashSdk.awsDashSdkStrings.send_
+    - typings.awsDashSdk.awsDashSdkStrings.reject__
+    - typings.awsDashSdk.awsDashSdkStrings.bounce__
+    - typings.awsDashSdk.awsDashSdkStrings.complaint__
+    - typings.awsDashSdk.awsDashSdkStrings.delivery__
+    - typings.awsDashSdk.awsDashSdkStrings.open__
+    - typings.awsDashSdk.awsDashSdkStrings.click_
     - typings.awsDashSdk.awsDashSdkStrings.renderingFailure
     - java.lang.String
   */
@@ -134,12 +134,12 @@ package object clientsSesMod {
   type IdentityList = js.Array[Identity]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.EmailAddress
-    - typings.awsDashSdk.awsDashSdkStrings.Domain
+    - typings.awsDashSdk.awsDashSdkStrings.Domain_
     - java.lang.String
   */
   type IdentityType = _IdentityType | String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Event
+    - typings.awsDashSdk.awsDashSdkStrings.Event_
     - typings.awsDashSdk.awsDashSdkStrings.RequestResponse
     - java.lang.String
   */
@@ -161,9 +161,9 @@ package object clientsSesMod {
   type NotificationAttributes = StringDictionary[IdentityNotificationAttributes]
   type NotificationTopic = String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Bounce
-    - typings.awsDashSdk.awsDashSdkStrings.Complaint
-    - typings.awsDashSdk.awsDashSdkStrings.Delivery
+    - typings.awsDashSdk.awsDashSdkStrings.Bounce_
+    - typings.awsDashSdk.awsDashSdkStrings.Complaint_
+    - typings.awsDashSdk.awsDashSdkStrings.Delivery_
     - java.lang.String
   */
   type NotificationType = _NotificationType | String
@@ -176,8 +176,8 @@ package object clientsSesMod {
   type ReceiptFilterList = js.Array[ReceiptFilter]
   type ReceiptFilterName = String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Block
-    - typings.awsDashSdk.awsDashSdkStrings.Allow
+    - typings.awsDashSdk.awsDashSdkStrings.Block_
+    - typings.awsDashSdk.awsDashSdkStrings.Allow_
     - java.lang.String
   */
   type ReceiptFilterPolicy = _ReceiptFilterPolicy | String
@@ -212,16 +212,16 @@ package object clientsSesMod {
   type TextPart = String
   type Timestamp = Date
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Require
-    - typings.awsDashSdk.awsDashSdkStrings.Optional
+    - typings.awsDashSdk.awsDashSdkStrings.Require_
+    - typings.awsDashSdk.awsDashSdkStrings.Optional_
     - java.lang.String
   */
   type TlsPolicy = _TlsPolicy | String
   type VerificationAttributes = StringDictionary[IdentityVerificationAttributes]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Pending
-    - typings.awsDashSdk.awsDashSdkStrings.Success
-    - typings.awsDashSdk.awsDashSdkStrings.Failed
+    - typings.awsDashSdk.awsDashSdkStrings.Pending_
+    - typings.awsDashSdk.awsDashSdkStrings.Success_
+    - typings.awsDashSdk.awsDashSdkStrings.Failed_
     - typings.awsDashSdk.awsDashSdkStrings.TemporaryFailure
     - typings.awsDashSdk.awsDashSdkStrings.NotStarted
     - java.lang.String
@@ -231,7 +231,7 @@ package object clientsSesMod {
   type VerificationTokenList = js.Array[VerificationToken]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2010-12-01`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

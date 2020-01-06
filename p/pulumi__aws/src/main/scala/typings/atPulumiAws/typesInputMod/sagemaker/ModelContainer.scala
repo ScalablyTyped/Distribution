@@ -6,11 +6,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ModelContainer extends js.Object {
-  var containerHostname: js.UndefOr[Input[String]] = js.undefined
-  var environment: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
-  var image: Input[String]
-  var modelDataUrl: js.UndefOr[Input[String]] = js.undefined
+  var containerHostname: js.UndefOr[Input[String]] = js.native
+  var environment: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  var image: Input[String] = js.native
+  var modelDataUrl: js.UndefOr[Input[String]] = js.native
 }
 
 object ModelContainer {

@@ -3,7 +3,7 @@ package typings.tern.libInferMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.estree.estreeMod.Node
-import typings.tern.Anon_NameString_245567777
+import typings.tern.Anon_NameString_1102027680
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,7 +17,7 @@ trait Obj
   /** An object mapping the object’s known properties to AVals. Don’t manipulate this directly (ever), only use it if you have to iterate over the properties. */
   var props: StringDictionary[AVal] = js.native
   /** The prototype of the object, or null. */
-  var proto: (Obj with Anon_NameString_245567777) | Null = js.native
+  var proto: (Obj with Anon_NameString_1102027680) | Null = js.native
   /** Looks up the given property, or defines it if it did not yet exist (in which case it will be associated with the given AST node). */
   def defProp(prop: String): AVal = js.native
   def defProp(prop: String, originNode: Node): AVal = js.native

@@ -12,7 +12,7 @@ Takes human readable filesystem size strings and gives you an int representing t
 | Keywords           | - |
 | # releases         | 3 |
 | # dependents       | 34 |
-| # downloads        | 156837 |
+| # downloads        | 180427 |
 | # stars            | 1 |
 
 ## Links

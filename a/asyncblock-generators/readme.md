@@ -10,9 +10,9 @@ asyncblock without the fibers
 | ------------------ | :-------------: |
 | Full name          | asyncblock-generators |
 | Keywords           | fiber, fibers, coroutine, stop, go, green, red |
-| # releases         | 4 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 10418 |
+| # downloads        | 4526 |
 | # stars            | 0 |
 
 ## Links

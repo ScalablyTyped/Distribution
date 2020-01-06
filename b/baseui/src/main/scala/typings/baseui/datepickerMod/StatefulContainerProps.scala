@@ -28,7 +28,7 @@ object StatefulContainerProps {
     initialState: ContainerState = null,
     onChange: /* args */ Anon_Date => js.Any = null,
     range: js.UndefOr[Boolean] = js.undefined,
-    stateReducer: (/* stateType */ moveUp | mouseOver | moveLeft | moveRight | change_ | mouseLeave | moveDown, /* nextState */ ContainerState, /* currentState */ ContainerState) => ContainerState = null
+    stateReducer: (/* stateType */ mouseLeave | moveRight | moveDown | moveUp | mouseOver | change_ | moveLeft, /* nextState */ ContainerState, /* currentState */ ContainerState) => ContainerState = null
   ): StatefulContainerProps[T] = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1(children))

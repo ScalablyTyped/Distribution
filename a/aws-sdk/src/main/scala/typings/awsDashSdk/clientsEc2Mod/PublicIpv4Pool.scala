@@ -4,27 +4,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PublicIpv4Pool extends js.Object {
   /**
     * A description of the address pool.
     */
-  var Description: js.UndefOr[String] = js.undefined
+  var Description: js.UndefOr[String] = js.native
   /**
     * The address ranges.
     */
-  var PoolAddressRanges: js.UndefOr[PublicIpv4PoolRangeSet] = js.undefined
+  var PoolAddressRanges: js.UndefOr[PublicIpv4PoolRangeSet] = js.native
   /**
     * The ID of the IPv4 address pool.
     */
-  var PoolId: js.UndefOr[String] = js.undefined
+  var PoolId: js.UndefOr[String] = js.native
   /**
     * The total number of addresses.
     */
-  var TotalAddressCount: js.UndefOr[Integer] = js.undefined
+  var TotalAddressCount: js.UndefOr[Integer] = js.native
   /**
     * The total number of available addresses.
     */
-  var TotalAvailableAddressCount: js.UndefOr[Integer] = js.undefined
+  var TotalAvailableAddressCount: js.UndefOr[Integer] = js.native
 }
 
 object PublicIpv4Pool {
@@ -37,9 +38,9 @@ object PublicIpv4Pool {
     TotalAvailableAddressCount: Int | scala.Double = null
   ): PublicIpv4Pool = {
     val __obj = js.Dynamic.literal()
-    if (Description != null) __obj.updateDynamic("Description")(Description)
-    if (PoolAddressRanges != null) __obj.updateDynamic("PoolAddressRanges")(PoolAddressRanges)
-    if (PoolId != null) __obj.updateDynamic("PoolId")(PoolId)
+    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
+    if (PoolAddressRanges != null) __obj.updateDynamic("PoolAddressRanges")(PoolAddressRanges.asInstanceOf[js.Any])
+    if (PoolId != null) __obj.updateDynamic("PoolId")(PoolId.asInstanceOf[js.Any])
     if (TotalAddressCount != null) __obj.updateDynamic("TotalAddressCount")(TotalAddressCount.asInstanceOf[js.Any])
     if (TotalAvailableAddressCount != null) __obj.updateDynamic("TotalAvailableAddressCount")(TotalAvailableAddressCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublicIpv4Pool]

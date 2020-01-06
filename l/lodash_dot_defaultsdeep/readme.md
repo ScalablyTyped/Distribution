@@ -4,15 +4,15 @@
 Typings are for version 4.6
 
 ## Library description:
-The lodash method `_.defaultsDeep` exported as a module.
+The Lodash method `_.defaultsDeep` exported as a module.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | lodash.defaultsdeep |
 | Keywords           | lodash-modularized, defaultsdeep |
-| # releases         | 0 |
-| # dependents       | 253 |
-| # downloads        | 16717201 |
+| # releases         | 2 |
+| # dependents       | 319 |
+| # downloads        | 29304979 |
 | # stars            | 1 |
 
 ## Links

@@ -9,9 +9,9 @@ Node implementation of Google's JavaScript Library (Currently Implemented: Googl
 | ------------------ | :-------------: |
 | Full name          | gapi |
 | Keywords           | - |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 14246 |
+| # downloads        | 38590 |
 | # stars            | 1 |
 
 ## Links

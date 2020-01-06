@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ThingTypeProperties extends js.Object {
   /**
     * The description of the thing type.
     */
-  var description: js.UndefOr[Input[String]] = js.undefined
+  var description: js.UndefOr[Input[String]] = js.native
   /**
     * A list of searchable thing attribute names.
     */
-  var searchableAttributes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  var searchableAttributes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
 }
 
 object ThingTypeProperties {

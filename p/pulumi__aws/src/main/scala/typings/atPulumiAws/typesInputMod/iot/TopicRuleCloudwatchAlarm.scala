@@ -5,23 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TopicRuleCloudwatchAlarm extends js.Object {
   /**
     * The CloudWatch alarm name.
     */
-  var alarmName: Input[String]
+  var alarmName: Input[String] = js.native
   /**
     * The ARN of the IAM role that grants access.
     */
-  var roleArn: Input[String]
+  var roleArn: Input[String] = js.native
   /**
     * The reason for the alarm change.
     */
-  var stateReason: Input[String]
+  var stateReason: Input[String] = js.native
   /**
     * The value of the alarm state. Acceptable values are: OK, ALARM, INSUFFICIENT_DATA.
     */
-  var stateValue: Input[String]
+  var stateValue: Input[String] = js.native
 }
 
 object TopicRuleCloudwatchAlarm {

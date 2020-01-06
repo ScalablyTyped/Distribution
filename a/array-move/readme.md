@@ -10,9 +10,9 @@ Move an array item to a different position
 | ------------------ | :-------------: |
 | Full name          | array-move |
 | Keywords           | array, move, change, position, index |
-| # releases         | 3 |
-| # dependents       | 10 |
-| # downloads        | 174593 |
+| # releases         | 5 |
+| # dependents       | 52 |
+| # downloads        | 1472549 |
 | # stars            | 3 |
 
 ## Links

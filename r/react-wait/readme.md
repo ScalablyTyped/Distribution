@@ -10,9 +10,9 @@ Complex Loader Management for React Applications
 | ------------------ | :-------------: |
 | Full name          | react-wait |
 | Keywords           | react, wait, use, hooks, vue-wait, loading, loader |
-| # releases         | 6 |
-| # dependents       | 1 |
-| # downloads        | 56396 |
+| # releases         | 3 |
+| # dependents       | 3 |
+| # downloads        | 1051119 |
 | # stars            | 0 |
 
 ## Links

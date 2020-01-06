@@ -38,6 +38,10 @@ class FlowLog protected () extends CustomResource {
     */
   val logDestinationType: Output[js.UndefOr[String]] = js.native
   /**
+    * The fields to include in the flow log record, in the order in which they should appear.
+    */
+  val logFormat: Output[String] = js.native
+  /**
     * *Deprecated:* Use `logDestination` instead. The name of the CloudWatch log group.
     */
   val logGroupName: Output[String] = js.native

@@ -22,8 +22,8 @@ package object clientsImportexportMod {
   type JobId = String
   type JobIdList = js.Array[GenericString]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Import
-    - typings.awsDashSdk.awsDashSdkStrings.Export
+    - typings.awsDashSdk.awsDashSdkStrings.Import_
+    - typings.awsDashSdk.awsDashSdkStrings.Export_
     - java.lang.String
   */
   type JobType = _JobType | String
@@ -47,7 +47,7 @@ package object clientsImportexportMod {
   type WarningMessage = String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2010-06-01`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

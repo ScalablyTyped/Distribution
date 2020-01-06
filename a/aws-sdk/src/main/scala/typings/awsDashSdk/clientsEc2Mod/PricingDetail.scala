@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PricingDetail extends js.Object {
   /**
     * The number of reservations available for the price.
     */
-  var Count: js.UndefOr[Integer] = js.undefined
+  var Count: js.UndefOr[Integer] = js.native
   /**
     * The price per instance.
     */
-  var Price: js.UndefOr[Double] = js.undefined
+  var Price: js.UndefOr[Double] = js.native
 }
 
 object PricingDetail {

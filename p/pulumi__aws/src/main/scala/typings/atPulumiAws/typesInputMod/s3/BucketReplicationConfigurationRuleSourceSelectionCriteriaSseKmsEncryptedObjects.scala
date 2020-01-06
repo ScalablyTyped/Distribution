@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjects extends js.Object {
   /**
     * Boolean which indicates if this criteria is enabled.
     */
-  var enabled: Input[Boolean]
+  var enabled: Input[Boolean] = js.native
 }
 
 object BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjects {

@@ -9,9 +9,9 @@
 | ------------------ | :-------------: |
 | Full name          | ng-cordova |
 | Keywords           | - |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 79390 |
+| # downloads        | 74250 |
 | # stars            | 5 |
 
 ## Links

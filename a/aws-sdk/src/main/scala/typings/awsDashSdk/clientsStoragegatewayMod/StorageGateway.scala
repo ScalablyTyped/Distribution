@@ -233,12 +233,12 @@ trait StorageGateway extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateTapesOutput, Unit]
   ): Request[CreateTapesOutput, AWSError] = js.native
   /**
-    * Deletes the bandwidth rate limits of a gateway. You can delete either the upload and download bandwidth rate limit, or you can delete both. If you delete only one of the limits, the other limit remains unchanged. To specify which gateway to work with, use the Amazon Resource Name (ARN) of the gateway in your request.
+    * Deletes the bandwidth rate limits of a gateway. You can delete either the upload and download bandwidth rate limit, or you can delete both. If you delete only one of the limits, the other limit remains unchanged. To specify which gateway to work with, use the Amazon Resource Name (ARN) of the gateway in your request. This operation is supported for the stored volume, cached volume and tape gateway types.
     */
   def deleteBandwidthRateLimit(): Request[DeleteBandwidthRateLimitOutput, AWSError] = js.native
   def deleteBandwidthRateLimit(callback: js.Function2[/* err */ AWSError, /* data */ DeleteBandwidthRateLimitOutput, Unit]): Request[DeleteBandwidthRateLimitOutput, AWSError] = js.native
   /**
-    * Deletes the bandwidth rate limits of a gateway. You can delete either the upload and download bandwidth rate limit, or you can delete both. If you delete only one of the limits, the other limit remains unchanged. To specify which gateway to work with, use the Amazon Resource Name (ARN) of the gateway in your request.
+    * Deletes the bandwidth rate limits of a gateway. You can delete either the upload and download bandwidth rate limit, or you can delete both. If you delete only one of the limits, the other limit remains unchanged. To specify which gateway to work with, use the Amazon Resource Name (ARN) of the gateway in your request. This operation is supported for the stored volume, cached volume and tape gateway types.
     */
   def deleteBandwidthRateLimit(params: DeleteBandwidthRateLimitInput): Request[DeleteBandwidthRateLimitOutput, AWSError] = js.native
   def deleteBandwidthRateLimit(
@@ -246,12 +246,12 @@ trait StorageGateway extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteBandwidthRateLimitOutput, Unit]
   ): Request[DeleteBandwidthRateLimitOutput, AWSError] = js.native
   /**
-    * Deletes Challenge-Handshake Authentication Protocol (CHAP) credentials for a specified iSCSI target and initiator pair.
+    * Deletes Challenge-Handshake Authentication Protocol (CHAP) credentials for a specified iSCSI target and initiator pair. This operation is supported in volume and tape gateway types.
     */
   def deleteChapCredentials(): Request[DeleteChapCredentialsOutput, AWSError] = js.native
   def deleteChapCredentials(callback: js.Function2[/* err */ AWSError, /* data */ DeleteChapCredentialsOutput, Unit]): Request[DeleteChapCredentialsOutput, AWSError] = js.native
   /**
-    * Deletes Challenge-Handshake Authentication Protocol (CHAP) credentials for a specified iSCSI target and initiator pair.
+    * Deletes Challenge-Handshake Authentication Protocol (CHAP) credentials for a specified iSCSI target and initiator pair. This operation is supported in volume and tape gateway types.
     */
   def deleteChapCredentials(params: DeleteChapCredentialsInput): Request[DeleteChapCredentialsOutput, AWSError] = js.native
   def deleteChapCredentials(
@@ -337,12 +337,25 @@ trait StorageGateway extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteVolumeOutput, Unit]
   ): Request[DeleteVolumeOutput, AWSError] = js.native
   /**
-    * Returns the bandwidth rate limits of a gateway. By default, these limits are not set, which means no bandwidth rate limiting is in effect. This operation only returns a value for a bandwidth rate limit only if the limit is set. If no limits are set for the gateway, then this operation returns only the gateway ARN in the response body. To specify which gateway to describe, use the Amazon Resource Name (ARN) of the gateway in your request.
+    * Returns information about the most recent High Availability monitoring test that was performed on the host in a cluster. If a test isn't performed, the status and start time in the response would be null.
+    */
+  def describeAvailabilityMonitorTest(): Request[DescribeAvailabilityMonitorTestOutput, AWSError] = js.native
+  def describeAvailabilityMonitorTest(callback: js.Function2[/* err */ AWSError, /* data */ DescribeAvailabilityMonitorTestOutput, Unit]): Request[DescribeAvailabilityMonitorTestOutput, AWSError] = js.native
+  /**
+    * Returns information about the most recent High Availability monitoring test that was performed on the host in a cluster. If a test isn't performed, the status and start time in the response would be null.
+    */
+  def describeAvailabilityMonitorTest(params: DescribeAvailabilityMonitorTestInput): Request[DescribeAvailabilityMonitorTestOutput, AWSError] = js.native
+  def describeAvailabilityMonitorTest(
+    params: DescribeAvailabilityMonitorTestInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeAvailabilityMonitorTestOutput, Unit]
+  ): Request[DescribeAvailabilityMonitorTestOutput, AWSError] = js.native
+  /**
+    * Returns the bandwidth rate limits of a gateway. By default, these limits are not set, which means no bandwidth rate limiting is in effect. This operation is supported for the stored volume, cached volume and tape gateway types.' This operation only returns a value for a bandwidth rate limit only if the limit is set. If no limits are set for the gateway, then this operation returns only the gateway ARN in the response body. To specify which gateway to describe, use the Amazon Resource Name (ARN) of the gateway in your request.
     */
   def describeBandwidthRateLimit(): Request[DescribeBandwidthRateLimitOutput, AWSError] = js.native
   def describeBandwidthRateLimit(callback: js.Function2[/* err */ AWSError, /* data */ DescribeBandwidthRateLimitOutput, Unit]): Request[DescribeBandwidthRateLimitOutput, AWSError] = js.native
   /**
-    * Returns the bandwidth rate limits of a gateway. By default, these limits are not set, which means no bandwidth rate limiting is in effect. This operation only returns a value for a bandwidth rate limit only if the limit is set. If no limits are set for the gateway, then this operation returns only the gateway ARN in the response body. To specify which gateway to describe, use the Amazon Resource Name (ARN) of the gateway in your request.
+    * Returns the bandwidth rate limits of a gateway. By default, these limits are not set, which means no bandwidth rate limiting is in effect. This operation is supported for the stored volume, cached volume and tape gateway types.' This operation only returns a value for a bandwidth rate limit only if the limit is set. If no limits are set for the gateway, then this operation returns only the gateway ARN in the response body. To specify which gateway to describe, use the Amazon Resource Name (ARN) of the gateway in your request.
     */
   def describeBandwidthRateLimit(params: DescribeBandwidthRateLimitInput): Request[DescribeBandwidthRateLimitOutput, AWSError] = js.native
   def describeBandwidthRateLimit(
@@ -376,12 +389,12 @@ trait StorageGateway extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeCachediSCSIVolumesOutput, Unit]
   ): Request[DescribeCachediSCSIVolumesOutput, AWSError] = js.native
   /**
-    * Returns an array of Challenge-Handshake Authentication Protocol (CHAP) credentials information for a specified iSCSI target, one for each target-initiator pair.
+    * Returns an array of Challenge-Handshake Authentication Protocol (CHAP) credentials information for a specified iSCSI target, one for each target-initiator pair. This operation is supported in the volume and tape gateway types.
     */
   def describeChapCredentials(): Request[DescribeChapCredentialsOutput, AWSError] = js.native
   def describeChapCredentials(callback: js.Function2[/* err */ AWSError, /* data */ DescribeChapCredentialsOutput, Unit]): Request[DescribeChapCredentialsOutput, AWSError] = js.native
   /**
-    * Returns an array of Challenge-Handshake Authentication Protocol (CHAP) credentials information for a specified iSCSI target, one for each target-initiator pair.
+    * Returns an array of Challenge-Handshake Authentication Protocol (CHAP) credentials information for a specified iSCSI target, one for each target-initiator pair. This operation is supported in the volume and tape gateway types.
     */
   def describeChapCredentials(params: DescribeChapCredentialsInput): Request[DescribeChapCredentialsOutput, AWSError] = js.native
   def describeChapCredentials(
@@ -558,12 +571,12 @@ trait StorageGateway extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeWorkingStorageOutput, Unit]
   ): Request[DescribeWorkingStorageOutput, AWSError] = js.native
   /**
-    * Disconnects a volume from an iSCSI connection and then detaches the volume from the specified gateway. Detaching and attaching a volume enables you to recover your data from one gateway to a different gateway without creating a snapshot. It also makes it easier to move your volumes from an on-premises gateway to a gateway hosted on an Amazon EC2 instance.
+    * Disconnects a volume from an iSCSI connection and then detaches the volume from the specified gateway. Detaching and attaching a volume enables you to recover your data from one gateway to a different gateway without creating a snapshot. It also makes it easier to move your volumes from an on-premises gateway to a gateway hosted on an Amazon EC2 instance. This operation is only supported in the volume gateway type.
     */
   def detachVolume(): Request[DetachVolumeOutput, AWSError] = js.native
   def detachVolume(callback: js.Function2[/* err */ AWSError, /* data */ DetachVolumeOutput, Unit]): Request[DetachVolumeOutput, AWSError] = js.native
   /**
-    * Disconnects a volume from an iSCSI connection and then detaches the volume from the specified gateway. Detaching and attaching a volume enables you to recover your data from one gateway to a different gateway without creating a snapshot. It also makes it easier to move your volumes from an on-premises gateway to a gateway hosted on an Amazon EC2 instance.
+    * Disconnects a volume from an iSCSI connection and then detaches the volume from the specified gateway. Detaching and attaching a volume enables you to recover your data from one gateway to a different gateway without creating a snapshot. It also makes it easier to move your volumes from an on-premises gateway to a gateway hosted on an Amazon EC2 instance. This operation is only supported in the volume gateway type.
     */
   def detachVolume(params: DetachVolumeInput): Request[DetachVolumeOutput, AWSError] = js.native
   def detachVolume(
@@ -636,12 +649,12 @@ trait StorageGateway extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListLocalDisksOutput, Unit]
   ): Request[ListLocalDisksOutput, AWSError] = js.native
   /**
-    * Lists the tags that have been added to the specified resource. This operation is only supported in the cached volume, stored volume and tape gateway type.
+    * Lists the tags that have been added to the specified resource. This operation is supported in storage gateways of all types.
     */
   def listTagsForResource(): Request[ListTagsForResourceOutput, AWSError] = js.native
   def listTagsForResource(callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceOutput, Unit]): Request[ListTagsForResourceOutput, AWSError] = js.native
   /**
-    * Lists the tags that have been added to the specified resource. This operation is only supported in the cached volume, stored volume and tape gateway type.
+    * Lists the tags that have been added to the specified resource. This operation is supported in storage gateways of all types.
     */
   def listTagsForResource(params: ListTagsForResourceInput): Request[ListTagsForResourceOutput, AWSError] = js.native
   def listTagsForResource(
@@ -714,12 +727,12 @@ trait StorageGateway extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ NotifyWhenUploadedOutput, Unit]
   ): Request[NotifyWhenUploadedOutput, AWSError] = js.native
   /**
-    * Refreshes the cache for the specified file share. This operation finds objects in the Amazon S3 bucket that were added, removed or replaced since the gateway last listed the bucket's contents and cached the results. This operation is only supported in the file gateway type. You can subscribe to be notified through an Amazon CloudWatch event when your RefreshCache operation completes. For more information, see Getting Notified About File Operations. When this API is called, it only initiates the refresh operation. When the API call completes and returns a success code, it doesn't necessarily mean that the file refresh has completed. You should use the refresh-complete notification to determine that the operation has completed before you check for new files on the gateway file share. You can subscribe to be notified through an CloudWatch event when your RefreshCache operation completes. 
+    * Refreshes the cache for the specified file share. This operation finds objects in the Amazon S3 bucket that were added, removed or replaced since the gateway last listed the bucket's contents and cached the results. This operation is only supported in the file gateway type. You can subscribe to be notified through an Amazon CloudWatch event when your RefreshCache operation completes. For more information, see Getting Notified About File Operations. When this API is called, it only initiates the refresh operation. When the API call completes and returns a success code, it doesn't necessarily mean that the file refresh has completed. You should use the refresh-complete notification to determine that the operation has completed before you check for new files on the gateway file share. You can subscribe to be notified through an CloudWatch event when your RefreshCache operation completes.  Throttle limit: This API is asynchronous so the gateway will accept no more than two refreshes at any time. We recommend using the refresh-complete CloudWatch event notification before issuing additional requests. For more information, see Getting Notified About File Operations. If you invoke the RefreshCache API when two requests are already being processed, any new request will cause an InvalidGatewayRequestException error because too many requests were sent to the server. For more information, see "https://docs.aws.amazon.com/storagegateway/latest/userguide/monitoring-file-gateway.html#get-notification".
     */
   def refreshCache(): Request[RefreshCacheOutput, AWSError] = js.native
   def refreshCache(callback: js.Function2[/* err */ AWSError, /* data */ RefreshCacheOutput, Unit]): Request[RefreshCacheOutput, AWSError] = js.native
   /**
-    * Refreshes the cache for the specified file share. This operation finds objects in the Amazon S3 bucket that were added, removed or replaced since the gateway last listed the bucket's contents and cached the results. This operation is only supported in the file gateway type. You can subscribe to be notified through an Amazon CloudWatch event when your RefreshCache operation completes. For more information, see Getting Notified About File Operations. When this API is called, it only initiates the refresh operation. When the API call completes and returns a success code, it doesn't necessarily mean that the file refresh has completed. You should use the refresh-complete notification to determine that the operation has completed before you check for new files on the gateway file share. You can subscribe to be notified through an CloudWatch event when your RefreshCache operation completes. 
+    * Refreshes the cache for the specified file share. This operation finds objects in the Amazon S3 bucket that were added, removed or replaced since the gateway last listed the bucket's contents and cached the results. This operation is only supported in the file gateway type. You can subscribe to be notified through an Amazon CloudWatch event when your RefreshCache operation completes. For more information, see Getting Notified About File Operations. When this API is called, it only initiates the refresh operation. When the API call completes and returns a success code, it doesn't necessarily mean that the file refresh has completed. You should use the refresh-complete notification to determine that the operation has completed before you check for new files on the gateway file share. You can subscribe to be notified through an CloudWatch event when your RefreshCache operation completes.  Throttle limit: This API is asynchronous so the gateway will accept no more than two refreshes at any time. We recommend using the refresh-complete CloudWatch event notification before issuing additional requests. For more information, see Getting Notified About File Operations. If you invoke the RefreshCache API when two requests are already being processed, any new request will cause an InvalidGatewayRequestException error because too many requests were sent to the server. For more information, see "https://docs.aws.amazon.com/storagegateway/latest/userguide/monitoring-file-gateway.html#get-notification".
     */
   def refreshCache(params: RefreshCacheInput): Request[RefreshCacheOutput, AWSError] = js.native
   def refreshCache(
@@ -727,12 +740,12 @@ trait StorageGateway extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ RefreshCacheOutput, Unit]
   ): Request[RefreshCacheOutput, AWSError] = js.native
   /**
-    * Removes one or more tags from the specified resource. This operation is only supported in the cached volume, stored volume and tape gateway types.
+    * Removes one or more tags from the specified resource. This operation is supported in storage gateways of all types.
     */
   def removeTagsFromResource(): Request[RemoveTagsFromResourceOutput, AWSError] = js.native
   def removeTagsFromResource(callback: js.Function2[/* err */ AWSError, /* data */ RemoveTagsFromResourceOutput, Unit]): Request[RemoveTagsFromResourceOutput, AWSError] = js.native
   /**
-    * Removes one or more tags from the specified resource. This operation is only supported in the cached volume, stored volume and tape gateway types.
+    * Removes one or more tags from the specified resource. This operation is supported in storage gateways of all types.
     */
   def removeTagsFromResource(params: RemoveTagsFromResourceInput): Request[RemoveTagsFromResourceOutput, AWSError] = js.native
   def removeTagsFromResource(
@@ -818,6 +831,19 @@ trait StorageGateway extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ShutdownGatewayOutput, Unit]
   ): Request[ShutdownGatewayOutput, AWSError] = js.native
   /**
+    * Start a test that verifies that the specified gateway is configured for High Availability monitoring in your host environment. This request only initiates the test and that a successful response only indicates that the test was started. It doesn't indicate that the test passed. For the status of the test, invoke the DescribeAvailabilityMonitorTest API.   Starting this test will cause your gateway to go offline for a brief period. 
+    */
+  def startAvailabilityMonitorTest(): Request[StartAvailabilityMonitorTestOutput, AWSError] = js.native
+  def startAvailabilityMonitorTest(callback: js.Function2[/* err */ AWSError, /* data */ StartAvailabilityMonitorTestOutput, Unit]): Request[StartAvailabilityMonitorTestOutput, AWSError] = js.native
+  /**
+    * Start a test that verifies that the specified gateway is configured for High Availability monitoring in your host environment. This request only initiates the test and that a successful response only indicates that the test was started. It doesn't indicate that the test passed. For the status of the test, invoke the DescribeAvailabilityMonitorTest API.   Starting this test will cause your gateway to go offline for a brief period. 
+    */
+  def startAvailabilityMonitorTest(params: StartAvailabilityMonitorTestInput): Request[StartAvailabilityMonitorTestOutput, AWSError] = js.native
+  def startAvailabilityMonitorTest(
+    params: StartAvailabilityMonitorTestInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ StartAvailabilityMonitorTestOutput, Unit]
+  ): Request[StartAvailabilityMonitorTestOutput, AWSError] = js.native
+  /**
     * Starts a gateway that you previously shut down (see ShutdownGateway). After the gateway starts, you can then make other API calls, your applications can read from or write to the gateway's storage volumes and you will be able to take snapshot backups.  When you make a request, you will get a 200 OK success response immediately. However, it might take some time for the gateway to be ready. You should call DescribeGatewayInformation and check the status before making any additional API calls. For more information, see ActivateGateway.  To specify which gateway to start, use the Amazon Resource Name (ARN) of the gateway in your request.
     */
   def startGateway(): Request[StartGatewayOutput, AWSError] = js.native
@@ -831,12 +857,12 @@ trait StorageGateway extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ StartGatewayOutput, Unit]
   ): Request[StartGatewayOutput, AWSError] = js.native
   /**
-    * Updates the bandwidth rate limits of a gateway. You can update both the upload and download bandwidth rate limit or specify only one of the two. If you don't set a bandwidth rate limit, the existing rate limit remains. By default, a gateway's bandwidth rate limits are not set. If you don't set any limit, the gateway does not have any limitations on its bandwidth usage and could potentially use the maximum available bandwidth. To specify which gateway to update, use the Amazon Resource Name (ARN) of the gateway in your request.
+    * Updates the bandwidth rate limits of a gateway. You can update both the upload and download bandwidth rate limit or specify only one of the two. If you don't set a bandwidth rate limit, the existing rate limit remains. This operation is supported for the stored volume, cached volume and tape gateway types.' By default, a gateway's bandwidth rate limits are not set. If you don't set any limit, the gateway does not have any limitations on its bandwidth usage and could potentially use the maximum available bandwidth. To specify which gateway to update, use the Amazon Resource Name (ARN) of the gateway in your request.
     */
   def updateBandwidthRateLimit(): Request[UpdateBandwidthRateLimitOutput, AWSError] = js.native
   def updateBandwidthRateLimit(callback: js.Function2[/* err */ AWSError, /* data */ UpdateBandwidthRateLimitOutput, Unit]): Request[UpdateBandwidthRateLimitOutput, AWSError] = js.native
   /**
-    * Updates the bandwidth rate limits of a gateway. You can update both the upload and download bandwidth rate limit or specify only one of the two. If you don't set a bandwidth rate limit, the existing rate limit remains. By default, a gateway's bandwidth rate limits are not set. If you don't set any limit, the gateway does not have any limitations on its bandwidth usage and could potentially use the maximum available bandwidth. To specify which gateway to update, use the Amazon Resource Name (ARN) of the gateway in your request.
+    * Updates the bandwidth rate limits of a gateway. You can update both the upload and download bandwidth rate limit or specify only one of the two. If you don't set a bandwidth rate limit, the existing rate limit remains. This operation is supported for the stored volume, cached volume and tape gateway types.' By default, a gateway's bandwidth rate limits are not set. If you don't set any limit, the gateway does not have any limitations on its bandwidth usage and could potentially use the maximum available bandwidth. To specify which gateway to update, use the Amazon Resource Name (ARN) of the gateway in your request.
     */
   def updateBandwidthRateLimit(params: UpdateBandwidthRateLimitInput): Request[UpdateBandwidthRateLimitOutput, AWSError] = js.native
   def updateBandwidthRateLimit(
@@ -844,12 +870,12 @@ trait StorageGateway extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateBandwidthRateLimitOutput, Unit]
   ): Request[UpdateBandwidthRateLimitOutput, AWSError] = js.native
   /**
-    * Updates the Challenge-Handshake Authentication Protocol (CHAP) credentials for a specified iSCSI target. By default, a gateway does not have CHAP enabled; however, for added security, you might use it.  When you update CHAP credentials, all existing connections on the target are closed and initiators must reconnect with the new credentials. 
+    * Updates the Challenge-Handshake Authentication Protocol (CHAP) credentials for a specified iSCSI target. By default, a gateway does not have CHAP enabled; however, for added security, you might use it. This operation is supported in the volume and tape gateway types.  When you update CHAP credentials, all existing connections on the target are closed and initiators must reconnect with the new credentials. 
     */
   def updateChapCredentials(): Request[UpdateChapCredentialsOutput, AWSError] = js.native
   def updateChapCredentials(callback: js.Function2[/* err */ AWSError, /* data */ UpdateChapCredentialsOutput, Unit]): Request[UpdateChapCredentialsOutput, AWSError] = js.native
   /**
-    * Updates the Challenge-Handshake Authentication Protocol (CHAP) credentials for a specified iSCSI target. By default, a gateway does not have CHAP enabled; however, for added security, you might use it.  When you update CHAP credentials, all existing connections on the target are closed and initiators must reconnect with the new credentials. 
+    * Updates the Challenge-Handshake Authentication Protocol (CHAP) credentials for a specified iSCSI target. By default, a gateway does not have CHAP enabled; however, for added security, you might use it. This operation is supported in the volume and tape gateway types.  When you update CHAP credentials, all existing connections on the target are closed and initiators must reconnect with the new credentials. 
     */
   def updateChapCredentials(params: UpdateChapCredentialsInput): Request[UpdateChapCredentialsOutput, AWSError] = js.native
   def updateChapCredentials(

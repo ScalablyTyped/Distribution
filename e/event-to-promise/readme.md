@@ -10,9 +10,9 @@ Create a promise waiting for an event
 | ------------------ | :-------------: |
 | Full name          | event-to-promise |
 | Keywords           | event, promise |
-| # releases         | 1 |
-| # dependents       | 49 |
-| # downloads        | 326811 |
+| # releases         | 0 |
+| # dependents       | 55 |
+| # downloads        | 684931 |
 | # stars            | 1 |
 
 ## Links

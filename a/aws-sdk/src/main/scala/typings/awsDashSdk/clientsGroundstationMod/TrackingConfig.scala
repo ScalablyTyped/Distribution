@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TrackingConfig extends js.Object {
   /**
     * Current setting for autotrack.
     */
-  var autotrack: Criticality
+  var autotrack: Criticality = js.native
 }
 
 object TrackingConfig {

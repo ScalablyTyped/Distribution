@@ -6,15 +6,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TableEventSubscriptionArgs extends js.Object {
   /**
     * The largest number of records that Lambda will retrieve from your event source at the time of invocation. Defaults to `100` for DynamoDB.
     */
-  val batchSize: js.UndefOr[Double] = js.undefined
+  val batchSize: js.UndefOr[Double] = js.native
   /**
     * The position in the stream where AWS Lambda should start reading. Must be one of either `TRIM_HORIZON` or `LATEST`.
     */
-  val startingPosition: TRIM_HORIZON | LATEST
+  val startingPosition: TRIM_HORIZON | LATEST = js.native
 }
 
 object TableEventSubscriptionArgs {

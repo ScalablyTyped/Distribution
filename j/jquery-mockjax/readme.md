@@ -10,9 +10,9 @@ The jQuery Mockjax Plugin provides a simple and extremely flexible interface for
 | ------------------ | :-------------: |
 | Full name          | jquery-mockjax |
 | Keywords           | ajax, mock, unit, testing, jquery-plugin, ecosystem:jquery |
-| # releases         | 5 |
+| # releases         | 4 |
 | # dependents       | 3 |
-| # downloads        | 905706 |
+| # downloads        | 534602 |
 | # stars            | 3 |
 
 ## Links

@@ -11,8 +11,8 @@ Microsoft SQL Server client for Node.js.
 | Full name          | mssql |
 | Keywords           | database, mssql, sql, server, msnodesql, sqlserver, tds, node-tds, tedious, node-sqlserver, sqlserver, msnodesqlv8, azure, node-mssql |
 | # releases         | 39 |
-| # dependents       | 374 |
-| # downloads        | 2792294 |
+| # dependents       | 457 |
+| # downloads        | 4232016 |
 | # stars            | 137 |
 
 ## Links

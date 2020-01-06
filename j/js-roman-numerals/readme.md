@@ -12,7 +12,7 @@ Roman Numerals - JS Library
 | Keywords           | - |
 | # releases         | 10 |
 | # dependents       | 0 |
-| # downloads        | 354 |
+| # downloads        | 625 |
 | # stars            | 0 |
 
 ## Links

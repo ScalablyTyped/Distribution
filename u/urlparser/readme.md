@@ -10,9 +10,9 @@ Url parser
 | ------------------ | :-------------: |
 | Full name          | urlparser |
 | Keywords           | url, parse |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 2942 |
+| # downloads        | 3378 |
 | # stars            | 2 |
 
 ## Links

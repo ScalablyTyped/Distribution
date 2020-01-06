@@ -1,7 +1,6 @@
 package typings.leafletDashEditable.leafletMod
 
-import typings.geojson.geojsonMod.LineString
-import typings.geojson.geojsonMod.MultiLineString
+import org.scalablytyped.runtime.TopLevel
 import typings.leaflet.leafletMod.LatLng
 import typings.leaflet.leafletMod.MarkerOptions
 import typings.leaflet.leafletMod.PolylineOptions
@@ -16,9 +15,9 @@ import scala.scalajs.js.annotation._
   * control editing of geometries. So you can easily build your own UI with your own needs and choices.
   */
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mixin.LeafletMixinEvents * / any */ @js.native
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Mixin.LeafletMixinEvents * / any */ @js.native
 trait Editable extends js.Object {
-  var currentPolygon: (typings.leaflet.leafletMod.Polyline[LineString | MultiLineString, _]) | typings.leaflet.leafletMod.Polygon[_] | typings.leaflet.leafletMod.Marker[_] = js.native
+  var currentPolygon: Polyline | Polygon | Marker = js.native
   /**
     * Options to pass to L.Editable when instanciating.
     */
@@ -32,26 +31,30 @@ trait Editable extends js.Object {
     * will follow the user mouse, and will have a final latlng on next click (or touch). If options is given,
     * it will be passed to the marker class constructor.
     */
-  def startMarker(): typings.leaflet.leafletMod.Marker[_] = js.native
-  def startMarker(latLng: LatLng): typings.leaflet.leafletMod.Marker[_] = js.native
-  def startMarker(latLng: LatLng, options: MarkerOptions): typings.leaflet.leafletMod.Marker[_] = js.native
+  def startMarker(): Marker = js.native
+  def startMarker(latLng: LatLng): Marker = js.native
+  def startMarker(latLng: LatLng, options: MarkerOptions): Marker = js.native
   /**
     * Start drawing a polygon. If latlng is given, a first point will be added. In any case, continuing on user
     * click. If options is given, it will be passed to the polygon class constructor.
     */
-  def startPolygon(): typings.leaflet.leafletMod.Polygon[_] = js.native
-  def startPolygon(latLng: LatLng): typings.leaflet.leafletMod.Polygon[_] = js.native
-  def startPolygon(latLng: LatLng, options: PolylineOptions): typings.leaflet.leafletMod.Polygon[_] = js.native
+  def startPolygon(): Polygon = js.native
+  def startPolygon(latLng: LatLng): Polygon = js.native
+  def startPolygon(latLng: LatLng, options: PolylineOptions): Polygon = js.native
   /**
     * Start drawing a polyline. If latlng is given, a first point will be added. In any case, continuing on user
     * click. If options is given, it will be passed to the polyline class constructor.
     */
-  def startPolyline(): typings.leaflet.leafletMod.Polyline[LineString | MultiLineString, _] = js.native
-  def startPolyline(latLng: LatLng): typings.leaflet.leafletMod.Polyline[LineString | MultiLineString, _] = js.native
-  def startPolyline(latLng: LatLng, options: PolylineOptions): typings.leaflet.leafletMod.Polyline[LineString | MultiLineString, _] = js.native
+  def startPolyline(): Polyline = js.native
+  def startPolyline(latLng: LatLng): Polyline = js.native
+  def startPolyline(latLng: LatLng, options: PolylineOptions): Polyline = js.native
   /**
     * When you need to stop any ongoing drawing, without needing to know which editor is active.
     */
   def stopDrawing(): Unit = js.native
 }
+
+@JSImport("leaflet", "Editable")
+@js.native
+object Editable extends TopLevel[EditableStatic]
 

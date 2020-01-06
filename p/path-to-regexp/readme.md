@@ -10,9 +10,9 @@ Express style path to RegExp utility
 | ------------------ | :-------------: |
 | Full name          | path-to-regexp |
 | Keywords           | express, regexp, route, routing |
-| # releases         | 8 |
-| # dependents       | 1846 |
-| # downloads        | 429083365 |
+| # releases         | 18 |
+| # dependents       | 2283 |
+| # downloads        | 632349731 |
 | # stars            | 112 |
 
 ## Links

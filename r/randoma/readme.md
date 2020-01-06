@@ -10,9 +10,9 @@ User-friendly pseudorandom number generator (PRNG)
 | ------------------ | :-------------: |
 | Full name          | randoma |
 | Keywords           | pseudorandom, number, generator, algorithm, random, integer, int, float, boolean, date, seed, seeded, prng, rng |
-| # releases         | 5 |
+| # releases         | 6 |
 | # dependents       | 3 |
-| # downloads        | 14918 |
+| # downloads        | 21600 |
 | # stars            | 0 |
 
 ## Links

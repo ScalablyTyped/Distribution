@@ -10,9 +10,9 @@ Clone a Readable stream, safely
 | ------------------ | :-------------: |
 | Full name          | cloneable-readable |
 | Keywords           | readable, stream, clone |
-| # releases         | 5 |
+| # releases         | 7 |
 | # dependents       | 7 |
-| # downloads        | 48924276 |
+| # downloads        | 65867319 |
 | # stars            | 4 |
 
 ## Links

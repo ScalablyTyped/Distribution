@@ -4,18 +4,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetTableResponse extends js.Object {
   /**
     * The Table object that defines the specified table.
     */
-  var Table: js.UndefOr[typings.awsDashSdk.clientsGlueMod.Table] = js.undefined
+  var Table: js.UndefOr[typings.awsDashSdk.clientsGlueMod.Table] = js.native
 }
 
 object GetTableResponse {
   @scala.inline
   def apply(Table: Table = null): GetTableResponse = {
     val __obj = js.Dynamic.literal()
-    if (Table != null) __obj.updateDynamic("Table")(Table)
+    if (Table != null) __obj.updateDynamic("Table")(Table.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTableResponse]
   }
 }

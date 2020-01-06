@@ -5,23 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PresetAudioCodecOptions extends js.Object {
   /**
     * The bit depth of a sample is how many bits of information are included in the audio samples. Valid values are `16` and `24`. (FLAC/PCM Only)
     */
-  var bitDepth: js.UndefOr[Input[String]] = js.undefined
+  var bitDepth: js.UndefOr[Input[String]] = js.native
   /**
     * The order the bits of a PCM sample are stored in. The supported value is LittleEndian. (PCM Only)
     */
-  var bitOrder: js.UndefOr[Input[String]] = js.undefined
+  var bitOrder: js.UndefOr[Input[String]] = js.native
   /**
     * If you specified AAC for Audio:Codec, choose the AAC profile for the output file.
     */
-  var profile: js.UndefOr[Input[String]] = js.undefined
+  var profile: js.UndefOr[Input[String]] = js.native
   /**
     * Whether audio samples are represented with negative and positive numbers (signed) or only positive numbers (unsigned). The supported value is Signed. (PCM Only)
     */
-  var signed: js.UndefOr[Input[String]] = js.undefined
+  var signed: js.UndefOr[Input[String]] = js.native
 }
 
 object PresetAudioCodecOptions {

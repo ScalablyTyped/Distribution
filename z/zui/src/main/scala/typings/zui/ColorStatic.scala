@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ColorStatic
-  extends Instantiable3[/* r */ Double, /* g */ Double, /* b */ Double, Color]
-     with Instantiable4[/* r */ Double, /* g */ Double, /* b */ Double, /* a */ Double, Color]
-     with Instantiable0[Color]
-     with Instantiable1[/* hexStrOrrgbColorOrRgbaColorOrName */ String, Color] {
+  extends Instantiable0[Color]
+     with Instantiable1[/* hexStrOrrgbColorOrRgbaColorOrName */ String, Color]
+     with Instantiable3[/* r */ Double, /* g */ Double, /* b */ Double, Color]
+     with Instantiable4[/* r */ Double, /* g */ Double, /* b */ Double, /* a */ Double, Color] {
   var names: js.Array[String] = js.native
   def isColor(str: String): Boolean = js.native
 }

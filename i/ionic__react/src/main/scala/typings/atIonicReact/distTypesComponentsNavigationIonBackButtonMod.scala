@@ -22,8 +22,8 @@ object distTypesComponentsNavigationIonBackButtonMod extends js.Object {
   
   @js.native
   object IonBackButton
-    extends Instantiable2[/* props */ Props, /* context */ js.Any, Anon_Callback]
-       with Instantiable1[/* props */ Props, Anon_Callback] {
+    extends Instantiable1[/* props */ Props, Anon_Callback]
+       with Instantiable2[/* props */ Props, /* context */ js.Any, Anon_Callback] {
     val contextType: Context[NavContextState] = js.native
     val displayName: String = js.native
   }

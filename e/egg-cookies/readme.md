@@ -11,8 +11,8 @@ cookies module for egg
 | Full name          | egg-cookies |
 | Keywords           | - |
 | # releases         | 6 |
-| # dependents       | 4 |
-| # downloads        | 217561 |
+| # dependents       | 5 |
+| # downloads        | 268709 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ Complete, framework-agnostic, compliant and well tested module for implementing 
 | ------------------ | :-------------: |
 | Full name          | oauth2-server |
 | Keywords           | oauth, oauth2 |
-| # releases         | 7 |
-| # dependents       | 52 |
-| # downloads        | 630554 |
+| # releases         | 5 |
+| # dependents       | 65 |
+| # downloads        | 802917 |
 | # stars            | 31 |
 
 ## Links

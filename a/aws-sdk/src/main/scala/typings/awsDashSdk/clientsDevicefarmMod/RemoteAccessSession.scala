@@ -4,91 +4,92 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RemoteAccessSession extends js.Object {
   /**
     * The Amazon Resource Name (ARN) of the remote access session.
     */
-  var arn: js.UndefOr[AmazonResourceName] = js.undefined
+  var arn: js.UndefOr[AmazonResourceName] = js.native
   /**
-    * The billing method of the remote access session. Possible values include METERED or UNMETERED. For more information about metered devices, see AWS Device Farm terminology."
+    * The billing method of the remote access session. Possible values include METERED or UNMETERED. For more information about metered devices, see AWS Device Farm terminology.
     */
-  var billingMethod: js.UndefOr[BillingMethod] = js.undefined
+  var billingMethod: js.UndefOr[BillingMethod] = js.native
   /**
-    * Unique identifier of your client for the remote access session. Only returned if remote debugging is enabled for the remote access session.  Remote debugging is no longer supported. 
+    * Unique identifier of your client for the remote access session. Only returned if remote debugging is enabled for the remote access session. Remote debugging is no longer supported.
     */
-  var clientId: js.UndefOr[ClientId] = js.undefined
+  var clientId: js.UndefOr[ClientId] = js.native
   /**
     * The date and time the remote access session was created.
     */
-  var created: js.UndefOr[DateTime] = js.undefined
+  var created: js.UndefOr[DateTime] = js.native
   /**
     * The device (phone or tablet) used in the remote access session.
     */
-  var device: js.UndefOr[Device] = js.undefined
+  var device: js.UndefOr[Device] = js.native
   /**
     * The number of minutes a device is used in a remote access session (including setup and teardown minutes).
     */
-  var deviceMinutes: js.UndefOr[DeviceMinutes] = js.undefined
+  var deviceMinutes: js.UndefOr[DeviceMinutes] = js.native
   /**
-    * Unique device identifier for the remote device. Only returned if remote debugging is enabled for the remote access session.  Remote debugging is no longer supported. 
+    * Unique device identifier for the remote device. Only returned if remote debugging is enabled for the remote access session. Remote debugging is no longer supported.
     */
-  var deviceUdid: js.UndefOr[String] = js.undefined
+  var deviceUdid: js.UndefOr[String] = js.native
   /**
     * The endpoint for the remote access sesssion.
     */
-  var endpoint: js.UndefOr[String] = js.undefined
+  var endpoint: js.UndefOr[String] = js.native
   /**
-    * IP address of the EC2 host where you need to connect to remotely debug devices. Only returned if remote debugging is enabled for the remote access session.  Remote debugging is no longer supported. 
+    * IP address of the EC2 host where you need to connect to remotely debug devices. Only returned if remote debugging is enabled for the remote access session. Remote debugging is no longer supported.
     */
-  var hostAddress: js.UndefOr[HostAddress] = js.undefined
+  var hostAddress: js.UndefOr[HostAddress] = js.native
   /**
-    * The Amazon Resource Name (ARN) of the instance.
+    * The ARN of the instance.
     */
-  var instanceArn: js.UndefOr[AmazonResourceName] = js.undefined
+  var instanceArn: js.UndefOr[AmazonResourceName] = js.native
   /**
-    * The interaction mode of the remote access session. Valid values are:   INTERACTIVE: You can interact with the iOS device by viewing, touching, and rotating the screen. You cannot run XCUITest framework-based tests in this mode.   NO_VIDEO: You are connected to the device but cannot interact with it or view the screen. This mode has the fastest test execution speed. You can run XCUITest framework-based tests in this mode.   VIDEO_ONLY: You can view the screen but cannot touch or rotate it. You can run XCUITest framework-based tests and watch the screen in this mode.  
+    * The interaction mode of the remote access session. Valid values are:   INTERACTIVE: You can interact with the iOS device by viewing, touching, and rotating the screen. You cannot run XCUITest framework-based tests in this mode.   NO_VIDEO: You are connected to the device, but cannot interact with it or view the screen. This mode has the fastest test execution speed. You can run XCUITest framework-based tests in this mode.   VIDEO_ONLY: You can view the screen, but cannot touch or rotate it. You can run XCUITest framework-based tests and watch the screen in this mode.  
     */
-  var interactionMode: js.UndefOr[InteractionMode] = js.undefined
+  var interactionMode: js.UndefOr[InteractionMode] = js.native
   /**
     * A message about the remote access session.
     */
-  var message: js.UndefOr[Message] = js.undefined
+  var message: js.UndefOr[Message] = js.native
   /**
     * The name of the remote access session.
     */
-  var name: js.UndefOr[Name] = js.undefined
+  var name: js.UndefOr[Name] = js.native
   /**
-    * This flag is set to true if remote debugging is enabled for the remote access session.  Remote debugging is no longer supported. 
+    * This flag is set to true if remote debugging is enabled for the remote access session. Remote debugging is no longer supported.
     */
-  var remoteDebugEnabled: js.UndefOr[Boolean] = js.undefined
+  var remoteDebugEnabled: js.UndefOr[Boolean] = js.native
   /**
-    * The Amazon Resource Name (ARN) for the app to be recorded in the remote access session.
+    * The ARN for the app to be recorded in the remote access session.
     */
-  var remoteRecordAppArn: js.UndefOr[AmazonResourceName] = js.undefined
+  var remoteRecordAppArn: js.UndefOr[AmazonResourceName] = js.native
   /**
     * This flag is set to true if remote recording is enabled for the remote access session.
     */
-  var remoteRecordEnabled: js.UndefOr[Boolean] = js.undefined
+  var remoteRecordEnabled: js.UndefOr[Boolean] = js.native
   /**
-    * The result of the remote access session. Can be any of the following:   PENDING: A pending condition.   PASSED: A passing condition.   WARNED: A warning condition.   FAILED: A failed condition.   SKIPPED: A skipped condition.   ERRORED: An error condition.   STOPPED: A stopped condition.  
+    * The result of the remote access session. Can be any of the following:   PENDING.   PASSED.   WARNED.   FAILED.   SKIPPED.   ERRORED.   STOPPED.  
     */
-  var result: js.UndefOr[ExecutionResult] = js.undefined
+  var result: js.UndefOr[ExecutionResult] = js.native
   /**
-    * When set to true, for private devices, Device Farm will not sign your app again. For public devices, Device Farm always signs your apps again and this parameter has no effect. For more information about how Device Farm re-signs your app(s), see Do you modify my app? in the AWS Device Farm FAQs.
+    * When set to true, for private devices, Device Farm does not sign your app again. For public devices, Device Farm always signs your apps again. For more information about how Device Farm re-signs your apps, see Do you modify my app? in the AWS Device Farm FAQs.
     */
-  var skipAppResign: js.UndefOr[SkipAppResign] = js.undefined
+  var skipAppResign: js.UndefOr[SkipAppResign] = js.native
   /**
     * The date and time the remote access session was started.
     */
-  var started: js.UndefOr[DateTime] = js.undefined
+  var started: js.UndefOr[DateTime] = js.native
   /**
-    * The status of the remote access session. Can be any of the following:   PENDING: A pending status.   PENDING_CONCURRENCY: A pending concurrency status.   PENDING_DEVICE: A pending device status.   PROCESSING: A processing status.   SCHEDULING: A scheduling status.   PREPARING: A preparing status.   RUNNING: A running status.   COMPLETED: A completed status.   STOPPING: A stopping status.  
+    * The status of the remote access session. Can be any of the following:   PENDING.   PENDING_CONCURRENCY.   PENDING_DEVICE.   PROCESSING.   SCHEDULING.   PREPARING.   RUNNING.   COMPLETED.   STOPPING.  
     */
-  var status: js.UndefOr[ExecutionStatus] = js.undefined
+  var status: js.UndefOr[ExecutionStatus] = js.native
   /**
     * The date and time the remote access session was stopped.
     */
-  var stopped: js.UndefOr[DateTime] = js.undefined
+  var stopped: js.UndefOr[DateTime] = js.native
 }
 
 object RemoteAccessSession {
@@ -117,27 +118,27 @@ object RemoteAccessSession {
     stopped: DateTime = null
   ): RemoteAccessSession = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn)
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
     if (billingMethod != null) __obj.updateDynamic("billingMethod")(billingMethod.asInstanceOf[js.Any])
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
-    if (created != null) __obj.updateDynamic("created")(created)
-    if (device != null) __obj.updateDynamic("device")(device)
-    if (deviceMinutes != null) __obj.updateDynamic("deviceMinutes")(deviceMinutes)
-    if (deviceUdid != null) __obj.updateDynamic("deviceUdid")(deviceUdid)
-    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint)
-    if (hostAddress != null) __obj.updateDynamic("hostAddress")(hostAddress)
-    if (instanceArn != null) __obj.updateDynamic("instanceArn")(instanceArn)
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
+    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
+    if (device != null) __obj.updateDynamic("device")(device.asInstanceOf[js.Any])
+    if (deviceMinutes != null) __obj.updateDynamic("deviceMinutes")(deviceMinutes.asInstanceOf[js.Any])
+    if (deviceUdid != null) __obj.updateDynamic("deviceUdid")(deviceUdid.asInstanceOf[js.Any])
+    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
+    if (hostAddress != null) __obj.updateDynamic("hostAddress")(hostAddress.asInstanceOf[js.Any])
+    if (instanceArn != null) __obj.updateDynamic("instanceArn")(instanceArn.asInstanceOf[js.Any])
     if (interactionMode != null) __obj.updateDynamic("interactionMode")(interactionMode.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message)
-    if (name != null) __obj.updateDynamic("name")(name)
-    if (!js.isUndefined(remoteDebugEnabled)) __obj.updateDynamic("remoteDebugEnabled")(remoteDebugEnabled)
-    if (remoteRecordAppArn != null) __obj.updateDynamic("remoteRecordAppArn")(remoteRecordAppArn)
-    if (!js.isUndefined(remoteRecordEnabled)) __obj.updateDynamic("remoteRecordEnabled")(remoteRecordEnabled)
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (!js.isUndefined(remoteDebugEnabled)) __obj.updateDynamic("remoteDebugEnabled")(remoteDebugEnabled.asInstanceOf[js.Any])
+    if (remoteRecordAppArn != null) __obj.updateDynamic("remoteRecordAppArn")(remoteRecordAppArn.asInstanceOf[js.Any])
+    if (!js.isUndefined(remoteRecordEnabled)) __obj.updateDynamic("remoteRecordEnabled")(remoteRecordEnabled.asInstanceOf[js.Any])
     if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipAppResign)) __obj.updateDynamic("skipAppResign")(skipAppResign)
-    if (started != null) __obj.updateDynamic("started")(started)
+    if (!js.isUndefined(skipAppResign)) __obj.updateDynamic("skipAppResign")(skipAppResign.asInstanceOf[js.Any])
+    if (started != null) __obj.updateDynamic("started")(started.asInstanceOf[js.Any])
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (stopped != null) __obj.updateDynamic("stopped")(stopped)
+    if (stopped != null) __obj.updateDynamic("stopped")(stopped.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteAccessSession]
   }
 }

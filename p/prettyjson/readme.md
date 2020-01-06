@@ -10,8 +10,8 @@ Package for formatting JSON data in a coloured YAML-style, perfect for CLI outpu
 | Full name          | prettyjson |
 | Keywords           | json, cli, formatting, colors |
 | # releases         | 1 |
-| # dependents       | 639 |
-| # downloads        | 10565930 |
+| # dependents       | 699 |
+| # downloads        | 14462342 |
 | # stars            | 55 |
 
 ## Links

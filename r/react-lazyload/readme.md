@@ -10,9 +10,9 @@ Lazyload your components, images or anything where performance matters.
 | ------------------ | :-------------: |
 | Full name          | react-lazyload |
 | Keywords           | react-component, react, lazyload |
-| # releases         | 6 |
-| # dependents       | 64 |
-| # downloads        | 3082778 |
+| # releases         | 9 |
+| # dependents       | 104 |
+| # downloads        | 5719553 |
 | # stars            | 7 |
 
 ## Links

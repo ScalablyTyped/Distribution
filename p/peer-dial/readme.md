@@ -11,8 +11,8 @@ Nodejs implementation of the Discovery and Launch Protocol DIAL
 | Full name          | peer-dial |
 | Keywords           | ssdp, upnp, nsd, discovery, launch, dial, multiscreen, chromecast |
 | # releases         | 2 |
-| # dependents       | 2 |
-| # downloads        | 2491 |
+| # dependents       | 1 |
+| # downloads        | 9082 |
 | # stars            | 1 |
 
 ## Links

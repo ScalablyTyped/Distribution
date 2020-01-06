@@ -4,15 +4,15 @@
 Typings are for version 2.5
 
 ## Library description:
-a simple collection of 2d collision/intersects functions, supporting points, circles, lines, axis-aligned boxes, and polygons (convex)
+a simple collection of 2d collision/intersects functions, supporting points, circles, circle outlines (circumference), lines, axis-aligned boxes, and polygons (convex)
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | intersects |
 | Keywords           | - |
-| # releases         | 18 |
+| # releases         | 21 |
 | # dependents       | 2 |
-| # downloads        | 74556 |
+| # downloads        | 220502 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ Highly customizable react component for numbers
 | ------------------ | :-------------: |
 | Full name          | react-dynamic-number |
 | Keywords           | react, component, number, format, comma, dot, number separator, thousand separator, decimal separator |
-| # releases         | 7 |
-| # dependents       | 1 |
-| # downloads        | 31583 |
+| # releases         | 0 |
+| # dependents       | 0 |
+| # downloads        | 27363 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ Fast, fault-tolerant, cross-platform, disk-based, data-agnostic, content-address
 | ------------------ | :-------------: |
 | Full name          | cacache |
 | Keywords           | cache, caching, content-addressable, sri, sri hash, subresource integrity, cache, storage, store, file store, filesystem, disk cache, disk storage |
-| # releases         | 20 |
-| # dependents       | 88 |
-| # downloads        | 277279252 |
+| # releases         | 19 |
+| # dependents       | 118 |
+| # downloads        | 421451419 |
 | # stars            | 9 |
 
 ## Links

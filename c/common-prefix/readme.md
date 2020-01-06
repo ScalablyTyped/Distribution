@@ -11,8 +11,8 @@ Retrieve the common prefix across multiple strings
 | Full name          | common-prefix |
 | Keywords           | common, prefix, string, start, first, same |
 | # releases         | 0 |
-| # dependents       | 20 |
-| # downloads        | 143742 |
+| # dependents       | 23 |
+| # downloads        | 446187 |
 | # stars            | 1 |
 
 ## Links

@@ -5,52 +5,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetStackResult extends js.Object {
   /**
     * A list of capabilities
     */
-  val capabilities: js.Array[String]
+  val capabilities: js.Array[String] = js.native
   /**
     * Description of the stack
     */
-  val description: String
+  val description: String = js.native
   /**
     * Whether the rollback of the stack is disabled when stack creation fails
     */
-  val disableRollback: Boolean
+  val disableRollback: Boolean = js.native
   /**
     * The ARN of the IAM role used to create the stack.
     */
-  val iamRoleArn: String
+  val iamRoleArn: String = js.native
   /**
     * id is the provider-assigned unique ID for this managed resource.
     */
-  val id: String
-  val name: String
+  val id: String = js.native
+  val name: String = js.native
   /**
     * A list of SNS topic ARNs to publish stack related events
     */
-  val notificationArns: js.Array[String]
+  val notificationArns: js.Array[String] = js.native
   /**
     * A map of outputs from the stack.
     */
-  val outputs: StringDictionary[js.Any]
+  val outputs: StringDictionary[js.Any] = js.native
   /**
     * A map of parameters that specify input parameters for the stack.
     */
-  val parameters: StringDictionary[js.Any]
+  val parameters: StringDictionary[js.Any] = js.native
   /**
     * A map of tags associated with this stack.
     */
-  val tags: StringDictionary[js.Any]
+  val tags: StringDictionary[js.Any] = js.native
   /**
     * Structure containing the template body.
     */
-  val templateBody: String
+  val templateBody: String = js.native
   /**
     * The amount of time that can pass before the stack status becomes `CREATE_FAILED`
     */
-  val timeoutInMinutes: Double
+  val timeoutInMinutes: Double = js.native
 }
 
 object GetStackResult {
@@ -69,7 +70,7 @@ object GetStackResult {
     templateBody: String,
     timeoutInMinutes: Double
   ): GetStackResult = {
-    val __obj = js.Dynamic.literal(capabilities = capabilities, description = description, disableRollback = disableRollback, iamRoleArn = iamRoleArn, id = id, name = name, notificationArns = notificationArns, outputs = outputs, parameters = parameters, tags = tags, templateBody = templateBody, timeoutInMinutes = timeoutInMinutes)
+    val __obj = js.Dynamic.literal(capabilities = capabilities.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], disableRollback = disableRollback.asInstanceOf[js.Any], iamRoleArn = iamRoleArn.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], notificationArns = notificationArns.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], templateBody = templateBody.asInstanceOf[js.Any], timeoutInMinutes = timeoutInMinutes.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetStackResult]
   }

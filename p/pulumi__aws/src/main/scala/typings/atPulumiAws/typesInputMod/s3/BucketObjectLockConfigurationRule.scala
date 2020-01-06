@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BucketObjectLockConfigurationRule extends js.Object {
   /**
     * The default retention period that you want to apply to new objects placed in this bucket.
     */
-  var defaultRetention: Input[BucketObjectLockConfigurationRuleDefaultRetention]
+  var defaultRetention: Input[BucketObjectLockConfigurationRuleDefaultRetention] = js.native
 }
 
 object BucketObjectLockConfigurationRule {

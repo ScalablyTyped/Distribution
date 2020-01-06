@@ -11,8 +11,8 @@ A Transducers implementation for JavaScript
 | Full name          | transducers-js |
 | Keywords           | underscore, lodash, functional, util, server, client, browser |
 | # releases         | 0 |
-| # dependents       | 13 |
-| # downloads        | 78482 |
+| # dependents       | 16 |
+| # downloads        | 227035 |
 | # stars            | 3 |
 
 ## Links

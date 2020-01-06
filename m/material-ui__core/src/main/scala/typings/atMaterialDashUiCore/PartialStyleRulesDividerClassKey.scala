@@ -6,12 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/Divider.DividerClassKey>> */
+@js.native
 trait PartialStyleRulesDividerClassKey extends js.Object {
-  var absolute: js.UndefOr[CSSProperties] = js.undefined
-  var inset: js.UndefOr[CSSProperties] = js.undefined
-  var light: js.UndefOr[CSSProperties] = js.undefined
-  var middle: js.UndefOr[CSSProperties] = js.undefined
-  var root: js.UndefOr[CSSProperties] = js.undefined
+  var absolute: js.UndefOr[CSSProperties] = js.native
+  var inset: js.UndefOr[CSSProperties] = js.native
+  var light: js.UndefOr[CSSProperties] = js.native
+  var middle: js.UndefOr[CSSProperties] = js.native
+  var root: js.UndefOr[CSSProperties] = js.native
 }
 
 object PartialStyleRulesDividerClassKey {

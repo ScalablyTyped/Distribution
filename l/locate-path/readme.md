@@ -10,9 +10,9 @@ Get the first path that exists on disk of multiple paths
 | ------------------ | :-------------: |
 | Full name          | locate-path |
 | Keywords           | locate, path, paths, file, files, exists, find, finder, search, searcher, array, iterable, iterator |
-| # releases         | 1 |
-| # dependents       | 55 |
-| # downloads        | 341813186 |
+| # releases         | 4 |
+| # dependents       | 67 |
+| # downloads        | 725608043 |
 | # stars            | 1 |
 
 ## Links

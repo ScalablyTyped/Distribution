@@ -15,8 +15,8 @@ class VirtualTimeScheduler ()
   def this(SchedulerAction: Instantiable2[
         /* scheduler */ AsyncScheduler, 
         /* work */ js.ThisFunction1[
-          /* this */ SchedulerAction[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any], 
-          /* state */ js.UndefOr[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any], 
+          /* this */ SchedulerAction[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
+          /* state */ js.UndefOr[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
           Unit
         ], 
         AsyncAction[js.Object]
@@ -25,8 +25,8 @@ class VirtualTimeScheduler ()
     SchedulerAction: Instantiable2[
         /* scheduler */ AsyncScheduler, 
         /* work */ js.ThisFunction1[
-          /* this */ SchedulerAction[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any], 
-          /* state */ js.UndefOr[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any], 
+          /* this */ SchedulerAction[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
+          /* state */ js.UndefOr[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
           Unit
         ], 
         AsyncAction[js.Object]

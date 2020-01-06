@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InventoryDestination extends js.Object {
   /**
     * The S3 bucket configuration where inventory results are published (documented below).
     */
-  var bucket: Input[InventoryDestinationBucket]
+  var bucket: Input[InventoryDestinationBucket] = js.native
 }
 
 object InventoryDestination {

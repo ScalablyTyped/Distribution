@@ -10,9 +10,9 @@ A finite state machine library
 | ------------------ | :-------------: |
 | Full name          | javascript-state-machine |
 | Keywords           | finite state machine, state machine, server, client |
-| # releases         | 3 |
-| # dependents       | 42 |
-| # downloads        | 763500 |
+| # releases         | 2 |
+| # dependents       | 52 |
+| # downloads        | 1284075 |
 | # stars            | 19 |
 
 ## Links

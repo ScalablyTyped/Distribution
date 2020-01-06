@@ -10,9 +10,9 @@ Automatic breadcrumbs for react-router
 | ------------------ | :-------------: |
 | Full name          | react-breadcrumbs |
 | Keywords           | react-component, breadcrumbs, react, trail |
-| # releases         | 7 |
+| # releases         | 5 |
 | # dependents       | 8 |
-| # downloads        | 296923 |
+| # downloads        | 724411 |
 | # stars            | 4 |
 
 ## Links

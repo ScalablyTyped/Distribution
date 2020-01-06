@@ -5,35 +5,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait HsmState extends js.Object {
   /**
     * The IDs of AZ in which HSM module will be located. Do not use together with subnet_id.
     */
-  val availabilityZone: js.UndefOr[Input[String]] = js.undefined
+  val availabilityZone: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of Cloud HSM v2 cluster to which HSM will be added.
     */
-  val clusterId: js.UndefOr[Input[String]] = js.undefined
+  val clusterId: js.UndefOr[Input[String]] = js.native
   /**
     * The id of the ENI interface allocated for HSM module.
     */
-  val hsmEniId: js.UndefOr[Input[String]] = js.undefined
+  val hsmEniId: js.UndefOr[Input[String]] = js.native
   /**
     * The id of the HSM module.
     */
-  val hsmId: js.UndefOr[Input[String]] = js.undefined
+  val hsmId: js.UndefOr[Input[String]] = js.native
   /**
     * The state of the HSM module.
     */
-  val hsmState: js.UndefOr[Input[String]] = js.undefined
+  val hsmState: js.UndefOr[Input[String]] = js.native
   /**
     * The IP address of HSM module. Must be within the CIDR of selected subnet.
     */
-  val ipAddress: js.UndefOr[Input[String]] = js.undefined
+  val ipAddress: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of subnet in which HSM module will be located.
     */
-  val subnetId: js.UndefOr[Input[String]] = js.undefined
+  val subnetId: js.UndefOr[Input[String]] = js.native
 }
 
 object HsmState {

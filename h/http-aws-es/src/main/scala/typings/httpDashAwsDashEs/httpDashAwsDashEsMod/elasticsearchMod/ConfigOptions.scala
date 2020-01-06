@@ -1,20 +1,17 @@
 package typings.httpDashAwsDashEs.httpDashAwsDashEsMod.elasticsearchMod
 
+import typings.awsDashSdk.awsDashSdkMod.Config
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ConfigOptions extends js.Object {
-  var awsConfig: js.UndefOr[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AWS.Config */ js.Any
-  ] = js.undefined
+  var awsConfig: js.UndefOr[Config] = js.undefined
 }
 
 object ConfigOptions {
   @scala.inline
-  def apply(
-    awsConfig: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AWS.Config */ js.Any = null
-  ): ConfigOptions = {
+  def apply(awsConfig: Config = null): ConfigOptions = {
     val __obj = js.Dynamic.literal()
     if (awsConfig != null) __obj.updateDynamic("awsConfig")(awsConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigOptions]

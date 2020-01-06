@@ -12,7 +12,7 @@ Small shim providing `new Proxy(target, handler)`
 | Keywords           | harmony, proxy, trap, es6 |
 | # releases         | 0 |
 | # dependents       | 34 |
-| # downloads        | 213771 |
+| # downloads        | 131286 |
 | # stars            | 2 |
 
 ## Links

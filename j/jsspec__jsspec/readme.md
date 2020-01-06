@@ -4,15 +4,15 @@
 Typings are for version 0.0
 
 ## Library description:
-JSSpec
+JSSpec - contextualised test runner for javascript
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @jsspec/jsspec |
 | Keywords           | spec, test, jsspec |
-| # releases         | 3 |
+| # releases         | 17 |
 | # dependents       | 0 |
-| # downloads        | 16 |
+| # downloads        | 703 |
 | # stars            | 0 |
 
 ## Links

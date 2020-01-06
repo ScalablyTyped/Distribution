@@ -10,9 +10,9 @@ JavaScript client for Sentry
 | ------------------ | :-------------: |
 | Full name          | raven-js |
 | Keywords           | debugging, errors, exceptions, logging, raven, sentry |
-| # releases         | 33 |
-| # dependents       | 169 |
-| # downloads        | 20821532 |
+| # releases         | 24 |
+| # dependents       | 182 |
+| # downloads        | 21390270 |
 | # stars            | 11 |
 
 ## Links

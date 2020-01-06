@@ -5,12 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ResourceDataSyncS3Destination extends js.Object {
-  var bucketName: Input[String]
-  var kmsKeyArn: js.UndefOr[Input[String]] = js.undefined
-  var prefix: js.UndefOr[Input[String]] = js.undefined
-  var region: Input[String]
-  var syncFormat: js.UndefOr[Input[String]] = js.undefined
+  var bucketName: Input[String] = js.native
+  var kmsKeyArn: js.UndefOr[Input[String]] = js.native
+  var prefix: js.UndefOr[Input[String]] = js.native
+  var region: Input[String] = js.native
+  var syncFormat: js.UndefOr[Input[String]] = js.native
 }
 
 object ResourceDataSyncS3Destination {

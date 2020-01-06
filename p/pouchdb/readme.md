@@ -10,9 +10,9 @@ PouchDB is a pocket-sized database
 | ------------------ | :-------------: |
 | Full name          | pouchdb |
 | Keywords           | db, couchdb, pouchdb |
-| # releases         | 12 |
-| # dependents       | 342 |
-| # downloads        | 767820 |
+| # releases         | 8 |
+| # dependents       | 389 |
+| # downloads        | 748252 |
 | # stars            | 50 |
 
 ## Links

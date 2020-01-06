@@ -145,12 +145,12 @@ trait SSM extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreatePatchBaselineResult, Unit]
   ): Request[CreatePatchBaselineResult, AWSError] = js.native
   /**
-    * Creates a resource data sync configuration to a single bucket in Amazon S3. This is an asynchronous operation that returns immediately. After a successful initial sync is completed, the system continuously syncs data to the Amazon S3 bucket. To check the status of the sync, use the ListResourceDataSync. By default, data is not encrypted in Amazon S3. We strongly recommend that you enable encryption in Amazon S3 to ensure secure data storage. We also recommend that you secure access to the Amazon S3 bucket by creating a restrictive bucket policy. For more information, see Configuring Resource Data Sync for Inventory in the AWS Systems Manager User Guide.
+    * A resource data sync helps you view data from multiple sources in a single location. Systems Manager offers two types of resource data sync: SyncToDestination and SyncFromSource. You can configure Systems Manager Inventory to use the SyncToDestination type to synchronize Inventory data from multiple AWS Regions to a single Amazon S3 bucket. For more information, see Configuring Resource Data Sync for Inventory in the AWS Systems Manager User Guide. You can configure Systems Manager Explorer to use the SyncToDestination type to synchronize operational work items (OpsItems) and operational data (OpsData) from multiple AWS Regions to a single Amazon S3 bucket. You can also configure Explorer to use the SyncFromSource type. This type synchronizes OpsItems and OpsData from multiple AWS accounts and Regions by using AWS Organizations. For more information, see Setting Up Explorer to Display Data from Multiple Accounts and Regions in the AWS Systems Manager User Guide. A resource data sync is an asynchronous operation that returns immediately. After a successful initial sync is completed, the system continuously syncs data. To check the status of a sync, use the ListResourceDataSync.  By default, data is not encrypted in Amazon S3. We strongly recommend that you enable encryption in Amazon S3 to ensure secure data storage. We also recommend that you secure access to the Amazon S3 bucket by creating a restrictive bucket policy.  
     */
   def createResourceDataSync(): Request[CreateResourceDataSyncResult, AWSError] = js.native
   def createResourceDataSync(callback: js.Function2[/* err */ AWSError, /* data */ CreateResourceDataSyncResult, Unit]): Request[CreateResourceDataSyncResult, AWSError] = js.native
   /**
-    * Creates a resource data sync configuration to a single bucket in Amazon S3. This is an asynchronous operation that returns immediately. After a successful initial sync is completed, the system continuously syncs data to the Amazon S3 bucket. To check the status of the sync, use the ListResourceDataSync. By default, data is not encrypted in Amazon S3. We strongly recommend that you enable encryption in Amazon S3 to ensure secure data storage. We also recommend that you secure access to the Amazon S3 bucket by creating a restrictive bucket policy. For more information, see Configuring Resource Data Sync for Inventory in the AWS Systems Manager User Guide.
+    * A resource data sync helps you view data from multiple sources in a single location. Systems Manager offers two types of resource data sync: SyncToDestination and SyncFromSource. You can configure Systems Manager Inventory to use the SyncToDestination type to synchronize Inventory data from multiple AWS Regions to a single Amazon S3 bucket. For more information, see Configuring Resource Data Sync for Inventory in the AWS Systems Manager User Guide. You can configure Systems Manager Explorer to use the SyncToDestination type to synchronize operational work items (OpsItems) and operational data (OpsData) from multiple AWS Regions to a single Amazon S3 bucket. You can also configure Explorer to use the SyncFromSource type. This type synchronizes OpsItems and OpsData from multiple AWS accounts and Regions by using AWS Organizations. For more information, see Setting Up Explorer to Display Data from Multiple Accounts and Regions in the AWS Systems Manager User Guide. A resource data sync is an asynchronous operation that returns immediately. After a successful initial sync is completed, the system continuously syncs data. To check the status of a sync, use the ListResourceDataSync.  By default, data is not encrypted in Amazon S3. We strongly recommend that you enable encryption in Amazon S3 to ensure secure data storage. We also recommend that you secure access to the Amazon S3 bucket by creating a restrictive bucket policy.  
     */
   def createResourceDataSync(params: CreateResourceDataSyncRequest): Request[CreateResourceDataSyncResult, AWSError] = js.native
   def createResourceDataSync(
@@ -262,12 +262,12 @@ trait SSM extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeletePatchBaselineResult, Unit]
   ): Request[DeletePatchBaselineResult, AWSError] = js.native
   /**
-    * Deletes a Resource Data Sync configuration. After the configuration is deleted, changes to inventory data on managed instances are no longer synced with the target Amazon S3 bucket. Deleting a sync configuration does not delete data in the target Amazon S3 bucket.
+    * Deletes a Resource Data Sync configuration. After the configuration is deleted, changes to data on managed instances are no longer synced to or from the target. Deleting a sync configuration does not delete data.
     */
   def deleteResourceDataSync(): Request[DeleteResourceDataSyncResult, AWSError] = js.native
   def deleteResourceDataSync(callback: js.Function2[/* err */ AWSError, /* data */ DeleteResourceDataSyncResult, Unit]): Request[DeleteResourceDataSyncResult, AWSError] = js.native
   /**
-    * Deletes a Resource Data Sync configuration. After the configuration is deleted, changes to inventory data on managed instances are no longer synced with the target Amazon S3 bucket. Deleting a sync configuration does not delete data in the target Amazon S3 bucket.
+    * Deletes a Resource Data Sync configuration. After the configuration is deleted, changes to data on managed instances are no longer synced to or from the target. Deleting a sync configuration does not delete data.
     */
   def deleteResourceDataSync(params: DeleteResourceDataSyncRequest): Request[DeleteResourceDataSyncResult, AWSError] = js.native
   def deleteResourceDataSync(
@@ -703,12 +703,12 @@ trait SSM extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeOpsItemsResponse, Unit]
   ): Request[DescribeOpsItemsResponse, AWSError] = js.native
   /**
-    * Get information about a parameter. Request results are returned on a best-effort basis. If you specify MaxResults in the request, the response includes information up to the limit specified. The number of items returned, however, can be between zero and the value of MaxResults. If the service reaches an internal limit while processing the results, it stops the operation and returns the matching values up to that point and a NextToken. You can specify the NextToken in a subsequent call to get the next set of results.
+    * Get information about a parameter.  Request results are returned on a best-effort basis. If you specify MaxResults in the request, the response includes information up to the limit specified. The number of items returned, however, can be between zero and the value of MaxResults. If the service reaches an internal limit while processing the results, it stops the operation and returns the matching values up to that point and a NextToken. You can specify the NextToken in a subsequent call to get the next set of results. 
     */
   def describeParameters(): Request[DescribeParametersResult, AWSError] = js.native
   def describeParameters(callback: js.Function2[/* err */ AWSError, /* data */ DescribeParametersResult, Unit]): Request[DescribeParametersResult, AWSError] = js.native
   /**
-    * Get information about a parameter. Request results are returned on a best-effort basis. If you specify MaxResults in the request, the response includes information up to the limit specified. The number of items returned, however, can be between zero and the value of MaxResults. If the service reaches an internal limit while processing the results, it stops the operation and returns the matching values up to that point and a NextToken. You can specify the NextToken in a subsequent call to get the next set of results.
+    * Get information about a parameter.  Request results are returned on a best-effort basis. If you specify MaxResults in the request, the response includes information up to the limit specified. The number of items returned, however, can be between zero and the value of MaxResults. If the service reaches an internal limit while processing the results, it stops the operation and returns the matching values up to that point and a NextToken. You can specify the NextToken in a subsequent call to get the next set of results. 
     */
   def describeParameters(params: DescribeParametersRequest): Request[DescribeParametersResult, AWSError] = js.native
   def describeParameters(
@@ -793,6 +793,19 @@ trait SSM extends Service {
     params: GetAutomationExecutionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetAutomationExecutionResult, Unit]
   ): Request[GetAutomationExecutionResult, AWSError] = js.native
+  /**
+    * Gets the state of the AWS Systems Manager Change Calendar at an optional, specified time. If you specify a time, GetCalendarState returns the state of the calendar at a specific time, and returns the next time that the Change Calendar state will transition. If you do not specify a time, GetCalendarState assumes the current time. Change Calendar entries have two possible states: OPEN or CLOSED. For more information about Systems Manager Change Calendar, see AWS Systems Manager Change Calendar in the AWS Systems Manager User Guide.
+    */
+  def getCalendarState(): Request[GetCalendarStateResponse, AWSError] = js.native
+  def getCalendarState(callback: js.Function2[/* err */ AWSError, /* data */ GetCalendarStateResponse, Unit]): Request[GetCalendarStateResponse, AWSError] = js.native
+  /**
+    * Gets the state of the AWS Systems Manager Change Calendar at an optional, specified time. If you specify a time, GetCalendarState returns the state of the calendar at a specific time, and returns the next time that the Change Calendar state will transition. If you do not specify a time, GetCalendarState assumes the current time. Change Calendar entries have two possible states: OPEN or CLOSED. For more information about Systems Manager Change Calendar, see AWS Systems Manager Change Calendar in the AWS Systems Manager User Guide.
+    */
+  def getCalendarState(params: GetCalendarStateRequest): Request[GetCalendarStateResponse, AWSError] = js.native
+  def getCalendarState(
+    params: GetCalendarStateRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetCalendarStateResponse, Unit]
+  ): Request[GetCalendarStateResponse, AWSError] = js.native
   /**
     * Returns detailed information about command execution for an invocation or plugin. 
     */
@@ -1029,12 +1042,12 @@ trait SSM extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetParametersResult, Unit]
   ): Request[GetParametersResult, AWSError] = js.native
   /**
-    * Retrieve parameters in a specific hierarchy. For more information, see Working with Systems Manager Parameters in the AWS Systems Manager User Guide.  Request results are returned on a best-effort basis. If you specify MaxResults in the request, the response includes information up to the limit specified. The number of items returned, however, can be between zero and the value of MaxResults. If the service reaches an internal limit while processing the results, it stops the operation and returns the matching values up to that point and a NextToken. You can specify the NextToken in a subsequent call to get the next set of results.  This API action doesn't support filtering by tags.  
+    * Retrieve information about one or more parameters in a specific hierarchy.   Request results are returned on a best-effort basis. If you specify MaxResults in the request, the response includes information up to the limit specified. The number of items returned, however, can be between zero and the value of MaxResults. If the service reaches an internal limit while processing the results, it stops the operation and returns the matching values up to that point and a NextToken. You can specify the NextToken in a subsequent call to get the next set of results. 
     */
   def getParametersByPath(): Request[GetParametersByPathResult, AWSError] = js.native
   def getParametersByPath(callback: js.Function2[/* err */ AWSError, /* data */ GetParametersByPathResult, Unit]): Request[GetParametersByPathResult, AWSError] = js.native
   /**
-    * Retrieve parameters in a specific hierarchy. For more information, see Working with Systems Manager Parameters in the AWS Systems Manager User Guide.  Request results are returned on a best-effort basis. If you specify MaxResults in the request, the response includes information up to the limit specified. The number of items returned, however, can be between zero and the value of MaxResults. If the service reaches an internal limit while processing the results, it stops the operation and returns the matching values up to that point and a NextToken. You can specify the NextToken in a subsequent call to get the next set of results.  This API action doesn't support filtering by tags.  
+    * Retrieve information about one or more parameters in a specific hierarchy.   Request results are returned on a best-effort basis. If you specify MaxResults in the request, the response includes information up to the limit specified. The number of items returned, however, can be between zero and the value of MaxResults. If the service reaches an internal limit while processing the results, it stops the operation and returns the matching values up to that point and a NextToken. You can specify the NextToken in a subsequent call to get the next set of results. 
     */
   def getParametersByPath(params: GetParametersByPathRequest): Request[GetParametersByPathResult, AWSError] = js.native
   def getParametersByPath(
@@ -1619,6 +1632,19 @@ trait SSM extends Service {
     params: UpdatePatchBaselineRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdatePatchBaselineResult, Unit]
   ): Request[UpdatePatchBaselineResult, AWSError] = js.native
+  /**
+    * Update a resource data sync. After you create a resource data sync for a Region, you can't change the account options for that sync. For example, if you create a sync in the us-east-2 (Ohio) Region and you choose the Include only the current account option, you can't edit that sync later and choose the Include all accounts from my AWS Organizations configuration option. Instead, you must delete the first resource data sync, and create a new one.
+    */
+  def updateResourceDataSync(): Request[UpdateResourceDataSyncResult, AWSError] = js.native
+  def updateResourceDataSync(callback: js.Function2[/* err */ AWSError, /* data */ UpdateResourceDataSyncResult, Unit]): Request[UpdateResourceDataSyncResult, AWSError] = js.native
+  /**
+    * Update a resource data sync. After you create a resource data sync for a Region, you can't change the account options for that sync. For example, if you create a sync in the us-east-2 (Ohio) Region and you choose the Include only the current account option, you can't edit that sync later and choose the Include all accounts from my AWS Organizations configuration option. Instead, you must delete the first resource data sync, and create a new one.
+    */
+  def updateResourceDataSync(params: UpdateResourceDataSyncRequest): Request[UpdateResourceDataSyncResult, AWSError] = js.native
+  def updateResourceDataSync(
+    params: UpdateResourceDataSyncRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateResourceDataSyncResult, Unit]
+  ): Request[UpdateResourceDataSyncResult, AWSError] = js.native
   /**
     *  ServiceSetting is an account-level setting for an AWS service. This setting defines how a user interacts with or uses a service or a feature of a service. For example, if an AWS service charges money to the account based on feature or service usage, then the AWS service team might create a default setting of "false". This means the user can't use this feature unless they change the setting to "true" and intentionally opt in for a paid feature. Services map a SettingId object to a setting value. AWS services teams define the default value for a SettingId. You can't create a new SettingId, but you can overwrite the default value if you have the ssm:UpdateServiceSetting permission for the setting. Use the GetServiceSetting API action to view the current value. Or, use the ResetServiceSetting to change the value back to the original value defined by the AWS service team. Update the service setting for the account. 
     */

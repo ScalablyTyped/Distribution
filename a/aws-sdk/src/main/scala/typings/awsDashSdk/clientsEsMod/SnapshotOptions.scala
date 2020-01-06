@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SnapshotOptions extends js.Object {
   /**
     * Specifies the time, in UTC format, when the service takes a daily automated snapshot of the specified Elasticsearch domain. Default value is 0 hours.
     */
-  var AutomatedSnapshotStartHour: js.UndefOr[IntegerClass] = js.undefined
+  var AutomatedSnapshotStartHour: js.UndefOr[IntegerClass] = js.native
 }
 
 object SnapshotOptions {

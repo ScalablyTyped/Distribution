@@ -11,8 +11,8 @@ Returns an object with the (non-glob) base path and the actual pattern.
 | Full name          | glob-base |
 | Keywords           | base, directory, dirname, expression, glob, parent, path, pattern, regex, regular, root |
 | # releases         | 1 |
-| # dependents       | 61 |
-| # downloads        | 237601504 |
+| # dependents       | 72 |
+| # downloads        | 238108644 |
 | # stars            | 2 |
 
 ## Links

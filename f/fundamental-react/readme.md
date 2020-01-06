@@ -4,15 +4,15 @@
 Typings are for version 0.8
 
 ## Library description:
-SAP Fiori Fundamentals, implemented in React
+SAP Fundamentals, implemented in React
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | fundamental-react |
 | Keywords           | - |
-| # releases         | 226 |
-| # dependents       | 1 |
-| # downloads        | 44218 |
+| # releases         | 377 |
+| # dependents       | 3 |
+| # downloads        | 98363 |
 | # stars            | 0 |
 
 ## Links

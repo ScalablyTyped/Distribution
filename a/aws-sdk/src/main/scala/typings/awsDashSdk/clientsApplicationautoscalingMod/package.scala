@@ -21,9 +21,9 @@ package object clientsApplicationautoscalingMod {
   type DisableScaleIn = Boolean
   type MaxResults = Double
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Average
-    - typings.awsDashSdk.awsDashSdkStrings.Minimum
-    - typings.awsDashSdk.awsDashSdkStrings.Maximum
+    - typings.awsDashSdk.awsDashSdkStrings.Average_
+    - typings.awsDashSdk.awsDashSdkStrings.Minimum_
+    - typings.awsDashSdk.awsDashSdkStrings.Maximum_
     - java.lang.String
   */
   type MetricAggregationType = _MetricAggregationType | String
@@ -34,11 +34,11 @@ package object clientsApplicationautoscalingMod {
   type MetricNamespace = String
   type MetricScale = Double
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Average
-    - typings.awsDashSdk.awsDashSdkStrings.Minimum
-    - typings.awsDashSdk.awsDashSdkStrings.Maximum
+    - typings.awsDashSdk.awsDashSdkStrings.Average_
+    - typings.awsDashSdk.awsDashSdkStrings.Minimum_
+    - typings.awsDashSdk.awsDashSdkStrings.Maximum_
     - typings.awsDashSdk.awsDashSdkStrings.SampleCount
-    - typings.awsDashSdk.awsDashSdkStrings.Sum
+    - typings.awsDashSdk.awsDashSdkStrings.Sum_
     - java.lang.String
   */
   type MetricStatistic = _MetricStatistic | String
@@ -54,6 +54,9 @@ package object clientsApplicationautoscalingMod {
     - typings.awsDashSdk.awsDashSdkStrings.SageMakerVariantInvocationsPerInstance
     - typings.awsDashSdk.awsDashSdkStrings.ECSServiceAverageCPUUtilization
     - typings.awsDashSdk.awsDashSdkStrings.ECSServiceAverageMemoryUtilization
+    - typings.awsDashSdk.awsDashSdkStrings.AppStreamAverageCapacityUtilization
+    - typings.awsDashSdk.awsDashSdkStrings.ComprehendInferenceUtilization
+    - typings.awsDashSdk.awsDashSdkStrings.LambdaProvisionedConcurrencyUtilization
     - java.lang.String
   */
   type MetricType = _MetricType | String
@@ -72,29 +75,31 @@ package object clientsApplicationautoscalingMod {
   type ResourceIdsMaxLen1600 = js.Array[ResourceIdMaxLen1600]
   type ResourceLabel = String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.`ecs:service:DesiredCount`
-    - typings.awsDashSdk.awsDashSdkStrings.`ec2:spot-fleet-request:TargetCapacity`
-    - typings.awsDashSdk.awsDashSdkStrings.`elasticmapreduce:instancegroup:InstanceCount`
-    - typings.awsDashSdk.awsDashSdkStrings.`appstream:fleet:DesiredCapacity`
-    - typings.awsDashSdk.awsDashSdkStrings.`dynamodb:table:ReadCapacityUnits`
-    - typings.awsDashSdk.awsDashSdkStrings.`dynamodb:table:WriteCapacityUnits`
-    - typings.awsDashSdk.awsDashSdkStrings.`dynamodb:index:ReadCapacityUnits`
-    - typings.awsDashSdk.awsDashSdkStrings.`dynamodb:index:WriteCapacityUnits`
-    - typings.awsDashSdk.awsDashSdkStrings.`rds:cluster:ReadReplicaCount`
-    - typings.awsDashSdk.awsDashSdkStrings.`sagemaker:variant:DesiredInstanceCount`
-    - typings.awsDashSdk.awsDashSdkStrings.`custom-resource:ResourceType:Property`
+    - typings.awsDashSdk.awsDashSdkStrings.ecsColonserviceColonDesiredCount
+    - typings.awsDashSdk.awsDashSdkStrings.`ec2Colonspot-fleet-requestColonTargetCapacity`
+    - typings.awsDashSdk.awsDashSdkStrings.elasticmapreduceColoninstancegroupColonInstanceCount
+    - typings.awsDashSdk.awsDashSdkStrings.appstreamColonfleetColonDesiredCapacity
+    - typings.awsDashSdk.awsDashSdkStrings.dynamodbColontableColonReadCapacityUnits
+    - typings.awsDashSdk.awsDashSdkStrings.dynamodbColontableColonWriteCapacityUnits
+    - typings.awsDashSdk.awsDashSdkStrings.dynamodbColonindexColonReadCapacityUnits
+    - typings.awsDashSdk.awsDashSdkStrings.dynamodbColonindexColonWriteCapacityUnits
+    - typings.awsDashSdk.awsDashSdkStrings.rdsColonclusterColonReadReplicaCount
+    - typings.awsDashSdk.awsDashSdkStrings.sagemakerColonvariantColonDesiredInstanceCount
+    - typings.awsDashSdk.awsDashSdkStrings.`custom-resourceColonResourceTypeColonProperty`
+    - typings.awsDashSdk.awsDashSdkStrings.`comprehendColondocument-classifier-endpointColonDesiredInferenceUnits`
+    - typings.awsDashSdk.awsDashSdkStrings.lambdaColonfunctionColonProvisionedConcurrency
     - java.lang.String
   */
   type ScalableDimension = _ScalableDimension | String
   type ScalableTargets = js.Array[ScalableTarget]
   type ScalingActivities = js.Array[ScalingActivity]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Pending
-    - typings.awsDashSdk.awsDashSdkStrings.InProgress
-    - typings.awsDashSdk.awsDashSdkStrings.Successful
-    - typings.awsDashSdk.awsDashSdkStrings.Overridden
+    - typings.awsDashSdk.awsDashSdkStrings.Pending_
+    - typings.awsDashSdk.awsDashSdkStrings.InProgress_
+    - typings.awsDashSdk.awsDashSdkStrings.Successful_
+    - typings.awsDashSdk.awsDashSdkStrings.Overridden_
     - typings.awsDashSdk.awsDashSdkStrings.Unfulfilled
-    - typings.awsDashSdk.awsDashSdkStrings.Failed
+    - typings.awsDashSdk.awsDashSdkStrings.Failed_
     - java.lang.String
   */
   type ScalingActivityStatusCode = _ScalingActivityStatusCode | String
@@ -104,14 +109,16 @@ package object clientsApplicationautoscalingMod {
   type ScheduledActionName = String
   type ScheduledActions = js.Array[ScheduledAction]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.ecs
+    - typings.awsDashSdk.awsDashSdkStrings.ecs_
     - typings.awsDashSdk.awsDashSdkStrings.elasticmapreduce
-    - typings.awsDashSdk.awsDashSdkStrings.ec2
+    - typings.awsDashSdk.awsDashSdkStrings.ec2_
     - typings.awsDashSdk.awsDashSdkStrings.appstream
     - typings.awsDashSdk.awsDashSdkStrings.dynamodb
-    - typings.awsDashSdk.awsDashSdkStrings.rds
-    - typings.awsDashSdk.awsDashSdkStrings.sagemaker
+    - typings.awsDashSdk.awsDashSdkStrings.rds_
+    - typings.awsDashSdk.awsDashSdkStrings.sagemaker_
     - typings.awsDashSdk.awsDashSdkStrings.`custom-resource`
+    - typings.awsDashSdk.awsDashSdkStrings.comprehend
+    - typings.awsDashSdk.awsDashSdkStrings.lambda__
     - java.lang.String
   */
   type ServiceNamespace = _ServiceNamespace | String
@@ -120,7 +127,7 @@ package object clientsApplicationautoscalingMod {
   type XmlString = String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2016-02-06`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

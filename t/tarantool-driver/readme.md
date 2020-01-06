@@ -4,15 +4,15 @@
 Typings are for version 3.0
 
 ## Library description:
-Tarantool driver for 1.7
+Tarantool driver for 1.7+
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | tarantool-driver |
 | Keywords           | tarantool, driver, db, msgpack |
-| # releases         | 7 |
+| # releases         | 8 |
 | # dependents       | 0 |
-| # downloads        | 8372 |
+| # downloads        | 61757 |
 | # stars            | 2 |
 
 ## Links

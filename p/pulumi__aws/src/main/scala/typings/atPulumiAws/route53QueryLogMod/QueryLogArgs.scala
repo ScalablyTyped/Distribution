@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait QueryLogArgs extends js.Object {
   /**
     * CloudWatch log group ARN to send query logs.
     */
-  val cloudwatchLogGroupArn: Input[String]
+  val cloudwatchLogGroupArn: Input[String] = js.native
   /**
     * Route53 hosted zone ID to enable query logs.
     */
-  val zoneId: Input[String]
+  val zoneId: Input[String] = js.native
 }
 
 object QueryLogArgs {

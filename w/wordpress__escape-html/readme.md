@@ -10,9 +10,9 @@ Escape HTML utils.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/escape-html |
 | Keywords           | wordpress |
-| # releases         | 8 |
-| # dependents       | 3 |
-| # downloads        | 74534 |
+| # releases         | 13 |
+| # dependents       | 4 |
+| # downloads        | 235333 |
 | # stars            | 0 |
 
 ## Links

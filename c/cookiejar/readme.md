@@ -11,8 +11,8 @@ simple persistent cookiejar system
 | Full name          | cookiejar |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 48 |
-| # downloads        | 88097668 |
+| # dependents       | 54 |
+| # downloads        | 110020567 |
 | # stars            | 5 |
 
 ## Links

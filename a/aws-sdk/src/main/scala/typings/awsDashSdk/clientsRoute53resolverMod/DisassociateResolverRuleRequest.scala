@@ -4,21 +4,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DisassociateResolverRuleRequest extends js.Object {
   /**
     * The ID of the resolver rule that you want to disassociate from the specified VPC.
     */
-  var ResolverRuleId: ResourceId
+  var ResolverRuleId: ResourceId = js.native
   /**
     * The ID of the VPC that you want to disassociate the resolver rule from.
     */
-  var VPCId: ResourceId
+  var VPCId: ResourceId = js.native
 }
 
 object DisassociateResolverRuleRequest {
   @scala.inline
   def apply(ResolverRuleId: ResourceId, VPCId: ResourceId): DisassociateResolverRuleRequest = {
-    val __obj = js.Dynamic.literal(ResolverRuleId = ResolverRuleId, VPCId = VPCId)
+    val __obj = js.Dynamic.literal(ResolverRuleId = ResolverRuleId.asInstanceOf[js.Any], VPCId = VPCId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DisassociateResolverRuleRequest]
   }

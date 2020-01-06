@@ -6,12 +6,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TriggerArgs extends js.Object {
   /**
     * The name for the repository. This needs to be less than 100 characters.
     */
-  val repositoryName: Input[String]
-  val triggers: Input[js.Array[Input[TriggerTrigger]]]
+  val repositoryName: Input[String] = js.native
+  val triggers: Input[js.Array[Input[TriggerTrigger]]] = js.native
 }
 
 object TriggerArgs {

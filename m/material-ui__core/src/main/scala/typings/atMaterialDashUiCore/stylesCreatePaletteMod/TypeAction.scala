@@ -4,13 +4,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TypeAction extends js.Object {
-  var active: String
-  var disabled: String
-  var disabledBackground: String
-  var hover: String
-  var hoverOpacity: Double
-  var selected: String
+  var active: String = js.native
+  var disabled: String = js.native
+  var disabledBackground: String = js.native
+  var hover: String = js.native
+  var hoverOpacity: Double = js.native
+  var selected: String = js.native
 }
 
 object TypeAction {

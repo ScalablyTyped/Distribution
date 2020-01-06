@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 package object clientsSsmMod {
   import org.scalablytyped.runtime.StringDictionary
   import typings.awsDashSdk.awsDashSdkStrings.JsonSerDe
-  import typings.awsDashSdk.awsDashSdkStrings.Sha256
+  import typings.awsDashSdk.awsDashSdkStrings.Sha256_
   import typings.awsDashSdk.awsDashSdkStrings.Share
-  import typings.awsDashSdk.awsDashSdkStrings.SourceUrl
   import typings.awsDashSdk.libServiceMod.ServiceConfigurationOptions
   import typings.node.Buffer
   import typings.std.Date
@@ -18,6 +17,7 @@ package object clientsSsmMod {
   type Account = java.lang.String
   type AccountId = java.lang.String
   type AccountIdList = js.Array[AccountId]
+  type AccountSharingInfoList = js.Array[AccountSharingInfo]
   type Accounts = js.Array[Account]
   type ActivationCode = java.lang.String
   type ActivationDescription = java.lang.String
@@ -39,7 +39,7 @@ package object clientsSsmMod {
   type AssociationDescriptionList = js.Array[AssociationDescription]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.ExecutionId
-    - typings.awsDashSdk.awsDashSdkStrings.Status
+    - typings.awsDashSdk.awsDashSdkStrings.Status_
     - typings.awsDashSdk.awsDashSdkStrings.CreatedTime
     - java.lang.String
   */
@@ -48,7 +48,7 @@ package object clientsSsmMod {
   type AssociationExecutionFilterValue = java.lang.String
   type AssociationExecutionId = java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Status
+    - typings.awsDashSdk.awsDashSdkStrings.Status_
     - typings.awsDashSdk.awsDashSdkStrings.ResourceId
     - typings.awsDashSdk.awsDashSdkStrings.ResourceType
     - java.lang.String
@@ -60,7 +60,7 @@ package object clientsSsmMod {
   type AssociationExecutionsList = js.Array[AssociationExecution]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.InstanceId
-    - typings.awsDashSdk.awsDashSdkStrings.Name
+    - typings.awsDashSdk.awsDashSdkStrings.Name_
     - typings.awsDashSdk.awsDashSdkStrings.AssociationId
     - typings.awsDashSdk.awsDashSdkStrings.AssociationStatusName
     - typings.awsDashSdk.awsDashSdkStrings.LastExecutedBefore
@@ -86,9 +86,9 @@ package object clientsSsmMod {
   type AssociationResourceType = java.lang.String
   type AssociationStatusAggregatedCount = StringDictionary[InstanceCount]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Pending
-    - typings.awsDashSdk.awsDashSdkStrings.Success
-    - typings.awsDashSdk.awsDashSdkStrings.Failed
+    - typings.awsDashSdk.awsDashSdkStrings.Pending_
+    - typings.awsDashSdk.awsDashSdkStrings.Success_
+    - typings.awsDashSdk.awsDashSdkStrings.Failed_
     - java.lang.String
   */
   type AssociationStatusName = _AssociationStatusName | java.lang.String
@@ -96,11 +96,18 @@ package object clientsSsmMod {
   type AssociationVersionList = js.Array[AssociationVersionInfo]
   type AttachmentContentList = js.Array[AttachmentContent]
   type AttachmentHash = java.lang.String
-  type AttachmentHashType = Sha256 | java.lang.String
+  type AttachmentHashType = Sha256_ | java.lang.String
+  type AttachmentIdentifier = java.lang.String
   type AttachmentInformationList = js.Array[AttachmentInformation]
   type AttachmentName = java.lang.String
   type AttachmentUrl = java.lang.String
-  type AttachmentsSourceKey = SourceUrl | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.SourceUrl
+    - typings.awsDashSdk.awsDashSdkStrings.S3FileUrl
+    - typings.awsDashSdk.awsDashSdkStrings.AttachmentReference
+    - java.lang.String
+  */
+  type AttachmentsSourceKey = _AttachmentsSourceKey | java.lang.String
   type AttachmentsSourceList = js.Array[AttachmentsSource]
   type AttachmentsSourceValue = java.lang.String
   type AttachmentsSourceValues = js.Array[AttachmentsSourceValue]
@@ -116,6 +123,7 @@ package object clientsSsmMod {
     - typings.awsDashSdk.awsDashSdkStrings.StartTimeBefore
     - typings.awsDashSdk.awsDashSdkStrings.StartTimeAfter
     - typings.awsDashSdk.awsDashSdkStrings.AutomationType
+    - typings.awsDashSdk.awsDashSdkStrings.TagKey
     - java.lang.String
   */
   type AutomationExecutionFilterKey = _AutomationExecutionFilterKey | java.lang.String
@@ -125,14 +133,14 @@ package object clientsSsmMod {
   type AutomationExecutionId = java.lang.String
   type AutomationExecutionMetadataList = js.Array[AutomationExecutionMetadata]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Pending
-    - typings.awsDashSdk.awsDashSdkStrings.InProgress
-    - typings.awsDashSdk.awsDashSdkStrings.Waiting
-    - typings.awsDashSdk.awsDashSdkStrings.Success
-    - typings.awsDashSdk.awsDashSdkStrings.TimedOut
-    - typings.awsDashSdk.awsDashSdkStrings.Cancelling
-    - typings.awsDashSdk.awsDashSdkStrings.Cancelled
-    - typings.awsDashSdk.awsDashSdkStrings.Failed
+    - typings.awsDashSdk.awsDashSdkStrings.Pending_
+    - typings.awsDashSdk.awsDashSdkStrings.InProgress_
+    - typings.awsDashSdk.awsDashSdkStrings.Waiting_
+    - typings.awsDashSdk.awsDashSdkStrings.Success_
+    - typings.awsDashSdk.awsDashSdkStrings.TimedOut_
+    - typings.awsDashSdk.awsDashSdkStrings.Cancelling_
+    - typings.awsDashSdk.awsDashSdkStrings.Cancelled_
+    - typings.awsDashSdk.awsDashSdkStrings.Failed_
     - java.lang.String
   */
   type AutomationExecutionStatus = _AutomationExecutionStatus | java.lang.String
@@ -143,7 +151,7 @@ package object clientsSsmMod {
   type AutomationTargetParameterName = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.CrossAccount
-    - typings.awsDashSdk.awsDashSdkStrings.Local
+    - typings.awsDashSdk.awsDashSdkStrings.Local_
     - java.lang.String
   */
   type AutomationType = _AutomationType | java.lang.String
@@ -152,6 +160,14 @@ package object clientsSsmMod {
   type BaselineName = java.lang.String
   type BatchErrorMessage = java.lang.String
   type Boolean = scala.Boolean
+  type CalendarNameOrARN = java.lang.String
+  type CalendarNameOrARNList = js.Array[CalendarNameOrARN]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.OPEN
+    - typings.awsDashSdk.awsDashSdkStrings.CLOSED
+    - java.lang.String
+  */
+  type CalendarState = _CalendarState | java.lang.String
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
   type ClientToken = java.lang.String
   type CloudWatchLogGroupName = java.lang.String
@@ -159,7 +175,7 @@ package object clientsSsmMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.InvokedAfter
     - typings.awsDashSdk.awsDashSdkStrings.InvokedBefore
-    - typings.awsDashSdk.awsDashSdkStrings.Status
+    - typings.awsDashSdk.awsDashSdkStrings.Status_
     - typings.awsDashSdk.awsDashSdkStrings.ExecutionStage
     - typings.awsDashSdk.awsDashSdkStrings.DocumentName
     - java.lang.String
@@ -170,14 +186,14 @@ package object clientsSsmMod {
   type CommandId = java.lang.String
   type CommandInvocationList = js.Array[CommandInvocation]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Pending
-    - typings.awsDashSdk.awsDashSdkStrings.InProgress
+    - typings.awsDashSdk.awsDashSdkStrings.Pending_
+    - typings.awsDashSdk.awsDashSdkStrings.InProgress_
     - typings.awsDashSdk.awsDashSdkStrings.Delayed
-    - typings.awsDashSdk.awsDashSdkStrings.Success
-    - typings.awsDashSdk.awsDashSdkStrings.Cancelled
-    - typings.awsDashSdk.awsDashSdkStrings.TimedOut
-    - typings.awsDashSdk.awsDashSdkStrings.Failed
-    - typings.awsDashSdk.awsDashSdkStrings.Cancelling
+    - typings.awsDashSdk.awsDashSdkStrings.Success_
+    - typings.awsDashSdk.awsDashSdkStrings.Cancelled_
+    - typings.awsDashSdk.awsDashSdkStrings.TimedOut_
+    - typings.awsDashSdk.awsDashSdkStrings.Failed_
+    - typings.awsDashSdk.awsDashSdkStrings.Cancelling_
     - java.lang.String
   */
   type CommandInvocationStatus = _CommandInvocationStatus | java.lang.String
@@ -187,23 +203,23 @@ package object clientsSsmMod {
   type CommandPluginName = java.lang.String
   type CommandPluginOutput = java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Pending
-    - typings.awsDashSdk.awsDashSdkStrings.InProgress
-    - typings.awsDashSdk.awsDashSdkStrings.Success
-    - typings.awsDashSdk.awsDashSdkStrings.TimedOut
-    - typings.awsDashSdk.awsDashSdkStrings.Cancelled
-    - typings.awsDashSdk.awsDashSdkStrings.Failed
+    - typings.awsDashSdk.awsDashSdkStrings.Pending_
+    - typings.awsDashSdk.awsDashSdkStrings.InProgress_
+    - typings.awsDashSdk.awsDashSdkStrings.Success_
+    - typings.awsDashSdk.awsDashSdkStrings.TimedOut_
+    - typings.awsDashSdk.awsDashSdkStrings.Cancelled_
+    - typings.awsDashSdk.awsDashSdkStrings.Failed_
     - java.lang.String
   */
   type CommandPluginStatus = _CommandPluginStatus | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Pending
-    - typings.awsDashSdk.awsDashSdkStrings.InProgress
-    - typings.awsDashSdk.awsDashSdkStrings.Success
-    - typings.awsDashSdk.awsDashSdkStrings.Cancelled
-    - typings.awsDashSdk.awsDashSdkStrings.Failed
-    - typings.awsDashSdk.awsDashSdkStrings.TimedOut
-    - typings.awsDashSdk.awsDashSdkStrings.Cancelling
+    - typings.awsDashSdk.awsDashSdkStrings.Pending_
+    - typings.awsDashSdk.awsDashSdkStrings.InProgress_
+    - typings.awsDashSdk.awsDashSdkStrings.Success_
+    - typings.awsDashSdk.awsDashSdkStrings.Cancelled_
+    - typings.awsDashSdk.awsDashSdkStrings.Failed_
+    - typings.awsDashSdk.awsDashSdkStrings.TimedOut_
+    - typings.awsDashSdk.awsDashSdkStrings.Cancelling_
     - java.lang.String
   */
   type CommandStatus = _CommandStatus | java.lang.String
@@ -255,7 +271,7 @@ package object clientsSsmMod {
   type ComplianceTypeName = java.lang.String
   type ComputerName = java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Connected
+    - typings.awsDashSdk.awsDashSdkStrings.Connected_
     - typings.awsDashSdk.awsDashSdkStrings.NotConnected
     - java.lang.String
   */
@@ -279,8 +295,8 @@ package object clientsSsmMod {
   type DocumentARN = java.lang.String
   type DocumentContent = java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Name
-    - typings.awsDashSdk.awsDashSdkStrings.Owner
+    - typings.awsDashSdk.awsDashSdkStrings.Name_
+    - typings.awsDashSdk.awsDashSdkStrings.Owner_
     - typings.awsDashSdk.awsDashSdkStrings.PlatformTypes
     - typings.awsDashSdk.awsDashSdkStrings.DocumentType
     - java.lang.String
@@ -291,13 +307,14 @@ package object clientsSsmMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.YAML
     - typings.awsDashSdk.awsDashSdkStrings.JSON
+    - typings.awsDashSdk.awsDashSdkStrings.TEXT
     - java.lang.String
   */
   type DocumentFormat = _DocumentFormat | java.lang.String
   type DocumentHash = java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Sha256
-    - typings.awsDashSdk.awsDashSdkStrings.Sha1
+    - typings.awsDashSdk.awsDashSdkStrings.Sha256_
+    - typings.awsDashSdk.awsDashSdkStrings.Sha1_
     - java.lang.String
   */
   type DocumentHashType = _DocumentHashType | java.lang.String
@@ -313,30 +330,35 @@ package object clientsSsmMod {
   type DocumentParameterList = js.Array[DocumentParameter]
   type DocumentParameterName = java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.String
+    - typings.awsDashSdk.awsDashSdkStrings.String_
     - typings.awsDashSdk.awsDashSdkStrings.StringList
     - java.lang.String
   */
   type DocumentParameterType = _DocumentParameterType | java.lang.String
   type DocumentPermissionType = Share | java.lang.String
+  type DocumentRequiresList = js.Array[DocumentRequires]
   type DocumentSchemaVersion = java.lang.String
   type DocumentSha1 = java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Creating
-    - typings.awsDashSdk.awsDashSdkStrings.Active
-    - typings.awsDashSdk.awsDashSdkStrings.Updating
-    - typings.awsDashSdk.awsDashSdkStrings.Deleting
-    - typings.awsDashSdk.awsDashSdkStrings.Failed
+    - typings.awsDashSdk.awsDashSdkStrings.Creating_
+    - typings.awsDashSdk.awsDashSdkStrings.Active_
+    - typings.awsDashSdk.awsDashSdkStrings.Updating_
+    - typings.awsDashSdk.awsDashSdkStrings.Deleting_
+    - typings.awsDashSdk.awsDashSdkStrings.Failed_
     - java.lang.String
   */
   type DocumentStatus = _DocumentStatus | java.lang.String
   type DocumentStatusInformation = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.Command
-    - typings.awsDashSdk.awsDashSdkStrings.Policy
-    - typings.awsDashSdk.awsDashSdkStrings.Automation
+    - typings.awsDashSdk.awsDashSdkStrings.Policy_
+    - typings.awsDashSdk.awsDashSdkStrings.Automation_
     - typings.awsDashSdk.awsDashSdkStrings.Session
     - typings.awsDashSdk.awsDashSdkStrings.Package
+    - typings.awsDashSdk.awsDashSdkStrings.ApplicationConfiguration
+    - typings.awsDashSdk.awsDashSdkStrings.ApplicationConfigurationSchema
+    - typings.awsDashSdk.awsDashSdkStrings.DeploymentStrategy
+    - typings.awsDashSdk.awsDashSdkStrings.ChangeCalendar
     - java.lang.String
   */
   type DocumentType = _DocumentType | java.lang.String
@@ -349,8 +371,8 @@ package object clientsSsmMod {
   type EffectivePatchList = js.Array[EffectivePatch]
   type ErrorCount = Double
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Auto
-    - typings.awsDashSdk.awsDashSdkStrings.Interactive
+    - typings.awsDashSdk.awsDashSdkStrings.Auto_
+    - typings.awsDashSdk.awsDashSdkStrings.Interactive_
     - java.lang.String
   */
   type ExecutionMode = _ExecutionMode | java.lang.String
@@ -359,14 +381,15 @@ package object clientsSsmMod {
   type FailedCreateAssociationList = js.Array[FailedCreateAssociation]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.Client
-    - typings.awsDashSdk.awsDashSdkStrings.Server
-    - typings.awsDashSdk.awsDashSdkStrings.Unknown
+    - typings.awsDashSdk.awsDashSdkStrings.Server_
+    - typings.awsDashSdk.awsDashSdkStrings.Unknown_
     - java.lang.String
   */
   type Fault = _Fault | java.lang.String
   type GetInventorySchemaMaxResults = Double
   type GetParametersByPathMaxResults = Double
   type IPAddress = java.lang.String
+  type ISO8601String = java.lang.String
   type IamRole = java.lang.String
   type IdempotencyToken = java.lang.String
   type InstallOverrideList = java.lang.String
@@ -401,7 +424,7 @@ package object clientsSsmMod {
   type InstancePatchStateFilterValues = js.Array[InstancePatchStateFilterValue]
   type InstancePatchStateList = js.Array[InstancePatchState]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Equal
+    - typings.awsDashSdk.awsDashSdkStrings.Equal_
     - typings.awsDashSdk.awsDashSdkStrings.NotEqual
     - typings.awsDashSdk.awsDashSdkStrings.LessThan
     - typings.awsDashSdk.awsDashSdkStrings.GreaterThan
@@ -415,8 +438,8 @@ package object clientsSsmMod {
   type InventoryAggregatorExpression = java.lang.String
   type InventoryAggregatorList = js.Array[InventoryAggregator]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.string
-    - typings.awsDashSdk.awsDashSdkStrings.number
+    - typings.awsDashSdk.awsDashSdkStrings.string__
+    - typings.awsDashSdk.awsDashSdkStrings.number__
     - java.lang.String
   */
   type InventoryAttributeDataType = _InventoryAttributeDataType | java.lang.String
@@ -425,8 +448,8 @@ package object clientsSsmMod {
   type InventoryDeletionLastStatusUpdateTime = Date
   type InventoryDeletionStartTime = Date
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.InProgress
-    - typings.awsDashSdk.awsDashSdkStrings.Complete
+    - typings.awsDashSdk.awsDashSdkStrings.InProgress_
+    - typings.awsDashSdk.awsDashSdkStrings.Complete_
     - java.lang.String
   */
   type InventoryDeletionStatus = _InventoryDeletionStatus | java.lang.String
@@ -451,7 +474,7 @@ package object clientsSsmMod {
   type InventoryItemTypeName = java.lang.String
   type InventoryItemTypeNameFilter = java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Equal
+    - typings.awsDashSdk.awsDashSdkStrings.Equal_
     - typings.awsDashSdk.awsDashSdkStrings.NotEqual
     - typings.awsDashSdk.awsDashSdkStrings.BeginWith
     - typings.awsDashSdk.awsDashSdkStrings.LessThan
@@ -476,9 +499,9 @@ package object clientsSsmMod {
   type KeyList = js.Array[TagKey]
   type LastResourceDataSyncMessage = java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Successful
-    - typings.awsDashSdk.awsDashSdkStrings.Failed
-    - typings.awsDashSdk.awsDashSdkStrings.InProgress
+    - typings.awsDashSdk.awsDashSdkStrings.Successful_
+    - typings.awsDashSdk.awsDashSdkStrings.Failed_
+    - typings.awsDashSdk.awsDashSdkStrings.InProgress_
     - java.lang.String
   */
   type LastResourceDataSyncStatus = _LastResourceDataSyncStatus | java.lang.String
@@ -565,12 +588,12 @@ package object clientsSsmMod {
   type NormalStringMap = StringDictionary[String]
   type NotificationArn = java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.All
-    - typings.awsDashSdk.awsDashSdkStrings.InProgress
-    - typings.awsDashSdk.awsDashSdkStrings.Success
-    - typings.awsDashSdk.awsDashSdkStrings.TimedOut
-    - typings.awsDashSdk.awsDashSdkStrings.Cancelled
-    - typings.awsDashSdk.awsDashSdkStrings.Failed
+    - typings.awsDashSdk.awsDashSdkStrings.All_
+    - typings.awsDashSdk.awsDashSdkStrings.InProgress_
+    - typings.awsDashSdk.awsDashSdkStrings.Success_
+    - typings.awsDashSdk.awsDashSdkStrings.TimedOut_
+    - typings.awsDashSdk.awsDashSdkStrings.Cancelled_
+    - typings.awsDashSdk.awsDashSdkStrings.Failed_
     - java.lang.String
   */
   type NotificationEvent = _NotificationEvent | java.lang.String
@@ -600,6 +623,7 @@ package object clientsSsmMod {
   type OpsDataAttributeName = java.lang.String
   type OpsDataTypeName = java.lang.String
   type OpsEntityId = java.lang.String
+  type OpsEntityItemCaptureTime = java.lang.String
   type OpsEntityItemEntry = StringDictionary[AttributeValue]
   type OpsEntityItemEntryList = js.Array[OpsEntityItemEntry]
   type OpsEntityItemKey = java.lang.String
@@ -608,7 +632,7 @@ package object clientsSsmMod {
   type OpsFilterKey = java.lang.String
   type OpsFilterList = js.Array[OpsFilter]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Equal
+    - typings.awsDashSdk.awsDashSdkStrings.Equal_
     - typings.awsDashSdk.awsDashSdkStrings.NotEqual
     - typings.awsDashSdk.awsDashSdkStrings.BeginWith
     - typings.awsDashSdk.awsDashSdkStrings.LessThan
@@ -619,21 +643,22 @@ package object clientsSsmMod {
   type OpsFilterOperatorType = _OpsFilterOperatorType | java.lang.String
   type OpsFilterValue = java.lang.String
   type OpsFilterValueList = js.Array[OpsFilterValue]
+  type OpsItemCategory = java.lang.String
   type OpsItemDataKey = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.SearchableString
-    - typings.awsDashSdk.awsDashSdkStrings.String
+    - typings.awsDashSdk.awsDashSdkStrings.String_
     - java.lang.String
   */
   type OpsItemDataType = _OpsItemDataType | java.lang.String
   type OpsItemDataValueString = java.lang.String
   type OpsItemDescription = java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Status
+    - typings.awsDashSdk.awsDashSdkStrings.Status_
     - typings.awsDashSdk.awsDashSdkStrings.CreatedBy
     - typings.awsDashSdk.awsDashSdkStrings.Source
-    - typings.awsDashSdk.awsDashSdkStrings.Priority
-    - typings.awsDashSdk.awsDashSdkStrings.Title
+    - typings.awsDashSdk.awsDashSdkStrings.Priority_
+    - typings.awsDashSdk.awsDashSdkStrings.Title_
     - typings.awsDashSdk.awsDashSdkStrings.OpsItemId
     - typings.awsDashSdk.awsDashSdkStrings.CreatedTime
     - typings.awsDashSdk.awsDashSdkStrings.LastModifiedTime
@@ -642,12 +667,14 @@ package object clientsSsmMod {
     - typings.awsDashSdk.awsDashSdkStrings.OperationalDataValue
     - typings.awsDashSdk.awsDashSdkStrings.ResourceId
     - typings.awsDashSdk.awsDashSdkStrings.AutomationId
+    - typings.awsDashSdk.awsDashSdkStrings.Category
+    - typings.awsDashSdk.awsDashSdkStrings.Severity_
     - java.lang.String
   */
   type OpsItemFilterKey = _OpsItemFilterKey | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Equal
-    - typings.awsDashSdk.awsDashSdkStrings.Contains
+    - typings.awsDashSdk.awsDashSdkStrings.Equal_
+    - typings.awsDashSdk.awsDashSdkStrings.Contains_
     - typings.awsDashSdk.awsDashSdkStrings.GreaterThan
     - typings.awsDashSdk.awsDashSdkStrings.LessThan
     - java.lang.String
@@ -662,16 +689,18 @@ package object clientsSsmMod {
   type OpsItemOperationalData = StringDictionary[OpsItemDataValue]
   type OpsItemOpsDataKeysList = js.Array[String]
   type OpsItemPriority = Double
+  type OpsItemSeverity = java.lang.String
   type OpsItemSource = java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Open
-    - typings.awsDashSdk.awsDashSdkStrings.InProgress
-    - typings.awsDashSdk.awsDashSdkStrings.Resolved
+    - typings.awsDashSdk.awsDashSdkStrings.Open_
+    - typings.awsDashSdk.awsDashSdkStrings.InProgress_
+    - typings.awsDashSdk.awsDashSdkStrings.Resolved_
     - java.lang.String
   */
   type OpsItemStatus = _OpsItemStatus | java.lang.String
   type OpsItemSummaries = js.Array[OpsItemSummary]
   type OpsItemTitle = java.lang.String
+  type OpsResultAttributeList = js.Array[OpsResultAttribute]
   type OutputSourceId = java.lang.String
   type OutputSourceType = java.lang.String
   type OwnerInformation = java.lang.String
@@ -696,14 +725,14 @@ package object clientsSsmMod {
   type ParameterStringFilterValueList = js.Array[ParameterStringFilterValue]
   type ParameterStringQueryOption = java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Standard
+    - typings.awsDashSdk.awsDashSdkStrings.Standard_
     - typings.awsDashSdk.awsDashSdkStrings.Advanced
     - typings.awsDashSdk.awsDashSdkStrings.`Intelligent-Tiering`
     - java.lang.String
   */
   type ParameterTier = _ParameterTier | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.String
+    - typings.awsDashSdk.awsDashSdkStrings.String_
     - typings.awsDashSdk.awsDashSdkStrings.StringList
     - typings.awsDashSdk.awsDashSdkStrings.SecureString
     - java.lang.String
@@ -713,8 +742,8 @@ package object clientsSsmMod {
   type ParameterValueList = js.Array[ParameterValue]
   type Parameters = StringDictionary[ParameterValueList]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Name
-    - typings.awsDashSdk.awsDashSdkStrings.Type
+    - typings.awsDashSdk.awsDashSdkStrings.Name_
+    - typings.awsDashSdk.awsDashSdkStrings.Type_
     - typings.awsDashSdk.awsDashSdkStrings.KeyId
     - java.lang.String
   */
@@ -735,6 +764,7 @@ package object clientsSsmMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.INSTALLED
     - typings.awsDashSdk.awsDashSdkStrings.INSTALLED_OTHER
+    - typings.awsDashSdk.awsDashSdkStrings.INSTALLED_PENDING_REBOOT
     - typings.awsDashSdk.awsDashSdkStrings.INSTALLED_REJECTED
     - typings.awsDashSdk.awsDashSdkStrings.MISSING
     - typings.awsDashSdk.awsDashSdkStrings.NOT_APPLICABLE
@@ -787,6 +817,7 @@ package object clientsSsmMod {
   type PatchIdList = js.Array[PatchId]
   type PatchInstalledCount = Double
   type PatchInstalledOtherCount = Double
+  type PatchInstalledPendingRebootCount = Double
   type PatchInstalledRejectedCount = Double
   type PatchKbNumber = java.lang.String
   type PatchLanguage = java.lang.String
@@ -797,7 +828,7 @@ package object clientsSsmMod {
   type PatchNotApplicableCount = Double
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.Scan
-    - typings.awsDashSdk.awsDashSdkStrings.Install
+    - typings.awsDashSdk.awsDashSdkStrings.Install_
     - java.lang.String
   */
   type PatchOperationType = _PatchOperationType | java.lang.String
@@ -836,21 +867,27 @@ package object clientsSsmMod {
   type PatchUnreportedNotApplicableCount = Double
   type PatchVendor = java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Online
+    - typings.awsDashSdk.awsDashSdkStrings.Online_
     - typings.awsDashSdk.awsDashSdkStrings.ConnectionLost
-    - typings.awsDashSdk.awsDashSdkStrings.Inactive
+    - typings.awsDashSdk.awsDashSdkStrings.Inactive_
     - java.lang.String
   */
   type PingStatus = _PingStatus | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Windows
-    - typings.awsDashSdk.awsDashSdkStrings.Linux
+    - typings.awsDashSdk.awsDashSdkStrings.Windows_
+    - typings.awsDashSdk.awsDashSdkStrings.Linux_
     - java.lang.String
   */
   type PlatformType = _PlatformType | java.lang.String
   type PlatformTypeList = js.Array[PlatformType]
   type Product = java.lang.String
   type PutInventoryMessage = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.RebootIfNeeded
+    - typings.awsDashSdk.awsDashSdkStrings.NoReboot
+    - java.lang.String
+  */
+  type RebootOption = _RebootOption | java.lang.String
   type Region = java.lang.String
   type Regions = js.Array[Region]
   type RegistrationLimit = Double
@@ -862,22 +899,32 @@ package object clientsSsmMod {
   type ResourceCountByStatus = java.lang.String
   type ResourceDataSyncAWSKMSKeyARN = java.lang.String
   type ResourceDataSyncCreatedTime = Date
+  type ResourceDataSyncIncludeFutureRegions = scala.Boolean
   type ResourceDataSyncItemList = js.Array[ResourceDataSyncItem]
+  type ResourceDataSyncLastModifiedTime = Date
   type ResourceDataSyncName = java.lang.String
+  type ResourceDataSyncOrganizationSourceType = java.lang.String
+  type ResourceDataSyncOrganizationalUnitId = java.lang.String
+  type ResourceDataSyncOrganizationalUnitList = js.Array[ResourceDataSyncOrganizationalUnit]
   type ResourceDataSyncS3BucketName = java.lang.String
   type ResourceDataSyncS3Format = JsonSerDe | java.lang.String
   type ResourceDataSyncS3Prefix = java.lang.String
   type ResourceDataSyncS3Region = java.lang.String
+  type ResourceDataSyncSourceRegion = java.lang.String
+  type ResourceDataSyncSourceRegionList = js.Array[ResourceDataSyncSourceRegion]
+  type ResourceDataSyncSourceType = java.lang.String
+  type ResourceDataSyncState = java.lang.String
+  type ResourceDataSyncType = java.lang.String
   type ResourceId = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.ManagedInstance
-    - typings.awsDashSdk.awsDashSdkStrings.Document
+    - typings.awsDashSdk.awsDashSdkStrings.Document_
     - typings.awsDashSdk.awsDashSdkStrings.EC2Instance
     - java.lang.String
   */
   type ResourceType = _ResourceType | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Document
+    - typings.awsDashSdk.awsDashSdkStrings.Document_
     - typings.awsDashSdk.awsDashSdkStrings.ManagedInstance
     - typings.awsDashSdk.awsDashSdkStrings.MaintenanceWindow
     - typings.awsDashSdk.awsDashSdkStrings.Parameter
@@ -901,8 +948,8 @@ package object clientsSsmMod {
     - typings.awsDashSdk.awsDashSdkStrings.InvokedAfter
     - typings.awsDashSdk.awsDashSdkStrings.InvokedBefore
     - typings.awsDashSdk.awsDashSdkStrings.Target
-    - typings.awsDashSdk.awsDashSdkStrings.Owner
-    - typings.awsDashSdk.awsDashSdkStrings.Status
+    - typings.awsDashSdk.awsDashSdkStrings.Owner_
+    - typings.awsDashSdk.awsDashSdkStrings.Status_
     - java.lang.String
   */
   type SessionFilterKey = _SessionFilterKey | java.lang.String
@@ -919,25 +966,26 @@ package object clientsSsmMod {
   type SessionMaxResults = Double
   type SessionOwner = java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Active
+    - typings.awsDashSdk.awsDashSdkStrings.Active_
     - typings.awsDashSdk.awsDashSdkStrings.History
     - java.lang.String
   */
   type SessionState = _SessionState | java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Connected
-    - typings.awsDashSdk.awsDashSdkStrings.Connecting
-    - typings.awsDashSdk.awsDashSdkStrings.Disconnected
-    - typings.awsDashSdk.awsDashSdkStrings.Terminated
-    - typings.awsDashSdk.awsDashSdkStrings.Terminating
-    - typings.awsDashSdk.awsDashSdkStrings.Failed
+    - typings.awsDashSdk.awsDashSdkStrings.Connected_
+    - typings.awsDashSdk.awsDashSdkStrings.Connecting_
+    - typings.awsDashSdk.awsDashSdkStrings.Disconnected_
+    - typings.awsDashSdk.awsDashSdkStrings.Terminated_
+    - typings.awsDashSdk.awsDashSdkStrings.Terminating_
+    - typings.awsDashSdk.awsDashSdkStrings.Failed_
     - java.lang.String
   */
   type SessionStatus = _SessionStatus | java.lang.String
   type SessionTarget = java.lang.String
+  type SharedDocumentVersion = java.lang.String
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Approve
-    - typings.awsDashSdk.awsDashSdkStrings.Reject
+    - typings.awsDashSdk.awsDashSdkStrings.Approve_
+    - typings.awsDashSdk.awsDashSdkStrings.Reject_
     - typings.awsDashSdk.awsDashSdkStrings.StartStep
     - typings.awsDashSdk.awsDashSdkStrings.StopStep
     - typings.awsDashSdk.awsDashSdkStrings.Resume
@@ -958,7 +1006,7 @@ package object clientsSsmMod {
     - typings.awsDashSdk.awsDashSdkStrings.StepExecutionStatus
     - typings.awsDashSdk.awsDashSdkStrings.StepExecutionId
     - typings.awsDashSdk.awsDashSdkStrings.StepName
-    - typings.awsDashSdk.awsDashSdkStrings.Action
+    - typings.awsDashSdk.awsDashSdkStrings.Action_
     - java.lang.String
   */
   type StepExecutionFilterKey = _StepExecutionFilterKey | java.lang.String
@@ -967,8 +1015,8 @@ package object clientsSsmMod {
   type StepExecutionFilterValueList = js.Array[StepExecutionFilterValue]
   type StepExecutionList = js.Array[StepExecution]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Complete
-    - typings.awsDashSdk.awsDashSdkStrings.Cancel
+    - typings.awsDashSdk.awsDashSdkStrings.Complete_
+    - typings.awsDashSdk.awsDashSdkStrings.Cancel_
     - java.lang.String
   */
   type StopType = _StopType | java.lang.String
@@ -1001,7 +1049,7 @@ package object clientsSsmMod {
   type Version = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2014-11-06`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | java.lang.String

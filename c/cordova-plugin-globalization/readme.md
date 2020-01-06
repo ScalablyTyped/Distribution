@@ -10,9 +10,9 @@ Cordova Globalization Plugin
 | ------------------ | :-------------: |
 | Full name          | cordova-plugin-globalization |
 | Keywords           | cordova, globalization, ecosystem:cordova, cordova-android, cordova-amazon-fireos, cordova-ubuntu, cordova-firefoxos, cordova-ios, cordova-wp7, cordova-wp8, cordova-windows, cordova-tizen, cordova-blackberry10 |
-| # releases         | 5 |
-| # dependents       | 10 |
-| # downloads        | 403874 |
+| # releases         | 2 |
+| # dependents       | 13 |
+| # downloads        | 460139 |
 | # stars            | 11 |
 
 ## Links

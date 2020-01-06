@@ -28,7 +28,7 @@ trait W2Popup
   def resize(width: Double, height: Double): Double = js.native
   def resize(width: Double, height: Double, callback: js.Function): Double = js.native
   @JSName("resize")
-  def resize_Unit(): Unit = js.native
+  def resize_Double(): Double = js.native
   def set(options: js.Object): Unit = js.native
   def toggle(): Unit = js.native
   def unlock(): Unit = js.native

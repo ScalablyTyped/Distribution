@@ -10,10 +10,10 @@ Object schema validation
 | ------------------ | :-------------: |
 | Full name          | joi |
 | Keywords           | hapi, schema, validation |
-| # releases         | 45 |
-| # dependents       | 3253 |
-| # downloads        | 100662184 |
-| # stars            | 279 |
+| # releases         | 24 |
+| # dependents       | 3261 |
+| # downloads        | 131040400 |
+| # stars            | 281 |
 
 ## Links
 - [Homepage](https://github.com/hapijs/joi)

@@ -11,8 +11,8 @@ lets you define html tags to inject with html-webpack-plugin
 | Full name          | html-webpack-tags-plugin |
 | Keywords           | webpack, plugin, html-webpack-plugin, html, tags, inject, include, assets |
 | # releases         | 19 |
-| # dependents       | 15 |
-| # downloads        | 72432 |
+| # dependents       | 20 |
+| # downloads        | 171002 |
 | # stars            | 0 |
 
 ## Links

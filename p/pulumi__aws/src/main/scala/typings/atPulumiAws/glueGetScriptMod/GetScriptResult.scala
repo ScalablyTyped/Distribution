@@ -6,22 +6,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetScriptResult extends js.Object {
-  val dagEdges: js.Array[GetScriptDagEdge]
-  val dagNodes: js.Array[GetScriptDagNode]
+  val dagEdges: js.Array[GetScriptDagEdge] = js.native
+  val dagNodes: js.Array[GetScriptDagNode] = js.native
   /**
     * id is the provider-assigned unique ID for this managed resource.
     */
-  val id: String
-  val language: js.UndefOr[String] = js.undefined
+  val id: String = js.native
+  val language: js.UndefOr[String] = js.native
   /**
     * The Python script generated from the DAG when the `language` argument is set to `PYTHON`.
     */
-  val pythonScript: String
+  val pythonScript: String = js.native
   /**
     * The Scala code generated from the DAG when the `language` argument is set to `SCALA`.
     */
-  val scalaCode: String
+  val scalaCode: String = js.native
 }
 
 object GetScriptResult {
@@ -34,8 +35,8 @@ object GetScriptResult {
     scalaCode: String,
     language: String = null
   ): GetScriptResult = {
-    val __obj = js.Dynamic.literal(dagEdges = dagEdges, dagNodes = dagNodes, id = id, pythonScript = pythonScript, scalaCode = scalaCode)
-    if (language != null) __obj.updateDynamic("language")(language)
+    val __obj = js.Dynamic.literal(dagEdges = dagEdges.asInstanceOf[js.Any], dagNodes = dagNodes.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], pythonScript = pythonScript.asInstanceOf[js.Any], scalaCode = scalaCode.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetScriptResult]
   }
 }

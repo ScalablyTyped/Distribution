@@ -10,9 +10,9 @@ Add accept parser to fastify
 | ------------------ | :-------------: |
 | Full name          | fastify-accepts |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 2 |
-| # downloads        | 24532 |
+| # releases         | 3 |
+| # dependents       | 3 |
+| # downloads        | 119523 |
 | # stars            | 0 |
 
 ## Links

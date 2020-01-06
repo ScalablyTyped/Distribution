@@ -11,8 +11,8 @@ React specific linting rules for ESLint
 | Full name          | eslint-plugin-react |
 | Keywords           | eslint, eslint-plugin, eslintplugin, react |
 | # releases         | 27 |
-| # dependents       | 5323 |
-| # downloads        | 167552773 |
+| # dependents       | 6373 |
+| # downloads        | 214926443 |
 | # stars            | 95 |
 
 ## Links

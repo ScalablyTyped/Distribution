@@ -12,7 +12,7 @@ Dank mnemonic seed phrases
 | Keywords           | bitcoin, cryptocurrency, seed, phrase, bip39 |
 | # releases         | 4 |
 | # dependents       | 1 |
-| # downloads        | 250 |
+| # downloads        | 443 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ Express middleware for instrumentation with Zipkin.js
 | ------------------ | :-------------: |
 | Full name          | zipkin-instrumentation-express |
 | Keywords           | - |
-| # releases         | 21 |
-| # dependents       | 21 |
-| # downloads        | 224203 |
+| # releases         | 28 |
+| # dependents       | 22 |
+| # downloads        | 232145 |
 | # stars            | 1 |
 
 ## Links

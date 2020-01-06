@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RuleGroupActivatedRuleAction extends js.Object {
   /**
     * The rule type, either [`REGULAR`](https://www.terraform.io/docs/providers/aws/r/wafregional_rule.html), [`RATE_BASED`](https://www.terraform.io/docs/providers/aws/r/wafregional_rate_based_rule.html), or `GROUP`. Defaults to `REGULAR`.
     */
-  var `type`: Input[String]
+  var `type`: Input[String] = js.native
 }
 
 object RuleGroupActivatedRuleAction {

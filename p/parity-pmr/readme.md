@@ -10,9 +10,9 @@ Parity's native market reporting protocol
 | ------------------ | :-------------: |
 | Full name          | parity-pmr |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 147 |
+| # downloads        | 279 |
 | # stars            | 0 |
 
 ## Links

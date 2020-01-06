@@ -10,9 +10,9 @@ Preact internationalization, done simply.
 | ------------------ | :-------------: |
 | Full name          | preact-i18n |
 | Keywords           | intl, internationalization, localization |
-| # releases         | 11 |
-| # dependents       | 1 |
-| # downloads        | 143275 |
+| # releases         | 9 |
+| # dependents       | 3 |
+| # downloads        | 243291 |
 | # stars            | 0 |
 
 ## Links

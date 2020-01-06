@@ -10,9 +10,9 @@ Spring Cloud Config Client for NodeJS
 | ------------------ | :-------------: |
 | Full name          | cloud-config-client |
 | Keywords           | Spring Cloud Config, configuration, client |
-| # releases         | 6 |
-| # dependents       | 5 |
-| # downloads        | 93978 |
+| # releases         | 7 |
+| # dependents       | 6 |
+| # downloads        | 131604 |
 | # stars            | 3 |
 
 ## Links

@@ -12,7 +12,7 @@ A kit of tools to speed D3 related project development.
 | Keywords           | d3, d3kit, visualization, javascript |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 6190 |
+| # downloads        | 6263 |
 | # stars            | 0 |
 
 ## Links

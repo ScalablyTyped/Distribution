@@ -11,8 +11,8 @@ OAuth 2.0 client password authentication strategy for Passport.
 | Full name          | passport-oauth2-client-password |
 | Keywords           | passport, oauth, oauth2, authn, authentication, authz, authorization, api |
 | # releases         | 1 |
-| # dependents       | 89 |
-| # downloads        | 1490959 |
+| # dependents       | 96 |
+| # downloads        | 1612730 |
 | # stars            | 7 |
 
 ## Links

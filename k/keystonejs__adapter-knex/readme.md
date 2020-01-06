@@ -10,9 +10,9 @@ KeystoneJS Knex Database Adapter
 | ------------------ | :-------------: |
 | Full name          | @keystonejs/adapter-knex |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 6 |
 | # dependents       | 5 |
-| # downloads        | 2389 |
+| # downloads        | 11411 |
 | # stars            | 0 |
 
 ## Links

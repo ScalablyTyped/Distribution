@@ -10,9 +10,9 @@ Apollo GraphQL utility library
 | ------------------ | :-------------: |
 | Full name          | apollo-graphql |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 3 |
-| # downloads        | 1369133 |
+| # releases         | 21 |
+| # dependents       | 14 |
+| # downloads        | 15764025 |
 | # stars            | 0 |
 
 ## Links

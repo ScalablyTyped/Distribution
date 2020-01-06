@@ -41,15 +41,15 @@ class Session () extends EventEmitter {
     */
   def clearCache(callback: js.Function1[/* error */ Double, Unit]): Unit = js.native
   /**
-    * Clears the host resolver cache. Deprecated Soon
-    */
-  def clearHostResolverCache(): Unit = js.native
-  def clearHostResolverCache(callback: js.Function): Unit = js.native
-  /**
     * Clears the host resolver cache.
     */
+  def clearHostResolverCache(): js.Promise[Unit] = js.native
+  def clearHostResolverCache(callback: js.Function): Unit = js.native
+  /**
+    * Clears the host resolver cache. Deprecated Soon
+    */
   @JSName("clearHostResolverCache")
-  def clearHostResolverCache_Promise(): js.Promise[Unit] = js.native
+  def clearHostResolverCache_Unit(): Unit = js.native
   def clearStorageData(): js.Promise[Unit] = js.native
   def clearStorageData(options: ClearStorageDataOptions): js.Promise[Unit] = js.native
   def clearStorageData(options: ClearStorageDataOptions, callback: js.Function): Unit = js.native

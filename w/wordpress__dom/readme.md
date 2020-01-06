@@ -10,9 +10,9 @@ DOM utilities module for WordPress.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/dom |
 | Keywords           | wordpress, dom, utils |
-| # releases         | 27 |
-| # dependents       | 5 |
-| # downloads        | 89316 |
+| # releases         | 32 |
+| # dependents       | 6 |
+| # downloads        | 175880 |
 | # stars            | 0 |
 
 ## Links

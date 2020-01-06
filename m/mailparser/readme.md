@@ -10,9 +10,9 @@ Parse e-mails
 | ------------------ | :-------------: |
 | Full name          | mailparser |
 | Keywords           | - |
-| # releases         | 18 |
-| # dependents       | 185 |
-| # downloads        | 4108472 |
+| # releases         | 24 |
+| # dependents       | 210 |
+| # downloads        | 5288794 |
 | # stars            | 27 |
 
 ## Links

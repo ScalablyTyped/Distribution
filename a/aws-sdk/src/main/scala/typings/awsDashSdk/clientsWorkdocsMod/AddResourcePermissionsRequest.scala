@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AddResourcePermissionsRequest extends js.Object {
   /**
     * Amazon WorkDocs authentication token. Do not set this field when using administrative API actions, as in accessing the API using AWS credentials.
     */
-  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.undefined
+  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.native
   /**
     * The notification options.
     */
-  var NotificationOptions: js.UndefOr[typings.awsDashSdk.clientsWorkdocsMod.NotificationOptions] = js.undefined
+  var NotificationOptions: js.UndefOr[typings.awsDashSdk.clientsWorkdocsMod.NotificationOptions] = js.native
   /**
     * The users, groups, or organization being granted permission.
     */
-  var Principals: SharePrincipalList
+  var Principals: SharePrincipalList = js.native
   /**
     * The ID of the resource.
     */
-  var ResourceId: ResourceIdType
+  var ResourceId: ResourceIdType = js.native
 }
 
 object AddResourcePermissionsRequest {
@@ -31,9 +32,9 @@ object AddResourcePermissionsRequest {
     AuthenticationToken: AuthenticationHeaderType = null,
     NotificationOptions: NotificationOptions = null
   ): AddResourcePermissionsRequest = {
-    val __obj = js.Dynamic.literal(Principals = Principals, ResourceId = ResourceId)
-    if (AuthenticationToken != null) __obj.updateDynamic("AuthenticationToken")(AuthenticationToken)
-    if (NotificationOptions != null) __obj.updateDynamic("NotificationOptions")(NotificationOptions)
+    val __obj = js.Dynamic.literal(Principals = Principals.asInstanceOf[js.Any], ResourceId = ResourceId.asInstanceOf[js.Any])
+    if (AuthenticationToken != null) __obj.updateDynamic("AuthenticationToken")(AuthenticationToken.asInstanceOf[js.Any])
+    if (NotificationOptions != null) __obj.updateDynamic("NotificationOptions")(NotificationOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddResourcePermissionsRequest]
   }
 }

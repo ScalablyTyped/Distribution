@@ -12,7 +12,7 @@ Express middleware to bind the correct host
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 1359 |
+| # downloads        | 1436 |
 | # stars            | 0 |
 
 ## Links

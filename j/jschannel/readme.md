@@ -12,7 +12,7 @@ Mozilla's Channel mechanism built on top of post-message
 | Keywords           | jschannel, postmessage, mozilla, iframe |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 29463 |
+| # downloads        | 36848 |
 | # stars            | 0 |
 
 ## Links

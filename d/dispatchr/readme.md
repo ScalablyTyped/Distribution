@@ -10,9 +10,9 @@ A Flux dispatcher for applications that run on the server and the client.
 | ------------------ | :-------------: |
 | Full name          | dispatchr |
 | Keywords           | yahoo, flux, react, dispatcher |
-| # releases         | 2 |
-| # dependents       | 5 |
-| # downloads        | 147542 |
+| # releases         | 0 |
+| # dependents       | 6 |
+| # downloads        | 172647 |
 | # stars            | 8 |
 
 ## Links

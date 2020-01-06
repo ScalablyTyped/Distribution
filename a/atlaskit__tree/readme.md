@@ -10,9 +10,9 @@ A React Component for displaying expandable and sortable tree hierarchies
 | ------------------ | :-------------: |
 | Full name          | @atlaskit/tree |
 | Keywords           | atlaskit, react, ui |
-| # releases         | 36 |
-| # dependents       | 1 |
-| # downloads        | 26223 |
+| # releases         | 50 |
+| # dependents       | 3 |
+| # downloads        | 82311 |
 | # stars            | 0 |
 
 ## Links

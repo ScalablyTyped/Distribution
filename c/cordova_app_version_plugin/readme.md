@@ -10,9 +10,9 @@ Read the version of the App from config.xml and make it available in js
 | ------------------ | :-------------: |
 | Full name          | cordova_app_version_plugin |
 | Keywords           | cordova, appversion, version, ecosystem:cordova, cordova-android, cordova-amazon-fireos, cordova-ubuntu, cordova-ios, cordova-blackberry10, cordova-wp7, cordova-wp8, cordova-windows8, cordova-windows, cordova-browser |
-| # releases         | 0 |
+| # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 930 |
+| # downloads        | 2271 |
 | # stars            | 0 |
 
 ## Links

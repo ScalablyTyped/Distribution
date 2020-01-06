@@ -10,9 +10,9 @@ Interact with HTTP status code
 | ------------------ | :-------------: |
 | Full name          | http-status |
 | Keywords           | http, express, connect |
-| # releases         | 8 |
-| # dependents       | 330 |
-| # downloads        | 10562617 |
+| # releases         | 11 |
+| # dependents       | 374 |
+| # downloads        | 12574462 |
 | # stars            | 27 |
 
 ## Links

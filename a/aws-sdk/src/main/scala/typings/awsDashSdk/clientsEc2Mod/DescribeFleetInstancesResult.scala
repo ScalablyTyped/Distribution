@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DescribeFleetInstancesResult extends js.Object {
   /**
     * The running instances. This list is refreshed periodically and might be out of date.
     */
-  var ActiveInstances: js.UndefOr[ActiveInstanceSet] = js.undefined
+  var ActiveInstances: js.UndefOr[ActiveInstanceSet] = js.native
   /**
     * The ID of the EC2 Fleet.
     */
-  var FleetId: js.UndefOr[FleetIdentifier] = js.undefined
+  var FleetId: js.UndefOr[FleetIdentifier] = js.native
   /**
     * The token for the next set of results.
     */
-  var NextToken: js.UndefOr[String] = js.undefined
+  var NextToken: js.UndefOr[String] = js.native
 }
 
 object DescribeFleetInstancesResult {
@@ -27,9 +28,9 @@ object DescribeFleetInstancesResult {
     NextToken: String = null
   ): DescribeFleetInstancesResult = {
     val __obj = js.Dynamic.literal()
-    if (ActiveInstances != null) __obj.updateDynamic("ActiveInstances")(ActiveInstances)
-    if (FleetId != null) __obj.updateDynamic("FleetId")(FleetId)
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
+    if (ActiveInstances != null) __obj.updateDynamic("ActiveInstances")(ActiveInstances.asInstanceOf[js.Any])
+    if (FleetId != null) __obj.updateDynamic("FleetId")(FleetId.asInstanceOf[js.Any])
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeFleetInstancesResult]
   }
 }

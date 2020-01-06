@@ -10,9 +10,9 @@ SVG path bounding box calculator
 | ------------------ | :-------------: |
 | Full name          | svg-path-bounding-box |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 6 |
-| # downloads        | 132547 |
+| # releases         | 0 |
+| # dependents       | 8 |
+| # downloads        | 348416 |
 | # stars            | 1 |
 
 ## Links

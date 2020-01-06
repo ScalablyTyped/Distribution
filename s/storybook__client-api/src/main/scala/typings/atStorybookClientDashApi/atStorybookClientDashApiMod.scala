@@ -34,7 +34,7 @@ object atStorybookClientDashApiMod extends js.Object {
   @js.native
   class StoryStore protected ()
     extends typings.atStorybookClientDashApi.distStoryUnderscoreStoreMod.default {
-    def this(params: Anon_Channel_1428041883) = this()
+    def this(params: Anon_Channel_287620681) = this()
   }
   
   def applyHooks(

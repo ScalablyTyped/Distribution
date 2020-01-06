@@ -11,8 +11,8 @@ JSON.minify() minifies blocks of JSON-like content into valid JSON by removing a
 | Full name          | jsonminify |
 | Keywords           | node, json, JSON-like, comment |
 | # releases         | 1 |
-| # dependents       | 60 |
-| # downloads        | 1658261 |
+| # dependents       | 64 |
+| # downloads        | 1881358 |
 | # stars            | 6 |
 
 ## Links

@@ -10,9 +10,9 @@ Pure-JS ADLER-32
 | ------------------ | :-------------: |
 | Full name          | adler-32 |
 | Keywords           | adler32, checksum |
-| # releases         | 3 |
-| # dependents       | 76 |
-| # downloads        | 9139345 |
+| # releases         | 2 |
+| # dependents       | 116 |
+| # downloads        | 16678538 |
 | # stars            | 2 |
 
 ## Links

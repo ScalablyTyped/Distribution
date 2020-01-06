@@ -5,11 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/ExpansionPanel/ExpansionPanel.ExpansionPanelClassKey>> */
+@js.native
 trait PartialClassNameMapExpansionPanelClassKey extends js.Object {
-  var disabled: js.UndefOr[String] = js.undefined
-  var expanded: js.UndefOr[String] = js.undefined
-  var root: js.UndefOr[String] = js.undefined
-  var rounded: js.UndefOr[String] = js.undefined
+  var disabled: js.UndefOr[String] = js.native
+  var expanded: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.native
+  var rounded: js.UndefOr[String] = js.native
 }
 
 object PartialClassNameMapExpansionPanelClassKey {

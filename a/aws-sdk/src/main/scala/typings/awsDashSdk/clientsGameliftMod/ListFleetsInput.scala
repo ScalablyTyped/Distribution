@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ListFleetsInput extends js.Object {
   /**
-    * Unique identifier for a build to return fleets for. Use this parameter to return only fleets using the specified build. To retrieve all fleets, leave this parameter empty.
+    * A unique identifier for a build to return fleets for. Use this parameter to return only fleets using the specified build. Use either the build ID or ARN value.To retrieve all fleets, leave this parameter empty.
     */
-  var BuildId: js.UndefOr[typings.awsDashSdk.clientsGameliftMod.BuildId] = js.undefined
+  var BuildId: js.UndefOr[typings.awsDashSdk.clientsGameliftMod.BuildId] = js.native
   /**
-    * Maximum number of results to return. Use this parameter with NextToken to get results as a set of sequential pages.
+    * The maximum number of results to return. Use this parameter with NextToken to get results as a set of sequential pages.
     */
-  var Limit: js.UndefOr[PositiveInteger] = js.undefined
+  var Limit: js.UndefOr[PositiveInteger] = js.native
   /**
     * Token that indicates the start of the next sequential page of results. Use the token that is returned with a previous call to this action. To start at the beginning of the result set, do not specify a value.
     */
-  var NextToken: js.UndefOr[NonZeroAndMaxString] = js.undefined
+  var NextToken: js.UndefOr[NonZeroAndMaxString] = js.native
   /**
-    * Unique identifier for a Realtime script to return fleets for. Use this parameter to return only fleets using the specified script. To retrieve all fleets, leave this parameter empty.
+    * A unique identifier for a Realtime script to return fleets for. Use this parameter to return only fleets using the specified script. Use either the script ID or ARN value.To retrieve all fleets, leave this parameter empty.
     */
-  var ScriptId: js.UndefOr[typings.awsDashSdk.clientsGameliftMod.ScriptId] = js.undefined
+  var ScriptId: js.UndefOr[typings.awsDashSdk.clientsGameliftMod.ScriptId] = js.native
 }
 
 object ListFleetsInput {
@@ -32,10 +33,10 @@ object ListFleetsInput {
     ScriptId: ScriptId = null
   ): ListFleetsInput = {
     val __obj = js.Dynamic.literal()
-    if (BuildId != null) __obj.updateDynamic("BuildId")(BuildId)
+    if (BuildId != null) __obj.updateDynamic("BuildId")(BuildId.asInstanceOf[js.Any])
     if (Limit != null) __obj.updateDynamic("Limit")(Limit.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
-    if (ScriptId != null) __obj.updateDynamic("ScriptId")(ScriptId)
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
+    if (ScriptId != null) __obj.updateDynamic("ScriptId")(ScriptId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListFleetsInput]
   }
 }

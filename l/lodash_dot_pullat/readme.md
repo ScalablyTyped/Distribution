@@ -12,7 +12,7 @@ The lodash method `_.pullAt` exported as a module.
 | Keywords           | lodash-modularized, pullat |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 27682 |
+| # downloads        | 39397 |
 | # stars            | 0 |
 
 ## Links

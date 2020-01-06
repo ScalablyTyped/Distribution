@@ -12,7 +12,7 @@ Swagger loader and middleware for Hapi
 | Keywords           | swagger, api, apis, hapi |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 6807 |
+| # downloads        | 5882 |
 | # stars            | 0 |
 
 ## Links

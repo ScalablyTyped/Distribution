@@ -12,7 +12,7 @@ Render LaTeX in React apps
 | Keywords           | react, katex, latex, math |
 | # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 2570 |
+| # downloads        | 9394 |
 | # stars            | 0 |
 
 ## Links

@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RouteSpec extends js.Object {
   /**
     * The HTTP routing information for the route.
     */
-  var httpRoute: js.UndefOr[Input[RouteSpecHttpRoute]] = js.undefined
+  var httpRoute: js.UndefOr[Input[RouteSpecHttpRoute]] = js.native
   /**
     * The TCP routing information for the route.
     */
-  var tcpRoute: js.UndefOr[Input[RouteSpecTcpRoute]] = js.undefined
+  var tcpRoute: js.UndefOr[Input[RouteSpecTcpRoute]] = js.native
 }
 
 object RouteSpec {

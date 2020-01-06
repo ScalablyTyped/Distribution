@@ -9,91 +9,92 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LaunchConfigurationArgs extends js.Object {
   /**
     * Associate a public ip address with an instance in a VPC.
     */
-  val associatePublicIpAddress: js.UndefOr[Input[Boolean]] = js.undefined
+  val associatePublicIpAddress: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Additional EBS block devices to attach to the
     * instance.  See Block Devices below for details.
     */
-  val ebsBlockDevices: js.UndefOr[Input[js.Array[Input[LaunchConfigurationEbsBlockDevice]]]] = js.undefined
+  val ebsBlockDevices: js.UndefOr[Input[js.Array[Input[LaunchConfigurationEbsBlockDevice]]]] = js.native
   /**
     * If true, the launched EC2 instance will be EBS-optimized.
     */
-  val ebsOptimized: js.UndefOr[Input[Boolean]] = js.undefined
+  val ebsOptimized: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Enables/disables detailed monitoring. This is enabled by default.
     */
-  val enableMonitoring: js.UndefOr[Input[Boolean]] = js.undefined
+  val enableMonitoring: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Customize Ephemeral (also known as
     * "Instance Store") volumes on the instance. See Block Devices below for details.
     */
-  val ephemeralBlockDevices: js.UndefOr[Input[js.Array[Input[LaunchConfigurationEphemeralBlockDevice]]]] = js.undefined
+  val ephemeralBlockDevices: js.UndefOr[Input[js.Array[Input[LaunchConfigurationEphemeralBlockDevice]]]] = js.native
   /**
     * The name attribute of the IAM instance profile to associate
     * with launched instances.
     */
-  val iamInstanceProfile: js.UndefOr[Input[String | InstanceProfile]] = js.undefined
+  val iamInstanceProfile: js.UndefOr[Input[String | InstanceProfile]] = js.native
   /**
     * The EC2 image ID to launch.
     */
-  val imageId: Input[String]
+  val imageId: Input[String] = js.native
   /**
     * The size of instance to launch.
     */
-  val instanceType: Input[String]
+  val instanceType: Input[String] = js.native
   /**
     * The key name that should be used for the instance.
     */
-  val keyName: js.UndefOr[Input[String]] = js.undefined
+  val keyName: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the launch configuration. If you leave
     * this blank, this provider will auto-generate a unique name.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * Creates a unique name beginning with the specified
     * prefix. Conflicts with `name`.
     */
-  val namePrefix: js.UndefOr[Input[String]] = js.undefined
+  val namePrefix: js.UndefOr[Input[String]] = js.native
   /**
     * The tenancy of the instance. Valid values are
     * `"default"` or `"dedicated"`, see [AWS's Create Launch Configuration](http://docs.aws.amazon.com/AutoScaling/latest/APIReference/API_CreateLaunchConfiguration.html)
     * for more details
     */
-  val placementTenancy: js.UndefOr[Input[String]] = js.undefined
+  val placementTenancy: js.UndefOr[Input[String]] = js.native
   /**
     * Customize details about the root block
     * device of the instance. See Block Devices below for details.
     */
-  val rootBlockDevice: js.UndefOr[Input[LaunchConfigurationRootBlockDevice]] = js.undefined
+  val rootBlockDevice: js.UndefOr[Input[LaunchConfigurationRootBlockDevice]] = js.native
   /**
     * A list of associated security group IDS.
     */
-  val securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val securityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The maximum price to use for reserving spot instances.
     */
-  val spotPrice: js.UndefOr[Input[String]] = js.undefined
+  val spotPrice: js.UndefOr[Input[String]] = js.native
   /**
     * The user data to provide when launching the instance. Do not pass gzip-compressed data via this argument; see `userDataBase64` instead.
     */
-  val userData: js.UndefOr[Input[String]] = js.undefined
+  val userData: js.UndefOr[Input[String]] = js.native
   /**
     * Can be used instead of `userData` to pass base64-encoded binary data directly. Use this instead of `userData` whenever the value is not a valid UTF-8 string. For example, gzip-encoded user data must be base64-encoded and passed via this argument to avoid corruption.
     */
-  val userDataBase64: js.UndefOr[Input[String]] = js.undefined
+  val userDataBase64: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of a ClassicLink-enabled VPC. Only applies to EC2-Classic instances. (eg. `vpc-2730681a`)
     */
-  val vpcClassicLinkId: js.UndefOr[Input[String]] = js.undefined
+  val vpcClassicLinkId: js.UndefOr[Input[String]] = js.native
   /**
     * The IDs of one or more security groups for the specified ClassicLink-enabled VPC (eg. `sg-46ae3d11`).
     */
-  val vpcClassicLinkSecurityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val vpcClassicLinkSecurityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
 }
 
 object LaunchConfigurationArgs {

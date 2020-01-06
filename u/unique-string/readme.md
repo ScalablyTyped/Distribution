@@ -9,10 +9,10 @@ Generate a unique random string
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | unique-string |
-| Keywords           | unique, string, random, uniq, str, rand, text, id, identifier, slug, hex |
-| # releases         | 1 |
-| # dependents       | 33 |
-| # downloads        | 118722561 |
+| Keywords           | unique, string, random, text, id, identifier, slug, hex |
+| # releases         | 2 |
+| # dependents       | 37 |
+| # downloads        | 209285781 |
 | # stars            | 3 |
 
 ## Links

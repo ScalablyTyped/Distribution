@@ -5,50 +5,51 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AccountPasswordPolicyState extends js.Object {
   /**
     * Whether to allow users to change their own password
     */
-  val allowUsersToChangePassword: js.UndefOr[Input[Boolean]] = js.undefined
+  val allowUsersToChangePassword: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Indicates whether passwords in the account expire.
     * Returns `true` if `maxPasswordAge` contains a value greater than `0`.
     * Returns `false` if it is `0` or _not present_.
     */
-  val expirePasswords: js.UndefOr[Input[Boolean]] = js.undefined
+  val expirePasswords: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Whether users are prevented from setting a new password after their password has expired
     * (i.e. require administrator reset)
     */
-  val hardExpiry: js.UndefOr[Input[Boolean]] = js.undefined
+  val hardExpiry: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The number of days that an user password is valid.
     */
-  val maxPasswordAge: js.UndefOr[Input[Double]] = js.undefined
+  val maxPasswordAge: js.UndefOr[Input[Double]] = js.native
   /**
     * Minimum length to require for user passwords.
     */
-  val minimumPasswordLength: js.UndefOr[Input[Double]] = js.undefined
+  val minimumPasswordLength: js.UndefOr[Input[Double]] = js.native
   /**
     * The number of previous passwords that users are prevented from reusing.
     */
-  val passwordReusePrevention: js.UndefOr[Input[Double]] = js.undefined
+  val passwordReusePrevention: js.UndefOr[Input[Double]] = js.native
   /**
     * Whether to require lowercase characters for user passwords.
     */
-  val requireLowercaseCharacters: js.UndefOr[Input[Boolean]] = js.undefined
+  val requireLowercaseCharacters: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Whether to require numbers for user passwords.
     */
-  val requireNumbers: js.UndefOr[Input[Boolean]] = js.undefined
+  val requireNumbers: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Whether to require symbols for user passwords.
     */
-  val requireSymbols: js.UndefOr[Input[Boolean]] = js.undefined
+  val requireSymbols: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Whether to require uppercase characters for user passwords.
     */
-  val requireUppercaseCharacters: js.UndefOr[Input[Boolean]] = js.undefined
+  val requireUppercaseCharacters: js.UndefOr[Input[Boolean]] = js.native
 }
 
 object AccountPasswordPolicyState {

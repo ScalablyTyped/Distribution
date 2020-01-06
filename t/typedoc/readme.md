@@ -4,19 +4,19 @@
 Typings are for version 0.15.6
 
 ## Library description:
-Create api documentations for typescript projects.
+Create api documentation for TypeScript projects.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | typedoc |
-| Keywords           | typescript, documentation, generator, gruntplugin |
-| # releases         | 17 |
-| # dependents       | 134 |
-| # downloads        | 4029590 |
+| Keywords           | typescript, documentation, generator |
+| # releases         | 20 |
+| # dependents       | 188 |
+| # downloads        | 6869602 |
 | # stars            | 16 |
 
 ## Links
-- [Homepage](http://typedoc.org)
+- [Homepage](https://typedoc.org)
 - [Bugs](https://github.com/TypeStrong/TypeDoc/issues)
 - [Repository](https://github.com/TypeStrong/TypeDoc)
 - [Npm](https://www.npmjs.com/package/typedoc)

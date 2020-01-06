@@ -58,7 +58,7 @@ object libPoolMod extends js.Object {
     def _doCreate(): Unit = js.native
     def _executeEventHandlers(
       eventName: String,
-      /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
     ): Unit = js.native
     def _hasFreeResources(): Boolean = js.native
     def _logDestroyerError(eventId: Double, resource: T, err: Error): Unit = js.native

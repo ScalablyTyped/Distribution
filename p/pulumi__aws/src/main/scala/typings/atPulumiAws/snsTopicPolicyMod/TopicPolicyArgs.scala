@@ -5,15 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TopicPolicyArgs extends js.Object {
   /**
     * The ARN of the SNS topic
     */
-  val arn: Input[String]
-  /**
-    * The fully-formed AWS policy as JSON.
-    */
-  val policy: Input[String]
+  val arn: Input[String] = js.native
+  val policy: Input[String] = js.native
 }
 
 object TopicPolicyArgs {

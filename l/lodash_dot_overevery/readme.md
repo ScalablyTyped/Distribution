@@ -12,7 +12,7 @@ The lodash method `_.overEvery` exported as a module.
 | Keywords           | lodash-modularized, overevery |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 4148 |
+| # downloads        | 11713 |
 | # stars            | 0 |
 
 ## Links

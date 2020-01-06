@@ -4,28 +4,39 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait KeyPair extends js.Object {
   /**
     * The SHA-1 digest of the DER encoded private key.
     */
-  var KeyFingerprint: js.UndefOr[String] = js.undefined
+  var KeyFingerprint: js.UndefOr[String] = js.native
   /**
     * An unencrypted PEM encoded RSA private key.
     */
-  var KeyMaterial: js.UndefOr[String] = js.undefined
+  var KeyMaterial: js.UndefOr[SensitiveUserData] = js.native
   /**
     * The name of the key pair.
     */
-  var KeyName: js.UndefOr[String] = js.undefined
+  var KeyName: js.UndefOr[String] = js.native
+  /**
+    * The ID of the key pair.
+    */
+  var KeyPairId: js.UndefOr[String] = js.native
 }
 
 object KeyPair {
   @scala.inline
-  def apply(KeyFingerprint: String = null, KeyMaterial: String = null, KeyName: String = null): KeyPair = {
+  def apply(
+    KeyFingerprint: String = null,
+    KeyMaterial: SensitiveUserData = null,
+    KeyName: String = null,
+    KeyPairId: String = null
+  ): KeyPair = {
     val __obj = js.Dynamic.literal()
-    if (KeyFingerprint != null) __obj.updateDynamic("KeyFingerprint")(KeyFingerprint)
-    if (KeyMaterial != null) __obj.updateDynamic("KeyMaterial")(KeyMaterial)
-    if (KeyName != null) __obj.updateDynamic("KeyName")(KeyName)
+    if (KeyFingerprint != null) __obj.updateDynamic("KeyFingerprint")(KeyFingerprint.asInstanceOf[js.Any])
+    if (KeyMaterial != null) __obj.updateDynamic("KeyMaterial")(KeyMaterial.asInstanceOf[js.Any])
+    if (KeyName != null) __obj.updateDynamic("KeyName")(KeyName.asInstanceOf[js.Any])
+    if (KeyPairId != null) __obj.updateDynamic("KeyPairId")(KeyPairId.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyPair]
   }
 }

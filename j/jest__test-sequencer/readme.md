@@ -11,7 +11,7 @@ Typings are for version 24.9.0
 | Keywords           | - |
 | # releases         | 7 |
 | # dependents       | 1 |
-| # downloads        | 69764212 |
+| # downloads        | 94282404 |
 | # stars            | 0 |
 
 ## Links

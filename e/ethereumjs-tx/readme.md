@@ -4,15 +4,15 @@
 Typings are for version 2.1.2
 
 ## Library description:
-An simple module for creating, manipulating and signing ethereum transactions
+A simple module for creating, manipulating and signing Ethereum transactions
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | ethereumjs-tx |
 | Keywords           | ethereum, transactions |
-| # releases         | 9 |
-| # dependents       | 343 |
-| # downloads        | 1819335 |
+| # releases         | 7 |
+| # dependents       | 477 |
+| # downloads        | 2708231 |
 | # stars            | 5 |
 
 ## Links

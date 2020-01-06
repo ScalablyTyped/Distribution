@@ -10,9 +10,9 @@ Check if your code is running as an npm script
 | ------------------ | :-------------: |
 | Full name          | is-npm |
 | Keywords           | npm, is, check, detect, env, environment, run, script |
-| # releases         | 3 |
-| # dependents       | 22 |
-| # downloads        | 123183213 |
+| # releases         | 4 |
+| # dependents       | 27 |
+| # downloads        | 173173714 |
 | # stars            | 0 |
 
 ## Links

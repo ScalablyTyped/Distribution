@@ -9,16 +9,16 @@ Runs typescript type checker and linter on separate process.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | fork-ts-checker-webpack-plugin |
-| Keywords           | webpack, plugin, typescript, type, checker, linter, fork, fast, speed, ts-loader, awesome-typescript-loader, increment, webpack-plugin |
-| # releases         | 55 |
-| # dependents       | 415 |
-| # downloads        | 13216446 |
-| # stars            | 2 |
+| Keywords           | awesome-typescript-loader, checker, fast, fork, increment, linter, plugin, speed, ts-loader, type, typescript, webpack, webpack-plugin |
+| # releases         | 71 |
+| # dependents       | 585 |
+| # downloads        | 71003701 |
+| # stars            | 3 |
 
 ## Links
-- [Homepage](https://github.com/Realytics/fork-ts-checker-webpack-plugin#readme)
-- [Bugs](https://github.com/Realytics/fork-ts-checker-webpack-plugin/issues)
-- [Repository](https://github.com/Realytics/fork-ts-checker-webpack-plugin)
+- [Homepage](https://github.com/TypeStrong/fork-ts-checker-webpack-plugin#readme)
+- [Bugs](https://github.com/TypeStrong/fork-ts-checker-webpack-plugin/issues)
+- [Repository](https://github.com/TypeStrong/fork-ts-checker-webpack-plugin)
 - [Npm](https://www.npmjs.com/package/fork-ts-checker-webpack-plugin)
     
 

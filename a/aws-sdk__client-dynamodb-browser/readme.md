@@ -10,9 +10,9 @@ Browser SDK for Amazon DynamoDB
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/client-dynamodb-browser |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 10 |
 | # dependents       | 0 |
-| # downloads        | 126 |
+| # downloads        | 447 |
 | # stars            | 0 |
 
 ## Links

@@ -11,8 +11,8 @@ Get all children of a pid
 | Full name          | ps-tree |
 | Keywords           | - |
 | # releases         | 3 |
-| # dependents       | 159 |
-| # downloads        | 54741644 |
+| # dependents       | 173 |
+| # downloads        | 38997015 |
 | # stars            | 10 |
 
 ## Links

@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait HttpRetryPolicy extends js.Object {
   /**
     * Specify at least one of the following values.
@@ -29,19 +30,19 @@ trait HttpRetryPolicy extends js.Object {
     
     
     */
-  var httpRetryEvents: js.UndefOr[HttpRetryPolicyEvents] = js.undefined
+  var httpRetryEvents: js.UndefOr[HttpRetryPolicyEvents] = js.native
   /**
-    * The maximum number of retry attempts. If no value is specified, the default is 1.
+    * The maximum number of retry attempts.
     */
-  var maxRetries: MaxRetries
+  var maxRetries: MaxRetries = js.native
   /**
-    * An object that represents the retry duration.
+    * An object that represents a duration of time.
     */
-  var perRetryTimeout: Duration
+  var perRetryTimeout: Duration = js.native
   /**
     * Specify a valid value.
     */
-  var tcpRetryEvents: js.UndefOr[TcpRetryPolicyEvents] = js.undefined
+  var tcpRetryEvents: js.UndefOr[TcpRetryPolicyEvents] = js.native
 }
 
 object HttpRetryPolicy {
@@ -52,9 +53,9 @@ object HttpRetryPolicy {
     httpRetryEvents: HttpRetryPolicyEvents = null,
     tcpRetryEvents: TcpRetryPolicyEvents = null
   ): HttpRetryPolicy = {
-    val __obj = js.Dynamic.literal(maxRetries = maxRetries, perRetryTimeout = perRetryTimeout)
-    if (httpRetryEvents != null) __obj.updateDynamic("httpRetryEvents")(httpRetryEvents)
-    if (tcpRetryEvents != null) __obj.updateDynamic("tcpRetryEvents")(tcpRetryEvents)
+    val __obj = js.Dynamic.literal(maxRetries = maxRetries.asInstanceOf[js.Any], perRetryTimeout = perRetryTimeout.asInstanceOf[js.Any])
+    if (httpRetryEvents != null) __obj.updateDynamic("httpRetryEvents")(httpRetryEvents.asInstanceOf[js.Any])
+    if (tcpRetryEvents != null) __obj.updateDynamic("tcpRetryEvents")(tcpRetryEvents.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpRetryPolicy]
   }
 }

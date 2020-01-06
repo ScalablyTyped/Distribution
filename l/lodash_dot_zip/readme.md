@@ -11,8 +11,8 @@ The lodash method `_.zip` exported as a module.
 | Full name          | lodash.zip |
 | Keywords           | lodash-modularized, zip |
 | # releases         | 0 |
-| # dependents       | 51 |
-| # downloads        | 3762248 |
+| # dependents       | 55 |
+| # downloads        | 11594133 |
 | # stars            | 0 |
 
 ## Links

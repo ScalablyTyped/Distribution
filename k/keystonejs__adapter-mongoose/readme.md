@@ -10,9 +10,9 @@ KeystoneJS Mongoose Database adapter.
 | ------------------ | :-------------: |
 | Full name          | @keystonejs/adapter-mongoose |
 | Keywords           | - |
-| # releases         | 6 |
+| # releases         | 8 |
 | # dependents       | 4 |
-| # downloads        | 2644 |
+| # downloads        | 13398 |
 | # stars            | 0 |
 
 ## Links

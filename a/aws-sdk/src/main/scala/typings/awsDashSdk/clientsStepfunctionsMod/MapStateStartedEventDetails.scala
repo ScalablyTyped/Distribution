@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MapStateStartedEventDetails extends js.Object {
   /**
     * The size of the array for Map state iterations.
     */
-  var length: js.UndefOr[UnsignedInteger] = js.undefined
+  var length: js.UndefOr[UnsignedInteger] = js.native
 }
 
 object MapStateStartedEventDetails {

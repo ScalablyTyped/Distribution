@@ -10,9 +10,9 @@ JSON does not handle circular references. This version does
 | ------------------ | :-------------: |
 | Full name          | circular-json |
 | Keywords           | JSON, circular, reference, recursive, recursion, parse, stringify |
-| # releases         | 13 |
-| # dependents       | 227 |
-| # downloads        | 210360109 |
+| # releases         | 8 |
+| # dependents       | 248 |
+| # downloads        | 215270647 |
 | # stars            | 16 |
 
 ## Links

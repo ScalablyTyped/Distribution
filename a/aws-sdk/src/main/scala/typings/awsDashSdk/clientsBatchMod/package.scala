@@ -41,6 +41,13 @@ package object clientsBatchMod {
   */
   type CEType = _CEType | java.lang.String
   /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.BEST_FIT
+    - typings.awsDashSdk.awsDashSdkStrings.BEST_FIT_PROGRESSIVE
+    - typings.awsDashSdk.awsDashSdkStrings.SPOT_CAPACITY_OPTIMIZED
+    - java.lang.String
+  */
+  type CRAllocationStrategy = _CRAllocationStrategy | java.lang.String
+  /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.EC2
     - typings.awsDashSdk.awsDashSdkStrings.SPOT
     - java.lang.String
@@ -78,7 +85,7 @@ package object clientsBatchMod {
   type JQStatus = _JQStatus | java.lang.String
   type JobDefinitionList = js.Array[JobDefinition]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.container
+    - typings.awsDashSdk.awsDashSdkStrings.container_
     - typings.awsDashSdk.awsDashSdkStrings.multinode
     - java.lang.String
   */
@@ -113,7 +120,7 @@ package object clientsBatchMod {
   type Volumes = js.Array[Volume]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2016-08-10`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | java.lang.String

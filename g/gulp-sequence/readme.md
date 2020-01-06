@@ -10,10 +10,10 @@ Run a series of gulp tasks in order.
 | ------------------ | :-------------: |
 | Full name          | gulp-sequence |
 | Keywords           | gulpplugin, sequence, sync, thunk, thunks, flow |
-| # releases         | 2 |
-| # dependents       | 189 |
-| # downloads        | 1508038 |
-| # stars            | 57 |
+| # releases         | 1 |
+| # dependents       | 196 |
+| # downloads        | 1512463 |
+| # stars            | 56 |
 
 ## Links
 - [Homepage](https://github.com/teambition/gulp-sequence)

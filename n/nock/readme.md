@@ -1,7 +1,7 @@
 
 # Scala.js typings for nock
 
-Typings are for version 11.7.0
+Typings are for version 11.7.1
 
 ## Library description:
 HTTP server mocking and expectations library for Node.js
@@ -10,10 +10,10 @@ HTTP server mocking and expectations library for Node.js
 | ------------------ | :-------------: |
 | Full name          | nock |
 | Keywords           | - |
-| # releases         | 61 |
-| # dependents       | 328 |
-| # downloads        | 19866800 |
-| # stars            | 194 |
+| # releases         | 77 |
+| # dependents       | 375 |
+| # downloads        | 29780791 |
+| # stars            | 195 |
 
 ## Links
 - [Homepage](https://github.com/nock/nock#readme)

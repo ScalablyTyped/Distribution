@@ -10,9 +10,9 @@ A set of RFC 3339 compliant date/time GraphQL scalar types.
 | ------------------ | :-------------: |
 | Full name          | graphql-iso-date |
 | Keywords           | GraphQL, Scalar, Date, Node, ISO |
-| # releases         | 7 |
-| # dependents       | 78 |
-| # downloads        | 1504471 |
+| # releases         | 4 |
+| # dependents       | 132 |
+| # downloads        | 3538987 |
 | # stars            | 2 |
 
 ## Links

@@ -12,7 +12,7 @@ jsreport recipe which is rendering pdf from html using headless chrome
 | Keywords           | jsreport, pdf |
 | # releases         | 23 |
 | # dependents       | 4 |
-| # downloads        | 69777 |
+| # downloads        | 76604 |
 | # stars            | 0 |
 
 ## Links

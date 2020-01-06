@@ -10,9 +10,9 @@ react-spinner-loader provides simple React.js spinner component which can be imp
 | ------------------ | :-------------: |
 | Full name          | react-loader-spinner |
 | Keywords           | react-component, loader, spinner, react |
-| # releases         | 37 |
-| # dependents       | 26 |
-| # downloads        | 665566 |
+| # releases         | 26 |
+| # dependents       | 31 |
+| # downloads        | 847899 |
 | # stars            | 1 |
 
 ## Links

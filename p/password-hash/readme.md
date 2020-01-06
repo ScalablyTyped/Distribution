@@ -10,9 +10,9 @@ Password hashing and verification for node.js
 | ------------------ | :-------------: |
 | Full name          | password-hash |
 | Keywords           | password, hash, utilities, cli |
-| # releases         | 1 |
-| # dependents       | 64 |
-| # downloads        | 386566 |
+| # releases         | 0 |
+| # dependents       | 68 |
+| # downloads        | 436789 |
 | # stars            | 15 |
 
 ## Links

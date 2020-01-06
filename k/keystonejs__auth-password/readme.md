@@ -10,9 +10,9 @@ Provides a basic password authentication strategy.
 | ------------------ | :-------------: |
 | Full name          | @keystonejs/auth-password |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 1637 |
+| # downloads        | 9816 |
 | # stars            | 0 |
 
 ## Links

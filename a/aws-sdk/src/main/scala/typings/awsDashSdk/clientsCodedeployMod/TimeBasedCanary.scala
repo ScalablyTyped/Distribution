@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TimeBasedCanary extends js.Object {
   /**
     * The number of minutes between the first and second traffic shifts of a TimeBasedCanary deployment.
     */
-  var canaryInterval: js.UndefOr[WaitTimeInMins] = js.undefined
+  var canaryInterval: js.UndefOr[WaitTimeInMins] = js.native
   /**
     * The percentage of traffic to shift in the first increment of a TimeBasedCanary deployment.
     */
-  var canaryPercentage: js.UndefOr[Percentage] = js.undefined
+  var canaryPercentage: js.UndefOr[Percentage] = js.native
 }
 
 object TimeBasedCanary {

@@ -11,8 +11,8 @@ Official Node bindings to the Intercom API
 | Full name          | intercom-client |
 | Keywords           | intercom, api |
 | # releases         | 12 |
-| # dependents       | 12 |
-| # downloads        | 1224955 |
+| # dependents       | 14 |
+| # downloads        | 2271366 |
 | # stars            | 5 |
 
 ## Links

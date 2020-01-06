@@ -10,9 +10,9 @@ Bidirectional UTM-WGS84 converter
 | ------------------ | :-------------: |
 | Full name          | utm |
 | Keywords           | utm, latlon |
-| # releases         | 2 |
-| # dependents       | 4 |
-| # downloads        | 31263 |
+| # releases         | 0 |
+| # dependents       | 5 |
+| # downloads        | 74417 |
 | # stars            | 0 |
 
 ## Links

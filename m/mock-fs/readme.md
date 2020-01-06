@@ -11,8 +11,8 @@ A configurable mock file system.  You know, for testing.
 | Full name          | mock-fs |
 | Keywords           | mock, fs, test, fixtures, file system, memory |
 | # releases         | 9 |
-| # dependents       | 51 |
-| # downloads        | 4188401 |
+| # dependents       | 61 |
+| # downloads        | 5976946 |
 | # stars            | 26 |
 
 ## Links

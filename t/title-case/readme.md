@@ -4,21 +4,21 @@
 Typings are for version 2.1.1
 
 ## Library description:
-Title case a string
+Transform a string into title case following English rules
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | title-case |
-| Keywords           | title, case |
-| # releases         | 1 |
-| # dependents       | 74 |
-| # downloads        | 29134058 |
+| Keywords           | title, case, english, capital, sentence, convert, transform |
+| # releases         | 4 |
+| # dependents       | 88 |
+| # downloads        | 49811504 |
 | # stars            | 4 |
 
 ## Links
-- [Homepage](https://github.com/blakeembrey/title-case)
-- [Bugs](https://github.com/blakeembrey/title-case/issues)
-- [Repository](https://github.com/blakeembrey/title-case)
+- [Homepage](https://github.com/blakeembrey/change-case/tree/master/packages/title-case#readme)
+- [Bugs](https://github.com/blakeembrey/change-case/issues)
+- [Repository](https://github.com/blakeembrey/change-case)
 - [Npm](https://www.npmjs.com/package/title-case)
     
 

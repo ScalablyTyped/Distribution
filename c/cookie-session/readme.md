@@ -10,9 +10,9 @@ cookie session middleware
 | ------------------ | :-------------: |
 | Full name          | cookie-session |
 | Keywords           | connect, express, middleware, session |
-| # releases         | 7 |
-| # dependents       | 231 |
-| # downloads        | 3176781 |
+| # releases         | 2 |
+| # dependents       | 270 |
+| # downloads        | 4479480 |
 | # stars            | 66 |
 
 ## Links

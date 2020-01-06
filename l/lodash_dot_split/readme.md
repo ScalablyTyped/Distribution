@@ -11,8 +11,8 @@ The lodash method `_.split` exported as a module.
 | Full name          | lodash.split |
 | Keywords           | lodash-modularized, split |
 | # releases         | 0 |
-| # dependents       | 10 |
-| # downloads        | 93626 |
+| # dependents       | 14 |
+| # downloads        | 248877 |
 | # stars            | 0 |
 
 ## Links

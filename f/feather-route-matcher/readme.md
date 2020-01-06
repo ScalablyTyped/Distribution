@@ -10,9 +10,9 @@ featherweight url to handler matching
 | ------------------ | :-------------: |
 | Full name          | feather-route-matcher |
 | Keywords           | feather, matcher, router, routing, url |
-| # releases         | 0 |
+| # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 4997 |
+| # downloads        | 8791 |
 | # stars            | 0 |
 
 ## Links

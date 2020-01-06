@@ -10,9 +10,9 @@ opensource free pure JavaScript cryptographic library supports RSA/RSAPSS/ECDSA/
 | ------------------ | :-------------: |
 | Full name          | jsrsasign |
 | Keywords           | crypto, cryptography, Cipher, RSA, ECDSA, DSA, RSAPSS, PKCS#1, PKCS#5, PKCS#8, private key, public key, CSR, PKCS#10, hash function, HMac, ASN.1, certificate, X.509, CRL, OCSP, RFC 3161, Digital Timestamp, Timestamp, Time Stamp Token, CMS, Cryptgraphic Message Syntax, PKCS#7, Signature, Digital Signature, signing, Message Digest, JSON Web Token, JWT, JSON Web Signature, JWS, JSON Web Key, JWK, JOSE, JWA |
-| # releases         | 10 |
-| # dependents       | 254 |
-| # downloads        | 6413121 |
+| # releases         | 9 |
+| # dependents       | 277 |
+| # downloads        | 6750499 |
 | # stars            | 6 |
 
 ## Links

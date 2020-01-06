@@ -10,9 +10,9 @@ Http utilities for Apollo Link shared across all links using http
 | ------------------ | :-------------: |
 | Full name          | apollo-link-http-common |
 | Keywords           | apollo, http, network |
-| # releases         | 17 |
-| # dependents       | 14 |
-| # downloads        | 16473415 |
+| # releases         | 19 |
+| # dependents       | 28 |
+| # downloads        | 39971089 |
 | # stars            | 0 |
 
 ## Links

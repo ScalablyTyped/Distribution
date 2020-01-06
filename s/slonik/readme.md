@@ -4,15 +4,15 @@
 Typings are for version 21.4
 
 ## Library description:
-A PostgreSQL client with strict types, detail logging and assertions.
+A PostgreSQL client with strict types, detailed logging and assertions.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | slonik |
 | Keywords           | postgresql, promise, types |
-| # releases         | 124 |
-| # dependents       | 8 |
-| # downloads        | 19924 |
+| # releases         | 185 |
+| # dependents       | 12 |
+| # downloads        | 110735 |
 | # stars            | 0 |
 
 ## Links

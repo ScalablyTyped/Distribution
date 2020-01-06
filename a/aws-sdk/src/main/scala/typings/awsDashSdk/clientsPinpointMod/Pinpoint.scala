@@ -39,12 +39,12 @@ trait Pinpoint extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateCampaignResponse, Unit]
   ): Request[CreateCampaignResponse, AWSError] = js.native
   /**
-    * Creates a message template that you can use in messages that are sent through the email channel.
+    * Creates a message template for messages that are sent through the email channel.
     */
   def createEmailTemplate(): Request[CreateEmailTemplateResponse, AWSError] = js.native
   def createEmailTemplate(callback: js.Function2[/* err */ AWSError, /* data */ CreateEmailTemplateResponse, Unit]): Request[CreateEmailTemplateResponse, AWSError] = js.native
   /**
-    * Creates a message template that you can use in messages that are sent through the email channel.
+    * Creates a message template for messages that are sent through the email channel.
     */
   def createEmailTemplate(params: CreateEmailTemplateRequest): Request[CreateEmailTemplateResponse, AWSError] = js.native
   def createEmailTemplate(
@@ -78,12 +78,25 @@ trait Pinpoint extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateImportJobResponse, Unit]
   ): Request[CreateImportJobResponse, AWSError] = js.native
   /**
-    * Creates a message template that you can use in messages that are sent through a push notification channel.
+    * Creates a journey for an application.
+    */
+  def createJourney(): Request[CreateJourneyResponse, AWSError] = js.native
+  def createJourney(callback: js.Function2[/* err */ AWSError, /* data */ CreateJourneyResponse, Unit]): Request[CreateJourneyResponse, AWSError] = js.native
+  /**
+    * Creates a journey for an application.
+    */
+  def createJourney(params: CreateJourneyRequest): Request[CreateJourneyResponse, AWSError] = js.native
+  def createJourney(
+    params: CreateJourneyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateJourneyResponse, Unit]
+  ): Request[CreateJourneyResponse, AWSError] = js.native
+  /**
+    * Creates a message template for messages that are sent through a push notification channel.
     */
   def createPushTemplate(): Request[CreatePushTemplateResponse, AWSError] = js.native
   def createPushTemplate(callback: js.Function2[/* err */ AWSError, /* data */ CreatePushTemplateResponse, Unit]): Request[CreatePushTemplateResponse, AWSError] = js.native
   /**
-    * Creates a message template that you can use in messages that are sent through a push notification channel.
+    * Creates a message template for messages that are sent through a push notification channel.
     */
   def createPushTemplate(params: CreatePushTemplateRequest): Request[CreatePushTemplateResponse, AWSError] = js.native
   def createPushTemplate(
@@ -104,18 +117,31 @@ trait Pinpoint extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateSegmentResponse, Unit]
   ): Request[CreateSegmentResponse, AWSError] = js.native
   /**
-    * Creates a message template that you can use in messages that are sent through the SMS channel.
+    * Creates a message template for messages that are sent through the SMS channel.
     */
   def createSmsTemplate(): Request[CreateSmsTemplateResponse, AWSError] = js.native
   def createSmsTemplate(callback: js.Function2[/* err */ AWSError, /* data */ CreateSmsTemplateResponse, Unit]): Request[CreateSmsTemplateResponse, AWSError] = js.native
   /**
-    * Creates a message template that you can use in messages that are sent through the SMS channel.
+    * Creates a message template for messages that are sent through the SMS channel.
     */
   def createSmsTemplate(params: CreateSmsTemplateRequest): Request[CreateSmsTemplateResponse, AWSError] = js.native
   def createSmsTemplate(
     params: CreateSmsTemplateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateSmsTemplateResponse, Unit]
   ): Request[CreateSmsTemplateResponse, AWSError] = js.native
+  /**
+    * Creates a message template for messages that are sent through the voice channel.
+    */
+  def createVoiceTemplate(): Request[CreateVoiceTemplateResponse, AWSError] = js.native
+  def createVoiceTemplate(callback: js.Function2[/* err */ AWSError, /* data */ CreateVoiceTemplateResponse, Unit]): Request[CreateVoiceTemplateResponse, AWSError] = js.native
+  /**
+    * Creates a message template for messages that are sent through the voice channel.
+    */
+  def createVoiceTemplate(params: CreateVoiceTemplateRequest): Request[CreateVoiceTemplateResponse, AWSError] = js.native
+  def createVoiceTemplate(
+    params: CreateVoiceTemplateRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateVoiceTemplateResponse, Unit]
+  ): Request[CreateVoiceTemplateResponse, AWSError] = js.native
   /**
     * Disables the ADM channel for an application and deletes any existing settings for the channel.
     */
@@ -234,12 +260,12 @@ trait Pinpoint extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteEmailChannelResponse, Unit]
   ): Request[DeleteEmailChannelResponse, AWSError] = js.native
   /**
-    * Deletes a message template that was designed for use in messages that were sent through the email channel.
+    * Deletes a message template for messages that were sent through the email channel.
     */
   def deleteEmailTemplate(): Request[DeleteEmailTemplateResponse, AWSError] = js.native
   def deleteEmailTemplate(callback: js.Function2[/* err */ AWSError, /* data */ DeleteEmailTemplateResponse, Unit]): Request[DeleteEmailTemplateResponse, AWSError] = js.native
   /**
-    * Deletes a message template that was designed for use in messages that were sent through the email channel.
+    * Deletes a message template for messages that were sent through the email channel.
     */
   def deleteEmailTemplate(params: DeleteEmailTemplateRequest): Request[DeleteEmailTemplateResponse, AWSError] = js.native
   def deleteEmailTemplate(
@@ -286,12 +312,25 @@ trait Pinpoint extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteGcmChannelResponse, Unit]
   ): Request[DeleteGcmChannelResponse, AWSError] = js.native
   /**
-    * Deletes a message template that was designed for use in messages that were sent through a push notification channel.
+    * Deletes a journey from an application.
+    */
+  def deleteJourney(): Request[DeleteJourneyResponse, AWSError] = js.native
+  def deleteJourney(callback: js.Function2[/* err */ AWSError, /* data */ DeleteJourneyResponse, Unit]): Request[DeleteJourneyResponse, AWSError] = js.native
+  /**
+    * Deletes a journey from an application.
+    */
+  def deleteJourney(params: DeleteJourneyRequest): Request[DeleteJourneyResponse, AWSError] = js.native
+  def deleteJourney(
+    params: DeleteJourneyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteJourneyResponse, Unit]
+  ): Request[DeleteJourneyResponse, AWSError] = js.native
+  /**
+    * Deletes a message template for messages that were sent through a push notification channel.
     */
   def deletePushTemplate(): Request[DeletePushTemplateResponse, AWSError] = js.native
   def deletePushTemplate(callback: js.Function2[/* err */ AWSError, /* data */ DeletePushTemplateResponse, Unit]): Request[DeletePushTemplateResponse, AWSError] = js.native
   /**
-    * Deletes a message template that was designed for use in messages that were sent through a push notification channel.
+    * Deletes a message template for messages that were sent through a push notification channel.
     */
   def deletePushTemplate(params: DeletePushTemplateRequest): Request[DeletePushTemplateResponse, AWSError] = js.native
   def deletePushTemplate(
@@ -325,12 +364,12 @@ trait Pinpoint extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteSmsChannelResponse, Unit]
   ): Request[DeleteSmsChannelResponse, AWSError] = js.native
   /**
-    * Deletes a message template that was designed for use in messages that were sent through the SMS channel.
+    * Deletes a message template for messages that were sent through the SMS channel.
     */
   def deleteSmsTemplate(): Request[DeleteSmsTemplateResponse, AWSError] = js.native
   def deleteSmsTemplate(callback: js.Function2[/* err */ AWSError, /* data */ DeleteSmsTemplateResponse, Unit]): Request[DeleteSmsTemplateResponse, AWSError] = js.native
   /**
-    * Deletes a message template that was designed for use in messages that were sent through the SMS channel.
+    * Deletes a message template for messages that were sent through the SMS channel.
     */
   def deleteSmsTemplate(params: DeleteSmsTemplateRequest): Request[DeleteSmsTemplateResponse, AWSError] = js.native
   def deleteSmsTemplate(
@@ -363,6 +402,19 @@ trait Pinpoint extends Service {
     params: DeleteVoiceChannelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteVoiceChannelResponse, Unit]
   ): Request[DeleteVoiceChannelResponse, AWSError] = js.native
+  /**
+    * Deletes a message template for messages that were sent through the voice channel.
+    */
+  def deleteVoiceTemplate(): Request[DeleteVoiceTemplateResponse, AWSError] = js.native
+  def deleteVoiceTemplate(callback: js.Function2[/* err */ AWSError, /* data */ DeleteVoiceTemplateResponse, Unit]): Request[DeleteVoiceTemplateResponse, AWSError] = js.native
+  /**
+    * Deletes a message template for messages that were sent through the voice channel.
+    */
+  def deleteVoiceTemplate(params: DeleteVoiceTemplateRequest): Request[DeleteVoiceTemplateResponse, AWSError] = js.native
+  def deleteVoiceTemplate(
+    params: DeleteVoiceTemplateRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteVoiceTemplateResponse, Unit]
+  ): Request[DeleteVoiceTemplateResponse, AWSError] = js.native
   /**
     * Retrieves information about the status and settings of the ADM channel for an application.
     */
@@ -465,12 +517,12 @@ trait Pinpoint extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetApplicationSettingsResponse, Unit]
   ): Request[GetApplicationSettingsResponse, AWSError] = js.native
   /**
-    * Retrieves information about all of your applications.
+    * Retrieves information about all the applications that are associated with your Amazon Pinpoint account.
     */
   def getApps(): Request[GetAppsResponse, AWSError] = js.native
   def getApps(callback: js.Function2[/* err */ AWSError, /* data */ GetAppsResponse, Unit]): Request[GetAppsResponse, AWSError] = js.native
   /**
-    * Retrieves information about all of your applications.
+    * Retrieves information about all the applications that are associated with your Amazon Pinpoint account.
     */
   def getApps(params: GetAppsRequest): Request[GetAppsResponse, AWSError] = js.native
   def getApps(
@@ -504,12 +556,12 @@ trait Pinpoint extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetCampaignResponse, Unit]
   ): Request[GetCampaignResponse, AWSError] = js.native
   /**
-    * Retrieves information about the activity performed by a campaign.
+    * Retrieves information about all the activities for a campaign.
     */
   def getCampaignActivities(): Request[GetCampaignActivitiesResponse, AWSError] = js.native
   def getCampaignActivities(callback: js.Function2[/* err */ AWSError, /* data */ GetCampaignActivitiesResponse, Unit]): Request[GetCampaignActivitiesResponse, AWSError] = js.native
   /**
-    * Retrieves information about the activity performed by a campaign.
+    * Retrieves information about all the activities for a campaign.
     */
   def getCampaignActivities(params: GetCampaignActivitiesRequest): Request[GetCampaignActivitiesResponse, AWSError] = js.native
   def getCampaignActivities(
@@ -543,12 +595,12 @@ trait Pinpoint extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetCampaignVersionResponse, Unit]
   ): Request[GetCampaignVersionResponse, AWSError] = js.native
   /**
-    * Retrieves information about the status, configuration, and other settings for all versions of a specific campaign.
+    * Retrieves information about the status, configuration, and other settings for all versions of a campaign.
     */
   def getCampaignVersions(): Request[GetCampaignVersionsResponse, AWSError] = js.native
   def getCampaignVersions(callback: js.Function2[/* err */ AWSError, /* data */ GetCampaignVersionsResponse, Unit]): Request[GetCampaignVersionsResponse, AWSError] = js.native
   /**
-    * Retrieves information about the status, configuration, and other settings for all versions of a specific campaign.
+    * Retrieves information about the status, configuration, and other settings for all versions of a campaign.
     */
   def getCampaignVersions(params: GetCampaignVersionsRequest): Request[GetCampaignVersionsResponse, AWSError] = js.native
   def getCampaignVersions(
@@ -595,12 +647,12 @@ trait Pinpoint extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetEmailChannelResponse, Unit]
   ): Request[GetEmailChannelResponse, AWSError] = js.native
   /**
-    * Retrieves the content and settings for a message template that you can use in messages that are sent through the email channel.
+    * Retrieves the content and settings of a message template for messages that are sent through the email channel.
     */
   def getEmailTemplate(): Request[GetEmailTemplateResponse, AWSError] = js.native
   def getEmailTemplate(callback: js.Function2[/* err */ AWSError, /* data */ GetEmailTemplateResponse, Unit]): Request[GetEmailTemplateResponse, AWSError] = js.native
   /**
-    * Retrieves the content and settings for a message template that you can use in messages that are sent through the email channel.
+    * Retrieves the content and settings of a message template for messages that are sent through the email channel.
     */
   def getEmailTemplate(params: GetEmailTemplateRequest): Request[GetEmailTemplateResponse, AWSError] = js.native
   def getEmailTemplate(
@@ -699,12 +751,66 @@ trait Pinpoint extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetImportJobsResponse, Unit]
   ): Request[GetImportJobsResponse, AWSError] = js.native
   /**
-    * Retrieves the content and settings for a message template that you can use in messages that are sent through a push notification channel.
+    * Retrieves information about the status, configuration, and other settings for a journey.
+    */
+  def getJourney(): Request[GetJourneyResponse, AWSError] = js.native
+  def getJourney(callback: js.Function2[/* err */ AWSError, /* data */ GetJourneyResponse, Unit]): Request[GetJourneyResponse, AWSError] = js.native
+  /**
+    * Retrieves information about the status, configuration, and other settings for a journey.
+    */
+  def getJourney(params: GetJourneyRequest): Request[GetJourneyResponse, AWSError] = js.native
+  def getJourney(
+    params: GetJourneyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetJourneyResponse, Unit]
+  ): Request[GetJourneyResponse, AWSError] = js.native
+  /**
+    * Retrieves (queries) pre-aggregated data for a standard engagement metric that applies to a journey.
+    */
+  def getJourneyDateRangeKpi(): Request[GetJourneyDateRangeKpiResponse, AWSError] = js.native
+  def getJourneyDateRangeKpi(callback: js.Function2[/* err */ AWSError, /* data */ GetJourneyDateRangeKpiResponse, Unit]): Request[GetJourneyDateRangeKpiResponse, AWSError] = js.native
+  /**
+    * Retrieves (queries) pre-aggregated data for a standard engagement metric that applies to a journey.
+    */
+  def getJourneyDateRangeKpi(params: GetJourneyDateRangeKpiRequest): Request[GetJourneyDateRangeKpiResponse, AWSError] = js.native
+  def getJourneyDateRangeKpi(
+    params: GetJourneyDateRangeKpiRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetJourneyDateRangeKpiResponse, Unit]
+  ): Request[GetJourneyDateRangeKpiResponse, AWSError] = js.native
+  /**
+    * Retrieves (queries) pre-aggregated data for a standard execution metric that applies to a journey activity.
+    */
+  def getJourneyExecutionActivityMetrics(): Request[GetJourneyExecutionActivityMetricsResponse, AWSError] = js.native
+  def getJourneyExecutionActivityMetrics(
+    callback: js.Function2[/* err */ AWSError, /* data */ GetJourneyExecutionActivityMetricsResponse, Unit]
+  ): Request[GetJourneyExecutionActivityMetricsResponse, AWSError] = js.native
+  /**
+    * Retrieves (queries) pre-aggregated data for a standard execution metric that applies to a journey activity.
+    */
+  def getJourneyExecutionActivityMetrics(params: GetJourneyExecutionActivityMetricsRequest): Request[GetJourneyExecutionActivityMetricsResponse, AWSError] = js.native
+  def getJourneyExecutionActivityMetrics(
+    params: GetJourneyExecutionActivityMetricsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetJourneyExecutionActivityMetricsResponse, Unit]
+  ): Request[GetJourneyExecutionActivityMetricsResponse, AWSError] = js.native
+  /**
+    * Retrieves (queries) pre-aggregated data for a standard execution metric that applies to a journey.
+    */
+  def getJourneyExecutionMetrics(): Request[GetJourneyExecutionMetricsResponse, AWSError] = js.native
+  def getJourneyExecutionMetrics(callback: js.Function2[/* err */ AWSError, /* data */ GetJourneyExecutionMetricsResponse, Unit]): Request[GetJourneyExecutionMetricsResponse, AWSError] = js.native
+  /**
+    * Retrieves (queries) pre-aggregated data for a standard execution metric that applies to a journey.
+    */
+  def getJourneyExecutionMetrics(params: GetJourneyExecutionMetricsRequest): Request[GetJourneyExecutionMetricsResponse, AWSError] = js.native
+  def getJourneyExecutionMetrics(
+    params: GetJourneyExecutionMetricsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetJourneyExecutionMetricsResponse, Unit]
+  ): Request[GetJourneyExecutionMetricsResponse, AWSError] = js.native
+  /**
+    * Retrieves the content and settings of a message template for messages that are sent through a push notification channel.
     */
   def getPushTemplate(): Request[GetPushTemplateResponse, AWSError] = js.native
   def getPushTemplate(callback: js.Function2[/* err */ AWSError, /* data */ GetPushTemplateResponse, Unit]): Request[GetPushTemplateResponse, AWSError] = js.native
   /**
-    * Retrieves the content and settings for a message template that you can use in messages that are sent through a push notification channel.
+    * Retrieves the content and settings of a message template for messages that are sent through a push notification channel.
     */
   def getPushTemplate(params: GetPushTemplateRequest): Request[GetPushTemplateResponse, AWSError] = js.native
   def getPushTemplate(
@@ -764,12 +870,12 @@ trait Pinpoint extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetSegmentVersionResponse, Unit]
   ): Request[GetSegmentVersionResponse, AWSError] = js.native
   /**
-    * Retrieves information about the configuration, dimension, and other settings for all versions of a specific segment that's associated with an application.
+    * Retrieves information about the configuration, dimension, and other settings for all the versions of a specific segment that's associated with an application.
     */
   def getSegmentVersions(): Request[GetSegmentVersionsResponse, AWSError] = js.native
   def getSegmentVersions(callback: js.Function2[/* err */ AWSError, /* data */ GetSegmentVersionsResponse, Unit]): Request[GetSegmentVersionsResponse, AWSError] = js.native
   /**
-    * Retrieves information about the configuration, dimension, and other settings for all versions of a specific segment that's associated with an application.
+    * Retrieves information about the configuration, dimension, and other settings for all the versions of a specific segment that's associated with an application.
     */
   def getSegmentVersions(params: GetSegmentVersionsRequest): Request[GetSegmentVersionsResponse, AWSError] = js.native
   def getSegmentVersions(
@@ -803,12 +909,12 @@ trait Pinpoint extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetSmsChannelResponse, Unit]
   ): Request[GetSmsChannelResponse, AWSError] = js.native
   /**
-    * Retrieves the content and settings for a message template that you can use in messages that are sent through the SMS channel.
+    * Retrieves the content and settings of a message template for messages that are sent through the SMS channel.
     */
   def getSmsTemplate(): Request[GetSmsTemplateResponse, AWSError] = js.native
   def getSmsTemplate(callback: js.Function2[/* err */ AWSError, /* data */ GetSmsTemplateResponse, Unit]): Request[GetSmsTemplateResponse, AWSError] = js.native
   /**
-    * Retrieves the content and settings for a message template that you can use in messages that are sent through the SMS channel.
+    * Retrieves the content and settings of a message template for messages that are sent through the SMS channel.
     */
   def getSmsTemplate(params: GetSmsTemplateRequest): Request[GetSmsTemplateResponse, AWSError] = js.native
   def getSmsTemplate(
@@ -842,18 +948,57 @@ trait Pinpoint extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetVoiceChannelResponse, Unit]
   ): Request[GetVoiceChannelResponse, AWSError] = js.native
   /**
-    * Retrieves all the tags (keys and values) that are associated with an application, campaign, message template, or segment.
+    * Retrieves the content and settings of a message template for messages that are sent through the voice channel.
+    */
+  def getVoiceTemplate(): Request[GetVoiceTemplateResponse, AWSError] = js.native
+  def getVoiceTemplate(callback: js.Function2[/* err */ AWSError, /* data */ GetVoiceTemplateResponse, Unit]): Request[GetVoiceTemplateResponse, AWSError] = js.native
+  /**
+    * Retrieves the content and settings of a message template for messages that are sent through the voice channel.
+    */
+  def getVoiceTemplate(params: GetVoiceTemplateRequest): Request[GetVoiceTemplateResponse, AWSError] = js.native
+  def getVoiceTemplate(
+    params: GetVoiceTemplateRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetVoiceTemplateResponse, Unit]
+  ): Request[GetVoiceTemplateResponse, AWSError] = js.native
+  /**
+    * Retrieves information about the status, configuration, and other settings for all the journeys that are associated with an application.
+    */
+  def listJourneys(): Request[ListJourneysResponse, AWSError] = js.native
+  def listJourneys(callback: js.Function2[/* err */ AWSError, /* data */ ListJourneysResponse, Unit]): Request[ListJourneysResponse, AWSError] = js.native
+  /**
+    * Retrieves information about the status, configuration, and other settings for all the journeys that are associated with an application.
+    */
+  def listJourneys(params: ListJourneysRequest): Request[ListJourneysResponse, AWSError] = js.native
+  def listJourneys(
+    params: ListJourneysRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListJourneysResponse, Unit]
+  ): Request[ListJourneysResponse, AWSError] = js.native
+  /**
+    * Retrieves all the tags (keys and values) that are associated with an application, campaign, journey, message template, or segment.
     */
   def listTagsForResource(): Request[ListTagsForResourceResponse, AWSError] = js.native
   def listTagsForResource(callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]): Request[ListTagsForResourceResponse, AWSError] = js.native
   /**
-    * Retrieves all the tags (keys and values) that are associated with an application, campaign, message template, or segment.
+    * Retrieves all the tags (keys and values) that are associated with an application, campaign, journey, message template, or segment.
     */
   def listTagsForResource(params: ListTagsForResourceRequest): Request[ListTagsForResourceResponse, AWSError] = js.native
   def listTagsForResource(
     params: ListTagsForResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  /**
+    * Retrieves information about all the versions of a specific message template.
+    */
+  def listTemplateVersions(): Request[ListTemplateVersionsResponse, AWSError] = js.native
+  def listTemplateVersions(callback: js.Function2[/* err */ AWSError, /* data */ ListTemplateVersionsResponse, Unit]): Request[ListTemplateVersionsResponse, AWSError] = js.native
+  /**
+    * Retrieves information about all the versions of a specific message template.
+    */
+  def listTemplateVersions(params: ListTemplateVersionsRequest): Request[ListTemplateVersionsResponse, AWSError] = js.native
+  def listTemplateVersions(
+    params: ListTemplateVersionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListTemplateVersionsResponse, Unit]
+  ): Request[ListTemplateVersionsResponse, AWSError] = js.native
   /**
     * Retrieves information about all the message templates that are associated with your Amazon Pinpoint account.
     */
@@ -946,22 +1091,22 @@ trait Pinpoint extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ SendUsersMessagesResponse, Unit]
   ): Request[SendUsersMessagesResponse, AWSError] = js.native
   /**
-    * Adds one or more tags (keys and values) to an application, campaign, message template, or segment.
+    * Adds one or more tags (keys and values) to an application, campaign, journey, message template, or segment.
     */
   def tagResource(): Request[js.Object, AWSError] = js.native
   def tagResource(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Adds one or more tags (keys and values) to an application, campaign, message template, or segment.
+    * Adds one or more tags (keys and values) to an application, campaign, journey, message template, or segment.
     */
   def tagResource(params: TagResourceRequest): Request[js.Object, AWSError] = js.native
   def tagResource(params: TagResourceRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Removes one or more tags (keys and values) from an application, campaign, message template, or segment.
+    * Removes one or more tags (keys and values) from an application, campaign, journey, message template, or segment.
     */
   def untagResource(): Request[js.Object, AWSError] = js.native
   def untagResource(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Removes one or more tags (keys and values) from an application, campaign, message template, or segment.
+    * Removes one or more tags (keys and values) from an application, campaign, journey, message template, or segment.
     */
   def untagResource(params: UntagResourceRequest): Request[js.Object, AWSError] = js.native
   def untagResource(
@@ -1060,12 +1205,12 @@ trait Pinpoint extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateBaiduChannelResponse, Unit]
   ): Request[UpdateBaiduChannelResponse, AWSError] = js.native
   /**
-    * Updates the settings for a campaign.
+    * Updates the configuration and other settings for a campaign.
     */
   def updateCampaign(): Request[UpdateCampaignResponse, AWSError] = js.native
   def updateCampaign(callback: js.Function2[/* err */ AWSError, /* data */ UpdateCampaignResponse, Unit]): Request[UpdateCampaignResponse, AWSError] = js.native
   /**
-    * Updates the settings for a campaign.
+    * Updates the configuration and other settings for a campaign.
     */
   def updateCampaign(params: UpdateCampaignRequest): Request[UpdateCampaignResponse, AWSError] = js.native
   def updateCampaign(
@@ -1086,12 +1231,12 @@ trait Pinpoint extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateEmailChannelResponse, Unit]
   ): Request[UpdateEmailChannelResponse, AWSError] = js.native
   /**
-    * Updates an existing message template that you can use in messages that are sent through the email channel.
+    * Updates an existing message template for messages that are sent through the email channel.
     */
   def updateEmailTemplate(): Request[UpdateEmailTemplateResponse, AWSError] = js.native
   def updateEmailTemplate(callback: js.Function2[/* err */ AWSError, /* data */ UpdateEmailTemplateResponse, Unit]): Request[UpdateEmailTemplateResponse, AWSError] = js.native
   /**
-    * Updates an existing message template that you can use in messages that are sent through the email channel.
+    * Updates an existing message template for messages that are sent through the email channel.
     */
   def updateEmailTemplate(params: UpdateEmailTemplateRequest): Request[UpdateEmailTemplateResponse, AWSError] = js.native
   def updateEmailTemplate(
@@ -1138,12 +1283,38 @@ trait Pinpoint extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateGcmChannelResponse, Unit]
   ): Request[UpdateGcmChannelResponse, AWSError] = js.native
   /**
-    * Updates an existing message template that you can use in messages that are sent through a push notification channel.
+    * Updates the configuration and other settings for a journey.
+    */
+  def updateJourney(): Request[UpdateJourneyResponse, AWSError] = js.native
+  def updateJourney(callback: js.Function2[/* err */ AWSError, /* data */ UpdateJourneyResponse, Unit]): Request[UpdateJourneyResponse, AWSError] = js.native
+  /**
+    * Updates the configuration and other settings for a journey.
+    */
+  def updateJourney(params: UpdateJourneyRequest): Request[UpdateJourneyResponse, AWSError] = js.native
+  def updateJourney(
+    params: UpdateJourneyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateJourneyResponse, Unit]
+  ): Request[UpdateJourneyResponse, AWSError] = js.native
+  /**
+    * Cancels (stops) an active journey.
+    */
+  def updateJourneyState(): Request[UpdateJourneyStateResponse, AWSError] = js.native
+  def updateJourneyState(callback: js.Function2[/* err */ AWSError, /* data */ UpdateJourneyStateResponse, Unit]): Request[UpdateJourneyStateResponse, AWSError] = js.native
+  /**
+    * Cancels (stops) an active journey.
+    */
+  def updateJourneyState(params: UpdateJourneyStateRequest): Request[UpdateJourneyStateResponse, AWSError] = js.native
+  def updateJourneyState(
+    params: UpdateJourneyStateRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateJourneyStateResponse, Unit]
+  ): Request[UpdateJourneyStateResponse, AWSError] = js.native
+  /**
+    * Updates an existing message template for messages that are sent through a push notification channel.
     */
   def updatePushTemplate(): Request[UpdatePushTemplateResponse, AWSError] = js.native
   def updatePushTemplate(callback: js.Function2[/* err */ AWSError, /* data */ UpdatePushTemplateResponse, Unit]): Request[UpdatePushTemplateResponse, AWSError] = js.native
   /**
-    * Updates an existing message template that you can use in messages that are sent through a push notification channel.
+    * Updates an existing message template for messages that are sent through a push notification channel.
     */
   def updatePushTemplate(params: UpdatePushTemplateRequest): Request[UpdatePushTemplateResponse, AWSError] = js.native
   def updatePushTemplate(
@@ -1177,18 +1348,31 @@ trait Pinpoint extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateSmsChannelResponse, Unit]
   ): Request[UpdateSmsChannelResponse, AWSError] = js.native
   /**
-    * Updates an existing message template that you can use in messages that are sent through the SMS channel.
+    * Updates an existing message template for messages that are sent through the SMS channel.
     */
   def updateSmsTemplate(): Request[UpdateSmsTemplateResponse, AWSError] = js.native
   def updateSmsTemplate(callback: js.Function2[/* err */ AWSError, /* data */ UpdateSmsTemplateResponse, Unit]): Request[UpdateSmsTemplateResponse, AWSError] = js.native
   /**
-    * Updates an existing message template that you can use in messages that are sent through the SMS channel.
+    * Updates an existing message template for messages that are sent through the SMS channel.
     */
   def updateSmsTemplate(params: UpdateSmsTemplateRequest): Request[UpdateSmsTemplateResponse, AWSError] = js.native
   def updateSmsTemplate(
     params: UpdateSmsTemplateRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateSmsTemplateResponse, Unit]
   ): Request[UpdateSmsTemplateResponse, AWSError] = js.native
+  /**
+    * Changes the status of a specific version of a message template to active.
+    */
+  def updateTemplateActiveVersion(): Request[UpdateTemplateActiveVersionResponse, AWSError] = js.native
+  def updateTemplateActiveVersion(callback: js.Function2[/* err */ AWSError, /* data */ UpdateTemplateActiveVersionResponse, Unit]): Request[UpdateTemplateActiveVersionResponse, AWSError] = js.native
+  /**
+    * Changes the status of a specific version of a message template to active.
+    */
+  def updateTemplateActiveVersion(params: UpdateTemplateActiveVersionRequest): Request[UpdateTemplateActiveVersionResponse, AWSError] = js.native
+  def updateTemplateActiveVersion(
+    params: UpdateTemplateActiveVersionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateTemplateActiveVersionResponse, Unit]
+  ): Request[UpdateTemplateActiveVersionResponse, AWSError] = js.native
   /**
     * Enables the voice channel for an application or updates the status and settings of the voice channel for an application.
     */
@@ -1202,5 +1386,18 @@ trait Pinpoint extends Service {
     params: UpdateVoiceChannelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateVoiceChannelResponse, Unit]
   ): Request[UpdateVoiceChannelResponse, AWSError] = js.native
+  /**
+    * Updates an existing message template for messages that are sent through the voice channel.
+    */
+  def updateVoiceTemplate(): Request[UpdateVoiceTemplateResponse, AWSError] = js.native
+  def updateVoiceTemplate(callback: js.Function2[/* err */ AWSError, /* data */ UpdateVoiceTemplateResponse, Unit]): Request[UpdateVoiceTemplateResponse, AWSError] = js.native
+  /**
+    * Updates an existing message template for messages that are sent through the voice channel.
+    */
+  def updateVoiceTemplate(params: UpdateVoiceTemplateRequest): Request[UpdateVoiceTemplateResponse, AWSError] = js.native
+  def updateVoiceTemplate(
+    params: UpdateVoiceTemplateRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateVoiceTemplateResponse, Unit]
+  ): Request[UpdateVoiceTemplateResponse, AWSError] = js.native
 }
 

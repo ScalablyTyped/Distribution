@@ -11,8 +11,8 @@ A javascript library to validate, format and convert IBAN (International Bank Ac
 | Full name          | iban |
 | Keywords           | - |
 | # releases         | 5 |
-| # dependents       | 29 |
-| # downloads        | 1017527 |
+| # dependents       | 38 |
+| # downloads        | 1790629 |
 | # stars            | 2 |
 
 ## Links

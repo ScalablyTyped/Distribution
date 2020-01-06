@@ -10,9 +10,9 @@ A Leaflet Plugin For Editing Geometry Layers in Leaflet 1.0
 | ------------------ | :-------------: |
 | Full name          | leaflet.pm |
 | Keywords           | leaflet, polygon management, geometry editing, map data, map overlay, polygon, geojson, leaflet-draw, data-field-geojson, ui-leaflet-draw |
-| # releases         | 24 |
-| # dependents       | 3 |
-| # downloads        | 73366 |
+| # releases         | 21 |
+| # dependents       | 7 |
+| # downloads        | 123896 |
 | # stars            | 1 |
 
 ## Links

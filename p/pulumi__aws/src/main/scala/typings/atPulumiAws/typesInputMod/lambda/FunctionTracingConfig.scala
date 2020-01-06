@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FunctionTracingConfig extends js.Object {
   /**
     * Can be either `PassThrough` or `Active`. If PassThrough, Lambda will only trace
@@ -13,7 +14,7 @@ trait FunctionTracingConfig extends js.Object {
     * from an upstream service. If no tracing header is received, Lambda will call
     * X-Ray for a tracing decision.
     */
-  var mode: Input[String]
+  var mode: Input[String] = js.native
 }
 
 object FunctionTracingConfig {

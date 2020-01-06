@@ -10,9 +10,9 @@ Proxy handler plugin for hapi.js
 | ------------------ | :-------------: |
 | Full name          | h2o2 |
 | Keywords           | HTTP, proxy, handler, hapi, plugin |
-| # releases         | 13 |
-| # dependents       | 71 |
-| # downloads        | 6687091 |
+| # releases         | 8 |
+| # dependents       | 65 |
+| # downloads        | 5842612 |
 | # stars            | 6 |
 
 ## Links

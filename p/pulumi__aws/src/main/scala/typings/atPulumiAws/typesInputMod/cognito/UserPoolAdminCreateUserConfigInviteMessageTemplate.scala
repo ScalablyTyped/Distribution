@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UserPoolAdminCreateUserConfigInviteMessageTemplate extends js.Object {
   /**
     * The email message template. Must contain the `{####}` placeholder. Conflicts with `emailVerificationMessage` argument.
     */
-  var emailMessage: js.UndefOr[Input[String]] = js.undefined
+  var emailMessage: js.UndefOr[Input[String]] = js.native
   /**
     * The subject line for the email message template. Conflicts with `emailVerificationSubject` argument.
     */
-  var emailSubject: js.UndefOr[Input[String]] = js.undefined
+  var emailSubject: js.UndefOr[Input[String]] = js.native
   /**
     * The SMS message template. Must contain the `{####}` placeholder. Conflicts with `smsVerificationMessage` argument.
     */
-  var smsMessage: js.UndefOr[Input[String]] = js.undefined
+  var smsMessage: js.UndefOr[Input[String]] = js.native
 }
 
 object UserPoolAdminCreateUserConfigInviteMessageTemplate {

@@ -10,9 +10,9 @@ A plain text serializer for Slate editors.
 | ------------------ | :-------------: |
 | Full name          | slate-plain-serializer |
 | Keywords           | deserialize, editor, plain, plaintext, serialize, serializer, slate, string, text, xml |
-| # releases         | 125 |
-| # dependents       | 78 |
-| # downloads        | 2159260 |
+| # releases         | 96 |
+| # dependents       | 103 |
+| # downloads        | 4066463 |
 | # stars            | 0 |
 
 ## Links

@@ -11,8 +11,8 @@ Read from and write to a JSON file, minimizing diffs and preserving formatting.
 | Full name          | json-file-plus |
 | Keywords           | json, json file, formatting, read, write, promise, promiseback |
 | # releases         | 2 |
-| # dependents       | 25 |
-| # downloads        | 392387 |
+| # dependents       | 27 |
+| # downloads        | 401457 |
 | # stars            | 5 |
 
 ## Links

@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UserSetting extends js.Object {
   /**
     * The action that is enabled or disabled.
     */
-  var Action: typings.awsDashSdk.clientsAppstreamMod.Action
+  var Action: typings.awsDashSdk.clientsAppstreamMod.Action = js.native
   /**
     * Indicates whether the action is enabled or disabled.
     */
-  var Permission: typings.awsDashSdk.clientsAppstreamMod.Permission
+  var Permission: typings.awsDashSdk.clientsAppstreamMod.Permission = js.native
 }
 
 object UserSetting {

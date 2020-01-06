@@ -10,9 +10,9 @@ Get the status of a file with some features
 | ------------------ | :-------------: |
 | Full name          | @nodelib/fs.stat |
 | Keywords           | NodeLib, fs, FileSystem, file system, stat |
-| # releases         | 9 |
+| # releases         | 13 |
 | # dependents       | 3 |
-| # downloads        | 133854506 |
+| # downloads        | 184518983 |
 | # stars            | 0 |
 
 ## Links

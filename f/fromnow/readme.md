@@ -4,15 +4,15 @@
 Typings are for version 3.0.1
 
 ## Library description:
-A tiny (392B) utility for human-readable time differences between now and past or future dates.
+A tiny (339B) utility for human-readable time differences between now and past or future dates.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | fromnow |
 | Keywords           | ago, date, time, parse, format, moment, from now, fromnow |
-| # releases         | 3 |
+| # releases         | 4 |
 | # dependents       | 2 |
-| # downloads        | 1951 |
+| # downloads        | 8526 |
 | # stars            | 0 |
 
 ## Links

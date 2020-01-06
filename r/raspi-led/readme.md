@@ -12,7 +12,7 @@ Provides access to status LED on the Raspberry Pi as part of the Raspi.js librar
 | Keywords           | nodebots, robotics, raspberry pi |
 | # releases         | 4 |
 | # dependents       | 1 |
-| # downloads        | 8081 |
+| # downloads        | 6935 |
 | # stars            | 0 |
 
 ## Links

@@ -11,8 +11,8 @@ Mime database interface
 | Full name          | @hapi/mimos |
 | Keywords           | mime, database, content-type |
 | # releases         | 3 |
-| # dependents       | 2 |
-| # downloads        | 14182 |
+| # dependents       | 7 |
+| # downloads        | 2954486 |
 | # stars            | 0 |
 
 ## Links

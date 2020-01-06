@@ -12,7 +12,7 @@ A Cordova plugin to prevent user interaction using an animated spinner overlay d
 | Keywords           | cordova, spinner, progress, activity, block, ecosystem:cordova, cordova-android, cordova-ios |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 10607 |
+| # downloads        | 10166 |
 | # stars            | 0 |
 
 ## Links

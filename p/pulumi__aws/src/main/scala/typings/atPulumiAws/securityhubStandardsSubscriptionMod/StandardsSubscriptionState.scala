@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StandardsSubscriptionState extends js.Object {
   /**
     * The ARN of a standard - see below.
     */
-  val standardsArn: js.UndefOr[Input[String]] = js.undefined
+  val standardsArn: js.UndefOr[Input[String]] = js.native
 }
 
 object StandardsSubscriptionState {

@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FileModes extends js.Object {
   /**
     * The file mode of a file in the base of a merge or pull request.
     */
-  var base: js.UndefOr[FileModeTypeEnum] = js.undefined
+  var base: js.UndefOr[FileModeTypeEnum] = js.native
   /**
     * The file mode of a file in the destination of a merge or pull request.
     */
-  var destination: js.UndefOr[FileModeTypeEnum] = js.undefined
+  var destination: js.UndefOr[FileModeTypeEnum] = js.native
   /**
     * The file mode of a file in the source of a merge or pull request.
     */
-  var source: js.UndefOr[FileModeTypeEnum] = js.undefined
+  var source: js.UndefOr[FileModeTypeEnum] = js.native
 }
 
 object FileModes {

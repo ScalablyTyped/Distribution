@@ -10,9 +10,9 @@ Regex for matching dot-directories, like `.git/`
 | ------------------ | :-------------: |
 | Full name          | dotdir-regex |
 | Keywords           | detect, directory, dot, dotdir, dotfile, exec, expression, file, find, match, regex, regexp, regular, test |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 474175 |
+| # downloads        | 544463 |
 | # stars            | 0 |
 
 ## Links

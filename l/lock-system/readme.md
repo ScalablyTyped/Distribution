@@ -10,9 +10,9 @@ Lock your system
 | ------------------ | :-------------: |
 | Full name          | lock-system |
 | Keywords           | lock, system, macos, mac, linux, windows, screen, os, login, password |
-| # releases         | 6 |
-| # dependents       | 2 |
-| # downloads        | 648 |
+| # releases         | 2 |
+| # dependents       | 3 |
+| # downloads        | 1040 |
 | # stars            | 1 |
 
 ## Links

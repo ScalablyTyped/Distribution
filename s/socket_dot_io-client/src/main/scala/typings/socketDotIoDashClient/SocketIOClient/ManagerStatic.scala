@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation._
 	 */
 @js.native
 trait ManagerStatic
-  extends Instantiable2[/* uri */ String, /* opts */ ConnectOpts, Manager]
-     with /**
+  extends /**
 		 * @see default constructor
 		 */
-Instantiable1[(/* opts */ ConnectOpts) | (/* uri */ String), Manager] {
+Instantiable1[(/* opts */ ConnectOpts) | (/* uri */ String), Manager]
+     with Instantiable2[/* uri */ String, /* opts */ ConnectOpts, Manager] {
   /**
   		 * Creates a new Manager with the default URI (window host)
   		 * @param opts Any connection options that we want to use (and pass to engine.io)

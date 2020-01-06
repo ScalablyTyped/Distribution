@@ -10,9 +10,9 @@ API for adding git remotes.
 | ------------------ | :-------------: |
 | Full name          | git-add-remote |
 | Keywords           | add, git, remote |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 409 |
+| # downloads        | 10295 |
 | # stars            | 0 |
 
 ## Links

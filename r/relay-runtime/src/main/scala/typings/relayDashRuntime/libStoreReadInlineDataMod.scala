@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object libStoreReadInlineDataMod extends js.Object {
   def readInlineData[T /* <: _RefType[_] */](fragment: GraphQLTaggedNode): js.UndefOr[T | Null] = js.native
-  def readInlineData[T /* <: _RefType[_] */](fragment: GraphQLTaggedNode, ref: FragmentRef[T]): js.UndefOr[T | Null] = js.native
+  def readInlineData[T /* <: _RefType[_] */](fragment: GraphQLTaggedNode, ref: FragmentRef[T]): T = js.native
   @JSName("readInlineData")
-  def readInlineData_T__RefTypeWildcard_T[T /* <: _RefType[_] */](fragment: GraphQLTaggedNode, ref: FragmentRef[T]): T = js.native
+  def readInlineData_T__RefTypeWildcard_Union[T /* <: _RefType[_] */](fragment: GraphQLTaggedNode, ref: FragmentRef[T]): js.UndefOr[T | Null] = js.native
 }
 

@@ -10,9 +10,9 @@ Generates markdown API documentation from jsdoc annotated source code
 | ------------------ | :-------------: |
 | Full name          | jsdoc-to-markdown |
 | Keywords           | jsdoc, markdown, api, generator, javascript, js, documentation |
-| # releases         | 9 |
-| # dependents       | 82 |
-| # downloads        | 1048033 |
+| # releases         | 11 |
+| # dependents       | 96 |
+| # downloads        | 1523152 |
 | # stars            | 37 |
 
 ## Links

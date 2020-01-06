@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VpcEndpointServiceAllowedPrincipleState extends js.Object {
   /**
     * The ARN of the principal to allow permissions.
     */
-  val principalArn: js.UndefOr[Input[String]] = js.undefined
+  val principalArn: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of the VPC endpoint service to allow permission.
     */
-  val vpcEndpointServiceId: js.UndefOr[Input[String]] = js.undefined
+  val vpcEndpointServiceId: js.UndefOr[Input[String]] = js.native
 }
 
 object VpcEndpointServiceAllowedPrincipleState {

@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class SheetsManager () extends js.Object {
   val size: Double = js.native
-  def add(key: js.Object, sheet: StyleSheet[String]): Unit = js.native
-  def get(key: js.Object): StyleSheet[String] | Null = js.native
-  def manage(key: js.Object): StyleSheet[String] | Null = js.native
+  def add(key: js.Object, sheet: StyleSheet[String | Double | js.Symbol]): Unit = js.native
+  def get(key: js.Object): (StyleSheet[String | Double | js.Symbol]) | Null = js.native
+  def manage(key: js.Object): (StyleSheet[String | Double | js.Symbol]) | Null = js.native
   def unmanage(key: js.Object): Unit = js.native
 }
 

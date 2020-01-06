@@ -4,15 +4,15 @@
 Typings are for version 2.0
 
 ## Library description:
-Sort an array of objects by any property value, at any depth, in any custom order.
+Isomorphic, load-anywhere function to sort an array by scalar, deep or computed values in any standard or custom order
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | sort-array |
 | Keywords           | sort, by, array, recordset, objects, sorted, asc, desc |
-| # releases         | 3 |
+| # releases         | 11 |
 | # dependents       | 7 |
-| # downloads        | 1092422 |
+| # downloads        | 1469172 |
 | # stars            | 3 |
 
 ## Links

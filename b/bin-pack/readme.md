@@ -10,9 +10,9 @@ A packing algorithm for 2D bin packing. Largely based on code and a blog post by
 | ------------------ | :-------------: |
 | Full name          | bin-pack |
 | Keywords           | bin, rectangle, square, sprite, pack |
-| # releases         | 1 |
-| # dependents       | 10 |
-| # downloads        | 2142038 |
+| # releases         | 0 |
+| # dependents       | 16 |
+| # downloads        | 2240503 |
 | # stars            | 2 |
 
 ## Links

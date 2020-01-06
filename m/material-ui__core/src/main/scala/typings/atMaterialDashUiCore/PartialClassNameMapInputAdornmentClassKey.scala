@@ -5,12 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/InputAdornment/InputAdornment.InputAdornmentClassKey>> */
+@js.native
 trait PartialClassNameMapInputAdornmentClassKey extends js.Object {
-  var disablePointerEvents: js.UndefOr[String] = js.undefined
-  var filled: js.UndefOr[String] = js.undefined
-  var positionEnd: js.UndefOr[String] = js.undefined
-  var positionStart: js.UndefOr[String] = js.undefined
-  var root: js.UndefOr[String] = js.undefined
+  var disablePointerEvents: js.UndefOr[String] = js.native
+  var filled: js.UndefOr[String] = js.native
+  var positionEnd: js.UndefOr[String] = js.native
+  var positionStart: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.native
 }
 
 object PartialClassNameMapInputAdornmentClassKey {

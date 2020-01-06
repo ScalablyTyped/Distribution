@@ -1,5 +1,8 @@
 package typings.styledDashComponents.styledDashComponentsMod
 
+import typings.react.reactMod.ComponentClass
+import typings.react.reactMod.ComponentState
+import typings.react.reactMod.FunctionComponent
 import typings.styledDashComponents.styledDashComponentsStrings.`object`
 import typings.styledDashComponents.styledDashComponentsStrings.`var`
 import typings.styledDashComponents.styledDashComponentsStrings.a
@@ -2095,11 +2098,10 @@ trait ThemedBaseStyledInterface[T /* <: js.Object */] extends js.Object {
   // causes tests to fail in TS 3.1
   component: webview
   ): ThemedStyledFunction[webview, T, js.Object, scala.Nothing] = js.native
-  def apply[C /* <: AnyStyledComponent */](component: C): ThemedStyledFunction[
-    StyledComponentInnerComponent[C], 
-    T, 
-    StyledComponentInnerOtherProps[C], 
-    StyledComponentInnerAttrs[C]
-  ] = js.native
+  def apply[C /* <: (ComponentClass[_, ComponentState]) | FunctionComponent[_] */](
+    // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
+  // causes tests to fail in TS 3.1
+  component: C
+  ): ThemedStyledFunction[C, T, js.Object, scala.Nothing] = js.native
 }
 

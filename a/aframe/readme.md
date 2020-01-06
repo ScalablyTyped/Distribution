@@ -10,9 +10,9 @@ A web framework for building virtual reality experiences.
 | ------------------ | :-------------: |
 | Full name          | aframe |
 | Keywords           | 3d, aframe, cardboard, components, oculus, three, three.js, rift, vive, vr, web-components, webvr |
-| # releases         | 10 |
-| # dependents       | 47 |
-| # downloads        | 89589 |
+| # releases         | 11 |
+| # dependents       | 50 |
+| # downloads        | 127621 |
 | # stars            | 11 |
 
 ## Links

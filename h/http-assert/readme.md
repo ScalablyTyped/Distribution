@@ -11,8 +11,8 @@ assert with status codes
 | Full name          | http-assert |
 | Keywords           | assert, http |
 | # releases         | 3 |
-| # dependents       | 40 |
-| # downloads        | 10309086 |
+| # dependents       | 47 |
+| # downloads        | 15885201 |
 | # stars            | 2 |
 
 ## Links

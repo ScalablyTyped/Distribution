@@ -11,8 +11,8 @@ Node.js pagination middleware and view helpers
 | Full name          | express-paginate |
 | Keywords           | - |
 | # releases         | 3 |
-| # dependents       | 10 |
-| # downloads        | 120751 |
+| # dependents       | 11 |
+| # downloads        | 157906 |
 | # stars            | 7 |
 
 ## Links

@@ -3,6 +3,7 @@ package typings.officeDashUiDashFabricDashReact
 import typings.officeDashUiDashFabricDashReact.libComponentsSwatchColorPickerColorPickerGridCellDotTypesMod.IColorPickerGridCellProps
 import typings.officeDashUiDashFabricDashReact.libComponentsSwatchColorPickerSwatchColorPickerDotTypesMod.ISwatchColorPickerProps
 import typings.react.reactMod.StatelessComponent
+import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +26,7 @@ object libComponentsSwatchColorPickerMod extends js.Object {
   /* static members */
   @js.native
   object ColorPickerGridCellBase extends js.Object {
-    var defaultProps: IColorPickerGridCellProps = js.native
+    var defaultProps: Partial[IColorPickerGridCellProps] = js.native
   }
   
   /* static members */

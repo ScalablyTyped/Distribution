@@ -5,12 +5,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/StepIcon/StepIcon.StepIconClasskey>> */
+@js.native
 trait PartialClassNameMapStepIconClasskey extends js.Object {
-  var active: js.UndefOr[String] = js.undefined
-  var completed: js.UndefOr[String] = js.undefined
-  var error: js.UndefOr[String] = js.undefined
-  var root: js.UndefOr[String] = js.undefined
-  var text: js.UndefOr[String] = js.undefined
+  var active: js.UndefOr[String] = js.native
+  var completed: js.UndefOr[String] = js.native
+  var error: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.native
 }
 
 object PartialClassNameMapStepIconClasskey {

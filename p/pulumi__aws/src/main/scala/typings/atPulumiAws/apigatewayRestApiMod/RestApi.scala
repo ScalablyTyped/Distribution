@@ -1,5 +1,6 @@
 package typings.atPulumiAws.apigatewayRestApiMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.atPulumiAws.typesOutputMod.apigateway.RestApiEndpointConfiguration
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
@@ -27,6 +28,10 @@ class RestApi protected () extends CustomResource {
     * The source of the API key for requests. Valid values are HEADER (default) and AUTHORIZER.
     */
   val apiKeySource: Output[js.UndefOr[String]] = js.native
+  /**
+    * Amazon Resource Name (ARN)
+    */
+  val arn: Output[String] = js.native
   /**
     * The list of binary media types supported by the RestApi. By default, the RestApi supports only UTF-8-encoded text payloads.
     */
@@ -61,14 +66,15 @@ class RestApi protected () extends CustomResource {
     * The name of the REST API
     */
   val name: Output[String] = js.native
-  /**
-    * JSON formatted policy document that controls access to the API Gateway.
-    */
   val policy: Output[js.UndefOr[String]] = js.native
   /**
     * The resource ID of the REST API's root
     */
   val rootResourceId: Output[String] = js.native
+  /**
+    * Key-value mapping of resource tags
+    */
+  val tags: Output[js.UndefOr[StringDictionary[_]]] = js.native
 }
 
 /* static members */

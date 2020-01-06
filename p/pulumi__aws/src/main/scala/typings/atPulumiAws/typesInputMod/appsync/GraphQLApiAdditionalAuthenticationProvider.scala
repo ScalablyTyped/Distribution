@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GraphQLApiAdditionalAuthenticationProvider extends js.Object {
   /**
     * The authentication type. Valid values: `API_KEY`, `AWS_IAM`, `AMAZON_COGNITO_USER_POOLS`, `OPENID_CONNECT`
     */
-  var authenticationType: Input[String]
+  var authenticationType: Input[String] = js.native
   /**
     * Nested argument containing OpenID Connect configuration. Defined below.
     */
-  var openidConnectConfig: js.UndefOr[Input[GraphQLApiAdditionalAuthenticationProviderOpenidConnectConfig]] = js.undefined
+  var openidConnectConfig: js.UndefOr[Input[GraphQLApiAdditionalAuthenticationProviderOpenidConnectConfig]] = js.native
   /**
     * The Amazon Cognito User Pool configuration. Defined below.
     */
-  var userPoolConfig: js.UndefOr[Input[GraphQLApiAdditionalAuthenticationProviderUserPoolConfig]] = js.undefined
+  var userPoolConfig: js.UndefOr[Input[GraphQLApiAdditionalAuthenticationProviderUserPoolConfig]] = js.native
 }
 
 object GraphQLApiAdditionalAuthenticationProvider {

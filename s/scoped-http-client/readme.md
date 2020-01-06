@@ -11,8 +11,8 @@ http client request wrapper
 | Full name          | scoped-http-client |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 45 |
-| # downloads        | 492139 |
+| # dependents       | 47 |
+| # downloads        | 626467 |
 | # stars            | 0 |
 
 ## Links

@@ -277,12 +277,12 @@ trait SecurityHub extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ EnableImportFindingsForProductResponse, Unit]
   ): Request[EnableImportFindingsForProductResponse, AWSError] = js.native
   /**
-    * Enables Security Hub for your account in the current Region or the Region you specify in the request. When you enable Security Hub, you grant to Security Hub the permissions necessary to gather findings from AWS Config, Amazon GuardDuty, Amazon Inspector, and Amazon Macie. To learn more, see Setting Up AWS Security Hub.
+    * Enables Security Hub for your account in the current Region or the Region you specify in the request. Enabling Security Hub also enables the CIS AWS Foundations standard. When you enable Security Hub, you grant to Security Hub the permissions necessary to gather findings from AWS Config, Amazon GuardDuty, Amazon Inspector, and Amazon Macie. To learn more, see Setting Up AWS Security Hub.
     */
   def enableSecurityHub(): Request[EnableSecurityHubResponse, AWSError] = js.native
   def enableSecurityHub(callback: js.Function2[/* err */ AWSError, /* data */ EnableSecurityHubResponse, Unit]): Request[EnableSecurityHubResponse, AWSError] = js.native
   /**
-    * Enables Security Hub for your account in the current Region or the Region you specify in the request. When you enable Security Hub, you grant to Security Hub the permissions necessary to gather findings from AWS Config, Amazon GuardDuty, Amazon Inspector, and Amazon Macie. To learn more, see Setting Up AWS Security Hub.
+    * Enables Security Hub for your account in the current Region or the Region you specify in the request. Enabling Security Hub also enables the CIS AWS Foundations standard. When you enable Security Hub, you grant to Security Hub the permissions necessary to gather findings from AWS Config, Amazon GuardDuty, Amazon Inspector, and Amazon Macie. To learn more, see Setting Up AWS Security Hub.
     */
   def enableSecurityHub(params: EnableSecurityHubRequest): Request[EnableSecurityHubResponse, AWSError] = js.native
   def enableSecurityHub(

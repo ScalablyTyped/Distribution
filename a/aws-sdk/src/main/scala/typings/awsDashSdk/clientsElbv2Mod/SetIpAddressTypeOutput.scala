@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SetIpAddressTypeOutput extends js.Object {
   /**
     * The IP address type.
     */
-  var IpAddressType: js.UndefOr[typings.awsDashSdk.clientsElbv2Mod.IpAddressType] = js.undefined
+  var IpAddressType: js.UndefOr[typings.awsDashSdk.clientsElbv2Mod.IpAddressType] = js.native
 }
 
 object SetIpAddressTypeOutput {

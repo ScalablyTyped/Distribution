@@ -11,8 +11,8 @@ authenticate socket.io connections using JWTs
 | Full name          | socketio-jwt |
 | Keywords           | socket, socket.io, jwt |
 | # releases         | 0 |
-| # dependents       | 61 |
-| # downloads        | 594338 |
+| # dependents       | 63 |
+| # downloads        | 502646 |
 | # stars            | 9 |
 
 ## Links

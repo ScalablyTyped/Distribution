@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EventDestinationSnsDestination extends js.Object {
   /**
     * The ARN of the SNS topic
     */
-  var topicArn: Input[String]
+  var topicArn: Input[String] = js.native
 }
 
 object EventDestinationSnsDestination {

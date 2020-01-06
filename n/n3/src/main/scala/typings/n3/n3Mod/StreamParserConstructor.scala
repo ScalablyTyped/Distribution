@@ -9,8 +9,5 @@ import scala.scalajs.js.annotation._
 @js.native
 trait StreamParserConstructor
   extends Instantiable0[N3StreamParser[BaseQuad]]
-     with Instantiable1[/* options */ ParserOptions, N3StreamParser[BaseQuad]] {
-  def apply[Q /* <: BaseQuad */](): N3StreamParser[Q] = js.native
-  def apply[Q /* <: BaseQuad */](options: ParserOptions): N3StreamParser[Q] = js.native
-}
+     with Instantiable1[/* options */ ParserOptions, N3StreamParser[BaseQuad]]
 

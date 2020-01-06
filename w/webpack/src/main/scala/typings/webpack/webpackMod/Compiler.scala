@@ -274,12 +274,12 @@ object Compiler extends js.Object {
 object compiler extends js.Object {
   /** @deprecated use webpack.Compiler */
   // tslint:disable-next-line:no-unnecessary-qualifier
-  type Compiler = /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias webpack.webpack.compiler.Compiler */ js.Object
+  type Compiler = /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias webpack.webpack.compiler.Compiler */ js.Object
   /** @deprecated use webpack.Compiler.Handler */
   type CompilerCallback = typings.webpack.webpackMod.Compiler.Handler
   /** @deprecated use webpack.Stats */
   // tslint:disable-next-line:no-unnecessary-qualifier
-  type Stats = /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias webpack.webpack.compiler.Stats */ js.Object
+  type Stats = /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias webpack.webpack.compiler.Stats */ js.Object
   /** @deprecated use webpack.Stats.ToJsonOptions */
   type StatsOptions = ToJsonOptions
   /** @deprecated use webpack.Stats.ToStringOptions */

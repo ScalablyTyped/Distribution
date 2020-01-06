@@ -11,8 +11,8 @@ tab completion helpers, for node cli programs. Inspired by npm completion.
 | Full name          | tabtab |
 | Keywords           | terminal, tab, unix, console, complete, completion |
 | # releases         | 4 |
-| # dependents       | 90 |
-| # downloads        | 8517868 |
+| # dependents       | 107 |
+| # downloads        | 15253672 |
 | # stars            | 7 |
 
 ## Links

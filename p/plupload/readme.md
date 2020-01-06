@@ -10,9 +10,9 @@ Plupload is a JavaScript API for dealing with file uploads it supports features 
 | ------------------ | :-------------: |
 | Full name          | plupload |
 | Keywords           | fileuploader, upload, chunk, image, resize, crop, orientation, JavaScript, HTML5, Flash, Silverlight, moxie |
-| # releases         | 5 |
-| # dependents       | 29 |
-| # downloads        | 93636 |
+| # releases         | 0 |
+| # dependents       | 39 |
+| # downloads        | 104051 |
 | # stars            | 1 |
 
 ## Links

@@ -11,8 +11,8 @@ Native JS murmur hash implementation
 | Full name          | murmurhash-js |
 | Keywords           | murmur, hash, string, murmur2, murmur3, fast |
 | # releases         | 1 |
-| # dependents       | 47 |
-| # downloads        | 2739301 |
+| # dependents       | 59 |
+| # downloads        | 6467418 |
 | # stars            | 3 |
 
 ## Links

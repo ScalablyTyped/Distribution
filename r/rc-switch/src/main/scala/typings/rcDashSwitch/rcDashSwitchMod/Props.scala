@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Props extends js.Object {
   var autoFocus: js.UndefOr[Boolean] = js.undefined
   var checked: js.UndefOr[Boolean] = js.undefined
-  var checkedChildren: ReactNode
+  var checkedChildren: js.UndefOr[ReactNode] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   var defaultChecked: js.UndefOr[Boolean] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
@@ -17,7 +17,7 @@ trait Props extends js.Object {
   var onClick: js.UndefOr[js.Function1[/* checked */ Boolean, Unit]] = js.undefined
   var prefixCls: js.UndefOr[String] = js.undefined
   var tabIndex: js.UndefOr[Double] = js.undefined
-  var unCheckedChildren: ReactNode
+  var unCheckedChildren: js.UndefOr[ReactNode] = js.undefined
 }
 
 object Props {

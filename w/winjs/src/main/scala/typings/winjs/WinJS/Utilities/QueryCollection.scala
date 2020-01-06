@@ -124,12 +124,12 @@ class QueryCollection[T] () extends Array[T] {
     * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
     */
   @JSName("map")
-  def map_U_Tuple5[U](callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], U]): js.Tuple5[U, U, U, U, U] = js.native
+  def map_U_Tuple4[U](callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], U]): js.Tuple4[U, U, U, U] = js.native
   @JSName("map")
-  def map_U_Tuple5[U](
+  def map_U_Tuple4[U](
     callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], U],
     thisArg: js.Any
-  ): js.Tuple5[U, U, U, U, U] = js.native
+  ): js.Tuple4[U, U, U, U] = js.native
   /**
     * Executes a query selector on all the elements in the collection and aggregates the result into a QueryCollection.
     * @param query The query selector string.

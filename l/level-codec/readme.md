@@ -10,9 +10,9 @@ Encode keys, values and range options, with built-in or custom encodings
 | ------------------ | :-------------: |
 | Full name          | level-codec |
 | Keywords           | level |
-| # releases         | 6 |
-| # dependents       | 13 |
-| # downloads        | 4394679 |
+| # releases         | 3 |
+| # dependents       | 16 |
+| # downloads        | 5620966 |
 | # stars            | 0 |
 
 ## Links

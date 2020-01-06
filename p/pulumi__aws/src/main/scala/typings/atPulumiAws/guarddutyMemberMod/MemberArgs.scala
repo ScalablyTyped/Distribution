@@ -5,31 +5,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MemberArgs extends js.Object {
   /**
     * AWS account ID for member account.
     */
-  val accountId: Input[String]
+  val accountId: Input[String] = js.native
   /**
     * The detector ID of the GuardDuty account where you want to create member accounts.
     */
-  val detectorId: Input[String]
+  val detectorId: Input[String] = js.native
   /**
     * Boolean whether an email notification is sent to the accounts. Defaults to `false`.
     */
-  val disableEmailNotification: js.UndefOr[Input[Boolean]] = js.undefined
+  val disableEmailNotification: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Email address for member account.
     */
-  val email: Input[String]
+  val email: Input[String] = js.native
   /**
     * Message for invitation.
     */
-  val invitationMessage: js.UndefOr[Input[String]] = js.undefined
+  val invitationMessage: js.UndefOr[Input[String]] = js.native
   /**
     * Boolean whether to invite the account to GuardDuty as a member. Defaults to `false`. To detect if an invitation needs to be (re-)sent, the this provider state value is `true` based on a `relationshipStatus` of `Disabled`, `Enabled`, `Invited`, or `EmailVerificationInProgress`.
     */
-  val invite: js.UndefOr[Input[Boolean]] = js.undefined
+  val invite: js.UndefOr[Input[Boolean]] = js.native
 }
 
 object MemberArgs {

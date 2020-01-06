@@ -37,10 +37,10 @@ object buildSrcCallMod extends js.Object {
   class ClientDuplexStreamImpl[RequestType, ResponseType] protected ()
     extends Duplex
        with Anon_Serialize[RequestType]
-       with Anon_Chunk[ResponseType]
-       with Anon_Read[ResponseType]
        with Anon_Cancel
-       with EmitterAugmentation1[metadata | status | data, Metadata | ResponseType | StatusObject] {
+       with EmitterAugmentation1[metadata | status | data, Metadata | ResponseType | StatusObject]
+       with Anon_Chunk[ResponseType]
+       with Anon_Read[ResponseType] {
     def this(
       call: Call,
       serialize: js.Function1[/* value */ RequestType, Buffer],
@@ -91,9 +91,9 @@ object buildSrcCallMod extends js.Object {
       listener: js.Function1[Metadata | ResponseType | StatusObject, Unit]
     ): this.type = js.native
     /* InferMemberOverrides */
-    override def read(): ResponseType with (String | Buffer) = js.native
+    override def read(): (String | Buffer) with ResponseType = js.native
     /* InferMemberOverrides */
-    override def read(size: Double): ResponseType with (String | Buffer) = js.native
+    override def read(size: Double): (String | Buffer) with ResponseType = js.native
     /* CompleteClass */
     override def removeListener(
       event: metadata | status | data,
@@ -112,8 +112,8 @@ object buildSrcCallMod extends js.Object {
     extends IntermediateObjectReadable[ResponseType]
        with Anon_Chunk[ResponseType]
        with Anon_Cancel
-       with Anon_Read[ResponseType]
-       with EmitterAugmentation1[metadata | status | data, Metadata | ResponseType | StatusObject] {
+       with EmitterAugmentation1[metadata | status | data, Metadata | ResponseType | StatusObject]
+       with Anon_Read[ResponseType] {
     def this(call: Call, deserialize: js.Function1[/* chunk */ Buffer, ResponseType]) = this()
     val call: js.Any = js.native
     /* CompleteClass */
@@ -154,9 +154,9 @@ object buildSrcCallMod extends js.Object {
       listener: js.Function1[Metadata | ResponseType | StatusObject, Unit]
     ): this.type = js.native
     /* InferMemberOverrides */
-    override def read(): ResponseType with (String | Buffer) = js.native
+    override def read(): (String | Buffer) with ResponseType = js.native
     /* InferMemberOverrides */
-    override def read(size: Double): ResponseType with (String | Buffer) = js.native
+    override def read(size: Double): (String | Buffer) with ResponseType = js.native
     /* CompleteClass */
     override def removeListener(
       event: metadata | status | data,

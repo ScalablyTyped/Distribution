@@ -10,9 +10,9 @@ String pixel width measurement on the backend in Javascript
 | ------------------ | :-------------: |
 | Full name          | string-pixel-width |
 | Keywords           | string, pixel width |
-| # releases         | 11 |
-| # dependents       | 10 |
-| # downloads        | 57119 |
+| # releases         | 7 |
+| # dependents       | 13 |
+| # downloads        | 147556 |
 | # stars            | 0 |
 
 ## Links

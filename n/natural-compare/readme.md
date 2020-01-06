@@ -11,8 +11,8 @@ Compare strings containing a mix of letters and numbers in the way a human being
 | Full name          | natural-compare |
 | Keywords           | string, natural, order, sort, natsort, natcmp, compare, alphanum, litejs |
 | # releases         | 0 |
-| # dependents       | 35 |
-| # downloads        | 186819251 |
+| # dependents       | 55 |
+| # downloads        | 297028946 |
 | # stars            | 0 |
 
 ## Links

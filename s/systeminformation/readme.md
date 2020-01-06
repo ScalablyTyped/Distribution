@@ -1,7 +1,7 @@
 
 # Scala.js typings for systeminformation
 
-Typings are for version 4.16.0
+Typings are for version 4.16.1
 
 ## Library description:
 Simple system and OS information library
@@ -9,10 +9,10 @@ Simple system and OS information library
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | systeminformation |
-| Keywords           | system information, sysinfo, monitor, monitoring, os, linux, osx, windows, freebsd, cpu, cpuload, physical cores, logical cores, processor, cores, threads, socket type, memory, file system, fsstats, diskio, block devices, netstats, network, network interfaces, network connections, network stats, iface, processes, users, internet, battery, docker, docker stats, docker processes, graphics, graphic card, graphic controller, gpu, display, smart, disk layout |
-| # releases         | 167 |
-| # dependents       | 132 |
-| # downloads        | 786973 |
+| Keywords           | system information, sysinfo, monitor, monitoring, os, linux, osx, windows, freebsd, openbsd, netbsd, cpu, cpuload, physical cores, logical cores, processor, cores, threads, socket type, memory, file system, fsstats, diskio, block devices, netstats, network, network interfaces, network connections, network stats, iface, processes, users, internet, battery, docker, docker stats, docker processes, graphics, graphic card, graphic controller, gpu, display, smart, disk layout, wifi, wifinetworks, virtual box, virtualbox, vm |
+| # releases         | 174 |
+| # dependents       | 185 |
+| # downloads        | 3645873 |
 | # stars            | 23 |
 
 ## Links

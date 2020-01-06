@@ -37,8 +37,7 @@ trait Datetimepicker extends js.Object {
   def collapse(): Boolean = js.native
   /** If set to false the picker will display similar to sideBySide except vertical. */
   def collapse(value: Boolean): Unit = js.native
-  /** Returns the component's model current date, a moment object or null if not set. */
-  def date(): Moment = js.native
+  def date(): Unit = js.native
   def date(date: String): Unit = js.native
   /**
   	 * Takes string, Date, moment, null parameter and sets the components model current moment to it.
@@ -52,8 +51,9 @@ trait Datetimepicker extends js.Object {
   	 */
   def date(date: Moment): Unit = js.native
   def date(date: Date): Unit = js.native
+  /** Returns the component's model current date, a moment object or null if not set. */
   @JSName("date")
-  def date_Unit(): Unit = js.native
+  def date_Moment(): Moment = js.native
   /** Returns the options.dayViewHeaderFormat option. */
   def dayViewHeaderFormat(): String = js.native
   /** Used to customize the header of the day view. */

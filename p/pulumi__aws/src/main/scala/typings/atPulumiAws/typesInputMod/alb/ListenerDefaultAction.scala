@@ -5,26 +5,27 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ListenerDefaultAction extends js.Object {
-  var authenticateCognito: js.UndefOr[Input[ListenerDefaultActionAuthenticateCognito]] = js.undefined
-  var authenticateOidc: js.UndefOr[Input[ListenerDefaultActionAuthenticateOidc]] = js.undefined
+  var authenticateCognito: js.UndefOr[Input[ListenerDefaultActionAuthenticateCognito]] = js.native
+  var authenticateOidc: js.UndefOr[Input[ListenerDefaultActionAuthenticateOidc]] = js.native
   /**
     * Information for creating an action that returns a custom HTTP response. Required if `type` is `fixed-response`.
     */
-  var fixedResponse: js.UndefOr[Input[ListenerDefaultActionFixedResponse]] = js.undefined
-  var order: js.UndefOr[Input[Double]] = js.undefined
+  var fixedResponse: js.UndefOr[Input[ListenerDefaultActionFixedResponse]] = js.native
+  var order: js.UndefOr[Input[Double]] = js.native
   /**
     * Information for creating a redirect action. Required if `type` is `redirect`.
     */
-  var redirect: js.UndefOr[Input[ListenerDefaultActionRedirect]] = js.undefined
+  var redirect: js.UndefOr[Input[ListenerDefaultActionRedirect]] = js.native
   /**
     * The ARN of the Target Group to which to route traffic. Required if `type` is `forward`.
     */
-  var targetGroupArn: js.UndefOr[Input[String]] = js.undefined
+  var targetGroupArn: js.UndefOr[Input[String]] = js.native
   /**
     * The type of routing action. Valid values are `forward`, `redirect`, `fixed-response`, `authenticate-cognito` and `authenticate-oidc`.
     */
-  var `type`: Input[String]
+  var `type`: Input[String] = js.native
 }
 
 object ListenerDefaultAction {

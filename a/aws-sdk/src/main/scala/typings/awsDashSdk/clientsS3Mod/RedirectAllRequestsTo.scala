@@ -4,21 +4,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RedirectAllRequestsTo extends js.Object {
   /**
     * Name of the host where requests are redirected.
     */
-  var HostName: typings.awsDashSdk.clientsS3Mod.HostName
+  var HostName: typings.awsDashSdk.clientsS3Mod.HostName = js.native
   /**
     * Protocol to use when redirecting requests. The default is the protocol that is used in the original request.
     */
-  var Protocol: js.UndefOr[typings.awsDashSdk.clientsS3Mod.Protocol] = js.undefined
+  var Protocol: js.UndefOr[typings.awsDashSdk.clientsS3Mod.Protocol] = js.native
 }
 
 object RedirectAllRequestsTo {
   @scala.inline
   def apply(HostName: HostName, Protocol: Protocol = null): RedirectAllRequestsTo = {
-    val __obj = js.Dynamic.literal(HostName = HostName)
+    val __obj = js.Dynamic.literal(HostName = HostName.asInstanceOf[js.Any])
     if (Protocol != null) __obj.updateDynamic("Protocol")(Protocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedirectAllRequestsTo]
   }

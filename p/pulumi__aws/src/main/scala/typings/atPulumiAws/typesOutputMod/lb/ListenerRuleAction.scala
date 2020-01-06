@@ -4,32 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ListenerRuleAction extends js.Object {
   /**
     * Information for creating an authenticate action using Cognito. Required if `type` is `authenticate-cognito`.
     */
-  var authenticateCognito: js.UndefOr[ListenerRuleActionAuthenticateCognito] = js.undefined
+  var authenticateCognito: js.UndefOr[ListenerRuleActionAuthenticateCognito] = js.native
   /**
     * Information for creating an authenticate action using OIDC. Required if `type` is `authenticate-oidc`.
     */
-  var authenticateOidc: js.UndefOr[ListenerRuleActionAuthenticateOidc] = js.undefined
+  var authenticateOidc: js.UndefOr[ListenerRuleActionAuthenticateOidc] = js.native
   /**
     * Information for creating an action that returns a custom HTTP response. Required if `type` is `fixed-response`.
     */
-  var fixedResponse: js.UndefOr[ListenerRuleActionFixedResponse] = js.undefined
-  var order: Double
+  var fixedResponse: js.UndefOr[ListenerRuleActionFixedResponse] = js.native
+  var order: Double = js.native
   /**
     * Information for creating a redirect action. Required if `type` is `redirect`.
     */
-  var redirect: js.UndefOr[ListenerRuleActionRedirect] = js.undefined
+  var redirect: js.UndefOr[ListenerRuleActionRedirect] = js.native
   /**
     * The ARN of the Target Group to which to route traffic. Required if `type` is `forward`.
     */
-  var targetGroupArn: js.UndefOr[String] = js.undefined
+  var targetGroupArn: js.UndefOr[String] = js.native
   /**
     * The type of routing action. Valid values are `forward`, `redirect`, `fixed-response`, `authenticate-cognito` and `authenticate-oidc`.
     */
-  var `type`: String
+  var `type`: String = js.native
 }
 
 object ListenerRuleAction {
@@ -43,13 +44,13 @@ object ListenerRuleAction {
     redirect: ListenerRuleActionRedirect = null,
     targetGroupArn: String = null
   ): ListenerRuleAction = {
-    val __obj = js.Dynamic.literal(order = order)
-    __obj.updateDynamic("type")(`type`)
-    if (authenticateCognito != null) __obj.updateDynamic("authenticateCognito")(authenticateCognito)
-    if (authenticateOidc != null) __obj.updateDynamic("authenticateOidc")(authenticateOidc)
-    if (fixedResponse != null) __obj.updateDynamic("fixedResponse")(fixedResponse)
-    if (redirect != null) __obj.updateDynamic("redirect")(redirect)
-    if (targetGroupArn != null) __obj.updateDynamic("targetGroupArn")(targetGroupArn)
+    val __obj = js.Dynamic.literal(order = order.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (authenticateCognito != null) __obj.updateDynamic("authenticateCognito")(authenticateCognito.asInstanceOf[js.Any])
+    if (authenticateOidc != null) __obj.updateDynamic("authenticateOidc")(authenticateOidc.asInstanceOf[js.Any])
+    if (fixedResponse != null) __obj.updateDynamic("fixedResponse")(fixedResponse.asInstanceOf[js.Any])
+    if (redirect != null) __obj.updateDynamic("redirect")(redirect.asInstanceOf[js.Any])
+    if (targetGroupArn != null) __obj.updateDynamic("targetGroupArn")(targetGroupArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListenerRuleAction]
   }
 }

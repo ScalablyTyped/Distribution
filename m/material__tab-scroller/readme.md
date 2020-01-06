@@ -10,12 +10,13 @@ The Material Components for the web tab scroller component
 | ------------------ | :-------------: |
 | Full name          | @material/tab-scroller |
 | Keywords           | material components, material design, tab, scroller |
-| # releases         | 50 |
+| # releases         | 110 |
 | # dependents       | 18 |
-| # downloads        | 779228 |
+| # downloads        | 916036 |
 | # stars            | 0 |
 
 ## Links
+- [Bugs](https://github.com/material-components/material-components-web/issues)
 - [Npm](https://www.npmjs.com/package/%40material%2Ftab-scroller)
     
 

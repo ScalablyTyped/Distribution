@@ -11,8 +11,8 @@ A handy FilePond adapter component for React
 | Full name          | react-filepond |
 | Keywords           | react, reactjs, filepond, file, upload, drag, drop, browse, image, preview |
 | # releases         | 26 |
-| # dependents       | 5 |
-| # downloads        | 101739 |
+| # dependents       | 17 |
+| # downloads        | 448218 |
 | # stars            | 0 |
 
 ## Links

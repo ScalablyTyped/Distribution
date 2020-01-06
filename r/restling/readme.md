@@ -12,7 +12,7 @@ Restling is a lightweight Node.js module for building promise-based asynchronous
 | Keywords           | resquest, http, async, asynchronous, promise, restler, rest, parallel, bluebird |
 | # releases         | 0 |
 | # dependents       | 11 |
-| # downloads        | 18947 |
+| # downloads        | 25665 |
 | # stars            | 8 |
 
 ## Links

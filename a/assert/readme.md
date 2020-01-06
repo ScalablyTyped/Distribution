@@ -4,21 +4,21 @@
 Typings are for version 1.4
 
 ## Library description:
-commonjs assert - node.js api compatible
+The assert module from Node.js, for the browser.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | assert |
-| Keywords           | assert |
-| # releases         | 1 |
-| # dependents       | 932 |
-| # downloads        | 185483209 |
+| Keywords           | assert, browser |
+| # releases         | 3 |
+| # dependents       | 1125 |
+| # downloads        | 299787622 |
 | # stars            | 74 |
 
 ## Links
-- [Homepage](https://github.com/defunctzombie/commonjs-assert)
-- [Bugs](https://github.com/defunctzombie/commonjs-assert/issues)
-- [Repository](https://github.com/defunctzombie/commonjs-assert)
+- [Homepage](https://github.com/browserify/commonjs-assert)
+- [Bugs](https://github.com/browserify/commonjs-assert/issues)
+- [Repository](https://github.com/browserify/commonjs-assert)
 - [Npm](https://www.npmjs.com/package/assert)
     
 

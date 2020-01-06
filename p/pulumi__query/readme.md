@@ -10,9 +10,9 @@ An simple, relational SDK for querying TypeScript and JavaScript data structures
 | ------------------ | :-------------: |
 | Full name          | @pulumi/query |
 | Keywords           | linq, query, rxjs |
-| # releases         | 8 |
-| # dependents       | 0 |
-| # downloads        | 113 |
+| # releases         | 17 |
+| # dependents       | 3 |
+| # downloads        | 136388 |
 | # stars            | 0 |
 
 ## Links

@@ -12,7 +12,7 @@ React DataGrid
 | Keywords           | grid, datagrid, data-grid, grid, widget, table, list, react-component, react, grid |
 | # releases         | 2 |
 | # dependents       | 4 |
-| # downloads        | 63962 |
+| # downloads        | 64421 |
 | # stars            | 0 |
 
 ## Links

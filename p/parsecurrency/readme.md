@@ -4,15 +4,15 @@
 Typings are for version 0.2
 
 ## Library description:
-Currency string parser utility
+Tiny currency string parser utility
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | parsecurrency |
 | Keywords           | money, currency, format, utility, finance, parse, unformat |
 | # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 22025 |
+| # dependents       | 1 |
+| # downloads        | 23938 |
 | # stars            | 1 |
 
 ## Links

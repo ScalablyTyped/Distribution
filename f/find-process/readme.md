@@ -10,9 +10,9 @@ find process info by port/pid/name etc.
 | ------------------ | :-------------: |
 | Full name          | find-process |
 | Keywords           | node, process, pid, port |
-| # releases         | 13 |
-| # dependents       | 42 |
-| # downloads        | 1272498 |
+| # releases         | 14 |
+| # dependents       | 71 |
+| # downloads        | 4457439 |
 | # stars            | 2 |
 
 ## Links

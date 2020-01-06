@@ -12,7 +12,7 @@ Boilerplate and tooling for JavaScript application development with React
 | Keywords           | react, reactjs, webpack, babel, es6, es2015, jsx, redux, browsersync, browser-sync, template, templates, boilerplate, scarrold, scaffolding |
 | # releases         | 1 |
 | # dependents       | 10 |
-| # downloads        | 54094 |
+| # downloads        | 56317 |
 | # stars            | 2 |
 
 ## Links

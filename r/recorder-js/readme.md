@@ -10,9 +10,9 @@ Record audio in your browser
 | ------------------ | :-------------: |
 | Full name          | recorder-js |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 1 |
-| # downloads        | 13156 |
+| # releases         | 1 |
+| # dependents       | 2 |
+| # downloads        | 32353 |
 | # stars            | 1 |
 
 ## Links

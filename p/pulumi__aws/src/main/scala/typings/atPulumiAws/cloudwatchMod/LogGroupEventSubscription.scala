@@ -13,18 +13,18 @@ class LogGroupEventSubscription protected ()
   extends typings.atPulumiAws.cloudwatchLogGroupMixinsMod.LogGroupEventSubscription {
   def this(
     name: String,
-    logGroup: typings.atPulumiAws.cloudwatchLogGroupMixinsMod.cloudwatchLogGroupMod.LogGroup,
+    logGroup: typings.atPulumiAws.cloudwatchLogGroupMod.LogGroup,
     handler: LogGroupEventHandler
   ) = this()
   def this(
     name: String,
-    logGroup: typings.atPulumiAws.cloudwatchLogGroupMixinsMod.cloudwatchLogGroupMod.LogGroup,
+    logGroup: typings.atPulumiAws.cloudwatchLogGroupMod.LogGroup,
     handler: LogGroupEventHandler,
     args: LogGroupEventSubscriptionArgs
   ) = this()
   def this(
     name: String,
-    logGroup: typings.atPulumiAws.cloudwatchLogGroupMixinsMod.cloudwatchLogGroupMod.LogGroup,
+    logGroup: typings.atPulumiAws.cloudwatchLogGroupMod.LogGroup,
     handler: LogGroupEventHandler,
     args: LogGroupEventSubscriptionArgs,
     opts: ComponentResourceOptions

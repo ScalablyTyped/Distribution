@@ -1,7 +1,7 @@
 
 # Scala.js typings for flatbuffers
 
-Typings are for version 1.9
+Typings are for version 1.10
 
 ## Library description:
 Memory Efficient Serialization Library
@@ -10,9 +10,9 @@ Memory Efficient Serialization Library
 | ------------------ | :-------------: |
 | Full name          | flatbuffers |
 | Keywords           | flatbuffers |
-| # releases         | 8 |
-| # dependents       | 23 |
-| # downloads        | 98707 |
+| # releases         | 6 |
+| # dependents       | 30 |
+| # downloads        | 473480 |
 | # stars            | 0 |
 
 ## Links

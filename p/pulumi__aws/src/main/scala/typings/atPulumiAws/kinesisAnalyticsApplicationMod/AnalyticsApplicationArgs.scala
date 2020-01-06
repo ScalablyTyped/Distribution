@@ -10,41 +10,42 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AnalyticsApplicationArgs extends js.Object {
   /**
     * The CloudWatch log stream options to monitor application errors.
     * See CloudWatch Logging Options below for more details.
     */
-  val cloudwatchLoggingOptions: js.UndefOr[Input[AnalyticsApplicationCloudwatchLoggingOptions]] = js.undefined
+  val cloudwatchLoggingOptions: js.UndefOr[Input[AnalyticsApplicationCloudwatchLoggingOptions]] = js.native
   /**
     * SQL Code to transform input data, and generate output.
     */
-  val code: js.UndefOr[Input[String]] = js.undefined
+  val code: js.UndefOr[Input[String]] = js.native
   /**
     * Description of the application.
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * Input configuration of the application. See Inputs below for more details.
     */
-  val inputs: js.UndefOr[Input[AnalyticsApplicationInputs]] = js.undefined
+  val inputs: js.UndefOr[Input[AnalyticsApplicationInputs]] = js.native
   /**
     * Name of the Kinesis Analytics Application.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * Output destination configuration of the application. See Outputs below for more details.
     */
-  val outputs: js.UndefOr[Input[js.Array[Input[AnalyticsApplicationOutput]]]] = js.undefined
+  val outputs: js.UndefOr[Input[js.Array[Input[AnalyticsApplicationOutput]]]] = js.native
   /**
     * An S3 Reference Data Source for the application.
     * See Reference Data Sources below for more details.
     */
-  val referenceDataSources: js.UndefOr[Input[AnalyticsApplicationReferenceDataSources]] = js.undefined
+  val referenceDataSources: js.UndefOr[Input[AnalyticsApplicationReferenceDataSources]] = js.native
   /**
     * Key-value mapping of tags for the Kinesis Analytics Application.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object AnalyticsApplicationArgs {

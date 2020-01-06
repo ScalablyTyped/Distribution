@@ -10,8 +10,8 @@ JS library to generate random pleasing colors/color schemes
 | Full name          | pleasejs |
 | Keywords           | color, scheme, random |
 | # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 28093 |
+| # dependents       | 8 |
+| # downloads        | 16502 |
 | # stars            | 3 |
 
 ## Links

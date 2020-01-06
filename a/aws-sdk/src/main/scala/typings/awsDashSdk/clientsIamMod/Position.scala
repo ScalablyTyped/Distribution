@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Position extends js.Object {
   /**
     * The column in the line containing the specified position in the document.
     */
-  var Column: js.UndefOr[ColumnNumber] = js.undefined
+  var Column: js.UndefOr[ColumnNumber] = js.native
   /**
     * The line containing the specified position in the document.
     */
-  var Line: js.UndefOr[LineNumber] = js.undefined
+  var Line: js.UndefOr[LineNumber] = js.native
 }
 
 object Position {

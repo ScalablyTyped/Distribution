@@ -12,7 +12,7 @@ Look up X11 keysyms, unicode positions, and names.
 | Keywords           | x11, keysym, key, unicode |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 896 |
+| # downloads        | 4606 |
 | # stars            | 1 |
 
 ## Links

@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WebAclRuleAction extends js.Object {
   /**
     * Specifies how you want AWS WAF Regional to respond to requests that match the settings in a rule. e.g. `ALLOW`, `BLOCK` or `COUNT`
     */
-  var `type`: Input[String]
+  var `type`: Input[String] = js.native
 }
 
 object WebAclRuleAction {

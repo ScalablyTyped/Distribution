@@ -10,9 +10,9 @@ A collection of fast approximations to common geographic measurements.
 | ------------------ | :-------------: |
 | Full name          | cheap-ruler |
 | Keywords           | geospatial, measurement, approximation, distance |
-| # releases         | 2 |
-| # dependents       | 5 |
-| # downloads        | 64901 |
+| # releases         | 1 |
+| # dependents       | 8 |
+| # downloads        | 133417 |
 | # stars            | 0 |
 
 ## Links

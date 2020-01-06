@@ -10,9 +10,9 @@ DataTables for jQuery
 | ------------------ | :-------------: |
 | Full name          | datatables.net |
 | Keywords           | filter, sort, DataTables, jQuery, table, DataTables |
-| # releases         | 6 |
-| # dependents       | 89 |
-| # downloads        | 4217942 |
+| # releases         | 4 |
+| # dependents       | 111 |
+| # downloads        | 6752924 |
 | # stars            | 7 |
 
 ## Links

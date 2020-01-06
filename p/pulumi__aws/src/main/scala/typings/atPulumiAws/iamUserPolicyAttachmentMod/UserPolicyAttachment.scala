@@ -1,7 +1,6 @@
 package typings.atPulumiAws.iamUserPolicyAttachmentMod
 
 import typings.atPulumiAws.arnMod.ARN
-import typings.atPulumiAws.iamUserMod.User
 import typings.atPulumiPulumi.atPulumiPulumiMod.CustomResource
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.outputMod.Output
@@ -30,7 +29,7 @@ class UserPolicyAttachment protected () extends CustomResource {
   /**
     * The user the policy should be applied to
     */
-  val user: Output[User] = js.native
+  val user: Output[String] = js.native
 }
 
 /* static members */

@@ -9,11 +9,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined {[ P in keyof @material-ui/core.@material-ui/core/styles/createPalette.TypeObject ]:? std.Partial<@material-ui/core.@material-ui/core/styles/createPalette.TypeObject[P]>} */
+@js.native
 trait PartialTypeObject extends js.Object {
-  var action: js.UndefOr[PartialTypeAction] = js.undefined
-  var background: js.UndefOr[PartialTypeBackground] = js.undefined
-  var divider: js.UndefOr[Partial[TypeDivider]] = js.undefined
-  var text: js.UndefOr[PartialTypeText] = js.undefined
+  var action: js.UndefOr[PartialTypeAction] = js.native
+  var background: js.UndefOr[PartialTypeBackground] = js.native
+  var divider: js.UndefOr[Partial[TypeDivider]] = js.native
+  var text: js.UndefOr[PartialTypeText] = js.native
 }
 
 object PartialTypeObject {

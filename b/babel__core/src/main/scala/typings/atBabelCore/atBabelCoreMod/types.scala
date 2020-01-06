@@ -4701,24 +4701,24 @@ object types extends js.Object {
   def toSequenceExpression(nodes: js.Array[typings.atBabelTypes.atBabelTypesMod.Node], scope: Anon_BuildUndefinedNode): js.UndefOr[SequenceExpression] = js.native
   def toStatement(node: AssignmentExpression): Statement = js.native
   def toStatement(node: AssignmentExpression, ignore: Boolean): Statement = js.native
-  def toStatement(node: Class): Statement = js.native
-  def toStatement(node: Class, ignore: Boolean): Statement = js.native
-  def toStatement(node: Function): FunctionDeclaration = js.native
-  def toStatement(node: Function, ignore: Boolean): FunctionDeclaration = js.native
+  def toStatement(node: Class): ClassDeclaration = js.native
+  def toStatement(node: Class, ignore: Boolean): ClassDeclaration = js.native
+  def toStatement(node: Function): Statement = js.native
+  def toStatement(node: Function, ignore: Boolean): Statement = js.native
   def toStatement(node: Statement): Statement = js.native
   def toStatement(node: Statement, ignore: Boolean): Statement = js.native
-  @JSName("toStatement")
-  def toStatement_ClassDeclaration(node: Class): ClassDeclaration = js.native
-  @JSName("toStatement")
-  def toStatement_ClassDeclaration(node: Class, ignore: Boolean): ClassDeclaration = js.native
   @JSName("toStatement")
   def toStatement_ExpressionStatement(node: AssignmentExpression): ExpressionStatement = js.native
   @JSName("toStatement")
   def toStatement_ExpressionStatement(node: AssignmentExpression, ignore: Boolean): ExpressionStatement = js.native
   @JSName("toStatement")
-  def toStatement_Statement(node: Function): Statement = js.native
+  def toStatement_FunctionDeclaration(node: Function): FunctionDeclaration = js.native
   @JSName("toStatement")
-  def toStatement_Statement(node: Function, ignore: Boolean): Statement = js.native
+  def toStatement_FunctionDeclaration(node: Function, ignore: Boolean): FunctionDeclaration = js.native
+  @JSName("toStatement")
+  def toStatement_Statement(node: Class): Statement = js.native
+  @JSName("toStatement")
+  def toStatement_Statement(node: Class, ignore: Boolean): Statement = js.native
   @JSName("toStatement")
   def toStatement_true(node: AssignmentExpression, ignore: `true`): js.UndefOr[Statement] = js.native
   @JSName("toStatement")
@@ -5346,14 +5346,18 @@ object types extends js.Object {
     value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
   ): Unit = js.native
   def valueToNode(): Expression = js.native
-  def valueToNode(value: String): Expression = js.native
+  def valueToNode(value: String): StringLiteral = js.native
   def valueToNode(value: js.Array[js.UndefOr[Boolean | Null | String | Double | RegExp | js.Object]]): ArrayExpression = js.native
   def valueToNode(value: js.Object): Expression = js.native
   def valueToNode(value: Boolean): Expression = js.native
-  def valueToNode(value: Double): Expression = js.native
+  def valueToNode(value: Double): NumericLiteral | BinaryExpression | UnaryExpression = js.native
   def valueToNode(value: RegExp): Expression = js.native
   @JSName("valueToNode")
   def valueToNode_BooleanLiteral(value: Boolean): BooleanLiteral = js.native
+  @JSName("valueToNode")
+  def valueToNode_Expression(value: String): Expression = js.native
+  @JSName("valueToNode")
+  def valueToNode_Expression(value: Double): Expression = js.native
   @JSName("valueToNode")
   def valueToNode_Identifier(): Identifier = js.native
   @JSName("valueToNode")
@@ -5362,10 +5366,6 @@ object types extends js.Object {
   def valueToNode_ObjectExpression(value: js.Object): ObjectExpression = js.native
   @JSName("valueToNode")
   def valueToNode_RegExpLiteral(value: RegExp): RegExpLiteral = js.native
-  @JSName("valueToNode")
-  def valueToNode_StringLiteral(value: String): StringLiteral = js.native
-  @JSName("valueToNode")
-  def valueToNode_Union(value: Double): NumericLiteral | BinaryExpression | UnaryExpression = js.native
   @JSName("variableDeclaration")
   def variableDeclaration_const(kind: const, declarations: js.Array[VariableDeclarator]): VariableDeclaration = js.native
   @JSName("variableDeclaration")

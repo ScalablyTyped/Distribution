@@ -10,9 +10,9 @@ String validation and sanitization
 | ------------------ | :-------------: |
 | Full name          | validator |
 | Keywords           | validator, validation, validate, sanitization, sanitize, sanitisation, sanitise, assert |
-| # releases         | 27 |
-| # dependents       | 2240 |
-| # downloads        | 74697666 |
+| # releases         | 21 |
+| # dependents       | 2663 |
+| # downloads        | 105208855 |
 | # stars            | 489 |
 
 ## Links

@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TracingConfig extends js.Object {
   /**
     * The tracing mode.
     */
-  var Mode: js.UndefOr[TracingMode] = js.undefined
+  var Mode: js.UndefOr[TracingMode] = js.native
 }
 
 object TracingConfig {

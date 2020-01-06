@@ -15,59 +15,60 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DomainArgs extends js.Object {
   /**
     * IAM policy document specifying the access policies for the domain
     */
-  val accessPolicies: js.UndefOr[Input[String | PolicyDocument]] = js.undefined
+  val accessPolicies: js.UndefOr[Input[String | PolicyDocument]] = js.native
   /**
     * Key-value string pairs to specify advanced configuration options.
     * Note that the values for these configuration options must be strings (wrapped in quotes) or they
     * may be wrong and cause a perpetual diff, causing this provider to want to recreate your Elasticsearch
     * domain on every apply.
     */
-  val advancedOptions: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val advancedOptions: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * Cluster configuration of the domain, see below.
     */
-  val clusterConfig: js.UndefOr[Input[DomainClusterConfig]] = js.undefined
-  val cognitoOptions: js.UndefOr[Input[DomainCognitoOptions]] = js.undefined
+  val clusterConfig: js.UndefOr[Input[DomainClusterConfig]] = js.native
+  val cognitoOptions: js.UndefOr[Input[DomainCognitoOptions]] = js.native
   /**
     * Name of the domain.
     */
-  val domainName: js.UndefOr[Input[String]] = js.undefined
+  val domainName: js.UndefOr[Input[String]] = js.native
   /**
     * EBS related options, may be required based on chosen [instance size](https://aws.amazon.com/elasticsearch-service/pricing/). See below.
     */
-  val ebsOptions: js.UndefOr[Input[DomainEbsOptions]] = js.undefined
+  val ebsOptions: js.UndefOr[Input[DomainEbsOptions]] = js.native
   /**
     * The version of Elasticsearch to deploy. Defaults to `1.5`
     */
-  val elasticsearchVersion: js.UndefOr[Input[String]] = js.undefined
+  val elasticsearchVersion: js.UndefOr[Input[String]] = js.native
   /**
     * Encrypt at rest options. Only available for [certain instance types](http://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/aes-supported-instance-types.html). See below.
     */
-  val encryptAtRest: js.UndefOr[Input[DomainEncryptAtRest]] = js.undefined
+  val encryptAtRest: js.UndefOr[Input[DomainEncryptAtRest]] = js.native
   /**
     * Options for publishing slow logs to CloudWatch Logs.
     */
-  val logPublishingOptions: js.UndefOr[Input[js.Array[Input[DomainLogPublishingOption]]]] = js.undefined
+  val logPublishingOptions: js.UndefOr[Input[js.Array[Input[DomainLogPublishingOption]]]] = js.native
   /**
     * Node-to-node encryption options. See below.
     */
-  val nodeToNodeEncryption: js.UndefOr[Input[DomainNodeToNodeEncryption]] = js.undefined
+  val nodeToNodeEncryption: js.UndefOr[Input[DomainNodeToNodeEncryption]] = js.native
   /**
     * Snapshot related options, see below.
     */
-  val snapshotOptions: js.UndefOr[Input[DomainSnapshotOptions]] = js.undefined
+  val snapshotOptions: js.UndefOr[Input[DomainSnapshotOptions]] = js.native
   /**
     * A mapping of tags to assign to the resource
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * VPC related options, see below. Adding or removing this configuration forces a new resource ([documentation](https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-vpc.html#es-vpc-limitations)).
     */
-  val vpcOptions: js.UndefOr[Input[DomainVpcOptions]] = js.undefined
+  val vpcOptions: js.UndefOr[Input[DomainVpcOptions]] = js.native
 }
 
 object DomainArgs {

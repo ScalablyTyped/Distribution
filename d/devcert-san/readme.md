@@ -10,9 +10,9 @@ Generate trusted local SSL/TLS certificates for local SSL development
 | ------------------ | :-------------: |
 | Full name          | devcert-san |
 | Keywords           | ssl, certificate, openssl, trust |
-| # releases         | 3 |
-| # dependents       | 15 |
-| # downloads        | 4317085 |
+| # releases         | 0 |
+| # dependents       | 19 |
+| # downloads        | 8752661 |
 | # stars            | 0 |
 
 ## Links

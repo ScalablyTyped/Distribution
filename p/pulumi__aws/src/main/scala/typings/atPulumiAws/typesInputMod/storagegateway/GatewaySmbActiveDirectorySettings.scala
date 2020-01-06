@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GatewaySmbActiveDirectorySettings extends js.Object {
   /**
     * The name of the domain that you want the gateway to join.
     */
-  var domainName: Input[String]
+  var domainName: Input[String] = js.native
   /**
     * The password of the user who has permission to add the gateway to the Active Directory domain.
     */
-  var password: Input[String]
+  var password: Input[String] = js.native
   /**
     * The user name of user who has permission to add the gateway to the Active Directory domain.
     */
-  var username: Input[String]
+  var username: Input[String] = js.native
 }
 
 object GatewaySmbActiveDirectorySettings {

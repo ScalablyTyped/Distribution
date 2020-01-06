@@ -1,24 +1,21 @@
 package typings.s3DashDownloadDashStream.s3DashDownloadDashStreamMod
 
+import typings.awsDashSdk.awsDashSdkMod.S3
+import typings.awsDashSdk.clientsS3Mod.GetObjectRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait S3StreamDownloaderOptions extends js.Object {
   var chunkSize: js.UndefOr[String] = js.undefined
-  var client: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify S3 */ js.Any
+  var client: S3
   var concurrency: js.UndefOr[Double] = js.undefined
-  var params: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify S3.GetObjectRequest */ js.Any
+  var params: GetObjectRequest
 }
 
 object S3StreamDownloaderOptions {
   @scala.inline
-  def apply(
-    client: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify S3 */ js.Any,
-    params: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify S3.GetObjectRequest */ js.Any,
-    chunkSize: String = null,
-    concurrency: Int | Double = null
-  ): S3StreamDownloaderOptions = {
+  def apply(client: S3, params: GetObjectRequest, chunkSize: String = null, concurrency: Int | Double = null): S3StreamDownloaderOptions = {
     val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
     if (chunkSize != null) __obj.updateDynamic("chunkSize")(chunkSize.asInstanceOf[js.Any])
     if (concurrency != null) __obj.updateDynamic("concurrency")(concurrency.asInstanceOf[js.Any])

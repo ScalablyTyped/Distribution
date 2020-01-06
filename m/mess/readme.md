@@ -12,7 +12,7 @@ Mess is Fisher–Yates shuffle algorithm implementation for node.js
 | Keywords           | mess, shuffle, array_shuffle, random, fisher, yates, array |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 18153 |
+| # downloads        | 14580 |
 | # stars            | 3 |
 
 ## Links

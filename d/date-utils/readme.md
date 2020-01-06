@@ -10,9 +10,9 @@ Date add-ons for Node.js
 | ------------------ | :-------------: |
 | Full name          | date-utils |
 | Keywords           | date, utils, date-utils, time |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 123 |
-| # downloads        | 3271585 |
+| # downloads        | 5938230 |
 | # stars            | 23 |
 
 ## Links

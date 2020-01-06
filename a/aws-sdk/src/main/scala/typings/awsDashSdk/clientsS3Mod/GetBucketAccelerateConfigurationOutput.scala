@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetBucketAccelerateConfigurationOutput extends js.Object {
   /**
     * The accelerate configuration of the bucket.
     */
-  var Status: js.UndefOr[BucketAccelerateStatus] = js.undefined
+  var Status: js.UndefOr[BucketAccelerateStatus] = js.native
 }
 
 object GetBucketAccelerateConfigurationOutput {

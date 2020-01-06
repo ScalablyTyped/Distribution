@@ -11,8 +11,8 @@ Compress middleware for koa
 | Full name          | koa-compress |
 | Keywords           | - |
 | # releases         | 3 |
-| # dependents       | 268 |
-| # downloads        | 1847708 |
+| # dependents       | 329 |
+| # downloads        | 3197256 |
 | # stars            | 10 |
 
 ## Links

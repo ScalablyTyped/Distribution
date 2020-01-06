@@ -9,16 +9,16 @@ Shorten GitHub URLs like GitHub shortens Issues and Commit URLs
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | shorten-repo-url |
-| Keywords           | github, gitlab, shorter, reference, ref, issue, commit, file, url, links, link |
-| # releases         | 9 |
+| Keywords           | commit, file, github, gitlab, issue, link, links, ref, reference, shorter, url |
+| # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 5493 |
+| # downloads        | 6305 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/bfred-it/shorten-repo-url#readme)
-- [Bugs](https://github.com/bfred-it/shorten-repo-url/issues)
-- [Repository](https://github.com/bfred-it/shorten-repo-url)
+- [Homepage](https://github.com/fregante/shorten-repo-url#readme)
+- [Bugs](https://github.com/fregante/shorten-repo-url/issues)
+- [Repository](https://github.com/fregante/shorten-repo-url)
 - [Npm](https://www.npmjs.com/package/shorten-repo-url)
     
 

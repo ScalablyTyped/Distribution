@@ -5,13 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SecurityConfigurationEncryptionConfiguration extends js.Object {
-  var cloudwatchEncryption: Input[SecurityConfigurationEncryptionConfigurationCloudwatchEncryption]
-  var jobBookmarksEncryption: Input[SecurityConfigurationEncryptionConfigurationJobBookmarksEncryption]
+  var cloudwatchEncryption: Input[SecurityConfigurationEncryptionConfigurationCloudwatchEncryption] = js.native
+  var jobBookmarksEncryption: Input[SecurityConfigurationEncryptionConfigurationJobBookmarksEncryption] = js.native
   /**
     * A `s3Encryption ` block as described below, which contains encryption configuration for S3 data.
     */
-  var s3Encryption: Input[SecurityConfigurationEncryptionConfigurationS3Encryption]
+  var s3Encryption: Input[SecurityConfigurationEncryptionConfigurationS3Encryption] = js.native
 }
 
 object SecurityConfigurationEncryptionConfiguration {

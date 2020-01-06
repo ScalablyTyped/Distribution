@@ -4,16 +4,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecification extends js.Object {
   var dimensions: js.UndefOr[
     js.Array[
       PolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationDimension
     ]
-  ] = js.undefined
-  var metricName: String
-  var namespace: String
-  var statistic: String
-  var unit: js.UndefOr[String] = js.undefined
+  ] = js.native
+  var metricName: String = js.native
+  var namespace: String = js.native
+  var statistic: String = js.native
+  var unit: js.UndefOr[String] = js.native
 }
 
 object PolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecification {
@@ -27,9 +28,9 @@ object PolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificati
     ] = null,
     unit: String = null
   ): PolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecification = {
-    val __obj = js.Dynamic.literal(metricName = metricName, namespace = namespace, statistic = statistic)
-    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions)
-    if (unit != null) __obj.updateDynamic("unit")(unit)
+    val __obj = js.Dynamic.literal(metricName = metricName.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], statistic = statistic.asInstanceOf[js.Any])
+    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions.asInstanceOf[js.Any])
+    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecification]
   }
 }

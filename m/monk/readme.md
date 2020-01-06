@@ -10,9 +10,9 @@ The wise MongoDB API
 | ------------------ | :-------------: |
 | Full name          | monk |
 | Keywords           | monk, mongodb, mongo, driver |
-| # releases         | 12 |
-| # dependents       | 122 |
-| # downloads        | 499953 |
+| # releases         | 5 |
+| # dependents       | 134 |
+| # downloads        | 415991 |
 | # stars            | 52 |
 
 ## Links

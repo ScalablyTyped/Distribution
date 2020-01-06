@@ -5,13 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AnalyticsApplicationCloudwatchLoggingOptions extends js.Object {
   /**
     * The ARN of the Kinesis Analytics Application.
     */
-  var id: js.UndefOr[Input[String]] = js.undefined
-  var logStreamArn: Input[String]
-  var roleArn: Input[String]
+  var id: js.UndefOr[Input[String]] = js.native
+  var logStreamArn: Input[String] = js.native
+  var roleArn: Input[String] = js.native
 }
 
 object AnalyticsApplicationCloudwatchLoggingOptions {

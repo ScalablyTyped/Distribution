@@ -10,10 +10,10 @@ Screenshots with JavaScript
 | ------------------ | :-------------: |
 | Full name          | html2canvas |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 227 |
-| # downloads        | 2858392 |
-| # stars            | 16 |
+| # releases         | 11 |
+| # dependents       | 406 |
+| # downloads        | 8100727 |
+| # stars            | 17 |
 
 ## Links
 - [Homepage](https://html2canvas.hertzen.com)

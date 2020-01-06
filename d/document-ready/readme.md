@@ -11,8 +11,8 @@ Document ready listener for modern browsers
 | Full name          | document-ready |
 | Keywords           | document, ready, callback |
 | # releases         | 2 |
-| # dependents       | 12 |
-| # downloads        | 84382 |
+| # dependents       | 15 |
+| # downloads        | 164352 |
 | # stars            | 1 |
 
 ## Links

@@ -11,8 +11,8 @@ Simple command line prompting utility
 | Full name          | promptly |
 | Keywords           | prompt, choose, choice, cli, command, line |
 | # releases         | 5 |
-| # dependents       | 236 |
-| # downloads        | 14268129 |
+| # dependents       | 244 |
+| # downloads        | 19508254 |
 | # stars            | 18 |
 
 ## Links

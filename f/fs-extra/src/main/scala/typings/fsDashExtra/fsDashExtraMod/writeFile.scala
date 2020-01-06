@@ -36,6 +36,7 @@ object writeFile extends js.Object {
     options: String,
     callback: js.Function1[/* err */ ErrnoException, Unit]
   ): Unit = js.native
+  def apply(file: Double, data: js.Any, options: typings.node.fsMod.WriteFileOptions): js.Promise[Unit] = js.native
   def apply(file: Buffer, data: js.Any): js.Promise[Unit] = js.native
   def apply(file: Buffer, data: js.Any, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
   def apply(file: Buffer, data: js.Any, options: String): js.Promise[Unit] = js.native
@@ -51,11 +52,6 @@ object writeFile extends js.Object {
     data: js.Any,
     options: typings.node.fsMod.WriteFileOptions,
     callback: js.Function1[/* err */ ErrnoException, Unit]
-  ): Unit = js.native
-  def apply(
-    path: Double,
-    data: js.Any,
-    callback: (js.Function1[/* err */ ErrnoException, Unit]) | NoParamCallback
   ): Unit = js.native
   def apply(
     path: Double,

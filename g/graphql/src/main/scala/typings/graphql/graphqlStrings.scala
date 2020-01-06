@@ -181,9 +181,6 @@ object graphqlStrings {
   sealed trait Leftparenthesis extends TokenKindEnum
   
   @js.native
-  sealed trait Leftsquarebracket extends TokenKindEnum
-  
-  @js.native
   sealed trait LessthansignEOFGreaterthansign extends TokenKindEnum
   
   @js.native
@@ -264,9 +261,6 @@ object graphqlStrings {
   sealed trait Rightparenthesis extends TokenKindEnum
   
   @js.native
-  sealed trait Rightsquarebracket extends TokenKindEnum
-  
-  @js.native
   sealed trait SCALAR extends DirectiveLocationEnum
   
   @js.native
@@ -340,6 +334,12 @@ object graphqlStrings {
   
   @js.native
   sealed trait VisitorKeyMap extends js.Object
+  
+  @js.native
+  sealed trait `[` extends TokenKindEnum
+  
+  @js.native
+  sealed trait `]` extends TokenKindEnum
   
   @js.native
   sealed trait alias extends js.Object
@@ -525,8 +525,6 @@ object graphqlStrings {
   @scala.inline
   def Leftparenthesis: Leftparenthesis = "(".asInstanceOf[Leftparenthesis]
   @scala.inline
-  def Leftsquarebracket: Leftsquarebracket = "[".asInstanceOf[Leftsquarebracket]
-  @scala.inline
   def LessthansignEOFGreaterthansign: LessthansignEOFGreaterthansign = "<EOF>".asInstanceOf[LessthansignEOFGreaterthansign]
   @scala.inline
   def LessthansignSOFGreaterthansign: LessthansignSOFGreaterthansign = "<SOF>".asInstanceOf[LessthansignSOFGreaterthansign]
@@ -579,8 +577,6 @@ object graphqlStrings {
   @scala.inline
   def Rightparenthesis: Rightparenthesis = ")".asInstanceOf[Rightparenthesis]
   @scala.inline
-  def Rightsquarebracket: Rightsquarebracket = "]".asInstanceOf[Rightsquarebracket]
-  @scala.inline
   def SCALAR: SCALAR = "SCALAR".asInstanceOf[SCALAR]
   @scala.inline
   def SCHEMA: SCHEMA = "SCHEMA".asInstanceOf[SCHEMA]
@@ -630,6 +626,10 @@ object graphqlStrings {
   def Verticalline: Verticalline = "|".asInstanceOf[Verticalline]
   @scala.inline
   def VisitorKeyMap: VisitorKeyMap = "VisitorKeyMap".asInstanceOf[VisitorKeyMap]
+  @scala.inline
+  def `[`: `[` = "[".asInstanceOf[`[`]
+  @scala.inline
+  def `]`: `]` = "]".asInstanceOf[`]`]
   @scala.inline
   def alias: alias = "alias".asInstanceOf[alias]
   @scala.inline

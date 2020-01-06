@@ -11,7 +11,7 @@ A NodeJS Library for Riot Games API
 | Keywords           | riot, api, League of Legends, riot games, LOL |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 596 |
+| # downloads        | 593 |
 | # stars            | 0 |
 
 ## Links

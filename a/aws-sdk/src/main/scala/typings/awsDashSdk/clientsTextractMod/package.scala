@@ -24,6 +24,13 @@ package object clientsTextractMod {
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
   type ClientRequestToken = java.lang.String
   /* Rewritten from type alias, can be one of: 
+    - typings.awsDashSdk.awsDashSdkStrings.FreeOfPersonallyIdentifiableInformation
+    - typings.awsDashSdk.awsDashSdkStrings.FreeOfAdultContent
+    - java.lang.String
+  */
+  type ContentClassifier = _ContentClassifier | java.lang.String
+  type ContentClassifiers = js.Array[ContentClassifier]
+  /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.KEY
     - typings.awsDashSdk.awsDashSdkStrings.VALUE
     - java.lang.String
@@ -39,6 +46,12 @@ package object clientsTextractMod {
   type FeatureType = _FeatureType | java.lang.String
   type FeatureTypes = js.Array[FeatureType]
   type Float = Double
+  type FlowDefinitionArn = java.lang.String
+  type HumanLoopActivationConditionsEvaluationResults = java.lang.String
+  type HumanLoopActivationReason = java.lang.String
+  type HumanLoopActivationReasons = js.Array[HumanLoopActivationReason]
+  type HumanLoopArn = java.lang.String
+  type HumanLoopName = java.lang.String
   type IdList = js.Array[NonEmptyString]
   type ImageBlob = Buffer | Uint8Array | Blob | java.lang.String
   type JobId = java.lang.String
@@ -81,7 +94,7 @@ package object clientsTextractMod {
   type Warnings = js.Array[Warning]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2018-06-27`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | java.lang.String

@@ -26,6 +26,7 @@ class Viewport protected () extends js.Object {
     * Viewport context
     */
   var context: HTMLIFrameElement = js.native
+  def between[T](first: String, last: String, cb: ViewportCallback[T]): Unit = js.native
   /**
     * Execute a callback for all breakpoints between the first and last given
     *
@@ -43,9 +44,9 @@ class Viewport protected () extends js.Object {
     *
     * @return Promise resolving with no result
     */
-  def between[T /* <: js.Promise[_] */](first: String, last: String, cb: ViewportCallback[T]): js.Promise[Unit] = js.native
   @JSName("between")
-  def between_T_Unit[T](first: String, last: String, cb: ViewportCallback[T]): Unit = js.native
+  def between_T_PromiseWildcard_Promise[T /* <: js.Promise[_] */](first: String, last: String, cb: ViewportCallback[T]): js.Promise[Unit] = js.native
+  def each[T](cb: ViewportCallback[T]): Unit = js.native
   /**
     * Execute a callback for all breakpoints
     *
@@ -58,9 +59,9 @@ class Viewport protected () extends js.Object {
     *
     * @return Promise resolving with no result
     */
-  def each[T /* <: js.Promise[_] */](cb: ViewportCallback[T]): js.Promise[Unit] = js.native
   @JSName("each")
-  def each_T_Unit[T](cb: ViewportCallback[T]): Unit = js.native
+  def each_T_PromiseWildcard_Promise[T /* <: js.Promise[_] */](cb: ViewportCallback[T]): js.Promise[Unit] = js.native
+  def from[T](first: String, cb: ViewportCallback[T]): Unit = js.native
   /**
     * Execute a callback starting at the given breakpoint
     *
@@ -74,9 +75,8 @@ class Viewport protected () extends js.Object {
     *
     * @return Promise resolving with no result
     */
-  def from[T /* <: js.Promise[_] */](first: String, cb: ViewportCallback[T]): js.Promise[Unit] = js.native
   @JSName("from")
-  def from_T_Unit[T](first: String, cb: ViewportCallback[T]): Unit = js.native
+  def from_T_PromiseWildcard_Promise[T /* <: js.Promise[_] */](first: String, cb: ViewportCallback[T]): js.Promise[Unit] = js.native
   /**
     * Load and embed document into viewport
     *
@@ -107,6 +107,7 @@ class Viewport protected () extends js.Object {
     */
   def set(width: Double): Unit = js.native
   def set(width: Double, height: Double): Unit = js.native
+  def to[T](last: String, cb: ViewportCallback[T]): Unit = js.native
   /**
     * Execute a callback ending at the given breakpoint
     *
@@ -120,8 +121,7 @@ class Viewport protected () extends js.Object {
     *
     * @return Promise resolving with no result
     */
-  def to[T /* <: js.Promise[_] */](last: String, cb: ViewportCallback[T]): js.Promise[Unit] = js.native
   @JSName("to")
-  def to_T_Unit[T](last: String, cb: ViewportCallback[T]): Unit = js.native
+  def to_T_PromiseWildcard_Promise[T /* <: js.Promise[_] */](last: String, cb: ViewportCallback[T]): js.Promise[Unit] = js.native
 }
 

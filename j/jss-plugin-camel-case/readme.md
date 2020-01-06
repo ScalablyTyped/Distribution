@@ -1,7 +1,7 @@
 
 # Scala.js typings for jss-plugin-camel-case
 
-Typings are for version 10.0.0
+Typings are for version 10.0.3
 
 ## Library description:
 JSS plugin that allows to write camel cased rule properties
@@ -10,9 +10,9 @@ JSS plugin that allows to write camel cased rule properties
 | ------------------ | :-------------: |
 | Full name          | jss-plugin-camel-case |
 | Keywords           | cssinjs, css-in-js, css in js, jss, plugin, camel case |
-| # releases         | 31 |
-| # dependents       | 10 |
-| # downloads        | 6560679 |
+| # releases         | 34 |
+| # dependents       | 13 |
+| # downloads        | 11438725 |
 | # stars            | 0 |
 
 ## Links

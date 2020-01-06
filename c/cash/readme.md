@@ -10,8 +10,8 @@ Cross-platform Linux commands in pure ES6.
 | Full name          | cash |
 | Keywords           | terminal, emulator, cygwin, cli, windows, linux, unix, posix, shell, shelljs, bash, cash, $, tty, util, vorpal, vorpal.js |
 | # releases         | 1 |
-| # dependents       | 2 |
-| # downloads        | 16395 |
+| # dependents       | 3 |
+| # downloads        | 10453 |
 | # stars            | 14 |
 
 ## Links

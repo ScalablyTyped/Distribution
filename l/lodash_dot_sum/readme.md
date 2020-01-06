@@ -11,8 +11,8 @@ The lodash method `_.sum` exported as a module.
 | Full name          | lodash.sum |
 | Keywords           | lodash-modularized, sum |
 | # releases         | 0 |
-| # dependents       | 19 |
-| # downloads        | 361019 |
+| # dependents       | 25 |
+| # downloads        | 258425 |
 | # stars            | 0 |
 
 ## Links

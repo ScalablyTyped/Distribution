@@ -4,15 +4,15 @@
 Typings are for version 1.0.7
 
 ## Library description:
-Library for Crypto
+Typescript Library for Libra
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | libra-core |
 | Keywords           | libra, library, crypto, facebook |
-| # releases         | 2 |
+| # releases         | 11 |
 | # dependents       | 0 |
-| # downloads        | 21 |
+| # downloads        | 1784 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ React components for efficiently rendering large, scrollable lists and tabular d
 | ------------------ | :-------------: |
 | Full name          | react-virtualized |
 | Keywords           | react, reactjs, react-component, virtual, list, scrolling, infinite, virtualized, table, fixed, header, flex, flexbox, grid, spreadsheet |
-| # releases         | 53 |
-| # dependents       | 380 |
-| # downloads        | 12353728 |
+| # releases         | 38 |
+| # dependents       | 493 |
+| # downloads        | 19561111 |
 | # stars            | 24 |
 
 ## Links

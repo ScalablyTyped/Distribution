@@ -10,9 +10,9 @@ Get the number of days in a year
 | ------------------ | :-------------: |
 | Full name          | year-days |
 | Keywords           | year, days, date, number, count |
-| # releases         | 0 |
+| # releases         | 2 |
 | # dependents       | 4 |
-| # downloads        | 427 |
+| # downloads        | 946 |
 | # stars            | 0 |
 
 ## Links

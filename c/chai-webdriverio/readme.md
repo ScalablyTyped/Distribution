@@ -10,9 +10,9 @@ Chai assertions for use with webdriverio
 | ------------------ | :-------------: |
 | Full name          | chai-webdriverio |
 | Keywords           | webdriverio, webdriver, chai, chai matchers, assertion helpers |
-| # releases         | 6 |
+| # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 230552 |
+| # downloads        | 412045 |
 | # stars            | 0 |
 
 ## Links

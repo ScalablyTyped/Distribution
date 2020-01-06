@@ -10,15 +10,12 @@ Add extensions to GraphQL servers
 | ------------------ | :-------------: |
 | Full name          | graphql-extensions |
 | Keywords           | - |
-| # releases         | 79 |
-| # dependents       | 18 |
-| # downloads        | 16538963 |
+| # releases         | 130 |
+| # dependents       | 36 |
+| # downloads        | 37380508 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/apollographql/graphql-extensions#readme)
-- [Bugs](https://github.com/apollographql/graphql-extensions/issues)
-- [Repository](https://github.com/apollographql/graphql-extensions)
 - [Npm](https://www.npmjs.com/package/graphql-extensions)
     
 

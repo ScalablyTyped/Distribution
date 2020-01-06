@@ -5,51 +5,52 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OrganizationCustomRuleArgs extends js.Object {
   /**
     * Description of the rule
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * List of AWS account identifiers to exclude from the rule
     */
-  val excludedAccounts: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val excludedAccounts: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * A string in JSON format that is passed to the AWS Config Rule Lambda Function
     */
-  val inputParameters: js.UndefOr[Input[String]] = js.undefined
+  val inputParameters: js.UndefOr[Input[String]] = js.native
   /**
     * Amazon Resource Name (ARN) of the rule Lambda Function
     */
-  val lambdaFunctionArn: Input[String]
+  val lambdaFunctionArn: Input[String] = js.native
   /**
     * The maximum frequency with which AWS Config runs evaluations for a rule, if the rule is triggered at a periodic frequency. Defaults to `TwentyFour_Hours` for periodic frequency triggered rules. Valid values: `One_Hour`, `Three_Hours`, `Six_Hours`, `Twelve_Hours`, or `TwentyFour_Hours`.
     */
-  val maximumExecutionFrequency: js.UndefOr[Input[String]] = js.undefined
+  val maximumExecutionFrequency: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the rule
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * Identifier of the AWS resource to evaluate
     */
-  val resourceIdScope: js.UndefOr[Input[String]] = js.undefined
+  val resourceIdScope: js.UndefOr[Input[String]] = js.native
   /**
     * List of types of AWS resources to evaluate
     */
-  val resourceTypesScopes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  val resourceTypesScopes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * Tag key of AWS resources to evaluate
     */
-  val tagKeyScope: js.UndefOr[Input[String]] = js.undefined
+  val tagKeyScope: js.UndefOr[Input[String]] = js.native
   /**
     * Tag value of AWS resources to evaluate
     */
-  val tagValueScope: js.UndefOr[Input[String]] = js.undefined
+  val tagValueScope: js.UndefOr[Input[String]] = js.native
   /**
     * List of notification types that trigger AWS Config to run an evaluation for the rule. Valid values: `ConfigurationItemChangeNotification`, `OversizedConfigurationItemChangeNotification`, and `ScheduledNotification`
     */
-  val triggerTypes: Input[js.Array[Input[String]]]
+  val triggerTypes: Input[js.Array[Input[String]]] = js.native
 }
 
 object OrganizationCustomRuleArgs {

@@ -21,6 +21,7 @@ package object clientsGameliftMod {
   type AcceptanceType = _AcceptanceType | String
   type AliasId = String
   type AliasList = js.Array[Alias]
+  type AmazonResourceName = String
   type ArnStringModel = String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.AUTOMATIC
@@ -29,6 +30,7 @@ package object clientsGameliftMod {
   */
   type BackfillMode = _BackfillMode | String
   type BooleanModel = Boolean
+  type BuildArn = String
   type BuildId = String
   type BuildList = js.Array[Build]
   /* Rewritten from type alias, can be one of: 
@@ -60,40 +62,64 @@ package object clientsGameliftMod {
   type DoubleObject = scala.Double
   type EC2InstanceLimitList = js.Array[EC2InstanceLimit]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.t2DOTmicro
-    - typings.awsDashSdk.awsDashSdkStrings.t2DOTsmall
-    - typings.awsDashSdk.awsDashSdkStrings.t2DOTmedium
-    - typings.awsDashSdk.awsDashSdkStrings.t2DOTlarge
-    - typings.awsDashSdk.awsDashSdkStrings.c3DOTlarge
-    - typings.awsDashSdk.awsDashSdkStrings.c3DOTxlarge
-    - typings.awsDashSdk.awsDashSdkStrings.c3DOT2xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.c3DOT4xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.c3DOT8xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.c4DOTlarge
-    - typings.awsDashSdk.awsDashSdkStrings.c4DOTxlarge
-    - typings.awsDashSdk.awsDashSdkStrings.c4DOT2xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.c4DOT4xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.c4DOT8xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r3DOTlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r3DOTxlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r3DOT2xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r3DOT4xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r3DOT8xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r4DOTlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r4DOTxlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r4DOT2xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r4DOT4xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r4DOT8xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.r4DOT16xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m3DOTmedium
-    - typings.awsDashSdk.awsDashSdkStrings.m3DOTlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m3DOTxlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m3DOT2xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m4DOTlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m4DOTxlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m4DOT2xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m4DOT4xlarge
-    - typings.awsDashSdk.awsDashSdkStrings.m4DOT10xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.t2Dotmicro
+    - typings.awsDashSdk.awsDashSdkStrings.t2Dotsmall
+    - typings.awsDashSdk.awsDashSdkStrings.t2Dotmedium
+    - typings.awsDashSdk.awsDashSdkStrings.t2Dotlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c3Dotlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c3Dotxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c3Dot2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c3Dot4xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c3Dot8xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c4Dotlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c4Dotxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c4Dot2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c4Dot4xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c4Dot8xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c5Dotlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c5Dotxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c5Dot2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c5Dot4xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c5Dot9xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c5Dot12xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c5Dot18xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.c5Dot24xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r3Dotlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r3Dotxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r3Dot2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r3Dot4xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r3Dot8xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r4Dotlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r4Dotxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r4Dot2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r4Dot4xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r4Dot8xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r4Dot16xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5Dotlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5Dotxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5Dot2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5Dot4xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5Dot8xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5Dot12xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5Dot16xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.r5Dot24xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m3Dotmedium
+    - typings.awsDashSdk.awsDashSdkStrings.m3Dotlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m3Dotxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m3Dot2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m4Dotlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m4Dotxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m4Dot2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m4Dot4xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m4Dot10xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5Dotlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5Dotxlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5Dot2xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5Dot4xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5Dot8xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5Dot12xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5Dot16xlarge
+    - typings.awsDashSdk.awsDashSdkStrings.m5Dot24xlarge
     - java.lang.String
   */
   type EC2InstanceType = _EC2InstanceType | String
@@ -216,7 +242,10 @@ package object clientsGameliftMod {
   type MatchedPlayerSessionList = js.Array[MatchedPlayerSession]
   type MatchmakerData = String
   type MatchmakingAcceptanceTimeoutInteger = scala.Double
+  type MatchmakingConfigurationArn = String
   type MatchmakingConfigurationList = js.Array[MatchmakingConfiguration]
+  type MatchmakingConfigurationName = String
+  type MatchmakingConfigurationNameList = js.Array[MatchmakingConfigurationName]
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.CANCELLED
     - typings.awsDashSdk.awsDashSdkStrings.COMPLETED
@@ -232,8 +261,10 @@ package object clientsGameliftMod {
   type MatchmakingIdList = js.Array[MatchmakingIdStringModel]
   type MatchmakingIdStringModel = String
   type MatchmakingRequestTimeoutInteger = scala.Double
+  type MatchmakingRuleSetArn = String
   type MatchmakingRuleSetList = js.Array[MatchmakingRuleSet]
-  type MatchmakingRuleSetNameList = js.Array[MatchmakingIdStringModel]
+  type MatchmakingRuleSetName = String
+  type MatchmakingRuleSetNameList = js.Array[MatchmakingRuleSetName]
   type MatchmakingTicketList = js.Array[MatchmakingTicket]
   type MaxConcurrentGameSessionActivations = scala.Double
   type MetricGroup = String
@@ -260,6 +291,7 @@ package object clientsGameliftMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.WINDOWS_2012
     - typings.awsDashSdk.awsDashSdkStrings.AMAZON_LINUX
+    - typings.awsDashSdk.awsDashSdkStrings.AMAZON_LINUX_2
     - java.lang.String
   */
   type OperatingSystem = _OperatingSystem | String
@@ -330,6 +362,7 @@ package object clientsGameliftMod {
     - java.lang.String
   */
   type ScalingStatusType = _ScalingStatusType | String
+  type ScriptArn = String
   type ScriptId = String
   type ScriptList = js.Array[Script]
   type ServerProcessList = js.Array[ServerProcess]
@@ -337,6 +370,10 @@ package object clientsGameliftMod {
   type StringDoubleMap = StringDictionary[DoubleObject]
   type StringList = js.Array[NonZeroAndMaxString]
   type StringModel = String
+  type TagKey = String
+  type TagKeyList = js.Array[TagKey]
+  type TagList = js.Array[Tag]
+  type TagValue = String
   type Timestamp = Date
   type VpcPeeringAuthorizationList = js.Array[VpcPeeringAuthorization]
   type VpcPeeringConnectionList = js.Array[VpcPeeringConnection]
@@ -344,7 +381,7 @@ package object clientsGameliftMod {
   type ZipBlob = Buffer | Uint8Array | Blob | String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2015-10-01`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

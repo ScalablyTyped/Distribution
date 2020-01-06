@@ -10,10 +10,10 @@ An HTTP(s) proxy `http.Agent` implementation for HTTPS
 | ------------------ | :-------------: |
 | Full name          | https-proxy-agent |
 | Keywords           | https, proxy, endpoint, agent |
-| # releases         | 6 |
-| # dependents       | 417 |
-| # downloads        | 176877198 |
-| # stars            | 8 |
+| # releases         | 9 |
+| # dependents       | 518 |
+| # downloads        | 270995769 |
+| # stars            | 9 |
 
 ## Links
 - [Homepage](https://github.com/TooTallNate/node-https-proxy-agent#readme)

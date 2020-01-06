@@ -12,7 +12,7 @@ A wrapper around TestingBot's REST API
 | Keywords           | - |
 | # releases         | 3 |
 | # dependents       | 2 |
-| # downloads        | 32177 |
+| # downloads        | 56450 |
 | # stars            | 0 |
 
 ## Links

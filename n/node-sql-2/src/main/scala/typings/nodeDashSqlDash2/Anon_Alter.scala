@@ -20,7 +20,7 @@ trait Anon_Alter[T] extends js.Object {
   var columns: js.Array[Column[Unit, Unit]] = js.native
   var sql: SQL = js.native
   def alter(): AlterQuery[T] = js.native
-  def as[OtherName /* <: String */](name: OtherName): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias node-sql-2.sql.Table<OtherName, T> */ js.Object = js.native
+  def as[OtherName /* <: String */](name: OtherName): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias node-sql-2.sql.Table<OtherName, T> */ js.Object = js.native
   def create(): CreateQuery = js.native
   def drop(): DropQuery = js.native
   def from[U](statement: String): Query[U] = js.native

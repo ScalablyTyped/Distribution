@@ -4,9 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Anon_HandleContainerOverflow extends js.Object {
-  var handleContainerOverflow: js.UndefOr[Boolean] = js.undefined
-  var hideSiblingNodes: js.UndefOr[Boolean] = js.undefined
+  var handleContainerOverflow: js.UndefOr[Boolean] = js.native
+  var hideSiblingNodes: js.UndefOr[Boolean] = js.native
 }
 
 object Anon_HandleContainerOverflow {

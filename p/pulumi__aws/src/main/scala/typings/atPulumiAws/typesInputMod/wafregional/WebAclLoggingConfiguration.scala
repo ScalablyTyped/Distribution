@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WebAclLoggingConfiguration extends js.Object {
   /**
     * Amazon Resource Name (ARN) of Kinesis Firehose Delivery Stream
     */
-  var logDestination: Input[String]
+  var logDestination: Input[String] = js.native
   /**
     * Configuration block containing parts of the request that you want redacted from the logs. Detailed below.
     */
-  var redactedFields: js.UndefOr[Input[WebAclLoggingConfigurationRedactedFields]] = js.undefined
+  var redactedFields: js.UndefOr[Input[WebAclLoggingConfigurationRedactedFields]] = js.native
 }
 
 object WebAclLoggingConfiguration {

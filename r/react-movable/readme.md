@@ -10,9 +10,9 @@ Drag and drop lists.
 | ------------------ | :-------------: |
 | Full name          | react-movable |
 | Keywords           | react, react-dom, react-component, sortable, reorder, reorderable, drag, drop, list, table, drag and drop, dnd, movable |
-| # releases         | 14 |
-| # dependents       | 3 |
-| # downloads        | 230707 |
+| # releases         | 16 |
+| # dependents       | 5 |
+| # downloads        | 523268 |
 | # stars            | 0 |
 
 ## Links

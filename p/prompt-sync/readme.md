@@ -10,15 +10,15 @@ a synchronous prompt for node.js
 | ------------------ | :-------------: |
 | Full name          | prompt-sync |
 | Keywords           | prompt, sync, blocking, readline, input, getline, repl, history |
-| # releases         | 3 |
-| # dependents       | 129 |
-| # downloads        | 606907 |
+| # releases         | 2 |
+| # dependents       | 144 |
+| # downloads        | 712994 |
 | # stars            | 9 |
 
 ## Links
-- [Homepage](https://github.com/0x00A/prompt-sync#readme)
-- [Bugs](https://github.com/0x00A/prompt-sync/issues)
-- [Repository](https://github.com/0x00A/prompt-sync)
+- [Homepage](https://github.com/heapwolf/prompt-sync#readme)
+- [Bugs](https://github.com/heapwolf/prompt-sync/issues)
+- [Repository](https://github.com/heapwolf/prompt-sync)
 - [Npm](https://www.npmjs.com/package/prompt-sync)
     
 

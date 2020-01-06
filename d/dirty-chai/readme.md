@@ -10,9 +10,9 @@ Extends Chai with lint-friendly terminating assertions.
 | ------------------ | :-------------: |
 | Full name          | dirty-chai |
 | Keywords           | chai, chai-plugin, browser, testing |
-| # releases         | 3 |
-| # dependents       | 37 |
-| # downloads        | 1863030 |
+| # releases         | 0 |
+| # dependents       | 44 |
+| # downloads        | 2316319 |
 | # stars            | 3 |
 
 ## Links

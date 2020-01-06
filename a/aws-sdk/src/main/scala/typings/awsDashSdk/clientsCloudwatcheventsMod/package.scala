@@ -100,7 +100,7 @@ package object clientsCloudwatcheventsMod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2014-02-03`
     - typings.awsDashSdk.awsDashSdkStrings.`2015-10-07`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | java.lang.String

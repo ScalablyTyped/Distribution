@@ -11,8 +11,8 @@ Splits an url into sub-domain, domain and effective top-level-domain
 | Full name          | parse-domain |
 | Keywords           | domain, url, sub-domain, tld, parse, extract, sanitize, country, top-level |
 | # releases         | 17 |
-| # dependents       | 60 |
-| # downloads        | 4146604 |
+| # dependents       | 71 |
+| # downloads        | 4859172 |
 | # stars            | 5 |
 
 ## Links

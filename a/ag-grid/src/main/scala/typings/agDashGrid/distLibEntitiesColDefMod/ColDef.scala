@@ -2,7 +2,7 @@ package typings.agDashGrid.distLibEntitiesColDefMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.agDashGrid.Anon_AnyIFloatingFilterComp
-import typings.agDashGrid.Anon_Any_746802533
+import typings.agDashGrid.Anon_Any_640158205
 import typings.agDashGrid.Anon_ICellEditorComp
 import typings.agDashGrid.Anon_ICellRendererComp
 import typings.agDashGrid.Anon_IFilterComp
@@ -89,7 +89,7 @@ trait ColDef
   var filterValueGetter: js.UndefOr[(js.Function1[/* params */ ValueGetterParams, _]) | String] = js.undefined
   /** The custom header component to be used for rendering the floating filter. If none specified the default ag-Grid is used**/
   var floatingFilterComponent: js.UndefOr[Anon_AnyIFloatingFilterComp] = js.undefined
-  var floatingFilterComponentFramework: js.UndefOr[Anon_Any_746802533] = js.undefined
+  var floatingFilterComponentFramework: js.UndefOr[Anon_Any_640158205] = js.undefined
   var floatingFilterComponentParams: js.UndefOr[js.Any] = js.undefined
   /** To create the quick filter text for this column, if toString is not good enough on the value. */
   var getQuickFilterText: js.UndefOr[js.Function1[/* params */ GetQuickFilterTextParams, String]] = js.undefined
@@ -98,9 +98,9 @@ trait ColDef
   /** If true, the header checkbox selection will work on filtered items*/
   var headerCheckboxSelectionFilteredOnly: js.UndefOr[Boolean] = js.undefined
   /** The custom header component to be used for rendering the component header. If none specified the default ag-Grid is used**/
-  var headerComponent: js.UndefOr[String | Anon_Any_746802533] = js.undefined
+  var headerComponent: js.UndefOr[String | Anon_Any_640158205] = js.undefined
   /** The custom header component to be used for rendering the component header in the hosting framework (ie: React/Angular). If none specified the default ag-Grid is used**/
-  var headerComponentFramework: js.UndefOr[Anon_Any_746802533] = js.undefined
+  var headerComponentFramework: js.UndefOr[Anon_Any_640158205] = js.undefined
   /** The custom header component parameters**/
   var headerComponentParams: js.UndefOr[js.Any] = js.undefined
   /** Set to true for this column to be hidden. Naturally you might think, it would make more sense to call this field 'visible' and mark it false to hide,
@@ -252,14 +252,14 @@ object ColDef {
     filterParams: js.Any = null,
     filterValueGetter: (js.Function1[/* params */ ValueGetterParams, _]) | String = null,
     floatingFilterComponent: Anon_AnyIFloatingFilterComp = null,
-    floatingFilterComponentFramework: Anon_Any_746802533 = null,
+    floatingFilterComponentFramework: Anon_Any_640158205 = null,
     floatingFilterComponentParams: js.Any = null,
     getQuickFilterText: /* params */ GetQuickFilterTextParams => String = null,
     headerCheckboxSelection: Boolean | (js.Function1[/* params */ js.Any, Boolean]) = null,
     headerCheckboxSelectionFilteredOnly: js.UndefOr[Boolean] = js.undefined,
     headerClass: String | js.Array[String] | (js.Function1[/* params */ js.Any, String | js.Array[String]]) = null,
-    headerComponent: String | Anon_Any_746802533 = null,
-    headerComponentFramework: Anon_Any_746802533 = null,
+    headerComponent: String | Anon_Any_640158205 = null,
+    headerComponentFramework: Anon_Any_640158205 = null,
     headerComponentParams: js.Any = null,
     headerName: String = null,
     headerTooltip: String = null,

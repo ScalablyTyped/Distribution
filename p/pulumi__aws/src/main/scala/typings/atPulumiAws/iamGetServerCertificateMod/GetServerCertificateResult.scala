@@ -4,21 +4,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetServerCertificateResult extends js.Object {
-  val arn: String
-  val certificateBody: String
-  val certificateChain: String
-  val expirationDate: String
+  val arn: String = js.native
+  val certificateBody: String = js.native
+  val certificateChain: String = js.native
+  val expirationDate: String = js.native
   /**
     * id is the provider-assigned unique ID for this managed resource.
     */
-  val id: String
-  val latest: js.UndefOr[Boolean] = js.undefined
-  val name: String
-  val namePrefix: js.UndefOr[String] = js.undefined
-  val path: String
-  val pathPrefix: js.UndefOr[String] = js.undefined
-  val uploadDate: String
+  val id: String = js.native
+  val latest: js.UndefOr[Boolean] = js.native
+  val name: String = js.native
+  val namePrefix: js.UndefOr[String] = js.native
+  val path: String = js.native
+  val pathPrefix: js.UndefOr[String] = js.native
+  val uploadDate: String = js.native
 }
 
 object GetServerCertificateResult {
@@ -36,10 +37,10 @@ object GetServerCertificateResult {
     namePrefix: String = null,
     pathPrefix: String = null
   ): GetServerCertificateResult = {
-    val __obj = js.Dynamic.literal(arn = arn, certificateBody = certificateBody, certificateChain = certificateChain, expirationDate = expirationDate, id = id, name = name, path = path, uploadDate = uploadDate)
-    if (!js.isUndefined(latest)) __obj.updateDynamic("latest")(latest)
-    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix)
-    if (pathPrefix != null) __obj.updateDynamic("pathPrefix")(pathPrefix)
+    val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], certificateBody = certificateBody.asInstanceOf[js.Any], certificateChain = certificateChain.asInstanceOf[js.Any], expirationDate = expirationDate.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], uploadDate = uploadDate.asInstanceOf[js.Any])
+    if (!js.isUndefined(latest)) __obj.updateDynamic("latest")(latest.asInstanceOf[js.Any])
+    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
+    if (pathPrefix != null) __obj.updateDynamic("pathPrefix")(pathPrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetServerCertificateResult]
   }
 }

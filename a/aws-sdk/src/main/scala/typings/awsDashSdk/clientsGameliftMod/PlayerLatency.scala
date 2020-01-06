@@ -4,19 +4,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PlayerLatency extends js.Object {
   /**
-    * Amount of time that represents the time lag experienced by the player when connected to the specified region.
+    * Amount of time that represents the time lag experienced by the player when connected to the specified Region.
     */
-  var LatencyInMilliseconds: js.UndefOr[Float] = js.undefined
+  var LatencyInMilliseconds: js.UndefOr[Float] = js.native
   /**
-    * Unique identifier for a player associated with the latency data.
+    * A unique identifier for a player associated with the latency data.
     */
-  var PlayerId: js.UndefOr[NonZeroAndMaxString] = js.undefined
+  var PlayerId: js.UndefOr[NonZeroAndMaxString] = js.native
   /**
-    * Name of the region that is associated with the latency value.
+    * Name of the Region that is associated with the latency value.
     */
-  var RegionIdentifier: js.UndefOr[NonZeroAndMaxString] = js.undefined
+  var RegionIdentifier: js.UndefOr[NonZeroAndMaxString] = js.native
 }
 
 object PlayerLatency {
@@ -28,8 +29,8 @@ object PlayerLatency {
   ): PlayerLatency = {
     val __obj = js.Dynamic.literal()
     if (LatencyInMilliseconds != null) __obj.updateDynamic("LatencyInMilliseconds")(LatencyInMilliseconds.asInstanceOf[js.Any])
-    if (PlayerId != null) __obj.updateDynamic("PlayerId")(PlayerId)
-    if (RegionIdentifier != null) __obj.updateDynamic("RegionIdentifier")(RegionIdentifier)
+    if (PlayerId != null) __obj.updateDynamic("PlayerId")(PlayerId.asInstanceOf[js.Any])
+    if (RegionIdentifier != null) __obj.updateDynamic("RegionIdentifier")(RegionIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlayerLatency]
   }
 }

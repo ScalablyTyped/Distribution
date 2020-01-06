@@ -10,9 +10,9 @@ react-native qrocode generator
 | ------------------ | :-------------: |
 | Full name          | react-native-qrcode |
 | Keywords           | react-native, qrcode |
-| # releases         | 5 |
-| # dependents       | 10 |
-| # downloads        | 234422 |
+| # releases         | 2 |
+| # dependents       | 12 |
+| # downloads        | 246668 |
 | # stars            | 0 |
 
 ## Links

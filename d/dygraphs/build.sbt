@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "dygraphs"
-version := "1.1.3-dt-20191227Z-9e8027"
+version := "1.1.3-dt-20191227Z-b1ec46"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "google_dot_visualization" % "0.0-unknown-dt-20191207Z-91dfcf",
-  "org.scalablytyped" %%% "std" % "3.7-953338")
+  "org.scalablytyped" %%% "google_dot_visualization" % "0.0-unknown-dt-20191207Z-f4278b",
+  "org.scalablytyped" %%% "std" % "3.7-b6d959")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -16,13 +16,18 @@ package object clientsSecurityhubMod {
   type AccountIdList = js.Array[NonEmptyString]
   type ActionTargetList = js.Array[ActionTarget]
   type ArnList = js.Array[NonEmptyString]
+  type AvailabilityZones = js.Array[AvailabilityZone]
+  type AwsCloudFrontDistributionOriginItemList = js.Array[AwsCloudFrontDistributionOriginItem]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.Active
-    - typings.awsDashSdk.awsDashSdkStrings.Inactive
+    - typings.awsDashSdk.awsDashSdkStrings.Active_
+    - typings.awsDashSdk.awsDashSdkStrings.Inactive_
     - java.lang.String
   */
   type AwsIamAccessKeyStatus = _AwsIamAccessKeyStatus | String
+  type AwsIamRoleAssumeRolePolicyDocument = String
+  type AwsLambdaFunctionLayerList = js.Array[AwsLambdaFunctionLayer]
   type AwsSecurityFindingList = js.Array[AwsSecurityFinding]
+  type AwsSnsTopicSubscriptionList = js.Array[AwsSnsTopicSubscription]
   type Boolean = scala.Boolean
   type CategoryList = js.Array[NonEmptyString]
   type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
@@ -84,9 +89,10 @@ package object clientsSecurityhubMod {
   type NetworkDirection = _NetworkDirection | String
   type NextToken = String
   type NonEmptyString = String
+  type NonEmptyStringList = js.Array[NonEmptyString]
   type NumberFilterList = js.Array[NumberFilter]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.aws
+    - typings.awsDashSdk.awsDashSdkStrings.aws_
     - typings.awsDashSdk.awsDashSdkStrings.`aws-cn`
     - typings.awsDashSdk.awsDashSdkStrings.`aws-us-gov`
     - java.lang.String
@@ -104,10 +110,11 @@ package object clientsSecurityhubMod {
   type ResourceArn = String
   type ResourceList = js.Array[Resource]
   type ResultList = js.Array[Result]
+  type SecurityGroups = js.Array[NonEmptyString]
   type SortCriteria = js.Array[SortCriterion]
   /* Rewritten from type alias, can be one of: 
-    - typings.awsDashSdk.awsDashSdkStrings.asc
-    - typings.awsDashSdk.awsDashSdkStrings.desc
+    - typings.awsDashSdk.awsDashSdkStrings.asc_
+    - typings.awsDashSdk.awsDashSdkStrings.desc_
     - java.lang.String
   */
   type SortOrder = _SortOrder | String
@@ -183,7 +190,7 @@ package object clientsSecurityhubMod {
   type WorkflowState = _WorkflowState | String
   /* Rewritten from type alias, can be one of: 
     - typings.awsDashSdk.awsDashSdkStrings.`2018-10-26`
-    - typings.awsDashSdk.awsDashSdkStrings.latest
+    - typings.awsDashSdk.awsDashSdkStrings.latest_
     - java.lang.String
   */
   type apiVersion = _apiVersion | String

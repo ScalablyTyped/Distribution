@@ -10,9 +10,9 @@ Map an array n items at a time with promises
 | ------------------ | :-------------: |
 | Full name          | promise-map-limit |
 | Keywords           | promise, limit, limited, concurrency, throttle, rate, batch, ratelimit, queue, async, await, promises |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 24744 |
+| # downloads        | 26861 |
 | # stars            | 2 |
 
 ## Links

@@ -12,7 +12,7 @@ Vega expression parser and code generator.
 | Keywords           | vega, expression, parser, codegen |
 | # releases         | 7 |
 | # dependents       | 11 |
-| # downloads        | 1900054 |
+| # downloads        | 1939559 |
 | # stars            | 1 |
 
 ## Links

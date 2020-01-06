@@ -10,9 +10,9 @@ Istanbul unit test coverage plugin for gulp.
 | ------------------ | :-------------: |
 | Full name          | gulp-istanbul |
 | Keywords           | gulpplugin, coverage, istanbul, unit test |
-| # releases         | 3 |
-| # dependents       | 78 |
-| # downloads        | 1993097 |
+| # releases         | 2 |
+| # dependents       | 80 |
+| # downloads        | 1958587 |
 | # stars            | 23 |
 
 ## Links

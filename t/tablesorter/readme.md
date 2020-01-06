@@ -10,9 +10,9 @@ tablesorter (FORK) is a jQuery plugin for turning a standard HTML table with THE
 | ------------------ | :-------------: |
 | Full name          | tablesorter |
 | Keywords           | table, sort, sorting, alphanumeric, natural, jquery-plugin |
-| # releases         | 22 |
-| # dependents       | 9 |
-| # downloads        | 619498 |
+| # releases         | 16 |
+| # dependents       | 8 |
+| # downloads        | 924925 |
 | # stars            | 2 |
 
 ## Links

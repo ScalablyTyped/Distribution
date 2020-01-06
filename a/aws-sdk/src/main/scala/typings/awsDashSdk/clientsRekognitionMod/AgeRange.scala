@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AgeRange extends js.Object {
   /**
     * The highest estimated age.
     */
-  var High: js.UndefOr[UInteger] = js.undefined
+  var High: js.UndefOr[UInteger] = js.native
   /**
     * The lowest estimated age.
     */
-  var Low: js.UndefOr[UInteger] = js.undefined
+  var Low: js.UndefOr[UInteger] = js.native
 }
 
 object AgeRange {

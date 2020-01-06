@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Monitoring extends js.Object {
   /**
     * Indicates whether detailed monitoring is enabled. Otherwise, basic monitoring is enabled.
     */
-  var State: js.UndefOr[MonitoringState] = js.undefined
+  var State: js.UndefOr[MonitoringState] = js.native
 }
 
 object Monitoring {

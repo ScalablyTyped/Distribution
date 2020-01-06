@@ -7,35 +7,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VirtualRouterState extends js.Object {
   /**
     * The ARN of the virtual router.
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * The creation date of the virtual router.
     */
-  val createdDate: js.UndefOr[Input[String]] = js.undefined
+  val createdDate: js.UndefOr[Input[String]] = js.native
   /**
     * The last update date of the virtual router.
     */
-  val lastUpdatedDate: js.UndefOr[Input[String]] = js.undefined
+  val lastUpdatedDate: js.UndefOr[Input[String]] = js.native
   /**
     * The name of the service mesh in which to create the virtual router.
     */
-  val meshName: js.UndefOr[Input[String]] = js.undefined
+  val meshName: js.UndefOr[Input[String]] = js.native
   /**
     * The name to use for the virtual router.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * The virtual router specification to apply.
     */
-  val spec: js.UndefOr[Input[VirtualRouterSpec]] = js.undefined
+  val spec: js.UndefOr[Input[VirtualRouterSpec]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
 }
 
 object VirtualRouterState {

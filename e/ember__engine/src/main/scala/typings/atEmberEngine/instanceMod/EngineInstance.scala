@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: parser.TsParser#tsDeclClass functionCall $anonfun class extends from : EmberObject.extend(RegistryProxyMixin, ContainerProxyMixin) * / any */ trait EngineInstance extends js.Object {
+- Dropped / * import warning: parser.TsParser#tsDeclClass functionCall class extends from : EmberObject.extend(RegistryProxyMixin, ContainerProxyMixin) * / any */ trait EngineInstance extends js.Object {
   /**
     *  Initialize the `EngineInstance` and return a promise that resolves
     *  with the instance itself when the boot process is complete.

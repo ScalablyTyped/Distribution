@@ -6,10 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/CardActions.CardActionsClassKey>> */
+@js.native
 trait PartialStyleRulesCardActionsClassKey extends js.Object {
-  var action: js.UndefOr[CSSProperties] = js.undefined
-  var disableActionSpacing: js.UndefOr[CSSProperties] = js.undefined
-  var root: js.UndefOr[CSSProperties] = js.undefined
+  var action: js.UndefOr[CSSProperties] = js.native
+  var disableActionSpacing: js.UndefOr[CSSProperties] = js.native
+  var root: js.UndefOr[CSSProperties] = js.native
 }
 
 object PartialStyleRulesCardActionsClassKey {

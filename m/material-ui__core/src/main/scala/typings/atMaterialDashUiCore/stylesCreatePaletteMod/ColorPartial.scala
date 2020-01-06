@@ -5,21 +5,22 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core.Color> */
+@js.native
 trait ColorPartial extends PaletteColorOptions {
-  var `100`: js.UndefOr[String] = js.undefined
-  var `200`: js.UndefOr[String] = js.undefined
-  var `300`: js.UndefOr[String] = js.undefined
-  var `400`: js.UndefOr[String] = js.undefined
-  var `50`: js.UndefOr[String] = js.undefined
-  var `500`: js.UndefOr[String] = js.undefined
-  var `600`: js.UndefOr[String] = js.undefined
-  var `700`: js.UndefOr[String] = js.undefined
-  var `800`: js.UndefOr[String] = js.undefined
-  var `900`: js.UndefOr[String] = js.undefined
-  var A100: js.UndefOr[String] = js.undefined
-  var A200: js.UndefOr[String] = js.undefined
-  var A400: js.UndefOr[String] = js.undefined
-  var A700: js.UndefOr[String] = js.undefined
+  var `100`: js.UndefOr[String] = js.native
+  var `200`: js.UndefOr[String] = js.native
+  var `300`: js.UndefOr[String] = js.native
+  var `400`: js.UndefOr[String] = js.native
+  var `50`: js.UndefOr[String] = js.native
+  var `500`: js.UndefOr[String] = js.native
+  var `600`: js.UndefOr[String] = js.native
+  var `700`: js.UndefOr[String] = js.native
+  var `800`: js.UndefOr[String] = js.native
+  var `900`: js.UndefOr[String] = js.native
+  var A100: js.UndefOr[String] = js.native
+  var A200: js.UndefOr[String] = js.native
+  var A400: js.UndefOr[String] = js.native
+  var A700: js.UndefOr[String] = js.native
 }
 
 object ColorPartial {

@@ -1,7 +1,7 @@
 
 # Scala.js typings for jss-plugin-rule-value-observable
 
-Typings are for version 10.0.1
+Typings are for version 10.0.3
 
 ## Library description:
 JSS plugin for TC39 Observables support
@@ -10,9 +10,9 @@ JSS plugin for TC39 Observables support
 | ------------------ | :-------------: |
 | Full name          | jss-plugin-rule-value-observable |
 | Keywords           | jss, style, sheet, stylesheet, css, components, composable, css in js, css-in-js, observable, reactive, rxjs |
-| # releases         | 29 |
+| # releases         | 32 |
 | # dependents       | 1 |
-| # downloads        | 288489 |
+| # downloads        | 515960 |
 | # stars            | 0 |
 
 ## Links

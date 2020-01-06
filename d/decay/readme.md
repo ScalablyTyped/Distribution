@@ -10,9 +10,9 @@ Famous sorting algorithms based on vote popularity and time
 | ------------------ | :-------------: |
 | Full name          | decay |
 | Keywords           | hotsort, hackerhot, wilsonscore, popularity, sorting, voting |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 11649 |
+| # downloads        | 14173 |
 | # stars            | 3 |
 
 ## Links

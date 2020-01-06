@@ -10,9 +10,9 @@ Detect the indentation of code
 | ------------------ | :-------------: |
 | Full name          | detect-indent |
 | Keywords           | indent, indentation, detect, infer, identify, code, string, text, source, space, tab |
-| # releases         | 1 |
-| # dependents       | 224 |
-| # downloads        | 266634612 |
+| # releases         | 2 |
+| # dependents       | 275 |
+| # downloads        | 330916097 |
 | # stars            | 5 |
 
 ## Links

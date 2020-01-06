@@ -9,9 +9,9 @@ Typings are for version 0.1.0-preview.2
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/query-request-presigner |
 | Keywords           | - |
-| # releases         | 7 |
+| # releases         | 12 |
 | # dependents       | 2 |
-| # downloads        | 284 |
+| # downloads        | 598 |
 | # stars            | 0 |
 
 ## Links

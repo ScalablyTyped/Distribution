@@ -10,12 +10,12 @@ String manipulation extensions for Underscore.js javascript library.
 | Full name          | underscore.string |
 | Keywords           | underscore, string |
 | # releases         | 2 |
-| # dependents       | 2434 |
-| # downloads        | 96937988 |
+| # dependents       | 2489 |
+| # downloads        | 100242365 |
 | # stars            | 56 |
 
 ## Links
-- [Homepage](http://epeli.github.com/underscore.string/)
+- [Homepage](https://github.com/epeli/underscore.string#readme)
 - [Bugs](https://github.com/epeli/underscore.string/issues)
 - [Repository](https://github.com/epeli/underscore.string)
 - [Npm](https://www.npmjs.com/package/underscore.string)

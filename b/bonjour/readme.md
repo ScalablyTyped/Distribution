@@ -11,8 +11,8 @@ A Bonjour/Zeroconf implementation in pure JavaScript
 | Full name          | bonjour |
 | Keywords           | bonjour, zeroconf, zero, configuration, mdns, dns, service, discovery, multicast, broadcast, dns-sd |
 | # releases         | 1 |
-| # dependents       | 95 |
-| # downloads        | 134754870 |
+| # dependents       | 119 |
+| # downloads        | 204993457 |
 | # stars            | 3 |
 
 ## Links

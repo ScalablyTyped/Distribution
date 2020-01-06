@@ -4,21 +4,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetContactAttributesRequest extends js.Object {
   /**
-    * The ID for the initial contact in Amazon Connect associated with the attributes to update.
+    * The identifier of the initial contact.
     */
-  var InitialContactId: ContactId
+  var InitialContactId: ContactId = js.native
   /**
-    * The instance ID for the instance from which to retrieve contact attributes.
+    * The identifier of the Amazon Connect instance.
     */
-  var InstanceId: typings.awsDashSdk.clientsConnectMod.InstanceId
+  var InstanceId: typings.awsDashSdk.clientsConnectMod.InstanceId = js.native
 }
 
 object GetContactAttributesRequest {
   @scala.inline
   def apply(InitialContactId: ContactId, InstanceId: InstanceId): GetContactAttributesRequest = {
-    val __obj = js.Dynamic.literal(InitialContactId = InitialContactId, InstanceId = InstanceId)
+    val __obj = js.Dynamic.literal(InitialContactId = InitialContactId.asInstanceOf[js.Any], InstanceId = InstanceId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetContactAttributesRequest]
   }

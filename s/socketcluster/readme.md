@@ -10,9 +10,9 @@ SocketCluster - A Highly parallelized WebSocket server cluster to make the most 
 | ------------------ | :-------------: |
 | Full name          | socketcluster |
 | Keywords           | websocket, server, realtime, cluster, scalable |
-| # releases         | 117 |
-| # dependents       | 26 |
-| # downloads        | 907858 |
+| # releases         | 56 |
+| # dependents       | 32 |
+| # downloads        | 966996 |
 | # stars            | 15 |
 
 ## Links

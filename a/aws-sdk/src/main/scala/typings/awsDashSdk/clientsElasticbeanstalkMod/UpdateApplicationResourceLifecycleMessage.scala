@@ -4,21 +4,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UpdateApplicationResourceLifecycleMessage extends js.Object {
   /**
     * The name of the application.
     */
-  var ApplicationName: typings.awsDashSdk.clientsElasticbeanstalkMod.ApplicationName
+  var ApplicationName: typings.awsDashSdk.clientsElasticbeanstalkMod.ApplicationName = js.native
   /**
     * The lifecycle configuration.
     */
-  var ResourceLifecycleConfig: ApplicationResourceLifecycleConfig
+  var ResourceLifecycleConfig: ApplicationResourceLifecycleConfig = js.native
 }
 
 object UpdateApplicationResourceLifecycleMessage {
   @scala.inline
   def apply(ApplicationName: ApplicationName, ResourceLifecycleConfig: ApplicationResourceLifecycleConfig): UpdateApplicationResourceLifecycleMessage = {
-    val __obj = js.Dynamic.literal(ApplicationName = ApplicationName, ResourceLifecycleConfig = ResourceLifecycleConfig)
+    val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any], ResourceLifecycleConfig = ResourceLifecycleConfig.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[UpdateApplicationResourceLifecycleMessage]
   }

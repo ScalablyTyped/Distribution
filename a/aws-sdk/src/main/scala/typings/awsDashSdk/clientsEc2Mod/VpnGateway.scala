@@ -4,35 +4,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VpnGateway extends js.Object {
   /**
     * The private Autonomous System Number (ASN) for the Amazon side of a BGP session.
     */
-  var AmazonSideAsn: js.UndefOr[Long] = js.undefined
+  var AmazonSideAsn: js.UndefOr[Long] = js.native
   /**
     * The Availability Zone where the virtual private gateway was created, if applicable. This field may be empty or not returned.
     */
-  var AvailabilityZone: js.UndefOr[String] = js.undefined
+  var AvailabilityZone: js.UndefOr[String] = js.native
   /**
     * The current state of the virtual private gateway.
     */
-  var State: js.UndefOr[VpnState] = js.undefined
+  var State: js.UndefOr[VpnState] = js.native
   /**
     * Any tags assigned to the virtual private gateway.
     */
-  var Tags: js.UndefOr[TagList] = js.undefined
+  var Tags: js.UndefOr[TagList] = js.native
   /**
     * The type of VPN connection the virtual private gateway supports.
     */
-  var Type: js.UndefOr[GatewayType] = js.undefined
+  var Type: js.UndefOr[GatewayType] = js.native
   /**
     * Any VPCs attached to the virtual private gateway.
     */
-  var VpcAttachments: js.UndefOr[VpcAttachmentList] = js.undefined
+  var VpcAttachments: js.UndefOr[VpcAttachmentList] = js.native
   /**
     * The ID of the virtual private gateway.
     */
-  var VpnGatewayId: js.UndefOr[String] = js.undefined
+  var VpnGatewayId: js.UndefOr[String] = js.native
 }
 
 object VpnGateway {
@@ -48,12 +49,12 @@ object VpnGateway {
   ): VpnGateway = {
     val __obj = js.Dynamic.literal()
     if (AmazonSideAsn != null) __obj.updateDynamic("AmazonSideAsn")(AmazonSideAsn.asInstanceOf[js.Any])
-    if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone)
+    if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
     if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
-    if (VpcAttachments != null) __obj.updateDynamic("VpcAttachments")(VpcAttachments)
-    if (VpnGatewayId != null) __obj.updateDynamic("VpnGatewayId")(VpnGatewayId)
+    if (VpcAttachments != null) __obj.updateDynamic("VpcAttachments")(VpcAttachments.asInstanceOf[js.Any])
+    if (VpnGatewayId != null) __obj.updateDynamic("VpnGatewayId")(VpnGatewayId.asInstanceOf[js.Any])
     __obj.asInstanceOf[VpnGateway]
   }
 }

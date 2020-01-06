@@ -10,9 +10,9 @@ The type definition for IPFS package
 | ------------------ | :-------------: |
 | Full name          | typestub-ipfs |
 | Keywords           | ipfs, types, typestub |
-| # releases         | 13 |
+| # releases         | 8 |
 | # dependents       | 1 |
-| # downloads        | 742 |
+| # downloads        | 878 |
 | # stars            | 0 |
 
 ## Links

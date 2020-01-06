@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_ContextContextType
-  extends Instantiable2[/* props */ PickerProps, /* context */ js.Any, Anon_CallBackCallback]
-     with Instantiable1[
+  extends Instantiable1[
       (/* props */ PickerProps) | (/* props */ ReadonlyPickerProps), 
       Anon_CallBackCallback
-    ] {
+    ]
+     with Instantiable2[/* props */ PickerProps, /* context */ js.Any, Anon_CallBackCallback] {
   var contextType: js.UndefOr[Context[_]] = js.native
   def Item(_props: ItemProps): Null = js.native
 }

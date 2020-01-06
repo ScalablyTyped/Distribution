@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 @JSImport("@google-cloud/pubsub/build/src/message-stream", "ChannelError")
 @js.native
 class ChannelError protected ()
-  extends StatusObject
-     with Error {
+  extends Error
+     with StatusObject {
   def this(err: Error) = this()
   /* CompleteClass */
   override var code: Status = js.native

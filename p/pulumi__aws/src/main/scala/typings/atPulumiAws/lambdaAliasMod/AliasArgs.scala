@@ -6,27 +6,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AliasArgs extends js.Object {
   /**
     * Description of the alias.
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * The function ARN of the Lambda function for which you want to create an alias.
     */
-  val functionName: Input[String]
+  val functionName: Input[String] = js.native
   /**
     * Lambda function version for which you are creating the alias. Pattern: `(\$LATEST|[0-9]+)`.
     */
-  val functionVersion: Input[String]
+  val functionVersion: Input[String] = js.native
   /**
     * Name for the alias you are creating. Pattern: `(?!^[0-9]+$)([a-zA-Z0-9-_]+)`
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * The Lambda alias' route configuration settings. Fields documented below
     */
-  val routingConfig: js.UndefOr[Input[AliasRoutingConfig]] = js.undefined
+  val routingConfig: js.UndefOr[Input[AliasRoutingConfig]] = js.native
 }
 
 object AliasArgs {

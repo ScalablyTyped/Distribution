@@ -45,11 +45,13 @@ abstract class HttpConnectionOptionHeaderValueCollection () extends Array[HttpCo
   def getView(): IVectorView[HttpConnectionOptionHeaderValue] = js.native
   def indexOf(value: HttpConnectionOptionHeaderValue, extra: js.Any*): Anon_Index = js.native
   /**
-    * Retrieves the index of an HttpConnectionOptionHeaderValue in the collection.
-    * @param value The HttpConnectionOptionHeaderValue to find in the HttpConnectionOptionHeaderValueCollection .
+    * Determines the index of a specific item in the collection.
+    * @param item The object to locate in the collection.
+    * @return The index of item if found in the collection; otherwise, –1.
     */
+  /* hack */
   @JSName("indexOf")
-  def indexOf_Anon_Index(value: HttpConnectionOptionHeaderValue): Anon_Index = js.native
+  def indexOf_Double(item: HttpConnectionOptionHeaderValue): Double = js.native
   /**
     * Inserts an HttpConnectionOptionHeaderValue into the collection at the specified index.
     * @param index The zero-based index at which value should be inserted.

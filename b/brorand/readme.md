@@ -11,8 +11,8 @@ Random number generator for browsers and node.js
 | Full name          | brorand |
 | Keywords           | Random, RNG, browser, crypto |
 | # releases         | 0 |
-| # dependents       | 61 |
-| # downloads        | 185103952 |
+| # dependents       | 74 |
+| # downloads        | 274918021 |
 | # stars            | 1 |
 
 ## Links

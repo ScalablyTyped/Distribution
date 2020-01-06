@@ -11,8 +11,8 @@ timing safe equals, but for the browser
 | Full name          | timing-safe-equal |
 | Keywords           | timing |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 358 |
+| # dependents       | 4 |
+| # downloads        | 933 |
 | # stars            | 0 |
 
 ## Links

@@ -62,7 +62,7 @@ package object distInterfacesMod {
   type ITypeDefinitions = ITypedef | js.Array[ITypedef]
   type ITypedef = (js.Function0[
     js.Array[
-      /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias graphql-tools.graphql-tools/dist/Interfaces.ITypedef */ js.Object
+      /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias graphql-tools.graphql-tools/dist/Interfaces.ITypedef */ js.Object
     ]
   ]) | String | DocumentNode | ASTNode
   type NextResolverFn = js.Function0[js.Promise[js.Any]]

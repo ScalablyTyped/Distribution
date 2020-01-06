@@ -4,9 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TypeBackground extends js.Object {
-  var default: String
-  var paper: String
+  var default: String = js.native
+  var paper: String = js.native
 }
 
 object TypeBackground {

@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EmailIdentityState extends js.Object {
   /**
     * The ARN of the email identity.
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * The email address to assign to SES
     */
-  val email: js.UndefOr[Input[String]] = js.undefined
+  val email: js.UndefOr[Input[String]] = js.native
 }
 
 object EmailIdentityState {

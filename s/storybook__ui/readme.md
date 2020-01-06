@@ -10,9 +10,9 @@ Core Storybook UI
 | ------------------ | :-------------: |
 | Full name          | @storybook/ui |
 | Keywords           | storybook |
-| # releases         | 319 |
+| # releases         | 418 |
 | # dependents       | 17 |
-| # downloads        | 34473386 |
+| # downloads        | 42085468 |
 | # stars            | 1 |
 
 ## Links

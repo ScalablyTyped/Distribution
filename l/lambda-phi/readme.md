@@ -10,9 +10,9 @@ Typescript framework for AWS API Gateway and Lambda
 | ------------------ | :-------------: |
 | Full name          | lambda-phi |
 | Keywords           | api gateway, lambda, aws, typescript |
-| # releases         | 23 |
+| # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 2474 |
+| # downloads        | 1974 |
 | # stars            | 0 |
 
 ## Links

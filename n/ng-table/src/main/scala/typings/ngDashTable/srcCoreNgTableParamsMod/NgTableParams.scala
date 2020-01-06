@@ -143,7 +143,7 @@ class NgTableParams[T] () extends js.Object {
   def isSortBy(field: String): Boolean = js.native
   def isSortBy(field: String, direction: String): Boolean = js.native
   /* private */ def log(
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type <none> is not an array type */ args: js.Any
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type <none> is not an array type */ args: js.Any
   ): js.Any = js.native
   /**
     * Returns sorting values in a format that can be consumed by the angular `$orderBy` filter service

@@ -31,12 +31,9 @@ abstract class XmlNodeList () extends Array[IXmlNode] {
     */
   def getMany(startIndex: Double): Anon_ItemsReturnValueIXmlNode = js.native
   def indexOf(value: IXmlNode, extra: js.Any*): Anon_Index = js.native
-  /**
-    * Returns the index of a specified item in the vector.
-    * @param value The item to find in the vector.
-    */
+  /* hack */
   @JSName("indexOf")
-  def indexOf_Anon_Index(value: IXmlNode): Anon_Index = js.native
+  def indexOf_Double(searchElement: IXmlNode): Double = js.native
   /**
     * Returns the item in the list at the specified index.
     * @param index The zero-based index of the requested item.

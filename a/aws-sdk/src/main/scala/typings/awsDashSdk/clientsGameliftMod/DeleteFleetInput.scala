@@ -4,17 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DeleteFleetInput extends js.Object {
   /**
-    * Unique identifier for a fleet to be deleted.
+    * A unique identifier for a fleet to be deleted. You can use either the fleet ID or ARN value.
     */
-  var FleetId: typings.awsDashSdk.clientsGameliftMod.FleetId
+  var FleetId: typings.awsDashSdk.clientsGameliftMod.FleetId = js.native
 }
 
 object DeleteFleetInput {
   @scala.inline
   def apply(FleetId: FleetId): DeleteFleetInput = {
-    val __obj = js.Dynamic.literal(FleetId = FleetId)
+    val __obj = js.Dynamic.literal(FleetId = FleetId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[DeleteFleetInput]
   }

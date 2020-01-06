@@ -52,12 +52,12 @@ trait DeviceFarm extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateNetworkProfileResult, Unit]
   ): Request[CreateNetworkProfileResult, AWSError] = js.native
   /**
-    * Creates a new project.
+    * Creates a project.
     */
   def createProject(): Request[CreateProjectResult, AWSError] = js.native
   def createProject(callback: js.Function2[/* err */ AWSError, /* data */ CreateProjectResult, Unit]): Request[CreateProjectResult, AWSError] = js.native
   /**
-    * Creates a new project.
+    * Creates a project.
     */
   def createProject(params: CreateProjectRequest): Request[CreateProjectResult, AWSError] = js.native
   def createProject(
@@ -77,6 +77,32 @@ trait DeviceFarm extends Service {
     params: CreateRemoteAccessSessionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateRemoteAccessSessionResult, Unit]
   ): Request[CreateRemoteAccessSessionResult, AWSError] = js.native
+  /**
+    * Creates a Selenium testing project. Projects are used to track TestGridSession instances.
+    */
+  def createTestGridProject(): Request[CreateTestGridProjectResult, AWSError] = js.native
+  def createTestGridProject(callback: js.Function2[/* err */ AWSError, /* data */ CreateTestGridProjectResult, Unit]): Request[CreateTestGridProjectResult, AWSError] = js.native
+  /**
+    * Creates a Selenium testing project. Projects are used to track TestGridSession instances.
+    */
+  def createTestGridProject(params: CreateTestGridProjectRequest): Request[CreateTestGridProjectResult, AWSError] = js.native
+  def createTestGridProject(
+    params: CreateTestGridProjectRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateTestGridProjectResult, Unit]
+  ): Request[CreateTestGridProjectResult, AWSError] = js.native
+  /**
+    * Creates a signed, short-term URL that can be passed to a Selenium RemoteWebDriver constructor.
+    */
+  def createTestGridUrl(): Request[CreateTestGridUrlResult, AWSError] = js.native
+  def createTestGridUrl(callback: js.Function2[/* err */ AWSError, /* data */ CreateTestGridUrlResult, Unit]): Request[CreateTestGridUrlResult, AWSError] = js.native
+  /**
+    * Creates a signed, short-term URL that can be passed to a Selenium RemoteWebDriver constructor.
+    */
+  def createTestGridUrl(params: CreateTestGridUrlRequest): Request[CreateTestGridUrlResult, AWSError] = js.native
+  def createTestGridUrl(
+    params: CreateTestGridUrlRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateTestGridUrlResult, Unit]
+  ): Request[CreateTestGridUrlResult, AWSError] = js.native
   /**
     * Uploads an app or test scripts.
     */
@@ -143,12 +169,12 @@ trait DeviceFarm extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteNetworkProfileResult, Unit]
   ): Request[DeleteNetworkProfileResult, AWSError] = js.native
   /**
-    * Deletes an AWS Device Farm project, given the project ARN.  Note Deleting this resource does not stop an in-progress run.
+    * Deletes an AWS Device Farm project, given the project ARN.  Deleting this resource does not stop an in-progress run.
     */
   def deleteProject(): Request[DeleteProjectResult, AWSError] = js.native
   def deleteProject(callback: js.Function2[/* err */ AWSError, /* data */ DeleteProjectResult, Unit]): Request[DeleteProjectResult, AWSError] = js.native
   /**
-    * Deletes an AWS Device Farm project, given the project ARN.  Note Deleting this resource does not stop an in-progress run.
+    * Deletes an AWS Device Farm project, given the project ARN.  Deleting this resource does not stop an in-progress run.
     */
   def deleteProject(params: DeleteProjectRequest): Request[DeleteProjectResult, AWSError] = js.native
   def deleteProject(
@@ -169,18 +195,31 @@ trait DeviceFarm extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteRemoteAccessSessionResult, Unit]
   ): Request[DeleteRemoteAccessSessionResult, AWSError] = js.native
   /**
-    * Deletes the run, given the run ARN.  Note Deleting this resource does not stop an in-progress run.
+    * Deletes the run, given the run ARN.  Deleting this resource does not stop an in-progress run.
     */
   def deleteRun(): Request[DeleteRunResult, AWSError] = js.native
   def deleteRun(callback: js.Function2[/* err */ AWSError, /* data */ DeleteRunResult, Unit]): Request[DeleteRunResult, AWSError] = js.native
   /**
-    * Deletes the run, given the run ARN.  Note Deleting this resource does not stop an in-progress run.
+    * Deletes the run, given the run ARN.  Deleting this resource does not stop an in-progress run.
     */
   def deleteRun(params: DeleteRunRequest): Request[DeleteRunResult, AWSError] = js.native
   def deleteRun(
     params: DeleteRunRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteRunResult, Unit]
   ): Request[DeleteRunResult, AWSError] = js.native
+  /**
+    *  Deletes a Selenium testing project and all content generated under it.   You cannot undo this operation.   You cannot delete a project if it has active sessions. 
+    */
+  def deleteTestGridProject(): Request[DeleteTestGridProjectResult, AWSError] = js.native
+  def deleteTestGridProject(callback: js.Function2[/* err */ AWSError, /* data */ DeleteTestGridProjectResult, Unit]): Request[DeleteTestGridProjectResult, AWSError] = js.native
+  /**
+    *  Deletes a Selenium testing project and all content generated under it.   You cannot undo this operation.   You cannot delete a project if it has active sessions. 
+    */
+  def deleteTestGridProject(params: DeleteTestGridProjectRequest): Request[DeleteTestGridProjectResult, AWSError] = js.native
+  def deleteTestGridProject(
+    params: DeleteTestGridProjectRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteTestGridProjectResult, Unit]
+  ): Request[DeleteTestGridProjectResult, AWSError] = js.native
   /**
     * Deletes an upload given the upload ARN.
     */
@@ -208,12 +247,12 @@ trait DeviceFarm extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteVPCEConfigurationResult, Unit]
   ): Request[DeleteVPCEConfigurationResult, AWSError] = js.native
   /**
-    * Returns the number of unmetered iOS and/or unmetered Android devices that have been purchased by the account.
+    * Returns the number of unmetered iOS or unmetered Android devices that have been purchased by the account.
     */
   def getAccountSettings(): Request[GetAccountSettingsResult, AWSError] = js.native
   def getAccountSettings(callback: js.Function2[/* err */ AWSError, /* data */ GetAccountSettingsResult, Unit]): Request[GetAccountSettingsResult, AWSError] = js.native
   /**
-    * Returns the number of unmetered iOS and/or unmetered Android devices that have been purchased by the account.
+    * Returns the number of unmetered iOS or unmetered Android devices that have been purchased by the account.
     */
   def getAccountSettings(params: GetAccountSettingsRequest): Request[GetAccountSettingsResult, AWSError] = js.native
   def getAccountSettings(
@@ -234,12 +273,12 @@ trait DeviceFarm extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetDeviceResult, Unit]
   ): Request[GetDeviceResult, AWSError] = js.native
   /**
-    * Returns information about a device instance belonging to a private device fleet.
+    * Returns information about a device instance that belongs to a private device fleet.
     */
   def getDeviceInstance(): Request[GetDeviceInstanceResult, AWSError] = js.native
   def getDeviceInstance(callback: js.Function2[/* err */ AWSError, /* data */ GetDeviceInstanceResult, Unit]): Request[GetDeviceInstanceResult, AWSError] = js.native
   /**
-    * Returns information about a device instance belonging to a private device fleet.
+    * Returns information about a device instance that belongs to a private device fleet.
     */
   def getDeviceInstance(params: GetDeviceInstanceRequest): Request[GetDeviceInstanceResult, AWSError] = js.native
   def getDeviceInstance(
@@ -309,12 +348,12 @@ trait DeviceFarm extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetNetworkProfileResult, Unit]
   ): Request[GetNetworkProfileResult, AWSError] = js.native
   /**
-    * Gets the current status and future status of all offerings purchased by an AWS account. The response indicates how many offerings are currently available and the offerings that will be available in the next period. The API returns a NotEligible error if the user is not permitted to invoke the operation. Please contact aws-devicefarm-support@amazon.com if you believe that you should be able to invoke this operation.
+    * Gets the current status and future status of all offerings purchased by an AWS account. The response indicates how many offerings are currently available and the offerings that will be available in the next period. The API returns a NotEligible error if the user is not permitted to invoke the operation. If you must be able to invoke this operation, contact aws-devicefarm-support@amazon.com.
     */
   def getOfferingStatus(): Request[GetOfferingStatusResult, AWSError] = js.native
   def getOfferingStatus(callback: js.Function2[/* err */ AWSError, /* data */ GetOfferingStatusResult, Unit]): Request[GetOfferingStatusResult, AWSError] = js.native
   /**
-    * Gets the current status and future status of all offerings purchased by an AWS account. The response indicates how many offerings are currently available and the offerings that will be available in the next period. The API returns a NotEligible error if the user is not permitted to invoke the operation. Please contact aws-devicefarm-support@amazon.com if you believe that you should be able to invoke this operation.
+    * Gets the current status and future status of all offerings purchased by an AWS account. The response indicates how many offerings are currently available and the offerings that will be available in the next period. The API returns a NotEligible error if the user is not permitted to invoke the operation. If you must be able to invoke this operation, contact aws-devicefarm-support@amazon.com.
     */
   def getOfferingStatus(params: GetOfferingStatusRequest): Request[GetOfferingStatusResult, AWSError] = js.native
   def getOfferingStatus(
@@ -380,6 +419,32 @@ trait DeviceFarm extends Service {
     */
   def getTest(params: GetTestRequest): Request[GetTestResult, AWSError] = js.native
   def getTest(params: GetTestRequest, callback: js.Function2[/* err */ AWSError, /* data */ GetTestResult, Unit]): Request[GetTestResult, AWSError] = js.native
+  /**
+    * Retrieves information about a Selenium testing project.
+    */
+  def getTestGridProject(): Request[GetTestGridProjectResult, AWSError] = js.native
+  def getTestGridProject(callback: js.Function2[/* err */ AWSError, /* data */ GetTestGridProjectResult, Unit]): Request[GetTestGridProjectResult, AWSError] = js.native
+  /**
+    * Retrieves information about a Selenium testing project.
+    */
+  def getTestGridProject(params: GetTestGridProjectRequest): Request[GetTestGridProjectResult, AWSError] = js.native
+  def getTestGridProject(
+    params: GetTestGridProjectRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetTestGridProjectResult, Unit]
+  ): Request[GetTestGridProjectResult, AWSError] = js.native
+  /**
+    * A session is an instance of a browser created through a RemoteWebDriver with the URL from CreateTestGridUrlResult$url. You can use the following to look up sessions:   The session ARN (GetTestGridSessionRequest$sessionArn).   The project ARN and a session ID (GetTestGridSessionRequest$projectArn and GetTestGridSessionRequest$sessionId).   
+    */
+  def getTestGridSession(): Request[GetTestGridSessionResult, AWSError] = js.native
+  def getTestGridSession(callback: js.Function2[/* err */ AWSError, /* data */ GetTestGridSessionResult, Unit]): Request[GetTestGridSessionResult, AWSError] = js.native
+  /**
+    * A session is an instance of a browser created through a RemoteWebDriver with the URL from CreateTestGridUrlResult$url. You can use the following to look up sessions:   The session ARN (GetTestGridSessionRequest$sessionArn).   The project ARN and a session ID (GetTestGridSessionRequest$projectArn and GetTestGridSessionRequest$sessionId).   
+    */
+  def getTestGridSession(params: GetTestGridSessionRequest): Request[GetTestGridSessionResult, AWSError] = js.native
+  def getTestGridSession(
+    params: GetTestGridSessionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetTestGridSessionResult, Unit]
+  ): Request[GetTestGridSessionResult, AWSError] = js.native
   /**
     * Gets information about an upload.
     */
@@ -511,12 +576,12 @@ trait DeviceFarm extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListNetworkProfilesResult, Unit]
   ): Request[ListNetworkProfilesResult, AWSError] = js.native
   /**
-    * Returns a list of offering promotions. Each offering promotion record contains the ID and description of the promotion. The API returns a NotEligible error if the caller is not permitted to invoke the operation. Contact aws-devicefarm-support@amazon.com if you believe that you should be able to invoke this operation.
+    * Returns a list of offering promotions. Each offering promotion record contains the ID and description of the promotion. The API returns a NotEligible error if the caller is not permitted to invoke the operation. Contact aws-devicefarm-support@amazon.com if you must be able to invoke this operation.
     */
   def listOfferingPromotions(): Request[ListOfferingPromotionsResult, AWSError] = js.native
   def listOfferingPromotions(callback: js.Function2[/* err */ AWSError, /* data */ ListOfferingPromotionsResult, Unit]): Request[ListOfferingPromotionsResult, AWSError] = js.native
   /**
-    * Returns a list of offering promotions. Each offering promotion record contains the ID and description of the promotion. The API returns a NotEligible error if the caller is not permitted to invoke the operation. Contact aws-devicefarm-support@amazon.com if you believe that you should be able to invoke this operation.
+    * Returns a list of offering promotions. Each offering promotion record contains the ID and description of the promotion. The API returns a NotEligible error if the caller is not permitted to invoke the operation. Contact aws-devicefarm-support@amazon.com if you must be able to invoke this operation.
     */
   def listOfferingPromotions(params: ListOfferingPromotionsRequest): Request[ListOfferingPromotionsResult, AWSError] = js.native
   def listOfferingPromotions(
@@ -524,12 +589,12 @@ trait DeviceFarm extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListOfferingPromotionsResult, Unit]
   ): Request[ListOfferingPromotionsResult, AWSError] = js.native
   /**
-    * Returns a list of all historical purchases, renewals, and system renewal transactions for an AWS account. The list is paginated and ordered by a descending timestamp (most recent transactions are first). The API returns a NotEligible error if the user is not permitted to invoke the operation. Please contact aws-devicefarm-support@amazon.com if you believe that you should be able to invoke this operation.
+    * Returns a list of all historical purchases, renewals, and system renewal transactions for an AWS account. The list is paginated and ordered by a descending timestamp (most recent transactions are first). The API returns a NotEligible error if the user is not permitted to invoke the operation. If you must be able to invoke this operation, contact aws-devicefarm-support@amazon.com.
     */
   def listOfferingTransactions(): Request[ListOfferingTransactionsResult, AWSError] = js.native
   def listOfferingTransactions(callback: js.Function2[/* err */ AWSError, /* data */ ListOfferingTransactionsResult, Unit]): Request[ListOfferingTransactionsResult, AWSError] = js.native
   /**
-    * Returns a list of all historical purchases, renewals, and system renewal transactions for an AWS account. The list is paginated and ordered by a descending timestamp (most recent transactions are first). The API returns a NotEligible error if the user is not permitted to invoke the operation. Please contact aws-devicefarm-support@amazon.com if you believe that you should be able to invoke this operation.
+    * Returns a list of all historical purchases, renewals, and system renewal transactions for an AWS account. The list is paginated and ordered by a descending timestamp (most recent transactions are first). The API returns a NotEligible error if the user is not permitted to invoke the operation. If you must be able to invoke this operation, contact aws-devicefarm-support@amazon.com.
     */
   def listOfferingTransactions(params: ListOfferingTransactionsRequest): Request[ListOfferingTransactionsResult, AWSError] = js.native
   def listOfferingTransactions(
@@ -537,12 +602,12 @@ trait DeviceFarm extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListOfferingTransactionsResult, Unit]
   ): Request[ListOfferingTransactionsResult, AWSError] = js.native
   /**
-    * Returns a list of products or offerings that the user can manage through the API. Each offering record indicates the recurring price per unit and the frequency for that offering. The API returns a NotEligible error if the user is not permitted to invoke the operation. Please contact aws-devicefarm-support@amazon.com if you believe that you should be able to invoke this operation.
+    * Returns a list of products or offerings that the user can manage through the API. Each offering record indicates the recurring price per unit and the frequency for that offering. The API returns a NotEligible error if the user is not permitted to invoke the operation. If you must be able to invoke this operation, contact aws-devicefarm-support@amazon.com.
     */
   def listOfferings(): Request[ListOfferingsResult, AWSError] = js.native
   def listOfferings(callback: js.Function2[/* err */ AWSError, /* data */ ListOfferingsResult, Unit]): Request[ListOfferingsResult, AWSError] = js.native
   /**
-    * Returns a list of products or offerings that the user can manage through the API. Each offering record indicates the recurring price per unit and the frequency for that offering. The API returns a NotEligible error if the user is not permitted to invoke the operation. Please contact aws-devicefarm-support@amazon.com if you believe that you should be able to invoke this operation.
+    * Returns a list of products or offerings that the user can manage through the API. Each offering record indicates the recurring price per unit and the frequency for that offering. The API returns a NotEligible error if the user is not permitted to invoke the operation. If you must be able to invoke this operation, contact aws-devicefarm-support@amazon.com.
     */
   def listOfferings(params: ListOfferingsRequest): Request[ListOfferingsResult, AWSError] = js.native
   def listOfferings(
@@ -628,6 +693,58 @@ trait DeviceFarm extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
   /**
+    * Gets a list of all Selenium testing projects in your account.
+    */
+  def listTestGridProjects(): Request[ListTestGridProjectsResult, AWSError] = js.native
+  def listTestGridProjects(callback: js.Function2[/* err */ AWSError, /* data */ ListTestGridProjectsResult, Unit]): Request[ListTestGridProjectsResult, AWSError] = js.native
+  /**
+    * Gets a list of all Selenium testing projects in your account.
+    */
+  def listTestGridProjects(params: ListTestGridProjectsRequest): Request[ListTestGridProjectsResult, AWSError] = js.native
+  def listTestGridProjects(
+    params: ListTestGridProjectsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListTestGridProjectsResult, Unit]
+  ): Request[ListTestGridProjectsResult, AWSError] = js.native
+  /**
+    * Returns a list of the actions taken in a TestGridSession.
+    */
+  def listTestGridSessionActions(): Request[ListTestGridSessionActionsResult, AWSError] = js.native
+  def listTestGridSessionActions(callback: js.Function2[/* err */ AWSError, /* data */ ListTestGridSessionActionsResult, Unit]): Request[ListTestGridSessionActionsResult, AWSError] = js.native
+  /**
+    * Returns a list of the actions taken in a TestGridSession.
+    */
+  def listTestGridSessionActions(params: ListTestGridSessionActionsRequest): Request[ListTestGridSessionActionsResult, AWSError] = js.native
+  def listTestGridSessionActions(
+    params: ListTestGridSessionActionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListTestGridSessionActionsResult, Unit]
+  ): Request[ListTestGridSessionActionsResult, AWSError] = js.native
+  /**
+    * Retrieves a list of artifacts created during the session.
+    */
+  def listTestGridSessionArtifacts(): Request[ListTestGridSessionArtifactsResult, AWSError] = js.native
+  def listTestGridSessionArtifacts(callback: js.Function2[/* err */ AWSError, /* data */ ListTestGridSessionArtifactsResult, Unit]): Request[ListTestGridSessionArtifactsResult, AWSError] = js.native
+  /**
+    * Retrieves a list of artifacts created during the session.
+    */
+  def listTestGridSessionArtifacts(params: ListTestGridSessionArtifactsRequest): Request[ListTestGridSessionArtifactsResult, AWSError] = js.native
+  def listTestGridSessionArtifacts(
+    params: ListTestGridSessionArtifactsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListTestGridSessionArtifactsResult, Unit]
+  ): Request[ListTestGridSessionArtifactsResult, AWSError] = js.native
+  /**
+    * Retrieves a list of sessions for a TestGridProject.
+    */
+  def listTestGridSessions(): Request[ListTestGridSessionsResult, AWSError] = js.native
+  def listTestGridSessions(callback: js.Function2[/* err */ AWSError, /* data */ ListTestGridSessionsResult, Unit]): Request[ListTestGridSessionsResult, AWSError] = js.native
+  /**
+    * Retrieves a list of sessions for a TestGridProject.
+    */
+  def listTestGridSessions(params: ListTestGridSessionsRequest): Request[ListTestGridSessionsResult, AWSError] = js.native
+  def listTestGridSessions(
+    params: ListTestGridSessionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListTestGridSessionsResult, Unit]
+  ): Request[ListTestGridSessionsResult, AWSError] = js.native
+  /**
     * Gets information about tests in a given test suite.
     */
   def listTests(): Request[ListTestsResult, AWSError] = js.native
@@ -641,12 +758,12 @@ trait DeviceFarm extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListTestsResult, Unit]
   ): Request[ListTestsResult, AWSError] = js.native
   /**
-    * Gets information about unique problems.
+    * Gets information about unique problems, such as exceptions or crashes. Unique problems are defined as a single instance of an error across a run, job, or suite. For example, if a call in your application consistently raises an exception (OutOfBoundsException in MyActivity.java:386), ListUniqueProblems returns a single entry instead of many individual entries for that exception.
     */
   def listUniqueProblems(): Request[ListUniqueProblemsResult, AWSError] = js.native
   def listUniqueProblems(callback: js.Function2[/* err */ AWSError, /* data */ ListUniqueProblemsResult, Unit]): Request[ListUniqueProblemsResult, AWSError] = js.native
   /**
-    * Gets information about unique problems.
+    * Gets information about unique problems, such as exceptions or crashes. Unique problems are defined as a single instance of an error across a run, job, or suite. For example, if a call in your application consistently raises an exception (OutOfBoundsException in MyActivity.java:386), ListUniqueProblems returns a single entry instead of many individual entries for that exception.
     */
   def listUniqueProblems(params: ListUniqueProblemsRequest): Request[ListUniqueProblemsResult, AWSError] = js.native
   def listUniqueProblems(
@@ -680,12 +797,12 @@ trait DeviceFarm extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListVPCEConfigurationsResult, Unit]
   ): Request[ListVPCEConfigurationsResult, AWSError] = js.native
   /**
-    * Immediately purchases offerings for an AWS account. Offerings renew with the latest total purchased quantity for an offering, unless the renewal was overridden. The API returns a NotEligible error if the user is not permitted to invoke the operation. Please contact aws-devicefarm-support@amazon.com if you believe that you should be able to invoke this operation.
+    * Immediately purchases offerings for an AWS account. Offerings renew with the latest total purchased quantity for an offering, unless the renewal was overridden. The API returns a NotEligible error if the user is not permitted to invoke the operation. If you must be able to invoke this operation, contact aws-devicefarm-support@amazon.com.
     */
   def purchaseOffering(): Request[PurchaseOfferingResult, AWSError] = js.native
   def purchaseOffering(callback: js.Function2[/* err */ AWSError, /* data */ PurchaseOfferingResult, Unit]): Request[PurchaseOfferingResult, AWSError] = js.native
   /**
-    * Immediately purchases offerings for an AWS account. Offerings renew with the latest total purchased quantity for an offering, unless the renewal was overridden. The API returns a NotEligible error if the user is not permitted to invoke the operation. Please contact aws-devicefarm-support@amazon.com if you believe that you should be able to invoke this operation.
+    * Immediately purchases offerings for an AWS account. Offerings renew with the latest total purchased quantity for an offering, unless the renewal was overridden. The API returns a NotEligible error if the user is not permitted to invoke the operation. If you must be able to invoke this operation, contact aws-devicefarm-support@amazon.com.
     */
   def purchaseOffering(params: PurchaseOfferingRequest): Request[PurchaseOfferingResult, AWSError] = js.native
   def purchaseOffering(
@@ -693,12 +810,12 @@ trait DeviceFarm extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ PurchaseOfferingResult, Unit]
   ): Request[PurchaseOfferingResult, AWSError] = js.native
   /**
-    * Explicitly sets the quantity of devices to renew for an offering, starting from the effectiveDate of the next period. The API returns a NotEligible error if the user is not permitted to invoke the operation. Please contact aws-devicefarm-support@amazon.com if you believe that you should be able to invoke this operation.
+    * Explicitly sets the quantity of devices to renew for an offering, starting from the effectiveDate of the next period. The API returns a NotEligible error if the user is not permitted to invoke the operation. If you must be able to invoke this operation, contact aws-devicefarm-support@amazon.com.
     */
   def renewOffering(): Request[RenewOfferingResult, AWSError] = js.native
   def renewOffering(callback: js.Function2[/* err */ AWSError, /* data */ RenewOfferingResult, Unit]): Request[RenewOfferingResult, AWSError] = js.native
   /**
-    * Explicitly sets the quantity of devices to renew for an offering, starting from the effectiveDate of the next period. The API returns a NotEligible error if the user is not permitted to invoke the operation. Please contact aws-devicefarm-support@amazon.com if you believe that you should be able to invoke this operation.
+    * Explicitly sets the quantity of devices to renew for an offering, starting from the effectiveDate of the next period. The API returns a NotEligible error if the user is not permitted to invoke the operation. If you must be able to invoke this operation, contact aws-devicefarm-support@amazon.com.
     */
   def renewOffering(params: RenewOfferingRequest): Request[RenewOfferingResult, AWSError] = js.native
   def renewOffering(
@@ -719,12 +836,12 @@ trait DeviceFarm extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ScheduleRunResult, Unit]
   ): Request[ScheduleRunResult, AWSError] = js.native
   /**
-    * Initiates a stop request for the current job. AWS Device Farm will immediately stop the job on the device where tests have not started executing, and you will not be billed for this device. On the device where tests have started executing, Setup Suite and Teardown Suite tests will run to completion before stopping execution on the device. You will be billed for Setup, Teardown, and any tests that were in progress or already completed.
+    * Initiates a stop request for the current job. AWS Device Farm immediately stops the job on the device where tests have not started. You are not billed for this device. On the device where tests have started, setup suite and teardown suite tests run to completion on the device. You are billed for setup, teardown, and any tests that were in progress or already completed.
     */
   def stopJob(): Request[StopJobResult, AWSError] = js.native
   def stopJob(callback: js.Function2[/* err */ AWSError, /* data */ StopJobResult, Unit]): Request[StopJobResult, AWSError] = js.native
   /**
-    * Initiates a stop request for the current job. AWS Device Farm will immediately stop the job on the device where tests have not started executing, and you will not be billed for this device. On the device where tests have started executing, Setup Suite and Teardown Suite tests will run to completion before stopping execution on the device. You will be billed for Setup, Teardown, and any tests that were in progress or already completed.
+    * Initiates a stop request for the current job. AWS Device Farm immediately stops the job on the device where tests have not started. You are not billed for this device. On the device where tests have started, setup suite and teardown suite tests run to completion on the device. You are billed for setup, teardown, and any tests that were in progress or already completed.
     */
   def stopJob(params: StopJobRequest): Request[StopJobResult, AWSError] = js.native
   def stopJob(params: StopJobRequest, callback: js.Function2[/* err */ AWSError, /* data */ StopJobResult, Unit]): Request[StopJobResult, AWSError] = js.native
@@ -742,22 +859,22 @@ trait DeviceFarm extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ StopRemoteAccessSessionResult, Unit]
   ): Request[StopRemoteAccessSessionResult, AWSError] = js.native
   /**
-    * Initiates a stop request for the current test run. AWS Device Farm will immediately stop the run on devices where tests have not started executing, and you will not be billed for these devices. On devices where tests have started executing, Setup Suite and Teardown Suite tests will run to completion before stopping execution on those devices. You will be billed for Setup, Teardown, and any tests that were in progress or already completed.
+    * Initiates a stop request for the current test run. AWS Device Farm immediately stops the run on devices where tests have not started. You are not billed for these devices. On devices where tests have started executing, setup suite and teardown suite tests run to completion on those devices. You are billed for setup, teardown, and any tests that were in progress or already completed.
     */
   def stopRun(): Request[StopRunResult, AWSError] = js.native
   def stopRun(callback: js.Function2[/* err */ AWSError, /* data */ StopRunResult, Unit]): Request[StopRunResult, AWSError] = js.native
   /**
-    * Initiates a stop request for the current test run. AWS Device Farm will immediately stop the run on devices where tests have not started executing, and you will not be billed for these devices. On devices where tests have started executing, Setup Suite and Teardown Suite tests will run to completion before stopping execution on those devices. You will be billed for Setup, Teardown, and any tests that were in progress or already completed.
+    * Initiates a stop request for the current test run. AWS Device Farm immediately stops the run on devices where tests have not started. You are not billed for these devices. On devices where tests have started executing, setup suite and teardown suite tests run to completion on those devices. You are billed for setup, teardown, and any tests that were in progress or already completed.
     */
   def stopRun(params: StopRunRequest): Request[StopRunResult, AWSError] = js.native
   def stopRun(params: StopRunRequest, callback: js.Function2[/* err */ AWSError, /* data */ StopRunResult, Unit]): Request[StopRunResult, AWSError] = js.native
   /**
-    * Associates the specified tags to a resource with the specified resourceArn. If existing tags on a resource are not specified in the request parameters, they are not changed. When a resource is deleted, the tags associated with that resource are deleted as well.
+    * Associates the specified tags to a resource with the specified resourceArn. If existing tags on a resource are not specified in the request parameters, they are not changed. When a resource is deleted, the tags associated with that resource are also deleted.
     */
   def tagResource(): Request[TagResourceResponse, AWSError] = js.native
   def tagResource(callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]): Request[TagResourceResponse, AWSError] = js.native
   /**
-    * Associates the specified tags to a resource with the specified resourceArn. If existing tags on a resource are not specified in the request parameters, they are not changed. When a resource is deleted, the tags associated with that resource are deleted as well.
+    * Associates the specified tags to a resource with the specified resourceArn. If existing tags on a resource are not specified in the request parameters, they are not changed. When a resource is deleted, the tags associated with that resource are also deleted.
     */
   def tagResource(params: TagResourceRequest): Request[TagResourceResponse, AWSError] = js.native
   def tagResource(
@@ -778,12 +895,12 @@ trait DeviceFarm extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]
   ): Request[UntagResourceResponse, AWSError] = js.native
   /**
-    * Updates information about an existing private device instance.
+    * Updates information about a private device instance.
     */
   def updateDeviceInstance(): Request[UpdateDeviceInstanceResult, AWSError] = js.native
   def updateDeviceInstance(callback: js.Function2[/* err */ AWSError, /* data */ UpdateDeviceInstanceResult, Unit]): Request[UpdateDeviceInstanceResult, AWSError] = js.native
   /**
-    * Updates information about an existing private device instance.
+    * Updates information about a private device instance.
     */
   def updateDeviceInstance(params: UpdateDeviceInstanceRequest): Request[UpdateDeviceInstanceResult, AWSError] = js.native
   def updateDeviceInstance(
@@ -817,12 +934,12 @@ trait DeviceFarm extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateInstanceProfileResult, Unit]
   ): Request[UpdateInstanceProfileResult, AWSError] = js.native
   /**
-    * Updates the network profile with specific settings.
+    * Updates the network profile.
     */
   def updateNetworkProfile(): Request[UpdateNetworkProfileResult, AWSError] = js.native
   def updateNetworkProfile(callback: js.Function2[/* err */ AWSError, /* data */ UpdateNetworkProfileResult, Unit]): Request[UpdateNetworkProfileResult, AWSError] = js.native
   /**
-    * Updates the network profile with specific settings.
+    * Updates the network profile.
     */
   def updateNetworkProfile(params: UpdateNetworkProfileRequest): Request[UpdateNetworkProfileResult, AWSError] = js.native
   def updateNetworkProfile(
@@ -843,12 +960,25 @@ trait DeviceFarm extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateProjectResult, Unit]
   ): Request[UpdateProjectResult, AWSError] = js.native
   /**
-    * Update an uploaded test specification (test spec).
+    * Change details of a project.
+    */
+  def updateTestGridProject(): Request[UpdateTestGridProjectResult, AWSError] = js.native
+  def updateTestGridProject(callback: js.Function2[/* err */ AWSError, /* data */ UpdateTestGridProjectResult, Unit]): Request[UpdateTestGridProjectResult, AWSError] = js.native
+  /**
+    * Change details of a project.
+    */
+  def updateTestGridProject(params: UpdateTestGridProjectRequest): Request[UpdateTestGridProjectResult, AWSError] = js.native
+  def updateTestGridProject(
+    params: UpdateTestGridProjectRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateTestGridProjectResult, Unit]
+  ): Request[UpdateTestGridProjectResult, AWSError] = js.native
+  /**
+    * Updates an uploaded test spec.
     */
   def updateUpload(): Request[UpdateUploadResult, AWSError] = js.native
   def updateUpload(callback: js.Function2[/* err */ AWSError, /* data */ UpdateUploadResult, Unit]): Request[UpdateUploadResult, AWSError] = js.native
   /**
-    * Update an uploaded test specification (test spec).
+    * Updates an uploaded test spec.
     */
   def updateUpload(params: UpdateUploadRequest): Request[UpdateUploadResult, AWSError] = js.native
   def updateUpload(
@@ -856,12 +986,12 @@ trait DeviceFarm extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateUploadResult, Unit]
   ): Request[UpdateUploadResult, AWSError] = js.native
   /**
-    * Updates information about an existing Amazon Virtual Private Cloud (VPC) endpoint configuration.
+    * Updates information about an Amazon Virtual Private Cloud (VPC) endpoint configuration.
     */
   def updateVPCEConfiguration(): Request[UpdateVPCEConfigurationResult, AWSError] = js.native
   def updateVPCEConfiguration(callback: js.Function2[/* err */ AWSError, /* data */ UpdateVPCEConfigurationResult, Unit]): Request[UpdateVPCEConfigurationResult, AWSError] = js.native
   /**
-    * Updates information about an existing Amazon Virtual Private Cloud (VPC) endpoint configuration.
+    * Updates information about an Amazon Virtual Private Cloud (VPC) endpoint configuration.
     */
   def updateVPCEConfiguration(params: UpdateVPCEConfigurationRequest): Request[UpdateVPCEConfigurationResult, AWSError] = js.native
   def updateVPCEConfiguration(

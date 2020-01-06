@@ -9,14 +9,14 @@ A clean, whitespace-sensitive template language for writing HTML
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | pug |
-| Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 1498 |
-| # downloads        | 14429962 |
-| # stars            | 178 |
+| Keywords           | html, jade, pug, template |
+| # releases         | 6 |
+| # dependents       | 1752 |
+| # downloads        | 20877781 |
+| # stars            | 180 |
 
 ## Links
-- [Homepage](https://pugjs.org/)
+- [Homepage](https://pugjs.org)
 - [Bugs](https://github.com/pugjs/pug/issues)
 - [Repository](https://github.com/pugjs/pug)
 - [Npm](https://www.npmjs.com/package/pug)

@@ -10,9 +10,9 @@ Delay a promise a specified amount of time
 | ------------------ | :-------------: |
 | Full name          | yoctodelay |
 | Keywords           | promise, resolve, delay, defer, wait, stall, timeout, settimeout, event, loop, next, tick, delay, async, await, promises, bluebird |
-| # releases         | 4 |
+| # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 4824 |
+| # downloads        | 4977 |
 | # stars            | 1 |
 
 ## Links

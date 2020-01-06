@@ -5,28 +5,29 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BucketReplicationConfigurationRuleDestination extends js.Object {
   /**
     * Specifies the overrides to use for object owners on replication. Must be used in conjunction with `accountId` owner override configuration.
     */
-  var accessControlTranslation: js.UndefOr[Input[BucketReplicationConfigurationRuleDestinationAccessControlTranslation]] = js.undefined
+  var accessControlTranslation: js.UndefOr[Input[BucketReplicationConfigurationRuleDestinationAccessControlTranslation]] = js.native
   /**
     * The Account ID to use for overriding the object owner on replication. Must be used in conjunction with `accessControlTranslation` override configuration.
     */
-  var accountId: js.UndefOr[Input[String]] = js.undefined
+  var accountId: js.UndefOr[Input[String]] = js.native
   /**
     * The ARN of the S3 bucket where you want Amazon S3 to store replicas of the object identified by the rule.
     */
-  var bucket: Input[String]
+  var bucket: Input[String] = js.native
   /**
     * Destination KMS encryption key ARN for SSE-KMS replication. Must be used in conjunction with
     * `sseKmsEncryptedObjects` source selection criteria.
     */
-  var replicaKmsKeyId: js.UndefOr[Input[String]] = js.undefined
+  var replicaKmsKeyId: js.UndefOr[Input[String]] = js.native
   /**
     * The class of storage used to store the object. Can be `STANDARD`, `REDUCED_REDUNDANCY`, `STANDARD_IA`, `ONEZONE_IA`, `INTELLIGENT_TIERING`, `GLACIER`, or `DEEP_ARCHIVE`.
     */
-  var storageClass: js.UndefOr[Input[String]] = js.undefined
+  var storageClass: js.UndefOr[Input[String]] = js.native
 }
 
 object BucketReplicationConfigurationRuleDestination {

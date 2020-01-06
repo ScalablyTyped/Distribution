@@ -10,9 +10,9 @@ package object script {
 
   type Parameter = js.UndefOr[
     Double | Boolean | String | (NumberDictionary[
-      /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias google.script.client-side.google.script.Parameter */ js.Object
+      /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias google.script.client-side.google.script.Parameter */ js.Object
     ]) | (StringDictionary[
-      /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias google.script.client-side.google.script.Parameter */ js.Object
+      /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias google.script.client-side.google.script.Parameter */ js.Object
     ]) | Null
   ]
 }

@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "email-templates"
-version := "6.0-dt-20191206Z-2bfef3"
+version := "6.0-dt-20191206Z-43fd12"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "html-to-text" % "v1.4.0-dt-20190322Z-10c2c3",
-  "org.scalablytyped" %%% "node" % "13.1-dt-20191226Z-155d58",
-  "org.scalablytyped" %%% "nodemailer" % "6.4-dt-20191218Z-e80bf9",
-  "org.scalablytyped" %%% "std" % "3.7-953338")
+  "org.scalablytyped" %%% "html-to-text" % "v1.4.0-dt-20190322Z-020155",
+  "org.scalablytyped" %%% "node" % "13.1-dt-20200103Z-b9f880",
+  "org.scalablytyped" %%% "nodemailer" % "6.4-dt-20191218Z-3b658e",
+  "org.scalablytyped" %%% "std" % "3.7-b6d959")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

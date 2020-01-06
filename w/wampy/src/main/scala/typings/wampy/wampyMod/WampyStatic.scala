@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait WampyStatic
   extends Instantiable0[Wampy]
-     with Instantiable2[/* url */ String, /* options */ WampyOptions, Wampy]
      with Instantiable1[(/* url */ String) | (/* options */ WampyOptions), Wampy]
+     with Instantiable2[/* url */ String, /* options */ WampyOptions, Wampy]
 

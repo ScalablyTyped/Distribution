@@ -11,8 +11,8 @@ Create 'key/value' collections of one-to-one correspondence.
 | Full name          | bidirectional-map |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 14194 |
+| # dependents       | 2 |
+| # downloads        | 29172 |
 | # stars            | 0 |
 
 ## Links

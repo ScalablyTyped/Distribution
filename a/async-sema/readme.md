@@ -10,9 +10,9 @@ Semaphore using `async` and `await`
 | ------------------ | :-------------: |
 | Full name          | async-sema |
 | Keywords           | semaphore, async, await |
-| # releases         | 13 |
-| # dependents       | 30 |
-| # downloads        | 10523529 |
+| # releases         | 12 |
+| # dependents       | 36 |
+| # downloads        | 11701220 |
 | # stars            | 1 |
 
 ## Links

@@ -9,9 +9,9 @@ Library for performing 2D collision detection
 | ------------------ | :-------------: |
 | Full name          | sat |
 | Keywords           | collision detection, sat, game |
-| # releases         | 3 |
-| # dependents       | 12 |
-| # downloads        | 96886 |
+| # releases         | 4 |
+| # dependents       | 16 |
+| # downloads        | 149277 |
 | # stars            | 4 |
 
 ## Links

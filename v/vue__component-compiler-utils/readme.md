@@ -10,9 +10,9 @@ Lower level utilities for compiling Vue single file components
 | ------------------ | :-------------: |
 | Full name          | @vue/component-compiler-utils |
 | Keywords           | vue, sfc, component, compiler |
-| # releases         | 19 |
-| # dependents       | 55 |
-| # downloads        | 22858873 |
+| # releases         | 24 |
+| # dependents       | 92 |
+| # downloads        | 36307186 |
 | # stars            | 0 |
 
 ## Links

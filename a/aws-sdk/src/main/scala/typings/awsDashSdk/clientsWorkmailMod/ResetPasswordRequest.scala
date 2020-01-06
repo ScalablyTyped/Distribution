@@ -4,25 +4,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ResetPasswordRequest extends js.Object {
   /**
     * The identifier of the organization that contains the user for which the password is reset.
     */
-  var OrganizationId: typings.awsDashSdk.clientsWorkmailMod.OrganizationId
+  var OrganizationId: typings.awsDashSdk.clientsWorkmailMod.OrganizationId = js.native
   /**
     * The new password for the user.
     */
-  var Password: typings.awsDashSdk.clientsWorkmailMod.Password
+  var Password: typings.awsDashSdk.clientsWorkmailMod.Password = js.native
   /**
     * The identifier of the user for whom the password is reset.
     */
-  var UserId: WorkMailIdentifier
+  var UserId: WorkMailIdentifier = js.native
 }
 
 object ResetPasswordRequest {
   @scala.inline
   def apply(OrganizationId: OrganizationId, Password: Password, UserId: WorkMailIdentifier): ResetPasswordRequest = {
-    val __obj = js.Dynamic.literal(OrganizationId = OrganizationId, Password = Password, UserId = UserId)
+    val __obj = js.Dynamic.literal(OrganizationId = OrganizationId.asInstanceOf[js.Any], Password = Password.asInstanceOf[js.Any], UserId = UserId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[ResetPasswordRequest]
   }

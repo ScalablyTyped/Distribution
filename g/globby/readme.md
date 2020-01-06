@@ -9,10 +9,10 @@ Extends `glob` with support for multiple patterns and exposes a Promise API
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | globby |
-| Keywords           | all, array, directories, dirs, expand, files, filesystem, filter, find, fnmatch, folders, fs, glob, globbing, globs, gulpfriendly, match, matcher, minimatch, multi, multiple, paths, pattern, patterns, traverse, util, utility, wildcard, wildcards, promise, gitignore, git |
-| # releases         | 10 |
-| # dependents       | 2074 |
-| # downloads        | 522004472 |
+| Keywords           | all, array, directories, expand, files, filesystem, filter, find, fnmatch, folders, fs, glob, globbing, globs, gulpfriendly, match, matcher, minimatch, multi, multiple, paths, pattern, patterns, traverse, util, utility, wildcard, wildcards, promise, gitignore, git |
+| # releases         | 9 |
+| # dependents       | 2704 |
+| # downloads        | 746920013 |
 | # stars            | 49 |
 
 ## Links

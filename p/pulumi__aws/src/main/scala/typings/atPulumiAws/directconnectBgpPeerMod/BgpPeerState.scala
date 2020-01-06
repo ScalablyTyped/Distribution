@@ -5,45 +5,46 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BgpPeerState extends js.Object {
   /**
     * The address family for the BGP peer. `ipv4 ` or `ipv6`.
     */
-  val addressFamily: js.UndefOr[Input[String]] = js.undefined
+  val addressFamily: js.UndefOr[Input[String]] = js.native
   /**
     * The IPv4 CIDR address to use to send traffic to Amazon.
     * Required for IPv4 BGP peers on public virtual interfaces.
     */
-  val amazonAddress: js.UndefOr[Input[String]] = js.undefined
+  val amazonAddress: js.UndefOr[Input[String]] = js.native
   /**
     * The Direct Connect endpoint on which the BGP peer terminates.
     */
-  val awsDevice: js.UndefOr[Input[String]] = js.undefined
+  val awsDevice: js.UndefOr[Input[String]] = js.native
   /**
     * The autonomous system (AS) number for Border Gateway Protocol (BGP) configuration.
     */
-  val bgpAsn: js.UndefOr[Input[Double]] = js.undefined
+  val bgpAsn: js.UndefOr[Input[Double]] = js.native
   /**
     * The authentication key for BGP configuration.
     */
-  val bgpAuthKey: js.UndefOr[Input[String]] = js.undefined
+  val bgpAuthKey: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of the BGP peer.
     */
-  val bgpPeerId: js.UndefOr[Input[String]] = js.undefined
+  val bgpPeerId: js.UndefOr[Input[String]] = js.native
   /**
     * The Up/Down state of the BGP peer.
     */
-  val bgpStatus: js.UndefOr[Input[String]] = js.undefined
+  val bgpStatus: js.UndefOr[Input[String]] = js.native
   /**
     * The IPv4 CIDR destination address to which Amazon should send traffic.
     * Required for IPv4 BGP peers on public virtual interfaces.
     */
-  val customerAddress: js.UndefOr[Input[String]] = js.undefined
+  val customerAddress: js.UndefOr[Input[String]] = js.native
   /**
     * The ID of the Direct Connect virtual interface on which to create the BGP peer.
     */
-  val virtualInterfaceId: js.UndefOr[Input[String]] = js.undefined
+  val virtualInterfaceId: js.UndefOr[Input[String]] = js.native
 }
 
 object BgpPeerState {

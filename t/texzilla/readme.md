@@ -10,9 +10,9 @@ A LALR Javascript LaTeX-to-MathML converter compatible with Unicode.
 | ------------------ | :-------------: |
 | Full name          | texzilla |
 | Keywords           | mathml,tex,latex,unicode |
-| # releases         | 2 |
+| # releases         | 4 |
 | # dependents       | 1 |
-| # downloads        | 3417 |
+| # downloads        | 3661 |
 | # stars            | 0 |
 
 ## Links

@@ -159,6 +159,9 @@ object mongooseStrings {
   sealed trait typeKey extends js.Object
   
   @js.native
+  sealed trait typePojoToMixed extends js.Object
+  
+  @js.native
   sealed trait update extends js.Object
   
   @js.native
@@ -293,6 +296,8 @@ object mongooseStrings {
   def toObject: toObject = "toObject".asInstanceOf[toObject]
   @scala.inline
   def typeKey: typeKey = "typeKey".asInstanceOf[typeKey]
+  @scala.inline
+  def typePojoToMixed: typePojoToMixed = "typePojoToMixed".asInstanceOf[typePojoToMixed]
   @scala.inline
   def update: update = "update".asInstanceOf[update]
   @scala.inline

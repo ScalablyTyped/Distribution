@@ -65,7 +65,7 @@ trait CircuitBreaker[TI /* <: js.Array[_] */, TR] extends EventEmitter {
     * If a fallback function was provided, it will be invoked in the event of any failure or timeout.
     */
   def fire(
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type TI is not an array type */ args: TI
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TI is not an array type */ args: TI
   ): js.Promise[TR] = js.native
   /**
     * Provide a health check function to be called periodically.

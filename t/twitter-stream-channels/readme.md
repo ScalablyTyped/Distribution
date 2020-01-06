@@ -11,8 +11,8 @@ Manage multiple filters on the same Twitter stream
 | Full name          | twitter-stream-channels |
 | Keywords           | twitter, api, stream, filter |
 | # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 3980 |
+| # dependents       | 2 |
+| # downloads        | 2605 |
 | # stars            | 9 |
 
 ## Links

@@ -10,9 +10,9 @@ A geographic extension for [kdbush](https://github.com/mourner/kdbush), the fast
 | ------------------ | :-------------: |
 | Full name          | geokdbush |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 14 |
-| # downloads        | 41097 |
+| # releases         | 0 |
+| # dependents       | 15 |
+| # downloads        | 64379 |
 | # stars            | 0 |
 
 ## Links

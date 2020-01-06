@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SchemaChangePolicy extends js.Object {
   /**
     * The deletion behavior when the crawler finds a deleted object.
     */
-  var DeleteBehavior: js.UndefOr[typings.awsDashSdk.clientsGlueMod.DeleteBehavior] = js.undefined
+  var DeleteBehavior: js.UndefOr[typings.awsDashSdk.clientsGlueMod.DeleteBehavior] = js.native
   /**
     * The update behavior when the crawler finds a changed schema.
     */
-  var UpdateBehavior: js.UndefOr[typings.awsDashSdk.clientsGlueMod.UpdateBehavior] = js.undefined
+  var UpdateBehavior: js.UndefOr[typings.awsDashSdk.clientsGlueMod.UpdateBehavior] = js.native
 }
 
 object SchemaChangePolicy {

@@ -1,7 +1,7 @@
 package typings.atOracleOraclejet.ojgaugeMod
 
 import typings.atOracleOraclejet.Anon_BorderColorCircle
-import typings.atOracleOraclejet.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_656598965
+import typings.atOracleOraclejet.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1916286666
 import typings.atOracleOraclejet.atOracleOraclejetMod.JetElementCustomEvent
 import typings.atOracleOraclejet.atOracleOraclejetNumbers.`0.5`
 import typings.atOracleOraclejet.atOracleOraclejetNumbers.`1`
@@ -67,7 +67,7 @@ trait ojRatingGauge_ extends dvtBaseGauge[ojRatingGaugeSettableProperties] {
   var onStepChanged: (js.Function1[/* event */ JetElementCustomEvent[`0.5` | `1`], _]) | Null = js.native
   var onThresholdsChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[Threshold]], _]) | Null = js.native
   var onTooltipChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_656598965], 
+    /* event */ JetElementCustomEvent[Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1916286666], 
     _
   ]) | Null = js.native
   var onTransientValueChanged: (js.Function1[/* event */ JetElementCustomEvent[Double | Null], _]) | Null = js.native
@@ -80,7 +80,7 @@ trait ojRatingGauge_ extends dvtBaseGauge[ojRatingGaugeSettableProperties] {
   var selectedState: Anon_BorderColorCircle = js.native
   var step: `0.5` | `1` = js.native
   var thresholds: js.Array[Threshold] = js.native
-  var tooltip: Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_656598965 = js.native
+  var tooltip: Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1916286666 = js.native
   val transientValue: Double | Null = js.native
   var unselectedState: Anon_BorderColorCircle = js.native
   var value: Double | Null = js.native
@@ -214,7 +214,7 @@ trait ojRatingGauge_ extends dvtBaseGauge[ojRatingGaugeSettableProperties] {
     `type`: tooltipChanged,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_656598965], 
+      /* ev */ JetElementCustomEvent[Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1916286666], 
       _
     ]
   ): Unit = js.native
@@ -223,7 +223,7 @@ trait ojRatingGauge_ extends dvtBaseGauge[ojRatingGaugeSettableProperties] {
     `type`: tooltipChanged,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_656598965], 
+      /* ev */ JetElementCustomEvent[Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1916286666], 
       _
     ],
     useCapture: Boolean
@@ -284,7 +284,7 @@ trait ojRatingGauge_ extends dvtBaseGauge[ojRatingGaugeSettableProperties] {
   @JSName("getProperty")
   def getProperty_thresholds(property: thresholds): js.Array[Threshold] = js.native
   @JSName("getProperty")
-  def getProperty_tooltip(property: tooltip): Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_656598965 = js.native
+  def getProperty_tooltip(property: tooltip): Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1916286666 = js.native
   @JSName("getProperty")
   def getProperty_transientValue(property: typings.atOracleOraclejet.atOracleOraclejetStrings.transientValue): Double | Null = js.native
   @JSName("getProperty")
@@ -319,7 +319,10 @@ trait ojRatingGauge_ extends dvtBaseGauge[ojRatingGaugeSettableProperties] {
   @JSName("setProperty")
   def setProperty_thresholds(property: thresholds, value: js.Array[Threshold]): Unit = js.native
   @JSName("setProperty")
-  def setProperty_tooltip(property: tooltip, value: Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_656598965): Unit = js.native
+  def setProperty_tooltip(
+    property: tooltip,
+    value: Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1916286666
+  ): Unit = js.native
   @JSName("setProperty")
   def setProperty_transientValue(property: typings.atOracleOraclejet.atOracleOraclejetStrings.transientValue): Unit = js.native
   @JSName("setProperty")

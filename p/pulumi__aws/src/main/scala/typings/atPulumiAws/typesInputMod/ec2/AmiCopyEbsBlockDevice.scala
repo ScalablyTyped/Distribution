@@ -5,17 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AmiCopyEbsBlockDevice extends js.Object {
-  var deleteOnTermination: js.UndefOr[Input[Boolean]] = js.undefined
-  var deviceName: js.UndefOr[Input[String]] = js.undefined
+  var deleteOnTermination: js.UndefOr[Input[Boolean]] = js.native
+  var deviceName: js.UndefOr[Input[String]] = js.native
   /**
     * Specifies whether the destination snapshots of the copied image should be encrypted. Defaults to `false`
     */
-  var encrypted: js.UndefOr[Input[Boolean]] = js.undefined
-  var iops: js.UndefOr[Input[Double]] = js.undefined
-  var snapshotId: js.UndefOr[Input[String]] = js.undefined
-  var volumeSize: js.UndefOr[Input[Double]] = js.undefined
-  var volumeType: js.UndefOr[Input[String]] = js.undefined
+  var encrypted: js.UndefOr[Input[Boolean]] = js.native
+  var iops: js.UndefOr[Input[Double]] = js.native
+  var snapshotId: js.UndefOr[Input[String]] = js.native
+  var volumeSize: js.UndefOr[Input[Double]] = js.native
+  var volumeType: js.UndefOr[Input[String]] = js.native
 }
 
 object AmiCopyEbsBlockDevice {

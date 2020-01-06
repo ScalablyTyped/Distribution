@@ -10,9 +10,9 @@ Framework agnostic migration tool for Node.JS
 | ------------------ | :-------------: |
 | Full name          | umzug |
 | Keywords           | migrate, migration, migrations, sequelize |
-| # releases         | 6 |
-| # dependents       | 99 |
-| # downloads        | 5492691 |
+| # releases         | 2 |
+| # dependents       | 118 |
+| # downloads        | 7829093 |
 | # stars            | 4 |
 
 ## Links

@@ -12,7 +12,7 @@ A Storage done right for AngularJS.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 8 |
-| # downloads        | 166422 |
+| # downloads        | 313061 |
 | # stars            | 0 |
 
 ## Links

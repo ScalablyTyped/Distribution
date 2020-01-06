@@ -10,9 +10,9 @@ Convert geojson to osm
 | ------------------ | :-------------: |
 | Full name          | geojson2osm |
 | Keywords           | osm, geojson |
-| # releases         | 0 |
+| # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 368 |
+| # downloads        | 463 |
 | # stars            | 0 |
 
 ## Links

@@ -12,7 +12,7 @@ SDBM non-cryptographic hash function
 | Keywords           | sdbm, algorithm, hash, hashing, string, function |
 | # releases         | 5 |
 | # dependents       | 2 |
-| # downloads        | 385 |
+| # downloads        | 355 |
 | # stars            | 0 |
 
 ## Links

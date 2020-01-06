@@ -12,7 +12,7 @@ A jQuery plugin for browser detection.
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 3 |
-| # downloads        | 316965 |
+| # downloads        | 364206 |
 | # stars            | 1 |
 
 ## Links

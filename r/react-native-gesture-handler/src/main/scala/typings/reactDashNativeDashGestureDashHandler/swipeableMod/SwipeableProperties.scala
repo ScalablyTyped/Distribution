@@ -8,7 +8,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SwipeableProperties extends js.Object {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in std.Exclude<keyof react-native-gesture-handler.react-native-gesture-handler.PanGestureHandlerProperties, 'onGestureEvent' | 'onHandlerStateChange'> ]: react-native-gesture-handler.react-native-gesture-handler.PanGestureHandlerProperties[P]} */ trait SwipeableProperties extends js.Object {
   var childrenContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   var friction: js.UndefOr[Double] = js.undefined
@@ -25,13 +26,13 @@ trait SwipeableProperties extends js.Object {
   var overshootLeft: js.UndefOr[Boolean] = js.undefined
   var overshootRight: js.UndefOr[Boolean] = js.undefined
   /**
-    * 
+    *
     * This map describes the values to use as inputRange for extra interpolation:
     * AnimatedValue: [startValue, endValue]
-    * 
+    *
     * progressAnimatedValue: [0, 1]
     * dragAnimatedValue: [0, +]
-    * 
+    *
     * To support `rtl` flexbox layouts use `flexDirection` styling.
     * */
   var renderLeftActions: js.UndefOr[
@@ -42,13 +43,13 @@ trait SwipeableProperties extends js.Object {
     ]
   ] = js.undefined
   /**
-    * 
+    *
     * This map describes the values to use as inputRange for extra interpolation:
     * AnimatedValue: [startValue, endValue]
-    * 
+    *
     * progressAnimatedValue: [0, 1]
     * dragAnimatedValue: [0, -]
-    * 
+    *
     * To support `rtl` flexbox layouts use `flexDirection` styling.
     * */
   var renderRightActions: js.UndefOr[

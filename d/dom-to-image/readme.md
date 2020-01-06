@@ -10,9 +10,9 @@ Generates an image from a DOM node using HTML5 canvas and SVG
 | ------------------ | :-------------: |
 | Full name          | dom-to-image |
 | Keywords           | dom, image, raster, render, html, canvas, svg |
-| # releases         | 2 |
-| # dependents       | 52 |
-| # downloads        | 663437 |
+| # releases         | 1 |
+| # dependents       | 78 |
+| # downloads        | 1343210 |
 | # stars            | 11 |
 
 ## Links

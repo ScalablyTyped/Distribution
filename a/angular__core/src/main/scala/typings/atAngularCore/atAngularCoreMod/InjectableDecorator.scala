@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait InjectableDecorator
-  extends Instantiable1[/* options */ Anon_ProvidedIn with InjectableProvider, Injectable]
-     with Instantiable0[Injectable] {
+  extends Instantiable0[Injectable]
+     with Instantiable1[/* options */ Anon_ProvidedIn with InjectableProvider, Injectable] {
   /**
     * Decorator that marks a class as available to be
     * provided and injected as a dependency.

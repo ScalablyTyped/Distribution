@@ -11,8 +11,8 @@ make that shiz draggable
 | Full name          | draggabilly |
 | Keywords           | DOM, drag, draggable, touch, multitouch |
 | # releases         | 2 |
-| # dependents       | 36 |
-| # downloads        | 357114 |
+| # dependents       | 40 |
+| # downloads        | 487120 |
 | # stars            | 3 |
 
 ## Links

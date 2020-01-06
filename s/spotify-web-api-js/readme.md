@@ -10,9 +10,9 @@ A client-side JS wrapper for the Spotify Web API
 | ------------------ | :-------------: |
 | Full name          | spotify-web-api-js |
 | Keywords           | spotify |
-| # releases         | 10 |
+| # releases         | 8 |
 | # dependents       | 4 |
-| # downloads        | 21731 |
+| # downloads        | 23809 |
 | # stars            | 6 |
 
 ## Links

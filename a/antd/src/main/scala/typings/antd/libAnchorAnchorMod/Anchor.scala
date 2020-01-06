@@ -1,7 +1,7 @@
 package typings.antd.libAnchorAnchorMod
 
 import typings.antd.Anon_ActiveLink
-import typings.antd.Anon_AntAnchor_1899638441
+import typings.antd.Anon_AntAnchor_1351107620
 import typings.antd.libConfigDashProviderContextMod.ConfigConsumerProps
 import typings.react.reactMod.Component
 import typings.react.reactMod._Global_.JSX.Element
@@ -27,7 +27,7 @@ trait Anchor
   def componentDidUpdate_MAnchor(): Unit = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MAnchor(): Unit = js.native
-  def getChildContext(): Anon_AntAnchor_1899638441 = js.native
+  def getChildContext(): Anon_AntAnchor_1351107620 = js.native
   def getCurrentAnchor(): String = js.native
   def getCurrentAnchor(offsetTop: Double): String = js.native
   def getCurrentAnchor(offsetTop: Double, bounds: Double): String = js.native

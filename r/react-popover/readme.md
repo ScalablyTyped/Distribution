@@ -10,9 +10,9 @@ A specification backed popover for react
 | ------------------ | :-------------: |
 | Full name          | react-popover |
 | Keywords           | - |
-| # releases         | 18 |
-| # dependents       | 31 |
-| # downloads        | 897281 |
+| # releases         | 6 |
+| # dependents       | 32 |
+| # downloads        | 1343514 |
 | # stars            | 2 |
 
 ## Links

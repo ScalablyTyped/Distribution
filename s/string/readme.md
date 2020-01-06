@@ -10,12 +10,12 @@ string contains methods that aren't included in the vanilla JavaScript string su
 | Full name          | string |
 | Keywords           | string, strings, string.js, stringjs, S, s, csv, html, entities, parse, html, tags, strip, trim, encode, decode, escape, unescape |
 | # releases         | 1 |
-| # dependents       | 798 |
-| # downloads        | 7229821 |
-| # stars            | 79 |
+| # dependents       | 805 |
+| # downloads        | 5194640 |
+| # stars            | 80 |
 
 ## Links
-- [Homepage](http://stringjs.com)
+- [Homepage](https://github.com/jprichardson/string.js#readme)
 - [Bugs](https://github.com/jprichardson/string.js/issues)
 - [Repository](https://github.com/jprichardson/string.js)
 - [Npm](https://www.npmjs.com/package/string)

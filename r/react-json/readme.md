@@ -12,7 +12,7 @@ A JSON editor packed as a React.js component and the simplest way of creating we
 | Keywords           | react, forms, json |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 2378 |
+| # downloads        | 1806 |
 | # stars            | 0 |
 
 ## Links

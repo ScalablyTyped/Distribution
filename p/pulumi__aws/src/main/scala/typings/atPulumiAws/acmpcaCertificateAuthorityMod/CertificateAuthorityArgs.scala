@@ -8,31 +8,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CertificateAuthorityArgs extends js.Object {
   /**
     * Nested argument containing algorithms and certificate subject information. Defined below.
     */
-  val certificateAuthorityConfiguration: Input[CertificateAuthorityCertificateAuthorityConfiguration]
+  val certificateAuthorityConfiguration: Input[CertificateAuthorityCertificateAuthorityConfiguration] = js.native
   /**
     * Boolean value that specifies whether certificate revocation lists (CRLs) are enabled. Defaults to `false`.
     */
-  val enabled: js.UndefOr[Input[Boolean]] = js.undefined
+  val enabled: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The number of days to make a CA restorable after it has been deleted, must be between 7 to 30 days, with default to 30 days.
     */
-  val permanentDeletionTimeInDays: js.UndefOr[Input[Double]] = js.undefined
+  val permanentDeletionTimeInDays: js.UndefOr[Input[Double]] = js.native
   /**
     * Nested argument containing revocation configuration. Defined below.
     */
-  val revocationConfiguration: js.UndefOr[Input[CertificateAuthorityRevocationConfiguration]] = js.undefined
+  val revocationConfiguration: js.UndefOr[Input[CertificateAuthorityRevocationConfiguration]] = js.native
   /**
     * Specifies a key-value map of user-defined tags that are attached to the certificate authority.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
   /**
     * The type of the certificate authority. Defaults to `SUBORDINATE`. Valid values: `ROOT` and `SUBORDINATE`.
     */
-  val `type`: js.UndefOr[Input[String]] = js.undefined
+  val `type`: js.UndefOr[Input[String]] = js.native
 }
 
 object CertificateAuthorityArgs {

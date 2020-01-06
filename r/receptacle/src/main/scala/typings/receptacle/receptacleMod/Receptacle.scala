@@ -17,11 +17,11 @@ trait Receptacle[T, X] extends js.Object {
   def has(key: String): Boolean = js.native
   def meta(key: String): js.UndefOr[X] = js.native
   def set(key: String, value: T): Receptacle[
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for T */ _, 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for T */ _, 
     js.UndefOr[scala.Nothing]
   ] = js.native
   def set(key: String, value: T, options: SetOptions[X]): Receptacle[
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for T */ _, 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for T */ _, 
     js.UndefOr[scala.Nothing]
   ] = js.native
   def toJSON(): Export[T, X] = js.native

@@ -5,31 +5,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SmsChannelState extends js.Object {
   /**
     * The application ID.
     */
-  val applicationId: js.UndefOr[Input[String]] = js.undefined
+  val applicationId: js.UndefOr[Input[String]] = js.native
   /**
     * Whether the channel is enabled or disabled. Defaults to `true`.
     */
-  val enabled: js.UndefOr[Input[Boolean]] = js.undefined
+  val enabled: js.UndefOr[Input[Boolean]] = js.native
   /**
     * Promotional messages per second that can be sent.
     */
-  val promotionalMessagesPerSecond: js.UndefOr[Input[Double]] = js.undefined
+  val promotionalMessagesPerSecond: js.UndefOr[Input[Double]] = js.native
   /**
     * Sender identifier of your messages.
     */
-  val senderId: js.UndefOr[Input[String]] = js.undefined
+  val senderId: js.UndefOr[Input[String]] = js.native
   /**
     * The Short Code registered with the phone provider.
     */
-  val shortCode: js.UndefOr[Input[String]] = js.undefined
+  val shortCode: js.UndefOr[Input[String]] = js.native
   /**
     * Transactional messages per second that can be sent.
     */
-  val transactionalMessagesPerSecond: js.UndefOr[Input[Double]] = js.undefined
+  val transactionalMessagesPerSecond: js.UndefOr[Input[Double]] = js.native
 }
 
 object SmsChannelState {

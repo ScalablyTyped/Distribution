@@ -10,9 +10,9 @@ noVNC core files for using with node
 | ------------------ | :-------------: |
 | Full name          | novnc-core |
 | Keywords           | - |
-| # releases         | 8 |
+| # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 26541 |
+| # downloads        | 55576 |
 | # stars            | 1 |
 
 ## Links

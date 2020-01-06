@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EncryptionByDefaultState extends js.Object {
   /**
     * Whether or not default EBS encryption is enabled. Valid values are `true` or `false`. Defaults to `true`.
     */
-  val enabled: js.UndefOr[Input[Boolean]] = js.undefined
+  val enabled: js.UndefOr[Input[Boolean]] = js.native
 }
 
 object EncryptionByDefaultState {

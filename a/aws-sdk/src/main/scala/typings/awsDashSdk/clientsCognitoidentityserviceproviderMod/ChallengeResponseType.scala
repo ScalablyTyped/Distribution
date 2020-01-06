@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ChallengeResponseType extends js.Object {
   /**
     * The challenge name
     */
-  var ChallengeName: js.UndefOr[typings.awsDashSdk.clientsCognitoidentityserviceproviderMod.ChallengeName] = js.undefined
+  var ChallengeName: js.UndefOr[typings.awsDashSdk.clientsCognitoidentityserviceproviderMod.ChallengeName] = js.native
   /**
     * The challenge response.
     */
-  var ChallengeResponse: js.UndefOr[typings.awsDashSdk.clientsCognitoidentityserviceproviderMod.ChallengeResponse] = js.undefined
+  var ChallengeResponse: js.UndefOr[typings.awsDashSdk.clientsCognitoidentityserviceproviderMod.ChallengeResponse] = js.native
 }
 
 object ChallengeResponseType {

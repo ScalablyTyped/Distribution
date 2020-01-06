@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LogResourcePolicyState extends js.Object {
   /**
     * Details of the resource policy, including the identity of the principal that is enabled to put logs to this account. This is formatted as a JSON string. Maximum length of 5120 characters.
     */
-  val policyDocument: js.UndefOr[Input[String]] = js.undefined
+  val policyDocument: js.UndefOr[Input[String]] = js.native
   /**
     * Name of the resource policy.
     */
-  val policyName: js.UndefOr[Input[String]] = js.undefined
+  val policyName: js.UndefOr[Input[String]] = js.native
 }
 
 object LogResourcePolicyState {

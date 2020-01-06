@@ -11,7 +11,7 @@ trait IInitializable[T /* <: js.Array[_] */]
     * @param args
     */
   def initialize(
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type T is not an array type */ args: T
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type T is not an array type */ args: T
   ): Unit
 }
 

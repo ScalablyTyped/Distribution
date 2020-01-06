@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jss-plugin-props-sort" : "10.0.0"
+      "jss-plugin-props-sort" : "10.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "jss-plugin-props-sort" : "10.0.0"
+      "jss-plugin-props-sort" : "10.0.3"
     }
   ],
   "compile-devDependencies" : [

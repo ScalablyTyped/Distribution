@@ -10,15 +10,15 @@ A better way to develop React Native Components for your app
 | ------------------ | :-------------: |
 | Full name          | @storybook/react-native |
 | Keywords           | react, react-native, storybook |
-| # releases         | 223 |
-| # dependents       | 10 |
-| # downloads        | 2774770 |
+| # releases         | 381 |
+| # dependents       | 13 |
+| # downloads        | 2358627 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/storybooks/storybook/tree/master/app/react-native)
-- [Bugs](https://github.com/storybooks/storybook/issues)
-- [Repository](https://github.com/storybooks/storybook)
+- [Homepage](https://github.com/storybookjs/storybook/tree/master/app/react-native)
+- [Bugs](https://github.com/storybookjs/storybook/issues)
+- [Repository](https://github.com/storybookjs/storybook)
 - [Npm](https://www.npmjs.com/package/%40storybook%2Freact-native)
     
 

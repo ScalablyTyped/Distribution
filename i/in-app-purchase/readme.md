@@ -10,9 +10,9 @@ In-App-Purchase validation and subscription management for iOS, Android, Amazon,
 | ------------------ | :-------------: |
 | Full name          | in-app-purchase |
 | Keywords           | Apple, iOS, Android, Windows, Amazon, Roku, Purchase, Subscription, App, in-app-purchase, in-app-billing, Validation, IAP |
-| # releases         | 48 |
-| # dependents       | 2 |
-| # downloads        | 323967 |
+| # releases         | 33 |
+| # dependents       | 4 |
+| # downloads        | 461709 |
 | # stars            | 13 |
 
 ## Links

@@ -62,7 +62,7 @@ class Object ()
   /**
     * Returns a Radio.Channel instance using 'channelName'
     */
-  def getChannel(): js.Any = js.native
+  def getChannel(): Channel = js.native
   /**
     * Retrieve an object's attribute either directly from the object, or from
     * the object's this.options, with this.options taking precedence.

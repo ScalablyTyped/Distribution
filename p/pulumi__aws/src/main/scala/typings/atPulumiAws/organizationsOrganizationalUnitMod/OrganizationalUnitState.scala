@@ -6,23 +6,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OrganizationalUnitState extends js.Object {
   /**
     * List of child accounts for this Organizational Unit. Does not return account information for child Organizational Units. All elements have these attributes:
     */
-  val accounts: js.UndefOr[Input[js.Array[Input[OrganizationalUnitAccount]]]] = js.undefined
+  val accounts: js.UndefOr[Input[js.Array[Input[OrganizationalUnitAccount]]]] = js.native
   /**
     * ARN of the organizational unit
     */
-  val arn: js.UndefOr[Input[String]] = js.undefined
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * The name for the organizational unit
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * ID of the parent organizational unit, which may be the root
     */
-  val parentId: js.UndefOr[Input[String]] = js.undefined
+  val parentId: js.UndefOr[Input[String]] = js.native
 }
 
 object OrganizationalUnitState {

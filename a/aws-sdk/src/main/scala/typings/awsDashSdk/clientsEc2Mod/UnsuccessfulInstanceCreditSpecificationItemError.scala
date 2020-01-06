@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UnsuccessfulInstanceCreditSpecificationItemError extends js.Object {
   /**
     * The error code.
     */
-  var Code: js.UndefOr[UnsuccessfulInstanceCreditSpecificationErrorCode] = js.undefined
+  var Code: js.UndefOr[UnsuccessfulInstanceCreditSpecificationErrorCode] = js.native
   /**
     * The applicable error message.
     */
-  var Message: js.UndefOr[String] = js.undefined
+  var Message: js.UndefOr[String] = js.native
 }
 
 object UnsuccessfulInstanceCreditSpecificationItemError {
@@ -20,7 +21,7 @@ object UnsuccessfulInstanceCreditSpecificationItemError {
   def apply(Code: UnsuccessfulInstanceCreditSpecificationErrorCode = null, Message: String = null): UnsuccessfulInstanceCreditSpecificationItemError = {
     val __obj = js.Dynamic.literal()
     if (Code != null) __obj.updateDynamic("Code")(Code.asInstanceOf[js.Any])
-    if (Message != null) __obj.updateDynamic("Message")(Message)
+    if (Message != null) __obj.updateDynamic("Message")(Message.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnsuccessfulInstanceCreditSpecificationItemError]
   }
 }

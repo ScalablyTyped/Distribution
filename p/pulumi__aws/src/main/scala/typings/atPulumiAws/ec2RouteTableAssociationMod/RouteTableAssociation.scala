@@ -22,13 +22,17 @@ class RouteTableAssociation protected () extends CustomResource {
   def this(name: String, args: RouteTableAssociationArgs) = this()
   def this(name: String, args: RouteTableAssociationArgs, opts: CustomResourceOptions) = this()
   /**
+    * The gateway ID to create an association. Conflicts with `subnetId`.
+    */
+  val gatewayId: Output[js.UndefOr[String]] = js.native
+  /**
     * The ID of the routing table to associate with.
     */
   val routeTableId: Output[String] = js.native
   /**
-    * The subnet ID to create an association.
+    * The subnet ID to create an association. Conflicts with `gatewayId`.
     */
-  val subnetId: Output[String] = js.native
+  val subnetId: Output[js.UndefOr[String]] = js.native
 }
 
 /* static members */

@@ -22,13 +22,13 @@ object distUtilsDispatcherMod extends js.Object {
         ]
       ] */](
       methodName: TMethodName,
-      /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type Args<T[TMethodName]> is not an array type */ args: Args[
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Args<T[TMethodName]> is not an array type */ args: Args[
           /* import warning: importer.ImportType#apply Failed type conversion: T[TMethodName] */ js.Any
         ]
     ): DidEndHook[TEndHookArgs] = js.native
     def invokeHookAsync[TMethodName /* <: String */](
       methodName: TMethodName,
-      /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type Args<T[TMethodName]> is not an array type */ args: Args[
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Args<T[TMethodName]> is not an array type */ args: Args[
           /* import warning: importer.ImportType#apply Failed type conversion: T[TMethodName] */ js.Any
         ]
     ): js.Promise[
@@ -44,7 +44,7 @@ object distUtilsDispatcherMod extends js.Object {
       ] = js.native
     def invokeHooksUntilNonNull[TMethodName /* <: String */](
       methodName: TMethodName,
-      /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type Args<T[TMethodName]> is not an array type */ args: Args[
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Args<T[TMethodName]> is not an array type */ args: Args[
           /* import warning: importer.ImportType#apply Failed type conversion: T[TMethodName] */ js.Any
         ]
     ): js.Promise[

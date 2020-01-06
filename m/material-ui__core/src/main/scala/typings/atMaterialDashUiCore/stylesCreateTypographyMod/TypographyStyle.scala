@@ -12,14 +12,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Required<std.Pick<@material-ui/core.@material-ui/core/styles/withStyles.CSSProperties, 'fontFamily' | 'fontSize' | 'fontWeight' | 'color'>> & std.Partial<std.Pick<@material-ui/core.@material-ui/core/styles/withStyles.CSSProperties, 'letterSpacing' | 'lineHeight' | 'textTransform'>> */
+@js.native
 trait TypographyStyle extends js.Object {
-  var color: ColorProperty
-  var fontFamily: FontFamilyProperty
-  var fontSize: FontSizeProperty[Double | String]
-  var fontWeight: FontWeightProperty
-  var letterSpacing: js.UndefOr[LetterSpacingProperty[Double | String]] = js.undefined
-  var lineHeight: js.UndefOr[LineHeightProperty[Double | String]] = js.undefined
-  var textTransform: js.UndefOr[TextTransformProperty] = js.undefined
+  var color: ColorProperty = js.native
+  var fontFamily: FontFamilyProperty = js.native
+  var fontSize: FontSizeProperty[Double | String] = js.native
+  var fontWeight: FontWeightProperty = js.native
+  var letterSpacing: js.UndefOr[LetterSpacingProperty[Double | String]] = js.native
+  var lineHeight: js.UndefOr[LineHeightProperty[Double | String]] = js.native
+  var textTransform: js.UndefOr[TextTransformProperty] = js.native
 }
 
 object TypographyStyle {

@@ -4,10 +4,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ModalManager extends js.Object {
-  def add(modal: js.Any, container: js.Any): Double
-  def isTopModal(modal: js.Any): Boolean
-  def remove(modal: js.Any): Unit
+  def add(modal: js.Any, container: js.Any): Double = js.native
+  def isTopModal(modal: js.Any): Boolean = js.native
+  def remove(modal: js.Any): Unit = js.native
 }
 
 object ModalManager {

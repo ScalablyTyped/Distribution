@@ -10,9 +10,9 @@ Tiny URI parser and builder with chainable API
 | ------------------ | :-------------: |
 | Full name          | lil-uri |
 | Keywords           | lil, tiny, micro, uri, url, parse, schema, host, parser, builder |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 48159 |
+| # downloads        | 98489 |
 | # stars            | 0 |
 
 ## Links

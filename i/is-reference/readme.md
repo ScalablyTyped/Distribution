@@ -10,9 +10,9 @@ Determine whether an AST node is a reference
 | ------------------ | :-------------: |
 | Full name          | is-reference |
 | Keywords           | ast, javascript, estree, acorn |
-| # releases         | 5 |
-| # dependents       | 4 |
-| # downloads        | 2284449 |
+| # releases         | 6 |
+| # dependents       | 10 |
+| # downloads        | 8968792 |
 | # stars            | 0 |
 
 ## Links

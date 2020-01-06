@@ -7,23 +7,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NfsLocationArgs extends js.Object {
   /**
     * Configuration block containing information for connecting to the NFS File System.
     */
-  val onPremConfig: Input[NfsLocationOnPremConfig]
+  val onPremConfig: Input[NfsLocationOnPremConfig] = js.native
   /**
     * Specifies the IP address or DNS name of the NFS server. The DataSync Agent(s) use this to mount the NFS server.
     */
-  val serverHostname: Input[String]
+  val serverHostname: Input[String] = js.native
   /**
     * Subdirectory to perform actions as source or destination. Should be exported by the NFS server.
     */
-  val subdirectory: Input[String]
+  val subdirectory: Input[String] = js.native
   /**
     * Key-value pairs of resource tags to assign to the DataSync Location.
     */
-  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object NfsLocationArgs {

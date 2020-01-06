@@ -4,19 +4,19 @@
 Typings are for version 1.1
 
 ## Library description:
-Parse and stringify JSON file with comments
+Parse and stringify JSON with comments. It will retain comments even after saved!
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | comment-json |
-| Keywords           | comment-json, comments, annotations, json, json-stringify, json-parse, parser |
-| # releases         | 0 |
-| # dependents       | 57 |
-| # downloads        | 968129 |
+| Keywords           | comment-json, comments, annotations, json, json-stringify, json-parse, parser, comments-json, json-comments |
+| # releases         | 12 |
+| # dependents       | 74 |
+| # downloads        | 2382809 |
 | # stars            | 1 |
 
 ## Links
-- [Homepage](https://github.com/kaelzhang/node-comment-json)
+- [Homepage](https://github.com/kaelzhang/node-comment-json#readme)
 - [Bugs](https://github.com/kaelzhang/node-comment-json/issues)
 - [Repository](https://github.com/kaelzhang/node-comment-json)
 - [Npm](https://www.npmjs.com/package/comment-json)

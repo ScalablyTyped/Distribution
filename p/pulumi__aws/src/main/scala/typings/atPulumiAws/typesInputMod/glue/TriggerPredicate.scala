@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TriggerPredicate extends js.Object {
   /**
     * A list of the conditions that determine when the trigger will fire. Defined below.
     */
-  var conditions: Input[js.Array[Input[TriggerPredicateCondition]]]
+  var conditions: Input[js.Array[Input[TriggerPredicateCondition]]] = js.native
   /**
     * How to handle multiple conditions. Defaults to `AND`. Valid values are `AND` or `ANY`.
     */
-  var logical: js.UndefOr[Input[String]] = js.undefined
+  var logical: js.UndefOr[Input[String]] = js.native
 }
 
 object TriggerPredicate {

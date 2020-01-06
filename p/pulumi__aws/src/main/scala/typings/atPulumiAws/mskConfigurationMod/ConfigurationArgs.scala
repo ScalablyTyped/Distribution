@@ -5,23 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ConfigurationArgs extends js.Object {
   /**
     * Description of the configuration.
     */
-  val description: js.UndefOr[Input[String]] = js.undefined
+  val description: js.UndefOr[Input[String]] = js.native
   /**
     * List of Apache Kafka versions which can use this configuration.
     */
-  val kafkaVersions: Input[js.Array[Input[String]]]
+  val kafkaVersions: Input[js.Array[Input[String]]] = js.native
   /**
     * Name of the configuration.
     */
-  val name: js.UndefOr[Input[String]] = js.undefined
+  val name: js.UndefOr[Input[String]] = js.native
   /**
     * Contents of the server.properties file. Supported properties are documented in the [MSK Developer Guide](https://docs.aws.amazon.com/msk/latest/developerguide/msk-configuration-properties.html).
     */
-  val serverProperties: Input[String]
+  val serverProperties: Input[String] = js.native
 }
 
 object ConfigurationArgs {

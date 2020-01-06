@@ -10,9 +10,9 @@ A pure JavaScript XML-RPC client and server.
 | ------------------ | :-------------: |
 | Full name          | xmlrpc |
 | Keywords           | xml-rpc, xmlrpc, xml, rpc |
-| # releases         | 1 |
-| # dependents       | 135 |
-| # downloads        | 366484 |
+| # releases         | 0 |
+| # dependents       | 139 |
+| # downloads        | 409797 |
 | # stars            | 4 |
 
 ## Links

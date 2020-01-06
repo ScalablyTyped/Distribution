@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DistributionOriginCustomHeader extends js.Object {
-  var name: Input[String]
-  var value: Input[String]
+  var name: Input[String] = js.native
+  var value: Input[String] = js.native
 }
 
 object DistributionOriginCustomHeader {

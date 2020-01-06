@@ -12,7 +12,7 @@ Compact binary encoding for geographic data
 | Keywords           | geographic, data, buffer, protobuf, format, compression, geojson, topojson |
 | # releases         | 2 |
 | # dependents       | 13 |
-| # downloads        | 472939 |
+| # downloads        | 543636 |
 | # stars            | 1 |
 
 ## Links

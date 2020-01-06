@@ -1,7 +1,7 @@
 
 # Scala.js typings for prando
 
-Typings are for version 5.1.1
+Typings are for version 5.1.2
 
 ## Library description:
 Deterministic pseudo-random number generator for JavaScript and TypeScript
@@ -11,8 +11,8 @@ Deterministic pseudo-random number generator for JavaScript and TypeScript
 | Full name          | prando |
 | Keywords           | rng, prng, random, random number generator, deterministic, aleatory, seed |
 | # releases         | 9 |
-| # dependents       | 7 |
-| # downloads        | 22319 |
+| # dependents       | 15 |
+| # downloads        | 140747 |
 | # stars            | 0 |
 
 ## Links

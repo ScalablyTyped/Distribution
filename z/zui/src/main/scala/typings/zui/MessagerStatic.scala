@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait MessagerStatic
   extends Instantiable0[Messager]
-     with Instantiable2[/* message */ String, /* option */ MessagerOption, Messager]
      with Instantiable1[(/* option */ MessagerOption) | (/* message */ String), Messager]
+     with Instantiable2[/* message */ String, /* option */ MessagerOption, Messager]
 

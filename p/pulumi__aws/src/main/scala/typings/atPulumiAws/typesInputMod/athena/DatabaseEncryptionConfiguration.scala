@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DatabaseEncryptionConfiguration extends js.Object {
-  var encryptionOption: Input[String]
-  var kmsKey: js.UndefOr[Input[String]] = js.undefined
+  var encryptionOption: Input[String] = js.native
+  var kmsKey: js.UndefOr[Input[String]] = js.native
 }
 
 object DatabaseEncryptionConfiguration {

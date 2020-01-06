@@ -10,9 +10,9 @@ Error Apollo Link for GraphQL Network Stack
 | ------------------ | :-------------: |
 | Full name          | apollo-link-error |
 | Keywords           | - |
-| # releases         | 24 |
-| # dependents       | 122 |
-| # downloads        | 9985430 |
+| # releases         | 20 |
+| # dependents       | 187 |
+| # downloads        | 26343833 |
 | # stars            | 1 |
 
 ## Links

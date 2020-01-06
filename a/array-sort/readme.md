@@ -10,9 +10,9 @@ Fast and powerful array sorting. Sort an array of objects by one or more propert
 | ------------------ | :-------------: |
 | Full name          | array-sort |
 | Keywords           | arr, array, asc, ascend, ascending, desc, descend, descending, dot, element, elements, get, multiple, nested, obj, object, order, ordered, path, prop, properties, property, sort, sorted, sorting |
-| # releases         | 4 |
-| # dependents       | 32 |
-| # downloads        | 16946999 |
+| # releases         | 0 |
+| # dependents       | 41 |
+| # downloads        | 34302130 |
 | # stars            | 0 |
 
 ## Links

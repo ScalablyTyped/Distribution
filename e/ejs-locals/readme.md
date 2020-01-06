@@ -10,8 +10,8 @@ Express 3.x locals for layout, partial and blocks.
 | Full name          | ejs-locals |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 52 |
-| # downloads        | 835259 |
+| # dependents       | 56 |
+| # downloads        | 1063838 |
 | # stars            | 6 |
 
 ## Links

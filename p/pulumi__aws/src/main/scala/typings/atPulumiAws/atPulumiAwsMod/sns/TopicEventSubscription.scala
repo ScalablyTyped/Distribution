@@ -11,20 +11,16 @@ import scala.scalajs.js.annotation._
 @js.native
 class TopicEventSubscription protected ()
   extends typings.atPulumiAws.snsMod.TopicEventSubscription {
+  def this(name: String, topic: typings.atPulumiAws.snsTopicMod.Topic, handler: TopicEventHandler) = this()
   def this(
     name: String,
-    topic: typings.atPulumiAws.snsSnsMixinsMod.snsTopicMod.Topic,
-    handler: TopicEventHandler
-  ) = this()
-  def this(
-    name: String,
-    topic: typings.atPulumiAws.snsSnsMixinsMod.snsTopicMod.Topic,
+    topic: typings.atPulumiAws.snsTopicMod.Topic,
     handler: TopicEventHandler,
     args: TopicEventSubscriptionArgs
   ) = this()
   def this(
     name: String,
-    topic: typings.atPulumiAws.snsSnsMixinsMod.snsTopicMod.Topic,
+    topic: typings.atPulumiAws.snsTopicMod.Topic,
     handler: TopicEventHandler,
     args: TopicEventSubscriptionArgs,
     opts: ComponentResourceOptions

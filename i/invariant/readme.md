@@ -11,8 +11,8 @@ invariant
 | Full name          | invariant |
 | Keywords           | test, invariant |
 | # releases         | 3 |
-| # dependents       | 2268 |
-| # downloads        | 278833676 |
+| # dependents       | 2630 |
+| # downloads        | 380598255 |
 | # stars            | 24 |
 
 ## Links

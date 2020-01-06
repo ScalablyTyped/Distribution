@@ -11,8 +11,8 @@ Get the set npm registry URL
 | Full name          | registry-url |
 | Keywords           | npm, conf, config, npmconf, registry, url, uri, scope |
 | # releases         | 4 |
-| # dependents       | 78 |
-| # downloads        | 119419116 |
+| # dependents       | 85 |
+| # downloads        | 188035300 |
 | # stars            | 4 |
 
 ## Links

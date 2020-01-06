@@ -10,9 +10,9 @@ A WebIDL Parser
 | ------------------ | :-------------: |
 | Full name          | webidl2 |
 | Keywords           | - |
-| # releases         | 47 |
-| # dependents       | 15 |
-| # downloads        | 42012 |
+| # releases         | 58 |
+| # dependents       | 16 |
+| # downloads        | 67249 |
 | # stars            | 0 |
 
 ## Links

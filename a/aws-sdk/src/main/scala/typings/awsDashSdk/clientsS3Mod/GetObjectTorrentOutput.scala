@@ -4,12 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetObjectTorrentOutput extends js.Object {
   /**
-    * 
+    * A Bencoded dictionary as defined by the BitTorrent specification
     */
-  var Body: js.UndefOr[typings.awsDashSdk.clientsS3Mod.Body] = js.undefined
-  var RequestCharged: js.UndefOr[typings.awsDashSdk.clientsS3Mod.RequestCharged] = js.undefined
+  var Body: js.UndefOr[typings.awsDashSdk.clientsS3Mod.Body] = js.native
+  var RequestCharged: js.UndefOr[typings.awsDashSdk.clientsS3Mod.RequestCharged] = js.native
 }
 
 object GetObjectTorrentOutput {

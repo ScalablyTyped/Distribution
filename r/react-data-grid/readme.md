@@ -10,9 +10,9 @@ Excel-like grid component built with React, with editors, keyboard navigation, c
 | ------------------ | :-------------: |
 | Full name          | react-data-grid |
 | Keywords           | react, react-data-grid, data-grid, core |
-| # releases         | 241 |
-| # dependents       | 51 |
-| # downloads        | 2099526 |
+| # releases         | 135 |
+| # dependents       | 69 |
+| # downloads        | 2469201 |
 | # stars            | 12 |
 
 ## Links

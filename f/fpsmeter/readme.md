@@ -11,8 +11,8 @@ Sexy, fast, and themable FPS meter.
 | Full name          | fpsmeter |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 17429 |
+| # dependents       | 4 |
+| # downloads        | 47646 |
 | # stars            | 0 |
 
 ## Links

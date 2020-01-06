@@ -19,6 +19,7 @@ package object clownfaceMod {
   type SingleOrArray[T] = T | js.Array[T]
   type SingleOrArrayOfTerms = SingleOrArray[TermOrClownface]
   type SingleOrArrayOfTermsOrLiterals = SingleOrArray[TermOrLiteral]
+  type SingleOrOneElementArray[T] = T | js.Array[T]
   type TermOrClownface = (Clownface[DatasetCore[Quad], Term]) | Term
   type TermOrLiteral = TermOrClownface | String | Double | Boolean
 }

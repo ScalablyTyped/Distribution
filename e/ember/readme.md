@@ -12,7 +12,7 @@ A framework for creating ambitious web applications.
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 10 |
-| # downloads        | 59588 |
+| # downloads        | 69812 |
 | # stars            | 28 |
 
 ## Links

@@ -5,23 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BrokerUser extends js.Object {
   /**
     * Whether to enable access to the [ActiveMQ Web Console](http://activemq.apache.org/web-console.html) for the user.
     */
-  var consoleAccess: js.UndefOr[Input[Boolean]] = js.undefined
+  var consoleAccess: js.UndefOr[Input[Boolean]] = js.native
   /**
     * The list of groups (20 maximum) to which the ActiveMQ user belongs.
     */
-  var groups: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
+  var groups: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
     * The password of the user. It must be 12 to 250 characters long, at least 4 unique characters, and must not contain commas.
     */
-  var password: Input[String]
+  var password: Input[String] = js.native
   /**
     * The username of the user.
     */
-  var username: Input[String]
+  var username: Input[String] = js.native
 }
 
 object BrokerUser {

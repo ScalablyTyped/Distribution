@@ -10,9 +10,9 @@ deep cloning of objects and arrays
 | ------------------ | :-------------: |
 | Full name          | clone |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 1572 |
-| # downloads        | 396244796 |
+| # releases         | 3 |
+| # dependents       | 1772 |
+| # downloads        | 453518393 |
 | # stars            | 71 |
 
 ## Links

@@ -5,11 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/createPalette.TypeText> */
+@js.native
 trait PartialTypeText extends js.Object {
-  var disabled: js.UndefOr[String] = js.undefined
-  var hint: js.UndefOr[String] = js.undefined
-  var primary: js.UndefOr[String] = js.undefined
-  var secondary: js.UndefOr[String] = js.undefined
+  var disabled: js.UndefOr[String] = js.native
+  var hint: js.UndefOr[String] = js.native
+  var primary: js.UndefOr[String] = js.native
+  var secondary: js.UndefOr[String] = js.native
 }
 
 object PartialTypeText {

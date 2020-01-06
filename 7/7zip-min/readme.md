@@ -10,9 +10,9 @@ Standalone cross-platform zip/unzip with 7za
 | ------------------ | :-------------: |
 | Full name          | 7zip-min |
 | Keywords           | 7z, 7zip, 7-zip, 7za, compress, decompress, extract, lzma, zip, gzip, bzip2, tar |
-| # releases         | 6 |
+| # releases         | 8 |
 | # dependents       | 1 |
-| # downloads        | 2573 |
+| # downloads        | 2913 |
 | # stars            | 0 |
 
 ## Links

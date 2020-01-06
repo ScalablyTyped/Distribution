@@ -10,8 +10,8 @@ Bindings to Google's Closure Compiler
 | Full name          | closure-compiler |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 14 |
-| # downloads        | 846235 |
+| # dependents       | 15 |
+| # downloads        | 804477 |
 | # stars            | 9 |
 
 ## Links

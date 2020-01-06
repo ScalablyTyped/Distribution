@@ -4,15 +4,15 @@
 Typings are for version 4.6
 
 ## Library description:
-ZeroMQ for node.js
+Next-generation ZeroMQ bindings for Node.js
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | zeromq |
-| Keywords           | zeromq, zmq, 0mq, ømq, libzmq, native, binding, addon |
-| # releases         | 11 |
-| # dependents       | 149 |
-| # downloads        | 650269 |
+| Keywords           | zeromq, zmq, 0mq, ømq, libzmq, zmtp, message, messaging, queue, async, sockets, native, binding, addon, napi |
+| # releases         | 9 |
+| # dependents       | 192 |
+| # downloads        | 825168 |
 | # stars            | 7 |
 
 ## Links

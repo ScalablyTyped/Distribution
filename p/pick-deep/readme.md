@@ -11,8 +11,8 @@ Creates an object composed of the picked object properties from a nested object 
 | Full name          | pick-deep |
 | Keywords           | obj, object, prop, property, dot, path, pick, deep, pickDeep, pick-deep, access, notation, dotty, key, nested, paths, properties, props, segment, value, values, custom, separator, small, fast |
 | # releases         | 3 |
-| # dependents       | 2 |
-| # downloads        | 14327 |
+| # dependents       | 3 |
+| # downloads        | 21599 |
 | # stars            | 0 |
 
 ## Links

@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GroupMixedInstancesPolicyLaunchTemplate extends js.Object {
   /**
     * Nested argument defines the Launch Template. Defined below.
     */
-  var launchTemplateSpecification: Input[GroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecification]
+  var launchTemplateSpecification: Input[GroupMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecification] = js.native
   /**
     * List of nested arguments provides the ability to specify multiple instance types. This will override the same parameter in the launch template. For on-demand instances, Auto Scaling considers the order of preference of instance types to launch based on the order specified in the overrides list. Defined below.
     */
-  var overrides: js.UndefOr[Input[js.Array[Input[GroupMixedInstancesPolicyLaunchTemplateOverride]]]] = js.undefined
+  var overrides: js.UndefOr[Input[js.Array[Input[GroupMixedInstancesPolicyLaunchTemplateOverride]]]] = js.native
 }
 
 object GroupMixedInstancesPolicyLaunchTemplate {

@@ -10,9 +10,9 @@ A tiny warning function
 | ------------------ | :-------------: |
 | Full name          | tiny-warning |
 | Keywords           | warning, warn |
-| # releases         | 8 |
-| # dependents       | 69 |
-| # downloads        | 17983778 |
+| # releases         | 9 |
+| # dependents       | 114 |
+| # downloads        | 66753606 |
 | # stars            | 1 |
 
 ## Links

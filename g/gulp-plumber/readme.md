@@ -10,8 +10,8 @@ Prevent pipe breaking caused by errors from gulp plugins
 | Full name          | gulp-plumber |
 | Keywords           | gulpplugin |
 | # releases         | 3 |
-| # dependents       | 883 |
-| # downloads        | 10058662 |
+| # dependents       | 950 |
+| # downloads        | 11751622 |
 | # stars            | 211 |
 
 ## Links

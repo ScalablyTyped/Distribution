@@ -10,9 +10,9 @@ A json rpc implementation over streams
 | ------------------ | :-------------: |
 | Full name          | vscode-jsonrpc |
 | Keywords           | - |
-| # releases         | 18 |
-| # dependents       | 51 |
-| # downloads        | 4267900 |
+| # releases         | 14 |
+| # dependents       | 65 |
+| # downloads        | 10616693 |
 | # stars            | 1 |
 
 ## Links

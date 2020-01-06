@@ -12,7 +12,7 @@ AMQP RPC driver for node.js
 | Keywords           | amqp, rpc |
 | # releases         | 1 |
 | # dependents       | 10 |
-| # downloads        | 3521 |
+| # downloads        | 2845 |
 | # stars            | 1 |
 
 ## Links

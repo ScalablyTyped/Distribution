@@ -4,31 +4,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NetworkInterfacePermission extends js.Object {
   /**
     * The AWS account ID.
     */
-  var AwsAccountId: js.UndefOr[String] = js.undefined
+  var AwsAccountId: js.UndefOr[String] = js.native
   /**
     * The AWS service.
     */
-  var AwsService: js.UndefOr[String] = js.undefined
+  var AwsService: js.UndefOr[String] = js.native
   /**
     * The ID of the network interface.
     */
-  var NetworkInterfaceId: js.UndefOr[String] = js.undefined
+  var NetworkInterfaceId: js.UndefOr[String] = js.native
   /**
     * The ID of the network interface permission.
     */
-  var NetworkInterfacePermissionId: js.UndefOr[String] = js.undefined
+  var NetworkInterfacePermissionId: js.UndefOr[String] = js.native
   /**
     * The type of permission.
     */
-  var Permission: js.UndefOr[InterfacePermissionType] = js.undefined
+  var Permission: js.UndefOr[InterfacePermissionType] = js.native
   /**
     * Information about the state of the permission.
     */
-  var PermissionState: js.UndefOr[NetworkInterfacePermissionState] = js.undefined
+  var PermissionState: js.UndefOr[NetworkInterfacePermissionState] = js.native
 }
 
 object NetworkInterfacePermission {
@@ -42,12 +43,12 @@ object NetworkInterfacePermission {
     PermissionState: NetworkInterfacePermissionState = null
   ): NetworkInterfacePermission = {
     val __obj = js.Dynamic.literal()
-    if (AwsAccountId != null) __obj.updateDynamic("AwsAccountId")(AwsAccountId)
-    if (AwsService != null) __obj.updateDynamic("AwsService")(AwsService)
-    if (NetworkInterfaceId != null) __obj.updateDynamic("NetworkInterfaceId")(NetworkInterfaceId)
-    if (NetworkInterfacePermissionId != null) __obj.updateDynamic("NetworkInterfacePermissionId")(NetworkInterfacePermissionId)
+    if (AwsAccountId != null) __obj.updateDynamic("AwsAccountId")(AwsAccountId.asInstanceOf[js.Any])
+    if (AwsService != null) __obj.updateDynamic("AwsService")(AwsService.asInstanceOf[js.Any])
+    if (NetworkInterfaceId != null) __obj.updateDynamic("NetworkInterfaceId")(NetworkInterfaceId.asInstanceOf[js.Any])
+    if (NetworkInterfacePermissionId != null) __obj.updateDynamic("NetworkInterfacePermissionId")(NetworkInterfacePermissionId.asInstanceOf[js.Any])
     if (Permission != null) __obj.updateDynamic("Permission")(Permission.asInstanceOf[js.Any])
-    if (PermissionState != null) __obj.updateDynamic("PermissionState")(PermissionState)
+    if (PermissionState != null) __obj.updateDynamic("PermissionState")(PermissionState.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkInterfacePermission]
   }
 }

@@ -11,8 +11,8 @@ Merge multiple streams into one stream in sequence or parallel.
 | Full name          | merge2 |
 | Keywords           | merge2, multiple, sequence, parallel, merge, stream, merge stream, sync |
 | # releases         | 6 |
-| # dependents       | 224 |
-| # downloads        | 75288383 |
+| # dependents       | 270 |
+| # downloads        | 185336808 |
 | # stars            | 10 |
 
 ## Links

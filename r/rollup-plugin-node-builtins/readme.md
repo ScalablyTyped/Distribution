@@ -10,9 +10,9 @@ use node builtins in browser with rollup
 | ------------------ | :-------------: |
 | Full name          | rollup-plugin-node-builtins |
 | Keywords           | rollup-plugin |
-| # releases         | 3 |
-| # dependents       | 90 |
-| # downloads        | 1096713 |
+| # releases         | 1 |
+| # dependents       | 131 |
+| # downloads        | 1291218 |
 | # stars            | 1 |
 
 ## Links

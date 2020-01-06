@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^
   extends TopLevel[
-      Instantiable0[StructType] with (Instantiable1[/* fields */ js.Object, StructType]) with (Instantiable2[/* fields */ js.Object, /* opt */ js.Object, StructType]) with (Instantiable1[/* fields */ js.Array[js.Any], StructType])
+      Instantiable0[StructType] with (Instantiable1[/* fields */ js.Array[js.Any], StructType]) with (Instantiable1[/* fields */ js.Object, StructType]) with (Instantiable2[/* fields */ js.Object, /* opt */ js.Object, StructType])
     ] {
   def apply(): StructType = js.native
   def apply(fields: js.Array[_]): StructType = js.native

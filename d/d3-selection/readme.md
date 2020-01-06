@@ -11,8 +11,8 @@ Data-driven DOM manipulation: select elements and join them to data.
 | Full name          | d3-selection |
 | Keywords           | d3, d3-module, dom, selection, data-join |
 | # releases         | 8 |
-| # dependents       | 450 |
-| # downloads        | 18869811 |
+| # dependents       | 577 |
+| # downloads        | 30583559 |
 | # stars            | 4 |
 
 ## Links

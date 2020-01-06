@@ -5,10 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AnalyticsApplicationReferenceDataSourcesSchema extends js.Object {
-  var recordColumns: Input[js.Array[Input[AnalyticsApplicationReferenceDataSourcesSchemaRecordColumn]]]
-  var recordEncoding: js.UndefOr[Input[String]] = js.undefined
-  var recordFormat: Input[AnalyticsApplicationReferenceDataSourcesSchemaRecordFormat]
+  var recordColumns: Input[js.Array[Input[AnalyticsApplicationReferenceDataSourcesSchemaRecordColumn]]] = js.native
+  var recordEncoding: js.UndefOr[Input[String]] = js.native
+  var recordFormat: Input[AnalyticsApplicationReferenceDataSourcesSchemaRecordFormat] = js.native
 }
 
 object AnalyticsApplicationReferenceDataSourcesSchema {

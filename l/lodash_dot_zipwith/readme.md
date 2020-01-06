@@ -10,9 +10,9 @@ The lodash method `_.zipWith` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.zipwith |
 | Keywords           | lodash-modularized, zipwith |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 9 |
-| # downloads        | 62615 |
+| # downloads        | 82187 |
 | # stars            | 1 |
 
 ## Links

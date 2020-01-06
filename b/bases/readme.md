@@ -10,9 +10,9 @@ Utility for converting numbers to/from different bases/alphabets.
 | ------------------ | :-------------: |
 | Full name          | bases |
 | Keywords           | alphabet, base, base-36, base-58, base-62 |
-| # releases         | 1 |
-| # dependents       | 22 |
-| # downloads        | 561537 |
+| # releases         | 0 |
+| # dependents       | 28 |
+| # downloads        | 649500 |
 | # stars            | 4 |
 
 ## Links

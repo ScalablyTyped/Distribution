@@ -10,9 +10,9 @@ Cascading grid layout library
 | ------------------ | :-------------: |
 | Full name          | masonry-layout |
 | Keywords           | DOM, browser, grid, layout, outlayer |
-| # releases         | 4 |
-| # dependents       | 69 |
-| # downloads        | 2585919 |
+| # releases         | 2 |
+| # dependents       | 114 |
+| # downloads        | 3542428 |
 | # stars            | 17 |
 
 ## Links

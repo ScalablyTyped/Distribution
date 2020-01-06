@@ -10,9 +10,9 @@ Hashing made simple. Get the hash of a buffer/string/stream/file.
 | ------------------ | :-------------: |
 | Full name          | hasha |
 | Keywords           | hash, hashing, crypto, hex, base64, md5, sha1, sha256, sha512, sum, stream, file, fs, buffer, string, text, rev, revving, simple, easy |
-| # releases         | 3 |
-| # dependents       | 163 |
-| # downloads        | 37980158 |
+| # releases         | 5 |
+| # dependents       | 229 |
+| # downloads        | 59547020 |
 | # stars            | 16 |
 
 ## Links

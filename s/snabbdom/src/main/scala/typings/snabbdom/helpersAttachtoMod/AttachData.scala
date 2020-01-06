@@ -8,8 +8,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AttachData
-  extends /* key */ StringDictionary[js.Any]
-     with /* i */ NumberDictionary[js.Any] {
+  extends /* i */ NumberDictionary[js.Any]
+     with /* key */ StringDictionary[js.Any] {
   var placeholder: js.UndefOr[js.Any] = js.undefined
   var real: js.UndefOr[Node] = js.undefined
 }

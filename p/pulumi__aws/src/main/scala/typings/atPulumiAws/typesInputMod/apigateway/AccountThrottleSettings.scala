@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AccountThrottleSettings extends js.Object {
   /**
     * The absolute maximum number of times API Gateway allows the API to be called per second (RPS).
     */
-  var burstLimit: js.UndefOr[Input[Double]] = js.undefined
+  var burstLimit: js.UndefOr[Input[Double]] = js.native
   /**
     * The number of times API Gateway allows the API to be called per second on average (RPS).
     */
-  var rateLimit: js.UndefOr[Input[Double]] = js.undefined
+  var rateLimit: js.UndefOr[Input[Double]] = js.native
 }
 
 object AccountThrottleSettings {

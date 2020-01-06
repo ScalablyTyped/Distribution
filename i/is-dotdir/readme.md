@@ -10,9 +10,9 @@ Returns true if a path is a dot-directory.
 | ------------------ | :-------------: |
 | Full name          | is-dotdir |
 | Keywords           | dotdir, is |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 474839 |
+| # downloads        | 545119 |
 | # stars            | 0 |
 
 ## Links

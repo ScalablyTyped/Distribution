@@ -10,9 +10,9 @@ Copies non-react specific statics from a child component to a parent component
 | ------------------ | :-------------: |
 | Full name          | hoist-non-react-statics |
 | Keywords           | react |
-| # releases         | 23 |
-| # dependents       | 1340 |
-| # downloads        | 200765256 |
+| # releases         | 16 |
+| # dependents       | 1693 |
+| # downloads        | 331587995 |
 | # stars            | 10 |
 
 ## Links

@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/s3", "Bucket")
 @js.native
 class Bucket protected ()
-  extends typings.atPulumiAws.s3S3MixinsMod.s3BucketMod.Bucket {
+  extends typings.atPulumiAws.s3BucketMod.Bucket {
   /**
     * Create a Bucket resource with the given unique name, arguments, and options.
     *
@@ -37,13 +37,13 @@ object Bucket extends js.Object {
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
     */
-  def get(name: String, id: Input[ID]): typings.atPulumiAws.s3S3MixinsMod.s3BucketMod.Bucket = js.native
-  def get(name: String, id: Input[ID], state: BucketState): typings.atPulumiAws.s3S3MixinsMod.s3BucketMod.Bucket = js.native
-  def get(name: String, id: Input[ID], state: BucketState, opts: CustomResourceOptions): typings.atPulumiAws.s3S3MixinsMod.s3BucketMod.Bucket = js.native
+  def get(name: String, id: Input[ID]): typings.atPulumiAws.s3BucketMod.Bucket = js.native
+  def get(name: String, id: Input[ID], state: BucketState): typings.atPulumiAws.s3BucketMod.Bucket = js.native
+  def get(name: String, id: Input[ID], state: BucketState, opts: CustomResourceOptions): typings.atPulumiAws.s3BucketMod.Bucket = js.native
   /**
     * Returns true if the given object is an instance of Bucket.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
-  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/s3Mixins.@pulumi/aws/s3/bucket.Bucket */ Boolean = js.native
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/bucket.Bucket */ Boolean = js.native
 }
 

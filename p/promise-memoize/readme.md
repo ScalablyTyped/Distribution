@@ -10,9 +10,9 @@ Memoize promise-returning functions. Includes cache expire and prefetch.
 | ------------------ | :-------------: |
 | Full name          | promise-memoize |
 | Keywords           | promise, memoize, cache |
-| # releases         | 2 |
+| # releases         | 1 |
 | # dependents       | 8 |
-| # downloads        | 164485 |
+| # downloads        | 235202 |
 | # stars            | 2 |
 
 ## Links

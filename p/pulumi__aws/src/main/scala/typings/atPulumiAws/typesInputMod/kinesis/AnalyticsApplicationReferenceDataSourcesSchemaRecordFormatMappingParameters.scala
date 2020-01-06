@@ -5,13 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParameters extends js.Object {
   var csv: js.UndefOr[
     Input[AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersCsv]
-  ] = js.undefined
+  ] = js.native
   var json: js.UndefOr[
     Input[AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParametersJson]
-  ] = js.undefined
+  ] = js.native
 }
 
 object AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParameters {

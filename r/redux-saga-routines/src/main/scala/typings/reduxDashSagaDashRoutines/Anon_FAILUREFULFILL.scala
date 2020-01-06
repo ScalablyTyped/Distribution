@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_FAILUREFULFILL[TSuccessMetaCreator, TTriggerMetaCreator, TFailureMetaCreator, TFulfillMetaCreator, TRequestMetaCreator] extends js.Object {
+trait Anon_FAILUREFULFILL[TTriggerMetaCreator, TRequestMetaCreator, TSuccessMetaCreator, TFailureMetaCreator, TFulfillMetaCreator] extends js.Object {
   var FAILURE: js.UndefOr[TFailureMetaCreator] = js.undefined
   var FULFILL: js.UndefOr[TFulfillMetaCreator] = js.undefined
   var REQUEST: js.UndefOr[TRequestMetaCreator] = js.undefined
@@ -19,7 +19,7 @@ trait Anon_FAILUREFULFILL[TSuccessMetaCreator, TTriggerMetaCreator, TFailureMeta
 
 object Anon_FAILUREFULFILL {
   @scala.inline
-  def apply[TSuccessMetaCreator, TTriggerMetaCreator, TFailureMetaCreator, TFulfillMetaCreator, TRequestMetaCreator](
+  def apply[TTriggerMetaCreator, TRequestMetaCreator, TSuccessMetaCreator, TFailureMetaCreator, TFulfillMetaCreator](
     FAILURE: TFailureMetaCreator = null,
     FULFILL: TFulfillMetaCreator = null,
     REQUEST: TRequestMetaCreator = null,
@@ -31,11 +31,11 @@ object Anon_FAILUREFULFILL {
     success: TSuccessMetaCreator = null,
     trigger: TTriggerMetaCreator = null
   ): Anon_FAILUREFULFILL[
-    TSuccessMetaCreator, 
     TTriggerMetaCreator, 
+    TRequestMetaCreator, 
+    TSuccessMetaCreator, 
     TFailureMetaCreator, 
-    TFulfillMetaCreator, 
-    TRequestMetaCreator
+    TFulfillMetaCreator
   ] = {
     val __obj = js.Dynamic.literal()
     if (FAILURE != null) __obj.updateDynamic("FAILURE")(FAILURE.asInstanceOf[js.Any])
@@ -49,11 +49,11 @@ object Anon_FAILUREFULFILL {
     if (success != null) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
     if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FAILUREFULFILL[
-  TSuccessMetaCreator, 
   TTriggerMetaCreator, 
+  TRequestMetaCreator, 
+  TSuccessMetaCreator, 
   TFailureMetaCreator, 
-  TFulfillMetaCreator, 
-  TRequestMetaCreator]]
+  TFulfillMetaCreator]]
   }
 }
 
