@@ -9,10 +9,12 @@ import scala.scalajs.js.annotation._
 trait Options extends js.Object {
   var condition: js.UndefOr[Condition] = js.undefined
   var deleteCondition: js.UndefOr[Condition] = js.undefined
-  var features: js.UndefOr[typings.ol.collectionMod.default[typings.ol.featureMod.default]] = js.undefined
+  var features: js.UndefOr[
+    typings.ol.collectionMod.default[typings.ol.featureMod.default[typings.ol.geomGeometryMod.default]]
+  ] = js.undefined
   var insertVertexCondition: js.UndefOr[Condition] = js.undefined
   var pixelTolerance: js.UndefOr[Double] = js.undefined
-  var source: js.UndefOr[typings.ol.sourceVectorMod.default] = js.undefined
+  var source: js.UndefOr[typings.ol.sourceVectorMod.default[typings.ol.geomGeometryMod.default]] = js.undefined
   var style: js.UndefOr[StyleLike] = js.undefined
   var wrapX: js.UndefOr[Boolean] = js.undefined
 }
@@ -22,10 +24,10 @@ object Options {
   def apply(
     condition: Condition = null,
     deleteCondition: Condition = null,
-    features: typings.ol.collectionMod.default[typings.ol.featureMod.default] = null,
+    features: typings.ol.collectionMod.default[typings.ol.featureMod.default[typings.ol.geomGeometryMod.default]] = null,
     insertVertexCondition: Condition = null,
     pixelTolerance: Int | Double = null,
-    source: typings.ol.sourceVectorMod.default = null,
+    source: typings.ol.sourceVectorMod.default[typings.ol.geomGeometryMod.default] = null,
     style: StyleLike = null,
     wrapX: js.UndefOr[Boolean] = js.undefined
   ): Options = {

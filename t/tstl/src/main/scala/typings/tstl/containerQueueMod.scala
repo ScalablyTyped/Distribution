@@ -1,8 +1,6 @@
 package typings.tstl
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.tstl.baseContainerAdaptorContainerMod.AdaptorContainer
-import typings.tstl.containerListMod.List
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,11 +8,12 @@ import scala.scalajs.js.annotation._
 @JSImport("tstl/container/Queue", JSImport.Namespace)
 @js.native
 object containerQueueMod extends js.Object {
-  @js.native
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AdaptorContainer<T, List<T>, Queue<T>> * / any */ @js.native
   /**
     * Default Constructor.
     */
-  class Queue[T] () extends AdaptorContainer[T, List[T], Queue[T]] {
+  class Queue[T] () extends js.Object {
     /**
       * Copy Constructor.
       *
@@ -33,6 +32,10 @@ object containerQueueMod extends js.Object {
       * @return The first element.
       */
     def front(): T = js.native
+    /**
+      * @inheritDoc
+      */
+    def pop(): Unit = js.native
   }
   
   val queue: Instantiable0[Queue[js.Object]] = js.native

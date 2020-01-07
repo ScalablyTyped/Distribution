@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("ol/source", "TileDebug")
 @js.native
-class TileDebug protected () extends default {
-  def this(options: Options) = this()
+class TileDebug () extends default {
+  def this(opt_options: Options) = this()
 }
 

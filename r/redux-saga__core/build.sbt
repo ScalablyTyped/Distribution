@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "redux-saga__core"
-version := "1.1.3-8f5b0e"
+version := "1.1.3-af4913"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "13.1-dt-20200103Z-b9f880",
+  "org.scalablytyped" %%% "node" % "13.1-dt-20200103Z-51871a",
   "org.scalablytyped" %%% "redux" % "4.0.5-eabae9",
   "org.scalablytyped" %%% "std" % "3.7-b6d959",
   "org.scalablytyped" %%% "typescript-compare" % "0.0.2-bf0d3b",

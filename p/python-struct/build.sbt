@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "python-struct"
-version := "1.0-dt-20190812Z-896827"
+version := "1.0-dt-20190812Z-cb314f"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "long" % "4.0.0-dt-20190322Z-f5dfe8",
-  "org.scalablytyped" %%% "node" % "13.1-dt-20200103Z-b9f880",
+  "org.scalablytyped" %%% "node" % "13.1-dt-20200103Z-51871a",
   "org.scalablytyped" %%% "std" % "3.7-b6d959")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

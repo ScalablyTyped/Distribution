@@ -26,6 +26,9 @@ object qrcodeDashSvgStrings {
   @js.native
   sealed trait svg extends js.Object
   
+  @js.native
+  sealed trait `svg-viewbox` extends js.Object
+  
   @scala.inline
   def H: H = "H".asInstanceOf[H]
   @scala.inline
@@ -40,5 +43,7 @@ object qrcodeDashSvgStrings {
   def none: none = "none".asInstanceOf[none]
   @scala.inline
   def svg: svg = "svg".asInstanceOf[svg]
+  @scala.inline
+  def `svg-viewbox`: `svg-viewbox` = "svg-viewbox".asInstanceOf[`svg-viewbox`]
 }
 

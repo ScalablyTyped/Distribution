@@ -9,10 +9,8 @@ import scala.scalajs.js.annotation._
 trait RBush[T] extends js.Object {
   def clear(): Unit = js.native
   def concat(rbush: RBush[T]): Unit = js.native
-  def forEach[S](callback: js.ThisFunction1[/* this */ S, /* p0 */ T, _]): js.Any = js.native
-  def forEach[S](callback: js.ThisFunction1[/* this */ S, /* p0 */ T, _], opt_this: S): js.Any = js.native
-  def forEachInExtent[S](extent: Extent, callback: js.ThisFunction1[/* this */ S, /* p0 */ T, _]): js.Any = js.native
-  def forEachInExtent[S](extent: Extent, callback: js.ThisFunction1[/* this */ S, /* p0 */ T, _], opt_this: S): js.Any = js.native
+  def forEach(callback: js.Function1[/* p0 */ T, _]): js.Any = js.native
+  def forEachInExtent(extent: Extent, callback: js.Function1[/* p0 */ T, _]): js.Any = js.native
   def getAll(): js.Array[T] = js.native
   def getExtent(): Extent = js.native
   def getExtent(opt_extent: Extent): Extent = js.native

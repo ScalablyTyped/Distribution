@@ -1,0 +1,28 @@
+package typings.googleapis.buildSrcApisToolresultsV1beta3Mod.toolresults_v1beta3
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+  * Encapsulates the metadata for basic sample series represented by a line
+  * chart
+  */
+@js.native
+trait Schema$BasicPerfSampleSeries extends js.Object {
+  var perfMetricType: js.UndefOr[String] = js.native
+  var perfUnit: js.UndefOr[String] = js.native
+  var sampleSeriesLabel: js.UndefOr[String] = js.native
+}
+
+object Schema$BasicPerfSampleSeries {
+  @scala.inline
+  def apply(perfMetricType: String = null, perfUnit: String = null, sampleSeriesLabel: String = null): Schema$BasicPerfSampleSeries = {
+    val __obj = js.Dynamic.literal()
+    if (perfMetricType != null) __obj.updateDynamic("perfMetricType")(perfMetricType.asInstanceOf[js.Any])
+    if (perfUnit != null) __obj.updateDynamic("perfUnit")(perfUnit.asInstanceOf[js.Any])
+    if (sampleSeriesLabel != null) __obj.updateDynamic("sampleSeriesLabel")(sampleSeriesLabel.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Schema$BasicPerfSampleSeries]
+  }
+}
+

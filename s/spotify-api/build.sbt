@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "spotify-api"
-version := "0.0-unknown-dt-20190530Z-ec95b9"
+version := "0.0-unknown-dt-20200107Z-96c593"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

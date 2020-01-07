@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__client-s3-node"
-version := "0.1.0-preview.2-90bc3a"
+version := "0.1.0-preview.2-e24a66"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "aws-sdk__middleware-stack" % "0.1.0-preview.2-80d0d3",
   "org.scalablytyped" %%% "aws-sdk__types" % "0.1.0-preview.1-4506f1",
-  "org.scalablytyped" %%% "node" % "13.1-dt-20200103Z-b9f880",
+  "org.scalablytyped" %%% "node" % "13.1-dt-20200103Z-51871a",
   "org.scalablytyped" %%% "std" % "3.7-b6d959")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

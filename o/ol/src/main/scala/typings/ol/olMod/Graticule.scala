@@ -1,7 +1,7 @@
 package typings.ol.olMod
 
-import typings.ol.graticuleMod.Options
-import typings.ol.graticuleMod.default
+import typings.ol.layerGraticuleMod.Options
+import typings.ol.layerGraticuleMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

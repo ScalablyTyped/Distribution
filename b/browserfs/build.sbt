@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "browserfs"
-version := "1.4.3-e827c9"
+version := "1.4.3-70db73"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "dropboxjs" % "0.0-unknown-dt-20190322Z-d1ab40",
   "org.scalablytyped" %%% "filesystem" % "0.0-unknown-dt-20190322Z-ddc8db",
   "org.scalablytyped" %%% "filewriter" % "0.0-unknown-dt-20190322Z-fe6ad2",
-  "org.scalablytyped" %%% "node" % "13.1-dt-20200103Z-b9f880",
+  "org.scalablytyped" %%% "node" % "13.1-dt-20200103Z-51871a",
   "org.scalablytyped" %%% "std" % "3.7-b6d959")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("ol/format/Feature", JSImport.Default)
 @js.native
-class default () extends FeatureFormat
+abstract class default () extends FeatureFormat
 

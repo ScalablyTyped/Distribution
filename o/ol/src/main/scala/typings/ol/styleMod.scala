@@ -3,8 +3,8 @@ package typings.ol
 import typings.ol.colorMod.Color
 import typings.ol.imageStateMod.ImageState
 import typings.ol.sizeMod.Size
-import typings.ol.styleAtlasManagerMod.Options
-import typings.ol.styleAtlasMod.default
+import typings.ol.styleCircleMod.Options
+import typings.ol.styleCircleMod.default
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import scala.scalajs.js
@@ -15,20 +15,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object styleMod extends js.Object {
   @js.native
-  class Atlas protected () extends default {
-    def this(size: Double, space: Double) = this()
-  }
-  
-  @js.native
-  class AtlasManager ()
-    extends typings.ol.styleAtlasManagerMod.default {
+  class Circle () extends default {
     def this(opt_options: Options) = this()
-  }
-  
-  @js.native
-  class Circle ()
-    extends typings.ol.styleCircleMod.default {
-    def this(opt_options: typings.ol.styleCircleMod.Options) = this()
   }
   
   @js.native
@@ -81,7 +69,7 @@ object styleMod extends js.Object {
   }
   
   @js.native
-  class Image protected ()
+  abstract class Image protected ()
     extends typings.ol.styleImageMod.default {
     def this(options: typings.ol.styleImageMod.Options) = this()
   }

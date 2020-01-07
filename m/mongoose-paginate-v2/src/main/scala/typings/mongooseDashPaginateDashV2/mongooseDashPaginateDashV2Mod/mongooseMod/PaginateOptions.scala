@@ -13,6 +13,8 @@ trait PaginateOptions extends js.Object {
   var limit: js.UndefOr[Double] = js.undefined
   var offset: js.UndefOr[Double] = js.undefined
   var page: js.UndefOr[Double] = js.undefined
+  /* If pagination is set to `false`, it will return all docs without adding limit condition. (Default: `true`) */
+  var pagination: js.UndefOr[Boolean] = js.undefined
   /* tslint:disable-next-line: ban-types */
   var populate: js.UndefOr[(js.Array[js.Object | String]) | js.Object | String | QueryPopulateOptions] = js.undefined
   var read: js.UndefOr[ReadOptions] = js.undefined
@@ -32,6 +34,7 @@ object PaginateOptions {
     limit: Int | Double = null,
     offset: Int | Double = null,
     page: Int | Double = null,
+    pagination: js.UndefOr[Boolean] = js.undefined,
     populate: (js.Array[js.Object | String]) | js.Object | String | QueryPopulateOptions = null,
     read: ReadOptions = null,
     select: js.Object | String = null,
@@ -45,6 +48,7 @@ object PaginateOptions {
     if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
+    if (!js.isUndefined(pagination)) __obj.updateDynamic("pagination")(pagination.asInstanceOf[js.Any])
     if (populate != null) __obj.updateDynamic("populate")(populate.asInstanceOf[js.Any])
     if (read != null) __obj.updateDynamic("read")(read.asInstanceOf[js.Any])
     if (select != null) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])

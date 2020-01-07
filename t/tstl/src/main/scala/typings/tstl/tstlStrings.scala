@@ -27,9 +27,6 @@ object tstlStrings {
   sealed trait plus extends js.Object
   
   @js.native
-  sealed trait remove_if extends js.Object
-  
-  @js.native
   sealed trait try_lock extends js.Object
   
   @js.native
@@ -67,8 +64,6 @@ object tstlStrings {
   def multiplies: multiplies = "multiplies".asInstanceOf[multiplies]
   @scala.inline
   def plus: plus = "plus".asInstanceOf[plus]
-  @scala.inline
-  def remove_if: remove_if = "remove_if".asInstanceOf[remove_if]
   @scala.inline
   def try_lock: try_lock = "try_lock".asInstanceOf[try_lock]
   @scala.inline

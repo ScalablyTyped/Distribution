@@ -8,9 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object formatWMSCapabilitiesMod extends js.Object {
   @js.native
-  class default ()
+  trait WMSCapabilities
     extends typings.ol.formatXMLMod.default
   
-  type WMSCapabilities = typings.ol.formatXMLMod.default
+  @js.native
+  class default () extends WMSCapabilities
+  
 }
 

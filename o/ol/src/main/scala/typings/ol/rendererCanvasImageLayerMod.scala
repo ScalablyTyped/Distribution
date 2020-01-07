@@ -9,15 +9,13 @@ import scala.scalajs.js.annotation._
 object rendererCanvasImageLayerMod extends js.Object {
   @js.native
   trait CanvasImageLayerRenderer
-    extends typings.ol.rendererCanvasIntermediateCanvasMod.default {
-    def create(mapRenderer: typings.ol.rendererMapMod.default, layer: typings.ol.layerLayerMod.default): CanvasImageLayerRenderer = js.native
-    def handles(layer: typings.ol.layerLayerMod.default): Boolean = js.native
+    extends typings.ol.rendererCanvasLayerMod.default[typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default]] {
+    var image_ : typings.ol.imageBaseMod.default = js.native
   }
   
   @js.native
   class default protected () extends CanvasImageLayerRenderer {
     def this(imageLayer: typings.ol.layerImageMod.default) = this()
-    def this(imageLayer: typings.ol.layerVectorMod.default) = this()
   }
   
 }

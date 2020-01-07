@@ -9,6 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends IconImageCache {
   /* CompleteClass */
+  override def canExpireCache(): Boolean = js.native
+  /* CompleteClass */
   override def clear(): Unit = js.native
   /* CompleteClass */
   override def expire(): Unit = js.native

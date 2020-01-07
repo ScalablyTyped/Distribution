@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "pulumi__aws"
-version := "1.17.0-40258a"
+version := "1.17.0-e6b8c7"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "aws-sdk" % "2.597.0-d986af",
+  "org.scalablytyped" %%% "aws-sdk" % "2.598.0-7bba1d",
   "org.scalablytyped" %%% "minimist" % "1.2.0-dt-20190322Z-d3de4a",
-  "org.scalablytyped" %%% "node" % "13.1-dt-20200103Z-b9f880",
-  "org.scalablytyped" %%% "pulumi__pulumi" % "1.8.1-573f45",
+  "org.scalablytyped" %%% "node" % "13.1-dt-20200103Z-51871a",
+  "org.scalablytyped" %%% "pulumi__pulumi" % "1.8.1-e22fac",
   "org.scalablytyped" %%% "pulumi__query" % "0.3.0-b1998c",
   "org.scalablytyped" %%% "std" % "3.7-b6d959")
 publishArtifact in packageDoc := false

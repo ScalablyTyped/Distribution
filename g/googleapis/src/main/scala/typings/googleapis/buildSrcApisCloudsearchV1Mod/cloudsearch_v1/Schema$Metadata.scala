@@ -1,0 +1,73 @@
+package typings.googleapis.buildSrcApisCloudsearchV1Mod.cloudsearch_v1
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+  * Metadata of a matched search result.
+  */
+@js.native
+trait Schema$Metadata extends js.Object {
+  /**
+    * The creation time for this document or object in the search result.
+    */
+  var createTime: js.UndefOr[String] = js.native
+  /**
+    * Options that specify how to display a structured data search result.
+    */
+  var displayOptions: js.UndefOr[Schema$ResultDisplayMetadata] = js.native
+  /**
+    * Indexed fields in structured data, returned as a generic named property.
+    */
+  var fields: js.UndefOr[js.Array[Schema$NamedProperty]] = js.native
+  /**
+    * Mime type of the search result.
+    */
+  var mimeType: js.UndefOr[String] = js.native
+  /**
+    * Object type of the search result.
+    */
+  var objectType: js.UndefOr[String] = js.native
+  /**
+    * Owner (usually creator) of the document or object of the search result.
+    */
+  var owner: js.UndefOr[Schema$Person] = js.native
+  /**
+    * The named source for the result, such as Gmail.
+    */
+  var source: js.UndefOr[Schema$Source] = js.native
+  /**
+    * The last modified date for the object in the search result. If not set in
+    * the item, the value returned here is empty. When `updateTime` is used for
+    * calculating freshness and is not set, this value defaults to 2 years from
+    * the current time.
+    */
+  var updateTime: js.UndefOr[String] = js.native
+}
+
+object Schema$Metadata {
+  @scala.inline
+  def apply(
+    createTime: String = null,
+    displayOptions: Schema$ResultDisplayMetadata = null,
+    fields: js.Array[Schema$NamedProperty] = null,
+    mimeType: String = null,
+    objectType: String = null,
+    owner: Schema$Person = null,
+    source: Schema$Source = null,
+    updateTime: String = null
+  ): Schema$Metadata = {
+    val __obj = js.Dynamic.literal()
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
+    if (displayOptions != null) __obj.updateDynamic("displayOptions")(displayOptions.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
+    if (objectType != null) __obj.updateDynamic("objectType")(objectType.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Schema$Metadata]
+  }
+}
+

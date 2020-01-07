@@ -10,12 +10,12 @@ class SelectEvent protected ()
   extends typings.ol.eventsEventMod.default {
   def this(
     `type`: SelectEventType,
-    selected: js.Array[typings.ol.featureMod.default],
-    deselected: js.Array[typings.ol.featureMod.default],
+    selected: js.Array[typings.ol.featureMod.default[typings.ol.geomGeometryMod.default]],
+    deselected: js.Array[typings.ol.featureMod.default[typings.ol.geomGeometryMod.default]],
     mapBrowserEvent: typings.ol.mapBrowserEventMod.default
   ) = this()
-  var deselected: js.Array[typings.ol.featureMod.default] = js.native
+  var deselected: js.Array[typings.ol.featureMod.default[typings.ol.geomGeometryMod.default]] = js.native
   var mapBrowserEvent: typings.ol.mapBrowserEventMod.default = js.native
-  var selected: js.Array[typings.ol.featureMod.default] = js.native
+  var selected: js.Array[typings.ol.featureMod.default[typings.ol.geomGeometryMod.default]] = js.native
 }
 

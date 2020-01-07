@@ -1,6 +1,7 @@
 package typings.ol
 
 import typings.ol.featureMod.FeatureLike
+import typings.ol.pluggableMapMod.FrameState
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,19 +12,25 @@ object rendererCanvasVectorTileLayerMod extends js.Object {
   @js.native
   trait CanvasVectorTileLayerRenderer
     extends typings.ol.rendererCanvasTileLayerMod.default {
-    def handleFontsChanged_(event: typings.ol.eventsEventMod.default): Unit = js.native
+    def prepareTile(
+      tile: typings.ol.vectorRenderTileMod.default,
+      pixelRatio: Double,
+      projection: typings.ol.projProjectionMod.default,
+      queue: Boolean
+    ): Boolean = js.native
     def renderFeature(
       feature: FeatureLike,
       squaredTolerance: Double,
       styles: js.Array[typings.ol.styleStyleMod.default],
-      replayGroup: typings.ol.renderCanvasReplayGroupMod.default
+      executorGroup: typings.ol.renderCanvasBuilderGroupMod.default
     ): Boolean = js.native
     def renderFeature(
       feature: FeatureLike,
       squaredTolerance: Double,
       styles: typings.ol.styleStyleMod.default,
-      replayGroup: typings.ol.renderCanvasReplayGroupMod.default
+      executorGroup: typings.ol.renderCanvasBuilderGroupMod.default
     ): Boolean = js.native
+    def renderQueuedTileImages_(hifi: Boolean, frameState: FrameState): Unit = js.native
   }
   
   @js.native

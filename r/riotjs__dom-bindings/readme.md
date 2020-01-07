@@ -1,7 +1,7 @@
 
 # Scala.js typings for riotjs__dom-bindings
 
-Typings are for version 4.6.4
+Typings are for version 4.6.5
 
 ## Library description:
 Riot.js DOM bindings

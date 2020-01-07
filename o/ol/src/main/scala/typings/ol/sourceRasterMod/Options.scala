@@ -11,14 +11,18 @@ trait Options extends js.Object {
   var lib: js.UndefOr[js.Any] = js.undefined
   var operation: js.UndefOr[Operation] = js.undefined
   var operationType: js.UndefOr[pixel | image] = js.undefined
-  var sources: js.Array[typings.ol.sourceSourceMod.default | typings.ol.layerLayerMod.default]
+  var sources: js.Array[
+    typings.ol.sourceSourceMod.default | typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default]
+  ]
   var threads: js.UndefOr[Double] = js.undefined
 }
 
 object Options {
   @scala.inline
   def apply(
-    sources: js.Array[typings.ol.sourceSourceMod.default | typings.ol.layerLayerMod.default],
+    sources: js.Array[
+      typings.ol.sourceSourceMod.default | typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default]
+    ],
     lib: js.Any = null,
     operation: (/* p0 */ js.Array[js.Array[Double] | ImageData], /* p1 */ js.Object) => js.Array[Double] | ImageData = null,
     operationType: pixel | image = null,

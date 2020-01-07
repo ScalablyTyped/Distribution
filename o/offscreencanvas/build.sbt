@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "offscreencanvas"
-version := "2019.6-dt-20190628Z-ba85b8"
+version := "2019.6-dt-20200103Z-89b63b"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

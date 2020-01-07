@@ -1,7 +1,7 @@
 
 # Scala.js typings for ui-select
 
-Typings are for version 0.13.2
+Typings are for version 0.19.8
 
 
 

@@ -14,6 +14,6 @@ object tileurlfunctionMod extends js.Object {
   def createFromTemplates(templates: js.Array[String], tileGrid: default): UrlFunction = js.native
   def createFromTileUrlFunctions(tileUrlFunctions: js.Array[UrlFunction]): UrlFunction = js.native
   def expandUrl(url: String): js.Array[String] = js.native
-  def nullTileUrlFunction(tileCoord: TileCoord, pixelRatio: Double, projection: typings.ol.projProjectionMod.default): js.UndefOr[String] = js.native
+  def nullTileUrlFunction(tileCoord: TileCoord, pixelRatio: Double, projection: typings.ol.projProjectionMod.default): String = js.native
 }
 

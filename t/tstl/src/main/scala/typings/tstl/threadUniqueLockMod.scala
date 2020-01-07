@@ -3,7 +3,6 @@ package typings.tstl
 import typings.std.Date
 import typings.std.Partial
 import typings.std.Pick
-import typings.tstl.baseThreadUnderscoreITimedLockableMod._ITimedLockable
 import typings.tstl.threadILockableMod.ILockable
 import typings.tstl.tstlStrings.unlock
 import scala.scalajs.js
@@ -35,16 +34,28 @@ object threadUniqueLockMod extends js.Object {
   object UniqueLock extends js.Object {
     def lock[Mutex /* <: Pick[ILockable, typings.tstl.tstlStrings.lock | unlock] */](mutex: Mutex, closure: Closure): js.Promise[Unit] = js.native
     def try_lock[Mutex /* <: Pick[ILockable, typings.tstl.tstlStrings.try_lock | unlock] */](mutex: Mutex, closure: Closure): js.Promise[Boolean] = js.native
-    def try_lock_for[Mutex /* <: Pick[_ITimedLockable, typings.tstl.tstlStrings.try_lock_for | unlock] */](mutex: Mutex, ms: Double, closure: Closure): js.Promise[Boolean] = js.native
-    def try_lock_until[Mutex /* <: Pick[_ITimedLockable, typings.tstl.tstlStrings.try_lock_until | unlock] */](mutex: Mutex, at: Date, closure: Closure): js.Promise[Boolean] = js.native
+    def try_lock_for[Mutex /* <: Pick[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _ITimedLockable */ _, 
+        typings.tstl.tstlStrings.try_lock_for | unlock
+      ] */](mutex: Mutex, ms: Double, closure: Closure): js.Promise[Boolean] = js.native
+    def try_lock_until[Mutex /* <: Pick[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _ITimedLockable */ _, 
+        typings.tstl.tstlStrings.try_lock_until | unlock
+      ] */](mutex: Mutex, at: Date, closure: Closure): js.Promise[Boolean] = js.native
   }
   
   @js.native
   object unique_lock extends js.Object {
     def lock[Mutex /* <: Pick[ILockable, typings.tstl.tstlStrings.lock | unlock] */](mutex: Mutex, closure: Closure): js.Promise[Unit] = js.native
     def try_lock[Mutex /* <: Pick[ILockable, typings.tstl.tstlStrings.try_lock | unlock] */](mutex: Mutex, closure: Closure): js.Promise[Boolean] = js.native
-    def try_lock_for[Mutex /* <: Pick[_ITimedLockable, typings.tstl.tstlStrings.try_lock_for | unlock] */](mutex: Mutex, ms: Double, closure: Closure): js.Promise[Boolean] = js.native
-    def try_lock_until[Mutex /* <: Pick[_ITimedLockable, typings.tstl.tstlStrings.try_lock_until | unlock] */](mutex: Mutex, at: Date, closure: Closure): js.Promise[Boolean] = js.native
+    def try_lock_for[Mutex /* <: Pick[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _ITimedLockable */ _, 
+        typings.tstl.tstlStrings.try_lock_for | unlock
+      ] */](mutex: Mutex, ms: Double, closure: Closure): js.Promise[Boolean] = js.native
+    def try_lock_until[Mutex /* <: Pick[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _ITimedLockable */ _, 
+        typings.tstl.tstlStrings.try_lock_until | unlock
+      ] */](mutex: Mutex, at: Date, closure: Closure): js.Promise[Boolean] = js.native
   }
   
   /**
@@ -54,6 +65,8 @@ object threadUniqueLockMod extends js.Object {
   /**
     * @hidden
     */
-  type IMutex = ILockable with Partial[_ITimedLockable]
+  type IMutex = ILockable with (Partial[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _ITimedLockable */ _
+  ])
 }
 

@@ -15,6 +15,7 @@ trait TileSource
   var tileOptions: typings.ol.tileMod.Options = js.native
   var tmpSize: Size = js.native
   def canExpireCache(): Boolean = js.native
+  def clear(): Unit = js.native
   def expireCache(
     projection: typings.ol.projProjectionMod.default,
     usedTiles: StringDictionary[typings.ol.tileRangeMod.default]

@@ -1,7 +1,7 @@
 
 # Scala.js typings for micromatch
 
-Typings are for version 3.1
+Typings are for version 4.0
 
 ## Library description:
 Glob matching for javascript/node.js. A replacement and faster alternative to minimatch and multimatch.

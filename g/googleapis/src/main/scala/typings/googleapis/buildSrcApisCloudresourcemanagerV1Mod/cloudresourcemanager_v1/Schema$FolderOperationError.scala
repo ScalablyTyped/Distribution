@@ -1,0 +1,26 @@
+package typings.googleapis.buildSrcApisCloudresourcemanagerV1Mod.cloudresourcemanager_v1
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+  * A classification of the Folder Operation error.
+  */
+@js.native
+trait Schema$FolderOperationError extends js.Object {
+  /**
+    * The type of operation error experienced.
+    */
+  var errorMessageId: js.UndefOr[String] = js.native
+}
+
+object Schema$FolderOperationError {
+  @scala.inline
+  def apply(errorMessageId: String = null): Schema$FolderOperationError = {
+    val __obj = js.Dynamic.literal()
+    if (errorMessageId != null) __obj.updateDynamic("errorMessageId")(errorMessageId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Schema$FolderOperationError]
+  }
+}
+

@@ -1,5 +1,6 @@
 package typings.ol.interactionPointerMod
 
+import typings.std.PointerEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait PointerInteraction
   extends typings.ol.interactionInteractionMod.default {
   var handlingDownUpSequence: Boolean = js.native
-  var targetPointers: js.Array[typings.ol.pointerPointerEventMod.default] = js.native
+  var targetPointers: js.Array[PointerEvent] = js.native
   /* protected */ def handleDownEvent(mapBrowserEvent: typings.ol.mapBrowserPointerEventMod.default): Boolean = js.native
   /* protected */ def handleDragEvent(mapBrowserEvent: typings.ol.mapBrowserPointerEventMod.default): Unit = js.native
   /* protected */ def handleMoveEvent(mapBrowserEvent: typings.ol.mapBrowserPointerEventMod.default): Unit = js.native

@@ -13,8 +13,8 @@ trait Projection extends js.Object {
   def getCode(): String
   def getDefaultTileGrid(): typings.ol.tilegridTileGridMod.default
   def getExtent(): Extent
-  def getMetersPerUnit(): js.UndefOr[Double]
-  def getPointResolutionFunc(): js.Function2[/* p0 */ Double, /* p1 */ Coordinate, js.UndefOr[Double]]
+  def getMetersPerUnit(): Double
+  def getPointResolutionFunc(): js.Function2[/* p0 */ Double, /* p1 */ Coordinate, Double]
   def getUnits(): Units
   def getWorldExtent(): Extent
   def isGlobal(): Boolean
@@ -33,8 +33,8 @@ object Projection {
     getCode: () => String,
     getDefaultTileGrid: () => typings.ol.tilegridTileGridMod.default,
     getExtent: () => Extent,
-    getMetersPerUnit: () => js.UndefOr[Double],
-    getPointResolutionFunc: () => js.Function2[/* p0 */ Double, /* p1 */ Coordinate, js.UndefOr[Double]],
+    getMetersPerUnit: () => Double,
+    getPointResolutionFunc: () => js.Function2[/* p0 */ Double, /* p1 */ Coordinate, Double],
     getUnits: () => Units,
     getWorldExtent: () => Extent,
     isGlobal: () => Boolean,

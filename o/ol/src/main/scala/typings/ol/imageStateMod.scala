@@ -13,6 +13,9 @@ object imageStateMod extends js.Object {
   @js.native
   object ImageState extends js.Object {
     @js.native
+    sealed trait EMPTY extends ImageState
+    
+    @js.native
     sealed trait ERROR extends ImageState
     
     @js.native
@@ -28,6 +31,7 @@ object imageStateMod extends js.Object {
   
   @js.native
   object default extends js.Object {
+    /* 4 */ val EMPTY: typings.ol.imageStateMod.ImageState.EMPTY with Double = js.native
     /* 3 */ val ERROR: typings.ol.imageStateMod.ImageState.ERROR with Double = js.native
     /* 0 */ val IDLE: typings.ol.imageStateMod.ImageState.IDLE with Double = js.native
     /* 2 */ val LOADED: typings.ol.imageStateMod.ImageState.LOADED with Double = js.native

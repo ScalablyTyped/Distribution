@@ -222,6 +222,21 @@ class Query_[T /* <: Object[Attributes] */] protected () extends js.Object {
     /* import warning: importer.ImportType#apply Failed type conversion: keyof U['attributes'] */ js.Any, 
     String
   ] */](key: K, queryKey: X, query: Query[U]): this.type = js.native
+  @JSName("doesNotMatchKeyInQuery")
+  def doesNotMatchKeyInQuery_createdAt[U /* <: Object[Attributes] */, X /* <: Extract[
+    /* import warning: importer.ImportType#apply Failed type conversion: keyof U['attributes'] */ js.Any, 
+    String
+  ] */](key: createdAt, queryKey: X, query: Query[U]): this.type = js.native
+  @JSName("doesNotMatchKeyInQuery")
+  def doesNotMatchKeyInQuery_objectId[U /* <: Object[Attributes] */, X /* <: Extract[
+    /* import warning: importer.ImportType#apply Failed type conversion: keyof U['attributes'] */ js.Any, 
+    String
+  ] */](key: objectId, queryKey: X, query: Query[U]): this.type = js.native
+  @JSName("doesNotMatchKeyInQuery")
+  def doesNotMatchKeyInQuery_updatedAt[U /* <: Object[Attributes] */, X /* <: Extract[
+    /* import warning: importer.ImportType#apply Failed type conversion: keyof U['attributes'] */ js.Any, 
+    String
+  ] */](key: updatedAt, queryKey: X, query: Query[U]): this.type = js.native
   def doesNotMatchQuery[U /* <: Object[Attributes] */, K /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T['attributes'] */ js.Any */](key: K, query: Query[U]): this.type = js.native
   def each(callback: js.Function): js.Promise[Unit] = js.native
   def each(callback: js.Function, options: EachOptions): js.Promise[Unit] = js.native

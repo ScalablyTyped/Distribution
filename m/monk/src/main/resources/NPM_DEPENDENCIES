@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "monk" : "7.1.1"
+      "monk" : "7.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "monk" : "7.1.1"
+      "monk" : "7.1.2"
     }
   ],
   "compile-devDependencies" : [

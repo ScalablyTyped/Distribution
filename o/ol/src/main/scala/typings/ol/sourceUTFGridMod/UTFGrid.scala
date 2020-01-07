@@ -16,7 +16,7 @@ trait UTFGrid
     callback: js.Function1[/* p0 */ js.Any, Unit],
     opt_request: Boolean
   ): Unit = js.native
-  def getTemplate(): js.UndefOr[String] = js.native
+  def getTemplate(): String = js.native
   /* protected */ def handleTileJSONError(): Unit = js.native
   /* protected */ def handleTileJSONResponse(tileJSON: Config): Unit = js.native
 }

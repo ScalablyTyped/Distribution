@@ -31,6 +31,7 @@ trait SelectMultiple extends js.Object {
   def setAllowOverride(allowOverride: Boolean): SelectMultiple
   def setHelpText(helpText: String): SelectMultiple
   def setId(id: String): SelectMultiple
+  def setIsDynamic(isDynamic: Boolean): SelectMultiple
   def setName(name: String): SelectMultiple
 }
 
@@ -41,9 +42,10 @@ object SelectMultiple {
     setAllowOverride: Boolean => SelectMultiple,
     setHelpText: String => SelectMultiple,
     setId: String => SelectMultiple,
+    setIsDynamic: Boolean => SelectMultiple,
     setName: String => SelectMultiple
   ): SelectMultiple = {
-    val __obj = js.Dynamic.literal(addOption = js.Any.fromFunction1(addOption), setAllowOverride = js.Any.fromFunction1(setAllowOverride), setHelpText = js.Any.fromFunction1(setHelpText), setId = js.Any.fromFunction1(setId), setName = js.Any.fromFunction1(setName))
+    val __obj = js.Dynamic.literal(addOption = js.Any.fromFunction1(addOption), setAllowOverride = js.Any.fromFunction1(setAllowOverride), setHelpText = js.Any.fromFunction1(setHelpText), setId = js.Any.fromFunction1(setId), setIsDynamic = js.Any.fromFunction1(setIsDynamic), setName = js.Any.fromFunction1(setName))
   
     __obj.asInstanceOf[SelectMultiple]
   }

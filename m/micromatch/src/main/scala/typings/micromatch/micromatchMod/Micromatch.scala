@@ -130,47 +130,6 @@ trait Micromatch extends js.Object {
   def capture(pattern: String, string: String): js.Array[String] | Null = js.native
   def capture(pattern: String, string: String, options: Options): js.Array[String] | Null = js.native
   /**
-    * Clear the regex cache.
-    *
-    * @example
-    * ```js
-    * mm.clearCache();
-    * ```
-    */
-  def clearCache(): Unit = js.native
-  def compile(ast: String): js.Object = js.native
-  def compile(ast: String, options: Options): js.Object = js.native
-  /**
-    * Compile the given `ast` or string with the given `options`.
-    *
-    * @returns Returns an object that has an `output` property with the compiled string.
-    *
-    * @example
-    * ```js
-    * var mm = require('micromatch');
-    * mm.compile(ast[, options]);
-    *
-    * var ast = mm.parse('a/{b,c}/d');
-    * console.log(mm.compile(ast));
-    * // { options: { source: 'string' },
-    * //   state: {},
-    * //   compilers:
-    * //    { eos: [Function],
-    * //      noop: [Function],
-    * //      bos: [Function],
-    * //      brace: [Function],
-    * //      'brace.open': [Function],
-    * //      text: [Function],
-    * //      'brace.close': [Function] },
-    * //   output: [ 'a/(b|c)/d' ],
-    * //   ast:
-    * //    { ... },
-    * //   parsingErrors: [] }
-    * ```
-    */
-  def compile(ast: js.Object): js.Object = js.native
-  def compile(ast: js.Object, options: Options): js.Object = js.native
-  /**
     * Returns true if the given `string` contains the given pattern. Similar to [.isMatch](#isMatch) but the pattern can match any part of the string.
     *
     * @param str The string to match.
@@ -193,46 +152,6 @@ trait Micromatch extends js.Object {
   def contains(str: String, patterns: String, options: Options): Boolean = js.native
   def contains(str: String, patterns: js.Array[String]): Boolean = js.native
   def contains(str: String, patterns: js.Array[String], options: Options): Boolean = js.native
-  /**
-    * Parses the given glob `pattern` and returns an array of abstract syntax trees (ASTs), with the compiled `output` and optional source `map` on each AST.
-    *
-    * @param pattern Glob pattern to parse and compile.
-    * @param options Any options to change how parsing and compiling is performed.
-    * @returns Returns an object with the parsed AST, compiled string and optional source map.
-    *
-    * @example
-    * ```js
-    * var mm = require('micromatch');
-    * mm.create(pattern[, options]);
-    *
-    * console.log(mm.create('abc/ *.js'));
-    * // [{ options: { source: 'string', sourcemap: true },
-    * //   state: {},
-    * //   compilers:
-    * //    { ... },
-    * //   output: '(\\.[\\\\\\/])?abc\\/(?!\\.)(?=.)[^\\/]*?\\.js',
-    * //   ast:
-    * //    { type: 'root',
-    * //      errors: [],
-    * //      nodes:
-    * //       [ ... ],
-    * //      dot: false,
-    * //      input: 'abc/ *.js' },
-    * //   parsingErrors: [],
-    * //   map:
-    * //    { version: 3,
-    * //      sources: [ 'string' ],
-    * //      names: [],
-    * //      mappings: 'AAAA,GAAG,EAAC,kBAAC,EAAC,EAAE',
-    * //      sourcesContent: [ 'abc/ *.js' ] },
-    * //   position: { line: 1, column: 28 },
-    * //   content: {},
-    * //   files: {},
-    * //   idx: 6 }]
-    * ```
-    */
-  def create(pattern: String): js.Object = js.native
-  def create(pattern: String, options: Options): js.Object = js.native
   /**
     * Returns true if every string in the given `list` matches any of the given glob `patterns`.
     *
@@ -285,6 +204,8 @@ trait Micromatch extends js.Object {
     */
   def isMatch(string: String, pattern: String): Boolean = js.native
   def isMatch(string: String, pattern: String, options: Options): Boolean = js.native
+  def isMatch(string: String, pattern: js.Array[String]): Boolean = js.native
+  def isMatch(string: String, pattern: js.Array[String], options: Options): Boolean = js.native
   /**
     * Create a regular expression from the given glob `pattern`.
     *
@@ -388,7 +309,7 @@ trait Micromatch extends js.Object {
   def not(list: js.Array[String], patterns: js.Array[String]): js.Array[String] = js.native
   def not(list: js.Array[String], patterns: js.Array[String], options: Options): js.Array[String] = js.native
   /**
-    * Parse the given `str` with the given `options`.
+    * Parse a glob pattern to create the source string for a regular expression.
     *
     * @returns Returns an AST
     *
@@ -414,8 +335,13 @@ trait Micromatch extends js.Object {
     * //      { type: 'eos', val: '' } ] }
     * ```
     */
-  def parse(str: String): js.Object = js.native
-  def parse(str: String, options: Options): js.Object = js.native
+  def parse(glob: String): js.Object = js.native
+  def parse(glob: String, options: Options): js.Object = js.native
+  /**
+    * Scan a glob pattern to separate the pattern into segments.
+    */
+  def scan(pattern: String): js.Object = js.native
+  def scan(pattern: String, options: Options): js.Object = js.native
   /**
     * Returns true if some of the strings in the given `list` match any of the given glob `patterns`.
     *

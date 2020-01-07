@@ -28,6 +28,7 @@ object projMod extends js.Object {
   def addProjection(projection: default): Unit = js.native
   def addProjections(projections: js.Array[default]): Unit = js.native
   def clearAllProjections(): Unit = js.native
+  def clearUserProjection(): Unit = js.native
   def cloneTransform(input: js.Array[Double]): js.Array[Double] = js.native
   def cloneTransform(input: js.Array[Double], opt_output: js.Array[Double]): js.Array[Double] = js.native
   def cloneTransform(input: js.Array[Double], opt_output: js.Array[Double], opt_dimension: Double): js.Array[Double] = js.native
@@ -38,19 +39,26 @@ object projMod extends js.Object {
   def equivalent(projection1: default, projection2: default): Boolean = js.native
   def fromLonLat(coordinate: Coordinate): Coordinate = js.native
   def fromLonLat(coordinate: Coordinate, opt_projection: ProjectionLike): Coordinate = js.native
+  def fromUserCoordinate(coordinate: js.Array[Double], destProjection: ProjectionLike): js.Array[Double] = js.native
+  def fromUserExtent(extent: Extent, destProjection: ProjectionLike): Extent = js.native
   def get(projectionLike: ProjectionLike): default = js.native
   def getPointResolution(projection: ProjectionLike, resolution: Double, point: Coordinate): Double = js.native
   def getPointResolution(projection: ProjectionLike, resolution: Double, point: Coordinate, opt_units: Units): Double = js.native
   def getTransform(source: ProjectionLike, destination: ProjectionLike): TransformFunction = js.native
   def getTransformFromProjections(sourceProjection: default, destinationProjection: default): TransformFunction = js.native
+  def getUserProjection(): default = js.native
   def identityTransform(input: js.Array[Double]): js.Array[Double] = js.native
   def identityTransform(input: js.Array[Double], opt_output: js.Array[Double]): js.Array[Double] = js.native
   def identityTransform(input: js.Array[Double], opt_output: js.Array[Double], opt_dimension: Double): js.Array[Double] = js.native
+  def setUserProjection(projection: ProjectionLike): Unit = js.native
   def toLonLat(coordinate: Coordinate): Coordinate = js.native
   def toLonLat(coordinate: Coordinate, opt_projection: ProjectionLike): Coordinate = js.native
+  def toUserCoordinate(coordinate: js.Array[Double], sourceProjection: ProjectionLike): js.Array[Double] = js.native
+  def toUserExtent(extent: Extent, sourceProjection: ProjectionLike): Extent = js.native
   def transform(coordinate: Coordinate, source: ProjectionLike, destination: ProjectionLike): Coordinate = js.native
   def transformExtent(extent: Extent, source: ProjectionLike, destination: ProjectionLike): Extent = js.native
   def transformWithProjections(point: Coordinate, sourceProjection: default, destinationProjection: default): Coordinate = js.native
+  def useGeographic(): Unit = js.native
   type ProjectionLike = default | String
   type TransformFunction = js.Function3[
     /* p0 */ js.Array[Double], 

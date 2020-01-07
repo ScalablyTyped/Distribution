@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("ol/source", "Source")
 @js.native
-class Source protected () extends default {
+abstract class Source protected () extends default {
   def this(options: Options) = this()
 }
 

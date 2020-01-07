@@ -12,8 +12,8 @@ sealed trait DataValidationCriteria extends js.Object
   * An enumeration representing the data validation criteria that can be set on a range.
   *
   *     // Change existing data-validation rules that require a date in 2013 to require a date in 2014.
-  *     var oldDates = [new Base.Date('1/1/2013'), new Base.Date('12/31/2013')];
-  *     var newDates = [new Base.Date('1/1/2014'), new Base.Date('12/31/2014')];
+  *     var oldDates = [new Date('1/1/2013'), new Date('12/31/2013')];
+  *     var newDates = [new Date('1/1/2014'), new Date('12/31/2014')];
   *     var sheet = SpreadsheetApp.getActiveSheet();
   *     var range = sheet.getRange(1, 1, sheet.getMaxRows(), sheet.getMaxColumns());
   *     var rules = range.getDataValidations();

@@ -19,7 +19,8 @@ object ListCollection extends js.Object {
     *
     * @author Jeongho Nam <http://samchon.org>
     */
-  @js.native
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ListIterator<T, List<T>, Iterator<T>, ReverseIterator<T>, T> * / any */ @js.native
   /**
     * @hidden
     */
@@ -31,7 +32,8 @@ object ListCollection extends js.Object {
     *
     * @author Jeongho Nam <http://samchon.org>
     */
-  @js.native
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ReverseIteratorBase<T, List<T>, Iterator<T>, ReverseIterator<T>, T> * / any */ @js.native
   class ReverseIterator[T] ()
     extends typings.ecol.libLinearListCollectionMod.ListCollection.ReverseIterator[T]
   
@@ -48,20 +50,12 @@ object ListCollection extends js.Object {
         /* import warning: RewrittenClass.unapply cls was tparam ReverseT */ js.Any, 
         /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any
       ], 
-      typings.tstl.baseIteratorIteratorMod.Iterator[
+      typings.std.Iterator[
         /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
         /* import warning: RewrittenClass.unapply cls was tparam SourceT */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls was tparam IteratorT */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls was tparam ReverseT */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any
+        /* import warning: RewrittenClass.unapply cls was tparam IteratorT */ js.Any
       ], 
-      typings.tstl.tstlMod.base.ReverseIterator[
-        /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls was tparam SourceT */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls was tparam IteratorT */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls was tparam ReverseT */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any
-      ]
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ js.Any
     ]
   ] = js.native
 }

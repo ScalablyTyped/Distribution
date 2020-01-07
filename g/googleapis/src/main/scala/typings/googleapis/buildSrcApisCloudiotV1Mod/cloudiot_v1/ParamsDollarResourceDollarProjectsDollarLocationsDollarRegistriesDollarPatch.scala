@@ -1,0 +1,35 @@
+package typings.googleapis.buildSrcApisCloudiotV1Mod.cloudiot_v1
+
+import typings.googleDashAuthDashLibrary.googleDashAuthDashLibraryMod.Compute
+import typings.googleDashAuthDashLibrary.googleDashAuthDashLibraryMod.JWT
+import typings.googleDashAuthDashLibrary.googleDashAuthDashLibraryMod.OAuth2Client
+import typings.googleDashAuthDashLibrary.googleDashAuthDashLibraryMod.UserRefreshClient
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait ParamsDollarResourceDollarProjectsDollarLocationsDollarRegistriesDollarPatch extends StandardParameters {
+  /**
+    * Auth client or API Key for the request
+    */
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  /**
+    * The resource path name. For example,
+    * `projects/example-project/locations/us-central1/registries/my-registry`.
+    */
+  var name: js.UndefOr[String] = js.native
+  /**
+    * Request body metadata
+    */
+  var requestBody: js.UndefOr[Schema$DeviceRegistry] = js.native
+  /**
+    * Only updates the `device_registry` fields indicated by this mask. The
+    * field mask must not be empty, and it must not contain fields that are
+    * immutable or only set by the server. Mutable top-level fields:
+    * `event_notification_config`, `http_config`, `mqtt_config`, and
+    * `state_notification_config`.
+    */
+  var updateMask: js.UndefOr[String] = js.native
+}
+

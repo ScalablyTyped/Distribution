@@ -1,8 +1,6 @@
 package typings.tstl
 
 import typings.tstl.baseContainerMapContainerMod.MapContainer
-import typings.tstl.baseIteratorIMapIteratorMod.IMapIterator
-import typings.tstl.baseIteratorIMapIteratorMod.IMapReverseIterator
 import typings.tstl.tstlBooleans.`true`
 import typings.tstl.utilityEntryMod.Entry
 import typings.tstl.utilityPairMod.Pair
@@ -14,7 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object baseContainerUniqueMapMod extends js.Object {
   @js.native
-  abstract class UniqueMap[Key, T, Source /* <: UniqueMap[Key, T, Source, Iterator, Reverse] */, Iterator /* <: IMapIterator[Key, T, `true`, Source, Iterator, Reverse] */, Reverse /* <: IMapReverseIterator[Key, T, `true`, Source, Iterator, Reverse] */] () extends MapContainer[Key, T, `true`, Source, Iterator, Reverse] {
+  abstract class UniqueMap[Key, T, Source /* <: UniqueMap[Key, T, Source, Iterator, Reverse] */, Iterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IMapIterator<Key, T, true, Source, Iterator, Reverse> */ js.Any */, Reverse /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IMapReverseIterator<Key, T, true, Source, Iterator, Reverse> */ js.Any */] () extends MapContainer[Key, T, `true`, Source, Iterator, Reverse] {
     /**
       * @hidden
       */

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "qrcode-svg"
-version := "1.0-dt-20190404Z-dbb900"
+version := "1.1-dt-20200106Z-bdb43d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

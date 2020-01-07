@@ -25,21 +25,21 @@ object libMediaMod extends js.Object {
     def this(config: Configuration, network: Network, data: js.Any) = this()
     var _update: js.Any = js.native
     var config: js.Any = js.native
-    val contentType: String = js.native
-    val dateCreated: Date = js.native
-    val dateUpdated: Date = js.native
-    val fileName: String = js.native
     var network: js.Any = js.native
-    val serviceSid: String = js.native
-    val sid: String = js.native
-    val size: Double = js.native
     var state: js.Any = js.native
+    def contentType(): String = js.native
+    def dateCreated(): Date = js.native
+    def dateUpdated(): Date = js.native
+    def fileName(): String = js.native
     /**
       * Returns direct content URL to uploaded binary
       * @public
       * @returns {Promise<string>}
       */
     def getContentUrl(): js.Promise[String] = js.native
+    def serviceSid(): String = js.native
+    def sid(): String = js.native
+    def size(): Double = js.native
   }
   
 }

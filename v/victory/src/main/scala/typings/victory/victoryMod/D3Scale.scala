@@ -7,18 +7,12 @@ import scala.scalajs.js.annotation._
 /**
   * D3 scale function shape. Don't want to introduce typing dependency to d3
   */
+@js.native
 trait D3Scale extends js.Object {
-  def copy(): js.Any
-  def domain(): js.Any
-  def range(): js.Any
-}
-
-object D3Scale {
-  @scala.inline
-  def apply(copy: () => js.Any, domain: () => js.Any, range: () => js.Any): D3Scale = {
-    val __obj = js.Dynamic.literal(copy = js.Any.fromFunction0(copy), domain = js.Any.fromFunction0(domain), range = js.Any.fromFunction0(range))
-  
-    __obj.asInstanceOf[D3Scale]
-  }
+  def apply(input: String): Double = js.native
+  def apply(input: Double): Double = js.native
+  def copy(): js.Any = js.native
+  def domain(): js.Any = js.native
+  def range(): js.Any = js.native
 }
 

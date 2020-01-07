@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
 class CustomTile protected ()
   extends typings.ol.imageTileMod.default {
   def this(
+    tilePixelRatio: Double,
     tileGrid: typings.ol.tilegridTileGridMod.default,
     tileCoord: TileCoord,
     state: TileState,
@@ -20,6 +21,7 @@ class CustomTile protected ()
     tileLoadFunction: LoadFunction
   ) = this()
   def this(
+    tilePixelRatio: Double,
     tileGrid: typings.ol.tilegridTileGridMod.default,
     tileCoord: TileCoord,
     state: TileState,

@@ -31,7 +31,7 @@ object geomSimpleGeometryMod extends js.Object {
   }
   
   @js.native
-  class default () extends SimpleGeometry
+  abstract class default () extends SimpleGeometry
   
   def getStrideForLayout(layout: GeometryLayout): Double = js.native
   def transformGeom2D(simpleGeometry: SimpleGeometry, transform: Transform): js.Array[Double] = js.native

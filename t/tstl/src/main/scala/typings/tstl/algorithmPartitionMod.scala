@@ -1,9 +1,6 @@
 package typings.tstl
 
 import typings.tstl.functionalIPointerMod.IPointer.ValueType
-import typings.tstl.iteratorIBidirectionalIteratorMod.IBidirectionalIterator
-import typings.tstl.iteratorIFakeMod.General
-import typings.tstl.iteratorIFakeMod.Writeonly
 import typings.tstl.iteratorIForwardIteratorMod.IForwardIterator
 import typings.tstl.utilityPairMod.Pair
 import scala.scalajs.js
@@ -18,12 +15,12 @@ object algorithmPartitionMod extends js.Object {
     last: ForwardIterator,
     pred: js.Function1[/* x */ ValueType[ForwardIterator], Boolean]
   ): Boolean = js.native
-  def partition[BidirectionalIterator /* <: General[IBidirectionalIterator[ValueType[BidirectionalIterator], BidirectionalIterator]] */](
+  def partition[BidirectionalIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IBidirectionalIterator<IPointer.ValueType<BidirectionalIterator>, BidirectionalIterator>> */ js.Any */](
     first: BidirectionalIterator,
     last: BidirectionalIterator,
     pred: js.Function1[/* x */ ValueType[BidirectionalIterator], Boolean]
   ): BidirectionalIterator = js.native
-  def partition_copy[InputIterator /* <: IForwardIterator[ValueType[InputIterator], InputIterator] */, OutputIterator1 /* <: Writeonly[IForwardIterator[ValueType[InputIterator], OutputIterator1]] */, OutputIterator2 /* <: Writeonly[IForwardIterator[ValueType[InputIterator], OutputIterator2]] */](
+  def partition_copy[InputIterator /* <: IForwardIterator[ValueType[InputIterator], InputIterator] */, OutputIterator1 /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Writeonly<IForwardIterator<IPointer.ValueType<InputIterator>, OutputIterator1>> */ js.Any */, OutputIterator2 /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Writeonly<IForwardIterator<IPointer.ValueType<InputIterator>, OutputIterator2>> */ js.Any */](
     first: InputIterator,
     last: InputIterator,
     output_true: OutputIterator1,
@@ -35,7 +32,7 @@ object algorithmPartitionMod extends js.Object {
     last: ForwardIterator,
     pred: js.Function1[/* x */ ValueType[ForwardIterator], Boolean]
   ): ForwardIterator = js.native
-  def stable_partition[BidirectionalIterator /* <: General[IBidirectionalIterator[ValueType[BidirectionalIterator], BidirectionalIterator]] */](
+  def stable_partition[BidirectionalIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IBidirectionalIterator<IPointer.ValueType<BidirectionalIterator>, BidirectionalIterator>> */ js.Any */](
     first: BidirectionalIterator,
     last: BidirectionalIterator,
     pred: js.Function1[/* x */ ValueType[BidirectionalIterator], Boolean]

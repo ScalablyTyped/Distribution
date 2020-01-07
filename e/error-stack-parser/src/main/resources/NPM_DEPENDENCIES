@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "error-stack-parser" : "2.0.4"
+      "error-stack-parser" : "2.0.6"
     }
   ],
   "test-dependencies" : [
     {
-      "error-stack-parser" : "2.0.4"
+      "error-stack-parser" : "2.0.6"
     }
   ],
   "compile-devDependencies" : [

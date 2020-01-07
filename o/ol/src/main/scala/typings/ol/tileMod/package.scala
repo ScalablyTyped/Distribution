@@ -12,6 +12,6 @@ package object tileMod {
     /* p0 */ TileCoord, 
     /* p1 */ Double, 
     /* p2 */ typings.ol.projProjectionMod.default, 
-    js.UndefOr[String]
+    String
   ]
 }

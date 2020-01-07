@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("ol/format/EsriJSON", JSImport.Default)
 @js.native
-class default ()
-  extends typings.ol.formatJSONFeatureMod.default {
+class default () extends EsriJSON {
   def this(opt_options: Options) = this()
 }
 

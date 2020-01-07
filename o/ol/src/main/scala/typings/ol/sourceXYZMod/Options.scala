@@ -30,6 +30,7 @@ trait Options extends js.Object {
   var url: js.UndefOr[String] = js.undefined
   var urls: js.UndefOr[js.Array[String]] = js.undefined
   var wrapX: js.UndefOr[Boolean] = js.undefined
+  var zDirection: js.UndefOr[Double] = js.undefined
 }
 
 object Options {
@@ -48,11 +49,12 @@ object Options {
     tileLoadFunction: (/* p0 */ Tile, /* p1 */ String) => Unit = null,
     tilePixelRatio: Int | Double = null,
     tileSize: Double | Size = null,
-    tileUrlFunction: (/* p0 */ TileCoord, /* p1 */ Double, /* p2 */ typings.ol.projProjectionMod.default) => js.UndefOr[String] = null,
+    tileUrlFunction: (/* p0 */ TileCoord, /* p1 */ Double, /* p2 */ typings.ol.projProjectionMod.default) => String = null,
     transition: Int | Double = null,
     url: String = null,
     urls: js.Array[String] = null,
-    wrapX: js.UndefOr[Boolean] = js.undefined
+    wrapX: js.UndefOr[Boolean] = js.undefined,
+    zDirection: Int | Double = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (attributions != null) __obj.updateDynamic("attributions")(attributions.asInstanceOf[js.Any])
@@ -73,6 +75,7 @@ object Options {
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     if (urls != null) __obj.updateDynamic("urls")(urls.asInstanceOf[js.Any])
     if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX.asInstanceOf[js.Any])
+    if (zDirection != null) __obj.updateDynamic("zDirection")(zDirection.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

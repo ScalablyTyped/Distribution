@@ -1,7 +1,7 @@
 
 # Scala.js typings for qrcode-svg
 
-Typings are for version 1.0
+Typings are for version 1.1
 
 ## Library description:
 A simple QR Code generator in pure JavaScript

@@ -39,6 +39,9 @@ object imageMod extends js.Object {
     ) = this()
   }
   
+  def listenImage(image: HTMLCanvasElement, loadHandler: js.Function0[_], errorHandler: js.Function0[_]): js.Function0[Unit] = js.native
+  def listenImage(image: HTMLImageElement, loadHandler: js.Function0[_], errorHandler: js.Function0[_]): js.Function0[Unit] = js.native
+  def listenImage(image: HTMLVideoElement, loadHandler: js.Function0[_], errorHandler: js.Function0[_]): js.Function0[Unit] = js.native
   type LoadFunction = js.Function2[/* p0 */ ImageWrapper, /* p1 */ String, Unit]
 }
 

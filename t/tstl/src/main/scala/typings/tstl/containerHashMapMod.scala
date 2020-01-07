@@ -1,12 +1,9 @@
 package typings.tstl
 
-import org.scalablytyped.runtime.Instantiable0
-import typings.tstl.baseContainerMapContainerMod.MapContainer
 import typings.tstl.baseContainerUniqueMapMod.UniqueMap
 import typings.tstl.containerHashMapMod.HashMap.Iterator
 import typings.tstl.containerHashMapMod.HashMap.ReverseIterator
 import typings.tstl.iteratorIForwardIteratorMod.IForwardIterator
-import typings.tstl.tstlBooleans.`true`
 import typings.tstl.utilityIPairMod.IPair
 import typings.tstl.utilityPairMod.Pair
 import scala.scalajs.js
@@ -17,16 +14,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object containerHashMapMod extends js.Object {
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - typings.tstl.baseDisposableIForwardContainerMod.IForwardContainer because Already inherited
-  - typings.tstl.baseDisposableIPartialContainersMod._IPush because Already inherited
-  - typings.tstl.baseDisposableIPartialContainersMod._ISize because Already inherited
-  - typings.tstl.baseDisposableIPartialContainersMod._IEmpty because Already inherited
   - typings.std.Iterable because Already inherited
-  - typings.tstl.baseDisposableIBidirectionalContainerMod.IBidirectionalContainer because Already inherited
   - typings.tstl.baseContainerIContainerMod.IContainer because Already inherited
-  - typings.tstl.baseContainerUnderscoreIAssociativeContainerMod._IAssociativeContainer because Already inherited
   - typings.tstl.baseContainerContainerMod.Container because Inheritance from two classes. Inlined empty, rbegin, rend, toJSON
-  - typings.tstl.baseContainerUnderscoreIHashContainerMod._IHashContainer because var conflicts: iterator. Inlined hash_function, key_eq, bucket, bucket_count, bucket_size, load_factor, max_load_factor, max_load_factor, reserve, rehash
   - typings.tstl.baseContainerMapContainerMod.MapContainer because Inheritance from two classes. Inlined assign, clear, find, has, count, size, push, emplace, emplace_hint, insert, insert, insert, _Insert_by_range, erase, erase, erase, _Erase_by_key, _Erase_by_range, _Erase_by_range, swap, merge, _Handle_insert, _Handle_erase
   - typings.tstl.baseContainerIHashMapMod.IHashMap because Inheritance from two classes. Inlined begin, begin, end, end */ @js.native
   /**
@@ -89,15 +79,15 @@ object containerHashMapMod extends js.Object {
       * @hidden
       */
     /* protected */ def _Handle_erase(
-      first: (typings.tstl.baseContainerMapElementListMod.MapElementList.Iterator[Key, T, `true`, HashMap[Key, T]]) | (Iterator[Key, T]),
-      last: (typings.tstl.baseContainerMapElementListMod.MapElementList.Iterator[Key, T, `true`, HashMap[Key, T]]) | (Iterator[Key, T])
+      first: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MapElementList.Iterator<Key, T, Unique, Source> */ js.Any) | (Iterator[Key, T]),
+      last: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MapElementList.Iterator<Key, T, Unique, Source> */ js.Any) | (Iterator[Key, T])
     ): Unit = js.native
     /**
       * @hidden
       */
     /* protected */ def _Handle_insert(
-      first: (typings.tstl.baseContainerMapElementListMod.MapElementList.Iterator[Key, T, `true`, HashMap[Key, T]]) | (Iterator[Key, T]),
-      last: (typings.tstl.baseContainerMapElementListMod.MapElementList.Iterator[Key, T, `true`, HashMap[Key, T]]) | (Iterator[Key, T])
+      first: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MapElementList.Iterator<Key, T, Unique, Source> */ js.Any) | (Iterator[Key, T]),
+      last: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MapElementList.Iterator<Key, T, Unique, Source> */ js.Any) | (Iterator[Key, T])
     ): Unit = js.native
     /**
       * @inheritDoc
@@ -107,7 +97,7 @@ object containerHashMapMod extends js.Object {
       * @inheritDoc
       */
     @JSName("begin")
-    def begin_Iterator(): typings.tstl.baseContainerMapElementListMod.MapElementList.Iterator[Key, T, `true`, HashMap[Key, T]] = js.native
+    def begin_Any(): js.Any = js.native
     /**
       * Iterator to the first element in a specific bucket.
       *
@@ -115,32 +105,17 @@ object containerHashMapMod extends js.Object {
       * @return Iterator from the specific bucket.
       */
     @JSName("begin")
-    def begin_Iterator(index: Double): typings.tstl.baseContainerMapElementListMod.MapElementList.Iterator[Key, T, `true`, HashMap[Key, T]] = js.native
+    def begin_Any(index: Double): js.Any = js.native
     /**
       * @inheritDoc
-      */
-    /**
-      * Compute bucket index for the *key*.
-      *
-      * @param key Target key.
-      * @return Index number.
       */
     def bucket(key: Key): Double = js.native
     /**
       * @inheritDoc
       */
-    /**
-      * Get number of buckets.
-      */
     def bucket_count(): Double = js.native
     /**
       * @inheritDoc
-      */
-    /**
-      * Get size of a specific bucket.
-      *
-      * @param index Specific position.
-      * @return Size of the specific bucket.
       */
     def bucket_size(index: Double): Double = js.native
     /**
@@ -149,11 +124,11 @@ object containerHashMapMod extends js.Object {
     @JSName("emplace")
     def emplace_Pair(key: Key, `val`: T): Pair[Iterator[Key, T], Boolean] = js.native
     @JSName("emplace_hint")
-    def emplace_hint_Iterator(
-      hint: typings.tstl.baseContainerMapElementListMod.MapElementList.Iterator[Key, T, `true`, HashMap[Key, T]],
+    def emplace_hint_Any(
+      hint: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MapElementList.Iterator<Key, T, Unique, Source> */ js.Any,
       key: Key,
       `val`: T
-    ): typings.tstl.baseContainerMapElementListMod.MapElementList.Iterator[Key, T, `true`, HashMap[Key, T]] = js.native
+    ): /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MapElementList.Iterator<Key, T, Unique, Source> */ js.Any = js.native
     /**
       * @inheritDoc
       */
@@ -162,7 +137,7 @@ object containerHashMapMod extends js.Object {
       * @inheritDoc
       */
     @JSName("end")
-    def end_Iterator(): typings.tstl.baseContainerMapElementListMod.MapElementList.Iterator[Key, T, `true`, HashMap[Key, T]] = js.native
+    def end_Any(): js.Any = js.native
     /**
       * Iterator to the end in a specific bucket.
       *
@@ -170,7 +145,7 @@ object containerHashMapMod extends js.Object {
       * @return Iterator from the specific bucket.
       */
     @JSName("end")
-    def end_Iterator(index: Double): typings.tstl.baseContainerMapElementListMod.MapElementList.Iterator[Key, T, `true`, HashMap[Key, T]] = js.native
+    def end_Any(index: Double): js.Any = js.native
     /**
       * @inheritDoc
       */
@@ -179,50 +154,25 @@ object containerHashMapMod extends js.Object {
       * @inheritDoc
       */
     @JSName("find")
-    def find_Iterator(key: Key): typings.tstl.baseContainerMapElementListMod.MapElementList.Iterator[Key, T, `true`, HashMap[Key, T]] = js.native
+    def find_Any(key: Key): /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MapElementList.Iterator<Key, T, Unique, Source> */ js.Any = js.native
     /**
       * @inheritDoc
-      */
-    /**
-      * Get hash function.
-      *
-      * @return The hash function.
       */
     def hash_function(): js.Function1[/* key */ Key, Double] = js.native
     /**
       * @inheritDoc
       */
-    /**
-      * Get key equality predicator.
-      *
-      * @return The key equality predicator.
-      */
     def key_eq(): js.Function2[/* x */ Key, /* y */ Key, Boolean] = js.native
     /**
       * @inheritDoc
-      */
-    /**
-      * Compute load factor.
-      *
-      * @return `this.size() / this.bucket_count()`
       */
     def load_factor(): Double = js.native
     /**
       * @inheritDoc
       */
-    /**
-      * Get maximum load factor that allowable.
-      *
-      * @return The maximum load factor.
-      */
     def max_load_factor(): Double = js.native
     /**
       * @inheritDoc
-      */
-    /**
-      * Set maximum load factor.
-      *
-      * @param z The new value to change.
       */
     def max_load_factor(z: Double): Unit = js.native
     /**
@@ -237,11 +187,6 @@ object containerHashMapMod extends js.Object {
     /**
       * @inheritDoc
       */
-    /**
-      * Change of bucktes.
-      *
-      * @param n The number to change.
-      */
     def rehash(n: Double): Unit = js.native
     /**
       * @inheritDoc
@@ -254,11 +199,6 @@ object containerHashMapMod extends js.Object {
     def rend_ReverseIterator(): ReverseIterator[Key, T] = js.native
     /**
       * @inheritDoc
-      */
-    /**
-      * Reserve buckets enable to store *n* elements.
-      *
-      * @param n The capacity to reserve.
       */
     def reserve(n: Double): Unit = js.native
   }
@@ -320,214 +260,22 @@ object containerHashMapMod extends js.Object {
   
   @js.native
   object HashMap extends js.Object {
-    val Iterator: Instantiable0[
-        typings.tstl.baseContainerMapElementListMod.MapElementList.Iterator[
-          js.Object, 
-          js.Object, 
-          Boolean, 
-          MapContainer[
-            /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
-            typings.tstl.baseContainerMapElementListMod.MapElementList.Iterator[
-              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-            ], 
-            typings.tstl.baseContainerMapElementListMod.MapElementList.ReverseIterator[
-              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-            ]
-          ]
-        ]
-      ] = js.native
-    val ReverseIterator: Instantiable0[
-        typings.tstl.baseContainerMapElementListMod.MapElementList.ReverseIterator[
-          js.Object, 
-          js.Object, 
-          Boolean, 
-          MapContainer[
-            /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
-            typings.tstl.baseContainerMapElementListMod.MapElementList.Iterator[
-              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-            ], 
-            typings.tstl.baseContainerMapElementListMod.MapElementList.ReverseIterator[
-              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-            ]
-          ]
-        ]
-      ] = js.native
-    val iterator: Instantiable0[
-        typings.tstl.baseContainerMapElementListMod.MapElementList.Iterator[
-          js.Object, 
-          js.Object, 
-          Boolean, 
-          MapContainer[
-            /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
-            typings.tstl.baseContainerMapElementListMod.MapElementList.Iterator[
-              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-            ], 
-            typings.tstl.baseContainerMapElementListMod.MapElementList.ReverseIterator[
-              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-            ]
-          ]
-        ]
-      ] = js.native
-    val reverse_iterator: Instantiable0[
-        typings.tstl.baseContainerMapElementListMod.MapElementList.ReverseIterator[
-          js.Object, 
-          js.Object, 
-          Boolean, 
-          MapContainer[
-            /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
-            typings.tstl.baseContainerMapElementListMod.MapElementList.Iterator[
-              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-            ], 
-            typings.tstl.baseContainerMapElementListMod.MapElementList.ReverseIterator[
-              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-            ]
-          ]
-        ]
-      ] = js.native
-    type Iterator[Key, T] = typings.tstl.baseContainerMapElementListMod.MapElementList.Iterator[Key, T, `true`, HashMap[Key, T]]
-    type ReverseIterator[Key, T] = typings.tstl.baseContainerMapElementListMod.MapElementList.ReverseIterator[Key, T, `true`, HashMap[Key, T]]
+    val Iterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MapElementList.Iterator */ js.Any = js.native
+    val ReverseIterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MapElementList.ReverseIterator */ js.Any = js.native
+    val iterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MapElementList.Iterator */ js.Any = js.native
+    val reverse_iterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MapElementList.ReverseIterator */ js.Any = js.native
+    type Iterator[Key, T] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MapElementList.Iterator<Key, T, true, HashMap<Key, T>> */ js.Any
+    type ReverseIterator[Key, T] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MapElementList.ReverseIterator<Key, T, true, HashMap<Key, T>> */ js.Any
     type iterator[Key, T] = typings.tstl.containerHashMapMod.HashMap.Iterator[Key, T]
     type reverse_iterator[Key, T] = typings.tstl.containerHashMapMod.HashMap.ReverseIterator[Key, T]
   }
   
   @js.native
   object unordered_map extends js.Object {
-    val Iterator: Instantiable0[
-        typings.tstl.baseContainerMapElementListMod.MapElementList.Iterator[
-          js.Object, 
-          js.Object, 
-          Boolean, 
-          MapContainer[
-            /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
-            typings.tstl.baseContainerMapElementListMod.MapElementList.Iterator[
-              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-            ], 
-            typings.tstl.baseContainerMapElementListMod.MapElementList.ReverseIterator[
-              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-            ]
-          ]
-        ]
-      ] = js.native
-    val ReverseIterator: Instantiable0[
-        typings.tstl.baseContainerMapElementListMod.MapElementList.ReverseIterator[
-          js.Object, 
-          js.Object, 
-          Boolean, 
-          MapContainer[
-            /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
-            typings.tstl.baseContainerMapElementListMod.MapElementList.Iterator[
-              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-            ], 
-            typings.tstl.baseContainerMapElementListMod.MapElementList.ReverseIterator[
-              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-            ]
-          ]
-        ]
-      ] = js.native
-    val iterator: Instantiable0[
-        typings.tstl.baseContainerMapElementListMod.MapElementList.Iterator[
-          js.Object, 
-          js.Object, 
-          Boolean, 
-          MapContainer[
-            /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
-            typings.tstl.baseContainerMapElementListMod.MapElementList.Iterator[
-              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-            ], 
-            typings.tstl.baseContainerMapElementListMod.MapElementList.ReverseIterator[
-              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-            ]
-          ]
-        ]
-      ] = js.native
-    val reverse_iterator: Instantiable0[
-        typings.tstl.baseContainerMapElementListMod.MapElementList.ReverseIterator[
-          js.Object, 
-          js.Object, 
-          Boolean, 
-          MapContainer[
-            /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
-            typings.tstl.baseContainerMapElementListMod.MapElementList.Iterator[
-              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-            ], 
-            typings.tstl.baseContainerMapElementListMod.MapElementList.ReverseIterator[
-              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-            ]
-          ]
-        ]
-      ] = js.native
+    val Iterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MapElementList.Iterator */ js.Any = js.native
+    val ReverseIterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MapElementList.ReverseIterator */ js.Any = js.native
+    val iterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MapElementList.Iterator */ js.Any = js.native
+    val reverse_iterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MapElementList.ReverseIterator */ js.Any = js.native
   }
   
 }

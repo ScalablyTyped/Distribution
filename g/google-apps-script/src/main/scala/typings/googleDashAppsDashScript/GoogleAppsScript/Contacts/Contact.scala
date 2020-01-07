@@ -98,7 +98,7 @@ trait Contact extends js.Object {
   def getUrls(label: String): js.Array[UrlField] = js.native
   def getUrls(label: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Field */ js.Any): js.Array[UrlField] = js.native
   /** @deprecated DO NOT USE */ def getUserDefinedField(key: String): String = js.native
-  /** @deprecated DO NOT USE */ def getUserDefinedFields(): js.Any = js.native
+  /** @deprecated DO NOT USE */ def getUserDefinedFields(): js.Object = js.native
   /** @deprecated DO NOT USE */ def getWorkAddress(): String = js.native
   /** @deprecated DO NOT USE */ def getWorkFax(): String = js.native
   /** @deprecated DO NOT USE */ def getWorkPhone(): String = js.native
@@ -121,7 +121,7 @@ trait Contact extends js.Object {
   def setShortName(shortName: String): Contact = js.native
   def setSuffix(suffix: String): Contact = js.native
   /** @deprecated DO NOT USE */ def setUserDefinedField(key: String, value: String): Unit = js.native
-  /** @deprecated DO NOT USE */ def setUserDefinedFields(o: js.Any): Unit = js.native
+  /** @deprecated DO NOT USE */ def setUserDefinedFields(o: js.Object): Unit = js.native
   /** @deprecated DO NOT USE */ def setWorkAddress(addr: String): Unit = js.native
   /** @deprecated DO NOT USE */ def setWorkFax(phone: String): Unit = js.native
   /** @deprecated DO NOT USE */ def setWorkPhone(phone: String): Unit = js.native

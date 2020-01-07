@@ -1,0 +1,52 @@
+package typings.googleapis.buildSrcApisVisionV1p1beta1Mod.vision_v1p1beta1
+
+import typings.gaxios.buildSrcCommonMod.GaxiosPromise
+import typings.googleapisDashCommon.buildSrcApiMod.APIRequestContext
+import typings.googleapisDashCommon.buildSrcApiMod.BodyResponseCallback
+import typings.googleapisDashCommon.buildSrcApiMod.MethodOptions
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("googleapis/build/src/apis/vision/v1p1beta1", "vision_v1p1beta1.Resource$Files")
+@js.native
+class Resource$Files protected () extends js.Object {
+  def this(context: APIRequestContext) = this()
+  var context: APIRequestContext = js.native
+  /**
+    * vision.files.asyncBatchAnnotate
+    * @desc Run asynchronous image detection and annotation for a list of
+    * generic files, such as PDF files, which may contain multiple pages and
+    * multiple images per page. Progress and results can be retrieved through
+    * the `google.longrunning.Operations` interface. `Operation.metadata`
+    * contains `OperationMetadata` (metadata). `Operation.response` contains
+    * `AsyncBatchAnnotateFilesResponse` (results).
+    * @alias vision.files.asyncBatchAnnotate
+    * @memberOf! ()
+    *
+    * @param {object} params Parameters for request
+    * @param {().GoogleCloudVisionV1p1beta1AsyncBatchAnnotateFilesRequest} params.resource Request body data
+    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param {callback} callback The callback that handles the response.
+    * @return {object} Request object
+    */
+  def asyncBatchAnnotate(): GaxiosPromise[Schema$Operation] = js.native
+  def asyncBatchAnnotate(callback: BodyResponseCallback[Schema$Operation]): Unit = js.native
+  def asyncBatchAnnotate(params: ParamsDollarResourceDollarFilesDollarAsyncbatchannotate): GaxiosPromise[Schema$Operation] = js.native
+  def asyncBatchAnnotate(
+    params: ParamsDollarResourceDollarFilesDollarAsyncbatchannotate,
+    callback: BodyResponseCallback[Schema$Operation]
+  ): Unit = js.native
+  def asyncBatchAnnotate(
+    params: ParamsDollarResourceDollarFilesDollarAsyncbatchannotate,
+    options: BodyResponseCallback[Schema$Operation],
+    callback: BodyResponseCallback[Schema$Operation]
+  ): Unit = js.native
+  def asyncBatchAnnotate(params: ParamsDollarResourceDollarFilesDollarAsyncbatchannotate, options: MethodOptions): GaxiosPromise[Schema$Operation] = js.native
+  def asyncBatchAnnotate(
+    params: ParamsDollarResourceDollarFilesDollarAsyncbatchannotate,
+    options: MethodOptions,
+    callback: BodyResponseCallback[Schema$Operation]
+  ): Unit = js.native
+}
+

@@ -1,7 +1,6 @@
 package typings.tstl
 
 import typings.tstl.functionalIPointerMod.IPointer.ValueType
-import typings.tstl.iteratorIFakeMod.General
 import typings.tstl.iteratorIRandomAccessIteratorMod.IRandomAccessIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -30,8 +29,8 @@ object algorithmHeapMod extends js.Object {
       Boolean
     ]
   ): RandomAccessIterator = js.native
-  def make_heap[RandomAccessIterator /* <: General[IRandomAccessIterator[ValueType[RandomAccessIterator], RandomAccessIterator]] */](first: RandomAccessIterator, last: RandomAccessIterator): Unit = js.native
-  def make_heap[RandomAccessIterator /* <: General[IRandomAccessIterator[ValueType[RandomAccessIterator], RandomAccessIterator]] */](
+  def make_heap[RandomAccessIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IRandomAccessIterator<IPointer.ValueType<RandomAccessIterator>, RandomAccessIterator>> */ js.Any */](first: RandomAccessIterator, last: RandomAccessIterator): Unit = js.native
+  def make_heap[RandomAccessIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IRandomAccessIterator<IPointer.ValueType<RandomAccessIterator>, RandomAccessIterator>> */ js.Any */](
     first: RandomAccessIterator,
     last: RandomAccessIterator,
     comp: js.Function2[
@@ -40,8 +39,8 @@ object algorithmHeapMod extends js.Object {
       Boolean
     ]
   ): Unit = js.native
-  def pop_heap[RandomAccessIterator /* <: General[IRandomAccessIterator[ValueType[RandomAccessIterator], RandomAccessIterator]] */](first: RandomAccessIterator, last: RandomAccessIterator): Unit = js.native
-  def pop_heap[RandomAccessIterator /* <: General[IRandomAccessIterator[ValueType[RandomAccessIterator], RandomAccessIterator]] */](
+  def pop_heap[RandomAccessIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IRandomAccessIterator<IPointer.ValueType<RandomAccessIterator>, RandomAccessIterator>> */ js.Any */](first: RandomAccessIterator, last: RandomAccessIterator): Unit = js.native
+  def pop_heap[RandomAccessIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IRandomAccessIterator<IPointer.ValueType<RandomAccessIterator>, RandomAccessIterator>> */ js.Any */](
     first: RandomAccessIterator,
     last: RandomAccessIterator,
     comp: js.Function2[
@@ -50,8 +49,8 @@ object algorithmHeapMod extends js.Object {
       Boolean
     ]
   ): Unit = js.native
-  def push_heap[RandomAccessIterator /* <: General[IRandomAccessIterator[ValueType[RandomAccessIterator], RandomAccessIterator]] */](first: RandomAccessIterator, last: RandomAccessIterator): Unit = js.native
-  def push_heap[RandomAccessIterator /* <: General[IRandomAccessIterator[ValueType[RandomAccessIterator], RandomAccessIterator]] */](
+  def push_heap[RandomAccessIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IRandomAccessIterator<IPointer.ValueType<RandomAccessIterator>, RandomAccessIterator>> */ js.Any */](first: RandomAccessIterator, last: RandomAccessIterator): Unit = js.native
+  def push_heap[RandomAccessIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IRandomAccessIterator<IPointer.ValueType<RandomAccessIterator>, RandomAccessIterator>> */ js.Any */](
     first: RandomAccessIterator,
     last: RandomAccessIterator,
     comp: js.Function2[
@@ -60,8 +59,8 @@ object algorithmHeapMod extends js.Object {
       Boolean
     ]
   ): Unit = js.native
-  def sort_heap[RandomAccessIterator /* <: General[IRandomAccessIterator[ValueType[RandomAccessIterator], RandomAccessIterator]] */](first: RandomAccessIterator, last: RandomAccessIterator): Unit = js.native
-  def sort_heap[RandomAccessIterator /* <: General[IRandomAccessIterator[ValueType[RandomAccessIterator], RandomAccessIterator]] */](
+  def sort_heap[RandomAccessIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IRandomAccessIterator<IPointer.ValueType<RandomAccessIterator>, RandomAccessIterator>> */ js.Any */](first: RandomAccessIterator, last: RandomAccessIterator): Unit = js.native
+  def sort_heap[RandomAccessIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IRandomAccessIterator<IPointer.ValueType<RandomAccessIterator>, RandomAccessIterator>> */ js.Any */](
     first: RandomAccessIterator,
     last: RandomAccessIterator,
     comp: js.Function2[

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-navigation-stack"
-version := "1.10.3-786520"
+version := "1.10.3-885bd7"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,9 +8,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.6-fd5644",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-b24434",
   "org.scalablytyped" %%% "react" % "16.9-dt-20191220Z-22d23f",
-  "org.scalablytyped" %%% "react-native" % "0.60-dt-20191230Z-16d6c0",
-  "org.scalablytyped" %%% "react-native-gesture-handler" % "1.5.3-a38956",
-  "org.scalablytyped" %%% "react-navigation" % "4.0.10-43018a",
+  "org.scalablytyped" %%% "react-native" % "0.60-dt-20200106Z-21dc31",
+  "org.scalablytyped" %%% "react-native-gesture-handler" % "1.5.3-465491",
+  "org.scalablytyped" %%% "react-navigation" % "4.0.10-5b5895",
   "org.scalablytyped" %%% "std" % "3.7-b6d959")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

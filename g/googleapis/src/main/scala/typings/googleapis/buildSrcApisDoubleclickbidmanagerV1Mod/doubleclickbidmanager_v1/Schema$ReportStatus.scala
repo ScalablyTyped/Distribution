@@ -1,0 +1,46 @@
+package typings.googleapis.buildSrcApisDoubleclickbidmanagerV1Mod.doubleclickbidmanager_v1
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+  * Report status.
+  */
+@js.native
+trait Schema$ReportStatus extends js.Object {
+  /**
+    * If the report failed, this records the cause.
+    */
+  var failure: js.UndefOr[Schema$ReportFailure] = js.native
+  /**
+    * The time when this report either completed successfully or failed.
+    */
+  var finishTimeMs: js.UndefOr[String] = js.native
+  /**
+    * The file type of the report.
+    */
+  var format: js.UndefOr[String] = js.native
+  /**
+    * The state of the report.
+    */
+  var state: js.UndefOr[String] = js.native
+}
+
+object Schema$ReportStatus {
+  @scala.inline
+  def apply(
+    failure: Schema$ReportFailure = null,
+    finishTimeMs: String = null,
+    format: String = null,
+    state: String = null
+  ): Schema$ReportStatus = {
+    val __obj = js.Dynamic.literal()
+    if (failure != null) __obj.updateDynamic("failure")(failure.asInstanceOf[js.Any])
+    if (finishTimeMs != null) __obj.updateDynamic("finishTimeMs")(finishTimeMs.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Schema$ReportStatus]
+  }
+}
+

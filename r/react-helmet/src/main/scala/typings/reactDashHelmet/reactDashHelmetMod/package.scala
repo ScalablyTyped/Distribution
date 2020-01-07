@@ -16,8 +16,9 @@ package object reactDashHelmetMod {
   import typings.std.HTMLLinkElement
   import typings.std.HTMLMetaElement
 
-  type BodyProps = (DetailedHTMLProps[HTMLAttributes[HTMLBodyElement], HTMLBodyElement]) with StringDictionary[String]
-  type HtmlProps = (DetailedHTMLProps[HtmlHTMLAttributes[HTMLHtmlElement], HTMLHtmlElement]) with StringDictionary[String]
+  type BodyProps = (DetailedHTMLProps[HTMLAttributes[HTMLBodyElement], HTMLBodyElement]) with OtherElementAttributes
+  type HtmlProps = (DetailedHTMLProps[HtmlHTMLAttributes[HTMLHtmlElement], HTMLHtmlElement]) with OtherElementAttributes
   type LinkProps = DetailedHTMLProps[LinkHTMLAttributes[HTMLLinkElement], HTMLLinkElement]
   type MetaProps = DetailedHTMLProps[MetaHTMLAttributes[HTMLMetaElement], HTMLMetaElement]
+  type OtherElementAttributes = StringDictionary[js.UndefOr[String | Double | Boolean | Null]]
 }

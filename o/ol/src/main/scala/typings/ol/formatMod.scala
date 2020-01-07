@@ -2,6 +2,7 @@ package typings.ol
 
 import typings.ol.formatEsriJSONMod.Options
 import typings.ol.formatEsriJSONMod.default
+import typings.ol.formatIIIFInfoMod.ImageInformationResponse
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,6 +31,13 @@ object formatMod extends js.Object {
   class IGC ()
     extends typings.ol.formatIGCMod.default {
     def this(opt_options: typings.ol.formatIGCMod.Options) = this()
+  }
+  
+  @js.native
+  class IIIFInfo protected ()
+    extends typings.ol.formatIIIFInfoMod.default {
+    def this(imageInfo: String) = this()
+    def this(imageInfo: ImageInformationResponse) = this()
   }
   
   @js.native
@@ -86,6 +94,7 @@ object formatMod extends js.Object {
   class WMTSCapabilities ()
     extends typings.ol.formatWMTSCapabilitiesMod.default
   
-  val GML: typings.ol.formatGML3Mod.default = js.native
+  def GML(): Unit = js.native
+  def GML(opt_options: typings.ol.formatGMLBaseMod.Options): Unit = js.native
 }
 

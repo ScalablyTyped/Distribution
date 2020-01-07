@@ -6,6 +6,7 @@ import typings.ol.objectMod.ObjectEvent
 import typings.ol.olStrings.changeColoncoordinateFormat
 import typings.ol.olStrings.changeColonprojection
 import typings.ol.projMod.ProjectionLike
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,10 +14,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait MousePosition
   extends typings.ol.controlControlMod.default {
-  def getCoordinateFormat(): js.UndefOr[CoordinateFormat] = js.native
-  def getProjection(): js.UndefOr[typings.ol.projProjectionMod.default] = js.native
-  /* protected */ def handleMouseMove(event: typings.ol.eventsEventMod.default): Unit = js.native
-  /* protected */ def handleMouseOut(event: typings.ol.eventsEventMod.default): Unit = js.native
+  def getCoordinateFormat(): CoordinateFormat = js.native
+  def getProjection(): typings.ol.projProjectionMod.default = js.native
+  /* protected */ def handleMouseMove(event: Event): Unit = js.native
+  /* protected */ def handleMouseOut(event: Event): Unit = js.native
   @JSName("on")
   def on_changecoordinateFormat(`type`: changeColoncoordinateFormat, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
   @JSName("on")

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("ol/events/Event", JSImport.Default)
 @js.native
-class default protected () extends Event {
+class default protected () extends BaseEvent {
   def this(`type`: String) = this()
   /* CompleteClass */
   override var target: js.Any = js.native

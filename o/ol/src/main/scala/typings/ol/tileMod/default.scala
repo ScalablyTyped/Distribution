@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("ol/Tile", JSImport.Default)
 @js.native
-class default protected () extends Tile {
+abstract class default protected () extends Tile {
   def this(tileCoord: TileCoord, state: TileState) = this()
   def this(tileCoord: TileCoord, state: TileState, opt_options: Options) = this()
 }

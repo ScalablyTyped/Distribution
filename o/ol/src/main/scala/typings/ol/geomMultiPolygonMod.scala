@@ -14,6 +14,7 @@ object geomMultiPolygonMod extends js.Object {
     extends typings.ol.geomSimpleGeometryMod.default {
     def appendPolygon(polygon: typings.ol.geomPolygonMod.default): Unit = js.native
     def getArea(): Double = js.native
+    def getCoordinates(opt_right: Boolean): js.Array[js.Array[js.Array[Coordinate]]] = js.native
     def getEndss(): js.Array[js.Array[Double]] = js.native
     def getFlatInteriorPoints(): js.Array[Double] = js.native
     def getInteriorPoints(): typings.ol.geomMultiPointMod.default = js.native

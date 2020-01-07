@@ -15,7 +15,11 @@ object formatGML3Mod extends js.Object {
   trait GML3
     extends typings.ol.formatGMLBaseMod.default {
     def writeEnvelope(node: Element, extent: Extent, objectStack: js.Array[_]): Unit = js.native
-    def writeFeatureElement(node: Element, feature: typings.ol.featureMod.default, objectStack: js.Array[_]): Unit = js.native
+    def writeFeatureElement(
+      node: Element,
+      feature: typings.ol.featureMod.default[typings.ol.geomGeometryMod.default],
+      objectStack: js.Array[_]
+    ): Unit = js.native
     def writeGeometryElement(node: Node, geometry: Extent, objectStack: js.Array[_]): Unit = js.native
     def writeGeometryElement(node: Node, geometry: typings.ol.geomGeometryMod.default, objectStack: js.Array[_]): Unit = js.native
   }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "stacktrace-js" : "2.0.1"
+      "stacktrace-js" : "2.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "stacktrace-js" : "2.0.1"
+      "stacktrace-js" : "2.0.2"
     }
   ],
   "compile-devDependencies" : [

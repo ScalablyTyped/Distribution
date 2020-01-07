@@ -17,6 +17,7 @@ object domMod extends js.Object {
   def outerWidth(element: HTMLElement): Double = js.native
   def removeChildren(node: Node): Unit = js.native
   def removeNode(node: Node): Node = js.native
+  def replaceChildren(node: Node, children: js.Array[Node]): Unit = js.native
   def replaceNode(newNode: Node, oldNode: Node): Unit = js.native
 }
 

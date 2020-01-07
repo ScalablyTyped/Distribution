@@ -4,9 +4,8 @@ import typings.ecol.libBasicCollectionEventMod.CollectionEvent
 import typings.ecol.libBasicCollectionEventMod.CollectionEvent.Listener
 import typings.ecol.libBasicCollectionEventMod.CollectionEvent.Type
 import typings.ecol.libBasicIEventDispatcherMod.IEventDispatcher
-import typings.tstl.baseIteratorIteratorMod.Iterator
+import typings.std.Iterator
 import typings.tstl.tstlMod.base.Container
-import typings.tstl.tstlMod.base.ReverseIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,7 +14,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object libBasicEventDispatcherMod extends js.Object {
   @js.native
-  class EventDispatcher[T, SourceT /* <: Container[T, SourceT, IteratorT, ReverseT, T] */, IteratorT /* <: Iterator[T, SourceT, IteratorT, ReverseT, T] */, ReverseT /* <: ReverseIterator[T, SourceT, IteratorT, ReverseT, T] */] () extends IEventDispatcher[T, SourceT, IteratorT, ReverseT] {
+  class EventDispatcher[T, SourceT /* <: Container[T, SourceT, IteratorT, ReverseT, T] */, IteratorT /* <: Iterator[T, SourceT, IteratorT] */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ js.Any */] () extends IEventDispatcher[T, SourceT, IteratorT, ReverseT] {
     /**
       * @hidden
       */

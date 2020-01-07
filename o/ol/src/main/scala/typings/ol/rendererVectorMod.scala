@@ -1,7 +1,8 @@
 package typings.ol
 
 import typings.ol.featureMod.FeatureLike
-import typings.ol.renderReplayGroupMod.default
+import typings.ol.projMod.TransformFunction
+import typings.ol.renderCanvasBuilderGroupMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,8 +18,15 @@ object rendererVectorMod extends js.Object {
     feature: FeatureLike,
     style: typings.ol.styleStyleMod.default,
     squaredTolerance: Double,
-    listener: js.ThisFunction1[/* this */ T, /* p0 */ typings.ol.eventsEventMod.default, Unit],
-    thisArg: T
+    listener: js.Function1[/* p0 */ typings.ol.eventsEventMod.default, Unit]
+  ): Boolean = js.native
+  def renderFeature[T](
+    replayGroup: default,
+    feature: FeatureLike,
+    style: typings.ol.styleStyleMod.default,
+    squaredTolerance: Double,
+    listener: js.Function1[/* p0 */ typings.ol.eventsEventMod.default, Unit],
+    opt_transform: TransformFunction
   ): Boolean = js.native
 }
 

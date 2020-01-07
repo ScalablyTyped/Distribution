@@ -318,6 +318,7 @@
 | [appletvjs](./a/appletvjs) | - | - |
 | [applicationinsights](./a/applicationinsights) | Microsoft Application Insights module for Node.js | exception monitoring, request monitoring, performance monitoring, application insights, microsoft, azure, cloud, tracing, telemetry, analytics, apm |
 | [applicationinsights-js](./a/applicationinsights-js) | Microsoft Application Insights JavaScript SDK | browser performance monitoring, script errors, application insights, microsoft, azure |
+| [apptimize__apptimize-web-](./a/apptimize__apptimize-web-sdk) | Apptimize Client SDK for Web | apptimize, ab, testing, experimentation, ab testing, a/b testing, cross platform, cross-platform, serverside a/b testing, javascript a/b testing, node flags, node flag, feature flag, feature toggle, feature switch, canary release, dark launch |
 | [aqb](./a/aqb) | ArangoDB AQL query builder. | arangodb, aql, nosql, query |
 | [arangodb](./a/arangodb) | - | - |
 | [arbiter](./a/arbiter) | A Salesforce ORM powered by jsforce | ORM, Salesforce, JSForce, Query |
@@ -850,7 +851,7 @@
 | [bunyan-seq](./b/bunyan-seq) | A Bunyan stream that sends log events to Seq | bunyan, seq |
 | [bunyan-winston-adapter](./b/bunyan-winston-adapter) | Allows to use winston logger in restify server wit | bunyan, winston, restify |
 | [burns](./b/burns) | Manage application events without writing spaghett | events, listeners, handlers, broadcasting, event-driven |
-| [busboy](./b/busboy) | - | - |
+| [busboy](./b/busboy) | A streaming parser for HTML form data for node.js | uploads, forms, multipart, form-data |
 | [business-rules-engine](./b/business-rules-engine) | business rules engine | business rules, validation, form |
 | [bwip-js](./b/bwip-js) | JavaScript barcode generator supporting over 100 t | bar code, generator, barcode, javascript, node, react, browser, itf, gs1, upc, ean, pdf417, matrix, datamatrix, qrcode, databar, code128, code39, svg, pdfkit |
 | [byline](./b/byline) | simple line-by-line stream reader | - |
@@ -938,7 +939,7 @@
 | [chai-roughly](./c/chai-roughly) | deep equals assertions with tolerance for chai | assertions, testing, chai, chai-plugin, numbers, deep-eql, tolerance |
 | [chai-spies](./c/chai-spies) | Spies for the Chai assertion library. | chai, chai-plugin, browser, mocks-and-spies, testing, spies, stubs, mocks |
 | [chai-string](./c/chai-string) | strings comparison matchers for chai | chai, testing, string, chai-plugin, browser |
-| [chai-subset](./c/chai-subset) | - | - |
+| [chai-subset](./c/chai-subset) | Object properties matcher for Chai | chai, chai-plugin, objects, subset, contains, plugin, containSubset, deep, like, match, similar, includes, superset |
 | [chai-things](./c/chai-things) | Chai Things adds support to  | chai, chai-plugin, browser, array, things |
 | [chai-uuid](./c/chai-uuid) | Chai plugin for performing assertions on UUIDs | chai, plugin, uuid, expect, should, guid, chai-plugin, browser |
 | [chai-webdriverio](./c/chai-webdriverio) | Chai assertions for use with webdriverio | webdriverio, webdriver, chai, chai matchers, assertion helpers |
@@ -2378,6 +2379,7 @@
 | [gapi_dot_client_dot_pages](./g/gapi_dot_client_dot_pagespeedonline) | - | - |
 | [gapi_dot_client_dot_partn](./g/gapi_dot_client_dot_partners) | - | - |
 | [gapi_dot_client_dot_peopl](./g/gapi_dot_client_dot_people) | - | - |
+| [gapi_dot_client_dot_photo](./g/gapi_dot_client_dot_photoslibrary) | - | - |
 | [gapi_dot_client_dot_playc](./g/gapi_dot_client_dot_playcustomapp) | - | - |
 | [gapi_dot_client_dot_playm](./g/gapi_dot_client_dot_playmoviespartner) | - | - |
 | [gapi_dot_client_dot_plus](./g/gapi_dot_client_dot_plus) | - | - |
@@ -2584,6 +2586,7 @@
 | [google_dot_picker](./g/google_dot_picker) | - | - |
 | [google_dot_script_dot_cli](./g/google_dot_script_dot_client-side) | - | - |
 | [google_dot_visualization](./g/google_dot_visualization) | - | - |
+| [googleapis](./g/googleapis) | Google APIs Client Library for Node.js | google, api, google apis, client, client library |
 | [googleapis-common](./g/googleapis-common) | A common tooling library used by the googleapis np | - |
 | [googlemaps](./g/googlemaps) | A simple way to query the Google Maps API from Nod | map, geo, google, api, googlemaps, google maps, google-maps, node google maps |
 | [googlemaps_dot_infobubble](./g/googlemaps_dot_infobubble) | - | - |
@@ -3361,6 +3364,7 @@
 | [jpeg-js](./j/jpeg-js) | A pure javascript JPEG encoder and decoder | jpeg, jpg, encoder, decoder, codec, image, javascript, js |
 | [jpegtran-bin](./j/jpegtran-bin) | jpegtran (part of libjpeg-turbo) bin-wrapper that  | imagemin, compress, image, img, jpeg, jpg, minify, optimize, jpegtran |
 | [jpm](./j/jpm) | Jetpack Mechanic utilities for creating, testing,  | firefox, mozilla, jetpack, jpm |
+| [jpush-react-native](./j/jpush-react-native) | React Native JPush component for Android and iOS | react-native, JPush |
 | [jqgrid](./j/jqgrid) | jQuery grid plugin | - |
 | [jqrangeslider](./j/jqrangeslider) | jQRangeSlider, jQDateRangeSlider & jQEditRangeSlid | jqrangeslider, jqueryui-range, selection-slider, dates-slider |
 | [jquery](./j/jquery) | JavaScript library for DOM operations | jquery, javascript, browser, library |
@@ -4472,9 +4476,7 @@
 | [material-ui-datatables](./m/material-ui-datatables) | An another React Data tables component. | react, react-component, material design, material-ui, datatables |
 | [material-ui-pagination](./m/material-ui-pagination) | An easy to use and customizable pagination compone | pagination, material-ui |
 | [material-ui__core](./m/material-ui__core) | React components that implement Google's Material  | react, react-component, material design, material-ui |
-| [material-ui__styles](./m/material-ui__styles) | Material-UI Styles - The styling solution of Mater | react, react-component, material design, material-ui, styles |
-| [material-ui__system](./m/material-ui__system) | Material-UI System - Design system for Material-UI | react, react-component, material design, material-ui, system |
-| [material-ui__types](./m/material-ui__types) | Material-UI Types - Utility types for Material-UI. | react, react-component, material design, material-ui, types |
+| [material-ui__icons](./m/material-ui__icons) | Material Design Svg Icons converted to Material-UI | react, react-component, material design, material-ui, icons |
 | [material__animation](./m/material__animation) | Animation Variables and Mixins used by Material Co | material components, material design, animation |
 | [material__auto-init](./m/material__auto-init) | Declarative, easy-to-use auto-initialization for M | - |
 | [material__base](./m/material__base) | The set of base classes for Material Components fo | - |
@@ -4748,6 +4750,8 @@
 | [multer-s3](./m/multer-s3) | Streaming multer storage engine for AWS S3 | multer, s3, amazon, aws |
 | [multi-progress](./m/multi-progress) | Multiple progress bars based on the "progress" pac | multi, multiple, progress, bar |
 | [multi-typeof](./m/multi-typeof) | Check something against an array of types. | check, multi, multiple, test, type, typeof |
+| [multiaddr](./m/multiaddr) | multiaddr implementation (binary + string represen | multiaddr, binary, string |
+| [multibase](./m/multibase) | JavaScript implementation of the multibase specifi | IPFS, multiformats, multibase, encode, decode, formats |
 | [multimap](./m/multimap) | multi-map which allow multiple values for the same | keys, map, multiple |
 | [multimatch](./m/multimatch) | Extends minimatch.match() with support for multipl | expand, find, glob, globbing, globs, match, matcher, minimatch, pattern, patterns, wildcard |
 | [multiparty](./m/multiparty) | multipart/form-data parser which supports streamin | file, upload, formidable, stream, s3 |
@@ -6169,6 +6173,7 @@
 | [react-native-ratings](./r/react-native-ratings) | The standard Ratings component for React Native | react-native, reactjs, reactnative, gestures, ios, stars, android, ratings, ui-components |
 | [react-native-read-more-te](./r/react-native-read-more-text) | Add a 'Read More' and optionally a 'Read Less' but | - |
 | [react-native-referrer](./r/react-native-referrer) |   | react-native, referrer, play store |
+| [react-native-responsive-d](./r/react-native-responsive-dimensions) | Resposive fontSize, height and width for your reac | react-native, responsive, responsive-height, responsive-width, responsive-font-size, fontSize, responsive-dimensions |
 | [react-native-restart](./r/react-native-restart) | React Native Restart Component | react-component, react-native, ios, android, restart |
 | [react-native-rss-parser](./r/react-native-rss-parser) | React Native compatible package to parse RSS feeds | react, native, rss, parser |
 | [react-native-safari-view](./r/react-native-safari-view) | A React Native wrapper for Safari View Controller | react-native, react, native, webview, web, view, safari, safariview, react-component, react-native-component |
@@ -7755,6 +7760,7 @@
 | [use-deep-compare-effect](./u/use-deep-compare-effect) | It's react's useEffect hook, except using deep com | - |
 | [use-global-hook](./u/use-global-hook) | Easy state management for react using hooks in les | - |
 | [use-it__event-listener](./u/use-it__event-listener) | A custom React Hook that provides a useEventListen | react-hooks, hooks, react, utils, lib, event-listener |
+| [use-json-comparison](./u/use-json-comparison) | use json for deep comparison | - |
 | [use-media-antd-query](./u/use-media-antd-query) | An antd compatible media query hooks | - |
 | [use-merge-value](./u/use-merge-value) | Easier to write a controlled component | - |
 | [use-persisted-state](./u/use-persisted-state) | A custom React Hook that provides a multi-instance | react-hooks, hooks, react, utils, lib, persistent, localstorage |

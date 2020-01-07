@@ -1,0 +1,41 @@
+package typings.googleapis.buildSrcApisPubsubV1beta2Mod.pubsub_v1beta2
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+  * Request for the ModifyAckDeadline method.
+  */
+@js.native
+trait Schema$ModifyAckDeadlineRequest extends js.Object {
+  /**
+    * The new ack deadline with respect to the time this request was sent to
+    * the Pub/Sub system. Must be &gt;= 0. For example, if the value is 10, the
+    * new ack deadline will expire 10 seconds after the `ModifyAckDeadline`
+    * call was made. Specifying zero may immediately make the message available
+    * for another pull request.
+    */
+  var ackDeadlineSeconds: js.UndefOr[Double] = js.native
+  /**
+    * The acknowledgment ID. Either this or ack_ids must be populated, but not
+    * both.
+    */
+  var ackId: js.UndefOr[String] = js.native
+  /**
+    * List of acknowledgment IDs.
+    */
+  var ackIds: js.UndefOr[js.Array[String]] = js.native
+}
+
+object Schema$ModifyAckDeadlineRequest {
+  @scala.inline
+  def apply(ackDeadlineSeconds: Int | Double = null, ackId: String = null, ackIds: js.Array[String] = null): Schema$ModifyAckDeadlineRequest = {
+    val __obj = js.Dynamic.literal()
+    if (ackDeadlineSeconds != null) __obj.updateDynamic("ackDeadlineSeconds")(ackDeadlineSeconds.asInstanceOf[js.Any])
+    if (ackId != null) __obj.updateDynamic("ackId")(ackId.asInstanceOf[js.Any])
+    if (ackIds != null) __obj.updateDynamic("ackIds")(ackIds.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Schema$ModifyAckDeadlineRequest]
+  }
+}
+

@@ -1,5 +1,6 @@
 package typings.ol
 
+import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,9 +14,12 @@ object geomFlatTextpathMod extends js.Object {
     end: Double,
     stride: Double,
     text: String,
-    measure: js.Function1[/* p0 */ String, Double],
     startM: Double,
-    maxAngle: Double
+    maxAngle: Double,
+    scale: Double,
+    measureAndCacheTextWidth: js.Function3[/* p0 */ String, /* p1 */ String, /* p2 */ StringDictionary[Double], Double],
+    font: String,
+    cache: StringDictionary[Double]
   ): js.Array[js.Array[_]] = js.native
 }
 

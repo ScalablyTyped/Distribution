@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait UserConfigurationType extends js.Object {
-  /* Run Iapetus only if service is detected ro be running in Kubernetes. Default: true. */
+  /* Run Lightship in local mode when Kubernetes is not detected. Default: true. */
   var detectKubernetes: js.UndefOr[Boolean] = js.undefined
-  /* The port on which the Lightship service listens. This port must be different than your main service port, if any. The default port is 9000.*/
+  /* The port on which the Lightship service listens. This port must be different than your main service port, if any. The default port is 9000. */
   var port: js.UndefOr[Double] = js.undefined
-  /* An a array of [signal events]{@link https://nodejs.org/api/process.html#process_signal_events}. Default: [SIGTERM]. */
+  /* An a array of [signal events]{@link https://nodejs.org/api/process.html#process_signal_events}. Default: [SIGTERM, SIGHUP, SIGINT]. */
   var signals: js.UndefOr[js.Array[Signals]] = js.undefined
-  /* A number of milliseconds before force full termination. Default: 60000. */
+  /* A number of milliseconds before forceful termination. Default: 60000. */
   var timeout: js.UndefOr[Double] = js.undefined
 }
 

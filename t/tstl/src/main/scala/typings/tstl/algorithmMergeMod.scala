@@ -1,9 +1,6 @@
 package typings.tstl
 
 import typings.tstl.functionalIPointerMod.IPointer.ValueType
-import typings.tstl.iteratorIBidirectionalIteratorMod.IBidirectionalIterator
-import typings.tstl.iteratorIFakeMod.General
-import typings.tstl.iteratorIFakeMod.Writeonly
 import typings.tstl.iteratorIForwardIteratorMod.IForwardIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -20,8 +17,8 @@ object algorithmMergeMod extends js.Object {
     last2: InputIterator2,
     comp: js.Function2[/* x */ ValueType[InputIterator1], /* y */ ValueType[InputIterator1], Boolean]
   ): Boolean = js.native
-  def inplace_merge[BidirectionalIterator /* <: General[IBidirectionalIterator[ValueType[BidirectionalIterator], BidirectionalIterator]] */](first: BidirectionalIterator, middle: BidirectionalIterator, last: BidirectionalIterator): Unit = js.native
-  def inplace_merge[BidirectionalIterator /* <: General[IBidirectionalIterator[ValueType[BidirectionalIterator], BidirectionalIterator]] */](
+  def inplace_merge[BidirectionalIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IBidirectionalIterator<IPointer.ValueType<BidirectionalIterator>, BidirectionalIterator>> */ js.Any */](first: BidirectionalIterator, middle: BidirectionalIterator, last: BidirectionalIterator): Unit = js.native
+  def inplace_merge[BidirectionalIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IBidirectionalIterator<IPointer.ValueType<BidirectionalIterator>, BidirectionalIterator>> */ js.Any */](
     first: BidirectionalIterator,
     middle: BidirectionalIterator,
     last: BidirectionalIterator,
@@ -31,14 +28,14 @@ object algorithmMergeMod extends js.Object {
       Boolean
     ]
   ): Unit = js.native
-  def merge[InputIterator1 /* <: IForwardIterator[ValueType[InputIterator1], InputIterator1] */, InputIterator2 /* <: IForwardIterator[ValueType[InputIterator1], InputIterator2] */, OutputIterator /* <: Writeonly[IForwardIterator[ValueType[InputIterator1], OutputIterator]] */](
+  def merge[InputIterator1 /* <: IForwardIterator[ValueType[InputIterator1], InputIterator1] */, InputIterator2 /* <: IForwardIterator[ValueType[InputIterator1], InputIterator2] */, OutputIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Writeonly<IForwardIterator<IPointer.ValueType<InputIterator1>, OutputIterator>> */ js.Any */](
     first1: InputIterator1,
     last1: InputIterator1,
     first2: InputIterator2,
     last2: InputIterator2,
     output: OutputIterator
   ): OutputIterator = js.native
-  def merge[InputIterator1 /* <: IForwardIterator[ValueType[InputIterator1], InputIterator1] */, InputIterator2 /* <: IForwardIterator[ValueType[InputIterator1], InputIterator2] */, OutputIterator /* <: Writeonly[IForwardIterator[ValueType[InputIterator1], OutputIterator]] */](
+  def merge[InputIterator1 /* <: IForwardIterator[ValueType[InputIterator1], InputIterator1] */, InputIterator2 /* <: IForwardIterator[ValueType[InputIterator1], InputIterator2] */, OutputIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Writeonly<IForwardIterator<IPointer.ValueType<InputIterator1>, OutputIterator>> */ js.Any */](
     first1: InputIterator1,
     last1: InputIterator1,
     first2: InputIterator2,
@@ -46,14 +43,14 @@ object algorithmMergeMod extends js.Object {
     output: OutputIterator,
     comp: js.Function2[/* x */ ValueType[InputIterator1], /* y */ ValueType[InputIterator1], Boolean]
   ): OutputIterator = js.native
-  def set_difference[InputIterator1 /* <: IForwardIterator[ValueType[InputIterator1], InputIterator1] */, InputIterator2 /* <: IForwardIterator[ValueType[InputIterator1], InputIterator2] */, OutputIterator /* <: Writeonly[IForwardIterator[ValueType[InputIterator1], OutputIterator]] */](
+  def set_difference[InputIterator1 /* <: IForwardIterator[ValueType[InputIterator1], InputIterator1] */, InputIterator2 /* <: IForwardIterator[ValueType[InputIterator1], InputIterator2] */, OutputIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Writeonly<IForwardIterator<IPointer.ValueType<InputIterator1>, OutputIterator>> */ js.Any */](
     first1: InputIterator1,
     last1: InputIterator1,
     first2: InputIterator2,
     last2: InputIterator2,
     output: OutputIterator
   ): OutputIterator = js.native
-  def set_difference[InputIterator1 /* <: IForwardIterator[ValueType[InputIterator1], InputIterator1] */, InputIterator2 /* <: IForwardIterator[ValueType[InputIterator1], InputIterator2] */, OutputIterator /* <: Writeonly[IForwardIterator[ValueType[InputIterator1], OutputIterator]] */](
+  def set_difference[InputIterator1 /* <: IForwardIterator[ValueType[InputIterator1], InputIterator1] */, InputIterator2 /* <: IForwardIterator[ValueType[InputIterator1], InputIterator2] */, OutputIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Writeonly<IForwardIterator<IPointer.ValueType<InputIterator1>, OutputIterator>> */ js.Any */](
     first1: InputIterator1,
     last1: InputIterator1,
     first2: InputIterator2,
@@ -61,14 +58,14 @@ object algorithmMergeMod extends js.Object {
     output: OutputIterator,
     comp: js.Function2[/* x */ ValueType[InputIterator1], /* y */ ValueType[InputIterator1], Boolean]
   ): OutputIterator = js.native
-  def set_intersection[InputIterator1 /* <: IForwardIterator[ValueType[InputIterator1], InputIterator1] */, InputIterator2 /* <: IForwardIterator[ValueType[InputIterator1], InputIterator2] */, OutputIterator /* <: Writeonly[IForwardIterator[ValueType[InputIterator1], OutputIterator]] */](
+  def set_intersection[InputIterator1 /* <: IForwardIterator[ValueType[InputIterator1], InputIterator1] */, InputIterator2 /* <: IForwardIterator[ValueType[InputIterator1], InputIterator2] */, OutputIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Writeonly<IForwardIterator<IPointer.ValueType<InputIterator1>, OutputIterator>> */ js.Any */](
     first1: InputIterator1,
     last1: InputIterator1,
     first2: InputIterator2,
     last2: InputIterator2,
     output: OutputIterator
   ): OutputIterator = js.native
-  def set_intersection[InputIterator1 /* <: IForwardIterator[ValueType[InputIterator1], InputIterator1] */, InputIterator2 /* <: IForwardIterator[ValueType[InputIterator1], InputIterator2] */, OutputIterator /* <: Writeonly[IForwardIterator[ValueType[InputIterator1], OutputIterator]] */](
+  def set_intersection[InputIterator1 /* <: IForwardIterator[ValueType[InputIterator1], InputIterator1] */, InputIterator2 /* <: IForwardIterator[ValueType[InputIterator1], InputIterator2] */, OutputIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Writeonly<IForwardIterator<IPointer.ValueType<InputIterator1>, OutputIterator>> */ js.Any */](
     first1: InputIterator1,
     last1: InputIterator1,
     first2: InputIterator2,
@@ -76,14 +73,14 @@ object algorithmMergeMod extends js.Object {
     output: OutputIterator,
     comp: js.Function2[/* x */ ValueType[InputIterator1], /* y */ ValueType[InputIterator1], Boolean]
   ): OutputIterator = js.native
-  def set_symmetric_difference[InputIterator1 /* <: IForwardIterator[ValueType[InputIterator1], InputIterator1] */, InputIterator2 /* <: IForwardIterator[ValueType[InputIterator1], InputIterator2] */, OutputIterator /* <: Writeonly[IForwardIterator[ValueType[InputIterator1], OutputIterator]] */](
+  def set_symmetric_difference[InputIterator1 /* <: IForwardIterator[ValueType[InputIterator1], InputIterator1] */, InputIterator2 /* <: IForwardIterator[ValueType[InputIterator1], InputIterator2] */, OutputIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Writeonly<IForwardIterator<IPointer.ValueType<InputIterator1>, OutputIterator>> */ js.Any */](
     first1: InputIterator1,
     last1: InputIterator1,
     first2: InputIterator2,
     last2: InputIterator2,
     output: OutputIterator
   ): OutputIterator = js.native
-  def set_symmetric_difference[InputIterator1 /* <: IForwardIterator[ValueType[InputIterator1], InputIterator1] */, InputIterator2 /* <: IForwardIterator[ValueType[InputIterator1], InputIterator2] */, OutputIterator /* <: Writeonly[IForwardIterator[ValueType[InputIterator1], OutputIterator]] */](
+  def set_symmetric_difference[InputIterator1 /* <: IForwardIterator[ValueType[InputIterator1], InputIterator1] */, InputIterator2 /* <: IForwardIterator[ValueType[InputIterator1], InputIterator2] */, OutputIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Writeonly<IForwardIterator<IPointer.ValueType<InputIterator1>, OutputIterator>> */ js.Any */](
     first1: InputIterator1,
     last1: InputIterator1,
     first2: InputIterator2,
@@ -91,14 +88,14 @@ object algorithmMergeMod extends js.Object {
     output: OutputIterator,
     comp: js.Function2[/* x */ ValueType[InputIterator1], /* y */ ValueType[InputIterator1], Boolean]
   ): OutputIterator = js.native
-  def set_union[InputIterator1 /* <: IForwardIterator[ValueType[InputIterator1], InputIterator1] */, InputIterator2 /* <: IForwardIterator[ValueType[InputIterator1], InputIterator2] */, OutputIterator /* <: Writeonly[IForwardIterator[ValueType[InputIterator1], OutputIterator]] */](
+  def set_union[InputIterator1 /* <: IForwardIterator[ValueType[InputIterator1], InputIterator1] */, InputIterator2 /* <: IForwardIterator[ValueType[InputIterator1], InputIterator2] */, OutputIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Writeonly<IForwardIterator<IPointer.ValueType<InputIterator1>, OutputIterator>> */ js.Any */](
     first1: InputIterator1,
     last1: InputIterator1,
     first2: InputIterator2,
     last2: InputIterator2,
     output: OutputIterator
   ): OutputIterator = js.native
-  def set_union[InputIterator1 /* <: IForwardIterator[ValueType[InputIterator1], InputIterator1] */, InputIterator2 /* <: IForwardIterator[ValueType[InputIterator1], InputIterator2] */, OutputIterator /* <: Writeonly[IForwardIterator[ValueType[InputIterator1], OutputIterator]] */](
+  def set_union[InputIterator1 /* <: IForwardIterator[ValueType[InputIterator1], InputIterator1] */, InputIterator2 /* <: IForwardIterator[ValueType[InputIterator1], InputIterator2] */, OutputIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Writeonly<IForwardIterator<IPointer.ValueType<InputIterator1>, OutputIterator>> */ js.Any */](
     first1: InputIterator1,
     last1: InputIterator1,
     first2: InputIterator2,

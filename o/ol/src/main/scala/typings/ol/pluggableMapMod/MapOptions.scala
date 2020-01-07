@@ -17,8 +17,6 @@ trait MapOptions extends js.Object {
   var layers: js.UndefOr[
     js.Array[typings.ol.layerBaseMod.default] | typings.ol.collectionMod.default[typings.ol.layerBaseMod.default] | typings.ol.layerGroupMod.default
   ] = js.undefined
-  var loadTilesWhileAnimating: js.UndefOr[Boolean] = js.undefined
-  var loadTilesWhileInteracting: js.UndefOr[Boolean] = js.undefined
   var maxTilesLoading: js.UndefOr[Double] = js.undefined
   var moveTolerance: js.UndefOr[Double] = js.undefined
   var overlays: js.UndefOr[
@@ -36,8 +34,6 @@ object MapOptions {
     interactions: typings.ol.collectionMod.default[typings.ol.interactionInteractionMod.default] | js.Array[typings.ol.interactionInteractionMod.default] = null,
     keyboardEventTarget: HTMLElement | Document | String = null,
     layers: js.Array[typings.ol.layerBaseMod.default] | typings.ol.collectionMod.default[typings.ol.layerBaseMod.default] | typings.ol.layerGroupMod.default = null,
-    loadTilesWhileAnimating: js.UndefOr[Boolean] = js.undefined,
-    loadTilesWhileInteracting: js.UndefOr[Boolean] = js.undefined,
     maxTilesLoading: Int | Double = null,
     moveTolerance: Int | Double = null,
     overlays: typings.ol.collectionMod.default[typings.ol.overlayMod.default] | js.Array[typings.ol.overlayMod.default] = null,
@@ -50,8 +46,6 @@ object MapOptions {
     if (interactions != null) __obj.updateDynamic("interactions")(interactions.asInstanceOf[js.Any])
     if (keyboardEventTarget != null) __obj.updateDynamic("keyboardEventTarget")(keyboardEventTarget.asInstanceOf[js.Any])
     if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
-    if (!js.isUndefined(loadTilesWhileAnimating)) __obj.updateDynamic("loadTilesWhileAnimating")(loadTilesWhileAnimating.asInstanceOf[js.Any])
-    if (!js.isUndefined(loadTilesWhileInteracting)) __obj.updateDynamic("loadTilesWhileInteracting")(loadTilesWhileInteracting.asInstanceOf[js.Any])
     if (maxTilesLoading != null) __obj.updateDynamic("maxTilesLoading")(maxTilesLoading.asInstanceOf[js.Any])
     if (moveTolerance != null) __obj.updateDynamic("moveTolerance")(moveTolerance.asInstanceOf[js.Any])
     if (overlays != null) __obj.updateDynamic("overlays")(overlays.asInstanceOf[js.Any])

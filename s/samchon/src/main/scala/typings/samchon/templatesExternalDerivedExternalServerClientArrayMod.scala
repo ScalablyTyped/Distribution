@@ -11,16 +11,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object templatesExternalDerivedExternalServerClientArrayMod extends js.Object {
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - typings.tstl.baseDisposableIForwardContainerMod.IForwardContainer because Already inherited
-  - typings.tstl.baseDisposableIPartialContainersMod._IPush because Already inherited
-  - typings.tstl.baseDisposableIPartialContainersMod._ISize because Already inherited
-  - typings.tstl.baseDisposableIPartialContainersMod._IEmpty because Already inherited
-  - typings.std.Iterable because Already inherited
-  - typings.tstl.baseDisposableIBidirectionalContainerMod.IBidirectionalContainer because Already inherited
-  - typings.tstl.baseContainerIContainerMod.IContainer because Already inherited
-  - typings.tstl.baseDisposableIPartialContainersMod._IPushBack because Already inherited
-  - typings.tstl.baseContainerContainerMod.Container because Already inherited
-  - typings.tstl.baseContainerArrayContainerMod.ArrayContainer because Already inherited
   - typings.ecol.libBasicIEventDispatcherMod.IEventDispatcher because Already inherited
   - typings.tstl.containerDequeMod.Deque because Already inherited
   - typings.ecol.libLinearDequeCollectionMod.DequeCollection because Already inherited

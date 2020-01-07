@@ -22,9 +22,9 @@ class default protected () extends Projection {
   /* CompleteClass */
   override def getExtent(): Extent = js.native
   /* CompleteClass */
-  override def getMetersPerUnit(): js.UndefOr[Double] = js.native
+  override def getMetersPerUnit(): Double = js.native
   /* CompleteClass */
-  override def getPointResolutionFunc(): js.Function2[/* p0 */ Double, /* p1 */ Coordinate, js.UndefOr[Double]] = js.native
+  override def getPointResolutionFunc(): js.Function2[/* p0 */ Double, /* p1 */ Coordinate, Double] = js.native
   /* CompleteClass */
   override def getUnits(): Units = js.native
   /* CompleteClass */

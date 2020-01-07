@@ -99,7 +99,7 @@ trait IScreenOptions extends INodeOptions {
     * Array of keys in their full format (e.g. C-c) to ignore when keys are locked or grabbed. Useful
     * for creating a key that will always exit no matter whether the keys are locked.
     */
-  var ignoreLocked: js.UndefOr[Boolean] = js.undefined
+  var ignoreLocked: js.UndefOr[js.Array[String]] = js.undefined
   /**
     * Input and output streams. process.stdin/process.stdout by default, however, it could be a
     * net.Socket if you want to make a program that runs over telnet or something of that nature.
@@ -209,7 +209,7 @@ object IScreenOptions {
     height: TPosition = null,
     hover: js.Any = null,
     ignoreDockContrast: js.UndefOr[Boolean] = js.undefined,
-    ignoreLocked: js.UndefOr[Boolean] = js.undefined,
+    ignoreLocked: js.Array[String] = null,
     input: Writable = null,
     left: TTopLeft = null,
     lockKeys: js.UndefOr[Boolean] = js.undefined,
@@ -255,7 +255,7 @@ object IScreenOptions {
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (hover != null) __obj.updateDynamic("hover")(hover.asInstanceOf[js.Any])
     if (!js.isUndefined(ignoreDockContrast)) __obj.updateDynamic("ignoreDockContrast")(ignoreDockContrast.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreLocked)) __obj.updateDynamic("ignoreLocked")(ignoreLocked.asInstanceOf[js.Any])
+    if (ignoreLocked != null) __obj.updateDynamic("ignoreLocked")(ignoreLocked.asInstanceOf[js.Any])
     if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
     if (!js.isUndefined(lockKeys)) __obj.updateDynamic("lockKeys")(lockKeys.asInstanceOf[js.Any])

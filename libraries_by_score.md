@@ -60,6 +60,7 @@
 | 0.8764354684130957 | [babel__code-frame](./b/babel__code-frame) | Generate errors that contain a code frame that poi
 | 0.8763943847060411 | [nodemon](./n/nodemon) | Simple monitor script for use during development o
 | 0.8761217718842684 | [del](./d/del) | Delete files and directories
+| 0.8744557500915744 | [material-ui__icons](./m/material-ui__icons) | Material Design Svg Icons converted to Material-UI
 | 0.8737801832337919 | [globby](./g/globby) | Extends glob with support for multiple patterns an
 | 0.8736282715253538 | [stylelint](./s/stylelint) | A mighty, modern CSS linter.
 | 0.8730060821928254 | [vuex](./v/vuex) | state management for Vue.js
@@ -91,7 +92,6 @@
 | 0.8636199139120118 | [escape-string-regexp](./e/escape-string-regexp) | Escape RegExp special characters
 | 0.863619702723329 | [doctrine](./d/doctrine) | JSDoc parser
 | 0.8634959443433896 | [dayjs](./d/dayjs) | 2KB immutable date time library alternative to Mom
-| 0.8631968166750591 | [material-ui__styles](./m/material-ui__styles) | Material-UI Styles - The styling solution of Mater
 | 0.8630652650681759 | [base64-js](./b/base64-js) | Base64 encoding/decoding in pure JS
 | 0.8626057513405656 | [normalize-url](./n/normalize-url) | Normalize a URL
 | 0.8624521724250872 | [on-finished](./o/on-finished) | Execute a callback when a request closes, finishes
@@ -179,7 +179,6 @@
 | 0.8443997973745315 | [testing-library__react](./t/testing-library__react) | Simple and complete React DOM testing utilities th
 | 0.8439945990285449 | [inherits](./i/inherits) | Browser-friendly inheritance fully compatible with
 | 0.8438940336897478 | [is-buffer](./i/is-buffer) | Determine if an object is a Buffer
-| 0.8438927342484115 | [material-ui__system](./m/material-ui__system) | Material-UI System - Design system for Material-UI
 | 0.8437289176862 | [is-stream](./i/is-stream) | Check if something is a Node.js stream
 | 0.8436599344022668 | [strip-bom](./s/strip-bom) | Strip UTF-8 byte order mark (BOM) from a string
 | 0.8435773685286577 | [ansi-escapes](./a/ansi-escapes) | ANSI escape codes for manipulating the terminal
@@ -372,6 +371,7 @@
 | 0.8165835307494234 | [should](./s/should) | test framework agnostic BDD-style assertions
 | 0.8164588241490442 | [react-router-config](./r/react-router-config) | Static route config matching for React Router
 | 0.816347614775588 | [browser-resolve](./b/browser-resolve) | resolve which handles browser field support in pac
+| 0.8161591150680368 | [googleapis](./g/googleapis) | Google APIs Client Library for Node.js
 | 0.8161127078425636 | [react-bootstrap](./r/react-bootstrap) | Bootstrap 4 components built with React
 | 0.8160433867483659 | [qs](./q/qs) | A querystring parser that supports nesting and arr
 | 0.8160117991736475 | [flux](./f/flux) | An application architecture based on a unidirectio
@@ -484,7 +484,6 @@
 | 0.8064639755731239 | [title-case](./t/title-case) | Transform a string into title case following Engli
 | 0.8061770974593607 | [jest__source-map](./j/jest__source-map) | -
 | 0.8061672971651763 | [ssri](./s/ssri) | Standard Subresource Integrity library -- parses, 
-| 0.8061464223629369 | [material-ui__types](./m/material-ui__types) | Material-UI Types - Utility types for Material-UI.
 | 0.8060770631993409 | [react-day-picker](./r/react-day-picker) | Flexible date picker component for React
 | 0.8060112916273885 | [tiny-warning](./t/tiny-warning) | A tiny warning function
 | 0.8058467374290371 | [clsx](./c/clsx) | A tiny (223B) utility for constructing className s
@@ -1416,6 +1415,7 @@
 | 0.7411841145381182 | [pacote](./p/pacote) | JavaScript package downloader
 | 0.7411338049417908 | [lodash_dot_assign](./l/lodash_dot_assign) | The lodash method _.assign exported as a module.
 | 0.7409900241925624 | [better-scroll](./b/better-scroll) | inspired by iscroll, and it has a better scroll pe
+| 0.7409636162990212 | [chai-subset](./c/chai-subset) | Object properties matcher for Chai
 | 0.74085158096971 | [fkill](./f/fkill) | Fabulously kill processes. Cross-platform.
 | 0.7408487144879304 | [node-forge](./n/node-forge) | JavaScript implementations of network transports, 
 | 0.7408341752003775 | [fined](./f/fined) | Find a file given a declaration of locations.
@@ -1839,6 +1839,7 @@
 | 0.7192172195006645 | [postmate](./p/postmate) | A powerful, simple, promise-based postMessage libr
 | 0.719181350302579 | [express-brute](./e/express-brute) | A brute-force protection middleware for express ro
 | 0.7191674376344624 | [symlink-or-copy](./s/symlink-or-copy) | Symlink files or directories, falling back to copy
+| 0.7190408657235134 | [multiaddr](./m/multiaddr) | multiaddr implementation (binary + string represen
 | 0.7189945175663548 | [sha1](./s/sha1) | native js function for hashing messages with SHA-1
 | 0.71897624586023 | [fs-plus](./f/fs-plus) | node's fs with more helpers
 | 0.7189443233177526 | [slate-react](./s/slate-react) | Tools for building completely customizable richtex
@@ -3911,6 +3912,7 @@
 | 0.6355340931073068 | [compare-function](./c/compare-function) | Effortlessly compose compare functions for Array.p
 | 0.6354792619841789 | [react-native-collapsible](./r/react-native-collapsible) | Animated collapsible component for React Native us
 | 0.6354514291080988 | [lodash_dot_invertby](./l/lodash_dot_invertby) | The lodash method _.invertBy exported as a module.
+| 0.6353947441476211 | [react-native-responsive-d](./r/react-native-responsive-dimensions) | Resposive fontSize, height and width for your reac
 | 0.635389507932415 | [react-measure](./r/react-measure) | Compute measurements of React components.
 | 0.635372064524909 | [assertsharp](./a/assertsharp) | Assert methods based on .NET Assert class.
 | 0.635233498258988 | [lodash_dot_spread](./l/lodash_dot_spread) | The lodash method _.spread exported as a module.
@@ -3943,6 +3945,7 @@
 | 0.6339945295777103 | [raphael](./r/raphael) | JavaScript Vector Library
 | 0.6338981800400478 | [commander-remaining-args](./c/commander-remaining-args) | Get the remaining unknown arguments after parsing 
 | 0.6338738841457972 | [unl-core](./u/unl-core) | Gustavo Niemeyer’s geocoding system with elevation
+| 0.633864610680412 | [jpush-react-native](./j/jpush-react-native) | React Native JPush component for Android and iOS
 | 0.6338481170003111 | [lodash_dot_matchespropert](./l/lodash_dot_matchesproperty) | The lodash method _.matchesProperty exported as a 
 | 0.6337862307536591 | [json-schema](./j/json-schema) | JSON Schema validation and specifications
 | 0.6337829827798549 | [reselect](./r/reselect) | Selectors for Redux.
@@ -4711,6 +4714,7 @@
 | 0.5726224728986633 | [mixpanel](./m/mixpanel) | A simple server-side API for mixpanel
 | 0.5726058667912514 | [lasso](./l/lasso) | Lasso.js is a build tool and runtime library for b
 | 0.5725833359617317 | [lz-string](./l/lz-string) | LZ-based compression algorithm
+| 0.5725427782367529 | [busboy](./b/busboy) | A streaming parser for HTML form data for node.js
 | 0.5723030088403093 | [peerjs](./p/peerjs) | PeerJS client
 | 0.5722413521024079 | [dateformat](./d/dateformat) | A node.js package for Steven Levithan's excellent 
 | 0.5722181436970891 | [jscodeshift](./j/jscodeshift) | A toolkit for JavaScript codemods
@@ -5818,6 +5822,7 @@
 | 0.4217750898485527 | [phantomcss](./p/phantomcss) | A CasperJS module for automating visual regression
 | 0.4217626871507183 | [shopify-prime](./s/shopify-prime) | Shopify Prime is a NodeJS library built to help de
 | 0.4215605961119021 | [pathfinding](./p/pathfinding) | Comprehensive pathfinding library for grid based g
+| 0.4215471479610656 | [multibase](./m/multibase) | JavaScript implementation of the multibase specifi
 | 0.42132001679198416 | [react-native-safari-view](./r/react-native-safari-view) | A React Native wrapper for Safari View Controller
 | 0.4212061716406591 | [react-native-app-link](./r/react-native-app-link) | Easily link to other apps with React Native.
 | 0.42119591494269054 | [react-lottie](./r/react-lottie) | lottie animation view for React
@@ -6096,6 +6101,7 @@
 | 0.3948683791143008 | [appdmg](./a/appdmg) | Generate beautiful DMG-images for your OS X applic
 | 0.394827542656492 | [express-xml-bodyparser](./e/express-xml-bodyparser) | Simple XML body parser connect/express middleware
 | 0.39475615895928234 | [wu](./w/wu) | Combinators for ECMAScript 6 iterators.
+| 0.39475574408995195 | [use-json-comparison](./u/use-json-comparison) | use json for deep comparison
 | 0.3945331764952204 | [jquery_dot_browser](./j/jquery_dot_browser) | A jQuery plugin for browser detection.
 | 0.3944618527802173 | [toobusy-js](./t/toobusy-js) | Don't fall over when your Node.JS server is too bu
 | 0.3944316831020125 | [express-oauth-server](./e/express-oauth-server) | OAuth provider for express
@@ -7130,6 +7136,7 @@
 | 0.2615480279445628 | [react-json](./r/react-json) | A JSON editor packed as a React.js component and t
 | 0.2615056805190906 | [react-native-qrcode](./r/react-native-qrcode) | react-native qrocode generator
 | 0.26149893414452097 | [nivo__annotations](./n/nivo__annotations) | -
+| 0.2614986304544993 | [apptimize__apptimize-web-](./a/apptimize__apptimize-web-sdk) | Apptimize Client SDK for Web
 | 0.2614650712535367 | [csprng](./c/csprng) | Secure random numbers of any size in any base
 | 0.2611996197960387 | [pgwmodal](./p/pgwmodal) | Responsive Modal / Dialog window for jQuery, Zepto
 | 0.2609435516271088 | [saslmechanisms](./s/saslmechanisms) | JavaScript framework for SASL authentication.

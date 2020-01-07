@@ -10,7 +10,9 @@ trait OverviewMap
   def getCollapsed(): Boolean = js.native
   def getCollapsible(): Boolean = js.native
   def getOverviewMap(): typings.ol.pluggableMapMod.default = js.native
+  def getRotateWithView(): Boolean = js.native
   def setCollapsed(collapsed: Boolean): Unit = js.native
   def setCollapsible(collapsible: Boolean): Unit = js.native
+  def setRotateWithView(rotateWithView: Boolean): Unit = js.native
 }
 

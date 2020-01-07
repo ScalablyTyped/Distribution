@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ModifyEvent ()
   extends typings.ol.eventsEventMod.default {
-  var features: typings.ol.collectionMod.default[typings.ol.featureMod.default] = js.native
+  var features: typings.ol.collectionMod.default[typings.ol.featureMod.default[typings.ol.geomGeometryMod.default]] = js.native
   var mapBrowserEvent: typings.ol.mapBrowserEventMod.default = js.native
 }
 

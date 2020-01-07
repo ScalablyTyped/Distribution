@@ -23,25 +23,31 @@ object layerMod extends js.Object {
   @js.native
   class Image ()
     extends typings.ol.layerImageMod.default {
-    def this(opt_options: typings.ol.layerImageMod.Options) = this()
+    def this(opt_options: typings.ol.layerBaseImageMod.Options) = this()
   }
   
   @js.native
-  class Layer protected ()
-    extends typings.ol.layerLayerMod.default {
+  class Layer[SourceType /* <: typings.ol.sourceSourceMod.default */] protected ()
+    extends typings.ol.layerLayerMod.default[SourceType] {
     def this(options: typings.ol.layerLayerMod.Options) = this()
   }
   
   @js.native
   class Tile ()
     extends typings.ol.layerTileMod.default {
-    def this(opt_options: typings.ol.layerTileMod.Options) = this()
+    def this(opt_options: typings.ol.layerBaseTileMod.Options) = this()
   }
   
   @js.native
   class Vector ()
     extends typings.ol.layerVectorMod.default {
-    def this(opt_options: typings.ol.layerVectorMod.Options) = this()
+    def this(opt_options: typings.ol.layerBaseVectorMod.Options) = this()
+  }
+  
+  @js.native
+  class VectorImage ()
+    extends typings.ol.layerVectorImageMod.default {
+    def this(opt_options: typings.ol.layerVectorImageMod.Options) = this()
   }
   
   @js.native

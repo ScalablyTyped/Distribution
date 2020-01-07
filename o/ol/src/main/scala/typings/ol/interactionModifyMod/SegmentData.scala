@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait SegmentData extends js.Object {
   var depth: js.UndefOr[js.Array[Double]] = js.undefined
-  var feature: typings.ol.featureMod.default
+  var feature: typings.ol.featureMod.default[typings.ol.geomGeometryMod.default]
   var featureSegments: js.UndefOr[js.Array[SegmentData]] = js.undefined
   var geometry: typings.ol.geomSimpleGeometryMod.default
   var index: js.UndefOr[Double] = js.undefined
@@ -17,7 +17,7 @@ trait SegmentData extends js.Object {
 object SegmentData {
   @scala.inline
   def apply(
-    feature: typings.ol.featureMod.default,
+    feature: typings.ol.featureMod.default[typings.ol.geomGeometryMod.default],
     geometry: typings.ol.geomSimpleGeometryMod.default,
     segment: js.Array[Extent],
     depth: js.Array[Double] = null,

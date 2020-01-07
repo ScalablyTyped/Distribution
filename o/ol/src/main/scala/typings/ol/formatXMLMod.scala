@@ -19,7 +19,7 @@ object formatXMLMod extends js.Object {
   }
   
   @js.native
-  class default () extends XML
+  abstract class default () extends XML
   
 }
 

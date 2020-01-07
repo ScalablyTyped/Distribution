@@ -3,14 +3,13 @@ package typings.ecol.libBasicIEventDispatcherMod
 import typings.ecol.libBasicCollectionEventMod.CollectionEvent
 import typings.ecol.libBasicCollectionEventMod.CollectionEvent.Listener
 import typings.ecol.libBasicCollectionEventMod.CollectionEvent.Type
-import typings.tstl.baseIteratorIteratorMod.Iterator
+import typings.std.Iterator
 import typings.tstl.tstlMod.base.Container
-import typings.tstl.tstlMod.base.ReverseIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IEventDispatcher[T, SourceT /* <: Container[T, SourceT, IteratorT, ReverseT, T] */, IteratorT /* <: Iterator[T, SourceT, IteratorT, ReverseT, T] */, ReverseT /* <: ReverseIterator[T, SourceT, IteratorT, ReverseT, T] */] extends js.Object {
+trait IEventDispatcher[T, SourceT /* <: Container[T, SourceT, IteratorT, ReverseT, T] */, IteratorT /* <: Iterator[T, SourceT, IteratorT] */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ js.Any */] extends js.Object {
   def addEventListener(`type`: Type, listener: Listener[T, SourceT, IteratorT, ReverseT]): Unit
   def dispatchEvent(event: CollectionEvent[T, SourceT, IteratorT, ReverseT]): Unit
   def hasEventListener(`type`: Type): Boolean
@@ -19,7 +18,7 @@ trait IEventDispatcher[T, SourceT /* <: Container[T, SourceT, IteratorT, Reverse
 
 object IEventDispatcher {
   @scala.inline
-  def apply[T, SourceT /* <: Container[T, SourceT, IteratorT, ReverseT, T] */, IteratorT /* <: Iterator[T, SourceT, IteratorT, ReverseT, T] */, ReverseT /* <: ReverseIterator[T, SourceT, IteratorT, ReverseT, T] */](
+  def apply[T, SourceT /* <: Container[T, SourceT, IteratorT, ReverseT, T] */, IteratorT /* <: Iterator[T, SourceT, IteratorT] */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ js.Any */](
     addEventListener: (Type, Listener[T, SourceT, IteratorT, ReverseT]) => Unit,
     dispatchEvent: CollectionEvent[T, SourceT, IteratorT, ReverseT] => Unit,
     hasEventListener: Type => Boolean,

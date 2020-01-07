@@ -17,7 +17,6 @@ package object formatTopoJSONMod {
   import typings.topojsonDashSpecification.topojsonDashSpecificationMod.Properties
   import typings.topojsonDashSpecification.topojsonDashSpecificationMod.Topology
 
-  type TopoJSON = typings.ol.formatJSONFeatureMod.default
   type TopoJSONGeometry = GeometryObject[js.Object]
   type TopoJSONGeometryCollection = GeometryCollection[js.Object]
   type TopoJSONLineString = LineString[js.Object]

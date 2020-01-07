@@ -1,0 +1,14 @@
+package typings.googleapis.googleapisMod.accesscontextmanager_v1
+
+import typings.googleapisDashCommon.buildSrcApiMod.APIRequestContext
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("googleapis", "accesscontextmanager_v1.Resource$Accesspolicies$Accesslevels")
+@js.native
+class ResourceDollarAccesspoliciesDollarAccesslevels protected ()
+  extends typings.googleapis.buildSrcApisAccesscontextmanagerV1Mod.accesscontextmanager_v1.ResourceDollarAccesspoliciesDollarAccesslevels {
+  def this(context: APIRequestContext) = this()
+}
+

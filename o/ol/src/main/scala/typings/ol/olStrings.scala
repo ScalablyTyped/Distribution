@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 object olStrings {
   @js.native
-  sealed trait CanvasReplayGroup extends js.Object
+  sealed trait BuilderGroup extends js.Object
   
   @js.native
   sealed trait add extends js.Object
@@ -90,7 +90,13 @@ object olStrings {
   sealed trait changeColonmaxResolution extends js.Object
   
   @js.native
+  sealed trait changeColonmaxZoom extends js.Object
+  
+  @js.native
   sealed trait changeColonminResolution extends js.Object
+  
+  @js.native
+  sealed trait changeColonminZoom extends js.Object
   
   @js.native
   sealed trait changeColonoffset extends js.Object
@@ -168,6 +174,9 @@ object olStrings {
   sealed trait dblclick extends js.Object
   
   @js.native
+  sealed trait default extends js.Object
+  
+  @js.native
   sealed trait drawend extends js.Object
   
   @js.native
@@ -175,6 +184,15 @@ object olStrings {
   
   @js.native
   sealed trait error extends js.Object
+  
+  @js.native
+  sealed trait extentchanged extends js.Object
+  
+  @js.native
+  sealed trait float extends js.Object
+  
+  @js.native
+  sealed trait getValues extends js.Object
   
   @js.native
   sealed trait image extends js.Object
@@ -219,6 +237,9 @@ object olStrings {
   sealed trait precompose extends js.Object
   
   @js.native
+  sealed trait prerender extends js.Object
+  
+  @js.native
   sealed trait propertychange extends js.Object
   
   @js.native
@@ -226,9 +247,6 @@ object olStrings {
   
   @js.native
   sealed trait removefeature extends js.Object
-  
-  @js.native
-  sealed trait render extends js.Object
   
   @js.native
   sealed trait rendercomplete extends js.Object
@@ -257,8 +275,17 @@ object olStrings {
   @js.native
   sealed trait translating extends js.Object
   
+  @js.native
+  sealed trait vec2 extends js.Object
+  
+  @js.native
+  sealed trait vec3 extends js.Object
+  
+  @js.native
+  sealed trait vec4 extends js.Object
+  
   @scala.inline
-  def CanvasReplayGroup: CanvasReplayGroup = "CanvasReplayGroup".asInstanceOf[CanvasReplayGroup]
+  def BuilderGroup: BuilderGroup = "BuilderGroup".asInstanceOf[BuilderGroup]
   @scala.inline
   def add: add = "add".asInstanceOf[add]
   @scala.inline
@@ -314,7 +341,11 @@ object olStrings {
   @scala.inline
   def changeColonmaxResolution: changeColonmaxResolution = "change:maxResolution".asInstanceOf[changeColonmaxResolution]
   @scala.inline
+  def changeColonmaxZoom: changeColonmaxZoom = "change:maxZoom".asInstanceOf[changeColonmaxZoom]
+  @scala.inline
   def changeColonminResolution: changeColonminResolution = "change:minResolution".asInstanceOf[changeColonminResolution]
+  @scala.inline
+  def changeColonminZoom: changeColonminZoom = "change:minZoom".asInstanceOf[changeColonminZoom]
   @scala.inline
   def changeColonoffset: changeColonoffset = "change:offset".asInstanceOf[changeColonoffset]
   @scala.inline
@@ -366,11 +397,19 @@ object olStrings {
   @scala.inline
   def dblclick: dblclick = "dblclick".asInstanceOf[dblclick]
   @scala.inline
+  def default: default = "default".asInstanceOf[default]
+  @scala.inline
   def drawend: drawend = "drawend".asInstanceOf[drawend]
   @scala.inline
   def drawstart: drawstart = "drawstart".asInstanceOf[drawstart]
   @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
+  def extentchanged: extentchanged = "extentchanged".asInstanceOf[extentchanged]
+  @scala.inline
+  def float: float = "float".asInstanceOf[float]
+  @scala.inline
+  def getValues: getValues = "getValues".asInstanceOf[getValues]
   @scala.inline
   def image: image = "image".asInstanceOf[image]
   @scala.inline
@@ -400,13 +439,13 @@ object olStrings {
   @scala.inline
   def precompose: precompose = "precompose".asInstanceOf[precompose]
   @scala.inline
+  def prerender: prerender = "prerender".asInstanceOf[prerender]
+  @scala.inline
   def propertychange: propertychange = "propertychange".asInstanceOf[propertychange]
   @scala.inline
   def remove: remove = "remove".asInstanceOf[remove]
   @scala.inline
   def removefeature: removefeature = "removefeature".asInstanceOf[removefeature]
-  @scala.inline
-  def render: render = "render".asInstanceOf[render]
   @scala.inline
   def rendercomplete: rendercomplete = "rendercomplete".asInstanceOf[rendercomplete]
   @scala.inline
@@ -425,5 +464,11 @@ object olStrings {
   def translatestart: translatestart = "translatestart".asInstanceOf[translatestart]
   @scala.inline
   def translating: translating = "translating".asInstanceOf[translating]
+  @scala.inline
+  def vec2: vec2 = "vec2".asInstanceOf[vec2]
+  @scala.inline
+  def vec3: vec3 = "vec3".asInstanceOf[vec3]
+  @scala.inline
+  def vec4: vec4 = "vec4".asInstanceOf[vec4]
 }
 

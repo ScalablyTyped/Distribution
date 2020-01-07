@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-stickynode"
-version := "1.4-dt-20180507Z-b5ee4a"
+version := "2.1-dt-20200103Z-d97301"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

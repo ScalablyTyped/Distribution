@@ -40,7 +40,7 @@ trait QState extends js.Object {
   def Z(targetBits: SingleQubitOperatorTargetQubits): QState = js.native
   def add(qState: QState): QState = js.native
   def amplitude(basisState: String): Complex = js.native
-  def amplitude(basisState: QState): Complex = js.native
+  def amplitude(basisState: Double): Complex = js.native
   def applyFunction(
     inputBits: SingleQubitOperatorTargetQubits,
     targetBits: SingleQubitOperatorTargetQubits,

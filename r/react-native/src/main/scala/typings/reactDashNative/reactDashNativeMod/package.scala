@@ -231,7 +231,7 @@ package object reactDashNativeMod {
   type StatusBarProperties = StatusBarProps
   type StatusBarPropertiesAndroid = StatusBarPropsAndroid
   type StatusBarPropertiesIOS = StatusBarPropsIOS
-  type StyleProp[T] = T | RegisteredStyle[T] | js.Array[T] | (RecursiveArray[T | RegisteredStyle[T] | Falsy]) | Falsy
+  type StyleProp[T] = T | RegisteredStyle[T] | (RecursiveArray[T | RegisteredStyle[T] | Falsy]) | Falsy
   /**
     * Renders a boolean input.
     *

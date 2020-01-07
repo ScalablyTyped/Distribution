@@ -1,0 +1,101 @@
+package typings.googleapis.buildSrcApisContentV2Dot1Mod.content_v2_1
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+  * Account data. After the creation of a new account it may take a few minutes
+  * before it is fully operational. The methods delete, insert, patch, and
+  * update require the admin role.
+  */
+@js.native
+trait Schema$Account extends js.Object {
+  /**
+    * List of linked Ads accounts that are active or pending approval. To
+    * create a new link request, add a new link with status active to the list.
+    * It will remain in a pending state until approved or rejected either in
+    * the Ads interface or through the AdWords API. To delete an active link,
+    * or to cancel a link request, remove it from the list.
+    */
+  var adsLinks: js.UndefOr[js.Array[Schema$AccountAdsLink]] = js.native
+  /**
+    * Indicates whether the merchant sells adult content.
+    */
+  var adultContent: js.UndefOr[Boolean] = js.native
+  /**
+    * The business information of the account.
+    */
+  var businessInformation: js.UndefOr[Schema$AccountBusinessInformation] = js.native
+  /**
+    * The GMB account which is linked or in the process of being linked with
+    * the Merchant Center account.
+    */
+  var googleMyBusinessLink: js.UndefOr[Schema$AccountGoogleMyBusinessLink] = js.native
+  /**
+    * Merchant Center account ID.
+    */
+  var id: js.UndefOr[String] = js.native
+  /**
+    * Identifies what kind of resource this is. Value: the fixed string
+    * &quot;content#account&quot;.
+    */
+  var kind: js.UndefOr[String] = js.native
+  /**
+    * Display name for the account.
+    */
+  var name: js.UndefOr[String] = js.native
+  /**
+    * Client-specific, locally-unique, internal ID for the child account.
+    */
+  var sellerId: js.UndefOr[String] = js.native
+  /**
+    * Users with access to the account. Every account (except for subaccounts)
+    * must have at least one admin user.
+    */
+  var users: js.UndefOr[js.Array[Schema$AccountUser]] = js.native
+  /**
+    * The merchant&#39;s website.
+    */
+  var websiteUrl: js.UndefOr[String] = js.native
+  /**
+    * List of linked YouTube channels that are active or pending approval. To
+    * create a new link request, add a new link with status active to the list.
+    * It will remain in a pending state until approved or rejected in the YT
+    * Creator Studio interface. To delete an active link, or to cancel a link
+    * request, remove it from the list.
+    */
+  var youtubeChannelLinks: js.UndefOr[js.Array[Schema$AccountYouTubeChannelLink]] = js.native
+}
+
+object Schema$Account {
+  @scala.inline
+  def apply(
+    adsLinks: js.Array[Schema$AccountAdsLink] = null,
+    adultContent: js.UndefOr[Boolean] = js.undefined,
+    businessInformation: Schema$AccountBusinessInformation = null,
+    googleMyBusinessLink: Schema$AccountGoogleMyBusinessLink = null,
+    id: String = null,
+    kind: String = null,
+    name: String = null,
+    sellerId: String = null,
+    users: js.Array[Schema$AccountUser] = null,
+    websiteUrl: String = null,
+    youtubeChannelLinks: js.Array[Schema$AccountYouTubeChannelLink] = null
+  ): Schema$Account = {
+    val __obj = js.Dynamic.literal()
+    if (adsLinks != null) __obj.updateDynamic("adsLinks")(adsLinks.asInstanceOf[js.Any])
+    if (!js.isUndefined(adultContent)) __obj.updateDynamic("adultContent")(adultContent.asInstanceOf[js.Any])
+    if (businessInformation != null) __obj.updateDynamic("businessInformation")(businessInformation.asInstanceOf[js.Any])
+    if (googleMyBusinessLink != null) __obj.updateDynamic("googleMyBusinessLink")(googleMyBusinessLink.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (sellerId != null) __obj.updateDynamic("sellerId")(sellerId.asInstanceOf[js.Any])
+    if (users != null) __obj.updateDynamic("users")(users.asInstanceOf[js.Any])
+    if (websiteUrl != null) __obj.updateDynamic("websiteUrl")(websiteUrl.asInstanceOf[js.Any])
+    if (youtubeChannelLinks != null) __obj.updateDynamic("youtubeChannelLinks")(youtubeChannelLinks.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Schema$Account]
+  }
+}
+

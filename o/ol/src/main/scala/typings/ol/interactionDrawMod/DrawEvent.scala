@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class DrawEvent protected ()
   extends typings.ol.eventsEventMod.default {
-  def this(`type`: DrawEventType, feature: typings.ol.featureMod.default) = this()
-  var feature: typings.ol.featureMod.default = js.native
+  def this(`type`: DrawEventType, feature: typings.ol.featureMod.default[typings.ol.geomGeometryMod.default]) = this()
+  var feature: typings.ol.featureMod.default[typings.ol.geomGeometryMod.default] = js.native
 }
 

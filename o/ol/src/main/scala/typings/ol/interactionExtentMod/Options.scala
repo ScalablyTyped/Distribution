@@ -1,6 +1,5 @@
 package typings.ol.interactionExtentMod
 
-import typings.ol.extentMod.Extent
 import typings.ol.styleStyleMod.StyleLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
   var boxStyle: js.UndefOr[StyleLike] = js.undefined
-  var extent: js.UndefOr[Extent] = js.undefined
+  var extent: js.UndefOr[typings.ol.extentMod.Extent] = js.undefined
   var pixelTolerance: js.UndefOr[Double] = js.undefined
   var pointerStyle: js.UndefOr[StyleLike] = js.undefined
   var wrapX: js.UndefOr[Boolean] = js.undefined
@@ -18,7 +17,7 @@ object Options {
   @scala.inline
   def apply(
     boxStyle: StyleLike = null,
-    extent: Extent = null,
+    extent: typings.ol.extentMod.Extent = null,
     pixelTolerance: Int | Double = null,
     pointerStyle: StyleLike = null,
     wrapX: js.UndefOr[Boolean] = js.undefined

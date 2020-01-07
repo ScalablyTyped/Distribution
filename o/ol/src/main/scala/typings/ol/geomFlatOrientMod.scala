@@ -8,21 +8,21 @@ import scala.scalajs.js.annotation._
 @js.native
 object geomFlatOrientMod extends js.Object {
   def linearRingIsClockwise(flatCoordinates: js.Array[Double], offset: Double, end: Double, stride: Double): Boolean = js.native
-  def linearRingIsOriented(flatCoordinates: js.Array[Double], offset: Double, ends: js.Array[Double], stride: Double): Boolean = js.native
-  def linearRingIsOriented(
+  def linearRingsAreOriented(flatCoordinates: js.Array[Double], offset: Double, ends: js.Array[Double], stride: Double): Boolean = js.native
+  def linearRingsAreOriented(
     flatCoordinates: js.Array[Double],
     offset: Double,
     ends: js.Array[Double],
     stride: Double,
     opt_right: Boolean
   ): Boolean = js.native
-  def linearRingsAreOriented(
+  def linearRingssAreOriented(
     flatCoordinates: js.Array[Double],
     offset: Double,
     endss: js.Array[js.Array[Double]],
     stride: Double
   ): Boolean = js.native
-  def linearRingsAreOriented(
+  def linearRingssAreOriented(
     flatCoordinates: js.Array[Double],
     offset: Double,
     endss: js.Array[js.Array[Double]],

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-markdown"
-version := "4.3.0-028158"
+version := "4.3.1-95185d"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

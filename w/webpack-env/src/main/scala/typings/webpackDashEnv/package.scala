@@ -5,9 +5,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object webpackDashEnv {
-  import typings.webpackDashEnv.__WebpackModuleApi.Module
-  import typings.webpackDashEnv.__WebpackModuleApi.RequireFunction
+  import typings.webpackDashEnv.NodeJS.Module
+  import typings.webpackDashEnv.NodeJS.Require
 
   type NodeModule = Module
-  type NodeRequire = RequireFunction
+  type NodeRequire = Require
 }

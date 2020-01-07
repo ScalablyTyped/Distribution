@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation._
 @JSImport("ol/format/xsd", JSImport.Namespace)
 @js.native
 object formatXsdMod extends js.Object {
-  def readBoolean(node: Node): js.UndefOr[Boolean] = js.native
-  def readBooleanString(string: String): js.UndefOr[Boolean] = js.native
-  def readDateTime(node: Node): js.UndefOr[Double] = js.native
-  def readDecimal(node: Node): js.UndefOr[Double] = js.native
-  def readDecimalString(string: String): js.UndefOr[Double] = js.native
-  def readNonNegativeInteger(node: Node): js.UndefOr[Double] = js.native
-  def readNonNegativeIntegerString(string: String): js.UndefOr[Double] = js.native
-  def readString(node: Node): js.UndefOr[String] = js.native
+  def readBoolean(node: Node): Boolean = js.native
+  def readBooleanString(string: String): Boolean = js.native
+  def readDateTime(node: Node): Double = js.native
+  def readDecimal(node: Node): Double = js.native
+  def readDecimalString(string: String): Double = js.native
+  def readNonNegativeInteger(node: Node): Double = js.native
+  def readNonNegativeIntegerString(string: String): Double = js.native
+  def readString(node: Node): String = js.native
   def writeBooleanTextNode(node: Node, bool: Boolean): Unit = js.native
   def writeCDATASection(node: Node, string: String): Unit = js.native
   def writeDateTimeTextNode(node: Node, dateTime: Double): Unit = js.native

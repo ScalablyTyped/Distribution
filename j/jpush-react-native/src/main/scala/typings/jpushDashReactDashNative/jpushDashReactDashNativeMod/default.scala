@@ -1,9 +1,22 @@
 package typings.jpushDashReactDashNative.jpushDashReactDashNativeMod
 
-import typings.jpushDashReactDashNative.Anon_Alias
-import typings.jpushDashReactDashNative.Anon_IsBind
-import typings.jpushDashReactDashNative.Anon_Tags
-import typings.std.Date
+import typings.jpushDashReactDashNative.Anon_AppBadge
+import typings.jpushDashReactDashNative.Anon_Badge
+import typings.jpushDashReactDashNative.Anon_Channel
+import typings.jpushDashReactDashNative.Anon_Code
+import typings.jpushDashReactDashNative.Anon_ConnectEnable
+import typings.jpushDashReactDashNative.Anon_Content
+import typings.jpushDashReactDashNative.Anon_ContentExtras
+import typings.jpushDashReactDashNative.Anon_ContentExtrasMessageID
+import typings.jpushDashReactDashNative.Anon_GeoFenceID
+import typings.jpushDashReactDashNative.Anon_GeoFenceMaxNumber
+import typings.jpushDashReactDashNative.Anon_MessageID
+import typings.jpushDashReactDashNative.Anon_MobileNumber
+import typings.jpushDashReactDashNative.Anon_NotificationMaxNumber
+import typings.jpushDashReactDashNative.Anon_PushTimeDays
+import typings.jpushDashReactDashNative.Anon_RegisterID
+import typings.jpushDashReactDashNative.Anon_SilenceTimeEndHour
+import typings.jpushDashReactDashNative.Anon_TagEnable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,245 +29,224 @@ class default () extends JPush
 @JSImport("jpush-react-native", JSImport.Default)
 @js.native
 object default extends js.Object {
+  //***************************************接口回调***************************************
+  //连接状态
+  def addConnectEventListener(callback: Callback[Anon_ConnectEnable]): Unit = js.native
   /**
-    * 监听：连接状态变更
+    * 自定义消息事件
     */
-  def addConnectionChangeListener(cb: JSuccessCallback[Boolean]): Unit = js.native
+  def addCustomMessagegListener(callback: Callback[Anon_ContentExtrasMessageID]): Unit = js.native
+  //***************************************本地通知***************************************
   /**
-    * Android Only
+    * 添加一个本地通知
     *
-    * If device register succeed, the server will return registrationId
-    */
-  def addGetRegistrationIdListener(cb: JSuccessCallback[String]): Unit = js.native
-  /**
-    * iOS Only
-    */
-  def addOpenNotificationLaunchAppListener(cb: JSuccessCallback[String]): Unit = js.native
-  /**
-    * Android Only
-    */
-  def addReceiveCustomMsgListener(cb: JSuccessCallback[_]): Unit = js.native
-  /**
-    * 监听：接收推送事件
-    */
-  def addReceiveNotificationListener(cb: JSuccessCallback[_]): Unit = js.native
-  /**
-    * 监听：点击推送事件
-    */
-  def addReceiveOpenNotificationListener(cb: JSuccessCallback[_]): Unit = js.native
-  /**
-    * 在原有 tags 的基础上添加 tags
-    */
-  def addTags(tags: js.Array[String], callback: JFailCallback | JSuccessCallback[Anon_Tags]): Unit = js.native
-  /**
-    * iOS Only
+    * messageID:唯一标识通知消息的ID,可用于移除消息
     *
-    * 监听：应用连接已登录
-    */
-  def addnetworkDidLoginListener(cb: JSuccessCallback[String]): Unit = js.native
-  /**
-    * 检查当前设备是否绑定该 tag
-    */
-  def checkTagBindState(tags: String, callback: JFailCallback | JSuccessCallback[Anon_IsBind]): Unit = js.native
-  /**
-    * 清空所有 tags
-    */
-  def cleanTags(callback: JFailCallback | JSuccessCallback[Anon_Tags]): Unit = js.native
-  def clearAllNotifications(): Unit = js.native
-  /**
-    * Android Only
-    */
-  def clearNotificationById(id: String): Unit = js.native
-  /**
-    * 删除原有 alias
-    */
-  def deleteAlias(callback: JFailCallback | JSuccessCallback[Anon_Alias]): Unit = js.native
-  /**
-    * 删除指定的 tags
-    */
-  def deleteTags(tags: js.Array[String], callback: JFailCallback | JSuccessCallback[Anon_Tags]): Unit = js.native
-  /**
-    * Android Only
-    */
-  def finishActivity(): Unit = js.native
-  /**
-    * 获取当前设备 alias
-    */
-  def getAlias(callback: JFailCallback | JSuccessCallback[Anon_Alias]): Unit = js.native
-  /**
-    * 获取所有已有标签
-    */
-  def getAllTags(callback: JFailCallback | JSuccessCallback[Anon_Tags]): Unit = js.native
-  /**
-    * iOS Only
-    */
-  def getAppkeyWithcallback(cb: JSuccessCallback[String]): Unit = js.native
-  /**
-    * iOS Only
-    */
-  def getBadge(cb: JSuccessCallback[Double]): Unit = js.native
-  /**
-    * 获取当前连接状态
-    * 如果连接状态变更为已连接返回 true
-    * 如果连接状态变更为断开连接连接返回 false
-    */
-  def getConnectionState(cb: JResultCallback[Boolean]): Unit = js.native
-  /**
-    * Android Only
-    */
-  def getInfo(cb: js.Function1[/* infoMap */ JInfoMap, Unit]): Unit = js.native
-  /**
-    * iOS Onlylalala
-    */
-  def getLaunchAppNotification(cb: JSuccessCallback[String]): Unit = js.native
-  /**
-    * 获取 RegistrationId
-    */
-  def getRegistrationID(cb: JSuccessCallback[Double]): Unit = js.native
-  /**
-    * iOS Only
-    * 获取应用是否有推送权限
-    */
-  def hasPermission(cb: JResultCallback[Boolean]): Unit = js.native
-  /**
-    * 初始化JPush 必须先初始化才能执行其他操作
-    */
-  def initPush(): Unit = js.native
-  /**
-    * Android Only
-    */
-  def jumpToPushActivity(activityName: String): Unit = js.native
-  /**
-    * Android Only
-    */
-  def notifyJSDidLoad(cb: JResultCallback[Double]): Unit = js.native
-  /**
-    * 监听：连接状态变更
-    */
-  def removeConnectionChangeListener(cb: JSuccessCallback[Boolean]): Unit = js.native
-  /**
-    * Android Only
-    */
-  def removeGetRegistrationIdListener(cb: JSuccessCallback[js.UndefOr[scala.Nothing]]): Unit = js.native
-  /**
-    * iOS Only
-    */
-  def removeOpenNotificationLaunchAppEventListener(cb: JSuccessCallback[js.UndefOr[scala.Nothing]]): Unit = js.native
-  /**
-    * Android Only
-    */
-  def removeReceiveCustomMsgListener(cb: JSuccessCallback[_]): Unit = js.native
-  /**
-    * 取消监听：接收推送事件
-    */
-  def removeReceiveNotificationListener(cb: JSuccessCallback[js.UndefOr[scala.Nothing]]): Unit = js.native
-  /**
-    * 取消监听：点击推送事件
-    */
-  def removeReceiveOpenNotificationListener(cb: JSuccessCallback[js.UndefOr[scala.Nothing]]): Unit = js.native
-  /**
-    * iOS Only
+    * title:对应“通知标题”字段
     *
-    * 取消监听：应用连接已登录
+    * content:对应“通知内容”字段
+    *
+    * extras:对应“附加内容”字段
+    *
     */
-  def removenetworkDidLoginListener(cb: JSuccessCallback[js.UndefOr[scala.Nothing]]): Unit = js.native
+  def addLocalNotification(params: Anon_Content): Unit = js.native
+  /**
+    * 本地通知事件
+    *
+    * 注意：应用在存活状态下点击通知不会有跳转行为,应用在被杀死状态下点击通知会启动应用
+    */
+  def addLocalNotificationListener(callback: Callback[Anon_ContentExtras]): Unit = js.native
+  /**
+    * 手机号码事件
+    */
+  def addMobileNumberListener(callback: Callback[Anon_Code with Sequence]): Unit = js.native
+  /**
+    * 通知事件
+    *
+    * 注意：应用在存活状态下点击通知不会有跳转行为,应用在被杀死状态下点击通知会启动应用
+    */
+  def addNotificationListener(callback: Callback[Anon_Badge]): Unit = js.native
+  /**
+    * tag alias事件
+    */
+  def addTagAliasListener(callback: Callback[Anon_Code with Sequence with (Tags | Alias | (Tag with Anon_TagEnable))]): Unit = js.native
+  /**
+    * 新增标签
+    *
+    * 这个接口是增加逻辑,而不是覆盖逻辑
+    */
+  def addTags(params: Sequence with Tags): Unit = js.native
+  /**
+    * 移除所有的本地通知
+    *
+    */
+  def clearLocalNotifications(): Unit = js.native
+  /**
+    * 删除别名
+    */
+  def deleteAlias(params: Sequence): Unit = js.native
+  /**
+    * 删除指定id的地理围栏
+    *
+    */
+  def deleteGeofence(params: Anon_GeoFenceID): Unit = js.native
+  /**
+    * 删除指定标签
+    *
+    */
+  def deleteTag(params: Sequence with Tags): Unit = js.native
+  /**
+    * 清除所有标签
+    */
+  def deleteTags(params: Sequence): Unit = js.native
+  /**
+    * 获取 RegistrationID
+    *
+    * 调用此 API 来取得应用程序对应的 RegistrationID。
+    * 只有当应用程序成功注册到 JPush 的服务器时才返回对应的值,否则返回空字符串
+    *
+    */
+  def getRegistrationID(callback: Callback[Anon_RegisterID]): Unit = js.native
+  /**
+    * 初始化推送服务
+    *
+    * 请在componentDidMount()调用init,否则会影响通知点击事件的回调
+    *
+    */
+  def init(): Unit = js.native
+  /**
+    * 开启 CrashLog 上报
+    *
+    */
+  def initCrashHandler(): Unit = js.native
+  /**
+    * 用来检查 Push Service 是否已经被停止
+    *
+    * @platform Android
+    */
+  def isPushStopped(callback: Callback[Boolean]): Unit = js.native
+  /**
+    * 查询别名
+    */
+  def queryAlias(params: Sequence): Unit = js.native
+  /**
+    * 查询指定 tag 与当前用户绑定的状态
+    */
+  def queryTag(params: Sequence with Tag): Unit = js.native
+  /**
+    * 查询所有标签
+    */
+  def queryTags(params: Sequence): Unit = js.native
+  //移除事件
+  def removeListener(callback: js.Function): Unit = js.native
+  /**
+    * 移除指定的本地通知
+    *
+    * messageID:唯一标识通知消息的ID,可用于移除消息
+    */
+  def removeLocalNotification(params: Anon_MessageID): Unit = js.native
+  //***************************************Android Only***************************************
+  /**
+    * 在 Android 6.0 及以上的系统上,需要去请求一些用到的权限.
+    * JPush SDK 用到的一些需要请求如下权限,因为需要这些权限使统计更加精准,功能更加丰富,建议开发者调用
+    * "android.permission.READ_PHONE_STATE"
+    * "android.permission.ACCESS_FINE_LOCATION"
+    * "android.permission.READ_EXTERNAL_STORAGE"
+    * "android.permission.WRITE_EXTERNAL_STORAGE"
+    *
+    * @platform Android
+    */
+  def requestPermission(): Unit = js.native
+  /**
+    * 恢复推送服务
+    *
+    * @platform Android
+    */
   def resumePush(): Unit = js.native
   /**
-  	 * @param {Object} notification = {
-  	 	  'buildId': Number     // 设置通知样式，1 为基础样式，2 为自定义样式。自定义样式需要先调用 setStyleCustom 接口设置自定义样式。(Android Only)
-  	 *    'id': Number    		// 通知的 id, 可用于取消通知
-  	 *    'title': String 		// 通知标题
-  	 *    'content': String  	// 通知内容
-  	 *	  'extra': Object       // extra 字段
-  	 *    'fireTime': Number    // 通知触发时间的时间戳（毫秒）
-  	 * 	  'badge': Number       // 本地推送触发后应用角标的 badge 值  （iOS Only）
-  	 *    'soundName': String   // 指定推送的音频文件 （iOS Only）
-    *    'subtitle': String    // 子标题 （iOS10+ Only）
-  	 *  }
-  	 */
-  def sendLocalNotification(notification: LocalNotificationOptions): Unit = js.native
-  /**
-    * 重置 alias
+    * 设置别名
+    * 需要理解的是,这个接口是覆盖逻辑,而不是增量逻辑。即新的调用会覆盖之前的设置
     */
-  def setAlias(alias: String, callback: JFailCallback | JSuccessCallback[Anon_Alias]): Unit = js.native
+  def setAlias(params: Sequence with Alias): Unit = js.native
+  //***************************************iOS Only***************************************
   /**
-    * iOS Only
-    * 设置应用 Badge（小红点）
+    * 设置 Badge
+    *
+    * @platform iOS
     */
-  def setBadge(badge: Double, callback: JSuccessCallback[js.Array[Double]]): Unit = js.native
+  def setBadge(params: Anon_AppBadge): Unit = js.native
   /**
-    * Android Only
+    * 动态配置 channel,优先级比 AndroidManifest 里配置的高
+    *
+    * @platform Android
     */
-  def setGeofenceInterval(interval: Double): Unit = js.native
+  def setChannel(params: Anon_Channel): Unit = js.native
   /**
-    * Android Only
+    * 设置保留最近通知条数
+    *
+    * 通过极光推送,推送了很多通知到客户端时,如果用户不去处理,就会有很多保留在那里。
+    * 调用此 API 可以限制保留的通知条数,默认为保留最近 5 条通知。
+    *
+    * 仅对通知有效。所谓保留最近的,意思是,如果有新的通知到达,之前列表里最老的那条会被移除。
+    * 例如,设置为保留最近 5 条通知。假设已经有 5 条显示在通知栏,当第 6 条到达时,第 1 条将会被移除。
+    *
+    * @platform Android
     */
-  def setLatestNotificationNumber(maxNumber: Double): Unit = js.native
+  def setLatestNotificationNumber(params: Anon_NotificationMaxNumber): Unit = js.native
   /**
-    * iOS Only
-    * 设置本地推送
-    * @param {Date} date  触发本地推送的时间
-    * @param {String} textContain 推送消息体内容
-    * @param {Int} badge  本地推送触发后 应用 Badge（小红点）显示的数字
-    * @param {String} alertAction 弹框的按钮显示的内容（IOS 8默认为"打开", 其他默认为"启动"）
-    * @param {String} notificationKey  本地推送标示符
-    * @param {Object} userInfo 推送的附加字段 选填
-    * @param {String} soundName 自定义通知声音，设置为 null 为默认声音
+    * 设置调试模式,默认关闭状态
+    *
+    * 该接口需在 init 接口之前调用,避免出现部分日志没打印的情况
+    * @param {boolean} enable
+    *
     */
-  def setLocalNotification(date: Date, alertBody: String): Unit = js.native
-  def setLocalNotification(date: Date, alertBody: String, badge: Double): Unit = js.native
-  def setLocalNotification(date: Date, alertBody: String, badge: Double, alertAction: String): Unit = js.native
-  def setLocalNotification(date: Date, alertBody: String, badge: Double, alertAction: String, notificationKey: String): Unit = js.native
-  def setLocalNotification(
-    date: Date,
-    alertBody: String,
-    badge: Double,
-    alertAction: String,
-    notificationKey: String,
-    userInfo: js.Any
-  ): Unit = js.native
-  def setLocalNotification(
-    date: Date,
-    alertBody: String,
-    badge: Double,
-    alertAction: String,
-    notificationKey: String,
-    userInfo: js.Any,
-    soundName: String
-  ): Unit = js.native
+  def setLoggerEnable(enable: Boolean): Unit = js.native
+  //***************************************地理围栏***************************************
   /**
-    * Android Only
+    * 设置最多允许保存的地理围栏数量,超过最大限制后,如果继续创建先删除最早创建的地理围栏。
+    * 默认数量为10个,允许设置最小1个,最大100个。
+    *
     */
-  def setMaxGeofenceNumber(maxNumber: Double): Unit = js.native
+  def setMaxGeofenceNumber(params: Anon_GeoFenceMaxNumber): Unit = js.native
+  //***************************************统计***************************************
   /**
-    * Android Only
-    * @param {object} config = {"days": Array, "startHour": Number, "endHour": Number}
-    * // 例如：{days: [0, 6], startHour: 8, endHour: 23} 表示星期天和星期六的上午 8 点到晚上 11 点都可以推送
+    * 设置手机号码。该接口会控制调用频率,频率为 10s 之内最多 3 次
     */
-  def setPushTime(config: js.Object): Unit = js.native
+  def setMobileNumber(params: Anon_MobileNumber with Sequence): Unit = js.native
   /**
-    * Android Only
-    * @param {object} config = {"startTime": String, "endTime": String}  // 例如：{startTime: "20:30", endTime: "8:30"}
+    * 设置允许推送时间
+    *
+    * 默认情况下用户在任何时间都允许推送。即任何时候有推送下来,客户端都会收到,并展示。
+    * 开发者可以调用此 API 来设置允许推送的时间。
+    * 如果不在该时间段内收到消息,SDK 的处理是：推送到的通知会被扔掉。
+    *
+    * 这是一个纯粹客户端的实现,所以与客户端时间是否准确、时区等这些,都没有关系。
+    * 而且该接口仅对通知有效,自定义消息不受影响。
+    *
+    * @platform Android
     */
-  def setSilenceTime(config: js.Object): Unit = js.native
+  def setPushTime(params: Anon_PushTimeDays): Unit = js.native
   /**
-    * Android Only
+    * 设置通知静默时间
+    *
+    * 默认情况下用户在收到推送通知时,客户端可能会有震动,响铃等提示。
+    * 但用户在睡觉、开会等时间点希望为“免打扰”模式,也是静音时段的概念。
+    * 开发者可以调用此 API 来设置静音时段。如果在该时间段内收到消息,则：不会有铃声和震动。
+    *
+    * @platform Android
     */
-  def setStyleBasic(): Unit = js.native
+  def setSilenceTime(params: Anon_SilenceTimeEndHour): Unit = js.native
   /**
-    * Android Only
+    * 停止推送服务
+    *
+    * @platform Android
     */
-  def setStyleCustom(): Unit = js.native
-  /**
-    * 重新设置 Tag
-    */
-  def setTags(tags: js.Array[String], callback: JFailCallback | JSuccessCallback[Anon_Tags]): Unit = js.native
-  /**
-    * iOS Only
-    * 初始化 JPush SDK 代码,
-    * NOTE: 如果已经在原生 SDK 中添加初始化代码则无需再调用 （通过脚本配置，会自动在原生中添加初始化，无需额外调用）
-    */
-  def setupPush(): Unit = js.native
   def stopPush(): Unit = js.native
+  /**
+    * 覆盖标签
+    *
+    * 需要理解的是,这个接口是覆盖逻辑,而不是增量逻辑。即新的调用会覆盖之前的设置
+    */
+  def updateTags(params: Sequence with Tags): Unit = js.native
 }
 

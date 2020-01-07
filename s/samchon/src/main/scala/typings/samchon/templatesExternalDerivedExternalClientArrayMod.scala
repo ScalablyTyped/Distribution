@@ -50,13 +50,6 @@ object templatesExternalDerivedExternalClientArrayMod extends js.Object {
     /* InferMemberOverrides */
     override def addEventListener(`type`: Type, listener: Listener[T, Deque[T], Iterator[T], ReverseIterator[T]]): Unit = js.native
     /**
-      * Iterator to the first element.
-      *
-      * @return Iterator to the first element.
-      */
-    /* InferMemberOverrides */
-    override def begin(): typings.tstl.baseIteratorIteratorMod.Iterator[T, Deque[T], Iterator[T], ReverseIterator[T], T] = js.native
-    /**
       * Close server.
       *
       * Close opened server. All remote clients, have connected with this server, are also closed and their call back
@@ -89,18 +82,6 @@ object templatesExternalDerivedExternalClientArrayMod extends js.Object {
     /* protected */ def createServerBase(): IServer = js.native
     /* InferMemberOverrides */
     override def dispatchEvent(event: CollectionEvent[T, Deque[T], Iterator[T], ReverseIterator[T]]): Unit = js.native
-    /**
-      * Test whether container is empty.
-      */
-    /* InferMemberOverrides */
-    override def empty(): Boolean = js.native
-    /**
-      * Iterator to the end.
-      *
-      * @return Iterator to the end.
-      */
-    /* InferMemberOverrides */
-    override def end(): typings.tstl.baseIteratorIteratorMod.Iterator[T, Deque[T], Iterator[T], ReverseIterator[T], T] = js.native
     /* InferMemberOverrides */
     override def hasEventListener(`type`: Type): Boolean = js.native
     /**
@@ -110,45 +91,8 @@ object templatesExternalDerivedExternalClientArrayMod extends js.Object {
       */
     /* CompleteClass */
     override def open(port: Double): Unit = js.native
-    /**
-      * Insert items at the end.
-      *
-      * @param items Items to insert.
-      * @return Number of elements in the container after insertion.
-      */
-    /* CompleteClass */
-    /* InferMemberOverrides */
-    /* InferMemberOverrides */
-    override def push(items: T*): Double = js.native
-    /**
-      * Insert an element at the end.
-      *
-      * @param val Value to insert.
-      */
-    /* CompleteClass */
-    /* InferMemberOverrides */
-    override def push_back(`val`: T): Unit = js.native
-    /**
-      * Reverse iterator to the first element in reverse.
-      *
-      * @return Reverse iterator to the first.
-      */
-    /* InferMemberOverrides */
-    override def rbegin(): ReverseIterator[T] = js.native
     /* InferMemberOverrides */
     override def removeEventListener(`type`: Type, listener: Listener[T, Deque[T], Iterator[T], ReverseIterator[T]]): Unit = js.native
-    /**
-      * Reverse iterator to the reverse end.
-      *
-      * @return Reverse iterator to the end.
-      */
-    /* InferMemberOverrides */
-    override def rend(): ReverseIterator[T] = js.native
-    /**
-      * Number of elements in the container.
-      */
-    /* InferMemberOverrides */
-    override def size(): Double = js.native
   }
   
 }

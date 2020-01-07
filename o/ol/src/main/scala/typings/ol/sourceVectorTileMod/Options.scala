@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
   var attributions: js.UndefOr[AttributionLike] = js.undefined
+  var attributionsCollapsible: js.UndefOr[Boolean] = js.undefined
   var cacheSize: js.UndefOr[Double] = js.undefined
   var extent: js.UndefOr[Extent] = js.undefined
   var format: js.UndefOr[typings.ol.formatFeatureMod.default] = js.undefined
@@ -32,12 +33,14 @@ trait Options extends js.Object {
   var url: js.UndefOr[String] = js.undefined
   var urls: js.UndefOr[js.Array[String]] = js.undefined
   var wrapX: js.UndefOr[Boolean] = js.undefined
+  var zDirection: js.UndefOr[Double] = js.undefined
 }
 
 object Options {
   @scala.inline
   def apply(
     attributions: AttributionLike = null,
+    attributionsCollapsible: js.UndefOr[Boolean] = js.undefined,
     cacheSize: Int | Double = null,
     extent: Extent = null,
     format: typings.ol.formatFeatureMod.default = null,
@@ -50,14 +53,16 @@ object Options {
     tileGrid: typings.ol.tilegridTileGridMod.default = null,
     tileLoadFunction: (/* p0 */ Tile, /* p1 */ String) => Unit = null,
     tileSize: Double | Size = null,
-    tileUrlFunction: (/* p0 */ TileCoord, /* p1 */ Double, /* p2 */ typings.ol.projProjectionMod.default) => js.UndefOr[String] = null,
+    tileUrlFunction: (/* p0 */ TileCoord, /* p1 */ Double, /* p2 */ typings.ol.projProjectionMod.default) => String = null,
     transition: Int | Double = null,
     url: String = null,
     urls: js.Array[String] = null,
-    wrapX: js.UndefOr[Boolean] = js.undefined
+    wrapX: js.UndefOr[Boolean] = js.undefined,
+    zDirection: Int | Double = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (attributions != null) __obj.updateDynamic("attributions")(attributions.asInstanceOf[js.Any])
+    if (!js.isUndefined(attributionsCollapsible)) __obj.updateDynamic("attributionsCollapsible")(attributionsCollapsible.asInstanceOf[js.Any])
     if (cacheSize != null) __obj.updateDynamic("cacheSize")(cacheSize.asInstanceOf[js.Any])
     if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
@@ -75,6 +80,7 @@ object Options {
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     if (urls != null) __obj.updateDynamic("urls")(urls.asInstanceOf[js.Any])
     if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX.asInstanceOf[js.Any])
+    if (zDirection != null) __obj.updateDynamic("zDirection")(zDirection.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

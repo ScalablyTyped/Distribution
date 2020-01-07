@@ -2,7 +2,6 @@ package typings.ol
 
 import typings.ol.coordinateMod.Coordinate
 import typings.ol.geomGeometryLayoutMod.GeometryLayout
-import typings.ol.projMod.ProjectionLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,8 +18,6 @@ object geomCircleMod extends js.Object {
     def setCenterAndRadius(center: Coordinate, radius: Double): Unit = js.native
     def setCenterAndRadius(center: Coordinate, radius: Double, opt_layout: GeometryLayout): Unit = js.native
     def setRadius(radius: Double): Unit = js.native
-    @JSName("transform")
-    def transform_default(source: ProjectionLike, destination: ProjectionLike): typings.ol.geomGeometryMod.default = js.native
   }
   
   @js.native

@@ -14,7 +14,6 @@ object tilecoordMod extends js.Object {
   def getKey(tileCoord: TileCoord): String = js.native
   def getKeyZXY(z: Double, x: Double, y: Double): String = js.native
   def hash(tileCoord: TileCoord): Double = js.native
-  def quadKey(tileCoord: TileCoord): String = js.native
   def withinExtentAndZ(tileCoord: TileCoord, tileGrid: default): Boolean = js.native
   type TileCoord = js.Array[Double]
 }

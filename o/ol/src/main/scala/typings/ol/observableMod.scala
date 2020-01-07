@@ -2,6 +2,7 @@ package typings.ol
 
 import typings.ol.eventsMod.EventsKey
 import typings.ol.olStrings.change
+import typings.ol.olStrings.error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,14 +19,20 @@ object observableMod extends js.Object {
     def on(`type`: js.Array[String], listener: js.Function1[/* p0 */ js.Any, Unit]): EventsKey | js.Array[EventsKey] = js.native
     @JSName("on")
     def on_change(`type`: change, listener: js.Function1[/* evt */ typings.ol.eventsEventMod.default, Unit]): EventsKey = js.native
+    @JSName("on")
+    def on_error(`type`: error, listener: js.Function1[/* evt */ typings.ol.eventsEventMod.default, Unit]): EventsKey = js.native
     def once(`type`: String, listener: js.Function1[/* p0 */ js.Any, Unit]): EventsKey | js.Array[EventsKey] = js.native
     def once(`type`: js.Array[String], listener: js.Function1[/* p0 */ js.Any, Unit]): EventsKey | js.Array[EventsKey] = js.native
     @JSName("once")
     def once_change(`type`: change, listener: js.Function1[/* evt */ typings.ol.eventsEventMod.default, Unit]): EventsKey = js.native
+    @JSName("once")
+    def once_error(`type`: error, listener: js.Function1[/* evt */ typings.ol.eventsEventMod.default, Unit]): EventsKey = js.native
     def un(`type`: String, listener: js.Function1[/* p0 */ js.Any, Unit]): Unit = js.native
     def un(`type`: js.Array[String], listener: js.Function1[/* p0 */ js.Any, Unit]): Unit = js.native
     @JSName("un")
     def un_change(`type`: change, listener: js.Function1[/* evt */ typings.ol.eventsEventMod.default, Unit]): Unit = js.native
+    @JSName("un")
+    def un_error(`type`: error, listener: js.Function1[/* evt */ typings.ol.eventsEventMod.default, Unit]): Unit = js.native
   }
   
   @js.native

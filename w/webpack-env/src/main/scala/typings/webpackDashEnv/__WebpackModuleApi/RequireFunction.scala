@@ -2,6 +2,7 @@ package typings.webpackDashEnv.__WebpackModuleApi
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.RegExp
+import typings.webpackDashEnv.NodeModule
 import typings.webpackDashEnv.NodeRequire
 import typings.webpackDashEnv.webpackDashEnvStrings.`lazy-once`
 import typings.webpackDashEnv.webpackDashEnvStrings.`lazy`
@@ -17,7 +18,14 @@ trait RequireFunction extends js.Object {
   /**
     * Multiple requires to the same module result in only one module execution and only one export. Therefore a cache in the runtime exists. Removing values from this cache cause new module execution and a new export. This is only needed in rare cases (for compatibility!).
     */
-  var cache: StringDictionary[js.Any] = js.native
+  var cache: StringDictionary[NodeModule] = js.native
+  /**
+    * Returns the module id of a dependency. The call is sync. No request to the server is fired. The compiler ensures that the dependency is available.
+    *
+    * The module id is a number in webpack (in contrast to node.js where it is a string, the filename).
+    */
+  @JSName("resolve")
+  var resolve_Original: typings.webpackDashEnv.NodeJS.RequireResolve = js.native
   /**
     * Returns the exports from a dependency. The call is sync. No request to the server is fired. The compiler ensures that the dependency is available.
     */
@@ -70,7 +78,7 @@ trait RequireFunction extends js.Object {
     *
     * The module id is a number in webpack (in contrast to node.js where it is a string, the filename).
     */
-  def resolve(path: String): Double | String = js.native
+  def resolve(id: String): String | Double = js.native
   /**
     * Like require.resolve, but doesn’t include the module into the bundle. It’s a weak dependency.
     */

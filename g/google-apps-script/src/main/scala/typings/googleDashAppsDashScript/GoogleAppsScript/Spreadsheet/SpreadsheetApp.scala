@@ -16,6 +16,7 @@ trait SpreadsheetApp extends js.Object {
   var BandingTheme: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BandingTheme */ js.Any = js.native
   var BooleanCriteria: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BooleanCriteria */ js.Any = js.native
   var BorderStyle: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BorderStyle */ js.Any = js.native
+  var ColorType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Base.ColorType */ js.Any = js.native
   var CopyPasteType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CopyPasteType */ js.Any = js.native
   var DataExecutionErrorCode: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DataExecutionErrorCode */ js.Any = js.native
   var DataExecutionState: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DataExecutionState */ js.Any = js.native
@@ -36,6 +37,7 @@ trait SpreadsheetApp extends js.Object {
   var SheetType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SheetType */ js.Any = js.native
   var TextDirection: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextDirection */ js.Any = js.native
   var TextToColumnsDelimiter: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextToColumnsDelimiter */ js.Any = js.native
+  var ThemeColorType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ThemeColorType */ js.Any = js.native
   var WrapStrategy: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof WrapStrategy */ js.Any = js.native
   def create(name: String): typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.Spreadsheet = js.native
   def create(name: String, rows: Integer, columns: Integer): typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.Spreadsheet = js.native
@@ -50,6 +52,7 @@ trait SpreadsheetApp extends js.Object {
   def getCurrentCell(): Range = js.native
   def getSelection(): Selection = js.native
   def getUi(): Ui = js.native
+  def newColor(): ColorBuilder = js.native
   def newConditionalFormatRule(): ConditionalFormatRuleBuilder = js.native
   def newDataSourceSpec(): DataSourceSpecBuilder = js.native
   def newDataValidation(): DataValidationBuilder = js.native

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 trait Options extends js.Object {
   var attributions: js.UndefOr[AttributionLike] = js.undefined
   var features: js.UndefOr[
-    js.Array[typings.ol.featureMod.default] | typings.ol.collectionMod.default[typings.ol.featureMod.default]
+    js.Array[typings.ol.featureMod.default[typings.ol.geomGeometryMod.default]] | typings.ol.collectionMod.default[typings.ol.featureMod.default[typings.ol.geomGeometryMod.default]]
   ] = js.undefined
   var format: js.UndefOr[typings.ol.formatFeatureMod.default] = js.undefined
   var loader: js.UndefOr[FeatureLoader] = js.undefined
@@ -26,7 +26,7 @@ object Options {
   @scala.inline
   def apply(
     attributions: AttributionLike = null,
-    features: js.Array[typings.ol.featureMod.default] | typings.ol.collectionMod.default[typings.ol.featureMod.default] = null,
+    features: js.Array[typings.ol.featureMod.default[typings.ol.geomGeometryMod.default]] | typings.ol.collectionMod.default[typings.ol.featureMod.default[typings.ol.geomGeometryMod.default]] = null,
     format: typings.ol.formatFeatureMod.default = null,
     loader: FeatureLoader = null,
     overlaps: js.UndefOr[Boolean] = js.undefined,

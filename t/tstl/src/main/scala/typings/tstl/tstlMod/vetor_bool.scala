@@ -1,9 +1,5 @@
 package typings.tstl.tstlMod
 
-import org.scalablytyped.runtime.Instantiable0
-import typings.tstl.baseContainerArrayContainerMod.ArrayContainer
-import typings.tstl.baseIteratorArrayIteratorMod.ArrayIterator
-import typings.tstl.baseIteratorArrayIteratorMod.ArrayReverseIterator
 import typings.tstl.iteratorIForwardIteratorMod.IForwardIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -50,81 +46,9 @@ class vetor_bool ()
 @JSImport("tstl", "vetor_bool")
 @js.native
 object vetor_bool extends js.Object {
-  val Iterator: Instantiable0[
-    ArrayIterator[
-      js.Object, 
-      ArrayContainer[
-        /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls was tparam SourceT */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls was tparam SourceT */ js.Any, 
-        ArrayIterator[
-          /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-          /* import warning: RewrittenClass.unapply cls was tparam SourceT */ js.Any
-        ], 
-        ArrayReverseIterator[
-          /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-          /* import warning: RewrittenClass.unapply cls was tparam SourceT */ js.Any
-        ], 
-        /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any
-      ]
-    ]
-  ] = js.native
-  val ReverseIterator: Instantiable0[
-    ArrayReverseIterator[
-      js.Object, 
-      ArrayContainer[
-        /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls was tparam SourceT */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls was tparam SourceT */ js.Any, 
-        ArrayIterator[
-          /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-          /* import warning: RewrittenClass.unapply cls was tparam SourceT */ js.Any
-        ], 
-        ArrayReverseIterator[
-          /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-          /* import warning: RewrittenClass.unapply cls was tparam SourceT */ js.Any
-        ], 
-        /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any
-      ]
-    ]
-  ] = js.native
-  val iterator: Instantiable0[
-    ArrayIterator[
-      js.Object, 
-      ArrayContainer[
-        /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls was tparam SourceT */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls was tparam SourceT */ js.Any, 
-        ArrayIterator[
-          /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-          /* import warning: RewrittenClass.unapply cls was tparam SourceT */ js.Any
-        ], 
-        ArrayReverseIterator[
-          /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-          /* import warning: RewrittenClass.unapply cls was tparam SourceT */ js.Any
-        ], 
-        /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any
-      ]
-    ]
-  ] = js.native
-  val reverse_iterator: Instantiable0[
-    ArrayReverseIterator[
-      js.Object, 
-      ArrayContainer[
-        /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls was tparam SourceT */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls was tparam SourceT */ js.Any, 
-        ArrayIterator[
-          /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-          /* import warning: RewrittenClass.unapply cls was tparam SourceT */ js.Any
-        ], 
-        ArrayReverseIterator[
-          /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, 
-          /* import warning: RewrittenClass.unapply cls was tparam SourceT */ js.Any
-        ], 
-        /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any
-      ]
-    ]
-  ] = js.native
+  val Iterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ArrayIterator */ js.Any = js.native
+  val ReverseIterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ArrayReverseIterator */ js.Any = js.native
+  val iterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ArrayIterator */ js.Any = js.native
+  val reverse_iterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ArrayReverseIterator */ js.Any = js.native
 }
 

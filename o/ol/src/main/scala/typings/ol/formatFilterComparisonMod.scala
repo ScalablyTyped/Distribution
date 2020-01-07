@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object formatFilterComparisonMod extends js.Object {
   @js.native
-  class default protected ()
+  abstract class default protected ()
     extends typings.ol.formatFilterFilterMod.default {
     def this(tagName: String, propertyName: String) = this()
   }

@@ -31,10 +31,10 @@ trait Collection[T]
   def once_changelength(`type`: changeColonlength, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
   @JSName("once")
   def once_remove(`type`: remove, listener: js.Function1[/* evt */ CollectionEvent[T], Unit]): EventsKey = js.native
-  def pop(): js.UndefOr[T] = js.native
+  def pop(): T = js.native
   def push(elem: T): Double = js.native
-  def remove(elem: T): js.UndefOr[T] = js.native
-  def removeAt(index: Double): js.UndefOr[T] = js.native
+  def remove(elem: T): T = js.native
+  def removeAt(index: Double): T = js.native
   def setAt(index: Double, elem: T): Unit = js.native
   @JSName("un")
   def un_add(`type`: add, listener: js.Function1[/* evt */ CollectionEvent[T], Unit]): Unit = js.native

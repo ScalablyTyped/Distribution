@@ -18,12 +18,25 @@ object geomMod extends js.Object {
   }
   
   @js.native
-  class Geometry ()
+  abstract class Geometry ()
     extends typings.ol.geomGeometryMod.default
+  
+  @js.native
+  class GeometryCollection ()
+    extends typings.ol.geomGeometryCollectionMod.default {
+    def this(opt_geometries: js.Array[typings.ol.geomGeometryMod.default]) = this()
+  }
   
   @js.native
   class LineString protected ()
     extends typings.ol.geomLineStringMod.default {
+    def this(coordinates: js.Array[Coordinate | Double]) = this()
+    def this(coordinates: js.Array[Coordinate | Double], opt_layout: GeometryLayout) = this()
+  }
+  
+  @js.native
+  class LinearRing protected ()
+    extends typings.ol.geomLinearRingMod.default {
     def this(coordinates: js.Array[Coordinate | Double]) = this()
     def this(coordinates: js.Array[Coordinate | Double], opt_layout: GeometryLayout) = this()
   }

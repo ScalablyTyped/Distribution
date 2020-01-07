@@ -25,7 +25,7 @@ trait TableRow extends Element {
   def getChild(childIndex: Integer): Element = js.native
   def getChildIndex(child: Element): Integer = js.native
   def getLinkUrl(): String = js.native
-  def getMinimumHeight(): Integer = js.native
+  def getMinimumHeight(): Double = js.native
   def getNumCells(): Integer = js.native
   def getNumChildren(): Integer = js.native
   def getParentTable(): Table = js.native
@@ -38,7 +38,7 @@ trait TableRow extends Element {
   def removeChild(child: Element): TableRow = js.native
   def replaceText(searchPattern: String, replacement: String): Element = js.native
   def setLinkUrl(url: String): TableRow = js.native
-  def setMinimumHeight(minHeight: Integer): TableRow = js.native
+  def setMinimumHeight(minHeight: Double): TableRow = js.native
   def setTextAlignment(textAlignment: TextAlignment): TableRow = js.native
 }
 

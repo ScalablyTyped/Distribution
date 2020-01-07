@@ -1,0 +1,46 @@
+package typings.googleapis.buildSrcApisScriptV1Mod.script_v1
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+  * Metadata the defines how a deployment is configured.
+  */
+@js.native
+trait Schema$DeploymentConfig extends js.Object {
+  /**
+    * The description for this deployment.
+    */
+  var description: js.UndefOr[String] = js.native
+  /**
+    * The manifest file name for this deployment.
+    */
+  var manifestFileName: js.UndefOr[String] = js.native
+  /**
+    * The script project&#39;s Drive ID.
+    */
+  var scriptId: js.UndefOr[String] = js.native
+  /**
+    * The version number on which this deployment is based.
+    */
+  var versionNumber: js.UndefOr[Double] = js.native
+}
+
+object Schema$DeploymentConfig {
+  @scala.inline
+  def apply(
+    description: String = null,
+    manifestFileName: String = null,
+    scriptId: String = null,
+    versionNumber: Int | Double = null
+  ): Schema$DeploymentConfig = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (manifestFileName != null) __obj.updateDynamic("manifestFileName")(manifestFileName.asInstanceOf[js.Any])
+    if (scriptId != null) __obj.updateDynamic("scriptId")(scriptId.asInstanceOf[js.Any])
+    if (versionNumber != null) __obj.updateDynamic("versionNumber")(versionNumber.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Schema$DeploymentConfig]
+  }
+}
+

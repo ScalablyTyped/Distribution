@@ -19,6 +19,7 @@ trait Options extends js.Object {
   var tilePixelRatio: js.UndefOr[Double] = js.undefined
   var transition: js.UndefOr[Double] = js.undefined
   var wrapX: js.UndefOr[Boolean] = js.undefined
+  var zDirection: js.UndefOr[Double] = js.undefined
 }
 
 object Options {
@@ -34,7 +35,8 @@ object Options {
     tileGrid: typings.ol.tilegridTileGridMod.default = null,
     tilePixelRatio: Int | Double = null,
     transition: Int | Double = null,
-    wrapX: js.UndefOr[Boolean] = js.undefined
+    wrapX: js.UndefOr[Boolean] = js.undefined,
+    zDirection: Int | Double = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (attributions != null) __obj.updateDynamic("attributions")(attributions.asInstanceOf[js.Any])
@@ -48,6 +50,7 @@ object Options {
     if (tilePixelRatio != null) __obj.updateDynamic("tilePixelRatio")(tilePixelRatio.asInstanceOf[js.Any])
     if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
     if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX.asInstanceOf[js.Any])
+    if (zDirection != null) __obj.updateDynamic("zDirection")(zDirection.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

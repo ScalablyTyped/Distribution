@@ -17,7 +17,6 @@ package object formatGeoJSONMod {
   import typings.geojson.geojsonMod.Point
   import typings.geojson.geojsonMod.Polygon
 
-  type GeoJSON = typings.ol.formatJSONFeatureMod.default
   type GeoJSONFeature = Feature[Geometry, GeoJsonProperties]
   type GeoJSONFeatureCollection = FeatureCollection[Geometry, GeoJsonProperties]
   type GeoJSONGeometry = Geometry

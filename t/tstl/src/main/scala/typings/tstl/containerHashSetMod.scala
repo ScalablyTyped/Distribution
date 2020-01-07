@@ -1,10 +1,7 @@
 package typings.tstl
 
-import org.scalablytyped.runtime.Instantiable0
-import typings.tstl.baseContainerSetContainerMod.SetContainer
 import typings.tstl.baseContainerSetContainerMod.SetContainer.InsertRet
 import typings.tstl.baseContainerUniqueSetMod.UniqueSet
-import typings.tstl.baseHashUnderscoreSetHashBucketsMod._SetHashBuckets
 import typings.tstl.containerHashSetMod.HashSet.Iterator
 import typings.tstl.containerHashSetMod.HashSet.ReverseIterator
 import typings.tstl.iteratorIForwardIteratorMod.IForwardIterator
@@ -17,16 +14,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object containerHashSetMod extends js.Object {
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - typings.tstl.baseDisposableIForwardContainerMod.IForwardContainer because Already inherited
-  - typings.tstl.baseDisposableIPartialContainersMod._IPush because Already inherited
-  - typings.tstl.baseDisposableIPartialContainersMod._ISize because Already inherited
-  - typings.tstl.baseDisposableIPartialContainersMod._IEmpty because Already inherited
   - typings.std.Iterable because Already inherited
-  - typings.tstl.baseDisposableIBidirectionalContainerMod.IBidirectionalContainer because Already inherited
   - typings.tstl.baseContainerIContainerMod.IContainer because Already inherited
-  - typings.tstl.baseContainerUnderscoreIAssociativeContainerMod._IAssociativeContainer because Already inherited
   - typings.tstl.baseContainerContainerMod.Container because Inheritance from two classes. Inlined empty, rbegin, rend, toJSON
-  - typings.tstl.baseContainerUnderscoreIHashContainerMod._IHashContainer because var conflicts: iterator. Inlined hash_function, key_eq, bucket, bucket_count, bucket_size, load_factor, max_load_factor, max_load_factor, reserve, rehash
   - typings.tstl.baseContainerSetContainerMod.SetContainer because Inheritance from two classes. Inlined assign, clear, find, has, count, size, push, insert, insert, insert, _Insert_by_key, _Insert_by_hint, _Insert_by_range, erase, erase, erase, _Erase_by_val, _Erase_by_range, _Erase_by_range, swap, merge, _Handle_insert, _Handle_erase
   - typings.tstl.baseContainerIHashSetMod.IHashSet because Inheritance from two classes. Inlined begin, begin, end, end */ @js.native
   /**
@@ -84,20 +74,20 @@ object containerHashSetMod extends js.Object {
     /**
       * @hidden
       */
-    var buckets_ : _SetHashBuckets[Key, `true`, HashSet[Key]] = js.native
+    var buckets_ : /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _SetHashBuckets<Key, true, HashSet<Key>> */ js.Any = js.native
     /**
       * @hidden
       */
     /* protected */ def _Handle_erase(
-      first: Iterator[Key] | (typings.tstl.baseContainerSetElementListMod.SetElementList.Iterator[Key, `true`, HashSet[Key]]),
-      last: Iterator[Key] | (typings.tstl.baseContainerSetElementListMod.SetElementList.Iterator[Key, `true`, HashSet[Key]])
+      first: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SetElementList.Iterator<Key, Unique, Source> */ js.Any) | Iterator[Key],
+      last: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SetElementList.Iterator<Key, Unique, Source> */ js.Any) | Iterator[Key]
     ): Unit = js.native
     /**
       * @hidden
       */
     /* protected */ def _Handle_insert(
-      first: Iterator[Key] | (typings.tstl.baseContainerSetElementListMod.SetElementList.Iterator[Key, `true`, HashSet[Key]]),
-      last: Iterator[Key] | (typings.tstl.baseContainerSetElementListMod.SetElementList.Iterator[Key, `true`, HashSet[Key]])
+      first: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SetElementList.Iterator<Key, Unique, Source> */ js.Any) | Iterator[Key],
+      last: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SetElementList.Iterator<Key, Unique, Source> */ js.Any) | Iterator[Key]
     ): Unit = js.native
     /**
       * @hidden
@@ -112,8 +102,8 @@ object containerHashSetMod extends js.Object {
         Key, 
         `true`, 
         HashSet[Key], 
-        typings.tstl.baseContainerSetElementListMod.SetElementList.Iterator[Key, `true`, HashSet[Key]], 
-        typings.tstl.baseContainerSetElementListMod.SetElementList.ReverseIterator[Key, `true`, HashSet[Key]]
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SetElementList.Iterator<Key, Unique, Source> */ js.Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SetElementList.ReverseIterator<Key, Unique, Source> */ js.Any
       ] = js.native
     /**
       * Iterator to the first element in a specific bucket.
@@ -121,7 +111,7 @@ object containerHashSetMod extends js.Object {
       * @param index Index number of the specific bucket.
       * @return Iterator from the specific bucket.
       */
-    def begin(index: Double): typings.tstl.baseContainerSetElementListMod.SetElementList.Iterator[Key, `true`, HashSet[Key]] = js.native
+    def begin(index: Double): js.Any = js.native
     /**
       * @inheritDoc
       */
@@ -135,28 +125,13 @@ object containerHashSetMod extends js.Object {
     /**
       * @inheritDoc
       */
-    /**
-      * Compute bucket index for the *key*.
-      *
-      * @param key Target key.
-      * @return Index number.
-      */
     def bucket(key: Key): Double = js.native
     /**
       * @inheritDoc
       */
-    /**
-      * Get number of buckets.
-      */
     def bucket_count(): Double = js.native
     /**
       * @inheritDoc
-      */
-    /**
-      * Get size of a specific bucket.
-      *
-      * @param index Specific position.
-      * @return Size of the specific bucket.
       */
     def bucket_size(n: Double): Double = js.native
     /**
@@ -165,7 +140,7 @@ object containerHashSetMod extends js.Object {
       * @param index Index number of the specific bucket.
       * @return Iterator from the specific bucket.
       */
-    def end(index: Double): typings.tstl.baseContainerSetElementListMod.SetElementList.Iterator[Key, `true`, HashSet[Key]] = js.native
+    def end(index: Double): js.Any = js.native
     /**
       * @inheritDoc
       */
@@ -188,47 +163,22 @@ object containerHashSetMod extends js.Object {
     /**
       * @inheritDoc
       */
-    /**
-      * Get hash function.
-      *
-      * @return The hash function.
-      */
     def hash_function(): js.Function1[/* key */ Key, Double] = js.native
     def insert[InputIterator /* <: IForwardIterator[Key, InputIterator] */](first: InputIterator, last: InputIterator): Unit = js.native
     /**
       * @inheritDoc
       */
-    /**
-      * Get key equality predicator.
-      *
-      * @return The key equality predicator.
-      */
     def key_eq(): js.Function2[/* x */ Key, /* y */ Key, Boolean] = js.native
     /**
       * @inheritDoc
-      */
-    /**
-      * Compute load factor.
-      *
-      * @return `this.size() / this.bucket_count()`
       */
     def load_factor(): Double = js.native
     /**
       * @inheritDoc
       */
-    /**
-      * Get maximum load factor that allowable.
-      *
-      * @return The maximum load factor.
-      */
     def max_load_factor(): Double = js.native
     /**
       * @inheritDoc
-      */
-    /**
-      * Set maximum load factor.
-      *
-      * @param z The new value to change.
       */
     def max_load_factor(z: Double): Unit = js.native
     /**
@@ -243,11 +193,6 @@ object containerHashSetMod extends js.Object {
     /**
       * @inheritDoc
       */
-    /**
-      * Change of bucktes.
-      *
-      * @param n The number to change.
-      */
     def rehash(n: Double): Unit = js.native
     /**
       * @inheritDoc
@@ -260,11 +205,6 @@ object containerHashSetMod extends js.Object {
     def rend_ReverseIterator(): ReverseIterator[Key] = js.native
     /**
       * @inheritDoc
-      */
-    /**
-      * Reserve buckets enable to store *n* elements.
-      *
-      * @param n The capacity to reserve.
       */
     def reserve(n: Double): Unit = js.native
   }
@@ -326,182 +266,22 @@ object containerHashSetMod extends js.Object {
   
   @js.native
   object HashSet extends js.Object {
-    val Iterator: Instantiable0[
-        typings.tstl.baseContainerSetElementListMod.SetElementList.Iterator[
-          js.Object, 
-          Boolean, 
-          SetContainer[
-            /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
-            typings.tstl.baseContainerSetElementListMod.SetElementList.Iterator[
-              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-            ], 
-            typings.tstl.baseContainerSetElementListMod.SetElementList.ReverseIterator[
-              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-            ]
-          ]
-        ]
-      ] = js.native
-    val ReverseIterator: Instantiable0[
-        typings.tstl.baseContainerSetElementListMod.SetElementList.ReverseIterator[
-          js.Object, 
-          Boolean, 
-          SetContainer[
-            /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
-            typings.tstl.baseContainerSetElementListMod.SetElementList.Iterator[
-              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-            ], 
-            typings.tstl.baseContainerSetElementListMod.SetElementList.ReverseIterator[
-              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-            ]
-          ]
-        ]
-      ] = js.native
-    val iterator: Instantiable0[
-        typings.tstl.baseContainerSetElementListMod.SetElementList.Iterator[
-          js.Object, 
-          Boolean, 
-          SetContainer[
-            /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
-            typings.tstl.baseContainerSetElementListMod.SetElementList.Iterator[
-              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-            ], 
-            typings.tstl.baseContainerSetElementListMod.SetElementList.ReverseIterator[
-              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-            ]
-          ]
-        ]
-      ] = js.native
-    val reverse_iterator: Instantiable0[
-        typings.tstl.baseContainerSetElementListMod.SetElementList.ReverseIterator[
-          js.Object, 
-          Boolean, 
-          SetContainer[
-            /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
-            typings.tstl.baseContainerSetElementListMod.SetElementList.Iterator[
-              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-            ], 
-            typings.tstl.baseContainerSetElementListMod.SetElementList.ReverseIterator[
-              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-            ]
-          ]
-        ]
-      ] = js.native
-    type Iterator[Key] = typings.tstl.baseContainerSetElementListMod.SetElementList.Iterator[Key, `true`, HashSet[Key]]
-    type ReverseIterator[Key] = typings.tstl.baseContainerSetElementListMod.SetElementList.ReverseIterator[Key, `true`, HashSet[Key]]
+    val Iterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SetElementList.Iterator */ js.Any = js.native
+    val ReverseIterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SetElementList.ReverseIterator */ js.Any = js.native
+    val iterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SetElementList.Iterator */ js.Any = js.native
+    val reverse_iterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SetElementList.ReverseIterator */ js.Any = js.native
+    type Iterator[Key] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SetElementList.Iterator<Key, true, HashSet<Key>> */ js.Any
+    type ReverseIterator[Key] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SetElementList.ReverseIterator<Key, true, HashSet<Key>> */ js.Any
     type iterator[Key] = typings.tstl.containerHashSetMod.HashSet.Iterator[Key]
     type reverse_iterator[Key] = typings.tstl.containerHashSetMod.HashSet.ReverseIterator[Key]
   }
   
   @js.native
   object unordered_set extends js.Object {
-    val Iterator: Instantiable0[
-        typings.tstl.baseContainerSetElementListMod.SetElementList.Iterator[
-          js.Object, 
-          Boolean, 
-          SetContainer[
-            /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
-            typings.tstl.baseContainerSetElementListMod.SetElementList.Iterator[
-              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-            ], 
-            typings.tstl.baseContainerSetElementListMod.SetElementList.ReverseIterator[
-              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-            ]
-          ]
-        ]
-      ] = js.native
-    val ReverseIterator: Instantiable0[
-        typings.tstl.baseContainerSetElementListMod.SetElementList.ReverseIterator[
-          js.Object, 
-          Boolean, 
-          SetContainer[
-            /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
-            typings.tstl.baseContainerSetElementListMod.SetElementList.Iterator[
-              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-            ], 
-            typings.tstl.baseContainerSetElementListMod.SetElementList.ReverseIterator[
-              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-            ]
-          ]
-        ]
-      ] = js.native
-    val iterator: Instantiable0[
-        typings.tstl.baseContainerSetElementListMod.SetElementList.Iterator[
-          js.Object, 
-          Boolean, 
-          SetContainer[
-            /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
-            typings.tstl.baseContainerSetElementListMod.SetElementList.Iterator[
-              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-            ], 
-            typings.tstl.baseContainerSetElementListMod.SetElementList.ReverseIterator[
-              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-            ]
-          ]
-        ]
-      ] = js.native
-    val reverse_iterator: Instantiable0[
-        typings.tstl.baseContainerSetElementListMod.SetElementList.ReverseIterator[
-          js.Object, 
-          Boolean, 
-          SetContainer[
-            /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any, 
-            typings.tstl.baseContainerSetElementListMod.SetElementList.Iterator[
-              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-            ], 
-            typings.tstl.baseContainerSetElementListMod.SetElementList.ReverseIterator[
-              /* import warning: RewrittenClass.unapply cls was tparam Key */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Unique */ js.Any, 
-              /* import warning: RewrittenClass.unapply cls was tparam Source */ js.Any
-            ]
-          ]
-        ]
-      ] = js.native
+    val Iterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SetElementList.Iterator */ js.Any = js.native
+    val ReverseIterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SetElementList.ReverseIterator */ js.Any = js.native
+    val iterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SetElementList.Iterator */ js.Any = js.native
+    val reverse_iterator: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SetElementList.ReverseIterator */ js.Any = js.native
   }
   
 }

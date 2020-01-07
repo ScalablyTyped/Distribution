@@ -1,8 +1,6 @@
 package typings.tstl
 
 import typings.tstl.functionalIPointerMod.IPointer.ValueType
-import typings.tstl.iteratorIBidirectionalIteratorMod.IBidirectionalIterator
-import typings.tstl.iteratorIFakeMod.General
 import typings.tstl.iteratorIForwardIteratorMod.IForwardIterator
 import typings.tstl.utilityPairMod.Pair
 import scala.scalajs.js
@@ -44,8 +42,8 @@ object algorithmMathematicsMod extends js.Object {
     last: ForwardIterator,
     comp: js.Function2[/* x */ ValueType[ForwardIterator], /* y */ ValueType[ForwardIterator], Boolean]
   ): Pair[ForwardIterator, ForwardIterator] = js.native
-  def next_permutation[BidirectionalIterator /* <: General[IBidirectionalIterator[ValueType[BidirectionalIterator], BidirectionalIterator]] */](first: BidirectionalIterator, last: BidirectionalIterator): Boolean = js.native
-  def next_permutation[BidirectionalIterator /* <: General[IBidirectionalIterator[ValueType[BidirectionalIterator], BidirectionalIterator]] */](
+  def next_permutation[BidirectionalIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IBidirectionalIterator<IPointer.ValueType<BidirectionalIterator>, BidirectionalIterator>> */ js.Any */](first: BidirectionalIterator, last: BidirectionalIterator): Boolean = js.native
+  def next_permutation[BidirectionalIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IBidirectionalIterator<IPointer.ValueType<BidirectionalIterator>, BidirectionalIterator>> */ js.Any */](
     first: BidirectionalIterator,
     last: BidirectionalIterator,
     comp: js.Function2[
@@ -54,8 +52,8 @@ object algorithmMathematicsMod extends js.Object {
       Boolean
     ]
   ): Boolean = js.native
-  def prev_permutation[BidirectionalIterator /* <: General[IBidirectionalIterator[ValueType[BidirectionalIterator], BidirectionalIterator]] */](first: BidirectionalIterator, last: BidirectionalIterator): Boolean = js.native
-  def prev_permutation[BidirectionalIterator /* <: General[IBidirectionalIterator[ValueType[BidirectionalIterator], BidirectionalIterator]] */](
+  def prev_permutation[BidirectionalIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IBidirectionalIterator<IPointer.ValueType<BidirectionalIterator>, BidirectionalIterator>> */ js.Any */](first: BidirectionalIterator, last: BidirectionalIterator): Boolean = js.native
+  def prev_permutation[BidirectionalIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IBidirectionalIterator<IPointer.ValueType<BidirectionalIterator>, BidirectionalIterator>> */ js.Any */](
     first: BidirectionalIterator,
     last: BidirectionalIterator,
     comp: js.Function2[

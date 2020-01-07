@@ -1,6 +1,5 @@
 package typings.acmeDashClient.acmeDashClientMod
 
-import typings.acmeDashClient.typesRfc8555Mod.Authorization
 import typings.acmeDashClient.typesRfc8555Mod.Challenge
 import scala.scalajs.js
 import scala.scalajs.js.`|`

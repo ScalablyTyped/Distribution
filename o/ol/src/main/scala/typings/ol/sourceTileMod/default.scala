@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("ol/source/Tile", JSImport.Default)
 @js.native
-class default protected () extends TileSource {
+abstract class default protected () extends TileSource {
   def this(options: Options) = this()
 }
 

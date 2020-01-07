@@ -1,6 +1,5 @@
 package typings.ol.formatFeatureMod
 
-import typings.ol.extentMod.Extent
 import typings.ol.featureMod.FeatureLike
 import typings.ol.formatFormatTypeMod.FormatType
 import typings.std.ArrayBuffer
@@ -14,18 +13,17 @@ import scala.scalajs.js.annotation._
 trait FeatureFormat extends js.Object {
   var dataProjection: typings.ol.projProjectionMod.default = js.native
   var defaultFeatureProjection: typings.ol.projProjectionMod.default = js.native
-  /* protected */ def adaptOptions(): js.UndefOr[WriteOptions | ReadOptions] = js.native
-  /* protected */ def adaptOptions(options: ReadOptions): js.UndefOr[WriteOptions | ReadOptions] = js.native
-  /* protected */ def adaptOptions(options: WriteOptions): js.UndefOr[WriteOptions | ReadOptions] = js.native
-  def getLastExtent(): Extent = js.native
-  /* protected */ def getReadOptions(source: String): js.UndefOr[ReadOptions] = js.native
-  /* protected */ def getReadOptions(source: String, opt_options: ReadOptions): js.UndefOr[ReadOptions] = js.native
-  /* protected */ def getReadOptions(source: js.Object): js.UndefOr[ReadOptions] = js.native
-  /* protected */ def getReadOptions(source: js.Object, opt_options: ReadOptions): js.UndefOr[ReadOptions] = js.native
-  /* protected */ def getReadOptions(source: Document): js.UndefOr[ReadOptions] = js.native
-  /* protected */ def getReadOptions(source: Document, opt_options: ReadOptions): js.UndefOr[ReadOptions] = js.native
-  /* protected */ def getReadOptions(source: Node): js.UndefOr[ReadOptions] = js.native
-  /* protected */ def getReadOptions(source: Node, opt_options: ReadOptions): js.UndefOr[ReadOptions] = js.native
+  /* protected */ def adaptOptions(): WriteOptions | ReadOptions = js.native
+  /* protected */ def adaptOptions(options: ReadOptions): WriteOptions | ReadOptions = js.native
+  /* protected */ def adaptOptions(options: WriteOptions): WriteOptions | ReadOptions = js.native
+  /* protected */ def getReadOptions(source: String): ReadOptions = js.native
+  /* protected */ def getReadOptions(source: String, opt_options: ReadOptions): ReadOptions = js.native
+  /* protected */ def getReadOptions(source: js.Object): ReadOptions = js.native
+  /* protected */ def getReadOptions(source: js.Object, opt_options: ReadOptions): ReadOptions = js.native
+  /* protected */ def getReadOptions(source: Document): ReadOptions = js.native
+  /* protected */ def getReadOptions(source: Document, opt_options: ReadOptions): ReadOptions = js.native
+  /* protected */ def getReadOptions(source: Node): ReadOptions = js.native
+  /* protected */ def getReadOptions(source: Node, opt_options: ReadOptions): ReadOptions = js.native
   def getType(): FormatType = js.native
   def readFeature(source: String): FeatureLike = js.native
   def readFeature(source: String, opt_options: ReadOptions): FeatureLike = js.native
@@ -57,10 +55,16 @@ trait FeatureFormat extends js.Object {
   def readProjection(source: js.Object): typings.ol.projProjectionMod.default = js.native
   def readProjection(source: Document): typings.ol.projProjectionMod.default = js.native
   def readProjection(source: Node): typings.ol.projProjectionMod.default = js.native
-  def writeFeature(feature: typings.ol.featureMod.default): String = js.native
-  def writeFeature(feature: typings.ol.featureMod.default, opt_options: WriteOptions): String = js.native
-  def writeFeatures(features: js.Array[typings.ol.featureMod.default]): String = js.native
-  def writeFeatures(features: js.Array[typings.ol.featureMod.default], opt_options: WriteOptions): String = js.native
+  def writeFeature(feature: typings.ol.featureMod.default[typings.ol.geomGeometryMod.default]): String = js.native
+  def writeFeature(
+    feature: typings.ol.featureMod.default[typings.ol.geomGeometryMod.default],
+    opt_options: WriteOptions
+  ): String = js.native
+  def writeFeatures(features: js.Array[typings.ol.featureMod.default[typings.ol.geomGeometryMod.default]]): String = js.native
+  def writeFeatures(
+    features: js.Array[typings.ol.featureMod.default[typings.ol.geomGeometryMod.default]],
+    opt_options: WriteOptions
+  ): String = js.native
   def writeGeometry(geometry: typings.ol.geomGeometryMod.default): String = js.native
   def writeGeometry(geometry: typings.ol.geomGeometryMod.default, opt_options: WriteOptions): String = js.native
 }

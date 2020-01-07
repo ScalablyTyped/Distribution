@@ -6,9 +6,11 @@ import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
   var edge: js.UndefOr[Boolean] = js.undefined
-  var features: js.UndefOr[typings.ol.collectionMod.default[typings.ol.featureMod.default]] = js.undefined
+  var features: js.UndefOr[
+    typings.ol.collectionMod.default[typings.ol.featureMod.default[typings.ol.geomGeometryMod.default]]
+  ] = js.undefined
   var pixelTolerance: js.UndefOr[Double] = js.undefined
-  var source: js.UndefOr[typings.ol.sourceVectorMod.default] = js.undefined
+  var source: js.UndefOr[typings.ol.sourceVectorMod.default[typings.ol.geomGeometryMod.default]] = js.undefined
   var vertex: js.UndefOr[Boolean] = js.undefined
 }
 
@@ -16,9 +18,9 @@ object Options {
   @scala.inline
   def apply(
     edge: js.UndefOr[Boolean] = js.undefined,
-    features: typings.ol.collectionMod.default[typings.ol.featureMod.default] = null,
+    features: typings.ol.collectionMod.default[typings.ol.featureMod.default[typings.ol.geomGeometryMod.default]] = null,
     pixelTolerance: Int | Double = null,
-    source: typings.ol.sourceVectorMod.default = null,
+    source: typings.ol.sourceVectorMod.default[typings.ol.geomGeometryMod.default] = null,
     vertex: js.UndefOr[Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()

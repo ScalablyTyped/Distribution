@@ -1,9 +1,7 @@
 package typings.tstl
 
+import typings.std.Iterator
 import typings.tstl.baseContainerIContainerMod.IContainer
-import typings.tstl.baseDisposableIPartialContainersMod._IPushBack
-import typings.tstl.baseIteratorIteratorMod.Iterator
-import typings.tstl.baseIteratorReverseIteratorMod.IReverseIterator
 import typings.tstl.iteratorIForwardIteratorMod.IForwardIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,10 +10,9 @@ import scala.scalajs.js.annotation._
 @JSImport("tstl/base/container/ILinearContainer", JSImport.Namespace)
 @js.native
 object baseContainerILinearContainerMod extends js.Object {
-  @js.native
-  trait ILinearContainer[T /* <: ElemT */, SourceT /* <: IContainer[T, SourceT, IteratorT, ReverseIteratorT, T] */, IteratorT /* <: Iterator[T, SourceT, IteratorT, ReverseIteratorT, T] */, ReverseIteratorT /* <: IReverseIterator[T, SourceT, IteratorT, ReverseIteratorT, T] */, ElemT]
-    extends IContainer[T, SourceT, IteratorT, ReverseIteratorT, ElemT]
-       with _IPushBack[T] {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _IPushBack<T> * / any */ @js.native
+  trait ILinearContainer[T /* <: ElemT */, SourceT /* <: IContainer[T, SourceT, IteratorT, ReverseIteratorT, T] */, IteratorT /* <: Iterator[T, SourceT, IteratorT] */, ReverseIteratorT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IReverseIterator<T, SourceT, IteratorT, ReverseIteratorT, T> */ js.Any */, ElemT] extends IContainer[T, SourceT, IteratorT, ReverseIteratorT, ElemT] {
     /**
       * Fill Assigner.
       *
@@ -65,6 +62,10 @@ object baseContainerILinearContainerMod extends js.Object {
       * Erase the last element.
       */
     def pop_back(): Unit = js.native
+    /**
+      * @inheritDoc
+      */
+    def push_back(`val`: T): Unit = js.native
     /**
       * Resize this {@link Vector} forcibly.
       *

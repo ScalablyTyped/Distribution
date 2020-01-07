@@ -21,18 +21,8 @@ class CustomTile protected ()
     preemptive: Boolean,
     jsonp: Boolean
   ) = this()
-  def forDataAtCoordinate[T](coordinate: Coordinate, callback: js.ThisFunction1[/* this */ T, /* p0 */ js.Any, Unit]): Unit = js.native
-  def forDataAtCoordinate[T](
-    coordinate: Coordinate,
-    callback: js.ThisFunction1[/* this */ T, /* p0 */ js.Any, Unit],
-    opt_this: T
-  ): Unit = js.native
-  def forDataAtCoordinate[T](
-    coordinate: Coordinate,
-    callback: js.ThisFunction1[/* this */ T, /* p0 */ js.Any, Unit],
-    opt_this: T,
-    opt_request: Boolean
-  ): Unit = js.native
+  def forDataAtCoordinate(coordinate: Coordinate, callback: js.Function1[/* p0 */ js.Any, Unit]): Unit = js.native
+  def forDataAtCoordinate(coordinate: Coordinate, callback: js.Function1[/* p0 */ js.Any, Unit], opt_request: Boolean): Unit = js.native
   def getData(coordinate: Coordinate): js.Any = js.native
   def getImage(): HTMLImageElement = js.native
 }

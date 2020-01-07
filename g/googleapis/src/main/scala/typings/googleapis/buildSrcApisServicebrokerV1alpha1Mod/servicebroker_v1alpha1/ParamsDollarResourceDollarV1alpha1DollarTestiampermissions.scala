@@ -1,0 +1,27 @@
+package typings.googleapis.buildSrcApisServicebrokerV1alpha1Mod.servicebroker_v1alpha1
+
+import typings.googleDashAuthDashLibrary.googleDashAuthDashLibraryMod.Compute
+import typings.googleDashAuthDashLibrary.googleDashAuthDashLibraryMod.JWT
+import typings.googleDashAuthDashLibrary.googleDashAuthDashLibraryMod.OAuth2Client
+import typings.googleDashAuthDashLibrary.googleDashAuthDashLibraryMod.UserRefreshClient
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait ParamsDollarResourceDollarV1alpha1DollarTestiampermissions extends StandardParameters {
+  /**
+    * Auth client or API Key for the request
+    */
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  /**
+    * Request body metadata
+    */
+  var requestBody: js.UndefOr[Schema$GoogleIamV1__TestIamPermissionsRequest] = js.native
+  /**
+    * REQUIRED: The resource for which the policy detail is being requested.
+    * See the operation documentation for the appropriate value for this field.
+    */
+  var resource: js.UndefOr[String] = js.native
+}
+

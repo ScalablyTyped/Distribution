@@ -13,25 +13,18 @@ trait TileGrid extends js.Object {
   var maxZoom: Double = js.native
   var minZoom: Double = js.native
   def forEachTileCoord(extent: Extent, zoom: Double, callback: js.Function1[/* p0 */ TileCoord, Unit]): Unit = js.native
-  def forEachTileCoordParentTileRange[T](
+  def forEachTileCoordParentTileRange(
     tileCoord: TileCoord,
-    callback: js.ThisFunction2[/* this */ T, /* p0 */ Double, /* p1 */ typings.ol.tileRangeMod.default, Boolean]
+    callback: js.Function2[/* p0 */ Double, /* p1 */ typings.ol.tileRangeMod.default, Boolean]
   ): Boolean = js.native
-  def forEachTileCoordParentTileRange[T](
+  def forEachTileCoordParentTileRange(
     tileCoord: TileCoord,
-    callback: js.ThisFunction2[/* this */ T, /* p0 */ Double, /* p1 */ typings.ol.tileRangeMod.default, Boolean],
-    opt_this: T
-  ): Boolean = js.native
-  def forEachTileCoordParentTileRange[T](
-    tileCoord: TileCoord,
-    callback: js.ThisFunction2[/* this */ T, /* p0 */ Double, /* p1 */ typings.ol.tileRangeMod.default, Boolean],
-    opt_this: T,
+    callback: js.Function2[/* p0 */ Double, /* p1 */ typings.ol.tileRangeMod.default, Boolean],
     opt_tileRange: typings.ol.tileRangeMod.default
   ): Boolean = js.native
-  def forEachTileCoordParentTileRange[T](
+  def forEachTileCoordParentTileRange(
     tileCoord: TileCoord,
-    callback: js.ThisFunction2[/* this */ T, /* p0 */ Double, /* p1 */ typings.ol.tileRangeMod.default, Boolean],
-    opt_this: T,
+    callback: js.Function2[/* p0 */ Double, /* p1 */ typings.ol.tileRangeMod.default, Boolean],
     opt_tileRange: typings.ol.tileRangeMod.default,
     opt_extent: Extent
   ): Boolean = js.native

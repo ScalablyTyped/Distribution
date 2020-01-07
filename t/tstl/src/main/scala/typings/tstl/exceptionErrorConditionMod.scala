@@ -1,7 +1,6 @@
 package typings.tstl
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.tstl.baseErrorInstanceMod.ErrorInstance
 import typings.tstl.exceptionErrorCategoryMod.ErrorCategory
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,11 +9,12 @@ import scala.scalajs.js.annotation._
 @JSImport("tstl/exception/ErrorCondition", JSImport.Namespace)
 @js.native
 object exceptionErrorConditionMod extends js.Object {
-  @js.native
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ErrorInstance * / any */ @js.native
   /**
     * Default Constructor.
     */
-  class ErrorCondition () extends ErrorInstance {
+  class ErrorCondition () extends js.Object {
     /**
       * Initializer Constructor.
       *

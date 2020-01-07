@@ -1,6 +1,7 @@
 package typings.ol.layerVectorTileMod
 
 import typings.ol.eventsMod.EventsKey
+import typings.ol.layerVectorTileRenderTypeMod.VectorTileRenderType
 import typings.ol.objectMod.ObjectEvent
 import typings.ol.olStrings.changeColonpreload
 import typings.ol.olStrings.changeColonuseInterimTilesOnError
@@ -10,8 +11,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait VectorTileLayer
-  extends typings.ol.layerVectorMod.default {
+  extends typings.ol.layerBaseVectorMod.default[typings.ol.sourceVectorTileMod.default] {
   def getPreload(): Double = js.native
+  def getRenderMode(): VectorTileRenderType = js.native
   def getUseInterimTilesOnError(): Boolean = js.native
   @JSName("on")
   def on_changepreload(`type`: changeColonpreload, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native

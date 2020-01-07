@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-stickynode
 
-Typings are for version 1.4
+Typings are for version 2.1
 
 ## Library description:
 A performant and comprehensive React sticky

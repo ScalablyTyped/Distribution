@@ -1,8 +1,6 @@
 package typings.tstl
 
 import typings.tstl.baseContainerSetContainerMod.SetContainer
-import typings.tstl.baseIteratorISetIteratorMod.ISetIterator
-import typings.tstl.baseIteratorISetIteratorMod.ISetReverseIterator
 import typings.tstl.tstlBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object baseContainerUniqueSetMod extends js.Object {
   @js.native
-  abstract class UniqueSet[Key, Source /* <: UniqueSet[Key, Source, IteratorT, ReverseT] */, IteratorT /* <: ISetIterator[Key, `true`, Source, IteratorT, ReverseT] */, ReverseT /* <: ISetReverseIterator[Key, `true`, Source, IteratorT, ReverseT] */] () extends SetContainer[Key, `true`, Source, IteratorT, ReverseT] {
+  abstract class UniqueSet[Key, Source /* <: UniqueSet[Key, Source, IteratorT, ReverseT] */, IteratorT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ISetIterator<Key, true, Source, IteratorT, ReverseT> */ js.Any */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ISetReverseIterator<Key, true, Source, IteratorT, ReverseT> */ js.Any */] () extends SetContainer[Key, `true`, Source, IteratorT, ReverseT] {
     /**
       * @hidden
       */

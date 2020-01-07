@@ -1,0 +1,337 @@
+package typings.googleapis.buildSrcApisBloggerV3Mod.blogger_v3
+
+import typings.gaxios.buildSrcCommonMod.GaxiosPromise
+import typings.googleapisDashCommon.buildSrcApiMod.APIRequestContext
+import typings.googleapisDashCommon.buildSrcApiMod.BodyResponseCallback
+import typings.googleapisDashCommon.buildSrcApiMod.MethodOptions
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("googleapis/build/src/apis/blogger/v3", "blogger_v3.Resource$Posts")
+@js.native
+class Resource$Posts protected () extends js.Object {
+  def this(context: APIRequestContext) = this()
+  var context: APIRequestContext = js.native
+  /**
+    * blogger.posts.delete
+    * @desc Delete a post by ID.
+    * @alias blogger.posts.delete
+    * @memberOf! ()
+    *
+    * @param {object} params Parameters for request
+    * @param {string} params.blogId The ID of the Blog.
+    * @param {string} params.postId The ID of the Post.
+    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param {callback} callback The callback that handles the response.
+    * @return {object} Request object
+    */
+  def delete(): GaxiosPromise[Unit] = js.native
+  def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: ParamsDollarResourceDollarPostsDollarDelete): GaxiosPromise[Unit] = js.native
+  def delete(params: ParamsDollarResourceDollarPostsDollarDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(
+    params: ParamsDollarResourceDollarPostsDollarDelete,
+    options: BodyResponseCallback[Unit],
+    callback: BodyResponseCallback[Unit]
+  ): Unit = js.native
+  def delete(params: ParamsDollarResourceDollarPostsDollarDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(
+    params: ParamsDollarResourceDollarPostsDollarDelete,
+    options: MethodOptions,
+    callback: BodyResponseCallback[Unit]
+  ): Unit = js.native
+  /**
+    * blogger.posts.get
+    * @desc Get a post by ID.
+    * @alias blogger.posts.get
+    * @memberOf! ()
+    *
+    * @param {object} params Parameters for request
+    * @param {string} params.blogId ID of the blog to fetch the post from.
+    * @param {boolean=} params.fetchBody Whether the body content of the post is included (default: true). This should be set to false when the post bodies are not required, to help minimize traffic.
+    * @param {boolean=} params.fetchImages Whether image URL metadata for each post is included (default: false).
+    * @param {integer=} params.maxComments Maximum number of comments to pull back on a post.
+    * @param {string} params.postId The ID of the post
+    * @param {string=} params.view Access level with which to view the returned result. Note that some fields require elevated access.
+    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param {callback} callback The callback that handles the response.
+    * @return {object} Request object
+    */
+  def get(): GaxiosPromise[Schema$Post] = js.native
+  def get(callback: BodyResponseCallback[Schema$Post]): Unit = js.native
+  def get(params: ParamsDollarResourceDollarPostsDollarGet): GaxiosPromise[Schema$Post] = js.native
+  def get(params: ParamsDollarResourceDollarPostsDollarGet, callback: BodyResponseCallback[Schema$Post]): Unit = js.native
+  def get(
+    params: ParamsDollarResourceDollarPostsDollarGet,
+    options: BodyResponseCallback[Schema$Post],
+    callback: BodyResponseCallback[Schema$Post]
+  ): Unit = js.native
+  def get(params: ParamsDollarResourceDollarPostsDollarGet, options: MethodOptions): GaxiosPromise[Schema$Post] = js.native
+  def get(
+    params: ParamsDollarResourceDollarPostsDollarGet,
+    options: MethodOptions,
+    callback: BodyResponseCallback[Schema$Post]
+  ): Unit = js.native
+  /**
+    * blogger.posts.getByPath
+    * @desc Retrieve a Post by Path.
+    * @alias blogger.posts.getByPath
+    * @memberOf! ()
+    *
+    * @param {object} params Parameters for request
+    * @param {string} params.blogId ID of the blog to fetch the post from.
+    * @param {integer=} params.maxComments Maximum number of comments to pull back on a post.
+    * @param {string} params.path Path of the Post to retrieve.
+    * @param {string=} params.view Access level with which to view the returned result. Note that some fields require elevated access.
+    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param {callback} callback The callback that handles the response.
+    * @return {object} Request object
+    */
+  def getByPath(): GaxiosPromise[Schema$Post] = js.native
+  def getByPath(callback: BodyResponseCallback[Schema$Post]): Unit = js.native
+  def getByPath(params: ParamsDollarResourceDollarPostsDollarGetbypath): GaxiosPromise[Schema$Post] = js.native
+  def getByPath(
+    params: ParamsDollarResourceDollarPostsDollarGetbypath,
+    callback: BodyResponseCallback[Schema$Post]
+  ): Unit = js.native
+  def getByPath(
+    params: ParamsDollarResourceDollarPostsDollarGetbypath,
+    options: BodyResponseCallback[Schema$Post],
+    callback: BodyResponseCallback[Schema$Post]
+  ): Unit = js.native
+  def getByPath(params: ParamsDollarResourceDollarPostsDollarGetbypath, options: MethodOptions): GaxiosPromise[Schema$Post] = js.native
+  def getByPath(
+    params: ParamsDollarResourceDollarPostsDollarGetbypath,
+    options: MethodOptions,
+    callback: BodyResponseCallback[Schema$Post]
+  ): Unit = js.native
+  /**
+    * blogger.posts.insert
+    * @desc Add a post.
+    * @alias blogger.posts.insert
+    * @memberOf! ()
+    *
+    * @param {object} params Parameters for request
+    * @param {string} params.blogId ID of the blog to add the post to.
+    * @param {boolean=} params.fetchBody Whether the body content of the post is included with the result (default: true).
+    * @param {boolean=} params.fetchImages Whether image URL metadata for each post is included in the returned result (default: false).
+    * @param {boolean=} params.isDraft Whether to create the post as a draft (default: false).
+    * @param {().Post} params.resource Request body data
+    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param {callback} callback The callback that handles the response.
+    * @return {object} Request object
+    */
+  def insert(): GaxiosPromise[Schema$Post] = js.native
+  def insert(callback: BodyResponseCallback[Schema$Post]): Unit = js.native
+  def insert(params: ParamsDollarResourceDollarPostsDollarInsert): GaxiosPromise[Schema$Post] = js.native
+  def insert(params: ParamsDollarResourceDollarPostsDollarInsert, callback: BodyResponseCallback[Schema$Post]): Unit = js.native
+  def insert(
+    params: ParamsDollarResourceDollarPostsDollarInsert,
+    options: BodyResponseCallback[Schema$Post],
+    callback: BodyResponseCallback[Schema$Post]
+  ): Unit = js.native
+  def insert(params: ParamsDollarResourceDollarPostsDollarInsert, options: MethodOptions): GaxiosPromise[Schema$Post] = js.native
+  def insert(
+    params: ParamsDollarResourceDollarPostsDollarInsert,
+    options: MethodOptions,
+    callback: BodyResponseCallback[Schema$Post]
+  ): Unit = js.native
+  /**
+    * blogger.posts.list
+    * @desc Retrieves a list of posts, possibly filtered.
+    * @alias blogger.posts.list
+    * @memberOf! ()
+    *
+    * @param {object} params Parameters for request
+    * @param {string} params.blogId ID of the blog to fetch posts from.
+    * @param {string=} params.endDate Latest post date to fetch, a date-time with RFC 3339 formatting.
+    * @param {boolean=} params.fetchBodies Whether the body content of posts is included (default: true). This should be set to false when the post bodies are not required, to help minimize traffic.
+    * @param {boolean=} params.fetchImages Whether image URL metadata for each post is included.
+    * @param {string=} params.labels Comma-separated list of labels to search for.
+    * @param {integer=} params.maxResults Maximum number of posts to fetch.
+    * @param {string=} params.orderBy Sort search results
+    * @param {string=} params.pageToken Continuation token if the request is paged.
+    * @param {string=} params.startDate Earliest post date to fetch, a date-time with RFC 3339 formatting.
+    * @param {string=} params.status Statuses to include in the results.
+    * @param {string=} params.view Access level with which to view the returned result. Note that some fields require escalated access.
+    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param {callback} callback The callback that handles the response.
+    * @return {object} Request object
+    */
+  def list(): GaxiosPromise[Schema$PostList] = js.native
+  def list(callback: BodyResponseCallback[Schema$PostList]): Unit = js.native
+  def list(params: ParamsDollarResourceDollarPostsDollarList): GaxiosPromise[Schema$PostList] = js.native
+  def list(params: ParamsDollarResourceDollarPostsDollarList, callback: BodyResponseCallback[Schema$PostList]): Unit = js.native
+  def list(
+    params: ParamsDollarResourceDollarPostsDollarList,
+    options: BodyResponseCallback[Schema$PostList],
+    callback: BodyResponseCallback[Schema$PostList]
+  ): Unit = js.native
+  def list(params: ParamsDollarResourceDollarPostsDollarList, options: MethodOptions): GaxiosPromise[Schema$PostList] = js.native
+  def list(
+    params: ParamsDollarResourceDollarPostsDollarList,
+    options: MethodOptions,
+    callback: BodyResponseCallback[Schema$PostList]
+  ): Unit = js.native
+  /**
+    * blogger.posts.patch
+    * @desc Update a post. This method supports patch semantics.
+    * @alias blogger.posts.patch
+    * @memberOf! ()
+    *
+    * @param {object} params Parameters for request
+    * @param {string} params.blogId The ID of the Blog.
+    * @param {boolean=} params.fetchBody Whether the body content of the post is included with the result (default: true).
+    * @param {boolean=} params.fetchImages Whether image URL metadata for each post is included in the returned result (default: false).
+    * @param {integer=} params.maxComments Maximum number of comments to retrieve with the returned post.
+    * @param {string} params.postId The ID of the Post.
+    * @param {boolean=} params.publish Whether a publish action should be performed when the post is updated (default: false).
+    * @param {boolean=} params.revert Whether a revert action should be performed when the post is updated (default: false).
+    * @param {().Post} params.resource Request body data
+    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param {callback} callback The callback that handles the response.
+    * @return {object} Request object
+    */
+  def patch(): GaxiosPromise[Schema$Post] = js.native
+  def patch(callback: BodyResponseCallback[Schema$Post]): Unit = js.native
+  def patch(params: ParamsDollarResourceDollarPostsDollarPatch): GaxiosPromise[Schema$Post] = js.native
+  def patch(params: ParamsDollarResourceDollarPostsDollarPatch, callback: BodyResponseCallback[Schema$Post]): Unit = js.native
+  def patch(
+    params: ParamsDollarResourceDollarPostsDollarPatch,
+    options: BodyResponseCallback[Schema$Post],
+    callback: BodyResponseCallback[Schema$Post]
+  ): Unit = js.native
+  def patch(params: ParamsDollarResourceDollarPostsDollarPatch, options: MethodOptions): GaxiosPromise[Schema$Post] = js.native
+  def patch(
+    params: ParamsDollarResourceDollarPostsDollarPatch,
+    options: MethodOptions,
+    callback: BodyResponseCallback[Schema$Post]
+  ): Unit = js.native
+  /**
+    * blogger.posts.publish
+    * @desc Publishes a draft post, optionally at the specific time of the
+    * given publishDate parameter.
+    * @alias blogger.posts.publish
+    * @memberOf! ()
+    *
+    * @param {object} params Parameters for request
+    * @param {string} params.blogId The ID of the Blog.
+    * @param {string} params.postId The ID of the Post.
+    * @param {string=} params.publishDate Optional date and time to schedule the publishing of the Blog. If no publishDate parameter is given, the post is either published at the a previously saved schedule date (if present), or the current time. If a future date is given, the post will be scheduled to be published.
+    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param {callback} callback The callback that handles the response.
+    * @return {object} Request object
+    */
+  def publish(): GaxiosPromise[Schema$Post] = js.native
+  def publish(callback: BodyResponseCallback[Schema$Post]): Unit = js.native
+  def publish(params: ParamsDollarResourceDollarPostsDollarPublish): GaxiosPromise[Schema$Post] = js.native
+  def publish(params: ParamsDollarResourceDollarPostsDollarPublish, callback: BodyResponseCallback[Schema$Post]): Unit = js.native
+  def publish(
+    params: ParamsDollarResourceDollarPostsDollarPublish,
+    options: BodyResponseCallback[Schema$Post],
+    callback: BodyResponseCallback[Schema$Post]
+  ): Unit = js.native
+  def publish(params: ParamsDollarResourceDollarPostsDollarPublish, options: MethodOptions): GaxiosPromise[Schema$Post] = js.native
+  def publish(
+    params: ParamsDollarResourceDollarPostsDollarPublish,
+    options: MethodOptions,
+    callback: BodyResponseCallback[Schema$Post]
+  ): Unit = js.native
+  /**
+    * blogger.posts.revert
+    * @desc Revert a published or scheduled post to draft state.
+    * @alias blogger.posts.revert
+    * @memberOf! ()
+    *
+    * @param {object} params Parameters for request
+    * @param {string} params.blogId The ID of the Blog.
+    * @param {string} params.postId The ID of the Post.
+    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param {callback} callback The callback that handles the response.
+    * @return {object} Request object
+    */
+  def revert(): GaxiosPromise[Schema$Post] = js.native
+  def revert(callback: BodyResponseCallback[Schema$Post]): Unit = js.native
+  def revert(params: ParamsDollarResourceDollarPostsDollarRevert): GaxiosPromise[Schema$Post] = js.native
+  def revert(params: ParamsDollarResourceDollarPostsDollarRevert, callback: BodyResponseCallback[Schema$Post]): Unit = js.native
+  def revert(
+    params: ParamsDollarResourceDollarPostsDollarRevert,
+    options: BodyResponseCallback[Schema$Post],
+    callback: BodyResponseCallback[Schema$Post]
+  ): Unit = js.native
+  def revert(params: ParamsDollarResourceDollarPostsDollarRevert, options: MethodOptions): GaxiosPromise[Schema$Post] = js.native
+  def revert(
+    params: ParamsDollarResourceDollarPostsDollarRevert,
+    options: MethodOptions,
+    callback: BodyResponseCallback[Schema$Post]
+  ): Unit = js.native
+  /**
+    * blogger.posts.search
+    * @desc Search for a post.
+    * @alias blogger.posts.search
+    * @memberOf! ()
+    *
+    * @param {object} params Parameters for request
+    * @param {string} params.blogId ID of the blog to fetch the post from.
+    * @param {boolean=} params.fetchBodies Whether the body content of posts is included (default: true). This should be set to false when the post bodies are not required, to help minimize traffic.
+    * @param {string=} params.orderBy Sort search results
+    * @param {string} params.q Query terms to search this blog for matching posts.
+    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param {callback} callback The callback that handles the response.
+    * @return {object} Request object
+    */
+  def search(): GaxiosPromise[Schema$PostList] = js.native
+  def search(callback: BodyResponseCallback[Schema$PostList]): Unit = js.native
+  def search(params: ParamsDollarResourceDollarPostsDollarSearch): GaxiosPromise[Schema$PostList] = js.native
+  def search(
+    params: ParamsDollarResourceDollarPostsDollarSearch,
+    callback: BodyResponseCallback[Schema$PostList]
+  ): Unit = js.native
+  def search(
+    params: ParamsDollarResourceDollarPostsDollarSearch,
+    options: BodyResponseCallback[Schema$PostList],
+    callback: BodyResponseCallback[Schema$PostList]
+  ): Unit = js.native
+  def search(params: ParamsDollarResourceDollarPostsDollarSearch, options: MethodOptions): GaxiosPromise[Schema$PostList] = js.native
+  def search(
+    params: ParamsDollarResourceDollarPostsDollarSearch,
+    options: MethodOptions,
+    callback: BodyResponseCallback[Schema$PostList]
+  ): Unit = js.native
+  /**
+    * blogger.posts.update
+    * @desc Update a post.
+    * @alias blogger.posts.update
+    * @memberOf! ()
+    *
+    * @param {object} params Parameters for request
+    * @param {string} params.blogId The ID of the Blog.
+    * @param {boolean=} params.fetchBody Whether the body content of the post is included with the result (default: true).
+    * @param {boolean=} params.fetchImages Whether image URL metadata for each post is included in the returned result (default: false).
+    * @param {integer=} params.maxComments Maximum number of comments to retrieve with the returned post.
+    * @param {string} params.postId The ID of the Post.
+    * @param {boolean=} params.publish Whether a publish action should be performed when the post is updated (default: false).
+    * @param {boolean=} params.revert Whether a revert action should be performed when the post is updated (default: false).
+    * @param {().Post} params.resource Request body data
+    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param {callback} callback The callback that handles the response.
+    * @return {object} Request object
+    */
+  def update(): GaxiosPromise[Schema$Post] = js.native
+  def update(callback: BodyResponseCallback[Schema$Post]): Unit = js.native
+  def update(params: ParamsDollarResourceDollarPostsDollarUpdate): GaxiosPromise[Schema$Post] = js.native
+  def update(params: ParamsDollarResourceDollarPostsDollarUpdate, callback: BodyResponseCallback[Schema$Post]): Unit = js.native
+  def update(
+    params: ParamsDollarResourceDollarPostsDollarUpdate,
+    options: BodyResponseCallback[Schema$Post],
+    callback: BodyResponseCallback[Schema$Post]
+  ): Unit = js.native
+  def update(params: ParamsDollarResourceDollarPostsDollarUpdate, options: MethodOptions): GaxiosPromise[Schema$Post] = js.native
+  def update(
+    params: ParamsDollarResourceDollarPostsDollarUpdate,
+    options: MethodOptions,
+    callback: BodyResponseCallback[Schema$Post]
+  ): Unit = js.native
+}
+

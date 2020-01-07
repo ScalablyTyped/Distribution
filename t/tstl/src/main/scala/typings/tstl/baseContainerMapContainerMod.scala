@@ -3,8 +3,6 @@ package typings.tstl
 import typings.tstl.baseContainerContainerMod.Container
 import typings.tstl.baseContainerILinearContainerMod.ILinearContainer
 import typings.tstl.baseContainerMapContainerMod.MapContainer.InsertRet
-import typings.tstl.baseIteratorIMapIteratorMod.IMapIterator
-import typings.tstl.baseIteratorIMapIteratorMod.IMapReverseIterator
 import typings.tstl.iteratorIForwardIteratorMod.IForwardIterator
 import typings.tstl.utilityEntryMod.Entry
 import typings.tstl.utilityIPairMod.IPair
@@ -16,16 +14,9 @@ import scala.scalajs.js.annotation._
 @JSImport("tstl/base/container/MapContainer", JSImport.Namespace)
 @js.native
 object baseContainerMapContainerMod extends js.Object {
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - typings.tstl.baseDisposableIForwardContainerMod.IForwardContainer because Already inherited
-  - typings.tstl.baseDisposableIPartialContainersMod._IPush because Already inherited
-  - typings.tstl.baseDisposableIPartialContainersMod._ISize because Already inherited
-  - typings.tstl.baseDisposableIPartialContainersMod._IEmpty because Already inherited
-  - typings.std.Iterable because Already inherited
-  - typings.tstl.baseDisposableIBidirectionalContainerMod.IBidirectionalContainer because Already inherited
-  - typings.tstl.baseContainerIContainerMod.IContainer because Already inherited
-  - typings.tstl.baseContainerUnderscoreIAssociativeContainerMod._IAssociativeContainer because var conflicts: iterator. Inlined find, has, count */ @js.native
-  abstract class MapContainer[Key, T, Unique /* <: Boolean */, Source /* <: MapContainer[Key, T, Unique, Source, IteratorT, ReverseT] */, IteratorT /* <: IMapIterator[Key, T, Unique, Source, IteratorT, ReverseT] */, ReverseT /* <: IMapReverseIterator[Key, T, Unique, Source, IteratorT, ReverseT] */] protected () extends Container[Entry[Key, T], Source, IteratorT, ReverseT, IPair[Key, T]] {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _IAssociativeContainer<Key, Entry<Key, T>, Source, IteratorT, ReverseT, IPair<Key, T>> * / any */ @js.native
+  abstract class MapContainer[Key, T, Unique /* <: Boolean */, Source /* <: MapContainer[Key, T, Unique, Source, IteratorT, ReverseT] */, IteratorT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IMapIterator<Key, T, Unique, Source, IteratorT, ReverseT> */ js.Any */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IMapReverseIterator<Key, T, Unique, Source, IteratorT, ReverseT> */ js.Any */] protected () extends Container[Entry[Key, T], Source, IteratorT, ReverseT, IPair[Key, T]] {
     /**
       * Default Constructor.
       */
@@ -61,12 +52,6 @@ object baseContainerMapContainerMod extends js.Object {
     /**
       * @inheritDoc
       */
-    /**
-      * Count elements with a specified key.
-      *
-      * @param key Key to search for.
-      * @return Number of elements with the specified key.
-      */
     def count(key: Key): Double = js.native
     def emplace(key: Key, `val`: T): InsertRet[Key, T, Unique, Source, IteratorT, ReverseT] = js.native
     def emplace_hint(hint: IteratorT, key: Key, `val`: T): IteratorT = js.native
@@ -78,21 +63,9 @@ object baseContainerMapContainerMod extends js.Object {
     /**
       * @inheritDoc
       */
-    /**
-      * Get iterator to element.
-      *
-      * @param key Key to search for.
-      * @return An iterator to the element, if the specified key is found, otherwise `this.end()`.
-      */
     def find(key: Key): IteratorT = js.native
     /**
       * @inheritDoc
-      */
-    /**
-      * Test whether a key exists.
-      *
-      * @param key Key to search for.
-      * @return Whether the specified key exists.
       */
     def has(key: Key): Boolean = js.native
     def insert(hint: IteratorT, pair: IPair[Key, T]): IteratorT = js.native
@@ -108,7 +81,7 @@ object baseContainerMapContainerMod extends js.Object {
   
   @js.native
   object MapContainer extends js.Object {
-    type InsertRet[Key, T, Unique /* <: Boolean */, Source /* <: MapContainer[Key, T, Unique, Source, Iterator, Reverse] */, Iterator /* <: IMapIterator[Key, T, Unique, Source, Iterator, Reverse] */, Reverse /* <: IMapReverseIterator[Key, T, Unique, Source, Iterator, Reverse] */] = Iterator | (Pair[Iterator, Boolean])
+    type InsertRet[Key, T, Unique /* <: Boolean */, Source /* <: MapContainer[Key, T, Unique, Source, Iterator, Reverse] */, Iterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IMapIterator<Key, T, Unique, Source, Iterator, Reverse> */ js.Any */, Reverse /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IMapReverseIterator<Key, T, Unique, Source, Iterator, Reverse> */ js.Any */] = Iterator | (Pair[Iterator, Boolean])
   }
   
 }

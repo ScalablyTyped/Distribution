@@ -2,7 +2,7 @@ package typings.victory.victoryMod
 
 import typings.react.reactMod.ReactElement
 import typings.victory.Anon_XY
-import typings.victory.Anon_XYD3Scale
+import typings.victory.Anon_XYD3ScaleScalePropType
 import typings.victory.victoryStrings.bottom
 import typings.victory.victoryStrings.left
 import typings.victory.victoryStrings.right
@@ -134,7 +134,7 @@ object FlyoutProps {
     pointerWidth: Int | Double = null,
     polar: js.UndefOr[Boolean] = js.undefined,
     role: String = null,
-    scale: ScalePropType | D3Scale | Anon_XYD3Scale = null,
+    scale: ScalePropType | D3Scale | Anon_XYD3ScaleScalePropType = null,
     shapeRendering: String = null,
     standalone: js.UndefOr[Boolean] = js.undefined,
     style: VictoryStyleObject = null,

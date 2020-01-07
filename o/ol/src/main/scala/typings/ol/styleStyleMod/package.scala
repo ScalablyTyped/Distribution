@@ -11,7 +11,7 @@ package object styleStyleMod {
 
   type GeometryFunction = js.Function1[
     /* p0 */ FeatureLike, 
-    js.UndefOr[typings.ol.geomGeometryMod.default | typings.ol.renderFeatureMod.default]
+    typings.ol.geomGeometryMod.default | typings.ol.renderFeatureMod.default
   ]
   type RenderFunction = js.Function2[
     /* p0 */ Coordinate | (js.Array[js.Array[Coordinate] | Coordinate]), 

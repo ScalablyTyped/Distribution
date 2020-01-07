@@ -1,15 +1,19 @@
 package typings.tstl.baseContainerIDequeContainerMod
 
-import typings.tstl.baseDisposableIPartialContainersMod._IPushFront
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait _IDeque[T] extends _IPushFront[T] {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _IPushFront<T> * / any */ trait _IDeque[T] extends js.Object {
   /**
     * Erase the first element.
     */
   def pop_front(): Unit
+  /**
+    * @inheritDoc
+    */
+  def push_front(`val`: T): Unit
 }
 
 object _IDeque {

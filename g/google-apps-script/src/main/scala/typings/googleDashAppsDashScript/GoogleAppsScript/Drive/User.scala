@@ -29,11 +29,7 @@ trait User extends js.Object {
   def getName(): String
   /** Gets the URL for the user's photo. This method returns null if the user's photo is not available. */
   def getPhotoUrl(): String
-  /**
-    * Gets the user's email address.
-    * @deprecated As of June 24, 2013, replaced by getEmail()
-    */
-  def getUserLoginId(): String
+  /** @deprecated DO NOT USE */ def getUserLoginId(): String
 }
 
 object User {

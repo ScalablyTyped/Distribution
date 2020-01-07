@@ -1,7 +1,7 @@
 
 # Scala.js typings for ss-utils
 
-Typings are for version 0.2.4
+Typings are for version 0.2.5
 
 ## Library description:
 ServiceStack's JavaScript library providing a number of convenience utilities in developing javascript web apps. Integrates with ServiceStack's Server features including Error Handling, Validation and Server Events

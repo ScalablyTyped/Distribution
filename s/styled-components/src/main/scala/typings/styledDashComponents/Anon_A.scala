@@ -13,15 +13,20 @@ trait Anon_A extends js.Object {
   var as: js.UndefOr[
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any
   ] = js.undefined
+  var forwardedAs: js.UndefOr[
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any
+  ] = js.undefined
 }
 
 object Anon_A {
   @scala.inline
   def apply(
-    as: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any = null
+    as: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any = null,
+    forwardedAs: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any = null
   ): Anon_A = {
     val __obj = js.Dynamic.literal()
     if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
+    if (forwardedAs != null) __obj.updateDynamic("forwardedAs")(forwardedAs.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_A]
   }
 }

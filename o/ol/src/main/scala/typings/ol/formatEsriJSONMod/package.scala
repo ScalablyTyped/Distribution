@@ -16,7 +16,6 @@ package object formatEsriJSONMod {
   import typings.arcgisDashRestDashApi.arcgisDashRestDashApiMod.Position
   import typings.arcgisDashRestDashApi.arcgisDashRestDashApiMod.SpatialReferenceWkid
 
-  type EsriJSON = typings.ol.formatJSONFeatureMod.default
   type EsriJSONFeature = Feature
   type EsriJSONFeatureSet = FeatureSet
   type EsriJSONGeometry = Geometry

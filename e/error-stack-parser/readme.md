@@ -1,7 +1,7 @@
 
 # Scala.js typings for error-stack-parser
 
-Typings are for version 2.0.4
+Typings are for version 2.0.6
 
 ## Library description:
 Extract meaning from JS Errors

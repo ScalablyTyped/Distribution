@@ -1,8 +1,8 @@
 package typings.tstl
 
-import typings.tstl.baseThreadEnumsMod.AccessType
-import typings.tstl.baseThreadEnumsMod.LockType
-import typings.tstl.baseTreeUnderscoreColorMod._Color
+import typings.tstl.internalThreadAccessTypeMod.AccessType
+import typings.tstl.internalThreadLockTypeMod.LockType
+import typings.tstl.internalTreeColorMod.Color
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,14 +11,14 @@ object tstlNumbers {
   @js.native
   sealed trait `0`
     extends AccessType
+       with Color
        with LockType
-       with _Color
   
   @js.native
   sealed trait `1`
     extends AccessType
+       with Color
        with LockType
-       with _Color
   
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]

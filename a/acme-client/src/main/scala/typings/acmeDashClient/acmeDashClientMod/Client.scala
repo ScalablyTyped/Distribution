@@ -3,10 +3,8 @@ package typings.acmeDashClient.acmeDashClientMod
 import typings.acmeDashClient.typesRfc8555Mod.Account
 import typings.acmeDashClient.typesRfc8555Mod.AccountCreateRequest
 import typings.acmeDashClient.typesRfc8555Mod.AccountUpdateRequest
-import typings.acmeDashClient.typesRfc8555Mod.Authorization
 import typings.acmeDashClient.typesRfc8555Mod.CertificateRevocationRequest
 import typings.acmeDashClient.typesRfc8555Mod.Challenge
-import typings.acmeDashClient.typesRfc8555Mod.Order
 import typings.acmeDashClient.typesRfc8555Mod.OrderCreateRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`

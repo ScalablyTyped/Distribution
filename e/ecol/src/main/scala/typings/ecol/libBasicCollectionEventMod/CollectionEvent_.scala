@@ -2,16 +2,15 @@ package typings.ecol.libBasicCollectionEventMod
 
 import typings.std.Iterable
 import typings.std.IterableIterator
-import typings.tstl.baseIteratorIteratorMod.Iterator
+import typings.std.Iterator
 import typings.tstl.tstlMod.base.Container
-import typings.tstl.tstlMod.base.ReverseIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("ecol/lib/basic/CollectionEvent", "CollectionEvent")
 @js.native
-class CollectionEvent_[T, SourceT /* <: Container[T, SourceT, IteratorT, ReverseT, T] */, IteratorT /* <: Iterator[T, SourceT, IteratorT, ReverseT, T] */, ReverseT /* <: ReverseIterator[T, SourceT, IteratorT, ReverseT, T] */] protected () extends Iterable[T] {
+class CollectionEvent_[T, SourceT /* <: Container[T, SourceT, IteratorT, ReverseT, T] */, IteratorT /* <: Iterator[T, SourceT, IteratorT] */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.base.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ js.Any */] protected () extends Iterable[T] {
   def this(`type`: String, first: IteratorT, last: IteratorT) = this()
   val first: IteratorT = js.native
   @JSName(scala.scalajs.js.Symbol.iterator)

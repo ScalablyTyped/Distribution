@@ -1,0 +1,51 @@
+package typings.googleapis.buildSrcApisCloudtraceV2Mod.cloudtrace_v2
+
+import typings.gaxios.buildSrcCommonMod.GaxiosPromise
+import typings.googleapisDashCommon.buildSrcApiMod.APIRequestContext
+import typings.googleapisDashCommon.buildSrcApiMod.BodyResponseCallback
+import typings.googleapisDashCommon.buildSrcApiMod.MethodOptions
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("googleapis/build/src/apis/cloudtrace/v2", "cloudtrace_v2.Resource$Projects$Traces$Spans")
+@js.native
+class ResourceDollarProjectsDollarTracesDollarSpans protected () extends js.Object {
+  def this(context: APIRequestContext) = this()
+  var context: APIRequestContext = js.native
+  /**
+    * cloudtrace.projects.traces.spans.createSpan
+    * @desc Creates a new span.
+    * @alias cloudtrace.projects.traces.spans.createSpan
+    * @memberOf! ()
+    *
+    * @param {object} params Parameters for request
+    * @param {string} params.name The resource name of the span in the following format:      projects/[PROJECT_ID]/traces/[TRACE_ID]/spans/SPAN_ID is a unique identifier for a trace within a project; it is a 32-character hexadecimal encoding of a 16-byte array.  [SPAN_ID] is a unique identifier for a span within a trace; it is a 16-character hexadecimal encoding of an 8-byte array.
+    * @param {().Span} params.resource Request body data
+    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param {callback} callback The callback that handles the response.
+    * @return {object} Request object
+    */
+  def createSpan(): GaxiosPromise[Schema$Span] = js.native
+  def createSpan(callback: BodyResponseCallback[Schema$Span]): Unit = js.native
+  def createSpan(params: ParamsDollarResourceDollarProjectsDollarTracesDollarSpansDollarCreatespan): GaxiosPromise[Schema$Span] = js.native
+  def createSpan(
+    params: ParamsDollarResourceDollarProjectsDollarTracesDollarSpansDollarCreatespan,
+    callback: BodyResponseCallback[Schema$Span]
+  ): Unit = js.native
+  def createSpan(
+    params: ParamsDollarResourceDollarProjectsDollarTracesDollarSpansDollarCreatespan,
+    options: BodyResponseCallback[Schema$Span],
+    callback: BodyResponseCallback[Schema$Span]
+  ): Unit = js.native
+  def createSpan(
+    params: ParamsDollarResourceDollarProjectsDollarTracesDollarSpansDollarCreatespan,
+    options: MethodOptions
+  ): GaxiosPromise[Schema$Span] = js.native
+  def createSpan(
+    params: ParamsDollarResourceDollarProjectsDollarTracesDollarSpansDollarCreatespan,
+    options: MethodOptions,
+    callback: BodyResponseCallback[Schema$Span]
+  ): Unit = js.native
+}
+

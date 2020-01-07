@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__credential-provider-imds"
-version := "0.1.0-preview.1-461129"
+version := "0.1.0-preview.1-6c99d0"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "aws-sdk__types" % "0.1.0-preview.1-4506f1",
-  "org.scalablytyped" %%% "node" % "13.1-dt-20200103Z-b9f880",
+  "org.scalablytyped" %%% "node" % "13.1-dt-20200103Z-51871a",
   "org.scalablytyped" %%% "std" % "3.7-b6d959")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

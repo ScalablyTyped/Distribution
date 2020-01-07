@@ -16,10 +16,13 @@ object renderEventTypeMod extends js.Object {
     sealed trait POSTCOMPOSE extends EventType
     
     @js.native
+    sealed trait POSTRENDER extends EventType
+    
+    @js.native
     sealed trait PRECOMPOSE extends EventType
     
     @js.native
-    sealed trait RENDER extends EventType
+    sealed trait PRERENDER extends EventType
     
     @js.native
     sealed trait RENDERCOMPLETE extends EventType
@@ -29,8 +32,9 @@ object renderEventTypeMod extends js.Object {
   @js.native
   object default extends js.Object {
     /* "postcompose" */ val POSTCOMPOSE: typings.ol.renderEventTypeMod.EventType.POSTCOMPOSE with String = js.native
+    /* "postrender" */ val POSTRENDER: typings.ol.renderEventTypeMod.EventType.POSTRENDER with String = js.native
     /* "precompose" */ val PRECOMPOSE: typings.ol.renderEventTypeMod.EventType.PRECOMPOSE with String = js.native
-    /* "render" */ val RENDER: typings.ol.renderEventTypeMod.EventType.RENDER with String = js.native
+    /* "prerender" */ val PRERENDER: typings.ol.renderEventTypeMod.EventType.PRERENDER with String = js.native
     /* "rendercomplete" */ val RENDERCOMPLETE: typings.ol.renderEventTypeMod.EventType.RENDERCOMPLETE with String = js.native
     @JSBracketAccess
     def apply(value: String): js.UndefOr[EventType with String] = js.native

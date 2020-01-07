@@ -1,7 +1,6 @@
 package typings.tstl
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.tstl.baseThreadUnderscoreISharedLockableMod._ISharedLockable
 import typings.tstl.threadILockableMod.ILockable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,13 +9,12 @@ import scala.scalajs.js.annotation._
 @JSImport("tstl/thread/SharedMutex", JSImport.Namespace)
 @js.native
 object threadSharedMutexMod extends js.Object {
-  @js.native
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _ISharedLockable * / any */ @js.native
   /**
     * Default Constructor.
     */
-  class SharedMutex ()
-    extends ILockable
-       with _ISharedLockable {
+  class SharedMutex () extends ILockable {
     /**
       * @hidden
       */
@@ -27,10 +25,9 @@ object threadSharedMutexMod extends js.Object {
     /* CompleteClass */
     override def lock(): js.Promise[Unit] = js.native
     /**
-      * Lock shared until be unlock shared.
+      * @inheritDoc
       */
-    /* CompleteClass */
-    override def lock_shared(): js.Promise[Unit] = js.native
+    def lock_shared(): js.Promise[Unit] = js.native
     /**
       * Try {@link lock}.
       *
@@ -39,20 +36,18 @@ object threadSharedMutexMod extends js.Object {
     /* CompleteClass */
     override def try_lock(): js.Promise[Boolean] = js.native
     /**
-      * Try lock shared.
+      * @inheritDoc
       */
-    /* CompleteClass */
-    override def try_lock_shared(): js.Promise[Boolean] = js.native
+    def try_lock_shared(): js.Promise[Boolean] = js.native
     /**
       * Unlock.
       */
     /* CompleteClass */
     override def unlock(): js.Promise[Unit] = js.native
     /**
-      * Unlock shared.
+      * @inheritDoc
       */
-    /* CompleteClass */
-    override def unlock_shared(): js.Promise[Unit] = js.native
+    def unlock_shared(): js.Promise[Unit] = js.native
   }
   
   val shared_mutex: Instantiable0[SharedMutex] = js.native

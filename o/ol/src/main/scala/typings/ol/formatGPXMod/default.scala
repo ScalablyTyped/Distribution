@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("ol/format/GPX", JSImport.Default)
 @js.native
-class default ()
-  extends typings.ol.formatXMLFeatureMod.default {
+class default () extends GPX {
   def this(opt_options: Options) = this()
 }
 

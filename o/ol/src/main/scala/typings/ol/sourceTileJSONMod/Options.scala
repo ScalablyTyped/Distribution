@@ -1,5 +1,6 @@
 package typings.ol.sourceTileJSONMod
 
+import typings.ol.sizeMod.Size
 import typings.ol.sourceSourceMod.AttributionLike
 import typings.ol.tileMod.LoadFunction
 import typings.ol.tileMod.Tile
@@ -15,6 +16,7 @@ trait Options extends js.Object {
   var reprojectionErrorThreshold: js.UndefOr[Double] = js.undefined
   var tileJSON: js.UndefOr[Config] = js.undefined
   var tileLoadFunction: js.UndefOr[LoadFunction] = js.undefined
+  var tileSize: js.UndefOr[Double | Size] = js.undefined
   var transition: js.UndefOr[Double] = js.undefined
   var url: js.UndefOr[String] = js.undefined
   var wrapX: js.UndefOr[Boolean] = js.undefined
@@ -30,6 +32,7 @@ object Options {
     reprojectionErrorThreshold: Int | Double = null,
     tileJSON: Config = null,
     tileLoadFunction: (/* p0 */ Tile, /* p1 */ String) => Unit = null,
+    tileSize: Double | Size = null,
     transition: Int | Double = null,
     url: String = null,
     wrapX: js.UndefOr[Boolean] = js.undefined
@@ -42,6 +45,7 @@ object Options {
     if (reprojectionErrorThreshold != null) __obj.updateDynamic("reprojectionErrorThreshold")(reprojectionErrorThreshold.asInstanceOf[js.Any])
     if (tileJSON != null) __obj.updateDynamic("tileJSON")(tileJSON.asInstanceOf[js.Any])
     if (tileLoadFunction != null) __obj.updateDynamic("tileLoadFunction")(js.Any.fromFunction2(tileLoadFunction))
+    if (tileSize != null) __obj.updateDynamic("tileSize")(tileSize.asInstanceOf[js.Any])
     if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX.asInstanceOf[js.Any])

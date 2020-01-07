@@ -10,27 +10,27 @@ import scala.scalajs.js.annotation._
 @js.native
 trait WFS
   extends typings.ol.formatXMLFeatureMod.default {
-  def getFeatureType(): js.UndefOr[js.Array[String] | String] = js.native
-  def readFeatureCollectionMetadata(source: String): js.UndefOr[FeatureCollectionMetadata] = js.native
-  def readFeatureCollectionMetadata(source: js.Object): js.UndefOr[FeatureCollectionMetadata] = js.native
-  def readFeatureCollectionMetadata(source: Document): js.UndefOr[FeatureCollectionMetadata] = js.native
-  def readFeatureCollectionMetadata(source: Element): js.UndefOr[FeatureCollectionMetadata] = js.native
-  def readFeatureCollectionMetadataFromDocument(doc: Document): js.UndefOr[FeatureCollectionMetadata] = js.native
-  def readFeatureCollectionMetadataFromNode(node: Element): js.UndefOr[FeatureCollectionMetadata] = js.native
-  def readTransactionResponse(source: String): js.UndefOr[TransactionResponse] = js.native
-  def readTransactionResponse(source: js.Object): js.UndefOr[TransactionResponse] = js.native
-  def readTransactionResponse(source: Document): js.UndefOr[TransactionResponse] = js.native
-  def readTransactionResponse(source: Element): js.UndefOr[TransactionResponse] = js.native
-  def readTransactionResponseFromDocument(doc: Document): js.UndefOr[TransactionResponse] = js.native
-  def readTransactionResponseFromNode(node: Element): js.UndefOr[TransactionResponse] = js.native
+  def getFeatureType(): js.Array[String] | String = js.native
+  def readFeatureCollectionMetadata(source: String): FeatureCollectionMetadata = js.native
+  def readFeatureCollectionMetadata(source: js.Object): FeatureCollectionMetadata = js.native
+  def readFeatureCollectionMetadata(source: Document): FeatureCollectionMetadata = js.native
+  def readFeatureCollectionMetadata(source: Element): FeatureCollectionMetadata = js.native
+  def readFeatureCollectionMetadataFromDocument(doc: Document): FeatureCollectionMetadata = js.native
+  def readFeatureCollectionMetadataFromNode(node: Element): FeatureCollectionMetadata = js.native
+  def readTransactionResponse(source: String): TransactionResponse = js.native
+  def readTransactionResponse(source: js.Object): TransactionResponse = js.native
+  def readTransactionResponse(source: Document): TransactionResponse = js.native
+  def readTransactionResponse(source: Element): TransactionResponse = js.native
+  def readTransactionResponseFromDocument(doc: Document): TransactionResponse = js.native
+  def readTransactionResponseFromNode(node: Element): TransactionResponse = js.native
   def setFeatureType(): Unit = js.native
   def setFeatureType(featureType: String): Unit = js.native
   def setFeatureType(featureType: js.Array[String]): Unit = js.native
   def writeGetFeature(options: WriteGetFeatureOptions): Node = js.native
   def writeTransaction(
-    inserts: js.Array[typings.ol.featureMod.default],
-    updates: js.Array[typings.ol.featureMod.default],
-    deletes: js.Array[typings.ol.featureMod.default],
+    inserts: js.Array[typings.ol.featureMod.default[typings.ol.geomGeometryMod.default]],
+    updates: js.Array[typings.ol.featureMod.default[typings.ol.geomGeometryMod.default]],
+    deletes: js.Array[typings.ol.featureMod.default[typings.ol.geomGeometryMod.default]],
     options: WriteTransactionOptions
   ): Node = js.native
 }

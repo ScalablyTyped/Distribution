@@ -1,7 +1,7 @@
 
 # Scala.js typings for electron-unhandled
 
-Typings are for version 3.0.1
+Typings are for version 3.0.2
 
 ## Library description:
 Catch unhandled errors and promise rejections in your Electron app

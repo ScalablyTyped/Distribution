@@ -1,0 +1,38 @@
+package typings.googleapis.buildSrcApisVisionV1Mod.vision_v1
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+  * Information about a product.
+  */
+@js.native
+trait Schema$Result extends js.Object {
+  /**
+    * The resource name of the image from the product that is the closest match
+    * to the query.
+    */
+  var image: js.UndefOr[String] = js.native
+  /**
+    * The Product.
+    */
+  var product: js.UndefOr[Schema$Product] = js.native
+  /**
+    * A confidence level on the match, ranging from 0 (no confidence) to 1
+    * (full confidence).
+    */
+  var score: js.UndefOr[Double] = js.native
+}
+
+object Schema$Result {
+  @scala.inline
+  def apply(image: String = null, product: Schema$Product = null, score: Int | Double = null): Schema$Result = {
+    val __obj = js.Dynamic.literal()
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (product != null) __obj.updateDynamic("product")(product.asInstanceOf[js.Any])
+    if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Schema$Result]
+  }
+}
+

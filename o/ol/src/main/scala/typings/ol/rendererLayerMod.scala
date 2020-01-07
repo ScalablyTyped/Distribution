@@ -3,9 +3,12 @@ package typings.ol
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
 import typings.ol.coordinateMod.Coordinate
-import typings.ol.extentMod.Extent
 import typings.ol.featureMod.FeatureLike
+import typings.ol.pixelMod.Pixel
 import typings.ol.pluggableMapMod.FrameState
+import typings.std.HTMLElement
+import typings.std.Uint8Array
+import typings.std.Uint8ClampedArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +17,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object rendererLayerMod extends js.Object {
   @js.native
-  trait LayerRenderer
+  trait LayerRenderer[LayerType /* <: typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default] */]
     extends typings.ol.observableMod.default {
     /* protected */ def createLoadedTileFinder(
       source: typings.ol.sourceTileMod.default,
@@ -25,57 +28,31 @@ object rendererLayerMod extends js.Object {
       coordinate: Coordinate,
       frameState: FrameState,
       hitTolerance: Double,
-      callback: js.Function2[/* p0 */ FeatureLike, /* p1 */ typings.ol.layerLayerMod.default, T]
+      callback: js.Function2[
+          /* p0 */ FeatureLike, 
+          /* p1 */ typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default], 
+          T
+        ],
+      declutteredFeatures: js.Array[FeatureLike]
     ): T | Unit = js.native
-    def getLayer(): typings.ol.layerLayerMod.default = js.native
-    def hasFeatureAtCoordinate(coordinate: Coordinate, frameState: FrameState): Boolean = js.native
+    def getDataAtPixel(pixel: Pixel, frameState: FrameState, hitTolerance: Double): Uint8ClampedArray | Uint8Array = js.native
+    def getFeatures(pixel: Pixel): js.Promise[js.Array[typings.ol.featureMod.default[typings.ol.geomGeometryMod.default]]] = js.native
+    def getLayer(): LayerType = js.native
+    def handleFontsChanged(): Unit = js.native
     /* protected */ def loadImage(image: typings.ol.imageBaseMod.default): Boolean = js.native
-    /* protected */ def manageTilePyramid[T](
-      frameState: FrameState,
-      tileSource: typings.ol.sourceTileMod.default,
-      tileGrid: typings.ol.tilegridTileGridMod.default,
-      pixelRatio: Double,
-      projection: typings.ol.projProjectionMod.default,
-      extent: Extent,
-      currentZ: Double,
-      preload: Double
+    def loadedTileCallback(
+      tiles: NumberDictionary[StringDictionary[typings.ol.tileMod.default]],
+      zoom: Double,
+      tile: typings.ol.tileMod.default
     ): Unit = js.native
-    /* protected */ def manageTilePyramid[T](
-      frameState: FrameState,
-      tileSource: typings.ol.sourceTileMod.default,
-      tileGrid: typings.ol.tilegridTileGridMod.default,
-      pixelRatio: Double,
-      projection: typings.ol.projProjectionMod.default,
-      extent: Extent,
-      currentZ: Double,
-      preload: Double,
-      opt_tileCallback: js.Function0[Unit]
-    ): Unit = js.native
-    /* protected */ def manageTilePyramid[T](
-      frameState: FrameState,
-      tileSource: typings.ol.sourceTileMod.default,
-      tileGrid: typings.ol.tilegridTileGridMod.default,
-      pixelRatio: Double,
-      projection: typings.ol.projProjectionMod.default,
-      extent: Extent,
-      currentZ: Double,
-      preload: Double,
-      opt_tileCallback: js.Function0[Unit],
-      opt_this: T
-    ): Unit = js.native
+    def prepareFrame(frameState: FrameState): Boolean = js.native
+    def renderFrame(frameState: FrameState, target: HTMLElement): HTMLElement = js.native
     /* protected */ def renderIfReadyAndVisible(): Unit = js.native
-    /* protected */ def scheduleExpireCache(frameState: FrameState, tileSource: typings.ol.sourceTileMod.default): Unit = js.native
-    /* protected */ def updateUsedTiles(
-      usedTiles: StringDictionary[StringDictionary[typings.ol.tileRangeMod.default]],
-      tileSource: typings.ol.sourceTileMod.default,
-      z: Double,
-      tileRange: typings.ol.tileRangeMod.default
-    ): Unit = js.native
   }
   
   @js.native
-  class default protected () extends LayerRenderer {
-    def this(layer: typings.ol.layerLayerMod.default) = this()
+  class default[LayerType /* <: typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default] */] protected () extends LayerRenderer[LayerType] {
+    def this(layer: LayerType) = this()
   }
   
 }

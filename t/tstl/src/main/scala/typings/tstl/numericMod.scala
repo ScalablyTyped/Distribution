@@ -1,7 +1,5 @@
 package typings.tstl
 
-import typings.tstl.iteratorIFakeMod.General
-import typings.tstl.iteratorIFakeMod.Writeonly
 import typings.tstl.iteratorIForwardIteratorMod.IForwardIterator
 import typings.tstl.numericIComputableMod.IComputable
 import typings.tstl.numericINegatableMod.INegatable
@@ -14,10 +12,10 @@ import scala.scalajs.js.annotation._
 @JSImport("tstl/numeric", JSImport.Namespace)
 @js.native
 object numericMod extends js.Object {
-  def accumulate[T, InputIterator /* <: General[IForwardIterator[T, InputIterator]] */](first: InputIterator, last: InputIterator, init: T): T = js.native
-  def accumulate[T, InputIterator /* <: General[IForwardIterator[T, InputIterator]] */](first: InputIterator, last: InputIterator, init: T, op: BinaryOperator[T, T]): T = js.native
-  def adjacent_difference[T, InputIterator /* <: IForwardIterator[T, InputIterator] */, OutputIterator /* <: Writeonly[IForwardIterator[T, OutputIterator]] */](first: InputIterator, last: InputIterator, output: OutputIterator): OutputIterator = js.native
-  def adjacent_difference[T, InputIterator /* <: IForwardIterator[T, InputIterator] */, OutputIterator /* <: Writeonly[IForwardIterator[T, OutputIterator]] */](first: InputIterator, last: InputIterator, output: OutputIterator, op: BinaryOperator[T, T]): OutputIterator = js.native
+  def accumulate[T, InputIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IForwardIterator<T, InputIterator>> */ js.Any */](first: InputIterator, last: InputIterator, init: T): T = js.native
+  def accumulate[T, InputIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IForwardIterator<T, InputIterator>> */ js.Any */](first: InputIterator, last: InputIterator, init: T, op: BinaryOperator[T, T]): T = js.native
+  def adjacent_difference[T, InputIterator /* <: IForwardIterator[T, InputIterator] */, OutputIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Writeonly<IForwardIterator<T, OutputIterator>> */ js.Any */](first: InputIterator, last: InputIterator, output: OutputIterator): OutputIterator = js.native
+  def adjacent_difference[T, InputIterator /* <: IForwardIterator[T, InputIterator] */, OutputIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Writeonly<IForwardIterator<T, OutputIterator>> */ js.Any */](first: InputIterator, last: InputIterator, output: OutputIterator, op: BinaryOperator[T, T]): OutputIterator = js.native
   def assoc_laguerre(n: Double, m: Double, x: Double): Double = js.native
   def assoc_legendre(n: Double, m: Double, x: Double): Double = js.native
   def beta(x: Double, y: Double): Double = js.native
@@ -32,8 +30,8 @@ object numericMod extends js.Object {
   def ellint_1(k: Double, phi: Double): Double = js.native
   def ellint_2(k: Double, phi: Double): Double = js.native
   def ellint_3(k: Double, v: Double, phi: Double): Double = js.native
-  def exclusive_scan[T, InputIterator /* <: IForwardIterator[T, InputIterator] */, OutputIterator /* <: Writeonly[IForwardIterator[T, OutputIterator]] */](first: InputIterator, last: InputIterator, output: OutputIterator, init: T): OutputIterator = js.native
-  def exclusive_scan[T, InputIterator /* <: IForwardIterator[T, InputIterator] */, OutputIterator /* <: Writeonly[IForwardIterator[T, OutputIterator]] */](
+  def exclusive_scan[T, InputIterator /* <: IForwardIterator[T, InputIterator] */, OutputIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Writeonly<IForwardIterator<T, OutputIterator>> */ js.Any */](first: InputIterator, last: InputIterator, output: OutputIterator, init: T): OutputIterator = js.native
+  def exclusive_scan[T, InputIterator /* <: IForwardIterator[T, InputIterator] */, OutputIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Writeonly<IForwardIterator<T, OutputIterator>> */ js.Any */](
     first: InputIterator,
     last: InputIterator,
     output: OutputIterator,
@@ -43,24 +41,24 @@ object numericMod extends js.Object {
   def expint(x: Double): Double = js.native
   def gcd(x: Double, y: Double): Double = js.native
   def hermite(n: Double, x: Double): Double = js.native
-  def inclusive_scan[T, InputIterator /* <: IForwardIterator[T, InputIterator] */, OutputIterator /* <: Writeonly[IForwardIterator[T, OutputIterator]] */](first: InputIterator, last: InputIterator, output: OutputIterator): OutputIterator = js.native
-  def inclusive_scan[T, InputIterator /* <: IForwardIterator[T, InputIterator] */, OutputIterator /* <: Writeonly[IForwardIterator[T, OutputIterator]] */](first: InputIterator, last: InputIterator, output: OutputIterator, op: BinaryOperator[T, T]): OutputIterator = js.native
-  def inclusive_scan[T, InputIterator /* <: IForwardIterator[T, InputIterator] */, OutputIterator /* <: Writeonly[IForwardIterator[T, OutputIterator]] */](
+  def inclusive_scan[T, InputIterator /* <: IForwardIterator[T, InputIterator] */, OutputIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Writeonly<IForwardIterator<T, OutputIterator>> */ js.Any */](first: InputIterator, last: InputIterator, output: OutputIterator): OutputIterator = js.native
+  def inclusive_scan[T, InputIterator /* <: IForwardIterator[T, InputIterator] */, OutputIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Writeonly<IForwardIterator<T, OutputIterator>> */ js.Any */](first: InputIterator, last: InputIterator, output: OutputIterator, op: BinaryOperator[T, T]): OutputIterator = js.native
+  def inclusive_scan[T, InputIterator /* <: IForwardIterator[T, InputIterator] */, OutputIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Writeonly<IForwardIterator<T, OutputIterator>> */ js.Any */](
     first: InputIterator,
     last: InputIterator,
     output: OutputIterator,
     op: BinaryOperator[T, T],
     init: T
   ): OutputIterator = js.native
-  def inner_product[X, Y, InputIterator1 /* <: General[IForwardIterator[X, InputIterator1]] */, InputIterator2 /* <: General[IForwardIterator[Y, InputIterator2]] */](first1: InputIterator1, last1: InputIterator1, first2: InputIterator2, value: X): X = js.native
-  def inner_product[X, Y, InputIterator1 /* <: General[IForwardIterator[X, InputIterator1]] */, InputIterator2 /* <: General[IForwardIterator[Y, InputIterator2]] */](
+  def inner_product[X, Y, InputIterator1 /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IForwardIterator<X, InputIterator1>> */ js.Any */, InputIterator2 /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IForwardIterator<Y, InputIterator2>> */ js.Any */](first1: InputIterator1, last1: InputIterator1, first2: InputIterator2, value: X): X = js.native
+  def inner_product[X, Y, InputIterator1 /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IForwardIterator<X, InputIterator1>> */ js.Any */, InputIterator2 /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IForwardIterator<Y, InputIterator2>> */ js.Any */](
     first1: InputIterator1,
     last1: InputIterator1,
     first2: InputIterator2,
     value: X,
     op1: BinaryOperator[X, X]
   ): X = js.native
-  def inner_product[X, Y, InputIterator1 /* <: General[IForwardIterator[X, InputIterator1]] */, InputIterator2 /* <: General[IForwardIterator[Y, InputIterator2]] */](
+  def inner_product[X, Y, InputIterator1 /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IForwardIterator<X, InputIterator1>> */ js.Any */, InputIterator2 /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IForwardIterator<Y, InputIterator2>> */ js.Any */](
     first1: InputIterator1,
     last1: InputIterator1,
     first2: InputIterator2,
@@ -68,7 +66,7 @@ object numericMod extends js.Object {
     op1: BinaryOperator[X, X],
     op2: BinaryOperator[X, Y]
   ): X = js.native
-  def iota[ForwardIterator /* <: General[IForwardIterator[Double, ForwardIterator]] */](first: ForwardIterator, last: ForwardIterator, value: Double): Unit = js.native
+  def iota[ForwardIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IForwardIterator<number, ForwardIterator>> */ js.Any */](first: ForwardIterator, last: ForwardIterator, value: Double): Unit = js.native
   def laguerre(n: Double, x: Double): Double = js.native
   def lcm(x: Double, y: Double): Double = js.native
   def legendre(n: Double, x: Double): Double = js.native
@@ -78,8 +76,8 @@ object numericMod extends js.Object {
   def multiplies[X /* <: Param[Y, Ret, typings.tstl.tstlStrings.multiplies] */, Y, Ret](x: X, y: Y): Ret = js.native
   def negate[Ret](x: Double): Ret = js.native
   def negate[Ret](x: INegatable[Ret]): Ret = js.native
-  def partial_sum[T, InputIterator /* <: IForwardIterator[T, InputIterator] */, OutputIterator /* <: Writeonly[IForwardIterator[T, OutputIterator]] */](first: InputIterator, last: InputIterator, output: OutputIterator): OutputIterator = js.native
-  def partial_sum[T, InputIterator /* <: IForwardIterator[T, InputIterator] */, OutputIterator /* <: Writeonly[IForwardIterator[T, OutputIterator]] */](first: InputIterator, last: InputIterator, output: OutputIterator, op: BinaryOperator[T, T]): OutputIterator = js.native
+  def partial_sum[T, InputIterator /* <: IForwardIterator[T, InputIterator] */, OutputIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Writeonly<IForwardIterator<T, OutputIterator>> */ js.Any */](first: InputIterator, last: InputIterator, output: OutputIterator): OutputIterator = js.native
+  def partial_sum[T, InputIterator /* <: IForwardIterator[T, InputIterator] */, OutputIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Writeonly<IForwardIterator<T, OutputIterator>> */ js.Any */](first: InputIterator, last: InputIterator, output: OutputIterator, op: BinaryOperator[T, T]): OutputIterator = js.native
   def plus[Y, Ret](x: String, y: Y): Ret = js.native
   def plus[Y, Ret](x: Double, y: Y): Ret = js.native
   def plus[X /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
@@ -89,7 +87,7 @@ object numericMod extends js.Object {
   def sph_bessel(n: Double, x: Double): Double = js.native
   def sph_neumann(n: Double, x: Double): Double = js.native
   def tgamma(x: Double): Double = js.native
-  def transform_exclusive_scan[T, Ret, InputIterator /* <: IForwardIterator[T, InputIterator] */, OutputIterator /* <: General[IForwardIterator[Ret, OutputIterator]] */](
+  def transform_exclusive_scan[T, Ret, InputIterator /* <: IForwardIterator[T, InputIterator] */, OutputIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify General<IForwardIterator<Ret, OutputIterator>> */ js.Any */](
     first: InputIterator,
     last: InputIterator,
     output: OutputIterator,
@@ -97,14 +95,14 @@ object numericMod extends js.Object {
     binary: BinaryOperator[Ret, Ret],
     unary: js.Function1[/* val */ T, Ret]
   ): OutputIterator = js.native
-  def transform_inclusive_scan[T, Ret, InputIterator /* <: IForwardIterator[T, InputIterator] */, OutputIterator /* <: Writeonly[IForwardIterator[Ret, OutputIterator]] */](
+  def transform_inclusive_scan[T, Ret, InputIterator /* <: IForwardIterator[T, InputIterator] */, OutputIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Writeonly<IForwardIterator<Ret, OutputIterator>> */ js.Any */](
     first: InputIterator,
     last: InputIterator,
     output: OutputIterator,
     binary: BinaryOperator[Ret, Ret],
     unary: js.Function1[/* val */ T, Ret]
   ): OutputIterator = js.native
-  def transform_inclusive_scan[T, Ret, InputIterator /* <: IForwardIterator[T, InputIterator] */, OutputIterator /* <: Writeonly[IForwardIterator[Ret, OutputIterator]] */](
+  def transform_inclusive_scan[T, Ret, InputIterator /* <: IForwardIterator[T, InputIterator] */, OutputIterator /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Writeonly<IForwardIterator<Ret, OutputIterator>> */ js.Any */](
     first: InputIterator,
     last: InputIterator,
     output: OutputIterator,

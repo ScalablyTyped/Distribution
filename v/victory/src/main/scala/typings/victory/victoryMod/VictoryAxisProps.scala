@@ -3,7 +3,7 @@ package typings.victory.victoryMod
 import typings.react.reactMod.ReactElement
 import typings.victory.Anon_AxisAxisLabel
 import typings.victory.Anon_XY
-import typings.victory.Anon_XYD3Scale
+import typings.victory.Anon_XYD3ScaleScalePropType
 import typings.victory.victoryStrings.axis
 import typings.victory.victoryStrings.axisLabel
 import typings.victory.victoryStrings.bottom
@@ -243,7 +243,7 @@ object VictoryAxisProps {
     offsetY: Int | Double = null,
     orientation: top | bottom | left | right = null,
     padding: PaddingProps = null,
-    scale: ScalePropType | D3Scale | Anon_XYD3Scale = null,
+    scale: ScalePropType | D3Scale | Anon_XYD3ScaleScalePropType = null,
     standalone: js.UndefOr[Boolean] = js.undefined,
     style: Anon_AxisAxisLabel = null,
     theme: VictoryThemeDefinition = null,

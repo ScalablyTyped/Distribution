@@ -4,11 +4,6 @@ import typings.std.Iterable
 import typings.std.IterableIterator
 import typings.tstl.baseContainerIDequeContainerMod._IDeque
 import typings.tstl.baseContainerILinearContainerMod._IFront
-import typings.tstl.baseDisposableIForwardContainerMod.IForwardContainer
-import typings.tstl.baseDisposableIListAlgorithmMod._IListAlgorithm
-import typings.tstl.baseDisposableIPartialContainersMod._IClear
-import typings.tstl.baseDisposableIPartialContainersMod._IEmpty
-import typings.tstl.baseDisposableIPartialContainersMod._ISize
 import typings.tstl.containerForwardListMod.ForwardList.Iterator
 import typings.tstl.iteratorIForwardIteratorMod.IForwardIterator
 import scala.scalajs.js
@@ -18,19 +13,19 @@ import scala.scalajs.js.annotation._
 @JSImport("tstl/container/ForwardList", JSImport.Namespace)
 @js.native
 object containerForwardListMod extends js.Object {
-  @js.native
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IForwardContainer<ForwardList.Iterator<T>> * / any
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _IClear * / any
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _IEmpty * / any
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _ISize * / any
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _IListAlgorithm<T, ForwardList<T>> * / any */ @js.native
   /**
     * Default Constructor.
     */
   class ForwardList[T] ()
     extends _IDeque[T]
-       with IForwardContainer[Iterator[T]]
-       with _IClear
-       with _IEmpty
-       with _ISize
        with _IFront[T]
-       with Iterable[T]
-       with _IListAlgorithm[T, ForwardList[T]] {
+       with Iterable[T] {
     /**
       * Initializer Constructor.
       *
@@ -110,29 +105,21 @@ object containerForwardListMod extends js.Object {
       */
     def before_begin(): Iterator[T] = js.native
     /**
-      * Iterator to the first element.
-      *
-      * @return Iterator to the first element.
+      * @inheritDoc
       */
-    /* CompleteClass */
-    override def begin(): Iterator[T] = js.native
+    def begin(): Iterator[T] = js.native
     /**
-      * Clear elements.
+      * @inheritDoc
       */
-    /* CompleteClass */
-    override def clear(): Unit = js.native
+    def clear(): Unit = js.native
     /**
-      * Test whether container is empty.
+      * @inheritDoc
       */
-    /* CompleteClass */
-    override def empty(): Boolean = js.native
+    def empty(): Boolean = js.native
     /**
-      * Iterator to the end.
-      *
-      * @return Iterator to the end.
+      * @inheritDoc
       */
-    /* CompleteClass */
-    override def end(): Iterator[T] = js.native
+    def end(): Iterator[T] = js.native
     /**
       * Erase elements.
       *
@@ -175,22 +162,41 @@ object containerForwardListMod extends js.Object {
       */
     def insert_after[T, InputIterator /* <: IForwardIterator[T, InputIterator] */](pos: Iterator[T], first: InputIterator, last: InputIterator): Iterator[T] = js.native
     /**
+      * @inheritDoc
+      */
+    def merge(from: ForwardList[T]): Unit = js.native
+    def merge(from: ForwardList[T], comp: js.Function2[/* x */ T, /* y */ T, Boolean]): Unit = js.native
+    /**
       * Erase the first element.
       */
     /* CompleteClass */
     override def pop_front(): Unit = js.native
     /**
-      * Insert an element at the first.
-      *
-      * @param val Value to insert.
+      * @inheritDoc
       */
     /* CompleteClass */
     override def push_front(`val`: T): Unit = js.native
     /**
-      * Number of elements in the container.
+      * @inheritDoc
       */
-    /* CompleteClass */
-    override def size(): Double = js.native
+    def remove(`val`: T): Unit = js.native
+    /**
+      * @inheritDoc
+      */
+    def remove_if(pred: js.Function1[/* val */ T, Boolean]): Unit = js.native
+    /**
+      * @inheritDoc
+      */
+    def reverse(): Unit = js.native
+    /**
+      * @inheritDoc
+      */
+    def size(): Double = js.native
+    /**
+      * @inheritDoc
+      */
+    def sort(): Unit = js.native
+    def sort(comp: js.Function2[/* x */ T, /* y */ T, Boolean]): Unit = js.native
     /**
       * Transfer elements.
       *
@@ -216,11 +222,20 @@ object containerForwardListMod extends js.Object {
       */
     def splice_after(pos: Iterator[T], from: ForwardList[T], first_before: Iterator[T], last: Iterator[T]): Unit = js.native
     /**
+      * @inheritDoc
+      */
+    def swap(obj: ForwardList[T]): Unit = js.native
+    /**
       * Native function for `JSON.stringify()`.
       *
       * @return An array containing children elements.
       */
     def toJSON(): js.Array[T] = js.native
+    /**
+      * @inheritDoc
+      */
+    def unique(): Unit = js.native
+    def unique(binary_pred: js.Function2[/* x */ T, /* y */ T, Boolean]): Unit = js.native
   }
   
   @js.native

@@ -9,5 +9,6 @@ import scala.scalajs.js.annotation._
 class CollectionEvent[T] ()
   extends typings.ol.eventsEventMod.default {
   var element: T = js.native
+  var index: Double = js.native
 }
 

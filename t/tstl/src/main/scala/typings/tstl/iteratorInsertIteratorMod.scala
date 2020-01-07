@@ -1,7 +1,5 @@
 package typings.tstl
 
-import typings.tstl.baseDisposableIPartialContainersMod._IInsert
-import typings.tstl.baseIteratorUnderscoreInsertIteratorMod._InsertIterator
 import typings.tstl.functionalIPointerMod.IPointer.ValueType
 import typings.tstl.iteratorIForwardIteratorMod.IForwardIterator
 import scala.scalajs.js
@@ -11,8 +9,9 @@ import scala.scalajs.js.annotation._
 @JSImport("tstl/iterator/InsertIterator", JSImport.Namespace)
 @js.native
 object iteratorInsertIteratorMod extends js.Object {
-  @js.native
-  class InsertIterator[Container /* <: _IInsert[Iterator] */, Iterator /* <: IForwardIterator[ValueType[Iterator], Iterator] */] protected () extends _InsertIterator[ValueType[Iterator], InsertIterator[Container, Iterator]] {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _InsertIterator<IPointer.ValueType<Iterator>, InsertIterator<Container, Iterator>> * / any */ @js.native
+  class InsertIterator[Container /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _IInsert<Iterator> */ js.Any */, Iterator /* <: IForwardIterator[ValueType[Iterator], Iterator] */] protected () extends js.Object {
     /**
       * Initializer Constructor.
       *
@@ -31,8 +30,11 @@ object iteratorInsertIteratorMod extends js.Object {
     /**
       * @inheritDoc
       */
-    @JSName("value")
-    def value_MInsertIterator(`val`: ValueType[Iterator]): js.Any = js.native
+    def equals(obj: InsertIterator[Container, Iterator]): Boolean = js.native
+    /**
+      * @inheritDoc
+      */
+    def value(`val`: ValueType[Iterator]): js.Any = js.native
   }
   
 }

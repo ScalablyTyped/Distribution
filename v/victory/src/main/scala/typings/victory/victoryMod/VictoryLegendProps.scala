@@ -4,7 +4,7 @@ import typings.react.reactMod.ReactElement
 import typings.victory.Anon_Left
 import typings.victory.Anon_Name
 import typings.victory.Anon_XY
-import typings.victory.Anon_XYD3Scale
+import typings.victory.Anon_XYD3ScaleScalePropType
 import typings.victory.victoryStrings.data
 import typings.victory.victoryStrings.horizontal
 import typings.victory.victoryStrings.labels
@@ -184,7 +184,7 @@ object VictoryLegendProps {
     orientation: horizontal | vertical = null,
     padding: PaddingProps = null,
     rowGutter: Double | (Omit[BlockProps, left | right]) = null,
-    scale: ScalePropType | D3Scale | Anon_XYD3Scale = null,
+    scale: ScalePropType | D3Scale | Anon_XYD3ScaleScalePropType = null,
     standalone: js.UndefOr[Boolean] = js.undefined,
     style: VictoryStyleInterface = null,
     symbolSpacer: Int | Double = null,

@@ -10,10 +10,10 @@ trait Style extends js.Object {
   def getGeometry(): String | typings.ol.geomGeometryMod.default | GeometryFunction = js.native
   def getGeometryFunction(): GeometryFunction = js.native
   def getImage(): typings.ol.styleImageMod.default = js.native
-  def getRenderer(): RenderFunction | Null = js.native
+  def getRenderer(): RenderFunction = js.native
   def getStroke(): typings.ol.styleStrokeMod.default = js.native
   def getText(): typings.ol.styleTextMod.default = js.native
-  def getZIndex(): js.UndefOr[Double] = js.native
+  def getZIndex(): Double = js.native
   def setFill(fill: typings.ol.styleFillMod.default): Unit = js.native
   def setGeometry(geometry: String): Unit = js.native
   def setGeometry(geometry: typings.ol.geomGeometryMod.default): Unit = js.native

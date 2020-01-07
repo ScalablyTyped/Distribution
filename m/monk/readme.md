@@ -1,7 +1,7 @@
 
 # Scala.js typings for monk
 
-Typings are for version 7.1.1
+Typings are for version 7.1.2
 
 ## Library description:
 The wise MongoDB API

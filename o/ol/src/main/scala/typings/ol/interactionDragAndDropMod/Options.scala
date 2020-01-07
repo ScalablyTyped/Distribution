@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Options extends js.Object {
   var formatConstructors: js.UndefOr[js.Array[typings.ol.formatFeatureMod.default]] = js.undefined
   var projection: js.UndefOr[ProjectionLike] = js.undefined
-  var source: js.UndefOr[typings.ol.sourceVectorMod.default] = js.undefined
+  var source: js.UndefOr[typings.ol.sourceVectorMod.default[typings.ol.geomGeometryMod.default]] = js.undefined
   var target: js.UndefOr[HTMLElement] = js.undefined
 }
 
@@ -18,7 +18,7 @@ object Options {
   def apply(
     formatConstructors: js.Array[typings.ol.formatFeatureMod.default] = null,
     projection: ProjectionLike = null,
-    source: typings.ol.sourceVectorMod.default = null,
+    source: typings.ol.sourceVectorMod.default[typings.ol.geomGeometryMod.default] = null,
     target: HTMLElement = null
   ): Options = {
     val __obj = js.Dynamic.literal()

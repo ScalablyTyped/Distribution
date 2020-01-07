@@ -3,8 +3,6 @@ package typings.tstl
 import typings.std.Date
 import typings.std.Partial
 import typings.std.Pick
-import typings.tstl.baseThreadUnderscoreISharedLockableMod._ISharedLockable
-import typings.tstl.baseThreadUnderscoreISharedTimedLockableMod._ISharedTimedLockable
 import typings.tstl.tstlStrings.lock_shared
 import typings.tstl.tstlStrings.try_lock_shared
 import typings.tstl.tstlStrings.try_lock_shared_for
@@ -37,18 +35,42 @@ object threadSharedLockMod extends js.Object {
   
   @js.native
   object SharedLock extends js.Object {
-    def lock[Mutex /* <: Pick[_ISharedLockable, lock_shared | unlock_shared] */](mutex: Mutex, closure: Closure): js.Promise[Unit] = js.native
-    def try_lock[Mutex /* <: Pick[_ISharedLockable, try_lock_shared | unlock_shared] */](mutex: Mutex, closure: Closure): js.Promise[Boolean] = js.native
-    def try_lock_for[Mutex /* <: Pick[_ISharedTimedLockable, try_lock_shared_for | unlock_shared] */](mutex: Mutex, ms: Double, closure: Closure): js.Promise[Boolean] = js.native
-    def try_lock_until[Mutex /* <: Pick[_ISharedTimedLockable, try_lock_shared_until | unlock_shared] */](mutex: Mutex, at: Date, closure: Closure): js.Promise[Boolean] = js.native
+    def lock[Mutex /* <: Pick[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _ISharedLockable */ _, 
+        lock_shared | unlock_shared
+      ] */](mutex: Mutex, closure: Closure): js.Promise[Unit] = js.native
+    def try_lock[Mutex /* <: Pick[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _ISharedLockable */ _, 
+        try_lock_shared | unlock_shared
+      ] */](mutex: Mutex, closure: Closure): js.Promise[Boolean] = js.native
+    def try_lock_for[Mutex /* <: Pick[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _ISharedTimedLockable */ _, 
+        try_lock_shared_for | unlock_shared
+      ] */](mutex: Mutex, ms: Double, closure: Closure): js.Promise[Boolean] = js.native
+    def try_lock_until[Mutex /* <: Pick[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _ISharedTimedLockable */ _, 
+        try_lock_shared_until | unlock_shared
+      ] */](mutex: Mutex, at: Date, closure: Closure): js.Promise[Boolean] = js.native
   }
   
   @js.native
   object shared_lock extends js.Object {
-    def lock[Mutex /* <: Pick[_ISharedLockable, lock_shared | unlock_shared] */](mutex: Mutex, closure: Closure): js.Promise[Unit] = js.native
-    def try_lock[Mutex /* <: Pick[_ISharedLockable, try_lock_shared | unlock_shared] */](mutex: Mutex, closure: Closure): js.Promise[Boolean] = js.native
-    def try_lock_for[Mutex /* <: Pick[_ISharedTimedLockable, try_lock_shared_for | unlock_shared] */](mutex: Mutex, ms: Double, closure: Closure): js.Promise[Boolean] = js.native
-    def try_lock_until[Mutex /* <: Pick[_ISharedTimedLockable, try_lock_shared_until | unlock_shared] */](mutex: Mutex, at: Date, closure: Closure): js.Promise[Boolean] = js.native
+    def lock[Mutex /* <: Pick[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _ISharedLockable */ _, 
+        lock_shared | unlock_shared
+      ] */](mutex: Mutex, closure: Closure): js.Promise[Unit] = js.native
+    def try_lock[Mutex /* <: Pick[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _ISharedLockable */ _, 
+        try_lock_shared | unlock_shared
+      ] */](mutex: Mutex, closure: Closure): js.Promise[Boolean] = js.native
+    def try_lock_for[Mutex /* <: Pick[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _ISharedTimedLockable */ _, 
+        try_lock_shared_for | unlock_shared
+      ] */](mutex: Mutex, ms: Double, closure: Closure): js.Promise[Boolean] = js.native
+    def try_lock_until[Mutex /* <: Pick[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _ISharedTimedLockable */ _, 
+        try_lock_shared_until | unlock_shared
+      ] */](mutex: Mutex, at: Date, closure: Closure): js.Promise[Boolean] = js.native
   }
   
   /**
@@ -58,6 +80,8 @@ object threadSharedLockMod extends js.Object {
   /**
     * @hidden
     */
-  type IMutex = _ISharedLockable with Partial[_ISharedTimedLockable]
+  type IMutex = (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _ISharedLockable */ js.Any) with (Partial[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _ISharedTimedLockable */ _
+  ])
 }
 

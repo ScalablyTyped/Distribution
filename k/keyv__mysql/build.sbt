@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "keyv__mysql"
-version := "1.1-dt-20181231Z-b29922"
+version := "1.1-dt-20181231Z-3d454a"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "keyv" % "3.1-dt-20191223Z-0fe61c",
-  "org.scalablytyped" %%% "node" % "13.1-dt-20200103Z-b9f880",
+  "org.scalablytyped" %%% "keyv" % "3.1-dt-20191223Z-9e4d6e",
+  "org.scalablytyped" %%% "node" % "13.1-dt-20200103Z-51871a",
   "org.scalablytyped" %%% "std" % "3.7-b6d959")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

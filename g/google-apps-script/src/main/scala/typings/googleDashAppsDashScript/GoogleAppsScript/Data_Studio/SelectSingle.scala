@@ -29,6 +29,7 @@ trait SelectSingle extends js.Object {
   def setAllowOverride(allowOverride: Boolean): SelectSingle
   def setHelpText(helpText: String): SelectSingle
   def setId(id: String): SelectSingle
+  def setIsDynamic(isDynamic: Boolean): SelectSingle
   def setName(name: String): SelectSingle
 }
 
@@ -39,9 +40,10 @@ object SelectSingle {
     setAllowOverride: Boolean => SelectSingle,
     setHelpText: String => SelectSingle,
     setId: String => SelectSingle,
+    setIsDynamic: Boolean => SelectSingle,
     setName: String => SelectSingle
   ): SelectSingle = {
-    val __obj = js.Dynamic.literal(addOption = js.Any.fromFunction1(addOption), setAllowOverride = js.Any.fromFunction1(setAllowOverride), setHelpText = js.Any.fromFunction1(setHelpText), setId = js.Any.fromFunction1(setId), setName = js.Any.fromFunction1(setName))
+    val __obj = js.Dynamic.literal(addOption = js.Any.fromFunction1(addOption), setAllowOverride = js.Any.fromFunction1(setAllowOverride), setHelpText = js.Any.fromFunction1(setHelpText), setId = js.Any.fromFunction1(setId), setIsDynamic = js.Any.fromFunction1(setIsDynamic), setName = js.Any.fromFunction1(setName))
   
     __obj.asInstanceOf[SelectSingle]
   }

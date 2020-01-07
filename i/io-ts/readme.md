@@ -1,7 +1,7 @@
 
 # Scala.js typings for io-ts
 
-Typings are for version 2.0.3
+Typings are for version 2.0.4
 
 ## Library description:
 TypeScript compatible runtime type system for IO validation

@@ -26,6 +26,7 @@ trait Config extends js.Object {
   def newTextInput(): TextInput
   def printJson(): String
   def setDateRangeRequired(dateRangeRequired: Boolean): Config
+  def setIsSteppedConfig(isSteppedConfig: Boolean): Config
 }
 
 object Config {
@@ -40,9 +41,10 @@ object Config {
     newTextArea: () => TextArea,
     newTextInput: () => TextInput,
     printJson: () => String,
-    setDateRangeRequired: Boolean => Config
+    setDateRangeRequired: Boolean => Config,
+    setIsSteppedConfig: Boolean => Config
   ): Config = {
-    val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), newCheckbox = js.Any.fromFunction0(newCheckbox), newInfo = js.Any.fromFunction0(newInfo), newOptionBuilder = js.Any.fromFunction0(newOptionBuilder), newSelectMultiple = js.Any.fromFunction0(newSelectMultiple), newSelectSingle = js.Any.fromFunction0(newSelectSingle), newTextArea = js.Any.fromFunction0(newTextArea), newTextInput = js.Any.fromFunction0(newTextInput), printJson = js.Any.fromFunction0(printJson), setDateRangeRequired = js.Any.fromFunction1(setDateRangeRequired))
+    val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), newCheckbox = js.Any.fromFunction0(newCheckbox), newInfo = js.Any.fromFunction0(newInfo), newOptionBuilder = js.Any.fromFunction0(newOptionBuilder), newSelectMultiple = js.Any.fromFunction0(newSelectMultiple), newSelectSingle = js.Any.fromFunction0(newSelectSingle), newTextArea = js.Any.fromFunction0(newTextArea), newTextInput = js.Any.fromFunction0(newTextInput), printJson = js.Any.fromFunction0(printJson), setDateRangeRequired = js.Any.fromFunction1(setDateRangeRequired), setIsSteppedConfig = js.Any.fromFunction1(setIsSteppedConfig))
   
     __obj.asInstanceOf[Config]
   }

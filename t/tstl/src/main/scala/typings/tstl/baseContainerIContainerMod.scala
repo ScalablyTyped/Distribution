@@ -2,12 +2,7 @@ package typings.tstl
 
 import typings.std.Iterable
 import typings.std.IterableIterator
-import typings.tstl.baseDisposableIBidirectionalContainerMod.IBidirectionalContainer
-import typings.tstl.baseDisposableIPartialContainersMod._IEmpty
-import typings.tstl.baseDisposableIPartialContainersMod._IPush
-import typings.tstl.baseDisposableIPartialContainersMod._ISize
-import typings.tstl.baseIteratorIteratorMod.Iterator
-import typings.tstl.baseIteratorReverseIteratorMod.IReverseIterator
+import typings.std.Iterator
 import typings.tstl.iteratorIForwardIteratorMod.IForwardIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,13 +11,12 @@ import scala.scalajs.js.annotation._
 @JSImport("tstl/base/container/IContainer", JSImport.Namespace)
 @js.native
 object baseContainerIContainerMod extends js.Object {
-  @js.native
-  trait IContainer[T /* <: Elem */, SourceT /* <: IContainer[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, IteratorT /* <: Iterator[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, ReverseIteratorT /* <: IReverseIterator[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, Elem]
-    extends IBidirectionalContainer[Iterator[T, SourceT, IteratorT, ReverseIteratorT, Elem], ReverseIteratorT]
-       with Iterable[T]
-       with _IEmpty
-       with _ISize
-       with _IPush[Elem] {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IBidirectionalContainer<Iterator<T, SourceT, IteratorT, ReverseIteratorT, Elem>, ReverseIteratorT> * / any
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _IEmpty * / any
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _ISize * / any
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _IPush<Elem> * / any */ @js.native
+  trait IContainer[T /* <: Elem */, SourceT /* <: IContainer[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, IteratorT /* <: Iterator[T, SourceT, IteratorT] */, ReverseIteratorT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IReverseIterator<T, SourceT, IteratorT, ReverseIteratorT, Elem> */ js.Any */, Elem] extends Iterable[T] {
     /**
       * @inheritDoc
       */
@@ -38,7 +32,19 @@ object baseContainerIContainerMod extends js.Object {
     /**
       * @inheritDoc
       */
+    def begin(): IteratorT = js.native
+    /**
+      * @inheritDoc
+      */
     def clear(): Unit = js.native
+    /**
+      * @inheritDoc
+      */
+    def empty(): Boolean = js.native
+    /**
+      * @inheritDoc
+      */
+    def end(): IteratorT = js.native
     /**
       * Erase elements in range.
       *
@@ -54,6 +60,19 @@ object baseContainerIContainerMod extends js.Object {
       * @return Iterator following the *pos*, strained by the erasing.
       */
     def erase(pos: IteratorT): IteratorT = js.native
+    def push(items: Elem*): Double = js.native
+    /**
+      * @inheritDoc
+      */
+    def rbegin(): ReverseIteratorT = js.native
+    /**
+      * @inheritDoc
+      */
+    def rend(): ReverseIteratorT = js.native
+    /**
+      * @inheritDoc
+      */
+    def size(): Double = js.native
     /**
       * Swap elements.
       *

@@ -1,0 +1,36 @@
+package typings.googleapis.buildSrcApisContainerV1Mod.container_v1
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+  * Time window specified for daily maintenance operations.
+  */
+@js.native
+trait Schema$DailyMaintenanceWindow extends js.Object {
+  /**
+    * [Output only] Duration of the time window, automatically chosen to be
+    * smallest possible in the given scenario. Duration will be in
+    * [RFC3339](https://www.ietf.org/rfc/rfc3339.txt) format
+    * &quot;PTnHnMnS&quot;.
+    */
+  var duration: js.UndefOr[String] = js.native
+  /**
+    * Time within the maintenance window to start the maintenance operations.
+    * Time format should be in [RFC3339](https://www.ietf.org/rfc/rfc3339.txt)
+    * format &quot;HH:MM”, where HH : [00-23] and MM : [00-59] GMT.
+    */
+  var startTime: js.UndefOr[String] = js.native
+}
+
+object Schema$DailyMaintenanceWindow {
+  @scala.inline
+  def apply(duration: String = null, startTime: String = null): Schema$DailyMaintenanceWindow = {
+    val __obj = js.Dynamic.literal()
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Schema$DailyMaintenanceWindow]
+  }
+}
+

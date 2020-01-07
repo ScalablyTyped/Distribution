@@ -1,0 +1,24 @@
+package typings.googleapis.buildSrcApisComputeV1Mod.compute_v1
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait Schema$DistributionPolicyZoneConfiguration extends js.Object {
+  /**
+    * The URL of the zone. The zone must exist in the region where the managed
+    * instance group is located.
+    */
+  var zone: js.UndefOr[String] = js.native
+}
+
+object Schema$DistributionPolicyZoneConfiguration {
+  @scala.inline
+  def apply(zone: String = null): Schema$DistributionPolicyZoneConfiguration = {
+    val __obj = js.Dynamic.literal()
+    if (zone != null) __obj.updateDynamic("zone")(zone.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Schema$DistributionPolicyZoneConfiguration]
+  }
+}
+

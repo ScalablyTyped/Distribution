@@ -1,6 +1,5 @@
 package typings.ol
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.ol.coordinateMod.Coordinate
 import typings.ol.extentMod.Extent
 import typings.ol.geomGeometryTypeMod.GeometryType
@@ -16,7 +15,6 @@ object geomGeometryMod extends js.Object {
   @js.native
   trait Geometry
     extends typings.ol.objectMod.default {
-    var simplifiedGeometryCache: StringDictionary[Geometry] = js.native
     var simplifiedGeometryMaxMinSquaredTolerance: Double = js.native
     var simplifiedGeometryRevision: Double = js.native
     def applyTransform(transformFn: TransformFunction): Unit = js.native
@@ -36,12 +34,14 @@ object geomGeometryMod extends js.Object {
     def scale(sx: Double, opt_sy: Double): Unit = js.native
     def scale(sx: Double, opt_sy: Double, opt_anchor: Coordinate): Unit = js.native
     def simplify(tolerance: Double): Geometry = js.native
+    def simplifyTransformed(squaredTolerance: Double): Geometry = js.native
+    def simplifyTransformed(squaredTolerance: Double, opt_transform: TransformFunction): Geometry = js.native
     def transform(source: ProjectionLike, destination: ProjectionLike): Geometry = js.native
     def translate(deltaX: Double, deltaY: Double): Unit = js.native
   }
   
   @js.native
-  class default () extends Geometry
+  abstract class default () extends Geometry
   
 }
 

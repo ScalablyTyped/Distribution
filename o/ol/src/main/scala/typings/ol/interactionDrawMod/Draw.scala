@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Draw
   extends typings.ol.interactionPointerMod.default {
-  def extend(feature: typings.ol.featureMod.default): Unit = js.native
+  def extend(feature: typings.ol.featureMod.default[typings.ol.geomLineStringMod.default]): Unit = js.native
   def finishDrawing(): Unit = js.native
   def getOverlay(): typings.ol.layerVectorMod.default = js.native
   @JSName("on")

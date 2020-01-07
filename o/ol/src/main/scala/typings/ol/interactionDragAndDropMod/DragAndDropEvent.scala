@@ -11,11 +11,15 @@ import scala.scalajs.js.annotation._
 class DragAndDropEvent protected ()
   extends typings.ol.eventsEventMod.default {
   def this(`type`: DragAndDropEventType, file: File) = this()
-  def this(`type`: DragAndDropEventType, file: File, opt_features: js.Array[typings.ol.featureMod.default]) = this()
   def this(
     `type`: DragAndDropEventType,
     file: File,
-    opt_features: js.Array[typings.ol.featureMod.default],
+    opt_features: js.Array[typings.ol.featureMod.default[typings.ol.geomGeometryMod.default]]
+  ) = this()
+  def this(
+    `type`: DragAndDropEventType,
+    file: File,
+    opt_features: js.Array[typings.ol.featureMod.default[typings.ol.geomGeometryMod.default]],
     opt_projection: typings.ol.projProjectionMod.default
   ) = this()
   var features: js.Array[FeatureLike] = js.native

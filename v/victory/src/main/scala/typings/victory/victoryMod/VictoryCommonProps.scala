@@ -2,7 +2,7 @@ package typings.victory.victoryMod
 
 import typings.react.reactMod.ReactElement
 import typings.victory.Anon_XY
-import typings.victory.Anon_XYD3Scale
+import typings.victory.Anon_XYD3ScaleScalePropType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -95,7 +95,7 @@ trait VictoryCommonProps extends js.Object {
     * @example d3Scale.time(), {x: "linear", y: "log"}
     * @default "linear"
     */
-  var scale: js.UndefOr[ScalePropType | D3Scale | Anon_XYD3Scale] = js.undefined
+  var scale: js.UndefOr[ScalePropType | D3Scale | Anon_XYD3ScaleScalePropType] = js.undefined
   /**
     * The standalone prop determines whether the component will render a standalone svg
     * or a <g> tag that will be included in an external svg. Set standalone to false to
@@ -132,7 +132,7 @@ object VictoryCommonProps {
     minDomain: Double | Anon_XY = null,
     name: String = null,
     padding: PaddingProps = null,
-    scale: ScalePropType | D3Scale | Anon_XYD3Scale = null,
+    scale: ScalePropType | D3Scale | Anon_XYD3ScaleScalePropType = null,
     standalone: js.UndefOr[Boolean] = js.undefined,
     theme: VictoryThemeDefinition = null,
     width: Int | Double = null

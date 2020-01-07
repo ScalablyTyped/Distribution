@@ -16,7 +16,8 @@ import scala.scalajs.js.annotation._
   *     }
   *
   * HtmlOutput
-  * Google Caja
+  * iframe
+  * sandboxing
   * guide to restrictions in HTML service
   */
 trait HtmlOutput extends js.Object {

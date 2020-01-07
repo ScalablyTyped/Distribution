@@ -1,15 +1,17 @@
 package typings.ol.styleRegularShapeMod
 
 import typings.ol.colorlikeMod.ColorLike
+import typings.std.CanvasLineCap
+import typings.std.CanvasLineJoin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RenderOptions extends js.Object {
-  var lineCap: String
+  var lineCap: CanvasLineCap
   var lineDash: js.Array[Double]
   var lineDashOffset: Double
-  var lineJoin: String
+  var lineJoin: CanvasLineJoin
   var miterLimit: Double
   var size: Double
   var strokeStyle: js.UndefOr[ColorLike] = js.undefined
@@ -19,10 +21,10 @@ trait RenderOptions extends js.Object {
 object RenderOptions {
   @scala.inline
   def apply(
-    lineCap: String,
+    lineCap: CanvasLineCap,
     lineDash: js.Array[Double],
     lineDashOffset: Double,
-    lineJoin: String,
+    lineJoin: CanvasLineJoin,
     miterLimit: Double,
     size: Double,
     strokeWidth: Double,

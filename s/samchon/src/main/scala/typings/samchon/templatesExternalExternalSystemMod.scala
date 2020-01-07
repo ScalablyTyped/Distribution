@@ -72,20 +72,6 @@ object templatesExternalExternalSystemMod extends js.Object {
         ]
     ): Unit = js.native
     /**
-      * Iterator to the first element.
-      *
-      * @return Iterator to the first element.
-      */
-    /* CompleteClass */
-    /* InferMemberOverrides */
-    override def begin(): typings.tstl.baseIteratorIteratorMod.Iterator[
-        ExternalSystemRole, 
-        Deque[ExternalSystemRole], 
-        Iterator[ExternalSystemRole], 
-        ReverseIterator[ExternalSystemRole], 
-        ExternalSystemRole
-      ] = js.native
-    /**
       * Close connection.
       */
     def close(): Unit = js.native
@@ -128,25 +114,6 @@ object templatesExternalExternalSystemMod extends js.Object {
         ]
     ): Unit = js.native
     /**
-      * Test whether container is empty.
-      */
-    /* InferMemberOverrides */
-    override def empty(): Boolean = js.native
-    /**
-      * Iterator to the end.
-      *
-      * @return Iterator to the end.
-      */
-    /* CompleteClass */
-    /* InferMemberOverrides */
-    override def end(): typings.tstl.baseIteratorIteratorMod.Iterator[
-        ExternalSystemRole, 
-        Deque[ExternalSystemRole], 
-        Iterator[ExternalSystemRole], 
-        ReverseIterator[ExternalSystemRole], 
-        ExternalSystemRole
-      ] = js.native
-    /**
       * Get {@link name}.
       */
     def getName(): String = js.native
@@ -162,31 +129,6 @@ object templatesExternalExternalSystemMod extends js.Object {
     /* CompleteClass */
     /* InferMemberOverrides */
     override def hasEventListener(`type`: Type): Boolean = js.native
-    /**
-      * Insert items at the end.
-      *
-      * @param items Items to insert.
-      * @return Number of elements in the container after insertion.
-      */
-    /* CompleteClass */
-    /* InferMemberOverrides */
-    override def push(items: ExternalSystemRole*): Double = js.native
-    /**
-      * Insert an element at the end.
-      *
-      * @param val Value to insert.
-      */
-    /* CompleteClass */
-    /* InferMemberOverrides */
-    override def push_back(`val`: ExternalSystemRole): Unit = js.native
-    /**
-      * Reverse iterator to the first element in reverse.
-      *
-      * @return Reverse iterator to the first.
-      */
-    /* CompleteClass */
-    /* InferMemberOverrides */
-    override def rbegin(): ReverseIterator[ExternalSystemRole] = js.native
     /* CompleteClass */
     /* InferMemberOverrides */
     override def removeEventListener(
@@ -198,14 +140,6 @@ object templatesExternalExternalSystemMod extends js.Object {
           ReverseIterator[ExternalSystemRole]
         ]
     ): Unit = js.native
-    /**
-      * Reverse iterator to the reverse end.
-      *
-      * @return Reverse iterator to the end.
-      */
-    /* CompleteClass */
-    /* InferMemberOverrides */
-    override def rend(): ReverseIterator[ExternalSystemRole] = js.native
     /**
       * Sending message.
       *
@@ -224,11 +158,6 @@ object templatesExternalExternalSystemMod extends js.Object {
       */
     /* CompleteClass */
     override def sendData(invoke: Invoke): Unit = js.native
-    /**
-      * Number of elements in the container.
-      */
-    /* InferMemberOverrides */
-    override def size(): Double = js.native
   }
   
 }

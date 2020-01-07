@@ -1,9 +1,7 @@
 package typings.ol
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.ol.coordinateMod.Coordinate
 import typings.ol.featureMod.FeatureLike
-import typings.ol.layerLayerMod.State
 import typings.ol.pixelMod.Pixel
 import typings.ol.pluggableMapMod.FrameState
 import typings.ol.renderEventTypeMod.EventType
@@ -25,48 +23,58 @@ object rendererMapMod extends js.Object {
       coordinate: Coordinate,
       frameState: FrameState,
       hitTolerance: Double,
-      callback: js.ThisFunction2[/* this */ S, /* p0 */ FeatureLike, /* p1 */ typings.ol.layerLayerMod.default, T],
+      checkWrapped: Boolean,
+      callback: js.ThisFunction2[
+          /* this */ S, 
+          /* p0 */ FeatureLike, 
+          /* p1 */ typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default], 
+          T
+        ],
       thisArg: S,
-      layerFilter: js.ThisFunction1[/* this */ U, /* p0 */ typings.ol.layerLayerMod.default, Boolean],
+      layerFilter: js.ThisFunction1[
+          /* this */ U, 
+          /* p0 */ typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default], 
+          Boolean
+        ],
       thisArg2: U
-    ): js.UndefOr[T] = js.native
+    ): T = js.native
     def forEachLayerAtPixel[S, T, U](
       pixel: Pixel,
       frameState: FrameState,
       hitTolerance: Double,
       callback: js.ThisFunction2[
           /* this */ S, 
-          /* p0 */ typings.ol.layerLayerMod.default, 
+          /* p0 */ typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default], 
           /* p1 */ Uint8ClampedArray | Uint8Array, 
           T
         ],
-      thisArg: S,
-      layerFilter: js.ThisFunction1[/* this */ U, /* p0 */ typings.ol.layerLayerMod.default, Boolean],
-      thisArg2: U
-    ): js.UndefOr[T] = js.native
-    /* protected */ def getLayerRenderer(layer: typings.ol.layerBaseMod.default): typings.ol.rendererLayerMod.default = js.native
-    /* protected */ def getLayerRendererByKey(layerKey: String): typings.ol.rendererLayerMod.default = js.native
-    /* protected */ def getLayerRenderers(): StringDictionary[typings.ol.rendererLayerMod.default] = js.native
+      layerFilter: js.ThisFunction1[
+          /* this */ U, 
+          /* p0 */ typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default], 
+          Boolean
+        ]
+    ): T = js.native
     def getMap(): typings.ol.pluggableMapMod.default = js.native
     def hasFeatureAtCoordinate[U](
       coordinate: Coordinate,
       frameState: FrameState,
       hitTolerance: Double,
-      layerFilter: js.ThisFunction1[/* this */ U, /* p0 */ typings.ol.layerLayerMod.default, Boolean],
+      checkWrapped: Boolean,
+      layerFilter: js.ThisFunction1[
+          /* this */ U, 
+          /* p0 */ typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default], 
+          Boolean
+        ],
       thisArg: U
     ): Boolean = js.native
-    def registerLayerRenderers(constructors: js.Array[typings.ol.rendererLayerMod.default]): Unit = js.native
-    def removeLayerRenderers(): Unit = js.native
     def renderFrame(frameState: FrameState): Unit = js.native
     /* protected */ def scheduleExpireIconCache(frameState: FrameState): Unit = js.native
-    /* protected */ def scheduleRemoveUnusedLayerRenderers(frameState: FrameState): Unit = js.native
   }
   
   @js.native
-  class default protected () extends MapRenderer {
+  abstract class default protected () extends MapRenderer {
     def this(map: typings.ol.pluggableMapMod.default) = this()
   }
   
-  def sortByZIndex(state1: State, state2: State): Double = js.native
 }
 

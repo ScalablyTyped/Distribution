@@ -66,6 +66,7 @@ trait Spreadsheet extends js.Object {
   def getNamedRanges(): js.Array[NamedRange] = js.native
   def getNumSheets(): Integer = js.native
   def getOwner(): User | Null = js.native
+  def getPredefinedSpreadsheetThemes(): js.Array[SpreadsheetTheme] = js.native
   def getProtections(`type`: ProtectionType): js.Array[Protection] = js.native
   def getRange(a1Notation: String): Range = js.native
   def getRangeByName(name: String): Range | Null = js.native
@@ -80,6 +81,7 @@ trait Spreadsheet extends js.Object {
   def getSheetValues(startRow: Integer, startColumn: Integer, numRows: Integer, numColumns: Integer): js.Array[js.Array[_]] = js.native
   def getSheets(): js.Array[Sheet] = js.native
   def getSpreadsheetLocale(): String = js.native
+  def getSpreadsheetTheme(): SpreadsheetTheme | Null = js.native
   def getSpreadsheetTimeZone(): String = js.native
   def getUrl(): String = js.native
   def getViewers(): js.Array[User] = js.native
@@ -122,6 +124,7 @@ trait Spreadsheet extends js.Object {
   def removeViewer(user: User): typings.googleDashAppsDashScript.GoogleAppsScript.Spreadsheet.Spreadsheet = js.native
   def rename(newName: String): Unit = js.native
   def renameActiveSheet(newName: String): Unit = js.native
+  def resetSpreadsheetTheme(): SpreadsheetTheme = js.native
   def setActiveRange(range: Range): Range = js.native
   def setActiveRangeList(rangeList: RangeList): RangeList = js.native
   def setActiveSelection(a1Notation: String): Range = js.native
@@ -141,6 +144,7 @@ trait Spreadsheet extends js.Object {
   def setRowHeight(rowPosition: Integer, height: Integer): Sheet = js.native
   /** @deprecated DO NOT USE */ def setSheetProtection(permissions: PageProtection): Unit = js.native
   def setSpreadsheetLocale(locale: String): Unit = js.native
+  def setSpreadsheetTheme(theme: SpreadsheetTheme): SpreadsheetTheme = js.native
   def setSpreadsheetTimeZone(timezone: String): Unit = js.native
   def show(userInterface: HtmlOutput): Unit = js.native
   def sort(columnPosition: Integer): Sheet = js.native

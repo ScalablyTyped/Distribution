@@ -17,9 +17,11 @@ trait Options extends js.Object {
   var reprojectionErrorThreshold: js.UndefOr[Double] = js.undefined
   var size: js.UndefOr[Size] = js.undefined
   var tierSizeCalculation: js.UndefOr[String] = js.undefined
+  var tilePixelRatio: js.UndefOr[Double] = js.undefined
   var tileSize: js.UndefOr[Double] = js.undefined
   var transition: js.UndefOr[Double] = js.undefined
   var url: js.UndefOr[String] = js.undefined
+  var zDirection: js.UndefOr[Double] = js.undefined
 }
 
 object Options {
@@ -33,9 +35,11 @@ object Options {
     reprojectionErrorThreshold: Int | Double = null,
     size: Size = null,
     tierSizeCalculation: String = null,
+    tilePixelRatio: Int | Double = null,
     tileSize: Int | Double = null,
     transition: Int | Double = null,
-    url: String = null
+    url: String = null,
+    zDirection: Int | Double = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (attributions != null) __obj.updateDynamic("attributions")(attributions.asInstanceOf[js.Any])
@@ -46,9 +50,11 @@ object Options {
     if (reprojectionErrorThreshold != null) __obj.updateDynamic("reprojectionErrorThreshold")(reprojectionErrorThreshold.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (tierSizeCalculation != null) __obj.updateDynamic("tierSizeCalculation")(tierSizeCalculation.asInstanceOf[js.Any])
+    if (tilePixelRatio != null) __obj.updateDynamic("tilePixelRatio")(tilePixelRatio.asInstanceOf[js.Any])
     if (tileSize != null) __obj.updateDynamic("tileSize")(tileSize.asInstanceOf[js.Any])
     if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
     if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (zDirection != null) __obj.updateDynamic("zDirection")(zDirection.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

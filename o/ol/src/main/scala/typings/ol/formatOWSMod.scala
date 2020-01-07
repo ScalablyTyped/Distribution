@@ -8,9 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object formatOWSMod extends js.Object {
   @js.native
-  class default ()
+  trait OWS
     extends typings.ol.formatXMLMod.default
   
-  type OWS = typings.ol.formatXMLMod.default
+  @js.native
+  class default () extends OWS
+  
 }
 

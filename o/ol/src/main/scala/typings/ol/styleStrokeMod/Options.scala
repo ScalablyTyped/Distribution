@@ -2,16 +2,18 @@ package typings.ol.styleStrokeMod
 
 import typings.ol.colorMod.Color
 import typings.ol.colorlikeMod.ColorLike
+import typings.std.CanvasLineCap
+import typings.std.CanvasLineJoin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
   var color: js.UndefOr[Color | ColorLike] = js.undefined
-  var lineCap: js.UndefOr[String] = js.undefined
+  var lineCap: js.UndefOr[CanvasLineCap] = js.undefined
   var lineDash: js.UndefOr[js.Array[Double]] = js.undefined
   var lineDashOffset: js.UndefOr[Double] = js.undefined
-  var lineJoin: js.UndefOr[String] = js.undefined
+  var lineJoin: js.UndefOr[CanvasLineJoin] = js.undefined
   var miterLimit: js.UndefOr[Double] = js.undefined
   var width: js.UndefOr[Double] = js.undefined
 }
@@ -20,10 +22,10 @@ object Options {
   @scala.inline
   def apply(
     color: Color | ColorLike = null,
-    lineCap: String = null,
+    lineCap: CanvasLineCap = null,
     lineDash: js.Array[Double] = null,
     lineDashOffset: Int | Double = null,
-    lineJoin: String = null,
+    lineJoin: CanvasLineJoin = null,
     miterLimit: Int | Double = null,
     width: Int | Double = null
   ): Options = {

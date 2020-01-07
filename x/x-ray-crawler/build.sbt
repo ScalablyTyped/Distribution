@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "x-ray-crawler"
-version := "2.0-dt-20180214Z-d07572"
+version := "2.0-dt-20180214Z-3fd252"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "accepts" % "1.3-dt-20180214Z-cbb841",
-  "org.scalablytyped" %%% "http-context" % "1.1-dt-20180214Z-47d8db",
-  "org.scalablytyped" %%% "node" % "13.1-dt-20200103Z-b9f880",
+  "org.scalablytyped" %%% "accepts" % "1.3-dt-20180214Z-374f13",
+  "org.scalablytyped" %%% "http-context" % "1.1-dt-20180214Z-d53411",
+  "org.scalablytyped" %%% "node" % "13.1-dt-20200103Z-51871a",
   "org.scalablytyped" %%% "std" % "3.7-b6d959")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

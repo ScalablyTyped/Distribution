@@ -13,7 +13,6 @@ import typings.tstl.containerHashMapMod.HashMap
 import typings.tstl.containerHashMapMod.HashMap.Iterator
 import typings.tstl.containerHashMapMod.HashMap.ReverseIterator
 import typings.tstl.utilityEntryMod.Entry
-import typings.tstl.utilityIPairMod.IPair
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -66,21 +65,6 @@ object templatesServiceUserMod extends js.Object {
         ]
     ): Unit = js.native
     /**
-      * Iterator to the first element.
-      *
-      * @return Iterator to the first element.
-      */
-    /* CompleteClass */
-    /* InferMemberOverrides */
-    /* InferMemberOverrides */
-    override def begin(): typings.tstl.baseIteratorIteratorMod.Iterator[
-        Entry[Double, Client], 
-        HashMap[Double, Client], 
-        Iterator[Double, Client], 
-        ReverseIterator[Double, Client], 
-        IPair[Double, Client]
-      ] = js.native
-    /**
       * Factory method creating a {@link Client} object.
       *
       * @param driver A web communicator for remote client.
@@ -125,27 +109,6 @@ object templatesServiceUserMod extends js.Object {
         ]
     ): Unit = js.native
     /**
-      * Test whether container is empty.
-      */
-    /* InferMemberOverrides */
-    /* InferMemberOverrides */
-    override def empty(): Boolean = js.native
-    /**
-      * Iterator to the end.
-      *
-      * @return Iterator to the end.
-      */
-    /* CompleteClass */
-    /* InferMemberOverrides */
-    /* InferMemberOverrides */
-    override def end(): typings.tstl.baseIteratorIteratorMod.Iterator[
-        Entry[Double, Client], 
-        HashMap[Double, Client], 
-        Iterator[Double, Client], 
-        ReverseIterator[Double, Client], 
-        IPair[Double, Client]
-      ] = js.native
-    /**
       * Get account id.
       *
       * @return Account ID.
@@ -176,25 +139,6 @@ object templatesServiceUserMod extends js.Object {
       * with the ordinary {@link getAccountID account id} more.
       */
     def logout(): Unit = js.native
-    /**
-      * Insert items at the end.
-      *
-      * @param items Items to insert.
-      * @return Number of elements in the container after insertion.
-      */
-    /* CompleteClass */
-    /* InferMemberOverrides */
-    /* InferMemberOverrides */
-    override def push(items: (IPair[Double, Client])*): Double = js.native
-    /**
-      * Reverse iterator to the first element in reverse.
-      *
-      * @return Reverse iterator to the first.
-      */
-    /* CompleteClass */
-    /* InferMemberOverrides */
-    /* InferMemberOverrides */
-    override def rbegin(): ReverseIterator[Double, Client] = js.native
     /* InferMemberOverrides */
     override def removeEventListener(
       `type`: Type,
@@ -205,15 +149,6 @@ object templatesServiceUserMod extends js.Object {
           ReverseIterator[Double, Client]
         ]
     ): Unit = js.native
-    /**
-      * Reverse iterator to the reverse end.
-      *
-      * @return Reverse iterator to the end.
-      */
-    /* CompleteClass */
-    /* InferMemberOverrides */
-    /* InferMemberOverrides */
-    override def rend(): ReverseIterator[Double, Client] = js.native
     /**
       * Sending message.
       *
@@ -251,11 +186,6 @@ object templatesServiceUserMod extends js.Object {
       * @param authority To be authority.
       */
     def setAccount(id: String, authority: Double): Unit = js.native
-    /**
-      * Number of elements in the container.
-      */
-    /* InferMemberOverrides */
-    override def size(): Double = js.native
   }
   
 }

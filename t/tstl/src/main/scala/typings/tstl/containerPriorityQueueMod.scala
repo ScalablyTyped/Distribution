@@ -1,7 +1,5 @@
 package typings.tstl
 
-import typings.tstl.baseContainerAdaptorContainerMod.AdaptorContainer
-import typings.tstl.containerVectorMod.Vector
 import typings.tstl.iteratorIForwardIteratorMod.IForwardIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,13 +8,14 @@ import scala.scalajs.js.annotation._
 @JSImport("tstl/container/PriorityQueue", JSImport.Namespace)
 @js.native
 object containerPriorityQueueMod extends js.Object {
-  @js.native
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AdaptorContainer<T, Vector<T>, PriorityQueue<T>> * / any */ @js.native
   /**
     * Default Constructor.
     *
     * @param comp A binary function predicates *x* element would be placed before *y*. When returns `true`, then *x* precedes *y*. Note that, because *equality* is predicated by `!comp(x, y) && !comp(y, x)`, the function must not cover the *equality* like `<=` or `>=`. It must exclude the *equality* like `<` or `>`. Default is {@link less}.
     */
-  class PriorityQueue[T] () extends AdaptorContainer[T, Vector[T], PriorityQueue[T]] {
+  class PriorityQueue[T] () extends js.Object {
     def this(comp: js.Function2[/* x */ T, /* y */ T, Boolean]) = this()
     /**
       * Copy Constructor.
@@ -44,6 +43,18 @@ object containerPriorityQueueMod extends js.Object {
       * @hidden
       */
     var comp_ : js.Any = js.native
+    /**
+      * @inheritDoc
+      */
+    def pop(): Unit = js.native
+    /**
+      * @inheritDoc
+      */
+    def push(elems: T*): Double = js.native
+    /**
+      * @inheritDoc
+      */
+    def swap(obj: PriorityQueue[T]): Unit = js.native
     /**
       * Get top element.
       */

@@ -8,9 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object formatOSMXMLMod extends js.Object {
   @js.native
-  class default ()
+  trait OSMXML
     extends typings.ol.formatXMLFeatureMod.default
   
-  type OSMXML = typings.ol.formatXMLFeatureMod.default
+  @js.native
+  class default () extends OSMXML
+  
 }
 

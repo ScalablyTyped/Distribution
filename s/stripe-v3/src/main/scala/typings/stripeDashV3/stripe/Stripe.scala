@@ -35,6 +35,7 @@ trait Stripe extends js.Object {
   def confirmSepaDebitPayment(clientSecret: String, data: ConfirmSepaDebitPaymentData): js.Promise[PaymentIntentResponse] = js.native
   def confirmSepaDebitSetup(clientSecret: String): js.Promise[SetupIntentResponse] = js.native
   def confirmSepaDebitSetup(clientSecret: String, data: ConfirmSepaDebitSetupData): js.Promise[SetupIntentResponse] = js.native
+  def createPaymentMethod(data: PaymentMethodData): js.Promise[PaymentMethodResponse] = js.native
   def createPaymentMethod(`type`: paymentMethodType, element: Element): js.Promise[PaymentMethodResponse] = js.native
   def createPaymentMethod(`type`: paymentMethodType, element: Element, options: CreatePaymentMethodOptions): js.Promise[PaymentMethodResponse] = js.native
   def createSource(element: Element): js.Promise[SourceResponse] = js.native
