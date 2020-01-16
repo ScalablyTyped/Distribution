@@ -31,7 +31,7 @@ trait ZObject extends js.Object {
   def hash(algorithm: String, data: String): String = js.native
   def hash(algorithm: String, data: String, encoding: String): String = js.native
   def hash(algorithm: String, data: String, encoding: String, input_encoding: String): String = js.native
-  def request(options: HttpRequestOptions with (Anon_RawTrue | Anon_Url)): js.Promise[RawHttpResponse] = js.native
+  def request(options: HttpRequestOptions with Anon_RawTrue with Anon_Url): js.Promise[RawHttpResponse] = js.native
   def request(url: String): js.Promise[HttpResponse] = js.native
   def request(url: String, options: (HttpRequestOptions with Anon_Raw) | HttpRequestOptions): js.Promise[RawHttpResponse] = js.native
   /**

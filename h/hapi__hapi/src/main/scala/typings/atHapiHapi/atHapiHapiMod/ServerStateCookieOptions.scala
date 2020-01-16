@@ -1,14 +1,11 @@
 package typings.atHapiHapi.atHapiHapiMod
 
 import typings.atHapiHapi.Anon_Integrity
-import typings.atHapiHapi.atHapiHapiBooleans.`false`
-import typings.atHapiHapi.atHapiHapiStrings.Lax
-import typings.atHapiHapi.atHapiHapiStrings.Strict
 import typings.atHapiHapi.atHapiHapiStrings.base64
 import typings.atHapiHapi.atHapiHapiStrings.base64json
 import typings.atHapiHapi.atHapiHapiStrings.form
 import typings.atHapiHapi.atHapiHapiStrings.iron
-import typings.atHapiHapi.atHapiHapiStrings.none
+import typings.atHapiHapi.atHapiHapiStrings.none_
 import typings.atHapiIron.atHapiIronMod.SealOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -33,7 +30,7 @@ trait ServerStateCookieOptions extends js.Object {
     *  * 'form' - object value is encoded using the x-www-form-urlencoded method.
     *  * 'iron' - Encrypts and sign the value using iron.
     */
-  var encoding: js.UndefOr[none | base64 | base64json | form | iron] = js.undefined
+  var encoding: js.UndefOr[none_ | base64 | base64json | form | iron] = js.undefined
   /** if true, errors are ignored and treated as missing cookies. */
   var ignoreErrors: js.UndefOr[Boolean] = js.undefined
   /** options for 'iron' encoding. Defaults to require('@hapi/iron').defaults. */
@@ -46,7 +43,7 @@ trait ServerStateCookieOptions extends js.Object {
     *  * 'Strict' - sets the value to 'Strict' (this is the default value).
     *  * 'Lax' - sets the value to 'Lax'.
     */
-  var isSameSite: js.UndefOr[`false` | Strict | Lax] = js.undefined
+  var isSameSite: js.UndefOr[SameSitePolicy] = js.undefined
   /** sets the 'Secure' flag. Defaults to true. */
   var isSecure: js.UndefOr[Boolean] = js.undefined
   /** used by proxy plugins (e.g. h2o2). */
@@ -74,11 +71,11 @@ object ServerStateCookieOptions {
     autoValue: /* request */ Request => Unit = null,
     clearInvalid: js.UndefOr[Boolean] = js.undefined,
     domain: String = null,
-    encoding: none | base64 | base64json | form | iron = null,
+    encoding: none_ | base64 | base64json | form | iron = null,
     ignoreErrors: js.UndefOr[Boolean] = js.undefined,
     iron: SealOptions = null,
     isHttpOnly: js.UndefOr[Boolean] = js.undefined,
-    isSameSite: `false` | Strict | Lax = null,
+    isSameSite: SameSitePolicy = null,
     isSecure: js.UndefOr[Boolean] = js.undefined,
     passThrough: js.Any = null,
     password: String = null,

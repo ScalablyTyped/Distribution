@@ -343,7 +343,7 @@ trait Anon_AddMember extends js.Object {
     * To create a team, the authenticated user must be a member or owner of `:org`. By default, organization members can create teams. Organization owners can limit team creation to organization owners. For more information, see "[Setting team creation permissions](https://help.github.com/en/articles/setting-team-creation-permissions-in-your-organization)."
     */
   def create(): js.Promise[Response[TeamsCreateResponse]] = js.native
-  def create(params: RequestOptions with (TeamsCreateParams | TeamsCreateParamsDeprecatedPermission)): js.Promise[Response[TeamsCreateResponse]] = js.native
+  def create(params: RequestOptions with TeamsCreateParamsDeprecatedPermission with TeamsCreateParams): js.Promise[Response[TeamsCreateResponse]] = js.native
   /**
     * Creates a new discussion post on a team's page. OAuth access tokens require the `write:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     *
@@ -497,7 +497,7 @@ trait Anon_AddMember extends js.Object {
     * **Note:** With nested teams, the `privacy` for parent teams cannot be `secret`.
     */
   def update(): js.Promise[Response[TeamsUpdateResponse]] = js.native
-  def update(params: RequestOptions with (TeamsUpdateParams | TeamsUpdateParamsDeprecatedPermission)): js.Promise[Response[TeamsUpdateResponse]] = js.native
+  def update(params: RequestOptions with TeamsUpdateParamsDeprecatedPermission with TeamsUpdateParams): js.Promise[Response[TeamsUpdateResponse]] = js.native
   /**
     * Edits the title and body text of a discussion post. Only the parameters you provide are updated. OAuth access tokens require the `write:discussion` [scope](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/).
     */

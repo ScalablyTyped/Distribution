@@ -1,5 +1,6 @@
 package typings.vscodeDashLanguageclient.vscodeDashLanguageclientMod
 
+import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.DocumentUri
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,7 +20,7 @@ object TextDocument extends js.Object {
     * @param languageId  The document's language Id.
     * @param content The document's content.
     */
-  def create(uri: String, languageId: String, version: Double, content: String): typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.TextDocument = js.native
+  def create(uri: DocumentUri, languageId: String, version: Double, content: String): typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.TextDocument = js.native
   /**
     * Checks whether the given literal conforms to the [ITextDocument](#ITextDocument) interface.
     */

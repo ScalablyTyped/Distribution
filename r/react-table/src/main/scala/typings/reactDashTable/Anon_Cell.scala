@@ -22,17 +22,15 @@ trait Anon_Cell[D /* <: js.Object */] extends js.Object {
 object Anon_Cell {
   @scala.inline
   def apply[D /* <: js.Object */](
+    Cell: Renderer[CellProps[D]],
+    Header: Renderer[HeaderProps[D]],
     columns: js.Array[Column[D]],
     show: Boolean | (js.Function1[/* instance */ TableInstance[D], Boolean]),
-    Cell: Renderer[CellProps[D]] = null,
-    Header: Renderer[HeaderProps[D]] = null,
     maxWidth: Int | Double = null,
     minWidth: Int | Double = null,
     width: Double | String = null
   ): Anon_Cell[D] = {
-    val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any])
-    if (Cell != null) __obj.updateDynamic("Cell")(Cell.asInstanceOf[js.Any])
-    if (Header != null) __obj.updateDynamic("Header")(Header.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Cell = Cell.asInstanceOf[js.Any], Header = Header.asInstanceOf[js.Any], columns = columns.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any])
     if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
     if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])

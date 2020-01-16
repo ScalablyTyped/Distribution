@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "instagram-private-api"
-version := "1.37.1-a3ff0b"
+version := "1.37.1-99ec6c"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,10 +8,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20191111Z-71aa02",
   "org.scalablytyped" %%% "caseless" % "0.12-dt-20190311Z-3beb6a",
   "org.scalablytyped" %%% "chance" % "1.0-dt-20191223Z-3f2bbc",
-  "org.scalablytyped" %%% "form-data" % "2.5.1-3a2873",
+  "org.scalablytyped" %%% "form-data" % "2.5.1-f4779f",
   "org.scalablytyped" %%% "lifeomic__attempt" % "3.0.0-0586f7",
-  "org.scalablytyped" %%% "node" % "13.1-dt-20200103Z-51871a",
-  "org.scalablytyped" %%% "request" % "2.48-dt-20191217Z-2da72e",
+  "org.scalablytyped" %%% "node" % "13.1-dt-20200115Z-14f523",
+  "org.scalablytyped" %%% "request" % "2.48-dt-20191217Z-d915e8",
   "org.scalablytyped" %%% "rxjs" % "6.5.4-9a5dda",
   "org.scalablytyped" %%% "rxjs-compat" % "6.5.4-50e1f3",
   "org.scalablytyped" %%% "std" % "3.7-b6d959",

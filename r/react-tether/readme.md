@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-tether
 
-Typings are for version 2.0.6
+Typings are for version 2.0.7
 
 ## Library description:
 Drop content anywhere on the page.

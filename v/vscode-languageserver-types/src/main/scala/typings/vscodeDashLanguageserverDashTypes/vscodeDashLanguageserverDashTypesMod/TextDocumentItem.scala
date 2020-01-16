@@ -16,7 +16,7 @@ trait TextDocumentItem extends js.Object {
   /**
     * The text document's uri.
     */
-  var uri: String
+  var uri: DocumentUri
   /**
     * The version number of this document (it will increase after each
     * change, including undo/redo).
@@ -34,7 +34,7 @@ object TextDocumentItem extends js.Object {
     * @param version The document's version number.
     * @param text The document's text.
     */
-  def create(uri: String, languageId: String, version: Double, text: String): TextDocumentItem = js.native
+  def create(uri: DocumentUri, languageId: String, version: Double, text: String): TextDocumentItem = js.native
   /**
     * Checks whether the given literal conforms to the [TextDocumentItem](#TextDocumentItem) interface.
     */

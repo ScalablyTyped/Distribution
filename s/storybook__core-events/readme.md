@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__core-events
 
-Typings are for version 5.2.8
+Typings are for version 5.3.5
 
 ## Library description:
 Event names used in storybook core

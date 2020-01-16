@@ -27,31 +27,56 @@ object childUnderscoreProcessMod extends js.Object {
   def exec(command: String): ChildProcess = js.native
   def exec(
     command: String,
-    callback: js.Function3[/* error */ Error, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
+    callback: js.Function3[
+      /* error */ Error, 
+      /* stdout */ typings.node.Buffer, 
+      /* stderr */ typings.node.Buffer, 
+      Unit
+    ]
   ): ChildProcess = js.native
   def exec(command: String, options: Anon_CustomFds): ChildProcess = js.native
   def exec(
     command: String,
     options: Anon_CustomFds,
-    callback: js.Function3[/* error */ Error, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
+    callback: js.Function3[
+      /* error */ Error, 
+      /* stdout */ typings.node.Buffer, 
+      /* stderr */ typings.node.Buffer, 
+      Unit
+    ]
   ): ChildProcess = js.native
   def execFile(file: String): ChildProcess = js.native
   def execFile(file: String, args: js.Array[String]): ChildProcess = js.native
   def execFile(
     file: String,
     args: js.Array[String],
-    callback: js.Function3[/* error */ Error, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
+    callback: js.Function3[
+      /* error */ Error, 
+      /* stdout */ typings.node.Buffer, 
+      /* stderr */ typings.node.Buffer, 
+      Unit
+    ]
   ): ChildProcess = js.native
   def execFile(file: String, args: js.Array[String], options: Anon_CustomFdsCwd): ChildProcess = js.native
   def execFile(
     file: String,
     args: js.Array[String],
     options: Anon_CustomFdsCwd,
-    callback: js.Function3[/* error */ Error, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
+    callback: js.Function3[
+      /* error */ Error, 
+      /* stdout */ typings.node.Buffer, 
+      /* stderr */ typings.node.Buffer, 
+      Unit
+    ]
   ): ChildProcess = js.native
   def execFile(
     file: String,
-    callback: js.Function3[/* error */ Error, /* stdout */ Buffer, /* stderr */ Buffer, Unit]
+    callback: js.Function3[
+      /* error */ Error, 
+      /* stdout */ typings.node.Buffer, 
+      /* stderr */ typings.node.Buffer, 
+      Unit
+    ]
   ): ChildProcess = js.native
   def execFileSync(command: String): ChildProcess = js.native
   def execFileSync(command: String, args: js.Array[String]): ChildProcess = js.native

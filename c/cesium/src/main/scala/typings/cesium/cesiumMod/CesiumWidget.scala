@@ -26,6 +26,7 @@ class CesiumWidget protected () extends js.Object {
   var screenSpaceEventHandler: ScreenSpaceEventHandler = js.native
   var targetFrameRate: Double = js.native
   var terrainProvider: TerrainProvider = js.native
+  var useBrowserRecommendedResolution: Boolean = js.native
   var useDefaultRenderLoop: Boolean = js.native
   def destroy(): Unit = js.native
   def isDestroyed(): Boolean = js.native

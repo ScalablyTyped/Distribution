@@ -2,7 +2,6 @@ package typings.vscodeDashLanguageserverDashProtocol.libProtocolMod
 
 import typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.RequestType
 import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.DocumentSymbol
-import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.DocumentSymbolParams
 import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.SymbolInformation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,7 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object DocumentSymbolRequest extends js.Object {
   val `type`: RequestType[
-    DocumentSymbolParams, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DocumentSymbolParams */ js.Any, 
     (js.Array[DocumentSymbol | SymbolInformation]) | Null, 
     Unit, 
     TextDocumentRegistrationOptions

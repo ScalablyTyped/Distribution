@@ -481,6 +481,11 @@ trait Argv[T] extends js.Object {
     */
   def number[K /* <: String */](key: K): Argv[(Omit[T, K]) with typings.yargs.yargsStrings.Argv with T] = js.native
   def number[K /* <: String */](key: js.Array[K]): Argv[(Omit[T, K]) with typings.yargs.yargsStrings.Argv with T] = js.native
+  /**
+    * Method to execute when a command finishes successfully.
+    * @param func Is called with the successful result of the command that finished.
+    */
+  def onFinishCommand(func: js.Function1[/* result */ js.Any, Unit]): Argv[T] = js.native
   def option[O /* <: StringDictionary[Options] */](options: O): Argv[(Omit[T, String]) with InferredOptionTypes[O]] = js.native
   /**
     * This method can be used to make yargs aware of options that could exist.

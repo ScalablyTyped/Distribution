@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "through2-map"
-version := "3.0-dt-20180214Z-3530a7"
+version := "3.0-dt-20180214Z-146b96"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "13.1-dt-20200103Z-51871a",
+  "org.scalablytyped" %%% "node" % "13.1-dt-20200115Z-14f523",
   "org.scalablytyped" %%% "std" % "3.7-b6d959",
-  "org.scalablytyped" %%% "through2" % "2.0-dt-20190322Z-ba8a2c")
+  "org.scalablytyped" %%% "through2" % "2.0-dt-20190322Z-db1308")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

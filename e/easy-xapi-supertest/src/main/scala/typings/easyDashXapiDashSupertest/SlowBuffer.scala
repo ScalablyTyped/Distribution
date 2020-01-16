@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("SlowBuffer")
 @js.native
-class SlowBuffer protected () extends NodeBuffer {
+class SlowBuffer protected ()
+  extends typings.node.Buffer {
   def this(array: js.Array[_]) = this()
   def this(size: Double) = this()
   def this(size: Uint8Array) = this()
@@ -22,13 +23,13 @@ class SlowBuffer protected () extends NodeBuffer {
 object SlowBuffer
   extends Instantiable1[
       (/* array */ js.Array[js.Any]) | (/* size */ Double) | (/* str */ String) | (/* size */ Uint8Array), 
-      Buffer
+      typings.node.Buffer
     ]
-     with Instantiable2[/* str */ String, /* encoding */ String, Buffer] {
+     with Instantiable2[/* str */ String, /* encoding */ String, typings.node.Buffer] {
   def byteLength(string: String): Double = js.native
   def byteLength(string: String, encoding: String): Double = js.native
-  def concat(list: js.Array[Buffer]): Buffer = js.native
-  def concat(list: js.Array[Buffer], totalLength: Double): Buffer = js.native
+  def concat(list: js.Array[typings.node.Buffer]): typings.node.Buffer = js.native
+  def concat(list: js.Array[typings.node.Buffer], totalLength: Double): typings.node.Buffer = js.native
   def isBuffer(obj: js.Any): Boolean = js.native
 }
 

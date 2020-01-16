@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "jsdom"
-version := "12.2-dt-20190626Z-cdedef"
+version := "12.2-dt-20190626Z-9e18e6"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "13.1-dt-20200103Z-51871a",
+  "org.scalablytyped" %%% "node" % "13.1-dt-20200115Z-14f523",
   "org.scalablytyped" %%% "std" % "3.7-b6d959",
   "org.scalablytyped" %%% "tough-cookie" % "2.3-dt-20191206Z-1961cf")
 publishArtifact in packageDoc := false

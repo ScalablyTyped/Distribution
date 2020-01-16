@@ -2,7 +2,7 @@ package typings.easyDashXapiDashSupertest.fsMod
 
 import typings.easyDashXapiDashSupertest.Anon_Encoding
 import typings.easyDashXapiDashSupertest.Anon_Flag
-import typings.easyDashXapiDashSupertest.Buffer
+import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -17,6 +17,12 @@ trait Anon_AddParents extends js.Object {
   var keepRevisionForever: js.UndefOr[Boolean] = js.undefined
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
+  /**
+    * The name of the file. This is not necessarily unique within a folder.
+    * Note that for immutable items such as the top level folders of shared drives,
+    * My Drive root folder, and Application Data folder the name is constant.
+    */
+  var name: js.UndefOr[String] = js.undefined
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   /** A language hint for OCR processing during image import (ISO 639-1 code). */
@@ -47,6 +53,7 @@ object Anon_AddParents {
     fields: String = null,
     keepRevisionForever: js.UndefOr[Boolean] = js.undefined,
     key: String = null,
+    name: String = null,
     oauth_token: String = null,
     ocrLanguage: String = null,
     prettyPrint: js.UndefOr[Boolean] = js.undefined,
@@ -62,6 +69,7 @@ object Anon_AddParents {
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (!js.isUndefined(keepRevisionForever)) __obj.updateDynamic("keepRevisionForever")(keepRevisionForever.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
     if (ocrLanguage != null) __obj.updateDynamic("ocrLanguage")(ocrLanguage.asInstanceOf[js.Any])
     if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])

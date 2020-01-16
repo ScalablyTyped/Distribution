@@ -40,6 +40,7 @@ object LinearTickOptions {
     padding: Int | Double = null,
     precision: Int | Double = null,
     reverse: js.UndefOr[Boolean] = js.undefined,
+    sampleSize: Int | Double = null,
     showLabelBackdrop: js.UndefOr[Boolean] = js.undefined,
     source: auto | data | labels = null,
     stepSize: Int | Double = null,
@@ -72,6 +73,7 @@ object LinearTickOptions {
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
     if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
+    if (sampleSize != null) __obj.updateDynamic("sampleSize")(sampleSize.asInstanceOf[js.Any])
     if (!js.isUndefined(showLabelBackdrop)) __obj.updateDynamic("showLabelBackdrop")(showLabelBackdrop.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (stepSize != null) __obj.updateDynamic("stepSize")(stepSize.asInstanceOf[js.Any])

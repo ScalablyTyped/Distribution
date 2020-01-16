@@ -14,11 +14,11 @@ trait RenameFile extends ResourceOperation {
   /**
     * The new location.
     */
-  var newUri: String
+  var newUri: DocumentUri
   /**
     * The old (existing) location.
     */
-  var oldUri: String
+  var oldUri: DocumentUri
   /**
     * Rename options.
     */
@@ -28,8 +28,8 @@ trait RenameFile extends ResourceOperation {
 @JSImport("vscode-languageserver-types", "RenameFile")
 @js.native
 object RenameFile extends js.Object {
-  def create(oldUri: String, newUri: String): RenameFile = js.native
-  def create(oldUri: String, newUri: String, options: RenameFileOptions): RenameFile = js.native
+  def create(oldUri: DocumentUri, newUri: DocumentUri): RenameFile = js.native
+  def create(oldUri: DocumentUri, newUri: DocumentUri, options: RenameFileOptions): RenameFile = js.native
   def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.RenameFile */ Boolean = js.native
 }
 

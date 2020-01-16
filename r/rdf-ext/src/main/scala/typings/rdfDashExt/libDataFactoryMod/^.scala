@@ -11,9 +11,12 @@ import typings.rdfDashExt.libQuadMod.QuadExt
 import typings.rdfDashExt.libUnderscorePropTypeMod.PropType
 import typings.rdfDashExt.libVariableMod.VariableExt
 import typings.rdfDashExt.rdfDashExtStrings.graph
-import typings.rdfDashJs.rdfDashJsMod.BaseQuad
 import typings.rdfDashJs.rdfDashJsMod.NamedNode
 import typings.rdfDashJs.rdfDashJsMod.Quad
+import typings.rdfDashJs.rdfDashJsMod.Quad_Graph
+import typings.rdfDashJs.rdfDashJsMod.Quad_Object
+import typings.rdfDashJs.rdfDashJsMod.Quad_Predicate
+import typings.rdfDashJs.rdfDashJsMod.Quad_Subject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -41,22 +44,9 @@ object ^ extends js.Object {
   def literal(value: String, languageOrDatatype: NamedNode): LiteralExt = js.native
   def namedNode(value: String): NamedNodeExt = js.native
   def prefixMap(prefixes: Prefixes): typings.rdfDashExt.libPrefixMapMod.^ = js.native
-  def quad[Q /* <: BaseQuad */](
-    subject: /* import warning: importer.ImportType#apply Failed type conversion: Q['subject'] */ js.Any,
-    predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q['predicate'] */ js.Any,
-    `object`: /* import warning: importer.ImportType#apply Failed type conversion: Q['object'] */ js.Any
-  ): Q = js.native
-  def quad[Q /* <: BaseQuad */](
-    subject: /* import warning: importer.ImportType#apply Failed type conversion: Q['subject'] */ js.Any,
-    predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q['predicate'] */ js.Any,
-    `object`: /* import warning: importer.ImportType#apply Failed type conversion: Q['object'] */ js.Any,
-    graph: /* import warning: importer.ImportType#apply Failed type conversion: Q['graph'] */ js.Any
-  ): Q = js.native
-  def triple[Q /* <: BaseQuad */](
-    subject: /* import warning: importer.ImportType#apply Failed type conversion: Q['subject'] */ js.Any,
-    predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q['predicate'] */ js.Any,
-    `object`: /* import warning: importer.ImportType#apply Failed type conversion: Q['object'] */ js.Any
-  ): Q = js.native
+  def quad(subject: Quad_Subject, predicate: Quad_Predicate, `object`: Quad_Object): QuadExt = js.native
+  def quad(subject: Quad_Subject, predicate: Quad_Predicate, `object`: Quad_Object, graph: Quad_Graph): QuadExt = js.native
+  def triple(subject: Quad_Subject, predicate: Quad_Predicate, `object`: Quad_Object): QuadExt = js.native
   def variable(value: String): VariableExt = js.native
 }
 

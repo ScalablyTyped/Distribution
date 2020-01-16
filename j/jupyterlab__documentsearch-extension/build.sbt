@@ -1,22 +1,22 @@
 organization := "org.scalablytyped"
 name := "jupyterlab__documentsearch-extension"
-version := "1.2.2-010b05"
+version := "1.2.2-baa7a4"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "codemirror" % "0.0-unknown-dt-20191223Z-f27553",
+  "org.scalablytyped" %%% "codemirror" % "0.0-unknown-dt-20191223Z-2f5378",
   "org.scalablytyped" %%% "csstype" % "2.6.6-fd5644",
-  "org.scalablytyped" %%% "estree" % "0.0-unknown-dt-20191223Z-83fb5c",
+  "org.scalablytyped" %%% "estree" % "0.0-unknown-dt-20200108Z-c5f6cd",
   "org.scalablytyped" %%% "jupyterlab__application" % "1.2.1-f83e7a",
   "org.scalablytyped" %%% "jupyterlab__apputils" % "1.2.1-31f157",
   "org.scalablytyped" %%% "jupyterlab__attachments" % "1.2.1-0944a5",
   "org.scalablytyped" %%% "jupyterlab__cells" % "1.2.2-b57f02",
   "org.scalablytyped" %%% "jupyterlab__codeeditor" % "1.2.0-99fc81",
-  "org.scalablytyped" %%% "jupyterlab__codemirror" % "1.2.1-794afd",
+  "org.scalablytyped" %%% "jupyterlab__codemirror" % "1.2.1-f426fe",
   "org.scalablytyped" %%% "jupyterlab__coreutils" % "3.2.0-76682e",
   "org.scalablytyped" %%% "jupyterlab__docregistry" % "1.2.1-8c5a41",
-  "org.scalablytyped" %%% "jupyterlab__documentsearch" % "1.2.2-7d8c37",
+  "org.scalablytyped" %%% "jupyterlab__documentsearch" % "1.2.2-59cb15",
   "org.scalablytyped" %%% "jupyterlab__fileeditor" % "1.2.1-7e3dfb",
   "org.scalablytyped" %%% "jupyterlab__notebook" % "1.2.2-b216a2",
   "org.scalablytyped" %%% "jupyterlab__observables" % "2.4.0-fae4ef",
@@ -36,7 +36,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-b24434",
   "org.scalablytyped" %%% "react" % "16.9-dt-20191220Z-22d23f",
   "org.scalablytyped" %%% "std" % "3.7-b6d959",
-  "org.scalablytyped" %%% "tern" % "0.23-dt-20191126Z-364054")
+  "org.scalablytyped" %%% "tern" % "0.23-dt-20191126Z-deab39")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

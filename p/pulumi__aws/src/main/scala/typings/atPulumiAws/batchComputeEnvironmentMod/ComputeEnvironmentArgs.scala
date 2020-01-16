@@ -8,10 +8,11 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ComputeEnvironmentArgs extends js.Object {
+  val computeEnvironmentName: js.UndefOr[Input[String]] = js.native
   /**
-    * The name for your compute environment. Up to 128 letters (uppercase and lowercase), numbers, and underscores are allowed.
+    * Creates a unique compute environment name beginning with the specified prefix. Conflicts with `computeEnvironmentName`.
     */
-  val computeEnvironmentName: Input[String] = js.native
+  val computeEnvironmentNamePrefix: js.UndefOr[Input[String]] = js.native
   /**
     * Details of the compute resources managed by the compute environment. This parameter is required for managed compute environments. See details below.
     */
@@ -33,14 +34,17 @@ trait ComputeEnvironmentArgs extends js.Object {
 object ComputeEnvironmentArgs {
   @scala.inline
   def apply(
-    computeEnvironmentName: Input[String],
     serviceRole: Input[String],
     `type`: Input[String],
+    computeEnvironmentName: Input[String] = null,
+    computeEnvironmentNamePrefix: Input[String] = null,
     computeResources: Input[ComputeEnvironmentComputeResources] = null,
     state: Input[String] = null
   ): ComputeEnvironmentArgs = {
-    val __obj = js.Dynamic.literal(computeEnvironmentName = computeEnvironmentName.asInstanceOf[js.Any], serviceRole = serviceRole.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(serviceRole = serviceRole.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (computeEnvironmentName != null) __obj.updateDynamic("computeEnvironmentName")(computeEnvironmentName.asInstanceOf[js.Any])
+    if (computeEnvironmentNamePrefix != null) __obj.updateDynamic("computeEnvironmentNamePrefix")(computeEnvironmentNamePrefix.asInstanceOf[js.Any])
     if (computeResources != null) __obj.updateDynamic("computeResources")(computeResources.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComputeEnvironmentArgs]

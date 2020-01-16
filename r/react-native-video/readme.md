@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-video
 
-Typings are for version 3.1
+Typings are for version 5.0
 
 ## Library description:
 A <Video /> element for react-native

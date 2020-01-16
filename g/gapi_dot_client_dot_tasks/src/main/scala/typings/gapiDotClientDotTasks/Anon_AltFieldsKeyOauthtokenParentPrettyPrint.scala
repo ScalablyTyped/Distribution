@@ -13,29 +13,23 @@ trait Anon_AltFieldsKeyOauthtokenParentPrettyPrint extends js.Object {
   var key: js.UndefOr[String] = js.undefined
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
-  /** New parent task identifier. If the task is moved to the top level, this parameter is omitted. Optional. */
+  /** Parent task identifier. If the task is created at the top level, this parameter is omitted. Optional. */
   var parent: js.UndefOr[String] = js.undefined
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
-  /** New previous sibling task identifier. If the task is moved to the first position among its siblings, this parameter is omitted. Optional. */
+  /** Previous sibling task identifier. If the task is created at the first position among its siblings, this parameter is omitted. Optional. */
   var previous: js.UndefOr[String] = js.undefined
-  /**
-    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-    * Overrides userIp if both are provided.
-    */
+  /** An opaque string that represents a user for quota purposes. Must not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
-  /** Task identifier. */
-  var task: String
   /** Task list identifier. */
   var tasklist: String
-  /** IP address of the site where the request originates. Use this if you want to enforce per-user limits. */
+  /** Deprecated. Please use quotaUser instead. */
   var userIp: js.UndefOr[String] = js.undefined
 }
 
 object Anon_AltFieldsKeyOauthtokenParentPrettyPrint {
   @scala.inline
   def apply(
-    task: String,
     tasklist: String,
     alt: String = null,
     fields: String = null,
@@ -47,7 +41,7 @@ object Anon_AltFieldsKeyOauthtokenParentPrettyPrint {
     quotaUser: String = null,
     userIp: String = null
   ): Anon_AltFieldsKeyOauthtokenParentPrettyPrint = {
-    val __obj = js.Dynamic.literal(task = task.asInstanceOf[js.Any], tasklist = tasklist.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(tasklist = tasklist.asInstanceOf[js.Any])
     if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])

@@ -33,6 +33,10 @@ trait Diagnostic extends js.Object {
     * appears in the user interface.
     */
   var source: js.UndefOr[String] = js.undefined
+  /**
+    * Additional metadata about the diagnostic.
+    */
+  var tags: js.UndefOr[js.Array[DiagnosticTag]] = js.undefined
 }
 
 @JSImport("vscode-languageserver-types", "Diagnostic")

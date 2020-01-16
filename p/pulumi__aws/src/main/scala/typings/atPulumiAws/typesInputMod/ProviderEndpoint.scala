@@ -136,6 +136,7 @@ trait ProviderEndpoint extends js.Object {
   var transfer: js.UndefOr[Input[String]] = js.native
   var waf: js.UndefOr[Input[String]] = js.native
   var wafregional: js.UndefOr[Input[String]] = js.native
+  var wafv2: js.UndefOr[Input[String]] = js.native
   var worklink: js.UndefOr[Input[String]] = js.native
   var workspaces: js.UndefOr[Input[String]] = js.native
   var xray: js.UndefOr[Input[String]] = js.native
@@ -273,6 +274,7 @@ object ProviderEndpoint {
     transfer: Input[String] = null,
     waf: Input[String] = null,
     wafregional: Input[String] = null,
+    wafv2: Input[String] = null,
     worklink: Input[String] = null,
     workspaces: Input[String] = null,
     xray: Input[String] = null
@@ -407,6 +409,7 @@ object ProviderEndpoint {
     if (transfer != null) __obj.updateDynamic("transfer")(transfer.asInstanceOf[js.Any])
     if (waf != null) __obj.updateDynamic("waf")(waf.asInstanceOf[js.Any])
     if (wafregional != null) __obj.updateDynamic("wafregional")(wafregional.asInstanceOf[js.Any])
+    if (wafv2 != null) __obj.updateDynamic("wafv2")(wafv2.asInstanceOf[js.Any])
     if (worklink != null) __obj.updateDynamic("worklink")(worklink.asInstanceOf[js.Any])
     if (workspaces != null) __obj.updateDynamic("workspaces")(workspaces.asInstanceOf[js.Any])
     if (xray != null) __obj.updateDynamic("xray")(xray.asInstanceOf[js.Any])

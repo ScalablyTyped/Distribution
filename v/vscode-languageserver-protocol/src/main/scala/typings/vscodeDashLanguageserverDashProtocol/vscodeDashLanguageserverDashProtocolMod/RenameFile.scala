@@ -1,5 +1,6 @@
 package typings.vscodeDashLanguageserverDashProtocol.vscodeDashLanguageserverDashProtocolMod
 
+import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.DocumentUri
 import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.RenameFileOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,8 +9,8 @@ import scala.scalajs.js.annotation._
 @JSImport("vscode-languageserver-protocol", "RenameFile")
 @js.native
 object RenameFile extends js.Object {
-  def create(oldUri: String, newUri: String): typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.RenameFile = js.native
-  def create(oldUri: String, newUri: String, options: RenameFileOptions): typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.RenameFile = js.native
+  def create(oldUri: DocumentUri, newUri: DocumentUri): typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.RenameFile = js.native
+  def create(oldUri: DocumentUri, newUri: DocumentUri, options: RenameFileOptions): typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.RenameFile = js.native
   def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.RenameFile */ Boolean = js.native
 }
 

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "eslint-plugin-react"
-version := "7.17.0-94eec6"
+version := "7.18.0-a61c69"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "eslint" % "6.1-dt-20191126Z-f6bfb3",
-  "org.scalablytyped" %%% "estree" % "0.0-unknown-dt-20191223Z-83fb5c",
+  "org.scalablytyped" %%% "eslint" % "6.1-dt-20191126Z-6a9219",
+  "org.scalablytyped" %%% "estree" % "0.0-unknown-dt-20200108Z-c5f6cd",
   "org.scalablytyped" %%% "json-schema" % "7.0-dt-20191223Z-8c5d31",
   "org.scalablytyped" %%% "std" % "3.7-b6d959")
 publishArtifact in packageDoc := false

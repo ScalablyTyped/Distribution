@@ -1,5 +1,6 @@
 package typings.gapiDotClientDotTasks.gapi.client.tasks
 
+import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -31,4 +32,8 @@ object TaskLists {
     __obj.asInstanceOf[TaskLists]
   }
 }
+
+@JSGlobal("gapi.client.tasks.tasklists")
+@js.native
+object tasklists extends TopLevel[TasklistsResource]
 

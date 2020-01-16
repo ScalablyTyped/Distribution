@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
 
 trait ItemRendererGetItemPropsReturnType extends js.Object {
   var className: String
-  var key: Double
+  var key: Id
   var onContextMenu: ReactEventHandler[Element]
   var onDoubleClick: MouseEventHandler[Element]
   var onMouseDown: MouseEventHandler[Element]
@@ -32,7 +32,7 @@ object ItemRendererGetItemPropsReturnType {
   @scala.inline
   def apply(
     className: String,
-    key: Double,
+    key: Id,
     onContextMenu: SyntheticEvent[Element, Event] => scala.Unit,
     onDoubleClick: MouseEvent[Element, NativeMouseEvent] => scala.Unit,
     onMouseDown: MouseEvent[Element, NativeMouseEvent] => scala.Unit,

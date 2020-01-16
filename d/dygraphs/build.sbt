@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dygraphs"
-version := "1.1.3-dt-20191227Z-b1ec46"
+version := "1.1.3-dt-20200108Z-78986c"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

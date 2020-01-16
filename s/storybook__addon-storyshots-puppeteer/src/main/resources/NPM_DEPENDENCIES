@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@storybook/addon-storyshots-puppeteer" : "5.3.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@storybook/addon-storyshots-puppeteer" : "5.3.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -15,6 +15,9 @@ object reactDashNativeDashVideoStrings {
   sealed trait `applicationSlashx-subrip` extends js.Object
   
   @js.native
+  sealed trait auto extends js.Object
+  
+  @js.native
   sealed trait contain extends js.Object
   
   @js.native
@@ -48,6 +51,9 @@ object reactDashNativeDashVideoStrings {
   sealed trait portrait extends js.Object
   
   @js.native
+  sealed trait resolution extends js.Object
+  
+  @js.native
   sealed trait stretch extends js.Object
   
   @js.native
@@ -65,6 +71,8 @@ object reactDashNativeDashVideoStrings {
   def applicationSlashttmlPlussignxml: applicationSlashttmlPlussignxml = "application/ttml+xml".asInstanceOf[applicationSlashttmlPlussignxml]
   @scala.inline
   def `applicationSlashx-subrip`: `applicationSlashx-subrip` = "application/x-subrip".asInstanceOf[`applicationSlashx-subrip`]
+  @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline
   def contain: contain = "contain".asInstanceOf[contain]
   @scala.inline
@@ -87,6 +95,8 @@ object reactDashNativeDashVideoStrings {
   def obey: obey = "obey".asInstanceOf[obey]
   @scala.inline
   def portrait: portrait = "portrait".asInstanceOf[portrait]
+  @scala.inline
+  def resolution: resolution = "resolution".asInstanceOf[resolution]
   @scala.inline
   def stretch: stretch = "stretch".asInstanceOf[stretch]
   @scala.inline

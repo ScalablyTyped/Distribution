@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "apollo-graphql"
-version := "0.3.6-142c40"
+version := "0.3.7-876e85"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -39,6 +39,9 @@ object dataTypes extends js.Object {
   sealed trait double extends dataTypes
   
   @js.native
+  sealed trait duration extends dataTypes
+  
+  @js.native
   sealed trait float extends dataTypes
   
   @js.native
@@ -117,6 +120,9 @@ object dataTypes extends js.Object {
   
   /* 0x0007 */ @js.native
   object double extends TopLevel[double with Double]
+  
+  /* 0x0015 */ @js.native
+  object duration extends TopLevel[duration with Double]
   
   /* 0x0008 */ @js.native
   object float extends TopLevel[float with Double]

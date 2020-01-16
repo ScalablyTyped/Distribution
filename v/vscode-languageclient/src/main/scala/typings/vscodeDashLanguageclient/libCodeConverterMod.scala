@@ -26,7 +26,6 @@ import typings.vscodeDashLanguageserverDashProtocol.libProtocolMod.DocumentLinkP
 import typings.vscodeDashLanguageserverDashProtocol.libProtocolMod.ReferenceParams
 import typings.vscodeDashLanguageserverDashProtocol.libProtocolMod.TextDocumentPositionParams
 import typings.vscodeDashLanguageserverDashProtocol.libProtocolMod.WillSaveTextDocumentParams
-import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.DocumentSymbolParams
 import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.TextDocumentIdentifier
 import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.VersionedTextDocumentIdentifier
 import scala.scalajs.js
@@ -52,9 +51,9 @@ object libCodeConverterMod extends js.Object {
     def asDiagnostics(items: js.Array[Diagnostic]): js.Array[
         typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Diagnostic
       ] = js.native
-    def asDocumentLink(item: DocumentLink): typings.vscodeDashLanguageserverDashProtocol.vscodeDashLanguageserverDashProtocolMod.DocumentLink = js.native
+    def asDocumentLink(item: DocumentLink): typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.DocumentLink = js.native
     def asDocumentLinkParams(textDocument: TextDocument): DocumentLinkParams = js.native
-    def asDocumentSymbolParams(textDocument: TextDocument): DocumentSymbolParams = js.native
+    def asDocumentSymbolParams(textDocument: TextDocument): js.Any = js.native
     def asFormattingOptions(item: FormattingOptions): typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.FormattingOptions = js.native
     def asOpenTextDocumentParams(textDocument: TextDocument): DidOpenTextDocumentParams = js.native
     def asPosition(): js.UndefOr[scala.Nothing] = js.native

@@ -14,8 +14,8 @@ trait SubscriptionRequest extends js.Object {
   var descriptor: js.UndefOr[Descriptor] = js.undefined
   var discounts: js.UndefOr[Anon_AddRemove] = js.undefined
   var firstBillingDate: js.UndefOr[Date] = js.undefined
-  var id: String
-  var merchantAccountId: String
+  var id: js.UndefOr[String] = js.undefined
+  var merchantAccountId: js.UndefOr[String] = js.undefined
   var neverExpires: js.UndefOr[Boolean] = js.undefined
   var numberOfBillingCycles: js.UndefOr[Double] = js.undefined
   var options: js.UndefOr[Anon_DoNotInheritAddOnsOrDiscounts] = js.undefined
@@ -31,8 +31,6 @@ trait SubscriptionRequest extends js.Object {
 object SubscriptionRequest {
   @scala.inline
   def apply(
-    id: String,
-    merchantAccountId: String,
     paymentMethodToken: String,
     planId: String,
     addOns: Anon_Add = null,
@@ -40,6 +38,8 @@ object SubscriptionRequest {
     descriptor: Descriptor = null,
     discounts: Anon_AddRemove = null,
     firstBillingDate: Date = null,
+    id: String = null,
+    merchantAccountId: String = null,
     neverExpires: js.UndefOr[Boolean] = js.undefined,
     numberOfBillingCycles: Int | Double = null,
     options: Anon_DoNotInheritAddOnsOrDiscounts = null,
@@ -49,12 +49,14 @@ object SubscriptionRequest {
     trialDurationUnit: String = null,
     trialPeriod: js.UndefOr[Boolean] = js.undefined
   ): SubscriptionRequest = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], merchantAccountId = merchantAccountId.asInstanceOf[js.Any], paymentMethodToken = paymentMethodToken.asInstanceOf[js.Any], planId = planId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(paymentMethodToken = paymentMethodToken.asInstanceOf[js.Any], planId = planId.asInstanceOf[js.Any])
     if (addOns != null) __obj.updateDynamic("addOns")(addOns.asInstanceOf[js.Any])
     if (billingDayOfMonth != null) __obj.updateDynamic("billingDayOfMonth")(billingDayOfMonth.asInstanceOf[js.Any])
     if (descriptor != null) __obj.updateDynamic("descriptor")(descriptor.asInstanceOf[js.Any])
     if (discounts != null) __obj.updateDynamic("discounts")(discounts.asInstanceOf[js.Any])
     if (firstBillingDate != null) __obj.updateDynamic("firstBillingDate")(firstBillingDate.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (merchantAccountId != null) __obj.updateDynamic("merchantAccountId")(merchantAccountId.asInstanceOf[js.Any])
     if (!js.isUndefined(neverExpires)) __obj.updateDynamic("neverExpires")(neverExpires.asInstanceOf[js.Any])
     if (numberOfBillingCycles != null) __obj.updateDynamic("numberOfBillingCycles")(numberOfBillingCycles.asInstanceOf[js.Any])
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])

@@ -1,7 +1,7 @@
 
 # Scala.js typings for use-json-comparison
 
-Typings are for version 1.0.3
+Typings are for version 1.0.5
 
 ## Library description:
 use json for deep comparison

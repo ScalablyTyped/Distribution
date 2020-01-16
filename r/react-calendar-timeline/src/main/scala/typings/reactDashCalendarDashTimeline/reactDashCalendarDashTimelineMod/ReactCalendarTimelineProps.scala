@@ -45,7 +45,7 @@ trait ReactCalendarTimelineProps[CustomItem /* <: TimelineItemBase[_] */, Custom
   var moveResizeValidator: js.UndefOr[
     js.Function4[
       /* action */ move | resize, 
-      /* itemId */ Double, 
+      /* itemId */ Id, 
       /* time */ Double, 
       /* resizeEdge */ left | right, 
       Double
@@ -54,7 +54,7 @@ trait ReactCalendarTimelineProps[CustomItem /* <: TimelineItemBase[_] */, Custom
   var onBoundsChange: js.UndefOr[js.Function2[/* canvasTimeStart */ Double, /* canvasTimeEnd */ Double, _]] = js.undefined
   var onCanvasClick: js.UndefOr[
     js.Function3[
-      /* groupId */ Double, 
+      /* groupId */ Id, 
       /* time */ Double, 
       /* e */ SyntheticEvent[Element, Event], 
       scala.Unit
@@ -62,7 +62,7 @@ trait ReactCalendarTimelineProps[CustomItem /* <: TimelineItemBase[_] */, Custom
   ] = js.undefined
   var onCanvasContextMenu: js.UndefOr[
     js.Function3[
-      /* group */ CustomGroup, 
+      /* groupId */ Id, 
       /* time */ Double, 
       /* e */ SyntheticEvent[Element, Event], 
       scala.Unit
@@ -70,52 +70,32 @@ trait ReactCalendarTimelineProps[CustomItem /* <: TimelineItemBase[_] */, Custom
   ] = js.undefined
   var onCanvasDoubleClick: js.UndefOr[
     js.Function3[
-      /* group */ CustomGroup, 
+      /* groupId */ Id, 
       /* time */ Double, 
       /* e */ SyntheticEvent[Element, Event], 
       scala.Unit
     ]
   ] = js.undefined
   var onItemClick: js.UndefOr[
-    js.Function3[
-      /* itemId */ Double, 
-      /* e */ SyntheticEvent[Element, Event], 
-      /* time */ Double, 
-      scala.Unit
-    ]
+    js.Function3[/* itemId */ Id, /* e */ SyntheticEvent[Element, Event], /* time */ Double, scala.Unit]
   ] = js.undefined
   var onItemContextMenu: js.UndefOr[
-    js.Function3[
-      /* itemId */ Double, 
-      /* e */ SyntheticEvent[Element, Event], 
-      /* time */ Double, 
-      scala.Unit
-    ]
+    js.Function3[/* itemId */ Id, /* e */ SyntheticEvent[Element, Event], /* time */ Double, scala.Unit]
   ] = js.undefined
   var onItemDeselect: js.UndefOr[js.Function1[/* e */ SyntheticEvent[Element, Event], scala.Unit]] = js.undefined
   var onItemDoubleClick: js.UndefOr[
-    js.Function3[
-      /* itemId */ Double, 
-      /* e */ SyntheticEvent[Element, Event], 
-      /* time */ Double, 
-      scala.Unit
-    ]
+    js.Function3[/* itemId */ Id, /* e */ SyntheticEvent[Element, Event], /* time */ Double, scala.Unit]
   ] = js.undefined
   var onItemDrag: js.UndefOr[
     js.Function1[/* itemDragObject */ OnItemDragObjectMove | OnItemDragObjectResize, scala.Unit]
   ] = js.undefined
   var onItemMove: js.UndefOr[
-    js.Function3[/* itemId */ Double, /* dragTime */ Double, /* newGroupOrder */ Double, scala.Unit]
+    js.Function3[/* itemId */ Id, /* dragTime */ Double, /* newGroupOrder */ Double, scala.Unit]
   ] = js.undefined
   var onItemResize: js.UndefOr[
-    js.Function3[
-      /* itemId */ Double, 
-      /* endTimeOrStartTime */ Double, 
-      /* edge */ left | right, 
-      scala.Unit
-    ]
+    js.Function3[/* itemId */ Id, /* endTimeOrStartTime */ Double, /* edge */ left | right, scala.Unit]
   ] = js.undefined
-  var onItemSelect: js.UndefOr[js.Function3[/* itemId */ Double, /* e */ js.Any, /* time */ Double, scala.Unit]] = js.undefined
+  var onItemSelect: js.UndefOr[js.Function3[/* itemId */ Id, /* e */ js.Any, /* time */ Double, scala.Unit]] = js.undefined
   var onTimeChange: js.UndefOr[
     js.Function3[
       /* visibleTimeStart */ Double, 
@@ -137,8 +117,8 @@ trait ReactCalendarTimelineProps[CustomItem /* <: TimelineItemBase[_] */, Custom
   var traditionalZoom: js.UndefOr[Boolean] = js.undefined
   var useResizeHandle: js.UndefOr[Boolean] = js.undefined
   var verticalLineClassNamesForTime: js.UndefOr[js.Function2[/* start */ Double, /* end */ Double, js.UndefOr[js.Array[String]]]] = js.undefined
-  var visibleTimeEnd: js.UndefOr[Date | Moment] = js.undefined
-  var visibleTimeStart: js.UndefOr[Date | Moment] = js.undefined
+  var visibleTimeEnd: js.UndefOr[Date | Moment | Double] = js.undefined
+  var visibleTimeStart: js.UndefOr[Date | Moment | Double] = js.undefined
 }
 
 object ReactCalendarTimelineProps {
@@ -164,19 +144,19 @@ object ReactCalendarTimelineProps {
     maxZoom: Int | Double = null,
     minResizeWidth: Int | Double = null,
     minZoom: Int | Double = null,
-    moveResizeValidator: (/* action */ move | resize, /* itemId */ Double, /* time */ Double, /* resizeEdge */ left | right) => Double = null,
+    moveResizeValidator: (/* action */ move | resize, /* itemId */ Id, /* time */ Double, /* resizeEdge */ left | right) => Double = null,
     onBoundsChange: (/* canvasTimeStart */ Double, /* canvasTimeEnd */ Double) => _ = null,
-    onCanvasClick: (/* groupId */ Double, /* time */ Double, /* e */ SyntheticEvent[Element, Event]) => scala.Unit = null,
-    onCanvasContextMenu: (/* group */ CustomGroup, /* time */ Double, /* e */ SyntheticEvent[Element, Event]) => scala.Unit = null,
-    onCanvasDoubleClick: (/* group */ CustomGroup, /* time */ Double, /* e */ SyntheticEvent[Element, Event]) => scala.Unit = null,
-    onItemClick: (/* itemId */ Double, /* e */ SyntheticEvent[Element, Event], /* time */ Double) => scala.Unit = null,
-    onItemContextMenu: (/* itemId */ Double, /* e */ SyntheticEvent[Element, Event], /* time */ Double) => scala.Unit = null,
+    onCanvasClick: (/* groupId */ Id, /* time */ Double, /* e */ SyntheticEvent[Element, Event]) => scala.Unit = null,
+    onCanvasContextMenu: (/* groupId */ Id, /* time */ Double, /* e */ SyntheticEvent[Element, Event]) => scala.Unit = null,
+    onCanvasDoubleClick: (/* groupId */ Id, /* time */ Double, /* e */ SyntheticEvent[Element, Event]) => scala.Unit = null,
+    onItemClick: (/* itemId */ Id, /* e */ SyntheticEvent[Element, Event], /* time */ Double) => scala.Unit = null,
+    onItemContextMenu: (/* itemId */ Id, /* e */ SyntheticEvent[Element, Event], /* time */ Double) => scala.Unit = null,
     onItemDeselect: /* e */ SyntheticEvent[Element, Event] => scala.Unit = null,
-    onItemDoubleClick: (/* itemId */ Double, /* e */ SyntheticEvent[Element, Event], /* time */ Double) => scala.Unit = null,
+    onItemDoubleClick: (/* itemId */ Id, /* e */ SyntheticEvent[Element, Event], /* time */ Double) => scala.Unit = null,
     onItemDrag: /* itemDragObject */ OnItemDragObjectMove | OnItemDragObjectResize => scala.Unit = null,
-    onItemMove: (/* itemId */ Double, /* dragTime */ Double, /* newGroupOrder */ Double) => scala.Unit = null,
-    onItemResize: (/* itemId */ Double, /* endTimeOrStartTime */ Double, /* edge */ left | right) => scala.Unit = null,
-    onItemSelect: (/* itemId */ Double, /* e */ js.Any, /* time */ Double) => scala.Unit = null,
+    onItemMove: (/* itemId */ Id, /* dragTime */ Double, /* newGroupOrder */ Double) => scala.Unit = null,
+    onItemResize: (/* itemId */ Id, /* endTimeOrStartTime */ Double, /* edge */ left | right) => scala.Unit = null,
+    onItemSelect: (/* itemId */ Id, /* e */ js.Any, /* time */ Double) => scala.Unit = null,
     onTimeChange: (/* visibleTimeStart */ Double, /* visibleTimeEnd */ Double, /* updateScrollCanvas */ js.Function2[/* start */ Double, /* end */ Double, scala.Unit]) => _ = null,
     onZoom: /* timelineContext */ TimelineContext => scala.Unit = null,
     resizeDetector: /* containerResizeDetector */ js.Any => scala.Unit = null,
@@ -191,8 +171,8 @@ object ReactCalendarTimelineProps {
     traditionalZoom: js.UndefOr[Boolean] = js.undefined,
     useResizeHandle: js.UndefOr[Boolean] = js.undefined,
     verticalLineClassNamesForTime: (/* start */ Double, /* end */ Double) => js.UndefOr[js.Array[String]] = null,
-    visibleTimeEnd: Date | Moment = null,
-    visibleTimeStart: Date | Moment = null
+    visibleTimeEnd: Date | Moment | Double = null,
+    visibleTimeStart: Date | Moment | Double = null
   ): ReactCalendarTimelineProps[CustomItem, CustomGroup] = {
     val __obj = js.Dynamic.literal(groups = groups.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
     if (!js.isUndefined(canChangeGroup)) __obj.updateDynamic("canChangeGroup")(canChangeGroup.asInstanceOf[js.Any])

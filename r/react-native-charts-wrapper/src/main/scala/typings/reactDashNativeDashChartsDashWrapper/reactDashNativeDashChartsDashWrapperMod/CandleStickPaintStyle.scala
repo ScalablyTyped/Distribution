@@ -1,0 +1,24 @@
+package typings.reactDashNativeDashChartsDashWrapper.reactDashNativeDashChartsDashWrapperMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.reactDashNativeDashChartsDashWrapper.reactDashNativeDashChartsDashWrapperStrings.FILL
+  - typings.reactDashNativeDashChartsDashWrapper.reactDashNativeDashChartsDashWrapperStrings.STROKE
+  - typings.reactDashNativeDashChartsDashWrapper.reactDashNativeDashChartsDashWrapperStrings.FILL_AND_STROKE
+*/
+trait CandleStickPaintStyle extends js.Object
+
+object CandleStickPaintStyle {
+  @scala.inline
+  def FILL: typings.reactDashNativeDashChartsDashWrapper.reactDashNativeDashChartsDashWrapperStrings.FILL = this.cast("FILL")
+  @scala.inline
+  def FILL_AND_STROKE: typings.reactDashNativeDashChartsDashWrapper.reactDashNativeDashChartsDashWrapperStrings.FILL_AND_STROKE = this.cast("FILL_AND_STROKE")
+  @scala.inline
+  def STROKE: typings.reactDashNativeDashChartsDashWrapper.reactDashNativeDashChartsDashWrapperStrings.STROKE = this.cast("STROKE")
+  @scala.inline
+  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+}
+

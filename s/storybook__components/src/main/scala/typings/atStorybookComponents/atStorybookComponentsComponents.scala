@@ -56,11 +56,17 @@ object atStorybookComponentsComponents extends atStorybookComponentsProps {
   @scala.inline
   def Preview: ComponentType[PreviewProps] = typings.atStorybookComponents.distBlocksMod.Preview.asInstanceOf[typings.react.reactMod.ComponentType[PreviewProps]]
   @scala.inline
+  def PropJsDoc: ComponentType[PropJsDocProps] = typings.atStorybookComponents.distBlocksPropsTablePropJsDocMod.PropJsDoc.asInstanceOf[typings.react.reactMod.ComponentType[PropJsDocProps]]
+  @scala.inline
   def PropRow: ComponentType[PropRowProps] = typings.atStorybookComponents.distBlocksPropsTablePropRowMod.PropRow.asInstanceOf[typings.react.reactMod.ComponentType[PropRowProps]]
+  @scala.inline
+  def PropValue: ComponentType[PropValueProps] = typings.atStorybookComponents.distBlocksPropsTablePropValueMod.PropValue.asInstanceOf[typings.react.reactMod.ComponentType[PropValueProps]]
   @scala.inline
   def PropsTable: ComponentType[PropsTableProps] = typings.atStorybookComponents.distBlocksMod.PropsTable.asInstanceOf[typings.react.reactMod.ComponentType[PropsTableProps]]
   @scala.inline
   def ScrollArea: ComponentType[ScrollAreaProps] = typings.atStorybookComponents.atStorybookComponentsMod.ScrollArea.asInstanceOf[typings.react.reactMod.ComponentType[ScrollAreaProps]]
+  @scala.inline
+  def SectionRow: ComponentType[SectionRowProps] = typings.atStorybookComponents.distBlocksPropsTableSectionRowMod.SectionRow.asInstanceOf[typings.react.reactMod.ComponentType[SectionRowProps]]
   @scala.inline
   def Source: ComponentType[SourceProps] = typings.atStorybookComponents.distBlocksMod.Source.asInstanceOf[typings.react.reactMod.ComponentType[SourceProps]]
   @scala.inline

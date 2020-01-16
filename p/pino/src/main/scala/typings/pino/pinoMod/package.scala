@@ -15,6 +15,7 @@ package object pinoMod {
     Unit
   ]
   type Logger = BaseLogger with StringDictionary[LogFn]
+  type MixinFn = js.Function0[js.Object]
   type SerializedError = typings.pinoDashStdDashSerializers.pinoDashStdDashSerializersMod.SerializedError
   type SerializedRequest = typings.pinoDashStdDashSerializers.pinoDashStdDashSerializersMod.SerializedRequest
   type SerializedResponse = typings.pinoDashStdDashSerializers.pinoDashStdDashSerializersMod.SerializedResponse

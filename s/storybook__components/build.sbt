@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "storybook__components"
-version := "5.2.8-d0d913"
+version := "5.3.5-aef838"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -17,7 +17,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "react" % "16.9-dt-20191220Z-22d23f",
   "org.scalablytyped" %%% "react-textarea-autosize" % "4.3.0-dt-20191105Z-bc0a56",
   "org.scalablytyped" %%% "std" % "3.7-b6d959",
-  "org.scalablytyped" %%% "storybook__theming" % "5.2.8-42063f")
+  "org.scalablytyped" %%% "storybook__theming" % "5.3.5-6079a5")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 
 trait RouteOptionsValidate extends js.Object {
   /**
-    * Default value: none.
+    * @default none.
     * An optional object with error fields copied into every validation error response.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsvalidateerrorfields)
     */
   var errorFields: js.UndefOr[js.Object] = js.undefined
   /**
-    * Default value: 'error' (return a Bad Request (400) error response).
+    * @default 'error' (return a Bad Request (400) error response).
     * A failAction value which determines how to handle failed validations. When set to a function, the err argument includes the type of validation error under err.output.payload.validation.source.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsvalidatefailaction)
     */

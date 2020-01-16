@@ -9,6 +9,7 @@ trait Anon_Dragging extends js.Object {
   var drillThroughMaxRows: js.UndefOr[Double] = js.undefined
   var grandTotalsPosition: js.UndefOr[String] = js.undefined
   var showAutoCalculationBar: js.UndefOr[Boolean] = js.undefined
+  var showEmptyValues: js.UndefOr[Boolean] = js.undefined
   var showFilter: js.UndefOr[Boolean] = js.undefined
   var showGrandTotals: js.UndefOr[String] = js.undefined
   var showHeaders: js.UndefOr[Boolean] = js.undefined
@@ -27,6 +28,7 @@ object Anon_Dragging {
     drillThroughMaxRows: Int | Double = null,
     grandTotalsPosition: String = null,
     showAutoCalculationBar: js.UndefOr[Boolean] = js.undefined,
+    showEmptyValues: js.UndefOr[Boolean] = js.undefined,
     showFilter: js.UndefOr[Boolean] = js.undefined,
     showGrandTotals: String = null,
     showHeaders: js.UndefOr[Boolean] = js.undefined,
@@ -42,6 +44,7 @@ object Anon_Dragging {
     if (drillThroughMaxRows != null) __obj.updateDynamic("drillThroughMaxRows")(drillThroughMaxRows.asInstanceOf[js.Any])
     if (grandTotalsPosition != null) __obj.updateDynamic("grandTotalsPosition")(grandTotalsPosition.asInstanceOf[js.Any])
     if (!js.isUndefined(showAutoCalculationBar)) __obj.updateDynamic("showAutoCalculationBar")(showAutoCalculationBar.asInstanceOf[js.Any])
+    if (!js.isUndefined(showEmptyValues)) __obj.updateDynamic("showEmptyValues")(showEmptyValues.asInstanceOf[js.Any])
     if (!js.isUndefined(showFilter)) __obj.updateDynamic("showFilter")(showFilter.asInstanceOf[js.Any])
     if (showGrandTotals != null) __obj.updateDynamic("showGrandTotals")(showGrandTotals.asInstanceOf[js.Any])
     if (!js.isUndefined(showHeaders)) __obj.updateDynamic("showHeaders")(showHeaders.asInstanceOf[js.Any])

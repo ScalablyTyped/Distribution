@@ -1,5 +1,6 @@
 package typings.vscodeDashLanguageclient.vscodeDashLanguageclientMod
 
+import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.DocumentUri
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,7 +14,7 @@ object Location extends js.Object {
     * @param range The location's range.
     */
   def create(
-    uri: String,
+    uri: DocumentUri,
     range: typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Range
   ): typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Location = js.native
   /**

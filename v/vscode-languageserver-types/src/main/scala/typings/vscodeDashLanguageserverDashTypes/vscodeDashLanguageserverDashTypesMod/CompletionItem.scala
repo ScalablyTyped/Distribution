@@ -35,6 +35,7 @@ trait CompletionItem extends js.Object {
   var data: js.UndefOr[js.Any] = js.undefined
   /**
     * Indicates if this item is deprecated.
+    * @deprecated Use `tags` instead.
     */
   var deprecated: js.UndefOr[Boolean] = js.undefined
   /**
@@ -63,13 +64,12 @@ trait CompletionItem extends js.Object {
     * and a completion item with an `insertText` of `console` is provided it
     * will only insert `sole`. Therefore it is recommended to use `textEdit` instead
     * since it avoids additional client side interpretation.
-    *
-    * @deprecated Use textEdit instead.
     */
   var insertText: js.UndefOr[String] = js.undefined
   /**
     * The format of the insert text. The format applies to both the `insertText` property
-    * and the `newText` property of a provided `textEdit`.
+    * and the `newText` property of a provided `textEdit`. If ommitted defaults to
+    * `InsertTextFormat.PlainText`.
     */
   var insertTextFormat: js.UndefOr[InsertTextFormat] = js.undefined
   /**
@@ -97,6 +97,12 @@ trait CompletionItem extends js.Object {
     * is used.
     */
   var sortText: js.UndefOr[String] = js.undefined
+  /**
+    * Tags for this completion item.
+    *
+    * @since 3.15.0
+    */
+  var tags: js.UndefOr[js.Array[CompletionItemTag]] = js.undefined
   /**
     * An [edit](#TextEdit) which is applied to a document when selecting
     * this completion. When an edit is provided the value of

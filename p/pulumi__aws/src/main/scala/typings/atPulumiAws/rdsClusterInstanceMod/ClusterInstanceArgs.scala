@@ -24,6 +24,10 @@ trait ClusterInstanceArgs extends js.Object {
     */
   val availabilityZone: js.UndefOr[Input[String]] = js.native
   /**
+    * The identifier of the CA certificate for the DB instance.
+    */
+  val caCertIdentifier: js.UndefOr[Input[String]] = js.native
+  /**
     * The identifier of the [`aws.rds.Cluster`](https://www.terraform.io/docs/providers/aws/r/rds_cluster.html) in which to launch this instance.
     */
   val clusterIdentifier: Input[String] = js.native
@@ -115,6 +119,7 @@ object ClusterInstanceArgs {
     applyImmediately: Input[Boolean] = null,
     autoMinorVersionUpgrade: Input[Boolean] = null,
     availabilityZone: Input[String] = null,
+    caCertIdentifier: Input[String] = null,
     copyTagsToSnapshot: Input[Boolean] = null,
     dbParameterGroupName: Input[String] = null,
     dbSubnetGroupName: Input[String] = null,
@@ -136,6 +141,7 @@ object ClusterInstanceArgs {
     if (applyImmediately != null) __obj.updateDynamic("applyImmediately")(applyImmediately.asInstanceOf[js.Any])
     if (autoMinorVersionUpgrade != null) __obj.updateDynamic("autoMinorVersionUpgrade")(autoMinorVersionUpgrade.asInstanceOf[js.Any])
     if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])
+    if (caCertIdentifier != null) __obj.updateDynamic("caCertIdentifier")(caCertIdentifier.asInstanceOf[js.Any])
     if (copyTagsToSnapshot != null) __obj.updateDynamic("copyTagsToSnapshot")(copyTagsToSnapshot.asInstanceOf[js.Any])
     if (dbParameterGroupName != null) __obj.updateDynamic("dbParameterGroupName")(dbParameterGroupName.asInstanceOf[js.Any])
     if (dbSubnetGroupName != null) __obj.updateDynamic("dbSubnetGroupName")(dbSubnetGroupName.asInstanceOf[js.Any])

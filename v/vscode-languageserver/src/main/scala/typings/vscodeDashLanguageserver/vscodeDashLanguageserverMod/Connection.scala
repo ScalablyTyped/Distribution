@@ -39,9 +39,7 @@ import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTyp
 import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.DeclarationLink
 import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Definition
 import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.DefinitionLink
-import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.DocumentSymbolParams
 import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.SignatureHelp
-import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.WorkspaceSymbolParams
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -287,9 +285,9 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] ex
     */
   def onDocumentLinkResolve(
     handler: RequestHandler[
-      typings.vscodeDashLanguageserverDashProtocol.vscodeDashLanguageserverDashProtocolMod.DocumentLink, 
+      typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.DocumentLink, 
       js.UndefOr[
-        typings.vscodeDashLanguageserverDashProtocol.vscodeDashLanguageserverDashProtocolMod.DocumentLink | Null
+        typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.DocumentLink | Null
       ], 
       Unit
     ]
@@ -304,7 +302,7 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] ex
       DocumentLinkParams, 
       js.UndefOr[
         (js.Array[
-          typings.vscodeDashLanguageserverDashProtocol.vscodeDashLanguageserverDashProtocolMod.DocumentLink
+          typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.DocumentLink
         ]) | Null
       ], 
       Unit
@@ -349,10 +347,10 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] ex
     */
   def onDocumentSymbol(
     handler: RequestHandler[
-      DocumentSymbolParams, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DocumentSymbolParams */ _, 
       js.UndefOr[
         (js.Array[
-          typings.vscodeDashLanguageserverDashProtocol.vscodeDashLanguageserverDashProtocolMod.DocumentSymbol | typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.SymbolInformation
+          typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.DocumentSymbol | typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.SymbolInformation
         ]) | Null
       ], 
       Unit
@@ -578,7 +576,7 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] ex
     */
   def onWorkspaceSymbol(
     handler: RequestHandler[
-      WorkspaceSymbolParams, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WorkspaceSymbolParams */ _, 
       js.UndefOr[
         (js.Array[
           typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.SymbolInformation

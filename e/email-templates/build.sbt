@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "email-templates"
-version := "6.0-dt-20191206Z-900c05"
+version := "6.0-dt-20191206Z-fb3392"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "html-to-text" % "v1.4.0-dt-20190322Z-020155",
-  "org.scalablytyped" %%% "node" % "13.1-dt-20200103Z-51871a",
-  "org.scalablytyped" %%% "nodemailer" % "6.4-dt-20191218Z-4f491e",
+  "org.scalablytyped" %%% "node" % "13.1-dt-20200115Z-14f523",
+  "org.scalablytyped" %%% "nodemailer" % "6.4-dt-20191218Z-271e2e",
   "org.scalablytyped" %%% "std" % "3.7-b6d959")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

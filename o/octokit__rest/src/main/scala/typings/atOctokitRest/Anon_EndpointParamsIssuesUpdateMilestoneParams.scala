@@ -17,7 +17,7 @@ trait Anon_EndpointParamsIssuesUpdateMilestoneParams extends js.Object {
   var endpoint_Original: Endpoint = js.native
   def apply(): js.Promise[Response[IssuesUpdateMilestoneResponse]] = js.native
   def apply(
-    params: RequestOptions with (IssuesUpdateMilestoneParams | IssuesUpdateMilestoneParamsDeprecatedNumber)
+    params: RequestOptions with IssuesUpdateMilestoneParamsDeprecatedNumber with IssuesUpdateMilestoneParams
   ): js.Promise[Response[IssuesUpdateMilestoneResponse]] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native

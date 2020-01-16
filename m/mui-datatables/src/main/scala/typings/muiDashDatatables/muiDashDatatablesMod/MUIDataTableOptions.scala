@@ -5,6 +5,7 @@ import typings.muiDashDatatables.Anon_DataDataIndex
 import typings.muiDashDatatables.Anon_DataIndexRowIndex
 import typings.muiDashDatatables.Anon_DataKey
 import typings.muiDashDatatables.Anon_Filename
+import typings.muiDashDatatables.Anon_XAxis
 import typings.muiDashDatatables.muiDashDatatablesStrings.chip
 import typings.muiDashDatatables.muiDashDatatablesStrings.reset
 import typings.react.reactMod.Component
@@ -69,6 +70,7 @@ trait MUIDataTableOptions extends js.Object {
   var filter: js.UndefOr[Boolean] = js.undefined
   var filterType: js.UndefOr[FilterType] = js.undefined
   var fixedHeader: js.UndefOr[Boolean] = js.undefined
+  var fixedHeaderOptions: js.UndefOr[Anon_XAxis] = js.undefined
   var isRowExpandable: js.UndefOr[
     js.Function2[
       /* dataIndex */ Double, 
@@ -179,6 +181,7 @@ object MUIDataTableOptions {
     filter: js.UndefOr[Boolean] = js.undefined,
     filterType: FilterType = null,
     fixedHeader: js.UndefOr[Boolean] = js.undefined,
+    fixedHeaderOptions: Anon_XAxis = null,
     isRowExpandable: (/* dataIndex */ Double, /* expandedRows */ js.UndefOr[MUIDataTableIsRowCheck]) => Boolean = null,
     isRowSelectable: (/* dataIndex */ Double, /* selectedRows */ js.UndefOr[MUIDataTableIsRowCheck]) => Boolean = null,
     onCellClick: (/* colData */ js.Any, /* cellMeta */ Anon_ColIndex) => Unit = null,
@@ -246,6 +249,7 @@ object MUIDataTableOptions {
     if (!js.isUndefined(filter)) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
     if (filterType != null) __obj.updateDynamic("filterType")(filterType.asInstanceOf[js.Any])
     if (!js.isUndefined(fixedHeader)) __obj.updateDynamic("fixedHeader")(fixedHeader.asInstanceOf[js.Any])
+    if (fixedHeaderOptions != null) __obj.updateDynamic("fixedHeaderOptions")(fixedHeaderOptions.asInstanceOf[js.Any])
     if (isRowExpandable != null) __obj.updateDynamic("isRowExpandable")(js.Any.fromFunction2(isRowExpandable))
     if (isRowSelectable != null) __obj.updateDynamic("isRowSelectable")(js.Any.fromFunction2(isRowSelectable))
     if (onCellClick != null) __obj.updateDynamic("onCellClick")(js.Any.fromFunction2(onCellClick))

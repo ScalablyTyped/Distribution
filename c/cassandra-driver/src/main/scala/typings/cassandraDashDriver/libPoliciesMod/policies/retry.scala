@@ -18,6 +18,9 @@ object retry extends js.Object {
   }
   
   @js.native
+  class FallthroughRetryPolicy () extends RetryPolicy
+  
+  @js.native
   class IdempotenceAwareRetryPolicy protected () extends RetryPolicy {
     def this(childPolicy: RetryPolicy) = this()
   }

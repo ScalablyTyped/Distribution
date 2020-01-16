@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-hotkeys
 
-Typings are for version 2.0.0-pre4
+Typings are for version 2.0.0
 
 ## Library description:
 A declarative library for handling hotkeys and focus within a React application

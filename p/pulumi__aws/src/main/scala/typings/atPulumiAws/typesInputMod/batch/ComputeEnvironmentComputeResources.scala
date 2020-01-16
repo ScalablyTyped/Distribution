@@ -9,6 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ComputeEnvironmentComputeResources extends js.Object {
   /**
+    * The allocation strategy to use for the compute resource in case not enough instances of the best fitting instance type can be allocated. Valid items are `BEST_FIT_PROGRESSIVE`, `SPOT_CAPACITY_OPTIMIZED` or `BEST_FIT`. Defaults to `BEST_FIT`. See [AWS docs](https://docs.aws.amazon.com/batch/latest/userguide/allocation-strategies.html) for details.
+    */
+  var allocationStrategy: js.UndefOr[Input[String]] = js.native
+  /**
     * Integer of minimum percentage that a Spot Instance price must be when compared with the On-Demand price for that instance type before instances are launched. For example, if your bid percentage is 20% (`20`), then the Spot price must be below 20% of the current On-Demand price for that EC2 instance. This parameter is required for SPOT compute environments.
     */
   var bidPercentage: js.UndefOr[Input[Double]] = js.native
@@ -76,6 +80,7 @@ object ComputeEnvironmentComputeResources {
     securityGroupIds: Input[js.Array[Input[String]]],
     subnets: Input[js.Array[Input[String]]],
     `type`: Input[String],
+    allocationStrategy: Input[String] = null,
     bidPercentage: Input[Double] = null,
     desiredVcpus: Input[Double] = null,
     ec2KeyPair: Input[String] = null,
@@ -86,6 +91,7 @@ object ComputeEnvironmentComputeResources {
   ): ComputeEnvironmentComputeResources = {
     val __obj = js.Dynamic.literal(instanceRole = instanceRole.asInstanceOf[js.Any], instanceTypes = instanceTypes.asInstanceOf[js.Any], maxVcpus = maxVcpus.asInstanceOf[js.Any], minVcpus = minVcpus.asInstanceOf[js.Any], securityGroupIds = securityGroupIds.asInstanceOf[js.Any], subnets = subnets.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (allocationStrategy != null) __obj.updateDynamic("allocationStrategy")(allocationStrategy.asInstanceOf[js.Any])
     if (bidPercentage != null) __obj.updateDynamic("bidPercentage")(bidPercentage.asInstanceOf[js.Any])
     if (desiredVcpus != null) __obj.updateDynamic("desiredVcpus")(desiredVcpus.asInstanceOf[js.Any])
     if (ec2KeyPair != null) __obj.updateDynamic("ec2KeyPair")(ec2KeyPair.asInstanceOf[js.Any])

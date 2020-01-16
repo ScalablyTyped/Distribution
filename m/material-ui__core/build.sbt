@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "material-ui__core"
-version := "3.9.3-078ffb"
+version := "3.9.3-f4c401"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "cheerio" % "v0.22.0-dt-20191203Z-416fd2",
+  "org.scalablytyped" %%% "cheerio" % "v0.22.0-dt-20191203Z-7bc3ab",
   "org.scalablytyped" %%% "csstype" % "2.6.6-fd5644",
-  "org.scalablytyped" %%% "enzyme" % "3.10-dt-20191207Z-6efc70",
+  "org.scalablytyped" %%% "enzyme" % "3.10-dt-20191207Z-6a9d9d",
   "org.scalablytyped" %%% "jss" % "10.0.3-ca3ac9",
-  "org.scalablytyped" %%% "node" % "13.1-dt-20200103Z-51871a",
+  "org.scalablytyped" %%% "node" % "13.1-dt-20200115Z-14f523",
   "org.scalablytyped" %%% "popper_dot_js" % "1.16.0-8923e4",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-b24434",
   "org.scalablytyped" %%% "react" % "16.9-dt-20191220Z-22d23f",

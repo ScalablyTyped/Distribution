@@ -1,7 +1,7 @@
 
 # Scala.js typings for ws
 
-Typings are for version 6.0
+Typings are for version 7.2
 
 ## Library description:
 Simple to use, blazing fast and thoroughly tested websocket client and server for Node.js

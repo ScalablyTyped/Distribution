@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@firebase/component" : "0.1.1"
+      "@firebase/component" : "0.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@firebase/component" : "0.1.1"
+      "@firebase/component" : "0.1.2"
     }
   ],
   "compile-devDependencies" : [

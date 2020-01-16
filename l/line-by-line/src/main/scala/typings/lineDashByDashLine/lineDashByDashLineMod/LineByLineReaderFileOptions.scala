@@ -2,6 +2,11 @@ package typings.lineDashByDashLine.lineDashByDashLineMod
 
 import typings.lineDashByDashLine.lineDashByDashLineStrings.ascii
 import typings.lineDashByDashLine.lineDashByDashLineStrings.base64
+import typings.lineDashByDashLine.lineDashByDashLineStrings.binary
+import typings.lineDashByDashLine.lineDashByDashLineStrings.hex
+import typings.lineDashByDashLine.lineDashByDashLineStrings.latin1
+import typings.lineDashByDashLine.lineDashByDashLineStrings.ucs2
+import typings.lineDashByDashLine.lineDashByDashLineStrings.utf16le
 import typings.lineDashByDashLine.lineDashByDashLineStrings.utf8
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,7 +22,7 @@ trait LineByLineReaderFileOptions extends LineByLineReaderOptions {
 object LineByLineReaderFileOptions {
   @scala.inline
   def apply(
-    encoding: ascii | base64 | utf8 = null,
+    encoding: ascii | utf8 | utf16le | ucs2 | base64 | latin1 | binary | hex = null,
     end: Int | Double = null,
     skipEmptyLines: js.UndefOr[Boolean] = js.undefined,
     start: Int | Double = null

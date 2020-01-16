@@ -15,7 +15,7 @@ trait OnItemDragObjectResize extends OnItemDragObjectBase {
 
 object OnItemDragObjectResize {
   @scala.inline
-  def apply(eventType: resize, itemId: Double, time: Double, edge: left | right = null): OnItemDragObjectResize = {
+  def apply(eventType: resize, itemId: Id, time: Double, edge: left | right = null): OnItemDragObjectResize = {
     val __obj = js.Dynamic.literal(eventType = eventType.asInstanceOf[js.Any], itemId = itemId.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
     if (edge != null) __obj.updateDynamic("edge")(edge.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnItemDragObjectResize]

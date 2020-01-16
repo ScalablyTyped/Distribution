@@ -2,10 +2,10 @@ package typings.cypress.typesBluebirdMod
 
 import typings.cypress.Anon_Cancellation
 import typings.cypress.TypeofClassBluebird
-import typings.cypress.typesLodashMod._Global_.Map
 import typings.std.Error
 import typings.std.Iterable
 import typings.std.IterableIterator
+import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

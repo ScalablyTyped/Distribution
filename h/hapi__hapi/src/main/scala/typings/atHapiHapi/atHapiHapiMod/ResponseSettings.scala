@@ -12,17 +12,17 @@ trait ResponseSettings extends js.Object {
     */
   val passThrough: Boolean
   /**
-    * Default value: null (use route defaults).
+    * @default null (use route defaults).
     * Override the route json options used when source value requires stringification.
     */
   val stringify: StringifyArguments
   /**
-    * Default value: null (use route defaults).
+    * @default null (use route defaults).
     * If set, overrides the route cache with an expiration value in milliseconds.
     */
   val ttl: Double
   /**
-    * Default value: false.
+    * @default false.
     * If true, a suffix will be automatically added to the 'ETag' header at transmission time (separated by a '-' character) when the HTTP 'Vary' header is present.
     */
   var varyEtag: Boolean

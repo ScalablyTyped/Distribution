@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "countries-and-timezones"
-version := "2.0-dt-20191022Z-19352b"
+version := "2.0-dt-20200107Z-504284"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

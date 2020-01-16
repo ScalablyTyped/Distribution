@@ -8,6 +8,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object CodeActionKind extends js.Object {
   /**
+    * Empty kind.
+    */
+  val Empty: CodeActionKind = js.native
+  /**
     * Base kind for quickfix actions: 'quickfix'
     */
   val QuickFix: CodeActionKind = js.native
@@ -57,6 +61,15 @@ object CodeActionKind extends js.Object {
     * Source code actions apply to the entire file.
     */
   val Source: CodeActionKind = js.native
+  /**
+    * Base kind for auto-fix source actions: `source.fixAll`.
+    *
+    * Fix all actions automatically fix errors that have a clear fix that do not require user input.
+    * They should not suppress errors or perform unsafe fixes such as generating new types or classes.
+    *
+    * @since 3.15.0
+    */
+  val SourceFixAll: CodeActionKind = js.native
   /**
     * Base kind for an organize imports source action: `source.organizeImports`
     */

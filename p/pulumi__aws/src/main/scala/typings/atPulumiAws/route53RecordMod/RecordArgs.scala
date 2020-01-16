@@ -45,7 +45,7 @@ trait RecordArgs extends js.Object {
   /**
     * DNS domain name for a CloudFront distribution, S3 bucket, ELB, or another resource record set in this hosted zone.
     */
-  val name: js.UndefOr[Input[String]] = js.native
+  val name: Input[String] = js.native
   /**
     * A string list of records. To specify a single record value longer than 255 characters such as a TXT record for DKIM, add `\"\"` inside the configuration string (e.g. `"first255characters\"\"morecharacters"`).
     */
@@ -75,6 +75,7 @@ trait RecordArgs extends js.Object {
 object RecordArgs {
   @scala.inline
   def apply(
+    name: Input[String],
     `type`: Input[String | RecordType],
     zoneId: Input[String],
     aliases: Input[js.Array[Input[RecordAlias]]] = null,
@@ -84,13 +85,12 @@ object RecordArgs {
     healthCheckId: Input[String] = null,
     latencyRoutingPolicies: Input[js.Array[Input[RecordLatencyRoutingPolicy]]] = null,
     multivalueAnswerRoutingPolicy: Input[Boolean] = null,
-    name: Input[String] = null,
     records: Input[js.Array[Input[String]]] = null,
     setIdentifier: Input[String] = null,
     ttl: Input[Double] = null,
     weightedRoutingPolicies: Input[js.Array[Input[RecordWeightedRoutingPolicy]]] = null
   ): RecordArgs = {
-    val __obj = js.Dynamic.literal(zoneId = zoneId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], zoneId = zoneId.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
     if (allowOverwrite != null) __obj.updateDynamic("allowOverwrite")(allowOverwrite.asInstanceOf[js.Any])
@@ -99,7 +99,6 @@ object RecordArgs {
     if (healthCheckId != null) __obj.updateDynamic("healthCheckId")(healthCheckId.asInstanceOf[js.Any])
     if (latencyRoutingPolicies != null) __obj.updateDynamic("latencyRoutingPolicies")(latencyRoutingPolicies.asInstanceOf[js.Any])
     if (multivalueAnswerRoutingPolicy != null) __obj.updateDynamic("multivalueAnswerRoutingPolicy")(multivalueAnswerRoutingPolicy.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (records != null) __obj.updateDynamic("records")(records.asInstanceOf[js.Any])
     if (setIdentifier != null) __obj.updateDynamic("setIdentifier")(setIdentifier.asInstanceOf[js.Any])
     if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])

@@ -111,7 +111,7 @@ trait Anon_CreateForCommitComment extends js.Object {
     */
   def createForIssue(): js.Promise[Response[ReactionsCreateForIssueResponse]] = js.native
   def createForIssue(
-    params: RequestOptions with (ReactionsCreateForIssueParams | ReactionsCreateForIssueParamsDeprecatedNumber)
+    params: RequestOptions with ReactionsCreateForIssueParamsDeprecatedNumber with ReactionsCreateForIssueParams
   ): js.Promise[Response[ReactionsCreateForIssueResponse]] = js.native
   /**
     * Create a reaction to an [issue comment](https://developer.github.com/v3/issues/comments/). A response with a `Status: 200 OK` means that you already added the reaction type to this issue comment.
@@ -148,7 +148,7 @@ trait Anon_CreateForCommitComment extends js.Object {
     */
   def listForIssue(): js.Promise[Response[ReactionsListForIssueResponse]] = js.native
   def listForIssue(
-    params: RequestOptions with (ReactionsListForIssueParams | ReactionsListForIssueParamsDeprecatedNumber)
+    params: RequestOptions with ReactionsListForIssueParamsDeprecatedNumber with ReactionsListForIssueParams
   ): js.Promise[Response[ReactionsListForIssueResponse]] = js.native
   /**
     * List the reactions to an [issue comment](https://developer.github.com/v3/issues/comments/).

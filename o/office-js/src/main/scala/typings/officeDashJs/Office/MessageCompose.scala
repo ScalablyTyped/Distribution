@@ -216,6 +216,10 @@ trait MessageCompose extends Item {
     *
     * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
     *
+    * **Important**: In recent builds of Outlook on Windows, a bug was introduced that incorrectly appends an `Authorization: Bearer` header to
+    * this action (whether using this API or the Outlook UI). To work around this issue, you can try using the `addFileAttachmentFromBase64` API
+    * introduced with requirement set 1.8.
+    *
     * [Api set: Mailbox 1.1]
     *
     * @remarks
@@ -599,6 +603,8 @@ trait MessageCompose extends Item {
   /**
     * Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
     *
+    * **Note**: This method is not supported in Outlook on Mac, iOS, or Android.
+    *
     * [Api set: Mailbox 1.8]
     *
     * @remarks
@@ -614,6 +620,8 @@ trait MessageCompose extends Item {
   def getSharedPropertiesAsync(callback: js.Function1[/* asyncResult */ AsyncResult[SharedProperties], Unit]): Unit = js.native
   /**
     * Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
+    *
+    * **Note**: This method is not supported in Outlook on Mac, iOS, or Android.
     *
     * [Api set: Mailbox 1.8]
     *

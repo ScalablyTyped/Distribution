@@ -32,6 +32,13 @@ trait NestedTickOptions extends js.Object {
   var mirror: js.UndefOr[Boolean] = js.undefined
   var padding: js.UndefOr[Double] = js.undefined
   var reverse: js.UndefOr[Boolean] = js.undefined
+  /**
+    * The number of ticks to examine when deciding how many labels will fit.
+    * Setting a smaller value will be faster, but may be less accurate
+    * when there is large variability in label length.
+    * Deault: `ticks.length`
+    */
+  var sampleSize: js.UndefOr[Double] = js.undefined
   var showLabelBackdrop: js.UndefOr[Boolean] = js.undefined
   var source: js.UndefOr[auto | data | labels] = js.undefined
   var stepSize: js.UndefOr[Double] = js.undefined
@@ -64,6 +71,7 @@ object NestedTickOptions {
     mirror: js.UndefOr[Boolean] = js.undefined,
     padding: Int | Double = null,
     reverse: js.UndefOr[Boolean] = js.undefined,
+    sampleSize: Int | Double = null,
     showLabelBackdrop: js.UndefOr[Boolean] = js.undefined,
     source: auto | data | labels = null,
     stepSize: Int | Double = null,
@@ -93,6 +101,7 @@ object NestedTickOptions {
     if (!js.isUndefined(mirror)) __obj.updateDynamic("mirror")(mirror.asInstanceOf[js.Any])
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
+    if (sampleSize != null) __obj.updateDynamic("sampleSize")(sampleSize.asInstanceOf[js.Any])
     if (!js.isUndefined(showLabelBackdrop)) __obj.updateDynamic("showLabelBackdrop")(showLabelBackdrop.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (stepSize != null) __obj.updateDynamic("stepSize")(stepSize.asInstanceOf[js.Any])

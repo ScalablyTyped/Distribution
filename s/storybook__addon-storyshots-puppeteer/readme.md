@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__addon-storyshots-puppeteer
 
-Typings are for version 5.1
+Typings are for version 5.3.5
 
 ## Library description:
 Image snapshots addition to StoryShots based on puppeteer
@@ -24,7 +24,7 @@ Image snapshots addition to StoryShots based on puppeteer
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -111,8 +111,8 @@ object Matrix4 extends js.Object {
   def fromUniformScale(scale: Double, result: Matrix4): Matrix4 = js.native
   def getColumn(matrix: Matrix4, index: Double, result: Cartesian4): Cartesian4 = js.native
   def getElementIndex(row: Double, column: Double): Double = js.native
+  def getMatrix3(matrix: Matrix4, result: Matrix3): Matrix3 = js.native
   def getMaximumScale(matrix: Matrix4): Double = js.native
-  def getRotation(matrix: Matrix4, result: Matrix3): Matrix3 = js.native
   def getRow(matrix: Matrix4, index: Double, result: Cartesian4): Cartesian4 = js.native
   def getScale(matrix: Matrix4, result: Cartesian3): Cartesian3 = js.native
   def getTranslation(matrix: Matrix4, result: Cartesian3): Cartesian3 = js.native

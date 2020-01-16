@@ -1,7 +1,7 @@
 
 # Scala.js typings for cli-color
 
-Typings are for version 0.3.2
+Typings are for version 2.0
 
 ## Library description:
 Colors, formatting and other tools for the console

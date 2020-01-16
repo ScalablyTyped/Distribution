@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-select"
-version := "3.0-dt-20191126Z-ead646"
+version := "3.0-dt-20200113Z-65a71b"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

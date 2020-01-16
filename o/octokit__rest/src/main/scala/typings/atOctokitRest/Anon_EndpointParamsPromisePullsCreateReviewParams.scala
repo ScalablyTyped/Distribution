@@ -16,7 +16,7 @@ trait Anon_EndpointParamsPromisePullsCreateReviewParams extends js.Object {
   @JSName("endpoint")
   var endpoint_Original: Endpoint = js.native
   def apply(): js.Promise[Response[PullsCreateReviewResponse]] = js.native
-  def apply(params: RequestOptions with (PullsCreateReviewParams | PullsCreateReviewParamsDeprecatedNumber)): js.Promise[Response[PullsCreateReviewResponse]] = js.native
+  def apply(params: RequestOptions with PullsCreateReviewParamsDeprecatedNumber with PullsCreateReviewParams): js.Promise[Response[PullsCreateReviewResponse]] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native
   def endpoint(Route: String, EndpointOptions: EndpointOptions): RequestOptions = js.native

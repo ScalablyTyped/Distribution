@@ -1,7 +1,7 @@
 
 # Scala.js typings for tree-kill
 
-Typings are for version 1.2.1
+Typings are for version 1.2.2
 
 ## Library description:
 kill trees of processes

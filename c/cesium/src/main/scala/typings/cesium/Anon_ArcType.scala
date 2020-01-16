@@ -32,13 +32,12 @@ trait Anon_ArcType extends js.Object {
   var shadows: js.UndefOr[Property | ShadowMode] = js.undefined
   var show: js.UndefOr[Property | Boolean] = js.undefined
   var stRotation: js.UndefOr[Property] = js.undefined
-  var zIndex: ConstantProperty | Double
+  var zIndex: js.UndefOr[ConstantProperty | Double] = js.undefined
 }
 
 object Anon_ArcType {
   @scala.inline
   def apply(
-    zIndex: ConstantProperty | Double,
     arcType: Property | ArcType = null,
     classificationType: Property | ClassificationType = null,
     closeBottom: js.UndefOr[Boolean] = js.undefined,
@@ -58,9 +57,10 @@ object Anon_ArcType {
     perPositionHeight: Property = null,
     shadows: Property | ShadowMode = null,
     show: Property | Boolean = null,
-    stRotation: Property = null
+    stRotation: Property = null,
+    zIndex: ConstantProperty | Double = null
   ): Anon_ArcType = {
-    val __obj = js.Dynamic.literal(zIndex = zIndex.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (arcType != null) __obj.updateDynamic("arcType")(arcType.asInstanceOf[js.Any])
     if (classificationType != null) __obj.updateDynamic("classificationType")(classificationType.asInstanceOf[js.Any])
     if (!js.isUndefined(closeBottom)) __obj.updateDynamic("closeBottom")(closeBottom.asInstanceOf[js.Any])
@@ -81,6 +81,7 @@ object Anon_ArcType {
     if (shadows != null) __obj.updateDynamic("shadows")(shadows.asInstanceOf[js.Any])
     if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     if (stRotation != null) __obj.updateDynamic("stRotation")(stRotation.asInstanceOf[js.Any])
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ArcType]
   }
 }

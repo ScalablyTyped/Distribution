@@ -1,7 +1,7 @@
 
 # Scala.js typings for bull
 
-Typings are for version 3.10
+Typings are for version 3.12
 
 ## Library description:
 Job manager

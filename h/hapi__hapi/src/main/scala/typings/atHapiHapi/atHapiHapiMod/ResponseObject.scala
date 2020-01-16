@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ResponseObject extends Podium {
   /**
-    * Default value: {}.
+    * @default {}.
     * Application-specific state. Provides a safe place to store application data without potential conflicts with the framework. Should not be used by plugins which should use plugins[name].
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-responseapp)
     */
@@ -37,14 +37,14 @@ trait ResponseObject extends Podium {
     */
   val events: ResponseEvents = js.native
   /**
-    * Default value: {}.
+    * @default {}.
     * An object containing the response headers where each key is a header field name and the value is the string header value or array of string.
     * Note that this is an incomplete list of headers to be included with the response. Additional headers will be added once the response is prepared for transmission.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-responseheaders)
     */
   val headers: Dictionary[String | js.Array[String]] = js.native
   /**
-    * Default value: {}.
+    * @default {}.
     * Plugin-specific state. Provides a place to store and pass request-level plugin data. plugins is an object where each key is a plugin name and the value is the state.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-responseplugins)
     */
@@ -60,7 +60,7 @@ trait ResponseObject extends Podium {
     */
   val source: ReturnValue = js.native
   /**
-    * Default value: 200.
+    * @default 200.
     * The HTTP response status code.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-responsestatuscode)
     */

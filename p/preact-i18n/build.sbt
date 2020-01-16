@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "preact-i18n"
-version := "1.2-dt-20190313Z-ddd145"
+version := "1.2-dt-20190313Z-b588e5"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "preact" % "10.1.1-0df6c0",
+  "org.scalablytyped" %%% "preact" % "10.2.1-32235a",
   "org.scalablytyped" %%% "std" % "3.7-b6d959")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

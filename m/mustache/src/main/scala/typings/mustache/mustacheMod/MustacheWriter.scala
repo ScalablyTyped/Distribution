@@ -25,7 +25,7 @@ trait MustacheWriter extends js.Object {
     * The tags to use.
     */
   def parse(template: String): js.Any = js.native
-  def parse(template: String, tags: js.Array[String]): js.Any = js.native
+  def parse(template: String, tags: OpeningAndClosingTags): js.Any = js.native
   /**
     * High-level method that is used to render the given `template` with the given `view`.
     *
@@ -45,10 +45,12 @@ trait MustacheWriter extends js.Object {
     * @param tags
     * The tags to use.
     */
-  def render(template: String, view: js.Any, partials: js.Any): String = js.native
-  def render(template: String, view: js.Any, partials: js.Any, tags: js.Array[String]): String = js.native
-  def render(template: String, view: MustacheContext, partials: js.Any): String = js.native
-  def render(template: String, view: MustacheContext, partials: js.Any, tags: js.Array[String]): String = js.native
+  def render(template: String, view: js.Any): String = js.native
+  def render(template: String, view: js.Any, partials: PartialsOrLookupFn): String = js.native
+  def render(template: String, view: js.Any, partials: PartialsOrLookupFn, tags: OpeningAndClosingTags): String = js.native
+  def render(template: String, view: MustacheContext): String = js.native
+  def render(template: String, view: MustacheContext, partials: PartialsOrLookupFn): String = js.native
+  def render(template: String, view: MustacheContext, partials: PartialsOrLookupFn, tags: OpeningAndClosingTags): String = js.native
   /**
     * Low-level method that renders the given array of `tokens` using the given `context` and `partials`.
     *
@@ -66,6 +68,13 @@ trait MustacheWriter extends js.Object {
     *
     * If the template doesn't use higher-order sections, this argument may be omitted.
     */
-  def renderTokens(tokens: js.Array[String], context: MustacheContext, partials: js.Any, originalTemplate: js.Any): String = js.native
+  def renderTokens(tokens: js.Array[String], context: MustacheContext): String = js.native
+  def renderTokens(tokens: js.Array[String], context: MustacheContext, partials: PartialsOrLookupFn): String = js.native
+  def renderTokens(
+    tokens: js.Array[String],
+    context: MustacheContext,
+    partials: PartialsOrLookupFn,
+    originalTemplate: String
+  ): String = js.native
 }
 

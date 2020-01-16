@@ -30,7 +30,7 @@ class Cluster protected () extends CustomResource {
     */
   val arn: Output[String] = js.native
   /**
-    * List of short names or full Amazon Resource Names (ARNs) of one or more capacity providers to associate with the cluster. Valid values also include `FARGATE` and `FARGATE_SPOT`.
+    * List of short names of one or more capacity providers to associate with the cluster. Valid values also include `FARGATE` and `FARGATE_SPOT`.
     */
   val capacityProviders: Output[js.UndefOr[js.Array[String]]] = js.native
   /**

@@ -1,11 +1,14 @@
 package typings.parse.parseMod._Global_.Parse
 
+import typings.parse.parseMod._Global_.Parse.Object._Encode
 import typings.parse.parseMod._Global_.Parse.Schema._TYPE
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Pointer extends _TYPE {
+trait Pointer
+  extends _Encode[js.Any]
+     with _TYPE {
   var __type: String
   var className: String
   var objectId: String

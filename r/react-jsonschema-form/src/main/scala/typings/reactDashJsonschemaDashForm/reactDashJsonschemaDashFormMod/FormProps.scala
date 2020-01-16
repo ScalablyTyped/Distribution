@@ -3,6 +3,7 @@ package typings.reactDashJsonschemaDashForm.reactDashJsonschemaDashFormMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.jsonDashSchema.jsonDashSchemaMod.JSONSchema6
 import typings.react.reactMod.StatelessComponent
+import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,6 +18,7 @@ trait FormProps[T] extends js.Object {
   var additionalMetaSchemas: js.UndefOr[js.Array[js.Object]] = js.undefined
   var autocomplete: js.UndefOr[String] = js.undefined
   var className: js.UndefOr[String] = js.undefined
+  var customFormats: js.UndefOr[StringDictionary[String | RegExp | (js.Function1[/* data */ String, Boolean])]] = js.undefined
   var disabled: js.UndefOr[Boolean] = js.undefined
   var enctype: js.UndefOr[String] = js.undefined
   var fields: js.UndefOr[StringDictionary[Field]] = js.undefined
@@ -59,6 +61,7 @@ object FormProps {
     additionalMetaSchemas: js.Array[js.Object] = null,
     autocomplete: String = null,
     className: String = null,
+    customFormats: StringDictionary[String | RegExp | (js.Function1[/* data */ String, Boolean])] = null,
     disabled: js.UndefOr[Boolean] = js.undefined,
     enctype: String = null,
     fields: StringDictionary[Field] = null,
@@ -93,6 +96,7 @@ object FormProps {
     if (additionalMetaSchemas != null) __obj.updateDynamic("additionalMetaSchemas")(additionalMetaSchemas.asInstanceOf[js.Any])
     if (autocomplete != null) __obj.updateDynamic("autocomplete")(autocomplete.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (customFormats != null) __obj.updateDynamic("customFormats")(customFormats.asInstanceOf[js.Any])
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
     if (enctype != null) __obj.updateDynamic("enctype")(enctype.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])

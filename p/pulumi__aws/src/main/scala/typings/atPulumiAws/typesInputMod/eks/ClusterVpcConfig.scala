@@ -20,6 +20,10 @@ trait ClusterVpcConfig extends js.Object {
     */
   var endpointPublicAccess: js.UndefOr[Input[Boolean]] = js.native
   /**
+    * <elided>
+    */
+  var publicAccessCidrs: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  /**
     * List of security group IDs for the cross-account elastic network interfaces that Amazon EKS creates to use to allow communication between your worker nodes and the Kubernetes control plane.
     */
   var securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
@@ -40,6 +44,7 @@ object ClusterVpcConfig {
     clusterSecurityGroupId: Input[String] = null,
     endpointPrivateAccess: Input[Boolean] = null,
     endpointPublicAccess: Input[Boolean] = null,
+    publicAccessCidrs: Input[js.Array[Input[String]]] = null,
     securityGroupIds: Input[js.Array[Input[String]]] = null,
     vpcId: Input[String] = null
   ): ClusterVpcConfig = {
@@ -47,6 +52,7 @@ object ClusterVpcConfig {
     if (clusterSecurityGroupId != null) __obj.updateDynamic("clusterSecurityGroupId")(clusterSecurityGroupId.asInstanceOf[js.Any])
     if (endpointPrivateAccess != null) __obj.updateDynamic("endpointPrivateAccess")(endpointPrivateAccess.asInstanceOf[js.Any])
     if (endpointPublicAccess != null) __obj.updateDynamic("endpointPublicAccess")(endpointPublicAccess.asInstanceOf[js.Any])
+    if (publicAccessCidrs != null) __obj.updateDynamic("publicAccessCidrs")(publicAccessCidrs.asInstanceOf[js.Any])
     if (securityGroupIds != null) __obj.updateDynamic("securityGroupIds")(securityGroupIds.asInstanceOf[js.Any])
     if (vpcId != null) __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterVpcConfig]

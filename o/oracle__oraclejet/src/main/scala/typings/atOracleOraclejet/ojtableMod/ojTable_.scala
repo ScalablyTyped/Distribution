@@ -574,7 +574,7 @@ trait ojTable_[K, D] extends baseComponent[ojTableSettableProperties[K, D]] {
   def setProperty_selection(
     property: selection,
     value: js.Array[
-      (ColumnSelectionStart[K] | RowSelectionStart[K]) with (ColumnSelectionEnd[K] | RowSelectionEnd[K])
+      RowSelectionStart[K] with RowSelectionEnd[K] with ColumnSelectionStart[K] with ColumnSelectionEnd[K]
     ]
   ): Unit = js.native
   @JSName("setProperty")

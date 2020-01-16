@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 trait Location extends js.Object {
   var range: Range
-  var uri: String
+  var uri: DocumentUri
 }
 
 @JSImport("vscode-languageserver-types", "Location")
@@ -17,7 +17,7 @@ object Location extends js.Object {
     * @param uri The location's uri.
     * @param range The location's range.
     */
-  def create(uri: String, range: Range): Location = js.native
+  def create(uri: DocumentUri, range: Range): Location = js.native
   /**
     * Checks whether the given literal conforms to the [Location](#Location) interface.
     */

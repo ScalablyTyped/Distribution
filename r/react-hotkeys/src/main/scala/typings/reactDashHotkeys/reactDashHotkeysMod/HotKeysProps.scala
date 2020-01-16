@@ -6,8 +6,6 @@ import typings.react.reactMod.AnimationEvent
 import typings.react.reactMod.Booleanish
 import typings.react.reactMod.CSSProperties
 import typings.react.reactMod.ClipboardEvent
-import typings.react.reactMod.ComponentClass
-import typings.react.reactMod.ComponentState
 import typings.react.reactMod.CompositionEvent
 import typings.react.reactMod.DragEvent
 import typings.react.reactMod.FormEvent
@@ -67,7 +65,7 @@ import typings.react.reactStrings.url
 import typings.react.reactStrings.vertical
 import typings.react.reactStrings.yes
 import typings.std.Event
-import typings.std.HTMLInputElement
+import typings.std.HTMLElement
 import typings.std.KeyboardEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -78,8 +76,8 @@ trait HotKeysProps extends HotKeysEnabledProps {
     * The React component that should be used in the DOM to wrap the FocusTrap's
     * children and have the internal key listeners bound to
     */
-  var component: js.UndefOr[(ComponentClass[js.Object, ComponentState]) | String] = js.undefined
-  var innerRef: js.UndefOr[RefObject[HTMLInputElement]] = js.undefined
+  var component: js.UndefOr[ReactComponent] = js.undefined
+  var innerRef: js.UndefOr[RefObject[HTMLElement]] = js.undefined
 }
 
 object HotKeysProps {
@@ -142,7 +140,7 @@ object HotKeysProps {
     children: ReactNode = null,
     className: String = null,
     color: String = null,
-    component: (ComponentClass[js.Object, ComponentState]) | String = null,
+    component: ReactComponent = null,
     contentEditable: Booleanish | inherit = null,
     contextMenu: String = null,
     dangerouslySetInnerHTML: Anon_Html = null,
@@ -155,7 +153,7 @@ object HotKeysProps {
     hidden: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     inlist: js.Any = null,
-    innerRef: RefObject[HTMLInputElement] = null,
+    innerRef: RefObject[HTMLElement] = null,
     inputMode: none | text | tel | url | email | numeric | decimal | search = null,
     is: String = null,
     itemID: String = null,
@@ -251,6 +249,7 @@ object HotKeysProps {
     resource: String = null,
     results: Int | Double = null,
     role: String = null,
+    root: js.UndefOr[Boolean] = js.undefined,
     security: String = null,
     slot: String = null,
     spellCheck: js.UndefOr[Boolean] = js.undefined,
@@ -431,6 +430,7 @@ object HotKeysProps {
     if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     if (security != null) __obj.updateDynamic("security")(security.asInstanceOf[js.Any])
     if (slot != null) __obj.updateDynamic("slot")(slot.asInstanceOf[js.Any])
     if (!js.isUndefined(spellCheck)) __obj.updateDynamic("spellCheck")(spellCheck.asInstanceOf[js.Any])

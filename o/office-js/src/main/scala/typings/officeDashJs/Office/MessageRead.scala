@@ -52,6 +52,8 @@ trait MessageRead extends Item {
   /**
     * Gets an object that provides methods for managing the item's categories.
     *
+    * **Important**: In Outlook on the web, you can't use the API to manage categories on a message in Read mode.
+    *
     * [Api set: Mailbox 1.8]
     *
     * @remarks
@@ -730,6 +732,8 @@ trait MessageRead extends Item {
   /**
     * Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
     *
+    * **Note**: This method is not supported in Outlook on Mac, iOS, or Android.
+    *
     * [Api set: Mailbox 1.8]
     *
     * @remarks
@@ -745,6 +749,8 @@ trait MessageRead extends Item {
   def getSharedPropertiesAsync(callback: js.Function1[/* asyncResult */ AsyncResult[SharedProperties], Unit]): Unit = js.native
   /**
     * Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
+    *
+    * **Note**: This method is not supported in Outlook on Mac, iOS, or Android.
     *
     * [Api set: Mailbox 1.8]
     *

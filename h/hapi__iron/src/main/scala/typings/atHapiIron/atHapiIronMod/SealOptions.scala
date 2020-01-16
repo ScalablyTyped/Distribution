@@ -6,23 +6,23 @@ import scala.scalajs.js.annotation._
 
 trait SealOptions extends js.Object {
   /**
-    * defines the options used by the encryption process.
+    Encryption step options.
     */
   var encryption: SealOptionsSub
   /**
-    * defines the options used by the HMAC integrity verification process.
+    Integrity step options.
     */
   var integrity: SealOptionsSub
   /**
-    * local clock time offset, expressed in number of milliseconds (positive or negative). Defaults to 0.
+    Local clock time offset, expressed in number of milliseconds (positive or negative). Defaults to 0.
     */
   var localtimeOffsetMsec: Double
   /**
-    * number of seconds of permitted clock skew for incoming expirations. Defaults to 60 seconds.
+    Number of seconds of permitted clock skew for incoming expirations. Defaults to 60 seconds.
     */
   var timestampSkewSec: Double
   /**
-    * sealed object lifetime in milliseconds where 0 means forever. Defaults to 0.
+    Sealed object lifetime in milliseconds where 0 means forever. Defaults to 0.
     */
   var ttl: Double
 }

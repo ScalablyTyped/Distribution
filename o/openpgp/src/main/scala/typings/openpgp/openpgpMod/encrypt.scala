@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object encrypt extends js.Object {
   def apply(
-    options: (EncryptOptions with (Anon_Armor | Anon_ArmorDetached | Anon_ArmorDetachedFalse | Anon_ArmorDetachedFalseTrue)) | EncryptOptions
+    options: (EncryptOptions with Anon_Armor with Anon_ArmorDetached with Anon_ArmorDetachedFalse with Anon_ArmorDetachedFalseTrue) | EncryptOptions
   ): js.Promise[EncryptResult with Anon_Data] = js.native
 }
 

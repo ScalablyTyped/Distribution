@@ -41,6 +41,7 @@ import scala.scalajs.js.annotation._
 trait Dropzone extends js.Object {
   var defaultOptions: DropzoneOptions = js.native
   var files: js.Array[DropzoneFile] = js.native
+  var options: DropzoneOptions = js.native
   def accept(file: DropzoneFile, done: js.Function1[/* error */ js.UndefOr[String | Error], Unit]): Unit = js.native
   def addFile(file: DropzoneFile): Unit = js.native
   def cancelUpload(file: DropzoneFile): Unit = js.native

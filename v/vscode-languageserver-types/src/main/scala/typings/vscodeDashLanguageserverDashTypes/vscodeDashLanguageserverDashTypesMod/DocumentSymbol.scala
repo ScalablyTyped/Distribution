@@ -4,40 +4,39 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("vscode-languageserver-types", "DocumentSymbol")
-@js.native
-class DocumentSymbol () extends js.Object {
+trait DocumentSymbol extends js.Object {
   /**
     * Children of this symbol, e.g. properties of a class.
     */
-  var children: js.UndefOr[js.Array[DocumentSymbol]] = js.native
+  var children: js.UndefOr[js.Array[DocumentSymbol]] = js.undefined
   /**
     * Indicates if this symbol is deprecated.
     */
-  var deprecated: js.UndefOr[Boolean] = js.native
+  var deprecated: js.UndefOr[Boolean] = js.undefined
   /**
     * More detail for this symbol, e.g the signature of a function.
     */
-  var detail: js.UndefOr[String] = js.native
+  var detail: js.UndefOr[String] = js.undefined
   /**
     * The kind of this symbol.
     */
-  var kind: SymbolKind = js.native
+  var kind: SymbolKind
   /**
-    * The name of this symbol.
+    * The name of this symbol. Will be displayed in the user interface and therefore must not be
+    * an empty string or a string only consisting of white spaces.
     */
-  var name: String = js.native
+  var name: String
   /**
     * The range enclosing this symbol not including leading/trailing whitespace but everything else
     * like comments. This information is typically used to determine if the the clients cursor is
     * inside the symbol to reveal in the symbol in the UI.
     */
-  var range: Range = js.native
+  var range: Range
   /**
     * The range that should be selected and revealed when this symbol is being picked, e.g the name of a function.
     * Must be contained by the the `range`.
     */
-  var selectionRange: Range = js.native
+  var selectionRange: Range
 }
 
 @JSImport("vscode-languageserver-types", "DocumentSymbol")

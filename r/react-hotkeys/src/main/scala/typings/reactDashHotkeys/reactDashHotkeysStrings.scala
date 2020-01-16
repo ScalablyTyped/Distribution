@@ -10,6 +10,9 @@ object reactDashHotkeysStrings {
   sealed trait ApplicationKeyMap extends js.Object
   
   @js.native
+  sealed trait KeyCombination extends js.Object
+  
+  @js.native
   sealed trait KeyMap extends js.Object
   
   @js.native
@@ -23,6 +26,8 @@ object reactDashHotkeysStrings {
   
   @scala.inline
   def ApplicationKeyMap: ApplicationKeyMap = "ApplicationKeyMap".asInstanceOf[ApplicationKeyMap]
+  @scala.inline
+  def KeyCombination: KeyCombination = "KeyCombination".asInstanceOf[KeyCombination]
   @scala.inline
   def KeyMap: KeyMap = "KeyMap".asInstanceOf[KeyMap]
   @scala.inline

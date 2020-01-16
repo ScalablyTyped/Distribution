@@ -76,19 +76,17 @@ trait HotKeysOverrideProps extends HTMLAttributes[HotKeys] {
     * a key in this list, all events related to it will be still be observed by react
     * hotkeys
     */
-  var except: ListOfKeys
+  var except: js.UndefOr[ListOfKeys] = js.undefined
   /**
     * The whitelist of keys that keyevents should be ignored. i.e. if you place
     * a key in this list, all events related to it will be ignored by react hotkeys
     */
-  var only: ListOfKeys
+  var only: js.UndefOr[ListOfKeys] = js.undefined
 }
 
 object HotKeysOverrideProps {
   @scala.inline
   def apply(
-    except: ListOfKeys,
-    only: ListOfKeys,
     about: String = null,
     accessKey: String = null,
     `aria-activedescendant`: String = null,
@@ -153,6 +151,7 @@ object HotKeysOverrideProps {
     defaultValue: String | Double | js.Array[String] = null,
     dir: String = null,
     draggable: js.UndefOr[Boolean] = js.undefined,
+    except: ListOfKeys = null,
     hidden: js.UndefOr[Boolean] = js.undefined,
     id: String = null,
     inlist: js.Any = null,
@@ -243,6 +242,7 @@ object HotKeysOverrideProps {
     onVolumeChange: SyntheticEvent[HotKeys, Event] => Unit = null,
     onWaiting: SyntheticEvent[HotKeys, Event] => Unit = null,
     onWheel: WheelEvent[HotKeys] => Unit = null,
+    only: ListOfKeys = null,
     placeholder: String = null,
     prefix: String = null,
     property: String = null,
@@ -263,7 +263,7 @@ object HotKeysOverrideProps {
     unselectable: on | off = null,
     vocab: String = null
   ): HotKeysOverrideProps = {
-    val __obj = js.Dynamic.literal(except = except.asInstanceOf[js.Any], only = only.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal()
     if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
     if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
@@ -328,6 +328,7 @@ object HotKeysOverrideProps {
     if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
     if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
+    if (except != null) __obj.updateDynamic("except")(except.asInstanceOf[js.Any])
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (inlist != null) __obj.updateDynamic("inlist")(inlist.asInstanceOf[js.Any])
@@ -418,6 +419,7 @@ object HotKeysOverrideProps {
     if (onVolumeChange != null) __obj.updateDynamic("onVolumeChange")(js.Any.fromFunction1(onVolumeChange))
     if (onWaiting != null) __obj.updateDynamic("onWaiting")(js.Any.fromFunction1(onWaiting))
     if (onWheel != null) __obj.updateDynamic("onWheel")(js.Any.fromFunction1(onWheel))
+    if (only != null) __obj.updateDynamic("only")(only.asInstanceOf[js.Any])
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])

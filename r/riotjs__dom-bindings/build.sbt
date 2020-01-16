@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "riotjs__dom-bindings"
-version := "4.6.5-f201d8"
+version := "4.6.6-5ab4d9"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

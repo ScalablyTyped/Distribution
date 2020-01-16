@@ -397,5 +397,9 @@ trait Queue[T] extends EventEmitter {
     * Set clientName to Redis.client
     */
   def setWorkerName(): js.Promise[_] = js.native
+  /**
+    * Returns a promise that resolves when active jobs are finished
+    */
+  def whenCurrentJobsFinished(): js.Promise[Unit] = js.native
 }
 

@@ -25,7 +25,7 @@ trait TargetGroupHealthCheck extends js.Object {
     */
   var path: js.UndefOr[Input[String]] = js.native
   /**
-    * The port to use to connect with the target. Valid values are either ports 1-65536, or `traffic-port`. Defaults to `traffic-port`.
+    * The port to use to connect with the target. Valid values are either ports 1-65535, or `traffic-port`. Defaults to `traffic-port`.
     */
   var port: js.UndefOr[Input[String]] = js.native
   /**

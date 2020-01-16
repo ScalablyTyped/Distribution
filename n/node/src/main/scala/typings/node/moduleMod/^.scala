@@ -1,6 +1,6 @@
 package typings.node.moduleMod
 
-import typings.node.NodeJS.Require
+import typings.node.NodeRequire
 import typings.node.TypeofClassModule
 import typings.node.urlMod.URL
 import scala.scalajs.js
@@ -20,12 +20,12 @@ class ^ protected ()
 object ^ extends js.Object {
   var Module: TypeofClassModule = js.native
   var builtinModules: js.Array[String] = js.native
-  def createRequire(path: String): Require = js.native
-  def createRequire(path: URL): Require = js.native
+  def createRequire(path: String): NodeRequire = js.native
+  def createRequire(path: URL): NodeRequire = js.native
   /**
     * @deprecated Deprecated since: v12.2.0. Please use createRequire() instead.
     */
-  def createRequireFromPath(path: String): Require = js.native
+  def createRequireFromPath(path: String): NodeRequire = js.native
   def runMain(): Unit = js.native
   def wrap(code: String): String = js.native
 }

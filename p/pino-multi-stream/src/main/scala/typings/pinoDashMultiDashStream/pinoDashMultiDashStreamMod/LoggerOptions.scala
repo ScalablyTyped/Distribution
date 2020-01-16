@@ -27,6 +27,7 @@ object LoggerOptions {
     level: LevelWithSilent | String = null,
     levelVal: Int | Double = null,
     messageKey: String = null,
+    mixin: () => js.Object = null,
     name: String = null,
     onTerminated: (/* eventName */ String, /* err */ js.Any) => Unit = null,
     prettyPrint: Boolean | PrettyOptions = null,
@@ -47,6 +48,7 @@ object LoggerOptions {
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (levelVal != null) __obj.updateDynamic("levelVal")(levelVal.asInstanceOf[js.Any])
     if (messageKey != null) __obj.updateDynamic("messageKey")(messageKey.asInstanceOf[js.Any])
+    if (mixin != null) __obj.updateDynamic("mixin")(js.Any.fromFunction0(mixin))
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (onTerminated != null) __obj.updateDynamic("onTerminated")(js.Any.fromFunction2(onTerminated))
     if (prettyPrint != null) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])

@@ -1,12 +1,13 @@
 package typings.atHapiHapi
 
+import typings.atHapiHapi.atHapiHapiMod.SameSitePolicy
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 object atHapiHapiBooleans {
   @js.native
-  sealed trait `false` extends js.Object
+  sealed trait `false` extends SameSitePolicy
   
   @js.native
   sealed trait `true` extends js.Object

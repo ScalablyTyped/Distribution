@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "axe-puppeteer" : "1.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "axe-puppeteer" : "1.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

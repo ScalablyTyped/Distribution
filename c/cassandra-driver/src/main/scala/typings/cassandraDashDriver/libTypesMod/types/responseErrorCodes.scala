@@ -18,6 +18,9 @@ object responseErrorCodes extends js.Object {
   sealed trait badCredentials extends responseErrorCodes
   
   @js.native
+  sealed trait clientWriteFailure extends responseErrorCodes
+  
+  @js.native
   sealed trait configError extends responseErrorCodes
   
   @js.native
@@ -72,6 +75,9 @@ object responseErrorCodes extends js.Object {
   
   /* 0x0100 */ @js.native
   object badCredentials extends TopLevel[badCredentials with Double]
+  
+  /* 0x8000 */ @js.native
+  object clientWriteFailure extends TopLevel[clientWriteFailure with Double]
   
   /* 0x2300 */ @js.native
   object configError extends TopLevel[configError with Double]

@@ -41,6 +41,10 @@ class ClusterInstance protected () extends CustomResource {
     */
   val availabilityZone: Output[String] = js.native
   /**
+    * The identifier of the CA certificate for the DB instance.
+    */
+  val caCertIdentifier: Output[String] = js.native
+  /**
     * The identifier of the [`aws.rds.Cluster`](https://www.terraform.io/docs/providers/aws/r/rds_cluster.html) in which to launch this instance.
     */
   val clusterIdentifier: Output[String] = js.native

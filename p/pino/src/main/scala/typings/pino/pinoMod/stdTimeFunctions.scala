@@ -18,18 +18,36 @@ object stdTimeFunctions extends js.Object {
     */
   @JSName("epochTime")
   var epochTime_Original: TimeFn = js.native
+  /*
+    * Returns ISO 8601-formatted time in UTC
+    */
+  @JSName("isoTime")
+  var isoTime_Original: TimeFn = js.native
   /**
     * Returns an empty string. This function is used when the `timestamp` option is set to `false`.
     */
   @JSName("nullTime")
   var nullTime_Original: TimeFn = js.native
+  /*
+    * Returns the seconds since Unix epoch
+    */
+  @JSName("unixTime")
+  var unixTime_Original: TimeFn = js.native
   /**
     * The default time function for Pino. Returns a string like `,"time":1493426328206`.
     */
   def epochTime(): String = js.native
+  /*
+    * Returns ISO 8601-formatted time in UTC
+    */
+  def isoTime(): String = js.native
   /**
     * Returns an empty string. This function is used when the `timestamp` option is set to `false`.
     */
   def nullTime(): String = js.native
+  /*
+    * Returns the seconds since Unix epoch
+    */
+  def unixTime(): String = js.native
 }
 

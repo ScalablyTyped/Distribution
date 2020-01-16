@@ -39,7 +39,7 @@ trait TargetGroupState extends js.Object {
     */
   val namePrefix: js.UndefOr[Input[String]] = js.native
   /**
-    * The port to use to connect with the target. Valid values are either ports 1-65536, or `traffic-port`. Defaults to `traffic-port`.
+    * The port to use to connect with the target. Valid values are either ports 1-65535, or `traffic-port`. Defaults to `traffic-port`.
     */
   val port: js.UndefOr[Input[Double]] = js.native
   /**

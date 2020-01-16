@@ -17,7 +17,7 @@ trait Anon_EndpointParamsIssuesListEventsForTimelineParams extends js.Object {
   var endpoint_Original: Endpoint = js.native
   def apply(): js.Promise[Response[IssuesListEventsForTimelineResponse]] = js.native
   def apply(
-    params: RequestOptions with (IssuesListEventsForTimelineParams | IssuesListEventsForTimelineParamsDeprecatedNumber)
+    params: RequestOptions with IssuesListEventsForTimelineParamsDeprecatedNumber with IssuesListEventsForTimelineParams
   ): js.Promise[Response[IssuesListEventsForTimelineResponse]] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native

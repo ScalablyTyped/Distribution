@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-facebook-login"
-version := "4.1-dt-20181130Z-f440ae"
+version := "4.1-dt-20200113Z-7333e9"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

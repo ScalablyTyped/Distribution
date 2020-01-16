@@ -14,9 +14,8 @@ package object libEs5Mod {
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
     - `js.undefined`
-    - scala.Nothing
     - scala.Null
-    - typings.csvDashParse.csvDashParseNumbers.`false`
+    - typings.csvDashParse.csvDashParseBooleans.`false`
     - typings.csvDashParse.Anon_Name
   */
   type ColumnOption = js.UndefOr[_ColumnOption | String | Null]

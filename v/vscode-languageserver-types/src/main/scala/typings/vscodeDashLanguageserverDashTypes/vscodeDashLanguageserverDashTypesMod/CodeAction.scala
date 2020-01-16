@@ -20,6 +20,16 @@ trait CodeAction extends js.Object {
     */
   var edit: js.UndefOr[WorkspaceEdit] = js.undefined
   /**
+    * Marks this as a preferred action. Preferred actions are used by the `auto fix` command and can be targeted
+    * by keybindings.
+    *
+    * A quick fix should be marked preferred if it properly addresses the underlying error.
+    * A refactoring should be marked preferred if it is the most reasonable choice of actions to take.
+    *
+    * @since 3.15.0
+    */
+  var isPreferred: js.UndefOr[Boolean] = js.undefined
+  /**
     * The kind of the code action.
     *
     * Used to filter code actions.

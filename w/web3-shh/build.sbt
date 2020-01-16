@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "web3-shh"
-version := "1.2.4-8d859b"
+version := "1.2.4-a3e480"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "bignumber_dot_js" % "9.0.0-626b5d",
-  "org.scalablytyped" %%% "bn_dot_js" % "4.11-dt-20200103Z-03baf7",
-  "org.scalablytyped" %%% "node" % "13.1-dt-20200103Z-51871a",
+  "org.scalablytyped" %%% "bn_dot_js" % "4.11-dt-20200103Z-55937c",
+  "org.scalablytyped" %%% "node" % "13.1-dt-20200115Z-14f523",
   "org.scalablytyped" %%% "std" % "3.7-b6d959",
-  "org.scalablytyped" %%% "web3-core" % "1.2.4-f8dbc3",
-  "org.scalablytyped" %%% "web3-core-helpers" % "1.2.4-0a2bc8",
+  "org.scalablytyped" %%% "web3-core" % "1.2.4-b73740",
+  "org.scalablytyped" %%% "web3-core-helpers" % "1.2.4-53e757",
   "org.scalablytyped" %%% "web3-core-method" % "1.2.4-13238b",
-  "org.scalablytyped" %%% "web3-net" % "1.2.4-ad6b81")
+  "org.scalablytyped" %%% "web3-net" % "1.2.4-9236bf")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

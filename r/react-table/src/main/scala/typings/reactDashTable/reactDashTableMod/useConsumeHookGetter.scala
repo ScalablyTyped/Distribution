@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("react-table", "useConsumeHookGetter")
 @js.native
 object useConsumeHookGetter extends js.Object {
-  def apply(hooks: Hooks[js.Object], hookName: String): js.Any = js.native
+  def apply[D /* <: js.Object */](hooks: Hooks[D], hookName: String): js.Any = js.native
 }
 

@@ -2,6 +2,7 @@ package typings.koaDashProxies.koaDashProxiesMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.httpDashProxy.httpDashProxyBooleans.`false`
+import typings.httpDashProxy.httpDashProxyMod.ProxyTarget
 import typings.httpDashProxy.httpDashProxyMod.ProxyTargetUrl
 import typings.httpDashProxy.httpDashProxyMod.ServerOptions
 import typings.koa.koaMod.DefaultContext
@@ -42,7 +43,7 @@ object Options {
     secure: js.UndefOr[Boolean] = js.undefined,
     selfHandleResponse: js.UndefOr[Boolean] = js.undefined,
     ssl: js.Any = null,
-    target: ProxyTargetUrl = null,
+    target: ProxyTarget = null,
     timeout: Int | Double = null,
     toProxy: js.UndefOr[Boolean] = js.undefined,
     ws: js.UndefOr[Boolean] = js.undefined,

@@ -1,6 +1,8 @@
 package typings.cassandraDashDriver.cassandraDashDriverMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.cassandraDashDriver.Anon_ParamsQuery
+import typings.cassandraDashDriver.libDatastaxMod.datastax.graph.GraphResultSet
 import typings.cassandraDashDriver.libMetadataMod.metadata.ClientState
 import typings.cassandraDashDriver.libMetadataMod.metadata.Metadata
 import typings.cassandraDashDriver.libMetricsMod.metrics.ClientMetrics
@@ -15,7 +17,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cassandra-driver", "Client")
 @js.native
 class Client protected () extends EventEmitter {
-  def this(options: ClientOptions) = this()
+  def this(options: DseClientOptions) = this()
   var hosts: HostMap = js.native
   var keyspace: String = js.native
   var metadata: Metadata = js.native
@@ -61,6 +63,24 @@ class Client protected () extends EventEmitter {
   def execute(query: String, params: ArrayOrObject, callback: ValueCallback[ResultSet]): Unit = js.native
   def execute(query: String, params: ArrayOrObject, options: QueryOptions): js.Promise[ResultSet] = js.native
   def execute(query: String, params: ArrayOrObject, options: QueryOptions, callback: ValueCallback[ResultSet]): Unit = js.native
+  def executeGraph(traversal: String): js.Promise[GraphResultSet] = js.native
+  def executeGraph(traversal: String, callback: ValueCallback[GraphResultSet]): Unit = js.native
+  def executeGraph(traversal: String, parameters: js.UndefOr[scala.Nothing], callback: ValueCallback[GraphResultSet]): Unit = js.native
+  def executeGraph(
+    traversal: String,
+    parameters: js.UndefOr[scala.Nothing],
+    options: GraphQueryOptions,
+    callback: ValueCallback[GraphResultSet]
+  ): Unit = js.native
+  def executeGraph(traversal: String, parameters: StringDictionary[js.Any]): js.Promise[GraphResultSet] = js.native
+  def executeGraph(traversal: String, parameters: StringDictionary[js.Any], callback: ValueCallback[GraphResultSet]): Unit = js.native
+  def executeGraph(traversal: String, parameters: StringDictionary[js.Any], options: GraphQueryOptions): js.Promise[GraphResultSet] = js.native
+  def executeGraph(
+    traversal: String,
+    parameters: StringDictionary[js.Any],
+    options: GraphQueryOptions,
+    callback: ValueCallback[GraphResultSet]
+  ): Unit = js.native
   def getReplicas(keyspace: String, token: Buffer): js.Array[Host] = js.native
   def getState(): ClientState = js.native
   def shutdown(): js.Promise[Unit] = js.native

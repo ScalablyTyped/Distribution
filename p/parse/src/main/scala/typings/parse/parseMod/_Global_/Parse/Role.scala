@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation._
 trait Role[T /* <: Attributes */] extends Object[T] {
   def getName(): String = js.native
   def getRoles(): Relation[Role[Attributes], Role[Attributes]] = js.native
-  def getUsers(): Relation[Role[Attributes], User[Attributes]] = js.native
+  def getUsers[U /* <: User[Attributes] */](): Relation[Role[Attributes], U] = js.native
   def setName(name: String): js.Any = js.native
   def setName(name: String, options: SuccessFailureOptions): js.Any = js.native
 }

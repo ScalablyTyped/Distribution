@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "raspi-led"
-version := "2.0-dt-20180214Z-71a898"
+version := "2.0-dt-20180214Z-29aa27"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "node" % "13.1-dt-20200103Z-51871a",
-  "org.scalablytyped" %%% "raspi-peripheral" % "2.0-dt-20180214Z-173ee3",
+  "org.scalablytyped" %%% "node" % "13.1-dt-20200115Z-14f523",
+  "org.scalablytyped" %%% "raspi-peripheral" % "2.0-dt-20180214Z-ee5ebd",
   "org.scalablytyped" %%% "std" % "3.7-b6d959")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

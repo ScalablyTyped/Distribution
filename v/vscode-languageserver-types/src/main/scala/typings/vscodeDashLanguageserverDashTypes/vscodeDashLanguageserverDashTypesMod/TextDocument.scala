@@ -25,7 +25,7 @@ trait TextDocument extends js.Object {
     *
     * @readonly
     */
-  val uri: String = js.native
+  val uri: DocumentUri = js.native
   /**
     * The version number of this document (it will increase after each
     * change, including undo/redo).
@@ -76,7 +76,7 @@ object TextDocument extends js.Object {
     * @param languageId  The document's language Id.
     * @param content The document's content.
     */
-  def create(uri: String, languageId: String, version: Double, content: String): TextDocument = js.native
+  def create(uri: DocumentUri, languageId: String, version: Double, content: String): TextDocument = js.native
   /**
     * Checks whether the given literal conforms to the [ITextDocument](#ITextDocument) interface.
     */

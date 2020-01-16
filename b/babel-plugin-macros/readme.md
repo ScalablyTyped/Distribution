@@ -1,7 +1,7 @@
 
 # Scala.js typings for babel-plugin-macros
 
-Typings are for version 2.6
+Typings are for version 2.8
 
 ## Library description:
 Allows you to build compile-time libraries

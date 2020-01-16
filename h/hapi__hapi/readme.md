@@ -1,7 +1,7 @@
 
 # Scala.js typings for hapi__hapi
 
-Typings are for version 18.2
+Typings are for version 19.0
 
 ## Library description:
 HTTP Server framework

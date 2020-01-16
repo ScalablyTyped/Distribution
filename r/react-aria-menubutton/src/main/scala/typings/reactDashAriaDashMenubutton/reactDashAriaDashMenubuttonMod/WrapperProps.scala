@@ -24,7 +24,6 @@ trait WrapperProps[T /* <: HTMLElement */]
   	 * selection is made. Default: `true`.
   	 */
   var closeOnSelection: js.UndefOr[Boolean] = js.undefined
-  var isOpen: js.UndefOr[Boolean] = js.undefined
   /**
   	 * A callback to run when the menu is opened or closed.
   	 */
@@ -48,7 +47,6 @@ object WrapperProps {
     ClassAttributes: ClassAttributes[T] = null,
     closeOnBlur: js.UndefOr[Boolean] = js.undefined,
     closeOnSelection: js.UndefOr[Boolean] = js.undefined,
-    isOpen: js.UndefOr[Boolean] = js.undefined,
     onMenuToggle: /* obj */ WrapperState => _ = null,
     onSelection: (/* value */ js.Any, /* event */ SyntheticEvent[T, Event]) => _ = null,
     tag: /* import warning: importer.ImportType#apply Failed type conversion: T['tagName'] */ js.Any = null
@@ -58,7 +56,6 @@ object WrapperProps {
     if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     if (!js.isUndefined(closeOnBlur)) __obj.updateDynamic("closeOnBlur")(closeOnBlur.asInstanceOf[js.Any])
     if (!js.isUndefined(closeOnSelection)) __obj.updateDynamic("closeOnSelection")(closeOnSelection.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen.asInstanceOf[js.Any])
     if (onMenuToggle != null) __obj.updateDynamic("onMenuToggle")(js.Any.fromFunction1(onMenuToggle))
     if (onSelection != null) __obj.updateDynamic("onSelection")(js.Any.fromFunction2(onSelection))
     if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])

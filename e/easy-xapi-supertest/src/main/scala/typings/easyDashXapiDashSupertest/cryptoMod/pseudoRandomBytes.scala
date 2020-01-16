@@ -1,6 +1,6 @@
 package typings.easyDashXapiDashSupertest.cryptoMod
 
-import typings.easyDashXapiDashSupertest.Buffer
+import typings.node.Buffer
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

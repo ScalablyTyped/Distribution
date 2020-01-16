@@ -1,9 +1,9 @@
 package typings.webpackDashEnv.__WebpackModuleApi
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.node.NodeModule
+import typings.node.NodeRequire
 import typings.std.RegExp
-import typings.webpackDashEnv.NodeModule
-import typings.webpackDashEnv.NodeRequire
 import typings.webpackDashEnv.webpackDashEnvStrings.`lazy-once`
 import typings.webpackDashEnv.webpackDashEnvStrings.`lazy`
 import typings.webpackDashEnv.webpackDashEnvStrings.eager

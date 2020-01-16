@@ -25,6 +25,10 @@ class LaunchConfiguration protected () extends CustomResource {
   def this(name: String, args: LaunchConfigurationArgs) = this()
   def this(name: String, args: LaunchConfigurationArgs, opts: CustomResourceOptions) = this()
   /**
+    * The Amazon Resource Name of the launch configuration.
+    */
+  val arn: Output[String] = js.native
+  /**
     * Associate a public ip address with an instance in a VPC.
     */
   val associatePublicIpAddress: Output[js.UndefOr[Boolean]] = js.native

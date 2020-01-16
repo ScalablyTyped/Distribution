@@ -145,7 +145,6 @@ import typings.d3DashShape.d3DashShapeMod.Series
 import typings.d3DashShape.d3DashShapeMod.Stack
 import typings.d3DashShape.d3DashShapeMod.Symbol
 import typings.d3DashShape.d3DashShapeMod.SymbolType
-import typings.d3DashShape.d3DashShapeMod._Global_.CanvasRenderingContext2D
 import typings.d3DashTime.d3DashTimeMod.CountableTimeInterval
 import typings.d3DashTime.d3DashTimeMod.TimeInterval
 import typings.d3DashTimeDashFormat.d3DashTimeDashFormatMod.TimeLocaleDefinition
@@ -289,6 +288,7 @@ import typings.plotlyDotJs.plotlyDotJsStrings.wbr
 import typings.std.ArrayBuffer
 import typings.std.ArrayLike
 import typings.std.Blob
+import typings.std.CanvasRenderingContext2D
 import typings.std.Date
 import typings.std.Document
 import typings.std.Element

@@ -3532,7 +3532,7 @@ trait LoDashFp extends js.Object {
   def isFunction(value: js.Any): Boolean = js.native
   def isInteger(value: js.Any): Boolean = js.native
   def isLength(value: js.Any): Boolean = js.native
-  def isMap(value: js.Any): /* is lodash.lodash._Global_.Map<any, any> */ Boolean = js.native
+  def isMap(value: js.Any): /* is std.Map<any, any> */ Boolean = js.native
   def isMatch(source: js.Object): LodashIsMatch1x1 = js.native
   def isMatch(source: js.Object, `object`: js.Object): Boolean = js.native
   def isMatch(source: __, `object`: js.Object): LodashIsMatch1x2 = js.native
@@ -3553,13 +3553,13 @@ trait LoDashFp extends js.Object {
   def isPlainObject(value: js.Any): Boolean = js.native
   def isRegExp(value: js.Any): /* is std.RegExp */ Boolean = js.native
   def isSafeInteger(value: js.Any): Boolean = js.native
-  def isSet(value: js.Any): /* is lodash.lodash._Global_.Set<any> */ Boolean = js.native
+  def isSet(value: js.Any): /* is std.Set<any> */ Boolean = js.native
   def isString(value: js.Any): /* is string */ Boolean = js.native
   def isSymbol(value: js.Any): Boolean = js.native
   def isTypedArray(value: js.Any): Boolean = js.native
   def isUndefined(value: js.Any): /* is undefined */ Boolean = js.native
-  def isWeakMap(value: js.Any): /* is lodash.lodash._Global_.WeakMap<object, any> */ Boolean = js.native
-  def isWeakSet(value: js.Any): /* is lodash.lodash._Global_.WeakSet<object> */ Boolean = js.native
+  def isWeakMap(value: js.Any): /* is std.WeakMap<object, any> */ Boolean = js.native
+  def isWeakSet(value: js.Any): /* is std.WeakSet<object> */ Boolean = js.native
   def iteratee(func: String): js.Function1[/* repeated */ js.Any, _] = js.native
   def iteratee(func: js.Object): js.Function1[/* repeated */ js.Any, _] = js.native
   def iteratee[TFunction /* <: js.Function1[/* repeated */ js.Any, _] */](func: TFunction): TFunction = js.native

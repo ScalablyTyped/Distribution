@@ -3,11 +3,11 @@ package typings.cypress.Chai
 import org.scalablytyped.runtime.StringDictionary
 import typings.cypress.Anon_Length
 import typings.cypress.Object
-import typings.cypress.typesLodashMod._Global_.WeakSet
 import typings.std.Partial
 import typings.std.ReadonlyMap
 import typings.std.ReadonlySet
 import typings.std.RegExp
+import typings.std.WeakSet
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -534,6 +534,10 @@ trait Assert extends js.Object {
     */
   def include[T](haystack: js.Array[T], needle: T): Unit = js.native
   def include[T](haystack: js.Array[T], needle: T, message: String): Unit = js.native
+  def include[T](haystack: ReadonlyMap[_, T], needle: T): Unit = js.native
+  def include[T](haystack: ReadonlyMap[_, T], needle: T, message: String): Unit = js.native
+  def include[T](haystack: ReadonlySet[T], needle: T): Unit = js.native
+  def include[T](haystack: ReadonlySet[T], needle: T, message: String): Unit = js.native
   /**
     * Asserts that haystack includes needle.
     *
@@ -544,10 +548,6 @@ trait Assert extends js.Object {
     */
   def include[T /* <: js.Object */](haystack: WeakSet[T], needle: T): Unit = js.native
   def include[T /* <: js.Object */](haystack: WeakSet[T], needle: T, message: String): Unit = js.native
-  def include[T](haystack: ReadonlyMap[_, T], needle: T): Unit = js.native
-  def include[T](haystack: ReadonlyMap[_, T], needle: T, message: String): Unit = js.native
-  def include[T](haystack: ReadonlySet[T], needle: T): Unit = js.native
-  def include[T](haystack: ReadonlySet[T], needle: T, message: String): Unit = js.native
   /**
     * Asserts that subset is included in superset using deep equality checking.
     * Order is not take into account.
@@ -1163,6 +1163,10 @@ trait Assert extends js.Object {
     */
   def notInclude[T](haystack: js.Array[T], needle: T): Unit = js.native
   def notInclude[T](haystack: js.Array[T], needle: T, message: String): Unit = js.native
+  def notInclude[T](haystack: ReadonlyMap[_, T], needle: T): Unit = js.native
+  def notInclude[T](haystack: ReadonlyMap[_, T], needle: T, message: String): Unit = js.native
+  def notInclude[T](haystack: ReadonlySet[T], needle: T): Unit = js.native
+  def notInclude[T](haystack: ReadonlySet[T], needle: T, message: String): Unit = js.native
   /**
     * Asserts that haystack does not includes needle.
     *
@@ -1173,10 +1177,6 @@ trait Assert extends js.Object {
     */
   def notInclude[T /* <: js.Object */](haystack: WeakSet[T], needle: T): Unit = js.native
   def notInclude[T /* <: js.Object */](haystack: WeakSet[T], needle: T, message: String): Unit = js.native
-  def notInclude[T](haystack: ReadonlyMap[_, T], needle: T): Unit = js.native
-  def notInclude[T](haystack: ReadonlyMap[_, T], needle: T, message: String): Unit = js.native
-  def notInclude[T](haystack: ReadonlySet[T], needle: T): Unit = js.native
-  def notInclude[T](haystack: ReadonlySet[T], needle: T, message: String): Unit = js.native
   /**
     * Asserts that subset isn’t included in superset in the same order beginning with the first element in superset.
     * Uses a deep equality check.

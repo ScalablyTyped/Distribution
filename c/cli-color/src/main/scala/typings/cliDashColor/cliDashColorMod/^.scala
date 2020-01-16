@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cli-color", JSImport.Namespace)
 @js.native
-object ^ extends TopLevel[Format]
+object ^ extends TopLevel[Color]
 

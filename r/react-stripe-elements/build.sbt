@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-stripe-elements"
-version := "6.0-dt-20200103Z-50af2c"
+version := "6.0-dt-20200110Z-7dde42"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

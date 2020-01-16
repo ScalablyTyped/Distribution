@@ -1,7 +1,7 @@
 
 # Scala.js typings for hapi__code
 
-Typings are for version 5.3
+Typings are for version 8.0.1
 
 ## Library description:
 assertion library
@@ -24,7 +24,7 @@ assertion library
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

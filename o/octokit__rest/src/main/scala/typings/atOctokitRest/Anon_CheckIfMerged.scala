@@ -363,7 +363,7 @@ trait Anon_CheckIfMerged extends js.Object {
   @JSName("update")
   var update_Original: Anon_EndpointParamsPromisePullsUpdateParams = js.native
   def checkIfMerged(): js.Promise[AnyResponse] = js.native
-  def checkIfMerged(params: RequestOptions with (PullsCheckIfMergedParams | PullsCheckIfMergedParamsDeprecatedNumber)): js.Promise[AnyResponse] = js.native
+  def checkIfMerged(params: RequestOptions with PullsCheckIfMergedParamsDeprecatedNumber with PullsCheckIfMergedParams): js.Promise[AnyResponse] = js.native
   /**
     * Draft pull requests are available in public repositories with GitHub Free and GitHub Pro, and in public and private repositories with GitHub Team and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
     *
@@ -404,7 +404,7 @@ trait Anon_CheckIfMerged extends js.Object {
     */
   def createComment(): js.Promise[Response[PullsCreateCommentResponse]] = js.native
   def createComment(
-    params: RequestOptions with (PullsCreateCommentParams | PullsCreateCommentParamsDeprecatedInReplyTo | PullsCreateCommentParamsDeprecatedNumber)
+    params: RequestOptions with PullsCreateCommentParamsDeprecatedNumber with PullsCreateCommentParamsDeprecatedInReplyTo with PullsCreateCommentParams
   ): js.Promise[Response[PullsCreateCommentResponse]] = js.native
   /**
     * **Note:** Multi-line comments on pull requests are currently in public beta and subject to change.
@@ -436,7 +436,7 @@ trait Anon_CheckIfMerged extends js.Object {
     */
   def createCommentReply(): js.Promise[Response[PullsCreateCommentReplyResponse]] = js.native
   def createCommentReply(
-    params: RequestOptions with (PullsCreateCommentReplyParams | PullsCreateCommentReplyParamsDeprecatedInReplyTo | PullsCreateCommentReplyParamsDeprecatedNumber)
+    params: RequestOptions with PullsCreateCommentReplyParamsDeprecatedNumber with PullsCreateCommentReplyParamsDeprecatedInReplyTo with PullsCreateCommentReplyParams
   ): js.Promise[Response[PullsCreateCommentReplyResponse]] = js.native
   def createFromIssue(): js.Promise[Response[PullsCreateFromIssueResponse]] = js.native
   def createFromIssue(params: RequestOptions with PullsCreateFromIssueParams): js.Promise[Response[PullsCreateFromIssueResponse]] = js.native
@@ -448,7 +448,7 @@ trait Anon_CheckIfMerged extends js.Object {
     * The `position` value equals the number of lines down from the first "@@" hunk header in the file you want to add a comment. The line just below the "@@" line is position 1, the next line is position 2, and so on. The position in the diff continues to increase through lines of whitespace and additional hunks until the beginning of a new file.
     */
   def createReview(): js.Promise[Response[PullsCreateReviewResponse]] = js.native
-  def createReview(params: RequestOptions with (PullsCreateReviewParams | PullsCreateReviewParamsDeprecatedNumber)): js.Promise[Response[PullsCreateReviewResponse]] = js.native
+  def createReview(params: RequestOptions with PullsCreateReviewParamsDeprecatedNumber with PullsCreateReviewParams): js.Promise[Response[PullsCreateReviewResponse]] = js.native
   /**
     * Creates a reply to a review comment for a pull request. For the `comment_id`, provide the ID of the review comment you are replying to. This must be the ID of a _top-level review comment_, not a reply to that comment. Replies to replies are not supported.
     *
@@ -461,7 +461,7 @@ trait Anon_CheckIfMerged extends js.Object {
     */
   def createReviewRequest(): js.Promise[Response[PullsCreateReviewRequestResponse]] = js.native
   def createReviewRequest(
-    params: RequestOptions with (PullsCreateReviewRequestParams | PullsCreateReviewRequestParamsDeprecatedNumber)
+    params: RequestOptions with PullsCreateReviewRequestParamsDeprecatedNumber with PullsCreateReviewRequestParams
   ): js.Promise[Response[PullsCreateReviewRequestResponse]] = js.native
   /**
     * Deletes a review comment.
@@ -470,17 +470,17 @@ trait Anon_CheckIfMerged extends js.Object {
   def deleteComment(params: RequestOptions with PullsDeleteCommentParams): js.Promise[AnyResponse] = js.native
   def deletePendingReview(): js.Promise[Response[PullsDeletePendingReviewResponse]] = js.native
   def deletePendingReview(
-    params: RequestOptions with (PullsDeletePendingReviewParams | PullsDeletePendingReviewParamsDeprecatedNumber)
+    params: RequestOptions with PullsDeletePendingReviewParamsDeprecatedNumber with PullsDeletePendingReviewParams
   ): js.Promise[Response[PullsDeletePendingReviewResponse]] = js.native
   def deleteReviewRequest(): js.Promise[AnyResponse] = js.native
   def deleteReviewRequest(
-    params: RequestOptions with (PullsDeleteReviewRequestParams | PullsDeleteReviewRequestParamsDeprecatedNumber)
+    params: RequestOptions with PullsDeleteReviewRequestParamsDeprecatedNumber with PullsDeleteReviewRequestParams
   ): js.Promise[AnyResponse] = js.native
   /**
     * **Note:** To dismiss a pull request review on a [protected branch](https://developer.github.com/v3/repos/branches/), you must be a repository administrator or be included in the list of people or teams who can dismiss pull request reviews.
     */
   def dismissReview(): js.Promise[Response[PullsDismissReviewResponse]] = js.native
-  def dismissReview(params: RequestOptions with (PullsDismissReviewParams | PullsDismissReviewParamsDeprecatedNumber)): js.Promise[Response[PullsDismissReviewResponse]] = js.native
+  def dismissReview(params: RequestOptions with PullsDismissReviewParamsDeprecatedNumber with PullsDismissReviewParams): js.Promise[Response[PullsDismissReviewResponse]] = js.native
   /**
     * Draft pull requests are available in public repositories with GitHub Free and GitHub Pro, and in public and private repositories with GitHub Team and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
     *
@@ -499,7 +499,7 @@ trait Anon_CheckIfMerged extends js.Object {
     * Pass the appropriate [media type](https://developer.github.com/v3/media/#commits-commit-comparison-and-pull-requests) to fetch diff and patch formats.
     */
   def get(): js.Promise[Response[PullsGetResponse]] = js.native
-  def get(params: RequestOptions with (PullsGetParams | PullsGetParamsDeprecatedNumber)): js.Promise[Response[PullsGetResponse]] = js.native
+  def get(params: RequestOptions with PullsGetParamsDeprecatedNumber with PullsGetParams): js.Promise[Response[PullsGetResponse]] = js.native
   /**
     * **Note:** Multi-line comments on pull requests are currently in public beta and subject to change.
     *
@@ -527,10 +527,10 @@ trait Anon_CheckIfMerged extends js.Object {
   def getComment(params: RequestOptions with PullsGetCommentParams): js.Promise[Response[PullsGetCommentResponse]] = js.native
   def getCommentsForReview(): js.Promise[Response[PullsGetCommentsForReviewResponse]] = js.native
   def getCommentsForReview(
-    params: RequestOptions with (PullsGetCommentsForReviewParams | PullsGetCommentsForReviewParamsDeprecatedNumber)
+    params: RequestOptions with PullsGetCommentsForReviewParamsDeprecatedNumber with PullsGetCommentsForReviewParams
   ): js.Promise[Response[PullsGetCommentsForReviewResponse]] = js.native
   def getReview(): js.Promise[Response[PullsGetReviewResponse]] = js.native
-  def getReview(params: RequestOptions with (PullsGetReviewParams | PullsGetReviewParamsDeprecatedNumber)): js.Promise[Response[PullsGetReviewResponse]] = js.native
+  def getReview(params: RequestOptions with PullsGetReviewParamsDeprecatedNumber with PullsGetReviewParams): js.Promise[Response[PullsGetReviewResponse]] = js.native
   /**
     * Draft pull requests are available in public repositories with GitHub Free and GitHub Pro, and in public and private repositories with GitHub Team and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
     */
@@ -560,7 +560,7 @@ trait Anon_CheckIfMerged extends js.Object {
     * The `reactions` key will have the following payload where `url` can be used to construct the API location for [listing and creating](https://developer.github.com/v3/reactions) reactions.
     */
   def listComments(): js.Promise[Response[PullsListCommentsResponse]] = js.native
-  def listComments(params: RequestOptions with (PullsListCommentsParams | PullsListCommentsParamsDeprecatedNumber)): js.Promise[Response[PullsListCommentsResponse]] = js.native
+  def listComments(params: RequestOptions with PullsListCommentsParamsDeprecatedNumber with PullsListCommentsParams): js.Promise[Response[PullsListCommentsResponse]] = js.native
   /**
     * **Note:** Multi-line comments on pull requests are currently in public beta and subject to change.
     *
@@ -590,35 +590,35 @@ trait Anon_CheckIfMerged extends js.Object {
     * Lists a maximum of 250 commits for a pull request. To receive a complete commit list for pull requests with more than 250 commits, use the [Commit List API](https://developer.github.com/v3/repos/commits/#list-commits-on-a-repository).
     */
   def listCommits(): js.Promise[Response[PullsListCommitsResponse]] = js.native
-  def listCommits(params: RequestOptions with (PullsListCommitsParams | PullsListCommitsParamsDeprecatedNumber)): js.Promise[Response[PullsListCommitsResponse]] = js.native
+  def listCommits(params: RequestOptions with PullsListCommitsParamsDeprecatedNumber with PullsListCommitsParams): js.Promise[Response[PullsListCommitsResponse]] = js.native
   /**
     * **Note:** The response includes a maximum of 300 files.
     */
   def listFiles(): js.Promise[Response[PullsListFilesResponse]] = js.native
-  def listFiles(params: RequestOptions with (PullsListFilesParams | PullsListFilesParamsDeprecatedNumber)): js.Promise[Response[PullsListFilesResponse]] = js.native
+  def listFiles(params: RequestOptions with PullsListFilesParamsDeprecatedNumber with PullsListFilesParams): js.Promise[Response[PullsListFilesResponse]] = js.native
   def listReviewRequests(): js.Promise[Response[PullsListReviewRequestsResponse]] = js.native
   def listReviewRequests(
-    params: RequestOptions with (PullsListReviewRequestsParams | PullsListReviewRequestsParamsDeprecatedNumber)
+    params: RequestOptions with PullsListReviewRequestsParamsDeprecatedNumber with PullsListReviewRequestsParams
   ): js.Promise[Response[PullsListReviewRequestsResponse]] = js.native
   /**
     * The list of reviews returns in chronological order.
     */
   def listReviews(): js.Promise[Response[PullsListReviewsResponse]] = js.native
-  def listReviews(params: RequestOptions with (PullsListReviewsParams | PullsListReviewsParamsDeprecatedNumber)): js.Promise[Response[PullsListReviewsResponse]] = js.native
+  def listReviews(params: RequestOptions with PullsListReviewsParamsDeprecatedNumber with PullsListReviewsParams): js.Promise[Response[PullsListReviewsResponse]] = js.native
   /**
     * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     */
   def merge(): js.Promise[Response[PullsMergeResponse]] = js.native
-  def merge(params: RequestOptions with (PullsMergeParams | PullsMergeParamsDeprecatedNumber)): js.Promise[Response[PullsMergeResponse]] = js.native
+  def merge(params: RequestOptions with PullsMergeParamsDeprecatedNumber with PullsMergeParams): js.Promise[Response[PullsMergeResponse]] = js.native
   def submitReview(): js.Promise[Response[PullsSubmitReviewResponse]] = js.native
-  def submitReview(params: RequestOptions with (PullsSubmitReviewParams | PullsSubmitReviewParamsDeprecatedNumber)): js.Promise[Response[PullsSubmitReviewResponse]] = js.native
+  def submitReview(params: RequestOptions with PullsSubmitReviewParamsDeprecatedNumber with PullsSubmitReviewParams): js.Promise[Response[PullsSubmitReviewResponse]] = js.native
   /**
     * Draft pull requests are available in public repositories with GitHub Free and GitHub Pro, and in public and private repositories with GitHub Team and GitHub Enterprise Cloud. For more information, see [GitHub's billing plans](https://help.github.com/articles/github-s-billing-plans) in the GitHub Help documentation.
     *
     * To open or update a pull request in a public repository, you must have write access to the head or the source branch. For organization-owned repositories, you must be a member of the organization that owns the repository to open or update a pull request.
     */
   def update(): js.Promise[Response[PullsUpdateResponse]] = js.native
-  def update(params: RequestOptions with (PullsUpdateParams | PullsUpdateParamsDeprecatedNumber)): js.Promise[Response[PullsUpdateResponse]] = js.native
+  def update(params: RequestOptions with PullsUpdateParamsDeprecatedNumber with PullsUpdateParams): js.Promise[Response[PullsUpdateResponse]] = js.native
   /**
     * Updates the pull request branch with the latest upstream changes by merging HEAD from the base branch into the pull request branch.
     */
@@ -651,6 +651,6 @@ trait Anon_CheckIfMerged extends js.Object {
     * Update the review summary comment with new text.
     */
   def updateReview(): js.Promise[Response[PullsUpdateReviewResponse]] = js.native
-  def updateReview(params: RequestOptions with (PullsUpdateReviewParams | PullsUpdateReviewParamsDeprecatedNumber)): js.Promise[Response[PullsUpdateReviewResponse]] = js.native
+  def updateReview(params: RequestOptions with PullsUpdateReviewParamsDeprecatedNumber with PullsUpdateReviewParams): js.Promise[Response[PullsUpdateReviewResponse]] = js.native
 }
 

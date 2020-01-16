@@ -36,8 +36,8 @@ trait ObjectStatic extends js.Object {
   def pinAll(objects: js.Array[Object[Attributes]]): js.Promise[Unit] = js.native
   def pinAllWithName(name: String, objects: js.Array[Object[Attributes]]): js.Promise[Unit] = js.native
   def registerSubclass[T /* <: Object[Attributes] */](className: String, clazz: Instantiable1[js.UndefOr[/* options */ js.Any], T]): Unit = js.native
-  def saveAll[T /* <: Object[Attributes] */](list: js.Array[T]): js.Promise[js.Array[T]] = js.native
-  def saveAll[T /* <: Object[Attributes] */](list: js.Array[T], options: SaveAllOptions): js.Promise[js.Array[T]] = js.native
+  def saveAll[T /* <: js.Array[Object[Attributes]] */](list: T): js.Promise[T] = js.native
+  def saveAll[T /* <: js.Array[Object[Attributes]] */](list: T, options: SaveAllOptions): js.Promise[T] = js.native
   def unPinAll(objects: js.Array[Object[Attributes]]): js.Promise[Unit] = js.native
   def unPinAllObjects(): js.Promise[Unit] = js.native
   def unPinAllObjectsWithName(name: String): js.Promise[Unit] = js.native

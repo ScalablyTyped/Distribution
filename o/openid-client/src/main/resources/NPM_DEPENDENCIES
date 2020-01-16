@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "openid-client" : "3.10.0"
+      "openid-client" : "3.11.0"
     }
   ],
   "test-dependencies" : [
     {
-      "openid-client" : "3.10.0"
+      "openid-client" : "3.11.0"
     }
   ],
   "compile-devDependencies" : [

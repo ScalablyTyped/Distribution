@@ -18,5 +18,6 @@ package object httpDashProxyMod {
     /* target */ js.UndefOr[ProxyTargetUrl], 
     Unit
   ]
+  type ProxyTarget = ProxyTargetUrl | ProxyTargetDetailed
   type ProxyTargetUrl = String | Partial[Url]
 }

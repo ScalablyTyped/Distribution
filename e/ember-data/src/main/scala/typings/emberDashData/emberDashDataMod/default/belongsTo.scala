@@ -25,7 +25,7 @@ object belongsTo extends js.Object {
     modelName: K,
     options: (RelationshipOptions[
       /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
-    ]) with (Async | Sync)
+    ]) with Sync with Async
   ): ComputedProperty[
     /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any, 
     /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any

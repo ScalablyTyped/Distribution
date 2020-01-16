@@ -2,10 +2,10 @@ package typings.vscodeDashLanguageserverDashTypes
 
 import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.CompletionItemKind
 import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.DiagnosticSeverity
+import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.DiagnosticTag
 import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.DocumentHighlightKind
 import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.InsertTextFormat
 import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.SymbolKind
-import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.TextDocumentSaveReason
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,10 +15,10 @@ object vscodeDashLanguageserverDashTypesNumbers {
   sealed trait `1`
     extends CompletionItemKind
        with DiagnosticSeverity
+       with DiagnosticTag
        with DocumentHighlightKind
        with InsertTextFormat
        with SymbolKind
-       with TextDocumentSaveReason
   
   @js.native
   sealed trait `10`
@@ -74,10 +74,10 @@ object vscodeDashLanguageserverDashTypesNumbers {
   sealed trait `2`
     extends CompletionItemKind
        with DiagnosticSeverity
+       with DiagnosticTag
        with DocumentHighlightKind
        with InsertTextFormat
        with SymbolKind
-       with TextDocumentSaveReason
   
   @js.native
   sealed trait `20`
@@ -118,7 +118,6 @@ object vscodeDashLanguageserverDashTypesNumbers {
        with DiagnosticSeverity
        with DocumentHighlightKind
        with SymbolKind
-       with TextDocumentSaveReason
   
   @js.native
   sealed trait `4`

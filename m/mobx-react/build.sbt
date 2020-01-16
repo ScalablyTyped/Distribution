@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "mobx-react"
-version := "6.1.4-306735"
+version := "6.1.5-43562e"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "csstype" % "2.6.6-fd5644",
   "org.scalablytyped" %%% "mobx" % "5.15.1-f59f50",
-  "org.scalablytyped" %%% "mobx-react-lite" % "1.4.2-083a8f",
+  "org.scalablytyped" %%% "mobx-react-lite" % "1.5.2-5e042b",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-b24434",
   "org.scalablytyped" %%% "react" % "16.9-dt-20191220Z-22d23f",
   "org.scalablytyped" %%% "std" % "3.7-b6d959")

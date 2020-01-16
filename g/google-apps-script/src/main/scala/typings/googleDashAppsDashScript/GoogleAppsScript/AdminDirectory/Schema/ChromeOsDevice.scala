@@ -9,6 +9,7 @@ trait ChromeOsDevice extends js.Object {
   var annotatedAssetId: js.UndefOr[String] = js.undefined
   var annotatedLocation: js.UndefOr[String] = js.undefined
   var annotatedUser: js.UndefOr[String] = js.undefined
+  var autoUpdateExpiration: js.UndefOr[String] = js.undefined
   var bootMode: js.UndefOr[String] = js.undefined
   var cpuStatusReports: js.UndefOr[js.Array[ChromeOsDeviceCpuStatusReports]] = js.undefined
   var deviceFiles: js.UndefOr[js.Array[ChromeOsDeviceDeviceFiles]] = js.undefined
@@ -45,6 +46,7 @@ object ChromeOsDevice {
     annotatedAssetId: String = null,
     annotatedLocation: String = null,
     annotatedUser: String = null,
+    autoUpdateExpiration: String = null,
     bootMode: String = null,
     cpuStatusReports: js.Array[ChromeOsDeviceCpuStatusReports] = null,
     deviceFiles: js.Array[ChromeOsDeviceDeviceFiles] = null,
@@ -78,6 +80,7 @@ object ChromeOsDevice {
     if (annotatedAssetId != null) __obj.updateDynamic("annotatedAssetId")(annotatedAssetId.asInstanceOf[js.Any])
     if (annotatedLocation != null) __obj.updateDynamic("annotatedLocation")(annotatedLocation.asInstanceOf[js.Any])
     if (annotatedUser != null) __obj.updateDynamic("annotatedUser")(annotatedUser.asInstanceOf[js.Any])
+    if (autoUpdateExpiration != null) __obj.updateDynamic("autoUpdateExpiration")(autoUpdateExpiration.asInstanceOf[js.Any])
     if (bootMode != null) __obj.updateDynamic("bootMode")(bootMode.asInstanceOf[js.Any])
     if (cpuStatusReports != null) __obj.updateDynamic("cpuStatusReports")(cpuStatusReports.asInstanceOf[js.Any])
     if (deviceFiles != null) __obj.updateDynamic("deviceFiles")(deviceFiles.asInstanceOf[js.Any])

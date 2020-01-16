@@ -1,7 +1,7 @@
 package typings.easyDashXapiDashSupertest.cryptoMod
 
-import typings.easyDashXapiDashSupertest.Buffer
 import typings.easyDashXapiDashSupertest.easyDashXapiDashSupertestStrings.buffer
+import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

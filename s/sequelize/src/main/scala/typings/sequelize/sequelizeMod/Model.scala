@@ -360,7 +360,7 @@ trait Model[TInstance, TAttributes, TCreationAttributes]
   def getTableName(): String | js.Object = js.native
   def getTableName(options: GetTableNameOptions): String | js.Object = js.native
   def insertOrUpdate(values: TAttributes): typings.bluebird.bluebirdMod.^[Boolean] = js.native
-  def insertOrUpdate(values: TAttributes, options: UpsertOptions with (Anon_FalseReturning | Anon_Returning)): typings.bluebird.bluebirdMod.^[Boolean] = js.native
+  def insertOrUpdate(values: TAttributes, options: UpsertOptions with Anon_FalseReturning with Anon_Returning): typings.bluebird.bluebirdMod.^[Boolean] = js.native
   /**
     * Find the maximum value of field
     */
@@ -492,6 +492,6 @@ trait Model[TInstance, TAttributes, TCreationAttributes]
     * whether the row was inserted or not.
     */
   def upsert(values: TAttributes): typings.bluebird.bluebirdMod.^[Boolean] = js.native
-  def upsert(values: TAttributes, options: UpsertOptions with (Anon_False | Anon_Returning)): typings.bluebird.bluebirdMod.^[Boolean] = js.native
+  def upsert(values: TAttributes, options: UpsertOptions with Anon_False with Anon_Returning): typings.bluebird.bluebirdMod.^[Boolean] = js.native
 }
 

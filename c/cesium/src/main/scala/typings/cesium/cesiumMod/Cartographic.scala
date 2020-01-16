@@ -30,6 +30,9 @@ object Cartographic extends js.Object {
   def equals(left: Cartographic): Boolean = js.native
   def equals(left: Cartographic, right: Cartographic): Boolean = js.native
   def equalsEpsilon(left: Cartographic, right: Cartographic, epsilon: Double): Boolean = js.native
+  def fromCartesian(cartesian: Cartesian3): Cartographic = js.native
+  def fromCartesian(cartesian: Cartesian3, ellipsoid: Ellipsoid): Cartographic = js.native
+  def fromCartesian(cartesian: Cartesian3, ellipsoid: Ellipsoid, result: Cartographic): Cartographic = js.native
   def fromDegrees(longitude: Double, latitude: Double): Cartographic = js.native
   def fromDegrees(longitude: Double, latitude: Double, height: Double): Cartographic = js.native
   def fromDegrees(longitude: Double, latitude: Double, height: Double, result: Cartographic): Cartographic = js.native

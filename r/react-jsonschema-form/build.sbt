@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-jsonschema-form"
-version := "1.6.1-dt-20200102Z-2147bf"
+version := "1.6.1-dt-20200113Z-affaca"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

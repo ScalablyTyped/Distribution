@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@angular/http" : "7.2.15"
+      "@angular/http" : "7.2.16"
     }
   ],
   "test-dependencies" : [
     {
-      "@angular/http" : "7.2.15"
+      "@angular/http" : "7.2.16"
     }
   ],
   "compile-devDependencies" : [

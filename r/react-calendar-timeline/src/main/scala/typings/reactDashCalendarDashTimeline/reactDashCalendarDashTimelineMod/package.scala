@@ -14,6 +14,7 @@ package object reactDashCalendarDashTimelineMod {
 
   type CursorMarkerProps = Omit[MarkerProps, date]
   type GetItemsProps = Partial[Omit[ItemRendererGetItemPropsReturnType, key | ref]]
+  type Id = Double | String
   type ReactCalendarTimeline[CustomItem /* <: TimelineItemBase[_] */, CustomGroup /* <: TimelineGroupBase */] = Component[ReactCalendarTimelineProps[CustomItem, CustomGroup], js.Object, js.Any]
   type TimelineGroup[CustomGroupFields] = TimelineGroupBase with CustomGroupFields
   type TimelineItem[CustomItemFields, DateType] = TimelineItemBase[DateType] with CustomItemFields

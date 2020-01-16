@@ -1404,7 +1404,7 @@ trait Anon_AcceptInvitation extends js.Object {
     */
   def createCommitComment(): js.Promise[Response[ReposCreateCommitCommentResponse]] = js.native
   def createCommitComment(
-    params: RequestOptions with (ReposCreateCommitCommentParams | ReposCreateCommitCommentParamsDeprecatedLine | ReposCreateCommitCommentParamsDeprecatedSha)
+    params: RequestOptions with ReposCreateCommitCommentParamsDeprecatedSha with ReposCreateCommitCommentParamsDeprecatedLine with ReposCreateCommitCommentParams
   ): js.Promise[Response[ReposCreateCommitCommentResponse]] = js.native
   /**
     * Deployments offer a few configurable parameters with sane defaults.
@@ -1682,7 +1682,7 @@ trait Anon_AcceptInvitation extends js.Object {
     */
   def getCommit(): js.Promise[Response[ReposGetCommitResponse]] = js.native
   def getCommit(
-    params: RequestOptions with (ReposGetCommitParams | ReposGetCommitParamsDeprecatedCommitSha | ReposGetCommitParamsDeprecatedSha)
+    params: RequestOptions with ReposGetCommitParamsDeprecatedSha with ReposGetCommitParamsDeprecatedCommitSha with ReposGetCommitParams
   ): js.Promise[Response[ReposGetCommitResponse]] = js.native
   /**
     * Returns the last year of commit activity grouped by week. The `days` array is a group of commits per day, starting on `Sunday`.
@@ -1904,7 +1904,7 @@ trait Anon_AcceptInvitation extends js.Object {
     */
   def listCommentsForCommit(): js.Promise[Response[ReposListCommentsForCommitResponse]] = js.native
   def listCommentsForCommit(
-    params: RequestOptions with (ReposListCommentsForCommitParams | ReposListCommentsForCommitParamsDeprecatedRef)
+    params: RequestOptions with ReposListCommentsForCommitParamsDeprecatedRef with ReposListCommentsForCommitParams
   ): js.Promise[Response[ReposListCommentsForCommitResponse]] = js.native
   /**
     * Commit Comments use [these custom media types](https://developer.github.com/v3/repos/comments/#custom-media-types). You can read more about the use of media types in the API [here](https://developer.github.com/v3/media/).

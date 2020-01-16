@@ -12,6 +12,7 @@ import typings.phaser.Phaser.Types.GameObjects.Group.GroupConfig
 import typings.phaser.Phaser.Types.GameObjects.Group.GroupCreateConfig
 import typings.phaser.Phaser.Types.GameObjects.Particles.ParticleEmitterConfig
 import typings.phaser.Phaser.Types.Tweens.TweenBuilderConfig
+import typings.phaser.SpineGameObject
 import typings.phaser.integer
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -746,6 +747,10 @@ class GameObjectFactory protected () extends js.Object {
     textures: js.UndefOr[js.Array[String]],
     textureData: js.UndefOr[js.Object]
   ): Shader = js.native
+  def spine(x: Double, y: Double): SpineGameObject = js.native
+  def spine(x: Double, y: Double, key: String): SpineGameObject = js.native
+  def spine(x: Double, y: Double, key: String, aimationName: String): SpineGameObject = js.native
+  def spine(x: Double, y: Double, key: String, aimationName: String, loop: Boolean): SpineGameObject = js.native
   /**
     * Creates a new Sprite Game Object and adds it to the Scene.
     * 

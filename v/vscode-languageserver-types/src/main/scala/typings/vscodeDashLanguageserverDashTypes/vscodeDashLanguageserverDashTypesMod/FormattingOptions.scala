@@ -9,7 +9,13 @@ trait FormattingOptions
   extends /**
   * Signature for further properties.
   */
-/* key */ StringDictionary[Boolean | Double | String] {
+/* key */ StringDictionary[js.UndefOr[Boolean | Double | String]] {
+  /**
+    * Insert a newline character at the end of the file if one does not exist.
+    *
+    * @since 3.15.0
+    */
+  var insertFinalNewline: js.UndefOr[Boolean] = js.undefined
   /**
     * Prefer spaces over tabs.
     */
@@ -18,6 +24,18 @@ trait FormattingOptions
     * Size of a tab in spaces.
     */
   var tabSize: Double
+  /**
+    * Trim all newlines after the final newline at the end of the file.
+    *
+    * @since 3.15.0
+    */
+  var trimFinalNewlines: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Trim trailing whitespaces on a line.
+    *
+    * @since 3.15.0
+    */
+  var trimTrailingWhitespace: js.UndefOr[Boolean] = js.undefined
 }
 
 @JSImport("vscode-languageserver-types", "FormattingOptions")

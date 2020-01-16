@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ClusterArgs extends js.Object {
   /**
-    * List of short names or full Amazon Resource Names (ARNs) of one or more capacity providers to associate with the cluster. Valid values also include `FARGATE` and `FARGATE_SPOT`.
+    * List of short names of one or more capacity providers to associate with the cluster. Valid values also include `FARGATE` and `FARGATE_SPOT`.
     */
   val capacityProviders: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**

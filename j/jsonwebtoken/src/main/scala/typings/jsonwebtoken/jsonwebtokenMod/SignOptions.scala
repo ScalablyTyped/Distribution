@@ -18,7 +18,7 @@ trait SignOptions extends js.Object {
     * - ES512:    ECDSA using P-521 curve and SHA-512 hash algorithm
     * - none:     No digital signature or MAC value included
     */
-  var algorithm: js.UndefOr[String] = js.undefined
+  var algorithm: js.UndefOr[Algorithm] = js.undefined
   var audience: js.UndefOr[String | js.Array[String]] = js.undefined
   var encoding: js.UndefOr[String] = js.undefined
   /** expressed in seconds or a string describing a time span [zeit/ms](https://github.com/zeit/ms.js).  Eg: 60, "2 days", "10h", "7d" */
@@ -37,7 +37,7 @@ trait SignOptions extends js.Object {
 object SignOptions {
   @scala.inline
   def apply(
-    algorithm: String = null,
+    algorithm: Algorithm = null,
     audience: String | js.Array[String] = null,
     encoding: String = null,
     expiresIn: String | Double = null,

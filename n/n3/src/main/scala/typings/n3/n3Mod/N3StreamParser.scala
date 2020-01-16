@@ -4,6 +4,7 @@ import typings.n3.Anon_End
 import typings.node.Buffer
 import typings.node.NodeJS.ReadableStream
 import typings.node.NodeJS.WritableStream
+import typings.node.eventsMod.EventEmitter
 import typings.rdfDashJs.rdfDashJsMod.Sink
 import typings.rdfDashJs.rdfDashJsMod.Stream
 import scala.scalajs.js
@@ -14,7 +15,7 @@ import scala.scalajs.js.annotation._
 trait N3StreamParser[Q /* <: BaseQuad */]
   extends Stream[Q]
      with WritableStream
-     with Sink[Q] {
+     with Sink[EventEmitter, Stream[Q]] {
   // Below are the NodeJS.ReadableStream methods,
   // we can not extend the interface directly,
   // as `read` clashes with RDF.Sink.

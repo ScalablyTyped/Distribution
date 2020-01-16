@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@riotjs/dom-bindings" : "4.6.5"
+      "@riotjs/dom-bindings" : "4.6.6"
     }
   ],
   "test-dependencies" : [
     {
-      "@riotjs/dom-bindings" : "4.6.5"
+      "@riotjs/dom-bindings" : "4.6.6"
     }
   ],
   "compile-devDependencies" : [

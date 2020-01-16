@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object sign extends js.Object {
   def apply(
-    options: (SignOptions with (Anon_Armor | Anon_ArmorDetached | Anon_ArmorDetachedFalse | Anon_ArmorDetachedFalseTrue)) | SignOptions
+    options: (SignOptions with Anon_Armor with Anon_ArmorDetachedFalse with Anon_ArmorDetached with Anon_ArmorDetachedFalseTrue) | SignOptions
   ): js.Promise[Anon_Data] = js.native
 }
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for sindresorhus__is
 
-Typings are for version 1.2.0
+Typings are for version 0.7.0
 
 ## Library description:
 Type check values

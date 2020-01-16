@@ -49,7 +49,7 @@ trait ServerOptions extends js.Object {
   /** Object to be passed to https.createServer(). */
   var ssl: js.UndefOr[js.Any] = js.undefined
   /** URL string to be parsed with the url module. */
-  var target: js.UndefOr[ProxyTargetUrl] = js.undefined
+  var target: js.UndefOr[ProxyTarget] = js.undefined
   /** Timeout (in milliseconds) for incoming requests */
   var timeout: js.UndefOr[Double] = js.undefined
   /** Explicitly specify if we are proxying to another proxy. */
@@ -83,7 +83,7 @@ object ServerOptions {
     secure: js.UndefOr[Boolean] = js.undefined,
     selfHandleResponse: js.UndefOr[Boolean] = js.undefined,
     ssl: js.Any = null,
-    target: ProxyTargetUrl = null,
+    target: ProxyTarget = null,
     timeout: Int | Double = null,
     toProxy: js.UndefOr[Boolean] = js.undefined,
     ws: js.UndefOr[Boolean] = js.undefined,

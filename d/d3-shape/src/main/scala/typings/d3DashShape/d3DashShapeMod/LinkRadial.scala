@@ -1,6 +1,6 @@
 package typings.d3DashShape.d3DashShapeMod
 
-import typings.d3DashShape.d3DashShapeMod._Global_.CanvasRenderingContext2D
+import typings.std.CanvasRenderingContext2D
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

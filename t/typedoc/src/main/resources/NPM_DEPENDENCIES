@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "typedoc" : "0.15.6"
+      "typedoc" : "0.15.8"
     }
   ],
   "test-dependencies" : [
     {
-      "typedoc" : "0.15.6"
+      "typedoc" : "0.15.8"
     }
   ],
   "compile-devDependencies" : [

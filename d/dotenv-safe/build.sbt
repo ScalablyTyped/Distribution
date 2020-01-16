@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "dotenv-safe"
-version := "8.1-dt-20191111Z-efe363"
+version := "8.1-dt-20191111Z-1112bd"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "dotenv" % "8.2.0-e20ca6",
-  "org.scalablytyped" %%% "node" % "13.1-dt-20200103Z-51871a",
+  "org.scalablytyped" %%% "dotenv" % "8.2.0-9fdb61",
+  "org.scalablytyped" %%% "node" % "13.1-dt-20200115Z-14f523",
   "org.scalablytyped" %%% "std" % "3.7-b6d959")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

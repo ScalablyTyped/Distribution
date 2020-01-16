@@ -25,8 +25,9 @@ import typings.reactDashNative.reactDashNativeStrings.radiobutton_checked
 import typings.reactDashNative.reactDashNativeStrings.radiobutton_unchecked
 import typings.reactDashNative.reactDashNativeStrings.yes
 import typings.reactDashNativeDashVideo.Anon_Applicationttmlxml
+import typings.reactDashNativeDashVideo.Anon_Auto
+import typings.reactDashNativeDashVideo.Anon_BufferForPlaybackAfterRebufferMs
 import typings.reactDashNativeDashVideo.Anon_Disabled
-import typings.reactDashNativeDashVideo.Anon_PlaybackRate
 import typings.reactDashNativeDashVideo.Anon_Uri
 import typings.reactDashNativeDashVideo.reactDashNativeDashVideoStrings.all
 import typings.reactDashNativeDashVideo.reactDashNativeDashVideoStrings.contain
@@ -44,30 +45,41 @@ import scala.scalajs.js.annotation._
 trait VideoProperties extends ViewProps {
   var allowsExternalPlayback: js.UndefOr[Boolean] = js.undefined
   var audioOnly: js.UndefOr[Boolean] = js.undefined
+  var automaticallyWaitsToMinimizeStalling: js.UndefOr[Boolean] = js.undefined
+  var bufferConfig: js.UndefOr[Anon_BufferForPlaybackAfterRebufferMs] = js.undefined
   var controls: js.UndefOr[Boolean] = js.undefined
   var currentTime: js.UndefOr[Double] = js.undefined
   var disableFocus: js.UndefOr[Boolean] = js.undefined
+  var filter: js.UndefOr[FilterType] = js.undefined
+  var filterEnable: js.UndefOr[Boolean] = js.undefined
   var fullscreen: js.UndefOr[Boolean] = js.undefined
   var fullscreenAutorotate: js.UndefOr[Boolean] = js.undefined
   var fullscreenOrientation: js.UndefOr[all | landscape | portrait] = js.undefined
+  var hideShutterView: js.UndefOr[Boolean] = js.undefined
   var ignoreSilentSwitch: js.UndefOr[ignore | obey] = js.undefined
+  var maxBitRate: js.UndefOr[Double] = js.undefined
+  var minLoadRetryCount: js.UndefOr[Double] = js.undefined
   var muted: js.UndefOr[Boolean] = js.undefined
   var onAudioBecomingNoisy: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onAudioFocusChanged: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var onBandwidthUpdate: js.UndefOr[js.Function1[/* data */ OnBandwidthUpdateData, Unit]] = js.undefined
   var onBuffer: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onError: js.UndefOr[js.Function1[/* error */ LoadError, Unit]] = js.undefined
+  var onExternalPlaybackChange: js.UndefOr[js.Function1[/* data */ OnExternalPlaybackChangeData, Unit]] = js.undefined
   var onFullscreenPlayerDidDismiss: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onFullscreenPlayerDidPresent: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onFullscreenPlayerWillDismiss: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onFullscreenPlayerWillPresent: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onLoad: js.UndefOr[js.Function1[/* data */ OnLoadData, Unit]] = js.undefined
   var onLoadStart: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onPlaybackRateChange: js.UndefOr[js.Function1[/* data */ Anon_PlaybackRate, Unit]] = js.undefined
+  var onPictureInPictureStatusChanged: js.UndefOr[js.Function1[/* data */ OnPictureInPictureStatusData, Unit]] = js.undefined
+  var onPlaybackRateChange: js.UndefOr[js.Function1[/* data */ OnPlaybackRateData, Unit]] = js.undefined
   var onPlaybackResume: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onPlaybackStalled: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onProgress: js.UndefOr[js.Function1[/* data */ OnProgressData, Unit]] = js.undefined
   var onReadyForDisplay: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var onRestoreUserInterfaceForPictureInPictureStop: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onSeek: js.UndefOr[js.Function1[/* data */ OnSeekData, Unit]] = js.undefined
   var onTimedMetadata: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onVideoBuffer: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -82,6 +94,7 @@ trait VideoProperties extends ViewProps {
   var onVideoProgress: js.UndefOr[js.Function0[Unit]] = js.undefined
   var onVideoSeek: js.UndefOr[js.Function0[Unit]] = js.undefined
   var paused: js.UndefOr[Boolean] = js.undefined
+  var pictureInPicture: js.UndefOr[Boolean] = js.undefined
   var playInBackground: js.UndefOr[Boolean] = js.undefined
   var playWhenInactive: js.UndefOr[Boolean] = js.undefined
    // via Image#resizeMode
@@ -91,18 +104,22 @@ trait VideoProperties extends ViewProps {
   var progressUpdateInterval: js.UndefOr[Double] = js.undefined
   var rate: js.UndefOr[Double] = js.undefined
   var repeat: js.UndefOr[Boolean] = js.undefined
+  var reportBandwidth: js.UndefOr[Boolean] = js.undefined
   var resizeMode: js.UndefOr[stretch | contain | cover | none] = js.undefined
   var rotation: js.UndefOr[Double] = js.undefined
   /* Required by react-native */
   var scaleX: js.UndefOr[Double] = js.undefined
   var scaleY: js.UndefOr[Double] = js.undefined
   var seek: js.UndefOr[Double] = js.undefined
+  var selectedAudioTrack: js.UndefOr[Anon_Disabled] = js.undefined
   var selectedTextTrack: js.UndefOr[Anon_Disabled] = js.undefined
+  var selectedVideoTrack: js.UndefOr[Anon_Auto] = js.undefined
   /* Wrapper component */
   // Opaque type returned by require('./video.mp4')
   var source: Anon_Uri | Double
   /* Native only */
   var src: js.UndefOr[js.Any] = js.undefined
+  var stereoPan: js.UndefOr[Double] = js.undefined
   var textTracks: js.UndefOr[js.Array[Anon_Applicationttmlxml]] = js.undefined
   var translateX: js.UndefOr[Double] = js.undefined
   var translateY: js.UndefOr[Double] = js.undefined
@@ -129,18 +146,25 @@ object VideoProperties {
     accessible: js.UndefOr[Boolean] = js.undefined,
     allowsExternalPlayback: js.UndefOr[Boolean] = js.undefined,
     audioOnly: js.UndefOr[Boolean] = js.undefined,
+    automaticallyWaitsToMinimizeStalling: js.UndefOr[Boolean] = js.undefined,
+    bufferConfig: Anon_BufferForPlaybackAfterRebufferMs = null,
     collapsable: js.UndefOr[Boolean] = js.undefined,
     controls: js.UndefOr[Boolean] = js.undefined,
     currentTime: Int | Double = null,
     disableFocus: js.UndefOr[Boolean] = js.undefined,
+    filter: FilterType = null,
+    filterEnable: js.UndefOr[Boolean] = js.undefined,
     fullscreen: js.UndefOr[Boolean] = js.undefined,
     fullscreenAutorotate: js.UndefOr[Boolean] = js.undefined,
     fullscreenOrientation: all | landscape | portrait = null,
     hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined,
+    hideShutterView: js.UndefOr[Boolean] = js.undefined,
     hitSlop: Insets = null,
     ignoreSilentSwitch: ignore | obey = null,
     importantForAccessibility: auto | yes | no | `no-hide-descendants` = null,
     isTVSelectable: js.UndefOr[Boolean] = js.undefined,
+    maxBitRate: Int | Double = null,
+    minLoadRetryCount: Int | Double = null,
     muted: js.UndefOr[Boolean] = js.undefined,
     nativeID: String = null,
     needsOffscreenAlphaCompositing: js.UndefOr[Boolean] = js.undefined,
@@ -148,9 +172,11 @@ object VideoProperties {
     onAccessibilityTap: () => Unit = null,
     onAudioBecomingNoisy: () => Unit = null,
     onAudioFocusChanged: () => Unit = null,
+    onBandwidthUpdate: /* data */ OnBandwidthUpdateData => Unit = null,
     onBuffer: () => Unit = null,
     onEnd: () => Unit = null,
     onError: /* error */ LoadError => Unit = null,
+    onExternalPlaybackChange: /* data */ OnExternalPlaybackChangeData => Unit = null,
     onFullscreenPlayerDidDismiss: () => Unit = null,
     onFullscreenPlayerDidPresent: () => Unit = null,
     onFullscreenPlayerWillDismiss: () => Unit = null,
@@ -161,7 +187,8 @@ object VideoProperties {
     onMagicTap: () => Unit = null,
     onMoveShouldSetResponder: /* event */ GestureResponderEvent => Boolean = null,
     onMoveShouldSetResponderCapture: /* event */ GestureResponderEvent => Boolean = null,
-    onPlaybackRateChange: /* data */ Anon_PlaybackRate => Unit = null,
+    onPictureInPictureStatusChanged: /* data */ OnPictureInPictureStatusData => Unit = null,
+    onPlaybackRateChange: /* data */ OnPlaybackRateData => Unit = null,
     onPlaybackResume: () => Unit = null,
     onPlaybackStalled: () => Unit = null,
     onProgress: /* data */ OnProgressData => Unit = null,
@@ -174,6 +201,7 @@ object VideoProperties {
     onResponderStart: /* event */ GestureResponderEvent => Unit = null,
     onResponderTerminate: /* event */ GestureResponderEvent => Unit = null,
     onResponderTerminationRequest: /* event */ GestureResponderEvent => Boolean = null,
+    onRestoreUserInterfaceForPictureInPictureStop: () => Unit = null,
     onSeek: /* data */ OnSeekData => Unit = null,
     onStartShouldSetResponder: /* event */ GestureResponderEvent => Boolean = null,
     onStartShouldSetResponderCapture: /* event */ GestureResponderEvent => Boolean = null,
@@ -195,6 +223,7 @@ object VideoProperties {
     onVideoProgress: () => Unit = null,
     onVideoSeek: () => Unit = null,
     paused: js.UndefOr[Boolean] = js.undefined,
+    pictureInPicture: js.UndefOr[Boolean] = js.undefined,
     playInBackground: js.UndefOr[Boolean] = js.undefined,
     playWhenInactive: js.UndefOr[Boolean] = js.undefined,
     pointerEvents: `box-none` | typings.reactDashNative.reactDashNativeStrings.none | `box-only` | auto = null,
@@ -205,14 +234,18 @@ object VideoProperties {
     removeClippedSubviews: js.UndefOr[Boolean] = js.undefined,
     renderToHardwareTextureAndroid: js.UndefOr[Boolean] = js.undefined,
     repeat: js.UndefOr[Boolean] = js.undefined,
+    reportBandwidth: js.UndefOr[Boolean] = js.undefined,
     resizeMode: stretch | contain | cover | none = null,
     rotation: Int | Double = null,
     scaleX: Int | Double = null,
     scaleY: Int | Double = null,
     seek: Int | Double = null,
+    selectedAudioTrack: Anon_Disabled = null,
     selectedTextTrack: Anon_Disabled = null,
+    selectedVideoTrack: Anon_Auto = null,
     shouldRasterizeIOS: js.UndefOr[Boolean] = js.undefined,
     src: js.Any = null,
+    stereoPan: Int | Double = null,
     style: StyleProp[ViewStyle] = null,
     testID: String = null,
     textTracks: js.Array[Anon_Applicationttmlxml] = null,
@@ -242,18 +275,25 @@ object VideoProperties {
     if (!js.isUndefined(accessible)) __obj.updateDynamic("accessible")(accessible.asInstanceOf[js.Any])
     if (!js.isUndefined(allowsExternalPlayback)) __obj.updateDynamic("allowsExternalPlayback")(allowsExternalPlayback.asInstanceOf[js.Any])
     if (!js.isUndefined(audioOnly)) __obj.updateDynamic("audioOnly")(audioOnly.asInstanceOf[js.Any])
+    if (!js.isUndefined(automaticallyWaitsToMinimizeStalling)) __obj.updateDynamic("automaticallyWaitsToMinimizeStalling")(automaticallyWaitsToMinimizeStalling.asInstanceOf[js.Any])
+    if (bufferConfig != null) __obj.updateDynamic("bufferConfig")(bufferConfig.asInstanceOf[js.Any])
     if (!js.isUndefined(collapsable)) __obj.updateDynamic("collapsable")(collapsable.asInstanceOf[js.Any])
     if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls.asInstanceOf[js.Any])
     if (currentTime != null) __obj.updateDynamic("currentTime")(currentTime.asInstanceOf[js.Any])
     if (!js.isUndefined(disableFocus)) __obj.updateDynamic("disableFocus")(disableFocus.asInstanceOf[js.Any])
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (!js.isUndefined(filterEnable)) __obj.updateDynamic("filterEnable")(filterEnable.asInstanceOf[js.Any])
     if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen.asInstanceOf[js.Any])
     if (!js.isUndefined(fullscreenAutorotate)) __obj.updateDynamic("fullscreenAutorotate")(fullscreenAutorotate.asInstanceOf[js.Any])
     if (fullscreenOrientation != null) __obj.updateDynamic("fullscreenOrientation")(fullscreenOrientation.asInstanceOf[js.Any])
     if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideShutterView)) __obj.updateDynamic("hideShutterView")(hideShutterView.asInstanceOf[js.Any])
     if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop.asInstanceOf[js.Any])
     if (ignoreSilentSwitch != null) __obj.updateDynamic("ignoreSilentSwitch")(ignoreSilentSwitch.asInstanceOf[js.Any])
     if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
     if (!js.isUndefined(isTVSelectable)) __obj.updateDynamic("isTVSelectable")(isTVSelectable.asInstanceOf[js.Any])
+    if (maxBitRate != null) __obj.updateDynamic("maxBitRate")(maxBitRate.asInstanceOf[js.Any])
+    if (minLoadRetryCount != null) __obj.updateDynamic("minLoadRetryCount")(minLoadRetryCount.asInstanceOf[js.Any])
     if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted.asInstanceOf[js.Any])
     if (nativeID != null) __obj.updateDynamic("nativeID")(nativeID.asInstanceOf[js.Any])
     if (!js.isUndefined(needsOffscreenAlphaCompositing)) __obj.updateDynamic("needsOffscreenAlphaCompositing")(needsOffscreenAlphaCompositing.asInstanceOf[js.Any])
@@ -261,9 +301,11 @@ object VideoProperties {
     if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(js.Any.fromFunction0(onAccessibilityTap))
     if (onAudioBecomingNoisy != null) __obj.updateDynamic("onAudioBecomingNoisy")(js.Any.fromFunction0(onAudioBecomingNoisy))
     if (onAudioFocusChanged != null) __obj.updateDynamic("onAudioFocusChanged")(js.Any.fromFunction0(onAudioFocusChanged))
+    if (onBandwidthUpdate != null) __obj.updateDynamic("onBandwidthUpdate")(js.Any.fromFunction1(onBandwidthUpdate))
     if (onBuffer != null) __obj.updateDynamic("onBuffer")(js.Any.fromFunction0(onBuffer))
     if (onEnd != null) __obj.updateDynamic("onEnd")(js.Any.fromFunction0(onEnd))
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
+    if (onExternalPlaybackChange != null) __obj.updateDynamic("onExternalPlaybackChange")(js.Any.fromFunction1(onExternalPlaybackChange))
     if (onFullscreenPlayerDidDismiss != null) __obj.updateDynamic("onFullscreenPlayerDidDismiss")(js.Any.fromFunction0(onFullscreenPlayerDidDismiss))
     if (onFullscreenPlayerDidPresent != null) __obj.updateDynamic("onFullscreenPlayerDidPresent")(js.Any.fromFunction0(onFullscreenPlayerDidPresent))
     if (onFullscreenPlayerWillDismiss != null) __obj.updateDynamic("onFullscreenPlayerWillDismiss")(js.Any.fromFunction0(onFullscreenPlayerWillDismiss))
@@ -274,6 +316,7 @@ object VideoProperties {
     if (onMagicTap != null) __obj.updateDynamic("onMagicTap")(js.Any.fromFunction0(onMagicTap))
     if (onMoveShouldSetResponder != null) __obj.updateDynamic("onMoveShouldSetResponder")(js.Any.fromFunction1(onMoveShouldSetResponder))
     if (onMoveShouldSetResponderCapture != null) __obj.updateDynamic("onMoveShouldSetResponderCapture")(js.Any.fromFunction1(onMoveShouldSetResponderCapture))
+    if (onPictureInPictureStatusChanged != null) __obj.updateDynamic("onPictureInPictureStatusChanged")(js.Any.fromFunction1(onPictureInPictureStatusChanged))
     if (onPlaybackRateChange != null) __obj.updateDynamic("onPlaybackRateChange")(js.Any.fromFunction1(onPlaybackRateChange))
     if (onPlaybackResume != null) __obj.updateDynamic("onPlaybackResume")(js.Any.fromFunction0(onPlaybackResume))
     if (onPlaybackStalled != null) __obj.updateDynamic("onPlaybackStalled")(js.Any.fromFunction0(onPlaybackStalled))
@@ -287,6 +330,7 @@ object VideoProperties {
     if (onResponderStart != null) __obj.updateDynamic("onResponderStart")(js.Any.fromFunction1(onResponderStart))
     if (onResponderTerminate != null) __obj.updateDynamic("onResponderTerminate")(js.Any.fromFunction1(onResponderTerminate))
     if (onResponderTerminationRequest != null) __obj.updateDynamic("onResponderTerminationRequest")(js.Any.fromFunction1(onResponderTerminationRequest))
+    if (onRestoreUserInterfaceForPictureInPictureStop != null) __obj.updateDynamic("onRestoreUserInterfaceForPictureInPictureStop")(js.Any.fromFunction0(onRestoreUserInterfaceForPictureInPictureStop))
     if (onSeek != null) __obj.updateDynamic("onSeek")(js.Any.fromFunction1(onSeek))
     if (onStartShouldSetResponder != null) __obj.updateDynamic("onStartShouldSetResponder")(js.Any.fromFunction1(onStartShouldSetResponder))
     if (onStartShouldSetResponderCapture != null) __obj.updateDynamic("onStartShouldSetResponderCapture")(js.Any.fromFunction1(onStartShouldSetResponderCapture))
@@ -308,6 +352,7 @@ object VideoProperties {
     if (onVideoProgress != null) __obj.updateDynamic("onVideoProgress")(js.Any.fromFunction0(onVideoProgress))
     if (onVideoSeek != null) __obj.updateDynamic("onVideoSeek")(js.Any.fromFunction0(onVideoSeek))
     if (!js.isUndefined(paused)) __obj.updateDynamic("paused")(paused.asInstanceOf[js.Any])
+    if (!js.isUndefined(pictureInPicture)) __obj.updateDynamic("pictureInPicture")(pictureInPicture.asInstanceOf[js.Any])
     if (!js.isUndefined(playInBackground)) __obj.updateDynamic("playInBackground")(playInBackground.asInstanceOf[js.Any])
     if (!js.isUndefined(playWhenInactive)) __obj.updateDynamic("playWhenInactive")(playWhenInactive.asInstanceOf[js.Any])
     if (pointerEvents != null) __obj.updateDynamic("pointerEvents")(pointerEvents.asInstanceOf[js.Any])
@@ -318,14 +363,18 @@ object VideoProperties {
     if (!js.isUndefined(removeClippedSubviews)) __obj.updateDynamic("removeClippedSubviews")(removeClippedSubviews.asInstanceOf[js.Any])
     if (!js.isUndefined(renderToHardwareTextureAndroid)) __obj.updateDynamic("renderToHardwareTextureAndroid")(renderToHardwareTextureAndroid.asInstanceOf[js.Any])
     if (!js.isUndefined(repeat)) __obj.updateDynamic("repeat")(repeat.asInstanceOf[js.Any])
+    if (!js.isUndefined(reportBandwidth)) __obj.updateDynamic("reportBandwidth")(reportBandwidth.asInstanceOf[js.Any])
     if (resizeMode != null) __obj.updateDynamic("resizeMode")(resizeMode.asInstanceOf[js.Any])
     if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
     if (scaleX != null) __obj.updateDynamic("scaleX")(scaleX.asInstanceOf[js.Any])
     if (scaleY != null) __obj.updateDynamic("scaleY")(scaleY.asInstanceOf[js.Any])
     if (seek != null) __obj.updateDynamic("seek")(seek.asInstanceOf[js.Any])
+    if (selectedAudioTrack != null) __obj.updateDynamic("selectedAudioTrack")(selectedAudioTrack.asInstanceOf[js.Any])
     if (selectedTextTrack != null) __obj.updateDynamic("selectedTextTrack")(selectedTextTrack.asInstanceOf[js.Any])
+    if (selectedVideoTrack != null) __obj.updateDynamic("selectedVideoTrack")(selectedVideoTrack.asInstanceOf[js.Any])
     if (!js.isUndefined(shouldRasterizeIOS)) __obj.updateDynamic("shouldRasterizeIOS")(shouldRasterizeIOS.asInstanceOf[js.Any])
     if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
+    if (stereoPan != null) __obj.updateDynamic("stereoPan")(stereoPan.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (testID != null) __obj.updateDynamic("testID")(testID.asInstanceOf[js.Any])
     if (textTracks != null) __obj.updateDynamic("textTracks")(textTracks.asInstanceOf[js.Any])

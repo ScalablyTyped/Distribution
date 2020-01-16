@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "gulp-connect"
-version := "5.0-dt-20191122Z-38cd4f"
+version := "5.0-dt-20191122Z-be17c3"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20191217Z-224a28",
-  "org.scalablytyped" %%% "node" % "13.1-dt-20200103Z-51871a",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20191217Z-0a9c38",
+  "org.scalablytyped" %%% "node" % "13.1-dt-20200115Z-14f523",
   "org.scalablytyped" %%% "std" % "3.7-b6d959")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

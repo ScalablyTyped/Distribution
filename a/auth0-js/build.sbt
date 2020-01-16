@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "auth0-js"
-version := "9.10-dt-20191204Z-15fab7"
+version := "9.10-dt-20200115Z-e5afd8"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

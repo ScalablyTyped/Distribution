@@ -592,6 +592,9 @@ object nodeStrings {
   sealed trait buffer_ extends js.Object
   
   @js.native
+  sealed trait `chacha20-poly1305` extends CipherCCMTypes
+  
+  @js.native
   sealed trait change extends js.Object
   
   @js.native
@@ -1298,6 +1301,8 @@ object nodeStrings {
   def binary: binary = "binary".asInstanceOf[binary]
   @scala.inline
   def buffer_ : buffer_ = "buffer".asInstanceOf[buffer_]
+  @scala.inline
+  def `chacha20-poly1305`: `chacha20-poly1305` = "chacha20-poly1305".asInstanceOf[`chacha20-poly1305`]
   @scala.inline
   def change: change = "change".asInstanceOf[change]
   @scala.inline

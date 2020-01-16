@@ -19,7 +19,7 @@ class PostProcessStage () extends js.Object {
   val scissorRectangle: BoundingRectangle = js.native
   var selected: js.Array[_] = js.native
   val textureScale: Double = js.native
-  val uniforms: js.Object = js.native
+  val uniforms: js.Any = js.native
   def destroy(): Unit = js.native
   def isDestroyed(): Boolean = js.native
 }

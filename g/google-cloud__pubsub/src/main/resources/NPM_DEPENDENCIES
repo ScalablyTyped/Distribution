@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@google-cloud/pubsub" : "1.2.0"
+      "@google-cloud/pubsub" : "1.3.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@google-cloud/pubsub" : "1.2.0"
+      "@google-cloud/pubsub" : "1.3.0"
     }
   ],
   "compile-devDependencies" : [

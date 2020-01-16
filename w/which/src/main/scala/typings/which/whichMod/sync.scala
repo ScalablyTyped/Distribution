@@ -11,6 +11,6 @@ object sync extends js.Object {
   def apply(cmd: String): String = js.native
   /** Finds all instances of a specified executable in the PATH environment variable */
   /** Finds the first instance of a specified executable in the PATH environment variable */
-  def apply(cmd: String, options: (Options with (OptionsAll | OptionsFirst) with OptionsNoThrow) | Options): js.Array[String] | Null = js.native
+  def apply(cmd: String, options: (Options with OptionsAll with OptionsNoThrow with OptionsFirst) | Options): js.Array[String] | Null = js.native
 }
 

@@ -1,5 +1,6 @@
 package typings.vscodeDashLanguageserverDashProtocol.vscodeDashLanguageserverDashProtocolMod
 
+import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.DocumentUri
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +12,7 @@ object TextDocumentIdentifier extends js.Object {
     * Creates a new TextDocumentIdentifier literal.
     * @param uri The document's uri.
     */
-  def create(uri: String): typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.TextDocumentIdentifier = js.native
+  def create(uri: DocumentUri): typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.TextDocumentIdentifier = js.native
   /**
     * Checks whether the given literal conforms to the [TextDocumentIdentifier](#TextDocumentIdentifier) interface.
     */

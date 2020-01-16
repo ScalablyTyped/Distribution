@@ -79,9 +79,13 @@ trait Options extends js.Object {
     */
   var objname: js.UndefOr[String] = js.undefined
   /**
+    * Alter and filter records by executing a user defined function.
+    */
+  var on_record: js.UndefOr[js.Function2[/* record */ js.Any, /* context */ CastingContext, _]] = js.undefined
+  /**
     * Optional character surrounding a field, one character only, defaults to double quotes.
     */
-  var quote: js.UndefOr[String | Boolean | Buffer] = js.undefined
+  var quote: js.UndefOr[String | Boolean | Buffer | Null] = js.undefined
   /**
     * Generate two properties raw and row where raw is the original CSV row content and row is the parsed array or object.
     */
@@ -99,6 +103,14 @@ trait Options extends js.Object {
     * Discard inconsistent columns count, default to false.
     */
   var relax_column_count: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Discard inconsistent columns count when the record contains less fields than expected, default to false.
+    */
+  var relax_column_count_less: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Discard inconsistent columns count when the record contains more fields than expected, default to false.
+    */
+  var relax_column_count_more: js.UndefOr[Boolean] = js.undefined
   /**
     * If true, ignore whitespace immediately preceding the delimiter (i.e. right-trim all fields), defaults to false.
     * Does not remove whitespace in a quoted field.
@@ -150,11 +162,14 @@ object Options {
     ltrim: js.UndefOr[Boolean] = js.undefined,
     max_record_size: Int | Double = null,
     objname: String = null,
+    on_record: (/* record */ js.Any, /* context */ CastingContext) => _ = null,
     quote: String | Boolean | Buffer = null,
     raw: js.UndefOr[Boolean] = js.undefined,
     record_delimiter: String | (js.Array[Buffer | String]) | Buffer = null,
     relax: js.UndefOr[Boolean] = js.undefined,
     relax_column_count: js.UndefOr[Boolean] = js.undefined,
+    relax_column_count_less: js.UndefOr[Boolean] = js.undefined,
+    relax_column_count_more: js.UndefOr[Boolean] = js.undefined,
     rtrim: js.UndefOr[Boolean] = js.undefined,
     skip_empty_lines: js.UndefOr[Boolean] = js.undefined,
     skip_lines_with_empty_values: js.UndefOr[Boolean] = js.undefined,
@@ -166,31 +181,34 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (auto_parse != null) __obj.updateDynamic("auto_parse")(auto_parse.asInstanceOf[js.Any])
     if (auto_parse_date != null) __obj.updateDynamic("auto_parse_date")(auto_parse_date.asInstanceOf[js.Any])
-    if (!js.isUndefined(bom)) __obj.updateDynamic("bom")(bom)
+    if (!js.isUndefined(bom)) __obj.updateDynamic("bom")(bom.asInstanceOf[js.Any])
     if (cast != null) __obj.updateDynamic("cast")(cast.asInstanceOf[js.Any])
     if (cast_date != null) __obj.updateDynamic("cast_date")(cast_date.asInstanceOf[js.Any])
     if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (comment != null) __obj.updateDynamic("comment")(comment)
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
     if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
     if (escape != null) __obj.updateDynamic("escape")(escape.asInstanceOf[js.Any])
     if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
     if (from_line != null) __obj.updateDynamic("from_line")(from_line.asInstanceOf[js.Any])
-    if (!js.isUndefined(info)) __obj.updateDynamic("info")(info)
-    if (!js.isUndefined(ltrim)) __obj.updateDynamic("ltrim")(ltrim)
+    if (!js.isUndefined(info)) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
+    if (!js.isUndefined(ltrim)) __obj.updateDynamic("ltrim")(ltrim.asInstanceOf[js.Any])
     if (max_record_size != null) __obj.updateDynamic("max_record_size")(max_record_size.asInstanceOf[js.Any])
-    if (objname != null) __obj.updateDynamic("objname")(objname)
+    if (objname != null) __obj.updateDynamic("objname")(objname.asInstanceOf[js.Any])
+    if (on_record != null) __obj.updateDynamic("on_record")(js.Any.fromFunction2(on_record))
     if (quote != null) __obj.updateDynamic("quote")(quote.asInstanceOf[js.Any])
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw)
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
     if (record_delimiter != null) __obj.updateDynamic("record_delimiter")(record_delimiter.asInstanceOf[js.Any])
-    if (!js.isUndefined(relax)) __obj.updateDynamic("relax")(relax)
-    if (!js.isUndefined(relax_column_count)) __obj.updateDynamic("relax_column_count")(relax_column_count)
-    if (!js.isUndefined(rtrim)) __obj.updateDynamic("rtrim")(rtrim)
-    if (!js.isUndefined(skip_empty_lines)) __obj.updateDynamic("skip_empty_lines")(skip_empty_lines)
-    if (!js.isUndefined(skip_lines_with_empty_values)) __obj.updateDynamic("skip_lines_with_empty_values")(skip_lines_with_empty_values)
-    if (!js.isUndefined(skip_lines_with_error)) __obj.updateDynamic("skip_lines_with_error")(skip_lines_with_error)
+    if (!js.isUndefined(relax)) __obj.updateDynamic("relax")(relax.asInstanceOf[js.Any])
+    if (!js.isUndefined(relax_column_count)) __obj.updateDynamic("relax_column_count")(relax_column_count.asInstanceOf[js.Any])
+    if (!js.isUndefined(relax_column_count_less)) __obj.updateDynamic("relax_column_count_less")(relax_column_count_less.asInstanceOf[js.Any])
+    if (!js.isUndefined(relax_column_count_more)) __obj.updateDynamic("relax_column_count_more")(relax_column_count_more.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtrim)) __obj.updateDynamic("rtrim")(rtrim.asInstanceOf[js.Any])
+    if (!js.isUndefined(skip_empty_lines)) __obj.updateDynamic("skip_empty_lines")(skip_empty_lines.asInstanceOf[js.Any])
+    if (!js.isUndefined(skip_lines_with_empty_values)) __obj.updateDynamic("skip_lines_with_empty_values")(skip_lines_with_empty_values.asInstanceOf[js.Any])
+    if (!js.isUndefined(skip_lines_with_error)) __obj.updateDynamic("skip_lines_with_error")(skip_lines_with_error.asInstanceOf[js.Any])
     if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     if (to_line != null) __obj.updateDynamic("to_line")(to_line.asInstanceOf[js.Any])
-    if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim)
+    if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
 }

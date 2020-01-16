@@ -16,7 +16,7 @@ trait Anon_EndpointParamsPromiseRequestOptionsResponseTeamsUpdateParams extends 
   @JSName("endpoint")
   var endpoint_Original: Endpoint = js.native
   def apply(): js.Promise[Response[TeamsUpdateResponse]] = js.native
-  def apply(params: RequestOptions with (TeamsUpdateParams | TeamsUpdateParamsDeprecatedPermission)): js.Promise[Response[TeamsUpdateResponse]] = js.native
+  def apply(params: RequestOptions with TeamsUpdateParamsDeprecatedPermission with TeamsUpdateParams): js.Promise[Response[TeamsUpdateResponse]] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native
   def endpoint(Route: String, EndpointOptions: EndpointOptions): RequestOptions = js.native

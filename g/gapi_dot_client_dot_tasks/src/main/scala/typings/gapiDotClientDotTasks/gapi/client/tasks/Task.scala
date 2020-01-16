@@ -10,7 +10,10 @@ trait Task extends js.Object {
   var completed: js.UndefOr[String] = js.undefined
   /** Flag indicating whether the task has been deleted. The default if False. */
   var deleted: js.UndefOr[Boolean] = js.undefined
-  /** Due date of the task (as a RFC 3339 timestamp). Optional. */
+  /**
+    * Due date of the task (as a RFC 3339 timestamp). Optional. The due date only records date information; the time portion of the timestamp is discarded
+    * when setting the due date. It isn't possible to read or write the time that a task is due via the API.
+    */
   var due: js.UndefOr[String] = js.undefined
   /** ETag of the resource. */
   var etag: js.UndefOr[String] = js.undefined

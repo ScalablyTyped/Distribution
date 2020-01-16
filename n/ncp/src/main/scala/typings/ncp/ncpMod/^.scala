@@ -21,7 +21,7 @@ object ^ extends js.Object {
   def apply(
     source: String,
     destination: String,
-    options: (Options with (Anon_Errs | Anon_ErrsPathLike | Anon_StopOnErr)) | Options,
+    options: (Options with Anon_StopOnErr with Anon_Errs with Anon_ErrsPathLike) | Options,
     callback: js.Function1[js.Array[Error] | Error | Null | WriteStream, Unit]
   ): Unit = js.native
   /**

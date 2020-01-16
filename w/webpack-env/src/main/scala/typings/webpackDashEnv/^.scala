@@ -1,5 +1,7 @@
 package typings.webpackDashEnv
 
+import typings.node.NodeModule
+import typings.node.NodeRequire
 import typings.webpackDashEnv.NodeJS.Process
 import typings.webpackDashEnv.__WebpackModuleApi.RequireLambda
 import scala.scalajs.js

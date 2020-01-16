@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("countries-and-timezones", "getCountry")
 @js.native
 object getCountry extends js.Object {
-  def apply(id: String): Country = js.native
+  def apply(id: String): Country | Null = js.native
 }
 

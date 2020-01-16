@@ -93,7 +93,7 @@ class UserPool protected () extends CustomResource {
     */
   val passwordPolicy: Output[UserPoolPasswordPolicy] = js.native
   /**
-    * A container with the schema attributes of a user pool. Maximum of 50 attributes.
+    * A container with the schema attributes of a user pool. Schema attributes from the [standard attribute set](https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-settings-attributes.html#cognito-user-pools-standard-attributes) only need to be specified if they are different from the default configuration. Maximum of 50 attributes.
     */
   val schemas: Output[js.UndefOr[js.Array[UserPoolSchema]]] = js.native
   /**

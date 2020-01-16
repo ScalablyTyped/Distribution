@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mui-datatables"
-version := "2.13-dt-20191227Z-6b13ce"
+version := "2.13-dt-20200107Z-652866"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

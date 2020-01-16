@@ -1,6 +1,6 @@
 package typings.atHapiHapi.atHapiHapiMod
 
-import typings.atHapiBoom.atHapiBoomMod.^
+import typings.atHapiBoom.atHapiBoomMod.Boom
 import typings.atHapiHapi.Anon_Close
 import typings.atHapiHapi.Anon_Req
 import typings.atHapiHapi.atHapiHapiMod.Util.Dictionary
@@ -129,7 +129,7 @@ trait Request extends Podium {
     * override with a different response.
     * In case of an aborted request the status code will be set to `disconnectStatusCode`.
     */
-  var response: ResponseObject | ^[_] = js.native
+  var response: ResponseObject | Boom[_] = js.native
   /**
     * The request route information object and method
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-requestroute)

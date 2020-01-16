@@ -12,7 +12,7 @@ trait MustacheStatic extends js.Object {
   /**
     * Represents a rendering context by wrapping a view object and maintaining a reference to the parent context.
     */
-  var Context: Instantiable2[/* view */ js.Any, /* parentContext */ MustacheContext, MustacheContext] = js.native
+  var Context: Instantiable2[/* view */ js.Any, js.UndefOr[/* parentContext */ MustacheContext], MustacheContext] = js.native
   /**
     * A simple string scanner that is used by the template parser to find tokens in template strings.
     */
@@ -26,15 +26,20 @@ trait MustacheStatic extends js.Object {
   /**
     * The name of the module.
     */
-  var name: String = js.native
+  val name: String = js.native
   /**
-    * The opening and closing tags to parse.
+    * The default opening and closing tags used while parsing the templates.
+    *
+    * Different default tags can be overridden by setting this field. They will have effect on all subsequent
+    * calls to `.render()` or `.parse()`, unless custom tags are given as arguments to those functions.
+    *
+    * Default value is `[ "{{", "}}" ]`.
     */
-  var tags: js.Array[String] = js.native
+  var tags: OpeningAndClosingTags = js.native
   /**
     * The version of the module.
     */
-  var version: String = js.native
+  val version: String = js.native
   /**
     * Clears all cached templates in this writer.
     */
@@ -58,7 +63,7 @@ trait MustacheStatic extends js.Object {
     * The tags to use.
     */
   def parse(template: String): js.Any = js.native
-  def parse(template: String, tags: js.Array[String]): js.Any = js.native
+  def parse(template: String, tags: OpeningAndClosingTags): js.Any = js.native
   /**
     * Renders the `template` with the given `view` and `partials` using the default writer.
     *
@@ -79,11 +84,11 @@ trait MustacheStatic extends js.Object {
     * The tags to use.
     */
   def render(template: String, view: js.Any): String = js.native
-  def render(template: String, view: js.Any, partials: js.Any): String = js.native
-  def render(template: String, view: js.Any, partials: js.Any, tags: js.Array[String]): String = js.native
+  def render(template: String, view: js.Any, partials: PartialsOrLookupFn): String = js.native
+  def render(template: String, view: js.Any, partials: PartialsOrLookupFn, tags: OpeningAndClosingTags): String = js.native
   def render(template: String, view: MustacheContext): String = js.native
-  def render(template: String, view: MustacheContext, partials: js.Any): String = js.native
-  def render(template: String, view: MustacheContext, partials: js.Any, tags: js.Array[String]): String = js.native
+  def render(template: String, view: MustacheContext, partials: PartialsOrLookupFn): String = js.native
+  def render(template: String, view: MustacheContext, partials: PartialsOrLookupFn, tags: OpeningAndClosingTags): String = js.native
   /**
     * Renders the `template` with the given `view` and `partials` using the default writer.
     *
@@ -100,11 +105,29 @@ trait MustacheStatic extends js.Object {
     *
     * A function that is used to load partial template on the fly that takes a single argument: the name of the partial.
     */
-  def to_html(template: String, view: js.Any): js.Any = js.native
-  def to_html(template: String, view: js.Any, partials: js.Any): js.Any = js.native
-  def to_html(template: String, view: js.Any, partials: js.Any, send: js.Any): js.Any = js.native
-  def to_html(template: String, view: MustacheContext): js.Any = js.native
-  def to_html(template: String, view: MustacheContext, partials: js.Any): js.Any = js.native
-  def to_html(template: String, view: MustacheContext, partials: js.Any, send: js.Any): js.Any = js.native
+  def to_html(template: String, view: js.Any): String = js.native
+  def to_html(template: String, view: js.Any, partials: PartialsOrLookupFn): String = js.native
+  def to_html(
+    template: String,
+    view: js.Any,
+    partials: PartialsOrLookupFn,
+    send: js.Function1[/* result */ String, Unit]
+  ): Unit = js.native
+  def to_html(template: String, view: MustacheContext): String = js.native
+  def to_html(template: String, view: MustacheContext, partials: PartialsOrLookupFn): String = js.native
+  def to_html(
+    template: String,
+    view: MustacheContext,
+    partials: PartialsOrLookupFn,
+    send: js.Function1[/* result */ String, Unit]
+  ): Unit = js.native
+  @JSName("to_html")
+  def to_html_Unit(template: String, view: js.Any): Unit = js.native
+  @JSName("to_html")
+  def to_html_Unit(template: String, view: js.Any, partials: PartialsOrLookupFn): Unit = js.native
+  @JSName("to_html")
+  def to_html_Unit(template: String, view: MustacheContext): Unit = js.native
+  @JSName("to_html")
+  def to_html_Unit(template: String, view: MustacheContext, partials: PartialsOrLookupFn): Unit = js.native
 }
 

@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 class KeyPair protected () extends js.Object {
   def this(ec: typings.elliptic.ellipticMod.ec, options: KeyPairOptions) = this()
   var ec: typings.elliptic.ellipticMod.ec = js.native
-  def derive(pub: js.Any): js.Any = js.native
+  def derive(pub: BasePoint): js.Any = js.native
   def getPrivate(): js.Any = js.native
   @JSName("getPrivate")
   def getPrivate_hex(enc: hex): String = js.native
@@ -31,7 +31,6 @@ class KeyPair protected () extends js.Object {
   def getPublic_hex(enc: hex): String = js.native
   def inspect(): String = js.native
   def sign(msg: BNInput): Signature = js.native
-   // ?
   def sign(msg: BNInput, enc: String): Signature = js.native
   def sign(msg: BNInput, enc: String, options: SignOptions): Signature = js.native
   def sign(msg: BNInput, options: SignOptions): Signature = js.native

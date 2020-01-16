@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "apollo-graphql" : "0.3.6"
+      "apollo-graphql" : "0.3.7"
     }
   ],
   "test-dependencies" : [
     {
-      "apollo-graphql" : "0.3.6"
+      "apollo-graphql" : "0.3.7"
     }
   ],
   "compile-devDependencies" : [

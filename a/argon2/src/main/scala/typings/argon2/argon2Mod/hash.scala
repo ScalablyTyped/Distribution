@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object hash extends js.Object {
   def apply(plain: String): js.Promise[String] = js.native
-  def apply(plain: String, options: Options with (Anon_False | Anon_Raw)): js.Promise[Buffer] = js.native
+  def apply(plain: String, options: Options with Anon_Raw with Anon_False): js.Promise[Buffer] = js.native
   def apply(plain: Buffer): js.Promise[String] = js.native
-  def apply(plain: Buffer, options: Options with (Anon_False | Anon_Raw)): js.Promise[Buffer] = js.native
+  def apply(plain: Buffer, options: Options with Anon_Raw with Anon_False): js.Promise[Buffer] = js.native
 }
 

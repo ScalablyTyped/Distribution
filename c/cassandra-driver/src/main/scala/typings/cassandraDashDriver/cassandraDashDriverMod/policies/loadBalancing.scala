@@ -1,5 +1,6 @@
 package typings.cassandraDashDriver.cassandraDashDriverMod.policies
 
+import typings.cassandraDashDriver.Anon_Filter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,6 +12,12 @@ object loadBalancing extends js.Object {
   class DCAwareRoundRobinPolicy protected ()
     extends typings.cassandraDashDriver.libPoliciesMod.policies.loadBalancing.DCAwareRoundRobinPolicy {
     def this(localDc: String) = this()
+  }
+  
+  @js.native
+  class DefaultLoadBalancingPolicy ()
+    extends typings.cassandraDashDriver.libPoliciesMod.policies.loadBalancing.DefaultLoadBalancingPolicy {
+    def this(options: Anon_Filter) = this()
   }
   
   @js.native

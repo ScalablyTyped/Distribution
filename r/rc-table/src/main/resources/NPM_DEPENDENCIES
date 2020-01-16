@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rc-table" : "6.10.10"
+      "rc-table" : "6.10.11"
     }
   ],
   "test-dependencies" : [
     {
-      "rc-table" : "6.10.10"
+      "rc-table" : "6.10.11"
     }
   ],
   "compile-devDependencies" : [

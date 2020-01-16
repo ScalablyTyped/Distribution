@@ -1,7 +1,7 @@
 package typings.easyDashXDashHeaders.stringUnderscoreDecoderMod
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.easyDashXDashHeaders.Buffer
+import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

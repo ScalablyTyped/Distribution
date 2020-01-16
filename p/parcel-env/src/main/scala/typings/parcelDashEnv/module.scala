@@ -1,6 +1,7 @@
 package typings.parcelDashEnv
 
 import org.scalablytyped.runtime.TopLevel
+import typings.node.NodeModule
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

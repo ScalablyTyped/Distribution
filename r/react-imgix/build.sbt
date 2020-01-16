@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-imgix"
-version := "9.0-dt-20191217Z-0d23d6"
+version := "9.0-dt-20200115Z-0d23d6"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

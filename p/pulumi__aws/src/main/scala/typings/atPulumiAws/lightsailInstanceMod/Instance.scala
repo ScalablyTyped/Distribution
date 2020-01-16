@@ -58,7 +58,7 @@ class Instance protected () extends CustomResource {
     */
   val keyPairName: Output[js.UndefOr[String]] = js.native
   /**
-    * The name of the Lightsail Instance
+    * The name of the Lightsail Instance. Names be unique within each AWS Region in your Lightsail account.
     */
   val name: Output[String] = js.native
   val privateIpAddress: Output[String] = js.native

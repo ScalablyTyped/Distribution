@@ -13,10 +13,10 @@ import typings.cypress.typesBluebirdMod.PromisifyOptions
 import typings.cypress.typesBluebirdMod.Resolvable
 import typings.cypress.typesBluebirdMod.ResolvableProps
 import typings.cypress.typesBluebirdMod.Resolver
-import typings.cypress.typesLodashMod._Global_.Map
 import typings.std.Error
 import typings.std.Iterable
 import typings.std.IterableIterator
+import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

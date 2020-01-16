@@ -27,6 +27,9 @@ trait DatepickerOptions extends js.Object {
   var beforeShowDecade: js.UndefOr[
     js.Function1[/* date */ Date, js.UndefOr[String | Boolean | DatepickerBeforeShowResponse]]
   ] = js.undefined
+  var beforeShowMonth: js.UndefOr[
+    js.Function1[/* date */ Date, js.UndefOr[String | Boolean | DatepickerBeforeShowResponse]]
+  ] = js.undefined
   var beforeShowYear: js.UndefOr[
     js.Function1[/* date */ Date, js.UndefOr[String | Boolean | DatepickerBeforeShowResponse]]
   ] = js.undefined
@@ -34,7 +37,7 @@ trait DatepickerOptions extends js.Object {
   var clearBtn: js.UndefOr[Boolean] = js.undefined
   var container: js.UndefOr[String] = js.undefined
   var datesDisabled: js.UndefOr[String | js.Array[String]] = js.undefined
-  var daysOfWeekDisabled: js.UndefOr[js.Array[Double]] = js.undefined
+  var daysOfWeekDisabled: js.UndefOr[String | js.Array[Double]] = js.undefined
   var daysOfWeekHighlighted: js.UndefOr[String | js.Array[Double]] = js.undefined
   var defaultViewDate: js.UndefOr[Date | String | DatepickerViewDate] = js.undefined
   var enableOnReadonly: js.UndefOr[Boolean] = js.undefined
@@ -43,6 +46,7 @@ trait DatepickerOptions extends js.Object {
   var format: js.UndefOr[String | DatepickerCustomFormatOptions] = js.undefined
   var immediateUpdates: js.UndefOr[Boolean] = js.undefined
   var inputs: js.UndefOr[js.Array[_]] = js.undefined
+  var keepEmptyValues: js.UndefOr[Boolean] = js.undefined
   var keyboardNavigation: js.UndefOr[Boolean] = js.undefined
   var language: js.UndefOr[String] = js.undefined
   var maxViewMode: js.UndefOr[DatepickerViewModes] = js.undefined
@@ -51,14 +55,14 @@ trait DatepickerOptions extends js.Object {
   var multidateSeparator: js.UndefOr[String] = js.undefined
   var orientation: js.UndefOr[DatepickerOrientations] = js.undefined
   var showOnFocus: js.UndefOr[Boolean] = js.undefined
+  var showWeekDays: js.UndefOr[Boolean] = js.undefined
   var startDate: js.UndefOr[Date | String] = js.undefined
-  var startView: js.UndefOr[Double] = js.undefined
+  var startView: js.UndefOr[DatepickerViewModes] = js.undefined
   var templates: js.UndefOr[js.Any] = js.undefined
   var title: js.UndefOr[String] = js.undefined
   var todayBtn: js.UndefOr[Boolean | linked] = js.undefined
   var todayHighlight: js.UndefOr[Boolean] = js.undefined
   var updateViewDate: js.UndefOr[Boolean] = js.undefined
-  var viewMode: js.UndefOr[String] = js.undefined
   var weekStart: js.UndefOr[Double] = js.undefined
   var zIndexOffset: js.UndefOr[Double] = js.undefined
 }
@@ -71,12 +75,13 @@ object DatepickerOptions {
     beforeShowCentury: /* date */ Date => js.UndefOr[String | Boolean | DatepickerBeforeShowResponse] = null,
     beforeShowDay: /* date */ Date => js.UndefOr[String | Boolean | DatepickerBeforeShowDayResponse] = null,
     beforeShowDecade: /* date */ Date => js.UndefOr[String | Boolean | DatepickerBeforeShowResponse] = null,
+    beforeShowMonth: /* date */ Date => js.UndefOr[String | Boolean | DatepickerBeforeShowResponse] = null,
     beforeShowYear: /* date */ Date => js.UndefOr[String | Boolean | DatepickerBeforeShowResponse] = null,
     calendarWeeks: js.UndefOr[Boolean] = js.undefined,
     clearBtn: js.UndefOr[Boolean] = js.undefined,
     container: String = null,
     datesDisabled: String | js.Array[String] = null,
-    daysOfWeekDisabled: js.Array[Double] = null,
+    daysOfWeekDisabled: String | js.Array[Double] = null,
     daysOfWeekHighlighted: String | js.Array[Double] = null,
     defaultViewDate: Date | String | DatepickerViewDate = null,
     enableOnReadonly: js.UndefOr[Boolean] = js.undefined,
@@ -85,6 +90,7 @@ object DatepickerOptions {
     format: String | DatepickerCustomFormatOptions = null,
     immediateUpdates: js.UndefOr[Boolean] = js.undefined,
     inputs: js.Array[_] = null,
+    keepEmptyValues: js.UndefOr[Boolean] = js.undefined,
     keyboardNavigation: js.UndefOr[Boolean] = js.undefined,
     language: String = null,
     maxViewMode: DatepickerViewModes = null,
@@ -93,14 +99,14 @@ object DatepickerOptions {
     multidateSeparator: String = null,
     orientation: DatepickerOrientations = null,
     showOnFocus: js.UndefOr[Boolean] = js.undefined,
+    showWeekDays: js.UndefOr[Boolean] = js.undefined,
     startDate: Date | String = null,
-    startView: Int | Double = null,
+    startView: DatepickerViewModes = null,
     templates: js.Any = null,
     title: String = null,
     todayBtn: Boolean | linked = null,
     todayHighlight: js.UndefOr[Boolean] = js.undefined,
     updateViewDate: js.UndefOr[Boolean] = js.undefined,
-    viewMode: String = null,
     weekStart: Int | Double = null,
     zIndexOffset: Int | Double = null
   ): DatepickerOptions = {
@@ -110,6 +116,7 @@ object DatepickerOptions {
     if (beforeShowCentury != null) __obj.updateDynamic("beforeShowCentury")(js.Any.fromFunction1(beforeShowCentury))
     if (beforeShowDay != null) __obj.updateDynamic("beforeShowDay")(js.Any.fromFunction1(beforeShowDay))
     if (beforeShowDecade != null) __obj.updateDynamic("beforeShowDecade")(js.Any.fromFunction1(beforeShowDecade))
+    if (beforeShowMonth != null) __obj.updateDynamic("beforeShowMonth")(js.Any.fromFunction1(beforeShowMonth))
     if (beforeShowYear != null) __obj.updateDynamic("beforeShowYear")(js.Any.fromFunction1(beforeShowYear))
     if (!js.isUndefined(calendarWeeks)) __obj.updateDynamic("calendarWeeks")(calendarWeeks.asInstanceOf[js.Any])
     if (!js.isUndefined(clearBtn)) __obj.updateDynamic("clearBtn")(clearBtn.asInstanceOf[js.Any])
@@ -124,6 +131,7 @@ object DatepickerOptions {
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     if (!js.isUndefined(immediateUpdates)) __obj.updateDynamic("immediateUpdates")(immediateUpdates.asInstanceOf[js.Any])
     if (inputs != null) __obj.updateDynamic("inputs")(inputs.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepEmptyValues)) __obj.updateDynamic("keepEmptyValues")(keepEmptyValues.asInstanceOf[js.Any])
     if (!js.isUndefined(keyboardNavigation)) __obj.updateDynamic("keyboardNavigation")(keyboardNavigation.asInstanceOf[js.Any])
     if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
     if (maxViewMode != null) __obj.updateDynamic("maxViewMode")(maxViewMode.asInstanceOf[js.Any])
@@ -132,6 +140,7 @@ object DatepickerOptions {
     if (multidateSeparator != null) __obj.updateDynamic("multidateSeparator")(multidateSeparator.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     if (!js.isUndefined(showOnFocus)) __obj.updateDynamic("showOnFocus")(showOnFocus.asInstanceOf[js.Any])
+    if (!js.isUndefined(showWeekDays)) __obj.updateDynamic("showWeekDays")(showWeekDays.asInstanceOf[js.Any])
     if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
     if (startView != null) __obj.updateDynamic("startView")(startView.asInstanceOf[js.Any])
     if (templates != null) __obj.updateDynamic("templates")(templates.asInstanceOf[js.Any])
@@ -139,7 +148,6 @@ object DatepickerOptions {
     if (todayBtn != null) __obj.updateDynamic("todayBtn")(todayBtn.asInstanceOf[js.Any])
     if (!js.isUndefined(todayHighlight)) __obj.updateDynamic("todayHighlight")(todayHighlight.asInstanceOf[js.Any])
     if (!js.isUndefined(updateViewDate)) __obj.updateDynamic("updateViewDate")(updateViewDate.asInstanceOf[js.Any])
-    if (viewMode != null) __obj.updateDynamic("viewMode")(viewMode.asInstanceOf[js.Any])
     if (weekStart != null) __obj.updateDynamic("weekStart")(weekStart.asInstanceOf[js.Any])
     if (zIndexOffset != null) __obj.updateDynamic("zIndexOffset")(zIndexOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatepickerOptions]

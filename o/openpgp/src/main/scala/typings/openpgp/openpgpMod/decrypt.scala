@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 @JSImport("openpgp", "decrypt")
 @js.native
 object decrypt extends js.Object {
-  def apply(options: (DecryptOptions with (Anon_Binary | Anon_Format)) | DecryptOptions): js.Promise[DecryptResult with Anon_DataNodeStream] = js.native
+  def apply(options: (DecryptOptions with Anon_Format with Anon_Binary) | DecryptOptions): js.Promise[DecryptResult with Anon_DataNodeStream] = js.native
 }
 

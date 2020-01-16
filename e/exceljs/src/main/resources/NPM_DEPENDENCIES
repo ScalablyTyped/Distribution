@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "exceljs" : "3.5.0"
+      "exceljs" : "3.6.0"
     }
   ],
   "test-dependencies" : [
     {
-      "exceljs" : "3.5.0"
+      "exceljs" : "3.6.0"
     }
   ],
   "compile-devDependencies" : [

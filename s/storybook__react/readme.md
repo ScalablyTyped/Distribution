@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__react
 
-Typings are for version 5.2.8
+Typings are for version 5.3.4
 
 ## Library description:
 Storybook for React: Develop React Component in isolation with Hot Reloading.

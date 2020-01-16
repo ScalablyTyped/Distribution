@@ -1122,6 +1122,9 @@ object atStorybookComponentsStrings {
   sealed trait title extends js.Object
   
   @js.native
+  sealed trait translate extends js.Object
+  
+  @js.native
   sealed trait `type` extends js.Object
   
   @js.native
@@ -1902,6 +1905,8 @@ object atStorybookComponentsStrings {
   def target: target = "target".asInstanceOf[target]
   @scala.inline
   def title: title = "title".asInstanceOf[title]
+  @scala.inline
+  def translate: translate = "translate".asInstanceOf[translate]
   @scala.inline
   def `type`: `type` = "type".asInstanceOf[`type`]
   @scala.inline

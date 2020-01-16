@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "intl-messageformat-parser"
-version := "3.5.2-3e00f0"
+version := "3.6.2-898a7b"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "formatjs__intl-unified-numberformat" % "3.0.0-bd6ed8",
-  "org.scalablytyped" %%% "formatjs__intl-utils" % "2.0.0-a08574",
+  "org.scalablytyped" %%% "formatjs__intl-unified-numberformat" % "3.0.4-8bcd30",
+  "org.scalablytyped" %%% "formatjs__intl-utils" % "2.0.4-f8e8e6",
   "org.scalablytyped" %%% "std" % "3.7-b6d959")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

@@ -6,6 +6,7 @@ import typings.node.httpMod.IncomingMessage
 import typings.node.netMod.Socket
 import typings.std.Error
 import typings.std.Set
+import typings.ws.wsStrings.close
 import typings.ws.wsStrings.connection
 import typings.ws.wsStrings.error
 import typings.ws.wsStrings.headers
@@ -23,6 +24,8 @@ class Server () extends EventEmitter {
   var clients: Set[WebSocket] = js.native
   var options: ServerOptions = js.native
   var path: String = js.native
+  @JSName("addListener")
+  def addListener_close(event: close, cb: js.Function0[Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_connection(event: connection, cb: js.Function1[/* client */ WebSocket, Unit]): this.type = js.native
   @JSName("addListener")
@@ -45,6 +48,8 @@ class Server () extends EventEmitter {
   ): Unit = js.native
   def on(event: String, listener: js.ThisFunction1[/* this */ WebSocket, /* repeated */ js.Any, Unit]): this.type = js.native
   def on(event: js.Symbol, listener: js.ThisFunction1[/* this */ WebSocket, /* repeated */ js.Any, Unit]): this.type = js.native
+  @JSName("on")
+  def on_close(event: close, cb: js.ThisFunction0[/* this */ WebSocket, Unit]): this.type = js.native
   // Events
   @JSName("on")
   def on_connection(

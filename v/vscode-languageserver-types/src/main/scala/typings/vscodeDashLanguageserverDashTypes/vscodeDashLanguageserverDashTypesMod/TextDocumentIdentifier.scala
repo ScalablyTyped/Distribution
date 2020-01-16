@@ -8,7 +8,7 @@ trait TextDocumentIdentifier extends js.Object {
   /**
     * The text document's uri.
     */
-  var uri: String
+  var uri: DocumentUri
 }
 
 @JSImport("vscode-languageserver-types", "TextDocumentIdentifier")
@@ -18,7 +18,7 @@ object TextDocumentIdentifier extends js.Object {
     * Creates a new TextDocumentIdentifier literal.
     * @param uri The document's uri.
     */
-  def create(uri: String): TextDocumentIdentifier = js.native
+  def create(uri: DocumentUri): TextDocumentIdentifier = js.native
   /**
     * Checks whether the given literal conforms to the [TextDocumentIdentifier](#TextDocumentIdentifier) interface.
     */

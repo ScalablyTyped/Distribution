@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bootstrap-datepicker"
-version := "0.0-unknown-dt-20190322Z-8ac600"
+version := "0.0-unknown-dt-20200109Z-6dd08a"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

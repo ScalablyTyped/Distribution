@@ -6,7 +6,9 @@ import scala.scalajs.js.annotation._
 
 package object reactDashTableMod {
   import typings.react.reactMod.ComponentType
-  import typings.react.reactMod.ReactNode
+  import typings.react.reactMod.ReactElement
+  import typings.react.reactMod.ReactFragment
+  import typings.react.reactMod.ReactText
   import typings.reactDashTable.Anon_Action
   import typings.reactDashTable.Anon_Aggregate
   import typings.reactDashTable.Anon_Aggregations
@@ -60,7 +62,7 @@ package object reactDashTableMod {
   type IdType[D] = StringKey[D] | String
   type Meta[D /* <: js.Object */, Extension, M] = (M with Extension) | M
   type PropGetter[D /* <: js.Object */, Props, T /* <: js.Object */, P] = (js.Function2[/* props */ P, /* meta */ Meta[D, T, MetaBase[D]], P | js.Array[P]]) | P | js.Array[P]
-  type Renderer[Props] = ComponentType[Props] | ReactNode
+  type Renderer[Props] = ComponentType[Props] | ReactElement | ReactText | ReactFragment
   type Row[D /* <: js.Object */] = UseTableRowProps[D]
   type RowPropGetter[D /* <: js.Object */] = PropGetter[D, TableRowProps, Anon_Row[D], Partial[TableRowProps]]
   type SortByFn[D /* <: js.Object */] = js.Function3[/* rowA */ Row[D], /* rowB */ Row[D], /* columnId */ IdType[D], `0` | `1` | `-1`]

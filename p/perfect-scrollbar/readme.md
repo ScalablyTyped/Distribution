@@ -1,7 +1,7 @@
 
 # Scala.js typings for perfect-scrollbar
 
-Typings are for version 1.4.0
+Typings are for version 1.5.0
 
 ## Library description:
 Minimalistic but perfect custom scrollbar plugin

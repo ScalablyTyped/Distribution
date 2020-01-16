@@ -1,7 +1,7 @@
 
 # Scala.js typings for yargs-parser
 
-Typings are for version 13.1
+Typings are for version 15.0
 
 ## Library description:
 the mighty option parser used by yargs

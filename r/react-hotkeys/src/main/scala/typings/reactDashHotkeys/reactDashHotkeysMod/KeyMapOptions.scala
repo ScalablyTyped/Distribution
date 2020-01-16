@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait KeyMapOptions extends js.Object {
+trait KeyMapOptions extends _KeySequence {
   var action: KeyEventName
   var sequence: MouseTrapKeySequence
 }

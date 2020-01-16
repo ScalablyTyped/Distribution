@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "isomorphic-form-data"
-version := "2.0-dt-20191002Z-6b4ddb"
+version := "2.0-dt-20191002Z-2d7754"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "form-data" % "2.5.1-3a2873",
-  "org.scalablytyped" %%% "node" % "13.1-dt-20200103Z-51871a",
+  "org.scalablytyped" %%% "form-data" % "2.5.1-f4779f",
+  "org.scalablytyped" %%% "node" % "13.1-dt-20200115Z-14f523",
   "org.scalablytyped" %%% "std" % "3.7-b6d959")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

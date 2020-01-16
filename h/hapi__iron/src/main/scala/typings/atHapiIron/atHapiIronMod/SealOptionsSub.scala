@@ -9,20 +9,19 @@ import scala.scalajs.js.annotation._
 
 trait SealOptionsSub extends js.Object {
   /**
-    * the algorithm used ('aes-256-cbc' for encryption and 'sha256' for integrity are the only two supported at this time).
+    The algorithm used. Defaults to 'aes-256-cbc' for encryption and 'sha256' for integrity.
     */
   var algorithm: `aes-128-ctr` | `aes-256-cbc` | sha256
   /**
-    * the number of iterations used to derive a key from the password. Set to 1 by default. The number of ideal iterations
-    * to use is dependent on your application's performance requirements. More iterations means it takes longer to generate the key.
+    The number of iterations used to derive a key from the password. Defaults to 1.
     */
   var iterations: Double
   /**
-    * minimum password size
+    Minimum password size. Defaults to 32.
     */
   var minPasswordlength: Double
   /**
-    * the size of the salt (random buffer used to ensure that two identical objects will generate a different encrypted result.
+    The length of the salt (random buffer used to ensure that two identical objects will generate a different encrypted result). Defaults to 256.
     */
   var saltBits: Double
 }

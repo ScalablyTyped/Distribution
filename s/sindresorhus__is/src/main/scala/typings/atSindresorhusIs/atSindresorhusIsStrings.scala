@@ -13,15 +13,6 @@ object atSindresorhusIsStrings {
   sealed trait ArrayBuffer extends TypeName
   
   @js.native
-  sealed trait AsyncFunction extends TypeName
-  
-  @js.native
-  sealed trait BigInt64Array extends TypeName
-  
-  @js.native
-  sealed trait BigUint64Array extends TypeName
-  
-  @js.native
   sealed trait Buffer extends TypeName
   
   @js.native
@@ -43,12 +34,6 @@ object atSindresorhusIsStrings {
   sealed trait Function extends TypeName
   
   @js.native
-  sealed trait Generator extends TypeName
-  
-  @js.native
-  sealed trait GeneratorFunction extends TypeName
-  
-  @js.native
   sealed trait Int16Array extends TypeName
   
   @js.native
@@ -64,9 +49,6 @@ object atSindresorhusIsStrings {
   sealed trait Object extends TypeName
   
   @js.native
-  sealed trait Observable extends TypeName
-  
-  @js.native
   sealed trait Promise extends TypeName
   
   @js.native
@@ -77,9 +59,6 @@ object atSindresorhusIsStrings {
   
   @js.native
   sealed trait SharedArrayBuffer extends TypeName
-  
-  @js.native
-  sealed trait URL extends TypeName
   
   @js.native
   sealed trait Uint16Array extends TypeName
@@ -98,9 +77,6 @@ object atSindresorhusIsStrings {
   
   @js.native
   sealed trait WeakSet extends TypeName
-  
-  @js.native
-  sealed trait bigint extends TypeName
   
   @js.native
   sealed trait boolean extends TypeName
@@ -125,12 +101,6 @@ object atSindresorhusIsStrings {
   @scala.inline
   def ArrayBuffer: ArrayBuffer = "ArrayBuffer".asInstanceOf[ArrayBuffer]
   @scala.inline
-  def AsyncFunction: AsyncFunction = "AsyncFunction".asInstanceOf[AsyncFunction]
-  @scala.inline
-  def BigInt64Array: BigInt64Array = "BigInt64Array".asInstanceOf[BigInt64Array]
-  @scala.inline
-  def BigUint64Array: BigUint64Array = "BigUint64Array".asInstanceOf[BigUint64Array]
-  @scala.inline
   def Buffer: Buffer = "Buffer".asInstanceOf[Buffer]
   @scala.inline
   def DataView: DataView = "DataView".asInstanceOf[DataView]
@@ -145,10 +115,6 @@ object atSindresorhusIsStrings {
   @scala.inline
   def Function: Function = "Function".asInstanceOf[Function]
   @scala.inline
-  def Generator: Generator = "Generator".asInstanceOf[Generator]
-  @scala.inline
-  def GeneratorFunction: GeneratorFunction = "GeneratorFunction".asInstanceOf[GeneratorFunction]
-  @scala.inline
   def Int16Array: Int16Array = "Int16Array".asInstanceOf[Int16Array]
   @scala.inline
   def Int32Array: Int32Array = "Int32Array".asInstanceOf[Int32Array]
@@ -159,8 +125,6 @@ object atSindresorhusIsStrings {
   @scala.inline
   def Object: Object = "Object".asInstanceOf[Object]
   @scala.inline
-  def Observable: Observable = "Observable".asInstanceOf[Observable]
-  @scala.inline
   def Promise: Promise = "Promise".asInstanceOf[Promise]
   @scala.inline
   def RegExp: RegExp = "RegExp".asInstanceOf[RegExp]
@@ -168,8 +132,6 @@ object atSindresorhusIsStrings {
   def Set: Set = "Set".asInstanceOf[Set]
   @scala.inline
   def SharedArrayBuffer: SharedArrayBuffer = "SharedArrayBuffer".asInstanceOf[SharedArrayBuffer]
-  @scala.inline
-  def URL: URL = "URL".asInstanceOf[URL]
   @scala.inline
   def Uint16Array: Uint16Array = "Uint16Array".asInstanceOf[Uint16Array]
   @scala.inline
@@ -182,8 +144,6 @@ object atSindresorhusIsStrings {
   def WeakMap: WeakMap = "WeakMap".asInstanceOf[WeakMap]
   @scala.inline
   def WeakSet: WeakSet = "WeakSet".asInstanceOf[WeakSet]
-  @scala.inline
-  def bigint: bigint = "bigint".asInstanceOf[bigint]
   @scala.inline
   def boolean: boolean = "boolean".asInstanceOf[boolean]
   @scala.inline

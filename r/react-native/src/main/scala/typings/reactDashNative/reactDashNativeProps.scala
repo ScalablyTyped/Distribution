@@ -60,6 +60,8 @@ trait reactDashNativeProps {
   @scala.inline
   def MaskedViewIOSProps: typings.reactDashNative.reactDashNativeMod.MaskedViewIOSProps.type = typings.reactDashNative.reactDashNativeMod.MaskedViewIOSProps
   type MaskedViewIOSProps = typings.reactDashNative.reactDashNativeMod.MaskedViewIOSProps
+  @scala.inline
+  def ModalProps: typings.reactDashNative.reactDashNativeMod.ModalProps.type = typings.reactDashNative.reactDashNativeMod.ModalProps
   type ModalProps = typings.reactDashNative.reactDashNativeMod.ModalProps
   @scala.inline
   def NavigatorIOSProps: typings.reactDashNative.reactDashNativeMod.NavigatorIOSProps.type = typings.reactDashNative.reactDashNativeMod.NavigatorIOSProps

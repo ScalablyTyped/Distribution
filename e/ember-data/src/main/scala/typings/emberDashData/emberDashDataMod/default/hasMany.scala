@@ -28,7 +28,7 @@ object hasMany extends js.Object {
     `type`: K,
     options: (RelationshipOptions[
       /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
-    ]) with (Async | Sync)
+    ]) with Sync with Async
   ): ComputedProperty[
     typings.emberDashData.emberDashDataMod.DS.ManyArray[
       /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any

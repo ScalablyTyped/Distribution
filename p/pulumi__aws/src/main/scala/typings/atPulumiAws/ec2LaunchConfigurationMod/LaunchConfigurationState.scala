@@ -12,6 +12,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait LaunchConfigurationState extends js.Object {
   /**
+    * The Amazon Resource Name of the launch configuration.
+    */
+  val arn: js.UndefOr[Input[String]] = js.native
+  /**
     * Associate a public ip address with an instance in a VPC.
     */
   val associatePublicIpAddress: js.UndefOr[Input[Boolean]] = js.native
@@ -100,6 +104,7 @@ trait LaunchConfigurationState extends js.Object {
 object LaunchConfigurationState {
   @scala.inline
   def apply(
+    arn: Input[String] = null,
     associatePublicIpAddress: Input[Boolean] = null,
     ebsBlockDevices: Input[js.Array[Input[LaunchConfigurationEbsBlockDevice]]] = null,
     ebsOptimized: Input[Boolean] = null,
@@ -121,6 +126,7 @@ object LaunchConfigurationState {
     vpcClassicLinkSecurityGroups: Input[js.Array[Input[String]]] = null
   ): LaunchConfigurationState = {
     val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
     if (associatePublicIpAddress != null) __obj.updateDynamic("associatePublicIpAddress")(associatePublicIpAddress.asInstanceOf[js.Any])
     if (ebsBlockDevices != null) __obj.updateDynamic("ebsBlockDevices")(ebsBlockDevices.asInstanceOf[js.Any])
     if (ebsOptimized != null) __obj.updateDynamic("ebsOptimized")(ebsOptimized.asInstanceOf[js.Any])

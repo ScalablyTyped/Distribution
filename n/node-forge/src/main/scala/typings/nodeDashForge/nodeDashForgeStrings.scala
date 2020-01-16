@@ -57,7 +57,13 @@ object nodeDashForgeStrings {
   sealed trait `RSAES-PKCS1-V1_5` extends _EncryptionScheme
   
   @js.native
+  sealed trait RSAPublicKey extends js.Object
+  
+  @js.native
   sealed trait `RSASSA-PKCS1-V1_5` extends _SignatureScheme
+  
+  @js.native
+  sealed trait SubjectPublicKeyInfo extends js.Object
   
   @js.native
   sealed trait aes128 extends js.Object
@@ -138,7 +144,11 @@ object nodeDashForgeStrings {
   @scala.inline
   def `RSAES-PKCS1-V1_5`: `RSAES-PKCS1-V1_5` = "RSAES-PKCS1-V1_5".asInstanceOf[`RSAES-PKCS1-V1_5`]
   @scala.inline
+  def RSAPublicKey: RSAPublicKey = "RSAPublicKey".asInstanceOf[RSAPublicKey]
+  @scala.inline
   def `RSASSA-PKCS1-V1_5`: `RSASSA-PKCS1-V1_5` = "RSASSA-PKCS1-V1_5".asInstanceOf[`RSASSA-PKCS1-V1_5`]
+  @scala.inline
+  def SubjectPublicKeyInfo: SubjectPublicKeyInfo = "SubjectPublicKeyInfo".asInstanceOf[SubjectPublicKeyInfo]
   @scala.inline
   def aes128: aes128 = "aes128".asInstanceOf[aes128]
   @scala.inline

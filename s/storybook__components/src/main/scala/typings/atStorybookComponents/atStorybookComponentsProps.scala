@@ -52,14 +52,23 @@ trait atStorybookComponentsProps {
   def PreviewProps: typings.atStorybookComponents.distBlocksPreviewMod.PreviewProps.type = typings.atStorybookComponents.distBlocksPreviewMod.PreviewProps
   type PreviewProps = typings.atStorybookComponents.distBlocksPreviewMod.PreviewProps
   @scala.inline
+  def PropJsDocProps: typings.atStorybookComponents.distBlocksPropsTablePropJsDocMod.PropJsDocProps.type = typings.atStorybookComponents.distBlocksPropsTablePropJsDocMod.PropJsDocProps
+  type PropJsDocProps = typings.atStorybookComponents.distBlocksPropsTablePropJsDocMod.PropJsDocProps
+  @scala.inline
   def PropRowProps: typings.atStorybookComponents.distBlocksPropsTablePropRowMod.PropRowProps.type = typings.atStorybookComponents.distBlocksPropsTablePropRowMod.PropRowProps
   type PropRowProps = typings.atStorybookComponents.distBlocksPropsTablePropRowMod.PropRowProps
+  @scala.inline
+  def PropValueProps: typings.atStorybookComponents.distBlocksPropsTablePropValueMod.PropValueProps.type = typings.atStorybookComponents.distBlocksPropsTablePropValueMod.PropValueProps
+  type PropValueProps = typings.atStorybookComponents.distBlocksPropsTablePropValueMod.PropValueProps
   @scala.inline
   def PropsTableProps: typings.atStorybookComponents.distBlocksPropsTablePropsTableMod.PropsTableProps.type = typings.atStorybookComponents.distBlocksPropsTablePropsTableMod.PropsTableProps
   type PropsTableProps = typings.atStorybookComponents.distBlocksPropsTablePropsTableMod.PropsTableProps
   @scala.inline
   def ScrollAreaProps: typings.atStorybookComponents.distScrollAreaScrollAreaMod.ScrollAreaProps.type = typings.atStorybookComponents.distScrollAreaScrollAreaMod.ScrollAreaProps
   type ScrollAreaProps = typings.atStorybookComponents.distScrollAreaScrollAreaMod.ScrollAreaProps
+  @scala.inline
+  def SectionRowProps: typings.atStorybookComponents.distBlocksPropsTableSectionRowMod.SectionRowProps.type = typings.atStorybookComponents.distBlocksPropsTableSectionRowMod.SectionRowProps
+  type SectionRowProps = typings.atStorybookComponents.distBlocksPropsTableSectionRowMod.SectionRowProps
   type SourceProps = typings.atStorybookComponents.distBlocksSourceMod.SourceProps
   @scala.inline
   def SpacedProps: typings.atStorybookComponents.distSpacedSpacedMod.SpacedProps.type = typings.atStorybookComponents.distSpacedSpacedMod.SpacedProps

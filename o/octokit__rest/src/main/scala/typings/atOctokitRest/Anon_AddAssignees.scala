@@ -260,9 +260,9 @@ trait Anon_AddAssignees extends js.Object {
     * This example adds two assignees to the existing `octocat` assignee.
     */
   def addAssignees(): js.Promise[Response[IssuesAddAssigneesResponse]] = js.native
-  def addAssignees(params: RequestOptions with (IssuesAddAssigneesParams | IssuesAddAssigneesParamsDeprecatedNumber)): js.Promise[Response[IssuesAddAssigneesResponse]] = js.native
+  def addAssignees(params: RequestOptions with IssuesAddAssigneesParamsDeprecatedNumber with IssuesAddAssigneesParams): js.Promise[Response[IssuesAddAssigneesResponse]] = js.native
   def addLabels(): js.Promise[Response[IssuesAddLabelsResponse]] = js.native
-  def addLabels(params: RequestOptions with (IssuesAddLabelsParams | IssuesAddLabelsParamsDeprecatedNumber)): js.Promise[Response[IssuesAddLabelsResponse]] = js.native
+  def addLabels(params: RequestOptions with IssuesAddLabelsParamsDeprecatedNumber with IssuesAddLabelsParams): js.Promise[Response[IssuesAddLabelsResponse]] = js.native
   /**
     * Checks if a user has permission to be assigned to an issue in this repository.
     *
@@ -278,13 +278,13 @@ trait Anon_AddAssignees extends js.Object {
     * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     */
   def create(): js.Promise[Response[IssuesCreateResponse]] = js.native
-  def create(params: RequestOptions with (IssuesCreateParams | IssuesCreateParamsDeprecatedAssignee)): js.Promise[Response[IssuesCreateResponse]] = js.native
+  def create(params: RequestOptions with IssuesCreateParamsDeprecatedAssignee with IssuesCreateParams): js.Promise[Response[IssuesCreateResponse]] = js.native
   /**
     * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     */
   def createComment(): js.Promise[Response[IssuesCreateCommentResponse]] = js.native
   def createComment(
-    params: RequestOptions with (IssuesCreateCommentParams | IssuesCreateCommentParamsDeprecatedNumber)
+    params: RequestOptions with IssuesCreateCommentParamsDeprecatedNumber with IssuesCreateCommentParams
   ): js.Promise[Response[IssuesCreateCommentResponse]] = js.native
   def createLabel(): js.Promise[Response[IssuesCreateLabelResponse]] = js.native
   def createLabel(params: RequestOptions with IssuesCreateLabelParams): js.Promise[Response[IssuesCreateLabelResponse]] = js.native
@@ -296,7 +296,7 @@ trait Anon_AddAssignees extends js.Object {
   def deleteLabel(params: RequestOptions with IssuesDeleteLabelParams): js.Promise[AnyResponse] = js.native
   def deleteMilestone(): js.Promise[AnyResponse] = js.native
   def deleteMilestone(
-    params: RequestOptions with (IssuesDeleteMilestoneParams | IssuesDeleteMilestoneParamsDeprecatedNumber)
+    params: RequestOptions with IssuesDeleteMilestoneParamsDeprecatedNumber with IssuesDeleteMilestoneParams
   ): js.Promise[AnyResponse] = js.native
   /**
     * The API returns a [`301 Moved Permanently` status](https://developer.github.com/v3/#http-redirects) if the issue was [transferred](https://help.github.com/articles/transferring-an-issue-to-another-repository/) to another repository. If the issue was transferred to or deleted from a repository where the authenticated user lacks read access, the API returns a `404 Not Found` status. If the issue was deleted from a repository where the authenticated user has read access, the API returns a `410 Gone` status. To receive webhook events for transferred and deleted issues, subscribe to the [`issues`](https://developer.github.com/v3/activity/events/types/#issuesevent) webhook.
@@ -306,7 +306,7 @@ trait Anon_AddAssignees extends js.Object {
     * Be aware that the `id` of a pull request returned from "Issues" endpoints will be an _issue id_. To find out the pull request id, use the "[List pull requests](https://developer.github.com/v3/pulls/#list-pull-requests)" endpoint.
     */
   def get(): js.Promise[Response[IssuesGetResponse]] = js.native
-  def get(params: RequestOptions with (IssuesGetParams | IssuesGetParamsDeprecatedNumber)): js.Promise[Response[IssuesGetResponse]] = js.native
+  def get(params: RequestOptions with IssuesGetParamsDeprecatedNumber with IssuesGetParams): js.Promise[Response[IssuesGetResponse]] = js.native
   def getComment(): js.Promise[Response[IssuesGetCommentResponse]] = js.native
   def getComment(params: RequestOptions with IssuesGetCommentParams): js.Promise[Response[IssuesGetCommentResponse]] = js.native
   def getEvent(): js.Promise[Response[IssuesGetEventResponse]] = js.native
@@ -314,7 +314,7 @@ trait Anon_AddAssignees extends js.Object {
   def getLabel(): js.Promise[Response[IssuesGetLabelResponse]] = js.native
   def getLabel(params: RequestOptions with IssuesGetLabelParams): js.Promise[Response[IssuesGetLabelResponse]] = js.native
   def getMilestone(): js.Promise[Response[IssuesGetMilestoneResponse]] = js.native
-  def getMilestone(params: RequestOptions with (IssuesGetMilestoneParams | IssuesGetMilestoneParamsDeprecatedNumber)): js.Promise[Response[IssuesGetMilestoneResponse]] = js.native
+  def getMilestone(params: RequestOptions with IssuesGetMilestoneParamsDeprecatedNumber with IssuesGetMilestoneParams): js.Promise[Response[IssuesGetMilestoneResponse]] = js.native
   /**
     * **Note**: GitHub's REST API v3 considers every pull request an issue, but not every issue is a pull request. For this reason, "Issues" endpoints may return both issues and pull requests in the response. You can identify pull requests by the `pull_request` key.
     *
@@ -331,19 +331,19 @@ trait Anon_AddAssignees extends js.Object {
     * Issue Comments are ordered by ascending ID.
     */
   def listComments(): js.Promise[Response[IssuesListCommentsResponse]] = js.native
-  def listComments(params: RequestOptions with (IssuesListCommentsParams | IssuesListCommentsParamsDeprecatedNumber)): js.Promise[Response[IssuesListCommentsResponse]] = js.native
+  def listComments(params: RequestOptions with IssuesListCommentsParamsDeprecatedNumber with IssuesListCommentsParams): js.Promise[Response[IssuesListCommentsResponse]] = js.native
   /**
     * By default, Issue Comments are ordered by ascending ID.
     */
   def listCommentsForRepo(): js.Promise[Response[IssuesListCommentsForRepoResponse]] = js.native
   def listCommentsForRepo(params: RequestOptions with IssuesListCommentsForRepoParams): js.Promise[Response[IssuesListCommentsForRepoResponse]] = js.native
   def listEvents(): js.Promise[Response[IssuesListEventsResponse]] = js.native
-  def listEvents(params: RequestOptions with (IssuesListEventsParams | IssuesListEventsParamsDeprecatedNumber)): js.Promise[Response[IssuesListEventsResponse]] = js.native
+  def listEvents(params: RequestOptions with IssuesListEventsParamsDeprecatedNumber with IssuesListEventsParams): js.Promise[Response[IssuesListEventsResponse]] = js.native
   def listEventsForRepo(): js.Promise[Response[IssuesListEventsForRepoResponse]] = js.native
   def listEventsForRepo(params: RequestOptions with IssuesListEventsForRepoParams): js.Promise[Response[IssuesListEventsForRepoResponse]] = js.native
   def listEventsForTimeline(): js.Promise[Response[IssuesListEventsForTimelineResponse]] = js.native
   def listEventsForTimeline(
-    params: RequestOptions with (IssuesListEventsForTimelineParams | IssuesListEventsForTimelineParamsDeprecatedNumber)
+    params: RequestOptions with IssuesListEventsForTimelineParamsDeprecatedNumber with IssuesListEventsForTimelineParams
   ): js.Promise[Response[IssuesListEventsForTimelineResponse]] = js.native
   /**
     * **Note**: GitHub's REST API v3 considers every pull request an issue, but not every issue is a pull request. For this reason, "Issues" endpoints may return both issues and pull requests in the response. You can identify pull requests by the `pull_request` key.
@@ -368,13 +368,13 @@ trait Anon_AddAssignees extends js.Object {
   def listForRepo(params: RequestOptions with IssuesListForRepoParams): js.Promise[Response[IssuesListForRepoResponse]] = js.native
   def listLabelsForMilestone(): js.Promise[Response[IssuesListLabelsForMilestoneResponse]] = js.native
   def listLabelsForMilestone(
-    params: RequestOptions with (IssuesListLabelsForMilestoneParams | IssuesListLabelsForMilestoneParamsDeprecatedNumber)
+    params: RequestOptions with IssuesListLabelsForMilestoneParamsDeprecatedNumber with IssuesListLabelsForMilestoneParams
   ): js.Promise[Response[IssuesListLabelsForMilestoneResponse]] = js.native
   def listLabelsForRepo(): js.Promise[Response[IssuesListLabelsForRepoResponse]] = js.native
   def listLabelsForRepo(params: RequestOptions with IssuesListLabelsForRepoParams): js.Promise[Response[IssuesListLabelsForRepoResponse]] = js.native
   def listLabelsOnIssue(): js.Promise[Response[IssuesListLabelsOnIssueResponse]] = js.native
   def listLabelsOnIssue(
-    params: RequestOptions with (IssuesListLabelsOnIssueParams | IssuesListLabelsOnIssueParamsDeprecatedNumber)
+    params: RequestOptions with IssuesListLabelsOnIssueParamsDeprecatedNumber with IssuesListLabelsOnIssueParams
   ): js.Promise[Response[IssuesListLabelsOnIssueResponse]] = js.native
   def listMilestonesForRepo(): js.Promise[Response[IssuesListMilestonesForRepoResponse]] = js.native
   def listMilestonesForRepo(params: RequestOptions with IssuesListMilestonesForRepoParams): js.Promise[Response[IssuesListMilestonesForRepoResponse]] = js.native
@@ -384,7 +384,7 @@ trait Anon_AddAssignees extends js.Object {
     * Note that, if you choose not to pass any parameters, you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)."
     */
   def lock(): js.Promise[AnyResponse] = js.native
-  def lock(params: RequestOptions with (IssuesLockParams | IssuesLockParamsDeprecatedNumber)): js.Promise[AnyResponse] = js.native
+  def lock(params: RequestOptions with IssuesLockParamsDeprecatedNumber with IssuesLockParams): js.Promise[AnyResponse] = js.native
   /**
     * Removes one or more assignees from an issue.
     *
@@ -392,30 +392,30 @@ trait Anon_AddAssignees extends js.Object {
     */
   def removeAssignees(): js.Promise[Response[IssuesRemoveAssigneesResponse]] = js.native
   def removeAssignees(
-    params: RequestOptions with (IssuesRemoveAssigneesParams | IssuesRemoveAssigneesParamsDeprecatedNumber)
+    params: RequestOptions with IssuesRemoveAssigneesParamsDeprecatedNumber with IssuesRemoveAssigneesParams
   ): js.Promise[Response[IssuesRemoveAssigneesResponse]] = js.native
   /**
     * Removes the specified label from the issue, and returns the remaining labels on the issue. This endpoint returns a `404 Not Found` status if the label does not exist.
     */
   def removeLabel(): js.Promise[Response[IssuesRemoveLabelResponse]] = js.native
-  def removeLabel(params: RequestOptions with (IssuesRemoveLabelParams | IssuesRemoveLabelParamsDeprecatedNumber)): js.Promise[Response[IssuesRemoveLabelResponse]] = js.native
+  def removeLabel(params: RequestOptions with IssuesRemoveLabelParamsDeprecatedNumber with IssuesRemoveLabelParams): js.Promise[Response[IssuesRemoveLabelResponse]] = js.native
   def removeLabels(): js.Promise[AnyResponse] = js.native
-  def removeLabels(params: RequestOptions with (IssuesRemoveLabelsParams | IssuesRemoveLabelsParamsDeprecatedNumber)): js.Promise[AnyResponse] = js.native
+  def removeLabels(params: RequestOptions with IssuesRemoveLabelsParamsDeprecatedNumber with IssuesRemoveLabelsParams): js.Promise[AnyResponse] = js.native
   def replaceLabels(): js.Promise[Response[IssuesReplaceLabelsResponse]] = js.native
   def replaceLabels(
-    params: RequestOptions with (IssuesReplaceLabelsParams | IssuesReplaceLabelsParamsDeprecatedNumber)
+    params: RequestOptions with IssuesReplaceLabelsParamsDeprecatedNumber with IssuesReplaceLabelsParams
   ): js.Promise[Response[IssuesReplaceLabelsResponse]] = js.native
   /**
     * Users with push access can unlock an issue's conversation.
     */
   def unlock(): js.Promise[AnyResponse] = js.native
-  def unlock(params: RequestOptions with (IssuesUnlockParams | IssuesUnlockParamsDeprecatedNumber)): js.Promise[AnyResponse] = js.native
+  def unlock(params: RequestOptions with IssuesUnlockParamsDeprecatedNumber with IssuesUnlockParams): js.Promise[AnyResponse] = js.native
   /**
     * Issue owners and users with push access can edit an issue.
     */
   def update(): js.Promise[Response[IssuesUpdateResponse]] = js.native
   def update(
-    params: RequestOptions with (IssuesUpdateParams | IssuesUpdateParamsDeprecatedAssignee | IssuesUpdateParamsDeprecatedNumber)
+    params: RequestOptions with IssuesUpdateParamsDeprecatedNumber with IssuesUpdateParamsDeprecatedAssignee with IssuesUpdateParams
   ): js.Promise[Response[IssuesUpdateResponse]] = js.native
   def updateComment(): js.Promise[Response[IssuesUpdateCommentResponse]] = js.native
   def updateComment(params: RequestOptions with IssuesUpdateCommentParams): js.Promise[Response[IssuesUpdateCommentResponse]] = js.native
@@ -423,7 +423,7 @@ trait Anon_AddAssignees extends js.Object {
   def updateLabel(params: RequestOptions with IssuesUpdateLabelParams): js.Promise[Response[IssuesUpdateLabelResponse]] = js.native
   def updateMilestone(): js.Promise[Response[IssuesUpdateMilestoneResponse]] = js.native
   def updateMilestone(
-    params: RequestOptions with (IssuesUpdateMilestoneParams | IssuesUpdateMilestoneParamsDeprecatedNumber)
+    params: RequestOptions with IssuesUpdateMilestoneParamsDeprecatedNumber with IssuesUpdateMilestoneParams
   ): js.Promise[Response[IssuesUpdateMilestoneResponse]] = js.native
 }
 

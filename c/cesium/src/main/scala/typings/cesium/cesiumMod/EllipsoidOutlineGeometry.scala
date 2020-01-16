@@ -1,6 +1,6 @@
 package typings.cesium.cesiumMod
 
-import typings.cesium.Anon_RadiiSlicePartitions
+import typings.cesium.Anon_InnerRadiiMaximumClock
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "EllipsoidOutlineGeometry")
 @js.native
 class EllipsoidOutlineGeometry () extends Packable {
-  def this(options: Anon_RadiiSlicePartitions) = this()
+  def this(options: Anon_InnerRadiiMaximumClock) = this()
 }
 
 /* static members */

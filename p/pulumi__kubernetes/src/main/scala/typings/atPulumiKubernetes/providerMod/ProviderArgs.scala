@@ -17,6 +17,10 @@ trait ProviderArgs extends js.Object {
   /**
     * BETA FEATURE - If present and set to true, enable server-side diff calculations.
     * This feature is in developer preview, and is disabled by default.
+    *
+    * This config can be specified in the following ways, using this precedence:
+    * 1. This `enableDryRun` parameter.
+    * 2. The `PULUMI_K8S_ENABLE_DRY_RUN` environment variable.
     */
   val enableDryRun: js.UndefOr[Input[Boolean]] = js.undefined
   /**
@@ -34,6 +38,10 @@ trait ProviderArgs extends js.Object {
   val namespace: js.UndefOr[Input[String]] = js.undefined
   /**
     * If present and set to true, suppress apiVersion deprecation warnings from the CLI.
+    *
+    * This config can be specified in the following ways, using this precedence:
+    * 1. This `suppressDeprecationWarnings` parameter.
+    * 2. The `PULUMI_K8S_SUPPRESS_DEPRECATION_WARNINGS` environment variable.
     */
   val suppressDeprecationWarnings: js.UndefOr[Input[Boolean]] = js.undefined
 }

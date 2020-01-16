@@ -22,7 +22,7 @@ class StreamParser[Q /* <: BaseQuad */] () extends N3StreamParser[Q] {
     * @return The resulting event emitter.
     */
   /* CompleteClass */
-  override def `import`(stream: Stream[Q]): EventEmitter = js.native
+  override def `import`(stream: EventEmitter): Stream[Q] = js.native
 }
 
 @JSImport("n3", "StreamParser")

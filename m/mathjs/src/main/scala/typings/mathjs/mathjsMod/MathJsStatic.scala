@@ -2141,30 +2141,30 @@ trait MathJsStatic extends FactoryDependencies {
     * @param n Number of decimals Default value: 0.
     * @returns Rounded value of x
     */
-  def round(x: Double): Double | BigNumber | Fraction | Complex | MathArray | Matrix = js.native
-  def round(x: Double, n: Double): Double | BigNumber | Fraction | Complex | MathArray | Matrix = js.native
-  def round(x: Double, n: BigNumber): Double | BigNumber | Fraction | Complex | MathArray | Matrix = js.native
-  def round(x: Double, n: MathArray): Double | BigNumber | Fraction | Complex | MathArray | Matrix = js.native
-  def round(x: BigNumber): Double | BigNumber | Fraction | Complex | MathArray | Matrix = js.native
-  def round(x: BigNumber, n: Double): Double | BigNumber | Fraction | Complex | MathArray | Matrix = js.native
-  def round(x: BigNumber, n: BigNumber): Double | BigNumber | Fraction | Complex | MathArray | Matrix = js.native
-  def round(x: BigNumber, n: MathArray): Double | BigNumber | Fraction | Complex | MathArray | Matrix = js.native
-  def round(x: Complex): Double | BigNumber | Fraction | Complex | MathArray | Matrix = js.native
-  def round(x: Complex, n: Double): Double | BigNumber | Fraction | Complex | MathArray | Matrix = js.native
-  def round(x: Complex, n: BigNumber): Double | BigNumber | Fraction | Complex | MathArray | Matrix = js.native
-  def round(x: Complex, n: MathArray): Double | BigNumber | Fraction | Complex | MathArray | Matrix = js.native
-  def round(x: Fraction): Double | BigNumber | Fraction | Complex | MathArray | Matrix = js.native
-  def round(x: Fraction, n: Double): Double | BigNumber | Fraction | Complex | MathArray | Matrix = js.native
-  def round(x: Fraction, n: BigNumber): Double | BigNumber | Fraction | Complex | MathArray | Matrix = js.native
-  def round(x: Fraction, n: MathArray): Double | BigNumber | Fraction | Complex | MathArray | Matrix = js.native
-  def round(x: MathArray): Double | BigNumber | Fraction | Complex | MathArray | Matrix = js.native
-  def round(x: MathArray, n: Double): Double | BigNumber | Fraction | Complex | MathArray | Matrix = js.native
-  def round(x: MathArray, n: BigNumber): Double | BigNumber | Fraction | Complex | MathArray | Matrix = js.native
-  def round(x: MathArray, n: MathArray): Double | BigNumber | Fraction | Complex | MathArray | Matrix = js.native
-  def round(x: Matrix): Double | BigNumber | Fraction | Complex | MathArray | Matrix = js.native
-  def round(x: Matrix, n: Double): Double | BigNumber | Fraction | Complex | MathArray | Matrix = js.native
-  def round(x: Matrix, n: BigNumber): Double | BigNumber | Fraction | Complex | MathArray | Matrix = js.native
-  def round(x: Matrix, n: MathArray): Double | BigNumber | Fraction | Complex | MathArray | Matrix = js.native
+  def round(x: Double): Double = js.native
+  def round(x: Double, n: Double): Double = js.native
+  def round(x: Double, n: BigNumber): Double = js.native
+  def round(x: Double, n: MathArray): Double = js.native
+  def round(x: BigNumber): BigNumber = js.native
+  def round(x: BigNumber, n: Double): BigNumber = js.native
+  def round(x: BigNumber, n: BigNumber): BigNumber = js.native
+  def round(x: BigNumber, n: MathArray): BigNumber = js.native
+  def round(x: Complex): Complex = js.native
+  def round(x: Complex, n: Double): Complex = js.native
+  def round(x: Complex, n: BigNumber): Complex = js.native
+  def round(x: Complex, n: MathArray): Complex = js.native
+  def round(x: Fraction): Fraction = js.native
+  def round(x: Fraction, n: Double): Fraction = js.native
+  def round(x: Fraction, n: BigNumber): Fraction = js.native
+  def round(x: Fraction, n: MathArray): Fraction = js.native
+  def round(x: MathArray): MathArray = js.native
+  def round(x: MathArray, n: Double): MathArray = js.native
+  def round(x: MathArray, n: BigNumber): MathArray = js.native
+  def round(x: MathArray, n: MathArray): MathArray = js.native
+  def round(x: Matrix): Matrix = js.native
+  def round(x: Matrix, n: Double): Matrix = js.native
+  def round(x: Matrix, n: BigNumber): Matrix = js.native
+  def round(x: Matrix, n: MathArray): Matrix = js.native
   /**
     * Calculate the secant of a value, defined as sec(x) = 1/cos(x). For
     * matrices, the function is evaluated element wise.

@@ -12,6 +12,10 @@ object retry extends js.Object {
     extends typings.cassandraDashDriver.libPoliciesMod.policies.retry.DecisionInfo
   
   @js.native
+  class FallthroughRetryPolicy ()
+    extends typings.cassandraDashDriver.libPoliciesMod.policies.retry.FallthroughRetryPolicy
+  
+  @js.native
   class IdempotenceAwareRetryPolicy protected ()
     extends typings.cassandraDashDriver.libPoliciesMod.policies.retry.IdempotenceAwareRetryPolicy {
     def this(childPolicy: typings.cassandraDashDriver.libPoliciesMod.policies.retry.RetryPolicy) = this()

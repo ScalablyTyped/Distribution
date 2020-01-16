@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@firebase/firestore" : "1.9.1"
+      "@firebase/firestore" : "1.9.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@firebase/firestore" : "1.9.1"
+      "@firebase/firestore" : "1.9.2"
     }
   ],
   "compile-devDependencies" : [

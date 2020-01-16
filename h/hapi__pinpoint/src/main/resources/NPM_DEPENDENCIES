@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@hapi/pinpoint" : "2.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@hapi/pinpoint" : "2.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

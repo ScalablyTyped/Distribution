@@ -17,8 +17,8 @@ trait TimelineItemBase[DateType] extends js.Object {
   var canResize: js.UndefOr[Boolean | left | right | both] = js.undefined
   var className: js.UndefOr[String] = js.undefined
   var end_time: DateType
-  var group: Double
-  var id: Double
+  var group: Id
+  var id: Id
   var itemProps: js.UndefOr[HTMLAttributes[HTMLDivElement]] = js.undefined
   var start_time: DateType
   var style: js.UndefOr[CSSProperties] = js.undefined
@@ -29,8 +29,8 @@ object TimelineItemBase {
   @scala.inline
   def apply[DateType](
     end_time: DateType,
-    group: Double,
-    id: Double,
+    group: Id,
+    id: Id,
     start_time: DateType,
     canChangeGroup: js.UndefOr[Boolean] = js.undefined,
     canMove: js.UndefOr[Boolean] = js.undefined,

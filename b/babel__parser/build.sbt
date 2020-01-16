@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "babel__parser"
-version := "7.7.7-1912f6"
+version := "7.8.3-198bc9"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "babel__types" % "7.7.4-c44201",
+  "org.scalablytyped" %%% "babel__types" % "7.8.3-920374",
   "org.scalablytyped" %%% "std" % "3.7-b6d959")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

@@ -74,6 +74,7 @@ object Matrix3 extends js.Object {
   def getColumn(matrix: Matrix3, index: Double, result: Cartesian3): Cartesian3 = js.native
   def getElementIndex(row: Double, column: Double): Double = js.native
   def getMaximumScale(matrix: Matrix3): Double = js.native
+  def getRotation(matrix: Matrix3, result: Matrix3): Matrix3 = js.native
   def getRow(matrix: Matrix3, index: Double, result: Cartesian3): Cartesian3 = js.native
   def getScale(matrix: Matrix3, result: Cartesian3): Cartesian3 = js.native
   def inverse(matrix: Matrix3, result: Matrix3): Matrix3 = js.native

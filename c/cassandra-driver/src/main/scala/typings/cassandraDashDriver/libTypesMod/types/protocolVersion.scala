@@ -12,6 +12,12 @@ sealed trait protocolVersion extends js.Object
 @js.native
 object protocolVersion extends js.Object {
   @js.native
+  sealed trait dseV1 extends protocolVersion
+  
+  @js.native
+  sealed trait dseV2 extends protocolVersion
+  
+  @js.native
   sealed trait maxSupported extends protocolVersion
   
   @js.native
@@ -35,7 +41,13 @@ object protocolVersion extends js.Object {
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[protocolVersion with Double] = js.native
   def isSupported(version: protocolVersion): Boolean = js.native
-  /* 0x05 */ @js.native
+  /* 0x41 */ @js.native
+  object dseV1 extends TopLevel[dseV1 with Double]
+  
+  /* 0x42 */ @js.native
+  object dseV2 extends TopLevel[dseV2 with Double]
+  
+  /* 0x42 */ @js.native
   object maxSupported extends TopLevel[maxSupported with Double]
   
   /* 0x01 */ @js.native

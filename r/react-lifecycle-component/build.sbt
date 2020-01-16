@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-lifecycle-component"
-version := "2.0-dt-20181122Z-adb39b"
+version := "2.0-dt-20181122Z-2b1b82"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "hoist-non-react-statics" % "3.3-dt-20190402Z-516e80",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190924Z-b24434",
   "org.scalablytyped" %%% "react" % "16.9-dt-20191220Z-22d23f",
-  "org.scalablytyped" %%% "react-redux" % "7.1-dt-20191018Z-359712",
+  "org.scalablytyped" %%% "react-redux" % "7.1-dt-20200115Z-6406ce",
   "org.scalablytyped" %%% "redux" % "4.0.5-eabae9",
   "org.scalablytyped" %%% "std" % "3.7-b6d959")
 publishArtifact in packageDoc := false

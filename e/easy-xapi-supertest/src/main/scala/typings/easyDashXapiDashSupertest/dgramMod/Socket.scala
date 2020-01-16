@@ -1,7 +1,7 @@
 package typings.easyDashXapiDashSupertest.dgramMod
 
-import typings.easyDashXapiDashSupertest.Buffer
 import typings.easyDashXapiDashSupertest.eventsMod.EventEmitter
+import typings.node.Buffer
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

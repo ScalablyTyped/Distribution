@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-hotkeys"
-version := "2.0.0-pre4-094c60"
+version := "2.0.0-2473c9"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

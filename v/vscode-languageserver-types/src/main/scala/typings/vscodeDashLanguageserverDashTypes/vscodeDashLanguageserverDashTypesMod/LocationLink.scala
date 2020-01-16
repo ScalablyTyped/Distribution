@@ -26,7 +26,7 @@ trait LocationLink extends js.Object {
   /**
     * The target resource identifier of this link.
     */
-  var targetUri: String
+  var targetUri: DocumentUri
 }
 
 @JSImport("vscode-languageserver-types", "LocationLink")
@@ -39,8 +39,13 @@ object LocationLink extends js.Object {
     * @param targetSelectionRange The span of the symbol definition at the target.
     * @param originSelectionRange The span of the symbol being defined in the originating source file.
     */
-  def create(targetUri: String, targetRange: Range, targetSelectionRange: Range): LocationLink = js.native
-  def create(targetUri: String, targetRange: Range, targetSelectionRange: Range, originSelectionRange: Range): LocationLink = js.native
+  def create(targetUri: DocumentUri, targetRange: Range, targetSelectionRange: Range): LocationLink = js.native
+  def create(
+    targetUri: DocumentUri,
+    targetRange: Range,
+    targetSelectionRange: Range,
+    originSelectionRange: Range
+  ): LocationLink = js.native
   /**
     * Checks whether the given literal conforms to the [LocationLink](#LocationLink) interface.
     */

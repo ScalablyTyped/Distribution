@@ -26,7 +26,7 @@ object relationshipsMod extends js.Object {
       modelName: K,
       options: (RelationshipOptions[
           /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
-        ]) with (Async | Sync)
+        ]) with Async with Sync
     ): ComputedProperty[
         (/* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any) with (PromiseObject[
           /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
@@ -49,7 +49,7 @@ object relationshipsMod extends js.Object {
       `type`: K,
       options: (RelationshipOptions[
           /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any
-        ]) with (Async | Sync)
+        ]) with Async with Sync
     ): ComputedProperty[
         PromiseManyArray[
           /* import warning: importer.ImportType#apply Failed type conversion: ember-data.ember-data/types/registries/model.ModelRegistry[K] */ js.Any

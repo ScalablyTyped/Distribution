@@ -1,5 +1,7 @@
 package typings.atHapiIron.atHapiIronMod
 
+import typings.atHapiIron.atHapiIronMod.password.Secret
+import typings.atHapiIron.atHapiIronMod.password.Specific
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,6 +9,8 @@ import scala.scalajs.js.annotation._
 @JSImport("@hapi/iron", "seal")
 @js.native
 object seal extends js.Object {
-  def apply(obj: js.Object, password: String, options: SealOptions): js.Promise[String] = js.native
+  def apply(`object`: js.Any, password: Password, options: SealOptions): js.Promise[String] = js.native
+  def apply(`object`: js.Any, password: Secret, options: SealOptions): js.Promise[String] = js.native
+  def apply(`object`: js.Any, password: Specific, options: SealOptions): js.Promise[String] = js.native
 }
 

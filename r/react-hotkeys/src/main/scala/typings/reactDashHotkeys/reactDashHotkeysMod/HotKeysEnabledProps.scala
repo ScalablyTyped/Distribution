@@ -80,6 +80,10 @@ trait HotKeysEnabledProps extends GlobalHotKeysProps {
     */
   @JSName("onFocus")
   var onFocus_HotKeysEnabledProps: js.UndefOr[js.Function0[Unit]] = js.undefined
+  /**
+    * Whether this is the root HotKeys node - this enables some special behaviour
+    */
+  var root: js.UndefOr[Boolean] = js.undefined
 }
 
 object HotKeysEnabledProps {
@@ -249,6 +253,7 @@ object HotKeysEnabledProps {
     resource: String = null,
     results: Int | Double = null,
     role: String = null,
+    root: js.UndefOr[Boolean] = js.undefined,
     security: String = null,
     slot: String = null,
     spellCheck: js.UndefOr[Boolean] = js.undefined,
@@ -427,6 +432,7 @@ object HotKeysEnabledProps {
     if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     if (security != null) __obj.updateDynamic("security")(security.asInstanceOf[js.Any])
     if (slot != null) __obj.updateDynamic("slot")(slot.asInstanceOf[js.Any])
     if (!js.isUndefined(spellCheck)) __obj.updateDynamic("spellCheck")(spellCheck.asInstanceOf[js.Any])

@@ -18,7 +18,7 @@ trait Anon_EndpointParamsPromisePullsCreateCommentParams extends js.Object {
   var endpoint_Original: Endpoint = js.native
   def apply(): js.Promise[Response[PullsCreateCommentResponse]] = js.native
   def apply(
-    params: RequestOptions with (PullsCreateCommentParams | PullsCreateCommentParamsDeprecatedInReplyTo | PullsCreateCommentParamsDeprecatedNumber)
+    params: RequestOptions with PullsCreateCommentParamsDeprecatedNumber with PullsCreateCommentParamsDeprecatedInReplyTo with PullsCreateCommentParams
   ): js.Promise[Response[PullsCreateCommentResponse]] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native

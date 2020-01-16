@@ -10,13 +10,8 @@ import scala.scalajs.js.annotation._
   - typings.atSindresorhusIs.atSindresorhusIsStrings.undefined
   - typings.atSindresorhusIs.atSindresorhusIsStrings.string
   - typings.atSindresorhusIs.atSindresorhusIsStrings.number
-  - typings.atSindresorhusIs.atSindresorhusIsStrings.bigint
   - typings.atSindresorhusIs.atSindresorhusIsStrings.symbol
   - typings.atSindresorhusIs.atSindresorhusIsStrings.Function
-  - typings.atSindresorhusIs.atSindresorhusIsStrings.Generator
-  - typings.atSindresorhusIs.atSindresorhusIsStrings.GeneratorFunction
-  - typings.atSindresorhusIs.atSindresorhusIsStrings.AsyncFunction
-  - typings.atSindresorhusIs.atSindresorhusIsStrings.Observable
   - typings.atSindresorhusIs.atSindresorhusIsStrings.Array
   - typings.atSindresorhusIs.atSindresorhusIsStrings.Buffer
   - typings.atSindresorhusIs.atSindresorhusIsStrings.Object
@@ -36,13 +31,10 @@ import scala.scalajs.js.annotation._
   - typings.atSindresorhusIs.atSindresorhusIsStrings.Uint32Array
   - typings.atSindresorhusIs.atSindresorhusIsStrings.Float32Array
   - typings.atSindresorhusIs.atSindresorhusIsStrings.Float64Array
-  - typings.atSindresorhusIs.atSindresorhusIsStrings.BigInt64Array
-  - typings.atSindresorhusIs.atSindresorhusIsStrings.BigUint64Array
   - typings.atSindresorhusIs.atSindresorhusIsStrings.ArrayBuffer
   - typings.atSindresorhusIs.atSindresorhusIsStrings.SharedArrayBuffer
   - typings.atSindresorhusIs.atSindresorhusIsStrings.DataView
   - typings.atSindresorhusIs.atSindresorhusIsStrings.Promise
-  - typings.atSindresorhusIs.atSindresorhusIsStrings.URL
 */
 trait TypeName extends js.Object
 
@@ -51,12 +43,6 @@ object TypeName {
   def Array: typings.atSindresorhusIs.atSindresorhusIsStrings.Array = this.cast("Array")
   @scala.inline
   def ArrayBuffer: typings.atSindresorhusIs.atSindresorhusIsStrings.ArrayBuffer = this.cast("ArrayBuffer")
-  @scala.inline
-  def AsyncFunction: typings.atSindresorhusIs.atSindresorhusIsStrings.AsyncFunction = this.cast("AsyncFunction")
-  @scala.inline
-  def BigInt64Array: typings.atSindresorhusIs.atSindresorhusIsStrings.BigInt64Array = this.cast("BigInt64Array")
-  @scala.inline
-  def BigUint64Array: typings.atSindresorhusIs.atSindresorhusIsStrings.BigUint64Array = this.cast("BigUint64Array")
   @scala.inline
   def Buffer: typings.atSindresorhusIs.atSindresorhusIsStrings.Buffer = this.cast("Buffer")
   @scala.inline
@@ -72,10 +58,6 @@ object TypeName {
   @scala.inline
   def Function: typings.atSindresorhusIs.atSindresorhusIsStrings.Function = this.cast("Function")
   @scala.inline
-  def Generator: typings.atSindresorhusIs.atSindresorhusIsStrings.Generator = this.cast("Generator")
-  @scala.inline
-  def GeneratorFunction: typings.atSindresorhusIs.atSindresorhusIsStrings.GeneratorFunction = this.cast("GeneratorFunction")
-  @scala.inline
   def Int16Array: typings.atSindresorhusIs.atSindresorhusIsStrings.Int16Array = this.cast("Int16Array")
   @scala.inline
   def Int32Array: typings.atSindresorhusIs.atSindresorhusIsStrings.Int32Array = this.cast("Int32Array")
@@ -86,8 +68,6 @@ object TypeName {
   @scala.inline
   def Object: typings.atSindresorhusIs.atSindresorhusIsStrings.Object = this.cast("Object")
   @scala.inline
-  def Observable: typings.atSindresorhusIs.atSindresorhusIsStrings.Observable = this.cast("Observable")
-  @scala.inline
   def Promise: typings.atSindresorhusIs.atSindresorhusIsStrings.Promise = this.cast("Promise")
   @scala.inline
   def RegExp: typings.atSindresorhusIs.atSindresorhusIsStrings.RegExp = this.cast("RegExp")
@@ -95,8 +75,6 @@ object TypeName {
   def Set: typings.atSindresorhusIs.atSindresorhusIsStrings.Set = this.cast("Set")
   @scala.inline
   def SharedArrayBuffer: typings.atSindresorhusIs.atSindresorhusIsStrings.SharedArrayBuffer = this.cast("SharedArrayBuffer")
-  @scala.inline
-  def URL: typings.atSindresorhusIs.atSindresorhusIsStrings.URL = this.cast("URL")
   @scala.inline
   def Uint16Array: typings.atSindresorhusIs.atSindresorhusIsStrings.Uint16Array = this.cast("Uint16Array")
   @scala.inline
@@ -109,8 +87,6 @@ object TypeName {
   def WeakMap: typings.atSindresorhusIs.atSindresorhusIsStrings.WeakMap = this.cast("WeakMap")
   @scala.inline
   def WeakSet: typings.atSindresorhusIs.atSindresorhusIsStrings.WeakSet = this.cast("WeakSet")
-  @scala.inline
-  def bigint: typings.atSindresorhusIs.atSindresorhusIsStrings.bigint = this.cast("bigint")
   @scala.inline
   def boolean: typings.atSindresorhusIs.atSindresorhusIsStrings.boolean = this.cast("boolean")
   @scala.inline

@@ -1,7 +1,7 @@
 
 # Scala.js typings for ffmpeg-static
 
-Typings are for version 2.0
+Typings are for version 3.0
 
 ## Library description:
 ffmpeg static binaries for Mac OSX and Linux and Windows

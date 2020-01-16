@@ -2,17 +2,15 @@ package typings.reactDashJsonschemaDashForm.reactDashJsonschemaDashFormMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.jsonDashSchema.jsonDashSchemaMod.JSONSchema6
-import typings.react.reactMod.HTMLAttributes
 import typings.reactDashJsonschemaDashForm.Anon_Definitions
-import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<std.HTMLElement>, 'onBlur'> ]: react.react.HTMLAttributes<std.HTMLElement>[P]} */ @js.native
 trait FieldProps[T]
-  extends HTMLAttributes[HTMLElement]
-     with /* prop */ StringDictionary[js.Any] {
+  extends /* prop */ StringDictionary[js.Any] {
   var autofocus: Boolean = js.native
   var disabled: Boolean = js.native
   var errorSchema: ErrorSchema = js.native
@@ -25,13 +23,13 @@ trait FieldProps[T]
   var required: Boolean = js.native
   var schema: JSONSchema6 = js.native
   var uiSchema: UiSchema = js.native
-  @JSName("onChange")
-  def onChange_MFieldProps(e: js.Any): js.Any = js.native
-  @JSName("onChange")
-  def onChange_MFieldProps(e: js.Any, es: ErrorSchema): js.Any = js.native
-  @JSName("onChange")
-  def onChange_MFieldProps(e: IChangeEvent[T]): js.Any = js.native
-  @JSName("onChange")
-  def onChange_MFieldProps(e: IChangeEvent[T], es: ErrorSchema): js.Any = js.native
+  def onBlur(id: String): Unit = js.native
+  def onBlur(id: String, value: String): Unit = js.native
+  def onBlur(id: String, value: Boolean): Unit = js.native
+  def onBlur(id: String, value: Double): Unit = js.native
+  def onChange(e: js.Any): js.Any = js.native
+  def onChange(e: js.Any, es: ErrorSchema): js.Any = js.native
+  def onChange(e: IChangeEvent[T]): js.Any = js.native
+  def onChange(e: IChangeEvent[T], es: ErrorSchema): js.Any = js.native
 }
 

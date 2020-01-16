@@ -1,6 +1,6 @@
 package typings.atHapiHapi.atHapiHapiMod
 
-import typings.atHapiBoom.atHapiBoomMod.^
+import typings.atHapiBoom.atHapiBoomMod.Boom
 import typings.node.Buffer
 import typings.node.streamMod.Stream
 import typings.std.Error
@@ -62,6 +62,6 @@ object Lifecycle extends js.Object {
     * For more info please [See docs](https://github.com/hapijs/hapi/blob/master/API.md#lifecycle-methods)
     */
   type ReturnValue = ReturnValueTypes | js.Promise[ReturnValueTypes]
-  type ReturnValueTypes = Null | String | Double | Boolean | Buffer | Error | ^[js.Any] | Stream | js.Object | js.Array[js.Object] | js.Symbol | ResponseToolkit
+  type ReturnValueTypes = Null | String | Double | Boolean | Buffer | Error | Boom[js.Any] | Stream | js.Object | js.Array[js.Object] | js.Symbol | ResponseToolkit
 }
 

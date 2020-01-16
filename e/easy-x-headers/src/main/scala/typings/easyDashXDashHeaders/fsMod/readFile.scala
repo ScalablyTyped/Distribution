@@ -2,8 +2,8 @@ package typings.easyDashXDashHeaders.fsMod
 
 import typings.easyDashXDashHeaders.Anon_Encoding
 import typings.easyDashXDashHeaders.Anon_Flag
-import typings.easyDashXDashHeaders.Buffer
 import typings.easyDashXDashHeaders.NodeJS.ErrnoException
+import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

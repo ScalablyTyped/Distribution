@@ -12,6 +12,7 @@ import typings.jszip.jszipStrings.base64
 import typings.jszip.jszipStrings.binarystring
 import typings.jszip.jszipStrings.blob
 import typings.jszip.jszipStrings.nodebuffer
+import typings.jszip.jszipStrings.string
 import typings.jszip.jszipStrings.text
 import typings.jszip.jszipStrings.uint8array
 import typings.node.Buffer
@@ -149,6 +150,10 @@ Instantiable0[JSZip]
   def generateAsync_nodebuffer(options: JSZipGeneratorOptions[nodebuffer]): js.Promise[Buffer] = js.native
   @JSName("generateAsync")
   def generateAsync_nodebuffer(options: JSZipGeneratorOptions[nodebuffer], onUpdate: OnUpdateCallback): js.Promise[Buffer] = js.native
+  @JSName("generateAsync")
+  def generateAsync_string(options: JSZipGeneratorOptions[string]): js.Promise[String] = js.native
+  @JSName("generateAsync")
+  def generateAsync_string(options: JSZipGeneratorOptions[string], onUpdate: OnUpdateCallback): js.Promise[String] = js.native
   @JSName("generateAsync")
   def generateAsync_text(options: JSZipGeneratorOptions[text]): js.Promise[String] = js.native
   @JSName("generateAsync")

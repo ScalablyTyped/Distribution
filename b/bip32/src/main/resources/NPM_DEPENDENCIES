@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "bip32" : "2.0.4"
+      "bip32" : "2.0.5"
     }
   ],
   "test-dependencies" : [
     {
-      "bip32" : "2.0.4"
+      "bip32" : "2.0.5"
     }
   ],
   "compile-devDependencies" : [

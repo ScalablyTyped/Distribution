@@ -1,6 +1,9 @@
 package typings.reactDashNativeDashRatings.reactDashNativeDashRatingsMod
 
+import typings.propDashTypes.propDashTypesMod.Validator
 import typings.reactDashNative.reactDashNativeMod.ImageURISource
+import typings.reactDashNative.reactDashNativeMod.StyleProp
+import typings.reactDashNative.reactDashNativeMod.ViewStyle
 import typings.reactDashNativeDashRatings.reactDashNativeDashRatingsStrings.bell
 import typings.reactDashNativeDashRatings.reactDashNativeDashRatingsStrings.custom
 import typings.reactDashNativeDashRatings.reactDashNativeDashRatingsStrings.heart
@@ -82,9 +85,7 @@ trait RatingProps extends js.Object {
   /**
     * Exposes style prop to add additonal styling to the container view
     */
-  var style: js.UndefOr[
-    /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ViewPropTypes.style */ js.Any
-  ] = js.undefined
+  var style: js.UndefOr[Validator[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   /**
     * Color used for the background
     */
@@ -113,7 +114,7 @@ object RatingProps {
     readonly: js.UndefOr[Boolean] = js.undefined,
     showRating: js.UndefOr[Boolean] = js.undefined,
     startingValue: Int | Double = null,
-    style: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ViewPropTypes.style */ js.Any = null,
+    style: Validator[js.UndefOr[StyleProp[ViewStyle]]] = null,
     tintColor: String = null,
     `type`: star | rocket | bell | heart | custom = null
   ): RatingProps = {

@@ -16,6 +16,8 @@ package object clownfaceMod {
 
   type AddCallback[D /* <: DatasetCore[Quad] */, X /* <: Term */] = js.Function1[/* added */ SingleContextClownface[D, X], Unit]
   type ClownfaceInit[D /* <: DatasetCore[Quad] */, T /* <: Term */] = Partial[(Pick[Clownface[D, T], dataset | _context]) with Anon_Graph]
+  type ClownfaceInitWithNodes[D /* <: DatasetCore[Quad] */, T /* <: Term */] = ((ClownfaceInit[D, Term]) with WithTerms[T]) | ((ClownfaceInit[D, Term]) with WithValues)
+  type ClownfaceInitWithSingleNode[D /* <: DatasetCore[Quad] */, T /* <: Term */] = ((ClownfaceInit[D, Term]) with WithSingleTerm[T]) | ((ClownfaceInit[D, Term]) with WithSingleValue)
   type SingleOrArray[T] = T | js.Array[T]
   type SingleOrArrayOfTerms = SingleOrArray[TermOrClownface]
   type SingleOrArrayOfTermsOrLiterals = SingleOrArray[TermOrLiteral]

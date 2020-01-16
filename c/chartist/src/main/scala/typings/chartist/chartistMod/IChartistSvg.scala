@@ -1,5 +1,6 @@
 package typings.chartist.chartistMod
 
+import typings.std.HTMLElement
 import typings.std.SVGElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -7,6 +8,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IChartistSvg extends js.Object {
+  /**
+    * The SVG DOM element wrapped by IChartistSvg
+    */
+  var _node: HTMLElement = js.native
   /**
     * Adds one or a space separated list of classes to the current element and ensures the classes are only existing once.
     *

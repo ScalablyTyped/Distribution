@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
   - typings.node.nodeStrings.`aes-128-ccm`
   - typings.node.nodeStrings.`aes-192-ccm`
   - typings.node.nodeStrings.`aes-256-ccm`
+  - typings.node.nodeStrings.`chacha20-poly1305`
 */
 trait CipherCCMTypes extends js.Object
 
@@ -20,5 +21,7 @@ object CipherCCMTypes {
   def `aes-256-ccm`: typings.node.nodeStrings.`aes-256-ccm` = this.cast("aes-256-ccm")
   @scala.inline
   /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  @scala.inline
+  def `chacha20-poly1305`: typings.node.nodeStrings.`chacha20-poly1305` = this.cast("chacha20-poly1305")
 }
 

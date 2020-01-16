@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "formatjs__intl-utils"
-version := "2.0.0-a08574"
+version := "2.0.4-f8e8e6"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

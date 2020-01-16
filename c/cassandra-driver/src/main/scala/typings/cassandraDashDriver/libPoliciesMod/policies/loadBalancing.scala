@@ -1,5 +1,6 @@
 package typings.cassandraDashDriver.libPoliciesMod.policies
 
+import typings.cassandraDashDriver.Anon_Filter
 import typings.cassandraDashDriver.cassandraDashDriverMod.Client
 import typings.cassandraDashDriver.cassandraDashDriverMod.EmptyCallback
 import typings.cassandraDashDriver.cassandraDashDriverMod.ExecutionOptions
@@ -19,6 +20,11 @@ object loadBalancing extends js.Object {
   @js.native
   class DCAwareRoundRobinPolicy protected () extends LoadBalancingPolicy {
     def this(localDc: String) = this()
+  }
+  
+  @js.native
+  class DefaultLoadBalancingPolicy () extends LoadBalancingPolicy {
+    def this(options: Anon_Filter) = this()
   }
   
   @js.native

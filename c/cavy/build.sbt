@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cavy"
-version := "3.1-dt-20191104Z-8900f1"
+version := "3.2-dt-20200110Z-fed403"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

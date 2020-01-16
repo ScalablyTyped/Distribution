@@ -9,6 +9,7 @@ import typings.react.reactMod.Ref
 import typings.react.reactMod.SyntheticEvent
 import typings.react.reactMod.TouchEvent
 import typings.react.reactMod.TouchEventHandler
+import typings.reactDashCalendarDashTimeline.reactDashCalendarDashTimelineMod.Id
 import typings.std.Element
 import typings.std.Event
 import scala.scalajs.js
@@ -17,7 +18,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_ClassNameKey extends js.Object {
   var className: String
-  var key: Double
+  var key: Id
   var onContextMenu: ReactEventHandler[Element]
   var onDoubleClick: MouseEventHandler[Element]
   var onMouseDown: MouseEventHandler[Element]
@@ -32,7 +33,7 @@ object Anon_ClassNameKey {
   @scala.inline
   def apply(
     className: String,
-    key: Double,
+    key: Id,
     onContextMenu: SyntheticEvent[Element, Event] => Unit,
     onDoubleClick: MouseEvent[Element, NativeMouseEvent] => Unit,
     onMouseDown: MouseEvent[Element, NativeMouseEvent] => Unit,

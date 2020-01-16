@@ -1,5 +1,6 @@
 package typings.dropzone.dropzoneMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.dropzone.dropzoneMod._Global_.HTMLElement
 import typings.dropzone.dropzoneStrings.contain
 import typings.dropzone.dropzoneStrings.crop
@@ -76,7 +77,7 @@ trait DropzoneOptions extends js.Object {
   var filesizeBase: js.UndefOr[Double] = js.undefined
   var forceChunking: js.UndefOr[Boolean] = js.undefined
   var forceFallback: js.UndefOr[Boolean] = js.undefined
-  var headers: js.UndefOr[js.Object] = js.undefined
+  var headers: js.UndefOr[StringDictionary[String]] = js.undefined
   var hiddenInputContainer: js.UndefOr[HTMLElement] = js.undefined
   var ignoreHiddenFiles: js.UndefOr[Boolean] = js.undefined
   var init: js.UndefOr[js.ThisFunction0[/* this */ Dropzone, Unit]] = js.undefined
@@ -198,7 +199,7 @@ object DropzoneOptions {
     filesizeBase: Int | Double = null,
     forceChunking: js.UndefOr[Boolean] = js.undefined,
     forceFallback: js.UndefOr[Boolean] = js.undefined,
-    headers: js.Object = null,
+    headers: StringDictionary[String] = null,
     hiddenInputContainer: HTMLElement = null,
     ignoreHiddenFiles: js.UndefOr[Boolean] = js.undefined,
     init: js.ThisFunction0[/* this */ Dropzone, Unit] = null,

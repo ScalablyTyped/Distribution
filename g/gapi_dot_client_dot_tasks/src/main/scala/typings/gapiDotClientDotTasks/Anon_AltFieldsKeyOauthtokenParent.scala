@@ -1,5 +1,6 @@
 package typings.gapiDotClientDotTasks
 
+import typings.gapiDotClientDotTasks.gapi.client.tasks.Task
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,20 +20,20 @@ trait Anon_AltFieldsKeyOauthtokenParent extends js.Object {
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   /** Previous sibling task identifier. If the task is created at the first position among its siblings, this parameter is omitted. Optional. */
   var previous: js.UndefOr[String] = js.undefined
-  /**
-    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-    * Overrides userIp if both are provided.
-    */
+  /** An opaque string that represents a user for quota purposes. Must not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
+  /** Request body */
+  var resource: Task
   /** Task list identifier. */
   var tasklist: String
-  /** IP address of the site where the request originates. Use this if you want to enforce per-user limits. */
+  /** Deprecated. Please use quotaUser instead. */
   var userIp: js.UndefOr[String] = js.undefined
 }
 
 object Anon_AltFieldsKeyOauthtokenParent {
   @scala.inline
   def apply(
+    resource: Task,
     tasklist: String,
     alt: String = null,
     fields: String = null,
@@ -44,7 +45,7 @@ object Anon_AltFieldsKeyOauthtokenParent {
     quotaUser: String = null,
     userIp: String = null
   ): Anon_AltFieldsKeyOauthtokenParent = {
-    val __obj = js.Dynamic.literal(tasklist = tasklist.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any], tasklist = tasklist.asInstanceOf[js.Any])
     if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
     if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])

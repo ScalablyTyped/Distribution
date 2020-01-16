@@ -1,5 +1,7 @@
 package typings.parcelDashEnv
 
+import typings.node.NodeModule
+import typings.node.NodeRequire
 import typings.parcelDashEnv.NodeJS.Process
 import scala.scalajs.js
 import scala.scalajs.js.`|`

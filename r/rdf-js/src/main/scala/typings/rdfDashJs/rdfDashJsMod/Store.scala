@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Store[Q /* <: BaseQuad */]
   extends Source[Q]
-     with Sink[Q] {
+     with Sink[Stream[Q], EventEmitter] {
   def deleteGraph(graph: String): EventEmitter = js.native
   /**
     * Deletes the given named graph.

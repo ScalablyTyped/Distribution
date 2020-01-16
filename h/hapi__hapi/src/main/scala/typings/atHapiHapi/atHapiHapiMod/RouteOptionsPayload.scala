@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 
 trait RouteOptionsPayload extends js.Object {
   /**
-    * Default value: allows parsing of the following mime types:
+    * @default allows parsing of the following mime types:
     * * application/json
     * * application/ *+json
     * * application/octet-stream
@@ -24,31 +24,31 @@ trait RouteOptionsPayload extends js.Object {
     */
   var allow: js.UndefOr[String | js.Array[String]] = js.undefined
   /**
-    * Default value: none.
+    * @default none.
     * An object where each key is a content-encoding name and each value is an object with the desired decoder settings. Note that encoder settings are set in compression.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionspayloadcompression)
     */
   var compression: js.UndefOr[Dictionary[PayloadCompressionDecoderSettings]] = js.undefined
   /**
-    * Default value: 'application/json'.
+    * @default 'application/json'.
     * The default content type if the 'Content-Type' request header is missing.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionspayloaddefaultcontenttype)
     */
   var defaultContentType: js.UndefOr[String] = js.undefined
   /**
-    * Default value: 'error' (return a Bad Request (400) error response).
+    * @default 'error' (return a Bad Request (400) error response).
     * A failAction value which determines how to handle payload parsing errors.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionspayloadfailaction)
     */
   var failAction: js.UndefOr[FailAction] = js.undefined
   /**
-    * Default value: 1048576 (1MB).
+    * @default 1048576 (1MB).
     * Limits the size of incoming payloads to the specified byte count. Allowing very large payloads may cause the server to run out of memory.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionspayloadmaxbytes)
     */
   var maxBytes: js.UndefOr[Double] = js.undefined
   /**
-    * Default value: none.
+    * @default none.
     * Overrides payload processing for multipart requests. Value can be one of:
     * * false - disable multipart processing.
     * an object with the following required options:
@@ -61,7 +61,7 @@ trait RouteOptionsPayload extends js.Object {
     */
   var multipart: js.UndefOr[`false` | Anon_Annotated] = js.undefined
   /**
-    * Default value: 'data'.
+    * @default 'data'.
     * The processed payload format. The value must be one of:
     * * 'data' - the incoming payload is read fully into memory. If parse is true, the payload is parsed (JSON, form-decoded, multipart) based on the 'Content-Type' header. If parse is false, a raw
     * Buffer is returned.
@@ -76,13 +76,13 @@ trait RouteOptionsPayload extends js.Object {
     */
   var output: js.UndefOr[PayloadOutput] = js.undefined
   /**
-    * Default value: none.
+    * @default none.
     * A mime type string overriding the 'Content-Type' header value received.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionspayloadoverride)
     */
   var `override`: js.UndefOr[String] = js.undefined
   /**
-    * Default value: true.
+    * @default true.
     * Determines if the incoming payload is processed or presented raw. Available values:
     * * true - if the request 'Content-Type' matches the allowed mime types set by allow (for the whole payload as well as parts), the payload is converted into an object when possible. If the
     * format is unknown, a Bad Request (400) error response is sent. Any known content encoding is decoded.
@@ -92,14 +92,14 @@ trait RouteOptionsPayload extends js.Object {
     */
   var parse: js.UndefOr[Boolean | gunzip] = js.undefined
   /**
-    * Default value: to 10000 (10 seconds).
+    * @default to 10000 (10 seconds).
     * Payload reception timeout in milliseconds. Sets the maximum time allowed for the client to transmit the request payload (body) before giving up and responding with a Request Timeout (408)
     * error response. Set to false to disable.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionspayloadtimeout)
     */
   var timeout: js.UndefOr[`false` | Double] = js.undefined
   /**
-    * Default value: os.tmpdir().
+    * @default os.tmpdir().
     * The directory used for writing file uploads.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionspayloaduploads)
     */

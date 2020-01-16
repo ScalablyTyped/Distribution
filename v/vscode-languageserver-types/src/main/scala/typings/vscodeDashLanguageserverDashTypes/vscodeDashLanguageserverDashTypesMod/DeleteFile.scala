@@ -18,14 +18,14 @@ trait DeleteFile extends ResourceOperation {
   /**
     * The file to delete.
     */
-  var uri: String
+  var uri: DocumentUri
 }
 
 @JSImport("vscode-languageserver-types", "DeleteFile")
 @js.native
 object DeleteFile extends js.Object {
-  def create(uri: String): DeleteFile = js.native
-  def create(uri: String, options: DeleteFileOptions): DeleteFile = js.native
+  def create(uri: DocumentUri): DeleteFile = js.native
+  def create(uri: DocumentUri, options: DeleteFileOptions): DeleteFile = js.native
   def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.DeleteFile */ Boolean = js.native
 }
 

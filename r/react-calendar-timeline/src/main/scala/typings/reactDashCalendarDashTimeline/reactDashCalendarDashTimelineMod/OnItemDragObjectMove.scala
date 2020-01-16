@@ -13,7 +13,7 @@ trait OnItemDragObjectMove extends OnItemDragObjectBase {
 
 object OnItemDragObjectMove {
   @scala.inline
-  def apply(eventType: move, itemId: Double, newGroupOrder: Double, time: Double): OnItemDragObjectMove = {
+  def apply(eventType: move, itemId: Id, newGroupOrder: Double, time: Double): OnItemDragObjectMove = {
     val __obj = js.Dynamic.literal(eventType = eventType.asInstanceOf[js.Any], itemId = itemId.asInstanceOf[js.Any], newGroupOrder = newGroupOrder.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[OnItemDragObjectMove]

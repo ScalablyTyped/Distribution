@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "storybook__addon-viewport"
-version := "5.2.8-f6ae59"
+version := "5.3.4-a2164e"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -10,6 +10,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetLaunchConfigurationResult extends js.Object {
   /**
+    * The Amazon Resource Name of the launch configuration.
+    */
+  val arn: String = js.native
+  /**
     * Whether a Public IP address is associated with the instance.
     */
   val associatePublicIpAddress: Boolean = js.native
@@ -86,6 +90,7 @@ trait GetLaunchConfigurationResult extends js.Object {
 object GetLaunchConfigurationResult {
   @scala.inline
   def apply(
+    arn: String,
     associatePublicIpAddress: Boolean,
     ebsBlockDevices: js.Array[GetLaunchConfigurationEbsBlockDevice],
     ebsOptimized: Boolean,
@@ -105,7 +110,7 @@ object GetLaunchConfigurationResult {
     vpcClassicLinkId: String,
     vpcClassicLinkSecurityGroups: js.Array[String]
   ): GetLaunchConfigurationResult = {
-    val __obj = js.Dynamic.literal(associatePublicIpAddress = associatePublicIpAddress.asInstanceOf[js.Any], ebsBlockDevices = ebsBlockDevices.asInstanceOf[js.Any], ebsOptimized = ebsOptimized.asInstanceOf[js.Any], enableMonitoring = enableMonitoring.asInstanceOf[js.Any], ephemeralBlockDevices = ephemeralBlockDevices.asInstanceOf[js.Any], iamInstanceProfile = iamInstanceProfile.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], imageId = imageId.asInstanceOf[js.Any], instanceType = instanceType.asInstanceOf[js.Any], keyName = keyName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], placementTenancy = placementTenancy.asInstanceOf[js.Any], rootBlockDevices = rootBlockDevices.asInstanceOf[js.Any], securityGroups = securityGroups.asInstanceOf[js.Any], spotPrice = spotPrice.asInstanceOf[js.Any], userData = userData.asInstanceOf[js.Any], vpcClassicLinkId = vpcClassicLinkId.asInstanceOf[js.Any], vpcClassicLinkSecurityGroups = vpcClassicLinkSecurityGroups.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], associatePublicIpAddress = associatePublicIpAddress.asInstanceOf[js.Any], ebsBlockDevices = ebsBlockDevices.asInstanceOf[js.Any], ebsOptimized = ebsOptimized.asInstanceOf[js.Any], enableMonitoring = enableMonitoring.asInstanceOf[js.Any], ephemeralBlockDevices = ephemeralBlockDevices.asInstanceOf[js.Any], iamInstanceProfile = iamInstanceProfile.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], imageId = imageId.asInstanceOf[js.Any], instanceType = instanceType.asInstanceOf[js.Any], keyName = keyName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], placementTenancy = placementTenancy.asInstanceOf[js.Any], rootBlockDevices = rootBlockDevices.asInstanceOf[js.Any], securityGroups = securityGroups.asInstanceOf[js.Any], spotPrice = spotPrice.asInstanceOf[js.Any], userData = userData.asInstanceOf[js.Any], vpcClassicLinkId = vpcClassicLinkId.asInstanceOf[js.Any], vpcClassicLinkSecurityGroups = vpcClassicLinkSecurityGroups.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetLaunchConfigurationResult]
   }

@@ -2,11 +2,11 @@ package typings.reactDashNativeDashSvgDashCharts.reactDashNativeDashSvgDashChart
 
 import typings.d3DashScale.d3DashScaleMod.ScaleBand
 import typings.d3DashShape.d3DashShapeMod.CurveGenerator
-import typings.d3DashShape.d3DashShapeMod._Global_.CanvasRenderingContext2D
 import typings.reactDashNative.reactDashNativeMod.StyleProp
 import typings.reactDashNative.reactDashNativeMod.ViewStyle
 import typings.reactDashNativeDashSvg.reactDashNativeDashSvgMod.PathProps
 import typings.reactDashNativeDashSvgDashCharts.Anon_Bottom
+import typings.std.CanvasRenderingContext2D
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`

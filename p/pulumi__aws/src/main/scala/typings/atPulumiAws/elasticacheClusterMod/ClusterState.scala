@@ -16,6 +16,7 @@ trait ClusterState extends js.Object {
     * (Available since v0.6.0)
     */
   val applyImmediately: js.UndefOr[Input[Boolean]] = js.native
+  val arn: js.UndefOr[Input[String]] = js.native
   /**
     * The Availability Zone for the cache cluster. If you want to create cache nodes in multi-az, use `preferredAvailabilityZones` instead. Default: System chosen Availability Zone.
     */
@@ -143,6 +144,7 @@ object ClusterState {
   @scala.inline
   def apply(
     applyImmediately: Input[Boolean] = null,
+    arn: Input[String] = null,
     availabilityZone: Input[String] = null,
     azMode: Input[String] = null,
     cacheNodes: Input[js.Array[Input[ClusterCacheNode]]] = null,
@@ -170,6 +172,7 @@ object ClusterState {
   ): ClusterState = {
     val __obj = js.Dynamic.literal()
     if (applyImmediately != null) __obj.updateDynamic("applyImmediately")(applyImmediately.asInstanceOf[js.Any])
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
     if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])
     if (azMode != null) __obj.updateDynamic("azMode")(azMode.asInstanceOf[js.Any])
     if (cacheNodes != null) __obj.updateDynamic("cacheNodes")(cacheNodes.asInstanceOf[js.Any])

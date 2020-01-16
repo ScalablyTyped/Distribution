@@ -1,7 +1,7 @@
 
 # Scala.js typings for hapi__cryptiles
 
-Typings are for version 4.2
+Typings are for version 5.0.0
 
 ## Library description:
 General purpose crypto utilities
@@ -24,7 +24,7 @@ General purpose crypto utilities
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -2,9 +2,9 @@ package typings.atHapiHapi.atHapiHapiMod
 
 import typings.atHapiCatbox.atHapiCatboxMod.ClientOptions
 import typings.atHapiHapi.Anon_Base64
-import typings.atHapiHapi.Anon_Concurrent
 import typings.atHapiHapi.Anon_False
 import typings.atHapiHapi.Anon_IsCaseSensitive
+import typings.atHapiHapi.Anon_MaxEventLoopDelay
 import typings.atHapiHapi.Anon_Parser
 import typings.atHapiHapi.atHapiHapiBooleans.`false`
 import typings.atHapiMimos.atHapiMimosMod.MimosOptions
@@ -14,14 +14,14 @@ import scala.scalajs.js.annotation._
 
 trait ServerOptions extends js.Object {
   /**
-    * Default value: '0.0.0.0' (all available network interfaces).
+    * @default '0.0.0.0' (all available network interfaces).
     * Sets the hostname or IP address the server will listen on. If not configured, defaults to host if present, otherwise to all available network interfaces. Set to '127.0.0.1' or 'localhost' to
     * restrict the server to only those coming from the same host.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serveroptionsaddress)
     */
   var address: js.UndefOr[String] = js.undefined
   /**
-    * Default value: {}.
+    * @default {}.
     * Provides application-specific configuration which can later be accessed via server.settings.app. The framework does not interact with this object. It is simply a reference made available
     * anywhere a server reference is provided. Note the difference between server.settings.app which is used to store static configuration values and server.app which is meant for storing run-time
     * state.
@@ -29,14 +29,14 @@ trait ServerOptions extends js.Object {
     */
   var app: js.UndefOr[ServerOptionsApp] = js.undefined
   /**
-    * Default value: true.
+    * @default true.
     * Used to disable the automatic initialization of the listener. When false, indicates that the listener will be started manually outside the framework.
     * Cannot be set to true along with a port value.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serveroptionsautolisten)
     */
   var autoListen: js.UndefOr[Boolean] = js.undefined
   /**
-    * Default value: { engine: require('@hapi/catbox-memory' }.
+    * @default { engine: require('@hapi/catbox-memory' }.
     * Sets up server-side caching providers. Every server includes a default cache for storing application state. By default, a simple memory-based cache is created which has limited capacity and
     * capabilities. hapi uses catbox for its cache implementation which includes support for common storage solutions (e.g. Redis, MongoDB, Memcached, Riak, among others). Caching is only utilized
     * if methods and plugins explicitly store their state in the cache. The server cache configuration only defines the storage container itself. The configuration can be assigned one or more
@@ -54,12 +54,12 @@ trait ServerOptions extends js.Object {
     */
   var cache: js.UndefOr[CacheProvider[ClientOptions] | ServerOptionsCache | js.Array[ServerOptionsCache]] = js.undefined
   /**
-    * Default value: { minBytes: 1024 }.
+    * @default { minBytes: 1024 }.
     * Defines server handling of content encoding requests. If false, response content encoding is disabled and no compression is performed by the server.
     */
   var compression: js.UndefOr[Boolean | ServerOptionsCompression] = js.undefined
   /**
-    * Default value: { request: ['implementation'] }.
+    * @default { request: ['implementation'] }.
     * Determines which logged events are sent to the console. This should only be used for development and does not affect which events are actually logged internally and recorded. Set to false to
     * disable all console logging, or to an object with:
     * * log - a string array of server log tags to be displayed via console.error() when the events are logged via server.log() as well as internally generated server logs. Defaults to no output.
@@ -71,28 +71,28 @@ trait ServerOptions extends js.Object {
     */
   var debug: js.UndefOr[`false` | Anon_False] = js.undefined
   /**
-    * Default value: the operating system hostname and if not available, to 'localhost'.
+    * @default the operating system hostname and if not available, to 'localhost'.
     * The public hostname or IP address. Used to set server.info.host and server.info.uri and as address is none provided.
     */
   var host: js.UndefOr[String] = js.undefined
   /**
-    * Default value: none.
+    * @default none.
     * An optional node HTTP (or HTTPS) http.Server object (or an object with a compatible interface).
     * If the listener needs to be manually started, set autoListen to false.
     * If the listener uses TLS, set tls to true.
     */
   var listener: js.UndefOr[typings.node.httpMod.Server] = js.undefined
   /**
-    * Default value: { sampleInterval: 0 }.
+    * @default { sampleInterval: 0 }.
     * Server excessive load handling limits where:
     * * sampleInterval - the frequency of sampling in milliseconds. When set to 0, the other load options are ignored. Defaults to 0 (no sampling).
     * * maxHeapUsedBytes - maximum V8 heap size over which incoming requests are rejected with an HTTP Server Timeout (503) response. Defaults to 0 (no limit).
     * * maxRssBytes - maximum process RSS size over which incoming requests are rejected with an HTTP Server Timeout (503) response. Defaults to 0 (no limit).
     * * maxEventLoopDelay - maximum event loop delay duration in milliseconds over which incoming requests are rejected with an HTTP Server Timeout (503) response. Defaults to 0 (no limit).
     */
-  var load: js.UndefOr[Anon_Concurrent] = js.undefined
+  var load: js.UndefOr[Anon_MaxEventLoopDelay] = js.undefined
   /**
-    * Default value: none.
+    * @default none.
     * Options passed to the mimos module when generating the mime database used by the server (and accessed via server.mime):
     * * override - an object hash that is merged into the built in mime information specified here. Each key value pair represents a single mime object. Each override value must contain:
     * * key - the lower-cased mime-type string (e.g. 'application/javascript').
@@ -103,13 +103,13 @@ trait ServerOptions extends js.Object {
     */
   var mime: js.UndefOr[MimosOptions] = js.undefined
   /**
-    * Default value: {}.
+    * @default {}.
     * Plugin-specific configuration which can later be accessed via server.settings.plugins. plugins is an object where each key is a plugin name and the value is the configuration. Note the
     * difference between server.settings.plugins which is used to store static configuration values and server.plugins which is meant for storing run-time state.
     */
   var plugins: js.UndefOr[PluginSpecificConfiguration] = js.undefined
   /**
-    * Default value: 0 (an ephemeral port).
+    * @default 0 (an ephemeral port).
     * The TCP port the server will listen to. Defaults the next available port when the server is started (and assigned to server.info.port).
     * If port is a string containing a '/' character, it is used as a UNIX domain socket path. If it starts with '\.\pipe', it is used as a Windows named pipe.
     */
@@ -119,14 +119,14 @@ trait ServerOptions extends js.Object {
     */
   var query: js.UndefOr[Anon_Parser] = js.undefined
   /**
-    * Default value: { isCaseSensitive: true, stripTrailingSlash: false }.
+    * @default { isCaseSensitive: true, stripTrailingSlash: false }.
     * Controls how incoming request URIs are matched against the routing table:
     * * isCaseSensitive - determines whether the paths '/example' and '/EXAMPLE' are considered different resources. Defaults to true.
     * * stripTrailingSlash - removes trailing slashes on incoming paths. Defaults to false.
     */
   var router: js.UndefOr[Anon_IsCaseSensitive] = js.undefined
   /**
-    * Default value: none.
+    * @default none.
     * A route options object used as the default configuration for every route.
     */
   var routes: js.UndefOr[RouteOptions] = js.undefined
@@ -146,12 +146,12 @@ trait ServerOptions extends js.Object {
   // state?: ServerStateCookieOptions;
   var state: js.UndefOr[Anon_Base64] = js.undefined
   /**
-    * Default value: none.
+    * @default none.
     * Used to create an HTTPS connection. The tls object is passed unchanged to the node HTTPS server as described in the node HTTPS documentation.
     */
   var tls: js.UndefOr[Boolean | typings.node.httpsMod.ServerOptions] = js.undefined
   /**
-    * Default value: constructed from runtime server information.
+    * @default constructed from runtime server information.
     * The full public URI without the path (e.g. 'http://example.com:8080'). If present, used as the server server.info.uri, otherwise constructed from the server settings.
     */
   var uri: js.UndefOr[String] = js.undefined
@@ -168,7 +168,7 @@ object ServerOptions {
     debug: `false` | Anon_False = null,
     host: String = null,
     listener: typings.node.httpMod.Server = null,
-    load: Anon_Concurrent = null,
+    load: Anon_MaxEventLoopDelay = null,
     mime: MimosOptions = null,
     plugins: PluginSpecificConfiguration = null,
     port: Double | String = null,

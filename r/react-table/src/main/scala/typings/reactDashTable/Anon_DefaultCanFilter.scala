@@ -18,13 +18,13 @@ trait Anon_DefaultCanFilter[D /* <: js.Object */] extends js.Object {
 object Anon_DefaultCanFilter {
   @scala.inline
   def apply[D /* <: js.Object */](
+    Filter: Renderer[FilterProps[D]],
     defaultCanFilter: Boolean,
     disableFilters: Boolean,
-    filter: FilterType[D] | DefaultFilterTypes | String,
-    Filter: Renderer[FilterProps[D]] = null
+    filter: FilterType[D] | DefaultFilterTypes | String
   ): Anon_DefaultCanFilter[D] = {
-    val __obj = js.Dynamic.literal(defaultCanFilter = defaultCanFilter.asInstanceOf[js.Any], disableFilters = disableFilters.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any])
-    if (Filter != null) __obj.updateDynamic("Filter")(Filter.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Filter = Filter.asInstanceOf[js.Any], defaultCanFilter = defaultCanFilter.asInstanceOf[js.Any], disableFilters = disableFilters.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_DefaultCanFilter[D]]
   }
 }

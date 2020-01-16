@@ -25,6 +25,7 @@ object Auth0Constructor {
     cdn: String = null,
     dict: js.Any = null,
     leeway: Int | Double = null,
+    maxAge: Int | Double = null,
     plugins: js.Array[_] = null,
     redirectUri: String = null,
     responseMode: String = null,
@@ -41,6 +42,7 @@ object Auth0Constructor {
     if (cdn != null) __obj.updateDynamic("cdn")(cdn.asInstanceOf[js.Any])
     if (dict != null) __obj.updateDynamic("dict")(dict.asInstanceOf[js.Any])
     if (leeway != null) __obj.updateDynamic("leeway")(leeway.asInstanceOf[js.Any])
+    if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
     if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
     if (redirectUri != null) __obj.updateDynamic("redirectUri")(redirectUri.asInstanceOf[js.Any])
     if (responseMode != null) __obj.updateDynamic("responseMode")(responseMode.asInstanceOf[js.Any])

@@ -16,6 +16,7 @@ package object reactDashReduxMod {
   import typings.std.Pick
 
   type AdvancedComponentDecorator[TProps, TOwnProps] = js.Function1[/* component */ ComponentType[TProps], NamedExoticComponent[TOwnProps]]
+  type AnyIfEmpty[T /* <: js.Object */] = T
   type ConnectedComponent[C /* <: ComponentType[_] */, P] = (NamedExoticComponent[LibraryManagedAttributes[C, P]]) with (NonReactStatics[C, js.Object]) with Anon_WrappedComponent[C]
   type ConnectedProps[TConnector] = js.Any
   type GetProps[C] = js.Any
@@ -107,6 +108,7 @@ package object reactDashReduxMod {
   type ResolveThunks[TDispatchProps] = TDispatchProps | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ C in keyof TDispatchProps ]: react-redux.react-redux.HandleThunkActionCreator<TDispatchProps[C]>}
     */ typings.reactDashRedux.reactDashReduxStrings.ResolveThunks with TDispatchProps)
+  type RootStateOrAny = AnyIfEmpty[DefaultRootState]
   type Selector[S, TProps, TOwnProps] = (js.Function2[/* state */ S, /* ownProps */ TOwnProps, TProps]) | (js.Function1[/* state */ S, TProps])
   type SelectorFactory[S, TProps, TOwnProps, TFactoryOptions] = js.Function2[
     /* dispatch */ Dispatch[Action[js.Any]], 

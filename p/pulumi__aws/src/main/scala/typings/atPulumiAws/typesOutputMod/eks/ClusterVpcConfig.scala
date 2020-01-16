@@ -19,6 +19,10 @@ trait ClusterVpcConfig extends js.Object {
     */
   var endpointPublicAccess: js.UndefOr[Boolean] = js.native
   /**
+    * <elided>
+    */
+  var publicAccessCidrs: js.Array[String] = js.native
+  /**
     * List of security group IDs for the cross-account elastic network interfaces that Amazon EKS creates to use to allow communication between your worker nodes and the Kubernetes control plane.
     */
   var securityGroupIds: js.UndefOr[js.Array[String]] = js.native
@@ -36,13 +40,14 @@ object ClusterVpcConfig {
   @scala.inline
   def apply(
     clusterSecurityGroupId: String,
+    publicAccessCidrs: js.Array[String],
     subnetIds: js.Array[String],
     vpcId: String,
     endpointPrivateAccess: js.UndefOr[Boolean] = js.undefined,
     endpointPublicAccess: js.UndefOr[Boolean] = js.undefined,
     securityGroupIds: js.Array[String] = null
   ): ClusterVpcConfig = {
-    val __obj = js.Dynamic.literal(clusterSecurityGroupId = clusterSecurityGroupId.asInstanceOf[js.Any], subnetIds = subnetIds.asInstanceOf[js.Any], vpcId = vpcId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(clusterSecurityGroupId = clusterSecurityGroupId.asInstanceOf[js.Any], publicAccessCidrs = publicAccessCidrs.asInstanceOf[js.Any], subnetIds = subnetIds.asInstanceOf[js.Any], vpcId = vpcId.asInstanceOf[js.Any])
     if (!js.isUndefined(endpointPrivateAccess)) __obj.updateDynamic("endpointPrivateAccess")(endpointPrivateAccess.asInstanceOf[js.Any])
     if (!js.isUndefined(endpointPublicAccess)) __obj.updateDynamic("endpointPublicAccess")(endpointPublicAccess.asInstanceOf[js.Any])
     if (securityGroupIds != null) __obj.updateDynamic("securityGroupIds")(securityGroupIds.asInstanceOf[js.Any])

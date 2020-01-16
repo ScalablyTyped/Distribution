@@ -20,6 +20,7 @@ class Hook[TArg1, TArg2, TArg3, TTabResult, THookResult] () extends js.Object {
   def callAsync(arg1: TArg1, arg2: TArg2, arg3: TArg3, args: js.Any*): THookResult = js.native
   def compile(options: HookCompileOptions): js.Function = js.native
   def intercept(interceptor: HookInterceptor): Unit = js.native
+  def isUsed(): Boolean = js.native
   def promise(): js.Promise[THookResult] = js.native
   def promise(arg1: TArg1): js.Promise[THookResult] = js.native
   def promise(arg1: TArg1, arg2: TArg2): js.Promise[THookResult] = js.native

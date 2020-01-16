@@ -22,6 +22,6 @@ class ^[Q /* <: BaseQuad */] () extends Parser[Q] {
     * @return The resulting event emitter.
     */
   /* CompleteClass */
-  override def `import`(stream: Stream[Q]): EventEmitter = js.native
+  override def `import`(stream: EventEmitter): Stream[Q] = js.native
 }
 

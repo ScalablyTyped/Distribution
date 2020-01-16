@@ -1,9 +1,7 @@
 package typings.reactDashNativeDashElements.reactDashNativeDashElementsMod
 
 import typings.react.reactMod.ReactElement
-import typings.reactDashNative.reactDashNativeMod.ModalBaseProps
-import typings.reactDashNative.reactDashNativeMod.ModalPropsAndroid
-import typings.reactDashNative.reactDashNativeMod.ModalPropsIOS
+import typings.reactDashNative.reactDashNativeMod.ModalProps
 import typings.reactDashNative.reactDashNativeMod.NativeSyntheticEvent
 import typings.reactDashNative.reactDashNativeMod.StyleProp
 import typings.reactDashNative.reactDashNativeMod.ViewStyle
@@ -23,10 +21,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait OverlayProps
-  extends ModalBaseProps
-     with ModalPropsIOS
-     with ModalPropsAndroid {
+trait OverlayProps extends ModalProps {
   /**
     * Border radius for the overlay
     *

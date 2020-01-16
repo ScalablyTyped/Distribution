@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "use-json-comparison" : "1.0.3"
+      "use-json-comparison" : "1.0.5"
     }
   ],
   "test-dependencies" : [
     {
-      "use-json-comparison" : "1.0.3"
+      "use-json-comparison" : "1.0.5"
     }
   ],
   "compile-devDependencies" : [

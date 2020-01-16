@@ -1,7 +1,7 @@
 package typings.easyDashXDashHeaders.dgramMod
 
-import typings.easyDashXDashHeaders.Buffer
 import typings.easyDashXDashHeaders.eventsMod.EventEmitter
+import typings.node.Buffer
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

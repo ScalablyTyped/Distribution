@@ -59,7 +59,7 @@ trait FlatListProps[ItemT] extends VirtualizedListProps[ItemT] {
     * like an immutable list, use the underlying VirtualizedList directly.
     */
   @JSName("data")
-  var data_FlatListProps: js.Array[ItemT] | Null
+  var data_FlatListProps: js.UndefOr[js.Array[ItemT] | Null] = js.undefined
   /**
     * `getItemLayout` is an optional optimization that lets us skip measurement of dynamic
     * content if you know the height of items a priori. getItemLayout is the most efficient,

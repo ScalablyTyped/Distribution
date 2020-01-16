@@ -105,6 +105,8 @@ object reactDashSelectComponents extends reactDashSelectProps {
   @scala.inline
   def NoOptionsMessage: ComponentType[NoOptionsMessageProps[js.Any]] = js.constructorOf[typings.reactDashSelect.srcComponentsMenuMod.NoOptionsMessage].asInstanceOf[typings.react.reactMod.ComponentType[NoOptionsMessageProps[js.Any]]]
   @scala.inline
+  def NonceProvider: ComponentType[NonceProviderProps] = js.constructorOf[typings.reactDashSelect.reactDashSelectMod.NonceProvider].asInstanceOf[typings.react.reactMod.ComponentType[NonceProviderProps]]
+  @scala.inline
   def Option: ComponentType[OptionProps[js.Any]] = js.constructorOf[typings.reactDashSelect.srcComponentsOptionMod.default].asInstanceOf[typings.react.reactMod.ComponentType[OptionProps[js.Any]]]
   @scala.inline
   def Placeholder: ComponentType[PlaceholderProps[js.Any]] = js.constructorOf[typings.reactDashSelect.animatedMod.Placeholder].asInstanceOf[typings.react.reactMod.ComponentType[PlaceholderProps[js.Any]]]

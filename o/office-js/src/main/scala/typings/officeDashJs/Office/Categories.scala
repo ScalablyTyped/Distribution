@@ -11,6 +11,8 @@ import scala.scalajs.js.annotation._
   * The user defines {@link Office.MasterCategories | categories in a master list} on their mailbox.
   * They can then apply one or more categories to an item.
   *
+  * **Important**: In Outlook on the web, you can't use the API to manage categories on a message in Read mode.
+  *
   * [Api set: Mailbox 1.8]
   *
   * @remarks

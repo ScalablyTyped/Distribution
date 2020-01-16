@@ -2,6 +2,7 @@ package typings.reactDashNative.reactDashNativeMod
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StringDictionary
+import typings.reactDashNative.keyinPermissionPermissionStatus
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,11 +43,7 @@ trait PermissionsAndroidStatic extends Instantiable0[PermissionsAndroidStatic] {
     * returns an object with the permissions as keys and strings as values
     * indicating whether the user allowed or denied the request
     */
-  def requestMultiple(permissions: js.Array[Permission]): js.Promise[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in react-native.react-native.Permission ]: react-native.react-native.PermissionStatus}
-    */ typings.reactDashNative.reactDashNativeStrings.PermissionsAndroidStatic with js.Any
-  ] = js.native
+  def requestMultiple(permissions: js.Array[Permission]): js.Promise[keyinPermissionPermissionStatus] = js.native
   /**
     * @deprecated Use request instead
     */

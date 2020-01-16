@@ -1,7 +1,7 @@
 
 # Scala.js typings for power-assert
 
-Typings are for version 1.5.2
+Typings are for version 1.5.3
 
 ## Library description:
 Power Assert in JavaScript

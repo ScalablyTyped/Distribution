@@ -16,6 +16,7 @@ object dataTypes extends js.Object {
   /* 0x0011 */ val date: typings.cassandraDashDriver.libTypesMod.types.dataTypes.date with Double = js.native
   /* 0x0006 */ val decimal: typings.cassandraDashDriver.libTypesMod.types.dataTypes.decimal with Double = js.native
   /* 0x0007 */ val double: typings.cassandraDashDriver.libTypesMod.types.dataTypes.double with Double = js.native
+  /* 0x0015 */ val duration: typings.cassandraDashDriver.libTypesMod.types.dataTypes.duration with Double = js.native
   /* 0x0008 */ val float: typings.cassandraDashDriver.libTypesMod.types.dataTypes.float with Double = js.native
   /* 0x0010 */ val inet: typings.cassandraDashDriver.libTypesMod.types.dataTypes.inet with Double = js.native
   /* 0x0009 */ val int: typings.cassandraDashDriver.libTypesMod.types.dataTypes.int with Double = js.native

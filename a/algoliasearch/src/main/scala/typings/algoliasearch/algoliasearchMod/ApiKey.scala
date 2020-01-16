@@ -21,6 +21,7 @@ trait ApiKey extends js.Object {
   ]
   var createdAt: Double
   var description: js.UndefOr[String] = js.undefined
+  var indexes: js.UndefOr[js.Array[String]] = js.undefined
   var validity: Double
   var value: String
 }
@@ -34,10 +35,12 @@ object ApiKey {
     createdAt: Double,
     validity: Double,
     value: String,
-    description: String = null
+    description: String = null,
+    indexes: js.Array[String] = null
   ): ApiKey = {
     val __obj = js.Dynamic.literal(acl = acl.asInstanceOf[js.Any], createdAt = createdAt.asInstanceOf[js.Any], validity = validity.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (indexes != null) __obj.updateDynamic("indexes")(indexes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApiKey]
   }
 }

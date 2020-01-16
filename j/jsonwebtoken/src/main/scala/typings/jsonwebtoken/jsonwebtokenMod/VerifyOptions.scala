@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait VerifyOptions extends js.Object {
-  var algorithms: js.UndefOr[js.Array[String]] = js.undefined
+  var algorithms: js.UndefOr[js.Array[Algorithm]] = js.undefined
   var audience: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.undefined
   var clockTimestamp: js.UndefOr[Double] = js.undefined
   var clockTolerance: js.UndefOr[Double] = js.undefined
@@ -27,7 +27,7 @@ trait VerifyOptions extends js.Object {
 object VerifyOptions {
   @scala.inline
   def apply(
-    algorithms: js.Array[String] = null,
+    algorithms: js.Array[Algorithm] = null,
     audience: String | RegExp | (js.Array[String | RegExp]) = null,
     clockTimestamp: Int | Double = null,
     clockTolerance: Int | Double = null,

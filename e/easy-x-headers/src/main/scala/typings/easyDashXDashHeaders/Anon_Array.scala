@@ -27,9 +27,9 @@ trait Anon_Array
   */
 Instantiable1[
       (/* array */ js.Array[js.Any]) | (/* size */ Double) | (/* str */ String) | (/* array */ Uint8Array), 
-      Buffer
+      typings.node.Buffer
     ]
-     with Instantiable2[/* str */ String, /* encoding */ String, Buffer] {
+     with Instantiable2[/* str */ String, /* encoding */ String, typings.node.Buffer] {
   /**
     * Gives the actual byte length of a string. encoding defaults to 'utf8'.
     * This is not the same as String.prototype.length since that returns the number of characters in a string.
@@ -42,7 +42,7 @@ Instantiable1[
   /**
     * The same as buf1.compare(buf2).
     */
-  def compare(buf1: Buffer, buf2: Buffer): Double = js.native
+  def compare(buf1: typings.node.Buffer, buf2: typings.node.Buffer): Double = js.native
   /**
     * Returns a buffer which is the result of concatenating all the buffers in the list together.
     *
@@ -54,8 +54,8 @@ Instantiable1[
     * @param totalLength Total length of the buffers when concatenated.
     *   If totalLength is not provided, it is read from the buffers in the list. However, this adds an additional loop to the function, so it is faster to provide the length explicitly.
     */
-  def concat(list: js.Array[Buffer]): Buffer = js.native
-  def concat(list: js.Array[Buffer], totalLength: Double): Buffer = js.native
+  def concat(list: js.Array[typings.node.Buffer]): typings.node.Buffer = js.native
+  def concat(list: js.Array[typings.node.Buffer], totalLength: Double): typings.node.Buffer = js.native
   /**
     * Returns true if {obj} is a Buffer
     *

@@ -58,9 +58,9 @@ Instantiable0[T]
     * If a callback is not passed, the aggregate itself is returned.
     * @param aggregations pipeline operator(s) or operator array
     */
-  def aggregate(): Aggregate[js.Array[_]] = js.native
-  def aggregate(aggregations: js.Array[_]): Aggregate[js.Array[_]] = js.native
-  def aggregate(aggregations: js.Array[_], cb: js.Function): js.Promise[js.Array[_]] = js.native
+  def aggregate[U](): Aggregate[js.Array[U]] = js.native
+  def aggregate[U](aggregations: js.Array[_]): Aggregate[js.Array[U]] = js.native
+  def aggregate[U](aggregations: js.Array[_], cb: js.Function): js.Promise[js.Array[U]] = js.native
   /**
     * Sends multiple insertOne, updateOne, updateMany, replaceOne, deleteOne, and/or deleteMany operations to the MongoDB server in one command. This is faster than sending multiple independent operations (like) if you use create()) because with bulkWrite() there is only one round trip to MongoDB.
     * Mongoose will perform casting on all operations you provide.
@@ -128,6 +128,8 @@ Instantiable0[T]
   def deleteMany(conditions: js.Any, callback: js.Function1[/* err */ js.Any, Unit]): (Query[Anon_N with Anon_DeletedCount]) with QueryHelpers = js.native
   def deleteOne(conditions: js.Any): (Query[Anon_N with Anon_DeletedCount]) with QueryHelpers = js.native
   def deleteOne(conditions: js.Any, callback: js.Function1[/* err */ js.Any, Unit]): (Query[Anon_N with Anon_DeletedCount]) with QueryHelpers = js.native
+  def deleteOne(conditions: js.Any, options: ModelOptions): (Query[Anon_N with Anon_DeletedCount]) with QueryHelpers = js.native
+  def deleteOne(conditions: js.Any, options: ModelOptions, callback: js.Function1[/* err */ js.Any, Unit]): (Query[Anon_N with Anon_DeletedCount]) with QueryHelpers = js.native
   /**
     * Adds a discriminator type.
     * @param name discriminator model name

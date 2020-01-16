@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object d3DashShapeMod {
   import typings.d3DashPath.d3DashPathMod.Path
-  import typings.d3DashShape.d3DashShapeMod._Global_.CanvasRenderingContext2D
+  import typings.std.CanvasRenderingContext2D
 
   type CurveFactory = /**
     * Returns a curve generator which renders to the specified context.

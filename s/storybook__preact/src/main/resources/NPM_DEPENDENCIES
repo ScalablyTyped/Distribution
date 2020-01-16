@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@storybook/preact" : "5.2.8"
+      "@storybook/preact" : "5.3.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@storybook/preact" : "5.2.8"
+      "@storybook/preact" : "5.3.4"
     }
   ],
   "compile-devDependencies" : [

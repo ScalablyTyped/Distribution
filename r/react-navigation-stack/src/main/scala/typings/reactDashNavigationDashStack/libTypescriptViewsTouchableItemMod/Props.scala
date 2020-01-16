@@ -1,6 +1,7 @@
 package typings.reactDashNavigationDashStack.libTypescriptViewsTouchableItemMod
 
 import typings.reactDashNative.reactDashNativeMod.AccessibilityActionEvent
+import typings.reactDashNative.reactDashNativeMod.AccessibilityActionInfo
 import typings.reactDashNative.reactDashNativeMod.AccessibilityRole
 import typings.reactDashNative.reactDashNativeMod.AccessibilityState
 import typings.reactDashNative.reactDashNativeMod.AccessibilityStates
@@ -11,7 +12,6 @@ import typings.reactDashNative.reactDashNativeMod.LayoutChangeEvent
 import typings.reactDashNative.reactDashNativeMod.StyleProp
 import typings.reactDashNative.reactDashNativeMod.TVParallaxProperties
 import typings.reactDashNative.reactDashNativeMod.ViewStyle
-import typings.reactDashNavigationDashStack.AccessibilityActionInfo
 import typings.reactDashNavigationDashStack.reactDashNavigationDashStackStrings.`box-none`
 import typings.reactDashNavigationDashStack.reactDashNavigationDashStackStrings.`box-only`
 import typings.reactDashNavigationDashStack.reactDashNavigationDashStackStrings.`no-hide-descendants`

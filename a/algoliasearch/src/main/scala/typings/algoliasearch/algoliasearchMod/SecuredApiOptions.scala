@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * Describes the options used when generating new api keys
-  * 
+  *
   * @see https://www.algolia.com/doc/api-reference/api-methods/generate-secured-api-key/
   */
 trait SecuredApiOptions extends QueryParameters {

@@ -18,13 +18,13 @@ trait VersionedTextDocumentIdentifier extends TextDocumentIdentifier {
 @JSImport("vscode-languageserver-types", "VersionedTextDocumentIdentifier")
 @js.native
 object VersionedTextDocumentIdentifier extends js.Object {
-  def create(uri: String): VersionedTextDocumentIdentifier = js.native
+  def create(uri: DocumentUri): VersionedTextDocumentIdentifier = js.native
   /**
     * Creates a new VersionedTextDocumentIdentifier literal.
     * @param uri The document's uri.
     * @param uri The document's text.
     */
-  def create(uri: String, version: Double): VersionedTextDocumentIdentifier = js.native
+  def create(uri: DocumentUri, version: Double): VersionedTextDocumentIdentifier = js.native
   /**
     * Checks whether the given literal conforms to the [VersionedTextDocumentIdentifier](#VersionedTextDocumentIdentifier) interface.
     */

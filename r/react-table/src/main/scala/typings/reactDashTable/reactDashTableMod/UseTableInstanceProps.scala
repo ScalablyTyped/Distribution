@@ -16,6 +16,7 @@ trait UseTableInstanceProps[D /* <: js.Object */] extends js.Object {
   var headerGroups: js.Array[HeaderGroup[D]] = js.native
   var headers: js.Array[ColumnInstance[D]] = js.native
   var hooks: Hooks[D] = js.native
+  var plugins: js.Array[PluginHook[D]] = js.native
   var rows: js.Array[Row[D]] = js.native
   var state: TableState[D] = js.native
   var totalColumnsWidth: Double = js.native

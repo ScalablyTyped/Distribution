@@ -4,8 +4,11 @@ import typings.atPulumiAws.directoryserviceConditionalForwaderMod.ConditionalFor
 import typings.atPulumiAws.directoryserviceConditionalForwaderMod.ConditionalForwaderState
 import typings.atPulumiAws.directoryserviceDirectoryMod.DirectoryArgs
 import typings.atPulumiAws.directoryserviceDirectoryMod.DirectoryState
+import typings.atPulumiAws.directoryserviceGetDirectoryMod.GetDirectoryArgs
+import typings.atPulumiAws.directoryserviceGetDirectoryMod.GetDirectoryResult
 import typings.atPulumiAws.directoryserviceLogServiceMod.LogServiceArgs
 import typings.atPulumiAws.directoryserviceLogServiceMod.LogServiceState
+import typings.atPulumiPulumi.invokeMod.InvokeOptions
 import typings.atPulumiPulumi.outputMod.Input
 import typings.atPulumiPulumi.resourceMod.CustomResourceOptions
 import typings.atPulumiPulumi.resourceMod.ID
@@ -58,6 +61,8 @@ object directoryserviceMod extends js.Object {
     def this(name: String, args: LogServiceArgs, opts: CustomResourceOptions) = this()
   }
   
+  def getDirectory(args: GetDirectoryArgs): js.Promise[GetDirectoryResult] with GetDirectoryResult = js.native
+  def getDirectory(args: GetDirectoryArgs, opts: InvokeOptions): js.Promise[GetDirectoryResult] with GetDirectoryResult = js.native
   /* static members */
   @js.native
   object ConditionalForwader extends js.Object {

@@ -12,10 +12,11 @@ trait ComputeEnvironmentState extends js.Object {
     * The Amazon Resource Name (ARN) of the compute environment.
     */
   val arn: js.UndefOr[Input[String]] = js.native
-  /**
-    * The name for your compute environment. Up to 128 letters (uppercase and lowercase), numbers, and underscores are allowed.
-    */
   val computeEnvironmentName: js.UndefOr[Input[String]] = js.native
+  /**
+    * Creates a unique compute environment name beginning with the specified prefix. Conflicts with `computeEnvironmentName`.
+    */
+  val computeEnvironmentNamePrefix: js.UndefOr[Input[String]] = js.native
   /**
     * Details of the compute resources managed by the compute environment. This parameter is required for managed compute environments. See details below.
     */
@@ -51,6 +52,7 @@ object ComputeEnvironmentState {
   def apply(
     arn: Input[String] = null,
     computeEnvironmentName: Input[String] = null,
+    computeEnvironmentNamePrefix: Input[String] = null,
     computeResources: Input[ComputeEnvironmentComputeResources] = null,
     ecsClusterArn: Input[String] = null,
     serviceRole: Input[String] = null,
@@ -62,6 +64,7 @@ object ComputeEnvironmentState {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
     if (computeEnvironmentName != null) __obj.updateDynamic("computeEnvironmentName")(computeEnvironmentName.asInstanceOf[js.Any])
+    if (computeEnvironmentNamePrefix != null) __obj.updateDynamic("computeEnvironmentNamePrefix")(computeEnvironmentNamePrefix.asInstanceOf[js.Any])
     if (computeResources != null) __obj.updateDynamic("computeResources")(computeResources.asInstanceOf[js.Any])
     if (ecsClusterArn != null) __obj.updateDynamic("ecsClusterArn")(ecsClusterArn.asInstanceOf[js.Any])
     if (serviceRole != null) __obj.updateDynamic("serviceRole")(serviceRole.asInstanceOf[js.Any])

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "blip-sdk"
-version := "7.3-dt-20200103Z-c35593"
+version := "7.3-dt-20200108Z-40d899"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

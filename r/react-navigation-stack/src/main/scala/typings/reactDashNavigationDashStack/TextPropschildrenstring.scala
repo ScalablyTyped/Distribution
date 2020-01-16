@@ -1,6 +1,7 @@
 package typings.reactDashNavigationDashStack
 
 import typings.reactDashNative.reactDashNativeMod.AccessibilityActionEvent
+import typings.reactDashNative.reactDashNativeMod.AccessibilityActionInfo
 import typings.reactDashNative.reactDashNativeMod.AccessibilityRole
 import typings.reactDashNative.reactDashNativeMod.AccessibilityState
 import typings.reactDashNative.reactDashNativeMod.AccessibilityStates

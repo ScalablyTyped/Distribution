@@ -1,7 +1,7 @@
 
 # Scala.js typings for yargs
 
-Typings are for version 13.0
+Typings are for version 15.0
 
 ## Library description:
 yargs the modern, pirate-themed, successor to optimist.

@@ -1,7 +1,7 @@
 
 # Scala.js typings for koa-router
 
-Typings are for version v7.x
+Typings are for version 7.4
 
 ## Library description:
 Router middleware for koa. Provides RESTful resource routing.

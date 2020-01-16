@@ -7,13 +7,15 @@ import scala.scalajs.js.annotation._
 
 trait Settings extends js.Object {
   /**
-    * Ignore object prototypes when doing a deep comparison?
-    * Defaults to false.
+    * Ignore object prototypes when doing a deep comparison.
+    * 
+    * @defaults false
     */
   var comparePrototypes: js.UndefOr[Boolean] = js.undefined
   /**
-    * Truncate long assertion error messages for readability?
-    * Defaults to true.
+    * Truncate long assertion error messages for readability.
+    * 
+    * @default false
     */
   var truncateMessages: js.UndefOr[Boolean] = js.undefined
 }

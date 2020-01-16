@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "crypto-random-string"
-version := "3.0.1-595222"
+version := "3.1.0-5abd7e"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

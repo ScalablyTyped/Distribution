@@ -14,7 +14,7 @@ trait QueryResult[TResult, TVariables] extends js.Object {
   var isCached: Boolean = js.native
   var isFetching: Boolean = js.native
   var isLoading: Boolean = js.native
-  def refetch(): Unit = js.native
-  def refetch(arg: Anon_Args[TVariables]): Unit = js.native
+  def refetch(): js.Promise[Unit] = js.native
+  def refetch(arg: Anon_Args[TVariables]): js.Promise[Unit] = js.native
 }
 

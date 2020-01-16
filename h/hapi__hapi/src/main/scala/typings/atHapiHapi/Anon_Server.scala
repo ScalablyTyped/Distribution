@@ -11,7 +11,7 @@ trait Anon_Server extends js.Object {
     */
   var server: js.UndefOr[Boolean | Double] = js.undefined
   /**
-    * Default value: none (use node default of 2 minutes).
+    * @default none (use node default of 2 minutes).
     * By default, node sockets automatically timeout after 2 minutes. Use this option to override this behavior. Set to false to disable socket timeouts.
     */
   var socket: js.UndefOr[Boolean | Double] = js.undefined

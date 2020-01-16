@@ -13,6 +13,8 @@ import typings.phaser.Phaser.Types.GameObjects.Sprite.SpriteConfig
 import typings.phaser.Phaser.Types.GameObjects.TileSprite.TileSpriteConfig
 import typings.phaser.Phaser.Types.Tilemaps.TilemapConfig
 import typings.phaser.Phaser.Types.Tweens.TweenBuilderConfig
+import typings.phaser.SpineGameObject
+import typings.phaser.SpineGameObjectConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -157,6 +159,8 @@ class GameObjectCreator protected () extends js.Object {
     */
   def shader(config: js.Object): Shader = js.native
   def shader(config: js.Object, addToScene: Boolean): Shader = js.native
+  def spine(config: SpineGameObjectConfig): SpineGameObject = js.native
+  def spine(config: SpineGameObjectConfig, addToScene: Boolean): SpineGameObject = js.native
   /**
     * Creates a new Sprite Game Object and returns it.
     * 

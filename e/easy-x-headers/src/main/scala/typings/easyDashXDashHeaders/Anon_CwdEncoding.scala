@@ -9,7 +9,7 @@ trait Anon_CwdEncoding extends js.Object {
   var encoding: js.UndefOr[String] = js.undefined
   var env: js.UndefOr[js.Any] = js.undefined
   var gid: js.UndefOr[Double] = js.undefined
-  var input: js.UndefOr[String | Buffer] = js.undefined
+  var input: js.UndefOr[String | typings.node.Buffer] = js.undefined
   var killSignal: js.UndefOr[String] = js.undefined
   var maxBuffer: js.UndefOr[Double] = js.undefined
   var stdio: js.UndefOr[js.Any] = js.undefined
@@ -24,7 +24,7 @@ object Anon_CwdEncoding {
     encoding: String = null,
     env: js.Any = null,
     gid: Int | Double = null,
-    input: String | Buffer = null,
+    input: String | typings.node.Buffer = null,
     killSignal: String = null,
     maxBuffer: Int | Double = null,
     stdio: js.Any = null,

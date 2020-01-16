@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "playcanvas"
-version := "1.24.3-55806c"
+version := "1.24.5-beebbf"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

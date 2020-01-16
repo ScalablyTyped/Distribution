@@ -17,7 +17,7 @@ trait Anon_EndpointParamsPromiseReposListCommentsForCommitParams extends js.Obje
   var endpoint_Original: Endpoint = js.native
   def apply(): js.Promise[Response[ReposListCommentsForCommitResponse]] = js.native
   def apply(
-    params: RequestOptions with (ReposListCommentsForCommitParams | ReposListCommentsForCommitParamsDeprecatedRef)
+    params: RequestOptions with ReposListCommentsForCommitParamsDeprecatedRef with ReposListCommentsForCommitParams
   ): js.Promise[Response[ReposListCommentsForCommitResponse]] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native

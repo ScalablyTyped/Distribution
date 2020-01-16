@@ -5,7 +5,7 @@ import typings.atHapiHapi.Anon_Apply
 import typings.atHapiHapi.Anon_ApplyExtend
 import typings.atHapiHapi.Anon_ApplyExtendTrue
 import typings.atHapiHapi.Anon_ApplyExtendTrueBoolean
-import typings.atHapiHapi.Anon_ConcurrentEventLoopDelay
+import typings.atHapiHapi.Anon_EventLoopDelay
 import typings.atHapiHapi.Anon_Method
 import typings.atHapiHapi.Anon_Request
 import typings.atHapiHapi.Anon_Timeout
@@ -18,6 +18,7 @@ import typings.atHapiHapi.atHapiHapiStrings.server
 import typings.atHapiHapi.atHapiHapiStrings.socket
 import typings.atHapiHapi.atHapiHapiStrings.tcp
 import typings.atHapiHapi.atHapiHapiStrings.toolkit
+import typings.atHapiJoi.atHapiJoiMod.Root
 import typings.node.zlibMod.Gunzip
 import typings.node.zlibMod.Gzip
 import scala.scalajs.js
@@ -96,7 +97,7 @@ class Server () extends js.Object {
     * * rss - RSS memory usage.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverload)
     */
-  val load: Anon_ConcurrentEventLoopDelay = js.native
+  val load: Anon_EventLoopDelay = js.native
   /**
     * Server methods are functions registered with the server and used throughout the application as a common utility.
     * Their advantage is in the ability to configure them to use the built-in cache and share across multiple request
@@ -630,5 +631,10 @@ class Server () extends js.Object {
     */
   def table(): js.Array[RequestRoute] = js.native
   def table(host: String): js.Array[RequestRoute] = js.native
+  /**
+    * Registers a server validation module used to compile raw validation rules into validation schemas for all routes.
+    * The validator is only used when validation rules are not pre-compiled schemas. When a validation rules is a function or schema object, the rule is used as-is and the validator is not used.
+    */
+  def validator(joi: Root): Unit = js.native
 }
 

@@ -5,6 +5,7 @@ import typings.parse.parseMod._Global_.Parse.Object.DestroyOptions
 import typings.parse.parseMod._Global_.Parse.Object.FetchOptions
 import typings.parse.parseMod._Global_.Parse.Object.SaveOptions
 import typings.parse.parseMod._Global_.Parse.Object.SetOptions
+import typings.parse.parseMod._Global_.Parse.Object.ToJSON
 import typings.std.Date
 import typings.std.Extract
 import typings.std.Partial
@@ -48,11 +49,11 @@ trait Object_[T /* <: Attributes */] extends js.Object {
   var remove: /* import warning: importer.ImportType#apply Failed type conversion: this['add'] */ js.Any = js.native
   var removeAll: /* import warning: importer.ImportType#apply Failed type conversion: this['addAll'] */ js.Any = js.native
   var updatedAt: Date = js.native
-  def add[K /* <: Extract[String, String] */](
+  def add[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends std.Array<any>? K : never}[keyof T] */ js.Any */](
     attr: K,
     item: /* import warning: importer.ImportType#apply Failed type conversion: T[K][number] */ js.Any
   ): this.type | `false` = js.native
-  def addAll[K /* <: Extract[String, String] */](
+  def addAll[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends std.Array<any>? K : never}[keyof T] */ js.Any */](
     attr: K,
     items: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
   ): this.type | `false` = js.native
@@ -127,7 +128,7 @@ trait Object_[T /* <: Attributes */] extends js.Object {
   ): this.type | `false` = js.native
   def setACL(acl: ACL): this.type | `false` = js.native
   def setACL(acl: ACL, options: SuccessFailureOptions): this.type | `false` = js.native
-  def toJSON(): js.Any = js.native
+  def toJSON(): ToJSON[T] with JSONBaseAttributes = js.native
   def toPointer(): Pointer = js.native
   def unPin(): js.Promise[Unit] = js.native
   def unPinWithName(name: String): js.Promise[Unit] = js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for hapi__boom
 
-Typings are for version 7.4
+Typings are for version 9.0.0
 
 ## Library description:
 HTTP-friendly error objects
@@ -24,7 +24,7 @@ HTTP-friendly error objects
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

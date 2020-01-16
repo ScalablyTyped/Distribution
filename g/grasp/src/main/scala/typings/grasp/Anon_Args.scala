@@ -1,6 +1,6 @@
 package typings.grasp
 
-import typings.cliDashColor.cliDashColorMod.Format
+import typings.cliDashColor.cliDashColorMod.Color
 import typings.node.processMod._Global_.NodeJS.ReadStream
 import typings.std.Console
 import typings.std.Record
@@ -24,7 +24,7 @@ trait Anon_Args extends js.Object {
   var fs: js.UndefOr[Typeoffs] = js.undefined
   var input: js.UndefOr[String] = js.undefined
   var stdin: js.UndefOr[ReadStream] = js.undefined
-  var textFormat: js.UndefOr[Format] = js.undefined
+  var textFormat: js.UndefOr[Color] = js.undefined
 }
 
 object Anon_Args {
@@ -38,7 +38,7 @@ object Anon_Args {
     fs: Typeoffs = null,
     input: String = null,
     stdin: ReadStream = null,
-    textFormat: Format = null
+    textFormat: Color = null
   ): Anon_Args = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any])
     if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1(callback))

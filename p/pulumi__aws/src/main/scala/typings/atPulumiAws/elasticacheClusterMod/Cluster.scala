@@ -31,6 +31,7 @@ class Cluster protected () extends CustomResource {
     * (Available since v0.6.0)
     */
   val applyImmediately: Output[Boolean] = js.native
+  val arn: Output[String] = js.native
   /**
     * The Availability Zone for the cache cluster. If you want to create cache nodes in multi-az, use `preferredAvailabilityZones` instead. Default: System chosen Availability Zone.
     */

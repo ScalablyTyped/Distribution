@@ -1,7 +1,7 @@
 
 # Scala.js typings for hapi__iron
 
-Typings are for version 5.1
+Typings are for version 6.0.0
 
 ## Library description:
 Encapsulated tokens (encrypted and mac'ed objects)
@@ -24,7 +24,7 @@ Encapsulated tokens (encrypted and mac'ed objects)
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

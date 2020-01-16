@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait StageAccessLogSettings extends js.Object {
   /**
-    * ARN of the log group to send the logs to. Automatically removes trailing `:*` if present.
+    * The Amazon Resource Name (ARN) of the CloudWatch Logs log group or Kinesis Data Firehose delivery stream to receive access logs. If you specify a Kinesis Data Firehose delivery stream, the stream name must begin with `amazon-apigateway-`. Automatically removes trailing `:*` if present.
     */
   var destinationArn: String = js.native
   /**

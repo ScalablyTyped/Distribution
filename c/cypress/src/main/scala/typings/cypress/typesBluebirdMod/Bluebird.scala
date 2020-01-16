@@ -2,8 +2,8 @@ package typings.cypress.typesBluebirdMod
 
 import typings.cypress.Fn_Error
 import typings.cypress.cypressStrings.Object
-import typings.cypress.typesLodashMod._Global_.Map
 import typings.std.Error
+import typings.std.Map
 import typings.std.PromiseLike
 import typings.std.ReturnType
 import scala.scalajs.js

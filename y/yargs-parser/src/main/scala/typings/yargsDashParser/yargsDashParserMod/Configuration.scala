@@ -33,6 +33,8 @@ trait Configuration extends js.Object {
   var `strip-aliased`: Boolean
   /** Should dashed keys be removed before returning results? This option has no effect if camel-case-expansion is disabled. Default is `false` */
   var `strip-dashed`: Boolean
+  /** Should unknown options be treated like regular arguments? An unknown option is one that is not configured in opts. Default is `false` */
+  var `unknown-options-as-args`: Boolean
 }
 
 object Configuration {
@@ -51,7 +53,8 @@ object Configuration {
     `set-placeholder-key`: Boolean,
     `short-option-groups`: Boolean,
     `strip-aliased`: Boolean,
-    `strip-dashed`: Boolean
+    `strip-dashed`: Boolean,
+    `unknown-options-as-args`: Boolean
   ): Configuration = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("boolean-negation")(`boolean-negation`.asInstanceOf[js.Any])
@@ -68,6 +71,7 @@ object Configuration {
     __obj.updateDynamic("short-option-groups")(`short-option-groups`.asInstanceOf[js.Any])
     __obj.updateDynamic("strip-aliased")(`strip-aliased`.asInstanceOf[js.Any])
     __obj.updateDynamic("strip-dashed")(`strip-dashed`.asInstanceOf[js.Any])
+    __obj.updateDynamic("unknown-options-as-args")(`unknown-options-as-args`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Configuration]
   }
 }

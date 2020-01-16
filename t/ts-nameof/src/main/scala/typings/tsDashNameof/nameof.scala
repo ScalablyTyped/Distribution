@@ -18,7 +18,7 @@ object nameof extends js.Object {
     */
   def apply(obj: js.Any): String = js.native
   def apply[T](): String = js.native
-  def apply[T](func: js.Function1[/* obj */ T, Unit]): String = js.native
+  def apply[T](func: js.Function1[/* obj */ T, _]): String = js.native
   /**
     * Gets the string representation of the entire given expression.
     *
@@ -60,8 +60,8 @@ object nameof extends js.Object {
     * A negative index can be used, indicating an offset from the end of the sequence.
     */
   // tslint:disable-next-line no-unnecessary-generics
-  def full[T](func: js.Function1[/* obj */ T, Unit]): String = js.native
-  def full[T](func: js.Function1[/* obj */ T, Unit], periodIndex: Double): String = js.native
+  def full[T](func: js.Function1[/* obj */ T, _]): String = js.native
+  def full[T](func: js.Function1[/* obj */ T, _], periodIndex: Double): String = js.native
   def full[T](periodIndex: Double): String = js.native
   /**
     * Embeds an expression into the string representation of the result of nameof.full.

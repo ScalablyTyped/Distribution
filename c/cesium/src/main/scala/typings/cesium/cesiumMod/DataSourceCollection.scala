@@ -15,6 +15,7 @@ class DataSourceCollection () extends js.Object {
   def contains(dataSource: DataSource): Boolean = js.native
   def destroy(): Unit = js.native
   def get(index: Double): DataSource = js.native
+  def getByName(name: String): js.Array[DataSource] = js.native
   def indexOf(dataSource: DataSource): Double = js.native
   def isDestroyed(): Boolean = js.native
   def remove(dataSource: DataSource): Boolean = js.native

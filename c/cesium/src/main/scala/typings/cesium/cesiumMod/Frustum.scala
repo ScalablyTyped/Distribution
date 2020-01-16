@@ -11,6 +11,12 @@ abstract class Frustum () extends js.Object {
   var near: Double = js.native
   val projectionMatrix: Matrix4 = js.native
   def computeCullingVolume(position: Cartesian3, direction: Cartesian3, up: Cartesian3): CullingVolume = js.native
-  def getPixelDimensions(drawingBufferWidth: Double, drawingBufferHeight: Double, distance: Double, result: Cartesian2): Cartesian2 = js.native
+  def getPixelDimensions(
+    drawingBufferWidth: Double,
+    drawingBufferHeight: Double,
+    distance: Double,
+    pixelRatio: Double,
+    result: Cartesian2
+  ): Cartesian2 = js.native
 }
 

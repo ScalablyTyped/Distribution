@@ -23,7 +23,7 @@ trait Croppie extends js.Object {
   def get(): CropData = js.native
   def result(): js.Promise[HTMLCanvasElement] = js.native
   def result(
-    options: (ResultOptions with (Anon_Base64 | Anon_Blob | Anon_Html | Anon_Rawcanvas)) | ResultOptions
+    options: (ResultOptions with Anon_Base64 with Anon_Html with Anon_Blob with Anon_Rawcanvas) | ResultOptions
   ): js.Promise[String] = js.native
   @JSName("rotate")
   def rotate_180(degrees: `-180`): Unit = js.native

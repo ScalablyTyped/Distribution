@@ -5,5 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object moduleMod {
-  type Module = typings.node.NodeJS.Module
+  import typings.node.NodeModule
+
+  type Module = NodeModule
 }

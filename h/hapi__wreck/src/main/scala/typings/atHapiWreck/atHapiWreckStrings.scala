@@ -9,6 +9,9 @@ object atHapiWreckStrings {
   sealed trait force extends js.Object
   
   @js.native
+  sealed trait preRequest extends js.Object
+  
+  @js.native
   sealed trait request extends js.Object
   
   @js.native
@@ -19,6 +22,8 @@ object atHapiWreckStrings {
   
   @scala.inline
   def force: force = "force".asInstanceOf[force]
+  @scala.inline
+  def preRequest: preRequest = "preRequest".asInstanceOf[preRequest]
   @scala.inline
   def request: request = "request".asInstanceOf[request]
   @scala.inline

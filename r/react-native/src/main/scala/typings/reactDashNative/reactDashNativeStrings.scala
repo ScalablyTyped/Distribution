@@ -103,16 +103,10 @@ object reactDashNativeStrings {
   sealed trait Normal extends js.Object
   
   @js.native
-  sealed trait PermissionsAndroidStatic extends js.Object
-  
-  @js.native
   sealed trait PhotoStream extends CameraRollGroupType
   
   @js.native
   sealed trait Photos extends CameraRollAssetType
-  
-  @js.native
-  sealed trait PlatformStatic extends js.Object
   
   @js.native
   sealed trait RippleAndroid extends js.Object
@@ -1341,13 +1335,9 @@ object reactDashNativeStrings {
   @scala.inline
   def Normal: Normal = "Normal".asInstanceOf[Normal]
   @scala.inline
-  def PermissionsAndroidStatic: PermissionsAndroidStatic = "PermissionsAndroidStatic".asInstanceOf[PermissionsAndroidStatic]
-  @scala.inline
   def PhotoStream: PhotoStream = "PhotoStream".asInstanceOf[PhotoStream]
   @scala.inline
   def Photos: Photos = "Photos".asInstanceOf[Photos]
-  @scala.inline
-  def PlatformStatic: PlatformStatic = "PlatformStatic".asInstanceOf[PlatformStatic]
   @scala.inline
   def RippleAndroid: RippleAndroid = "RippleAndroid".asInstanceOf[RippleAndroid]
   @scala.inline

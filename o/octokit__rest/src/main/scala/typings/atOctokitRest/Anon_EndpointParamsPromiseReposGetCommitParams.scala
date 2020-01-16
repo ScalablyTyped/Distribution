@@ -18,7 +18,7 @@ trait Anon_EndpointParamsPromiseReposGetCommitParams extends js.Object {
   var endpoint_Original: Endpoint = js.native
   def apply(): js.Promise[Response[ReposGetCommitResponse]] = js.native
   def apply(
-    params: RequestOptions with (ReposGetCommitParams | ReposGetCommitParamsDeprecatedCommitSha | ReposGetCommitParamsDeprecatedSha)
+    params: RequestOptions with ReposGetCommitParamsDeprecatedSha with ReposGetCommitParamsDeprecatedCommitSha with ReposGetCommitParams
   ): js.Promise[Response[ReposGetCommitResponse]] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native

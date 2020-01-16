@@ -16,7 +16,7 @@ trait Anon_EndpointParamsPromiseRequestOptionsResponseTeamsCreateParams extends 
   @JSName("endpoint")
   var endpoint_Original: Endpoint = js.native
   def apply(): js.Promise[Response[TeamsCreateResponse]] = js.native
-  def apply(params: RequestOptions with (TeamsCreateParams | TeamsCreateParamsDeprecatedPermission)): js.Promise[Response[TeamsCreateResponse]] = js.native
+  def apply(params: RequestOptions with TeamsCreateParamsDeprecatedPermission with TeamsCreateParams): js.Promise[Response[TeamsCreateResponse]] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native
   def endpoint(Route: String, EndpointOptions: EndpointOptions): RequestOptions = js.native

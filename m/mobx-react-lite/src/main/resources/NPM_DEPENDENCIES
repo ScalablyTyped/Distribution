@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "mobx-react-lite" : "1.4.2"
+      "mobx-react-lite" : "1.5.2"
     }
   ],
   "test-dependencies" : [
     {
-      "mobx-react-lite" : "1.4.2"
+      "mobx-react-lite" : "1.5.2"
     }
   ],
   "compile-devDependencies" : [

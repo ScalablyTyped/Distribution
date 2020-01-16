@@ -11,11 +11,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class Context protected () extends MustacheContext {
   /**
-    * Initializes a new instance of the `MustacheContenxt` class.
+    * Initializes a new instance of the `MustacheContext` class.
     */
+  def this(view: js.Any) = this()
   def this(view: js.Any, parentContext: MustacheContext) = this()
-  /* CompleteClass */
-  override var parentContext: MustacheContext = js.native
   /* CompleteClass */
   override var view: js.Any = js.native
   /**

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "hapi__catbox-redis"
-version := "5.0-dt-20190425Z-748eb7"
+version := "5.0-dt-20190425Z-a47cbf"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
   "org.scalablytyped" %%% "hapi__catbox" % "10.2-dt-20190521Z-780401",
-  "org.scalablytyped" %%% "ioredis" % "4.14-dt-20191218Z-b8846d",
-  "org.scalablytyped" %%% "node" % "13.1-dt-20200103Z-51871a",
+  "org.scalablytyped" %%% "ioredis" % "4.14-dt-20191218Z-0a1b4c",
+  "org.scalablytyped" %%% "node" % "13.1-dt-20200115Z-14f523",
   "org.scalablytyped" %%% "std" % "3.7-b6d959")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")

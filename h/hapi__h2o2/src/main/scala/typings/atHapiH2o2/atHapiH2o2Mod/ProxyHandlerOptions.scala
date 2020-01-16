@@ -1,5 +1,6 @@
 package typings.atHapiH2o2.atHapiH2o2Mod
 
+import typings.atHapiBoom.atHapiBoomMod.Boom
 import typings.atHapiH2o2.atHapiH2o2Booleans.`false`
 import typings.atHapiH2o2.atHapiH2o2Strings.http
 import typings.atHapiH2o2.atHapiH2o2Strings.https
@@ -43,7 +44,7 @@ trait ProxyHandlerOptions extends js.Object {
   var onResponse: js.UndefOr[
     js.ThisFunction6[
       /* this */ RouteOptions, 
-      /* err */ Null | typings.atHapiBoom.atHapiBoomMod.^[_], 
+      /* err */ Null | Boom[_], 
       /* res */ IncomingMessage, 
       /* req */ Request, 
       /* h */ ResponseToolkit, 
@@ -83,7 +84,7 @@ object ProxyHandlerOptions {
     maxSockets: `false` | Double = null,
     onResponse: js.ThisFunction6[
       /* this */ RouteOptions, 
-      /* err */ Null | typings.atHapiBoom.atHapiBoomMod.^[_], 
+      /* err */ Null | Boom[_], 
       /* res */ IncomingMessage, 
       /* req */ Request, 
       /* h */ ResponseToolkit, 

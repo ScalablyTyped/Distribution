@@ -14,13 +14,13 @@ import scala.scalajs.js.annotation._
 
 trait CommonRouteProperties extends js.Object {
   /**
-    * Default value: null.
+    * @default null.
     * An object passed back to the provided handler (via this) when called. Ignored if the method is an arrow function.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsbind)
     */
   var bind: js.UndefOr[js.Object | Null] = js.undefined
   /**
-    * Default value: { privacy: 'default', statuses: [200], otherwise: 'no-cache' }.
+    * @default { privacy: 'default', statuses: [200], otherwise: 'no-cache' }.
     * If the route method is 'GET', the route can be configured to include HTTP caching directives in the response. Caching can be customized using an object with the following options:
     * privacy - determines the privacy flag included in client-side caching using the 'Cache-Control' header. Values are:
     * * * 'default' - no privacy flag.
@@ -40,7 +40,7 @@ trait CommonRouteProperties extends js.Object {
     */
   var compression: js.UndefOr[Dictionary[RouteCompressionEncoderSettings]] = js.undefined
   /**
-    * Default value: false (no CORS headers).
+    * @default false (no CORS headers).
     * The Cross-Origin Resource Sharing protocol allows browsers to make cross-origin API calls. CORS is required by web applications running inside a browser which are loaded from a different
     * domain than the API server. To enable, set cors to true, or to an object with the following options:
     * * origin - an array of allowed origin servers strings ('Access-Control-Allow-Origin'). The array can contain any combination of fully qualified origins along with origin strings containing a
@@ -57,14 +57,14 @@ trait CommonRouteProperties extends js.Object {
     */
   var cors: js.UndefOr[Boolean | RouteOptionsCors] = js.undefined
   /**
-    * Default value: none.
+    * @default none.
     * Route description used for generating documentation (string).
     * This setting is not available when setting server route defaults using server.options.routes.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsdescription)
     */
   var description: js.UndefOr[String] = js.undefined
   /**
-    * Default value: none.
+    * @default none.
     * Route-level request extension points by setting the option to an object with a key for each of the desired extension points ('onRequest' is not allowed), and the value is the same as the
     * server.ext(events) event argument.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsext)
@@ -76,14 +76,14 @@ trait CommonRouteProperties extends js.Object {
     */ typings.atHapiHapi.atHapiHapiStrings.CommonRouteProperties with js.Any
   ] = js.undefined
   /**
-    * Default value: { relativeTo: '.' }.
+    * @default { relativeTo: '.' }.
     * Defines the behavior for accessing files:
     * * relativeTo - determines the folder relative paths are resolved against.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsfiles)
     */
   var files: js.UndefOr[Anon_RelativeTo] = js.undefined
   /**
-    * Default value: none.
+    * @default none.
     * The route handler function performs the main business logic of the route and sets the response. handler can be assigned:
     * * a lifecycle method.
     * * an object with a single property using the name of a handler type registred with the server.handler() method. The matching property value is passed as options to the registered handler
@@ -92,20 +92,20 @@ trait CommonRouteProperties extends js.Object {
     */
   var handler: js.UndefOr[Method | js.Object] = js.undefined
   /**
-    * Default value: none.
+    * @default none.
     * An optional unique identifier used to look up the route using server.lookup(). Cannot be assigned to routes added with an array of methods.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsid)
     */
   var id: js.UndefOr[String] = js.undefined
   /**
-    * Default value: false.
+    * @default false.
     * If true, the route cannot be accessed through the HTTP listener but only through the server.inject() interface with the allowInternals option set to true. Used for internal routes that should
     * not be accessible to the outside world.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsisinternal)
     */
   var isInternal: js.UndefOr[Boolean] = js.undefined
   /**
-    * Default value: none.
+    * @default none.
     * Optional arguments passed to JSON.stringify() when converting an object or error response to a string payload or escaping it after stringification. Supports the following:
     * * replacer - the replacer function or array. Defaults to no action.
     * * space - number of spaces to indent nested object keys. Defaults to no indentation.
@@ -115,7 +115,7 @@ trait CommonRouteProperties extends js.Object {
     */
   var json: js.UndefOr[StringifyArguments] = js.undefined
   /**
-    * Default value: none.
+    * @default none.
     * Enables JSONP support by setting the value to the query parameter name containing the function name used to wrap the response payload.
     * For example, if the value is 'callback', a request comes in with 'callback=me', and the JSON response is '{ "a":"b" }', the payload will be 'me({ "a":"b" });'. Cannot be used with stream
     * responses. The 'Content-Type' response header is set to 'text/javascript' and the 'X-Content-Type-Options' response header is set to 'nosniff', and will override those headers even if
@@ -124,14 +124,14 @@ trait CommonRouteProperties extends js.Object {
     */
   var jsonp: js.UndefOr[String] = js.undefined
   /**
-    * Default value: { collect: false }.
+    * @default { collect: false }.
     * Request logging options:
     * collect - if true, request-level logs (both internal and application) are collected and accessible via request.logs.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionslog)
     */
   var log: js.UndefOr[Anon_Collect] = js.undefined
   /**
-    * Default value: none.
+    * @default none.
     * Route notes used for generating documentation (string or array of strings).
     * This setting is not available when setting server route defaults using server.options.routes.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsnotes)
@@ -143,13 +143,13 @@ trait CommonRouteProperties extends js.Object {
     */
   var payload: js.UndefOr[RouteOptionsPayload] = js.undefined
   /**
-    * Default value: {}.
+    * @default {}.
     * Plugin-specific configuration. plugins is an object where each key is a plugin name and the value is the plugin configuration.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsplugins)
     */
   var plugins: js.UndefOr[PluginSpecificConfiguration] = js.undefined
   /**
-    * Default value: none.
+    * @default none.
     * The pre option allows defining methods for performing actions before the handler is called. These methods allow breaking the handler logic into smaller, reusable components that can be shared
     * ascross routes, as well as provide a cleaner error handling of prerequisite operations (e.g. load required reference data from a database). pre is assigned an ordered array of methods which
     * are called serially in order. If the pre array contains another array of methods as one of its elements, those methods are called in parallel. Note that during parallel execution, if any of
@@ -173,12 +173,12 @@ trait CommonRouteProperties extends js.Object {
     */
   var response: js.UndefOr[RouteOptionsResponse] = js.undefined
   /**
-    * Default value: false (security headers disabled).
+    * @default false (security headers disabled).
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionssecurity)
     */
   var security: js.UndefOr[RouteOptionsSecure] = js.undefined
   /**
-    * Default value: { parse: true, failAction: 'error' }.
+    * @default { parse: true, failAction: 'error' }.
     * HTTP state management (cookies) allows the server to store information on the client which is sent back to the server with every request (as defined in RFC 6265). state supports the following
     * options: parse - determines if incoming 'Cookie' headers are parsed and stored in the request.state object. failAction - A failAction value which determines how to handle cookie parsing
     * errors. Defaults to 'error' (return a Bad Request (400) error response).
@@ -186,20 +186,20 @@ trait CommonRouteProperties extends js.Object {
     */
   var state: js.UndefOr[Anon_FailAction] = js.undefined
   /**
-    * Default value: none.
+    * @default none.
     * Route tags used for generating documentation (array of strings).
     * This setting is not available when setting server route defaults using server.options.routes.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionstags)
     */
   var tags: js.UndefOr[js.Array[String]] = js.undefined
   /**
-    * Default value: { server: false }.
+    * @default { server: false }.
     * Timeouts for processing durations.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionstimeout)
     */
   var timeout: js.UndefOr[Anon_Server] = js.undefined
   /**
-    * Default value: { headers: true, params: true, query: true, payload: true, failAction: 'error' }.
+    * @default { headers: true, params: true, query: true, payload: true, failAction: 'error' }.
     * Request input validation rules for various request components.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsvalidate)
     */

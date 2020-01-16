@@ -1,7 +1,7 @@
 
 # Scala.js typings for formatjs__intl-unified-numberformat
 
-Typings are for version 3.0.0
+Typings are for version 3.0.4
 
 ## Library description:
 Ponyfill for intl unified numberformat proposal

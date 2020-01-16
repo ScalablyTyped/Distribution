@@ -7,6 +7,7 @@ import typings.atHapiHapi.atHapiHapiMod.PayloadOutput
 import typings.atHapiHapi.atHapiHapiMod.ReferrerPolicy
 import typings.atHapiHapi.atHapiHapiMod.RequestEventType
 import typings.atHapiHapi.atHapiHapiMod.RouteRequestExtType
+import typings.atHapiHapi.atHapiHapiMod.SameSitePolicy
 import typings.atHapiHapi.atHapiHapiMod.ServerExtType
 import typings.atHapiHapi.atHapiHapiMod.ServerRequestExtType
 import typings.atHapiHapi.atHapiHapiMod.Util.HTTP_METHODS
@@ -37,7 +38,10 @@ object atHapiHapiStrings {
   sealed trait HEAD extends HTTP_METHODS
   
   @js.native
-  sealed trait Lax extends js.Object
+  sealed trait Lax extends SameSitePolicy
+  
+  @js.native
+  sealed trait None extends SameSitePolicy
   
   @js.native
   sealed trait OPTIONS
@@ -60,7 +64,7 @@ object atHapiHapiStrings {
        with HTTP_METHODS_PARTIAL
   
   @js.native
-  sealed trait Strict extends js.Object
+  sealed trait Strict extends SameSitePolicy
   
   @js.native
   sealed trait _empty extends ReferrerPolicy
@@ -168,7 +172,7 @@ object atHapiHapiStrings {
   sealed trait `no-referrer-when-downgrade` extends ReferrerPolicy
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none_ extends js.Object
   
   @js.native
   sealed trait onCredentials
@@ -339,6 +343,8 @@ object atHapiHapiStrings {
   @scala.inline
   def Lax: Lax = "Lax".asInstanceOf[Lax]
   @scala.inline
+  def None: None = "None".asInstanceOf[None]
+  @scala.inline
   def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
   @scala.inline
   def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
@@ -415,7 +421,7 @@ object atHapiHapiStrings {
   @scala.inline
   def `no-referrer-when-downgrade`: `no-referrer-when-downgrade` = "no-referrer-when-downgrade".asInstanceOf[`no-referrer-when-downgrade`]
   @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  def none_ : none_ = "none".asInstanceOf[none_]
   @scala.inline
   def onCredentials: onCredentials = "onCredentials".asInstanceOf[onCredentials]
   @scala.inline

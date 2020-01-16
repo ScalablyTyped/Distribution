@@ -12,8 +12,13 @@ import typings.parse.parseMod._Global_.Parse.Cloud.FunctionRequest
 import typings.parse.parseMod._Global_.Parse.Cloud.HTTPOptions
 import typings.parse.parseMod._Global_.Parse.Cloud.HttpResponse
 import typings.parse.parseMod._Global_.Parse.Cloud.JobRequest
+import typings.parse.parseMod._Global_.Parse.Cloud.Params
 import typings.parse.parseMod._Global_.Parse.Cloud.RunOptions
 import typings.parse.parseMod._Global_.Parse.Cloud.TriggerRequest
+import typings.parse.parseStrings.define
+import typings.parse.parseStrings.run
+import typings.std.Parameters
+import typings.std.ReturnType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -56,8 +61,22 @@ object Cloud extends js.Object {
   def beforeLogin(func: js.Function1[/* request */ TriggerRequest, _]): Unit = js.native
   def beforeSave(arg1: js.Any): Unit = js.native
   def beforeSave(arg1: js.Any, func: js.Function1[/* request */ BeforeSaveRequest, js.Promise[Unit] | Unit]): Unit = js.native
-  def define(name: String): Unit = js.native
-  def define(name: String, func: js.Function1[/* request */ FunctionRequest, _]): Unit = js.native
+  def define(name: String, func: js.Function1[/* request */ FunctionRequest[Params], _]): Unit = js.native
+  @JSName("define")
+  def define_0[T /* <: js.Function1[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in keyof std.Parameters<T>[0] ]: std.Parameters<T>[0][P]}
+    */ /* param */ define with Parameters[T], 
+    _
+  ] */](
+    name: String,
+    func: js.Function1[
+      /* request */ FunctionRequest[
+        /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<T>[0] */ js.Any
+      ], 
+      js.Promise[ReturnType[T]] | ReturnType[T]
+    ]
+  ): Unit = js.native
   /**
     * Gets job status by Id
     * @param jobStatusId The Id of Job Status.
@@ -73,8 +92,32 @@ object Cloud extends js.Object {
   def job(name: String): HttpResponse = js.native
   def job(name: String, func: js.Function1[/* request */ JobRequest, js.Promise[Unit] | Unit]): HttpResponse = js.native
   def run(name: String): js.Promise[_] = js.native
-  def run(name: String, data: js.Any): js.Promise[_] = js.native
-  def run(name: String, data: js.Any, options: RunOptions): js.Promise[_] = js.native
+  def run(name: String, data: Params): js.Promise[_] = js.native
+  def run(name: String, data: Params, options: RunOptions): js.Promise[_] = js.native
+  def run[T /* <: js.Function0[_] */](name: String, data: Null, options: RunOptions): js.Promise[ReturnType[T]] = js.native
+  @JSName("run")
+  def run_0[T /* <: js.Function1[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in keyof std.Parameters<T>[0] ]: std.Parameters<T>[0][P]}
+    */ /* param */ run with Parameters[T], 
+    _
+  ] */](
+    name: String,
+    data: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<T>[0] */ js.Any
+  ): js.Promise[ReturnType[T]] = js.native
+  @JSName("run")
+  def run_0[T /* <: js.Function1[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in keyof std.Parameters<T>[0] ]: std.Parameters<T>[0][P]}
+    */ /* param */ run with Parameters[T], 
+    _
+  ] */](
+    name: String,
+    data: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<T>[0] */ js.Any,
+    options: RunOptions
+  ): js.Promise[ReturnType[T]] = js.native
+  @JSName("run")
+  def run_T_Function0Wildcard[T /* <: js.Function0[_] */](name: String): js.Promise[ReturnType[T]] = js.native
   /**
     * Starts a given cloud job, which will process asynchronously.
     * @param jobName The function name.

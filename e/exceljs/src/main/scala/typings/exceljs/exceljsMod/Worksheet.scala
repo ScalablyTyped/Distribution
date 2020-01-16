@@ -71,7 +71,7 @@ trait Worksheet extends js.Object {
   	 * Using the image id from `Workbook.addImage`, set the background to the worksheet
   	 */
   def addBackgroundImage(imageId: Double): Unit = js.native
-  def addImage(imageId: Double, range: Anon_EditAs with (ImagePosition | ImageRange)): Unit = js.native
+  def addImage(imageId: Double, range: Anon_EditAs with ImageRange with ImagePosition): Unit = js.native
   /**
   	 * Using the image id from `Workbook.addImage`,
   	 * embed an image within the worksheet to cover a range

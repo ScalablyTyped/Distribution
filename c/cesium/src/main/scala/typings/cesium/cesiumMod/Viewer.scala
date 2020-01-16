@@ -52,6 +52,7 @@ class Viewer protected () extends js.Object {
   val timeline: Timeline = js.native
   var trackedEntity: Entity = js.native
   val trackedEntityChanged: Event[js.Array[js.UndefOr[Entity]]] = js.native
+  var useBrowserRecommendedResolution: Boolean = js.native
   var useDefaultRenderLoop: Boolean = js.native
   val vrButton: VRButton = js.native
   def destroy(): Unit = js.native

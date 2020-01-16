@@ -15,11 +15,11 @@ object async extends js.Object {
   def apply(path: String): js.Promise[js.Array[String]] = js.native
   def apply(
     path: String,
-    options: WalkOptions with (Anon_FalseReturnobject | Anon_ReturnobjectBoolean | Anon_ReturnobjectTrue)
+    options: WalkOptions with Anon_ReturnobjectTrue with Anon_FalseReturnobject with Anon_ReturnobjectBoolean
   ): js.Promise[StringDictionary[Stats]] = js.native
   def apply(
     path: String,
-    options: WalkOptions with (Anon_FalseReturnobject | Anon_ReturnobjectBoolean | Anon_ReturnobjectTrue),
+    options: WalkOptions with Anon_ReturnobjectTrue with Anon_FalseReturnobject with Anon_ReturnobjectBoolean,
     eventListener: WalkEventListener
   ): js.Promise[StringDictionary[Stats]] = js.native
 }

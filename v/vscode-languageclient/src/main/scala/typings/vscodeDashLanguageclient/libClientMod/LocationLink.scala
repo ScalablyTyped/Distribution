@@ -1,5 +1,6 @@
 package typings.vscodeDashLanguageclient.libClientMod
 
+import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.DocumentUri
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,12 +16,12 @@ object LocationLink extends js.Object {
     * @param originSelectionRange The span of the symbol being defined in the originating source file.
     */
   def create(
-    targetUri: String,
+    targetUri: DocumentUri,
     targetRange: typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Range,
     targetSelectionRange: typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Range
   ): typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.LocationLink = js.native
   def create(
-    targetUri: String,
+    targetUri: DocumentUri,
     targetRange: typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Range,
     targetSelectionRange: typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Range,
     originSelectionRange: typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.Range

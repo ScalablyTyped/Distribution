@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@hapi/wreck", JSImport.Namespace)
 @js.native
-object ^ extends TopLevel[WreckObject]
+object ^ extends TopLevel[Client]
 

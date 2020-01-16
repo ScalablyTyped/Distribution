@@ -141,6 +141,7 @@ class DynamicView[E /* <: js.Object */] protected () extends LokiEventEmitter {
     * @param [parameters] - optional parameters (if optional transform requires them)
     * @returns A copy of the internal resultset for branched queries.
     */
+  def branchResultset(): Resultset[_] = js.native
   def branchResultset(transform: String): Resultset[_] = js.native
   def branchResultset(transform: String, parameters: js.Object): Resultset[_] = js.native
   def branchResultset(transform: js.Array[String | Transform]): Resultset[_] = js.native

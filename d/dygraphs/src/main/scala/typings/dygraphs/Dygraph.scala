@@ -106,6 +106,15 @@ class Dygraph protected () extends js.Object {
     */
   def getPropertiesForSeries(series_name: String): SeriesProperties = js.native
   /**
+    * Find the row number corresponding to the given x-value.
+    * Returns null if there is no such x-value in the data.
+    * If there are multiple rows with the same x-value, this will return the
+    * first one.
+    * @param xVal The x-value to look for (e.g. millis since epoch).
+    * @return The row number, which you can pass to getValue(), or null.
+    */
+  def getRowForX(xVal: Double): Double | Null = js.native
+  /**
     * Returns the number of the currently selected row. To get data for this row,
     * you can use the getValue method.
     * @return {number} row number, or -1 if nothing is selected

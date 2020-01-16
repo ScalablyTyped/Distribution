@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jest-cli"
-version := "24.9.0-07d5d6"
+version := "24.9.0-c6857c"
 scalaVersion := "2.12.10"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,27 +8,27 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "anymatch" % "1.3-dt-20190212Z-d4520c",
   "org.scalablytyped" %%% "callsites" % "3.1.0-466cd3",
   "org.scalablytyped" %%% "istanbul-lib-coverage" % "2.0-dt-20190425Z-0b8c96",
-  "org.scalablytyped" %%% "jest-changed-files" % "24.9.0-11ca33",
-  "org.scalablytyped" %%% "jest-haste-map" % "24.9.0-795bcf",
-  "org.scalablytyped" %%% "jest-message-util" % "24.9.0-80bec7",
-  "org.scalablytyped" %%% "jest-mock" % "24.9.0-a1feff",
-  "org.scalablytyped" %%% "jest-resolve" % "24.9.0-3446ea",
-  "org.scalablytyped" %%% "jest-runner" % "24.9.0-c102b8",
-  "org.scalablytyped" %%% "jest-runtime" % "24.9.0-f1afde",
-  "org.scalablytyped" %%% "jest__console" % "24.9.0-34fbd5",
-  "org.scalablytyped" %%% "jest__core" % "24.9.0-102627",
-  "org.scalablytyped" %%% "jest__environment" % "24.9.0-c47896",
-  "org.scalablytyped" %%% "jest__fake-timers" % "24.9.0-36f15b",
-  "org.scalablytyped" %%% "jest__reporters" % "24.9.0-8830c7",
+  "org.scalablytyped" %%% "jest-changed-files" % "24.9.0-415470",
+  "org.scalablytyped" %%% "jest-haste-map" % "24.9.0-0d982f",
+  "org.scalablytyped" %%% "jest-message-util" % "24.9.0-c17025",
+  "org.scalablytyped" %%% "jest-mock" % "24.9.0-56df72",
+  "org.scalablytyped" %%% "jest-resolve" % "24.9.0-961805",
+  "org.scalablytyped" %%% "jest-runner" % "24.9.0-503343",
+  "org.scalablytyped" %%% "jest-runtime" % "24.9.0-58701e",
+  "org.scalablytyped" %%% "jest__console" % "24.9.0-a21ca4",
+  "org.scalablytyped" %%% "jest__core" % "24.9.0-2748bd",
+  "org.scalablytyped" %%% "jest__environment" % "24.9.0-5e5dab",
+  "org.scalablytyped" %%% "jest__fake-timers" % "24.9.0-31335a",
+  "org.scalablytyped" %%% "jest__reporters" % "24.9.0-a1507c",
   "org.scalablytyped" %%% "jest__source-map" % "24.9.0-2d60bb",
-  "org.scalablytyped" %%% "jest__test-result" % "24.9.0-042248",
-  "org.scalablytyped" %%% "jest__types" % "24.9.0-c14a56",
-  "org.scalablytyped" %%% "node" % "13.1-dt-20200103Z-51871a",
+  "org.scalablytyped" %%% "jest__test-result" % "24.9.0-89dc75",
+  "org.scalablytyped" %%% "jest__types" % "24.9.0-095f59",
+  "org.scalablytyped" %%% "node" % "13.1-dt-20200115Z-14f523",
   "org.scalablytyped" %%% "prompts" % "2.0-dt-20191106Z-d45236",
   "org.scalablytyped" %%% "stack-utils" % "1.0-dt-20180214Z-69457f",
   "org.scalablytyped" %%% "std" % "3.7-b6d959",
-  "org.scalablytyped" %%% "yargs" % "13.0-dt-20191223Z-a96822",
-  "org.scalablytyped" %%% "yargs-parser" % "13.1-dt-20200106Z-1ea3a3")
+  "org.scalablytyped" %%% "yargs" % "15.0-dt-20200108Z-421d1d",
+  "org.scalablytyped" %%% "yargs-parser" % "15.0-dt-20200113Z-47492f")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

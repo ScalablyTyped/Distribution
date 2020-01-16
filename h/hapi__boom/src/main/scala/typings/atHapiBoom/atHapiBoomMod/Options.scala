@@ -5,30 +5,39 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options[Data] extends js.Object {
-  /** ctor - constructor reference used to crop the exception call stack output. */
-  var ctor: js.UndefOr[js.Any] = js.undefined
-  /** data - additional error information (assigned to error.data). */
+  /**
+    * Constructor reference used to crop the exception call stack output
+    */
+  var ctor: js.UndefOr[js.Function] = js.undefined
+  /**
+    * Additional error information
+    */
   var data: js.UndefOr[Data] = js.undefined
-  /** decorate - an option with extra properties to set on the error object. */
-  var decorate: js.UndefOr[js.Object] = js.undefined
-  /** message - error message string. If the error already has a message, the provided message is added as a prefix. Defaults to no message. */
+  /**
+    * Error message string
+    *
+    * @default none
+    */
   var message: js.UndefOr[String] = js.undefined
   /**
-    * override - if false, the err provided is a Boom object, and a statusCode or message are
-    * provided, the values are ignored. Defaults to true (apply the provided statusCode and
-    * message options to the error regardless of its type, Error or Boom object).
+    * If false, the err provided is a Boom object, and a statusCode or message are provided, the values are ignored
+    *
+    * @default true
     */
   var `override`: js.UndefOr[Boolean] = js.undefined
-  /** statusCode - the HTTP status code. Defaults to 500 if no status code is already set. */
+  /**
+    * The HTTP status code
+    *
+    * @default 500
+    */
   var statusCode: js.UndefOr[Double] = js.undefined
 }
 
 object Options {
   @scala.inline
   def apply[Data](
-    ctor: js.Any = null,
+    ctor: js.Function = null,
     data: Data = null,
-    decorate: js.Object = null,
     message: String = null,
     `override`: js.UndefOr[Boolean] = js.undefined,
     statusCode: Int | Double = null
@@ -36,7 +45,6 @@ object Options {
     val __obj = js.Dynamic.literal()
     if (ctor != null) __obj.updateDynamic("ctor")(ctor.asInstanceOf[js.Any])
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (decorate != null) __obj.updateDynamic("decorate")(decorate.asInstanceOf[js.Any])
     if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     if (!js.isUndefined(`override`)) __obj.updateDynamic("override")(`override`.asInstanceOf[js.Any])
     if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])

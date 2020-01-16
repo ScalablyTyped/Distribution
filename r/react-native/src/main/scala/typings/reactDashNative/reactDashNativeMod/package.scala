@@ -11,16 +11,14 @@ package object reactDashNativeMod {
   import typings.react.reactMod.Component
   import typings.react.reactMod.ComponentType
   import typings.react.reactMod.ReactElement
-  import typings.reactDashNative.Anon_ActionName
-  import typings.reactDashNative.Anon_Label
   import typings.reactDashNative.Anon_RegisteredStyleBrand
+  import typings.reactDashNative.ReadonlyactionNamestring
   import typings.reactDashNative.reactDashNativeBooleans.`false`
   import typings.reactDashNative.reactDashNativeStrings.`visible-password`
   import typings.reactDashNative.reactDashNativeStrings.hardwareBackPress
 
   type ART = ARTStatic
-  type AccessibilityActionEvent = NativeSyntheticEvent[Anon_ActionName]
-  type AccessibilityActionInfo = Anon_Label
+  type AccessibilityActionEvent = NativeSyntheticEvent[ReadonlyactionNamestring]
   type AccessibilityChangeEvent = Boolean
   type AccessibilityEvent = AccessibilityChangeEvent | AccessibilityAnnoucementFinishedEvent
   type AccessibilityInfo = AccessibilityInfoStatic
@@ -103,8 +101,6 @@ package object reactDashNativeMod {
     /* pageY */ Double, 
     Unit
   ]
-  type ModalProperties = ModalProps
-  type ModalProps = ModalBaseProps with ModalPropsIOS with ModalPropsAndroid
   type NativeComponent = NativeMethodsMixinStatic
   type NativeEventEmitter = EventEmitter
   type NativeMethodsMixin = NativeMethodsMixinStatic

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Sink[Q /* <: BaseQuad */] extends js.Object {
+trait Sink[InputStream /* <: EventEmitter */, OutputStream /* <: EventEmitter */] extends js.Object {
   /**
     * Consumes the given stream.
     *
@@ -16,15 +16,15 @@ trait Sink[Q /* <: BaseQuad */] extends js.Object {
     * @param stream The stream that will be consumed.
     * @return The resulting event emitter.
     */
-  def `import`(stream: Stream[Q]): EventEmitter
+  def `import`(stream: InputStream): OutputStream
 }
 
 object Sink {
   @scala.inline
-  def apply[Q /* <: BaseQuad */](`import`: Stream[Q] => EventEmitter): Sink[Q] = {
+  def apply[InputStream /* <: EventEmitter */, OutputStream /* <: EventEmitter */](`import`: InputStream => OutputStream): Sink[InputStream, OutputStream] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("import")(js.Any.fromFunction1(`import`))
-    __obj.asInstanceOf[Sink[Q]]
+    __obj.asInstanceOf[Sink[InputStream, OutputStream]]
   }
 }
 

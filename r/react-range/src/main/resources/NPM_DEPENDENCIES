@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-range" : "1.4.7"
+      "react-range" : "1.4.9"
     }
   ],
   "test-dependencies" : [
     {
-      "react-range" : "1.4.7"
+      "react-range" : "1.4.9"
     }
   ],
   "compile-devDependencies" : [

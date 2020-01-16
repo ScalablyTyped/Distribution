@@ -5,10 +5,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object Graphics {
-  import typings.phaser.Anon_XY
+  import typings.phaser.Anon_X
 
   /**
     * Options for the Graphics game Object.
     */
-  type Options = Styles with Anon_XY
+  type Options = Styles with Anon_X
 }

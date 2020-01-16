@@ -19,6 +19,10 @@ trait GetClusterVpcConfig extends js.Object {
     */
   var endpointPublicAccess: Boolean = js.native
   /**
+    * List of CIDR blocks. Indicates which CIDR blocks can access the Amazon EKS public API server endpoint.
+    */
+  var publicAccessCidrs: js.Array[String] = js.native
+  /**
     * List of security group IDs
     */
   var securityGroupIds: js.Array[String] = js.native
@@ -38,11 +42,12 @@ object GetClusterVpcConfig {
     clusterSecurityGroupId: String,
     endpointPrivateAccess: Boolean,
     endpointPublicAccess: Boolean,
+    publicAccessCidrs: js.Array[String],
     securityGroupIds: js.Array[String],
     subnetIds: js.Array[String],
     vpcId: String
   ): GetClusterVpcConfig = {
-    val __obj = js.Dynamic.literal(clusterSecurityGroupId = clusterSecurityGroupId.asInstanceOf[js.Any], endpointPrivateAccess = endpointPrivateAccess.asInstanceOf[js.Any], endpointPublicAccess = endpointPublicAccess.asInstanceOf[js.Any], securityGroupIds = securityGroupIds.asInstanceOf[js.Any], subnetIds = subnetIds.asInstanceOf[js.Any], vpcId = vpcId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(clusterSecurityGroupId = clusterSecurityGroupId.asInstanceOf[js.Any], endpointPrivateAccess = endpointPrivateAccess.asInstanceOf[js.Any], endpointPublicAccess = endpointPublicAccess.asInstanceOf[js.Any], publicAccessCidrs = publicAccessCidrs.asInstanceOf[js.Any], securityGroupIds = securityGroupIds.asInstanceOf[js.Any], subnetIds = subnetIds.asInstanceOf[js.Any], vpcId = vpcId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[GetClusterVpcConfig]
   }

@@ -664,6 +664,8 @@ trait AppointmentRead extends Item {
   /**
     * Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
     *
+    * **Note**: This method is not supported in Outlook on Mac, iOS, or Android.
+    *
     * [Api set: Mailbox 1.8]
     *
     * @remarks
@@ -679,6 +681,8 @@ trait AppointmentRead extends Item {
   def getSharedPropertiesAsync(callback: js.Function1[/* asyncResult */ AsyncResult[SharedProperties], Unit]): Unit = js.native
   /**
     * Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
+    *
+    * **Note**: This method is not supported in Outlook on Mac, iOS, or Android.
     *
     * [Api set: Mailbox 1.8]
     *

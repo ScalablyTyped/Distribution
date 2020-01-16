@@ -5,7 +5,7 @@ import typings.mapboxDashGl.mapboxDashGlStrings.`bottom-left`
 import typings.mapboxDashGl.mapboxDashGlStrings.`bottom-right`
 import typings.mapboxDashGl.mapboxDashGlStrings.`top-left`
 import typings.mapboxDashGl.mapboxDashGlStrings.`top-right`
-import typings.std.Element
+import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -50,7 +50,7 @@ trait MapboxOptions extends js.Object {
     */
   var collectResourceTiming: js.UndefOr[Boolean] = js.undefined
   /** ID of the container element */
-  var container: String | Element
+  var container: String | HTMLElement
   /**
     * If `true`, symbols from multiple sources can collide with each other during collision
     * detection. If `false`, collision detection is run separately for the symbols in each source.
@@ -179,7 +179,7 @@ trait MapboxOptions extends js.Object {
 object MapboxOptions {
   @scala.inline
   def apply(
-    container: String | Element,
+    container: String | HTMLElement,
     accessToken: String = null,
     antialias: js.UndefOr[Boolean] = js.undefined,
     attributionControl: js.UndefOr[Boolean] = js.undefined,

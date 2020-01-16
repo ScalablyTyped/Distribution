@@ -109,17 +109,18 @@ object Node {
   @scala.inline
   def CatchClause(
     body: BlockStatement,
-    param: Pattern,
     `type`: typings.estree.estreeStrings.CatchClause,
     leadingComments: js.Array[Comment] = null,
     loc: SourceLocation = null,
+    param: Pattern = null,
     range: js.Tuple2[Double, Double] = null,
     trailingComments: js.Array[Comment] = null
   ): Node = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], param = param.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
     if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    if (param != null) __obj.updateDynamic("param")(param.asInstanceOf[js.Any])
     if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]

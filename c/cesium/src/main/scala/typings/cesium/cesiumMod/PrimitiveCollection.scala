@@ -13,6 +13,7 @@ class PrimitiveCollection () extends js.Object {
   val length: Double = js.native
   var show: Boolean = js.native
   def add(primitive: js.Any): js.Any = js.native
+  def add(primitive: js.Any, index: Double): js.Any = js.native
   def contains(): Boolean = js.native
   def contains(primitive: js.Any): Boolean = js.native
   def destroy(): Unit = js.native

@@ -44,7 +44,7 @@ trait InstanceState extends js.Object {
     */
   val keyPairName: js.UndefOr[Input[String]] = js.native
   /**
-    * The name of the Lightsail Instance
+    * The name of the Lightsail Instance. Names be unique within each AWS Region in your Lightsail account.
     */
   val name: js.UndefOr[Input[String]] = js.native
   val privateIpAddress: js.UndefOr[Input[String]] = js.native

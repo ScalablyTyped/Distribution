@@ -1,7 +1,7 @@
 
 # Scala.js typings for mustache
 
-Typings are for version 0.8.4
+Typings are for version 3.2.1
 
 ## Library description:
 Logic-less {{mustache}} templates with JavaScript

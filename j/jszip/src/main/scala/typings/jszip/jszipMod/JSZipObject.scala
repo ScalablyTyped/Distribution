@@ -7,6 +7,7 @@ import typings.jszip.jszipStrings.binarystring
 import typings.jszip.jszipStrings.blob
 import typings.jszip.jszipStrings.nodebuffer
 import typings.jszip.jszipStrings.nodestream
+import typings.jszip.jszipStrings.string
 import typings.jszip.jszipStrings.text
 import typings.jszip.jszipStrings.uint8array
 import typings.node.Buffer
@@ -60,6 +61,10 @@ trait JSZipObject extends js.Object {
   def async_nodebuffer(`type`: nodebuffer): js.Promise[Buffer] = js.native
   @JSName("async")
   def async_nodebuffer(`type`: nodebuffer, onUpdate: OnUpdateCallback): js.Promise[Buffer] = js.native
+  @JSName("async")
+  def async_string(`type`: string): js.Promise[String] = js.native
+  @JSName("async")
+  def async_string(`type`: string, onUpdate: OnUpdateCallback): js.Promise[String] = js.native
   @JSName("async")
   def async_text(`type`: text): js.Promise[String] = js.native
   @JSName("async")

@@ -1,7 +1,7 @@
 
 # Scala.js typings for google-cloud__pubsub
 
-Typings are for version 1.2.0
+Typings are for version 1.3.0
 
 ## Library description:
 Cloud Pub/Sub Client Library for Node.js

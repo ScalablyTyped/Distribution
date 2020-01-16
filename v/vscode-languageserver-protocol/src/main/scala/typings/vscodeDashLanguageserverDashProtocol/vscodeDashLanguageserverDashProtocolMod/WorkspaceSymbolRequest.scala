@@ -1,6 +1,5 @@
 package typings.vscodeDashLanguageserverDashProtocol.vscodeDashLanguageserverDashProtocolMod
 
-import typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.WorkspaceSymbolParams
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object WorkspaceSymbolRequest extends js.Object {
   val `type`: typings.vscodeDashJsonrpc.vscodeDashJsonrpcMod.RequestType[
-    WorkspaceSymbolParams, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WorkspaceSymbolParams */ js.Any, 
     (js.Array[
       typings.vscodeDashLanguageserverDashTypes.vscodeDashLanguageserverDashTypesMod.SymbolInformation
     ]) | Null, 

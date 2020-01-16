@@ -1,6 +1,6 @@
 package typings.easyDashXDashHeaders.cryptoMod
 
-import typings.easyDashXDashHeaders.Buffer
+import typings.node.Buffer
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

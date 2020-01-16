@@ -1,6 +1,6 @@
 package typings.webpackDashEnv.__WebpackModuleApi
 
-import typings.webpackDashEnv.NodeModule
+import typings.node.NodeModule
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

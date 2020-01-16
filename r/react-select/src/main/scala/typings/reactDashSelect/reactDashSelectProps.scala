@@ -70,6 +70,9 @@ trait reactDashSelectProps {
   type MultiValueLabelProps[OptionType /* <: OptionTypeBase */] = typings.reactDashSelect.srcComponentsMultiValueMod.MultiValueGenericProps[OptionType]
   type MultiValueRemoveProps[OptionType /* <: OptionTypeBase */] = typings.reactDashSelect.srcComponentsMultiValueMod.MultiValueRemoveProps[OptionType]
   type NoOptionsMessageProps[OptionType /* <: OptionTypeBase */] = NoticeProps[OptionType]
+  @scala.inline
+  def NonceProviderProps: typings.reactDashSelect.srcNonceProviderMod.NonceProviderProps.type = typings.reactDashSelect.srcNonceProviderMod.NonceProviderProps
+  type NonceProviderProps = typings.reactDashSelect.srcNonceProviderMod.NonceProviderProps
   type OptionProps[OptionType /* <: OptionTypeBase */] = typings.reactDashSelect.srcComponentsOptionMod.OptionProps[OptionType]
   type PlaceholderProps[OptionType /* <: OptionTypeBase */] = AnimatedPlaceholderProps[OptionType]
   @scala.inline

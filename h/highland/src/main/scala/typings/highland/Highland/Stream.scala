@@ -1,6 +1,7 @@
 package typings.highland.Highland
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.highland.Anon_End
 import typings.highland.Flattened
 import typings.highland.highlandStrings.done
 import typings.node.NodeJS.EventEmitter
@@ -8,8 +9,10 @@ import typings.node.NodeJS.ReadWriteStream
 import typings.node.NodeJS.ReadableStream
 import typings.node.NodeJS.WritableStream
 import typings.std.Error
+import typings.std.Partial
 import typings.std.Pick
 import typings.std.PromiseConstructor
+import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -322,7 +325,7 @@ trait Stream[R] extends EventEmitter {
   		 * firstBlogpost(docs)
   		 * // => {type: 'blogpost', title: 'foo'}
   		 */
-  def findWhere(props: js.Object): Stream[R] = js.native
+  def findWhere(props: Partial[R]): Stream[R] = js.native
   /**
   		 * Filters using a predicate which returns a Stream. If you need to check
   		 * against an asynchronous data source when filtering a Stream, this can
@@ -398,6 +401,18 @@ trait Stream[R] extends EventEmitter {
   		 */
   def head(): Stream[R] = js.native
   /**
+  		 * Creates a new Stream with the separator interspersed between the elements of the source.
+  		 *
+  		 * `intersperse` is effectively the inverse of [splitBy](#splitBy).
+  		 *
+  		 * @id intersperse
+  		 * @section Transforms
+  		 * @name Stream.intersperse(sep)
+  		 * @param {R} separator - the value to intersperse between the source elements
+  		 * @api public
+  		 */
+  def intersperse[U](separator: U): Stream[R | U] = js.native
+  /**
   		 * Calls a named method on each object from the Stream - returning
   		 * a new stream with the result of those calls.
   		 *
@@ -466,6 +481,34 @@ trait Stream[R] extends EventEmitter {
   		 */
   def merge[U](): Stream[U] = js.native
   /**
+  		 * Takes a Stream of Streams and merges their values and errors into a
+  		 * single new Stream, limitting the number of unpaused streams that can
+  		 * running at any one time.
+  		 *
+  		 * Note that no guarantee is made with respect to the order in which
+  		 * values for each stream end up in the merged stream. Values in the
+  		 * merged stream will, however, respect the order they were emitted from
+  		 * their respective streams.
+  		 *
+  		 * @id mergeWithLimit
+  		 * @section Higher-order Streams
+  		 * @name Stream.mergeWithLimit(n)
+  		 * @param {Number} n - the maximum number of streams to run in parallel
+  		 * @api public
+  		 *
+  		 * var readFile = _.wrapCallback(fs.readFile);
+  		 *
+  		 * var txt = _(['foo.txt', 'bar.txt']).flatMap(readFile)
+  		 * var md = _(['baz.md']).flatMap(readFile)
+  		 * var js = _(['bosh.js']).flatMap(readFile)
+  		 *
+  		 * _([txt, md, js]).mergeWithLimit(2);
+  		 * // => contents of foo.txt, bar.txt, baz.txt and bosh.js in the order
+  		 * // they were read, but bosh.js is not read until either foo.txt and bar.txt
+  		 * // has completely been read or baz.md has been read
+  		 */
+  def mergeWithLimit[U](n: Double): Stream[U] = js.native
+  /**
   		 * Observes a stream, allowing you to handle values as they are emitted, without
   		 * adding back-pressure or causing data to be pulled from the source. This can
   		 * be useful when you are performing two related queries on a stream where one
@@ -509,24 +552,75 @@ trait Stream[R] extends EventEmitter {
   		 * @api public
   		 */
   def pause(): Unit = js.native
-  def pipe(dest: WritableStream): Unit = js.native
   /**
-  		 * Pipes a Highland Stream to a [Node Writable Stream](http://nodejs.org/api/stream.html#stream_class_stream_writable)
-  		 * (Highland Streams are also Node Writable Streams). This will pull all the
-  		 * data from the source Highland Stream and write it to the destination,
-  		 * automatically managing flow so that the destination is not overwhelmed
-  		 * by a fast source.
   		 *
-  		 * This function returns the destination so you can chain together pipe calls.
+  		 * Retrieves copies of all elements in the collection,
+  		 * with only the whitelisted keys. If one of the whitelisted
+  		 * keys does not exist, it will be ignored.
+  		 *
+  		 * @id pick
+  		 * @section Transforms
+  		 * @name Stream.pick(properties)
+  		 * @param {Array} properties - property names to white filter
+  		 * @api public
+  		 */
+  def pick[Prop /* <: String */](props: js.Array[Prop]): Stream[Pick[R, Prop]] = js.native
+  /**
+  		 *
+  		 * Retrieves copies of all the elements in the collection
+  		 * that satisfy a given predicate. Note: When using ES3,
+  		 * only enumerable elements are selected. Both enumerable
+  		 * and non-enumerable elements are selected when using ES5.
+  		 *
+  		 * @id pickBy
+  		 * @section Transforms
+  		 * @name Stream.pickBy(f)
+  		 * @param {Function} f - the predicate function
+  		 * @api public
+  		 */
+  def pickBy[Prop /* <: String */](
+    f: js.Function2[
+      /* key */ Prop, 
+      /* import warning: importer.ImportType#apply Failed type conversion: R[Prop] */ /* value */ js.Any, 
+      Boolean
+    ]
+  ): Stream[Partial[R]] = js.native
+  def pipe[U /* <: WritableStream */](dest: U): U = js.native
+  def pipe[U /* <: WritableStream */](dest: U, options: Anon_End): U = js.native
+  /**
+  		 * Pipes a Highland Stream to a [Node Writable
+  		 * Stream](http://nodejs.org/api/stream.html#stream_class_stream_writable).
+  		 * This will pull all the data from the source Highland Stream and write it to
+  		 * the destination, automatically managing flow so that the destination is not
+  		 * overwhelmed by a fast source.
+  		 *
+  		 * Users may optionally pass an object that may contain any of these fields:
+  		 *
+  		 * - `end` - Ends the destination when this stream ends. Default: `true`. This
+  		 *   option has no effect if the destination is either `process.stdout` or
+  		 *   `process.stderr`. Those two streams are never ended.
+  		 *
+  		 * Like [Readable#pipe](https://nodejs.org/api/stream.html#stream_readable_pipe_destination_options),
+  		 * this function will throw errors if there is no `error` handler installed on
+  		 * the stream.
+  		 *
+  		 * This function returns the destination so you can chain together `pipe` calls.
+  		 *
+  		 * **NOTE**: While Highland streams created via `_()` and [pipeline](#pipeline)
+  		 * support being piped to, it is almost never appropriate to `pipe` from a
+  		 * Highland stream to another Highland stream. Those two cases are meant for
+  		 * use when piping from *Node* streams. You might be tempted to use `pipe` to
+  		 * construct reusable transforms. Do not do it. See [through](#through) for a
+  		 * better way.
   		 *
   		 * @id pipe
-  		 * @section Streams
-  		 * @name Stream.pipe(dest)
+  		 * @section Consumption
+  		 * @name Stream.pipe(dest, options)
   		 * @param {Writable Stream} dest - the destination to write all data to
+  		 * @param {Object} options - (optional) pipe options.
   		 * @api public
   		 */
   def pipe[U](dest: Stream[U]): Stream[U] = js.native
-  def pipe[U](dest: ReadWriteStream): Stream[U] = js.native
   /**
   		 * Retrieves values associated with a given property from all elements in
   		 * the collection.
@@ -537,6 +631,9 @@ trait Stream[R] extends EventEmitter {
   		 * @param {String} prop - the property to which values should be associated
   		 * @api public
   		 */
+  def pluck[Prop /* <: String */](prop: Prop): Stream[
+    /* import warning: importer.ImportType#apply Failed type conversion: R[Prop] */ js.Any
+  ] = js.native
   def pluck[U](prop: String): Stream[U] = js.native
   /**
   		 * Consumes a single item from the Stream. Unlike consume, this function will
@@ -585,8 +682,7 @@ trait Stream[R] extends EventEmitter {
   		 * @param {Function} iterator - the function which reduces the values
   		 * @api public
   		 */
-  // TODO: convert this to this.scan(z, f).last()
-  def reduce[U](memo: U, f: js.Function2[/* memo */ U, /* x */ R, U]): Stream[U] = js.native
+  def reduce[U](memo: U, iterator: js.Function2[/* memo */ U, /* x */ R, U]): Stream[U] = js.native
   /**
   		 * Same as [reduce](#reduce), but uses the first element as the initial
   		 * state instead of passing in a `memo` value.
@@ -597,7 +693,7 @@ trait Stream[R] extends EventEmitter {
   		 * @param {Function} iterator - the function which reduces the values
   		 * @api public
   		 */
-  def reduce1[U](memo: U, f: js.Function2[/* memo */ U, /* x */ R, U]): Stream[U] = js.native
+  def reduce1[U](iterator: js.Function2[/* memo */ R | U, /* x */ R, U]): Stream[U] = js.native
   /**
   		 * The inverse of [filter](#filter).
   		 *
@@ -633,7 +729,7 @@ trait Stream[R] extends EventEmitter {
   		 * @param {Function} iterator - the function which reduces the values
   		 * @api public
   		 */
-  def scan[U](memo: U, x: js.Function2[/* memo */ U, /* x */ R, U]): Stream[U] = js.native
+  def scan[U](memo: U, iterator: js.Function2[/* memo */ U, /* x */ R, U]): Stream[U] = js.native
   /**
   		 * Same as [scan](#scan), but uses the first element as the initial
   		 * state instead of passing in a `memo` value.
@@ -646,7 +742,7 @@ trait Stream[R] extends EventEmitter {
   		 *
   		 * _([1, 2, 3, 4]).scan1(add) // => 1, 3, 6, 10
   		 */
-  def scan1[U](memo: U, x: js.Function2[/* memo */ U, /* x */ R, U]): Stream[U] = js.native
+  def scan1[U](iterator: js.Function2[/* memo */ R | U, /* x */ R, U]): Stream[U] = js.native
   /**
   		 * Reads values from a Stream of Streams, emitting them on a Single output
   		 * Stream. This can be thought of as a flatten, just one level deep. Often
@@ -668,6 +764,77 @@ trait Stream[R] extends EventEmitter {
   		 * @api public
   		 */
   def series[U](): Stream[U] = js.native
+  /**
+  		 * Creates a new Stream with the values from the source in the range of `start` (inclusive) to `end` (exclusive).
+  		 * `start` and `end` must be of type `Number`, if `start` is not a `Number` it will default to `0`
+  		 * and, likewise, `end` will default to `Infinity`: this could result in the whole stream being be
+  		 * returned.
+  		 *
+  		 * @id slice
+  		 * @section Transforms
+  		 * @name Stream.slice(start, end)
+  		 * @param {Number} start - integer representing index to start reading from source (inclusive)
+  		 * @param {Number} end - integer representing index to stop reading from source (exclusive)
+  		 * @api public
+  		 */
+  def slice(start: Double, end: Double): Stream[R] = js.native
+  /**
+  		 * Collects all values together then emits each value individually but in sorted order.
+  		 * The method for sorting the elements is ascending lexical.
+  		 *
+  		 * @id sort
+  		 * @section Transforms
+  		 * @name Stream.sort()
+  		 * @api public
+  		 *
+  		 * var sorted = _(['b', 'z', 'g', 'r']).sort().toArray(_.log);
+  		 * // => ['b', 'g', 'r', 'z']
+  		 */
+  def sort(): Stream[R] = js.native
+  /**
+  		 * Collects all values together then emits each value individually in sorted
+  		 * order. The method for sorting the elements is defined by the comparator
+  		 * function supplied as a parameter.
+  		 *
+  		 * The comparison function takes two arguments `a` and `b` and should return
+  		 *
+  		 * - a negative number if `a` should sort before `b`.
+  		 * - a positive number if `a` should sort after `b`.
+  		 * - zero if `a` and `b` may sort in any order (i.e., they are equal).
+  		 *
+  		 * This function must also define a [partial
+  		 * order](https://en.wikipedia.org/wiki/Partially_ordered_set). If it does not,
+  		 * the resulting ordering is undefined.
+  		 *
+  		 * @id sortBy
+  		 * @section Transforms
+  		 * @name Stream.sortBy(f)
+  		 * @param {Function} f - the comparison function
+  		 * @api public
+  		 */
+  def sortBy(f: js.Function2[/* a */ R, /* b */ R, Double]): Stream[R] = js.native
+  /**
+  		 * [splitBy](#splitBy) over newlines.
+  		 *
+  		 * @id split
+  		 * @section Transforms
+  		 * @name Stream.split()
+  		 * @api public
+  		 */
+  def split(): Stream[String] = js.native
+  /**
+  		 * Splits the source Stream by a separator and emits the pieces in between, much like splitting a string.
+  		 *
+  		 * `splitBy` is effectively the inverse of [intersperse](#intersperse).
+  		 *
+  		 * @id splitBy
+  		 * @section Transforms
+  		 * @name Stream.splitBy(sep)
+  		 * @param {String | RegExp} sep - the separator to split on
+  		 * @api public
+  		 */
+  def splitBy(sep: String): Stream[String] = js.native
+  def splitBy(sep: RegExp): Stream[String] = js.native
   /**
   		 * Like the [errors](#errors) method, but emits a Stream end marker after
   		 * an Error is encountered.
@@ -772,7 +939,7 @@ trait Stream[R] extends EventEmitter {
   		 *   console.log(err); // => SyntaxError: Unexpected token z
   		 * });
   		 */
-  def through[R, U](f: js.Function1[/* x */ R, U]): U = js.native
+  def through[U](f: js.Function1[/* x */ Stream[R], U]): U = js.native
   /**
   		 * Collects all values from a Stream into an Array and calls a function with
   		 * once with the result. This function causes a **thunk**.
@@ -850,7 +1017,7 @@ trait Stream[R] extends EventEmitter {
     *     // parameter result will be [1,2,3,4]
     * });
     */
-  def toPromise(promiseConstructor: PromiseConstructor): js.Thenable[R] = js.native
+  def toPromise(PromiseCtor: PromiseConstructor): js.Thenable[R] = js.native
   /**
     * Filters out all duplicate values from the stream and keeps only the first
     * occurence of each value, using === to define equality.
@@ -881,7 +1048,7 @@ trait Stream[R] extends EventEmitter {
   		 * @param {Object} props - the properties to match against
   		 * @api public
   		 */
-  def where(props: js.Object): Stream[R] = js.native
+  def where(props: Partial[R]): Stream[R] = js.native
   /**
   		 * Writes a value to the Stream. If the Stream is paused it will go into the
   		 * Stream's incoming buffer, otherwise it will be immediately processed and
@@ -907,7 +1074,37 @@ trait Stream[R] extends EventEmitter {
   		 * @param {Array | Stream} ys - the other stream to combine values with
   		 * @api public
   		 */
-  def zip(ys: js.Array[R]): Stream[R] = js.native
-  def zip(ys: Stream[R]): Stream[R] = js.native
+  def zip[U](ys: js.Array[U]): Stream[js.Tuple2[R, U]] = js.native
+  def zip[U](ys: Stream[U]): Stream[js.Tuple2[R, U]] = js.native
+  /**
+  		 * Takes a stream and a *finite* stream of `N` streams
+  		 * and returns a stream of the corresponding `(N+1)`-tuples.
+  		 *
+  		 * *Note:* This transform will be renamed `zipEach` in the next major version
+  		 * release.
+  		 *
+  		 * @id zipAll
+  		 * @section Higher-order Streams
+  		 * @name Stream.zipAll(ys)
+  		 * @param {Array | Stream} ys - the array of streams to combine values with
+  		 * @api public
+  		 */
+  def zipAll[U](ys: js.Array[js.Array[U]]): Stream[js.Array[R | U]] = js.native
+  def zipAll[U](ys: Stream[js.Array[U] | Stream[U]]): Stream[js.Array[R | U]] = js.native
+  /**
+  		 * Takes a *finite* stream of streams and returns a stream where the first
+  		 * element from each separate stream is combined into a single data event,
+  		 * followed by the second elements of each stream and so on until the shortest
+  		 * input stream is exhausted.
+  		 *
+  		 * *Note:* This transform will be renamed `zipAll` in the next major version
+  		 * release.
+  		 *
+  		 * @id zipAll0
+  		 * @section Higher-order Streams
+  		 * @name Stream.zipAll0()
+  		 * @api public
+  		 */
+  def zipAll0[T](): Stream[js.Array[T]] = js.native
 }
 

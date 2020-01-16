@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 object responseErrorCodes extends js.Object {
   /* 0x2400 */ val alreadyExists: typings.cassandraDashDriver.libTypesMod.types.responseErrorCodes.alreadyExists with Double = js.native
   /* 0x0100 */ val badCredentials: typings.cassandraDashDriver.libTypesMod.types.responseErrorCodes.badCredentials with Double = js.native
+  /* 0x8000 */ val clientWriteFailure: typings.cassandraDashDriver.libTypesMod.types.responseErrorCodes.clientWriteFailure with Double = js.native
   /* 0x2300 */ val configError: typings.cassandraDashDriver.libTypesMod.types.responseErrorCodes.configError with Double = js.native
   /* 0x1400 */ val functionFailure: typings.cassandraDashDriver.libTypesMod.types.responseErrorCodes.functionFailure with Double = js.native
   /* 0x2200 */ val invalid: typings.cassandraDashDriver.libTypesMod.types.responseErrorCodes.invalid with Double = js.native

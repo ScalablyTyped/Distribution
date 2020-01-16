@@ -16,6 +16,7 @@ class TestScope () extends js.Object {
   def exists(identifier: String): js.Promise[`true`] = js.native
   def fillIn(identifier: String, str: String): js.Promise[Unit] = js.native
   def findComponent(identifier: String): js.Promise[Component[js.Object, js.Object, _]] = js.native
+  def focus(identifier: String): js.Promise[Unit] = js.native
   def it(label: String, fn: js.Function0[Unit]): Unit = js.native
   def notExists(identifier: String): js.Promise[`true`] = js.native
   def pause(time: Double): js.Promise[Unit] = js.native

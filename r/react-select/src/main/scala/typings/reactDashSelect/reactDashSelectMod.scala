@@ -1,5 +1,6 @@
 package typings.reactDashSelect
 
+import typings.react.reactMod.Component
 import typings.react.reactMod.ComponentType
 import typings.react.reactMod.ReactNode
 import typings.react.reactMod.Ref
@@ -22,6 +23,7 @@ import typings.reactDashSelect.srcComponentsPlaceholderMod.PlaceholderProps
 import typings.reactDashSelect.srcComponentsSingleValueMod.SingleValueProps
 import typings.reactDashSelect.srcFiltersMod.Config
 import typings.reactDashSelect.srcFiltersMod.Option
+import typings.reactDashSelect.srcNonceProviderMod.NonceProviderProps
 import typings.reactDashSelect.srcSelectMod.Props
 import typings.reactDashSelect.srcStateManagerMod.DefaultProps
 import typings.reactDashSelect.srcStateManagerMod.StateManager
@@ -41,6 +43,10 @@ import scala.scalajs.js.annotation._
 @JSImport("react-select", JSImport.Namespace)
 @js.native
 object reactDashSelectMod extends js.Object {
+  @js.native
+  class NonceProvider ()
+    extends Component[NonceProviderProps, js.Object, js.Any]
+  
   @js.native
   trait OptionProps[OptionType /* <: OptionTypeBase */] extends js.Object {
     /** The children to be rendered. */

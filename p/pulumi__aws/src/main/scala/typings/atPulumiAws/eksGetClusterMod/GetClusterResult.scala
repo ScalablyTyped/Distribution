@@ -60,7 +60,7 @@ trait GetClusterResult extends js.Object {
     */
   val version: String = js.native
   /**
-    * Nested attribute containing VPC configuration for the cluster.
+    * Nested list containing VPC configuration for the cluster.
     */
   val vpcConfig: GetClusterVpcConfig = js.native
 }

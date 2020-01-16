@@ -1,5 +1,7 @@
 package typings.dropzone.dropzoneMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.dropzone.dropzoneBooleans.`false`
 import typings.dropzone.dropzoneMod._Global_.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,7 +29,7 @@ object ^ extends js.Object {
   var UPLOADING: String = js.native
   var autoDiscover: Boolean = js.native
   var instances: js.Array[Dropzone] = js.native
-  var options: js.Any = js.native
+  var options: StringDictionary[DropzoneOptions | `false`] = js.native
   def confirm(question: String, accepted: js.Function0[Unit]): Unit = js.native
   def confirm(question: String, accepted: js.Function0[Unit], rejected: js.Function0[Unit]): Unit = js.native
   def createElement(string: String): HTMLElement = js.native

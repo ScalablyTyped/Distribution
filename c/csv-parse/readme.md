@@ -1,6 +1,7 @@
 
 # Scala.js typings for csv-parse
 
+Typings are for version 4.8.5
 
 ## Library description:
 CSV parsing implementing the Node.js `stream.Transform` API
@@ -9,9 +10,9 @@ CSV parsing implementing the Node.js `stream.Transform` API
 | ------------------ | :-------------: |
 | Full name          | csv-parse |
 | Keywords           | csv, parse, parser, convert, tsv, stream |
-| # releases         | 36 |
-| # dependents       | 498 |
-| # downloads        | 21168993 |
+| # releases         | 47 |
+| # dependents       | 596 |
+| # downloads        | 30139821 |
 | # stars            | 32 |
 
 ## Links

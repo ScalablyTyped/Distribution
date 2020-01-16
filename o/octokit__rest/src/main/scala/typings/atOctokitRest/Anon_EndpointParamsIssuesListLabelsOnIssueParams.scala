@@ -17,7 +17,7 @@ trait Anon_EndpointParamsIssuesListLabelsOnIssueParams extends js.Object {
   var endpoint_Original: Endpoint = js.native
   def apply(): js.Promise[Response[IssuesListLabelsOnIssueResponse]] = js.native
   def apply(
-    params: RequestOptions with (IssuesListLabelsOnIssueParams | IssuesListLabelsOnIssueParamsDeprecatedNumber)
+    params: RequestOptions with IssuesListLabelsOnIssueParamsDeprecatedNumber with IssuesListLabelsOnIssueParams
   ): js.Promise[Response[IssuesListLabelsOnIssueResponse]] = js.native
   def endpoint(EndpointOptions: EndpointOptions): RequestOptions = js.native
   def endpoint(Route: String): RequestOptions = js.native
