@@ -1,21 +1,16 @@
-package typings.reactDashRouterDashDom
+package typings.reactRouterDom
 
 import slinky.core.facade.ReactElement
 import slinky.core.{BuildingComponent, ReactComponentClass}
-import typings.history.historyMod.{Location, LocationState}
-import typings.reactDashRouterDashDom.{reactDashRouterDashDomComponents => RRD}
-import typings.reactDashRouter.reactDashRouterMod.{
-  RouteChildrenProps,
-  RouteComponentProps,
-  RouteProps,
-  StaticContext
-}
+import typings.history.mod.{Location, LocationState}
+import typings.reactRouterDom.{reactRouterDomComponents => RRD}
+import typings.reactRouter.mod.{RouteChildrenProps, RouteComponentProps, RouteProps, StaticContext}
 import typings.react.ScalableSlinky.{importSTComponent, ExternalComponentP}
 
 import scala.scalajs.js
 import scala.scalajs.js.|
 
-object ReactRouterFacade extends reactDashRouterDashDomProps {
+object ReactRouterFacade extends reactRouterDomProps {
 
   @inline def BrowserRouter: ExternalComponentP[BrowserRouterProps]  = importSTComponent(RRD.BrowserRouter)
   @inline def HashRouter   : ExternalComponentP[HashRouterProps]     = importSTComponent(RRD.HashRouter)

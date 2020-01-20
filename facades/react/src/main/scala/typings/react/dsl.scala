@@ -1,7 +1,7 @@
 package typings.react
 
 import org.scalablytyped.runtime.{Instantiable1, Instantiable2}
-import typings.react.reactMod._
+import typings.react.mod._
 import typings.std.{Object, console}
 import typings.{react, std}
 
@@ -14,7 +14,7 @@ object dsl {
 
   object define {
     /* define a functional component */
-    def fc[P](f: js.Function1[P with Anon_Children, ReactNode]): FC[P] =
+    def fc[P](f: js.Function1[P with AnonChildren, ReactNode]): FC[P] =
       f.asInstanceOf[FC[P]]
   }
 

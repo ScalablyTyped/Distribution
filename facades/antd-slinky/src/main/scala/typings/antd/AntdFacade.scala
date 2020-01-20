@@ -2,11 +2,11 @@ package typings.antd
 
 import slinky.core.TagMod
 import slinky.core.facade.ReactElement
-import typings.antd.libFormFormMod.default.{create => createForm}
-import typings.antd.libFormFormMod.{FormCreateOption, GetFieldDecoratorOptions, WrappedFormUtils}
-import typings.antd.{antdProps, antdComponents => Antd}
+import typings.antd.formFormMod.default.{create => createForm}
+import typings.antd.formFormMod.{FormCreateOption, GetFieldDecoratorOptions, WrappedFormUtils}
+import typings.antd.{antdComponents => Antd}
 import typings.react.ScalableSlinky._
-import typings.react.reactMod.ComponentType
+import typings.react.mod.ComponentType
 
 import scala.scalajs.js
 
@@ -32,16 +32,13 @@ object AntdFacade extends antdProps {
   @inline def AutoComplete: ExternalComponentP[AutoCompleteProps] = importSTComponent(Antd.AutoComplete)
   @inline def AutoCompleteOptGroup: ExternalComponentP[OptGroupProps] = importSTComponent(Antd.AutoCompleteOptGroup)
   @inline def AutoCompleteOption: ExternalComponentP[OptionProps] = importSTComponent(Antd.AutoCompleteOption)
-  @inline def AutoDashComplete: ExternalComponentP[AutoCompleteProps] = importSTComponent(Antd.AutoDashComplete)
   @inline def Avatar: ExternalComponentP[AvatarProps] = importSTComponent(Antd.Avatar)
-  @inline def BackDashTop: ExternalComponentP[BackTopProps] = importSTComponent(Antd.BackDashTop)
   @inline def BackTop: ExternalComponentP[BackTopProps] = importSTComponent(Antd.BackTop)
   @inline def Badge: ExternalComponentP[BadgeProps] = importSTComponent(Antd.Badge)
   @inline def Base: ExternalComponentP[BaseProps] = importSTComponent(Antd.Base)
   @inline def Breadcrumb: ExternalComponentP[BreadcrumbProps] = importSTComponent(Antd.Breadcrumb)
   @inline def BreadcrumbItem: ExternalComponentP[BreadcrumbItemProps] = importSTComponent(Antd.BreadcrumbItem)
   @inline def Button: ExternalComponentP[ButtonProps] = importSTComponent(Antd.Button)
-  @inline def ButtonDashGroup: ExternalComponentP[ButtonGroupProps] = importSTComponent(Antd.ButtonDashGroup)
   @inline def ButtonGroup: ExternalComponentP[ButtonGroupProps] = importSTComponent(Antd.ButtonGroup)
   @inline def Calendar: ExternalComponentP[CalendarProps] = importSTComponent(Antd.Calendar)
   @inline def Card: ExternalComponentP[CardProps] = importSTComponent(Antd.Card)
@@ -57,11 +54,9 @@ object AntdFacade extends antdProps {
   @inline def Column[T]: ExternalComponentP[ColumnProps[T]] = importSTComponent(Antd.Column[T])
   @inline def ColumnGroup: ExternalComponentP[ColumnGroupProps] = importSTComponent(Antd.ColumnGroup)
   @inline def Comment: ExternalComponentP[CommentProps] = importSTComponent(Antd.Comment)
-//  @inline def ConfigConsumer: ExternalComponentP[ConfigConsumerProps[typings.antd.esConfigDashProviderMod.ConfigConsumerProps]] = importSTComponent(Antd.ConfigConsumer)
-  @inline def ConfigDashProvider: ExternalComponentP[ConfigProviderProps] = importSTComponent(Antd.ConfigDashProvider)
+//  @inline def ConfigConsumer: ExternalComponentP[ConfigConsumerProps[typings.antd.esConfigProviderMod.ConfigConsumerProps]] = importSTComponent(Antd.ConfigConsumer)
   @inline def ConfigProvider: ExternalComponentP[ConfigProviderProps] = importSTComponent(Antd.ConfigProvider)
   @inline def Countdown: ExternalComponentP[CountdownProps] = importSTComponent(Antd.Countdown)
-  @inline def DateDashPicker: ExternalComponentP[DatePickerProps] = importSTComponent(Antd.DateDashPicker)
   @inline def DatePicker: ExternalComponentP[DatePickerProps] = importSTComponent(Antd.DatePicker)
   @inline def Descriptions: ExternalComponentP[DescriptionsProps] = importSTComponent(Antd.Descriptions)
   @inline def DescriptionsItem: ExternalComponentP[DescriptionsItemProps] = importSTComponent(Antd.DescriptionsItem)
@@ -70,7 +65,7 @@ object AntdFacade extends antdProps {
   @inline def Dragger: ExternalComponentP[DraggerProps] = importSTComponent(Antd.Dragger)
   @inline def Drawer: ExternalComponentP[DrawerProps] = importSTComponent(Antd.Drawer)
   @inline def Dropdown: ExternalComponentP[DropdownProps] = importSTComponent(Antd.Dropdown)
-  @inline def DropdownDashButton: ExternalComponentP[DropdownDashButtonProps] = importSTComponent(Antd.DropdownDashButton)
+  @inline def DropdownButton: ExternalComponentP[DropdownButtonProps] = importSTComponent(Antd.DropdownButton)
   @inline def Empty: ExternalComponentP[EmptyProps] = importSTComponent(Antd.Empty)
   @inline def Form: ExternalComponentP[FormProps] = importSTComponent(Antd.Form)
   @inline def FormItem: ExternalComponentP[FormItemProps] = importSTComponent(Antd.FormItem)
@@ -79,9 +74,8 @@ object AntdFacade extends antdProps {
   @inline def Header: ExternalComponentP[HeaderProps] = importSTComponent(Antd.Header)
   @inline def Icon: ExternalComponentP[IconProps] = importSTComponent(Antd.Icon)
   @inline def Input: ExternalComponentP[InputProps] = importSTComponent(Antd.Input)
-  @inline def InputDashNumber: ExternalComponentP[InputNumberProps] = importSTComponent(Antd.InputDashNumber)
-  @inline def InputGroup: ExternalComponentP[GroupProps] = importSTComponent(Antd.InputGroup)
   @inline def InputNumber: ExternalComponentP[InputNumberProps] = importSTComponent(Antd.InputNumber)
+  @inline def InputGroup: ExternalComponentP[GroupProps] = importSTComponent(Antd.InputGroup)
   @inline def Item: ExternalComponentP[ItemProps] = importSTComponent(Antd.Item)
   @inline def Layout: ExternalComponentP[LayoutProps] = importSTComponent(Antd.Layout)
   @inline def LayoutContent: ExternalComponentP[LayoutContentProps] = importSTComponent(Antd.LayoutContent)
@@ -89,7 +83,6 @@ object AntdFacade extends antdProps {
   @inline def LayoutHeader: ExternalComponentP[LayoutHeaderProps] = importSTComponent(Antd.LayoutHeader)
   @inline def LayoutSider: ExternalComponentP[LayoutSiderProps] = importSTComponent(Antd.LayoutSider)
   @inline def List[T]: ExternalComponentP[ListProps[T]] = importSTComponent(Antd.List[T])
-  @inline def LocaleDashProvider: ExternalComponentP[LocaleProviderProps] = importSTComponent(Antd.LocaleDashProvider)
   @inline def LocaleProvider: ExternalComponentP[LocaleProviderProps] = importSTComponent(Antd.LocaleProvider)
   @inline def Mention: ExternalComponentP[MentionProps] = importSTComponent(Antd.Mention)
   @inline def Mentions: ExternalComponentP[MentionsProps] = importSTComponent(Antd.Mentions)
@@ -101,7 +94,6 @@ object AntdFacade extends antdProps {
   @inline def Operation: ExternalComponentP[TransferOperationProps] = importSTComponent(Antd.Operation)
   @inline def OptGroup: ExternalComponentP[OptGroupProps] = importSTComponent(Antd.OptGroup)
   @inline def Option: ExternalComponentP[OptionProps] = importSTComponent(Antd.Option)
-  @inline def PageDashHeader: ExternalComponentP[PageHeaderProps] = importSTComponent(Antd.PageDashHeader)
   @inline def PageHeader: ExternalComponentP[PageHeaderProps] = importSTComponent(Antd.PageHeader)
   @inline def Pagination: ExternalComponentP[PaginationProps] = importSTComponent(Antd.Pagination)
   @inline def Paragraph: ExternalComponentP[ParagraphProps] = importSTComponent(Antd.Paragraph)
@@ -133,7 +125,6 @@ object AntdFacade extends antdProps {
   @inline def Tag: ExternalComponentP[TagProps] = importSTComponent(Antd.Tag)
   @inline def Text: ExternalComponentP[TextProps] = importSTComponent(Antd.Text)
   @inline def TextArea: ExternalComponentP[TextAreaProps] = importSTComponent(Antd.TextArea)
-  @inline def TimeDashPicker: ExternalComponentP[TimePickerProps] = importSTComponent(Antd.TimeDashPicker)
   @inline def TimePicker: ExternalComponentP[TimePickerProps] = importSTComponent(Antd.TimePicker)
   @inline def Timeline: ExternalComponentP[TimelineProps] = importSTComponent(Antd.Timeline)
   @inline def TimelineItem: ExternalComponentP[TimelineItemProps] = importSTComponent(Antd.TimelineItem)
@@ -142,15 +133,14 @@ object AntdFacade extends antdProps {
   @inline def Transfer: ExternalComponentP[TransferProps] = importSTComponent(Antd.Transfer)
   @inline def TransferOperation: ExternalComponentP[TransferOperationProps] = importSTComponent(Antd.TransferOperation)
   @inline def Tree: ExternalComponentP[TreeProps] = importSTComponent(Antd.Tree)
-  @inline def TreeDashSelect[T /* <: TreeNodeValue */]: ExternalComponentP[TreeSelectProps[T]] = importSTComponent(Antd.TreeDashSelect[T])
   @inline def TreeNode: ExternalComponentP[TreeNodeProps] = importSTComponent(Antd.TreeNode)
   @inline def TreeSelect[T /* <: TreeNodeValue */]: ExternalComponentP[TreeSelectProps[T]] = importSTComponent(Antd.TreeSelect[T])
   @inline def TreeTreeNode: ExternalComponentP[TreeTreeNodeProps] = importSTComponent(Antd.TreeTreeNode)
   @inline def Typography: ExternalComponentP[TypographyProps] = importSTComponent(Antd.Typography)
   @inline def Upload: ExternalComponentP[UploadProps] = importSTComponent(Antd.Upload)
 
-  @inline def NotificationArgsProps = typings.antd.libNotificationMod.ArgsProps
-  type NotificationArgsProps = typings.antd.libNotificationMod.ArgsProps
+  @inline def NotificationArgsProps = typings.antd.notificationMod.ArgsProps
+  type NotificationArgsProps = typings.antd.notificationMod.ArgsProps
 
   val antdStrings: typings.antd.antdStrings.type = typings.antd.antdStrings
   

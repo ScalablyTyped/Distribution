@@ -1,6 +1,6 @@
 package typings.react
 
-import typings.react.reactMod._
+import typings.react.mod._
 import typings.std.{console, Object}
 import typings.{react, std}
 

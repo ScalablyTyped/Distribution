@@ -10,7 +10,7 @@ import slinky.core.{
   WithAttrs,
   facade => S
 }
-import typings.react.{reactMod => ST}
+import typings.react.{mod => ST}
 
 import scala.language.implicitConversions
 import scala.scalajs.js

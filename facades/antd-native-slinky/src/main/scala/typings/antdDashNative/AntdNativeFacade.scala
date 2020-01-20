@@ -1,12 +1,12 @@
-package typings.antdDashNative
+package typings.antdNative
 
-import typings.atAntDashDesignIconsDashReactDashNative.libFillMod.IconFillProps
-import typings.atAntDashDesignIconsDashReactDashNative.libOutlineMod.IconOutlineProps
-import typings.atAntDashDesignIconsDashReactDashNative.{atAntDashDesignIconsDashReactDashNativeComponents => AntdIcons}
-import typings.atAntDashDesignReactDashNative.atAntDashDesignReactDashNativeMod.{ActionSheet, Toast}
-import typings.atAntDashDesignReactDashNative.{atAntDashDesignReactDashNativeProps, atAntDashDesignReactDashNativeStrings, atAntDashDesignReactDashNativeComponents => Antd}
+import typings.atAntDesignIconsReactNative.fillMod.IconFillProps
+import typings.atAntDesignIconsReactNative.outlineMod.IconOutlineProps
+import typings.atAntDesignIconsReactNative.{atAntDesignIconsReactNativeComponents => AntdIcons}
+import typings.atAntDesignReactNative.mod.{ActionSheet, Toast}
+import typings.atAntDesignReactNative.{atAntDesignReactNativeProps, atAntDesignReactNativeStrings, atAntDesignReactNativeComponents => Antd}
 import typings.react.ScalableSlinky._
-import typings.reactDashNative.reactDashNativeMod.ActionSheetIOSOptions
+import typings.reactNative.mod.ActionSheetIOSOptions
 
 /**
  * This wraps most of `ant-design__react-native` in a more slinky friendly way. We cast all components into `ExternalComponent`s, and
@@ -18,7 +18,7 @@ import typings.reactDashNative.reactDashNativeMod.ActionSheetIOSOptions
  *  AntdNativeFacade.Button(AntdNativeFacade.ButtonProps(...))
  *  ```
  */
-object AntdNativeFacade extends atAntDashDesignReactDashNativeProps {
+object AntdNativeFacade extends atAntDesignReactNativeProps {
   /* rewrites to slinky external components */
   @inline def ActivityIndicator:  ExternalComponentP[ActivityIndicatorProps]  = importSTComponent(Antd.ActivityIndicator)
   @inline def Badge:              ExternalComponentP[BadgeProps]              = importSTComponent(Antd.Badge)
@@ -40,7 +40,7 @@ object AntdNativeFacade extends atAntDashDesignReactDashNativeProps {
   @inline def InputItem:          ExternalComponentP[InputItemProps]          = importSTComponent(Antd.InputItem)
   @inline def List:               ExternalComponentP[ListProps]               = importSTComponent(Antd.List)
   @inline def ListItem:           ExternalComponentP[ListItemProps]           = importSTComponent(Antd.ListItem)
-  @inline def LocaleDashProvider: ExternalComponentP[LocaleDashProviderProps] = importSTComponent(Antd.LocaleDashProvider)
+  @inline def LocaleProvider:     ExternalComponentP[LocaleProviderProps]     = importSTComponent(Antd.LocaleProvider)
   @inline def Modal:              ExternalComponentP[ModalProps]              = importSTComponent(Antd.Modal)
   @inline def Pagination:         ExternalComponentP[PaginationProps]         = importSTComponent(Antd.Pagination)
   @inline def Picker:             ExternalComponentP[PickerProps]             = importSTComponent(Antd.Picker)
@@ -68,6 +68,6 @@ object AntdNativeFacade extends atAntDashDesignReactDashNativeProps {
   val antdActionSheet: ActionSheet.type = ActionSheet
   val antdActionSheetOptions: ActionSheetIOSOptions.type = ActionSheetIOSOptions
   val antdToast: Toast.type = Toast
-  val antdStrings: atAntDashDesignReactDashNativeStrings.type = atAntDashDesignReactDashNativeStrings
+  val antdStrings: atAntDesignReactNativeStrings.type = atAntDesignReactNativeStrings
 
 }
